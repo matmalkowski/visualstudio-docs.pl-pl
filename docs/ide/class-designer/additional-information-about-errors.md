@@ -21,8 +21,8 @@ helpviewer_keywords:
 - errors, class diagrams
 - errors, Class Designer
 - error messages, Class Designer
-- Class Designer [Visual Studio], errors
 - error messages, class diagrams
+- Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Dodatkowe informacje o błędach Projektant klas
+# <a name="class-designer-errors"></a>Błędy projektanta klas
 
-**Projektant klas** nie śledzi lokalizację plików źródłowych, więc modyfikowania struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **Projektant klas** utratę informacji o typie (szczególnie typ źródła element typedef, klas podstawowych lub skojarzenia typów). Błąd może pojawić się takie jak **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij kod źródłowy zmodyfikowany lub przeniesiono do diagramu klas, aby ją wyświetlić go ponownie.
+**Projektant klas** nie śledzi lokalizację plików źródłowych, więc modyfikowania struktury projektu i przenoszenie plików źródłowych w projekcie może spowodować **Projektant klas** utratę informacji typu, na przykład jest wspólny dla Zmodyfikuj typ źródła jako element typedef, klas podstawowych i skojarzenia typów. Błąd może pojawić się takie jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać problem, przeciągnij kod źródłowy przeniesiono lub modyfikacji do diagramu klas ponownie, aby go wyświetlić.
 
 ## <a name="resources"></a>Zasoby
 
@@ -49,4 +49,4 @@ Pomoc w innych błędów i ostrzeżeń można znaleźć w następujących zasoba
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Projektowanie i tworzenie klas i typów](designing-and-viewing-classes-and-types.md)
+- [Projektowanie i widoku klas i typów](designing-and-viewing-classes-and-types.md)

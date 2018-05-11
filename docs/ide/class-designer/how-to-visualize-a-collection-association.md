@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Porady: wizualizacja skojarzeń kolekcji (Projektant klas)
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Porady: wizualizacja skojarzeń kolekcji w Projektancie klas
 
 Właściwości i pola, które są kolekcjami innych typów mogą być wyświetlane na diagramie klas jako kolekcję skojarzeń. W odróżnieniu od skojarzenie regularne Wyświetla pole lub właściwość jako wiersz łączenie klasa będąca właścicielem z typem pola, skojarzeń kolekcji jest wyświetlany jako wiersz łączenia klasa będąca właścicielem typu modułu zbierającego.
 
@@ -35,7 +35,7 @@ Właściwości i pola, które są kolekcjami innych typów mogą być wyświetla
 
 3.  W klasie, kliknij prawym przyciskiem myszy pole lub właściwość, a następnie wybierz pozycję **wyświetlić jako kolekcję skojarzeń**.
 
-     Właściwość lub pole jest wyświetlany jako linia asocjacji połączenie typu modułu zbierającego.
+Właściwość lub pole jest wyświetlany jako linia asocjacji połączenie typu modułu zbierającego.
 
 ## <a name="see-also"></a>Zobacz także
 

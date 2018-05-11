@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikowanie aplikacji ASP.NET lub ASP.NET Core dla usługi Azure App Service przy użyciu programu Visual Studio
 
@@ -24,13 +24,19 @@ Można użyć **publikowania** narzędzia do publikowania aplikacji platformy AS
 
 Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
+## <a name="prerequisites"></a>Wymagania wstępne
+
+* Musi mieć Visual Studio 2017 r zainstalowany i **ASP.NET** i **.NET Framework** programowanie obciążenia. W przypadku aplikacji .NET Core należy również **.NET Core** obciążenia.
+
+    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web platformy ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
-1. Wybierz **MVC**, upewnij się, że **bez uwierzytelniania** jest zaznaczone, a następnie kliknij przycisk **OK**.
+1. Wybierz **MVC** (lub wybierz **aplikacji sieci Web (Model-View-Controller)** dla platformy .NET Core), upewnij się, że **bez uwierzytelniania** jest zaznaczone, a następnie kliknij przycisk **OK** .
 
 1. Wpisz nazwę, takich jak **MyWebApp** i kliknij przycisk **OK**.
 
@@ -44,7 +50,9 @@ Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](
 
     ![Wybierz publikowania](../deployment/media/quickstart-publish-aspnet.png "wybierz publikowania")
 
-1. W **publikowania** okienku wybierz **Microsoft Azure App Service**.
+1. Jeśli wcześniej skonfigurowano żadnych profilów publikowania, **publikowania** pojawi się okienko. Kliknij przycisk **Utwórz nowy profil**.
+
+1. W **wybierz element docelowy publikowania** oknie dialogowym wybierz **usługi aplikacji**.
 
     ![Wybierz usługi aplikacji Azure](../deployment/media/quickstart-publish-azure.png "wybierz usługi aplikacji Azure")
 
@@ -70,5 +78,7 @@ Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Wdrażanie aplikacji platformy ASP.NET Core w systemie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git](/aspnet/core/publishing/azure-continuous-deployment)
+W tym szybkiego startu wiesz, jak utworzyć profil publikowania do wdrożenia na platformie Azure za pomocą programu Visual Studio. Można również skonfigurować publikowanie Importowanie profilu publikowania ustawień z usługi aplikacji Azure.
+
+> [!div class="nextstepaction"]
+> [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)

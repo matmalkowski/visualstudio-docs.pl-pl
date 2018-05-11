@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 
-Instrukcji TypeDef utworzyć jednej lub kilku warstw pośredników między nazwą jego typ podstawowy. **Projektant klas** obsługuje typy typedef języka C++, które są zadeklarowane ze słowem kluczowym `typedef`, na przykład:
+[Element TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) instrukcje tworzenia jednej lub kilku warstw pośredników między nazwą jego typ podstawowy. **Projektant klas** obsługuje typy typedef języka C++, które są zadeklarowane ze słowem kluczowym `typedef`, na przykład:
 
 ```cpp
 typedef class coord
@@ -38,7 +38,38 @@ Tego typu można użyć do zadeklarowania wystąpienie:
 
 `COORD OriginPoint;`
 
-Mimo że można zadeklarować jako element typedef nie zawiera nazwy **Projektant klas** nie będzie używać nazwa tagu, który określisz; nazwę, która generuje widoku klasy zostanie użyty. Na przykład następujące oświadczenie jest prawidłowy, ale wygląda na to w **widoku klasy** i **Projektant klas** jako obiekt o nazwie **__unnamed**:
+## <a name="class-and-struct-shapes"></a>Kształty klasy i struktury
+
+W **Projektant klas**, C++ typedef ma kształt z typem określonym w definicji typu. Jeśli źródło deklaruje `typedef class`, kształt zaokrąglonymi narożnikami, a etykieta **klasy**. Aby uzyskać `typedef struct`, kształt ma narożniki i etykiety **struktury**.
+
+Klasy i struktury może mieć zagnieżdżonych definicje typów zadeklarowany w nich. W **Projektant klas**, klasy i struktury kształtów mogą być prezentowane w deklaracji typedef zagnieżdżonych kształtów w zagnieżdżonych.
+
+Element TypeDef shapes pomocy technicznej **Pokaż jako skojarzenie** i **wyświetlić jako kolekcję skojarzeń** polecenia w menu kontekstowym.
+
+### <a name="class-typedef-example"></a>Przykład klasy — typedef
+
+```cpp
+class B {};
+typedef B MyB;
+```
+
+![Element typedef klasy C++ w Projektancie klas](media/cpp-class-typedef.png)
+
+### <a name="struct-typedef-example"></a>Przykład typedef — struktura
+
+```cpp
+typedef struct mystructtag
+{
+    int   i;
+    double f;
+} mystruct;
+```
+
+![Element typedef struktury języka C++ w Projektancie klas](media/cpp-struct-typedef.png)
+
+## <a name="unnamed-typedefs"></a>Nienazwane definicje typów
+
+Mimo że można zadeklarować jako element typedef nie zawiera nazwy **Projektant klas** nie są używane przez Ciebie nazwą tagu. **Projektant klas** używa nazwy który **widoku klasy** generuje. Na przykład następujące oświadczenie jest prawidłowy, ale wygląda na to w **widoku klasy** i **Projektant klas** jako obiekt o nazwie **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -49,158 +80,10 @@ typedef class coord
 };
 ```
 
-Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
+> [!NOTE]
+> **Projektant klas** definicje typów, których typ źródła jest wskaźnik funkcji nie są wyświetlane.
 
-Kształt C++ element typedef ma kształt z typem określonym w definicji typu. Na przykład, jeśli źródło deklaruje `typedef class`, kształt zaokrąglonymi narożnikami, a etykieta **klasy**. Aby uzyskać `typedef struct`, kształt ma narożniki i etykiety **struktury**.
+## <a name="see-also"></a>Zobacz także
 
-Klasy i struktury mogą mieć zagnieżdżonych definicje typów zadeklarowana wewnątrz. w związku z tym kształty klasy i struktury można wyświetlić deklaracje typedef zagnieżdżonych jako kształtów zagnieżdżonych.
-
-Element TypeDef shapes pomocy technicznej **Pokaż jako skojarzenie** i **wyświetlić jako kolekcję skojarzeń** polecenia w menu kontekstowym.
-
-Poniżej przedstawiono kilka przykładów typdef typy, które **Projektant klas** obsługuje:
-
-`typedef type name`
-
-*Nazwa* : *typu*
-
-— klasa typedef
-
-Rysuje skojarzenia nawiązywania wpisz *nazwa*, jeśli to możliwe.
-
-`typedef void (*func)(int)`
-
-`func: void (*)(int)`
-
-— klasa typedef
-
-Element TypeDef dla wskaźników funkcji. Brak wiersza skojarzenie jest rysowane.
-
-**Projektant klas** wyświetlane jako element typedef, jeśli jej typ źródła jest wskaźnik funkcji.
-
-```cpp
-typedef int MyInt;
-class A {
-   MyInt I;
-};
-```
-
-`MyInt: int`
-
-— klasa typedef
-
-`A`
-
-Class
-
-Rysuje linię skojarzenia wskazujący z kształtu typu źródłowego kształtu typu docelowego.
-
-`Class B {};`
-
-`typedef B MyB;`
-
-`B`
-
-Class
-
-`MyB : B`
-
-— klasa typedef
-
-Prawym przyciskiem myszy kształt element typedef, a następnie klikając polecenie **Pokaż jako skojarzenie** Wyświetla typedef lub klasy i **Alias** linia łącząca dwa kształty (podobnie jak linia asocjacji).
-
-`typedef B MyB;`
-
-`typedef MyB A;`
-
-`MyBar : Bar`
-
-— klasa typedef
-
-Taka sama jak powyżej.
-
-```cpp
-Class B {};
-typedef B MyB;
-
-class A {
-   MyB B;
-};
-```
-
-`B`
-
-Class
-
-`MyB : B`
-
-— klasa typedef
-
-`A`
-
-Class
-
-`MyB` jest zagnieżdżony element typedef.
-
-`#include <vector>`
-
-`...`
-
-`using namespace std;`
-
-`...`
-
-`typedef vector<int> MyIntVect;`
-
-`vector<T>`Klasy
-
-`MyIntVect : vector<int>`
-
-— klasa typedef
-
-`class B {};`
-
-`typedef B MyB;`
-
-`class A : MyB {};`
-
-`MyB : B`
-
-— klasa typedef
-
--> B
-
-`B`
-
-`A`
-
-Class
-
--> MyB
-
-**Projektant klas** nie obsługuje wyświetlania tego rodzaju relacji za pomocą polecenia menu kontekstowego.
-
-`#include <vector>`
-
-`Typedef MyIntVect std::vector<int>;`
-
-`Class MyVect : MyIntVect {};`
-
-`std::vector<T>`
-
-Class
-
-`MyIntVect : std::vector<int>`
-
-— klasa typedef
-
-`MyVect`
-
-Class
-
--> MyIntVect
-
-### <a name="see-also"></a>Zobacz także
-
-- [Praca z kodem Visual C++](working-with-visual-cpp-code.md)  
+- [Praca z kodem Visual C++](working-with-visual-cpp-code.md)
 - [Definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
-

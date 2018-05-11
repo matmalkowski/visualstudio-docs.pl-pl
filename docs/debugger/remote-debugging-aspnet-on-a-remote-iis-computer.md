@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -56,6 +56,7 @@ W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy doda
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- Program IIS.NET
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
@@ -78,7 +79,7 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 
-2. Otwórz **internetowych usług informacyjnych (IIS) Manager**. (W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
+2. Jeśli go nie jest jeszcze otwarty, otwórz **Internet Information Services (IIS) Manager**. (W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
 
 3. W obszarze **połączeń** w okienku po lewej stronie, przejdź do **witryny**.
 

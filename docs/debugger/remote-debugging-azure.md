@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017 r.
 
@@ -83,18 +83,19 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
 Można utworzyć Azure maszyny Wirtualnej systemu Windows Server i następnie zainstalować i skonfigurowanie usług IIS i innych składników oprogramowania wymagane. Trwa dłużej niż wdrażanie w usłudze Azure App Service i wymaga wykonaj pozostałe kroki w tym samouczku.
 
-Najpierw wykonaj wszystkie kroki opisane w [instalacji i uruchamiania usług IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Najpierw wykonaj wszystkie kroki opisane w [instalacji i uruchamiania usług IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Podczas otwierania portu 80 w grupie zabezpieczeń sieci, należy również otworzyć portu 4022 dla zdalnego debugera. Dzięki temu nie trzeba otworzyć go później.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Zaktualizuj ustawienia zabezpieczeń przeglądarki w systemie Windows Server
 
-W zależności od ustawień zabezpieczeń przeglądarki go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, można łatwo pobrać opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
+W zależności od ustawień zabezpieczeń przeglądarki go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, aby pobrać szybciej opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- Program IIS.NET
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
@@ -113,7 +114,7 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+### <a name="BKMK_deploy_asp_net"></a> Konfigurowanie witryny sieci Web ASP.NET na komputerze serwera systemu Windows
 
 1. Otwórz **Internet Information Services (IIS) Manager** i przejdź do **witryny**.
 

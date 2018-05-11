@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 9d19edb4801ee8af6a18f3e458cd06d0499e0273
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="version-control"></a>Kontrola wersji
 
@@ -23,7 +23,7 @@ Podwersją jest system kontroli wersji scentralizowane, co oznacza, że istnieje
 
 Git to system kontroli wersji rozproszonej, który umożliwia zespołom jednocześnie pracować na tym samym dokumentów. Za pomocą narzędzia Git może być pojedynczego serwera, który zawiera wszystkie pliki, ale cały repozytorium został sklonowany lokalnie na komputerze w każdym przypadku, gdy repozytorium jest wyewidencjonowany z tego źródła centralnej.
 
-# <a name="basic-concepts"></a>Koncepcje podstawowe 
+## <a name="basic-concepts"></a>Koncepcje podstawowe 
 
 Visual Studio for Mac zapewnia obsługę zarówno usługi Git i Podwersją systemów kontroli wersji. Następujące artykuły Poznaj konfigurowania repozytoria Git i Podwersją przy użyciu programu Visual Studio for Mac, a także proste funkcje, takie jak przeglądanie, zatwierdzanie i wypychanie zmiany.
 

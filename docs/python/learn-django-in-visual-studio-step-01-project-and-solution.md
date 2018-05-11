@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 
@@ -62,7 +62,7 @@ Podczas pracy z Django z wiersza polecenia, zazwyczaj rozpoczyna się projekt, u
     - **Rozwiązanie**: pozostaw tego formantu ustawioną opcję "Utwórz nowe rozwiązanie" domyślną.
     - **Nazwa rozwiązania**: wartość "LearningDjango", który jest odpowiedni do rozwiązania jako kontener dla wielu projektów w tym samouczku.
     - **Utwórz katalog rozwiązania**: pozostaw wartość (ustawienie domyślne).
-    - **Tworzenie nowego repozytorium Git**: Wybierz tę opcję, (czyli wyczyść domyślnie), dzięki czemu program Visual Studio tworzy lokalne repozytorium Git, podczas tworzenia rozwiązania.
+    - **Tworzenie nowego repozytorium Git**: Wybierz tę opcję, (czyli wyczyść domyślnie), dzięki czemu program Visual Studio tworzy lokalne repozytorium Git, podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom Instalatora programu Visual Studio 2017 i Dodaj Git dla systemu Windows i rozszerzenie GitHub dla programu Visual Studio na **pojedynczych składników** w obszarze **kodu narzędzia**.
 
 1. Po chwili Visual Studio Wyświetla okno dialogowe z informacją "ten projekt wymaga pakiety zewnętrzne" (pokazana poniżej). To okno dialogowe pojawia się, ponieważ szablon zawiera `requirements.txt` pliku odwołujące się do najnowszego pakietu 1.x Django. (Wybierz **Pokaż wymagane pakiety** aby zobaczyć dokładnie zależności.)
 

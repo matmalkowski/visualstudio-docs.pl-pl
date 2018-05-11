@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 066f91db52a60cd524df3c3d5328acd45b11443c
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Logowanie do programu Visual Studio dla komputerów Mac
 
@@ -41,5 +41,5 @@ Aby zalogować się do programu Visual Studio dla komputerów Mac, wykonaj nast�
 
 Visual Studio for Mac obsługuje dodawanie wielu kont do swojego konta personalizacji. Te dodatkowe konta pozwoli na dostęp do zasobów, takich jak Azure, z Każde dodane konto. 
 
-Aby dodać dodatkowe konta użytkowników, postępuj zgodnie z instrukcjami [jak zarejestrować się w programie Visual Studio for Mac](#How_to_sign_in_to_Visual_Studio_for_Mac) sekcji.
+Aby dodać dodatkowe konta użytkowników, postępuj zgodnie z instrukcjami [jak zarejestrować się w programie Visual Studio for Mac](#how-to-sign-in-to-visual-studio-for-mac) sekcji.
 

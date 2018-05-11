@@ -1,15 +1,15 @@
 ---
-title: Wskazówki — w tym pakietu NuGet w projekcie
+title: W tym pakietu NuGet w projekcie
 description: W tym dokumencie opisano, jak dołączyć pakietu NuGet w projekcie Xamarin. Przeprowadzi Cię on przez wyszukiwanie i pobieranie pakietu, a także wprowadzenie do funkcji integracji IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>W tym pakietu NuGet w projekcie
 
@@ -26,8 +26,6 @@ Aby zademonstrować funkcje pakietu NuGet najpierw omówimy Tworzenie nowej apli
 Najpierw utwórz projekt o nazwie `HelloNuget` jak przedstawiono poniżej. W tym przykładzie przedstawiono szablon pojedynczego widoku aplikacji systemu iOS, ale będzie działać dowolnego typu obsługiwanych projektu:
 
 ![Utwórz nowy projekt dla systemu iOS](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Dodawanie pakietu
 
@@ -50,9 +48,9 @@ Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć określony pakiet, 
 
 Po pobraniu pakietu zostanie dodany do projektu. Rozwiązanie zmieni się w następujący sposób:
 
-*   **Odwołania** węzeł będzie zawierać listę zestawów, które są częścią pakietu NuGet.
-*   **Pakiety** węzeł Wyświetla każdego pakietu NuGet, który został pobrany. Można zaktualizować lub usunąć pakiet z tej listy.
-*   A **packages.config** plik zostanie dodany do projektu. Ten plik XML służy IDE do śledzenia wersji pakietu, które są przywoływane w tym projekcie. Ten plik nie należy ręcznie modyfikować, ale należy go przechowywać w kontroli wersji. Należy pamiętać, że plik project.json mogą być używane zamiast pliku packages.config. Plik project.json jest nowy format pliku pakietu, wprowadzone w systemie 3 NuGet, który obsługuje przechodnie przywracania. Bardziej szczegółowe informacje o pliku project.json znajdują się w [dokumentacji NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Plik project.json musi je dodać ręcznie i projekt zamknięty i otwarty ponownie, aby plik project.json jest używany w programie Visual Studio dla komputerów Mac.
+* **Odwołania** węzeł będzie zawierać listę zestawów, które są częścią pakietu NuGet.
+* **Pakiety** węzeł Wyświetla każdego pakietu NuGet, który został pobrany. Można zaktualizować lub usunąć pakiet z tej listy.
+* A **packages.config** plik zostanie dodany do projektu. Ten plik XML służy IDE do śledzenia wersji pakietu, które są przywoływane w tym projekcie. Ten plik nie należy ręcznie modyfikować, ale należy go przechowywać w kontroli wersji. Należy pamiętać, że plik project.json mogą być używane zamiast pliku packages.config. Plik project.json jest nowy format pliku pakietu, wprowadzone w systemie 3 NuGet, który obsługuje przechodnie przywracania. Bardziej szczegółowe informacje o pliku project.json znajdują się w [dokumentacji NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Plik project.json musi je dodać ręcznie i projekt zamknięty i otwarty ponownie, aby plik project.json jest używany w programie Visual Studio dla komputerów Mac.
 
 ## <a name="using-nuget-packages"></a>Za pomocą pakietów NuGet
 
@@ -60,8 +58,9 @@ Po dodaniu pakietu NuGet i zaktualizować odwołania do projektu może programu 
 
 Upewnij się, Dodaj wszelkie wymagane `using` dyrektywy na początku pliku:
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 Większość NuGet zawierają dodatkowe informacje, takie jak łącze stronę README lub projekt do źródła Nuget. Łącze do tej zwykle można znaleźć w notka pakietu na stronie Dodawanie pakietów:
 

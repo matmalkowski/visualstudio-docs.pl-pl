@@ -9,11 +9,11 @@ description: Więcej informacji na temat korzyści zawarte w ramach subskrypcji 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w ramach subskrypcji programu Visual Studio
 
@@ -40,5 +40,8 @@ Jako subskrybent Visual Studio masz również dostęp do różnych rodzajów pom
 - Uzyskaj pomoc od społeczności na forach priorytetów.  Jeśli członkami społeczności nie odpowie na pytanie, ekspertów firmy Microsoft zapewni odpowiedzi. 
 - Masz pytania dotyczące usługi Azure?  Zapoznaj się z usług Azure społeczności i Advisory rozmowę Azure.  
 
-Aby uzyskać więcej informacji o zaletach uwzględnione w ramach subskrypcji zapoznaj się z programu Visual Studio z cennikiem.  Informacje o określonych korzyści, łącznie z ich funkcji, subskrypcje, które są dostępne w **przy użyciu korzyści dla subskrybentów** temat poniżej. 
+> [!NOTE] 
+> Subskrypcja może również pochodzić z dostępem do plików do pobrania oprogramowania.  Aby uzyskać więcej informacji o pobrań, które pliki do pobrania są uwzględniane w ramach subskrypcji, odwiedź stronę [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Aby uzyskać więcej informacji o zaletach uwzględnione w ramach subskrypcji, zapoznaj się z [programu Visual Studio, na stronie dotyczącej cen](https://www.visualstudio.com/vs/pricing/).  Informacje o określonych korzyści, łącznie z ich funkcji, subskrypcje, które są dostępne w **przy użyciu korzyści dla subskrybentów** temat poniżej. 
 

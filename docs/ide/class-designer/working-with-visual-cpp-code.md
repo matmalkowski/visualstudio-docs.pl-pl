@@ -20,31 +20,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="work-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
+# <a name="work-with-visual-c-code-in-class-designer"></a>Praca z kodem Visual C++ w Projektancie klas
 
 **Projektant klas** Wyświetla powierzchni wizualnego projektu o nazwie *diagramu klas* zapewnia wizualną reprezentację elementy kodu w projekcie. Diagramy klas służy do projektowania i wizualizacji klasami i innymi typami w projekcie.
 
 **Projektant klas** obsługuje następujące elementy kodu C++:
 
--   Klasy (podobny kształt zarządzanej klasy, z wyjątkiem tego, że może mieć wiele relacji dziedziczenia)
+- Klasy (podobny kształt zarządzanej klasy, z wyjątkiem tego, że może mieć wiele relacji dziedziczenia)
 
--   Klasa anonimowego (wyświetla nazwy wygenerowanej klasy widoku dla typu anonimowego)
+- Klasa anonimowego (wyświetla nazwy wygenerowanej klasy widoku dla typu anonimowego)
 
--   Klasy szablonów
+- Klasy szablonów
 
--   Struct
+- Struct
 
--   Wyliczenie
+- Wyliczenie
 
--   Makra (Wyświetla widok po przetworzonych makra)
+- Makra (Wyświetla widok po przetworzonych makra)
 
--   Element TypeDef
+- Element TypeDef
 
 > [!NOTE]
 > Nie jest taka sama jak diagram klas UML, które można utworzyć w projekcie modelowania. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: odwołanie](../../modeling/uml-class-diagrams-reference.md).
@@ -65,23 +65,23 @@ Diagram klas nie zaktualizować zmiany wprowadzone w kodzie, konieczne może by�
 
 **Projektant klas** nie może mieć możliwość rozpoznania typy z następujących powodów:
 
--   Typ jest w projekcie lub zestawu, który nie odwołuje się projekt, który zawiera diagramu klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu zawierającego typ. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../managing-references-in-a-project.md).
+- Typ jest w projekcie lub zestawu, który nie odwołuje się projekt, który zawiera diagramu klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu zawierającego typ. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../managing-references-in-a-project.md).
 
--   Typ nie jest w niewłaściwym zakresie, więc **Projektant klas** nie można go zlokalizować. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typ (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.
+- Typ nie jest w niewłaściwym zakresie, więc **Projektant klas** nie można go zlokalizować. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typ (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.
 
--   Typ nie istnieje lub została ujęta w komentarz. Aby rozwiązać ten problem, upewnij się, że nie oznaczone jako komentarz lub usunąć typu.
+- Typ nie istnieje lub została ujęta w komentarz. Aby rozwiązać ten problem, upewnij się, że nie oznaczone jako komentarz lub usunąć typu.
 
--   Typ znajduje się w bibliotece dyrektywa #import odwołuje się. Możliwym obejściem jest aby ręcznie dodać wygenerowanego kodu (plik .tlh —) # dyrektywy include w pliku nagłówka.
+- Typ znajduje się w bibliotece dyrektywa #import odwołuje się. Możliwym obejściem jest aby ręcznie dodać wygenerowanego kodu (plik .tlh —) # dyrektywy include w pliku nagłówka.
 
--   Upewnij się, że **Projektant klas** obsługuje typ, który został wprowadzony. Zobacz [ograniczenia dotyczące elementy kodu C++](#limitations-for-c-code-elements).
+- Upewnij się, że **Projektant klas** obsługuje typ, który został wprowadzony. Zobacz [ograniczenia dotyczące elementy kodu C++](#limitations-for-c-code-elements).
 
 Błąd najprawdopodobniej wyświetlić problemu rozpoznawania typu jest **nie można odnaleźć kodu dla jednego lub więcej kształtów na diagramie klas '\<elementu > "**. Ten komunikat o błędzie nie musi oznaczać, że kod jest błędny. Oznacza ona, że projektant klas nie może wyświetlić kodu. Spróbuj wykonać następujące działania:
 
--   Upewnij się, że typ istnieje. Upewnij się, że nie przypadkowo oznaczone jako komentarz lub usunąć kod źródłowy.
+- Upewnij się, że typ istnieje. Upewnij się, że nie przypadkowo oznaczone jako komentarz lub usunąć kod źródłowy.
 
--   Spróbuj rozwiązać typu. Typ może być w projekcie lub zestawu, który nie odwołuje się projekt, który zawiera diagramu klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu zawierającego typ. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../managing-references-in-a-project.md).
+- Spróbuj rozwiązać typu. Typ może być w projekcie lub zestawu, który nie odwołuje się projekt, który zawiera diagramu klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu zawierającego typ. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../managing-references-in-a-project.md).
 
--   Upewnij się, że typ jest w niewłaściwym zakresie, dzięki czemu mogą ją odnaleźć Projektant klas. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typ (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.
+- Upewnij się, że typ jest w niewłaściwym zakresie, dzięki czemu mogą ją odnaleźć Projektant klas. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typ (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.
 
 ### <a name="troubleshoot-other-error-messages"></a>Rozwiązywanie problemów z inne komunikaty o błędach
 
@@ -89,25 +89,25 @@ Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na for
 
 ## <a name="limitations-for-c-code-elements"></a>Ograniczenia dotyczące elementy kodu C++
 
--   Po załadowaniu projektu Visual C++ **Projektant klas** funkcje w sposób tylko do odczytu. Można zmienić na diagramie klas, ale nie można zapisać zmian z diagramu klas do kodu źródłowego.
+- Po załadowaniu projektu Visual C++ **Projektant klas** funkcje w sposób tylko do odczytu. Można zmienić na diagramie klas, ale nie można zapisać zmian z diagramu klas do kodu źródłowego.
 
--   **Projektant klas** obsługuje tylko natywny semantykę języka C++. Dla projektów Visual C++, które są kompilowane do kodu zarządzanego **Projektant klas** tylko będzie wizualizacji elementy kodu, które są natywnych typów. W związku z tym można dodać diagram klas do projektu, ale **Projektant klas** nie umożliwia wizualizowanie elementów, w którym `IsManaged` właściwość jest ustawiona na `true` (tzn. typy wartości i typy referencyjne).
+- **Projektant klas** obsługuje tylko natywny semantykę języka C++. Dla projektów Visual C++, które są kompilowane do kodu zarządzanego **Projektant klas** tylko będzie wizualizacji elementy kodu, które są natywnych typów. W związku z tym można dodać diagram klas do projektu, ale **Projektant klas** nie umożliwia wizualizowanie elementów, w którym `IsManaged` właściwość jest ustawiona na `true` (tzn. typy wartości i typy referencyjne).
 
--   Dla projektów Visual C++ **Projektant klas** odczytuje tylko definicji typu. Załóżmy na przykład, możesz zdefiniować typu w pliku nagłówków (.h) i definiowanie jej elementów członkowskich w pliku z implementacją (.cpp). Jeśli wywołanie "Widok diagramu klas" w pliku implementacji (.cpp), **Projektant klas** nie wyświetla żadnego obrazu. Innym przykładem, jeśli wywołanie "Widok diagramu klas" w pliku .cpp, który używa `#include` instrukcji, aby uwzględnić inne pliki, ale nie zawiera żadnych definicji klasy rzeczywiste **Projektant klas** ponownie nie wyświetla żadnego obrazu.
+- Dla projektów Visual C++ **Projektant klas** odczytuje tylko definicji typu. Załóżmy na przykład, możesz zdefiniować typu w pliku nagłówków (.h) i definiowanie jej elementów członkowskich w pliku z implementacją (.cpp). Jeśli wywołanie "Widok diagramu klas" w pliku implementacji (.cpp), **Projektant klas** nie wyświetla żadnego obrazu. Innym przykładem, jeśli wywołanie "Widok diagramu klas" w pliku .cpp, który używa `#include` instrukcji, aby uwzględnić inne pliki, ale nie zawiera żadnych definicji klasy rzeczywiste **Projektant klas** ponownie nie wyświetla żadnego obrazu.
 
--   Pliki języka IDL (.idl), które zdefiniuj interfejsy modelu COM i biblioteki typów, nie są wyświetlane w diagramy, chyba że są one kompilowane do kodu natywnego języka C++.
+- Pliki języka IDL (.idl), które zdefiniuj interfejsy modelu COM i biblioteki typów, nie są wyświetlane w diagramy, chyba że są one kompilowane do kodu natywnego języka C++.
 
--   **Projektant klas** nie obsługuje funkcje globalne i zmienne.
+- **Projektant klas** nie obsługuje funkcje globalne i zmienne.
 
--   **Projektant klas** nie obsługuje Unii. Jest to specjalny typ klasy, w którym pamięć przydzielona jest niezbędne dla elementu Członkowskiego Unii największy danych wielkość.
+- **Projektant klas** nie obsługuje Unii. Jest to specjalny typ klasy, w którym pamięć przydzielona jest niezbędne dla elementu Członkowskiego Unii największy danych wielkość.
 
--   **Projektant klas** nie wyświetla danych podstawowych takich jak `int` i `char`.
+- **Projektant klas** nie wyświetla danych podstawowych takich jak `int` i `char`.
 
--   **Projektant klas** nie wyświetla typy, które są zdefiniowane poza bieżącego projektu, jeśli projekt nie ma poprawne odwołania do tych typów.
+- **Projektant klas** nie wyświetla typy, które są zdefiniowane poza bieżącego projektu, jeśli projekt nie ma poprawne odwołania do tych typów.
 
--   **Projektant klas** można wyświetlić typy zagnieżdżone lecz nie relacje między typem zagnieżdżonym i innych typów.
+- **Projektant klas** można wyświetlić typy zagnieżdżone lecz nie relacje między typem zagnieżdżonym i innych typów.
 
--   **Projektant klas** nie może wyświetlić typy, które są nieważne lub który pochodzi od typu void.
+- **Projektant klas** nie może wyświetlić typy, które są nieważne lub który pochodzi od typu void.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji (Projektant klas)
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji w Projektancie klas
 
 W **Projektant klas**, można zmienić sposób diagramu klas reprezentuje relację skojarzenia między dwoma typami z notacją członka skojarzenie notacji i na odwrót. Elementy członkowskie wyświetlane linie asocjacji często stanowi przydatne wizualizację, w jaki sposób są powiązane typy.
 
@@ -41,9 +41,7 @@ W **Projektant klas**, można zmienić sposób diagramu klas reprezentuje relacj
 
 ## <a name="to-change-association-notation-to-member-notation"></a>Aby zmienić skojarzenie notacji Notacja członka
 
--   Na diagramie klas, kliknij prawym przyciskiem myszy linię skojarzenia, a następnie wybierz pozycję **Pokaż jako właściwość** lub **Pokaż jako pole** odpowiednio.
-
-     Linia asocjacji znika, a właściwość wyświetla w odpowiedni przedział w jego typ kształtu na diagramie.
+Na diagramie klas, kliknij prawym przyciskiem myszy linię skojarzenia, a następnie wybierz pozycję **Pokaż jako właściwość** lub **Pokaż jako pole** odpowiednio. Linia asocjacji znika, a właściwość wyświetla w odpowiedni przedział w jego typ kształtu na diagramie.
 
 ## <a name="see-also"></a>Zobacz także
 

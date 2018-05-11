@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
-Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub wymagań wstępnych, jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wymagań wstępnych. 
+Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub wymagań wstępnych, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wymagań wstępnych. 
   
 Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik końcowy akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
   

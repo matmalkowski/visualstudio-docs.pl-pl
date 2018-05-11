@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Porady: drukowanie diagramów klasy (Projektant klas)
+# <a name="how-to-print-class-diagrams"></a>Porady: drukowanie diagramów klasy
 
 Można wydrukować diagram klasy wydruku funkcji programu Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Aby wydrukować diagram klas
 
-1.  Wyświetlanie diagramu klas. (W razie potrzeby wybierz kartę diagram klasy, aby go wyświetlić).
+1.  Otwórz diagram klas.
 
 2.  Kliknij przycisk **drukowania** na **pliku** menu.
 
-     Diagram całej klasy będzie drukować. Może być konieczne dostosowanie ustawień w oknie dialogowym ustawień strony drukować na odpowiedni rozmiar.
+Drukuje diagram całej klasy. Może być konieczne dostosowanie ustawień w **ustawienia strony** okno dialogowe, aby można było wydrukować na odpowiedni rozmiar.
 
 ## <a name="see-also"></a>Zobacz także
 

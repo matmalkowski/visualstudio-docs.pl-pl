@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 
@@ -60,7 +60,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--installPath <dir>` | Katalog instalacyjny dla wystąpienia działanie. W przypadku polecenia install jest **opcjonalnie** i gdzie zostaną zainstalowane wystąpienie. W przypadku innych poleceń jest **wymagane** i zainstalowanym uprzednio zainstalowanego wystąpienia. |
 | `--addProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które są zainstalowane do tego produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Jeśli nie istnieje, instalacja korzysta z ustawień regionalnych komputera. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
 | `--removeProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które mają zostać usunięte z produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
+| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
 | `--remove <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do usunięcia. Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
 | `--in <path>` | **Opcjonalne**: identyfikator URI lub ścieżka do pliku odpowiedzi.  |
 | `--all` | **Opcjonalne**: Określa, czy zainstalować obciążeń i wszystkie składniki produktu. |
@@ -69,7 +69,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--includeOptional` | **Opcjonalne**: zawiera składniki opcjonalne dla dowolnych zadań, które są zainstalowane, ale nie zalecane składniki. Obciążenia są określone za pomocą `--allWorkloads` lub `--add`.  |
 | `--quiet, -q` | **Opcjonalne**: interfejs użytkownika nie są wyświetlane podczas przeprowadzania instalacji. |
 | `--passive, -p` | **Opcjonalne**: wyświetlanie interfejsu użytkownika, ale nie Żądaj interakcji użytkownika. |
-| `--norestart` | **Opcjonalne**: Jeśli jest obecny, poleceń z `--passive` lub `--quiet` nie automatycznie ponownie komputera (jeśli jest to wymagane).  To jest ignorowana, jeśli żadna `--passive` ani `--quiet` zostały określone.  |
+| `--norestart` | **Opcjonalne**: Jeśli jest obecny, poleceń z `--passive` lub `--quiet` nie uruchamia ponownie komputer (w razie potrzeby).  To jest ignorowana, jeśli żadna `--passive` ani `--quiet` zostały określone.  |
 | `--nickname <name>` | **Opcjonalne**: definiuje pseudonim można przypisać do zainstalowany produkt. Pseudonim nie może być dłuższa niż 10 znaków.  |
 | `--productKey` | **Opcjonalne**: Określa klucz produktu do użycia na potrzeby zainstalowany produkt. Składa się z 25 alfanumeryczne znaki w formacie `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` lub `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Wyświetlanie w trybie offline wersję tej strony. |
@@ -80,12 +80,12 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | ----------------------- | --------------- |
 | `--layout <dir>` | Określa katalog można utworzyć w trybie offline Zainstaluj pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [utworzyć sieciowej instalację programu Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Opcjonalne**: używane z `--layout` przygotować w trybie offline Zainstaluj pamięci podręcznej z pakietów zasobów z określonego języki. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeOptional`). Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. <br/>**Uwaga**: Jeśli `--add` jest używana, tylko określonym obciążeń i składników oraz ich zależności zostaną pobrane. Jeśli `--add` nie zostanie określony, obciążeń i wszystkie składniki są pobierane do układu.|
+| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. <br/>**Uwaga**: Jeśli `--add` jest używana, tylko określonym obciążeń i składników oraz ich zależności zostaną pobrane. Jeśli `--add` nie zostanie określony, obciążeń i wszystkie składniki są pobierane do układu.|
 | `--includeRecommended` | **Opcjonalne**: zawiera składniki zalecane dla dowolnych zadań, które są zainstalowane, ale nie składników opcjonalnych. Obciążenia są określone za pomocą `--allWorkloads` lub `--add`. |
 | `--includeOptional` | **Opcjonalne**: zawiera zalecanej *i* opcjonalne składniki wszystkie obciążenia są uwzględniane w układzie. Obciążenia są określane za pomocą `--add`.  |
 | `--keepLayoutVersion` | **Nowość w 15 ustęp 3, opcjonalnie**: zmiany układu bez aktualizowania wersji układu. |
-| `--verify` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ.  Pliki uszkodzone lub brakujące są wyświetlane. |
-| `--fix` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ.  Jeśli pliki znajdują się być uszkodzony lub nie ma, są one pobrane ponownie.  Dostęp do Internetu jest wymagana do napraw układ. |
+| `--verify` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ. Pliki uszkodzone lub brakujące są wyświetlane. |
+| `--fix` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ.  Jeśli pliki znajdują się być uszkodzony lub nie ma, są ponownego pobrania ich. Dostęp do Internetu jest wymagana do napraw układ. |
 | `--clean <one or more paths to catalogs>` | **Nowość w 15 ustęp 3, opcjonalnie**: usuwa stare wersje składników z układu, który został zaktualizowany do nowszej wersji. |
 
 | **Opcje zaawansowane instalacji** | **Opis** |
@@ -102,8 +102,8 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--noUpdateInstaller` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, Instalatorowi na aktualizowanie się, gdy określono cichy. Instalator niepowodzenie polecenia i zwraca kod zakończenia inną niż zero, jeśli noUpdateInstaller zostanie określony z okna, gdy wymagana jest aktualizacja Instalatora. |
 | `--noWeb` | **Nowość w 15 ustęp 3, opcjonalnie**: Instalator pobierze teraz żadnej zawartości, który jest instalowany z Internetu.  Cała zawartość, który jest instalowany musi być dostępny w układzie w trybie offline.  Układu nie ma zawartości, instalacja zakończy się niepowodzeniem.  Aby uzyskać więcej informacji, zobacz [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Nowość w 15.7 opcjonalne**: służy do określania ścieżki instalacji niestandardowej instalacji. Obsługiwana ścieżka, których nazwy są udostępniane, pamięci podręcznej i instalacji. |
-| `--path cache=<path>` | **Nowość w 15.7 opcjonalne**: używa lokalizacji określ pobierania plików instalacyjnych. Tej lokalizacji można ustawić tylko przy pierwszym uruchomieniu programu Visual Studio jest zainstalowany. Przykład: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Nowość w 15.7 opcjonalne**: zawiera pliki udostępnione do instalacji programu Visual Studio side-by-side. Niektóre narzędzia i zestawy SDK zainstalować produkt w lokalizacji na dysku, podczas gdy inne mogą zastąpić to ustawienie, zainstaluj na inny dysk. Przykład: `--path shared="C:\VS\shared"` |
+| `--path cache=<path>` | **Nowość w 15.7 opcjonalne**: używa lokalizacji określ pobierania plików instalacyjnych. Tej lokalizacji można ustawić tylko po raz pierwszy jest zainstalowany program Visual Studio. Przykład: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Nowość w 15.7 opcjonalne**: zawiera pliki udostępnione do instalacji programu Visual Studio side-by-side. Niektóre narzędzia i zestawy SDK zainstalować produkt w lokalizacji na dysku, podczas gdy inne mogą zastąpić to ustawienie, zainstaluj na inny dysk. Przykład: `--path shared="C:\VS\shared"` <br><br>Ważne: To można ustawić tylko raz i zainstalowaniu programu Visual Studio po raz pierwszy. |
 | `--path install=<path>` | **Nowość w 15.7 opcjonalne**: odpowiednikiem `–-installPath`. W szczególności `--installPath "C:\VS"` i `--path install="C:\VS"` są równoważne. Jednocześnie można użyć tylko jeden z tych. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista identyfikatorów obciążenia i identyfikatory składników
@@ -114,24 +114,24 @@ Listę obciążenia i identyfikatory składników posortowane według produktu V
 
 | **Ustawienia regionalne języka** | **Język** |
 | ----------------------- | --------------- |
-| cs-CZ | czeski |
-| de-DE | niemiecki |
-| EN US | Angielski |
-| es-ES | Hiszpański |
-| fr-FR | Francuski |
-| IT-IT | Włoski |
-| ja-JP | japoński |
-| ko-KR | koreański |
-| pl-PL | polski |
-| pt-BR | Portugalski (Brazylia) |
-| ru-RU | Rosyjski |
-| tr-TR | turecki |
-| zh-CN | Chiński (uproszczony) |
-| zh-TW | Chiński — tradycyjny |
+| CS-cz | czeski |
+| De-de | niemiecki |
+| en-us | Angielski |
+| Es-es | Hiszpański |
+| Fr-fr | Francuski |
+| IT-it | Włoski |
+| Ja-jp | japoński |
+| Ko-kr | koreański |
+| Pl-pl | polski |
+| Pt-br | Portugalski (Brazylia) |
+| Ru-ru | Rosyjski |
+| TR-tr | turecki |
+| Zh-cn | Chiński (uproszczony) |
+| Zh-tw. | Chiński — tradycyjny |
 
 ## <a name="error-codes"></a>Kody błędów
 
-W zależności od wyniku operacji `%ERRORLEVEL%` zmiennej środowiskowej zostanie ustawiona do jednej z następujących wartości:
+W zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiona na jedną z następujących wartości:
 
 | **Wartość** | **wynik** |
 | --------- | ---------- |

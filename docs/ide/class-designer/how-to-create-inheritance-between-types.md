@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f89a15b0ec734e29e27fe652ee7e71b791db50
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Porady: Tworzenie dziedziczenia pomiędzy typami (Projektant klas)
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Porady: Tworzenie dziedziczenia pomiędzy typami w Projektancie klas
 
 Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy przy użyciu **Projektant klas**, Uzyskuj dostęp do typu podstawowego jego pochodny typ lub typy. Może mieć relację dziedziczenia między dwiema klasami, między klasą a interfejsem lub między dwa interfejsy.
 

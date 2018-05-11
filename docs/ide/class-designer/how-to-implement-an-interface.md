@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>Porady: Implementowanie interfejsu (Projektant klas)
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Porady: Implementowanie interfejsu w Projektancie klas
 
 W **Projektant klas**, można zaimplementować interfejsu na diagramie klas, łącząc go z klasy, która udostępnia kod dla metody interfejsu. **Projektant klas** generuje implementacji interfejsu i relacji między interfejs i klasa będzie wyświetlany jako relację dziedziczenia. Można zaimplementować interfejs, za pomocą rysowania linii dziedziczenia między interfejs i klasy lub przeciągając je z widoku klasy interfejsu.
 
@@ -34,7 +34,7 @@ W **Projektant klas**, można zaimplementować interfejsu na diagramie klas, ł�
 
      Jest wyświetlany lizak dołączonego do klasy, a etykieta o nazwie interfejsu identyfikuje relacji dziedziczenia. Program Visual Studio generuje klas zastępczych dla wszystkich członków interfejsu.
 
- Aby uzyskać więcej informacji, zobacz [porady: Tworzenie dziedziczenia pomiędzy typami](how-to-create-inheritance-between-types.md).
+Aby uzyskać więcej informacji, zobacz [porady: Tworzenie dziedziczenia pomiędzy typami](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Aby zaimplementować interfejsu z okno widoku klas
 

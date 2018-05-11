@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 372e92c2edb9110d6fdde45cb5381c7b420b4b03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Porady: dodawanie komentarzy do diagramów klasy (Projektant klas)
+# <a name="how-to-add-comments-to-class-diagrams"></a>Porady: dodawanie komentarzy do diagramów klas
 
 Kształty komentarza służy do dodawania adnotacji diagramów klas. Kształt komentarz ma jedną właściwość **tekst**, w którym można wpisać tekst. Kształty komentarza istnieje tylko na powierzchnię, a nie w kodzie.
 

@@ -9,11 +9,11 @@ description: Dowiedz się, jak aktywować korzyści technicznej uwzględnionych 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywowanie świadczenia pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -75,6 +75,20 @@ Aby użyć programu Visual Studio korzyści z subskrypcji pomocy technicznej dla
 3.  W obszarze "Obsługa" kliknij przycisk "Łącza pomocy technicznej kontraktu"
 4.  Wprowadź Podaj "Identyfikator dostępu" i "Identyfikator zamówienia" podany w #1 powyżej.
 Po wykonaniu tych kroków, będzie można wybrać planu pomocy technicznej skojarzone z korzyści z subskrypcji dla programu Visual Studio.  (Nazwa planu może zawierać "MSDN").
+
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | 4 zdarzeń       |  Tak|
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | zdarzenia 2                                             |  Tak         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | zdarzenia 2                                               | Tak         |
+| Visual Studio Dev Essentials | NA  | Niedostępne |NA|
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+
+<sup>1</sup>*obejmuje: Wyobraź sobie Premium.   Wyklucza: Nie do sprzedaży (niego), programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy Standard, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), MCT oprogramowania i usług.*
+
+<sup>2</sup>*obejmuje: Wyobraź sobie Standard.* 
 
  
 

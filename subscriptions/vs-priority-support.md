@@ -3,21 +3,21 @@ title: Priorytet świadczenia pomocy technicznej w subskrypcji programu Visual S
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji na temat korzyści priorytetów zawarte w subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Obsługa priorytetu w ramach subskrypcji programu Visual Studio
 
-Priorytet obsługuje korzyści zapewnia dostęp do różnych Obsługa fora, gdzie można wyszukiwać istniejące wiadomości lub zapyta nowe pytania.  Jeśli Twoje pytanie nie zostanie odebrane przez społeczność dwa dni, zespół pomocy technicznej firmy Microsoft zapewni odpowiedzi.  
+Priorytet obsługuje korzyści zapewnia dostęp do różnych Obsługa fora, gdzie można wyszukiwać istniejące wiadomości lub zapyta nowe pytania.  Społeczność nie odpowie na swoje pytanie, w ciągu dwóch dni, zespół pomocy technicznej firmy Microsoft zawierają odpowiedzi.  
 
 Subskrybenci z wybranych subskrypcji programu Visual Studio mogą otrzymywać techniczną priorytet przez dużą liczbę fora obejmujące wiele tematów.
 
@@ -221,7 +221,7 @@ Uzyskiwanie dostępu do pomocy technicznej przed jest bardzo prosty.
 | Visual Studio Dev Essentials | NA  | Włączone                                                            |Tak |
 | Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
 
-<sup>1</sup>*obejmuje: nie do sprzedaży (niego) Wyobraź sobie ekwiwalentu pełnego wymiaru czasu programu Visual Studio Industry Partner (VSIP).    Wyklucza: Sieci Microsoft Partner Network (MPN), MCT oprogramowania i usług, MCT oprogramowania i deweloperów usług, BizSpark, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD).*
+<sup>1</sup>*obejmuje: nie do sprzedaży (niego) Wyobraź sobie ekwiwalentu pełnego wymiaru czasu programu Visual Studio Industry Partner (VSIP).  Wyklucza: Sieci Microsoft Partner Network (MPN), MCT oprogramowania i usług, MCT oprogramowania i deweloperów usług, BizSpark, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD).*
 
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 

@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>Dostosowywanie systemu kompilacji
 
@@ -28,17 +28,17 @@ Program MSBuild używa pliku XML o nazwie pliku projektu, który definiuje *elem
 
 Zlokalizuj plik MSBuild prawym przyciskiem myszy nazwę projektu i wybierając **ujawnić w wyszukiwarce**. Okno wyszukiwania zawiera wszystkie pliki i foldery, związane z projektem, w tym `.csproj` plików, jak pokazano na poniższej ilustracji:
 
-![](media/customizing-build-system-image1.png)
+![Lokalizacja csproj w wyszukiwanie](media/customizing-build-system-image1.png)
 
 Aby wyświetlić `.csproj` na nowej karcie w programie Visual Studio for Mac, kliknij prawym przyciskiem myszy nazwę projektu i przejdź do **Narzędzia > Edytuj plik**:
 
-![](media/customizing-build-system-image2.png)
+![Otwieranie csproj w edytorze źródła](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>Kompozycja plik programu MSBuild
 
 Wszystkie pliki programu MSBuild zawiera obowiązkowe głównego `Project` element, w następujący sposób:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ Wszystkie pliki programu MSBuild zawiera obowiązkowe głównego `Project` eleme
 
 Zwykle, projekt zostanie również zaimportować `.targets` pliku. Ten plik zawiera wiele reguł, które opisują sposób przetwarzania i utworzyć różne pliki. Importowanie są zwykle widoczne w dolnej części Twojego `proj` pliku, a dla projektów C# wyglądać mniej więcej tak:
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ Są ustawione, przy użyciu PropertyGroup i może zawierać dowolną liczbę Pro
 
 Na przykład PropertyGroup dla prostej aplikacji konsolowej może wyglądać następujący kod XML:
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ Elementy są tworzone przez zadeklarowanie `ItemGroup`. Może być dowolną licz
 
 Na przykład poniższy fragment kodu tworzy uruchamianie ekrany z systemem iOS. Ekrany Uruchom ma typ kompilacji `BundleResource`, z spec jako ścieżkę do obrazu:
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ Na przykład poniższy fragment kodu tworzy uruchamianie ekrany z systemem iOS. 
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  Element zestawów można odwoływać się od wyrażenia przy użyciu `@()` składni. Na przykład `@(BundleResource)` zostaną ocenione jako zestawu elementu BundleResource, co oznacza, że wszystkie elementy BundleResource. Jeśli nie ma żadnych towarów tego typu, będzie pusta, bez żadnych błędów.
 
 ## <a name="resources-for-learning-msbuild"></a>Zasoby umożliwiające uzyskiwanie MSBuild
@@ -105,5 +105,3 @@ Dowiedz się więcej o MSBuild bardziej szczegółowo można następujące zasob
 
 * [MSDN — omówienie](https://msdn.microsoft.com/library/dd393574.aspx)
 * [MSDN — pojęcia](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

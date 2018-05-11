@@ -31,13 +31,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="creating-and-configuring-type-members-class-designer"></a>Tworzenie i konfigurowanie typów członków (Projektant klas)
+# <a name="create-and-configure-type-members-in-class-designer"></a>Utworzyć i skonfigurować elementy członkowskie typu w Projektancie klas
+
 Możesz dodać tych członków do typów w klasie diagram i skonfigurować te elementy członkowskie **szczegółów klasy** okno:
 
 |**Typ**|**Elementy członkowskie, które może zawierać**|
@@ -57,30 +58,26 @@ Możesz dodać tych członków do typów w klasie diagram i skonfigurować te el
 
 |Zadanie|Obsługuje zawartości|
 |----------|------------------------|
-|**Wprowadzenie:** Aby utworzyć i skonfigurować elementy członkowskie typu, należy otworzyć **szczegółów klasy** okna.|-   [Otwórz okno Szczegóły klasy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Uwagi dotyczące użycia szczegóły klasy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Wyświetl informacje tylko do odczytu](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Skróty klawiatury i myszy w oknie Diagram klas i szczegóły klasy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Tworzenie i modyfikowanie elementów członkowskich typu:** tworzenia nowych elementów członkowskich, zmodyfikować elementów członkowskich i dodać parametry do metody przy użyciu **szczegółów klasy** okna.|-   [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members)<br />-   [Zmodyfikuj elementy członkowskie typu](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Dodawanie parametrów do metod](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Wprowadzenie:** Aby utworzyć i skonfigurować elementy członkowskie typu, należy otworzyć **szczegółów klasy** okna.|- [Otwórz okno Szczegóły klasy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Uwagi dotyczące użycia szczegóły klasy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Wyświetl informacje tylko do odczytu](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Skróty klawiatury i myszy w oknie Diagram klas i szczegóły klasy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Tworzenie i modyfikowanie elementów członkowskich typu:** tworzenia nowych elementów członkowskich, zmodyfikować elementów członkowskich i dodać parametry do metody przy użyciu **szczegółów klasy** okna.|- [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members)<br />- [Zmodyfikuj elementy członkowskie typu](creating-and-configuring-type-members.md#modify-type-members)<br />- [Dodawanie parametrów do metod](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Otwórz okno Szczegóły klasy
-Domyślnie **szczegółów klasy** zostanie wyświetlone okno automatycznie po otwarciu nowego diagramu klas (zobacz [porady: Dodawanie diagramów klasy do projektów](how-to-add-class-diagrams-to-projects.md)). Można również otworzyć **szczegółów klasy** okna jawnie, w następujący sposób.
 
-#### <a name="to-open-the-class-details-window"></a>Aby otworzyć okno Szczegóły klasy
+Domyślnie **szczegółów klasy** zostanie wyświetlone okno automatycznie po otwarciu nowego diagramu klas. Zobacz [porady: Dodawanie diagramów klasy do projektów](how-to-add-class-diagrams-to-projects.md)). Można również otworzyć **szczegółów klasy** okna w następujący sposób:
 
-1.  Kliknij prawym przyciskiem myszy na dowolnej klasy na diagramie, aby wyświetlić menu kontekstowe.
+- Kliknij prawym przyciskiem myszy na dowolnej klasy na diagramie, aby wyświetlić menu kontekstowe, a następnie wybierz **szczegółów klasy**.
 
-2.  W menu kontekstowym kliknij **szczegółów klasy**.
-
- - lub -
-
--   Wskaż **inne okna** w menu Widok, a następnie kliknij przycisk **szczegółów klasy**.
+- Wybierz **widoku** > **inne okna** > **szczegółów klasy** na pasku menu.
 
 ## <a name="create-members"></a>Tworzenie elementów członkowskich
+
 Można utworzyć element członkowski, używając dowolnego z następujących narzędzi:
 
--   **Projektant klas**
+- **Projektant klas**
 
--   **Klasa szczegóły** okna narzędzi
+- **Klasa szczegóły** okna narzędzi
 
--   **Klasa szczegóły** okna
+- **Klasa szczegóły** okna
 
 > [!NOTE]
 > Można również utworzyć konstruktory i destruktory przy użyciu procedur opisanych w tej sekcji. Należy pamiętać, że konstruktory i destruktory są specjalnymi rodzajami metod i jako takie pojawią się one w **metody** przedział w kształty diagram klas, a w **metody** sekcji  **Klasa szczegóły** okna siatki.
@@ -88,7 +85,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 > [!NOTE]
 > Jedyna jednostka, jaką można dodać do obiektu delegowanego, to parametr. Należy pamiętać, że procedura uprawniony "Aby utworzyć członka za pomocą **szczegółów klasy** pasek narzędzi okna" jest nieprawidłowa dla tej akcji.
 
-#### <a name="to-create-a-member-using-class-designer"></a>Aby utworzyć składową za pomocą Projektanta klas
+### <a name="create-a-member-using-class-designer"></a>Utwórz element członkowski za pomocą projektanta klas
 
 1.  Kliknij prawym przyciskiem myszy typ, do której chcesz dodać członka, wskaż pozycję **Dodaj**, a następnie wybierz typ elementu członkowskiego, które chcesz dodać.
 
@@ -96,7 +93,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
 2.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
-#### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>Aby utworzyć członka za pomocą narzędzi okno Szczegóły klasy
+### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Utwórz element członkowski za pomocą narzędzi okno Szczegóły klasy
 
 1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
 
@@ -112,7 +109,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
 4.  Opcjonalnie określ inne szczegóły dotyczące elementu członkowskiego, takie jak jego typ.
 
-#### <a name="to-create-a-member-using-the-class-details-window"></a>Aby utworzyć członka za pomocą okno Szczegóły klasy
+### <a name="create-a-member-using-the-class-details-window"></a>Utwórz element członkowski za pomocą okno Szczegóły klasy
 
 1.  Na powierzchni diagramu wybierz typ, do którego chcesz dodać element członkowski.
 
@@ -129,6 +126,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
      **Uwaga:** umożliwia także skróty klawiaturowe do tworzenia elementów członkowskich. Aby uzyskać więcej informacji, zobacz [skróty klawiaturowe i myszy w oknie Diagram klas i szczegóły klasy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Zmodyfikuj elementy członkowskie typu
+
 Projektant klas umożliwia modyfikowanie składowych typów, które są wyświetlane na diagramie. Można modyfikować składowe dowolnego typu wyświetlane na diagramie klasy, które nie są tylko do odczytu. Zmodyfikuj elementy członkowskie typu za pomocą edycji w miejscu na powierzchni projektu okna właściwości oraz **szczegółów klasy** okna.
 
 Wszystkie elementy członkowskie wyświetlane **szczegółów klasy** okna reprezentują członkami typów na diagramie klas. Istnieją cztery rodzaje elementów członkowskich: metody, właściwości, pola i zdarzenia.
@@ -137,41 +135,41 @@ Wszystkie wiersze elementów członkowskich pojawiają się pod nagłówkami, kt
 
 Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 
--   **Ikona elementu członkowskiego**
+- **Ikona elementu członkowskiego**
 
      Każdy rodzaj elementu członkowskiego jest reprezentowany przez własną ikonę. Wskaż myszą ikony elementu członkowskiego do wyświetlania podpisu elementu członkowskiego. Kliknij ikonę elementu członkowskiego lub przestrzeń z lewej strony ikony elementu członkowskiego, aby zaznaczyć wiersz.
 
--   **Nazwa elementu członkowskiego**
+- **Nazwa elementu członkowskiego**
 
      **Nazwa** kolumny w wierszu elementu członkowskiego Wyświetla nazwę elementu członkowskiego. Ta nazwa jest wyświetlany również w **nazwa** właściwości w oknie właściwości. Ta komórka służy do zmiany nazwy któregokolwiek elementu członkowskiego, który ma uprawnienia odczytu i zapisu.
 
      Jeśli **nazwa** jest zbyt ograniczone, aby wyświetlić całą nazwę wskazanie myszą na nazwę elementu członkowskiego Wyświetla całą nazwę kolumny.
 
--   **Typ elementu członkowskiego**
+- **Typ elementu członkowskiego**
 
      **MemberType** komórki używa funkcji IntelliSense, pozwalającej wybierz z listy wszystkich typów w bieżącym projekcie lub przywoływane projekty.
 
--   **Modyfikator elementu członkowskiego**
+- **Modyfikator elementu członkowskiego**
 
      Zmień widoczność modyfikator elementu członkowskiego albo `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`), lub `Default`.
 
--   **\<Dodaj element członkowski >**
+- **\<Dodaj element członkowski >**
 
      Ostatni wiersz w **szczegółów klasy** okna zawiera tekst  **\<dodać członka >** w **nazwa** komórki. Po kliknięciu tej komórki, można utworzyć nowy element członkowski. Aby uzyskać więcej informacji, zobacz [tworzenia elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 
--   **Właściwości elementów członkowskich w oknie właściwości**
+- **Właściwości elementów członkowskich w oknie właściwości**
 
      **Szczegółów klasy** okno wyświetla podzbiór właściwości elementów członkowskich, które są wyświetlane w oknie właściwości. Zmiana właściwości w jednej lokalizacji zaktualizuje globalnie wartość właściwości. Obejmuje to wyświetlanie jej wartości w innej lokalizacji.
 
--   **Podsumowanie**
+- **Podsumowanie**
 
      **Podsumowania** komórki przedstawia podsumowanie informacji na temat elementu członkowskiego. Kliknij przycisk wielokropka w **Podsumowanie** komórki, aby wyświetlić lub edytować informacje o **Podsumowanie**, **typu zwracanego**, i **uwagi** dla elementu członkowskiego .
 
--   **Ukryj**
+- **Ukryj**
 
      Gdy **Ukryj** pole wyboru jest zaznaczone, element członkowski nie jest wyświetlany w typie.
 
-#### <a name="to-modify-a-type-member"></a>Aby zmodyfikować element członkowski typu
+### <a name="to-modify-a-type-member"></a>Aby zmodyfikować element członkowski typu
 
 1.  Za pomocą Projektanta klas, wybierz typ.
 
@@ -180,46 +178,43 @@ Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 3.  Edytowanie wartości w polach **szczegółów klasy** okna siatki. Po każdej modyfikacji naciśnij klawisz ENTER lub w inny sposób przenieś fokus kursora z edytowanego pola, na przykład, naciskając klawisz TAB. Zmiany odzwierciedlają się bezpośrednio w kodzie.
 
     > [!NOTE]
-    >  Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.
+    > Jeśli chcesz zmodyfikować jedynie nazwę elementu członkowskiego, możesz to zrobić za pomocą edycji w miejscu.
 
 ## <a name="add-parameters-to-methods"></a>Dodawanie parametrów do metod
+
 Dodawanie parametrów do metod za pomocą **szczegółów klasy** okna. Parametry mogą być skonfigurowane jako wymagane lub opcjonalne. Wartość dla **opcjonalne domyślne** parametru instruuje projektanta, aby wygenerować kod jako parametr opcjonalny.
 
 Wiersze parametrów zawierają następujące elementy:
 
--   **Nazwa**
+- **Nazwa**
 
      **Nazwa** kolumny w wierszu parametru wyświetla nazwę parametru. Ta nazwa jest wyświetlany również w **nazwa** właściwości w oknie właściwości. Ta komórka służy do zmiany nazwy któregokolwiek parametru, który ma uprawnienia odczytu i zapisu.
 
      Wskazując nazwę parametru wyświetla nazwę parametru, jeśli **nazwa** kolumna jest zbyt ograniczone, aby wyświetlić całą nazwę.
 
--   **Typ**
+- **Typ**
 
      **Typ parametru** komórki używa funkcji IntelliSense, które pozwala wybrać z listy wszystkich typów w bieżącym projekcie lub przywoływane projekty.
 
--   **Modyfikator**
+- **Modyfikator**
 
      **Modyfikator** komórki w wierszu parametr akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametrów, użyj pola listy rozwijanej można wybierać **Brak**, **ref**, **limit**, lub **params** w języku C# i **ByVal**, **ByRef**, lub **ParamArray** w języku Visual Basic
 
--   **Podsumowanie**
+- **Podsumowanie**
 
      **Podsumowanie** komórki w wierszu parametr umożliwia wprowadzanie komentarze w kodzie, które są widoczne w IntelliSense podczas wprowadzania parametru w edytorze kodu.
 
--   **\<Dodaj parametr >**
+- **\<Dodaj parametr >**
 
      Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<add parameter>** w **nazwa** komórki. Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Właściwości parametru w oknie właściwości**
-
-Okno właściwości zawiera te same właściwości parametru wyświetlane w **szczegółów klasy** okna: **nazwa**, **typu**, **modyfikator** , **Podsumowanie**, jak również **opcjonalne domyślne** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
+**Właściwości** oknie wyświetlane są wyświetlane w tej samej właściwości parametru **szczegółów klasy** okna: **nazwa**, **typu**,  **Modyfikator**, **Podsumowanie**, jak również **opcjonalne domyślne** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
 
 > [!NOTE]
 > Aby dodać parametr do delegata, zobacz [tworzenia elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 
-
 > [!NOTE]
 > Chociaż destruktor jest metodą, to nie może mieć parametrów.
-
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Aby dodać parametr do metody
 
@@ -254,45 +249,47 @@ Okno właściwości zawiera te same właściwości parametru wyświetlane w **sz
 4.  W oknie właściwości, wpisz wartość **opcjonalne domyślne** właściwości. Ustawienie właściwości Opcjonalny domyślny parametru powoduje, że ten parametr staje się opcjonalny.
 
     > [!NOTE]
-    >  Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.
+    > Opcjonalne parametry muszą być ostatnimi parametrami na liście parametrów.
 
 ## <a name="class-details-usage-notes"></a>Uwagi dotyczące użycia szczegóły klasy
+
 Należy pamiętać, następujące porady dotyczące używania **szczegółów klasy** okna.
 
-**Można edytować i nie można edytować komórki**
+### <a name="editable-and-non-editable-cells"></a>Komórki edytowalne i nieedytowalne
 
 Wszystkie komórki w **szczegółów klasy** okna są edytowalne kilka wyjątków:
 
--   Typ całej jest tylko do odczytu, gdy, na przykład znajdują się w zestawie. Po wybraniu kształtu w Projektancie klas **szczegółów klasy** okna powoduje wyświetlenie jej szczegółów w stanie tylko do odczytu.
+- Typ całej jest tylko do odczytu, gdy, na przykład znajdują się w zestawie. Po wybraniu kształtu w Projektancie klas **szczegółów klasy** okna powoduje wyświetlenie jej szczegółów w stanie tylko do odczytu.
 
--   Dla indeksatorów nazwa jest tylko do odczytu, a pozostałe (typ, modyfikator, podsumowanie) są edytowalne.
+- Dla indeksatorów nazwa jest tylko do odczytu, a pozostałe (typ, modyfikator, podsumowanie) są edytowalne.
 
--   Wszystkie typy ogólne w znajduje się tylko do odczytu parametrów **szczegółów klasy** okna. Aby zmienić parametr rodzajowy, wyedytuj jego kod źródłowy.
+- Wszystkie typy ogólne w znajduje się tylko do odczytu parametrów **szczegółów klasy** okna. Aby zmienić parametr rodzajowy, wyedytuj jego kod źródłowy.
 
--   Nazwa parametru typu, który jest zdefiniowany w typie rodzajowym, jest tylko do odczytu.
+- Nazwa parametru typu, który jest zdefiniowany w typie rodzajowym, jest tylko do odczytu.
 
--   Gdy kod typu jest dzielony (Błędny) **szczegółów klasy** okno wyświetla zawartość typu jako tylko do odczytu.
+- Gdy kod typu jest dzielony (Błędny) **szczegółów klasy** okno wyświetla zawartość typu jako tylko do odczytu.
 
-**Szczegóły klasy okna i kod źródłowy**
+### <a name="the-class-details-window-and-source-code"></a>Szczegóły klasy okna i kod źródłowy
 
--   Kod źródłowy można wyświetlić, klikając prawym przyciskiem myszy kształtu **szczegółów klasy** okna (lub Projektant klas), a następnie klikając pozycję Wyświetl kod. Plik źródłowy kodu otwiera się i przewija do wybranego elementu.
+- Kod źródłowy można wyświetlić, klikając prawym przyciskiem myszy kształtu **szczegółów klasy** okna (lub Projektant klas), a następnie klikając pozycję Wyświetl kod. Plik źródłowy kodu otwiera się i przewija do wybranego elementu.
 
--   Zmiana kodu źródłowego jest natychmiast odzwierciedlone w wyświetlania informacji podpisu w Projektancie klas i **szczegółów klasy** okna. Jeśli **szczegółów klasy** zamknięciu okna w czasie, nowe informacje są widoczne, przy następnym otwarciu.
+- Zmiana kodu źródłowego jest natychmiast odzwierciedlone w wyświetlania informacji podpisu w Projektancie klas i **szczegółów klasy** okna. Jeśli **szczegółów klasy** zamknięciu okna w czasie, nowe informacje są widoczne, przy następnym otwarciu.
 
--   Gdy kod typu jest dzielony (Błędny) **szczegółów klasy** okno wyświetla zawartość typu jako tylko do odczytu.
+- Gdy kod typu jest dzielony (Błędny) **szczegółów klasy** okno wyświetla zawartość typu jako tylko do odczytu.
 
-**Funkcje Schowka w okno Szczegóły klasy**
+### <a name="clipboard-functionality-in-the-class-details-window"></a>Funkcje Schowka w okno Szczegóły klasy
 
- Można skopiować lub wyciąć pól lub wiersze z **szczegółów klasy** okna i wklej je do innego typu. Wiersz można wyciąć tylko wtedy, gdy nie jest tylko do odczytu. Po wklejeniu wiersza, **szczegółów klasy** okna przypisuje nową nazwę (pochodzące z nazwą skopiowanego wiersza), aby uniknąć konfliktu.
+Można skopiować lub wyciąć pól lub wiersze z **szczegółów klasy** okna i wklej je do innego typu. Wiersz można wyciąć tylko wtedy, gdy nie jest tylko do odczytu. Po wklejeniu wiersza, **szczegółów klasy** okna przypisuje nową nazwę (pochodzące z nazwą skopiowanego wiersza), aby uniknąć konfliktu.
 
 ## <a name="display-of-read-only-information"></a>Wyświetl informacje tylko do odczytu
+
 Projektant klas i **szczegółów klasy** można wyświetlić w oknie dla następujących typów (i elementów członkowskich typów):
 
--   projekt, który zawiera diagram klas
+- projekt, który zawiera diagram klas
 
--   projekt stanowiący odwołanie z projektu, który zawiera diagram klas
+- projekt stanowiący odwołanie z projektu, który zawiera diagram klas
 
--   zestaw stanowiący odwołanie z projektu, który zawiera diagram klas
+- zestaw stanowiący odwołanie z projektu, który zawiera diagram klas
 
 W dwóch ostatnich przypadkach, jednostka, do której istnieje odwołanie (typ lub składowa), jest tylko do odczytu na diagramie klasy, który ją reprezentuje.
 

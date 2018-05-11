@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # Visual Studio IntelliCode — często zadawane pytania
 
@@ -40,6 +40,13 @@ Deweloperzy mogą [pobrać rozszerzenie eksperymentalne](https://go.microsoft.co
 
 Z IntelliCode na liście uzupełniania sugeruje się, że najczęściej Popraw interfejsu API dla deweloperów do użycia zamiast przedstawiający proste alfabetyczną listę elementów członkowskich. Używany bieżący kontekst kodu dewelopera i wzorce w oparciu o wysokiej jakości 2000, open source projektów, w witrynie GitHub każdego z ponad 100 gwiazdek, aby udostępnić tę listę dynamicznych. Wyniki tworzą modelu, który prognozuje najprawdopodobniej i najbardziej odpowiednie wywołania interfejsu API.
 
+## Pytanie: jak dobrej są sugestie ukończenia IntelliCode?
+
+Firma Microsoft korzystasz zalecenia firmy IntelliCode wewnętrznie w firmie Microsoft przez pewien czas i uważają, że są przydatne sugestie. Ostatecznie, dowód będzie w sposób przydatne te zalecenia są dostępne dla Ciebie jako użytkownik kodu. Chętnie poznamy można umożliwić programu Visual Studio [rozszerzenia IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) try. Daj nam wiedzieć, jak działa dla Ciebie i wyślij nam swoją opinię. Również nauczymy naszych model oparty na pobranie w Nasze zalecenia i będziemy informować rozszerzenia jako zwiększa modelu.
+
+> [!NOTE]
+> Nie są zbierane żadne z kodu użytkownika. Zobacz pytanie na [prywatności](#privacy).
+
 ## Q. Co to jest przyszłości IntelliCode?
 
 Firma Microsoft jest eksploracji wiele różnych sposobów zwiększenie produktywności deweloperów przy użyciu AI i innych zaawansowanych technik. W 2018 kompilacji, firma Microsoft wykazały, wczesne widoku niektórych scenariuszy, w którym naszym zdaniem AI może pomóc deweloperom, ale istnieje wiele więcej! Interesuje nas learning deweloperów, które eksperymentować co możemy już widoczny, tak logowania przez wiadomości i aktualizacji w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
@@ -56,7 +63,7 @@ W IntelliCode wspierana AI IntelliSense jest obecnie jego pierwszym Podgląd eks
 
 Środowisko użytkownika był wyświetlany w 2018 kompilacji w programie Visual Studio 2017 na codebase C#. Jednak mamy nadzieję do rozszerzania IntelliCode więcej języków i narzędzi z rodziny Visual Studio w przyszłości.
 
-## Pytanie: jak prywatności? Jest wysyłany mojego kodu w chmurze? Jakie dane klienta są wysyłane do firmy Microsoft?
+## <a name="privacy"/> Pytanie: jak prywatności? Jest wysyłany mojego kodu w chmurze? Jakie dane klienta są wysyłane do firmy Microsoft?
 
 Deweloperzy zaproszono środowisko Visual Studio IntelliCode dzisiaj jako rozszerzenie eksperymentalne podglądu. Celem rozszerzenia jest umożliwienie deweloperom do testowania IntelliCode jego możliwości i wyrazić swoją opinię do zespołu produktu.
 

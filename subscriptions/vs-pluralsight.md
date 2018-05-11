@@ -9,11 +9,11 @@ description: Więcej informacji o subskrypcji szkolenia Pluralsight uwzględnion
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight w ramach subskrypcji programu Visual Studio
 
@@ -82,7 +82,7 @@ Poniższa tabela zawiera szczegółowe informacje, jakie korzyści z subskrypcji
 | Visual Studio Enterprise (niego<sup>1</sup> ) | Program                                       | Niedostępne                                  |NA|
 <sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP), dyrektor Region (RD), partnera firmy Microsoft Wyobraź sobie sieci (MPN) ekwiwalentu pełnego wymiaru czasu.*
 
-<sup>2</sup>*po upływie Pluralsight subskrypcji, może być uprawniony do 12 miesięcy dostęp do 50 wybranego szkolenia Pluralsight w jednym z trzech obszarach analizę.  Korzyści Pluralsight jest tylko jednorazowy powiązane indywidualnych.  Gdy subskrybent zużywa korzyści, nie zresetować. Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.*
+<sup>2</sup>*Pluralsight korzyści jest tylko jednorazowy powiązane indywidualnych.    Gdy subskrybent zużywa korzyści, nie zresetować. Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.  Po upływie Pluralsight subskrypcji może być przysługiwać 12 miesięcy dostęp do 50 wybranego szkolenia Pluralsight w jednym z trzech obszarach analizę.*
 
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 

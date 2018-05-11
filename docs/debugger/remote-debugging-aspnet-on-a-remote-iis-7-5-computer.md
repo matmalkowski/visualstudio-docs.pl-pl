@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ff8408ecdf8036a6ec00bdbc3ec93f4b41a2a7fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -51,6 +51,7 @@ W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy doda
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- Program IIS.NET
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
@@ -59,6 +60,8 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 ## <a name="BKMK_deploy_asp_net"></a> Zainstaluj program ASP.NET 4.5 w systemie Windows Server
 
 Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program ASP.NET w usługach IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+
+1. W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.
 
 1. Instalator platformy sieci Web (WebPI) należy zainstalować funkcję ASP.NET 4.5 (z węzła serwera w systemie Windows Server 2012 R2, wybierz **pobrać nowych składników platformy sieci Web** , a następnie wyszukaj ASP.NET)
 
@@ -79,7 +82,7 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 
-2. Otwórz **internetowych usług informacyjnych (IIS) Manager**. (W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
+2. Jeśli go nie jest jeszcze otwarty, otwórz **Internet Information Services (IIS) Manager**. (W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
 
 3. W obszarze **połączeń** w okienku po lewej stronie, przejdź do **witryny**.
 

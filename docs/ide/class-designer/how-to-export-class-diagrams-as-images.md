@@ -14,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5f6e5e285ef6d5551ac94a9eb7b0b8df132b7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Porady: eksportowanie diagramów klasy jako obrazów (Projektant klas)
+# <a name="how-to-export-class-diagrams-as-images"></a>Porady: eksportowanie diagramów klasy jako obrazów
 
 Aby wyeksportować diagramu klas, utworzony przy użyciu kodu w projekcie, Zapisz diagram jako obraz. Jeśli chcesz wyeksportować diagramów klas UML w zamian, zobacz [Eksportowanie diagramów jako obrazów](../../modeling/export-diagrams-as-images.md).
 
-1.  Otwórz plik diagramu (.cd) klasy.
+## <a name="export-a-diagram"></a>Eksportowanie diagramu
+
+1.  Otwórz diagram klas (*.cd*) pliku.
 
 2.  Z **diagramu klas** wybierz menu lub menu skrótów powierzchni diagram **Eksportuj Diagram jako obraz**.
 
@@ -34,9 +36,9 @@ Aby wyeksportować diagramu klas, utworzony przy użyciu kodu w projekcie, Zapis
 
 5.  Wybierz **wyeksportować** do zakończenia eksportowania.
 
-     Aby automatycznie zaktualizować eksportowanych obrazów, które są połączone z innych dokumentów, eksportowanie diagramu ponownie w programie Visual Studio.
+Aby automatycznie zaktualizować eksportowanych obrazów, które są połączone z innych dokumentów, eksportowanie diagramu ponownie w programie Visual Studio.
 
-### <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz także
 
 - [Porady: drukowanie diagramów klasy](how-to-print-class-diagrams.md)
 - [Praca z diagramami klas](working-with-class-diagrams.md)

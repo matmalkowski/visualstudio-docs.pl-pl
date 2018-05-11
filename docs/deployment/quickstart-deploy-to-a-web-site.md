@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikowanie witryny sieci web przy użyciu narzędzia Visual Studio publikowania aplikacji sieci web lub aplikacji .NET Core
 
@@ -24,13 +24,19 @@ Można użyć **publikowania** narzędzia do publikowania aplikacji ASP.NET do w
 
 Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python aplikacji w programie Visual Studio. Dla środowiska Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
 
+## <a name="prerequisites"></a>Wymagania wstępne
+
+* Musi mieć Visual Studio 2017 r zainstalowany i **ASP.NET** i **.NET Framework** programowanie obciążenia. W przypadku aplikacji .NET Core należy również **.NET Core** obciążenia.
+
+    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web platformy ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
-1. Wybierz **MVC**, upewnij się, że **bez uwierzytelniania** jest zaznaczone, a następnie kliknij przycisk **OK**.
+1. Wybierz **MVC** (lub wybierz **aplikacji sieci Web (Model-View-Controller)** dla platformy .NET Core), upewnij się, że **bez uwierzytelniania** jest zaznaczone, a następnie kliknij przycisk **OK** .
 
 1. Wpisz nazwę, takich jak **MyWebApp** i kliknij przycisk **OK**.
 
@@ -44,7 +50,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
     ![Wybierz publikowania](../deployment/media/quickstart-publish-aspnet.png "wybierz publikowania")
 
-1. W **publikowania** okienku wybierz **usług IIS, FTP, itp**.
+1. Jeśli wcześniej skonfigurowano żadnych profilów publikowania, **publikowania** pojawi się okienko. Kliknij przycisk **Utwórz nowy profil**.
+
+1. W **wybierz element docelowy publikowania** oknie dialogowym wybierz **usług IIS, FTP, itp**.
 
     ![Wybierz usług IIS, FTP, itp.](../deployment/media/quickstart-publish-iis-ftp.png "wybierz usług IIS, FTP,... itd.")
 
@@ -56,7 +64,7 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 1. W **metody publikowania** pola, takie jak wybrać metodę **narzędzia Web Deploy** lub **FTP**.
 
-    Ustawienia, które są wyświetlane obok odpowiada wybranej metody publikowania.
+    Ustawienia, które są wyświetlane obok odpowiada wybranej metody publikowania. Narzędzie Web Deploy upraszcza wdrażanie aplikacji sieci Web i witryn sieci Web na serwerach usług IIS, a musi być zainstalowany jako aplikacji na serwerze. Użyj [Instalatora platformy sieci Web](https://www.microsoft.com/web/downloads/platform.aspx) go zainstalować.
 
 1. Skonfiguruj wymagane ustawienia metody publikowania i kliknij przycisk **sprawdzania poprawności połączenia**.
 
@@ -74,4 +82,7 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Wdrażanie platformy ASP.NET w usługach IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+W tym szybkiego startu wiesz, jak utworzyć profil publikowania za pomocą programu Visual Studio. Można również skonfigurować publikowanie profilu przez zaimportowanie ustawień publikowania.
+
+> [!div class="nextstepaction"]
+> [Importowanie ustawień publikowania i wdrażania usług IIS](tutorial-import-publish-settings-iis.md)

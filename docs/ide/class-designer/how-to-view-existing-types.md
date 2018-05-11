@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Porady: wyświetlanie istniejących typów (Projektant klas)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Porady: wyświetlanie istniejących typów w Projektancie klas
 
 Aby wyświetlić istniejącego typu i jej elementów członkowskich, należy dodać jego kształtu do diagramu klas.
 
@@ -36,13 +36,13 @@ Projektowanie nowych typów w diagramach klas, zobacz [porady: Tworzenie typów 
 
 2.  Z projektu w **Eksploratora rozwiązań**, przeciągnij pliku kodu źródłowego do diagramu klas.
 
-    > [!WARNING]
+    > [!NOTE]
     > Jeśli rozwiązanie zawiera projekt, który udostępnia kod wielu aplikacjom, można przeciągnąć plików lub kodu do diagramu klas tylko z tych źródeł:
     >
-    > -   Projekt aplikacji, który zawiera diagramu
-    > -   Udostępnionego projektu, które zostały zaimportowane na podstawie projektu aplikacji
-    > -   Projekt odwołania
-    > -   Zestaw
+    > - Projekt aplikacji, który zawiera diagramu
+    > - Udostępnionego projektu, które zostały zaimportowane na podstawie projektu aplikacji
+    > - Projekt odwołania
+    > - Zestaw
 
     Kształty przedstawiające typy zdefiniowane w pliku kodu źródłowego są wyświetlane na diagramie w miejscu, gdzie przeciągnąłeś plik.
 
@@ -60,9 +60,7 @@ Przy pierwszym wyświetleniu typu na diagramie, jego kształt pojawia się domy�
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Aby wyświetlić zawartość projektu na diagramie klas
 
-- W **Eksploratora rozwiązań** lub **widoku klasy**, kliknij prawym przyciskiem myszy projekt i wybierz **widoku**, a następnie wybierz **widoku diagramu klas**.
-
-     Tworzony jest automatycznie wypełniony Diagram klas.
+W **Eksploratora rozwiązań** lub **widoku klasy**, kliknij prawym przyciskiem myszy projekt i wybierz **widoku**, a następnie wybierz **widoku diagramu klas**. Tworzony jest automatycznie wypełniony Diagram klas.
 
 ## <a name="see-also"></a>Zobacz także
 

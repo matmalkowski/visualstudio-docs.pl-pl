@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f1453b32052fb50a049f413d05bf562e6d4b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Porady: dostosowywanie diagramów klasy (Projektant klas)
+# <a name="how-to-customize-class-diagrams"></a>Porady: dostosowywanie diagramów klasy
 
 Można zmienić sposób wyświetlania informacji na diagramach klas. Można dostosować cały diagram lub poszczególne typy na powierzchni projektowej.
 
@@ -34,9 +34,9 @@ Sekcje, które zawierają typ elementów członkowskich, takich jak **właściwo
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Powiększanie i pomniejszanie diagramu klasy
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Na **Projektant klas** narzędzi, kliknij przycisk **Powiększ** lub **Pomniejsz** przycisk, aby zmienić poziom powiększenia powierzchni projektanta.
+2. Na **Projektant klas** narzędzi, kliknij przycisk **Powiększ** lub **Pomniejsz** przycisk, aby zmienić poziom powiększenia powierzchni projektanta.
 
      lub
 
@@ -47,82 +47,82 @@ Sekcje, które zawierają typ elementów członkowskich, takich jak **właściwo
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Dostosowywanie grupowania i sortowania elementów członkowskich typu
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy pusty obszar na powierzchni projektu, a następnie wskaż **członków grupy**.
+2. Kliknij prawym przyciskiem myszy pusty obszar na powierzchni projektu, a następnie wskaż **członków grupy**.
 
-3.  Wybierz jedną z dostępnych opcji:
+3. Wybierz jedną z dostępnych opcji:
 
-    1.  **Grupuj według rodzaju** oddziela elementy członkowskie typu poszczególnych na listę pogrupowanych właściwości, metody, zdarzeń i pól. Pojedyncze grupy zależą od definicji jednostki: na przykład, klasa nie wyświetli żadnej grupy zdarzeń, jeśli nie istnieją jeszcze żadne zdarzenia zdefiniowane dla tej klasy.
+    - **Grupuj według rodzaju** oddziela elementy członkowskie typu poszczególnych na listę pogrupowanych właściwości, metody, zdarzeń i pól. Pojedyncze grupy zależą od definicji jednostki: na przykład, klasa nie wyświetli żadnej grupy zdarzeń, jeśli nie istnieją jeszcze żadne zdarzenia zdefiniowane dla tej klasy.
 
-    2.  **Grupuj według dostępu** modyfikatorów dostępu oddziela elementy członkowskie typu poszczególnych na listę pogrupowanych według elementu członkowskiego. Na przykład, publiczne i prywatne.
+    - **Grupuj według dostępu** modyfikatorów dostępu oddziela elementy członkowskie typu poszczególnych na listę pogrupowanych według elementu członkowskiego. Na przykład, publiczne i prywatne.
 
-    3.  **Sortuj alfabetycznie** Wyświetla elementy wchodzące w skład jednostki jako jedną listę porządku alfabetycznym. Lista jest sortowana w kolejności rosnącej.
+    - **Sortuj alfabetycznie** Wyświetla elementy wchodzące w skład jednostki jako jedną listę porządku alfabetycznym. Lista jest sortowana w kolejności rosnącej.
 
 ## <a name="hide-compartments-on-a-type"></a>Ukrywanie przedziałów w danym typie
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy kategorii Członkowskich w typie, który chcesz dostosować (na przykład wybierz **metody** węzła w klasie.
+2. Kliknij prawym przyciskiem myszy kategorii Członkowskich w typie, który chcesz dostosować (na przykład wybierz **metody** węzła w klasie.
 
-3.  Kliknij przycisk **Ukryj przedział**.
+3. Kliknij przycisk **Ukryj przedział**.
 
      Wybrany przedział znika z kontenera typu.
 
 ## <a name="hide-individual-members-on-a-type"></a>Ukrywanie poszczególnych elementów członkowskich w danym typie
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy element członkowski w typie, który chcesz ukryć.
+2. Kliknij prawym przyciskiem myszy element członkowski w typie, który chcesz ukryć.
 
-3.  Kliknij przycisk **Ukryj**.
+3. Kliknij przycisk **Ukryj**.
 
      Wybrany element członkowski znika z kontenera typu.
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Pokazywanie ukrytych przedziałów i elementów członkowskich w danym typie
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy nazwę typu z ukrytym przedziałem.
+2. Kliknij prawym przyciskiem myszy nazwę typu z ukrytym przedziałem.
 
-3.  Kliknij przycisk **Pokaż wszystkie elementy członkowskie**.
+3. Kliknij przycisk **Pokaż wszystkie elementy członkowskie**.
 
      Wszystkie ukryte przedziały i elementy członkowskie pojawiają się w kontenerze typu.
 
 ## <a name="hide-relationships"></a>Ukrywanie relacji
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy linię skojarzenia lub dziedziczenia, którą chcesz ukryć.
+2. Kliknij prawym przyciskiem myszy linię skojarzenia lub dziedziczenia, którą chcesz ukryć.
 
-3.  Kliknij przycisk **Ukryj** linie asocjacji, a następnie kliknij przycisk **Ukryj linii dziedziczenia** linii dziedziczenia.
+3. Kliknij przycisk **Ukryj** linie asocjacji, a następnie kliknij przycisk **Ukryj linii dziedziczenia** linii dziedziczenia.
 
-4.  Kliknij przycisk **Pokaż wszystkie elementy członkowskie**.
+4. Kliknij przycisk **Pokaż wszystkie elementy członkowskie**.
 
      Wszystkie ukryte przedziały i elementy członkowskie pojawiają się w kontenerze typu.
 
 ## <a name="show-hidden-relationships"></a>Pokazywanie ukrytych relacji
 
-1.  Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
+1. Otwórz i wybierz plik diagramu klasy w **Projektant klas**.
 
-2.  Kliknij prawym przyciskiem myszy typ z ukrytym skojarzeniem lub dziedziczeniem.
+2. Kliknij prawym przyciskiem myszy typ z ukrytym skojarzeniem lub dziedziczeniem.
 
  Kliknij przycisk **Pokaż wszystkie elementy członkowskie** linie asocjacji, a następnie kliknij przycisk **Pokaż klasa podstawowa** lub **Pokaż klas pochodnych** linii dziedziczenia.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Usuwanie kształtu z diagramu klasy
 Możesz usunąć kształt typu z diagramu klasy bez wpływu na podstawowy kod typu. Usuwanie kształtów typu z diagramu klasy dotyczy tylko tego diagramu: podstawowy kod, który określa typ, i inne diagramy, które wyświetlają typ, nie są modyfikowane.
 
-1.  Na diagramie klasy zaznacz kształt typu, który chcesz usunąć z diagramu.
+1. Na diagramie klasy zaznacz kształt typu, który chcesz usunąć z diagramu.
 
-2.  Na **Edytuj** menu, wybierz **usunąć z diagramu**.
+2. Na **Edytuj** menu, wybierz **usunąć z diagramu**.
 
      Kształt typu i wszystkie linie skojarzeń lub dziedziczenia połączone z kształtem nie są już wyświetlane na diagramie.
 
 ## <a name="delete-a-type-shape-and-its-underlying-code"></a>Usuwanie kształtu typu i jego kodu podstawowego
 
-1.  Kliknij prawym przyciskiem myszy kształt na powierzchni projektowej.
+1. Kliknij prawym przyciskiem myszy kształt na powierzchni projektowej.
 
-2.  Wybierz **usunąć kod** z menu kontekstowego.
+2. Wybierz **usunąć kod** z menu kontekstowego.
 
      Kształt zostanie usunięty z diagramu, a jego podstawowy kod zostanie usunięty z projektu.
 

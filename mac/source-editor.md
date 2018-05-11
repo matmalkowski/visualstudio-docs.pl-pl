@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Edytor źródła
 
@@ -24,7 +24,6 @@ W tym artykule przedstawiono niektóre główne funkcje Edytor źródła i opisu
 Wyświetlanie i przenoszenie wydajnie w całym kodzie jest integralną częścią przepływu pracy programowania. Dokładnie, jak użytkownik chce wyświetlać i obsługa, że kod jest osobiste decyzji, który różni się między deweloperzy - i często między projektami.
 
 Program Visual Studio dla komputerów Mac oferuje wiele zaawansowanych funkcji, aby wiele platform jako dostępny i użyteczna, jak to możliwe. W poniższych sekcjach opisano niektóre najważniejsze funkcje.
-
 
 ## <a name="code-folding"></a>Składanie kodu
 
@@ -62,25 +61,20 @@ Opcję, aby wyświetlić karty, spacje i zakończenia wierszy jest również dos
 
  ![wyświetlane odstępu](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Linijki
 
 Linijki kolumny jest przydatna do określania długości wiersza, szczególnie w przypadku, gdy praca w zespół, który zawiera wytyczne długość wiersza. Linijki kolumny może być włączony lub wyłączony przechodząc do **programu Visual Studio > Preferencje... > Edytor tekstu > Znaczniki i linijki** i zostanie wybrana (lub usunięcie zaznaczenia) **linijki Pokaż kolumnę**, jak pokazano w na poniższej ilustracji:
 
- ![](media/source-editor-image5.png)
+ ![Okno dialogowe Preferencje z "Pokaż kolumny linijki" wyróżnione](media/source-editor-image5.png)
 
  Zostaną wyświetlone jako pionowy szara linia światła w edytorze źródła.
-
 
 ## <a name="highlight-identifier-references"></a>Wyróżnij odwołania do identyfikatorów
 
 "Wyróżnij odwołania do identyfikatorów" opcja jest włączona można wybrać dowolny symbol w kodzie źródłowym i Edytor źródła zapewni visual przewodnik dotyczący wszystkie odwołania w tym pliku. Aby włączyć tę opcję, przejdź do **programu Visual Studio > Preferencje... > Edytor tekstu > Znaczniki i linijki** i wybierz _Wyróżnij odwołania do identyfikatorów_, jak pokazano na poniższej ilustracji:
 
-![](media/source-editor-image6.png)
+![Okno dialogowe Preferencje z "Wyróżnij odwołania do identyfikatorów" wyróżnione](media/source-editor-image6.png)
 
 Kolor wyróżnienia jest również przydatne w przypadku określające, że coś jest jest przypisany lub odwołuje się do. Jeśli coś jest przypisane, jest wyróżnione kolorem czerwonym; Jeśli jest do niego odwołania, jest zaznaczone na niebiesko:
 
-![](media/source-editor-image7.png)
-
-
-
+![przykład przedstawiający kolor higlight](media/source-editor-image7.png)

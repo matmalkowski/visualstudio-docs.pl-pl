@@ -1,7 +1,7 @@
 ---
 title: Wdrażanie na folder lokalny — Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,17 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Wdrażanie aplikacji sieci web lub aplikacji .NET Core w lokalnym folderze przy użyciu narzędzia publikowanie programu Visual Studio
 
 Można użyć **publikowania** narzędzia do publikowania aplikacji do folderu lokalnego. 
 
 Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python aplikacji w programie Visual Studio. Dla środowiska Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
+
+## <a name="prerequisites"></a>Wymagania wstępne
+
+* Musi mieć Visual Studio 2017 r zainstalowany i **.NET Framework** i **.NET Core** obciążenia programowanie zainstalowane.
+
+    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
@@ -40,7 +46,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
     ![Wybierz publikowania](../deployment/media/quickstart-publish.png "wybierz publikowania")
 
-1. W **publikowania** okienku wybierz **folderu**.
+1. Jeśli wcześniej skonfigurowano żadnych profilów publikowania, **publikowania** pojawi się okienko. Kliknij przycisk **Utwórz nowy profil**.
+
+1. W **wybierz element docelowy publikowania** oknie dialogowym wybierz **folderu**.
 
     ![Wybierz Folder](../deployment/media/quickstart-publish-folder.png "wybierz Folder")
 
