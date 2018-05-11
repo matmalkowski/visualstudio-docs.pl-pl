@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|NazwaProduktu. extension.versionMajor.versionMinor|  
   
- Możesz zarejestrować różne aplikacje, które można otworzyć rozszerzenie pliku określonego przez dodanie numerów wersji ProgID jako wartości wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >*\OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnej ProgID skojarzonego z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą *** nazwa produktu* podmenu. Jeśli ta sama aplikacja jest określony zarówno `OpenWithList` i `OpenWithProgids` kluczy, system operacyjny scala duplikaty.  
+ Możesz zarejestrować różne aplikacje, które można otworzyć rozszerzenie pliku określonego przez dodanie numerów wersji ProgID jako wartości wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnej ProgID skojarzonego z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą *** nazwa produktu* podmenu. Jeśli ta sama aplikacja jest określony zarówno `OpenWithList` i `OpenWithProgids` kluczy, system operacyjny scala duplikaty.  
   
 > [!NOTE]
 >  `OpenWithProgids` Kluczy jest obsługiwana tylko w systemie Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie używać go jako tylko rejestracji obsługi pliku. Ten klucz umożliwia lepsze środowisko pracy użytkownika w systemie Windows XP.  

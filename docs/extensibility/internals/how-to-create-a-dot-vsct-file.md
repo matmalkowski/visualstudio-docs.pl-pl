@@ -63,7 +63,7 @@ Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku źród
   
 1.  Uzyskaj kopię języka Perl.  
   
-2.  Uzyskaj kopię programu skryptów języka Perl ConvertCTCToVSCT.pl, zazwyczaj znajduje się w  *\<ścieżki instalacji programu Visual Studio SDK >*\VisualStudioIntegration\Tools\bin folderu.  
+2.  Uzyskaj kopię programu skryptów języka Perl ConvertCTCToVSCT.pl, zazwyczaj znajduje się w  *\<ścieżki instalacji programu Visual Studio SDK >* \VisualStudioIntegration\Tools\bin folderu.  
   
 3.  Uzyskaj kopię .ctc plik źródłowy, który ma zostać przekonwertowany.  
   

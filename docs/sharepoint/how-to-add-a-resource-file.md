@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  W **dodawania zasobów** oknie dialogowym Wybierz kultury dla pliku zasobów, takich jak angielski (Stany Zjednoczone).  
   
-     Ten krok powoduje dodanie pliku zasobu globalnego do rozwiązania w formacie zasobów * x***.*** kultura ***.** ResX, takich jak Resource1.en US.resx.  
+     Ten krok powoduje dodanie pliku zasobu globalnego do rozwiązania w formacie zasobów * x ***.*** kultura ***.** ResX, takich jak Resource1.en US.resx.  
   
 5.  Gdy **Edytor zasobów** otworzy się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla nazwy funkcji w obszarze **funkcje** węzeł, a następnie wybierz pozycję **dodawania zasobów funkcji**.  
   
-     Ten krok powoduje dodanie pliku zasobu do funkcji w formacie, * ResourceFileName***.*** kultura ***.** ResX, takich jak Feature1.en US.resx.  
+     Ten krok powoduje dodanie pliku zasobu do funkcji w formacie, * ResourceFileName ***.*** kultura ***.** ResX, takich jak Feature1.en US.resx.  
   
 3.  Gdy **Edytor zasobów** otworzy się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.  
   
