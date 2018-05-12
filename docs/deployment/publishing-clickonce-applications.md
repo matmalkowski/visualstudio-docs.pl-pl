@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c7c6e79f251120b9396d523112c717957817ad5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] właściwości publikowania aplikacji po raz pierwszy, można ustawić za pomocą Kreatora publikacji. Tylko kilka właściwości są dostępne w Kreatorze; wszystkie inne właściwości są ustawiane na wartości domyślne.  
@@ -95,7 +95,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 |[Przewodnik: pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Wyjaśniono, jak pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
 |[Przewodnik: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Opisuje sposób oznaczyć ponownie zestawy satelickie jako opcjonalne i pobierania zestawu, komputer kliencki musi uzyskać bieżące ustawienia kultury.|  
 |[Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Opisano sposób wdrażania aplikacji ClickOnce za pomocą narzędzi .NET Framework.|  
-|[Przewodnik: ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|Wyjaśniono, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzi .NET Framework.|  
+|[Przewodnik: ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Wyjaśniono, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzi .NET Framework.|  
 |[Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowej** lub **platformy docelowej** właściwości projektu.|  
 |[Wskazówki: Włączanie aplikacji ClickOnce do uruchamiania na wielu wersje programu .NET Framework](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśniono, jak włączyć aplikacji ClickOnce zainstalować i uruchomić z różnymi wersjami NET Framework.|  
 |[Przewodnik: tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia sposób tworzenia niestandardowego Instalatora, aby zainstalować aplikację ClickOnce.|  

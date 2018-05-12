@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Wprowadź kod działa w programie Visual Studio
 
@@ -91,17 +91,15 @@ Wszelkie nowe lub zaktualizowane ostrzeżenia są wyświetlane w **listy błęd�
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Użyj żarówki do naprawienia lub zrefaktoryzuj kod
 
-[Żarówki](../ide/quick-actions.md) są stosunkowo nowa funkcja programu Visual Studio, które umożliwiają Refaktoryzuj wbudowanego kodu. Są one łatwe rozwiązać typowe ostrzeżenia szybkie i skuteczne w kodzie C#, C++ i Visual Basic. Aby uzyskiwać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie i wybierz **szybkie akcje**, lub naciśnij klawisz **Ctrl**+**.** gdy kursor znajduje się na wiersz z kolorowe wężyk. Zobaczysz listę możliwych poprawki lub refaktoryzacje, które można zastosować do wiersza kodu.
+[Szybkie akcje](../ide/quick-actions.md), dostępne z żarówkę lub ikonę śrubokręt let Refaktoryzuj wbudowanego kodu. Są one łatwe rozwiązać typowe ostrzeżenia szybkie i skuteczne w kodzie C#, C++ i Visual Basic. Aby uzyskiwać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie i wybierz **szybkie akcje i refaktoryzacje**. Lub, gdy kursor znajduje się w wierszu kolorowe wężyk, naciśnij klawisz **Ctrl**+**.** lub wybierz żarówkę lub ikonę śrubokręt na marginesie. Zobaczysz listę możliwych poprawki lub refaktoryzacje, które można zastosować do wiersza kodu.
 
 ![Visual Studio żarówki podglądu](../ide/media/quick-actions-options.png)
 
-Żarówki można tam, gdzie analizatorów kodu określić istnieje możliwość napraw zrefaktoryzuj, lub zwiększyć kodu. Kliknij w każdym wierszu kodu, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz **szybkie akcje** (lub ponownie, jeśli wolisz wydajności, naciśnij klawisz **Ctrl**+**.**). Jeśli dostępne są opcje refaktoryzacji lub poprawy jakości, zostaną one wyświetlone. W przeciwnym razie komunikat **nie szybkie opcje dostępne w tym miejscu** wyświetla w lewym dolnym rogu IDE.
+Szybkie akcje można tam, gdzie analizatorów kodu określić istnieje możliwość napraw zrefaktoryzuj, lub zwiększyć kodu. Kliknij w każdym wierszu kodu, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz **szybkie akcje i refaktoryzacje**. Jeśli dostępne są opcje refaktoryzacji lub poprawy jakości, zostaną one wyświetlone. W przeciwnym razie komunikat **tutaj dostępne nie szybkie akcje** wyświetla w lewym dolnym rogu IDE.
 
-![Visual Studio żarówka się żadna opcja tekstu](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Brak dostępnych tekstu szybkie akcje](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Z obsługą, można szybko użyj klawiszy strzałek i **Ctrl**+**.** Aby sprawdzić szybkich refaktoryzacji możliwości i czyszczenie kodu!
-
-Aby uzyskać więcej informacji dotyczących żarówki, przeczytaj [szybkie akcje](../ide/quick-actions.md).
+Z obsługą, można szybko użyj klawiszy strzałek i **Ctrl**+**.** Aby sprawdzić możliwości refaktoryzacji łatwe i czyszczenie kodu!
 
 ## <a name="debug-your-running-code"></a>Debugowanie kodu uruchomione
 

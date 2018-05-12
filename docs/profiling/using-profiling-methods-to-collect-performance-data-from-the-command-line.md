@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2117fc729ef7e7190e5f1a46fe05d0d91daf63c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6a9c87de9f5815496d29bfa212fbc5ee204b2c10
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
 Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza polecenia narzędzi profilowania jest zależna od czynników, takich jak typ aplikacji czy możesz się profilowania, metodę profilowania, która ma być używany, oraz określa, czy aplikacja docelowa jest zapisywane w macierzystym lub [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.  
@@ -40,7 +40,7 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
 |Zadanie|Typ aplikacji docelowej|  
 |----------|-----------------------------|  
 |**Uruchom aplikację**|-   [Aplikacje autonomiczne](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Dołączanie do uruchomionego procesu**|-   [Aplikacji autonomicznej .NET framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Natywnych aplikacji autonomicznych](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Usług .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Usługi macierzyste](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Dołączanie do uruchomionego procesu**|-   [Aplikacji autonomicznej .NET framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [Natywnych aplikacji autonomicznych](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Usług .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Usługi macierzyste](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ##  <a name="BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data"></a> Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji  
  Metody Instrumentacji w narzędziach profilowania gromadzi dane wydajności z kopie plików binarnych aplikacji zawierające sond oprogramowania do informacji o wydajności rekordów. Na początku i na końcu każdej funkcji instrumentowanych i w każdym wywołaniu innych funkcji z Instrumentacją funkcji zbierane są dane z Instrumentacji. Metoda Instrumentacji jest przydatna do wykrywania problemów z wydajnością z problemami dotyczącymi operacji We/Wy, takich jak użycie dysku.  
@@ -53,9 +53,9 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
   
 -   [Natywny autonomicznej składników](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
   
--   [Aplikacje sieci Web ASP.NET statycznie skompilowanej](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)  
+-   [Aplikacje sieci Web ASP.NET statycznie skompilowanej](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)  
   
--   [Aplikacje sieci Web ASP.NET dynamicznie skompilowanej](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)  
+-   [Aplikacje sieci Web ASP.NET dynamicznie skompilowanej](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)  
   
 -   [Usług .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)  
   
@@ -70,7 +70,7 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
 |----------|-----------------------------|  
 |**Uruchom aplikację**|-   [Aplikacji autonomicznej .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Dołączanie do uruchomionego procesu**|-   [Aplikacji autonomicznej .NET framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Usług .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Moduły dokumentu**|-   [Składniki autonomicznej .NET framework](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET statycznie skompilowanej](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET dynamicznie skompilowanej](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Usług .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Moduły dokumentu**|-   [Składniki autonomicznej .NET framework](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [Aplikacje sieci Web ASP.NET statycznie skompilowanej](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Aplikacje sieci Web ASP.NET dynamicznie skompilowanej](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Usług .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ##  <a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Zbieranie danych działania rywalizacji i wątku zasobów za pomocą metody współbieżności  
  Metoda współbieżności narzędziach profilowania umożliwia zbieranie danych działanie wątku i procesu i rywalizacji z aplikacji wielowątkowych.  
@@ -79,8 +79,8 @@ Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzęd
   
 |Zadanie|Typ aplikacji docelowej|  
 |----------|-----------------------------|  
-|**Uruchom aplikację**|-   [Aplikacji autonomicznej .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Autonomicznej aplikacji natywnej](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Dołączanie do uruchomionego procesu**|-   [Aplikacji autonomicznej .NET framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Autonomicznej aplikacji natywnej](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplikacja sieci Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Usługa .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Usługi natywnej](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Uruchom aplikację**|-   [Aplikacji autonomicznej .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [Autonomicznej aplikacji natywnej](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Dołączanie do uruchomionego procesu**|-   [Aplikacji autonomicznej .NET framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [Autonomicznej aplikacji natywnej](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplikacja sieci Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Usługa .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Usługi natywnej](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ##  <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Dodawanie danych o interakcji między warstwy do uruchomienia profilowania  
  Dodawanie danych o interakcji między warstwy do uruchomienia profilowania wymaga określonych procedur przy użyciu wiersza polecenia narzędzia profilowania. Zobacz [zbierania danych o interakcji między warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)  

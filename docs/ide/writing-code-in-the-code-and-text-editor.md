@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje Edytor kodu
 
@@ -33,7 +33,7 @@ Języki Visual Studio oferują różne zestawy funkcji, a w niektórych przypadk
 |||
 |-|-|
 |Kolorowanie składni|Niektóre elementy składni plików kodu i znaczników mają kolor inaczej, aby odróżnić je. Na przykład słowa kluczowe (takich jak `using` w języku C# i `Imports` w języku Visual Basic) są jednego koloru, ale typy (takich jak `Console` i `Uri`) są w innym kolorze. Inne elementy składni są również pokolorowane, takie jak literały ciągów i komentarze. C++ używa koloru do rozróżnienia typów, wyliczenia i makra, między innymi tokenów.<br /><br /> Widać domyślny kolor dla każdego typu i można zmienić kolor elementów składni w [czcionki i kolory, środowisko, opcje — Okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), który można otworzyć z **narzędzia** menu.|
-|Błąd i ostrzeżenie znaków|Dodaj kod i Skompiluj rozwiązanie, mogą pojawić się faliste podkreślenie () innym kolorze (nazywane zygzaki) i (b) żarówki znajdujących się w kodzie. Czerwony zygzaki oznaczenia błędy składni, niebieski oznacza błędy kompilatora zielony oznacza ostrzeżenia i purpurowy oznacza inne typy błędów. [Żarówki](../ide/perform-quick-actions-with-light-bulbs.md) Sugeruj poprawki dotyczące problemów i ułatwić poprawki.<br /><br /> Widać domyślny kolor dla każdego błędu i ostrzeżenia wężyk w **narzędzia** > **opcje** > **środowiska**  >   **Czcionki i kolory** okno dialogowe. Wyszukaj **błąd składniowy**, **błąd kompilatora**, **ostrzeżenie**, i **inny błąd**.|
+|Błąd i ostrzeżenie znaków|Dodaj kod i Skompiluj rozwiązanie, mogą pojawić się faliste podkreślenie () innym kolorze (nazywane zygzaki) i (b) żarówki znajdujących się w kodzie. Czerwony zygzaki oznaczenia błędy składni, niebieski oznacza błędy kompilatora zielony oznacza ostrzeżenia i purpurowy oznacza inne typy błędów. [Szybkie akcje](../ide/quick-actions.md) Sugeruj poprawki dotyczące problemów i ułatwić poprawki.<br /><br /> Widać domyślny kolor dla każdego błędu i ostrzeżenia wężyk w **narzędzia** > **opcje** > **środowiska**  >   **Czcionki i kolory** okno dialogowe. Wyszukaj **błąd składniowy**, **błąd kompilatora**, **ostrzeżenie**, i **inny błąd**.|
 |Parowanie nawiasów klamrowych|Gdy punkt wstawiania znajduje się na otwierający nawias klamrowy w pliku kodu, są wyróżnione go i zamykający nawias klamrowy. Ta funkcja zapewnia natychmiast uzyskuje opinie zagubione lub brak nawiasów klamrowych. Można włączyć parowanie nawiasów klamrowych lub Wyłącz z **automatyczne wyróżnianie ogranicznika** ustawienie (**narzędzia** > **opcje**  >   **Edytor tekstu**). Można zmienić kolor wyróżnienia w **czcionki i kolory** ustawienie (**narzędzia** > **opcje** > **środowiska**). Wyszukaj **nawias klamrowy dopasowywania (Wyróżnij)** lub **nawias klamrowy dopasowywania (prostokąt)**.|
 |Struktura wizualizatora|Przerywana łączone pasujących nawiasów klamrowych w plikach kodu, ułatwiając Zobacz otwierający i zamykający nawias klamrowy pary. To może pomóc w znalezieniu kodu w Twojej codebase szybciej. Można włączyć te wiersze lub wyłączyć z **Pokaż wytyczne struktury** w **wyświetlania** sekcji **narzędzia** > **opcje**  >  **Edytor tekstu** > **ogólne** strony.|
 |Numery wiersza|Numery wiersza mogą być wyświetlane na lewym marginesie okna kodu. Nie są wyświetlane domyślnie. Można włączyć tę opcję **edytora tekstów wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**  >  **Wszystkie języki**). Można wyświetlić numery wierszy dla poszczególnych języków programowania, zmieniając ustawienia w tych językach (**narzędzia** > **opcje** > **Edytor tekstu**   >   **\<języka >**). W przypadku numerów wierszy do drukowania, musisz wybrać **zawierają numery wierszy** w **drukowanie** okno dialogowe.|

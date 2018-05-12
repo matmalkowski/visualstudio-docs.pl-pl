@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60692f77645857214c12ba04968d9acee0df5008
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bde53a409428d140afe498c2894e93e1355726
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="lineoff"></a>LineOff
 Domyślnie profilera zbiera źródła kodu wiersza numer wiersza numer przesunięcia danych i gdy używana jest metoda profilowania próbkowania. VSPerfCmd **LineOff** opcji wyłącza zbieranie danych numer wiersza podczas VSPerfCmd są używane do uruchamiania aplikacji. Dane profilowania zbieranych funkcji poziomie podczas **LineOff** jest określona.  
@@ -23,7 +23,7 @@ Domyślnie profilera zbiera źródła kodu wiersza numer wiersza numer przesuni�
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cmd  
 VSPerfCmd.exe /Launch:AppName /LineOff [Options]  
 ```  
   
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ## <a name="example"></a>Przykład  
  W tym przykładzie uruchamia aplikację i profilera i wyłącza pobierania próbek na poziomie wiersza.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /LineOff  
 ```  

@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji usług IIS przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -31,7 +31,7 @@ W tym samouczku obejmują:
 > * Zaimportuj plik ustawień publikowania do programu Visual Studio
 > * Wdrażanie aplikacji w usługach IIS
 
-Plik ustawień publikowania (\*.publishsettings) różni się od profilu publikowania (\*.pubxml) utworzone w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługi IIS lub usłudze Azure App Service, lub można utworzyć ręcznie, a następnie go zaimportować do programu Visual Studio.
+Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publikowania (*\*.pubxml*) utworzone w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługi IIS lub usłudze Azure App Service, lub można utworzyć ręcznie, a następnie go zaimportować do programu Visual Studio.
 
 > [!NOTE]
 > Jeśli jest potrzebna do skopiowania Visual Studio profilu publikowania (\*pliku .pubxml) z jednej instalacji programu Visual Studio do innego, można znaleźć profilu publikowania  *\<profilename\>.pubxml*, w  *\\< projectname\>\Properties\PublishProfiles* folderu dla typów projektów zarządzanych. Dla witryn sieci Web, sprawdź w obszarze *\App_Data* folderu. Profile publikowania są plikami XML programu MSBuild.
@@ -44,7 +44,7 @@ Plik ustawień publikowania (\*.publishsettings) różni się od profilu publiko
 
     Kroki opisane w tym artykule są oparte na programie Visual Studio 2017 r.
 
-* Aby wygenerować plik ustawień publikowania za pomocą programu IIS, musi być innym komputerze z systemem Windows Server 2012 z rolą serwera sieci Web programu IIS 8.0, poprawnie skonfigurowany i albo ASP.NET 4.5 lub zainstalowany program ASP.NET Core. Dla platformy ASP.NET Core, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Dla platformy ASP.NET 4.5, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Aby wygenerować plik ustawień publikowania za pomocą programu IIS, musi mieć komputer z systemem Windows Server 2012 z rolą serwera sieci Web programu IIS 8.0 prawidłowo skonfigurowane i zainstalowane ASP.NET 4.5 lub platformy ASP.NET Core. Dla platformy ASP.NET Core, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Dla platformy ASP.NET 4.5, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Utwórz nowy projekt ASP.NET w programie Visual Studio
 

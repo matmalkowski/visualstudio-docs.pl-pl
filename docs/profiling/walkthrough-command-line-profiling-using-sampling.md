@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu metody pobierania próbek
 
@@ -54,13 +54,13 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
 
 4. Wpisz następujące polecenie, aby ustawić zmienne środowiskowe odpowiednie:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Uruchom profilowanie, uruchamiając VSPerfCmd.exe, który jest narzędzie wiersza polecenia, które kontroluje profilera. Następujące polecenie uruchamia aplikację i profilera trybu próbkowania:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
 
 9. Zamknij profilera. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Aby zresetować zmiennych środowiskowych, użyj następującego polecenia:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
 
     - Generowanie pliku wartości rozdzielanych przecinkami (.csv) za pomocą narzędzia wiersza polecenia VSPerfReport.exe. Aby móc wygenerować raporty do użytku poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, użyj następującego polecenia:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

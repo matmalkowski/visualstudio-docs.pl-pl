@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usłudze Azure App Service przez zaimportowanie ustawień publikowania w programie Visual Studio
 
 Można użyć **publikowania** narzędzia do zaimportowania ustawień publikowania, a następnie wdrożyć aplikację. W tym artykule używamy ustawienia publikowania dla usługi aplikacji Azure, ale można użyć publikowania podobne kroki, aby zaimportować ustawienia z [IIS](../deployment/tutorial-import-publish-settings-iis.md). W niektórych scenariuszach stosowania Publikowanie profilu ustawień może być szybsza niż ręcznie konfigurować wdrożenia usługi dla każdej instalacji programu Visual Studio.
 
-Te kroki dotyczą aplikacji ASP.NET, platformy ASP.NET Core i .NET Core w programie Visual Studio. Visual Studio 2017 wersji 15,6 odpowiada kroki.
+Te kroki dotyczą aplikacji ASP.NET, platformy ASP.NET Core i .NET Core w programie Visual Studio. Możesz również zaimportować ustawienia publikowania dla [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) aplikacji. Visual Studio 2017 wersji 15,6 odpowiada kroki.
 
 W tym samouczku obejmują:
 
@@ -30,10 +30,10 @@ W tym samouczku obejmują:
 > * Zaimportuj plik ustawień publikowania do programu Visual Studio
 > * Wdrażanie aplikacji w usłudze Azure App Service
 
-Plik ustawień publikowania (*.publishsettings) różni się od profilu publikowania (*.pubxml) utworzone w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługę Azure App Service, a następnie go zaimportować do programu Visual Studio.
+Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publikowania (*\*.pubxml*) utworzone w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługę Azure App Service, a następnie go zaimportować do programu Visual Studio.
 
 > [!NOTE]
-> Jeśli jest potrzebna do skopiowania Visual Studio profilu publikowania (\*pliku .pubxml) z jednej instalacji programu Visual Studio do innego, można znaleźć profilu publikowania  *\<profilename\>.pubxml*, w  *\\< projectname\>\Properties\PublishProfiles* folderu dla typów projektów zarządzanych. Dla witryn sieci Web, sprawdź w obszarze *\App_Data* folderu. Profile publikowania są plikami XML programu MSBuild.
+> Jeśli jest potrzebna do skopiowania Visual Studio profilu publikowania (*\*.pubxml* plik) z jednej instalacji programu Visual Studio do innego, można znaleźć profilu publikowania  *\<profilename\>.pubxml*w  *\\< projectname\>\Properties\PublishProfiles* folderu dla typów projektów zarządzanych. Dla witryn sieci Web, sprawdź w obszarze *\App_Data* folderu. Profile publikowania są plikami XML programu MSBuild.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -70,7 +70,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
    ![Lista błędów](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. W oknie edytora, umieść kursor na jednej osi, który zawiera błąd, a następnie wybierz **żarówki szybkie akcje** na lewym marginesie. Z menu rozwijanego wybierz **przy użyciu systemu;** dodawania tej dyrektywy do góry pliku i napraw błędy.
+1. W oknie edytora umieść kursor na jednej osi, który zawiera błąd, a następnie wybierz żarówkę szybkie akcje na lewym marginesie. Z menu rozwijanego wybierz **przy użyciu systemu;** dodawania tej dyrektywy do góry pliku i napraw błędy.
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

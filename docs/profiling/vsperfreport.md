@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7460b287b22ead961a5701fe4f8fa8bb22fc2d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport — narzędzie wiersza polecenia jest używany do tworzenia raportów za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania pliku danych profilowania. Domyślny format raportu jest plikiem CSV.  
   
  VSPerfReport używa następującej składni:  
   
-```  
+```cmd  
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
@@ -36,7 +36,7 @@ VSPerfReport [/U] vspfilename [/options]
   
  VSPerfReport — narzędzie wiersza polecenia jest również używane do porównywania plików Vsp lub vsps. Aby wygenerować raport różnica ("diff"), należy użyć następującej składni:  
   
-```  
+```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   

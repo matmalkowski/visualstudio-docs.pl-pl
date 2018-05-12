@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
@@ -37,7 +37,7 @@ Szybsze pisanie kodu przy użyciu następujących funkcji.
 
      Aby wstawić fragment kodu, na pasku menu wybierz polecenie **Edytuj** > **IntelliSense** > **wstawić fragment** lub **zfunkcjiOtoczprzez**, lub Otwórz menu skrótów w pliku i wybierz polecenie **fragment** > **wstawić fragment** lub **z funkcji Otocz przez**. Aby uzyskać więcej informacji, zobacz [wstawki kodu](../ide/code-snippets.md).
 
-- **Usuń kodu wbudowanego błędy**. Szybkie akcje pozwalają łatwo zrefaktoryzuj, generowanie lub modyfikację kodu za pomocą jednej akcji. Można zastosować te akcje za pomocą ikoną żarówki ![małych ikon żarówki](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), lub naciskając klawisz **Alt** +  **Wprowadź** lub **Ctrl**+**.** gdy kursor znajduje się na odpowiedni wiersz kodu. Zobacz [szybkie akcje](quick-actions.md) Aby uzyskać więcej informacji.
+- **Usuń kodu wbudowanego błędy**. Szybkie akcje pozwalają łatwo zrefaktoryzuj, generowanie lub modyfikację kodu za pomocą jednej akcji. Można zastosować te akcje za pomocą śrubokręt ![ikona śrubokręt](media/screwdriver-icon.png) lub żarówki ![ikoną żarówki](media/light-bulb-icon.png) ikony lub naciskając klawisz **Alt** +  **Wprowadź** lub **Ctrl**+**.** gdy kursor znajduje się na odpowiedni wiersz kodu. Zobacz [szybkie akcje](quick-actions.md) Aby uzyskać więcej informacji.
 
 - **Wyświetlanie i edytowanie definicji elementu kodu**. Można szybko wyświetlić i edytować modułu, w którym jest zdefiniowany element kodu, takie jak element członkowski, zmiennej lub lokalnego.
 

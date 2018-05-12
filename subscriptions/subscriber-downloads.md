@@ -9,11 +9,11 @@ description: Dowiedz się, jak znaleźć i pobrać produktów firmy Microsoft, u
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Przy użyciu subskrybenta pliki do pobrania w ramach subskrypcji programu Visual Studio
 W ramach swoje korzyści subskrybenta masz dostęp do szerokiej gamy modułu pobierania oprogramowania.  
@@ -24,7 +24,7 @@ Ogólnie rzecz biorąc wszystkich handlowych i konsumentów produktów firmy Mic
 
 Istnieje kilka przyczyn, dlaczego poszczególnych produktów nie mogą być dostępne dla subskrybentów:
 
-- **Produkt nie jest uwzględniony w poziomie subskrypcji lub programu.** [Dowiedz się więcej](https://www.visualstudio.com/vs/pricing/) dotyczące oprogramowania i dostępnych w ramach subskrypcji lub [Pobierz pełną listę](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) produktów, które są dostępne przez poziomu subskrypcji. Niektóre programy, takie jak [sieci Microsoft Partner Network](https://partner.microsoft.com/), podaj subskrypcji programu Visual Studio jako część ich zalety.  Te subskrypcje nie obejmują wszystkie produkty uwzględnione w zakupionych subskrypcji programu Visual Studio. Subskrybenci te programy powinny być kierowane pytania o dostępności pobieranie produktów, aby zespoły pomocy technicznej dla tych programów.
+- **Produkt nie jest uwzględniony w poziomie subskrypcji lub programu.** [Dowiedz się więcej](https://www.visualstudio.com/vs/pricing/) dotyczące oprogramowania i dostępnych w ramach subskrypcji lub [Pobierz pełną listę](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) produktów, które są dostępne przez poziomu subskrypcji. Niektóre programy, takie jak [sieci Microsoft Partner Network](https://partner.microsoft.com/), podaj subskrypcji programu Visual Studio jako część ich zalety.  Te subskrypcje nie obejmują wszystkie produkty uwzględnione w zakupionych subskrypcji programu Visual Studio. Subskrybenci te programy powinny być kierowane pytania o dostępności pobieranie produktów, aby zespoły pomocy technicznej dla tych programów.
 - **Produkt nie jest uwzględniony w ramach subskrypcji.** Niektóre produkty firmy Microsoft nie znajdują się w subskrypcji z powodu specjalnych postanowień licencyjnych, ograniczeń technicznych lub znaczenie dla deweloperów. Jeśli chcesz zasugerować produktu można dodać do subskrypcji, Wyślij wiadomość e-mail do programu Visual Studio [Centrum obsługi klienta](https://www.visualstudio.com/subscriptions/support/).
 - **Produkt jest dostępny publicznie.** Narzędzia, zestawy SDK, zestawy DDK i dodatków service Pack dostępnych publicznie z [Microsoft Download Center](https://www.microsoft.com/download). Niektóre z takich produktów nie mogą być publikowane pliki do pobrania.
 - **Produkt nie ma jeszcze zwolniona.**  Wiele wersji wstępnych (beta) i wersji release Candidate są dostępne w plikach do pobrania. Jednak nie wszystkie wersje beta można dołączać; na przykład niektóre wersje beta wymagają specjalnych rejestracji lub kwalifikujących się usług. Aby uzyskać więcej informacji na temat Otwórz beta techniczne programów, odwiedź stronę [Microsoft Connect](http://connect.microsoft.com/).

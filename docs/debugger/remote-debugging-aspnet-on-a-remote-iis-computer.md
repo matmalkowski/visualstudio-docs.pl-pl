@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 952b4e4cdff2f5620870cad5903d6e20f61a862e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -71,11 +71,17 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 
 3. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 do obsługi serwerów w systemie Windows Server
+
+W niektórych scenariuszach może być szybsze importowania ustawień publikowania w programie Visual Studio zamiast ręcznie konfigurować opcje wdrażania. Aby zaimportować ustawienia zamiast konfigurować profilu publikowania w programie Visual Studio publikowania, zobacz [importowania ustawień publikowania i wdrażania usług IIS](../deployment/tutorial-import-publish-settings-iis.md). W przeciwnym razie pozostanie w tym temacie i materiały. Po ukończeniu tego artykułu na temat importowania ustawień publikowania i wdrożyć aplikację pomyślnie, a następnie wróć do tego tematu i uruchomić w sekcji na [pobierania narzędzia zdalnej](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+
+Jeśli są importowane ustawienia publikowania, możesz pominąć tę sekcję.
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 

@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, system Windows)
 Visual Studio Tools for Unity dziennika zmian.
@@ -84,7 +84,7 @@ Visual Studio Tools for Unity dziennika zmian.
 -   **Integracja:**
 
     -   Ponownie ładować tylko projekty na zewnętrzne zmiany (po zastosowaniu ograniczania).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Wydanych 2018-01-24
 
@@ -93,9 +93,9 @@ Visual Studio Tools for Unity dziennika zmian.
 -   **Integracja:**
 
     -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
-    
+
     -   Wywołanie pośrednie stałym EditorPrefs.GetBool wpływające na Inspektor podczas próby zmiany rozmiaru tablicy.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Wydanych 2018-01-10
 
@@ -112,7 +112,7 @@ Visual Studio Tools for Unity dziennika zmian.
 -   **Debuger:**
 
     -   Dodano obsługę atrybutów DebuggerHidden/DebuggerStepThrough o nowe środowisko uruchomieniowe platformy Unity.
-    
+
 -   **Kreatorzy:**
 
     -   Wprowadzenie "Najnowszej" wersji dla kreatorów.
@@ -126,7 +126,7 @@ Visual Studio Tools for Unity dziennika zmian.
 -   **Debuger:**
 
     -   Stałe wyścigu podczas obsługi zdarzenia podziału.
-    
+
 -   **Kreatorzy:**
 
     -   Odśwież kontekst roslyn przed wstawieniem metody.

@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # Visual Studio IntelliCode — często zadawane pytania
 
@@ -59,9 +59,13 @@ Nie mamy żadnych anonsów dotyczących cen w chwili obecnej.
 
 W IntelliCode wspierana AI IntelliSense jest obecnie jego pierwszym Podgląd eksperymentalne. Będziemy można zaktualizować rozszerzenia eksperymentalne i dodamy dodatkowe możliwości w przyszłości. Nie mamy żadnych harmonogram ostatecznej wersji, ale chętnie poznamy opinię deweloperów w celu udostępnienia najlepsze możliwe procesy. Możesz zarejestrować dla wiadomości i aktualizacji w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Jest to środowisko dostępna tylko w programie Visual Studio?
+## Q. Jest to środowisko dostępna tylko w programie Visual Studio i w języku C#?
 
 Środowisko użytkownika był wyświetlany w 2018 kompilacji w programie Visual Studio 2017 na codebase C#. Jednak mamy nadzieję do rozszerzania IntelliCode więcej języków i narzędzi z rodziny Visual Studio w przyszłości.
+
+## Q. Jest to środowisko dostępna tylko w języku angielskim?
+
+IntelliCode to rozszerzenie Podgląd dzisiaj i firma Microsoft chętnie dowiedzieć, jak przydatne te funkcje są dla szerokiego zakresu klientów. Gdy traktujemy IntelliCode poza Podgląd teraz pewnością przyjrzymy się które ustawień regionalnych lub język do obsługi pierwszy oraz sposób przygotowania, na podstawie tych informacji. 
 
 ## <a name="privacy"/> Pytanie: jak prywatności? Jest wysyłany mojego kodu w chmurze? Jakie dane klienta są wysyłane do firmy Microsoft?
 

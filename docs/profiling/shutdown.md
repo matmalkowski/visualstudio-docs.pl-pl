@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c79b132dcd3358c697f9b08466af306aeed21
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c835894d18ca1aea33f26f234a4df914114089c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="shutdown"></a>Zamykanie
 **Zamknięcia** opcja oczekiwania dla żadnego obecnie profilowany proces, aby zakończyć lub odłączyć, a następnie wyłącza profilera i zamyka plik danych profilowania. **Zamknięcia** opcja musi być ostatnie polecenie profilowania Uruchom.  
   
- Jeśli nie określono parametr limitu czasu, **zamknięcia** opcja będzie czekać w nieskończoność. Jeśli określono parametr limitu czasu, opcja zwraca po określonej liczbie sekund bez wyłączania profilera i zamykania pliku danych.  
+ Jeśli nie określono parametr limitu czasu, **zamknięcia** opcja oczekiwania przez czas nieokreślony. Jeśli określono parametr limitu czasu, opcja zwraca po określonej liczbie sekund bez wyłączania profilera i zamykania pliku danych.  
   
  **Zamknięcia** opcja musi być jedyną opcją określona w wierszu polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cmd  
 VSPerfCmd.exe /Shutdown[:Timeout]  
 ```  
   

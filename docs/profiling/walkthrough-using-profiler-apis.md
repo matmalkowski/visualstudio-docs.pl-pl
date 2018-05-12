@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bebc312858e16688598ba289e4c53d93010122b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Wskazówki: korzystanie z interfejsów API profilera
 Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API narzędzi profilowania. Aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji użyjesz profilera interfejsów API.  
@@ -43,7 +43,7 @@ Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vspr
   
  Domyślnie podczas uruchamiania profilera profiler zbiera dane na poziomie globalnym. Następujący kod na początku program włącza globalne profilowania wyłączone.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  
@@ -62,7 +62,7 @@ DataCollection.CurrentId);
   
 2.  Skopiuj i wklej następujący kod do projektu:  
   
-    ```  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -131,7 +131,7 @@ DataCollection.CurrentId);
   
  Domyślnie podczas uruchamiania profilera profilera będzie zbierać dane na poziomie globalnym. Następujący kod na początku program włącza globalne profilowania wyłączone.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  

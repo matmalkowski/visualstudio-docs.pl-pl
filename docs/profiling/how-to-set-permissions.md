@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>Porady: Ustawianie uprawnień
 
@@ -58,7 +58,7 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
      Ścieżka tego folderu może wyglądać w następujący sposób:
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
 2. Zmień katalog na:
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Uruchom następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +100,7 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
 4. Uruchom polecenie, aby zezwolić na dostęp do profilowania funkcji sterownika przez użytkownika lub grupę, która nie ma dostępu administratora do komputera:
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,7 +114,7 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
 5. (Opcjonalnie) Aby zachować wyniki poprzednie kroki, po ponownym uruchomieniu komputera, uruchom następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

@@ -1,5 +1,5 @@
 ---
-title: Szybkie akcje
+title: Szybkie akcje, żarówki i śrubokręty
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Szybkie akcje
 
@@ -29,21 +29,27 @@ Szybkie akcje może służyć do:
 - Zastosuj refaktoryzacji (na przykład [wbudowanej zmiennej tymczasowej](../ide/reference/inline-temporary-variable.md))
 - Generowanie kodu (na przykład [wprowadzić zmienną lokalną](../ide/reference/introduce-local-variable.md))
 
-Szybkie akcje można zastosować, korzystając z ikoną żarówki ![małych ikon żarówki](media/vs2015_lightbulbsmall.png), lub naciskając klawisz **Ctrl**+**.** gdy kursor jest w wierszu kodu, w którym akcja jest dostępna. Pojawi się, że żarówki, jeśli istnieje czerwona falista i Visual Studio ma sugestię jak rozwiązać problem. Na przykład jeśli masz wskazaniem czerwona falista błąd żarówka będą wyświetlane, gdy poprawki są dostępne dla tego błędu.
+Szybkie akcje może zostać zastosowana za pomocą żarówkę ![ikoną żarówki](media/light-bulb-icon.png) lub śrubokręt ![ikona śrubokręt](media/screwdriver-icon.png) ikony lub naciskając klawisz **Ctrl** + **.** gdy kursor jest w wierszu kodu, w którym akcja jest dostępna. Zostanie wyświetlony błąd żarówki ![ikoną żarówki błąd](media/error-light-bulb-icon.png) Jeśli istnieje czerwona falista, co wskazuje na błąd i Visual Studio ma Poprawka dostępna dla tego błędu.
 
 Dla żadnego języka stron trzecich mogą zapewnić diagnostyki niestandardowej i sugestie, na przykład jako część zestawu SDK i programu Visual Studio żarówki podświetlony, na podstawie tych reguł.
 
-## <a name="to-see-a-light-bulb"></a>Aby wyświetlić żarówka
+## <a name="icons"></a>Ikony
 
-1. W wielu przypadkach żarówki samorzutnie są wyświetlane po wskaźnika myszy w punkcie błąd lub na lewym marginesie edytora przenoszenia karetkę do wiersza, który zawiera błąd. Gdy pojawi się czerwona falista, możesz go, aby wyświetlić żarówkę Aktywuj. Może również spowodować żarówka wyświetlany, gdy używasz myszy lub klawiatury można przejść do dowolnej lokalizacji w wierszu gdzie występuje problem.
+Ikona wyświetlana podczas szybkiego akcja jest dostępna oznacza wskazanie typu poprawkę lub refaktoryzacji, który jest dostępny. *Śrubokręt* ![ikona śrubokręt](media/screwdriver-icon.png) ikona tylko wskazuje brak dostępnych akcji do zmiany kodu, że nie należy zawsze używać ich. *Żółta żarówka* ![ikoną żarówki](media/light-bulb-icon.png) ikona wskazuje brak dostępnych akcji które *powinien* zrobić, aby poprawić kod. *Błąd żarówki* ![ikoną żarówki błąd](media/error-light-bulb-icon.png) ikona wskazuje brak dostępnych akcji, która rozwiązuje wystąpił błąd w kodzie.
 
-1. Naciśnij klawisz **Ctrl**+**.** dowolne miejsce na linię, aby wywołać żarówkę i przejść bezpośrednio do listy potencjalnych poprawek.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Aby wyświetlić żarówkę lub śrubokręt
+
+- Jeśli dostępna jest poprawka żarówki samorzutnie są wyświetlane, gdy wskaźnik myszy w lokalizacji wystąpił błąd.
 
    ![Żarówki z ustawiając kursor myszy](../ide/media/vs2015_lightbulb_hover.png)
 
+- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytora po Przesuń karetkę do wiersza kodu, dla którego szybkie akcja jest dostępna.
+
+- Naciśnij klawisz **Ctrl**+**.** dowolne miejsce na linię, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
+
 ## <a name="to-see-potential-fixes"></a>Aby wyświetlić potencjalne rozwiązania
 
-Albo kliknij strzałkę w dół lub **Pokaż potencjalne rozwiązania** łącze, aby wyświetlić listę szybkie akcje wykonywane przez żarówkę dla Ciebie.
+Wybierz albo strzałkę w dół obok żarówkę lub **Pokaż potencjalne rozwiązania** łącze, aby wyświetlić listę szybkie akcje, które są dostępne.
 
 ![Żarówki rozwinięty](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

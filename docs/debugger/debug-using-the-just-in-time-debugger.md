@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie za pomocą debugera just in Time programu Visual Studio
 Debugowanie Just In Time uruchamia program Visual Studio automatycznie po wyjątku lub awarii w aplikacji, która działa poza Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie przy użyciu programu Visual Studio, gdy występuje problem.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Just-In-Time, debugowanie, opcje — Okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

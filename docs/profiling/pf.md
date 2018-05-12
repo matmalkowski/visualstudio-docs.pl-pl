@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** opcja umożliwia ustawienie profilowania zdarzenia, które jest próbkowany błędów stron i opcjonalnie powoduje zmianę liczby błędów stron w interwale próbkowania w domyślnej 10.  
   
 > [!NOTE]
->  Nie można PF w systemach 64-bitowych.  
+>  **PF** nie można użyć w systemach 64-bitowych.  
   
- **Należy pamiętać, PF** nie jest obsługiwane na komputerach 64-bitowych. **PF** można używać tylko w wierszu polecenia, który zawiera także **uruchamianie** lub **Attach** opcji.  
+**PF** można używać tylko w wierszu polecenia, który zawiera także **uruchamianie** lub **Attach** opcji.  
   
  Domyślnie zdarzenia próbkowania ma ustawioną wartość cykle zegara procesora nie zostało zatrzymane i interwał próbkowania jest ustawiony na 10 000 000. **Czasomierza**, **PF**, **Sys**, i **licznika** opcje umożliwiają ustawianie interwału zdarzeń i pobierania próbek. **GC** opcja służy do zbierania danych pamięci .NET w każdym zdarzeniu kolekcji alokacji i odzyskiwanie. W wierszu polecenia można określić tylko jeden z tych opcji.  
   
@@ -30,7 +30,7 @@ VSPerfCmd.exe **PF** opcja umożliwia ustawienie profilowania zdarzenia, które 
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>Przykład  
  W tym przykładzie pokazano, jak ustawić profilowania zdarzenie próbkowania błędów strony i ustaw interwał próbkowania 20 błędów stron.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  

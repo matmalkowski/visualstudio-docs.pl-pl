@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -24,9 +24,13 @@ W sekcjach, w tym temacie wymieniono niektóre typowe **szybkie akcje** dotyczą
 
 ## <a name="actions-that-fix-errors"></a>Akcje, które błędy
 
+Szybkie akcje w tej sekcji błędy w kodzie, które mogłyby spowodować niepowodzenie kompilacji. Gdy szybkie akcje są dostępne naprawić błąd w wierszu kodu, ikona który jest wyświetlany na marginesie lub pod czerwona falista jest żarówka z czerwonym znakiem "x" w nim.
+
+![Szybkie akcje błąd ikony, jak i menu](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędnie symbolu lub słowo kluczowe
 
-Jeśli przypadkowo błędnie typu lub słowo kluczowe w programie Visual Studio tej akcji szybkiego automatycznie poprawi go dla Ciebie. Zobaczysz te elementy w menu żarówki jako **"Zmień"*zawiera błąd pisowni word*"do"*poprawić wyraz*"**.  Na przykład:
+Jeśli przypadkowo błędnie typu lub słowo kluczowe w programie Visual Studio, ta akcja szybkie automatycznie skoryguje go dla Ciebie. Zobaczysz te elementy w menu żarówki jako **"Zmień"*zawiera błąd pisowni word*"do"*poprawić wyraz*"**.  Na przykład:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# i Visual Basic | Visual Studio 2017 wersji 15 ustęp 3 |
-
-### <a name="make-method-synchronous"></a>Wprowadź synchroniczne — metoda
-
-Przy użyciu `async` lub `Async` — słowo kluczowe dla metody, należy spodziewać się, że gdzieś wewnątrz tej metody `await` lub `Await` również będzie można użyć słowa kluczowego.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metoda synchroniczna przez usunięcie `async` lub `Async` — słowo kluczowe i zmiany zwracanego typu. Użyj **upewnij metoda synchroniczna** opcji z menu Szybkie akcje.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# i Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Wprowadź asynchroniczne — metoda
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Wprowadź synchroniczne — metoda
+
+Przy użyciu `async` lub `Async` — słowo kluczowe dla metody, należy spodziewać się, że gdzieś wewnątrz tej metody `await` lub `Await` również będzie można użyć słowa kluczowego.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metoda synchroniczna przez usunięcie `async` lub `Async` — słowo kluczowe i zmiany zwracanego typu. Użyj **upewnij metoda synchroniczna** opcji z menu Szybkie akcje.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# i Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>Zobacz także
 
