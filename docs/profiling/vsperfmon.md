@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c19d009ddfb60d3e8fa33cf4a976df44ab4c2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: be865f9fe51a1028192d54de556a52e47b241f0d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Vsperfmon — narzędzie służy do zbierania danych wydajności dla aplikacji; zwykle to narzędzie jest uruchamiana przez VSPerfCmd.exe. Vsperfmon — Wyświetla dodatkowe informacje o procesie dołączanie lub odłączanie, co nie jest możliwe za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, należy uruchomić vsperfmon — w osobnym oknie. Aby wywołać vsperfmon — użyj następującej składni:  
   
-```  
+```cmd  
 VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTPUT <file name> [/WINCOUNTER:cfg] [/USER [DOMAIN\]username]  
 ```  
   
