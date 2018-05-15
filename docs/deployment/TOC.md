@@ -14,6 +14,8 @@
 ### [Tworzenie aplikacji ClickOnce z wiersza poleceń](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)
+### [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)
 ### [Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Wdrażanie platformy ASP.NET w usługach IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Natywne
