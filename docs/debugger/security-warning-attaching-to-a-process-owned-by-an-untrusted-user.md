@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d88e01dde07789467272db830cae45ca5d60c4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu
 To okno dialogowe Ostrzeżenie pojawia się podczas dołączania do procesu, który zawiera kod częściowo zaufany lub jest własnością niezaufany użytkownik natychmiast, zanim nastąpi jego Podłączanie. Proces niezaufanych, zawierającego złośliwy kod ma potencjalnie uszkodzić komputer podczas debugowania. Jeśli masz powód, aby obdarzać procesu, a następnie kliknij przycisk **anulować** aby uniemożliwić debugowaniu.  

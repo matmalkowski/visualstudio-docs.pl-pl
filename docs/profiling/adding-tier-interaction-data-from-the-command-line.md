@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 
@@ -54,20 +54,20 @@ W poniższym przykładzie aplikacji pulpitu systemu Windows jest profilowane prz
 
 2. Zainicjuj profilowania .NET i Porada zmiennych środowiskowych. Wpisz następujące polecenia:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Uruchom profilera. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Uruchom aplikację z narzędzia VSPerfCmd. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ W poniższym przykładzie aplikacji pulpitu systemu Windows jest profilowane prz
 
 6. Wyczyść Porada zmiennych środowiskowych. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
 
 3. Inicjowanie .NET profilowania zmiennych środowiskowych. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Inicjowanie zmiennych środowiskowych PORADĘ. Wpisz następujące polecenie
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
 
 7. Uruchom profilera. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
 
 9. Dołączanie profilera do usługi. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
 
 12. Wyczyść .NET i Porada profilowania zmiennych środowiskowych. Wpisz następujące polecenie:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ Narzędzie wiersza polecenia VSPerfASPNETCmd umożliwia łatwe profilu [!INCLUDE
 
 Aby dodać dane zbierane za pomocą VSPerfASPNETCmd profilowania interakcja warstwowa, Dodaj **/TIP** opcji wiersza polecenia. Na przykład użyć poniższego wiersza polecenia do zbierania danych o interakcji między warstwy dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web przy użyciu metody Instrumentacji:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

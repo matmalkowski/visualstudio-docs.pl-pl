@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zużycie energii aplikacji platformy uniwersalnej systemu Windows na tablecie niskiego poboru energii urządzenia z systemem całość lub część czasu na ich własnych baterii. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii można zwiększyć wdrożenia aplikacji i korzystać przez klientów.  
@@ -67,7 +67,7 @@ Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zuż
   
  Aby dodać znaczniki użytkownika, dodaj następujący kod w punktach w kodzie, które chcesz oznaczyć:  
   
-```  
+```JavaScript  
 if (performance && performance.mark) {  
     performance.mark(markDescription);  
 }  

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4484e5fdee3158b61e7d1ae6d33966141e2a6a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 63bd01f6ad180c85e48c51925de094df94aaa335
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metody wstawia wartość sygnatury czasowej, znacznik liczbowych i ciąg komentarza w pliku Vsp. Wartość znacznika czasu może być używana do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarza do wstawienia profilowanie dla wątku, który zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
@@ -77,7 +77,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="example"></a>Przykład  
  Poniższy kod przedstawia użycie CommentMarkAtProfile wywołania funkcji ogólnego. W przykładzie założono użycie makra ciąg Win32 i ustawienia kompilatora ANSI, czy kod wywołuje ANSI włączone funkcji.  
   
-```  
+```cpp  
 void ExerciseCommentMarkAtProfile(void)  
 {  
     // Declare and initalize variables to pass to   

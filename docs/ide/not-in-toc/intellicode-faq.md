@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Visual Studio IntelliCode — często zadawane pytania
 
@@ -62,6 +62,10 @@ W IntelliCode wspierana AI IntelliSense jest obecnie jego pierwszym Podgląd eks
 ## Q. Jest to środowisko dostępna tylko w programie Visual Studio i w języku C#?
 
 Środowisko użytkownika był wyświetlany w 2018 kompilacji w programie Visual Studio 2017 na codebase C#. Jednak mamy nadzieję do rozszerzania IntelliCode więcej języków i narzędzi z rodziny Visual Studio w przyszłości.
+
+## Q. Jakie wydania programu Visual Studio należy uruchomić tego rozszerzenia?
+
+Rozszerzenia programu Visual Studio IntelliCode jest obsługiwana dla programu Visual Studio 2017 wersji 15.7 preview 5 i nowsze (wszystkie jednostki SKU). Instalacja rozszerzenia zostanie zatrzymany z "to rozszerzenie nie jest w żadnym z aktualnie zainstalowanych produktów." Jeśli nie masz zainstalowanej minimalnej wymaganej wersji.
 
 ## Q. Jest to środowisko dostępna tylko w języku angielskim?
 

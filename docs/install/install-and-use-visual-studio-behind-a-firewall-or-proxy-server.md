@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy
 
@@ -117,7 +117,7 @@ Aby upewnić się, że masz dostęp do wszystkich składników, które są potrz
 | Migawka <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. polecenie msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (zależnych wersji programu visual Studio) | 1. Zapytanie pliku JSON, rozmiar jednostki SKU usługi aplikacji <br>2. Różnych wywołań Menedżera zasobów Azure <br>3. Wywołanie rozgrzewania lokacji za pomocą  <br>4. Odbiorcy przez docelowe punktu końcowego Kudu usługi aplikacji <br>5. Opublikowana wersja lokacji rozszerzenia zapytania w usłudze nuget.org <br>6. Kanału zdalnego debugowania |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |Protokół HTTPS|443 |Używany do wyświetlania, przesłać, uruchamiania i zarządzać zadaniami ASA <br><br> Używane do przeglądania HDI klastrów i przesłanie, diagnozowanie i debugowanie zadań HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | Protokół HTTPS | 443 | Używana do kompilowania, przesłać, wyświetlanie, diagnozowanie i debugowanie zadań; Umożliwia przeglądanie plików z ADLS; używany do przekazywania i pobierania plików |
-|Tworzenie pakietów usługi | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | Protokół HTTPS | 443 | *. Npmjs.org, *. nuget.org, i *. nodejs.org są tylko wymagane dla kompilacji niektórych scenariuszy zadań (np. Instalator narzędzie NuGet, węzła narzędzie Instalatora) lub jeśli zamierzasz używać publicznego upstreams ze źródła danych.  Trzy domeny są wymagane dla functinality podstawowe usługi Packaigng. |
+|Tworzenie pakietów usługi | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | Protokół HTTPS | 443 | *. Npmjs.org, *. nuget.org, i *. nodejs.org są tylko wymagane dla kompilacji niektórych zadań scenariusze (na przykład: Instalator narzędzie NuGet, węzeł narzędzie Instalatora) lub jeśli zamierzasz używać publicznego upstreams ze źródła danych. Trzy domeny są wymagane do podstawowych funkcji usługi pakietów. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Rozwiązywanie problemów związanych z siecią

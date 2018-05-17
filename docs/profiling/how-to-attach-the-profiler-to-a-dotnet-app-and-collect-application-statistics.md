@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5912e6704a50884df2000afb7c12f82f7a8aa69f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
-ms.translationtype: MT
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia wiersza polecenia narzędzi profilowania dołączanie profilera do uruchomionej aplikacji autonomicznej (klient) .NET Framework i zbieranie statystyk wydajności za pomocą metody pobierania próbek.  

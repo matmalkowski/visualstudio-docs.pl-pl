@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7268e786c7d68d642778f0c0dca31de170b424b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w Concurrency Visualizer, mogą dodawać kod źródłowy. Dodatkowe dane można skojarzyć z fazy i zdarzeń w kodzie. Te dodatkowe wizualizacje są określane jako *znaczniki*.  Przewodnik wprowadzający dla [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -59,7 +59,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 4.  Dodawanie przy użyciu instrukcji w kodzie.  
   
-    ```  
+    ```cpp  
     using namespace Concurrency::diagnostic;  
     ```  
   
@@ -77,7 +77,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Aby użyć nowego dostawcę znacznika w projekcie języka C# lub Visual Basic  
   
-1.  Utwórz <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> obiektu.  Konstruktor ma identyfikator GUID.  
+1.  Tworzy obiekt <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Konstruktor ma identyfikator GUID.  
   
 2.  Aby zarejestrować dostawcę, należy otworzyć narzędzia Concurrency Visualizer [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe.  Wybierz **znaczniki** karcie, a następnie wybierz pozycję **Dodaj nowego dostawcę** przycisku. W [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okna dialogowego wprowadź identyfikator GUID, który został użyty do utworzenia dostawcy i opis dostawcy.  
   
@@ -103,7 +103,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znacznika w projektach C++  
   
-1.  Utwórz `marker_series` obiektu.  Można generować zdarzenia z tej nowej serii.  
+1.  Tworzy obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.  
   
     ```scr  
     marker_series series;  

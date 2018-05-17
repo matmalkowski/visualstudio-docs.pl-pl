@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b54fc676a9e7e6ee523bba7f94f58aef49916b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e4620a4322fedb7fb6337c3f4fd7cb7e22b39df
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider — Funkcja
 Dostawca znacznika wersjach. Zwalnianie dostawcy znacznika nie wpłynie na utworzonej wcześniej znacznika serii tego dostawcy. Znacznika serie mają być wersji oddzielnie przez wywołanie CvReleaseMarkerSeries. Błąd zwolnienia dostawcy spowoduje przeciek pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```C  
 HRESULT CvReleaseProvider(  
    _In_ PCV_PROVIDER pProvider  
 );  

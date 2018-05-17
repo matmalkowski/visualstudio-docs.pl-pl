@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML w aplikacji uniwersalnych systemu Windows
 W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjach za pomocą Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępna dla uniwersalnych aplikacji systemu Windows.  
@@ -100,7 +100,7 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
   
     -   Użyj [wyświetlania osi czasu sesji diagnostycznej](#Ruler) Aby wyświetlić [oznaczyć kod analizy](#ProfileMark), zdarzenia cyklu życia aplikacji i skojarzonych osi czasu dla tych zdarzeń i oś czasu dla danych w innych wykresów.  
   
-    -   Użyj [Wykres wykorzystania CPU](#CPUutilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typ pracy go obsługuje w danym okresie czasu. Okresy nadmiernej aktywności Procesora więcej mogą spowodować problemy z czasu reakcji i porzucić ramki.  
+    -   Użyj [Wykres wykorzystania CPU](#CPUUtilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typ pracy go obsługuje w danym okresie czasu. Okresy nadmiernej aktywności Procesora więcej mogą spowodować problemy z czasu reakcji i porzucić ramki.  
   
     -   Jeśli projektujesz aplikacji gry lub sformatowanego nośnika, użyj [przepływność wizualną widoku (kl. / s)](#VisualThroughput) do identyfikacji okresów czasu, w którym porzucony szybkość klatek.  
   

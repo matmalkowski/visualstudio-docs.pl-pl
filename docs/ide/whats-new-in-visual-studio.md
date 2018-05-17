@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4e2324a58b319eee4d2e9b180350a2c8c66778
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;nowego w Visual Studio 2017 r.
 
@@ -181,7 +181,7 @@ Aby uzyskać więcej informacji o nowych funkcjach wydajności, zobacz [wydajno�
 
 Zobaczysz kilka ulepszeń w programie Visual Studio, takich jak dystrybucja wytyczne Core C++ z programem Visual Studio, aktualizowanie kompilator przez dodanie ulepszoną obsługę języka C ++ 11 i funkcje języka C++ i dodawanie i aktualizowanie funkcji w bibliotekach C++. Również poprawiono wydajność środowisko IDE języka C++, obciążeń instalacji i inne.
 
-Jak również wprowadzeniu stałej ponad 250 usterek i zgłoszone problemy w narzędzi i kompilatora, wiele przesłanych przez klientów za pośrednictwem [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
+Jak również wprowadzeniu stałej ponad 250 usterek i zgłoszone problemy w narzędzi i kompilatora, wiele przesłanych przez klientów za pośrednictwem [społeczność deweloperów dla języka C++](https://developercommunity.visualstudio.com/spaces/62/index.html "społeczność deweloperów dla języka C++").
 
 Aby uzyskać szczegółowe informacje, zobacz [nowości w języku Visual C++ w Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) strony.
 

@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf258dbca695fe3f1516d977e02a21058377e02
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f79c85714ca27846c77529859789cc4465eb3ac
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA — Funkcja
 Tworzy serię znacznika dla danego dostawcy oraz określonej strony kodowej. Ta funkcja umożliwia określanie strony kodowej jawnie dla tekstu zapisywane przez funkcje interfejsu API ANSI znacznika. Ustawianie strony kodowej mogą być przydatne w przypadku, gdy śledzenie jest przechwycony i następnie przeanalizowane na kilka różnych maszyn z różnych ustawień regionalnych/języków. Domyślnie używany jest zwracane przez funkcję GetACP() stronę kodową.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```C  
 HRESULT CvCreateMarkerSeriesWithCodePageA(  
    _In_ PCV_PROVIDER pProvider,  
    _In_ LPCSTR pSeriesName,  
