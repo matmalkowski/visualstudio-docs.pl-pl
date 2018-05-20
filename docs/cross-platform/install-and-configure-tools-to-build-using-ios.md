@@ -12,11 +12,11 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 272048215e6ac386e5724e2054f639ccdb608e63
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS
 Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowania i wdrażania kodu dla systemu iOS w narzędziu iOS Simulator lub urządzenia z systemem iOS, ale z powodu ograniczeń licencji kod musi być skompilowany i zdalnie uruchamiać na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz instalowania i konfigurowania zdalnego agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), opartym na systemie Dojścia zdalnego agenta kompilacji żądań w programie Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerach Mac.  
@@ -69,6 +69,8 @@ Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowa
   
 -   [Node.js](http://nodejs.org/)  
   
+     Zainstaluj najnowszą wersję długi okres pomocy technicznej (LTS) 8.x Node.js opartym na systemie Należy pamiętać, że inne najnowsze wersje mogą nie obsługiwać niektórych moduły używane w vcremote i może spowodować niepowodzenie instalacji vcremote.  
+  
 -   Zaktualizowaną wersję programu npm  
   
      Wersja programu npm dołączoną Node.js nie może być wystarczająco aktualna, aby zainstalować vcremote. Aby zaktualizować npm, Otwórz aplikację terminalu na komputerze Mac i wprowadź następujące polecenie:  
@@ -88,7 +90,7 @@ Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowa
   
      Globalne instalacji (**-g**) przełącznik jest zalecane, ale nie są wymagane.  
   
-     Podczas instalacji vcremote jest zainstalowany i tryb dewelopera jest uaktywniany opartym na systemie [Homebrew](http://brew.sh/) i dwóch pakietów npm, vcremote-lib i witryny vcremote, są również instalowane.  
+     Podczas instalacji vcremote jest zainstalowany i tryb dewelopera jest uaktywniany opartym na systemie [Homebrew](http://brew.sh/) i dwóch pakietów npm, vcremote-lib i witryny vcremote, są również instalowane. Po ukończeniu instalacji, jest bezpiecznie zignorować ostrzeżenia o zależnościach opcjonalne zostało pominięte.  
   
     > [!NOTE]
     >  Do zainstalowania oprogramowania Homebrew, musi mieć dostęp do operacji sudo (administrator). Jeśli musisz zainstalować vcremote bez sudo, należy ręcznie zainstalować oprogramowania Homebrew w lokalizacji usr/lokalne, a następnie dodaj jego folder bin do ścieżki. Aby uzyskać więcej informacji, zobacz [dokumentacji oprogramowania Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Aby ręcznie włączyć tryb dewelopera, wpisz to polecenie w terminalu aplikacji: `DevToolsSecurity -enable`  

@@ -1,5 +1,5 @@
 ---
-title: Automatyzowanie programu Excel za pomocą obiektów rozszerzonych | Dokumentacja firmy Microsoft
+title: Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -23,18 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c1111a9fdd66d99f1dda40d3045ad337d499a6a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 5a2de66896a734839c7018f48f904c79e80abcaa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="automating-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
+# <a name="automate-excel-by-using-etended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów etended
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio, można użyć *hosta elementów* i *kontrolki hosta*s w ramach rozwiązań. Są to obiekty, które rozszerzają niektórych obiektów często używane w modelu obiektów programu Excel (to znaczy obiektu modelu udostępnianym przez podstawowy zestaw międzyoperacyjny dla programu Excel), takich jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone przypominają obiektami programu Excel, które są oparte na, ale ich dodać dodatkowe funkcje, takie jak nowe zdarzenia i możliwości wiązania danych do obiektów.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Obiekty hosta i formantów hosta są dostępne w obu dodatku VSTO i poziomie dokumentu dostosowania, mimo że kontekst, w którym mogą być one używane jest różne dla każdego typu rozwiązania. Aby uzyskać więcej informacji, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+ Obiekty hosta i formantów hosta są dostępne w obu dodatku VSTO i poziomie dokumentu dostosowania, mimo że kontekst, w którym mogą być one używane jest różne dla każdego typu rozwiązania. Aby uzyskać więcej informacji, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
 ## <a name="excel-host-items"></a>Obiekty hosta programu Excel  
  Projekty programu Excel umożliwiają dostęp do wielu elementów hosta:  
@@ -49,21 +49,21 @@ ms.lasthandoff: 04/28/2018
   
      Mimo że <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta ma postać arkusza w programie Excel, nie można dodać wszystkich formantów do arkusza wykresu. Jeśli chcesz, aby inne formanty w arkuszu z wykresem, nie należy używać wykresu w arkuszu. Zamiast tego możesz umieścić wykres jako obiekt osadzony w arkuszu za pomocą <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki hosta. Aby uzyskać więcej informacji, zobacz [formantu wykresu](../vsto/chart-control.md).  
   
-## <a name="excel-host-controls"></a>Formanty hosta programu Excel  
+## <a name="excel-host-controls"></a>kontrolki hosta programu Excel  
  Istnieje kilka hosta formantów dla programu Excel, które ułatwiają tworzenie, organizowanie i automatyzowanie skoroszyty i arkusze. Te kontrolki hosta podaj zdarzenia oraz funkcje wiązania danych, które nie mają ich odpowiedniki w macierzystym modelu obiektów programu Excel.  
   
  Aby uzyskać więcej informacji o formantach hosta można użyć w projekty programu Excel, zobacz następujące tematy:  
   
--   [Kontrolka wykresu](../vsto/chart-control.md)  
+-   [Formant wykresu](../vsto/chart-control.md)  
   
--   [ListObject, kontrolka](../vsto/listobject-control.md)  
+-   [ListObject — formant](../vsto/listobject-control.md)  
   
--   [NamedRange, kontrolka](../vsto/namedrange-control.md)  
+-   [Namedrange — formant](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange, kontrolka](../vsto/xmlmappedrange-control.md)  
+-   [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)  
   
-## <a name="see-also"></a>Zobacz też  
- [Porady: wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Porady: formanty wypełnienia ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
@@ -71,12 +71,12 @@ ms.lasthandoff: 04/28/2018
  [Porady: zmiana rozmiaru formantów NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Porady: zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Porady: Sprawdzanie poprawności danych po dodaniu nowego rzędu do formantu ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Porady: mapowanie kolumn ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Wskazówki: Programowanie w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Porady: kolumn mapy ListObject do danych](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Wskazówki: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

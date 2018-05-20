@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7bde83ce810f8260e61eacddf1a086953a63a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="creating-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z wiersza polecenia
+# <a name="create-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z wiersza polecenia
 **VSPerfReport** narzędzia wiersza polecenia umożliwia tworzenie XML lub plik wartości rozdzielanych przecinkami (.csv) raportów z profilowania pliki danych (Vsp). Typy raportów VSPerfReport ściśle odpowiadające widoków na podstawie tabeli interfejsu dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można filtrować raport do wyświetlenia tylko kodu i wyświetlania tylko jeden segment pliku danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
  Możesz również wprowadzić plików danych profilowania łatwiej można udostępnić przez osadzanie symboli plików Vsp i tworzenia raportu wstępnie przeanalizowane plików (vsps), które są one mniejsze i szybsze otworzyć.  
   
-## <a name="common-tasks"></a>Typowe zadania  
+## <a name="common-tasks"></a>Wspólne zadania
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Tworzenie podstawowych raportów.** Utwórz wszystkie lub podzbiór VSPerfReport typów raportów.|-   [Tworzenie raportów podstawowych](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|  
+|**Tworzenie podstawowych raportów.** Utwórz wszystkie lub podzbiór VSPerfReport typów raportów.|-   [Tworzenie podstawowych raportów](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|  
 |**Porównanie dwóch plików danych profilowania.** Utwórz raport "różnicowego", który porównuje dane dotyczące wydajności w dwóch plików danych profilowania.|-   [Porady: Tworzenie raportu porównania profilera z wiersza polecenia](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|  
 |**Wyświetl ślad wywołania i dane zdarzenia śledzenia dla systemu Windows (ETW).** Tworzenie raportu śledzenia wywołań, w którym wyświetlane są informacje o chronometrażu dla każdego punktu wejścia i wyjścia funkcji aplikacji i każde wywołanie innych funkcji w funkcji. Lub Utwórz szczegółowe listę wszystkich zdarzeń funkcji ETW, które zostały zebrane w przebiegu profilowania.|-   [Porady: Tworzenie raportu śledzenia wywołań](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|  
 |**Filtrowanie raportu.** Ogranicz raportu tylko funkcje kodu lub określony czas, w pliku danych profilowania.|-   [Porady: filtrowanie raportów z wiersza polecenia](../profiling/how-to-filter-reports-from-the-command-line.md)|  

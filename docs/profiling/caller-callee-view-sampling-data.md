@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c04c3d6e9df1bc761fdbcd3e78a5e43ab3efd1f2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 3411face8be5bbb26a3f95b353916a797f9bf488
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="caller--callee-view---sampling-data"></a>Obiekt wywołujący / wywoływany widok - dane próbkowania
 Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.  
@@ -50,5 +50,5 @@ Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wywołujący/wywoływany - dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Widok wywołujący/wywoływany - dane Instrumentacji NET pamięci](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Widok wywołujący/wywoływany - dane Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

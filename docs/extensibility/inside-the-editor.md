@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>W edytorze
 Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec Edytor tekstu oddzielnego modelu widoku tekstu i interfejs użytkownika.  
@@ -59,7 +59,7 @@ Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec Edy
   
  Podsystem modelu tekstu jest bezpłatna koncepcji interfejsu użytkownika. Na przykład nie jest odpowiedzialny za formatowania tekstu lub układu tekstu i go nie ma informacji o visual skojarzenia, które mogą być skojarzone z tekstu.  
   
- Typy publiczne podsystemu modelu tekstu znajdują się w Microsoft.VisualStudio.Text.Data.dll i Microsoft.VisualStudio.CoreUtilitiy.dll, zależnych tylko od klasy podstawowej biblioteki .NET Framework i Framework Managed Extensibility (MEF).  
+ Typy publiczne podsystemu modelu tekstu znajdują się w Microsoft.VisualStudio.Text.Data.dll i Microsoft.VisualStudio.CoreUtility.dll, zależnych tylko od klasy podstawowej biblioteki .NET Framework i Framework Managed Extensibility (MEF).  
   
 ### <a name="text-view-subsystem"></a>Podsystem widoku tekstu  
  Podsystem widoku tekstu jest odpowiedzialny za formatowania i wyświetlania tekstu. Typy w tym podsystemu są podzielone na dwie warstwy, w zależności od tego, czy typy polegać na systemie Windows Presentation Foundation (WPF). Najważniejsze typy są <xref:Microsoft.VisualStudio.Text.Editor.ITextView> i <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, które kontrolować zestawu wierszy tekstu, które mają być wyświetlane i również karetki, zaznaczenia i urządzenia do adorning tekst przy użyciu elementów interfejsu użytkownika WPF. Podsystem ten zawiera również obszar wyświetlania marginesy wokół tekstu. Marginesy te można ją rozszerzyć i może zawierać różne rodzaje efekty zawartości i visual. Przykłady marginesy wiersza numer Wyświetla i pasków przewijania.  

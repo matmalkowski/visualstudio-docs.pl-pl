@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # Jakie opcje publikowania jest dla mnie odpowiednia?
 
@@ -98,7 +98,7 @@ Można utworzyć dowolną liczbę niestandardowych wdrażania profilów w progra
 
 ### Kiedy należy wybrać niestandardowe wdrożenie
 
-- Usługi w chmurze jest używana na Podaj innych niż Azure, który jest możliwy za pośrednictwem adresów URL.
+- Usługi w chmurze jest używana dla dostawcy innego niż Azure, który jest możliwy za pośrednictwem adresów URL.
 - Chcesz wdrożyć przy użyciu poświadczeń innych niż te, które można używać w programie Visual Studio lub te bezpośrednio powiązane konta platformy Azure.
 - Chcesz usunąć pliki z docelowej każdym wdrożeniu.
 

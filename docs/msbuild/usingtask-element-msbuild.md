@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask — Element (MSBuild)
 Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) elementu do zestawu zawierającego implementację zadania.  
@@ -68,10 +68,10 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 |[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
- Zmienne środowiskowe, właściwości wiersza polecenia i właściwości na poziomie projektu może być dowolnym przywoływany w `UsingTask` elementu, jeśli występuje on w pliku projektu bezpośrednio lub za pośrednictwem zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
+ Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementów na poziomie projektu może być przywoływany w `UsingTask` elementy zawarte w pliku projektu albo bezpośrednio lub za pośrednictwem zaimportowanego projektu pliku. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Właściwości na poziomie projektu mają żadnego znaczenia, jeśli `UsingTask` element pochodzi z jednego z plików .tasks, które są globalnie zarejestrowane z aparatu MSBuild. Właściwości na poziomie projektu nie są globalne dla programu MSBuild.  
+>  Właściwości na poziomie projektu i elementy mają żadnego znaczenia, jeśli `UsingTask` element pochodzi z jednego z plików .tasks, które są globalnie zarejestrowane z aparatu MSBuild. Wartości na poziomie projektu nie są globalne dla programu MSBuild.  
 
  W programu MSBuild w wersji 4.0 za pomocą zadań mogą być ładowane z .overridetask plików.  
 

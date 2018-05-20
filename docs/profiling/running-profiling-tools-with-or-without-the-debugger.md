@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchomione narzędzia profilowania z lub bez debugera
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchom profilowanie narzędzia z lub bez debugera
 Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre z nich (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchomić z lub bez debugera. Narzędzia non debugera wydajności są przeznaczone do uruchamiania na wersji konfiguracji, gdy debuger zintegrowane narzędzia są przeznaczone do uruchamiania na konfiguracji debugowania.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Narzędzie należy uruchomić z lub bez debugera?  
@@ -39,9 +39,9 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
  Poniższa sekcja zawiera debugowania lokalnego. Można znaleźć informacje o debugowaniu na urządzeniu lub debugowanie zdalne w kolejnych sekcjach.  
   
-1.  Otwórz projekt chcesz debugować, następnie kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).  
+1.  Otwórz projekt chcesz debugować, następnie kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).  
   
-2.  **Narzędzia diagnostyczne** okna pojawiają się automatycznie, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.  
+2.  **Narzędzia diagnostyczne** okna pojawiają się automatycznie, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.  
   
 3.  Uruchom scenariusze, które mają być zbierane dane.  
   
@@ -51,11 +51,11 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Można wybrać, czy wyświetlane **użycie pamięci** lub **użycie procesora CPU** (lub obie) z **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise, można włączyć lub wyłączyć IntelliTrace w **narzędzia / Opcje / IntelliTrace**.  
+4.  Można wybrać, czy wyświetlane **użycie pamięci** lub **użycie procesora CPU** (lub obie) z **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise, można włączyć lub wyłączyć IntelliTrace w **narzędzia** > **opcje** > **IntelliTrace**.  
   
 5.  Sesja diagnostyczna kończy się po zatrzymaniu debugowania.  
   
- W programie Visual Studio 2015 Update 1 **narzędzia diagnostyczne** okna ułatwia dla można skupić się na zdarzenia planuje się.   Nazwy zdarzenia są wyświetlane z prefiksami kategorii (**gestu**, **dane wyjściowe programu**, **punktu przerwania**, **pliku** itp.), można szybko Przejrzyj listę dla danej kategorii lub pominąć kategorie, które nie zależy Ci.  
+ W programie Visual Studio 2015 Update 1 **narzędzia diagnostyczne** okna ułatwia dla można skupić się na zdarzenia planuje się.   Nazwy zdarzenia są wyświetlane z prefiksami kategorii (**gestu**, **dane wyjściowe programu**, **punktu przerwania**, **pliku**, itd.), można szybko Przejrzyj listę dla danej kategorii lub pominąć kategorie, które nie zależy Ci.  
   
  Okno teraz zawiera pole wyszukiwania, dzięki czemu można znaleźć określony ciąg gdziekolwiek listy zdarzeń. Na przykład na poniższym rysunku przedstawiono wyniki wyszukiwania dla ciągu "Zainstaluj" zgodny czterech zdarzeń:  
   
@@ -72,7 +72,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
   
 1.  Otwórz projekt w programie Visual Studio.  
   
-2.  Na **debugowania** menu, wybierz **profilera wydajności...** (Klawisz skrótu: Alt + F2).  
+2.  Na **debugowania** menu, wybierz **wydajności programu profilującego** (klawisz skrótu: **Alt**+**F2**).  
   
 3.  Na stronie uruchamiania diagnostyki wybierz co najmniej jedno narzędzie do pracy w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do projektu typu systemu operacyjnego i język programowania. Po wybraniu narzędzie diagnostyczne są wyłączone wybrane narzędzia, których nie można uruchomić w tej samej sesji diagnostycznej. Oto, jak może wyglądać wybrane opcje dla aplikacji uniwersalnych systemu Windows C#:  
   
@@ -106,7 +106,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Jeśli dane zawierają informacje z różnych narzędzi, szczegóły dla tego narzędzia są zbierane na kartach.|  
 |![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|To narzędzie może mieć co najmniej jeden widok szczegółów. Widok są filtrowane według wybranego regionu osi czasu.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Ustawienie docelowej analizy na innym urządzeniu  
+## <a name="set-the-analysis-target-to-another-device"></a>Ustaw element docelowy analizy na innym urządzeniu  
  Oprócz uruchamiania aplikacji z projektu programu Visual Studio, można również uruchomić sesji diagnostycznych na alternatywnych obiektów docelowych. Na przykład możesz chcieć diagnozowanie problemów z wydajnością w wersji aplikacji zainstalowanej ze sklepu z aplikacjami systemu Windows.  
   
  ![Wybierz element docelowy analizy narzędzia diagnostyczne](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

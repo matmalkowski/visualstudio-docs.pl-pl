@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52dd9ccce2d7ea2aab36895c186c25ad5207de7a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` Funkcja ustawia licznik 0 (wyłączone) dla określonego poziomu profilowania.  
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Proces lub wątek identyfikator generowany przez system.  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
+## <a name="property-valuereturn-value"></a>Wartość właściwości wartość/powrotu  
  Funkcja wskazuje powodzenie lub Niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
   
 |Moduł wyliczający|Opis|  
@@ -62,7 +62,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Podczas uruchamiania i zatrzymywania stan i stan wstrzymań/wznowień są na, stan profilowania poziomu ma wartość ON. Dla wątku być profilowane, proces globalnych i poziomu stany wątku dla wątku musi mieć wartość ON.  
   
-## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
+## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacji o funkcji  
@@ -107,5 +107,5 @@ void ExerciseStopProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy API profilera Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)

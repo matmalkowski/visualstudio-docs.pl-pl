@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 8e7bd65e67af3a76eaf026e79c1153489b9d26a8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zużycie energii aplikacji platformy uniwersalnej systemu Windows na tablecie niskiego poboru energii urządzenia z systemem całość lub część czasu na ich własnych baterii. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii można zwiększyć wdrożenia aplikacji i korzystać przez klientów.  
@@ -152,6 +152,6 @@ if (performance && performance.mark) {
   
 -   **Chronometrażu funkcji JavaScript** i **użycie procesora CPU** narzędzia może pomóc zmniejszyć obciążenie procesora CPU, gdy jest spowodowany przez funkcje nieefektywne. Zobacz [Analiza użycia procesora CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)

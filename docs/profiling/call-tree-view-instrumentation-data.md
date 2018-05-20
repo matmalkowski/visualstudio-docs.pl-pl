@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Widok drzewa wywołań - dane Instrumentacji
 Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpienia funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpień funkcji łączny całkowity czas, który upłynął, wszystkich funkcji w przebiegu profilowania.  
@@ -83,8 +83,8 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpienia fu
 |**Maksymalny własny czas aplikacji**|Maksymalny własny czas aplikacji wywołania tej funkcji w tym kontekście.|  
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji w tym kontekście.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)   
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Widok drzewa wywołań - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Drzewie wywołań view - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

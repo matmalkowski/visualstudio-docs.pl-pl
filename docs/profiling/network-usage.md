@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji sieciowych wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dotyczące dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i Pobierz wydajności.  
@@ -24,12 +24,12 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji
 > [!NOTE]
 >  Bardziej szczegółowy opis narzędzia do sieci, zobacz [narzędzie sieci wprowadzenie do programu Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
-## <a name="collecting-network-tool-data"></a>Zbieranie danych narzędzie sieci  
+## <a name="collect-network-tool-data"></a>Zbieranie danych narzędzie sieci  
  Należy uruchomić **sieci** narzędzie, otwórz projekt programu Visual Studio na komputerze programu Visual Studio.  
   
 1.  Otwórz projekt w programie Visual Studio.  
   
-2.  W menu, kliknij polecenie **Debug / profilera wydajności...** . Wybierz **sieci**, a następnie wybierz pozycję **Start**.  
+2.  W menu, kliknij polecenie **Debug / wydajności programu profilującego**. Wybierz **sieci**, a następnie wybierz pozycję **Start**.  
   
 3.  Narzędzia sieci rozpocznie zbierane danych ruchu HTTP w aplikacji.  
   
@@ -41,7 +41,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji
   
  ![Okno sieci](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analizowanie danych  
+## <a name="analyze-data"></a>Analizowanie danych  
  Przechwycony ruch HTTP można analizować uruchomionej aplikacji lub nawet po zamknięciu aplikacji przez wybranie dowolnego operacje sieciowe wyświetlane w widoku podsumowania.  
   
  **Sieci** widok podsumowania zawiera dane dla każdej operacji sieciowej podczas uruchomienia aplikacji. Wybierz nagłówek kolumny, aby posortować listę, lub typy zawartości do wyświetlenia w **typu zawartości** filtrowanie widoku.  
@@ -63,11 +63,11 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji
  Sieci **podsumowania** pasek pokazuje liczbę operacji sieciowych, które są wyświetlane na dowolnym etapie, ile danych zostało przeniesione, czas, jaki zajęło Pobierz je oraz ile błędy (liczba żądań z 4xx lub 5xx odpowiedzi) widoczne.  
   
 ### <a name="analysis-tips"></a>Wskazówki dotyczące analizy  
- Najważniejsze funkcje tego narzędzia, które niektóre obszary, które mogą być przydatne podczas korzystania z sieci związane z analizy:  
+ To narzędzie wyróżnione niektóre obszary, które mogą być przydatne podczas korzystania z analizy związanych z siecią:  
   
 1.  Żądania, które są w pełni obsługiwane z pamięci podręcznej są wyświetlane jako **(z pamięci podręcznej)** w **odebrane** kolumny. Ułatwia to ustalić, czy używasz pamięci podręcznej skutecznie aby oszczędzić przepustowość użytkownika lub czy buforowanie odpowiedzi przez pomyłkę i dostarczanie użytkowników końcowych aplikacji za pomocą danych nieaktualne.  
   
-2.  Błąd odpowiedzi (4xx lub 5xx) są wyświetlane w w **wyniki** kolumny z czerwonym oznaczeniem stanu kodu i są wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędy między wiele potencjalnych żądań w swojej aplikacji.  
+2.  Błąd odpowiedzi (4xx lub 5xx) są wyświetlane w **wyniki** kolumny z czerwonym oznaczeniem stanu kodu i są wyróżnione na pasku podsumowania. Dzięki temu ułatwiają błędy między wiele potencjalnych żądań w swojej aplikacji.  
   
 3.  Przycisk pretty drukowania odpowiedzi (wewnątrz karta Treść) może pomóc przeanalizować za pośrednictwem ładunków odpowiedzi JSON, XML, HTML, CSS, JavaScript i TypeScript, zwiększając czytelność zawartości.  
   
@@ -76,4 +76,4 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji
  [Visual Studio blogu: Inspektor sieci Introducing programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Wideo Channel 9: Narzędzia diagnostyki VS - nowej sieci profilera](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+ [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

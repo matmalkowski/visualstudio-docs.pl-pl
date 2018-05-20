@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, system Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, system Windows)
 Visual Studio Tools for Unity dziennika zmian.
+
+## <a name="3701"></a>3.7.0.1
+ Wydanych 2018-05-07
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Instalator:**
+
+    -   Tworzy problem stałego zależności przy użyciu eksperymentalne.
+
+## <a name="3700"></a>3.7.0.0
+ Wydanych 2018-05-07
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Debugowanie:**
+
+    -   Dodano obsługę zorkiestrowana debugowania (debugowanie wielu graczy/edytor z tej samej sesji programu Visual Studio).
+    
+    -   Dodano obsługę debugowania player Android USB.
+    
+    -   Dodano obsługę dla platformy uniwersalnej systemu Windows/IL2CPP player debugowania.
+
+-   **Ocena:**
+
+    -   Dodano obsługę specyfikatory szesnastkową.
+    
+    -   Środowisko oceny okna czujki ulepszona.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Stałe użycie ustawienia wyjątków.
+
+-   **Generowanie projektu:**
+
+    -   Wyklucz pakietu Menedżera kompilacji jednostki generacji.
 
 ## <a name="3605"></a>3.6.0.5
  Wydanych 2018-03-13
@@ -26,7 +64,7 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Generowanie projektu:**
 
-    -   Dodano obsługę dla generatora nowego projektu w Unity 2018.1
+    -   Dodano obsługę dla generatora nowego projektu w Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

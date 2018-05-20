@@ -1,5 +1,5 @@
 ---
-title: 'BOOKMARK, formant: | Dokumentacja firmy Microsoft'
+title: 'Bookmark, formant:'
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.prod: visual-studio-dev15
@@ -19,30 +19,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68934d202fbffc162b6888ab3a45cdf0b7fd439d
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 60ab9db37f3ed41de4afcdecbf2c9e83ffb5c2f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="bookmark-control"></a>Formant zakładki
+# <a name="bookmark-control"></a>Bookmark, formant:
   <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest zakładki, która ma unikatową nazwę, opisuje zdarzenia i może być powiązany z danymi. Zakładki można służyć jako symbol zastępczy można oznaczyć elementu lub lokalizacji w dokumencie programu Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formanty do dokumentu w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projektów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formanty do dokumentu w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projektów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: zakładki Dodaj formanty do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
-## <a name="binding-data-to-the-control"></a>Wiązanie danych do kontrolki
+## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki
  A <xref:Microsoft.Office.Tools.Word.Bookmark> sterowanie obsługuje proste powiązanie danych. Zakładka powinny być powiązane z źródła danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Domyślna właściwość powiązania danych zakładki jest <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
 
  Jeśli dane w zestawie danych powiązane są aktualizowane, <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli przedstawia zmiany.
 
- W projektach na poziomie dokumentu, można także powiązać dane zakładki przy użyciu **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [porady: wypełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ W projektach na poziomie dokumentu, można także powiązać dane zakładki przy użyciu **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatowanie
  Formatowanie, które mogą być stosowane do <xref:Microsoft.Office.Interop.Word.Bookmark> można zastosować do <xref:Microsoft.Office.Tools.Word.Bookmark> formantu. Formatowanie obejmuje czcionek, wcięć, odstępy, numerowanie i style.
 
-## <a name="assigning-text-to-the-bookmark"></a>Przypisywanie tekstu do zakładki
+## <a name="assign-text-to-the-bookmark"></a>Przypisywanie tekstu do zakładki
  Dodatkowe różnica między <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu i <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> formant jest jego zachowania podczas tekst jest przypisany do zakładki. Jeśli tekst jest przypisane do zerowej długości <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, tekst jest dołączany do prawej zakładki i Zakładka pozostanie o zerowej długości. Jednak jeśli tekst jest przypisane do zerowej długości <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, wstawiony do zakładki, a długość zakładki rozszerza całkowitą liczbę znaków wstawiony.
 
  <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> Formantu ma również <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> właściwości. Ta właściwość jest inny niż <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> właściwość, która jest dostępna w <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> kontroli, lub <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> właściwość <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> obiektu.
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/28/2018
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Ta właściwość służy do wyświetlania tekstu w zakładce i pozostawić zakładki w dokumencie. Przypisywanie tekstu do zakładki rozszerza zakresu zakładek i nie powoduje usunięcia zakładki.<br /><br /> Na przykład `Bookmark1.Text = "Hello world"` wstawia tekst do zakładki i pozostawienie zakładki bez zmian.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Ta właściwość służy do wyświetlania tekstu w lokalizacji zakładek i automatycznie usunąć zakładki. Na przykład `Bookmark1.Range.Text = "Hello world"` wstawia tekst do zakładki i usuwa zakładki.|
 
-## <a name="renaming-the-control-at-design-time"></a>Zmiana nazwy formantu w czasie projektowania
+## <a name="rename-the-control-at-design-time"></a>Nazwy formantu w czasie projektowania
  W przypadku projektów na poziomie dokumentu, podczas przeciągania <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolować z **przybornika** do dokumentu, Visual Studio automatycznie generuje nazwę dla formantu. Można zmienić nazwę formantu w **właściwości** okna.
 
 ## <a name="overlapping-controls"></a>Nakładanie się kontrolek
@@ -113,7 +113,7 @@ Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Word.Book
 ## <a name="see-also"></a>Zobacz także
 
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
-- [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Wskazówki: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

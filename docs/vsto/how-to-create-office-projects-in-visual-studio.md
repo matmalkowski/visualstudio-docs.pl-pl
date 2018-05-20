@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Porady: tworzenie projektów Office w Visual Studio
   Można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia dodatku VSTO i na poziomie dokumentu dostosowania aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      Lokalizacje mieć następujący format:  
   
-    -   [*dysku*\]: \  
+      * [*dysku*\]\:  
   
-    -   \\\\*Serwer*\\*udziału*  
+      * \\\\*Serwer*\\*udziału*  
   
      W tym miejscu nie należy używać następujących znaków:  
   
-    -   Znak gwiazdki (*)  
+      * Znak gwiazdki (*)  
   
-    -   Pionowej kreski (|)  
+      * Pionowej kreski (|)  
   
-    -   Dwukropka (:) (Oprócz następujących literę dysku).  
+      * Dwukropka (:) (Oprócz następujących literę dysku).  
   
-    -   Podwójny cudzysłów (") (ścieżek zawierających spacje nie są znaki cudzysłowu.)  
+      * Podwójny cudzysłów (") (ścieżek zawierających spacje nie są znaki cudzysłowu.)  
   
-    -   Mniej niż (\<)  
+      * Mniej niż (\<)  
   
-    -   Większości (>)  
+      * Większości (>)  
   
-    -   Znak zapytania (?)  
+      * Znak zapytania (?)  
   
-    -   Znaku procentu (%)  
+      * Znaku procentu (%)  
   
-7.  Wybierz **OK** przycisku.  
+7. Wybierz **OK** przycisku.
   
     > [!NOTE]  
     >  Dodatek projekty są zawsze zapisywane podczas ich tworzenia. Nie można ich utworzyć jako tymczasowe projekty. Aby uzyskać więcej informacji na temat tymczasowe projekty, zobacz [tymczasowe projekty](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      Lokalizacje mieć następujący format:  
   
-    -   [*dysku*\]: \  
+    -   [*dysku*\]\:  
   
     -   \\\\*Serwer*\\*udziału*  
   

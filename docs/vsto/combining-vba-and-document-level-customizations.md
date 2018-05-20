@@ -1,5 +1,5 @@
 ---
-title: Łączenie VBA i dostosowywanie na poziomie dokumentu | Dokumentacja firmy Microsoft
+title: Łączenie VBA i dostosowywanie na poziomie dokumentu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -27,13 +27,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01870498522ce138925fdaaf4c6ada9b13961f76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5bc53512a93ad2af9fa30562e54a8419c70c813
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="combining-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
+# <a name="combine-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
   Można użyć języka Visual Basic dla kodu aplikacji (VBA) w dokumencie, który jest częścią dostosowanie poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Kod VBA w dokumencie można wywołać z zestawu dostosowania, lub z projektem, aby włączyć kod VBA w dokumencie, aby wywoływać kod w zestawie dostosowania można skonfigurować.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  Po uruchomieniu rozwiązania obsługi zdarzeń w VBA i dostosowywanie zestawu odebrania zdarzeń występujących w dokumencie, a następnie uruchom oba zestawy kodu. Nie można ustalić wcześniej kodu, który będzie wykonywany przed innymi; należy określić to testy w każdym przypadku. Jeśli nie dokładnie koordynowane i testowane dwa zestawy kodu można uzyskać nieoczekiwane wyniki.  
   
-## <a name="calling-vba-code-from-the-customization-assembly"></a>Wywoływanie kodu z VBA z zestawu dostosowania  
+## <a name="call-vba-code-from-the-customization-assembly"></a>Kod VBA połączenia z zestawu dostosowania  
  Należy wywołać makra w dokumentach programu Word i mogą wywoływać makra i funkcje, które znajdują się w skoroszytach programu Excel. Aby to zrobić, użyj jednej z następujących metod:  
   
 -   Dla programu Word, należy wywołać <xref:Microsoft.Office.Interop.Word._Application.Run%2A>metody <xref:Microsoft.Office.Interop.Word.Application> klasy.  
@@ -71,9 +71,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```  
   
 > [!NOTE]  
->  Aby uzyskać informacje o korzystaniu z globalnej `missing` zmiennej zamiast następujące parametry opcjonalne języka Visual C#, zobacz [pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md).  
+>  Aby uzyskać informacje o korzystaniu z globalnej `missing` zmiennej zamiast następujące parametry opcjonalne języka Visual C#, zobacz [napisać kod w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="calling-code-in-document-level-customizations-from-vba"></a>Wywoływanie kodu w dostosowaniach na poziomie dokumentu z VBA  
+## <a name="call-code-in-document-level-customizations-from-vba"></a>Wywoływanie kodu w dostosowaniach na poziomie dokumentu z VBA  
  Można skonfigurować projekt poziomie dokumentu dla programu Word i Excel, ten kod Visual Basic for Applications (VBA) w dokumencie można wywoływać kod w zestawie dostosowania. Jest to przydatne w następujących scenariuszach:  
   
 -   Chcesz rozszerzyć istniejącego kodu z VBA w dokumencie przy użyciu funkcji w dostosowania poziomie dokumentu, który jest skojarzony z tym samym dokumencie.  
@@ -90,9 +90,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   Dokument musi mieć jedną z następujących rozszerzeń nazw plików:  
   
-    -   Dla programu Word: Docm lub doc  
+    -   Dla programu Word: *docm* lub *doc*  
   
-    -   Lub programu Excel: Xlsm, xltm, xls, xlt  
+    -   Dla programu Excel: *xlsm*, *xltm*, *xls*, lub *xlt*  
   
 -   Dokument już musi zawierać projekt VBA, który ma kod VBA w nim.  
   
@@ -100,9 +100,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   Office project musi zawierać co najmniej jedną klasę publicznego, który zawiera co najmniej jednego członka publicznego, które wyświetlasz VBA.  
   
-     Można ujawniać metod, właściwości i zdarzeń do języka VBA. Klasa, która naraża może być klasą elementu hosta (takich jak `ThisDocument` dla programu Word, lub `ThisWorkbook` i `Sheet1` dla programu Excel) lub innej klasy, która należy zdefiniować w projekcie. Aby uzyskać informacje o obiektach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+     Można ujawniać metod, właściwości i zdarzeń do języka VBA. Klasa, która naraża może być klasą elementu hosta (takich jak `ThisDocument` dla programu Word, lub `ThisWorkbook` i `Sheet1` dla programu Excel) lub innej klasy, która należy zdefiniować w projekcie. Aby uzyskać informacje o obiektach hosta, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
-## <a name="enabling-vba-code-to-call-into-the-customization-assembly"></a>Włączanie kod VBA do wywołania w zestawie dostosowania  
+## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>Włącz kod VBA do wywołania w zestawie dostosowania  
  Istnieją dwa różne sposoby, że mogą uwidaczniać elementów członkowskich w zestawie dostosowania do kodu z VBA w dokumencie:  
   
 -   Mogą uwidaczniać elementy członkowskie klasy elementu hosta w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu VBA. W tym celu należy ustawić **EnableVbaCallers** właściwości elementu hosta do **True** w **właściwości** okno podczas element hosta (to znaczy dokumentu, arkusza lub skoroszyt) Otwórz w projektancie. Visual Studio automatycznie wykonuje wszystkie informacje o pracy wymagane do włączenia kod VBA wywoła członków klasy.  
@@ -124,7 +124,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]  
 >  Jeśli skoroszytu lub dokument nie zawiera kodu VBA lub jeśli kod VBA w dokumencie nie jest zaufany do uruchomienia, zostanie wyświetlony komunikat o błędzie w przypadku ustawienia **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject**  właściwości **True**. Jest to spowodowane Visual Studio nie może modyfikować projektu VBA w dokumencie w takiej sytuacji.  
   
-## <a name="using-members-in-vba-code-to-call-into-the-customization-assembly"></a>Wywoływanie w zestawie dostosowania przy użyciu elementów członkowskich w kodzie języka VBA  
+## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Użyj elementów członkowskich w kodzie języka VBA do wywołania w zestawie dostosowania  
  Po skonfigurowaniu projektu do włączenia kodu VBA do wywołania w zestawie dostosowania programu Visual Studio dodaje następujące elementy członkowskie do projektu VBA w dokumencie:  
   
 -   Dla wszystkich projektów programu Visual Studio dodaje globalny metodę o nazwie `GetManagedClass`.  
@@ -134,9 +134,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
  Można użyć `CallVSTOAssembly` właściwości lub `GetManagedClass` metodę, aby dostęp do publicznych elementów członkowskich klasy, która ujawniony dla kodu z VBA w projekcie.  
   
 > [!NOTE]  
->  Podczas tworzenia i wdrażania rozwiązania, istnieje kilka różnych kopii dokumentu którym można dodać kod VBA. Aby uzyskać więcej informacji, zobacz [wytyczne dotyczące dodawania kodu z VBA w dokumencie](#Guidelines).  
+>  Podczas tworzenia i wdrażania rozwiązania, istnieje kilka różnych kopii dokumentu którym można dodać kod VBA. Aby uzyskać więcej informacji, zobacz [wytyczne dotyczące dodawania VBA kodu w dokumencie](#Guidelines).  
   
-### <a name="using-the-callvstoassembly-property-in-a-visual-basic-project"></a>Za pomocą właściwości CallVSTOAssembly w projektach Visual Basic  
+### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Użyj właściwości CallVSTOAssembly w projektach Visual Basic  
  Użyj `CallVSTOAssembly` dostępu publiczne elementy członkowskie dodane do elementu klasy obsługującej dla właściwości. Na przykład następujące makra VBA wywołuje metodę o nazwie `MyVSTOMethod` zdefiniowanego w `Sheet1` klasy w projekcie skoroszytu programu Excel.  
   
 ```  
@@ -155,7 +155,7 @@ Property Get CallVSTOAssembly() As ExcelWorkbook1.Sheet1
 End Property  
 ```  
   
-### <a name="using-the-getmanagedclass-method"></a>Przy użyciu metody GetManagedClass  
+### <a name="use-the-getmanagedclass-method"></a>Użyj metody GetManagedClass  
  Aby użyć globalnej `GetManagedClass` metody, przekaż obiekt VBA, który odpowiada do klasy elementu hosta, który zawiera zastąpienia z **GetAutomationObject** — metoda. Następnie uzyskiwanie dostępu do klasy, która narażonych na VBA za pomocą zwrócony obiekt.  
   
  Na przykład następujące makra VBA wywołuje metodę o nazwie `MyVSTOMethod` zdefiniowanego w `Sheet1` hosta klasy elementu w projekcie skoroszytu programu Excel o nazwie `ExcelWorkbook1`.  
@@ -181,7 +181,7 @@ GetManagedClass(pdispInteropObject Object) As Object
   
  Tworzenie i testowanie rozwiązania, można napisać kod VBA w dokumencie, który zostanie otwarty podczas debugowania i uruchom projekt w programie Visual Studio (to znaczy dokument w folderze wyjściowym kompilacji). Jednak kod VBA dodanych do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ kopię dokumentu w folderze głównym projektu programu Visual Studio zastępuje dokumentu w folderze wyjściowym kompilacji.  
   
- Jeśli chcesz zapisać kod VBA Dodaj do dokumentu, podczas debugowania i uruchamiania rozwiązania, skopiuj kod VBA do dokumentu w folderze projektu. Aby uzyskać więcej informacji na temat procesu kompilacji, zobacz [kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
+ Jeśli chcesz zapisać kod VBA Dodaj do dokumentu, podczas debugowania i uruchamiania rozwiązania, skopiuj kod VBA do dokumentu w folderze projektu. Aby uzyskać więcej informacji na temat procesu kompilacji, zobacz [tworzenie rozwiązań pakietu office](../vsto/building-office-solutions.md).  
   
  Gdy wszystko będzie gotowe do wdrożenia rozwiązania, istnieją trzy lokalizacje głównego dokumentu, w których można dodać kod VBA.  
   
@@ -193,7 +193,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 > [!CAUTION]  
 >  Jeśli dodasz kod VBA uruchamiany po otwarciu dokumentu w rzadkich przypadkach ten kod może spowodować uszkodzenie dokumentu lub uniemożliwić otwarcie w projektancie.  
   
-### <a name="in-the-publish-or-installation-folder"></a>W publikacji lub Folder instalacji  
+### <a name="in-the-publish-or-installation-folder"></a>W folderze publikowania lub instalacji  
  W niektórych przypadkach może być odpowiedni dodać kod VBA do dokumentu w folderze publikowania lub instalacji. Na przykład wybierz tę opcję, jeśli kod VBA jest zapisywane i przetestowane przez dewelopera innego komputera, który nie ma zainstalowanego programu Visual Studio.  
   
  Jeśli użytkownicy zainstalują rozwiązanie bezpośrednio z folderu publikowania, należy dodać kodu VBA w dokumencie za każdym razem, gdy publikowanie rozwiązania. Visual Studio zastępuje dokument w lokalizacji publikowania rozwiązania.  
@@ -241,23 +241,23 @@ GetManagedClass(pdispInteropObject Object) As Object
   
 2.  Usuwa biblioteki osadzonych typów z zestawu.  
   
-## <a name="troubleshooting"></a>Rozwiązywanie problemów  
+## <a name="troubleshoot"></a>Rozwiązywanie problemów
  W poniższej tabeli wymieniono niektóre typowe błędy i sugestie dotyczące poprawiania błędów.  
   
 |Błąd|Sugestia|  
 |-----------|----------------|  
 |Po ustawieniu **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** właściwości, komunikat o błędzie stwierdza, że dokument nie zawiera projektu VBA lub nie masz uprawnień dostępu do Projekt VBA w dokumencie.|Sprawdź, czy dokument w projekcie zawiera co najmniej jeden makro VBA, projekt VBA relacją zaufania wystarczające do uruchomienia i projektu VBA nie jest chroniony hasłem.|  
-|Po ustawieniu **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** właściwości, komunikat o błędzie stanów <xref:System.Runtime.InteropServices.GuidAttribute> deklaracji lub jest uszkodzony.|Upewnij się, że <xref:System.Runtime.InteropServices.GuidAttribute> deklaracji znajduje się w pliku AssemblyInfo.cs lub AssemblyInfo.vb w projekcie, a ten atrybut zostanie ustawiony na prawidłowy identyfikator GUID.|  
-|Po ustawieniu **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** właściwości, komunikat o błędzie stwierdza, że numer wersji określony przez <xref:System.Reflection.AssemblyVersionAttribute> jest nieprawidłowy.|Upewnij się, że <xref:System.Reflection.AssemblyVersionAttribute> deklaracji w pliku AssemblyInfo.cs lub AssemblyInfo.vb w projekcie ma ustawioną wartość numeru wersji prawidłowym zestawem. Aby uzyskać informacje o numerach wersji prawidłowy zestaw, zobacz <xref:System.Reflection.AssemblyVersionAttribute> klasy.|  
+|Po ustawieniu **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** właściwości, komunikat o błędzie stanów <xref:System.Runtime.InteropServices.GuidAttribute> deklaracji lub jest uszkodzony.|Upewnij się, że <xref:System.Runtime.InteropServices.GuidAttribute> deklaracji znajduje się w *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku w projekcie i że tego atrybutu jest ustawiona na prawidłowy identyfikator GUID.|  
+|Po ustawieniu **EnableVbaCallers** lub **ReferenceAssemblyFromVbaProject** właściwości, komunikat o błędzie stwierdza, że numer wersji określony przez <xref:System.Reflection.AssemblyVersionAttribute> jest nieprawidłowy.|Upewnij się, że <xref:System.Reflection.AssemblyVersionAttribute> deklaracji w *AssemblyInfo.cs* lub *AssemblyInfo.vb* pliku w projekcie ma ustawioną wartość numeru wersji prawidłowym zestawem. Aby uzyskać informacje o numerach wersji prawidłowy zestaw, zobacz <xref:System.Reflection.AssemblyVersionAttribute> klasy.|  
 |Po zmianie nazwy zestawu dostosowania, kod VBA, który odwołuje się do zestawu dostosowania przestanie działać.|Jeśli zmienisz nazwę zestawu dostosowania po jest narażony na kod, powiązanie projekt VBA w dokumencie i używanemu zestawowi dostosowania zostanie przerwane. Aby rozwiązać ten problem, zmień **ReferenceFromVbaAssembly** właściwości w swoim projekcie **False** , a następnie z powrotem do **True**, a następnie Zastąp wszystkie odwołania do zestawu starego Nazwa w kodzie języka VBA z nową nazwą zestawu.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [Porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
- [VBA i rozwiązania pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
- [Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
+ [Rozwiązania VBA i pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
+ [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)  
   
   

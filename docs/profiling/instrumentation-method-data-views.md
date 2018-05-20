@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d9fb3d0d90c5832620e8ab8642b491c0b68f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="instrumentation-method-data-views"></a>Widok danych metody instrumentacji
+# <a name="instrumentation-method-data-views"></a>Widok danych metody Instrumentacji
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zostały wygenerowane za pomocą metody instrumentacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -52,8 +52,8 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profil
  [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
  Informacje referencyjne dotyczące widoków i raportów profilera plików danych, które obejmują danych pamięci .NET.  
   
- [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
+ [Widok danych kontencji zasobów](../profiling/resource-contention-data-views.md)  
  Informacje referencyjne dotyczące widoków i raportów profilera danych plików, które zostały wygenerowane za pomocą metody rywalizacji wątku.  
   
-## <a name="see-also"></a>Zobacz też  
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)
+## <a name="see-also"></a>Zobacz także  
+ [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)

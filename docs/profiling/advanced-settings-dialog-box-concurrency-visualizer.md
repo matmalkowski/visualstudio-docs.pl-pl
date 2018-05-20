@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency Visualizer można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty symbole, tylko mój kod, buforowanie, filtrowanie, CLR zdarzenia, znaczniki, dostawców i plików.  
@@ -65,10 +65,10 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
   
  Lista poziom ważności umożliwia odfiltrowywania zdarzeń, które mają znaczenie lub poziom funkcji ETW, która jest mniejsza niż określona wartość.  
   
-### <a name="configuring-an-existing-provider"></a>Konfigurowanie istniejącego dostawcy  
+### <a name="configure-an-existing-provider"></a>Konfigurowanie istniejącego dostawcy  
  Aby edytować ustawienia, które są skojarzone z istniejącego dostawcy, wybierz z listy, a następnie wybierz **dostawcy edycji** przycisku.  Można zmienić nazwę, identyfikator GUID i ustawienia filtrowania.  
   
-### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrowanie danych znacznika poza raporty wizualizatora współbieżności  
+### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrowanie danych znacznika poza raporty Concurrency Visualizer  
  Jeśli nie chcesz danych dla określonego dostawcy się pojawić w przyszłości śladów, wyczyść pole wyboru obok dostawcy, który ma zostać usunięty.  
   
 ## <a name="files"></a>Pliki  
@@ -84,6 +84,6 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
   
  Dwa pliki ETL przechowywania danych pierwotnych śledzenia i dwa pliki Concurrency Visualizer przechowywania przetworzonych danych.  Nieprzetworzone pliki ETL zwykle nie są używane po przetworzeniu śledzenia.  Wybieranie **pliki usunąć zdarzenia śledzenia dziennika (ETL) po analizie** pole wyboru zmniejsza ilość danych śledzenia, który jest przechowywany na dysku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Tylko mój kod](../profiling/just-my-code-threads-view.md)   
  [Znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md)

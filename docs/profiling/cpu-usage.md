@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analiza użycia procesora CPU
 Gdy potrzebne do badania problemów z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, jak używa Procesora. **Użycie procesora CPU** narzędzie pokazuje, gdy Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic i kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, jest widoczny na funkcja podział użycia procesora CPU bez opuszczania debugera. Włącz profilowanie procesora CPU i wyłączanie podczas debugowania i wyświetlić wyniki podczas wykonywania zostanie zatrzymana, na przykład w punkcie przerwania.  
@@ -40,7 +40,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
   
     -   Dla aplikacji Windows Phone, zbieranie danych bezpośrednio z **urządzenia** zapewnia najdokładniejszych danych.  
   
-2.  Na **debugowania** menu, wybierz **profilera wydajności...** .  
+2.  Na **debugowania** menu, wybierz **wydajności programu profilującego**.  
   
 3.  Wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
   
@@ -56,7 +56,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
   
  ![Raport CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportu użycia procesora CPU  
+## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportów użycia procesora CPU  
   
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań  
  Aby rozpocząć, zrozumienie informacji o wywołaniu drzewa, wybierz ponownie `GetMaxNumberButton_Click` segmentu i przyjrzyj się szczegóły drzewa wywołań.  
@@ -94,7 +94,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
 |**Samodzielnie Procesora (%)**|![Samodzielna % równości](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procent aktywności Procesora aplikacji w wybranym zakresie czasu użytej przez wywołania funkcji, z wyłączeniem aktywności funkcji wywołanych przez funkcję.|  
 |**Całkowita liczba procesora CPU (ms)**|Wyrażony w milisekundach czas spędzony w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
 |**Samodzielnie procesora CPU (ms)**|Wyrażony w milisekundach czas spędzony w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
-|**Moduł**|Nazwa modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].|  
+|**Module**|Nazwa modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań  
  Gdy kompilator napotka metodę asynchroniczną, tworzy ukryte klasę, aby kontrolować wykonywanie metody. Klasa jest koncepcyjnie, automatu stanów, który zawiera listę funkcji generowane przez kompilator, które asynchroniczne wywoływanie operacji oryginalnej metody i wywołania zwrotne, harmonogram i Iteratory wymagane do poprawnego wykonania. Oryginalny metoda jest wywoływana przez metodę nadrzędną, środowisko uruchomieniowe usuwa metodę z kontekstu wykonywania elementu nadrzędnego i działa metod klasy ukryte w kontekście systemu i framework kodu, który kontrolować wykonywanie aplikacji. Metody asynchroniczne są często, ale nie zawsze wykonywane na co najmniej jeden inny wątek. Ten kod jest wyświetlany w drzewie wywołań użycie procesora CPU jako elementy podrzędne **[kod zewnętrzny]** węzła bezpośrednio pod górny węzeł drzewa.  

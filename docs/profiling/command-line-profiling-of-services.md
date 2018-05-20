@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 277688d579d254da889c1f349a6a674ad5c5f955
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
-ms.translationtype: MT
+ms.openlocfilehash: 80e5c8d7a1edc7af76870f3d120d66365d2f1cf4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="command-line-profiling-of-services"></a>Profilowanie wiersza polecenia usług
 W tej sekcji opisano procedury i opcji zbierania danych wydajności dla usług systemu Windows przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.  
@@ -25,7 +25,7 @@ W tej sekcji opisano procedury i opcji zbierania danych wydajności dla usług s
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="common-tasks"></a>Typowe zadania  
+## <a name="common-tasks"></a>Wspólne zadania
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
@@ -35,9 +35,9 @@ W tej sekcji opisano procedury i opcji zbierania danych wydajności dla usług s
 |**Zbieranie danych współbieżności:** umożliwia zbieranie danych kontencji zasobów i danych działanie wątku, który przedstawia wykorzystanie procesora CPU można, rywalizacji wątku, migracji wątku, opóźnienia synchronizacji, obszarów nakładających się we/wy i inne metoda współbieżności zdarzenia systemu.|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
 |**Dodawanie danych o interakcji między warstwy:** możesz dodać dane wydajności dotyczące ADO.NET synchroniczne wywołania usługi do programu Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazy danych.|-   [Zbieranie danych o interakcji między warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Tematy pokrewne  
+## <a name="related-tasks"></a>Zadania powiązane  
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Profil aplikacji autonomicznej (klient)**|-   [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
-|**Profil aplikacji ASP.NET**|-   [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
+|**Profil aplikacji autonomicznej (klient)**|-   [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+|**Profil aplikacji ASP.NET**|-   [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|

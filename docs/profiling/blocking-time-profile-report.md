@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="blocking-time-profile-report"></a>Raport profilowania czasu blokowania
+# <a name="blocking-time-profile-report"></a>Raport profilu czasu blokowania
 Raporty profilu zapewnienia agregacji danych czasu blokowania stosy wywołań, które są specyficzne dla każdej kategorii blokowania (na przykład "We/wy" lub "Synchronizacji"). Raport wywłaszczanie zawiera listę procesów, które są zastępowane wraz z liczbą wystąpień wywłaszczanie bieżącego procesu. Aby zbudować blokowania raport profilu, narzędzie zbiera blokowania wywołań interfejsu API i sumuje ich do drzewa stosy wywołań. Dane wyświetlane w tych raportach różni się od przez bieżącego zakresu czasu, ukrytych wątków oraz następujące dwa filtry, które mogą być stosowane:  
   
 -   Jeśli wybrano opcję tylko mój kod, prezentowane są tylko ramek stosu, które mają kod użytkownika i jeden poziom poniżej kod użytkownika.  
@@ -34,12 +34,12 @@ Raporty profilu zapewnienia agregacji danych czasu blokowania stosy wywołań, k
   
 |Nazwa kolumny|Opis|  
 |-----------------|-----------------|  
-|Nazwa|Nazwa funkcji dla każdego poziomu stosu wywołań.|  
-|Wystąpienia|Liczba wystąpień blokady wywołań w okresie widoczne.|  
-|Całkowity czas blokowania|Suma czasu przeznaczonego dla wszystkich stosy Rzutowanie na tym poziomie drzewa stosu wywołań blokowania. Liczba włącznie jest sumą własny czas blokowania dla tej funkcji i własny czas blokowania dla wszystkich węzłów podrzędnych.|  
-|Własny czas blokowania|Łączny czas blokowania przeznaczonego na podczas której ta funkcja jest najniższa stosu wywołań. Wpis stosu wywołań unikatowy, która ma wysoką własny czas blokowania może być funkcją zainteresowań.|  
-|Interfejs API/Wait kategorii|Wyświetlane tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy podpisu blokowania połączenia zostanie rozpoznany, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie został rozpoznany, który został zgłoszony przez jądro informacje.|  
-|Szczegóły|Pełna nazwa funkcji. Obejmuje to liczba wierszy, gdy jest ona dostępna.|  
+|**Nazwa**|Nazwa funkcji dla każdego poziomu stosu wywołań.|  
+|**Wystąpienia**|Liczba wystąpień blokady wywołań w okresie widoczne.|  
+|**Całkowity czas blokowania**|Suma czasu przeznaczonego dla wszystkich stosy Rzutowanie na tym poziomie drzewa stosu wywołań blokowania. Liczba włącznie jest sumą własny czas blokowania dla tej funkcji i własny czas blokowania dla wszystkich węzłów podrzędnych.|  
+|**Własny czas blokowania**|Łączny czas blokowania przeznaczonego na podczas której ta funkcja jest najniższa stosu wywołań. Wpis stosu wywołań unikatowy, która ma wysoką własny czas blokowania może być funkcją zainteresowań.|  
+|**Interfejs API/Wait kategorii**|Wyświetlane tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy podpisu blokowania połączenia zostanie rozpoznany, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie został rozpoznany, który został zgłoszony przez jądro informacje.|  
+|**Szczegóły**|Pełna nazwa funkcji. Obejmuje to liczba wierszy, gdy jest ona dostępna.|  
   
 ### <a name="synchronization"></a>Synchronizacja  
  Raport synchronizacji zawiera wywołań, które są odpowiedzialne za segmentów, które blokują synchronizacji i agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas synchronizacji](../profiling/synchronization-time.md)  
@@ -59,5 +59,5 @@ Raporty profilu zapewnienia agregacji danych czasu blokowania stosy wywołań, k
 ### <a name="ui-processing"></a>Przetwarzanie interfejsu użytkownika  
  Raport przetwarzania interfejsu użytkownika zawiera wywołań, które są odpowiedzialne za blokuje segmentów, które blokują na bloki przetwarzania interfejsu użytkownika i agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

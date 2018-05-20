@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
-Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie problemów aplikacji interakcji dotyczące problemów z wydajnością w aplikacji XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Można analizować czasu poświęconego przez aplikację przygotowywanie ramki interfejsu użytkownika (układu i renderowania), sieci i dysku żądań obsługi, a w scenariuszach, takich jak rozmiar uruchamiania aplikacji, ładowania stron i systemu Windows.  
+Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie problemów aplikacji interakcji dotyczące problemów z wydajnością w aplikacji XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Można analizować czasu poświęconego przez aplikację przygotowywanie ramki interfejsu użytkownika (układu i renderowania), sieci i dysku żądań obsługi, a w scenariuszach, takich jak uruchamiania aplikacji, ładowania strony, a następnie zmień rozmiar systemu Windows.  
   
- **Oś czasu aplikacji** jest jednym z narzędzi można uruchomić z poziomu **Debug / profilera wydajności...**  polecenia.  
+ **Oś czasu aplikacji** jest jednym z narzędzi można uruchomić z poziomu **debugowania** > **wydajności programu profilującego** polecenia.  
   
  To narzędzie zastępuje **czasu odpowiedzi interfejsu użytkownika XAML** narzędzia, która jest częścią zestawu narzędzi diagnostycznych dla programu Visual Studio 2013.  
   
@@ -36,7 +36,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 > [!NOTE]
 >  Można zbierać i analizować dane użycia procesora CPU i dane dotyczące zużycia energii wraz z **ApplicationTimeline** danych. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Zbieranie oś czasu aplikacji danych  
+##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Zbieranie danych osi czasu aplikacji  
  Czas odpowiedzi aplikacji można profilu na komputerze lokalnym, podłączonego urządzenia, symulator Visual Studio lub emulatory lub urządzenie zdalne. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -46,7 +46,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
   
 1.  Otwórz aplikację języka XAML.  
   
-2.  Kliknij przycisk **Debug / profilera wydajności...** . Należy wyświetlić listę narzędzia w oknie .diagsession profilowania.  
+2.  Kliknij przycisk **Debug / wydajności programu profilującego**. Należy wyświetlić listę narzędzia w oknie .diagsession profilowania.  
   
 3.  Wybierz **oś czasu aplikacji** , a następnie kliknij przycisk **Start** w dolnej części okna.  
   
@@ -96,7 +96,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 |||  
 |-|-|  
 |**Analiza kodu**|Czas poświęcony na tworzenie obiektów i analizy plików XAML.<br /><br /> Rozszerzanie **Parsowanie** w węźle **szczegóły osi czasu** Wyświetla łańcuch zależności wszystkich plików XAML, które zostały przeanalizować wyniku zdarzeń głównego. Umożliwi to zidentyfikować tworzenie analizowania i obiekt niepotrzebnych plików w scenariuszach poufnych wydajności i zoptymalizowania je.|  
-|**Układ**|W dużych aplikacji tysiące elementy mogą być wyświetlane na ekranie, w tym samym czasie. Może to spowodować niska szybkość klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu dokładnie określa koszt układania każdego elementu (tj. czas spędzony w rozmieszczanie, miary ApplyTemplate, ArrangeOverride i ArrangeOverride) i tworzy visual drzewa, w których uczestniczyła w przebiegu układu. Można użyć tej wizualizacji, aby ustalić, który drzew logicznej musi oczyszczania lub do oceny innych mechanizmów opóźnienia, aby zoptymalizować z przebiegu układu.|  
+|**Układ**|W dużych aplikacji tysiące elementy mogą być wyświetlane na ekranie, w tym samym czasie. Może to spowodować niska szybkość klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu dokładnie określa koszt układania każdego elementu (tj. czas spędzony w rozmieszczanie, miary ApplyTemplate, ArrangeOverride i ArrangeOverride) i tworzy visual drzewa, w których uczestniczyła w przebiegu układu. Umożliwia określenie, które drzewa logiczne Oczyść lub innych mechanizmów opóźnienia, aby zoptymalizować z przebiegu układu ocenić, można użyć tej wizualizacji.|  
 |**Renderowanie**|Czas poświęcony na rysunku elementów XAML do ekranu.|  
 |**I/0**|Czas poświęcony na pobieranie danych z lokalnego dysku lub z zasobów sieciowych, które są dostępne za pośrednictwem [Microsoft Windows Internet (WinINet) interfejsu API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kod aplikacji**|Czas poświęcony na wykonywanie kodu aplikacji (użytkownika), który nie jest powiązana z analizy ani układu.|  
@@ -115,7 +115,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 |![Lista szczegółów osi czasu filtrów](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje listę wybranych kategorii i długość zdarzenia.|  
 |![Dostosuj oś czasu szczegółowe informacje o](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacje do zdarzenia.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Blog zespołu WPF: Nowego interfejsu użytkownika narzędzia analizy wydajności aplikacji WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Najlepsze praktyki wydajności dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optymalizacja wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  

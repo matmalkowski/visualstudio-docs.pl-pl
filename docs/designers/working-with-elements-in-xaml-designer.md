@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
 Możesz dodawać elementy — formanty, układów i kształty — do aplikacji w języku XAML, kodu lub przy użyciu projektanta XAML. W tym temacie opisano sposób pracy z elementami w Projektancie XAML w programie Visual Studio lub program Blend for Visual Studio.
@@ -53,7 +53,7 @@ Możesz dodawać elementy — formanty, układów i kształty — do aplikacji w
 
         -   **Wyślij do tyłu** do wysyłania elementu aż do tyłu kolejności.
 
-     Zmień **wyznacza indeks** właściwości w **układu** sekcji w oknie właściwości. Nakładających się elementów **wyznacza indeks** właściwość ma wyższy priorytet niż kolejność elementów wyświetlany w oknie konspektu dokumentu. Element, który ma mniejszy **wyznacza indeks** wartość znajduje się na wierzchu podczas nakładania się elementów.
+     Zmień **wyznacza indeks** właściwości w **układu** sekcji w oknie właściwości. Nakładających się elementów **wyznacza indeks** właściwość ma wyższy priorytet niż kolejność elementów wyświetlany w oknie konspektu dokumentu. Element, który ma wyższy **wyznacza indeks** wartość znajduje się na wierzchu podczas nakładania się elementów.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Zmiana wyrównania elementu
  Za pomocą poleceń menu lub przez przeciąganie elementów do linii wyrównania można wyrównać elementów w obszarze roboczym.
@@ -74,7 +74,7 @@ Możesz dodawać elementy — formanty, układów i kształty — do aplikacji w
 
      Gdy wyrównania krawędzi, *granicy wyrównania* pojawia się, aby wskazać wyrównania. Granicy wyrównania jest linię kropkowaną czerwony. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona. Ilustracja obszaru roboczego, który pokazuje granicy wyrównania, zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Zmiana marginesy elementu
+## <a name="changing-an-elements-margins"></a>Zmiana marginesy elementu
  Marginesy w Projektancie XAML określają ilość wolnego miejsca, która jest wokół elementu w obszarze roboczym. Na przykład marginesy Określ ilość miejsca między zewnętrznej krawędzi elementu i granice `Grid` panelu, który zawiera element. Marginesy również określić ilość miejsca między elementami, które są zawarte w `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Aby zmienić marginesy elementu w oknie właściwości

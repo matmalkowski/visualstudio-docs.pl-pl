@@ -1,5 +1,5 @@
 ---
-title: Akcje niestandardowe w programie Outlook tworzą regionów | Dokumentacja firmy Microsoft
+title: Niestandardowe akcje w regionach formularzy programu Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec4c6a0ce361102ab216bc0c9f460a0bdd7a4a0d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, kliknięciu **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przycisków akcji. Każdy z tych akcji tworzy nowy element poczty i wypełnienie pól elementów przy użyciu informacji z oryginalnego elementu.  
@@ -29,8 +29,8 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-custom-actions-to-a-form-region"></a>Dodawanie działań niestandardowych do regionu formularza  
- Aby dodać akcję niestandardową do regionu formularza, użyj **akcje niestandardowe** okno dialogowe. Możesz otworzyć **akcje niestandardowe** okno dialogowe w **Eksploratora rozwiązań** rozwijając **manifestu** węzła, wybierając **CustomActions**właściwości, a następnie klikając przycisk wielokropka (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipsy ASP.NET Mobile Designer")).  
+## <a name="add-custom-actions-to-a-form-region"></a>Dodaj niestandardowe akcje do regionu formularza  
+ Aby dodać akcję niestandardową do regionu formularza, użyj **akcje niestandardowe** okno dialogowe. Możesz otworzyć **akcje niestandardowe** okno dialogowe w **Eksploratora rozwiązań** rozwijając **manifestu** węzła, wybierając **CustomActions**właściwości, a następnie klikając przycisk wielokropka (![ASP.NET przenośnych elipsy projektanta](../sharepoint/media/mwellipsis.gif "elipsy ASP.NET Mobile Designer")).  
   
  Można użyć **akcje niestandardowe** okno dialogowe, aby określić *docelowe formularza*. Formularz docelowy jest formularz, który jest wyświetlany, gdy użytkownik wykonuje akcji niestandardowej.  
   
@@ -50,10 +50,10 @@ ms.lasthandoff: 04/16/2018
 |**TargetForm**|Określa nazwę klasy wiadomości w postaci docelowej. Na przykład wpisz **IPM. Zadanie** aby otworzyć formularz zadania.|  
 |**Tytuł**|Określa etykietę przycisku akcji niestandardowej.|  
   
-## <a name="customizing-a-custom-action-at-run-time"></a>Dostosowywanie akcji niestandardowej w czasie wykonywania  
+## <a name="customize-a-custom-action-at-runtime"></a>Dostosowywanie akcji niestandardowej w czasie wykonywania  
  Można również dodać zachowanie do akcji niestandardowej przy użyciu kodu. Na przykład można dodać kod, który przyjmuje nazwy adresatów wiadomości e-mail i dodaje te nazwy jako uczestnicy nowego elementu terminu. W tym celu należy obsługiwać [Akcja niestandardowa](http://msdn.microsoft.com/library/office/ff862186.aspx) zdarzenie [MailItem obiektu](http://msdn.microsoft.com/library/office/ff861332.aspx).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
  [Wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  

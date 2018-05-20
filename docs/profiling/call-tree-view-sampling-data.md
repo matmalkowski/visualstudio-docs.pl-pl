@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7c15cb1e363a00f3d330a0c5cc5c9927c7e2b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90035daf13008122e7d529408a6de0389b311628
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---sampling-data"></a>Widok drzewa wywołań - dane próbkowania
 Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji.  
@@ -29,10 +29,10 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
   
  Wartości w widoku drzewa wywołań są dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpienia funkcji do łączna liczba próbek w przebiegu profilowania.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Wyróżnianie ścieżkę aktywną wykonywania  
+## <a name="highlight-the-execution-hot-path"></a>Wyróżnij ścieżkę aktywną wykonywania  
  Widok drzewa wywołań można rozwijać i wyróżnij ścieżkę wykonywania procesu lub funkcji, które zostało pobrane najczęściej. Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy proces lub funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Ustawienie węzła głównego drzewa wywołań  
+## <a name="set-the-call-tree-root-node"></a>Ustaw węzła głównego drzewa wywołań  
  Każdy proces w przebiegu profilowania jest wyświetlana jako węzła głównego. Aby ustawić węzeł początkowy widok drzewa wywołań, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie wybierz **ustawić głównego**.  
   
  Po ustawieniu węzła głównego pozwala wyeliminować wszystkie wpisy z widoku, z wyjątkiem poddrzewo wybranego węzła. Aby zresetować węzła głównego z powrotem do pierwotnego węzła, kliknij prawym przyciskiem myszy w oknie Widok drzewa wywołań i wybierz **zresetować głównego**.  
@@ -53,9 +53,9 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
 |**Przykłady włącznie**|Liczba próbek, które zostały zebrane w tej funkcji, gdy została wywołana przez funkcję nadrzędnego w drzewie wywołań. Ta liczba uwzględnia również przykłady, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|  
 |**% Próbek włącznie**|Procent wszystkie przykłady w przebiegu profilowania, które zostały przykłady włącznie tej funkcji, gdy została wywołana przez funkcję nadrzędnego w drzewie wywołań.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
- [Widok drzewa wywołań - dane z próbkowania profilera](../profiling/call-tree-view-sampling-data.md)   
- [Widok drzewa wywołań - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Widok drzewa wywołań - dane z próbkowania profilera](../profiling/call-Tree-view-sampling-data.md)   
+ [Drzewie wywołań view - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)

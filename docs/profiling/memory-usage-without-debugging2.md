@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debuger programu Visual Studio
 Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następujące czynności  
@@ -35,7 +35,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
   
 1.  Otwórz projekt C# uniwersalnych systemu Windows w programie Visual Studio.  
   
-2.  Na pasku menu wybierz **Debug / profilera wydajności...** .  
+2.  Na pasku menu wybierz **debugowania** > **wydajności programu profilującego**.  
   
 3.  Wybierz **użycie pamięci** , a następnie wybierz **Start** u dołu strony.  
   
@@ -199,9 +199,9 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 |**Rozmiar (w bajtach)**|W przypadku wystąpienia rozmiar obiektu w migawce głównej, z wyłączeniem rozmiar obiektów zawartych w wystąpieniu.<br /><br /> Dla typu całkowitego rozmiaru wystąpień typu podstawowego migawki, z wyłączeniem rozmiar obiektów zawartych w wystąpieniu.|  
 |**Całkowity rozmiar (w bajtach)**|Rozmiar obiektów w migawce podstawowego, takich jak rozmiar obiekty znajdujące się w obiektach.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pamięć języka JavaScript](../profiling/javascript-memory.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)  
+ [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)  
  [Najlepsze praktyki wydajności dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnozowanie problemów związanych z pamięci za pomocą nowego narzędzia użycia pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

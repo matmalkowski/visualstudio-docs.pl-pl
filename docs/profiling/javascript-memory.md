@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacji platformy uniwersalnej systemu Windows
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby określić sposób użycia pamięci i Znajdź przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows dla systemu Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje dla uniwersalnych aplikacji systemu Windows.
@@ -50,7 +50,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 2.  Jeśli korzystasz z aplikacji z programu Visual Studio w **Rozpocznij debugowanie** listy na **standardowe** narzędzi wybierz cel debugowania dla projektu: albo **komputera lokalnego** lub **Urządzenia**.  
   
-3.  Na pasku menu wybierz **debugowania**, **profilera wydajności...** .  
+3.  Na pasku menu wybierz **debugowania** > **wydajności programu profilującego**.  
   
      Domyślnie są analizowane bieżący projekt startowy. Jeśli chcesz zmienić element docelowy analizy, wybierz **zmienić docelowy**.  
   
@@ -344,7 +344,7 @@ if (performance && performance.mark) {
   
  ![Przy użyciu znaku profilu](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> Porady dotyczące identyfikowania problemy z pamięcią  
+##  <a name="Tips"></a> Wskazówek dotyczących identyfikowania problemy z pamięcią  
   
 -   Zgodne z przepływem pracy opisanego w [izolować przeciek pamięci](#Isolate) i użyj **obiekty pozostałe z migawki nr\<numer >** filtru w widoku różnic, aby zidentyfikować prawdopodobnie kandydatów do przecieki pamięci.  
   

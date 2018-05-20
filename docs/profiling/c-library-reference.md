@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 077ae868561f58596955ce39a9335f845f00f8b5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e48a9b5f601994a7a32aae38bdafbfdce6da22e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C
 Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżności.  
@@ -24,27 +24,3 @@ Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżno
 > [!NOTE]
 >  Standard języka C rezerwuje Użyj identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znaków dla wdrożeń, takich jak biblioteki. Nie używaj nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu elementów, których nazwy wykonaj tę Konwencję nie ma gwarancji i mogą ulec zmianie w przyszłych wersjach. Z tego powodu takie elementy kodu zostały pominięte w niniejszej dokumentacji.  
   
-## <a name="in-this-section"></a>W tej sekcji  
- [Funkcja CvCreateDefaultMarkerSeriesOfDefaultProvider](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
-  
- [Funkcja CvCreateMarkerSeries](../profiling/cvcreatemarkerseries-function.md)  
-  
- [Funkcja CvCreateMarkerSeriesWithCodePageA](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
-  
- [Funkcja CvEnterSpan](../profiling/cventerspan-function.md)  
-  
- [Funkcja CvInitProvider](../profiling/cvinitprovider-function.md)  
-  
- [Funkcja CvIsEnabled](../profiling/cvisenabled-function.md)  
-  
- [Funkcja CvLeaveSpan](../profiling/cvleavespan-function.md)  
-  
- [Funkcja CvReleaseMarkerSeries](../profiling/cvreleasemarkerseries-function.md)  
-  
- [Funkcja CvReleaseProvider](../profiling/cvreleaseprovider-function.md)  
-  
- [Funkcja CvWriteAlert ](../profiling/cvwritealert-function.md)  
-  
- [Funkcja CvWriteFlag](../profiling/cvwriteflag-function.md)  
-  
- [Funkcja CvWriteMessage](../profiling/cvwritemessage-function.md)

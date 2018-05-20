@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO | Dokumentacja firmy Microsoft'
+title: 'Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Porady: dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
   Dane XML można przechowywać w następujących typów dokumentów, tworząc z niestandardowym elementem XML w dodatku VSTO:  
   
 -   Skoroszyt programu Microsoft Office Excel.  
@@ -37,9 +37,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Prezentacji programu Microsoft Office PowerPoint.  
   
- Aby uzyskać więcej informacji, zobacz [przegląd części XML niestandardowe](../vsto/custom-xml-parts-overview.md).  
+ Aby uzyskać więcej informacji, zobacz [niestandardowe XML-przegląd części](../vsto/custom-xml-parts-overview.md).  
   
- **Dotyczy:** informacje w tym temacie dotyczą projektów na poziomie aplikacji dla programu Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Dotyczy:** informacje w tym temacie dotyczą projektów na poziomie aplikacji dla programu Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje dostępne w typu aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Aby dodać do skoroszytu programu Excel z niestandardowym elementem XML  
   
@@ -80,11 +80,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wywoływanie metody z innego kodu w projekcie. Na przykład, aby utworzyć niestandardowym elementem XML, gdy użytkownik otwiera prezentacji, wywołaj metodę z obsługi zdarzeń dla <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen> zdarzeń.  
   
-## <a name="robust-programming"></a>Niezawodne programowanie  
+## <a name="robust-programming"></a>Skuteczne programowanie  
  Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest zdefiniowany jako zmienną lokalną w metodzie. Zazwyczaj należy uzyskać XML ze źródła zewnętrznego, takiego jak plik lub bazy danych.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md)   
- [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentów](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md)   
+ [Porady: Dodawanie niestandardowych części XML do dostosowania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

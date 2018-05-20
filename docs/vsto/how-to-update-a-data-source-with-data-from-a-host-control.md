@@ -1,5 +1,5 @@
 ---
-title: 'Porady: aktualizowanie źródła danych danymi z kontrolką hosta | Dokumentacja firmy Microsoft'
+title: 'Porady: aktualizowanie źródła danych danymi z formanty hosta'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6113979ee4a9081c089610dce4edfcd1f75347ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Porady: aktualizowanie źródła danych danymi z kontrolką hosta
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Porady: aktualizowanie źródła danych danymi z formanty hosta
   Można powiązać ze źródłem danych formantu hosta i aktualizowanie źródła danych zmiany wprowadzone w danych w formancie. W tym procesie istnieją dwa podstawowe kroki:  
   
 1.  Aktualizowanie źródła danych w pamięci modyfikacji danych w formancie. Zazwyczaj jest źródło danych w pamięci <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub inny obiekt danych.  
   
 2.  Aktualizują bazę danych w źródle danych w pamięci. Ma to zastosowanie tylko wtedy, gdy źródło danych jest podłączony do wewnętrznej bazy danych, na przykład w bazie danych programu SQL Server lub programu Microsoft Office Access.  
   
- Aby uzyskać więcej informacji na temat kontrolki hosta i powiązania danych, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md) i [powiązania danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Aby uzyskać więcej informacji na temat kontrolki hosta i powiązania danych, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md) i [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## <a name="updating-the-in-memory-data-source"></a>Aktualizowanie źródła danych w pamięci  
+## <a name="update-the-in-memory-data-source"></a>Aktualizowanie źródła danych w pamięci  
  Domyślnie formanty hosta, które umożliwiają proste powiązanie danych (na przykład formantów zawartości do dokumentu programu Word lub formant nazwany zakres na arkuszu programu Excel) nie należy zapisywać zmiany danych w źródle danych w pamięci. Oznacza to gdy użytkownik końcowy zmieni wartość w formancie hosta, a następnie przechodzi od formantu, nowa wartość w formancie nie są automatycznie zapisywane w źródle danych.  
   
  Zapisanie danych w źródle danych, można napisać kod, który aktualizuje źródła danych w odpowiedzi na zdarzenia w czasie wykonywania, lub skonfigurować formantu można automatycznie zaktualizować źródła danych, gdy wartość w formancie zostanie zmieniona.  
   
  Nie trzeba zapisać <xref:Microsoft.Office.Tools.Excel.ListObject> zmieni się ze źródłem danych w pamięci. Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu z danymi, <xref:Microsoft.Office.Tools.Excel.ListObject> formant automatycznie zapisuje zmiany w źródle danych w pamięci bez konieczności dodatkowego kodu.  
   
-#### <a name="to-update-the-in-memory-data-source-at-run-time"></a>Aby zaktualizować źródła danych w pamięci w czasie wykonywania  
+### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Do aktualizowania źródła danych w pamięci w czasie wykonywania  
   
 -   Wywołanie <xref:System.Windows.Forms.Binding.WriteValue%2A> metody <xref:System.Windows.Forms.Binding> obiekt, który wiąże formantu ze źródłem danych.  
   
@@ -51,10 +51,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
-### <a name="automatically-updating-the-in-memory-data-source"></a>Automatyczne aktualizowanie źródła danych w pamięci  
+### <a name="automatically-update-the-in-memory-data-source"></a>Automatycznie zaktualizować źródła danych w pamięci  
  Formant można także skonfigurować, tak aby automatycznie aktualizuje źródła danych w pamięci. W projekcie poziomie dokumentu można to zrobić za pomocą kodu lub projektanta. W projekcie dodatku narzędzi VSTO należy użyć kodu.  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Aby ustawić kontrolę można automatycznie zaktualizować źródła danych w pamięci przy użyciu kodu  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Aby ustawić kontrolę można automatycznie zaktualizować źródła danych w pamięci przy użyciu kodu  
   
 1.  Użyj trybu System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> obiekt, który wiąże formantu ze źródłem danych. Dostępne są dwie opcje do aktualizowania źródła danych:  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Aby ustawić kontrolę można automatycznie zaktualizować źródła danych w pamięci przy użyciu narzędzia Projektant  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Aby ustawić kontrolę można automatycznie zaktualizować źródła danych w pamięci przy użyciu narzędzia Projektant  
   
 1.  W programie Visual Studio Otwórz dokument programu Word lub skoroszyt programu Excel w projektancie.  
   
@@ -91,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Zamknij **formatowanie i zaawansowane powiązanie** okno dialogowe.  
   
-## <a name="updating-the-database"></a>Uaktualnienie bazy danych  
+## <a name="update-the-database"></a>Aktualizowanie bazy danych  
  Jeśli źródło danych w pamięci jest skojarzona z bazą danych, musisz zaktualizować bazy danych ze zmianami w źródle danych. Aby uzyskać więcej informacji na temat aktualizowania bazy danych, zobacz [zapisać danych w bazie danych](../data-tools/save-data-back-to-the-database.md) i [aktualizowanie danych za pomocą TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
-#### <a name="to-update-the-database"></a>Aby zaktualizować bazę danych  
+### <a name="to-update-the-database"></a>Aby zaktualizować bazę danych  
   
 1.  Wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource> dla formantu.  
   
@@ -114,14 +114,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
   
-## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)    
  [Aktualizowanie danych za pomocą TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Porady: przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
  [Porady: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Instrukcje: Zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Porady: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

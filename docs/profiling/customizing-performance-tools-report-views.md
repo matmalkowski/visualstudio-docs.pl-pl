@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 691723e27cc2927733fe82aa1f79e9fd1d9d663d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21df85a54071a6fffe03483856c55194af08a2da
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-performance-tools-report-views"></a>Dostosowywanie wydajności widoków raportów narzędzi
+# <a name="customize-performance-tools-report-views"></a>Dostosowywanie widoków raportów narzędzi wydajności
 W tej sekcji omówiono sposób dostosowywania raportów, które są generowane z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania.  
   
-## <a name="common-tasks"></a>Typowe zadania  
+## <a name="common-tasks"></a>Wspólne zadania
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
@@ -34,5 +34,5 @@ W tej sekcji omówiono sposób dostosowywania raportów, które są generowane z
  [Widoki raportu wydajności](../profiling/performance-report-views.md)  
  Zawiera opis widoków, które służy do analizowania danych profilowania.  
   
-## <a name="see-also"></a>Zobacz też  
- [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Zobacz także  
+ [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffae38ca7fb57fcda26c87f3a8a866f8baf2827d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: f229ea889a478281ee0db123da00cd67c82ec13a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Określ ustawienia domyślne dla wdrożeń w przedsiębiorstwie programu Visual Studio
 
@@ -50,7 +50,7 @@ Można ustawić następujące wartości rejestru:
 
 | **Nazwa** | **Typ** | **Default** | **Opis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\ VisualStudio\Packages | Katalog, w którym manifesty pakietu i, opcjonalnie, ładunki są przechowywane. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
+| `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w którym manifesty pakietu i, opcjonalnie, ładunki są przechowywane. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachowaj ładunków pakietu, nawet po ich zainstalowaniu. W każdej chwili można zmienić wartości. Wyłączenie zasad usuwa żadnych ładunków pakietu w pamięci podręcznej dla tego wystąpienia, napraw lub zmodyfikować. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
 | `SharedInstallationPath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Katalog, w którym są zainstalowane niektórych pakietów współużytkowane przez wersje wystąpienia programu Visual Studio. Zmień wartość w dowolnym momencie, ale który mają wpływ tylko na przyszłe instaluje. Nie należy przenieść wszystkie produkty już zainstalowane do poprzedniej lokalizacji lub może nie działać prawidłowo. |
 

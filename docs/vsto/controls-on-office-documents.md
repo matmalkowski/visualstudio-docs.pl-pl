@@ -1,5 +1,5 @@
 ---
-title: Formanty w dokumentach pakietu Office | Dokumentacja firmy Microsoft
+title: Formanty w dokumentach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,39 +19,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b928680a4b2be161ca6727dd92690b95d043e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d33c89973124e2bae8e34aca3fc99096ac02ef6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="controls-on-office-documents"></a>Formanty w dokumentach pakietu Office
   Narzędzia deweloperskie pakietu Office w Visual Studio służy do dodawania formantów formularzy systemu Windows i *hostowania formantów* do dokumentów programu Word i arkusze programu Excel. Formanty hosta są obiekty, które rozszerzają różnych obiektów interfejsu użytkownika w modelach obiektów programu Word i Excel.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
- Podczas opracowywania projektów dodatku VSTO dla programu Excel lub Word, można programowo dodać tych kontrolek otwartego dokumentu lub skoroszyt w czasie wykonywania.  
+ Podczas opracowywania projektów dodatku VSTO dla programu Excel lub Word, tych kontrolek można dodać programistycznie otwartego dokumentu lub skoroszyt w czasie wykonywania.  
   
  Podczas opracowywania projektów na poziomie dokumentu dla programu Excel lub Word, można programowo dodać tych kontrolek w czasie wykonywania, lub projektanta programu Visual Studio umożliwia dodawanie kontrolek do dokumentu lub skoroszytu w projekcie w czasie projektowania.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
+ [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
  Zawiera opis funkcji elementów hosta i formantów hosta, w tym Programowanie w odniesieniu do zdarzeń, powiązanie formantów do danych i jak formanty różnią się od obiektów macierzystych.  
   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
  W tym artykule opisano problemy, które można napotkać, korzystając z elementów hosta i formantów hosta w kodzie.  
   
- [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)  
+ [Formanty formularzy systemu Windows na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  Zawiera informacje dotyczące używania formanty formularzy systemu Windows w dokumentach programu Excel i Word i jak są one różne od formantów w formularzu systemu Windows.  
   
- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
  Opisuje sposób Dodaj formanty formularzy systemu Windows i hosta kontrolki do dokumentów programu Word i Excel i opisano ograniczenia dotyczące sposobu tych kontrolek utrwalanie w dokumencie.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)  
  Zawiera informacje o różnych sposobach dostosowywania aplikacji interfejsu użytkownika pakietu Microsoft Office za pomocą programu Visual Studio.  
   
- [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Opisuje sposób wyświetlania danych w dokumentach programu Word i Excel przez powiązanie danych z formantami hosta w tym dokumencie.  
   
   

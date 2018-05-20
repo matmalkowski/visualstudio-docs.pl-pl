@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view"></a>Widok drzewa wywołań
 Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji. Korzeń drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcja zawiera listę wszystkich funkcji mu i dane wydajności dotyczące tych wywołań funkcji.  
@@ -45,11 +45,11 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
   
  [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Widok drzewa wywołań - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Drzewie wywołań view - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
  [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widoki raportu wydajności](../profiling/performance-report-views.md)   
  [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
- [Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)
+ [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

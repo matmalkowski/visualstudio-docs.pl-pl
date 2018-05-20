@@ -1,5 +1,5 @@
 ---
-title: Typowe zadania w programowaniu pakietu Office | Dokumentacja firmy Microsoft
+title: Typowe zadania w programowaniu pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="common-tasks-in-office-programming"></a>Niestandardowe zadania w programowaniu pakietu Office
+# <a name="common-tasks-in-office-programming"></a>Typowe zadania w programowaniu pakietu Office
   W tym temacie zaprojektowano w celu ułatwienia odpowiedzi na następujące kategorie często zadawane pytania dotyczące programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.  
   
 -   [Ogólne zadania i ustawienia](#projects).  
@@ -46,41 +46,41 @@ ms.lasthandoff: 04/16/2018
   
 -   [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Porady: Aktualizacja rozwiązań pakietu Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Porady: rozwiązań pakietu Office uaktualnienia](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Porady: zainstalować podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [Porady: podstawowe zestawy międzyoperacyjne pakietu Office instalacji](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
--   [Porady: aplikacje pakietu Office za pośrednictwem podstawowe zestawy międzyoperacyjne docelowe](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+-   [Porady: aplikacje pakietu Office docelowym za pośrednictwem podstawowe zestawy międzyoperacyjne](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 -   [Porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Porady: otwieranie rozwiązań pakietu Office bez uruchamiania kodu](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Porady: rozwiązań Otwórz pakietu Office bez uruchamiania kodu](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Porady: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
 -   [Porady: pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
--   [Porady: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md).  
+-   [Porady: błędy interfejsu użytkownika dodatku Pokaż](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
 ##  <a name="ui"></a> Zadań dostosowania interfejsu użytkownika  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Formanty w dokumentach i arkuszy  
   
--   [Porady: dodawanie formantów do dokumentów pakietu Office formularzy Windows](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Porady: dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
 -   [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 -   [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
--   [Porady: dodawanie formantów do dokumentów pakietu Office formularzy Windows](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Porady: dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
--   [Porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+-   [Porady: Dodawanie zawartości formantów do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 -   [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
 ### <a name="task-panes-in-document-level-customizations"></a>Okienka zadań w dostosowaniach na poziomie dokumentu  
   
--   [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+-   [Porady: Dodawanie okienek akcji do dokumentów programu Word lub skoroszyty programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
 ### <a name="task-panes-in-vsto-add-ins"></a>Okienka zadań w dodatkach VSTO  
   
@@ -94,13 +94,13 @@ ms.lasthandoff: 04/16/2018
   
 -   [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md).  
   
--   [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md).  
+-   [Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
 -   [Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="outlook-form-regions"></a>Regiony formularzy programu Outlook  
   
--   [Porady: dodawanie regionu formularza na projekt dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   [Porady: dodawanie regionu formularza do projektu dodatek programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
 -   [Porady: ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Porady: programowane Resetowanie zakresów w programie Word dokumentów](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [Porady: programowane Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
 -   [Porady: programowane formatowanie tekstu w dokumentach](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
@@ -194,7 +194,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="cached-data-in-document-level-solutions"></a>Buforowane dane w rozwiązaniach na poziomie dokumentu  
   
--   [Porady: dane z pamięci podręcznej do użycia w trybie Offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [Porady: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   [Porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
@@ -202,15 +202,15 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="custom-xml-data"></a>Niestandardowe dane XML  
   
--   [Porady: Dodawanie niestandardowych części XML na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
+-   [Porady: Dodawanie niestandardowych części XML do dostosowań na poziome dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
 -   [Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ##  <a name="server"></a> Zadania dotyczące dokumentów po stronie serwera zarządzania  
   
--   [Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
+-   [Porady: Usuwanie rozszerzenia managed extensions kodu z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
--   [Porady: dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
+-   [Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanych](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
 ##  <a name="security"></a> Zadań związanych z zabezpieczeniami  
   
@@ -220,7 +220,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Porady: publikowanie rozwiązań Office na poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Porady: publikowanie rozwiązań Office poziomie dokumentu na serwerze programu SharePoint przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 -   [Porady: Instalowanie rozwiązania ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065).  
   
@@ -228,13 +228,13 @@ ms.lasthandoff: 04/16/2018
   
 -   [Porady: Przygotowanie usług IIS do wdrożenia rozwiązań pakietu Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Porady: Aktualizacja rozwiązań pakietu Office wdrożonej](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Porady: Aktualizacja wdrożona rozwiązań pakietu Office](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
 -   [Porady: Zmienianie ścieżki instalacji rozwiązania do pakietu Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Funkcje dostępne w aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)   
- [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Wpisz dostępne funkcje uporządkowane według aplikacji pakietu Office i projektu](../vsto/features-available-by-office-application-and-project-type.md)   
+ [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

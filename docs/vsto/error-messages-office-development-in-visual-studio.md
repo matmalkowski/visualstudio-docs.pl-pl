@@ -1,5 +1,5 @@
 ---
-title: Komunikaty o błędach (Office Development w Visual Studio) | Dokumentacja firmy Microsoft
+title: Komunikaty o błędach (Office development w Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8cb7bfe06eb90a8a551ce0db1be048ec7cc0ba8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6f87f2bbdda39dd00cf2771d3764aea6ad89d0a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="error-messages-office-development-in-visual-studio"></a>Komunikaty o błędach (Office Development w Visual Studio)
+# <a name="error-messages-office-development-in-visual-studio"></a>Komunikaty o błędach (Office development w Visual Studio)
   Każdego tematu komunikat błędu zawiera informacje dotyczące możliwe przyczyny błędu i potencjalne rozwiązania lub obejścia w rozwiązaniu problemu.  
   
  Aby dowiedzieć się, komunikat o błędzie można uzyskać w następujący sposób.  
   
-|||  
+|Metoda|Opis|  
 |-|-|  
-|F1|Jeśli wystąpi błąd, można nacisnąć klawisz F1. Spowoduje to otwarcie odpowiedni temat komunikat błędu w dokumentacji online.|  
+|F1|Jeśli wystąpi błąd, możesz nacisnąć przycisk **F1**. Spowoduje to otwarcie odpowiedni temat komunikat błędu w dokumentacji online.|  
 |Wyszukiwanie pełnotekstowe|Można użyć wyszukiwania pełnotekstowego przy użyciu słowa z pierwszym zdanie w tekst komunikatu o błędzie. Na **pomocy** menu, kliknij przycisk **wyszukiwania**.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Pakietu Office i programowanie SharePoint w Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Programowanie Office i programu SharePoint w Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)  
   
   

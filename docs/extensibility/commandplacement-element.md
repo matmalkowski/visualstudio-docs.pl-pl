@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f28c8e2758d2dde9cf38db268abc9fa9b4f863
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="commandplacement-element"></a>CommandPlacement Element
 CommandPlacement element włącza przyciski, grup i menu do uwzględnienia w więcej niż jedną grupę lub menu. Za pomocą elementu CommandPlacement, nie trzeba całkowicie ponownie zdefiniować te elementy, aby zmodyfikować wygląd interfejsu użytkownika.  
@@ -28,7 +28,7 @@ CommandPlacement element włącza przyciski, grup i menu do uwzględnienia w wi�
 ## <a name="syntax"></a>Składnia  
   
 ```  
-<CommandPlacement guid=guidMyCommandSet" id="MyCommand" priority="0x001" >  
+<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >  
   <Parent>... </Parent>  
 </CommandPlacement>  
 ```  
@@ -40,16 +40,16 @@ CommandPlacement element włącza przyciski, grup i menu do uwzględnienia w wi�
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagany. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Element symbole](../extensibility/symbols-element.md).|  
-|identyfikator|Wymagany. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
-|priorytet|Wymagany. Określa położenie visual elementu w jego elementu nadrzędnego.|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Identyfikator GUID|Wymagana. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Element symbole](../extensibility/symbols-element.md).|  
+|identyfikator|Wymagana. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
+|priorytet|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Wymagany. Menu lub grupy, która hostuje element do umieszczenia.|  
+|Nadrzędny|Wymagana. Menu lub grupy, która hostuje element do umieszczenia.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

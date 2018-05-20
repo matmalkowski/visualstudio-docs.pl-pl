@@ -1,5 +1,5 @@
 ---
-title: Programowanie zespołowe rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+title: Programowanie zespołowe rozwiązań pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10415a6983c158ae1c117a5b3f9a8b2e1c546a0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9bf85dd1ba39df35e337f1b6b80099e3d5bcd774
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Programowanie zespołowe rozwiązań pakietu Office
   Wiele deweloperzy mogą pracować w projekcie pakietu Office w taki sam sposób jak Użytkownicy współpracujący do innych projektów programu Visual Studio. Visual Studio poprawnie lokalizuje instalacji pakietu Microsoft Office na każdym komputerze, nawet jeśli pakiet Office jest zainstalowany w różnych lokalizacjach. Istnieją pewne istotne kwestie, którymi należy się zapoznać.  
@@ -35,18 +35,18 @@ ms.lasthandoff: 04/16/2018
  Jeśli projekt jest przechowywany w udziale sieciowym, a nie w kontroli źródła, kilka dodatkowych czynności należy brać producentów Otwórz rozwiązanie i zestawu testów.  
   
 ## <a name="source-control-requires-checking-out-all-files"></a>Kontrola źródła wymaga wyewidencjonowania wszystkie pliki  
- Jeśli używasz kontroli źródła dla projektów, należy sprawdzić się wszystkie pliki w pliku kodu w **Eksploratora rozwiązań** (takich jak pliki kodu ThisDocument, ThisWorkbook lub klasy ThisAddIn) przy każdej zmianie pliku kodu nawet pliki, które są domyślnie ukryte. Jeśli wyewidencjonować plik kodu najwyższego poziomu, zmiany mogą zostać utracone.  
+ Jeśli używasz kontroli źródła dla projektów, należy sprawdzić się wszystkie pliki w pliku kodu w **Eksploratora rozwiązań** (takich jak *ThisDocument*, *ThisWorkbook*, lub *Thisaddin —* kodu plików) przy każdej zmianie pliku kodu, nawet te pliki, które są domyślnie ukryte. Jeśli wyewidencjonować plik kodu najwyższego poziomu, zmiany mogą zostać utracone.  
   
- Po wprowadzeniu zmian, sprawdź, czy wszystkie pliki ponownie. Aby uzyskać więcej informacji o plikach ukrytych kodu w projektach, zobacz [projekty pakietu Office w Visual Studio środowiska](../vsto/office-projects-in-the-visual-studio-environment.md).  
+ Po wprowadzeniu zmian, sprawdź, czy wszystkie pliki ponownie. Aby uzyskać więcej informacji o plikach ukrytych kodu w projektach, zobacz [projektów pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
 ## <a name="security-for-informal-collaboration-on-a-network"></a>Zabezpieczenia nieformalne współpracy w sieci  
- Dla wszystkich rozwiązań poziomie dokumentu, które znajdują się w lokalizacji sieciowej (takie jak \\ \\ *Servername*\\*Sharename*), pełny lokalizacji musi zostać dodany do Lista zaufanych folderu w aplikacji Microsoft Office, w którym pracujesz. Wybierz opcję, aby dołączyć podkatalogów w folderze głównym lub specjalnie dodać debugowania i tworzenie folderów, do listy zaufanych folderów. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
+ Dla wszystkich rozwiązań poziomie dokumentu, które znajdują się w lokalizacji sieciowej (takie jak \\ \\ *Servername*\\*Sharename*), pełny lokalizacji musi zostać dodany do Lista zaufanych folderu w aplikacji Microsoft Office, w którym pracujesz. Wybierz opcję, aby dołączyć podkatalogów w folderze głównym lub specjalnie dodać debugowania i tworzenie folderów, do listy zaufanych folderów. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [przyznać zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
   
  Certyfikaty tymczasowe, które są automatycznie generowane w czasie kompilacji nie są zabezpieczane przez hasła. Certyfikaty zawierają nazwę logowania dewelopera i innych danych osobowych. Jeśli wdrożono dostosowania, które są podpisane przez certyfikaty tymczasowe, inne można dostęp do tych informacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
- [Kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
+ [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
   
   

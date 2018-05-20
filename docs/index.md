@@ -4,11 +4,11 @@ hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e97752779c09c89107e784a0001737a8f5d77e2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -537,7 +537,7 @@ ms.lasthandoff: 04/16/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Tworzenie aplikacji skalowalnych sieci przy użyciu środowiska Node.js, asnchronous, sterowane zdarzeniami środowiska wykonawczego języka JavaScript.</p>
+                                                    <p>Tworzenie aplikacji skalowalnych sieci przy użyciu środowiska Node.js, środowiska wykonawczego języka JavaScript asynchroniczne, sterowane zdarzeniami.</p>
                                                 </div>
                                             </div>
                                         </div>

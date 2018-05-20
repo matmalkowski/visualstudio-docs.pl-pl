@@ -1,5 +1,5 @@
 ---
-title: Programowanie najlepszych rozwiązań dla modelu COM, VSTO i VBA dodatków pakietu Office | Dokumentacja firmy Microsoft
+title: Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
   Jeśli tworzysz COM VSTO lub VBA dodatków pakietu Office, należy przestrzegać zaleceń programowanie opisane w tym artykule.   Zapewni:
 
 -  Zgodność dodatki między różnymi wersjami i wdrożenia pakietu Office.

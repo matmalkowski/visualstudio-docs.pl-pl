@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Klastry profilu na HPC (przetwarzanie o wysokiej wydajności)
 
-Można profilu w węzłach obliczeniowych klastrów HPC systemu Windows firmy Microsoft, za pomocą metody pobierania próbek Visual Studio Profiling Tools. Aby uzyskać więcej informacji na temat HPC zobacz [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) w witrynie sieci Web firmy Microsoft.
+Można profilu w węzłach obliczeniowych klastrów HPC systemu Windows firmy Microsoft, za pomocą metody pobierania próbek Visual Studio Profiling Tools. Aby uzyskać więcej informacji na temat HPC zobacz [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) w witrynie sieci Web firmy Microsoft.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -57,7 +57,7 @@ Do profilowania w węźle obliczeń HPC, wykonaj następujące czynności:
 |*%FxPath%*|Ścieżka do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalatora. Na nośniku instalacyjnym programu Visual Studio jest ścieżka: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|Ścieżka do autonomiczna wersja Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka to: autonomiczny Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Profilowanie na węźle obliczeń HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Profil w węźle obliczeń HPC
 
 Sesja profilowania konfigurowania za pomocą Kreatora osiągów HPC pozwala określić informacje o klastrze i obiekt docelowy HPC. Dodatkowe opcje można ustawić na stronach właściwości sesji wydajności. Narzędzia profilowania automatycznie Wdróż docelowy niezbędne pliki binarne i uruchomienia profilera i aplikacji HPC.
 
@@ -105,7 +105,7 @@ Sesja profilowania konfigurowania za pomocą Kreatora osiągów HPC pozwala okre
 
 10. Kliknij przycisk **Zakończ**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Ustawianie właściwości profilowanie HPC za pomocą stron właściwości sesji wydajności
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Ustaw HPC profilowania właściwości za pomocą stron właściwości sesji wydajności
 
 Można zmienić właściwości sesji wydajności, które można ustawić w Kreatorze profilowanie HPC na stronie właściwości uruchamianie HPC na stronie właściwości sesji wydajności. Można ustawić dodatkowe opcje na stronie właściwości zaawansowane HPC.
 
@@ -134,7 +134,7 @@ Można zmienić właściwości sesji wydajności, które można ustawić w Kreat
 |**Zdalny katalog roboczy**|Określa ścieżkę do folderu, który jest używany przez wystąpień procesu na poszczególne węzły obliczeniowe.|
 |**Lokalizacja wdrożenia**|Określa ścieżkę do katalogu programu HPC server używa do etapu obrazów do wdrożenia.|
 
-### <a name="advanced-properties"></a>Właściwości zaawansowane
+### <a name="advanced-properties"></a>Zaawansowane właściwości
 
 |Właściwość|Opis|
 |--------------|-----------------|

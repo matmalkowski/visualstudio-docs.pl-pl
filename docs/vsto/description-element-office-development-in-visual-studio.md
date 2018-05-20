@@ -1,5 +1,5 @@
 ---
-title: '&lt;Opis elementu&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;Opis elementu&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13755a20b091696bf741c1f25360941e01b65945
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Opis elementu&gt; elementu (Office Development w Visual Studio)
+# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Opis elementu&gt; elementu (Office development w Visual Studio)
   `description` Elementu `vstov4` przestrzeni nazw przechowuje opis rozwiązania do pakietu Office, który jest wyświetlany w oknie dialogowym dodatków modelu COM aplikacji pakietu Microsoft Office.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <description>  
 </description>  
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- Opcjonalny. `description` Elementu jest `vstov4` przestrzeni nazw. Zawiera opis dodatku, który jest wyświetlany w oknie dialogowym dodatki modelu COM aplikacji pakietu Microsoft Office.  
+ Opcjonalna. `description` Elementu jest `vstov4` przestrzeni nazw. Zawiera opis dodatku, który jest wyświetlany w oknie dialogowym dodatki modelu COM aplikacji pakietu Microsoft Office.  
   
  `description` Element nie ma atrybutów ani elementów.  
   
@@ -45,14 +45,14 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstov4:description>  
   ContosoOutlookAddIn - Outlook add-in   
   created with Visual Studio Tools for Office  
 </vstov4:description>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34920cfd91c236df4fc88d671d3cac48ebf02252
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="callercallee-view"></a>Widok wywołujący/wywoływany
 Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki:  
@@ -38,9 +38,9 @@ Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla
   
  Dane można sortować, klikając nazw kolumn. Widok wywołujący/wywoływany można dodać dodatkowe kolumny. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Obiekt wywołujący / wywoływany widok - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)   
- [Widok wywołujący/wywoływany - dane Instrumentacji NET pamięci](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Widok wywołujący/wywoływany - dane Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Widok wywołujący/wywoływany - dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Obiekt wywołujący / wywoływany widok - dane Kontencji](../profiling/caller-callee-view-contention-data.md)
+ [Widok wywołujący/wywoływany - dane kontencji](../profiling/caller-callee-view-contention-data.md)

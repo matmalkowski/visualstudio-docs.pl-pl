@@ -1,5 +1,5 @@
 ---
-title: Przegląd właściwości niestandardowego dokumentu | Dokumentacja firmy Microsoft
+title: Przegląd właściwości niestandardowego dokumentu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Niestandardowe właściwości dokumentu ― Omówienie
+# <a name="custom-document-properties-overview"></a>Przegląd właściwości niestandardowego dokumentu
 
-Podczas kompilowania projektu poziomie dokumentu programu Visual Studio dodaje dwie właściwości niestandardowych do dokumentu w projekcie: \_AssemblyLocation i \_AssemblyName. Po otwarciu dokumentu aplikacji Microsoft Office sprawdza te niestandardowe właściwości dokumentu. Jeśli istnieją w dokumencie ładowania aplikacji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], który uruchamia dostosowań. Aby uzyskać więcej informacji, zobacz [architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Podczas kompilowania projektu poziomie dokumentu programu Visual Studio dodaje dwie właściwości niestandardowych do dokumentu w projekcie: \_AssemblyLocation i \_AssemblyName. Po otwarciu dokumentu aplikacji Microsoft Office sprawdza te niestandardowe właściwości dokumentu. Jeśli istnieją w dokumencie ładowania aplikacji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], który uruchamia dostosowań. Aby uzyskać więcej informacji, zobacz [rozwiązania Architektura pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ Ta właściwość zawiera identyfikator CLSID interfejsu w składniku modułu ł
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o manifeście rozmieszczenia do dostosowania. Aby uzyskać więcej informacji na temat manifestów zobacz [manifesty wdrożenia w rozwiązaniach pakietu Office i aplikacji](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o manifeście rozmieszczenia do dostosowania. Aby uzyskać więcej informacji na temat manifestów zobacz [aplikacji i wdrażania manifesty w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  Wartość właściwości The_AssemblyLocation mogą mieć różnych formatach, w zależności od sposobu wdrażania rozwiązania:
 
@@ -54,8 +54,8 @@ Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o manif
 
 ## <a name="see-also"></a>Zobacz także
 
-[Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[architektura dostosowań na poziome dokumentu](../vsto/architecture-of-document-level-customizations.md)
-[aplikacji i wdrażania manifesty w rozwiązaniach pakietu Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Manifesty aplikacji i wdrażania rozwiązań pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)

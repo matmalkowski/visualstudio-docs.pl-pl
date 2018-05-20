@@ -1,5 +1,5 @@
 ---
-title: Formanty zawartości | Dokumentacja firmy Microsoft
+title: Formanty zawartości
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -41,11 +41,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0874ab1c883b7a56b7a031dc861949b05d9add56
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają Ci dokumentów projektowych i szablony, które mają następujące funkcje:  
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [wiązanie danych do programu Word 2007 zawartość kontrolki Using Visual Studio Tools for Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [wiązanie danych do programu Word 2007 zawartości formantów za pomocą programu Visual Studio Tools dla pakietu Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Omówienie formantów zawartości  
  Formanty zawartości umożliwiają interfejsu użytkownika, który jest zoptymalizowany zarówno użytkownika wejściowych i drukowania. Po dodaniu formantu zawartości w dokumencie formantu jest identyfikowany przez obramowanie, tytuł i tymczasowego tekst, który można dołączyć instrukcje dla użytkownika. Obramowania i tytuł formantu nie ma w drukowanej wersji dokumentu.  
@@ -74,26 +74,26 @@ ms.lasthandoff: 04/16/2018
  W projektach na poziomie dokumentu możesz dodać formantów zawartości do dokumentu w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projekty można dodawanie formantów zawartości do otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
->  Formanty zawartości można użyć tylko w przypadku dokumentów, które są zapisane w formacie Open XML. Formanty zawartości nie można użyć w dokumentach, które są zapisane w formacie programu Word 97-2003 (doc).  
+>  Formanty zawartości można użyć tylko w przypadku dokumentów, które są zapisane w formacie Open XML. Formanty zawartości nie można użyć w dokumentach, które są zapisane w dokumencie programu Word 97-2003 (*doc*) format.  
   
 ## <a name="types-of-content-controls"></a>Typy formantów  
- Brak dziewięć różne typy formantów zawartości, które można dodać do dokumentów. Większość formantów zawartości ma odpowiedniego typu w <xref:Microsoft.Office.Tools.Word> przestrzeni nazw. Można również użyć ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl>, które można odpowiada żadnemu z dostępnych formantów zawartości. Aby uzyskać wskazówki, które pokazuje, jak używać każdego z dostępnych formantów zawartości, zobacz [wskazówki: Tworzenie szablonu przez przy użyciu zawartość formantów](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+ Brak dziewięć różne typy formantów zawartości, które można dodać do dokumentów. Większość formantów zawartości ma odpowiedniego typu w <xref:Microsoft.Office.Tools.Word> przestrzeni nazw. Można również użyć ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl>, które można odpowiada żadnemu z dostępnych formantów zawartości. Aby uzyskać wskazówki, które pokazuje, jak używać każdego z dostępnych formantów zawartości, zobacz [wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
-### <a name="building-block-gallery"></a>Galeria bloków konstrukcyjnych  
- Galeria modułów konstrukcyjnych umożliwia użytkownikom wybór z listy *bloki konstrukcyjne dokumentu* do wstawienia do dokumentu. Bloku konstrukcyjnego dokumentu jest zawartość, który został utworzony w celu można użyć wielokrotnie, takich jak typowych stron tytułowych, sformatowanej tabeli lub nagłówek. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Aby uzyskać więcej informacji na temat bloki konstrukcyjne, zobacz [What's New dla deweloperów w programie Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
+### <a name="build-block-gallery"></a>Galeria modułów kompilacji  
+ Galeria modułów konstrukcyjnych umożliwia użytkownikom wybór z listy *bloki konstrukcyjne dokumentu* do wstawienia do dokumentu. Bloku konstrukcyjnego dokumentu jest zawartość, który został utworzony w celu można użyć wielokrotnie, takich jak typowych stron tytułowych, sformatowanej tabeli lub nagłówek. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Aby uzyskać więcej informacji na temat bloki konstrukcyjne, zobacz [Nowości dla deweloperów w programie Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
   
 ### <a name="check-box"></a>Pole wyboru  
  Pole wyboru udostępnia interfejs użytkownika, który reprezentuje stan binarny: zaznaczone lub wyczyszczone.  
   
- W przeciwieństwie do innych typów zawartości kontrolki [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie zawiera określonego typu, który reprezentuje kontrolkę pola wyboru zawartości. Innymi słowy nie ma typu CheckBoxContentControl. Jednakże, nadal można utworzyć formantu zawartości pola wyboru przez dodanie ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu programowo. Aby uzyskać więcej informacji, zobacz [zawartości formanty pól wyboru w projekty programu Word](#checkbox).  
+ W przeciwieństwie do innych typów zawartości kontrolki [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie zawiera określonego typu, który reprezentuje kontrolkę pola wyboru zawartości. Innymi słowy, nie istnieje żadne `CheckBoxContentControl` typu. Jednakże, nadal można utworzyć formantu zawartości pola wyboru przez dodanie ogólnego <xref:Microsoft.Office.Tools.Word.ContentControl> do dokumentu programowo. Aby uzyskać więcej informacji, zobacz [zawartości formanty pól wyboru w projekty programu Word](#checkbox).  
   
-### <a name="combo-box"></a>pole kombi  
+### <a name="combo-box"></a>Pola kombi  
  Pole kombi Wyświetla listę elementów, które użytkownicy mogą wybrać. W przeciwieństwie do listy rozwijanej pola kombi umożliwia użytkownikom dodawać własne elementy. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> typu.  
   
 ### <a name="date-picker"></a>Wybór daty  
  Wybór daty zawiera kalendarz interfejsu użytkownika dla wybranej daty. Kalendarza jest wyświetlany, gdy użytkownik kliknie strzałkę listy rozwijanej w formancie. Można użyć regionalnych kalendarzy i formaty inną datę. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> typu.  
   
-### <a name="drop-down-list"></a>Lista rozwijana  
+### <a name="drop-down-list"></a>Listy rozwijanej  
  Listy rozwijanej Wyświetla listę elementów, które użytkownicy mogą wybrać. W przeciwieństwie do pola kombi listy rozwijanej nie zezwala użytkownikom na dodawanie lub edytowanie elementów. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> typu.  
   
 ### <a name="group"></a>Grupa  
@@ -143,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
  Aby uzyskać więcej informacji o sposobie używania formantów zawartości do ochrona części dokumentów, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a> Wiązanie danych z formantami zawartości  
+##  <a name="DataBinding"></a> Powiązanie danych z formantami zawartości  
  Można wyświetlić dane w dokumentach przez powiązanie formantu zawartości ze źródłem danych. Po zaktualizowaniu źródła danych formantu zawartości odzwierciedla zmiany. Można również zapisać zmiany w źródle danych.  
   
  Formanty zawartości udostępniają następujące opcje powiązania danych:  
@@ -152,12 +152,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Formanty zawartości można powiązać z elementów w części XML (o nazwie *niestandardowe elementy XML*) osadzone w dokumencie.  
   
- Omówienie danych powiązania kontrolki hosta w rozwiązaniach pakietu Office, zobacz [powiązania danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Omówienie danych powiązania kontrolki hosta w rozwiązaniach pakietu Office, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-### <a name="using-the-windows-forms-data-binding-model"></a>Wiązanie modelu danych przy użyciu systemu Windows formularzy  
+### <a name="use-the-windows-forms-data-binding-model"></a>Użyj modelu powiązanie danych formularzy systemu Windows  
  Formanty zawartości najbardziej obsługuje model wiązania proste danych, który używa formularzy systemu Windows. Proste powiązanie danych oznacza, że formant jest powiązany element danych, takich jak wartość w kolumnie tabeli danych. Aby uzyskać więcej informacji, zobacz [powiązania danych i formularze systemu Windows](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- W projektach na poziomie dokumentu, można powiązać danych z formantami zawartości przy użyciu **źródeł danych** okna w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat dodawania formantów zawartości powiązane z danymi do dokumentów, zobacz [porady: wypełnić dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md) i [porady: wypełnić dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ W projektach na poziomie dokumentu, można powiązać danych z formantami zawartości przy użyciu **źródeł danych** okna w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat dodawania formantów zawartości powiązane z danymi do dokumentów, zobacz [porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md) i [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
  W poniższej tabeli wymieniono formantów zawartości, które można powiązać z każdym typem danych **źródeł danych** okna.  
   
@@ -174,8 +174,8 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Formanty zawartości nie obsługują złożone powiązanie danych. W przypadku powiązania <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> lub <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ze źródłem danych przy użyciu modelu danych formularzy systemu Windows, użytkownicy będą widzieć tylko jedną wartość, po kliknięciu formantu. Jeśli chcesz powiązać tych kontrolek do zestawu wartości danych, które użytkownicy mogą wybierać z tych kontrolek można powiązać elementów z niestandardowym elementem XML.  
   
-### <a name="binding-content-controls-to-custom-xml-parts"></a>Wiązanie formantów zawartości do niestandardowych części XML  
- Niektóre formanty zawartości można powiązać z elementy niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji na temat niestandardowe elementy XML, zobacz [niestandardowych części XML ― omówienie](../vsto/custom-xml-parts-overview.md).  
+### <a name="bind-content-controls-to-custom-xml-parts"></a>Powiązanie formantów zawartości do niestandardowych części XML  
+ Niektóre formanty zawartości można powiązać z elementy niestandardowe elementy XML, które są osadzone w dokumencie. Aby uzyskać więcej informacji na temat niestandardowe elementy XML, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
   
  Aby powiązać formant zawartości elementu w niestandardowym elementem XML, użyj **XMLMapping** właściwości formantu. Poniższy przykład kodu pokazuje, jak można powiązać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> do `Price` elementu w obszarze `Product` węzła w niestandardowym elementem XML, który został już dodany do dokumentu.  
   
@@ -187,7 +187,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- Aby uzyskać wskazówki, który demonstruje sposób powiązanie formantów zawartości do niestandardowych części XML bardziej szczegółowo, zobacz [wskazówki: wiązanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Aby uzyskać wskazówki, który demonstruje sposób powiązanie formantów zawartości do niestandardowych części XML bardziej szczegółowo, zobacz [wskazówki: powiązywanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
  Po powiązaniu formantu zawartości z niestandardowym elementem XML, powiązanie dwukierunkowe danych jest automatycznie włączone. Jeśli użytkownik edytuje tekst w formancie, odpowiednich elementów XML są automatycznie aktualizowane. Podobnie zmiana wartości elementów w niestandardowe elementy XML formantów zawartości, które są powiązane elementy XML będą wyświetlane nowe dane.  
   
@@ -203,7 +203,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
 -   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>  
   
-### <a name="data-binding-events-for-content-controls"></a>Powiązanie danych zdarzeń dla formantów zawartości  
+### <a name="data-bind-events-for-content-controls"></a>Dane wiązania zdarzeń dla formantów zawartości  
  Wszystkie formanty zawartości udostępniają zestaw zdarzeń, które może obsłużyć do wykonywania zadań związanych z danymi, takich jak sprawdzanie, czy tekst w formancie spełnia określone kryteria, przed zaktualizowaniem źródła danych. W poniższej tabeli wymieniono zdarzenia formantu zawartości związanych z wiązania z danymi.  
   
 |Zadanie|Zdarzenie|  
@@ -216,7 +216,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ## <a name="limitations-of-content-controls"></a>Ograniczenia formantów zawartości  
  Korzystając z formantów zawartości w projektach pakietu Office, należy pamiętać o następujące ograniczenia.  
   
-### <a name="behavior-differences-between-design-time-and-run-time"></a>Zachowanie różnice czasu projektowania i w czasie wykonywania  
+### <a name="behavior-differences-between-design-time-and-runtime"></a>Zachowanie różnice w czasie projektowania i środowiska wykonawczego  
  Wiele ograniczeń, które program Microsoft Office Word nakłada się na formanty zawartości w czasie wykonywania nie są wymuszane w czasie projektowania. Podczas projektowania interfejsu użytkownika rozwiązania poziomie dokumentu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], należy zmodyfikować formantów zawartości tylko w sposób, w którym są obsługiwane w czasie wykonywania.  
   
  Jeśli zmodyfikujesz zawartości formantu w czasie projektowania w taki sposób, który nie obsługuje formantu w czasie wykonywania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektanta nie będzie alertów o nieobsługiwanych zmian. Jednak podczas debugowania i uruchomić projekt lub Zapisz i ponownie otwórz projekt, Word spowoduje wyświetlenie błędu komunikat żądania uprawnienia i naprawić tego dokumentu. Podczas naprawy dokument programu Word usuwa wszystkie nieobsługiwane zawartości i formatowania w formancie.  
@@ -228,7 +228,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>Ograniczenia dotyczące zdarzeń  
  Formanty zawartości są dostępne zdarzenie jest wywoływane, gdy użytkownik zmieni tekst lub innych elementów w formancie. Na przykład, nie ma żadnego zdarzenia, które jest wywoływane, gdy użytkownik wybierze inny element w <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> lub <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Aby ustalić, kiedy użytkownik edytuje zawartość formantu zawartości, można powiązać formant z niestandardowym elementem XML, a następnie obsługi <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartość formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać wskazówki, który demonstruje sposób powiązania formantu zawartości do niestandardowych części XML, zobacz [wskazówki: wiązanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Aby ustalić, kiedy użytkownik edytuje zawartość formantu zawartości, można powiązać formant z niestandardowym elementem XML, a następnie obsługi <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartość formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać wskazówki, który demonstruje sposób powiązania formantu zawartości do niestandardowych części XML, zobacz [wskazówki: powiązywanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ###  <a name="checkbox"></a> Formanty zawartości pól wyboru w projekty programu Word  
  Word 2010 wprowadzono nowy typ zawartości formantu, który reprezentuje pole wyboru. Jednak [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie ma odpowiedniego typu CheckBoxContentControl do użycia w projektach pakietu Office. Można utworzyć formantu zawartości pola wyboru w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub projekt Word 2010, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodę w celu utworzenia <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu i przekazać <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> wartość metodę, aby określić formantu zawartości pola wyboru. W poniższym przykładzie pokazano, jak to zrobić.  
@@ -236,10 +236,10 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Wskazówki: Tworzenie szablonu za pomocą formantów zawartości](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

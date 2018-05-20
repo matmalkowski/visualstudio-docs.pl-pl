@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d7af966f171b4719e919bb15b279aff6951a7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 Narzędzia Concurrency Visualizer przedstawiono cztery rodzaje kanałów: wątku kanały, kanały dysku znacznika kanałów i kanały procesora GPU.  
@@ -48,5 +48,5 @@ Narzędzia Concurrency Visualizer przedstawiono cztery rodzaje kanałów: wątku
 ## <a name="gpu-channels"></a>Kanały procesora GPU  
  Kanały GPU zawierają informacje dotyczące działania programu DirectX 11, w systemie.  Aparat programu DirectX, każdy skojarzoną z karty graficznej ma oddzielny kanał.  Poszczególnych segmentów odpowiadają za czas, który ma poświęcony na przetwarzanie pakietów DMA.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

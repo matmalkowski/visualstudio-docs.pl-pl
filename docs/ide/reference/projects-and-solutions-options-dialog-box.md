@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 Ustawia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zachowanie związane z projektów i rozwiązań. Aby uzyskać dostęp do tych opcji, zaznacz **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.
@@ -70,6 +70,12 @@ Po wybraniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Wyświe
 **Monituj przed przeniesieniem pliki do nowej lokalizacji**
 
 Po wybraniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyświetla komunikat potwierdzenia przed lokalizacji plików są zmieniane przez akcje w Eksploratorze rozwiązań.
+
+**Otwórz dokumenty na ładowania rozwiązania (Visual Studio 2017 15.8 wersji preview 2 lub nowszy)**
+ 
+Podczas ładowania rozwiązania automatycznie ponownie otworzyć dokumenty, które były otwarte w poprzedniej sesji. Po wybraniu, dokumentów, które były otwarte podczas poprzedniej to rozwiązanie zostało zamknięte są automatycznie otwierane po załadowaniu rozwiązania.
+
+Otworzyć niektórych typów plików lub projektanci można opóźnić ładowania rozwiązania. Usuń zaznaczenie tej opcji, aby zwiększyć wydajność obciążenia rozwiązanie, jeśli nie chcesz przywrócić poprzedni kontekst tego rozwiązania.
 
 ## <a name="locations-tab-options"></a>Lokalizacje karta Opcje
 

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c34293a140ca82918c1bd3d03ae9c83eab8665a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="average-cpu-utilization"></a>Średnie wykorzystanie CPU
+# <a name="average-cpu-utilization"></a>Średnie wykorzystanie procesora CPU
 Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzeni logicznych systemu w czasie trwania procesu. Wykres nie są wyświetlane, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdego dwa rdzenie są uruchamiane o pojemności 50% dla danego okresu, w tym widoku wyświetli jednego rdzenia logicznego jej użycia.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)   
  [Wykres wykorzystania procesora CPU](../profiling/cpu-utilization-graph.md)

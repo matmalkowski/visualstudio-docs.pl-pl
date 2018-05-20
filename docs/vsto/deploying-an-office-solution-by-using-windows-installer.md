@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows | Dokumentacja firmy Microsoft
+title: Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f9936111360d6734e1280e84f34416efbedb05c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
+# <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora systemu Windows dla rozwiązań pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
   
 Za pomocą programu Visual Studio, aby utworzyć Instalatora systemu Windows, można wdrożyć rozwiązania do pakietu Office, która wymaga dostępu administracyjnego na komputerze użytkownika końcowego. Na przykład można taki plik zainstalować rozwiązanie tylko raz dla wszystkich użytkowników komputera. Można także wdrożyć rozwiązania do pakietu Office przy użyciu technologii ClickOnce, ale ten rozwiązania należy zainstalować osobno dla każdego użytkownika komputera.  
@@ -57,9 +57,9 @@ Za pomocą programu Visual Studio, aby utworzyć Instalatora systemu Windows, mo
   
 - [Tworzenie projektu Instalatora](#Build)  
   
-Aby uzyskać więcej informacji na temat sposobu wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce, zobacz [wdrażania rozwiązania do pakietu Office za pomocą technologii ClickOnce za pomocą](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+Aby uzyskać więcej informacji na temat sposobu wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-Aby uzyskać informacje o sposobie tworzenia pliku Instalatora systemu Windows za pomocą [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], zobacz [wdrażania programu Visual Studio 2010 Tools dla rozwiązań pakietu Office przy użyciu Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=201807).  
+Aby uzyskać informacje o sposobie tworzenia pliku Instalatora systemu Windows za pomocą [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], zobacz [wdrażania programu Visual Studio 2010 Tools dla rozwiązań pakietu Office za pomocą Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=201807).  
   
   
 ## <a name="Download"></a>Pobierz przykłady  
@@ -76,21 +76,21 @@ W tym temacie odnosi się do następujących próbek do pobrania.
 Aby rozwiązanie było uruchomić na komputerach użytkowników, należy udzielić zaufania w jednym z następujących sposobów lub użytkownicy muszą odpowiadać na wiersz zaufania przy instalacji rozwiązania.  
   
   
-- Podpisać manifestów za pomocą certyfikatu, który identyfikuje znanego i zaufanego wydawcy. Aby uzyskać więcej informacji, zobacz [ufające rozwiązania przez podpisywanie aplikacji i manifestów wdrożenia](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Podpisać manifestów za pomocą certyfikatu, który identyfikuje znanego i zaufanego wydawcy. Aby uzyskać więcej informacji, zobacz [zaufania rozwiązania przez podpisywanie manifestów aplikacji i wdrażania](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Zainstaluj rozwiązania do katalogu plików programu na komputerze użytkownika.  
   
 > [!NOTE]  
-> Dostosowywanie na poziomie dokumentu Lokalizacja dokumentu również musi być zaufany. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
+> Dostosowywanie na poziomie dokumentu Lokalizacja dokumentu również musi być zaufany. Aby uzyskać więcej informacji, zobacz [przyznać zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
   
   
 ## <a name="Obtain"></a>Uzyskać InstallShield Limited Edition  
 Plik Instalatora Windows można utworzyć przy użyciu InstallShield Limited Edition (Wyspa), która jest bezpłatne, jeśli po zainstalowaniu programu Visual Studio. Wyspa zastępuje funkcjonalność szablony projektów instalacji i wdrażania, które oferowane poprzednich wersji programu Visual Studio.  
   
   
-#### <a name="to-get-installshield-limited-edition"></a>Aby uzyskać InstallShield Limited Edition  
+### <a name="to-get-installshield-limited-edition"></a>Aby uzyskać InstallShield Limited Edition  
   
-1. Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+1. Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
    **Nowy projekt** zostanie otwarte okno dialogowe.  
   
@@ -109,12 +109,11 @@ Plik Instalatora Windows można utworzyć przy użyciu InstallShield Limited Edi
   
 ## <a name="Create"></a>Tworzenie projektu Instalatora  
   
-####   
 1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz projekt pakietu Office, który chcesz wdrożyć.  
   
    Przykłady dodatku VSTO, które są skojarzone z tym temacie zawiera projektu o nazwie **ExcelAddIn**. Przykłady dostosowania na poziomie dokumentu zawiera projektu o nazwie **ExcelWorkbook**. W tym temacie będzie odnosić się do pakietu Office projektu w rozwiązaniu przy użyciu jednej z tych dwóch nazw.  
   
-2. Na pasku menu wybierz **pliku**, **Dodaj**, **nowy projekt**.  
+2. Na pasku menu wybierz **pliku** > **Dodaj** > **nowy projekt**.  
   
    **Dodawanie nowego projektu** zostanie otwarte okno dialogowe.  
   
@@ -131,13 +130,13 @@ Plik Instalatora Windows można utworzyć przy użyciu InstallShield Limited Edi
 Możesz skonfigurować **OfficeAddInSetup** projektu, aby dołączyć dane wyjściowe projektu pakietu Office. Dla projektów dodatku VSTO danych wyjściowych projektu jest tylko zestawu rozwiązania. Dla projektów dostosowania na poziomie dokumentu dane wyjściowe projektu zawiera nie tylko zestawu rozwiązania, ale także samego dokumentu.  
   
   
-#### <a name="to-add-the-project-output"></a>Można dodać danych wyjściowych projektu  
+### <a name="to-add-the-project-output"></a>Można dodać danych wyjściowych projektu  
   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **OfficeAddInSetup** węzła projektu, a następnie wybierz **Asystentem projektu** pliku, który na poniższej ilustracji przedstawiono.  
   
    ![Asystent pliku w Eksploratorze rozwiązań projektu](../vsto/media/installshield-projectassistant.png "projektu Asystenta plików w Eksploratorze rozwiązań")  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
 3. W dolnej części **Asystent projektu** wybierz pozycję **pliki aplikacji** przycisku, który na poniższej ilustracji przedstawiono.  
   
@@ -150,7 +149,7 @@ Możesz skonfigurować **OfficeAddInSetup** projektu, aby dołączyć dane wyjś
   
 ## <a name="AddD"></a>Dodaj manifesty wdrażania i aplikacji  
   
-####   
+###  
 1. W **pliki aplikacji** wybierz pozycję **Dodaj pliki** przycisku.  
   
 2. W **Otwórz** okno dialogowe, przejdź do katalogu wyjściowego **ExcelAddIn** projektu.  
@@ -175,12 +174,11 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Dodaj jako warunek wstępny programu .NET Framework 4 lub .NET Framework 4.5  
   
-#####   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **OfficeAddInSetup** węzła projektu, rozwiń **Określ dane aplikacji** węzeł, a następnie wybierz pozycję  **Pakiety redystrybucyjne** pliku, który na poniższej ilustracji przedstawiono.  
   
    ![Plik pakietów redystrybucyjnych w Eksploratorze rozwiązań](../vsto/media/installshield-redistributablesfile.png "plików pakietów redystrybucyjnych w Eksploratorze rozwiązań")  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
    **Pakietów redystrybucyjnych** zostanie otwarta strona.  
   
@@ -195,7 +193,7 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
 **Pakietów redystrybucyjnych** strona zawiera element o nazwie **Microsoft VSTO 2010 Runtime**, ale odwołuje się do starszej wersji środowiska uruchomieniowego. W związku z tym należy ręcznie utworzyć plik konfiguracji, który odwołuje się do najnowszej wersji. Następnie możesz umieścić plik w tym samym katalogu co pliki konfiguracji dla wszystkich innych elementów, które są widoczne w **pakietów redystrybucyjnych** strony.  
   
   
-##### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Aby dodać Visual Studio 2010 Tools for Office Runtime jako warunek wstępny  
+#### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Aby dodać jako warunek wstępny Visual Studio 2010 Tools dla pakietu Office runtime  
   
 1. Otwórz Notatnik, a następnie wklej następujący kod XML w pliku tekstowym.  
   
@@ -232,7 +230,7 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
    </properties>  
    ```  
   
-5. Na pasku menu w Notatniku wybierz **pliku**, **zapisać**.  
+5. Na pasku menu w Notatniku wybierz **pliku** > **zapisać**.  
   
 6. W **Zapisz jako** okno dialogowe, przejdź do Twojej **pulpitu** folderu.  
   
@@ -245,11 +243,11 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 9. Zamknij Notatnik.  
   
-10. Z sieci **pulpitu** folder, skopiuj Visual Studio 2010 Tools dla pakietu Office Runtime.prq pliku do jednego z następujących katalogów na tym komputerze.  
+10. Z sieci **pulpitu** folder, kopia *programu Visual Studio 2010 Tools dla pakietu Office Runtime.prq* pliku do jednego z następujących katalogów na tym komputerze.  
   
-   Dla 32-bitowe systemy operacyjne: %ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\  
+   Dla 32-bitowe systemy operacyjne: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*  
   
-   64-bitowe systemy operacyjne: % ProgramFiles (x86) %\2013LE\SetupPrerequisites\  
+   64-bitowe systemy operacyjne: *% ProgramFiles (x86) %\2013LE\SetupPrerequisites\\*  
   
 11. W **Redistributable** strony projektu InstallShield wybierz **Odśwież** przycisk, aby odświeżyć listę składników do dystrybucji, jak przedstawiono na poniższej ilustracji.  
   
@@ -264,10 +262,9 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 ## <a name="Location"></a>Określ, gdzie chcesz zainstalować rozwiązania na komputerze użytkownika  
   
-####   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **OfficeAddInSetup** węzła, rozwiń węzeł **organizowanie konfigurację** węzła, a następnie wybierz **informacjeogólne** pliku.  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
 3. Na liście właściwości, wybierz **Przeglądaj** znajdujący się obok **INSTALLDIR** właściwości.  
   
@@ -288,11 +285,11 @@ Instalacje użytkownika wymagają tylko jeden Instalator niezależnie od wersji 
 > Ta sekcja dotyczy tylko wtedy, gdy jest wdrażany w dodatku VSTO. Jeśli wdrażasz dostosowania poziomie dokumentu można od razu przejść do [skonfigurować dostosowania poziomie dokumentu](#ConfigureDocument) sekcji.  
   
   
-#### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>Aby określić, czy obsługuje instalacji dla poszczególnych użytkowników lub komputerów  
+### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>Aby określić, czy obsługuje instalacji dla poszczególnych użytkowników lub komputerów  
   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **OfficeAddInSetup** węzła projektu, rozwiń **organizowanie Your Instalatora** węzła, a następnie wybierz **informacje ogólne**  pliku.  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
    Właściwości projektu Instalatora są wyświetlane.  
   
@@ -300,14 +297,14 @@ Instalacje użytkownika wymagają tylko jeden Instalator niezależnie od wersji 
   
    Aby zainstalować dodatku VSTO dla bieżącego użytkownika, wybierz **ALLUSERS = "" (Instalacja na użytkownika)**. Aby zainstalować dodatku VSTO dla wszystkich użytkowników komputera, wybierz **ALLUSERS = 1 (Instalacja dla poszczególnych komputerów)**  
   
-   W następnej procedurze utworzysz klucze rejestru, aby umożliwić aplikacji pakietu Office odnaleźć i załadować dodatku VSTO. Zobacz [wpisy rejestru dotyczące dodatków VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+   W następnej procedurze utworzysz klucze rejestru, aby umożliwić aplikacji pakietu Office odnaleźć i załadować dodatku VSTO. Zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
   
-#### <a name="to-create-registry-keys"></a>Do tworzenia kluczy rejestru  
+### <a name="to-create-registry-keys"></a>Do tworzenia kluczy rejestru  
   
 1. W **Eksploratora rozwiązań**, wybierz **Asystentem projektu** węzła.  
   
-   Na pasku menu wybierz **widoku**, **Otwórz**.  
+   Na pasku menu wybierz **widoku** > **Otwórz**.  
   
 2. W dolnej części **Asystent projektu** wybierz pozycję **rejestru aplikacji** przycisku, który na poniższej ilustracji przedstawiono.  
   
@@ -396,7 +393,7 @@ Instalacje użytkownika wymagają tylko jeden Instalator niezależnie od wersji 
    Visual Studio 2010 Tools for Office Runtime używa tej ścieżki, aby zlokalizować manifest wdrażania. **[INSTALLDIR]** część ta ścieżka jest makra, który jest mapowany na **INSTALLDIR** właściwości w **ogólne informacje** strony właściwości projektu instalatora InstallShield. Ta właściwość określa lokalizację na komputerze docelowym, aby zainstalować dodatku VSTO. **| Vstolocal** sufiks gwarantuje, że rozwiązanie jest ładowany z folderu instalacji, a nie pamięci podręcznej ClickOnce.  
   
 > [!IMPORTANT]  
-> Jeśli tworzysz regionu formularza niestandardowego w dodatku VSTO dla programu Outlook, należy utworzyć więcej wpisów rejestru do zarejestrowania obszaru z programu Outlook. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące regionów formularzy programu Outlook](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).  
+> Jeśli tworzysz regionu formularza niestandardowego w dodatku VSTO dla programu Outlook, należy utworzyć więcej wpisów rejestru do zarejestrowania obszaru z programu Outlook. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dla programu Outlook tworzą regionów](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).  
   
   
 ## <a name="ConfigureDocument"></a>Skonfiguruj dostosowania poziomie dokumentu  
@@ -406,10 +403,9 @@ Dostosowywanie na poziomie dokumentu nie używaj kluczy rejestru. Zamiast tego n
   
 Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, który usuwa dostosowania dokumentu na poziomie dokumentu, modyfikuje odpowiednie właściwości i ponownie dołącza dostosowania do dokumentu. Następnie można utworzyć akcji niestandardowej, która uruchamia program, a ta akcja jest dodawanie do projektu Instalatora.  
   
+### <a name="to-create-a-program-that-modifies-document-properties"></a>Aby utworzyć program, który modyfikuje właściwości dokumentu  
   
-#### <a name="to-create-a-program-that-modifies-document-properties"></a>Aby utworzyć program, który modyfikuje właściwości dokumentu  
-  
-1. Na pasku menu wybierz **pliku**, **Dodaj**, **nowy projekt**.  
+1. Na pasku menu wybierz **pliku** > **Dodaj** > **nowy projekt**.  
   
    **Dodawanie nowego projektu** zostanie wyświetlone okno dialogowe.  
   
@@ -430,7 +426,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 7. W **Eksploratora rozwiązań**, wybierz **Program.cs** pliku (w przypadku aplikacji C#) lub **Module1.vb** pliku (dla aplikacji Visual Basic).  
   
-8. Na pasku menu wybierz **widoku**, **Otwórz**.  
+8. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
 9. Zastąp zawartość całego pliku następującym kodem.  
   
@@ -440,13 +436,13 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 10. Skompiluj projekt.  
   
   
-#### <a name="to-add-a-custom-action-that-runs-your-program"></a>Aby dodać akcji niestandardowej, która uruchamia program  
+### <a name="to-add-a-custom-action-that-runs-your-program"></a>Aby dodać akcji niestandardowej, która uruchamia program  
   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **OfficeAddInSetup** węzła projektu, a następnie wybierz **Asystentem projektu** pliku, który na poniższej ilustracji przedstawiono.  
   
    ![Asystent pliku w Eksploratorze rozwiązań projektu](../vsto/media/installshield-projectassistant.png "projektu Asystenta plików w Eksploratorze rozwiązań")  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
 3. W dolnej części **Asystent projektu** wybierz pozycję **pliki aplikacji** przycisku, który na poniższej ilustracji przedstawiono.  
   
@@ -460,7 +456,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 6. W **Eksploratora rozwiązań**w obszarze **OfficeAddInSetup** węzła, rozwiń węzeł **zdefiniować wymagania dotyczące konfiguracji i akcji** węzła, a następnie wybierz pozycję **niestandardowe Akcje** folderu.  
   
-7. Na pasku menu wybierz **widoku**, **Otwórz**.  
+7. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
    Lista zdarzeń są wyświetlane w okienku na stronie ekranu.  
   
@@ -488,7 +484,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
    Otwiera folder zawierający rozwiązania.  
   
-13. Otwórz plik projektu rozwiązania w Notatniku. Projekty Visual Basic nazwa pliku jest ExcelWorkbook.vbproj. Dla projektów C# nazwa pliku jest ExcelWorkbook.csproj.  
+13. Otwórz plik projektu rozwiązania w Notatniku. Projekty Visual Basic, nazwa pliku jest *ExcelWorkbook.vbproj*. Dla projektów C#, nazwa pliku jest *ExcelWorkbook.csproj*.  
   
 14. W pliku projektu, wyszukaj **&lt;SolutionID&gt;** elementu, skopiuj wartość do Schowka, a następnie zamknij Notatnik.  
   
@@ -497,22 +493,21 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 15. Na stronie właściwości **NewCustomAction1**ustaw **wiersza polecenia** właściwości następujący wiersz tekstu.  
   
   
-   ```  
+   ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"  
    ```  
   
 16. Zastąp **swój identyfikator rozwiązania** o identyfikatorze rozwiązania, który został skopiowany do Schowka.  
   
    > [!IMPORTANT]  
-   >    Test z Instalatora, aby sprawdzić, czy aplikacja konsolowa, która jest uruchamiana ta akcja może uzyskiwać dostęp do dokumentów w katalogu [INSTALLDIR]. Niektóre katalogów znajdujących się na komputerze użytkownika mogą wymagać dostępu administracyjnego (na przykład katalog Program Files). Czy w przypadku wdrażania rozwiązania w katalogu, który wymaga dostępu administracyjnego, należy otworzyć **właściwości** okno dialogowe plik setup.exe, wybierz **zgodności** , a następnie wybierz **uruchomić ten program jako administrator** pole wyboru przed rozpoczęciem dystrybucji Instalatora. Jeśli nie chcesz, aby użytkownikom na uruchamianie programu instalacyjnego z uprawnieniami administracyjnymi, ustaw właściwość [INSTALLDIR] do katalogu, do której użytkownik prawdopodobnie ma dostęp, takich jak **dokumenty** katalogu. Aby uzyskać więcej informacji, zobacz [Określ, gdzie chcesz zainstalować rozwiązanie na komputerze użytkownika](#Location) tego tematu.  
+   >    Test z Instalatora, aby sprawdzić, czy aplikacja konsolowa, która jest uruchamiana ta akcja może uzyskiwać dostęp do dokumentów w katalogu [INSTALLDIR]. Niektóre katalogów znajdujących się na komputerze użytkownika mogą wymagać dostępu administracyjnego (na przykład katalog Program Files). Czy w przypadku wdrażania rozwiązania w katalogu, który wymaga dostępu administracyjnego, należy otworzyć **właściwości** okna dialogowego *setup.exe* plików, wybierz **zgodności** , a następnie wybierz **uruchomić ten program jako administrator** pole wyboru przed rozpoczęciem dystrybucji Instalatora. Jeśli nie chcesz, aby użytkownikom na uruchamianie programu instalacyjnego z uprawnieniami administracyjnymi, ustaw właściwość [INSTALLDIR] do katalogu, do której użytkownik prawdopodobnie ma dostęp, takich jak **dokumenty** katalogu. Aby uzyskać więcej informacji, zobacz [Określ, gdzie chcesz zainstalować rozwiązanie na komputerze użytkownika](#Location) tego tematu.  
   
   
 ## <a name="Build"></a>Tworzenie projektu Instalatora  
   
-####   
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **przygotowania do wydania** węzeł, a następnie wybierz pozycję **wersje** pliku.  
   
-2. Na pasku menu wybierz **widoku**, **Otwórz**.  
+2. Na pasku menu wybierz **widoku** > **Otwórz**.  
   
    **Kompilacje** zostanie otwarty Eksplorator w okienku po stronie, w którym można wybrać typ zlecenia, który chcesz utworzyć.  
   
@@ -522,23 +517,23 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 5. W **Setup.exe** stronę właściwości z **InstallShield wymagania wstępne dotyczące lokalizacji** wybierz **pobieranie z sieci Web**.  
   
-6. Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+6. Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.  
   
 7. W **aktywnej konfiguracji rozwiązania** wybierz **SingleImage**.  
   
 8. W **projektu kontekstów** tabeli w **konfiguracji** kolumny **OfficeAddInSetup** projektu, wybierz **SingleImage**, a następnie Wybierz **Zamknij** przycisku.  
   
-9. Na pasku menu wybierz **kompilacji**, **kompilacji OfficeAddInSetup**.  
+9. Na pasku menu wybierz **kompilacji** > **kompilacji OfficeAddInSetup**.  
   
-   Po zakończeniu kompilacji, można znaleźć pliku setup.exe z **OfficeAddInSetup** projektu w następującej lokalizacji: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ DYSK 1\**  
+   Po zakończeniu kompilacji, można znaleźć *setup.exe* pliku **OfficeAddInSetup** projektu w następującej lokalizacji: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
   
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
 [Wymagania wstępne rozwiązania pakietu Office dla wdrożenia](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
 [Wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
-[Niestandardowe właściwości dokumentu — omówienie](../vsto/custom-document-properties-overview.md)  
-[Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)  
-[Udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md)  
+[Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md)  
+[Udziel zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)  
+[Udziel zaufania do dokumentów](../vsto/granting-trust-to-documents.md)  
 [Wdrażanie programu Visual Studio 2010 Tools dla rozwiązań pakietu Office za pomocą Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=201807)  
   

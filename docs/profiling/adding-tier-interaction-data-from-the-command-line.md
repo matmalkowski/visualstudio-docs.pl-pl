@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
-ms.translationtype: HT
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwy z wiersza polecenia
 
 Profilowanie interakcji między warstwami zawiera dodatkowe informacje dotyczące godziny wykonywania synchroniczne [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] wywołania funkcji aplikacji wielowarstwowych, które komunikują się z jednego lub więcej baz danych.
 
@@ -38,17 +38,17 @@ Do zbierania danych o interakcji między warstwy komputera zdalnego, należy sko
 
 Warstwa danych o interakcji między mogą być przeglądane tylko w programie Visual Studio Enterprise. Interakcja warstwowa plikowym raportów za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) nie są dostępne.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Dodawanie warstwy interakcji danych za pomocą narzędzia VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Dodawanie warstwy danych interakcji z narzędzia VSPerfCmd
 
 Narzędzia wiersza polecenia VSPerfASPNETCmd pozwala uzyskać dostęp do pełnej funkcjonalności dostępne w narzędziach profilowania. Aby dodać dane profilowania zebrane przy użyciu narzędzia VSPerfCmd interakcja warstwowa, należy użyć **VSPerfCLREnv** narzędzie ustawiania i usuwania zmiennych środowiskowych, które umożliwia danych o interakcji między warstwy. Opcje, które określisz i procedur wymaganych do zbierania danych są zależne od typu aplikacji, które są profilowania.
 
-## <a name="profiling-stand-alone-applications"></a>Profilowanie aplikacji autonomicznych
+## <a name="profile-stand-alone-applications"></a>Profil aplikacji autonomicznych
 
 Aby dodać warstwę danych o interakcji między do aplikacji, która nie jest uruchamiane przez inny proces, takie jak Windows aplikacja komputerowa, która sprawia, że synchroniczne [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] połączenia z bazą danych SQL, użyj **VSPerfClrEnv /InteractionOn** opcję, aby ustawić zmienne środowiskowe i **VSPerfClrEnv /InteractionOff** opcję, aby je usunąć.
 
 W poniższym przykładzie aplikacji pulpitu systemu Windows jest profilowane przy użyciu metody Instrumentacji i zbieranych danych o interakcji między warstwy.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Profilowanie jest przykład aplikacji komputerowych systemu Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Profil przykład aplikacji komputerowych systemu Windows
 
 1. Otwórz okno wiersza polecenia z uprawnieniami administratora. Kliknij przycisk **Start**, wskaż polecenie **wszystkie programy**, a następnie wskaż **Akcesoria**. Kliknij prawym przyciskiem myszy **wiersza polecenia**, a następnie kliknij przycisk **Uruchom jako Administrator**.
 
@@ -81,7 +81,7 @@ W poniższym przykładzie aplikacji pulpitu systemu Windows jest profilowane prz
 
 Aby uzyskać więcej informacji, zobacz [profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Usługi profilowania
+## <a name="profile-services"></a>Usługi profilowania
 
 Z profilu usług, w tym [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, użyj **VSPerfClrEnv /GlobalInteractionOn** opcję, aby ustawić zmienne środowiskowe i **VSPerfClrEnv /GlobalInteractionOff** opcję, aby je usunąć.
 
@@ -89,7 +89,7 @@ Gdy są profilowania usług, w tym [!INCLUDE[vstecasp](../code-quality/includes/
 
 W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu metody Instrumentacji i zbieranych danych o interakcji między warstwy.
 
-### <a name="profiling-a-windows-service-example"></a>Profilowanie jest przykład usługi systemu Windows
+### <a name="profile-a-windows-service-example"></a>Profil przykład usługi systemu Windows
 
 1. Jeśli to konieczne, zainstaluj usługę.
 
@@ -101,7 +101,7 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicjowanie zmiennych środowiskowych PORADĘ. Wpisz następujące polecenie
+4. Inicjowanie zmiennych środowiskowych PORADĘ. Wpisz następujące polecenie:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:
 
 [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Dodawanie danych o interakcji między warstwy za pomocą VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Dodawanie danych o interakcji między warstwy za pomocą VSPerfASPNETCmd
 
 Narzędzie wiersza polecenia VSPerfASPNETCmd umożliwia łatwe profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. W porównaniu z **VSPerfCmd** narzędzie wiersza polecenia, opcje zostały zredukowane nie zmiennych środowiskowych, które muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Te funkcje VSPerfASPNETCmd Ułatw zbierania danych o interakcji między warstwy wyjątkowo.
 

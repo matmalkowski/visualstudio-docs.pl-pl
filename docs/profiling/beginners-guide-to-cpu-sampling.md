@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowanie Procesora
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **próbkowania** danych.
@@ -35,7 +35,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
  Jeśli **próbkowania** nie zapewnia dane, które chcesz dodać, inne profilowania metody kolekcji narzędzia udostępniają różne rodzaje informacji, które mogą być przydatne do Ciebie. Aby uzyskać więcej informacji o tych innych metod, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: Symbol Windows informacje](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Tworzenie i uruchamianie sesji wydajności  
  Aby pobrać dane, które należy przeanalizować, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesję. **Kreatora osiągów** pozwala wykonać obie czynności.  
@@ -123,9 +123,9 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
      Otwiera nowe okno raportu, wyświetlania wyników porównania. Aby uzyskać więcej informacji o sposobie używania Widok porównania, zobacz [porady: porównywanie plików danych wydajności](../profiling/how-to-compare-performance-data-files.md).
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   
  [Omówienia](../profiling/overviews-performance-tools.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+ [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Dostosowywanie&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;Dostosowywanie&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Dostosowywanie&gt; elementu (Office Development w Visual Studio)
+# <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Dostosowywanie&gt; elementu (Office development w Visual Studio)
   `customization` Elementu `vstov4` przestrzeni nazw w tym artykule opisano konkretnego rozwiązania pakietu Office. Elementy podrzędne są różne dla Dostosowywanie na poziomie dokumentu i dodatków VSTO.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Składnia Dostosowywanie na poziomie dokumentu  
   
-```  
+```xml
 <customization  
   id  
   <document  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Składnia dla dodatków VSTO  
   
-```  
+```xml
 <customization  
   id  
   <appAddin  
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
 |---------------|-----------------|  
 |`id`|Wymagany w przypadku wdrażania wielu projektów. `id` Element unikatowo identyfikuje rozwiązania do pakietu Office.|  
   
-### <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentów  
+### <a name="document-level-customizations"></a>Dostosowywanie na poziomie dokumentu  
  `customization` Element ma następujący element podrzędny.  
   
 #### <a name="document"></a>dokument  
@@ -80,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstov4:customization>  
   <vstov4:document   
     solutionId="73e" />  
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstov4:customization>  
   <vstov4:appAddIn   
     application="Outlook"   
@@ -119,7 +119,7 @@ ms.lasthandoff: 04/16/2018
 </vstov4:customization>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

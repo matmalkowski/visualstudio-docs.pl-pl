@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia EditorConfig Konwencji kodowania platformy .NET
 
@@ -84,7 +84,7 @@ Na poniższej liście przedstawiono dopuszczalny języka reguł Konwencji:
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Ustawienia stylu kodu C#
-    - [Typy jawne i niejawne](#var)
+    - [Typy jawne i niejawne](#implicit-and-explicit-types)
         - CSharp\_styl\_var\_dla\_wbudowane\_in_types
         - CSharp\_styl\_var\_podczas\_typu\_is_apparent
         - CSharp\_styl\_var_elsewhere
@@ -592,7 +592,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Reguły stylu w tej sekcji dotyczą C# tylko.
 
-#### <a name="var"></a>Typy jawne i niejawne
+#### <a name="implicit-and-explicit-types"></a>Typy jawne i niejawne
 
 Reguły stylu w tej sekcji (reguły IDE0007 identyfikatorów i IDE0008) dotyczą stosowania [var](/dotnet/csharp/language-reference/keywords/var) — słowo kluczowe w porównaniu z typem jawnym w deklaracji zmiennej. Typy wbudowane, gdy typem jest widoczna i innych miejscach, można osobno zastosowana ta reguła.
 

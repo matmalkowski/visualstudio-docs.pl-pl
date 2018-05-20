@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="filtering-report-views"></a>Filtrowanie widoków raportów
+# <a name="filter-report-views"></a>Filtrowanie widoków raportu
 Filtry można stosować do profilowania pliki danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport o wydajności i wyeksportowane pliki raportu. Można ograniczyć raportu do danych między wartości sygnatur czasowych, i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać do pliku filtrów i utworzenie filtru na inny plik danych profilowania przez zaimportowanie zapisany filtr.  
   
  Można również ograniczyć raport do segmentu czasu za pomocą graficznego osi czasu w widoku Podsumowanie. Zobacz [porady: filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -42,7 +42,6 @@ Filtry można stosować do profilowania pliki danych, aby ograniczyć dane profi
     |**Operator**|Wybierz operator, który określa relacji, który ma w klauzuli między pola i wartości.<br /><br /> = Równa się<br /><br /> <> Nie równa się<br /><br /> < Mniej niż<br /><br /> > Większa niż<br /><br /> < = mniejsza niż lub równe<br /><br /> > = większe lub równe|  
     |**Wartość**|Wybierz lub wprowadź wartość do wyszukania. Niektóre pola listy dostępnych wartości dla pola.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Aby utworzyć filtr raportów profilera z widoku raportu znaków  
   
@@ -92,5 +91,5 @@ Filtry można stosować do profilowania pliki danych, aby ograniczyć dane profi
   
 2.  Określ lokalizację i nazwę pliku filtru (.vspf), aby zapisać.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dostosowywanie wydajności widoków raportów narzędzi](../profiling/customizing-performance-tools-report-views.md)

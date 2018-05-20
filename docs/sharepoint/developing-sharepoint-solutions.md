@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typ projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint i elementy lokacji. Aby uzyskać listę typów projektów dostępne w temacie [projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej przedstawiono opis elementów i właściwości elementu projektu SharePoint.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  Gdy funkcja zostanie dodany do projektu SharePoint, pojawi się w **Eksploratora rozwiązań** węzła przy użyciu domyślnego nazwij funkcji*x*.feature, gdzie *x* to unikatowa liczba. Po wdrożeniu funkcji programu SharePoint Server administratorem programu SharePoint można aktywować, udostępniając użytkowników witryny programu SharePoint.  
   
 #### <a name="package-node"></a>Węzeł pakietów  
- **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *rozwiązania ** pakietu*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
+ **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *pakietu rozwiązania*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
   
  Można wyświetlić lub zmienić zawartość pakietu w Projektancie pakiet, klikając węzeł pakietu lub otwieranie menu skrótów, a następnie wybierając **Otwórz**. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: Manifesty wdrożenia dla rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+title: Manifesty wdrożenia dla rozwiązań pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1276650d38f16f8ccc36720f7e273472e609367
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Manifesty wdrożenia dla rozwiązań Office
+# <a name="deployment-manifests-for-office-solutions"></a>Manifesty wdrożenia dla rozwiązań pakietu Office
   Manifest rozmieszczenia jest plik XML, który opisuje ustawienia wdrażania rozwiązania pakietu Office i identyfikuje bieżąca wersja aplikacji.  
   
- Programowanie Office w Visual Studio wykorzystuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu wdrożenia zdefiniowane w [Manifest wdrażania ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) odwołania.  
+ Programowanie Office w Visual Studio wykorzystuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu wdrożenia zdefiniowane w [manifest wdrażania ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) odwołania.  
   
 ## <a name="remarks"></a>Uwagi  
- Plik manifestu wdrożenia dla rozwiązań pakietu Office identyfikuje bieżącej wersji i inne ustawienia wdrażania. Odwołuje się manifest aplikacji, opisujący bieżąca wersja rozwiązania i wszystkich plików, które są zawarte w rozwiązaniu.  
+ Plik manifestu wdrożenia dla rozwiązań pakietu Office identyfikuje bieżącej wersji i inne ustawienia wdrażania. Manifest aplikacji odwołuje się i zawiera opis wersji bieżące rozwiązanie i wszystkie pliki w rozwiązaniu.  
   
 ## <a name="file-name-syntax"></a>Składnia nazwy pliku  
- Nazwa pliku manifestu wdrożenia musi mieć rozszerzenie .vsto. Chociaż jest to standardowy [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest rozmieszczenia rozszerzenia różni się umożliwienie Visual Studio Tools dla pakietu Office runtime do tego pliku.  
+ Nazwa pliku manifestu wdrożenia musi kończyć się *.vsto* rozszerzenia. Chociaż jest to standardowy [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest rozmieszczenia rozszerzenia różni się umożliwienie Visual Studio Tools dla pakietu Office runtime do tego pliku.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykładowy kod przedstawia manifest wdrażania dla Visual Studio Tools dla pakietu Office rozwiązania.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  
@@ -185,7 +185,7 @@ ms.lasthandoff: 04/16/2018
 </asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Manifesty aplikacji dla rozwiązań Office](../vsto/application-manifests-for-office-solutions.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)  
   
   

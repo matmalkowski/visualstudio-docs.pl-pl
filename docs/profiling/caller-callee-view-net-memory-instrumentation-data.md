@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf4edeb67d9c1c66ce6e6542b9684b29a8c358b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6005bfcd4c69220c26929a8ad57f0e37923f388c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok wywołujący/wywoływany - dane Instrumentacji NET pamięci
+# <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok wywołujący/wywoływany - Instrumentacja pamięci .NET danych
 Widok wywołujący/wywoływany danych, który został zebrany przy użyciu metody Instrumentacji profilowania pamięci .NET Wyświetla alokacji i danych o chronometrażu dla wybranej funkcji i funkcji nadrzędne i podrzędne tych wybranych funkcji. Widok wywołujący/wywoływany zawiera trzy siatki.  
   
  **Bieżąca funkcja** są wyświetlane w środkowym siatki i zawiera informacje na temat wybranej funkcji profilowania pamięci. Wartości obejmują wszystkie próbki wywołania funkcji.  
@@ -104,8 +104,8 @@ Widok wywołujący/wywoływany danych, który został zebrany przy użyciu metod
 |**Maksymalny własny czas aplikacji**|Maksymalny własny czas aplikacji wywołania tej funkcji w tym kontekście.|  
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji w tym kontekście.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wywołujący/wywoływany - dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)   
- [Obiekt wywołujący / wywoływany widok - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
+ [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
