@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Utwórz Edytor przenośny, niestandardowe ustawienia z EditorConfig
 
-W programie Visual Studio 2017 r, można dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub codebase do wymuszania spójne kodowania style dla wszystkich użytkowników, które działają w bazowej kodu. Ustawienia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, które można dostosować każdy ścieżki bazowej kodu do używania ustawienia edytora tekstu, które są specyficzne dla tego projektu. Nadal można ustawić preferencje osobiste Edytor w programie Visual Studio **opcje** okno dialogowe. Ustawienia te dotyczą pracy codebase bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastąpi danego ustawienia. Przykładem takich preferencji jest wcięcie styl&mdash;tabulatory lub spacje.
+W programie Visual Studio 2017 r, można dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub codebase do wymuszania spójne kodowania style dla wszystkich użytkowników, które działają w bazowej kodu. Ustawienia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić preferencje osobiste Edytor w programie Visual Studio **opcje** okno dialogowe. Ustawienia te dotyczą pracy codebase bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastąpi danego ustawienia. Przykładem takich preferencji jest wcięcie styl&mdash;tabulatory lub spacje.
 
 Ustawienia EditorConfig są obsługiwane przez wiele edytorów kodu i IDEs, łącznie z programu Visual Studio. Jest składnikiem przenośne podróżuje swoim własnym kodem, którą można wymusić kodowania style nawet poza Visual Studio.
 
@@ -162,4 +162,4 @@ Zakres z Konwencji EditorConfig można kontrolować przez ustawienie ```root=tru
 - [Konwencje nazewnictwa platformy .NET](../ide/editorconfig-naming-conventions.md)
 - [Obsługa EditorConfig usługi języka](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
-- [Pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](writing-code-in-the-code-and-text-editor.md)

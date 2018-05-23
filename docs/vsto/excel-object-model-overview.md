@@ -1,5 +1,5 @@
 ---
-title: Przegląd modelu obiektów w programie Excel | Dokumentacja firmy Microsoft
+title: Model obiektu Excel ― omówienie
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="excel-object-model-overview"></a>Model obiektu Excel ― Omówienie
+# <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Umożliwiające tworzenie rozwiązań, które używają programu Microsoft Office Excel, możesz użyć obiektów dostarczanych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiektów:  
   
 -   <xref:Microsoft.Office.Interop.Excel.Application>  
@@ -43,14 +43,14 @@ ms.lasthandoff: 04/16/2018
   
  Model obiektu jest ściśle zgodna interfejsu użytkownika. <xref:Microsoft.Office.Interop.Excel.Application> Obiekt reprezentuje całej aplikacji, a każdy <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu zawiera kolekcję `Worksheet` obiektów. Dostępne jest głównych abstrakcji, który reprezentuje komórek <xref:Microsoft.Office.Interop.Excel.Range> obiektu, który umożliwia pracę z pojedynczych komórek lub grupy komórek.  
   
- Oprócz modelu obiektów programu Excel, podaj projektów pakietu Office w Visual Studio *hosta elementów* i *hostowania formantów* który rozszerzać niektórych obiektów w modelu obiektów programu Excel. Obiekty hosta i formantów hosta przypominają obiektami programu Excel, które rozszerzają, ale ma także dodatkowe funkcje, takie jak możliwości wiązania danych oraz dodatkowe zdarzenia. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md) i [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+ Oprócz modelu obiektów programu Excel, podaj projektów pakietu Office w Visual Studio *hosta elementów* i *hostowania formantów* który rozszerzać niektórych obiektów w modelu obiektów programu Excel. Obiekty hosta i formantów hosta przypominają obiektami programu Excel, które rozszerzają, ale ma także dodatkowe funkcje, takie jak możliwości wiązania danych oraz dodatkowe zdarzenia. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md) i [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
- Ten temat zawiera krótki przegląd modelu obiektów programu Excel. Dla zasobów można znaleźć więcej informacji na temat całego modelu obiektów programu Excel, zobacz [przy użyciu dokumentacji modelu obiektów programu Excel](#ExcelOMDocumentation).  
+ Ten temat zawiera krótki przegląd modelu obiektów programu Excel. Dla zasobów można znaleźć więcej informacji na temat całego modelu obiektów programu Excel, zobacz [skorzystaj z dokumentacji modelu obiektów programu Excel](#ExcelOMDocumentation).  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: Użyj obsługi zdarzeń w programie Excel 2007 dodatek?](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak czy I: Użyj kształty, aby utworzyć wykres bąbelkowy w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak Użyj I: obsługi zdarzeń w programie Excel 2007 dodatku?](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak kształty I: Użyj, aby utworzyć wykres bąbelkowy w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
-## <a name="accessing-objects-in-an-excel-project"></a>Uzyskiwanie dostępu do obiektów w projekcie programu Excel  
- Podczas tworzenia nowego projektu dodatku VSTO dla programu Excel, programu Visual Studio automatycznie tworzy ThisAddIn.vb lub ThisAddIn.cs pliku kodu. Dostęp do obiektu aplikacji przy użyciu `Me.Application` lub `this.Application`.  
+## <a name="access-objects-in-an-excel-project"></a>Uzyskiwanie dostępu do obiektów w projekcie programu Excel  
+ Podczas tworzenia nowego projektu dodatku VSTO dla programu Excel, programu Visual Studio automatycznie tworzy *ThisAddIn.vb* lub *ThisAddIn.cs* pliku kodu. Dostęp do obiektu aplikacji przy użyciu `Me.Application` lub `this.Application`.  
   
  Podczas tworzenia nowego projektu poziomie dokumentu dla programu Excel, istnieje możliwość tworzenia nowego projektu skoroszyt programu Excel lub szablon programu Excel. Visual Studio automatycznie tworzy następujące pliki kodu w nowego projektu programu Excel dla projektów zarówno skoroszyt i szablonu.  
   
@@ -89,23 +89,23 @@ ms.lasthandoff: 04/16/2018
   
  Narzędzia Office development w Visual Studio rozszerza <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu podając <xref:Microsoft.Office.Tools.Excel.Workbook> typu. Tego typu umożliwia dostęp do wszystkich funkcji <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
-### <a name="worksheet-object"></a>Obiekt arkusza  
+### <a name="worksheet-object"></a>obiekt arkusza  
  <xref:Microsoft.Office.Interop.Excel.Worksheet> Obiektu jest elementem członkowskim <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekcji. Wiele właściwości, metod i zdarzeń <xref:Microsoft.Office.Interop.Excel.Worksheet> identyczne lub podobne do elementów członkowskich udostępniane przez <xref:Microsoft.Office.Interop.Excel.Application> lub <xref:Microsoft.Office.Interop.Excel.Workbook> obiektów.  
   
  Program Excel oferuje <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji jako właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu. Każdy element członkowski <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji jest <xref:Microsoft.Office.Interop.Excel.Worksheet> lub <xref:Microsoft.Office.Interop.Excel.Chart> obiektu.  
   
  Rozszerzanie narzędzi programowania pakietu Office w Visual Studio <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu podając <xref:Microsoft.Office.Tools.Excel.Worksheet> typu. Tego typu umożliwia dostęp do wszystkich funkcji <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu, a także nowe funkcje, takie jak możliwość hosta zarządzanego kontrolki i obsługę nowych zdarzeń. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
   
-### <a name="range-object"></a>Obiekt zakresu  
+### <a name="range-object"></a>obiekt zakresu  
  <xref:Microsoft.Office.Interop.Excel.Range> Obiekt jest obiektem użyje większość w aplikacjach programu Excel. Zanim można manipulować dowolny region w programie Excel, należy go jako express <xref:Microsoft.Office.Interop.Excel.Range> obiektu i pracować z metody i właściwości tego zakresu. A <xref:Microsoft.Office.Interop.Excel.Range> obiekt reprezentuje komórkę, wiersz, kolumny, zaznaczonych komórek, który zawiera jeden lub więcej bloków komórek, które może być może nie mieć postać ciągłą lub nawet grupę komórek na wiele arkuszy.  
   
  Visual Studio rozszerza <xref:Microsoft.Office.Interop.Excel.Range> obiektu podając <xref:Microsoft.Office.Tools.Excel.NamedRange> i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> typów. Te typy mają te same funkcje co większość <xref:Microsoft.Office.Interop.Excel.Range> obiektu, a także nowe funkcje, takie jak możliwość powiązania danych i nowych zdarzeń. Aby uzyskać więcej informacji, zobacz [namedrange — formant](../vsto/namedrange-control.md) i [xmlmappedrange — formant](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a> Korzystając z dokumentacji modelu obiektów programu Excel  
+##  <a name="ExcelOMDocumentation"></a> Skorzystaj z dokumentacji modelu obiektów programu Excel  
  Aby uzyskać pełne informacje o modelu obiektów programu Excel mogą odwoływać się do odwołania podstawowego zestawu międzyoperacyjnego (PIA) programu Excel i odwołanie modelu obiektu języka VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do podstawowego zestawu międzyoperacyjnego  
- Dokumentacja odwołania Excel PIA opisano typy w podstawowego zestawu międzyoperacyjnego dla programu Excel. Niniejsza dokumentacja jest dostępna z następującej lokalizacji: [odwołanie do programu Excel 2010 podstawowego zestawu Interop](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ Dokumentacja odwołania Excel PIA opisano typy w podstawowego zestawu międzyoperacyjnego dla programu Excel. Niniejsza dokumentacja jest dostępna z następującej lokalizacji: [odwołania podstawowego zestawu międzyoperacyjnego programu Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Aby uzyskać więcej informacji dotyczących projektu PIA programu Excel, takie jak różnice między klasy i interfejsy PIA i implementowania zdarzeń w PIA, zobacz [Przegląd klasy i interfejsy Office podstawowe zestawy międzyoperacyjne](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

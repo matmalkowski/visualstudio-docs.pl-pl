@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurowanie iteracji testowych w scenariuszu testu obciążenia
 
@@ -46,24 +46,24 @@ Można określić maksymalną liczbę razy ma testów do uruchomienia dla scenar
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Aby określić maksymalnej liczby iteracji testu
 
-1.  Otwórz testu obciążenia.
+1. Otwórz testu obciążenia.
 
-2.  Zostanie wyświetlone edytora testu obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
+2. Zostanie wyświetlone edytora testu obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
 
-3.  Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testowych.
+3. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testowych.
 
-4.  Na **widoku** menu, wybierz opcję **okna właściwości**.
+4. Na **widoku** menu, wybierz opcję **okna właściwości**.
 
      Kategorie i właściwości scenariusza są wyświetlane w oknie właściwości.
 
-5.  W polu tekstowym dla **maksymalna liczba iteracji testu** właściwości, wpisz wartość, która wskazuje maksymalną liczbę testów do uruchomienia dla tego scenariusza, po uruchomieniu testu obciążenia.
+5. W polu tekstowym dla **maksymalna liczba iteracji testu** właściwości, wpisz wartość, która wskazuje maksymalną liczbę testów do uruchomienia dla tego scenariusza, po uruchomieniu testu obciążenia.
 
     > [!NOTE]
     > Przy użyciu wartości 0 dla **maksymalna liczba iteracji testu** właściwość określa nie maksymalna liczba iteracji.
 
-6.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowej **maksymalna liczba iteracji testu** wartość.
+6. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowej **maksymalna liczba iteracji testu** wartość.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Określanie czasów reakcji pomiędzy iteracjami testu dla scenariusza
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Określ czasów reakcji pomiędzy iteracjami testu dla scenariusza
 
 **Wziąć pod uwagę czas między iteracje testu** właściwość jest ustawiona, używając okna właściwości podczas edytowania właściwości scenariusza testów obciążenia w edytorze testu obciążenia.
 
@@ -72,21 +72,21 @@ Można określić maksymalną liczbę razy ma testów do uruchomienia dla scenar
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>Aby określić czasów reakcji pomiędzy iteracjami testu
+### <a name="to-specify-the-think-time-between-test-iterations"></a>Aby określić czas namysłu pomiędzy iteracjami testu
 
-1.  Otwórz testu obciążenia.
+1. Otwórz testu obciążenia.
 
      **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusza, aby określić agentów do użytku.
+2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusza, aby określić czas reakcji.
 
-3.  Na **widoku** menu, wybierz opcję **okna właściwości**.
+3. Na **widoku** menu, wybierz opcję **okna właściwości**.
 
      Kategorie i właściwości tego scenariusza są wyświetlane w oknie właściwości.
 
-4.  Wartości **wziąć pod uwagę czas między iteracje testu** właściwości, wprowadź liczbę reprezentującą liczbę sekund oczekiwania przed rozpoczęciem następnej iteracji testu.
+4. Wartości **wziąć pod uwagę czas między iteracje testu** właściwości, wprowadź liczbę reprezentującą liczbę sekund oczekiwania przed rozpoczęciem następnej iteracji testu.
 
-5.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **wziąć pod uwagę czas między iteracje testu** wartość.
+5. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **wziąć pod uwagę czas między iteracje testu** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

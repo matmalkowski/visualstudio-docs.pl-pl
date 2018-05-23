@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio
   Aby wdrożyć rozszerzenie narzędzia programu SharePoint, należy utworzyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX), który zawiera zestaw rozszerzenia i inne pliki, które chcesz dystrybuować z rozszerzeniem. Pakiet VSIX jest skompresowany plik znajdujący się standard otwarte konwencje pakietów (OPC). Pakiety VSIX z rozszerzeniem .vsix.  
@@ -133,13 +133,13 @@ ms.lasthandoff: 04/16/2018
   
 8.  Znajdź następujące `VSTemplate` elementu w pliku projektu.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
     ```  
   
 9. Zamień ten element następujący kod XML.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono zawartość pliku extension.vsixmanifest dla rozszerzeń narzędzi SharePoint. Rozszerzenie jest zaimplementowana w zestawie o nazwie Contoso.ProjectExtension.dll. Rozszerzenie zawiera zestaw polecenie programu SharePoint o nazwie Contoso.ExtensionCommands.dll i szablonu elementów w folderze o nazwie **elementów** w pakiecie VSIX. W tym przykładzie przyjęto założenie, że oba zestawy są w tym samym folderze co plik extension.vsixmanifest w pakiecie VSIX.  
   
-```  
+```xml 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">  
   <Metadata>  
     <Identity Id="CustomActionProjectItem.Microsoft.b99efe4d-cef3-4afd-b9af-034ca0c52743" Version="1.0" Language="en-US" Publisher="Microsoft" />  

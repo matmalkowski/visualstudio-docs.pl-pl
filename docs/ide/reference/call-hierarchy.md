@@ -1,6 +1,6 @@
 ---
-title: Wyświetlanie hierarchii wywołań w programie Visual Studio
-ms.date: 01/10/2018
+title: Znajdź wywołania do metody
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="view-call-hierarchy"></a>Wyświetlanie hierarchii wywołań
 
-Wyświetlając hierarchii wywołań do kodu, można przejść wszystkie wywołania do i z wybranej metody, właściwości lub konstruktora. Dzięki temu można lepiej zrozumieć, jak przepływu kodu oraz ocena skutków zmiany kodu. Można sprawdzić kilka poziomów kod, aby wyświetlić złożonych łańcuchów wywołań metod i dodatkowe punkty wejścia do kodu. Dzięki temu można eksplorować wszystkie możliwe wykonanie ścieżki.
+Wyświetlając hierarchii wywołań do kodu, można przejść wszystkie wywołania do i czasami od wybranej metody, właściwości lub konstruktora. Dzięki temu można lepiej zrozumieć, jak przepływu kodu oraz ocena skutków zmiany kodu. Można sprawdzić kilka poziomów kod, aby wyświetlić złożonych łańcuchów wywołań metod i dodatkowe punkty wejścia do kodu. Dzięki temu można eksplorować wszystkie możliwe wykonanie ścieżki.
 
 W programie Visual Studio można wyświetlić hierarchię wywołań w czasie projektowania. Oznacza to, że nie trzeba ustawić punkt przerwania i uruchomić debugera, aby wyświetlić stos wywołań w czasie wykonywania.
 
 ## <a name="use-the-call-hierarchy-window"></a>Okno hierarchii wywołań
 
-Aby wyświetlić **hierarchii wywołań** , kliknij prawym przyciskiem myszy nazwę metoda, właściwość lub wywołanie konstruktora, a następnie kliknij przycisk **hierarchii wywołań widoku**.
+Aby wyświetlić **hierarchii wywołań** , kliknij prawym przyciskiem myszy w edytorze kodu na nazwę metody, właściwość lub wywołanie konstruktora, a następnie wybierz **hierarchii wywołań widoku**.
 
-Nazwa elementu członkowskiego jest wyświetlana w okienku widoku drzewa, w **hierarchii wywołań** okna. Po rozwinięciu węzła elementu członkowskiego **wywołania do** *nazwa elementu członkowskiego* i **wywołania z** *nazwa elementu członkowskiego* węzły podrzędne są wyświetlane. Na poniższej ilustracji przedstawiono te węzły w **hierarchii wywołań** okna.
+Nazwa elementu członkowskiego jest wyświetlana w okienku widoku drzewa, w **hierarchii wywołań** okna. Po rozwinięciu węzła elementu członkowskiego **wywołania do** *nazwa elementu członkowskiego*, a dla języka C++, **wywołania z** *nazwa elementu członkowskiego*, węzły podrzędne są wyświetlane.
 
-![Hierarchia wywołań z jednym węzłem, otwórz](../../ide/reference/media/onenode.png "OneNode")
+Dla kodu C++ można wyświetlić połączeń zarówno do i z elementu członkowskiego:
+
+![Hierarchia wywołań kodu C++ w programie Visual Studio](media/call-hierarchy-cpp.png)
+
+C# i Visual Basic code możesz zobaczyć wywołania do elementu członkowskiego, ale nie wywołania z:
+
+![Hierarchia wywołań dla kodu C# w programie Visual Studio](media/call-hierarchy-csharp.png)
 
 - Po rozwinięciu **wywołania do** węzła, że wywołanie wybrany element członkowski są wyświetlane wszystkie elementy członkowskie.
 
-- Po rozwinięciu **wywołania z** są wyświetlane w węźle wszystkie elementy członkowskie, które są wywoływane przez wybrany element członkowski.
+- Dla języka C++, f rozwinięciu **wywołania z** są wyświetlane w węźle wszystkie elementy członkowskie, które są wywoływane przez wybrany element członkowski.
 
-Następnie można rozwinąć każdego z tych elementów członkowskich podwęzłem do **wywołania do** i **wywołania z** węzłów. Dzięki temu można nawigować do stosu wywołań, jak pokazano na poniższej ilustracji.
+Następnie rozwiń węzeł każdego wywołania elementu członkowskiego, aby zobaczyć jego **wywołania do**, a dla języka C++, **wywołania z** węzłów. Dzięki temu można nawigować do stosu wywołań, jak pokazano na poniższej ilustracji:
 
-![Hierarchia wywołań otwartymi wieloma węzłami](../../ide/media/multiplenodes.png "MultipleNodes")
+![Okno hierarchii wywołań o różnych poziomach rozwinięty](media/call-hierarchy-csharp-expanded.png)
 
 Dla elementów członkowskich, które są zdefiniowane jako wirtualny lub abstrakcyjny **nazwę metody zastąpienia** węzeł jest dostępny. Dla członków interfejsu **nazwę metody implementuje** węzeł jest dostępny. Te węzły rozwijania są wyświetlane na tym samym poziomie jako **wywołania do** i **wywołania z** węzłów.
 
@@ -49,12 +55,12 @@ Po wybraniu podrzędny element członkowski w **hierarchii wywołań** okienka w
 
 - **Hierarchii wywołań** okienku szczegółów zostaną wyświetlone wszystkie wiersze kodu, w którym ten podrzędny element członkowski jest wywoływana z nadrzędnego elementu członkowskiego.
 
-- **Okno definicji kodu**, jeśli jest to otwarty, wyświetla kod dla wybranego elementu członkowskiego (tylko C++). Aby uzyskać więcej informacji dotyczących tego okna, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
+- **Definicji kodu** okna, jeśli otwarty, zawiera kod dla wybranego elementu członkowskiego (tylko C++). Aby uzyskać więcej informacji dotyczących tego okna, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> Funkcji hierarchii wywołań nie odnajdzie — metoda odwołania do grup, w tym miejscach, gdzie metoda jest dodawana jako program obsługi zdarzeń lub jest przypisany do delegata. Aby znaleźć wszystkie odwołania do metody, można użyć **Znajdź wszystkie odwołania** polecenia.
+> **Hierarchii wywołań** funkcji nie znaleźć metody odwołania do grup, w tym miejscach, gdzie metoda jest dodawana jako program obsługi zdarzeń lub jest przypisany do delegata. Aby znaleźć wszystkie odwołania do metody, można użyć **Znajdź wszystkie odwołania** polecenia.
 
-### <a name="shortcut-menu-items"></a>Elementy menu skrótów
+## <a name="shortcut-menu-items"></a>Elementy menu skrótów
 
 W poniższej tabeli opisano kilka opcji menu skrótów, które są dostępne po kliknięciu prawym przyciskiem myszy węzeł w okienku widoku drzewa.
 

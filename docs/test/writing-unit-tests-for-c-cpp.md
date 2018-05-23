@@ -9,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio zawiera tych platform testów C++ z nie dodatkowe pliki do pobrani
 
 Oprócz zainstalowanych struktur można napisać własny adapter testowy dla dowolnego framework chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych z **Eksploratora testów** okna. Kilka kart innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 wersji 15,5 cala**
+**Visual Studio 2017, wersja 15.5**
 
 - **Adapter testowy Google** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Wybrano szablon projektu, które można dodać do rozwiązania za pomocą **Dodawanie nowego projektu** menu kontekstowego w węźle rozwiązania w **Eksploratora rozwiązań**i można skonfigurować za pomocą opcji **narzędzia | Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj Google testu w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -74,7 +74,7 @@ Plik .cpp w projekcie testowym ma Klasa zastępcza i metody zdefiniowane dla uż
 
 ![Dodaj zawiera dyrektywy, które](media/cpp-write-test-methods.png "testu C++ dodać zawiera pliki nagłówka")
 
-TEST_CLASS i TEST_METHOD należą [Microsoft natywnych testów Framework]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testowanie Explorer** odnajduje metody testowe w innych obsługiwanych platform, w podobny sposób.
+TEST_CLASS i TEST_METHOD są częścią [Microsoft natywnego struktury testowej](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testowanie Explorer** odnajduje metody testowe w innych obsługiwanych platform, w podobny sposób.
 
 TEST_METHOD zwraca typ void. Aby uzyskać wynik testu, użyj metody statyczne w `Assert` klasy do przetestowania rzeczywiste wyniki oczekiwano. W poniższym przykładzie założono `MyClass` zawiera konstruktora przyjmującego który `std::string`. Można sprawdzić, czy Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
 

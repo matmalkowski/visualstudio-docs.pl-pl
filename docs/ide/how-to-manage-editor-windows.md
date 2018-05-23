@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b10bb58420b09bc184ef447503ca90acc7574f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>Porady: Zarządzanie oknami edytora
 
@@ -57,6 +57,6 @@ Istnieje również możliwość utworzenia wielu wystąpień okno edytora. Ta fu
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
-- [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Dopasowywanie edytora](../ide/customizing-the-editor.md)
+- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)

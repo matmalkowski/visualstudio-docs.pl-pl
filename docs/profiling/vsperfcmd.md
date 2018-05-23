@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** narzędzie jest używane do uruchamiania i zatrzymywania gromadzenia danych wydajności. Używa następującej składni:  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Zatrzymuje profilowanie dla określonego wątku. Użyj **ThreadOff** tylko wtedy, gdy profilowania przy użyciu metody instrumentacji.|  
 |[Oznacz](../profiling/mark.md) **:** *Nr_znacznika*[**,***Tekst_znacznika***]**|Wstawia znacznik do pliku danych profilowania, tekstem opcjonalne.|  
   
-## <a name="sampling-method-options"></a>Opcje metody pobierania próbek  
+## <a name="sample-method-options"></a>Przykład opcji — Metoda  
  Poniższe opcje są dostępne tylko w przypadku, gdy używana jest metoda profilowania próbkowania.  
   
 |Opcja|Opis|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Odłącz](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować według identyfikatora procesu lub nazwy procesu. Jeśli żaden proces nie zostanie określony, Profilowanie jest zostało zatrzymane dla wszystkich procesów.|  
 |[Wykaz Globalny](../profiling/gc-vsperfcmd.md)[**:**{**alokacji**`&#124;`**okres istnienia**}]|Umożliwia zbieranie danych pamięci .NET alokacji i obiekt okres istnienia. Należy użyć tylko z **VSPerfCmdLaunch** opcji.|  
   
-### <a name="sampling-interval-options"></a>Opcje interwał próbkowania  
+### <a name="sample-interval-options"></a>Przykładowe opcje interwału  
  Poniższe opcje, określ typ i czas trwania interwałów próbkowania. Wartość domyślna to **czasomierza**. Można również określić licznika Procesora jako interwał, używając **licznika** opcji. Te opcje można określić tylko w przypadku **uruchamianie** lub przy pierwszym **Attach** sesji profilowania.  
   
 |Opcja|Opis|  
@@ -75,7 +75,7 @@ VSPerfCmd [/U] [/options]
 |[Sys](../profiling/sys-vsperfcmd.md)[**: *** n*]|Przykłady przy każdym wywołaniu systemie n-ty percentyl (domyślne = 10).|  
 |[Czasomierz](../profiling/timer.md)[**: *** n*]|Cykl próbki na każdym n-ty percentyl procesora (domyślne = 10000000).|  
   
-## <a name="service-component-and-kernel-mode-device-options"></a>Składnik usługi i opcje urządzenia trybu jądra  
+## <a name="service-component-and-kernel-mode-device-options"></a>Usługa składnika i jądra tryb opcje urządzenia  
  Następujące opcje Admin obsługuje składniki usługi profilowania lub sterowniki urządzenia trybu jądra. Opcje administratora Ustawianie uprawnień profilowania i kontrolować PROFILOWANEGO usługi lub sterownika urządzenia.  
   
  Opcje administratora musi zostać wykonana w wierszu polecenia, który działa z poświadczeniami administracyjnymi.  

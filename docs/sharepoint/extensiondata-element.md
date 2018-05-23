@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b579a0221fcba04e2ca0915957f2bdbf60b91d84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a03e9790b8131636874384657a316f4792abaa56
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="extensiondata-element"></a>ExtensionData — Element
   Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <ExtensionData>  
   <ExtensionDataItem.../>  
 </ExtensionData>  
@@ -48,10 +48,10 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Jest to wymaganego głównego elementu pliku .spdata —.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Ten element wymaganego głównego elementu z `.spdata` pliku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy Skojarz dane niestandardowe z elementu projektu SharePoint za pomocą <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu Visual Studio zapisuje dane do **extensiondata —** elementu w pliku .spdata — dla elementu projektu. Aby uzyskać więcej informacji, zobacz [zapisywania danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Gdy Skojarz dane niestandardowe z elementu projektu SharePoint za pomocą <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu Visual Studio zapisuje dane do **extensiondata —** element w `.spdata` pliku projektu element. Aby uzyskać więcej informacji, zobacz [zapisywania danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informacje o elementach  
   

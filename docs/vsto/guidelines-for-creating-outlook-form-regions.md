@@ -1,5 +1,5 @@
 ---
-title: Wytyczne dotyczące tworzenia Outlook tworzą regionów | Dokumentacja firmy Microsoft
+title: Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>Wytyczne dotyczące tworzenia regionów formularzy w programie Outlook
+# <a name="guidelines-for-creating-outlook-form-regions"></a>Wytyczne dotyczące tworzenia regionów formularzy programu Outlook
   Poniższe informacje mogą pomóc w optymalizacji sieci regionów formularzy i uniknąć ewentualnych problemów:  
   
--   [Przy użyciu nazwy regionów formularza](#UsingFormRegions).  
+-   [Użyj nazwy regionów formularza](#UsingFormRegions).  
   
--   [Wyłączając dziedziczenie regionu formularza](#DisablingInheritance).  
+-   [Wyłącz dziedziczenie regionu formularza](#DisablingInheritance).  
   
--   [Opis typów i komunikat klasy nazwy](#ClassNames).  
+-   [Zrozumienie typów i komunikatów nazwy klas](#ClassNames).  
   
 -   [Projektowanie sąsiadujących regionów formularzy w okienku odczytu](#ReadingPane).  
   

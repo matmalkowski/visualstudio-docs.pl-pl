@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
 W poniższej tabeli wymieniono ostrzeżenia przez narzędzie VSInstr.exe. NOWARN — opcja wraz z numerów ostrzeżeń, które umożliwia Pomiń wyświetlanie ostrzeżenia.  
@@ -43,5 +43,5 @@ W poniższej tabeli wymieniono ostrzeżenia przez narzędzie VSInstr.exe. NOWARN
 |**VSP2013**|Zinstrumentowanie tego obrazu wymaga do uruchamiania jako proces 32-bitowy. Aby to odzwierciedlić flagi nagłówka CLR zostały zaktualizowane.<br /><br /> Profiler modyfikuje plik binarny, aby 64-bitowych systemów operacyjnych można otworzyć procesu 32-bitowej w emulatorze WOW64. Dla biblioteki dll to może się nie powieść, jeśli są załadowane w istniejących procesu 64-bitowego. To ostrzeżenie informuje użytkownika zależności.|  
 |**VSP2014**|Wynikowy zinstrumentowany obraz jest nieprawidłowy i może nie działać.<br /><br /> Ten komunikat występuje, gdy końcowego instrumentowanego zestawu ma nieprawidłowy nagłówek PE.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSInstr](../profiling/vsinstr.md)

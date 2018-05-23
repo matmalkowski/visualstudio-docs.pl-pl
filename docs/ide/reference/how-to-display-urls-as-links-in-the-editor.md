@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3e7a300570cb16757c70b42db932d8af061be1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Porady: wyświetlanie adresów URL jako łączy w Edytorze
 Istnieje możliwość edytora kodu Traktuj Uniform Resource Locator (URL) w kodzie jako aktywny łącza. Jeśli używasz tej funkcji, adresy URL:
@@ -53,4 +53,4 @@ Istnieje możliwość edytora kodu Traktuj Uniform Resource Locator (URL) w kodz
 
 - [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Opcje edytora tekstowego, okno dialogowe](../../ide/reference/text-editor-options-dialog-box.md)
-- [Pisanie kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

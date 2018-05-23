@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1
   System projektu programu SharePoint w Visual Studio można rozszerzyć przez utworzenie własnego projektu typów elementów. W tym przewodniku spowoduje utworzenie elementu projektu, który można dodać do projektu SharePoint do tworzenia niestandardowych akcji w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu, aby **Akcje witryny** menu witryny programu SharePoint.  
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Następujący kod XML jest szablonu elementu języka Visual C#. Jeśli tworzysz szablon elementu programu Visual Basic, zastąp wartość `ProjectType` element z `VisualBasic`.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
@@ -230,7 +230,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  Dodaj następujący kod XML do pliku CustomAction.spdata, a następnie zapisz i zamknij plik.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.CustomAction" DefaultFile="Elements.xml"   
      xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -250,7 +250,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Zastąp zawartość pliku Elements.xml następującego pliku XML, a następnie zapisz i zamknij plik.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="Replace this with a GUID or some other unique string"  
@@ -274,13 +274,13 @@ ms.lasthandoff: 04/16/2018
   
 15. Znajdź następujące `VSTemplate` elementu w pliku projektu.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
     ```  
   
 16. Zastąp to `VSTemplate` elementu o następujące XML, a następnie zapisz i zamknij plik.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -400,25 +400,25 @@ ms.lasthandoff: 04/16/2018
   
     -   W `CustomAction` , ustaw `Id` atrybut GUID lub unikatowy ciąg jak przedstawiono na poniższym przykładzie:  
   
-        ```  
+        ```xml  
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"  
         ```  
   
     -   W `CustomAction` , ustaw `Title` atrybutu, jak przedstawiono na poniższym przykładzie:  
   
-        ```  
+        ```xml  
         Title="SharePoint Developer Center"  
         ```  
   
     -   W `CustomAction` , ustaw `Description` atrybutu, jak przedstawiono na poniższym przykładzie:  
   
-        ```  
+        ```xml  
         Description="Opens the SharePoint Developer Center Web site."  
         ```  
   
     -   W `UrlAction` , ustaw `Url` atrybutu, jak przedstawiono na poniższym przykładzie:  
   
-        ```  
+        ```xml  
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostek dla kodu za pomocą IntelliTest
 IntelliTest Eksploruje kodu .NET do generowania danych testowych i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie, jest generowany wprowadzania testu który wykona tej instrukcji. Analizy przypadków jest wykonywane dla każdego gałąź warunkowa w kodzie. Na przykład `if` instrukcje, potwierdzeń i wszystkie operacje, które można zgłaszają wyjątki są analizowane. Analiza jest używany do generowania danych testowych dla sparametryzowanego testu jednostkowego dla każdej z metod tworzenia testów jednostkowych z pokryciem kodu wysoki.
@@ -143,7 +143,7 @@ Określ ogólne relację między wejściach i wyjściach, które mają wygenerow
 **Odpowiedź:** tak, wykonaj następujące kroki, aby [znajdować i instalować innych platform,](../test/install-third-party-unit-test-frameworks.md).
 Test framework rozszerzenia są także dostępne w programie Visual Studio Marketplace:
 
-* [Rozszerzenie NUnit generatory testu](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [Rozszerzenie NUnit generatory testu](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [Rozszerzenie xUnit.net generatory testu](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 

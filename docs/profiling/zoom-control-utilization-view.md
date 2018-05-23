@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07519bc95f696d395177056960ea5f42027739a6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d5b999136eb1d1d268e8fc0a71147a1996940ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="zoom-control-utilization-view"></a>Formant powiększania (Widok wykorzystania)
 Formant powiększania pomaga powiększać na wykresie użycia procesora CPU, aby skupić się na obszarów. Ten formant powiększenie środka widoku. W związku z tym należy center obszaru zainteresowania przed powiększania.  
   
  Można przeciągnąć wskaźnik myszy w wykres wykorzystania CPU lub wykres aktywności GPU do utworzenia wyróżniony obszar. Po zwolnieniu przycisku myszy widok powiększenie wybranego zakresu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wykorzystania](../profiling/utilization-view.md)

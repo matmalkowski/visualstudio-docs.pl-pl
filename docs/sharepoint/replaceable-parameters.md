@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Parametry wymienne
   Parametry wymienne lub *tokenów*, może być używany w plikach projektu o podanie wartości elementów rozwiązania programu SharePoint, których rzeczywistej wartości nie są znane w czasie projektowania. Są one podobne w funkcji standardu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny szablonu. Aby uzyskać więcej informacji, zobacz [parametrów szablonu](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Format tokenu  
- Tokeny rozpoczynać i kończyć się znakiem dolara ($). Gdy projekt jest umieszczone w pliku pakietu (wsp) rozwiązania programu SharePoint w czasie wdrażania tokenów używanych są zastępowane rzeczywistymi wartościami. Na przykład token **$SharePoint.Package.Name$** może zostać rozwiązana do ciągu "Test pakiet programu SharePoint".  
+ Tokeny rozpoczynać i kończyć się znakiem dolara ($). We wdrożeniu tokenów używanych są zamieniane rzeczywiste wartości, gdy projekt jest umieszczone w pakietu rozwiązania programu SharePoint (plik wsp). Na przykład token **$SharePoint.Package.Name$** może zostać rozwiązana do ciągu "Test pakiet programu SharePoint".  
   
 ## <a name="token-rules"></a>Token reguły  
  Tokeny mają zastosowanie następujące reguły:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Tokeny, których nie zastosowano reguły te są ignorowane, bez konieczności podawania ostrzeżenia lub błędu.  
   
- Zastąpienia tokenów przez wartości ciągu jest realizowane natychmiast po przekształceniu manifestu, dzięki czemu manifestu szablony zmieniony przez użytkownika do używania tokenów.  
+ Zastąpienia tokenów przez wartości ciągu jest realizowane natychmiast po przekształceniu manifestu. To zastąpienie zezwala użytkownikowi na edycję szablonów manifestu z tokenami.  
   
 ### <a name="token-name-resolution"></a>Rozpoznawanie nazw tokenu  
  W większości przypadków token jest rozpoznawany jako niezależnie od tego, gdzie znajduje się określoną wartością. Jednak jeśli token jest powiązany z pakietu lub funkcji, wartość tokenu jest zależna od gdzie znajduje się. Na przykład, jeśli funkcja pakietu token, a następnie `$SharePoint.Package.Name$` jest rozpoznawana jako wartość "Pakiet A." Jeśli tej samej funkcji jest w pakiecie B, następnie `$SharePoint.Package.Name$` jest rozpoznawany jako "Pakiet B."  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Te rozszerzenia są definiowane przez `<TokenReplacementFileExtensions>` element znajduje się w pliku Microsoft.VisualStudio.SharePoint.targets... \\< pliki programów\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools folderu.  
   
- Można jednak dodać dodatkowe rozszerzenia plików do listy. Aby to zrobić, należy dodać `<TokenReplacementFileExtensions>` element do dowolnego PropertyGroup w pliku projektu programu SharePoint, który zdefiniowano przed \<Import > pliku obiektów docelowych programu SharePoint.  
+ Można jednak dodać dodatkowe rozszerzenia plików do listy. Dodaj `<TokenReplacementFileExtensions>` element do dowolnego PropertyGroup w pliku projektu programu SharePoint, który zdefiniowano przed \<Import > pliku obiektów docelowych programu SharePoint.  
   
 > [!NOTE]  
 >  Ponieważ zastępujący tokenu odbywa się to skompilowany projekt, nie należy dodawać rozszerzenia plików dla typów plików, które są kompilowane, na przykład .cs, .vb lub resx. Tokeny są zamieniane tylko w plikach, które nie są kompilowane.  
   
- Na przykład można dodać rozszerzenia nazwy pliku ".myextension" i ".yourextension" do listy rozszerzeń nazw plików zastępujący tokenu, należy dodać następujące do pliku .csproj:  
+ Na przykład można dodać rozszerzenia nazwy pliku ".myextension" i ".yourextension" do listy rozszerzeń nazw plików zastępujący tokenu, należy dodać następujące polecenie, aby `.csproj` pliku:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Alternatywnie można dodać rozszerzenia bezpośrednio w pliku .targets. Jednak w ten sposób zmienia listy rozszerzeń dla wszystkich projektów SharePoint opakowane w systemie lokalnym, nie tylko własne. Może to być wygodny projektanta wyłącznie w systemie lub w przypadku większości projektów wymagają. Jednak ponieważ jest specyficzne dla systemu, ta metoda nie jest przenośny i dlatego zalecane jest dodać wszystkich rozszerzeń do pliku projektu zamiast tego.  
+ Można dodać rozszerzenia bezpośrednio w pliku .targets. Jednak w ten sposób zmienia listy rozszerzeń dla wszystkich projektów SharePoint opakowane w systemie lokalnym, nie tylko własne. Może to być wygodny projektanta wyłącznie w systemie lub w przypadku większości projektów wymagają. Jednak ponieważ jest specyficzne dla systemu, ta metoda nie jest przenośny i dlatego zalecane jest dodać wszystkich rozszerzeń do pliku projektu zamiast tego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

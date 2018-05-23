@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 991d2c57da8a1fc45fba266cdafe38000cd3d594
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30f466b1dd849f7c0288de38ead481dfa19995af
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="featureproperties-element"></a>FeatureProperties — Element
-  Reprezentuje kolekcję wartości właściwości, które są dołączone do funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do wartości właściwości, w kodzie.  
+  Kolekcja wartości właściwości, które są dołączone do funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do wartości właściwości, w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <FeatureProperties>  
   <FeatureProperty.../>  
 </FeatureProperties>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Jest to wymaganego głównego elementu pliku .spdata —.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Ten element wymaganego głównego elementu z `.spdata` pliku.|  
   
 ## <a name="remarks"></a>Uwagi  
  Aby uzyskać więcej informacji na temat właściwości funkcji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  

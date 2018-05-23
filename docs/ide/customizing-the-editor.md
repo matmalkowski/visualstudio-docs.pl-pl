@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 246e1ad9d63b272350c461ead804dca1b6a2b062
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a397932e23386356757ca96dc86dee7222947431
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="customize-the-editor"></a>Dostosowywanie edytora
 
@@ -30,7 +30,7 @@ Aby uzyskać więcej informacji na temat opcji edytora tekstu, zobacz [Opcje edy
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)
-- [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md)
 - [Ogólne, środowisko, opcje — Okno dialogowe](../ide/reference/general-environment-options-dialog-box.md)
 - [Dokumenty, środowisko, opcje — Okno dialogowe](../ide/reference/documents-environment-options-dialog-box.md)

@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xml-editor"></a>Edytor XML
 
@@ -53,11 +53,8 @@ Edytor XML jest wywoływany dla rozszerzeń plików dobrze znany, takich jak .xm
 
 [Narzędzia hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) pozwala dodać punkty przerwania w arkuszach stylów dołączone i/lub wbudowanych szablonów zasad.
 
-## <a name="related-sections"></a>Sekcje pokrewne
-
-- [Pisanie kodu w edytorze](../ide/writing-code-in-the-code-and-text-editor.md) zawiera informacje o edytorze tekstów.
-- [Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
-
 ## <a name="see-also"></a>Zobacz także
 
+- [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) zawiera informacje o edytorze tekstów.
+- [Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
 - [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

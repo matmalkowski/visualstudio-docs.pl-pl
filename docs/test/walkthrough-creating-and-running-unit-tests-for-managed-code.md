@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu
 
@@ -285,7 +285,7 @@ Uruchomiona dwie metody testowe pokazuje testy działać poprawnie.
 
 Jednak również niepokojące są ostatnich dwóch metod. Nie można mieć niektórych warunek, który w testowana metoda zgłasza wyjątek, po uruchomieniu tych testów. Niektóre sposób pozwalających dwa warunki kwota debetowa ujemny lub kwotę większą niż saldo, zwiększy z zaufania w testach.
 
-Looki test ponownie i zwróć uwagę, że zarówno warunkowe instrukcje użyć z metodą `ArgumentOutOfRangeException` Konstruktor, który po prostu przyjmuje nazwę argumentu jako parametr:
+Obejrzyj testowana metoda ponownie i zwróć uwagę, że oba warunkowe instrukcje używać `ArgumentOutOfRangeException` Konstruktor, który po prostu przyjmuje nazwę argumentu jako parametr:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddfb73e6871a30cabcece0711b0cf5b4c63175
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-**VSPerfASPNetCmd.exe** narzędzie wiersza polecenia umożliwia profilu ASP.Net witryn sieci Web bez konieczności Ustaw zmienne środowiskowe, lub uruchom ponownie komputer. Użyj **VSPerfASPNetCmd.exe** zamiast [VSPerfCmd](../profiling/vsperfcmd.md) kiedy są profilowania witryn sieci Web ASP.NET i nie są dodatkowe funkcje udostępniane przez **VSPerfCmd**. Aby uzyskać więcej informacji na temat **VSPerfASPNetCmd**, zobacz [szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** to narzędzie wiersza polecenia preferowany do użycia, gdy jest używany autonomiczny profiler profilowanie witryny sieci Web ASP.NET.  
+**VSPerfASPNetCmd.exe** narzędzie wiersza polecenia umożliwia profilu ASP.Net witryn sieci Web bez konieczności Ustaw zmienne środowiskowe, lub uruchom ponownie komputer. Użyj **VSPerfASPNetCmd.exe** zamiast [VSPerfCmd](../profiling/vsperfcmd.md) kiedy są profilowania witryn sieci Web ASP.NET i nie są dodatkowe funkcje udostępniane przez **VSPerfCmd**. Aby uzyskać więcej informacji na temat **VSPerfASPNetCmd**, zobacz [profilowania szybkie witryny sieci web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** to narzędzie wiersza polecenia preferowany do użycia, gdy jest używany autonomiczny profiler profilowanie witryny sieci Web ASP.NET.  
   
 ## <a name="syntax"></a>Składnia  
  **vsperfaspnetcmd** [/*opcje*] *witryny sieci Web*  
@@ -39,6 +39,6 @@ ms.lasthandoff: 04/19/2018
 |**/ Shutdown:** `Website`lub   **/d:**`Website`|Włącza profilowanie. Użyj tylko opcji wiersza polecenia po użyciu **/nowait** opcji do uruchomienia profilowania, lub jeśli profilera kończy się nieoczekiwanie. Określ ten sam adres url, który został użyty w oryginalnym **VSPerfASPNETCmd** polecenia.|  
 |`Website`|Adres url witryny sieci Web do profilowania.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Szybkie profilowanie za pomocą VSPerfASPNETCmd witryny sieci Web](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+## <a name="see-also"></a>Zobacz także  
+ [Szybkie profilowanie za pomocą VSPerfASPNETCmd witryny sieci web](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)

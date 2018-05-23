@@ -1,5 +1,5 @@
 ---
-title: Zdarzenia w projektach pakietu Office | Dokumentacja firmy Microsoft
+title: Zdarzenia w projektach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -35,11 +35,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3136bf1ac0937b60b5f0dec1b0be673e3127a470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziome dokumentu są nieco inne niż programy obsługi zdarzeń dla dodatków VSTO.  
@@ -49,8 +49,8 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-projects"></a>Projektów na poziomie dokumentu  
  Program Visual Studio udostępnia wygenerowanego kodu nowych lub istniejących dokumentów lub arkuszy w dostosowaniach na poziomie dokumentu. Ten kod wywołuje dwóch różnych zdarzeń: **uruchamiania** i **zamknięcia**.  
   
-### <a name="startup-event"></a>Startup — zdarzenie  
- **Uruchamiania** zdarzenie jest wywoływane dla każdego z elementów hosta (dokument, skoroszyt lub arkusz) po dokumentu jest uruchomiona, a cały kod inicjowania w zestawie zostało uruchomione. Jest to ostateczność do uruchamiania w konstruktorze klasy działający w kodzie. Aby uzyskać informacje o obiektach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+### <a name="startup-event"></a>Startup — Zdarzenie  
+ **Uruchamiania** zdarzenie jest wywoływane dla każdego z elementów hosta (dokument, skoroszyt lub arkusz) po dokumentu jest uruchomiona, a cały kod inicjowania w zestawie zostało uruchomione. Jest to ostateczność do uruchamiania w konstruktorze klasy działający w kodzie. Aby uzyskać informacje o obiektach hosta, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
  Podczas tworzenia projektu poziomie dokumentu programu Visual Studio tworzy programy obsługi zdarzeń dla **uruchamiania** zdarzenia w plikach wygenerowanego kodu:  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
     -   `ThisWorkbook_Startup`  
   
-### <a name="shutdown-event"></a>Shutdown — zdarzenie  
+### <a name="shutdown-event"></a>Shutdown — Zdarzenie  
  **Zamknięcia** zdarzenie jest wywoływane dla każdego z elementów hosta (dokument lub arkusz) gdy domena aplikacji, kodu załadowanego w ma zwolnienia. Jest ostatnim etapem można wywołać w klasie, ponieważ zwalnia.  
   
  Podczas tworzenia projektu poziomie dokumentu programu Visual Studio tworzy programy obsługi zdarzeń dla **zamknięcia** zdarzenia w plikach wygenerowanego kodu:  
@@ -102,7 +102,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
   
-### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektach na poziomie dokumentu programu Excel  
+### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektów na poziomie dokumentu programu Excel  
  **Uruchamiania** są wywoływane programy obsługi zdarzeń w projektach programu Excel, w następującej kolejności:  
   
 1.  `ThisWorkbook_Startup`.  
@@ -132,19 +132,19 @@ ms.lasthandoff: 04/16/2018
 ## <a name="vsto-add-in-projects"></a>Projektów dodatku VSTO  
  Program Visual Studio udostępnia wygenerowanego kodu w dodatkach VSTO. Ten kod wywołuje dwóch różnych zdarzeń: <xref:Microsoft.Office.Tools.AddInBase.Startup> i <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
   
-### <a name="startup-event"></a>Startup — zdarzenie  
+### <a name="startup-event"></a>Startup — Zdarzenie  
  <xref:Microsoft.Office.Tools.AddIn.Startup> Zdarzenie jest wywoływane po dodatku VSTO jest załadowane, a cały kod inicjowania w zestawie zostało uruchomione. To zdarzenie jest obsługiwane przez `ThisAddIn_Startup` metody w wygenerowanym pliku kodu.  
   
  Kod w `ThisAddIn_Startup` procedura obsługi zdarzeń jest pierwszy kod użytkownika, aby uruchomić, chyba że dodatek VSTO zastępuje <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody. W takim przypadku `ThisAddIn_Startup` program obsługi zdarzeń jest wywoływana po wykonaniu <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Nie dodawaj kod w `ThisAdd-In_Startup` obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kodu na zdarzenie, który wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do dokumentów pakietu Office aplikacji uruchamia](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Nie dodawaj kod w `ThisAdd-In_Startup` obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kodu na zdarzenie, który wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. Aby uzyskać więcej informacji, zobacz [dostęp do dokumentu, podczas uruchamiania aplikacji pakietu Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Aby uzyskać więcej informacji na temat uruchamiania dodatków VSTO zobacz [dodatki architektura VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
-### <a name="shutdown-event"></a>Shutdown — zdarzenie  
+### <a name="shutdown-event"></a>Shutdown — Zdarzenie  
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest zgłaszane, gdy ładowany w kodzie domeny aplikacji ma zostać zwolniony. To zdarzenie jest obsługiwane przez `ThisAddIn_Shutdown` metody w wygenerowanym pliku kodu. Ten program obsługi zdarzeń jest kod ostatniego użytkownika do uruchomienia, gdy jest zwalniany dodatku VSTO.  
   
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown — zdarzenie w programie Outlook VSTO dodatki  
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown — zdarzenie w dodatkach VSTO programu Outlook  
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Zdarzenie jest wywoływane tylko wtedy, gdy użytkownik wyłącza dodatku VSTO za pomocą okna dialogowego Dodatki COM w programie Outlook. Nie jest wywoływane po zamknięciu programu Outlook. Jeśli masz kod, który musi działać po zamknięciu programu Outlook, obsługiwać jeden z następujących zdarzeń:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Zdarzenie <xref:Microsoft.Office.Interop.Outlook.Application> obiektu.  
@@ -152,13 +152,13 @@ ms.lasthandoff: 04/16/2018
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Zdarzenie <xref:Microsoft.Office.Interop.Outlook.Explorer> obiektu.  
   
 > [!NOTE]  
->  Możesz wymusić programu Outlook, aby podnieść <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzeń po wydaniu przez modyfikację rejestru. Jednak jeśli administrator przekształcenia to ustawienie, żadnego kodu dodanie do `ThisAddIn_Shutdown` metoda nie jest uruchamiana po zamknięciu programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmian dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
+>  Możesz wymusić programu Outlook, aby podnieść <xref:Microsoft.Office.Tools.AddInBase.Shutdown> zdarzeń po wydaniu przez modyfikację rejestru. Jednak jeśli administrator przekształcenia to ustawienie, żadnego kodu dodanie do `ThisAddIn_Shutdown` metoda nie jest uruchamiana po zamknięciu programu Outlook. Aby uzyskać więcej informacji, zobacz [zamykania zmiany dla programu Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)  
+ [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)   
+ [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
   
   

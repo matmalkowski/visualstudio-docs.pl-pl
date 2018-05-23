@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: tworzenie i przepływu pracy z formularzami inicjacji i skojarzenia
   Ten przewodnik przedstawia sposób tworzenia podstawowych sekwencyjnego przepływu pracy, uwzględniająca stosowanie formularzy skojarzenia i inicjowania. Są to formularzy ASPX, umożliwiających parametrów, które mają zostać dodane do przepływu pracy, gdy najpierw została skojarzona przez administratora programu SharePoint (formularz skojarzenia), a po uruchomieniu przepływu pracy przez użytkownika (formularza inicjowania).  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Bezpośrednio po pierwszym wierszu w tym elemencie content, Dodaj następujący kod do tworzenia etykiety i pola tekstowego, który wyświetla monit o zatwierdzenie limit wydatków (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Bezpośrednio po pierwszym wierszu w tym elemencie content, Dodaj następujący kod do tworzenia etykiety i pola tekstowego, wyświetlająca limit wydatków zatwierdzenia (*AutoApproveLimit*) wprowadzone w formularzu skojarzenia i inną etykietę i pole tekstowe z monitem o łączny koszt (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Wskazówki: rozszerzanie Eksploratora serwera do potrzeb wyświetlania elementów sieci web
   W programie Visual Studio, można użyć **połączeń SharePoint** węzła **Eksploratora serwera** Aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie są wyświetlane domyślnie niektórych składników. W tym przewodniku będzie można rozszerzyć **Eksploratora serwera** tak, aby Wyświetla Galeria składników Web Part na każdy jest połączony witryny programu SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  W górnej części okna dialogowego, wybierz **.NET Framework 3.5** na liście wersji programu .NET Framework.  
   
-4.  
-  
-5.  Na liście szablony projektów, wybierz **biblioteki klas**, nazwij projekt **WebPartCommands**, a następnie wybierz pozycję **OK** przycisku.  
+4.  Na liście szablony projektów, wybierz **biblioteki klas**, nazwij projekt **WebPartCommands**, a następnie wybierz pozycję **OK** przycisku.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartCommands** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
-6.  Usuń plik kodu Class1 z projektu.  
+5.  Usuń plik kodu Class1 z projektu.  
   
 ## <a name="configuring-the-projects"></a>Konfigurowanie projektów  
  Przed przystąpieniem do napisania kod w celu utworzenia rozszerzenia, należy dodać pliki kodu i odwołania do zestawów i skonfiguruj ustawienia projektu.  

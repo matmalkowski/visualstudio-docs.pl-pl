@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu metody pobierania próbek
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu pobierania próbek
 
 W tym przewodniku pokazano, jak profile aplikacji za pomocą narzędzia wiersza polecenia i pobierania próbek do identyfikowania problemów z wydajnością.
 
@@ -98,10 +98,10 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)  
 [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
-[Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)  
+[Zrozumienie wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
 [Widoki raportu wydajności](../profiling/performance-report-views.md)

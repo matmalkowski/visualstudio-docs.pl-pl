@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie opóźnień Uruchom scenariusz dla obciążenia testowania w programie Visual Studio
+title: Konfigurowanie opóźnień Uruchom scenariusz dla testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurowanie opóźnień uruchamiania scenariuszy w testach obciążenia
 
@@ -72,11 +72,11 @@ Można określić opóźnienie przed rozpoczęciem scenariusza w teście obcią�
 
      **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, który ma zostać określony agentów do użytku.
+2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, który chcesz zmienić zachowanie rozgrzewania.
 
 3. Na **widoku** menu, wybierz opcję **okna właściwości**.
 
-     Kategorie i właściwości tego scenariusza są wyświetlane w oknie właściwości.
+     Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
      W **Wyłącz podczas rozgrzewania** właściwości, wybierz opcję **True** lub **wartość False.**
 

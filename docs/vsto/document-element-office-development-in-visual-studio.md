@@ -1,5 +1,5 @@
 ---
-title: '&lt;dokument&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;dokument&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e33e638937a02589a08e3ba2bebf9d3e9aeb1a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07d8172ec4e56352c2244aef02d947ac48833ab7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;dokument&gt; elementu (Office Development w Visual Studio)
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;dokument&gt; elementu (Office development w Visual Studio)
   `document` Elementu `vstov4` przestrzeni nazw są przechowywane informacje dotyczące dostosowywania na poziomie dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <document solutionId />  
 ```  
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`solutionId`|Wymagany. Identyfikator GUID używany przez Visual Studio Tools dla pakietu Office runtime do jednoznacznego identyfikowania rozwiązania na poziomie dokumentu. Ta wartość jest przechowywana jako _AssemblyLocation właściwość niestandardowego dokumentu. Aby uzyskać więcej informacji, zobacz [Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md).|  
+|`solutionId`|Wymagana. Identyfikator GUID używany przez Visual Studio Tools dla pakietu Office runtime do jednoznacznego identyfikowania rozwiązania na poziomie dokumentu. Ta wartość jest przechowywana jako _AssemblyLocation właściwość niestandardowego dokumentu. Aby uzyskać więcej informacji, zobacz [Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md).|  
   
  `document` nie ma elementów podrzędnych.  
   
@@ -48,12 +48,12 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstov4:document   
   solutionId="73e" />  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

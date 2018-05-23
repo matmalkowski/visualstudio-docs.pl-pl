@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Kodowanie i linii podziału
+# <a name="encodings-and-line-endings"></a>Kodowanie i wiersza zakończenia
 
 Następujące znaki będą interpretowane jako podziały wierszy w programie Visual Studio:
 
--   CR LF: Powrotu karetki + wiersz źródła danych, 000 D + 000A znaki Unicode
+- CR LF: Powrotu karetki + wiersz źródła danych, 000 D + 000A znaki Unicode
 
--   LF: Wysuwu wiersza, znaków Unicode 000A
+- LF: Wysuwu wiersza, znaków Unicode 000A
 
--   Ustaw: Następnego wiersza, znaków Unicode 0085
+- Ustaw: Następnego wiersza, znaków Unicode 0085
 
--   LS: Linii separatora, znaków Unicode 2028
+- LS: Linii separatora, znaków Unicode 2028
 
--   PS: Separator akapitu, znaków Unicode 2029
+- PS: Separator akapitu, znaków Unicode 2029
 
 Tekst, który jest skopiowany z innych aplikacji zachowuje oryginalne kodowanie i znaki podziału wiersza. Na przykład gdy skopiować tekst ze Schowka i wklej go do pliku tekstowego w programie Visual Studio, tekst ma tych samych ustawień, które miało w Notatniku.
 
@@ -56,4 +56,4 @@ Można użyć **pliku** > **zaawansowane opcje zapisywania** okno dialogowe, aby
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pisanie kodu w edytorze](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)

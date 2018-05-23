@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
   Proces przygotowywania aplikacji, dzięki czemu mogą być używane na całym świecie nosi nazwę lokalizacji. Lokalizacja jest tłumaczenie zasobów na określoną kulturę. Aby uzyskać więcej informacji, zobacz [Globalizing i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications). Ten temat zawiera omówienie dotyczące lokalizowanie rozwiązań programu SharePoint.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  Po utworzeniu funkcję pliki zasobów, należy dodać przetłumaczone ciągi do nich. Dostęp do zlokalizowanych ciągów za pomocą wyrażenia w następującym formacie:  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  Zastąp wszystkie ciągi ustalony właściwości w znaczniku strony i kontrolki ASPX wyrażenia w następującym formacie:  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Na przykład:  
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  ASPX jako tekst można użyć w wyrażeniu w następującym formacie:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Na przykład:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  W kodzie, Zamień ustalony ciągi wywołań <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metodę przy użyciu następującej składni:  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

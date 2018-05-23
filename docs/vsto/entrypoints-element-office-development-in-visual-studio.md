@@ -1,5 +1,5 @@
 ---
-title: '&lt;punkty wejścia&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;punkty wejścia&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;punkty wejścia&gt; elementu (Office Development w Visual Studio)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;punkty wejścia&gt; elementu (Office development w Visual Studio)
   `entryPoints` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoint` elementy skojarzone z rozwiązania do pakietu Office.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <entryPoints>  
     <entryPoint>  
     </entryPoint>  
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
  `entryPoints` zawiera następujące elementy.  
   
 ### <a name="entrypoint"></a>Punkt wejścia  
- Wymagany. Rola `entryPoint` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;punktu wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Wymagana. Rola `entryPoint` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;punktu wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoExcelWorkbook.ThisWorkbook">  
@@ -102,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoOutlookAddIn.ThisAddIn">  
@@ -122,7 +122,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:entryPoints   
   id="ContosoExcel">  
   <vstav3:entryPoint   
@@ -171,7 +171,7 @@ ms.lasthandoff: 04/16/2018
 </vstav3:entryPoints>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

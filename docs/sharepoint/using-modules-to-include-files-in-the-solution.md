@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Stosowanie z modułów podczas dołączania plików do rozwiązania
   Może to być razy podczas warto wdrożyć pliki do serwera programu SharePoint, niezależnie od ich typ plików, takich jak nowe strony wzorcowej. Aby to zrobić, można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów kodu). Moduły są kontenerami dla plików rozwiązania programu SharePoint. Po wdrożeniu rozwiązania pliki w module są kopiowane do określonych folderów na serwerze programu SharePoint.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  Oto przykładowy plik Elements.xml modułu:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
     <Module Name="Module1">  

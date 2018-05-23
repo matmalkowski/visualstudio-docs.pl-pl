@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
 
@@ -32,12 +32,12 @@ Aby skorzystać z języka R w programie Visual Studio:
 
 Następnie wykonaj poniższe łącza, aby dowiedzieć się więcej o funkcjach R, a także ogólne możliwości programu Visual Studio, sama.
 
-| Funkcja | Opis | Dokumentacja ogólna Visual Studio | 
+| Funkcja | Opis | Dokumentacja ogólna Visual Studio |
 | --- | --- | --- |
 | [Program Visual Studio system projektu](r-projects-in-visual-studio.md) | Organizowanie Zarządzanie powiązane pliki w strukturze wygodne i skorzystać z szablonów przydatne dla elementów, jak kod języka R, dokumentację języka R R Markdown, zapytania SQL i procedur składowanych. Również kredyty [Menedżera pakietów](r-package-manager-in-visual-studio.md) i [integracji programu SQL Server](integrating-sql-server-with-r.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Workspace](r-workspaces-in-visual-studio.md) | RTVS można powiązać obszary robocze lokalnych i zdalnych, umożliwiając tworzenie kodu języka R lokalnie mniejszych zestawów danych, a następnie łatwo uruchomić kod na wydajniejsze komputery oparte na chmurze z znacznie większych zestawów danych. | n/d |
 | [Opcje narzędzia R](options-for-r-tools-in-visual-studio.md) | Kontrolować różne aspekty RTVS. | [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Edytowanie sformatowanego, IntelliSense i wstawki kodu](editing-r-code-in-visual-studio.md) | Obejmuje kolorowania, [IntelliSense](r-intellisense.md) we wszystkich kodu i bibliotek, formatowania pomocy podpisu kodu przejdź do definicji i Znajdź wszystkie odwołania [wstawki kodu](code-snippets-for-r.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Edytowanie sformatowanego, IntelliSense i wstawki kodu](editing-r-code-in-visual-studio.md) | Obejmuje kolorowania, [IntelliSense](r-intellisense.md) we wszystkich kodu i bibliotek, formatowania pomocy podpisu kodu przejdź do definicji i Znajdź wszystkie odwołania [wstawki kodu](code-snippets-for-r.md)itd. | [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | Dokumenty R Markdown pomóc Udostępnianie wyników dane zintegrowane R kodu wewnątrz bloków kodu w języku znaczników markdown. | n/d |
 | [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R umożliwia łatwe uruchamianie kodu w pliku źródłowego w oknie interaktywnym. | n/d |
 | [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Kreślenia jest integralną częścią środowisko R i RTVS obsługuje wiele niezależnych kreślenia systemu windows, każdy z własnych historii i możliwość przenoszenia geograficzne między systemem windows. Powierzchnie można zapisać plików PDF i mapy bitowej lub skopiowane do Schowka jako mapa bitowa lub metaplik.  | n/d |

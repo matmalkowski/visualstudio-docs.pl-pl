@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Wskazówki: Wcześniejsze testowanie Programowanie przy użyciu funkcji generowania z użycia
 
@@ -160,7 +160,7 @@ Załóżmy specyfikację stwierdza, że nowy `Automobile` mogą być przełącza
 ## <a name="see-also"></a>Zobacz także
 
 - [Generowanie na podstawie użycia](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Szybkie akcje](../ide/quick-actions.md)

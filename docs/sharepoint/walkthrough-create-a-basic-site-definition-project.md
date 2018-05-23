@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Wskazówki: Tworzenie podstawowego projektu definicji witryny
   W tym przewodniku przedstawiono sposób tworzenia definicji lokacji podstawowej, która zawiera visual części sieci Web z niektórych formantów. Dla jasności wizualnego składnika Web part tworzenia zawiera tylko kilka formantów. Można jednak utworzyć bardziej złożone definicje witryn programu SharePoint, które zawierają więcej funkcji.  
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  W dolnej części VisualWebPart1.ascx, Dodaj następujący kod do dodawania trzech formantów do formularza: pole tekstowe, przycisk i etykiety:  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Otwórz stronę default.aspx, a następnie dodaj następujący wiersz w obszarze `WebPartPages` tagu:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Po `</asp:Content>` elementu, Zastąp całą `ContentPlaceHolderId="PlaceHolderMain"` sekcji i jego zawartość następującym kodem:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

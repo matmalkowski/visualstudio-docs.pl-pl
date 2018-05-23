@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Wskazówki: tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint
   Poniższe procedury pokazują, jak utworzyć niestandardowe kolumny witryny programu SharePoint — lub *pola*— oraz typu zawartości, który używa kolumny witryny. Ponadto sposobu tworzenia list, która używa nowego typu zawartości.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  W pliku Elements.xml kolumny witryny, należy pozostawić **typu** ustawienie jako **tekst**i zmień **grupy** ustawienie **kolumny witryny Clinic**. Po zakończeniu pliku Elements.xml kolumny witryny powinien wyglądać jak w następującym przykładzie.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  

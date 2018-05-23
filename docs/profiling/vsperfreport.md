@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport — narzędzie wiersza polecenia jest używany do tworzenia raportów za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania pliku danych profilowania. Domyślny format raportu jest plikiem CSV.  
@@ -90,5 +90,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|Użyj tej konkretnej kolumny Porównaj wartości. Wartość domyślna to kolumny procentową wyłącznych próbek.|  
 |**Querydifftables zwraca**|Wyświetl listę prawidłowych tabel i kolumn dla dwóch plików raportu, pod warunkiem.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Wskazówki: korzystanie z interfejsów API profilera
+# <a name="walkthrough-using-profiler-apis"></a>Wskazówki: Korzystanie z interfejsów API profilera
 Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API narzędzi profilowania. Aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji użyjesz profilera interfejsów API.  
   
  Kroki opisane w tym przewodniku są zazwyczaj stosowane do aplikacji C/C++. Dla każdego języka będzie trzeba odpowiednio skonfigurować środowisko kompilacji.  
   
  Zazwyczaj powoduje rozpoczęcie analizowanie wydajności aplikacji za pomocą przykładowej profilowania. Jeśli przykładowe profilowania nie zapewnia informacje, które określa wąskiego gardła, profilowanie Instrumentacji zapewniają większy poziom szczegółowości. Profilowanie Instrumentacji jest bardzo przydatna do badania interakcji wątku.  
   
- Jednak większy poziom szczegółowości oznacza, że dane są zbierane. Może się okazać, że profilowanie Instrumentacji tworzy pliki dużej ilości danych. Ponadto Instrumentacji jest bardziej prawdopodobne, że wpływ na wydajność aplikacji. Aby uzyskać więcej informacji, zobacz [wartościami danych Instrumentacji opis](../profiling/understanding-instrumentation-data-values.md) i [wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)  
+ Jednak większy poziom szczegółowości oznacza, że dane są zbierane. Może się okazać, że profilowanie Instrumentacji tworzy pliki dużej ilości danych. Ponadto Instrumentacji jest bardziej prawdopodobne, że wpływ na wydajność aplikacji. Aby uzyskać więcej informacji, zobacz [zrozumieć wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md) i [zrozumieć wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
   
  Profilera Visual Studio umożliwia ograniczenie zbierania danych. Ten przewodnik zawiera przykładowy sposób ograniczyć zbieranie danych przy użyciu interfejsów API profilera. Profilera Visual Studio udostępnia interfejs API kontrolowanie zbierania danych z aplikacji.  
   
@@ -37,9 +37,9 @@ Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vspr
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W tym przewodniku przyjęto założenie, że wybór środowisko projektowe jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:  
   
- [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
+ [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
   
- [Porady: odwołania informacji o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Domyślnie podczas uruchamiania profilera profiler zbiera dane na poziomie globalnym. Następujący kod na początku program włącza globalne profilowania wyłączone.  
   
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  Można wyłączyć zbieranie danych w wierszu polecenia bez użyciu wywołania interfejsu API. W następujących krokach założono, środowiska kompilacji wiersza polecenia jest skonfigurowany do uruchamiania z narzędzi do profilowania i jako narzędzia do programowania. W tym ustawienia wymagane dla VSInstr i narzędzia VSPerfCmd. Zobacz narzędzi profilowania z wiersza polecenia.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Ograniczanie kolekcji danych przy użyciu interfejsów API profilera  
+## <a name="limit-data-collection-using-profiler-apis"></a>Ograniczenie zbierania danych przy użyciu interfejsów API profilera  
   
 #### <a name="to-create-the-code-to-profile"></a>Aby utworzyć kod do profilu  
   
@@ -159,8 +159,8 @@ DataCollection.CurrentId);
   
      Plik CSV jest tworzony w bieżącym katalogu z danych wydajności.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Profiler>   
- [Interfejsy API profilera Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)   
+ [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

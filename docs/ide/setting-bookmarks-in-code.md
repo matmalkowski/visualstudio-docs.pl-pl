@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edeb4a012d0059f54df29fd74b093cc51ed5e6f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e0154a9d410e7bbe60913b757f216225239704b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="set-bookmarks-in-code"></a>Zestaw zakładek w kodzie
 
@@ -43,4 +43,4 @@ Można wyłączyć zakładek (bez ich usuwania), wybierając **Wyłącz wszystki
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Pisanie kodu w edytorze](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../ide/writing-code-in-the-code-and-text-editor.md)

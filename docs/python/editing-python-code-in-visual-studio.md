@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -27,7 +27,7 @@ Edytor jest także zintegrowane z okno interaktywne programu Visual Studio, co u
 |---|---|
 | ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) dla pokaz edytowanie kodu języka Python (2 m 30s).|
 
-Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w Visual Studio](../ide/outlining.md), który pomaga pozostać koncentruje się na poszczególnych sekcji kodu.
+Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w Visual Studio](../ide/outlining.md), który pomaga pozostać koncentruje się na poszczególnych sekcji kodu.
 
 Można również użyć przeglądarki obiektów Visual Studio (**Widok > inne okna > przeglądarki obiektów** lub Ctrl + W, J) do sprawdzania Python klas zdefiniowanych w każdym module i funkcji zdefiniowanych w tych klas.
 
@@ -146,7 +146,7 @@ Aby dostosować kolory, przejdź do **Narzędzia > Opcje > środowiska > czcionk
 > [!Tip]
 > Aby wyłączyć kolorowania kodu, przejdź do **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane** i wyczyść **różne opcje > Kolor nazw oparty na typie**. Zobacz [opcji - różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
-## <a name="code-snippets"></a>Wstawki kodu
+## <a name="code-snippets"></a>Fragmenty kodu
 
 Wstawki kodu są fragmenty kodu, który można wstawiać do plików, wpisując skrót i naciśnięcie klawisza Tab lub przy użyciu **Edytuj > IntelliSense > Wstaw fragment kodu** i **z funkcji Otocz przez** poleceń, Wybieranie **Python**, a następnie wybierając żądane fragment kodu.
 

@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń i znaczników EventSource
+# <a name="visualize-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń EventSource znaczników
 Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki i kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczników EventSource, należy zarejestrować identyfikator GUID dostawców ETW za pomocą [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe. Narzędzia Concurrency Visualizer ma domyślnych Konwencji reprezentują zdarzenia EventSource jako [znaczniki typu Flaga](../profiling/flag-markers.md), [znaczniki zakresu](../profiling/span-markers.md), i [znaczniki komunikatu](../profiling/message-markers.md). Można dostosować sposób wyświetlania zdarzeń EventSource przez dodanie pola niestandardowe do zdarzenia. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczników wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji o zdarzeniach EventSource, zobacz <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Wizualizacja domyślna zdarzeń źródła zdarzeń  
@@ -52,7 +52,7 @@ Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki 
 ### <a name="text"></a>Tekst  
  Tekst sformatowany komunikat printf typ został zdefiniowany dla zdarzenia, jest on wyświetlany jako opis znacznika. W przeciwnym razie opis jest nazwą zdarzenia i wartość każdego pola ładunku.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Dostosowywanie wizualizacji zdarzeń źródła zdarzeń  
+## <a name="customize-visualization-of-eventsource-events"></a>Dostosowywanie wizualizacji zdarzeń źródła zdarzeń  
  Można dostosować sposób wyświetlania zdarzeń EventSource, dodając odpowiednie pola do zdarzenia, zgodnie z opisem w poniższych sekcjach.  
   
 ### <a name="marker-type"></a>Typ znacznika  
@@ -94,5 +94,5 @@ Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki 
 > [!NOTE]
 >  Użycie SpanID Aby zagnieździć zakresy, zezwolić im na częściowo nakładają się na tym samym wątku, lub zezwolić im na uruchomić w jednym wątku i zakończenia na innym nie jest obsługiwany.  
   
-## <a name="see-also"></a>Zobacz też  
- [Znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Zobacz także  
+ [Znaczniki CONCURRENCY visualizer](../profiling/concurrency-visualizer-markers.md)

@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Porady: zmiana czcionek i kolorów w Edytorze
 Zmień domyślny krój czcionki, Dostosuj rozmiar czcionki i Zmień kolory pierwszego planu i tła tekstu różnych **wyświetlania elementów** w edytorze kodu. Podczas zmieniania ustawienia czcionki pamiętać następujące informacje:
@@ -56,5 +56,5 @@ Zmień domyślny krój czcionki, Dostosuj rozmiar czcionki i Zmień kolory pierw
 
 - [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Opcje edytora tekstowego, okno dialogowe](../../ide/reference/text-editor-options-dialog-box.md)
-- [Pisanie kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje Edytor kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Globalny dostęp do obiektów w projektach pakietu Office | Dokumentacja firmy Microsoft
+title: Globalny dostęp do obiektów w projektach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
   Podczas tworzenia projektu pakietu Office Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Można użyć `Globals` klasę, aby uzyskiwać dostęp do wielu elementów innego projektu w czasie wykonywania z dowolnego kodu w projekcie.  
@@ -53,9 +53,9 @@ ms.lasthandoff: 04/16/2018
   
 -   `ThisAddIn` Klasy w projekcie dodatku VSTO. Dostęp do obiektu przy użyciu `Globals.ThisAddIn` właściwości.  
   
--   Wszystkie taśmy w projekcie, który można dostosować przy użyciu projektanta wstążki. Dostęp do wstążek przy użyciu `Globals.Ribbons` właściwości. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   Wszystkie taśmy w projekcie, który można dostosować przy użyciu projektanta wstążki. Dostęp do wstążek przy użyciu `Globals.Ribbons` właściwości. Aby uzyskać więcej informacji, zobacz [dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   Wszystkie regiony formularzy programu Outlook w projekcie dodatku narzędzi VSTO programu Outlook. Dostęp do regionów formularzy przy użyciu `Globals.FormRegions` właściwości. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md).  
+-   Wszystkie regiony formularzy programu Outlook w projekcie dodatku narzędzi VSTO programu Outlook. Dostęp do regionów formularzy przy użyciu `Globals.FormRegions` właściwości. Aby uzyskać więcej informacji, zobacz [uzyskać dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md).  
   
 -   Obiekt fabryki, który pozwala na tworzenie formantów Wstążki i udostępniać elementów w czasie wykonywania w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dostęp do obiektu przy użyciu `Globals.Factory` właściwości. Ten obiekt jest wystąpieniem klasy, która implementuje jednej następujących interfejsów:  
   
@@ -72,19 +72,19 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Podczas inicjowania klasy globalne  
+## <a name="initialize-the-globals-class"></a>Inicjowanie klasy globalne  
  Kod, który próbuje użyć `Globals` klasy przed zainicjowaniem całkowicie dokumentu lub dodatku VSTO może zgłosić wyjątek czasu wykonywania. Na przykład za pomocą `Globals` po deklarowanie zmiennej poziomie klasy mogą się niepowodzeniem, ponieważ `Globals` klasy może nie być zainicjowana z odwołaniami do wszystkich elementów hosta przed utworzeniem wystąpienia jest zadeklarowane obiektu.  
   
 > [!NOTE]  
 >  `Globals` Klasy nigdy nie został zainicjowany w czasie projektowania, ale formant wystąpienia są tworzone przez projektanta. Oznacza to, że w przypadku utworzenia kontrolki użytkownika, który używa właściwości `Globals` klasy z wewnątrz klasy formantu użytkownika należy czy właściwość zwraca **null** przed próbą użycia zwrócony obiekt.  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Uzyskiwanie dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Element hosta dokumentu](../vsto/document-host-item.md)   
  [Element hosta skoroszytu](../vsto/workbook-host-item.md)   
  [Element hosta arkusza](../vsto/worksheet-host-item.md)   
- [Pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md)  
+ [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)  
   
   

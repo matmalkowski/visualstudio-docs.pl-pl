@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Porady: tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
   Można kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (wsp) przy użyciu zadań MSBuild wiersza polecenia na komputerze dewelopera. Można również używać tych poleceń, aby zautomatyzować proces kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wprowadź następujące polecenie, aby utworzyć pakiet dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      Na przykład można uruchomić jeden z poniższych poleceń, aby pakiet projektu programu SharePoint o nazwie ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wprowadź następujące polecenie, aby wyczyścić pakietu dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      Na przykład można Uruchom jedno z poniższych poleceń, aby wyczyścić projektu programu SharePoint o nazwie ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wprowadź następujące polecenie, aby sprawdzić poprawności pakietu dla projektu. Zastąp *ProjectFileName* z nazwą projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      Na przykład można Uruchom jedno z poniższych poleceń, aby sprawdzić poprawność projektu programu SharePoint o nazwie ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wprowadź następujące polecenie, aby ustawić właściwość pakietu dla projektu. Zastąp *PropertyName* razem z właściwością, który chcesz ustawić.  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      Na przykład można uruchomić następujące polecenie, aby ustawić poziom ostrzeżeń.  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

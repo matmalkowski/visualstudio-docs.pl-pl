@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79399ebea9fd5dedd645b148910d6a4ced47902
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visual-studio-profiler-api-reference-native"></a>Interfejsy API profilera Visual Studio (Native)
+# <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio interfejsy API profilera (native)
 Interfejsów API profilera Visual Studio umożliwiają programowe sterowanie ilości zbieranych danych i wstaw znaczniki zarówno sygnatury czasowej, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, możesz uwzględnić plik nagłówka VSPerf.h i dodać VSPerf.lib w projekcie.  
   
 > [!NOTE]
@@ -44,6 +44,6 @@ Interfejsów API profilera Visual Studio umożliwiają programowe sterowanie ilo
   
  [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)   
- [Wskazówki: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)
+ [Przewodnik: korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)

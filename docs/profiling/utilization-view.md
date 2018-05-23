@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** Wyświetla informacje dotyczące Procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz **Analizuj** > **współbieżności Wizualizator** można uruchomić narzędzia concurrency visualizer). Pokazuje użycie średni core przez proces przeanalizowane, proces bezczynny, proces systemu i innych procesów uruchomionych w systemie, wraz z upływem czasu. Nie wyświetla, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego jej użycia. Widok jest generowany przez podzielenie profilowania czasu na segmenty w krótkim czasie. Dla każdego segmentu wykres zawiera średnią liczbę wątków procesu, które są wykonywane na rdzeni logicznych podczas tego interwału.  
@@ -49,6 +49,6 @@ ms.lasthandoff: 04/19/2018
 ## <a name="zooming"></a>Powiększanie  
  Aby powiększyć wykres wykorzystania CPU lub wykres aktywności GPU, zaznacz sekcję, lub użyj narzędzia suwaka powiększenia powyżej wykresu. Ustawienie powiększenia będzie się powtarzać, podczas przełączania z innymi widokami. Aby zmniejszyć ponownie, należy użyć narzędzia suwaka powiększenia. Można również powiększyć przy użyciu klawiszy Ctrl + przewijania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)   
  [Widok rdzeni](../profiling/cores-view.md)

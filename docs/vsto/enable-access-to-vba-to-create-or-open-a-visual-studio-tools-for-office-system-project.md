@@ -1,6 +1,6 @@
 ---
-title: Zapewnianie dostępu do VBA można utworzyć lub otworzyć Visual Studio Tools dla pakietu Microsoft Office System projektu
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: Zapewnianie dostępu do VBA można utworzyć lub otworzyć Visual Studio Tools dla programu Microsoft Office project systemu
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Zapewnianie dostępu do VBA można utworzyć lub otworzyć Visual Studio Tools dla pakietu Microsoft Office System projektu
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Zapewnianie dostępu do VBA można utworzyć lub otworzyć Visual Studio Tools dla programu Microsoft Office project systemu
 
-Musisz jawnie włączyć dostęp do Visual Basic dla aplikacji (VBA) projektu systemu Microsoft Office przed można utworzyć lub otworzyć Visual Studio Tools dla pakietu Microsoft Office project.
+Musisz jawnie włączyć dostęp do Visual Basic dla aplikacji (VBA) projektu systemu Microsoft Office przed można utworzyć lub otworzyć Visual Studio Tools dla programu Microsoft Office project systemu.
 
  Microsoft Office rozwoju projektów wymagają dostępu do języka Visual Basic dla aplikacji (VBA) system projektu w programie Microsoft Office Word i Microsoft Office Excel, nawet jeśli projekty nie należy używać języka Visual Basic for Applications. Obsługa projektowania formantów w projektach zarówno Visual Basic i C# zależy od języka Visual Basic for system projektu aplikacji.
 

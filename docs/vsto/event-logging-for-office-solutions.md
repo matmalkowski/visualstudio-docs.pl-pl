@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie zdarzeń dla rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+title: Rejestrowanie zdarzeń dla rozwiązań pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Rejestrowanie zdarzeń dla rozwiązań pakietu Office
   Aby wyświetlić komunikaty o wyjątku, które są przechwytywane przez służy Podgląd zdarzeń w systemie Windows [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] po zainstalowaniu lub odinstalowaniu rozwiązań pakietu Office. Te komunikaty z Rejestratora zdarzeń służy do rozwiązywania instalacji i problemy z wdrażaniem.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>Odczytywania dziennika zdarzeń  
+## <a name="read-the-event-log"></a>Odczytu dziennika zdarzeń  
  Otwórz **Podgląd zdarzeń** i filtrować zdarzenia mają być wyświetlane.  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Do odczytu dziennika zdarzeń w systemie Windows Server 2003 i Windows XP  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Do odczytu dziennika zdarzeń w systemie Windows Server 2003 i Windows XP  
   
 1.  W Panelu sterowania otwórz **narzędzia administracyjne**.  
   
@@ -76,15 +76,15 @@ ms.lasthandoff: 04/16/2018
   
  Po odinstalowaniu rozwiązania do pakietu Office, komunikaty o wyjątkach pozostają w dzienniku zdarzeń.  
   
- Aby wyświetlić lub wyjątek komunikaty dziennika, gdy działa rozwiązania do pakietu Office, zobacz [debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md) i [debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md).  
+ Aby wyświetlić lub wyjątek komunikaty dziennika, gdy działa rozwiązania do pakietu Office, zobacz [projektów Office debugowania](../vsto/debugging-office-projects.md) i [projektów Office debugowania](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalizacja  
  Język komunikat o wyjątku jest określana przez Visual Studio Tools for Office runtime języka. Na przykład jeśli na komputerze użytkownika końcowego jest zainstalowany pakiet języka japońskiego, komunikat o wyjątku jest zapisywane w dzienniku zdarzeń w języku japońskim.  
   
-## <a name="disabling-the-event-logger"></a>Wyłączenie rejestrowania zdarzeń  
+## <a name="disable-the-event-logger"></a>Wyłączenie rejestrowania zdarzeń  
  Domyślnie program rejestrujący zdarzenia jest włączona po zainstalowaniu lub odinstalowaniu rozwiązań pakietu Office. Rejestrator zdarzeń można wyłączyć, ustawiając zmienną środowiskową VSTO_EVENTLOGDISABLED "1" (jeden).  
   
-#### <a name="to-disable-the-event-log"></a>Aby wyłączyć dziennik zdarzeń  
+### <a name="to-disable-the-event-log"></a>Aby wyłączyć dziennik zdarzeń  
   
 1.  W Panelu sterowania otwórz **systemu**.  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Kliknij przycisk **OK**.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
  [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)  
   

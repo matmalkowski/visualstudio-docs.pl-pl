@@ -1,5 +1,5 @@
 ---
-title: '&lt;punkt wejścia&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;punkt wejścia&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punkt wejścia&gt; elementu (Office Development w Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punkt wejścia&gt; elementu (Office development w Visual Studio)
   Każdy `entryPoint` elementu `vstav3` przestrzeni nazw identyfikuje zestawu dostosowania, który powinien być uruchomiony, jeśli to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikacja jest zainstalowana.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <entryPoint class>  
     <assemblyIdentity />  
 </entryPoint>  
@@ -43,12 +43,12 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`class`|Wymagany. Identyfikuje zestawem dostosowania do wykonania. Składnia dla tego atrybutu jest *NamespaceName.ClassName*.|  
+|`class`|Wymagana. Identyfikuje zestawem dostosowania do wykonania. Składnia dla tego atrybutu jest *NamespaceName.ClassName*.|  
   
  `entryPoint` ma następujący element.  
   
 ### <a name="assemblyidentity"></a>element assemblyIdentity  
- Wymagany. `assemblyIdentity` Element `vstav3` przestrzeni nazw, który odwołuje się do istniejącego `assemblyIdentity` element [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest aplikacji.  
+ Wymagana. `assemblyIdentity` Element `vstav3` przestrzeni nazw, który odwołuje się do istniejącego `assemblyIdentity` element [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest aplikacji.  
   
  Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ &#60;assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:entryPoint   
   class="ContosoExcelWorkbook.ThisWorkbook">  
   <assemblyIdentity   
@@ -101,7 +101,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstav3:entryPoint   
   class="ContosoOutlookAddIn.ThisAddIn">  
   <assemblyIdentity   
@@ -112,7 +112,7 @@ ms.lasthandoff: 04/16/2018
 </vstav3:entryPoint>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

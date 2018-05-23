@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 
@@ -78,7 +78,7 @@ Po zainstalowaniu Instalator, można go dostosować instalację, wybierając zes
 
 1. Znajdź obciążenia w **Instalowanie programu Visual Studio** ekranu.
 
- ![Wybieranie obciążenia w oknie dialogowym Instalator Visual Studio 2017 r.](../install/media/install-visual-studio-enterprise.png)
+ ![Wybieranie obciążenia w oknie dialogowym Instalator Visual Studio 2017 r.](../install/media/install-visual-studio-community.png)
 
      Na przykład wybierz obciążenie ".NET development pulpitu". Pochodzi on z domyślnego edytora core, która obejmuje podstawowych czynności edytowania Obsługa ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu kodu i zintegrowane kontroli kodu źródłowego.  
 

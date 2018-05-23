@@ -9,11 +9,11 @@ description: Więcej informacji o subskrypcji szkolenia DataCamp uwzględnionych
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w ramach subskrypcji programu Visual Studio
 
@@ -74,7 +74,7 @@ Można zatrzymać w dowolnym momencie i wznowić do szkolenia w bieżącej sesji
 
 
 
-<sup>1</sup>*obejmuje: Wyobraź sobie nie dla odsprzedaż (niego), ekwiwalentu pełnego wymiaru czasu, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), Microsoft Partner Network (MPN), programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,* 
+<sup>1</sup>*obejmuje: Wyobraź sobie nie dla odsprzedaż (niego), ekwiwalentu pełnego wymiaru czasu, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), Microsoft Partner Network (MPN), programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,*
 
 
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
@@ -83,6 +83,7 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej korzystania z DataCamp?  Zobacz następujące zasoby:
     - [Społeczność DataCamp](https://www.datacamp.com/community/tutorials), fora i samouczki.
-    - [CZĘSTO ZADAWANE PYTANIA DOTYCZĄCE](https://datacamp.groovehq.com/help_center).  Na stronie często zadawane pytania dotyczące również mieć możliwość Aby przesłać żądanie obsługi poczty e-mail.
+    - [Centrum pomocy DataCamp](https://support.datacamp.com/hc), gdzie wyszukiwanie tematów pomocy technicznej i zobacz pytania użytkownika żądania.  
+    - [Prześlij żądanie obsługi](https://support.datacamp.com/hc/requests/new)
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
 -  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 

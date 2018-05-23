@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc63a3ac6d677da746823e101ca42d5765703907
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder — Element
   Reprezentuje zamapowany folder.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|**docelowy**|Wymagane **xs:string** atrybutu.<br /><br /> Ścieżka folderu w instalacji programu SharePoint, umożliwiająca zamapowany folder, odnoszącego się do folderu głównego wdrożenia. Folder główny wdrożenia jest określana przez typ wdrożenia, określony przez **typu** atrybutu.<br /><br /> Aby uzyskać więcej informacji, zobacz opisy **Deployment ścieżkę** i **główny wdrożenia** właściwości programu SharePoint projektu elementów w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**docelowy**|Wymagane **xs: ciąg** atrybutu.<br /><br /> Ścieżka folderu w instalacji programu SharePoint, umożliwiająca zamapowany folder, odnoszącego się do folderu głównego wdrożenia. Folder główny wdrożenia jest określana przez typ wdrożenia, określony przez **typu** atrybutu.<br /><br /> Aby uzyskać więcej informacji, zobacz opisy **Deployment ścieżkę** i **główny wdrożenia** właściwości programu SharePoint projektu elementów w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Typ**|Wymagane **xs:string** atrybutu.<br /><br /> Typ wdrożenia dla zamapowany folder. Aby uzyskać więcej informacji na temat możliwych wartości, zobacz opis **typu wdrożenia** właściwości SharePoint — elementy projektu w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Jest to wymaganego głównego elementu pliku .spdata —.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Ten element jest elementem głównym wymagane `.spdata` pliku.|  
   
 ## <a name="remarks"></a>Uwagi  
  Aby uzyskać więcej informacji na temat folderów mapowanych zobacz [porady: Dodawanie i usuwanie folderów mapowane](../sharepoint/how-to-add-and-remove-mapped-folders.md).  

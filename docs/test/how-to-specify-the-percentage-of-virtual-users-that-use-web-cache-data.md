@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Porady: określanie wartości procentowej użytkowników wirtualnych korzystających z danych pamięci podręcznej sieci Web
 
@@ -29,21 +29,21 @@ Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można 
 
 Jeśli jesteś witryny sieci Web, która ma znaczących zwracany użytkowników, którzy mogą mieć obrazów do testowania obciążenia i innych buforowalnej zawartości buforowane lokalnie, następnie ustawienie 100% **procent nowych użytkowników** wygeneruje więcej właściwości żądań pobierania nie może mieć miejsce w rzeczywistych użycia. W takim przypadku należy oszacować procentową wizyt do witryny sieci Web, które pochodzą z pierwszym uruchomieniu witryny sieci web i ustaw **procent nowych użytkowników** właściwości odpowiednio.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Aby określić agentów na potrzeby scenariusza
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Aby określić procent nowych użytkowników do scenariusza
 
-1.  Otwórz testu obciążenia.
+1. Otwórz testu obciążenia.
 
      **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **scenariusze** folderu, wybierz węzła scenariusza, aby określić agentów na potrzeby.
+2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusza, aby zmienić wartość procentowa nowego użytkownika dla.
 
-3.  Na **widoku** menu, wybierz opcję **okna właściwości**.
+3. Na **widoku** menu, wybierz opcję **okna właściwości**.
 
      Kategorie i właściwości tego scenariusza są wyświetlane w oknie właściwości.
 
-4.  Ustaw wartość **procent nowych użytkowników** właściwości, wprowadzając numer procent nowych użytkowników.
+4. Ustaw wartość **procent nowych użytkowników** właściwości, wprowadzając numer procent nowych użytkowników.
 
-5.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **procent nowych użytkowników** wartość.
+5. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **procent nowych użytkowników** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 
