@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Samouczek krok 2: tworzenie aplikacji Django z widokami i strony szablonów
 
@@ -206,7 +206,7 @@ Poniższe kroki przedstawiają sposób używania szablony stron:
         )
     ```
 
-    Pierwszy argument `render`, jak widać, jest obiektem żądanie, oraz ścieżkę względną do pliku szablonu w aplikacji `templates` folderu. Plik szablonu nosi nazwę dla widoku jest obsługiwane w razie potrzeby. Trzeci argument `render` jest następnie słownika zmiennych, które dotyczą szablonu. Może zawierać obiekty w słowniku, w którym to przypadku zmiennej w szablonie mogą odwoływać się do `{{ object.property }}`.
+    Pierwszy argument `render`, jak widać, jest obiektem żądanie, oraz ścieżkę względną do pliku szablonu w aplikacji `templates` folderu. Plik szablonu nosi nazwę dla widoku, który ją obsługuje, w razie potrzeby. Trzeci argument `render` jest następnie słownika zmiennych, które dotyczą szablonu. Może zawierać obiekty w słowniku, w którym to przypadku zmiennej w szablonie mogą odwoływać się do `{{ object.property }}`.
 
 1. Uruchom projekt i sprawdź dane wyjściowe. Powinien zostać wyświetlony komunikat podobny do tego wyświetlonego kroku 2-2, co oznacza, że szablon działania.
 

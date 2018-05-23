@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -86,6 +86,8 @@ W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia na Mi
     ![Mostek pulpitu](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Utwórz pakiet Instalatora (klient z systemem Windows)
+
+Jeśli wymagane bardziej złożonych instalacji aplikacji pulpitu niż [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) zapewniają można utworzyć pakietu, instalacja projektu lub niestandardowego programu inicjującego.
 
 - Instalator MSI na podstawie WiX mogą być tworzone przy użyciu [WiX zestaw narzędzi Visual Studio 2017 rozszerzenia](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

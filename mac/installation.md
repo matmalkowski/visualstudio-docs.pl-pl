@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Konfigurowanie i instalowanie oprogramowania Visual Studio dla komputerów Mac
 
@@ -58,7 +58,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
       - Wybierz pełni wieloplatformowych aplikacji platformy Xamarin — **Android**, **iOS**, i **macOS** platform.
   * **Aplikacje .NET core** — wybierz **.NET Core** platformy.
   * **Aplikacje sieci Web platformy ASP.NET Core** — wybierz **.NET Core** platformy.
-  * **Aplikacji gry dla wielu platform Unity** — nie dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](~/setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji na temat instalowania rozszerzenia Unity.
+  * **Aplikacji gry dla wielu platform Unity** — nie dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji na temat instalowania rozszerzenia Unity.
 
   Na tym ekranie instalacji Wyświetla wersji i rozmiaru poszczególnych składników. Kliknij przycisk każdego składnika, aby wyświetlić listę zależności dla tego składnika (dla systemu Android), zobacz dodatkowe pakiety, które pobiera (dla platformy .NET Core) lub wyświetlić dodatkowe aplikacje wymagane (dla systemów iOS i macOS):
 
@@ -112,4 +112,4 @@ Instalacja programu Visual Studio for Mac pozwala rozpocząć pisanie kodu dla a
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenie gier środowiska Unity
 
-Inne obciążenia można znaleźć w temacie [obciążeń](~/workloads.md) strony.
+Inne obciążenia można znaleźć w temacie [obciążeń](workloads.md) strony.

@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin
 
@@ -101,7 +101,7 @@ Do debugowania aplikacji i platform, bez konieczności używania urządzenia fiz
   
 ### <a name="microsofts-android-emulator"></a>Emulator systemu Android firmy Microsoft 
 
-Zaleca się, że używasz firmy Microsoft [programu Visual Studio Emulator for Android](~/cross-platform/visual-studio-emulator-for-android.md), który został zainstalowany program Visual Studio.  [Programu Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) wideo (Channel9, 5m55s) zawiera omówienie i demonstracji.  
+Zaleca się, że używasz firmy Microsoft [programu Visual Studio Emulator for Android](visual-studio-emulator-for-android.md), który został zainstalowany program Visual Studio.  [Programu Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) wideo (Channel9, 5m55s) zawiera omówienie i demonstracji.  
   
 ### <a name="apples-ios-simulator"></a>Symulatora systemu iOS firmy Apple
 

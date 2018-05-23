@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e25f75d0a1cd5e1b9989172a76d8cf8139957e2c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Dowiedz się podstawowe informacje dotyczące tworzenia aplikacji z platformy Xamarin.Forms w programie Visual Studio
 
@@ -22,7 +22,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
 
 Jest to zazwyczaj lepiej jest użyć biblioteki .NET Standard, a nie Projekt udostępniony dla tego wspólnego kodu. Biblioteka .NET Standard zawiera tych interfejsów API architektury .NET, które można uruchomić na wszystkich platformach docelowych.  
 
-W tym miejscu to aplikacja, która będzie kompilacji. (Z lewej strony, aby zapisać) działa w systemach iOS i telefony z systemem Android i Windows platformy Uniwersalnej systemu Windows 10:
+W tym miejscu to aplikacja, która będzie kompilacji. (Od lewej do prawej) działa w systemach iOS i telefony z systemem Android i Windows platformy Uniwersalnej systemu Windows 10:
   
 [![Przykładowe pogody aplikacji w systemach iOS, Android i platformy uniwersalnej systemu Windows](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   

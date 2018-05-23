@@ -29,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 314a559e4370f254af9473ec38c77d11287c575a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Możesz dołączyć debuger programu Visual Studio do uruchomionego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu kliknij **debugowania > dołączyć do procesu** (lub naciśnij klawisz **CTRL + ALT + P**) można otworzyć **dołączyć do procesu** okno dialogowe.
@@ -124,7 +124,7 @@ Użytkownik może zostać dołączona wielu programach, podczas debugowania, ale
   
 Jeśli użytkownik próbuje dołączyć do procesu należących do niezaufanych konta, pojawi się ostrzeżenie potwierdzenia — okno dialogowe Zabezpieczenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
-W niektórych przypadkach podczas debugowania w sesji pulpitu zdalnego (usług terminalowych) **dostępne procesy** listy nie będą wyświetlane wszystkie dostępne procesy. Jeśli używasz programu Visual Studio jako użytkownik, który ma konto użytkownika standardowego, **dostępne procesy** listy nie będą widoczne procesów uruchomionych w sesji 0, który służy do usługi i inne procesy serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu konta administratora lub uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] za pomocą konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych rozwiązań jest możliwe, trzecia opcja ma dołączyć do procesu, uruchamiając `vsjitdebugger.exe -p` *ProcessId* z wiersza polecenia systemu Windows. Można określić za pomocą tlist.exe identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowania narzędzi dla systemu Windows, dostępne pod adresem [WDK i WinDbg pliki do pobrania](http://go.microsoft.com/fwlink/?LinkId=168279).
+W niektórych przypadkach podczas debugowania w sesji pulpitu zdalnego (usług terminalowych) **dostępne procesy** listy nie będą wyświetlane wszystkie dostępne procesy. Jeśli używasz programu Visual Studio jako użytkownik, który ma konto użytkownika standardowego, **dostępne procesy** listy nie będą widoczne procesów uruchomionych w sesji 0, który służy do usługi i inne procesy serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu konta administratora lub uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] za pomocą konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych rozwiązań jest możliwe, trzecia opcja ma dołączyć do procesu, uruchamiając `vsjitdebugger.exe -p` *ProcessId* z wiersza polecenia systemu Windows. Można określić za pomocą tlist.exe identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowania narzędzi dla systemu Windows, dostępne pod adresem [WDK i WinDbg pliki do pobrania](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_Scenarios"></a> Typowe scenariusze debugowania
 

@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Przy użyciu programu Visual Studio Mac Tools for Unity
 
@@ -17,7 +17,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio dla komputerów M
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>Otwieranie skrypty środowiska Unity w programie Visual Studio dla komputerów Mac
 
-Po Visual Studio for Mac [edytorem skryptu zewnętrznego dla Unity](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac), otwarcie dowolnego skryptu z Edytor platformy Unity spowoduje automatyczne uruchomienie lub Otwórz przełącznika dla programu Visual Studio dla komputerów Mac przy użyciu wybranego skryptu.
+Po Visual Studio for Mac [edytorem skryptu zewnętrznego dla Unity](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac), otwarcie dowolnego skryptu z Edytor platformy Unity spowoduje automatyczne uruchomienie lub Otwórz przełącznika dla programu Visual Studio dla komputerów Mac przy użyciu wybranego skryptu.
 
 Alternatywnie programu Visual Studio for Mac można otworzyć za pomocą skryptu otwarty w edytorze źródła, wybierając **otworzyć projektu C#** z **zasoby** menu w Unity.
 

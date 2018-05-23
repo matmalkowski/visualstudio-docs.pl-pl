@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
@@ -32,7 +32,7 @@ Z tego samouczka, dowiesz się, jak:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi mieć zainstalowanego programu Visual Studio i obciążenia programowanie Node.js.
+* Musi mieć Visual Studio 2017 r zainstalowany i jego obciążenie programowanie Node.js.
 
     Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
 
@@ -95,6 +95,8 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    Poprzedni kod dodaje znaczników do dynamicznego generowania strony HTML z tytułu i komunikat powitalny. Strona zawiera również kod, aby wyświetlić obraz, który zmienia się przy każdym naciśnięciu przycisku.
+
 1. Otwórz w folderze tras *index.js*.
 
 1. Dodaj następujący kod przed wywołaniem do `router.get`:
@@ -110,6 +112,8 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
     }
     ````
 
+    Ten kod tworzy obiekt danych, który będzie jest przekazywana do dynamicznie generowanym strony HTML.
+
 1. Zastąp `router.get` wywołania funkcji z następującym kodem:
 
     ```js
@@ -117,14 +121,16 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    Poprzedni kod ustawia bieżącej strony przy użyciu obiektu router Express i renderuje stronę, przekazanie obiektu tytuł i danych do strony.
 
-    Występuje błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy go rozwiązać, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.
+    Aby zademonstrować kilka funkcji programu Visual Studio, jest dostępna wystąpił błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy naprawić błąd, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.
 
 ## <a name="use-intellisense"></a>Używanie IntelliSense
 
 1. W *index.js*, przejdź do wiersza zawierającego kod `res.render`.
 
-1. Po `data` ciągu, wpisz `: get` i IntelliSense zostanie wyświetlona `getData` funkcji. Wybierz `getData`.
+1. Umieść kursor po `data` ciągu, wpisz `: get` i IntelliSense zostanie wyświetlona `getData` funkcji. Wybierz `getData`.
 
     ![Używanie IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

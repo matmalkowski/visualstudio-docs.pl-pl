@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 28127fec86f839110ff53de3e6d7d2466adc3489
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilowanie i tworzenia w programie Visual Studio dla komputerów Mac
 
@@ -21,7 +21,7 @@ Za pomocą programu Visual Studio dla komputerów Mac umożliwia tworzenie i uru
 
 Wszystkie projekty i rozwiązania utworzone w IDE ma domyślnej konfiguracji kompilacji, która Definiowanie kontekstu dla kompilacji. Te konfiguracje można edytowane lub Utwórz swój własny. Tworzenie lub modyfikowanie tych konfiguracji zostanie automatycznie zaktualizowane do pliku projektu, który jest następnie używany przez program MSBuild do tworzenia projektu.  
 
-Aby uzyskać więcej informacji dotyczących sposobu tworzenia projektów i rozwiązań w środowisku IDE, zobacz [kompilowanie oraz Oczyszczanie projektów i rozwiązań](~/building-and-cleaning-projects-and-solutions.md) przewodnik.
+Aby uzyskać więcej informacji dotyczących sposobu tworzenia projektów i rozwiązań w środowisku IDE, zobacz [kompilowanie oraz Oczyszczanie projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md) przewodnik.
 
 Visual Studio for Mac można również wykonać następujące czynności:
 

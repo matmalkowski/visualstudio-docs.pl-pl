@@ -9,11 +9,11 @@ description: Postanowienia licencyjne subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 **POSTANOWIENIA LICENCYJNE DOTYCZĄCE OPROGRAMOWANIA FIRMY MICROSOFT DLA NASTĘPUJĄCYCH SUBSKRYPCJI PROGRAMU VISUAL STUDIO:**
 
@@ -128,7 +128,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
     (czasami określane jako "Multipleksowanie" lub "pooling"), nie zmniejszy liczby licencji dowolnego typu, które są potrzebne.
 
 
-8. **OBOWIĄZKOWE AKTYWACJI.** Aktywacja kojarzy korzystanie z oprogramowania z określonym urządzeniem. Podczas aktywacji oprogramowania, które wysyła informacje o oprogramowanie i urządzenia do firmy Microsoft. Informacje te obejmują klucz wersji, język i produktu oprogramowania, adres IP urządzenia i informacji o konfiguracji sprzętowej urządzenia. Aby uzyskać więcej informacji, zobacz [microsoft.com/piracy/activation.mspx. [ (http://microsoft.com/piracy/activation.mspx)] Za pomocą oprogramowania, użytkownik wyraża zgodę na przekazywanie tych informacji. Przed aktywowaniem, masz prawa do używania wersji oprogramowania zainstalowanego w ramach procesu instalacji. **Prawo do korzystania z oprogramowania po upływie czasu określonego w procesie instalacji jest ograniczony, chyba że zostanie aktywowany.** To, aby uniemożliwić korzystanie z niego bez licencji. Nie można kontynuować za pomocą oprogramowania po upływie tego czasu, jeśli nie zostanie aktywowany. Jeśli urządzenie jest połączone z Internetem, oprogramowanie może automatycznie połączyć się z Microsoft aktywacji. Można również aktywować oprogramowania ręcznie przez Internet lub telefon. Jeśli tak zrobisz, mogą stosować Internet i telefon opłaty za usługę. Niektóre zmiany składniki komputera lub oprogramowanie może wymagać ponownego uaktywnienia oprogramowania. **Oprogramowanie przypominać aktywować go przed wykonaniem.**
+8. **OBOWIĄZKOWE AKTYWACJI.** Aktywacja kojarzy korzystanie z oprogramowania z określonym urządzeniem. Podczas aktywacji oprogramowania wysyła informacje o oprogramowanie i urządzenia do firmy Microsoft. Informacje te obejmują wersji, język i klucz produktu oprogramowania, adres IP urządzenia i informacji o konfiguracji sprzętowej urządzenia. Aby uzyskać więcej informacji, zobacz [Aktywacja produktów firmy Microsoft](https://www.microsoft.com/en-us/piracy/mpa.aspx). Za pomocą oprogramowania, użytkownik wyraża zgodę na przekazywanie tych informacji. Przed aktywowaniem, masz prawa do używania wersji oprogramowania zainstalowanego w ramach procesu instalacji. **Prawo do korzystania z oprogramowania po upływie czasu określonego w procesie instalacji jest ograniczony, chyba że zostanie aktywowany.** To, aby uniemożliwić korzystanie z niego bez licencji. Nie można kontynuować za pomocą oprogramowania po upływie tego czasu, jeśli nie zostanie aktywowany. Jeśli urządzenie jest połączone z Internetem, oprogramowanie może automatycznie połączyć się z Microsoft aktywacji. Można również aktywować oprogramowania ręcznie przez Internet lub telefon. Jeśli tak zrobisz, mogą stosować Internet i telefon opłaty za usługę. Niektóre zmiany składniki komputera lub oprogramowanie może wymagać ponownego uaktywnienia oprogramowania. **Oprogramowanie przypominać aktywować go przed wykonaniem.**
 
 9. **SPRAWDZANIE POPRAWNOŚCI.**
 

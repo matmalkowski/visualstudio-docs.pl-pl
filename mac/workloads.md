@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 2d5fa2a153b91799417430823cc3b3199daec4b6
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 42d0f9682f2f0c54b86fc24cdfd5d82569ddbb5b
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac obciążeń
 
@@ -33,8 +33,8 @@ Aby uzyskać więcej informacji na temat używania platformy .NET Core, zapoznaj
 
 ## <a name="aspnet-core-web-applications"></a>Aplikacje sieci Web platformy ASP.NET Core
 
-Aby uzyskać informacji na temat pobierania uruchomiony przy użyciu platformy ASP.NET Core w programie Visual Studio dla komputerów Mac, zobacz [wprowadzenie do platformy ASP.NET Core](~/asp-net-core.md) przewodnik lub zapoznaj się z aplikacji sieci web platformy ASP.NET Core [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+Aby uzyskać informacji na temat pobierania uruchomiony przy użyciu platformy ASP.NET Core w programie Visual Studio dla komputerów Mac, zobacz [wprowadzenie do platformy ASP.NET Core](asp-net-core.md) przewodnik lub zapoznaj się z aplikacji sieci web platformy ASP.NET Core [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
 ## <a name="cross-platform-unity-game-development"></a>Tworzenie gier środowiska Unity i platform
 
-Aby zacząć tworzyć gry z Unity, zobacz [strony Instalatora](~/setup-vsmac-tools-unity.md) i [przewodnik przy użyciu narzędzi platformy Unity](~/using-vsmac-tools-unity.md), lub sprawdź jednolitości [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).
+Aby zacząć tworzyć gry z Unity, zobacz [strony Instalatora](setup-vsmac-tools-unity.md) i [przewodnik przy użyciu narzędzi platformy Unity](using-vsmac-tools-unity.md), lub sprawdź jednolitości [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).

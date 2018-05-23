@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie dostępu do danych w programie Visual Studio
+title: Dostęp do danych i narzędzia
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
+# <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
 W programie Visual Studio, można utworzyć aplikacji, które łączenie z danymi w praktycznie dowolne bazy danych produktu lub usługi, w dowolnym miejscu i formatu — na komputerze lokalnym, w sieci lokalnej lub w chmurze public, private lub hybrydowego.
 
 W przypadku aplikacji w JavaScript, Python, PHP, Ruby lub C++ połączenie z danych tak jak wykonywanie dodatkowych czynności, uzyskując bibliotek i pisanie kodu. W przypadku aplikacji .NET Visual Studio udostępnia narzędzia, które umożliwia Eksplorowanie źródeł danych, tworzyć modele obiektów do przechowywania i obsługi danych w pamięci i powiązania danych interfejsu użytkownika. Microsoft Azure udostępnia zestawy SDK dla platformy .NET, Java, Node.js, PHP, Python, Ruby i aplikacji mobilnych i narzędzia programu Visual Studio do połączenia usługi Azure Storage.
 
-Następujące przedstawiono kilka z wielu systemów magazynu i bazy danych, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują wszystkie inicjowania obsługi i zarządzania odpowiedni magazyn danych.  [Azure Tools dla Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) jest opcjonalnym składnikiem, który umożliwia pracę z magazynów Azure danych bezpośrednio z programu Visual Studio. Większości produktów innych SQL i NoSQL bazy danych wymienione w tym miejscu może być obsługiwany na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. W tym scenariuszu jest odpowiedzialny za zarządzanie sama baza danych.
+Następujące przedstawiono kilka z wielu systemów magazynu i bazy danych, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują wszystkie inicjowania obsługi i zarządzania odpowiedni magazyn danych. **Azure programowanie** obciążeń w [programu Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) umożliwia pracę z magazynów Azure danych bezpośrednio z programu Visual Studio.
+
+![Programowanie Azure obciążenia](media/azure-development-workload.png)
+
+Większości produktów innych SQL i NoSQL bazy danych wymienione w tym miejscu może być obsługiwany na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. Jeśli na serwerze bazy danych na maszynie wirtualnej Microsoft Azure jest odpowiedzialny za zarządzanie sama baza danych.
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ Wielu dostawców bazy danych i stron trzecich obsługiwać integracji z programe
 
 Wszystkie .NET dostępu do danych, w tym w .NET Core jest oparta na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Visual Studio ma kilka narzędzi i projektantów, które współpracują z ADO.NET umożliwiające nawiązywanie połączeń z bazami danych, manipulowania danymi i przedstawiają dane do użytkownika. Dokumentacja w tej sekcji opisano sposób używania tych narzędzi. Można również zaprogramować bezpośrednio przed ADO.NET— obiekty polecenia. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Dokumentacja dostępu do danych związane z platformy ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Dokumentacja dostępu do danych związane z programem ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Uniwersalnych aplikacji platformy systemu Windows (UWP) w języku C# lub Visual Basic umożliwia dostęp do usługi Azure Storage i innymi usługami Azure zestaw Microsoft Azure SDK dla platformy .NET. Klasa Windows.Web.HttpClient umożliwia komunikację z dowolnej usługi RESTful. Aby uzyskać więcej informacji, zobacz [sposób nawiązywania połączenia z serwerem HTTP przy użyciu Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

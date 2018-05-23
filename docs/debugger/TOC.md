@@ -81,7 +81,6 @@
 ##### [Instrukcje: debugowanie w trybie mieszanym](how-to-debug-in-mixed-mode.md)
 #### [Przygotowanie debugowania: projekty konsoli](debugging-preparation-console-projects.md)
 #### [Instrukcje: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Instrukcje: debugowanie przy użyciu źródła Code Center Premium](how-to-debug-with-code-center-premium-source.md)
 #### [Debugowanie i proces hostingu](debugging-and-the-hosting-process.md)
 #### [Instrukcje: określanie wersji programu .NET Framework do debugowania](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Tworzenie niestandardowych widoków danych](viewing-data-in-the-debugger.md)

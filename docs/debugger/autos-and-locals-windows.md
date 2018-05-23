@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Sprawdź zmienne w automatycznych i zmiennych lokalnych Windows w programie Visual Studio
 **Automatycznych** okna (podczas debugowania, **CTRL + ALT + V, A**, lub **debugowania > Windows > automatycznych**) i **zmiennych lokalnych** okna (podczas debugowania **CTRL + ALT + V, L**, lub **Debuguj > Windows > Zmienne lokalne**) są bardzo przydatne, gdy chcesz sprawdzić wartości zmiennych podczas debugowania. **Zmiennych lokalnych** wyświetlane zmienne zdefiniowane w zakresie lokalnego jest zazwyczaj funkcji lub metody, który jest aktualnie wykonywany. **Automatycznych** okna są wyświetlane zmienne używane wokół bieżącego wiersza (miejsce, w której debuger został zatrzymany). Dokładnie zmienne, które są wyświetlane w tym oknie różni się w różnych językach. Zobacz [co zmienne są wyświetlane w oknie automatycznych?](#bkmk_whatvariables) poniżej.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 Aby uzyskać więcej informacji o debugowaniu podstawowe zobacz [wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Spojrzenie na obiektach w oknach zmiennych automatycznych i zmiennych lokalnych  
-Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych lokalnych jako drzewa formantów. Kliknij strzałkę w lewo nazwę zmiennej, aby rozwinąć widok, aby wyświetlić pola i właściwości. Oto przykład [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) obiektu w **zmiennych lokalnych** okno:  
+Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych lokalnych jako drzewa formantów. Kliknij strzałkę w lewo nazwę zmiennej, aby rozwinąć widok, aby wyświetlić pola i właściwości. Oto przykład [FileStream](/dotnet/api/system.io.filestream) obiektu w **zmiennych lokalnych** okno:  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   

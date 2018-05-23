@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Wybieranie strategii wdrażania ClickOnce
 Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; strategii, która zależy przede wszystkim typu aplikacji, w której wdrażasz. Poniżej przedstawiono wszystkie trzy strategie wdrażania:  
@@ -46,15 +46,6 @@ Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment
   
  Jest to domyślna strategia wdrażania.  
   
-## <a name="install-from-a-cd"></a>Instalacja z dysku CD  
- Gdy jest używana ta strategia, aplikacja jest wdrażana na nośniku wymiennym, takim jak dysk CD-ROM lub DVD. W przypadku użycia poprzedniej opcji, gdy użytkownik wybierze opcję zainstalowania aplikacji, jest zainstalowana i uruchomiona, a elementy są dodawane do **Start** menu i **Dodaj lub usuń programy** w **formantu Panel**.  
-  
- Ta strategia sprawdza się najlepiej w przypadku aplikacji wdrażanej dla użytkowników, którzy nie mają stałej łączności sieciowej lub używają połączeń o niskiej przepustowości. Aplikacja jest instalowana z nośnika wymiennego, więc do instalacji nie jest potrzebne połączenie sieciowe, jednak łączność sieciowa jest potrzebna do pobierania aktualizacji aplikacji.  
-  
- Aby włączyć tej strategii wdrażania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kliknij przycisk **z dysku CD-ROM lub DVD-ROM** na **sposób instalacji** strony Kreatora publikacji.  
-  
- Aby ręcznie włączyć tej strategii wdrażania, zmień **deploymentprovider —** tag w manifeście wdrażania. (W programie Visual Studio, ta właściwość jest ujawniona jako **URL instalacji** na **publikowania** strony projektanta projektu. W Mage.exe jest **Start lokalizacji**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Uruchamianie aplikacji z sieci Web lub udziału sieciowego  
  Ta strategia jest podobna do pierwszej, z tym że aplikacja zachowuje się jak aplikacja sieci Web. Gdy użytkownik kliknie łącze na stronie sieci Web (lub kliknie dwukrotnie ikonę w udziale plików), aplikacja jest uruchamiana. Gdy użytkownicy Zamknij aplikację, nie jest już dostępny na komputerze lokalnym; nic nie jest dodane do **Start** menu lub **Dodaj lub usuń programy** w **Panelu sterowania**.  
   
@@ -66,6 +57,15 @@ Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment
  Aby włączyć tej strategii wdrażania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kliknij przycisk **nie należy instalować aplikacji** na **instalacji lub uruchomić z sieci Web** strony Kreatora publikacji.  
   
  Aby ręcznie włączyć tej strategii wdrażania, zmień **zainstalować** tag w manifeście wdrażania. (Wartość może być **true** lub **false**. W Mage.exe, użyj **Online tylko** opcji **typu aplikacji** listy.)  
+
+## <a name="install-from-a-cd"></a>Instalacja z dysku CD  
+ Gdy jest używana ta strategia, aplikacja jest wdrażana na nośniku wymiennym, takim jak dysk CD-ROM lub DVD. W przypadku użycia poprzedniej opcji, gdy użytkownik wybierze opcję zainstalowania aplikacji, jest zainstalowana i uruchomiona, a elementy są dodawane do **Start** menu i **Dodaj lub usuń programy** w **formantu Panel**.  
+  
+ Ta strategia sprawdza się najlepiej w przypadku aplikacji wdrażanej dla użytkowników, którzy nie mają stałej łączności sieciowej lub używają połączeń o niskiej przepustowości. Aplikacja jest instalowana z nośnika wymiennego, więc do instalacji nie jest potrzebne połączenie sieciowe, jednak łączność sieciowa jest potrzebna do pobierania aktualizacji aplikacji.  
+  
+ Aby włączyć tej strategii wdrażania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], kliknij przycisk **z dysku CD-ROM lub DVD-ROM** na **sposób instalacji** strony Kreatora publikacji.  
+  
+ Aby ręcznie włączyć tej strategii wdrażania, zmień **deploymentprovider —** tag w manifeście wdrażania. (W programie Visual Studio, ta właściwość jest ujawniona jako **URL instalacji** na **publikowania** strony projektanta projektu. W Mage.exe jest **Start lokalizacji**.)  
   
 ## <a name="web-browser-support"></a>Obsługa przeglądarek sieci Web  
  Aplikacje, których platformą docelową jest program .NET Framework 3.5, można zainstalować przy użyciu dowolnej przeglądarki.  

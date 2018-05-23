@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName — Element (szablony Visual Studio)
 Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu system będzie generował domyślną nazwę szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
@@ -59,7 +59,7 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu
   
  Jeśli `ProvideDefaultName` jest element `false`, **nazwa** pola **Dodaj nowy element** i **nowy projekt** okien dialogowych zawierają wartość `<Enter_name>`.  
   
- Użyj [defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) element, aby określić domyślną nazwę projektu lub elementu **Dodaj nowy element** i **nowy projekt** okien dialogowych.  
+ Użyj [defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) element, aby określić domyślną nazwę projektu lub elementu **Dodaj nowy element** i **nowy projekt** okien dialogowych. Gdy wartość `ProvideDefaultName` element jest `true`, pominięcie `DefaultName` elementu dla projektów wypełnia okna dialogowego z nazwy szablonu, czyli wartość z [nazwa](../extensibility/name-element-visual-studio-templates.md) elementu.
   
 ## <a name="example"></a>Przykład  
  Poniższy kod przykładzie `ProvideDefaultName` elementu `false`.  

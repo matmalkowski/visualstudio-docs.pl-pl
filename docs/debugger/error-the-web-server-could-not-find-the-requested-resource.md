@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e6fec89a151525a84349b7019c7569eb752172e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: serwer sieci Web nie mógł znaleźć żądanego zasobu
 Z powodu zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd ogólny.  
@@ -29,8 +29,7 @@ Z powodu zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd ogól
   
  Istnieje wiele możliwych przyczyn tego błędu. Kilka najbardziej typowe przyczyny obejmują problem z instalacji usług IIS lub konfiguracji, konfiguracja witryny sieci web lub uprawnień w systemie plików. Możesz spróbować uzyskać dostęp do zasobu w przeglądarce. W zależności od sposobu skonfigurowania usług IIS może być konieczne na serwerze przy użyciu przeglądarki sieci lokalnej lub Sprawdź dziennik błędów programu IIS, aby uzyskać szczegółowy komunikat o błędzie.  
   
- Aby uzyskać więcej informacji na temat usuwania usług IIS, zobacz [zarządzania usługami IIS i administrowanie](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Aby uzyskać więcej informacji na temat usuwania usług IIS, zobacz [zarządzania usługami IIS i administrowanie](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia zabezpieczeń dotyczące narzędzia UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Błąd: Serwer sieci Web został zablokowany i blokuje zlecenie DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
