@@ -8,26 +8,26 @@
 ## [Wdrażanie na platformie Azure](quickstart-deploy-to-azure.md)
 # Samouczki
 ## .NET
-### [Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania](/dotnet/core/deploying/deploy-with-vs)
-### [Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Tworzenie aplikacji ClickOnce z wiersza poleceń](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)
 ### [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)
-### [Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git](/aspnet/core/publishing/azure-continuous-deployment)
-### [Wdrażanie platformy ASP.NET w usługach IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Wdrażanie platformy ASP.NET w usługach IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Natywne
-### [Wdrażanie w Visual C++](/cpp/ide/deployment-in-visual-cpp)
-### [Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [Wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Wdrażanie w języku Visual C++...](/cpp/ide/deployment-in-visual-cpp)
+### [Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Wdrażanie aplikacji natywnej za pomocą technologii ClickOnce...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## Platforma UWP
-### [Tworzenie pakietu aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
+### [Tworzenie pakietu aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Publikowanie w witrynie internetowej platformy Azure za pomocą narzędzia Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Publikowanie w witrynie internetowej platformy Azure za pomocą narzędzia Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [Publikowanie w usłudze Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Publikowanie w usłudze Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Przewodniki z instrukcjami
 ## [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](clickonce-security-and-deployment.md)
 ### [Wybieranie strategii wdrażania ClickOnce](choosing-a-clickonce-deployment-strategy.md)
