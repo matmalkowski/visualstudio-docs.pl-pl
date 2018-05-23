@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 
@@ -116,7 +116,7 @@ Odpowiedź: tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do **ustaw
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1: 3: tworzenie środowiska wirtualnego i wyklucz je z kontroli źródła
 
-Teraz, gdy skonfigurowano kontroli źródła dla projektu, można utworzyć środowisko wirtualne niezbędne pakiety Django, które wymaga projektu. Następnie można użyć **Team Explorer** Aby wykluczyć folder w środowisku z kontrolą źródła.
+Teraz, gdy skonfigurowano kontroli źródła dla projektu, można utworzyć środowisko wirtualne zawiera niezbędne pakiety Django dla projektu. Następnie można użyć **Team Explorer** Aby wykluczyć folder w środowisku z kontrolą źródła.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodawanie środowiska wirtualnego**.
 

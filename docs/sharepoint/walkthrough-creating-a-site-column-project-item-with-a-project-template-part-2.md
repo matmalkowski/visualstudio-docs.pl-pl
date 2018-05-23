@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można utworzyć nowy projekt, który zawiera element projektu. Informacje zbierane można zainicjować elementu projektu.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
 -   Debugowanie i testowanie kreatora.  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Serii próbki przepływów pracy, zobacz [przykłady przepływu pracy programu SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać tego przewodnika, należy najpierw utworzyć rozwiązanie SiteColumnProjectItem, wykonując [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  

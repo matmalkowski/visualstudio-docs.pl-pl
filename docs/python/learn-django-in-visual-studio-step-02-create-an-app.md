@@ -11,8 +11,8 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/23/2018

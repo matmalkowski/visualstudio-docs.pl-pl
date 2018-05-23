@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
   Rozwiązania programu SharePoint można debugować przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Po rozpoczęciu debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu do serwera programu SharePoint, a następnie otwiera wystąpienia witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Podczas debugowania projektów przepływu pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje szablonu przepływu pracy (w zależności od jego typu) do biblioteki lub do listy. Następnie należy uruchomić szablon przepływu pracy ręcznie lub przez dodanie lub uaktualnienie elementu. Następnie można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aby debugować przepływ pracy.  
   
 > [!NOTE]  
->  Jeśli dodasz odwołania do innych zestawów, upewnij się, że zainstalowanych zestawów w globalnej pamięci podręcznej zestawów ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązania przepływu pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Jeśli dodasz odwołania do innych zestawów, upewnij się, że zainstalowanych zestawów w globalnej pamięci podręcznej zestawów ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązania przepływu pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Jednak proces wdrożenia nie można uruchomić przepływu pracy. Należy uruchomić przepływ pracy z witryny sieci Web programu SharePoint. Można też uruchomić przepływ pracy za pomocą aplikacji klienckiej, takich jak Microsoft Office Word 2010 lub przy użyciu osobnych kodu po stronie serwera. Użyj jednej z metod określone w **Kreator dostosowania programu SharePoint**.  
   
- Na przykład jeśli określono, że przepływ pracy można uruchomić ręcznie, należy uruchomić przepływ pracy bezpośrednio z poziomu elementu w bibliotece lub na liście. Aby uzyskać więcej informacji na temat ręcznego uruchamiania przepływu pracy, zobacz [ręcznie uruchomić przepływ pracy element dokumentu](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Na przykład jeśli określono, że przepływ pracy można uruchomić ręcznie, należy uruchomić przepływ pracy bezpośrednio z poziomu elementu w bibliotece lub na liście. Aby uzyskać więcej informacji na temat ręcznego uruchamiania przepływu pracy, zobacz [ręcznie uruchomić przepływ pracy element dokumentu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Odbiorcy zdarzeń funkcji debugowania  
  Domyślnie podczas uruchamiania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikacji programu SharePoint, jego funkcje są automatycznie aktywowane automatycznie na serwerze programu SharePoint. Jednak powoduje problemy podczas debugowania odbiorcy zdarzeń funkcji, ponieważ po aktywowaniu funkcji przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], działa w ramach innego procesu niż debugera. Oznacza to, że niektóre funkcje debugowania, takie jak punkty kontrolne, nie będą działać poprawnie.  

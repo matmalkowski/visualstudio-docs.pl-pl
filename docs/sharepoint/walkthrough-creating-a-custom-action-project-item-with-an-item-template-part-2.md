@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Wskazówki: tworzenie niestandardowej akcji elementu projektu z Szablonem elementu, Część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonu elementów programu Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane można zainicjować elementu projektu.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Debugowanie i testowanie kreatora.  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [pliki projektu dla wskazówki rozszerzalność narzędzi SharePoint](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Możesz pobrać próbki z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) który przedstawiono sposób tworzenia działań niestandardowych do przepływu pracy.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać tego przewodnika, należy najpierw utworzyć rozwiązanie CustomActionProjectItem, wykonując [wskazówki: Tworzenie elementu projektu akcji niestandardowych z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  

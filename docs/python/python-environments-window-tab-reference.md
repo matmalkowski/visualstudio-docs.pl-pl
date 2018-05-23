@@ -1,7 +1,7 @@
 ---
 title: Odwołanie okno środowiska Python
 description: Szczegółowe informacje na każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio.
-ms.date: 05/07/2018
+ms.date: 05/22/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odwołanie karty okno środowiska Python
 
@@ -75,7 +75,7 @@ Jeśli jest dostępna, zawiera szczegółowe informacje, zgodnie z opisem w poni
 
 *Również z etykietą "pip" we wcześniejszych wersjach.*
 
-Zarządza pakiety zainstalowane w środowisku przy użyciu narzędzia pip, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). W Visual Studio 2017 wersji 15.7 lub nowszym **pakietów (Conda)** opcja jest dostępna, który używa Menedżera pakietów conda zamiast tego. (Jeśli nie widzisz, że wybór, ustaw dla opcji **narzędzia** > **opcje** > **Python** > **eksperymentalne**   >  **Użyj Menedżera pakietów conda dostępne (zamiast pip)** i uruchom ponownie program Visual Studio.)
+Zarządza pakiety zainstalowane w środowisku przy użyciu narzędzia pip, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). W Visual Studio 2017 wersji 15.7 lub nowszym **pakietów (Conda)** , który używa Menedżera pakietów conda zamiast tego zostanie wyświetlona karta. (Jeśli nie widzisz, że wybór, ustaw dla opcji **narzędzia** > **opcje** > **Python** > **eksperymentalne**   >  **Użyj Menedżera pakietów conda dostępne (zamiast pip)** i uruchom ponownie program Visual Studio.)
 
 Pakiety, które są już zainstalowane są wyświetlane z formantami, aby zaktualizować (Strzałka w górę) i Odinstaluj (X koło) pakietu:
 
@@ -85,7 +85,13 @@ Wprowadzenie listę zainstalowanych pakietów, jak również pakiety, które mog
 
 ![Karta pakietów środowiska Python z wyszukiwania na "num"](media/environments-pip-tab.png)
 
-Można również bezpośrednio wprowadzić dowolne `pip install` polecenie w polu wyszukiwania, takie jak tym flagi `--user` lub `--no-deps`.
+Jak widać na ilustracji powyżej, w wynikach wyszukiwania liczba pakietów, które pasują do szukanego terminu; Pierwsza pozycja na liście jednak to polecenie do uruchomienia `pip install <name>` bezpośrednio. Jeśli używasz **pakietów (Conda)** karcie, zamiast tego zobacz `conda install <name>`:
+
+![Karta pakiety Conda przedstawiający conda polecenie instalacji](media/environments-conda-tab-install.png)
+
+W obu przypadkach można dostosować instalację, dodając argumenty w polu wyszukiwania po nazwie pakietu. Po dołączeniu argumenty w wynikach wyszukiwania pokazuje `pip install` lub `conda install` następuje zawartość pola wyszukiwania:
+
+![Przy użyciu argumentów na polecenia instalacji narzędzia pip i conda](media/environments-pip-tab-arguments.png)
 
 Instalowanie pakietu tworzy oddzielne podfoldery w środowisku `Lib` folder w systemie plików. Na przykład, jeśli masz zainstalowany 3,6 Python w `c:\Python36`, pakiety są instalowane w `c:\Python36\Lib`; Jeśli masz zainstalowany w Anaconda3 `c:\Program Files\Anaconda3` , a następnie pakiety są instalowane w `c:\Program Files\Anaconda3\Lib`.
 

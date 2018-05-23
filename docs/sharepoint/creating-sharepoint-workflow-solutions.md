@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia narzędzia do tworzenia niestandardowych przepływów pracy, które Zarządzanie cyklem życia dokumenty i elementy listy w witrynie sieci Web programu SharePoint. Elementy dostarczone obejmują projektanta, zestaw kontrolek działania i niezbędne odwołania zestawów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera również **Kreator dostosowania programu SharePoint**, aby utworzyć i skonfigurować przepływy pracy.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Przepływy pracy w programie SharePoint  
  Podczas dodawania przepływu pracy do listy lub biblioteki programu SharePoint, można wymusić proces biznesowy dla wszystkich elementów w bibliotece lub na liście. Przepływ pracy zawiera opis akcji, które system lub użytkowników, należy wykonać na każdym elemencie, takie jak wysyłanie element, aby edytować, a następnie przejrzeć. Te działania, znane jako *działania*, są blokami konstrukcyjnymi przepływu pracy.  
   
- Można utworzyć przepływów pracy programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je dla witryny sieci Web programu SharePoint. Po wdrożeniu przepływu pracy w programie SharePoint, należy ją skojarzyć z biblioteki lub listy. Może następnie być uruchamiany automatycznie przez proces, lub ręcznie przez użytkownika. Aby uzyskać więcej informacji na temat operacji przepływu pracy, zobacz [przy użyciu przepływów pracy do zarządzania procesami](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Można utworzyć przepływów pracy programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je dla witryny sieci Web programu SharePoint. Po wdrożeniu przepływu pracy w programie SharePoint, należy ją skojarzyć z biblioteki lub listy. Może następnie być uruchamiany automatycznie przez proces, lub ręcznie przez użytkownika. Aby uzyskać więcej informacji na temat operacji przepływu pracy, zobacz [tworzenie przepływów pracy programu SharePoint przy użyciu programu Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Tworzenie przepływów pracy programu SharePoint niestandardowych  
  Dwa projekty przepływu pracy programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **sekwencyjnego przepływu pracy** i **przepływ pracy automatu stanów**.  

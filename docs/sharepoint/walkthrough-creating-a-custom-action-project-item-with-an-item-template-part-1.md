@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f3311b96d8f1287f2c2f2a81f9b37e51d4f7f6
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1
   System projektu programu SharePoint w Visual Studio można rozszerzyć przez utworzenie własnego projektu typów elementów. W tym przewodniku spowoduje utworzenie elementu projektu, który można dodać do projektu SharePoint do tworzenia niestandardowych akcji w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu, aby **Akcje witryny** menu witryny programu SharePoint.  
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/22/2018
  Jest to autonomiczny wskazówki. Po ukończeniu tego przewodnika, można zwiększyć przez dodanie kreatora do szablonu elementu elementu projektu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowych z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Możesz pobrać próbki z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) który przedstawiono sposób tworzenia działań niestandardowych do przepływu pracy.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  

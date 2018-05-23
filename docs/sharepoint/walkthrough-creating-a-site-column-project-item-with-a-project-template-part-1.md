@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Wskazówki: tworzenie elementu projektu kolumn witryny z Szablonem projektu, Część 1
   SharePoint — projekty są kontenerami dla jednego lub więcej elementów projektu programu SharePoint. System projektu programu SharePoint w Visual Studio można rozszerzyć przez utworzenie własnych typów elementów projektu SharePoint i kojarzenie je za pomocą szablonu projektu. W tym przewodniku określi typu elementu projektu do tworzenia kolumny witryny, a następnie zostanie utworzony szablon projektu, który może służyć do tworzenia nowego projektu, który zawiera elementu projektu kolumn witryny.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  Jest to autonomiczny wskazówki. Po ukończeniu tego przewodnika, można zwiększyć przez dodanie kreatora do szablonu projektu elementu projektu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Serii próbki przepływów pracy, zobacz [przykłady przepływu pracy programu SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  
