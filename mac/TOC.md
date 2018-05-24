@@ -66,4 +66,5 @@
 # [Ułatwienia dostępu](accessibility.md)
 
 # [Rozwiązywanie problemów](troubleshooting.md)
+## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
