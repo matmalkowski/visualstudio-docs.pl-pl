@@ -9,11 +9,11 @@ description: Dowiedz się, jak Administratorzy mogą usuwać przypisania subskry
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d96cc46a43e945f4ff59ba02ea6c132385f5908
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Usuwanie przypisania w ramach subskrypcji programu Visual Studio
 
@@ -22,4 +22,4 @@ Gdy subskrybent nie wymaga już subskrypcji programu Visual Studio, na przykład
 2.  Aby usunąć wybrane subscriber(s), kliknij przycisk **usunąć**. 
 3.  Po wyświetleniu komunikatu prośbą o potwierdzenie usunięcia, kliknij przycisk **OK**. 
 
-![Usuń subskrybentów](_img\delete-license\delete-subscribers.png)
+    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />

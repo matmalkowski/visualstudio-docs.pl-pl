@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8d5eca01cc5a9f910c16685f4aec36cd69f37a94
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie problemów aplikacji interakcji dotyczące problemów z wydajnością w aplikacji XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Można analizować czasu poświęconego przez aplikację przygotowywanie ramki interfejsu użytkownika (układu i renderowania), sieci i dysku żądań obsługi, a w scenariuszach, takich jak uruchamiania aplikacji, ładowania strony, a następnie zmień rozmiar systemu Windows.  
@@ -36,7 +36,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 > [!NOTE]
 >  Można zbierać i analizować dane użycia procesora CPU i dane dotyczące zużycia energii wraz z **ApplicationTimeline** danych. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Zbieranie danych osi czasu aplikacji  
+## <a name="collect-application-timeline-data"></a>Zbieranie danych osi czasu aplikacji  
  Czas odpowiedzi aplikacji można profilu na komputerze lokalnym, podłączonego urządzenia, symulator Visual Studio lub emulatory lub urządzenie zdalne. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -61,7 +61,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
   
      ![Oś czasu profilera raport](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizowanie danych profilowania osi czasu  
+## <a name="analyze-timeline-profiling-data"></a>Analizowanie danych profilowania osi czasu  
  Po zebraniu danych profilowania można wykonać poniższe kroki, aby rozpocząć analizę:  
   
 1.  Zapoznaj się z informacjami w **użycie wątków interfejsu użytkownika** i **przepływność wizualną (kl. / s)** wykresach, a następnie wybierz zakres czasu, które mają być analizowane za pomocą pasków nawigacji osi czasu.  
@@ -116,8 +116,8 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 |![Dostosuj oś czasu szczegółowe informacje o](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacje do zdarzenia.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Blog zespołu WPF: Nowego interfejsu użytkownika narzędzia analizy wydajności aplikacji WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
+ [Blog zespołu WPF: nowy interfejs użytkownika narzędzie do analizy wydajności aplikacji WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Najlepsze praktyki wydajności dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optymalizacja wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+ [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

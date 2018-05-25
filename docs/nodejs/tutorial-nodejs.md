@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
@@ -49,9 +49,9 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **Azure Node.js Express 4 aplikacji w warstwie podstawowa**, a następnie wybierz pozycję **OK**.
+1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **Azure Node.js Express 4 aplikacji w warstwie podstawowa** , a następnie wybierz **OK**.
 
      Jeśli nie widzisz **Azure Node.js Express 4 aplikacji w warstwie podstawowa** szablon projektu, należy zainstalować **programowanie Node.js** obciążenia pierwszego.
 
@@ -194,7 +194,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     W **usługi aplikacji** okno dialogowe, możesz zalogować się do konta platformy Azure i nawiązać połączenia z istniejącej subskrypcji platformy Azure.
 
-1. Wykonaj pozostałe kroki, aby wybrać subskrypcję, wybierz lub Utwórz grupę zasobów, wybierz lub Utwórz płaszczyzna usługi aplikacji, a następnie wykonaj kroki po wyświetleniu monitu o publikowanie na platformie Azure. Aby uzyskać szczegółowe instrukcje, zobacz [publikowanie witryny sieci Web Azure za pomocą narzędzia Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
+1. Wykonaj pozostałe kroki, aby wybrać subskrypcję, wybierz lub Utwórz grupę zasobów, wybierz lub Utwórz płaszczyzna usługi aplikacji, a następnie wykonaj kroki po wyświetleniu monitu o publikowanie na platformie Azure. Aby uzyskać szczegółowe instrukcje, zobacz [publikowanie witryny sieci Web platformy Azure przy użyciu sieci web wdrażanie](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
 
 1. **Dane wyjściowe** Pokazuje okno postęp wdrażania na platformie Azure.
 
@@ -209,4 +209,4 @@ Gratulujemy wykonanie kroków tego samouczka!
 W tym samouczku przedstawiono sposób tworzenia i uruchamiania aplikacji Node.js przy użyciu Express i trafiony punkt przerwania korzystanie z debugera.
 
 > [!div class="nextstepaction"]
-> [Narzędzia Node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Narzędzia node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)

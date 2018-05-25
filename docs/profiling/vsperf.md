@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj **VsPerf** narzędzie wiersza polecenia do:  
@@ -25,16 +25,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
   
  Aby uzyskać więcej informacji o opcjach profilowania, zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> W tym temacie  
- W tym temacie opisano opcje używane z `vsperf.exe` narzędzia wiersza polecenia. Temat zawiera następujące sekcje:  
-  
- [Tylko aplikacje platformy uniwersalnej systemu Windows](#BKMK_windows_store_apps_only)  
-  
- [Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Wszystkie aplikacje](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Tylko aplikacje platformy uniwersalnej systemu Windows  
+## <a name="uwp-apps-only"></a>Tylko aplikacje platformy uniwersalnej systemu Windows  
  Te opcje są stosowane tylko do aplikacji platformy uniwersalnej systemu Windows.  
   
 |||  
@@ -45,7 +36,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja rozwiąże nie symbole zarządzane.|  
 |**/listapps**|Lista zainstalowanych nazwy aplikacji i PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012  
  Te opcje nie działają w aplikacji platformy uniwersalnej systemu Windows.  
   
 |||  
@@ -54,7 +45,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**przełącznika/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania **/uruchamianie** docelowej.|  
 |**/ Console**|Uruchamia **/uruchamianie** docelowego w nowym oknie polecenia.|  
   
-##  <a name="BKMK_All_applications"></a> Wszystkie aplikacje  
+## <a name="all-applications"></a>Wszystkie aplikacje  
  Te opcję stosowania do aplikacji systemu Windows 8 lub Windows Server 2012.  
   
 |||  

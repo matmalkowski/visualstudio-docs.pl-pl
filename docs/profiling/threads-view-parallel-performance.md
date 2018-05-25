@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e63e208d0442b50d30ffd9e286dd92de4bb17610
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
+# <a name="threads-view-parallel-performance"></a>Widok wątków (parallel performance)
 **Widok wątków** jest najbardziej szczegółowy i bogate widokiem Concurrency Visualizer (wybierz **Analizuj** > **Concurrency Visualizer** można uruchomić CONCURRENCY visualizer). Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokuje z powodu synchronizacji, we/wy lub innego powodu.  
   
  Podczas analizy profilu Concurrency Visualizer sprawdza, czy wszystkie zdarzenia przełączenie kontekstu systemu operacyjnego dla każdego wątku aplikacji. Przełączenia kontekstu może wystąpić z wielu powodów, takich jak te:  
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Zrozumienie zależności między wątków roboczych i ścieżek krytycznych wykonywania.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Badanie w określonych odstępach czasu i wątków  
+## <a name="examine-specific-time-intervals-and-threads"></a>Sprawdź, czy określonych odstępach czasu i wątków  
  Widok wątki pokazuje osi czasu. Można powiększanie i przesuwanie w osi czasu w celu zbadania w określonych odstępach czasu i wątki aplikacji. Na osi x to czasu i na osi y to kilka kanałów:  
   
 -   Dwa kanały we/wy dla każdego dysku w systemie, jeden kanał dla odczytów i jeden dla operacji zapisu.  
@@ -78,7 +78,7 @@ Widok wątków
   
  Po wybraniu przedział czasu i niektóre wątki w nim, można rozpocząć analizy wydajności.  
   
-## <a name="analysis-tools"></a>Narzędzia do analizy  
+## <a name="analysis-tools"></a>narzędzia do analizy  
  W tej sekcji opisano, raportów i innych narzędzi do analizy.  
   
 ### <a name="thread-blocking-details"></a>Szczegóły blokuje wątku  
@@ -141,11 +141,11 @@ Widok wątków
 #### <a name="ui-processing"></a>Przetwarzanie interfejsu użytkownika  
  Raport przetwarzania interfejsu użytkownika zawiera wywołania, które są zobowiązani do interfejsu użytkownika, przetwarzania bloków, wraz z agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
   
-#### <a name="per-thread-summary"></a>Na podsumowanie wątku  
- Ta karta przedstawia widok kolumny oznaczone kolorami całkowity czas czy każdy wątek w procesie, zablokowany, we/wy i innych stanów. Kolumny są oznaczane etykietami na dole. Po zmodyfikowaniu poziom powiększenia na wykresie osi czasu jest automatycznie aktualizowany na tej karcie. Niektóre poziomach powiększenia niektórych wątków nie może być wyświetlany. W takim przypadku elipsy są wyświetlane po prawej stronie. Jeśli nie ma wątku, który ma, można ukryć inne wątki. Aby uzyskać więcej informacji, zobacz [na wątku raport z podsumowaniem](../profiling/per-thread-summary-report.md).  
+#### <a name="per-thread-summary"></a>Na wątek podsumowania  
+ Ta karta przedstawia widok kolumny oznaczone kolorami całkowity czas czy każdy wątek w procesie, zablokowany, we/wy i innych stanów. Kolumny są oznaczane etykietami na dole. Po zmodyfikowaniu poziom powiększenia na wykresie osi czasu jest automatycznie aktualizowany na tej karcie. Niektóre poziomach powiększenia niektórych wątków nie może być wyświetlany. W takim przypadku elipsy są wyświetlane po prawej stronie. Jeśli nie ma wątku, który ma, można ukryć inne wątki. Aby uzyskać więcej informacji, zobacz [dla każdego wątku — raport podsumowania](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Operacje dysków  
  Ta karta przedstawia procesów i wątków były wykonywane w imieniu bieżącego procesu, które pliki są dotknięciu (na przykład bibliotek DLL, które zostały załadowane), odczytano liczbę bajtów i inne informacje We/Wy dysku. Ten raport służy do oceny czasu poświęcana podczas uzyskiwania dostępu do plików podczas wykonywania, szczególnie w przypadku, gdy proces wydaje się być powiązany we/wy. Aby uzyskać więcej informacji, zobacz [raport dotyczący operacji na dysku](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Concurrency Visualizer](../profiling/concurrency-visualizer.md)

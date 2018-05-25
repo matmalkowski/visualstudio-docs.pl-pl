@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku - dane Kontencji
+# <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku - dane kontencji
 Widok szczegółów wątku przedstawia wykres osi czasu blokowania zdarzeń w wątku wybranego przebiegu profilowania, które zostały spowodowane kontencji zasobów. To blokującego zdarzenie występuje, gdy wątek jest wymuszone wstrzymania wykonywania, ponieważ inny wątek został zablokowany dostęp do zasobu.  
   
- Ten widok przedstawia osi czasu wykonywania wątku, co poziomy pasek i blokowania zdarzenia jako pasek pionowy na osi poziomej dla wątku. W razie potrzeby można powiększyć sekcji osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżka wykonywania funkcji, które doprowadziły do zdarzenia, kliknij na pasku zdarzeń. Funkcje są wyświetlane w oknie stosu wywołań. Kod źródłowy dla funkcji jest dostępny, kliknięcie nazwę funkcji, aby edytować pliku źródłowego w środowisku IDE programu Visual Studio.  
+ Ten widok przedstawia osi czasu wykonywania wątku, co poziomy pasek i blokowania zdarzenia jako pasek pionowy na osi poziomej dla wątku. W razie potrzeby można powiększyć sekcji osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżka wykonywania funkcji, które doprowadziły do zdarzenia, kliknij na pasku zdarzeń. Funkcje są wyświetlane w **stos wywołań** okna. Kod źródłowy dla funkcji jest dostępny, kliknięcie nazwę funkcji, aby edytować pliku źródłowego w środowisku IDE programu Visual Studio.  
   
-## <a name="navigating-the-timeline"></a>Nawigowanie po osi czasu  
+## <a name="navigate-the-timeline"></a>Przejdź do osi czasu  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Aby powiększyć segment osi czasu  
   
@@ -45,7 +45,7 @@ Widok szczegółów wątku przedstawia wykres osi czasu blokowania zdarzeń w w�
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Aby wyświetlić lub edytować kodu źródłowego funkcji w stosie wywołań  
   
--   W oknie stos wywołań kliknij nazwę funkcji.  
+-   W **stos wywołań** okna, kliknij nazwę funkcji.  
   
  Kod źródłowy funkcja musi być częścią bieżącego projektu.  
   

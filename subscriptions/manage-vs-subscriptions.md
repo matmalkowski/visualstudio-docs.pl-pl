@@ -9,11 +9,11 @@ description: Dowiedz się, jak maksymalne wykorzystanie subskrypcji programu Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -80,7 +80,7 @@ Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparenci
 **Subskrypcje usług w chmurze:** subskrypcje w chmurze nie muszą być odnowione.  Tak długo, jak jest płatnej subskrypcji, pozostaną aktywne. 
 
 **Subskrypcje zakupione w ramach programów:** Jeśli otrzymasz subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie.  Sprawdź dotrzeć do kontaktów programu, aby uzyskać dodatkowe informacje. 
-- [Imagine](https://imagine.microsoft.com/about)
+- [Wyobraź sobie](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
@@ -118,3 +118,21 @@ Dodawanie alternatywnego konta:
 ![Alternatywne konta](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po dodaniu konta alternatywne możesz zaktualizować lub usunąć w dowolnym momencie, klikając **subskrypcje** kartę i wybierając odpowiednią opcję w **łączy pokrewnych** sekcji.  
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Pytanie: Jeśli nie odnowić subskrypcję, jak długo Microsoft zachowa dane?
+A. w zależności od zakupów kanału firma Microsoft udostępnia dane klienta dla różnych długości czasu.
+
+| Kanał                                                | Czas trwania (w dniach) |
+|--------------------------------------------------------|-----------------|
+|    Detaliczne (np. przez Microsoft Store)               |    360          |
+|    Wolumin licencjonowania Service Center (VLSC)              |    180          |
+|    Produkty firmy Microsoft i umowy o świadczenie usług (MPSA)    |    180          |
+|    Subskrypcje w chmurze programu Visual Studio                   |    180          |
+|    Program (np. MCT, BizSpark, MPN, imprezie Imagine)          |    180          |
+|    Nie do sprzedaży (MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Jeśli wybierzesz zamknąć Account Microsoft lub usługi Azure AD, dane osobowe użytkownika zostaną natychmiast anonimowe.  
+> - Firma Microsoft nie spowoduje pełni usunięcia wszystkich danych osobowych Jeśli masz aktywnych subskrypcji. 

@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 
@@ -60,7 +60,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--installPath <dir>` | Katalog instalacyjny dla wystąpienia działanie. W przypadku polecenia install jest **opcjonalnie** i gdzie zostaną zainstalowane wystąpienie. W przypadku innych poleceń jest **wymagane** i zainstalowanym uprzednio zainstalowanego wystąpienia. |
 | `--addProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które są zainstalowane do tego produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Jeśli nie istnieje, instalacja korzysta z ustawień regionalnych komputera. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
 | `--removeProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które mają zostać usunięte z produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
+| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Aby dołączyć wiele obciążeń lub składniki, powtórz `--add` polecenia (na przykład `--add Workload1 --add Workload2`). Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
 | `--remove <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do usunięcia. Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
 | `--in <path>` | **Opcjonalne**: identyfikator URI lub ścieżka do pliku odpowiedzi.  |
 | `--all` | **Opcjonalne**: Określa, czy zainstalować obciążeń i wszystkie składniki produktu. |

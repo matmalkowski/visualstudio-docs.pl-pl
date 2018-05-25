@@ -10,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4558e086ec53aa0e264fd55a322d4b5acaac7aa
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
-Visual Studio klienta środowisko poprawy programu (VSCEIP) to program, który pomóc firmie Microsoft w ulepszaniu programu Visual Studio w czasie. Ten program zbiera informacje o sprzęcie komputerowym oraz jak osoby użyć programu Visual Studio, bez zakłócania pracy użytkowników w swoich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może zidentyfikować funkcje wymagające poprawy. W tym dokumencie opisano sposób uczestnictwa w lub poza VSCEIP.
+Visual Studio klienta środowisko poprawy programu (VSCEIP) zaprojektowano w celu pomóc firmie Microsoft w ulepszaniu programu Visual Studio w czasie. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), komputera i jak osoby użyć programu Visual Studio, bez zakłócania pracy użytkowników w swoich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może zidentyfikować funkcje wymagające poprawy. W tym dokumencie opisano sposób uczestnictwa w lub poza VSCEIP.
 
 ## <a name="opt-in-or-out"></a>OPT przychodzący lub wychodzący
 
@@ -58,6 +58,7 @@ Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych l
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Informacje diagnostyczne zebrane przez program Visual Studio](diagnostic-data-collection.md)
 * [Porozmawiaj z nami](../ide/talk-to-us.md)
 * [Jak zgłosić problem z programem Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 * [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)

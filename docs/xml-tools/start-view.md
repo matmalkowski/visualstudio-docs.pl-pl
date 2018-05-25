@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>Widok początkowy
 
@@ -26,7 +26,7 @@ Uruchom widok zawiera dwóch głównych sekcji *znaku wodnego* i **schematu Okre
 
 ## <a name="watermark"></a>Znak wodny
 
-W okienku znak wodny zawiera listę linki do wszystkich XSD Projektant widoków, edytora XML i Eksploratora schematu XML. Jeśli zestaw schemat zawiera błędy, na końcu listy jest wyświetlany następujący tekst: "Użyj listy błędów możesz wyświetlać i naprawiać błędy w zestawie".
+W okienku znak wodny zawiera listę linki do wszystkich XSD Projektant widoków, edytora XML i **Eksploratora schematu XML**. Jeśli zestaw schemat zawiera błędy, na końcu listy jest wyświetlany następujący tekst: "Użyj listy błędów możesz wyświetlać i naprawiać błędy w zestawie".
 
 ## <a name="schema-set-details"></a>Szczegóły zestawu schematu
 
@@ -42,11 +42,11 @@ Następujące przyciski są włączone w pasku narzędzi Projektanta XSD przy u�
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Pokaż widok początkowy**|Przełącza do widoku rozpoczęcia. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 2**.|
-|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 3**.|
+|**Pokaż widok początkowy**|Przełącza do widoku rozpoczęcia. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)
 - [Widok wykresu](../xml-tools/graph-view.md)

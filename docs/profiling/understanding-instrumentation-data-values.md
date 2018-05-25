@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="understanding-instrumentation-data-values"></a>Zapoznanie z wartościami danych instrumentacji
+# <a name="understand-instrumentation-data-values"></a>Zrozumienie wartościami danych Instrumentacji
 
 *Instrumentacji* metoda rejestruje Visual Studio profilowania szczegółowe informacje o chronometrażu dla wywołania funkcji, wierszy i instrukcje w profilowanych aplikacji
 
-Metoda Instrumentacji injects kod na początku i końcu funkcji docelowego w profilowanych danych binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące czynności:
+Metoda Instrumentacji injects kod na początku i końcu funkcji docelowego w profilowanych danych binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące informacje:
 
 - Interwał między to zdarzenie kolekcji i poprzedni.
 
@@ -98,5 +98,5 @@ Procent aplikacji włącznie wartości sum sesji profilowania będące aplikacji
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)  
-[Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+[Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)  
+[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)

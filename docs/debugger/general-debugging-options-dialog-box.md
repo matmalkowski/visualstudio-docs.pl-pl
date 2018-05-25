@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 **Narzędzia > Opcje > debugowanie > Ogólne** stronie można ustawić następujące opcje:  
@@ -94,11 +94,11 @@ Określa, że debuger programu Visual Studio można pobrać plików źródłowyc
 - **Zezwalaj serwerowi źródłowemu na częściowo zaufane zestawy (tylko kod zarządzany)**  
     Po włączeniu obsługę serwera źródłowego, to ustawienie przesłania domyślne zachowanie na częściowo zaufane zestawy nie będą pobierane źródła.  
 
-- **Włącz obsługę łączy źródła**  
+**Włącz obsługę łączy źródła**  
     Określa, że debuger programu Visual Studio w celu pobrania plików źródłowych dla .pdb, pliki zawierające informacje o łączu źródła. Aby uzyskać więcej informacji na temat Link źródła, zobacz [Specyfikacja łącze źródła](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Ponieważ łącza źródła pobierze pliki przy użyciu protokołu http lub https, upewnij się, że ufasz plik PDB.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Podświetl cały wiersz dla punktów przerwania i bieżącej instrukcji (tylko C++)**  
 Debuger wyróżnia punktu przerwania i bieżącej instrukcji, zawiera wyróżnione cały wiersz.  

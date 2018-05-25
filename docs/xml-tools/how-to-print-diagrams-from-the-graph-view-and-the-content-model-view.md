@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bdcada913b926b27ccffdf1d7c0a6b2488ead8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dcb65958f7b339338b99495646bab57bd77af054
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Porady: drukowanie diagramów z widoku wykresu i widok modelu zawartości
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Porady: drukowanie diagramów z widoku wykresu i widoku modelu zawartości
 
 W tym temacie opisano, jak wydrukować diagram z widoku wykresu lub zawartości modelu widoku z projektanta schematu XML.
 
@@ -24,14 +24,14 @@ W tym temacie opisano, jak wydrukować diagram z widoku wykresu lub zawartości 
 
 1.  Otwórz plik XSD w programie Visual Studio i Dodaj niektóre węzły do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Wyeksportuj diagram do pliku XPS przy użyciu **Eksportuj Diagram jako obraz...**  elementu menu kontekstowego na powierzchni projektu w widoku wykresu lub widok modelu zawartości.
+2.  Wyeksportuj diagram do pliku XPS za pomocą **Eksportuj Diagram jako obraz** elementu menu kontekstowego na powierzchni projektu w widoku wykresu lub widok modelu zawartości.
 
-     Po wyeksportowaniu diagram widoku wykresu całego powierzchnię zostaną wyeksportowane do pliku XPS. Po wyeksportowaniu diagramu z widoku modelu zawartości i więcej niż jeden węzeł jest dostępny na powierzchni projektowej widoku modelu zawartości, tylko pierwszy węzeł zostaną wyeksportowane do pliku XPS.
+     Po wyeksportowaniu diagram widoku wykresu całego powierzchnię wyeksportowany do pliku XPS. Po wyeksportowaniu diagramu z widoku modelu zawartości i więcej niż jeden węzeł jest dostępny na powierzchni projektowej widoku modelu zawartości, tylko pierwszy węzeł wyeksportowany do pliku XPS.
 
 3.  Drukowanie obraz zapisany w pliku XPS za pomocą przeglądarki XPS.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Widok wykresu](../xml-tools/graph-view.md)
 - [Widok modelu zawartości](../xml-tools/content-model-view.md)
-- [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)
+- [Obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)

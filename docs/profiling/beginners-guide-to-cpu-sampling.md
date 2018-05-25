@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c3a3e7786b56f33bec4d742b1ebd6c450ea14e09
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowanie Procesora
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **próbkowania** danych.
@@ -37,7 +37,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
 > [!TIP]
 >  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a> Tworzenie i uruchamianie sesji wydajności  
+## <a name="create-and-run-a-performance-session"></a>Tworzenie i uruchamianie sesji wydajności  
  Aby pobrać dane, które należy przeanalizować, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesję. **Kreatora osiągów** pozwala wykonać obie czynności.  
   
  Jeśli to nie profilowanie aplikacji klasycznej systemu Windows lub aplikacji ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [narzędzia profilowania](../profiling/profiling-tools.md).  
@@ -63,7 +63,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
      Po zakończeniu działania aplikacji, **Podsumowanie** widok danych profilowania pojawia się w oknie głównym programu Visual Studio i ikona dla nowej sesji w **Eksplorator wydajności** okna.  
   
-##  <a name="Step2"></a> Krok 2: Analizowanie danych próbkowania  
+## <a name="step-2-analyze-sampling-data"></a>Krok 2: Analizowanie danych próbkowania  
  Po zakończeniu pracy sesję wydajności **Podsumowanie** widok raportu profilowania pojawia się w oknie głównym w programie Visual Studio.  
   
  Zalecamy rozpocząć analizowanie danych, sprawdzając **aktywnej ścieżki** , a następnie na liście funkcji wykonywania najbardziej pracy i na koniec przez koncentrujących się na inne funkcje za pomocą **osi czasu Podsumowanie** . Można również wyświetlić profilowania sugestie i ostrzeżeń w **listy błędów** okna.  
@@ -92,7 +92,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
     -   W dolnym okienku **szczegółów funkcji** system windows wyświetli kodu funkcji. Jeśli Sprawdź kod i znaleźć możliwość zoptymalizować jego wydajność, kliknij nazwę pliku źródłowego, aby otworzyć go w edytorze programu Visual Studio.  
   
-3.  Aby kontynuować analizę, wróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z listy rozwijanej widoku. Sprawdź funkcje w **funkcje wykonujące najwięcej indywidualnej pracy**. Lista funkcji o najwyższym wyłącznych próbek. Kod w treści funkcji tych funkcji wykonywane wiele pracy oraz można zoptymalizować go. Dodatkowo analizować określonej funkcji, kliknij nazwę funkcji, aby wyświetlić je w **szczegółów funkcji** widoku.  
+3.  Aby kontynuować analizę, wróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z listy rozwijanej widoku. Sprawdź funkcje w **funkcje wykonujące najwięcej indywidualnej pracy**. Lista funkcji o najwyższym wyłącznych próbek. Kod w treści funkcji tych funkcji wykonywane wiele pracy oraz można zoptymalizować go. Do dalszej analizy określonej funkcji, kliknij nazwę funkcji, aby wyświetlić je w **szczegółów funkcji** widoku.  
   
      ![Lista funkcje wykonujące najwięcej pracy](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
@@ -108,7 +108,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
     -   Aby wyświetlić szczegółowe informacje na temat tego ostrzeżenia, kliknij prawym przyciskiem myszy błąd, a następnie kliknij przycisk **Pokaż błąd pomóc**  
   
-##  <a name="Step3"></a> Krok 3: Korygowanie kodu i uruchom ponownie sesję  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Korygowanie kodu i uruchom ponownie sesję  
  Po znaleźć i zoptymalizować jedną lub więcej funkcji, można powtórzyć przebiegu profilowania i porównywania danych, aby wyświetlić tą różnicą, że zmiany zostały wprowadzone na wydajność aplikacji.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Aby poprawić kod i ponownie uruchom profilera  

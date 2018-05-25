@@ -1,7 +1,7 @@
 ---
 title: Zdalne debugowanie w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.
@@ -47,22 +47,63 @@ Jeśli po prostu chcesz pobrać i zainstalować zdalny debuger i nie wymagają �
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Odblokuj pobierania narzędzia zdalnego w systemie Windows Server
+
+Domyślne ustawienia zabezpieczeń w programie Internet Explorer w systemie Windows Server może być czasochłonne Pobierz składniki, takie jak narzędzia zdalnej.
+
+* Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Internet Explorer, która uniemożliwia otwierania witryn sieci Web i uzyskiwania dostępu do zasobów sieci web, chyba że domenę zawierającą zasobu jest jawnie dozwolone (to znaczy zaufane).
+
+* W systemie Windows Server 2016, domyślne ustawienie **Opcje internetowe** > **zabezpieczeń** > **Internet**  >   **Poziom niestandardowy** > **pobiera** również wyłącza pliku pliki do pobrania. Jeśli wybierzesz pobieranie narzędzia zdalnej bezpośrednio w systemie Windows Server, musisz włączyć pobieranie pliku.
+
+Aby pobrać narzędzia w systemie Windows Server, zaleca się jeden z następujących czynności:
+
+* Pobieranie narzędzi zdalnych na innym komputerze, takich jak jedną uruchomionego programu Visual Studio, a następnie skopiuj *.exe* pliku do systemu Windows Server.
+
+* Uruchom zdalny debuger [z udziału plików](#fileshare_msvsmon) na tym komputerze programu Visual Studio.
+
+* Pobierz narzędzia zdalnej bezpośrednio w systemie Windows Server i zaakceptować z monitami, aby dodać zaufanych witryn. Nowoczesnych witryn sieci Web często zawierają wiele zasobów innych firm, może to powodować dużą monitów. Ponadto przekierowanego łącza może być konieczne, należy dodać ręcznie. Można dodać niektóre Zaufane witryny przed rozpoczęciem pobierania. Przejdź do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny** i dodaj następujące witryny.
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * o: puste
+
+  Dla starszych wersji debugera na my.visualstudio.com Dodaj te dodatkowe lokacje, aby upewnić się, że użytkownik zaloguje się:
+
+  * microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * login.microsoftonline.com
+  * Login.Live.com
+  * secure.aadcdn.microsoftonline-p.com
+  * MSFT.STS.microsoft.com
+  * auth.gfx.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.microsoft.com
+  * Query.prod.cms.RT.microsoft.com
+
+    Jeśli użytkownik chce dodać tych domen podczas pobierania narzędzia zdalnej, a następnie wybierz **Dodaj** po wyświetleniu monitu.
+
+    ![Okno dialogowe zawartości zablokowanych](../debugger/media/remotedbg-blocked-content.png)
+
+    Podczas pobierania oprogramowania można pobrać niektórych dodatkowych żądań, aby przyznać uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. Na my.visualstudio.com firma Microsoft zaleca, aby dodać dodatkowe domeny, aby upewnić się, że użytkownik zaloguje się ponownie.
+
 ### <a name="fileshare_msvsmon"></a> (Opcjonalnie) Uruchamianie zdalnego debugera z udziału plików
 
-Zdalny debuger można znaleźć (**msvsmon.exe**) na komputerze przy użyciu programu Visual Studio Community, Professional lub Enterprise już zainstalowana. W niektórych scenariuszach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**Pomoc > użycia** w zdalnym debugerze).
+Zdalny debuger można znaleźć (*msvsmon.exe*) na komputerze przy użyciu programu Visual Studio Community, Professional lub Enterprise już zainstalowana. W niektórych scenariuszach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**Pomoc > użycia** w zdalnym debugerze).
 
-1. Znajdź **msvsmon.exe** w katalogu odpowiadającym używanej wersji programu Visual Studio. For Visual Studio Enterprise 2017:
+1. Znajdź *msvsmon.exe* w katalogu odpowiadającym używanej wersji programu Visual Studio. For Visual Studio Enterprise 2017:
 
-      **Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Udział **zdalnego debugera** folderu na komputerze programu Visual Studio.
 
-3. Na komputerze zdalnym, uruchom **msvsmon.exe**. Postępuj zgodnie z [instrukcje instalacji](#bkmk_setup).
+3. Na komputerze zdalnym, uruchom *msvsmon.exe*. Postępuj zgodnie z [instrukcje instalacji](#bkmk_setup).
 
 > [!TIP] 
-> Dla wiersza polecenia instalacji i informacje w wierszu polecenia, zobacz stronę pomocy, aby **msvsmon.exe** , wpisując ``msvsmon.exe /?`` w wierszu polecenia na komputerze z programem Visual Studio zainstalowany (lub przejdź do **Pomoc > użycia**w zdalnym debugerze).
+> Dla wiersza polecenia instalacji i informacje w wierszu polecenia, zobacz stronę pomocy, aby *msvsmon.exe* , wpisując ``msvsmon.exe /?`` w wierszu polecenia na komputerze z programem Visual Studio zainstalowany (lub przejdź do **Pomoc > użycia**w zdalnym debugerze).
   
 ## <a name="requirements_msvsmon"></a> Wymagania
 

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie formantów zakładek do dokumentów programu Word | Dokumentacja firmy Microsoft'
+title: 'Porady: dodawanie formantów zakładek do dokumentów programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a33160ba534a1ee6bd56238cffaa2064e4332ec1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c2814847270df70126cb8f286acdc152ddbed046
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Porady: dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentów w projekcie w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projektów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do otwartego dokumentu w czasie wykonywania.  
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Word.Bookmark> formantów, zobacz [formant zakładki](../vsto/bookmark-control.md).  
+ Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Word.Bookmark> formantów, zobacz [BOOKMARK, formant:](../vsto/bookmark-control.md).  
   
 ##  <a name="designtime"></a> Dodawanie formantów zakładek w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentów w projektach na poziomie dokumentu w czasie projektowania:  
@@ -105,9 +105,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywnego zakładki w dokumencie (czyli <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak natywny <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można ponownie utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywnego zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [przechowywanie formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak natywny <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można ponownie utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywnego zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [utrwalić formantów dynamicznych w dokumentach pakietu Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Aby uzyskać więcej informacji na temat generowania elementów hosta w projektów dodatku VSTO zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Aby uzyskać więcej informacji na temat generowania elementów hosta w projektów dodatku VSTO zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Aby dodać kontrolkę zakładki w określonym zakresie  
   
@@ -127,13 +127,13 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Instrukcje: Zmiana rozmiaru kontrolek zakładki](../vsto/how-to-resize-bookmark-controls.md)  
+ [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)   
+ [Porady: zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)  
   
   

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
 
@@ -30,7 +30,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
 3.  Kliknij prawym przyciskiem myszy w okienku Edytora i wybierz **wstawić fragment**.
 
-4.  Wybierz **fragment** z listy i naciśnij klawisz ENTER.
+4.  Wybierz **fragment** z listy i kliknij **Enter**.
 
 5.  Wprowadź wszelkie zmiany do nowego fragmentu.
 
@@ -40,13 +40,13 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
 7.  Wprowadź nazwę dla nowego fragmentu i wybierz **pliki fragmentu kodu** z **Zapisz jako typ** okno listy rozwijanej.
 
-8.  Użyj **zapisać w** listy rozwijanej, aby zmienić lokalizację pliku do folderu Moje Documents\Visual Studio 2005\Code Snippets\XML\My fragmentów kodu XML, a następnie naciśnij klawisz **zapisać**.
+8.  Użyj **zapisać w** listy rozwijanej, aby zmienić lokalizację pliku do *Moje Documents\Visual Studio 2005\Code Snippets\XML\My XML wstawki* folder, a następnie naciśnij klawisz **zapisać**.
 
 ## <a name="snippet-description"></a>Opis elementu fragment kodu
 
- W tej sekcji opisano niektóre z kluczowych elementów we fragmencie standardowego. Aby uzyskać więcej informacji o elementach schematu używanego przez fragmentów kodu XML, zobacz [fragmenty kodu — odwołanie do schematu](../ide/code-snippets-schema-reference.md).
+ W tej sekcji opisano niektóre z kluczowych elementów we fragmencie standardowego. Aby uzyskać więcej informacji o elementach schematu używanego przez fragmentów kodu XML, zobacz [odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Element SnippetType
+### <a name="snippettype-element"></a>SnippetType element
 
  Edytor obsługuje dwa typy fragment kodu:
 
@@ -83,7 +83,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
 -   $ $zaznaczone to uprzednio zdefiniowanej zmiennej. Reprezentuje tekst, który wybrano w edytorze XML przed wywołaniem fragment kodu. Umieszczenia tej zmiennej określa, gdzie zaznaczonego tekstu pojawi się we fragmencie kodu wokół tego zaznaczenia.
 
--   $end$ to uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie ENTER, aby zakończyć edytowanie pól fragment kodu, ta zmienna Określa, gdzie daszek (^) zostanie przeniesiony do.
+-   $end$ to uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie **Enter** aby zakończyć edytowanie pól fragment kodu, ta zmienna Określa, gdzie daszek (^) zostanie przeniesiony do.
 
  Powyższe `Code` element wstawia następujący tekst XML:
 
@@ -95,7 +95,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
  Wartość elementu name jest oznaczona jako edytowalny region.
 
-### <a name="literal-element"></a>Element Literal
+### <a name="literal-element"></a>Element literał
 
  `Literal` Element służy do identyfikowania tekst zastępczy, który można dostosować po wstawieniu do pliku. Na przykład ciągi literału, wartości liczbowe oraz niektóre nazwy zmiennych mogą być deklarowane jako literały. Można określić dowolną liczbę literałów w Twojej fragment kodu XML i mogą odwoływać się do nich wiele razy w obrębie fragmentu. Poniżej przedstawiono przykład `Literal` element, który definiuje zmienną $ $name, którego wartość domyślna to "name".
 
@@ -117,8 +117,8 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
  Zmienna $ $prefix następnie może być używana w innym miejscu w Twojej fragment kodu XML.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Fragmenty kodu XML](../xml-tools/xml-snippets.md)
-- [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
+- [Porady: użycie XML wstawki kodu programu](../xml-tools/how-to-use-xml-snippets.md)
+- [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

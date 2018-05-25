@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4feb40ba843da5c3f2e5f7de9b8d554debf6fcc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Porady: Zapoznaj się z omówieniem zestawu schematu przy użyciu widoku wykresu
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Porady: Zapoznaj się z omówieniem schematu ustawiane przy użyciu widoku wykresu
 
 W tym temacie opisano sposób użycia [widok wykresu](../xml-tools/graph-view.md) Aby wyświetlić widok ogólny węzłów w zestawie schematów i relacje między węzłami.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Aby utworzyć nowy plik XSD i wyświetlić element główny w widoku modelu zawartości
 
-1.  Utwórz nowy plik schematu XML, a następnie zapisz plik jako Relationships.xsd.
+1.  Utwórz nowy plik schematu XML i Zapisz plik jako *Relationships.xsd*.
 
 2.  Kliknij przycisk **Użyj edytora XML możesz wyświetlać i edytować pliku schematu XML** łącza w widoku startowego.
 
@@ -30,9 +30,9 @@ W tym temacie opisano sposób użycia [widok wykresu](../xml-tools/graph-view.md
 
 4.  Kliknij prawym przyciskiem myszy w edytorze XML, a następnie wybierz **Widok projektanta**.
 
-5.  Wybierz widok wykresu z paska narzędzi XSD.
+5.  Wybierz widok wykresu z **narzędzi XSD**.
 
-6.  Wybierz **zestawu schematu** węzła w Eksploratora schematu XML i przeciągnij węzeł projektowania suface w widoku wykresu. Powinny pojawić się wszystkie węzły globalne i strzałki łączące węzły, które mają relacji.
+6.  Wybierz **zestawu schematu** w węźle **Eksploratora schematu XML** i przeciągnij węzeł, aby zaprojektować suface w widoku wykresu. Powinny pojawić się wszystkie węzły globalne i strzałki łączące węzły, które mają relacji.
 
      ![Widok wykresu](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
 

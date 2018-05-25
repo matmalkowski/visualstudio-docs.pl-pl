@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Umożliwiające tworzenie rozwiązań, które używają programu Microsoft Office Excel, możesz użyć obiektów dostarczanych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiektów:  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do podstawowego zestawu międzyoperacyjnego  
  Dokumentacja odwołania Excel PIA opisano typy w podstawowego zestawu międzyoperacyjnego dla programu Excel. Niniejsza dokumentacja jest dostępna z następującej lokalizacji: [odwołania podstawowego zestawu międzyoperacyjnego programu Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Aby uzyskać więcej informacji dotyczących projektu PIA programu Excel, takie jak różnice między klasy i interfejsy PIA i implementowania zdarzeń w PIA, zobacz [Przegląd klasy i interfejsy Office podstawowe zestawy międzyoperacyjne](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Aby uzyskać więcej informacji dotyczących projektu PIA programu Excel, takie jak różnice między klasy i interfejsy PIA i implementowania zdarzeń w PIA, zobacz [Przegląd klasy i interfejsy w podstawowe zestawy międzyoperacyjne pakietu Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>Odwołania do modelu obiektu VBA  
  Odwołania do modelu obiektu VBA dokumentów modelu obiektów programu Excel, jak jest narażony na język Visual Basic dla kodu aplikacji (VBA). Aby uzyskać więcej informacji, zobacz [odwołania do modelu obiektu programu Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).  

@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Zbieranie alokacji pamięci .NET i okres istnienia obiektu
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych pamięci .NET alokacji i okresem istnienia
 
 Visual Studio Profiling Tools obsługują zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, które pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.
 
@@ -60,12 +60,12 @@ Zadania w poniższej tabeli opisano opcje, które można określić w *sesji wyd
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|Na **ogólne** Określ szczegóły nazewnictwa dla profilowania wygenerowany plik danych (Vsp).|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Na **ogólne** Określ szczegóły nazewnictwa dla profilowania wygenerowany plik danych (Vsp).|- [Zbieranie danych pamięci .NET alokacji i okresem istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
 |Na **uruchamianie** wybierz aplikację do uruchomienia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
 |Na **interakcja warstwowa** Dodaj ADO.NET data wywołania do uruchomienia profilowania.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **zdarzeń systemu Windows** Określ co najmniej jednego zdarzenia funkcji Śledzenie zdarzeń systemu Windows () do zbierania danych próbkowania.|- [Porady: zbieranie zdarzeń śledzenia dla danych systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|Na **zdarzeń systemu Windows** Określ co najmniej jednego zdarzenia funkcji Śledzenie zdarzeń systemu Windows () do zbierania danych próbkowania.|- [Porady: zbieranie danych funkcji Śledzenie zdarzeń systemu Windows ()](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |Na **liczników systemu Windows** strony, określ co najmniej jeden liczników wydajności systemu operacyjnego można dodać do danych profilowania jako znaczniki.|- [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Na **zaawansowane** strony, określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska wykonawczego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Na **zaawansowane** strony, określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska uruchomieniowego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Zadania Instrumentacji
 
@@ -81,5 +81,5 @@ Zadania w poniższej tabeli są opcje w **strony właściwości** okno dialogowe
 ## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
+[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
 [Właściwości sesji wydajności](../profiling/performance-session-properties.md)

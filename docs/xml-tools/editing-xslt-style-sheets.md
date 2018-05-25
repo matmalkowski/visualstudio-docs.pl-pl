@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>Edytowanie arkuszy stylów XSLT
+# <a name="edit-xslt-style-sheets"></a>Edytowanie arkuszy stylów XSLT
 
 Edytor XML można również edytować arkuszy stylów XSLT. Można wykorzystać domyślny edytor funkcje, takie jak IntelliSense, obramowanie, fragmentów kodu XML i tak dalej. Ponadto istnieją również nowe funkcje, które ułatwiają tworzenie w kodzie XSLT.
 
@@ -29,7 +29,7 @@ Edytor XML można również edytować arkuszy stylów XSLT. Można wykorzystać 
 
  **Faliste podkreślenie**
 
- Edytor XML używa pliku xslt.xsd zainstalowanych można sprawdzić poprawności arkuszy stylów XSLT. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Edytor XML kompiluje również arkusza stylów w tle i raporty o błędach kompilatora lub ostrzeżenia o odpowiednich faliste podkreślenie.
+ Edytor XML używa zainstalowana *xslt.xsd* pliku do sprawdzania poprawności arkuszy stylów XSLT. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Edytor XML kompiluje również arkusza stylów w tle i raporty o błędach kompilatora lub ostrzeżenia o odpowiednich faliste podkreślenie.
 
  **Obsługa blokach skryptu**
 
@@ -43,6 +43,6 @@ Edytor XML można również edytować arkuszy stylów XSLT. Można wykorzystać 
 
  Można uruchomić debugera XSLT z pliku XSLT w edytorze XML. Debuger obsługuje ustawianie punktów przerwania w pliku XSLT, wyświetlanie stanu wykonania XSLT i tak dalej. Ustawiając kursor nad zmiennej XSLT wywołuje etykietkę zawierającą wartość zmiennej. Debuger może służyć do debugowania arkusz stylów lub debugowanie skompilowanych transformacji XSL wywoływane z innej aplikacji. Aby uzyskać więcej informacji, zobacz [profilowanie XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)

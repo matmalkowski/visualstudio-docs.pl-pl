@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Porady: Dodaj węzły do obszaru roboczego z Eksploratora schematu XML
 
-W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z Eksploratora schematu XML. Można to osiągnąć poprzez przeciągnięcie i upuszczenie węzłów z Eksploratora schematu XML na widok projektanta XSD lub za pomocą menu kontekstowego Eksploratora schematu XML. Możesz również dodać węzłów, które są wyróżnione wyniku wyszukiwania wykonywane przy użyciu Eksploratora schematu XML. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie schematu ustawiony wyszukiwania wynik węzły do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z **Eksploratora schematu XML**. Można to osiągnąć poprzez przeciągnięcie i upuszczenie węzłów z **Eksploratora schematu XML** na widok projektanta XSD lub za pomocą **Eksploratora schematu XML** menu kontekstowego. Możesz także dodać węzłów, które są wyróżnione wyniku wyszukiwania z zastosowaniem **Eksploratora schematu XML**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie węzłów wynik wyszukiwania zestawu schematu do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
 > Tylko węzły globalnego mogą być dodawane do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Aby dodać węzły za pomocą Menu kontekstowego Eksploratora XML
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Aby dodać węzły za pomocą menu kontekstowego Eksploratora XML
 
 1.  Postępuj zgodnie z instrukcjami [porady: tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
@@ -35,9 +35,9 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
 1.  Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzła w widoku wykresu. Wybierz **Pokaż w Eksploratorze schematu XML**.
 
-     Węzeł jest wyróżnione Eksploratora schematu XML.
+     Węzeł zostanie wyróżniona w **Eksploratora schematu XML**.
 
-2.  Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w Eksploratora schematu XML i wybierz **Pokaż wszystkie odwołania**.
+2.  Kliknij prawym przyciskiem myszy `PurchaseOrderType` w węźle **Eksploratora schematu XML** i wybierz **Pokaż wszystkie odwołania**.
 
      `purchaseOrder` Węzeł zostanie wyróżniona.
 
@@ -51,7 +51,7 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
      ![Wyszukiwanie słów kluczowych Eksploratora schematu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Wyniki wyszukiwania są wyróżnione Eksploratora schematu XML i oznaczone przez znaczniki na pionowy pasek przewijania.
+     Wyniki wyszukiwania są wyróżnione **Eksploratora schematu XML** i oznaczone przez znaczniki na pionowy pasek przewijania.
 
 2.  Wyniki wyszukiwania można dodać do obszaru roboczego, klikając **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku podsumowania wyników.
 
@@ -59,6 +59,6 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
      `purchaseOrder` Węzła i `PurchaseOrderType` węźle są wyświetlane obok siebie na powierzchni projektu [widok wykresu](../xml-tools/graph-view.md). Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), Strzałka jest rysowany między nimi.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)

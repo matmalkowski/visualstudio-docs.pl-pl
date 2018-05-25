@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411face8be5bbb26a3f95b353916a797f9bf488
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="caller--callee-view---sampling-data"></a>Obiekt wywołujący / wywoływany widok - dane próbkowania
+# <a name="callercallee-view---sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania
 Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.  
   
  **Bieżąca funkcja** jest wyświetlane w środkowym siatki, a pokazuje profilowania informacji dla wybranych funkcji. Wartości obejmują wszystkie próbki wywołania funkcji.  
@@ -48,7 +48,7 @@ Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla
 |**Wyłącznych próbek**|— Dla bieżącej funkcji liczba próbek w przebiegu, który profilowania zostały zebrane, gdy ta funkcja bezpośrednio było wykonywane; oznacza to, gdy ta funkcja została u góry stosu wywołań. Przykłady, które są zbierane podczas wykonywania funkcji podrzędnych tej funkcji nie są wliczane do liczby wyłącznego.<br />— Dla funkcji wywołującego, liczba wyłącznych próbek bieżącej funkcji, które zostały zebrane, gdy ta funkcja jest wywoływana bieżącej funkcji.<br />— Dla funkcji wywoływany, liczba wyłącznych próbek w tej funkcji, które zostały zebrane podczas bieżącej funkcji wywoływania tej funkcji.|  
 |**% Wyłącznych próbek**|Wartość procentowa próbek wszystkie, w którym profilowania były wyłącznych próbek w tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wywołujący/wywoływany - dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

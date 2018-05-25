@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 3fd57edf89210370fa05247afc55569c4401baf8
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
 Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) umożliwia zbierać dane śledzenia w wierszu polecenia, aby wyświetlić w Concurrency Visualizer dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   
 > [!NOTE]
->  Począwszy od programu Visual Studio 2013 narzędzia Concurrency Visualizer to opcjonalne rozszerzenie. (Wcześniej go była ona dostępna w programie Visual Studio.) Możesz pobrać [współbieżności wizualizatora Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z Centrum pobierania.  
+>  Począwszy od programu Visual Studio 2013 narzędzia Concurrency Visualizer to opcjonalne rozszerzenie. (Wcześniej go była ona dostępna w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer kolekcji tools dla programu Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z Centrum pobierania.  
   
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobieranie narzędzia wiersza polecenia wizualizatora współbieżności  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobieranie narzędzia wiersza polecenia Concurrency Visualizer  
  Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [współbieżności wizualizatora Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowany w %ProgramFiles%\Microsoft Tools\ kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Tools\ kolekcji wizualizatora współbieżności na x64 komputerów).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierz ślad z CVCollectionCmd  
@@ -51,7 +51,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) umożl
 |Proces|Określa proces, aby dołączyć do po wykonaniu polecenia Attach lub proces w śledzenia do analizowania podczas wykonywania polecenia analizy. Zastosowanie polecenia Attach i Analizuj.|Identyfikator PID lub nazwę procesu.|Brak.|  
 |Konfiguracja|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji innych niż domyślne.   Ma zastosowanie do polecenia Uruchom, Dołącz i Analizuj.|Ścieżka katalogu lub względna ścieżka pliku konfiguracji XML.|Brak.|  
   
-## <a name="customizing-configuration-settings"></a>Dostosowywanie ustawień konfiguracji  
+## <a name="customize-configuration-settings"></a>Dostosowywanie ustawień konfiguracji  
  Jeśli używasz CVCollectionCmd Aby zbierać dane śledzenia i chcesz dostosować ustawienia kolekcji, a następnie określ je przy użyciu pliku konfiguracji.  
   
 > [!NOTE]

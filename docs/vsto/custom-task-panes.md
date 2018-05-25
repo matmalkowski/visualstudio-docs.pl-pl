@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań są panele interfejsu użytkownika, które są zazwyczaj zadokowane po jednej stronie okna w aplikacji pakietu Microsoft Office. Niestandardowe okienka zadań zapewniają sposób utworzyć własny okienka zadań i użytkownikom interfejs znany dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać kontrolki, których uruchamianie kodu w celu modyfikowania dokumentów ani nie wyświetlają danych ze źródła danych.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Interfejs użytkownika znanych  
  Użytkownicy aplikacji w pakiecie Microsoft Office system znają już przy użyciu okienka zadań, takich jak **style i formatowanie** okienka zadań w programie Word. Niestandardowe okienka zadań zachowują się podobnie jak inne okienka zadań w systemie Microsoft Office. Użytkownicy mogą dock niestandardowych okienek zadań na różnych stronach w oknie aplikacji lub ich przeciągnij niestandardowych okienek zadań w dowolnej lokalizacji w oknie. Można utworzyć dodatku VSTO, która wyświetla wiele niestandardowych okienek zadań w tym samym czasie, a użytkownicy mogą kontrolować osobno każdy okienka zadań.  
   
-### <a name="windows-forms-support"></a>obsługa formularzy systemu Windows  
+### <a name="windows-forms-support"></a>Obsługa formularzy systemu Windows  
  Interfejs użytkownika niestandardowego okienka zadań utworzonej za pomocą narzędzi programowania pakietu Office w Visual Studio jest oparta na formanty formularzy systemu Windows. Znanych Projektant formularzy systemu Windows umożliwia projektowanie interfejsu użytkownika dla niestandardowego okienka zadań. Umożliwia także obsługę powiązania danych w formularzach systemu Windows można powiązać źródła danych z kontrolkami w okienku zadań.  
   
 ## <a name="create-a-custom-task-pane"></a>Tworzenie niestandardowego okienka zadań  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Dostęp do aplikacji z poziomu okienka zadań  
  Jeśli chcesz zautomatyzować aplikacji z formantu użytkownika, możesz bezpośrednio uzyskać dostęp model obiektów przy użyciu `Globals.ThisAddIn.Application` w kodzie. Statycznych `Globals` klasy zapewnia dostęp do `ThisAddIn` obiektu. `Application` Pole tego obiektu jest punktem wejścia do modelu obiektu aplikacji.  
   
- Aby uzyskać więcej informacji na temat `Application` pole `ThisAddIn` obiektów, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md). Aby uzyskać wskazówki, który demonstruje sposób automatyzowania aplikacji z niestandardowego okienka zadań, zobacz [wskazówki: zautomatyzować aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Aby uzyskać więcej informacji na temat `Globals` , zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Aby uzyskać więcej informacji na temat `Application` pole `ThisAddIn` obiektów, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md). Aby uzyskać wskazówki, który demonstruje sposób automatyzowania aplikacji z niestandardowego okienka zadań, zobacz [wskazówki: automatyczne aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Aby uzyskać więcej informacji na temat `Globals` , zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Zarządzanie interfejs użytkownika okienka zadań  
  Po utworzeniu w okienku zadań można użyć właściwości i zdarzenia <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt do kontrolowania interfejsu użytkownika w okienku zadań i odpowiadać, gdy użytkownik zmieni się w okienku zadań.  
@@ -147,11 +147,6 @@ ms.lasthandoff: 05/17/2018
  Jeśli chcesz wyświetlić niestandardowego okienka zadań z wielu Eksploratora lub Inspektora systemu windows, musisz utworzyć nowe wystąpienie klasy niestandardowego okienka zadań, po otwarciu okna Eksploratora lub Inspektora. W tym celu należy obsługiwać zdarzenie jest zgłaszane, gdy stworzono okno Eksploratora lub Inspektora, a następnie utwórz w okienku zadań w obsłudze zdarzeń. Można również obsługiwać zdarzenia Eksploratora i inspektora do ukrywania lub okienka zadań wyświetlana w zależności od tego, które okno jest widoczne.  
   
  Aby skojarzyć okienka zadań z określonym Eksploratora lub Inspektora, użyj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metody do tworzenia w okienku zadań i przekazać <xref:Microsoft.Office.Interop.Outlook.Explorer> lub <xref:Microsoft.Office.Interop.Outlook.Inspector> do obiektu *okna* parametru. Aby uzyskać więcej informacji na temat tworzenia niestandardowych okienek zadań, zobacz [Omówienie okienka zadań niestandardowe](../vsto/custom-task-panes.md).  
-  
- Aby uzyskać wskazówki, który demonstruje sposób tworzenia okienka zadań dla każdej wiadomości e-mail, która jest otwarta, zobacz [wskazówki: wyświetlanie niestandardowych okienek zadań z wiadomości e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Zdarzenia programu Outlook  
- Aby monitorować stan programu Eksplorator windows, można obsługiwać następujące zdarzenia związane z Eksploratora:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

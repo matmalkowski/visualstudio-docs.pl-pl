@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksploratora schematu XML)
 
 Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwania dotyczące schematu i inne operacje.
 
-## <a name="node-type-schema-set"></a>Typ węzła: Zestawie schematów
+## <a name="node-type-schema-set"></a>Typ węzła: zestawu schematu
 
 W poniższej tabeli opisano opcje, które są dostępne dla węzła zestawu schematu.
 
@@ -76,7 +76,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla węzła zestawu sche
 |**Grupa podstawienia Pokaż głowic**|Dla elementów globalne, które są elementami członkowskimi grupy podstawienia, wyszukuje i prezentuje wszystkie głowic bezpośrednie i pośrednie dla wybranego elementu, takie jak następujące:<br /><br /> -Grupy podstawienia head określonego dla wybranego elementu.<br />-Określone w jego element head head grupy podstawienia.|
 |**Generowanie przykładowy kod XML**|Dostępne tylko dla elementów globalnego. Generuje przykładowy plik XML dla elementu globalnego.|
 
-## <a name="node-type-global-types"></a>Typ węzła: Typy globalne
+## <a name="node-type-global-types"></a>Typ węzła: typy globalne
  Oprócz opcji do globalnego węzła opisane powyżej menu kontekstowe węzłów typu globalnego ma następujące opcje:
 
 |Opcja|Opis|
@@ -95,7 +95,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla węzła zestawu sche
 |**Przejdź do oryginalny atrybut**|Atrybut odwołania przechodzi do rzeczywistego definicji atrybutu.|
 |**Pokaż wszystkie odwołania**|Dla atrybutami globalnymi, wyszukuje i zaznacza wszystkie odwołania (inne atrybuty, które mają `ref="selectedAttribute"`) do wybranego atrybutu.|
 
-## <a name="node-type-attribute-group"></a>Typu węzła: Grupa atrybutów
+## <a name="node-type-attribute-group"></a>Typ węzła: grupy atrybutów
  Oprócz opcji do globalnego węzła opisane powyżej menu kontekstowego dla węzłów grupy atrybutów ma następujące opcje:
 
 |Opcja|Opis|
@@ -104,7 +104,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla węzła zestawu sche
 |**Pokaż wszystkie elementy członkowskie**|Wyszukuje i zaznacza wszyscy członkowie grupy atrybutów.|
 |**Pokaż wszystkie odwołania**|Wyszukuje i prezentuje wszystkie odwołania (grup, które mają atrybut `ref="selectedAttributeGroup"`) do wybranej grupy atrybutów.|
 
-## <a name="node-type-named-group"></a>Typu węzła: Grupa o nazwie
+## <a name="node-type-named-group"></a>Typ węzła: o nazwie grupy
  Oprócz opcji do globalnego węzła opisane powyżej menu kontekstowego dla węzłów grupy o nazwie ma następujące opcje:
 
 |Opcja|Opis|
@@ -113,7 +113,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla węzła zestawu sche
 |**Pokaż wszystkie elementy członkowskie**|Wyszukuje i zaznacza wszyscy członkowie grupy o nazwie.|
 |**Pokaż wszystkie odwołania**|Wyszukuje i prezentuje wszystkie odwołania (grup, które mają `ref="selectedGroup"`) do wybranej grupy.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)
 - [Wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md)

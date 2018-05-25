@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -80,7 +80,7 @@ Na przykład w przypadku wybrania `e:Book` element z listy IntelliSense, gdy pre
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Parowanie nawiasów klamrowych
- Edytor XML zawiera nawias klamrowy wyróżnianie daje natychmiast uzyskuje opinie na elementy, które zostały zamknięte. Można również Użyj skrótu klawiaturowego (CTRL +]), aby przejść z jednej nawiasu klamrowego do pasującego nawiasu klamrowego.
+ Edytor XML zawiera nawias klamrowy wyróżnianie daje natychmiast uzyskuje opinie na elementy, które zostały zamknięte. Można również użyć skrótu klawiaturowego (**Ctrl**+**]**) do przechodzenie z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
 
  Edytor XML robi to następujące elementy:
 
@@ -98,8 +98,8 @@ Na przykład w przypadku wybrania `e:Book` element z listy IntelliSense, gdy pre
 
 -   Otwieranie i zamykanie ofert dla atrybutów.
 
-## <a name="modifying-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense
- Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Jednak możesz to zmienić, modyfikując ustawienia opcji narzędzi.
+## <a name="modify-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense
+ Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Jednak to zmienić, modyfikując Twojej **narzędzia** > **opcje** ustawienia.
 
  **Automatyczne wstawianie** sekcji **różne** strony kontrolki następujące działania:
 
@@ -109,7 +109,7 @@ Na przykład w przypadku wybrania `e:Book` element z listy IntelliSense, gdy pre
 |Cudzysłowy atrybutu|Wstawia wartości atrybutów w cudzysłowie, gdy wprowadź nową nazwę atrybutu.|
 |Inne znaczników|Kończy się komentarze, CDATA DOCTYPE, przetwarzanie instrukcji i innych deklaracji znaczników.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatyczne uzupełnianie
+### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatyczne uzupełnianie
 
 1.  Wybierz **opcje** z **narzędzia** menu.
 
@@ -117,7 +117,7 @@ Na przykład w przypadku wybrania `e:Book` element z listy IntelliSense, gdy pre
 
 3.  Wprowadź wszelkie zmiany do **automatyczne wstawianie** sekcji, a następnie kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

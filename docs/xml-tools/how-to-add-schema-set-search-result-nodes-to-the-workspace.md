@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Porady: Dodawanie węzłów wynik wyszukiwania zestawu schematu do obszaru roboczego
 
-W tym temacie wyjaśniono, jak dodać węzłów, które są wyróżniane w Eksploratora schematu XML w wyniku wyszukiwanie słów kluczowych w obszarze roboczym.
+W tym temacie wyjaśniono, jak dodać węzłów, które są wyróżnione **Eksploratora schematu XML** wyniku wyszukiwanie słów kluczowych w obszarze roboczym.
 
 > [!NOTE]
 > Tylko węzły globalnego mogą być dodawane do [obszaru roboczego](../xml-tools/xml-schema-designer-workspace.md).
@@ -34,7 +34,7 @@ W tym temacie wyjaśniono, jak dodać węzłów, które są wyróżniane w Ekspl
 
      ![Wyszukiwanie słów kluczowych Eksploratora schematu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Wyniki wyszukiwania są wyróżnione Eksploratora schematu XML i oznaczone przez znaczniki na pionowy pasek przewijania.
+     Wyniki wyszukiwania są wyróżnione **Eksploratora schematu XML** i oznaczone przez znaczniki na pionowy pasek przewijania.
 
 3.  Wyniki wyszukiwania można dodać do obszaru roboczego, klikając **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku podsumowania wyników.
 

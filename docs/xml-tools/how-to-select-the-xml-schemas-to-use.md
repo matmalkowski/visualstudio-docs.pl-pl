@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Porady: Wybieranie schematów XML do użycia
 
-Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %InstallDir%\Xml\Schemas. Pamięci podręcznej schematu obejmuje dobrze znanych schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.
+Edytor XML zawiera znajduje się w pamięci podręcznej schematu *%InstallDir%\Xml\Schemas* katalogu. Pamięci podręcznej schematu obejmuje dobrze znanych schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.
 
 **Schematy** właściwości dokumentu jest używana do wybierania co najmniej jeden schemat definition language (XSD) schematy XML do użycia. Można wybrać schematów z pamięci podręcznej schematu lub określ schemat, który nie znajduje się w pamięci podręcznej.
 
-Schematów, które określisz są zapisywane w ukrytym pliku opcji użytkownika rozwiązania (.suo), oraz wszystkie inne właściwości dokumentu XML. W związku z tym nie trzeba ponownie wprowadzić te wartości przy następnym otwarciu rozwiązania.
+Schematy należy określić są zapisywane w ukrytym pliku opcji użytkownika rozwiązania (. *suo*), właściwości oraz wszystkich innych XML dokumentu. W związku z tym nie trzeba ponownie wprowadzić te wartości przy następnym otwarciu rozwiązania.
 
 > [!NOTE]
 > Edytor można sprawdzić za pomocą wbudowanego schematu lub schemat odwołuje się `xsd:schemaLocation` atrybutu. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności kodu XML dokumentu](../xml-tools/xml-document-validation.md).
@@ -33,7 +33,7 @@ Schematów, które określisz są zapisywane w ukrytym pliku opcji użytkownika 
 
 2.  W oknie właściwości dokumentu, kliknij przycisk **schematy** pola.
 
-     **Schematów XML** zostanie wyświetlone okno dialogowe. Okno dialogowe zawiera listę wszystkich schematów z rozszerzeniem xsd w pamięci podręcznej schematu (w tym schematów, do którego odwołuje się plik catalog.xml), a także żadnego schematu, który znajduje się w bieżącym rozwiązaniu, Otwórz w programie Visual Studio, do którego odwołuje się `xsd:schemaLocation` atrybut lub do których odwołuje się **schematy** właściwości.
+     **Schematów XML** zostanie wyświetlone okno dialogowe. Okno dialogowe zawiera listę wszystkich schematów z. *xsd* rozszerzenia w pamięci podręcznej schematu (w tym schematów, do którego odwołuje się *catalog.xml* pliku) i również żadnego schematu, która jest w bieżącym rozwiązaniu, Otwórz w programie Visual Studio, do której odwołuje się `xsd:schemaLocation` atrybut lub do których odwołuje się **schematy** właściwości.
 
 3.  Wybierz schematy do użycia w celu weryfikacji, wykonując jedną z następujących czynności:
 
@@ -72,8 +72,8 @@ Schematów, które określisz są zapisywane w ukrytym pliku opcji użytkownika 
     > [!NOTE]
     > Jeśli nadal masz odwołanie do schematu za pomocą `schemaLocation` atrybutu lub odpowiadającego mu `targetNamespace` następnie **Usuń** nie będzie działać w tej sytuacji z powodu skojarzenia automatycznie. W takim przypadku zalecane jest, aby oznaczyć schematu jako **nie używaj wybranych schematów** w **użyj** kolumny.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Pamięć podręczna schematów](../xml-tools/schema-cache.md)
-- [Okno dialogowe Schematy XML](../xml-tools/xml-schemas-dialog-box.md)
+- [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)
+- [Okno dialogowe schematy XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Edytor XML](../xml-tools/xml-editor.md)

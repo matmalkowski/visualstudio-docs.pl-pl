@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2956e0c19e7cf50fdde39765bc5b26112986b84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Porady: oceny wyrażenia XPath
 
@@ -29,7 +29,7 @@ Można obliczyć wyrażenia XPath z **QuickWatch** okno dialogowe. Wyrażenie XP
 -   Funkcje zdefiniowane przez użytkownika nie są obsługiwane.
 
 > [!NOTE]
-> W poniższej procedurze użyto pliki belowAvg.xsl i books.xml z [wskazówki: debugowanie arkusz stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tematu.
+> W poniższej procedurze użyto *belowAvg.xsl* i *books.xml* plików ze [wskazówki: debugowanie arkusz stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tematu.
 
 ## <a name="to-evaluate-an-xpath-expression"></a>Można oszacować wyrażenia XPath
 
@@ -51,6 +51,6 @@ Można obliczyć wyrażenia XPath z **QuickWatch** okno dialogowe. Wyrażenie XP
 
      **Wartość** pole pokazuje, że wyrażenie XPath zwraca `true`.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

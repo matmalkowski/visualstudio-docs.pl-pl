@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6c7cfc4cd1aa5736b4027155bd52be3ab095e60
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilowanie wydajności aplikacji w programie Visual Studio
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
@@ -46,7 +46,7 @@ W tym samouczku obejmują:
 > * Zbieranie danych o użyciu procesora CPU
 > * Analizowanie danych użycia procesora CPU
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbieranie danych profilowania 
   
 1.  Otwórz projekt, który ma być debugowania w programie Visual Studio i ustaw punkt przerwania w aplikacji w momencie, gdy chcesz sprawdzić użycie procesora CPU.
 
@@ -97,7 +97,7 @@ W tym samouczku obejmują:
 
      W tym momencie można rozpocząć do analizowania danych.
 
-## <a name="Step2"></a> Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
 
 Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z użycia procesora CPU, identyfikowanie funkcji, które robią najbardziej pracy i następnie biorąc bliższe spojrzenie na każdym z nich.
 
@@ -145,7 +145,7 @@ Poniżej przedstawiono więcej informacji na temat wartości kolumn:
 
 ## <a name="BKMK_External_Code"></a>Widok kodu zewnętrznego
 
-Funkcje w systemie i składników struktury są zewnętrznego kodu napisanego wykonywanych przez kod. Kod zewnętrzny obejmują funkcje, które start i Zatrzymaj aplikację, Rysuj interfejsu użytkownika, kontroli wątków i podaj inne niskiego poziomu usług do aplikacji. W większości przypadków będzie zainteresowana kod zewnętrzny, i dlatego narzędzia użycie procesora CPU zbiera funkcji zewnętrznych metody użytkownika do jednego **[kod zewnętrzny]** węzła.
+Kod zewnętrzny są funkcje systemu i framework składników, które są wykonywane przez kod zostanie zapisany. Kod zewnętrzny obejmują funkcje, które start i Zatrzymaj aplikację, Rysuj interfejsu użytkownika, kontroli wątków i podaj inne niskiego poziomu usług do aplikacji. W większości przypadków będzie zainteresowana kod zewnętrzny, i dlatego narzędzia użycie procesora CPU zbiera funkcji zewnętrznych metody użytkownika do jednego **[kod zewnętrzny]** węzła.
   
 Wyświetlanie ścieżek wywołań zewnętrznego kodu, należy wybrać **Pokaż kod zewnętrzny** z **filtrowanie widoku** listy, a następnie wybierz pozycję **Zastosuj**.  
   

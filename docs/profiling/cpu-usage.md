@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analiza użycia procesora CPU
 Gdy potrzebne do badania problemów z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, jak używa Procesora. **Użycie procesora CPU** narzędzie pokazuje, gdy Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic i kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, jest widoczny na funkcja podział użycia procesora CPU bez opuszczania debugera. Włącz profilowanie procesora CPU i wyłączanie podczas debugowania i wyświetlić wyniki podczas wykonywania zostanie zatrzymana, na przykład w punkcie przerwania.  
@@ -72,7 +72,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|  
   
 ####  <a name="BKMK_External_Code"></a> Kod zewnętrzny  
- Funkcje w systemie i składników struktury są zewnętrznego kodu napisanego wykonywanych przez kod. Kod zewnętrzny obejmują funkcje, które start i Zatrzymaj aplikację, Rysuj interfejsu użytkownika, kontroli wątków i podaj inne niskiego poziomu usług do aplikacji. W większości przypadków będzie zainteresowana kod zewnętrzny i dlatego użycie procesora CPU Wywołaj gromadzi drzewa funkcji zewnętrznych metody użytkownika do jednego **[kod zewnętrzny]** węzła.  
+ Kod zewnętrzny są funkcje systemu i framework składników, które są wykonywane przez kod zostanie zapisany. Kod zewnętrzny obejmują funkcje, które start i Zatrzymaj aplikację, Rysuj interfejsu użytkownika, kontroli wątków i podaj inne niskiego poziomu usług do aplikacji. W większości przypadków będzie zainteresowana kod zewnętrzny i dlatego użycie procesora CPU Wywołaj gromadzi drzewa funkcji zewnętrznych metody użytkownika do jednego **[kod zewnętrzny]** węzła.  
   
  Umożliwia wyświetlanie ścieżek wywołania z kodu zewnętrznego, wybierz **Pokaż kod zewnętrzny** z **filtrowanie widoku** listy, a następnie wybierz pozycję **Zastosuj**.  
   
@@ -93,7 +93,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
 |**Całkowita liczba Procesora (%)**|![Łączna liczba % danych równości](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Procent aktywności Procesora aplikacji w wybranym zakresie czasu użytej przez wywołania funkcji i funkcji wywoływanych przez funkcję. Należy pamiętać, że jest inny niż **użycie procesora CPU** oś czasu wykresu, który porównuje łączną aktywność dotyczącą aplikacji w zakresie czasu, aby całkowita pojemność procesora CPU.|  
 |**Samodzielnie Procesora (%)**|![Samodzielna % równości](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procent aktywności Procesora aplikacji w wybranym zakresie czasu użytej przez wywołania funkcji, z wyłączeniem aktywności funkcji wywołanych przez funkcję.|  
 |**Całkowita liczba procesora CPU (ms)**|Wyrażony w milisekundach czas spędzony w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
-|**Samodzielnie procesora CPU (ms)**|Wyrażony w milisekundach czas spędzony w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję.|  
+|**Samodzielnie procesora CPU (ms)**|Wyrażony w milisekundach czas spędzony w wywołaniach funkcji w wybranym zakresie czasu i funkcje, które zostały wywołane przez funkcję, z wyłączeniem aktywności funkcji wywołanych przez funkcję.|  
 |**Module**|Nazwa modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań  

@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Porady: generowanie fragment kodu XML na podstawie schematu XML
 
-Edytor XML ma możliwość Generowanie fragmentów kodu XML na podstawie schematu schematu XML definition language (XSD). Na przykład podczas tworzenia pliku XML, gdy znajduje się obok nazwy elementu, można naciśnij klawisz TAB, aby umieścić element w danych XML generowane na podstawie informacji o schemacie dla tego elementu.
+Edytor XML ma możliwość Generowanie fragmentów kodu XML na podstawie schematu schematu XML definition language (XSD). Na przykład podczas tworzenia pliku XML, gdy znajduje się obok nazwy elementu, można naciśnij **kartę** do wypełniania elementu z danymi XML generowane na podstawie informacji o schemacie dla tego elementu.
 
 Ta funkcja jest dostępna tylko w przypadku elementów. Również mają zastosowanie następujące reguły:
 
@@ -44,7 +44,7 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 
 ## <a name="example"></a>Przykład
 
- Kroki opisane w tej sekcji pokazują, jak funkcja wygenerować schematu XML fragment kodu z edytora XML.
+ Kroki opisane w tej sekcji opisano sposób funkcja wygenerować schematu XML fragment kodu z edytora XML.
 
 > [!NOTE]
 > Przed rozpoczęciem tych procedur, Zapisz plik schematu na komputerze lokalnym.
@@ -85,11 +85,11 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 
      **Skontaktuj się z** można dodać elementu głównego.
 
-3.  Wybierz **kontakt** z listy elementów członkowskich i naciśnij klawisz ENTER.
+3.  Wybierz **skontaktuj się z** z listy elementów członkowskich i naciśnij klawisz **Enter**.
 
      Edytor dodaje tag początkowy `<Contact` i umieszcza kursor po nazwie elementu.
 
-4.  Naciśnij klawisz TAB, aby wygenerować danych XML dla `Contact` element na podstawie jego schematu informacji.
+4.  Naciśnij klawisz **kartę** do generowania danych XML dla `Contact` element na podstawie jego schematu informacji.
 
 ## <a name="input"></a>Dane wejściowe
 
@@ -155,7 +155,7 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 </Contact>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Fragmenty kodu XML](../xml-tools/xml-snippets.md)
-- [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
+- [Porady: użycie XML wstawki kodu programu](../xml-tools/how-to-use-xml-snippets.md)

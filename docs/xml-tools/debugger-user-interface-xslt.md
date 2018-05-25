@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b2767a952c566359b1c61bbdc83060bf905e99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debuger (XSLT)
 
@@ -22,7 +22,7 @@ W tym temacie opisano debugera systemu windows i oknach dialogowych. Zostało om
 
 Aby uzyskać więcej informacji, zobacz [debugowania odwołanie do interfejsu użytkownika](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>Okno zmiennych lokalnych
+## <a name="locals-window"></a>okno zmiennych lokalnych
  Okno zmiennych lokalnych Wyświetla informacje zdefiniowane w arkuszu stylów. Okno zmiennych lokalnych zawiera trzy kolumny informacji:
 
  **Nazwa**
@@ -51,36 +51,36 @@ Aby uzyskać więcej informacji, zobacz [debugowania odwołanie do interfejsu u�
  Debuger XSLT używa osobnym oknie do wyświetlania danych wyjściowych debugera. To jest tym samym oknie używany do wyświetlania danych wyjściowych z **Pokaż dane wyjściowe XSL** polecenia.
 
 ## <a name="task-list"></a>Lista zadań
- Lista zadań zawiera listę wszystkich błędów kompilacji w arkuszu stylów. Dwukrotne kliknięcie błąd ma kursor do wiersza z powodu błędu.
+ **Listy zadań** zawiera listę wszystkich błędów kompilacji, w arkuszu stylów. Dwukrotne kliknięcie błąd ma kursor do wiersza z powodu błędu.
 
- Lista zadań zawiera wszystkie błędy w blokach skryptu w pliku XSLT.
+ **Listy zadań** obejmuje wszystkie błędy w blokach skryptu w pliku XSLT.
 
 > [!NOTE]
-> Debuger XSLT nie zawiera ostrzeżeń, aby nigdy nie były wyświetlane na liście zadań.
+> Debuger XSLT nie zawiera ostrzeżeń, aby nie były wyświetlane w **listy zadań**.
 
 ## <a name="breakpoints-window"></a>Okno punktów przerwania
  Okna punktów przerwań przedstawia wszystkich punktów przerwania ustawionych w bieżącym projekcie. Jeśli punkt przerwania zostanie dodany, gdy okno jest widoczne, okno zostanie automatycznie zaktualizowany do Pokaż nowego punktu przerwania.
 
  Okna punktów przerwań zachowania w przypadku taki sam sposób jak inne debugera programu Visual Studio.
 
-## <a name="command-windowimmediate-window"></a>Okno/natychmiastowego okno polecenia
+## <a name="command-windowimmediate-window"></a>Okno polecenia/bezpośrednim
  Nie jest zaimplementowana w tej wersji debuger XSLT.
 
-## <a name="watch-window"></a>Okno czujki
+## <a name="watch-window"></a>okno czujki
  Okno czujki jest używany do oceny zmiennych. Można również zmienić wartości zmiennych.
 
  Okno czujki zmienne są dla bieżącego kontekstu (najwyższy element na stosie wywołań). Jeśli zmienisz kontekście okna czujki aktualizacji i wyświetla zmienne ustawione dla tego kontekstu.
 
 ## <a name="call-stack-window"></a>Stos wywołań, okno
- Stos wywołań okna umożliwia wyświetlanie nazw funkcji w stosie wywołań, typy parametrów i wartości parametrów. Informacje stosu wywołań jest wyświetlany tylko wtedy, gdy program debugowany jest w stanie przerwania.
+ **Stos wywołań** okno służy do wyświetlania nazwy funkcji w stosie wywołań, typy parametrów i wartości parametrów. Informacje stosu wywołań jest wyświetlany tylko wtedy, gdy program debugowany jest w stanie przerwania.
 
- Stos wywołań reprezentuje różnych kontekstach, które przechodzi przez wykonanie XSLT. Na przykład, jeśli istnieje połączenie z szablonu "a" do szablonu "b", szablon "" i "b" szablonu są wyświetlane w oknie stosu wywołań w bieżącym kontekście na górze listy. Użytkownik jest w stanie wyświetlić kwerendę, która jest aktualnie wykonywany.
+ Stos wywołań reprezentuje różnych kontekstach, które przechodzi przez wykonanie XSLT. Na przykład, jeśli istnieje połączenie z szablonu "a" do szablonu "b", szablon "" i szablon "b", są wyświetlane w **stos wywołań** okna z bieżącego kontekstu na górze listy. Użytkownik jest w stanie wyświetlić kwerendę, która jest aktualnie wykonywany.
 
  Jeśli szablony nie mają nazwę w pliku XSLT, są używane nazwy generowane przez procesor XSLT.
 
  Kliknięcie elementu innego niż ten, w górnej części listy wskazuje podglądu, gdzie gałęzi wykonywania XSLT się to zdarzyć przy użyciu standardowych wyróżnianie zielony i zielone strzałki.
 
-## <a name="quickwatch-dialog-box"></a>Okna dialogowego QuickWatch
+## <a name="quickwatch-dialog-box"></a>QuickWatch — okno dialogowe
  **QuickWatch** okno dialogowe jest używany do oceny wyrażenia XPath 1.0. Węzeł kontekstu ( `self::node()` węzeł w oknie zmienne lokalne) udostępnia Kontekst wykonywania wyrażenia XPath. Wynik wykonania wyrażenie XPath jest wyświetlany w oknie wyrażeń kontrolnych.
 
  Poniższa lista zawiera pewne ograniczenia na Obliczanie wyrażenia XPath.
@@ -98,8 +98,8 @@ Aby uzyskać więcej informacji, zobacz [porady: oceny wyrażenia XPath](../xml-
 
  Aby uzyskać więcej informacji [porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
 - [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
-- [Sprawdź zmienne w automatycznych i zmiennych lokalnych Windows w programie Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Sprawdź zmienne w oknach zmiennych automatycznych i zmiennych lokalnych w programie Visual Studio](../debugger/autos-and-locals-windows.md)

@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji Node.js i bibliotece React.
 description: W tym samouczku tworzenie aplikacji za pomocą narzędzia Node.js dla programu Visual Studio
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 667eee325be1ddd57f1f06f983b3105e5984df2d
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i platformy React w programie Visual Studio
 Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i korzystać z funkcji IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React.
@@ -40,16 +40,16 @@ Z tego samouczka, dowiesz się, jak:
 
 * Musi mieć zainstalowane środowisko uruchomieniowe Node.js.
 
-    Jeśli użytkownik nie jest zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Nie wykrywa zainstalowane środowisko uruchomieniowe, można skonfigurować do odwołania zainstalowanego środowiska uruchomieniowego na stronie właściwości projektu (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    W tym samouczku przetestowano z wersją 8.11.2.
 
-    W tym samouczku przetestowano z wersją 8.9.4.
+    Jeśli użytkownik nie jest zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Nie wykrywa zainstalowane środowisko uruchomieniowe, można skonfigurować do odwołania zainstalowanego środowiska uruchomieniowego na stronie właściwości projektu (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utwórz projekt aplikacji sieci web Node.js.
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **pusta aplikacja sieci Web Node.js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz pozycję **OK**.
 
@@ -88,7 +88,7 @@ Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
 
     ![Instalowanie pakietów npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    **Dane wyjściowe** Pokazuje okno postęp instalacji pakietu. Po zainstalowaniu pakietu jest wyświetlany w obszarze **npm** węzła.
+    Kliknij przycisk **dane wyjściowe** okna, aby wyświetlić postęp instalacji pakietu (wybierz **Npm** w **Pokaż dane wyjściowe z** pól). Po zainstalowaniu pakietu jest wyświetlany w obszarze **npm** węzła.
 
     Projektu *package.json* plik został zaktualizowany przy użyciu nowych informacji pakietu, łącznie z wersją pakietu.
 
@@ -98,8 +98,8 @@ Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,9 +107,9 @@ Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
     }
     ```
 
-1. Kliknij prawym przyciskiem myszy **npm** węzeł projektu i wybierz polecenie **Zainstaluj brakujące pakietów npm**.
+1. Kliknij prawym przyciskiem myszy **npm** węzeł projektu i wybierz polecenie **aktualizację pakietów npm**.
 
-    **Dane wyjściowe** okno wyświetla postęp instalowania pakietów.
+    Kliknij przycisk **dane wyjściowe** okna, aby zobaczyć postęp na temat instalowania pakietów. Może to potrwać kilka minut i może nie od razu Zobacz wyniki.
 
     Poniżej przedstawiono moduły npm, w jakiej występują w Eksploratorze rozwiązań po ich zainstalowaniu.
 
@@ -133,7 +133,7 @@ Dla tej aplikacji proste dodawane są pliki projektu w katalogu głównym projek
 
 1. W **Dodaj nowy element** oknie dialogowym wybierz **plików TypeScript JSX**, wpisz nazwę *app.tsx*i kliknij przycisk **OK**.
 
-1. Powtórz te kroki, aby dodać *webpack config.js*.
+1. Powtórz te kroki, aby dodać *webpack config.js*. Zamiast pliku TypeScript JSX, wybierz **plik JavaScript**.
 
 1. Powtórz te same kroki, aby dodać *index.html* do projektu. Zamiast pliku JavaScript, wybierz **plik HTML**.
 
@@ -229,7 +229,7 @@ W poprzednich krokach, możesz dodać *webpack config.js* do projektu. Następni
 
     Kod konfiguracji webpack nakazuje Webpack do używania języka TypeScript, moduł ładujący transpile JSX.
 
-1. Otwórz tsconfig.json i Dodaj następujący kod, który określa opcje kompilatora języka TypeScript:
+1. Otwórz *tsconfig.json* i Zastąp następujący kod, który określa opcje kompilatora języka TypeScript w kodzie domyślnym:
 
     ```json
     {
@@ -251,7 +251,7 @@ W poprzednich krokach, możesz dodać *webpack config.js* do projektu. Następni
     }
     ```
 
-    App.tsx jest określony jako plik źródłowy.
+    *App.tsx* jest określony jako plik źródłowy.
 
 ## <a name="transpile-the-jsx"></a>Transpile JSX
 
@@ -331,7 +331,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
     ![Ustaw punkt przerwania](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Chrome wybrany jako cel debugowania w programie Visual Studio, naciśnij **Ctrl + F5** (**debugowania** > **uruchomić bez debugowania**) aby uruchomić aplikację w przeglądarce.
+1. Chrome wybrany jako cel debugowania w programie Visual Studio, naciśnij **Ctrl**+**F5** (**debugowania** > **uruchomić bez debugowania** ) aby uruchomić aplikację w przeglądarce.
 
     Aplikacja otwiera nową kartę przeglądarki.
 
@@ -346,7 +346,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
     Wiadomo, że debuger został dołączony poprawnie, gdy konsoli JavaScript i narzędzia DOM Explorer Otwórz w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzia F12 Microsoft Edge i przeglądarki Chrome Developer Tools.
 
     > [!NOTE]
-    > Jeśli nie dołączyć debuger i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie." następnie użyj Menedżera zadań, aby zamknąć wszystkie wystąpienia przeglądarki Chrome przed rozpoczęciem Chrome w trybie debugowania. Rozszerzenia programu Chrome mogą być uruchomione i uniemożliwia trybu pełnego debugowania.
+    > Jeśli nie dołączyć debuger i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie. ", zamknij wszystkie wystąpienia przeglądarki Chrome przed rozpoczęciem Chrome w tryb debugowania za pomocą Menedżera zadań. Rozszerzenia programu Chrome mogą być uruchomione i uniemożliwia trybu pełnego debugowania.
 
 1. Ponieważ kodu przy użyciu punktu przerwania już wykonane, Odśwież stronę przeglądarki trafienie punktu przerwania.
 
@@ -354,7 +354,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
     Można napotkać punkt przerwania w jednej *bundle.js aplikacji* lub lokalizacji zamapowanych *app.tsx*w zależności od stanu Twojego środowiska i przeglądarki. W obu przypadkach można wykonywać krokowo kodu i Sprawdź zmienne.
 
-    * Jeśli chcesz podzielić kodu w *app.tsx* i nie można to zrobić, użyj **dołączyć do procesu** zgodnie z opisem w poprzednich krokach można dołączyć debugera. Następnie otwórz dynamicznie generowanym *app.tsx* plików w Eksploratorze rozwiązań, otwierając **dokumentów skryptu** > **app.tsx**, ustaw punkt przerwania i Odśwież strony w przeglądarce.
+    * Jeśli chcesz podzielić kodu w *app.tsx* i nie można to zrobić, użyj **dołączyć do procesu** zgodnie z opisem w poprzednich krokach można dołączyć debugera. Następnie otwórz dynamicznie generowanym *app.tsx* plików w Eksploratorze rozwiązań, otwierając **dokumentów skryptu** > **app.tsx**, ustaw punkt przerwania i Odśwież strony w przeglądarce (Ustaw punkt przerwania w wierszu kodu, który umożliwia punktów przerwania, takich jak `return` instrukcji lub `var` deklaracji).
 
         Alternatywnie Jeśli chcesz podzielić kodu w *app.tsx* i nie można to zrobić, spróbuj użyć `debugger;` instrukcji w *app.tsx*, lub ustaw punkty przerwania w narzędziach Developer Chrome zamiast tego.
 
@@ -368,4 +368,4 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 W tym samouczku przedstawiono sposób tworzenia aplikacji Node.js i platformy React, transpile JSX i debugowania. Aby dowiedzieć się więcej na temat narzędzia Node.js dla programu Visual Studio, zobacz strony typu Wiki.
 
 > [!div class="nextstepaction"]
-> [Narzędzia Node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Narzędzia node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)

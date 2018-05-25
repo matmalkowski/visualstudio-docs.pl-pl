@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77f9240b223ad903cc89be0e49f3b0ea46d2fe3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2a22c413c7f27b5aff14fa21d28163963a7351
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="unblocking-stack"></a>Stos odblokowań
+# <a name="unblock-stack"></a>Odblokuj stosu
 Jeśli element wątku aktualnie zaznaczonego reprezentuje segment zablokowanych rozpoczęcia później można wykonać po został odblokowany przez inny wątek w bieżącym procesie, stos wywołań dla wątku, który został odblokowywania jest wyświetlana na tej karcie.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

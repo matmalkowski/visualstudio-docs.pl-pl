@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210dc624bbdaac7aaa0297167416d684629eb07f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="command-line-profiling-tools-reference"></a>Narzędzia profilowania wiersza polecenia — Odwołanie
+# <a name="command-line-profiling-tools-reference"></a>Wiersza polecenia narzędzi profilowania
 Narzędzia wiersza polecenia wydajności umożliwiają deweloperom profilu aplikacji w wierszu polecenia. Następujące narzędzia profilowania wiersza polecenia umożliwiają profilu kodu w wierszu polecenia.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

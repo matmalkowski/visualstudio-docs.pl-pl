@@ -1,7 +1,7 @@
 ---
 title: Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 952b4e4cdff2f5620870cad5903d6e20f61a862e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb1898c9e46de7669bc727884055f847abb0ce6e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -31,6 +31,14 @@ Procedury te zostały przetestowane na tych konfiguracji serwera:
 ## <a name="requirements"></a>Wymagania
 
 Debugowanie między dwoma komputerami połączone za pośrednictwem serwera proxy nie jest obsługiwane. Debugowanie za pośrednictwem duże opóźnienie lub połączenie o niskiej przepustowości, takich jak Internet, połączenia telefonicznego lub przez Internet między krajów nie jest zalecana i może się nie powieść lub zbyt wolno. Aby uzyskać pełną listę wymagań, zobacz [wymagania](../debugger/remote-debugging.md#requirements_msvsmon).
+
+## <a name="app-already-running-in-iis"></a>Aplikacja już uruchomione w usługach IIS?
+
+Ten artykuł zawiera kroki na konfigurowaniu podstawowych konfiguracji usług IIS w systemie Windows server i wdrażania aplikacji w programie Visual Studio. Te kroki są dołączone do upewnij się, że serwer ma wymagane składniki zainstalowane, że aplikacja może działać prawidłowo, a można przystąpić do zdalnego debugowania.
+
+* Jeśli aplikacja działa w usługach IIS i po prostu chcesz pobrać zdalnego debugera i Rozpocznij debugowanie, przejdź do [pobrać i zainstalować narzędzia zdalnego w systemie Windows Server](#BKMK_msvsmon).
+
+* Jeśli potrzebujesz pomocy, aby upewnić się, że aplikacja jest skonfigurowany, wdrożona i działają poprawnie w usługach IIS tak, aby umożliwić debugowanie, wykonaj wszystkie kroki opisane w tym temacie.
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Tworzenie aplikacji platformy ASP.NET Core na komputerze programu Visual Studio 2017 r. 
 
@@ -50,17 +58,14 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Zaktualizuj ustawienia zabezpieczeń przeglądarki w systemie Windows Server
 
-W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, można łatwo pobrać opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
+Jeśli Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Internet Explorer (jest ona włączona domyślnie), następnie należy dodać niektóre domeny jako zaufane witryny, aby możliwe było pobrać niektórych składników serwera sieci web. Dodaj zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Dodaj następujące domeny.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - Program IIS.NET
 
-Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
-
-Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. W większości przypadków te dodatkowe zasoby nie są wymagane do zainstalowania oprogramowania.
+Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. Niektóre z tych zasobów nie są wymagane, ale w celu uproszczenia procesu, kliknij przycisk **Dodaj** po wyświetleniu monitu.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalowanie platformy ASP.NET Core w systemie Windows Server
 
@@ -71,17 +76,47 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 
 3. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 do obsługi serwerów w systemie Windows Server
+## <a name="choose-a-deployment-option"></a>Wybierz opcję wdrożenia
 
-W niektórych scenariuszach może być szybsze importowania ustawień publikowania w programie Visual Studio zamiast ręcznie konfigurować opcje wdrażania. Aby zaimportować ustawienia zamiast konfigurować profilu publikowania w programie Visual Studio publikowania, zobacz [importowania ustawień publikowania i wdrażania usług IIS](../deployment/tutorial-import-publish-settings-iis.md). W przeciwnym razie pozostanie w tym temacie i materiały. Po ukończeniu tego artykułu na temat importowania ustawień publikowania i wdrożyć aplikację pomyślnie, a następnie wróć do tego tematu i uruchomić w sekcji na [pobierania narzędzia zdalnej](#BKMK_msvsmon).
+Aby uzyskać pomoc, aby wdrożyć aplikację do usług IIS, należy wziąć pod uwagę następujące opcje:
 
-## <a name="BKMK_install_webdeploy"></a> (Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
+* Wdrażanie, tworząc plik ustawień publikowania w usługach IIS i importowania ustawień w programie Visual Studio. W niektórych scenariuszach jest szybkim sposobem wdrożenia aplikacji. Podczas tworzenia pliku ustawień publikowania uprawnienia automatycznie są konfigurowane w usługach IIS.
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* Wdrożenie przez publikowanie do folderu lokalnego i kopiowanie danych wyjściowych za pomocą preferowanej metody do folderu aplikacji przygotowane w usługach IIS.
 
-## <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+## <a name="optional-deploy-using-a-publish-settings-file"></a>(Opcjonalnie) Wdrażanie przy użyciu pliku ustawień publikowania
 
-Jeśli są importowane ustawienia publikowania, możesz pominąć tę sekcję.
+Tej opcji można użyć Utwórz plik ustawień publikowania i zaimportuj go do programu Visual Studio.
+
+> [!NOTE]
+> Ta metoda wdrażania korzysta z narzędzia Web Deploy. Jeśli chcesz skonfigurować narzędzie Web Deploy ręcznie w programie Visual Studio zamiast importowania ustawień, należy zainstalować 3,6 wdrażania sieci Web zamiast 3,6 wdrażania sieci Web Hosting serwerów. Jednak jeśli konfigurujesz narzędzia Web Deploy ręcznie, należy upewnić się, że folder aplikacji na serwerze skonfigurowano poprawne wartości i uprawnienia (zobacz [witryny sieci Web ASP.NET skonfigurować](#BKMK_deploy_asp_net)).
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalowanie i Konfigurowanie narzędzia Web Deploy dla hostingu serwerów w systemie Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Utwórz plik ustawień publikowania w usługach IIS w systemie Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importowanie ustawień publikowania w programie Visual Studio i wdrażanie
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+Po aplikacji wdraża się pomyślnie, należy uruchomić automatycznie. Jeśli aplikacja nie zostanie uruchomiony z programu Visual Studio, uruchomić aplikację w usługach IIS. Dla platformy ASP.NET Core, należy się upewnić, że pula aplikacji pól dla **DefaultAppPool** ustawiono **bez kodu zarządzanego**.
+
+1. W **ustawienia** okno dialogowe, Włącz debugowanie klikając **dalej**, wybierz **debugowania** konfiguracji, a następnie wybierz pozycję **Usuń dodatkowe pliki w docelowy** w obszarze **publikowania pliku** opcje.
+
+    > [!NOTE]
+    > Wybranie opcji konfiguracji wydania, należy wyłączyć debugowanie w *web.config* pliku podczas publikowania.
+
+1. Kliknij przycisk **zapisać** , a następnie ponownie opublikować aplikację.
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Opcjonalnie) Wdrażanie poprzez publikowanie do folderu lokalnego
+
+Ta opcja służy do wdrożenia aplikacji, jeśli chcesz skopiować aplikacji usług IIS przy użyciu programu Powershell, RoboCopy, lub chcesz ręcznie skopiować pliki.
+
+### <a name="BKMK_deploy_asp_net"></a> Konfigurowanie witryny sieci Web ASP.NET na komputerze serwera systemu Windows
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 
@@ -101,17 +136,17 @@ Jeśli są importowane ustawienia publikowania, możesz pominąć tę sekcję.
 
     Jeśli nie widzisz jednego z tych użytkowników z dostępem, przejść przez kroki, aby dodać konta IUSR jako użytkownik z uprawnieniami Odczyt i wykonywanie.
 
-## <a name="bkmk_webdeploy"></a> (Opcjonalnie) Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
-
-[!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
-
-## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Opcjonalnie) Publikowanie i wdrażanie aplikacji przez publikowanie do folderu lokalnego z programu Visual Studio
+### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Publikowanie i wdrażanie aplikacji przez publikowanie do folderu lokalnego z programu Visual Studio
 
 Można również publikowanie i wdrażanie aplikacji przy użyciu systemu plików lub innych narzędzi.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
 ## <a name="BKMK_msvsmon"></a> Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
+
+W tym samouczku używamy programu Visual Studio 2017 r.
+
+Jeśli masz problem otwarcie strony z pobierania zdalnego debugera, zobacz [odblokować pobierania pliku](../debugger/remote-debugging.md#unblock_msvsmon) Aby uzyskać pomoc.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

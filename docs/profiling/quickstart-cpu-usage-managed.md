@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c55c4bde3a1cc5cc6a6f150f9e73b4d56f510be5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 
@@ -40,7 +40,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
 2. Otwórz plik Program.cs i Zastąp cały kod z następującym kodem:
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass

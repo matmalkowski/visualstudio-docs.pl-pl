@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwy z wiersza polecenia
 
@@ -141,7 +141,7 @@ W poniższym przykładzie usługi systemu Windows jest profilowane przy użyciu 
 
 Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:
 
-[Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
 [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
 
@@ -155,4 +155,4 @@ Aby dodać dane zbierane za pomocą VSPerfASPNETCmd profilowania interakcja wars
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Aby uzyskać więcej informacji na temat VSPerfASPNETCmd, zobacz [szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Aby uzyskać więcej informacji na temat VSPerfASPNETCmd, zobacz [profilowania szybkie witryny sieci web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

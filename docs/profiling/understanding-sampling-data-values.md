@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cd6b8d7fcb6a9eaf2d68f3eabe4b851979302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="understanding-sampling-data-values"></a>Zapoznanie z wartościami danych próbkowania
+# <a name="understand-sampling-data-values"></a>Zrozumienie wartościami danych próbkowania
 
 *Próbkowania* metoda Visual Studio Profiling Tools profilowania przerwań procesora komputera w ustalonych odstępach czasu i zbiera stosu wywołań funkcji. A *stosu wywołań* jest strukturą dynamicznych, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesor.
 
@@ -52,5 +52,5 @@ Procent całkowitej liczby wyłącznych próbek w przebiegu profilowania, które
 
 ## <a name="see-also"></a>Zobacz także
 
-[Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
-[Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)
+[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
+[Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

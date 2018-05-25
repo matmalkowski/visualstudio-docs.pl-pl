@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency Visualizer można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty symbole, tylko mój kod, buforowanie, filtrowanie, CLR zdarzenia, znaczniki, dostawców i plików.  
@@ -35,7 +35,7 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
 ## <a name="filter"></a>Filtr  
  Na karcie Filtr można wybrać zestaw zdarzeń, które zbiera wizualizatora współbieżności. Wybór podzbioru zdarzeń ogranicza typy danych, które są wyświetlane w raportach, zmniejsza rozmiar każdego śledzenia i skraca czas, która jest wymagana do przetwarzania śladów.  
   
-### <a name="clr-events"></a>Zdarzenia CLR  
+### <a name="clr-events"></a>zdarzenia CLR  
  Zdarzenia generowane przez środowisko uruchomieniowe języka wspólnego (CLR) Włącz Concurrency Visualizer rozwiązywać zarządzane stosy wywołań.  Jeśli wyłączysz zbieranie zdarzeń CLR zmniejszy rozmiar śledzenia, ale niektóre stosy wywołań nie zostanie rozwiązany.  W związku z tym niektóre aktywności wątku procesora CPU może być niepoprawnie kategorii.  
   
 ### <a name="collect-for-native-processes"></a>Zbieraj dla natywnych procesów  
@@ -54,12 +54,12 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
  Zdarzenia We/Wy pliku reprezentują uzyskuje dostęp do dysku w imieniu bieżącego procesu.  Jeśli wyłączysz zdarzenia We/Wy plików zmniejsza rozmiar śledzenia, ale widok wątki nie zgłosi żadnych informacji o kanały dysku lub dysku operacji.  
   
 ## <a name="markers"></a>Znaczniki  
- Na karcie znaczników można skonfigurować zestaw dostawcy ETW, które są wyświetlane jako znaczniki Concurrency Visualizer.  Można również filtrować znacznika kolekcji na podstawie poziomu ważności i ETW kategorii.  Jeśli używasz [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) się przy użyciu własnego dostawcę znacznika, możesz zarejestrować go tutaj aby był on wyświetlany w widoku wątków.  
+ Na **znaczniki** kartę, można skonfigurować zestaw dostawcy ETW, które są wyświetlane jako znaczniki Concurrency Visualizer.  Można również filtrować znacznika kolekcji na podstawie poziomu ważności i ETW kategorii.  Jeśli używasz [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) się przy użyciu własnego dostawcę znacznika, możesz zarejestrować go tutaj aby był on wyświetlany w widoku wątków.  
   
 ### <a name="adding-a-new-provider"></a>Dodawanie nowego dostawcę  
  Jeśli używa Twój kod [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) lub generuje zdarzenia ETW, które należy wykonać <xref:System.Diagnostics.Tracing.EventSource> Konwencji, można wyświetlać te zdarzenia w Concurrency Visualizer przez zarejestrowanie ich w tym oknie dialogowym.  
   
- W polu Nazwa wprowadź nazwę, która opisuje typy zdarzeń, które są generowane przez dostawcę.  W polu identyfikatora GUID wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą. (Identyfikator GUID jest skojarzony z każdego dostawcy ETW).  
+ W **nazwa** wprowadź nazwę opisującą typy zdarzeń, które są generowane przez dostawcę.  W **GUID** wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą. (Identyfikator GUID jest skojarzony z każdego dostawcy ETW).  
   
  Opcjonalnie można określić, czy filtrowanie zdarzeń z tym dostawcą, na podstawie poziomu kategorii lub ważności.  Za pomocą kategorii pole ma zostać przefiltrowane na podstawie zestawu SDK wizualizatora współbieżności kategorii.  Aby to zrobić, wprowadź ciągów rozdzielanych przecinkami, kategorii lub zakresy kategorii.  To ustawienie określa kategorie zdarzeń w bieżącym dostawcy do wyświetlenia.  Jeśli dodajesz <xref:System.Diagnostics.Tracing.EventSource> dostawcy, służy pole kategorii do filtrowania według słów kluczowych funkcji ETW.  Ponieważ słowo kluczowe jest maską bitów, umożliwia określenie, które bity maski są ustawiane przez osoby rozdzielany przecinkami ciąg liczb całkowitych. Na przykład "1,2" ustawia bity pierwszego i drugiego i przekłada się 6 w dziesiętnych.  
   
@@ -86,4 +86,4 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
   
 ## <a name="see-also"></a>Zobacz także  
  [Tylko mój kod](../profiling/just-my-code-threads-view.md)   
- [Znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md)
+ [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)

@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5a67bff623ce3cfa55e89057e918d19f4ba5868
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania pamięci .NET
 Widok wywołujący/wywoływany wyświetla danych dla wybranej funkcji i jej nadrzędne i podrzędne funkcji profilowania pamięci platformy .NET. Widok wywołujący/wywoływany zawiera trzy siatki.  
@@ -50,7 +50,7 @@ Widok wywołujący/wywoływany wyświetla danych dla wybranej funkcji i jej nadr
 |**Wyłączny bajtów**|— Dla funkcji bieżąca liczba bajtów pamięci, które zostały przydzielone przez funkcję w przebiegu profilowania. Ta liczba nie obejmuje pamięci, która została przydzielona przez funkcje, które zostały wywołane przez bieżącą funkcję.<br />— Dla funkcji wywołującego, liczba bajtów wyłącznego bieżącej funkcji, które zostały wygenerowane przez wywołania funkcji wywołującego.<br />— Dla funkcji wywoływany, liczba bajtów, które zostały przydzielone wystąpień funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba nie obejmuje bajtów przydzielonych przez funkcje, które zostały wywołane przez funkcję wywoływany.|  
 |**% Wyłącznego bajtów**|Procent wszystkich bajtów pamięci przydzielone w przebiegu, który profilowania były wyłącznego alokacji tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   

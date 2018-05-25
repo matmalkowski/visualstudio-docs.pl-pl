@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Porady: Tworzenie dokumentu XML na podstawie schematu XSD
 
@@ -46,7 +46,7 @@ Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerow
 
 2.  W [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), kliknij prawym przyciskiem myszy `PurchaseOrder` element globalny. Wybierz **Generowanie przykładowy kod XML**.
 
-     Po wybraniu tej opcji, zostanie wygenerowany plik PurchaseOrder.xml o następującej treści XML próbki i będzie otwarty w edytorze XML:
+     Po wybraniu tej opcji, PurchaseOrder. *xml* pliku o następującej treści XML próbki zostanie wygenerowany i otwarty w edytorze XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -75,6 +75,6 @@ Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerow
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Praca z danymi XML](../xml-tools/working-with-xml-data.md)
+- [Praca z danych XML](../xml-tools/working-with-xml-data.md)

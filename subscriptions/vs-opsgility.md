@@ -9,11 +9,11 @@ description: Dowiedz się Opsgility szkolenia korzyści dołączonego sekected s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Korzyści Opsgility w ramach subskrypcji programu Visual Studio
 
@@ -52,8 +52,6 @@ Wybrane subskrypcje w Visual Studio to jeden rok dostęp do szkolenia na żądan
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy dotyczącej Opsgility?  Zobacz następujące zasoby:
-    - [FAQ](https://www.opsgility.com/Home/FAQ)
-    - Przedstawia biletu pomocy technicznej za pośrednictwem [skontaktuj się z nami](https://www.opsgility.com/SupportTicket) strony. 
+-  Potrzebujesz pomocy dotyczącej Opsgility?  Przedstawia biletu pomocy technicznej za pośrednictwem [skontaktuj się z nami](https://www.opsgility.com/SupportTicket) strony. 
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
 -  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 

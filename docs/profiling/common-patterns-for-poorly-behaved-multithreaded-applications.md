@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
+# <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych
 
 Narzędzia Concurrency Visualizer ułatwia deweloperom zachowanie aplikacji wielowątkowych wizualizacji. To narzędzie zawiera galerię wspólne wzorce dla aplikacji wielowątkowych, które zachowują się nieprawidłowo. Galeria zawiera typowe i rozpoznawalnych visual wzorców, które są udostępniane za pomocą narzędzia, wraz z wyjaśnieniem zachowanie jest reprezentowana przez każdego wzorca prawdopodobnie wynik tego zachowania oraz najczęściej go rozwiązać.
 
@@ -31,7 +31,7 @@ Czasami zrównoleglone aplikacji stubbornly kontynuuje wykonywanie pojedynczo, n
 
 Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widoku wykorzystania procesora CPU, where, niezależnie od obecności wielu wątków aplikacji wymaga tylko jednego rdzenia logicznego.
 
-Aby uzyskać więcej informacji, zobacz "Wydajności wzorzec 1: Identyfikowanie rywalizacji blokad" w Hazim Shafi [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie MSDN blog sieci Web.
+Aby uzyskać więcej informacji, zobacz "wzorzec wydajności 1: identyfikujące rywalizacji blokad" w Hazim Shafi [równoległe narzędzia wydajności dla systemu Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie MSDN blog sieci Web.
 
 ![Blokowanie rywalizacji](../profiling/media/lockcontention_2.png "LockContention_2")
 
