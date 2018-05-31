@@ -9,11 +9,12 @@ description: Więcej informacji na temat korzyści zawarte w ramach subskrypcji 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335596"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w ramach subskrypcji programu Visual Studio
 
@@ -22,7 +23,7 @@ Subskrypcje w Visual Studio oferują najbardziej kompleksowy zestaw zasoby umoż
 Korzyści są podzielone na trzy kategorie:
 
 ## <a name="tools"></a>Narzędzia
-Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym najważniejszych korzyści, takich jak [programu Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/), i [Azure](/vs-azure/) .  W zależności od poziomu subskrypcji systemu Windows i Office 365 Developer kont, Centrum aplikacji programu Visual Studio i korzyści z partnerami, takie jak WhiteSource Bolt i ModernRequirements będzie Zobacz też.
+Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym najważniejszych korzyści, takich jak [programu Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), i [Azure](vs-azure.md) .  W zależności od poziomu subskrypcji systemu Windows i Office 365 Developer kont, Centrum aplikacji programu Visual Studio i korzyści z partnerami, takie jak WhiteSource Bolt i ModernRequirements będzie Zobacz też.
 
 ## <a name="professional-development"></a>Profesjonalne programowanie
 Aby pomóc w przypadku ciągłe ulepszyć Twoje skillset i nadąża z najnowszych technologii, firma Microsoft zapewnić dostęp do niektórych najlepiej dostępne szkolenia online z liderów branży. Przykłady dużą dostępnej zawartości:

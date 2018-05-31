@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d791c19d0dccaf5f4fdf4f8aa1bb2c80d74c8ba
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335817"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcji zbierania wydajności szczegółowe dane dla składnika klienta (autonomiczny) przy użyciu metody Instrumentacji z wiersza polecenia.  
   
-## <a name="common-tasks"></a>Wspólne zadania
+## <a name="common-tasks"></a>Wspólne zadania  
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  

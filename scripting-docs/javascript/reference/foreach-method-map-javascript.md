@@ -1,27 +1,29 @@
 ---
-title: "forEach — metoda (Map) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: forEach — metoda (Map) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335804"
 ---
 # <a name="foreach-method-map-javascript"></a>forEach — Metoda (Map) (JavaScript)
 Wykonuje określoną akcję dla każdego elementu na mapie.  
@@ -34,13 +36,13 @@ mapObj.forEach(callbackfn[, thisArg])
   
 #### <a name="parameters"></a>Parametry  
  `mapObj`  
- Wymagany. A `Map` obiektu.  
+ Wymagana. A `Map` obiektu.  
   
  `callbackfn`  
- Wymagany. Funkcja który `forEach` wywołuje jeden raz dla każdego elementu na mapie. `callbackfn`akceptuje maksymalnie trzech argumentów. `forEach`wywołania `callbackfn` funkcji jeden raz dla każdego elementu na mapie.  
+ Wymagana. Funkcja który `forEach` wywołuje jeden raz dla każdego elementu na mapie. `callbackfn` akceptuje maksymalnie trzech argumentów. `forEach` wywołania `callbackfn` funkcji jeden raz dla każdego elementu na mapie.  
   
  `thisArg`  
- Opcjonalny. Obiekt który `this` — słowo kluczowe może odwoływać się do w `callbackfn` funkcji. Jeśli `thisArg` zostanie pominięty, `undefined` jest używany jako `this` wartość.  
+ Opcjonalna. Obiekt który `this` — słowo kluczowe może odwoływać się do w `callbackfn` funkcji. Jeśli `thisArg` zostanie pominięty, `undefined` jest używany jako `this` wartość.  
   
 ## <a name="exceptions"></a>Wyjątki  
  Jeśli `callbackfn` argument nie jest obiektem funkcji `TypeError` wyjątku.  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

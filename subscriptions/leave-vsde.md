@@ -9,18 +9,19 @@ description: Dowiedz się, jak i pozostawić program Visual Studio Dev Essential
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a24547d29513d0e06531041b51d0dea897acace
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 383216b898e9eef62fbe825454cda4ed6c11ea2c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335869"
 ---
 # <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Jak pozostawić program Visual Studio Dev Essentials? 
 
 Jeśli chcesz pozostawić program Visual Studio Dev Essentials, wykonaj następujące czynności:
 
 1. Przejdź do [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-2. Zaloguj się do subskrypcji.  (Uzyskaj Pomoc [logowanie](/visualstudio/subscriptions/signing-in).)
+2. Zaloguj się do subskrypcji.  (Uzyskaj Pomoc [logowanie](signing-in.md).)
 3. Po pomyślnego logowania zostanie wyświetlona lista bieżących subskrypcji.
 4. Na wiersz skojarzony z programu Visual Studio Dev Essentials, kliknij przycisk **program pozostaw** w kolumnie łącza po prawej.
 5. Wyświetli się okno podręczne. Wybierz **potwierdzić**. 

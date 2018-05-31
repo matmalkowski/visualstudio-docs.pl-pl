@@ -9,11 +9,12 @@ description: Dowiedz się, jak ponownie przypisania subskrypcji dla subskrybent�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2edabf44637672f45241299703cb3d3f88348b6c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335960"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Jak ponownie subskrypcję wiadomości e-mail przypisania w portalu zarządzania subskrypcji programu Visual Studio
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/27/2018
 Proces ponownego wysłania wiadomości e-mail przypisania z portalu manage.visualstudio.com jest bardzo prosty:
 
 1. Odwiedź stronę [manage.visualstudio.com](https://manage.visualstudio.com) portalu i zaloguj się. 
-2. Użyj **filtru** kartę, aby wyszukać subskrybenta, do którego chcesz ponownie wysłać wiadomość e-mail przypisania. (Aby uzyskać więcej informacji dotyczących filtrowania, zobacz [wyszukiwania dla subskrypcji](/visualstudio/subscriptions/search-license).)
+2. Użyj **filtru** kartę, aby wyszukać subskrybenta, do którego chcesz ponownie wysłać wiadomość e-mail przypisania. (Aby uzyskać więcej informacji dotyczących filtrowania, zobacz [wyszukiwania dla subskrypcji](search-license.md).)
 3. Polecenie subscriber(s).  Można użyj kombinacji klawisza Ctrl + kliknięcie lub Shift + kliknij, aby wybrać wiele subskrybentów.
 4. Kliknij przycisk **Wyślij ponownie** w górnej części wyników wyszukiwania.  
 

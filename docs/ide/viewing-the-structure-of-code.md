@@ -1,6 +1,6 @@
 ---
-title: Wyświetlanie struktury kodu w programie Visual Studio
-ms.date: 11/04/2016
+title: Wyświetlanie struktury kodu przy użyciu widoku klasy, należy wywołać hierarchii, przeglądarka obiektów i okno definicji kodu
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -27,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336142"
 ---
-# <a name="view-the-structure-of-code"></a>Wyświetlanie struktury kodu
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu innego narzędzia systemu windows
 
-Obiekty i elementów członkowskich w projektach Visual Studio, składników .NET Framework, składniki modelu COM, bibliotek dołączanych dynamicznie (DLL), można sprawdzić i wpisz bibliotek (TLB).
+Należy zbadać, klasy i ich elementy członkowskie w programie Visual Studio przy użyciu różnych narzędzi systemu windows, w tym **widoku klasy**, **hierarchii wywołań**, **przeglądarki obiektów**i **Kodu definicji** (tylko C++). Te narzędzia windows można sprawdzić kod w projektach Visual Studio, składników .NET Framework, składniki modelu COM, bibliotek dołączanych dynamicznie (DLL), i wpisz bibliotek (TLB).
 
-Można również użyć **Eksploratora rozwiązań** typów i członków w projektach, wyszukiwanie symboli, przeglądanie metody hierarchii wywołań, Znajdź odwołania do symboli i widoku bez konieczności przełączania się między wiele okien narzędzi wymienionych powyżej.
+Można również użyć **Eksploratora rozwiązań** typów i członków w projektach, wyszukiwanie symboli, przeglądanie metody hierarchii wywołań, Znajdź odwołania do symboli i widoku więcej, bez konieczności przełączania się między wiele okien narzędzi.
 
-Jeśli masz program Visual Studio Enterprise, można użyć map kodu do wizualizacji struktury kodu i jego zależności między całego rozwiązania, a następnie przejść do części kodu, które są potrzebne. Aby uzyskać więcej informacji, zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
-
-> [!NOTE]
-> Program Visual Studio i ustawienia, którego używasz może mieć wpływ na funkcje w środowisku IDE. Mogą różnić się od opisanych w tym temacie.
+Jeśli masz program Visual Studio Enterprise edition, możesz użyć *code map* do wizualizacji struktury kodu i jego zależności między całego rozwiązania. Aby uzyskać więcej informacji, zobacz [zależności mapy przy użyciu map kodu](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Widok klas (Visual Basic, C#, C++)
 
-**Widok klasy** jest wyświetlany jako część **Eksploratora rozwiązań** oraz w osobnym oknie. **Widoku klasy** okno wyświetla elementy aplikacji. Górne okienko wyświetla obszary nazw, typów, interfejsy, wyliczenia i klasy oraz dolne okienko elementów członkowskich, które należą do typu wybranego w górnym okienku. Za pomocą tego okna, można przenieść do definicji elementu członkowskiego w kodzie źródłowym (lub w **przeglądarki obiektów** Jeśli element jest zdefiniowany poza rozwiązania).
+**Widok klasy** jest wyświetlany jako część **Eksploratora rozwiązań** i jako osobne okno. **Widok klasy** Wyświetla elementy aplikacji. Górne okienko wyświetla obszary nazw, typów, interfejsy, wyliczenia i klasy oraz dolne okienko elementów członkowskich, które należą do typu wybranego w górnym okienku. Za pomocą tego okna, można przenieść do definicji elementu członkowskiego w kodzie źródłowym (lub w **przeglądarki obiektów** Jeśli element jest zdefiniowany poza rozwiązania).
 
 Nie masz skompilować projekt, aby wyświetlić jego elementy w **widoku klasy**. Okno jest odświeżany podczas modyfikowania kodu w projekcie.
 
@@ -56,18 +54,18 @@ Jeśli projektu jest zaewidencjonowany do kontroli kodu źródłowego, co **wido
 
 ### <a name="class-view-toolbar"></a>Pasek narzędzi widoku klasy
 
-**Widoku klasy** narzędzi zawiera następujące polecenia.
+**Widoku klasy** narzędzi zawiera następujące polecenia:
 
 |||
 |-|-|
-|**Nowy Folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować najczęściej używanych elementów. Są one zapisywane w aktywnym rozwiązaniu (*.suo*) pliku. Po zmienić lub usunąć element w kodzie, może się pojawić folder wirtualny jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono element, możesz go przenieść z hierarchii projektu do folderu ponownie.|
+|**Nowy Folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używanych elementów. Są one zapisywane w aktywnym rozwiązaniu (*.suo*) pliku. Po zmienić lub usunąć element w kodzie, może się pojawić folder wirtualny jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono element, możesz go przenieść z hierarchii projektu do folderu ponownie.|
 |**Wstecz**|Powoduje przejście do poprzednio wybranego elementu.|
 |**Prześlij dalej**|Przechodzi do następnego wybranego elementu.|
 |**Wyświetlanie diagramu klas** (tylko dla projektów kod zarządzany)|Stają się dostępne po wybierz obszar nazw lub typ w **widoku klasy**. Po wybraniu przestrzeni nazw diagramu klas są wyświetlane wszystkie typy w nim. Po wybraniu typu diagramu klas zawiera tylko tego typu.|
 
 ### <a name="class-view-settings"></a>Ustawienia widoku klas
 
-**Ustawienia widoku klasy** przycisk na pasku narzędzi ma następujące ustawienia.
+**Ustawienia widoku klasy** przycisk na pasku narzędzi ma następujące ustawienia:
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ Jeśli projektu jest zaewidencjonowany do kontroli kodu źródłowego, co **wido
 
 ### <a name="class-view-shortcut-menu"></a>Menu skrótów klasy widoku
 
-W menu skrótów **widoku klasy** może zawierać następujące polecenia, w zależności od typu wybranego projektu.
+W menu skrótów **widoku klasy** może zawierać następujące polecenia, w zależności od typu wybranego projektu:
 
 |||
 |-|-|
@@ -103,11 +101,11 @@ W menu skrótów **widoku klasy** może zawierać następujące polecenia, w zal
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Wywołaj okno hierarchii (Visual Basic, C#, C++)
 
-**Hierarchii wywołań** okna przedstawia gdzie danego — metoda (lub właściwości lub konstruktora) jest wywoływana i wyświetla listę metod wywoływanych z tej metody. Można wyświetlić wiele poziomów wykresu wywołań, przedstawiający relacje wywołujący/wywoływany metody w podanym zakresie.
+**Hierarchii wywołań** okna pokazuje, gdzie jest wywoływany danej metody lub właściwości. Wyświetlane są również metody, które są wywoływane z tej metody. Można wyświetlić wiele poziomów wykresu wywołań, przedstawiający relacje wywołujący wywoływany metody w podanym zakresie.
 
-Można wyświetlić **hierarchii wywołań** okno Wybieranie — metoda (lub właściwości lub konstruktora), a następnie wybierając **hierarchii klas widoku** menu skrótów. Wyświetlanie powinien wyglądać na poniższej ilustracji.
+Można wyświetlić **hierarchii wywołań** okno Wybieranie w edytorze — metoda (lub właściwości lub konstruktora), a następnie wybierając **hierarchii wywołań widoku** menu skrótów. Wyświetlanie powinien wyglądać na poniższej ilustracji:
 
-![Hierarchia wywołań otwartymi wieloma węzłami](../ide/media/multiplenodes.png "MultipleNodes")
+![Okno hierarchii wywołań w programie Visual Studio](../ide/media/multiplenodes.png)
 
 Za pomocą listy rozwijanej na pasku narzędzi, można określić zakres poziomu hierarchii: rozwiązania, bieżącego projektu lub bieżącego dokumentu.
 
@@ -115,7 +113,7 @@ W okienku głównym Wyświetla wywołania do i z metody i **wywołać witryn** o
 
 **Hierarchii wywołań** okna nie znaleźć metody odwołania do grup, które obejmują miejscach, gdzie metoda jest dodawana jako program obsługi zdarzeń lub jest przypisany do delegata. Aby znaleźć te odwołania, należy użyć **Znajdź wszystkie odwołania** polecenia.
 
-W menu skrótów **hierarchii wywołań** okna zawiera następujące polecenia.
+W menu skrótów **hierarchii wywołań** okna zawiera następujące polecenia:
 
 |||
 |-|-|
@@ -123,7 +121,7 @@ W menu skrótów **hierarchii wywołań** okna zawiera następujące polecenia.
 |**Usuwanie głównego**|Usuwa wybrany główny węzeł w okienku widoku drzewa.|
 |**Przejdź do definicji**|Przechodzi do oryginalnej definicji metody.|
 |**Znajdź wszystkie odwołania**|Znajduje w projekcie wszystkie odwołania do wybranej metody.|
-|**Kopiuj**|Kopiuje wybranego węzła (ale nie jego węzły podrzędne).|
+|**Kopiuj**|Kopiuje wybranego węzła (ale nie jego węzłami podrzędnymi).|
 |**Odśwież**|Odświeża informacje.|
 
 ## <a name="BKMK_ObjectBrowser"></a> Przeglądarka obiektów
@@ -142,7 +140,7 @@ Można użyć **przeglądarki obiektów** można dodać odwołania do zestawu ot
 
 ### <a name="object-browser-settings"></a>Ustawienia przeglądarki obiektów
 
-Za pomocą **ustawienia przeglądarki obiektów** przycisk na pasku narzędzi, można określić jeden z następujących widoków.
+Za pomocą **ustawienia przeglądarki obiektów** przycisk na pasku narzędzi, można określić jeden z następujących widoków:
 
 |||
 |-|-|
@@ -160,7 +158,7 @@ Za pomocą **ustawienia przeglądarki obiektów** przycisk na pasku narzędzi, m
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Polecenia menu skrótów przeglądarki obiektów
 
-W menu skrótów **przeglądarki obiektów** może zawierać następujące polecenia, w zależności od rodzaju elementu wybrane.
+W menu skrótów **przeglądarki obiektów** może zawierać następujące polecenia, w zależności od rodzaju elementu wybranych:
 
 |||
 |-|-|
@@ -214,10 +212,10 @@ W menu skrótów **definicji kodu** okna może zawierać następujące polecenia
 |**Edytowanie definicji**|Przenosi punkt wstawiania do definicji w oknie kodu.|
 |**Wybierz kodowanie**|Otwiera **kodowanie** okna tak, aby można ustawić kodowanie dla tego pliku.|
 
-### <a name="document-outline-window"></a>Okno konspektu dokumentu
+## <a name="document-outline-window"></a>Okno konspektu dokumentu
 
-Można użyć **konspekt dokumentu** okna w połączeniu z projektanta widoków, takich jak projektant strony XAML lub projektanta formularzy systemu Windows lub stron HTML. To okno wyświetla elementy w widoku drzewa, dzięki czemu można wyświetlać struktury logicznej formularza lub strony i znaleźć kontrolki, których głęboko osadzony czy ukryty.
+Można użyć **konspekt dokumentu** okna w połączeniu z projektanta widoków, takich jak projektant strony XAML lub projektanta formularzy systemu Windows lub stron HTML. To okno wyświetla elementy w widoku drzewa, dzięki czemu można wyświetlać struktury logicznej formularza lub strony i Znajdź formantów, które są głęboko osadzone lub ukryte.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Widok klas i przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md)
+- [Widok klasy i Przeglądarka obiektów, ikony](../ide/class-view-and-object-browser-icons.md)

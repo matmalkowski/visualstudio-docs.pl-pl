@@ -9,11 +9,12 @@ description: Znajdź listę modułu pobierania oprogramowania uwzględnionych w 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7958ccedb28a14763264cd590e83d5e8e7fbbcdf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335843"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Jak sprawdzić, jakie oprogramowanie jest dostępny do pobrania?
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/06/2018
 
 Jeśli masz już subskrypcję programu Visual Studio: 
 1. Przejdź do [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
-2. Zaloguj się do subskrypcji.  (Uzyskaj Pomoc [logowanie](/visualstudio/subscriptions/signing-in).)
+2. Zaloguj się do subskrypcji.  (Uzyskaj Pomoc [logowanie](signing-in.md).)
 3. Po pomyślnym logowania można wyszukać użytkownika odpowiednie pliki do pobrania.  Można także wyświetlić listę popularnych pliki do pobrania, które można sortować według dowolnej z kilku kryteriów. 
 
 Aby szybko znaleźć produktów, użyj funkcji "Wyszukiwanie" w górnej części strony, lub kliknij różnych rodzajów po lewej stronie.

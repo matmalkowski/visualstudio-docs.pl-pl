@@ -9,11 +9,12 @@ description: Subskrypcji programu Visual Studio — dlaczego widzę Hotmail lub 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335723"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio subskrypcje w — dlaczego widzę Hotmail lub Gmail adresów dla moich subskrybentów? 
 
@@ -34,6 +35,6 @@ Na koniec od czasu migracji administrator trwa danych z centrum VLSC dotyczącyc
 
 ## <a name="solution"></a>Rozwiązanie
 
-Aby rozwiązać ten problem, należy edytować subskrybenta informacje do zaktualizowania ich adresów e-mail logowania.  Mogą być wprowadzone dla poszczególnych subskrybentów lub grupowo. Aby uzyskać pełne informacje, odwiedź stronę [edytować subskrypcję](/visualstudio/subscriptions/edit-license).  
+Aby rozwiązać ten problem, należy edytować subskrybenta informacje do zaktualizowania ich adresów e-mail logowania.  Mogą być wprowadzone dla poszczególnych subskrybentów lub grupowo. Aby uzyskać pełne informacje, odwiedź stronę [edytować subskrypcję](edit-license.md).  
 
 Po zaktualizowaniu subscriber(s) adresy e-mail można powiadamiać użytkowników, zmienił ich informacji logowania.  Również otrzymają wiadomość e-mail z zaktualizowane informacje.   
