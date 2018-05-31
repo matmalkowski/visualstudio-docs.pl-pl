@@ -9,17 +9,18 @@ description: Więcej informacji na temat pełnego zakresu korzyści dostępne w 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1fc8c77e71f32e2bb559426b3447d0bbc293e785
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335934"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Przy użyciu portalu subskrybenta — Moje. <span> </span>visualstudio<span></span>com
 
 Portalu subskrypcje usługi Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), jest zasób w jednym mógł korzystać z pełnego zakresu korzyści zapewniane przez subskrypcję programu Visual Studio. 
 
-Za pomocą portalu wymaga Zaloguj tożsamość skojarzoną z subskrypcją.  Może to być Twojego konta Microsoft (MSA) lub adres e-mail dostarczonego przez organizację, takie jak pracodawcy lub szkolnego.  Dowiedz się więcej o [logowanie](/visualstudio/subscriptions/signing-in).
+Za pomocą portalu wymaga Zaloguj tożsamość skojarzoną z subskrypcją.  Może to być Twojego konta Microsoft (MSA) lub adres e-mail dostarczonego przez organizację, takie jak pracodawcy lub szkolnego.  Dowiedz się więcej o [logowanie](signing-in.md).
 
 Portalu jest podzielone na sześć stron.  Każdej stronie zapewnia dostęp do różnych produktów lub usług uwzględnionych w subskrypcji.  Sześć stron są korzyści, pobieranie kluczy produktów, subskrypcje, pomocy technicznej i Marketplace.  
 

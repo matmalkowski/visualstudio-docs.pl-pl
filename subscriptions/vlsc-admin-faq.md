@@ -9,11 +9,12 @@ description: Centrum usługi licencji woluminu Admin migracji często zadawane p
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336129"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migracji administracji subskrypcji programu Visual Studio
 
@@ -78,7 +79,7 @@ Nadal będziesz Zarządzanie subskrypcji przy użyciu Centrum VLSC dopiero po ot
 Zaloguj się do [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź do następującej ścieżki: **subskrypcje** > **programu Visual Studio subskrypcje**. Poniżej znajduje się NKP **wyników numer klienta umowy/Public**. Uzyskaj wskazówki krok po kroku dotyczące lokalizowania PCN Twojego w tym [artykułu pomocy](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Jak sprawdzić, kto jest Mój podstawowej maszyny wirtualnej lub skontaktuj się z powiadomienia?
-Zaloguj się do [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź do następującej ścieżki: **licencji > Podsumowanie relacji** wybierz Twojej **licencjonowania ID > kontaktów**. Uzyskaj wskazówki krok po kroku dotyczące znajdowania sieci podstawowej lub skontaktuj się z powiadomienia w tym [artykułu pomocy](/find-primary-contact/). 
+Zaloguj się do [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź do następującej ścieżki: **licencji > Podsumowanie relacji** wybierz Twojej **licencjonowania ID > kontaktów**. Uzyskaj wskazówki krok po kroku dotyczące znajdowania sieci podstawowej lub skontaktuj się z powiadomienia w tym [artykułu pomocy](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Co zrobić, jeśli mojego podstawowej lub skontaktuj się z powiadomienia został usunięty, nie znajduje się już w firmie lub jest niedostępna w celu sfinalizowania dołączania?
 Konieczne będzie [się z pomocą techniczną](https://www.visualstudio.com/subscriptions/support/#talktous) i podaj poczty e-mail, który został użyty w centrum VLSC do zarządzania subskrypcjami. Po zweryfikowaniu pomocy technicznej będzie ułatwienie procesu dołączania. 
@@ -106,8 +107,8 @@ Większość informacji dotyczących tej migracji, można znaleźć w naszych ad
 
 - Visual Studio subskrypcji i zarządzania [obsługuje](https://www.visualstudio.com/subscriptions/support/) 
 
-- [Jak znaleźć mój PCN](/find-pcn/)
+- [Jak znaleźć mój PCN](find-pcn.md)
 
-- [Jak znaleźć mój podstawowej maszyny wirtualnej lub skontaktuj się z powiadomienia](/find-primary-contact/) 
+- [Jak znaleźć mój podstawowej maszyny wirtualnej lub skontaktuj się z powiadomienia](find-primary-contact.md) 
 
 - [Wideo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) do dołączenia do organizacji i zarządzanie administratorów 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e5c8d7a1edc7af76870f3d120d66365d2f1cf4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 35493114b9dcc0d71248f7edf046c835e04ae374
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335791"
 ---
 # <a name="command-line-profiling-of-services"></a>Profilowanie wiersza polecenia usług
 W tej sekcji opisano procedury i opcji zbierania danych wydajności dla usług systemu Windows przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.  
@@ -26,6 +27,7 @@ W tej sekcji opisano procedury i opcji zbierania danych wydajności dla usług s
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="common-tasks"></a>Wspólne zadania
+
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  

@@ -74,10 +74,9 @@
 #### [Zarządzanie subskrypcjami dla programu MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Resources
-### [Postanowienia licencyjne programu Visual Studio](vs-license-terms.md)
 ### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](http://aka.ms/vslicensing)
 ### [Porównanie opcji i cen subskrypcji](https://www.visualstudio.com/vs/pricing)
 ### [Porównanie funkcji programu Visual Studio IDE](https://www.visualstudio.com/vs/compare)
 ### [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://www.visualstudio.com/support/support-overview-vs)
-### [Licencja zbiorcza i prawa używania produktu](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Warunki licencjonowania zbiorowego](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft Products and Services Agreement (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

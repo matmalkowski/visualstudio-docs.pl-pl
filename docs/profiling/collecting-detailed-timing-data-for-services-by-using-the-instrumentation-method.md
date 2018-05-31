@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c2e33d01095181dcf497b19da8f9310c7c4d20
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335830"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody Instrumentacji z wiersza polecenia profilera
 W tej sekcji opisano procedury i opcji zbierania wydajności szczegółowe dane dla usług systemu Windows przy użyciu metody Instrumentacji z wiersza polecenia.  
@@ -46,3 +47,4 @@ W tej sekcji opisano procedury i opcji zbierania wydajności szczegółowe dane 
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie Instrumentacji widoków danych i raportów  
  [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+

@@ -13,16 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d9932a0a2c8c44de236a4df91342ad739fa8b0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 20ae775a6dc49dd2a6dd3cb391eeaf69ff7fa32c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335947"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania umożliwia zbieranie danych działanie wątku, który pokazuje wykorzystania Procesora należy, rywalizacji wątku, wątek migracji, opóźnienia synchronizacji, obszarów nakładających się we/wy i inne i danych kontencji zasobów zdarzenia systemu.  
   
-## <a name="common-tasks"></a>Wspólne zadania
+
+## <a name="common-tasks"></a>Wspólne zadania  
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  

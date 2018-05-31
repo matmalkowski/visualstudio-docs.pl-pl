@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6d9ef9af4f616ff7432a9ace1cc3080be34e8f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: bb6e5fe61e6210826ce0b37ae2650da8d6af86c9
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335609"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Zbieranie statystyk aplikacji dla usług przy użyciu metody próbkowania profilera
 W tej sekcji opisano procedury i opcje dla zbieranie statystyk wydajności dla usług systemu Windows przy użyciu metody próbkowania w wierszu polecenia.  
@@ -40,6 +41,7 @@ W tej sekcji opisano procedury i opcje dla zbieranie statystyk wydajności dla u
 |**Profil pamięci .NET alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
 |**Profil działania rywalizacji i wątku zasobów**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
+
 ### <a name="profile-by-using-the-sampling-method"></a>Profil przy użyciu metody pobierania próbek  
   
 |Zadanie|Zawartość pokrewna|  
@@ -49,3 +51,5 @@ W tej sekcji opisano procedury i opcje dla zbieranie statystyk wydajności dla u
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analizowanie widok danych próbkowania i raportów  
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
+
+  

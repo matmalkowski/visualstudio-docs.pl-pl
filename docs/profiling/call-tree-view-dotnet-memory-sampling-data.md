@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3bba583c110188b45a11c51ee4780a3d8ad861d1
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336048"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Widok drzewa wywołań - dane próbkowania pamięci .NET
 Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji. Korzeń drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcja zawiera wszystkie funkcje, które mu i danych alokacji pamięci .NET o wywołania tych funkcji.  
@@ -51,7 +52,7 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
 |**Wyłączny bajtów**|Liczba bajtów w pamięci, które zostały przydzielone wystąpień tej funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Ta liczba nie obejmuje przydziałów, które zostały dokonane za pomocą funkcji podrzędnych.|  
 |**% Wyłącznego bajtów**|Procent wszystkich bajtów pamięci przydzielone w przebiegu, który profilowania były wyłącznego alokacji tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)

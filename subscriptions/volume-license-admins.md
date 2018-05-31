@@ -9,11 +9,12 @@ description: Dowiedz się, jak Administratorzy subskrypcji można uzyskać dost�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335895"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Dostęp do portalu i zarządzanie administratorami - subskrypcje zakupione za pośrednictwem wolumin Licencjonowania
 
@@ -36,7 +37,7 @@ Jeśli Twoja organizacja jest gotowy do można dołączać do portalu administra
 
      a. W wiadomości e-mail serwer podstawowy i kontakty powiadomienia są dostarczane z łączem unikatowy i ostatnich trzech cyfr z ich publicznego klienta numer (PCN).  (Jeśli serwer podstawowy bądź powiadomienia kontaktów odbierają więcej niż jeden adres e-mail, oznacza to, że PCN więcej niż jeden. Należy ukończyć proces, korzystając z linku unikatowy dla PCN występujący w odwołaniu w każdej wiadomości e-mail.)
 
-     b. Aby uzyskać cały PCN, głównej osoby kontaktowej należy zalogować się w centrum VLSC. [Instrukcje dotyczące lokalizacji NKP](/find-pcn/) 
+     b. Aby uzyskać cały PCN, głównej osoby kontaktowej należy zalogować się w centrum VLSC. [Instrukcje dotyczące lokalizacji NKP](find-pcn.md) 
 
      c. Po uzyskaniu NKP, ich musisz wybierz ich unikatowy łącze, która wyświetli monit o ich do logowania. Będą oni mogli zalogowanie się przy użyciu konta Microsoft (MSA) albo konto robocze/służbowe (Jeśli Twoja organizacja jest w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD. 
 
@@ -46,6 +47,6 @@ Jeśli Twoja organizacja jest gotowy do można dołączać do portalu administra
 
 3.  Uzyskiwanie dostępu do portalu zarządzania subskrypcji. Po migracji organizacji wiadomości e-mail będą wysyłane do nowo dodanego super Administratorzy i Administratorzy, zwracając dostęp do nowego portalu i rozpocząć zarządzanie subskrypcjami.  
 
-Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Zapoznaj się z [Znajdź swój głównej osoby kontaktowej](/find-primary-contact/) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
+Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Zapoznaj się z [Znajdź swój głównej osoby kontaktowej](find-primary-contact.md) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
 
 Jeśli możesz już skonfigurowano jako administrator, a następnie można przejść bezpośrednio do subskrypcji programu Visual Studio administracji Portal pod adresem: [ https://manage.visualstudio.com ](https://manage.visualstudio.com). 
