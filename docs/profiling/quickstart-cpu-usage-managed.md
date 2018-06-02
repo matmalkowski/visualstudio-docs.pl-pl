@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: c55c4bde3a1cc5cc6a6f150f9e73b4d56f510be5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477226"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 

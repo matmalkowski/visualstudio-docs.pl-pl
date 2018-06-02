@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddeb5800854d0461fbf96c895f64216f01843f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690916"
 ---
 # <a name="copy-selection"></a>Kopiuj dokonany wybór
 Aby skopiować cały stos wywołań z karty raportu, kliknij przycisk **kopiowania**. Następnie możesz wkleić stosu wywołań dowolnego programu, który obsługuje tej akcji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

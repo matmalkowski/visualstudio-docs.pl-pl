@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd57edf89210370fa05247afc55569c4401baf8
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691150"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
-Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) umożliwia zbierać dane śledzenia w wierszu polecenia, aby wyświetlić w Concurrency Visualizer dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.  
+Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollectionCmd.exe*) aby zbierać dane śledzenia w wierszu polecenia, aby wyświetlić w Concurrency Visualizer dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   
 > [!NOTE]
 >  Począwszy od programu Visual Studio 2013 narzędzia Concurrency Visualizer to opcjonalne rozszerzenie. (Wcześniej go była ona dostępna w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer kolekcji tools dla programu Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z Centrum pobierania.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobieranie narzędzia wiersza polecenia Concurrency Visualizer  
- Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [współbieżności wizualizatora Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowany w %ProgramFiles%\Microsoft Tools\ kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Tools\ kolekcji wizualizatora współbieżności na x64 komputerów).  
+ Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [współbieżności wizualizatora Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie *CVCollectionCmd.exe* jest zainstalowany w %ProgramFiles%\Microsoft Tools\ kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Tools\ kolekcji wizualizatora współbieżności na x64 komputerów).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierz ślad z CVCollectionCmd  
  Możliwość zbierania śladu poprzez uruchomienie aplikacji z CVCollectionCmd lub dołączając do niej. Zobacz polecenie poniżej opcji. Na przykład  
@@ -57,7 +58,7 @@ Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) umożl
 > [!NOTE]
 >  Korzystając z programu Visual Studio Aby zbierać dane śledzenia, nie należy bezpośrednio modyfikować pliku konfiguracji.  Zamiast tego należy użyć [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe, aby zmodyfikować ustawienia.  
   
- Aby zmodyfikować ustawienia kolekcji, należy utworzyć plik konfiguracji, na komputerze, w którym zostanie uruchomione narzędzie CVCollectionCmd. Należy utworzyć plik konfiguracji, od początku lub można skopiować pliku konfiguracji na komputerze, który ma zainstalowanego programu Visual Studio i zmodyfikować to. Plik ma nazwę `UserConfig.xml` i znajduje się w **lokalnego AppData** folderu. Po uruchomieniu narzędzia, należy użyć opcji konfiguracji w połączeniu z polecenia uruchamiania, Attach lub analizy.  W parametrze skojarzoną z opcji konfiguracji Określ ścieżkę pliku konfiguracji.  
+ Aby zmodyfikować ustawienia kolekcji, należy utworzyć plik konfiguracji, na komputerze, w którym zostanie uruchomione narzędzie CVCollectionCmd. Należy utworzyć plik konfiguracji, od początku lub można skopiować pliku konfiguracji na komputerze, który ma zainstalowanego programu Visual Studio i zmodyfikować to. Plik ma nazwę *UserConfig.xml* i znajduje się w *lokalnego AppData* folderu. Po uruchomieniu narzędzia, należy użyć opcji konfiguracji w połączeniu z polecenia uruchamiania, Attach lub analizy.  W parametrze skojarzoną z opcji konfiguracji Określ ścieżkę pliku konfiguracji.  
   
 ### <a name="configuration-file-tags"></a>Tagi pliku konfiguracji  
  Plik konfiguracji jest oparte na języku XML. Poniżej przedstawiono prawidłowych tagów i wartości:  

@@ -1,5 +1,5 @@
 ---
-title: Przegląd szablonów projektu pakietu Office | Dokumentacja firmy Microsoft
+title: Przegląd szablonów projektu pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,13 +33,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692616"
 ---
-# <a name="office-project-templates-overview"></a>Szablony projektów pakietu Office ― Omówienie
+# <a name="office-project-templates-overview"></a>Przegląd szablonów projektu pakietu Office
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów do tworzenia następujących typów rozwiązań pakietu Office:  
   
 -   [Dostosowywanie na poziomie dokumentu](#DocLevel)  
@@ -50,10 +51,10 @@ ms.lasthandoff: 04/16/2018
   
  Szablony projektów pakietu Office są dostępne w **nowy projekt** okna dialogowego, w obszarze **Office** węzła **Visual C#** i **Visual Basic**języka węzłów. Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.  
   
- Każdy projekt zawiera pliki i kod źródłowy niezbędne do rozpoczęcia tworzenia określonego typu rozwiązania. Kod generowany dla każdego projektu obejmuje programy obsługi zdarzeń uruchamiania i zamykania. Do programów obsługi można dodać kod, który będzie inicjował rozwiązanie podczas jego ładowania, a czyścił je podczas usuwania z pamięci. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w Visual Studio środowiska](../vsto/office-projects-in-the-visual-studio-environment.md) i [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
+ Każdy projekt zawiera pliki i kod źródłowy niezbędne do rozpoczęcia tworzenia określonego typu rozwiązania. Kod generowany dla każdego projektu obejmuje programy obsługi zdarzeń uruchamiania i zamykania. Do programów obsługi można dodać kod, który będzie inicjował rozwiązanie podczas jego ładowania, a czyścił je podczas usuwania z pamięci. Aby uzyskać więcej informacji, zobacz [projektów pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) i [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
->  Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera na potrzeby programowania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+>  Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
 ##  <a name="DocLevel"></a> Dostosowywanie na poziomie dokumentu  
  **Office** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów ułatwiające rozpoczęcie pracy dostosowań na poziomie dokumentu dla programu Word i Excel:  
@@ -83,15 +84,15 @@ ms.lasthandoff: 04/16/2018
   
  Informacje na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:  
   
--   [Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
+-   [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)  
   
 -   [Rozwiązania programu Word](../vsto/word-solutions.md)  
   
 -   [Rozwiązania programu Excel](../vsto/excel-solutions.md)  
   
--   [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+-   [Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> Dodatków VSTO  
  **Office i SharePoint** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów ułatwiające rozpoczęcie pracy Tworzenie dodatków narzędzi VSTO.  
@@ -130,19 +131,19 @@ ms.lasthandoff: 04/16/2018
   
 -   [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)  
+-   [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Wskazówki: Tworzenie pierwszego VSTO dodatek dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Wskazówki: Tworzenie pierwszego VSTO dodatek dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>Dokument programu vs. Szablon rozwiązania  
+## <a name="document-vs-template-solutions"></a>Dokument, a szablon rozwiązania  
  Projektując rozwiązanie w oparciu o dokument programu Word lub skoroszyt programu Excel, należy wybrać najlepszy sposób udostępnienia tego dokumentu użytkownikom.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -168,9 +169,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="excel-add-ins-xla-files"></a>Dodatki programu Excel (pliki .xla)  
  Brak projektów pakietu Office do tworzenia dodatku VSTO programu Excel (plik xla). Istnieje możliwość zapisania skoroszytu jako pliku .xla, jednak operacja ta nie jest obsługiwana i jej nie zalecamy. Jeśli zapiszesz skoroszytu, który zarządza rozszerzenia kodu jako **dodatek Microsoft Excel pakietu Office (\*xla)** plików, można ją wybrać w **Add-Ins** okno dialogowe, aby zastosować do innego skoroszytu. W niektórych przypadkach kod działa w skoroszycie docelowym dodatku VSTO jest stosowana, ale takie użycie rozwiązania pakietu Office nie jest obsługiwane.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
- [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
+ [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   

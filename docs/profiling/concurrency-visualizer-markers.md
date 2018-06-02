@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692304"
 ---
-# <a name="concurrency-visualizer-markers"></a>Znaczniki Concurrency Visualizer
+# <a name="concurrency-visualizer-markers"></a>Znaczniki CONCURRENCY Visualizer
 Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdarzenia w aplikacji.  Zwykle aplikacja generuje te zdarzenia do wyznaczenia fazy lub wystąpień w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub biblioteki i środowisk uruchomieniowych, który korzysta z aplikacji.  
   
 ## <a name="kinds-of-markers"></a>Rodzaje znaczników  
@@ -59,10 +60,10 @@ Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdar
  Można użyć karty znaczników w [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe do kontrolowania, czy w Concurrency Visualizer i są wyświetlane znaczniki z różnych źródeł można filtrować według kategorii i ważności znaczników.  
   
 ## <a name="markers-from-eventsource"></a>Znaczniki od elementu EventSource  
- Narzędzia Concurrency Visualizer można również wyświetlić zdarzenia EventSource.  Aby uzyskać więcej informacji, zobacz [wizualizowanie zdarzeń EventSource znaczników](../profiling/visualizing-eventsource-events-as-markers.md).  
+ Narzędzia Concurrency Visualizer można również wyświetlić zdarzenia EventSource.  Aby uzyskać więcej informacji, zobacz [EventSource wizualizowanie zdarzeń jako znaczniki](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Znaczniki typu Flaga](../profiling/flag-markers.md)   
  [Znaczniki komunikatu](../profiling/message-markers.md)   
  [Znaczniki zakresu](../profiling/span-markers.md)   
- [Wizualizowanie zdarzeń EventSource w postaci znaczników](../profiling/visualizing-eventsource-events-as-markers.md)
+ [Wizualizowanie zdarzeń EventSource znaczników](../profiling/visualizing-eventsource-events-as-markers.md)

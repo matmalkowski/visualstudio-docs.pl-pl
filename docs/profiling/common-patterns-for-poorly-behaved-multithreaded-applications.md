@@ -14,12 +14,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34549009"
 ---
-# <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych
+# <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
 Narzędzia Concurrency Visualizer ułatwia deweloperom zachowanie aplikacji wielowątkowych wizualizacji. To narzędzie zawiera galerię wspólne wzorce dla aplikacji wielowątkowych, które zachowują się nieprawidłowo. Galeria zawiera typowe i rozpoznawalnych visual wzorców, które są udostępniane za pomocą narzędzia, wraz z wyjaśnieniem zachowanie jest reprezentowana przez każdego wzorca prawdopodobnie wynik tego zachowania oraz najczęściej go rozwiązać.
 

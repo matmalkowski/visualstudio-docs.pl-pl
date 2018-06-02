@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477525"
 ---
-# <a name="analyze-cpu-usage"></a>Analiza użycia procesora CPU
+# <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 Gdy potrzebne do badania problemów z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, jak używa Procesora. **Użycie procesora CPU** narzędzie pokazuje, gdy Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic i kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, jest widoczny na funkcja podział użycia procesora CPU bez opuszczania debugera. Włącz profilowanie procesora CPU i wyłączanie podczas debugowania i wyświetlić wyniki podczas wykonywania zostanie zatrzymana, na przykład w punkcie przerwania.  
   
 Istnieje kilka możliwości do uruchamiania i zarządzania sesję diagnostyczną. Na przykład można uruchomić **użycie procesora CPU** narzędzia na komputerach lokalnych lub zdalnych, lub w symulatorze lub emulator. Można analizowanie wydajności Otwórz projekt w programie Visual Studio, podłączony do uruchomionej aplikacji, lub uruchomić aplikację, która jest zainstalowana z Microsoft Store. Aby uzyskać więcej informacji, zobacz [uruchomienia narzędzi profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).

@@ -1,5 +1,5 @@
 ---
-title: Właściwości dokumentu XML, okno właściwości
+title: Właściwości dokumentu XML, Właściwości, okno
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4610a2574fbd822e4468436655668cff3892270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693568"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno właściwości
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
  Podczas edytowania pliku XSLT, tej właściwości można określić różnych stylów należy używane podczas **Pokaż dane wyjściowe XSLT** lub **debugowania XSLT** polecenia jest zaznaczone. Na przykład możesz to zrobić, edytując arkusz stylów, który znajduje się w arkuszu stylów nadrzędnej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Składniki edytora XML](../xml-tools/xml-editor-components.md)

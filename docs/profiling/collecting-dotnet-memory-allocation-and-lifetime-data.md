@@ -13,12 +13,13 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548638"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych pamięci .NET alokacji i okresem istnienia
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych alokacji pamięci .NET i okresu istnienia
 
 Visual Studio Profiling Tools obsługują zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, które pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.
 

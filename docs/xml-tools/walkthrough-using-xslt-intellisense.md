@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Używanie XSLT IntelliSense'
+title: 'Przewodnik: używanie funkcji XSLT IntelliSense'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3240868ce8f749bf97a12054aac4760018c71d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693526"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Wskazówki: Używanie XSLT IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: używanie funkcji XSLT IntelliSense
 
 W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego zakończenia wartości niektórych atrybutów.
 
@@ -46,7 +47,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:call-template` elementu:
+2.  Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:call-template` elementu:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -55,7 +56,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
 
      Lista nazw szablonu jest wyświetlana w `name=""` atrybutu `xsl:call-template` elementu podczas pisania.
 
-3.  Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:with-param` elementu:
+3.  Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:with-param` elementu:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -112,7 +113,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl: apply-templates` elementu:
+2.  Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl: apply-templates` elementu:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -153,7 +154,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
     </xsl:stylesheet>
     ```
 
-2.  Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:namespace-alias` elementu:
+2.  Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz **Enter**. Zacznij pisać następujące `xsl:namespace-alias` elementu:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

@@ -1,6 +1,6 @@
 ---
-title: IntelliSense programu Visual Studio
-ms.date: 11/04/2016
+title: Informacje o parametrach, elementy listy i szybkie informacje
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690942"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Korzystanie z IntelliSense w Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense w Visual Studio
 
-Technologia IntelliSense jest ogólnym terminem dla wielu funkcji: elementów członkowskich listy, informacji o parametrach, szybkich informacji i uzupełniania słów. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić wpisywane parametry i dodawać wywołania do właściwości i metod za pomocą zaledwie kilku naciśnięć klawiszy.
+IntelliSense jest pomoc uzupełniania kodu, który zawiera wiele funkcji: lista elementów członkowskich, informacje o parametrach, szybkie informacje i całe słowo. Funkcje te umożliwiają Aby dowiedzieć się więcej o kod, którego używasz, informacje o parametrach pisania i dodać wywołania do właściwości i metody o tylko kilku klawiszy.
 
 Wiele aspektów IntelliSense jest specyficzne dla języków. Aby uzyskać więcej informacji o funkcji IntelliSense dla różnych języków, zobacz tematy wymienione w [Zobacz też](#see-also) sekcji.
 

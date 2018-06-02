@@ -1,5 +1,5 @@
 ---
-title: Publikowanie kreatora (Office Development w Visual Studio) | Dokumentacja firmy Microsoft
+title: Publikowanie kreatora (Office development w Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692723"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office Development w Visual Studio)
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Publikowanie kreatora (Office development w Visual Studio)
   Użyj **Kreator publikowania** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz plik manifestu, a następnie utwórz program instalacyjny.  
   
  Aby uzyskać dostęp do tego kreatora na **kompilacji** menu, wybierz **publikowania** *Nazwa rozwiązania*. Można także przejść do **Kreator publikowania** z **Eksploratora rozwiązań**. Otwórz menu skrótów węzła projektu, a następnie wybierz pozycję **publikowania**.  
@@ -36,13 +37,13 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>Gdzie chcesz opublikować aplikację?  
  **Określ lokalizację do publikowania tej aplikacji**  
- Wymagany. Lokalizacji publikacji jest to katalog gdzie **Kreator publikowania** kopiuje pliki rozwiązania, takie jak manifesty, zestawy tymczasowe certyfikatu i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.  
+ Wymagana. Lokalizacji publikacji jest to katalog gdzie **Kreator publikowania** kopiuje pliki rozwiązania, takie jak manifesty, zestawy tymczasowe certyfikatu i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.  
   
  Wpisz lokalizację jako ścieżkę dysku, udziału plików, witryny FTP lub adres URL witryny sieci web, lub kliknij przycisk **Przeglądaj** przycisk, aby wyszukać lokalizację. Ścieżka może być w tych formatach:  
   
--   Ścieżka względna lub bezwzględna w standardowym formacie systemu Windows, takich jak C:\Deploy\MyApplication lub \MyApplication.  
+-   Względna lub bezwzględna ścieżka w standardzie Windows formatu, takiego jak *C:\Deploy\MyApplication* lub *\MyApplication*.  
   
--   Ścieżka Universal Naming Convention (UNC), takich jak \\\ServerName\MyApplication\\.  
+-   Ścieżka Universal Naming Convention (UNC), takich jak  *\\\ServerName\MyApplication\\*.  
   
 -   Adres URL sieci Web lokacji, takich jak http://www.microsoft.com/MyApplication.  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
  Program Visual Studio nie nagrywanie, CD lub DVD. Należy skopiować ręcznie dane wyjściowe z dysku CD lub DVD.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Strona publikowania, Projektant projektu &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  

@@ -1,6 +1,6 @@
 ---
 title: Pierwsze spojrzenie na debugera
-description: Zająć krótki przegląd różnych funkcji debuger programu Visual Studio.
+description: Szybkie Spójrz na różne funkcje debuger programu Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691095"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debuger programu Visual Studio
 
@@ -76,7 +77,7 @@ Znajduje się w debugerze, umieść kursor nad wiersz kodu do **Uruchom kliknię
 
 ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click-2.png "Uruchom kliknięcie")
 
->  [!NOTE] 
+> [!NOTE]
 > **Uruchom kliknięcie** przycisk (uruchamianie wykonywania tutaj) jest nowa w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Kliknij przycisk **Uruchom kliknięcie** przycisk (uruchamianie wykonywania tutaj). Debuger przechodzi do wiersza kodu, gdy kliknięto przycisk.
@@ -104,7 +105,6 @@ Jeśli ustawisz punktów przerwania, debuger wstrzymuje pierwszy punkt przerwani
 Naciśnij klawisz F5, aż zostanie wyświetlony wiersz kodu po wybraniu **Uruchom do kursora**.
 
 To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera.
-
 
 > [!NOTE]
 > Można użyć **Uruchom do kursora** w **stos wywołań** okno podczas debugowania.
@@ -179,7 +179,7 @@ Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań**
 ## <a name="examine-an-exception"></a>Sprawdź Wystąpił wyjątek
 
 Gdy aplikacja zgłasza wyjątek, debuger przejście do wiersza kodu, która zgłosiła wyjątek.
-     
+
 ![Pomocnik wyjątków](../debugger/media/dbg-tour-exception-helper.png "pomocnika wyjątków")
 
 W tym przykładzie **pomocnika wyjątków** pokazuje `System.Argument` wyjątku i komunikat o błędzie z informacją, że ścieżka nie jest niedozwolony format. Tak wiemy, że wystąpił błąd na argumentu metody lub funkcji.
@@ -188,7 +188,7 @@ W tym przykładzie `DirectoryInfo` wywołania nadać błąd na pusty ciąg, prze
 
 Pomocnik wyjątków jest doskonałym funkcja, która może pomóc w debugowaniu błędy. Można również wykonywać następujące czynności widoku Szczegóły błędu i Dodaj wyrażenie kontrolne pomocnika wyjątków. Lub, w razie potrzeby można zmienić warunki zgłaszanie określonego wyjątku.
 
->  [!NOTE] 
+>  [!NOTE]
 > Pomocnik wyjątków zastępuje Asystenta wyjątków w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozwiń węzeł **ustawienia wyjątków** węzeł, aby wyświetlić więcej opcji, w jaki sposób obsługiwać ten typ wyjątku, ale nie ma potrzeby zmian w tym samouczku!
@@ -209,7 +209,7 @@ Aby uzyskać więcej informacji, zobacz [debugowania na żywo aplikacji ASP.NET,
 
 Można znaleźć i wyświetlić migawki za pomocą **krok do tyłu** i **krok do przodu** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **narzędzia diagnostyczne** okna.
 
-![Krok do tyłu i do przodu przyciski](../debugger/media/intellitrace-step-back-icons-description.png  "przyciski krok do tyłu i do przodu")  
+![Krok do tyłu i do przodu przyciski](../debugger/media/intellitrace-step-back-icons-description.png  "przyciski krok do tyłu i do przodu")
 
 Aby uzyskać więcej informacji, zobacz [wyświetlić migawki IntelliTrace krok zwrotnego pomocą](../debugger/how-to-use-intellitrace-step-back.md) strony.
 

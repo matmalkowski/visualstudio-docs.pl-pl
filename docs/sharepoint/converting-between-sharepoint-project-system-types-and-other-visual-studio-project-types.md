@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692122"
 ---
 # <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio
   W niektórych przypadkach może być obiektem systemu projektu SharePoint i chcesz używać funkcji odpowiedni obiekt w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, albo na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metoda usługa projektu SharePoint, aby przekonwertować obiekt do innego obiektu modelu.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
  Aby uzyskać więcej informacji na temat modelu obiektu automatyzacji programu Visual Studio i model obiektów integracji programu Visual Studio, zobacz [omówienie programowania modelu z rozszerzeniami narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## <a name="types-of-conversions"></a>Konwersje typów  
+## <a name="types-of-conversions"></a>Konwersje typów
  Poniższa tabela zawiera listę typów, które tej metody można konwertować między systemu projektu SharePoint a innymi modelami obiektu Visual Studio.  
   
 |Typ systemu projektu SharePoint|Odpowiednie typy w modelach obiektu automatyzacji i integracji|  
@@ -48,9 +49,8 @@ ms.lasthandoff: 04/16/2018
   
 -   Kod, który rejestruje `projectService_ProjectAdded` można obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Na przykład zobacz [porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Porady: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   

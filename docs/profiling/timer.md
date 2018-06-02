@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476704"
 ---
 # <a name="timer"></a>Czasomierz
 VSPerfCmd.exe **czasomierza** opcja umożliwia ustawienie profilowania zdarzenia, które jest próbkowania cykli zegara procesora i opcjonalnie zmiany z domyślnej wartości 10 000 000 liczby cykli w interwale próbkowania. Przy użyciu procesora (jeden gigaherc) 1GH cykle zegara 10 000 000 jest około 100 próbek na sekundę. Minimalna liczba cykli, które można określić wynosi 50 000.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c10695eacdf680d247be8ef95ae14c3208ae92af
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691590"
 ---
 # <a name="cores-view-legend"></a>Widok rdzeni — Legenda
 Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera kolumny, które zawierają liczby przełączeń kontekstu różnych rdzeniach, przełączeń kontekstu całkowitej i procent przełączeń kontekstu przecinających rdzenie. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu różnych rdzeniach, w kolejności malejącej.  
@@ -36,5 +37,5 @@ Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera kol
 |Przełączenia kontekstu całkowita|Całkowita liczba przełączeń kontekstu dla danego wątku w okresie próbkowania. Zalicza się każdej zmianie wątku jedno przełączenie kontekstu kontekstu (na przykład pochodzący z wykonania na synchronizacji).|  
 |Procent przełączeń kontekstu przecinających rdzenie|Obliczony jako procent przez podzielenie liczby przełączeń kontekstu różnych rdzeniach według liczby przełączeń kontekstu całkowitej. Im większa tej wartości procentowej, tym większy efekt narzut na różnych rdzeniach kontekstu zmienia się na wydajność tego konkretnego wątku.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)

@@ -34,19 +34,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693737"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 
 *Extensible Markup Language (XML)* to język zapewniający format opisu danych. To ułatwia dokładniejsze deklarowanie zawartości i uzyskiwanie bardziej znaczących wyników na wielu platformach. Ponadto XML umożliwia rozdzielenie prezentacji danych. Na przykład w języku HTML umożliwia tagi przeglądarka, aby wyświetlić dane jako pogrubieniem lub kursywą; w kodzie XML używaj tagów wyłącznie w celu określenia dane, takie jak nazwę miejscowości, temperatury i barometryczne wykorzystania. W kodzie XML umożliwia arkusze stylów, takich jak arkusza stylów języka XSL (Extensible) i kaskadowych arkuszy stylów (CSS) przedstawiają dane w przeglądarce. XML oddziela dane od prezentacji i procesu. Dzięki temu można wyświetlić i przetwarzania danych, które mają być, stosując arkusze stylów różnych i aplikacji.
 
-Kod XML jest podzbiorem SGML jest zoptymalizowany pod kątem dostarczania w sieci Web. Jest on zdefiniowany w sieci World Wide Web konsorcjum W3C. Tej normalizacji gwarantuje, że dane strukturalne będzie uniform i niezależnie od aplikacji lub dostawców.
+Kod XML jest podzbiorem SGML jest zoptymalizowany pod kątem dostarczania w sieci Web. Jest on zdefiniowany w sieci World Wide Web konsorcjum W3C. Tej normalizacji gwarantuje, że danych strukturalnych są uniform i niezależnie od aplikacji lub dostawców.
 
-Kod XML jest fundament wiele funkcji programu Visual Studio i .NET Framework. Na poniższej liście tematu nazwy, narzędzia i funkcje związane z XML, które są oferowane w Visual Studio i .NET Framework.
+Kod XML jest fundament wiele funkcji programu Visual Studio i .NET Framework. Na poniższej liście artykułu nazwy, narzędzia i funkcje związane z XML, które są oferowane w Visual Studio i .NET Framework.
 
 Aby uzyskać więcej informacji, zobacz <xref:System.Xml?displayProperty=fullName> dokumentacji.
 

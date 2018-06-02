@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691449"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Samouczek krok 6: należy użyć szablonu projektu sieci Web Django sond
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Jeśli nie masz doświadczenia w obsłudze bardziej złożonych wyrażeń regularnych używane w tym miejscu, można wkleić wyrażenia w [regex101.com](https://regex101.com/) wyjaśnienie przy użyciu prostego języka. (Należy wprowadzić kreskami ukośnymi `/` przez dodanie kreski ułamkowej odwróconej `\`h poprzedzających; ucieczki nie jest konieczne w języku Python z powodu `r` prefiks na ciąg, co oznacza "nieprzetworzonej").
+Jeśli nie masz doświadczenia w obsłudze bardziej złożonych wyrażeń regularnych używane w tym miejscu, można wkleić wyrażenia w [regex101.com](https://regex101.com/) wyjaśnienie przy użyciu prostego języka. (Należy wprowadzić kreskami ukośnymi `/` przez dodanie kreski ułamkowej odwróconej `\` poprzedzających; anulowanie nie jest konieczne w języku Python z powodu `r` prefiks na ciąg, co oznacza "nieprzetworzonej").
 
 W Django, składnia `?P<name>pattern` tworzy grupę o nazwie `name`, które jest przekazywane jako argumenty do widoków w kolejności ich występowania. W kodzie przedstawiona wcześniej `PollsDetailView` i `PollsResultsView` odbierania argument o nazwie `pk` i `app.views.vote` odbiera argument o nazwie `poll_id`.
 

@@ -28,23 +28,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691535"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Tworzenie części sieciowych dla SharePoint
+# <a name="creating-web-parts-for-sharepoint"></a>Tworzenie składników web Part dla SharePoint
   Przy użyciu składników web Part, można zmodyfikować zawartość, wyglądu i zachowania stron witryny programu SharePoint za pomocą przeglądarki. Formanty po stronie serwera, które są uruchamiane wewnątrz strony sieci web są składniki Web Part: są blokami konstrukcyjnymi stron, które znajdują się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: składnikami Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Można tworzyć i debugować części sieci web w witrynie programu SharePoint przy użyciu szablonów w programie Visual Studio.  
   
-## <a name="creating-a-web-part-in-visual-studio"></a>Tworzenie składnika Web Part w programie Visual Studio  
+## <a name="create-a-web-part-in-visual-studio"></a>Tworzenie składnika web part programu Visual Studio
  Tworzenie składnika web part, dodając **składnika Web Part** element do żadnego projektu programu SharePoint. Można użyć **składnika Web Part** elementu w trybie piaskownicy rozwiązania lub rozwiązaniu farmy.  
   
  Jeśli chcesz wizualnie projektowania składnika web part za pomocą projektanta, należy utworzyć **wizualnego składnika Web Part** lub Dodaj **wizualnego składnika Web Part** element do żadnego projektu programu SharePoint. Można użyć **wizualnego składnika Web Part** elementu w rozwiązaniu farmy.  
   
-### <a name="web-part-item"></a>Element składnika Web Part  
+### <a name="web-part-item"></a>Element składnika Web part
  A **składnika Web Part** elementu zawiera pliki używane do projektowania składnika web part w witrynie programu SharePoint. Po dodaniu **składnika Web Part** elementu, Visual Studio tworzy folder w projekcie, a następnie dodaje kilka plików do folderu. W poniższej tabeli opisano każdego pliku.  
   
 |Plik|Opis|  
@@ -55,10 +56,10 @@ ms.lasthandoff: 04/16/2018
   
  Aby uzyskać więcej informacji, zobacz [porady: Tworzenie składnika Web Part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### <a name="visual-web-part-item"></a>Element wizualnego składnika Web Part  
+### <a name="visual-web-part-item"></a>Wizualny składnik web part elementu
  Wizualny składnik web part jest składnik web part, który utworzono przy użyciu narzędzia Projektant Visual Web Developer w programie Visual Studio. Wizualny składnik web part działa tak samo, jak inne części sieci web. Aby dodać formanty, takie jak przycisków i pola tekstowe do składnika web part, Dodaj kod do pliku XML. Jednak dodawanie formantów do wizualnego składnika web part przeciągając lub skopiować je do składnika web part z programu Visual Studio **przybornika**. Projektant następnie generuje kod wymagany w pliku XML. Zobacz [porady: tworzenie SharePoint Web Part za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-## <a name="sharepoint-controls"></a>Formanty programu SharePoint  
+## <a name="sharepoint-controls"></a>Formanty programu SharePoint
  Program Visual Studio udostępnia niektóre formanty do tworzenia strony programu SharePoint, takich jak strony aplikacji. Formanty te są wyświetlane w **przybornika** w obszarze **formanty programu SharePoint**. Funkcja tych kontrolek pochodną [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) przestrzeni nazw, który zawiera formanty serwera ASP.NET, które są używane na stronach witryny i listy programu SharePoint.  
   
 |Nazwa formantu|Opis|  
@@ -73,14 +74,14 @@ ms.lasthandoff: 04/16/2018
 |[Łącza](http://go.microsoft.com/fwlink/?LinkId=235313)|Udostępnia właściwości i metody do rejestrowania zasoby, takie jak skrypty, na stronie, dzięki czemu mogą być żądane podczas renderowania strony.|  
 |[Motyw](http://go.microsoft.com/fwlink/?LinkId=235314)|Stosuje motyw do strony .aspx.|  
   
-## <a name="debugging-a-web-part"></a>Debugowanie składnika Web Part  
+## <a name="debug-a-web-part"></a>Debugowanie składnika web part
  Można debugować projekt programu SharePoint, który zawiera składnik web part, tak jak będzie debugowania innych projektów programu Visual Studio. Po uruchomieniu debugera programu Visual Studio Visual Studio otworzy w witrynie programu SharePoint.  
   
  Aby rozpocząć debugowanie kodu, należy dodać składnik web part do strony sieci web w programie SharePoint.  
   
  Aby uzyskać więcej informacji na temat debugowania projektów SharePoint, zobacz [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="visual-web-part-limitations"></a>Ograniczenia wizualnego składnika Web Part  
+## <a name="visual-web-part-limitations"></a>Wizualny składnik web part ograniczenia
  Począwszy od programu Visual Studio, można dodać części sieci web visual do rozwiązania programu SharePoint w trybie piaskownicy oraz rozwiązaniami farmy. Jednak części sieci web visual mają następujące ograniczenia:  
   
 -   Parametry wymienne części sieci web Visual nie jest obsługiwane. Aby uzyskać więcej informacji, zobacz [parametry wymienne](../sharepoint/replaceable-parameters.md).  
@@ -103,14 +104,14 @@ ms.lasthandoff: 04/16/2018
   
  Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy, zobacz [różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## <a name="creating-older-style-sharepoint-based-web-parts"></a>Tworzenie składników Web Part starszego stylu w oparciu o program SharePoint  
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Utwórz starsze styl części sieci web opartych na programie SharePoint
  Szablony programu Visual Studio służy do tworzenia niestandardowych [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web Part programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] części sieci Web są tworzone nad [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktura składników web part i są zalecane typu dla nowych projektów.  
   
  W bardzo mało przypadków może być konieczne tworzenie składnika web part za pomocą starszej stylu oparty na programie SharePoint składnik web part. Visual Studio umożliwia tworzenie tych typów części sieci web, ale Visual Studio nie zapewnia żadnych szablonów, które są zaprojektowane specjalnie, aby można je utworzyć.  
   
  Aby uzyskać więcej informacji na temat po warto utworzyć starsze styl oparty na programie SharePoint składnik web part, zobacz [infrastruktury części sieci Web w programie Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Aby uzyskać więcej informacji na temat tworzenia składnika web part za pomocą starszej stylu oparty na programie SharePoint składnik web part, zobacz [wskazówki Tworzenie podstawowego składnika Web Part programu SharePoint](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
@@ -120,5 +121,4 @@ ms.lasthandoff: 04/16/2018
 |[Przewodnik: Tworzenie części sieciowej dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint.|  
 |[Przewodnik: Tworzenie składnika Web part dla SharePoint za pomocą Projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Opisuje sposób projektowania składnika web part dla SharePoint przeciągając formanty powierzchnię projektu visual.|  
 |[Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego dane OData dla programu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint, która obsługuje aplikację Silverlight i wyświetla dane z listy programu SharePoint.|  
-  
   

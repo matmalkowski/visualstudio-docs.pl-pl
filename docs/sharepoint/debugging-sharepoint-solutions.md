@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692216"
 ---
 # <a name="debugging-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
   Rozwiązania programu SharePoint można debugować przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Po rozpoczęciu debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu do serwera programu SharePoint, a następnie otwiera wystąpienia witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/23/2018
   
  Wynikowy plik web.config następująco:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <configuration>  
         ...  

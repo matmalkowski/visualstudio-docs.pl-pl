@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c6b319953f3d38814934b2fd8e80f06008f95013
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692138"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zużycie energii aplikacji platformy uniwersalnej systemu Windows na tablecie niskiego poboru energii urządzenia z systemem całość lub część czasu na ich własnych baterii. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii można zwiększyć wdrożenia aplikacji i korzystać przez klientów.  
@@ -92,7 +93,7 @@ if (performance && performance.mark) {
 2.  Wybierz **zużycie energii** , a następnie wybierz **Start**.  
   
     > [!NOTE]
-    >  Po rozpoczęciu **zużycie energii** profilera, mogą pojawić **Kontrola konta użytkownika** żąda Twoje uprawnienia do uruchamiania VsEtwCollector.exe okna. Wybierz **tak**.  
+    >  Po rozpoczęciu **zużycie energii** profilera, można napotkać **Kontrola konta użytkownika** okna żąda Twoje uprawnienia do uruchamiania *VsEtwCollector.exe*. Wybierz **tak**.  
   
 3.  Zbadaj aplikację w celu zebrania danych.  
   

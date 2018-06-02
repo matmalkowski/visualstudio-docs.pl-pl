@@ -9,17 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f811905fb6fed0e0cbc061128622c72bf09fc07
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692330"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Wskazówki: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
-Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation (WPF) do przedstawienia sposobu tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.
+W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego interfejsu użytkownika teście aplikacji Windows Presentation Framework (WPF). Przewodnik zawiera rozwiązania korygowanie testów, które zostały przerwane przez różne problemy dotyczące synchronizacji i refaktoryzacji kontrolek.
 
-## <a name="create-a-simple-wpf-application"></a>Tworzenie prostej aplikacji WPF
+## <a name="create-a-wpf-app"></a>Tworzenie aplikacji WPF
 
 1.  Na **pliku** menu wskaż **nowy**, a następnie wybierz **projektu**.
 
@@ -96,7 +97,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 16. Zapisz plik.
 
-### <a name="verify-the-wpf-application-runs-correctly"></a>Weryfikowanie prawidłowego uruchamiania aplikacji WPF
+### <a name="run-the-wpf-app"></a>Uruchamianie aplikacji WPF
 
 1.  Na **debugowania** menu, wybierz opcję **Rozpocznij debugowanie** lub naciśnij klawisz **F5**.
 
@@ -108,83 +109,88 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 4.  Zamknij aplikację SimpleWPFApp.
 
-### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie i uruchamianie kodowanego testu interfejsu użytkownika dla aplikacji SimpleWPFApp
+## <a name="create-a-shortcut-to-the-wpf-app"></a>Utwórz skrót do aplikacji WPF
 
-1.  Zlokalizuj aplikacji SimpleWPFApp, który został utworzony wcześniej. Domyślnie aplikacja będzie znajdować się w lokalizacji C:\Users\\< nazwa_użytkownika\>\Documents\Visual Studio \<wersji > \Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1.  Zlokalizuj aplikacji SimpleWPFApp, który został utworzony wcześniej.
 
-2.  Utwórz na pulpicie skrót do aplikacji SimpleWPFApp. Kliknij prawym przyciskiem myszy SimpleWPFApp.exe i wybierz polecenie **kopiowania**. Na pulpicie kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej skrót**.
+2.  Utwórz na pulpicie skrót do aplikacji SimpleWPFApp. Kliknij prawym przyciskiem myszy *SimpleWPFApp.exe* i wybierz polecenie **kopiowania**. Na pulpicie kliknij prawym przyciskiem myszy i wybierz polecenie **Wklej skrót**.
 
     > [!TIP]
-    > Skrót do aplikacji ułatwia dodawanie lub modyfikowanie kodowanych testów interfejsu użytkownika dla aplikacji, ponieważ pozwala to na szybkie uruchamianie aplikacji.
+    > Skrót do aplikacji ułatwia dodawanie lub modyfikowanie kodowane testy interfejsu użytkownika dla aplikacji, ponieważ pozwala szybko uruchomić aplikację.
 
-3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
+## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie kodowanego testu interfejsu użytkownika dla SimpleWPFApp
+
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
      **Dodawanie nowego projektu** zostanie wyświetlone okno dialogowe.
 
-4.  W **zainstalowana** okienku rozwiń **Visual C#**, a następnie wybierz **testu**.
+1. W **zainstalowana** okienku rozwiń **Visual C#**, a następnie wybierz **testu**.
 
-5.  W środkowym okienku wybierz **kodowanego interfejsu użytkownika projektu testowego** szablonu.
+1. W środkowym okienku wybierz **kodowanego interfejsu użytkownika projektu testowego** szablonu.
 
-6.  Wybierz **OK**.
+   > [!NOTE]
+   > Jeśli nie widzisz **projekt testowanie kodowanego interfejsu użytkownika** szablonu, musisz [zainstalować składnik kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-     W Eksploratorze rozwiązań, nowe kodowanego interfejsu użytkownika testu projektu o nazwie **CodedUITestProject1** zostanie dodany do rozwiązania.
+1. Wybierz **OK**.
+
+     Nowy projekt testu interfejsu użytkownika o nazwie kodowanych **CodedUITestProject1** zostanie dodany do rozwiązania.
 
      **Generuj kod dla kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe.
 
-7.  Wybierz **Rejestruj akcje, Edytuj mapę interfejsu użytkownika lub Dodaj asercje** opcję i wybierz polecenie **OK**.
+1. Wybierz **Rejestruj akcje, Edytuj mapę interfejsu użytkownika lub Dodaj asercje** opcję i wybierz polecenie **OK**.
 
-     UIMap — Konstruktor kodowanego testu interfejsu użytkownika zostanie wyświetlony, a okno programu Visual Studio jest zminimalizowany.
+     **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe, a okno programu Visual Studio jest zminimalizowany.
 
      Aby uzyskać więcej informacji na temat opcji w oknie dialogowym, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).
 
-8.  Wybierz **Rozpocznij rejestrowanie** na UIMap - kodowanego testu interfejsu użytkownika.
+1. Wybierz **Rozpocznij nagrywanie** na **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** okna dialogowego.
 
-     ![Rozpocznij nagrywanie](../test/media/cuit_builder_record.png "CUIT_Builder_Record")
+     ![Rozpocznij rejestrowanie](../test/media/cuit_builder_record.png)
 
      Można wstrzymać rejestrowania, jeśli to konieczne, na przykład jeśli masz radzenia sobie z poczty przychodzącej.
 
-     ![Wstrzymanie nagrywania](../test/media/cuit_.png "CUIT_")
+     ![Wstrzymanie nagrywania](../test/media/cuit_.png)
 
     > [!WARNING]
     > Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, wykonywania działań, które mogą prowadzić do włączenia rejestrowania danych poufnych.
 
-9. Uruchom SimpleWPFApp za pomocą skrótu na pulpicie.
+1. Uruchom SimpleWPFApp za pomocą skrótu na pulpicie.
 
      Jak wcześniej Zwróć uwagę, że kontrolkę pola wyboru jest wyłączona.
 
-10. Na SimpleWPFApp, wybierz **Start**.
+1. Na SimpleWPFApp, wybierz **Start**.
 
      W ciągu kilku sekund pasek postępu powinien być zapełniony w 100%.
 
-11. Zaznacz kontrolkę pola wyboru, która jest teraz włączony.
+1. Zaznacz kontrolkę pola wyboru, która jest teraz włączony.
 
-12. Zamknij aplikację SimpleWPFApp.
+1. Zamknij aplikację SimpleWPFApp.
 
-13. Na UIMap — Konstruktor kodowanego testu interfejsu użytkownika, wybierz **Generuj kod**.
+1. Na **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** okno dialogowe, wybierz **Generuj kod**.
 
-14. W polu wpisz nazwę metody **SimpleAppTest** i wybierz polecenie **Dodaj i Generuj**. W ciągu kilku sekund Kodowany test interfejsu użytkownika pojawi się i będzie dodany do rozwiązania.
+1. W **nazwę metody** wpisz **SimpleAppTest** i wybierz polecenie **Dodaj i Generuj**. W ciągu kilku sekund kodowanego testu interfejsu użytkownika pojawia się i zostanie dodany do rozwiązania.
 
-15. Zamknij UIMap - kodowanego testu interfejsu użytkownika.
+1. Zamknij **UIMap — jest zapisana w kodowanego testu interfejsu użytkownika**.
 
-     Plik CodedUITest1.cs pojawi się w edytorze kodu.
+     *CodedUITest1.cs* plik zostanie wyświetlony w edytorze kodu.
 
-16. Zapisz projekt.
+1. Zapisz projekt.
 
-### <a name="run-the-coded-ui-test"></a>Uruchamianie kodowanego testu interfejsu użytkownika.
+### <a name="run-the-test"></a>Uruchomienie testu
 
-1.  Z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksploratora testów**.
+1. Z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksploratora testów**.
 
-2.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
+2. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
-3.  W pliku CodedUITest1.cs Znajdź **CodedUITestMethod** metody, kliknij prawym przyciskiem myszy i wybierz **Uruchom testy**, lub uruchom test z Eksploratora testów.
+3. W *CodedUITest1.cs* pliku, Znajdź **CodedUITestMethod** metody, kliknij prawym przyciskiem myszy i wybierz **Uruchom testy**, lub uruchom test z **Eksploratora testów**.
 
-     Podczas wykonywania kodowanego przebiegu testu interfejsu użytkownika aplikacja SimpleWPFApp jest widoczna. Wykonuje ona działania, których nie było w poprzedniej procedurze. Jednak gdy test próbuje zaznacz pole wyboru dla formantu pole wyboru, okno wyników testu pokazuje, że testowanie nie powiodło się. To jest, ponieważ test próbuje zaznacz pole wyboru, ale nie jest pamiętać, że kontrolka pola wyboru jest wyłączone, aż pasek postępu jest wykonane w 100%. Problem można rozwiązać i podobne problemy przy użyciu różnych `UITestControl.WaitForControlXXX()` metod, które są dostępne dla kodowanych testów UI. Następna procedura zostaną przedstawione za pomocą `WaitForControlEnabled()` metodę, aby rozwiązać ten problem, który spowodował niepowodzenie tego testu. Aby uzyskać więcej informacji, zobacz [tworzenie kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Podczas wykonywania kodowanego przebiegu testu interfejsu użytkownika aplikacja SimpleWPFApp jest widoczna. Wykonuje ona działania, których nie było w poprzedniej procedurze. Jednak gdy test próbuje zaznacz pole wyboru dla formantu pole wyboru **wyników testu** okna pokazuje, że testowanie nie powiodło się. To jest, ponieważ test próbuje zaznacz pole wyboru, ale nie jest pamiętać, że kontrolka pola wyboru jest wyłączone, aż pasek postępu jest wykonane w 100%. Problem można rozwiązać i podobne problemy przy użyciu różnych `UITestControl.WaitForControlXXX()` metod, które są dostępne dla kodowanych testów UI. Następna procedura zostaną przedstawione za pomocą `WaitForControlEnabled()` metodę, aby rozwiązać ten problem, który spowodował niepowodzenie tego testu. Aby uzyskać więcej informacji, zobacz [tworzenie kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-### <a name="edit-and-rerun-the-coded-ui-test"></a>Edytowanie i ponowne uruchamianie kodowanego testu interfejsu użytkownika
+## <a name="edit-and-rerun-the-coded-ui-test"></a>Edytuj i ponownie uruchom kodowanego testu interfejsu użytkownika
 
-1.  W oknie Eksploratora testów wybierz testu nie powiodło się i w **ślad stosu** wybierz pierwszy link do **UIMap.SimpleAppTest()**.
+1.  W **Eksploratora testów** okna, wybierz test nie powiodło się i w **ślad stosu** wybierz pierwszy link do **UIMap.SimpleAppTest()**.
 
-2.  Plik UIMap.Designer.cs otwiera się z punktem błędu wyróżnionego w kodzie:
+2.  *UIMap.Designer.cs* otwiera plik z punktem wyróżnione kod błędu:
 
     ```csharp
     // Select 'CheckBox' check box
@@ -194,25 +200,25 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 3.  Aby rozwiązać ten problem, należy wybrać kodowanego testu interfejsu użytkownika, poczekaj, aż formant wyboru włączenia przed kontynuowaniem się przy użyciu tego wiersza `WaitForControlEnabled()` metody.
 
     > [!WARNING]
-    > Nie należy modyfikować pliku UIMap.Designer.cs. Wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną każdorazowo zastąpione przy generowaniu kodu za pomocą UIMap — Konstruktora kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
+    > Nie należy modyfikować *UIMap.Designer.cs* pliku. Żadnego kodu zmiany zostanie zastąpiony za każdym razem, gdy generowania kodu za pomocą **UIMap — Konstruktor kodowanego testu interfejsu użytkownika**. Jeśli masz zmodyfikuj metodę zarejestrowane, skopiuj go do *UIMap.cs* pliku i jego nazwa zostanie zmieniona. *UIMap.cs* plików może służyć do przesłonięcia metod i właściwości w *UIMapDesigner.cs* pliku. Należy usunąć odwołanie do oryginalnej metody w *CodedUITest.cs* pliku i zamień ją na nazwę zmieniono nazwę metody.
 
-4.  W Eksploratorze rozwiązań, Znajdź **UIMap.uitest** w projekcie kodowanego testu interfejsu użytkownika.
+4.  W **Eksploratora rozwiązań**, zlokalizuj *UIMap.uitest* w projekcie kodowanego testu interfejsu użytkownika.
 
-5.  Otwórz menu skrótów **UIMap.uitest** i wybierz polecenie **Otwórz**.
+5.  Otwórz menu skrótów *UIMap.uitest* i wybierz polecenie **Otwórz**.
 
      Kodowany test interfejsu użytkownika jest wyświetlany w Edytorze kodowanego testu interfejsu użytkownika. Teraz można wyświetlać i edytować kodowany test interfejsu użytkownika.
 
-6.  W **akcji IU** okienku, wybierz metody testowej (SimpleAppTest), który chcesz przenieść plik UIMap.cs lub UIMap.vb ułatwiające funkcję kodu niestandardowego, która nie będzie zastąpione, gdy kod testu jest ponownie kompilowana.
+6.  W **akcji IU** okienku, wybierz metodę testu (SimpleAppTest), który chcesz przenieść do *UIMap.cs* lub *UIMap.vb* pliku. Przenoszenie metody do innego pliku umożliwia kodu niestandardowego do dodania, który nie jest zastępowana kod testu jest ponownie kompilowana.
 
-7.  Wybierz **Przenieś kod** przycisk na pasku narzędzi edytora testu interfejsu użytkownika na stałe.
+7.  Wybierz **Przenieś kod** znajdującego się na **kodowanego interfejsu użytkownika edytora testów** paska narzędzi.
 
-8.  Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ta ma zostać przeniesiona z pliku UIMap.uitest do pliku UIMap.cs i nie będzie już można edytować metody za pomocą Edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
+8.  Pojawi się okno dialogowe programu Microsoft Visual Studio. Go ostrzega, że metoda ma zostać przeniesiona z *UIMap.uitest* pliku *UIMap.cs* plików i że nie będzie możliwe edytowanie metody, za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
-     Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować przeniesiony plik testowy, otwórz plik UIMap.cs w Eksploratorze rozwiązań.
+     Metoda testowa zostanie usunięty z *UIMap.uitest* pliku i nie jest już wyświetlany w okienku Akcje interfejsu użytkownika. Aby edytować plik przeniesionego test, otwórz *UIMap.cs* plik z **Eksploratora rozwiązań**.
 
-9. Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wybierz **zapisać**.
+9. Na pasku narzędzi programu Visual Studio wybierz **zapisać**.
 
-     Aktualizacje do metody testowej są zapisywane w pliku UIMap.Designer.
+     Aktualizacje do metody testu są zapisywane w *UIMap.Designer* pliku.
 
     > [!WARNING]
     > Po przeniesieniu metody nie będzie można edytować jej za pomocą Edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu.
@@ -234,7 +240,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. W pliku CodedUITest1.cs Znajdź **CodedUITestMethod** — metoda i albo komentarz lub zmień nazwę odwołania do oryginalnej metody SimpleAppTest() i zastąp go ModifiedSimpleAppTest() nowe:
+13. W *CodedUITest1.cs* pliku, Znajdź **CodedUITestMethod** — metoda i albo komentarz lub zmień nazwę odwołania do oryginalnej metody SimpleAppTest() i zastąp go z nowym ModifiedSimpleAppTest():
 
     ```csharp
     [TestMethod]
@@ -251,23 +257,23 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 15. Kliknij prawym przyciskiem myszy **CodedUITestMethod** metodę i wybierz **Uruchom testy**.
 
-16. Teraz kodowanego testu interfejsu użytkownika pomyślnym zakończeniu wszystkich kroków testu i **przekazanego** jest wyświetlany w oknie Eksploratora testów.
+16. Teraz kodowanego testu interfejsu użytkownika pomyślnym zakończeniu wszystkich kroków testu, a **przekazanego** jest wyświetlany w **Eksploratora testów** okna.
 
-### <a name="refactor-a-control-in-the-simplewpfapp"></a>Reorganizacja formantu w aplikacji SimpleWPFApp
+## <a name="refactor-a-control-in-simplewpfapp"></a>Refaktoryzuj formantu w SimpleWPFApp
 
-1.  W pliku MainWindow.xaml w Projektancie zaznacz formant przycisku.
+1.  W *MainWindow.xaml* pliku w projektancie, wybierz formantu przycisku.
 
-2.  W górnej części okna właściwości, należy zmienić **nazwa** wartość właściwości z button1 buttonA.
+2.  W górnej części **właściwości** Zmień **nazwa** wartość właściwości z **button1** do **buttonA**.
 
 3.  Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
-4.  W Eksploratorze testów, uruchom **CodedUITestMethod1**.
+4.  W **Eksploratora testów**Uruchom **CodedUITestMethod1**.
 
      Test zakończy się niepowodzeniem, ponieważ w UIMap jako button1 kodowany test interfejsu użytkownika nie można znaleźć formantu przycisku, który pierwotnie był mapowany. Refaktoryzacja może w ten sposób wpłynąć na kodowane testy interfejsu użytkownika.
 
-5.  W oknie Eksploratora testów w **ślad stosu** wybierz pierwszy link obok pozycji **(UIMpa.ModifiedSimpleAppTest)**.
+5.  W **Eksploratora testów**w **ślad stosu** wybierz pierwszy link obok pozycji **(UIMpa.ModifiedSimpleAppTest)**.
 
-     Otwiera plik UIMap.cs. Punkt błędu jest wyróżniany w kodzie:
+     *UIMap.cs* pliku zostanie otwarta. Punkt błędu jest wyróżniany w kodzie:
 
     ```csharp
     // Click 'Start' button
@@ -276,19 +282,19 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
      Należy zauważyć, że wiersz kodu we wcześniejszej części tej procedury jest przy użyciu `UiStartButton`, która jest nazwą UIMap przed jego został zrefaktoryzowany.
 
-     Aby rozwiązać ten problem, można dodać wycofany formant do UIMap za pomocą Konstruktora kodowanego testu interfejsu użytkownika. Należy zaktualizować kod testu do kodu, jak pokazano w następnej procedurze.
+     Aby rozwiązać ten problem, można dodać refactored kontrolki do UIMap za pomocą **konstruktora kodowanego testu interfejsu użytkownika**. Należy zaktualizować kod testu do kodu, jak pokazano w następnej procedurze.
 
-### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Mapowanie wycofanej kontroli i edycji oraz ponowne przeprowadzenie kodowanego testu interfejsu użytkownika
+## <a name="map-refactored-control-rerun-the-test"></a>Mapowanie refaktoryzowane kontroli ponowne przeprowadzenie testu
 
-1.  W pliku CodedUITest1.cs w **CodedUITestMethod1()** metoda, kliknij prawym przyciskiem myszy, wybierz opcję **Generuj kod dla kodowanego testu interfejsu użytkownika** , a następnie wybierz **konstruktora kodowanego testu interfejsu użytkownika używana**.
+1.  W *CodedUITest1.cs* pliku w **CodedUITestMethod1()** metoda, kliknij prawym przyciskiem myszy, wybierz opcję **Generuj kod dla kodowanego testu interfejsu użytkownika** , a następnie wybierz **użycia Kodowanego testu interfejsu użytkownika**.
 
-     Pojawi się UIMap — Konstruktor kodowanego testu interfejsu użytkownika.
+     **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** pojawi się.
 
 2.  Za pomocą skrótu na pulpicie został utworzony wcześniej, uruchom aplikację SimpleWPFApp utworzony wcześniej.
 
-3.  Przeciągnij narzędzie krzyżyk, aby na UIMap — Konstruktor kodowanego testu interfejsu użytkownika, **Start** przycisk na SimpleWPFApp.
+3.  Na **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** okna dialogowego, przeciągnij narzędzie krzyżyk, aby **Start** przycisk na SimpleWPFApp.
 
-     **Start** przycisku jest ujęta w polu niebieska i konstruktora kodowanego testu interfejsu użytkownika zajmuje kilka sekund do przetwarzania danych dla wybranej kontrolki i wyświetla właściwości kontrolki. Zwróć uwagę, że **AutomationUId** nosi nazwę **buttonA**.
+     **Start** przycisku jest ujęta w polu niebieski. **Kodowanego testu interfejsu użytkownika** zajmuje kilka sekund do przetwarzania danych dla wybranej kontrolki i wyświetlić właściwości formantu. Zwróć uwagę, że wartość **AutomationUId** jest **buttonA**.
 
 4.  We właściwościach formantu wybierz strzałkę w lewym górnym rogu, aby rozwinąć Mapę formantów UI. Zwróć uwagę, że **UIStartButton1** jest zaznaczone.
 
@@ -296,21 +302,19 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
      Stan w dolnej części okna sprawdza akcji, wyświetlając **zaznaczony formant został dodany do mapy formantów interfejsu użytkownika**.
 
-6.  Na UIMap — Konstruktor kodowanego testu interfejsu użytkownika, wybierz **Generuj kod**.
+6.  Na **UIMap — Konstruktor kodowanego testu interfejsu użytkownika** okno dialogowe, wybierz **Generuj kod**.
 
-     Kodowany konstruktora testu interfejsu użytkownika — generowanie kodu występuje z notatki z informacją, że żadna nowa metoda jest wymagana i że kod zostanie wygenerowany tylko zmiany mapy formantów interfejsu użytkownika.
+     **Konstruktora kodowanego interfejsu użytkownika testu - Generuj kod** zostanie wyświetlone okno dialogowe z notatki z informacją, że jest wymagana żadna nowa metoda i ten kod będzie generowany tylko zmiany mapy formantów interfejsu użytkownika.
 
 7.  Wybierz **Generowanie**.
 
-8.  Zamknij aplikację SimpleWPFApp.exe.
+8.  Zamknij aplikację SimpleWPFApp.
 
-9. Zamknij UIMap — Konstruktor kodowanego interfejsu użytkownika testu.
+9. Zamknij **UIMap — jest zapisana w kodowanego testu interfejsu użytkownika**.
 
-     UIMap — Konstruktor kodowanego testu interfejsu użytkownika zajmuje kilka sekund procesu formantu interfejsu użytkownika mapowania zmiany.
+10. W **Eksploratora rozwiązań**, otwórz *UIMap.Designer.cs* pliku.
 
-10. W Eksploratorze rozwiązań otwórz plik UIMap.Designer.cs.
-
-11. W pliku UIMap.Designer.cs zlokalizować właściwości UIStartButton1. Powiadomienie `SearchProperties` ma ustawioną wartość `"buttonA"`:
+11. W pliku UIMap.Designer.cs Znajdź **UIStartButton1** właściwości. Powiadomienie `SearchProperties` ma ustawioną wartość `"buttonA"`:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -332,7 +336,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
      Teraz można zmodyfikować kodowany test interfejsu użytkownika do korzystania z ostatnio mapowanego formantu. Jak wskazano w poprzedniej procedurze, aby zastąpić jakąkolwiek metodę lub właściwości w kodowanym teście interfejsu użytkownika, należy to zrobić w pliku UIMap.cs.
 
-12. W pliku UIMap.cs, dodaj konstruktor, a następnie określ `SearchProperties` właściwość `UIStartButton` właściwości do użycia `AutomationID` właściwość z wartością `"buttonA":`
+12. W *UIMap.cs* pliku, Dodaj Konstruktor i określ `SearchProperties` właściwość `UIStartButton` właściwości do użycia `AutomationID` właściwość z wartością `"buttonA":`
 
     ```csharp
     public UIMap()
@@ -343,13 +347,11 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 13. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
-14. W Eksploratorze testów Uruchom CodedUITestMethod1.
+14. W **Eksploratora testów**Uruchom **CodedUITestMethod1**.
 
-     Tym razem kodowany test interfejsu użytkownika pomyślnie zakończy wszystkie etapy testu.  W oknie wyników testu, pojawi się stan **przekazanego**.
+     Tym razem kodowany test interfejsu użytkownika pomyślnie zakończy wszystkie etapy testu. W **wyników testu** okna, zostanie wyświetlony stan **przekazanego**.
 
-## <a name="external-resources"></a>Zasoby zewnętrzne
-
-### <a name="videos"></a>Wideo
+## <a name="videos"></a>Wideo
 
 ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [wprowadzenie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230573)
 
@@ -357,7 +359,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowania ręcznie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230575)
 
-### <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="faq"></a>Najczęściej zadawane pytania
 
 [Kodowanych testów interfejsu użytkownika — często zadawane pytania](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
 

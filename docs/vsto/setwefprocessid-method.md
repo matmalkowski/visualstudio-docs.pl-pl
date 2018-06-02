@@ -1,5 +1,5 @@
 ---
-title: SetWefProcessId — metoda | Dokumentacja firmy Microsoft
+title: SetWefProcessId — metoda
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dbd5a9ffb2ff9b3833dc8007fdfafb4b1a35857
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b426237816bfee53e7c3e50c19e29168b27e16e1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693435"
 ---
-# <a name="setwefprocessid-method"></a>SetWefProcessId — Metoda
+# <a name="setwefprocessid-method"></a>SetWefProcessId — metoda
   Zawiera identyfikator procesu, który uruchomi zawartości w ramach rozszerzenia sieci Web (WEF).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 HRESULT SetWefProcessId(  
     [in] DWORD dwProcessId  
 );  

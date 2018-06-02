@@ -1,5 +1,5 @@
 ---
-title: Właściwości w projektach pakietu Office | Dokumentacja firmy Microsoft
+title: Właściwości w projektach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47af1dae914528a3a338503989e53f081dfffde5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692775"
 ---
 # <a name="properties-in-office-projects"></a>Właściwości w projektach pakietu Office
   Istnieje kilka ważnych właściwości, które są dostępne dla projektów pakietu Office w Visual Studio. Te właściwości można uzyskać w **właściwości** okna.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="namespace-for-host-item"></a>Namespace elementu hosta  
- Użyj **Namespace elementu hosta** właściwości do zmiany przestrzeni nazw dla klas elementu hosta (na przykład `ThisAddIn`, `ThisWorkbook`, lub `ThisDocument` klasy) w projektach Visual C#. Ta właściwość jest wyświetlana w **właściwości** okna po wybraniu węzła dokumentu w projektach na poziomie dokumentu (na przykład ExcelWorkbook1.xlsx lub WordDocument1.docx) lub węzła aplikacji w projekcie dodatku narzędzi VSTO (np. programu Excel lub Word ) w **Eksploratora rozwiązań**.  
+ Użyj **Namespace elementu hosta** właściwości do zmiany przestrzeni nazw dla klas elementu hosta (na przykład `ThisAddIn`, `ThisWorkbook`, lub `ThisDocument` klasy) w projektach Visual C#. Ta właściwość jest wyświetlana w **właściwości** okna po wybraniu węzła dokumentu w projektach na poziomie dokumentu (takie jak *ExcelWorkbook1.xlsx* lub *WordDocument1.docx* ) lub węzła aplikacji w dodatku VSTO projekt (np. programu Excel lub Word) w **Eksploratora rozwiązań**.  
   
  Podczas tworzenia projektu Visual C# Office elementy hosta są podane przestrzeni nazw na podstawie nazwy projektu. Zaleca się, że używasz **Namespace elementu hosta** właściwość można zmienić przestrzeni nazw, a nie Edytuj kod, pliki bezpośrednio. Korzystając z tej właściwości, przestrzeń nazw zostanie zmieniona w plikach wygenerowanego kodu (ukryte), a także w plikach widoczne kodu.  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
   
  Użyj **wartość2** właściwości w **właściwości** okno, aby powiązać <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwość <xref:Microsoft.Office.Tools.Excel.NamedRange> pole w źródle danych.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)   
  [Zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md)  

@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe schematy XML
+title: Schematy XML, okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693643"
 ---
 # <a name="xml-schemas-dialog-box"></a>Okno dialogowe schematy XML
 
@@ -49,8 +50,8 @@ Otwiera **Otwórz schematu XSD** okno dialogowe, które można wybrać dodatkowe
 
 Usuwa obecnie wybrany schemat z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematu w pamięci, ale nie z systemu plików.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Składniki edytora XML](../xml-tools/xml-editor-components.md)
-- [Instrukcje: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
-- [Pamięć podręczna schematów](../xml-tools/schema-cache.md)
+- [Porady: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)

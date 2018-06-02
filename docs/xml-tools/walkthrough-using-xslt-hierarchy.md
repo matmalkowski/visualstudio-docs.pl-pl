@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Korzystanie z hierarchii XSLT'
+title: 'Przewodnik: używanie hierarchii XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693448"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Wskazówki: Korzystanie z hierarchii XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Wskazówki: Użyj hierarchii XSLT
 
 Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja rozpoczyna się od arkusza stylów podmiotu zabezpieczeń, ale po wyświetleniu błędu w wyniku kompilowanie arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawienie błędu lub edycji arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączone lub importowany. Krokowe arkusza stylów w debugerze może Otwórz arkusze stylów dołączone i importowane, i chcesz dodać punkt przerwania w pewnym momencie jednego lub więcej arkuszy stylów dołączone.
 
@@ -47,7 +48,7 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
     </COLLECTION>
     ```
 
-1. Dodaj następujące `xslincludefile.xsl`:
+1. Dodaj następujące *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
     </xsl:stylesheet>
     ```
 
-3.  Dodaj następujące `xslinclude.xsl` pliku:
+3.  Dodaj następujące *xslinclude.xsl* pliku:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do któreg
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Wskazówki: Profilera XSLT](../xml-tools/walkthrough-xslt-profiler.md)

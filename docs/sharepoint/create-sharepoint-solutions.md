@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691607"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań programu SharePoint
   Można utworzyć aplikacji SharePoint w Visual Studio jako alternatywę do ich tworzenia w programie SharePoint Designer. Visual Studio zamienia szybkie opracowywanie SharePoint dzięki takim funkcjom, takich jak zaawansowanych narzędzi debugowania, IntelliSense uzupełnianie i szablony projektów. Visual Studio również korzysta z zaawansowanych narzędzi .NET Framework i języków. SharePoint — projekty można tworzyć za pomocą języka Visual Basic lub Visual C# i aplikacji dla SharePoint — projekty można tworzyć przy użyciu języka JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Centrum deweloperów MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "Centrum deweloperów MSDN")|**Centra deweloperów MSDN**<br /><br /> -   [Visual Studio Development Center](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Centrum deweloperów programu SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [Centrum deweloperów programu SharePoint Server](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Centrum deweloperów SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Centrum deweloperów platformy ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Przekazywanie opinii](../sharepoint/media/vs-icon-feedback.gif "przekazywanie opinii")|**Przekazywanie opinii**<br /><br /> Podaj swoją opinię na temat programu Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Podaj swoją opinię na temat dokumentacji dla programu Visual Studio:<br /><br /> -   **Lekkie widoku.** Jeśli jesteś w górnej części dowolny temat, możesz wybrać **ocenić ten artykuł** łącze, aby przejść do dolnej części tego tematu, w którym można określić **tak** lub **nr** w odpowiedzi na **Udało się znaleźć to pomocne?** Następnie możesz wybrać jednego lub więcej pól wyboru, które są wyświetlane, gdy została wybrana opcja **nr**, podaj więcej informacji, w polu tekstowym, lub obie. Gdy skończysz, wybierz **przesyłania** przycisku.<br />-   **Widok Scriptfree.** U góry tego tematu, należy wybrać **opinii** łącze, aby przekazać opinię na forum MSDN, TechNet i wyrażenie opinii biblioteki.<br />-   **Klasyczny.** U góry tego tematu, należy wybrać **kliknij, aby Rate and Give Feedback** ikony, aby wyrazić swoją opinię na temat z zespołem.|  
   
-  
+ 

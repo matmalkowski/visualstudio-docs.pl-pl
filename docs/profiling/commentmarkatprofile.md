@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe58f2ac769a75ea6422a7877fe4846eefc918c3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690978"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-`CommentMarkAtProfile` Metody wstawia wartość sygnatury czasowej, znacznik liczbowych i ciąg komentarza w pliku Vsp. Wartość znacznika czasu może być używana do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarza do wstawienia profilowanie dla wątku, który zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.  
+`CommentMarkAtProfile` Metody wstawia wartość sygnatury czasowej, znacznik liczbowych i ciąg komentarza w. *Vsp* pliku. Wartość znacznika czasu może być używana do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarza do wstawienia profilowanie dla wątku, który zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.  
   
 ## <a name="syntax"></a>Składnia  
   

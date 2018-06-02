@@ -14,10 +14,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 667eee325be1ddd57f1f06f983b3105e5984df2d
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548612"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i platformy React w programie Visual Studio
 Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i korzystać z funkcji IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React.

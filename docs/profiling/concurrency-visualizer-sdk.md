@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691189"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w Concurrency Visualizer, mogą dodawać kod źródłowy. Dodatkowe dane można skojarzyć z fazy i zdarzeń w kodzie. Te dodatkowe wizualizacje są określane jako *znaczniki*.  Przewodnik wprowadzający dla [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -120,11 +121,11 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="see-also"></a>Zobacz także  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla języka C++.|  
-|[Odwołanie do biblioteki języka C](../profiling/c-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla C.|  
+|[Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla języka C++.|  
+|[Odwołanie do biblioteki C](../profiling/c-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Opisuje interfejs API wizualizatora współbieżności dla kodu zarządzanego.|  
 |[Concurrency Visualizer](../profiling/concurrency-visualizer.md)|Informacje referencyjne dotyczące widoków i raportów profilowania pliki danych, które są generowane przy użyciu metody współbieżności i czy obejmują dane wykonanie wątku.|

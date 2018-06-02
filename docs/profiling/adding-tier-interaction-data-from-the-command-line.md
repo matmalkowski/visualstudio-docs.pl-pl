@@ -13,12 +13,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548664"
 ---
-# <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwy z wiersza polecenia
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 
 Profilowanie interakcji między warstwami zawiera dodatkowe informacje dotyczące godziny wykonywania synchroniczne [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] wywołania funkcji aplikacji wielowarstwowych, które komunikują się z jednego lub więcej baz danych.
 

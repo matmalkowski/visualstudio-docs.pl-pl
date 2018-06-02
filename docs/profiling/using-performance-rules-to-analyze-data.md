@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ed7a44d66f8e13d5ca000ed505ff53ff2336ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477746"
 ---
-# <a name="use-performance-rules-to-analyze-data"></a>Użyj reguł wydajności do analizowania danych
+# <a name="use-performance-rules-to-analyze-data"></a>Korzystanie z reguł wydajności do analizowania danych
 Ostrzeżenia wydajności z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania wskazują na problemy w profilowanych aplikacji, która może spowolnić działanie programu. Ostrzeżenia może również oznaczać, że może być konieczna zmiana metody kolekcji do zbierania danych bardziej użyteczne. Ostrzeżenia wydajności są generowane automatycznie podczas sesji profilowania. Ostrzeżenia są wyświetlane w **listy błędów** okna po otwarciu pliku danych profilowania w programie Visual Studio. Z **listy błędów** okna, można znaleźć kodu źródłowego problemu i można wyświetlić szczegółowe informacje o błędzie, takie jak informacje dotyczące sposobu rozwiązania problemu. Można również wyłączyć ostrzeżenia, w których nie jest konieczne.  
   
 > [!NOTE]

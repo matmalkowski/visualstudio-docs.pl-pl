@@ -12,10 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34469001"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 

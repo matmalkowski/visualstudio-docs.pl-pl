@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692203"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurowanie sesji wydajności
 Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania mogą zbierać szeroką gamę dane wydajności dla wielu typów aplikacji. W tej sekcji przedstawiono sposób umożliwiają konfigurowanie narzędzi profilowania do zbierania danych interesującego Wizardand wydajności właściwości sesji wydajności i docelowy plik binarny. Profilowanie właściwości konfiguracji narzędzia mogą służyć do kontrolowania ilości danych są zbierane w przebiegu profilowania. Aby uzyskać więcej informacji, zobacz [kontroli zbierania danych](../profiling/controlling-data-collection.md).  
@@ -38,5 +39,5 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziac
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)

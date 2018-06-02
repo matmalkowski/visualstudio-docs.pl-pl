@@ -14,10 +14,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477252"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
@@ -26,7 +27,7 @@ Z tego samouczka, dowiesz się, jak:
 > [!div class="checklist"]
 > * Tworzenie projektu środowiska Node.js
 > * Dodawanie kodu
-> * Używanie IntelliSense
+> * Korzystanie z funkcji IntelliSense
 > * Uruchamianie aplikacji
 > * Trafiony punkt przerwania
 
@@ -126,13 +127,13 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     Aby zademonstrować kilka funkcji programu Visual Studio, jest dostępna wystąpił błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy naprawić błąd, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.
 
-## <a name="use-intellisense"></a>Używanie IntelliSense
+## <a name="use-intellisense"></a>Korzystanie z funkcji IntelliSense
 
 1. W *index.js*, przejdź do wiersza zawierającego kod `res.render`.
 
 1. Umieść kursor po `data` ciągu, wpisz `: get` i IntelliSense zostanie wyświetlona `getData` funkcji. Wybierz `getData`.
 
-    ![Używanie IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
+    ![Korzystanie z funkcji IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Usuń przecinkiem (`,`) przed `"data"` i wyróżnianie składni zielony na wyrażeniu. Umieść kursor nad wyróżnianie składni.
 
@@ -170,7 +171,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Umieść kursor nad `getData` Aby wyświetlić jego właściwości w etykietki danych
 
-    ![Sprawdź zmienne](../nodejs/media/tutorial-nodejs-inspect-variables.png)
+    ![Sprawdzanie zmiennych](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
 1. Naciśnij klawisz **F5** (**debugowania** > **Kontynuuj**), aby kontynuować.
 

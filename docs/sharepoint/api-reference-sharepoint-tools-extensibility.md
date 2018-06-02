@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692073"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>Odwołanie API (Rozszerzalność Narzędzi SharePoint)
+# <a name="api-reference-sharepoint-tools-extensibility"></a>Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint)
   Ta sekcja zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
   
-## <a name="in-this-section"></a>W tej sekcji  
+## <a name="in-this-section"></a>W tej sekcji
  <xref:Microsoft.VisualStudio.SharePoint>  
  Zawiera typy, które umożliwiają rozszerzanie systemu projektu SharePoint. Na przykład wbudowana SharePoint — projekty i elementy projektu można rozszerzyć lub można utworzyć własne elementy projektu.  
   
@@ -58,12 +59,11 @@ ms.lasthandoff: 04/16/2018
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  Zawiera typy, które służy do dostosowywania zachowania weryfikacji funkcji i pakiet w projekcie programu SharePoint.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Odwołanie &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  
   

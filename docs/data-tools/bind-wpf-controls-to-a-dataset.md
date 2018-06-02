@@ -1,5 +1,5 @@
 ---
-title: Powiązanie formantów WPF z zestawem danych
+title: Powiązywanie kontrolek WPF z zestawem danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690721"
 ---
-# <a name="bind-wpf-controls-to-a-dataset"></a>Powiązanie formantów WPF z zestawem danych
+# <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordów produktów, które znajdują się w zestawie danych. Zostanie również dodawanie przycisków do przeglądania produktów i Zapisz zmiany w rekordach produktu.
 
 W instruktażu przedstawiono następujące zagadnienia:
@@ -116,7 +117,7 @@ Znajomość następujące pojęcia jest również przydatna, ale nie są wymagan
 
 3.  W **wprowadź instrukcję SQL** Dodaj następującą klauzulę WHERE po `SELECT` instrukcji w polu tekstowym.
 
-    ```
+    ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 

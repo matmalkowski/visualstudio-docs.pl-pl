@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691358"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
   Możesz znaleźć pomocy w rozwiązywaniu problemów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint błędów i ostrzeżeń w Rozwiązywanie problemów z tematów i fora publicznego Microsoft Developer Network (MSDN).  
   
-## <a name="troubleshooting-errors-and-issues"></a>Rozwiązywanie problemów z błędów i problemów  
+## <a name="troubleshoot-errors-and-issues"></a>Rozwiązywanie problemów dotyczących błędów i problemów
  Aby uzyskać pomoc dotyczącą typowych błędów i inne problemy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia programu SharePoint, zobacz następujące tematy:  
   
 -   [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Rozwiązywanie problemów związanych z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>Inne zasoby  
+## <a name="other-resources"></a>Inne zasoby
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint, fora i inne zasoby, które są dostępne w witrynie MSDN.  
   
 |Termin|Definicja|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Jeśli nadal nie możesz znaleźć odpowiedzi, które są potrzebne, są dostępne opcje pomocy technicznej online, takie jak skontaktowaniu się z pomocą techniczną firmy Microsoft lub artykułach bazy wiedzy. Aby uzyskać więcej informacji, zobacz [Microsoft Help i pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=155371) strony.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 

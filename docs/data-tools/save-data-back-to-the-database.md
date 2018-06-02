@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie danych w bazie danych
+title: Zapisywanie danych z powrotem w bazie danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691137"
 ---
-# <a name="save-data-back-to-the-database"></a>Zapisywanie danych w bazie danych
+# <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 Zestaw danych znajduje się w pamięci kopia danych. Jeśli zmodyfikujesz danych jest dobrym rozwiązaniem, aby zapisać te zmiany w bazie danych. Można to robić na jeden z trzech sposobów:
 
 -   Wywołując jedną z metod aktualizacji TableAdapter
@@ -221,7 +222,7 @@ Po dokonaniu zmian w zestawie danych, może przesyłać zmiany ze źródłem dan
 
  Ilustracją jak zaktualizowane Załóżmy, że aplikacja korzysta z zestawu danych, który zawiera jednej tabeli danych. Aplikacja pobiera dwa wiersze z bazy danych. Po ich pobraniu tabeli w pamięci danych wygląda następująco:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Po dokonaniu zmian w zestawie danych, może przesyłać zmiany ze źródłem dan
 
  Aplikacja zmieni Irena Nowak "Preferowane". W wyniku tej zmiany wartości <xref:System.Data.DataRow.RowState%2A> właściwości dla danego wiersza zmieni się z <xref:System.Data.DataRowState.Unchanged> do <xref:System.Data.DataRowState.Modified>. Wartość <xref:System.Data.DataRow.RowState%2A> właściwości dla pierwszego wiersza pozostaje <xref:System.Data.DataRowState.Unchanged>. Tabela danych teraz wygląda następująco:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

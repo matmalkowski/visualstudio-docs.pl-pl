@@ -2,7 +2,7 @@
 title: Przewodnik administratora w usłudze Visual Studio
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691121"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Przewodnik administratora w usłudze Visual Studio 2017
 
 W środowiskach przedsiębiorstw jest typowe dla administratorów systemów wdrożyć instalacje dla użytkowników końcowych z udziału sieciowego lub za pomocą oprogramowania do zarządzania systemami. Firma Microsoft zostały zaprojektowane aparat Instalatora programu Visual Studio do obsługi wdrożenia w przedsiębiorstwie, pozwalając administratorom systemów możliwość tworzenia lokalizacji instalacji sieci, aby wstępnie skonfigurować domyślne ustawienia instalacji, aby wdrożyć kluczy produktów podczas procesu instalacji oraz do zarządzania aktualizacjami produktu po pomyślne wdrożenie. Ten Przewodnik administratora zawiera wskazówek na podstawie scenariusza wdrażania w przedsiębiorstwie w środowiskach sieciowych.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Wdrażanie programu Visual Studio 2017 w środowisku przedsiębiorstwa
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Wdrażanie programu Visual Studio 2017 w środowisku przedsiębiorstwa
 
 Visual Studio 2017 można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalnych wymogów instalacji](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub plik wsadowy, zazwyczaj należy wykonywać następujące czynności:
 
@@ -49,12 +50,26 @@ Visual Studio 2017 można wdrożyć na klienckich stacjach roboczych, tak długo
 > [!IMPORTANT]
 > Należy pamiętać, że instalacje z sieci udziału "zapamiętuje" w lokalizacji źródłowej pochodzą. Oznacza to, Napraw komputer kliencki może być konieczne powrócić do udziału sieciowego, który pierwotnie zainstalowany klient z. Wybierz lokalizację sieciową dokładnie tak, aby powoduje wyrównanie okresu istnienia, który będzie mieć klientów programu Visual Studio 2017 r z systemem w swojej organizacji.
 
-## <a name="visual-studio-tools"></a>Program Visual Studio tools
+## <a name="use-visual-studio-tools"></a>Za pomocą narzędzi Visual Studio
 
 Mamy kilka narzędzi ułatwiających [wykrywania i Zarządzanie wystąpieniami programu Visual Studio zainstalowanych](tools-for-managing-visual-studio-instances.md) na komputerach klienckich.
 
 > [!TIP]
 > Oprócz dokumentacji w podręczniku administratora, jest dobrym źródłem informacji na temat instalacji programu Visual Studio 2017 [blogu Grunwald kondycji](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+
+## <a name="specify-customer-feedback-settings"></a>Określ ustawienia opinie klientów
+
+Domyślnie instalacja Visual Studio umożliwia opinie klientów. Po włączeniu zasad grupy można skonfigurować programu Visual Studio, aby wyłączyć opinii klientów na poszczególnych komputerach. Aby to zrobić, należy ustawić zasady opartych na rejestrze na następujący klucz:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Wpis = **zgodzie**
+
+Wartość = (DWORD)
+* **0** jest wyłączony
+* **1** zgłoszenie
+
+Aby uzyskać więcej informacji o ustawieniach opinie klientów, zobacz [Program poprawy jakości obsługi klienta programu Visual Studio](../ide/visual-studio-experience-improvement-program.md) strony.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 

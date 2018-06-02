@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ca4bb0bbcfa30562955226d8304c4762031095b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cb50f0a1a16a8b6a72862a3441cf1e72697042ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690770"
 ---
-# <a name="cores-view-logical-cores"></a>Widok rdzeni — Rdzenie logiczne
+# <a name="cores-view-logical-cores"></a>Widok rdzeni — rdzenie logiczne
 Każda nazwa kanału reprezentuje jeden rdzenie logiczne, które istnieją w systemie PROFILOWANEGO. Nazewnictwo liczy w górę od 0 do całkowitej liczby rdzeni logicznych. Na przykład system cztery podstawowe będzie liczba z rdzenia logicznego 0 do 3 rdzenia logicznego.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)

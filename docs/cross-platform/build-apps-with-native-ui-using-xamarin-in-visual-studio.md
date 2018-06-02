@@ -11,12 +11,13 @@ manager: crdun
 ms.workload:
 - xamarin
 ms.openlocfilehash: 67d8b2147426a048f2af92b0525fd6c8139b4558
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477618"
 ---
-# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio
+# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 
 Większość deweloperzy, którzy wybierz do pisania aplikacji dla urządzeń przenośnych i platform Xamarin i C# za pomocą platformy Xamarin.Forms. Platformy Xamarin.Forms definiuje interfejs użytkownika, który jest mapowany na kontrolki natywne w systemie iOS, Android i platformy uniwersalnej systemu Windows (UWP). Platformy Xamarin.Forms jest opisana w artykule [Dowiedz się podstawowe informacje dotyczące tworzenia aplikacji z platformy Xamarin.Forms w programie Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
 

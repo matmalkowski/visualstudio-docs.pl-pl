@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693789"
 ---
 # <a name="xml-editor"></a>Edytor XML
 
@@ -39,7 +40,7 @@ Edytor XML jest oparta na Edytor tekstu Visual Studio i obejmuje obsługę języ
 
 - Integracja z [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widoku schematów XML.
 
-Edytor XML jest wywoływany dla rozszerzeń plików dobrze znany, takich jak .xml, .xsd XSL i Config. Jest również wywoływana wszystkie nieznane rozszerzenia, jeśli plik może zawierać kod XML. Każdy plik można otworzyć w edytorze XML, używając **Otwórz za pomocą** opcja i wybierając edytora XML z listy.
+Edytor XML jest wywoływany dla rozszerzeń plików dobrze znany, takich jak *.xml*, *XSD*, *.xsl*, i *.config*. Jest również wywoływana wszystkie nieznane rozszerzenia, jeśli plik może zawierać kod XML. Każdy plik można otworzyć w edytorze XML, używając **Otwórz za pomocą** opcja i wybierając edytora XML z listy.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

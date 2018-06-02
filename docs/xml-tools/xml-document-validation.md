@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fd55358023e0ec3b11fbb048bdfa2b240b1859
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693841"
 ---
 # <a name="xml-document-validation"></a>Sprawdzanie poprawności kodu XML dokumentu
 
@@ -22,7 +23,7 @@ Edytor XML sprawdza składni XML 1.0 i również wykonuje sprawdzanie poprawnoś
 
  Schematy użyte podczas weryfikowania znajdują się przez dopasowanie `targetNamespace` skompilowanych schematu z elementu deklaracji xmlns. Skompilowany schematy są załadowane z jednego z następujących lokalizacji, w kolejności priorytetu:
 
--   Z nazwa pliku określona w **schematy** pola w oknie właściwości dokumentu.
+-   Z nazwa pliku określona w **schematy** pole dokumentu **właściwości** okna.
 
 -   Wbudowany schemat lub definicji DTD.
 
@@ -39,11 +40,11 @@ Schematy można także znaleźć w następujących lokalizacjach dodatkowych, gd
 -   Schemat z katalogu pamięci podręcznej schematu.
 
 ## <a name="xslt-files"></a>Pliki XSLT
- Podczas edytowania pliku XSLT, plik xslt.xsd, znajdujący się w pamięci podręcznej schematu służy do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Błędy kompilatora XSLT są wyświetlane jako czerwone faliste podkreślenie.
+ Podczas edytowania pliku XSLT *xslt.xsd* plik znajdujący się w pamięci podręcznej schematu jest używany do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Błędy kompilatora XSLT są wyświetlane jako czerwone faliste podkreślenie.
 
-## <a name="xml-schema-xsd-files"></a>Pliki XML Schema (XSD)
- Edytując plik schematu XML, plik xsdschema.xsd, znajdujący się w pamięci podręcznej schematu służy do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Błędy kompilacji są także wyświetlane z czerwonym faliste podkreślenie.
+## <a name="xml-schema-xsd-files"></a>Pliki XML schema (XSD)
+ Podczas edytowania pliku schematu XML *xsdschema.xsd* plik znajdujący się w pamięci podręcznej schematu jest używany do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenie. Błędy kompilacji są także wyświetlane z czerwonym faliste podkreślenie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,18 +23,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1047d7ddd3724877aa6933f20f08df39d1e2e240
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693422"
 ---
-# <a name="troubleshooting-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
+# <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Podczas wykonywania następujących zadań, podczas opracowywania rozwiązań pakietu Office w Visual Studio, mogą wystąpić problemy:  
   
--   [Tworzenie, uaktualnianie i otwierania projektów](#creating)  
+-   [Tworzenie, uaktualniania i otwierania projektów](#creating)  
   
--   [Przy użyciu projektantów](#designers)  
+-   [Użyj projektantów](#designers)  
   
 -   [Pisanie kodu](#code)  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Debugowanie projektów](#debugging)  
   
-##  <a name="creating"></a> Tworzenie, uaktualnianie i otwierania projektów  
+##  <a name="creating"></a> Tworzenie, uaktualniania i otwierania projektów  
  Mogą wystąpić następujące błędy podczas tworzenia lub otwierania projektów pakietu Office.  
   
 ### <a name="the-project-cannot-be-created"></a>Nie można utworzyć projektu  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Jeśli próbujesz utworzyć projektu na poziomie dokumentu, jest to możliwe, że innego dokumentu o takiej samej nazwie jak dokument w nowym projekcie jest już otwarty w programie Excel lub Word. Upewnij się, że wszystkie inne wystąpienia programu Excel lub Word są zamknięte.  
   
-### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Właściwości formantów zostały utracone podczas tworzenia nowego projektu na podstawie dokumentu z istniejącego projektu  
+### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Właściwości formantów zostaną utracone podczas tworzenia nowego projektu na podstawie dokumentu z istniejącego projektu  
  W przypadku utworzenia nowego projektu pakietu Office na podstawie dokumentu z istniejącego projektu, właściwości wszystkie formanty, które znajdują się w dokumencie nie są kopiowane do nowego projektu. Można ręcznie zresetować właściwości dla wszystkich istniejących formantów. Alternatywnie można zachować właściwości formantu, tworząc kopię istniejącego projektu zamiast tworzenia nowego projektu lub ładowania istniejący projekt do nowego rozwiązania (w Projektancie) i kopiowanie i wklejanie formantów z istniejącego dokument do nowego dokumentu.  
   
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Błędy podczas tworzenia projektu skoroszyt programu Excel oparte na podstawie istniejącego skoroszytu  
@@ -77,19 +78,19 @@ ms.lasthandoff: 04/16/2018
   
  "Nie można utworzyć projektu, ponieważ aplikację skojarzoną z tym typem projektu nie jest zainstalowany na tym komputerze. Zainstalowanie aplikacji Microsoft Office, który jest skojarzony z tym typem projektu."  
   
- Aby rozwiązać ten problem, Edytuj plik vbproj lub .csproj. Dla projektu programu Word, Zastąp HostPackage = "{763FDC83-64E5-4651-AC9B-28C4FEB985A1}" z HostPackage = "{6CE98B71-D55A-4305-87A8-0D6E368D9600}". W projekcie programu Excel, Zastąp HostPackage = "{B284B16A-C42C-4438-BDCD-B72F4AC43CFB}" z HostPackage = "{825100CF-0BA7-47EA-A084-DCF3308DAF74}". W projekcie programu Outlook, Zastąp HostPackage = "{D2B20FF5-A6E5-47E1-90E8-463C6860CB05}" z HostPackage = "{20A848B8-E01F-4801-962E-25DB0FF57389}".  
+ Aby rozwiązać ten problem, Edytuj *vbproj* lub *.csproj* pliku. Dla projektu programu Word, Zastąp HostPackage = "{763FDC83-64E5-4651-AC9B-28C4FEB985A1}" z HostPackage = "{6CE98B71-D55A-4305-87A8-0D6E368D9600}". W projekcie programu Excel, Zastąp HostPackage = "{B284B16A-C42C-4438-BDCD-B72F4AC43CFB}" z HostPackage = "{825100CF-0BA7-47EA-A084-DCF3308DAF74}". W projekcie programu Outlook, Zastąp HostPackage = "{D2B20FF5-A6E5-47E1-90E8-463C6860CB05}" z HostPackage = "{20A848B8-E01F-4801-962E-25DB0FF57389}".  
   
  Alternatywnie upewnij się, że zmigrowane projekty tylko są otwarte na komputerach programowanie z już zainstalowany program Microsoft Office 2010.  
   
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Błędy w uaktualnionych projektów na poziomie dokumentu pakietu Office 2003 zawierające formantów formularzy systemu Windows  
- Jeśli uaktualnić projekt poziomie dokumentu pakietu Microsoft Office 2003, a dokument zawiera formanty formularzy systemu Windows, uaktualnionym projekcie może mieć kompilacji lub błędy wykonania. Aby uniknąć tego problemu, zainstaluj program Visual Studio 2005 Tools dla pakietu Office Runtime drugi w wersji na komputerze dewelopera przed rozpoczęciem uaktualniania projektu. Ta wersja środowiska wykonawczego jest dostępna jako pakiet redystrybucyjny z Microsoft Download Center na [Microsoft Visual Studio 2005 Tools for Office Runtime Edition drugi (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).  
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Błędy w uaktualnionych projektów poziomie dokumentu pakietu Office 2003 zawierające formanty formularzy systemu Windows  
+ Jeśli uaktualnić projekt poziomie dokumentu pakietu Microsoft Office 2003, a dokument zawiera formanty formularzy systemu Windows, uaktualnionym projekcie mogą zawierać błędy kompilacji lub środowisko uruchomieniowe. Aby uniknąć tego problemu, zainstaluj program Visual Studio 2005 Tools dla pakietu Office Runtime drugi w wersji na komputerze dewelopera przed rozpoczęciem uaktualniania projektu. Ta wersja środowiska wykonawczego jest dostępna jako pakiet redystrybucyjny z Microsoft Download Center na [Microsoft Visual Studio 2005 Tools for Office Runtime Edition drugi (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).  
   
  Po zakończeniu uaktualniania projektu, można odinstalować programu Visual Studio 2005 Tools for Office Runtime drugi w wersji z na komputerze deweloperskim, jeśli nie jest on używany przez innych rozwiązań pakietu Office.  
   
-##  <a name="designers"></a> Przy użyciu projektantów  
+##  <a name="designers"></a> Użyj projektantów  
  Mogą wystąpić następujące błędy podczas pracy z dokumentu, skoroszytu lub projektanta arkusza w projektach na poziomie dokumentu.  
   
-### <a name="designer-failed-to-load-correctly"></a>Projektant nie można poprawnie załadować  
+### <a name="designer-failed-to-load-correctly"></a>Nie można poprawnie załadować projektanta  
  Program Visual Studio nie może otworzyć projektanta w następujących przypadkach:  
   
 -   Excel lub Word jest już otwarty i wyświetla modalne okno dialogowe. Aby otworzyć projektanta, sprawdź, czy programu Excel lub Word ma modalnego okna dialogowego otwierania i zamykania otwarte modalne okna dialogowe. Jeśli nie nie modalne okna dialogowe otwarte, może być innych działań wymagany dla programu Excel lub Word odpowiada.  
@@ -101,11 +102,11 @@ ms.lasthandoff: 04/16/2018
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Formanty są wyświetlane jako czarne prostokąty w dokumencie lub arkusz  
  Jeśli grupa formantów w dokumencie lub arkusz programu Visual Studio nie rozpoznaje już kontrolki. Nie można uzyskać dostępu do formantów zgrupowane w **właściwości** i będą wyświetlane jako czarne prostokąty w dokumencie lub arkusz. Formanty musi rozgrupować w celu przywrócenia ich funkcjonalności.  
   
-### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Nie są widoczne w programie Visual Studio są formanty szablon programu Word  
+### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Formanty na szablon programu Word nie są widoczne w programie Visual Studio  
  Jeśli otworzyć szablon programu Word w projektancie programu Visual Studio, formantów w szablonie, które nie są zgodne z tekstu może nie być widoczne. Jest to spowodowane szablony programu Word w Visual Studio otworzy w **normalny** widoku. Aby wyświetlić formantów, kliknij **widoku** menu wskaż **Microsoft Office Word widoku** , a następnie kliknij przycisk **układ wydruku**.  
   
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Polecenie grafikę klip INSERT nie działa w projektancie programu Visual Studio  
- Gdy programu Excel lub Word jest otwarty w projektancie programu Visual Studio, klikając pozycję **grafikę klip** znajdującego się na **ilustracje** nie można otworzyć kartę na wstążce **grafikę klip** okienka zadań. Aby dodać klip grafik, musi otworzyć kopię skoroszytu lub dokument, który znajduje się w folderze głównym projektu (nie kopii, która znajduje się w folderze \bin) poza Visual Studio, należy dodać ten element klip, a następnie zapisz skoroszytu lub dokumentu.  
+ Gdy programu Excel lub Word jest otwarty w projektancie programu Visual Studio, klikając pozycję **grafikę klip** znajdującego się na **ilustracje** nie można otworzyć kartę na wstążce **grafikę klip** okienka zadań. Aby dodać klip grafik, należy otworzyć kopię skoroszytu lub dokument, który znajduje się w folderze głównym projektu (nie kopię, który znajduje się w *\bin* folder) poza Visual Studio, należy dodać ten element klip, a następnie zapisz skoroszyt lub dokumentu.  
   
 ##  <a name="code"></a> Pisanie kodu  
  Mogą wystąpić następujące błędy podczas pisania kodu w projektach pakietu Office.  
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/16/2018
   
  Aby uzyskać więcej informacji na temat interfejsów zdarzeń w PIAs pakietu Office, zobacz [Przegląd klasy i interfejsy w podstawowe zestawy międzyoperacyjne pakietu Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Nie można odwołać Office PIA klas w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Nie można odwołania Office PIA klas w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  W projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], domyślnie nie zostanie skompilowany kod, który odwołuje się do klasy, która jest zdefiniowana w PIA pakietu Office. Klasy w PIAs zastosować konwencję nazewnictwa *objectname*klas, takich jak <xref:Microsoft.Office.Interop.Word.DocumentClass> i <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Na przykład następujący kod z projektów dodatku VSTO programu Word nie zostanie skompilowany.  
   
 ```vb  
@@ -196,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Ten błąd wskazuje, że został wcześniej publikowane i zainstalowane na komputerze deweloperskim rozwiązań pakietu Office. Aby zapobiec wyświetlaniu komunikatu, należy odinstalować rozwiązanie z listy zainstalowanych programów na komputerze przed debugowania rozwiązania. Alternatywnie można utworzyć innego konta użytkownika na komputerze deweloperskim, aby przetestować instalację opublikowanych rozwiązania.  
   
 ### <a name="document-level-projects-created-at-unc-network-locations-do-not-run-from-visual-studio"></a>Projektów na poziomie dokumentu utworzone w lokalizacjach sieciowych UNC nie są uruchamiane w programie Visual Studio  
- Jeśli tworzysz projekt poziomie dokumentu dla programu Excel lub Word w lokalizacji sieciowej UNC, należy dodać do listy zaufanych lokalizacji w programie Excel lub Word lokalizację dokumentu. W przeciwnym razie dostosowań nie zostanie załadowany, gdy próbuje uruchomić ani debugować projektu programu Visual Studio. Aby uzyskać więcej informacji o zaufanych lokalizacji, zobacz [udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
+ Jeśli tworzysz projekt poziomie dokumentu dla programu Excel lub Word w lokalizacji sieciowej UNC, należy dodać do listy zaufanych lokalizacji w programie Excel lub Word lokalizację dokumentu. W przeciwnym razie dostosowań nie zostanie załadowany, gdy próbuje uruchomić ani debugować projektu programu Visual Studio. Aby uzyskać więcej informacji o zaufanych lokalizacji, zobacz [przyznać zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
   
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Wątki nie są poprawnie zatrzymane po debugowaniu  
  Projekty pakietu Office w Visual Studio wykonaj wątku nazewnictwa Konwencji, który umożliwia debugera zamknąć program poprawnie. Jeśli utworzysz wątków w rozwiązaniu powinien nazw każdy wątek z prefiksem VSTA_, aby upewnić się, że te wątki są obsługiwane poprawnie po zatrzymaniu debugowania. Na przykład można ustawić `Name` właściwości wątku, który oczekuje na zdarzenia sieci **VSTA_NetworkListener**.  
@@ -206,16 +207,16 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  "Dostosowania nie można załadować, ponieważ nie można utworzyć domeny aplikacji."  
   
- Visual Studio będzie korzystać Fusion, moduł ładujący zestawu .NET Framework do pamięci podręcznej zestawów przed załadowaniem rozwiązań pakietu Office. Upewnij się, że Visual Studio można zapisać w pamięci podręcznej Fusion i spróbuj ponownie. Aby uzyskać więcej informacji, zobacz [Kopiowanie zestawów w tle](/dotnet/framework/app-domains/shadow-copy-assemblies).  
+ Visual Studio będzie korzystać Fusion, moduł ładujący zestawu .NET Framework do pamięci podręcznej zestawów przed załadowaniem rozwiązań pakietu Office. Upewnij się, że Visual Studio można zapisać w pamięci podręcznej Fusion i spróbuj ponownie. Aby uzyskać więcej informacji, zobacz [zestawów kopii w tle](/dotnet/framework/app-domains/shadow-copy-assemblies).  
   
 ### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>Błąd podczas zatrzymywania debugera w projektach na poziomie dokumentu po użyciu Edytuj i Kontynuuj  
- Jeśli używasz Edytuj i Kontynuuj, aby wprowadzić zmiany do kodu w projektach na poziomie dokumentu dla programu Excel lub Word, gdy projekt jest w trybie przerwania, może wyświetlone okno dialogowe z następujący komunikat o błędzie, jeśli następnie zatrzymać debuggera.  
+ Jeśli używasz **Edytuj** i **Kontynuuj** wprowadzania zmian kodu w projektach na poziomie dokumentu dla programu Excel lub Word, gdy projekt jest w trybie przerwania, może być wyświetlone okno dialogowe z następujący komunikat o błędzie, jeśli użytkownik następnie zatrzymać debuggera.  
   
  "Przerywa proces w bieżącym stanie może spowodować niepożądane wyniki utraty danych i niestabilność systemu."  
   
  Określa, czy kliknij **tak** lub **nr** w oknie dialogowym programu Visual Studio kończy proces programu Excel lub Word i zatrzymuje się debuger. Aby zatrzymać debugowanie projektu bez wyświetlania tego okna dialogowego, Zakończ działanie programu Excel lub Word bezpośrednio zamiast zatrzymywanie w debugerze programu Visual Studio.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)   
  [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)   
  [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)  

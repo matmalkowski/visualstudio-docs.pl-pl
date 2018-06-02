@@ -10,10 +10,11 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477635"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Korzyści Opsgility w ramach subskrypcji programu Visual Studio
 

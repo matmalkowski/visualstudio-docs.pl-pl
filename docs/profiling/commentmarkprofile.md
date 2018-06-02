@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f18e8ab05cf6331049e71c552d7b72a6b9235e0
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691046"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` Funkcja wstawia znacznik liczbowych i ciągu tekstowego w pliku Vsp. Dla tego znaku i komentarza do wstawienia, profilowanie dla wątku, który zawiera `CommentMarkProfile` funkcji musi mieć wartość ON.  
+`CommentMarkProfile` Funkcja wstawia znacznik liczbowych i ciągu tekstowego w. *Vsp* pliku. Dla tego znaku i komentarza do wstawienia, profilowanie dla wątku, który zawiera `CommentMarkProfile` funkcji musi mieć wartość ON.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Uwagi  
  Stan profilowania dla wątku, który zawiera funkcję profilu znak musi być na, jeśli znaczniki i komentarze wstawione przy użyciu polecenia VSInstr znak lub funkcje (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
   
- Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jeden wątek może służyć do oznaczania początek lub koniec segmentu danych w którymkolwiek wątku w pliku Vsp.  
+ Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jeden wątek można oznaczyć początek lub koniec segmentu danych w którymkolwiek wątku w. *vsp* pliku.  
   
 > [!IMPORTANT]
 >  CommentMarkProfile metody można użyć tylko z Instrumentacji.  

@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690669"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Porady: Ustawianie debugowania i wydania konfiguracji w programie Visual Studio
 Projektów programu Visual Studio mają oddzielne wersji i konfiguracje programu do debugowania. Jako nazwy oznacza kompilacji wersji do debugowania do debugowania i wersji ostatecznej wersji dystrybucji.  
@@ -60,7 +61,7 @@ Możesz zmienić konfigurację kompilacji z **kompilacji** menu, paska narzędzi
   
      Ten pasek narzędzi nie jest dostępna w wersji Express. Można użyć **kompilacji F6 rozwiązania** i **rozpocząć debugowanie F5** elementów menu, aby wybrać konfigurację.
 
-## <a name="BKMK_symbols_release"></a>Generowanie plików symboli (.pbd) dla kompilacji
+## <a name="BKMK_symbols_release"></a>Generuj pliki symboli (.pdb) do kompilacji
 
 Dla większości typów projektów .pdb, pliki są generowane domyślnie dla obu debugowania i wydania z kompilacji, ale domyślne ustawienia są różne w zależności od Twojego projektu określonego typu i wersji programu Visual Studio. Można skonfigurować czy kompilator generuje .pdb, pliki i jakiego rodzaju informacje debugowania do uwzględnienia.
 

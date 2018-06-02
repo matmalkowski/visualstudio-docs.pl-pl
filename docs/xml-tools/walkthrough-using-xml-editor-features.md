@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Korzystanie z funkcji edytora XML'
+title: 'Przewodnik: korzystanie z funkcji edytora XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,18 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693828"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Wskazówki: Korzystanie z funkcji edytora XML
+# <a name="walkthrough-use-xml-editor-features"></a>Wskazówki: Użyj funkcji edytora XML
 
 Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. Instruktaż używa niektóre funkcje edytora XML wchodzące przydatne do tworzenia XML.
 
 > [!NOTE]
-> Przed rozpoczęciem przewodnika, Zapisz plik hireDate.xsd (przedstawionym poniżej w tym temacie) na komputerze lokalnym.
+> Przed rozpoczęciem przewodnika, Zapisz *hireDate.xsd* pliku (przedstawionym poniżej w tym temacie) na komputerze lokalnym.
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Aby utworzyć nowy plik XML i skojarzyć go z schematu XML
 
@@ -39,7 +40,7 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 
      **Otwórz schematu XSD** zostanie wyświetlone okno dialogowe.
 
-5.  Wybierz plik hireDate.xsd, a następnie kliknij przycisk **Otwórz**.
+5.  Wybierz *hireDate.xsd* plik i kliknij przycisk **Otwórz**.
 
 6.  Kliknij przycisk **OK**.
 
@@ -59,7 +60,7 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 
     -   **Pracownik** można dodać elementu głównego.
 
-2.  Wybierz **<!--** Dodaj węzeł komentarz, a następnie naciśnij klawisz ENTER.
+2.  Wybierz **<!--** , aby dodać węzeł komentarzy i naciśnij klawisz **Enter**.
 
      Edytor wstawia tagu końcowego komentarz i umieszcza kursor między tagiem początkowym i końcowym w komentarz.
 
@@ -71,7 +72,7 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 
 5.  Typ `>` zamknięcia tagu.
 
-6.  Edytor dodaje do tagu końcowego. Tag końcowy zostanie dodany z faliste podkreślenie wskazujące błąd sprawdzania poprawności. Etykietki narzędzia wyświetlany jest komunikat: element "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'.
+6.  Edytor dodaje do tagu końcowego. Tag końcowy zostanie dodany z faliste podkreślenie wskazujące błąd sprawdzania poprawności. **ToolTip** wyświetli komunikat: **elementu "pracownik" ma niekompletną zawartość. Oczekiwano 'ID'**.
 
 7.  Typ `<` i wybierz **identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
 
@@ -79,17 +80,17 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 
 8.  Typ **abc**.
 
-     **Abc** tekst ma faliste podkreślenie. Etykietki narzędzia wyświetlany jest komunikat: element 'ID' ma nieprawidłową wartość przy uwzględnieniu jego typu danych.
+     **Abc** tekst ma faliste podkreślenie. **ToolTip** wyświetli komunikat: **element 'ID' ma nieprawidłową wartość przy uwzględnieniu jego typu danych**.
 
-9. Kliknij prawym przyciskiem myszy elementu ID, a następnie wybierz **przejdź do definicji**.
+9. Kliknij prawym przyciskiem myszy na elementu ID, a następnie wybierz **przejdź do definicji**.
 
-     Edytor otwiera plik hireDate.xsd w nowym oknie dokumentu i umieszcza kursor w definicji elementu Identyfikatora schematu.
+     Otwiera edytora *hireDate.xsd* plik w nowym oknie dokumentu i umieszcza kursor w definicji elementu Identyfikatora schematu.
 
 10. Wróć do pliku XML i Zastąp **abc** tekst z **123**.
 
-     Faliste podkreślenie i etykietek narzędzi są usuwane w wartości elementu Identyfikatora. Etykietka narzędzia dla tagu końcowego pracownika teraz wyświetli komunikat: element "pracownik" ma niekompletną zawartość. Oczekiwano "zatrudnienia data".
+     Faliste podkreślenie i **ToolTip** zostały wyczyszczone w wartości elementu Identyfikatora. **ToolTip** dla elementu end pracownika tag teraz wyświetlany jest komunikat: **elementu "pracownik" ma niekompletną zawartość. Oczekiwano "Data zatrudnienia"**.
 
-11. Umieść kursor po tagu końcowego identyfikator, wpisz w `<`, wybierz datę zatrudnienia z listy elementów członkowskich, a następnie wpisz w `>`.
+11. Umieść kursor po tagu końcowego identyfikator, wpisz w `<`, wybierz pozycję **Data zatrudnienia** z listy elementów członkowskich, a następnie wpisz w `>`.
 
      Edytor dodaje XML element `<hire-date></hire-date>`i umieszcza kursor po Data zatrudnienia tag początkowy.
 
@@ -105,11 +106,11 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 
 1.  Z **pliku** menu, wybierz opcję **Zapisz jako**.
 
-     **Zapisz plik jako** zostanie wyświetlone okno dialogowe. Domyślna nazwa pliku jest "XMLFile1".
+     **Zapisz plik jako** zostanie wyświetlone okno dialogowe. Domyślna nazwa pliku jest *"XMLFile1"*.
 
 2.  Wprowadź nazwę pliku i lokalizację dokument XML, a następnie kliknij przycisk **zapisać**.
 
-## <a name="hiredatexsd-file"></a>hireDate.xsd pliku
+## <a name="hiredatexsd-file"></a>Plik hireDate.xsd
  Następujący plik schematu jest używany przez przewodnika.
 
 ```xml
@@ -128,6 +129,6 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)

@@ -1,15 +1,16 @@
 ---
 layout: HubPage
-hide_bc: ''
+hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 86d19020a46c0aeb4d1d5a5d2c72e6881a04ef0c
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690601"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -60,6 +61,25 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
+                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Team Foundation Server</h3>
+                                                    <p>Zainstalować, uaktualnić i zarządzanie wdrożeniami lokalnymi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://code.visualstudio.com/docs" title="Visual Studio Code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -79,7 +99,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
+                                <a href="/visualstudio/mac" title="Visual Studio dla komputerów Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -98,7 +118,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio App Center">
+                                <a href="https://docs.microsoft.com/appcenter" title="Centrum aplikacji programu Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -117,7 +137,7 @@ ms.lasthandoff: 03/28/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio App Center">
+                                <a href="https://aka.ms/vs-subscriptions" title="Centrum aplikacji programu Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -135,7 +155,7 @@ ms.lasthandoff: 03/28/2018
                                     </div>
                                 </a>
                             </li>
-                        </ul>                       
+                        </ul>
                     </li>
                 </ul>
             </li>

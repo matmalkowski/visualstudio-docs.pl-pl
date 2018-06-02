@@ -1,5 +1,5 @@
 ---
-title: Eksploratora schematu XML
+title: Eksplorator schematu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23492d45a0cd88566ab36dbdb803f68dd46037
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693945"
 ---
-# <a name="xml-schema-explorer"></a>Eksploratora schematu XML
+# <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
-Eksploratora schematu XML jest zintegrowany z programu Microsoft Visual Studio i edytora XML, aby umożliwić pracę z schematu XML definition language (XSD) schematów. Po otwarciu pliku schematu XML **zestawu schematu** węzeł jest dostępny w Eksploratorze schematu XML. Wszystkich schematów dołączone, importowany lub ponownie zdefiniowany dla pliku docelowego, a także wszystkie pliki, które są przywoływane przez `include` lub `import` instrukcji, również dostępna w Eksploratorze schematu XML.
+**Eksploratora schematu XML** jest zintegrowany z programu Microsoft Visual Studio i edytora XML, aby umożliwić pracę z schematu XML definition language (XSD) schematów. Po otwarciu pliku schematu XML **zestawu schematu** węzeł jest dostępny w **Eksploratora schematu XML**. Wszystkich schematów dołączone, importowany lub ponownie zdefiniowany dla pliku docelowego, a także wszystkie pliki, które są przywoływane przez `include` lub `import` instrukcji, jest również dostępna w **Eksploratora schematu XML**.
 
- Eksploratora schematu XML można wykonać następujące czynności:
+ **Eksploratora schematu XML** umożliwia wykonywanie następujących czynności:
 
 -   Pobierz szybki przegląd zestawie schematów.
 
@@ -28,7 +29,7 @@ Eksploratora schematu XML jest zintegrowany z programu Microsoft Visual Studio i
 
 -   Wykonaj — słowo kluczowe i umożliwia wyszukiwanie określonego schematu. Aby uzyskać więcej informacji, zobacz [wyszukiwania zestawu schematu](../xml-tools/searching-the-schema-set.md).
 
--   Dodaj wyniki wyszukiwania do widoku wykresu lub widok Modle zawartości
+-   Dodaj wyniki wyszukiwania do widoku wykresu lub widok modelu zawartości
 
 -   Sortuj według kolejności dokumentów, typu lub nazwa drzewa. Aby uzyskać więcej informacji, zobacz [sortowanie, filtrowanie i grupowanie](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
@@ -36,18 +37,18 @@ Eksploratora schematu XML jest zintegrowany z programu Microsoft Visual Studio i
 
 -   Generowanie przykładowy kod XML globalnego elementów.
 
-Eksploratora schematu XML zawiera widok hierarchiczna schematu ustawiana za pośrednictwem widoku drzewa. Eksploratora schematu XML zawiera również wyszukiwanie, filtrowanie, nawigacji i sortowania. Aby uzyskać dostęp do Eksploratora schematu XML, wykonaj jedną z następujących czynności:
+**Eksploratora schematu XML** hierarchiczna Wyświetla schematu ustawiana za pośrednictwem widoku drzewa. **Eksploratora schematu XML** udostępnia również wyszukiwanie, filtrowanie, nawigacji i sortowania. Aby uzyskać dostęp do **Eksploratora schematu XML**, wykonaj jedną z następujących czynności:
 
 -   Jeśli pracujesz w [widoku startowego](../xml-tools/start-view.md), kliknij przycisk **Eksploratora schematu XML** łącza.
 
--   Jeśli pracujesz w [widok wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzłów w obszarze roboczym, użyj menu kontekstowego, aby wybrać Eksploratora schematu XML.
+-   Jeśli pracujesz w [widok wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzłów w obszarze roboczym, użyj menu kontekstowego, aby wybrać **Eksploratora schematu XML**.
 
--   Możesz też wybrać Explorerfrom schematu XML **widoku** menu.
+-   Możesz też wybrać **Eksploratora schematu XML** z **widoku** menu.
 
--   Można uzyskać dostępu do Explorerfrom schematu XML pliku .vb, który ma literału XML Visual Basic skojarzony z pliku XSD. Aby wyświetlić schemat w Eksploratora schematu XML, kliknij prawym przyciskiem myszy węzeł XML w pliku XML literału lub importu przestrzeni nazw XML i wybierz **Pokaż w Eksploratorze schematu** polecenia. Aby uzyskać więcej informacji, zobacz [integracji literałów XML z Eksploratora schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+-   Dostęp można uzyskać **Eksploratora schematu XML** z *.vb* pliku, który został skojarzony z literałem XML w Visual Basic *XSD* pliku. Aby wyświetlić schemat zestawu w **Eksploratora schematu XML**, kliknij prawym przyciskiem myszy węzeł XML w literał XML lub importu przestrzeni nazw XML i wybierz **Pokaż w Eksploratorze schematu** polecenia. Aby uzyskać więcej informacji, zobacz [literały integracji XML z Eksploratora schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Widok drzewa
- Eksploratora schematu XML Wyświetla informacje o zestawie wstępnie skompilowanym schematu w strukturze drzewa. Struktura drzewa jest zorganizowana w następujący sposób:
+ **Eksploratora schematu XML** schematu Wyświetla wstępnie skompilowany ustawić informacji w strukturze drzewa. Struktura drzewa jest zorganizowana w następujący sposób:
 
 -   Na najwyższym poziomie schematu ustawiono węzła.
 
@@ -72,13 +73,13 @@ Poniżej przedstawiono przykład struktury drzewa:
 
 -   Aktywowanie SchemaSet lub węzła przestrzeni nazw nie działa.
 
-## <a name="draging-and-dropping-nodes"></a>Draging i upuszczanie węzłów
+## <a name="drag-and-drop-nodes"></a>Przeciągnij i upuść węzłów
  Możesz przeciągać i upuszczać globalne węzłów, węzły plików i węzłów przestrzeni nazw na widok projektanta XSD. Jeśli bieżący widok jest [widoku startowego](../xml-tools/start-view.md), przeciąganie węzła do widoku spowoduje otwarcie [widok wykresu](../xml-tools/graph-view.md). Jeśli bieżący widok jest [widoku modelu zawartości](../xml-tools/content-model-view.md) lub widok wykresu widoku nie zmieni się po upuszczeniu węzła na niego.
 
  Upuszczanie plików w widoku doda wszystkie węzły globalne w pliku [obszaru roboczego projektanta XSD](../xml-tools/xml-schema-designer-workspace.md). Usunięcie przestrzeni nazw w widoku doda wszystkie węzły globalne w przestrzeni nazw do obszaru roboczego. Obszar roboczy jest współużytkowana przez wszystkie widoki.
 
  Nie można przeciągania i upuszczania węzły lokalne lub importowania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Porady: Dodaj węzły do obszaru roboczego z Eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

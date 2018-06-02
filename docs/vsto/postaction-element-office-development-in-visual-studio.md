@@ -1,5 +1,5 @@
 ---
-title: '&lt;postAction&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;postAction&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2934b0ad761dcd512b21e2424515c06fb896dda5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dcab31eea406da695bdedd21b21c0d86cacea220
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693120"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; elementu (Office Development w Visual Studio)
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; elementu (Office development w Visual Studio)
   `postAction` Elementu `vstav3` przestrzeń nazw zawiera `entrypoint` elementów i wszystkie `postActionData` elementy, które są powiązane z akcjami po wdrożeniu, które uruchamiane po zainstalowaniu rozwiązań pakietu Office.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <postAction>  
   <entryPoint>  
   </entryPoint>  
@@ -45,10 +46,10 @@ ms.lasthandoff: 04/16/2018
  `postAction` zawiera następujące elementy.  
   
 ### <a name="entrypoint"></a>Punkt wejścia  
- Opcjonalny. Rola `entryPoint` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Opcjonalna. Rola `entryPoint` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postactiondata —  
- Opcjonalny. Rola `postActionData` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ Opcjonalna. Rola `postActionData` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Przykład akcji po wdrożeniu  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml
 <vstav3:postAction>  
   <vstav3:entryPoint   
     class="PostDeploymentAction.PostDeploymentActionSample">  
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 </vstav3:postAction>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

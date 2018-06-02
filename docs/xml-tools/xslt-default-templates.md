@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9356724d9915bf3e19d8a892fb1a4b12c4fd16
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b50a7457ddbae24f2a00e4c631371cb2aeb1169
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693958"
 ---
 # <a name="xslt-default-templates"></a>Szablony domyślne XSLT
 
@@ -22,6 +23,6 @@ Domyślny szablon jest używany podczas przetwarzania, gdy istnieje żadna regu�
 
 Debuger XSLT są obecnie wyświetlane kod XSLT domyślnych szablonów. Podczas przechodzenia do kolejnych transformację XSLT i jeśli użyty zostanie szablon domyślny, debuger wyświetla szablon domyślny w oknie. Dzięki temu można wykonywać krokowo kodu domyślnego szablonu i ustaw punkty przerwania w instrukcji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

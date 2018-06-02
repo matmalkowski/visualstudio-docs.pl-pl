@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693890"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 
@@ -69,7 +70,7 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje oraz platformy zakodowa
 |Citrix/usługi terminalowe|Nie zaleca się rejestrowanie czynności serwera terminali. Rejestrator nie obsługuje uruchamianie wielu wystąpień w tym samym czasie.|
 |PowerBuilder|Obsługiwane częściowo.<br /><br /> Obsługa zakresu ułatwień dostępu jest włączona dla formantów PowerBuilder.|
 
- Aby uzyskać informacje o sposobie tworzenia rozszerzenia obsługi innych platform, zobacz [włączyć kodowanego kontrolek interfejsu użytkownika testowania z Your](../test/enable-coded-ui-testing-of-your-controls.md) i [rozszerzenie kodowanych testów interfejsu użytkownika i nagrywania akcji do obsługi programu Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+ Aby uzyskać informacje o sposobie tworzenia rozszerzenia obsługi innych platform, zobacz [włączyć kodowanego kontrolek interfejsu użytkownika testowania z Your](../test/enable-coded-ui-testing-of-your-controls.md) i [rozszerzenie kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>Zobacz także
 

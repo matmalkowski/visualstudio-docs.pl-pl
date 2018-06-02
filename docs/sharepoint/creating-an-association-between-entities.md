@@ -24,29 +24,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 293441e93c38a65ca343b021b2bf19c5a56ac7c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692174"
 ---
 # <a name="creating-an-association-between-entities"></a>Tworzenie skojarzenia między jednostkami
   Można zdefiniować relacji między obiektami modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metod, zapewniających konsumentów modelu z informacji na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, listy lub niestandardowych aplikacji, aby wyświetlić relacji danych w interfejsie użytkownika (UI).  
   
-## <a name="creating-an-association"></a>Tworzenie skojarzenia  
+## <a name="create-an-association"></a>Utwórz skojarzenie
  Utwórz skojarzenie, wybierając **skojarzenia** sterowania w programie Visual Studio **przybornika**, wybranie pierwszego jednostki (nazywane jednostki źródłowej), a następnie wybierając drugi jednostki (o nazwie jednostki docelowej). Można zdefiniować szczegóły skojarzenia w **Edytor skojarzenia**. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md).  
   
-## <a name="association-methods"></a>Metody skojarzenia  
+## <a name="association-methods"></a>Metody skojarzenia
  Aplikacje, takie jak składników web Part danych biznesowych programu SharePoint używać skojarzeń przez wywołanie metody w klasie usługi jednostki. Można dodać metody do klasy usługi jednostki, wybierając je w **Edytor skojarzenia**.  
   
  Domyślnie **Edytor skojarzenia** dodaje metodę skojarzenia nawigacji dla jednostek źródłowych i docelowych. Metoda nawigacyjnym stowarzyszenie w jednostce źródłowej umożliwia konsumentów pobrać listę jednostki docelowej. Metoda nawigacji skojarzenia w obiekcie docelowym umożliwia konsumentów do pobierania jednostki źródłowej, które odnoszą się do jednostki docelowej.  
   
  Kod należy dodać do każdej z tych metod, aby uzyskać odpowiednie informacje. Można także dodać inne typy metod w celu obsługi bardziej zaawansowanych scenariuszy. Aby uzyskać więcej informacji na temat każdego z tych metod, zobacz [obsługiwane operacje](http://go.microsoft.com/fwlink/?LinkId=169286).  
   
-## <a name="types-of-associations"></a>Typy skojarzenia  
+## <a name="types-of-associations"></a>Typy skojarzenia
  Można tworzyć dwa typy skojarzeń w Projektancie BDC: obcego skojarzenia opartego na kluczach i skojarzenia bez kluczy obcych.  
   
-### <a name="foreign-key-based-association"></a>Skojarzenie na podstawie klucza obcego  
+### <a name="foreign-key-based-association"></a>Skojarzenie na podstawie klucza obcego
  Można utworzyć obcego skojarzenia opartego na kluczach przez dotyczące identyfikatora w jednostce źródłowej na typ deskryptory zdefiniowany w obiekcie docelowym. Ta relacja umożliwia modelu zapewniają rozszerzoną interfejsu użytkownika dla użytkowników. Na przykład formularz w programie Outlook, który umożliwia użytkownikowi utworzenie zamówienia sprzedaży, które można wyświetlić klienci na liście rozwijanej; lub listę zleceń sprzedaży w programie SharePoint, który umożliwia otwarcie strony profilu dla klienta.  
   
  Aby utworzyć skojarzenie na podstawie klucza obcego, dotyczą identyfikatorów i wpisz deskryptory, które mają taką samą nazwę i typ. Na przykład można utworzyć obcego opartego na kluczach skojarzenie między `Contact` jednostki i `SalesOrder` jednostki. `SalesOrder` Jednostki zwraca `ContactID` deskryptor typu jako część parametru zwrotnego metod wyszukiwania lub określonej metody wyszukiwania. Deskryptory obu typów są wyświetlane w **Edytor skojarzenia**. Do utworzenia obcego opartego na kluczach relacji między `Contact` jednostki i `SalesOrder` jednostki, wybierz `ContactID` identyfikator obok każdego z tych pól.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]  
   
-### <a name="foreign-keyless-association"></a>Skojarzenie bez kluczy obcych  
+### <a name="foreign-keyless-association"></a>Skojarzenie bez kluczy obcych
  Można utworzyć skojarzenie bez mapowania identyfikatorów deskryptory typ pola. Utwórz skojarzenie tego rodzaju, gdy jednostki źródłowej nie ma bezpośredniej relacji z obiektem docelowym. Na przykład `SalesOrderDetail` tabela nie ma klucza obcego, który jest mapowany na klucz podstawowy w `Contact` tabeli.  
   
  Jeśli chcesz wyświetlić informacje w `SalesOrderDetail` tabeli, która odnosi się do `Contact`, można utworzyć skojarzenie bez kluczy obcych między `Contact` jednostki i `SalesOrderDetail` jednostki.  
@@ -78,8 +79,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Porady: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md)  
   
-  
+ 

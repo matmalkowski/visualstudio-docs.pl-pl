@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Profilera XSLT'
+title: 'Przewodnik: profiler XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693802"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Wskazówki: Profilera XSLT
+# <a name="walkthrough-xslt-profiler"></a>Przewodnik: profiler XSLT
 
 Profilera XSLT tworzy szczegółowe raporty wydajności XSLT, które pomagają miary, oceny i docelowa problemów związanych z wydajnością w kodzie XSLT. Profilera XSLT zawiera wskazówki przydatne dla optymalizacji arkusza stylów XSL i XSLT. Dla aplikacji XSLT tego żądanie maksymalnej wydajności to narzędzie może być istotne.
 
@@ -88,7 +89,7 @@ Procedury przedstawione w następujących wskazówki wymagają programu Visual S
 
 5.  Można również posortować dane, kliknij nazwy kolumn.
 
-### <a name="select-calltree-view"></a>Wybierz widok widokach drzewa wywołań
+### <a name="select-call-tree-view"></a>Wybierz widok drzewa wywołań
 
 1.  Wybierz **widok drzewa wywołań** w **bieżący widok** listy rozwijanej. Ten widok jest widok drzewa wykonania programu.
 
@@ -108,6 +109,6 @@ Procedury przedstawione w następujących wskazówki wymagają programu Visual S
 
 4.  Widok procesu zawiera tabelę, która zawiera **identyfikator procesu**, **nazwa procesu**, **czas rozpoczęcia**i **czas zakończenia**. Dane można sortować, klikając nazw kolumn.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Wskazówki: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

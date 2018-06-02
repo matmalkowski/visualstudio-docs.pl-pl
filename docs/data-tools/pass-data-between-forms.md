@@ -1,5 +1,5 @@
 ---
-title: Przekazywanie danych pomiędzy formularzami
+title: Przekazywanie danych między formularzami
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691215"
 ---
-# <a name="pass-data-between-forms"></a>Przekazywanie danych pomiędzy formularzami
+# <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 Ten przewodnik zawiera instrukcje krok po kroku przekazywania danych z jednego formularza do innego. Przy użyciu klientów i tabele zamówień z Northwind, jeden formularz umożliwia użytkownikowi wybranie klienta, a drugi formularz zawiera wybranego klienta. W tym przewodniku przedstawiono sposób tworzenia metody na drugi formularz, który odbiera dane z pierwszego formularza.
 
 > [!NOTE]
@@ -145,7 +146,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 5.  Dodaj klauzulę WHERE zapytania, aby powrócić `Orders` na podstawie `CustomerID`. Zapytanie powinny być podobne do następujących:
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID

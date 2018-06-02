@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d13c05601d3e4e4b520de687216fccefaec4115
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 20324a3026f5c32fcc1525f1c5afcd20b1b62332
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690734"
 ---
-# <a name="compare-performance-data-files"></a>Porównywanie plików danych wydajności
-Funkcji porównywania plików danych narzędzi profilowania służy do wybierania dwa pliki raportu (. VSP notebooka. VSPS) pliki oraz Generowanie raportu, który przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania.  
+# <a name="compare-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
+Funkcji porównywania plików danych narzędzi profilowania służy do wybierania dwa pliki raportu (. *Vsp* notebooka. *vsps*) pliki oraz Generowanie raportu, który przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania.  
   
- Raport porównania danych plików z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania porównuje wyniki analizy w jednym pliku danych profilowania, aby wyniki analizy linii bazowej w innym pliku danych. Oba pliki danych musi zostać wygenerowane za pomocą tej samej metody profilowania. Raport analizy porównania jest zapisany jako plik vsps.  
+ Raport porównania danych plików z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania porównuje wyniki analizy w jednym pliku danych profilowania, aby wyniki analizy linii bazowej w innym pliku danych. Oba pliki danych musi zostać wygenerowane za pomocą tej samej metody profilowania. Raport analizy porównania jest zapisywany jako. *vsps* pliku.  
   
  Widok porównania raport przedstawia widok tabeli zmienione dane. Tabela przedstawia zmian lub zmiany z linii bazowej. Różnicowej jest obliczana przez określenie różnica między stara wartość, wartości bazowej i wartość wyniku z nowego analizy.  
   

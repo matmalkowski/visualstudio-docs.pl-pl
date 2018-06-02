@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690796"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency Visualizer można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty symbole, tylko mój kod, buforowanie, filtrowanie, CLR zdarzenia, znaczniki, dostawców i plików.  
@@ -25,9 +26,9 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
  Narzędzia Concurrency Visualizer używa tych samych ustawień symboli jako debuger programu Visual Studio. Concurrency Visualizer korzysta z ustawień, aby rozwiązać stosy wywołań, które są skojarzone z danych dotyczących wydajności.  Podczas przetwarzania śladów, Concurrency Visualizer uzyskuje dostęp do serwerów symboli, które są określone na stronie ustawień.  Jeśli te dane uzyskuje się dostęp za pośrednictwem sieci, przetwarzania śledzenia działa wolniej.  Aby zmniejszyć ilość czasu, która jest wymagana do rozpoznawania symboli, pamięci podręcznej symboli lokalnie. Jeśli pobrano symbole, Visual Studio pobierze je z lokalnej pamięci podręcznej.  
   
 ## <a name="just-my-code"></a>Tylko mój kod  
- Domyślnie tylko mój kod to zestaw plików .exe i .dll, które są skojarzone z bieżącym rozwiązaniem w programie Visual Studio. Narzędzia Concurrency Visualizer daje w wyniku tego zestawu plików przy użyciu funkcji tylko mój kod do filtrowania stosy wywołań. Na karcie tylko mój kod można dodać katalogi, które zawierają pliki .exe i .dll do lokalizacji, które używa narzędzia Concurrency Visualizer tylko mój kod.  
+ Domyślnie tylko mój kod jest zestaw. *exe* i. *biblioteki dll* pliki, które są skojarzone z bieżącym rozwiązaniem w programie Visual Studio. Narzędzia Concurrency Visualizer daje w wyniku tego zestawu plików przy użyciu funkcji tylko mój kod do filtrowania stosy wywołań. Na karcie tylko mój kod można dodać katalogi, które zawierają. *exe* i. *biblioteki dll* pliki do lokalizacji, które używa narzędzia Concurrency Visualizer tylko mój kod.  
   
- Ścieżki plików .exe i .dll są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie wpływa na wszystkie uprzednio zebrane ślady.  
+ Ścieżek. *exe* i. *biblioteki dll* pliki są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie wpływa na wszystkie uprzednio zebrane ślady.  
   
 ## <a name="buffering"></a>Buforowanie  
  Jeśli zbiera śledzenia, Concurrency Visualizer używa funkcji Śledzenie zdarzeń systemu Windows ().  ETW używa różnych buforów przechowuje zdarzenia.  Domyślne ustawienia bufora ETW może nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach, może spowodować problemy, takie jak zdarzenia utracone.  Karta buforowanie Aby skonfigurować ustawienia bufora ETW. Aby uzyskać więcej informacji, zobacz [śledzenie zdarzeń](http://go.microsoft.com/fwlink/?LinkId=234579) i [struktury EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).  
@@ -56,7 +57,7 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
 ## <a name="markers"></a>Znaczniki  
  Na **znaczniki** kartę, można skonfigurować zestaw dostawcy ETW, które są wyświetlane jako znaczniki Concurrency Visualizer.  Można również filtrować znacznika kolekcji na podstawie poziomu ważności i ETW kategorii.  Jeśli używasz [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) się przy użyciu własnego dostawcę znacznika, możesz zarejestrować go tutaj aby był on wyświetlany w widoku wątków.  
   
-### <a name="adding-a-new-provider"></a>Dodawanie nowego dostawcę  
+### <a name="add-a-new-provider"></a>Dodaj nowego dostawcę  
  Jeśli używa Twój kod [SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md) lub generuje zdarzenia ETW, które należy wykonać <xref:System.Diagnostics.Tracing.EventSource> Konwencji, można wyświetlać te zdarzenia w Concurrency Visualizer przez zarejestrowanie ich w tym oknie dialogowym.  
   
  W **nazwa** wprowadź nazwę opisującą typy zdarzeń, które są generowane przez dostawcę.  W **GUID** wprowadź identyfikator GUID, który jest skojarzony z tym dostawcą. (Identyfikator GUID jest skojarzony z każdego dostawcy ETW).  
@@ -74,13 +75,13 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency V
 ## <a name="files"></a>Pliki  
  Na **pliki** kartę, można określić katalog, w obszarze śledzenia pliki przechowywane są zawsze śledzenia są zbierane.  Narzędzia Concurrency Visualizer generuje cztery pliki do każdego śledzenia, który zbiera:  
   
--   Plik dziennika (ETL) śledzenia zdarzeń w trybie jądra (*. kernel.etl)  
+-   Plik dziennika (ETL) śledzenia zdarzeń w trybie jądra (*.* Kernel.etl*)  
   
--   Plik dziennika śledzenia zdarzeń trybu użytkownika (*. user.etl)  
+-   Plik dziennika śledzenia zdarzeń trybu użytkownika (*.* User.etl*)  
   
--   Plik dane narzędzia Concurrency Visualizer (*. CVData)  
+-   Plik dane narzędzia Concurrency Visualizer (*.* CVData*)  
   
--   Plik śledzenia wizualizatora współbieżności (*. CVTrace)  
+-   Plik śledzenia wizualizatora współbieżności (*.* CVTrace*)  
   
  Dwa pliki ETL przechowywania danych pierwotnych śledzenia i dwa pliki Concurrency Visualizer przechowywania przetworzonych danych.  Nieprzetworzone pliki ETL zwykle nie są używane po przetworzeniu śledzenia.  Wybieranie **pliki usunąć zdarzenia śledzenia dziennika (ETL) po analizie** pole wyboru zmniejsza ilość danych śledzenia, który jest przechowywany na dysku.  
   
