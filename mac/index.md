@@ -5,20 +5,21 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693695"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Wprowadzenie do programu Visual Studio dla komputerów Mac
 
-Visual Studio for Mac jest nowoczesnych, rozbudowanych IDE z wiele funkcji umożliwiających tworzenie mobile, pulpitu i aplikacji sieci web. Obsługuje on następujące programowanie:
+Visual Studio for Mac jest nowoczesnych, rozbudowanych IDE z wiele funkcji umożliwiających tworzenie mobile, pulpitu i aplikacji sieci web. Obsługuje on następujące typy rozwoju:
 
 * Telefon komórkowy z platformą .NET: Android, iOS, systemu tvOS, watchOS
 * Aplikacje komputerowe Mac
 * Aplikacje .NET core
-* Aplikacje ASP.NET Core sieci Web
+* Aplikacje sieci web platformy ASP.NET Core
 * Gry środowiska Unity i platform
 
 Obejmuje funkcje, takie jak Zaawansowany edytor debugowania natywnego platformy integracji z systemem iOS, Mac i Android, a zintegrowanej kontroli źródła.
