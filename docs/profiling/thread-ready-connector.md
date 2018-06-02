@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476654"
 ---
 # <a name="thread-ready-connector"></a>Łącznik gotowego wątku
 Po kliknięciu segment blokujący stos wywołań i jego stos odblokowań łącznik gotowego wątku mogą również zostać wyświetlony. Jeśli odblokowywania zdarzenie wystąpiło na inny wątek w bieżącym procesie, łącznik gotowego wątku identyfikuje wizualnie segment wątku i wykonywanie, który włączone zablokowanych wątków można wznowić wykonywania.

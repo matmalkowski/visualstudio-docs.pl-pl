@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d5eca01cc5a9f910c16685f4aec36cd69f37a94
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691027"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie problemów aplikacji interakcji dotyczące problemów z wydajnością w aplikacji XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Można analizować czasu poświęconego przez aplikację przygotowywanie ramki interfejsu użytkownika (układu i renderowania), sieci i dysku żądań obsługi, a w scenariuszach, takich jak uruchamiania aplikacji, ładowania strony, a następnie zmień rozmiar systemu Windows.  
@@ -34,10 +35,10 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 5.  Windows 7  
   
 > [!NOTE]
->  Można zbierać i analizować dane użycia procesora CPU i dane dotyczące zużycia energii wraz z **ApplicationTimeline** danych. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Można zbierać i analizować dane użycia procesora CPU i dane dotyczące zużycia energii wraz z **ApplicationTimeline** danych. Zobacz [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 ## <a name="collect-application-timeline-data"></a>Zbieranie danych osi czasu aplikacji  
- Czas odpowiedzi aplikacji można profilu na komputerze lokalnym, podłączonego urządzenia, symulator Visual Studio lub emulatory lub urządzenie zdalne. Zobacz [uruchamiania narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+ Czas odpowiedzi aplikacji można profilu na komputerze lokalnym, podłączonego urządzenia, symulator Visual Studio lub emulatory lub urządzenie zdalne. Zobacz [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Jeśli to możliwe Uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji na symulatorze lub za pomocą połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność na urządzeniu. Z drugiej strony zbieranie danych przy użyciu programu Visual Studio Tools zdalnego nie wpływa na dane wydajności.  
@@ -51,7 +52,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 3.  Wybierz **oś czasu aplikacji** , a następnie kliknij przycisk **Start** w dolnej części okna.  
   
     > [!NOTE]
-    >  Okno Kontrola konta użytkownika, Twoje uprawnienia do uruchamiania VsEtwCollector.exe żądanie może być widoczna. Kliknij przycisk **Tak**.  
+    >  Można napotkać okno Kontrola konta użytkownika, Twoje uprawnienia do uruchamiania żądania *VsEtwCollector.exe*. Kliknij przycisk **Tak**.  
   
 4.  Uruchom scenariusz myślisz profilowania aplikacji w celu zbierania danych dotyczących wydajności.  
   
@@ -96,7 +97,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 |||  
 |-|-|  
 |**Analiza kodu**|Czas poświęcony na tworzenie obiektów i analizy plików XAML.<br /><br /> Rozszerzanie **Parsowanie** w węźle **szczegóły osi czasu** Wyświetla łańcuch zależności wszystkich plików XAML, które zostały przeanalizować wyniku zdarzeń głównego. Umożliwi to zidentyfikować tworzenie analizowania i obiekt niepotrzebnych plików w scenariuszach poufnych wydajności i zoptymalizowania je.|  
-|**Układ**|W dużych aplikacji tysiące elementy mogą być wyświetlane na ekranie, w tym samym czasie. Może to spowodować niska szybkość klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu dokładnie określa koszt układania każdego elementu (tj. czas spędzony w rozmieszczanie, miary ApplyTemplate, ArrangeOverride i ArrangeOverride) i tworzy visual drzewa, w których uczestniczyła w przebiegu układu. Umożliwia określenie, które drzewa logiczne Oczyść lub innych mechanizmów opóźnienia, aby zoptymalizować z przebiegu układu ocenić, można użyć tej wizualizacji.|  
+|**Układ**|W dużych aplikacji tysiące elementy mogą być wyświetlane na ekranie, w tym samym czasie. Może to spowodować niska szybkość klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu określają dokładnie koszt układania każdego elementu (to znaczy czas spędzony w rozmieszczanie, miary ApplyTemplate, ArrangeOverride i ArrangeOverride) i tworzy visual drzewa, w których uczestniczyła w przebiegu układu. Umożliwia określenie, które drzewa logiczne Oczyść lub innych mechanizmów opóźnienia, aby zoptymalizować z przebiegu układu ocenić, można użyć tej wizualizacji.|  
 |**Renderowanie**|Czas poświęcony na rysunku elementów XAML do ekranu.|  
 |**I/0**|Czas poświęcony na pobieranie danych z lokalnego dysku lub z zasobów sieciowych, które są dostępne za pośrednictwem [Microsoft Windows Internet (WinINet) interfejsu API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kod aplikacji**|Czas poświęcony na wykonywanie kodu aplikacji (użytkownika), który nie jest powiązana z analizy ani układu.|  

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7fb90261453caab8dbe54fce79605c1d891d537
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 04cf166880ac8bcf83d4657b9c1c2eec1b46a14a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690819"
 ---
 # <a name="console"></a>Konsola
 VSPerfCmd.exe **konsoli** opcja uruchamia określonej aplikacji w nowym oknie wiersza polecenia. **Konsola** można używać tylko z VSPerfCmd **uruchamianie** opcji. Jeśli aplikacja nie jest aplikacją wiersza polecenia **konsoli** nie ma wpływu.  
@@ -34,8 +35,8 @@ VSPerfCmd.exe /Launch:AppName /Console
  **Uruchom:** `AppName`  
  Uruchamia profilera i aplikacji określonej przez `AppName`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

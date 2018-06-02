@@ -10,10 +10,11 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548726"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 

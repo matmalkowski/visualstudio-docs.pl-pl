@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477109"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** Wyświetla informacje dotyczące Procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz **Analizuj** > **współbieżności Wizualizator** można uruchomić narzędzia concurrency visualizer). Pokazuje użycie średni core przez proces przeanalizowane, proces bezczynny, proces systemu i innych procesów uruchomionych w systemie, wraz z upływem czasu. Nie wyświetla, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego jej użycia. Widok jest generowany przez podzielenie profilowania czasu na segmenty w krótkim czasie. Dla każdego segmentu wykres zawiera średnią liczbę wątków procesu, które są wykonywane na rdzeni logicznych podczas tego interwału.  

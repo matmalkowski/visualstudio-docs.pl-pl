@@ -1,5 +1,5 @@
 ---
-title: Praca z danych XML
+title: Praca z danymi XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693724"
 ---
 # <a name="working-with-xml-data"></a>Praca z danych XML
 
@@ -35,7 +36,7 @@ Dodatkowe funkcje:
 
 - Obsługa Edytowanie arkuszy stylów XSLT, w tym obsługę funkcji IntelliSense.
 
-- Eksploratora schematu XML.
+- **Eksploratora schematu XML**.
 
 ## <a name="xml-schema-designer"></a>Projektant schematu XML
 
@@ -53,7 +54,7 @@ Program Visual Studio obsługuje debugowania arkuszy stylów XSLT. Korzystanie z
 
 [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) zawiera wyjaśnienie czasu projektowania narzędzi do tworzenia zestawów danych.
 
-[Usługi XML sieci Web w kod zarządzany](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) zawiera omówienie sposobu tworzenia i wdrażania usług XML sieci Web i dostępu do usług XML sieci Web.
+[Usługi XML sieci Web w kodzie zarządzanym](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) zawiera omówienie sposobu tworzenia i wdrażania usług XML sieci Web i dostępu do usług XML sieci Web.
 
 ## <a name="see-also"></a>Zobacz także
 

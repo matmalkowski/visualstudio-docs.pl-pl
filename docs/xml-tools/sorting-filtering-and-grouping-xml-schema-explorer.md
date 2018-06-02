@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693672"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowania (Eksploratora schematu XML)
 
-W tym temacie opisano opcje, które są dostępne za pośrednictwem **sortowanie, filtrowanie i opcje grupowania** menu na pasku narzędzi Eksploratora schematu XML.
+W tym temacie opisano opcje, które są dostępne za pośrednictwem **sortowanie, filtrowanie i opcje grupowania** menu **Eksploratora schematu XML** paska narzędzi.
 
 ## <a name="filter-options"></a>Opcje filtru
 
@@ -32,7 +33,7 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **sortowanie
 
 ## <a name="sorting-options"></a>Opcje sortowania
 
- Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. Sortuj według opcje nie dotyczą plików i przestrzenie nazw.
+ Dostępne są następujące opcje sortowania. Wartość domyślna to **sortowania według typu**. **Sortuj według** opcje nie dotyczą plików i przestrzenie nazw.
 
 -   **Sortuj według typu**.
 

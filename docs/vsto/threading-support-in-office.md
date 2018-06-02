@@ -1,5 +1,5 @@
 ---
-title: Obsługa wątkowości w Office | Dokumentacja firmy Microsoft
+title: Obsługa wątkowości w pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693087"
 ---
-# <a name="threading-support-in-office"></a>Obsługa wątkowości w pakiecie Office
-  Ten temat zawiera informacje dotyczące sposobu wątków jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów pakietu Office nie jest bezpieczne dla wątków, ale istnieje możliwość pracy z wielu wątków w rozwiązaniach pakietu Office. Aplikacje pakietu Office są serwery składnika modelu COM (Object). COM pozwala klientom wywoływać serwerów COM na dowolne wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM udostępnia mechanizm do serializacji równoczesnych wywołań, tak aby tylko jeden wątek logiczny jest wykonywana na serwerze w dowolnym momencie. Mechanizm ten nosi nazwę modelu jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, wywołań może zostać zablokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania wątku w tle.  
+# <a name="threading-support-in-office"></a>Obsługa wątkowości w pakietu Office
+  Ten artykuł zawiera informacje dotyczące sposobu wątków jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów pakietu Office nie jest bezpieczne dla wątków, ale istnieje możliwość pracy z wielu wątków w rozwiązaniach pakietu Office. Aplikacje pakietu Office są serwery składnika modelu COM (Object). COM pozwala klientom wywoływać serwerów COM na dowolne wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM udostępnia mechanizm do serializacji równoczesnych wywołań, tak aby tylko jeden wątek logiczny jest wykonywana na serwerze w dowolnym momencie. Mechanizm ten nosi nazwę modelu jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, wywołań może zostać zablokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania wątku w tle.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Organizowanie  
   
- Aby uzyskać ogólne informacje o wielowątkowości, zobacz [zarządzanych wątków](/dotnet/standard/threading/).  
+ Aby uzyskać ogólne informacje o wielowątkowości, zobacz [zarządzana wątkowość](/dotnet/standard/threading/).  
   
  Office działa w głównym pozostaje tryb komórek jednowątkowych Opis skutków to umożliwia zrozumienie, jak używać wielu wątków w pakiecie Office.  
   
@@ -62,21 +63,21 @@ ms.lasthandoff: 04/16/2018
   
  Jednak w przypadku rozwiązania utworzone przy użyciu narzędzi programowania pakietu Office w Visual Studio, współdziałanie z COM konwertuje wszystkie odrzucone wywołań <xref:System.Runtime.InteropServices.COMException> ("filtr wiadomości wykazał, że aplikacja jest zajęta"). Po każdej zmianie wprowadzeniu model obiektowy wywołania wątku w tle, muszą być przygotowane do obsługi tego wyjątku. Zwykle obejmujące ponowną próbą przez pewien czas i wyświetlania okna dialogowego. Można jednak również utworzyć wątku w tle jako STA i zarejestruj filtr komunikatu dla tego wątku do obsługi tej sprawy.  
   
-## <a name="starting-the-thread-correctly"></a>Poprawne uruchomienie wątku  
+## <a name="start-the-thread-correctly"></a>Poprawne uruchomienie wątku  
  Podczas tworzenia nowego wątku STA, Ustaw stan apartamentu STA przed rozpoczęciem wątku. W poniższym przykładzie pokazano, jak to zrobić.  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Aby uzyskać więcej informacji, zobacz [zarządzanych wątków najlepsze rozwiązania w zakresie](/dotnet/standard/threading/managed-threading-best-practices).  
+ Aby uzyskać więcej informacji, zobacz [zarządzana wątkowość — najlepsze praktyki](/dotnet/standard/threading/managed-threading-best-practices).  
   
 ## <a name="modeless-forms"></a>Niemodalne formularzy  
  Niemodalny formularz umożliwia pewien typ interakcji z aplikacją, gdy formularz jest wyświetlany. Użytkownik wchodzi w interakcję z formularza i formularz współdziała z aplikacji bez zamknięcia. Model obiektów pakietu Office obsługuje zarządzanych formularze niemodalne; jednak ich nie powinien być używany na wątku w tle.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zarządzana wątkowość](/dotnet/standard/threading/)  
  [Wątkowość (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [wątkowość (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
- [Używanie wątków i wątkowości](/dotnet/standard/threading/using-threads-and-threading)   
- [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Użyj wątki i wątkowość](/dotnet/standard/threading/using-threads-and-threading)   
+ [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

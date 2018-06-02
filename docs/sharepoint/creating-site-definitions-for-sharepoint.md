@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691807"
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projektu definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, która stanowi podstawę dla nowej witryny programu SharePoint. Te definicje nie tylko określić wygląd i zachowanie witryny programu SharePoint, ale także jego zawartości domyślnej i funkcji. W definicji możesz umieścić listy wstępnie skonfigurowane, typów zawartości, odbiorcy zdarzeń, obrazy i inne elementy. SharePoint obejmuje niektóre definicje witryn, takie jak BLOG, na przykład. Podczas tworzenia witryny na podstawie definicji witryny BLOGU lokacji zawiera listy, części sieci Web i innych elementów, które wymaga lokacji obsługi blogów.  
   
  Aby uzyskać więcej informacji na temat definicje witryny, zobacz [szablony witryn i definicje](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Witryna definicji projektów  
+## <a name="site-definition-projects"></a>Projekty definicji witryny
  Projekty definicji w lokacji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Podaj tylko podstawowe pliki, które wymaga witryny programu SharePoint; nie udostępniają one wszystkie funkcje domyślne. Należy dodać pliki i zawartość w celu zapewnienia funkcji, które mają. Można tworzyć ręcznie, witryny, tworzenie i dodawanie potrzebne pliki.  
   
-## <a name="feature-stapling"></a>Zszywanie funkcji  
+## <a name="feature-stapling"></a>Obsługa zszywania funkcji
  Tworzenie definicji witryny w korzyścią [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] one automatycznie korzystać ze *zszywania funkcji*. Funkcja zszywanie dołącza funkcji do definicji witryny, zamiast osadzania ich jego funkcje w samej definicji witryny. W ten sposób pozwala dodać funkcję do żadnej lokacji utworzone za pomocą definicji witryny bez modyfikowania oryginalnej definicji witryny. Aby uzyskać więcej informacji, zobacz [zszywania funkcji](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Definicje witryny składników projektu  
+## <a name="site-definition-project-components"></a>Składniki projektu definicji witryny
  Po utworzeniu rozwiązania definicji witryny następujące domyślne pliki są dodawane do jej **SiteDefinition** węzła.  
   
 |Nazwa pliku|Opis|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |Onet.XML|Określa konfiguracji nowej lokacji, składniki szablonu definicji witryny i zachowanie domyślne. Te ustawienia mogą obejmować atrybuty takie jak typy zawartości, które są włączone, listę widoki, pliki szablonów dokumentów i składnikami Web Part dołączone do lokacji. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|  
 |webtemp_*SiteDefinitionName*.xml|Określa konfiguracje definicji lokacji, które pojawia się w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
   
- Domyślnie wszystkie definicje lokacji są przechowywane w *dysku:*\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates folderu. Każdej definicji lokacji ma własną podfolderu.  
+ Domyślnie wszystkie definicje lokacji są przechowywane w *dysku:* \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates folderu. Każdej definicji lokacji ma własną podfolderu.  
   
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Programowanie strony sieci Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178728)|Zawiera informacje o sposobie tworzenia obsługi zdarzeń w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stron oraz sposób pracy z skrypt po stronie klienta.|  
 |[Programowanie w programie Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Informacje dotyczące używania modelu obiektu zarządzanego, który znajduje się w [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 141341c09d9028e90900a29c702667304cfea7f7
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477713"
 ---
-# <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Użyj metod profilowania do zbierania danych wydajności z wiersza polecenia
+# <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Korzystanie z metod profilowania do zbierania danych o wydajności z wiersza polecenia
 Wybór [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opcje i narzędzi wiersza polecenia narzędzi profilowania jest zależna od czynników, takich jak typ aplikacji czy możesz się profilowania, metodę profilowania, która ma być używany, oraz określa, czy aplikacja docelowa jest zapisywane w macierzystym lub [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kodu.  
   
  W tym temacie organizuje wiersza polecenia procedurach tematów w zależności od wybranej metody profilowania.  

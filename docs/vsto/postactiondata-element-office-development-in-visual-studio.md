@@ -1,5 +1,5 @@
 ---
-title: '&lt;postactiondata —&gt; — Element (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;postactiondata —&gt; — element (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c33e2bae7214252f0d0a871ed5a21a62d3fb9372
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f96ecf7f7f6c0d465a9506edff41c4305d8d25e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692951"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata —&gt; — Element (Office Development w Visual Studio)
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata —&gt; — element (Office development w Visual Studio)
   `postActionData` Elementu `vstav3` przestrzeń nazw określa dane skojarzone z dowolną akcję po wdrożeniu, która jest uruchamiana po zainstalowaniu rozwiązań pakietu Office.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <postActionData>  
 </postActionData>  
 ```  
@@ -47,13 +48,13 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:postActionData>  
   data in any format  
 </vstav3:postActionData>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

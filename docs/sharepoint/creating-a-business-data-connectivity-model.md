@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691499"
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych biznesowych
   Można utworzyć modelu łączności danych biznesowych (BDC) lub dostosowanie istniejącego modelu BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="creating-a-new-model"></a>Tworzenie nowego modelu  
+## <a name="create-a-new-model"></a>Utwórz nowy model
  Aby utworzyć nowy model, utworzyć **modelu łączności danych biznesowych** lub Dodaj **modelu łączności danych biznesowych** elementu do **pusty projekt SharePoint**.  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Podczas debugowania projektu programu Visual Studio kopiuje do zestawu do zarówno w lokalizacji na komputerze lokalnym.  
   
-## <a name="adding-an-existing-model"></a>Dodawanie istniejącego modelu  
+## <a name="add-an-existing-model"></a>Dodawanie istniejącego modelu
  Możesz zaimportować modelu, który został utworzony przy użyciu innych narzędzi, takich jak SharePoint Designer. Można także zaimportować istniejący model do projektu w następujących sytuacjach:  
   
 -   Aby dostosować modelu, który jest już wdrożony do farmy programu SharePoint.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  System LOB zestawu .NET Framework typu można dodać do importowanego modelu, zaznaczając odpowiednią opcję w **zestawu .NET dodać LOB**. Umożliwia pisanie kodu niestandardowego i zdefiniuj metadanych dla importowanego modelu przy użyciu projektanta.  
   
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Opisuje sposób udostępnić ciągów, które są łączone w metadanych modelu, jeśli model jest używany przez składnik Web Part lub strony sieci Web.|  
 |[Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Pokazuje, jak Dołączanie niestandardowego zestawu w funkcji.|  
   
-  
+ 

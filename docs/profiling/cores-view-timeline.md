@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca61a511d5b65233aa0f7e979374ba5dd48d21ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690536"
 ---
 # <a name="cores-view-timeline"></a>Oś czasu widoku rdzeni
 Każdy wiersz na osi czasu reprezentuje rdzeń procesora logicznego w systemie PROFILOWANEGO. Dla każdego wiersza osi poziomej pokazuje, który wątek była uruchomiona na rdzenia logicznego w danym punkcie w czasie. Można umieść kursor nad kolor odsetek na osi czasu, aby zwrócić etykietka narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendy w dolnej części okna Pokazuje każdy kolor reprezentuje. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i kółka myszy przenoszenia. Spójność powiększenia jest obsługiwana podczas przełączania się między widokiem rdzeni i wątków.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)   
- [Ustawianie powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)
+ [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)

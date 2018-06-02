@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: e53e9a29acf5258f3b225cde8211c4022b165bd7
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476511"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Narzędzia diagnostyki obejmują nowe wizualizacje pomoże zidentyfikować problemy w swojej aplikacji, które wymagają ustalania. Narzędzia diagnostyki teraz obejmuje obsługę aplikacji programu ASP.NET.
