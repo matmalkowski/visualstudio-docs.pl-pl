@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751744"
 ---
 # <a name="search-the-schema-set"></a>Wyszukiwanie w zestawie schematów
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/24/2018
 
  Wyszukiwanie słów kluczowych, wprowadzając podciągu w **SchemaSet wyszukiwania** pole tekstowe z **Eksploratora schematu XML** paska narzędzi.
 
- ![Wyszukiwanie słów kluczowych Eksploratora schematu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Wyszukiwanie słów kluczowych Eksploratora schematu XML](../xml-tools/media/schemaexplorersearch.gif)
 
  **Eksploratora schematu XML** wyszukuje schematu, ustaw następujące atrybuty:
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/24/2018
 
  Wyniki wyszukiwania można dodać do obszaru roboczego, klikając **Dodaj wyróżnione węzły do obszaru roboczego** przycisk w okienku podsumowania wyników.
 
- ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Wyczyść wyniki wyszukiwania
 

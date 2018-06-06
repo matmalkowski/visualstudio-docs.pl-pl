@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63d3153bfcc38b28ace3db5ad976a2c2a6a650fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f0d7962446d5cf21822a101354284c63a7df98c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749931"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia walidacji, aby sprawdzić, czy model utworzone przez użytkownika jest łatwy do rozpoznania. Na przykład jeśli Twoje DSL umożliwia użytkownikom rysowanie drzewa rodziny osób i ich elementów nadrzędnych, można zapisać ograniczenia, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementów nadrzędnych.
@@ -140,7 +141,7 @@ public partial class ParentsHaveChildren
 
  Przykład dotyczy następujących modelu domeny. Relacja ParentsHaveChildren ma ról, które są nazywane nadrzędnym a podrzędnym.
 
- ![Diagram definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Diagram definicji DSL &#45; rodziny drzewa modelu](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Sprawdzanie poprawności kategorii
  W <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atrybutu, należy określić, gdy metoda uwierzytelniania, które mają zostać wykonane.

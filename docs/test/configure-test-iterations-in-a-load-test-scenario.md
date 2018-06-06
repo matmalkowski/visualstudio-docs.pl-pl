@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751608"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurowanie iteracji testowych w scenariuszu testu obciążenia
 
@@ -42,7 +43,7 @@ Można określić maksymalną liczbę razy ma testów do uruchomienia dla scenar
 
  **Maksymalna liczba iteracji testu** właściwość jest przydatna w różnych sytuacjach. Niektóre testerów obciążenia wolą należy przeprowadzić na podstawie iteracji test, podczas gdy inne obciążenia testerów wolą należy przeprowadzić test na podstawie czasu trwania.
 
- ![Określanie iteracji testowych w scenariuszu](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Określanie iteracji testowych w scenariuszu](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Aby określić maksymalnej liczby iteracji testu
 

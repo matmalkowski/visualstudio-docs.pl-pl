@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750431"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie Visual Studio z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.
@@ -48,7 +49,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 1.  Tworzenie rozwiązania z **języka specyficznego dla domeny** szablonu, który znajduje się w obszarze **inne typy/rozszerzalność projektu** w **nowy projekt** okno dialogowe.
 
-     ![Okno dialogowe DSL tworzenie](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
 
      Po kliknięciu **OK**, **kreatora języka specyficznego dla domeny** otwiera i wyświetla listę rozwiązań DSL szablonu.
 
@@ -86,7 +87,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Interfejs użytkownika jest teraz podobny poniższej ilustracji.
 
- ![Projektant DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Projektant DSL](../modeling/media/dsl_designer.png)
 
  To rozwiązanie definiuje domeny określonego języka. Aby uzyskać więcej informacji, zobacz [Przegląd interfejsu użytkownika narzędzia języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Jeśli uruchomienia rozwiązania, które zostały utworzone z **minimalnego języka** szablonu, eksperymentalne Visual Studio będzie podobne do następujących:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Poeksperymentuj z narzędzia. Tworzenie elementów, a następnie łącząc je.
 
@@ -139,11 +140,11 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Na poniższej ilustracji przedstawiono klasy i relacje część DSL, który jest używany jako przykład w tym temacie.
 
- ![Dokumentacja i osadzanie relacje](../modeling/media/music_classes.png "Music_Classes")
+ ![Dokumentacja i osadzanie relacji](../modeling/media/music_classes.png)
 
  Następny rysunek jest przykładowy model ten DSL:
 
- ![Wystąpienie modelu DSL wygenerowanego](../modeling/media/music_instance.png "Music_Instance")
+ ![Wystąpienie modelu DSL wygenerowany](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  "Modelu" odwołuje się do wystąpienia programu DSL użytkownikom tworzenie i zwykle wyświetlane jako diagram. W tym temacie omówiono diagramu definicji DSL i diagramy modelu, które są wyświetlane, gdy jest używany z DSL.
@@ -235,7 +236,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Aby zdefiniować klasę elementów, które są wyświetlane jako kształtów na diagramie
 
-1.  **Definiowanie i testowania klasą domeny, zgodnie z opisem w**[Definiowanie klas domeny](#classes) **.** 
+1.  **Definiowanie i testowania klasą domeny, zgodnie z opisem w**[Definiowanie klas domeny](#classes) **.**
 
     -   Element nadrzędny klasy powinny być klasy głównym. Oznacza to powinna być osadzania relacji między klasy głównym i Nowa klasa domeny.
 
@@ -285,7 +286,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
     4.  Upewnij się, że wyświetlany znacznik wyboru obok każdej dekoratora nazwy.
 
-     ![Okno mapowania kształt i szczegóły DSL](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![W oknie mapowania kształt i szczegóły DSL](../modeling/media/dsldetailswindow.png)
 
 7.  **Wprowadź element przybornika służący do tworzenia elementów klasy domeny.**
 
@@ -331,7 +332,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Na przykład albumów muzycznych i artystów są wyświetlane jako kształtów na diagramie, można zdefiniować relacji o nazwie ArtistsAppearedOnAlbums zawierającego łącze do albumów, na których pracowali artystów. Zobacz przykład pokazany na rysunku.
 
- ![Wystąpienie modelu DSL wygenerowanego](../modeling/media/music_instance.png "Music_Instance")
+ ![Wystąpienie modelu DSL wygenerowany](../modeling/media/music_instance.png)
 
  Relacje odwołania także połączyć elementy tego samego typu. Na przykład w DSL, reprezentujący drzewa rodziny, relacja między elementów nadrzędnych i ich elementy podrzędne jest relacji z osób.
 
@@ -348,7 +349,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  **Ustaw właściwość umożliwia zduplikowanych relacji,** Jeśli między tej samej pary elementy modelu może istnieć więcej niż jedno łącze do tej samej klasy. Na przykład mogą umożliwić nauczyciel więcej niż jeden może ulec sam uczniów nauczysz się.
 
- ![Kształt mapy dla łączników](../modeling/media/music_connector.png "Music_Connector")
+ ![Mapuje kształtu dla łączników](../modeling/media/music_connector.png)
 
  Aby uzyskać więcej informacji, zobacz [właściwości relacji domeny](../modeling/properties-of-domain-relationships.md) i [właściwości role domeny](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 ##  <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: przedziału kształtów
  Kształt Przedział zawiera jedną lub więcej list elementów. Na przykład w DSL biblioteki utworów muzycznych, można użyć kształtów przedziału do reprezentowania utworów muzycznych albumów. W przypadku każdego albumu znajduje się lista utworów.
 
- ![Przedziału kształtu](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Przedział kształtu](../modeling/media/compartmentshape.png)
 
  Najprostsza metoda realizacji w tym celu w definicji DSL służy do definiowania jedną klasę domeny dla kontenera i jedną klasę domeny dla każdej listy. Klasa jest mapowana na kształt Przedział.
 
- ![Mapa kształtu](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Mapa kształtu](../modeling/media/music_mapcomp.png)
 
  Aby uzyskać więcej informacji, zobacz [właściwości przedziału kształtów](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 7.  Otwórz Eksploratora języka. Upewnij się, widzą węzły kontenerów z węzłami elementu listy wewnątrz.
 
- ![Eksploratorze generowane DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Eksploratorze generowane DSL](../modeling/media/music_explorer.png)
 
  Po przetestowaniu najpierw kształtu przedział, można dopasować niektóre jego właściwości i dodać niektórych bardziej zaawansowanych funkcji. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

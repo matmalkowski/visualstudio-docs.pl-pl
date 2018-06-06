@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690942"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748478"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense w Visual Studio
 
@@ -38,7 +38,7 @@ Po wybraniu elementu, będzie mogło do kodu, naciskając klawisz **kartę** lub
 
 Na liście składowych ikona po lewej stronie reprezentuje typ składowej, taki jak przestrzeń nazw, klasa, funkcja lub zmienna. Listę ikony, zobacz [ikony w widoku klas i przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md). Listy może być dość długo, więc możesz nacisnąć przycisk **PgUp** i **PgDn** do Przenieś w górę lub w dół na liście.
 
-![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015_intellisense.png)
 
 Można wywołać **członków listy** funkcji, ręcznie wpisując **Ctrl**+**J**, wybierając pozycję **Edytuj**  >  **IntelliSense** > **członków listy**, lub wybierając **członków listy** przycisk na pasku narzędzi edytora. Gdy jest wywoływana w pustym wierszu lub poza rozpoznawalnym zasięgiem, na liście wyświetlane są symbole w globalnej przestrzeni nazw.
 
@@ -52,7 +52,7 @@ Informacje o parametrach zawierają informacje na temat liczby, nazw i typów pa
 
 Parametr pogrubiony wskazuje następny parametr, który jest wymagany podczas wprowadzania funkcji. Dla funkcji przeciążenia, możesz użyć **się** i **dół** klawisze strzałek, aby wyświetlić informacje o alternatywnych parametr dla przeciążenia funkcji.
 
-![Informacje o parametrach](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Informacje o parametrach](../ide/media/vs2015_param_info.png)
 
 Gdy opisujesz funkcje i parametry za pomocą komentarzy dokumentacji XML, komentarze będą wyświetlane jako informacje o parametrach. Aby uzyskać więcej informacji, zobacz [komentarze w kodzie XML podaj](../ide/supplying-xml-code-comments.md).
 
@@ -62,11 +62,11 @@ Informacje o parametrach można wywołać ręcznie, wybierając **Edytuj** > **I
 
 Szybkie informacje wyświetlają pełną deklarację dla każdego identyfikatora w kodzie.
 
-![Visual Studio Quick Info](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Szybkie informacje programu Visual Studio](../ide/media/vs2015_quick_info.png)
 
 Po wybraniu elementu członkowskiego **członków listy** polu Szybkie informacje jest także wyświetlany.
 
-![Informacje o parametrach w C&#35; pliku kodu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informacje o parametrach w C&#35; pliku kodu](../ide/media/vs2015_paraminfo.png)
 
 Szybkie informacje można wywołać ręcznie, wybierając **Edytuj** > **IntelliSense** > **szybka podpowiedź**, naciskając **Ctrl** + **I**, lub wybierając **szybka podpowiedź** przycisk na pasku narzędzi edytora.
 

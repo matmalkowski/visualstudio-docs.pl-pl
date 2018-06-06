@@ -1,5 +1,5 @@
 ---
-title: Obsługa wyjątku współbieżności
+title: Obsługiwanie wyjątku współbieżności
 ms.date: 09/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,13 +20,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24338b2a6bc49a9a1a2a77e6395f60013c4465b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752336"
 ---
-# <a name="handle-a-concurrency-exception"></a>Obsługa wyjątku współbieżności
+# <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 Wyjątków współbieżności (<xref:System.Data.DBConcurrencyException>) są wywoływane, gdy dwóch użytkowników próba zmiany tych samych danych w bazie danych, w tym samym czasie. W tym przewodniku tworzenia aplikacji systemu Windows, która ilustruje sposób catch <xref:System.Data.DBConcurrencyException>, odszukaj wiersz, który spowodował błąd i Dowiedz się strategię sposobu jego obsługa.
 
  W tym przewodniku przeprowadza użytkownika przez następujący proces:
@@ -72,7 +73,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

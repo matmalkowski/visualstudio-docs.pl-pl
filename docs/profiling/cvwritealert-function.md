@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d885a09551510e38e54efa4b30a02d16b57a728
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749323"
 ---
-# <a name="cvwritealert-function"></a>CvWriteAlert — Funkcja
+# <a name="cvwritealert-function"></a>Cvwritealert — funkcja
 Zapisuje plik śledzenia Concurrency Visualizer alertu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -69,11 +70,11 @@ HRESULT CvWriteAlertVA(
  Wartość S_OK, gdy wiadomość zostanie pomyślnie zapisany. Kod błędu w przypadku, gdy było żadnych błędów. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
  **Unicode:** CvWriteAlertW, CvWriteAlertVW  
   
  **ANSI:** CvWriteAlertA, CvWriteAlertVA  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

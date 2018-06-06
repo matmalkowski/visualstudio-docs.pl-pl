@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750912"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w czasie testów obciążenia za pomocą analizatora testu obciążenia
 
@@ -53,15 +54,15 @@ Jeśli nastąpiło naruszenie, **naruszenia progu** hiperłącze jest wyświetla
 
  Ikona będzie jedną z następujących czynności:
 
- ![Nie naruszenie progu](../test/media/icon_ltest_1.gif "Icon_LTest_1") nie naruszenie progu.
+ ![Nie naruszenie progu](../test/media/icon_ltest_1.gif) Nie naruszenie progu.
 
- ![Naruszenie progu krytycznego na ostatniego interwału](../test/media/icon_ltest_2.gif "Icon_LTest_2") naruszenie progu krytycznego podczas ostatniego interwału.
+ ![Naruszenie progu krytycznego wynoszącego w ostatnim interwale](../test/media/icon_ltest_2.gif) Naruszenie progu krytycznego podczas ostatniego interwału.
 
- ![Naruszenie progu krytycznego dla poprzedniego interwału](../test/media/icon_ltest_3.gif "Icon_LTest_3") naruszenie progu krytycznego podczas poprzedniego interwału.
+ ![Naruszenie progu krytycznego dla poprzedniego interwału](../test/media/icon_ltest_3.gif) Naruszenie progu krytycznego podczas poprzedniego interwału.
 
- ![Naruszenie progu ostrzegawczego w ostatnim interwale](../test/media/icon_ltest_4.gif "Icon_LTest_4") naruszenie progu ostrzegawczego podczas ostatniego interwału.
+ ![Naruszenie progu ostrzegawczego w ostatnim interwale](../test/media/icon_ltest_4.gif) Naruszenie progu ostrzegawczego podczas ostatniego interwału.
 
- ![Naruszenie progu ostrzegawczego dla poprzedniego interwału](../test/media/icon_ltest_5.gif "Icon_LTest_5") naruszenie progu ostrzegawczego podczas poprzedniego interwału.
+ ![Naruszenie progu ostrzegawczego dla poprzedniego interwału](../test/media/icon_ltest_5.gif) Naruszenie progu ostrzegawczego podczas poprzedniego interwału.
 
  Opcjonalnie naruszenia progu można wyświetlić na wykresie również. Ikona próg pojawia się na wykresie obok punkt danych, w którym wystąpiło naruszenie progu.
 

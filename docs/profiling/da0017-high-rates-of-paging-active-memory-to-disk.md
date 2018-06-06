@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e962cfe761af48f5c7aa02d1e476c33e1bf9f4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 60dfbba96a7b52ff271e1633528cf0934e347b6e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749846"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Wysoki stopień stronicowania aktywnej pamięci na dysku
 |||  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
   
  Strony są często dysku zapisu lub odczytu z dysku podczas operacji stronicowania zbiorczego. Liczba stron wyjścia na sekundę często jest znacznie większa niż liczba zapisy stron/s, na przykład. Ponieważ dane wyjściowe strony na sekundę obejmuje również strony zmienione dane z pamięci podręcznej systemu plików. Jednak nie zawsze jest łatwo określić, które procesy są bezpośrednio odpowiedzialne za stronicowania lub dlaczego.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **Pamięć\Strony/s** kolumny. Określa, czy określone fazy wykonywania programu stronicowania działania We/Wy w przypadku większych niż inne.  
   
  Jeśli zbiera dane profilu dla aplikacji ASP.NET w scenariuszu testowania obciążenia, spróbuj uruchomić ponownie test obciążenia na komputerze, skonfigurować przy użyciu dodatkowej pamięci fizycznej (lub pamięci RAM).  

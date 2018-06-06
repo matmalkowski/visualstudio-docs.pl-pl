@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bce4b4e5c0d4a9d4f66fade6b01044ac149968a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b06532771aaa432deccb8040c7dd7e5962dd15f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764433"
 ---
 # <a name="execution-time-threads-view"></a>Czas wykonywania (Widok wątków)
 Te segmenty w oś czasu widoku wątków reprezentują czas wykonania, gdy wątek jest aktywnie podczas pracy nad rdzenia logicznego w systemie.  
@@ -29,6 +30,6 @@ Te segmenty w oś czasu widoku wątków reprezentują czas wykonania, gdy wątek
   
  Aby wyświetlić profil próbkowania tradycyjnych dla wszystkich segmentów wykonania w bieżącym widoku, kliknij przycisk **wykonywania** w profil widocznej osi czasu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Raport profilu wykonania](../profiling/execution-profile-report.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

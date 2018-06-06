@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47129a84b38a4182514bf91be3c55704cf506410
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749203"
 ---
-# <a name="cvisenabled-function"></a>CvIsEnabled — Funkcja
+# <a name="cvisenabled-function"></a>Cvisenabled — funkcja
 Określa, czy dowolnej sesji jest włączony określonego dostawcy ETW.  
   
 ## <a name="syntax"></a>Składnia  
@@ -52,7 +53,7 @@ HRESULT CvIsEnabledEx(
  Wartość S_OK, gdy dostawca jest aktualnie włączony. Wartości S_FALSE, jeśli dostawca jest wyłączony. Kod błędu w przypadku, gdy było żadnych błędów. Użyć makra nie można sprawdzić warunku błędu, a następnie wyszukaj S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

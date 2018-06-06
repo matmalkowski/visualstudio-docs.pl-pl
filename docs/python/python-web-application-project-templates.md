@@ -1,7 +1,7 @@
 ---
 title: Szablony aplikacji sieci Web dla języka Python
 description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python za pomocą struktury Bottle, Flask i Django, łącznie z konfiguracji debugowania i publikowania w usłudze Azure App Service.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752043"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -41,7 +42,7 @@ Wszystkie szablony "Puste (RAM) projektu sieci Web" Tworzenie projektu z więcej
 | --- | --- |
 | Projekt sieci Web Bottle puste | Generuje minimalnego aplikacji w `app.py` ze stroną główną dla `/` i `/hello/<name>` strona, która zwraca `<name>` przy użyciu wbudowanego bardzo krótki szablonu strony. |
 | Puste Django Web Project | Generuje projekt Django o strukturze core Django lokacji, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Learning Django w kroku 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Projekt sieci Web platformy Flask puste | Generuje minimalnego aplikacja z jednym "Witaj świecie!" dla strony `/`. Ta aplikacja jest podobny do następującego szczegółowy opis kroków, w wyniku [Szybki Start: program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy Python](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Projekt sieci Web platformy Flask puste | Generuje minimalnego aplikacja z jednym "Witaj świecie!" dla strony `/`. Ta aplikacja jest podobny do następującego szczegółowy opis kroków, w wyniku [Szybki Start: program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy Python](../ide/quickstart-python.md?context=visualstudio/python/default). Zobacz też [Learning Flask krok 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupa aplikacji sieci Web
 
@@ -51,19 +52,19 @@ Wszystkie szablony "Projekt sieci Web (RAM)" utworzyć początkową aplikację s
 | --- | --- |
 | Projekt sieci Web bottle | Generuje pliki statyczne, dla których są zawarte w aplikacji `static` folderu i obsługiwane za pośrednictwem kodu w `app.py`. Routing dla poszczególnych stron znajduje się w `routes.py`i `views` folder zawiera szablony stron.|
 | Projekt sieci Web Django | Generuje projekt Django i aplikacja Django z trzech stron, obsługę uwierzytelniania i bazy danych SQLite (ale żadnych modeli danych). Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Learning Django w kroku 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Projekt sieci Web platformy flask | Generuje pliki statyczne, dla których są zawarte w aplikacji `static` folderu. Kod w `views.py` obsługuje routing z szablonami strony przy użyciu aparatu Jinja zawartych w `templates` folderu. `runserver.py` Plik zawiera kod uruchomienia. |
-| Projekt sieci Web platformy flask/Jade | Generuje tej samej aplikacji jako z szablonu "Projekt sieci Web platformy Flask", ale przy użyciu aparatu Jade tworzenia szablonów. |
+| Projekt sieci Web platformy flask | Generuje pliki statyczne, dla których są zawarte w aplikacji `static` folderu. Kod w `views.py` obsługuje routing z szablonami strony przy użyciu aparatu Jinja zawartych w `templates` folderu. `runserver.py` Plik zawiera kod uruchomienia. Zobacz [Learning Flask krok 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| Projekt sieci Web platformy flask/Jade | Generuje tej samej aplikacji jako z szablonu "Projekt sieci Web platformy Flask", ale dla aparatu tworzenia szablonów Jinja przy użyciu Jade rozszerzenia. |
 
 ### <a name="polls-group"></a>Grupy sond
 
-Szablony "Sond (RAM) projektu sieci Web" utworzyć początkową aplikację sieci web za pomocą którego użytkownicy mogą głosowania na pytania ankiety różnych. Każda aplikacja oparta na strukturze szablonów projektu "Web". Aby zarządzać ankiety i odpowiedzi użytkownika przy użyciu bazy danych. Aplikacje obejmują modeli odpowiednich danych i specjalnych aplikacji strony ("/ inicjatora") która ładuje sond z `samples.json` pliku.
+Szablony "Sond (RAM) projektu sieci Web" utworzyć początkową aplikację sieci web za pomocą którego użytkownicy mogą głosowania na pytania ankiety różnych. Każda aplikacja oparta na strukturze szablonów projektu "Web". Aby zarządzać ankiety i odpowiedzi użytkownika przy użyciu bazy danych. Aplikacje obejmują modeli danych oraz specjalne aplikacji strony (/ inicjatora) która ładuje sond z `samples.json` pliku.
 
 | Szablon | Opis |
 | --- | --- |
 | Projekt sieci Web Bottle sond | Generuje aplikację, która może działać względem bazy danych w pamięci, bazy danych MongoDB lub magazynu tabel Azure, która jest konfigurowana przy użyciu `REPOSITORY_NAME` zmiennej środowiskowej. Modeli danych i kod magazynu danych są zawarte w `models` folderu i `settings.py` plik zawiera kod, aby określić, w którym magazyn danych jest używany. |
 | Projekt sieci Web Django sond | Generuje projekt Django oraz aplikacji Django z trzech stron i bazy danych SQLite. Zawiera dostosowania interfejsu administracyjnego Django, aby umożliwić uwierzytelniony administratorowi tworzenie i zarządzanie nimi sond. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Learning Django w kroku 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Projekt sieci Web platformy Flask sond | Generuje aplikację, która może działać względem bazy danych w pamięci, bazy danych MongoDB lub magazynu tabel Azure, która jest konfigurowana przy użyciu `REPOSITORY_NAME` zmiennej środowiskowej. Modeli danych i kod magazynu danych są zawarte w `models` folderu i `settings.py` plik zawiera kod, aby określić, w którym magazyn danych jest używany. Aplikacja korzysta z aparatu Jinja dla szablonów strony. |
-| Projekt sieci Web platformy Flask/Jade sond | Generuje tej samej aplikacji jako z szablonu "Projektu sieci Web platformy Flask sond", ale przy użyciu aparatu Jade tworzenia szablonów. |
+| Projekt sieci Web platformy Flask sond | Generuje aplikację, która może działać względem bazy danych w pamięci, bazy danych MongoDB lub magazynu tabel Azure, która jest konfigurowana przy użyciu `REPOSITORY_NAME` zmiennej środowiskowej. Modeli danych i kod magazynu danych są zawarte w `models` folderu i `settings.py` plik zawiera kod, aby określić, w którym magazyn danych jest używany. Aplikacja korzysta z aparatu Jinja dla szablonów strony. Zobacz [Learning Flask krok 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| Projekt sieci Web platformy Flask/Jade sond | Generuje tej samej aplikacji jako z szablonu "Projektu sieci Web platformy Flask sond", ale dla aparatu tworzenia szablonów Jinja przy użyciu Jade rozszerzenia. |
 
 ## <a name="installing-project-requirements"></a>Instalowanie wymagania dotyczące projektu
 
@@ -71,7 +72,7 @@ Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiaj�
 
 ![Okno dialogowe, który instaluje wymagane pakiety szablonu projektu](media/template-web-requirements-txt-wizard.png)
 
-Jeśli używasz kontroli źródła, zwykle pominięto folderu środowiska wirtualnego następnie zgodnie z tym środowisku można utworzyć ponownie za pomocą tylko `requirements.txt`. Najlepszym sposobem, aby wykluczyć folder jest najpierw wybrać **będzie zainstalować je samodzielnie** w powyższym wierszu polecenia przed utworzeniem środowiska wirtualnego Wyłącz automatycznego zatwierdzania. Aby uzyskać więcej informacji, zobacz [samouczek dotyczący uczenia Django - kroki 1 i 2 i 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Jeśli używasz kontroli źródła, zwykle pominięto folderu środowiska wirtualnego następnie zgodnie z tym środowisku można utworzyć ponownie za pomocą tylko `requirements.txt`. Najlepszym sposobem, aby wykluczyć folder jest najpierw wybrać **będzie zainstalować je samodzielnie** w powyższym wierszu polecenia przed utworzeniem środowiska wirtualnego Wyłącz automatycznego zatwierdzania. Aby uzyskać więcej informacji, zobacz [samouczek dotyczący uczenia Django - kroki 1 i 2 i 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) i [samouczek dotyczący uczenia Flask - kroki 1 i 2 i 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
 
 W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [lokacji rozszerzenia](https://aka.ms/PythonOnAppService) i ręcznie zainstalować pakiety. Ponadto ponieważ usługa aplikacji Azure ma **nie** automatycznie zainstalować pakiety z `requirements.txt` po wdrożeniu w programie Visual Studio, wykonaj szczegółów konfiguracji [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 

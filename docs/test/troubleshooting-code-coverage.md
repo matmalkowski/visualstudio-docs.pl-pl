@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751569"
 ---
-# <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokrycia kodu
+# <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 
 Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotyczące zestawów natywnych i zarządzanych (pliki .dll i .exe). Jednak w niektórych przypadkach w oknie Wyniki pokrycia kodu jest wyświetlany błąd typu „Wygenerowano puste wyniki: …”. Istnieje kilka przyczyn, dlaczego otrzymasz pusty wyników. W tym artykule opisano, jak rozwiązać te problemy.
 
@@ -23,7 +24,7 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
 
 Jeśli wybierzesz **Analizuj pokrycie kodu** polecenia w Test menu a kompilacji i testy wykonane pomyślnie, należy wyświetlić listę wyników w oknie pokrycia kodu. Aby wyświetlić szczegółowe informacje, należy rozwinąć elementy.
 
-![Efektywne kolorowanie pokrycia kodu](../test/media/codecoverage1.png "CodeCoverage1")
+![Wyniki pokrycia kodu z kolorowanie](../test/media/codecoverage1.png)
 
 Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

@@ -11,17 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55d38dcb87081ea7fc0b16d7d500d13e72f77269
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751404"
 ---
 # <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Korzystanie z legendy wykresu podczas przeprowadzania analizy testów obciążenia
 
 Widok wykresów analizatora testu obciążenia, zawierają panel legendy, który wyświetla informacje dla każdego licznika wydajności, który jest skojarzony z aktualnie zaznaczonym wykresem.
 
-![Widok wykresów — Legenda](../test/media/load_viewlegend.png "Load_ViewLegend")
+![Widok wykresów — Legenda](../test/media/load_viewlegend.png)
 
 Następujące informacje są zawarte wewnątrz legendy:
 

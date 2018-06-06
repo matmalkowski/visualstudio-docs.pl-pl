@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8a6b42a9cff28cc57365081bc4a041524ece7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ca7f4befcb75a48e5b03637c143edfdd81b428a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767744"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Porady: dodawanie istniejącego modelu BDC do projektu SharePoint
-  Można dostosować, pakietu i Wdróż ponownie modelu łączności danych biznesowych (BDC) w programie Visual Studio, aby dodać plik modelu (.bdcm) do każdego projektu farmy programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint
+  Można dostosować, pakiet i Wdróż ponownie modelu łączności danych biznesowych (BDC) w programie Visual Studio, aby dodać plik modelu (*.bdcm*) do każdego projektu farmy programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Aby dodać plik modelu BDC do projektu SharePoint  
   
 1.  W **Eksploratora rozwiązań**, wybierz folder dla projektu programu SharePoint.  
   
-2.  Na pasku menu wybierz **projektu**, **Dodaj istniejący element**.  
+2.  Na pasku menu wybierz **projektu** > **Dodaj istniejący element**.  
   
 3.  W **Dodaj istniejący element** okno dialogowe, przejdź do lokalizacji pliku definicji modelu, który chcesz dodać do projektu, wybierz plik, a następnie wybierz **Dodaj** przycisku.  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/16/2018
   
      **Modelu łączności danych biznesowych** element został dodany do projektu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Porady: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
-  
+ 

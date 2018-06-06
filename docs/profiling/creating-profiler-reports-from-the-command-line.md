@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3433bef9b30c9b912d721b526ab11692a8de78af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749274"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z wiersza polecenia
-**VSPerfReport** narzędzia wiersza polecenia umożliwia tworzenie XML lub plik wartości rozdzielanych przecinkami (.csv) raportów z profilowania pliki danych (Vsp). Typy raportów VSPerfReport ściśle odpowiadające widoków na podstawie tabeli interfejsu dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można filtrować raport do wyświetlenia tylko kodu i wyświetlania tylko jeden segment pliku danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+**VSPerfReport** narzędzia wiersza polecenia umożliwia utworzenie. *XML* lub wartości oddzielanych przecinkami (. *CSV*) raporty z danych profilowania (. *Vsp*) plików. Typy raportów VSPerfReport ściśle odpowiadające widoków na podstawie tabeli interfejsu dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można filtrować raport do wyświetlenia tylko kodu i wyświetlania tylko jeden segment pliku danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
- Możesz również wprowadzić plików danych profilowania łatwiej można udostępnić przez osadzanie symboli plików Vsp i tworzenia raportu wstępnie przeanalizowane plików (vsps), które są one mniejsze i szybsze otworzyć.  
+ Można również ustawić plików danych profilowania łatwiej można udostępnić osadzanie symboli. *vsp* pliki i przez tworzenie raportu wstępnie przeanalizowane (. *vsps*) plików, które są one mniejsze i szybsze do otwarcia.  
   
 ## <a name="common-tasks"></a>Wspólne zadania
   
@@ -29,4 +30,4 @@ ms.lasthandoff: 05/17/2018
 |**Porównanie dwóch plików danych profilowania.** Utwórz raport "różnicowego", który porównuje dane dotyczące wydajności w dwóch plików danych profilowania.|-   [Porady: Tworzenie raportu porównania profilera z wiersza polecenia](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|  
 |**Wyświetl ślad wywołania i dane zdarzenia śledzenia dla systemu Windows (ETW).** Tworzenie raportu śledzenia wywołań, w którym wyświetlane są informacje o chronometrażu dla każdego punktu wejścia i wyjścia funkcji aplikacji i każde wywołanie innych funkcji w funkcji. Lub Utwórz szczegółowe listę wszystkich zdarzeń funkcji ETW, które zostały zebrane w przebiegu profilowania.|-   [Porady: Tworzenie raportu śledzenia wywołań](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|  
 |**Filtrowanie raportu.** Ogranicz raportu tylko funkcje kodu lub określony czas, w pliku danych profilowania.|-   [Porady: filtrowanie raportów z wiersza polecenia](../profiling/how-to-filter-reports-from-the-command-line.md)|  
-|**Tworzenie przenośnych plików danych profilowania.** Aby udostępnianie danych profilowania, można osadzić symboli dla profilowania do pliku Vsp. Można także utworzyć wstępnie przeanalizowane profilowania plik danych (vsps), który mniejszej i szybsze otworzyć.|-   [Tworzenie przenośnych plików danych profilowania](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|
+|**Tworzenie przenośnych plików danych profilowania.** Aby udostępnianie danych profilowania, można osadzić symboli dla przebiegu do profilowania. *vsp* pliku. Można również utworzyć wstępnie analizowanych danych profilowania (. *vsps*) mniejszej i szybsze otworzyć plik.|-   [Tworzenie przenośnych plików danych profilowania](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|

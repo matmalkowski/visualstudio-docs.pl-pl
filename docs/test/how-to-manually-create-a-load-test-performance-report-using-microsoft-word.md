@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750886"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word
 
@@ -45,7 +46,7 @@ Można ręcznie utworzyć raportów testu obciążenia w programie Microsoft Wor
 
 2.  (Opcjonalnie) Powiększ określonych wykresu, który chcesz skopiować do dokumentu programu Microsoft Word, jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz [porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Formant powiększania widoku wykresu](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Formant powiększania widoku wykresu](../test/media/ltest_zoomcontrol.png)
 
 3.  Na wykresie, który ma zostać skopiowany do dokumentu programu Microsoft Word, kliknij prawym przyciskiem myszy i wybierz **kopiowania**.
 

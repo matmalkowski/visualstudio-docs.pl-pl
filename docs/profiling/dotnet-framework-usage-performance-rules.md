@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766025"
 ---
-# <a name="net-framework-usage-performance-rules"></a>.NET Zasady wydajności użycia frameworku
+# <a name="net-framework-usage-performance-rules"></a>Reguły wydajności dotyczące użycia programu .NET Framework
 Reguły wydajności środowiska.NET Framework użycia kategorii zidentyfikować konkretnych metod, które mogą być optymalizowane, a także identyfikowania wzorców użycia bardziej ogólne, takie jak odzyskiwanie pamięci i rywalizacji blokad, które mogą zostać sprawdzone pod kątem problemów z wydajnością.  
   
 |||  
@@ -33,6 +34,6 @@ Reguły wydajności środowiska.NET Framework użycia kategorii zidentyfikować 
 |[DA0021: Duża częstotliwość odzyskiwania pamięci generacji 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|Stosunkowo dużej liczby obiektów pamięci .NET jest odzyskane w generacji 1 wyrzucanie elementów bezużytecznych. Jeśli zbyt wiele obiektów o krótkim okresie przetrwać kolekcji pokolenia 0, kosztów zarządzania pamięcią można łatwo stają się nadmierne.|  
 |[DA0022: Duża częstotliwość odzyskiwania pamięci generacji 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Duża liczba obiektów pamięci .NET jest odzyskane w generacji 2 wyrzucanie elementów bezużytecznych. Jeśli zbyt wiele obiektów o krótkim okresie przetrwać kolekcji generacji 1, kosztów zarządzania pamięci może łatwo stać się nadmierne. Ta zasada generowane, gdy liczba rywalizacji blokad przekracza próg górny wartość reguły DA0005.|  
 |[DA0023: Duże zużycie czasu procesora CPU przez odzyskiwanie pamięci](../profiling/da0023-high-gc-cpu-time.md)|Dane wydajności systemu, które są zbierane podczas profilowania oznacza ilość czasu przeznaczonego na wyrzucanie elementów bezużytecznych — w znaczący w porównaniu z czasem przetwarzania całkowita liczba aplikacji.|  
-|[DA0024: Nadmierne zużycie czasu procesora CPU przez odzyskiwanie pamięci](../profiling/da0024-excessive-gc-cpu-time.md)|Dane wydajności systemu, które są zbierane podczas profilowania wskazuje, że ilość czasu przeznaczonego na wyrzucanie elementów bezużytecznych — w jest zbyt wysoka w porównaniu z czasem przetwarzania całkowita liczba aplikacji. Ta zasada generowane, gdy czas spędzony w pamięci przekracza wartość górnej wartości progowej reguły DA0023.|  
-|[DA0038: Wysoki współczynnik rywalizacji o blokadę](../profiling/da0038-high-rate-of-lock-contentions.md)|Dane wydajności systemu, które są zbierane z danych profilowania wskazuje znacznie wysoka liczba rywalizacji blokad, który wystąpił podczas wykonywania aplikacji. Należy rozważyć profilowanie, aby znaleźć przyczynę rywalizacji ponownie, używając metoda profilowania współbieżności.|  
-|[DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Dane wydajności systemu, które są zbierane z danych profilowania wskazuje zbyt wysoka liczba rywalizacji blokad, który wystąpił podczas wykonywania aplikacji. Należy rozważyć profilowanie, aby znaleźć przyczynę rywalizacji ponownie, używając metoda profilowania współbieżności. Ta zasada generowane, gdy liczba rywalizacji blokad przekracza próg górny wartość reguły DA0038.|
+|[DA0024: Nadmierne GC CPU czasu](../profiling/da0024-excessive-gc-cpu-time.md)|Dane wydajności systemu, które są zbierane podczas profilowania wskazuje, że ilość czasu przeznaczonego na wyrzucanie elementów bezużytecznych — w jest zbyt wysoka w porównaniu z czasem przetwarzania całkowita liczba aplikacji. Ta zasada generowane, gdy czas spędzony w pamięci przekracza wartość górnej wartości progowej reguły DA0023.|  
+|[DA0038: Wysoka liczba rywalizacji blokad](../profiling/da0038-high-rate-of-lock-contentions.md)|Dane wydajności systemu, które są zbierane z danych profilowania wskazuje znacznie wysoka liczba rywalizacji blokad, który wystąpił podczas wykonywania aplikacji. Należy rozważyć profilowanie, aby znaleźć przyczynę rywalizacji ponownie, używając metoda profilowania współbieżności.|  
+|[DA0039: Bardzo wysoka liczba rywalizacji blokad](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Dane wydajności systemu, które są zbierane z danych profilowania wskazuje zbyt wysoka liczba rywalizacji blokad, który wystąpił podczas wykonywania aplikacji. Należy rozważyć profilowanie, aby znaleźć przyczynę rywalizacji ponownie, używając metoda profilowania współbieżności. Ta zasada generowane, gdy liczba rywalizacji blokad przekracza próg górny wartość reguły DA0038.|

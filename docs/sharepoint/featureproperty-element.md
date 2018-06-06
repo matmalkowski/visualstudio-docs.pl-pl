@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ff9571adc23c9ddc86de96736b9d37ef1cec5d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691821"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766968"
 ---
-# <a name="featureproperty-element"></a>FeatureProperty — Element
+# <a name="featureproperty-element"></a>FeatureProperty — element
   Reprezentuje właściwości niestandardowej, która jest zawarta w funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do właściwości, w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
@@ -32,7 +32,7 @@ ms.locfileid: "34691821"
     Value = "Property value" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
   
 ### <a name="attributes"></a>Atrybuty  
@@ -42,10 +42,10 @@ ms.locfileid: "34691821"
 |**Key**|Wymagane **xs:string** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania wartości właściwości. Każda właściwość musi mieć klucz, który jest unikatowy w ramach funkcji.|  
 |**Wartość**|Wymagane **xs:string** atrybutu.<br /><br /> Wartość właściwości.|  
   
-### <a name="child-elements"></a>Elementy podrzędne  
+### <a name="child-elements"></a>Elementy podrzędne
  Brak.  
   
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
   
 |Element|Opis|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691821"
 ## <a name="remarks"></a>Uwagi  
  Aby uzyskać więcej informacji na temat właściwości funkcji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informacje o elementach  
+## <a name="element-information"></a>Informacje o elementach
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691821"
 |**Sprawdzanie poprawności pliku**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

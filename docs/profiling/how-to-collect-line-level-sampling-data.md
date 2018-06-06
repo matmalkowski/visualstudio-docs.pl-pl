@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765703"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Porady: zbieranie danych pobierania próbek na poziomie wiersza
 Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie funkcji obciążenie procesora, takich jak funkcja, która ma wysoką wyłącznych próbek, procesor ma poświęcić większość czasu profilera.  
@@ -35,11 +36,11 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
   
 -   Adres funkcji.  
   
--   Rozpocznij wiersza — numer wiersza próbki kodu.  
+-   Wiersze rozpocząć — numer wiersza próbki kodu.  
   
 -   Koniec linii - końcowy numer wiersza źródłowego. Zazwyczaj jest taka sama jak danych "Wiersza begin", z wyjątkiem po jednej instrukcji program obejmuje wiele wierszy kodu źródłowego.  
   
--   Znak rozpocząć - kolumnę początku próbka. Zwykle jest to 0 z wyjątkiem przypadków, gdy jeden wiersz zawiera wiele instrukcji programu.  
+-   Znaki rozpocząć - kolumnę początku próbka. Zwykle jest to 0 z wyjątkiem przypadków, gdy jeden wiersz zawiera wiele instrukcji programu.  
   
 -   Znak end - końcowy kolumny próbka.  
   
@@ -48,7 +49,7 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
  W **modułów** wyświetlić, jeśli funkcja statystyki na poziomie wiersza, statystyki są zagnieżdżone w każdej funkcji. Ponadto przedstawiono statystyki na poziomie protokołu IP, które są zagnieżdżone w każdym wierszu.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Wyłącz pobierania próbek na poziomie wiersza dla zarządzanego kodu  
- Próbkowanie na poziomie wiersza jest domyślnie włączona. Mogą wyłączyć zbieranie danych na poziomie wiersza dla kodu zarządzanego, wykonując jedną z następujących czynności:  
+ Próbkowanie na poziomie wiersza jest domyślnie włączona. Można wyłączyć kolekcji danych na poziomie wiersza dla zarządzanego kodu za pomocą jednej z następujących poleceń:  
   
 -   Przed rozpoczęciem profilowania, wpisz **VSPerfCLREnv /samplelineoff**. Dotyczy to zarówno aplikacji i usług.  
   
@@ -56,6 +57,6 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
   
 -   Podczas uruchamiania aplikacji, wpisz **VSPerfCmd /lineoff \<inne argumenty >**.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)
+ [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

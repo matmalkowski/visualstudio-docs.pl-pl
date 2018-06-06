@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751861"
 ---
 # <a name="load-test-results-summary-overview"></a>Podsumowanie wyników testów obciążenia — Przegląd
 
 Po uruchomieniu testu obciążenia, można wyświetlić podsumowanie testu obciążenia, aby szybko poznać wyniki. Podsumowanie testu obciążenia zapewnia klucza wyniki w compact i łatwo odczytać formatu. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikacji wyniki do uczestników. Podsumowanie testu obciążenia jest również domyślny widok po otwarciu wyniku testu obciążenia z testu obciążenia wcześniej wykonywania. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Widok podsumowania](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Widok podsumowania](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Podsumowanie testu obciążenia
 

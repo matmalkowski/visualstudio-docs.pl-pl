@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751718"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows
 
@@ -45,11 +46,11 @@ W poniższych procedurach opisano kroki tworzenia, uruchamiania i debugowania te
 
 6.  Pozostaw **Utwórz katalog rozwiązania** opcja wybrana i wybierz **OK** przycisku.
 
-     ![Biblioteka testów jednostkowych dostosowane](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Biblioteka testów jednostkowych dopasowane](../test/media/unit_test_win8_1.png)
 
      Eksplorator rozwiązań jest wypełniana jednostkowy projekt testowy platformy uniwersalnej systemu Windows i edytora kodu wyświetla zatytułowany UnitTest1 testu jednostkowego domyślne.
 
-     ![Nowe dopasowane jednostkowy projekt testowy](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nowe dopasowane jednostkowy projekt testowy](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Edytowanie pliku manifestu aplikacji platformy uniwersalnej systemu Windows jednostkowy projekt testowy
 
@@ -99,7 +100,7 @@ W edytorze kodu edytowanie testu jednostkowego i Dodaj potwierdzeń i logiki wym
     >
     > Ponadto istnieje możliwość **Debuguj zaznaczone testy**, **Otwórz testu**i użyj **właściwości** opcji.
     >
-    > ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Eksplorator testów jednostkowych &#45; menu kontekstowe uni testu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Jednostka uruchomień testów. Po zakończeniu Eksploratora testów Wyświetla stan testów, czas, który upłynął oraz link do źródła.
 

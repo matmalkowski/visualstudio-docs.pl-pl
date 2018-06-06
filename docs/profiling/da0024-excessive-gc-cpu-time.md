@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e16c273dee14e45e1fc4dc3bb69b27236a6802f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9abd80ff9d29c558f50eef0f80ad46e868180596
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766119"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne wykorzystanie czasu GC CPU
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne GC CPU czasu
 |||  
 |-|-|  
 |Identyfikator reguły|DA0024|  
@@ -47,4 +48,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięci platformy .NET CLR\\% czasu potrzebnego na Odzyskiwanie** kolumny. Określa, czy określone fazy wykonywania programu obciążenie pamięci zarządzanej operacji wyrzucania elementów bezużytecznych w przypadku większych niż inne faz. Porównaj wartości wartości % czasu odzyskiwania pamięci na stopień wyrzucania elementów bezużytecznych zgłoszone w **# kolekcje pokolenia 0**, **# pamięci Gen 1**, **# pamięci Gen 2** wartości .  
   
- Czas w wartości GC (%) próbuje ilość czasu, jaki aplikacja zużywa wykonywania wyrzucanie elementów bezużytecznych proporcjonalny do sumy przetwarzania raportu. Należy pamiętać, że istnieją okoliczności, gdy czas w wartości GC (%) może raportować bardzo wysokiej wartości, ale nie jest z powodu nadmiernego wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji o sposobie czas wartości GC (%) jest obliczane, zobacz [różnica między wydajności dane zgłoszone przez różnych narzędzi - 4](http://go.microsoft.com/fwlink/?LinkId=177863) wpisu **Weblog w Maoni** w witrynie MSDN. Jeśli występują błędy strony lub aplikacji są zastępowane przez inne wyższy priorytet pracy na komputerze podczas wyrzucania elementów bezużytecznych, czas licznika GC (%), zostaną one zastosowane te dodatkowe opóźnienia.
+ Czas w wartości GC (%) próbuje ilość czasu, jaki aplikacja zużywa wykonywania wyrzucanie elementów bezużytecznych proporcjonalny do sumy przetwarzania raportu. Należy pamiętać, że istnieją okolicznościach, gdy czas w wartości GC (%) może raportować wysokiej wartości, ale nie jest z powodu nadmiernego wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji o sposobie czas wartości GC (%) jest obliczane, zobacz [różnica między wydajności dane zgłoszone przez różnych narzędzi - 4](http://go.microsoft.com/fwlink/?LinkId=177863) wpisu **Weblog w Maoni** w witrynie MSDN. Jeśli występują błędy strony lub aplikacji jest opóźnieniem przez inne wyższy priorytet pracy na komputerze podczas wyrzucania elementów bezużytecznych, czas licznika GC (%), zostaną one zastosowane te dodatkowe opóźnienia.

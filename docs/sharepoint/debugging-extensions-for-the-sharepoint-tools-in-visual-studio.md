@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4e2e6f3858833be49caf59d4d53fc1f8a131f10
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765297"
 ---
-# <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio
   Można debugować rozszerzeń narzędzi SharePoint w eksperymentalnym wystąpieniu lub prawidłowe wystąpienie programu Visual Studio. Jeśli potrzebujesz rozwiązać problem z rozszerzeniem, można również zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować sposób wykonuje polecenia SharePoint w Visual Studio.  
   
-## <a name="debugging-extensions-in-the-experimental-instance-of-visual-studio"></a>Debugowanie rozszerzeń w eksperymentalnym wystąpieniu programu Visual Studio  
+## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Debugowanie rozszerzeń eksperymentalne wystąpienie programu Visual Studio
  Do ochrony środowiska deweloperskiego Visual Studio przed przypadkowym uszkodzeniem przez rozszerzenia zastosowaniem, programu Visual Studio SDK oferuje alternatywne wystąpienie programu Visual Studio o nazwie *eksperymentalne wystąpienie*, którego można używać Aby zainstalować i przetestować rozszerzenia. Tworzenie nowych rozszerzeń przy użyciu prawidłowe wystąpienie programu Visual Studio, ale debugowania i uruchamiać je w eksperymentalnym wystąpieniu. Aby uzyskać więcej informacji, zobacz [eksperymentalne wystąpienie](/visualstudio/extensibility/the-experimental-instance).  
   
  Jeśli wdrażania rozszerzenia przy użyciu projektu VSIX, projektu VSIX jest projekt startowy w rozwiązaniu Visual Studio automatycznie instalowany i uruchamiany rozszerzenia w eksperymentalnym wystąpieniu, podczas debugowania rozwiązania. Projekt startowy jest projekt, który jest uruchamiany podczas debugowania rozwiązania, które zawiera wiele projektów. Aby uzyskać więcej informacji o używaniu projektu VSIX do wdrażania rozszerzenia, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [Przewodnik: Wywoływanie modelu obiektów klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
-## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>Debugowanie rozszerzeń w regularnych wystąpienie programu Visual Studio  
+## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Debugowanie rozszerzeń w regularnych wystąpienie programu Visual Studio
  Jeśli chcesz debugować projekt rozszerzenia w regularnych wystąpienie programu Visual Studio, należy najpierw zainstalować rozszerzenie w regularnych wystąpienia. Następnie dołącz debuger do drugiego proces programu Visual Studio. Po zakończeniu można usunąć rozszerzenia, aby nie ładuje na komputerze dewelopera.  
   
 #### <a name="to-install-the-extension"></a>Aby zainstalować to rozszerzenie  
   
 1.  Zamknij wszystkie wystąpienia programu Visual Studio.  
   
-2.  W folderze wyjściowym kompilacji projektu rozszerzenia, otwórz plik .vsix, kliknij go dwukrotnie lub otwieranie menu skrótów, a następnie wybierając **Otwórz**:  
+2.  Otwórz w folderze wyjściowym kompilacji projektu rozszerzenia *.vsix* pliku, kliknij go dwukrotnie lub otwieranie menu skrótów, a następnie wybierając **Otwórz**:  
   
 3.  W **Instalator rozszerzenia programu Visual Studio** oknie dialogowym Wybierz wersji programu Visual Studio, do której chcesz zainstalować rozszerzenie, a następnie wybierz pozycję **zainstalować** przycisku.  
   
-     Visual Studio instaluje pliki rozszerzeń %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nazwisko autora*\\*Nazwa rozszerzenia* \\ *wersji*. Ostatnie trzy foldery w tej ścieżce są tworzone na podstawie `Author`, `Name`, i `Version` elementów w pliku extension.vsixmanifest rozszerzenia.  
+     Visual Studio instaluje pliki rozszerzeń %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nazwisko autora*\\*Nazwa rozszerzenia* \\ *wersji*. Ostatnie trzy foldery w tej ścieżce są tworzone na podstawie `Author`, `Name`, i `Version` elementów w *extension.vsixmanifest* pliku rozszerzenia.  
   
 4.  Po zainstalowaniu rozszerzenia programu Visual Studio wybierz **Zamknij** przycisku.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Na pasku menu wybierz **debugowania**, **dołączyć do procesu**.  
   
-5.  W **dostępne procesy** wybierz devenv.exe. Ten wpis odwołuje się do drugiego wystąpienia programu Visual Studio; to wystąpienie chcesz debugować rozszerzenia projektu w.  
+5.  W **dostępne procesy** wybierz *devenv.exe*. Ten wpis odwołuje się do drugiego wystąpienia programu Visual Studio; to wystąpienie chcesz debugować rozszerzenia projektu w.  
   
 6.  Wybierz **Attach** przycisku.  
   
@@ -92,8 +93,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.  
   
-## <a name="debugging-sharepoint-commands"></a>Debugowanie polecenia SharePoint  
- Jeśli chcesz debugować polecenie programu SharePoint, która jest częścią rozszerzeń narzędzi SharePoint, należy dołączyć debuger do procesu vssphost4.exe. Jest to proces 64-bitowego hosta, który wykonuje polecenia programu SharePoint. Aby uzyskać więcej informacji o poleceniach programu SharePoint oraz vssphost4.exe, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+## <a name="debug-sharepoint-commands"></a>SharePoint — polecenia Debug
+ Jeśli chcesz debugować polecenie programu SharePoint, która jest częścią rozszerzeń narzędzi SharePoint, należy dołączyć debugera do *vssphost4.exe* procesu. Jest to proces 64-bitowego hosta, który wykonuje polecenia programu SharePoint. Aby uzyskać więcej informacji dotyczących poleceń programu SharePoint i *vssphost4.exe*, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Aby dołączyć debuger do procesu vssphost4.exe  
   
@@ -101,17 +102,17 @@ ms.lasthandoff: 04/16/2018
   
 2.  W wystąpieniu programu Visual Studio debugger, w którym jest uruchomiony na pasku menu, wybierz **debugowania**, **dołączyć do procesu**.  
   
-3.  W **dostępne procesy** wybierz vssphost.exe.  
+3.  W **dostępne procesy** wybierz *vssphost.exe*.  
   
     > [!NOTE]  
-    >  Jeśli vssphost.exe nie ma na liście, należy uruchomić proces vssphost4.exe w wystąpieniu programu Visual Studio, w którym są uruchomione rozszerzenia. Zazwyczaj polega to na wykonywanie akcję wywołującą Visual Studio, aby połączyć się z witryną programu SharePoint na komputerze dewelopera. Na przykład Visual Studio rozpoczyna vssphost4.exe po rozwinięciu węzła połączenie lokacji (węzła, który zawiera adres URL witryny) w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera** okna, lub gdy użytkownik Dodaj niektórych elementów projektu SharePoint, takie jak **wystąpienia listy** lub **odbiorcy zdarzeń** elementy do projektu programu SharePoint.  
+    >  Jeśli vssphost.exe nie ma na liście, należy uruchomić *vssphost4.exe* procesów w wystąpieniu programu Visual Studio, w którym są uruchomione rozszerzenia. Zazwyczaj polega to na wykonywanie akcję wywołującą Visual Studio, aby połączyć się z witryną programu SharePoint na komputerze dewelopera. Na przykład Visual Studio rozpoczyna *vssphost4.exe* po rozwinięciu węzła połączenie lokacji (węzła, który zawiera adres URL witryny) w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**  okna, lub po dodaniu niektórych elementów projektu SharePoint, takich jak **wystąpienia listy** lub **odbiorcy zdarzeń** elementy do projektu programu SharePoint.  
   
 4.  Wybierz **Attach** przycisku.  
   
 5.  W wystąpieniu programu Visual Studio, która jest debugowana wykonaj kroki, które są wymagane do wykonania polecenia.  
   
-## <a name="modifying-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modyfikowanie wartości rejestru w celu debugowania programu SharePoint rozszerzeń narzędzi  
- Podczas debugowania rozszerzeń narzędzi SharePoint w Visual Studio można zmodyfikować wartości rejestru, aby ułatwić rozwiązywanie problemów z rozszerzeniem. Wartości istnieje w kluczu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools. Domyślnie te wartości nie istnieje.  
+## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Zmodyfikuj wartości rejestru w celu debugowania rozszerzeń narzędzi SharePoint
+ Podczas debugowania rozszerzeń narzędzi SharePoint w Visual Studio można zmodyfikować wartości rejestru, aby ułatwić rozwiązywanie problemów z rozszerzeniem. Wartości istnieje w obszarze **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** klucza. Domyślnie te wartości nie istnieje.  
   
  Aby ułatwić rozwiązywanie problemów z wszelkich rozszerzeń narzędzi SharePoint, można utworzyć i ustawić wartość EnableDiagnostics. W poniższej tabeli opisano tę wartość.  
   
@@ -123,14 +124,13 @@ ms.lasthandoff: 04/16/2018
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|AttachDebuggerToHostProcess|REG_DWORD, który określa, czy wyświetlać okno dialogowe, które umożliwia dołączanie debugera do vssphost4.exe zaraz po jego uruchomieniu. Jest to przydatne, jeśli polecenie, które chcesz debugować jest wykonywane przez vssphost.exe natychmiast po jej uruchomieniu, a nie jest wystarczająco dużo czasu, można ręcznie dołączyć debugera przed wykonaniem polecenia. Aby wyświetlić okno dialogowe, wywołania vssphost4.exe <xref:System.Diagnostics.Debugger.Break%2A> metody podczas jej uruchamiania.<br /><br /> Aby włączyć to zachowanie, ustaw tę wartość 1. Aby wyłączyć to zachowanie, ustaw tę wartość na 0, lub Usuń tę wartość.<br /><br /> Jeśli ta wartość jest ustawiona na 1, można także zwiększyć wartość HostProcessStartupTimeout w celu utworzenia wystarczająco dużo czasu, można dołączyć debugera przed Visual Studio oczekuje vssphost4.exe sygnalizują, że uruchomiona pomyślnie.|  
+|AttachDebuggerToHostProcess|REG_DWORD, który określa, czy wyświetlać okno dialogowe, które umożliwia dołączanie debugera do *vssphost4.exe* zaraz po jego uruchomieniu. Jest to przydatne, jeśli polecenie, które chcesz debugować jest wykonywane przez vssphost.exe natychmiast po jej uruchomieniu, a nie jest wystarczająco dużo czasu, można ręcznie dołączyć debugera przed wykonaniem polecenia. Aby wyświetlić okno dialogowe *vssphost4.exe* wywołania <xref:System.Diagnostics.Debugger.Break%2A> metody podczas jej uruchamiania.<br /><br /> Aby włączyć to zachowanie, ustaw tę wartość 1. Aby wyłączyć to zachowanie, ustaw tę wartość na 0, lub Usuń tę wartość.<br /><br /> Jeśli ta wartość jest ustawiona na 1, możesz zwiększyć wartość HostProcessStartupTimeout w celu utworzenia wystarczająco dużo czasu, można dołączyć debugera przed Visual Studio oczekuje *vssphost4.exe* sygnalizują, że uruchomiona pomyślnie.|  
 |ChannelOperationTimeout|REG_DWORD, który określa czas w sekundach, przez Visual Studio czeka na wykonanie polecenia programu SharePoint. Jeśli polecenie nie zostanie wykonane w czasie, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> jest generowany.<br /><br /> Wartość domyślna to 120 sekund.|  
-|HostProcessStartupTimeout|REG_DWORD, który określa czas w sekundach, przez Visual Studio czeka na vssphost4.exe sygnalizują, który został uruchomiony pomyślnie. Jeśli vssphost4.exe nie można sygnalizować pomyślne uruchomienie w czasie, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> jest generowany.<br /><br /> Wartość domyślna to 60 sekund.|  
-|MaxReceivedMessageSize|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach wiadomości WCF, które są przekazywane między vssphost4.exe i Visual Studio.<br /><br /> Wartość domyślna to 1048576 bajtów (1 MB).|  
-|MaxStringContentLength|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach ciągów, które są przekazywane między vssphost4.exe i Visual Studio.<br /><br /> Wartość domyślna to 1048576 bajtów (1 MB).|  
+|HostProcessStartupTimeout|REG_DWORD, który określa czas w sekundach, że program Visual Studio czeka na *vssphost4.exe* sygnalizują, że uruchomiona pomyślnie. Jeśli *vssphost4.exe* nie można sygnalizować pomyślne uruchomienie w czasie, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> jest generowany.<br /><br /> Wartość domyślna to 60 sekund.|  
+|MaxReceivedMessageSize|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach wiadomości WCF, które są przekazywane między Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1048576 bajtów (1 MB).|  
+|MaxStringContentLength|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach ciągów, które są przekazywane między Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1048576 bajtów (1 MB).|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
-  
+

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747498"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Porady: Wyświetlanie numerów wierszy w Edytorze
 Można wyświetlić lub ukryć linię numerowanie w kodzie.
@@ -37,7 +38,7 @@ Można wyświetlić lub ukryć linię numerowanie w kodzie.
 
 2.  Wybierz **numerów linii** wyboru.
 
-    ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")
+    ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs_displaylinenumbers.png)
 
 > [!NOTE]
 > W zależności od języka lub ustawień może być konieczne wybranie **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe, aby ujawnić **wszystkie języki** węzła podrzędnego.

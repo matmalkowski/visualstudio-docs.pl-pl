@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750730"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
 
@@ -72,17 +73,17 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do **QTAgen
 
 4.  Wybierz **dane wyjściowe** łącze w wynikach narzędzia Eksplorator testów.
 
-     ![Połącz dane wyjściowe w Eksploratorze testów](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Dane wyjściowe link w Eksploratora testów](../test/media/cuit_htmlactionlog1.png)
 
      Zostaną wyświetlone dane wyjściowe dla testu, który zawiera łącze do dziennika akcji.
 
-     ![Wyniki i łącza dane wyjściowe z kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Wyniki i łącza dane wyjściowe z kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog2.png)
 
 5.  Wybierz *UITestActionLog.html* łącza.
 
      Dziennik jest wyświetlany w przeglądarce sieci web.
 
-     ![Plik dziennika testu kodowanego interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Plik dziennika w kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Zobacz także
 

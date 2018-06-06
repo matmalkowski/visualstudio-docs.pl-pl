@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751705"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -22,7 +23,7 @@ Widok wykresu zawiera graficzną reprezentację węzłów globalne schematu i re
 
  Na poniższej ilustracji przedstawiono widok wykresu z sześciu węzłów globalnych na jego powierzchnię.
 
- ![Widok wykresu projektanta schematu XML](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Widok wykresu projektanta schematu XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Dzięki powierzchni projektowej
 
@@ -34,7 +35,7 @@ Widok wykresu zawiera graficzną reprezentację węzłów globalne schematu i re
 
  Jeśli pole pozostanie puste, powierzchnię projektu edytora XML **Eksploratora schematu XML**, i znak wodny są pokazywane. *Znaku wodnego* znajduje się lista łącza do widoków projektanta XSD.
 
- ![Projektant XSD; Widok wykresu](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Projektant XSD; Widok wykresu](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Jeśli zestaw schemat zawiera błędy, na końcu listy jest wyświetlany następujący tekst: "Użyj listy błędów możesz wyświetlać i naprawiać błędy w zestawie".
 
@@ -98,7 +99,7 @@ Widok wykresu zawiera graficzną reprezentację węzłów globalne schematu i re
 
  Następujące przyciski paska narzędzi XSD są włączone, gdy widok wykresu jest aktywny.
 
- ![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opcja|Opis|
 |------------|-----------------|

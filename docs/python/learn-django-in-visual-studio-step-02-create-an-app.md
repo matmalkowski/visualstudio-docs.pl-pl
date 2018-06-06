@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34469014"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750509"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Samouczek krok 2: tworzenie aplikacji Django z widokami i strony szablonów
 
@@ -107,7 +107,7 @@ W tym punkcie ponownie uruchomić projekt w programie Visual Studio (przy użyci
 
 Ponieważ wprowadzono zmiany w kodzie i zostały one przetestowane pomyślnie, obecnie jest to doskonały moment, aby przejrzeć i zatwierdź zmiany do kontroli źródła. Wykonania kolejnych kroków tego samouczka przypomnienia o odpowiedni czas zatwierdzenia ponownie do kontroli źródła i odwołują się w tej sekcji.
 
-1. Wybierz przycisk zmiany wzdłuż dolnej części programu Visual Studio (okręgi poniżej), który przechodzi do **Team Explorer**.
+1. Wybierz przycisk zmiany wzdłuż dolnej części programu Visual Studio (zaznaczona kółkiem poniżej), który przechodzi do **Team Explorer**.
 
     ![Przycisk zmiany kontroli źródła na pasku stanu programu Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ Poniższe kroki przedstawiają sposób używania szablony stron:
 
 1. Uruchom projekt i sprawdź dane wyjściowe. Powinien zostać wyświetlony komunikat podobny do tego wyświetlonego kroku 2-2, co oznacza, że szablon działania.
 
-    Obserwować, jednak, że kod HTML, można użyć w `content` właściwości renderuje tylko w postaci zwykłego tekstu, ponieważ `render` funkcja automatycznie specjalne tego HTML. Mimo że można uzyskać wokół anulowanie, najlepiej należy unikać wbudowanego kodu HTML w pierwszej kolejności. Formatowanie i style najlepiej pozostawić w szablonie strony nie znajduje się w kodzie, i jest proste sprawa można utworzyć dodatkowe zmienne w razie potrzeby.
-
-    Na przykład zmienić `templates/index.html` odpowiadające następujący kod, który dodaje tytuł strony i przechowuje wszystkie formatowania w szablonie strony:
+    Obserwować, jednak, że kod HTML, można użyć w `content` właściwości renderuje tylko w postaci zwykłego tekstu, ponieważ `render` funkcja automatycznie specjalne tego HTML. Automatyczne anulowanie zapobiec przypadkowym luk w zabezpieczeniach na ataki iniekcji: deweloperów często zebranie danych wejściowych z jednej strony i używać go jako wartość w innym za pośrednictwem symbol zastępczy szablonu. Anulowanie służy również jako monitu, że jest ponownie najlepiej trzymać HTML w szablonie strony i z kodu. Na szczęście jest proste sprawa można utworzyć dodatkowe zmienne w razie potrzeby. Na przykład zmienić `templates/index.html` odpowiadające następujący kod, który dodaje tytuł strony i przechowuje wszystkie formatowania w szablonie strony:
 
     ```html
     <html>

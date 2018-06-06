@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1509c4fda8759e3ad8dece654921fc56b8b9c2e7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26b5296dcbd2630d70bae91c539df36a30e97722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750145"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
 |||  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Opis reguły  
  Program Microsoft .NET wspólnego języka środowiska wykonawczego (CLR) zapewnia mechanizm zarządzania automatyczne pamięci używane przez moduł Garbage Collector do odzyskać pamięci z obiektów, które nie jest już używane przez aplikację. Moduł zbierający elementy bezużyteczne to zorientowane na generowanie oparte na założeniu, że wiele są krótkim okresie. Zmienne lokalne, na przykład należy krótkim okresie. Nowo utworzone obiekty Uruchom podczas generowania 0 (gen 0), a następnie postępu na pokolenie 1 po ich przetrwać wyrzucanie elementów bezużytecznych Uruchom, a na koniec przejście do generacji 2 Jeśli aplikacja nadal używa ich.  
   
- Często i zazwyczaj bardzo wydajnie, są zebrane obiektów generacji 0. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec długotrwałe obiektów podczas generowania 2 powinny być gromadzone nawet rzadziej. Kolekcja generacji 2, czyli pełnego wyrzucania elementów bezużytecznych, uruchom również jest najbardziej kosztowna operacja.  
+ Obiektów podczas generowania 0 są zbierane często i wydajne. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec długotrwałe obiektów podczas generowania 2 powinny być gromadzone nawet rzadziej. Kolekcja generacji 2, czyli pełnego wyrzucania elementów bezużytecznych, uruchom również jest najbardziej kosztowna operacja.  
   
  Ta zasada generowane, gdy ilość czasu przeznaczonego na wyrzucanie elementów bezużytecznych — w porównaniu z aplikacji całkowity czas przetwarzania jest znacząca.  
   
@@ -47,4 +48,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięci platformy .NET CLR\\% czasu potrzebnego na Odzyskiwanie** kolumny. Określa, czy określone fazy wykonywania programu obciążenie pamięci zarządzanej operacji wyrzucania elementów bezużytecznych w przypadku większych niż inne faz. Porównaj wartości wartości % czasu odzyskiwania pamięci na stopień wyrzucania elementów bezużytecznych zgłoszone w **# kolekcje pokolenia 0**, **# pamięci Gen 1**, **# pamięci Gen 2** wartości .  
   
- Czas w wartości GC (%) próbuje ilość czasu, jaki aplikacja zużywa wykonywania wyrzucanie elementów bezużytecznych proporcjonalny do sumy przetwarzania raportu. Należy pamiętać, że istnieją okoliczności, gdy czas w wartości GC (%) może raportować bardzo wysokiej wartości, ale nie jest z powodu nadmiernego wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji o sposobie czas wartości GC (%) jest obliczane, zobacz [różnica między wydajności dane zgłoszone przez różnych narzędzi - 4](http://go.microsoft.com/fwlink/?LinkId=177863) wpisu **Weblog w Maoni** w witrynie MSDN. Jeśli występują błędy strony lub aplikacji są zastępowane przez inne wyższy priorytet pracy na komputerze podczas wyrzucania elementów bezużytecznych, czas licznika GC (%), zostaną one zastosowane te dodatkowe opóźnienia.
+ Czas w wartości GC (%) próbuje ilość czasu, jaki aplikacja zużywa wykonywania wyrzucanie elementów bezużytecznych proporcjonalny do sumy przetwarzania raportu. Należy pamiętać, istnieją okolicznościach, gdy czas w wartości GC (%) może raportować wysokiej wartości, ale nie jest z powodu nadmiernego wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji o sposobie czas wartości GC (%) jest obliczane, zobacz [różnica między wydajności dane zgłoszone przez różnych narzędzi - 4](http://go.microsoft.com/fwlink/?LinkId=177863) wpisu **Weblog w Maoni** w witrynie MSDN. Jeśli występują błędy strony lub aplikacji są zastępowane przez inne wyższy priorytet pracy na komputerze podczas wyrzucania elementów bezużytecznych, czas licznika GC (%), zostaną one zastosowane te dodatkowe opóźnienia.

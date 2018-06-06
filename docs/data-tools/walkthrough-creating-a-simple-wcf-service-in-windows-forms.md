@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b2fc6b7a729be412b48c331eb5029df617d35c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c9fd9337682abbcd7325a849b95846be3af118d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747183"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows
 W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] usługi, przetestować go i do niego dostęp z aplikacji formularzy systemu Windows.
@@ -37,12 +38,12 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
 2.  W **nowy projekt** okna dialogowego rozwiń **Visual Basic** lub **Visual C#** węzeł i kliknij przycisk **WCF**, a następnie **WCF Biblioteka usługi**. Kliknij przycisk **OK** otworzyć projektu.
 
-     ![Projekt biblioteki usługi WCF](../data-tools/media/wcf1.PNG "wcf1")
+     ![Projekt biblioteki usługi WCF](../data-tools/media/wcf1.png)
 
     > [!NOTE]
     >  Spowoduje to utworzenie działającą usługę, która może być przetestowane i uzyskać dostępu do. Następujące dwa kroki pokazują, jak może zmodyfikować domyślną metodę do użycia na inny typ danych. W rzeczywistej aplikacji należy również dodać funkcje do usługi.
 
-3.  ![Plik IService1](../data-tools/media/wcf2.png "wcf2")
+3.  ![Plik IService1](../data-tools/media/wcf2.png)
 
      W **Eksploratora rozwiązań**, kliknij dwukrotnie IService1.vb lub IService1.cs i znajdź następujący wiersz:
 
@@ -56,7 +57,7 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
      W powyższym kodzie, należy zwrócić uwagę `<OperationContract()>` lub `[OperationContract]` atrybutów. Te atrybuty są wymagane do dowolnej metody udostępnianych przez usługę.
 
-4.  ![Plik Service1](../data-tools/media/wcf3.png "wcf3")
+4.  ![Plik Service1](../data-tools/media/wcf3.png)
 
      W **Eksploratora rozwiązań**, kliknij dwukrotnie Service1.vb lub Service1.cs i znajdź następujący wiersz:
 
@@ -76,15 +77,15 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
 2.  W **klienta testowego WCF** formularza, kliknij dwukrotnie **GetData()** metody w obszarze **IService1**. **GetData** kartę będą wyświetlane.
 
-     ![GetData&#40; &#41; metody](../data-tools/media/wcf4.png "wcf4")
+     ![GetData&#40; &#41; — metoda](../data-tools/media/wcf4.png)
 
 3.  W **żądania** wybierz opcję **wartość** pole i wpisz `Hello`.
 
-     ![Pole wartości](../data-tools/media/wcf5.png "wcf5")
+     ![Pole wartości](../data-tools/media/wcf5.png)
 
 4.  Kliknij przycisk **Invoke** przycisku. Jeśli **ostrzeżenie o zabezpieczeniach** zostanie wyświetlone okno dialogowe, kliknij przycisk **OK**. Wynik będzie wyświetlany w **odpowiedzi** pole.
 
-     ![Wynik w polu odpowiedzi](../data-tools/media/wcf6.png "wcf6")
+     ![Wynik w polu odpowiedzi](../data-tools/media/wcf6.png)
 
 5.  Na **pliku** menu, kliknij przycisk **zakończenia** aby zamknąć formularz testowy.
 
@@ -96,13 +97,13 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
 2.  W **nowy projekt** okna dialogowego rozwiń **Visual Basic** lub **Visual C#** a następnie wybierz węzeł **systemu Windows**, a następnie wybierz **Aplikacji formularzy systemu Windows**. Kliknij przycisk **OK** otworzyć projektu.
 
-     ![Projekt aplikacji Windows Forms](../data-tools/media/wcf7.png "wcf7")
+     ![Projekt aplikacji Windows Forms](../data-tools/media/wcf7.png)
 
 3.  Kliknij prawym przyciskiem myszy **WindowsApplication1** i kliknij przycisk **Dodaj odwołanie do usługi**. **Dodaj odwołanie do usługi** zostanie wyświetlone okno dialogowe.
 
 4.  W **Dodaj odwołanie do usługi** okno dialogowe, kliknij przycisk **odnajdowania**.
 
-     ![Okno dialogowe Dodaj odwołanie do usługi](../data-tools/media/wcf8.png "wcf8")
+     ![Okno dialogowe Dodaj odwołanie do usługi](../data-tools/media/wcf8.png)
 
      **Service1** będą wyświetlane w **usług** okienka.
 
@@ -114,7 +115,7 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
 2.  Z **przybornika**, przeciągnij `TextBox` kontroli, `Label` kontroli, a `Button` sterowania do formularza.
 
-     ![Dodawanie formantów do formularza](../data-tools/media/wcf9.png "wcf9")
+     ![Dodawanie formantów do formularza](../data-tools/media/wcf9.png)
 
 3.  Kliknij dwukrotnie `Button`i Dodaj następujący kod w `Click` obsługi zdarzeń:
 
@@ -125,7 +126,7 @@ W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[vsindigo](../data-to
 
 5.  Naciśnij klawisz **F5** uruchomić projekt. Wprowadź tekst, a następnie kliknij przycisk. Zostanie wyświetlona etykieta "wprowadzona:" i tekst, który został wprowadzony.
 
-     ![Formularz jako wynik](../data-tools/media/wcf10.png "wcf10")
+     ![Formularz jako wynik](../data-tools/media/wcf10.png)
 
 ## <a name="see-also"></a>Zobacz także
 

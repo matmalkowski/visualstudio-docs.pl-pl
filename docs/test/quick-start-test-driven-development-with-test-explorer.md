@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751426"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
 Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działanie wielu przyrostowe kroki tworzenia kodu. Istnieje kilka struktur, co umożliwia pisanie testów jednostkowych, w tym również opracowane przez strony trzecie. Niektóre platform testów są przeznaczone do testowania w różnych językach lub platform. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w żadnym z tych platform. Karty są dostępne dla struktur najbardziej często używane, a może zapisywać karty dla innych platform.
 
@@ -28,7 +29,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 -   Zobacz w jednym oknie wszystkie informacje, które są potrzebne.
 
 ## <a name="using-test-explorer"></a>Za pomocą narzędzia Eksplorator testów
- ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Do uruchomienia testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -44,7 +45,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
     2.  Zapis każdego testu jednostkowego jako metody. Prefiks każdej metody z `[TestMethod]` atrybutu.
 
-2.  Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+2.  Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 3.  Na pasku menu wybierz **testu**, **Uruchom testy jednostkowe**, **wszystkie testy**.
 
@@ -79,7 +80,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
     -   W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **jednostkowy projekt testowy**.
 
-         ![Nowe projekty kodu oraz testów](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Nowe projekty kodu oraz testów](../test/media/unittestexplorerwalk1.png)
 
 3.  Napisanie metody podstawowy test. Sprawdź wynik uzyskać określone dane wejściowe:
 
@@ -125,7 +126,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
 7.  Wybierz elementy podrzędne **ślad stosu** aby zobaczyć, których nie powiodło się uruchomienie testu.
 
- ![Przetestuj Eksploratora testów jednostek przedstawiający nie powiodło się. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Przetestuj Eksploratora testów jednostek przedstawiający nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png)
 
  W tym momencie utworzono test i szkieletu, który należy zmodyfikować tak, aby test zakończył się pomyślnie.
 
@@ -146,7 +147,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
      Test zakończył się pomyślnie.
 
-     ![Jednostka Test Explorer przedstawiający testu przekazywanie. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Jednostka Test Explorer przedstawiający testu przekazywanie.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodawanie testów, aby rozszerzyć zakres danych wejściowych
 
@@ -288,4 +289,4 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
      Nadal przejść pomyślnie wszystkie testy.
 
-     ![Eksplorator testów jednostek pokazujący 3 testy przekazany. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Eksplorator testów jednostek pokazujący 3 testy przekazany.](../test/media/unittestexplorerwalkthrough4.png)

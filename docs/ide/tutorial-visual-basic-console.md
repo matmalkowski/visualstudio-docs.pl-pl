@@ -13,17 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764936"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
 
 W tym samouczku Visual Basic (VB) można będzie użyć programu Visual Studio do tworzenia i uruchamiania kilka aplikacji w innej konsoli i eksplorować niektóre funkcje [programu Visual Studio zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -62,9 +63,11 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
    ![Konsoli szablonu projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 #### <a name="add-a-workgroup-optional"></a>Dodaj grupy roboczej (opcjonalnie)
+
 Jeśli nie widzisz **aplikacji konsoli (.NET Core)** szablon projektu, możesz pobrać go przez dodanie **aplikacji dla wielu platform .NET Core** obciążenia. Możesz dodać to obciążenie w jednym z dwóch sposobów, w zależności od zainstalowanych aktualizacji programu Visual Studio 2017 na tym komputerze.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: Użyj okna dialogowego Nowy projekt
+
 1. Kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.
 
   ![Kliknij łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
@@ -74,9 +77,10 @@ Jeśli nie widzisz **aplikacji konsoli (.NET Core)** szablon projektu, możesz p
    ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
+
 1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 
-2. Uruchamia Instalator programu Visual Studio. Wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
+2. Uruchamia Instalator programu Visual Studio. Wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
 
 ## <a name="create-a-what-is-your-name-application"></a>Tworzenie aplikacji "Co to jest nazwa użytkownika"
 
@@ -106,6 +110,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 5. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
 ## <a name="create-a-calculate-this-application"></a>Utwórz aplikację "Obliczyć to"
+
 1. Otwórz program Visual Studio 2017 r, a następnie na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 2. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *CalculateThis*.  

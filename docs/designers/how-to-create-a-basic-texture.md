@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745633"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
 Ten dokument pokazano, jak umożliwiają utworzenie tekstury podstawowej edytora obrazów.
@@ -36,7 +37,7 @@ Ten dokument pokazano, jak umożliwiają utworzenie tekstury podstawowej edytora
 
  Poniższe kroki pokazują, jak utworzyć tekstury, który reprezentuje element docelowy "bullseye". Gdy skończysz, tekstury powinien wyglądać poniższej ilustracji. Aby lepiej zaprezentować przezroczystość tekstury, edytor obrazów skonfigurowano na potrzeby wzorzec zielony, szachownicą go wyświetlić.
 
- ![Miejsce docelowe "Bullseye" z przezroczystość wyświetlany na zielono](../designers/media/digit-bullseye-texture-in-editor.png "cyfrę-Bullseye-tekstury-w — Edytor")
+ ![Miejsce docelowe "Bullseye" z przezroczystość wyświetlany na zielono](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Przed rozpoczęciem upewnij się, że **właściwości** okno jest wyświetlane. Możesz użyć **właściwości** okno, aby ustawić rozmiar obrazu, zmień właściwości narzędzia i określić kolory podczas pracy.
 
@@ -84,7 +85,7 @@ Ten dokument pokazano, jak umożliwiają utworzenie tekstury podstawowej edytora
 
  Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu wyświetlany z efektem przezroczystości.
 
- ![Zakończenie "bullseye" target tekstury](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Zakończenie "bullseye" docelową teksturę](../designers/media/gfx_image_demo_bullseye.png)
 
  Jako kolejny krok można wygenerować poziomów Mipmapy tego tekstury. Aby uzyskać informacje, zobacz [porady: tworzenie i modyfikowanie MCI poziomy](../designers/how-to-create-and-modify-mip-levels.md).
 

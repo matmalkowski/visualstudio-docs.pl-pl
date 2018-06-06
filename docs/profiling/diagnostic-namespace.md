@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3e6909bcb7299f4fd6d725334c26d2b59e0edb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764673"
 ---
-# <a name="diagnostic-namespace"></a>diagnostic — Przestrzeń nazw
+# <a name="diagnostic-namespace"></a>Diagnostic — przestrzeń nazw
 `diagnostics` Przestrzeń nazw zapewnia funkcje do emitowania znaczników wizualizatora współbieżności.  
   
 ## <a name="syntax"></a>Składnia  
@@ -45,9 +46,9 @@ namespace diagnostic;
 |[Wyliczenie marker_importance](../profiling/marker-importance-enumeration.md)|Reprezentuje poziom ważności znaczników wizualizatora współbieżności.|  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** *cvmarkersobj.h*  
   
  **Namespace:** współbieżności  
   
-## <a name="see-also"></a>Zobacz też  
- [Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+## <a name="see-also"></a>Zobacz także  
+ [Przestrzeń nazw współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)

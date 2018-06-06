@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751627"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać Boost.Test dla języka C++ w programie Visual Studio
 
 W **programu Visual Studio 2017 wersji 15,5 cala** i później, Boost.Test adapter testowy jest zintegrowany z programu Visual Studio IDE jako składnik **tworzenia klasycznych aplikacji w języku C++** obciążenia.
 
-![Adapter testowy dla Boost.Test](media/cpp-boost-component.png "Adapter testowy dla składnika Boost.Test")
+![Adapter testowy dla Boost.Test](media/cpp-boost-component.png)
 
 Jeśli nie masz **tworzenia klasycznych aplikacji w języku C++** obciążenia zainstalowany, otwórz **Instalator programu Visual Studio** i wybierz **Modyfikuj**. Wybierz **tworzenia klasycznych aplikacji w języku C++** obciążenia, a następnie wybierz **Modyfikuj** przycisku.
 
@@ -43,7 +44,7 @@ Wymaga Boost.Test [zwiększanie wyniku](http://www.boost.org/)! Jeśli nie masz 
 
 1. Aby utworzyć plik .cpp dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**.
 
-   ![Szablon elementu Boost.Test](media/boost_test_item_template.png "Boost.Test elementu szablonu")
+   ![Szablon elementu Boost.Test](media/boost_test_item_template.png)
 
 1. Nowy plik zawiera przykładowe metody testowej. Skompilowanie projektu Aby włączyć **Eksploratora testów** metody odnajdywania.
 
@@ -87,7 +88,7 @@ W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowa
 
 1. W pliku .cpp testowego, Dodaj wszelkie potrzebne `#include` dyrektywy, aby wyświetlić typy i funkcje programu kod testu. Zazwyczaj program działa jeden poziom w hierarchii folderów. W przypadku wpisania `#include "../"`, okno IntelliSense pojawia się i umożliwia wybranie pełną ścieżkę do pliku nagłówka.
 
-   ![Dodaj # dyrektywy include](media/cpp-gtest-includes.png "Dodaj zawiera dyrektywy, które do pliku .cpp testu")
+   ![Dodaj # dyrektywy include](media/cpp-gtest-includes.png)
 
    Można użyć z biblioteki autonomicznej:
 

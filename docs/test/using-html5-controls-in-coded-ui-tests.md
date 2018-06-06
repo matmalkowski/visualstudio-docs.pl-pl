@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751445"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -45,7 +46,7 @@ Kodowane testy interfejsu użytkownika obejmuje obsługę, niektóre z formantó
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control
  **Formant audio:** poprawnie zarejestrowana i odtwarzania akcji w formancie HTML5 Audio.
 
- ![Formant HTML5 Audio](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")
+ ![Formant HTML5 Audio](../test/media/codedui_html5_audio.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |------------|---------------|--------------------|
@@ -89,7 +90,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Formant wideo
  **Formant wideo:** poprawnie zarejestrowana i odtwarzania akcji w formancie wideo HTML5.
 
- ![Formant wideo HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")
+ ![Formant wideo HTML5](../test/media/codedui_html5_video.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |------------|---------------|--------------------|
@@ -120,7 +121,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Suwak
  **Kontrolka suwaka:** poprawnie zarejestrowana i odtwarzania akcji na suwaku HTML5.
 
- ![Kontrolka suwaka HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")
+ ![HTML5 suwaka](../test/media/codedui_html5_slider.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
 |------------|---------------|--------------------|
@@ -140,7 +141,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar
  **Formant ProgreesBar:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwościami tego formantu.
 
- ![Formant HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")
+ ![HTML5 ProgressBar — formant](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Zobacz także
 

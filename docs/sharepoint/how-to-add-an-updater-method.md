@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc7c946a89c8ba05ffed443816d6ce4e9056b88b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 808e37b6d172a63288751c28dfdcd1e43d466c08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767424"
 ---
-# <a name="how-to-add-an-updater-method"></a>Porady: dodawanie metody Updater
+# <a name="how-to-add-an-updater-method"></a>Porady: Dodawanie metody Updater
   Umożliwia użytkownikom zaktualizować dane biznesowe na liście programu SharePoint zewnętrznego przez utworzenie *Updater* metody. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Aby utworzyć metody Updater  
   
 1.  W Projektancie BDC wybierz jednostkę.  
   
-2.  Na pasku menu wybierz **widoku**, **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
+2.  Na pasku menu wybierz **widoku** > **inne okna** > **szczegóły metody usługi łączności danych biznesowych**.  
   
      Zostanie otwarte okno Szczegóły metody usługi łączności danych biznesowych. Aby uzyskać więcej informacji dotyczących tego okna, zobacz [omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  W **Eksploratora rozwiązań**, otwórz menu skrótów w pliku kodu usługi, który został wygenerowany dla obiektu, a następnie wybierz **kod widoku**.  
   
-     Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji dotyczących tego pliku, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Otworzy się w pliku kodu usługi jednostki **edytora kodu**. Aby uzyskać więcej informacji dotyczących tego pliku, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 5.  Dodaj kod do metody aktualizacji w celu aktualizacji danych. Poniższy przykład aktualizuje informacje o kontakt w przykładowej bazie danych AdventureWorks programu SQL Server.  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
      [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -79,4 +80,4 @@ ms.lasthandoff: 04/16/2018
  [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)  
   
-  
+ 

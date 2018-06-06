@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbfaeba966a2608f67ff63b0de39f13669a7169f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767666"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Porady: tworzenie polecenia SharePoint
+# <a name="how-to-create-a-sharepoint-command"></a>Porady: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzia programu SharePoint, należy utworzyć niestandardowego *polecenia SharePoint* do wywołania interfejsu API. Polecenie programu SharePoint do definiowania zestawu, który można wywołać bezpośrednio do modelu obiektów serwera.  
   
  Aby uzyskać więcej informacji dotyczących przeznaczenia polecenia SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -77,11 +78,10 @@ ms.lasthandoff: 04/16/2018
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia  
- Aby wdrożyć polecenia, należy uwzględnić zestaw polecenia w tej samej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) z zestawu rozszerzenia, która używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku extension.vsixmanifest. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Aby wdrożyć polecenia, należy uwzględnić zestaw polecenia w tej samej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia (*vsix*) pakietu z zestawu rozszerzenia, która używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku extension.vsixmanifest. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Porady: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
   

@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690929"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747043"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Utwórz bazę danych i dodawanie tabel w programie Visual Studio
 Visual Studio umożliwia tworzenie i aktualizowanie pliku lokalnej bazy danych w programu SQL Server Express LocalDB. Można również utworzyć bazę danych, wykonując instrukcje języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzia w programie Visual Studio. W tym temacie firma Microsoft Tworzenie pliku MDF i dodać tabelami i kluczami przy użyciu projektanta tabel.
@@ -36,7 +36,7 @@ W tym przewodniku, musi mieć opcjonalny **magazynu danych i przetwarzania** obc
 
 3.  Na liście szablony elementów, przewiń w dół i wybierz **bazy danych opartej na usługi**.
 
-     ![Okno dialogowe szablonów elementu](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Okno dialogowe Szablony elementu](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nazwa bazy danych **SampleDatabase**, a następnie wybierz **Dodaj** przycisku.
 
@@ -95,7 +95,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
     Powinny pojawić się dane podobne do poniższych:
 
-    ![Tabela projektanta](../data-tools/media/raddata-table-designer.png "raddata projektanta tabel")
+    ![Projektant tabel](../data-tools/media/raddata-table-designer.png)
 
 7.  W lewym górnym rogu **projektanta tabel**, wybierz pozycję **aktualizacji** przycisku.
 
@@ -130,7 +130,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 ### <a name="to-create-a-foreign-key"></a>Aby utworzyć obcy klucz
 1.  W okienku kontekstu po prawej stronie siatki, otwórz menu skrótów **kluczy obcych**, a następnie wybierz **Dodaj nowy klucz obcy**, jak pokazano na poniższej ilustracji.
 
-     ![Dodawanie klucza obcego w tabeli projektanta](../data-tools/media/foreignkey.png "klucza obcego")
+     ![Dodawanie klucza obcego w tabeli projektanta](../data-tools/media/foreignkey.png)
 
 2.  W wyświetlonym polu tekstowym Zastąp **ToTable** z `Customers`.
 

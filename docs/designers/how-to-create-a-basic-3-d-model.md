@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceeb6bdd5acb878ceb2f3cd6e6e38dada607e1a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745688"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Porady: Tworzenie podstawowego modelu 3D
 
@@ -30,12 +31,12 @@ W tym artykule przedstawiono sposób użycia w edytorze modeli do utworzenia pod
 
 -   Przy użyciu **Triangulate** polecenia
 
-## <a name="create-a-basic-3d-model"></a>Utwórz podstawowe modelu 3D
+## <a name="create-a-basic-3d-model"></a>Tworzenie podstawowego modelu 3D
  Edytor modelu do tworzenia i modyfikowania modeli 3D i sceny gry lub aplikacji. Poniższe kroki pokazują, jak utworzyć uproszczony model 3D domu za pomocą edytora modelu. Uproszczony model może służyć jako elementu zastępczego dla zasobów graficznych końcowego, które są nadal tworzone, jako siatkę wykrywanie kolizji, lub można użyć, gdy obiekt, który reprezentuje jest zbyt daleko do korzystania z renderowania bardziej szczegółowe przy użyciu modelu szczegółów niskiego.
 
  Po zakończeniu modelu powinien wyglądać następująco:
 
- ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
 
  Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
@@ -49,27 +50,27 @@ W tym artykule przedstawiono sposób użycia w edytorze modeli do utworzenia pod
 
 4.  Podzielić na początku modułu. W trybie wyboru krój wybierz modułu raz, aby aktywować go do wyboru, a następnie wybierz górnej części modułu wybierz krój top. Na pasku narzędzi w edytorze modeli, wybierz **podzielić krój**. Spowoduje to dodanie nowego wierzchołki na początku modułu podziel go na partycje równej wielkości.
 
-     ![Dzieli się na początku modułu](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")
+     ![Dzieli się na początku modułu](../designers/media/gfx_model_demo_house_subdiv.png)
 
 5.  Wyciągnięcie dwóch sąsiadujących ze sobą stronach moduł — na przykład przodu i prawej krawędzi modułu. W trybu wyboru pierwszego planu wybierz moduł raz Aktywuj ją do wyboru, a następnie wybierz pozycję jednej stronie modułu. Naciśnij i przytrzymaj klawisz kontroli, wybierz inny po stronie modułu, która jest przyległa do strony, musisz najpierw wybrać, a następnie na pasku narzędzi edytora modelu wybierz **wyciągnięcie krój**.
 
-     ![Strony moduł został wyrzucane](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")
+     ![Strony moduł został wyrzucane](../designers/media/gfx_model_demo_house_extrude.png)
 
 6.  Jeden z extrusions rozszerzenie. Wybierz jedną z powierzchni, które właśnie usunąć, a następnie na pasku narzędzi w edytorze modeli, wybierz **Przetłumacz** narzędzia i Przenieś manipulatora tłumaczenia w tym samym kierunku co wytłoczenie.
 
-     ![Po jednej stronie modułu ma zostały usunąć dodatkowe. ] (../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")
+     ![Po jednej stronie modułu ma zostały usunąć dodatkowe.](../designers/media/gfx_model_demo_house_extend.png)
 
 7.  Przeprowadzić triangulację modelu. Na pasku narzędzi w edytorze modeli, wybierz **zaawansowane**, **narzędzia**, **Triangulate**.
 
 8.  Utwórz dachu domu. Przełącz do trybu wyboru krawędzi, wybierając **wybierz krawędzi** na pasku narzędzi w edytorze modeli, a następnie wybierz moduł, aby aktywować go. Naciśnij i przytrzymaj klawisz Control, jak wybrać krawędzi, które są wyświetlane tutaj:
 
-     ![Krawędzie tworzących piku dachu](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")
+     ![Krawędziach tworzących piku dachu](../designers/media/gfx_model_demo_house_edges.png)
 
      Po wybraniu krawędzi, na pasku narzędzi w edytorze modeli, wybierz **Przetłumacz** narzędzia, a następnie przenieść manipulatora tłumaczenia góry, aby utworzyć dachu domu.
 
  Modelu DOM uproszczony zostało ukończone. Oto ponownie ostatecznego modelu z płaskim cieniowaniem stosowane:
 
- ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
 
  Jako kolejny krok programu do cieniowania można zastosować do tego modelu 3D. Aby uzyskać informacje, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

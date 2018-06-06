@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8f811905fb6fed0e0cbc061128622c72bf09fc07
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692330"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751653"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Wskazówki: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
@@ -50,7 +50,7 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 12. Zaznacz formant pola wyboru. W oknie Właściwości zmień wartość atrybutu **nazwa** właściwość z \<bez nazwy > pole wyboru 1 i wyczyść **IsEnabled** właściwości.
 
-     ![Aplikacja WPF proste](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![Aplikacja WPF proste](../test/media/codedui_wpfapp.png)
 
 13. Kliknij dwukrotnie dodać obsługi zdarzeń kliknięcia formantu przycisku.
 
@@ -353,11 +353,11 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 ## <a name="videos"></a>Wideo
 
-![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [wprowadzenie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230573)
+![łącze do wideo](../data-tools/media/playvideo.gif) [wprowadzenie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [konserwacji i debugowanie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230574)
+![łącze do wideo](../data-tools/media/playvideo.gif) [konserwacji i debugowanie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowania ręcznie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230575)
+![łącze do wideo](../data-tools/media/playvideo.gif) [kodowania ręcznie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230575)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 

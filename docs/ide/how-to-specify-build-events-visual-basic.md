@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746211"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Porady: Określanie kompilacji zdarzenia (Visual Basic)
 
@@ -128,7 +129,7 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 
 1.  Tworzenie aplikacji systemu Windows dla projektu do opublikowania. Z **pliku** menu, kliknij przycisk **nowy**, a następnie kliknij przycisk **projektu**.
 
-2.  W **nowy projekt** okna dialogowego, **Visual Basic** węzła, wybierz opcję **klasycznego pulpitu systemu Windows** , a następnie **aplikacji formularzy systemu Windows** szablon. Nazwij projekt `VBWinApp`.
+2.  W **nowy projekt** okna dialogowego, **Visual Basic** węzła, wybierz opcję **Windows Desktop** , a następnie **aplikacji formularzy systemu Windows** szablonu. Nazwij projekt `VBWinApp`.
 3.  W projekcie wybrana w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
 4.  W **projektanta projektu**, przejdź do **publikowania** strony i ustaw **publikowania lokalizacji** do *C:\TEMP*.

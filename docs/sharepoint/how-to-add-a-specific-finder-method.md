@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767653"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Porady: dodawanie określonej metody wyszukiwania
+# <a name="how-to-add-a-specific-finder-method"></a>Porady: Dodawanie określonej metody wyszukiwania
   Można zwrócić wystąpienia pojedynczej jednostki, tworząc *określonej metody wyszukiwania* metody. Usługa łączności danych biznesowych (BDC) wykonuje metody wyszukiwania po wybraniu jednostki w części sieci web danych biznesowych lub listy zewnętrznej. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Aby utworzyć określonej metody wyszukiwania  
+### <a name="to-create-a-specific-finder-method"></a>Aby utworzyć określonej metody wyszukiwania
   
-1.  W Projektancie BDC wybierz jednostkę.  
+1.  Na **projektanta BDC**, wybierz jednostki.  
   
-     Aby uzyskać informacje na temat dodać jednostkę do projektanta usługi łączności danych biznesowych w programie Visual Studio, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Informacje na temat dodać jednostkę do **projektanta BDC** w programie Visual Studio, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Na pasku menu wybierz **widoku**, **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
+2.  Na pasku menu wybierz **widoku** > **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
   
      **Szczegóły metody usługi łączności danych biznesowych** zostanie otwarte okno. Aby uzyskać więcej informacji dotyczących tego okna, zobacz [omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
  [Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

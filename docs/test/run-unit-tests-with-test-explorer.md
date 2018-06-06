@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752069"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -29,13 +30,13 @@ Visual Studio zawiera struktury testowania jednostki firmy Microsoft dla kodu za
 
 Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Eksploratora testów nie jest widoczny, jeśli **testu** w menu programu Visual Studio, wybierz **systemu Windows**, a następnie wybierz pozycję **Eksploratora testów**.
 
-![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
 
 Jak uruchamiać, zapisu i ponownie uruchomić testy narzędzia Eksplorator testów wyświetla wyniki w domyślnych grup z **testy nie powiodło się**, **przekazany testy**, **pominięte testy** i  **Nie uruchamiać testów**. Możesz zmienić sposób Eksploratora testów grupy testów.
 
 Można wykonać większość zadań znajdowanie, organizowanie i uruchamiania testów na pasku narzędzi Eksplorator testów.
 
-![Uruchamianie testów za pomocą narzędzi Eksploratora testów](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Uruchom testy na pasku narzędzi Eksplorator testów](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Uruchom testy
 
@@ -47,7 +48,7 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy z grupy lub ze
 
 - Wybierz poszczególne testy, które chcesz uruchomić, otwórz menu kontekstowe dla wybranego testu, a następnie wybierz pozycję **uruchomić wybrane testy**.
 
-- Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+- Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 Na pasku przebiegu/Niepowodzenie w górnej części okna Eksploratora testów jest animowany jako Uruchom testy. Po zakończeniu uruchomienia testu na pasku przebiegu/niepowodzenie włącza zielony wszystkie testy przekazany lub czerwony, jeśli żadnego testu nie powiodła się.
 
@@ -65,7 +66,7 @@ Jak uruchamiać, zapisu i ponownie uruchomić testy narzędzia Eksplorator test�
 
 Aby wyświetlić szczegółowe informacje o poszczególnych testów, wybierz testu.
 
-![Szczegóły wykonywania testów](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Szczegółowe informacje dotyczące wykonywania testu](../test/media/ute_testdetails.png)
 
 W okienku szczegółów testu zawiera następujące informacje:
 
@@ -91,9 +92,9 @@ Eksplorator testów umożliwia grupowanie testów do wstępnie zdefiniowanych ka
 
 ### <a name="group-tests-in-the-test-list"></a>Grupa testów na liście testu
 
- Aby zmienić sposób, że testy są zorganizowane, wybierz strzałkę w dół **Group By** przycisk ![przycisk Eksploratora testów](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") i wybierz nowy grupowania kryteria.
+ Aby zmienić sposób, że testy są zorganizowane, wybierz strzałkę w dół **Group By** przycisk ![przycisk Eksploratora testów](../test/media/ute_groupby_btn.png) i wybierz nową kryteria grupowania.
 
- ![Grupuj testy według kategorii w Eksploratorze testów](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Testy grupy według kategorii w narzędzia Eksplorator testów](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Grupy Eksploratora testów
 
@@ -135,7 +136,7 @@ Aby filtrować według różnych kryteriów:
 
 3. Wprowadź wartość filtru między znakami cudzysłowu.
 
-![Filtruje testy w Eksploratorze testów](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtruje testy w narzędzia Eksplorator testów](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Wyszukiwanie uwzględniana jest wielkość liter i zgodny z określonym ciągiem żadnej części wartości kryteriów.
@@ -162,7 +163,7 @@ Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, 
 
  Można tworzyć i zapisywać listy testów, które chcesz zobaczyć jako grupa. Po wybraniu listy odtwarzania testów na liście są wyświetlane Eksploratora testów. Można dodać testu do więcej niż jedną listę odtwarzania i wszystkich testów w projekcie są dostępne po wybraniu domyślnie **wszystkie testy** listy odtwarzania.
 
- ![Wybierz listę odtwarzania](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Wybierz listę odtwarzania](../test/media/ute_playlist.png)
 
  **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowego wybierz polecenie **Dodaj do listy odtwarzania**, **NewPlaylist**. Zapisz plik z nazwy i lokalizacji określonej w **Utwórz nową listę odtwarzania** okno dialogowe.
 
@@ -170,7 +171,7 @@ Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, 
 
  **Aby otworzyć listę odtwarzania**, wybierz Test, odtwarzania z menu programu Visual Studio i wybierz z listy ostatnio używanych listy odtwarzania, lub wybierz Otwórz listę, aby określić nazwę i lokalizację listy odtwarzania.
 
- Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+ Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Debugowania i analizowania testy jednostkowe
 

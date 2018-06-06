@@ -1,5 +1,5 @@
 ---
-title: C#, IntelliSense
+title: C# IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748234"
 ---
-# <a name="c-intellisense"></a>C#, IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
 C#, IntelliSense jest dostępna podczas kodowania w edytorze i podczas debugowania w [trybie natychmiastowym](../ide/reference/immediate-window.md) okna poleceń.
 
@@ -30,7 +31,7 @@ Listy uzupełniania IntelliSense w języku C# zawiera tokenów z listy elementó
 
 - Nazwy funkcji, poleceń i zmienne
 
-- Wstawki kodu
+- Fragmenty kodu
 
 - Słowa kluczowe języka
 
@@ -93,7 +94,7 @@ Podczas wpisywania [zastąpienia](/dotnet/csharp/language-reference/keywords/ove
 
 Aby zainicjować **Dodawanie using** operacji pozycji kursora typu odwołania, który nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsoli i przy dodawaniu `XmlTextReader` do treści `Main` metody czerwona falista pojawia się w tym wierszu kodu, ponieważ nie można rozpoznać odwołania do typu. Następnie można wywołać **Dodawanie using** za pośrednictwem **szybkie akcje**. **Szybkie akcje** jest widoczny tylko wtedy, gdy kursor znajduje się na typu niezwiązanego.
 
-![Dodaj obraz rozwinięte akcji przy użyciu, szybkie](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
+![Dodaj obraz rozwinięte akcji przy użyciu, szybkie](../ide/media/addusing-quickaction.png)
 
 Kliknij ikonę żarówki, a następnie wybierz pozycję **przy użyciu zestawów System.Xml;** automatyczne dodawanie za pomocą dyrektywy.
 
@@ -143,11 +144,11 @@ W edytorze kodu IntelliSense może pomóc dołączenie do pól zdarzenia metod (
 
 Podczas wpisywania `+=` operator po pole zdarzenia w *.cs* pliku, IntelliSense wyświetla naciśnij opcję **kartę** klucza. Wstawia nowe wystąpienie klasy delegata, który wskazuje metodę obsługi zdarzenia.
 
-![Przycisk Automatyczny punktu zaczepienia się](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Przycisk automatycznie haku górę](../ide/media/vxautohookup.gif)
 
 Jeśli naciśniesz **kartę**, IntelliSense automatycznie zakończeniu instrukcji i odwołanie do programu obsługi zdarzeń będzie wyświetlany jako tekstu zaznaczonego w edytorze kodu. Aby ukończyć podłączenie zdarzenia automatyczne, IntelliSense monit o naciśnięcie **kartę** klucz ponownie, aby utworzyć pusty klasy zastępczej dla programu obsługi zdarzeń.
 
-![Generowanie obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Generowanie obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Jeśli nowe delegowanie, który jest tworzony przez funkcję IntelliSense odwołuje się do istniejącego programu obsługi zdarzeń, IntelliSense komunikuje się tych informacji w etykietce narzędzia. Następnie można zmodyfikować tego odwołania; tekst została już wybrana w edytorze kodu. W przeciwnym razie podłączenie zdarzenia automatyczne zakończeniu w tym momencie.

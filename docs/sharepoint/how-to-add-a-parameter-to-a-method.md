@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e005152aa7a5b7c1905e768da878e72051bbdb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9268fd0deb463a29c8e6d19e98ad63c86b965292
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767091"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Porady: dodawanie parametru do metody
+# <a name="how-to-add-a-parameter-to-a-method"></a>Porady: Dodawanie parametru do metody
   Użyj parametru do przekazywania informacji do metody lub do zwracania informacji z metody. Wszystkie metody musi mieć co najmniej jeden parametr. Aby uzyskać więcej informacji na temat projektowania parametru na potrzeby obsługi typu metody, która ma zostać utworzona, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- Po dodaniu parametru do metody Visual Studio dodaje `<Parameter>` — element XML w pliku modelu w projekcie. Aby uzyskać więcej informacji na temat atrybutów `<Parameter>` elementu, zobacz [parametru](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ Po dodaniu parametru do metody Visual Studio dodaje element parametru do formatu XML w pliku modelu w projekcie. Aby uzyskać więcej informacji na temat atrybutów elementu parametr zobacz [parametru](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
 ### <a name="to-add-a-parameter-to-a-method"></a>Aby dodać parametr do metody  
   
 1.  Dodawanie metody do jednostki.  
   
-2.  Na pasku menu wybierz **widoku**, **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
+2.  Na pasku menu wybierz **widoku** > **inne okna** > **szczegóły metody usługi łączności danych biznesowych**.  
   
      **Szczegóły metody usługi łączności danych biznesowych** zostanie otwarte okno. Aby uzyskać więcej informacji, zobacz [omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
      Nowy parametr pojawia się poniżej **parametry** węzła.  
   
-5.  Na pasku menu wybierz **widoku**, **okna właściwości**.  
+5.  Na pasku menu wybierz **widoku** > **okna właściwości**.  
   
 6.  W **właściwości** ustaw **nazwa** dowolną nazwę, która ma sens dla właściwości. Na przykład, jeśli metoda zwróci klientów, możesz nazwać metody **GetCustomers**.  
   
@@ -57,11 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Zmodyfikuj deskryptor typu parametru. Aby uzyskać więcej informacji, zobacz [porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
   

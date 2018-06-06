@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765671"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy
 
@@ -31,7 +32,7 @@ Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Za
 
 * **[Użyj programu Visual Studio i usług Azure](#use-visual-studio-and-azure-services)**: tabela zawiera adresy URL domeny do listy dozwolonych adresów IP i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
 
-## <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
+## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
 ### <a name="urls-to-whitelist"></a>Adresy URL do listy dozwolonych adresów IP
 
@@ -135,6 +136,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej dla Ciebie:
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Rozwiązywania problemów dotyczących sieci w programie Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
-* [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
+* [Tworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md)
+* [Rozwiązywanie problemów dotyczących sieci w programie Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+

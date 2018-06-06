@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752004"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Porady: wybieranie repozytorium wyników testu obciążenia
 
@@ -37,7 +38,7 @@ Aby uzyskać więcej informacji na temat agentów, zobacz [kontrolery testów i 
 
 2.  Z **testu obciążenia** narzędzi wybierz **Zarządzanie kontrolerami testów**. Zostanie wyświetlone okno dialogowe Zarządzanie aplikacją Test Controller. Jeśli używasz agenta zdalnego, musisz wybrać kontrolera.
 
-     ![Właściwości połączenia magazynu wyników testów obciążenia](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") właściwości połączenia magazynu wyników testów obciążenia
+     ![Właściwości połączenia magazynu wyników testów obciążenia](../test/media/loadtestconnectionproperties.png) właściwości połączenia magazynu wyników testów obciążenia
 
 3.  W **magazynu wyników testu obciążenia**, kliknij (...), aby wyświetlić **właściwości połączenia** okno dialogowe.
 

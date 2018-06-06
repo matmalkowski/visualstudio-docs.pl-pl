@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751368"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Porady: przeglądanie danych i załączników diagnostycznych za pomocą analizatora testu obciążenia
 
 Przed uruchomieniem obciążenia test, możesz wybrać ustawienie testu, które określa kart dane diagnostyczne i dane, które chcesz użyć. Po zakończeniu testu obciążenia umożliwia analizatora testu obciążenia przeglądanie szczegółowych informacji o tych kartach dane diagnostyczne i dane podczas analizowania wyników. Aby wyświetlić danych i informacji diagnostycznych karty, wybierz **widoku danych i załączników diagnostycznych** przycisk na pasku narzędzi analizatora testu obciążenia. Na przykład w przypadku testu obciążenia były adapter informacji systemu skonfigurowane ustawienia testu, można wyświetlić informacje o systemie maszyny, która została użyta podczas uruchomienia testu obciążenia.
 
-![Załącznik adaptera danych diagnostycznych w oknie dialogowym Wybieranie](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Wybieranie okna dialogowego załącznika adaptera danych diagnostycznych](../test/media/load_adapterdialog.png)
 
 Innym przykładem jest test obciążenia, który zawiera kartę IntelliTrace w ustawieniach testu. IntelliTrace adapter umożliwia otwarcie strony Podsumowanie funkcji IntelliTrace.
 
-![Podsumowanie funkcji IntelliTrace](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![Podsumowanie funkcji IntelliTrace](../test/media/load_intellitrace.png)
 
 Aby uzyskać więcej informacji, zobacz [zbieranie diagnostycznych informacji za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md) i [IntelliTrace zbieranie danych](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 

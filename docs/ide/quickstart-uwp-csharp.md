@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765872"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio z XAML i C&#35;
 
 W tym wprowadzeniu do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz aplikację "Hello World", która działa na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, użyjesz szablon projektu uniwersalnej platformy systemu Windows (UWP), Extensible Application Markup Language (XAML) i język programowania C#.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -59,7 +60,7 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
   ![Otwórz MainPage.xaml z Eksploratora rozwiązań ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Istnieją dwa okienka: **projektanta XAML**, która obejmuje obszaru roboczego projektowanie i **edytora XAML**, którym można dodać lub zmienić kod.    
+  Istnieją dwa okienka: **projektanta XAML**, która obejmuje obszaru roboczego projektowanie i **edytora XAML**, którym można dodać lub zmienić kod.
 
   ![W okienku projektanta XAML w edytorze XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Nadszedł czas na tworzenie, wdrażanie i uruchamianie aplikacji platformy uniwe
 
 1. Wybierz **komputera lokalnego** do uruchomienia aplikacji.
 
-   ![Kliknij komputer lokalny, aby uruchomić i debugowanie aplikacji platformy uniwersalnej systemu Windows](../ide/media/uwp-start-or-debug.png "kliknij komputer lokalny, aby uruchomić i debugowanie aplikacji platformy uniwersalnej systemu Windows")
+   ![Kliknij komputer lokalny, aby uruchomić i debugowanie aplikacji platformy uniwersalnej systemu Windows](../ide/media/uwp-start-or-debug.png)
 
    (Można też wybrać **debugowania** > **Rozpocznij debugowanie** z paska menu lub naciśnij klawisz **F5** można uruchomić aplikacji.)
 

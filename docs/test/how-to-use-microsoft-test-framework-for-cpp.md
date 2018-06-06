@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751692"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj jednostki Microsoft testowania Framework dla języka C++ w programie Visual Studio
 
@@ -55,7 +56,7 @@ Użyj metod statycznych w [Assert](microsoft-visualstudio-testtools-cppunittestf
 2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone.
 3. W **okno danych wyjściowych** wybierz **testy** na liście do widoku komunikaty zapisywane przez `Logger` klasy:
 
-  ![Okno danych wyjściowych C++ przedstawiający wiadomości testowe](media/cpp-test-output-window.png "okno danych wyjściowych")
+  ![Okno danych wyjściowych C++ przedstawiający wiadomości testowe](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definiowanie cech, aby włączyć grupowanie
 Można zdefiniować metody testowe, które umożliwiają klasyfikowanie i grupowanie testów w cech **Eksploratora testów**. Aby zdefiniować cechy, należy użyć `TEST_METHOD_ATTRIBUTE` makra. Na przykład, aby zdefiniować cechy o nazwie `TEST_MY_TRAIT`:

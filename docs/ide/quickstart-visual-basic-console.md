@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766246"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic
 
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która działa w konsoli programu.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -68,7 +69,8 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poprosić dla dany
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
-   Zatrzymuje program, dopóki naciśnięciu klawisza.
+
+    Zatrzymuje program, dopóki naciśnięciu klawisza.
 
 2. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 

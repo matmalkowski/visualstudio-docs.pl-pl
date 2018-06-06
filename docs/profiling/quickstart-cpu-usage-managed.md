@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c55c4bde3a1cc5cc6a6f150f9e73b4d56f510be5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477226"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750288"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 
@@ -33,7 +33,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
-2. W obszarze **Visual C#** lub **Visual Basic**, wybierz **klasycznego pulpitu systemu Windows**, a następnie w środkowym okienku wybierz **aplikacji konsoli (.NET Framework)**.
+2. W obszarze **Visual C#** lub **Visual Basic**, wybierz **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacji konsoli (.NET Framework)**.
 
 3. Wpisz nazwę, takich jak **MyProfilerApp** i kliknij przycisk **OK**.
 
@@ -48,7 +48,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -56,10 +56,10 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -69,8 +69,8 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -78,7 +78,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -91,14 +91,14 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -106,21 +106,21 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -128,15 +128,15 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -145,13 +145,13 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -160,8 +160,8 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     > [!NOTE]
     > W języku Visual Basic, upewnij się, ma ustawioną wartość obiektu uruchamiania `Sub Main` (**właściwości > aplikacji > obiekt uruchomieniowy**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania
+
 1.  Najpierw należy ustawić punkt przerwania w aplikacji w tym wierszu kodu w `Main` funkcji:
 
     `for (int i = 0; i < 200; i++)`
@@ -178,7 +178,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz przeanalizować.
-  
+
 3.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.
 
 4.  Kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
@@ -198,7 +198,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
      Teraz masz teraz dane dotyczące wydajności aplikacji specjalnie dla regionu kodu, który uruchamia między dwoma punktami przerwań.
 
      Profiler rozpoczyna przygotowywania danych wątku. Poczekaj na jego zakończenie.
-  
+
      Użycie procesora CPU narzędzie wyświetla raport w **użycie procesora CPU** kartę.
 
      W tym momencie można rozpocząć do analizowania danych.
@@ -216,7 +216,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 
 2. Na liście funkcji kliknij dwukrotnie `ServerClass::GetNumber` funkcji.
 
-    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** widok zostanie otwarty w okienku po lewej stronie. 
+    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** widok zostanie otwarty w okienku po lewej stronie.
 
     ![Widok wywoływany obiekt wywołujący narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -235,7 +235,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 - [Analiza użycia procesora CPU](../profiling/cpu-usage.md) uzyskać więcej szczegółowych informacji na temat narzędzia użycie procesora CPU.
 - Analiza użycia Procesora bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz też
 
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)
+- [Profilowanie w programie Visual Studio](../profiling/index.md)
+- [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751345"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia
 
@@ -51,7 +52,7 @@ Licznik dane są zbierane na serwerze i na dowolnym komputerze, gdy test jest ur
 
 Istnieją trzy kategorie licznika: wartości procentowych, liczby i średnie. Przykłady to użycie Procesora (%), liczby blokady programu SQL Server i usługi IIS żądań na sekundę.
 
-![Zestawy liczników testu obciążenia](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Zestawy liczników testu obciążenia](../test/media/loadtestcountersets.png)
 
 Dane wydajności dotyczące poszczególnych żądań HTTP został zgłoszony przez komputer z uruchomioną testu. na przykład komputer agenta. Dla żądania może monitorować dane, takie jak Średni czas do pierwszego bajtu, czas odpowiedzi i liczba żądań na sekundę.
 

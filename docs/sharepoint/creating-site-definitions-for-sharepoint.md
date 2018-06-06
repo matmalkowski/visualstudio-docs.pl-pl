@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691807"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765495"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
+# <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projektu definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, która stanowi podstawę dla nowej witryny programu SharePoint. Te definicje nie tylko określić wygląd i zachowanie witryny programu SharePoint, ale także jego zawartości domyślnej i funkcji. W definicji możesz umieścić listy wstępnie skonfigurowane, typów zawartości, odbiorcy zdarzeń, obrazy i inne elementy. SharePoint obejmuje niektóre definicje witryn, takie jak BLOG, na przykład. Podczas tworzenia witryny na podstawie definicji witryny BLOGU lokacji zawiera listy, części sieci Web i innych elementów, które wymaga lokacji obsługi blogów.  
   
  Aby uzyskać więcej informacji na temat definicje witryny, zobacz [szablony witryn i definicje](http://go.microsoft.com/fwlink/?LinkId=179134).  
@@ -41,11 +41,11 @@ ms.locfileid: "34691807"
   
 |Nazwa pliku|Opis|  
 |---------------|-----------------|  
-|Default.aspx|Domyślną stronę główną ASPX dla nowej witryny programu SharePoint.|  
-|Onet.XML|Określa konfiguracji nowej lokacji, składniki szablonu definicji witryny i zachowanie domyślne. Te ustawienia mogą obejmować atrybuty takie jak typy zawartości, które są włączone, listę widoki, pliki szablonów dokumentów i składnikami Web Part dołączone do lokacji. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|  
-|webtemp_*SiteDefinitionName*.xml|Określa konfiguracje definicji lokacji, które pojawia się w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
+|*Default.aspx*|Domyślną stronę główną ASPX dla nowej witryny programu SharePoint.|  
+|*Onet.XML*|Określa konfiguracji nowej lokacji, składniki szablonu definicji witryny i zachowanie domyślne. Te ustawienia mogą obejmować atrybuty takie jak typy zawartości, które są włączone, listę widoki, pliki szablonów dokumentów i składnikami Web Part dołączone do lokacji. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|  
+|*XML webtemp_ {SiteDefinitionName}*|Określa konfiguracje definicji lokacji, które pojawia się w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
   
- Domyślnie wszystkie definicje lokacji są przechowywane w *dysku:* \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates folderu. Każdej definicji lokacji ma własną podfolderu.  
+ Domyślnie wszystkie definicje lokacji są przechowywane w *{dysku:} \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* folderu. Każdej definicji lokacji ma własną podfolderu.  
   
 ## <a name="related-topics"></a>Tematy pokrewne
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691807"
 |-----------|-----------------|  
 |[Przewodnik: Tworzenie podstawowego projektu definicji witryny](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Zawiera instrukcje dotyczące tworzenia podstawowego projektu definicji witryny w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Porady: Tworzenie definicji witryny niestandardowych i konfiguracji](http://go.microsoft.com/fwlink/?LinkId=183309)|Opisuje sposób tworzenia definicji niestandardowej witryny w programie SharePoint, kopiując istniejącej definicji witryny, a następnie modyfikując kopię.|  
-|[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|W tym artykule opisano dla oryginalnego pliku, który określa definicje lokacji dostępne w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|W tym artykule opisano dla oryginalnego pliku, który określa definicje lokacji dostępne w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
 |[Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Opisuje sposób przygotowania rozwiązań programu SharePoint do użytku globalnego.|  
 |[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób tworzenia części strony programu SharePoint, które użytkownicy mogą modyfikować.|  
 |[Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia formantów wielokrotnych uruchamianych w stron aplikacji i składników Web Part.|  

@@ -1,5 +1,5 @@
 ---
-title: VBA i rozwiązania pakietu Office w Visual Studio | Dokumentacja firmy Microsoft
+title: Rozwiązania VBA i pakietu Office w Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768056"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>VBA i rozwiązania pakietu Office w Visual Studio
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Rozwiązania VBA i pakietu Office w Visual Studio
   Microsoft Visual Basic for Applications (VBA) korzysta z kodu niezarządzanego, który jest ściśle zintegrowany z aplikacjami pakietu Office. Projekty Microsoft Office utworzone za pomocą programu Visual Studio umożliwiają korzystać z programu .NET Framework i narzędzi projektowania Visual Studio.  
   
  Informacje o typach rozwiązań pakietu Office można tworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -44,16 +45,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Rejestrowanie makra.  
   
-## <a name="combining-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Łączenie VBA rozwiązań i rozwiązań pakietu Office utworzony za pomocą programu Visual Studio  
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Łączenie VBA rozwiązań i rozwiązań pakietu Office utworzony za pomocą programu Visual Studio  
  Kod VBA można wywołać z rozwiązań pakietu Office utworzony za pomocą programu Visual Studio i możesz także wywołać kodu w rozwiązaniach pakietu Office utworzony za pomocą programu Visual Studio z języka VBA. Określonych technik różni się w zależności od tego, czy rozwiązania do pakietu Office jest dodatku VSTO lub dostosowanie poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) i [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
  [Architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)   
- [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

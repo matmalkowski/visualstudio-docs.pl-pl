@@ -14,20 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8cb142fa56f739cae28367beda40a7c285145d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748790"
 ---
 # <a name="cores-view-zoom-tool"></a>Narzędzie do powiększania widoku rdzeni
 Formant powiększania jest suwak, który można powiększać i pomniejszać na osi czasu, dzięki czemu można skupić się na obszarów. Ten formant powiększa na środka bieżącego widoku, więc dostosowanie widoku przed powiększania.  
   
-## <a name="other-ways-to-zoom"></a>Inne sposoby powiększenia  
+## <a name="other-ways-to-zoom"></a>Inny sposób, aby powiększyć  
   
 -   Powiększanie: przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widoku osi czasu powiększenie wybranego zakresu.  
   
--   Powiększanie i zmniejszanie: Przesuń kursor myszy osi czasu, a następnie naciśnij klawisz CTRL podczas przenoszenia kółka myszy.  
+-   Powiększanie i zmniejszanie: Przesuń kursor myszy osi czasu, a następnie naciśnij klawisz **Ctrl** podczas przenoszenia kółka myszy.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok rdzeni](../profiling/cores-view.md)

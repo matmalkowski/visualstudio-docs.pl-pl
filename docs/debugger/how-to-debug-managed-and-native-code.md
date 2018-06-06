@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764556"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Samouczek: Debugowanie kodu zarządzanego i natywnego w programie Visual Studio
 
@@ -39,7 +40,7 @@ W tym samouczku obejmują:
 
 * Musi mieć zainstalowanego programu Visual Studio i **tworzenia klasycznych aplikacji w języku C++** obciążenia.
 
-    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 
@@ -73,7 +74,7 @@ W tym samouczku obejmują:
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ W tym samouczku obejmują:
 
 1. Wybierz szablon dla kodu aplikacji.
 
-    Dla programu .NET Framework w **nowy projekt** okna dialogowego wybierz **Visual C#**, **Windows Desktop klasycznego** z sekcji zainstalowane szablony, a następnie w środkowym okienku Wybierz **aplikacji konsoli (.NET Framework)**.
+    Dla programu .NET Framework w **nowy projekt** okno dialogowe Wybierz **Visual C#**, **Windows Desktop** z sekcji zainstalowane szablony, a następnie w środkowym okienku wybierz  **Konsoli aplikacji (.NET Framework)**.
 
     Dla platformy .NET Core w **nowy projekt** oknie dialogowym wybierz **Visual C#**, **.NET Core** z sekcji zainstalowane szablony, a następnie w środkowym okienku wybierz  **Konsoli aplikacji (.NET Core)**.
 
@@ -119,7 +120,7 @@ W tym samouczku obejmują:
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ W tym samouczku obejmują:
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ W większości wersji programu Visual Studio 2017, musisz włączyć debugowanie
     ```
     "nativeDebugging": true
     ```
-    
+
     Tak na przykład plik może wyglądać następujące czynności:
-    
+
     ```
     {
       "profiles": {
