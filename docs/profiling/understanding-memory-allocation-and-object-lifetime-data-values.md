@@ -16,7 +16,7 @@ ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34476733"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Zrozumienie pamięci alokacji i obiekt okres istnienia wartości danych

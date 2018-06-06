@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747736"
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 Możesz chcieć użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytory pracy niezależnie z projektem lub rozwiązaniem. Gdy masz otwartego rozwiązania można otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub projektu. Pliki, które chcesz pracować z niezależnie od kontenery są nazywane różne pliki. Różne pliki są zewnętrzne rozwiązania i projekty nie są uwzględnione w kompilacji i nie może zostać dołączony do rozwiązania pod kontrolą źródła.
 
  Otwieranie plików niezależnie od kontener jest przydatne w przypadku z różnych przyczyn. Może mieć plik, który chcesz wyświetlić, podczas tworzenia projektu rozwiązania, ale nie jest integralną częścią opracowywanie rozwiązań. Typowe przykłady obejmują uwagi rozwoju lub instrukcji, schemat bazy danych i klipów kodu. Ponadto można utworzyć pliku autonomicznym.
 
- ![Projekty rozwiązań](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![Projekty rozwiązań](../../ide/reference/media/projects_solutions_misc.gif)
 
  Eksplorator rozwiązań można wyświetlić folder różnych plików dla plików, gdy są włączone opcje folderu. Można ustawić opcji [dokumenty, środowisko, opcje — Okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md). Po zamknięciu dodatkowych plików nie jest skojarzony z danego rozwiązania lub projektu, chyba że jest włączona opcja w tym również.
 

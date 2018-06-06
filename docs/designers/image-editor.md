@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747313"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
@@ -92,13 +93,13 @@ Edytor obrazów paski narzędzi zawierają polecenia pomagające w pracy z obraz
 
  Oto **tryb edytora obrazów** narzędzi:
 
- ![Edytor obrazów modalne paska narzędzi. ] (../designers/media/digit-tre-modal-toolbar.png "Cyfrę TRE-modalne — pasek narzędzi")
+ ![Edytor obrazów modalne paska narzędzi.](../designers/media/digit-tre-modal-toolbar.png)
 
  Poniższa tabela zawiera opis elementów na **tryb edytora obrazów** narzędzi, które są wymienione w kolejności, w jakiej widnieją od lewej do prawej.
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Wybierz**|Umożliwia wybór prostokątny obszar obrazu. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
+|**Select**|Umożliwia wybór prostokątny obszar obrazu. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
 |**Nieprawidłowe zaznaczenie**|Umożliwia wybór nieregularne obszaru obrazu. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
 |**Wybór Różdżka**|Umożliwia wybór obszaru podobnie kolorze obrazu. *Tolerancji*— to znaczy maksymalną różnicę między sąsiadujących ze sobą kolorów, w których są one uznawane za podobne — można skonfigurować, aby uwzględnić mniejszy lub szerszego zakresu kolorów podobne. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|
 |**Przesuwanie**|Umożliwia przenoszenie obrazu względem ramki okna. W **przesuwanie** tryb, wybierz punkt na obrazie, a następnie przenieś.<br /><br /> Możesz tymczasowo aktywować **przesuwanie** tryb, przytrzymując klawisz Ctrl.|
@@ -116,7 +117,7 @@ Edytor obrazów paski narzędzi zawierają polecenia pomagające w pracy z obraz
 
  Oto **edytor obrazów** paska narzędzi.
 
- ![Pasek narzędzi edytora obrazów](../designers/media/digit-tre-toolbar.png "cyfrę-TRE — pasek narzędzi")
+ ![Pasek narzędzi edytora obrazów](../designers/media/digit-tre-toolbar.png)
 
  W poniższej tabeli opisano elementy na **edytor obrazów** narzędzi, które są wymienione w kolejności, w jakiej widnieją od góry do dołu.
 

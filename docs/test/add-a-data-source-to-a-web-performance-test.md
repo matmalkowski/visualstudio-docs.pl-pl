@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750828"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -143,11 +144,11 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 1. Utwórz folder do organizowania artefakty bazy danych z projektów i dodać element.
 
-     ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Utwórz plik tekstowy.
 
-     ![Nazwa nowego pliku tekstowego ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Nazwa nowego pliku tekstowego ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Edytuj plik tekstowy i dodaj następujące informacje:
 
@@ -159,7 +160,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 4. Wykonaj kroki w [wiązania danych SQL](#AddingDataBindingWebTest_BindSQLData), ale wybierz plik CSV jako źródła danych.
 
-     ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Pytanie: co zrobić, jeśli Mój istniejący plik CSV nie zawiera nagłówki kolumn?
 
@@ -167,7 +168,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 1. Dodaj nowy plik tekstowy o nazwie schema.ini.
 
-     ![Dodaj plik schema.ini](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Dodaj plik schema.ini](../test/media/web_test_databinding_schemafile.png)
 
 2. Edytuj plik schema.ini, aby dodać informacje opisujące struktury danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
 
@@ -178,39 +179,39 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 3. Dodawanie źródła danych do testu.
 
-     ![Dodawanie źródła danych do testu wydajności sieci web](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Dodawanie źródła danych do testu wydajności sieci web](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Jeśli używasz Plik schema.ini, wybierz bazę danych (nie plik CSV), jako źródło danych i nadaj mu nazwę.
 
-     ![Dodawanie źródła danych bazy danych](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Dodawanie źródła danych bazy danych](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Utwórz nowe połączenie.
 
-     ![Wybierz nowe połączenie](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Wybierz nowe połączenie](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Wybierz dla programu .NET Framework Data Provider for OLE DB.
 
-     ![Wybierz dostawcy danych OLE DB programu .NET framework](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![Wybierz dostawcy danych OLE DB programu .NET framework](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Wybierz pozycję Zaawansowane.
 
-     ![Choose Advanced](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Wybierz polecenie Zaawansowane](../test/media/web_test_databinding_advanced.png)
 
 8. Dla właściwości dostawcy wybierz Microsoft.Jet.OLEDB.4.0, a następnie ustaw właściwości rozszerzone do tekstu; HDR = NIE.
 
-     ![Zastosowanie zaawansowanych właściwości](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Zastosuj właściwości zaawansowane](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Wpisz nazwę folderu, który zawiera plik schematu i przetestować połączenie.
 
-     ![Wprowadź ścieżkę do folderu dane](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Wprowadź ścieżkę do folderu danych](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Wybierz plik CSV, który ma być używany.
 
-     ![Zaznacz plik tekstowy](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Zaznacz plik tekstowy](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Po zakończeniu zostanie wyświetlony plik CSV jako tabelę.
 
-     ![Źródło danych dodane do testowania](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Źródło danych dodane do testowania](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Pytanie: jak używać pliku XML jako źródło danych?
 
@@ -218,11 +219,11 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 1. Utwórz folder do organizowania artefakty bazy danych z projektów i dodać element.
 
-     ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Dodaj nowy element do folderu danych](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Tworzenie pliku XML.
 
-     ![Add ColorData.xml file](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![Dodaj plik ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Edytuj plik XML i dodać dane:
 
@@ -242,7 +243,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 4. Wykonaj kroki w [wiązania danych SQL](#AddingDataBindingWebTest_BindSQLData), ale wybierz plik XML jako źródła danych.
 
-     ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Pytanie: czy można dodać powiązania danych na żądanie usługi sieci web, która używa protokołu SOAP?
 
@@ -250,7 +251,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 1. Wybierz żądanie usługi sieci web w drzewie żądania i w oknie właściwości, wybierz wielokropek (...) we właściwości ciągów tekstowych.
 
-     ![Edycja ciągów tekstowych usługi sieci web](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Edycja ciągów tekstowych usługi sieci web](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Zastąp wartości w treści protokołu SOAP wartości powiązane z danymi przy użyciu następującej składni:
 

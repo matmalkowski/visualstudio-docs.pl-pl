@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752666"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
@@ -69,7 +70,7 @@ Można wyszukiwać w IDE dla poleceń, plików i opcji, oprócz filtrowanie zawa
 
 - **Znajdź w oknach dialogowych, menu poleceń i opcji**. W [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) wprowadź słowa kluczowe lub wyrażenia dla elementów, które próbujesz odnaleźć. Na przykład następujące opcje są wyświetlane po wprowadzeniu `new project`:
 
-    ![Szybkie uruchamianie wyniki dla "nowego projektu"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Szybkie uruchamianie wyniki dla "nowego projektu"](../ide/media/productivity_quicklaunch.png)
 
     **Szybkie uruchamianie** zawiera łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i **projekty i rozwiązania** strony w **Opcje** okno dialogowe, między innymi. Szybkie uruchamianie wyników można także pliki projektu i okien narzędzi.
 
@@ -79,7 +80,7 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
 - **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Jak można debugować kodu, można łatwo przełączać między przeglądarek sieci web zainstalowany, w tym [narzędzie Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Można użyć **docelowego debugowania** listę, która znajduje się na **standardowe** narzędzi dalej, aby **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, które przeglądarki jako debugowania lub Wyświetl strony.
 
-    ![Wybierz opcje debugowania w przeglądarce sieci Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Wybierz opcje debugowania w przeglądarce sieci Web](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Ustaw punkty przerwania tymczasowego**. Można utworzyć tymczasowego punktu przerwania w bieżącym wierszu kodu i jednocześnie uruchomienia debugera. Gdy naciśniesz wiersza kodu debugera przejdzie do trybu przerwania. Aby uzyskać więcej informacji, zobacz [Nawigacja w kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 

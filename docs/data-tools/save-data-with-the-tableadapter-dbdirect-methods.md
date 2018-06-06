@@ -1,5 +1,5 @@
 ---
-title: Zapisz dane z TableAdapter DBDirect metody
+title: Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747550"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisz dane z TableAdapter DBDirect metody
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji SQL bezpośrednio na bazie danych za pomocą metod TableAdapter DBDirect. Metody TableAdapter DBDirect Podaj poprawnie poziom kontroli nad aktualizacje bazy danych. Można je do uruchomienia określonej instrukcji SQL i zapisanych procedur wywołując poszczególne `Insert`, `Update`, i `Delete` metody odpowiednio do potrzeb aplikacji (zamiast zastąpionej `Update` metodę, która wykonuje AKTUALIZACJĘ INSERT i DELETE instrukcje wszystko w jednym wywołaniu).
 
  W tym przewodniku przedstawiono sposób:
@@ -63,7 +64,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

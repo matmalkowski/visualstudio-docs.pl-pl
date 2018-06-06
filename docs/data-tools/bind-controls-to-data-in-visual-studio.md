@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747394"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie formantów z danymi w Visual Studio
 Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Tych kontrolek powiązanych z danymi można utworzyć, przeciągając elementy z **źródeł danych** okna na powierzchni projektu lub kontrolki na powierzchni w programie Visual Studio.
@@ -45,7 +46,7 @@ Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Ty
 ## <a name="data-sources-window"></a>Data Sources — Okno
  Źródła danych są dostępne do projektu jako elementy w **źródeł danych** okna. To okno jest widoczne, lub jest dostępny z **widoku** menu powierzchni projektowej formularza jest aktywnym oknem w projekcie. Można przeciągnąć elementy z tego okna, aby utworzyć formantów, które są powiązane z danych podstawowych i źródeł danych można również skonfigurować, klikając prawym przyciskiem myszy.
 
- ![Okno źródła danych](../data-tools/media/raddata-data-sources-window.png "raddata okna źródeł danych")
+ ![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png)
 
  Dla każdego typu danych, która jest wyświetlana w **źródeł danych** okno formantu domyślny jest tworzony podczas przeciągnij element do projektanta. Aby przeciągnąć element z **źródeł danych** okna, można zmienić formant, który zostanie utworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

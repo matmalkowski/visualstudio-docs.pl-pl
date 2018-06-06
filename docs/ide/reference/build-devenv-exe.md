@@ -1,27 +1,30 @@
 ---
-title: -Kompilacji (devenv.exe)
+title: Kompilacja Devenv — przełącznik
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
-- builds [Team System], command-line
+- builds, command-line
 - /build Devenv switch
 - Devenv, /build switch
 - build Devenv switch
+- command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1d23302cc0c3b9d14b23bd8547f33eb21ce0c3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 777347ba36cf3443a509d1d6c8c44c23a86901e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764972"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
+
 Buduje rozwiązanie przy użyciu pliku konfiguracji określonego rozwiązania.
 
 ## <a name="syntax"></a>Składnia
@@ -31,34 +34,38 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 ```
 
 ## <a name="arguments"></a>Argumenty
- `SolutionName` Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.
 
- `SolnConfigName` Wymagane. Nazwa konfiguracji rozwiązania, który zostanie użyty do budowania rozwiązania o nazwie w `SolutionName`.
-
- / project `ProjName` opcjonalne. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.
-
- / projectconfig `ProjConfigName` opcjonalne. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas tworzenia `/project` o nazwie.
+|||
+|-|-|
+|*Nazwa rozwiązania*|Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.|
+|*SolnConfigName*|Wymagana. Nazwa konfiguracji rozwiązania, który zostanie użyty do budowania rozwiązania o nazwie w *Nazwa rozwiązania*. Jeśli dostępnych jest wiele platform rozwiązanie, należy także określić platformy, na przykład **"Debug\|Win32"**.|
+|/ project *nazwa_projektu.nazwa_modułu.nazwa_procedury*|Opcjonalna. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z *Nazwa rozwiązania* folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.|
+|/ projectconfig *ProjConfigName*|Opcjonalna. Nazwa projektu kompilacji konfiguracji, który będzie używany podczas kompilowania projektu o nazwie. Jeśli dostępnych jest wiele platform projektu, należy także określić platformy, na przykład **"Debug\|Win32"**.|
 
 ## <a name="remarks"></a>Uwagi
- Ta opcja wykonuje taką samą funkcję jak **Kompiluj rozwiązanie** polecenia menu w zintegrowane środowisko programistyczne (IDE).
 
- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
+- **/Build** przełącznika wykonuje taką samą funkcję jak **Kompiluj rozwiązanie** polecenia menu w zintegrowane środowisko programistyczne (IDE).
 
- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w **polecenia** okna, lub określić za pomocą pliku dziennika `/out` przełącznika.
+- Należy ująć ciągi zawierające spacje w podwójny cudzysłów.
 
- To polecenie tworzy tylko projekty, które uległy zmianie od czasu ostatniej kompilacji. Aby utworzyć wszystkich projektów w rozwiązaniu, użyj [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).
+- Podsumowanie informacji na temat kompilacji, w tym błędy, mogą być wyświetlane w oknie wiersza polecenia lub pliku dziennika określony za pomocą **/out** przełącznika.
+
+- **/Build** przełącznika tylko kompilacje projektów, które uległy zmianie od czasu ostatniej kompilacji. Aby utworzyć wszystkich projektów w rozwiązaniu, użyj [/rebuild](../../ide/reference/rebuild-devenv-exe.md) zamiast tego.
+
+- Jeśli zostanie wyświetlony komunikat o błędzie informujący o **konfiguracji nieprawidłowy projekt**, upewnij się, że określono platforma rozwiązania lub projektu platformy, na przykład **"Debug\|Win32"**.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie kompilacji projektu `CSharpConsoleApp`za pomocą `Debug` konfigurację kompilacji projektu w `Debug` Konfiguracja rozwiązania o `MySolution`.
+
+Poniższe polecenie tworzy projekt "CSharpConsoleApp", za pomocą konfiguracji kompilacji projektu "Debugowanie" w konfiguracji rozwiązania "Debug" "MySolution".
 
 ```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Projekty i rozwiązania — kompilowanie i czyszczenie](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Wwitches wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

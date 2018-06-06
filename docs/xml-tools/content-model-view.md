@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751796"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -22,7 +23,7 @@ Widok modelu zawartości zawiera graficzną reprezentację schematu lokalne i gl
 
  Na poniższej ilustracji **obszaru roboczego** panel zawiera sześciu węzłów schematu. `purchaseOrder` Jest wybrany węzeł w **obszaru roboczego** panelu i jest wyświetlany w powierzchnię projektu.
 
- ![Widok modelu zawartości projektanta schematu XML](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Widok modelu zawartości projektanta schematu XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panel obszaru roboczego
 
@@ -78,7 +79,7 @@ Widok modelu zawartości zawiera graficzną reprezentację schematu lokalne i gl
 
  Następujące przyciski narzędzi Projektanta XSD są włączone, gdy widok modelu zawartości jest aktywny.
 
- ![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opcja|Opis|
 |------------|-----------------|

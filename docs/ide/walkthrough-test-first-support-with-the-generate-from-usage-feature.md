@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748195"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Wskazówki: Wcześniejsze testowanie Programowanie przy użyciu funkcji generowania z użycia
 
@@ -41,7 +42,7 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
 
 3.  W środkowym okienku wybierz **jednostkowy projekt testowy** i zaakceptuj domyślną nazwę `UnitTestProject1`. Na poniższej ilustracji przedstawiono okno dialogowe, gdy pojawi się on w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], okno dialogowe wygląda podobnie.
 
-     ![Okno dialogowe nowego projektu testowego](../ide/media/newproject_test.png "NewProject_Test")
+     ![Okno dialogowe nowego projektu testowego](../ide/media/newproject_test.png)
 
 4.  Wybierz **OK** zamknąć **nowy projekt** okno dialogowe.
 
@@ -66,9 +67,9 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
 
 3.  Zlokalizuj `TestMethod1()` — metoda i zmienić jego nazwę na `DefaultAutomobileIsInitializedCorrectly()`. Wewnątrz tej metody, Utwórz nowe wystąpienie klasy o nazwie `Automobile`, jak pokazano na poniższych zrzutach ekranu. Faliste podkreślenie pojawia się, co oznacza to błąd kompilacji i [szybkie akcje](../ide/quick-actions.md) żarówki jest wyświetlana na lewym marginesie (C# tylko) lub bezpośrednio pod wężyk w przypadku Aktywuj ją.
 
-     ![Szybkie akcje w języku Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Szybkie akcje w języku Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Szybkie akcje w języku C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Szybkie akcje w języku C&#35;](../ide/media/genclass_underline.png)
 
 4.  Wybierz lub kliknij przycisk **szybkie akcje** żarówki. Zostanie wyświetlony komunikat o błędzie stwierdzający, że typ `Automobile` nie jest zdefiniowany. Jest również wyświetlana rozwiązania.
 
@@ -76,7 +77,7 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
 
 6. W **projektu** kliknij **GFUDemo\_VB** lub **GFUDemo_CS** nakazać programowi Visual Studio, aby dodać plik do projektu biblioteki klas zamiast testu Projekt. Jeśli jeszcze nie jest wybrana, wybierz **Utwórz nowy plik** i nadaj mu nazwę *Automobile.cs* lub *Automobile.vb*.
 
-     ![Okno dialogowe Nowy typ Generowanie](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Okno dialogowe Nowy typ Generowanie](../ide/media/genotherdialog.png)
 
 6.  Kliknij przycisk **OK** aby zamknąć okno dialogowe i utworzyć nowy plik.
 
@@ -133,7 +134,7 @@ Załóżmy specyfikację stwierdza, że nowy `Automobile` mogą być przełącza
 
      **Wyników testu** okno jest wyświetlane na poniższej ilustracji.
 
-     ![Wyników testu, który uległ awarii](../ide/media/testsfailed.png "TestsFailed")
+     ![Wyniki testów, których nie powiodła się](../ide/media/testsfailed.png)
 
 2.  W **wyników testu** okna, kliknij dwukrotnie pozycję w każdym wierszu wynik testu, aby przejść do lokalizacji każdego z testów.
 
@@ -155,7 +156,7 @@ Załóżmy specyfikację stwierdza, że nowy `Automobile` mogą być przełącza
 
      Teraz testy zostały zaliczone pomyślnie. **Wyników testu** okno jest wyświetlane na poniższej ilustracji.
 
-     ![Wyników testu, który przekazał](../ide/media/testspassed.png "TestsPassed")
+     ![Wyniki testów, które pomyślnie](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Zobacz także
 

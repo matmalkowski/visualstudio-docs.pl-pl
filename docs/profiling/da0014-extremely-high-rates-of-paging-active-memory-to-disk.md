@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fe54cec0e42161dceb9879264548d5926a0e7c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d0d73bff2090e74dfdfdf3d360af961b379b33e8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750158"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Wyjątkowo wysoki stopień stronicowania aktywnej pamięci na dysku
 |||  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  Ta zasada generowane, gdy stopień stronicowania aktywnej pamięci osiągną bardzo wysoki współczynnik. Informacyjny reguły, jeśli poziom stronicowania jest istotne, ale nie extreme [DA0017: wysoki stopień stronicowania aktywnej pamięci na dysk](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) generowane w zamian.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **Pamięć\Strony/s** kolumny. Określa, czy określone fazy wykonywania programu stronicowania działania We/Wy w przypadku większych niż inne.  
   
  Jeśli zbiera dane profilu dla aplikacji ASP.NET w scenariuszu testowania obciążenia, spróbuj uruchomić ponownie test obciążenia na komputerze, skonfigurować przy użyciu dodatkowej pamięci fizycznej (lub pamięci RAM).  

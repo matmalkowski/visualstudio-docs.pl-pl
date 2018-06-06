@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab522c19971e734e5a42f607d99f38f8e44930d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5800acfded9d500c68a0e071ffa6501d6b3c77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749613"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Znaczące wykorzystanie czasu procesora
 |||  
@@ -33,10 +34,10 @@ ms.lasthandoff: 04/19/2018
  Gdy profilu można za pomocą próbkowania, pamięci platformy .NET lub metody kontencji zasobów, należy zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
   
 ## <a name="cause"></a>Przyczyna  
- Użycie procesora (CPU) był znacznie wysoki w profilowania dane zebrane przy użyciu metody instrumentacji. Należy rozważyć użycie próbki metoda profilowania, gdy profilowanie procesora CPU powiązana aplikacji.  
+ Użycie procesora (CPU) jest wysoka w profilowania dane zebrane przy użyciu metody instrumentacji. Należy rozważyć użycie próbki metoda profilowania, gdy profilowanie procesora CPU powiązana aplikacji.  
   
 ## <a name="rule-description"></a>Opis reguły  
- W tym przebiegu profilowania były stale bardzo zajęty procesora (lub procesorów). Wysokie użycie procesora CPU może wskazywać aplikacji procesora. Instrumentowanych profile nie są zwykle najbardziej efektywny sposób zbadać scenariuszy użycia procesora CPU. Próbkowanie jest zazwyczaj bardziej skuteczne, gdy są profilowanie aplikacji, które poświęcać dużo czasu wykonywania instrukcji na procesor.  
+ W tym przebiegu profilowania procesor (lub procesorów) jest stale zajęte. Wysokie użycie procesora CPU może wskazywać aplikacji procesora. Instrumentowanych profile nie są najbardziej efektywny sposób zbadać scenariuszy użycia procesora CPU. Próbkowanie jest bardziej efektywne, gdy są profilowanie aplikacji, które poświęcać dużo czasu wykonywania instrukcji na procesor.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Należy rozważyć profilowania aplikację ponownie przy użyciu metody próbkowania zamiast metody instrumentacji, chyba że wymagają funkcji chronometrażu lub więcej planuje się opis wejścia/wyjścia niż wąskich gardeł.

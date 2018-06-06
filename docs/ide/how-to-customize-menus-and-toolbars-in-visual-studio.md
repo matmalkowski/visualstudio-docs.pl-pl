@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745952"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio
 
@@ -52,7 +53,7 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
 
     -   Aby dodać menu, wybierz **dodać nowego Menu** przycisku, wybierz **Modyfikuj zaznaczenie** przycisk, a następnie nazwą menu, które chcesz dodać.
 
-        ![Dostosuj — okno dialogowe przedstawiająca sposób dodać menu](../ide/media/addmenu.png "DodajMenu")
+        ![Dostosuj — okno dialogowe przedstawiający sposób dodawania menu.](../ide/media/addmenu.png)
 
     -   Aby usunąć menu, wybierz go w **formanty** listy, a następnie wybierz pozycję **usunąć** przycisku.
 
@@ -68,7 +69,7 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
 
     -   Aby dodać paska narzędzi, wybierz **nowy** przycisku, określ nazwę dla narzędzi, które chcesz dodać, a następnie wybierz pozycję **OK** przycisku.
 
-        ![Dostosuj — okno dialogowe przedstawiająca sposób dodawania paska narzędzi](../ide/media/addtoolbar.png "AddToolbar")
+        ![Dostosuj — okno dialogowe przedstawiająca sposób dodawania paska narzędzi](../ide/media/addtoolbar.png)
 
     -   Aby usunąć niestandardowego paska narzędzi, wybierz go w **paski narzędzi** listy, a następnie wybierz pozycję **usunąć** przycisku.
 
@@ -96,7 +97,7 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
 
         W **polecenia Add** okno dialogowe, wybierz element w **kategorii** wybierz element **polecenia** listy, a następnie wybierz pozycję **OK**przycisku.
 
-        ![Dodaj polecenie — Okno dialogowe w programie Visual Studio](../ide/media/addcommand.png "AddCommand")
+        ![Dodaj polecenie — Okno dialogowe w programie Visual Studio](../ide/media/addcommand.png)
 
     -   Aby usunąć polecenie, wybierz go w **formanty** listy, a następnie wybierz pozycję **usunąć** przycisku.
 
@@ -121,4 +122,4 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
 ## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
+- [Dopasowywanie edytora](../ide/customizing-the-editor.md)

@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745727"
 ---
-# <a name="design-xaml-in-visual-studio"></a>Projekt XAML w programie Visual Studio
+# <a name="design-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 
 Visual Studio i Blend for Visual Studio Podaj narzędzia visual dla tworzenia angażowanie interfejsów użytkownika, a multimedialną napotyka z XAML dla różnych typów aplikacji. Zarówno narzędzia korzystają ze wspólnego zestawu funkcji w tym edytorze XAML visual, ale program Blend for Visual Studio udostępnia narzędzia do projektowania dodatkowe bardziej zaawansowanych zadań, takich jak animacji i zachowania.
 
@@ -37,7 +38,7 @@ W przypadku najprostszych zadań IDE programu Visual Studio i Blend for Visual S
 
 - **Spójny interfejs użytkownika:** można zaprojektować aplikacji w kontekście znanego interfejsu użytkownika programu Visual Studio, co sprawia, że przełączenie między IDEs więcej przyjemne i produktywności środowiska. Blend dla Visual Studio ciemny motyw pomaga skupić się na zawartość, którą projektowania skracając kontrast między zawartości i interfejsu użytkownika używa programu Visual Studio. Zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![Program Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
+     ![Program Blend for Visual Studio IDE](../designers/media/blendide.png)
 
 - **XAML IntelliSense:** zarówno IDEs obsługuje wszystkie funkcje typowe można oczekiwać od IntelliSense uzupełniania instrukcji, obsługę typowych operacji Edytor komentarzy i formatowania kodu i nawigacji do zasobów, w tym powiązanie i kod.
 
@@ -45,7 +46,7 @@ W przypadku najprostszych zadań IDE programu Visual Studio i Blend for Visual S
 
 - **Środowisko ponowne załadowanie pliku:** można edytować pliki XAML albo program Blend for Visual Studio lub Visual Studio, i mieć edycji plików Załaduj ponownie automatycznie podczas przełączania między nimi. Aby zminimalizować przestoje przepływu pracy, można teraz ustawić pliku preferencji Załaduj ponownie w oknie dialogowym ponowne załadowanie pliku.
 
-     ![Środowisko ponowne załadowanie pliku](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Środowisko ponowne załadowanie pliku](../designers/media/blendfilereload.png)
 
 - **Zsynchronizowane ustawienia i układy:** układy niestandardowe umożliwiają zapisać i zastosować dostosowania układu okna narzędzia. Visual Studio zsynchronizuje te dostosowania i preferencji dotyczących programu Blend for Visual Studio i Visual Studio na maszynach gdy zalogujesz się przy użyciu tego samego konta Microsoft. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 

@@ -18,7 +18,7 @@ ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690916"
 ---
 # <a name="copy-selection"></a>Kopiuj dokonany wybór

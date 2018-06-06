@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47a519db245e2ec15548ba1d46a583d0a73f466f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9bc2dc1af5f2f040a15c5bee25a8d5dfc91afe2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693487"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764773"
 ---
-# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji
+# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji
   W programie Visual Studio można utworzyć niestandardowe kontrolki do ponownego użycia, które mogą być używane przez stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Formanty te są nazywane kontrolki użytkownika. Kontrola użytkownika to rodzaj typu złożonego formantu, który działa podobnie jak strony sieci Web platformy ASP.NET — Dodawanie istniejącego kontrolki serwera sieci Web i znaczników do formantu użytkownika i definiowanie właściwości i metody dla formantu. Następnie można osadzać na stronach sieci Web ASP.NET, w którym działają jako jednostka.  
   
 ## <a name="create-a-user-control"></a>Tworzenie formantu użytkownika

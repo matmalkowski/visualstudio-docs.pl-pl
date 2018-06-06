@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752095"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Użyj pokrycie kodu, aby określić, ile kodu jest poddawana testom
 
@@ -84,7 +85,7 @@ W niektórych sytuacjach, w zależności od danych testowych, używane będą r�
 
  Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Po uruchomieniu testu po raz drugi z wpisem „-2” widoczne kolorowanie pokrycia obejmie pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.
 
- Użyj ![ikony dla przycisku scalania w oknie pokrycie kodu](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**scalania wyników pokrycia kodu** w tym celu. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
+ Użyj ![ikony dla przycisku scalania w oknie pokrycie kodu](../test/media/codecoverage-mergeicon.png)**scalania wyników pokrycia kodu** w tym celu. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
 
  Użyj **eksportowanie wyników pokrycia kodu** być zapisane wyniki w operacji scalania.
 
@@ -258,7 +259,7 @@ Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem 
 
    Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.
 
-   ![Ustawienie definicji kompilacji dla pokrycia kodu](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")
+   ![Ustawienie definicji kompilacji dla pokrycia kodu](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Jeśli nie istnieje żadne pole o nazwie **typu z Uruchom plik ustawień**, zmień **Test Runner** właściwości. W obszarze **testów automatycznych**, wybierz pozycję **zestawu testowego** i kliknij przycisk wielokropka **[...]**  na końcu linii. W **Dodawanie/edytowanie testu** okna dialogowego, w obszarze **Test Runner**, wybierz **Visual Studio Test Runner**.

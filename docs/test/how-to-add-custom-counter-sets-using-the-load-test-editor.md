@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bd58cc29368ed66d3dd8c35fa4bdf3c87aa6a747
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752017"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Porady: dodawanie zestawów liczników niestandardowych za pomocą edytora testu obciążenia
 
@@ -27,7 +28,7 @@ Podczas tworzenia testu obciążenia z wykorzystaniem **załadować Test Kreator
 
 Zarządzanie liczniki w **edytora testu obciążenia**. Zestawy liczników, które już są dodawane do testu są widoczne w **ustawia licznik** węzła testu obciążenia. Po utworzeniu Testu obciążenia, można dodać do niego nowe niestandardowe zbiory liczników.
 
-![Niestandardowy zestaw liczników](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![Niestandardowy zbiór liczników](../test/media/loadtestcustomcounter.png)
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Aby dodać niestandardowy zbiór liczników do Testu obciążenia
 

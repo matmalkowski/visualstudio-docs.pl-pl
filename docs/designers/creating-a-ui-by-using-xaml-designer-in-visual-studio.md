@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745753"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiające, projektowanie opartych na języku XAML systemu Windows i aplikacje sieci Web. Interfejsy użytkownika można tworzyć dla aplikacji, przeciągając formantów z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.
@@ -34,7 +35,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 
  W widoku Projekt zawierający okna *kompozycji* jest aktywne okno i służy jako powierzchnia podstawowego. Służy on do wizualne projektowanie strony w aplikacji przez dodanie lub rysowanie elementów, a następnie modyfikując je. Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md). Na tej ilustracji przedstawiono obszar roboczy w widoku Projekt.
 
- ![Widok projektanta XAML projektu](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Widok projektu Projektanta XAML](../designers/media/xaml_editor_design_view.png)
 
  Te funkcje są dostępne w obszarze roboczym:
 
@@ -56,7 +57,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 
  W widoku Projekt kompozycji dodatkowe polecenia są dostępne w lewej dolnej części ekranu, jak pokazano poniżej:
 
- ![Projektowanie widok poleceń](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Polecenia w widoku Projekt](../designers/media/xaml_editor_design_controls.png)
 
  Te polecenia są dostępne na tym narzędzi:
 
@@ -70,7 +71,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 
  W widoku XAML okna zawierającego edytora XAML jest aktywne okno i edytora XAML jest podstawowym narzędzie autorskie. Extensible Application Markup Language (XAML) zawiera słownik deklaratywne, opartych na języku XML w celu określenia interfejsu użytkownika aplikacji. Widok XAML zawiera IntelliSense, automatycznego formatowania wyróżnianie składni i tagu nawigacji. Na tej ilustracji przedstawiono widok XAML:
 
- ![Widok XAML](../designers/media/xaml_editor.png "xaml_editor")
+ ![Widoku XAML](../designers/media/xaml_editor.png)
 
  **Widok podziału** widoku podziału jest wyświetlany w górnej części widoku XAML, gdy edytora XAML jest w dolnym okienku. Pasek podziału widoku umożliwia sterowanie względnych rozmiarów widok projektu i języka XAML. Należy również wymienić lokalizacje widoki (przy użyciu **wymiany okienka** przycisk), a następnie określ, czy widoki ułożone poziomo czy pionowo i zwinięcie widoku albo.
 
@@ -79,7 +80,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 ## <a name="device-window"></a>Okno urządzenia
  Okno urządzenia w Projektancie XAML można symulować w czasie projektowania różne widoki, wyświetla i opcje wyświetlania dla projektu. Okno urządzenia jest dostępna w **projekt** menu podczas pracy w Projektancie XAML. Oto wygląda następująco:
 
- ![Okno urządzenia](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Okno urządzenia](../designers/media/xaml_editor_device_panel.png)
 
  Są to opcje dostępne w oknie urządzenia:
 
@@ -114,7 +115,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 
  Aby wyświetlić okno konspektu dokumentu, na pasku menu wybierz **widoku**, **inne okna**, **konspekt dokumentu**.
 
- ![Okno konspektu dokumentu](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Okno konspektu dokumentu](../designers/media/xaml_editor_doc_outline.png)
 
  Są to opcje dostępne w okno konspektu dokumentu:
 
@@ -129,7 +130,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 ## <a name="properties-window"></a>Okno właściwości
  Okno właściwości umożliwia ustawiania wartości właściwości kontrolki. Oto wygląda następująco:
 
- ![Okno właściwości](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Okno właściwości](../designers/media/xaml_editor_prop_window.png)
 
  Istnieją różne opcje w górnej części okna właściwości. Możesz zmienić nazwę aktualnie zaznaczonego elementu przy użyciu **nazwa** pole. W lewym górnym rogu ma ikony reprezentującej obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisku, który wyświetla lightning bolt symbol. Aby wyszukać właściwości, uruchom nazwy właściwości w **właściwości wyszukiwania** pole. Okno właściwości są wyświetlane właściwości spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają skonfigurowanie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na przy użyciu właściwości i ich obsługi zdarzeń, zobacz [Szybki Start: dodawanie formantów i obsługa zdarzeń](http://go.microsoft.com/fwlink/?LinkID=247983)
 

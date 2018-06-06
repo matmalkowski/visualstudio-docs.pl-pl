@@ -22,7 +22,7 @@ ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690855"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizowanie danych dotyczących narzędzi do oceny wydajności

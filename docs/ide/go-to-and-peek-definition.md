@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745766"
 ---
-# <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typu i element członkowski
+# <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
 Deweloperzy muszą często wyświetlić definicje kodu źródłowego dla typów lub elementów członkowskich klasy, których używają w swoich kodu. W programie Visual Studio **przejdź do definicji** i **definicji wglądu** funkcje umożliwiają łatwe wyświetlanie definicji typu lub elementu członkowskiego. Jeśli kod źródłowy jest niedostępny, zamiast niego wyświetlony metadanych.
 
@@ -61,7 +62,7 @@ Po uruchomieniu **przejdź do definicji** lub **definicji wglądu** polecenia dl
 
 Na przykład, jeśli uruchomisz **przejdź do definicji** polecenia dla <xref:System.Console>, metadane <xref:System.Console> zostanie wyświetlony w edytorze kodu jako kodu źródłowego C#. Kod przypomina jego deklaracji, ale implementacja nie są wyświetlane.
 
-![Metadane jako źródło](../ide/media/metadatasource.png "MetadataSource")
+![Metadane jako źródło](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Podczas próby uruchomienia **przejdź do definicji** lub **definicji wglądu** polecenia dla typów albo elementów członkowskich, które są oznaczone jako wewnętrzne programu Visual Studio nie wyświetla metadane jako kod źródłowy, niezależnie od tego, czy zestaw odwołujący się jest znajomym, czy nie.

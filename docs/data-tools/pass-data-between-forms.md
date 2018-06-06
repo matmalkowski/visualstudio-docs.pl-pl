@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691215"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746181"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 Ten przewodnik zawiera instrukcje krok po kroku przekazywania danych z jednego formularza do innego. Przy użyciu klientów i tabele zamówień z Northwind, jeden formularz umożliwia użytkownikowi wybranie klienta, a drugi formularz zawiera wybranego klienta. W tym przewodniku przedstawiono sposób tworzenia metody na drugi formularz, który odbiera dane z pierwszego formularza.
@@ -71,7 +71,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

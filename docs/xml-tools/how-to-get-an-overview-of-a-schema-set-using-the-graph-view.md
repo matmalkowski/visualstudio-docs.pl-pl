@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751900"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Porady: Zapoznaj się z omówieniem schematu ustawiane przy użyciu widoku wykresu
 
@@ -34,7 +35,7 @@ W tym temacie opisano sposób użycia [widok wykresu](../xml-tools/graph-view.md
 
 6.  Wybierz **zestawu schematu** w węźle **Eksploratora schematu XML** i przeciągnij węzeł, aby zaprojektować suface w widoku wykresu. Powinny pojawić się wszystkie węzły globalne i strzałki łączące węzły, które mają relacji.
 
-     ![Widok wykresu](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![Widok wykresu](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Kliknij w dowolnym węźle na powierzchni projektu i przyjrzyj się na pasku stron nadrzędnych, aby sprawdzić, gdzie znajduje się wybrany węzeł w zestawie schematów.
 

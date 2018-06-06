@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750841"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
 **Wykres aktywności użytkownika wirtualnego**
 
- ![Wykres aktywności użytkownika wirtualnego](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Wykres aktywności użytkownika wirtualnego](../test/media/virtual_actchart.png)
 
  Widok szczegółów wyświetla wirtualnego wykres aktywności użytkownika, który służy do wizualnego analizowanie, co poszczególnych wirtualnych użytkowników podczas ładowania testów. Wykres aktywności użytkownika wirtualnego umożliwia Zobacz wzorców aktywności użytkownika, wzorce obciążenia skorelowania testy zakończone niepowodzeniem lub wolne i żądań z innych działań wirtualnego użytkownika w temacie. Wirtualnego wykres aktywności użytkownika mogą również ułatwić określenie wzrostów użycia procesora CPU, przerwy w żądań na sekundę i jakie testów lub stron były uruchomione podczas wzrostów i porzucania.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Panel szczegółów legendy**
 
- ![Panel szczegółów legendy](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Panel szczegółów legendy](../test/media/ltest_detailslegend.png)
 
  Panel szczegółów Legenda jest widoczna w wirtualnej wykres aktywności użytkownika. Szczegóły legendy okienko umożliwia filtrowanie testów, stron i transakcji dla kilku różnych kryteriów. Na przykład możesz usunąć niektóre testy z widoku, lub Usuń wszystkie testy pomyślne lub usunąć testy, których nie powiodła się z niektórych błędów. Można również usunąć wszystkie testy, które nie mają dzienników.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Filtrowanie wyników panelu**
 
- ![Filtrowanie wyników panel](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Panel wyników filtru](../test/media/ltest_filterresults.png)
 
  Panel wyników filtru jest widoczny w wirtualnej wykres aktywności użytkownika. Panel wyników filtru można filtrować według następujących czynności:
 

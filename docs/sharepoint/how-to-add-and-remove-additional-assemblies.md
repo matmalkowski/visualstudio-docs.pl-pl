@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767780"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: dodawanie i usuwanie zestawów dodatkowych
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: Dodawanie i usuwanie zestawów dodatkowych
   Jeśli pakiet programu SharePoint jest zależny od innych zestawów dla funkcji lub danych, możesz dodać zestawy do pakietu rozwiązań (wsp). W ten sposób programu SharePoint server upewnia się, że niestandardowe zestawy są instalowane przy użyciu pakietu.  
   
  Można również dodawać i zmienić bezpieczne kontrolki i klasa zasobów plików skojarzonych z zestawów.  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Wybierz klawisz Delete.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

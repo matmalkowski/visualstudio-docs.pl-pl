@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748741"
 ---
-# <a name="cpu-and-windows-counters"></a>CPU i liczniki systemu Windows
+# <a name="cpu-and-windows-counters"></a>Liczniki procesora CPU i systemu Windows
 
 Profilera Visual Studio umożliwia zbieranie danych wydajności, który został wygenerowany przez jednostkę procesora (liczniki CPU) i dane wydajności, który został wygenerowany przez system operacyjny (liczniki systemu Windows).
 
@@ -41,11 +42,11 @@ Jeśli chcesz liczba konkretnego zdarzenia, gdy używasz profilera, na przykład
 
 Profilera Visual Studio w dalszym ciągu obsługuje określonego zdarzenia dla określonej platformy. Na przykład Deweloper na platformie Pentium 4 chcieć liczba zdarzeń, które są specyficzne dla architektury NetBurst. To zdarzenie nie jest przenośny, ale pozostanie dostępna do projektanta dla sesji wydajności zależnych na danej platformie.
 
-## <a name="portable-and-platform-events"></a>Przenośny i zdarzenia platformy
+## <a name="portable-and-platform-events"></a>Zdarzenia przenośny i platform
 
 Przenośne zdarzenia są grupy liczniki CPU, które nie są specyficzne dla określonego procesora. Wszystkie liczniki CPU są nazywane zdarzenia platformy i może nie być obsługiwany na różnych platformach.
 
- Liczniki dla zdarzenia zarówno przenośny i platforma są definiowane w. Pliki XML, w którym znajdują się określone wartości, które są powiązane z liczników. Istnieją różne procesory, wiele plików, ponieważ dane dotyczące firmy Intel i procesory AMD, na przykład są różne. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profilera używa tych informacji do prezentowania odpowiednich liczników, zarówno przenośne, jak i platformy, dla użytkownika do pomiaru wydajności.
+ Liczniki dla zdarzenia zarówno przenośny i platforma są definiowane w. *xml* pliki, gdzie znajdują się określone wartości, które są powiązane z liczników. Istnieją różne procesory, wiele plików, ponieważ dane dotyczące firmy Intel i procesory AMD, na przykład są różne. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profilera używa tych informacji do prezentowania odpowiednich liczników, zarówno przenośne, jak i platformy, dla użytkownika do pomiaru wydajności.
 
 ### <a name="portable-events"></a>Przenośne zdarzenia
 
@@ -78,7 +79,7 @@ Przenośne zdarzenia zawierają następujące zdarzenia:
 |L2 Chybienia odczytu pamięci podręcznej|Wskazuje, że liczba drugiego poziomu pamięci podręcznej odczytu Chybienia.|
 |L2 Odwołania odczytu pamięci podręcznej|Wskazuje, że liczba drugiego poziomu pamięci podręcznej odczytu odwołania. Chybienia ładowania obejmuje, a odczytu Chybienia własność (RFO) i trafień.|
 
-## <a name="viewing-available-counters"></a>Przeglądanie dostępnych liczników
+## <a name="view-available-counters"></a>Wyświetl dostępne liczniki
 
 Można wyświetlić listę dostępnych liczniki CPU w środowisku IDE programu Visual Studio na, w oknie wiersza polecenia.
 
@@ -126,13 +127,13 @@ Przy użyciu [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia
 
      **\<Katalogu narzędzi wydajności programu Visual Studio > \VSPerfCmd /querycounters**
 
-     gdzie  **\<katalogu narzędzi wydajności programu Visual Studio >** zazwyczaj jest to ścieżka do katalogu narzędzi wydajności instalację programu Visual Studio
+     gdzie  *\<katalogu narzędzi wydajności programu Visual Studio >* zazwyczaj jest to ścieżka do katalogu narzędzi wydajności instalację programu Visual Studio
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team narzędzia Tools*
 
 ## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md)  
-[Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)  
-[Porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)  
-[Instrukcje: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Instrukcje: wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)  
+[Instrukcje: zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbce376425d4e98d493aa3478e9cf00ac837a17
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 40bc0be19ffa0daa9a0ea786d7e06a4e9e7dfd4b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750132"
 ---
 # <a name="cpu-utilization-graph"></a>Wykres wykorzystania CPU
 Wykres wykorzystania CPU pokazuje poziom użycia w aplikacji w czasie. Osi x reprezentuje czas trwania śledzenia, a oś y — liczba rdzeni logicznych w systemie. Wykres nie pokazuje, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego jej użycia.  
@@ -33,6 +34,6 @@ Wykres wykorzystania CPU pokazuje poziom użycia w aplikacji w czasie. Osi x rep
   
 -   Białe wskazuje dostępność nieużywane rdzenie logiczne w systemie. Rdzenie te są dostępne dla procesu, jeśli można znaleźć więcej możliwości równoległości.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wykorzystania](../profiling/utilization-view.md)   
  [Średnie wykorzystanie procesora CPU](../profiling/average-cpu-utilization.md)

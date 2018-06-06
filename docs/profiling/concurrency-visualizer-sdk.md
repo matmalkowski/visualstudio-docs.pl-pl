@@ -16,7 +16,7 @@ ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691189"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK

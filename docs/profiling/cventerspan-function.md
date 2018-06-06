@@ -26,13 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750119"
 ---
-# <a name="cventerspan-function"></a>CvEnterSpan — Funkcja
+# <a name="cventerspan-function"></a>Cventerspan — funkcja
 Oznacza początek nowy zakres.  
   
 ## <a name="syntax"></a>Składnia  
@@ -125,11 +126,11 @@ HRESULT CvEnterSpanExVA(
  Wartość S_OK, gdy wiadomość zostanie pomyślnie zapisany. Kod błędu w przypadku, gdy było żadnych błędów. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
  **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

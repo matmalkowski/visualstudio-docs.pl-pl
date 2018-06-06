@@ -12,17 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745998"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
 Jeśli wystąpi problem z programem Visual Studio, chcemy wiadomo o nim. Oto jak zgłosić problem, tak aby firma Microsoft może zdiagnozować i rozwiązać ten problem.
 
-## <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
 Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed zgłosić problem. W ten sposób można zgłosić problem, które występują, a także głosu lub komentarz na nim. Można nawet głosu lub komentarz na inny problem, który zostanie wyświetlony przesłane za.
 
@@ -30,14 +31,14 @@ Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed z
 2. Jeśli użytkownik nie jest zarejestrowany, wybierz **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu.
 3. Postępuj zgodnie z instrukcjami na ekranie do logowania.
 
- ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png "Zaloguj się zgłosić problem")
+ ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png)
 
 ## Wyszukiwanie i głosów dla podobnych problemów <a name="search_and_vote"></a>
 
 1. Wyszukaj problemu, a następnie sprawdź, czy inne osoby mają zgłoszone, zbyt.
 2. Jeśli ktoś zgłosił go, "góra głos" go, aby poinformować nas.
 
-  ![Wyszukiwanie i głosów dla podobnych problemów](../ide/media/search-and-vote.png "wyszukiwania i głosów dla podobnych problemów")
+  ![Wyszukiwanie i głosów dla podobnych problemów](../ide/media/search-and-vote.png)
 
 ## Zgłoś problem nowy <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed z
 2. Utwórz opisowy tytuł problemu, który pomoże nam go rozesłać do poprawne zespołu Visual Studio.
 3. Przekaż dodatkowe szczegóły i w miarę możliwości opisz kroki, które spowodowały wystąpienie problemu.
 
-  ![Zgłoś problem nowe](../ide/media/report-new-problem.png "Zgłoś problem nowy")
+  ![Zgłoś problem nowy](../ide/media/report-new-problem.png)
 
 ## Zrzut ekranu i załączniki (opcjonalnie) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cen
 1. Wybierz **rekordu** kartę.
 2. Wybierz **Rozpocznij rejestrowanie**. Nadaj uprawnienia do uruchamiania narzędzia.
 
-  ![Wybierz polecenie "Rozpocznij nagrywanie" pozwala udostępnić plik zrzutu śledzenia i sterty ] (../ide/media/record-dialog-box.png "Podaj śledzenia i sterty plików zrzutu")
+  ![Wybierz polecenie "Rozpocznij nagrywanie" pozwala udostępnić plik zrzutu śledzenia i sterty ](../ide/media/record-dialog-box.png)
 
 3. Gdy **Rejestrator** pojawi się narzędzie, wykonaj kroki, które odtworzenia problemu.
 4. Gdy wszystko będzie gotowe, wybierz pozycję **zatrzymać rekordu** przycisku.

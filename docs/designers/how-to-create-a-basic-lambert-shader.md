@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748208"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Porady: tworzenie podstawowego modułu cieniującego Lamberta
 
@@ -41,13 +42,13 @@ Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** 
 > [!NOTE]
 > Aby lepiej zaprezentować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu **MaterialDiffuse** parametr programu do cieniowania. Gry lub aplikacji można użyć tego parametru umożliwiają określanie wartości koloru unikatowy dla każdego obiektu. Informacje o istotnych parametrach, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md).
 
- ![Wykres programu do cieniowania i podgląd jego skutków. ] (../designers/media/digit-lambert-effect-graph.png "Cyfrę Lambert efekt wykresu")
+ ![Wykres programu do cieniowania i podgląd jego skutków.](../designers/media/digit-lambert-effect-graph.png)
 
  Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md).
 
  Na poniższej ilustracji przedstawiono programu do cieniowania, które jest opisane w tym dokumencie zastosowano do modelu 3D.
 
- ![Oświetlenie Lambert zastosowane do modelu. ] (../designers/media/digit-lambert-effect-result.png "Cyfrę Lambert efekt wynik")
+ ![Oświetlenie Lambert zastosowane do modelu.](../designers/media/digit-lambert-effect-result.png)
 
  Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3D, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

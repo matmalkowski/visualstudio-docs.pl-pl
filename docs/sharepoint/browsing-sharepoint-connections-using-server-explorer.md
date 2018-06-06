@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691420"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765859"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>Przeglądanie połączeń SharePoint, które używają Eksploratora serwera
-  Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Przy użyciu tej metody, można przejść za pośrednictwem składników witryny programu SharePoint w systemie. Składniki witryny programu SharePoint, takie jak definicje list i typów zawartości, są wyświetlane w węźle, o nazwie **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku**, **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, można usunąć elementy, przeglądania właściwości lub Odśwież widok drzewa za pomocą poleceń menu skrótów.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera
+  Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Przy użyciu tej metody, można przejść za pośrednictwem składników witryny programu SharePoint w systemie. Składniki witryny programu SharePoint, takie jak definicje list i typów zawartości, są wyświetlane w węźle, o nazwie **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku** > **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, można usunąć elementy, przeglądania właściwości lub Odśwież widok drzewa za pomocą poleceń menu skrótów.  
   
 > [!IMPORTANT]  
 >  Aby przeglądać witryny programu SharePoint, musisz być administratorem zbioru witryn programu SharePoint, a działanie programu Visual Studio z uprawnieniami administratora komputera lokalnego. W przeciwnym razie jest wyświetlana w **Eksploratora serwera**, ale nie można rozwinąć jego węzła. Aby sprawdzić, czy jesteś administratorem zbioru witryn, otwórz witrynę w przeglądarce sieci web, otwórz **Akcje witryny** menu, wybierz **uprawnienia witryny**, a następnie na **uprawnienia: Team Witryna** wybierz pozycję **Administratorzy** polecenie **Zarządzaj** na Wstążce. Twoja nazwa będzie widoczna w polu tekstowym, jeśli jesteś administratorem zbioru witryn. Jeśli **Administratorzy** polecenia nie pojawia się w grupie zarządzania, na Wstążce, użytkownik nie jest administratorem zbioru witryn i odpowiednie uprawnienia, które należy uzyskać od administratora witryny.  

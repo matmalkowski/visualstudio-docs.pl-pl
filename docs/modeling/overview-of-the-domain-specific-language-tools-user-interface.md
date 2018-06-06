@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748728"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], interfejs użytkownika będzie wyglądać poniższej ilustracji.
 
- ![Projektant DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Projektant DSL](../modeling/media/dsl_designer.png)
 
  W poniższej tabeli opisano, jak są używane elementy interfejsu użytkownika.
 
@@ -36,7 +37,7 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
 ## <a name="the-domain-model-diagram"></a>Diagram modelu domeny
  Diagram modelu domeny jest podzielona na dwie części. Po jednej stronie diagramu zawiera elementów i relacji w modelu. Druga strona pokazuje, jak model jest wyświetlana i zawiera kształty, które są używane do wyświetlania elementów i właściwości diagramu modelu. Na poniższej ilustracji przedstawiono elementów diagramu.
 
- ![Projektant DSL z tor](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![Projektant DSL z tor](../modeling/media/dsl_desinger.png)
 
  W poniższej tabeli opisano niektóre elementy na diagramie modelu domeny.
 

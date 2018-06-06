@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746718"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 
@@ -29,7 +30,7 @@ Można użyć **definicji wglądu** z kodem C#, Visual Basic i C++. W języku Vi
 
      Na ilustracji przedstawiono **definicji wglądu** Windows metody o nazwie `Print()`:
 
-     ![Podgląd okna](../ide/media/peekwindow.png "PeekWindow")
+     ![Okno podglądu](../ide/media/peekwindow.png)
 
      Okno definicji pojawia się poniżej `printer.Print("Hello World!")` wiersza w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, które należy wykonać `printer.Print("Hello World!")` są wyświetlane w oknie definicji.
 
@@ -43,19 +44,19 @@ Można użyć **definicji wglądu** z kodem C#, Visual Basic i C++. W języku Vi
 
 Jeśli masz już **definicji wglądu** okna otwarte, należy wywołać **definicji wglądu** ponownie na kodzie w danym przedziale. Otwiera się inne okno definicji. Zestaw łączy do stron nadrzędnych obok karty w oknie definicji, służący do nawigacji między oknami definicji. Etykietka narzędzia na każdej kropce ukazuje nazwę pliku i ścieżkę pliku definicji, którą ta kropka reprezentuje.
 
-   ![Okno podglądu okna podglądu](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Okno podglądu okna podglądu](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Definicji wglądu z wieloma wynikami
 
 Jeśli używasz **definicji wglądu** na kod, który ma więcej niż jednej definicji (na przykład klasy częściowej), zostanie wyświetlona lista wyników, z prawej strony widoku definicji kodu. Możesz wybrać dowolny wynik na liście, aby wyświetlić jego definicję.
 
-   ![W oknie Peek wiele wyników](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Wgląd w oknie wiele wyników](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Edytuj w oknie Wybieranie definicji
 
 Po rozpoczęciu edycji wewnątrz **definicji wglądu** okna, pliku, który modyfikacji automatycznie otwiera się jako osobnej karcie w edytorze kodu i odzwierciedla zmiany, które zostały wprowadzone. Możesz dokonać, Cofnij i Zapisz zmiany w **definicji wglądu** okna i na karcie nadal odzwierciedlenia tych zmian. Nawet jeśli zamkniesz **definicji wglądu** okna bez zapisywania zmian, można wprowadzić, Cofnij i zapisać zmiany na karcie Pobieranie dokładnie którym została pozostawiona w **definicji wglądu** okna.
 
-   ![Edytowanie okna podglądu](../ide/media/peekedit.png "PeekEdit")
+   ![Edytowanie okna podglądu](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>Aby zmienić opcje dla definicji wglądu
 

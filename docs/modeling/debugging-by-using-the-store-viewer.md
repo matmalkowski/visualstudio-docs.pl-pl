@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748413"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debugowanie za pomocą przeglądarki sklepu
 Z podglądem przechowywania możesz zbadać stan *przechowywania* używane przez [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Podgląd przechowywania Wyświetla listę wszystkich elementów modelu domeny znajdujących się w określonym magazynie, wraz z właściwości elementu i łącza między elementami.
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>Przy użyciu przeglądarki plików magazynu
  Po otwarciu podglądu magazynu niemodalne okno dialogowe formularzy systemu Windows pojawi się, jak przedstawiono na poniższej ilustracji.
 
- ![](../modeling/media/storeviewer2.png "storeviewer2") przechowywania podglądu
+ ![](../modeling/media/storeviewer2.png) Podgląd magazynu
 
  Podgląd magazynu ma trzy okienka: okienka po lewej stronie, prawym górnym rogu i prawym dolnym rogu. W lewym okienku będzie typów w widoku drzewa `DomainDataDirectory` elementu członkowskiego magazynu. Rozwiń węzeł partycję, kliknij element elementu właściwości są wyświetlane w prawym górnym rogu okienka. Jeśli element jest połączony z innymi elementami, dodatkowe elementy są widoczne w okienku prawym dolnym rogu. Jeśli zostanie dwukrotnie kliknięty element w prawym dolnym rogu okienka, element zostanie wyróżniona w okienku po lewej stronie.
 

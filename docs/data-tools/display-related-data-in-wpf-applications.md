@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746549"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie powiązanych danych w aplikacjach WPF
 W niektórych aplikacjach można pracować z danymi, które pochodzą z wielu tabel lub jednostek, które są powiązane ze sobą w relacji nadrzędny podrzędny. Na przykład można wyświetlić siatkę, który wyświetla klientów z `Customers` tabeli. Po wybraniu określonego klienta innego siatce są wyświetlane zlecenia dla tego klienta z powiązanego `Orders` tabeli.
@@ -53,7 +54,7 @@ Możesz utworzyć formantów powiązanych z danymi, które wyświetlanie powiąz
 
      Na poniższym rysunku pokazano pokrewny **zamówień** spis **klientów** tabeli w elemencie dataset w **źródeł danych** okna.
 
-     ![Okno źródła danych przedstawiający relacji](../data-tools/media/datasources2.gif "DataSources2")
+     ![Relacja przedstawiający okno źródeł danych](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Zobacz także
 

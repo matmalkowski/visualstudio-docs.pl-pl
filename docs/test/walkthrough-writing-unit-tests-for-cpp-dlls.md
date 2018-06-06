@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751835"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Porady: pisanie testów jednostkowych dla biblioteki DLL języka C++
 
@@ -45,11 +46,11 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
      W tym przewodniku, nosi nazwę projektu testowego `NativeRooterTest`.
 
-     ![Tworzenie projektu testu jednostkowego języka C++](../test/media/utecpp01.png "UteCpp01")
+     ![Tworzenie projektu testu jednostkowego języka C++](../test/media/utecpp01.png)
 
 2.  W nowym projekcie sprawdzić **unittest1.cpp**
 
-     ![Projekt testowy z TESTEM&#95;klasy i testowania&#95;metody](../test/media/utecpp2.png "UteCpp2")
+     ![Projekt testowy z TESTEM&#95;klasy i testowania&#95;— metoda](../test/media/utecpp2.png)
 
      Zwróć uwagę, że:
 
@@ -82,7 +83,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
          Uruchomienie testu jest wyświetlany w obszarze **przekazany testy**.
 
-         ![Jednostki Eksploratora testów z jednej testowej przekazany](../test/media/utecpp04.png "UteCpp04")
+         ![Jednostki Eksploratora testów z jednej testowej przekazany](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Tworzenie projektu biblioteki DLL
 
@@ -90,17 +91,17 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
      W tym przewodniku projektu o nazwie `RootFinder`.
 
-     ![Tworzenie projektu C++ Win32](../test/media/utecpp05.png "UteCpp05")
+     ![Tworzenie projektu C++ Win32](../test/media/utecpp05.png)
 
 2.  Wybierz **DLL** i **eksportować symbole** w Kreatorze aplikacji Win32.
 
      **Eksportować symbole** opcja generuje wygodny makra, które służy do deklarowania wyeksportowanych metod.
 
-     ![Kreator projektu C++ ustaw dla biblioteki DLL i eksportowanie symboli](../test/media/utecpp06.png "UteCpp06")
+     ![Kreator projektu C++ ustaw dla biblioteki DLL i eksportowanie symboli](../test/media/utecpp06.png)
 
 3.  Deklarowanie wyeksportowanej funkcji w pliku .h główna:
 
-     ![Nowy kod projektu i .h plik DLL przy użyciu interfejsu API makr](../test/media/utecpp07.png "UteCpp07")
+     ![Nowy kod projektu i .h plik DLL przy użyciu interfejsu API makr](../test/media/utecpp07.png)
 
      Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy jako widoczny spoza biblioteki DLL. Aby uzyskać więcej informacji, zobacz [korzystanie z dllimport i dllexport w klasach C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
     1.  Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości**, **Framework i odwołania**.
 
-         ![Właściwości projektu C++ | Struktura i odwołań](../test/media/utecpp08.png "UteCpp08")
+         ![Właściwości projektu C++ | Struktura i odwołań](../test/media/utecpp08.png)
 
     2.  Wybierz **Dodaj nowe odwołanie**.
 
          W **Dodaj odwołanie** oknie dialogowym Wybierz projektu biblioteki DLL a wybierz **Dodaj**.
 
-         ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png "UteCpp09")
+         ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png)
 
 2.  W pliku .cpp testu jednostki główną należy dołączyć plik .h kodu biblioteki DLL:
 
@@ -160,7 +161,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
 5.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
 
-     ![Eksplorator testów jednostkowych &#45; podstawowy Test przekazany](../test/media/utecpp10.png "UteCpp10")
+     ![Eksplorator testów jednostkowych &#45; podstawowy Test zakończył się powodzeniem](../test/media/utecpp10.png)
 
  Ma ustawienie testu i projekty kodu i sprawdzić, czy można uruchamiać testy, które uruchamiania funkcji w projekcie kodu. Teraz można rozpocząć pisanie rzeczywistych testów i kod.
 
@@ -189,7 +190,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
      Nowy test zakończy się niepowodzeniem.
 
-     ![Niepowodzenia RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
@@ -217,7 +218,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
      Zarówno testy zostały zaliczone pomyślnie.
 
-     ![Eksplorator testów jednostkowych &#45; zakresu pomyślny](../test/media/utecpp12.png "UteCpp12")
+     ![Eksplorator testów jednostkowych &#45; zakresu Test zakończył się powodzeniem](../test/media/utecpp12.png)
 
     > [!TIP]
     > Opracuj kodu, dodając testy jednym naraz. Upewnij się, że wszystkie testy zostały zaliczone pomyślnie po każdej iteracji.
@@ -263,7 +264,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
      Zostanie wyróżniona potwierdzenia nie powiodło się. Komunikat o błędzie jest widoczny w okienku szczegółów Eksploratora testów.
 
-     ![Nie powiodło się NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests nie powiodło się.](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:
 
@@ -291,10 +292,10 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 
 6.  Teraz przejść pomyślnie wszystkie testy.
 
-     ![Wszystkie testy zostały zaliczone pomyślnie](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Wszystkie testy zostały zaliczone pomyślnie](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+> Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png) przycisk przełącznika na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 
 ##  <a name="refactor"></a> Zrefaktoryzuj kod bez zmiany testów

@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746783"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -66,13 +67,13 @@ Polecenia, które mają wpływ na stan projektanta programu do cieniowania znajd
 
 Oto **trybu projektanta programu do cieniowania** narzędzi:
 
-![Projektant programu do cieniowania modalne paska narzędzi. ] (../designers/media/digit-dsd-modal-toolbar.png "Cyfrę DSD-modalne — pasek narzędzi")
+![Projektant programu do cieniowania modalne paska narzędzi.](../designers/media/digit-dsd-modal-toolbar.png)
 
 Poniższa tabela zawiera opis elementów na **trybu projektanta programu do cieniowania** narzędzi, które są wymienione w kolejności, w jakiej widnieją od lewej do prawej:
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Wybierz**|Umożliwia interakcję z węzłów i krawędzi na wykresie. W tym trybie można wybierz węzeł i Przenieś lub usuń je, a można ustanowienia krawędzi lub podziel je.|
+|**Select**|Umożliwia interakcję z węzłów i krawędzi na wykresie. W tym trybie można wybierz węzeł i Przenieś lub usuń je, a można ustanowienia krawędzi lub podziel je.|
 |**Przesuwanie**|Umożliwia przenoszenie wykres programu do cieniowania względem ramki okna. Aby kadrować, wybierz punkt na powierzchni projektu i przenosić.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie bardziej lub mniej wykres programu do cieniowania szczegółów względem ramki okna. W **powiększenie** tryb, wybierz punkt na powierzchni projektu i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby powiększyć lub pomniejszyć za pomocą kółka myszy.|
 |**Dopasuj widok do rozmiaru**|Wyświetla wykres pełnego programu do cieniowania ramki okna.|

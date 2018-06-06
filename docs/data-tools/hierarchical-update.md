@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747472"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 *Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (z zestawu danych z dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu zasady integralności referencyjnej. *Integralność referencyjna* odwołuje się do reguły spójności udostępniane przez ograniczenia w bazie danych, które kontrolują zachowanie wstawiania, aktualizowania i usuwania rekordów powiązanych. Na przykład jest integralności referencyjnej, wymusza tworzenie rekordu klienta przed zezwoleniem zamówień ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacje w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Włącz hierarchicznej aktualizacji w zestawie danych
  Hierarchiczna aktualizacja domyślnie dla wszystkich nowych baz danych, które zostały dodane lub utworzony w projekcie. Włączanie lub wyłączanie hierarchicznej aktualizacji przez ustawienie **hierarchicznej aktualizacji** właściwości typizowanego zestaw danych w zestawie danych do **True** lub **False**:
 
- ![Hierarchiczna aktualizacja ustawienie](../data-tools/media/hierarchical-update-setting.png "ustawienie hierarchiczna aktualizacja")
+ ![Ustawienie hierarchiczna aktualizacja](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Tworzenie nowej relacji między tabelami
  Aby utworzyć nową relację między dwiema tabelami, w Projektancie obiektów Dataset, wybierz pasek tytułu każdej tabeli, następnie kliknij prawym przyciskiem myszy i wybierz **Dodawanie relacji**.
 
- ![Hierarchiczna aktualizacja Dodaj menu relacji](../data-tools/media/hierarchical-update-add-relation-menu.png "hierarchicznej aktualizacji dodawać menu relacji")
+ ![Hierarchiczna aktualizacja Dodaj menu relacji](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Ograniczenia klucza obcego, kaskadowych aktualizacji i usuwania
  Ważne jest, aby zrozumieć, jak ograniczenia klucza obcego i kaskadowych zachowanie w bazie danych są tworzone w kodzie wygenerowanym zestawie danych.

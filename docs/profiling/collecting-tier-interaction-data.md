@@ -20,7 +20,7 @@ ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34548440"
 ---
 # <a name="collect-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami

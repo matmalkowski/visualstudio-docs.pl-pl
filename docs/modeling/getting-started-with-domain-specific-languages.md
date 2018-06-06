@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750262"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyciu języka specyficznego dla domeny (DSL) utworzone przy użyciu zestawu SDK modelowania dla programu Visual Studio.
@@ -28,7 +29,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Po zaprojektowaniu DSL można rozpowszechniać go jako część pakietu rozszerzenia integracji programu Visual Studio (VSIX). Użytkownicy pracować z DSL w programie Visual Studio:
 
- ![Diagram drzewa rodziny, przybornika i explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Diagram drzewa rodziny, przybornika i explorer](../modeling/media/familyt_instance.png)
 
  Jest tylko część DSL. Wraz z notacji pakietu VSIX zawiera narzędzia, które użytkownicy mogą stosować ułatwiające je edytować i generować materiału z ich modeli.
 
@@ -60,7 +61,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 3.  Kliknij przycisk **projektanta języka specyficznego dla domeny**.
 
-     ![Okno dialogowe DSL tworzenie](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
 
 4.  W **nazwa** wpisz **FamilyTree**. Kliknij przycisk **OK**.
 
@@ -87,7 +88,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Interfejs użytkownika jest teraz podobny poniższej ilustracji.
 
- ![Projektant DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Projektant DSL](../modeling/media/dsl_designer.png)
 
  To rozwiązanie definiuje domeny określonego języka. Aby uzyskać więcej informacji, zobacz [Przegląd interfejsu użytkownika narzędzia języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
  Eksperymentalne Visual Studio będzie podobne do następujących:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Zawartość modelu
  Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu ** elementy* i *łącza* między elementami. Określa, jakie typy elementów modelu definicji DSL i powiązań w modelu. Na przykład w DSL, utworzone na podstawie szablonu języka minimalne, ma jeden typ elementu modelu i jednego typu łącza.
@@ -196,7 +197,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 1.  Na diagramie DslDefinition zmienić **ExampleModel** do **FamilyTreeModel**, **ExampleElement** do **osoby**,  **Obiekty docelowe** do **nadrzędnych**, i **źródeł** do **dzieci**. Możesz kliknąć każda etykieta je zmienić.
 
-     ![Diagram definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![Diagram definicji DSL &#45; rodziny drzewa modelu](../modeling/media/familyt_person.png)
 
 2.  Zmień nazwę elementu i łącznik narzędzia.
 
@@ -255,7 +256,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
     4.  Wybierz każdego nowego dekoratora i w oknie właściwości ustaw **pozycji** pola. Określa, gdzie wartość właściwości domeny będzie wyświetlana dla kształtu. Na przykład ustawić **InnerBottomLeft** i **InnerBottomRight**.
 
-         ![Definicja kształtu przedziału](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Definicja kształtu Przedział](../modeling/media/familyt_compartment.png)
 
 3.  Elementy decorator mapować do właściwości.
 
@@ -271,7 +272,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
 6.  W pliku .TT — można dodać kod, który uzyskuje właściwości każdej osoby.
 
- ![Diagram drzewa rodziny, przybornika i explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Diagram drzewa rodziny, przybornika i explorer](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definiowanie nowych klas
  Można dodać klasy i relacje do modelu. Na przykład można utworzyć nowej klasy reprezentujące miastach i nowej relacji do reprezentowania, że osoba żyła w mieście.
@@ -297,7 +298,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
     1.  Kliknij przycisk **relacji** narzędzia, kliknij przycisk osoby, a następnie kliknij przycisk miasta.
 
-         ![Fragment definicji DSL: katalogu głównego drzewa rodziny](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![Fragment definicji DSL: katalogu głównego drzewa rodziny](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Relacje odwołania reprezentują odsyłacze z jednej części drzewa modelu do innego.
@@ -322,7 +323,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 
     2.  Użyj **mapy Element diagramu** narzędzia, aby połączyć nowego łącznika do relacji między i miasta osoby.
 
-         ![Definicja drzewa rodziny z mapy dodano kształt](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Definicja drzewa rodziny z mapy dodano kształt](../modeling/media/familyt_shapemap.png)
 
 6.  Utwórz element narzędzia do tworzenia nowych miast.
 

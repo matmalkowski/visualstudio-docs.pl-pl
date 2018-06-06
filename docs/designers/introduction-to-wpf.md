@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747284"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 
@@ -67,7 +68,7 @@ XAML jest oparte na języku XML język używany do wdrożenia aplikacji wygląd 
 
  Na poniższej ilustracji przedstawiono interfejs użytkownika (UI), który jest zdefiniowany w języku XAML w poprzednim przykładzie.
 
- ![Okno zawierające przycisk](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![Okno zawierające przycisk](../designers/media/wpfintrofigure10.png)
 
  Ponieważ XAML jest oparte na języku XML, budowy interfejsu użytkownika, które tworzą z nią w hierarchii elementów zagnieżdżonych znany jako [element drzewa](/dotnet/framework/wpf/advanced/trees-in-wpf). Element drzewa zapewnia logiczne i intuicyjne sposób tworzenia i zarządzania nimi UI.
 
@@ -300,7 +301,7 @@ Kształty 2D podał WPF obejmują standardowy zestaw kształty podstawowe. Jedna
 
 <xref:System.Windows.Media.Geometry> obiekty można wycinka, testowanie trafień i 2D danych graficzne renderowania.
 
-![Różnych zastosowań ścieżki](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Różnych zastosowań ścieżki](../designers/media/wpfintrofigure5.png)
 
 Aby uzyskać więcej informacji, zobacz [omówienie geometrii](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -308,7 +309,7 @@ Aby uzyskać więcej informacji, zobacz [omówienie geometrii](/dotnet/framework
 
 Podzestaw możliwości 2D WPF zawiera efekty wizualne, takie jak gradienty, mapy bitowe, rysunki malowanie wideo, obracanie, skalowanie i pochylanie. Te są wszystkie osiągnięty przy pędzle; na poniższej ilustracji przedstawiono kilka przykładów.
 
-![Ilustracja różnych pędzli](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![Ilustracja różnych pędzli](../designers/media/wpfintrofigure6.png)
 
 Aby uzyskać więcej informacji, zobacz [omówienie pędzle WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
@@ -316,7 +317,7 @@ Aby uzyskać więcej informacji, zobacz [omówienie pędzle WPF](/dotnet/framewo
 
 WPF zawiera również funkcje renderowania 3W, które zintegrować z grafiki 2-d, aby umożliwić tworzenie atrakcyjnych i bardziej interesującego interfejsów użytkownika. Na przykład na poniższej ilustracji przedstawiono obrazów 2D renderowane kształtów 3D.
 
-![Zrzut ekranu przedstawiający przykładowy Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Zrzut ekranu przedstawiający Visual3D](../designers/media/wpfintrofigure13.png)
 
 Aby uzyskać więcej informacji, zobacz [Przegląd grafiki 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -324,7 +325,7 @@ Aby uzyskać więcej informacji, zobacz [Przegląd grafiki 3D](/dotnet/framework
 
 Umożliwia obsługę animacji WPF, wprowadzone kontrolki powiększania, potrząsanie, pokrętła i zanikania, aby utworzyć interesujące strony przejścia i inne. Można animować większość klas WPF, nawet klas niestandardowych. Na poniższej ilustracji przedstawiono prosty animacji w akcji.
 
-![Obrazy modułu animowany](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![Obrazy animowany modułu](../designers/media/wpfintrofigure7.png)
 
 Aby uzyskać więcej informacji, zobacz [omówienie animacja](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -336,7 +337,7 @@ Jest jednym ze sposobów przekazywać zawartość sformatowanego przy użyciu no
 
 Obrazy są wspólne dla większości aplikacji i WPF udostępnia kilka sposobów korzystania z nich. Na poniższej ilustracji przedstawiono interfejs użytkownika z pola listy, który zawiera obrazy miniatur. Po wybraniu miniaturę obrazu jest wyświetlany w pełnym rozmiarze.
 
-![Obrazy miniatur i pełne&#45;rozmiar obrazu](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![Obrazy miniatur i pełne&#45;rozmiar obrazu](../designers/media/wpfintrofigure8.png)
 
 Aby uzyskać więcej informacji, zobacz [Imaging omówienie](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
@@ -348,7 +349,7 @@ Aby uzyskać więcej informacji, zobacz [Imaging omówienie](/dotnet/framework/w
 
 Okna na poniższy rysunek przedstawia <xref:System.Windows.Controls.MediaElement> kontroli w akcji.
 
-![Formant MediaElement z obsługą audio i wideo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![Formant MediaElement z obsługą audio i wideo](../designers/media/wpfintrofigure1.png)
 
 Aby uzyskać więcej informacji, zobacz [grafiki i Multimedia](/dotnet/framework/wpf/graphics-multimedia).
 
@@ -397,7 +398,7 @@ Głównym celem większości formantów WPF jest do wyświetlania zawartości. N
 
 Na poniższej ilustracji przedstawiono wynik.
 
-![Kontrolki pola tekstowego, który zawiera tekst](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![Kontrolki pola tekstowego, który zawiera tekst](../designers/media/wpfintrofigure21.png)
 
 Inne formanty, jednak może zawierać wielu elementów różnych typów zawartości; zawartość <xref:System.Windows.Controls.Button>, określony przez <xref:System.Windows.Controls.ContentControl.Content%2A> właściwości, może zawierać wiele elementów w tym formantów układu, tekst, obrazy i kształtów. W poniższym przykładzie przedstawiono <xref:System.Windows.Controls.Button> z zawartością, która obejmuje <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Border>, a <xref:System.Windows.Controls.MediaElement>.
 
@@ -423,7 +424,7 @@ Inne formanty, jednak może zawierać wielu elementów różnych typów zawarto�
 
 Na poniższej ilustracji przedstawiono zawartości tego przycisku.
 
-![Przycisk zawierający wiele typów zawartości](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![Przycisk zawierający wiele typów zawartości](../designers/media/wpfintrofigure22.png)
 
 Aby uzyskać więcej informacji na typy zawartości, która jest obsługiwana przez różnych formantów, zobacz [modelu zawartości WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
@@ -452,7 +453,7 @@ W tym przykładzie został zastąpiony przycisk domyślny interfejs <xref:System
 
 Natomiast szablon formantu umożliwia określenie wyglądu formantu, szablon danych umożliwia określenie wyglądu formantu zawartości. Szablony danych są często używane w celu zwiększenia sposób powiązania danych jest wyświetlany. Na poniższej ilustracji przedstawiono wygląd domyślny <xref:System.Windows.Controls.ListBox> który jest powiązany z kolekcją `Task` obiektów, gdzie każde zadanie ma nazwę, opis i priorytet.
 
-![Pola listy z wyglądem domyślnym](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![Pola listy z wyglądem domyślnym](../designers/media/wpfintrofigure18.png)
 
 Wygląd domyślny to, czego można oczekiwać, od <xref:System.Windows.Controls.ListBox>. Wygląd domyślny każdego zadania zawiera jednak tylko nazwa zadania. Aby wyświetlić nazwę zadania, opis i priorytet, domyślny wygląd <xref:System.Windows.Controls.ListBox> formantu powiązanego listy elementów należy zmienić przy użyciu <xref:System.Windows.DataTemplate>. Definiuje następujące XAML, takie <xref:System.Windows.DataTemplate>, których są stosowane do każdego zadania przy użyciu <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> atrybutu.
 
@@ -548,7 +549,7 @@ Ponieważ ten styl jest przeznaczony dla wszystkich <xref:System.Windows.Control
 
 Aby uzyskać więcej informacji, zobacz [stylami i tworzenia szablonów](/dotnet/framework/wpf/controls/styling-and-templating).
 
-### <a name="resources"></a>Zasoby
+### <a name="resources"></a>Resources
 
 Formanty w aplikacji powinny współużytkować tego samego wygląd mogą obejmować z czcionki i kolory tła sterowania szablonów, szablony danych i style. Obsługa WPF w zasoby interfejsu użytkownika umożliwia hermetyzować zasoby w jednej lokalizacji do ponownego użycia.
 
@@ -649,7 +650,7 @@ W poniższym przykładzie przedstawiono niestandardowego liczbowe w górę/dół
 
  Poniższy rysunek pokazuje `NumericUpDown` kontroli hostowanych w <xref:System.Windows.Window>.
 
- ![Niestandardowe UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![Niestandardowe kontrolki użytkownika](../designers/media/wpfintrofigure3.png)
 
 Aby uzyskać więcej informacji na formantów niestandardowych, zobacz [informacje o formancie tworzenia](/dotnet/framework/wpf/controls/control-authoring-overview).
 

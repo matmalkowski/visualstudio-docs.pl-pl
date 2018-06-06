@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748676"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w generuje rozwiązania języka specyficznego dla domeny (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowanego interfejsu API.
@@ -28,7 +29,7 @@ Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w
 
  Naciśnij klawisz F5 i doświadczenia, jeśli nie masz doświadczenia z tym szablonem rozwiązania. Zwróć uwagę w szczególności utworzyć portów przeciągając narzędzie portu na składnika i że możesz połączyć portów.
 
- ![Składniki i portów połączonych](../modeling/media/componentsample.png "ComponentSample")
+ ![Składniki i połączonych portów](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktura rozwiązania DSL
  **Dsl** projekt definiuje interfejs API dla Twojego DSL. **DslPackage** projekt definiuje sposobu integracji z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można również dodać własne projekty, które również mogą zawierać kod wygenerowane na podstawie modelu.

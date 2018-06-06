@@ -19,7 +19,7 @@ ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692138"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows

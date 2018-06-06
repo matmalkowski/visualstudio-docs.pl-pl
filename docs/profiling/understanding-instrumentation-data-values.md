@@ -13,10 +13,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477551"
 ---
 # <a name="understand-instrumentation-data-values"></a>Zrozumienie wartościami danych Instrumentacji
 

@@ -14,7 +14,7 @@ ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690630"
 ---
 # <a name="attach"></a>Dołącz

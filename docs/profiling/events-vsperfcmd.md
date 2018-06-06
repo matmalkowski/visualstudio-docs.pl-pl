@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764335"
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
-VSPerfCmd.exe **zdarzenia** opcja kontroluje rejestrowanie zdarzeń śledzenia dla systemu Windows (ETW). Dane funkcji ETW są zapisywane do pliku etl, który różni się od pliku danych profilera. Dane mogą być wyświetlane w raporcie przy użyciu [VSPerfReport](../profiling/vsperfreport.md) polecenia/Summary: ETW.  
+*VSPerfCmd.exe* **zdarzenia** opcja kontroluje rejestrowanie zdarzeń śledzenia dla systemu Windows (ETW). Dane funkcji ETW są zapisywane do pliku etl, który różni się od pliku danych profilera. Dane mogą być wyświetlane w raporcie przy użyciu [VSPerfReport](../profiling/vsperfreport.md) polecenia/Summary: ETW.  
   
  **Zdarzenia** opcji można wywołać w dowolnym momencie przed VSPerfCmd **zamknięcia** polecenia jest wywoływana, aby zatrzymać profilowanie.  
   
@@ -86,8 +87,8 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 >  Jeśli zdarzenia uruchamiania nie jest wykluczone, ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), ich widoczny jako identyfikatorów GUID w raporcie. Aby uzyskać więcej informacji, zobacz tę stronę w witrynie sieci Web firmy Microsoft: [plik przykładowy Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

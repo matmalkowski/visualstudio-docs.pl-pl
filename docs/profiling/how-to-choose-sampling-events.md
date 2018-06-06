@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765635"
 ---
-# <a name="how-to-choose-sampling-events"></a>Porady: wybieranie zdarzeń pobierania próbek
+# <a name="how-to-choose-sampling-events"></a>Porady: Wybieranie zdarzeń pobierania próbek
 Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania zbiera dane dotyczące wydajności w przedziale czasu, który jest określony jako liczba cykli procesora, które są używane przez PROFILOWANEGO procesu. Domyślna liczba cykli w interwale jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczby cykli w interwale, i można zmienić zdarzenie próbkowania. Dostępne są następujące zdarzenia próbkowania:  
   
 -   Cykle zegara - problemów procesora.  
@@ -59,9 +60,9 @@ Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziac
   
 5.  Po wybraniu zdarzenie próbkowania domyślną wartość interwału próbkowania jest wyświetlany w **interwał próbkowania** pola tekstowego. W razie potrzeby można wprowadzić wartość w polu tekstowym.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)   
- [Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)   
- [Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)   
+ [Liczniki Procesora i systemu Windows](../profiling/cpu-and-windows-counters.md)   
+ [Zrozumienie wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

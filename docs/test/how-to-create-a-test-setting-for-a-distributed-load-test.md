@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751822"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: tworzenie ustawień testu dla rozproszonego testu obciążenia
 
@@ -74,7 +75,7 @@ Wykonaj następujące kroki, aby utworzyć i Usuń ustawień testu w rozwiązani
 
      **Ról** zostanie wyświetlona strona.
 
-     ![Rola ustawień testu](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Rola ustawień testu](../test/media/load_testtestrole.png)
 
 10. Do uruchomienia testów zdalnie, lub aby zdalnie uruchamiać testy i zdalne zbieranie danych, należy użyć **wykonywania metoda testowa** listy rozwijanej i wybierz pozycję **zdalne wykonywanie kodu**.
 
@@ -108,7 +109,7 @@ Wykonaj następujące kroki, aby utworzyć i Usuń ustawień testu w rozwiązani
 
      **Danych i informacji diagnostycznych** zostanie wyświetlona strona.
 
-     ![Testowanie ustawienie danych i informacji diagnostycznych](../test/media/load_testtest.png "Load_TestTest")
+     ![Dane ustawienia testu i Diagnostyka](../test/media/load_testtest.png)
 
 18. W **dane i Diagnostyka** strony, należy zdefiniować, co oznacza wybierając rolę *adapterów danych diagnostycznych* że roli będzie używać do zbierania danych. W związku z tym jeśli jeden lub więcej danych i adapterów diagnostycznych są włączone dla roli, kontrolera testu wybierz komputer agenta testowania zbierania danych dla określonych danych i adapterów diagnostycznych na podstawie atrybutów, które zdefiniowane dla roli. Aby wybrać danych i adapterów danych diagnostycznych, które mają być zbierane dla każdej roli, wybierz rolę. Dla każdej roli wybierz adapterów danych diagnostycznych, odpowiednio do potrzeb testów. Aby skonfigurować poszczególne karty danych diagnostycznych, wybranej dla każdej roli, należy wybrać **Konfiguruj**.
 

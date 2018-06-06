@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746588"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Porady: tworzenie podstawowego modułu cieniowanie Phong
 
@@ -45,7 +46,7 @@ Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** 
 > [!NOTE]
 > Aby lepiej zaprezentować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu **MaterialDiffuse** został określony parametr programu do cieniowania i zakończenia wyszukiwania metaliczne przy użyciu **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o istotnych parametrach, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md).
 
- ![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-lighting-graph.png "cyfrę-oświetlenia-wykresu")
+ ![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-lighting-graph.png)
 
  Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md)
 
@@ -56,7 +57,7 @@ Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** 
 >
 > **MaterialSpecularPower** właściwość określa, jak intensywny są światła odblasków. Wysoka uprawnień odblasków symulować bardziej matowe, zlokalizowany więcej wyróżnia. Bardzo małe odblasków uprawnień symulować intensywny, polegających na usuwaniu najważniejsze funkcje, które mogą oversaturate i Ukryj kolor całej powierzchni.
 
- ![Zastosowano do modelu oświetlenia Phong](../designers/media/digit-lighting-model.png "cyfrę oświetlenia modelu")
+ ![Oświetlenie Phong zastosowane do modelu](../designers/media/digit-lighting-model.png)
 
  Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3D, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

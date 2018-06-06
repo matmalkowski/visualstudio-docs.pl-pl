@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746562"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: Analizowanie zarządzanego kodu dla kodu usterki
 
@@ -30,7 +31,7 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
 1. Na **pliku** menu, wybierz **nowy** > **projektu...** .
 
-1. W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#**, a następnie wybierz pozycję **klasycznego pulpitu systemu Windows**.
+1. W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#**, a następnie wybierz pozycję **Windows Desktop**.
 
 1. Wybierz **biblioteki klas (.NET Framework)** szablonu.
 

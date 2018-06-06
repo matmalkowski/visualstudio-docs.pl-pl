@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746129"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Dodaj obsługę innych języków w edytorze programu Visual Studio
 
@@ -32,7 +33,7 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
 
 Funkcje w edytorze programu Visual Studio, takie jak kolorowanie składni, uzupełnianie i przejdź do można umożliwiają łatwe odczytywać, tworzyć i edytować swój kod. Poniższy zrzut ekranu przedstawia przykład edycję skryptu języka Perl w programie Visual Studio. Składnia jest automatycznie pokolorowane. Na przykład uwagi w kodzie mają kolor zielony, kod jest czarny ścieżki są oznaczone kolorem czerwonym i instrukcje są niebieski. Edytor programu Visual Studio automatycznie stosuje kolorowanie składni do dowolnego języka, który go obsługuje. Ponadto po rozpoczęciu wprowadzania słowem kluczowym języka znanych lub obiekt uzupełniania Wyświetla listę możliwych instrukcje i obiektów. Uzupełnianie mogą pomóc w bardziej szybkie i łatwe tworzenie kodu.
 
-![Kolorowanie składni w skrypcie Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Kolorowanie składni w skrypcie Perl](../ide/media/vside_perledit.png)
 
 Program Visual Studio udostępnia obecnie kolorowanie składni i podstawowe uzupełniania obsługę następujących języków przy użyciu [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli Twoje ulubione język nie jest w tabeli, jednak nie martw się — można go dodać.
 
@@ -87,5 +88,5 @@ Aby uzyskać więcej informacji o sposobie tworzenia TextMate gramatyki, zobacz 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)
+- [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Wskazówki: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)

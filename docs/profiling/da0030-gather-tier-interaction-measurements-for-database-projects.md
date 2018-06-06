@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766197"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Gromadzenie pomiarów interakcji warstwowej dla projektów bazy danych
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Gromadzenie pomiarów interakcji warstwy dla projektów bazy danych
 |||  
 |-|-|  
 |Identyfikator reguły|DA0030|  
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Opis reguły  
  Ta zasada wyzwala zawsze, gdy jest istotne działania funkcji, które znajdują się w przestrzeni nazw dane systemowe, w tym <xref:System.Data.Linq> <xref:System.Data.Linq>.  
   
- Aplikacji wielowarstwowych za pomocą warstw usług ich warstwy prezentacji i danych. Warstwa danych jest często osobnych procesach systemu zarządzania bazy danych, takich jak Microsoft Sql Server. Warstwa danych może być uruchomiona nawet na osobnym komputerze od pozostałej części aplikacji. Profile próbkowania zapewniają małego wgląd w funkcji i usług działających poza procesem lub zdalnie.  
+ Aplikacji wielowarstwowych za pomocą warstw usług ich warstwy prezentacji i danych. Warstwa danych jest często osobnych procesach systemu zarządzania bazy danych, takich jak Microsoft SQL Server. Warstwa danych może być uruchomiona nawet na osobnym komputerze od pozostałej części aplikacji. Profile próbkowania zapewniają małego wgląd w funkcji i usług działających poza procesem lub zdalnie.  
   
- Narzędzia profilowania umożliwia zebranie informacji chronometrażu dla aplikacji wielowarstwowych, które pracują z warstwy danych programu Microsoft Sql Server przy użyciu wywołania asynchroniczne do usług ADO.NET. Musisz jawnie włączyć profilowanie interakcji między warstwami. Go nie jest włączona domyślnie.  
+ Narzędzia profilowania umożliwia zebranie informacji chronometrażu dla aplikacji wielowarstwowych, które pracują z warstwy danych programu Microsoft SQL Server przy użyciu wywołania asynchroniczne do usług ADO.NET. Musisz jawnie włączyć profilowanie interakcji między warstwami. Go nie jest włączona domyślnie.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Ta zasada jest wyłącznie do celów informacyjnych i nie może wymagać działań korygujących.  
   
  Aby uzyskać informacje dotyczące sposobu dodawania danych o interakcji między warstwy do profilowania danych z programu Visual Studio IDE, zobacz [zbierania danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md). Aby uzyskać informacje dotyczące sposobu dodawania danych interakcji z wiersza polecenia, zobacz [zbierania danych o interakcji między warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md).

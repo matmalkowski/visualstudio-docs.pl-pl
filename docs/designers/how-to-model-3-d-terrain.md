@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745581"
 ---
 # <a name="how-to-model-3d-terrain"></a>Porady: Model terenu 3D
 
@@ -26,7 +27,7 @@ Można utworzyć 3D terenu podziału na płaszczyźnie dokonanie kroje dodatkowe
 
 Po zakończeniu modelu powinien wyglądać następująco:
 
-![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")
+![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png)
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
@@ -52,7 +53,7 @@ Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** 
 
 Model terenu zostało ukończone. Oto ponownie ostatecznego modelu z cieniowaniem Phong stosowane:
 
-![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")
+![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png)
 
 Ten model terenu można użyć do zaprezentowania efekt gradientu programu do cieniowania, które jest opisane w [porady: tworzenie do cieniowania gradientu geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

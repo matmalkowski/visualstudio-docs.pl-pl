@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750337"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Samouczek krok 3: obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia
 
 **Poprzedni krok: [tworzenie aplikacji Django z widokami i strony szablonów](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-W poprzednich krokach tego samouczka kiedy znasz już tworzenie minimalnego aplikacji Django za pomocą pojedynczej strony HTML niezależne. Aplikacje nowoczesnych witryn sieci web, jednak zwykle składają się z wielu stron i użyj udostępnionych zasobów, takich jak CSS i JavaScript i plików, aby zapewnić spójne stylami i zachowanie.
+W poprzednich krokach tego samouczka kiedy znasz już tworzenie minimalnego aplikacji Django za pomocą pojedynczej strony HTML niezależne. Nowoczesne aplikacje web apps, jednak zwykle składają się z wielu stron i upewnij korzystanie z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylami i zachowania.
 
 W tym kroku, możesz dowiedzieć się, jak:
 
@@ -40,8 +41,6 @@ Aby wyświetlić dostępne szablony, przejdź do **Eksploratora rozwiązań**, k
 ![Dodaj nowe okno dialogowe elementu w programie Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Aby użyć szablonu, wybierz żądany szablon, określ nazwę pliku i wybierz **OK**. Dodanie elementu w ten sposób automatycznie dodaje plik do projektu programu Visual Studio i oznacza zmiany do kontroli źródła.
-
-Visual Studio dodaje również niektóre opcje często używanych do **Dodaj** menu bezpośrednio. W projekcie języka Python, na przykład można napotkać **strony HTML** lub **arkusz stylów** polecenia w dolnej części **Dodaj** menu, które monit o podanie nazwy i tworzy plik.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: jak Visual Studio sprawdzić, które elementu szablony do zaoferowania?
 
@@ -187,7 +186,7 @@ Szablon podstawowy wyznacza blokach, używając `{% block <block_name> %}` i `{%
 
 Poniższe kroki prezentują dziedziczenia:
 
-1. W aplikacji `templates/HelloDjangoApp` folderu, Utwórz nowy plik HTML (przy użyciu **Dodaj** > **nowy element** menu kontekstowego lub **Dodaj**  >   **Strona HTML**) o nazwie `layout.html`i Wklej zawartość poniżej. Aby sprawdzić, czy ten szablon zawiera blok o nazwie "zawartość", który jest całkowicie zastąpić odwołujący się potrzeba stron:
+1. W aplikacji `templates/HelloDjangoApp` folderu, Utwórz nowy plik HTML (przy użyciu **Dodaj** > **nowy element** menu kontekstowego lub **Dodaj**  >   **Strona HTML**) o nazwie `layout.html`i zastąp jego ze znacznikami poniżej. Aby sprawdzić, czy ten szablon zawiera blok o nazwie "zawartość", który jest całkowicie zastąpić odwołujący się potrzeba stron:
 
     ```html
     <!DOCTYPE html>

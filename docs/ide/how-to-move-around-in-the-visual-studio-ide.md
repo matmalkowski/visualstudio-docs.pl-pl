@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e78cba542c5a511eed13eedcde2665a832b09ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747134"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Porady: poruszanie się w programie Visual Studio IDE
 
@@ -55,7 +56,7 @@ Można również przełączyć się do określonego pliku otwarty w edytorze, ni
 
 **Nawigator IDE** działa podobnie jak przełącznik aplikacji systemu Windows. Nie jest dostępne w menu i jest możliwy tylko za pomocą klawiszy skrótów. Można użyć jednej z dwóch poleceń dostępu do **Nawigator IDE** (pokazana poniżej), aby przechodzić kolejno przez pliki, w zależności od kolejności, w którym mają przechodzić.
 
-![Nawigator IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")
+![Nawigator IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png)
 
 `Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do ostatniego dostępu do pliku i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. **Ogólne ustawienia środowiska deweloperskiego** przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt**  + **F7** do `Window.NextDocumentWindowNav`.
 

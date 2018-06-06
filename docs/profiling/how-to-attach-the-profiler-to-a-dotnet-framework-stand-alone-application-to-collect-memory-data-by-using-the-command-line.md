@@ -9,24 +9,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766681"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework do zbierania danych pamięci przy użyciu wiersza polecenia
 
-W tym temacie opisano, jak za pomocą narzędzi wiersza polecenia programu Visual Studio Profiling Tools dołączanie profilera do uruchomionej aplikacji autonomicznej (klient) .NET Framework i zbieranie danych pamięci.
+W tym artykule opisano, jak za pomocą narzędzi wiersza polecenia programu Visual Studio Profiling Tools dołączanie profilera do uruchomionej aplikacji autonomicznej (klient) .NET Framework i zbieranie danych pamięci.
 
 > [!NOTE]
-> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *narzędzia \Team Tools\Performance* podkatalog [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Aby dołączyć do aplikacji .NET Framework i zbieranie pamięci danych, należy użyć [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe odpowiednie przed uruchomieniem aplikacji docelowej. Gdy profiler jest dołączony do aplikacji, można użyć **VSPerfCmd.exe** narzędzie w celu wstrzymania i wznowienia zbierania danych.
+Aby dołączyć do aplikacji .NET Framework i zbieranie pamięci danych, należy użyć [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe odpowiednie przed uruchomieniem aplikacji docelowej. Gdy profiler jest dołączony do aplikacji, można użyć *VSPerfCmd.exe* narzędzie w celu wstrzymania i wznowienia zbierania danych.
 
 Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystkich procesów PROFILOWANEGO i profilera muszą zostać jawnie wyłączone. W większości przypadków zaleca się czyszczenie profilowania zmienne środowiskowe z końcem sesji.
 
-## <a name="attaching-the-profiler"></a>Dołączanie profilera
+## <a name="attach-the-profiler"></a>Dołączanie profilera
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Aby dołączanie profilera do uruchomionej aplikacji .NET Framework
 
@@ -66,15 +67,15 @@ Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystki
 
 5. Dołączanie profilera do aplikacji docelowej. Wpisz:
 
-     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
     - `PID` Określa identyfikator procesu aplikacji docelowej. `ProcessName` Określa nazwę procesu. Należy pamiętać, że jeśli określisz `ProcessName` i działa wiele procesów, które mają taką samą nazwę, są nieprzewidywalne wyniki. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
 
     - **/targetclr:** `Version` Określa wersję środowisko uruchomieniowe języka wspólnego (CLR) do profilu po załadowaniu więcej niż jedną wersję środowiska uruchomieniowego w aplikacji. Opcjonalna.
 
-## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
 
-Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku przy użyciu **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.
+Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku przy użyciu *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.
 
 ### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
@@ -86,7 +87,7 @@ Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy ur
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymania (**/processoff**) zbierania danych dla procesu, który jest określony przez `PID`.|
     |[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ dołączyć** rozpoczyna zbieranie danych dla procesu, który jest określony przez `PID` lub nazwa procesu (Nazwa_procedury). **/ detach** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli nie określono określonego procesu.|
 
-## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
 
 Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystkich procesów PROFILOWANEGO i profilera muszą zostać jawnie wyłączone. Można odłączyć profilera z aplikacji, która była profilowany przy użyciu metody próbkowania przez zamknięcie aplikacji, przez wywołanie **VSPerfCmd / detach** opcji. Następnie wywołaj **VSPerfCmd/shutdown** opcję, aby wyłączyć profilera i zamknij plik danych profilowania. **VSPerfClrEnv / Wyłącz** polecenie czyści profilowania zmiennych środowiskowych.
 
@@ -110,5 +111,5 @@ Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystki
 
 ## <a name="see-also"></a>Zobacz także
 
-[Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)  
 [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

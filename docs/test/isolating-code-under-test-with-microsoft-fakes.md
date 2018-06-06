@@ -12,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751458"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -28,7 +29,7 @@ Podróbki występują w dwóch wersjach:
 
 -   A [podkładki](#shims) modyfikuje skompilowany kod aplikacji w czasie wykonywania, aby zamiast wywołania określonej metody kod podkładki, który zapewnia test został uruchomiony. Podkładek może być używany do zastąpienia wywołań zestawy, których nie można modyfikować, takich jak zestawów platformy .NET.
 
-![Substytuty zastąpić inne składniki](../test/media/fakes-2.png "2 elementów sztucznych")
+![Substytuty zastąpić inne składniki](../test/media/fakes-2.png)
 
 **Wymagania**
 

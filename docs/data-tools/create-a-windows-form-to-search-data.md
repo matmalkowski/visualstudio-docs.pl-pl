@@ -1,5 +1,5 @@
 ---
-title: Tworzenie formularza systemu Windows do wyszukiwania danych
+title: Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e04b0e4ef2f77381e305b992c5457bc46dc8261
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746731"
 ---
-# <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza systemu Windows do wyszukiwania danych
+# <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Można na przykład wyświetlanie zleceń dla określonych odbiorców lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie zapytanie jest wykonywane przy użyciu danych wejściowych użytkownika jako parametr; oznacza to, że jest wybrane dane na podstawie zapytania parametrycznego. Zapytanie zwraca tylko dane, które spełnia kryteria wprowadzony przez użytkownika. W tym przewodniku pokazano, jak utworzyć kwerendę, która zwraca klientów w określonym mieście i zmodyfikować interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzać nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.
 
  Użycie zapytań sparametryzowanych ułatwia aplikacji wydajne, umożliwiając pracę, najlepiej na bazy danych — szybkie filtrowanie rekordów. Z kolei żądania tabeli całą bazę danych, przenieść go za pośrednictwem sieci, a następnie użyj logiki aplikacji można znaleźć żądanego rekordów, aplikacja może być powolne i nieefektywne.
@@ -70,7 +71,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477525"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748803"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 Gdy potrzebne do badania problemów z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, jak używa Procesora. **Użycie procesora CPU** narzędzie pokazuje, gdy Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic i kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, jest widoczny na funkcja podział użycia procesora CPU bez opuszczania debugera. Włącz profilowanie procesora CPU i wyłączanie podczas debugowania i wyświetlić wyniki podczas wykonywania zostanie zatrzymana, na przykład w punkcie przerwania.  
@@ -27,7 +27,7 @@ W tym miejscu zostanie przedstawiony zostanie sposób zbieranie i analizowanie u
 > [!NOTE]
 > Dla platformy .NET Core i ASP.NET Core narzędzia użycie procesora CPU aktualnie nie zawiera prawidłowych wyników z PBDs przenośnej. Zamiast tego użyj pełne pliki PDB.
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Zbieranie danych o użyciu procesora CPU  
+##  <a name="collect-cpu-usage-data"></a>Zbieranie danych o użyciu procesora CPU  
   
 1.  W programie Visual Studio, ustaw dla konfiguracji rozwiązania **wersji** i wybierz cel wdrożenia.  
   

@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748662"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 Można zezwolić na element, aby być przeciągnięto innego, z przybornika lub wklejenie lub operacji przenoszenia. Może mieć przeniesione elementy połączone z elementów docelowych przy użyciu relacji, które określisz.
@@ -38,7 +39,7 @@ Można zezwolić na element, aby być przeciągnięto innego, z przybornika lub 
 
  Odpowiedzialność EMD jest określenie, jak obiekt lub grupę obiektów powinny zostać scalone do określonej lokalizacji w modelu. W szczególności decyduje, jakie relacje należy można utworzyć wystąpienia połączyć scalonych grupy do modelu. Można również dostosować go do ustawiania właściwości i utworzyć dodatkowe obiekty.
 
- ![DSL&#45;EMD&#95;scalania](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge") roli dyrektywy scalania Element
+ ![DSL&#45;EMD&#95;scalania](../modeling/media/dsl-emd_merge.png) roli dyrektywy scalania Element
 
  EMD jest generowany automatycznie podczas definiowania relacja osadzania. To ustawienie domyślne EMD tworzy wystąpienie relacji po dodaniu nowych wystąpień podrzędnych do elementu nadrzędnego. Na przykład te EMDs domyślne można zmodyfikować przez dodanie niestandardowego kodu.
 
@@ -47,7 +48,7 @@ Można zezwolić na element, aby być przeciągnięto innego, z przybornika lub 
 ## <a name="defining-an-element-merge-directive"></a>Definiowanie scalania Element — dyrektywa
  Dyrektywy scalania element można dodać do klasy, relacje domeny kształtów, łączniki i diagramy. Można dodawać lub je znaleźć w Eksploratorze DSL w klasie odbierania domeny. Odbieranie klasa jest klasą domeny elementu, który jest już w modelu i na której element nowe lub skopiowane zostaną scalone.
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")
+ ![DSL&#45;EMD&#95;szczegóły](../modeling/media/dsl-emd_details.png)
 
  **Indeksowania klasy** jest klasą domeny elementów, które można by scalić do elementów członkowskich klasy odbiorczej. Wystąpienia podklasami klasy indeksowania również zostaną scalone przez ten EMD, chyba że zostanie ustawiony **dotyczy podklasy** na wartość False.
 

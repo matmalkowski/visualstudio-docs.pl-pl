@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6eecf12f554a8a6143f9c040916da9f0e318b1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5551cb5e66eae9471f2e4e79d2aa6587bf440120
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749219"
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C++
 Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżności.  
@@ -25,7 +26,7 @@ Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżno
 >  Standard języka C++ rezerwuje Użyj identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znaków dla wdrożeń, takich jak biblioteki. Nie używaj nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu elementów, których nazwy wykonaj tę Konwencję nie ma gwarancji i mogą ulec zmianie w przyszłych wersjach. Z tego powodu takie elementy kodu zostały pominięte w niniejszej dokumentacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
+ [Przestrzeń nazw współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

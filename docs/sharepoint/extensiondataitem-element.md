@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c29cb41c80d75c6f873171b7e9c758a2513612
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691940"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766510"
 ---
-# <a name="extensiondataitem-element"></a>ExtensionDataItem — Element
+# <a name="extensiondataitem-element"></a>ExtensionDataItem — element
   Element danych niestandardowych jest skojarzony z elementem projektu programu SharePoint, w formacie klucza i wartości. Klucz i wartość muszą być ciągami.  
   
 ## <a name="syntax"></a>Składnia  
@@ -32,7 +32,7 @@ ms.locfileid: "34691940"
     Value = "Value of the data item" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
   
 ### <a name="attributes"></a>Atrybuty  
@@ -42,10 +42,10 @@ ms.locfileid: "34691940"
 |**Key**|Wymagane **xs: ciąg** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania elementu danych.|  
 |**Wartość**|Wymagane **xs:string** atrybutu.<br /><br /> Wartość elementu danych.|  
   
-### <a name="child-elements"></a>Elementy podrzędne  
+### <a name="child-elements"></a>Elementy podrzędne
  Brak.  
   
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
   
 |Element|Opis|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691940"
 ## <a name="remarks"></a>Uwagi  
  Gdy Skojarz dane niestandardowe z elementu projektu SharePoint przy użyciu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu Visual Studio zapisuje dane na nowe **extensiondataitem —** element w `.spdata` plik Element projektu. Aby uzyskać więcej informacji, zobacz [zapisywania danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="element-information"></a>Informacje o elementach  
+## <a name="element-information"></a>Informacje o elementach
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691940"
 |**Sprawdzanie poprawności pliku**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

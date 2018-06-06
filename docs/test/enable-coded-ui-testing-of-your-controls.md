@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751757"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich formantów
 
 Implementuje obsługę kodowanego interfejsu użytkownika testowania framework dokonanie więcej testować formantu. Zwiększa poziom obsługi można dodać przyrostowo. Rozpocznij od obsługi sprawdzania poprawności rekordu i odtwarzanie i właściwości. Następnie kompilacji na tym, aby włączyć Konstruktor kodowanego testu interfejsu użytkownika do rozpoznawania niestandardowych właściwości formantu. Podaj klas niestandardowych dostęp do tych właściwości z wygenerowanego kodu. Może również pomóc kodowanego testu konstruktora przechwytywania działania Interfejsu w sposób zbliżonej do celem akcji rejestrowanych.
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;pełny](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Obsługuje sprawdzania rekordu i odtwarzanie i właściwości zaimplementowanie ułatwień dostępu
 
 Konstruktor kodowanego testu interfejsu użytkownika znajdują się informacje dotyczące formantów, że wystąpi podczas rejestracji, a następnie generuje kod powtarzania tej sesji. Jeśli formant nie obsługuje ułatwień dostępu, kodowanego testu interfejsu użytkownika przechwytuje akcji (np. kliknięcia myszą) za pomocą współrzędnych ekranu. Podczas odtwarzania testu wygenerowany kod wystawia akcje w takich samych współrzędnych ekranu. Jeśli formant znajduje się w innym miejscu na ekranie podczas odtwarzania testu, wygenerowany kod zakończy się niepowodzeniem do wykonania akcji. Implementując nie ułatwień dostępu dla formantu, można napotkać test niepowodzenia testu jest odtwarzany na inny ekran konfiguracji, w różnych środowiskach, albo jeśli zmieni się układ interfejsu użytkownika.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  W przypadku zastosowania ułatwień dostępu, kodowanego testu interfejsu użytkownika użyty do przechwycenia informacji na temat formantu, gdy rejestruje testu. Następnie po uruchomieniu testu wygenerowany kod zostanie będzie odtwarzana w tych zdarzeń z formantu, nawet jeśli jest ona gdzieś w interfejsie użytkownika. Autorzy testów można również utworzyć potwierdzeń przy użyciu podstawowe właściwości formantu.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;rekordu](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Do obsługi rekordu i odtwarzania, sprawdzanie poprawności właściwości i nawigacji dla formantu formularzy systemu Windows
  Implementowanie ułatwień dostępu dla formantu w sposób opisany w poniższej procedurze, a omówiona szczegółowo w artykule <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;dostępny](../test/media/cuit_accessible.png)
 
 1.  Implementuje klasę, która jest pochodną <xref:System.Windows.Forms.Control.ControlAccessibleObject>i Zastąp <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.
 
@@ -74,11 +75,11 @@ Konstruktor kodowanego testu interfejsu użytkownika znajdują się informacje d
 
 Po wdrożeniu podstawowej obsługi sprawdzania poprawności rekordu i odtwarzanie i właściwości można udostępnić niestandardowe właściwości formantu do kodowane testy interfejsu użytkownika zaimplementowanie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> wtyczki. Na przykład poniższa procedura dotyczy tworzenia dostawcy właściwości, który umożliwia kodowane testy interfejsu użytkownika do dostępu do właściwości stanu formantów podrzędnych formantu wykresu CurveLegend:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Do obsługi sprawdzania poprawności właściwości niestandardowej
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;właściwości](../test/media/cuit_props.png)
 
 1. Zastąpienie krzywej legendy dostępny obiektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> właściwości do przekazania wartości właściwości sformatowanego w ciągu opisu. Wiele wartości należy rozdzielić średnikami (;).
 
@@ -146,7 +147,7 @@ Jeśli zostały zaimplementowane dostawcy właściwości w celu zapewnienia dost
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Aby dodać klas wyspecjalizowanych dostępu formantu do
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Implementuje klasę, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> i dodać do kolekcji właściwości wyszukiwania w Konstruktorze typu formantu.
 
@@ -162,7 +163,7 @@ Jeśli zostały zaimplementowane dostawcy właściwości w celu zapewnienia dost
 
 ### <a name="to-support-intent-aware-actions"></a>Do obsługi obsługujący celem akcji
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;akcje](../test/media/cuit_actions.png)
 
 1. Implementuje klasę filtru akcji, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, zastępowanie właściwości <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> i <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 

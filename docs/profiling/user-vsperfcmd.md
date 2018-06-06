@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 128fe1f59cc652d0879e346689c9e84f1c1d9e82
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477057"
 ---
 # <a name="user-vsperfcmd"></a>Użytkownik (VSPerfCmd)
 **Użytkownika** opcja określa nazwę domeny i nazwę konta, który jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces jest uruchomiony jako użytkownik innego niż zalogowanego użytkownika. Właściciel procesu w kolumnie Nazwa użytkownika jest wyświetlany na **procesów** kartę Menedżera zadań systemu Windows.  

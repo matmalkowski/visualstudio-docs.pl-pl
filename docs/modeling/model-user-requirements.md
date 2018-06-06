@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749060"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
@@ -63,7 +64,7 @@ Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przyp
 
  Wiele reguły biznesowe są ograniczenia na relacje między koncepcyjnej klasy. Można napisać te *statycznych ** reguły biznesowe* jako komentarze skojarzone z odpowiednich klas na diagram koncepcyjny klasy. Na przykład:
 
- ![Reguła w komentarzu dołączonym do klasy Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Reguła w komentarzu dołączonym do klasy Order.](../modeling/media/uml_reqmcd2.png)
 
  *Reguły biznesowe dynamiczne* Ogranicz dozwolone sekwencja zdarzeń. Na przykład użyć diagramu sekwencji lub działania, aby pokazać, że użytkownik musi zalogować się przed wykonaniem innych operacji w tym systemie.
 

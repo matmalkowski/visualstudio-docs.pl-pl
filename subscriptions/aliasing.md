@@ -13,7 +13,7 @@ ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34477655"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas aliasy użycia

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add91942b6a97bf9da496d1664b2a799a9c50d1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749963"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Expensive GetHashCode
 |||  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
  Wywołania metody GetHashCode typu są znaczna część danych profilowania lub metoda przydziela pamięć.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Tworzenie skrótu jest technika szybko lokalizowanie określonego elementu w kolekcji duże. Ponieważ tabele hash mogą być bardzo duże i trzeba obsługuje bardzo dużej szybkości dostępu, tabele hash powinny być bardzo wydajny. Możliwa tego wymagania jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł garbage collector i udostępnia metodę potencjalnych opóźnienia, jeśli stają się niezbędne do uruchomienia wyrzucanie elementów bezużytecznych w wyniku żądania alokacji.  
+ Tworzenie skrótu jest technika szybko lokalizowanie określonego elementu w kolekcji duże. Tabele hash może być duży i trzeba obsługuje bardzo dużej szybkości dostępu, tabele hash należy wydajne. Możliwa tego wymagania jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł garbage collector i udostępnia metody do potencjalnych opóźnienia, jeśli okaże się konieczne uruchomienie wyrzucanie elementów bezużytecznych w wyniku żądania alokacji.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Upraszczanie metody.

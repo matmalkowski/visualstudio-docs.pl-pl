@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 17564df84dd6135260fa3c6c7857f0c6b7f1a288
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 560d19c8efeaa6c1cf206bcb40fa0b11347b4217
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746523"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie formantu użytkownika formularzy systemu Windows, który obsługuje powiązanie danych wyszukiwania
 Wyświetlanie danych w formularzach systemu Windows, można wybrać istniejących formantów z **przybornika**, lub jeśli aplikacja wymaga funkcji niedostępnych w standardowych kontrolek, mogą tworzyć niestandardowe kontrolki. W tym przewodniku przedstawiono sposób tworzenia formant, który implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.LookupBindingPropertiesAttribute> może zawierać trzech właściwości, które można powiązać z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.ComboBox>.
@@ -79,7 +80,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747095"
 ---
 # <a name="add-new-connections"></a>Dodaj nowe połączenia
 
@@ -35,23 +36,23 @@ Testowanie połączenia z bazą danych lub usługi i Eksploruj zawartość bazy 
 
 Aby utworzyć połączenie z bazą danych, kliknij przycisk **Dodawanie połączenia** ikonę w **Eksploratora serwera**, lub kliknij prawym przyciskiem myszy **Eksploratora serwera** na **danych Połączenia** a następnie wybierz węzeł **Dodawanie połączenia**. W tym miejscu można nawiązać bazy danych na inny serwer, usługi programu SharePoint lub usługi Azure.
 
-![Ikona nowego połączenia Eksploratora serwera](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata ikona nowego połączenia Eksploratora serwera")
+![Ikona nowego połączenia Eksploratora serwera](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 Spowoduje to wyświetlenie **Dodawanie połączenia** okno dialogowe. W tym miejscu możemy wprowadzony nazwę wystąpienia bazy danych LocalDB programu SQL Server.
 
-![Dodaj nowe połączenie](../data-tools/media/raddata-add-new-connection-dialog.png "raddata okno dialogowe Dodawanie nowego połączenia")
+![Dodaj nowe połączenie](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Zmienianie dostawcy
 
 Jeśli nie ma źródła danych, kliknij przycisk **zmiany** przycisk, aby wybrać nowe źródło danych i/lub nowego dostawcy danych ADO.NET. Nowego dostawcę może poprosić o podanie poświadczeń, w zależności od tego, jak został skonfigurowany.
 
-![Zmienianie dostawcy danych AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata dostawca danych AD0.NET zmiany")
+![Dostawca danych AD0.NET zmiany](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Testuj połączenie
 
 Po wybraniu źródła danych, kliknij przycisk **Testuj połączenie**. Jeśli to się nie powiedzie, musisz rozwiązać zgodnie z dokumentacją dostawcy.
 
-![Połączenie testowe](../data-tools/media/raddata-test-connection.png "raddata Testuj połączenie")
+![Połączenie testowe](../data-tools/media/raddata-test-connection.png)
 
 Jeśli test zakończy się powodzeniem, możesz przystąpić do tworzenia *źródła danych*, czyli terminu programu Visual Studio, który oznacza w rzeczywistości *modelu danych* opartego na podstawowej bazy danych lub usługi.
 

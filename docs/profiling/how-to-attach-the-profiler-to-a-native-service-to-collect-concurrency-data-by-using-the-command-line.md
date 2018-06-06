@@ -10,24 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95e67307cd12ff1670e5837bd2d2e5830fc64a19
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ed87be79445e9a51160292a768407ee19f71bb0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766604"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Porady: dołączanie profilera do usługi natywnej i zbieranie danych współbieżności przy użyciu wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do natywnego (C/C++), usługi i zbieranie danych współbieżności procesie i wątku przy użyciu metody pobierania próbek.  
+W tym artykule opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do natywnego (C/C++), usługi i zbieranie danych współbieżności procesie i wątku przy użyciu metody pobierania próbek.  
   
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć profilera w wierszu polecenia, należy dodać ścieżkę do narzędzia do zmiennej środowiskowej PATH z **wiersza polecenia** okna lub samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *\Team Tools\Performance narzędzia* podkatalogu w katalogu instalacji programu Visual Studio. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć profilera w wierszu polecenia, należy dodać ścieżkę do narzędzia do zmiennej środowiskowej PATH z **wiersza polecenia** okna lub samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Profiler jest dołączony do usługi, można wstrzymywać i wznawiać zbierania danych. Aby zakończyć sesję profilowania, profilera nie musi być dołączony do usługi, a profilera muszą zostać jawnie wyłączone.  
   
-## <a name="attaching-the-profiler"></a>Dołączanie profilera  
+## <a name="attach-the-profiler"></a>Dołączanie profilera  
  Dołączanie profilera do usługi natywnej, należy użyć **VSPerfCmd/start** i **/ dołączyć** opcje inicjowania profilera i dołączenie go do aplikacji docelowej. Można określić **/start** i **/ dołączyć** i odpowiednie opcje w jednym wierszu polecenia. Można również dodać **/globaloff** opcję, aby wstrzymać zbieranie danych na początku aplikacji docelowej. Następnie należy użyć **/globalon** do rozpoczęcia zbierania danych.  
   
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>Aby dołączanie profilera do usługi natywnej  
@@ -59,8 +60,8 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
      `PID` Określa identyfikator procesu lub nazwy procesu aplikacji docelowej. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.  
   
-## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
- Aplikacja docelowa jest uruchomiona, można kontrolować zbierania danych przez uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku z opcjami VSPerfCmd.exe. Przez kontrolowanie zbierania danych może zbierać dane dotyczące określonych części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych  
+ Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku z *VSPerfCmd.exe* opcje. Przez kontrolowanie zbierania danych może zbierać dane dotyczące określonych części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
   
@@ -72,7 +73,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymania (**/processoff**) zbierania danych przez proces który identyfikator procesu (`PID`) określa.|  
     |[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ dołączyć** rozpoczyna zbieranie danych przez proces który identyfikator procesu (`PID`) lub nazwa procesu (*Nazwa_procedury*) określa. **/ detach** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli jest określony żaden proces.|  
   
-## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania  
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania  
  Aby zakończyć sesję profilowania, profilera musi nie być zbierania danych. Można zatrzymać zbieranie danych z usługi natywnej, który jest poddawany profilowaniu metodą współbieżności, zatrzymując usługę lub za pomocą **VSPerfCmd / detach** opcji. Następnie wywołaj **VSPerfCmd/shutdown** opcję, aby wyłączyć profilera i zamknij plik danych profilowania.  
   
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  

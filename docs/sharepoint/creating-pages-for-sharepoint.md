@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694049"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765531"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Tworzenie stron dla SharePoint
+# <a name="create-pages-for-sharepoint"></a>Tworzenie stron dla SharePoint
   Można utworzyć strony aplikacji, stron w witrynie, stron wzorcowych i układy stron witryny programu SharePoint.  
   
  Strony aplikacji można utworzyć za pomocą szablonu w programie Visual Studio. Tworzenie stron w witrynie, stron wzorcowych i układy stron, za pomocą programu SharePoint Designer. Następnie można zaimportować te strony do programu Visual Studio z nich korzystać w projekcie programu SharePoint.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694049"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Tworzenie stron aplikacji dla SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób dodawania strony aplikacji: zawartość .aspx, która jest scalany z strony wzorcowej programu SharePoint.|  
+|[Tworzenie stron aplikacji dla SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób dodawania strony aplikacji: *.aspx* zawartość, która jest scalany z strony wzorcowej programu SharePoint.|  
 |[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)|Pokazuje, jak utworzyć stron ASP.NET, które są uruchamiane w witrynie programu SharePoint.|  
 |[Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Pokazuje, jak projektować i debugowania na stronie sieci Web platformy ASP.NET dla witryny programu SharePoint.|  
   

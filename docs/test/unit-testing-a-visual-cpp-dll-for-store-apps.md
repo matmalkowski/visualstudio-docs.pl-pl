@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751874"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
 
@@ -31,11 +32,11 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 3.  Nazwij projekt `RooterLibTests`; Określ lokalizację; Nazwa rozwiązania `RooterLib`; i upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczony.
 
-     ![Określ nazwę rozwiązań i projektów i lokalizację](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Określ nazwę rozwiązań i projektów i lokalizację](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  W nowym projekcie, otwórz **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Należy pamiętać o następujących kwestiach:
 
@@ -64,13 +65,13 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
      Projekt testowy kompiluje i uruchamia. Zostanie wyświetlone okno Eksploratora testów i test zostanie wyświetlony w obszarze **przekazany testy**. Okienko Podsumowanie w dolnej części okna zawiera dodatkowe szczegóły dotyczące wybranego testu.
 
-     ![Testowanie Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Eksplorator testów](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Dodaj do rozwiązania projektu biblioteki DLL
 
 1.  W Eksploratorze rozwiązań wybierz nazwę rozwiązania. Z menu skrótów wybierz **Dodaj**, a następnie **Dodawanie nowego projektu**.
 
-     ![Utwórz projekt RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Utwórz projekt RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  W **Dodawanie nowego projektu** oknie dialogowym wybierz **DLL (aplikacji platformy UWP)**.
 
@@ -104,7 +105,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
     1.  W Eksploratorze rozwiązań wybierz **RooterLib** projektu, a następnie wybierz pozycję **właściwości** z menu skrótów.
 
-         ![Dodawanie definicji symboli preprocesora](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Dodawanie definicji symboli preprocesora](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  W oknie dialogowym strony właściwości RooterLib rozwiń **właściwości konfiguracji**, rozwiń węzeł **C++** i wybierz polecenie **preprocesora**.
 
@@ -175,7 +176,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 5.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
 
-     ![Podstawowy Test przekazany](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Podstawowy Test zakończył się powodzeniem](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Ma ustawienie testu i projekty kodu i sprawdzić, czy można uruchamiać testy, które uruchamiania funkcji w projekcie kodu. Teraz można rozpocząć pisanie rzeczywistych testów i kod.
 
@@ -206,7 +207,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 3.  Test zakończy się niepowodzeniem.
 
-     ![Niepowodzenia RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
@@ -278,7 +279,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
      Test zakończy się niepowodzeniem. Wybierz nazwę testu w Eksploratorze testów. Zostanie wyróżniona potwierdzenia nie powiodło się. Komunikat o błędzie jest widoczny w okienku szczegółów Eksploratora testów.
 
-     ![Nie powiodło się NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests nie powiodło się.](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:
 
@@ -308,7 +309,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
  Teraz przejść pomyślnie wszystkie testy.
 
- ![Wszystkie testy zostały zaliczone pomyślnie](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Wszystkie testy zostały zaliczone pomyślnie](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Zrefaktoryzuj kod bez zmiany testów
 

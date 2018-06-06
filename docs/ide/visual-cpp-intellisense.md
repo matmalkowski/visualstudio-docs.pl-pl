@@ -1,5 +1,5 @@
 ---
-title: IntelliSense dla programu Visual C++
+title: Visual C++ IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,13 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748088"
 ---
-# <a name="visual-c-intellisense"></a>IntelliSense dla programu Visual C++
+# <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
 IntelliSense dla języka C++ jest dostępna dla autonomicznych pliki także jak w przypadku plików, które są częścią projektu C++. W projektach między platformami, niektóre funkcje IntelliSense są dostępne w *.cpp* i *.c* pliki w projekcie udostępnionym kodu, nawet jeśli znajdują się w kontekście systemu Android lub iOS.
 
@@ -35,29 +36,29 @@ Po ponownym uruchomieniu, wpisując słowa kluczowego, typu, funkcji, nazwa zmie
 
 Listę ikon i ich znaczenie, zobacz [ikony w widoku klas i przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43; &#43; okna całe słowo](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; całe słowo okna](../ide/media/vs2015_cpp_complete_word.png)
 
 Lista elementów członkowskich jest wywoływana po raz pierwszy pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli naciśniesz **Ctrl**+**J** po, który zawiera wszystkie elementy członkowskie niezależnie od dostępności. Jeśli wywołanie raz trzeci go jeszcze większą listę elementów programu jest wyświetlany. Można wyłączyć listy członków w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
 
-![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43; &#43; listy elementów członkowskich](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Parametr pomocy
 
 Po wpisaniu nawiasu otwierającego wywołanie funkcji lub nawias w deklaracji zmiennej szablonu klasy Edytor pokazuje małe okno z typami parametrów dla każdego przeciążenia funkcji lub konstruktora. Parametr "bieżący"&mdash;na podstawie lokalizacji kursora&mdash;jest pogrubiony. Można wyłączyć informacje o parametrach w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **Ogólne**  >  **Informacje o parametrach**.
 
-![Visual C&#43;&#43; Parameter Help](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43; &#43; parametru pomocy](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>Szybkie informacje
 
 Po umieszczeniu kursora myszy na zmienną małych okno jest wyświetlane w tekście, który zawiera informacje o typie i nagłówek, w którym jest zdefiniowany typ. Aktywuj wywołanie funkcji, aby wyświetlić podpisu funkcji. Można wyłączyć szybkie informacje w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **zaawansowane**  >  **Automatyczna szybka podpowiedź**.
 
-![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43; &#43; skrócone informacje](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Zygzaki sygnalizujące błędy
 
 Zygzaki pod elementem programu (zmiennej, słowo kluczowe, nawias klamrowy, wpisz nazwę i tak dalej) wywołać uwagę błąd lub potencjalnych błędów w kodzie. Zielony wężyk pojawia się podczas pisania deklaracja przekazująca dalej w celu odnotowania, konieczność zapisania implementacji. Purpurowa wężyk w projekcie udostępnionym jest wyświetlany błąd w kodzie, który nie jest obecnie aktywny, na przykład podczas pracy w kontekście systemu Windows, ale coś wprowadź, która byłaby błędu w kontekście systemu Android. Czerwona falista wskazuje błąd kompilatora lub ostrzeżenie w aktywnej kod, który należy rozwiązać.
 
-![Visual C&#43; &#43; zygzaki sygnalizujące błędy](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; zygzaki sygnalizujące błędy](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Kolorowanie kodu i czcionek
 
@@ -69,7 +70,7 @@ W projekcie udostępnionym kodu niektóre funkcje IntelliSense, takie jak zygzak
 
 Oto OpenGLES aplikacji, która jest skonfigurowana dla kompilacji dla systemów Android i iOS. Na ilustracji przedstawiono udostępnionego kodu edytowany. W pierwszym obrazu systemu Android jest aktywnym projektem:
 
-![Projekt systemu Android jest aktywnym projektem. ] (../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Projekt systemu Android jest aktywnym projektem.](../ide/media/intellisensecppcrossplatform.png)
 
 Należy zauważyć, że:
 
@@ -81,7 +82,7 @@ Należy zauważyć, że:
 
 Teraz Zmień aktywnego projektu do **iOS.StaticLibrary** i zwróć uwagę, jak zmienić zygzaki.
 
-![iOS został wybrany jako aktywnego projektu. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS został wybrany jako aktywnego projektu.](../ide/media/intellisensecppcrossplatform2.png)
 
 Należy zauważyć, że:
 
@@ -95,11 +96,11 @@ Należy zauważyć, że:
 
 Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonej funkcji IntelliSense w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików nienależących do projektu** sekcji.
 
-![Visual C&#43; &#43; intellisense pojedynczy plik](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; intellisense pojedynczego pliku](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 Domyślnie IntelliSense używane tylko standardowe obejmują pojedynczy plik katalogów można znaleźć plików nagłówka. Aby dodać kolejne katalogi, otwórz menu skrótów na **rozwiązania** węzeł i Dodaj katalog na **debugowania kodu źródłowego** listy, jak przedstawiono na poniższej ilustracji:
 
-![Dodawanie ścieżki do pliku nagłówka. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Dodawanie ścieżki do pliku nagłówka.](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>Zobacz także
 

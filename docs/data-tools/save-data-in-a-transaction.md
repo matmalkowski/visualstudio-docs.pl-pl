@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Zapisywanie danych w transakcji'
+title: 'Przewodnik: zapisywanie danych w transakcji'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745532"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Wskazówki: Zapisywanie danych w transakcji
+# <a name="walkthrough-save-data-in-a-transaction"></a>Przewodnik: zapisywanie danych w transakcji
 W tym przewodniku pokazano, jak można zapisać danych w transakcji za pomocą <xref:System.Transactions> przestrzeni nazw. W tym przewodniku utworzysz aplikacji formularzy systemu Windows. Użyjesz Kreator konfiguracji źródła danych można utworzyć zestawu danych dla dwóch tabel w bazie danych Northwind. Zostanie dodana dane powiązane kontrolki formularza systemu Windows i będzie zmodyfikować kod używany w parametrze BindingNavigator na przycisk zapisywania do aktualizacji bazy danych wewnątrz elementu TransactionScope.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -52,7 +53,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

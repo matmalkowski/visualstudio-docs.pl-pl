@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766288"
 ---
-# <a name="developing-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
+# <a name="develop-sharepoint-solutions"></a>Tworzenie rozwiązań programu SharePoint
   Kilka szablonów typ projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint i elementy lokacji. Aby uzyskać listę typów projektów dostępne w temacie [projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej przedstawiono opis elementów i właściwości elementu projektu SharePoint.  
   
  Aby informacji na temat programu SharePoint 2013 i dodatki programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [dodatki kompilacji programu SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Elementy projektu SharePoint  
+## <a name="elements-of-a-sharepoint-project"></a>Elementy projektu SharePoint
  Węzły w projekcie programu SharePoint są określane jako *SharePoint — elementy*. SharePoint — elementy mogą także zawierać jeden lub więcej plików podrzędnych, określany jako *pliki elementu programu SharePoint*, takich jak [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki konfiguracji, formularze aspx i inne.  
   
  Zamiast tworzenia projektów przy użyciu szablonów projektu, które są już wypełnione z plikami elementu projektu, możesz użyć **pusty projekt** szablon, Utwórz pusty projekt programu SharePoint, a następnie ręcznie Dodaj elementy projektu. SharePoint — projekty również opcjonalnie może zawierać jeden lub więcej plików funkcji (dla aktywacji w programie SharePoint) i plik pakietu, w którym do dystrybucji projektu.  
   
-### <a name="special-nodes"></a>Specjalne węzłów  
+### <a name="special-nodes"></a>Specjalne węzłów
  Każdy projekt programu SharePoint zawiera dwa węzły, które nie może być zmieniona, usunięty, Wytnij, skopiowany lub przeciągnięte z projektu. Te węzły są następujące:  
   
--   Funkcje  
-  
+-   Funkcje    
 -   Package  
   
  Oba węzły są wyświetlane we wszystkich projektach SharePoint zawsze, nawet jeśli nie funkcji lub pakietów, które są zdefiniowane dla projektu.  
   
-#### <a name="features-node"></a>Funkcje węzła  
+#### <a name="features-node"></a>Funkcje węzła
  **Funkcje** węzeł zawiera jedną lub więcej funkcji projektu programu SharePoint. Funkcja jest kontenerem rozszerzeń dla programu SharePoint. Po wdrożeniu funkcji programu SharePoint server można w definicjach lokacji lub indywidualnie aktywowany przez administratorów programu SharePoint w witrynach programu SharePoint. Aby uzyskać więcej informacji, zobacz [pracy z funkcjami](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  Po dodaniu elementu, takiego jak typ zawartości lub wystąpienia listy, do projektu SharePoint, jest ona dodawana do funkcji w **funkcje** węzła. Zakres element określa, czy jest ona dodawana do nowej lub istniejącej funkcji. Jeśli nowy element jest tym samym zakresie co istniejących funkcji, następnie jest ona dodawana do tej funkcji. W przeciwnym razie element został dodany do nowej funkcji.  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  Gdy funkcja zostanie dodany do projektu SharePoint, pojawi się w **Eksploratora rozwiązań** węzła przy użyciu domyślnego nazwij funkcji*x*.feature, gdzie *x* to unikatowa liczba. Po wdrożeniu funkcji programu SharePoint Server administratorem programu SharePoint można aktywować, udostępniając użytkowników witryny programu SharePoint.  
   
-#### <a name="package-node"></a>Węzeł pakietów  
+#### <a name="package-node"></a>Węzeł pakietów
  **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *pakietu rozwiązania*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
   
  Można wyświetlić lub zmienić zawartość pakietu w Projektancie pakiet, klikając węzeł pakietu lub otwieranie menu skrótów, a następnie wybierając **Otwórz**. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>Projekt programu SharePoint i właściwości elementu projektu  
+## <a name="sharepoint-project-and-project-item-properties"></a>Projekt programu SharePoint i właściwości elementu projektu
  SharePoint — projekty, podobnie jak inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów, Wyświetl właściwości w oknie właściwości i strony właściwości. Właściwości, które są wyświetlane zależą od węzła, który jest zaznaczone.  
   
  Po projektu programu SharePoint, element projektu lub węzeł pliku element projektu jest zaznaczona w **Eksploratora rozwiązań**, w oknie właściwości lub na stronie właściwości są wyświetlane następujące właściwości:  
   
-### <a name="project-properties"></a>Właściwości projektu  
+### <a name="project-properties"></a>Właściwości projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  Po wybraniu pliku elementu programu SharePoint (na przykład przepływu pracy lub funkcji w węźle funkcje) w oknie właściwości są wyświetlane następujące właściwości:  
   
-### <a name="project-item-properties"></a>Właściwości elementu projektu  
+### <a name="project-item-properties"></a>Właściwości elementu projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |Preferencje danych wyjściowych projektu|Określa zależność, takich jak zestawu, który tego elementu projektu musi być uruchamiane. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Wpisy kontroli bezpieczne|Określa formantów, które są bezpieczne dla niezaufanym użytkownikom do edycji. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Właściwości pliku element projektu  
+### <a name="project-item-file-properties"></a>Właściwości pliku element projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |Lokalizacja wdrożenia|Pełna ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych główny wdrożenia i ścieżka do wdrożenia.|  
 |Ścieżka do wdrożenia|Względna ścieżka pliku do pliku programu SharePoint Server, takich jak Workflow1\\. Pełna ścieżka pliku jest tworzony przez łączenie *Deployment ścieżkę* wartość na koniec *główny wdrożenia* wartość.<br /><br /> Wybranie wartości *RootFile* dla *typu wdrożenia* zmiany właściwości *główny wdrożenia* właściwości {SharePointRoot}\\, co Pełna ścieżka \Workflow1 {SharePointRoot}\\. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Główny wdrożenia|Ciąg. Folder główny, gdy plik jest wdrożony na serwerze programu SharePoint. Na przykład {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Wartość *główny wdrożenia* właściwość jest określana przez *typu wdrożenia* ustawienie.|  
-|Typ wdrożenia|Typ wdrożenia pliku, który określa jego *główny wdrożenia* wartość. Może to być jedna z następujących wartości:<br /><br /> NoDeployment: \<żadnej wartości ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: \Resources {SharePointRoot}\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Typ wdrożenia|Typ wdrożenia pliku, który określa jego *główny wdrożenia* wartość. Może to być jedna z następujących wartości:<br /><br /> NoDeployment:  *\<żadnej wartości >*<br /><br /> ElementManifest: *\Template\Features {SharePointRoot}\\{FeatureName}*\\<br /><br /> ElementFile: *\Template\Features {SharePointRoot}\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *\Resources {SharePointRoot}\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nazwa pliku|Nazwa pliku lub folderu dla pliku elementu.|  
 |Pełna ścieżka|Lokalizacja pliku dla elementu. (Tylko do odczytu).|  
   
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|W tym artykule opisano zagadnienia dotyczące zabezpieczeń związane z opracowywaniem rozwiązań SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Okno dialogowe selektora URL &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, którego można użyć, aby dodać ścieżkę odwołania do zasobów w projekcie, lub na lokalnym serwerze programu SharePoint.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Wprowadzenie &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

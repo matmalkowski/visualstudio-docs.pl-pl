@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767952"
 ---
-# <a name="how-to-add-a-custom-property"></a>Porady: dodawanie właściwości niestandardowej
+# <a name="how-to-add-a-custom-property"></a>Porady: Dodawanie właściwości niestandardowych
   Możesz dodać niestandardowe właściwości do modelu przy użyciu **Edytor właściwości**. Można uzyskać dostępu do tych właściwości w kodzie, aby pobrać informacje, takie jak parametry połączenia i innych danych w czasie wykonywania.  
   
 ### <a name="to-add-a-custom-property"></a>Aby dodać właściwości niestandardowe  
   
 1.  W **Eksplorator modelu BDC**, wybierz węzeł, który reprezentuje element modelu, do której chcesz zastosować właściwości niestandardowej.  
   
-2.  Na pasku menu wybierz **widoku**, **okna właściwości**.  
+2.  Na pasku menu wybierz **widoku** > **okna właściwości**.  
   
 3.  W **właściwości** okna, wybierz **właściwości niestandardowe** właściwości, a następnie wybierz przycisk wielokropka (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Dla **wartość** pole właściwości niestandardowej, określ wartość, a następnie wybierz pozycję **OK** przycisku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   

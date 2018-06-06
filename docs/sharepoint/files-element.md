@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee8794ad3b381f58721da72b4ec3950f001a0888
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691898"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766909"
 ---
 # <a name="files-element"></a>Element Pliki
   Określa pliki do wdrożenia z elementu projektu SharePoint, takich jak funkcja elementu pliki i dane wyjściowe projektów zależnych programu SharePoint.  
@@ -37,26 +37,26 @@ ms.locfileid: "34691898"
 ## <a name="type"></a>Typ  
  **FileCollectionType**  
   
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
   
 ### <a name="attributes"></a>Atrybuty  
  Brak.  
   
-### <a name="child-elements"></a>Elementy podrzędne  
+### <a name="child-elements"></a>Elementy podrzędne
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[Projectitemfile —](../sharepoint/projectitemfile-element.md)|Opcjonalne **ProjectItemFileType** elementu.<br /><br /> Reprezentuje plik programu SharePoint, takich jak plik element funkcji, aby dołączyć z elementem projektu po wdrożeniu programu SharePoint.|  
 |[Projectoutputfile —](../sharepoint/projectoutputfile-element.md)|Opcjonalne **ProjectOutputFileType** elementu.<br /><br /> Reprezentuje dane wyjściowe projektu do dołączenia do elementu projektu po wdrożeniu programu SharePoint.|  
   
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[ProjectItem](../sharepoint/projectitem-element.md)|Reprezentuje element projektu programu SharePoint. Ten element wymaganego głównego elementu z `.spdata` pliku.|  
   
-## <a name="element-information"></a>Informacje o elementach  
+## <a name="element-information"></a>Informacje o elementach
   
 |||  
 |-|-|  
@@ -65,7 +65,7 @@ ms.locfileid: "34691898"
 |**Sprawdzanie poprawności pliku**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765170"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 Widok alokacji zawiera typy, które zostały utworzone podczas przebiegu profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżek wykonywania funkcji, które spowodowało alokacje typu.  
@@ -34,7 +35,7 @@ Widok alokacji zawiera typy, które zostały utworzone podczas przebiegu profilo
   
  Dane dla funkcji Wyświetla liczbę obiektów utworzonych i liczba bajtów przydzielonych dla obiektów typu nadrzędnego.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Wyróżnianie ścieżkę aktywną wykonywania  
+## <a name="highlight-the-execution-hot-path"></a>Wyróżnij ścieżkę aktywną wykonywania  
  Można znaleźć ścieżki wykonywania drzewa wywołań utworzony większość obiektów o typie elementu nadrzędnego.  
   
 -   Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**.  

@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748530"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na wprowadzanie do ich modeli. Istnieją dwa rodzaje narzędzia: element narzędzia i połączenia. W Projektancie wygenerowanego użytkownika można wybrać elementu narzędzia przeciągnij kształtów na diagramie, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzia elementu zezwala użytkownikom na dodawanie wystąpienia klas domeny do ich modeli i narzędzia połączeń daj dodać wystąpienia relacji domeny.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Połączeń przychodzących na OutPort zagnieżdżonych składników**
 
- ![Konstruktor połączeń](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Konstruktor połączeń](../modeling/media/connectionbuilder_3.png)
 
  W związku z tym można określić, że połączenia mogą pochodzić z zagnieżdżonych składników do OutPort. Aby określić takie połączenie, należy ustawić **używa niestandardowych zaakceptować** na **InPort** typu rolę źródła i **OutPort** typu jako rola Serwer obiektów docelowych w **szczegóły DSL**  okna, jak pokazano na poniższej ilustracji:
 
  **Łącze połączyć dyrektywy w Eksploratorze DSL**
 
- ![Obraz łączenia z konstruktora](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Obraz przedstawiający konstruktora połączeń](../modeling/media/connectionbuilder_4a.png)
 
  **Łącze połączenia w oknie Szczegóły DSL — dyrektywa**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  Następnie należy podać metod w klasie ConnectionBuilder:
 

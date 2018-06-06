@@ -11,13 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751520"
 ---
-# <a name="unit-test-basics"></a>Teście jednostkowym
+# <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
 Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie testów jednostkowych. Jest to testowania, ponieważ można podzielić funkcji programu do odrębny testować zachowania, które można sprawdzić w poszczególnych jednostek *jednostki*. Narzędzia Eksplorator testów programu Visual Studio zapewnia elastyczne i wydajne sposób uruchamiania testów jednostkowych i wyświetlać ich wyniki w programie Visual Studio. Visual Studio instaluje testowania struktur dla kodu zarządzanego i natywnego jednostek firmy Microsoft. Użyj *framework testy jednostkowe* do tworzenia testów jednostkowych, uruchom je i raportuje o wynikach tych testów. Testów jednostkowych Uruchom ponownie podczas wprowadzania zmian, aby przetestować czy kodzie nadal działa poprawnie. Visual Studio Enterprise można to zrobić automatycznie [Live testów jednostkowych](live-unit-testing-intro.md), która wykrywa testów, których dotyczą przez kod zmiany i ich działa w tle podczas pisania.
 
@@ -41,7 +42,7 @@ Aby obejrzeć wprowadzenie do testowania jednostek, które umożliwia przejście
 
 W tym artykule używamy programowanie fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie jest potrzebny rzeczywisty kod do wykonania wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawione za pomocą Framework testów jednostkowych Microsoft dla kodu zarządzanego, jednak pojęć można łatwo przenosić do innych języków i struktur.
 
- ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![Rozwiązanie MyBank](../test/media/ute_mybanksolution.png)
 
  Nasze pierwsza próba projektu dla `MyBank` aplikacja zawiera składnik kont, który reprezentuje indywidualne konto i jego transakcji w banku i składnika bazy danych, który zapewnia funkcje do agregacji i zarządzanie indywidualne konta.
 
@@ -85,15 +86,15 @@ Często jest szybsze do generowania jednostkowy projekt testowy i klas zastępcz
 
 1.  W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **tworzenia testów jednostkowych** z menu kontekstowego.
 
-     ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png)
 
 2.  Kliknij przycisk OK, aby zaakceptować wartości domyślne tworzenia testów jednostkowych lub zmiany wartości używane do tworzenia i nazwę jednostki Testowanie projektu i testów jednostkowych. Można wybrać kod, który jest domyślnie dodawany do metody testowe jednostki.
 
-     ![Prawo&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Prawo&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png)
 
 3.  Klas zastępczych testów jednostkowych są tworzone w nowym projekcie testowym jednostki dla wszystkich metod w klasie.
 
-     ![Testy jednostkowe są tworzone](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Testy jednostkowe są tworzone.](../test/media/createunittestsstubs.png)
 
 4.  Teraz przejść do Dowiedz się, jak [Dodaj kod do metody testowe jednostki](#BKMK_Writing_your_tests) z testu jednostkowego łatwy do rozpoznania i wszelkie dodatkowe testów, które warto dodać do dokładnego przetestowania kodu.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Eksploratora testów nie jest widoczny, jeśli **testu** w menu programu Visual Studio, wybierz **systemu Windows**, a następnie wybierz pozycję **Eksploratora testów**.
 
- ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
 
  Jak uruchamiać, zapisu i ponownie uruchomić testy domyślny widok Eksploratora testów wyświetla wyniki w grupach **testy nie powiodło się**, **przekazany testy**, **pominięte testy** i  **Nie uruchamiać testów**. Można wybrać nagłówek grupy, aby otworzyć widok, który wyświetla wszystkie testy w tej grupie.
 
@@ -214,11 +215,11 @@ Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze 
 
 Pasek narzędzi Eksploratora testów ułatwia odnajdywanie, organizować i uruchamiać testy, które planuje się.
 
- ![Uruchamianie testów za pomocą narzędzi Eksploratora testów](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Uruchom testy na pasku narzędzi Eksplorator testów](../test/media/ute_toolbar.png)
 
  Możesz wybrać **Uruchom wszystkie** do uruchomienia wszystkich testów, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów w dolnej części okna Eksploratora testów zostanie wyświetlone podsumowanie uruchomienia testu. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz Test** z menu kontekstowego (klawiatury: F12) do wyświetlenia kodu źródłowego dla wybranego testu.
 
- Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+ Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 ### <a name="run-tests-after-every-build"></a>Uruchom testy po każdej kompilacji
 
@@ -227,17 +228,17 @@ Pasek narzędzi Eksploratora testów ułatwia odnajdywanie, organizować i uruch
 
 |||
 |-|-|
-|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Aby uruchomić testy jednostkowe po każdym lokalnej kompilacji, wybierz pozycję **testu** w standardowe menu, wybierz **Uruchom testy po kompilacji** na pasku narzędzi Eksplorator testów.|
+|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdym lokalnej kompilacji, wybierz pozycję **testu** w standardowe menu, wybierz **Uruchom testy po kompilacji** na pasku narzędzi Eksplorator testów.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtr i Grupa listy testów
 
 Jeśli masz dużą liczbę testów, można wpisać w polu wyszukiwania Eksploratora testów, aby filtrować listę według określonego ciągu. Można ograniczyć zdarzenie filtru więcej wybierając z listy filtrów.
 
- ![Wyszukaj filtr kategorii](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Kategorie filtru wyszukiwania](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Przycisk Eksploratora testów](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Do grupowania testów według kategorii, wybierz **Group By** przycisku.|
+|![Przycisk Eksploratora testów](../test/media/ute_groupby_btn.png)|Do grupowania testów według kategorii, wybierz **Group By** przycisku.|
 
  Aby uzyskać więcej informacji, zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
@@ -260,7 +261,7 @@ Dowiedz się więcej informacji o [profilowanie testów jednostkowych](../debugg
 
  **Odpowiedź:** Użyj IntelliSense do generowania klasy i metody w kodzie projektu. Pisanie instrukcji w metody testowej, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu IntelliSense w wywołaniu. W przypadku wywołania konstruktora nowej klasy, wybierz **wygenerować nowy typ** z menu i wykonaj polecenia kreatora, aby wstawić klasę w projekcie kodu. W przypadku wywołania metody, wybierz **wygenerować nową metodę** z IntelliSense menu.
 
- ![Generowanie Menu IntelliSense szkieletu metody](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Generowanie Menu IntelliSense Stub — metoda](../test/media/ute_generatemethodstubintellisense.png)
 
  **Pytanie: czy można utworzyć testów, które przyjmują wiele zestawów danych jako dane wejściowe, aby uruchomić test?**
 
@@ -304,7 +305,7 @@ Metody oparte na atrybutach jest uruchamiane jeden raz dla każdego wiersza w ta
 
  W oknie wyników pokrycia kodu zostaną wyświetlone wyniki pokrycia.
 
- ![Wyniki pokrycia kodu](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Wyniki pokrycia kodu](../test/media/ute_codecoverageresults.png)
 
  Dowiedz się więcej o [pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
@@ -326,6 +327,6 @@ Dowiedz się więcej o [izolowanie metody testowe jednostki z Microsoft Fakes](.
 
  **Odpowiedź:** tak, wykonaj następujące kroki, aby [znajdować i instalować innych platform,](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie, aby utworzyć testy jednostkowe, a następnie wybierz zainstalowanych platform tutaj:
 
- ![Wybierz inne frameworka testów jednostkowych zainstalowanych](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Wybierz inne frameworka testów jednostkowych zainstalowany](../test/media/createunittestsdialogextensions.png)
 
  Z klas zastępczych testu jednostki zostanie utworzona przy użyciu wybranej platformy.

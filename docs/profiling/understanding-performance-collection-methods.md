@@ -17,7 +17,7 @@ ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34477486"
 ---
 # <a name="understand-performance-collection-methods"></a>Zrozumienie metoda zbierania danych wydajności

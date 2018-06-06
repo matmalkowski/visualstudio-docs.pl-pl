@@ -9,11 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e725cb311a6ca07325be0b118687641ed4ecdc
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749174"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -23,21 +24,21 @@ Po dodaniu wiele kont na jednej maszynie zestawu kont będzie mobilny Tobie, je�
 
 W tym przewodniku pokazano, jak dodać wiele kont dla programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są uwzględniane w takich jak umieszcza **dodać podłączonej usługi** okna dialogowego, **Eksploratora serwera** , i **Team Explorer**.
 
-## <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
 - Zaloguj się do programu Visual Studio z konta Microsoft lub konta organizacyjnego. Powinna zostać wyświetlona nazwa użytkownika są wyświetlane w górnym rogu okna, podobnie do poniższego:
 
-     ![Currentlly zalogowanego użytkownika](../ide/media/vs2015_username.png "VS2015_UserName")
+     ![Currentlly zalogowanego użytkownika](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Dostęp do konta platformy Azure w Eksploratorze serwera
 
 Naciśnij klawisz **Ctrl**+**Alt**+**S** otworzyć **Eksploratora serwera**. Wybierz **Azure** ikony, jak i kiedy rozszerza możesz powinny być widoczne zasoby dostępne w ramach konta Azure, który jest skojarzony z Identyfikatorem, który był używany podczas logowania do programu Visual Studio. Powinna przypominać następujące wyświetlane (z wyjątkiem tego, że zobaczysz własnych zasobów).
 
-![Węzeł narzędzi Azure przedstawiający Eksploratora serwera rozwinięty](../ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")
+![Rozszerzona węzła narzędzi Azure przedstawiający Eksploratora serwera](../ide/media/vs2015_serverexplorer.png)
 
 Po raz pierwszy używasz programu Visual Studio na dowolnym określonym urządzeniu okno dialogowe będzie wyświetlana tylko zarejestrowany pod Identyfikatorem zalogowany do środowiska IDE z subskrypcji. Dostęp do zasobów dla każdego konta bezpośrednio z **Eksploratora serwera** przez kliknięcie prawym przyciskiem myszy **Azure** węzła i wybierając polecenie **zarządzanie i subskrypcje filtru**i dodawanie konta z formant wyboru konta. Można wybrać inne konto, w razie potrzeby, klikając strzałkę w dół i wybierając z listy kont. Po wybraniu konta, można wybrać subskrypcje, które w ramach tego konta, które mają być wyświetlane w **Eksploratora serwera**.
 
-![Okno dialogowe subskrypcji platformy Azure zarządzanie](../ide/media/vs2015_manage_subs.png "vs2015_manage_subs")
+![Okno dialogowe subskrypcji platformy Azure Zarządzanie](../ide/media/vs2015_manage_subs.png)
 
 Przy następnym otwarciu **Eksploratora serwera**, wyświetlane są zasoby dla tej subskrypcji.
 
@@ -54,7 +55,7 @@ Przy następnym otwarciu **Eksploratora serwera**, wyświetlane są zasoby dla t
 
 Usługi Azure AD umożliwia obsługę użytkowników końcowych jednej operacji logowania w aplikacji sieci web platformy ASP.NET MVC lub AD uwierzytelniania w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelnienia konta użytkownika; użytkowników, którzy mają dostęp do Twojej domeny usługi Active Directory umożliwia ich istniejących kont usługi Azure AD connect do aplikacji sieci web. Aplikacje pakietu Office 365 można również użyć uwierzytelniania domeny. Aby wyświetlić to działanie, tworzenie aplikacji sieci web (**pliku** > **nowy projekt** > **C#** > **chmury**  >  **Aplikacji sieci Web ASP.NET**). W **nowy projekt ASP.NET** okno dialogowe, wybierz **Zmień uwierzytelnianie**. Kreator uwierzytelniania zostanie wyświetlona i umożliwia wybranie jakiego rodzaju uwierzytelniania do użycia w aplikacji.
 
-![Zmień dialog uwierzytelniania dla platformy ASP.NET](../ide/media/vs2015_change_authentication.png "VS2015_change_authentication")
+![Zmień dialog uwierzytelniania dla platformy ASP.NET](../ide/media/vs2015_change_authentication.png)
 
 Aby uzyskać więcej informacji o różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [projekty sieci web ASP.NET tworzenie w programie Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje dotyczące uwierzytelniania jest nadal istotne dla bieżącej wersji programu Visual Studio).
 
@@ -66,11 +67,11 @@ W menu głównym wybierz **zespołu** > **nawiązywanie połączenia z Team Foun
 
 Kliknij strzałkę w dół obok swojej nazwy użytkownika w górnym rogu programu Visual Studio. Następnie wybierz pozycję **ustawienia konta** elementu menu. **Menedżerem** okna dialogowego zostanie wyświetlony i podpisany przy użyciu konta. Wybierz **Dodaj konto** łącze w dolnym rogu okna dialogowego, aby dodać nowego konta Microsoft lub nowe konta firmowego lub szkolnego.
 
-![Wybór konta usługi Visual Studio](../ide/media/vs2015_acct_picker.png "VS2015_acct_picker")
+![Wybór konta usługi Visual Studio](../ide/media/vs2015_acct_picker.png)
 
 Postępuj zgodnie z monitami, aby wprowadź nowe poświadczenia konta. Na poniższej ilustracji pokazano **menedżerem** po użytkownik został dodany jego *Contoso.com* konta służbowego.
 
-![Menedżerem](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![Menedżerem ds.](../ide/media/vs2015_accountmanager.gif)
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Kontroluj, Kreator dodawania usług połączonych i Eksploratora serwera
 

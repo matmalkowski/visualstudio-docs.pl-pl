@@ -12,13 +12,14 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749463"
 ---
-# <a name="custom-native-etw-heap-events"></a>Zdarzenia sterty niestandardowych natywnego ETW
+# <a name="custom-native-etw-heap-events"></a>Niestandardowe zdarzenia ETW sterty natywnej
 
 Visual Studio zawiera szereg [profilowania i narzędzia diagnostyczne](../profiling/profiling-tools.md), tym profilera natywnej pamięci.  Ten program profilujący przechwytuje [zdarzenia ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i umożliwia analizę sposobu pamięci są przydzielone i używane.  Domyślnie to narzędzie można analizować tylko przydziałów wykonanych ze standardowego stosu systemu Windows, a poza tym natywnej sterty alokacje nie będzie wyświetlana.
 
@@ -136,7 +137,7 @@ Ta biblioteka można łatwo C i C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Śledzenie użycia pamięci
+## <a name="track-memory-usage"></a>Śledzenie użycia pamięci
 Z tych wywołań w miejscu użycie niestandardowego sterty teraz można śledzić za pomocą standardowego **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz [użycie pamięci](../profiling/memory-usage.md) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowego sterty wyświetlane. 
 
 ![Włącz profilowanie sterty](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Aby wyświetlić Twoje niestandardowe stosu śledzenia, użyj **sterty** listy r
 
 ![Wybór sterty](media/heap-example-custom-heap.png)
 
-Za pomocą powyższego przykładu kodu z `MemoryPool` tworzenie `VSHeapTracker::CHeapTracker` obiektu i własnej `allocate` obecnie podczas wywoływania metody `AllocateEvent` metody, możesz teraz przeglądać wynik tej niestandardowej alokacji pokazujący 3 wystąpień sumowanie 24 bajty typu `Foo`.
+Przy użyciu powyższego przykładu kodu z `MemoryPool` tworzenie `VSHeapTracker::CHeapTracker` obiektu i własnej `allocate` obecnie podczas wywoływania metody `AllocateEvent` metody, możesz teraz przeglądać wynik tej niestandardowej alokacji przedstawiający sumowanie 24 bajty, wszystkie wystąpienia Typ `Foo`.
 
 Wartość domyślna *sterty NT* sterty wygląda tak samo jak wcześniej, dodając nasze `CHeapTracker` obiektu.
 
@@ -154,8 +155,8 @@ Wartość domyślna *sterty NT* sterty wygląda tak samo jak wcześniej, dodają
 Tak jak z standardowe sterty systemu Windows, można użyć tego narzędzia do porównywania migawki i wyszukaj przecieki lub uszkodzenie w niestandardowych sterty, który jest opisany w głównym [użycie pamięci](../profiling/memory-usage.md) dokumentacji.
 
 > [!TIP]
-> Visual Studio zawiera także **użycie pamięci** narzędzie w **profilowanie wydajności** zestawu narzędzi, które można włączyć **debugowania > wydajności programu profilującego** opcji menu lub **Alt + F2** klawiatury kombinacji.  Ta funkcja nie obejmuje śledzenia stosu i nie będzie wyświetlany na Twojej niestandardowych sterty, zgodnie z opisem w tym miejscu.  Tylko **narzędzia diagnostyczne** okna, które można włączyć za **debugowania > Windows > Pokaż narzędzia diagnostyczne** menu lub **Ctrl + Alt + F2** klawiatury kombinacja, zawiera tę funkcję.
+> Visual Studio zawiera także **użycie pamięci** narzędzie w **profilowanie wydajności** zestawu narzędzi, które można włączyć **debugowania** >  **Profiler wydajności** opcji menu lub **Alt**+**F2** klawiatury kombinacji.  Ta funkcja nie obejmuje śledzenia stosu i nie będzie wyświetlany na Twojej niestandardowych sterty, zgodnie z opisem w tym miejscu.  Tylko **narzędzia diagnostyczne** okna, które można włączyć za **debugowania**>**Windows**>**Pokaż narzędzia diagnostyczne**  menu lub **Ctrl**+**Alt**+**F2** klawiatury kombinacja, zawiera tę funkcję.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Narzędzia profilowania](../profiling/profiling-tools.md)  
 [Użycie pamięci](../profiling/memory-usage.md)

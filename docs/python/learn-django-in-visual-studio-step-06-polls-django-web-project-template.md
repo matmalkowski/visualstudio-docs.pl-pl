@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691449"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750496"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Samouczek krok 6: należy użyć szablonu projektu sieci Web Django sond
 
@@ -112,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Jak widać, sonda przechowuje opis w jego `text` pola i publikacji Data w `pub_date`. Te pola są tylko onesields, który istnieje dla sondowania w bazie danych. `total_votes` pola jest obliczane w czasie wykonywania.
+Jak widać, sonda przechowuje opis w jego `text` pola i publikacji Data w `pub_date`. Te pola są jedynymi osobami, które istnieją dla sondowania w bazie danych. `total_votes` pola jest obliczane w czasie wykonywania.
 
 Wybór jest powiązany z sondowania za pośrednictwem `poll` pola, zawiera opis `text`i obsługuje liczba dla tej opcji w `votes`. `votes_percentage` Pola jest obliczane w czasie wykonywania i nie można odnaleźć w bazie danych.
 

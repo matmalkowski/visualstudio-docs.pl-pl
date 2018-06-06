@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747147"
 ---
 # <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
 *N-warstwowa* dane aplikacji są dane aplikacji, które są podzielone na wielu *warstw*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
@@ -58,7 +59,7 @@ Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu o
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.
 
-![Środkowy składników warstwy](../data-tools/media/ntiermid.png "NtierMid") bliski warstwy
+![Środkowy składników warstwy](../data-tools/media/ntiermid.png) bliski warstwy
 
 Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.
 
@@ -67,7 +68,7 @@ Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połącz
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w warstwie danych aplikacji n-warstwowej.
 
-![Składniki warstwy danych](../data-tools/media/ntierdatatier.png "ntierdatatier") warstwy danych
+![Składniki warstwy danych](../data-tools/media/ntierdatatier.png) warstwy danych
 
 Warstwa danych nie może być dostępna bezpośrednio z klienta w warstwie prezentacji. Zamiast tego składnik dostępu do danych w warstwie środkowej obsługuje komunikację między warstwami prezentacji i danych.
 

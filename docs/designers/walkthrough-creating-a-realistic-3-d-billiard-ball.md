@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ced3059b516c7285d525666a69d2c63a654a83a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748039"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Wskazówki: Tworzenie piłka realistyczne bilardowe 3D
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: tworzenie realistycznej kuli bilardowej w 3D
 
 Ten przewodnik przedstawia sposób tworzenia piłka realistyczne bilardowe 3D przy użyciu projektanta programu do cieniowania i edytor obrazów programu Visual Studio. Wygląd 3D piłka bilardowe odbywa się przez połączenie z zasobami tekstury odpowiednie kilka technik programu do cieniowania.
 
@@ -56,11 +57,11 @@ Kuli jest domyślnego kształtu Podgląd w projektancie programu do cieniowania;
 
      Tekstury powinny wyglądać podobnie do poniższego:
 
-     ![Tekstury piłka bilardowe](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")
+     ![Tekstury piłka bilardowe](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
 4.  Opcjonalnie można zmniejszyć wymagania dotyczące magazynu z tej struktury. Możesz to zrobić, zmniejszając szerokość tekstury, aby dopasować wysokość. To kompresuje tekstury wzdłuż szerokości, ale ze względu na sposób, że tekstury jest mapowany na kuli, będą rozszerzane, podczas renderowania piłka bilardowe. Po zmianie rozmiaru, tekstury powinny wyglądać podobnie do poniższego:
 
-     ![Tekstura bilardowe skompresowane w kwadrat](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")
+     ![Tekstura bilardowe skompresowane w kwadrat](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 
  Teraz można utworzyć programu do cieniowania, którego dotyczy ten tekstury modelu.
 
@@ -70,11 +71,11 @@ Kuli jest domyślnego kształtu Podgląd w projektancie programu do cieniowania;
 
      Domyślnie wykres programu do cieniowania wygląda następująco:
 
-     ![Wykres programu do cieniowania domyślne](../designers/media/gfx_shader_demo_billiard_step_0.png "gfx_shader_demo_billiard_step_0")
+     ![Wykres domyślnego programu do cieniowania](../designers/media/gfx_shader_demo_billiard_step_0.png)
 
 2.  Modyfikowanie domyślnego programu do cieniowania tak, aby dotyczył wartość próbki tekstury bieżącego piksela. Wykres programu do cieniowania powinien wyglądać następująco:
 
-     ![Wykres programu do cieniowania stosowanego tekstury dla obiekt](../designers/media/gfx_shader_demo_billiard_step_1.png "gfx_shader_demo_billiard_step_1")
+     ![Wykres programu do cieniowania stosowanym tekstury do obiektu](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
 3.  Zastosuj tekstury, utworzony w poprzedniej procedurze, konfigurując właściwości tekstury. Ustaw wartość **tekstury** właściwość **próbki tekstury** węzeł, aby **Texture1**, a następnie wskaż plik tekstury za pomocą **Filename**właściwość **Texture1** grupy właściwości w tym samym oknie właściwości.
 
@@ -82,7 +83,7 @@ Kuli jest domyślnego kształtu Podgląd w projektancie programu do cieniowania;
 
  Twoje piłka bilardowe powinna wyglądać podobnie do poniższego:
 
- ![Closeup kuli teksturą bilardowe](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")
+ ![Closeup kuli bilardowe teksturą](../designers/media/gfx_shader_demo_.png)
 
 ## <a name="create-depth-with-the-lambert-lighting-model"></a>Utwórz głębokość z modelem oświetlenia Lambert
 
@@ -96,7 +97,7 @@ Po utworzeniu tej pory piłka bilardowe łatwo rozpoznać. Jednak pojawi się p�
 
 -   Zmodyfikuj Twojego programu do cieniowania dostosowanie wartość próbki tekstury przez wartość Lambert oświetlenia. Wykresie programu do cieniowania powinien wyglądać następująco:
 
-     ![Wykres programu do cieniowania oświetlenie Lambert dodane](../designers/media/gfx_shader_demo_billiard_step_2.png "gfx_shader_demo_billiard_step_2")
+     ![Wykres programu do cieniowania oświetlenie Lambert dodane](../designers/media/gfx_shader_demo_billiard_step_2.png)
 
 -   Opcjonalnie można dostosować zachowanie oświetlenia przez skonfigurowanie **MaterialDiffuse** właściwości wykres programu do cieniowania. Aby uzyskać dostęp do właściwości wykres programu do cieniowania, wybierz pustym obszarem powierzchni projektu, a następnie zlokalizuj właściwość, którą chcesz uzyskać dostęp w **właściwości** okna.
 
@@ -104,7 +105,7 @@ Po utworzeniu tej pory piłka bilardowe łatwo rozpoznać. Jednak pojawi się p�
 
  Oświetlenie Lambert zastosowane, Twoje piłka bilardowe powinny wyglądać podobnie do poniższego:
 
- ![Closeup kuli bilardowe teksturą i podświetlone](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")
+ ![Closeup kuli bilardowe teksturą i podświetlone](../designers/media/gfx_shader_demo_billiard_ball_2.png)
 
 ## <a name="enhance-the-basic-appearance-with-specular-highlights"></a>Ulepszanie wyglądu podstawowego z odblasków najważniejsze funkcje
 
@@ -118,7 +119,7 @@ Model oświetlenia Lambert zapewnia rozumieniu kształt i wymiarów, które był
 
 1.  Zmodyfikuj Twojego programu do cieniowania do uwzględnienia przy użyciu dodatku mieszania udział odblasków. Wykresie programu do cieniowania powinien wyglądać następująco:
 
-     ![Wykres programu do cieniowania z odblasków oświetlenia dodane](../designers/media/gfx_shader_demo_billiard_step_3.png "gfx_shader_demo_billiard_step_3")
+     ![Wykres programu do cieniowania z odblasków oświetlenia dodane](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
 2.  Opcjonalnie można dostosować sposób, który zachowuje odblasków przez skonfigurowanie właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) wykresu programu do cieniowania. Dostęp do właściwości wykresu programu do cieniowania, wybierz pusty obszar powierzchni projektu, a następnie w **właściwości** okna, odszukaj właściwość, którą chcesz uzyskać dostęp.
 
@@ -126,7 +127,7 @@ Model oświetlenia Lambert zapewnia rozumieniu kształt i wymiarów, które był
 
  Wyróżnieniem odblasków zastosowane, Twoje piłka bilardowe powinny wyglądać podobnie do poniższego:
 
- ![Dodaje closeup kuli bilardowe z odblasków](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")
+ ![Dodaje closeup kuli bilardowe z odblasków](../designers/media/gfx_shader_demo_billiard_ball_3.png)
 
 ## <a name="create-a-sense-of-space-by-reflecting-the-environment"></a>Utwórz w pewnym sensie miejsca w czasie wykonywania odbicia środowiska
 
@@ -150,13 +151,13 @@ Z światła odblasków zastosowane Twoje piłka bilardowe wygląda bardzo przeko
 
 4.  Utwórz drugi tekstury, który jest taki sam rozmiar jak pierwsze. Ta tekstury powtarza się z czterech stron mapy modułów, które odnoszą się do powierzchni i krawędzi tabeli bilardowe i do obszaru wokół tabeli bilardowe. Upewnij się, by narysować powierzchni tabeli bilardowe w tym tekstury przy użyciu tego samego koloru, tak jak tekstury dolnej. Tekstury powinny wyglądać podobnie do poniższego:
 
-     ![Tekstura dla strony mapy sześciennej](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")
+     ![Tekstura dla strony mapy sześciennej](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png)
 
      Należy pamiętać, że mapa odbicia nie musi być photorealistic zadziałało; na przykład mapy modułu używany do tworzenia obrazów w tym artykule zawiera tylko cztery kieszeni zamiast sześć.
 
 5.  Utwórz trzeci tekstury, który jest taki sam rozmiar jak innych. Ten tekstury będzie początku Mapa modułu, która odnosi się do limitu powyżej bilardowe tabeli. Aby ta część odbicie bardziej interesujące, można narysować narzutów światło wzmocnienie odblasków najważniejsze funkcje, które zostały dodane do programu do cieniowania w poprzedniej procedurze. Tekstury powinny wyglądać podobnie do poniższego:
 
-     ![Tekstura najlepszych mapy sześciennej](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
+     ![Tekstura najlepszych mapy sześciennej](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
  Teraz, po utworzeniu poszczególnych tekstury dla strony mapy modułu, można użyć narzędzia, aby połączyć je w mapy modułów, które mogą być przechowywane w jednym .dds tekstury. Można użyć dowolnego programu, aby utworzyć mapę modułu tak długo, jak może pomóc zaoszczędzić mapy modułu w formacie tekstury .dds. W tym przewodniku pokazano, jak utworzyć tekstury za pomocą narzędzia tekstury DirectX, które jest częścią 2010 czerwca zestawu SDK programu DirectX.
 
@@ -180,7 +181,7 @@ Z światła odblasków zastosowane Twoje piłka bilardowe wygląda bardzo przeko
 
  W pewnym sensie układ mapy modułu następująco:
 
- ![Układ mapy modułu środowiska](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")
+ ![Układ mapy modułu środowiska](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png)
 
  Obraz u góry jest dodatnią kroju modułu Y (+ Y); w środku, od lewej do prawej jest -X + Z, + X, a -Z modułu kroje; w dolnej części jest kroju modułu -Y.
 
@@ -190,13 +191,13 @@ Z światła odblasków zastosowane Twoje piłka bilardowe wygląda bardzo przeko
 
 1.  Zmodyfikuj Twojego programu do cieniowania do uwzględnienia udziału mapowania środowiska przy użyciu dodatku mieszania. Wykresie programu do cieniowania powinien wyglądać następująco:
 
-     ![Closeup zarówno rodzaj węzłach odbicia programu do cieniowania](../designers/media/gfx_shader_demo_billiard_step_4b.png "gfx_shader_demo_billiard_step_4b")
+     ![Closeup obu węzłów rodzaj odbicia programu do cieniowania](../designers/media/gfx_shader_demo_billiard_step_4b.png)
 
      Należy pamiętać, że można użyć **mnożenia dodać** węzeł, aby uprościć wykres programu do cieniowania.
 
      Poniżej przedstawiono bardziej szczegółowy widok węzłów programu do cieniowania, które implementuje mapowania środowiska:
 
-     ![Wykres programu do cieniowania z mapowaniem środowiska dodane](../designers/media/gfx_shader_demo_billiard_step_4a.png "gfx_shader_demo_billiard_step_4a")
+     ![Wykres programu do cieniowania z mapowaniem środowiska dodane](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
 2.  Zastosuj utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury modułu mapy tekstury. Ustaw wartość **tekstury** właściwość **próbki mapy Sześciennej** węzeł **Texture2**, a następnie wskaż plik tekstury za pomocą **Filename**właściwość **Texture2** grupy właściwości.
 
@@ -204,7 +205,7 @@ Z światła odblasków zastosowane Twoje piłka bilardowe wygląda bardzo przeko
 
  Z mapowaniem środowiska zastosowane, Twoje piłka bilardowe powinny wyglądać podobnie do poniższego:
 
- ![Closeup środowiska mapowane piłka bilardowe](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")
+ ![Piłka bilardowe mapowane closeup środowiska](../designers/media/gfx_shader_demo_billiard_ball_4.png)
 
  Do tego obrazu końcowego Zwróć uwagę, jak efekty, które zostały dodane grupuje utworzyć bardzo przekonująco piłka bilardowe. Kształt, tekstury i oświetlenia Tworzenie podstawowych wygląd obiektu 3D, a światła odblasków i odbić upewnij piłka bilardowe bardziej interesujące i wyglądać częścią jego środowiska.
 

@@ -14,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745714"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Wskazówki: Powiązanie z danymi w Projektancie XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Przewodnik: wiązanie z danymi w projektancie XAML
 
 W Projektancie XAML za pomocą obszaru roboczego i w oknie właściwości można ustawić właściwości powiązania danych. Przykład, w tym przewodniku pokazano, jak wiązanie danych do formantu. W szczególności przewodnika pokazano, jak utworzyć prostą klasę koszyka zakupów zawierający [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) o nazwie `ItemCount`, a następnie powiązać `ItemCount` właściwości **tekst** właściwości z [blok tekstu](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) formantu.
 
@@ -82,7 +83,7 @@ W Projektancie XAML za pomocą obszaru roboczego i w oknie właściwości można
 
      Na poniższej ilustracji pokazano **Wybieranie obiektu** okno dialogowe z **ShoppingCart** wybrane.
 
-     ![Okno dialogowe Wybierz obiekt](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Wybierz obiekt, okno dialogowe](../designers/media/blendselectobject.png)
 
 1. W **przybornika**, wybierz `TextBlock` sterowania, aby dodać go do formularza.
 
@@ -92,7 +93,7 @@ W Projektancie XAML za pomocą obszaru roboczego i w oknie właściwości można
 
      Na poniższej ilustracji pokazano **utworzyć powiązania danych** okno dialogowe z **wartość elementu ItemCount** wybrane właściwości.
 
-     ![Powiązanie danych okno dialogowe Tworzenie](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Tworzenie powiązania danych — okno dialogowe](../designers/media/xaml_create_data_binding.png)
 
 1. Naciśnij klawisz **F5** do uruchomienia aplikacji.
 

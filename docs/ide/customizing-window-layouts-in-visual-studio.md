@@ -25,11 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2cd35623f1c90dbfa47204d901fdaa48340fc5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746848"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 
@@ -94,23 +95,23 @@ Aby przywrócić jego ostatniej pozycji okna narzędzia lub okna dokumentu, naci
 
 Na poniższej ilustracji przedstawiono dokowania dla okna dokumentów, które mogą zostać zadokowane tylko w obrębie ramkę do edycji:
 
-![Dokument dokowania okna](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+![Romb przewodnik okna dokumentu](../ide/media/documentwindowguidediamonds.png)
 
 Narzędzia systemu windows można podłączony obok ramkę w IDE lub w ramach ramkę do edycji. Dokowania pojawia się podczas przeciągania okna narzędzia do innej lokalizacji, aby ułatwić łatwo ponownie dock okna.
 
 Dokowania dla narzędzi systemu windows
 
-![Narzędzie romby okna](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+![Narzędzie okno romby](../ide/media/vs10guidediamond.png)
 
 Na poniższej ilustracji pokazano **Eksploratora rozwiązań** jest zadokowany w nowej lokalizacji, która jest wyświetlana niebieski zacienionym obszarze:
 
-![Dokowanie Eksploratora rozwiązań w nowe położenie](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")
+![Dokowanie Eksploratora rozwiązań w nowe położenie](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Zamknij i automatyczne ukrywanie okna narzędzi
 
 Możesz zamknąć okno narzędzia klikając **X** w prawym górnym rogu paska tytułu; Aby ponownie otworzyć okno, użyj polecenia menu lub skrótu klawiatury. Narzędzia systemu windows obsługuje funkcji o nazwie *Ukryj automatycznie*, co powoduje, że okno, aby slajd przeszkadza korzystając z innego okna. Gdy okno jest ukrywane automatycznie, jego nazwa jest wyświetlana na karcie na brzegu IDE. Aby ponownie użyć okna, tak aby slajdów okno z powrotem do widoku punktu do karty.
 
-![Ukryj automatycznie](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")
+![Ukryj automatycznie](../ide/media/vs2015_auto_hide.png)
 
 > [!NOTE]
 > Pozwala określić, czy automatycznie Ukryj działa na narzędzia windows indywidualnie lub jako zadokowanych grupy zaznacz lub wyczyść **automatyczne ukrywanie przycisku dotyczy tylko systemu windows narzędzie active** w **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [ogólne, środowisko, opcje — Okno dialogowe](../ide/reference/general-environment-options-dialog-box.md).
@@ -167,7 +168,7 @@ Najpierw utwórz test rozwiązania, które zawiera dwa projekty, każde z nich i
 
 Aby przełączyć między układów, skróty klawiaturowe, lub z poziomu menu głównego wybierz **okna** > **Zastosuj układ okna**.
 
-![Zastosuj menu Układ okna](../ide/media/vs2015_applywindowlayout.png "VS2017_ApplyWindowLayout")
+![Zastosuj menu układu okna](../ide/media/vs2015_applywindowlayout.png)
 
 Po zastosowaniu układ interfejsu użytkownika, należy zwrócić uwagę, jak zachować układ zarówno w trybie edycji, jak i w trybie debugowania.
 
@@ -180,7 +181,7 @@ Jeśli masz w domu konfigurację monitora multi w pracy i jeden monitor komputer
 
 Można usunąć, Zmień nazwę lub zmiana kolejności układu niestandardowego przez wybranie **okna** > **Zarządzanie układów okien**. Po przeniesieniu układ powiązania klucza jest automatycznie dostosowywany do nowej pozycji na liście. Powiązania nie może być inaczej zmodyfikowane, a więc może przechowywać maksymalnie 10 układów naraz.
 
-![Zarządzanie układów okien](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+![Zarządzanie układów okien](../ide/media/managewindowlayouts.png)
 
 Mówiące, które klawiatury skrót jest przypisany do wyboru układu, wybierz **okna** > **Zastosuj układ okna**.
 

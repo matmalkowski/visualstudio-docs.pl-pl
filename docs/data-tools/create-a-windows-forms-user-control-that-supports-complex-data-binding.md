@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a1922c3b79a718b3a239280561bf954165332e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e48e6a3a5694a518f30b3d9ec749d01b1e7127b8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746507"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie formantu użytkownika formularzy systemu Windows obsługującego złożone powiązanie danych
 
@@ -80,7 +81,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-1. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+1. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 1. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

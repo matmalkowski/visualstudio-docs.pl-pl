@@ -19,10 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477512"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Porady: odwołanie do nazwy lub lokalizacji pliku projektu
 W pliku projektu bez konieczności tworzenia własnych właściwości można użyć nazwy lub lokalizacji projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Udostępnia właściwości zastrzeżone odwołujące się do nazwy pliku projektu i inne właściwości związanych z projektem. Aby uzyskać więcej informacji na właściwości zastrzeżone, zobacz [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  

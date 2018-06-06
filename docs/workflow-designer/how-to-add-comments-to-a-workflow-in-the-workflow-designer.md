@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752030"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływów pracy
 
@@ -52,11 +53,11 @@ W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów 
 
    Adnotacja jest wyświetlany w Projektancie działania. Na poniższym zrzucie ekranu adnotacja "Rozpoczęcia działania w przepływie pracy" jest wyświetlany w Projektancie działania.
 
-   ![Widoczne w Projektancie działań adnotacja](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![Adnotacja widoczne w Projektancie działania](../workflow-designer/media/annotationindesigner.png)
 
 1. Aby wyświetlić poza Projektant działań adnotacja, umieść kursor nad obszarem adnotacji w Projektancie działania, a następnie kliknij przycisk **Odepnij** ikony
 
-   ![Wyświetlane poza designe działań adnotacja](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![Adnotacje wyświetlana poza designe działania](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Pokazywanie lub ukrywanie wszystkie adnotacje
 

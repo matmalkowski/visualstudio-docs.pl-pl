@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8471728adda5bb141422833c96e0278fed8e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749817"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Kilka zebranych przykładów
 |||  
@@ -36,5 +37,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Opis reguły  
  Gdy używana jest metoda pobierania próbek, należy zebrać statystycznie duża liczba próbek, aby upewnić się, że dane reprezentują zachowanie rzeczywistych program. Aby zminimalizować próbkowania błędów, należy zebrać co najmniej 1000 przykłady sposób wykonywania instrukcji programu. Jeśli nie zbieraj wystarczającej liczby próbek, można możesz błąd podczas analizowania danych profilowania.  
   
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
  Należy wziąć pod uwagę profilowania już uruchamiania aplikacji lub użycie zwiększenia częstotliwości próbkowania w celu uzyskania statystycznie znaczących wyników. Aby dowiedzieć się, jak zmienić częstotliwość próbkowania w środowisku IDE programu Visual Studio, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md). Aby uzyskać więcej informacji o sposobie zmienić częstotliwość próbkowania, korzystając z wiersza polecenia narzędzi profilowania, zobacz [czasomierza](../profiling/timer.md) w [VSPerfCmd](../profiling/vsperfcmd.md) odwołania.

@@ -16,7 +16,7 @@ ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34548638"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych alokacji pamięci .NET i okresu istnienia

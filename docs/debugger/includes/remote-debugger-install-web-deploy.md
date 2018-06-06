@@ -14,10 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34794233"
 ---
 1. Jeśli zamierzasz wdrożyć aplikacji z narzędzia Web Deploy w programie Visual Studio, należy zainstalować najnowszą wersję narzędzia Web Deploy na serwerze.
 

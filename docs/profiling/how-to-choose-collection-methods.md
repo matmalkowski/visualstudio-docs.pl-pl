@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765392"
 ---
-# <a name="how-to-choose-collection-methods"></a>Porady: wybieranie metod kolekcji
+# <a name="how-to-choose-collection-methods"></a>Porady: Wybieranie metod kolekcji
 
 Visual Studio Profiling Tools obsługują trzy metody zbieranie danych o wydajności: pobierania próbek, Instrumentacja i współbieżności. Metoda próbkowanie lub instrumentację umożliwia również zbieranie danych pamięci .NET alokacji i okresem istnienia.
 
@@ -52,7 +53,7 @@ Można użyć sesję wydajności **metody** właściwości w celu określenia na
 
 1. W **Eksplorator wydajności**, wybierz sesję wydajności.
 
-     Nazwa pliku sesji wydajności ma rozszerzenie .psess.
+     Zawiera nazwę pliku sesji wydajności. *psess* rozszerzenia.
 
 2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.
 
@@ -80,7 +81,7 @@ Można użyć sesję wydajności **metody** właściwości w celu określenia na
 
 6. (Opcjonalnie) Kliknij przycisk **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** do zebrania informacji o pamięci generacji kolekcji, w których pamięci obiektu została odzyskana.
 
-     Aby uzyskać informacje o innych opcjach dostępnych podczas zbierania danych pamięci .NET, zobacz [zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Aby uzyskać informacje o innych opcjach dostępnych podczas zbierania danych pamięci .NET, zobacz [danych pamięci .NET zbieranie alokacji i okresem istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbierania danych współbieżności przy użyciu właściwości sesji wydajności
 
@@ -93,5 +94,5 @@ Można użyć sesję wydajności **metody** właściwości w celu określenia na
 ## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)  
+[Zrozumienie wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
 [Właściwości sesji wydajności](../profiling/performance-session-properties.md)

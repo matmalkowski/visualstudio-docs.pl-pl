@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b8e4d8b0a8ac7a2afbe0eb501ff496b3ade188
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b073640670d3e6e650fc4144c61e971c085aec2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749727"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Używaj StringBuilder do łączenia
 |||  
@@ -39,6 +40,6 @@ ms.lasthandoff: 04/19/2018
  Klasy StringBuilder jest obiektem modyfikowalne i, w odróżnieniu od typu System.String, większość metod na StringBuilder, które modyfikują wystąpienia tej klasy zwraca odwołanie do tego samego wystąpienia. Można wstawić znaki lub dołączać tekstu do wystąpienia klasy StringBuilder i usuń lub zastąp znaki w wystąpieniu bez konieczności podziału nowe wystąpienie i usunięcie oryginalnego wystąpienia.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych profilu. Znajdź sekcje programu, które wykorzystują najczęstsze ciągów. Użyj klasy StringBuilder do złożonych na ciągach, w tym operacje na ciągach częste łączenia.  
+ Kliknij dwukrotnie komunikat w **listy błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych profilu. Znajdź sekcje programu, które wykorzystują najczęstsze ciągów. Użyj klasy StringBuilder do złożonych na ciągach, w tym operacje na ciągach częste łączenia.  
   
  Aby uzyskać więcej informacji na temat pracy z ciągami [operacje na ciągach](http://go.microsoft.com/fwlink/?LinkId=177816) sekcji [rozdział 5 - poprawę wydajności kodu zarządzanego](http://go.microsoft.com/fwlink/?LinkId=177817) w bibliotece Microsoft Patterns and Practices.

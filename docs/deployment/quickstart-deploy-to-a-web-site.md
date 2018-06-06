@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766555"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikowanie witryny sieci web przy użyciu narzędzia Visual Studio publikowania aplikacji sieci web lub aplikacji .NET Core
 
@@ -26,9 +27,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi mieć Visual Studio 2017 r zainstalowany i **ASP.NET** i **.NET Framework** programowanie obciążenia. W przypadku aplikacji .NET Core należy również **.NET Core** obciążenia.
+* Musi mieć Visual Studio 2017 r zainstalowany i **ASP.NET i sieć web development** obciążenia i. **NET development pulpitu** obciążenia. W przypadku aplikacji .NET Core należy. **NET Core** obciążenia.
 
-    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
@@ -85,4 +86,4 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 W tym szybkiego startu wiesz, jak utworzyć profil publikowania za pomocą programu Visual Studio. Można również skonfigurować publikowanie profilu przez zaimportowanie ustawień publikowania.
 
 > [!div class="nextstepaction"]
-> [Importowanie ustawień publikowania i wdrażania usług IIS](tutorial-import-publish-settings-iis.md)
+> [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)

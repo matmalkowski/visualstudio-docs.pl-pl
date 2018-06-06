@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Powiązywanie formantów zawartości do niestandardowych części XML'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71fc9f944ec8861503f5518eec9edf33170bf050
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768095"
 ---
-# <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Wskazówki: powiązywanie kontrolek zawartości do niestandardowych części XML
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Wskazówki: Powiązywanie formantów zawartości do niestandardowych części XML
   W tym przewodniku pokazano, jak można powiązać formantów zawartości w dostosowaniu poziomie dokumentu dla programu Word do danych XML, który jest przechowywany w dokumencie.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -56,19 +57,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Word.  
   
-## <a name="creating-a-new-word-document-project"></a>Tworzenie nowego projektu dokument programu Word  
+## <a name="create-a-new-word-document-project"></a>Tworzenie nowego projektu dokument programu Word  
  Utwórz dokument programu Word, która będzie używana w tym przewodnikiem.  
   
-#### <a name="to-create-a-new-word-document-project"></a>Aby utworzyć nowy projekt dokument programu Word  
+### <a name="to-create-a-new-word-document-project"></a>Aby utworzyć nowy projekt dokument programu Word  
   
-1.  Tworzenie projektu dokument programu Word o nazwie **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu dokument programu Word o nazwie **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **EmployeeControls** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-content-controls-to-the-document"></a>Dodawanie formantów zawartości do dokumentu  
+## <a name="add-content-controls-to-the-document"></a>Dodawanie formantów zawartości do dokumentu  
  Utwórz tabelę, która zawiera trzy różne typy formantów zawartości, gdy użytkownik umożliwia wyświetlenie i edytowanie informacji na temat pracownika.  
   
-#### <a name="to-add-content-controls-to-the-document"></a>Do dodawania formantów zawartości do dokumentu  
+### <a name="to-add-content-controls-to-the-document"></a>Do dodawania formantów zawartości do dokumentu  
   
 1.  W dokumencie programu Word, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, na Wstążce wybierz **Wstaw** kartę.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
  To cały interfejs użytkownika dla tego projektu. Po uruchomieniu projektu można teraz, wpisz tekst w pierwszym wierszu i wybierz datę w drugim wierszu. Następnym krokiem jest, aby dołączyć dane, które mają być wyświetlane w dokumencie w pliku XML.  
   
-## <a name="creating-the-xml-data-file"></a>Tworzenie pliku danych XML  
+## <a name="create-the-xml-data-file"></a>Tworzenie pliku danych XML  
  Zazwyczaj uzyska dane XML mają być przechowywane w niestandardowym elementem XML ze źródła zewnętrznego, takiego jak plik lub bazy danych. W tym przewodniku należy utworzyć plik XML, który zawiera dane dotyczące pracowników, oznaczone przez elementy powiązane z formantami zawartości w dokumencie. Aby udostępnić dane w czasie wykonywania, Osadź plik XML jako zasób w zestawie dostosowania.  
   
 #### <a name="to-create-the-data-file"></a>Aby utworzyć plik danych  
@@ -118,7 +119,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Zastąp zawartość **employees.xml** pliku z następującym tekstem.  
   
-    ```  
+    ```xml 
     <?xml version="1.0" encoding="utf-8" ?>  
     <employees xmlns="http://schemas.microsoft.com/vsto/samples">  
       <employee>  
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
      Ten krok plik XML są osadzony jako zasób w zestawie podczas kompilowania projektu. Dzięki temu można uzyskać dostęp do zawartości pliku XML w czasie wykonywania.  
   
-## <a name="creating-an-xml-schema"></a>Tworzenie schematu XML  
+## <a name="create-an-xml-schema"></a>Tworzenie schematu XML  
  Jeśli chcesz powiązać formant zawartości do pojedynczego elementu w niestandardowym elementem XML, nie trzeba użyć schematu XML. Jednak aby powiązać <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> zbiór wartości, należy utworzyć schemat XML, która weryfikuje pliku danych XML, który został utworzony wcześniej. Schemat XML definiuje możliwe wartości `title` elementu. Zostanie powiązany <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> do tego elementu w dalszej części tego przewodnika.  
   
 #### <a name="to-create-an-xml-schema"></a>Aby utworzyć schematu XML  
@@ -154,7 +155,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zastąp zawartość **employees.xsd** pliku z następującego schematu.  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8" ?>  
     <xs:schema xmlns="http://schemas.microsoft.com/vsto/samples"   
         targetNamespace="http://schemas.microsoft.com/vsto/samples"  
@@ -185,10 +186,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko** Aby zapisać zmiany, aby **employees.xml** i **employees.xsd** plików.  
   
-## <a name="attaching-the-xml-schema-to-the-document"></a>Dołączanie schematu XML do dokumentu  
+## <a name="attach-the-xml-schema-to-the-document"></a>Dołącz do dokumentu schematu XML  
  Należy dołączyć schematu XML do dokumentu, aby powiązać <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> prawidłowe wartości z `title` elementu.  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Aby dołączyć do dokumentu schematu XML ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Aby dołączyć do dokumentu schematu XML ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Aktywuj **EmployeeControls.docx** w projektancie.  
   
@@ -202,7 +203,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Wybierz **OK** przycisk, aby zamknąć **szablony i dodatki** okno dialogowe.  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>Aby dołączyć schematu XML do dokumentu (Word 2010)  
+### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>Aby dołączyć schematu XML do dokumentu (Word 2010)  
   
 1.  Aktywuj **EmployeeControls.docx** w projektancie.  
   
@@ -222,10 +223,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Zamknij **struktury XML** okienka zadań.  
   
-## <a name="adding-a-custom-xml-part-to-the-document"></a>Dodawanie części niestandardowy plik XML do dokumentu  
+## <a name="add-a-custom-xml-part-to-the-document"></a>Dodawanie niestandardowych części XML do dokumentu  
  Aby można powiązać formantów zawartości do elementów w pliku XML, należy dodać zawartość pliku XML nowe niestandardowym elementem XML w dokumencie.  
   
-#### <a name="to-add-a-custom-xml-part-to-the-document"></a>Aby dodać z niestandardowym elementem XML do dokumentu  
+### <a name="to-add-a-custom-xml-part-to-the-document"></a>Aby dodać z niestandardowym elementem XML do dokumentu  
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów **ThisDocument.cs** lub **ThisDocument.vb**, a następnie wybierz pozycję **kod widoku**.  
   
@@ -246,32 +247,32 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]  
   
-## <a name="binding-the-content-controls-to-elements-in-the-custom-xml-part"></a>Powiązanie formantów zawartości do elementów w ramach niestandardowy plik XML  
+## <a name="bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Powiązanie formantów zawartości do elementów w niestandardowym elementem XML  
  Powiązanie każdego formantu zawartości elementu w niestandardowym elementem XML przy użyciu **XMLMapping** właściwości każdego formantu zawartości.  
   
-#### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Powiązanie formantów zawartości do elementów w niestandardowym elementem XML  
+### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Powiązanie formantów zawartości do elementów w niestandardowym elementem XML  
   
 1.  Dodaj następującą metodę do `ThisDocument` klasy. Ta metoda wiąże każdego formantu zawartości elementu w niestandardowym elementem XML i ustawia format wyświetlania daty <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  
   
-## <a name="running-your-code-when-the-document-is-opened"></a>Uruchamianie swój kod gdy dokument jest otwarty.  
+## <a name="run-your-code-when-the-document-is-opened"></a>Uruchomić kod po otwarciu dokumentu  
  Tworzenie niestandardowych części XML i powiązanie formantów niestandardowych do danych, po otwarciu dokumentu.  
   
-#### <a name="to-run-your-code-when-the-document-is-opened"></a>Aby uruchomić kod po otwarciu dokumentu  
+### <a name="to-run-your-code-when-the-document-is-opened"></a>Aby uruchomić kod po otwarciu dokumentu  
   
 1.  Dodaj następujący kod do `ThisDocument_Startup` metody `ThisDocument` klasy. Ten kod pobiera ciąg XML z **employees.xml** plik, dodaje nowe niestandardowym elementem XML w dokumencie ciągu XML i wiąże formantów zawartości do elementów w niestandardowym elementem XML.  
   
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]  
   
-## <a name="testing-the-project"></a>Testowanie projektu  
+## <a name="test-the-project"></a>Projekt testowy  
  Po otwarciu dokumentu formantów zawartości wyświetlane dane z elementów w niestandardowym elementem XML. Możesz kliknąć <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> można wybrać jedną z trzech prawidłowymi wartościami dla `title` element, który zdefiniowano w **employees.xsd** pliku. Po zmodyfikowaniu dane w jednym z formantów zawartości nowe wartości są zapisywane w niestandardowym elementem XML w dokumencie.  
   
-#### <a name="to-test-the-content-controls"></a>Aby przetestować formanty zawartości  
+### <a name="to-test-the-content-controls"></a>Aby przetestować formanty zawartości  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** uruchomić projekt.  
   
 2.  Sprawdź, czy tabela w dokumencie przypomina poniższej tabeli. Każdy z ciągów w drugiej kolumnie są uzyskiwane z elementu w niestandardowym elementem XML w dokumencie.  
   
@@ -289,13 +290,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  Zapisz i zamknij dokument.  
   
-7.  W Eksploratorze plików otwórz folder \bin\Debug znajdujące się w lokalizacji projektu.  
+7.  Otwórz w Eksploratorze plików *\bin\Debug* folderu w lokalizacji projektu.  
   
 8.  Otwórz menu skrótów **EmployeeControls.docx** , a następnie wybierz **zmienić**.  
   
 9. Nadaj nazwę plikowi **EmployeeControls.docx.zip**.  
   
-     **EmployeeControls.docx** dokumentu jest zapisywany w formacie Open XML. Zmieniając tego dokumentu z rozszerzeniem nazwy pliku zip, można sprawdzić zawartość dokumentu. Aby uzyskać więcej informacji na temat Open XML, zobacz artykuł techniczny [wprowadzenie (2007) formaty Office Open XML pliku](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **EmployeeControls.docx** dokumentu jest zapisywany w formacie Open XML. Zmieniając ten dokument z *.zip* rozszerzenia nazwy pliku można sprawdzić zawartość dokumentu. Aby uzyskać więcej informacji na temat Open XML, zobacz artykuł techniczny [wprowadzenie (2007) pakietu Office Open XML formatów plików](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf).  
   
 10. Otwórz **EmployeeControls.docx.zip** pliku.  
   
@@ -318,13 +319,13 @@ ms.lasthandoff: 04/16/2018
   
 -   Użyj formantów zawartości do ochrony części dokumentu. Aby uzyskać więcej informacji, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
  [Porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750743"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 
@@ -63,11 +64,11 @@ Gdy ponownie docelowego Twoje projekty testowe do wcześniejszych wersji program
 
 5.  Na **skompilować** , wybierz pozycję **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.
 
-     ![Zaawansowane opcje kompilacji](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Opcje zaawansowane kompilacji](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Użyj **platformy docelowej (wszystkie konfiguracje)** listy rozwijanej, aby zmienić platformę docelową, aby **.NET Framework 3.5** lub nowszej wersji, jak pokazano na poniższej ilustracji, objaśnienia B. Nie należy określać wersji klienta.
 
-     ![Docelowy framework upuszczania&#45;pozycji listy](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Docelowy framework upuszczania&#45;w dół listy](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Ponownego określenia wartości docelowej do określonej wersji programu .NET Framework dla programu Visual C# projektów testów jednostkowych
 
@@ -85,7 +86,7 @@ Gdy ponownie docelowego Twoje projekty testowe do wcześniejszych wersji program
 
 5.  Na **aplikacji** , wybierz pozycję **platformy docelowej**. Z listy rozwijanej wybierz **.NET Framework 3.5** lub nowszej wersji, jak pokazano na poniższej ilustracji. Nie należy określać wersji klienta.
 
-     ![Docelowy framework upuszczania&#45;pozycji listy](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Docelowy framework upuszczania&#45;w dół listy](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Ponownego określenia wartości docelowej do określonej wersji programu .NET Framework dla języka C + +/ projektów testów jednostkowych interfejsu wiersza polecenia
 

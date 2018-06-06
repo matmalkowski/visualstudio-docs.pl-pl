@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749479"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza systemu Windows z DSL, używając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2") wystąpienia A DSL, wyświetlanie interfejsu użytkownika formularza systemu Windows i Eksplorator modelu.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) wystąpienia A DSL, wyświetlanie interfejsu użytkownika formularza systemu Windows i Eksplorator modelu.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Tworzenie formularzy systemu Windows DSL
  **Minimalnego projektanta formularza systemu Windows** DSL szablon tworzy minimalnego DSL, który można dostosować do swoich własnych wymagań.
@@ -68,7 +69,7 @@ Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka s
 ## <a name="updating-the-dsl-definition"></a>Aktualizowanie definicji DSL
  Następujące definicji DSL jest używana w tym przewodniku.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Aby zaktualizować definicję DSL
 
@@ -127,7 +128,7 @@ Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka s
 
      Właściwości i relacje klasy modelu są wyświetlane w oknie źródeł danych.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Aby połączyć modelu do formularza
 
@@ -172,7 +173,7 @@ Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka s
 
 -   Zapewnia, że po wybraniu wiersza okna właściwości wyświetla właściwości odpowiadający mu element modelu, zamiast wiersza siatki danych.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") schematu łącza między źródłami danych i widoków.
+ ![DslWpf4](../modeling/media/dslwpf4.png) schematu łącza między źródłami danych i widoków.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Aby ukończyć powiązania z DSL
 
@@ -301,7 +302,7 @@ Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka s
 
      Można edytować nazwy elementu w widoku siatki danych. Można również usunąć z tego miejsca.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Kod, aby dodać element — informacje
  Nowy element przycisków poniższy kod alternatywnych jest nieco prostsze.

@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f2b7f930a4e58eb3c14380df16892e92a870f5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749362"
 ---
-# <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries — Funkcja
+# <a name="cvreleasemarkerseries-function"></a>Cvreleasemarkerseries — funkcja
 Zwalnia serii znacznika. Nie używaj obiekt serii znacznika po inaczej wydanie aplikacji mogą ulec awarii. Błąd zwolnienia serii znacznika spowoduje przeciek pamięci.  
   
 ## <a name="syntax"></a>Składnia  
@@ -39,7 +40,7 @@ HRESULT CvReleaseMarkerSeries(
  S_OK pomyślnie zwolnieniu serii znacznika lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

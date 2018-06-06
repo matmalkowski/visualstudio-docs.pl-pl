@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Excel | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767913"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Excel
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Excel
   W tym przewodniku przedstawiono powiązywanie danych do kontrolek okienku akcji programu Microsoft Office Excel. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   Uprawnienia do odczytu i zapisu w bazie danych programu SQL Server.  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  Pierwszym krokiem jest utworzenie projektu skoroszyt programu Excel.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje okienku akcji programu Excel**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje okienku akcji programu Excel**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje okienku akcji programu Excel** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>Dodawanie nowego źródła danych do projektu  
+## <a name="add-a-new-data-source-to-the-project"></a>Dodaj nowe źródło danych do projektu  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>Aby dodać nowego źródła danych do projektu  
+### <a name="to-add-a-new-data-source-to-the-project"></a>Aby dodać nowego źródła danych do projektu  
   
-1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku**, **inne okna**, **źródeł danych**.  
+1.  Jeśli **źródeł danych** okno nie jest widoczny, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
   
 2.  Wybierz **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  Kreator dodaje **dostawców** tabeli i **produktów** do tabeli **źródeł danych** okna. Dodano również typizowanego zestaw danych do projektu, które są widoczne w **Eksploratora rozwiązań**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
+## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  Następnie dodaj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli i <xref:Microsoft.Office.Tools.Excel.ListObject> formantu do pierwszego arkusza.  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Aby dodać formantu NamedRange i ListObject — formant  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Aby dodać formantu NamedRange i ListObject — formant  
   
 1.  Sprawdź, czy **Moje Pane.xlsx akcji programu Excel** skoroszyt jest otwarty w projektancie programu Visual Studio z `Sheet1` wyświetlane.  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  Język C# tylko, wybierz **suppliersBindingSource** na składnik na pasku zadań, a następnie zmień **Modyfikatory** właściwości **wewnętrzne** w **właściwości** okna.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka Akcje  
- Następnie należy formantu w okienku Akcje, który zawiera pola kombi.  
+## <a name="add-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka Akcje  
+ Następnie należy kontrolkę w okienku akcji, która ma pola kombi.  
   
-#### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolkę okienka Akcje  
+### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolkę okienka Akcje  
   
 1.  Wybierz **Moje okienku akcji programu Excel** projektu w **Eksploratora rozwiązań**.  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **formant okienka Akcje**, nadaj jej nazwę **ActionsControl**i kliknij przycisk **Dodaj**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać formanty formularzy systemu Windows z danymi z formantem w okienku Akcje  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać formanty formularzy systemu Windows z danymi z formantem w okienku Akcje  
   
 1.  Z **formanty standardowe** karty **przybornika**, przeciągnij <xref:System.Windows.Forms.ComboBox> formant do formantu w okienku Akcje.  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zmień rozmiar formantu użytkownika w celu dopasowania pola kombi.  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Powiązanie z danymi formantu w okienku Akcje  
- W tej sekcji ustawi źródło danych <xref:System.Windows.Forms.ComboBox> do tego samego źródła danych jako <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu w arkuszu.  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Powiązanie z danymi formantu w okienku Akcje  
+ W tej sekcji będziesz Ustaw źródło danych <xref:System.Windows.Forms.ComboBox> do tego samego źródła danych jako <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu w arkuszu.  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>Aby ustawić właściwości wiązania danych formantu  
+### <a name="to-set-data-binding-properties-of-the-control"></a>Aby ustawić właściwości wiązania danych formantu  
   
 1.  Kliknij prawym przyciskiem myszy formant okienka Akcje, a następnie kliknij przycisk **kod widoku**.  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>Wyświetlanie w okienku Akcje  
- W okienku Akcje nie jest widoczny, do momentu dodania formantu w czasie wykonywania.  
+## <a name="show-the-actions-pane"></a>Umożliwia wyświetlenie okienka Akcje  
+ W okienku Akcje nie są widoczne do momentu dodania formantu w czasie wykonywania.  
   
 #### <a name="to-show-the-actions-pane"></a>Aby wyświetlić w okienku Akcje  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ThisWorkbook.vb lub ThisWorkbook.cs, a następnie kliknij przycisk **kod widoku**.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *ThisWorkbook.vb* lub *ThisWorkbook.cs*, a następnie kliknij przycisk **kod widoku**.  
   
 2.  Tworzenie nowego wystąpienia kontrolki użytkownika w `ThisWorkbook` klasy.  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować dokumencie, aby sprawdzić, czy po otwarciu dokumentu zostanie otwarty w okienku Akcje i czy formanty mają relacji wzorzec/szczegół.  
   
-#### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
+### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Upewnij się, że widoczne jest okienko akcji.  
   
@@ -183,11 +184,11 @@ ms.lasthandoff: 04/16/2018
   
 -   Wiązanie danych do kontrolek w programie Word. Aby uzyskać więcej informacji, zobacz [wskazówki: wiązanie danych do kontrolek okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
--   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office za pomocą technologii ClickOnce za pomocą](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
  [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

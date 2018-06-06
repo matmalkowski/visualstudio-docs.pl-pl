@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691982"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765008"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strony aplikacji* prowadzi do strony sieci Web ASP.NET, który jest przeznaczony do użytku w witrynie sieci Web programu SharePoint. Strony aplikacji są specjalistyczną odmianą strony ASP.NET. Główną różnicą między aplikacji i standardowe strony ASP.NET jest, że strony aplikacji zawiera zawartość, która jest scalany z strony wzorcowej programu SharePoint. Strona wzorcowa umożliwia stron aplikacji do udostępniania tego samego wygląd i zachowanie jako innych stron w witrynie.  
   
  Program Visual Studio pozwala projektować stron aplikacji za pomocą projektanta. Projektant wyświetla obszar zawartości każdego symbolu zastępczego zawartości, która jest zdefiniowana w strony wzorcowej. Strony aplikacji można projektować, przeciągając kontrolek do tych obszarów zawartości.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691982"
   
 |Plik|Opis|  
 |----------|-----------------|  
-|Plik strony ASP.NET (aspx)|Zawiera kod znaczników XML, który definiuje stronę.|  
+|Plik strony ASP.NET (*.aspx*)|Zawiera kod znaczników XML, który definiuje stronę.|  
 |Plik kodu strony aplikacji|Zawiera kod związany z strony aplikacji. Dodaj kod, który obsługuje zdarzenia do tego pliku.|  
 |Plik kodu projektanta strony aplikacji|Zawiera kod, który jest generowany przez projektanta. Nie należy bezpośrednio edytować ten plik.|  
   

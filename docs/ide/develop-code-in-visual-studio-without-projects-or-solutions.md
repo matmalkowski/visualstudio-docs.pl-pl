@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746030"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Opracuj kodu w programie Visual Studio bez projektów i rozwiązań
 
@@ -65,7 +66,7 @@ Poniższy przykład pokazuje, jak można sklonować repozytorium GitHub, a nast�
 
 |         |         |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")|    [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) dotyczące klonowania i otworzyć kodu z repozytorium GitHub, w programie Visual Studio. |
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png)|    [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) dotyczące klonowania i otworzyć kodu z repozytorium GitHub, w programie Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Uruchom i debugowanie kodu
 
@@ -112,7 +113,7 @@ Jeśli folder kod zawiera projektu programu Visual Studio, możesz wyznaczyć pr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dostosowywanie kompilacji i debugowanie zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [Dostosowywanie zadań kompilacji i debugowania](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Otwórz Folder projektów dla języka C++](/cpp/ide/non-msbuild-projects)
 - [CMake projektów w języku C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md)

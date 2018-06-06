@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751887"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Porady: analizowanie błędów za pomocą panelu liczników
 
@@ -22,7 +23,7 @@ Panel liczników jest widoczny w widokach Wykresy i Tabele w Analizatorze testu 
 
  **Błędy** węzeł w panelu liczników zawiera wszystkie błędy, które zostały wykryte podczas testu obciążenia. Węzeł błędów zawiera podkategorii błąd kilka węzłów, które są specyficzne dla różnych typów błędów. Na przykład **wyjątki** i **błędy HTTP**.
 
- ![Panel liczników błąd węzła](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Węzeł błędu panelu liczników](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>Do analizowania błędów w panelu liczników
 

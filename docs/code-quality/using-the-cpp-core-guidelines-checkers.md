@@ -9,11 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 607b4f2d96e809f9c8b5aedf8362c5d5f54e097d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8b031fc1251ad06fdba154c086696337e552445
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747407"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Przy użyciu programy wytyczne Core C++
 Wskazówki Core C++ są przenośny zestaw wskazówki, reguł i najlepsze rozwiązania dotyczące pisania kodu w języku C++ utworzone przez ekspertów C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł jako część jej narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakietu NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
@@ -24,11 +25,11 @@ Wskazówki Core C++ są przenośny zestaw wskazówki, reguł i najlepsze rozwią
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Włącz C++ podstawowe sprawdzanie wskazówki zawarte w analizy kodu
  Można włączyć analizy kodu w projekcie, wybierając **Włącz analizę kodu podczas kompilacji** checkbox w **analizy kodu** sekcji **strony właściwości** okno dialogowe projektu.
 
- ![Strony właściwości dla ustawienia ogólne analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Strony właściwości dla ustawienia ogólne analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Sprawdź Core C++ reguły są rozszerzenia do zestawów reguł domyślne uruchamianych podczas analizy kodu jest włączone. Ponieważ zasady Sprawdź Core C++ są opracowywane, niektóre reguły są utrwalonego, a niektóre może nie być gotowy do użycia na cały kod, ale nadal mogą służyć jako źródło informacji. Reguły są podzielone na dwie grupy: zwolniono i eksperymentalne. Możesz wybrać, czy do uruchamiania zasady zwolniony lub eksperymentalne we właściwościach projektu.
 
- ![Strony właściwości dla ustawień rozszerzenia analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Strony właściwości dla ustawień rozszerzenia analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Aby włączyć lub wyłączyć zestawy reguł sprawdzania Core C++, otwórz **strony właściwości** okna dialogowego dla projektu. W obszarze **właściwości konfiguracji**, rozwiń węzeł **analizy kodu**, **rozszerzenia**. W menu rozwijanym obok pozycji kontroli **włączyć sprawdzanie Core C++ (zwolnione)** lub **włączyć sprawdzanie Core C++ (eksperymentalne)**, wybierz **tak** lub **nr**. Wybierz **OK** lub **Zastosuj** Aby zapisać zmiany.
 
@@ -241,7 +242,7 @@ Należy ustawić kilka zmienne środowiskowe i odpowiednie opcje wiersza polecen
 
 2.  W **Menedżera pakietów NuGet** okna, wyszukiwanie Microsoft.CppCoreCheck.
 
-     ![Okno Menedżera pakietów Nuget zawiera pakiet CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Pakiet CppCoreCheck Pokazuje okno Menedżera pakietów Nuget](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Wybierz pakiet Microsoft.CppCoreCheck, a następnie wybierz pozycję **zainstalować** przycisk, aby dodać reguły do projektu.
 

@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748377"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznego dla domeny (DSL) utworzone za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK, można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.
@@ -29,7 +30,7 @@ W języku specyficznego dla domeny (DSL) utworzone za pomocą [!INCLUDE[vsprvs](
 
  Ta reguła dotyczy rekursywnie skopiowane elementy i łącza.
 
- ![Skopiować i wkleić elementy](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Elementy skopiowane i wklejone](../modeling/media/dslcopypastedefault.png)
 
  Skopiowane elementy i łącza są serializowane i przechowywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), który znajduje się w Schowku.
 
@@ -217,7 +218,7 @@ Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-
 ##  <a name="customizeLinks"></a> Dostosowywanie zachowania Kopiuj Link
  Gdy użytkownik kopiuje element, standardowe zachowanie jest wszelkie elementy osadzone są również kopiowane. Można zmodyfikować standard kopiowanie zachowanie. W definicji DSL, wybierz rolę po jednej stronie relacji i w zestawie okna właściwości **propaguje kopiowania** wartość.
 
- ![Propaguje właściwości kopii roli domeny](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propaguje właściwości kopii roli domeny](../modeling/media/dslpropagatescopy.png)
 
  Istnieją trzy wartości:
 
@@ -227,7 +228,7 @@ Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-
 
 -   Propagacja kopiowania, aby połączyć i przeciwne obiektu pełniącego rolę - skopiowane grupa zawiera kopię elementu na drugim końcu łącza.
 
- ![Efekt kopiowania z PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Kopiowanie z PropagateCopyToLinkOnly wpływu](../modeling/media/dslpropagatecopy.png)
 
  Wprowadzane zmiany będzie miało wpływ na zarówno elementy, jak i obraz, który jest skopiowany.
 
@@ -237,9 +238,9 @@ Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-
 > [!TIP]
 >  Aby uzyskać więcej informacji dotyczących dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagram sekwencji dla operacji kopiowania](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagram sekwencji dla operacji kopiowania](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagram sekwencji operacji wklejania](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagram sekwencji operacji wklejania](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Aby zdefiniować własny ElementOperations
 

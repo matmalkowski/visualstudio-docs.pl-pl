@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0424c6561b063b17f384215021a1300122dcbb1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd566eacba7f94cfe7617e9396440c90dc32f51e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767141"
 ---
-# <a name="how-to-add-a-creator-method"></a>Porady: dodawanie metody Creator
-  Metody Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybiorą **nowy element** na Wstążce listę, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-creator-method"></a>Porady: Dodawanie metody Creator
+  Metody Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybiorą **nowy element** znajdującego się na **wstążki** listy, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Aby dodać metody Creator  
   
-1.  W Projektancie BDC wybierz jednostkę.  
+1.  Na **projektanta BDC**, wybierz jednostki.  
   
-2.  Na pasku menu wybierz **widoku**, **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
+2.  Na pasku menu wybierz **widoku** > **inne okna** >**szczegóły metody usługi łączności danych biznesowych**.  
   
      **Szczegóły metody usługi łączności danych biznesowych** zostanie otwarte okno. Aby uzyskać więcej informacji dotyczących tego okna, zobacz [omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
      [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   

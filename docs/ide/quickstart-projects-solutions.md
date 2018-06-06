@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747511"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
@@ -57,7 +58,7 @@ Teraz możemy dodać nasze pierwszego projektu do rozwiązania. Firma Microsoft 
 
    **Dodawanie nowego projektu** zostanie otwarte okno dialogowe.
 
-1. W okienku po lewej stronie rozwiń **Visual C#** i wybierz polecenie **Windows Desktop klasycznego**. Następnie w środkowym okienku wybierz **pusty projekt (.NET Framework)**. Nazwa projektu "QuickDate", a następnie wybierz pozycję **OK** przycisku.
+1. W okienku po lewej stronie rozwiń **Visual C#** i wybierz polecenie **Windows Desktop**. Następnie w środkowym okienku wybierz **pusty projekt (.NET Framework)**. Nazwa projektu "QuickDate", a następnie wybierz pozycję **OK** przycisku.
 
    Projekt o nazwie "QuickDate" pojawia się poniżej rozwiązania w **Eksploratora rozwiązań**. Obecnie zawiera jednego pliku o nazwie *App.config*.
 

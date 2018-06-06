@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692525"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764923"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości i list dla SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości i list dla SharePoint
   Program Visual Studio udostępnia szablony elementów projektu dla wielu różnych podstawowych elementów programu SharePoint, w tym *wymieniono* i *typy zawartości*, które można zastosować kolumny witryny (lub  *pola*). Nowych Designer dla typów zawartości oraz list należy tworzenia tych elementów jest łatwiejsze niż kiedykolwiek wcześniej.  
   
 ## <a name="site-columns"></a>Kolumny witryny
  Kolumny witryny są jednym z najbardziej podstawowe elementy, które można dodać do projektu SharePoint. Kolumny witryny reprezentuje typ danych, takich jak numer telefonu, komentarza lub nazwę miejscowości kontaktu w listy kontaktów.  
   
- Nowy szablon elementu projektu kolumn witryny ułatwia tworzenie kolumn witryn niż w starszej wersji programu Visual Studio. Po utworzeniu nowej kolumny witryny, można zmodyfikować kod XML w pliku Elements.xml kolumny witryny, aby uwzględnić informacje, takie jak jego nazwa wyświetlana, jego typu danych i grupy, w której ma zostać kolumny lokacji, która ma występować w programie SharePoint. Aby uzyskać więcej informacji na temat kolumny witryny, zobacz [wprowadzenie do kolumn](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Nowy szablon elementu projektu kolumn witryny ułatwia tworzenie kolumn witryn niż w starszej wersji programu Visual Studio. Po utworzeniu nowej kolumny witryny, można zmodyfikować kod XML w kolumnie lokacji *Elements.xml* pliku, aby uwzględnić informacje, które mają, takie jak jego nazwa wyświetlana, jego typu danych i grupy, w której ma zostać kolumny witryny w wynikach Programu SharePoint. Aby uzyskać więcej informacji na temat kolumny witryny, zobacz [wprowadzenie do kolumn](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Typy zawartości oraz list
  Typy zawartości oraz list należą do często używanych elementów w programie SharePoint.  

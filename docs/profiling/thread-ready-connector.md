@@ -18,7 +18,7 @@ ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34476654"
 ---
 # <a name="thread-ready-connector"></a>Łącznik gotowego wątku

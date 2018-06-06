@@ -22,11 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745939"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 ADO.NET udostępnia prosty metody pracy z danymi XML. W tym przewodniku tworzenia aplikacji systemu Windows, który ładuje dane XML do zestawu danych. Zestaw danych są następnie wyświetlane <xref:System.Windows.Forms.DataGridView> formantu. Na koniec schematu XML na podstawie zawartości pliku XML jest wyświetlana w polu tekstowym.
@@ -53,7 +54,7 @@ ADO.NET udostępnia prosty metody pracy z danymi XML. W tym przewodniku tworzeni
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **aplikacji formularzy systemu Windows** typu projektu.
 

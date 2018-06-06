@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746819"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze systemu Windows)
 Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
@@ -37,7 +38,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
 2.  Na **widoku** menu, wybierz opcję **inne okna** > **źródeł danych**.
 
-     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png)
 
 3.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
@@ -59,7 +60,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
 9. W **Dodawanie połączenia** okno dialogowe, wybierz opcję **Microsoft Office 12.0 dostępu do bazy danych aparatu OLE DB Provider** z **dostawcy OLE DB** listy rozwijanej.
 
-     ![OLE DB dostawcy programu Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB dostawcy programu Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Jeśli nie widzisz **Microsoft Office 12.0 dostępu do bazy danych aparatu OLE DB Provider** w dostawcy OLE DB listy rozwijanej, należy zainstalować [sterownik systemu Office 2007: składniki łączności danych](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
 2.  Na **widoku** menu, wybierz opcję **inne okna** > **źródeł danych**.
 
-     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Wyświetlać innych źródeł danych systemu Windows](../data-tools/media/viewdatasources.png)
 
 3.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.
 
@@ -103,7 +104,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
 8.  W **nazwa pliku bazy danych**, określ ścieżkę i nazwę pliku MDB chcesz nawiązać połączenie, a następnie wybierz **OK**.
 
-     ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Wybierz **dalej** na **wybierz połączenie danych** strony.
 

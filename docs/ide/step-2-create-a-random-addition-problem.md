@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747870"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2: Utworzenie problemu losowego dodawania
 W drugiej części tego samouczka należy kwizu trudne, dodając matematyczne problemów, które są oparte na liczb losowych. Możesz również utworzyć metodę o nazwie `StartTheQuiz()` i który wypełnia problemów i uruchamia czasomierza odliczania. W dalszej części tego samouczka możesz dodać odejmowania, mnożenia i dzielenia problemów.
@@ -59,7 +60,7 @@ W drugiej części tego samouczka należy kwizu trudne, dodając matematyczne pr
 
      Zwróć uwagę, że po wprowadzeniu kropkę (.) po `randomizer` w kodzie, okno IntelliSense otwiera i zawiera wszystkie metody obiektu losowych, które można wywołać. Na przykład IntelliSense wyświetla `Next()` metody, w następujący sposób.
 
-     ![Next — metoda](../ide/media/express_randomwhite.png "Express_RandomWhite") Next — metoda
+     ![Next — metoda](../ide/media/express_randomwhite.png) Next — metoda
 
      Po wprowadzeniu kropkę po obiekt IntelliSense zawiera listę elementów członkowskich obiektu, takie jak właściwości, metod i zdarzeń.
 
@@ -88,7 +89,7 @@ W drugiej części tego samouczka należy kwizu trudne, dodając matematyczne pr
 
      Problemu losowego dodawania pojawia się, jak przedstawiono na poniższej ilustracji.
 
-     ![Problemu losowego dodawania](../ide/media/express_additionproblem.png "Express_AdditionProblem") problem dodawania losowe
+     ![Problemu losowego dodawania](../ide/media/express_additionproblem.png) problem dodawania losowe
 
      W następnym kroku samouczka zostanie dodana suma.
 

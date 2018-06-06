@@ -9,7 +9,7 @@ ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693695"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Wprowadzenie do programu Visual Studio dla komputerów Mac

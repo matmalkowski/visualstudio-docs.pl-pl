@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f745033ecb88fd70de4c7150dc5ae3165ab3c99b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746328"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Porady: tworzenie cieniowania tekstury skali szarości
 
 W tym artykule przedstawiono sposób użycia języka programu do cieniowania wykres skierowane (DGSL) i Projektant programu do cieniowania można utworzyć cieniowania tekstury skali szarości. Ten program do cieniowania Modyfikuje wartości kolorów RGB próbki tekstury, a następnie używa go wraz z wartością alfa zostały zmodyfikowane, aby ustawić kolor końcowy.
 
-## <a name="create-a-grayscale-texture-shader"></a>Utwórz cieniowania tekstury skali szarości
+## <a name="create-a-grayscale-texture-shader"></a>Tworzenie cieniowania tekstury skali szarości
 
 Przed przystąpieniem do napisania go na kolor ostateczne dane wyjściowe, zmieniając wartość koloru próbki tekstury, można zaimplementować cieniowania tekstury skali szarości.
 
@@ -44,7 +45,7 @@ Na poniższej ilustracji przedstawiono ukończone programu do cieniowania wykres
 > [!NOTE]
 > Na tej ilustracji płaszczyźnie jest używany jako kształtu podglądu, a określono tekstury lepiej wykazać efekt programu do cieniowania.
 
-![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-grayscale-effect.png "cyfrę skali szarości efektu")
+![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-grayscale-effect.png)
 
 Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wyświetlania podglądu programów do cieniowania w projektancie programu do cieniowania, zobacz [Designer programu do cieniowania](../designers/shader-designer.md)
 

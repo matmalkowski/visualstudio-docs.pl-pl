@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747004"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 *N-warstwowa* dane aplikacji są aplikacjom dostęp do danych i są podzielone na kilka logicznych warstw, lub *warstw*. Rozdzielić składniki aplikacji odrębny warstw zwiększa łatwość konserwacji i skalowalność aplikacji. Robi to przez włączenie ułatwia przyjęcie nowych technologii, które można zastosować do pojedynczej warstwie bez konieczności ponownego zaprojektowania całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji warstwy środkowej i warstwy danych. Warstwy środkowej obejmują zazwyczaj Warstwa dostępu do danych, warstwy logiki biznesowej i udostępniane składniki, takie jak uwierzytelniania i weryfikacji. Warstwa danych zawiera relacyjnej bazy danych. Aplikacje warstwowe zwykle przechowuj poufnych informacji w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Podczas tego przewodnika wykonasz następujące czynności:
 
 -   Pisanie kodu do wypełniania danych w tabelach.
 
-![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") wersję wideo tego tematu, zobacz [wideo sposobu: tworzenie aplikacji warstwowych dane](http://go.microsoft.com/fwlink/?LinkId=115188).
+![łącze do wideo](../data-tools/media/playvideo.gif) wersję wideo tego tematu, zobacz [wideo sposobu: tworzenie aplikacji warstwowych dane](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
@@ -78,7 +79,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
 
-2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop klasycznego**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
 3. W środkowym okienku wybierz **biblioteki klas** typu projektu.
 
@@ -289,7 +290,7 @@ W tym przewodniku pokazano, jak dostęp do warstwy dostępu do danych za pomocą
 
 1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj**, **nowy projekt...** .
 
-2.  W **nowy projekt** okno dialogowe, w okienku po lewej stronie wybierz **Windows Desktop klasycznego**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows**.
+2.  W **nowy projekt** okno dialogowe, w okienku po lewej stronie wybierz **Windows Desktop**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows**.
 
 3.  Nazwij projekt **PresentationTier** i kliknij przycisk **OK**.
 

@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751848"
 ---
-# <a name="start-view"></a>Widok początkowy
+# <a name="start-view"></a>Widok startowy
 
 Widoku startowego jest punktem uruchamiania dla projektanta schematu XML (XSD). Podczas tworzenia nowego pliku XSD początkowo zobaczysz widoku startowego.
 
 Uruchom widok zawiera dwóch głównych sekcji *znaku wodnego* i **schematu Określanie szczegółów** okienka. Obejmuje on też narzędzi, który jest dostępny we wszystkich widokach projektanta XSD.
 
-![Widok projektanta Start schematu XML](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Widok projektanta Start schematu XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Znak wodny
 
@@ -36,7 +37,7 @@ W okienku znak wodny zawiera listę linki do wszystkich XSD Projektant widoków,
 
 Można przechodzić między widoku startowego [widoku modelu zawartości](../xml-tools/content-model-view.md) i [widok wykresu](../xml-tools/graph-view.md) z paska narzędzi Projektanta schematu XML.
 
-![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Narzędzi Projektanta schematu XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Następujące przyciski są włączone w pasku narzędzi Projektanta XSD przy użyciu widoku startowego jest aktywna:
 

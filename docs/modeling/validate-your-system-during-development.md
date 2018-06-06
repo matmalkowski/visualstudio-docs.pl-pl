@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749944"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników oraz z architektury Twojego systemu.
@@ -34,7 +35,7 @@ Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników
 
 |**Kategoria**|**Łącza**|
 |------------------|---------------|
-|**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Dougowi siedem: opis kodu i System projektu programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: projektowania aplikacji przy użyciu diagramu zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak seria: jak sprawdzanie poprawności kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif) [Channel 9: Dougowi siedem: opis kodu i System projektu programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif) [Channel 9: projektowania aplikacji przy użyciu diagramu zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif) [MSDN jak seria: jak sprawdzanie poprawności kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogi**|-   [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|

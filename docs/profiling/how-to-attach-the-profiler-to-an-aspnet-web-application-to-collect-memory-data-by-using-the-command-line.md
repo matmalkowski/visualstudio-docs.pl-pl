@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e45eb3e1ac874343de5a3076a62b89e541f20d75
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4146c147f65b3e92dbecd2ee92d083e49252000a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766301"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji i zbieranie danych dotyczących liczby i rozmiaru alokacji pamięci .NET Framework. Może również zbierać dane dotyczące okresu istnienia obiektów pamięci .NET Framework.  
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji sieci web ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
+W tym artykule opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji i zbieranie danych dotyczących liczby i rozmiaru alokacji pamięci .NET Framework. Może również zbierać dane dotyczące okresu istnienia obiektów pamięci .NET Framework.  
   
 > [!NOTE]
->  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *narzędzia \Team Tools\Performance* podkatalog [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Do zbierania danych dotyczących wydajności z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, należy użyć [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe odpowiednie na komputerze, który jest hostem [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. Należy ponownie uruchomić komputer, aby skonfigurować serwer sieci Web do profilowania.  
   
@@ -28,9 +29,9 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
  Aby zakończyć sesję profilowania, profilera nie musi być dołączony do aplikacji i profilera muszą zostać jawnie wyłączone. W większości przypadków zaleca się czyszczenie profilowania zmienne środowiskowe z końcem sesji.  
   
-## <a name="attaching-the-profiler"></a>Dołączanie profilera  
+## <a name="attach-the-profiler"></a>Dołączanie profilera  
   
-#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>Aby dołączanie profilera do aplikacji sieci Web ASP.NET  
+#### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>Aby dołączanie profilera do aplikacji sieci web ASP.NET  
   
 1.  Otwórz okno wiersza polecenia.  
   
@@ -55,7 +56,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 5.  Uruchom profilera. Wpisz:  
   
-     **VSPerfCmd**[/start](../profiling/start.md) **: Przykładowe**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]      
+     **VSPerfCmd**[/start](../profiling/start.md) **: Przykładowe**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
     -   **/Start:sample** opcji inicjowania profilera.  
   
@@ -79,13 +80,13 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 7.  Dołączanie profilera do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy. Wpisz:  
   
-     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]    
+     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
   
     -   Identyfikator procesu `(PID)` Określa identyfikator procesu lub nazwy procesu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.  
   
     -   **/targetclr:** `Version` Określa wersję środowisko uruchomieniowe języka wspólnego (CLR) do profilu po załadowaniu więcej niż jedną wersję środowiska uruchomieniowego w aplikacji.  
   
-## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych  
  Gdy aplikacja jest uruchomiona, można kontrolować zbierania danych przez uruchamianie i zatrzymywanie zapisywanie danych w pliku danych profilera przy użyciu **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
@@ -98,7 +99,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymania (**/processoff**) zbierania danych przez proces określony przez `PID`.|  
     |**/ dołączyć:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|**/ dołączyć** rozpoczyna zbieranie danych dla procesu, który jest określony przez identyfikator procesu lub nazwy procesu. **/ detach** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli nie określono określonego procesu.|  
   
-## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania  
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania  
  Aby zakończyć sesję profilowania, profiler musi zostać odłączone od aplikacji sieci Web. Można zatrzymać zbieranie danych z aplikacji, która jest profilowane za pomocą metody pobierania próbek przez ponowne uruchomienie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego proces lub przez wywołanie metody **VSPerfCmd / detach** opcji. Następnie wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profilera i zamknij plik danych profilowania. **VSPerfClrEnv /globaloff** polecenie usuwa profilowania zmiennych środowiskowych, ale konfiguracja systemu nie zostanie zresetowana do ponownego uruchomienia komputera.  
   
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
@@ -125,6 +126,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
      **Polecenie IISReset/Start**  
   
-## <a name="see-also"></a>Zobacz też  
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

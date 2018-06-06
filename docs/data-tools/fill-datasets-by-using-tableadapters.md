@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745701"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zbiorów danych przy użyciu TableAdapters
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstawie co najmniej jednego zapytania lub procedur składowanych, które określisz. TableAdapters można również wykonywać dodawania, aktualizacji i usuwania bazy danych, aby zachować zmiany wprowadzone do zestawu danych. Można również wydać polecenia globalne, które nie są związane z żadną z tabel.
@@ -49,7 +50,7 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstaw
 ## <a name="tableadapter-overview"></a>TableAdapter — Przegląd
  TableAdapters są wygenerowany przez projektanta składników nawiązać połączenia z bazą danych, wykonywania kwerend lub procedur składowanych, które wypełnienie ich DataTable zwróconych danych. TableAdapters również wysyłać zaktualizowane dane z aplikacji w bazie danych. Można uruchomić dowolną liczbę zapytania można dowolnie w metodzie TableAdapter tak długo, jak zwracają dane były zgodne ze schematem tabeli, z którym skojarzony jest TableAdapter. Na poniższym diagramie przedstawiono sposób TableAdapters interakcji z baz danych i innych obiektów w pamięci:
 
- ![Przepływ danych w aplikacji klienckiej](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Przepływ danych w aplikacji klienta](../data-tools/media/clientdatadiagram.gif)
 
  Gdy TableAdapters zostały zaprojektowane z **Projektant obiektów Dataset**, nie zostały wygenerowane klasy TableAdapter jako zagnieżdżonych klas <xref:System.Data.DataSet>. Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestawu danych o nazwie `NorthwindDataSet`, TableAdapters, które są skojarzone z <xref:System.Data.DataTable>s w `NorthwindDataSet` w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby uzyskać dostęp do konkretnej TableAdapter programowo, należy zadeklarować nowe wystąpienie klasy TableAdapter. Na przykład:
 
@@ -63,7 +64,7 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstaw
  Funkcja aktualizacji TableAdapter jest zależne od tego, ile informacje są dostępne w głównym zapytaniu w Kreatorze TableAdapter. Na przykład TableAdapters skonfigurowanych do pobierania wartości z wielu tabel (sprzężenia), wartości skalarnych, widoki lub wyniki funkcje agregujące nie są początkowo tworzone umożliwia wysyłanie aktualizacji z powrotem do podstawowej bazy danych. Jednak należy skonfigurować ręcznie w polecenia INSERT, UPDATE i DELETE **właściwości** okna.
 
 ## <a name="tableadapter-queries"></a>TableAdapter— Zapytania
- ![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif)
 
  TableAdapters może zawierać wielu zapytań do wypełnienia tabel ich skojarzonych danych. Można zdefiniować tyle zapytania dotyczące TableAdapter wymaga aplikacji, tak długo, jak każda kwerenda zwraca dane, zgodne do tego samego schematu jako jego tabeli skojarzone dane. Ta funkcja umożliwia TableAdapter załadować różne wyniki na podstawie różnych kryteriów.
 

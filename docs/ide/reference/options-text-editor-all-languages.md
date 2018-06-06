@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749232"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia dotyczą również inne edytory oparte na kodzie edytora, takiego jak projektanta HTML widoku źródła. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **Edytor tekstu** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.
@@ -70,7 +71,7 @@ To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ust
 
  Po wybraniu wskaźnika Strzałka powrotu jest wyświetlany, gdy długi wiersz jest zawijana wokół drugi wiersz.
 
- ![LineBreakSymbol — zrzut ekranu](../../ide/reference/media/linebreak.gif "linebreak")
+ ![LineBreakSymbol — zrzut ekranu](../../ide/reference/media/linebreak.gif)
 
  Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić te wskaźniki.
 

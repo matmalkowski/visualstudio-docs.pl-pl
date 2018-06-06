@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8cbe95887e9a29fa98932a18c240bc558201fc43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746575"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 
@@ -31,37 +32,37 @@ Można utworzyć typu <xref:System.Data.DataSet> klasy w Visual Studio w czasie 
 
 2.  Wybierz typ źródła danych, które będą łączyć się.
 
-     ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png "Kreator konfiguracji źródła danych")
+     ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
 3.  W przypadku baz danych wybierz bazę danych lub bazy danych, które będą źródła danych dla zestawu danych.
 
-     ![Źródło danych wybierz połączenie](../data-tools/media/data-source-choose-a-connection.png "źródła danych, wybierz połączenie")
+     ![Źródło danych wybierz połączenie](../data-tools/media/data-source-choose-a-connection.png)
 
 4.  Wybierz tabele (lub poszczególnych kolumn), przechowywane procedury, funkcje i widoki z bazy danych, które mają być reprezentowane w zestawie danych.
 
-     ![Wybierz obiekty bazy danych](../data-tools/media/raddata-chose-objects.png "raddata wybranego obiektów")
+     ![Wybierz obiekty bazy danych](../data-tools/media/raddata-chose-objects.png)
 
 5.  Kliknij przycisk **Zakończ**.
 
 6.  Zestaw danych jest wyświetlany jako węzeł **Eksploratora rozwiązań**:
 
-     ![Zestaw danych w Eksploratorze rozwiązań](../data-tools/media/dataset-in-solution-explorer.png "zestawu danych w Eksploratorze rozwiązań")
+     ![Zestaw danych w Eksploratorze rozwiązań](../data-tools/media/dataset-in-solution-explorer.png)
 
      Kliknij ten węzeł, a zestaw danych zostanie wyświetlony w **Projektant obiektów DataSet**. Należy pamiętać, że każdy tabeli w zestawie danych nie ma skojarzonego obiektu TableAdapter, która jest reprezentowana w dolnej części. Karta tabeli jest używany do wypełniania zestawu danych i opcjonalnie należy wysyłać polecenia do bazy danych.
 
-     ![Projektant obiektów DataSet](../data-tools/media/dataset-designer.png "Projektant obiektów DataSet")
+     ![Projektant obiektów DataSet](../data-tools/media/dataset-designer.png)
 
 7.  Wiersze relacji połączonych tabel reprezentują relacje między tabelami, zgodnie z definicją w bazie danych. Domyślnie ograniczenia klucza obcego w bazie danych są reprezentowane jako relacji tylko przy użyciu aktualizacji i usuwania reguł wartość none. Zazwyczaj jest to czego chcesz. Jednak można kliknąć przycisk wiersze, aby wyświetlić **relacji** okna dialogowego, w którym można zmienić zachowanie hierarchicznej aktualizacji. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md) i [hierarchicznej aktualizacji](../data-tools/hierarchical-update.md).
 
-     ![Zestaw danych relacji w oknie dialogowym](../data-tools/media/raddata-relation-dialog.png "raddata relacji w oknie dialogowym")
+     ![Okno dialogowe relacji zestawu danych](../data-tools/media/raddata-relation-dialog.png)
 
 8.  Kliknij przycisk tabeli, karta tabeli lub nazwa kolumny w tabeli, aby wyświetlić jego właściwości w **właściwości** okna. Można zmodyfikować niektórych wartości w tym miejscu. Pamiętaj tylko modyfikujesz zestawu danych, nie źródłowej bazy danych.
 
-     ![Właściwości kolumny zestawu danych](../data-tools/media/dataset-column-properties.png "właściwości kolumny zestawu danych")
+     ![Właściwości kolumny zestawu danych](../data-tools/media/dataset-column-properties.png)
 
 9. Można dodać nowe tabele lub adaptery tabel do zestawu danych, lub Dodaj nowe kwerendy istniejących kart tabeli lub określić nowe relacje między tabelami, przeciągając elementy z **przybornika** kartę. Na tej karcie jest wyświetlane, gdy **Projektant obiektów DataSet** mającego fokus.
 
-     ![Zestaw danych przybornika](../data-tools/media/raddata-dataset-toolbox.png "raddata przybornika zestawu danych")
+     ![Zestaw danych przybornika](../data-tools/media/raddata-dataset-toolbox.png)
 
 10. Następnie prawdopodobnie chcesz określić sposób wypełnić zestaw danych z danymi. Do tego użyć **TableAdapter Kreator konfiguracji**. Aby uzyskać więcej informacji, zobacz [wypełnienia zestawów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -75,7 +76,7 @@ W tej procedurze pokazano, jak dodać tabelę z tej samej bazy danych, który zo
 
 3.  Kliknij prawym przyciskiem myszy węzeł zestawu danych i wybierz **Konfigurowanie źródła danych przy użyciu kreatora**.
 
-     ![Menu kontekstowe źródła danych](../data-tools/media/data-source-context-menu.png "menu kontekstowe źródła danych")
+     ![Menu kontekstowe źródła danych](../data-tools/media/data-source-context-menu.png)
 
 4.  Użyj kreatora, aby określić, które dodatkowe tabele i procedury składowane lub innego obiektu bazy danych, aby dodać do zestawu danych.
 

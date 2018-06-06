@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764222"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Wdrażanie aplikacji sieci web lub aplikacji .NET Core w lokalnym folderze przy użyciu narzędzia publikowanie programu Visual Studio
 
@@ -26,9 +27,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi mieć Visual Studio 2017 r zainstalowany i **.NET Framework** i **.NET Core** obciążenia programowanie zainstalowane.
+* Musi mieć Visual Studio 2017 r zainstalowany i. **NET development pulpitu** obciążenia i. **Podstawowe NET** obciążenia.
 
-    Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 

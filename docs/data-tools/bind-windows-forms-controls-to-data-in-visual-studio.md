@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89a919f6f93dc70f9417a23430c960f03cf92bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d3226785724f6627a962c532cea29393eb5e46e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747593"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio
 Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do formularzy systemu Windows. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na Projektant formularzy systemu Windows w programie Visual Studio.
 
-![Źródło danych operacji przeciągania](../data-tools/media/raddata-data-source-drag-operation.png "operacji przeciągania raddata źródła danych")
+![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 
 Przed przeciągnij elementy, można ustawić typ kontroli, którą chcesz utworzyć powiązania. W zależności od tego, czy wybrano tabeli siebie lub poszczególnych kolumn są wyświetlane różne wartości.  Można również ustawić wartości niestandardowych. Dla tabeli "Szczegóły" oznacza, że każda kolumna jest związany z formantem oddzielne.
 
-![Powiązać źródła danych z formantu DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata powiązanego źródła danych do formantu DataGridView")
+![Powiązać źródła danych z formantu DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource i kontrolki BindingNavigator
 <xref:System.Windows.Forms.BindingSource> Składnika służy dwóch celów. Po pierwsze zapewnia warstwę abstrakcji podczas powiązywanie kontrolek z danymi. Formanty formularza jest powiązana z <xref:System.Windows.Forms.BindingSource> składnika zamiast bezpośrednio ze źródłem danych. Po drugie go zarządzanie kolekcją obiektów. Dodawanie typów do <xref:System.Windows.Forms.BindingSource> tworzy listę tego typu.
@@ -50,11 +51,11 @@ Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSourc
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Powiązanie z danymi w formancie DataGridView
 Aby uzyskać [formantu DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), cała tabela jest powiązana do pojedynczego formantu. Podczas przeciągania DataGridView w formularzu narzędzia paska nawigacji rekordów (<xref:System.Windows.Forms.BindingNavigator>) jest również dostępny. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane na pasku składnika. Na poniższej ilustracji obiekt TableAdapterManager również zostanie dodany, ponieważ tabela Klienci ma relację wobec tabeli zamówienia. Te zmienne są wszystkie zadeklarowane w automatycznie wygenerowany kod jako prywatne elementy członkowskie klasy formularza. Automatycznie wygenerowany kod dla formantu DataGridView wypełnianie znajduje się w obsłudze zdarzeń form_load. Kod zapisywania danych do aktualizacji bazy danych znajduje się w programu obsługi zdarzeń Zapisz BindingNavigator. Można przenieść lub modyfikować ten kod w razie potrzeby.
 
-![Element GridView o BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView z właściwością BindingNavigator")
+![Element GridView o BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
 Można dostosować zachowanie formantu DataGridView i parametrze BindingNavigator, klikając tagów inteligentnych w prawym górnym rogu każdej:
 
-![DataGridView i powiązanie Nawigator tagów inteligentnych](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView i powiązanie Nawigator tagów inteligentnych")
+![DataGridView i powiązanie Nawigator tagów inteligentnych](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
 Jeśli formanty aplikacji wymaga nie są dostępne za pośrednictwem **źródeł danych** okna, można dodawać formanty. Aby uzyskać więcej informacji, zobacz [dodawanie formantów niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
@@ -63,14 +64,14 @@ Możesz także przeciągnąć elementy z **źródeł danych** okna na formanty j
 ## <a name="bind-to-data-in-individual-controls"></a>Powiązanie z danymi w pojedynczych formantów
 Gdy "Szczegóły" można powiązać źródła danych, każdej kolumny w zestawie danych jest powiązany z oddzielnych formantu.
 
-![Źródło danych należy powiązać szczegóły](../data-tools/media/raddata-bind-data-source-to-details.png "raddata powiązanego źródła danych, aby uzyskać więcej informacji")
+![Powiązać źródła danych, aby uzyskać więcej informacji](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
 > Należy pamiętać, że na poprzedniej ilustracji, przeciągnij z właściwości zamówień tabeli Klienci nie z tabeli zamówienia. Przez powiązanie dla właściwości Customer.Orders, wprowadzone w formancie DataGridView polecenia nawigacji są natychmiast odzwierciedlone w formantach szczegóły. Przypadku przeciągania z tabeli zamówienia formanty będą nadal powiązane z zestawem danych, ale nie ich może nie zostać zsynchronizowany z formantu DataGridView.
 
 Na poniższej ilustracji przedstawiono domyślne formanty powiązane z danymi, które są dodawane do formularza po właściwości zamówień w tabeli Klienci jest powiązany z "Szczegóły" w **źródeł danych** okna.
 
-![Powiązana tabela zamówień szczegóły](../data-tools/media/raddata-orders-table-bound-to-details.png "powiązana tabela zamówień raddata szczegóły")
+![Tabela zamówienia powiązane szczegóły](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
 Należy pamiętać, że każdy formant ma tagów inteligentnych. Ten tag umożliwia dostosowania, które dotyczą tylko tego formantu.
 

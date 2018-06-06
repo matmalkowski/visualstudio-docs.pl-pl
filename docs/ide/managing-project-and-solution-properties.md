@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746315"
 ---
 # <a name="manage-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 
 Projekty mają właściwości, które będą zarządzały sposobem wiele aspektów kompilacji, debugowanie, testowania i wdrażania. Niektóre właściwości są wspólne dla wszystkich typów projektów, a niektóre są unikatowe dla określonego języka lub platformy. Aby dostęp do właściwości projektu, prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**, lub wpisując "właściwości" w **Szybkie uruchamianie** pole wyszukiwania na pasku menu.
 
-![Menu kontekstowe projektu](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Menu kontekstowe projektu](../ide/media/vs2015_proj_prop_menu.gif)
 
 Projekty .NET mogą także mieć węzeł właściwości w drzewo projektu.
 
-![Właściwości węzła drzewa Eksploratora rozwiązań](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Właściwości węzła drzewa Eksploratora rozwiązań](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>Właściwości projektu
 
@@ -33,7 +34,7 @@ Właściwości projektu są zorganizowane w grupy, a każda grupa ma swoją wła
 
 W projektach C#, VB i F #, właściwości są widoczne w **projektanta projektu**. Na poniższej ilustracji pokazano **kompilacji** stronę właściwości projektu WPF w języku C#:
 
-![Projektant projektu programu Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Projektant projektu programu Visual Studio](../ide/media/vs2015_proppage_build.png)
 
 Aby uzyskać informacje o poszczególnych stron właściwości w **projektanta projektu**, zobacz [właściwości odwołanie do projektu](../ide/reference/project-properties-reference.md).
 
@@ -44,7 +45,7 @@ Aby uzyskać informacje o poszczególnych stron właściwości w **projektanta p
 
 Projekty C++ i JavaScript ma inny użytkownik interfejsu do zarządzania właściwości projektu. Na ilustracji przedstawiono strony właściwości projektu C++ (stron JavaScript są podobne):
 
-![Visual C&#43; &#43; właściwości projektu](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C&#43; &#43; właściwości projektu](../ide/media/vs2015_projprops_cpp.png)
 
 Informacji o właściwościach projektu C++, zobacz [pracować z właściwości projektu (C++)](/cpp/ide/working-with-project-properties). Aby uzyskać więcej informacji o właściwościach JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).
 

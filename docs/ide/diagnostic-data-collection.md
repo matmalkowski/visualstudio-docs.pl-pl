@@ -10,10 +10,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34478349"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Dzienniki generowane przez system zebrane przez program Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i konfigurowanie TableAdapters
+title: Tworzenie i konfigurowanie adapterów TableAdapter
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748960"
 ---
-# <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie TableAdapters
+# <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 TableAdapters zapewniają komunikację pomiędzy aplikacją i bazą danych. Łączą się z bazy danych, uruchom zapytania lub procedur składowanych i zwrócenie danych nowej tabeli lub wypełnienia istniejące <xref:System.Data.DataTable> z zwróconych danych. TableAdapters może także wysłać zaktualizowane dane z aplikacji w bazie danych.
 
 TableAdapters są tworzone automatycznie podczas wykonywania jednej z następujących czynności:
@@ -40,7 +41,7 @@ Aby obejrzeć wprowadzenie do TableAdapters, zobacz [wypełnienia zestawów dany
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Za pomocą Kreatora konfiguracji TableAdapter
 Uruchom **TableAdapter Kreator konfiguracji** do tworzenia lub edytowania TableAdapters i ich skojarzonych DataTables. Można skonfigurować istniejącą TableAdapter przez kliknięcie prawym przyciskiem myszy w **Projektant obiektów Dataset**.
 
-![raddata Kreatora konfiguracji adaptera tabeli](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata Kreatora konfiguracji adaptera tabeli")
+![raddata Kreatora konfiguracji adaptera tabeli](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Jeśli nowy obiekt TableAdapter jest przeciągnij z przybornika po **Projektant obiektów Dataset** skupić się uruchomieniu kreatora i monitów, możesz określić, które dane źródłowe TableAdapter powinien połączyć się z. Na następnej stronie Kreator zapyta, jakiego rodzaju polecenia go powinna być używana do komunikacji z bazą danych, instrukcji SQL lub procedur składowanych. (Nie zobaczysz to w przypadku konfigurowania TableAdapter, która jest już skojarzony ze źródłem danych.)
 
@@ -63,7 +64,7 @@ Mapuj parametry z wybranej procedury składowanej na odpowiednie kolumny w tabel
 ## <a name="configure-a-tableadapters-fill-method"></a>Skonfiguruj TableAdapter Fill — metoda
 Czasami można zmienić schemat tabeli TableAdapter. W tym celu należy zmodyfikować podstawowy element TableAdapter `Fill` metody. TableAdapters są tworzone za pomocą podstawowego `Fill` metodę, która definiuje schemat tabeli skojarzonych danych. Podstawowy `Fill` metoda jest oparta na zapytanie lub procedura składowana wprowadzone podczas konfigurowania pierwotnie TableAdapter. Jest to pierwszy (metody najwyższego poziomu) w tabeli danych w Projektancie obiektów DataSet.
 
-![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif)
 
 Wszelkie zmiany wprowadzone w TableAdapter obiektu głównego `Fill` metody są uwzględniane w schemat tabeli skojarzonych danych. Na przykład usunięcie kolumny z zapytania w głównym `Fill` metody spowoduje również usunięcie kolumny z tabeli skojarzonych danych. Ponadto usunięcie kolumny z głównym `Fill` — metoda usuwa kolumnę z żadnych dodatkowych zapytań dla tej TableAdapter.
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750093"
 ---
 # <a name="crosssession"></a>CrossSession
-VSPerfCmd.exe **CrossSession** opcja umożliwia profilera do zbierania danych z dowolnej sesji konsoli. **CrossSession** opcji należy używać z **Start** opcji.  
+*VSPerfCmd.exe* **CrossSession** opcja umożliwia profilera do zbierania danych z dowolnej sesji konsoli. **CrossSession** opcji należy używać z **Start** opcji.  
   
  Można używać skrótu **CS** zamiast **CrossSession**.  
   
@@ -50,8 +51,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

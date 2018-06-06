@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746770"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017 r.
 
@@ -196,7 +197,7 @@ Jeśli masz problem otwarcie strony z pobierania zdalnego debugera, zobacz [odbl
 
 ### <a name="BKMK_attach"></a> Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
 
-1. Na komputerze programu Visual Studio Otwórz **MyASPApp** rozwiązania.
+1. Na komputerze programu Visual Studio Otwórz rozwiązanie, które chcesz debugować (**MyASPApp** Jeśli wykonujesz kroki opisane w tym artykule).
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
 
     > [!TIP]

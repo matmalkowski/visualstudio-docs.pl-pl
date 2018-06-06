@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64de38fe796ce3c1e0d333a22582ad2973e1c4d2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692122"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765362"
 ---
-# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio
+# <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio
   W niektórych przypadkach może być obiektem systemu projektu SharePoint i chcesz używać funkcji odpowiedni obiekt w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, albo na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metoda usługa projektu SharePoint, aby przekonwertować obiekt do innego obiektu modelu.  
   
  Na przykład może być <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiekt, ale chcesz używać metod, które są dostępne tylko na <xref:EnvDTE.Project> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> obiektu. W takim przypadku można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metodę, aby przekonwertować <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> do <xref:EnvDTE.Project> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.  
@@ -45,7 +45,7 @@ ms.locfileid: "34692122"
   
  Ten przykład wymaga:  
   
--   Rozszerzenie zawiera odwołanie do zestawu EnvDTE.dll systemu projektu SharePoint. Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
+-   Rozszerzenie zawiera odwołanie do systemu projektu SharePoint *EnvDTE.dll* zestawu. Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 -   Kod, który rejestruje `projectService_ProjectAdded` można obsłużyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu. Na przykład zobacz [porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

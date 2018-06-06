@@ -21,7 +21,7 @@ ms.openlocfilehash: 9f96ecf7f7f6c0d465a9506edff41c4305d8d25e
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692951"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata —&gt; — element (Office development w Visual Studio)

@@ -15,15 +15,16 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767689"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu
 
-Ten przewodnik zawiera kroki tworzenia, uruchomione, i dostosowywanie serii jednostki testów za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego i Visual Studio **Eksploratora testów**. Rozpoczynać się od projektu C#, który jest w fazie projektowania, Utwórz testy, które wykonuje jego kod, uruchom testy i przejrzeć wyniki. Następnie możesz zmienić kod projektu i ponownie uruchom testy.
+Ten artykuł zawiera kroki tworzenia i uruchomione, i dostosowywanie serii jednostki testów za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego i Visual Studio **Eksploratora testów**. Rozpoczynać się od projektu C#, który jest w fazie projektowania, Utwórz testy, które wykonuje jego kod, uruchom testy i przejrzeć wyniki. Następnie możesz zmienić kod projektu i ponownie uruchom testy.
 
 > [!NOTE]
 > W tym przewodniku zastosowano frameworka testów jednostkowych Microsoft dla kodu zarządzanego. **Testowanie Explorer** również uruchomić testy z innej jednostki platform testów, kartami dla **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
@@ -41,21 +42,18 @@ Ten przewodnik zawiera kroki tworzenia, uruchomione, i dostosowywanie serii jedn
 
 2. Na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.
+   **Nowy projekt** zostanie wyświetlone okno dialogowe.
 
 3. W obszarze **zainstalowane szablony**, kliknij przycisk **Visual C#**.
 
 4. Na liście typów aplikacji, kliknij **biblioteki klas**.
 
-5. W **nazwa** wpisz `Bank` , a następnie kliknij przycisk **OK**.
+5. W **nazwa** wpisz **Bank** , a następnie kliknij przycisk **OK**.
 
-    > [!NOTE]
-    > Jeśli nazwa "Bank" jest już używana, wybierz inną nazwę dla projektu.
+   Nowy projekt Bank jest tworzone i wyświetlane w **Eksploratora rozwiązań** z *Class1.cs* plik otwarty w edytorze kodu.
 
-     Nowy projekt Bank jest tworzone i wyświetlane w **Eksploratora rozwiązań** z *Class1.cs* plik otwarty w edytorze kodu.
-
-    > [!NOTE]
-    > Jeśli *Class1.cs* plik nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik *Class1.cs* w Eksploratorze rozwiązań, aby go otworzyć.
+   > [!NOTE]
+   > Jeśli *Class1.cs* jest nie otwarty w edytorze kodu, kliknij dwukrotnie plik *Class1.cs* w **Eksploratora rozwiązań** go otworzyć.
 
 6. Kopiowanie kodu źródłowego z [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)i Zastąp zawartość oryginalnego *Class1.cs* ze skopiowanego kodu.
 
@@ -93,11 +91,11 @@ public void Debit(double amount)
 
 4. W **nazwa** wprowadź `BankTests`, a następnie wybierz **OK**.
 
-     **BankTests** projekt zostanie dodany do **Bank** rozwiązania.
+   **BankTests** projekt zostanie dodany do **Bank** rozwiązania.
 
 5. W **BankTests** projekt, Dodaj odwołanie do **Bank** projektu.
 
-     W Eksploratorze rozwiązań wybierz **odwołania** w **BankTests** projektu, a następnie wybierz pozycję **Dodaj odwołanie** z menu kontekstowego.
+   W Eksploratorze rozwiązań wybierz **odwołania** w **BankTests** projektu, a następnie wybierz pozycję **Dodaj odwołanie** z menu kontekstowego.
 
 6. W oknie dialogowym Menedżera odwołań, rozwiń węzeł **rozwiązania** , a następnie sprawdź **Bank** elementu.
 
@@ -142,7 +140,7 @@ Dostępne są następujące minimalne wymagania dla klasy testowej:
 
 - `[TestClass]` Atrybut jest wymagany w jednostce Microsoft testowania framework do zarządzanego kodu dla dowolnej klasy, która zawiera metody testowe jednostki, które mają być uruchamiane w Eksploratorze testów.
 
-- Każda metoda ma Eksploratora testów do uruchomienia testu musi mieć `[TestMethod]`atrybutu.
+- Każda metoda ma Eksploratora testów do uruchomienia testu musi mieć `[TestMethod]` atrybutu.
 
 Może mieć inne klasy jednostkowy projekt testowy, które nie mają `[TestClass]` atrybutu, a może mieć inne metody w klasie testu, które nie mają `[TestMethod]` atrybutu. Te klasy i metody można użyć w metody testu.
 
@@ -211,13 +209,13 @@ Metoda testowa musi spełniać następujące wymagania:
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Usuń kod i ponownie uruchomić testy
 
-**Analizuj wyniki testów**
+### <a name="analyze-the-test-results"></a>Analizuj wyniki testów
 
 Wynik testu zawiera komunikat zawierający opis błędu. Dla `AreEquals` metoda, komunikat wyświetla oczekiwanym ( **Oczekiwano\<*wartość* >**  parametru) i co faktycznie otrzymano ( **Rzeczywiste\<*wartość* >** parametru). Oczekiwano saldo zmniejszyć, ale zamiast tego go faktycznie zwiększyć ilość wycofanie.
 
 Test jednostkowy ma niewykrytych usterki: ilość wycofanie *dodane* na koncie, lecz powinna być *odejmować*.
 
-**Popraw błąd**
+### <a name="correct-the-bug"></a>Popraw błąd
 
 Aby naprawić błąd, należy zastąpić wiersz:
 
@@ -231,22 +229,22 @@ Z:
 m_balance -= amount;
 ```
 
-**Ponowne uruchomienie testu**
+### <a name="rerun-the-test"></a>Ponowne uruchomienie testu
 
-W Eksploratorze testów, wybierz **Uruchom wszystkie** ponowne uruchomienie testu. Pasek czerwony/zielony włącza zielony, wskazujący przekazany testu i test zostanie przeniesiony do **przekazany testy** grupy.
+W Eksploratorze testów, wybierz **Uruchom wszystkie** ponowne uruchomienie testu. Pasek czerwony/zielony stan zielony oznacza, że przekazany testu i test zostanie przeniesiony do **przekazany testy** grupy.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Użyj testów jednostkowych, aby poprawić kod
 
 W tej sekcji opisano, jak procesem iteracyjnym analizy, programowanie testów jednostkowych i refaktoryzacji może pomóc zwiększyć kodu produkcyjnego bardziej niezawodny i efektywny.
 
-**Analiza problemów**
+### <a name="analyze-the-issues"></a>Analiza problemów
 
 Po utworzeniu metody testowej, aby potwierdzić poprawnie odliczona prawidłową kwotę przy `Debit` metody. Teraz, sprawdź, czy metoda zgłasza <xref:System.ArgumentOutOfRangeException> Jeśli kwota debetowa:
 
 - większa niż saldo, lub
 - mniejsze niż zero.
 
-**Tworzenie metody testowe**
+### <a name="create-the-test-methods"></a>Tworzenie metody testowe
 
 Utwórz metody testowej, aby zweryfikować poprawne zachowanie w sytuacji, gdy ilość debetowa jest mniejsza od zera:
 
@@ -277,11 +275,11 @@ Aby przetestować w przypadku, gdy ilość wycofane jest większy niż saldo, wy
 
 3. Ustaw `debitAmount` na większą niż równowagi.
 
-**Uruchom testy**
+### <a name="run-the-tests"></a>Uruchom testy
 
 Uruchomiona dwie metody testowe pokazuje testy działać poprawnie.
 
-**Kontynuować analizę**
+### <a name="continue-the-analysis"></a>Kontynuować analizę
 
 Jednak również niepokojące są ostatnich dwóch metod. Nie można mieć niektórych warunek, który w testowana metoda zgłasza wyjątek, po uruchomieniu tych testów. Niektóre sposób pozwalających dwa warunki kwota debetowa ujemny lub kwotę większą niż saldo, zwiększy z zaufania w testach.
 
@@ -291,11 +289,11 @@ Obejrzyj testowana metoda ponownie i zwróć uwagę, że oba warunkowe instrukcj
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-Brak Konstruktora służy raport znacznie bardziej rozbudowane informacje: <xref:System.ArgumentOutOfRangeException.%23ctor%2A> `(String, Object, String)` zawiera nazwę argumentu, wartość argumentu i wiadomości zdefiniowane przez użytkownika. Można zrefaktoryzuj metody w ramach testu do używania tego konstruktora. Lepszy można użyć typu publicznie dostępnych elementów członkowskich określenie błędów.
+Brak Konstruktora służy raport znacznie bardziej rozbudowane informacje: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> zawiera nazwę argumentu, wartość argumentu i wiadomości zdefiniowane przez użytkownika. Można zrefaktoryzuj metody w ramach testu do używania tego konstruktora. Lepszy można użyć typu publicznie dostępnych elementów członkowskich określenie błędów.
 
-**Zrefaktoryzuj kod w ramach testu**
+### <a name="refactor-the-code-under-test"></a>Zrefaktoryzuj kod w ramach testu
 
-Najpierw należy zdefiniować dwa stałe komunikaty o błędach w zakresie klasy. Umieścić w klasie w ramach testu (`Bank`):
+Najpierw należy zdefiniować dwa stałe komunikaty o błędach w zakresie klasy. Umieścić w klasie w ramach testu, waluty:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -316,7 +314,7 @@ Następnie należy zmodyfikować dwóch warunkowe instrukcje w `Debit` metody:
     }
 ```
 
-**Zrefaktoryzuj metody testowe**
+### <a name="refactor-the-test-methods"></a>Zrefaktoryzuj metody testowe
 
 Usuń `ExpectedException` testowanie atrybutu metody i zamiast tego catch zwrócony wyjątek i weryfikowanie jego skojarzony wiadomości. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda pozwala, aby porównać dwa ciągi.
 
@@ -344,9 +342,9 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**Sprawdź jeszcze raz, Nadpisz i Analizuj ponownie**
+### <a name="retest-rewrite-and-reanalyze"></a>Sprawdź jeszcze raz, Nadpisz i Analizuj ponownie
 
-Załóżmy, jest to błąd w metodzie w ramach testu i `Debit` — metoda nie nawet *throw* <xref:System.ArgumentOutOfRangeException>, nevermind output poprawne komunikat o wyjątku. Obecnie metoda testowa nie obsługuje tego przypadku. Jeśli `debitAmount` wartość jest prawidłowa (to znaczy mniejsza niż saldo, ale większa od zera), nie jest wyjątek, więc assert nigdy nie uruchamia się. Przekazuje jeszcze metody testowej. To nie jest dobra, ponieważ ma metody testowej niepowodzenie, jeśli nie jest wyjątek.
+Załóżmy, jest to błąd w metodzie w ramach testu i `Debit` metody nawet nie generują <xref:System.ArgumentOutOfRangeException>, nevermind output poprawne komunikat o wyjątku. Obecnie metoda testowa nie obsługuje tego przypadku. Jeśli `debitAmount` wartość jest prawidłowa (to znaczy mniejsza niż saldo, ale większa od zera), nie jest wyjątek, więc assert nigdy nie uruchamia się. Przekazuje jeszcze metody testowej. To nie jest dobra, ponieważ ma metody testowej niepowodzenie, jeśli nie jest wyjątek.
 
 Jest to błąd w metodzie testowej. Aby rozwiązać ten problem, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> assert na końcu metody testowej do obsługi w przypadku, gdy nie wyjątku.
 

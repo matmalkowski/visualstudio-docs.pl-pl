@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 102b3eb7fa440e9c666020ddeda6e6763c208b23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692385"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751731"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -100,7 +100,7 @@ Aby uzyskać dostęp do kodowanego interfejsu użytkownika narzędzia testowania
 
      Zamknij okno potwierdzenia i wybierz **Generuj kod**.
 
-     ![Docelowy element kodowanego testu interfejsu użytkownika](../test/media/codedui_1.png "CodedUI_1")
+     ![Kodowane element docelowy testu interfejsu użytkownika](../test/media/codedui_1.png)
 
     > [!TIP]
     > Przełącza między rejestrowanie akcji i sprawdzania poprawności wartości. Generowanie kodu na końcu każdej sekwencji działań lub weryfikacji. Jeśli chcesz, można później wstawiać nowe akcje i weryfikacji.
@@ -134,7 +134,7 @@ Aby uzyskać dostęp do kodowanego interfejsu użytkownika narzędzia testowania
 
      Otwórz UIMap.uitest. Ten plik zostanie otwarty w kodowanego interfejsu użytkownika edytora testów, którym można edytować żadnych sekwencję akcji zapisanych oraz jak edytować potwierdzenia Twojej.
 
-     ![Kodowanego interfejsu użytkownika edytora testów](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")
+     ![Edytor kodowanego testu interfejsu użytkownika](../test/media/cuit_editor_edit.png)
 
      Aby uzyskać więcej informacji, zobacz [testów interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -164,20 +164,20 @@ Można użyć **konstruktora testu kodowanego interfejsu użytkownika** można d
 
 Aby wygenerować potwierdzenia dla formantów interfejsu użytkownika, wybierz **dodawania potwierdzeń** narzędzia w konstruktora testu kodowanego interfejsu użytkownika i przeciągnij go do kontroli aplikacji w ramach testu, który chcesz zweryfikować jest poprawna. Gdy pole zawiera opis formantu, zwolnij przycisk myszy. Kod klasy formantu natychmiast jest tworzony w `UIMap.Designer.cs` pliku.
 
-![Docelowy element kodowanego testu interfejsu użytkownika](../test/media/codedui_1.png "CodedUI_1")
+![Kodowane element docelowy testu interfejsu użytkownika](../test/media/codedui_1.png)
 
 Właściwości dla tego formantu są wyświetlane w **dodawania potwierdzeń** okno dialogowe.
 
 Innym sposobem nawigowania do określonego formantu jest wybierz strzałkę **(<<)** aby rozwinąć widok **mapy formantów interfejsu użytkownika**. Aby znaleźć nadrzędnego, element równorzędny lub formant podrzędny, możesz kliknij w dowolnym miejscu na mapie i użyj klawiszy strzałek do przenoszenia drzewa.
 
-![Właściwości testu kodowanego interfejsu użytkownika](../test/media/codedui_2.png "CodedUI_2")
+![Kodowane właściwości testu interfejsu użytkownika](../test/media/codedui_2.png)
 
 > [!TIP]
 > Jeśli nie widać żadnych właściwości zaznacz kontrolkę w aplikacji lub formantu w formancie mapy interfejsu użytkownika nie jest widoczny, sprawdź, czy formant ma unikatowy identyfikator w kodzie aplikacji. Unikatowy identyfikator może być atrybutu HTML Identyfikatora lub WPF UId.
 
 Następnie otwórz menu skrótów we właściwości formantu interfejsu użytkownika, który chcesz sprawdzić, a następnie wskaż **Dodaj potwierdzenie**. W **Dodaj potwierdzenie** okno dialogowe, wybierz opcję **Komparatora** do potwierdzenia, na przykład <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>i wpisz wartość dla Twojego potwierdzenia w **wartości porównania**.
 
-![Potwierdzenia testu kodowanego interfejsu użytkownika](../test/media/codedui_3.png "CodedUI_3")
+![Kodowane potwierdzenia testu interfejsu użytkownika](../test/media/codedui_3.png)
 
 Gdy zostaną dodane wszystkie Twoje potwierdzenia dla testu, wybierz **OK**.
 
@@ -198,7 +198,7 @@ Aby wygenerować kod dla Twojego potwierdzenia i Dodaj formant do mapy interfejs
 
 - Dodaje metodę o nazwie `AssertForAddTwoNumbers` do mapy interfejsu użytkownika (UIMap.uitest). Ten plik zostanie otwarty w kodowanego interfejsu użytkownika edytora testów, którym można edytować potwierdzenia.
 
-     ![Edytuj assert za pomocą edytora testu interfejsu użytkownika na stałe](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")
+     ![Edytuj assert za pomocą kodowanych edytora testów interfejsu użytkownika](../test/media/cuit_editor_assert.png)
 
      Aby uzyskać więcej informacji, zobacz [testów interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -217,7 +217,7 @@ Jeśli formant, który chcesz wybrać traci fokus i zniknie po wybraniu narzędz
 
 Czasami gdy Dodaj formanty i sprawdź ich właściwości, może być konieczne użycie klawiatury. Na przykład podczas rejestrowania kodowanego testu interfejsu użytkownika, która używa kontrolki menu kontekstowego na liście elementów menu w formancie utracić fokus i znikają w przypadku próby wybierz narzędzie dodawania potwierdzeń z konstruktora kodowanego interfejsu użytkownika testu. Zostało to przedstawione na poniższej ilustracji, gdy menu kontekstowego w programie Internet Explorer traci fokus i znika próba zaznacz go za pomocą narzędzia dodawania potwierdzeń.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
+![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Używanie klawiatury, aby wybrać formant interfejsu użytkownika, umieść kursor nad formantem przy użyciu myszy. Wciśnij klawisz **Ctrl** klucza i **I** klucza w tym samym czasie. Zwolnij kluczy. Kontrolka jest rejestrowane przez konstruktora kodowanego testu UT.
 
@@ -232,7 +232,7 @@ W pewnych okolicznościach określonego formantu, który jest używany w kodowan
 
 Podczas wykonywania kodowanego testu interfejsu użytkownika, umieść kursor nad formantem. Naciśnij i przytrzymaj klawisz Ctrl, naciśnij i przytrzymaj klawisze Shift i R na klawiaturze. Zwolnij kluczy. Zdarzenie przesuwania myszy jest rejestrowane przez konstruktora kodowanego testu UT.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png "CodedUI_Hover")
+![CodedUI&#95;aktywowania](../test/media/codedui_hover.png)
 
 Po wygenerowaniu metody testowej kod podobny do poniższego przykładu zostaną dodane do pliku UIMap.Desinger.cs:
 

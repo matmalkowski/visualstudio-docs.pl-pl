@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767624"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Porady: dodawanie właściwości do projektów SharePoint
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Porady: Dodawanie właściwości do projektów SharePoint
   Rozszerzenia projektu umożliwia dodawanie właściwości do żadnego projektu programu SharePoint. Pojawi się ona w **właściwości** okna, gdy projekt jest wybrany w **Eksploratora rozwiązań**.  
   
  W następujących krokach założono, że utworzono już rozszerzenia projektu. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  W obsłudze zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzeń, dodać wystąpienia klasy właściwości, aby <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> kolekcji parametr argumentów zdarzenia.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje sposób dodawania dwóch właściwości do projektów SharePoint. Dane w pliku projektu użytkownika opcji będzie się powtarzać jedną właściwość (. plik csproj.user lub. vbproj.user pliku). Inne właściwości utrzymuje dane w pliku projektu (pliku .csproj lub .vbproj pliku).  
+ Poniższy przykład kodu pokazuje sposób dodawania dwóch właściwości do projektów SharePoint. Dane w pliku projektu użytkownika opcji będzie się powtarzać jedną właściwość ( *. csproj.user* pliku lub *. vbproj.user* pliku). Inne właściwości będzie się powtarzać, jego dane w pliku projektu (*.csproj* pliku lub *vbproj* pliku).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -69,20 +70,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Kompilowanie kodu  
  W tym przykładzie wymaga odwołania do następujących zestawów:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Wdrażanie rozszerzenia  
  Aby wdrożyć rozszerzenie, należy utworzyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie projektów SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Porady: Dodawanie pozycji Menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

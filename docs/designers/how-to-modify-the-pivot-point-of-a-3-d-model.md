@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747108"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Porady: modyfikowanie punktu obrotu 3W modelu
 
 W tym artykule przedstawiono sposób użycia w edytorze modeli, aby zmodyfikować *punktu przestawnego* modelu 3D. Punkt pivot jest punktem przestrzeni definiująca środek matematyczne obiektu obrotu i skalowania.
 
-## <a name="modify-the-pivot-point-of-a-3d-model"></a>Modyfikowanie punktu obrotu 3W modelu
+## <a name="modify-the-pivot-point-of-a-3d-model"></a>Modyfikowanie punktu obrotu modelu 3D
 
 Punkt początkowy modelu 3D można zmienić, modyfikując punktu obrotu.
 
@@ -41,7 +42,7 @@ Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
 Oto modelu, który ma punkt pivot zmodyfikowane:
 
-![Modelu DOM, zawierający punkt modyfikacji przestawnych](../designers/media/digit-modified-model.png "cyfrę-zmodyfikowane-modelu")
+![Modelu DOM, zawierający punkt zmodyfikowane pivot](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>Zobacz także
 

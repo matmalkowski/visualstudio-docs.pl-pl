@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751536"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
 
@@ -39,7 +40,7 @@ Można generować raportów testu obciążenia programu Microsoft Excel, które 
 
  Poniższej ilustracji przedstawiono przykładowy raport pokazujący korelacji między spadek szybkości transakcji (Aktualizuj koszyk) i zwyrodnienie licznika (% procesora). To wskazuje potencjalny problem w kodzie aplikacji, a nie bazy danych lub w sieci i są odpowiednimi kandydatami do diagnozowania za pomocą profilera platformy ASP.NET.
 
- ![Potencjalny problem w kodzie aplikacji](../test/media/lt_excel.png "LT_Excel")
+ ![Potencjalny problem w kodzie aplikacji](../test/media/lt_excel.png)
 
  Raporty programu Excel albo można wygenerować w analizatora testu obciążenia za pomocą **Utwórz raport programu Excel** przycisku w pasku narzędzi lub z programu Excel za pomocą **raport testu obciążenia** opcji **testu obciążenia**  karty wstążki pakietu Office.
 

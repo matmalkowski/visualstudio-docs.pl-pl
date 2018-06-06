@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84e5505b077d4d237ed8f8b2532b4ac2b48544d5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3935bb38e47c18f3931f41a75daff9b608f8704
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765960"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi i zbieranie danych pamięci. Można zbierać dane dotyczące liczby i rozmiaru alokacji pamięci, i może również zbierać dane dotyczące okresu istnienia obiektów pamięci.  
+W tym artykule opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wiersza polecenia narzędzia umożliwiające dołączanie profilera do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi i zbieranie danych pamięci. Można zbierać dane dotyczące liczby i rozmiaru alokacji pamięci, i może również zbierać dane dotyczące okresu istnienia obiektów pamięci.  
   
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowym zarówno w przypadku 64-bitowych, jak i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *narzędzia \Team Tools\Performance* podkatalog [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Zbieranie danych pamięci z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi, użyj [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe odpowiednie na komputerze, który obsługuje usługę. Aby skonfigurować go na potrzeby profilowania, należy ponownie uruchomić komputer.  
   
@@ -31,7 +32,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
  Aby zakończyć sesję profilowania, profilera musi być odłączony od usługi i profilera muszą zostać jawnie wyłączone. W większości przypadków zaleca się czyszczenie profilowania zmienne środowiskowe z końcem sesji.  
   
-## <a name="attaching-the-profiler"></a>Dołączanie profilera  
+## <a name="attach-the-profiler"></a>Dołączanie profilera  
   
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>Aby dołączanie profilera do usługi .NET Framework  
   
@@ -61,7 +62,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 7.  Uruchom profilera. Wpisz:  
   
-     **VSPerfCmd**[/start](../profiling/start.md) **: Przykładowe**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]      
+     **VSPerfCmd**[/start](../profiling/start.md) **: Przykładowe**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
     -   **/Start:sample** opcji inicjowania profilera.  
   
@@ -84,14 +85,14 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 8.  Dołączanie profilera do usługi. Wpisz:  
   
-     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]    
+     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
   
     -   Określ identyfikator procesu lub nazwa procesu usługi. Można wyświetlić nazwy wszystkich uruchomionych procesów i identyfikatorów procesów w Menedżerze zadań systemu Windows.  
   
     -   **targetclr:** `Version` Określa wersję środowisko uruchomieniowe języka wspólnego (CLR) do profilu po załadowaniu więcej niż jedną wersję środowiska uruchomieniowego w aplikacji. Opcjonalna.  
   
-## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
- Gdy usługa jest uruchomiona, można użyć **VSPerfCmd.exe** opcje do zatrzymywania i uruchamiania przy zapisywaniu danych w pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych  
+ Gdy usługa jest uruchomiona, można użyć *VSPerfCmd.exe* opcje do zatrzymywania i uruchamiania przy zapisywaniu danych w pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
   
@@ -103,7 +104,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymania (**/processoff**) zbierania danych przez proces określony przez identyfikator procesu (`PID`).|  
     |**/ dołączyć:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[: {`PID`&#124;`ProcName`}]|**/ dołączyć** rozpoczyna zbieranie danych przez proces określony przez identyfikator procesu lub nazwy procesu. **/ detach** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli nie określono określonego procesu.|  
   
-## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania  
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania  
  Aby zakończyć sesję profilowania, profilera musi nie być zbierania danych. Można zatrzymać zbieranie danych z aplikacji profilowany przy użyciu metody pobierania próbek przez zatrzymanie usługi lub poprzez wywołanie **VSPerfCmd / detach** opcji. Następnie wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profilera i zamknij plik danych profilowania. **VSPerfClrEnv /globaloff** polecenie usuwa profilowania zmiennych środowiskowych, ale konfiguracja systemu nie zostanie zresetowana do ponownego uruchomienia komputera.  
   
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
@@ -126,6 +127,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 4.  Uruchom ponownie komputer.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)   
  [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

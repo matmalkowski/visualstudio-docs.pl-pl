@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6198cfc874eb8a547b77bfabe8b3fb3473fa92ef
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 6c68c7870430033d9ff20b94f51e516038c9eba6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749190"
 ---
-# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider — Funkcja
+# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Cvcreatedefaultmarkerseriesofdefaultprovider — funkcja
 Tworzy domyślny znacznik serii domyślnego dostawcy.  
   
 ## <a name="syntax"></a>Składnia  
@@ -43,7 +44,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  S_OK podczas serii zarówno dostawcy, jak i znacznika pomyślnie zostały utworzone lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

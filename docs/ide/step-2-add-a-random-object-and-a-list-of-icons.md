@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746835"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2: Dodawanie obiektu losowe i listy ikon
 W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dodawany do dwóch losowych komórek w TableLayoutPanel na formularzu. Aby to zrobić, użyj dwóch `new` instrukcje, aby utworzyć dwa obiekty. Pierwsza to <xref:System.Random> obiektów, takich jak używana w grze kwizu matematycznych. Jest używany w tym kodzie, aby losowo wybierać komórki w TableLayoutPanel. Drugi obiekt, który może być nowe dla Ciebie, jest <xref:System.Collections.Generic.List%601> obiektu, który jest używany do przechowywania losowo wybranych symboli.
@@ -35,7 +36,7 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
 
 3.  Zwróć uwagę, dodając obiekt listy, **IntelliSense** otwartym oknie. Poniżej przedstawiono przykład Visual C#, ale podobny tekst jest wyświetlany po dodaniu listy w Visual Basic.
 
-     ![Okno właściwości przedstawiający kliknij zdarzenie](../ide/media/express_listintellisense.png "Express_ListIntellisense") okna IntelliSense
+     ![Okno właściwości przedstawiający kliknij zdarzenie](../ide/media/express_listintellisense.png) okna IntelliSense
 
     > [!NOTE]
     >  Tylko wtedy, gdy ręcznie wprowadzić kod, wyświetlane jest okno IntelliSense. Nie pojawia się, jeśli kopiujesz i wklejasz kod.

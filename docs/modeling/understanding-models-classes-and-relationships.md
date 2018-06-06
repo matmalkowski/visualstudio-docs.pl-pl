@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748491"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicji DSL, wraz z dowolny kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL są generowane na podstawie tego pliku.
@@ -25,13 +26,13 @@ Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicj
 ## <a name="the-dsl-definition"></a>Definicja DSL
  Po otwarciu `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna podobny poniższej ilustracji.
 
- ![Projektant DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Projektant DSL](../modeling/media/dsl_designer.png)
 
  Najważniejsze informacje w definicji DSL jest wyświetlane na diagramie definicji DSL. Dodatkowe informacje, które jest również częścią DslDefinition.dsl, jest wyświetlana w Eksploratorze DSL, który zazwyczaj znajduje się na stronie diagramu. Możesz pracować z diagramem najczęściej wykonywanych zadań i Explorer DSL bardziej zaawansowane dostosowania.
 
  Diagram definicji DSL przedstawia klasy domeny, które definiują elementy modelu i relacje definiujące łącza między elementami modelu. Przedstawiono również kształty i łączniki, które są używane do wyświetlania elementów modelu dla użytkownika.
 
- ![Projektant DSL z tor](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![Projektant DSL z tor](../modeling/media/dsl_desinger.png)
 
  Po wybraniu elementu w definicji DSL, na diagramie lub w Eksploratorze DSL, informacje o tym są wyświetlane w oknie właściwości. Dodatkowe informacje mogą być wyświetlane w okienku szczegółów DSL.
 
@@ -45,13 +46,13 @@ Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicj
 
  Na ilustracji przedstawiono model, który został utworzony przez użytkownika bibliotece utworów muzycznych DSL. Albumów muzycznych są reprezentowane przez pola, które zawierają listy utworów. Artystów są reprezentowane przez zaokrąglonych pola i są podłączone do albumów, na które przyczyniły się.
 
- ![Wystąpienie modelu DSL wygenerowanego](../modeling/media/music_instance.png "Music_Instance")
+ ![Wystąpienie modelu DSL wygenerowany](../modeling/media/music_instance.png)
 
  Definicja DSL oddziela dwa aspekty. Wygląd elementów modelu diagramu modelu jest definiowana za pomocą klasy kształt i klasy łącznika. Informacje w modelu jest zdefiniowana za pomocą klasy i relacje domeny.
 
  Na poniższej ilustracji przedstawiono klasy i relacje w bibliotece utworów muzycznych definicji DSL.
 
- ![Dokumentacja i osadzanie relacje](../modeling/media/music_classes.png "Music_Classes")
+ ![Dokumentacja i osadzanie relacji](../modeling/media/music_classes.png)
 
  Na ilustracji przedstawiono cztery klasy domeny: Muzyka, albumy, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwa, tytuł i tak dalej. W modelu wystąpienia wartości niektóre z tych właściwości są wyświetlane na diagramie.
 
@@ -104,7 +105,7 @@ Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicj
 ### <a name="the-explorer-displays-the-embedding-tree"></a>Explorer wyświetla osadzania drzewa
  Definicja DSL tworzy również Eksploratora, które użytkownicy widzą obok ich diagramu modelu.
 
- ![Eksploratorze generowane DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Eksploratorze generowane DSL](../modeling/media/music_explorer.png)
 
  Eksplorator zawiera wszystkie elementy w modelu, nawet te, dla których nie zdefiniowano kształtów. Zawiera elementy i osadzania relacji, ale odwołuje się do relacji.
 
@@ -122,7 +123,7 @@ Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicj
 
  Na poniższej ilustracji, liniach między **wydawcy** klasy domeny i **PublisherCatalog** relacji domeny jest roli źródłowej. Wiersz między relacji domeny i **albumu** klasy domeny jest rola Serwer obiektów docelowych.
 
- ![Role i właściwości. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Role i właściwości.](../modeling/media/propertycode.png)
 
  Nazw skojarzonych z relacji są szczególnie istotne podczas pisania kodu programu, który przechodzi przez model. Na przykład podczas kompilowania rozwiązania DSL wygenerowana klasa wydawcy ma właściwość katalogu, który jest kolekcją albumów. Klasa albumu ma właściwość wydawcy, który jest pojedynczym wystąpieniem klasy wydawcy.
 

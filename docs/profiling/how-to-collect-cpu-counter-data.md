@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765102"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora
+# <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika Procesora
 
-Licznik zdarzeń Procesora służy do zbierania danych wydajności dotyczących sprzętu. W tym temacie przedstawiono sposób zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.
+Licznik zdarzeń Procesora służy do zbierania danych wydajności dotyczących sprzętu. W tym artykule przedstawiono sposób zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.
 
 Występują dwa typy zdarzeń licznika Procesora:
 
@@ -63,5 +64,5 @@ Występują dwa typy zdarzeń licznika Procesora:
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
 [Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
-[Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)  
-[Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
+[Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)  
+[Instrukcje: wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)

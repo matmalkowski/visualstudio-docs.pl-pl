@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747485"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
@@ -46,7 +47,7 @@ Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jes
 
 |         |         |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |  [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) o sposobie instalowania podglądu pomocy firmy Microsoft przy użyciu Instalator programu Visual Studio. |
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png)  |  [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) o sposobie instalowania podglądu pomocy firmy Microsoft przy użyciu Instalator programu Visual Studio. |
 
 ## <a name="see-also"></a>Zobacz także
 

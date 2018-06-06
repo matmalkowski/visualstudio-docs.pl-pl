@@ -18,7 +18,7 @@ ms.openlocfilehash: cb50f0a1a16a8b6a72862a3441cf1e72697042ec
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690770"
 ---
 # <a name="cores-view-logical-cores"></a>Widok rdzeni — rdzenie logiczne

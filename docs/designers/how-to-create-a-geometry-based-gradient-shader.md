@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745779"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
 
 W tym artykule pokazano, jak używać projektanta programu do cieniowania i język programu do cieniowania wykres skierowane do tworzenia cieniowania geometrycznego w gradientu. Ten program do cieniowania skaluje stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.
 
-## <a name="create-a-geometry-based-gradient-shader"></a>Utwórz na podstawie geometrii cieniowania gradientu
+## <a name="create-a-geometry-based-gradient-shader"></a>Tworzenie cieniowania gradientu geometrycznego
 
 Programu do cieniowania na podstawie geometrii można wdrożyć przy dołączaniu pozycja piksela do programu do cieniowania. W językach cieniowanie pikseli zawiera więcej informacji niż tylko jego koloru i lokalizacji na ekranie 2D. Piksel — znane jako *fragmentu* w niektórych systemach — jest to zbiór wartości, które opisują powierzchni, który odpowiada piksel. Wysokość każdego piksela obiektu 3D w przestrzeni świata wpływ na kolor ostateczne dane wyjściowe fragmentu korzysta z programu do cieniowania opisany w tym dokumencie.
 
@@ -49,13 +50,13 @@ Na poniższej ilustracji przedstawiono ukończone programu do cieniowania wykres
 > [!NOTE]
 > Na tej ilustracji kolor pomarańczowy określono, aby lepiej pokazują efekt programu do cieniowania, ale ponieważ Podgląd kształtu nie ma żadnych pozycja w przestrzeni świata, programu do cieniowania nie pełni złożono w projektancie programu do cieniowania. W rzeczywistym sceny aby zademonstrować pełnego efektu, można wyświetlić podglądu programu do cieniowania.
 
- ![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-gradient-effect-graph.png "cyfrę-gradientu-efekt-wykresu")
+ ![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-gradient-effect-graph.png)
 
  Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Informacje o sposobie w wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz **Podgląd programów do cieniowania** w [Designer programu do cieniowania](../designers/shader-designer.md)
 
  Na poniższej ilustracji przedstawiono programu do cieniowania, które jest opisane w tym dokumencie stosowana do sceny 3W, która jest uruchomiona w [porady: Model 3D terenu](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się wraz z wysokość punktu na świecie.
 
- ![Efekt gradientu stosowane do 3&#45;modelu terenu D](../designers/media/digit-gradient-effect-result.png "cyfrę-gradientu-efekt-wynik")
+ ![Efekt gradientu stosowane do 3&#45;modelu terenu D](../designers/media/digit-gradient-effect-result.png)
 
  Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3D, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

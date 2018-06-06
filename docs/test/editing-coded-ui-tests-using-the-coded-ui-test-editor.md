@@ -17,7 +17,7 @@ ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692372"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika

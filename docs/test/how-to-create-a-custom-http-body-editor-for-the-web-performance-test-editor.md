@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750698"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Porady: tworzenie niestandardowego edytora HTTP dla edytora testów wydajności sieci Web
 
@@ -52,7 +53,7 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
 5.  Z **przybornika**w obszarze **formanty standardowe** kategorii, przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię UserControl1.
 
-6.  Wybierz akcję symbolu tagu (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> kontroli, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
+6.  Wybierz akcję symbolu tagu (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> kontroli, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
 
 7.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projektu biblioteki formularzy systemu Windows i wybierz **właściwości**.
 

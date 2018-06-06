@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749547"
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
 Definicje DSL używać składni języka XPath można znaleźć określone elementy w modelu.
@@ -26,7 +27,7 @@ Definicje DSL używać składni języka XPath można znaleźć określone elemen
 
  *RelationshipName.PropertyName/!Role*
 
- ![Relacja odwołania CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")
+ ![Odwołania obiektu CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
  Składnia jest przesyłany drzewa modelu. Na przykład relacji domeny **CommentReferencesSubjects** na ilustracji powyżej ma **tematy** roli. Segment ścieżki **/! Subjectt** Określa, że ścieżka kończy się na elementy dostępne za pośrednictwem **tematy** roli.
 

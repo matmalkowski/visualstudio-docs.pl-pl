@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747459"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>I porady dotyczące ułatwień dostępu dla programu Visual Studio
 
@@ -34,13 +35,13 @@ Visual Studio ma wbudowanych funkcji ułatwień dostępu są zgodne z czytników
 
 Dla niektórych pracowników niektóre kolory są trudne do Zobacz. Jeśli mają więcej kontrastu jako kod można, ale nie chcesz używać Typowe motywy "Duży kontrast", firma Microsoft oferuje teraz motywu "Niebieski (dodatkowy kontrastu)".
 
-  ![Porównanie motywu niebieski i motyw niebieski kontrastu dodatkowe](media/blue-extra-contrast-theme.png "widocznej różnicy między motywu niebieski i motyw niebieski dodatkowe kontrast")
+  ![Porównanie motywu niebieski i motyw niebieski dodatkowe kontrast](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Umożliwia ujawnienie przydatnych informacji o kodzie adnotacji
 
 Edytor programu Visual Studio zawiera wiele tekst "skojarzenia" umożliwiające wiedzieć o cechy i funkcje w punktach określonego wiersza kodu, takie jak lightbulbs, błąd i ostrzeżenie "zygzaki" zakładki i tak dalej. Możesz użyć polecenia "Pokaż linii adnotacji" Ustaw ułatwiają odnajdywanie, a następnie przejdź między tymi skojarzenia.
 
-  ![Użyj zestawu poleceń Pokaż linii adnotacji](media/show-line-annotations-command-set.png "przedstawiono sposób ustawiania zestawu poleceń Pokaż linii adnotacji")
+  ![Użyj zestawu poleceń Pokaż linii adnotacji](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Paski narzędzi dostępu przy użyciu kombinacji klawiszy skrótów
 
@@ -82,18 +83,18 @@ Poniżej przedstawiono sposób.
 
 1. W **wyszukiwania** pole na komputerze z systemem Windows 10, typ **Zmień dźwięki systemu**.
 
-  ![Pole wyszukiwania w systemie Windows 10](media/type-here-to-search.png "polu Dźwięki typu do wyszukiwania na komputerze z systemem Windows 10")
+  ![Pole wyszukiwania w systemie Windows 10](media/type-here-to-search.png)
 
   (Alternatywnie, jeśli włączono funkcję Cortana, powiedz "Witaj Cortana", a następnie powiedz "Zmień dźwięki systemu".)
 
 2. Kliknij dwukrotnie **Zmień dźwięki systemu**.
 
-  ![Wyniki wyszukiwania w systemie Windows 10](media/change-system-sounds.png "kliknij dwukrotnie pozycję Zmień dźwięki systemu w wynikach wyszukiwania")
+  ![Wyniki wyszukiwania w systemie Windows 10](media/change-system-sounds.png)
 
 3. W **dźwięk** okno dialogowe, kliknij przycisk **dźwięki** kartę. <br><br>
  Następnie w **zdarzenia programu**, przewiń do **programu Microsoft Visual Studio**i wybierz dźwięki, które chcesz zastosować do zdarzenia, które można wybrać.
 
-  ![Dźwięki kartę dźwiękową apletu w systemie Windows 10](media/sound-applet.png "kliknij dwukrotnie pozycję Zmień dźwięki systemu w wynikach wyszukiwania")
+  ![Dźwięki kartę dźwiękową apletu w systemie Windows 10](media/sound-applet.png)
 
 4. Kliknij przycisk **OK**.
 

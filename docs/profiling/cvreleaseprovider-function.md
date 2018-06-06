@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4620a4322fedb7fb6337c3f4fd7cb7e22b39df
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: f968ffaa4e11953fd3321861b884e6dda1f39a3c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750080"
 ---
-# <a name="cvreleaseprovider-function"></a>CvReleaseProvider — Funkcja
+# <a name="cvreleaseprovider-function"></a>Cvreleaseprovider — funkcja
 Dostawca znacznika wersjach. Zwalnianie dostawcy znacznika nie wpłynie na utworzonej wcześniej znacznika serii tego dostawcy. Znacznika serie mają być wersji oddzielnie przez wywołanie CvReleaseMarkerSeries. Błąd zwolnienia dostawcy spowoduje przeciek pamięci.  
   
 ## <a name="syntax"></a>Składnia  
@@ -39,7 +40,7 @@ HRESULT CvReleaseProvider(
  S_OK pomyślnie zwolnieniu dostawcy lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

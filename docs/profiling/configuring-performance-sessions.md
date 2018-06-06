@@ -19,7 +19,7 @@ ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692203"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurowanie sesji wydajności

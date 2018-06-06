@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f79c85714ca27846c77529859789cc4465eb3ac
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 63fe3de8c4322e378f110813ac93fa523f3453ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750379"
 ---
-# <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA — Funkcja
+# <a name="cvcreatemarkerserieswithcodepagea-function"></a>Cvcreatemarkerserieswithcodepagea — funkcja
 Tworzy serię znacznika dla danego dostawcy oraz określonej strony kodowej. Ta funkcja umożliwia określanie strony kodowej jawnie dla tekstu zapisywane przez funkcje interfejsu API ANSI znacznika. Ustawianie strony kodowej mogą być przydatne w przypadku, gdy śledzenie jest przechwycony i następnie przeanalizowane na kilka różnych maszyn z różnych ustawień regionalnych/języków. Domyślnie używany jest zwracane przez funkcję GetACP() stronę kodową.  
   
 ## <a name="syntax"></a>Składnia  
@@ -51,7 +52,7 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
  S_OK serii znacznika został utworzony pomyślnie lub kod błędu w przypadku zostały wszystkie błędy. Użyj makra powiodło się/nie powiodło się, aby sprawdzić warunku błędu.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)

@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691535"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765729"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Tworzenie składników web Part dla SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników web Part dla SharePoint
   Przy użyciu składników web Part, można zmodyfikować zawartość, wyglądu i zachowania stron witryny programu SharePoint za pomocą przeglądarki. Formanty po stronie serwera, które są uruchamiane wewnątrz strony sieci web są składniki Web Part: są blokami konstrukcyjnymi stron, które znajdują się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: składnikami Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Można tworzyć i debugować części sieci web w witrynie programu SharePoint przy użyciu szablonów w programie Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691535"
   
 |Plik|Opis|  
 |----------|-----------------|  
-|Elements.XML|Zawiera informacje, które używa pliku definicji funkcji w projekcie, aby wdrożyć składnik web part.|  
+|*Elements.XML*|Zawiera informacje, które używa pliku definicji funkcji w projekcie, aby wdrożyć składnik web part.|  
 |plik .webpart|Udostępnia informacje wymagające do wyświetlania składnika web part w galerii składników web part programu SharePoint.|  
 |Plik kodu|Zawiera metody, która dodawanie formantów do składnika web part i który Generowanie niestandardowych zawartości w ramach składnika web part.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691535"
 |Nazwa formantu|Opis|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Wstawia menu ASP. Aby uzyskać więcej informacji, zobacz [informacje o formancie Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Wstawia **łącze** elementu do strony aspx i stosuje co najmniej jednego zewnętrznego arkusza stylów zdefiniowanych przez **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Wstawia formantu daty i godziny do strony .aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Wstawia walidacji zabezpieczeń na stronę .aspx|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Wstawia **łącze** element do *.aspx* strony i zastosowanie co najmniej jednego zewnętrznego arkusza stylów zdefiniowanych przez **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Wstawia formant daty/godziny w *.aspx* strony.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Wstawia weryfikacji zabezpieczeń na *.aspx* strony|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Zwraca właściwości określonej listy.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Zwraca globalnych właściwości bieżącej witryny sieci Web.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Wstawia link do źródła danych RSS do strony .aspx.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Wstawia łącze do źródła danych RSS do *.aspx* strony.|  
 |[Łącza](http://go.microsoft.com/fwlink/?LinkId=235313)|Udostępnia właściwości i metody do rejestrowania zasoby, takie jak skrypty, na stronie, dzięki czemu mogą być żądane podczas renderowania strony.|  
-|[Motyw](http://go.microsoft.com/fwlink/?LinkId=235314)|Stosuje motyw do strony .aspx.|  
+|[Motyw](http://go.microsoft.com/fwlink/?LinkId=235314)|Stosuje motyw do *.aspx* strony.|  
   
 ## <a name="debug-a-web-part"></a>Debugowanie składnika web part
  Można debugować projekt programu SharePoint, który zawiera składnik web part, tak jak będzie debugowania innych projektów programu Visual Studio. Po uruchomieniu debugera programu Visual Studio Visual Studio otworzy w witrynie programu SharePoint.  

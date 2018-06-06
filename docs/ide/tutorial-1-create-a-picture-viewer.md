@@ -11,59 +11,59 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d7051997550709790d2c12f8f8f9332f67fe6abd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748130"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
-W tym samouczku tworzenia programu, który ładuje obraz z pliku i wyświetla go w oknie. Sposób przeciągnij formanty, takie jak przycisków i pola obrazu na formularzu, ich właściwości i używanie kontenerów aby sprawnie zmienić rozmiar formularza. Można również rozpocząć pisanie kodu. Dowiesz się, jak:  
+W tym samouczku tworzenia programu, który ładuje obraz z pliku i wyświetla go w oknie. Sposób przeciągnij formanty, takie jak przycisków i pola obrazu na formularzu, ich właściwości i używanie kontenerów aby sprawnie zmienić rozmiar formularza. Można również rozpocząć pisanie kodu. Dowiesz się, jak:
 
--   Utwórz nowy projekt.  
+-   Utwórz nowy projekt.
 
--   Test (debugowanie) aplikacji.  
+-   Test (debugowanie) aplikacji.
 
--   Dodawanie podstawowych formantach, takich jak przyciski i pola wyboru do formularza.  
+-   Dodawanie podstawowych formantach, takich jak przyciski i pola wyboru do formularza.
 
--   Umieść formanty formularza za pomocą układów.  
+-   Umieść formanty formularza za pomocą układów.
 
--   Dodaj **Otwórz plik** i **kolor** okien dialogowych do formularza.  
+-   Dodaj **Otwórz plik** i **kolor** okien dialogowych do formularza.
 
--   Pisanie kodu za pomocą wstawki kodu programu IntelliSense i kod.  
+-   Pisanie kodu za pomocą wstawki kodu programu IntelliSense i kod.
 
--   Zapis metody obsługi zdarzeń.  
+-   Zapis metody obsługi zdarzeń.
 
- Po zakończeniu program będzie wyglądać podobnie jak na poniższej ilustracji.  
+ Po zakończeniu program będzie wyglądać podobnie jak na poniższej ilustracji.
 
- ![Obraz, który można utworzyć w tym samouczku](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
-Obraz, który można utworzyć w tym samouczku  
+ ![Obraz, który można utworzyć w tym samouczku](../ide/media/express_pictureviewerdone.png) obraz, który można utworzyć w tym samouczku
 
 ## <a name="tutorial-links"></a>Samouczek łącza
 
- Aby pobrać ukończoną wersję przykładu, zobacz [pełnego obrazu podglądu samouczek próbki](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+ Aby pobrać ukończoną wersję przykładu, zobacz [pełnego obrazu podglądu samouczek próbki](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [jak: utworzyć podglądu obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak: utworzyć podglądu obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ ![łącze do wideo](../data-tools/media/playvideo.gif)wersję wideo tego tematu, zobacz [jak: utworzyć podglądu obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak: utworzyć podglądu obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
->  Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio. Visual C# i Visual Basic są przedstawione w tym samouczku, dlatego skupić się na informacje specyficzne dla języka programowania, którego używasz.  
->   
->  Aby wyświetlić kod w języku Visual Basic, wybierz pozycję **VB** w górnej części bloki kodu, a następnie wyświetlić kodu Visual C#, wybierz **C#** kartę. Jeśli interesuje Cię szkoleniowe dotyczące języka Visual C++, zobacz [wprowadzenie](../ide/getting-started-with-cpp-in-visual-studio.md) i [samouczek języka C++](http://www.cplusplus.com/doc/tutorial/).  
->   
+>  Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio. Visual C# i Visual Basic są przedstawione w tym samouczku, dlatego skupić się na informacje specyficzne dla języka programowania, którego używasz.
+>
+>  Aby wyświetlić kod w języku Visual Basic, wybierz pozycję **VB** w górnej części bloki kodu, a następnie wyświetlić kodu Visual C#, wybierz **C#** kartę. Jeśli interesuje Cię szkoleniowe dotyczące języka Visual C++, zobacz [wprowadzenie](../ide/getting-started-with-cpp-in-visual-studio.md) i [samouczek języka C++](http://www.cplusplus.com/doc/tutorial/).
+>
 >  Jeśli chcesz się dowiedzieć, jak pisać aplikacje Visual C# lub Visual Basic platformy uniwersalnej systemu Windows, zobacz [aplikacji platformy uniwersalnej systemu Windows kompilacji](https://developer.microsoft.com/windows/apps).
 
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="related-topics"></a>Tematy pokrewne
 
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Krok 1: Utwórz projekt aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Rozpocznij od utworzenia projektu aplikacji formularzy systemu Windows.|  
-|[Krok 2: Uruchomienie programu](../ide/step-2-run-your-program.md)|Uruchom program aplikacji formularzy systemu Windows utworzonego w poprzednim kroku.|  
-|[Krok 3: Ustawienie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularza za pomocą **właściwości** okna.|  
-|[Krok 4: Określenie układu formularza przy użyciu formantu TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Dodaj `TableLayoutPanel` sterowania do formularza.|  
-|[Krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` sterowania do formularza. Dodawanie przycisków do formularza.|  
-|[Krok 6: Nazw formantom przycisków](../ide/step-6-name-your-button-controls.md)|Zmień nazwę przyciski komputera na bardziej użyteczny.|  
-|[Krok 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|Dodaj `OpenFileDialog` składnika i `ColorDialog` składnika do formularza.|  
-|[Krok 8: Wpisywanie kodu dla programu obsługi zdarzeń przycisk obrazu](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pisanie kodu za pomocą narzędzia IntelliSense.|  
-|[Krok 9: Przejrzyj, komentarzy i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i testowanie kodu. W razie potrzeby dodaj komentarze.|  
-|[Krok 10: Zapisywanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod umożliwiający innych przycisków i służbowego pola wyboru przy użyciu funkcji IntelliSense.|  
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Krok 1: Utwórz projekt aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Rozpocznij od utworzenia projektu aplikacji formularzy systemu Windows.|
+|[Krok 2: Uruchomienie programu](../ide/step-2-run-your-program.md)|Uruchom program aplikacji formularzy systemu Windows utworzonego w poprzednim kroku.|
+|[Krok 3: Ustawienie właściwości formularza](../ide/step-3-set-your-form-properties.md)|Zmień wygląd formularza za pomocą **właściwości** okna.|
+|[Krok 4: Określenie układu formularza przy użyciu formantu TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Dodaj `TableLayoutPanel` sterowania do formularza.|
+|[Krok 5: Dodawanie formantów do formularza](../ide/step-5-add-controls-to-your-form.md)|Dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` sterowania do formularza. Dodawanie przycisków do formularza.|
+|[Krok 6: Nazw formantom przycisków](../ide/step-6-name-your-button-controls.md)|Zmień nazwę przyciski komputera na bardziej użyteczny.|
+|[Krok 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md)|Dodaj `OpenFileDialog` składnika i `ColorDialog` składnika do formularza.|
+|[Krok 8: Wpisywanie kodu dla programu obsługi zdarzeń przycisk obrazu](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pisanie kodu za pomocą narzędzia IntelliSense.|
+|[Krok 9: Przejrzyj, komentarzy i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md)|Przejrzyj i testowanie kodu. W razie potrzeby dodaj komentarze.|
+|[Krok 10: Zapisywanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napisz kod umożliwiający innych przycisków i służbowego pola wyboru przy użyciu funkcji IntelliSense.|
 |[Krok 11: Uruchom program i próbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md)|Uruchom program i kolor tła. Spróbuj inne funkcje, takie jak zmiana kolory, czcionki i obramowanie.|

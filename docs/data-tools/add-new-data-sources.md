@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745597"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła danych* odwołuje się do obiektów .NET połączenia z magazynem danych i udostępniania danych do aplikacji .NET. Projektanci programu Visual Studio może używać źródła danych do generowania kodu umożliwiającego, który wiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z danych wyjściowych **źródeł danych** okna. Tego rodzaju źródła danych może być:
@@ -39,11 +40,11 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 
  Możesz tworzyć i edytować źródła danych za pomocą **Kreator konfiguracji źródła danych** w aplikacji formularzy systemu Windows lub Windows Presentation Foundation. Entity Framework, należy najpierw utworzyć klas jednostek, a następnie uruchomić kreatora, wybierając **projektu** > **Dodaj nowe źródło danych** (opisany bardziej szczegółowo w dalszej części tego artykułu).
 
- ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png "Kreator konfiguracji źródła danych")
+ ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
  Po utworzeniu źródła danych, zostanie wyświetlony w **źródeł danych** okna narzędzia (Shift + Alt + D lub **widoku** > **inne okna**  >  **Źródła danych**). Możesz przeciągnąć źródła danych z **źródeł danych** okna na powierzchni projektowej formularza lub kontrolki. Powoduje to schematyczny kod służący do wygenerowania — kod, który zawiera dane, które pochodzą z magazynu danych do użytkownika. Na poniższej ilustracji przedstawiono zestawu danych, który został porzucony na formularzu systemu Windows. Jeśli wybrano F5 w aplikacji, dane z bazy danych pojawią się w formantach formularza.
 
- ![Źródło danych operacji przeciągania](../data-tools/media/raddata-data-source-drag-operation.png "operacji przeciągania raddata źródła danych")
+ ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Źródło danych dla bazy danych lub pliku bazy danych
 
@@ -53,15 +54,15 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 ### <a name="entity-classes"></a>Klas jednostek
  Aby utworzyć model narzędzia Entity Framework jako źródło danych, najpierw uruchom **kreatora modelu danych jednostki** do tworzenia klas jednostek (**projektu** > **Dodaj nowy element**  >  **Modelu danych jednostki ADO.NET**).
 
- ![Nowy element projektu modelu programu Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata nowego programu Entity Framework modelu projektu elementu")
+ ![Nowy element projektu modelu programu Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Wybierz metodę, za pomocą którego chcesz wygenerować model.
 
- ![Kreator modelu danych jednostki](../data-tools/media/raddata-entity-data-model-wizard.png "raddata kreatora modelu danych jednostki")
+ ![Kreator modelu danych jednostki](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Dodaj modelu jako źródła danych. Klasy, które zostały wygenerowane są wyświetlane w **Kreator konfiguracji źródła danych** po wybraniu **obiektów** kategorii.
 
- ![Kreator konfiguracji źródła danych z klas jednostek](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Kreator konfiguracji źródła danych z klasami jednostki")
+ ![Kreator konfiguracji źródła danych z klasami jednostki](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Źródło danych dla usługi
  Aby utworzyć źródło danych z usługi, uruchom **Kreator konfiguracji źródła danych** i wybierz polecenie **usługi** typ źródła danych. Jest to naprawdę właśnie skrót do **Dodaj odwołanie do usługi** okno dialogowe, które można również przejść, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając **dodać odwołania do usługi** .

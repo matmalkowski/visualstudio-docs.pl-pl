@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34469001"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750301"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 
@@ -34,11 +34,13 @@ Z tego samouczka, dowiesz się, jak:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- 2017 Visual Studio z następującymi opcjami:
+- 2017 Visual Studio w systemie Windows z następującymi opcjami:
   - **Programowania Python** obciążenia (**obciążenia** kartę w Instalatorze). Aby uzyskać instrukcje, zobacz [obsługi instalacji języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git dla systemu Windows** i **rozszerzenie GitHub dla programu Visual Studio** na **pojedynczych składników** w obszarze **kodu narzędzia**.
 
 Szablony projektów Django również są dołączane do wszystkich starszych wersji narzędzi Python Tools for Visual Studio, chociaż szczegóły mogą się różnić od co opisano w tym samouczku (szczególnie różni się w starszych wersjach platformy Django).
+
+Tworzenie Python nie jest obecnie obsługiwany w programie Visual Studio dla komputerów Mac. W systemie Mac i Linux, użyj [rozszerzenia języka Python w programie Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>"Programu visual Studio" i "Django projektów"
 

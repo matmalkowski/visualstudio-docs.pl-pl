@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691137"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748062"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 Zestaw danych znajduje się w pamięci kopia danych. Jeśli zmodyfikujesz danych jest dobrym rozwiązaniem, aby zapisać te zmiany w bazie danych. Można to robić na jeden z trzech sposobów:
@@ -60,7 +60,7 @@ Jeśli znasz TableAdapters, można przejść bezpośrednio do jednej z poniższy
 
  Jeśli wysłać zmiany w bazie danych, drugi krok jest wymagany. Jeśli nie korzystasz z formantów powiązanych z danymi, następnie należy ręcznie wywołać metody aktualizacji TableAdapter tego samego (lub adapter danych), używany do wypełniania zestawu danych. Jednak umożliwia także różne karty, na przykład, aby przenieść dane z jednego źródła danych do innego lub zaktualizować wiele źródeł danych. Jeśli nie są używanie powiązania danych i zapisywania zmian dla tabele powiązane, należy ręcznie utworzyć wystąpienia zmiennej automatycznie generowanej klasy TableAdapterManager, a następnie wywołaj jej metodę UdpateAll.
 
- ![Aktualizacje zbiorów danych Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") procesu i roli DataRowVersion w Pomyślna aktualizacja dwuetapowa aktualizacji
+ ![Aktualizacje zbiorów danych Visual Basic](../data-tools/media/vbdatasetupdates.gif) procesu i roli DataRowVersion w Pomyślna aktualizacja dwuetapowa aktualizacji
 
  Zestaw danych zawiera kolekcje tabel, które zawierają kolekcji wierszy. Jeśli zamierzasz później zaktualizować źródła danych, musi użyć metody, dla właściwości DataTable.DataRowCollection podczas dodawania i usuwania wierszy. Te metody wykonywania śledzenia zmian, które ma potrzebne do aktualizowania źródła danych. Jeśli wywołujesz kolekcji Element RemoveAt we właściwości wierszy usunięcia nie będą przekazywane w bazie danych.
 

@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746263"
 ---
 # <a name="how-to-specify-build-events-c"></a>Porady: Określanie kompilacji zdarzeń (C#)
 
@@ -148,7 +149,7 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 
 1.  Tworzenie aplikacji systemu Windows dla projektu do opublikowania. Z **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **projektu**.
 
-2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **klasycznego pulpitu systemu Windows**, a następnie kliknij przycisk **aplikacji formularzy systemu Windows** szablon. Nazwij projekt `CSWinApp`.
+2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **Windows Desktop**, a następnie kliknij przycisk **aplikacji formularzy systemu Windows** szablonu. Nazwij projekt `CSWinApp`.
 
 3.  W projekcie wybrana w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
 
@@ -189,4 +190,4 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 - [Strona zdarzenia kompilacji, Projektant projektu (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Porady: Określanie kompilacji zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)
+- [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750938"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytowanie mieszanki testów, aby określić, który wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika do scenariusza testów obciążenia
 
@@ -36,7 +37,7 @@ Tworząc nowy scenariusz przy użyciu Kreatora nowego testu obciążenia, można
 
 Można dodać więcej wydajności sieci Web i testów jednostkowych z różnymi tekst scenariusza za pomocą edytora testu obciążenia.
 
-![Dodawanie testu do istniejącego testu obciążenia](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Dodawanie testu do istniejącego testu obciążenia](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Aby dodać więcej testów do istniejącego scenariusza
 
@@ -55,7 +56,7 @@ Można dodać więcej wydajności sieci Web i testów jednostkowych z różnymi 
 5.  (Opcjonalnie) Dostosuj kontroli mieszanego do określenia dystrybucji testu. Aby uzyskać więcej informacji, zobacz [o różnych kontroli](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Usuwanie testów ze scenariusza
- ![Usuwanie testu z istniejącego testu obciążenia](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Usuwanie testu z istniejącego testu obciążenia](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Aby usunąć testy z scenariusza
 

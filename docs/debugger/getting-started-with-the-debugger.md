@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766262"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugować przy użyciu programu Visual Studio
 
@@ -39,6 +40,14 @@ W tym samouczku obejmują:
 > * Sprawdź zmienne w etykietki danych i debugera systemu windows
 > * Sprawdź stosu wywołań
 > * Przy użyciu Pomocnika wyjątków
+
+## <a name="prerequisites"></a>Wymagania wstępne
+
+* Musi mieć Visual Studio 2017 r zainstalowany i. **NET development pulpitu** obciążenia.
+
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+
+    Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalator programu Visual Studio. Wybierz. **NET development pulpitu** obciążenia, a następnie wybierz **Modyfikuj**.
 
 ## <a name="start-the-debugger"></a>Uruchom debuger!
 

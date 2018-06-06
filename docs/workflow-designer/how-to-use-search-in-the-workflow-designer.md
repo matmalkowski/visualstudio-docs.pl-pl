@@ -10,11 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b5dfdd4b4d05969406f93801bcf87880949e41a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751666"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Porady: należy użyć funkcji wyszukiwania w Projektancie przepływów pracy
 
@@ -40,7 +41,7 @@ Szybkie find znajduje następujące w Projektancie:
 
 3.  Wyszukiwany termin będą znajdować się w bieżącym przepływu pracy. Poniższy zrzut ekranu przedstawia nazwę wyświetlaną działania znajdujących się w projektancie.
 
-     ![Wyniki wyszukiwania w Projektancie przepływów pracy](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![Wynik wyszukiwania w Projektancie przepływów pracy](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Znajdź w plikach
 

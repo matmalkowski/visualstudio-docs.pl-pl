@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b51070a3f3368dbff636858c9a2e1ebf2e9f80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 878a2c76bbc57983791b65b73c8e0580dbfa3cfd
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767494"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Porady: dodawanie niestandardowego węzła SharePoint do Eksploratora serwera
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Porady: Dodawanie niestandardowego węzła SharePoint do Eksploratora serwera
   Można dodać niestandardowe węzłów w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**. Jest to przydatne, jeśli chcesz wyświetlić dodatkowe składniki programu SharePoint, które nie są wyświetlane w **Eksploratora serwera** domyślnie. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Aby dodać niestandardowe węzeł, należy najpierw utworzyć klasę, która definiuje nowy węzeł. Następnie utwórz rozszerzenie dodaje węzeł jako element podrzędny istniejący węzeł.  
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]  
   
-## <a name="complete-example"></a>Kompletny przykład  
+## <a name="complete-example"></a>Pełny przykład
  W poniższym przykładzie kodu przedstawiono kompletny kod, aby zdefiniować prosty węzeł i dodaj go jako element podrzędny węzła witryny programu SharePoint w **Eksploratora serwera**.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="deploying-the-extension"></a>Wdrażanie rozszerzenia  
  Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Porady: rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

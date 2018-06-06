@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747232"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio
 
@@ -48,7 +49,7 @@ Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, 
 
 2. Rozwiń węzeł **środowiska**, a następnie wybierz pozycję **klawiatury**.
 
-   ![Wyświetlić skróty klawiaturowe w oknie dialogowym Opcje](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Wyświetlić skróty klawiaturowe w opcje — Okno dialogowe](../ide/media/optionskeyboard.png)
 
 3. W **Pokaż polecenia zawierające** wpisz całość lub część nazwy polecenia, bez spacji.
 
@@ -60,7 +61,7 @@ Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, 
 
 5. Jeśli polecenie ma skrót klawiaturowy, zostanie wyświetlony w **skrót(y) dla wybranego polecenia** listy.
 
-   ![Wyświetl skrótu dla określonego polecenia](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Wyświetl skrótu dla określonego polecenia](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Dostosowywanie skrótów klawiaturowych
 
@@ -86,7 +87,7 @@ Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, 
 
      Jeśli skrót jest już przypisany do innego polecenia, zostanie wyświetlony w **skrót aktualnie używany przez** pole. W takim przypadku wybierz **Backspace** klawisz, aby usunąć ten skrót przed przystąpieniem do innego.
 
-    ![Określ inny skrót dla polecenia](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Określ inny skrót dla polecenia](../ide/media/reassignshortcut.png)
 
 7. Wybierz **przypisać** przycisku.
 
@@ -107,7 +108,7 @@ Możesz udostępniać własne skróty, eksportując je do pliku, a następnie pr
 
 4. Wybierz **klawiatury** pole wyboru, a następnie wybierz pozycję **dalej** przycisku.
 
-    ![Eksport dostosowane tylko skróty klawiaturowe](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Eksportuj tylko dostosowane skróty klawiaturowe](../ide/media/exportshortcuts.png)
 
 5. W **co chcesz nazwać plik swoich ustawień?** i **Przechowuj plik moich ustawień w tym katalogu** pola, albo pozostaw wartości domyślne lub określić różne wartości, a następnie wybierz  **Zakończ** przycisku.
 
@@ -129,7 +130,7 @@ Możesz udostępniać własne skróty, eksportując je do pliku, a następnie pr
 
 7. Wybierz **klawiatury** pole wyboru, a następnie wybierz pozycję **Zakończ** przycisku.
 
-    ![Importuj tylko dostosować skróty klawiaturowe](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importuj tylko dostosowane skróty klawiaturowe](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Zobacz także
 

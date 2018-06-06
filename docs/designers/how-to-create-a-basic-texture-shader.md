@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7bd7368dbdd5d66f1921d555fbbf731cebd664
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747056"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Porady: tworzenie cieniowania tekstury podstawowej
 
 W tym artykule przedstawiono sposób użycia Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL) do utworzenia cieniowania jednym tekstury. Ten program do cieniowania Ustawia kolor końcowy bezpośrednio do RGB i wartości alfa, które są pobierane z tekstury.
 
-## <a name="create-a-basic-texture-shader"></a>Utwórz cieniowania tekstury podstawowej
+## <a name="create-a-basic-texture-shader"></a>Tworzenie cieniowania tekstury podstawowej
 
 Można zaimplementować cieniowania podstawowy, jeden tekstury pisząc wartości kolorów i alfa próbki tekstury bezpośrednio na kolor ostateczne dane wyjściowe.
 
@@ -47,7 +48,7 @@ Na poniższej ilustracji przedstawiono ukończone programu do cieniowania wykres
 > [!NOTE]
 > Na tej ilustracji płaszczyźnie jest używany jako kształtu podglądu, a określono tekstury lepiej wykazać efekt programu do cieniowania.
 
-![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-texture-effect.png "cyfrę tekstury efektu")
+![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-texture-effect.png)
 
 Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz [Designer programu do cieniowania](../designers/shader-designer.md)
 

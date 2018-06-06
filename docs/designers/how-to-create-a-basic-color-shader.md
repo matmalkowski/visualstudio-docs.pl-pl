@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747121"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Porady: tworzenie cieniowania koloru podstawowego
 
@@ -41,7 +42,7 @@ Na poniższej ilustracji przedstawiono ukończone programu do cieniowania wykres
 > [!NOTE]
 > Na ilustracji kolor pomarańczowy określono lepiej wykazać efekt programu do cieniowania.
 
-![Wykres programu do cieniowania i jego wynik 3&#45;modelu D](../designers/media/digit-flat-color-effect.png "cyfrę płaski — kolor-efekt uboczny")
+![Wykres programu do cieniowania i jego wynik 3&#45;modelu D](../designers/media/digit-flat-color-effect.png)
 
 Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz [Designer programu do cieniowania](../designers/shader-designer.md).
 

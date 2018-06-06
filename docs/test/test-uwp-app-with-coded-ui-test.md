@@ -16,7 +16,7 @@ ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34694122"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Tworzenie kodowanego interfejsu użytkownika teście aplikacji platformy uniwersalnej systemu Windows

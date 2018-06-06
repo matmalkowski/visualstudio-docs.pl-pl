@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752699"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 
@@ -33,13 +34,13 @@ Następujące narzędzia są dostępne jako domyślne na karcie HTML.
 
 **Pointer**
 
-![ASP.NET Mobile projektanta strony HTML wskaźnika](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Wskaźnik strony projektanta HTML ASP.NET Mobile](../../ide/reference/media/vxpointer.gif)
 
 To narzędzie jest domyślnie zaznaczona, po otwarciu dowolnej karcie przybornika. Nie można usunąć. Wskaźnik umożliwia przeciągnij obiekty na powierzchnię projektu widoku, zmieniać ich rozmiar i zmiany ich położenia na stronie lub formularza. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
 
 **Dane wejściowe (przycisk)**
 
-![Przycisk HTML strony sieci web](../../ide/reference/media/vxbutton.gif "vxButton")
+![Przycisk HTML strony sieci web](../../ide/reference/media/vxbutton.gif)
 
 Wstawia `input` elementu `type="button"`. Aby zmienić tekst, który jest wyświetlany `name` właściwości. Domyślnie `id="Button1"` jest wstawiany dla przycisku pierwszej `id="Button2"` na sekundę i tak dalej.
 
@@ -51,7 +52,7 @@ Przeciągnięcie **danych wejściowych (przycisk)** na powierzchnię projektu wi
 
 **Dane wejściowe (Resetowanie)**
 
-![HTMLpageResetButton — zrzut ekranu](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton — zrzut ekranu](../../ide/reference/media/vxreset.gif)
 
 Wstawia `input` elementu `type="reset"`. Aby zmienić tekst, który jest wyświetlany `name` właściwości. Domyślnie `id="Reset1"` dodaje się pierwszy resetowania przycisku `id="Reset2"` na sekundę i tak dalej.
 
@@ -63,7 +64,7 @@ Przeciągnięcie **dane wejściowe (Resetowanie)** na powierzchnię projektu wid
 
 **Dane wejściowe (Prześlij)**
 
-![HTMLpageToolbarSubmitButton — zrzut ekranu](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton — zrzut ekranu](../../ide/reference/media/vxsubmit.gif)
 
 Wstawia `input` elementu `type="submit"`. Aby zmienić tekst, który jest wyświetlany `name` właściwości. Domyślnie `id="Submit1"` dodaje się do pierwszego przycisku Prześlij `id="Submit2"` na sekundę i tak dalej.
 
@@ -75,7 +76,7 @@ Przeciągnięcie **danych wejściowych (Prześlij)** na powierzchnię projektu w
 
 **Dane wejściowe (tekst)**
 
-![HTMLpageToolbarTextField — zrzut ekranu](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField — zrzut ekranu](../../ide/reference/media/vxtextfield.gif)
 
 Wstawia `input` elementu `type="text"` w dokumencie. Aby zmienić domyślny tekst, który jest wyświetlany `value` atrybutu. Domyślnie `id="Text1"` jest wstawiana pierwsze pole tekstowe, `id="Text2"` na sekundę i tak dalej.
 
@@ -90,7 +91,7 @@ Przeciągnięcie **danych wejściowych (tekst)** na powierzchnię projektu widok
 
 **Dane wejściowe (plik)**
 
-![Strona HTML pole pliku](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Strona HTML pole pliku](../../ide/reference/media/vxfilefield.gif)
 
 Wstawia `input` elementu `type="file"` w dokumencie. Domyślnie `id="File1"` jest wstawiany pierwszego pola, pliku, `id="File2"` na sekundę i tak dalej.
 
@@ -105,7 +106,7 @@ Przeciągnięcie **danych wejściowych (plik)** na powierzchnię projektu widoku
 
 **Dane wejściowe (hasło)**
 
-![Visual Studio Password Field](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Pole hasła programu Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Wstawia `input` elementu `type="password"`. Domyślnie `id="Password1"` pierwsze pole hasło jest wstawiana `id="Password2"` na sekundę i tak dalej.
 
@@ -120,7 +121,7 @@ Przeciągnięcie **danych wejściowych (hasło)** na powierzchnię projektu wido
 
 **Dane wejściowe (pole wyboru)**
 
-![HTML strony sieci Web opcja Checkbox w przyborniku](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![HTML strony sieci Web opcja Checkbox w przyborniku](../../ide/reference/media/vxcheckbox.gif)
 
 Wstawia `input` elementu `type="checkbox"`. Aby zmienić tekst, który jest wyświetlany `name` właściwości. Domyślnie `id="Checkbox1"` jest wstawiany pierwszego pola wyboru `id="Checkbox2"` na sekundę i tak dalej.
 
@@ -132,7 +133,7 @@ Przeciągnięcie **danych wejściowych (pole wyboru)** na powierzchnię projektu
 
 **Dane wejściowe (przycisk radiowy)**
 
-![VisualStudioHTMLpageRadioButton — zrzut ekranu](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton — zrzut ekranu](../../ide/reference/media/vxradio.gif)
 
 Wstawia `input` elementu `type="radio"`. Aby zmienić tekst, który jest wyświetlany `name` właściwości. Domyślnie `id="Radio1"` dodaje się do pierwszego przycisku radiowego `id="Radio2"` na sekundę i tak dalej.
 
@@ -144,7 +145,7 @@ Przeciągnięcie **danych wejściowych (przycisk radiowy)** na powierzchnię pro
 
 **Dane wejściowe (ukryte)**
 
-![Strona HTML — ukryty element](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Ukryty element strony HTML](../../ide/reference/media/vxhidden.gif)
 
 Wstawia `input` elementu `type="hidden"`. Domyślnie `id="Hidden1"` dodaje się do pierwszego pola ukrytego `id="Hidden2"` na sekundę i tak dalej.
 
@@ -156,7 +157,7 @@ Przeciągnięcie **danych wejściowych (ukryte)** na powierzchnię projektu wido
 
 **Textarea**
 
-![Strony HTML narzędzi tekstowej](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Pasek narzędzi strony HTML obszaru tekstu](../../ide/reference/media/vxtextarea.gif)
 
 Wstawia `textarea` elementu. Zmień rozmiar obszaru tekstu lub użyj jej paski przewijania, aby wyświetlić tekstu, który wychodzi poza jego obszar wyświetlania. Aby zmienić domyślny tekst, który jest wyświetlany `value` atrybutu. Domyślnie `id="textarea1"` jest wstawiane pierwszego obszaru tekstu `id=" textarea 2"` na sekundę i tak dalej.
 
@@ -171,7 +172,7 @@ Przeciągnięcie **Textarea** na powierzchnię projektu widoku, do dokumentu jes
 
 **Tabela**
 
-![HTMLpageToolbarTable — zrzut ekranu](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable — zrzut ekranu](../../ide/reference/media/vxtable.gif)
 
 Wstawia `table` elementu.
 
@@ -183,7 +184,7 @@ Przeciągnięcie **tabeli** na powierzchnię projektu widoku, do dokumentu jest 
 
 **Obraz**
 
-![Strona HTML — element obrazu](../../ide/reference/media/vximage.gif "vxImage")
+![Strona HTML — element obrazu](../../ide/reference/media/vximage.gif)
 
 Wstawia `img` elementu. Edytuj ten element, aby określić jego `src` i jego `alt` tekstu.
 
@@ -193,9 +194,9 @@ Przeciągnięcie **obrazu** na powierzchnię projektu widoku, do dokumentu jest 
 <img alt="" src="">
 ```
 
-**Wybierz**
+**Select**
 
-![Strona HTML listy rozwijanej przybornika](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Strona HTML listy rozwijanej przybornika](../../ide/reference/media/vxdropdown.gif)
 
 Wstawia listy rozwijanej `select` elementu (bez `size` atrybutu). Domyślnie `id="select1"` jest wstawiany pierwszego pola listy, `id="select2"` na sekundę i tak dalej.
 
@@ -209,7 +210,7 @@ Można utworzyć wiele wierszy `select` elementu przez zwiększenie wartości w�
 
 **Linia pozioma**
 
-![Strona HTML poziome elementu reguły](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Strona HTML poziome elementu reguły](../../ide/reference/media/vxhorizontal.gif)
 
 Wstawia `hr` elementu. Aby zwiększyć grubość linii, należy edytować `size` atrybutu.
 
@@ -221,7 +222,7 @@ Przeciągnięcie **poziomą** na powierzchnię projektu widoku, do dokumentu jes
 
 **Div**
 
-![Strona HTML etykiety](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Strona HTML etykiety](../../ide/reference/media/vxlabel.gif)
 
 Wstawia `div` element, który zawiera `ms_positioning="FlowLayout"` atrybutu. Z wyjątkiem szerokość i wysokość ten element jest taki sam jak panelu układu przepływu. Formatowanie tekstu, który znajduje się w `div` elementu, Dodaj `class="stylename"` atrybut do tagu otwierającym.
 

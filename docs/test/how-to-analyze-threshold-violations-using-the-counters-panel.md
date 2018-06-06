@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751809"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Porady: analizowanie naruszeń progu za pomocą panelu liczników w analizatorze testów obciążenia
 
@@ -22,21 +23,21 @@ Panel liczników jest widoczny w widokach Wykresy i Tabele w Analizatorze testu 
 
  Naruszenia progu są skojarzone z konkretnych licznikach wydajności i wskazywać, że licznik wydajności przekroczony lub spadła poniżej ustaw wartość progu. Ikony w panelu liczników komunikacji naruszenia progu.
 
- ![Panel liczników komputera węzła](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Licznik węźle panelu](../test/media/ltest_compnode.png)
 
  Ikona naruszenie progu jest przenoszone z węzła drzewa, w którym licznik nieudanych znajduje się w katalogu głównym. Ikona ostrzega o tym użytkownika, to naruszenie na licznika, który może nie być widoczne w drzewie, ponieważ nie zostały rozszerzone drzewa. Przykład ikony są widoczne w **węzła komputerów** w panelu liczników na poprzedniej ilustracji.
 
  Ikona będzie jedną z następujących czynności:
 
- ![Nie naruszenie progu](../test/media/icon_ltest_1.gif "Icon_LTest_1") nie naruszenie progu.
+ ![Nie naruszenie progu](../test/media/icon_ltest_1.gif) Nie naruszenie progu.
 
- ![Naruszenie progu krytycznego na ostatniego interwału](../test/media/icon_ltest_2.gif "Icon_LTest_2") naruszenie progu krytycznego podczas ostatniego interwału.
+ ![Naruszenie progu krytycznego wynoszącego w ostatnim interwale](../test/media/icon_ltest_2.gif) Naruszenie progu krytycznego podczas ostatniego interwału.
 
- ![Naruszenie progu krytycznego dla poprzedniego interwału](../test/media/icon_ltest_3.gif "Icon_LTest_3") naruszenie progu krytycznego podczas poprzedniego interwału.
+ ![Naruszenie progu krytycznego dla poprzedniego interwału](../test/media/icon_ltest_3.gif) Naruszenie progu krytycznego podczas poprzedniego interwału.
 
- ![Naruszenie progu ostrzegawczego w ostatnim interwale](../test/media/icon_ltest_4.gif "Icon_LTest_4") naruszenie progu ostrzegawczego podczas ostatniego interwału.
+ ![Naruszenie progu ostrzegawczego w ostatnim interwale](../test/media/icon_ltest_4.gif) Naruszenie progu ostrzegawczego podczas ostatniego interwału.
 
- ![Naruszenie progu ostrzegawczego dla poprzedniego interwału](../test/media/icon_ltest_5.gif "Icon_LTest_5") naruszenie progu ostrzegawczego podczas poprzedniego interwału.
+ ![Naruszenie progu ostrzegawczego dla poprzedniego interwału](../test/media/icon_ltest_5.gif) Naruszenie progu ostrzegawczego podczas poprzedniego interwału.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Aby analizować naruszenie progowe w panelu Liczniki.
 

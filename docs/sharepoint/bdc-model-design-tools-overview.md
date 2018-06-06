@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691482"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765755"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
   Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu narzędzia Projektant BDC **szczegóły metody usługi łączności danych biznesowych** okno i **Eksplorator modelu BDC**.  
@@ -51,19 +51,19 @@ ms.locfileid: "34691482"
   
  Aby otworzyć projektanta usługi łączności danych biznesowych, kliknij dwukrotnie plik modelu w projekcie, lub Otwórz menu skrótów dla pliku modelu, a następnie wybierz pozycję **Otwórz**. Dodawanie jednostki do modelu, przeciągając lub kopiowanie **jednostki** z **przybornika** do projektanta. Aby utworzyć skojarzenie między dwiema jednostkami, wybierz **skojarzenia** kontroli w **przybornika**, wybierz pierwszy jednostki, a następnie wybierz jednostki drugiego.  
   
-## <a name="bdc-method-details-window"></a>Okno Szczegóły BDC — metoda
+## <a name="bdc-method-details-window"></a>Okno Szczegóły metody usługi łączności danych biznesowych
  Użyj **szczegóły metody usługi łączności danych biznesowych** okno, aby określić parametry wystąpień i filtrować deskryptory metody.  
   
  Mogą szybko generować metod wyszukiwania, określonej metody wyszukiwania, tworzenia, aktualizacji i Deleter **szczegóły metody usługi łączności danych biznesowych** okna. Podczas generowania tych metod, Visual Studio dodaje metadane, takie jak parametry, wystąpienia i deskryptorów typu metody. Można zmodyfikować te metadane do zaspokojenia konkretnego scenariusza.  
   
- Aby otworzyć **szczegóły metody usługi łączności danych biznesowych** okna, na pasku menu wybierz **widoku**, **inne okna**, **szczegóły metody usługi łączności danych biznesowych**.  
+ Aby otworzyć **szczegóły metody usługi łączności danych biznesowych** okna, na pasku menu wybierz **widoku** > **inne okna** > **szczegóły metody usługi łączności danych biznesowych** .  
   
  Aby wyświetlić metod w **szczegóły metody usługi łączności danych biznesowych** okna, wybierz jednostki w Projektancie usługi łączności danych biznesowych. Metody wybranego obiektu są wyświetlane w **szczegóły metody usługi łączności danych biznesowych** okna. Jeśli nie wybierzesz jednostki w Projektancie BDC **szczegóły metody usługi łączności danych biznesowych** wyświetlane żadne informacje.  
   
  Rozwiń lub Zwiń węzłów w **szczegóły metody usługi łączności danych biznesowych** okno, aby określić parametry, wystąpień i filtrować deskryptorów. Użyj **Eksplorator modelu BDC** do definiowania deskryptory typu.  
   
 ## <a name="bdc-explorer"></a>Eksplorator modelu BDC
- **Eksplorator modelu BDC** Wyświetla elementy wchodzące w skład modelu. Aby otworzyć **Eksplorator modelu BDC**, na pasku menu wybierz **widoku**, **inne okna**, **Eksplorator modelu BDC**. Aby przeglądać model, rozwiń węzły w **Eksplorator modelu BDC**. Każdy węzeł reprezentuje element w pliku XML z pliku modelu.  
+ **Eksplorator modelu BDC** Wyświetla elementy wchodzące w skład modelu. Aby otworzyć **Eksplorator modelu BDC**, na pasku menu wybierz **widoku** > **inne okna** > **Eksplorator modelu BDC**. Aby przeglądać model, rozwiń węzły w **Eksplorator modelu BDC**. Każdy węzeł reprezentuje element w pliku XML z pliku modelu.  
   
  Wybierz polecenie węzłów w **Eksplorator modelu BDC**, wyświetlania właściwości każdego węzła wybranego w **właściwości** okna. Wiele z tych właściwości odpowiadają atrybutom w pliku modelu. Umożliwia wyszukiwanie modelu przy użyciu pola wyszukiwania w górnej części **Eksplorator modelu BDC**.  
   

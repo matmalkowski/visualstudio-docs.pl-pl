@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cb1898c9e46de7669bc727884055f847abb0ce6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 607f4bb2bcce3d8895a4a07df8d70c866e7a6aab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746933"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -164,7 +165,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 ## <a name="BKMK_attach"></a> Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
 
-1. Na komputerze programu Visual Studio Otwórz **MyASPApp** rozwiązania.
+1. Na komputerze programu Visual Studio Otwórz rozwiązanie, które chcesz debugować (**MyASPApp** Jeśli wykonujesz wszystkie kroki opisane w tym artykule).
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
 
     > [!TIP]

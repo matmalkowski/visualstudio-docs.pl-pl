@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752082"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
 
@@ -51,19 +52,19 @@ W poniższych sekcjach przedstawiono podstawowe czynności ułatwiających rozpo
 
 Definiowanie i uruchom testy wewnątrz projekty testowe, które znajdują się w tym samym rozwiązaniu jako kod, który ma zostać przetestowana. Aby dodać nowy projekt testowy do istniejącego rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj | Nowy projekt**. Następnie w okienku po lewej stronie wybierz **Visual C++ Test** i wybierz jeden z typów projektów w środkowym okienku. Na poniższej ilustracji przedstawiono projekty testowe, które są dostępne podczas obliczania **projektowania aplikacji w języku C++** obciążenie jest zainstalowany:
 
-![Testowanie projektów C++](media/cpp-new-test-project.png "C++ przetestować nowe szablony projektu")
+![Projekty testowe C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Tworzenie odwołań do innych projektów w rozwiązaniu
 
 Aby włączyć swój kod testu, aby uzyskać dostęp do funkcji w projekcie, który ma zostać przetestowana, Dodaj odwołanie do projektu w projekcie testowym. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj | Odwołanie**. Następnie w oknie dialogowym Wybierz projekty, które mają zostać przetestowane.
 
-![Dodaj odwołanie](media/cpp-add-ref-test-project.png "testu C++ Dodaj odwołanie do projektów ma zostać przetestowana")
+![Dodaj odwołanie](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Dodaj #include dyrektywy pliki nagłówka
 
 Następnie w pliku .cpp testu jednostki, Dodaj `#include` dyrektywy dla nagłówka pliki, które deklaruje typy i funkcje, która ma zostać przetestowana. Typ `#include "` i IntelliSense będzie aktywować ułatwiające wybór. Powtórz dla dowolnych dodatkowych nagłówków.
 
-![Dodaj zawiera dyrektywy, które](media/cpp-add-includes-test-project.png "testu C++ dodać zawiera pliki nagłówka")
+![Dodaj dyrektyw](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Zapis metody testowe
 
@@ -72,7 +73,7 @@ Następnie w pliku .cpp testu jednostki, Dodaj `#include` dyrektywy dla nagłów
 
 Plik .cpp w projekcie testowym ma Klasa zastępcza i metody zdefiniowane dla użytkownika, na przykład dotyczących tworzenia, testowania kodu. Należy pamiętać, że podpisy makra TEST_CLASS i TEST_METHOD, które metody wykrywalny z okna narzędzia Eksplorator testów.
 
-![Dodaj zawiera dyrektywy, które](media/cpp-write-test-methods.png "testu C++ dodać zawiera pliki nagłówka")
+![Dodaj dyrektyw](media/cpp-write-test-methods.png)
 
 TEST_CLASS i TEST_METHOD są częścią [Microsoft natywnego struktury testowej](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testowanie Explorer** odnajduje metody testowe w innych obsługiwanych platform, w podobny sposób.
 
@@ -94,7 +95,7 @@ Możesz dodać *cech* do testowania metod do określenia badanie właścicieli, 
 
 1. Na **testu** menu, wybierz **Windows** > **Eksploratora testów**. Na poniższej ilustracji przedstawiono projektu testowego, w których testów nie został jeszcze uruchomiony.
 
-   ![Testowanie Explorer przed uruchomieniem testów](media/cpp-test-explorer.png "C++ narzędzia Eksplorator testów")
+   ![Przed uruchomieniem testów narzędzia Eksplorator testów](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > Integracja CTest z **Eksploratora testów** nie jest jeszcze dostępna. Uruchom testy CTest z poziomu menu głównego CMake.
@@ -103,7 +104,7 @@ Możesz dodać *cech* do testowania metod do określenia badanie właścicieli, 
 
 1. W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone. Po uruchomieniu wszystkich testów, okno zawiera testy, które przekazane i te, które nie powiodło się:
 
-![Testowanie Explorer po uruchomieniu testów](media/cpp-test-explorer-passed.png "C++ Eksploratora testów po uruchomieniu testów")
+![Po uruchomieniu testów narzędzia Eksplorator testów](media/cpp-test-explorer-passed.png)
 
 Testy nie powiodły się komunikat oferuje szczegółowe informacje, które pomogą zdiagnozować przyczynę. Możesz kliknij prawym przyciskiem myszy na niepowodzenie testu i **Debuguj zaznaczone testy** do kroku przy użyciu funkcji, w którym wystąpił błąd.
 

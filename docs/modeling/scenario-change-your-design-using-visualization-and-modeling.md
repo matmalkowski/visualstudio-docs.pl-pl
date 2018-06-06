@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750171"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -150,13 +151,13 @@ Teraz obiad musi szacowania kosztów spełnienia nowe wymaganie. Zależy to czę
 
  Na przykład deweloper tworzy mapę kodu. Dopasowuje ona jego zakres, aby skoncentrować się na obszarów, które wpływają na nowy scenariusz. Te obszary są zaznaczone i wyróżnione na mapie:
 
- ![Wykres zależności Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Wykres zależności Namespace](../modeling/media/namespace_reviewsystem.png)
 
  **Namespace mapy kodu**
 
  Deweloper rozszerza wybrane obszary nazw ich klas, metod i relacji:
 
- ![Wykres zależności rozwinięte przestrzeni nazw](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Wykres zależności rozwinięte przestrzeni nazw](../modeling/media/dep_reviewsystem.png)
 
  **Mapa kodu rozwinięte przestrzeni nazw z widoczne linki międzygrupowe**
 
@@ -177,7 +178,7 @@ Teraz obiad musi szacowania kosztów spełnienia nowe wymaganie. Zależy to czę
 
  Na przykład na poniższym diagramie zależności opisano zależności między warstwami i liczbę artefaktów, które są skojarzone z każdą warstwę:
 
- ![Diagram zależności system płatności zintegrowanego](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagram zależności systemu zintegrowanego płatności](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagram zależności**
 
@@ -277,19 +278,19 @@ Na przykład obiad teraz oszacować koszt Aktualizacja składnika PaymentProcess
 
 Następujące Mapa pokazuje zależności między klasami PaymentProcessing a innymi składnikami systemu obiad teraz, które są wyświetlane jako wybrane:
 
-![Wykres zależności dla obiad teraz system płatności](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Wykres zależności dla obiad teraz system płatności](../modeling/media/dep_dnpayment.png)
 
 **Mapy kodu obiad teraz system płatności**
 
 Deweloper Eksploruje mapy rozszerzania klasy PaymentProcessing i wybierając jej elementów członkowskich, aby zobaczyć obszarów, które są potencjalnie wpływ:
 
-![Metody wewnątrz PaymentProcessing i zależności](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Metody wewnątrz PaymentProcessing i zależności](../modeling/media/depgraph_expandeddn.png)
 
 **Metody wewnątrz klasy PaymentProcessing oraz ich zależności**
 
 Generują one następujące mapy dla System płatności lucerny sprawdzić jej klas, metod i zależności. Zespół widzi lucerny systemu może być także wymagane pracy na interakcję z innymi częściami obiad teraz:
 
-![Wykres zależności dla system płatności lucerny](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Wykres zależności dla lucerny system płatności](../modeling/media/depgraph_lucernepay.png)
 
 **Mapy kodu lucerny System płatności**
 
@@ -297,7 +298,7 @@ Oba zespoły współdziałać, aby określić zmiany, które są wymagane do int
 
 Po reorganizacja kod, zespołów Generowanie nowej mapy kodu, aby zobaczyć zaktualizowane struktury i relacji:
 
-![Wykres zależności z kodem reorganizowane po kolei](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Wykres zależności z kodem reorganizowane po kolei](../modeling/media/depgraph_integrated.png)
 
 **Mapy kodu z kodem reorganizowane po kolei**
 
@@ -338,7 +339,7 @@ Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni na
 
  Ułatwia lucerny opisują i przedyskutować jednostek, które uczestniczą w przypadku użycia płatności procesu przyjmą na poniższym diagramie klasy:
 
- ![Przetwarzanie płatności jednostek na diagramie klas](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Proces jednostek płatności na diagramie klas](../modeling/media/uml_payentities.png)
 
  **Proces jednostek płatności na diagramie klas**
 
@@ -346,7 +347,7 @@ Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni na
 
  Podczas tworzenia lucerny używa następujących diagram klas do opisywania, żeby omówić szczegóły każdej klasy:
 
- ![Przetwarzanie płatności szczegóły jednostki na diagramie klas](../modeling/media/uml_payment.png "UML_Payment")
+ ![Przetwarzanie płatności szczegóły jednostki na diagramie klas](../modeling/media/uml_payment.png)
 
  **Szczegóły procesu płatności na diagramie klas**
 
@@ -407,7 +408,7 @@ Jako punktu wyjścia do eksplorowania i przedyskutować istniejące klasy projek
 
  Aby zachować kod jest zgodne z projektem, teraz obiad i lucerny umożliwia na poniższym diagramie zależności sprawdzanie poprawności ich kodu jak ewoluują:
 
- ![Diagram zależności system płatności zintegrowanego](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagram zależności systemu zintegrowanego płatności](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagram zależności obiad teraz zintegrowana z lucerny**
 
@@ -417,13 +418,13 @@ Jako punktu wyjścia do eksplorowania i przedyskutować istniejące klasy projek
 
  Następujące Mapa kodu pokazuje nowe wywołania między obiad teraz i PaymentApprover:
 
- ![Wykres zależności zaktualizowane za pomocą zintegrowanego systemu](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Wykres zależności zaktualizowane za pomocą zintegrowanego systemu](../modeling/media/depgraph_intsystem.png)
 
  **Mapa kodu z wywołań metody zaktualizowane**
 
  Po ich upewnić się, że system działa zgodnie z oczekiwaniami, teraz obiad komentarzy kodu PaymentProcessing. Raporty weryfikacji warstwy są czystego, a wynikowy Mapa kodu pokazuje, czy istnieją ma więcej PaymentProcessing zależności:
 
- ![Wykres zależności bez PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Wykres zależności bez PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Mapy kodu bez PaymentProcessing**
 

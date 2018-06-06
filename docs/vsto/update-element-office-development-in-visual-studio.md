@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zaktualizuj&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;Zaktualizuj&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f0e1fdc26e285ce9b6a1fd5ecc1aa638fe909b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767611"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Zaktualizuj&gt; elementu (Office Development w Visual Studio)
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Zaktualizuj&gt; elementu (Office development w Visual Studio)
   `update` Element Określa interwał aktualizacji sprawdza rozwiązania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <update  
   enabled>  
   <expiration  
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`enabled`|Wymagany. Włącz na jedną z następujących wartości:<br /><br /> -   **wartość true,** do sprawdzania aktualizacji.<br />-   **FALSE** zapobiegające sprawdzania aktualizacji.|  
+|`enabled`|Wymagana. Włącz na jedną z następujących wartości:<br /><br /> -   **wartość true,** do sprawdzania aktualizacji.<br />-   **FALSE** zapobiegające sprawdzania aktualizacji.|  
   
  `update` Element ma następujące elementy podrzędne.  
   
@@ -56,8 +57,8 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`maximumAge`|-Wymagane. Ustaw to na liczbę całkowitą.|  
-|`unit`|Wymagany. Ustaw `unit` do jednej z następujących wartości:<br /><br /> -   **Godziny**<br />-   **dni korzystania z**<br />-   **Tygodni**|  
+|`maximumAge`|   Wymagana. Ustaw to na liczbę całkowitą.|  
+|`unit`|Wymagana. Ustaw `unit` do jednej z następujących wartości:<br /><br /> -   **Godziny**<br />-   **dni korzystania z**<br />-   **Tygodni**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Przykład zawsze sprawdzania dostępności aktualizacji  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:update enabled="true" />  
 ```  
   
@@ -77,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:update enabled="true">  
     <vstav3:expiration maximumAge="7" unit="days" />  
 </vstav3:update>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   

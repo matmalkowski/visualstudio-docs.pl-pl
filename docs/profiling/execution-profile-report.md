@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6d699845d8cce3eb1a410720d4e5fbbfd69d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 92f053cbf6f85edbe79f0b108093410502f39a9f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764517"
 ---
 # <a name="execution-profile-report"></a>Raport profilu wykonania
 Raport profilu wykonania jest profil próbkowania tradycyjnych. Pobierane są mniej więcej co milisekund okresach po wątek jest uruchomiony na rdzenia logicznego i Concurrency Visualizer kompilacje drzewo wywołań typowe przez sortowanie skumulowany zbiór stosy próbki. Dane w tej tabeli może wpłynąć na bieżącego zakresu czasu i ukrytych wątków, a te filtry, które mogą być stosowane:  
@@ -40,5 +41,5 @@ Raport profilu wykonania jest profil próbkowania tradycyjnych. Pobierane są mn
   
  Ta tabela raportu można przejrzeć w [czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md) widoku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

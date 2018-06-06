@@ -13,7 +13,7 @@ ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34694115"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017 r.

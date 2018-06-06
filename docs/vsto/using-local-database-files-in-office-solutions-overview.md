@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z plików lokalnej bazy danych w rozwiązań Office ― omówienie | Dokumentacja firmy Microsoft
+title: Użyj plików lokalnej bazy danych w rozwiązań Office ― omówienie
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,33 +17,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a171fe12a1476e19c46f0aef704342de375c7865
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01e9dc3df93e1f721eba9ce3bcf65d4fb8bb1ca1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767585"
 ---
-# <a name="using-local-database-files-in-office-solutions-overview"></a>Korzystanie z plików lokalnej bazy danych w rozwiązaniach pakietu Office ― Omówienie
-  Rozwiązania pakietu Office, mogą obejmować plik bazy danych, takich jak plik programu SQL Server Express (mdf) lub plik programu Microsoft Office Access (.mdb). Pozwala to użytkownikom końcowym obsługę lokalnej bazy danych w sytuacji, gdy obsługa scentralizowanej bazie danych nie jest wymagane, na przykład w przypadku rozwiązania lokalnego magazynu używanego na pojedynczym komputerze.  
+# <a name="use-local-database-files-in-office-solutions-overview"></a>Użyj plików lokalnej bazy danych w rozwiązań Office ― omówienie
+  Można dołączyć plik bazy danych, takich jak SQL Server Express (*.mdf*) pliku lub Microsoft Office Access (*.mdb*) pliku rozwiązania do pakietu Office. Pozwala to użytkownikom końcowym obsługę lokalnej bazy danych w sytuacji, gdy obsługa scentralizowanej bazie danych nie jest wymagane, na przykład w przypadku rozwiązania lokalnego magazynu używanego na pojedynczym komputerze.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="importing-the-database-file-into-a-project"></a>Importowanie pliku bazy danych do projektu  
+## <a name="import-the-database-file-into-a-project"></a>Zaimportuj plik bazy danych do projektu  
  Aby zaimportować plik bazy danych do projektu, należy użyć **Kreator konfiguracji źródła danych** tworzenia źródła danych na podstawie pliku bazy danych. Kreator dodaje plik bazy danych i typizowanego zestaw danych do projektu.  
   
-## <a name="deploying-the-database-file"></a>Wdrażanie pliku bazy danych  
+## <a name="deploy-the-database-file"></a>Wdróż plik bazy danych  
  **Kreator konfiguracji źródła danych** korzysta ze ścieżki względnej do utworzenia połączenia z lokalnego pliku bazy danych. Dzięki temu można kopiować rozwiązania z jednego komputera na inny, jeśli obsługa względne położenie plików.  
   
  Wdrażanie rozwiązania z serwerem, a następnie rozpowszechnić dokument dla każdego użytkownika końcowego, należy również ręcznie plik bazy danych, zainstaluj go w tej samej pozycji względem dokumentu. Oznacza to, użytkownik końcowy nie można przenieść go do nowej lokalizacji, na swoim komputerze, o ile nie jest on również przenosi plik bazy danych.  
   
 ## <a name="local-database-files-and-caching-the-dataset"></a>Lokalne pliki bazy danych i buforowania zestawu danych  
- W rozwiązaniach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word, zestawy danych w dokumencie można buforować, oznaczając wystąpienia zestawu danych z atrybutem <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Podczas dodawania pliku bazy danych do projektu przy użyciu **Kreator konfiguracji źródła danych**, typizowanego zestaw danych jest automatycznie dodawane do projektu. Rzadko należy zastosować <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> do tego zestawu danych, ponieważ dane są już lokalnie na komputerze użytkownika. Aby uzyskać więcej informacji, zobacz [buforowanie danych](../vsto/caching-data.md).  
+ W rozwiązaniach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word, zestawy danych w dokumencie można buforować, oznaczając wystąpienia zestawu danych z atrybutem <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Podczas dodawania pliku bazy danych do projektu przy użyciu **Kreator konfiguracji źródła danych**, typizowanego zestaw danych jest automatycznie dodawane do projektu. Rzadko należy zastosować <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> do tego zestawu danych, ponieważ dane są już lokalnie na komputerze użytkownika. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
- [Buforowanie danych](../vsto/caching-data.md)  
+ [Dane w pamięci podręcznej](../vsto/caching-data.md)  
   
   

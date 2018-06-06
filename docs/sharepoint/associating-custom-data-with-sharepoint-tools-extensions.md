@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691373"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764878"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Niestandardowe dane można dodać do niektórych obiektów w rozszerzeń narzędzi SharePoint. Jest to przydatne, gdy znajdują się dane w jednym z rozszerzenia, które ma dostęp do później z poziomu innego kodu w Twoje rozszerzenie. Zamiast Implementowanie niestandardowych sposób przechowywania i uzyskać dostęp do danych, można skojarzyć dane z obiektu w rozszerzenia i następnie pobierają dane z tego samego obiektu później.  
   
  Dodawanie niestandardowych danych do obiektów jest również przydatne, jeśli chcesz zachować dane, które ma zastosowanie do określonego elementu w programie Visual Studio. Rozszerzeń narzędzi SharePoint są ładowane tylko raz w programie Visual Studio, więc rozszerzenia może działać na kilka różnych elementów (takich jak projekty, projektu elementy, lub **Eksploratora serwera** węzłów) w dowolnym momencie. Jeśli masz niestandardowe dane, które ma zastosowanie tylko do określonego elementu, możesz dodać dane do obiektu, który reprezentuje element.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691373"
  [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Porady: Dodawanie właściwości do typu elementu projektu SharePoint niestandardowych] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-type.MD   
+ [Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

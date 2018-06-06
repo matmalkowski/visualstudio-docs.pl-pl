@@ -17,7 +17,7 @@ ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691163"
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie

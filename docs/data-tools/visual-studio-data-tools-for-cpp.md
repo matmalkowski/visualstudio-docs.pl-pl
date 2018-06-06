@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752401"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio tools danych dla języka C++
 
@@ -34,11 +35,11 @@ Aby móc korzystać z funkcji niestandardowych w programie SQL Server 2005 i now
 
 3.  Umożliwia dołączenie rozpakować pliku Northwind.mdf localDB programu SQL Server Management Studio. Po uruchomieniu programu SQL Server Management Studio połącz się (localdb) \MSSQLLocalDB.
 
-     ![Okno dialogowe Połącz SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS połączyć z okna dialogowego")
+     ![Okno dialogowe Połącz SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Kliknij prawym przyciskiem myszy w węźle localdb w okienku po lewej stronie i wybierz polecenie **Attach**.
 
-     ![Dołącz SSMS bazy danych](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS dołączyć w bazie danych")
+     ![Dołącz SSMS bazy danych](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Pobierz przykład zestawu SDK systemu Windows ODBC i Rozpakuj go do nowej lokalizacji. W tym przykładzie przedstawiono podstawowe polecenia ODBC, które są używane do połączenia z bazą danych i problem zapytań i poleceń. Dowiedz się więcej o tych funkcji w [Otwórz połączenie bazy danych (ODBC) firmy Microsoft](/sql/odbc/microsoft-open-database-connectivity-odbc). Podczas ładowania najpierw rozwiązania (jest w folderze C++), programu Visual Studio oferuje Uaktualnij rozwiązanie do bieżącej wersji programu Visual Studio. Kliknij przycisk **Tak**.
 
@@ -67,7 +68,7 @@ I ten katalog biblioteki:
 
 8.  Naciśnij klawisz F5, aby skompilować i uruchomić aplikację. Powinny pojawić okno dialogowe w sterowniku wyświetli monit o wprowadzenie bazy danych. Wprowadź `(localdb)\MSSQLLocalDB`i sprawdź **Użyj zaufanego połączenia**. Press **OK**. Powinna zostać wyświetlona konsola z komunikatów, które wskazują udane połączenie. Należy również sprawdzić wiersza polecenia można wpisać w instrukcji SQL. Poniższym ekranie przedstawiono przykładowe zapytanie i wyniki:
 
-     ![Przykładowe ODBC wyniki zapytania](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC przykładowe zapytanie w danych wyjściowych")
+     ![Przykładowe ODBC wyników zapytania](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Zobacz także
 

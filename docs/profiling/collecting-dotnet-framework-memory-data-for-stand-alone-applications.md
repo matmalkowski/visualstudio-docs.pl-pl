@@ -14,7 +14,7 @@ ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34549067"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework za pomocą wiersza polecenia profilera
