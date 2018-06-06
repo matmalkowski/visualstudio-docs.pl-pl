@@ -28,18 +28,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee364b7116bf69b961726ec2154809f66f9bc45
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815038"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależności&gt; elementu (aplikacji ClickOnce)
 Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
   
       <dependency>  
    <dependentOS  
@@ -173,7 +174,7 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje `dependency` elementów w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. Ten przykładowy kod jest częścią większego przykładu udostępnionego dla [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) tematu.  
   
-```  
+```xml  
 <dependency>  
   <dependentOS>  
     <osVersionInfo>  

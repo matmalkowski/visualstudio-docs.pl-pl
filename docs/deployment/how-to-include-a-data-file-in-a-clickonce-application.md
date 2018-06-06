@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815548"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Porady: uwzględnianie pliku danych w aplikacji ClickOnce
 Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany katalog danych na dysku lokalnym komputera docelowego, której aplikacji można zarządzać własnych danych. Pliki danych może zawierać plików dowolnego typu: pliki tekstowe, pliki XML lub nawet pliki bazy danych (.mdb) programu Microsoft Access. Poniższe procedury pokazują, jak można dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
@@ -35,7 +36,7 @@ Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalo
   
 2.  Zaktualizuj manifest aplikacji do listy plików danych.  
   
-     **obraz -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji i automatycznie generuje podpisów wyznaczania wartości skrótu.  
   
@@ -53,13 +54,11 @@ Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalo
   
      Musi ponownie podpisać manifeście wdrażania, ponieważ jego skrót manifest aplikacji została zmieniona.  
   
-     **Obraz -s aplikacji manifestu - cf cert_file - pwd hasła**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **manifest aplikacji manifestu - appm obraz -u wdrożenia**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **Obraz -s wdrożenia manifestu - cf plik_certyfikatu - pwd hasła**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe  
   

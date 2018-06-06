@@ -16,15 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 842ce89c687c1f39bc013a7b1eb2c4b330a86f47
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3a68ed7789e1f77e6bd130ff29bcbb82700f3507
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814908"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Porady: zbieranie danych liczników systemu Windows
 
-Liczniki systemu Windows to liczniki wydajności systemu, które mogą być zbierane w ustalonych odstępach czasu podczas profilowania. W widoku raportu narzędzi profilowania znaki, jest oznaczony wiersz **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisano w tym interwał wartości licznika wydajności. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, wybierz znaczniki, kliknij prawym przyciskiem myszy, a następnie wybierz **filtru przez** ->  **znaczniki** z menu skrótów.
+Liczniki systemu Windows to liczniki wydajności systemu, które mogą być zbierane w ustalonych odstępach czasu podczas profilowania. W widoku raportu narzędzi profilowania znaki, jest oznaczony wiersz **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisano w tym interwał wartości licznika wydajności. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, wybierz znaczniki, kliknij prawym przyciskiem myszy, a następnie wybierz **filtru przez**>**znaczniki** z menu skrótów.
 
 > [!NOTE]
 > Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -51,4 +52,4 @@ Liczniki systemu Windows to liczniki wydajności systemu, które mogą być zbie
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
 [Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
-[Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)
+[Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)

@@ -10,31 +10,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77251c14cfdfb5829b16137f28148a0f0c8b9d8e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815852"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Tworzenie przenośnych plików danych profilowania z wiersza polecenia
-Aby udostępnianie danych profilowania, można użyć [VSPerfReport](../profiling/vsperfreport.md) narzędzia wiersza polecenia, aby osadzić symboli dla profilowania do pliku Vsp.  
+Aby udostępnianie danych profilowania, można użyć [VSPerfReport](../profiling/vsperfreport.md) narzędzia wiersza polecenia do osadzenia symboli dla przebiegu do profilowania. *Vsp* pliku.  
   
- Można także utworzyć wstępnie przeanalizowane plik danych (vsps) profilowania jest mniejszy, który jest szybsze do obciążenia w środowisku IDE.  
+ Można również utworzyć wstępnie analizowanych danych profilowania (. *vsps*) pliku, który jest mniejszy szybszą obciążenia w środowisku IDE.  
   
 > [!NOTE]
->  Upewnij się, że pliki symboli (.pdb) są dostępne dla **VSPerfReport**. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+>  Upewnij się, że symbol (. *PDB*) pliki są dostępne dla **VSPerfReport**. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
 >   
 >  Aby uzyskać informacje o ścieżce do **VSReport**, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Nie można filtrować dane profilowania w pliku vsps.  
+>  Dane profilowania. *vsps* pliku nie można filtrować.  
   
-### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Aby osadzić symboli dla profilowania do profilowania plik danych (Vsp)  
+### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Aby osadzić symboli dla profilowania funkcjonowaniem danych profilowania (. *Vsp*) pliku  
   
 -   W oknie wiersza polecenia wpisz następujące polecenie:  
   
      \<Ścieżka >**VSPerfReport \<** pliku VSP > **/PackSymbols**  
   
-     Domyślnie plik vsps nosi nazwę o nazwie podstawowej pliku Vsp. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
+     Domyślnie. *vsps* nosi nazwę pliku o nazwie podstawowej z. *Vsp* pliku. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Aby utworzyć plik podsumowania danych profilowania  
   
@@ -42,4 +43,4 @@ Aby udostępnianie danych profilowania, można użyć [VSPerfReport](../profilin
   
      \<Ścieżka >**VSPerfReport \<** pliku VSP > **/SummaryFile** [**/Output:**\<nazwa pliku >]  
   
-     Domyślnie plik vsps nosi nazwę o nazwie podstawowej pliku Vsp. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.
+     Domyślnie. *vsps* nosi nazwę pliku o nazwie podstawowej z. *Vsp* pliku. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.

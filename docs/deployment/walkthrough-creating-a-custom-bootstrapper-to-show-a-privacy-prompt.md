@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816045"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizowane, gdy będą dostępne zestawy za pomocą nowszej wersji plików i wersji zestawu. Aby upewnić się, że klienci zgodę na to zachowanie, można wyświetlić monit o prywatności dla nich. Następnie w ich zdecydować, czy można udzielić uprawnienia do aplikacji automatycznej aktualizacji. Jeśli aplikacja nie może automatycznie zaktualizować, nie jest instalowana.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 2.  W pliku product.xml Dodaj następujący kod XML. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 2.  W pliku plik package.xml Dodaj następujący kod XML do definiowania ustawień regionalnych i zawierają postanowienia licencyjne dotyczące oprogramowania. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  

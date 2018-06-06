@@ -16,18 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5637bad77e2d4e09d6d04007f0e0da3ed8af68df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814963"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Podpis&gt; elementu (wdrażania ClickOnce)
 Zawiera informacje potrzebne do cyfrowego podpisywania manifestu tego wdrożenia.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
   
       <Signature>   
    XML signature information   
@@ -35,14 +36,14 @@ Zawiera informacje potrzebne do cyfrowego podpisywania manifestu tego wdrożenia
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Podpisywanie manifestu wdrożenia przy użyciu podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania XML plików Zobacz sieci World Wide Web konsorcjum zalecenia, "Podpis XML składni i przetwarzanie" w sposób opisany w [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Podpisywanie manifestu wdrożenia przy użyciu podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania plików XML, zobacz sieci World Wide Web konsorcjum zalecenia, "Podpis XML składni i przetwarzanie" w sposób opisany w [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
  Jeśli chcesz zarejestrować w manifeście, należy podać wartości skrótu dla wszystkich plików. Nie można podpisać manifest z plikami, które nie jest przemieszane, ponieważ użytkownicy nie może zweryfikować zawartości bez haszowania plików.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje `Signature` elementu w manifeście wdrażania, używane w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
-```  
+```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
   <SignedInfo>  
     <CanonicalizationMethod Algorithm=  

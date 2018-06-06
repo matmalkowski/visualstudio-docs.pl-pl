@@ -10,10 +10,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/06/2018
 ms.locfileid: "34766681"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework do zbierania danych pamięci przy użyciu wiersza polecenia

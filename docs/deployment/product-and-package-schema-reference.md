@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815577"
 ---
 # <a name="product-and-package-schema-reference"></a>Produkt i pakiet — odwołanie do schematu
 A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrzne [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale służy do instalowania składników zależnych od kultury zależności, takich jak zlokalizowane zestawy, umów licencyjnych i dokumentacji.  
@@ -56,7 +57,7 @@ A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętr
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje pliku kompletnego produktu do instalacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

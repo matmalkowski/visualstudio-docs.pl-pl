@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816019"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -37,7 +38,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
      Domyślnie style wizualne nie są włączone.  
   
-    ```  
+    ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
@@ -76,7 +77,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
      Plik XML zawiera opis zestawu, który zawiera formanty, które obsługują stylów wizualnych.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
     ```  
   
@@ -111,12 +112,12 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
 2.  W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. W poniższym przykładzie pokazano, w tym kroku.  
   
     ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
 3.  W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w plik wykonywalny aplikacji.  
   
-    ```  
+    ```
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   

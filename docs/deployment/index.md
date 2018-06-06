@@ -7,17 +7,18 @@ ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 141348fc5521eb0ffe3989ba5a0d76a251308515
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815327"
 ---
 # <a name="deployment-in-visual-studio"></a>Wdrożenia w programie Visual Studio
 
 Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplikacji.
 
-<h2>Środowisko wdrażania programu Visual Studio z 5-minutowy "poradniki Szybki Start"</h2>
+<h2>Środowisko wdrażania programu Visual Studio z 5-minutowy poradniki Szybki Start</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -27,7 +28,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -45,7 +46,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to a local folder">
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +64,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to a website or network share">
                         </div>
                     </div>
                     <div class="cardText">
@@ -81,7 +82,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +105,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -122,7 +123,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Package a UWP for Microsoft Store">
                         </div>
                     </div>
                     <div class="cardText">
@@ -140,7 +141,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -158,7 +159,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Package a desktop app for Microsoft Store (C#, C++)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -176,7 +177,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="Deploy Python to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -194,7 +195,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -212,11 +213,11 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Importowanie ustawień publikowania i wdrażania usług IIS</h3>
+                        <h3>Importowanie ustawień publikowania i wdrażanie w usługach IIS</h3>
                     </div>
                 </div>
             </div>
@@ -230,11 +231,11 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy a desktop app using ClickOnce">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdrażanie aplikacji komputerowej za pomocą aplikacji ClickOnce</h3>
+                        <h3>Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce</h3>
                     </div>
                 </div>
             </div>
@@ -248,7 +249,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815025"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -27,7 +28,7 @@ W tradycyjnych testy jednostkowe testu składa się z kilka kwestii:
 
 Poniżej przedstawiono przykład struktury testu:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Gdy program IntelliTest musi utworzyć obiekty, wywołania konstruktory i metody
 
 Naraża są definiowane przy użyciu [PexMethod](attribute-glossary.md#pexmethod) atrybutu niestandardowego w sposób podobny do MSTest (lub NUnit, xUnit). Naraża są logicznie pogrupowane w klasach z metody wystąpienia [PexClass](attribute-glossary.md#pexclass). W poniższym przykładzie przedstawiono prosty PUT przechowywane w **MyPexTest** klasy:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 gdzie **ReplaceFirstChar** to metoda, która zastępuje pierwszego znaku ciągu:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Z tego testu IntelliTest może automatycznie [wygenerowanie danych wejściowych](input-generation.md) dla PUT, obejmujący wiele ścieżek wykonywania kodu przetestowane. Każdy danych wejściowych, który obejmuje wykonanie inną ścieżkę pobiera "serializacji" jako testu jednostkowego:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Sparametryzowanych testów jednostkowych może być metody ogólne. W takim przypadku użytkownik musi określić typy służy do tworzenia wystąpienia metody przy użyciu [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest zawiera wiele atrybutów sprawdzania poprawności ułatwia wyjątki 
 
 Oczekiwano wyjątki wygenerowania ujemna przypadków testowych z odpowiednią adnotacją, taką jak **ExpectedException (typeof (*xxx*))** podczas generowania wyjątków nieoczekiwany w przypadku braku przypadków testowych.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ Moduły weryfikacji są:
 
 IntelliTest można "test" wewnętrzne typy, tak długo, jak widzą je. IntelliTest wyświetlić typy następującego atrybutu został dodany do projektu produktu lub testu za pomocą kreatorów Visual Studio IntelliTest:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Użytkownicy mogą używać założenia i potwierdzeń Express [warunki wstępne
 
 Potwierdzenia są dobrze znanych pojęciem platform testów jednostkowych regularnie, więc IntelliTest już "rozumie" wbudowane **Assert** klas dostarczonych przez platformę poszczególnych obsługiwanych badania. Jednak większość struktur nie udostępniają **Przyjmij** klasy. W takim przypadku zapewnia IntelliTest [PexAssume](static-helper-classes.md#pexassume) klasy. Jeśli nie chcesz używać istniejącej struktury testowej, IntelliTest ma również [PexAssert](static-helper-classes.md#pexassert) klasy.
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 W szczególności założeń nullness nie mogą być kodowane jako atrybut niestandardowy:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ W ramach integracji z platform testów obsługuje IntelliTest wykrywania i uruch
 
 **Przykład**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f26bd8fe2b67a6078a78c9a263d57e98fc180e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e2e078da7f746460ea17d1a5ac2d83e5ac46dc62
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815535"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;wdrożenie&gt; elementu (wdrażania ClickOnce)
 Identyfikuje atrybuty używane do wdrażania aktualizacji i zagrożeń do systemu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
   
       <deployment   
    install  
@@ -111,7 +112,7 @@ Identyfikuje atrybuty używane do wdrażania aktualizacji i zagrożeń do system
 ## <a name="examples"></a>Przykłady  
  Poniższy przykład kodu pokazuje `deployment` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania. W przykładzie użyto `deploymentProvider` elementu, aby wskazać lokalizację preferowanych aktualizacji.  
   
-```  
+```xml  
 <deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
     <subscription>  
       <update>  

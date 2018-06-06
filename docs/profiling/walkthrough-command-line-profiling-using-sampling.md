@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815259"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu pobierania próbek
 
@@ -37,12 +38,12 @@ W tym przewodniku będzie wykonaj następujące kroki:
 - Kopię [PeopleTrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)
 - Aby pracować z informacjami pochodzącymi profilowania, jest najlepszym rozwiązaniem jest dostępne informacje dotyczące symboli debugowania.
 
-## <a name="command-line-profiling-using-the-sampling-method"></a>Polecenie wiersza profilowania za pomocą metody pobierania próbek
+## <a name="command-line-profiling-using-the-sampling-method"></a>Profilowanie wiersza polecenia przy użyciu metody pobierania próbek
 
 Próbkowanie to metodę profilowania za pomocą którego określonego procesu okresowo wysyłane do określenia active funkcji. Dane wynikowe zapewnia liczenie częstotliwość funkcja znajdowała się na szczycie stosu wywołań proces był wtedy próbkowany.
 
 > [!NOTE]
-> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowym zarówno w przypadku 64-bitowych, jak i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax jest 32-bitowej aplikacji.
+> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *\Team Tools\Performance narzędzia* podkatalogu w katalogu instalacji programu Visual Studio. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax jest 32-bitowej aplikacji.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Do profilu aplikacji PeopleTrax za pomocą metody pobierania próbek
 
@@ -58,13 +59,13 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
     VSPerfCLREnv /sampleon
     ```
 
-5. Uruchom profilowanie, uruchamiając VSPerfCmd.exe, który jest narzędzie wiersza polecenia, które kontroluje profilera. Następujące polecenie uruchamia aplikację i profilera trybu próbkowania:
+5. Uruchom profilowanie, uruchamiając *VSPerfCmd.exe*, która jest narzędzie wiersza polecenia, które kontroluje profilera. Następujące polecenie uruchamia aplikację i profilera trybu próbkowania:
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     Proces profilera uruchamia i dołącza do procesu PeopleTrax.exe. Aby zapisywać zebrane dane profilowania do pliku raportu rozpocznie się proces profilera.
+     Proces profilera uruchamia i dołącza do *PeopleTrax.exe* procesu. Aby zapisywać zebrane dane profilowania do pliku raportu rozpocznie się proces profilera.
 
 6. Kliknij przycisk **uzyskać osób**.
 
@@ -86,13 +87,13 @@ Próbkowanie to metodę profilowania za pomocą którego określonego procesu ok
     VSPerfCLREnv /sampleoff
     ```
 
-11. Dane profilowania jest przechowywana w pliku the.vsp Przeanalizuj wyniki za pomocą jednej z następujących metod:
+11. Dane profilowania jest przechowywany w. *vsp* analiza pliku wyników przy użyciu jednej z następujących metod:
 
-    - Otwórz plik the.vsp w programie Visual Studio IDE.
+    - Otwórz. *vsp* pliku w programie Visual Studio IDE.
 
          — lub —
 
-    - Generowanie pliku wartości rozdzielanych przecinkami (.csv) za pomocą narzędzia wiersza polecenia VSPerfReport.exe. Aby móc wygenerować raporty do użytku poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, użyj następującego polecenia:
+    - Generowanie wartości rozdzielanych przecinkami (. *CSV*) plików za pomocą narzędzia wiersza polecenia *VSPerfReport.exe*. Aby móc wygenerować raporty do użytku poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, użyj następującego polecenia:
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

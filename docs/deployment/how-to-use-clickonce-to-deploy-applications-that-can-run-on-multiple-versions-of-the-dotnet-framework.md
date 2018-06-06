@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815077"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Porady: użycie technologii ClickOnce do wdrażania aplikacji uruchamianych w wielu wersjach systemu .NET Framework
 Możesz wdrożyć aplikację, która jest przeznaczony dla wielu wersji platformy .NET przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i manifestów aplikacji i wdrażania aktualizacji.  
@@ -85,13 +86,13 @@ Możesz wdrożyć aplikację, która jest przeznaczony dla wielu wersji platform
   
 2.  Dodaj `group="framework"` do kod XML zależności dla zestawów wartownik (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, i `System.Data.Entity`). Na przykład XML powinien wyglądać następująco:  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Zaktualizuj numer wersji `<assemblyIdentity>` elementu Microsoft.Windows.CommonLanguageRuntime numer wersji dla programu .NET Framework, która jest najprostszy. Na przykład, jeśli aplikacja jest przeznaczony dla platformy .NET Framework 3.5 i [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], użyj 2.0.50727.0 numer wersji i XML powinien wyglądać następująco:  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  

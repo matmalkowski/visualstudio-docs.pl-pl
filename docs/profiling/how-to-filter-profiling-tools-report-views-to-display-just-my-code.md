@@ -9,13 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c94e8f2ba852600c14ede7419619c711b70f0b0b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815785"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Porady: filtrowanie widoków raportu odnośnie do narzędzi profilowania w celu wyświetlenia Tylko mojego kodu
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Porady: filtrowanie widoków raportu do wyświetlenia tylko mój kod narzędzi profilowania
 
 Program Visual Studio udostępnia filtrowania raportów wydajności, dzięki czemu są one wyświetlane tylko kod, który został zaimplementowany. Domyślnie jest to funkcja, która nosi tylko mój kod. Jest ona skonfigurowana za pośrednictwem **tylko mój kod** opcji **opcje** okno dialogowe.
 
@@ -37,4 +38,4 @@ Program Visual Studio udostępnia filtrowania raportów wydajności, dzięki cze
 
 ## <a name="see-also"></a>Zobacz także
 
-[Dostosowywanie wydajności widoków raportów narzędzi](../profiling/customizing-performance-tools-report-views.md)
+[Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)

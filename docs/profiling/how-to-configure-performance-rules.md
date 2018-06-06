@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98627cbb9644537b297f550c7e364a22ddbbeca3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bfe6e10c42188cab23c75262d947c7deb9c28ea5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816032"
 ---
 # <a name="how-to-configure-performance-rules"></a>Porady: Konfigurowanie zasad wydajności
 Ostrzeżenia wydajności o tym Visual Studio Profiling Tools wskazują na problemy w profilowanych aplikacji, która może spowolnić działanie programu. Ostrzeżenia może również oznaczać, że może być konieczna zmiana metody kolekcji do zbierania danych bardziej użyteczne. Ostrzeżenia wydajności są generowane automatycznie podczas sesji profilowania i są wyświetlane w **listy błędów** okna po otwarciu pliku danych profilowania w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Określone ostrzeżenia nie mogą być stosowane do scenariuszy planuje się, czy ostrzeżenia może zostać wywołane nieprawidłowo. Można skonfigurować ostrzeżeń dotyczących wydajności, aby pokazać lub ukryć określone ostrzeżenia.  

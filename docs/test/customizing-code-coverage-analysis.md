@@ -9,53 +9,45 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9b51137c6b66fe2895bcc0e70e3ffab8ebd637e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9cdf1b9051f409571989073692cf38906d26b85b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815954"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
-Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy rozwiązania, które są ładowane podczas testów jednostkowych. Zaleca się zachować to ustawienie domyślne, ponieważ w większości przypadków działa ono prawidłowo. Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Domyślnie pokrycie kodu analizuje wszystkie zestawy rozwiązania, które są ładowane podczas testów jednostkowych. Zalecane jest użycie to zachowanie domyślne, ponieważ działa dobrze w większości przypadków. Aby uzyskać więcej informacji, zobacz [Użyj pokrycie kodu, aby określić, ile kodu jest testowana](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-Przed rozpoczęciem dostosowywania zachowania pokrycia kodu należy wziąć pod uwagę kilka alternatyw:
+Aby wykluczyć z wyników pokrycia kodu kod testu i zawierać tylko kod aplikacji, Dodaj <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> atrybutu do własnej klasy testu.
 
-- *Chcę wyłączyć kod testu z wyników pokrycia kodu i zawiera tylko kod aplikacji.*
+Aby uwzględnić zestawy, które nie są częścią rozwiązania, należy uzyskać *.pdb* plików dla tych zestawów i skopiuj je do folderu zestawu *.dll* plików.
 
-     Dodaj `ExcludeFromCodeCoverage Attribute` do własnej klasy testu.
+## <a name="run-settings-file"></a>Plik parametrów uruchomieniowych
 
-- *Chcę dołączyć zestawy, które nie są częścią Moje rozwiązanie.*
+[Plik parametrów uruchomieniowych uruchomienia](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) jest używana przez narzędzia do testowania jednostkowego pliku konfiguracji. Ustawienia pokrycia kodu zaawansowane są określone w *runsettings* pliku.
 
-     Uzyskaj pliki .pdb dla tych zestawów i skopiuj je do tego samego folderu, co pliki .dll zestawu.
+Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
-Aby dostosować zachowanie pokrycia kodu, skopiuj [przykładowa na końcu tego tematu](#sample) i dodaj go do rozwiązania, przy użyciu rozszerzenia pliku *runsettings*. Edytowanie jej do własnych potrzeb, a następnie na **testu** menu, wybierz **ustawień testu**, **wybierz ustawienia testu** pliku. W dalszej części tego artykułu opisano tej procedury bardziej szczegółowo.
+1. Dodaj plik parametrów uruchomieniowych do rozwiązania. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj** > **nowy element**i wybierz **pliku XML**. Zapisz plik z nazwą, takich jak *CodeCoverage.runsettings*.
 
-## <a name="the-run-settings-file"></a>Plik parametrów uruchomieniowych
+1. Dodaj zawartość z przykładowy plik na końcu tego artykułu, a następnie dostosować go do potrzeb zgodnie z opisem w poniższych sekcjach.
 
-Ustawienia pokrycia kodu zaawansowane są określone w *runsettings* pliku. Plik parametrów uruchomieniowych jest pliku konfiguracji używanego przez narzędzia do testowania jednostki. Firma Microsoft zaleca, należy skopiować [przykładowa na końcu tego tematu](#sample) i edytować go do własnych potrzeb.
+1. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawień testu** > **wybierz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych dla uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
 
-Aby dostosować pokrycie kodu, Dodaj plik parametrów uruchomieniowych do rozwiązania:
+   Po wybraniu **Analizuj pokrycie kodu**, informacje o konfiguracji zostanie odczytany z pliku ustawień uruchamiania.
 
-1. Dodaj plik XML jako element rozwiązania z rozszerzeniem *runsettings*:
+   > [!TIP]
+   > Poprzednie wyniki pokrycia kodu i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów lub zaktualizuj kod.
 
-     W Eksploratorze rozwiązań, w menu skrótów rozwiązania, wybierz **Dodaj** > **nowy element**i wybierz **pliku XML**. Zapisz plik z nazwą zakończenia, takich jak *CodeCoverage.runsettings*.
+Wyłącz i Włącz ustawienia niestandardowe, Anuluj wybór lub wybierz plik w **testu** > **ustawień testu** menu.
 
-2. Dodaj zawartość w przykładzie na końcu tego artykułu, a następnie dostosować go do potrzeb zgodnie z opisem w poniższych sekcjach.
+![Menu Ustawienia testu z plikiem ustawień niestandardowych](../test/media/codecoverage-settingsfile.png)
 
-3. Na **testu** menu, wybierz **ustawień testu** > **wybierz plik ustawień testu** i wybierz plik.
+### <a name="specify-symbol-search-paths"></a>Określ ścieżki wyszukiwania symboli
 
-4. Teraz po uruchomieniu **Analizuj pokrycie kodu**, plik parametrów uruchomieniowych będzie kontrolowanie swojego zachowania. Pamiętaj, że należy ponownie uruchomić pokrycia kodu. Poprzednie wyniki pokrycia i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów lub zaktualizuj kod.
-
-5. Wyłącz i Włącz ustawienia niestandardowe, Anuluj wybór lub wybierz plik w **testu** > **ustawień testu** menu.
-
- ![Menu Ustawienia testu z plikiem ustawień niestandardowych](../test/media/codecoverage-settingsfile.png)
-
-Innych aspektów testy jednostkowe można skonfigurować w tym samym pliku ustawień uruchamiania. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).
-
-### <a name="specifying-symbol-search-paths"></a>Określanie ścieżek wyszukiwania symbolu
-
-Pokrycie kodu wymaga symboli (pliki .pdb), aby były obecne zestawy. Zestawy wbudowanych w tym rozwiązaniu pliki symboli są zazwyczaj obecny obok pliki binarne i pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach pliki .pdb mogą nie być przylegającymi do plików binarnych, ale ścieżkę wyszukiwania symbolu można określić w pliku .runsettings.
+Pokrycie kodu wymaga plików symboli (*.pdb* plików) dla zestawów. Dla zestawów utworzony przez rozwiązanie pliki symboli są zazwyczaj obecny obok pliki binarne i pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach *.pdb* plików może nie być sąsiadujących ze sobą, aby pliki binarne, ale można określić ścieżki wyszukiwania symboli w *runsettings* pliku.
 
 ```xml
 <SymbolSearchPaths>
@@ -64,10 +56,10 @@ Pokrycie kodu wymaga symboli (pliki .pdb), aby były obecne zestawy. Zestawy wbu
 </SymbolSearchPaths>
 ```
 
-> [!WARNING]
-> Rozpoznawanie symboli może potrwać, zwłaszcza w przypadku korzystania z wielu zestawów lokalizację pliku zdalnego. W związku z tym należy wziąć pod uwagę kopiowanie zdalnych plików .pdb do tej samej lokalizacji lokalnej co pliki binarne (.dll i .exe).
+> [!NOTE]
+> Rozpoznawanie symboli może potrwać, zwłaszcza w przypadku korzystania z wielu zestawów lokalizację pliku zdalnego. W związku z tym należy rozważyć kopiowanie *.pdb* pliki w tej samej lokalizacji lokalnego jako dane binarne (*.dll* i *.exe*) plików.
 
-### <a name="excluding-and-including"></a>Uwzględnianie i wykluczanie
+### <a name="exclude-and-include"></a>Dołączanie i wykluczanie
 
 Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:
 
@@ -91,13 +83,13 @@ Alternatywnie można określić zestawy, które powinny być włączone. Takie p
 </ModulePaths>
 ```
 
-Jeśli `<Include>` jest pusta, a następnie przetwarzania pokrycia kodu obejmuje wszystkie zestawy, które są ładowane i dla którego można znaleźć .pdb, pliki. Pokrycie kodu nie ma elementów, które odpowiadają klauzuli `<Exclude>` listy.
+Jeśli **Include** jest pusta, a następnie przetwarzania pokrycia kodu zawiera wszystkie zestawy, które są załadowane i dla którego *.pdb* znajdują się pliki. Pokrycie kodu nie ma elementów, które odpowiadają klauzuli **wykluczyć** listy.
 
-`Include` jest przetwarzana przed `Exclude`.
+**Obejmują** jest przetwarzana przed **wykluczyć**.
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
 
-Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:
+Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:
 
 - **. \***  ciąg znaków
 
@@ -131,87 +123,48 @@ Na przykład:
 ```
 
 > [!WARNING]
-> Jeśli występuje błąd w wyrażeniu regularnym, taki jak nawiasy niedopasowane lub o niezmienionym znaczeniu, analiza pokrycia kodu nie będzie działać.
+> Jeśli w wyrażeniu regularnym, takich jak niezmienionym znaczeniu lub niedopasowane nawiasy, występuje błąd analizy pokrycia kodu nie będą uruchamiane.
 
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Inne sposoby, aby dołączyć lub wykluczyć elementy
 
-Zobacz [przykładowa na końcu tego tematu](#sample) przykłady.
+- **ModulePath** -odpowiada zestawy określonego w ścieżce pliku zestawu.
 
-- `ModulePath` -Zestawy określonego w ścieżce pliku zestawu.
+- **Nazwa firmy** -odpowiada zestawy przez **firmy** atrybutu.
 
-- `CompanyName` -odpowiada zestawy za pomocą atrybutu firmy.
+- **PublicKeyToken** -dopasowań zestawy podpisane przez token klucza publicznego.
 
-- `PublicKeyToken` -dopasowań zestawy podpisane przez token klucza publicznego. Na przykład dopasować wszystkich składników programu Visual Studio i rozszerzenia, należy użyć `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.
+- **Źródło** -odpowiada elementów przez nazwę ścieżki pliku źródłowego, w którym jest zdefiniowany.
 
-- `Source` -odpowiada elementów przez nazwę ścieżki pliku źródłowego, w którym jest zdefiniowany.
+- **Atrybut** -odpowiada elementów, do których jest dołączony określonego atrybutu. Określ pełną nazwę atrybutu, a inclue "Atrybutu" na końcu nazwy.
 
-- `Attribute` -odpowiada elementów, do których jest dołączony określonego atrybutu. Podaj pełną nazwę atrybutu, łącznie z wyrazem „Atrybut” na końcu nazwy.
+- **Funkcja** -odpowiada procedury, funkcji lub metody przez w pełni kwalifikowanej nazwy. Aby dopasować nazwę funkcji, wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwy funkcji, łącznie z przestrzeni nazw, nazwę klasy, nazwy metody i listy parametrów. Na przykład:
 
-- `Function` -odpowiada procedury, funkcji lub metody przez w pełni kwalifikowanej nazwy.
+   ```csharp
+   Fabrikam.Math.LocalMath.SquareRoot(double);
+   ```
 
-**Pasujących do nazwy funkcji**
+   ```cpp
+   Fabrikam::Math::LocalMath::SquareRoot(double)
+   ```
 
-Wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwy funkcji, łącznie z przestrzeni nazw, nazwę klasy, nazwy metody i listy parametrów. Na przykład
+   ```xml
+   <Functions>
+     <Include>
+       <!-- Include methods in the Fabrikam namespace: -->
+       <Function>^Fabrikam\..*</Function>
+       <!-- Include all methods named EqualTo: -->
+       <Function>.*\.EqualTo\(.*</Function>
+     </Include>
+     <Exclude>
+       <!-- Exclude methods in a class or namespace named UnitTest: -->
+       <Function>.*\.UnitTest\..*</Function>
+     </Exclude>
+   </Functions>
+   ```
 
-- C# lub Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
+## <a name="sample-runsettings-file"></a>Przykładowy plik .runsettings
 
-- C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`
-
-```xml
-<Functions>
-  <Include>
-    <!-- Include methods in the Fabrikam namespace: -->
-    <Function>^Fabrikam\..*</Function>
-    <!-- Include all methods named EqualTo: -->
-    <Function>.*\.EqualTo\(.*</Function>
-  </Include>
-  <Exclude>
-    <!-- Exclude methods in a class or namespace named UnitTest: -->
-    <Function>.*\.UnitTest\..*</Function>
-  </Exclude>
-</Functions>
-```
-
-## <a name="how-to-specify-run-settings-files-while-running-tests"></a>Sposób określania ustawień uruchamiania plików podczas testów
-
-### <a name="to-customize-run-settings-in-visual-studio-tests"></a>Aby dostosować ustawienia wykonywania w testów programu Visual Studio
-
-Wybierz **testu** > **ustawień testu** > **wybierz plik ustawień testu** i wybierz *runsettings* plik. Plik pojawi się w menu Ustawienia testu, gdzie można zaznaczyć go lub usunąć. Gdy zaznaczone, przy każdym użyciu stosuje się plik parametrów uruchomieniowych **Analizuj pokrycie kodu**.
-
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Aby dostosować ustawienia wykonywania w teście wiersza polecenia
-
-Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*. Plik ustawień jest parametrem tego narzędzia.
-
-1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
-
-    W systemie Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia dla programu VS 2017 deweloperów**.
-
-2. Uruchom następujące polecenie:
-
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
-
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Dostosowywanie ustawień wykonywania w definicji kompilacji
-
-Dane pokrycia kodu można uzyskać z kompilacji zespołu.
-
-![Określanie runsettings w definicji kompilacji](../test/media/codecoverage-buildrunsettings.png)
-
-1. Upewnij się, że zaznaczone jest pole pliku ustawień uruchamiania.
-
-2. W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.
-
-3. Na **procesu** rozwiń pozycję **testów automatycznych** > **źródła testu** > **parametrów uruchomieniowych**. Wybierz *runsettings* pliku.
-
-   > [!TIP]
-   > Jeśli **zestawu testowego** pojawia się zamiast **źródła testu**, i można wybrać tylko *.testsettings* pliki, ustaw **Test Runner** właściwości w następujący sposób. W obszarze **testów automatycznych**, wybierz pozycję **zestawu testowego**, a następnie wybierz pozycję **[...]**  na końcu linii. W **Dodawanie/edytowanie testu** okno dialogowe, zestaw **Test Runner** do **Visual Studio Test Runner**.
-
-Wyniki są widoczne w sekcji podsumowania raportu kompilacji.
-
-##  <a name="sample"></a> Przykładowy plik runsettings
-
-Skopiuj ten kod i dostosuj go do swoich potrzeb.
-
-(Do innych celów plik parametrów uruchomieniowych, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku ustawień uruchamiania](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+Skopiuj ten kod i edytowanie go w zależności od potrzeb.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,5 +279,6 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+- [Konfigurowanie testów jednostkowych przy użyciu pliku ustawień uruchamiania](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
+- [Umożliwia określenie, ile kodu jest testowana przez pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)

@@ -10,23 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cbb667553aa7dd71ccef256e40ac9e9087e8ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8a38e46d18ec895b2c9b492cd7fa4e0be2bf167e
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815889"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Porady: instrumentowanie autonomicznego elementu natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzi profilowania Instrumentacja natywnych składnika, takiego jak plik .exe lub .dll C++ i zbieranie szczegółowych danych o chronometrażu.  
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Porady: Instrumentowanie składnika autonomicznego natywnej i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
+W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia wiersza polecenia narzędzi profilowania do Instrumentacja natywnych składnika, takiego jak C++. *exe* lub. *biblioteki dll* pliku i zbieranie szczegółowych danych o chronometrażu.  
   
 > [!NOTE]
->  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *narzędzia \Team Tools\Performance* podkatalog [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] katalogu instalacyjnego. Na komputerach 64-bitowych zarówno 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Zbieranie szczegółowych danych o chronometrażu ze składnika przy użyciu metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie do generowania instrumentowanej wersji składnika. Następnie należy uruchomić profilera. Po wykonaniu składników instrumentowanych danych o chronometrażu są zbierane automatycznie w pliku danych. Można wstrzymywać i wznawiać zbierania danych podczas sesji profilowania.  
   
  Aby zakończyć sesję profilowania, zamknij aplikację docelową, a następnie jawnie Wyłącz profilera.  
   
-## <a name="starting-the-profiling-session"></a>Rozpoczynanie sesji profilowania  
+## <a name="start-the-profiling-session"></a>Rozpocznij sesję profilowania  
   
 #### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Do uruchomienia profilowania przy użyciu metody Instrumentacji  
   
@@ -46,18 +47,18 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
     |Opcja|Opis|  
     |------------|-----------------|  
-    |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Określa nazwę domeny i nazwę konta, który jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces jest uruchomiony jako użytkownik innego niż zalogowanego użytkownika. Właściciel procesu znajduje się w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań systemu Windows.|  
-    |[/crosssession](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wyświetlane w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań systemu Windows. **/CS** może być określony jako skrót **/crosssession**.|  
+    |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Określa nazwę domeny i nazwę konta, który jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces jest uruchomiony jako użytkownik innego niż zalogowanego użytkownika. Właściciel procesu jest wymieniony w **nazwy użytkownika** kolumny na **procesów** kartę Menedżera zadań systemu Windows.|  
+    |[/crosssession](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w **identyfikator sesji** kolumny na karcie Procesy Menedżera zadań systemu Windows. **/CS** może być określony jako skrót **/crosssession**.|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia, który wstrzymana profilera ze zbierania danych. Użyj [/globalon](../profiling/globalon-and-globaloff.md) wznowienie profilowania.|  
     |[/ licznika](../profiling/counter.md) **:** `Config`|Zbiera informacje licznika wydajności procesora, określonego w `Config`. Informacje o liczniku jest dodawany do danych, które są zbierane w każdym zdarzeniu profilowania.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Domyślna to 500 ms.|  
-    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w pliku oddzielne (ETL).|  
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w oddzielnej (. *etl*) pliku.|  
   
 4.  Uruchomienie aplikacji docelowej w typowy sposób.  
   
-## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
- Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku przy użyciu **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych  
+ Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie przy zapisywaniu danych do pliku przy użyciu *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
   
@@ -69,7 +70,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymania (**/processoff**) zbierania danych dla procesu, który jest określony przez identyfikator procesu (`PID`).|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia (**/threadon**) lub zatrzymania (**/threadoff**) zbierania danych dla wątku, który jest określony przez identyfikator wątku (`TID`).|  
   
-## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania  
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania  
  Aby zakończyć sesję profilowania, zamknij aplikację, która działa instrumentowanych składnik, a następnie wywołać **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profilera i zamknij plik danych profilowania.  
   
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
@@ -80,6 +81,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
      **VSPerfCmd/shutdown**  
   
-## <a name="see-also"></a>Zobacz też  
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Zobacz także  
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)

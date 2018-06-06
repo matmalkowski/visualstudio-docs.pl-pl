@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e42b9cae54186ed723c6c0567b5af247796d23d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815915"
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
@@ -51,7 +52,7 @@ Ten atrybut potwierdza, że nie może być wartością, której działalność *
 
 * **parametr** metody test sparametryzowany
 
-  ```
+  ```csharp
   // assume foo is not null
   [PexMethod]
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
@@ -59,7 +60,7 @@ Ten atrybut potwierdza, że nie może być wartością, której działalność *
 
 * **pola**
 
-  ```
+  ```csharp
   public class Foo {
      // this field should not be null
      [PexAssumeNotNull]
@@ -69,7 +70,7 @@ Ten atrybut potwierdza, że nie może być wartością, której działalność *
 
 * A **typu**
 
-  ```
+  ```csharp
   // never consider null for Foo types
   [PexAssumeNotNull]
   public class Foo {}
@@ -94,7 +95,7 @@ Również zdecydowanie zaleca się dokonanie tych klas **częściowe** tak, aby 
 
 **Pakiet dodatkowe i kategorie**:
 
-```
+```csharp
 [TestClass] // MSTest test fixture attribute
 [PexClass(Suite = "checkin")] // fixture attribute
 public partial class MyTests { ... }
@@ -102,7 +103,7 @@ public partial class MyTests { ... }
 
 **Określanie typu testowanej**:
 
-```
+```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
@@ -131,7 +132,7 @@ Sparametryzowanego testu jednostkowego:
 
 **Przykład**
 
-```
+```csharp
 [PexClass]
 public partial class MyTests {
      [PexMethod]
@@ -150,7 +151,7 @@ public partial class MyTests {
 
 Ten atrybut można określać na poziomie zestawu, aby zastąpić wartości domyślne ustawienia dla wszystkich eksploracji.
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
 [assembly: PexAssemblySettings(TestFramework = "Naked")]
@@ -161,7 +162,7 @@ using Microsoft.Pex.Framework;
 
 Ten atrybut określa zestaw, który jest poddawana testom w bieżącym projekcie testowym. 
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
 ```
 
@@ -172,7 +173,7 @@ Ten atrybut służy do określania zestawu się.
 
 **Przykład**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 // the assembly containing ATypeFromTheAssemblyToInstrument should be instrumented
@@ -189,7 +190,7 @@ Ten atrybut informuje program IntelliTest, że można użyć określonego typu m
 
 **Przykład**
 
-```
+```csharp
 [PexMethod]
 [PexUseType(typeof(A))]
 [PexUseType(typeof(B))]
@@ -208,7 +209,7 @@ Jeśli ten atrybut jest dołączony do [PexMethod](#pexmethod) (lub [PexClass](#
 
 Następującego testu określa, że konstruktora **stosu** może zgłaszać **ArgumentOutOfRangeException**:
 
-```
+```csharp
 class Stack {
   int[] _elements;
   int _count;
@@ -223,7 +224,7 @@ class Stack {
 
 Filtr jest dołączony do osprzętu w następujący sposób (go może być także definiowane na poziomie zestawu lub testowym):
 
-```
+```csharp
 [PexMethod]
 [PexAllowedException(typeof(ArgumentOutOfRangeException))]
 class CtorTest(int capacity) {

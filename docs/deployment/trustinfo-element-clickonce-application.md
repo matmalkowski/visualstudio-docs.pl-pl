@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816006"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustinfo —&gt; — Element (aplikacji ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomienia na komputerze klienckim.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml
   
       <trustInfo>  
    <security>  
@@ -104,7 +105,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
      Wymagana. Określa, czy aplikacja musi nieograniczony przyznawania to uprawnienie. Jeśli `true`, przyznaj uprawnienie jest bezwarunkowe. Jeśli `false`, lub jeśli zdefiniowano ten atrybut jest ograniczone w zależności od zdefiniowanych atrybutów specyficzne uprawnienia `IPermission` tagu. Wykonaj następujące uprawnienia:  
   
-    ```  
+    ```xml  
     <IPermission  
       class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"   
       version="1"   
@@ -169,7 +170,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
  Pierwszym przykładzie przedstawiono `trustInfo` elementu domyślne uprawnienia dostępne w strefie Internet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -205,7 +206,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
  Drugi przykład ilustruje `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń LocalIntranet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -257,7 +258,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
  Pokazano w przykładzie trzeci `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń FullTrust.  
   
-```  
+```xml  
 <trustInfo>  
   <security>  
     <applicationRequestMinimum>  

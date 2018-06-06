@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5701b88f3942301c8fdb6d674fc323e62a93589b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815460"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elementu (programu inicjującego)
 `RelatedProducts` Element definiuje innych produktów, które zależą od lub są objęte bieżącego produktu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <RelatedProducts>  
     <DependsOnProduct  
         Code  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu Określa, że Installer firmy Microsoft jest instalowany z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]i w związku z tym nie wymagają osobnej instalacji.  
   
-```  
+```xml  
 <RelatedProducts>  
     <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
 </RelatedProducts>  

@@ -10,25 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e25d5052cbc70e4a45040f8ebadb8cb36daa053
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814498"
 ---
-# <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Określanie ścieżki do narzędzi wiersza polecenia narzędzi profilowania
+# <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określ ścieżkę do narzędzia wiersza polecenia narzędzi profilowania
 Ścieżka [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzi profilowania nie została dodana do zmiennej środowiskowej PATH. Na komputerach z 32-bitowego narzędzia znajdują się w jeden katalog. Istnieje 32-bitowe i 64-bitowe wersje narzędzi profilowania na komputerach 64-bitowych.  
   
 ## <a name="32-bit-computers"></a>32-bitowych komputerów  
- Na komputerach z 32-bitowy, domyślny katalog narzędzia profiler jest *dysków*\Program Files\Microsoft 11.0\Team programu Visual Studio Tools narzędzia.  
+ Na komputerach z 32-bitowy, domyślny katalog narzędzia profiler jest *: dysk rozruchowy\Program 11.0\Team Files\Microsoft Visual Studio Tools narzędzia*.  
   
 ## <a name="64-bit-computers"></a>Komputery 64-bitowe  
  Na komputerach 64-bitowych należy określić ścieżkę zgodnie z platformą docelową PROFILOWANEGO aplikacji.  
   
 -   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
   
-     *Dysk*\Program pliki (x86) \Microsoft Visual Studio 11.0\Team narzędzia Tools  
+     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 11.0\Team narzędzia narzędzia*  
   
 -   Dla 64-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
   
-     *Dysk*\Program pliki (x86) \Microsoft Visual Studio 11.0\Team narzędzia Tools\x64
+     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 11.0\Team Tools\x64 narzędzia*

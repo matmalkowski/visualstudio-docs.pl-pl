@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ed2080c34908f67c83baed182d8e958eb1776b8f
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815824"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 Aby udostępnić aplikacji ClickOnce, należy opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikacja zostanie opublikowana przy użyciu Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **publikowania** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -101,4 +102,4 @@ Aby udostępnić aplikacji ClickOnce, należy opublikować go do udziału plikó
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

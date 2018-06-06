@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815798"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
@@ -62,13 +63,13 @@ Co warunkowe i bezwarunkowe gałęzi wykonane i monitorowanych kodu jest liczony
 
 Na przykład następujący kod zużywa gałęzie kolejności 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Można edytować **MaxBranches** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod) . Poniższy przykład usunięcie to powiązane:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinform
 
 W kodzie testu, można użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) ignoruje wygenerowany przez warunek pętli ograniczenia:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ Każda gałąź warunkowego, która zależy od wejść z [sparametryzowanego tes
 
 Na przykład wykorzystuje każda ścieżka w poniższym kodzie **n + 1** warunki:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Można edytować **MaxConditions** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Na przykład:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ Można również ustawić **TestExcludePathBoundsExceeded** opcję, aby poinform
 
 Można użyć [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) ignoruje wygenerowany przez warunek pętli ograniczenia:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ Każde wywołanie (bezpośrednie, pośrednie, wirtualne lub przejść) kodu wyko
 
 Można edytować **MaxCalls** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usunięcie to powiązane:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest ogranicza rozmiar stosu wywołań z dowolną ścieżkę wykonywania,
 
 Można edytować **MaxStack** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usunięcie tego granica (niezalecane):
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ Nie może być to, że w każdym uruchomieniu IntelliTest test sparametryzowany 
 
 Można edytować **MaxRuns** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usunięcie tego granica (niezalecane):
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ Gdy IntelliTest znajdzie często dużo interesujące dane wejściowe testu pocz�
 
 Można edytować **MaxRunsWithoutNewTests** opcji atrybutu pochodną **PexSettingsAttributeBase**, takich jak [PexClass](attribute-glossary.md#pexclass) lub [PexMethod](attribute-glossary.md#pexmethod). Poniższy przykład usunięcie tego granica (niezalecane):
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ Możesz pomóc IntelliTest, wskazując jeden lub więcej typów, które pasują 
 
   Na przykład, jeśli IntelliTest zgłasza, że "nie ma żadnych typów, które można przypisać do **System.Collections.IDictionary**", można ułatwić poprzez dołączenie następujące **PexUseTypeAttribute** testu (lub do klasy osprzętu):
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ Możesz pomóc IntelliTest, wskazując jeden lub więcej typów, które pasują 
 
 * **Atrybut poziomu zestawu**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

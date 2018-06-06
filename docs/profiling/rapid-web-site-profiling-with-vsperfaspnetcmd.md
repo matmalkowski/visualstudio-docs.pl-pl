@@ -12,15 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ebff923667f76c350f17a08196369b4354151d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c30aebca3fc57912ac1a9bfc6fb16379dda24ed
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815561"
 ---
-# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie za pomocą VSPerfASPNETCmd witryny sieci web
 
-**VSPerfASPNETCmd** narzędzie wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, opcje zostały zredukowane nie zmiennych środowiskowych, które muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Przy użyciu **VSPerfASPNETCmd** jest to preferowana metoda profilowania z Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie autonomiczny profilera](../profiling/how-to-install-the-stand-alone-profiler.md).
+**VSPerfASPNETCmd** narzędzia wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, opcje zostały zredukowane nie zmiennych środowiskowych, które muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Przy użyciu **VSPerfASPNETCmd** jest to preferowana metoda profilowania z Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie autonomiczny profilera](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -28,27 +29,27 @@ ms.lasthandoff: 04/19/2018
  W niektórych scenariuszach, takich jak zbieranie danych współbieżności lub wstrzymywanie i wznawianie profilowania, za pomocą **VSPerfCmd** jest to preferowana metoda profilowania.
 
 > [!NOTE]
-> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w podkatalogu narzędzia \Team Tools\Performance katalogu instalacyjnego programu Visual Studio. Na komputerach 64-bitowe narzędzie VSPerfASPNETCmd znajduje się w katalogu narzędzia \Team Tools\Performance 32-bitowych. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Narzędzia wiersza polecenia narzędzi profilowania znajdują się w *\Team Tools\Performance narzędzia* podkatalogu w katalogu instalacji programu Visual Studio. Na komputerach 64-bitowych, należy użyć narzędzia VSPerfASPNETCmd znajduje się w 32-bitowych *\Team Tools\Performance narzędzia* katalogu. Za pomocą narzędzi wiersza polecenia profilera, możesz dodać ścieżkę narzędzia do zmiennej środowiskowej PATH w oknie wiersza polecenia lub dodać go do samo polecenie. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="profiling-an-aspnet-application"></a>Profilowanie aplikacji ASP.NET
+## <a name="profile-an-aspnet-application"></a>Profiluj aplikację ASP.NET
 
-Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, wpisz jedno z poleceń opisane w poniższych sekcjach. Witryna sieci Web jest uruchamiana i uruchamia profilera do zbierania danych. Wykonywanie aplikacji, a następnie zamknij przeglądarkę. Aby zatrzymać profilowanie, naciśnij klawisz Enter w oknie wiersza polecenia.
+Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, wpisz jedno z poleceń opisane w poniższych sekcjach. Witryna sieci Web jest uruchamiana i uruchamia profilera do zbierania danych. Wykonywanie aplikacji, a następnie zamknij przeglądarkę. Aby zatrzymać profilowanie, naciśnij klawisz **Enter** klucza w oknie wiersza polecenia.
 
 > [!NOTE]
-> Domyślnie wiersza polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Można użyć **/nowait** opcję, aby wymusić wiersza polecenia do zwrócenia. Zobacz [przy użyciu opcji/nowait](#UsingNoWait).
+> Domyślnie wiersza polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Można użyć **/nowait** opcję, aby wymusić wiersza polecenia do zwrócenia. Zobacz [użyj opcji/nowait](#UsingNoWait).
 
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>W celu zbierania statystyk aplikacji przy użyciu metody pobierania próbek
- Próbkowanie to domyślne metody profilowania **VSPerfASPNETCmd** narzędzia i nie muszą być określone w wierszu polecenia. Następujący wiersz polecenia służy do zbierania statystyk aplikacji z określonej aplikacji sieci Web:
+ Próbkowanie to domyślne metody profilowania **VSPerfASPNETCmd** narzędzia i nie muszą być określone w wierszu polecenia. Następujący wiersz polecenia służy do zbierania statystyk aplikacji z określonej aplikacji sieci web:
 
  **vsperfaspnetcmd***podanym adresem URL*
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji
 
-Użyj następującego polecenia do zbierania danych o chronometrażu z dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web:
+Użyj następującego polecenia do zbierania danych o chronometrażu z dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web:
 
 **polecenie vsperfaspnetcmd/trace***podanym adresem URL*
 
-Jeśli chcesz profilu plików dll statycznie skompilowanej aplikacji sieci Web musi Instrumentacja plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzia wiersza polecenia. Polecenie vsperfaspnetcmd/trace obejmuje dane z instrumentowanych plików.
+Jeśli chcesz statycznie profilu skompilowany. *dll* plików w aplikacji sieci web musi Instrumentacja plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzia wiersza polecenia. Polecenie vsperfaspnetcmd/trace obejmuje dane z instrumentowanych plików.
 
 ## <a name="to-collect-net-memory-data"></a>Zbieranie danych pamięci .NET
 
@@ -101,5 +102,5 @@ Można dodać żadnego z następujących opcji do polecenia wymienione wcześnie
 
 |Opcja|Opis|
 |------------|-----------------|
-|**/ Output:** `VspFile`|Domyślnie profilowania plik danych (Vsp) jest tworzony w bieżącym katalogu z nazwą pliku **PerformanceReport.vsp**. Aby określić inną lokalizację i nazwę pliku, należy użyć opcji/Output.|
-|**/ PackSymbols: wyłączanie**|Domyślnie VsPerfASPNETCmd osadza symboli (funkcja i nazwy parametrów itp.) w pliku Vsp. Osadzanie symbole wprowadzić plik danych profilowania bardzo duże. Jeśli mają dostęp do .pdb, pliki, które zawierają symbole podczas analizowania danych, użyj /packsymbols: wyłącz opcję, aby wyłączyć osadzanie symboli.|
+|**/ Output:** `VspFile`|Domyślnie dane profilowania (. *Vsp*) plik jest tworzony w bieżącym katalogu z nazwą pliku **PerformanceReport.vsp**. Aby określić inną lokalizację i nazwę pliku, należy użyć opcji/Output.|
+|**/ PackSymbols: wyłączanie**|Domyślnie VsPerfASPNETCmd osadza w symboli (nazwy funkcji i parametru i itd.). *vsp* pliku. Osadzanie symbole wprowadzić plik danych profilowania bardzo duże. Jeśli masz dostęp do. *pdb* pliki, które zawierają symbole podczas analizowania danych, użyj /packsymbols: wyłącz opcję, aby wyłączyć osadzanie symboli.|

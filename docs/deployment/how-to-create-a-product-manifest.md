@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815772"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Porady: tworzenie manifestu produkt
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet programu inicjującego. Pakiet programu inicjującego zawiera jeden produkt pliku manifestu ale manifest pakietu dla każdego ustawienia regionalne. Manifest pakietu zawiera aspekty specyficzne dla lokalizacji pakietu. W tym ciągów, Umowa licencyjna użytkownika oprogramowania i pakietów językowych.  
@@ -41,7 +42,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 3.  Dodaj następujące XML opisujący kod XML przestrzeń nazw i produktu dla pakietu. Zastąp kod produktu unikatowy identyfikator dla pakietu.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 4.  Dodaj XML, aby określić, że pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 5.  Dodaj XML, aby wyświetlić listę wszystkich plików znajdujących się w pakiet programu inicjującego. W tym przykładzie używane CorePackage.msi nazwę pliku pakietu.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 7.  Dodaj XML do zainstalowania pakietu za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flagi do pliku msi, który zostanie zainstalowany w trybie dyskretnym. Jeśli plik .exe, inicjujący uruchamia plik .exe przy użyciu powłoki. Następujący kod XML zawiera bez argumentów do CorePackage.msi, ale argument wiersza polecenia można umieszczać w atrybucie argumentów.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Dodaj następujący kod XML, sprawdź, czy jest zainstalowany ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID pakietu redystrybucyjnego składnika.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 9. Dodaj XML do zmiany zachowania programu inicjującego zależnie od tego, jeśli jest już zainstalowany składnik inicjujący. Jeśli jest zainstalowany składnik, nie zostanie uruchomiony pakiet programu inicjującego. Następujący kod XML sprawdza, czy aktualny użytkownik ma uprawnienia administratora, ponieważ ten składnik wymaga uprawnień administracyjnych.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 10. Dodaj XML można ustawić kody wyjścia, jeśli Instalacja powiodła się i konieczne jest ponowne uruchomienie. Następujący kod XML przedstawiono zakończy się niepowodzeniem i FailReboot kody, które wskazują, że inicjujący nie będzie kontynuowane, instalowanie pakietów zakończenia.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
   
 11. Dodaj następujący kod XML koniec sekcji poleceń programu inicjującego.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
 ## <a name="example"></a>Przykład  
  Manifest produktu zawiera instrukcje dotyczące niestandardowe wstępne wymagania instalacji.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

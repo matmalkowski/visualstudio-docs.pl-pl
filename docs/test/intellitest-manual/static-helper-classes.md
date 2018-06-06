@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815902"
 ---
-# <a name="static-helper-classes"></a>Klasy statyczne pomocy
+# <a name="static-helper-classes"></a>Statyczne klasy pomocy
 
 IntelliTest zapewnia zbiór statyczną klasę pomocy używaną podczas tworzenia [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing):
 
@@ -41,7 +42,7 @@ Jeśli nie ma warunku zakładanego niektórych testów danych wejściowych, **Pe
 
 Nie będzie uwzględniać następujące test sparametryzowany **j = 0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Powyższy kod jest niemal odpowiednikiem:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Jeśli warunek potwierdzona nie dysponuje dla niektórych testów danych wejści
 
 Następujące potwierdza, że ma dodatnią wartość bezwzględna liczby całkowitej:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ Statyczne klasy, która dostarcza pomocnicze wartości wejściowych do testu, kt
 
 * Proste wywołania **PexChoose.Value** aby wygenerować nową wartość:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Klasa statyczna logowania nazwanych wartości.
 
 Gdy program IntelliTest Eksploruje kodu, **PexObserve** jest używana do rejestrowania obliczonych wartości przy użyciu ich oświadczenia sformatowanego ciągu. Wartości są skojarzone z unikatowe nazwy.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Przykład**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Zwykle IntelliTest próbuje obejmują wszystkie ścieżki wykonywania kodu podcz
 
 Ten przykład przedstawia implementację **PexAssume.Arrays.ElementsAreNotNull** metody. W metodzie możesz zignorować ograniczenia długości tablicy wartości w celu uniknięcia IntelliTest próby generowania różne rozmiary tablicy. Ograniczenia są ignorowane, tylko w tym miejscu. Jeśli testowany kod zachowuje się inaczej dla długości tablicy różnych IntelliTest nie można wygenerować różnych tablic o rozmiarze z ograniczenia testowany kod.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {
