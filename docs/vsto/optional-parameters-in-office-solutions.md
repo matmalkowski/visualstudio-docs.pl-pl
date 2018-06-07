@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571990"
 ---
-# <a name="optional-parameters-in-office-solutions"></a>Parametry opcjonalne w rozwiązaniach Office
+# <a name="optional-parameters-in-office-solutions"></a>Parametry opcjonalne w rozwiązaniach pakietu Office
   Wiele metod modele obiektów w aplikacji pakietu Microsoft Office akceptuje następujące parametry opcjonalne. Jeśli używasz programu Visual Basic umożliwiające tworzenie rozwiązań pakietu Office w Visual Studio nie trzeba przekazać wartość następujące parametry opcjonalne, ponieważ zostaną automatycznie użyte wartości domyślne dla każdego parametru brak. W większości przypadków można również pominąć następujące parametry opcjonalne w projektach Visual C#. Jednak nie można pominąć opcjonalne **ref** parametry `ThisDocument` klasy w projektów na poziomie dokumentu programu Word.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Aby uzyskać więcej informacji na temat pracy z opcjonalnymi parametrami w projektach Visual C# i Visual Basic, zobacz [nazwane i opcjonalne argumenty &#40;C&#35; przewodnik programowania w języku&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) i [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Aby uzyskać więcej informacji na temat pracy z opcjonalnymi parametrami w projektach Visual C# i Visual Basic, zobacz [nazwane i opcjonalne argumenty &#40;C&#35; Podręcznik programowania&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) i [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
 >  We wcześniejszych wersjach programu Visual Studio należy podać wartość dla każdego parametru w projektach Visual C#. Dla wygody te projekty obejmują zmiennej globalnej o nazwie `missing` czy można przekazać do opcjonalny parametr Jeśli chcesz użyć wartości domyślnej parametru. Projekty Visual C# dla pakietu Office w Visual Studio nadal zawierają `missing` zmiennej, ale zwykle nie trzeba używać go podczas opracowywania rozwiązań pakietu Office w [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], z wyjątkiem podczas wywoływania metody z opcjonalne **ref** Parametry w `ThisDocument` klasy w projektów na poziomie dokumentu dla programu Word.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Przy użyciu parametrów metod klasy ThisDocument w Visual C# projektów na poziomie dokumentu dla programu Word  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Parametry opcjonalne użycie metod klasy ThisDocument w Visual C# projektów na poziomie dokumentu dla programu Word  
  Model obiektów programu Word zawiera wiele metod o opcjonalne **ref** parametrów, które akceptują <xref:System.Object> wartości. Jednak nie można pominąć opcjonalne **ref** parametrów metod wygenerowany `ThisDocument` klasy w poziomie dokumentu projektach Visual C# dla programu Word. Visual C# umożliwia pominięcie opcjonalne **ref** parametry tylko dla metod interfejsów, nie klasy. Na przykład w poniższym przykładzie kodu nie kompiluje się, ponieważ nie można pominąć opcjonalne **ref** parametry <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metody `ThisDocument` klasy.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Aby uzyskać więcej informacji na temat parametrów typu odwołanie i wartość, zobacz [przekazywanie argumentów według wartości i według odwołania &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (w języku Visual Basic) i [przekazywanie parametrów &#40;C&#35; Przewodnik programowania w języku&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Aby uzyskać więcej informacji na temat parametrów typu odwołanie i wartość, zobacz [przekazywanie argumentów według wartości i według odwołania &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (w języku Visual Basic) i [przekazania parametrów &#40;C&#35; Podręcznik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
+ [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)  
   
   

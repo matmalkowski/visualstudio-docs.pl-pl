@@ -1,5 +1,5 @@
 ---
-title: Zagadnienia dotyczące zabezpieczeń podczas pracy z danych XML
+title: Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572608"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Zagadnienia dotyczące zabezpieczeń podczas pracy z danych XML
 
@@ -42,6 +43,6 @@ W tym temacie omówiono problemy z zabezpieczeniami, które należy znać podcza
 
 -   Ewaluator wyrażeń XSLT jest ładowany przez aparat debugowania zarządzanego. Aparat debugowania zarządzanego przyjęto założenie, że cały kod jest uruchamiany z komputera lokalnego użytkownika. W związku z tym <xref:System.Xml.Xsl.XslCompiledTransform> klasy pobiera plik XSLT do użytkownika komputera lokalnego. Możliwość, że podwyższenie poziomu w uprawnień do wykonywania może wystąpić skuteczność została osłabiona, wykonując wszystkie przekształcenia XSLT w nowej domenie aplikacji z ograniczonymi uprawnieniami
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Domeny aplikacji](/dotnet/framework/app-domains/application-domains)

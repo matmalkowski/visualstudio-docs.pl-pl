@@ -17,13 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571617"
 ---
-# <a name="create-solutions-and-projects"></a>Tworzenie projektów i rozwiązań
+# <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
 *Projekty* są kontenerami logicznymi w Visual Studio, który przechowuje elementy potrzebne do utworzenia aplikacji, takich jak pliki kodu źródłowego, mapy bitowe, ikony, a odwołania do składnika i usługi. Podczas tworzenia nowego projektu programu Visual Studio tworzy *rozwiązania* zawiera projekt. Następnie można dodać inne nowych lub istniejących projektów do rozwiązania, jeśli chcesz. Rozwiązania może również zawierać pliki, które nie są podłączone do danego projektu.
 
@@ -136,5 +137,4 @@ Możesz usunąć rozwiązań i ich zawartość stałe, ale nie za pomocą środo
 
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repozytoria typu open source firmy Microsoft w witrynie GitHub](https://github.com/Microsoft)
-- [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)
 - [Przykłady kodu dewelopera](https://code.msdn.microsoft.com/)

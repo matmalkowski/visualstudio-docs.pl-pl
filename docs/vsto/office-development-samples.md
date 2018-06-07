@@ -15,20 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571420"
 ---
-# <a name="office-development-samples"></a>Office Development ― Przykłady
+# <a name="office-development-samples"></a>Office development ― przykłady
   Visual Studio zawiera przykładowe aplikacje, które pokazują, jak używać narzędzia Microsoft Office developer tools do tworzenia rozwiązań pakietu Office. Te przykłady kodu ilustruje składnię, struktury i techniki używany do tworzenia rozwiązań pakietu Office.  
   
- Uzyskać najnowsze przykłady, zobacz [przykłady deweloperów MSDN: Dowiedz się za pomocą kodu](http://go.microsoft.com/fwlink/?LinkID=248199) w witrynie firmy Microsoft.  
+ Aby uzyskać najnowsze przykłady, zobacz [przykłady deweloperów MSDN: informacje za pomocą kodu](http://go.microsoft.com/fwlink/?LinkID=248199) w witrynie firmy Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
-## <a name="office-development-samples"></a>Office Development ― Przykłady  
+## <a name="office-development-samples"></a>Office development ― przykłady  
   
 |Przykład|Opis|  
 |------------|-----------------|  
@@ -42,8 +43,8 @@ ms.lasthandoff: 04/16/2018
 |Interfejs użytkownika Menedżera próbki|Przedstawia sposób tworzenia dostosowywania wstążki, niestandardowego okienka zadań i regionu formularza niestandardowego dla programu Outlook, implementując rozszerzalności interfejsów w dodatku VSTO. Każde wystąpienie wstążki, w okienku zadań i regionu formularza poprawnie może komunikować się ze sobą.|  
 |VBA i przykładowe współdziałanie VSTO|Przedstawia sposób wywołania metody w dostosowaniu poziomie dokumentu dla programu Excel z języka Visual Basic dla kodu aplikacji (VBA) w skoroszycie.<br /><br /> Ten przykład jest dostępny tylko online.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Przykłady deweloperów MSDN: Informacje za pomocą przykłady kodu](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Przykłady deweloperów MSDN: informacje za pomocą przykłady kodu](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
   
   

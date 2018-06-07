@@ -1,5 +1,5 @@
 ---
-title: Inne, XML, Edytor tekstu, opcje — Okno dialogowe
+title: Inne, XML, Edytor tekstu, Opcje, okno dialogowe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571773"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Inne, XML, Edytor tekstu, opcje — Okno dialogowe
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Różne, XML, Edytor tekstu, opcje — Okno dialogowe
 
 To okno dialogowe umożliwia zmianę ustawień automatycznego uzupełniania i schematu edytora XML. Dostęp można uzyskać **opcje** okno dialogowe z **narzędzia** menu.
 
@@ -68,7 +69,7 @@ To okno dialogowe umożliwia zmianę ustawień automatycznego uzupełniania i sc
 
  Określa lokalizację pamięci podręcznej schematu. Przycisk przeglądania (**...** ) otwiera **Przeglądaj katalog** okno dialogowe w bieżącej lokalizacji pamięci podręcznej schematu. Możesz wybrać inny katalog lub możesz wybrać folder, w oknie dialogowym kliknij prawym przyciskiem myszy i wybierz polecenie **Otwórz** co znajduje się w katalogu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Właściwości dokumentu XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md)
 - [Składniki edytora XML](../xml-tools/xml-editor-components.md)

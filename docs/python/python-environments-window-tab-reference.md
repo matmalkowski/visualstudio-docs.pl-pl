@@ -1,7 +1,7 @@
 ---
 title: Odwołanie okno środowiska Python
 description: Szczegółowe informacje na każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio.
-ms.date: 05/22/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572127"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odwołanie karty okno środowiska Python
 
@@ -95,7 +96,9 @@ W obu przypadkach można dostosować instalację, dodając argumenty w polu wysz
 
 Instalowanie pakietu tworzy oddzielne podfoldery w środowisku `Lib` folder w systemie plików. Na przykład, jeśli masz zainstalowany 3,6 Python w `c:\Python36`, pakiety są instalowane w `c:\Python36\Lib`; Jeśli masz zainstalowany w Anaconda3 `c:\Program Files\Anaconda3` , a następnie pakiety są instalowane w `c:\Program Files\Anaconda3\Lib`.
 
-W tym ostatnim przypadku ponieważ środowisko znajduje się w obszarze chronionym systemu plików `c:\Program Files`, należy uruchomić program Visual Studio `pip install` z podniesionymi uprawnieniami, aby zezwolić na tworzenie podfolderów pakietu. Gdy wymagana jest podniesienia uprawnień, Visual Studio wyświetla monit "Aby zainstalować, zaktualizować lub usunąć pakiety dla tego środowiska może być wymagane uprawnienia administratora":
+### <a name="granting-administrator-privileges-for-package-install"></a>Udzielanie uprawnień administratora dla pakietu instalacji
+
+Podczas instalowania pakietów w środowisku, w którym znajduje się w obszarze chronionym systemu plików, takich jak `c:\Program Files\Anaconda3\Lib`, należy uruchomić program Visual Studio `pip install` z podniesionymi uprawnieniami, aby zezwolić na tworzenie podfolderów pakietu. Gdy wymagana jest podniesienia uprawnień, Visual Studio wyświetla monit "Aby zainstalować, zaktualizować lub usunąć pakiety dla tego środowiska może być wymagane uprawnienia administratora":
 
 ![Wiersz podniesienia uprawnień do instalacji pakietu aktualizacji](media/environments-pip-elevate.png)
 
@@ -104,6 +107,18 @@ W tym ostatnim przypadku ponieważ środowisko znajduje się w obszarze chronion
 Wybieranie **zawsze podniesienia uprawnień podczas instalowania lub usuwania pakietów** zapobiega wyświetlaniu środowiska okna dialogowego. Aby ponownie wyświetlone okno dialogowe, przejdź do **Narzędzia > Opcje > Narzędzia Python Tools > Ogólne** i kliknij przycisk **zresetować wszystkie okna dialogowe trwale ukryty**.
 
 W tym takie same opcje karcie, możesz również wybrać **pip są zawsze uruchamiane jako administrator** do pomijania okna dialogowego dla wszystkich środowisk. Zobacz [opcje — karta Ogólne](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Ograniczenia zabezpieczeń ze starszymi wersjami programu Python
+
+Korzystając z języka Python 2.6, 3.1 i 3.2, Visual Studio wyświetla ostrzeżenie, "z powodu zabezpieczeń, które ograniczenia instalowania z Internetu mogą nie działać w tej wersji języka Python":
+
+![Komunikat dotyczący pip instalowanie ograniczenia przy użyciu starszej wersji środowiska Python](media/environments-old-version-restriction.png)
+
+Przyczyna to ostrzeżenie oznacza, że z tych starszych wersji języka Python, `pip install` nie zawiera pomocy technicznej dla zabezpieczeń TLS (Transport Layer) 1.2, który jest wymagany do pobrania ze źródła pakietów pakiety, pypi.org. Niestandardowe kompilacji języka Python może obsługiwać protokół TLS 1.2 w takim przypadku `pip install` może działać.
+
+Może być możliwe do pobrania odpowiednie `get-pip.py` pakietu z [bootstrap.pypa.io](https://bootstrap.pypa.io/), ręcznie Pobierz pakiet z [pypi.org](https://pypi.org/), a następnie zainstaluj pakiet z tej kopii lokalnej.
+
+, Jednak zaleca się po prostu uaktualnić do wersji języka Python 2.7 lub 3.3 +, w którym nie ma w przypadku ostrzeżenia.
 
 ## <a name="intellisense-tab"></a>Karta IntelliSense
 

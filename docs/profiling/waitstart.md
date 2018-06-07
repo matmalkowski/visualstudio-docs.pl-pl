@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9845a9814f70afd18fddb880c8e51804964161
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 059f05d25f1882cd857dd1e39ea40a58a7c5e1d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571373"
 ---
 # <a name="waitstart"></a>WaitStart
-Opcja WaitStart powoduje, że podpolecenie VSPerfCmd.exe Start przywrócić tylko wtedy, gdy profilera został zainicjowany lub po upływie określonej liczby sekund. Domyślnie polecenia Start zwraca natychmiast. Jeśli polecenie sub Start zwraca bez podczas inicjowania profilera, zwracany jest błąd. Jeśli nie określono liczbę sekund, przez czas nieokreślony oczekuje polecenia uruchomienia.  
+Przyczyny opcja WaitStart *VSPerfCmd.exe* podpolecenie Start, aby przywrócić tylko wtedy, gdy profilera został zainicjowany lub po upływie określonej liczby sekund. Domyślnie polecenia Start zwraca natychmiast. Jeśli polecenie sub Start zwraca bez podczas inicjowania profilera, zwracany jest błąd. Jeśli nie określono liczbę sekund, przez czas nieokreślony oczekuje polecenia uruchomienia.  
   
  Opcja WaitStart jest przydatna w plikach wsadowych, aby upewnić się, że profiler ten został zainicjowany.  
   
