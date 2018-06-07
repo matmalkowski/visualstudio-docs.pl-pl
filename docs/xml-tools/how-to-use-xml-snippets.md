@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573131"
 ---
 # <a name="how-to-use-xml-snippets"></a>Porady: użycie XML wstawki kodu programu
 
@@ -79,7 +80,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do **z funkcji Ot
 > [!NOTE]
 > **z funkcji Otocz przez** polecenia jest również dostępny za pośrednictwem skrótu klawiaturowego (**Ctrl**+**K**, następnie **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Aby użyć przestrzennego z z menu kontekstowego
+### <a name="to-use-surround-with-from-the-context-menu"></a>Aby korzystać z funkcji Otocz przez z menu kontekstowego
 
 1. Zaznacz tekst, który należy ująć w edytorze XML.
 
@@ -89,7 +90,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do **z funkcji Ot
 
 3. Wybierz fragment z listy za pomocą myszy lub wpisując nazwę fragment kodu i naciskając klawisz **kartę** lub **Enter**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Aby użyć przestrzennego z menu IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Aby korzystać z funkcji Otocz przez menu IntelliSense
 
 1. Zaznacz tekst, który należy ująć w edytorze XML.
 
@@ -99,7 +100,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do **z funkcji Ot
 
 3. Wybierz fragment z listy za pomocą myszy lub wpisując nazwę fragment kodu i naciskając klawisz **kartę** lub **Enter**.
 
-## <a name="using-xml-snippets"></a>Przy użyciu fragmentów kodu XML
+## <a name="use-xml-snippets"></a>Użyj fragmentów kodu XML
 
 Po wybraniu fragment kodu XML tekst fragment kodu jest wprowadzana automatycznie na pozycji kursora. Wszystkie pola edycji we fragmencie są wyróżnione, a pierwsze pole edycji jest wybierana automatycznie. Aktualnie zaznaczone pole jest opakowany.
 
@@ -109,10 +110,10 @@ Można edytować jest tylko pierwsze wystąpienie danego pola. Gdy to pole jest 
 
 Naciśnięcie przycisku **Enter** lub **Esc** anuluje pola edycji i zwraca edytor na normalny.
 
-Domyślne kolory pola fragment kodu można edytować można zmienić, modyfikując ustawienie pola fragmentu kodu w **czcionki i kolory** okienku **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Domyślne kolory pola fragment kodu można edytować, można zmienić, modyfikując **pola fragment kodu** w **czcionki i kolory** okienku **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Fragmenty kodu XML](../xml-tools/xml-snippets.md)
-- [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Instrukcje: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
+- [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Porady: tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)

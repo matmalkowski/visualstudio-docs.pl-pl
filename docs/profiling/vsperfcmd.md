@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573144"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-**VSPerfCmd.exe** narzędzie jest używane do uruchamiania i zatrzymywania gromadzenia danych wydajności. Używa następującej składni:  
+*VSPerfCmd.exe* narzędzie jest używane do uruchamiania i zatrzymywania gromadzenia danych wydajności. Używa następującej składni:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- W poniższych tabelach opisano **VSPerfCmd.exe** narzędzia Opcje.  
+ W poniższych tabelach opisano *VSPerfCmd.exe* narzędzia Opcje.  
   
 |Opcja|Opis|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Wyświetla listę prawidłowych liczników CPU dla bieżącego komputera.|  
 |[WinCounter](../profiling/wincounter.md) **:** *ścieżki*|Określa zdarzenia licznika wydajności systemu Windows zawierający dane znacznik profilu. Należy użyć tylko z **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Określa interwał (w milisekundach) między zdarzenia zbierania danych licznika wydajności systemu Windows. Za pomocą **WinCounter**.|  
-|[Zdarzenia](../profiling/events-vsperfcmd.md) **:** `option`|Kolekcja formantów określone zdarzenia funkcji Śledzenie zdarzeń systemu Windows (). Do pliku .itl, który nie jest plik danych (Vsp) profilowania zbierane są dane funkcji ETW.|  
+|[Zdarzenia](../profiling/events-vsperfcmd.md) **:** `option`|Kolekcja formantów określone zdarzenia funkcji Śledzenie zdarzeń systemu Windows (). Dane funkcji ETW są gromadzone w celu. *itl* pliku, który nie jest dane profilowania (. *Vsp*) pliku.|  
 |[Status](../profiling/status.md)|Wyświetla stan profilera, informacje dotyczące procesów, które są aktualnie PROFILOWANEGO i konta, które mają uprawnienia do kontrolowania profilera.|  
 |[Zamknięcie](../profiling/shutdown.md)[**:**`n`]|Zamyka plik danych profilowania i wyłącza profilera.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Wznawia zbieranie danych po wywołaniu **VSPerfCmdGlobalOff**.|  
@@ -62,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określony aplikację i rozpocznie się profilowania.|  
 |[Argumenty](../profiling/args.md) **:** *argumentów*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
 |[Console](../profiling/console.md)|Uruchamia określone polecenie nowe okno wiersza polecenia.|  
-|[Dołącz](../profiling/attach.md) **:** *PID*[**, *** PID*]|Rozpoczyna się profilowania określonych procesów. Procesy można zidentyfikować według identyfikatora procesu lub nazwy procesu.|  
-|[Odłącz](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować według identyfikatora procesu lub nazwy procesu. Jeśli żaden proces nie zostanie określony, Profilowanie jest zostało zatrzymane dla wszystkich procesów.|  
+|[Dołącz](../profiling/attach.md) **:** *PID*[**, *** PID*]|Rozpoczyna się profilowania określonych procesów. Procesy można zidentyfikować według Identyfikatora procesu lub nazwy procesu.|  
+|[Odłącz](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować według Identyfikatora procesu lub nazwy procesu. Jeśli żaden proces nie zostanie określony, Profilowanie jest zostało zatrzymane dla wszystkich procesów.|  
 |[Wykaz Globalny](../profiling/gc-vsperfcmd.md)[**:**{**alokacji**`&#124;`**okres istnienia**}]|Umożliwia zbieranie danych pamięci .NET alokacji i obiekt okres istnienia. Należy użyć tylko z **VSPerfCmdLaunch** opcji.|  
   
 ### <a name="sample-interval-options"></a>Przykładowe opcje interwału  
@@ -90,7 +91,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>/ Driver narzędzia VSPerfCmd  
  **/Driver narzędzia VSPerfCmd** jest teraz przestarzałe. Użyj **VsPerfCmdAdmin** opcje dla tej funkcji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Narzędzie VSInstr](../profiling/vsinstr.md)   
  [Vsperfmon —](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247a152cd04a262115cbde78a7a06ad2e95f250c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572407"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Porady: odwołania do informacji o symbolach w systemie Windows
-Visual Studio Profiling Tools pliki symboli (.pdb) są używane do rozpoznawania nazw symbolicznych, takich jak funkcja nazw plików binarnych programu. Można wykonaj następujące kroki, aby automatycznie pobrać i aktualizować pliki .pdb poprawne dla wersji systemu Windows na komputerze lokalnym.  
+Visual Studio Profiling Tools użyć symbolu (. *PDB*) pliki do rozpoznawania nazw symbolicznych, takich jak funkcja nazw plików binarnych programu. Można wykonaj następujące kroki, aby automatycznie pobrać i zainstalować aktualizację poprawny. *pdb* plików dla wersji systemu Windows na komputerze lokalnym.  
   
 > [!NOTE]
 >  To ustawienie nie ma wpływu na istniejące raporty. Tylko raporty utworzone po określaniu serwera symboli będzie miał informacji o symbolach.  
   
- Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Aby uzyskać więcej informacji, zobacz [Określ symbolu (. *PDB*) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Aby użyć serwera Microsoft symbol server  
   
@@ -47,6 +48,6 @@ Visual Studio Profiling Tools pliki symboli (.pdb) są używane do rozpoznawania
   
      Możesz również kliknąć przycisk wielokropka (**...** ), a następnie wybierz katalog z **przeglądanie w poszukiwaniu folderu** okno dialogowe.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Porady: Serializuj informacje dotyczące symboli](../profiling/how-to-serialize-symbol-information.md)
+ [Instrukcje: serializacja informacji o symbolach](../profiling/how-to-serialize-symbol-information.md)

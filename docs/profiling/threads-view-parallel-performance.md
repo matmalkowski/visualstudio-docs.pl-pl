@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e63e208d0442b50d30ffd9e286dd92de4bb17610
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573170"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (parallel performance)
 **Widok wątków** jest najbardziej szczegółowy i bogate widokiem Concurrency Visualizer (wybierz **Analizuj** > **Concurrency Visualizer** można uruchomić CONCURRENCY visualizer). Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokuje z powodu synchronizacji, we/wy lub innego powodu.  

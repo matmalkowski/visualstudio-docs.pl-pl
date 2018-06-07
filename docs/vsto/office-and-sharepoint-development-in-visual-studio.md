@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572169"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Tworzenie aplikacji pakietu Office i programu SharePoint w programie Visual Studio
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Programowanie Office i programu SharePoint w Visual Studio
   Można rozszerzać przez tworzenie lekkie aplikacji Microsoft Office i programu SharePoint lub dodatek czy użytkownicy mogą pobierać z [sklep Office](https://store.office.com/) lub organizacji w katalogu lub tworząc przez użytkowników rozwiązanie oparte na programie .NET Framework należy zainstalować na komputer.  
   
  W tym temacie:  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  Te dodatki mają udzielaniu bardzo małe w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  Aby rozpocząć pracę, użyj narzędzia Office Developer Tools w programie Visual Studio lub LDS opartych na sieci web narzędzie nazwę kodową Napa Office 365 programowanie narzędzia, która pozwala na tworzenie projektów, pisania kodu i uruchomić dodatki w przeglądarce sieci.  
   
  ![Aplikacje pakietu Office i programu SharePoint modelu koncepcyjnego](../vsto/media/officeandsharepointapps2015.png "aplikacji dla pakietu Office i programu SharePoint model koncepcyjny")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>Tworzenie dodatku pakietu Office  
  Aby rozszerzyć funkcjonalność programu Office, kompilacji dodatku pakietu Office. Jest zasadniczo strony sieci Web, która jest obsługiwana w aplikacji pakietu Office, takich jak program Excel, Word, Outlook i PowerPoint. Aplikację można dodać funkcje do dokumenty, arkusze wiadomości e-mail, terminy, prezentacji i projektów.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |Dowiedz się więcej na temat dodatków programu SharePoint, a następnie utworzyć.|[Dodatki programu SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Porównaj dodatków dla programu SharePoint z tradycyjnych rozwiązań programu SharePoint.|[SharePoint dodatków w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Określ, czy do tworzenia dodatku programu SharePoint lub rozwiązania programu SharePoint.|[Przy wyborze między dodatków programu SharePoint oraz rozwiązań programu SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Określ, czy do tworzenia dodatku programu SharePoint lub rozwiązania programu SharePoint.|[Wybór między dodatków programu SharePoint oraz rozwiązań programu SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Tworzenie dodatków narzędzi VSTO  
  Utwórz dodatku narzędzi VSTO pod kątem pakietu Office 2007 lub Office 2010 lub przekracza możliwości programu Office dodatków pakietu Office 2013 i Office 2016. Dodatków VSTO uruchamiać tylko na komputerze. Użytkownicy muszą zainstalować dodatków VSTO, dzięki czemu są zwykle trudniejsze do wdrożenia i pomocy technicznej.  Jednak z dodatku VSTO można zintegrować dokładniejsze z pakietu Office. Na przykład go dodać kart i kontrolek do wstążki pakietu Office i wykonywanie zaawansowanych automatyzacji zadań, takich jak scalanie dokumentów lub modyfikowania wykresów. Można korzystać z programu .NET Framework i użyć C# i Visual Basic do interakcji z obiektów pakietu Office.  
@@ -109,6 +108,6 @@ ms.lasthandoff: 05/22/2018
 |Do|Zobacz|  
 |--------|---------|  
 |Porównanie rozwiązań programu SharePoint z dodatków programu SharePoint.|[SharePoint dodatków w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
+|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

@@ -10,15 +10,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572637"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
 Visual Studio klienta środowisko poprawy programu (VSCEIP) zaprojektowano w celu pomóc firmie Microsoft w ulepszaniu programu Visual Studio w czasie. Ten program [zbiera informacje o błędach](../ide/diagnostic-data-collection.md), komputera i jak osoby użyć programu Visual Studio, bez zakłócania pracy użytkowników w swoich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może zidentyfikować funkcje wymagające poprawy. W tym dokumencie opisano sposób uczestnictwa w lub poza VSCEIP.
+
+[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="opt-in-or-out"></a>OPT przychodzący lub wychodzący
 
@@ -39,13 +42,13 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć, lub z powrotem na, wy
 
 Jeśli zainstalujesz [Build Tools for Visual Studio](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017), należy zaktualizować rejestru w celu skonfigurowania VSCEIP. Klienci korporacyjni można konstruować zasady grupy do uczestnictwa w lub poza VSCEIP przez ustawienie zasad opartych na rejestrze.
 
-[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
-
 Ustawienia i odpowiedni klucz rejestru są następujące:
 
-Klucz = **HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+W 64-bitowego systemu operacyjnego, klucz = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
+W 32-bitowego systemu operacyjnego, klucz = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
+Gdy zasady grupy są włączone, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
 
-Wpis = zgodzie
+Wpis = **zgodzie**
 
 Wartość = (DWORD)
 - **0** jest wyłączony (Wyłącz VSCEIP)

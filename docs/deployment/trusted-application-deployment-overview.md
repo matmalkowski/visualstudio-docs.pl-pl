@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572244"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień za pomocą technologii zaufane wdrożenia aplikacji.  
@@ -86,7 +87,7 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deploy
  Wdrażanie zaufanej aplikacji jest specyficzna dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]i można używać tylko z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
 ### <a name="sign-the-deployment"></a>Zaloguj się wdrożenia  
- Po uzyskaniu certyfikatu, należy użyć go do podpisania wdrożenia. Jeśli wdrażana aplikacja za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kreator publikowania, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie określono certyfikatu użytkownika. Można również użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna Projektanta projektu, aby przekazać certyfikat dostarczony przez urząd certyfikacji.  Zobacz też [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji] (http://msdn.microsoft.com/library/31kztyey\(v=vs.110\).  
+ Po uzyskaniu certyfikatu, należy użyć go do podpisania wdrożenia. Jeśli wdrażana aplikacja za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kreator publikowania, Kreator automatycznie wygeneruje certyfikat testowy dla Ciebie, jeśli nie określono certyfikatu użytkownika. Można również użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna Projektanta projektu, aby przekazać certyfikat dostarczony przez urząd certyfikacji.  Zobacz też [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Nie zaleca się że aplikację można wdrożyć przy użyciu certyfikatu testowego.  

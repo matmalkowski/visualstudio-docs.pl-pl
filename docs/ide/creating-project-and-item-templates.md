@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573261"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -45,10 +46,6 @@ Jeśli te pliki są skompresowane w *.zip* plików i umieścić w prawidłowym f
 - Szablony elementów są wyświetlane w **Dodaj nowy element** okno dialogowe.
 
 Aby uzyskać więcej informacji o folderach szablonów, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
-
-## <a name="starter-kits"></a>Zestawy początkowe
-
-Zestawy startowe są rozszerzone przez szablony, które mogą być współużytkowane z innymi członkami społeczności. Zestawy początkowe obejmują przykłady kodu można skompilować dla dokumentacji i inne zasoby, aby ułatwić użytkownikom uzyskać nowych narzędzi i technik programowania podczas kompilowania aplikacji przydatne, rzeczywistych. Podstawowa zawartość i procedury dotyczące Starter Kit są takie same, jak w przypadku szablonów. Aby uzyskać więcej informacji, zobacz [porady: tworzenie Starter Kit](../ide/how-to-create-starter-kits.md).
 
 ## <a name="see-also"></a>Zobacz także
 

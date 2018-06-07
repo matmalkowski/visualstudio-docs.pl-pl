@@ -1,5 +1,5 @@
 ---
-title: Iwefdebuggingsupport — interfejs | Dokumentacja firmy Microsoft
+title: Iwefdebuggingsupport — interfejs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e8a1bc770ce030902691a8ee4f2634c79cbab9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 351fb69b99393a10518168f4f9b01efe1f9efaa7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572676"
 ---
-# <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport — Interfejs
+# <a name="iwefdebuggingsupport-interface"></a>Iwefdebuggingsupport — interfejs
   Zaimplementowany w środowisku debugowania, takiego jak Visual Studio w celu ułatwienia debugowania aplikacji pakietu Office. Aplikacji pakietu Office, takich jak Word czy Excel, uzyskuje dostęp do tego interfejsu z programu Visual Studio, a następnie wywołuje metody interfejsu w niektórych punktach podczas sesji debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp 
 [  
     uuid(ccaf1a90-ce1c-4199-9cd6-b40c5c57a671),  
     oleautomation  
@@ -43,7 +44,7 @@ interface IWefDebuggingSupport : IUnknown
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[GetAutoInsertExtensions, metoda](../vsto/getautoinsertextensions-method.md)|Pobiera informacje o aplikacjach pakietu Office, które mają być wstawiane automatycznie podczas debugowania.|  
-|[SetWefProcessId, metoda](../vsto/setwefprocessid-method.md)|Zawiera identyfikator procesu, który uruchomi zawartości w ramach rozszerzenia sieci Web (WEF).|  
+|[GetAutoInsertExtensions — metoda](../vsto/getautoinsertextensions-method.md)|Pobiera informacje o aplikacjach pakietu Office, które mają być wstawiane automatycznie podczas debugowania.|  
+|[SetWefProcessId — metoda](../vsto/setwefprocessid-method.md)|Zawiera identyfikator procesu, który uruchomi zawartości w ramach rozszerzenia sieci Web (WEF).|  
   
   

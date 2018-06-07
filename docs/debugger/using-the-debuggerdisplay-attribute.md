@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573248"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Za pomocą atrybutu DebuggerDisplay
 [Debuggerdisplayattribute — klasa](/dotnet/api/system.diagnostics.debuggerdisplayattribute) Określa, jak obiekt, właściwość lub pole jest wyświetlany w oknach zmiennych debugera. Ten atrybut można stosować do typów delegatów, właściwości, pól i zestawów.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+", Nq" sufiks informuje ewaluatora wyrażenia, aby usunąć cudzysłowy podczas wyświetlania wartości końcowej (nq = nie cudzysłowów). 
   
 ## <a name="example"></a>Przykład  
  Poniższy przykładowy kod przedstawia sposób użycia `DebuggerDisplay`, wraz z `DebuggerBrowseable` i `DebuggerTypeProxy`. Podczas wyświetlania w oknie zmienne debugera, takie jak **czujki** okna, tworzy ekspansja, która wygląda następująco:  

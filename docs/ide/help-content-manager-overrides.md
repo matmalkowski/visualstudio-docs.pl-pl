@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8a02f4af740910fe666af295aa8535c8aef8245c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571741"
 ---
 # <a name="help-content-manager-overrides"></a>Zastąpienia menedżera zawartości pomocy
 
@@ -67,4 +68,3 @@ Następujące dwa można kontrolować przez ustawienie wartości klucza rejestru
 - [Przewodnik administratora podglądu pomocy](../ide/help-viewer-administrator-guide.md)
 - [Argumenty wiersza polecenia do menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)
 - [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)
-- [Modyfikowanie przy użyciu pliku .pkgdef programu isolated shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

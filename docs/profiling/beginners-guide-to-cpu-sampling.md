@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a3e7786b56f33bec4d742b1ebd6c450ea14e09
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573183"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowanie Procesora
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **próbkowania** danych.
@@ -35,12 +36,12 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
  Jeśli **próbkowania** nie zapewnia dane, które chcesz dodać, inne profilowania metody kolekcji narzędzia udostępniają różne rodzaje informacji, które mogą być przydatne do Ciebie. Aby uzyskać więcej informacji o tych innych metod, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, że masz najbardziej aktualnej. *pdb* plików. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="create-and-run-a-performance-session"></a>Tworzenie i uruchamianie sesji wydajności  
  Aby pobrać dane, które należy przeanalizować, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesję. **Kreatora osiągów** pozwala wykonać obie czynności.  
   
- Jeśli to nie profilowanie aplikacji klasycznej systemu Windows lub aplikacji ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [narzędzia profilowania](../profiling/profiling-tools.md).  
+ Jeśli to nie profilowanie aplikacji klasycznej systemu Windows lub aplikacji ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Aby utworzyć i uruchomić sesję wydajności  
   
@@ -92,13 +93,13 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
     -   W dolnym okienku **szczegółów funkcji** system windows wyświetli kodu funkcji. Jeśli Sprawdź kod i znaleźć możliwość zoptymalizować jego wydajność, kliknij nazwę pliku źródłowego, aby otworzyć go w edytorze programu Visual Studio.  
   
-3.  Aby kontynuować analizę, wróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z listy rozwijanej widoku. Sprawdź funkcje w **funkcje wykonujące najwięcej indywidualnej pracy**. Lista funkcji o najwyższym wyłącznych próbek. Kod w treści funkcji tych funkcji wykonywane wiele pracy oraz można zoptymalizować go. Do dalszej analizy określonej funkcji, kliknij nazwę funkcji, aby wyświetlić je w **szczegółów funkcji** widoku.  
+3.  Aby kontynuować analizę, wróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z **widoku** listy rozwijanej. Sprawdź funkcje w **funkcje wykonujące najwięcej indywidualnej pracy**. Lista funkcji o najwyższym wyłącznych próbek. Kod w treści funkcji tych funkcji wykonywane wiele pracy oraz można zoptymalizować go. Do dalszej analizy określonej funkcji, kliknij nazwę funkcji, aby wyświetlić je w **szczegółów funkcji** widoku.  
   
      ![Lista funkcje wykonujące najwięcej pracy](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
      Kontynuowanie badaniu profilowania Uruchom możesz można Analizuj ponownie segment dane profilowania za pomocą osi czasu w **Podsumowanie** widok do pokazania **aktywnej ścieżki** i **funkcji Wykonanie najwięcej indywidualnej pracy** z wybranego segmentu. Na przykład koncentrujących się na mniejsze szczytu na osi czasu może ujawnić drzewa wywołań kosztowne i funkcje, które nie zostały wyświetlone w analizy całego przebiegu profilowania.  
   
-     Aby Analizuj ponownie segmentu, wybierz segment, w polu podsumowania osi czasu, a następnie kliknij przycisk **Filtruj według wyboru**.  
+     Aby Analizuj ponownie segmentu, wybierz segment wewnątrz **osi czasu Podsumowanie** a następnie kliknij przycisk **Filtruj według wyboru**.  
   
      ![Oś czasu widoku podsumowania wydajności](../profiling/media/performancesummary.png "PerformanceSummary")  
   
@@ -119,7 +120,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
 3.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesji, który chcesz ponownie uruchomić, a następnie kliknij przycisk **uruchomienie z profilowania.**  
   
-4.  Po ponownym uruchomieniu sesji inny plik danych jest dodawany do **raporty** folderu dla sesji w **Eksplorator wydajności**. Wybierz oba oryginalny i profilowanie nowych danych, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **raporty porównanie wydajności**.  
+4.  Po ponownym uruchomieniu sesji inny plik danych jest dodawany do *raporty* folderu dla sesji w **Eksplorator wydajności**. Wybierz oba oryginalny i profilowanie nowych danych, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **raporty porównanie wydajności**.  
   
      Otwiera nowe okno raportu, wyświetlania wyników porównania. Aby uzyskać więcej informacji o sposobie używania Widok porównania, zobacz [porady: porównywanie plików danych wydajności](../profiling/how-to-compare-performance-data-files.md).
   

@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 603fe9c8aaa328e0ae1b42f385a0f8f2b5867955
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746017"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 
 W tym krótkie wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -34,7 +35,7 @@ Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
 
 2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
 
-3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **klasycznego pulpitu systemu Windows**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows (.NET Framework)**. Nadaj nazwę plikowi `HelloWorld`.
+3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **pulpitu systemu Windows**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows (.NET Framework)**. Nadaj nazwę plikowi `HelloWorld`.
 
      Jeśli nie widzisz **aplikacji formularzy systemu Windows (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje...** . Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie wybierz **Modyfikuj**.
 

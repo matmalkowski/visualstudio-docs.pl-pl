@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572987"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Wskazówki: Korzystanie z interfejsów API profilera
 Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API narzędzi profilowania. Aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji użyjesz profilera interfejsów API.  
@@ -30,9 +31,9 @@ Instruktaż nawiązywał prezentują sposób użycia aplikacji C# [!INCLUDE[vspr
   
  Profilera Visual Studio umożliwia ograniczenie zbierania danych. Ten przewodnik zawiera przykładowy sposób ograniczyć zbieranie danych przy użyciu interfejsów API profilera. Profilera Visual Studio udostępnia interfejs API kontrolowanie zbierania danych z aplikacji.  
   
- Dla kodu natywnego profilera Visual Studio interfejsy API są VSPerf.dll. Plik nagłówka, VSPerf.h i biblioteki importu, VSPerf.lib, znajdują się w katalogu narzędzi Narzędzia 9\Team programu Microsoft Visual Studio.  
+ Kod natywny profilera Visual Studio interfejsy API są w *VSPerf.dll*. Plik nagłówka *VSPerf.h*i biblioteki importu *VSPerf.lib*, znajdują się w *narzędzia narzędzia programu Microsoft Visual Studio 9\Team* katalogu.  
   
- Dla kodu zarządzanego profilera interfejsy API są Microsoft.VisualStudio.Profiler.dll. Ta biblioteka DLL znajduje się w katalogu narzędzi Narzędzia 9\Team programu Microsoft Visual Studio. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>.  
+ Dla kodu zarządzanego profilera interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *narzędzia narzędzia programu Microsoft Visual Studio 9\Team* katalogu. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W tym przewodniku przyjęto założenie, że wybór środowisko projektowe jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  Utwórz nowy projekt C# w programie Visual Studio lub korzystanie z kompilacji wiersza polecenia, w zależności od swoich preferencji.  
   
     > [!NOTE]
-    >  Biblioteka Microsoft.VisualStudio.Profiler.dll, znajduje się w katalogu narzędzia narzędzia 9\Team programu Microsoft Visual Studio musi odwoływać się kompilację.  
+    >  Kompilacji musi odwoływać się *Microsoft.VisualStudio.Profiler.dll* znajduje się w bibliotece*narzędzia narzędzia programu Microsoft Visual Studio 9\Team* katalogu.  
   
 2.  Skopiuj i wklej następujący kod do projektu:  
   
@@ -117,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Do zbierania i wyświetlania danych w środowisku IDE programu Visual Studio  
   
-1.  Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Do **Analizuj** menu wskaż **profilera**, a następnie wybierz **nowej sesji wydajności.**  
+1.  Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Do **Analizuj** menu wskaż **profilera**, a następnie wybierz **nowej sesji wydajności**.  
   
 2.  Dodaj użytkownika skompilowanym plikiem binarnym do **cele** listy w **Eksplorator wydajności** okna. Kliknij prawym przyciskiem myszy **elementy docelowe**, a następnie wybierz **dodać docelowy binarne**. Zlokalizuj plik binarny w **dodać docelowy binarne** , a następnie kliknij przycisk **Otwórz**.  
   
@@ -157,7 +158,7 @@ DataCollection.CurrentId);
   
 8.  Wpisz następujące polecenie:**VSPerfReport/calltrace:\<nazwa pliku > plik Vsp**  
   
-     Plik CSV jest tworzony w bieżącym katalogu z danych wydajności.  
+     A. *csv* plik jest tworzony w bieżącym katalogu z danych wydajności.  
   
 ## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Profiler>   

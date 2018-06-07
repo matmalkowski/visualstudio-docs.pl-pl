@@ -19,23 +19,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c424632e51cbc7de81fb581dd2e8429341677e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c6e339be389e629970a5f9b3bb1813165b1fcc7e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572280"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe
-Można określić, jakie typy informacji o debugowaniu są wyświetlane w **dane wyjściowe** okna. Aby wyświetlić te opcje, otwórz **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzeł, a następnie kliknij przycisk **okno danych wyjściowych**.  
+Można określić, jakie typy informacji o debugowaniu są wyświetlane w **dane wyjściowe** okna. Aby wyświetlić te opcje, otwórz **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzeł, a następnie kliknij przycisk **okno danych wyjściowych**.
+
+**Ustawienia ogólne dane wyjściowe** ta kategoria zawiera kontrolki, które określają, czy komunikaty debugowania ogólne są wyświetlane w **dane wyjściowe** okna. Można określić, czy jest wyświetlany każdego typu komunikatu.  
+
+**Ustawienia śledzenia WPF** ta kategoria zawiera formanty, które określają poziom komunikaty śledzenia WPF, które są widoczne w **dane wyjściowe** okna. Można określić czy każdego typu komunikatu pojawia się i określić poziom od **krytyczny** do **wszystkich**.
+
+Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie informacji o śledzeniu WPF](../debugger/how-to-display-wpf-trace-information.md).
+
+Jeśli trzeba przywrócić ustawienia domyślne, możesz to zrobić przy użyciu tego **narzędzia** > **Import i eksport ustawień** > **zresetować wszystkie ustawienia**. Jeśli chcesz zresetować podzbiór ustawień, Zapisz ustawienia w **Kreator importowania i eksportowania ustawień** przed wprowadzeniem zmian, które mają zostać przetestowane, następnie zaimportować zapisane ustawienia później.
   
- **Ustawienia ogólne dane wyjściowe**  
- Ta kategoria zawiera kontrolki, które określają, czy komunikaty debugowania ogólne są wyświetlane w **dane wyjściowe** okna. Można określić, czy jest wyświetlany każdego typu komunikatu.  
-  
- **Ustawienia śledzenia WPF**  
- Ta kategoria zawiera formanty, które określają poziom komunikaty śledzenia WPF, które są widoczne w **dane wyjściowe** okna. Można określić czy każdego typu komunikatu pojawia się i określić poziom od **krytyczny** do **wszystkich**.  
-  
- Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie informacji o śledzeniu WPF](../debugger/how-to-display-wpf-trace-information.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie, opcje — Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
- [Okno Dane wyjściowe](../ide/reference/output-window.md)
+## <a name="see-also"></a>Zobacz także
+[Debugowanie, opcje — Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
+[Okno Dane wyjściowe](../ide/reference/output-window.md)

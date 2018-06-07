@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78013c97bf7f2cf3bcd60f642f51e9da01b25d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572348"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Narzędzia do rozwiązywania problemów z wydajnością
 Korzystając z narzędzi profilowania mogą wystąpić jeden z następujących problemów:  
@@ -24,7 +25,7 @@ Korzystając z narzędzi profilowania mogą wystąpić jeden z następujących p
 -   [Raportach i widokach wydajności wyświetlać numery dla nazwy funkcji](#NoSymbols)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Żadne dane nie są zbierane za pomocą narzędzi do profilowania  
- Po profilu aplikacji, danych profilowania (. *Vsp*) nie jest tworzony plik i w oknie danych wyjściowych lub w oknie wiersza polecenia pojawi się następujące ostrzeżenie:  
+ Po profilu aplikacji, danych profilowania (. *Vsp*) plików nie jest tworzony i pojawi się następujące ostrzeżenie w **dane wyjściowe** okna lub w oknie wiersza polecenia:  
   
  PRF0025: Zbierane żadne dane.  
   
@@ -37,7 +38,7 @@ Korzystając z narzędzi profilowania mogą wystąpić jeden z następujących p
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Raportach i widokach wydajności wyświetlać numery dla nazwy funkcji  
  Po profilu aplikacji, możesz wyświetlić numery zamiast nazwy funkcji w raportach i widokach.  
   
- Przyczyną tego problemu w narzędziach profilowania aparat analizy, nie można odnaleźć *.pdb* pliki, które zawierają informacje o symbolach czy mapy źródła kodu, takie nazwy funkcji i numery wierszy do skompilowanego pliku. Domyślnie tworzy kompilator *.pdb* pliku po utworzeniu pliku aplikacji. Odwołanie do katalogu lokalnego *.pdb* plik jest przechowywany w skompilowanej aplikacji. Aparat analizy wygląda w katalogu przywoływanego *.pdb* plików i następnie w pliku obecnie zawiera pliku aplikacji. Jeśli *.pdb* nie znaleziono pliku, aparat analizy korzysta z funkcji przesunięcia zamiast nazwy funkcji.  
+ Przyczyną tego problemu w narzędziach profilowania aparat analizy, nie można odnaleźć. *pdb* pliki, które zawierają informacje o symbolach czy mapy źródła kodu, takie nazwy funkcji i numery wierszy do skompilowanego pliku. Domyślnie tworzy kompilatora. *pdb* pliku po utworzeniu pliku aplikacji. Odwołanie do katalogu lokalnego. *pdb* plik jest przechowywany w skompilowanej aplikacji. Aparat analizy wygląda w katalogu do którego istnieje odwołanie. *pdb* plików i następnie w pliku obecnie zawiera pliku aplikacji. Jeśli. *pdb* nie znaleziono pliku, aparat analizy korzysta z funkcji przesunięcia zamiast nazwy funkcji.  
   
  Można rozwiązać ten problem w jednym z dwóch sposobów:  
   
@@ -46,4 +47,4 @@ Korzystając z narzędzi profilowania mogą wystąpić jeden z następujących p
 -   Osadzanie informacji o symbolach w danych profilowania (. *Vsp*) pliku. Aby uzyskać więcej informacji, zobacz [zapisać informacji o symbolach z wydajnością pliki danych](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Wymaga aparatu analizy. *pdb* plik jest w wersji zgodnej z wersją pliku skompilowanej aplikacji. A *.pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.
+>  Wymaga aparatu analizy. *pdb* plik jest w wersji zgodnej z wersją pliku skompilowanej aplikacji. A. *pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.

@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572715"
 ---
 # <a name="password-protection-on-office-documents"></a>Ochrona za pomocą hasła w dokumentach pakietu Office
   Użytkownik może ustawić hasło dla dokumentów pakietu Microsoft Office Word i skoroszytów programu Microsoft Office Excel, aby nie można otworzyć przez osobę, która nie może określić hasło. Ta opcja jest nazywany **hasła podczas otwierania**.  
@@ -39,10 +40,10 @@ ms.lasthandoff: 04/16/2018
   
  Przy pierwszym otwarciu dokumentu programu Word w Visual Studio, który ma **hasła podczas otwierania** włączony, użytkownik jest monitowany o podanie hasła. Po wprowadzeniu hasła, **hasła podczas otwierania** zostanie usunięty z dokumentu i otworzyć dokument nie będzie już potrzebować hasła. Jeśli chcesz dokumentu w rozwiązaniu wymagane jest hasło, zanim będzie można otworzyć, musisz włączyć **hasła podczas otwierania** po ostatnim kompilację i przed wdrożeniem rozwiązania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
  [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego ― omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Porady: zezwalanie na uruchamianie w tle dokumentów z ograniczonymi uprawnieniami kodu](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Porady: zezwalanie kodu do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

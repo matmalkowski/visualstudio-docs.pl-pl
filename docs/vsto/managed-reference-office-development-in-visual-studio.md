@@ -1,5 +1,5 @@
 ---
-title: Zarządzane odniesienia (Office Development w Visual Studio) | Dokumentacja firmy Microsoft
+title: Zarządzane odniesienia (Office development w Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c991b6507ded441dd37ec92cb5efd0e2167285
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572195"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>Zarządzane odniesienia (Office Development w Visual Studio)
+# <a name="managed-reference-office-development-in-visual-studio"></a>Zarządzane odniesienia (Office development w Visual Studio)
   Ta sekcja zawiera dokumentacji interfejsu API dla obszarów nazw i typy, które są używane w pakiecie Office projektów przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dla dokumentacji interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office, które odnoszą się do programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 > [!NOTE]  
@@ -62,10 +63,10 @@ ms.lasthandoff: 04/16/2018
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>  
  Zawiera klasy zadań programu MSBuild, które są używane do tworzenia projektów pakietu Office.  
   
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Narzędzia Visual Studio tools for Office runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

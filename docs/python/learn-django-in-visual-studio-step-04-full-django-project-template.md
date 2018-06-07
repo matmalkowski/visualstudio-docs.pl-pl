@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750366"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Samouczek krok 4: Użyj pełnego szablonu projektu sieci Web Django
 
 **Poprzedni krok: [obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Teraz, gdy zostały wyczerpane podstawy Django tworzenie aplikacji na szablon "Pusty projekt aplikacji Django" w programie Visual Studio, można łatwo zrozumieć pełniejsze aplikację, która jest generowany przez szablon "Projektu sieci Web Django".
+Teraz, gdy zostały wyczerpane podstawy Django tworzenie aplikacji na szablon "Pusty projekt sieci Web Django" w programie Visual Studio, można łatwo zrozumieć pełniejsze aplikację, która jest generowany przez szablon "Projektu sieci Web Django".
 
 W tym kroku możesz teraz:
 
@@ -40,7 +41,7 @@ Szablon zawiera również uwierzytelnianiem podstawowym, co zostało opisane w k
 
 1. Ponieważ szablon ponownie zawiera `requirements.txt` pliku, Visual Studio prosi o miejscu instalacji tych zależności. Wybierz opcję **zainstalować w środowisku wirtualnym**i w **Dodawanie środowiska wirtualnego** oknie dialogowym wybierz pozycję **Utwórz** zaakceptować wartości domyślne.
 
-1. Po zakończeniu konfigurowania środowiska wirtualnego Python postępuj zgodnie z instrukcjami wyświetlone `readme.html` utworzyć Django użytkownika nadrzędnego (administrator). Po prostu kliknij prawym przyciskiem myszy projekt programu Visual Studio i wybierz **Python** > **Django utworzyć administratora** polecenia, a następnie postępuj zgodnie z monitami. Upewnij się zarejestrować nazwę użytkownika i hasło, jak można użyć podczas wykonywania funkcji uwierzytelniania aplikacji.
+1. Po zakończeniu konfigurowania środowiska wirtualnego programu Visual Studio, postępuj zgodnie z instrukcjami wyświetlone `readme.html` utworzyć Django użytkownika nadrzędnego (administrator). Po prostu kliknij prawym przyciskiem myszy projekt programu Visual Studio i wybierz **Python** > **Django utworzyć administratora** polecenia, a następnie postępuj zgodnie z monitami. Upewnij się zarejestrować nazwę użytkownika i hasło, jak można użyć podczas wykonywania funkcji uwierzytelniania aplikacji.
 
 1. Ustaw projekt "DjangoWeb", aby być domyślne dla rozwiązania Visual Studio, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając **Ustaw jako projekt startowy**. Projekt startowy, który jest wyświetlany w bold, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
 

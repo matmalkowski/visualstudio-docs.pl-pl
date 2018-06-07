@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5febfd1055c10eaa39d27e411aba5cf442a97c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572790"
 ---
 # <a name="schema-cache"></a>Pamięci podręcznej schematów
 
-Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %InstallRoot%\Xml\Schemas. Pamięci podręcznej schematu jest globalne dla wszystkich użytkowników na tym komputerze i zawiera standardowe schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.
+Edytor XML zawiera znajduje się w pamięci podręcznej schematu *%InstallRoot%\Xml\Schemas* katalogu. Pamięci podręcznej schematu jest globalne dla wszystkich użytkowników na tym komputerze i zawiera standardowe schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.
 
 Edytor XML znajduje się też schematy znajduje się w rozwiązaniu, schematy określone w **schematy** pole z dokumentu **właściwości** okno i schematy identyfikowane przez `xsi:schemaLocation` i `xsi:noNamespaceSchemaLocation`atrybutów.
 
@@ -26,32 +27,32 @@ W poniższej tabeli opisano schematów, które są instalowane z edytora XML.
 
 |Nazwa pliku|Opis|
 |--------------|-----------------|
-|Catalog.xsd|Schemat dla plików katalogu schematu edytora XML. Aby uzyskać informacje o wykazów schematów zobacz poniżej.|
-|Plik DotNetConfig.xsd|Schemat dla plików Web.Config "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
-|MSBUILD.xsd|Schemat dla programu MSBuild pliki upewnij, "http://schemas.microsoft.com/developer/msbuild/2003".|
-|MSDATA.xsd|Schematu dla adnotacji XSD dodane przez <xref:System.Data.DataSet> klasy "urn: schemas-microsoft-com: XML-msdata".|
-|msxsl.xsd|Schemat dla rozszerzenia bloku skryptu XSLT firmy Microsoft, urn: schemas-microsoft-com:xslt.|
-|SnippetFormat.xsd|Schemat dla plików XML fragmentu kodu. Aby uzyskać przykłady Zobacz % InstallDir%\VC#\Expansions.|
-|Soap1.1.xsd|Schemat dla Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
-|Soap1.2.xsd|Schemat dla Simple Object Access Protocol 1.2.|
-|SiteMapSchema.xsd|Schemat pliku XML mapy witryny ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
-|WSDL.xsd|Schemat dla sieci Web Service Description Language, http://schemas.xmlsoap.org/wsdl/.|
-|xenc.xsd|Schemat XML, do szyfrowania http://www.w3.org/2000/09/xmldsig#.|
-|XHTML.xsd|Schemat dla XHTML http://www.w3.org/1999/xhtml.|
-|XLINK.xsd|Schemat dla XLink1.0, http://www.w3.org/1999/xlink.|
-|XML.xsd|Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace.|
-|xmlsig.xsd|Schemat XML podpisów cyfrowych, http://www.w3.org/2000/09/xmldsig#.|
-|xsdschema.xsd|Schemat XSD, opisujący http://www.w3.org/2001/XMLSchema.|
-|XSLT.xsd|Przekształca schematu XML, http://www.w3.org/1999/XSL/Transform.|
+|*Catalog.xsd*|Schemat dla plików katalogu schematu edytora XML. Aby uzyskać informacje o wykazów schematów zobacz poniżej.|
+|*Plik DotNetConfig.xsd*|Schemat dla plików Web.Config "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
+|*MSBUILD.xsd*|Schemat dla programu MSBuild pliki upewnij, "http://schemas.microsoft.com/developer/msbuild/2003".|
+|*MSDATA.xsd*|Schematu dla adnotacji XSD dodane przez <xref:System.Data.DataSet> klasy "urn: schemas-microsoft-com: XML-msdata".|
+|*msxsl.xsd*|Schemat dla rozszerzenia bloku skryptu XSLT firmy Microsoft, urn: schemas-microsoft-com:xslt.|
+|*SnippetFormat.xsd*|Schemat dla plików XML fragmentu kodu. Aby uzyskać przykłady, zobacz *%InstallDir%\VC#\Expansions*.|
+|*Soap1.1.xsd*|Schemat dla Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
+|*Soap1.2.xsd*|Schemat dla Simple Object Access Protocol 1.2.|
+|*SiteMapSchema.xsd*|Schemat pliku XML mapy witryny ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
+|*WSDL.xsd*|Schemat dla sieci Web Service Description Language, http://schemas.xmlsoap.org/wsdl/.|
+|*xenc.xsd*|Schemat XML, do szyfrowania http://www.w3.org/2000/09/xmldsig#.|
+|*XHTML.xsd*|Schemat dla XHTML http://www.w3.org/1999/xhtml.|
+|*XLINK.xsd*|Schemat dla XLink1.0, http://www.w3.org/1999/xlink.|
+|*XML.xsd*|Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace.|
+|*xmlsig.xsd*|Schemat XML podpisów cyfrowych, http://www.w3.org/2000/09/xmldsig#.|
+|*xsdschema.xsd*|Schemat XSD, opisujący http://www.w3.org/2001/XMLSchema.|
+|*XSLT.xsd*|Przekształca schematu XML, http://www.w3.org/1999/XSL/Transform.|
 
-## <a name="updating-schemas-in-the-cache"></a>Aktualizowanie schematów w pamięci podręcznej
+## <a name="update-schemas-in-the-cache"></a>Aktualizowanie schematów w pamięci podręcznej
  Edytor ładuje katalog pamięci podręcznej schematu, gdy pakiet edytora XML jest załadowany i oczekuje na zmiany podczas pracy. Jeśli schemat został dodany, jest automatycznie ładowany do indeksu w pamięci znanych schematów. Jeśli schemat został usunięty, zostanie ono automatycznie usunięte z indeksu w pamięci. Jeśli schemat został zaktualizowany, automatycznie unieważnia w pamięci podręcznej tego schematu.
 
 > [!NOTE]
 > Ponieważ katalog pamięci podręcznej schematu jest globalny do komputera, należy dodawać tylko tutaj schematów, które standard i przydatne do wszystkich projektów programu Visual Studio, które mogą zostać utworzone na tym komputerze.
 
 
- Edytor XML obsługuje również dowolną liczbę schematu katalogu plików w katalogu pamięci podręcznej schematu. Wykazów schematów może wskazywać inne lokalizacje dla schematów, które chcesz wiedzieć o w edytorze. Plik catalog.xsd definiuje format pliku wykazu i znajduje się w katalogu pamięci podręcznej schematu. Plik catalog.xml jest domyślna i zawiera łącza do innych schematów w InstallDir %. Poniżej przedstawiono przykładowy plik catalog.xml:
+ Edytor XML obsługuje również dowolną liczbę schematu katalogu plików w katalogu pamięci podręcznej schematu. Wykazów schematów może wskazywać inne lokalizacje dla schematów, które chcesz wiedzieć o w edytorze. *Catalog.xsd* plików definiuje format pliku wykazu i znajduje się w katalogu pamięci podręcznej schematu. *Catalog.xml* plik jest domyślna i zawiera łącza do innych schematów w *InstallDir %*. Poniżej przedstawiono przykładowy *catalog.xml* pliku:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -92,7 +93,7 @@ Dokument katalogu może zawierać `Catalog` element, który wskazuje innych kata
 ```
 
 ## <a name="localized-schemas"></a>Schematy zlokalizowanych
- W wielu przypadkach plik catalog.xml nie zawiera wpisy dla zlokalizowanych schematów. Dodatkowe wpisy można dodać do pliku catalog.xml wskazujące zlokalizowanych schematu katalogu.
+ W wielu przypadkach *catalog.xml* plik nie zawiera wpisy dla zlokalizowanych schematów. Można dodać dodatkowe dane do *catalog.xml* plik do katalogu zlokalizowanego schematu.
 
  W poniższym przykładzie nowy `Schema` element został utworzony używającej % zmienna % LCID wskaż zlokalizowanych schematu.
 
@@ -120,7 +121,7 @@ Można dostosować przy użyciu pamięci podręcznej schematu lokalizację **ró
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Aby dodać innego katalogu wspólnej schematów
 
-1.  Przeprowadź edycję pliku catalog.xml w katalogu pamięci podręcznej schematu edytora XML.
+1.  Edytuj *catalog.xml* pliku w katalogu pamięci podręcznej schematu edytora XML.
 
 2.  Dodaj nową `<Catalog href="..."/>` element, który wskazuje katalog schematów dodatkowych.
 
@@ -128,6 +129,6 @@ Można dostosować przy użyciu pamięci podręcznej schematu lokalizację **ró
 
      Katalog jest automatycznie ładowane.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)

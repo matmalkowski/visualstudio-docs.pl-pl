@@ -1,5 +1,5 @@
 ---
-title: Tworzenie pakietów programu inicjującego
+title: Tworzenie niestandardowych pakietów programu inicjującego
 ms.custom: ''
 ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
@@ -22,13 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572728"
 ---
-# <a name="create-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
+# <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
 Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub wymagań wstępnych, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wymagań wstępnych. 
   
 Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik końcowy akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
@@ -86,7 +87,7 @@ W poniższej tabeli przedstawiono właściwości, które są wypełniane automat
 |ApplicationName|Nazwa aplikacji.|  
 |Element ProcessorArchitecture|Procesor i usługi bits na word platformy docelowej przez plik wykonywalny. Następujące wartości:<br /><br /> -Intel<br />-IA64<br />— AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numer wersji systemów operacyjnych Microsoft Windows 95, Windows 98 lub Windows ME. Składnia wersji jest Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Numer wersji systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji jest Major.Minor.ServicePack.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numer wersji systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji jest Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalatora Windows (msi.dll) uruchom podczas instalacji.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Ta właściwość jest ustawiona, jeśli użytkownik ma uprawnienia administratora. Wartości to PRAWDA lub FAŁSZ.|  
 |Tryb instalacji|Tryb instalacji wskazuje, gdzie składnik musi zostać zainstalowany z. Następujące wartości:<br /><br /> -HomeSite — wstępnie wymagane składniki są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wstępnie wymagane składniki są instalowane z wybranej lokalizacji.<br />-SameSite — wstępnie wymagane składniki są instalowane z tej samej lokalizacji co aplikacja.|  

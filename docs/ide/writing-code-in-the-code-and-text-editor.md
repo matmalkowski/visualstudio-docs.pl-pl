@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572394"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje Edytor kodu
 
@@ -76,7 +77,7 @@ Można przenosić w edytorze kodu kilka różnych sposobów, łącznie z nawigow
 
 Aby dowiedzieć się, gdy elementy określonego kodu są przywoływane w całym baza kodu, można użyć **Znajdź wszystkie odwołania** polecenia. Ponadto po kliknięciu typu lub elementu członkowskiego, **podświetlanie odwołań** funkcji automatycznie prezentuje wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
 
-## <a name="customize-the-editor"></a>Dostosowywanie edytora
+## <a name="customize-the-editor"></a>Dopasowywanie edytora
 
 Można udostępnić ustawienia programu Visual Studio z innego projektanta, mieć ustawienia są zgodne z normą, lub przywrócić ustawienia domyślne programu Visual Studio za pomocą **Kreator importowania i eksportowania ustawień** na  **Narzędzia** menu. W **Kreator importowania i eksportowania ustawień**, możesz zmienić wybrane ustawienia ogólne lub język i ustawienia specyficzne dla projektu.
 
@@ -87,6 +88,6 @@ Aby uzyskać więcej informacji dotyczących dostosowywania edytora, zobacz [dos
 ## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [Wprowadzenie do języka C++ w programie Visual Studio](../ide/quickstart-cpp.md)
+- [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Wprowadzenie do języka Python w programie Visual Studio](../ide/quickstart-python.md)

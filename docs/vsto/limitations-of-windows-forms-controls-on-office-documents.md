@@ -1,5 +1,5 @@
 ---
-title: Formanty w dokumentach pakietu Office formularzy ograniczenia systemu Windows | Dokumentacja firmy Microsoft
+title: Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572962"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia formantów formularzy Windows w dokumentach pakietu Office
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office
 
 Istnieją pewne różnice między formanty formularzy systemu Windows, które są dodawane do dokumentów pakietu Microsoft Office Word lub arkuszy programu Microsoft Office Excel i formanty formularzy systemu Windows, które są dodawane do formularzy systemu Windows. Na przykład podczas dodawania <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolować dokument, właściwości, takie jak <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, i <xref:System.Windows.Forms.Control.TabIndex> nie działają zgodnie z oczekiwaniami może.
 
@@ -35,7 +36,7 @@ Wiele z tych różnic są powodowane przez sposób tego formularzy systemu Windo
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Ograniczenia metody i właściwości formantów formularzy systemu Windows
+## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Ograniczenia dotyczące metod i właściwości formantów formularzy systemu Windows
 
 Istnieje wiele metod i właściwości formantów formularzy systemu Windows, które nie działają tak samo w dokumencie na formularzu systemu Windows, a w związku z tym zaleca się, że nie być stosowane. Na przykład, takie jak ustawienie właściwości <xref:System.Windows.Forms.Control.Dock> i <xref:System.Windows.Forms.Control.Anchor> wpływa tylko na pozycji kontroli względem kontenera formantu ActiveX, zamiast dokumentu. Poniżej przedstawiono listę nieobsługiwanej metody i właściwości formantów formularzy systemu Windows dla programu Word i Excel:
 
@@ -73,7 +74,7 @@ Formanty formularzy systemu Windows mają zwykle takie samo zachowanie w dokumen
 |Funkcja|Różnica|
 |-------------------|----------------|
 |Kolejność tabulacji formantu|Nie można przełączać się między formanty umieszczone na arkuszu programu Excel lub dokumentu programu Word.|
-|Grupowanie formantu|Nie można użyć <xref:System.Windows.Forms.GroupBox> formantu zawierają inne formanty na dokumentu pakietu Office. Po dodaniu wielokrotnych przycisków radiowych bezpośrednio do dokumentu przycisków radiowych nie wykluczają. Można napisać kod, aby przyciski radiowe wykluczają się wzajemnie; Jednak to preferowane rozwiązanie jest dodawanie przycisków radiowych do formantu użytkownika, a następnie dodaj kontrolkę użytkownika do dokumentu. Aby uzyskać więcej informacji, zobacz próbka formantów programu Word lub próbki formanty programu Excel w [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).|
+|Grupowanie formantu|Nie można użyć <xref:System.Windows.Forms.GroupBox> formantu zawierają inne formanty na dokumentu pakietu Office. Po dodaniu wielokrotnych przycisków radiowych bezpośrednio do dokumentu przycisków radiowych nie wykluczają. Można napisać kod, aby przyciski radiowe wykluczają się wzajemnie; Jednak to preferowane rozwiązanie jest dodawanie przycisków radiowych do formantu użytkownika, a następnie dodaj kontrolkę użytkownika do dokumentu. Aby uzyskać więcej informacji, zobacz próbka formantów programu Word lub próbki formanty programu Excel w [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).|
 |Typ formantu|Formanty formularzy systemu Windows używane w dokumentach są ujęte w klasie pochodzącymi [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zapewniającą formantów dodatkowe funkcje specyficzne dla arkuszu programu Excel lub dokumentu programu Word. Na przykład, jeśli masz **przycisk** kontrolować w arkuszu programu Excel, należy określić typ jako <xref:Microsoft.Office.Tools.Excel.Controls.Button> zamiast <xref:System.Windows.Forms.Button> odwołuje się do lub Rzutowanie obiektu.|
 |Formant położenia i rozmiaru|Rozmiar i położenie formantu jest określana przez właściwości, które są częścią kontenera formantu ActiveX. Właściwości formantu ActiveX przyjmować wartości innej niż równoważne właściwości formantu formularzy systemu Windows. Podczas ustawiania `Top`, `Left`, `Height`, lub `Width` właściwości formantu, jest on mierzony w punktów zamiast pikseli.|
 |Położenie kontrolki na dokumenty programu Word|Jeśli dodasz formanty oparte na układ pamiętać, że kontrolki będą przepływać z zawartością wraz ze zmianą zawartości. Nie można zakotwiczyć formant akapitu podczas przeciągania go z **przybornika** ponieważ formant został dodany do dokumentu programu Word z tekstu. Jeśli używasz innej metody do Dodaj formant, takich jak dwukrotnie kontrolki, zgodnie z opcją programu Word, ustawione przez wstawianie obrazów wstawiany jest formant.<br /><br /> Nie można ustawić `Left` lub `Top` właściwości formantu, który jest wbudowany z tekstem.<br /><br /> Nie można umieścić kontrolek, w nagłówku lub stopce strony lub wewnątrz podrzędnego.|
@@ -83,7 +84,7 @@ Formanty formularzy systemu Windows mają zwykle takie samo zachowanie w dokumen
 |Zmiana rozmiaru formantu|Jeśli rozmiar formantu w dokumencie przy użyciu jednej z uchwytów osiem zmiany rozmiaru, nowe kontrolki wymiary nie są uwzględniane w **właściwości** okna do czasu formantu jest wybierane ponownie.|
 |Zachowanie kontroli|Formanty w arkuszu programu Excel może nieprzewidywalne zachowanie, gdy okno arkusza dzieli się. Na przykład uzyskać dostęp do <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> w arkuszu może być dostępny tylko w jednej z systemu windows.|
 |Nazwy formantów|Nie można użyć słowa zastrzeżone do formantów nazwy. Na przykład, jeśli dodasz <xref:Microsoft.Office.Tools.Excel.Controls.Button> do arkusza i Zmień nazwę, aby **systemu**, wystąpią błędy podczas kompilowania projektu.|
-|Programowe dodawanie formantów|Aby dodać kontrolkę do dokumentu w czasie wykonywania nie należy używać formantu konstruktora. Zamiast tego należy użyć metody pomocnika udostępniane przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Na przykład użyć <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> metody w celu dodania przycisku do arkusza. Jeśli chcesz dodać kontrolkę, która nie jest obsługiwana przez te metody pomocnicze, można użyć metody AddControl. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Programowe dodawanie formantów|Nie należy używać formantu konstruktora do Dodawanie formantu do dokumentu w czasie wykonywania. Zamiast tego należy użyć metody pomocnika udostępniane przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Na przykład użyć <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> metody w celu dodania przycisku do arkusza. Jeśli chcesz dodać kontrolkę, która nie jest obsługiwana przez te metody pomocnicze, możesz użyć `AddControl` metody. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Kopiowanie formantów|Jeśli kopiowanie formantu formularzy systemu Windows i wklej go do dokumentu w czasie wykonywania, pusty kontener formantu ActiveX zostanie wklejona do dokumentu. Formant formularzy systemu Windows nie jest wyświetlany w nowej lokalizacji, a kod związany z oryginalnego formantu nie jest kopiowany do kontenera formantu ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Ograniczenia w projektach na poziomie dokumentu
@@ -95,7 +96,7 @@ Niektóre ograniczenia za pomocą formantów formularzy systemu Windows w dokume
 Niektóre formanty formularzy systemu Windows są usuwane z **przybornika** po arkuszu programu Excel lub dokumentu programu Word jest otwarty w projektancie programu Visual Studio. Jest to spowodowane ograniczenia techniczne lub ponieważ ta funkcja jest już dostępne w ramach programu Word i Excel. Projekty programu Excel i Word obsługują wszystkie formanty formularzy systemu Windows i innymi składnikami, które są widoczne w **przybornika** gdy dokument ma fokus i można również dodawać formanty innych firm do arkusza lub dokumentu.
 
 > [!NOTE]
-> Wszystkie formanty są usuwane z **przybornika** gdy dokument jest chroniony. Uzyskać informacji na temat ochrony dokumentu, zobacz [ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md).
+> Wszystkie formanty są usuwane z **przybornika** gdy dokument jest chroniony. Uzyskać informacji na temat ochrony dokumentu, zobacz [ochrona w rozwiązaniach na poziomie dokumentu dokumentu](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Formanty innej firmy musi mieć <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawić atrybutu **true** , aby można używać w rozwiązaniach pakietu Office.
@@ -184,7 +185,7 @@ Jeśli utworzysz poziomie dokumentu Office project używa istniejącego dokument
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kontrolki w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
-- [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Instrukcje: Dodawanie kontrolek Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
+- [Formanty formularzy systemu Windows na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Porady: dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
