@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764910"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>Tworzenie podstawowych raportów dotyczących profilowania z wiersza polecenia
-W tym temacie opisano podstawowe polecenia VSPerfReport generujących raporty wartości oddzielanych przecinkami (.csv) z pliku Vsp lub vsps pliku danych profilowania. Opis wszystkich opcji raportów, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>Tworzenie podstawowych raportów dotyczących profilowania z wiersza polecenia
+W tym artykule opisano podstawowe polecenia VSPerfReport, które generują plik wartości rozdzielanych przecinkami (. *CSV*) raporty z. *vsp* lub. *vsps* pliku danych profilowania. Opis wszystkich opcji raportów, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="report-commands"></a>Polecenia raportu  
  Użyj jednej z poniższych poleceń, aby utworzyć raport dla określonego pliku danych profilowania.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- Generuje raporty wszystkie dostępne dla pliku Vsp lub vsps.  
+ Generuje dostępne dla wszystkich raportów. *vsp* lub. *vsps* pliku.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  Generuje typu określonego raportu.  
@@ -37,7 +38,7 @@ W tym temacie opisano podstawowe polecenia VSPerfReport generujących raporty wa
 |Parametr podsumowania|Opis raportu|Dokumentacja raportów|  
 |-----------------------|------------------------|----------------------|  
 |**CallerCallee**|Reprezentuje relacji nadrzędny/podrzędny między funkcji.|-   [Dane z próbkowania](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dane z Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/caller-callee-view-contention-data.md)|  
-|**Funkcja**|Wyświetla dane profilowania według funkcji.|-   [Dane z próbkowania](../profiling/functions-view-sampling-data.md)<br />-   [Dane z Instrumentacji](../profiling/functions-view-instrumentation-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/functions-view-contention-data.md)|  
+|**Function**|Wyświetla dane profilowania według funkcji.|-   [Dane z próbkowania](../profiling/functions-view-sampling-data.md)<br />-   [Dane z Instrumentacji](../profiling/functions-view-instrumentation-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/functions-view-contention-data.md)|  
 |**Widokach drzewa wywołań**|Reprezentuje ścieżek wykonywania i danych profilowania funkcji w przebiegu profilowania.|-   [Dane z Instrumentacji](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Dane z próbkowania](../profiling/call-tree-view-sampling-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/call-tree-view-contention-data.md)|  
 |**Counter**|Wyświetla profilowania znaków i wartości licznika wydajności systemu Windows, które zostały zebrane podczas przebiegu profilowania.|-   [Widok znaczników](../profiling/marks-view.md)|  
 |**IP**|Wyświetla dane profilowania według instrukcji.|-   [Dane z próbkowania](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dane kontencji](../profiling/instruction-pointers-ips-view-contention-data.md)|  
@@ -45,7 +46,7 @@ W tym temacie opisano podstawowe polecenia VSPerfReport generujących raporty wa
 |**wiersz**|Wyświetla dane profilowania według wiersza kodu źródłowego.|-   [Dane z próbkowania](../profiling/lines-view-sampling-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dane kontencji](../profiling/lines-view-contention-data.md)|  
 |**Nagłówek**|Profilowanie informacje nagłówka pliku danych.|Specyficzne dla pliku.|  
 |**Mark**|Profilowanie znaczniki zebranych podczas przebiegu profilowania.|-   [Widok znaczników](../profiling/marks-view.md)|  
-|**Moduł**|Wyświetla dane dla modułów profilowania.|-   [Dane z próbkowania](../profiling/modules-view-sampling-data.md)<br />-   [Dane z Instrumentacji](../profiling/modules-view-instrumentation-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/modules-view-contention-data.md)|  
+|**Module**|Wyświetla dane dla modułów profilowania.|-   [Dane z próbkowania](../profiling/modules-view-sampling-data.md)<br />-   [Dane z Instrumentacji](../profiling/modules-view-instrumentation-data.md)<br />-   [Dane z próbkowania pamięci .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dane z Instrumentacji pamięci .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane kontencji](../profiling/modules-view-contention-data.md)|  
 |**Proces**|Wyświetla dane dla procesów profilowania.|-   [Widok procesu](../profiling/process-view.md)<br />-   [Dane kontencji](../profiling/process-view-contention-data.md)|  
 |**Wątek**|Wyświetla dane dla wątków profilowania.|-   [Widok procesu](../profiling/process-view.md)|  
 |**Typ**|Wyświetla listę alokacji dane profilowania według typu.|-   [Widok alokacji](../profiling/dotnet-memory-allocations-view.md)|  

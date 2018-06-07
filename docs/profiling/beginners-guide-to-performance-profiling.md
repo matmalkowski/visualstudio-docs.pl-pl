@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c7cfc4cd1aa5736b4027155bd52be3ab095e60
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766704"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Profilowanie wydajności aplikacji w programie Visual Studio
+# <a name="profile-application-performance-in-visual-studio"></a>Wydajność aplikacji profilującej w programie Visual Studio
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
   
 Gdy wstrzymuje debugera, **użycie procesora CPU** narzędzie zbiera informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonywania pracy i umożliwia wykresu osi czasu, który można skupić się na poszczególnych segmentów sesji próbkowania.
@@ -35,7 +36,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 |---------|---------|
 |  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) przy użyciu narzędzia diagnostyczne, które pokazuje sposób Analiza użycia procesora CPU i analizowanie użycia pamięci. |
 
-W tym temacie omówiono Analiza użycia procesora CPU w normalnym przepływie pracy debugowania. Użycie procesora CPU można analizować również bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debugeraprofilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+W tym artykule omówiono Analiza użycia procesora CPU w normalnym przepływie pracy debugowania. Użycie procesora CPU można analizować również bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debugeraprofilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!NOTE]
 > Dla platformy .NET Core i ASP.NET Core narzędzia użycie procesora CPU aktualnie nie zawiera prawidłowych wyników z PBDs przenośnej. Zamiast tego użyj pełne pliki PDB.
@@ -143,7 +144,7 @@ Poniżej przedstawiono więcej informacji na temat wartości kolumn:
 
 - **Moduły** nazwę modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].
 
-## <a name="BKMK_External_Code"></a>Widok kodu zewnętrznego
+## <a name="view-external-code"></a>Widok kodu zewnętrznego
 
 Kod zewnętrzny są funkcje systemu i framework składników, które są wykonywane przez kod zostanie zapisany. Kod zewnętrzny obejmują funkcje, które start i Zatrzymaj aplikację, Rysuj interfejsu użytkownika, kontroli wątków i podaj inne niskiego poziomu usług do aplikacji. W większości przypadków będzie zainteresowana kod zewnętrzny, i dlatego narzędzia użycie procesora CPU zbiera funkcji zewnętrznych metody użytkownika do jednego **[kod zewnętrzny]** węzła.
   
@@ -156,7 +157,7 @@ Należy pamiętać, że wiele łańcuchów wywołanie kodu zewnętrznego głębo
 Użyj pola wyszukiwania można znaleźć węzła, którego szukasz, a następnie przełącz do widoku danych za pomocą paska przewijania w poziomie.
 
 > [!TIP]
-> Jeśli profil zewnętrznego kodu, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [Określ symboli (.pdb) i plików źródłowych w debugerze](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Jeśli profil zewnętrznego kodu, który wywołuje funkcje systemu Windows, należy upewnić się, że masz najbardziej aktualnej. *pdb* plików. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [Określ symbolu (. *PDB*) i pliki w debugerze źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
