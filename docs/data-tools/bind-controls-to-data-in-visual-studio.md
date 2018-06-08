@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747394"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845321"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie formantów z danymi w Visual Studio
 Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Tych kontrolek powiązanych z danymi można utworzyć, przeciągając elementy z **źródeł danych** okna na powierzchni projektu lub kontrolki na powierzchni w programie Visual Studio.
@@ -48,7 +48,7 @@ Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Ty
 
  ![Data Sources — Okno](../data-tools/media/raddata-data-sources-window.png)
 
- Dla każdego typu danych, która jest wyświetlana w **źródeł danych** okno formantu domyślny jest tworzony podczas przeciągnij element do projektanta. Aby przeciągnąć element z **źródeł danych** okna, można zmienić formant, który zostanie utworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+ Dla każdego typu danych, która jest wyświetlana w **źródeł danych** okno formantu domyślny jest tworzony podczas przeciągnij element do projektanta. Aby przeciągnąć element z **źródeł danych** okna, można zmienić formant, który jest tworzony. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Zadania związane z powiązywanie kontrolek z danymi
  W poniższej tabeli wymieniono niektóre z najbardziej typowych zadań, należy wykonać w celu powiązanie kontrolek z danymi.
@@ -64,7 +64,7 @@ Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Ty
 |Filtrowanie danych, która jest wyświetlana w Interfejsie użytkownika.|[Filtrowanie i sortowanie danych w aplikacji Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Dostosowywanie podpisów dla formantów.|[Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Wiązanie danych formularzy Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Wiązanie danych formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -13,15 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843926"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Porady: profilowanie kodu JavaScript na stronach sieci Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Porady: kodu JavaScript profilu na stronach sieci web
 
-Visual Studio Profiling Tools może zbierać dane wydajności dotyczące kodu JavaScript, która wykonuje w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji, dowolnego strony sieci Web lub aplikacji JavaScript za pomocą metoda profilowania instrumentacji. Wymaga programu Internet Explorer 8 lub nowszy.
+Visual Studio Profiling Tools może zbierać dane wydajności dotyczące kodu JavaScript, która wykonuje w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, dowolnego strony sieci web lub aplikacji JavaScript za pomocą metoda profilowania instrumentacji. Wymaga programu Internet Explorer 8 lub nowszy.
 
 > [!WARNING]
 > Aby profilować kod JavaScript w aplikacji platformy uniwersalnej systemu Windows, temacie [pamięć języka JavaScript](../profiling/javascript-memory.md) 
@@ -30,13 +31,13 @@ Profilowanie Kreator służy do utworzenia sesji wydajności. Określ metody ins
 
 Po określeniu profilowanie plików JavaScript, kod JavaScript, który jest wykonywany w przeglądarce i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] są sprofilować kodu wykonywanego na serwerze.
 
-- Dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, kod JavaScript wykonujący w przeglądarce i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] są sprofilować kodu wykonywanego na serwerze.
+- Dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, kod JavaScript wykonujący w przeglądarce i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] są sprofilować kodu wykonywanego na serwerze.
 
-- Dla dowolnego strony sieci Web jest profilowane kod JavaScript, która wykonuje w przeglądarce.
+- Dla dowolnego strony sieci web jest profilowane kod JavaScript, która wykonuje w przeglądarce.
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Aby profilować kod JavaScript w projekcie aplikacji sieci Web ASP.NET
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Aby profilować kod JavaScript w projekcie aplikacji sieci web ASP.NET
 
-1. Otwórz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] projektu sieci Web w programie Visual Studio.
+1. Otwórz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] projektu sieci web w programie Visual Studio.
 
 2. Na **Analizuj** menu, kliknij przycisk **Uruchom Kreatora osiągów**.
 
@@ -46,13 +47,13 @@ Po określeniu profilowanie plików JavaScript, kod JavaScript, który jest wyko
 
 5. Na trzeciej stronie kreatora wybierz **JavaScript profilu** pole wyboru, a następnie kliknij przycisk **dalej**.
 
-6. Na czwartej stronie kreatora, kliknij przycisk **Zakończ** można uruchomić aplikacji sieci Web w przeglądarce.
+6. Na czwartej stronie kreatora, kliknij przycisk **Zakończ** można uruchomić aplikacji sieci web w przeglądarce.
 
 7. Wykonuje funkcje, które chcesz profilu.
 
 8. Aby zakończyć sesję profilowania, zamknij przeglądarkę.
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Profilowanie kodu JavaScript w poszczególnych stron sieci Web lub aplikacji JavaScript
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Profilowanie kodu JavaScript w poszczególnych stron sieci web lub aplikacji JavaScript
 
 1. Otwórz program Visual Studio.
 
@@ -68,7 +69,7 @@ Po określeniu profilowanie plików JavaScript, kod JavaScript, który jest wyko
 
     2. Wybierz **JavaScript profilu** pole wyboru, a następnie kliknij przycisk **dalej**.
 
-6. Na czwartej stronie kreatora, kliknij przycisk **Zakończ** można uruchomić strony sieci Web w przeglądarce.
+6. Na czwartej stronie kreatora, kliknij przycisk **Zakończ** można uruchomić strony sieci web w przeglądarce.
 
 7. Wykonuje funkcje, które chcesz profilu.
 

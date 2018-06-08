@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,24 +20,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845174"
 ---
-# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Wskazówki: tworzenie kart niestandardowych za pomocą Projektanta wstążki
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki
   Za pomocą projektanta wstążki, można tworzenie kart niestandardowych, a następnie dodaj i ustawianie formantów na nim.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   [Tworzenie okienka akcji](#BKMK_CreateActionsPanes).  
+-   [Utwórz okienka akcji](#BKMK_CreateActionsPanes).  
   
 -   [Tworzenie kart niestandardowych](#BKMK_CreateCustomTab).  
   
--   [Wyświetlanie i ukrywanie okienka akcji za pomocą przycisków na karcie niestandardowe](#BKMK_HideShowActionsPane).  
+-   [Ukryj i wyświetlać okienka akcji za pomocą przycisków na karcie niestandardowe](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -49,19 +50,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Excel  
   
-## <a name="creating-an-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
+## <a name="create-an-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
  W przypadku korzystania z projektanta wstążki są niemal identyczne dla wszystkich aplikacji pakietu Office. W tym przykładzie użyto skoroszytu programu Excel.  
   
-#### <a name="to-create-an-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel  
+### <a name="to-create-an-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel  
   
 -   Tworzenie projektu skoroszyt programu Excel o nazwie **MyExcelRibbon**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt w Projektancie i dodaje **MyExcelRibbon** projektu do **Eksploratora rozwiązań**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a> Tworzenie okienka akcji  
+##  <a name="BKMK_CreateActionsPanes"></a> Utwórz okienka akcji  
  Dodaj dwa okienka Akcje niestandardowe do projektu. Pokazywanie i ukrywanie okienka te akcje na karcie niestandardowe przyciski później zostaną dodane.  
   
-#### <a name="to-create-actions-panes"></a>Aby utworzyć okienka akcji  
+### <a name="to-create-actions-panes"></a>Aby utworzyć okienka akcji  
   
 1.  Na **projektu** menu, wybierz **Dodaj nowy element**.  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="BKMK_CreateCustomTab"></a> Tworzenie kart niestandardowych  
  Jednym z wytycznymi projektowania aplikacji pakietu Office jest użytkowników powinien zawsze mieć formantu interfejsu użytkownika aplikacji pakietu Office. Aby dodać tę możliwość dla okienka akcji, można dodać przyciski pokazać lub ukryć poszczególnych okienkach akcji z kart niestandardowych na Wstążce. Aby utworzyć kart niestandardowych, Dodaj **wstążki (projektanta wizualnego)** elementu do projektu. Projektant pomaga Dodaj formanty pozycji, ustaw właściwości kontrolki i obsługę zdarzeń formantu.  
   
-#### <a name="to-create-a-custom-tab"></a>Aby utworzyć kart niestandardowych  
+### <a name="to-create-a-custom-tab"></a>Aby utworzyć kart niestandardowych  
   
 1.  Na **projektu** menu, wybierz **Dodaj nowy element**.  
   
@@ -110,12 +111,12 @@ ms.lasthandoff: 04/16/2018
   
 14. Ustaw **etykiety** właściwości **ukrywanie okienka Akcje**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a> Wyświetlanie i ukrywanie okienka akcji za pomocą przycisków na karcie niestandardowe  
+##  <a name="BKMK_HideShowActionsPane"></a> Ukryj i wyświetlać okienka akcji za pomocą przycisków na karcie niestandardowe  
  Ostatnim krokiem jest Dodaj kod, który odpowiada użytkownik. Dodawanie obsługi zdarzeń <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia dwóch przycisków i <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzeń przycisk przełącznika. Dodaj kod, aby te programy obsługi zdarzeń, aby umożliwić wyświetlanie i ukrywanie okienka akcji.  
   
-#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Aby ukryć i pokazać za pomocą przycisków na niestandardowej karcie okienka akcji  
+### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Aby ukryć i pokazać za pomocą przycisków na niestandardowej karcie okienka akcji  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów MyRibbon.cs lub MyRibbon.vb, a następnie wybierz **kod widoku**.  
+1.  W **Eksploratora rozwiązań**, otwórz menu skrótów *MyRibbon.cs* lub *MyRibbon.vb*, a następnie wybierz pozycję **kod widoku**.  
   
 2.  Dodaj następujący kod do góry `MyRibbon` klasy. Ten kod tworzy dwa obiekty w okienku Akcje.  
   
@@ -132,12 +133,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
   
-## <a name="testing-the-custom-tab"></a>Testowanie kart niestandardowych  
+## <a name="test-the-custom-tab"></a>Testowanie kart niestandardowych  
  Po uruchomieniu projektu, uruchamia program Excel i **Moja karta niestandardowe** zostanie wyświetlona karta na Wstążce. Wybierz przyciski na **Moja karta niestandardowe** by pokazać lub ukryć okienka akcji.  
   
-#### <a name="to-test-the-custom-tab"></a>Aby przetestować kart niestandardowych  
+### <a name="to-test-the-custom-tab"></a>Aby przetestować kart niestandardowych  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Wybierz **Moja karta niestandardowe** kartę.  
   
@@ -160,15 +161,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Rozszerzenie standardowych lub niestandardowych formularzy programu Microsoft Office Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
- [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Model obiektu Wstążka — omówienie](../vsto/ribbon-object-model-overview.md)  
+ [Porady: dodawanie formantów do widoku zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)  
   
   

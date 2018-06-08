@@ -9,12 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747095"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845018"
 ---
 # <a name="add-new-connections"></a>Dodaj nowe połączenia
 
@@ -26,7 +26,7 @@ Testowanie połączenia z bazą danych lub usługi i Eksploruj zawartość bazy 
 
 - Eksplorator chmury
 
-   Ręcznie zainstaluj to okno jako rozszerzenia programu Visual Studio, wybierając **narzędzia**, **rozszerzenia i aktualizacje**, **Online**, **programu Visual Studio Markeplace**. Udostępnia funkcje specjalne dla badać i łączących się z usługami Azure.
+   Ręcznie zainstaluj to okno jako rozszerzenia programu Visual Studio, wybierając **narzędzia** > **rozszerzenia i aktualizacje** > **Online**  >  **Markeplace programu visual Studio**. Udostępnia funkcje specjalne dla badać i łączących się z usługami Azure.
 
 - Eksplorator obiektów SQL Server
 

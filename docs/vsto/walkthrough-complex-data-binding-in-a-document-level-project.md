@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Złożone powiązanie danych w projektach na poziomie dokumentu | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Złożone powiązanie danych w projektach na poziomie dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a46a0f30fe3ab0cfc44a4cdb9121c4f39f3c417f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845681"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Wskazówki: złożone powiązanie danych w projektach na poziomie dokumentów
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Wskazówki: Złożone powiązanie danych w projektach na poziomie dokumentu
   W tym przewodniku przedstawiono podstawowe informacje o złożone powiązanie danych w projektach na poziomie dokumentu. Wiele komórek w arkuszu programu Microsoft Office Excel można powiązać pola w bazie danych Northwind programu SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -50,10 +51,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Uprawnienia do odczytu i zapisu w bazie danych programu SQL Server.  
   
-## <a name="creating-a-new-project"></a>Tworzenie nowego projektu  
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  Pierwszym krokiem jest tworzenie projektu skoroszyt programu Excel.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje złożone powiązanie danych**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
@@ -61,12 +62,12 @@ ms.lasthandoff: 04/16/2018
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje złożone powiązanie danych** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="creating-the-data-source"></a>Tworzenie źródła danych  
+## <a name="create-the-data-source"></a>Utwórz źródło danych  
  Użyj **źródeł danych** okno, aby dodać typizowanego zestaw danych do projektu.  
   
-#### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
+### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku**, **inne okna**, **źródeł danych**.  
+1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
   
 2.  Wybierz **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
   
  Kreator dodaje **pracowników** do tabeli **źródeł danych** okna. Dodano również typizowanego zestaw danych do projektu, które są widoczne w **Eksploratora rozwiązań**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
+## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  Arkusz wyświetli **pracowników** tabeli po otwarciu skoroszytu. Użytkownicy będą mogli dokonać zmian danych, a następnie zapisać te zmiany w bazie danych przez kliknięcie przycisku.  
   
  Aby powiązać automatycznie arkusz do tabeli, można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> formantu do arkusza z **źródeł danych** okna. Aby dać użytkownikowi opcję, aby zapisać zmiany, należy dodać <xref:System.Windows.Forms.Button> kontrolować z **przybornika**.  
@@ -105,16 +106,16 @@ ms.lasthandoff: 04/16/2018
   
      A <xref:Microsoft.Office.Tools.Excel.ListObject> formantu o nazwie `EmployeesListObject` jest tworzony w komórce **A6**. W tym samym czasie <xref:System.Windows.Forms.BindingSource> o nazwie `EmployeesBindingSource`, karty tabeli, a <xref:System.Data.DataSet> wystąpienia są dodawane do projektu. Kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>, która z kolei jest powiązana <xref:System.Data.DataSet> wystąpienia.  
   
-#### <a name="to-add-a-button"></a>Aby dodać przycisk  
+### <a name="to-add-a-button"></a>Aby dodać przycisk  
   
 1.  Z **formanty standardowe** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> formant w komórce **A4** arkusza.  
   
  Następnym krokiem jest dodać tekst przycisku, gdy arkusz otworzy.  
   
-## <a name="initializing-the-control"></a>Inicjowanie kontrolki  
+## <a name="initialize-the-control"></a>Inicjowanie kontrolki  
  Dodawanie tekstu na przycisk w <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obsługi zdarzeń.  
   
-#### <a name="to-initialize-the-control"></a>Aby zainicjować kontrolki  
+### <a name="to-initialize-the-control"></a>Aby zainicjować kontrolki  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
   
@@ -129,50 +130,50 @@ ms.lasthandoff: 04/16/2018
   
  Teraz Dodaj kod obsługi <xref:System.Windows.Forms.Control.Click> zdarzeń przycisku.  
   
-## <a name="saving-changes-to-the-database"></a>Trwa zapisywanie zmian w bazie danych  
+## <a name="save-changes-to-the-database"></a>Zapisz zmiany w bazie danych  
  Wprowadzono zmiany danych istnieją tylko w lokalnej zestawu danych, dopóki jawnie są zapisywane w bazie danych.  
   
-#### <a name="to-save-changes-to-the-database"></a>Aby zapisać zmiany w bazie danych  
+### <a name="to-save-changes-to-the-database"></a>Aby zapisać zmiany w bazie danych  
   
-1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzeń b`utton`i Dodaj następujący kod, aby zatwierdzić wszystkie zmiany wprowadzone w zestawie danych w bazie danych.  
+1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia `button`i Dodaj następujący kod, aby zatwierdzić wszystkie zmiany wprowadzone w zestawie danych w bazie danych.  
   
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować skoroszytu, aby sprawdzić, czy dane są wyświetlane zgodnie z oczekiwaniami i że można manipulować danymi w obiekcie listy.  
   
-#### <a name="to-test-the-data-binding"></a>Aby przetestować tworzenie wiązania danych  
+### <a name="to-test-the-data-binding"></a>Aby przetestować tworzenie wiązania danych  
   
--   Naciśnij F5.  
+-   Naciśnij klawisz **F5**.  
   
      Sprawdź, czy po otwarciu skoroszytu listy obiekt jest wypełniany danych z **pracowników** tabeli.  
   
-#### <a name="to-modify-data"></a>Aby zmodyfikować danych  
+### <a name="to-modify-data"></a>Aby zmodyfikować danych  
   
 1.  Kliknij komórkę **B7**, który powinien zawierać nazwę **Kowalski**.  
   
-2.  Wpisz nazwę **Anderson**, a następnie naciśnij klawisz ENTER.  
+2.  Wpisz nazwę **Andersona**, a następnie naciśnij klawisz **Enter**.  
   
-#### <a name="to-modify-a-column-header"></a>Aby zmodyfikować nagłówek kolumny  
+### <a name="to-modify-a-column-header"></a>Aby zmodyfikować nagłówek kolumny  
   
 1.  Kliknij komórkę, która zawiera nagłówki kolumn **nazwisko**.  
   
-2.  Typ **nazwisko**, w tym spacji między dwa wyrazy i naciśnij klawisz ENTER.  
+2.  Typ **nazwisko**, tym odstęp między dwoma wyrazami, a następnie naciśnij klawisz **Enter**.  
   
-#### <a name="to-save-data"></a>W celu zapisywania danych  
+### <a name="to-save-data"></a>W celu zapisywania danych  
   
 1.  Kliknij przycisk **zapisać** w arkuszu.  
   
 2.  Zakończ działanie programu Excel. Kliknij przycisk **nr** po wyświetleniu monitu, aby zapisać zmiany.  
   
-3.  Naciśnij klawisz F5, aby uruchomić projekt ponownie.  
+3.  Naciśnij klawisz **F5** ponownie uruchomić projekt.  
   
      Obiekt listy jest wypełniany przy użyciu danych z **pracowników** tabeli.  
   
 4.  Zwróć uwagę, że nazwy w komórce **B7** jest nadal **Anderson**, czyli danych zmiany wprowadzone, a następnie zapisywana w bazie danych. Nagłówek kolumny **nazwisko** został zmieniony do postaci oryginalnej bez spacji, ponieważ nagłówek kolumny nie jest powiązany z bazą danych i zmiany wprowadzone w arkuszu nie został zapisany.  
   
-#### <a name="to-add-new-rows"></a>Aby dodać nowe wiersze  
+### <a name="to-add-new-rows"></a>Aby dodać nowe wiersze  
   
 1.  Zaznacz komórkę wewnątrz obiektu listy.  
   
@@ -184,11 +185,11 @@ ms.lasthandoff: 04/16/2018
     |----------------|--------------|---------------|-----------|  
     |10|Pawłowski|Marek|Menedżer sprzedaży|  
   
-#### <a name="to-delete-rows"></a>Aby usunąć wiersze  
+### <a name="to-delete-rows"></a>Aby usunąć wiersze  
   
 -   Kliknij prawym przyciskiem myszy numer 16 (wiersz 16) po lewej stronie arkusza, a następnie kliknij przycisk **usunąć**.  
   
-#### <a name="to-sort-the-rows-in-the-list"></a>Sortowanie wierszy na liście  
+### <a name="to-sort-the-rows-in-the-list"></a>Sortowanie wierszy na liście  
   
 1.  Zaznacz komórkę wewnątrz listy.  
   
@@ -200,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
      Wiersze są sortowane w kolejności alfabetycznej przez nazwiska.  
   
-#### <a name="to-filter-information"></a>Do filtrowania informacji  
+### <a name="to-filter-information"></a>Do filtrowania informacji  
   
 1.  Zaznacz komórkę wewnątrz listy.  
   
@@ -219,15 +220,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawy powiązania tabeli w bazie danych do listy obiektów. Poniżej przedstawiono niektóre zadania, które mogą występować:  
   
--   Pamięci podręcznej danych, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane pamięci podręcznej do użycia w trybie Offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Pamięci podręcznej danych, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Wdrażanie rozwiązania. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
--   Tworzenie relacji wzorzec/szczegół między pola i tabeli. Aby uzyskać więcej informacji, zobacz [wskazówki: utworzenie głównego szczegółów relacji przy użyciu zestawu danych w pamięci podręcznej](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Tworzenie relacji wzorzec/szczegół między pola i tabeli. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie relacji wzorzec szczegół za pomocą buforowanego zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Przewodnik: Proste powiązanie danych w projektach na poziomie dokumentów](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+ [Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
   
   

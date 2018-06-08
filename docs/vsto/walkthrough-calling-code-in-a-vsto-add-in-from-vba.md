@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1349facda26418907f039c80c7742d3c456437af
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845720"
 ---
-# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA
   W tym przewodniku pokazano, jak udostępnianie obiektu w dodatku VSTO do innych rozwiązań Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatków COM VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Excel  
   
-## <a name="creating-the-vsto-add-in-project"></a>Tworzenie projektów dodatku VSTO  
+## <a name="create-the-vsto-add-in-project"></a>Tworzenie projektów dodatku VSTO  
  Pierwszym krokiem jest utworzenie projektu dodatku VSTO dla programu Excel.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Tworzenie projektów dodatku VSTO programu Excel o nazwie **ExcelImportData**, za pomocą szablonu projektu dodatku VSTO programu Excel. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **ExcelImportData** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Definiowanie klasy, która pozwala udostępnić do innych rozwiązań pakietu Office  
+## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definiowanie klasy, która pozwala udostępnić do innych rozwiązań pakietu Office  
  Celem tego przewodnika jest wywołują `ImportData` metody klasy o nazwie `AddInUtilities` w Twojej dodatku VSTO z kodu VBA. Ta metoda zapisuje ciąg w komórce A1 aktywnego arkusza.  
   
  Aby udostępnić `AddInUtilities` klasy do innych rozwiązań pakietu Office, należy klasy publicznej i są widoczne dla modelu COM. Musi również ujawniać [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interfejsu w klasie. Kod w poniższej procedurze pokazano jeden ze sposobów tych wymagań. Aby uzyskać więcej informacji, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Aby zdefiniować klasę, która pozwala udostępnić do innych rozwiązań pakietu Office  
+### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Aby zdefiniować klasę, która pozwala udostępnić do innych rozwiązań pakietu Office  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj klasę**.  
   
@@ -85,10 +86,10 @@ ms.lasthandoff: 04/16/2018
   
      Ten kod sprawia, że `AddInUtilities` klasy widoczne dla modelu COM, a następnie dodaje `ImportData` metodę do klasy. Aby udostępnić [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interfejsu, `AddInUtilities` klasa ma również <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybut który implementuje interfejs, który jest niewidoczny dla modelu COM.  
   
-## <a name="exposing-the-class-to-other-office-solutions"></a>Udostępnia klasy do innych rozwiązań pakietu Office  
+## <a name="expose-the-class-to-other-office-solutions"></a>Udostępnianie klasy do innych rozwiązań pakietu Office  
  Aby udostępnić `AddInUtilities` klasa do innych rozwiązań pakietu Office, Zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> metody w `ThisAddIn` klasy. W przypadku zastąpienia, zwrócić wystąpienia `AddInUtilities` klasy.  
   
-#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Aby udostępnić klasy AddInUtilities do innych rozwiązań pakietu Office  
+### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Aby udostępnić klasy AddInUtilities do innych rozwiązań pakietu Office  
   
 1.  W **Eksploratora rozwiązań**, rozwiń węzeł **Excel**.  
   
@@ -103,12 +104,12 @@ ms.lasthandoff: 04/16/2018
   
      Upewnij się, że rozwiązanie kompilacje bez błędów.  
   
-## <a name="testing-the-vsto-add-in"></a>Testowanie dodatku narzędzi VSTO  
+## <a name="test-the-vsto-add-in"></a>Testowanie dodatku narzędzi VSTO  
  Można wywołać w `AddInUtilities` klasy z kilkoma różnymi typami rozwiązań pakietu Office. W tym przewodniku użyje kodu z VBA w skoroszycie programu Excel. Aby uzyskać więcej informacji dotyczących innych typów rozwiązań pakietu Office można również użyć, zobacz [wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
+### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  W programie Excel zapisać aktywnym skoroszycie jako skoroszyt Excel Macro-Enabled (*.xlsm). Zapisz go w dogodnym miejscu, takich jak pulpit.  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Dodaj następujący kod VBA do pliku kodu. Ten kod pobiera pierwszy obiekt COMAddIn, który reprezentuje **ExcelImportData** dodatku VSTO. Następnie kod używa właściwości obiektu obiektu COMAddIn do wywołania `ImportData` metody.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim addIn As COMAddIn  
         Dim automationObject As Object  
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-7.  Naciśnij F5.  
+7.  Naciśnij klawisz **F5**.  
   
 8.  Sprawdź, czy nowy **zaimportowane dane** arkusz został dodany do skoroszytu. Sprawdź również, że A1 komórka zawiera ciąg **to dane**.  
   
@@ -146,18 +147,18 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  Użytkownik może dowiedzieć się więcej o programowanie dodatków VSTO z tych tematów:  
   
--   Użyj `ThisAddIn` klasę, aby zautomatyzować aplikacji hosta i wykonywać inne zadania w projektów dodatku VSTO. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Użyj `ThisAddIn` klasę, aby zautomatyzować aplikacji hosta i wykonywać inne zadania w projektów dodatku VSTO. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
 -   Tworzenie niestandardowego okienka zadań w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md) i [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Dostosowywanie Wstążki w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md) i [porady: uzyskiwanie uruchomiona Dostosowywanie wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Dostosowywanie Wstążki w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md) i [porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
+ [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+ [Dostosowywanie funkcji interfejsu użytkownika korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

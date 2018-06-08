@@ -1,5 +1,5 @@
 ---
-title: Dodawanie walidacji do warstwowego zestawu danych
+title: Dodawanie walidacji do n-warstwowego zestawu danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845408"
 ---
-# <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do warstwowego zestawu danych
+# <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do n-warstwowego zestawu danych
 Dodawanie walidacji do zestawu danych, który jest dzielony stanowi rozwiązanie warstwowe zasadniczo jest taka sama jak dodawanie walidacji do pojedynczego pliku zestawu danych (dataset w jednym projekcie). Sugerowane lokalizacją sprawdzaniu poprawności danych jest podczas <xref:System.Data.DataTable.ColumnChanging> i/lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabeli danych.
 
  Zestaw danych udostępnia funkcje umożliwiające tworzenie klasy częściowe, do których można dodać kod użytkownika na zdarzenia Zmiana kolumn i wierszy w tabelach danych w zestawie danych. Aby uzyskać więcej informacji na temat Dodawanie kodu do zestawu danych w n warstwowa rozwiązania, zobacz [Dodawanie kodu do zestawów danych w aplikacjach warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md), i [Dodawanie kodu do TableAdapters w aplikacjach warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Aby uzyskać więcej informacji na temat klas częściowych, zobacz [porady: podział klas na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -37,7 +38,7 @@ Dodawanie walidacji do zestawu danych, który jest dzielony stanowi rozwiązanie
 ## <a name="validate-changes-to-individual-columns"></a>Sprawdzanie poprawności zmiany poszczególnych kolumn
  Sprawdź poprawność wartości w poszczególnych kolumnach Obsługa <xref:System.Data.DataTable.ColumnChanging> zdarzeń. <xref:System.Data.DataTable.ColumnChanging> Zdarzenie jest zgłaszane, gdy wartość w kolumnie jest modyfikowana. Tworzenie procedury obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń, klikając dwukrotnie odpowiednie kolumny **Projektant obiektów Dataset**.
 
- Kliknij dwukrotnie kolumnę, po raz pierwszy projektanta generuje programu obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń. `If...Then` Instrukcji tworzona jest również sprawdzający dla określonej kolumny. Na przykład następujący kod jest generowany po dwukrotnym kliknięciu DataDostawy kolumny z tabeli zamówienia Northwind:
+ Kliknij dwukrotnie kolumnę, po raz pierwszy projektanta generuje programu obsługi zdarzeń dla <xref:System.Data.DataTable.ColumnChanging> zdarzeń. `If...Then` Instrukcji tworzona jest również sprawdzający dla określonej kolumny. Na przykład następujący kod jest generowany po dwukrotnym kliknięciu **DataDostawy** kolumny w tabeli Northwind zleceń:
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -54,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Aby dodać sprawdzania poprawności podczas zmiany wartości poszczególnych kolumn
 
-1.  Otwórz zestaw danych, klikając dwukrotnie **XSD** w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja tworzy <xref:System.Data.DataTable.ColumnChanging> obsługi zdarzeń.
 
@@ -110,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Aby dodać sprawdzania poprawności podczas zmiany do całego wierszy
 
-1.  Otwórz zestaw danych, klikając dwukrotnie **XSD** w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otwórz zestaw danych, klikając dwukrotnie *XSD* w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Kliknij dwukrotnie ikonę na pasku tytułu tabeli danych w projektancie.
 
@@ -165,8 +166,8 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Omówienie aplikacji warstwowych](../data-tools/n-tier-data-applications-overview.md)
-- [Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Wskazówki: Tworzenie aplikacji warstwowych danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)

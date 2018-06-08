@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 759aee9692ee905e33ce55ff068b74d4a289c78a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845746"
 ---
-# <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Wskazówki: tworzenie kart niestandardowych za pomocą XML wstążki
+# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki
   W tym przewodniku pokazano, jak utworzyć niestandardowe karty wstążki za pomocą **wstążki (XML)** elementu.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -47,21 +48,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Word.  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  Pierwszym krokiem jest utworzenie projektu dodatku VSTO programu Word. Później będzie można dostosować **Add-Ins** kartę tego dokumentu.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Utwórz **-programu Word** projektu o nazwie **MyRibbonAddIn**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **MyRibbonAddIn** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="creating-the-vsto-add-ins-tab"></a>Tworzenie kart dodatków narzędzi VSTO  
+## <a name="create-the-vsto-add-ins-tab"></a>Utwórz kartę dodatków narzędzi VSTO  
  Aby utworzyć **Add-Ins** , Dodaj **wstążki (XML)** elementu do projektu. W dalszej części tego przewodnika niektóre przyciski zostaną dodane do tej karty.  
   
-#### <a name="to-create-the-add-ins-tab"></a>Aby utworzyć karta dodatki  
+### <a name="to-create-the-add-ins-tab"></a>Aby utworzyć karta dodatki  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
@@ -73,23 +74,23 @@ ms.lasthandoff: 04/16/2018
   
 4.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisAddin.cs** lub **ThisAddin.vb**, a następnie kliknij przycisk **kod widoku**.  
   
-5.  Dodaj następujący kod do **thisaddin —** klasy. Ten kod zastępuje metodę CreateRibbonExtensibilityObject i zwraca klasy XML wstążki do aplikacji pakietu Office.  
+5.  Dodaj następujący kod do **thisaddin —** klasy. Ten kod zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca XML wstążki klasy do aplikacji pakietu Office.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
 6.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyRibbonAddIn** projektu, a następnie kliknij przycisk **kompilacji**. Upewnij się, że projekt tworzy się bez błędów.  
   
-## <a name="adding-buttons-to-the-add-ins-tab"></a>Dodawanie przycisków do karta dodatki  
+## <a name="add-buttons-to-the-add-ins-tab"></a>Dodawanie przycisków do karta dodatki  
  Celem tego dodatku VSTO jest umożliwić użytkownikom umożliwiają dodawanie tekstu standardowego lub konkretnej tabeli do aktywnego dokumentu. Zapewnia interfejs użytkownika, należy dodać dwa przyciski **Add-Ins** kartę przez zmodyfikowanie pliku XML wstążki. W dalszej części tego przewodnika zdefiniujesz metody wywołania zwrotnego dla przycisków. Aby uzyskać więcej informacji o pliku XML wstążki, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).  
   
-#### <a name="to-add-buttons-to-the-add-ins-tab"></a>Aby dodać przyciski do karta dodatki  
+### <a name="to-add-buttons-to-the-add-ins-tab"></a>Aby dodać przyciski na karcie Dodatki  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyRibbon.xml** , a następnie kliknij przycisk **Otwórz**.  
   
 2.  Zastąp zawartość **kartę** elementu za pomocą następujących XML. Plik XML zmiany etykiety domyślnej grupy formant do **zawartości**, i dodaje dwie nowe przyciski z etykietami **Wstaw tekst** i **Wstaw tabelę**.  
   
-    ```  
+    ```xml  
     <tab idMso="TabAddIns">  
         <group id="ContentGroup" label="Content">  
             <button id="textButton" label="Insert Text"  
@@ -102,10 +103,10 @@ ms.lasthandoff: 04/16/2018
     </tab>  
     ```  
   
-## <a name="automating-the-document-by-using-the-buttons"></a>Automatyzowanie dokumentu za pomocą przycisków  
+## <a name="automate-the-document-by-using-the-buttons"></a>Automatyzowanie dokumentu za pomocą przycisków  
  Należy dodać `onAction` metody wywołania zwrotnego dla **Wstaw tekst** i **Wstaw tabelę** przyciski do wykonania akcji, gdy użytkownik kliknie je. Aby uzyskać więcej informacji na temat metody wywołania zwrotnego dla formantów wstążki, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).  
   
-#### <a name="to-add-callback-methods-for-the-buttons"></a>Aby dodać wywołanie zwrotne metody przycisków  
+### <a name="to-add-callback-methods-for-the-buttons"></a>Aby dodać wywołanie zwrotne metody przycisków  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyRibbon.cs** lub **MyRibbon.vb**, a następnie kliknij przycisk **Otwórz**.  
   
@@ -127,9 +128,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="testing-the-vsto-add-in"></a>Testowanie dodatku narzędzi VSTO  
  Po uruchomieniu projektu, zostanie otwarty program Word i kartę o nazwie **Add-Ins** pojawia się na Wstążce. Kliknij przycisk **Wstaw tekst** i **Wstaw tabelę** przyciski na **Add-Ins** kartę do testowania kodu.  
   
-#### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
+### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Upewnij się, że **Add-Ins** karta jest widoczna na Wstążce.  
   
@@ -156,9 +157,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Dostosowywanie interfejsu użytkownika programu Microsoft Office Outlook przy użyciu regionów formularzy programu Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [XML wstążki](../vsto/ribbon-xml.md)   
- [Przewodnik: Tworzenie kart niestandardowych za pomocą Projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

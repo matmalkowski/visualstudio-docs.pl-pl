@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844641"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Porady: określanie poleceń pre- i post-instrumentalnych
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Porady: Określanie poleceń pre-i POST-instrumentalnych
 
 Możesz określić polecenia uruchamiane przed lub po są instrumentowane pliki binarne w sesji wydajności. Dowolne polecenie, które mogą być wystawiane z wiersza polecenia można określić jako wstępne dokumentu lub zdarzenia po instrumentacji. Na przykład można określić polecenia, które automatyzują ponownego podpisywania zestawu za pomocą klucza silnej nazwy w pliku wsadowym, która jest wykonywana po są instrumentowane pliki binarne.
 
@@ -32,7 +33,7 @@ Katalog roboczy, w którym są wykonywane polecenia zależy od systen działania
 
  **32-bitowych komputerów**
 
-Na komputerach z 32-bitowy domyślny katalog narzędzia profiler jest 10.0\Team: dysk rozruchowy\Program Files\Microsoft Visual Studio Tools narzędzia.
+Na komputerach z 32-bitowy, domyślny katalog narzędzia profiler jest *: dysk rozruchowy\Program 10.0\Team Files\Microsoft Visual Studio Tools narzędzia*.
 
 **komputery 64-bitowe**
 
@@ -40,11 +41,11 @@ Na komputerach 64-bitowych należy określić ścieżkę zgodnie z platformą do
 
 - Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:
 
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 10.0\Team narzędzia narzędzia*
 
 - Dla 64-bitowych aplikacji domyślny katalog narzędzia profiler jest:
 
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *: dysk rozruchowy\Program pliki (x86) \Microsoft Visual Studio 10.0\Team Tools\x64 narzędzia*
 
 ## <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenia przed dokumentu
 

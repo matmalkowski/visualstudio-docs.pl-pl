@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844306"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyj środowiska laboratoryjnego dla Twojego opracowywania oprogramowania
 
@@ -35,8 +36,8 @@ Oto przykłady typowych topologii środowiska laboratoryjnego:
 |![Środowisko laboratorium chmury](../media/topology_cloud.png)| Środowiska laboratoryjnego zawiera podobne możliwości i funkcji jako _topologii serwerów_, ale eliminuje konieczność fizycznej lub w środowisku lokalnym; maszyn wirtualnych, które można skrócić czas instalacji, uprościć Konserwacja i ograniczania kosztów. Skonfigurowanie wielu witryn internetowych i maszyn wirtualnych wraz z niestandardowych sieci jest szybkie i łatwe w środowisku chmury, takich jak Microsoft Azure.|
 |![Środowisko laboratoryjne klient serwer](../media/topology_clientserver.png)| To środowisko laboratorium ma *topologii klient serwer*, który często służy do testowania aplikacji, która zawiera składniki klienta i serwera. W topologii klient/serwer wszystkich komputerów klienckich i serwerów używane do testowania aplikacji znajdują się w środowisku laboratoryjnym. Korzystając z tej topologii, może zbierać dane testowe z każdym komputerze, który ma wpływ na testy.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![Ikona aparatu film wideo](../../install/media/video-icon.png)  |    [Obejrzyj film](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) na zarządzanie środowiskami laboratoryjnymi na potrzeby testowania. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Chmury za pomocą usługi Team Services lub kompilacji programu Team Foundation Server i wersji

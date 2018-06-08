@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844270"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 
@@ -113,13 +114,13 @@ public void AddIntegers_FromDataSourceTest()
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określanie DataSourceAttribute
  `DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Dokładne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych są używane. W tym przykładzie użyliśmy SqlServerCe bazy danych.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 Atrybut źródła danych ma trzy konstruktorów.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ Atrybut źródła danych ma trzy konstruktorów.
 
  Przy użyciu pliku app.config umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian do samego testu jednostkowego. Aby uzyskać informacje o sposobie tworzenia i używania pliku app.config, zobacz [wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ Atrybut źródła danych ma trzy konstruktorów.
 
  Parametry połączenia są zależne od typu Typ źródła danych, ale musi on zawierać element dostawcy, który określa niezmienną nazwę dostawcy danych.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,

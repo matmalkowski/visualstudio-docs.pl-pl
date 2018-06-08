@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b35964aeef4323f4daff01d77aef5d3d5bf7f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845093"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii - dane próbkowania
 Uruchom wierszy widok danych próbkowania wyświetla dane wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebrane w profilowania.  
@@ -60,5 +61,5 @@ Uruchom wierszy widok danych próbkowania wyświetla dane wydajności dla instru
 |**Wyłącznych próbek**|Łączna liczba próbek, które zostały zebrane podczas wykonywania funkcji wiersza.|  
 |**% Wyłącznych próbek**|Procent wszystkich próbek w przebiegu profilowania, które zostały zebrane podczas wykonywania funkcji wiersza.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok linii - próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)

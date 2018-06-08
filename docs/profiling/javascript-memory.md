@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1d064c1fdf5462a62b35b6d7902aaefc5cd409a8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845655"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacji platformy uniwersalnej systemu Windows
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby określić sposób użycia pamięci i Znajdź przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows dla systemu Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje dla uniwersalnych aplikacji systemu Windows.
@@ -41,7 +42,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
      Obiekty, które nie są tworzone bezpośrednio w kodzie aplikacji automatycznie są odfiltrowywane. Można także filtrować dane według nazwy obiektu.  
   
-##  <a name="Run"></a> Uruchom narzędzie JavaScript memory analyzer  
+## <a name="run-the-javascript-memory-analyzer"></a>Uruchom narzędzie JavaScript memory analyzer  
  Analizator pamięci można użyć podczas pracy aplikacji platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio.
   
 #### <a name="to-run-the-memory-analyzer"></a>Aby uruchomić analizator pamięci  
@@ -50,7 +51,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 2.  Jeśli korzystasz z aplikacji z programu Visual Studio w **Rozpocznij debugowanie** listy na **standardowe** narzędzi wybierz cel debugowania dla projektu: albo **komputera lokalnego** lub **Urządzenia**.  
   
-3.  Na pasku menu wybierz **debugowania** > **wydajności programu profilującego**.  
+3.  Na pasku menu wybierz **debugowania**>**wydajności programu profilującego**.  
   
      Domyślnie są analizowane bieżący projekt startowy. Jeśli chcesz zmienić element docelowy analizy, wybierz **zmienić docelowy**.  
   
@@ -74,11 +75,11 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
      Współdziałanie z aplikacją do testowania scenariuszy użycia pamięci odpowiednich i wyświetlić wykres pamięci zgodnie z opisem w poniższych sekcjach.  
   
-6.  Przełącz się do programu Visual Studio, naciskając klawisze Alt + Tab.  
+6.  Przełącz się do programu Visual Studio, naciskając klawisz **Alt**+**kartę**.  
   
 7.  Aby wyświetlić dane, które zbiera analizator pamięci, wybierz **wykonać migawki sterty**. Zobacz [wyświetlić podsumowanie migawki](#SnapshotSummary) dalszej części tego tematu.  
   
-##  <a name="Check"></a> Sprawdź użycie pamięci  
+## <a name="check-memory-usage"></a>Sprawdź użycie pamięci  
  Możesz spróbować identyfikowania przecieków pamięci za pomocą różnych widoków w analizator pamięci JavaScript. Jeśli już podejrzewasz, że w aplikacji występuje przeciek pamięci, zobacz [izolować przeciek pamięci](#Isolate) sugerowane przepływu pracy.  
   
  Aby ułatwić identyfikację przecieki pamięci w aplikacji, należy użyć następujące widoki:  
@@ -97,7 +98,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 -   [Wyświetlić diff migawki](#SnapshotDiff). Pokazuje różnicowej wartości między migawki. Widoki te Pokaż różnice w obiekcie rozmiar i obiektu liczby.  
   
-##  <a name="Isolate"></a> Izolowanie przeciek pamięci  
+## <a name="isolate-a-memory-leak"></a>Izolowanie przeciek pamięci  
  Kroki te zapewniają przepływu pracy, które mogą ułatwić wydajniej wykorzystywać analizator pamięci JavaScript. Te kroki mogą być przydatne, jeśli zachodzi podejrzenie, że aplikacja ma przeciek pamięci. Samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w pracy aplikacji, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1.  Otwórz aplikację w programie Visual Studio.  
@@ -111,7 +112,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
     > [!TIP]
     >  Powtarzając scenariusza testów kilka razy, może pomóc upewnić się, że inicjalizację można filtrować poza wyniki.  
   
-5.  Przełącz się do programu Visual Studio (naciśnij klawisze Alt + Tab).  
+5.  Przełącz się do programu Visual Studio (naciśnij klawisz **Alt**+**kartę**).  
   
 6.  Utwórz migawkę sterty linii bazowej, wybierając **wykonać migawki sterty**.  
   
@@ -163,7 +164,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 14. Jeśli ma zbyt wiele obiektów w widoku obiekty pozostałe, spróbuj rozwiązać okres, w której występuje przeciek pamięci, a następnie wznawiać trzy migawki. Aby rozwiązać przeciek pamięci, należy użyć [skojarzyć kodu źródłowego z danych użycia pamięci](#JSConsoleCommands), [skojarzyć kodu źródłowego z danych użycia pamięci](#JSConsoleCommands)oraz inne dane użycia pamięci dostępne w analizatorze pamięci.  
   
-##  <a name="LiveMemory"></a> Wyświetl podsumowanie użycia pamięci na żywo  
+## <a name="view-live-memory-usage-summary"></a>Wyświetl podsumowanie użycia pamięci na żywo  
  Widok podsumowania użycia pamięci na żywo zapewnia wykres użycia pamięci dla uruchomionej aplikacji i kolekcji wszystkich kafelków podsumowania migawki. W tym widoku może wykonywać podstawowe zadania, takie jak tworzenie migawek, analizowania informacji podsumowujących i przechodząc do innych widoków. Po zatrzymaniu zbierania danych, wykres pamięci zniknie i zostanie wyświetlony tylko [wyświetlić podsumowanie migawki](#SnapshotSummary) widoku.  
   
  Wykres pamięci przedstawia widok na żywo pamięci procesu aplikacji, w tym bajtów prywatnych, natywnej pamięci i sterty JavaScript. Wykres pamięci jest widokiem przewijanego pamięci procesu. Oto wygląda następująco:  
@@ -174,7 +175,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
  Niektóre pamięci wyświetlane na wykresie pamięci jest przydzielany przez środowisko uruchomieniowe JavaScript. Nie można sterować tego użycia pamięci w aplikacji. Użycie pamięci wyświetlane na wykresie zwiększa Twojego pierwszego migawki, a minimalny zwiększa, dla każdego dodatkowego migawki.  
   
-##  <a name="SnapshotSummary"></a> Wyświetlanie podsumowania migawki  
+## <a name="view-a-snapshot-summary"></a>Wyświetlanie podsumowania migawki  
  Aby migawki bieżący stan użycia pamięci aplikacji, wybierz pozycję **wykonać migawki sterty** z wykresu pamięci. Kafelek podsumowania migawki, która jest wyświetlana w obu Podsumowanie użycia pamięci na żywo (gdy aplikacja jest uruchomiona) i migawki — Podsumowanie (Jeśli aplikacja jest zatrzymany), udostępnia informacje dotyczące sterty JavaScript i łącza do bardziej szczegółowych informacji. Migawka zawiera dodatkowe informacje o porównywanie jego danych do tego poprzednią migawkę, jeśli tworzenia migawek co najmniej dwa.  
   
 > [!NOTE]
@@ -200,7 +201,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 -   Zrzut ekranu przedstawiający ekran w czasie wykonywania migawki.  
   
-##  <a name="SnapshotDetails"></a> Wyświetl szczegóły migawki  
+## <a name="view-snapshot-details"></a>Wyświetl szczegóły migawki  
  Szczegółowe informacje o wykorzystaniu pamięci dotyczące każdej migawki można wyświetlić w widoku Szczegóły migawki.  
   
  Widok podsumowania migawki wybierz łącze, aby wyświetlić szczegóły migawki. Na przykład łącze Rozmiar sterty otwiera migawki szczegóły z widokiem typów otwartych domyślnie.  
@@ -235,7 +236,7 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
 -   **Liczba**. Liczba wystąpień obiektu. Ta wartość jest wyświetlana tylko w widoku typów.  
   
-##  <a name="SnapshotDiff"></a> Wyświetlić diff migawki  
+## <a name="view-a-snapshot-diff"></a>Wyświetlić diff migawki  
  Narzędzie JavaScript memory analyzer porównuje migawki względem poprzednią migawkę w widokach różnicowego migawki.  
   
  W widoku podsumowania migawki można wyświetlić szczegóły migawki różnicowej, wybierając rozmiar stosu różnicowej lub łącza liczba różnicowej obiektu po dwóch lub więcej migawki.  
@@ -268,22 +269,22 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
 > [!TIP]
 >  Firma Microsoft zaleca, postępuj zgodnie z instrukcjami [izolować przeciek pamięci](#Isolate) , a następnie użyj obiekty pozostałe **zakres** filtr, aby zidentyfikować obiekty, które są przeciek pamięci.  
   
-##  <a name="FoldObjects"></a> Wyświetl obiekty wg dominatora  
- Typy i Dominatorów widoki można wybrać, czy chcesz wyświetlić obiekty, które zostało zwinięte do ich dominatorów (jest to widok domyślny na karcie Dominatorów). Po wybraniu tego widoku dominatorów tylko są wyświetlane w widoku najwyższego poziomu obiektów. (Obiekty, które są elementami podrzędnymi obiektów globalnych są ukryte w widoku najwyższego poziomu). W przypadku niektórych aplikacji to wyjaśnienia, obiekty, które powodują przeciek pamięci, zmniejszając szumu w danych.  
+## <a name="view-objects-by-dominator"></a>Wyświetl obiekty wg dominatora  
+ W widokach typów i Dominatorów, można wybrać, czy chcesz wyświetlić obiekty, które zostało zwinięte do ich dominatorów (jest to domyślny widok w **Dominatorów** kartę). Po wybraniu tego widoku dominatorów tylko są wyświetlane w widoku najwyższego poziomu obiektów. (Obiekty, które są elementami podrzędnymi obiektów globalnych są ukryte w widoku najwyższego poziomu). W przypadku niektórych aplikacji to wyjaśnienia, obiekty, które powodują przeciek pamięci, zmniejszając szumu w danych.  
   
  Aby włączyć widok obiekty wg dominatora, wybierz **Zwiń w obiektach wg dominatora** przycisku. ![Składanie obiektów w ich dominatorów](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Aby uzyskać więcej informacji dotyczących dominatorów, zobacz [wyświetlić szczegóły migawki](#SnapshotDetails).  
   
-##  <a name="Filter"></a> Filtrowanie danych za pomocą identyfikatora  
+## <a name="filter-data-by-identifier"></a>Filtrowanie danych za pomocą identyfikatora  
  W widoku Dominatorów i typy można odfiltrować dane przez wyszukiwanie określonego identyfikatorów. Aby wyszukać identyfikatora, po prostu wpisz jego nazwę w **filtru identyfikator** polu tekstowym w prawym górnym rogu. Po rozpoczęciu wpisywania, identyfikatory, które nie zawierają wpisane znaki są odfiltrowywane.  
   
  Każdy widok ma własny filtr, więc filtru nie jest zachowywane po przełączeniu do innego widoku.  
   
-##  <a name="ShowInRootsView"></a> Znajdź obiektu drzewa obiektów  
+## <a name="find-an-object-in-the-object-tree"></a>Znajdź obiektu drzewa obiektów  
  W widokach typy i Dominatorów można zobaczyć relację konkretnego obiektu do `Global` obiektu. Obiekty odblokowany dostęp do `Global` obiektu nie będą zbierane w pamięci. Możesz łatwo znaleźć znanego obiektu w widoku elementów głównych, bez wyszukiwania za pomocą `Global` drzewa obiektów. Aby to zrobić, otwórz menu skrótów dla obiekt w Dominatorów lub typu widoku, a następnie wybierz **Pokaż w widoku elementów głównych**.  
   
-##  <a name="References"></a> Umożliwia wyświetlanie odwołań do udostępnionego obiektu  
+## <a name="view-shared-object-references"></a>Umożliwia wyświetlanie odwołań do udostępnionego obiektu  
  W widokach typy i Dominatorów dolnym okienku zawiera listy odwołania do obiektów, która zawiera odwołania do udostępnionego. Po wybraniu obiektu w górnym okienku na liście odwołania do obiektu zostaną wyświetlone wszystkie obiekty, które wskazują ten obiekt.  
   
 > [!NOTE]
@@ -295,15 +296,15 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
  ![Obiekt odwołania z identyfikatorami wyświetlanych](../profiling/media/js_mem_shared_refs.png "JS_Mem_Shared_Refs")  
   
-##  <a name="BuiltInValues"></a> Pokaż obiekty wbudowane  
+## <a name="show-built-in-objects"></a>Pokaż obiekty wbudowane  
  Domyślnie w widokach Dominatorów i typy wyświetlane są tylko obiekty utworzone w aplikacji. Dzięki temu można odfiltrować niepotrzebne informacje i izolowania problemów związanych z aplikacji. Jednak czasami może być przydatne do wyświetlania wszystkich obiektów, które generuje środowiska wykonawczego języka JavaScript dla aplikacji.  
   
  Aby wyświetlić te obiekty, wybierz **Pokaż built-ins** na liście ustawień ![upuszczania ustawienia&#45;pozycji listy w analizatorze pamięci](../profiling/media/js_mem_settings.png "JS_Mem_Settings") w prawym górnym rogu okienka.  
   
-##  <a name="Save"></a> Zapisywanie plików sesji diagnostycznej  
- Podsumowań diagnostycznych migawki i ich widoków szczegółów skojarzone są zapisywane jako pliki .diagsession. **Eksplorator rozwiązań** Wyświetla poprzedniej sesji diagnostyki w folderze sesji diagnostyki. W **Eksploratora rozwiązań**, można otworzyć poprzedniej sesji lub usuń lub zmień nazwy plików.  
+## <a name="save-diagnostic-session-files"></a>Zapisywanie plików sesji diagnostycznej  
+ Podsumowań diagnostycznych migawki i ich widoków szczegółów skojarzone są zapisywane jako. *diagsession* plików. **Eksplorator rozwiązań** Wyświetla poprzedniej sesji diagnostyki w folderze sesji diagnostyki. W **Eksploratora rozwiązań**, można otworzyć poprzedniej sesji lub usuń lub zmień nazwy plików.  
   
-##  <a name="JSConsoleCommands"></a> Skojarz kodu źródłowego z danych użycia pamięci  
+## <a name="associate-source-code-with-memory-usage-data"></a>Skojarz kodu źródłowego z danych użycia pamięci  
  Aby wyizolować części kodu, który ma problem pamięci, należy użyć następujących metod:  
   
 -   Poszukaj nazwy klas i identyfikatory elementów modelu DOM szczegółowe informacje i widoki różnicowej.  
@@ -344,7 +345,7 @@ if (performance && performance.mark) {
   
  ![Przy użyciu znaku profilu](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> Wskazówek dotyczących identyfikowania problemy z pamięcią  
+## <a name="tips-to-identify-memory-issues"></a>Wskazówek dotyczących identyfikowania problemy z pamięcią  
   
 -   Zgodne z przepływem pracy opisanego w [izolować przeciek pamięci](#Isolate) i użyj **obiekty pozostałe z migawki nr\<numer >** filtru w widoku różnic, aby zidentyfikować prawdopodobnie kandydatów do przecieki pamięci.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845863"
 ---
-# <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Wskazówki: zmiana formatowania arkusza za pomocą formantów CheckBox
-  W tym przewodniku przedstawiono podstawowe do Zmienianie formatowania za pomocą pola wyboru w arkuszu programu Microsoft Office Excel. Użyjesz narzędzi programowania pakietu Office w Visual Studio do tworzenia i Dodaj kod do projektu. Aby zobaczyć wynik jako ukończonego próbki, zobacz przykład formanty programu Excel w [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox
+  W tym przewodniku przedstawiono podstawowe do Zmienianie formatowania za pomocą pola wyboru w arkuszu programu Microsoft Office Excel. Użyjesz narzędzi programowania pakietu Office w Visual Studio do tworzenia i Dodaj kod do projektu. Aby zobaczyć wynik jako ukończonego próbki, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -46,19 +47,19 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  W tym kroku utworzysz projektu skoroszyt programu Excel za pomocą programu Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje formatowania programu Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje formatowania programu Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje formatowania programu Excel** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-text-and-controls-to-the-worksheet"></a>Dodawanie tekstu i formantów do arkusza  
+## <a name="add-text-and-controls-to-the-worksheet"></a>Dodawanie tekstu i formantów do arkusza  
  W ramach tego przewodnika należy trzy <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> kontrolek i tekst w <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu.  
   
-#### <a name="to-add-three-check-boxes"></a>Aby dodać trzy pola wyboru  
+### <a name="to-add-three-check-boxes"></a>Aby dodać trzy pola wyboru  
   
 1.  Sprawdź, czy skoroszyt jest otwarty w projektancie programu Visual Studio i że `Sheet1` jest otwarty.  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/16/2018
     |**Nazwa**|**applyUnderlineFont**|  
     |**Tekst**|**Podkreślenie**|  
   
-7.  Zaznacz wszystkie trzy pola wyboru kontrolki, przytrzymując klawisz CTRL.  
+7.  Zaznacz wszystkie trzy pola wyboru formantów podczas gospodarstwa **Ctrl** klucza.  
   
 8.  W grupie rozmieszczanie kartę Format w programie Excel kliknij **Wyrównaj**, a następnie kliknij przycisk **Wyrównaj do lewej**.  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
  Następnie należy napisać kod do formatowania tekstu, gdy opcja jest zaznaczona.  
   
-## <a name="formatting-the-text-when-an-option-is-selected"></a>Formatowanie tekstu gdy opcja jest zaznaczona.  
+## <a name="format-the-text-when-an-option-is-selected"></a>Formatowanie tekstu, po wybraniu opcji  
  W tej sekcji zostanie napisać kod, aby, gdy użytkownik wybierze opcję formatowania, format tekstu w arkuszu zostanie zmieniona.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Aby zmienić formatowanie, gdy pole wyboru jest zaznaczone  
+### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Aby zmienić formatowanie, gdy pole wyboru jest zaznaczone  
   
 1.  Kliknij prawym przyciskiem myszy **Sheet1 —**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
   
@@ -145,12 +146,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować skoroszytu, aby upewnić się, że tekst jest prawidłowo sformatowana, zaznacz lub usuń zaznaczenie pola wyboru.  
   
-#### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
+### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Wybierz lub wyczyść pole wyboru.  
   
@@ -159,13 +160,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawowe informacje o użyciu pola wyboru i formatowanie tekstu w arkuszach programu Excel. Poniżej przedstawiono niektóre zadania, które mogą występować:  
   
--   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office za pomocą technologii ClickOnce za pomocą](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
-  
+-   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
 -   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wskazówki dotyczące przy użyciu programu Excel](../vsto/walkthroughs-using-excel.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
- [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
+ [Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

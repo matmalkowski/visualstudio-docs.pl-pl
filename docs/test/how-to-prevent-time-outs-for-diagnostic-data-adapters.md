@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844241"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Porady: zapobieganie limitom czasu dla adapterów danych diagnostycznych
 
@@ -63,7 +64,7 @@ Jeśli używasz adapterów danych diagnostycznych w ustawieniach testu, limit cz
 
 4.  Należy zmodyfikować sekcja Ustawienia wykonywania testu, aby zwiększyć wartości limitów czasu. Ta sekcja ma następujący format:
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -81,7 +82,7 @@ Jeśli używasz adapterów danych diagnostycznych w ustawieniach testu, limit cz
 
 7.  Aby zwiększyć limit czasu dla transferu danych zebranych usterki lub gdy test kończy się na komputerze, na którym jest uruchomione testy, należy dodać następujące limit czasu na **mtm.exe.config** w sekcji appSettings pliku:
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```

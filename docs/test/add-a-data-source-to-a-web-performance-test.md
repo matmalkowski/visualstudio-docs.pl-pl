@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1ec0171efa5f394551aff8caeb7d8a0622db9207
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750828"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844810"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -152,13 +152,13 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 3. Edytuj plik tekstowy i dodaj następujące informacje:
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. Wykonaj kroki w [wiązania danych SQL](#AddingDataBindingWebTest_BindSQLData), ale wybierz plik CSV jako źródła danych.
+4. Wykonaj kroki w [Dodaj źródło danych](#add-the-data-source), ale wybierz plik CSV jako źródła danych.
 
      ![Wprowadź nazwę i wybierz plik CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -172,7 +172,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 2. Edytuj plik schema.ini, aby dodać informacje opisujące struktury danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -241,7 +241,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
     </ColorData>
     ```
 
-4. Wykonaj kroki w [wiązania danych SQL](#AddingDataBindingWebTest_BindSQLData), ale wybierz plik XML jako źródła danych.
+4. Wykonaj kroki w [Dodaj źródło danych](#add-the-data-source), ale wybierz plik XML jako źródła danych.
 
      ![Wprowadź nazwę i wybierz plik XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 2. Zastąp wartości w treści protokołu SOAP wartości powiązane z danymi przy użyciu następującej składni:
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

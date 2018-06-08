@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 93befa75522f0445c5061a590d4f537bed9357b9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845590"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML w aplikacji uniwersalnych systemu Windows
 W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjach za pomocą Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępna dla uniwersalnych aplikacji systemu Windows.  
@@ -34,12 +35,12 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
   
 -   Visual aktualizacje, które są rzadziej niż oczekiwano. Dzieje się tak, jeśli wątek interfejsu użytkownika jest zbyt zajęty, aby zachować płynne szybkości. Na przykład jeśli trwa wątku interfejsu użytkownika mogą być opuszczane ramki. Niektóre wątku bez interfejsu użytkownika pracy, takich jak żądania sieci, dekodowanie obrazu, oraz farby można również ograniczyć częstotliwości aktualizacji visual. (Nie wszystkie rysowania odbywa się w wątku interfejsu użytkownika).  
   
-##  <a name="RunningProfiler"></a> Uruchom narzędzie czasu odpowiedzi interfejsu użytkownika HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Uruchom narzędzie czasu odpowiedzi interfejsu użytkownika HTML  
  Jeśli masz pracy aplikacji platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio, można użyć narzędzia czasu odpowiedzi interfejsu użytkownika HTML.  
   
 1.  Jeśli korzystasz z aplikacji z programu Visual Studio na **standardowe** paska narzędzi w **Rozpocznij debugowanie** wybierz cel wdrożenia, takich jak **komputera lokalnego** lub **Urządzenia**.  
   
-2.  Na **debugowania** menu, wybierz **profilera wydajności...** .  
+2.  Na **debugowania** menu, wybierz **wydajności programu profilującego**.  
   
      Jeśli chcesz zmienić element docelowy analizy dla profilera, wybierz**zmienić docelowy**.  
   
@@ -67,7 +68,7 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
   
 6.  Aby zatrzymać profilowanie profilera zebrane dane aplikacji i widok, wybierz **zatrzymać zbieranie**.  
   
-##  <a name="IsolateAnIssue"></a> Izolowanie problemu  
+## <a name="isolate-an-issue"></a>Izolowanie problemu  
  W poniższej sekcji przedstawiono sugestie ułatwiające wyizolować problemy z wydajnością. Opis krok po kroku instrukcje zidentyfikować i rozwiązać problemy z wydajnością przy użyciu przykładowych testowania aplikacji, zobacz [wskazówki: czas odpowiedzi poprawy interfejsu użytkownika (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Izolowanie problem czasu odpowiedzi interfejsu użytkownika  
@@ -75,11 +76,11 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
   
 1.  Otwórz aplikację w programie Visual Studio.  
   
-2.  Testowanie aplikacji problemów czasu odpowiedzi interfejsu użytkownika. (Naciśnij klawisze Ctrl + F5, aby uruchomić aplikację bez debugowania).  
+2.  Testowanie aplikacji problemów czasu odpowiedzi interfejsu użytkownika. (Naciśnij przycisk **Ctrl**+**F5** można uruchomić aplikacji bez debugowania.)  
   
      Jeśli napotkasz problem kontynuować testowanie próby zawęzić przedział czasu, w którym występuje problem, lub do identyfikowania wyzwalacze, które powodują zachowanie.  
   
-3.  Przełącz się do programu Visual Studio (naciśnij klawisze Alt + Tab) i zatrzymać aplikację (Shift + F5).  
+3.  Przełącz się do programu Visual Studio (naciśnij klawisz **Alt**+**kartę**) i zatrzymać aplikację (**Shift**+**F5**).  
   
 4.  Opcjonalnie dodaj znaczniki użytkownika przy użyciu kodu [oznaczyć kod analizy](#ProfileMark).  
   
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Widok szczegółów zdarzenia miara użytkownika na osi czasu](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analizowanie danych  
+## <a name="analyze-data"></a>Analizowanie danych  
  Poniższe sekcje zawierają informacje dotyczące interpretowania danych wyświetlanych w profilera.  
   
 ###  <a name="Ruler"></a> Widok osi czasu sesji diagnostycznej  
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Oś czasu zdarzeń pogrupowane według ramki](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Zapisywanie sesji diagnostycznej  
+## <a name="save-a-diagnostic-session"></a>Zapisywanie sesji diagnostycznej  
  W programie Visual Studio można zapisać sesji diagnostycznej podczas zamykania kartę, który został skojarzony z sesją. Zapisane sesje, można je otworzyć ponownie w późniejszym czasie.  
   
-##  <a name="ProfilerEvents"></a> Odwołanie do zdarzenia profilera  
+## <a name="profiler-event-reference"></a>Odwołanie do zdarzenia profilera  
  Profiler zdarzenia są skategoryzowane i oznaczanie kolorami w Profiler czasu odpowiedzi interfejsu użytkownika. Są to kategorie zdarzeń:  
   
 -   **Podczas ładowania.** Wskazuje czas spędzony na zasoby aplikacji podczas pobierania i analizowania HTML i CSS po pierwszym załadowaniu aplikacji. Może to obejmować żądania sieciowe.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, co wymagało wszystkich części strony objętych działaniem. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
 |Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony za pomocą `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie używane do analizowania kodu.|  
   
-##  <a name="Tips"></a> Dodatkowe informacje  
+## <a name="additional-information"></a>Dodatkowe informacje  
   
 -   Obejrzyj [ten film](http://channel9.msdn.com/Events/Build/2013/3-316) z konferencji 2013 kompilacji o Profiler czasu odpowiedzi interfejsu użytkownika.  
   
@@ -356,5 +357,5 @@ if (performance.mark && performance.measure) {
   
 -   Informacje na kod jednowątkowego wykonywania modelu i wydajność zawiera [wykonywanie kodu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Zobacz też  
- [Narzędzia profilowania](../profiling/profiling-tools.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-tools.md)

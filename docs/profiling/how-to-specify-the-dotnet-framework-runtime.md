@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c52cecb30bdaa4daab46c7359e255d52d71d1597
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844137"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Porady: Określanie środowiska wykonawczego .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Porady: Określanie środowiska uruchomieniowego .NET Framework
 
 Wraz z wydaniem [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], aplikacje mogą być składane modułów, które zostały utworzone przy użyciu różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] środowiska wykonawczego. Domyślnie program Visual Studio Profiling Tools profilu pierwszy środowiska uruchomieniowego, który jest ładowany przez aplikację. Można określić czasu wykonywania do profilowania podczas uruchamiania aplikacji z profilerem i dołączanie profilera do aplikacji już uruchomione.
 
@@ -37,9 +38,9 @@ Wraz z wydaniem [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Aby określić środowiska wykonawczego .NET Framework do profilu, kiedy dołączanie profilera do aplikacji
 
-1. W menu Analizuj wskaż profilera, a następnie kliknij Attach/Detach.
+1. Na **Analizuj** menu wskaż **profilera**, następnie kliknij przycisk **Attach/Detach**.
 
-2. Na dołączanie profilera do okna dialogowego procesu kliknij proces, który ma być profilu.
+2. Na **Dołącz Profiler do procesu** okna dialogowego kliknij proces, który ma być profilu.
 
      **Docelowa wersja środowiska CLR** pole listy s **automatyczne** i wersje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] środowisko uruchomieniowe, które są zainstalowane na komputerze.
 

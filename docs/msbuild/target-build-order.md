@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 30bd83819dcbfd4423c399c42aeb518a1d11e6e9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844186"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt docelowy jest zależna od dane wyjściowe inny element docelowy. Aby określić kolejność uruchamiania obiektów docelowych, można użyć tych atrybutów:  
@@ -115,7 +116,7 @@ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt
   
 4.  Przed wykonaniem docelowy jego `DependsOnTargets` uruchamiane są elementy docelowe.  
   
-5.  Przed wykonaniem docelowy żadnych docelowych który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.  
+5.  Przed obiektu docelowego jest wykonywane lub pominięta, wszelkie docelowego, który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.  
   
 6.  Przed wykonaniem docelowy jego `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild określi, że wszystkie pliki wyjściowe są nieaktualne względem odpowiedni plik wejściowy lub plików, a następnie MSBuild wykonuje element docelowy. W przeciwnym razie programu MSBuild pomija obiektu docelowego.  
   

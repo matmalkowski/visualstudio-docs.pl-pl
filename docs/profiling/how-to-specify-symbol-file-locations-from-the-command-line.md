@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c17430c4f56ae1821a149d4a7cc5f82f0028e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571433"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845213"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Porady: Określanie lokalizacji plików symboli z wiersza polecenia
 Aby wyświetlić informacje dotyczące symboli, takich jak funkcja nazwy i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do symbolu (. *PDB*) plików PROFILOWANEGO składników i plików systemu Windows. Pliki symboli są tworzone, gdy składnik jest kompilowany. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie wyszukuje następujących lokalizacji plików symboli:  
@@ -59,6 +59,6 @@ Aby wyświetlić informacje dotyczące symboli, takich jak funkcja nazwy i numer
   
  **Ustaw _NT_SYMBOL_PATH = srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
- Następujące polecenie w wierszu polecenia VSPerfReport dodaje C:\Projects\Symbols katalog do ścieżki wyszukiwania za pomocą **/SymbolPath** opcji.  
+ Dodaje następujące polecenie w wierszu polecenia VSPerfReport *C:\Projects\Symbols* katalog do ścieżki wyszukiwania przy użyciu **/SymbolPath** opcji.  
   
  **VSPerfReport***moja_aplikacja* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

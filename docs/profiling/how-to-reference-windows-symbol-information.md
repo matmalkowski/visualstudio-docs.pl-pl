@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572407"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844173"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Porady: odwołania do informacji o symbolach w systemie Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Porady: odwołanie do systemu Windows — informacje o symbolach
 Visual Studio Profiling Tools użyć symbolu (. *PDB*) pliki do rozpoznawania nazw symbolicznych, takich jak funkcja nazw plików binarnych programu. Można wykonaj następujące kroki, aby automatycznie pobrać i zainstalować aktualizację poprawny. *pdb* plików dla wersji systemu Windows na komputerze lokalnym.  
   
 > [!NOTE]

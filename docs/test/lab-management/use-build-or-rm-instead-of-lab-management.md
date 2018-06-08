@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845382"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Użyj kompilacji i zarządzania zleceniami zamiast Lab Management dla testowanie automatyczne
 
@@ -58,7 +59,7 @@ W poniższej tabeli przedstawiono typowych działań, wykonywanych w Centrum lab
 
 | Kroki | Z Centrum laboratoryjnym | Z kompilacji lub zarządzania zleceniami |
 |-------|----------------------|-----------------|
-| Zarządzanie biblioteki szablonów środowiska. | Utworzyć środowisko laboratoryjne. Zainstaluj oprogramowanie na maszynach wirtualnych. Narzędzie Sysprep i magazynu środowiska jako szablon w bibliotece. | Używana jest Konsola administracyjna programu SCVMM bezpośrednio do tworzenia i zarządzania nimi, szablony maszyn wirtualnych lub szablonów usług. Podczas korzystania z usługi Azure, wybierz jedną z [szablonów Szybki Start Azure](/resources/templates/). |
+| Zarządzanie biblioteki szablonów środowiska. | Utworzyć środowisko laboratoryjne. Zainstaluj oprogramowanie na maszynach wirtualnych. Narzędzie Sysprep i magazynu środowiska jako szablon w bibliotece. | Używana jest Konsola administracyjna programu SCVMM bezpośrednio do tworzenia i zarządzania nimi, szablony maszyn wirtualnych lub szablonów usług. Podczas korzystania z usługi Azure, wybierz jedną z [szablonów Szybki Start Azure](https://azure.microsoft.com/resources/templates/). |
 | Utworzyć środowisko laboratoryjne. | Wybierz szablon środowiska w bibliotece, a następnie wdrożyć go. Podaj parametry niezbędne do dostosowania konfiguracji maszyn wirtualnych. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM za pomocą szablonów można tworzyć maszyn wirtualnych i wystąpień usługi. Bezpośrednio za pomocą portalu Azure utworzenie zasobów. Lub Utwórz definicję wersji ze środowiskiem. Użyj platformy Azure, zadania lub zadania związane z [rozszerzenia integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) do utworzenia nowej maszyny wirtualnej. Tworzenie nowej wersji tej definicji jest odpowiednikiem tworzenia nowego środowiska w Centrum laboratoryjnego. |
 | Połączyć się z komputerami. | Otwórz środowisko laboratoryjne w przeglądarce środowiska. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM połączenia z maszynami wirtualnymi. Aby otworzyć sesji pulpitu zdalnego można również użyć adresu IP lub nazwy DNS maszyn wirtualnych. |
 | Utwórz punkt kontrolny środowiska, lub przywrócić środowiska do czystą punktu kontrolnego. | Otwórz środowisko laboratoryjne w przeglądarce środowiska. Wybierz opcję Utwórz punkt kontrolny lub przywracania do poprzedniego punktu kontrolnego. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM wykonywać te operacje na maszynach wirtualnych. Lub, aby wykonać te czynności w ramach większych automatyzacji, obejmują zadań punkt kontrolny z [rozszerzenia integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) jako część środowiska w definicji wersji. |

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b2e1087b97cb16a52a8abdf8f204fd0f3a0bfb
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845200"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio wydajności porady i wskazówki
 
@@ -23,25 +24,23 @@ Visual Studio wydajności zalecenia są przeznaczone dla sytuacje małej ilości
 > [!NOTE]
 > Daj nam znać, jeśli masz trudności z używaniem produktu z powodu problemów dotyczących pamięci, za pomocą [narzędzie opinii](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Optymalizowanie środowiska
+## <a name="use-a-64-bit-os"></a>Użyj 64-bitowego systemu operacyjnego
 
-- **Użyj 64-bitowego systemu operacyjnego**
+Po uaktualnieniu do wersji 64-bitowe systemu z 32-bitowej wersji systemu Windows, należy rozwinąć ilość dostępnej pamięci wirtualnej dla programu Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio do obsługi obciążeń znacznie większe, mimo że jest to proces 32-bitowy.
 
-    Po uaktualnieniu do wersji 64-bitowe systemu z 32-bitowej wersji systemu Windows, należy rozwinąć ilość dostępnej pamięci wirtualnej dla programu Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio do obsługi obciążeń znacznie większe, mimo że jest to proces 32-bitowy.
+Aby uzyskać więcej informacji, zobacz [limity pamięci](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) i [/largeaddressaware w systemie 64-bitowym systemie Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Aby uzyskać więcej informacji, zobacz [limity pamięci](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) i [/largeaddressaware w systemie 64-bitowym systemie Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Wyłącz automatyczne plików przywracania
 
-## <a name="configure-solution-and-projects"></a>Skonfiguruj rozwiązanie i projekty
+Visual Studio ponownie automatycznie otwiera dokumenty, które pozostawiono otwarte w poprzedniej sesji. To może przedłużyć czas potrzebny do załadowania rozwiązania przez maksymalnie 30% lub więcej, w zależności od typu projektu i dokumenty otwierany. Projektanci, takich jak formularze systemu Windows i języka XAML i niektóre pliki obsługi języka JavaScript i typescript można otwierać się powoli.
 
-Jeśli masz bardzo dużym rozwiązaniem z wielu projektów, może korzystać dzięki optymalizacji następujące:
+Visual Studio powiadamia w żółty pasek podczas przywracania automatyczne dokumentu powoduje rozwiązanie znacznie mniejszą załadować. Możesz wyłączyć automatyczne plików otworzyć ponownie wykonaj następujące czynności:
 
-- **Zwolnienia projektów**
+1. Wybierz **narzędzia** > **opcje** otworzyć **opcje** okno dialogowe.
 
-    Można ręcznie Zwolnij rzadko używane poszczególnych projektów z **Eksploratora rozwiązań** przy użyciu menu kontekstowym kliknij prawym przyciskiem myszy.
+1. Na **projekty i rozwiązania** > **ogólne** pozycję Anuluj wybór **ponownie otworzyć dokumenty na ładowania rozwiązania**.
 
-- **Refaktoryzuj rozwiązania**
-
-    Rozwiązania można podzielić na kilka mniejszych plików rozwiązania z często używanych projektów. Ta refaktoryzacji powinno być znacznie zmniejszyć użycie pamięci przepływu pracy. Mniejsze rozwiązań także załadować szybciej.
+Jeśli wyłączysz Przywracanie plików automatyczne szybko przejść do plików, który chcesz otworzyć jest przy użyciu [przejdź do](../ide/go-to.md). Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**, lub naciśnij klawisz **Ctrl**+**T** .
 
 ## <a name="configure-debugging-options"></a>Skonfiguruj opcje debugowania
 
@@ -73,28 +72,29 @@ Jeśli użytkownik zwykle zaczyna brakować pamięci podczas sesji debugowania, 
 
 ## <a name="disable-tools-and-extensions"></a>Wyłącz narzędzia i rozszerzenia
 
-Niektóre narzędzia lub rozszerzenia może ją wyłączyć, aby zwiększyć wydajność.
+Niektóre narzędzia lub rozszerzeń można wyłączyć w celu zwiększenia wydajności.
 
 > [!TIP]
 > Problemy z wydajnością można odizolować często wyłączając rozszerzenia co w czasie i ponowne sprawdzanie wydajności.
 
-### <a name="managed-language-services-roslyn"></a>Usługi językowe zarządzanych (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Zarządzane usługi języka (Roslyn)
 
 Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Roslyn"), zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Wyłącz Pełna analiza rozwiązania**
 
-    Visual Studio dokonuje analizy całego rozwiązania w celu zapewnienia bogate środowisko o błędach przed wywołaniem kompilacji. Ta funkcja jest przydatna do identyfikowania błędów tak szybko, jak to możliwe. Jednak dla bardzo dużych rozwiązań tej funkcji można zużywają zasoby pamięci znaczące. Jeśli wystąpią problemy podobne lub wykorzystania pamięci, możesz wyłączyć tego środowiska, aby zwolnić zasoby. Domyślnie ta opcja jest włączona dla programu Visual Basic i wyłączone dla C#.
+    Visual Studio dokonuje analizy całego rozwiązania w celu zapewnienia bogate środowisko o błędach przed wywołaniem kompilacji. Ta funkcja jest przydatna do identyfikowania błędów tak szybko, jak to możliwe. Jednak dla dużych rozwiązań tej funkcji można zużywają zasoby pamięci znaczące. Jeśli wystąpią problemy podobne lub wykorzystania pamięci, możesz wyłączyć tego środowiska, aby zwolnić zasoby. Domyślnie ta opcja jest włączona dla programu Visual Basic i wyłączone dla C#.
 
-    Aby wyłączyć **pełnej analizy rozwiązania**, wybierz **narzędzia** > **opcje** > **Edytor tekstu**  >  **< Visual Basic lub C# >**. Następnie wybierz pozycję **zaawansowane** i usuń zaznaczenie **Włącz pełną analizę rozwiązania**.
+    Aby wyłączyć **pełnej analizy rozwiązania**, wybierz **narzędzia** > **opcje** > **Edytor tekstu**, a następnie wybierz pozycję albo **Visual Basic** lub **C#**. Wybierz **zaawansowane** i usuń zaznaczenie **Włącz pełną analizę rozwiązania**.
 
 - **Wyłączanie funkcji CodeLens**
 
-    Wykonuje program Visual Studio **Znajdź wszystkie odwołania** zadań dla każdej metody, która jest wyświetlana. CodeLens dostarcza funkcje takie jak wyświetlanie wbudowanego liczba odwołań. Praca jest wykonywana w ramach osobnej operacji (na przykład *ServiceHub.RoslynCodeAnalysisService32*). W bardzo dużych rozwiązaniach lub w systemach zasobów ograniczone ta funkcja może mieć znaczący wpływ na wydajność, nawet jeśli jest uruchamiane przy niskim priorytecie. Jeśli występują wysokiej Procesora w tym procesie, lub problemów pamięci (na przykład podczas ładowania z dużym rozwiązaniem na maszynie 4 GB), można spróbować wyłączenie tej funkcji, aby zwolnić zasoby.
+    Wykonuje program Visual Studio **Znajdź wszystkie odwołania** zadań dla każdej metody, która jest wyświetlana. CodeLens dostarcza funkcje takie jak wyświetlanie wbudowanego liczba odwołań. Praca jest wykonywana w ramach osobnej operacji, takich jak *ServiceHub.RoslynCodeAnalysisService32*. W dużych rozwiązaniach lub w systemach ograniczonego zasobów ta funkcja może mieć znaczący wpływ na wydajność. Jeśli wystąpią problemy z pamięcią, na przykład podczas ładowania dużych rozwiązanie na komputer 4 GB lub wysokie użycie procesora CPU dla tego procesu, CodeLens, aby zwolnić zasoby można wyłączyć.
 
     Aby wyłączyć **CodeLens**, wybierz **narzędzia** > **opcje** > **Edytor tekstu**  >   **Wszystkie języki** > **CodeLens**i Wyłącz tę funkcję.
 
-    Ta funkcja jest dostępna w programie Visual Studio Professional i Visual Studio Enterprise.
+    > [!NOTE]
+    > CodeLens są dostępne w wersjach Professional i Enterprise programu Visual Studio.
 
 ### <a name="other-tools-and-extensions"></a>Inne narzędzia i rozszerzenia
 
@@ -127,4 +127,4 @@ Aby uzyskać szczegółowy opis moduł garbage collector środowiska CLR, zobacz
 ## <a name="see-also"></a>Zobacz także
 
 - [Optymalizacja wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio blogu — rozwiązania obciążenia szybsze z programu Visual Studio 2017 wersji 15,6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Załadowanie rozwiązania szybsze (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

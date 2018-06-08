@@ -9,11 +9,12 @@ description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji program
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2899c6ba8c87d6f814dc1f0d59e6bd9defc214a2
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845603"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 
@@ -45,7 +46,7 @@ Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu możn
 
 ### <a name="add-the-alternate-account"></a>Dodawanie alternatywnego konta
 
-1. Zaloguj się do programu Visual Studio przy użyciu konta Microsoft (https://{youraccount}.visualstudio.com).
+1. Zaloguj się do portalu subskrybent Visual Studio przy użyciu konta Microsoft (https://my.visualstudio.com).
 
 2. Przejdź do **subskrypcje**.
 
@@ -59,7 +60,7 @@ Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu możn
 
   ![Dodaj konto służbowe](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Logować się do programu Visual Studio (https://{youraccount}.visualstudio.com), należy użyć konta firmowego lub szkolnego.
+5. Logować się do programu Visual Studio Team Services (https://{youraccount}.visualstudio.com), należy użyć konta firmowego lub szkolnego.
 
   ![Użyj konta służbowego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 

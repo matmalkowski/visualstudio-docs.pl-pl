@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie pierwszego VSTO dodatek dla programu Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845551"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Wskazówki: Tworzenie pierwszego VSTO dodatek dla programu Outlook
   W tym przewodniku przedstawiono sposób tworzenia dodatku VSTO dla programu Microsoft Office Outlook. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, która jest otwarta elementu programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Outlook  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
   
-#### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Aby utworzyć nowy projekt programu Outlook w programie Visual Studio  
+### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Aby utworzyć nowy projekt programu Outlook w programie Visual Studio  
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstOutlookAddIn** projektu i otwiera **thisaddin —** pliku kodu w edytorze.  
   
-## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>Pisanie kodu, który dodaje tekst do każdego nową wiadomość E-mail  
+## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Pisanie kodu, który dodaje tekst do każdego nową wiadomość e-mail  
  Następnie dodaj kod do klasy ThisAddIn pliku kodu. Nowy kod używa modelu obiektów programu Outlook można dodać tekstu do każdego nową wiadomość e-mail. Domyślnie plik kodu klasy ThisAddIn zawiera następujące wygenerowanego kodu:  
   
--   Częściową definicją `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Outlook. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). W pozostałej części `ThisAddIn` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.  
+-   Częściową definicją `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu Outlook. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md). W pozostałej części `ThisAddIn` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.  
   
 -   `ThisAddIn_Startup` i `ThisAddIn_Shutdown` procedury obsługi zdarzeń. Te programy obsługi zdarzeń są wywoływane, gdy program Outlook ładuje i zwalnia z dodatku VSTO. Użyj tych programów obsługi zdarzeń zainicjować dodatku VSTO z po załadowaniu go, a także aby wyczyścić zasoby używane przez dodatek VSTO, gdy jest zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Aby dodać tekst do tematu i treści każdego nową wiadomość e-mail  
+### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Aby dodać tekst do tematu i treści każdego nową wiadomość e-mail  
   
 1.  W pliku kodu klasy ThisAddIn, należy zadeklarować pole o nazwie `inspectors` w `ThisAddIn` klasy. `inspectors` Pola obsługuje odwołania do kolekcji inspektora windows w bieżącym wystąpieniu programu Outlook. To odwołanie uniemożliwia zwolnić pamięć, który zawiera program obsługi zdarzeń dla modułu zbierającego elementy bezużyteczne <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
   
@@ -100,14 +101,14 @@ ms.lasthandoff: 04/16/2018
   
 -   `Inspector` Parametrów programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń. `Inspector` Parametr jest <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu, który reprezentuje okna Inspektora nową wiadomość e-mail. Aby uzyskać więcej informacji, zobacz [rozwiązania programu Outlook](../vsto/outlook-solutions.md).  
   
-## <a name="testing-the-project"></a>Testowanie projektu  
+## <a name="test-the-project"></a>Projekt testowy  
  Podczas skompilować i uruchomić projekt, sprawdź, czy tekst jest wyświetlany w wierszu tematu i treści nową wiadomość e-mail.  
   
-#### <a name="to-test-the-project"></a>Aby przetestować projekt  
+### <a name="to-test-the-project"></a>Aby przetestować projekt  
   
 1.  Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.  
   
-     Podczas kompilowania projektu kod jest kompilowany do zestawu, który znajduje się w folderze wyjściowym kompilacji dla projektu. Program Visual Studio tworzy również zbiór wpisów rejestru, które umożliwiają programu Outlook odnaleźć i załadować dodatku VSTO i konfiguruje ustawienia zabezpieczeń na komputerze dewelopera, aby włączyć dodatku VSTO do uruchomienia. Aby uzyskać więcej informacji, zobacz [Omówienie procesu tworzenia rozwiązań pakietu Office](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md).  
+     Podczas kompilowania projektu kod jest kompilowany do zestawu, który znajduje się w folderze wyjściowym kompilacji dla projektu. Program Visual Studio tworzy również zbiór wpisów rejestru, które umożliwiają programu Outlook odnaleźć i załadować dodatku VSTO i konfiguruje ustawienia zabezpieczeń na komputerze dewelopera, aby włączyć dodatku VSTO do uruchomienia. Aby uzyskać więcej informacji, zobacz [Omówienie procesu kompilacji rozwiązania pakietu Office](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md).  
   
 2.  W programie Outlook utwórz nową wiadomość e-mail.  
   
@@ -117,32 +118,32 @@ ms.lasthandoff: 04/16/2018
   
 4.  Zamknij program Outlook.  
   
-## <a name="cleaning-up-the-project"></a>Czyszczenie projektu  
+## <a name="clean-up-the-project"></a>Czyszczenie projektu  
  Po zakończeniu tworzenia projektu, Usuń dodatku VSTO zestaw, wpisy rejestru i ustawienia zabezpieczeń na komputerze projektowym. W przeciwnym razie dodatku VSTO uruchomi każdym otwarciu programu Outlook na komputerze dewelopera.  
   
-#### <a name="to-clean-up-your-project"></a>Aby wyczyścić projektu  
+### <a name="to-clean-up-your-project"></a>Aby wyczyścić projektu  
   
 1.  W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czystą rozwiązania**.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Teraz, gdy utworzono podstawowe Add VSTO dla programu Outlook, można dowiedzieć się więcej o umożliwiające tworzenie dodatków narzędzi VSTO z tych tematów:  
   
--   Ogólne zadania programowania, które można wykonywać za pomocą dodatków narzędzi VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Ogólne zadania programowania, które można wykonywać za pomocą dodatków narzędzi VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
 -   Za pomocą modelu obiektów programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwiązania programu Outlook](../vsto/outlook-solutions.md).  
   
 -   Dostosowywanie interfejsu użytkownika programu Outlook, na przykład przez dodanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwiązań Office kompilacji](../vsto/building-office-solutions.md).  
   
 -   Wdrażanie dodatków narzędzi VSTO dla programu Outlook. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)   
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
- [Kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
+ [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)  
+ [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
   
   

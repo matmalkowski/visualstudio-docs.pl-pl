@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844435"
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
 W **Widok wątków** w narzędzia Concurrency Visualizer można organizować kanały procesu, aby zbadać konkretnych wzorców. Można sortować kanały, przenieś je w górę i w dół i Ukryj lub je wyświetlić.  
@@ -59,7 +60,7 @@ W **Widok wątków** w narzędzia Concurrency Visualizer można organizować kan
 ## <a name="group-markers-by-thread"></a>Znaczniki grupy przez wątek  
  Jeśli śledzenie zawiera znacznika zdarzenia, można użyć tego polecenia, do grupy znacznika kanałów w wątku, który wygenerował zdarzenia znacznika.  Kanały dysku zostaną przeniesione na początku listy kanałów i kanały GPU zostaną przeniesione do dołu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)   
- [Tryb pomiarowy wł. / wył](../profiling/measure-mode-on-off.md)   
+ [Tryb pomiarowy wł. / wył.](../profiling/measure-mode-on-off.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

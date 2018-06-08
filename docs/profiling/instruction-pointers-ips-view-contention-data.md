@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4109282bea850e7bca6154a56d0023c5ebb1c746
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845080"
 ---
-# <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) - dane Kontencji
+# <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) - dane kontencji
 Adresy IP widok danych kontencji Wyświetla listę danych instrukcje zestawu, które zostały zablokowane w przebiegu profilowania.  
   
  W poniższej tabeli przedstawiono wartości w kolumnach widok wskaźników instrukcji.  
@@ -43,7 +44,7 @@ Adresy IP widok danych kontencji Wyświetla listę danych instrukcje zestawu, kt
 |**Początek wiersza źródłowego**|Numer wiersza pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
 |**Źródło końca wiersza**|Numer wiersza pliku źródłowego, w którym kończy się w tej instrukcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)   
  [Wskaźników instrukcji (IP) View - próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

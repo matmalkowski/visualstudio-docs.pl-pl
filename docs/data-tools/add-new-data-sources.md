@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a4196e21eaf5cdb01e549f45292880ede7d63e58
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745597"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845148"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła danych* odwołuje się do obiektów .NET połączenia z magazynem danych i udostępniania danych do aplikacji .NET. Projektanci programu Visual Studio może używać źródła danych do generowania kodu umożliwiającego, który wiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z danych wyjściowych **źródeł danych** okna. Tego rodzaju źródła danych może być:
@@ -42,7 +42,7 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 
  ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
- Po utworzeniu źródła danych, zostanie wyświetlony w **źródeł danych** okna narzędzia (Shift + Alt + D lub **widoku** > **inne okna**  >  **Źródła danych**). Możesz przeciągnąć źródła danych z **źródeł danych** okna na powierzchni projektowej formularza lub kontrolki. Powoduje to schematyczny kod służący do wygenerowania — kod, który zawiera dane, które pochodzą z magazynu danych do użytkownika. Na poniższej ilustracji przedstawiono zestawu danych, który został porzucony na formularzu systemu Windows. Jeśli wybrano F5 w aplikacji, dane z bazy danych pojawią się w formantach formularza.
+ Po utworzeniu źródła danych, zostanie wyświetlony w **źródeł danych** okna narzędzia (**Shift**+**Alt**+**D**lub **widoku** > **innych okien** > **źródła danych**). Możesz przeciągnąć źródła danych z **źródeł danych** okna na powierzchni projektowej formularza lub kontrolki. Powoduje to schematyczny kod służący do wygenerowania — kod, który zawiera dane, które pochodzą z magazynu danych do użytkownika. Na poniższej ilustracji przedstawiono zestawu danych, który został porzucony na formularzu systemu Windows. W przypadku wybrania **F5** w aplikacji, dane z bazy danych są wyświetlane formantów formularza.
 
  ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -52,7 +52,7 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
  Aby utworzyć zestawu danych jako źródła danych, uruchom **Kreator konfiguracji źródła danych** (**projektu** > **Dodaj nowe źródło danych**) i wybierz polecenie  **Baza danych** typ źródła danych. Postępuj zgodnie z monitami, aby określić połączenia nowej lub istniejącej bazy danych lub pliku bazy danych.
 
 ### <a name="entity-classes"></a>Klas jednostek
- Aby utworzyć model narzędzia Entity Framework jako źródło danych, najpierw uruchom **kreatora modelu danych jednostki** do tworzenia klas jednostek (**projektu** > **Dodaj nowy element**  >  **Modelu danych jednostki ADO.NET**).
+ Tworzenie modelu programu Entity Framework jako źródła danych przez pierwsze uruchomienie **kreatora modelu danych jednostki** do tworzenia klas jednostek (**projektu** > **Dodaj nowy element**  >  **Modelu danych jednostki ADO.NET**).
 
  ![Nowy element projektu modelu programu Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -60,12 +60,12 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 
  ![Kreator modelu danych jednostki](../data-tools/media/raddata-entity-data-model-wizard.png)
 
- Dodaj modelu jako źródła danych. Klasy, które zostały wygenerowane są wyświetlane w **Kreator konfiguracji źródła danych** po wybraniu **obiektów** kategorii.
+ Dodaj modelu jako źródła danych. Wygenerowane klasy są wyświetlane w **Kreator konfiguracji źródła danych** po wybraniu **obiektów** kategorii.
 
  ![Kreator konfiguracji źródła danych z klasami jednostki](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Źródło danych dla usługi
- Aby utworzyć źródło danych z usługi, uruchom **Kreator konfiguracji źródła danych** i wybierz polecenie **usługi** typ źródła danych. Jest to naprawdę właśnie skrót do **Dodaj odwołanie do usługi** okno dialogowe, które można również przejść, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając **dodać odwołania do usługi** .
+ Aby utworzyć źródło danych z usługi, uruchom **Kreator konfiguracji źródła danych** i wybierz polecenie **usługi** typ źródła danych. Jest to po prostu skrót do **Dodaj odwołanie do usługi** okno dialogowe, które można również przejść, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając **dodać odwołania do usługi**.
 
  Po utworzeniu źródła danych z usługą Visual Studio dodaje odwołania do usługi do projektu. Visual Studio tworzy także obiekty serwera proxy, które odnoszą się do obiektów, które zwraca usługi. Na przykład usługa, która zwraca dataset jest reprezentowany w projekcie dataset; Usługa, która zwraca wartość określonego typu jest wyświetlana w projekcie jako typ zwracany.
 
@@ -78,10 +78,10 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 -   Usługi sieci Web.
 
     > [!NOTE]
-    >  Elementy, które są widoczne w **źródeł danych** okna są zależne od danych, które zwraca usługi. Niektóre usługi mogą nie zawiera informacji wystarczających **Kreator konfiguracji źródła danych** do tworzenia obiektów powiązania. Na przykład, jeśli usługa zwraca nietypizowanego zestawu danych, elementy nie będą wyświetlane w **źródeł danych** okna po zakończeniu pracy kreatora. Jest tak dlatego nietypizowane zbiory danych i schemat nie zostanie określona, i w związku z tym kreatorze nie ma wystarczających informacji do utworzenia źródła danych.
+    >  Elementy, które są widoczne w **źródeł danych** okna są zależne od danych, które zwraca usługi. Niektóre usługi mogą nie zawiera informacji wystarczających **Kreator konfiguracji źródła danych** do tworzenia obiektów powiązania. Na przykład, jeśli usługa zwraca nietypizowanego zestawu danych, nie widać żadnych elementów w **źródeł danych** okna po zakończeniu pracy kreatora. Jest tak dlatego nietypizowane zbiory danych i schemat nie zostanie określona, i w związku z tym kreatorze nie ma wystarczających informacji do utworzenia źródła danych.
 
 ## <a name="data-source-for-an-object"></a>Źródło danych obiektu
- Można utworzyć źródło danych z dowolnych obiektów, który ujawnia co najmniej jednej właściwości publiczne, uruchamiając **Kreator konfiguracji źródła danych** , a następnie wybierając **obiektu** typ źródła danych. Wszystkie publiczne właściwości obiektu są wyświetlane w **źródeł danych** okna.   Jeśli używasz programu Entity Framework i mieć wygenerowany model, jest to, gdzie znaleźć klas jednostek, które będą źródła danych dla aplikacji.
+ Można utworzyć źródło danych z dowolnych obiektów, który ujawnia co najmniej jednej właściwości publiczne, uruchamiając **Kreator konfiguracji źródła danych** , a następnie wybierając **obiektu** typ źródła danych. Wszystkie publiczne właściwości obiektu są wyświetlane w **źródeł danych** okna. Jeśli używasz programu Entity Framework i mieć wygenerowany model, jest to, gdzie znaleźć klas jednostek, które są źródła danych dla aplikacji.
 
  Na **wybierz obiekty danych** strony, rozwiń węzły w widoku drzewa do lokalizowania obiektów, które chcesz powiązać. Widok drzewa zawiera węzły dla projektu i zestawów i inne projekty, do których odwołuje się projekt.
 
@@ -91,11 +91,11 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
 >  Może być konieczne skompilowanie projektu, który zawiera obiekty, zanim obiekty zostaną wyświetlone w widoku drzewa.
 
 > [!NOTE]
->  Do obsługi powiązania danych przeciągnij i upuść obiekty, które implementują <xref:System.ComponentModel.ITypedList> lub <xref:System.ComponentModel.IListSource> interfejs musi mieć konstruktora domyślnego. W przeciwnym razie Visual Studio nie może utworzyć wystąpienia obiektu źródła danych, a następnie zostanie wyświetlony błąd, gdy użytkownik przeciąga element powierzchnię projektu.
+>  Do obsługi powiązania danych przeciągnij i upuść obiekty, które implementują <xref:System.ComponentModel.ITypedList> lub <xref:System.ComponentModel.IListSource> interfejs musi mieć konstruktora domyślnego. W przeciwnym razie program Visual Studio nie może utworzyć wystąpienia obiektu źródła danych i wyświetla komunikaty o błędach, gdy użytkownik przeciąga element powierzchnię projektu.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Źródło danych dla listy programu SharePoint
  Możesz utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreator konfiguracji źródła danych** i wybierając **SharePoint** typ źródła danych. SharePoint udostępnia dane za pomocą [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], dlatego tworzenie źródła danych programu SharePoint jest taki sam, jak podczas tworzenia źródła danych z usługi. Wybieranie **SharePoint** elementu **Kreator konfiguracji źródła danych** otwiera **Dodaj odwołanie do usługi** okno dialogowe, w którym można połączyć się z usługą danych programu SharePoint poprzez wskazanie serwera programu SharePoint.  To wymaga zestawu SDK programu SharePoint.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

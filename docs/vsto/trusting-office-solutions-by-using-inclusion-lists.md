@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fb44e7927136ba02d04f4b57f38ae52cc76c9fd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767887"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844228"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Zaufania rozwiązań pakietu Office przy użyciu list dołączania
   Listy dołączania użytkownicy udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcy. Listy dołączania są specyficzne dla użytkownika i może służyć do dostosowania na poziomie dokumentu i dodatków narzędzi VSTO.  
@@ -33,7 +33,7 @@ ms.locfileid: "34767887"
  Gdy użytkownik uruchamia rozwiązania do pakietu Office, które nie zostały przyznane zaufania dla danego użytkownika, rozwiązania Microsoft Office wyświetla monit o jej decyzji zabezpieczeń z [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania wiersza. Jeśli użytkownik zdecyduje się na zaufania rozwiązania, uruchamia dostosowania, a użytkownik nie jest monitowany podczas następnego.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Lista dołączania i Instalator Windows  
- Instalowanie rozwiązań pakietu Office do katalogu Program Files za pomocą Instalatora systemu Windows wymaga uprawnień administratora. Dla rozwiązań pakietu Office w katalogu Program Files Visual Studio Tools for Office runtime już sprawdza listy dołączania, ponieważ już przyznano rozwiązań pakietu Office uprawnień FullTrust.  
+ Instalowanie rozwiązań pakietu Office do *Program Files* katalogu za pomocą Instalatora systemu Windows wymaga uprawnień administratora. Dla rozwiązań pakietu Office w *Program Files* katalogu, ponieważ już przyznano rozwiązań pakietu Office uprawnień FullTrust Visual Studio Tools for Office runtime nie sprawdza lista dołączania.  
   
 ## <a name="clickonce-trust-prompt"></a>Wiersz zaufania ClickOnce  
  Za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] wdrożenia dla rozwiązań pakietu Office, Administratorzy można skonfigurować poziom monitu zaufania, aby zezwolić na monitowanie, wyłącz monitowania lub wymagają zaufanego certyfikatu. Ta konfiguracja jest implementowana przy użyciu klucza rejestru, która kontroluje dostęp do listy dołączania.  

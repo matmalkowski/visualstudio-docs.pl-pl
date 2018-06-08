@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 439afb9142e3e5ae795b0457f6405ba47227105f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751049"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845308"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Naprawa niewykrywalnych parametrów dynamicznych w teście wydajności sieci Web
 
@@ -198,7 +198,7 @@ Aby zademonstrować wykrywalny i niewykrywalnych parametrów dynamicznych, utwor
 
      Jak pokazano na karcie odpowiedź, a w języku JavaScript, zaimplementowana wcześniej pokazano poniżej, parametr ciągu zapytania CustomQueryString jest przypisywana wartość "jScriptQueryString___" i jest również połączona z wartością zwróconą z var sessionId.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ Aby zademonstrować wykrywalny i niewykrywalnych parametrów dynamicznych, utwor
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Pytanie: należy skonfigurować Visual Studio, aby wykryć parametry dynamiczne?
 
- **Odpowiedź:** domyślnej konfiguracji programu Visual Studio jest wykrycie parametrów dynamicznych podczas rejestrowania testu wydajności sieci web. Jednak jeśli masz skonfigurowane opcje programu Visual Studio nie, aby wykryć dynamiczne parametry, lub aplikacji sieci web testowane pobiera modyfikowane za pomocą dodatkowych parametrów dynamicznych; nadal możesz [Uruchom parametru dynamicznego wykrywania w edytorze testów wydajności sieci Web](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **Odpowiedź:** domyślnej konfiguracji programu Visual Studio jest wykrycie parametrów dynamicznych podczas rejestrowania testu wydajności sieci web. Jednak jeśli masz skonfigurowane opcje programu Visual Studio nie, aby wykryć dynamiczne parametry, lub aplikacji sieci web testowane pobiera modyfikowane za pomocą dodatkowych parametrów dynamicznych; można nadal uruchamiać parametru dynamicznego wykrywania w edytorze testów wydajności sieci Web.

@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
+title: Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,13 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bd6056c332725b4c44a56480fa21a064c52095d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845041"
 ---
-# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
+# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
 
 W tym oknie można określić maksymalną liczbę projektów Visual C++ lub C#, które można tworzyć w tym samym czasie, niektóre domyślne kompilacji zachowania i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, zaznacz **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz **skompilować i uruchomić**.
 

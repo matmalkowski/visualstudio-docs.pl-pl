@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu PowerPoint | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu PowerPoint'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f55ebded09782f6a6ab15ec5646778cc2b688b1
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845824"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu PowerPoint
   W tym przewodniku przedstawiono sposób tworzenia dodatku VSTO dla programu Microsoft Office PowerPoint. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte prezentacji. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   PowerPoint  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstPowerPointAddIn** projektu i otwiera **thisaddin —** pliku kodu w edytorze.  
   
-## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Pisanie kodu, który dodaje tekst do każdego nowego slajdu  
+## <a name="write-code-that-adds-text-to-each-new-slide"></a>Pisanie kodu, który dodaje tekst do każdego nowego slajdu  
  Następnie dodaj kod do klasy ThisAddIn pliku kodu. Nowy kod używa modelu obiektów programu PowerPoint, aby dodać pole tekstowe do każdego nowego slajdu. Domyślnie plik kodu klasy ThisAddIn zawiera następujące wygenerowanego kodu:  
   
--   Częściową definicją `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu PowerPoint. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). W pozostałej części `ThisAddIn` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.  
+-   Częściową definicją `ThisAddIn` klasy. Ta klasa udostępnia punkt wejścia dla kodu i zapewnia dostęp do modelu obiektów programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md). W pozostałej części `ThisAddIn` klasa jest zdefiniowana w pliku ukryty kod, który nie należy modyfikować.  
   
 -   `ThisAddIn_Startup` i `ThisAddIn_Shutdown` procedury obsługi zdarzeń. Te programy obsługi zdarzeń są wywoływane, gdy program PowerPoint ładuje i zwalnia z dodatku VSTO. Użyj tych programów obsługi zdarzeń zainicjować dodatku VSTO z po załadowaniu go, a także aby wyczyścić zasoby używane przez dodatek VSTO, gdy jest zwolniony. Aby uzyskać więcej informacji, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-text-box-to-each-new-slide"></a>Aby dodać pole tekstowe do każdego nowego slajdu  
+### <a name="to-add-a-text-box-to-each-new-slide"></a>Aby dodać pole tekstowe do każdego nowego slajdu  
   
 1.  W pliku kodu klasy ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> zdarzenie <xref:Microsoft.Office.Interop.PowerPoint.Application> obiektu.  
   
@@ -94,14 +95,14 @@ ms.lasthandoff: 04/16/2018
   
 -   `Sld` Parametrów programu obsługi zdarzeń dla <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> zdarzeń. `Sld` Parametr jest <xref:Microsoft.Office.Interop.PowerPoint.Slide> obiektu, który reprezentuje nowego slajdu. Aby uzyskać więcej informacji, zobacz [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md).  
   
-## <a name="testing-the-project"></a>Testowanie projektu  
+## <a name="test-the-project"></a>Projekt testowy  
  Jeśli skompilujesz i uruchomisz projekt, sprawdź, czy pole tekstowe jest wyświetlany w nowych slajdów, które dodajesz do prezentacji.  
   
-#### <a name="to-test-the-project"></a>Aby przetestować projekt  
+### <a name="to-test-the-project"></a>Aby przetestować projekt  
   
 1.  Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt.  
   
-     Podczas kompilowania projektu kod jest kompilowany do zestawu, który jest umieszczana w folderze wyjściowym kompilacji dla projektu. Program Visual Studio tworzy również zbiór wpisów rejestru, które umożliwiają PowerPoint odnaleźć i załadować dodatku VSTO i konfiguruje ustawienia zabezpieczeń na komputerze dewelopera, aby włączyć dodatku VSTO do uruchomienia. Aby uzyskać więcej informacji, zobacz [kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
+     Podczas kompilowania projektu kod jest kompilowany do zestawu, który jest umieszczana w folderze wyjściowym kompilacji dla projektu. Program Visual Studio tworzy również zbiór wpisów rejestru, które umożliwiają PowerPoint odnaleźć i załadować dodatku VSTO i konfiguruje ustawienia zabezpieczeń na komputerze dewelopera, aby włączyć dodatku VSTO do uruchomienia. Aby uzyskać więcej informacji, zobacz [rozwiązań Office kompilacji](../vsto/building-office-solutions.md).  
   
 2.  W programie PowerPoint należy dodać nowy slajd do aktywnej prezentacji.  
   
@@ -111,32 +112,32 @@ ms.lasthandoff: 04/16/2018
   
 4.  Zamknij program PowerPoint.  
   
-## <a name="cleaning-up-the-project"></a>Czyszczenie projektu  
+## <a name="clean-up-the-project"></a>Czyszczenie projektu  
  Po zakończeniu tworzenia projektu, Usuń dodatku VSTO zestaw, wpisy rejestru i ustawienia zabezpieczeń na komputerze projektowym. W przeciwnym razie dodatku VSTO uruchomi każdym otwarciu programu PowerPoint na komputerze dewelopera.  
   
-#### <a name="to-clean-up-your-project"></a>Aby wyczyścić projektu  
+### <a name="to-clean-up-your-project"></a>Aby wyczyścić projektu  
   
 1.  W programie Visual Studio na **kompilacji** menu, kliknij przycisk **czystą rozwiązania**.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Teraz, po utworzeniu podstawowego dodatku VSTO dla programu PowerPoint, można dowiedzieć się więcej o umożliwiające tworzenie dodatków narzędzi VSTO z tych tematów:  
   
--   Ogólne zadania programowania, które można wykonywać w dodatkach VSTO dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Ogólne zadania programowania, które można wykonywać w dodatkach VSTO dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
 -   Za pomocą modelu obiektów programu PowerPoint. Aby uzyskać więcej informacji, zobacz [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md).  
   
 -   Dostosowywanie interfejsu użytkownika programu PowerPoint, na przykład przez dodanie kart niestandardowych do Wstążki lub tworzenia własnego niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
--   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md).  
+-   Kompilowanie i debugowanie dodatków narzędzi VSTO dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [rozwiązań Office kompilacji](../vsto/building-office-solutions.md).  
   
 -   Wdrażanie dodatków narzędzi VSTO dla programu PowerPoint. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)   
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
- [Kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
+ [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
- [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)  
+ [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
   
   

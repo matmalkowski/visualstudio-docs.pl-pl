@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844781"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Porady: ograniczanie instrumentacji do określonych funkcji
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Porady: ograniczanie Instrumentacji do określonych funkcji
 Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję przez ustawienie opcji **zaawansowane** strony **sesji wydajności** lub docelowego stron właściwości binarnej:  
   
 -   Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane w instrumentowanych danych binarnych na sesji.  
@@ -66,7 +67,7 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
     > [!NOTE]
     >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnego narzędzi profilowania (zazwyczaj \Team Tools\Performance katalogu narzędzia w obszarze [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
   
-## <a name="see-also"></a>Zobacz też  
- [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Kontrola zbierania danych](../profiling/controlling-data-collection.md)   
  [Porady: ograniczanie Instrumentacji do określonych bibliotek DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Porady: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)

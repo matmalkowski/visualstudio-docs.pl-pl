@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Zmiana dane z pamięci podręcznej ze skoroszytu na serwerze | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Zmiana danych z pamięci podręcznej skoroszytu na serwerze'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9303c165b0c04d36a873ee2ff2aae22365b24e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c46d0eeedfbfa1a9e25d3a89fdade3c923dac7a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845668"
 ---
-# <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>Wskazówki: zmiana danych z pamięci podręcznej ze skoroszytu na serwerze
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Wskazówki: Zmiana danych z pamięci podręcznej skoroszytu na serwerze
   W tym przewodniku pokazano, jak można zmodyfikować zestawu danych, który jest w pamięci podręcznej programu Microsoft Excel pakietu Office bez uruchamiania programu Excel za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -60,10 +61,10 @@ ms.lasthandoff: 04/16/2018
   
     -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [porady: dołączanie pliku bazy danych do programu SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-class-library-project-that-defines-a-dataset"></a>Tworzenie projektu biblioteki klas, który definiuje zestaw danych  
+## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Tworzenie projektu biblioteki klas, który definiuje zestaw danych  
  Aby użyć tego samego zestawu danych w projekcie skoroszytu programu Excel i aplikacji konsoli, należy zdefiniować element dataset w osobny zestaw, do którego odwołuje się obu tych projektów. W ramach tego przewodnika Definiowanie zestawu danych w projektach biblioteki klas.  
   
-#### <a name="to-create-the-class-library-project"></a>Aby utworzyć projektu biblioteki klas  
+### <a name="to-create-the-class-library-project"></a>Aby utworzyć projektu biblioteki klas  
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  W **nazwa** wpisz **AdventureWorksDataSet**.  
   
-6.  Kliknij przycisk **Przeglądaj**, przejdź do dokumentów %UserProfile%\My (dla systemu Windows XP i starszych) lub folderu %UserProfile%\Documents (dla systemu Windows Vista), a następnie kliknij przycisk **wybierz Folder**.  
+6.  Kliknij przycisk **Przeglądaj**, przejdź do Twojej *%UserProfile%\My dokumenty* (dla systemu Windows XP i starszych) lub *%UserProfile%\Documents* (dla systemu Windows Vista) folderu, a następnie kliknij przycisk **Wybierz Folder**.  
   
 7.  W **nowy projekt** okna dialogowego Sprawdź, czy **Utwórz katalog rozwiązania** nie zaznaczono pola wyboru.  
   
@@ -85,16 +86,16 @@ ms.lasthandoff: 04/16/2018
   
 9. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Class1.cs** lub **Class1.vb**, a następnie kliknij przycisk **usunąć**. Nie trzeba tego pliku w ramach tego przewodnika.  
   
-## <a name="defining-a-dataset-in-the-class-library-project"></a>Definiowanie zestawu danych w ramach projektu biblioteki klas  
+## <a name="define-a-dataset-in-the-class-library-project"></a>Definiowanie zestawu danych w projektu biblioteki klas  
  Zdefiniuj typizowanego zestaw danych, który zawiera dane z bazy danych AdventureWorksLT dla programu SQL Server 2005. W dalszej części tego przewodnika będzie odwoływać ten zestaw danych z projektu skoroszyt programu Excel i projekt aplikacji konsoli.  
   
  Zestaw danych jest *wpisane dataset* reprezentujący dane w tabeli Produkty bazy danych AdventureWorksLT. Aby uzyskać więcej informacji na temat typizowane zbiory danych, zobacz [narzędzia zestawu danych w programie Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Aby zdefiniować typizowanego obiektu dataset w projektu biblioteki klas  
+### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Aby zdefiniować typizowanego obiektu dataset w projektu biblioteki klas  
   
 1.  W **Eksploratora rozwiązań**, kliknij przycisk **AdventureWorksDataSet** projektu.  
   
-2.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku**, **inne okna**, **źródeł danych**.  
+2.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
   
 3.  Wybierz **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Kliknij przycisk **Zakończ**.  
   
-     Plik AdventureWorksLTDataSet.xsd jest dodawany do **AdventureWorksDataSet** projektu. Ten plik definiuje następujące elementy:  
+     *AdventureWorksLTDataSet.xsd* plik zostanie dodany do **AdventureWorksDataSet** projektu. Ten plik definiuje następujące elementy:  
   
     -   Typizowanego zestaw danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość tabeli produktu w bazie danych AdventureWorksLT.  
   
@@ -122,10 +123,10 @@ ms.lasthandoff: 04/16/2018
   
      Upewnij się, że projekt tworzy się bez błędów.  
   
-## <a name="creating-an-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
+## <a name="create-an-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
  Tworzenie projektu skoroszyt programu Excel dla interfejsu do danych. W dalszej części tego przewodnika, utworzysz <xref:Microsoft.Office.Tools.Excel.ListObject> wyświetlający danych i wystąpienia zestawu danych zostaną dodane do pamięci podręcznej danych w skoroszycie.  
   
-#### <a name="to-create-the-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel  
+### <a name="to-create-the-excel-workbook-project"></a>Aby utworzyć projekt skoroszytu programu Excel  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksDataSet** rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**.  
   
@@ -145,10 +146,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **AdventureWorksReport** skoroszytu w Projektancie i dodaje **AdventureWorksReport** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Dodawanie zestawu danych do źródła danych w projekcie skoroszytu programu Excel  
+## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Dodaj zestaw danych ze źródłami danych w projekcie skoroszytu programu Excel  
  Aby wyświetlić zestaw danych w skoroszycie programu Excel, najpierw należy dodać zestaw danych ze źródłami danych w projekcie skoroszytu programu Excel.  
   
-#### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Aby dodać zestaw danych do źródła danych w projekcie skoroszytu programu Excel  
+### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Aby dodać zestaw danych do źródła danych w projekcie skoroszytu programu Excel  
   
 1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **Sheet1.cs** lub **Sheet1.vb** w obszarze **AdventureWorksReport** projektu.  
   
@@ -168,10 +169,10 @@ ms.lasthandoff: 04/16/2018
   
      **Źródeł danych** zostanie otwarte okno i **AdventureWorksLTDataSet** zostanie dodany do listy źródeł danych.  
   
-## <a name="creating-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Tworzenie ListObject, który jest powiązany z wystąpieniem zestawu danych  
- Aby wyświetlić zestaw danych w skoroszycie, Utwórz <xref:Microsoft.Office.Tools.Excel.ListObject> który jest powiązany z wystąpieniem elementu dataset. Aby uzyskać więcej informacji na temat powiązanie kontrolek z danymi, zobacz [powiązania danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Utwórz ListObject, który jest powiązany z wystąpieniem zestawu danych  
+ Aby wyświetlić zestaw danych w skoroszycie, Utwórz <xref:Microsoft.Office.Tools.Excel.ListObject> który jest powiązany z wystąpieniem elementu dataset. Aby uzyskać więcej informacji na temat powiązanie kontrolek z danymi, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-#### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Aby utworzyć ListObject, który jest powiązany z wystąpieniem zestawu danych  
+### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Aby utworzyć ListObject, który jest powiązany z wystąpieniem zestawu danych  
   
 1.  W **źródeł danych** okna, rozwiń węzeł **AdventureWorksLTDataSet** węźle **AdventureWorksDataSet**.  
   
@@ -183,10 +184,10 @@ ms.lasthandoff: 04/16/2018
   
      A <xref:Microsoft.Office.Tools.Excel.ListObject> formantu o nazwie `productListObject` jest tworzony w arkuszu, począwszy od komórki A1. Jednocześnie, obiekt zestawu danych o nazwie `adventureWorksLTDataSet` i <xref:System.Windows.Forms.BindingSource> o nazwie `productBindingSource` zostaną dodane do projektu. <xref:Microsoft.Office.Tools.Excel.ListObject> Jest powiązany z <xref:System.Windows.Forms.BindingSource>, która z kolei jest powiązana z obiektem zestawu danych.  
   
-## <a name="adding-the-dataset-to-the-data-cache"></a>Dodawanie zestawu danych do pamięci podręcznej danych  
- Aby włączyć kod spoza projektu skoroszyt programu Excel do zestawu danych w skoroszycie, należy dodać zestaw danych do pamięci podręcznej danych. Aby uzyskać więcej informacji o pamięci podręcznej danych, zobacz [buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md) i [buforowanie danych](../vsto/caching-data.md).  
+## <a name="add-the-dataset-to-the-data-cache"></a>Dodaj zestaw danych do pamięci podręcznej danych  
+ Aby włączyć kod spoza projektu skoroszyt programu Excel do zestawu danych w skoroszycie, należy dodać zestaw danych do pamięci podręcznej danych. Aby uzyskać więcej informacji o pamięci podręcznej danych, zobacz [buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md) i [dane z pamięci podręcznej](../vsto/caching-data.md).  
   
-#### <a name="to-add-the-dataset-to-the-data-cache"></a>Aby dodać zestaw danych do pamięci podręcznej danych  
+### <a name="to-add-the-dataset-to-the-data-cache"></a>Aby dodać zestaw danych do pamięci podręcznej danych  
   
 1.  W projektancie, kliknij **adventureWorksLTDataSet**.  
   
@@ -194,10 +195,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Ustaw **CacheInDocument** właściwości **True**.  
   
-## <a name="initializing-the-dataset-in-the-workbook"></a>Inicjowanie zestawu danych w skoroszycie  
+## <a name="initialize-the-dataset-in-the-workbook"></a>Inicjowanie zestawu danych w skoroszycie  
  Zanim będzie można pobrać danych z pamięci podręcznej zestawu danych za pomocą aplikacji konsoli, należy najpierw wypełnienia pamięci podręcznej zestawu danych z danymi.  
   
-#### <a name="to-initialize-the-dataset-in-the-workbook"></a>Aby zainicjować zestawu danych w skoroszycie  
+### <a name="to-initialize-the-dataset-in-the-workbook"></a>Aby zainicjować zestawu danych w skoroszycie  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.cs** lub **Sheet1.vb** plik i kliknij przycisk **kod widoku**.  
   
@@ -209,7 +210,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="checkpoint"></a>Punkt kontrolny  
  Tworzenie i uruchamianie projektu skoroszytu programu Excel, aby upewnić się, że kompiluje i uruchamia bez błędów. Ta operacja również wypełnienia pamięci podręcznej zestawu danych i zapisuje dane w skoroszycie.  
   
-#### <a name="to-build-and-run-the-project"></a>Aby skompilować i uruchomić projekt  
+### <a name="to-build-and-run-the-project"></a>Aby skompilować i uruchomić projekt  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksReport** projektu, wybierz **debugowania**, a następnie kliknij przycisk **Start nowe wystąpienie**.  
   
@@ -223,10 +224,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zamknij program Excel.  
   
-## <a name="creating-a-console-application-project"></a>Tworzenie nowego projektu aplikacji konsoli  
+## <a name="create-a-console-application-project"></a>Utwórz projekt aplikacji konsoli  
  Utwórz projekt aplikacji konsoli, można użyć w celu modyfikacji danych w pamięci podręcznej zestawu danych w skoroszycie.  
   
-#### <a name="to-create-the-console-application-project"></a>Aby utworzyć projekt aplikacji konsoli  
+### <a name="to-create-the-console-application-project"></a>Aby utworzyć projekt aplikacji konsoli  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksDataSet** rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**.  
   
@@ -240,14 +241,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **DataWriter** projektu do **Eksploratora rozwiązań** i otwiera **Program.cs** lub **Module1.vb** pliku kodu.  
   
-## <a name="changing-data-in-the-cached-dataset-by-using-the-console-application"></a>Zmiana danych w pamięci podręcznej zestawu danych za pomocą aplikacji konsoli  
+## <a name="change-data-in-the-cached-dataset-by-using-the-console-application"></a>Zmiany danych w pamięci podręcznej zestawu danych za pomocą aplikacji konsoli  
  Użyj <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w aplikacji konsoli, aby odczytać dane na komputerze lokalnym `AdventureWorksLTDataSet` obiektów, zmodyfikować te dane, a następnie zapisz go do pamięci podręcznej zestawu danych.  
   
-#### <a name="to-change-data-in-the-cached-dataset"></a>Aby zmienić dane w pamięci podręcznej zestawu danych  
+### <a name="to-change-data-in-the-cached-dataset"></a>Aby zmienić dane w pamięci podręcznej zestawu danych  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataWriter** projekt i kliknij przycisk **Dodaj odwołanie**.  
   
-2.  Na **.NET** , a następnie wybierz Microsoft.VisualStudio.Tools.Applications.  
+2.  Na **.NET** wybierz opcję **Microsoft.VisualStudio.Tools.Applications**.  
   
 3.  Kliknij przycisk **OK**.  
   
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Na **projekty** wybierz opcję **AdventureWorksDataSet**i kliknij przycisk **OK**.  
   
-6.  Otwórz plik Program.cs lub Module1.vb w edytorze kodu.  
+6.  Otwórz *Program.cs* lub *Module1.vb* plik w edytorze kodu.  
   
 7.  Dodaj następujące **przy użyciu** (dla C#) lub **importów** (w języku Visual Basic) instrukcji na początku pliku kodu.  
   
@@ -271,7 +272,7 @@ ms.lasthandoff: 04/16/2018
     -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> obiektu na potrzeby pamięci podręcznej danych w skoroszycie.  
   
         > [!NOTE]  
-        >  Poniższy kod przyjęto założenie, że używasz skoroszytu, który ma rozszerzenie pliku xlsx. Jeśli skoroszytu w projekcie ma rozszerzenie innego pliku, zmodyfikuj ścieżkę zgodnie z potrzebami.  
+        >  Poniższy kod przyjęto założenie, że używasz skoroszytu, który ma *xlsx* rozszerzenia pliku. Jeśli skoroszytu w projekcie ma rozszerzenie innego pliku, zmodyfikuj ścieżkę zgodnie z potrzebami.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]  
@@ -291,26 +292,26 @@ ms.lasthandoff: 04/16/2018
   
 10. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataWriter** projektu, wskaż pozycję **debugowania**, a następnie kliknij przycisk **Start nowe wystąpienie**.  
   
-     Aplikacja konsolowa wyświetla komunikaty go odczytuje zestaw danych w pamięci podręcznej do lokalnego zestawu danych, gdy modyfikuje cen produktu w zestawie danych lokalnych i zapisuje te nowe wartości do pamięci podręcznej zestawu danych. Naciśnij klawisz ENTER, aby zamknąć aplikację.  
+     Aplikacja konsolowa wyświetla komunikaty go odczytuje zestaw danych w pamięci podręcznej do lokalnego zestawu danych, gdy modyfikuje cen produktu w zestawie danych lokalnych i zapisuje te nowe wartości do pamięci podręcznej zestawu danych. Naciśnij klawisz **Enter** aby zamknąć aplikację.  
   
-## <a name="testing-the-workbook"></a>Testowanie skoroszytu  
+## <a name="test-the-workbook"></a>Testowanie skoroszytu  
  Podczas otwierania skoroszytu, <xref:Microsoft.Office.Tools.Excel.ListObject> są obecnie wyświetlane zmiany wprowadzone w `ListPrice` kolumny danych w pamięci podręcznej zestawu danych.  
   
-#### <a name="to-test-the-workbook"></a>Aby przetestować skoroszytu  
+### <a name="to-test-the-workbook"></a>Aby przetestować skoroszytu  
   
 1.  Zamknij skoroszyt AdventureWorksReport w projektancie programu Visual Studio, jeśli jest nadal otwarty.  
   
 2.  Otwórz skoroszyt AdventureWorksReport, który znajduje się w folderze kompilacji **AdventureWorksReport** projektu. Domyślnie folder kompilacji znajduje się w jednym z następujących lokalizacji:  
   
-    -   %UserProfile%\My Documents\AdventureWorksReport\bin\Debug (dla systemu Windows XP i starszych)  
+    -   *%UserProfile%\My Documents\AdventureWorksReport\bin\Debug* (dla systemu Windows XP i starszych)  
   
-    -   %USERPROFILE%\Documents\AdventureWorksReport\bin\Debug (dla systemu Windows Vista)  
+    -   *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (dla systemu Windows Vista)  
   
 3.  Sprawdź, czy wartość w **ListPrice** kolumnie dla pierwszego wiersza <xref:Microsoft.Office.Tools.Excel.ListObject> jest teraz 1574.65.  
   
 4.  Zamknij skoroszyt.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wskazówki: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
  [Łączenie z danymi w aplikacjach formularzy systemu Windows](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
   

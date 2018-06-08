@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336035"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844768"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Porady: modyfikowanie plików web.config w celu Instrumentacja i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET
 Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilowane metody Instrumentacji w narzędziach profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i .NET danych o okresie istnienia obiektu z dynamicznie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
   
- W tym temacie opisano sposób modyfikowania plik konfiguracji web.config w celu umożliwienia Instrumentacja i profilowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
+ W tym temacie opisano sposób modyfikowania *web.config* pliku konfiguracyjnego w celu umożliwienia Instrumentacja i profilowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
   
 > [!NOTE]
->  Nie musisz zmodyfikować plik web.config, gdy używasz metoda profilowania próbkowania lub Instrumentacja wstępnie skompilowanym [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modułu.  
+>  Nie należy modyfikować *web.config* plików, gdy używasz metoda profilowania próbkowania lub Instrumentacja wstępnie skompilowanym [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modułu.  
   
- Główny plik web.config jest **konfiguracji** elementu. Instrumentacja i profilowania dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji, musisz dodać lub zmodyfikować następujące elementy:  
+ Katalog główny *web.config* plik jest **konfiguracji** elementu. Instrumentacja i profilowania dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci web aplikacji, musisz dodać lub zmodyfikować następujące elementy:  
   
 -   A **konfiguracji/runtime/assemblybinding — / dependentAssembly** element, który identyfikuje zestaw Microsoft.VisualStudio.Enterprise.ASPNetHelper kontrolujące profilowania. **DependentAssembly** element zawiera dwa elementy podrzędne: **assemblyIdentity** i **codeBase**.  
   
@@ -33,7 +33,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
   
 -   Dwa **dodać** elementy, które identyfikują lokalizację narzędzi profilowania są dodawane do **konfiguracji/appSettings** sekcji.  
   
- Firma Microsoft zaleca, aby utworzyć kopię oryginalnego pliku web.config, który można przywrócić konfigurację aplikacji.  
+ Zaleca się utworzenie kopii oryginalnej *web.config* pliku, który można przywrócić konfigurację aplikacji.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Aby dodać zestaw ASPNetHelper jako elementu konfiguracji/runtime/assemblybinding — / dependentAssembly  
   
@@ -176,7 +176,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniżej znajduje się plik web.config pełną umożliwiający Instrumentację oraz profilowanie dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. W tym przykładzie przyjęto założenie, że nie było żadnych innych ustawień w pliku przed modyfikacją.  
+ Poniżej przedstawiono pełnego *web.config* skompilowany plik umożliwiający Instrumentację oraz profilowanie dynamicznie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. W tym przykładzie przyjęto założenie, że nie było żadnych innych ustawień w pliku przed modyfikacją.  
   
 ```xml  
 <?xml version="1.0"?>  

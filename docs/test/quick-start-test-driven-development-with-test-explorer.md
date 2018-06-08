@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751426"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845759"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
@@ -66,11 +66,11 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
 
 > [!NOTE]
-> Jeśli pojawi się żaden test, upewnij się, który zainstalowany adapter w celu nawiązania Eksploratora testów struktury testowej, którego używasz. Aby uzyskać więcej informacji, zobacz [przy użyciu różnych platform testów z Eksploratora testów](#frameworks).
+> Jeśli pojawi się żaden test, upewnij się, który zainstalowany adapter w celu nawiązania Eksploratora testów struktury testowej, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 
 ##  <a name="walkthrough"></a> Wskazówki: Korzystanie z metody tworzenia testów jednostkowych
- W tym przewodniku pokazano, jak opracowanie metodę przetestowany w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Można łatwo dostosować go dla innych języków i korzystania z innych platform testu, takie jak NUnit łącze. Aby uzyskać więcej informacji, zobacz [przy użyciu różnych platform testów](#frameworks).
+ W tym przewodniku pokazano, jak opracowanie metodę przetestowany w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Można łatwo dostosować go dla innych języków i korzystania z innych platform testu, takie jak NUnit łącze. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 #### <a name="creating-the-test-and-method"></a>Tworzenie testu i — metoda
 
@@ -190,7 +190,7 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
 3.  Sprawdź, czy metoda w ramach testu, aby zobaczyć, co może być nieprawidłowy. W `MyMath.Rooter` klasy, ponownego pisania kodu:
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;
