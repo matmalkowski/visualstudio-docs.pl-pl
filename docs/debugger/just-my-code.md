@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851828"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Określ, czy w celu debugowania tylko kodu użytkownika przy użyciu tylko mój kod w programie Visual Studio
 Można skonfigurować programu Visual Studio automatycznie Przekrocz nad systemu, framework i inne wywołania niezwiązanych z użytkownikiem i zwinąć tych wywołań w oknie stosu wywołań. Funkcja, która włącza lub wyłącza to zachowanie jest nazywany *tylko mój kod*. W tym temacie opisano sposób użycia tylko mój kod w językach C#, Visual Basic, C++ i JavaScript projektów.
@@ -82,7 +83,7 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
   
  Domyślnie tylko funkcje określone w `*.natstepfilter` plików `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu są uznawane za kod niezwiązany z użytkownikiem.  
   
- Utwórz swój własny `.natstepfilter` i `.natjmc` dostosować wzmocnienie i wywołać zachowanie okna stosu `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+ Utwórz swój własny `.natstepfilter` i `.natjmc` dostosować wzmocnienie i wywołać zachowanie okna stosu `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Wykonywanie krok po kroku zachowanie  
  Gdy możesz **Step Into** (skrót klawiaturowy: F11) kod niezwiązany z użytkownikiem z kodu użytkownika, kroki debugera za pośrednictwem kodu do następnego wiersza kodu użytkownika. Gdy użytkownik **Wyjdź** (klawiatury: Shift + F11), uruchamiania debugera do następnego wiersza kodu użytkownika. Jeśli napotkano żadnego kodu użytkownika, a następnie wykonanie jest kontynuowane do aplikacji wyjścia punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
@@ -97,7 +98,7 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
   
 -   Aby określić kodu innych użytkowników dla wszystkich użytkowników maszyny programu Visual Studio, Dodaj plik .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
   
--   Aby określić kodu innych użytkowników dla poszczególnych użytkowników, Dodaj plik .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
+-   Aby określić kodu innych użytkowników dla poszczególnych użytkowników, Dodaj plik .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` folderu.  
   
  pliki .natstepfilter są plikami xml o następującej składni:  
   
@@ -129,7 +130,7 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
   
 -   Aby określić kodu innych użytkowników dla wszystkich użytkowników maszyny programu Visual Studio, Dodaj plik .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
   
--   Aby określić kodu innych użytkowników dla poszczególnych użytkowników, Dodaj plik .natjmc `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
+-   Aby określić kodu innych użytkowników dla poszczególnych użytkowników, Dodaj plik .natjmc `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` folderu.  
   
  pliki .natjmc są plikami xml o następującej składni:  
   
@@ -282,7 +283,7 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
 |||  
 |-|-|  
 |**Eval**|Skrypt, który jest wykonywany przez przekazanie ciąg do dostarczony host `eval` funkcji. Domyślnie Eval skryptu jest sklasyfikowany jako **MyCode**.|  
-|**Funkcja**|Skrypt, który jest wykonywany przez przekazanie ciąg `Function` konstruktora. Domyślnie funkcja skryptu jest sklasyfikowany jako **LibraryCode**.|  
+|**Function**|Skrypt, który jest wykonywany przez przekazanie ciąg `Function` konstruktora. Domyślnie funkcja skryptu jest sklasyfikowany jako **LibraryCode**.|  
 |**Blok skryptu**|Skrypt, który jest wykonywany przez przekazanie ciąg `setTimeout`, `setImmediate`, lub `setInterval` funkcji. Domyślnie ScriptBlock skryptu jest sklasyfikowany jako **UnrelatedCode**.|  
   
  Wartość można zmienić na jedną z następujących słów kluczowych:  

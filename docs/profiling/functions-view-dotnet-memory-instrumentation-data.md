@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237685"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Widok funkcji - dane Instrumentacji pamięci .NET
 Widok funkcji .NET pamięci alokacji profilowania danych, które zostały zebrane przy użyciu metody Instrumentacji zawiera listę funkcji, które przydzielonej pamięci podczas przebiegu profilowania. Wiersz funkcji raportów, rozmiaru i liczby przydziałów i danych o chronometrażu dla funkcji.  
@@ -97,7 +98,7 @@ Widok funkcji .NET pamięci alokacji profilowania danych, które zostały zebran
 |**Maksymalny własny czas aplikacji**|Maksymalny własny czas aplikacji wywołania tej funkcji.|  
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Widok funkcji](../profiling/functions-view-instrumentation-data.md)   

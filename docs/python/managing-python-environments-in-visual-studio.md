@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie środowiska Python i tłumaczy
 description: Użyj okno środowiska Python, aby zarządzać globalnych, wirtualne i środowisk conda, zainstalować tłumaczy Python i pakietów i przypisywanie środowisk do projektów programu Visual Studio.
-ms.date: 05/22/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 571cbdac0a311ab1cd65b957b0081c26c7f96bd9
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477577"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851867"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiska Python w programie Visual Studio
 
@@ -87,7 +87,7 @@ W obu przypadkach **środowiska Python** okno jako element równorzędny karty d
 
 ![Okno środowiska Python](media/environments-default-view.png)
 
-Jeśli nie widzisz oczekiwanego środowiska na liście, zobacz [ręcznie Zidentyfikuj istniejącego środowiska](#manually-identify-an-existing-environment).
+Visual Studio następuje [514 program ten](https://www.python.org/dev/peps/pep-0514/) do identyfikowania zainstalowanego środowiska za pomocą rejestru. Jeśli nie widzisz oczekiwanego środowiska na liście, zobacz [ręcznie Zidentyfikuj istniejącego środowiska](#manually-identify-an-existing-environment).
 
 Wybranie środowisku na liście powoduje wyświetlenie różnych właściwości i polecenia dla tego środowiska na **omówienie** kartę. Na przykład można zobaczyć w powyższy obraz czy lokalizacja interpreter jest `C:\Python36-32`. Przełącz się do różnych kartach zawierających takie jak za pomocą listy rozwijanej poniżej listy środowisk **pakiety**, i **IntelliSense**. Karty te są opisane w [odniesienie do karty okno środowiska Python](python-environments-window-tab-reference.md).
 
@@ -118,7 +118,27 @@ Jeśli znasz interpreter języka Python jest zainstalowana na komputerze, ale Vi
 >
 > Jednak jeśli ręcznie przenieść interpreter i jego środowiska przy użyciu systemu plików programu Visual Studio będą wiedzieć, nowej lokalizacji. Aby uzyskać więcej informacji, zobacz [przenoszenie interpreter](installing-python-interpreters.md#moving-an-interpreter).
 
-< name = "ręcznie identyfikowanie — moduł istniejących środowiska ></a>
+## <a name="fix-invalid-environments"></a>Napraw nieprawidłowy środowisk
+
+Jeśli program Visual Studio umożliwia znalezienie wpisy rejestru dla środowiska, ale ścieżka do interpretera jest nieprawidłowa, okno środowiska Python zawiera nazwę czcionką przekreślenia:
+
+![Okno środowiska Python, przedstawiający nieprawidłowe środowisko](media/environments-invalid-entry.png)
+
+Aby poprawić środowisko chcesz zachować, najpierw spróbuj użyć opcji naprawy jego Instalatora. Pliki instalacyjne dla standardowego języka Python 3.x, zawierają na przykład **naprawy** opcji.
+
+Aby poprawić środowisko, które nie mają opcji naprawy lub usunąć nieprawidłowe środowisko, wykonaj następujące kroki, aby zmodyfikować rejestr bezpośrednio. Visual Studio automatycznie aktualizuje okno środowiska Python, po wprowadzeniu zmian w rejestrze.
+
+1. Run `regedit.exe`.
+1. Przejdź do `HKEY_LOCAL_MACHINE\SOFTWARE\Python` dla tłumaczy 32-bitowej lub `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` dla tłumaczy 64-bitowych.
+1. Rozwiń węzeł, który odpowiada dystrybucji, takich jak `PythonCore` dla języka CPython lub `ContinuumAnalytics` dla Anaconda.
+1. Sprawdź wartości w polach `InstallPath` węzła:
+
+    ![Wpisy rejestru dotyczące typowej instalacji języka CPython](media/environments-registry-entries.png)
+
+    - Jeśli środowisko nadal istnieje na komputerze, zmień wartość `ExecutablePath` do poprawnej lokalizacji. Również poprawić `(Default)` i `WindowedExecutablePath` wartości i aktualizacji w razie potrzeby.
+    - Jeśli środowisko już nie istnieje na komputerze i usunąć go z okna środowiska Python, Usuń węzeł nadrzędny `InstallPath`, takich jak `3.6` na ilustracji powyżej.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>Ręcznie Zidentyfikuj istniejącego środowiska
 

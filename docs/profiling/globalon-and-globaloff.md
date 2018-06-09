@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238007"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn i GlobalOff
-VSPerfCmd.exe **GlobalOff** i **GlobalOn** opcje wstrzymywanie i wznawianie profilowania dla wszystkich procesów i wątków w sesji profilowania z wiersza polecenia.  
+*VSPerfCmd.exe* **GlobalOff** i **GlobalOn** opcje wstrzymywanie i wznawianie profilowania dla wszystkich procesów i wątków w sesji profilowania z wiersza polecenia.  
   
- Można określić **GlobalOn** i **GlobalOff** jak tylko opcje wiersza polecenia VSPerfCmd.exe, lub można je uwzględnić w wiersze poleceń, które zawierają również **Start**, **Uruchamianie**, lub **Attach** opcje.  
+ Można określić **GlobalOn** i **GlobalOff** jako tylko opcje *VSPerfCmd.exe* wiersza polecenia, lub można je uwzględnić w wiersze poleceń, które zawierają również  **Uruchom**, **uruchamianie**, lub **Attach** opcje.  
   
  **GlobalOn** i **GlobalOff** można również łączyć z **ProcessOn**, **ProcessOff**, **ThreadOn**i  **ThreadOff** opcje.  
   
@@ -31,7 +32,7 @@ VSPerfCmd.exe **GlobalOff** i **GlobalOn** opcje wstrzymywanie i wznawianie prof
   
 -   **GlobalOn** natychmiast Ustawia globalną liczbę uruchomień/zatrzymań 1 i w związku z tym wznawia profilowania.  
   
- Aby uzyskać więcej informacji, zobacz [API narzędzi profilowania](../profiling/profiling-tools-apis.md).  
+ Aby uzyskać więcej informacji, zobacz [narzędzia interfejsów API profilowania](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -82,8 +83,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

@@ -21,21 +21,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ecae69e83e86e851705bd990d5e5887400a7104
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50e40b1a1b336f4547ed7eb446837cb0f300397d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237617"
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji SharePoint
- 
+
 Jeśli aplikacji SharePoint działają wolno lub Niewydajne, może używać profilowania funkcji w programie Visual Studio, aby zidentyfikować problematyczne kodu i inne elementy. Za pomocą funkcji testowania obciążenia, można określić sposób wykonywania aplikacji SharePoint mocno obciążony, np. gdy wielu użytkowników dostępu do aplikacji jednocześnie. Uruchamianie testów wydajności sieci web, można zmierzyć, sposób wykonywania aplikacji w sieci web. Za pomocą kodowanych testów interfejsu użytkownika, można sprawdzić, czy całej aplikacji programu SharePoint, w tym interfejs użytkownika działa prawidłowo. Jeśli korzystasz ze sobą te testy, można pomagają zidentyfikować problemy z wydajnością, przed wdrożeniem aplikacji.
 
 ## <a name="profiling-tools-overview"></a>Omówienie narzędzia profilowania
 
 Profilowanie odwołuje się do procesu obserwowania i rejestrowanie zachowania wydajności aplikacji, podczas jego wykonywania. Przy ponownym sprofilowaniem aplikacji, można ujawnić problemów, takich jak wąskich gardeł, niewydajny kod i problemów z alokacją pamięci, które aplikacje działają wolno lub użyj zbyt dużej ilości pamięci. Można na przykład użyć profilowania Aby zidentyfikować punkty aktywne w kodzie, które są segmenty kodu, które są często nazywane i może to spowolnić ogólną wydajność aplikacji. Po zidentyfikowaniu hotspotami często można zoptymalizować lub usuń je.
 
-Kilku narzędzi profilowania w zintegrowane środowisko programistyczne (IDE) służy do identyfikowania i lokalizowania tego rodzaju problemy z wydajnością. Te narzędzia działają tak samo dla projektów programu SharePoint, tak jak w przypadku innych typów projektów programu Visual Studio. Kreator wydajności narzędzi profilowania poprowadzi Cię przez tworzenie sesji wydajności, która używa testy, które określisz. Sesja wydajności jest zestawem danych konfiguracji, który służy do zbierania informacji o wydajności z aplikacji, oraz wyniki co najmniej jeden przebieg profilowania. Sesje wydajności są przechowywane w folderze projektu i możesz przeglądać w **Eksplorator wydajności**. Aby uzyskać więcej informacji, zobacz [metoda zbierania danych wydajności opis](/visualstudio/profiling/understanding-performance-collection-methods).
+Kilku narzędzi profilowania w zintegrowane środowisko programistyczne (IDE) służy do identyfikowania i lokalizowania tego rodzaju problemy z wydajnością. Te narzędzia działają tak samo dla projektów programu SharePoint, tak jak w przypadku innych typów projektów programu Visual Studio. Kreator wydajności narzędzi profilowania poprowadzi Cię przez tworzenie sesji wydajności, która używa testy, które określisz. Sesja wydajności jest zestawem danych konfiguracji, który służy do zbierania informacji o wydajności z aplikacji, oraz wyniki co najmniej jeden przebieg profilowania. Sesje wydajności są przechowywane w folderze projektu i możesz przeglądać w **Eksplorator wydajności**. Aby uzyskać więcej informacji, zobacz [metoda zbierania danych wydajności opis](../profiling/understanding-performance-collection-methods.md).
 
 Po utworzeniu i uruchomieniu analizę profilu dla aplikacji, raport zawiera szczegółowe informacje o jego wydajności. Ten raport może zawierać elementy, takie jak wykres użycia procesora CPU w czasie, stos wywołań funkcji hierarchiczna lub drzewo wywołań. Pełna zawartość raportu może się różnić w zależności od typu testu, który można uruchamiać, na przykład próbkowania i instrumentacji. Aby uzyskać więcej informacji, zobacz [Przegląd raportów narzędzi profilowania](http://go.microsoft.com/fwlink/?LinkId=224689).
 
@@ -58,7 +59,7 @@ Testy wydajności sieci Web symulować, użytkownik końcowy może interakcji z 
 
 ## <a name="testing-user-interfaces"></a>Testowanie interfejsów użytkownika
 
-Kodowane testy interfejsu użytkownika automatycznie stacji aplikacji programu SharePoint za pomocą jego interfejsu użytkownika (UI). Te testy obejmują kontrolek interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Tego rodzaju testowania jest szczególnie przydatne, jeśli sprawdzanie poprawności lub innych logiki jest wykonywana w Interfejsie użytkownika, takie jak na stronie sieci web. Kodowane testy interfejsu użytkownika umożliwia również automatyzację testy ręczne. Tworzenia kodowanych testów interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób jak tworzenie testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests).
+Kodowane testy interfejsu użytkownika automatycznie stacji aplikacji programu SharePoint za pomocą jego interfejsu użytkownika (UI). Te testy obejmują kontrolek interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Tego rodzaju testowania jest szczególnie przydatne, jeśli sprawdzanie poprawności lub innych logiki jest wykonywana w Interfejsie użytkownika, takie jak na stronie sieci web. Kodowane testy interfejsu użytkownika umożliwia również automatyzację testy ręczne. Tworzenia kodowanych testów interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób jak tworzenie testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
@@ -66,10 +67,10 @@ Kodowane testy interfejsu użytkownika automatycznie stacji aplikacji programu S
 |-----------|-----------------|
 |[Przewodnik: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profil próbkowania w aplikacji programu SharePoint.|
 |[Testowanie wydajności aplikacji z przed wprowadzeniem](https://www.visualstudio.com/docs/test/performance-testing/run-performance-tests-app-before-release)|Opisuje sposób tworzenia testów obciążenia, które ułatwiają testowania obciążenia aplikacji SharePoint.|
-|[Testowanie jednostek kodu](/visualstudio/test/unit-test-your-code)|Opisuje sposób wyszukiwania logiki błędów w kodzie za pomocą testów jednostkowych.|
-|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Opisuje sposoby testowania interfejsu użytkownika aplikacji programu SharePoint.|
+|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Opisuje sposób wyszukiwania logiki błędów w kodzie za pomocą testów jednostkowych.|
+|[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|Opisuje sposoby testowania interfejsu użytkownika aplikacji programu SharePoint.|
 
 ## <a name="see-also"></a>Zobacz także
 
-[Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-[Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)
+- [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Podnoszenie jakości kodu](../test/improve-code-quality.md)

@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1008f09e7511a26613b6cb5984513c1d049f61ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237630"
 ---
 # <a name="marks-view"></a>Widok znaczników
 W widoku znaczniki wyświetlane próbkowania i zdarzenia ETW, które zostały wstawione do aplikacji.  
   
  Znaczniki domyślne, które są wstępnie w raporcie etykietę uruchomienia programu i na końcu program.  
   
- Dane liczników systemu Windows z automatycznie wygenerowanym znaczniki również są prezentowane w tym widoku. Aby uzyskać więcej informacji, zobacz [porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Dane liczników systemu Windows z automatycznie wygenerowanym znaczniki również są prezentowane w tym widoku. Aby uzyskać więcej informacji, zobacz [porady: Windows zbieranie danych licznika](../profiling/how-to-collect-windows-counter-data.md).  
   
  Aby utworzyć filtr pomiędzy dwoma znakami, wybierz znaczniki, kliknij prawym przyciskiem myszy, a następnie kliknij **Dodaj filtr znakami** lub **Dodaj filtr przez sygnatury czasowej**.  
   
@@ -44,7 +45,7 @@ W widoku znaczniki wyświetlane próbkowania i zdarzenia ETW, które zostały ws
  Dane licznika wydajności systemu Windows  
  Podczas zbierania danych licznika wydajności systemu Windows wyświetlania wartości w kolumnie, która ma nazwę licznika.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Przegląd raportu wydajności](../profiling/performance-report-overview.md)   
  [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; okno kontroli zbierania danych](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; okna kontroli zbierania danych](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

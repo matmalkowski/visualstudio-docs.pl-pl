@@ -1,7 +1,7 @@
 ---
 title: Wybieranie i instalowanie tłumaczy Python
 description: Pełna lista tłumaczy Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje o tym, gdzie można znaleźć instalatorów ich.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851854"
 ---
 # <a name="installing-python-interpreters"></a>Instalowanie tłumaczy Python
 
@@ -25,7 +26,7 @@ Można też ręcznie zainstalują dowolną z tłumaczy wymienione w poniższej t
 
 Dla **programu Visual Studio 2015 lub starszym**, należy ręcznie zainstalować jedną tłumaczy.
 
-Visual Studio (wszystkie wersje) automatycznie wykrywa każdego zainstalowana interpreter języka Python i jego środowiska, sprawdzając rejestru (następujące [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (wszystkie wersje) automatycznie wykrywa każdego zainstalowana interpreter języka Python i jego środowiska, sprawdzając rejestru zgodnie z [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/). Instalacje Python zwykle znajdują się w obszarze `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32-bitowe) i `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64-bitowy), następnie węzłów dystrybucji, takie jak "PythonCore" (języka CPython) i "ContinuumAnalytics" (Anaconda).
 
 Jeśli program Visual Studio nie wykrywa zainstalowane środowisko, zobacz [ręcznie Zidentyfikuj istniejącego środowiska](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

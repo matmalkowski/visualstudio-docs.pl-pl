@@ -26,20 +26,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22487077a355d51725258f37c03e5fd2bb58ab9b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3228bcea89bbc03c218f31de86357cf1c193f569
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237591"
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Rozwiązywanie problemów związanych z pakowaniem i wdrażaniem SharePoint
-  W tym temacie opisano różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
+
+W tym temacie opisano różne problemy, które mogą wystąpić podczas pakowania i wdrażania rozwiązań programu SharePoint.
 
 ## <a name="enabling-enhanced-debugging"></a>Włączanie ulepszonego debugowania
  Aby zdiagnozować między Visual Studio, SharePoint i innych warstw, klucz rejestru EnableDiagnostics służy do wyświetlania ślad stosu. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Dodawanie wyjścia projektu do pakietu rozwiązań
- Do pakietu przy użyciu projektanta pakietów można dodać danych wyjściowych projektu. Jednak podczas dodawania danych wyjściowych projektu, upewnij się, że platforma projektu jest zgodna z platformy rozwiązania programu SharePoint. Firma Microsoft zaleca użycie **Any CPU** platformy docelowej dla zestawów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [strona kompilowania, Projektant projektu &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) i [okno dialogowe Zaawansowane ustawienia kompilatora &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Do pakietu przy użyciu projektanta pakietów można dodać danych wyjściowych projektu. Jednak podczas dodawania danych wyjściowych projektu, upewnij się, że platforma projektu jest zgodna z platformy rozwiązania programu SharePoint. Firma Microsoft zaleca użycie **Any CPU** platformy docelowej dla zestawów, które mają zostać wdrożone na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [strona kompilowania, Projektant projektu &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) i [okno dialogowe Zaawansowane ustawienia kompilatora &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Walidacja ostrzeżeń i błędów
  Narzędzi programowanie SharePoint w Visual Studio wykonaj kroki weryfikacji, aby sprawdzić, czy pakiet rozwiązania jest poprawnie sformułowany. Można również utworzyć niestandardowego sprawdzania poprawności kroki dla funkcji i pakietów. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie funkcji niestandardowej oraz zasady walidacji pakietu dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -56,7 +58,8 @@ ms.lasthandoff: 05/22/2018
 |Brak|Nie wykrywa kolizji.|
 
 ## <a name="differences-between-f5-deployment"></a>Różnice między wdrożeniem F5
- Jeśli używasz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do wdrażania projektu programu SharePoint do lokalnego serwera programu SharePoint, testowanie i debugowanie, istnieją pewne dodatkowe kroki są wykonywane przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+
+Podczas wdrażania projektu programu SharePoint do lokalnego serwera programu SharePoint, testowanie i debugowanie za pomocą programu Visual Studio, istnieje kilka dodatkowych kroków, które są wykonywane przez program Visual Studio.
 
 1.  Resetuj Internet Information Service (IIS) podczas wykonywania kroku wdrożenia.
 
@@ -64,10 +67,11 @@ ms.lasthandoff: 05/22/2018
 
 3.  Ustawianie kolejności aktywacji funkcji zgodnie z hierarchii w Projektancie pakietu.
 
- Możesz dodać niestandardowe wdrożenie kroki w celu dalszego zmianę zachowania F5. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+Możesz dodać niestandardowe wdrożenie kroki w celu dalszego zmianę zachowania F5. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploying-visual-web-part"></a>Opóźnienie wyświetlania strony programu SharePoint podczas wdrażania wizualnego składnika Web Part
- Strony programu SharePoint trwa długo po wdrożeniu wizualny składnik Web part, aby otworzyć folder Bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Jeśli zmienisz wszystkie pliki w najwyższego poziomu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] rekompiluje całej aplikacji sieci Web katalogu, takiego jak katalog Bin. Może to spowodować opóźnienie wynoszące do 25 sekund dla strony programu SharePoint do renderowania.
+
+Strony programu SharePoint trwa długo po wdrożeniu wizualny składnik Web part, aby otworzyć folder Bin na [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], lub [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Jeśli zmienisz wszystkie pliki w najwyższego poziomu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] rekompiluje całej aplikacji sieci Web katalogu, takiego jak katalog Bin. Może to spowodować opóźnienie wynoszące do 25 sekund dla strony programu SharePoint do renderowania.
 
 ### <a name="error-message"></a>Komunikat o błędzie
  Brak.
@@ -108,11 +112,10 @@ ms.lasthandoff: 05/22/2018
  Ostrzeżenie 1 Element "[*nazwa formantu*]" nie jest elementem znane. Może to wystąpić, jeśli wystąpi błąd kompilacji w witrynie sieci Web, lub Brak pliku web.config.
 
 ### <a name="resolution"></a>Rozwiązanie
- Jeśli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] system projektów nie został powiadomiony o kontrolkę użytkownika zagnieżdżonych, nie można udostępnić IntelliSense i jego emituje to ostrzeżenie. System projektu nie rozpoznaje kontrolki użytkownika zagnieżdżonych Jeśli projekt nie jest skompilowany i nie zamknięciu i ponownym otwarciu projektanta lub wycofać automatycznie opcja jest włączona, co powoduje, że formant użytkownika ma zostać wycofane z gałęzi SharePoint po debugowaniu.
+ Jeśli system projektu programu Visual Studio nie został powiadomiony o kontrolkę użytkownika zagnieżdżonych, nie może dostarczyć IntelliSense i jego emituje to ostrzeżenie. System projektu nie rozpoznaje kontrolki użytkownika zagnieżdżonych Jeśli projekt nie jest skompilowany i nie zamknięciu i ponownym otwarciu projektanta lub wycofać automatycznie opcja jest włączona, co powoduje, że formant użytkownika ma zostać wycofane z gałęzi SharePoint po debugowaniu.
 
  Aby usunąć to ostrzeżenie, skompilować projekt i następnie zamknij i ponownie otwórz projektanta lub wyłącz automatyczne wycofać opcji dla projektu. Aby to zrobić, należy wyczyścić **wycofać automatycznie po debugowaniu** pole wyboru na **SharePoint** karty w oknie dialogowym właściwości projektu.
 
-## <a name="see-also"></a>Zobacz też
- [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Zobacz także
 
-
+- [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
