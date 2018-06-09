@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0419ec814c7b2538633ab9a1e266ec12ad066ff9
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237955"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message — Metoda
+# <a name="markerserieswritemessage-method"></a>marker_series::write_message — metoda
 Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.  
   
 ## <a name="syntax"></a>Składnia  
@@ -59,9 +60,9 @@ void write_message(
  Poziom Category.Importance.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic —  
   
-## <a name="see-also"></a>Zobacz też  
- [marker_series, klasa](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Zobacz także  
+ [marker_series — klasa](../profiling/marker-series-class.md)

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238163"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` Metody wstawia znacznik profil w pliku Vsp. Profilowanie dla wątku zawierający `MarkProfile` funkcja musi być ON znaku do wstawienia.  
+`MarkProfile` Metody wstawia znacznik profil w. *Vsp* pliku. Profilowanie dla wątku zawierający `MarkProfile` funkcja musi być ON znaku do wstawienia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  Znacznik do wstawienia. Znacznika musi być większa lub równa 0 (zero).  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
+## <a name="property-valuereturn-value"></a>Wartość właściwości wartość/powrotu  
  Funkcja wskazuje powodzenie lub Niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
   
 |Moduł wyliczający|Opis|  
@@ -46,22 +47,22 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|MARK_OK jest zwracany, informując o powodzeniu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wartość znaku jest wstawiany do pliku Vsp każdym razem, gdy kod jest uruchamiany, jeśli wątek zawierający funkcję MarkProfile jest poddawany profilowaniu. Możesz wywołać MarkProfile wiele razy.  
+ Wartość znaku jest wstawiana do. *vsp* plików zawsze kod jest uruchamiany, jeśli wątek zawierający funkcję MarkProfile jest poddawany profilowaniu. Możesz wywołać MarkProfile wiele razy.  
   
- Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jeden wątek może służyć do oznaczania początek lub koniec segmentu danych w którymkolwiek wątku w pliku Vsp.  
+ Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jeden wątek można oznaczyć początek lub koniec segmentu danych w którymkolwiek wątku w. *vsp* pliku.  
   
  Stan profilowania dla wątku, który zawiera funkcję profilu znak musi być na, jeśli znaczniki i komentarze wstawione przy użyciu polecenia znak lub z funkcji API (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
   
 > [!IMPORTANT]
 >  Metoda MarkProfile powinien być używany z tylko profilowanie instrumentacji.  
   
-## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET framework  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informacji o funkcji  
- Nagłówek: Zadeklarowany w VSPerf.h  
+ Nagłówek: Zadeklarowany w *VSPerf.h*  
   
- Importuj biblioteki: VSPerf.lib  
+ Importuj biblioteki: *VSPerf.lib*  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod ilustruje funkcja MarkProfile.  
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy API profilera Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)

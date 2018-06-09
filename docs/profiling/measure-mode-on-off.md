@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dd15e739b08ef32fa74853fd1927936e202ad61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237422"
 ---
-# <a name="measure-mode-onoff"></a>Tryb pomiarowy Wł./Wył.
+# <a name="measure-mode-onoff"></a>Tryb pomiarowy wł. / wył.
 Za pomocą tego narzędzia, należy dokładnie mierzyć długość czasu na osi czasu. Aby włączyć tryb pomiarowy, kliknij przycisk miary (co ma ikonę linijki), a następnie przeciągnij na osi czasu. Podczas przeciągania zauważyć, że w obszarze poniżej wskaźnika jest wyróżnione kolorem żółtym, a czas jest wyświetlana na pasku narzędzi po prawej stronie przycisku. Ta wartość jest obliczana dynamicznie podczas przeciągania, dzięki czemu można natychmiast zobaczyć, jak długo trwa określonego zdarzenia. Po zwolnieniu przycisku myszy wartość czasu jest widoczne.  
   
  Powtórzyć miary, ale jest wyświetlany tylko najnowsze miary. Kliknij przycisk miary ponownie, aby wyłączyć tryb miary.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zarządzanie kanałami](../profiling/manage-channels.md)   
  [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

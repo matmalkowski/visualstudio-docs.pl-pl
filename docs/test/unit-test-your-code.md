@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237334"
 ---
 # <a name="unit-test-your-code"></a>Kod testu jednostkowego
 
@@ -60,4 +61,4 @@ Należy skorzystać z następujących tematów, aby lepiej zrozumieć i z łatwo
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)
+- [Podnoszenie jakości kodu](../test/improve-code-quality.md)

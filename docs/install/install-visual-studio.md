@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238241"
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 
@@ -49,7 +50,7 @@ Odpowiedzi na pytania dotyczące uruchamiania poprzednich wersji programu Visual
 Następnie należy pobrać plik inicjujący Instalatora programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wersji programu Visual Studio 2017, żądany, kliknij przycisk **zapisać**, a następnie kliknij przycisk **Otwórz folder**.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Pobierz program Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |

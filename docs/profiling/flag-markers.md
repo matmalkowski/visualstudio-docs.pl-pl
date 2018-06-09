@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76024adcc36a0925345025ac628e79c6e8b1b7bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f924089ef31e2b452419b107788357060a4c6bb6
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237994"
 ---
-# <a name="flag-markers"></a>Znaczniki typu flaga
+# <a name="flag-markers"></a>Znaczniki typu Flaga
 Znacznik flagi reprezentuje coś, który wystąpił w chwili w czasie w aplikacji. Flaga może reprezentować wiele rodzajów zdarzeń aplikacji. Na przykład flagę pokazać po zaplanowano element roboczy w szczególności lub gdy został zgłoszony wyjątek. Środowisk uruchomieniowych, takich jak biblioteka zadań równoległych można również generować flagi.  
   
 ## <a name="flag-importance"></a>Flaga znaczenie  
@@ -47,6 +48,6 @@ Znacznik alertu
  ![Agregacja flagi przedstawiający czterech poziomów ważności](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Agregacja flag poziom ważności  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)   
  [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

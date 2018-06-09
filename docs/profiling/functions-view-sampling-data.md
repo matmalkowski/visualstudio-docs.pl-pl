@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4b1eddfd2d4b0ab0f285b727b6bc6638ca2e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237497"
 ---
 # <a name="functions-view---sampling-data"></a>Widok funkcji - dane próbkowania
 Widoku raportu funkcji dla metody próbkowania profil zawiera funkcje, które zostały poddane próbkowaniu podczas przebiegu profilowania.  
@@ -40,7 +41,7 @@ Widoku raportu funkcji dla metody próbkowania profil zawiera funkcje, które zo
 |**Wyłącznych próbek**|Łączna liczba próbek, które zostały zebrane podczas wykonywania kodu w treści tej funkcji; oznacza to, gdy ta funkcja została szczycie stosu wywołań. Przykłady, które zostały zebrane w funkcjach, które zostały wywołane przez tę funkcję, nie są uwzględniane.|  
 |**% Wyłącznych próbek**|Wartość procentowa próbek wszystkie, w którym profilowania były wyłącznych próbek w tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   

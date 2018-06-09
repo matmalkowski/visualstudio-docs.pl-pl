@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae17a44b37536359a5f09fd75fda82ce34b50c3
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237370"
 ---
-# <a name="markerserieswritealert-method"></a>marker_series::write_alert — Metoda
+# <a name="markerserieswritealert-method"></a>marker_series::write_alert — metoda
 Zapisuje plik śledzenia Concurrency Visualizer alertu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -37,9 +38,9 @@ void write_alert(
  Ciąg formatu złożony, który zawiera tekst zmieszać zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic —  
   
-## <a name="see-also"></a>Zobacz też  
- [marker_series, klasa](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Zobacz także  
+ [marker_series — klasa](../profiling/marker-series-class.md)

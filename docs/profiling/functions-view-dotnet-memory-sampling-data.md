@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eea5a55f57ed6b3fb710195dfe94839bdb17fb7e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a4380d3367177bec4036aecd819ed6513c0efd6
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238150"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Widok funkcji - dane próbkowania pamięci .NET
 Widok funkcji alokacji pamięci .NET profilowania dane zebrane przy użyciu metody pobierania próbek zawiera listę funkcji, które przydzielonej pamięci podczas przebiegu profilowania i w raportach, rozmiar i liczba przydziałów.  
@@ -40,7 +41,7 @@ Widok funkcji alokacji pamięci .NET profilowania dane zebrane przy użyciu meto
 |**Wyłączny bajtów**|Liczba bajtów pamięci, które zostały przydzielone przez tę funkcję, ale nie przez jej funkcji podrzędnych.|  
 |**% Wyłącznego bajtów**|Procent wszystkich bajtów pamięci przydzielone w przebiegu, który profilowania były wyłącznego bajtów tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Widok funkcji](../profiling/functions-view-sampling-data.md)   
  [Widok funkcji](../profiling/functions-view-instrumentation-data.md)

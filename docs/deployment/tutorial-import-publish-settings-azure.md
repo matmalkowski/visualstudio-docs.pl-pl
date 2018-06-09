@@ -1,6 +1,6 @@
 ---
 title: Publikowanie na platformie Azure przez zaimportowanie ustawień publikowania
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccf8d30907e236ca1f3047b488a5522fd2631295
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766743"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237981"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usłudze Azure App Service przez zaimportowanie ustawień publikowania w programie Visual Studio
 
 Można użyć **publikowania** narzędzia do zaimportowania ustawień publikowania, a następnie wdrożyć aplikację. W tym artykule używamy ustawienia publikowania dla usługi aplikacji Azure, ale można użyć publikowania podobne kroki, aby zaimportować ustawienia z [IIS](../deployment/tutorial-import-publish-settings-iis.md). W niektórych scenariuszach stosowania Publikowanie profilu ustawień może być szybsza niż ręcznie konfigurować wdrożenia usługi dla każdej instalacji programu Visual Studio.
 
-Te kroki dotyczą aplikacji ASP.NET, platformy ASP.NET Core i .NET Core w programie Visual Studio. Możesz również zaimportować ustawienia publikowania dla [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) aplikacji. Visual Studio 2017 wersji 15,6 odpowiada kroki.
+Te kroki dotyczą aplikacji ASP.NET, platformy ASP.NET Core i .NET Core w programie Visual Studio. Możesz również zaimportować ustawienia publikowania dla [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aplikacji. Visual Studio 2017 wersji 15,6 odpowiada kroki.
 
 W tym samouczku obejmują:
 
@@ -42,7 +42,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
     Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
-* Tworzenie usługi aplikacji Azure. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
+* Tworzenie usługi aplikacji Azure. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Utwórz nowy projekt ASP.NET w programie Visual Studio
 

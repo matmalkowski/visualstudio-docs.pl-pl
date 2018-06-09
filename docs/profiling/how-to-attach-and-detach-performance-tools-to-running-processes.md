@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237230"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Porady: dołączanie lub odłączanie narzędzi wydajności do uruchomionego procesu
 Profiler może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i gromadzenia danych wydajności. Ta metoda służy do profilowania procesu, gdy chce się uniknąć zbierania danych dotyczących czasu ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.  
   
 > [!NOTE]
->  Poniższe kroki dotyczą Dołączanie i odłączanie procesów z poziomu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmnent rozwoju (IDE). Aby dowiedzieć się, jak używać narzędzi wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Informacje o sposobie profilu usługi, zobacz [usług profilowania](../profiling/command-line-profiling-of-services.md).  
+>  Poniższe kroki dotyczą Dołączanie i odłączanie procesów z poziomu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmnent rozwoju (IDE). Aby dowiedzieć się, jak używać narzędzi wiersza polecenia, zobacz [profilu z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Informacje o sposobie profilu usługi, zobacz [profilu usługi](../profiling/command-line-profiling-of-services.md).  
   
  Procesy, które są dostępne do profilu są zależne od uprawnień dostępu użytkowników, które są ustawione przez administratora komputera. Konto użytkownika na przykład uprawnień dla żadnej z następujących czynności:  
   
@@ -38,7 +39,7 @@ Profiler może służyć do dołączenia do lub odłączyć od uruchomionego pro
   
 -   Odmowa dostępu do profilowania dla wszystkich.  
   
- Aby uzyskać więcej informacji, zobacz [profilowanie i bezpieczeństwo systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
+ Aby uzyskać więcej informacji, zobacz [zabezpieczeń profilowania i Windows Vista](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu  
   
@@ -60,8 +61,8 @@ Profiler może służyć do dołączenia do lub odłączyć od uruchomionego pro
   
 3.  Kliknij przycisk **odłączyć**.  
   
-## <a name="see-also"></a>Zobacz też  
- [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Kontrola zbierania danych](../profiling/controlling-data-collection.md)   
  [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)   
  [Porady: rozpoczęcia i zakończenia zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilowanie i bezpieczeństwo systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)   

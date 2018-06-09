@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237513"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
+
 Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej niż tylko pisania kodu. Te działania określone jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i obejmują planowania i śledzenia elementów pracy, projektowania i wdrażania kodu, zarządzanie repozytorium kodu źródłowego, uruchomionych kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testów jednostkowych i interfejsu użytkownika), systemem różne rodzaje diagnostyki w środowiskach produkcyjnych i rozwoju i monitorowanie zachowania wydajności i użytkownika aplikacji w czasie rzeczywistym za pomocą telemetrii i analiza.
 
  Visual Studio oraz Team Foundation Server i Visual Studio Team Services zapewniają szeroką gamę możliwości DevOps, nazywana także zarządzanie cyklem życia aplikacji lub ALM. Wiele z tych mają zastosowanie do projektów i platform, łącznie z gier i bez ramek graficznego aplikacji utworzonych za pomocą platformy Unity — szczególnie w przypadku, gdy przy użyciu języka C# jako język skryptów. Jednak ponieważ Unity ma swoje własne Środowisko deweloperskie i aparatu wykonawczego, wiele funkcji ALM nie stosuj tak jak inne rodzaje projektów wbudowanych w programie Visual Studio.
@@ -24,9 +26,10 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
  W poniższych tabelach identyfikuje sposób funkcje programu Visual Studio ALM zastosowania lub nie stosuj podczas pracy z Unity. Zajrzyj do dokumentacji połączone, szczegółowe informacje na temat funkcji samodzielnie.
 
 ## <a name="agile-tools"></a>Elastyczne narzędzia
- Opis łącza: **[pracy](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (przy użyciu programu Visual Studio Team Services lub TFS, w tym programu Team Explorer Everywhere)
 
- Komentarz ogólny: wszystkie planowania i śledzenia funkcje są niezależne od języków programowania i typ projektu.
+Opis łącza: [o elastyczne narzędzia i Agile projektu zarządzania](/vsts/work/backlogs/overview?view=vsts) (przy użyciu programu Visual Studio Team Services lub TFS, w tym programu Team Explorer Everywhere)
+
+Komentarz ogólny: wszystkie planowania i śledzenia funkcje są niezależne od języków programowania i typ projektu.
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 |Raport i wizualizowanie postępu|Tak||
 
 ## <a name="modeling"></a>Modelowanie
- Opis łącza:  **[analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**
 
- Komentarz ogólny: Mimo że te funkcje projektu są albo niezależnie od języka programowania i pracować z .NET w językach C#, działają na modelu tradycyjnych aplikacji, z hierarchie obiektów i relacji klas. Projektowanie grę w Unity obejmuje różne modelu, czyli relacje obiektów graficznych, dźwięki programów do cieniowania, skrypty i tak dalej. Z tego powodu Visual Studio modelowania diagram narzędzia nie są szczególnie istotne dla całego projektu platformy Unity. Ewentualnie można można użyć do zarządzania relacjami w języku C# skrypty, ale jest tylko jedna część całości.
+Opis łącza:  **[analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**
+
+Komentarz ogólny: Mimo że te funkcje projektu są albo niezależnie od języka programowania i pracować z .NET w językach C#, działają na modelu tradycyjnych aplikacji, z hierarchie obiektów i relacji klas. Projektowanie grę w Unity obejmuje różne modelu, czyli relacje obiektów graficznych, dźwięki programów do cieniowania, skrypty i tak dalej. Z tego powodu Visual Studio modelowania diagram narzędzia nie są szczególnie istotne dla całego projektu platformy Unity. Ewentualnie można można użyć do zarządzania relacjami w języku C# skrypty, ale jest tylko jedna część całości.
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
-|[Korzystanie z kontroli wersji Team Foundation](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Tak|Projekty platformy Unity są po prostu kolekcji plików, które mogą być umieszczane w systemów kontroli wersji, jak inny projekt, ale istnieje kilka uwagi opisanych pod tą tabelą.|
-|[Rozpoczynanie pracy z usługą Git w usłudze Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Tak|Zobacz uwagi pod tabelą.|
-|[Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)|Tak||
+|[Korzystanie z kontroli wersji Team Foundation](/vsts/tfvc/overview?view=vsts) lub Visual Studio Team Services|Tak|Projekty platformy Unity są po prostu kolekcji plików, które mogą być umieszczane w systemów kontroli wersji, jak inny projekt, ale istnieje kilka uwagi opisanych pod tą tabelą.|
+|[Rozpoczynanie pracy z usługą Git w usłudze Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
+|[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Tak||
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||
 
@@ -94,7 +98,7 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 
 ## <a name="improve-code-quality"></a>Podnoszenie jakości kodu
 
-Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality)**
+Opis łącza:  **[poprawy jakości kodu](../test/improve-code-quality.md)**
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
@@ -105,7 +109,8 @@ Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality
 |[Analiza problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie mają punkty zaczepienia w ramach Mono (używano Unity) do profilowania. Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja Unity).|
 
 ## <a name="release-management"></a>Release Management
- Opis łącza:  **[Automatyzacja wdrażania przy użyciu zarządzania zleceniami](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+Opis łącza: [kompilacji i wydania — omówienie](/vsts/pipelines/overview?view=vsts)
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality
 |Przekaż do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne który można zautomatyzować ten proces niektóre sklepy z aplikacjami.  Zobacz [rozszerzeń dla programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą aplikacji HockeyApp
- Opis łącza:  **[monitora z HockeyApp](https://www.hockeyapp.net/features/)**
+
+Opis łącza:  **[monitora z HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
 |-------------|--------------------------|-------------------------|
