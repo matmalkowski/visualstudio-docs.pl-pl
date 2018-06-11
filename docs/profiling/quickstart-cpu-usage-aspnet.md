@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 997ccca0b7bb30638943a6cbd986bbc9a81b7869
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477291"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255804"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki Start: Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. W programie Visual Studio, wybierz **pliku**>**nowy projekt**.
 
 1. W obszarze **Visual C#**, wybierz **Web**, a następnie w środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET (.NET Framework)**.
 
@@ -132,7 +132,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     }
     ```
 
-1. W Eksploratorze rozwiązań Otwórz Controller/HomeControllers.cs i Zastąp następujący kod:
+1. W Eksploratorze rozwiązań Otwórz *Controller/HomeControllers.cs*i Zastąp następujący kod:
 
     ```csharp
     public ActionResult About()
@@ -156,7 +156,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
+##  <a name="step-1-collect-profiling-data"></a>Krok 1: Zbieranie danych profilowania 
   
 1.  Najpierw należy ustawić punkt przerwania w aplikacji w tym wierszu kodu w `Simple` konstruktora:
 
@@ -171,9 +171,9 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz przeanalizować.
   
-1.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+1.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania**>**Windows**>**Pokaż narzędzia diagnostyczne**.
 
-1.  Kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+1.  Kliknij przycisk **debugowania**>**Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
 1.  Po zakończeniu ładowania aplikacji kliknij przycisk **o** łącze u góry strony sieci web, aby rozpocząć Uruchamianie nowego kodu.
 
@@ -197,13 +197,13 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
      W tym momencie można rozpocząć do analizowania danych.
 
-## <a name="Step2"></a> Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
 
 Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z użycia procesora CPU, identyfikowanie funkcji, które robią najbardziej pracy i następnie biorąc bliższe spojrzenie na każdym z nich.
 
 1. Na liście funkcji badania funkcji, które robią większość pracy.
 
-     ![Diagnostyka narzędzi kartę użycie procesora CPU](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
+     ![Karta użycia narzędzia Procesora diagnostyki](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
     > Funkcje są wymienione w kolejności, począwszy od tych czynności najbardziej pracy (nie są one w kolejności wywołania). Dzięki temu można szybko zidentyfikować najdłuższym funkcje uruchomione.
@@ -212,7 +212,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 
     Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** widok zostanie otwarty w okienku po lewej stronie. 
 
-    ![Widok wywoływany obiekt wywołujący narzędzia diagnostyczne](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Widok wywołujący/wywoływany narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     W tym widoku wybranej funkcji zostaną wyświetlone w nagłówku, a w **bieżącej funkcji** pola (`ServerClass::GetNumber`, w tym przykładzie). Funkcji, które wywołały bieżącą funkcję jest wyświetlany po lewej stronie w obszarze **podczas wywoływania funkcji**, a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w **funkcji o nazwie** pole po prawej stronie. (Wybierz albo pola, aby zmienić bieżącą funkcję).
 
@@ -229,7 +229,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 - [Analiza użycia procesora CPU](../profiling/cpu-usage.md) uzyskać więcej szczegółowych informacji na temat narzędzia użycie procesora CPU.
 - Analiza użycia Procesora bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
 
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

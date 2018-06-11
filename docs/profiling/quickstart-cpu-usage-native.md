@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 674c7f30a325c8d615c76a784b3c4e80e306ead6
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256246"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki Start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 
@@ -29,7 +30,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. W programie Visual Studio, wybierz **pliku**>**nowy projekt**.
 
 2. W obszarze **Visual C++**, wybierz **Windows Desktop**, a następnie w środkowym okienku wybierz **aplikacji konsoli systemu Windows**.
 
@@ -110,7 +111,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbieranie danych profilowania 
   
 1.  Najpierw należy ustawić punkt przerwania w aplikacji w tym wierszu kodu w `main` funkcji:
 
@@ -125,9 +126,9 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz przeanalizować.
   
-3.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+3.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania**>**Windows**>**Pokaż narzędzia diagnostyczne**.
 
-4.  Kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+4.  Kliknij przycisk **debugowania**>**Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
      Gdy aplikacja zakończy ładowania, **Podsumowanie** zostanie wyświetlony widok narzędzi diagnostycznych.
 
@@ -149,7 +150,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
      W tym momencie można rozpocząć do analizowania danych.
 
-## <a name="Step2"></a> Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
 
 Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z użycia procesora CPU, identyfikowanie funkcji, które robią najbardziej pracy i następnie biorąc bliższe spojrzenie na każdym z nich.
 
@@ -181,7 +182,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 - [Analiza użycia procesora CPU](../profiling/cpu-usage.md) uzyskać więcej szczegółowych informacji na temat narzędzia użycie procesora CPU.
 - Analiza użycia Procesora bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
 
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

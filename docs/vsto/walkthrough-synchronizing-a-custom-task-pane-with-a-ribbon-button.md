@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówka: Synchronizacja niestandardowego okienka zadań z przyciskiem wstążki | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -26,13 +26,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42e86c75e339a254b1c74683b1eeb882decbd429
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258817"
 ---
-# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Wskazówka: synchronizacja niestandardowego okienka zadań z przyciskiem wstążki
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Wskazówki: Synchronizowanie niestandardowego okienka zadań z przyciskiem wstążki
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań użytkowników można ukryć lub wyświetlić, klikając przycisk przełącznika na Wstążce. Należy zawsze tworzyć elementu interfejsu użytkownika, takie jak przycisk, które można kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań, ponieważ aplikacje Microsoft Office nie umożliwiają domyślne użytkownikom na wyświetlanie lub ukrywanie niestandardowych okienek zadań.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -57,19 +58,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Excel lub Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
   
-## <a name="creating-the-add-in-project"></a>Tworzenie projektu w  
+## <a name="create-the-add-in-project"></a>Utwórz projekt dodatku  
  W tym kroku utworzysz projektów dodatku VSTO dla programu Excel.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Utwórz projekt dodatku programu Excel o nazwie **SynchronizeTaskPaneAndRibbon**, za pomocą szablonu projektu dodatek programu Excel. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Utwórz projekt dodatku programu Excel o nazwie **SynchronizeTaskPaneAndRibbon**, za pomocą szablonu projektu dodatek programu Excel. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **SynchronizeTaskPaneAndRibbon** projektu do **Eksplorator rozwiązań**.  
   
-## <a name="adding-a-toggle-button-to-the-ribbon"></a>Dodawanie przycisku przełącznika do wstążki  
+## <a name="add-a-toggle-button-to-the-ribbon"></a>Dodawanie przycisku przełączania do wstążki  
  Jednym z wytycznymi projektowania aplikacji pakietu Office jest użytkowników powinien zawsze mieć formantu interfejsu użytkownika aplikacji pakietu Office. Umożliwienie użytkownikom kontrolowania niestandardowego okienka zadań, można dodać przycisk przełączania wstążki, który pokazuje i ukrywa ją w okienku zadań. Aby utworzyć przycisk przełącznika, dodać **wstążki (projektanta wizualnego)** elementu do projektu. Projektant pomaga Dodaj formanty pozycji, ustaw właściwości kontrolki i obsługę zdarzeń formantu. Aby uzyskać więcej informacji, zobacz [projektanta wstążki](../vsto/ribbon-designer.md).  
   
-#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>Aby dodać przycisk przełączania do wstążki  
+### <a name="to-add-a-toggle-button-to-the-ribbon"></a>Aby dodać przycisk przełączania do wstążki  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  W **właściwości** ustaw **etykiety** właściwości **Pokaż okienko zadań**.  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań  
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań  
  Nie ma wizualnego projektanta dla niestandardowych okienek zadań, ale można zaprojektować kontrolkę użytkownika z układem, który ma. W dalszej części tego przewodnika kontrolki użytkownika zostaną dodane do niestandardowego okienka zadań.  
   
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań  
+### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj kontrolkę użytkownika**.  
   
@@ -102,10 +103,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Z **formanty standardowe** karcie **przybornika**, przeciągnij **pole tekstowe** formantu do kontrolki użytkownika.  
   
-## <a name="creating-the-custom-task-pane"></a>Tworzenie niestandardowego okienka zadań  
+## <a name="create-the-custom-task-pane"></a>Tworzenie niestandardowego okienka zadań  
  Do uruchomienia dodatku VSTO, należy utworzyć niestandardowego okienka zadań, Dodaj kontrolkę użytkownika do okienka zadań w <xref:Microsoft.Office.Tools.AddIn.Startup> obsługi zdarzeń dodatku VSTO. Domyślnie niestandardowego okienka zadań nie będą widoczne. W dalszej części tego przewodnika należy dodać kodu, który będzie wyświetlanie lub ukrywanie okienka zadań, gdy użytkownik kliknie przycisk przełącznika dodanego do wstążki.  
   
-#### <a name="to-create-the-custom-task-pane"></a>Aby utworzyć niestandardowego okienka zadań  
+### <a name="to-create-the-custom-task-pane"></a>Aby utworzyć niestandardowego okienka zadań  
   
 1.  W **Eksploratora rozwiązań**, rozwiń węzeł **Excel**.  
   
@@ -131,26 +132,26 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
   
-## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>Wyświetlanie i ukrywanie niestandardowego okienka zadań za pomocą przycisku przełącznika  
+## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>Ukryj i Pokaż niestandardowego okienka zadań za pomocą przycisku przełącznika  
  Ostatnim krokiem jest Dodaj kod, który wyświetla lub ukrywa niestandardowego okienka zadań, gdy użytkownik kliknie przycisk przełączania na Wstążce.  
   
-#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>Aby wyświetlić lub ukryć niestandardowego okienka zadań za pomocą przycisku przełącznika  
+### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>Aby wyświetlić lub ukryć niestandardowego okienka zadań za pomocą przycisku przełącznika  
   
 1.  Projektant wstążki, kliknij dwukrotnie **Pokaż okienko zadań** przycisk przełącznika.  
   
-     Visual Studio automatycznie generuje program obsługi zdarzeń o nazwie `toggleButton1_Click`, która obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzeń przycisk przełącznika. Visual Studio zostanie otwarte także **MyRibbon.cs** lub **MyRibbon.vb** plik w edytorze kodu.  
+     Visual Studio automatycznie generuje program obsługi zdarzeń o nazwie `toggleButton1_Click`, która obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzeń przycisk przełącznika. Visual Studio zostanie otwarte także *MyRibbon.cs* lub *MyRibbon.vb* plik w edytorze kodu.  
   
 2.  Zastąp `toggleButton1_Click` obsługi zdarzeń z następującym kodem. Gdy użytkownik kliknie przycisk przełącznika, ten kod wyświetla lub ukrywa niestandardowego okienka zadań, w zależności od tego, czy naciśnięcie lub nie został naciśnięty przycisk przełącznika.  
   
      [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
   
-## <a name="testing-the-add-in"></a>Testowanie dodatku  
+## <a name="test-the-add-in"></a>Testowanie dodatku  
  Po uruchomieniu projekt zostanie otwarty bez wyświetlania niestandardowego okienka zadań. Przycisk przełączania na Wstążce, aby przetestować kod.  
   
-#### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
+### <a name="to-test-your-vsto-add-in"></a>Aby przetestować użytkownika dodatku narzędzi VSTO  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
      Upewnij się, że, zostanie otwarty i **Add-Ins** zostanie wyświetlona karta na Wstążce.  
   
@@ -167,17 +168,17 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  Możesz można dowiedzieć się więcej o sposobie tworzenia niestandardowych okienek zadań z tych tematów:  
   
--   Tworzenie niestandardowego okienka zadań w dodatku VSTO dla różnych aplikacji. Aby uzyskać więcej informacji o aplikacji, które obsługują niestandardowych okienek zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
+-   Tworzenie niestandardowego okienka zadań w dodatku VSTO dla różnych aplikacji. Aby uzyskać więcej informacji o aplikacji, które obsługują niestandardowych okienek zadań, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
   
--   Automatyzowanie aplikacji z niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [wskazówki: automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatyzowanie aplikacji z niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [wskazówki: zautomatyzować aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Tworzenie niestandardowego okienka zadań dla każdej wiadomości e-mail, który jest otwarty w programie Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie okienka niestandardowych zadań z wiadomościami E-Mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Tworzenie niestandardowego okienka zadań dla każdej wiadomości e-mail, który jest otwarty w programie Outlook. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie niestandardowych okienek zadań z wiadomości e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Niestandardowe okienka zadań](../vsto/custom-task-panes.md)   
  [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Wskazówki: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Wskazówki: Wyświetlanie niestandardowych okienek zadań z wiadomościami E-Mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
- [Wstążka — omówienie](../vsto/ribbon-overview.md)  
+ [Wskazówki: Zautomatyzować aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Wskazówki: Wyświetlanie niestandardowych okienek zadań z wiadomości e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [Wstążka ― omówienie](../vsto/ribbon-overview.md)  
   
   

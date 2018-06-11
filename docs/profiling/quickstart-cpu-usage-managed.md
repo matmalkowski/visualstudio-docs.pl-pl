@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c95554c9fe33c24b46cbcf6f501bc9d70ace4c34
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750288"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256152"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 
@@ -31,7 +31,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. W programie Visual Studio, wybierz **pliku**>**nowy projekt**.
 
 2. W obszarze **Visual C#** lub **Visual Basic**, wybierz **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacji konsoli (.NET Framework)**.
 
@@ -39,7 +39,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
     Program Visual Studio tworzy projekt.
 
-2. Otwórz plik Program.cs i Zastąp cały kod z następującym kodem:
+2. Otwórz *Program.cs* i Zastąp cały kod z następującym kodem:
 
     ```csharp
     using System;
@@ -158,9 +158,9 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     ```
 
     > [!NOTE]
-    > W języku Visual Basic, upewnij się, ma ustawioną wartość obiektu uruchamiania `Sub Main` (**właściwości > aplikacji > obiekt uruchomieniowy**).
+    > W języku Visual Basic, upewnij się, ma ustawioną wartość obiektu uruchamiania `Sub Main` (**właściwości**>**aplikacji**>**obiekt uruchomieniowy**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania
+##  <a name="step-1-collect-profiling-data"></a>Krok 1: Zbieranie danych profilowania
 
 1.  Najpierw należy ustawić punkt przerwania w aplikacji w tym wierszu kodu w `Main` funkcji:
 
@@ -179,9 +179,9 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz przeanalizować.
 
-3.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+3.  **Narzędzia diagnostyczne** okno jest już widoczny, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania**>**Windows**>**Pokaż narzędzia diagnostyczne**.
 
-4.  Kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+4.  Kliknij przycisk **debugowania**>**Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
      Gdy aplikacja zakończy ładowania, **Podsumowanie** zostanie wyświetlony widok narzędzi diagnostycznych.
 
@@ -193,7 +193,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
      Po wybraniu **rekord Procesora profilu**, Visual Studio rozpocznie się rejestrowanie funkcji i jak długo podjęte w celu wykonania i udostępnia również wykres osi czasu, można skupić się na poszczególnych segmentów sesji próbkowania. Zebrane dane można przeglądać tylko wtedy, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
-6.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+6.  Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
 
      Teraz masz teraz dane dotyczące wydajności aplikacji specjalnie dla regionu kodu, który uruchamia między dwoma punktami przerwań.
 
@@ -203,7 +203,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
      W tym momencie można rozpocząć do analizowania danych.
 
-## <a name="Step2"></a> Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
 
 Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z użycia procesora CPU, identyfikowanie funkcji, które robią najbardziej pracy i następnie biorąc bliższe spojrzenie na każdym z nich.
 
@@ -235,7 +235,7 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
 - [Analiza użycia procesora CPU](../profiling/cpu-usage.md) uzyskać więcej szczegółowych informacji na temat narzędzia użycie procesora CPU.
 - Analiza użycia Procesora bez istnieje debuger dołączony lub wybierając uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Profilowanie w programie Visual Studio](../profiling/index.md)
 - [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Proste powiązanie danych w VSTO dodatku projektu | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Proste powiązanie danych w projekcie dodatku narzędzi VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7288cf17f7870747399116a1b779c2fa3b67205f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4ef7d1a5fba975d987f3a485a282fdb3d6ea9fc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258086"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Wskazówki: Proste danych powiązania w projekcie dodatku narzędzi VSTO
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Wskazówki: Proste powiązanie danych w projekcie dodatku narzędzi VSTO
   Dane można powiązać z formanty hosta i formantów formularzy systemu Windows w projektów dodatku VSTO. W tym przewodniku pokazano, jak dodawanie formantów do dokumentu programu Microsoft Office Word i powiązanie kontrolek z danymi w czasie wykonywania.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -51,25 +52,25 @@ ms.lasthandoff: 04/16/2018
   
     -   Aby dołączyć bazę danych przy użyciu wiersza polecenia, zobacz [porady: dołączanie pliku bazy danych do programu SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-new-project"></a>Tworzenie nowego projektu  
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  Pierwszym krokiem jest utworzenie projektu dodatku VSTO programu Word.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Tworzenie projektów dodatku VSTO programu Word o nazwie **zapełnianie dokumentów z bazy danych**, za pomocą Visual Basic lub C#.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio otworzy plik ThisAddIn.vb lub ThisAddIn.cs i dodaje **zapełnianie dokumentów z bazy danych** projektu do **Eksploratora rozwiązań**.  
+     Visual Studio otworzy *ThisAddIn.vb* lub *ThisAddIn.cs* plików i dodaje **zapełnianie dokumentów z bazy danych** projektu do **Eksplorator rozwiązań** .  
   
-2.  Jeśli elementy docelowe projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], Dodaj odwołanie do zestawu Microsoft.Office.Tools.Word.v4.0.Utilities.dll. To odwołanie jest wymagane do programowo Dodaj formanty formularzy systemu Windows do dokumentów w dalszej części tego przewodnika.  
+2.  Jeśli elementy docelowe projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], Dodaj odwołanie do *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* zestawu. To odwołanie jest wymagane do programowo Dodaj formanty formularzy systemu Windows do dokumentów w dalszej części tego przewodnika.  
   
-## <a name="creating-a-data-source"></a>Tworzenie źródła danych  
+## <a name="create-a-data-source"></a>Utwórz źródło danych  
  Użyj **źródeł danych** okno, aby dodać typizowanego zestaw danych do projektu.  
   
-#### <a name="to-add-a-typed-dataset-to-the-project"></a>Aby dodać typizowanego zestaw danych do projektu  
+### <a name="to-add-a-typed-dataset-to-the-project"></a>Aby dodać typizowanego zestaw danych do projektu  
   
-1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku**, **inne okna**, **źródeł danych**.  
+1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
   
 2.  Wybierz **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  Kliknij przycisk **Zakończ**.  
   
-     Plik AdventureWorksLTDataSet.xsd jest dodawany do **Eksploratora rozwiązań**. Ten plik definiuje następujące elementy:  
+     *AdventureWorksLTDataSet.xsd* plik zostanie dodany do **Eksploratora rozwiązań**. Ten plik definiuje następujące elementy:  
   
     -   Typizowanego zestaw danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość **klienta (SalesLT)** tabeli w bazie danych AdventureWorksLT.  
   
@@ -93,12 +94,12 @@ ms.lasthandoff: 04/16/2018
   
      Użyje obu tych obiektów w dalszej części tego przewodnika.  
   
-## <a name="creating-controls-and-binding-controls-to-data"></a>Tworzenie formantów i powiązywanie kontrolek z danymi  
+## <a name="create-controls-and-binding-controls-to-data"></a>Tworzenie formantów i powiązanie kontrolek z danymi  
  Interfejs do wyświetlania rekordów bazy danych w ramach tego przewodnika jest bardzo proste i utworzeniu prawa w dokumencie. Jeden <xref:Microsoft.Office.Tools.Word.ContentControl> przedstawia rekord pojedynczej bazy danych w czasie i dwa <xref:Microsoft.Office.Tools.Word.Controls.Button> formanty umożliwiają i z powrotem przewijania rekordów. Formant zawartości używa <xref:System.Windows.Forms.BindingSource> do połączenia z bazą danych.  
   
- Aby uzyskać więcej informacji na temat powiązanie kontrolek z danymi, zobacz [powiązania danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Aby uzyskać więcej informacji na temat powiązanie kontrolek z danymi, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-#### <a name="to-create-the-interface-in-the-document"></a>Aby utworzyć interfejs w dokumencie  
+### <a name="to-create-the-interface-in-the-document"></a>Aby utworzyć interfejs w dokumencie  
   
 1.  W `ThisAddIn` klasy, Zadeklaruj następujące sterowniki do wyświetlania i przewijać `Customer` tabeli `AdventureWorksLTDataSet` bazy danych.  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]  
   
-3.  Dodaj następujący kod do `ThisAddIn_Startup` metody. Generuje element hosta, rozszerzający dokumentu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+3.  Dodaj następujący kod do `ThisAddIn_Startup` metody. Generuje element hosta, rozszerzający dokumentu. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]  
@@ -135,10 +136,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]  
   
-## <a name="testing-the-add-in"></a>Testowanie dodatku  
+## <a name="test-the-add-in"></a>Testowanie dodatku  
  Po otwarciu programu Word formantu zawartości są wyświetlane dane z `AdventureWorksLTDataSet` zestawu danych. Przewijanie rekordów bazy danych, klikając **dalej** i **Wstecz** przycisków.  
   
-#### <a name="to-test-the-vsto-add-in"></a>Aby przetestować dodatku narzędzi VSTO  
+### <a name="to-test-the-vsto-add-in"></a>Aby przetestować dodatku narzędzi VSTO  
   
 1.  Naciśnij klawisz **F5**.  
   
@@ -146,9 +147,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  Kliknij przycisk **dalej** i **Wstecz** przycisków do przewijania rekordów bazy danych.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Porady: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Porady: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)   
@@ -157,13 +158,13 @@ ms.lasthandoff: 04/16/2018
  [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
  [Wskazówki: Złożone powiązanie danych w projektach na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
- [Korzystanie z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Użyj plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Dodawanie nowych źródeł danych](/visualstudio/data-tools/add-new-data-sources)   
  [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Korzystanie z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Użyj plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Łączenie z danymi w aplikacjach formularzy systemu Windows](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [BindingSource, składnik — omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+ [Informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

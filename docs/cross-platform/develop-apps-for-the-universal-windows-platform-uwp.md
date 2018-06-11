@@ -11,13 +11,14 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: eb180dfa5550cf6237697c4e214a3742b195b065
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89d92bb28f6f81dace335fabff8b2aa75674fd3f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254409"
 ---
-# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Tworzenie aplikacji dla platformy uniwersalnej systemu Windows (UWP)
+# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 Za pomocą platformy uniwersalnej systemu Windows i naszego jednego rdzenia systemu Windows można uruchomić tej samej aplikacji na dowolnym urządzeniu z systemem Windows 10 z telefonów do komputerów stacjonarnych. Tworzenie tych aplikacji uniwersalnych systemu Windows z programu Visual Studio i narzędzia deweloperskie uniwersalnej aplikacji systemu Windows.  
   
  ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
@@ -39,7 +40,7 @@ Platforma uniwersalna systemu Windows jest po prostu kolekcji kontrakty i wersje
   
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 obsługuje programowanie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [obsługiwane platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).   
   
--   [Visual Studio](https://www.visualstudio.com/downloads/). Należy również opcjonalne obciążenie rozwoju platformy uniwersalnej systemu Windows.  
+-   [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalne obciążenie rozwoju platformy uniwersalnej systemu Windows.  
 
      ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
   

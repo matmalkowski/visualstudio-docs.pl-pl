@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie obsługi zdarzeń w projektach pakietu Office | Dokumentacja firmy Microsoft'
+title: 'Porady: tworzenie obsługi zdarzeń w projektach pakietu Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 833e41979d1dac9def7e647b396161d0ac5e2b67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b7e55ee7f094ad104d9c8eb6ef3057621bcccee
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254247"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Porady: tworzenie obsługi zdarzeń w projektach pakietu Office
   Istnieje kilka sposobów, aby utworzyć procedury obsługi zdarzeń w Visual Basic i C#. W widoku Projekt, można utworzyć domyślnie obsługi zdarzeń dla formantów przez dwukrotne kliknięcie formantu, lub za pomocą okienka zdarzenia z **właściwości** okna, aby utworzyć programy obsługi dla dowolnego zdarzenia w formancie. Jednak jeśli jesteś w widoku kodu, nie możesz przełączyć do widoku projektu, aby utworzyć program obsługi zdarzeń.  
@@ -52,9 +53,9 @@ ms.lasthandoff: 04/16/2018
   
      Visual Studio automatycznie zakończeniu wiersza kodu, tworzy program obsługi zdarzeń i przenosi punkt wstawiania do obsługi zdarzeń nowo utworzony.  
   
-## <a name="see-also"></a>Zobacz też  
- [Pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md)   
- [Wskazówki: Programowanie w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
+ [Wskazówki: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
   
   

@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255622"
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
-Widok okresu istnienia obiektu, jest dostępna, gdy **również zbieranie danych o okresie istnienia obiektu platformy .NET** jest zaznaczony na stronach właściwości sesji wydajności.  
+Widok okresu istnienia obiektu, jest dostępna, gdy **również zbieranie danych o okresie istnienia obiektu platformy .NET** jest zaznaczony na **sesji wydajności** strony właściwości.  
   
  Moduł zbierający elementy bezużyteczne programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zarządza alokacji i wersji pamięci dla aplikacji. Aby zoptymalizować wydajność modułu zbierającego elementy bezużyteczne, sterty zarządzanej jest podzielony na trzy generacje: 0, 1 i 2. Moduł garbage collector środowiska uruchomieniowego przechowuje nowych obiektów generacji 0. Obiekty, które pozostają aktualne po kolekcje są awansowane i przechowywane w generacji 1 i 2.  
   
@@ -72,5 +73,5 @@ Widok okresu istnienia obiektu, jest dostępna, gdy **również zbieranie danych
 |**Zebrane wystąpienia sterty obiektów wielkich**|Liczba wystąpień tego typu, który znajduje się w sterty dużego obiektu i które zostały zebrane w profilowania uruchomienia.|  
 |**Zebrane bajty sterty obiektów wielkich**|Rozmiar w bajtach wystąpień tego typu, który znajduje się w sterty dużego obiektu i które zostały zebrane w przebiegu profilowania.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

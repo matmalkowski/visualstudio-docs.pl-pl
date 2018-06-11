@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255148"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
 Możesz wstawić zarządzanym lub macierzystym metody interfejsów API programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania do zbierania danych formantu w przebiegu profilowania. Ta sekcja opisuje metody interfejsów API oraz sposobu ich używania.  
@@ -30,7 +31,7 @@ Możesz wstawić zarządzanym lub macierzystym metody interfejsów API programu 
  Dowiedz się, jak użyć metod .NET narzędzi profilowania w tym przykładzie ukończone.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)  
+ [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)

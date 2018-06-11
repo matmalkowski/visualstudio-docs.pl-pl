@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd7e03ef5e8272d3decee9b6f7a344f5f659e67
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d19671e0f9280f02a012ad02b5421f2d62d30926
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255213"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID zwraca pseudo-token identyfikator wątku lub identyfikator procesu w wywołaniu funkcji NameProfile, StartProfile StopProfile, SuspendProfile i ResumeProfile. Użyj, aby spowodować, że funkcja do działania na bieżącego wątku lub procesu, a nie w szczególności wskazanych jeden.  
   
 ## <a name="example"></a>Przykład  
- PROFILE_CURRENTID jest zdefiniowany w VSPerf.h jako:  
+ PROFILE_CURRENTID jest zdefiniowany w *VSPerf.h* jako:  
   
 ```cpp  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
@@ -58,8 +59,8 @@ void ExerciseProfileCurrentID()
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy API profilera Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [NameProfile](../profiling/nameprofile.md)   
  [ResumeProfile](../profiling/resumeprofile.md)   
  [StartProfile](../profiling/startprofile.md)   

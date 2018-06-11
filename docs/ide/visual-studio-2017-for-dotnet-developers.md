@@ -12,16 +12,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748754"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257476"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 wydajność przewodnik dla deweloperów platformy .NET
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) zwiększa wydajność niż kiedykolwiek deweloperów! Firma Microsoft poprawia wydajność i niezawodność dla uruchomienia rozwiązania i obciążenia, wykrywania testów i wpisując opóźnienia. Firma Microsoft również został dodany i ulepszone funkcje umożliwiające szybsze pisanie kodu lepsze. Oto niektóre z tych funkcji: Nawigacja do zestawów decompiled, zmiennej nazwy sugestie podczas wpisywania, widok hierarchii w **Eksploratora testów**, przejdź do wszystkich (**Ctrl** +  **T**) można przejść do pliku/typu/elementu członkowskiego/symbol deklaracji, inteligentnego **pomocnika wyjątków**, styl konfiguracji i wymuszania i refaktoryzacje wiele kodu i kodu poprawki.
+[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zwiększa wydajność niż kiedykolwiek deweloperów! Firma Microsoft poprawia wydajność i niezawodność dla uruchomienia rozwiązania i obciążenia, wykrywania testów i wpisując opóźnienia. Firma Microsoft również został dodany i ulepszone funkcje umożliwiające szybsze pisanie kodu lepsze. Oto niektóre z tych funkcji: Nawigacja do zestawów decompiled, zmiennej nazwy sugestie podczas wpisywania, widok hierarchii w **Eksploratora testów**, przejdź do wszystkich (**Ctrl** +  **T**) można przejść do pliku/typu/elementu członkowskiego/symbol deklaracji, inteligentnego **pomocnika wyjątków**, styl konfiguracji i wymuszania i refaktoryzacje wiele kodu i kodu poprawki.
 
 Postępuj zgodnie z tego przewodnika, aby zoptymalizować wydajność.
 

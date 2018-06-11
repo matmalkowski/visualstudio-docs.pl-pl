@@ -1,5 +1,5 @@
 ---
-title: Praca z elementami kontaktów | Dokumentacja firmy Microsoft
+title: Praca z elementami kontaktów
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,26 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 836030668ce4576758698ef94ab27599dd14fd3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0533db441fad61e0e52d5fa1e7433d7e3038239b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258557"
 ---
-# <a name="working-with-contact-items"></a>Praca z elementami kontaktów
+# <a name="work-with-contact-items"></a>Praca z elementami kontaktów
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> Klasa zawiera metody i właściwości można użyć do wykonania zadania związane z kontaktów.  
   
 |Zadanie|Procedura|  
 |----------|---------------|  
-|Pobrania wszystkich kontaktów, których nazwisko zawiera określony ciąg.|[Instrukcje: Programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)|  
-|Wyszukiwanie kontaktu przez imię i nazwisko.|[Instrukcje: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|  
-|Utwórz nowy kontakt i Wypełnij informacje kontaktowe.|[Instrukcje: Programowe dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|  
-|Wyszukiwanie kontaktów, którego adres e-mail zawiera określonej domeny.|[Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|  
-|Usuń skontaktuj się z określoną nazwą.|[Instrukcje: Programowe usuwanie kontaktów programu Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)|  
+|Pobrania wszystkich kontaktów, których nazwisko zawiera określony ciąg.|[Porady: programowane dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)|  
+|Wyszukiwanie kontaktu przez imię i nazwisko.|[Porady: programowane wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|  
+|Utwórz nowy kontakt i Wypełnij informacje kontaktowe.|[Porady: programowane Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)|  
+|Wyszukiwanie kontaktów, którego adres e-mail zawiera określonej domeny.|[Porady: programowane wyszukiwanie adresu e-mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|  
+|Usuń skontaktuj się z określoną nazwą.|[Porady: programowane usuwanie kontaktów programu Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)|  
   
- Aby uzyskać więcej informacji na temat zadań programu Outlook i modelu obiektów programu Outlook, zobacz [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
+ Aby uzyskać więcej informacji na temat zadań programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
  [Praca z folderami](../vsto/working-with-folders.md)   
  [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256871"
 ---
 # <a name="modules-view---sampling-data"></a>Widok modułów - dane próbkowania
 Widok modułów pobierania próbek danych wydajności wyświetla dane są grupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Próbki funkcji modułu są wyświetlane poniżej tego węzła modułu.  
@@ -41,7 +42,7 @@ Widok modułów pobierania próbek danych wydajności wyświetla dane są grupow
 |**Wyłącznych próbek**|— Dla funkcji liczbę wywołań stosu próbek, w których ta funkcja bezpośrednio było wykonywane; oznacza to, liczba próbek, w których ta funkcja została u góry stosu wywołań.<br />— Dla modułu sumę wyłącznych próbek funkcji w module.<br />— Dla wiersza lub instrukcji, liczba próbek w którym ten wiersz lub instrukcji wykonywania.|  
 |**% Wyłącznych próbek**|— W przypadku funkcji lub moduł wartość procentowa próbek wszystkie, w którym profilowania były wyłącznych próbek w tej funkcji lub modułu.<br />— Dla wiersza lub instrukcji wartość procentowa próbek wszystkich w profilowania Uruchom, w którym ten wiersz lub instrukcja powodowała.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)

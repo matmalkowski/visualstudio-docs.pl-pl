@@ -19,18 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d18fec3e8d3830764846d1c25c9109b79b6fe4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256165"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Porady: debugowanie w trybie mieszanym
 Poniższe procedury zawierają opis do debugowania kodu zarządzane i natywne, tzw. debugowanie w trybie mieszanym. Istnieją dwa scenariusze w ten sposób, w zależności od tego, czy biblioteka DLL lub aplikacji są zapisywane w kodzie natywnym:  
   
 -   Aplikacja wywołująca, która wywołuje biblioteki DLL są zapisywane w kodzie natywnym. W takim przypadku biblioteki DLL jest zarządzana i zarządzane i natywne debugery musi być włączona zarówno debugowania. Można to sprawdzić  **\<projektu > strony właściwości** okno dialogowe. Jak to zrobić, zależy od tego, czy uruchomić debugowanie z projektu DLL lub wywołującym projekt aplikacji.  
   
--   Aplikacja wywołująca, która wywołuje biblioteki DLL są zapisywane w kodzie zarządzanym i biblioteki DLL są zapisywane w kodzie natywnym.  
+-   Aplikacja wywołująca, która wywołuje biblioteki DLL są zapisywane w kodzie zarządzanym i biblioteki DLL są zapisywane w kodzie natywnym. Samouczek, który przeprowadzi Cię przez te kroki, zobacz [debugowania kodu zarządzanego i natywnego](../debugger/how-to-debug-managed-and-native-code.md).
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).

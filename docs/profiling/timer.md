@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d4c016b45a405eeb949ff959439ef2440af6e71b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476704"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256328"
 ---
 # <a name="timer"></a>Czasomierz
-VSPerfCmd.exe **czasomierza** opcja umożliwia ustawienie profilowania zdarzenia, które jest próbkowania cykli zegara procesora i opcjonalnie zmiany z domyślnej wartości 10 000 000 liczby cykli w interwale próbkowania. Przy użyciu procesora (jeden gigaherc) 1GH cykle zegara 10 000 000 jest około 100 próbek na sekundę. Minimalna liczba cykli, które można określić wynosi 50 000.  
+*VSPerfCmd.exe* **czasomierza** opcja umożliwia ustawienie profilowania zdarzenia, które jest próbkowania cykli zegara procesora i opcjonalnie zmiany z domyślnej wartości 10 000 000 liczby cykli w interwale próbkowania. Przy użyciu procesora (jeden gigaherc) 1GH cykle zegara 10 000 000 jest około 100 próbek na sekundę. Minimalna liczba cykli, które można określić wynosi 50 000.  
   
  **Czasomierz** można użyć tylko, gdy używasz metoda profilowania próbkowania i można używać tylko w wierszu polecenia, który zawiera także **uruchamianie** lub **Attach** opcji.  
   

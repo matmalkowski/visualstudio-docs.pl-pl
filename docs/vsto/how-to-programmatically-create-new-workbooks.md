@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane tworzenie nowych skoroszytów | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane tworzenie nowych skoroszytów'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ba2054258beb762a6b554a49b7a64a77f83dd7a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e1da9ff331a4376a6ff242dca4382832ee4e85f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257111"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>Porady: Programowane tworzenie nowych skoroszytów
+# <a name="how-to-programmatically-create-new-workbooks"></a>Porady: programowane tworzenie nowych skoroszytów
   Programowo utworzyć skoroszyt jest natywny <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu nie <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Możesz wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta dla <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu w projekcie dodatku VSTO. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Możesz wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta dla <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu w projekcie dodatku VSTO. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-### <a name="to-create-a-new-workbook"></a>Aby utworzyć nowy skoroszyt  
+## <a name="to-create-a-new-workbook"></a>Aby utworzyć nowy skoroszyt  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekcji.  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Można utworzyć na podstawie szablonu innego niż domyślny szablon skoroszytu: Przekaż szablon ma być używany jako parametr <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> metody.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
@@ -48,6 +49,6 @@ ms.lasthandoff: 04/16/2018
  [Porady: programowane zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)   
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
+ [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
   
   

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256139"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` Funkcja przypisuje ciąg określony proces lub wątek.  
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Identyfikator poziomu profilowania. Proces lub wątek identyfikator, który jest generowany przez system.  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
+## <a name="property-valuereturn-value"></a>Wartość właściwości wartość/powrotu  
  Funkcja wskazuje powodzenie lub Niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
   
 |Moduł wyliczający|Opis|  
@@ -84,15 +85,15 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 > [!IMPORTANT]
 >  Funkcje CreateProcess() i interfejsu API CreateThread() może zwrócić przed wątku lub procesu jest zainicjowany.  
   
-## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET framework  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informacji o funkcji  
   
 |||  
 |-|-|  
-|**Nagłówek**|Obejmują VSPerf.h|  
-|**Biblioteka**|Użyj VSPerf.lib|  
+|**Nagłówek**|Obejmują *VSPerf.h*|  
+|**Biblioteka**|Użyj *VSPerf.lib*|  
 |**Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Przykład  
@@ -133,5 +134,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy API profilera Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)

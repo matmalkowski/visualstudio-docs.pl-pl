@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255528"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Widok modułów - dane Instrumentacji pamięci .NET
 Widok modułów danych alokacji pamięci .NET zebrane przy użyciu metody Instrumentacji grupuje pamięci i danych o chronometrażu przez moduły, które zostały wykonane w przebiegu profilowania. Dane dla funkcji modułu profilowania znajduje się poniżej tego węzła modułu.  
@@ -98,7 +99,7 @@ Widok modułów danych alokacji pamięci .NET zebrane przy użyciu metody Instru
 |**Maksymalny własny czas aplikacji**|— Dla funkcji aplikacji maksymalny własny czas wywołania tej funkcji.<br />— Dla modułu własny czas aplikacji maksymalną wszystkich wywołań funkcji w module.|  
 |**Minimalny własny czas aplikacji**|— Dla funkcji własny czas aplikacji minimalna wywołania do tego modułu lub funkcji.<br />— Dla modułu własny czas aplikacji minimalna wszystkich wywołań funkcji w module.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)

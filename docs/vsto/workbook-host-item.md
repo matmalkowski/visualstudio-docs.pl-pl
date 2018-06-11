@@ -1,5 +1,5 @@
 ---
-title: Element hosta skoroszytu | Dokumentacja firmy Microsoft
+title: Element hosta skoroszytu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,11 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5cf1281e084a5ffc51f06b35e3b1c68b2745c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b477b40425f7ded5fbaacf09aabc446ff207d86c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258171"
 ---
 # <a name="workbook-host-item"></a>Element hosta skoroszytu
   <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta jest typem, rozszerzający <xref:Microsoft.Office.Interop.Excel.Workbook> typu z podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta zawiera wszystkie właściwości, metod i zdarzeń jako <xref:Microsoft.Office.Interop.Excel.Workbook> obiekt, ale również zapewnia dodatkowe funkcje.  
@@ -36,10 +37,10 @@ ms.lasthandoff: 04/16/2018
   
  W projektach na poziomie dokumentu, jest domyślnie <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta, który reprezentuje skoroszytu w projekcie. W dodatku VSTO projektów, można wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> hosta elementów w czasie wykonywania.  
   
-## <a name="understanding-the-workbook-host-item-in-document-level-projects"></a>Opis element hosta skoroszytu w projektach na poziomie dokumentu  
+## <a name="understand-the-workbook-host-item-in-document-level-projects"></a>Zrozumienie element hosta skoroszytu w projektach na poziomie dokumentu  
  Aby uzyskać dostęp do skoroszytu w projekcie, należy użyć `ThisWorkbook` klasy. `ThisWorkbook` Klasy daje dostęp do elementów członkowskich <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta do wykonywania podstawowych zadań w dostosowaniu, takie jak uruchamianie kodu, gdy skoroszyt jest otwarty lub zamknięty. Aby uzyskać więcej informacji, zobacz [programowania dostosowań na poziome dokumentu](../vsto/programming-document-level-customizations.md).  
   
- `ThisWorkbook` Klasa udostępnia lokalizacji, w którym można rozpocząć pisanie kodu w projekcie. Ponieważ klasa zawiera wszystkie właściwości, metod i zdarzeń jako <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu w podstawowego zestawu międzyoperacyjnego dla programu Excel, można również użyć `ThisWorkbook` dostępu do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
+ `ThisWorkbook` Klasa udostępnia lokalizacji, w którym można rozpocząć pisanie kodu w projekcie. Ponieważ klasa zawiera wszystkie właściwości, metod i zdarzeń jako <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu w podstawowego zestawu międzyoperacyjnego dla programu Excel, można również użyć `ThisWorkbook` dostępu do modelu obiektów programu Excel. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
   
  Kliknij dwukrotnie **ThisWorkbook** elementu projektu w **Eksploratora rozwiązań** do wyświetlania skoroszytu projektanta i wyświetlić właściwości i zdarzenia skoroszyt w **właściwości**okna.  
   
@@ -53,15 +54,15 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Narzędzia Office development w Visual Studio nie obsługują skoroszytów udostępnionych.  
   
-## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Obiekty hosta skoroszytu opis w projektów dodatku VSTO  
- W dodatku VSTO projektów, można wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta w czasie wykonywania dla dowolnego skoroszytu, który jest otwarty w programie Excel. Aby wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> hosta elementu, użyj metody GetVstoObject. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Zrozumienie obiekty hosta skoroszytu w projektów dodatku VSTO  
+ W dodatku VSTO projektów, można wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta w czasie wykonywania dla dowolnego skoroszytu, który jest otwarty w programie Excel. Aby wygenerować <xref:Microsoft.Office.Tools.Excel.Workbook> element hosta, użyj `GetVstoObject` metody. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Element hosta arkusza](../vsto/worksheet-host-item.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

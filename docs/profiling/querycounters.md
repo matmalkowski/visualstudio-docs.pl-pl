@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce82016b16eef3bd7c48cb156c705d0f1b28198b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9f3c3176ea0b865ecf4a433a7a0a22a316720229
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257712"
 ---
 # <a name="querycounters"></a>QueryCounters
 **QueryCounters** opcja Wyświetla liczniki wydajności procesora CPU (sprzęt), które są dostępne na komputerze.  
@@ -35,8 +36,8 @@ VSPerfCmd.exe /QueryCounters
   
  Różnych procesorów ujawnić różne liczniki wydajności procesora CPU. Profiler definiuje zestaw ogólnego liczniki, które mogą być używane w prawie wszystkie procesory. **QueryCounters** opcja wyświetla zarówno nazw liczników ogólnego i nazwy liczników, które są specyficzne dla procesora.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

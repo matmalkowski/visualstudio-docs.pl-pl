@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256061"
 ---
-# <a name="modules-view---contention-data"></a>Widok modułów - dane Kontencji
+# <a name="modules-view---contention-data"></a>Widok modułów - dane kontencji
 Widok modułów danych kontencji współbieżności dane są pogrupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Funkcji modułu, w którym wystąpił zdarzenia rywalizacji są wyświetlane w węźle modułu.  
   
  Jeśli funkcja została uruchomiona własny kod po wystąpieniu zdarzenia rywalizacji, oznacza to, funkcja znajdowała się u góry stosu wywołań, wierszy źródłowych i instrukcji się, że adresy, które były wykonywane są wyświetlane w węźle funkcji. Ponieważ dane są gromadzone dla wiersza źródłowego lub wskaźnik instrukcji, gdy wiersz lub instrukcji jest wykonywany, wartości włącznie i wyłącznego są zawsze takie same dla wiersza danych i instrukcji danych.  
@@ -43,7 +44,7 @@ Widok modułów danych kontencji współbieżności dane są pogrupowane według
 |**Nazwa procesu**|Nazwa procesu.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok modułów](../profiling/modules-view.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

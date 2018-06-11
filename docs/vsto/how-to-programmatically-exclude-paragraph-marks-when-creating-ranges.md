@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6133249720711a057ed66516571563f8a5ee0db9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256965"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Porady: Programowane wykluczanie znaczników akapitu podczas tworzenia zakresów
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów
   Gdy utworzysz <xref:Microsoft.Office.Interop.Word.Range> obiektu akapitu, wszystkie znaki niedrukowalne, takie jak znaczników akapitu w oparciu znajdują się w zakresie. Możesz wstawić tekst z akapitu źródła do akapitu docelowego. Jeśli nie chcesz podzielić akapitu docelowego na oddzielnych akapitów, następnie należy najpierw usunąć znacznik akapitu z akapitu źródła. Ponadto ponieważ informacje dotyczące formatowania akapitu są przechowywane w ramach znak, nie można uwzględniać to po włożeniu zakres do istniejącego akapitu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  Na poniższej przykładowej procedurze deklaruje dwóch zmiennych ciągu, pobiera zawartość akapitów pierwszego i drugiego w aktywnym dokumencie, a następnie wymiany ich zawartość. W przykładzie pokazano następnie usuwając znacznik akapitu z zakresu przy użyciu <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> — metoda i wstawianie tekstu akapitu.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu  
   
 1.  Utwórz dwie zmienne zakresu akapitów pierwszego i drugiego i pobrać jego zawartość <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dostosowaniach na poziomie dokumentu  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dostosowaniach na poziomie dokumentu  
   
 1.  W poniższym przykładzie przedstawiono metodę Zakończenie dostosowywania na poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.  
   
@@ -110,19 +111,19 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dodatku VSTO  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dodatku VSTO  
   
 1.  W poniższym przykładzie przedstawiono metodę pełną dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: programowane rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Porady: programowane zwijanie zakresów lub zaznaczenia w dokumentach](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Porady: programowane Wstawianie tekstu w dokumentach programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Porady: programowane Resetowanie zakresów w programie Word dokumentów](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Porady: programowane Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

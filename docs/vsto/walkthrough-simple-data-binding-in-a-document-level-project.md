@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1cae2ba32be73972e6c716e9100120514a6346cf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258144"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Wskazówki: proste powiązanie danych w projektach na poziomie dokumentów
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu
   W tym przewodniku przedstawiono podstawowe powiązanie danych w projektach na poziomie dokumentu. Jedno pole danych w bazie danych programu SQL Server jest powiązana z nazwanym zakresem w programie Microsoft Office Excel. Instruktaż także przedstawiono sposób dodawania kontrolek, które umożliwiają przewijać wszystkie rekordy w tabeli.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Uprawnienia do odczytu i zapisu w bazie danych programu SQL Server.  
   
-## <a name="creating-a-new-project"></a>Tworzenie nowego projektu  
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu  
  W tym kroku utworzysz projektu skoroszyt programu Excel.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje proste powiązanie danych**, za pomocą Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje proste powiązanie danych**, za pomocą Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje proste powiązanie danych** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="creating-the-data-source"></a>Tworzenie źródła danych  
+## <a name="create-the-data-source"></a>Utwórz źródło danych  
  Użyj **źródeł danych** okno, aby dodać typizowanego zestaw danych do projektu.  
   
-#### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
+### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku**, **inne okna**, **źródeł danych**.  
+1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
   
 2.  Wybierz **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
   
@@ -85,12 +86,12 @@ ms.lasthandoff: 04/16/2018
   
  Kreator dodaje **klientów** do tabeli **źródeł danych** okna. Dodano również typizowanego zestaw danych do projektu, które są widoczne w **Eksploratora rozwiązań**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
+## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  W ramach tego przewodnika wymagane są dwa zakresy nazwane i czterech przycisków w pierwszym arkuszu. Najpierw dodaj dwa zakresy nazwane z **źródeł danych** okna tak, aby automatycznie powiązanych ze źródłem danych. Następnie dodaj przycisków z **przybornika**.  
   
-#### <a name="to-add-two-named-ranges"></a>Aby dodać dwa zakresy nazwane  
+### <a name="to-add-two-named-ranges"></a>Aby dodać dwa zakresy nazwane  
   
-1.  Sprawdź, czy **Moje proste Binding.xlsx danych** skoroszyt jest otwarty w projektancie programu Visual Studio z **Sheet1 —** wyświetlane.  
+1.  Sprawdź, czy *Moje proste Binding.xlsx danych* skoroszyt jest otwarty w projektancie programu Visual Studio z **Sheet1 —** wyświetlane.  
   
 2.  Otwórz **źródeł danych** okna i rozwiń **klientów** węzła.  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  Inny <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `customerIDNamedRange` jest tworzony w komórce **B1**i powiązane z <xref:System.Windows.Forms.BindingSource>.  
   
-#### <a name="to-add-four-buttons"></a>Aby dodać czterech przycisków  
+### <a name="to-add-four-buttons"></a>Aby dodać czterech przycisków  
   
 1.  Z **formanty standardowe** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> formant w komórce **A3** arkusza.  
   
@@ -122,10 +123,10 @@ ms.lasthandoff: 04/16/2018
   
  Następnym krokiem jest dodanie tekstu do przycisków, a w języku C# dodać obsługę zdarzeń.  
   
-## <a name="initializing-the-controls"></a>Inicjowanie kontrolki  
+## <a name="initialize-the-controls"></a>Zainicjuj formanty  
  Należy ustawić tekst przycisku i dodać procedury obsługi zdarzeń podczas <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> zdarzeń.  
   
-#### <a name="to-initialize-the-controls"></a>Aby zainicjować kontrolki  
+### <a name="to-initialize-the-controls"></a>Aby zainicjować kontrolki  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
   
@@ -140,43 +141,43 @@ ms.lasthandoff: 04/16/2018
   
  Teraz Dodaj kod obsługi <xref:System.Windows.Forms.Control.Click> zdarzenia przycisków, dzięki czemu użytkownik może przeglądać rekordy.  
   
-## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Dodawanie kodu, aby włączyć przewijanie rekordów  
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>Dodaj kod, aby włączyć przewijanie rekordów  
  Dodaj kod, aby <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń w każdym przycisku, aby przechodzić.  
   
-#### <a name="to-move-to-the-first-record"></a>Aby przejść do pierwszego rekordu  
+### <a name="to-move-to-the-first-record"></a>Aby przejść do pierwszego rekordu  
   
 1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenie `Button1` przycisk i Dodaj następujący kod, aby przejść do pierwszego rekordu:  
   
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]  
   
-#### <a name="to-move-to-the-previous-record"></a>Przejście do poprzedniego rekordu  
+### <a name="to-move-to-the-previous-record"></a>Przejście do poprzedniego rekordu  
   
 1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenie `Button2` przycisk i Dodaj następujący kod, aby cofnąć pozycji o jeden:  
   
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]  
   
-#### <a name="to-move-to-the-next-record"></a>Aby przejść do następnego rekordu  
+### <a name="to-move-to-the-next-record"></a>Aby przejść do następnego rekordu  
   
 1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenie `Button3` przycisk i Dodaj następujący kod, aby przejść przez jedną pozycję:  
   
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]  
   
-#### <a name="to-move-to-the-last-record"></a>Przejdź do ostatniego rekordu  
+### <a name="to-move-to-the-last-record"></a>Przejdź do ostatniego rekordu  
   
 1.  Dodaj program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenie `Button4` przycisk i Dodaj następujący kod, aby przejść do ostatniego rekordu:  
   
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować skoroszytu, aby upewnić się, można przeglądać rekordy w bazie danych.  
   
-#### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
+### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Upewnij się, że pierwszy rekord jest wyświetlana w komórkach **A1** i **B1**.  
   
@@ -187,15 +188,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawowe informacje dotyczące powiązania nazwanego zakresu pola w bazie danych. Poniżej przedstawiono niektóre zadania, które mogą występować:  
   
--   Pamięci podręcznej danych, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane pamięci podręcznej do użycia w trybie Offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Pamięci podręcznej danych, dzięki czemu mogą być używane w trybie offline. Aby uzyskać więcej informacji, zobacz [porady: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Powiązać z komórek na wiele kolumn w tabeli, a nie jedno pole. Aby uzyskać więcej informacji, zobacz [wskazówki: złożone powiązanie danych w projektach na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Użyj <xref:System.Windows.Forms.BindingNavigator> sterowania do przewijania rekordów. Aby uzyskać więcej informacji, zobacz [porady: nawigowanie danych za pomocą BindingNavigator formularzy systemu Windows](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Użyj <xref:System.Windows.Forms.BindingNavigator> sterowania do przewijania rekordów. Aby uzyskać więcej informacji, zobacz [porady: nawigowanie w danych za pomocą formantu BindingNavigator formularzy systemu Windows](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)   
- [Przewodnik: Złożone powiązanie danych w projektach na poziomie dokumentów](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+ [Wskazówki: Złożone powiązanie danych w projektach na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
   
   

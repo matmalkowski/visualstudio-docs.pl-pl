@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Wstawianie tekstu w dokumentach programu Word | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane Wstawianie tekstu w dokumentach programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257215"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Porady: Programowane wstawianie tekstu w dokumentach programu Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Porady: programowane Wstawianie tekstu w dokumentach programu Word
   Istnieją trzy główne metody Wstawianie tekstu w dokumentach programu Microsoft Office Word:  
   
 -   Wstawianie tekstu w zakresie.  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
 -   Użyj <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, aby wstawić tekst na kursora lub zaznaczenia.  
   
 > [!NOTE]  
->  Można również wstawić tekst do formantów zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [formantów zawartości](../vsto/content-controls.md) i [formant zakładki](../vsto/bookmark-control.md).  
+>  Można również wstawić tekst do formantów zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md) i [BOOKMARK, formant:](../vsto/bookmark-control.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Wstawianie tekstu w zakresie  
+## <a name="insert-text-in-a-range"></a>Wstawianie tekstu w zakresie  
  Użyj <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range> obiektu Wstawianie tekstu w dokumencie.  
   
-#### <a name="to-insert-text-in-a-range"></a>Wstawianie tekstu w zakresie  
+### <a name="to-insert-text-in-a-range"></a>Wstawianie tekstu w zakresie  
   
 1.  Określ zakres na początku dokumentu i wstawić tekst **nowy tekst**.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Zastępowanie tekstu w zakresie  
+## <a name="replace-text-in-a-range"></a>Zastąp tekst w zakresie  
  Jeśli określony zakres zawiera tekst, cały tekst w zakresie jest zastępowany wstawionego tekstu.  
   
-#### <a name="to-replace-text-in-a-range"></a>Aby zastąpić tekst w zakresie  
+### <a name="to-replace-text-in-a-range"></a>Aby zastąpić tekst w zakresie  
   
 1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwsze 12 znaków w dokumencie.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>Wstawianie tekstu przy użyciu obiektu TypeText  
+## <a name="insert-text-using-typetext"></a>Wstaw tekst przy użyciu obiektu TypeText  
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metody wstawia tekst w zaznaczenia. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> zachowuje się inaczej w zależności od opcji na komputerze użytkownika. Kod w poniższej procedurze deklaruje <xref:Microsoft.Office.Interop.Word.Selection> zmiennej obiektu i wyłącza **zastępowania** opcji w przypadku, gdy jest włączona. Jeśli **zastępowania** opcja jest aktywna, a następnie tekst obok kursora jest zastępowany.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>Aby wstawić tekst przy użyciu metody obiektu TypeText  
+### <a name="to-insert-text-using-the-typetext-method"></a>Aby wstawić tekst przy użyciu metody obiektu TypeText  
   
 1.  Deklarowanie <xref:Microsoft.Office.Interop.Word.Selection> zmienna obiektu.  
   
@@ -120,16 +121,16 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Można również użyć <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, który naśladuje funkcji klawisza na klawiaturze. Jednak jeśli chodzi o Wstawianie i operowanie nimi tekstu, <xref:Microsoft.Office.Interop.Word.Range> obiektu zapewnia większą kontrolę.  
+ Można również użyć <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, który naśladuje funkcjonalność **Backspace** klucza na klawiaturze. Jednak jeśli chodzi o Wstawianie i operowanie nimi tekstu, <xref:Microsoft.Office.Interop.Word.Range> obiektu zapewnia większą kontrolę.  
   
  Poniższy przykład przedstawia kompletny kod. Aby użyć tego przykładu, należy uruchomić kod z `ThisDocument` lub `ThisAddIn` klasy w projekcie.  
   
  [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: programowane formatowanie tekstu w dokumentach](../vsto/how-to-programmatically-format-text-in-documents.md)   
  [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Instrukcje: Programowe rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+ [Porady: programowane rozszerzanie zakresów w dokumentach](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

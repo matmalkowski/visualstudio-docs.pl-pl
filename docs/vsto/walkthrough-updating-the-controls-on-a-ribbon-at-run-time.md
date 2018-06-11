@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Aktualizowanie formantów na Wstążce w czasie wykonywania | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Aktualizowanie formantów na Wstążce w czasie wykonywania'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10577f1ca996913ed91f07a7609c59eb9805bced
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258804"
 ---
-# <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Wskazówki: aktualizowanie formantów na wstążce w czasie wykonywania
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Wskazówki: Aktualizowanie formantów na Wstążce w czasie wykonywania
   W tym przewodniku przedstawiono sposób użycia model obiektu Wstążka zaktualizować formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/16/2018
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie nowego projektu dodatku VSTO dla programu Outlook.  
+-   Utwórz nowy projekt dodatku VSTO dla programu Outlook.  
   
 -   Projektowanie niestandardową grupę wstążki.  
   
--   Dodawanie niestandardowych grup do wbudowanej karty.  
+-   Dodaj niestandardową grupę do wbudowanej karty.  
   
 -   Aktualizowanie formantów na Wstążce w czasie wykonywania.  
   
@@ -53,10 +54,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Program Microsoft Outlook  
   
-## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Tworzenie nowego programu Outlook VSTO dodatku projektu  
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>Utwórz nowy projekt dodatku VSTO dla programu Outlook  
  Najpierw utwórz projektów dodatku VSTO dla programu Outlook.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook  
   
 1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], tworzenie projektów dodatku VSTO dla programu Outlook o nazwie **Ribbon_Update_At_Runtime**.  
   
@@ -64,12 +65,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zapisz projekt w katalogu projektu.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="designing-a-custom-ribbon-group"></a>Projektowanie niestandardowe grupy wstążek  
- Wstążki w tym przykładzie będą wyświetlane, gdy użytkownik Redaguj nową wiadomość e-mail. Aby utworzyć niestandardową grupę na Wstążce, najpierw Dodaj element wstążki do projektu, a następnie projektowania grupy w Projektancie wstążki. Ta grupa niestandardowych pomoże Generowanie kolejnych wiadomości do klientów przez ściąganie nazwy i kolejność historii z bazy danych.  
+## <a name="design-a-custom-ribbon-group"></a>Projektowanie niestandardową grupę wstążki  
+ Wstążki w tym przykładzie będą wyświetlane, gdy użytkownik Redaguj nową wiadomość e-mail. Aby utworzyć niestandardową grupę na Wstążce, najpierw Dodaj element wstążki do projektu, a następnie projektowania grupy w Projektancie wstążki. Ta grupa niestandardowych pomoże generują komunikaty kolejną wiadomość e-mail do klientów przez ściąganie nazwy i kolejność historii z bazy danych.  
   
-#### <a name="to-design-a-custom-group"></a>Projekt grupy niestandardowej  
+### <a name="to-design-a-custom-group"></a>Projekt grupy niestandardowej  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zmień nazwę nowego wstążki do **CustomerRibbon**, a następnie kliknij przycisk **Dodaj**.  
   
-     **CustomerRibbon.cs** lub **CustomerRibbon.vb** plik zostanie otwarty w Projektancie Wstążki i wyświetla kartę domyślne i grupy.  
+     *CustomerRibbon.cs* lub *CustomerRibbon.vb* plik zostanie otwarty w Projektancie Wstążki i wyświetla kartę domyślne i grupy.  
   
 4.  Kliknij przycisk projektanta wstążki, aby go wybrać.  
   
@@ -101,12 +102,12 @@ ms.lasthandoff: 04/16/2018
   
 13. Ustaw **dynamiczne** do **true**.  
   
-     Dzięki temu można dodawać i usuwać formanty w menu w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.  
+     Dzięki temu można dodawać i usuwać formanty menu w czasie wykonywania, po załadowaniu wstążki do aplikacji pakietu Office.  
   
-## <a name="adding-the-custom-group-to-a-built-in-tab"></a>Dodawanie grup niestandardowych do wbudowanej karty  
+## <a name="add-the-custom-group-to-a-built-in-tab"></a>Dodaj niestandardową grupę do wbudowanej karty  
  Tabulator wbudowana jest kartę, która jest już na wstążce programu Outlook Eksploratora lub Inspektora. W tej procedurze zostanie dodaj niestandardową grupę do wbudowanej karty, a następnie określić położenie niestandardowe grupy na karcie.  
   
-#### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Aby dodać niestandardową grupę do wbudowanej karty  
+### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Aby dodać niestandardową grupę do wbudowanej karty  
   
 1.  Kliknij przycisk **TabAddins (wbudowane)** kartę, aby go wybrać.  
   
@@ -122,10 +123,10 @@ ms.lasthandoff: 04/16/2018
   
      To umieszcza **zakupy klienta** grupy przed **Schowka** grupy **wiadomości** kartę.  
   
-## <a name="creating-the-data-source"></a>Tworzenie źródła danych  
+## <a name="create-the-data-source"></a>Utwórz źródło danych  
  Użyj **źródeł danych** okno, aby dodać typizowanego zestaw danych do projektu.  
   
-#### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
+### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
 1.  Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych**.  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
 9. Kliknij przycisk **Zakończ**.  
   
-## <a name="updating-controls-in-the-custom-group-at-run-time"></a>Aktualizowanie formantów w grup niestandardowych w czasie wykonywania  
+## <a name="update-controls-in-the-custom-group-at-runtime"></a>Zaktualizuj Kontrolki niestandardowe grupy w czasie wykonywania  
  Model obiektu Wstążka umożliwia wykonywanie następujących zadań:  
   
 -   Dodaj nazwy klienta do **klientów** pola kombi.  
@@ -164,7 +165,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Wypełnij do, tematu i treści pól nowe wiadomości e-mail przy użyciu danych z **klientów** pole kombi i **zakupionych produktów** menu.  
   
-#### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Aby zaktualizować formantów w niestandardowej grupie za pomocą modelu obiektów wstążki  
+### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Aby zaktualizować formantów w niestandardowej grupie za pomocą modelu obiektów wstążki  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.  
   
@@ -183,12 +184,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Dodaj następujący kod w klasie CustomerRibbon. Ten kod deklaruje tabeli danych i adaptery tabel, które będą używane do przechowywania informacji z klienta, zamówienia, szczegółów zamówienia i produktu tabele bazy danych Northwind.  
+6.  Dodaj następujący kod wewnątrz `CustomerRibbon` klasy. Ten kod deklaruje tabeli danych i adaptery tabel, które będą używane do przechowywania informacji z klienta, zamówienia, szczegółów zamówienia i produktu tabele bazy danych Northwind.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Dodaj następujący blok kodu do `CustomerRibbon` klasy. Ten kod dodaje trzy metody pomocnicze, które Tworzenie formantów wstążki w czasie wykonywania.  
+7.  Dodaj następujący blok kodu do `CustomerRibbon` klasy. Ten kod dodaje trzy metody pomocnicze, które Tworzenie formantów na Wstążce w czasie wykonywania.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
@@ -230,7 +231,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Dodaj następujące kliknij program obsługi zdarzeń do `CustomerRibbon` klasy. Ten kod dodaje nazwę zaznaczonych produktów do pola treści nowe wiadomości e-mail.  
+13. Dodaj następujące `Click` program obsługi zdarzeń do `CustomerRibbon` klasy. Ten kod dodaje nazwę zaznaczonych produktów do pola treści nowe wiadomości e-mail.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
@@ -244,14 +245,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
-## <a name="testing-the-controls-in-the-custom-group"></a>Testowanie formantów w grup niestandardowych  
+## <a name="test-the-controls-in-the-custom-group"></a>Testowanie Kontrolki niestandardowe grupy  
  Po otwarciu nowego formularza poczty programu Outlook niestandardową grupę o nazwie **zakupy klienta** pojawia się na **wiadomości** karty wstążki.  
   
- Utwórz wiadomość e-mail kolejnych klienta, wybierz klienta, a następnie wybierz produktów zakupionych przez klienta. Formanty w **zakupy klienta** grupy są aktualizowane w czasie wykonywania danymi z bazy danych Northwind.  
+ Aby utworzyć komunikat kolejną wiadomość e-mail klienta, wybierz klienta, a następnie wybierz produktów zakupionych przez klienta. Formanty w **zakupy klienta** grupy są aktualizowane podczas pracy z danymi z bazy danych Northwind.  
   
-#### <a name="to-test-the-controls-in-the-custom-group"></a>Aby przetestować Kontrolki niestandardowe grupy  
+### <a name="to-test-the-controls-in-the-custom-group"></a>Aby przetestować Kontrolki niestandardowe grupy  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
      Uruchamia program Outlook.  
   
@@ -273,7 +274,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Każdy podmenu zamówienie jest aktualizowana w celu wyświetlenia produktów zakupionych w podanej kolejności.  
   
-    -   Adres e-mail odbiorcy jest dodawany do **do** wiersza wiadomości e-mail, tematu i treści wiadomości e-mail są wypełniane przy użyciu tekstu.  
+    -   Adres e-mail wybranego klienta zostanie dodany do **do** wiersza wiadomości e-mail, tematu i treści wiadomości e-mail są wypełniane przy użyciu tekstu.  
   
 4.  Kliknij przycisk **zakupy produktów** menu wskaż w dowolnej kolejności sprzedaży, a następnie kliknij produktu z zamówienia sprzedaży.  
   
@@ -288,8 +289,8 @@ ms.lasthandoff: 04/16/2018
   
 -   Dodawanie niestandardowego okienka zadań do programu Outlook. Aby uzyskać więcej informacji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [Zapytanie o języku zintegrowanym (LINQ)](/dotnet/csharp/linq/index)   
  [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
@@ -299,8 +300,8 @@ ms.lasthandoff: 04/16/2018
  [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
- [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Instrukcje: Pokazywanie błędów dodatków interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

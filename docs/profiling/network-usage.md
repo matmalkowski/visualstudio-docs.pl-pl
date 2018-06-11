@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5221b8683a871baec94bea144d22932832cad77e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256087"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji sieciowych wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dotyczące dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i Pobierz wydajności.  
@@ -71,8 +72,8 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacji
   
 3.  Przycisk pretty drukowania odpowiedzi (wewnątrz karta Treść) może pomóc przeanalizować za pośrednictwem ładunków odpowiedzi JSON, XML, HTML, CSS, JavaScript i TypeScript, zwiększając czytelność zawartości.  
   
-## <a name="see-also"></a>Zobacz też  
- [Uruchom narzędzia profilowania z lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio blogu: Inspektor sieci Introducing programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Wideo Channel 9: Narzędzia diagnostyki VS - nowej sieci profilera](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  

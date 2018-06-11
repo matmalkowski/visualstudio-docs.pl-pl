@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 99e46e6e21eb08095aab0fe4f0baa9486ad3f721
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255931"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debuger programu Visual Studio
 Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następujące czynności  
@@ -31,17 +32,17 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
   
  W tym temacie opisano sposób narzędzie wykorzystanie pamięci do analizowania aplikacji platformy uniwersalnej systemu Windows w języku XAML. Jeśli chcesz Analiza użycia pamięci w aplikacji platformy uniwersalnej systemu Windows używającej języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Uruchom sesję diagnostyki użycia pamięci  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Uruchom sesję diagnostyki użycia pamięci  
   
 1.  Otwórz projekt C# uniwersalnych systemu Windows w programie Visual Studio.  
   
-2.  Na pasku menu wybierz **debugowania** > **wydajności programu profilującego**.  
+2.  Na pasku menu wybierz **debugowania**>**wydajności programu profilującego**.  
   
 3.  Wybierz **użycie pamięci** , a następnie wybierz **Start** u dołu strony.  
   
      ![Uruchom sesję diagnostyki użycia pamięci](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Monitorowanie użycia pamięci  
+## <a name="monitor-memory-use"></a>Monitorowanie użycia pamięci  
  Chociaż można używać **użycie pamięci** narzędzie do generowania szczegółowe raporty, które służy do znajdowania i rozwiązywania problemów, należy również służy do pamięci w czasie rzeczywistym skutki scenariusza aktywnie projektujesz.  
   
  Po uruchomieniu sesji diagnostycznej uruchamia aplikację i **narzędzia diagnostyczne** okna wykres oś czasu aplikacji wykorzystanie pamięci.  
@@ -55,12 +56,12 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
   
  Aby zatrzymać sesji monitorowania bez tworzenia raportu, zamknij okna diagnostyki. Aby wygenerować raport po wykonaniu migawki pamięci, należy wybrać **zatrzymać**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Twórz migawki pamięci stanu aplikacji  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Twórz migawki pamięci stanu aplikacji  
  Jeśli użytkownik stwierdzi, problem pamięci, który chcesz zbadać, można wykonać migawki podczas sesji diagnostycznej do przechwytywania obiektów w pamięci w szczególności momentach. Ponieważ aplikacja używa wielu różnych typów obiektów, możesz skoncentrować się analizy na jednym ze scenariuszy. Jest również dobrym rozwiązaniem do uzyskania migawki linii bazowej aplikacji przed wyświetleniem problem pamięci, kolejną migawkę po pierwszym wystąpieniu problemu i co najmniej jednej migawki dodatkowe Jeśli można powtarzać tego scenariusza.  
   
  Aby zebrać migawki, należy uruchomić nowej sesji diagnostycznej. Wybierz **wykonać migawki** kiedy zachodzi potrzeba przechwytywania danych pamięci. Aby wygenerować raport, należy wybrać **zatrzymać**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Strona omówienia użycia pamięci  
+##  <a name="memory-usage-overview-page"></a>Strona omówienia użycia pamięci  
  Po zatrzymaniu zbierania danych narzędzie użycie pamięci zatrzymuje aplikację i wyświetla Przegląd raport.  
   
  ![Strona omówienia użycia pamięci](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -83,7 +84,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 |![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Tekst łącza pokazano różnicę między łączny rozmiar obiektów w pamięci w tej chwili tej migawki i łączny rozmiar poprzednią migawkę.<br /><br /> Jeśli rozmiar pamięci to migawka jest większy niż poprzedniego i liczbą ujemną, gdy rozmiar jest mniejszy, tekstu łącza jest liczbą dodatnią. Tekst łącza **linii bazowej** wskazuje, że ta migawka jest pierwszy w sesji diagnostycznej; **Różnica nie** wskazuje, że różnica wynosi zero.<br /><br /> Wybierz to łącze, aby wyświetlić raport różnicowego migawki posortowanej według różnicy całkowity rozmiar wystąpień typów.|  
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Tekst łącza pokazano różnicę między całkowita liczba obiektów pamięci w tej migawce, a liczba obiektów w poprzednią migawkę.<br /><br /> Wybierz ten link, aby wyświetlić migawki raportu różnicowego, który jest sortowana według różnicy w łącznej liczbie wystąpień typów.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Raporty migawki  
+## <a name="snapshot-reports"></a>Raporty migawki  
  ![Użycie pamięci migawki raportu](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Migawki raportu drzewa  
@@ -118,7 +119,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 ####  <a name="BKMK_Just_My_Code"></a> Tylko mój kod  
  **Tylko mój kod** filtru ukrywa największą liczbą wystąpień, które zostały wygenerowane przez kod zewnętrzny. Zewnętrzne typy należą do firmy przez system operacyjny lub składników Framework lub są generowane przez kompilator.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Raporty szczegóły migawki  
+## <a name="snapshot-details-reports"></a>Raporty szczegóły migawki  
  Raport szczegóły migawki umożliwia skupić się na jednej migawki z sesji diagnostycznej. Aby otworzyć raport szczegóły, wybierz jedną z łącza w widoku migawki, jak pokazano na poniższej ilustracji. Łącza Otwórz ten sam raport; Jedyna różnica polega na początkową kolejność sortowania **zarządzanej sterty** drzewa w raporcie. W obu przypadkach można zmienić kolejność sortowania, po otwarciu raportu.  
   
  ![Łącza do migawki raportu w widoku migawki](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 |**Rozmiar (w bajtach)**|Dla typu, rozmiaru wszystkich wystąpień tego typu, z wyłączeniem rozmiar obiektów zawartych w typie.<br /><br /> W przypadku wystąpienia rozmiar obiektu, z wyłączeniem rozmiar obiektów zawartych w tym obiekcie.|  
 |**Całkowity rozmiar (w bajtach)**|Całkowity rozmiar wystąpienia typu lub rozmiaru wystąpienia, takich jak rozmiar zawartych w nim obiektów.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Raporty migawki różnica (diff)  
+## <a name="snapshot-difference-diff-reports"></a>Raporty migawki różnica (diff)  
  Migawki raportu różnicowego (diff) zawiera zmiany między podstawowym migawki i migawki, która została wykonana bezpośrednio przed. Aby otworzyć raport różnicowego, wybierz jedną z łącza w widoku migawki, jak pokazano na poniższej ilustracji. Łącza Otwórz ten sam raport; Jedyna różnica polega na początkową kolejność sortowania **zarządzanej sterty** drzewa w raporcie. Po otwarciu raportu, można zmienić kolejności sortowania.  
   
  ![Łącza do różnica raportu w widoku migawki](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  

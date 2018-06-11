@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254273"
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
-Filtr widoku raportów profilera okna znajduje się u góry okna Raport wydajności. Jeśli nie widzisz, kliknij przycisk **Pokaż filtru** przycisku.  
+**Filtr widoku raportów profilera** okna znajduje się w górnej części **raport wydajności** okna. Jeśli nie widzisz, kliknij przycisk **Pokaż filtru** przycisku.  
   
  Można zmodyfikować każdej klauzuli filtru, aby uściślić wyniki. Następujące kolumny są dostępne w Konstruktorze filtru.  
   
@@ -35,8 +36,8 @@ Filtr widoku raportów profilera okna znajduje się u góry okna Raport wydajno�
   
  Z **znaczniki** widoku raportu, można wygenerować filtru klauzule ograniczające danych w widoku raportu do danych zbieranych pomiędzy dwoma znakami. Wybierz te znaczniki, które mają być rozpoczęcia i zakończenia raportu danych, następnie kliknij prawym przyciskiem myszy i wybierz opcję **Dodaj filtr na znaki** lub **Dodaj filtr na sygnatury czasowe**. Obu filtrów ograniczenie danych w bieżącym pliku danych do tego samego zakresu; **Dodaj filtr na znaki** może odnosić się do innych plików Vsp.  
   
- Aby zapisać filtr, kliknij przycisk **wyeksportować filtru** na pasku narzędzi wydajności, a następnie określ lokalizację i nazwę pliku dla pliku .vspf. Aby załadować uprzednio zapisanego filtru, kliknij przycisk **Filtr importu** i zlokalizuj plik zapisany filtr. Filtr plików można również filtrować pliki danych na komputerach autonomicznych narzędzi profilowania zainstalowane. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+ Do zapisania filtru, kliknij przycisk **wyeksportować filtru** na **raport wydajności** narzędzi, a następnie określ lokalizację i nazwę pliku. *vspf* pliku. Aby załadować uprzednio zapisanego filtru, kliknij przycisk **Filtr importu** i zlokalizuj plik zapisany filtr. Filtr plików można również filtrować pliki danych na komputerach autonomicznych narzędzi profilowania zainstalowane. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Analizowanie danych narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

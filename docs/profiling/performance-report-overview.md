@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255996"
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
 Można wyświetlić danych profilowania w sesji wydajności **raport wydajności** okno programu Visual Studio Team System programowanie Edition zintegrowane środowisko programistyczne (IDE). Dane profilowania jest zapisywany w pliku Vsp i vsps plików. Podgląd raportów umożliwiają przeglądać i analizować problemy z wydajnością aplikacji.  
   
 > [!CAUTION]
->  Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersja systemu operacyjnego, ścieżki do pliku informacji o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, w formacie native plik Vsp i eksportowanych do pliku CSV lub plik XML.  
+>  Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersja systemu operacyjnego, ścieżki do pliku informacji o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, zarówno w jego macierzystego. *vsp* format oraz gdy są eksportowane do. *CSV* lub. *XML* pliku.  
 >   
->  Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane zdarzeń śledzenia plik dziennika (ETL). Te informacje obejmują nazwę domeny i użytkownika; w związku z tym należy utrzymywać ścisłą kontrolę nad dystrybucji pliku dziennika.  
+>  Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane w zdarzeniu dziennik śledzenia (. *etl*) pliku. Te informacje obejmują nazwę domeny i użytkownika; w związku z tym należy utrzymywać ścisłą kontrolę nad dystrybucji pliku dziennika.  
   
 ## <a name="performance-report-window"></a>Okno raportu wydajności  
  Okno Raport wydajności jest okna narzędzia, która jest używana do wyświetlania, zarządzania i filtrowanie danych wydajności, a także formantu można dostosowywać zapytania.  
@@ -70,7 +71,7 @@ Można wyświetlić danych profilowania w sesji wydajności **raport wydajności
  Widok wskaźnika instrukcji można wyświetlić szczegółowe instrukcje, które zostały wykonane podczas profilowania próbkowania. Aby uzyskać więcej informacji, zobacz [widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Widok alokacji  
- Widok alokacji jest dostępny jeśli **zbieranie .NET obiektu alokacji** został wybrany na **ogólne** strony **sesji wydajności** okno dialogowe właściwości. Zobacz [sesja wydajności — omówienie](../profiling/performance-session-overview.md). Widok alokacji wyszczególniono obiekty .NET przydzielone przez aplikację lub składnik. Po rozwinięciu wiersza obiektu jest wyświetlany drzewo wywołań. Drzewo wywołań pokazuje ścieżek wykonywania, które spowodowało utworzenie obiektu. Są także informacje o liczbę włącznie i wyłącznego alokacji dla każdej funkcji w drzewie wywołań. Widok alokacji można rozwinąć i wyróżnij ścieżkę wykonywania funkcji, które przydzielone największej liczby obiektów. Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**. Aby uzyskać więcej informacji, zobacz [zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).  
+ Widok alokacji jest dostępny jeśli **zbieranie .NET obiektu alokacji** został wybrany na **ogólne** strony **sesji wydajności** okno dialogowe właściwości. Zobacz [sesja wydajności — omówienie](../profiling/performance-session-overview.md). Widok alokacji wyszczególniono obiekty .NET przydzielone przez aplikację lub składnik. Po rozwinięciu wiersza obiektu jest wyświetlany drzewo wywołań. Drzewo wywołań pokazuje ścieżek wykonywania, które spowodowało utworzenie obiektu. Są także informacje o liczbę włącznie i wyłącznego alokacji dla każdej funkcji w drzewie wywołań. Widok alokacji można rozwinąć i wyróżnij ścieżkę wykonywania funkcji, które przydzielone największej liczby obiektów. Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**. Aby uzyskać więcej informacji, zobacz [danych pamięci .NET zbieranie alokacji i okresem istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Widok okresu istnienia obiektów  
  Widok okresu istnienia obiektu jest dostępna jeśli **.NET zbierać informacje dotyczące alokacji obiektów** i **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** zostały wybrane na **ogólne**strony **sesji wydajności** okno dialogowe właściwości.  
@@ -94,6 +95,6 @@ Można wyświetlić danych profilowania w sesji wydajności **raport wydajności
   
 -   **Eksportuj** -zapisuje w bieżącym raporcie. Sformatowany CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.  
   
-## <a name="see-also"></a>Zobacz też  
- [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Analizowanie danych narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

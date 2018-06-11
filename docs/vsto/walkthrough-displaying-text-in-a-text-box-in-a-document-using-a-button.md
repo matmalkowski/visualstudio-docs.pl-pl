@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 086137debfa35cb08dfa3b315208ce3686d74153
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257914"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Wskazówka: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Wskazówki: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym przewodniku pokazano, jak używać przycisków i pola tekstowe w dostosowaniu poziomie dokumentu dla programu Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -41,21 +42,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  Pierwszym krokiem jest utworzenie projektu dokument programu Word.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
 1.  Tworzenie projektu dokument programu Word o nazwie **Moje przycisk Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje przycisk Word** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-controls-to-the-word-document"></a>Dodawanie formantów do dokumentów programu Word  
+## <a name="add-controls-to-the-word-document"></a>Dodawanie formantów do dokumentów programu Word  
  Formanty interfejsu użytkownika składają się z przycisku i pola tekstowego na dokument programu Word.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Aby dodać przycisk i pole tekstowe  
+### <a name="to-add-a-button-and-a-text-box"></a>Aby dodać przycisk i pole tekstowe  
   
 1.  Sprawdź, czy dokument jest otwarty w projektancie programu Visual Studio.  
   
@@ -77,10 +78,10 @@ ms.lasthandoff: 04/16/2018
   
  Teraz można napisać kod, który będzie uruchamiany po kliknięciu przycisku.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Wypełnianie pola tekstowego, po kliknięciu przycisku  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Wypełnij pola tekstowego, po kliknięciu przycisku  
  Za każdym razem, gdy użytkownik kliknie przycisk **Hello World!** dodaje się do pola tekstowego.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Można zapisać w polu tekstowym, po kliknięciu przycisku  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Można zapisać w polu tekstowym, po kliknięciu przycisku  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
   
@@ -93,12 +94,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować dokument, aby upewnić się, że komunikat **Hello World!** zostanie wyświetlony w polu tekstowym, po kliknięciu przycisku.  
   
-#### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
+### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Kliknij przycisk.  
   
@@ -107,15 +108,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono podstawy za pomocą przycisków i pola tekstu w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą występować:  
   
--   Zmienianie formatowania za pomocą pola kombi Aby uzyskać więcej informacji, zobacz [wskazówki: zmiana dokumentu formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Zmienianie formatowania za pomocą pola kombi Aby uzyskać więcej informacji, zobacz [wskazówki: dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [wskazówki: Aktualizacja wykresu w dokumencie przy użyciu przycisków](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Formanty formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)   
- [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Porady: dodawanie formantów do dokumentów pakietu Office formularzy systemu Windows](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Formanty formularzy systemu Windows na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
+ [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Porady: dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
   
   

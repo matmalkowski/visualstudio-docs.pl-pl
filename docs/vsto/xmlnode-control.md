@@ -1,5 +1,5 @@
 ---
-title: Formant XMLNode | Dokumentacja firmy Microsoft
+title: formant XMLNode
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b21f6f4e84672d195b6147f73c513c1995200a03
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258892"
 ---
-# <a name="xmlnode-control"></a>Formant XMLNode
+# <a name="xmlnode-control"></a>formant XMLNode
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest przedstawioną wyłącznie do korzyści i użyj osób i organizacji, które znajdują się poza Stanami Zjednoczonymi i jego terytoriów lub używający lub tworzenie programy, które działają na, produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy plik XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word może nie być odczytywane lub używane przez osoby lub organizacji w Stanach Zjednoczonych lub w jego terytoriów użytkowników przy użyciu lub tworzenie programów uruchamianych na produktów Microsoft Word, które są licencjonowane przez firmę Microsoft po 10 stycznia 2010 ; te produkty nie będzie działać taka sama jak produktów licencjonowanych przed tą datą lub zakupione i licencję na korzystanie z niego poza Stanami Zjednoczonymi.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  <xref:Microsoft.Office.Tools.Word.XMLNode> Formantu można usunąć tylko przez usunięcie mapowania elementu w programie Word.  
   
-## <a name="binding-data-to-the-control"></a>Wiązanie danych do kontrolki  
+## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki  
  <xref:Microsoft.Office.Tools.Word.XMLNode> Sterowanie obsługuje proste powiązanie danych. Węzeł XML powinien być związany ze źródłem danych przy użyciu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości. Jeśli dane w zestawie danych powiązane są aktualizowane, <xref:Microsoft.Office.Tools.Word.XMLNode> kontroli odzwierciedla zmiany.  
   
 ## <a name="formatting"></a>Formatowanie  
@@ -57,10 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>  
   
-## <a name="comparing-events"></a>Porównywanie zdarzenia  
+## <a name="compare-events"></a>Porównanie zdarzenia  
  Można przechwycić zdarzenie, gdy użytkownik przesuwa kursor lub jej w kontekście określonego <xref:Microsoft.Office.Tools.Word.XMLNode> formantu. Na przykład może być <xref:Microsoft.Office.Tools.Word.XMLNode> formantu o nazwie `Customer` ma element podrzędny <xref:Microsoft.Office.Tools.Word.XMLNode> formantu o nazwie `Company`, i `Company` ma dwa podrzędny <xref:Microsoft.Office.Tools.Word.XMLNode> formantów `CompanyName` i `CompanyRegion` w następujący sposób:  
   
-```  
+```xml  
 <Customer>  
     <Company>  
         <CompanyName>  
@@ -79,12 +80,12 @@ ms.lasthandoff: 04/16/2018
   
  Tym samym różnice między <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> zdarzeń i <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> zdarzeń.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Formant XMLNodes](../vsto/xmlnodes-control.md)   
  [Porady: dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
  [Porady: mapowanie schematów z dokumentami programu Word w Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

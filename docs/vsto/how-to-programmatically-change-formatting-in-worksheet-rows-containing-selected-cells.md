@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35f0475a15b41b63b99c08a90ebbf724b0adaed8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a4f71af9e19cbb9eaefd2937e498b0e59cc2b8f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256383"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Porady: Programowane zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
   Można zmienić czcionkę cały wiersz zawierający zaznaczonej komórki, dzięki czemu tekst jest pogrubiony.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubienie bieżącego wiersza i normalnej wcześniej pogrubiony wiersza  
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubienie bieżącego wiersza i normalnej wcześniej pogrubiony wiersza  
   
 1.  Należy zadeklarować zmienną statyczną, aby śledzić wcześniej wybrany wiersz.  
   
@@ -71,10 +72,10 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
  [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Porady: programowane kopiowanie danych i formatowanie między arkuszami](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9b9296bd57e7f3057dfbca86c16b1ac41418ba0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1ff950e5e4f67321b4bb5f90f9220aa701c02463
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258609"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Wskazówki: Pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze
   W tym przewodniku pokazano, jak można pobrać danych z zestawu danych, który jest w pamięci podręcznej programu Microsoft Excel pakietu Office bez uruchamiania programu Excel za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.  
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Tworzenie projektu biblioteki klas, który definiuje zestaw danych  
  Aby użyć tego samego zestawu danych w projekcie skoroszytu programu Excel i aplikacji konsoli, należy zdefiniować element dataset w osobny zestaw, do którego odwołuje się obu tych projektów. W ramach tego przewodnika Definiowanie zestawu danych w projektach biblioteki klas.  
   
-#### <a name="create-the-class-library-project"></a>Tworzenie projektu biblioteki klas  
+### <a name="create-the-class-library-project"></a>Tworzenie projektu biblioteki klas  
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 05/17/2018
   
  Zestaw danych jest *wpisane dataset* reprezentujący dane w tabeli Produkty bazy danych AdventureWorksLT. Aby uzyskać więcej informacji na temat typizowane zbiory danych, zobacz [narzędzia zestawu danych w programie Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Definiowanie typizowanego obiektu dataset w projektu biblioteki klas  
+### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Definiowanie typizowanego obiektu dataset w projektu biblioteki klas  
   
 1.  W **Eksploratora rozwiązań**, kliknij przycisk **AdventureWorksDataSet** projektu.  
   
@@ -125,7 +126,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-an-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
  Tworzenie projektu skoroszyt programu Excel dla interfejsu do danych. W dalszej części tego przewodnika, utworzysz <xref:Microsoft.Office.Tools.Excel.ListObject> wyświetlający danych i wystąpienia zestawu danych zostaną dodane do pamięci podręcznej danych w skoroszycie.  
   
-#### <a name="create-the-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
+### <a name="create-the-excel-workbook-project"></a>Tworzenie projektu skoroszyt programu Excel  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksDataSet** rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**.  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="checkpoint"></a>Punkt kontrolny  
  Tworzenie i uruchamianie projektu skoroszytu programu Excel, aby upewnić się, że kompiluje i uruchamia bez błędów. Ta operacja również wypełnienia pamięci podręcznej zestawu danych i zapisuje dane w skoroszycie.  
   
-#### <a name="build-and-run-the-project"></a>Tworzenie i uruchamianie projektu  
+### <a name="build-and-run-the-project"></a>Tworzenie i uruchamianie projektu  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **AdventureWorksReport** projektu, wybierz **debugowania**, a następnie kliknij przycisk **Start nowe wystąpienie**.  
   
@@ -233,11 +234,11 @@ ms.lasthandoff: 05/17/2018
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>Pobieranie danych z pamięci podręcznej zestawu danych przy użyciu aplikacji konsoli  
  Użyj <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w aplikacji konsoli, aby odczytać dane na komputerze lokalnym `AdventureWorksLTDataSet` obiektu. Aby upewnić się, że lokalne zestaw danych został zainicjowany przy użyciu danych z pamięci podręcznej zestawu danych, aplikacja wyświetla liczbę wierszy w zestawie danych lokalnych.  
   
-#### <a name="retrieve-data-from-the-cached-dataset"></a>Pobieranie danych z pamięci podręcznej zestawu danych  
+### <a name="retrieve-data-from-the-cached-dataset"></a>Pobieranie danych z pamięci podręcznej zestawu danych  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projekt i kliknij przycisk **Dodaj odwołanie**.  
   
-2.  Na **.NET** , a następnie wybierz Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+2.  Na **.NET** wybierz opcję **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
   
 3.  Kliknij przycisk **OK**.  
   
@@ -282,7 +283,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="test-the-project"></a>Projekt testowy  
  Po uruchomieniu aplikacji konsoli, wyświetla liczbę wierszy w zestawie danych lokalnych.  
   
-#### <a name="test-the-workbook"></a>Testowanie skoroszytu  
+### <a name="test-the-workbook"></a>Testowanie skoroszytu  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projektu, wskaż pozycję **debugowania**, a następnie kliknij przycisk **Start nowe wystąpienie**.  
   

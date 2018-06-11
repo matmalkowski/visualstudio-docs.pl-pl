@@ -10,11 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3d392a24aa4a901e26a3e6cee3909aae581d3505
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90b9cfa94189e52a49e6ba22cc700568a21f9c91
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255239"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim na komputerze Mac, które opcjonalnie Visual Studio umożliwia maszynie wirtualnej systemu Windows na komputerach Mac. Jeśli jesteś deweloperem pracy przede wszystkim na komputerze z systemem Windows i należy skonfigurować dodatkowej Mac przeznaczony dla systemu iOS, znajduje się w [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) tematu.
@@ -43,7 +44,7 @@ W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim n
 
 ##  <a name="windows"></a> Instalator systemu Windows wewnątrz równoleżników (Visual Studio i Xamarin)
 
-1.  Korzystanie z pulpitu systemu Windows, skonfigurowanego wewnątrz równoleżników/VMWare [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja; wersje Professional i Enterprise może służyć próbny o 30 dni.
+1.  Korzystanie z pulpitu systemu Windows, skonfigurowanego wewnątrz równoleżników/VMWare [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja; wersje Professional i Enterprise może służyć próbny o 30 dni.
 
 2.  W ramach Instalatora, kliknij przycisk **dodatkowymi opcjami** przycisk (trzy paski ikona) _obok pozycji_ **uruchamianie** wybierz **Modyfikuj**.:  
   

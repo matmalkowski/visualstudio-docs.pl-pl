@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Dodawanie nowych arkuszy ze skoroszytami | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane Dodawanie nowych arkuszy ze skoroszytami'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 934b3cb9b333c1cd9c551346eb7ac30edcd5e368
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80e3ddaa3edd4520e16c8733d3310497ab4ea5af
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255014"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Porady: Programowane dodawanie nowych arkuszy do skoroszytu
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Porady: programowane Dodawanie nowych arkuszy ze skoroszytami
   Można programowo utworzyć arkusz, a następnie dodaj arkusz do kolekcji arkuszy w skoroszycie.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>Aby dodać nowy arkusz do skoroszytu w dostosowaniu poziomie dokumentu  
+## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>Aby dodać nowy arkusz do skoroszytu w dostosowaniu poziomie dokumentu  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> metody <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji.  
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/16/2018
   
      Nowy arkusz jest natywny <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu, a nie element hosta. Jeśli chcesz dodać <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta, należy dodać arkusza w czasie projektowania.  
   
-### <a name="to-add-a-new-worksheet-to-a-workbook-in-a-vsto-add-in"></a>Aby dodać nowy arkusz do skoroszytu w dodatku VSTO  
+## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-vsto-add-in"></a>Aby dodać nowy arkusz do skoroszytu w dodatku VSTO  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> metody <xref:Microsoft.Office.Interop.Excel.Sheets> kolekcji.  
   
@@ -47,13 +48,13 @@ ms.lasthandoff: 04/16/2018
   
      Nowy arkusz jest natywny <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu, a nie element hosta. Można również generować <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta z natywnego <xref:Microsoft.Office.Interop.Excel.Worksheet> obiektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
  [Porady: programowane usuwanie arkuszy ze skoroszytu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
  [Porady: programowane Zaznaczanie arkuszy](../vsto/how-to-programmatically-select-worksheets.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

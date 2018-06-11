@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane wyznaczanie bieżącego elementu programu Outlook | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane wyznaczanie bieżącego elementu programu Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e18c9fabd3d568d7663be9fecd6724edbafdbdfd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257053"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Porady: Programowane wyznaczanie bieżącego elementu programu Outlook
-  W tym przykładzie użyto Explorer.SelectionChange zdarzeń, aby wyświetlić nazwę w bieżącym folderze i niektóre informacje na temat wybranego elementu. Następnie kod wyświetla wybrany element.  
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Porady: programowane wyznaczanie bieżącego elementu programu Outlook
+  W tym przykładzie użyto `Explorer.SelectionChange` zdarzenie, aby wyświetlić nazwę bieżącego folderu i niektóre informacje na temat wybranego elementu. Następnie kod wyświetla wybrany element.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,14 +34,14 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_OL_CurrentItem#1](../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_CurrentItem#1](../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>Kompilowanie kodu  
+## <a name="compile-the-code"></a>Kompilowanie kodu  
  Ten przykład wymaga:  
   
 -   Termin, skontaktuj się z pomocą i elementów poczty e-mail w programie Microsoft Office Outlook.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)   
- [Porady: programowane pobieranie folderu na podstawie nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Instrukcje: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
+ [Porady: programowane pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Porady: programowane wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
   
   

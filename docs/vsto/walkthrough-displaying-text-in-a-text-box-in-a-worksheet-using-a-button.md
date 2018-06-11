@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258444"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Wskazówki: wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
-  W tym przewodniku przedstawiono podstawy za pomocą przycisków i pola tekstowe w arkuszach programu Microsoft Office Excel i tworzenie projekty programu Excel za pomocą narzędzi programowania pakietu Office w Visual Studio. Aby zobaczyć wynik jako ukończonego próbki, zobacz przykład formanty programu Excel w [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Wskazówki: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
+  W tym przewodniku przedstawiono podstawy za pomocą przycisków i pola tekstowe w arkuszach programu Microsoft Office Excel i tworzenie projekty programu Excel za pomocą narzędzi programowania pakietu Office w Visual Studio. Aby zobaczyć wynik jako ukończonego próbki, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -47,19 +48,19 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  W tym kroku utworzysz projektu skoroszyt programu Excel za pomocą programu Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje przycisk Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu skoroszyt programu Excel o nazwie **Moje przycisk Excel**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje przycisk Excel** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
+## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  W ramach tego przewodnika należy przycisk i pole tekstowe z pierwszego arkusza.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Aby dodać przycisk i pole tekstowe  
+### <a name="to-add-a-button-and-a-text-box"></a>Aby dodać przycisk i pole tekstowe  
   
 1.  Sprawdź, czy **Moje Button.xlsx Excel** skoroszyt jest otwarty w projektancie programu Visual Studio z `Sheet1` wyświetlane.  
   
@@ -78,10 +79,10 @@ ms.lasthandoff: 04/16/2018
   
  Teraz można napisać kod uruchamiany, gdy przycisk zostanie kliknięty.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Wypełnianie pola tekstowego, po kliknięciu przycisku  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Wypełnij pola tekstowego, po kliknięciu przycisku  
  Każdym kliknięciu przycisku, **Hello World!** jest dołączany do pola tekstowego.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Można zapisać w polu tekstowym, po kliknięciu przycisku  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Można zapisać w polu tekstowym, po kliknięciu przycisku  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1 —**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
   
@@ -94,12 +95,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować skoroszyt, aby upewnić się, że komunikat **Hello World!** zostanie wyświetlony w polu tekstowym, po kliknięciu przycisku.  
   
-#### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
+### <a name="to-test-your-workbook"></a>Aby przetestować skoroszytu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Kliknij przycisk.  
   
@@ -110,11 +111,11 @@ ms.lasthandoff: 04/16/2018
   
 -   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
--   Za pomocą pola wyboru, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [wskazówki: zmiana arkusza formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Za pomocą pola wyboru, aby zmienić formatowanie. Aby uzyskać więcej informacji, zobacz [wskazówki: arkusz Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Porady: dodawanie formantów do dokumentów pakietu Office formularzy systemu Windows](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)   
- [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Porady: dodawanie formantów formularzy systemu Windows do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Wskazówki dotyczące przy użyciu programu Excel](../vsto/walkthroughs-using-excel.md)   
+ [Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

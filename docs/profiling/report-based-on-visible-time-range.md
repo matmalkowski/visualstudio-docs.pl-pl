@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255609"
 ---
 # <a name="report-based-on-visible-time-range"></a>Raport bazujący na widocznym zakresie czasu
 Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałów. Aby wyświetlić szczegóły dotyczące różnych podzestawy danych, kliknij przycisk elementów w legendzie.  
   
  Więcej informacji na temat danych można znaleźć w tabelach w tym miejscu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Do pokazania żadnej aktywności wątku](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Raport profilu wykonania](../profiling/execution-profile-report.md)   
  [Czas synchronizacji](../profiling/synchronization-time.md)   

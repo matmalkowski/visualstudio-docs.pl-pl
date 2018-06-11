@@ -14,17 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 44bf87f67c8042484e3b0907ea4d597136dcd820
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255460"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Porady: rozprowadzanie wstawek kodu
 
 Można podać Twojej wstawki kodu dla Twoich znajomych i je zainstalować fragmenty kodu na swoich komputerach za pomocą Menedżera wstawki kodu. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, można objąć pliku fragment rozszerzenie programu Visual Studio, które użytkownicy programu Visual Studio można zainstalować.
 
-Aby można było utworzyć rozszerzeń programu Visual Studio należy zainstalować Visual Studio SDK. Znajdź wersję VSSDK, odpowiadający instalację programu Visual Studio na [program Visual Studio pobiera](https://www.visualstudio.com/downloads/).
+Aby można było utworzyć rozszerzeń programu Visual Studio należy zainstalować Visual Studio SDK. Znajdź wersję VSSDK, odpowiadający instalację programu Visual Studio na [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Skonfigurować rozszerzenia
 

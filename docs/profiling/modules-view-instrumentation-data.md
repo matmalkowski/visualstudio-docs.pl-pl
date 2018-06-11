@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7db34fb4913e3576f286aa7c34fe3cf80296ed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256113"
 ---
 # <a name="modules-view---instrumentation-data"></a>Widok modułów - dane Instrumentacji
 Widok modułów przedstawia dane wydajności, które są grupowane według modułów, które znajdowały się w danych profilowania. Funkcji modułu są wyświetlane poniżej węzła modułu.  
@@ -81,7 +82,7 @@ Widok modułów przedstawia dane wydajności, które są grupowane według modu�
 |**Maksymalny własny czas aplikacji**|— Dla funkcji aplikacji maksymalny własny czas wywołania tej funkcji.<br />— Dla modułu własny czas aplikacji maksymalną wszystkich wywołań funkcji w module.|  
 |**Minimalny własny czas aplikacji**|— Dla funkcji własny czas aplikacji minimalna wywołania do tego modułu lub funkcji.<br />— Dla modułu własny czas aplikacji minimalna wszystkich wywołań funkcji w module.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok modułów](../profiling/modules-view-sampling-data.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)

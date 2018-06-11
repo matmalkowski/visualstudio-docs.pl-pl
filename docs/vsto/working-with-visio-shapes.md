@@ -1,5 +1,5 @@
 ---
-title: Praca z kształtów Visio | Dokumentacja firmy Microsoft
+title: Praca z kształtów Visio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,21 +16,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea904dd2d6d41394323b2ddc2ff3f4fcd66e5d69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 385b546e812c3772188abf3ee2d1a2767d28eb46
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258388"
 ---
-# <a name="working-with-visio-shapes"></a>Praca z dokumentami Visio Shapes
+# <a name="work-with-visio-shapes"></a>Praca z kształtów Visio
   Tematy w tej sekcji zawierają procedury krok po kroku i przykładów kodu do pracy z kształtów w projektach pakietu Office przy użyciu modelu obiektów programu Microsoft Office Visio.  
   
 |Zadanie|Procedura|  
 |----------|---------------|  
-|Dodaj kształty z wzornika do dokumentu programu Visio.|[Instrukcje: Programowe dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
-|Kopiowanie kształty z jednej strony Visio i wklej je w innej strony.|[Instrukcje: Programowe kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
+|Dodaj kształty z wzornika do dokumentu programu Visio.|[Porady: programowane Dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
+|Kopiowanie kształty z jednej strony Visio i wklej je w innej strony.|[Porady: programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  

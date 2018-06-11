@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dostosowywanie wbudowanej karty | Dokumentacja firmy Microsoft'
+title: 'Porady: dostosowywanie wbudowanej karty'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1343ee966d63b0ddc74bf1e18cbbe8bd6d476a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30b4af116df218f3f778b9efa1e295fbadbad86a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257270"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Porady: dostosowywanie wbudowanej karty
   Możesz dodać grup i kontroli do wbudowanej karty. Tabulator wbudowana jest karta, która jest już na Wstążce aplikacji pakietu Microsoft Office. Na przykład **danych** karta jest wbudowanej karty w programie Excel. Podczas tworzenia niestandardowych grup pojawia się na karcie ostatnich, ale można przenieść tej grupy dowolne miejsce na karcie.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
      Identyfikator formantu jest to nazwa, który unikatowo identyfikuje kart, grup i kontrolek, które są wbudowane w aplikacji Microsoft Office.  
   
-     Lista kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: identyfikatory formantu interfejsu użytkownika Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Lista kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: identyfikatory formantu interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 5.  Z **formantów wstążki pakietu Office** karcie **przybornika**, przeciągnij grupy na karcie.  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 04/16/2018
   
 4.  Ustaw **OfficeId** właściwość identyfikatora formantu wbudowane grupy.  
   
-     Lista kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: identyfikatory formantu interfejsu użytkownika Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Lista kontroli identyfikatorów, zobacz [pliki Pomocy pakietu Office 2010: identyfikatory formantu interfejsu użytkownika fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [XML wstążki](../vsto/ribbon-xml.md)   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
  [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Instrukcje: Pokazywanie błędów dodatków interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Porady: dodatek Pokaż błędy interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

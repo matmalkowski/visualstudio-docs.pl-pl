@@ -1,5 +1,5 @@
 ---
-title: '&lt;Aplikacja&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+title: '&lt;Aplikacja&gt; elementu (Office development w Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0d513ce5d9439ffa55a32d5210669162c0a21e2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255827"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Aplikacja&gt; elementu (Office Development w Visual Studio)
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Aplikacja&gt; elementu (Office development w Visual Studio)
   `application` Elementu `vstav3` przestrzeni nazw jest zawijana opis rozwiązań pakietu Office. Elementy podrzędne są różne dla Dostosowywanie na poziomie dokumentu i dodatków VSTO.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Składnia Dostosowywanie na poziomie dokumentu  
   
-```  
+```xml  
 <application>  
   <customization  
     id  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/27/2018
   
 ## <a name="syntax-for-application-level-add-ins"></a>Składnia dodatkach na poziomie aplikacji  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/27/2018
   
  `application` Element ma następujący element.  
   
-### <a name="customization"></a>dostosowanie  
+### <a name="customization"></a>Dostosowywanie  
  Rola `customization` element `vstov3` przestrzeni nazw jest zdefiniowany w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Kod  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  

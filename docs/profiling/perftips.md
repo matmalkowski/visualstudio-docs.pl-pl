@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53366b300c94166116c0dc03b108991fc80af013
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255135"
 ---
 # <a name="perftips"></a>Wskazówek
 Debuger programu Visual Studio *wskazówek* i zintegrowane debugera **narzędzia diagnostyczne** ułatwiają monitorowanie i analizowanie wydajności aplikacji, podczas debugowania.  
   
- Mimo że debugera, zintegrowane narzędzia diagnostyczne są dobrym sposobem staje się znane problemy z wydajnością, gdy tworzysz, debuger może mieć znaczący wpływ na wydajność aplikacji. Aby zbierać dokładne dane dotyczące wydajności, należy rozważyć użycie Visual Studio tools diagnostyki działających poza debugerem zbyt jako dodatkową część Twojej dochodzenia wydajności. Zobacz [uruchomienia narzędzia profilowania z lub bez debuger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).  
+ Mimo że debugera, zintegrowane narzędzia diagnostyczne są dobrym sposobem staje się znane problemy z wydajnością, gdy tworzysz, debuger może mieć znaczący wpływ na wydajność aplikacji. Aby zbierać dokładne dane dotyczące wydajności, należy rozważyć użycie Visual Studio tools diagnostyki działających poza debugerem zbyt jako dodatkową część Twojej dochodzenia wydajności. Zobacz [uruchomienie narzędzia z lub bez debuger profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).  
   
 ## <a name="perftips"></a>Wskazówek  
  Po zatrzymaniu debugera wykonanie przerwania lub operację wykonywania krokowego czas, który upłynął między przerwy i poprzedniego punktu przerwania jest wyświetlany jako wskazówkę w oknie edytora. Aby uzyskać więcej informacji, zobacz [wskazówek: informacje o wydajności na ułatwia podczas debugowania w programie Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
@@ -27,9 +28,9 @@ Debuger programu Visual Studio *wskazówek* i zintegrowane debugera **narzędzia
  ![Element PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Okno narzędzia diagnostyczne  
- Punkty przerwania i chronometrażu skojarzone dane są rejestrowane w oknie narzędzia diagnostyczne  
+ Punkty przerwania i danych o chronometrażu skojarzone są rejestrowane w **narzędzia diagnostyczne** okna.  
   
- Na poniższym rysunku przedstawiono okno narzędzia diagnostyczne w Visual Studio 2015 Update 1:  
+ Poniżej przedstawiono graficzne **narzędzia diagnostyczne** okna w Visual Studio 2015 Update 1:  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -55,6 +56,6 @@ Debuger programu Visual Studio *wskazówek* i zintegrowane debugera **narzędzia
   
 2.  Zaznacz lub usuń zaznaczenie **Włącz narzędzia diagnostyczne podczas debugowania**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+ [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)

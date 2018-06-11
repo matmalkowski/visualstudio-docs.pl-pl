@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Importowanie regionów formularzy zaprojektowanych w programie Outlook | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Importowanie regionów formularzy zaprojektowanych w programie Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 247d8b72a86707d8c7bdfa889273b622635b87ec
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258947"
 ---
-# <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Wskazówki: importowanie regionów formularzy zaprojektowanych w programie Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Wskazówki: Importowanie regionów formularzy zaprojektowanych w programie Outlook
   W tym przewodniku pokazano, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionów formularzy w projekcie dodatku narzędzi VSTO programu Outlook przy użyciu **nowego regionu formularza** kreatora. Projektowanie regionów formularzy programu Outlook umożliwia dodanie kontrolki natywne Outlook do regionu formularza, który powiązanie z danymi programu Outlook. Po zaimportowaniu regionu formularza można obsługiwać zdarzenia każdej kontrolki.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -47,14 +48,14 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy i. Tworzenie programu Outlook formularza regionów przy użyciu programu Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak i. Tworzenie regionach formularzy programu Outlook przy użyciu programu Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
-## <a name="designing-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Projektowanie regionów formularzy przy użyciu projektanta regionów formularzy w programie Outlook  
+## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Projektowanie regionów formularzy przy użyciu projektanta regionów formularzy w programie Outlook  
  W tym kroku zostanie projektowanie regionów formularzy w programie Outlook. Możesz następnie zostanie zapisany regionu formularza do lokalizacji łatwy do znalezienia tak, aby zaimportować je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  Ten przykład regionu formularza całkowicie zastępuje zwykle formularz zadania. Zapewnia sposób, aby śledzić postęp wszystkich zadań, które należy wykonać, aby można było głównym zadaniem wykonać (zadania wstępne). Region formularza zostanie wyświetlona lista zadań wstępnych i pokazuje stan ukończenia dla każdego zadania na liście. Użytkownicy mogą dodać zadania do listy i usuń je. Można również odświeżyć stan ukończenia każdego zadania.  
   
-#### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Projektowanie regionów formularzy przy użyciu projektanta regionów formularzy w programie Outlook  
+### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Projektowanie regionów formularzy przy użyciu projektanta regionów formularzy w programie Outlook  
   
 1.  Uruchom program Microsoft Office Outlook.  
   
@@ -112,14 +113,14 @@ ms.lasthandoff: 04/16/2018
   
      Nazwa regionu formularza **TaskFormRegion** i zapisać go do katalogu lokalnego na komputerze.  
   
-     Outlook zapisuje regionu formularza jako plik magazynu formularzy programu Outlook (.ofs). Region formularza jest zapisywany o nazwie TaskFormRegion.ofs.  
+     Outlook zapisuje regionu formularza jako magazyn formularzy programu Outlook (*.ofs*) pliku. Region formularza jest zapisywany o nazwie *TaskFormRegion.ofs*.  
   
 27. Zamknij program Outlook.  
   
-## <a name="creating-a-new-outlook-add-in-project"></a>Tworzenie nowego programu Outlook dodatku projektu  
+## <a name="create-a-new-outlook-add-in-project"></a>Utwórz nowy projekt dodatku programu Outlook  
  W tym kroku utworzysz projektów dodatku VSTO dla programu Outlook. W dalszej części tego przewodnika zostaną zaimportowane do regionu formularza do projektu.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Aby utworzyć nowy projekt dodatku VSTO dla programu Outlook  
   
 1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], tworzenie projektów dodatku VSTO dla programu Outlook o nazwie **TaskAddIn**.  
   
@@ -127,12 +128,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zapisz projekt w katalogu projektu.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="importing-the-form-region"></a>Importowanie regionów formularzy  
+## <a name="import-the-form-region"></a>Importowanie regionów formularzy  
  Możesz zaimportować regionu formularza, która została zaprojektowana w programie Outlook w projekcie dodatku narzędzi VSTO programu Outlook przy użyciu **nowych regionów formularzy programu Outlook** kreatora.  
   
-#### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Aby zaimportować regionu formularza do projektu dodatku VSTO dla programu Outlook  
+### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Aby zaimportować regionu formularza do projektu dodatku VSTO dla programu Outlook  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **TaskAddIn** projektu, wskaż pozycję **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
@@ -142,28 +143,28 @@ ms.lasthandoff: 04/16/2018
   
 3.  Na **wybierz jak chcesz utworzyć regionu formularza** kliknij przycisk **zaimportować magazynu formularzy programu Outlook (.ofs) pliku**, a następnie kliknij przycisk **Przeglądaj**.  
   
-4.  W **istniejącej lokalizacji pliku regionu formularza Outlook** okno dialogowe, przejdź do lokalizacji **TaskFormRegion.ofs**, wybierz pozycję **TaskFormRegion.ofs**, kliknij przycisk **Otwórz**, a następnie kliknij przycisk **dalej**.  
+4.  W **istniejącej lokalizacji pliku regionu formularza Outlook** okno dialogowe, przejdź do lokalizacji *TaskFormRegion.ofs*, wybierz pozycję **TaskFormRegion.ofs**, kliknij przycisk **Otwórz**, a następnie kliknij przycisk **dalej**.  
   
 5.  Na **wybierz typ regionu formularza, którego chcesz utworzyć** kliknij przycisk **Zamień wszystkie**, a następnie kliknij przycisk **dalej**.  
   
-     A *Zamień wszystkie* regionu formularza zamienia cały formularz programu Outlook. Aby uzyskać więcej informacji na temat typów regionu formularza, zobacz [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).  
+     A *Zamień wszystkie* regionu formularza zamienia cały formularz programu Outlook. Aby uzyskać więcej informacji na temat typów regionu formularza, zobacz [regionów formularzy Outlook utwórz](../vsto/creating-outlook-form-regions.md).  
   
 6.  Na **Podaj opis, a następnie wybierz preferencje wyświetlania** kliknij przycisk **dalej**.  
   
 7.  Na **zidentyfikować klasy wiadomości, które spowoduje wyświetlenie tego regionu formularza** strony w **klas niestandardowych komunikatów, które spowoduje wyświetlenie tego regionu formularza** wpisz **IPM. Task.TaskFormRegion**, a następnie kliknij przycisk **Zakończ**.  
   
-     Plik TaskFormRegion.cs lub TaskFormRegion.vb jest dodane do projektu.  
+     A *TaskFormRegion.cs* lub *TaskFormRegion.vb* plik zostanie dodany do projektu.  
   
-## <a name="handling-the-events-of-controls-on-the-form-region"></a>Obsługa zdarzeń kontroli regionu formularza  
- Teraz, gdy masz regionów formularzy w projekcie, możesz dodać kod obsługujący zdarzenia Microsoft.Office.Interop.Outlook.OlkCommandButton.Click przycisku, który został dodany do regionów formularzy w programie Outlook.  
+## <a name="handle-the-events-of-controls-on-the-form-region"></a>Obsługa zdarzeń kontroli regionu formularza  
+ Teraz, gdy masz regionów formularzy w projekcie, można dodać kod obsługujący `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` zdarzeń przycisku, który został dodany do regionów formularzy w programie Outlook.  
   
  Ponadto Dodaj kod, aby <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> zdarzeń, która aktualizuje formantów na region formularza, gdy region formularza zostanie wyświetlony.  
   
-#### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Do obsługi zdarzeń dla formantów na region formularza  
+### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Do obsługi zdarzeń dla formantów na region formularza  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy TaskFormRegion.cs lub TaskFormRegion.vb, a następnie kliknij przycisk **kod widoku**.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *TaskFormRegion.cs* lub *TaskFormRegion.vb*, a następnie kliknij przycisk **kod widoku**.  
   
-     TaskFormRegion.cs lub TaskFormRegion.vb zostanie otwarty w edytorze kodu.  
+     *TaskFormRegion.cs* lub *TaskFormRegion.vb* zostanie otwarty w edytorze kodu.  
   
 2.  Dodaj następujący kod do `TaskFormRegion` klasy. Ten kod wypełnienie pola kombi na regionu formularza z wiersz tematu każdego zadania w folderze zadań programu Outlook.  
   
@@ -172,9 +173,9 @@ ms.lasthandoff: 04/16/2018
   
 3.  Dodaj następujący kod do `TaskFormRegion` klasy. Kod będzie wykonywał następujące zadania:  
   
-    -   Lokalizuje Microsoft.Office.Interop.Outlook.TaskItem w folderze zadań, wywołując `FindTaskBySubjectName` metody pomocniczej i przekazywanie temat żądane zadania. Spowoduje dodanie `FindTaskBySubjectName` metody pomocniczej w następnym kroku.  
+    -   Lokalizuje `Microsoft.Office.Interop.Outlook.TaskItem` w folderze zadań, wywołując `FindTaskBySubjectName` metody pomocniczej i przekazywanie temat żądane zadania. Spowoduje dodanie `FindTaskBySubjectName` metody pomocniczej w następnym kroku.  
   
-    -   Dodaje wartości Microsoft.Office.Interop.Outlook.TaskItem.Subject i Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete do listy zadań zależnych.  
+    -   Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadań zależnych.  
   
     -   Dodaje temat zadania do pola ukryte w regionu formularza. Ukryte pole przechowuje te wartości jako część elementu programu Outlook.  
   
@@ -190,9 +191,9 @@ ms.lasthandoff: 04/16/2018
   
     -   Odświeża pola listy na regionu formularza z bieżącym stanem ukończenia każdego zadania zależne.  
   
-    -   Analizuje pole tekstu ukrytego uzyskanie podmiotu każdego zadania zależne. Następnie klient zlokalizuje każdego Microsoft.Office.Interop.Outlook.TaskItem w folderze zadań, wywołując `FindTaskBySubjectName` metody pomocniczej i przekazywanie podmiotu każdego zadania.  
+    -   Analizuje pole tekstu ukrytego uzyskanie podmiotu każdego zadania zależne. Następnie klient zlokalizuje każdego `Microsoft.Office.Interop.Outlook.TaskItem` w *zadania* folderu wywołując `FindTaskBySubjectName` metody pomocniczej i przekazywanie podmiotu każdego zadania.  
   
-    -   Dodaje wartości Microsoft.Office.Interop.Outlook.TaskItem.Subject i Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete do listy zadań zależnych.  
+    -   Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadań zależnych.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
@@ -206,12 +207,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
   
-## <a name="testing-the-outlook-form-region"></a>Testowanie regionów formularzy programu Outlook  
+## <a name="test-the-outlook-form-region"></a>Testowanie regionów formularzy programu Outlook  
  Aby przetestować regionu formularza, należy dodać zadania do listy zadań wstępnych na regionu formularza. Zaktualizuj stan ukończenia zadania wymagań wstępnych, a następnie Wyświetl stan ukończenia zaktualizowane zadania na liście zadań wymagań wstępnych.  
   
-#### <a name="to-test-the-form-region"></a>Aby przetestować regionu formularza  
+### <a name="to-test-the-form-region"></a>Aby przetestować regionu formularza  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** uruchomić projekt.  
   
      Uruchamia program Outlook.  
   
@@ -231,7 +232,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  W **wybierz zadanie, aby dodać do listy zadań zależnych** pola kombi, wybierz **zadanie zależne**, a następnie kliknij przycisk **Dodaj zadanie zależne**.  
   
-     **0% Complete — zadanie zależne** pojawia się w **tego zadania zależy od następujących zadań** pola listy. Oznacza to, pomyślnie obsługi zdarzeń Microsoft.Office.Interop.Outlook.OlkCommandButton.Click przycisku.  
+     **0% Complete — zadanie zależne** pojawia się w **tego zadania zależy od następujących zadań** pola listy. Oznacza to, że można pomyślnie obsługiwane `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` zdarzeń przycisku.  
   
 9. Zapisz i Zamknij **głównym zadaniem** elementu.  
   
@@ -252,16 +253,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Aby dowiedzieć się więcej o dostosowywaniu wstążki elementu programu Outlook, zobacz [Dostosowywanie wstążki do programu Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
--   Aby dowiedzieć się więcej na temat sposobu dodawania niestandardowego okienka zadań do programu Outlook, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
+-   Aby dowiedzieć się więcej na temat sposobu dodawania niestandardowego okienka zadań do programu Outlook, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)   
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
- [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Wytyczne tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Porady: dodawanie regionu formularza na projekt dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Porady: dodawanie regionu formularza do projektu dodatek programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Niestandardowe akcje w regionach formularzy programu Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Porady: ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

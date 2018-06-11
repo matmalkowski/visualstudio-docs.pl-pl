@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255161"
 ---
-# <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
+# <a name="performance-session-overview"></a>Sesja wydajności — omówienie
 W tym omówieniu przedstawiono podstawowe profilowania. Deweloperzy, którzy dopiero zaczynasz korzystać z wydajności pracy zostanie wyświetlony jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania pomoże im szybko stać się wydajność i zwiększyć wydajność ich kodu. Deweloperzy, którzy są w profilowania można zapoznać się z określonych funkcji w narzędziach profilowania i procesów.  
   
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania pomagają zidentyfikować problemy z wydajnością w kodzie źródłowym i porównywać możliwych rozwiązań. Profilowanie kreatorów narzędzia i ustawienia domyślne umożliwiają błyskawiczny wgląd w wiele problemów z wydajnością. Funkcje i opcje narzędzi profilowania należy podać dokładną kontrolę nad procesem profilowania. Ten formant obejmuje dokładne wartości docelowej sekcji kodu, zbierania informacji na poziomie bloku i włączenia dodatkowe dane dotyczące wydajności procesora i systemu w danych.  
@@ -68,12 +69,12 @@ W tym omówieniu przedstawiono podstawowe profilowania. Deweloperzy, którzy dop
 ## <a name="modify-the-application-code"></a>Modyfikowanie kodu aplikacji  
  Po wykrycia co najmniej jeden problem odpowiednich wydajności, należy zmodyfikować kod przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, a następnie zbieranie danych zmiany profilowania.  
   
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Zbieranie danych profilowania ponownie i porównywania danych między działa profilowania  
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Ponownie zbierania danych profilowania i porównywanie danych między działa profilowania  
  Porównanie narzędzi profilowania widoku raportu wyświetla różnicę w module, funkcji lub wydajności linii między dwoma wybranych plików danych profilowania. Można określić profilowania wartości danych, które chcesz porównać i można przełączać się między Widok porównania i widoki poszczególnych plików.  
   
 ## <a name="generate-a-report-of-the-results"></a>Generowanie raportu dotyczącego wyników  
  Wiersze każdego widoku raportu wydajności można wkleić do wiadomości e-mail i arkusze kalkulacyjne i możesz generować raporty zawierające dane dla co najmniej jeden widok.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Omówienie](../profiling/overviews-performance-tools.md)   
- [Wskazówki: Identyfikowanie problemów z wydajnością](../profiling/walkthrough-identifying-performance-problems.md)
+ [Przewodnik: identyfikowanie problemów z wydajnością](../profiling/walkthrough-identifying-performance-problems.md)

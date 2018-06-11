@@ -1,5 +1,5 @@
 ---
-title: 'Porady: udostępnianie kodu z VBA w projektach Visual C# | Dokumentacja firmy Microsoft'
+title: 'Porady: udostępnianie kodu z VBA w projektach Visual C#'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7564d64763549f2fefe8e0a8b9813fdef9a16b6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257254"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Porady: udostępnianie kodu z VBA w projektach Visual C#
   Można udostępnianie kodu w projektach Visual C# na język Visual Basic dla kodu aplikacji (VBA), jeśli chcesz, aby dwa typy kodu do oddziaływać na siebie.  
@@ -31,12 +32,12 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="exposing-code-in-a-visual-c-project"></a>Udostępnianie kodu w projektach Visual C#  
+## <a name="expose-code-in-a-visual-c-project"></a>Udostępnianie kodu w projektach Visual C#  
  Aby włączyć kod VBA wywoływanie kodu w projektach Visual C#, należy zmodyfikować kod, tak aby widoczne dla modelu COM, a następnie ustaw **ReferenceAssemblyFromVbaProject** właściwości **True** w projektancie.  
   
  Aby uzyskać wskazówki, który demonstruje sposób wywołania metody w projektach Visual C# z kodu VBA, zobacz [wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
-#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Aby udostępnianie kodu w projektach Visual C# w VBA  
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Aby udostępnianie kodu w projektach Visual C# w VBA  
   
 1.  Otwórz lub Utwórz projekt poziomie dokumentu, który jest oparty na dokument programu Word, skoroszyt programu Excel lub szablon programu Excel obsługującej makra i zawierający kod VBA.  
   
@@ -77,9 +78,9 @@ ms.lasthandoff: 04/16/2018
         }  
         ```  
   
-     Aby uzyskać informacje o obiektach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+     Aby uzyskać informacje o obiektach hosta, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Wyodrębnij interfejs z klasy, która wyświetlasz VBA. W **wyodrębniania interfejsu** oknie dialogowym Wybierz publiczne elementy członkowskie, które chcesz uwzględnić w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębnić refaktoryzacji interfejsu](../ide/reference/extract-interface.md).
+6.  Wyodrębnij interfejs z klasy, która wyświetlasz VBA. W **wyodrębniania interfejsu** oknie dialogowym Wybierz publiczne elementy członkowskie, które chcesz uwzględnić w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębniania interfejsu refaktoryzacji](../ide/reference/extract-interface.md).
   
 7.  Dodaj **publicznego** — słowo kluczowe do deklaracji interfejsu.  
   
@@ -102,11 +103,11 @@ ms.lasthandoff: 04/16/2018
   
 12. Skompiluj projekt.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
  [Wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Instrukcje: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Porady: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

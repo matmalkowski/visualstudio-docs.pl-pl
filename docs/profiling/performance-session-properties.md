@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254696"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 
@@ -35,11 +36,11 @@ Te ustawienia umożliwiają wybierz metodę, aby dodać kolekcji obiektów platf
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+[Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
 
-[Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Instrukcje: ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Uruchom
 
@@ -60,7 +61,7 @@ Te ustawienia umożliwiają wybranie interwału zdarzeń i próbkowania, podczas
 Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>plików binarnych
-Te ustawienia umożliwiają określenie, czy chcesz przenieść instrumentowanego pliku binarnego do innej lokalizacji. Na przykład jeśli są profilowania My.DLL i nie chcesz ich nie przenoś instrumentowanego pliku binarnego, kopię zapasową o nazwie My.Orig.DLL My.DLL jest tworzona. Następnie My.DLL jest modyfikowany przez wstawianie sond do zbierania danych. Jeśli zdecydujesz się przemieszczenie instrumentowanego pliku binarnego, nie zostaje zmieniona oryginalnego pliku binarnego i instrumentowanego pliku binarnego jest kopiowany do określonej lokalizacji do użycia podczas instrumentacji.
+Te ustawienia umożliwiają określenie, czy chcesz przenieść instrumentowanego pliku binarnego do innej lokalizacji. Na przykład, jeśli są profilowania *My.DLL* i nie chcesz ich nie przenoś instrumentowanego pliku binarnego kopii zapasowej *My.DLL* o nazwie *My.Orig.DLL* jest tworzony. Następnie *My.DLL* jest modyfikowany przez wstawianie sond do zbierania danych. Jeśli zdecydujesz się przemieszczenie instrumentowanego pliku binarnego, nie zostaje zmieniona oryginalnego pliku binarnego i instrumentowanego pliku binarnego jest kopiowany do określonej lokalizacji do użycia podczas instrumentacji.
 
 Aby uzyskać więcej informacji, zobacz [porady: Określanie plików binarnych do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)
 
@@ -74,23 +75,23 @@ Te ustawienia umożliwiają zbieranie danych wydajności dla kodu języka JScrip
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Porady: profilowanie kodu JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Porady: kodu JavaScript profilu na stronach sieci web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Porady: Określanie poleceń Pre-i POST-instrumentalnych](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Instrukcje: określanie poleceń przed i po instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Liczniki CPU
 
 Te ustawienia umożliwiają zbieranie danych dotyczących liczników wydajności procesora CPU, gdy używana jest metoda profilowania instrumentacji. Przenośne liczniki wydajności są dostępne niezależnie od producenta lub Procesora projektu. Zdarzenia platformy są specyficzne dla Procesora projektu i producenta. Aby uzyskać więcej informacji na temat liczników wydajności w układzie zobacz dokumentację konkretny procesor.
 
-Aby uzyskać więcej informacji, zobacz [porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)
+Aby uzyskać więcej informacji, zobacz [porady: Procesora zbieranie danych licznika](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Zdarzenia systemu Windows
 
-Podczas profilowania, może zbierać dane z dostawców śledzenia zdarzeń. Dane można wyświetlić przy użyciu narzędzia wiersza polecenia VSPerfReport.exe `/calltrace` opcji. Aby uzyskać więcej informacji na temat funkcji Śledzenie zdarzeń systemu Windows (), zobacz [o śledzenie zdarzeń](http://go.microsoft.com/fwlink/?linkid=90752).
+Podczas profilowania, może zbierać dane z dostawców śledzenia zdarzeń. Dane można wyświetlić przy użyciu *VSPerfReport.exe* narzędzia wiersza polecenia `/calltrace` opcji. Aby uzyskać więcej informacji na temat funkcji Śledzenie zdarzeń systemu Windows (), zobacz [o śledzenie zdarzeń](http://go.microsoft.com/fwlink/?linkid=90752).
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Porady: zbieranie zdarzeń śledzenia dla danych systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
@@ -98,7 +99,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 Ta opcja służy do zbierania danych z liczników monitora wydajności systemu Windows. Aby zbierać dane, zaznacz pole wyboru **zbierania liczników wydajności systemu Windows**. Interwał kolekcji można ustawić w **interwał zbierania** pole. **Kategoria licznika** i **wystąpienia** mogą być również dostępne. Dostępne są niektóre domyślne liczniki Monitora wydajności systemu Windows.
 
- Aby uzyskać więcej informacji, zobacz [porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Aby uzyskać więcej informacji, zobacz [porady: Windows zbieranie danych licznika](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Zaawansowane
 
@@ -106,12 +107,12 @@ Te ustawienia umożliwiają dodanie opcje do procesu instrumentacji, przez okre�
 
 Aby uzyskać więcej informacji, zobacz:
 
-[Porady: Określanie środowiska wykonawczego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Instrukcje: określanie środowiska uruchomieniowego programu .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Porady: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 [Omówienia](../profiling/overviews-performance-tools.md)  
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)
+[Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)

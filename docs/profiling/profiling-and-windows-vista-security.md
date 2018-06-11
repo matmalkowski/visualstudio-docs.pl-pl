@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254647"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilowanie i bezpieczeństwo systemu Windows Vista
 W zależności od [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] ustawienia uprawnień dostępu użytkownika, które administrator komputera ma zostać udostępnione, użytkownik może mieć uprawnienia zabezpieczeń do profilu procesu na tym komputerze. Poniższe przykłady przedstawiają możliwe różnice między użytkowników:  
@@ -43,7 +44,7 @@ W zależności od [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] us
   
      Gdy ta opcja nie jest zaznaczona, zostanie wyświetlona lista procesów w bieżącej sesji. Gdy ta opcja jest zaznaczona, na liście zostaną wyświetlone procesy we wszystkich sesjach.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Omówienie](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Porady: dołączanie do procesu uruchomionego](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Porady: dołączanie do uruchomionego procesu](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

@@ -9,17 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 326da0003e73c78a17df489473b49cf6d7b62380
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255418"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora
 
 W przypadku tego przewodnika Szybki Start 5 – 10 min możemy dostosować motywu kolorów w Visual Studio i kolory dwóch tekstu w **Edytor tekstu**.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="set-the-color-theme"></a>Ustaw motywu kolorów
 
@@ -102,5 +103,5 @@ Firma Microsoft przedstawione kilka sposobów dostosowywanie kolorów w Visual S
 - [Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)
 - [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
-- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
+- [Dopasowywanie edytora](../ide/customizing-the-editor.md)
 - [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac6fe1bc08ce4bed17b2f42c568769ad4314023
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255405"
 ---
-# <a name="per-thread-summary-report"></a>Podsumowanie, dla każdego wątku — Raport
+# <a name="per-thread-summary-report"></a>Dla każdego wątku — raport podsumowania
 Ten wykres słupkowy zawiera część czasu, jaki spędza każdy wątek odkrywane każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonywanie" oznacza, że wątek jest wykonywane; wszystkich innych kategoriach oznacza, że wątek oczekuje na coś.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)   
  [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)   
  [Czas zarządzania pamięcią](../profiling/memory-management-time.md)   

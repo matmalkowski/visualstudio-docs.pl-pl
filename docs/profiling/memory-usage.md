@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f12caeb35e2c5c100069c3a5df066775beb5af3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ecb92c2d17cf0ec80560a8037b15d57f5bf91c52
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255781"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profil w programie Visual Studio
+# <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profilu w programie Visual Studio
 Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania kodu z debugera zintegrowane **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* zarządzanego i natywnego pamięci sterty ułatwi zrozumienie wpływu użycia pamięci typy obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  
   
  Poniżej przedstawiono graficzne **narzędzia diagnostyczne** okna (dostępnej w programie Visual Studio 2015 Update 1 lub nowszy):  
@@ -49,7 +50,7 @@ W tym samouczku obejmują:
 
 2.  Ustaw punkt przerwania drugi na końcu funkcji lub regionu, kodu, który chcesz przeanalizować (lub po wystąpieniu problemu podejrzanych pamięci).
   
-3.  **Narzędzia diagnostyczne** okna pojawiają się automatycznie, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+3.  **Narzędzia diagnostyczne** okna pojawiają się automatycznie, jeśli wyłączono go. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania**>**Windows**>**Pokaż narzędzia diagnostyczne**.
 
 4.  Wybierz **użycie pamięci** z **wybierz narzędzia** ustawienie na pasku narzędzi.
 
@@ -62,11 +63,11 @@ W tym samouczku obejmują:
      ![Karta Podsumowanie narzędzi diagnostycznych](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Ponieważ zbieranie danych mogą wpłynąć na wydajność debugowania aplikacji natywnych lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacjach native lub w trybie mieszanym, Uruchom sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz kartę użycie pamięci, a następnie wybierz pozycję **profilowanie sterty**.  
+     >  Ponieważ zbieranie danych mogą wpłynąć na wydajność debugowania aplikacji natywnych lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacjach native lub w trybie mieszanym, Uruchom sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** karcie, a następnie wybierz pozycję **profilowanie sterty**.  
      >   
      >  ![Włącz migawki](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Zatrzymaj (klawisz skrótu: **Shift + F5**) i uruchom ponownie debugowanie.  
+     >  Zatrzymaj (klawisz skrótu: **Shift**+**F5**) i uruchom ponownie debugowanie.  
 
 6.  Aby wykonać migawki na początku sesję debugowania, wybierz pozycję **wykonać migawki** na **użycie pamięci** paska narzędzi. (Warto ustawić punkt przerwania w tym miejscu również.)
 
@@ -79,7 +80,7 @@ W tym samouczku obejmują:
 
 7.  Gdy debuger jest wstrzymana na pierwszy punkt przerwania, wybierz **wykonać migawki** na **użycie pamięci** paska narzędzi.  
 
-8.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+8.  Naciśnij klawisz **F5** do uruchomienia aplikacji na drugi punkt przerwania.
 
 9.  Teraz Utwórz kolejną migawkę.
 
@@ -126,7 +127,7 @@ Do analizy użycia pamięci, kliknij jeden z łącza, które otwiera szczegóło
   
  ![Wystąpienia widoku](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- **Wystąpień** widoku wystąpień wybranego obiektu są wyświetlane w migawce w górnym okienku. Ścieżki do katalogu głównego i odwołuje się do typów w okienku wyświetlania obiektów, które odwołują się do wybranego wystąpienia i typy, które odwołuje się do wybranego wystąpienia. Po zatrzymaniu debugera w momencie, gdy migawki ustawieniu kursora komórkę wartość, aby wyświetlić wartości obiektów w etykietce narzędzia.  
+ **Wystąpień** widoku wystąpień wybranego obiektu są wyświetlane w migawce w górnym okienku. **Ścieżki do katalogu głównego** i **odwołania do obiektów** okienko zawierające obiekty, które odwołują się do wybranego wystąpienia i typy, które odwołuje się do wybranego wystąpienia. Po zatrzymaniu debugera w momencie, gdy migawki można umieść kursor nad **wartość** komórkę, aby wyświetlić wartości obiektów w etykietce narzędzia.  
   
 ### <a name="native-type-reports"></a>Typ macierzysty raportów  
  Wybierz łącze bieżącego **alokacji (Diff)** lub **rozmiar stosu (Diff)** komórka w tabeli podsumowania użycia pamięci z **narzędzia diagnostyczne** okna.  

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane kojarzenie strony sieci Web z folderem programu Outlook | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane kojarzenie strony sieci web z folderem programu Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5495066b05ded6fc49dfe92ed489932d8c75b24d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb1ef525917288dc44609b899611db884da9073
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256468"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Porady: Programowane kojarzenie strony sieci Web z folderem programu Outlook
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Porady: programowane kojarzenie strony sieci web z folderem programu Outlook
   W tym przykładzie sprawdza, czy folder o nazwie `HtmlView` w programie Microsoft Office Outlook. Jeśli folder nie istnieje, kod tworzy folder i przypisuje strony sieci Web. Jeśli folder istnieje, kod wyświetla zawartość folderu.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -31,9 +32,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example"></a>Przykład  
  [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z folderami](../vsto/working-with-folders.md)   
- [Porady: programowane pobieranie folderu na podstawie nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Instrukcje: Programowe tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+ [Porady: programowane pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Porady: programowane Tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

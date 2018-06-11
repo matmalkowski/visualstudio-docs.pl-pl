@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 660434790ab4bf3073a00f2ec7ab9db737381707
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 874c092577796fe02e3045ed649c56a3fc9da355
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257829"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Porady: Programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Porady: programowane przechodzenie w pętli poprzez znalezione elementy w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwość, która zwraca **true** zawsze, gdy zostanie znaleziony przeszukiwane dla elementu. Można przeglądać wszystkich wystąpień znalezionych w <xref:Microsoft.Office.Interop.Word.Range> przy użyciu <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-loop-through-found-items"></a>W pętli poprzez znalezione elementy  
+## <a name="to-loop-through-found-items"></a>W pętli poprzez znalezione elementy  
   
 1.  Deklarowanie <xref:Microsoft.Office.Interop.Word.Range> obiektu.  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   
-#### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pętli elementów dostosowania poziomie dokumentu  
+### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pętli elementów dostosowania poziomie dokumentu  
   
 1.  Poniższy przykład przedstawia kompletny kod dla dostosowania poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.  
   
@@ -65,18 +66,18 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
   
-#### <a name="to-loop-through-items-in-an-vsto-add-in"></a>Pętli elementów w dodatku VSTO  
+### <a name="to-loop-through-items-in-an-vsto-add-in"></a>Pętli elementów w dodatku VSTO  
   
 1.  Poniższy przykład przedstawia kompletny kod dla dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#78)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
-## <a name="see-also"></a>Zobacz też  
- [Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Porady: programowane wyszukiwanie i Zastąp rext w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
  [Porady: programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
  [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Porady: programowane Przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

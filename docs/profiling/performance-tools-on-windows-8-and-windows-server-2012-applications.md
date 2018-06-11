@@ -9,20 +9,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069d5fa2f4f4b67e8095593a03d9a37d085195a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac9c3cd3fc23fb541de41b29124c6e12d2e7f01c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256009"
 ---
-# <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012
+# <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
 Ulepszone funkcje zabezpieczeń w programie Windows 8 i Windows Server 2012 wymagane istotne zmiany w Visual Studio tools wydajności sposób zbierania danych na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. W tym temacie opisano zmiany dotyczące narzędzi wydajności uruchamiania na platformach systemu Windows 8 i Windows Server 2012.
 
 > [!NOTE]
 > Narzędzia wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie zostały zmienione.
 
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacji platformy uniwersalnej systemu Windows w środowisku IDE programu Visual Studio
+## <a name="collect-data-on-uwp-apps-from-the-visual-studio-ide"></a>Zebranie danych dotyczących aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio IDE
 
 W przypadku profilu aplikacji platformy uniwersalnej systemu Windows, który jest zapisany w JavaScript i HTML 5, zbierania danych instrumentacji dla kodu JavaScript. Jeśli profil jest aplikacji platformy uniwersalnej systemu Windows lub składnik, który jest napisany w języku Visual C++, Visual C# lub Visual Basic, należy zebrać dane z próbkowania dla kodu natywnego i zarządzanego. Aplikację można profilu lokalnie lub na komputerze zdalnym.
 
@@ -40,19 +41,19 @@ Aby uzyskać więcej informacji na temat profilowania aplikacji platformy uniwer
 
 - [Uruchamianie aplikacji platformy UWP na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md)
 - [Uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md)
-- [Narzędzia profilowania](profiling-tools.md)
+- [Pierwsze spojrzenie na narzędzia profilowania](profiling-tools.md)
 - [Pamięć języka JavaScript](../profiling/javascript-memory.md)
 - [Kod profil Visual C++, Visual C# i Visual Basic w aplikacjach platformy uniwersalnej systemu Windows na komputerze lokalnym](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
 - [Kod profil Visual C++, Visual C# i Visual Basic w aplikacjach platformy uniwersalnej systemu Windows na urządzeniu zdalnym](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
 - [Analizowanie danych dotyczących wydajności dla kodu Visual C++, Visual C# i Visual Basic w aplikacjach platformy uniwersalnej systemu Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Zbieranie danych na aplikacje działające na pulpicie systemu Windows 8 lub Windows Server 2012 z programu Visual Studio IDE
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Zebranie danych dotyczących aplikacje działające na pulpicie systemu Windows 8 lub Windows Server 2012 z programu Visual Studio IDE
 
 Profilowanie przy użyciu metody Instrumentacji nie została zmieniona dla systemu Windows 8.
 
 Interakcja warstwowa profilowania (TIP) nie jest obsługiwana przy użyciu metody próbkowania.
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Zbieranie danych na aplikacje działające na pulpicie systemu Windows 8 lub Windows Server 2012 za pomocą próbkowania z programu Visual Studio IDE
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a>Zebranie danych dotyczących aplikacje działające na pulpicie systemu Windows 8 lub Windows Server 2012 za pomocą próbkowania z programu Visual Studio IDE
 
 Te funkcje profilowania i opcje nie są obsługiwane podczas profilowania aplikacji klasycznych systemu Windows 8 lub przy użyciu metody próbkowania aplikacji systemu Windows Server 2012:
 
@@ -60,7 +61,7 @@ Te funkcje profilowania i opcje nie są obsługiwane podczas profilowania aplika
 
 - Próbkowanie opcje, takie jak ustawianie zdarzenie próbkowania i interwał czasu lub zbieranie danych licznika wydajności.
 
-## <a name="BKMK_Profiling_from_the_command_line"></a> Profilowanie z wiersza polecenia
+## <a name="profile-from-the-command-line"></a>Profilowanie z wiersza polecenia
 
 Dwa narzędzia wiersza polecenia służy do zbierania danych profilowania na urządzeniach z systemem Windows 8 i Windows Server 2012, w tym urządzeń, które nie mają instalację programu Visual Studio:
 
@@ -75,7 +76,7 @@ Do profilu aplikacji na urządzeniach, które nie mają zainstalowanego, program
 
 - Pobierz narzędzia jako część narzędzi Remote Tools for Visual Studio z [witryny sieci web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Kopiowanie i uruchom program instalacyjny narzędzia Autonomiczny profilera z komputera programu Visual Studio. Programy instalacyjne znajdują się w *VSInstallDir %* **\Team Tools\Performance Tools\Setups** folderu. Wybierz Instalatora systemu operacyjnego (x86/x64) komputera zdalnego.
+- Kopiowanie i uruchom program instalacyjny narzędzia Autonomiczny profilera z komputera programu Visual Studio. Programy instalacyjne znajdują się w *VSInstallDir %* *\Team Tools\Performance Tools\Setups* folderu. Wybierz Instalatora systemu operacyjnego (x86/x64) komputera zdalnego.
 
 > [!NOTE]
 > Aby zbierać dane profilowania PORADĘ, musi instalowanie autonomiczny profilera z komputera program Visual Studio na komputerze zdalnym.
@@ -88,7 +89,7 @@ Te funkcje profilowania i opcje nie są obsługiwane podczas profilowanie aplika
 
 - Próbkowanie opcje, takie jak ustawianie zdarzenie próbkowania i interwał czasu lub zbieranie danych licznika wydajności.
 
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Zbieranie danych o interakcji między (TIP) warstwy
+## <a name="collect-tier-interaction-tip-data"></a>Zbieranie danych o interakcji między (TIP) warstwy
 
 Profilowanie interakcji między warstwami udostępnia dodatkowe informacje o czas wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem usług ADO.NET. Dane są zbierane tylko dla wywołań synchronicznych funkcji.
 
@@ -122,4 +123,4 @@ Warstwa danych o interakcji między mogą być przeglądane tylko w programie Vi
 
 [Eksplorator wydajności](../profiling/performance-explorer.md)
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-[profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[profilu z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -16,22 +16,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb86cc9809bcb620033820b8c422313305d95d53
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fcafc9960f9ff4c053e63b1fc5abfd75bb41c995
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254579"
 ---
 # <a name="modules-view"></a>Widok modułów
 Widok modułów zawiera listę modułów danych profilowania. Każdy moduł jest węzła głównego drzewa hierarchicznej. Profilowane funkcje modułu są wyświetlane poniżej tego węzła modułu. Jeśli dane profilowania został zebrany przy użyciu metody pobierania próbek, informacje w wierszu znajduje się poniżej tego węzła funkcji i danych wskaźnik instrukcji znajduje się poniżej tego węzła wiersza.  
   
  Rozwiń lub Zwiń Nazwa modułu do wyświetlania lub zamknąć widok danych wydajności modułu.  
   
- Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
+ Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [porady: kolumn widoku raportu dostosować](../profiling/how-to-customize-report-view-columns.md).  
   
  Kolumny, które są dostępne w widoku modułów zależą od metody profilowania (próbkowanie lub instrumentację), którego użyto do zbierania danych i czy zebrano danych pamięci .NET w profilowania uruchamiać.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok modułów](../profiling/modules-view-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

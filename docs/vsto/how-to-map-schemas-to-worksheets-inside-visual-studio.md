@@ -1,5 +1,5 @@
 ---
-title: 'Porady: mapowanie schematów z arkuszami w programie Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Porady: mapowanie schematów z arkuszami w programie Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d0caadfc08d7fa1d2ea29d04e84a5d954a42fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256048"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Porady: mapowanie schematów z arkuszami w programie Visual Studio
   Gdy arkusz jest otwarty w programie Visual Studio, możesz mapować schematu XML do arkusza. Można użyć tych samych narzędzi Microsoft Office Excel, których używasz, gdy skoroszyt jest otwarty poza Visual Studio. Office project tworzy obiekty tej samej, czy mapowanie schematu do arkusza przed lub po utworzeniu rozwiązania programu Excel.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Nie można użyć wieloczęściowego schematów XML rozwiązania programu Excel.  
   
-### <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Do mapowania schematu XML arkusza programu Excel w programie Visual Studio  
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Do mapowania schematu XML arkusza programu Excel w programie Visual Studio  
   
 1.  Otwórz projekt skoroszytu lub szablon programu Excel w programie Visual Studio.  
   
@@ -63,10 +64,10 @@ ms.lasthandoff: 04/16/2018
   
      Przeciągnięcie elementu schematu niepowtarzającymi Office project generuje <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> formant, który jest automatycznie powiązany <xref:System.Windows.Forms.BindingSource>.  
   
-     Przeciągnięcie powtarzający się element schematu Office project generuje <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematów XML i danych na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
+     Przeciągnięcie powtarzający się element schematu Office project generuje <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematów XML i danych na poziomie dokumentu dostosowania](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: mapowanie schematów z dokumentami programu Word w Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Schematy XML i dane dostosowywane na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Schematy XML i danych na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

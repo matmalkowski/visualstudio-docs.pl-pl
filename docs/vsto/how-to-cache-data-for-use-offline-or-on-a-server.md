@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dane z pamięci podręcznej do użycia w trybie Offline lub na serwerze | Dokumentacja firmy Microsoft'
+title: 'Porady: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,18 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91b50684e18aaf4b7b6d95d24c81ecb56bdefc4c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a53b3539d71383d4fad95838250380c5849e8c5b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254215"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Porady: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze
   Można oznaczyć elementu danych w pamięci podręcznej w dokumencie, aby była ona dostępna w trybie offline. To również umożliwia dane w dokumencie ustawianych przez inny kod, gdy dokument jest przechowywany na serwerze.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Można oznaczyć elementu danych można buforować, gdy element danych jest zadeklarowany w kodzie lub, jeśli używasz <xref:System.Data.DataSet>, ustawiając właściwość w **właściwości** okna. Jeśli są buforowanie elementu danych, która nie jest <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>, upewnij się, że spełnia kryteria dotyczące pamięci podręcznej w dokumencie. Aby uzyskać więcej informacji, zobacz [buforowanie danych](../vsto/caching-data.md).  
+ Można oznaczyć elementu danych można buforować, gdy element danych jest zadeklarowany w kodzie lub, jeśli używasz <xref:System.Data.DataSet>, ustawiając właściwość w **właściwości** okna. Jeśli są buforowanie elementu danych, która nie jest <xref:System.Data.DataSet> lub <xref:System.Data.DataTable>, upewnij się, że spełnia kryteria dotyczące pamięci podręcznej w dokumencie. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).  
   
 > [!NOTE]  
 >  Zestawy danych utworzone za pomocą języka Visual Basic, które są oznaczone jako **pamięci podręcznej** i **WithEvents** (łącznie z zestawów danych, które są przeciągnięte z **źródeł danych** okna lub **Przybornika** zawierających **CacheInDocument** ustawioną właściwość **True**) ma podkreślenia prefiksem nazwy w pamięci podręcznej. Na przykład można utworzyć zestawu danych i nadaj mu nazwę **klientów**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nazwa będzie **_Customers** w pamięci podręcznej. Jeśli używasz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Aby uzyskać dostęp do tego elementu pamięci podręcznej, należy określić **_Customers** zamiast **klientów**.  
@@ -61,8 +62,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  W **właściwości** ustaw **Modyfikatory** właściwości **publicznego** (domyślnie jest **wewnętrzne**).  
   
-## <a name="see-also"></a>Zobacz też  
- [Buforowanie danych](../vsto/caching-data.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Dane w pamięci podręcznej](../vsto/caching-data.md)   
  [Porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Porady: dane w dokumencie chroniony hasłem z pamięci podręcznej](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Uzyskiwanie dostępu do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)   

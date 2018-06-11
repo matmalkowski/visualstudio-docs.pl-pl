@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dołączanie rozszerzenia kodu zarządzanego do dokumentów | Dokumentacja firmy Microsoft'
+title: 'Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanych'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe415cfb0635f133baf191f027ca7ae0111989a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257046"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Porady: Dołączanie rozszerzenia kodu zarządzanego do dokumentów
-  W zestawie dostosowania można dołączyć do istniejącego dokumentu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel. Dokument lub skoroszyt można w dowolnym formacie, który jest obsługiwany przez program Microsoft Office projektów i narzędzia do programowania w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [architektura poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).  
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanych
+  W zestawie dostosowania można dołączyć do istniejącego dokumentu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel. Dokument lub skoroszyt można w dowolnym formacie, który jest obsługiwany przez program Microsoft Office projektów i narzędzia do programowania w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [architektura dostosowań na poziome dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
@@ -32,11 +33,11 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Dostosowanie nie będzie można załadować, jeśli kod oczekuje formantów, które nie mają określonego dokumentu.  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak I: czy dołączać lub odłącz zestawem VSTO z dokumentu programu Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak I: dołączyć lub odłączyć zestawem VSTO z dokumentu programu Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Aby dołączanie rozszerzenia kodu zarządzanego do dokumentu  
   
-1.  W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projektu formularzy systemu Windows, należy dodać odwołanie do Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll i Microsoft.VisualStudio.Tools.Applications.Runtime.dll zestawy.  
+1.  W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projektu formularzy systemu Windows, Dodaj odwołanie do *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* i  *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* zestawów.  
   
 2.  Dodaj następujące **importów** lub **przy użyciu** instrukcje na początku pliku kodu.  
   
@@ -52,8 +53,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  Skompiluj projekt i uruchomić aplikację na komputerze, w których chcesz dołączyć dostosowań. Komputer musi mieć Visual Studio 2010 Tools for Office Runtime zainstalowany.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+ [Porady: Usuwanie rozszerzenia managed extensions kodu z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Manifesty aplikacji i wdrażania rozwiązań pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

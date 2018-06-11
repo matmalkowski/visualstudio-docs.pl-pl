@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254621"
 ---
-# <a name="overviews-performance-tools"></a>Omówienia (narzędzia wydajności)
+# <a name="overviews-performance-tools"></a>Narzędzia do oceny wydajności — omówienie
 Ta sekcja zawiera ogólne i omówienie terminologii dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania, która służy do pomiaru właściwości działania tworzonej aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -26,27 +27,27 @@ Ta sekcja zawiera ogólne i omówienie terminologii dla [!INCLUDE[vsprvs](../cod
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
  Opisuje właściwości, które mogą służyć do konfiguracji sesji wydajności.  
   
- [Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)  
+ [Zrozumienie wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
  Dowiedz się więcej wartości danych, które są zgłaszane, gdy używasz metoda profilowania próbkowania.  
   
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
+ [Zrozumienie wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
  Dowiedz się więcej wartości danych, które są zgłaszane, gdy używana jest metoda profilowania instrumentacji.  
   
- [Zapoznanie z alokacją pamięci i danych o okresie istnienia obiektu wartości](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Zrozumienie pamięci alokacji i obiekt okres istnienia wartości danych](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
  Dowiedz się więcej wartości danych, które są zgłaszane, gdy używasz — metoda profilowania pamięci .NET.  
   
- [Zapoznanie z wartościami danych Kontencji zasobów](../profiling/understanding-resource-contention-data-values.md)  
+ [Zrozumienie wartościami danych kontencji zasobów](../profiling/understanding-resource-contention-data-values.md)  
  Dowiedz się więcej wartości danych, które są zgłaszane w przypadku użycia metody profilowania współbieżności.  
   
  [Okno Eksploratora wydajności](../profiling/performance-explorer-window.md)  
  W tym artykule opisano okna, który służy do konfigurowania i uruchamiania sesji wydajności.  
   
- [Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)  
+ [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)  
  Więcej informacji na temat liczniki wydajności Procesora i systemu Windows, które zapewniają dodatkowe dane dotyczące wydajności w sesji wydajności.  
   
  [Profilowanie i bezpieczeństwo systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
  Dowiedz się, problemy i kroki, które są wymagane, aby zebrać dane próbkowania i profilowanie krzyżowego sesji aplikacji na [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   
  [Eksplorator wydajności](../profiling/performance-explorer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60daf98d02c358e3a288a7dbb6a8a02df3a1258f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258223"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Wskazówki: aktualizacja wykresu w dokumencie za pomocą przycisków radiowych
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych
   W tym przewodniku przedstawiono sposób użycia przycisków radiowych w dostosowaniu poziomie dokumentu dla programu Microsoft Office Word umożliwić użytkownikom możliwość wybrania style wykresu w dokumencie.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Zmienianie stylu wykresu, po wybraniu opcji.  
   
- Aby zobaczyć wynik jako ukończonego próbka, zobacz przykład formanty programu Word w [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
+ Aby zobaczyć wynik jako ukończonego próbka, zobacz przykład formanty programu Word w [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -46,18 +47,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  Pierwszym krokiem jest utworzenie projektu dokument programu Word.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu dokument programu Word o nazwie **Moje opcje wykresu**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu dokument programu Word o nazwie **Moje opcje wykresu**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje opcje wykresu** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-a-chart-to-the-document"></a>Dodawanie wykresu do dokumentu  
+## <a name="add-a-chart-to-the-document"></a>Dodawanie wykresu do dokumentu  
   
-#### <a name="to-add-a-chart"></a>Aby dodać wykresu  
+### <a name="to-add-a-chart"></a>Aby dodać wykresu  
   
 1.  W dokumencie programu Word, który znajduje się w projektancie programu Visual Studio na Wstążce, kliknij przycisk **Wstaw** kartę.  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Na **układu** karcie **Format obiektu** okno dialogowe, wybierz opcję **kwadratowe** i kliknij przycisk **OK**.  
   
-## <a name="adding-a-user-control-to-the-project"></a>Dodawanie formantu użytkownika do projektu  
+## <a name="add-a-user-control-to-the-project"></a>Dodaj kontrolkę użytkownika do projektu  
  Przyciski radiowe w dokumencie nie wykluczają domyślnie. Możesz wprowadzić je działać poprawnie przez dodanie ich do kontrolki użytkownika, a następnie pisania kodu, aby kontrolować zaznaczenia.  
   
-#### <a name="to-add-a-user-control"></a>Aby dodać kontrolkę użytkownika  
+### <a name="to-add-a-user-control"></a>Aby dodać kontrolkę użytkownika  
   
 1.  Wybierz **Moje opcje wykresu** projektu w **Eksploratora rozwiązań**.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  W **Dodaj nowy element** okno dialogowe, kliknij przycisk **kontrolki użytkownika**, nazwa formantu **ChartOptions,** i kliknij przycisk **Dodaj**.  
   
-#### <a name="to-add-windows-form-controls-to-the-user-control"></a>Aby dodać kontrolki formularza systemu Windows do kontrolki użytkownika  
+### <a name="to-add-windows-form-controls-to-the-user-control"></a>Aby dodać kontrolki formularza systemu Windows do kontrolki użytkownika  
   
 1.  Kontrola użytkownika nie jest widoczne w projektancie, kliknij dwukrotnie **ChartOptions** w **Eksploratora rozwiązań**.  
   
@@ -118,10 +119,10 @@ ms.lasthandoff: 04/16/2018
     |**Nazwa**|**areaBlockChart**|  
     |**Tekst**|**Wykres warstwowy bloku**|  
   
-## <a name="adding-references"></a>Dodawanie odwołań  
- Dostęp do wykres z kontrolki użytkownika w dokumencie, musi mieć odwołanie do zestawu Microsoft.Office.Interop.Graph w projekcie.  
+## <a name="add-references"></a>Dodawanie odwołań  
+ Dostęp do wykres z kontrolki użytkownika w dokumencie, musi mieć odwołanie do `Microsoft.Office.Interop.Graph` zestawu w projekcie.  
   
-#### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Aby dodać odwołanie do zestawu Microsoft.Office.Interop.Graph  
+### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Aby dodać odwołanie do zestawu Microsoft.Office.Interop.Graph  
   
 1.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.  
   
@@ -129,10 +130,10 @@ ms.lasthandoff: 04/16/2018
   
 2.  Na **.NET** wybierz opcję **Microsoft.Office.Interop.Graph** i kliknij przycisk **OK**. Wybierz 14.0.0.0 wersji zestawu.  
   
-## <a name="changing-the-chart-style-when-a-radio-button-is-selected"></a>Zmienianie stylu wykresu, po wybraniu przycisku radiowego  
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Zmień styl wykresu, gdy przycisk radiowy zostanie wybrany  
  Aby przyciski działał prawidłowo, Utwórz zdarzenie publiczne na kontrolki użytkownika, Dodaj właściwość można ustawić typ zaznaczenia, a następnie utwórz procedurę `CheckedChanged` zdarzenia każdego z przycisków radiowych.  
   
-#### <a name="to-create-an-event-and-property-on-a-user-control"></a>Aby utworzyć zdarzenie i właściwości na kontrolkę użytkownika  
+### <a name="to-create-an-event-and-property-on-a-user-control"></a>Aby utworzyć zdarzenie i właściwości na kontrolkę użytkownika  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy kontrolki użytkownika, a następnie kliknij przycisk **kod widoku**.  
   
@@ -141,7 +142,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]  
   
-#### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>Obsługa zdarzenia CheckedChange przycisków radiowych  
+### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>Obsługa zdarzenia CheckedChange przycisków radiowych  
   
 1.  Ustaw typ wykresu w `CheckedChanged` obsługi zdarzeń `areaBlockChart` przycisk radiowy, a następnie wywołaj zdarzenie.  
   
@@ -167,10 +168,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
-## <a name="adding-the-user-control-to-the-document"></a>Dodawanie formantu użytkownika do dokumentu  
+## <a name="add-the-user-control-to-the-document"></a>Dodaj kontrolkę użytkownika do dokumentu  
  Podczas kompilowania rozwiązania nowy formant użytkownika jest automatycznie dodawany do **przybornika**. Można następnie przeciągnij formant z **przybornika** do dokumentu.  
   
-#### <a name="to-add-the-user-control-your-document"></a>Aby dodać kontrolkę użytkownika dokumentu  
+### <a name="to-add-the-user-control-your-document"></a>Aby dodać kontrolkę użytkownika dokumentu  
   
 1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
@@ -182,10 +183,10 @@ ms.lasthandoff: 04/16/2018
   
      W **właściwości** okna, nazwa formantu, który został właśnie dodany do dokumentu `ChartOptions1`.  
   
-## <a name="changing-the-chart-type"></a>Zmiana typu wykresu  
+## <a name="change-the-chart-type"></a>Zmień typ wykresu  
  Tworzenie procedury obsługi zdarzeń, aby zmienić typ wykresu, w zależności od opcji wybranej w formancie użytkownika.  
   
-#### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>Aby zmienić typ wykresu, który jest wyświetlany w dokumencie  
+### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>Aby zmienić typ wykresu, który jest wyświetlany w dokumencie  
   
 1.  Dodaj następujące obsługi zdarzeń do `ThisDocument` klasy.  
   
@@ -196,12 +197,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Teraz możesz przetestować dokumencie, aby upewnić się, że styl wykresu jest poprawnie aktualizowany po wybraniu przycisku radiowego.  
   
-#### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
+### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Wybierz różne przycisków radiowych.  
   
@@ -212,11 +213,11 @@ ms.lasthandoff: 04/16/2018
   
 -   Za pomocą przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Zmienianie formatowania, wybierając stylu z pola kombi. Aby uzyskać więcej informacji, zobacz [wskazówki: zmiana dokumentu formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Zmienianie formatowania, wybierając stylu z pola kombi. Aby uzyskać więcej informacji, zobacz [wskazówki: dokument Zmienianie formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)   
- [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
+ [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

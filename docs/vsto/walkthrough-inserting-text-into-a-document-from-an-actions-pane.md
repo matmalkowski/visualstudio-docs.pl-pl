@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 488b885b40b4cda064ae15438822ab85725526ac
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258483"
 ---
-# <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Wskazówki: wstawianie tekstu do dokumentu z okienka akcji
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji
   Ten przewodnik przedstawia sposób tworzenia okienka akcji w dokumencie programu Microsoft Office Word. W okienku Akcje zawiera dwa formanty, które gromadzenia danych wejściowych, a następnie wyślij go do dokumentu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Projektowanie interfejsu za pomocą formantów formularzy systemu Windows na formancie w okienku Akcje.  
   
--   Po otwarciu aplikacji są wyświetlane w okienku Akcje.  
+-   Wyświetl okienko akcji po otwarciu aplikacji.  
   
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -45,19 +46,19 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Tworzenie projektu  
+## <a name="create-the-project"></a>Utwórz projekt  
  Pierwszym krokiem jest utworzenie projektu dokument programu Word.  
   
-#### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
+### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu dokument programu Word o nazwie **Moje podstawowe okienka Akcje**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Tworzenie projektu dokument programu Word o nazwie **Moje podstawowe okienka Akcje**. W kreatorze Wybierz **Utwórz nowy dokument**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje podstawowe okienka Akcje** projektu do **Eksploratora rozwiązań**.  
   
-## <a name="adding-text-and-bookmarks-to-the-document"></a>Dodawanie tekstu i zakładki w dokumencie  
+## <a name="add-text-and-bookmarks-to-the-document"></a>Dodawanie tekstu i zakładki w dokumencie  
  W okienku Akcje wysyła do zakładki w dokumencie tekstowym. Projektowanie dokument, wpisz tekst do tworzenia podstawowej postaci.  
   
-#### <a name="to-add-text-to-your-document"></a>Aby dodać tekstu do dokumentu  
+### <a name="to-add-text-to-your-document"></a>Aby dodać tekstu do dokumentu  
   
 1.  W dokumencie programu Word, należy wpisać następujący tekst:  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w dokumencie, przeciągając je z **przybornika** w programie Visual Studio lub za pomocą **zakładki** okno dialogowe w programie Word.  
   
-#### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki w dokumencie  
+### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki w dokumencie  
   
 1.  Z **formanty Word** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> formantu do dokumentu.  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **zakładki** okno dialogowe, typ **showAddress** w **zakładką** polu i kliknij przycisk **Dodaj**.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka Akcje  
+## <a name="add-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka Akcje  
  Projektowanie interfejsu w okienku Akcje, Dodaj formant okienka Akcje do projektu, a następnie dodaj formanty formularzy systemu Windows do formantu w okienku Akcje.  
   
-#### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolkę okienka Akcje  
+### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolkę okienka Akcje  
   
 1.  Wybierz **Moje podstawowe okienka Akcje** projektu w **Eksploratora rozwiązań**.  
   
@@ -123,8 +124,8 @@ ms.lasthandoff: 04/16/2018
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**GetAddress**|  
-    |**Akceptuje Return**|**Wartość true**|  
-    |**Wiele linii**|**Wartość true**|  
+    |**Akceptuje Return**|**True**|  
+    |**Wiele linii**|**True**|  
     |**Rozmiar**|**130, 40**|  
   
 7.  Dodaj **przycisk** sterowania do formantu w okienku Akcje, a następnie Zmień następujące właściwości.  
@@ -134,10 +135,10 @@ ms.lasthandoff: 04/16/2018
     |**Nazwa**|**addText**|  
     |**Tekst**|**Wstaw**|  
   
-## <a name="adding-code-to-insert-text-into-the-document"></a>Dodawanie kodu do wstawiania tekstu do dokumentu  
+## <a name="add-code-to-insert-text-into-the-document"></a>Dodaj kod, aby wstawić tekst do dokumentu  
  W okienku akcji, pisanie kodu, który wstawia tekst z pola tekstowe do odpowiedniej <xref:Microsoft.Office.Tools.Word.Bookmark> formantów w dokumencie. Można użyć `Globals` klasy dostęp do formantów w dokumencie z kontrolkami w okienku akcji. Aby uzyskać więcej informacji, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
-#### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>Wstawianie tekstu w okienku Akcje w zakładki w dokumencie  
+### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>Wstawianie tekstu w okienku Akcje w zakładki w dokumencie  
   
 1.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń **addText** przycisku.  
   
@@ -148,10 +149,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
-## <a name="adding-code-to-show-the-actions-pane"></a>Dodawanie kodu do wyświetlenia w okienku Akcje  
+## <a name="add-code-to-show-the-actions-pane"></a>Dodaj kod, aby wyświetlić w okienku Akcje  
  Aby wyświetlić w okienku Akcje, Dodaj formant, który został utworzony do kolekcji formantów.  
   
-#### <a name="to-show-the-actions-pane"></a>Aby wyświetlić w okienku Akcje  
+### <a name="to-show-the-actions-pane"></a>Aby wyświetlić w okienku Akcje  
   
 1.  Tworzenie nowego wystąpienia kontrolki okienka akcji w `ThisDocument` klasy.  
   
@@ -163,12 +164,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
   
-## <a name="testing-the-application"></a>Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji  
  Przetestuj dokumencie, aby sprawdzić, czy w okienku Akcje otwiera po otwarciu dokumentu i że tekstu pisanego w polach tekstowych są wstawiane do zakładki, po kliknięciu przycisku.  
   
-#### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
+### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
   
-1.  Naciśnij klawisz F5, aby uruchomić projekt.  
+1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
   
 2.  Upewnij się, że widoczne jest okienko akcji.  
   
@@ -177,15 +178,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Następne kroki  
  Poniżej przedstawiono niektóre zadania, które mogą występować:  
   
--   Tworzenie okienka akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji ze skoroszytami programu Excel](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Utwórz okienko akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji ze skoroszytami programu Excel](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
   
 -   Powiązanie danych z kontrolkami w okienku Akcje. Aby uzyskać więcej informacji, zobacz [wskazówki: wiązanie danych do kontrolek okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
- [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Porady: Dodawanie okienek akcji do dokumentów programu Word lub skoroszyty programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Porady: Dodawanie okienek akcji do skoroszytów programu Excel](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
  [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Bookmark, kontrolka](../vsto/bookmark-control.md)  
+ [BOOKMARK, formant:](../vsto/bookmark-control.md)  
   
   

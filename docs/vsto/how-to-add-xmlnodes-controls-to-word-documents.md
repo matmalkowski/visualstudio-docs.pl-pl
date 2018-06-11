@@ -1,5 +1,5 @@
 ---
-title: 'Porady: dodawanie formantów XMLNodes do dokumentów programu Word | Dokumentacja firmy Microsoft'
+title: 'Porady: dodawanie formantów XMLNodes do dokumentów programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ff96af4078883bf77d3632d08b6417ff1c34e2f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff7a1966c9107fcd2a60b14c21b6a2dfbda09033
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258073"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Porady: dodawanie formantów XMLNodes do dokumentów programu Word
   **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest przedstawioną wyłącznie do korzyści i użyj osób i organizacji, które znajdują się poza Stanami Zjednoczonymi i jego terytoriów lub używający lub tworzenie programy, które działają na, produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy plik XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word może nie być odczytywane lub używane przez osoby lub organizacji w Stanach Zjednoczonych lub w jego terytoriów użytkowników przy użyciu lub tworzenie programów uruchamianych na produktów Microsoft Word, które są licencjonowane przez firmę Microsoft po 10 stycznia 2010 ; te produkty nie będzie działać taka sama jak produktów licencjonowanych przed tą datą lub zakupione i licencję na korzystanie z niego poza Stanami Zjednoczonymi.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/16/2018
   
  Podczas mapowania powtarzający się element schematu XML do dokumentu programu Microsoft Office Word, Visual Studio automatycznie dodaje <xref:Microsoft.Office.Tools.Word.XMLNodes> formantu do dokumentu.  
   
- Aby uzyskać informacje o mapowaniu niepowtarzającymi elementów schematu XML, zobacz [porady: dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+ Aby uzyskać informacje o mapowaniu niepowtarzającymi elementów schematu XML, zobacz [porady: XMLNode Dodaj formanty do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  <xref:Microsoft.Office.Tools.Word.XMLNodes> Formant nie jest dostępny z **przybornika** lub **źródeł danych** okna, ani nie może być utworzone programowo.  
@@ -69,10 +70,10 @@ ms.lasthandoff: 04/16/2018
   
      <xref:Microsoft.Office.Tools.Word.XMLNodes> Kontroli jest tworzony i dodawany do projektu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Formant XMLNodes](../vsto/xmlnodes-control.md)   
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
- [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

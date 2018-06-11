@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257676"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów - dane próbkowania pamięci .NET
 Widok modułów danych alokacji pamięci .NET, które są zbierane za pomocą metody pobierania próbek grupuje dane pamięci przez moduły, które zostały wykonane w przebiegu profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Funkcji modułu są wyświetlane poniżej tego węzła modułu.  
@@ -41,7 +42,7 @@ Widok modułów danych alokacji pamięci .NET, które są zbierane za pomocą me
 |**Wyłączny bajtów**|— Dla funkcji, całkowita liczba bajtów, które zostały przyznane przez funkcję. Liczba nie obejmuje bajtów przydzielonych w funkcje, które zostały wywołane przez tę funkcję.<br />— Dla modułu sumę wyłącznego bajtów, które zostały przydzielone funkcji w module.<br />— Dla wiersza lub instrukcji, całkowita liczba obiektów, które zostały przydzielonej przez ten wiersz lub instrukcji.|  
 |**% Wyłącznego bajtów**|Procent wszystkich bajtów przydzielonych w przebiegu, który profilowania były wyłącznego bajtów modułu, funkcji, wiersz lub instrukcji.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: zapełnianie arkuszy danymi z bazy danych | Dokumentacja firmy Microsoft'
+title: 'Porady: zapełnianie arkuszy danymi z bazy danych'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,24 +17,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31f0bd40b38ed85631874556908a41e21b860ecd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc01494f7407fb01b13e9b34c87b037f9ff3d66d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255879"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Porady: zapełnianie arkuszy danymi z bazy danych
-  Można uzyskać dostępu do danych w projektach pakietu Office poziomie dokumentu w taki sam sposób, że uzyskujesz dostęp do danych w projektach formularzy systemu Windows. Użyj tego samego narzędzia i kodu można wyświetlić dane w ramach rozwiązania i formanty formularzy systemu Windows nawet służy do wyświetlania danych. Ponadto można korzystać formantów o nazwie formanty hosta, które są obiektów macierzystych w programie Microsoft Office Excel, które zostały rozszerzone za pomocą zdarzeń i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+  Można uzyskać dostępu do danych w projektach pakietu Office poziomie dokumentu w taki sam sposób, że uzyskujesz dostęp do danych w projektach formularzy systemu Windows. Użyj tego samego narzędzia i kodu można wyświetlić dane w ramach rozwiązania i formanty formularzy systemu Windows nawet służy do wyświetlania danych. Ponadto można korzystać formantów o nazwie formanty hosta, które są obiektów macierzystych w programie Microsoft Office Excel, które zostały rozszerzone za pomocą zdarzeń i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- Poniższy przykład przedstawia sposób Dodaj formanty powiązane z danymi w przy użyciu projektanta projektów na poziomie dokumentu. Na przykład sposobu Dodaj formanty powiązane z danymi w projektach na poziomie aplikacji w czasie wykonywania, zobacz [wskazówki: złożone powiązanie danych w VSTO dodatku projektu](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
+ Poniższy przykład przedstawia sposób Dodaj formanty powiązane z danymi w przy użyciu projektanta projektów na poziomie dokumentu. Na przykład sposobu Dodaj formanty powiązane z danymi w projektach na poziomie aplikacji w czasie wykonywania, zobacz [wskazówki: złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: Transfer danych w arkuszu programu Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), i [jak czy I: korzystać z bazy danych w programie Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak I: Transfer danych w arkuszu programu Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), i [jak korzystać z I: bazy danych w programie Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
-## <a name="adding-a-data-bound-control-to-a-worksheet-at-design-time"></a>Dodawanie formantu powiązanego z danymi do arkusza w czasie projektowania  
+## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Dodawanie formantu powiązanego z danymi do arkusza w czasie projektowania  
   
-#### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Aby wypełnić arkusza z danymi z bazy danych  
+### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Aby wypełnić arkusza z danymi z bazy danych  
   
 1.  Otwórz projekt poziomie dokumentu programu Excel w programie Visual Studio, po otwarciu arkusza w projektancie.  
   
@@ -63,21 +64,21 @@ ms.lasthandoff: 04/16/2018
   
  Po uruchomieniu projektu kontrolka Wyświetla pierwszy rekord w źródle danych. Można użyć <xref:System.Windows.Forms.BindingSource> aby umożliwić użytkownikom do przewijania rekordów.  
   
-#### <a name="to-scroll-through-the-records"></a>Do przewijania rekordów  
+### <a name="to-scroll-through-the-records"></a>Do przewijania rekordów  
   
 -   Użyj <xref:System.Windows.Forms.BindingSource> metod, takich jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.  
   
  Aby dowiedzieć się, jak wysyłać aktualizacje do typizowanego obiektu dataset i bazę danych, zobacz [porady: aktualizowanie źródła danych danymi z kontrolką hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Dodawanie nowych źródeł danych](/visualstudio/data-tools/add-new-data-sources)   
  [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Porady: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)   
  [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Jak I: transferu danych w arkuszu programu Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
- [Jak I: używać bazy danych w programie Excel](http://go.microsoft.com/fwlink/?LinkID=130287)  
+ [Jak I: Transfer danych w arkuszu programu Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
+ [Jak korzystać z I: bazy danych w programie Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c202a663f87a77da9a40116b76c2f09e84464ceb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257449"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Porady: Programowane wypełnianie tabel programu Word właściwościami dokumentu
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu
   Poniższy przykład tworzy tabelę programu Microsoft Office Word w górnej części dokumentu i wypełnia właściwości dokumentu hosta.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="populating-tables-in-a-document-level-customization"></a>Wypełnianie tabel w dostosowaniu poziomie dokumentu  
+## <a name="populate-tables-in-a-document-level-customization"></a>Wypełnij tabele w dostosowaniu poziomie dokumentu  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwości dokumentu  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwości dokumentu  
   
 1.  Ustaw zakres na początku dokumentu.  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
   
-## <a name="populating-tables-in-a-vsto-add-in"></a>Wypełnianie tabel w dodatku narzędzi VSTO  
+## <a name="populate-tables-in-a-vsto-add-in"></a>Wypełnij tabele w dodatku VSTO  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwości dokumentu  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwości dokumentu  
   
 1.  Ustaw zakres na początku dokumentu.  
   
@@ -95,10 +96,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: programowane Tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)   
  [Porady: programowane Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [Porady: programowane Dodawanie wierszy i kolumn do tabel Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

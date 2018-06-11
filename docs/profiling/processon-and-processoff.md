@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254361"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn i ProcessOff
 VSPerfCmd.exe **ProcessOff** i **ProcessOn** podpoleceń wstrzymywanie i wznawianie, profilowanie dla określonego procesu w sesji profilowania z wiersza polecenia. **ProcessOff** zatrzymuje profilowanie proces i **ProcessOn** uruchamia profilowanie procesu.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>Parametry  
  `PID`  
- Liczba całkowita identyfikator procesu, aby uruchomić lub zatrzymać. Identyfikatorów procesów są wyświetlane na karcie procesu Menedżera zadań systemu Windows.  
+ Liczba całkowita identyfikator procesu, aby uruchomić lub zatrzymać. Identyfikatorów procesów są wyświetlane na **procesu** kartę Menedżera zadań systemu Windows.  
   
 ## <a name="required-subcommands"></a>Wymagane podpoleceń polecenia.  
  Brak  
@@ -78,8 +79,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

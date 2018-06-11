@@ -1,5 +1,5 @@
 ---
-title: 'Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki | Dokumentacja firmy Microsoft'
+title: 'Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7aff56d1d7ee3533a83ef3edbdd8ba9271efd862
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b9e988ce6d1ad722766f3994c39827cc4272a3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255080"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Porady: eksportowanie wstążki z Projektanta wstążki do XML wstążki
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki
   **Wstążki (projektanta wizualnego)** element nie obsługuje wszystkich możliwych typów dostosowywania wstążki. Aby dostosować wstążki w sposób zaawansowane, można eksportowanie wstążki z projektanta do pliku XML Wstążki i bezpośredniego edytowania pliku XML.  
   
 > [!NOTE]  
@@ -66,11 +67,11 @@ ms.lasthandoff: 04/16/2018
   
      Informacje o Pisanie metod wywołania zwrotnego i za pomocą modelu programowania RibbonX, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [XML wstążki](../vsto/ribbon-xml.md)   
  [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

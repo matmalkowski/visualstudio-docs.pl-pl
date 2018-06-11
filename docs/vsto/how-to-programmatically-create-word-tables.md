@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane Tworzenie tabel programu Word | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane Tworzenie tabel programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f77b6ee70d56c12b6c1a6b9c88de36a9adb7d92e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a44c87a796a5f4d9add4dad122933fbbbd2fe13c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257842"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Porady: Programowane tworzenie tabel programu Word
+# <a name="how-to-programmatically-create-word-tables"></a>Porady: programowane Tworzenie tabel programu Word
   <xref:Microsoft.Office.Interop.Word.Tables> Kolekcji jest elementem członkowskim <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, i <xref:Microsoft.Office.Interop.Word.Range> klasy, które oznacza, że w żadnym z tych kontekstach, można utworzyć tabeli. Możesz użyć <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Tables> kolekcji, aby dodać tabelę w określonym zakresie.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="creating-tables-in-document-level-customizations"></a>Tworzenie tabel w dostosowaniach na poziomie dokumentu  
+## <a name="create-tables-in-document-level-customizations"></a>Tworzenie tabel w dostosowaniach na poziomie dokumentu  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Aby dodać prostą tabelę do dokumentu  
+### <a name="to-add-a-simple-table-to-a-document"></a>Aby dodać prostą tabelę do dokumentu  
   
 -   Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metody w celu dodania tabeli składające się z trzech wierszy i kolumn cztery na początku dokumentu.  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
  Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> Kolekcja <xref:Microsoft.Office.Tools.Word.Document> elementu host. Można następnie odwołanie do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez towaru  
+### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez towaru  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości i podaj numer tabeli, która ma dotyczyć.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
  Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt ma również <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwości, które umożliwia formatowanie ustawić atrybutów.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl z tabelą  
+### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl z tabelą  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwości, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
   
-## <a name="creating-tables-in-vsto-add-ins"></a>Trwa tworzenie tabel w dodatkach VSTO  
+## <a name="create-tables-in-vsto-add-ins"></a>Tworzenie tabel w dodatkach VSTO  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Aby dodać prostą tabelę do dokumentu  
+### <a name="to-add-a-simple-table-to-a-document"></a>Aby dodać prostą tabelę do dokumentu  
   
 -   Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metody w celu dodania tabeli składające się z trzech wierszy i kolumn cztery na początku dokumentu.  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
  Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> kolekcji <xref:Microsoft.Office.Interop.Word.Document>. Można następnie odwołanie do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez towaru  
+### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez towaru  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości i podaj numer tabeli, która ma dotyczyć.  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/16/2018
   
  Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt ma również <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwości, które umożliwia formatowanie ustawić atrybutów.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl z tabelą  
+### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl z tabelą  
   
 1.  Użyj <xref:Microsoft.Office.Interop.Word.Table.Style%2A> właściwości, aby zastosować jedną z wbudowanych stylów programu Word do tabeli.  
   
@@ -93,10 +94,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: programowane Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [Porady: programowane Dodawanie wierszy i kolumn do tabel Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   
