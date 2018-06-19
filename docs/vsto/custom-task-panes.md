@@ -33,6 +33,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548586"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań są panele interfejsu użytkownika, które są zazwyczaj zadokowane po jednej stronie okna w aplikacji pakietu Microsoft Office. Niestandardowe okienka zadań zapewniają sposób utworzyć własny okienka zadań i użytkownikom interfejs znany dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać kontrolki, których uruchamianie kodu w celu modyfikowania dokumentów ani nie wyświetlają danych ze źródła danych.  

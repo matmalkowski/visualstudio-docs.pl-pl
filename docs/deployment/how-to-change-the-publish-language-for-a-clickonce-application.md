@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557489"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Porady: zmienianie języka publikacji dla aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, interfejs użytkownika podczas instalacji, wartością domyślną będzie języka i kultury komputerze dewelopera. W przypadku publikowania zlokalizowanej aplikacji, należy określić języka i kultury odpowiadające zlokalizowanej wersji. Jest to określane za pomocą `Publish language` właściwości projektu.  

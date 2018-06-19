@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473848"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Porady: otwieranie widoku komunikatów w Znajdź okno
 Może być bardzo łatwe w użyciu **Znajdź okno** okno dialogowe, aby wybrać docelowego okna, a następnie otwórz widok komunikatów tego okna.  

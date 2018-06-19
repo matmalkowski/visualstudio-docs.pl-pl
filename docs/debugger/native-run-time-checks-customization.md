@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480905"
 ---
 # <a name="native-run-time-checks-customization"></a>Dostosowanie macierzystego sprawdzania w trakcie wykonywania
 Podczas kompilacji z **/RTC** (sprawdzania w trakcie wykonywania) lub użyj `runtime_checks` pragma, biblioteki wykonawczej języka C zapewnia macierzystego sprawdzania w trakcie wykonywania. W niektórych przypadkach można dostosować sprawdzanie czasu wykonywania:  

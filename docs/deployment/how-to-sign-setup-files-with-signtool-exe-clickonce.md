@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566124"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Porady: podpisywanie plików konfiguracji przy użyciu narzędzia SignTool.exe (ClickOnce)
 SignTool.exe służący do podpisywania program instalacyjny (setup.exe). Ten proces zapewnia, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  

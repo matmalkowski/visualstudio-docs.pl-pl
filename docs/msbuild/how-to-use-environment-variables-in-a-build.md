@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572543"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Porady: użycie zmiennych środowiskowych w kompilacji
 Podczas tworzenia projektów często należy ustawić opcje kompilacji za pomocą informacji, która nie znajduje się w pliku projektu lub pliki wchodzące w skład projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.  

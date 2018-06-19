@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481479"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe
 To okno dialogowe pojawia się po dokonaniu zmiany natywny kod, który **Edytuj i Kontynuuj** nie można zastosować natychmiast. Wynik, niektóre kodu macierzystego w bieżącej ramki stosu jest teraz nieaktualny, oznacza to, że nieaktualne. Aby uzyskać więcej informacji, zobacz [porady: Praca z kodem starych](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

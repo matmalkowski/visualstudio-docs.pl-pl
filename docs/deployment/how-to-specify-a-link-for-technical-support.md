@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556595"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Porady: określanie łącza pomocy technicznej
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, **adres URL pomocy technicznej** właściwość identyfikuje stronę sieci Web lub udziału plików, których użytkownicy można przejść do uzyskania informacji na temat aplikacji. Ta właściwość jest opcjonalna. Podany adres URL będzie wyświetlana w aplikacji wpis **Dodaj lub usuń programy** okno dialogowe.  

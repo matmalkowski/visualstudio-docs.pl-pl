@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472048"
 ---
 # <a name="find-window-dialog-box"></a>Okno dialogowe Znajdź okno
 Umożliwia to okno dialogowe Wybierz okno i wyświetla jego właściwości lub komunikaty. Aby wyświetlić to okno dialogowe, wybierz **Znajdź okno** z **Spy** menu.  

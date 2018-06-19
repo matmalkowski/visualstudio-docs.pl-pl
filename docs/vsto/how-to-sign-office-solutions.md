@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262194"
 ---
 # <a name="how-to-sign-office-solutions"></a>Porady: podpisywanie rozwiązań pakietu Office
   Jeśli zarejestrujesz rozwiązania można przyznać zaufania do rozwiązania jako dowód przy użyciu certyfikatu. Można użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania pozostaną zaufane, nie dodatkowe aktualizacje zasad.  

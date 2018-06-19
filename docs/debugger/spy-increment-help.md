@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476608"
 ---
 # <a name="spy-help"></a>Spy++ — Pomoc
 W dokumentacji narzędzia Spy ++ obejmuje dwie grupy tematy ogólne na przy użyciu narzędzia Spy ++ i widoków Spy ++. Są one następuje Spy ++ — odwołanie, które znajdują się dodatkowe szczegóły dotyczące każdego menu dostępne polecenia i okno dialogowe.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137479"
 ---
 # <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>Opis i diagnozowania spowodowane przez rozszerzenia nie odpowiadać interfejsu użytkownika
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125770"
 ---
 # <a name="sending-events"></a>Wysyłanie zdarzeń
 Mechanizm komunikacji między debugera i aparat debugowania (DE) to model zdarzenie oparte na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM, a każde zdarzenie ma parametry, które określ następujące ustawienia:  

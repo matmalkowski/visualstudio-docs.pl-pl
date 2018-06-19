@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482155"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Błąd: Nie można połączyć się z serwerem SQL na zdalnym komputerze
 Nie można nawiązać połączenia z programem SQL Server na komputerze zdalnym *nazwa*. Odmowa dostępu. Sprawdź, czy zostały zainstalowane zdalnego debugera na komputerze zdalnym. Jeśli komputer zdalny nie znajduje się w domenie lub Visual Studio działa jako konto lokalne, komputer zdalny musi mieć konto przy użyciu tej samej nazwy użytkownika i hasła konta lokalnego.  

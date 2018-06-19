@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267743"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Uzyskiwanie dostępu do danych w dokumentach na serwerze
   Można programu z danymi w dostosowaniu poziomie dokumentu, bez konieczności używania modelu obiektów programu Microsoft Office Word i Microsoft Office Excel. Oznacza to, że można uzyskać dostępu do danych znajdujących się w dokumencie na serwerze, który nie ma programu Word lub zainstalowany program Excel. Na przykład kodu na serwerze (na przykład w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony) można dostosować dane w dokumencie i wysłać dokument dostosowane do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokumentu, kod powiązania danych w zestawie rozwiązanie wiąże danych dostosowane do dokumentu. Jest to możliwe, ponieważ dane w dokumencie jest oddzielony od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).  

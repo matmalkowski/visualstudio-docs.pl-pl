@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481713"
 ---
 # <a name="how-to-display-process-properties"></a>Porady: wyświetlanie właściwości procesu
 Aby dowiedzieć się więcej na temat procesu na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).  

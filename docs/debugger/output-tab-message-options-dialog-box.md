@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475408"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Karta danych wyjściowych, okno dialogowe opcji komunikatów
 Użyj **dane wyjściowe** kartę, aby określić, jakie dane z każdy komunikat do listy w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md), wybierz **komunikaty dziennika** z **Spy** menu.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127107"
 ---
 # <a name="how-to-use-the-activity-log"></a>Porady: Korzystanie z dziennika aktywności
 VSPackages może zapisywać komunikaty dziennika aktywności. Ta funkcja jest szczególnie przydatna w przypadku debugowania VSPackages w środowiskach sprzedaży detalicznej.  
@@ -48,7 +49,7 @@ VSPackages może zapisywać komunikaty dziennika aktywności. Ta funkcja jest sz
   
 1.  Uruchom program Visual Studio z [/Log](../ide/reference/log-devenv-exe.md) przełącznik wiersza polecenia do zapisania ActivityLog.xml dysku podczas sesji.
 
-2.  Po zamknięciu programu Visual Studio, znajdowanie dziennika aktywności w podfolderze dla danych programu Visual Studio: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Po zamknięciu programu Visual Studio, znajdowanie dziennika aktywności w podfolderze dla danych programu Visual Studio: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Otwórz dziennik aktywności w dowolnym edytorze tekstu. Poniżej przedstawiono typowe wpis:  
   

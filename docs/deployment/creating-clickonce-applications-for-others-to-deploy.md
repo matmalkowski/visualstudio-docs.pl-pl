@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065081"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdrożyć same aplikacje. Wiele z nich tylko pakietu aplikacji przy użyciu technologii ClickOnce, a następnie przekazują pliki do klienta, takich jak dużych przedsiębiorstw. Klient staje się odpowiedzialne za hosting aplikacji w swojej sieci. W tym temacie omówiono niektóre problemy związane z takich wdrożeniach w wersjach programu .NET Framework, przed w wersji 3.5. Opisuje nowe rozwiązanie, używając nowej funkcji "używać manifestu dla zaufania" w .NET Framework 3.5. Ponadto zawiera z zalecanych Strategie tworzenia wdrożenia ClickOnce dla klientów, którzy nadal używają starszej wersji programu .NET Framework.  

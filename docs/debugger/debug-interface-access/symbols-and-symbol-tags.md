@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471223"
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole i tagi symboli
 Informacje o debugowaniu o skompilowany program znajduje się w pliku bazy danych (.pdb) program jako symbole, które są dostępne za pośrednictwem interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje typ symbolu, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość jest `DWORD` wartość, która zawiera identyfikator unikatowy dla każdego wystąpienia symbolu.  

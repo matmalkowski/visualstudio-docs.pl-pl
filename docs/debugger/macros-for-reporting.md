@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476913"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
 Można użyć **_rptn —**, i **_rptfn —** makra zdefiniowane w CRTDBG. H, aby zastąpić użycie `printf` instrukcje do debugowania. Te makra automatycznie znikają w Twojej wersji podczas kompilacji **_DEBUG** nie jest zdefiniowana, a więc nie trzeba umieścić je w **#ifdef**s.  

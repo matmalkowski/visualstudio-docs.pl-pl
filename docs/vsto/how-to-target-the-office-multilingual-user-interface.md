@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262036"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Porady: docelowa Office wielojęzyczny interfejs użytkownika
   Wielojęzyczny interfejs użytkownika (MUI) to funkcja Microsoft Office, która umożliwia użytkownikowi końcowemu do zmiany języka interfejsu użytkownika (UI). Na przykład użytkownik końcowy pracy przy użyciu interfejsu użytkownika w języku angielskim, można zmienić język interfejsu użytkownika na język hiszpański.  

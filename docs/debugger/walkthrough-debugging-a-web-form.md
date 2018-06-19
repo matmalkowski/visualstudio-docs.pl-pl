@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480335"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
 Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji, znanej także jako formularza sieci Web. Przedstawiono sposób uruchamiania i zatrzymuje wykonywanie, ustaw punkty przerwania i Sprawdź zmienne w **czujki** okna.  

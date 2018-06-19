@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562549"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Porady: zarządzanie aktualizacji dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje można sprawdzić aktualizacje automatyczne lub programowo. Deweloperzy masz dużą elastyczność określania, kiedy i jak aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i gdy aplikacja ma sprawdzać dostępność aktualizacji.  

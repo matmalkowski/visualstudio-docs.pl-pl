@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476812"
 ---
 # <a name="process-properties-dialog-box"></a>Okno dialogowe właściwości procesu
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  

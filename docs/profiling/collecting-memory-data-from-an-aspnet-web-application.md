@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262694"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji sieci web ASP.NET przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcji zbierania danych pamięci alokacji i obiekt okres istnienia dla aplikacji sieci Web ASP.NET przy użyciu **VSPerfCmd** narzędzia wiersza polecenia.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475727"
 ---
 # <a name="window-properties-dialog-box"></a>Okno dialogowe właściwości okna
 Aby dowiedzieć się więcej na temat określonego okna, użyj tego okna dialogowego. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku systemu Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  

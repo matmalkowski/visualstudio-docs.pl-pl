@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576446"
 ---
 # <a name="getting-started-with-performance-tools"></a>Wprowadzenie do korzystania z narzędzia wydajności
 Ta sekcja zawiera omówienie pojęć i zadań, które będą stosowane podczas zbierania, wyświetlania i analizowania wydajności kodu za pomocą narzędzi wydajności Visual Studio.  

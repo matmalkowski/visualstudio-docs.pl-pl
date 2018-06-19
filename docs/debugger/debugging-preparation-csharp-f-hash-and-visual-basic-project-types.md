@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479219"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Przygotowanie debugowania: typy projektów C#, F# i Visual Basic
 Tematy w tej sekcji opisano, jak można debugować C#, F # i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] typy utworzone przez projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektu.  

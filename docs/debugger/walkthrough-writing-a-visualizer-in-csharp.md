@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479841"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Wskazówki: Pisanie wizualizatora w C# #
 W tym przewodniku pokazano, jak napisać prosty wizualizatora przy użyciu języka C#. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prosty ciąg nie jest szczególnie przydatna w sobie, ale zawiera podstawowe kroki, które należy wykonać, aby utworzyć wizualizatorów bardziej użyteczna w przypadku innych typów danych.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447885"
 ---
 # <a name="zoom-control-threads-view"></a>Formant powiększania (Widok wątków)
 Formant powiększania jest suwak, który ułatwi powiększać i pomniejszać na osi czasu, dzięki czemu można skupić się na obszarów. Ponieważ ten formant powiększenie środek widoku osi czasu, center obszaru zainteresowania przed powiększania.  

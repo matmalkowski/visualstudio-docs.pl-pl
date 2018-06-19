@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131759"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektu za pomocą fabryk projektu
 Typy w projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabrykę projektów* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabrykę klas standardowe cocreatable obiektów COM. Obiekty projektu nie są jednak cocreatable: ich można tworzyć tylko za pomocą fabryki projektu.  

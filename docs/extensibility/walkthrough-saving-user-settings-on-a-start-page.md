@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146094"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Wskazówki: Zapisywanie ustawień użytkownika na stronę początkową
 Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wykonując tego przewodnika, można utworzyć formantu, który zapisuje ustawienie rejestru, gdy użytkownik kliknie przycisk, a następnie pobiera ustawienie zawsze ładuje strony początkowej. Ponieważ strona początkowa szablon projektu zawiera kontrolki użytkownika można dostosować, a domyślne strony początkowej XAML wymaga tego formantu, nie trzeba się zmodyfikować strony początkowej.  

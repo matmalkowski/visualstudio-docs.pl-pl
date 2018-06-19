@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567996"
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
 Rejestrowanie umożliwia można monitorować postęp kompilacji. Przechwytywanie rejestrowanie kompilacji zdarzenia, komunikaty ostrzeżeń i błędów w pliku dziennika.  

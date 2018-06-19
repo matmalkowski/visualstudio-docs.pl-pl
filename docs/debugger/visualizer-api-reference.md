@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476955"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 Wizualizator API są dostępne dla użytkowników, którzy chcą pisanie wizualizatora w debugerze programu Visual Studio. Wizualizatora jest mała aplikacja, która umożliwia rozbudowywanie interfejsu użytkownika funkcji debuger programu Visual Studio. Wizualizatora można wyświetlić (i opcjonalnie edytować) obiekt danych określonego typu, dla którego przeznaczona jest wizualizatora.  

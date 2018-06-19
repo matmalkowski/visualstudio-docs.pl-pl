@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559598"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Porady: określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lokalizacji, gdzie użytkownicy do pobrania i zainstalowania aplikacji nie jest zawsze lokalizacji, w którym początkowo publikowania aplikacji. Na przykład w niektórych organizacjach deweloper może publikowania aplikacji na serwerze tymczasowym, a następnie administrator przeniosłaby aplikacji na serwerze sieci Web.  

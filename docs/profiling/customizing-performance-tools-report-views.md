@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263968"
 ---
 # <a name="customize-performance-tools-report-views"></a>Dostosowywanie widoków raportów narzędzi wydajności
 W tej sekcji omówiono sposób dostosowywania raportów, które są generowane z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania.  

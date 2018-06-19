@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136097"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Porady: korzystanie z kreatora z szablonami projektu
 Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, implementując umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt z szablonu.  

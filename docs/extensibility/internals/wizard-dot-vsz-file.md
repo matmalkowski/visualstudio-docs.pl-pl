@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142880"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (. Pliku Vsz)
 Zintegrowane środowisko programistyczne (IDE) używa plików .vsz, aby uruchomić kreatora. Te pliki .vsz zawierają informacje, które IDE używa w celu określenia, które kreatora w celu wywołania i jakie informacje do przekazania do kreatora.  

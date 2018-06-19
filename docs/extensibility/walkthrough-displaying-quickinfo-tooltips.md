@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146767"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Wskazówki: Wyświetlanie skrócone informacje etykietek narzędzi
 Skrócone informacje to funkcja IntelliSense, która wyświetla podpisy metod i opisy, gdy użytkownik przesunie wskaźnik nad nazwę metody. Na podstawie języka funkcje, takie jak skrócone informacje można zaimplementować definiujący identyfikatory, dla których chcesz zawierają opisy skrócone informacje, a następnie utworzenie etykietka narzędzia, w którym ma być wyświetlana zawartość. Skrócone informacje można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i wyświetlić skrócone informacje dla właśnie tego typu lub skrócone informacje można wyświetlać dla istniejącego typu zawartości (na przykład "tekst"). Ten przewodnik przedstawia sposób wyświetlania skrócone informacje dla typu zawartości "text".  

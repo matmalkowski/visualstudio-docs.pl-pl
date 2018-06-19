@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263457"
 ---
 # <a name="data-in-office-solutions"></a>Dane w rozwiązaniach pakietu Office
   W przypadku wielu rozwiązań pakietu Office użytkownicy mogą pobrać lub modyfikować danych. Podczas tworzenia rozwiązań pakietu Office przy użyciu programu Visual Studio, istnieje kilka różnych sposobów, którymi można pracować z danymi.  

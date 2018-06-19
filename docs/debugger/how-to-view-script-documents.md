@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474732"
 ---
 # <a name="how-to-view-script-documents"></a>Porady: wyświetlanie dokumentów skryptu
 W starszych wersjach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], w oknie Eksploratora skryptu pojawił się wygenerowanych ze skryptu po stronie serwera plików skryptu po stronie klienta. Okno Eksploratora skryptu często został ukryty, dzięki czemu dostępności skryptu po stronie klienta nie jest zawsze widoczne.  

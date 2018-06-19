@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477524"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do korzystania z diagnostyki grafiki programu Visual Studio
 W tej sekcji umożliwią przygotowanie do użycia diagnostyki grafiki po raz pierwszy, a następnie należy przechwycić ramki z aplikacji Direct3D i sprawdzić ich w analizatorze grafiki.  

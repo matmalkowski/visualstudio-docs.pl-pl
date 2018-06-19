@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127859"
 ---
 # <a name="how-to-implement-error-markers"></a>Porady: Implementowanie znaczników błąd
 Znaczniki błędów (lub czerwone faliste podkreślenie) są najbardziej trudne do zaimplementowania dostosowań edytora tekstu. Jednak korzyści, które umożliwiają użytkownikom VSPackage może znacznie ważniejsze niż koszt, aby zapewnić użytkownikom. Znaczniki błędów pisowni zaznaczenia tekstu, który z analizatora języka uzna niepoprawne o dowolnym kształcie lub faliste wiersz czerwony. Ten wskaźnik pomaga programistów, wyświetlając wizualnie niepoprawny kod.  

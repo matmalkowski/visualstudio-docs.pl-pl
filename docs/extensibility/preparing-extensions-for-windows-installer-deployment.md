@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136329"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows
 Za pomocą pakietu Instalatora Windows (MSI) nie można wdrożyć pakietu VSIX. Można jednak Wyodrębnij zawartość pakietu VSIX dla wdrożenia MSI. Ten dokument przedstawia sposób przygotowania projektu, której wyjście domyślny jest pakietem VSIX do dołączenia do projektu Instalatora.  

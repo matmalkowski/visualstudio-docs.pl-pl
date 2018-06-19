@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477891"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Korzystanie z atrybutu DebuggerTypeProxy
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub podstawiony typu i zmiany sposobu typ jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która jest serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. Okno zmiennych debugera zawiera tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.  

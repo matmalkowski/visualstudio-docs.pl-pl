@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472932"
 ---
 # <a name="debugging-preparation-console-projects"></a>Przygotowanie debugowania: projekty konsoli
 Trwa przygotowywanie do debugowania projektu konsoli jest podobny do przygotowywanie do debugowania z kilka dodatkowych kwestii dotyczących projektu systemu Windows. Aby uzyskać więcej informacji, zobacz [aplikacjach formularzy systemu Windows](../debugger/debugging-preparation-windows-forms-applications.md), i [przygotowanie debugowania: aplikacje formularzy systemu Windows (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z powodu podobieństwa wszystkich aplikacji konsoli w tym temacie omówiono następujące typy projektu:  

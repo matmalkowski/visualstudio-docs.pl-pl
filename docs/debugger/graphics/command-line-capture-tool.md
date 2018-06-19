@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477930"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia przechwytywania
 DXCap.exe to narzędzie wiersza polecenia do przechwytywania diagnostyki grafiki i odtwarzania. Obsługuje ona Direct3D 10 do Direct3D 12 na wszystkich poziomach funkcji.  

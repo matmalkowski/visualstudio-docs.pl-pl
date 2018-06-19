@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475028"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (wystąpienie wyjątku) ― okno dialogowe
 Wystąpił wyjątek w programie. To okno dialogowe Raporty rodzaj został zwrócony wyjątek. Kod musi do obsługi tego wyjątku. Można wybrać jedną z następujących opcji obsługi wyjątku:  

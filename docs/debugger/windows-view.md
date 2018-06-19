@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478034"
 ---
 # <a name="windows-view"></a>Widok okien
 Przy pierwszym otwarciu Spy ++, widoku systemu Windows wyświetla drzewo wszystkie okna i formantów w systemie. Nazwa okna obsługi i klasa są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne systemu windows są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchii standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej ich elementów nadrzędnych.  

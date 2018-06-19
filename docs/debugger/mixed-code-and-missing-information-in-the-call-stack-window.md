@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480231"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Kod mieszany i brakujące informacje w oknie stosu wywołań
 Z powodu różnic między stosy wywołań do kodu zarządzanego i natywnego debuger zawsze nie można wyświetlić stosu wywołań pełną, gdy mieszane typy kodu. Gdy natywny kod wywołuje kod zarządzany, możesz zauważyć następujące rozbieżności w **stos wywołań** okno:  

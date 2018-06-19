@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472870"
 ---
 # <a name="error-firewall-on-local-machine"></a>Błąd: Zapora na zdalnym komputerze
 Nie skonfigurowano Zapora połączenia internetowego na komputerze lokalnym komputerze, na którym uruchamiasz program Visual Studio, w celu zezwolenia na debugowanie zdalne. Zarządzanym lub macierzystym zdalne debugowanie z domyślny transport, należy otworzyć port TCP 135 dla ruchu modelu DCOM. Udostępnianie plików i drukarek muszą być otwarte i devenv.exe musi zostać dodany do listy wyjątków. Otwieranie portów niektórych IPSEC może być konieczne również.  

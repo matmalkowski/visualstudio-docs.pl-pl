@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704528"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 **Immediate** okna jest używana do debugowania i obliczać wyrażeń, wykonać instrukcje wartości zmiennych i tak dalej. Umożliwia ona wprowadź wyrażenia, które mają być obliczane lub wykonywane przez język programowania podczas debugowania. Aby wyświetlić **Immediate** okna, otwórz projekt do edycji, a następnie wybierz **Windows** z **debugowania** menu i wybierz **Immediate**, lub naciśnij klawisze CTRL + ALT + I.

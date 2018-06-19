@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457361"
 ---
 # <a name="about-microsoft-spy"></a>Informacje o Microsoft Spy++
 To okno dialogowe służy do wyświetlania praw autorskich, wersji, własność i inne informacje o programie Spy ++.

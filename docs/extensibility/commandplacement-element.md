@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267978"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement Element
 CommandPlacement element włącza przyciski, grup i menu do uwzględnienia w więcej niż jedną grupę lub menu. Za pomocą elementu CommandPlacement, nie trzeba całkowicie ponownie zdefiniować te elementy, aby zmodyfikować wygląd interfejsu użytkownika.  

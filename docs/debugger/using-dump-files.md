@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481830"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Program Visual Studio przy użyciu plików zrzutu
 Pliki zrzutu z lub bez stosów; Utwórz plik zrzutu; Otwórz plik zrzutu; Znajdowanie danych binarnych, w pliku pdb i pliku źródłowego dla pliku zrzutu.

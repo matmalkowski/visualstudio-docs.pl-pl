@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570463"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 Rejestratory umożliwiają dostosowanie dane wyjściowe kompilacji i wyświetlić wiadomości, błędy lub ostrzeżenia w odpowiedzi na zdarzenia określonej kompilacji. Każdy rejestrator jest zaimplementowany jako klasy .NET, który implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs, który jest zdefiniowany w zestawie Microsoft.Build.Framework.dll.  

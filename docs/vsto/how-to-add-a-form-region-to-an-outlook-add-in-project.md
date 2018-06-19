@@ -25,6 +25,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549041"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Porady: dodawanie regionu formularza do projektu dodatek programu Outlook
   Utwórz region formularza, aby rozszerzyć za pomocą standardowych lub niestandardowych formularzy programu Microsoft Office Outlook **nowych regionów formularzy programu Outlook** kreatora. Można utworzyć nowego regionu formularza i projektowanie interfejsu użytkownika w programie Visual Studio lub mogą być importowane regionu formularza, który został zaprojektowany w programie Outlook i Dodaj kod Visual Basic lub C#.  

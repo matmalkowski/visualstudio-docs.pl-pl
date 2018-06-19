@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135448"
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące języka starszej wersji usługi
 Należy podać usługi języka Aby zintegrować język programowania Visual Studio. W tym temacie opisano funkcje dostępne w usługach starszej wersji języka.  

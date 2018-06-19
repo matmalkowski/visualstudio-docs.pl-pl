@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480049"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Wskazówki: debugowanie błędów renderowania spowodowanych cieniowaniem
 W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do sprawdzania, czy obiekt, który jest niepoprawnie pokolorowane z powodu błędu programu do cieniowania.  

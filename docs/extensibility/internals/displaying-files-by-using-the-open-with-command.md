@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128623"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia
 Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialogowe. To żądanie monituje użytkownika o otwarcie pliku, który ma wybór standardowe edytory. W poniższych krokach opisano tego procesu.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263280"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Komunikaty o błędach (Office development w Visual Studio)
   Każdego tematu komunikat błędu zawiera informacje dotyczące możliwe przyczyny błędu i potencjalne rozwiązania lub obejścia w rozwiązaniu problemu.  

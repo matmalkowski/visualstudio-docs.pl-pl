@@ -1,12 +1,13 @@
 ---
-title: "Some — metoda (tablica) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Some — metoda (tablica) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], some method
 - some method [JavaScript]
 ms.assetid: 7b6822f9-c406-4f4e-bfec-a93459745992
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792055"
 ---
 # <a name="some-method-array-javascript"></a>some — Metoda (Tablica) (JavaScript)
 Określa, czy funkcja wywołania zwrotnego określonego zwraca `true` dla każdego elementu tablicy.  

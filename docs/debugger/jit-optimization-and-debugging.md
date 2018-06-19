@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477358"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 **Jak działają funkcje optymalizacji programu .NET:** Jeśli próbujesz debugowania kodu, łatwiej gdy kod jest **nie** zoptymalizowane. To dlatego, jeśli kod jest zoptymalizowany, kompilatora i środowiska uruchomieniowego dokonać zmian emitowany kodu procesora CPU, aby działa szybciej, ale ma mniej bezpośredniego mapowania do oryginalnego kodu źródłowego. Oznacza to, że debugery są często informujące wartości zmiennych lokalnych i kodu wykonywanie krok po kroku, a punkty przerwania może nie działać zgodnie z oczekiwaniami.

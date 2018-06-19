@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573079"
 ---
 # <a name="gpu-activity-other-processes"></a>Aktywność procesora GPU (inne procesy)
 **Aktywności procesora GPU (inne procesy)** segmentów w widoku wątków Concurrency Visualizer reprezentują razy podczas przetwarzania żądania w imieniu innych procesów w systemie procesora GPU. Te żądania są wysyłane procesora GPU w pamięci (DMA) dostępu do pakietów.  Długość segmentu reprezentuje czas przetwarzania przez procesor GPU pakiet.  

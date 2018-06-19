@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128723"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Kod komentowania w starsza wersja usługi języka
 Języki programowania zwykle pozwalają na dodawanie adnotacji lub komentarzy kodu. Fragment tekstu, który udostępnia dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji jest komentarz.  

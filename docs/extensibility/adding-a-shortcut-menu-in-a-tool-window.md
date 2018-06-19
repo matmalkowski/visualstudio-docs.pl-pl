@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568672"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie Menu skrótów okna narzędzi
 W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest menu wyświetlanym po kliknięciu przycisku, pola tekstowego lub tło okna. Polecenia menu skrótów działają tak samo, jak polecenia w innym menu i pasków narzędzi. Aby obsługiwać menu skrótów, określ go w pliku vsct i wyświetl ją w odpowiedzi na kliknij prawym przyciskiem myszy.  

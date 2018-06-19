@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457270"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
 DataSet Visualizer służy do wyświetlania zawartości obiektu DataSet, DataTable, DataView lub elementu DataViewManager. Ten Wizualizator można uzyskać, klikając ikonę lupy, która jest wyświetlany obok wartość dla jednego z tych obiektów w oknie zmienne debugera lub etykietki danych.  

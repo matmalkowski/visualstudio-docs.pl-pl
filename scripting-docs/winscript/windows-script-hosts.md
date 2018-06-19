@@ -1,16 +1,16 @@
 ---
-title: "Hosty skryptów systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Hosty skryptów systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24796426"
 ---
 # <a name="windows-script-hosts"></a>Hosty skryptów systemu Windows
 Podczas wdrażania hosta skryptów systemu Windows firmy Microsoft, można bezpiecznie przyjąć aparat skryptów tylko wywołuje [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) interfejsu w kontekście wątku podstawowego tak długo, jak host wykonuje następujące czynności:  
