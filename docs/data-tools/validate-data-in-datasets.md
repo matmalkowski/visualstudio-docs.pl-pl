@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927471"
 ---
 # <a name="validate-data-in-datasets"></a>Sprawdzanie poprawności danych w zestawach danych
 Sprawdzanie poprawności danych jest proces potwierdzania wartości wprowadzanego do obiektów danych są zgodne z ograniczeniami w ramach schematu zestawu danych. Proces weryfikacji również potwierdza, że te wartości są następujące reguły, które zostały utworzone dla aplikacji. Jest dobrym rozwiązaniem, aby sprawdzić poprawność danych przed ich wysłaniem aktualizacje do źródłowej bazy danych. Zmniejsza to błędy, a także potencjalnych liczby rund między aplikacją i bazy danych.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102931"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w celu zapewnienia usług debugowania, takich jak wykonanie oceny kontroli, punkty przerwania i wyrażenia. Niemcy jest odpowiedzialny za monitorowanie stanu debugowany program. Aby to zrobić, DE używa, niezależnie od metody są dostępne w środowisku wykonawczym obsługiwanych, czy z Procesora lub interfejsów API dostarczonych przez środowisko uruchomieniowe.  

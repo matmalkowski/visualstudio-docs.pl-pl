@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927103"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Rozszerzone wytyczne dotyczące reguł projektowania dla zarządzanego kodu
 Rozwija reguły wskazówek dotyczących projektowania Microsoft rozszerzony zestaw reguł na reguły wskazówek dotyczących projektowania podstawowych, aby zmaksymalizować zgłaszanych problemów użytecznością i utrzymaniem. Dodatkowy nacisk jest kładziony na wskazówki dotyczące nazewnictwa. Należy rozważyć dołączenie tego zestawu, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymuszenia najwyższych standardów dotyczące pisania kodu, który jest łatwe w konserwacji reguł.

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943205"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
 Ta strona Opcje — okno dialogowe umożliwia określenie, czy pliki są automatycznie do kopii zapasowej. Ta strona umożliwia również określić czy zmodyfikowane pliki zostaną przywrócone, gdy jest nieoczekiwanie zamykany zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, wybierając **narzędzia** menu i wybierając pozycję **opcje**, a następnie wybierając **środowiska** folderu i wybierając polecenie  **AutoRecover** strony. Jeśli ta strona nie ma na liście, wybierz **wszystkie ustawienia** w **opcje** okno dialogowe.

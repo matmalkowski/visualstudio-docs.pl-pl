@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098189"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Przełączniki wiersza polecenia (Visual Studio SDK)
 Devenv.exe, plik wykonywalny, który uruchamia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) obsługuje przełączniki wiersza polecenia specjalnie z myślą o programowanie VSPackages. VSPackages można także udostępnić swoje własne przełączniki wiersza polecenia Devenv. Poniższe tematy zawierają informacje o sposobie używania przełączniki wiersza polecenia w środowisku IDE.  

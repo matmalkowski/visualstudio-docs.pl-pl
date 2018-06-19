@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927207"
 ---
 # <a name="create-relationships-between-datasets"></a>Utwórz relacje między zbiory danych
 Zestawy danych, które zawierają dane dotyczące tabel użyj <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i do zwrócenia powiązane rekordy od siebie nawzajem. Dodawanie tabel powiązanych do zestawów danych przy użyciu **Kreator konfiguracji źródła danych**, lub **Projektant obiektów Dataset**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt.

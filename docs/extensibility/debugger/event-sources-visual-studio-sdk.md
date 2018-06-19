@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099841"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
 Istnieją dwa źródła zdarzeń: aparat debugowania (DE), a sesja debugowania Menedżera (SDM). Zdarzenia wysyłane z URZ ma aparat inną niż NULL, podczas zdarzenia wysyłane z SDM aparat wartości NULL.  

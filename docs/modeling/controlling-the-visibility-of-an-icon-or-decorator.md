@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951375"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka specyficznego dla domeny (DSL). Możesz ustawić dekoratora występują a znikają w zależności od stanu właściwości w modelu. Na przykład na kształt reprezentujący osoby, może mieć inne ikony, które znajdują się w zależności od danej osoby, płci, liczbę elementów podrzędnych i tak dalej.

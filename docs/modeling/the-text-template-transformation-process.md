@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951183"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces przekształcania szablonu tekstowego
 Proces transformacji szablonu tekstowego przyjmuje jako dane wejściowe pliku szablonu tekstowego i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład szablony tekstowe służy do generowania kodu języka Visual Basic lub C# lub można wygenerować raport HTML.

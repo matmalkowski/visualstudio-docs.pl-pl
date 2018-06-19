@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947940"
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 Można użyć strony **środowiska** folderu w **opcje** okno dialogowe, aby ustawić jak niektóre elementy zintegrowane środowisko programistyczne (IDE) Wyświetl i zachowania. Dostępne stron środowiska, z menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.

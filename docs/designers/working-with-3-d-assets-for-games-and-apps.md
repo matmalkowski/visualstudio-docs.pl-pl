@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924847"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Korzystanie z zasobów 3D do gier i aplikacji
 

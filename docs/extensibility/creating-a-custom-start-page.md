@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100687"
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie strony początkowej niestandardowych
 Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej strony początkowej.  

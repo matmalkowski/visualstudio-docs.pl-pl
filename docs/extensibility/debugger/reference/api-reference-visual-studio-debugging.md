@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103243"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Dokumentacja interfejsu API (debugowania programu Visual Studio)
 Ta część zawiera omówienie interfejsu API, przewodnik pokazujący składni i użycia dla wszystkich elementów interfejsu API i gamę przykłady kodu. Wszystkie odwołania alfabetycznym według kategorii.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099554"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Struktura pakietu VSIX
 Pakiet VSIX jest plik .vsix, który zawiera jeden lub więcej rozszerzeń programu Visual Studio, razem z metadanymi, używanych do klasyfikowania i zainstalowania rozszerzeń programu Visual Studio. Metadane są zawarte w manifeście VSIX i pliku XML [Content_Types]. Pakiet VSIX może również zawierać jeden lub więcej plików Extension.vsixlangpack, aby umieścić tekst Instalatora zlokalizowanych i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.  

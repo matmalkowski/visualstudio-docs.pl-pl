@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099086"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 Zmiana wyglądu polecenia zapewniają opinię do użytkownika. Na przykład możesz polecenie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, Ukryj lub widoczne, lub sprawdź lub usuń zaznaczenie ich w menu.  

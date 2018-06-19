@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954140"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 Obsługi przeciągania i upuszczania można dodać do Twojego DSL, dzięki czemu użytkownicy mogą przeciągnij elementy diagramu z innych diagramów lub innych części [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można również dodać programy obsługi dla zdarzenia takich jak kliknie dwukrotnie. Ze sobą, są nazywane obsługi przeciągania i upuszczania, a następnie dwukrotnie kliknij *gestu obsługi*.

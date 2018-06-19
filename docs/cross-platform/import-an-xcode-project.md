@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066941"
 ---
 # <a name="import-an-xcode-project"></a>Importowanie projektu XCode
 Microsoft Visual C++ for Cross Platform Mobile Development obsługuje przenoszenie projektów XCode do programu Visual Studio, w którym można tworzyć bibliotek i platform i udostępnianie kodu z innych projektów. Importuj z Kreatora XCode upraszcza proces importowania projektów i dzielenia kodu C++ w celów XCode dla użyj biblioteki statycznej lub kod projektu współużytkowanych. Możesz zarządzać kodem specyficzne dla systemu iOS w programie Visual Studio i nadal używać XCode scenorys i kompilacji. Informacje o tym, jak łatwo zmieniać kodu i z powrotem XCode i Visual Studio Zobacz Przenieś zmiany między XCode i Visual Studio.  

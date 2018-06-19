@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103360"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Skróty klawiaturowe powiązania elementów Menu
 Aby powiązać polecenia niestandardowych menu skrótów klawiaturowych, Dodaj wpis w pliku vsct dla pakietu. W tym temacie opisano sposób mapowania skrót klawiaturowy do niestandardowych przycisku, element menu lub poleceń narzędzi oraz sposób zastosować Mapowanie klawiatury w domyślnym edytorem lub ograniczenie go do edytora niestandardowego.  

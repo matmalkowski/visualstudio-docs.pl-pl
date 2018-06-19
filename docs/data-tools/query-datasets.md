@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926705"
 ---
 # <a name="query-datasets"></a>Zestawy danych zapytania
 Aby wyszukiwać określone rekordy w zestawie danych, użyj metody FindBy DataTable, zapis własnych instrukcji foreach do pętli kolekcji wierszy tabeli lub użyj [LINQ do DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

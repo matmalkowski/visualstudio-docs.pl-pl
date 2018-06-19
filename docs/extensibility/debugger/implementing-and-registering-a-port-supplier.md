@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103178"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Wdrażanie i rejestrowanie dostawcy portu
 Rolą port dostawcy jest śledzenie i podaj portów, które z kolei zarządzania procesami. W momencie port musi zostać utworzona dostawca portu zostanie uruchomiony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (manager debugowania sesji [SDM] będzie używać portu dostawcy wybrany przez użytkownika lub dostawcę port określony przez system projektów). Następnie wywoła SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby zobaczyć, czy żadnych portów może być dodany. Jeśli port można dodać, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, który opisuje. `AddPort` Zwraca nowy port reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102385"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Dostosowywanie menu i formanty edytora przy użyciu interfejsu API starsza wersja
 Usługa języka lub widoku tekstu, można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji opisano sposób pracy z tych funkcji.  

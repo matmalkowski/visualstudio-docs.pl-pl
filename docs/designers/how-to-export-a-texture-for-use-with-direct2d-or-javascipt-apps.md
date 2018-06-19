@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925015"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Porady: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 Potok zawartości obrazu mogą generować tekstury, które są zgodne z konwencjami renderowanie wewnętrznego w Direct2D. Tekstury tego typu są odpowiednie do użycia w aplikacji, które używają Direct2D i w aplikacjach platformy uniwersalnej systemu Windows tworzone przy użyciu języka JavaScript.

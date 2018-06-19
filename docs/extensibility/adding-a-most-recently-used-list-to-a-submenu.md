@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105268"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Dodawanie większość ostatnio używane do podmenu
 Ten przewodnik jest oparty na pokazów w [dodawanie do Menu podmenu](../extensibility/adding-a-submenu-to-a-menu.md)oraz przedstawiono sposób dodawania listy dynamicznych do podmenu. Lista dynamiczna stanowi podstawę do tworzenia listy najbardziej ostatnio używanych.  

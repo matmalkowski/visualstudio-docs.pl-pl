@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101293"
 ---
 # <a name="adding-and-removing-property-pages"></a>Dodawanie i usuwanie strony właściwości
 Projektant projektu miejsce na scentralizowane zarządzanie właściwości projektu, ustawień i zasobów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest on wyświetlany jako jednego okna w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) i zawiera wiele okienek po prawej stronie, które są dostępne za pośrednictwem karty po lewej stronie. Okienka (często określany jako strony właściwości) w Projektancie projektu zależy od języka i typ projektu. Projektant projektu jest możliwy z **właściwości** na **projektu** menu.  

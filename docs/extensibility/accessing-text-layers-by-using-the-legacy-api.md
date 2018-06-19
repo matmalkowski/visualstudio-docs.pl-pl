@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098670"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Uzyskiwanie dostępu do warstwy tekstu przy użyciu interfejsu API starsza wersja
 Warstwa tekstu hermetyzuje zwykle aspektów układu tekstu. Na przykład warstwy "Funkcja w pojedynczych" Ukrywa tekst przed i po funkcja zawierająca karetki (punktu wstawiania).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098995"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementacja dostawcy portu
 Dostawca portu udostępnia porty na żądanie do menedżera sesji debugowania (SDM). Dostawca portu musi wykonywane podczas debugowania na maszynę z systemem innym niż DCOM lub gdy nowe urządzenie musi być obsługiwany. Na przykład aby umożliwić debugowanie na telefon komórkowy, może implementować dostawcy port udostępniający nawiązać połączenia z telefonem komórkowym (być może przy użyciu IR lub połączenie komórki) i wylicza procesy i programy uruchomione na telefonie porty.  

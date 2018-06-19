@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924720"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisz dane z obiektu do bazy danych
 Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednego z TableAdapter DBDirect — metody (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).

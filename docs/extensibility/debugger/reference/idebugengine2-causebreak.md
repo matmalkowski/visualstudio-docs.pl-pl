@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105213"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Wszystkie programy jest debugowane ten aparat debugowania (DE), aby zatrzymać wykonanie przy następnym żądań, jeden z wątków ich podejmie próbę uruchomienia.  

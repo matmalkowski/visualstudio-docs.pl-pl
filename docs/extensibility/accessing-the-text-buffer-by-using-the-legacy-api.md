@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099476"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Dostęp do buforu tekstu przy użyciu interfejsu API starsza wersja
 Tekst jest odpowiedzialny za zarządzanie strumienie tekstu i plik trwałości. Mimo że buforu można odczytu lub zapisu w innych formatach, cała komunikacja zwykłej z buforu odbywa się przy użyciu Unicode. W starszych interfejsów API bufor tekstowy umożliwia jedno - albo dwuwymiarowa współrzędnych identyfikują lokalizacje znak w buforze.  

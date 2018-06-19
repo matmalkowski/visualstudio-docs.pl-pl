@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31070954"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Tworzenie aplikacji OpenGL ES w systemach Android i iOS
 Po zainstalowaniu programu Visual C++ for Cross Platform Mobile Development — opcja, można utworzyć rozwiązań programu Visual Studio i projektów dla aplikacji systemu iOS i Android aplikacje, które mają wspólny kod. Ten temat przeprowadzi Cię przez szablon rozwiązania, który tworzy zarówno aplikację iOS proste, jak i aplikacji systemu Android działania natywnego. Aplikacje mają kod w języku C++ wspólną używane przez interfejsy OpenGL ES do wyświetlenia tego samego modułu obracania animowany na każdej z platform. Interfejsy OpenGL ES (OpenGL dla osadzonych systemów lub GLES) jest 2W i 3W grafiki interfejsu API, który jest obsługiwany na wielu urządzeniach przenośnych.  

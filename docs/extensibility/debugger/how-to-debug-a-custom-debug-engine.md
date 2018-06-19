@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106984"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Porady: Debugowanie aparatu debugowania niestandardowych
 Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiana pod kontrolą wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Jakie następujące przedstawiono kroki, co pozwala na debugowanie z niestandardowych DE.  
@@ -59,7 +60,7 @@ Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Sh
   
 1.  Uruchom [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w gałęzi rejestru normalne i obciążenia projektu wpisz projektu (jest to, źródła do danego typu projektu nie wystąpienia tego typu projektu).  
   
-2.  Otwórz właściwości projektu i przejdź do **debugowania** strony. Aby uzyskać **polecenia**, wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Otwórz właściwości projektu i przejdź do **debugowania** strony. Aby uzyskać **polecenia**, wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Aby uzyskać **argumenty polecenia**, typ `/rootsuffix exp` gałęzi rejestru eksperymentalne (utworzone podczas instalacji VSIP).  
   

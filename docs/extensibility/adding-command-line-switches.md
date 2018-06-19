@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098421"
 ---
 # <a name="adding-command-line-switches"></a>Dodawanie przełączniki wiersza polecenia
 Możesz dodać przełączniki wiersza polecenia, które dotyczą VSPackage, gdy jest wykonywana devenv.exe. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> Aby zadeklarować nazwy przełącznika i jego właściwości. W tym przykładzie przełącznika MySwitch zostanie dodany do podklasy pakiet VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i VSPackage ładowane automatycznie.  

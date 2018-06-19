@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097786"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Uzyskiwanie dostępu do theText widoku przy użyciu interfejsu API starsza wersja
 Widok tekstu jest prezentacji tekstu, który jest przechowywany w buforu tekstu. Przy użyciu starszej wersji interfejsu API, jak pokazano w poniższej sekcji można uzyskać dostępu do widoku tekstu.

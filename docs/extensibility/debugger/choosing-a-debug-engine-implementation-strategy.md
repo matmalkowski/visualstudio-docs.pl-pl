@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098072"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Wybieranie strategii wdrażania aparat debugowania
 Architektura środowiska wykonawczego umożliwia określanie strategii wdrażania (DE) Aparat debugowania. Aparat debugowania może zostać utworzony w trakcie do programu debugowany, proces Menedżera debugowania sesji programu Visual Studio (SDM) lub poza procesem do obu z nich. Poniższe wskazówki powinna ułatwić wybranie jednego z tych trzech strategii.  

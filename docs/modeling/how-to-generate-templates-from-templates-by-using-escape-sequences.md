@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947485"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych
 Można utworzyć szablon tekst, który tworzy innego szablonu tekstowego jako dane wyjściowe wygenerowane tekstu. Aby to zrobić, możesz korzystać sekwencji unikowych do odróżniać znaczniki szablonu tekstowego. Jeśli nie używasz sekwencji unikowych, szablon wygenerowanego tekstu ma wstępnie zdefiniowane znaczenie. Aby uzyskać więcej informacji o użyciu sekwencji unikowych w szablonach tekstowych, zobacz [przy użyciu sekwencji unikowych w szablonach tekstowych](../modeling/using-escape-sequences-in-text-templates.md).

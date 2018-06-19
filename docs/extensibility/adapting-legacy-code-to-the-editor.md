@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105141"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptacja starszego kodu do edytora
 Edytor programu Visual Studio zawiera wiele funkcji, które są dostępne z istniejącymi elementami kodu. Poniższe instrukcje przedstawiają sposób dostosowania składników MEF nie, na przykład pakiet VSPackage, aby korzystać z funkcji edytora. Instrukcje również pokazują, jak używać kart można pobrać usługi edytora kodu zarządzane i niezarządzane.  

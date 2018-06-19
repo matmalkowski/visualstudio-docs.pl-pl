@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952829"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 Jeśli pisania szablonów tekstowych, które zapoznały modelu, który zawiera [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] odwołuje się do ModelBus, można rozwiązać odwołania do modeli docelowych dostępu. W takim przypadku należy dostosować szablony tekstowe i do którego istnieje odwołanie języków specyficznego dla domeny (DSLs):

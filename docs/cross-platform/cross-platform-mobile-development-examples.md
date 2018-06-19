@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065598"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Przykłady aplikacji mobilnych dla wielu Platform
 Niektóre szablony zainstalowane przez Visual C++ dla wielu Platform Mobile Development Generowanie pełną przykłady, których można użyć do poznania. Ponadto Centrum deweloperów systemu Windows ma kilka aplikacji przykładzie, które można pobrać i wypróbować w programie Visual Studio.  

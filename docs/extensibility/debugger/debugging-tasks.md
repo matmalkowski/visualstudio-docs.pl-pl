@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101147"
 ---
 # <a name="debugging-tasks"></a>Debugowanie zadań
 Aby zdebugować program, musi zostać uruchomiona i aparat debugowania (DE) musi być dołączony do niego, w przeciwnym razie DE musi być dołączony do wcześniej uruchomionego programu. Po dołączeniu DE należy wygenerować pewnych zdarzeń uruchomienia. W odpowiedzi pakiet debugowania próbuje powiązać punktów przerwania ustawionych w IDE. Gdy program trafi powiązania punktu przerwania, zostaje zatrzymana i oczekuje na dane wejściowe użytkownika.  

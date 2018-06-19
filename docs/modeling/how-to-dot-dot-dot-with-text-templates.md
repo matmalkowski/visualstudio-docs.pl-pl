@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953982"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 Szablony tekstowe w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wygodny sposób generowania tekstu dowolnego rodzaju. Szablony tekstowe służy do generowania tekstu w czasie wykonywania w ramach aplikacji i w czasie projektowania, aby wygenerować fragmenty kodu projektu. Ten temat zawiera podsumowanie najczęściej zadawane "Jak...?" pytania.

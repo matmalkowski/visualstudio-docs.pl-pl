@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942657"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Klawiatura, środowisko, opcje — okno dialogowe
 Ta strona służy do ustawiania mapowania klawiatury. Aby uzyskać więcej informacji dotyczących mapowania, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

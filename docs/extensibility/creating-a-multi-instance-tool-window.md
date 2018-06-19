@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097799"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Utworzenie okna narzędzia wielu wystąpień
 Można programu okna narzędzia, dzięki czemu wiele wystąpień mogą być otwarte jednocześnie. Domyślnie narzędzie windows może mieć tylko jedno wystąpienie otworzyć.  

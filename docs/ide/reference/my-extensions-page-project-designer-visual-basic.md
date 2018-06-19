@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948964"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Strona Moje rozszerzenia, Projektant projektu (Visual Basic)
 Użyj **Moje rozszerzenia** strony **projektanta projektu** do zarządzania `My` przestrzeń nazw rozszerzeń w projekcie. `My` przestrzeń nazw rozszerzeń umożliwiają dostosowanie `My` przestrzeni nazw, aby dodać własne niestandardowe elementy członkowskie. Informacje na temat tworzenia niestandardowych `My` rozszerzenia przestrzeni nazw, zobacz [rozszerzanie My Namespace w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

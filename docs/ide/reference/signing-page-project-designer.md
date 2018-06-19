@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951999"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifestów aplikacji i wdrażania, a także można podpisać zestawu (podpisywanie silną nazwą).

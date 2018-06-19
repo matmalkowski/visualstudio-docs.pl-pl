@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104098"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 W tym przewodniku przedstawiono sposób dodawania odwołania biblioteki DLL do niestandardowej strony początkowej. W przykładzie dodano kontrolkę użytkownika do rozwiązania, tworzy kontrolkę użytkownika, a następnie odwołuje się do zestawu skompilowanego z pliku .xaml strony początkowej. Nowa karta obsługuje kontrolki użytkownika, który działa jako podstawowa przeglądarka sieci Web.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924307"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
 Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kodzie błędy w pisowni, gramatyczne przypadek i inne konwencje nazewnictwa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wytyczne. Można utworzyć pliku Xml słownika, aby dodać, usunąć lub zmodyfikować warunki, skrótów i akronimów do słownika wbudowanych.

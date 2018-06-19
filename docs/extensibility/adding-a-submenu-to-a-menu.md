@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102424"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Dodawanie do Menu podmenu
 W tym przewodniku opiera się na pokazu w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) przez przedstawiająca sposób dodać podmenu do **TestMenu** menu.  

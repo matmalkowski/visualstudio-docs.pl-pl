@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100744"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Dodawanie do okna narzędzi paska narzędzi
 W tym przewodniku przedstawiono sposób dodawania paska narzędzi okna narzędzia.  

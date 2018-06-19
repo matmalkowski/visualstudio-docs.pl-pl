@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066128"
 ---
 # <a name="create-an-android-native-activity-app"></a>Tworzenie aplikacji systemu Android działania natywnego
 Po zainstalowaniu Visual C++ for Cross Platform Mobile Development — opcja programu Visual Studio 2015 może służyć do tworzenia funkcjonalnej aplikacji natywnej działanie systemu Android. Native Development Kit (zestawu NDK systemu Android) to zestaw narzędzi, która pozwala na wdrożenie większość aplikacji systemu Android przy użyciu czystym kodzie C/C++. Kod języka Java JNI działa jako sklejki, aby umożliwić kodu C/C++ do interakcji z systemem Android. Zestaw Android NDK wprowadzono możliwość tworzenia działania natywnego aplikacje z systemem Android 9 poziom interfejsu API. Kod natywny działania jest popularnych do tworzenia gier i graficzne znacznym aplikacji, które używają aparatu Unreal Engine lub OpenGL. W tym temacie przedstawiono tworzenie prostej aplikacji działania natywnego, który używa OpenGL. Dodatkowe tematy przeprowadzenie cyklu życia developer edycji, kompilowanie, debugowanie i wdrażanie działania natywnego kodu.  

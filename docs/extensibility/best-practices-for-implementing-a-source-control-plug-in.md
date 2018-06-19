@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106051"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najlepsze rozwiązania dotyczące wdrażania dodatku Plug-in kontroli źródła
 Poniższe szczegóły techniczne ułatwia prawidłowo zaimplementować wtyczka do kontroli źródła w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

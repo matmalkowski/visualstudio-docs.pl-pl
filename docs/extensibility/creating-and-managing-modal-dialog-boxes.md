@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102203"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Tworzenie i zarządzanie nimi modalnych okien dialogowych
 Po utworzeniu modalne okno dialogowe w programie Visual Studio musi upewnij się, że okno nadrzędne w oknie dialogowym jest wyłączona, gdy zostanie wyświetlone okno dialogowe, a następnie ponownie włącz okno nadrzędne, po zamknięciu okna dialogowego. Jeśli nie zrobisz, zostanie wyświetlony błąd: "programu Microsoft Visual Studio nie może zamknąć, ponieważ modalne okno dialogowe jest aktywne. Zamknij okno dialogowe active i spróbuj ponownie."  

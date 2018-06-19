@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102795"
 ---
 # <a name="evaluating-expressions"></a>Obliczenia wyrażenia
 Wyrażenia są tworzone na podstawie ciągi przekazywane z automatycznych, Watch, QuickWatch lub bezpośredniego systemu windows. Wyrażenie jest obliczane, generuje drukowalnych ciąg znaków zawierający nazwę i typ zmiennej lub argumentu i jego wartość. Ten ciąg jest wyświetlane w oknie odpowiedniego IDE.  

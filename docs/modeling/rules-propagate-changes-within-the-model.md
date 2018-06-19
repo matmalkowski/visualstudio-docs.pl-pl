@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952762"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagację zmiany jednego elementu na inny wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany do dowolnego elementu w magazynie, zasady nie zostały zaplanowane wykonywane zwykle, gdy peryferyjnych transakcja została przekazana. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu, lub usunięcie go. Zasady można dołączyć do określonych typów elementów, kształtów lub diagramy. Wiele wbudowanych funkcji zdefiniowanych przez zasady: na przykład zasady upewnij się, że diagram został zaktualizowany po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.

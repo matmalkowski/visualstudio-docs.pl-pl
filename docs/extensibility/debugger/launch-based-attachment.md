@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099379"
 ---
 # <a name="launch-based-attachment"></a>Na podstawie uruchamiania załącznika
 Na podstawie uruchamiania załącznika z programem odbywa się automatycznie. Gdy proces obsługujący program jest uruchamiana przez SDM, na podstawie uruchamiania załącznika następuje ścieżkę do tej metody ręcznego załącznika. Aby uzyskać informacje, zobacz [dołączenie do programu](../../extensibility/debugger/attaching-to-the-program.md).  

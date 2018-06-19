@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943309"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Rozszerzenia i aktualizacje, środowisko, opcje — okno dialogowe
 Ta strona służy do ustawiania opcji jak Visual Studio przeprowadza aktualizacji i sposobu rozszerzenia są aktualizowane i odnalezione.

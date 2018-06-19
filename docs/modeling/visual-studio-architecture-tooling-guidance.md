@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946367"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Architektura Visual Studio — wskazówki dotyczące oprzyrządowania
 Architektura narzędzi we wskazówkach tych jest pobrania pakietu praktyczne wskazówki dotyczące korzystania z narzędzi modelowania w programie Visual Studio 2010. Przedstawia widok wysokiego poziomu dotyczących używania narzędzi modelowania w zintegrowany sposób i omówiono najbardziej typowych scenariuszy, w których są używane narzędzia.

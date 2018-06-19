@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101797"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
 Po utworzeniu strony początkowej niestandardowe polecenia programu Visual Studio można dodać do niego. W tym dokumencie omówiono różne sposoby Powiąż polecenia programu Visual Studio z obiekty XAML strony początkowej.  

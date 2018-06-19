@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068400"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdź środowisku Xamarin
 
@@ -30,7 +31,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-plat
  
 W programie Visual Studio, najpierw wybierz **Narzędzia > rozszerzenia i aktualizacje** i sprawdź, czy któregokolwiek ze składników Xamarin wymagają aktualizacji.  
   
-Następnie utwórz nowe rozwiązanie platformy Xamarin.Forms przy użyciu programu Visual Studio **Plik > Nowy projekt**. W oknie dialogowym Rozwiń **Visual C# > wieloplatformowych**, wybierz pozycję **aplikacji mobilnej (platformy Xamarin.Forms)**i kliknij przycisk OK. W oknie dialogowym poniżej wybierz **pusta aplikacja**. W obszarze **strategii udostępniania kodu**, wybierz pozycję **.NET Standard**. Kliknij przycisk OK.
+Następnie utwórz nowe rozwiązanie platformy Xamarin.Forms przy użyciu programu Visual Studio **Plik > Nowy projekt**. W oknie dialogowym Rozwiń **Visual C# > wieloplatformowych**, wybierz pozycję **aplikacji mobilnej (platformy Xamarin.Forms)** i kliknij przycisk OK. W oknie dialogowym poniżej wybierz **pusta aplikacja**. W obszarze **strategii udostępniania kodu**, wybierz pozycję **.NET Standard**. Kliknij przycisk OK.
 
 Te akcje tworzenie rozwiązania z czterech projektów: udostępnionego projektu biblioteki .NET 2.0 standardowe i projektów aplikacji dla systemu Android, iOS i platformy uniwersalnej systemu Windows (UWP):  
   

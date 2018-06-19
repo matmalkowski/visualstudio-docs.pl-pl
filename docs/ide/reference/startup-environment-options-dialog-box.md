@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942493"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Uruchamianie, środowisko, opcje — okno dialogowe
 Ta strona umożliwia dostosowanie strony początkowej w Visual Studio lub ustawioną domyślną inną podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie strony początkowej](../../ide/customizing-the-start-page-for-visual-studio.md).

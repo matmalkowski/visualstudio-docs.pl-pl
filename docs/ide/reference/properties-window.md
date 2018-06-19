@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947303"
 ---
 # <a name="properties-window"></a>Okno Właściwości
 To okno dialogowe umożliwia wyświetlanie i zmiana właściwości czasu projektowania i zdarzenia wybranych obiektów, które znajdują się w edytorach i projektantów. Można również użyć **właściwości** okna do edycji i wyświetlanie plików projektu i właściwości rozwiązania. Można znaleźć **właściwości** okno na **widoku** menu. Możesz również otworzyć go, naciskając klawisz F4 lub wpisując **właściwości** w **Szybkie uruchamianie** okna.

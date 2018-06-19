@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099112"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly — Element (szablony Visual Studio)
 Określa informacje o zestawie używane w szablonie, aby dodać odwołanie do tego zestawu do projektów.  
