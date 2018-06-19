@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130440"
 ---
 # <a name="inside-the-core-editor"></a>W edytorze Core
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor core to zestaw kilka składników, które umożliwiają modyfikowanie i zapytania informacji tekstowych. Jeśli dostosowano Edytor core za pomocą starszej wersji interfejsu API, mogą nadal używać tych dostosowania, które zostaną przesłane za pośrednictwem karty edytora. Jest to zalecane, jednak dostosować własne dostosowania do edytora nowego interfejsu API.  

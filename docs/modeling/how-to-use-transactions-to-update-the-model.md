@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950010"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
 Transakcje upewnij się, że zmiany wprowadzone w magazynie są traktowane jako grupa. Zmiany, które są zgrupowane można zatwierdzona lub wycofana jako pojedyncza jednostka.

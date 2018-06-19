@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921686"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Porady: Włączanie określania liczby mnogiej i wyłączanie (Projektanta obiektów relacyjnych)
 Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się s lub IE z **Eksploratora serwera**/**Eksploratora bazy danych** na [składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazw wygenerowanych klas jednostek nie zostaną zmienione w liczbie mnogiej na liczbę pojedynczą. To jest bardziej przedstawiać fakt, że klasa jednostki wystąpień mapuje pojedynczy rekord danych. Na przykład dodawania tabeli klientów do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] wyniki w klasie jednostki o nazwie odbiorcy, ponieważ klasa będą przechowywane dane tylko jednego odbiorcy.

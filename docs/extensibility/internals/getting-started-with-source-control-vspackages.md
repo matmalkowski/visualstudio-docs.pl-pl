@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133420"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Wprowadzenie do VSPackages kontroli źródła
 Pakiet VSPackage kontroli źródła jest bardziej zaawansowanych alternatywą do wtyczkę kontroli źródła. (Zobacz [tworzenie Plug-in kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md) do więcej informacji na temat źródła kontrolują dodatków plug-in.) Pakiet VSPackage kontroli źródła umożliwia pełną kontrolę nad model kontroli źródła, funkcje i interfejs użytkownika (UI) i integruje ją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska jako pakiet VSPackage.  

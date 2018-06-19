@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473741"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Porady: debugowanie klientów i serwerów COM za pomocą debugowania RPC
 Debugowanie zdalnego wywołania (procedur RPC) procedury służy do debugowania aplikacji klient/serwer COM. Należy włączyć RPC, debugowanie, aby go użyć. Z włączonym debugowaniem RPC, po kroku do wywołania serwera od klientów, debuger dołączony do serwera i umożliwia debugowanie kodu. Gdy debuger jest dołączony, można użyć wszystkich funkcji debugera z procesami klienta i serwera.  

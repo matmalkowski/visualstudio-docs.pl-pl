@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128990"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Usunięcie informacji o kontroli źródła z. Proj i. Pliki SLN
 W wersji 1.2 API dodatku typu Plug-in kontroli źródła SCC informacje są przechowywane w MSSCCPRJ. Plik SCC. Zaletą MSSCCPRJ. Plik SCC jest, że informacje SCC jest nie źródła - kontrolowane, tak jak w .proj i .sln plików.  

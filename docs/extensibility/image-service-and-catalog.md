@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134678"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalogu
 Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca Usługa obrazów w usłudze Visual Studio i katalogu obrazu wprowadzone w programie Visual Studio 2015.  
@@ -165,7 +166,7 @@ Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca 
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może być jedną z następujących czynności:<br /><br /> -A [identyfikatora URI elementu Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) przy użyciu aplikacji: / / / urzędu<br />-Odwołania zasobu składnika bezwzględne<br />Ścieżka do pliku zawierającego zasób macierzysty|  
-|Tło|[Opcjonalnie] Wskazuje, co na rodzaj tła, którego źródłem jest przeznaczona do użycia.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasny:* źródło może być używane na jasnym.<br /><br /> *Ciemny:*źródło może być używany na ciemny tła.<br /><br /> *HighContrast:* źródła można używać na dowolnym tła w trybie dużego kontrastu.<br /><br /> *HighContrastLight:* źródło może być używane na jasnym w trybie dużego kontrastu.<br /><br /> *HighContrastDark:* źródło może być używany na ciemny tła w trybie dużego kontrastu.<br /><br /> W przypadku pominięcia atrybut tła źródło może służyć na dowolnym tła.<br /><br /> Jeśli tło jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli tła jest pominięty, lub wartość *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obrazu **AllowColorInversion** atrybutu.|  
+|Tło|[Opcjonalnie] Wskazuje, co na rodzaj tła, którego źródłem jest przeznaczona do użycia.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasny:* źródło może być używane na jasnym.<br /><br /> *Ciemny:* źródło może być używany na ciemny tła.<br /><br /> *HighContrast:* źródła można używać na dowolnym tła w trybie dużego kontrastu.<br /><br /> *HighContrastLight:* źródło może być używane na jasnym w trybie dużego kontrastu.<br /><br /> *HighContrastDark:* źródło może być używany na ciemny tła w trybie dużego kontrastu.<br /><br /> W przypadku pominięcia atrybut tła źródło może służyć na dowolnym tła.<br /><br /> Jeśli tło jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli tła jest pominięty, lub wartość *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obrazu **AllowColorInversion** atrybutu.|  
 |||  
   
  A \<źródło > element może mieć dokładnie jeden opcjonalny następujące elementy podrzędne:  

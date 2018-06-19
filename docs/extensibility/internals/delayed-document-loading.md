@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134447"
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
 Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojarzone dokumenty nie są ładowane bezpośrednio. Ramki okna dokumentu jest tworzony w stanie oczekiwania inicjowania i dokument symbolu zastępczego (o nazwie ramki stub) znajduje się w tabeli systemem dokumentu (Normalizacją).  
@@ -64,4 +65,4 @@ Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojar
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testowanie rozszerzeń, aby zobaczyć wymusić inicjowania  
  Nie ma żadnych widocznych oznak aktywacji wskazująca, czy dokument został zainicjowany, dlatego może być trudne dowiedzieć się, jeśli rozszerzenie jest wymuszenie inicjowania. Można ustawić klucz rejestru, który ułatwia weryfikacji, ponieważ powoduje ona tytuł każdego dokumentu, który nie jest w pełni zainicjowany tekstu `[Stub]` w tytule.  
   
- W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**ustaw **StubTabTitleFormatString** do **{0} [Stub]**.
+ W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ustaw **StubTabTitleFormatString** do **{0} [Stub]**.

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954355"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Można ustawić punktów przerwania w szablonach tekstowych. Debugowanie szablonu tekstowego czasu projektowania, Zapisz plik tekstowy szablonu, a następnie wybierz **debugowania szablon T4** menu skrótów w pliku w Eksploratorze rozwiązań. Debugowanie szablonu tekstowego środowiska wykonawczego, po prostu debugowania aplikacji, do którego on należy.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129644"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminacja ~ SAK plików
 W 1.2 interfejsu API dodatku typu Plug-in kontroli źródła ~ SAK pliki zostały zastąpione przez flagi możliwości i nowe funkcje, które wykrywa, czy wtyczka do kontroli źródła obsługuje MSSCCPRJ plików i udostępnionych wyewidencjonowania.  

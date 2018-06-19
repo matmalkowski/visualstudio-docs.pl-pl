@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144359"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Powłoki jest podstawowym agenta integracji w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Powłoka udostępnia funkcje niezbędne umożliwiające VSPackages do udostępniania usług wspólnej. Ponieważ architektury celem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ma uprawnienia nabywa podstawowe funkcje w VSPackages, powłoka jest framework zapewnienia podstawowej funkcjonalności i obsługę techniczną, cross komunikacji między jego składnika VSPackages.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952547"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów zależności
 W programie Visual Studio użytkowników można zweryfikować kodu źródłowego w projekcie modelu warstwy, dzięki czemu można zweryfikować, że kod źródłowy odpowiada zależności na diagramie zależności. Brak algorytmu weryfikacji standardowych, ale można zdefiniować rozszerzeń sprawdzania poprawności.

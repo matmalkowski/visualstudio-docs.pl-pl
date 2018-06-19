@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131150"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Porady: dostęp do wbudowanych czcionek i schemat kolorów
 Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat czcionek i kolorów, który jest skojarzony z okna edytora. Można uzyskać dostęp za pośrednictwem systemu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu.
@@ -38,7 +39,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat czc
 
 1.  Utwórz dowolne identyfikatora GUID.
 
-     Ten identyfikator GUID jest używany do jednoznacznego identyfikowania kategorię**.** Ta kategoria ponownie używa IDE domyślnej czcionki i kolory specyfikacji.
+     Ten identyfikator GUID jest używany do jednoznacznego identyfikowania kategorię **.** Ta kategoria ponownie używa IDE domyślnej czcionki i kolory specyfikacji.
 
     > [!NOTE]
     >  Podczas pobierania danych czcionek i kolorów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> lub inne interfejsy VSPackages za pomocą tego identyfikatora GUID wbudowanych informacje referencyjne.
@@ -51,7 +52,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat czc
 
 1.  Utworzyć specjalny typ wpisu rejestru kategorii w następującej lokalizacji:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]
 
      *\<Kategoria >* niezlokalizowana nazwa kategorii.
 

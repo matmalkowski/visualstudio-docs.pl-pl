@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479809"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Porady: wyszukiwanie wątku w widoku wątków
 Możesz wyszukać określonego wątku w widoku wątków za pomocą jego Identyfikatora lub moduł ciągu wątku jako kryterium wyszukiwania. Można również określić początkowego kierunku wyszukiwania. Pola w oknie dialogowym zostaną wyświetlone atrybuty wątku wybranego w drzewie wątku.  

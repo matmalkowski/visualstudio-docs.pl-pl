@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129459"
 ---
 # <a name="how-to-provide-a-service"></a>Porady: udostępnianie usługi
 Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSPackage. Do świadczenia usług, pakiet VSPackage musi zarejestrować usługi z programem Visual Studio, a następnie Dodaj usługę.  

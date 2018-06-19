@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137752"
 ---
 # <a name="scccheckout-function"></a>Funkcja SccCheckout
 Podana lista nazw plików w pełni kwalifikowana, tej funkcji wyewidencjonuje je na dysku lokalnym. Komentarz ma zastosowanie do wszystkich plików wyewidencjonowany. Argument komentarz może być `null` ciągu.  

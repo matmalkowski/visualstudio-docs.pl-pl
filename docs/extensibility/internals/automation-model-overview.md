@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134750"
 ---
 # <a name="automation-model-overview"></a>Przegląd modelu automatyzacji
 Model automatyzacji zawiera zestaw obiektów, które można zapisywać i — w programie Visual Studio rozszerzenia. Dodatek jest aplikacja, która może manipulować środowiska Visual Studio i automatyzowania typowych zadań. Rozszerzenia programu Visual Studio można utworzyć niestandardowe składniki programu Visual Studio lub dodać działanie standardowe składniki, takie jak edytor tekstów.  

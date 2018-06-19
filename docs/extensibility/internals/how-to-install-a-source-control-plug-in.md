@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133562"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Porady: Instalowanie dodatku Plug-in kontroli źródła
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:  
@@ -37,7 +38,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Aby zarejestrować biblioteki DLL dodatku kontroli źródła  
   
-1.  Dodaj dwa wpisy w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania określający Twojej podklucz nazwa firmy następuje z podklucz nazwę produktu. Wzorzec jest klucza HKEY_LOCAL_MACHINE\SOFTWARE\\*[nazwa firmy]*\\*[nazwa produktu]*\\*[entry]* = wartość. Dwa wpisy zawsze są nazywane SCCServerName i SCCServerPath. Każdy jest regularne ciągu.  
+1.  Dodaj dwa wpisy w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania określający Twojej podklucz nazwa firmy następuje z podklucz nazwę produktu. Wzorzec jest klucza HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nazwa firmy]*\\ *[nazwa produktu]*\\ *[entry]* = wartość. Dwa wpisy zawsze są nazywane SCCServerName i SCCServerPath. Każdy jest regularne ciągu.  
   
      Na przykład jeśli nazwą firmy jest firmy Microsoft i produktu kontroli źródła nosi nazwę SourceSafe, a następnie ta ścieżka rejestru będzie HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. W tym podkluczu pierwszej pozycji SCCServerName, to ciąg czytelny dla użytkownika nazwy produktu. Drugi wpis SCCServerPath, jest pełna ścieżka do źródła kontrolować wtyczki DLL, która ma nawiązać IDE. Poniżej przedstawiono przykładowe wpisy rejestru:  
   
@@ -66,7 +67,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
   
 3.  Dodaj podklucz, SourceCodeControlProvider, w kluczu HKEY_LOCAL_MACHINE w podkluczu oprogramowania.  
   
-     W podkluczu ten wpis rejestru ProviderRegKey ustawiono ciąg reprezentujący podklucza, który można umieścić w rejestrze w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = oprogramowania\\*[nazwa firmy]*\\*[nazwa produktu]*.  
+     W podkluczu ten wpis rejestru ProviderRegKey ustawiono ciąg reprezentujący podklucza, który można umieścić w rejestrze w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = oprogramowania\\ *[nazwa firmy]*\\ *[nazwa produktu]*.  
   
      Poniżej przedstawiono przykładowe zawartość dla tego podklucza.  
   
@@ -79,7 +80,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
   
 4.  Utwórz podklucz o nazwie InstalledSCCProviders w podkluczu SourceCodeControlProvider, a następnie umieść jeden wpis w tym podkluczu.  
   
-     Nazwa tego wpisu jest czytelny dla użytkownika nazwę dostawcy (taka sama jak wartość określona dla wpisu SCCServerName), a wartość to jeszcze raz podklucz utworzonego w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[Nazwa wyświetlana]* = oprogramowania\\*[nazwa firmy]* \\ *[nazwa produktu]*.  
+     Nazwa tego wpisu jest czytelny dla użytkownika nazwę dostawcy (taka sama jak wartość określona dla wpisu SCCServerName), a wartość to jeszcze raz podklucz utworzonego w kroku 1. Wzorzec jest HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[Nazwa wyświetlana]* = oprogramowania\\ *[nazwa firmy]* \\ *[nazwa produktu]*.  
   
      Na przykład:  
   
@@ -102,7 +103,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 > [!NOTE]
 >  IDE nie załadować biblioteki dll z ścieżek względnych (na przykład.\NewProvider.DLL). Należy określić pełną ścieżkę do pliku DLL (na przykład c:\Providers\NewProvider.DLL). To ich bezpieczeństwo środowiska IDE, zapobiegając ładowania nieautoryzowani lub personifikowanej DLL dodatku plug-in.  
   
- Aby zlokalizować biblioteki DLL w drugim sposobem, IDE wygląda w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders wszystkie wpisy*.* Każdy wpis ma nazwę i wartość. IDE Wyświetla listę tych nazw użytkownikowi*.* Po wybraniu nazwy IDE wyszukuje wartość dla wybranej nazwy, który wskazuje podklucz. IDE wyszukuje wpis o nazwie SccServerPath w tym podklucza w HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE poprawne biblioteki DLL.  
+ Aby zlokalizować biblioteki DLL w drugim sposobem, IDE wygląda w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders wszystkie wpisy *.* Każdy wpis ma nazwę i wartość. IDE Wyświetla listę tych nazw użytkownikowi *.* Po wybraniu nazwy IDE wyszukuje wartość dla wybranej nazwy, który wskazuje podklucz. IDE wyszukuje wpis o nazwie SccServerPath w tym podklucza w HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE poprawne biblioteki DLL.  
   
  Wtyczka do kontroli źródła musi obsługiwać obu metod odnajdywania biblioteki DLL i ustawiany ProviderRegKey, zastępując wszelkie poprzednie ustawienie. Co ważniejsze go należy dodać się na liście InstalledSccProviders, użytkownik może mieć wybór które wtyczka do kontroli źródła do użycia.  
   

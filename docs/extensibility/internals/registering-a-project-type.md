@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134636"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typ projektu
 Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracy z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.  

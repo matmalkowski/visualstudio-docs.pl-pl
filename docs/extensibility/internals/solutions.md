@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129713"
 ---
 # <a name="solutions"></a>Rozwiązania
 Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Informacje odnoszą się do rozwiązania projekt i stan są przechowywane w dwóch plików rozwiązania, plik tekstowy solution (.sln) i pliku binarnego rozwiązania użytkownika opcji (.suo).  

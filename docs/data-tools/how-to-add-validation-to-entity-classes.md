@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923128"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Porady: Dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest proces potwierdzania wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także do reguły dla aplikacji. Sprawdzanie poprawności danych, aby wysyłać aktualizacje do podstawowej bazy danych jest dobrym rozwiązaniem, które zmniejsza błędy. Zmniejsza liczbę rund między aplikacją i bazy danych.

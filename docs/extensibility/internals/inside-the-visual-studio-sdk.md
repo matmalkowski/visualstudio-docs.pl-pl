@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134565"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzeń programu Visual Studio, w tym architektura programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.  

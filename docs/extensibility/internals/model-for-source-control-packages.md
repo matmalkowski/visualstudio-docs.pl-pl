@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129446"
 ---
 # <a name="model-for-source-control-packages"></a>Model pakietów kontroli źródła
 Następujący model reprezentuje przykładem implementacji kontroli źródła. W modelu Zobacz interfejsy, które należy zaimplementować i usług środowiska, które należy wywołać. Podobnie jak wszystkie usługi faktycznie wywoływać metody określonego interfejsu, który można uzyskać na usługę. Nazwy klas są identyfikowane ułatwiające zobacz sposób wykonywania kontroli źródła.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130456"
 ---
 # <a name="exposing-project-objects"></a>Udostępnianie obiektów projektu
 Typy projektów niestandardowych może zapewnić obiekty automatyzacji, aby zezwolić na dostęp do projektu przy użyciu interfejsów automatyzacji. Każdy typ projektu powinien zapewniać standardowego <xref:EnvDTE.Project> obiektu automatyzacji, który jest dostępny z <xref:EnvDTE.Solution>, który zawiera zbiór wszystkich projektów, które są otwarte w IDE. Oczekiwano każdego elementu w projekcie mają być uwidaczniane przez <xref:EnvDTE.ProjectItem> umożliwia uzyskanie dostępu do obiektu `Project.ProjectItems`. Oprócz tych obiektów automatyzacji w wersji standard projekty można zaoferować obiekty automatyzacji określonego projektu.  

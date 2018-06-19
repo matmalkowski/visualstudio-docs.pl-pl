@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474482"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane.
 Visual Studio nie obsługuje trybu mieszanego debugowania kodu zarządzanego i natywnego w procesów IA64. Oznacza to, że podczas debugowania nie można wykonać kroku z kodu zarządzanego do kodu natywnego lub kodu natywnego do zarządzanego kodu.  

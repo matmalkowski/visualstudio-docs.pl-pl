@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141691"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa programu Visual Studio SDK
 Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat rozszerzania programu Visual Studio zintegrowane środowisko programistyczne (IDE).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130682"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Ważne poleceń dla filtrów usługi języka
 Aby utworzyć filtr usługi języka oferujący wszystkie potrzebne funkcje, należy rozważyć obsługi następujących poleceń. Pełną listę identyfikatory poleceń jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczenie dla kodu zarządzanego i nagłówek Stdidcmd.h plik niezarządzanych [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Można znaleźć w pliku Stdidcmd.h *ścieżki instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  

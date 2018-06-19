@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131015"
 ---
 # <a name="projects"></a>Projekty
 W programie Visual Studio, projekty są kontenerami, które deweloperzy korzystać w celu uporządkowania plików kodu źródłowego i innych zasobów, które są widoczne w **Eksploratora rozwiązań**. Projekty są zazwyczaj pliki (na przykład pliku .csproj, które projektu C#), które przechowują odwołania do plików kodu źródłowego i zasobów, takich jak pliki map bitowych. Projekty umożliwiają organizowanie, tworzenia, debugowania i wdrażania kodu źródłowego, odwołuje się do usług sieci Web i baz danych i innych zasobów. VSPackages mogą rozszerzać system projektu programu Visual Studio przede wszystkim na trzy sposoby: *typy projektów*, *projektu podtypów*, i *narzędzi niestandardowych*.  

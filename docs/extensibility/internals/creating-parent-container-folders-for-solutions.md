@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132564"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera nadrzędnego dla rozwiązania
 Źródłowy formant wtyczek interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci Web w ramach rozwiązania. To z jednym elementem głównym jest nazywany skanowania Super Unified głównego (SUR).  

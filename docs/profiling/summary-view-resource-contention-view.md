@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581178"
 ---
 # <a name="summary-view---resource-contention-view"></a>Widok podsumowania — widok Kontencji zasobów
 Widok podsumowania przedstawia informacje o zdarzeniach w aplikacji, w którym wątku lub procesu zostało zawieszone, podczas gdy oczekiwano dostęp do zasobu.  

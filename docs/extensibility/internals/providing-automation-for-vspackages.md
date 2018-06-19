@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131583"
 ---
 # <a name="providing-automation-for-vspackages"></a>Zapewnianie automatyzacji do VSPackages
 Istnieją dwa sposoby zapewnienia automatyzacji dla Twojego VSPackages: zaimplementowanie obiekty specyficzne pakiet VSPackage i wdrażając obiektów automatyzacji w wersji standard. Ogólnie rzecz biorąc są one używane razem Rozszerzanie modelu automatyzacji środowiska.  

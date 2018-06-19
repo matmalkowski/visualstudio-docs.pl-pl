@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131163"
 ---
 # <a name="nesting-projects"></a>Projekty zagnieżdżenia
 Deweloperów w przedsiębiorstwach aplikacji korzystających z pakietu VS można grupowania podobnych typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą *projektu zagnieżdżenia*. Na przykład projektu szablonu używa zagnieżdżonych projekty do grupy projektów do kategorii. Projekty fasad biznesowe, projekty sieci Web interfejsu użytkownika i tak dalej są pogrupowane w jednej kategorii.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134217"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identyfikatory GUID oraz identyfikatory menu programu Visual Studio
 W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup na pasku menu programu Visual Studio. Te wartości są definiowane w vsct pliki, które są instalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [IDE-Defined polecenia, menu oraz grup](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

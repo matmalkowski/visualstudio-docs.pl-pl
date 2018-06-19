@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129475"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Porady: Podaj automatyzacji dla systemu Windows
 Możesz podać automatyzacji dla dokumentów i narzędzia systemu windows. Udostępnienie automatyzacji zalecane jest za każdym razem chcesz udostępnić obiekty automatyzacji w oknie i środowisko nie ma już obiekt automatyzacji gotowe, jak w przypadku listy zadań.

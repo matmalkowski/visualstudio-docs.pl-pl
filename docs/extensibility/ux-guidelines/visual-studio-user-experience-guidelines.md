@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139867"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące czynności użytkownika dla programu Visual Studio
 Wskazówki dotyczące programu Visual Studio użytkownika czynności są przeznaczone dla osób projektowanie nowych funkcji dla programu Visual Studio. Niniejsze wytyczne zawierają informacje o typowych modeli użytkownika i wzorce interakcji, aby tworzyć środowiska użytkownika, które są bezproblemową i spójną środowiska programistycznego projektantów nowe interfejsy użytkownika (UI).  

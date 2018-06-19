@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132160"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Szybkie informacje w starsza wersja usługi języka
 Szybkie informacje funkcji IntelliSense zawiera informacje o identyfikator źródła, gdy użytkownik umieszcza w identyfikatorze karetki i wybiera **szybka podpowiedź** z **IntelliSense** menu lub posiada myszy kursor nad identyfikatorem. Powoduje to etykietka narzędzia, która się z informacjami o tym identyfikatorze. Te informacje zazwyczaj składa się z typ identyfikatora. Gdy aparat debugowania jest aktywne, te informacje mogą obejmować bieżącą wartość. Aparat debugowania udostępnia wartości wyrażenia, podczas gdy usługa języka obsługuje tylko identyfikatory.  

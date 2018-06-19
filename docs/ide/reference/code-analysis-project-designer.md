@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944677"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 Zawiera narzędzie do analizy kodu, który można włączyć w kodzie. Narzędzie raportuje informacje o Twojej zestawy, takie jak naruszenia reguły projektowania i programowanie określone w wytycznych projektowych programu Microsoft .NET Framework.

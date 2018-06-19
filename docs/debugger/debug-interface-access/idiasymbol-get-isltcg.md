@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464761"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Pobiera flagę określającą, czy [Compiland](../../debugger/debug-interface-access/compiland.md) została połączona z przełącznikiem konsolidatora [opcję/LTCG (Generowanie kodu w czasie Link)](/cpp/build/reference/ltcg-link-time-code-generation), która pomaga w optymalizacja całego programu. Ta opcja dotyczy tylko kodu zarządzanego.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140017"
 ---
 # <a name="loading-vspackages"></a>Ładowanie VSPackages
 Pakiety VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich jest wymagane. Na przykład pakiet VSPackage jest ładowany podczas fabrykę projektów lub usługa, która implementuje pakiet VSPackage korzysta z programu Visual Studio. Ta funkcja jest nazywana opóźnionego ładowania, który jest używany, jeśli to możliwe zwiększyć wydajność.  

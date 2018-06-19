@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131913"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie zestawu międzyoperacyjnego programy obsługi poleceń
 Pakiet VSPackage należy zarejestrować się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby prawidłowo polecenia kieruje zintegrowane środowisko programistyczne (IDE).  
@@ -30,7 +31,7 @@ Pakiet VSPackage należy zarejestrować się [!INCLUDE[vsprvs](../../code-qualit
  [Polecenie Tabela z odwołaniami Format](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) zasoby znajdują się w niezarządzanych satelitarne bibliotek DLL interfejsu użytkownika.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Polecenie obsługi rejestracji pakiet VSPackage  
- Pakiet VSPackage działający jako program obsługi dla interfejsu użytkownika (UI) — na podstawie polecenia wymaga wpis rejestru o nazwie po pakiet VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobu interfejsu użytkownika pakietu VSPackage i zasobów menu, w tym pliku. Wpis rejestru, sama znajduje się w obszarze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<wersji >*\Menus, gdzie  *\<wersji >* jest to wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 9.0.  
+ Pakiet VSPackage działający jako program obsługi dla interfejsu użytkownika (UI) — na podstawie polecenia wymaga wpis rejestru o nazwie po pakiet VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobu interfejsu użytkownika pakietu VSPackage i zasobów menu, w tym pliku. Wpis rejestru, sama znajduje się w obszarze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<wersji >* \Menus, gdzie  *\<wersji >* jest to wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 9.0.  
   
 > [!NOTE]
 >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywny główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki został zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie VSPackages z Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

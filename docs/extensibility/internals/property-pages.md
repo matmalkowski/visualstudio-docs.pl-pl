@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133284"
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą wyświetlać i zmieniać właściwości zależne od konfiguracji i - niezależne projektu za pomocą stron właściwości. A **strony właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksplorator rozwiązań dla obiektów, które dostarczają widoku strony właściwości zaznaczonego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak może również być udostępniane dla elementów projektu, które należy użyć właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w projekcie wymagają ustawienia przełącznika kompilatora różnych kompilować się właściwie.  

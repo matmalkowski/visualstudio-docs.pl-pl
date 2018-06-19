@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131500"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe typ projektu
 Przed utworzeniem nowego typu projektu, należy kilka decyzji projektowych dotyczących danego typu projektu. Należy zdecydować, jakie typy elementów, który będzie zawarty w projektach, jak pliki projektu zostaną utrwalone i jakie modelu zobowiązań będzie używać.  

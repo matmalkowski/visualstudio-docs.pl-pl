@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924199"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie parametrycznych zapytań TableAdapter
 Uruchamianie zapytania parametrycznego zwraca dane, które spełniają warunki klauzuli WHERE, w ramach zapytania. Na przykład można parametryzacja listę klientów, aby wyświetlić tylko w przypadku klientów z niektórych miasta przez dodanie `WHERE City = @City` na końcu instrukcji SQL, które zwraca listę klientów.

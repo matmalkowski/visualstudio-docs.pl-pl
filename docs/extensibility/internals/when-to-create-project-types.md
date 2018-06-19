@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140423"
 ---
 # <a name="when-to-create-project-types"></a>Kiedy należy utworzyć typy projektów
 Tworzenie nowego typu projektu stanowi podstawę do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dla użytkowników. Tworzenie nowego typu projektu nie jest jednak wymagana dla wszystkich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostosowań. Poniższe wskazówki powinny pomóc w określeniu, czy nowy typ projektu jest niezbędna dla danego scenariusza.  

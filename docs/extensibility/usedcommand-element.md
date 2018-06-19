@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139071"
 ---
 # <a name="usedcommand-element"></a>UsedCommand Element
 Włącza pakiet VSPackage umożliwiające dostęp do polecenia, który jest zdefiniowany w innym pliku vsct. Na przykład, jeśli VSPackage korzysta ze standardu **kopiowania** polecenia, który jest zdefiniowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powłoki, można dodać polecenie menu lub pasek narzędzi bez ponownego wprowadzania.  

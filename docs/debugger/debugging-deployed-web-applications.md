@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472439"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debugowanie ASP.NET wdrożonej aplikacji
 Aby użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania wdrożonych aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizuj i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [porady: znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142085"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Wskazówki: Dostosowywanie widoku tekstu
 Można dostosować widoku tekstu, zmieniając dowolne z następujących właściwości w jego format edytora mapy:  

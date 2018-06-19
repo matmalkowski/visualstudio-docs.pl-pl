@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140498"
 ---
 # <a name="sccuninitialize-function"></a>Funkcja SccUninitialize
 Ta funkcja czyści wszystkie alokacji lub otwarte połączenia utworzony przez poprzednie wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) w ramach przygotowania do zamykania wtyczkę kontroli źródła.  

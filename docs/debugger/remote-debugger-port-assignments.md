@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476052"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger Visual Studio można uruchomić jako aplikacja lub usługa w tle. Po uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  

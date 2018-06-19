@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139955"
 ---
 # <a name="sccaddfromscc-function"></a>Funkcja SccAddFromScc
 Ta funkcja umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła i następnie wprowadzić te pliki częścią bieżącego projektu. Na przykład tej funkcji można uzyskać typowe pliku nagłówka w bieżącym projekcie bez kopiowania pliku. Zwracany tablica plików, `lplpFileNames`, zawiera listę plików, które użytkownik chce dodać do projektu IDE.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140180"
 ---
 # <a name="saving-data-in-project-files"></a>Zapisywanie danych w plikach projektu
 Podtyp projektu można zapisywać i pobrać dane specyficzne dla podtypu w pliku projektu. Zarządzany pakiet Framework (MPF) udostępnia dwa interfejsy do wykonania tego zadania:  

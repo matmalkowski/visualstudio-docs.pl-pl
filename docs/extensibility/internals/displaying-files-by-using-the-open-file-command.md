@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130896"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Wyświetlanie plików za pomocą polecenia Otwórz plik
 W poniższych krokach opisano sposób obsługi IDE **Otwórz plik** polecenia, który jest dostępny na **pliku** w menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Również w krokach opisano, jak projekty powinny odpowiadać na wywołania, które pochodzą z tego polecenia.  

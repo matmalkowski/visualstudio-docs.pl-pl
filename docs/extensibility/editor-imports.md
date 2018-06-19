@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132737"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Liczba usług edytora, fabryki i brokerów, które dostarczają rozszerzenie różnego rodzaju dostępu do edytora core można zaimportować. Na przykład możesz zaimportować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> umożliwia z <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (Tego nawigatora pozwala na bufor tekstowy wykonywać różnego rodzaju wyszukiwania).  

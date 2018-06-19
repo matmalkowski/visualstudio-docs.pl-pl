@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954008"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
 Gdy element jest tworzony, usunięte lub zaktualizowane, można napisać kod Propaguj zmiany do innych części modelu lub do zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.

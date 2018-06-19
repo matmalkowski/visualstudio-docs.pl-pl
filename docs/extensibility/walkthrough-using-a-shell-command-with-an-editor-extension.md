@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148382"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Wskazówki: Korzystanie z polecenia powłoki z rozszerzeniem edytora
 W pakiet VSPackage można dodać funkcji, takich jak polecenia menu do edytora. W tym przewodniku przedstawiono sposób dodawania ozdób widoku tekstu w edytorze za pomocą polecenia menu.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134103"
 ---
 # <a name="running-document-table"></a>Uruchomionej tabeli dokumentu
 IDE przechowuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struktury o nazwie uruchomionej tabeli dokumentów (Normalizacją). Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy te dokumenty są obecnie edytowany. Dokument jest dowolny element, który jest trwały, w tym pliki w projekcie, lub głównego pliku projektu (na przykład plik .vcxproj).  

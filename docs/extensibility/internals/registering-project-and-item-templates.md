@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133750"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablony projektów i elementów
 Typy projektów należy zarejestrować katalogów, w którym znajdują się ich szablonów projektu i elementu projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informacje rejestracji skojarzony z typami Twojego projektu są używane do określenia, jakie można wyświetlić w **Dodawanie nowego projektu** i **Dodaj nowy element** okien dialogowych.  

@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474330"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C# w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu. Umożliwia także specyfikatory formatu w **Immediate** okna, **polecenia** okna w [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w systemie windows źródła. Jeśli zostanie wstrzymana na wyrażeniu w oknach, wyniki będą wyświetlane w etykietki danych. Etykietki danych będzie odzwierciedlać specyfikator formatu wyświetlania etykietek danych.  

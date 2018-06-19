@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130777"
 ---
 # <a name="error-codes"></a>Kody błędów
 Po powrocie z funkcji API dodatku typu Plug-in kontroli źródła wystąpił błąd ma być jedną z następujących kodów błędów. Wszystkie błędy są ujemne, ostrzeżenia i kody błędów informacyjną dodatnia, i Powodzenie wynosi 0.  

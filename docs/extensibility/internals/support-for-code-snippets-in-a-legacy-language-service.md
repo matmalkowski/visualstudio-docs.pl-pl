@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135685"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa wstawki kodu za pośrednictwem usługi języka starsza wersja
 Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fragment kodu, sam jest oparte na języku XML szablonu z zestawu pól. Te pola są wyróżnione po fragment kodu zostanie wstawiony i może mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu. Natychmiast po wstawieniu fragmentu, usługa języka można sformatować fragment kodu.  
@@ -52,7 +53,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
   
  Zazwyczaj są dwóch lokalizacjach, w którym są przechowywane pliki szablonów fragment: 1) Jeśli został zainstalowany język i 2) w folderze użytkownika. Lokalizacje te są dodawane do rejestru tak że Visual Studio **Menedżerze fragmentów kodu** można znaleźć fragmenty kodu. Folder użytkownika jest przechowywania wstawki utworzone przez użytkownika.  
   
- Układ typowy folder plików szablonów zainstalowanych fragment wygląda następująco: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ Układ typowy folder plików szablonów zainstalowanych fragment wygląda następująco: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[InstallRoot]*  jest folder języka jest zainstalowany w.  
   
@@ -60,7 +61,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
   
  *[LCID]*  to identyfikator ustawień regionalnych. Jest to sposób zlokalizowane wersje programu fragmentów są przechowywane. Na przykład identyfikator ustawień regionalnych dla języka angielskiego jest 1033, więc *[LCID]* zastępuje 1033.  
   
- Należy podać jedną dodatkowego pliku i jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowy pliku z rozszerzeniem .xml). Ten plik znajduje się zwykle w *[InstallRoot]*\\*[TestLanguage]* folderu i umożliwia określenie dokładnej lokalizacji folderu fragmentów, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Oto przykład pliku SnippetsIndex.xml:  
+ Należy podać jedną dodatkowego pliku i jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowy pliku z rozszerzeniem .xml). Ten plik znajduje się zwykle w *[InstallRoot]*\\ *[TestLanguage]* folderu i umożliwia określenie dokładnej lokalizacji folderu fragmentów, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Oto przykład pliku SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
   
  W tym przykładzie przyjęto założenie, że zainstalowano usługi języka w folderze instalacji programu Visual Studio. Identyfikator LCID % zostanie zastąpiony identyfikator użytkownika bieżącego ustawienia regionalne. Wiele \<SnippetDir > tagi do dodania, po jednej dla każdego innego katalogu i ustawień regionalnych. Ponadto folder fragment może zawierać podfolderów, z których każdy jest określone w pliku indeksu o \<SnippetSubDir > tag, który jest osadzony w \<SnippetDir > tagu.  
   
- Użytkownicy mogą także tworzyć własne wstawki dla danego języka. Te są zwykle przechowywane w folderze ustawień użytkownika, na przykład *[TestDocs]*\Code wstawki\\*[TestLanguage]*\Test wstawki kodu, gdy *[TestDocs]* jest lokalizacja folderu Ustawienia użytkownika dla programu Visual Studio.  
+ Użytkownicy mogą także tworzyć własne wstawki dla danego języka. Te są zwykle przechowywane w folderze ustawień użytkownika, na przykład *[TestDocs]* \Code wstawki\\ *[TestLanguage]* \Test wstawki kodu, gdy *[TestDocs]* jest lokalizacja folderu Ustawienia użytkownika dla programu Visual Studio.  
   
  Następujące elementy podstawienia można umieścić w ścieżce przechowywane w \<DirPath > znacznika w pliku indeksu.  
   
@@ -91,7 +92,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
 |% InstallRoot %|Główny folder instalacji programu Visual Studio, na przykład C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Folder zawierający bieżącego projektu.|  
 |% ProjItem %|Folder zawierający element bieżącego projektu.|  
-|% TestDocs %|Folderu w folderze ustawień użytkownika, na przykład C:\Documents and Settings\\*[username]*\My Studio\8.|  
+|% TestDocs %|Folderu w folderze ustawień użytkownika, na przykład C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Włączanie usługi języka wstawki kodu  
  Wstawki kodu można włączyć usługi języka, dodając <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atrybutu VSPackage (zobacz [zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md) szczegółowe informacje). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> i <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry są opcjonalne, ale powinna zawierać `SearchPaths` nazwany parametr, aby poinformować **Menedżerze fragmentów kodu** lokalizacji z fragmentów.  

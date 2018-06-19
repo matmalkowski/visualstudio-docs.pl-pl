@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129367"
 ---
 # <a name="implementing-single-file-generators"></a>Implementowanie generatory pojedynczego pliku
 Niestandardowe narzędzie — czasami określane jako generatora pojedynczych plików — umożliwiają rozszerzanie [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu systemów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Niestandardowe narzędzie jest składnik modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfejsu. Przy użyciu tego interfejsu, niestandardowe narzędzie przekształca pojedynczego pliku wejściowego w pojedynczym wyjściowym pliku. Wynik transformacji może być kodu źródłowego lub innych danych wyjściowych przydatne. Dwa przykłady kod wygenerowany przez narzędzie niestandardowe pliki są kod wygenerowany w odpowiedzi na zmiany w wizualnego projektanta i pliki generowane przy użyciu usługi sieci Web Services Description Language (WSDL).  

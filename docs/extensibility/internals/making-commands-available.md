@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134116"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 Po wielu VSPackages są dodawane do programu Visual Studio, interfejs użytkownika (UI) może stać się przepełniona za pomocą polecenia. Można programów pakietu w celu ograniczenia tego problemu w następujący sposób:

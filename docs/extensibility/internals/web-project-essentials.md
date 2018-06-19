@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140998"
 ---
 # <a name="web-project-essentials"></a>Podstawowe informacje dotyczące projektu sieci Web
 Projekty sieci Web tworzenie aplikacji sieci Web. Projekt sieci Web można użyć do utworzenia aplikacji sieci Web, która ma inteligentne strony sieci Web. Inteligentne strony sieci Web zawiera kod po stronie serwera, który renderuje stronę sieci Web na żądanie.  
@@ -34,7 +35,7 @@ Projekty sieci Web tworzenie aplikacji sieci Web. Projekt sieci Web można uży�
   
     -   Projekt aplikacji sieci Web (WAP) tworzy pojedynczy plik wykonywalny, który łączy kod dla wszystkich stron sieci Web inteligentne, a także wszystkich plików źródłowych w folderze /App_Code.  
   
--   Plik rozwiązania dla projektu sieci Web znajduje się niezależnie od w witrynie sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*YourAccount*\My dokumenty\\*\<programu Visual Studio ### >*\Projects\\ *YourWebSite*.  
+-   Plik rozwiązania dla projektu sieci Web znajduje się niezależnie od w witrynie sieci Web. Domyślnie pliki rozwiązania znajdują się w \Documents and Settings\\*YourAccount*\My dokumenty\\*\<programu Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Jeśli chcesz zachować plik rozwiązania z witryny sieci Web, wystarczy przenieść istnieje i otwórz go ponownie.  

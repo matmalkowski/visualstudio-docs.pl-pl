@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137343"
 ---
 # <a name="sccuncheckout-function"></a>Funkcja SccUncheckout
 Ta funkcja spowoduje cofnięcie poprzedniej operacji wyewidencjonowania, a tym samym Przywracanie zawartość wybranego pliku lub plików do stanu przed wyewidencjonowanie. Wszystkie zmiany wprowadzone w pliku, ponieważ wyewidencjonowanie zostaną utracone.  

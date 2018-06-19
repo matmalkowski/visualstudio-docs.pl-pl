@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131592"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model usługi języka starsza wersja
 Usługa języka definiuje elementy i funkcje w określonym języku i służy do zapewnienia edytor z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka aby zapewnić obsługę kolorowanie składni.  

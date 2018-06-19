@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134142"
 ---
 # <a name="registering-a-legacy-language-service"></a>Zarejestrowanie starsza wersja usługi języka
 Poniższe sekcje zawierają listę wpisy rejestru dla różnych języków usługi opcje dostępne w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|tekst|Wartość domyślna może służyć do nazwę języka dokumentu. Nazwa tego klucza jest identyfikatorem GUID ewaluatora wyrażeń, który ma odpowiadający mu wpis w  *\<katalogu głównego rejestru VS >*\AD7Metrics\Expression ewaluatora.|  
+|(Domyślnie)|REG_SZ|tekst|Wartość domyślna może służyć do nazwę języka dokumentu. Nazwa tego klucza jest identyfikatorem GUID ewaluatora wyrażeń, który ma odpowiadający mu wpis w  *\<katalogu głównego rejestru VS >* \AD7Metrics\Expression ewaluatora.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Wpisy rejestru dotyczące opcji widoku logicznym  
- *Katalogu głównego rejestru VS*\Editors\\*graficznego interfejsu użytkownika edytora >*\LogicalViews klucz może zawierać następujące wartości.  
+ *Katalogu głównego rejestru VS*\Editors\\*graficznego interfejsu użytkownika edytora >* \LogicalViews klucz może zawierać następujące wartości.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128880"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Określanie, czy wdrożyć pakiet VSPackage kontroli źródła
 W tej sekcji rosnącego wyborów plug-in kontroli źródła i kontroli źródła VSPackages do rozszerzania rozwiązania oraz zapewnia ogólnych wytycznych o wybieraniu ścieżki odpowiedniej integracji kontroli źródła.  

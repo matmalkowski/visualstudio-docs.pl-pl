@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952631"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 Kształty obraz umożliwia określić wygląd klasy domeny w Projektancie wygenerowany. Zdefiniuj obraz kształtu przez ustawienie `Image` właściwości klasy do pliku obrazu wstępnie zdefiniowane. Obsługiwane są następujące formaty:

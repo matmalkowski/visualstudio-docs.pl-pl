@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948980"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
 Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowane środowisko programistyczne (IDE) i zarządzanie zewnętrzne zmiany dokumentów i plików. Dostęp do tego okna dialogowego, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.

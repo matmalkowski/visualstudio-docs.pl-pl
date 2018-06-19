@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950296"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 Użyj **odwołania** strony **projektanta projektu** do zarządzania odwołań, odwołania sieci Web i importowane przestrzenie nazw w projekcie. Projekty mogą zawierać odwołania do składników COM usług XML sieci Web, biblioteki klas .NET Framework lub zestawów albo innych bibliotek klas. Aby uzyskać więcej informacji na temat używania odwołania zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).

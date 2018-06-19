@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921543"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projektów baz danych i aplikacji warstwy danych w programie Visual Studio
 Projektów bazy danych służy do tworzenia nowych baz danych, nowych aplikacji warstwy danych (DAC) oraz do aktualizowania istniejących baz danych oraz aplikacji warstwy danych. Zarówno projektów bazy danych, jak i projektów DAC umożliwiają dotyczą metody zarządzania projektu i kontroli wersji wysiłków programowanie bazy danych w podobny sposób zastosowania tych metod do kodu zarządzanego i natywnego. Może ułatwić zarządzanie zmianami do baz danych i serwerów baz danych przez utworzenie zespołu deweloperów *projektu DAC*, *projekt bazy danych*, lub *Projekt serwera* i umieścić go w ramach kontroli wersji. Członkowie zespołu można zapoznać się z plików podejmowaniu, tworzenie i testowanie zmian w *izolowane środowisko*, lub piaskownicy przed udostępnieniem je zespołowi. Aby zapewnić jakości kodu, zespołu Zakończ i przetestować w środowisku przemieszczania wszystkich zmian dla konkretnej wersji bazy danych, przed wdrożeniem zmian w środowisku produkcyjnym.

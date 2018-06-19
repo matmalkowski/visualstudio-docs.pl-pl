@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137108"
 ---
 # <a name="parent-element"></a>Element nadrzędny
 Element nadrzędny, przycisk lub pola kombi mogą być tylko grupy. Element nadrzędny menu lub grupy może być innych menu lub grupy. W [CommandPlacement Element](../extensibility/commandplacement-element.md), ten element jest wymagany; w innych przypadkach jest opcjonalna. W przypadku pominięcia tego elementu nadrzędnego `Group_Undefined:0` będzie niejawnego.  

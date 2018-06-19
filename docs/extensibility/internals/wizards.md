@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138717"
 ---
 # <a name="wizards"></a>Kreatorzy
 Po utworzeniu kreatora zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE), tak aby inne osoby go używać. Pojawi się w Kreatorze dodano **Dodawanie nowego projektu** lub **Dodaj nowy element** okien dialogowych. Aby wyświetlić **Dodawanie nowego projektu** lub **Dodaj nowy element** okno dialogowe pola, kliknij prawym przyciskiem myszy Otwórz rozwiązanie w **Eksploratora rozwiązań**, wskaż polecenie **Dodaj**, i następnie kliknij przycisk **nowy projekt** lub **nowy element**.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133134"
 ---
 # <a name="project-model-core-components"></a>Projekt modelu podstawowe składniki
 Rozwiń poniższe tabele w modelu projektu. Tabele przedstawiają krótkie opisy interfejsów i usług, które zostały zidentyfikowane w modelu oraz interfejsów i skojarzone z określonymi obiektami usługi. Ponadto tabele Szczegóły inne interfejsy, które są opcjonalne tworzenie projektu i konserwację w zależności od wymagań danego typu określonego projektu.  

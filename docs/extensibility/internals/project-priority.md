@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130883"
 ---
 # <a name="project-priority"></a>Priorytet projektu
 Element projektu zwykle jest elementem członkowskim tylko jednego projektu w rozwiązaniu. W związku z tym IDE może łatwo ustalić, który projekt jest używany do otwierania elementu. Jednak jeśli element jest członkiem więcej niż jeden projekt, IDE wykorzystuje schemat priorytet ustalenie najlepszych projektu do otwierania elementu.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130534"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Polecenie domyślne grupy i położenie paska narzędzi
 Jednolitość produktu i stabilności interfejsu użytkownika wyświetla domyślnie określonym grupom polecenia i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera definicje dla poleceń i polecenia grup. VSPackages można również użyć standardowych poleceń i polecenia grupy.  

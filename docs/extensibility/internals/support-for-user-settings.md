@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134096"
 ---
 # <a name="support-for-user-settings"></a>Obsługa ustawień użytkowników
 Pakiet VSPackage może zdefiniować co najmniej jednej kategorii ustawień, grup zmiennych stanu, które będą się powtarzać, gdy użytkownik wybierze **importowania i eksportowania ustawień** na **narzędzia** menu. Aby włączyć ten trwałości, należy użyć ustawienia interfejsów API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Pakiet VSPackage może zdefiniować co najmniej jednej kategorii ustawień, grup
      Jeśli pojedynczy pakiet VSPackage obsługuje kilka punktów ustawienia niestandardowe, w każdym punkcie ustawienia niestandardowe jest implementowany przez osobnej klasy i każdego zarejestrowane przez unikatowego wystąpienia <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy. W rezultacie ustawienia implementującej klasy może obsługiwać więcej niż jedną kategorię ustawień.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Niestandardowe ustawienia rejestru punktu wejścia szczegóły  
- Punkty ustawienia niestandardowe są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio\\*\<wersji >*\UserSettings\\`<CSPName>`, gdzie `<CSPName>` jest nazwa punktu ustawienia niestandardowe obsługuje pakiet VSPackage i  *\<wersji >* jest wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 8.0.  
+ Punkty ustawienia niestandardowe są tworzone we wpisie rejestru w następującej lokalizacji: HKLM\Software\Microsoft\VisualStudio\\*\<wersji >* \UserSettings\\`<CSPName>`, gdzie `<CSPName>` jest nazwa punktu ustawienia niestandardowe obsługuje pakiet VSPackage i  *\<wersji >* jest wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], na przykład 8.0.  
   
 > [!NOTE]
 >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywny główne, kiedy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest zintegrowane środowisko programistyczne (IDE) zainicjowane. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Struktura wpisu rejestru przedstawiono poniżej:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<wersji >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<wersji >* \UserSettings\  
   
  `<CSPName`> = "#12345" s  
   

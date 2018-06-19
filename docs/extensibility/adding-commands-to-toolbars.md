@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102372"
 ---
 # <a name="adding-commands-to-toolbars"></a>Dodawanie poleceń do pasków narzędzi
 Pasek narzędzi jest pasek pozioma lub pionowa zawierający przyciski powiązany z poleceń. Paski narzędzi na wielu różnych systemu windows w programie Visual Studio można dodać własne polecenia: Okno główne programu Visual Studio, Eksploratora rozwiązań i okien narzędzi niestandardowych.  

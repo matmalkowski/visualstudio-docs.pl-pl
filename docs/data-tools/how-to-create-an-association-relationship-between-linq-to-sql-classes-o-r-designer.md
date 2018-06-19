@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923393"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Porady: Tworzenie skojarzenia między klasy LINQ do SQL (Projektanta obiektów relacyjnych)
 Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są podobne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzenia** okno dialogowe.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132485"
 ---
 # <a name="visualizing-and-viewing-data"></a>Wizualizacja i wyświetlanie danych
 Wpisz wizualizatorów i niestandardowych podglądy wyświetlania danych w sposób zapewniający szybkie zrozumiały dla dewelopera. Ewaluator wyrażeń (EE) można obsługuje typ innych firm wizualizatorów a także podać własne niestandardowe przeglądarki.  

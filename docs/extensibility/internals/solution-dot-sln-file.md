@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133409"
 ---
 # <a name="solution-sln-file"></a>Rozwiązania (. Plik sln)
 Rozwiązanie to struktura służący do organizowania projekty w programie Visual Studio. Rozwiązania przechowuje informacje o stanie dla projektów w .sln (tekstowych, udostępnionych) i pliki .suo (opcje rozwiązania binarnego, specyficzne dla użytkownika). Aby uzyskać więcej informacji o .suo — pliki Zobacz [opcji użytkownika rozwiązania (. Pliku suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

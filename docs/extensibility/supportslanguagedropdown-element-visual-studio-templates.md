@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138831"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown — Element (szablony Visual Studio)
 Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków oraz czy **języka** jest włączona opcja **Dodaj nowy element** okno dialogowe.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136084"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak VSPackages dodać elementy interfejsu użytkownika
 Pakiet VSPackage można dodawać elementów interfejsu użytkownika, na przykład menu Paski narzędzi i narzędzia systemu windows dla programu Visual Studio za pomocą pliku vsct.  

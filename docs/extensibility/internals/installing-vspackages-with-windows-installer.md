@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131010"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalowanie VSPackages za pomocą Instalatora Windows
 Integrowanie VSPackage do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wymaga więcej niż tylko kopiowanie plików na komputerze użytkownika. Instalator programu pakiet VSPackage należy zainstalować pakiet VSPackage i jego plików zależnych i zarejestrować i ich do integracji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. VSPackage można wykorzystać funkcje integracji, takie jak wyświetlanie ikony na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powitalny ekranu i okno dialogowe informacje.  

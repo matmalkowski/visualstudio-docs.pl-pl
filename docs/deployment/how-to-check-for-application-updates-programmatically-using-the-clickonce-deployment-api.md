@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559078"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Porady: sprawdzanie aktualizacji aplikacji w sposób programowy za pomocą wdrażania interfejsu API technologii ClickOnce
 ClickOnce udostępnia dwa sposoby aktualizacji aplikacji po jej wdrożeniu. W metodzie pierwszy można skonfigurować wdrożenie ClickOnce, aby sprawdzał dostępność aktualizacji w określonych odstępach czasu. W drugiej metody, można napisać kod, który używa <xref:System.Deployment.Application.ApplicationDeployment> klasy, aby wyszukać aktualizacje na podstawie zdarzenia, takie jak żądanie użytkownika.  

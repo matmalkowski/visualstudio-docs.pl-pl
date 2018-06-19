@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134290"
 ---
 # <a name="manifest-from-resources"></a>Manifestu z zasobów
 Plik manifestu z narzędzia zasobów to aplikacja konsolowa, która przyjmuje listę zasobów obrazu (pliki PNG lub .xaml) i generuje plik .imagemanifest, który umożliwia tych obrazów do użycia z usługą obrazów programu Visual Studio. Ponadto to narzędzie można dodać obrazy do istniejących .imagemanifest. To narzędzie jest przydatne w przypadku dodawania obsługę wysokiej rozdzielczości i motywów dla obrazów do rozszerzenia programu Visual Studio. .Imagemanifest wygenerowanego pliku należy objęte i wdrożone w ramach rozszerzenia programu Visual Studio (.vsix).  

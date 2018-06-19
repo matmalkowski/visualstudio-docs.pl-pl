@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129284"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Wskazówki dotyczące kontroli dodatkowe źródła dla projektów i edytory
 Istnieje szereg wskazówki, które projekty i edytory należy stosować się do celu zapewnienia obsługi kontroli źródła.  

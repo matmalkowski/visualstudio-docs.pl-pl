@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130045"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Szablon zasad i w oknie właściwości
 Gdy projekt znajduje się wewnątrz szablonu projektu w przedsiębiorstwie, ten szablon projektu przedsiębiorstwa mogą wymusić zasady. Szablon zasad staje się ograniczający systemu, w którym można ustawić wartości domyślne dla właściwości, Ukryj właściwości, Dodaj właściwości i tak dalej.  

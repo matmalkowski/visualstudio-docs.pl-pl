@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948096"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generowanie kodu z języka specyficznego dla domeny
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia zaawansowane metody do generowania kodu, dokumentów, plików konfiguracji i pozostałych artefaktów z dane reprezentowane w modelach. Przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], można utworzyć zestaw klas, które reprezentują dane, można napisać szablony tekstu w klasach których nazwy i właściwości odzwierciedlenia tych danych.

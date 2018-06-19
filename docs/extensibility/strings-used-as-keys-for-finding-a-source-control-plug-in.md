@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137677"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczka do kontroli źródła
 Klucze do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek są następujące ciągi.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129862"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon — Element (szablony Visual Studio)
 Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która jest wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe szablonu.  

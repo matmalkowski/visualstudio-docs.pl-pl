@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135384"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Porady: Użyj AsyncPackage załadować VSPackages w tle
 Ładowanie i Inicjowanie pakiet programu VS może spowodować We/Wy dysku. W przypadku takich operacji We/Wy na wątek interfejsu użytkownika, może to prowadzić do problemów czas odpowiedzi. Aby rozwiązać ten problem, wprowadzono programu Visual Studio 2015 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> klasy, która umożliwia ładowanie zestawu wątku w tle.  

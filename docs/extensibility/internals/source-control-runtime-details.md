@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130315"
 ---
 # <a name="source-control-runtime-details"></a>Szczegóły czasu wykonywania kontroli źródła
 Projekt zostanie dodany do kontroli źródła, gdy użytkownik dodaje plik do projektu do kontroli źródła, albo przez kontroler automatyzacji, takich jak kreatora. Projekt nie określa dla siebie jest pod kontrolą źródła. obsługuje kontroli źródła, ale należy je dodać ręcznie do niego.  

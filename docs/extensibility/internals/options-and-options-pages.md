@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132934"
 ---
 # <a name="options-and-options-pages"></a>Opcje i opcje strony
 Kliknięcie przycisku **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialogowe. Opcje w oknie dialogowym zbiorowo są określane jako strony opcji. Drzewie w okienku nawigacji zawiera opcje kategorie, a każda kategoria ma opcje strony. Po wybraniu stroną jego opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają Zmień wartości opcji, które określają stan pakiet VSPackage.  

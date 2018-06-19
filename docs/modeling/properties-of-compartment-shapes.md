@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952171"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
 Kształty przedział są jednym kształtów, który służy do wyświetlania klasą domeny w języku specyficznego dla domeny. Można zwijać i rozwijać przedziałów.

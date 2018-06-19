@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129209"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień przez wiele połączeń projektu
 Wtyczka do kontroli źródła utworzony za pomocą 1.2 interfejsu API dodatku typu Plug-in kontroli źródła, można użyć do wykonania tej samej operacji kontroli źródła dla wielu projektów lub wielu kontekstów połączenia operacji zbiorczej. Partie można wyeliminować nadmiarowego, okien dialogowych z doświadczenia użytkownika projektu.  

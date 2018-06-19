@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134411"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Gdy punkt przerwania wiąże lub staje się niepowiązanych
 Gdy punkt przerwania nie może być powiązane w czasie, połączenie jest nawiązywane w przypadku [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metoda, powiązania czas i czas punktu przerwania utworzenia są różne.  

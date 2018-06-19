@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926748"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązanie formantów WPF z danymi w Visual Studio
 Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrolki. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzia i klasy, które umożliwia tworzenie powiązanych z danymi [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] aplikacji.

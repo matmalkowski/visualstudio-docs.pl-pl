@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135914"
 ---
 # <a name="list-of-available-services"></a>Lista dostępnych usług
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i programu Visual Studio SDK obsługuje następujące usługi. Niektóre pakiety oferują własne usługi, które nie są wymienione w tym miejscu — na przykład usługi języka nie ma jednej usługi identyfikatora GUID. Należy użyć nazwy języka Aby znaleźć identyfikator GUID usługi języka w rejestrze.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131520"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Edytuj zapytania Zapisz (VSPackage kontroli źródła)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytory może emitować zdarzenia zapytania Edytuj zapytania Zapisz (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stub kontroli źródła implementuje usługę QEQS tak, aby odbiorcy zdarzeń QEQS. Zdarzenia te są następnie delegowane do kontroli źródła aktualnie aktywny pakiet VSPackage. Kontroli źródła active implementuje pakiet VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i jego metod. Metody `IVsQueryEditQuerySave2` interfejsu są zwykle nazywane bezpośrednio przed dokumentu jest edytowany po raz pierwszy i bezpośrednio przed zapisaniu dokumentu.  

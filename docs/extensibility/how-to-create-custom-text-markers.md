@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132276"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Porady: Tworzenie niestandardowego tekstu znaczników
 Jeśli chcesz utworzyć znacznik niestandardowy tekst, aby wyróżnić lub organizowanie kodu, należy wykonać następujące czynności:  
@@ -34,9 +35,9 @@ Jeśli chcesz utworzyć znacznik niestandardowy tekst, aby wyróżnić lub organ
   
 1.  Utwórz wpis rejestru w następujący sposób:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >*znaczniki \Text Editor\External\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* znaczniki \Text Editor\External\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*jest `GUID` używany do identyfikowania znaczników dodaniu  
+     *\<MarkerGUID >* jest `GUID` używany do identyfikowania znaczników dodaniu  
   
      *\<Wersja >* jest wersja [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], na przykład 8.0  
   
@@ -45,7 +46,7 @@ Jeśli chcesz utworzyć znacznik niestandardowy tekst, aby wyróżnić lub organ
     > [!NOTE]
     >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywny głównego po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >*\Text Editor\External znaczniki\\*\<MarkerGUID >*  
+2.  Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* \Text Editor\External znaczniki\\*\<MarkerGUID >*  
   
     -   (Domyślnie)  
   

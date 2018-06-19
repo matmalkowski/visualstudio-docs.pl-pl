@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129699"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Pobieranie czcionek i kolorów informacje dotyczące tekstu kolorowania
 Proces, który renderuje lub wyświetla tekst kolorowane w elementy interfejsu użytkownika zależy od typu projektu, jego technologii i deweloperów preferencji. **Czcionki i kolory** ustawienia są przechowywane strony właściwości.

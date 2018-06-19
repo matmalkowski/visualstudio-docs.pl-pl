@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474898"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrukcje stop w Visual Basic
 Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu przerwania. Gdy debuger napotka instrukcję Stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). C# programistów można osiągnąć ten sam efekt za pomocą wywołania System.Diagnostics.Debugger.Break.  

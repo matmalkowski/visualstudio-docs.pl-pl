@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148275"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępniony kolorów dla programu Visual Studio
 Podczas projektowania interfejsu użytkownika, który korzysta z typowymi elementami powłoki programu Visual Studio lub chcesz z elementu interfejsu, aby były spójne z podobne funkcje, umożliwia istniejących nazw tokenu w plikach definicji pakietu wybierz i przypisz kolory. Dzięki temu, że Twój interfejs użytkownika jest zgodny z ogólną środowiska Visual Studio i aktualizowane automatycznie po motywów zostały dodane lub zaktualizowane.  

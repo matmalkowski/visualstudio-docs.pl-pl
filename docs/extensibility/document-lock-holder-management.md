@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130547"
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właściciela blokady dokumentu
 Tabela systemem dokumentu (Normalizacją) obsługuje liczbę otwarte dokumenty i wszystkie blokady edycji, które mają. Blokady edycji można umieścić na dokument w Normalizacją, gdy programowo jest edytowany w tle bez użytkownika wyświetlany w oknie dokumentu otwartego dokumentu. Ta funkcja jest często używane przez projektantów, które modyfikują wiele plików za pomocą graficznego interfejsu użytkownika.  

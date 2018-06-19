@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927168"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze programu Visual Studio
 Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświetla typy natywne w oknach zmiennych debugera (na przykład **czujki** okna, **zmiennych lokalnych** okna, a następnie w  **Etykietki danych**.

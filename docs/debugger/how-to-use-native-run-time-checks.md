@@ -44,6 +44,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480605"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 W programie Visual C++, można użyć natywnego [runtime_checks](/cpp/preprocessor/runtime-checks) do wychwytywania typowych błędów czasu wykonywania, takie jak:  

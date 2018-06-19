@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138314"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints Element
 VisibilityConstraints element Określa widoczność statycznych grupy poleceń i pasków narzędzi. Widoczność najpierw jest kontrolowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) bez ładowania pakiet VSPackage.  

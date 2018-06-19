@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31582088"
 ---
 # <a name="profiling-tools-usage-rules"></a>Reguły korzystania z narzędzi profilowania
 Reguły wydajności w kategorii profilowania użycia narzędzia zapewniają wskazówek dotyczących używania profilera do zbierania danych najbardziej efektywny sposób.  

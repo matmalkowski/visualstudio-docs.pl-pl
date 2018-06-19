@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134002"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (. Pliki Vsdir)
 Szablon pliku opisu katalogu (.vsdir) to plik tekstowy, który umożliwia zintegrowane środowisko programistyczne (IDE), aby wyświetlić folderów, plików kreatora .vsz i plików szablonów, które są skojarzone z projektu w oknach dialogowych. Zawierać jeden rekord dla każdego pliku lub folderu. Wszystkie pliki .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisywania wiele folderów, pliki szablonów lub kreatorów.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136645"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
 Określa, że szablon elementu używa odwołania do zestawu SDK.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130690"
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli źródła
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje wyewidencjonowania pliku, zaewidencjonowania i innych operacji kontroli źródła dla projektu lub edytora. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] służy do interakcji z pakietem kontroli źródła, takich jak [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], które obejmują archiwizacji, przechowywanie wersji i urządzeń do sterowania dynamicznie zdefiniowanego zestawu plików.  

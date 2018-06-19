@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129686"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Porady: używanie wbudowanych elementów Colorable
 Przed użyciem wbudowanych elementów colorable, użytkownik musi najpierw sygnału zintegrowane środowisko programistyczne (IDE) nie udostępniasz własne niestandardowe colorable elementów, które w tym przypadku <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektów. W tym celu ustawienia wpisu rejestru dla usługi języka.  

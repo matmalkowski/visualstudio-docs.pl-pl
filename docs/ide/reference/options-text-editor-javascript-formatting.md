@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950884"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
 Użyj **formatowanie** strony **opcje** okno dialogowe, aby ustawić opcje formatowania kodu w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia**, **opcje**, a następnie rozwiń węzeł **Edytor tekstu**, **JavaScript**i **Formatowania**.

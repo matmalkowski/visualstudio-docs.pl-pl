@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131595"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi języka oraz rozszerzenia Edytora
 Rozszerzenia edytora służy do dodawania funkcji usługi języka takich jak tworzenie konspektu, pasujących nawiasów klamrowych, IntelliSense i żarówki języka programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytorze programu Visual Studio, na przykład tekstu kolorowania marginesy, skojarzenia i inne elementy wizualne. Można również definiować własne typu zawartości i określić wygląd i zachowanie widoków tekstu, w których zostanie wyświetlona zawartość.  
@@ -66,7 +67,7 @@ Rozszerzenia edytora służy do dodawania funkcji usługi języka takich jak two
 ## <a name="running-extensions-in-the-experimental-instance"></a>Rozszerzeniami w eksperymentalnym wystąpieniu  
  Gdy tworzysz rozszerzenie przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7), można zabezpieczyć z działającą wersją programu Visual Studio:  
   
- *LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*firmy*\\*identyfikator rozszerzenia*  
+ *LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*firmy*\\*identyfikator rozszerzenia*  
   
  gdzie *LOCALAPPDATA %* to nazwa zalogowanego użytkownika *firmy* to nazwa firmy, który jest właścicielem rozszerzenia i *identyfikator rozszerzenia* identyfikatora rozszerzenia.  
   

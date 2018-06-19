@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946575"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 Ta strona **opcje** okno dialogowe, aby kontrolować komunikatów i innych aspektów Znajdź i Zamień operacji. Można uzyskać dostępu do tego okna dialogowego z **narzędzia** menu, klikając **opcje**, powiększające **środowiska**, a następnie klikając pozycję **Znajdź i Zamień**. Jeśli ta strona nie ma na liście, wybierz **wszystkie ustawienia** w **opcje** okno dialogowe.
