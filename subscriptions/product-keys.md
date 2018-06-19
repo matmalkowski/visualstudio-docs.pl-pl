@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863274"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Przy użyciu kluczy produktu w ramach subskrypcji programu Visual Studio
 

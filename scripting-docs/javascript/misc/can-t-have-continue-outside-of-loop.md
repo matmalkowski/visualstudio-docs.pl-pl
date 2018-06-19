@@ -1,13 +1,13 @@
 ---
-title: "Może &#39; ma t &#39; kontynuować &#39; poza pętlą | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Może &#39; ma t &#39; kontynuować &#39; poza pętlą | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1020
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788833"
 ---
 # <a name="can39t-have-39continue39-outside-of-loop"></a>Może &#39; ma t &#39; kontynuować &#39; poza pętlą
 Podjęto próbę użycia **kontynuować** instrukcji poza pętlą. **Kontynuować** instrukcja może być używana tylko w treści a:  

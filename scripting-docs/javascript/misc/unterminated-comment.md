@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24788968"
 ---
 # <a name="unterminated-comment"></a>Niezakończony komentarz
 Rozpoczęcia blok komentarza wiele wierszy, ale nie prawidłowo zakończyć go. Komentarze wielowierszowe rozpoczynają się od "/ *" kombinacja i kończyć się odwrotnej "\*/" kombinacji. Oto przykład:  

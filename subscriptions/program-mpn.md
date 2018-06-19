@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863628"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio subskrypcje oferowane partnerów w sieci partnera firmy Microsoft (MPN)
 Partnerzy kto otrzymywanie kompetencja i który zakupu pakiet akcji w MPN to prawo do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla każdego użytkownika, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku partnerskiej firmy. 
