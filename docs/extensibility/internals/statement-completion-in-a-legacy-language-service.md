@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131330"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie składni w starsza wersja usługi języka
 Uzupełnianie to proces, za pomocą którego usługa języka umożliwia użytkownikom Zakończ słowem kluczowym języka lub element, który zostały uruchomione, wpisując w edytorze core. W tym temacie omówiono sposób działania uzupełnianie i jak ją wdrożyć w usłudze języka.  

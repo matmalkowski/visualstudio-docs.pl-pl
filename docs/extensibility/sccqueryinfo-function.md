@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138886"
 ---
 # <a name="sccqueryinfo-function"></a>Funkcja SccQueryInfo
 Ta funkcja uzyskuje informacje o stanie dla zestawu wybranych plików pod kontrolą źródła.  

@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133713"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu opartego na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio
 Program Visual Studio umożliwia ładowanie VSPackages podczas niektórych dobrze znanego <xref:Microsoft.VisualStudio.Shell.UIContext>s są uaktywnione. Jednak te konteksty interfejsu użytkownika nie są bardzo małe system, pozostawiając autorów rozszerzenia wybór nie, ale do pobrania dostępnych kontekstu interfejsu użytkownika, który uaktywnia przed punktem chcieli naprawdę pakiet VSPackage załadować. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

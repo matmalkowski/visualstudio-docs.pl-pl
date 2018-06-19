@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128887"
 ---
 # <a name="custom-tools"></a>Narzędzia niestandardowe
 *Narzędzia niestandardowe* można skojarzyć narzędzie z elementu w projekcie i uruchamiania tego narzędzia, zawsze, gdy plik jest zapisywany. Niektóre narzędzia niestandardowe czasami określane jako *generatory pojedynczego pliku*, są często używane do implementowania tłumaczy, które generują kod z danych i na odwrót. Na przykład utworzyć generatory pojedynczego pliku [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kod pliki .settings i .resx poza źródłowy. Kod źródłowy wygenerowanego zapewnia wymagająca dostępu do danych w pliku .settings i resx. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektu obswługują narzędzi niestandardowych; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] typów projektów nie. Swój własny typ projektu może również obsługiwać narzędzi niestandardowych.  

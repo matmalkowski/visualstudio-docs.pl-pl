@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135744"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Zawiera informacje o stanie punktu przerwania, który jest gotowy do powiązania do lokalizacji kodu.  

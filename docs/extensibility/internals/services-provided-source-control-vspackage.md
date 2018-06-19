@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129605"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Usługi świadczone (VSPackage kontroli źródła)
 Usługi są podstawowego mechanizmu za pośrednictwem której funkcje są udostępniane między VSPackages oraz między Visual Studio zintegrowane środowisko programistyczne (IDE) i jego zainstalowane pakiety VSPackage. Aby uzyskać szczegółowy opis usług i ich znaczenie w środowisku IDE programu Visual Studio, zobacz[Using i dostarczanie usług](../../extensibility/using-and-providing-services.md).  

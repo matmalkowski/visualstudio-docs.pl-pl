@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132750"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracji metadanych
 Manipulowanie metadanych i filtr atrybuty skojarzone z projektantem lub składnika projektanta udostępnia mechanizm dla aplikacji, aby określić, jakie narzędzia są używane przez konkretnego projektanta do obsługi różnych <xref:System.Type> obiektów (takich jak struktury danych klasy lub graficznego jednostek), gdy projektant jest dostępna, i jak środowiska IDE programu Visual Studio jest skonfigurowany do obsługi projektanta (dla wystąpienia, które **przybornika** kategorii lub karta jest dostępna).  

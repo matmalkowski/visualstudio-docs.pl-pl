@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922339"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych
 Formanty powiązane z danymi można utworzyć, przeciągając elementy z **źródeł danych** okna na projektanta WPF lub Projektant formularzy systemu Windows. Każdy element **źródeł danych** okno ma domyślny formant, który jest tworzony podczas przeciągania do projektanta. Można jednak utworzyć inny formant.

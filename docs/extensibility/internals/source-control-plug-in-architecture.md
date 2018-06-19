@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132394"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektura wtyczkę kontroli źródła
 Można dodać obsługę kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) przez implementację i dołączanie wtyczka do kontroli źródła. IDE nawiązuje połączenie z kontrolą źródła wtyczki za pomocą dobrze zdefiniowany interfejsu API dodatku typu Plug-In kontroli źródła. IDE przedstawia funkcje kontroli wersji z systemu kontroli źródła, zapewniając interfejsu użytkownika (UI), która składa się z pasków narzędzi i poleceń menu. Wtyczka do kontroli źródła implementuje funkcje kontroli źródła.  

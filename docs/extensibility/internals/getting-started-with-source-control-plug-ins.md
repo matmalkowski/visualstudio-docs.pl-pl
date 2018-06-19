@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128922"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Wprowadzenie do korzystania z wtyczki kontroli źródła
 Aby utworzyć wtyczkę kontroli źródła, należy utworzyć bibliotekę DLL, która implementuje funkcje zdefiniowane w interfejsie API dodatku typu Plug-in kontroli źródła, a następnie można zarejestrować biblioteki DLL z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby był dostępny do użytku w kontroli wersji kodu źródłowego.  

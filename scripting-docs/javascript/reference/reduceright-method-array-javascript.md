@@ -1,12 +1,13 @@
 ---
-title: "reduceRight — metoda (tablica) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: reduceRight — metoda (tablica) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], reduceRight method
 - reduceRight method [JavaScript]
 ms.assetid: 85963761-da11-407c-8bce-278c930e61bd
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792103"
 ---
 # <a name="reduceright-method-array-javascript"></a>reduceRight — Metoda (Array) (JavaScript)
 Wywołuje funkcję wywołania zwrotnego określony dla wszystkich elementów w tablicy, w kolejności malejącej. Zwracana wartość funkcji wywołania zwrotnego jest wynikiem zakumulowanym i jest dostarczana jako argument w następnym wywołaniu funkcji wywołania zwrotnego.  

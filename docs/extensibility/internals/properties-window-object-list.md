@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130139"
 ---
 # <a name="properties-window-object-list"></a>Lista obiektów okno właściwości
 Lista obiektów w **właściwości** okno jest listy rozwijanej, który pozwala na zmianę zaznaczenie do innych obiektów, które są dostępne w ramach jednego lub więcej wybranych systemu windows. Wybranie innego obiektu z na tej liście wyzwala wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> informują środowisko wybrano nowego obiektu. Informacje wyświetlane w **właściwości** okna jest następnie zmieniane, aby wyświetlić właściwości skojarzone z nowo wybranego obiektu.  

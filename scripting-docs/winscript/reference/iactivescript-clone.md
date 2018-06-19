@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::Clone | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791998"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Klonów bieżącego aparatu skryptów (minus wszelkie bieżący stan wykonania), zwracając załadować aparatów skryptów, który ma żadna lokacja w bieżącym wątku. Właściwości to nowy aparat skryptów będą takie same jak właściwości, które oryginalny aparat skryptu byłoby w, jeśli zostały są przenoszone do stanu zainicjowane.  

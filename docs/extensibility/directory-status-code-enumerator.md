@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126087"
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
 `SccDirStatus` Modułu wyliczającego zawiera nazwanych wartości stałej, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używany przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API dodatku typu Plug-in kontroli źródła.  

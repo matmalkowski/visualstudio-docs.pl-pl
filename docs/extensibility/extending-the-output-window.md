@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131039"
 ---
 # <a name="extending-the-output-window"></a>Rozszerzanie w oknie danych wyjściowych
 **Dane wyjściowe** okna jest zestawem okienek tekstu odczytu/zapisu. Visual Studio ma te wbudowane okienka: **kompilacji**, w poszczególnych projektach przekazywania wiadomości o kompilacjach i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty o IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metod interfejsu i Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienka można utworzyć i zarządzać własnego niestandardowego okienka.  

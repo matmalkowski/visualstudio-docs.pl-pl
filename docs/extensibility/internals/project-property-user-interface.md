@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132430"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
 Podtyp projektu można użyć elementów w projekcie **strony właściwości** — okno dialogowe jak są one dostarczane przez podstawową projektu, Ukryj lub był służy tylko do odczytu i całe strony dostarczony lub Dodaj stron specyficzne dla podtypu projektu do **Strony właściwości** okno dialogowe.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132094"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Właściwości i metody przedłużony podtypów projektu
 Podtyp projektu ma wiele możliwości w celu wywierania wpływu na zachowanie projektu, ponieważ jest tworzony jako agregatora podstawowego projektu. Ta sekcja zawiera podsumowanie niektórych funkcji, które mogą być rozszerzone lub modyfikowane przez podtypów projektu.  

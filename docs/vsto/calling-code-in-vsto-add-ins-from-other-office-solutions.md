@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265331"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Obiekt mogą uwidaczniać w Twojej dodatku VSTO do innych rozwiązań, łącznie z innych rozwiązań Microsoft Office. Jest to przydatne, jeśli dodatek VSTO udostępnia usługi, który chcesz włączyć innych rozwiązań do użycia. Na przykład jeśli masz dodatku VSTO dla programu Microsoft Office Excel wykonuje obliczenia na danych finansowych z usługi sieci Web, inne rozwiązania można wykonać tych obliczeń przez wywołanie dodatku VSTO programu Excel w czasie wykonywania.  

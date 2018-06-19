@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131875"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Porady: generowanie informacji rejestru dla Instalatora
 Narzędzie RegPkg.exe może służyć do generowania manifestu rejestracji dla zarządzanych pakiet VSPackage. Manifest może być dołączany do pakietu instalacyjnego Instalatora Windows. RegPkg również może wygenerować pliku, który można umieścić w pliku źródłowym instalacji na podstawie [zestaw narzędzi XML Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=62238).  

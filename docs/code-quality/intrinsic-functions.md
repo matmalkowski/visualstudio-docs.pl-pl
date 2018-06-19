@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920951"
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 Wyrażenie w SAL może być wyrażenie C/C++, pod warunkiem, że wyrażenie ma efekty uboczne — na przykład ++,--i mieć skutki uboczne w tym kontekście wywołania funkcji.  SAL zapewnia jednak niektóre obiekty typu funkcji i niektóre zastrzeżone symbole, których można używać w wyrażeniach SAL. Są one określane jako *funkcje wewnętrzne*.

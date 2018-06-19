@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138057"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, takie jak autor pliku źródłowego. Można to zrobić, przechowując właściwość w pliku projektu.

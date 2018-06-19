@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919431"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Porady: ręczne przeprowadzanie analizy kodu dla zarządzanego kodu
 Narzędzie do analizy kodu miejsce informacji o ewentualnych wad w kodzie źródłowym. Uruchom analizę kodu automatycznie dla każdej kompilacji projektu kodu, a można też ręczne przeprowadzanie analizy kodu. Zasady, które są sprawdzane podczas przeprowadzania analizy kodu są określone na stronie analizy kodu, stron właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie analizy kodu dla projektu zarządzanego kodu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

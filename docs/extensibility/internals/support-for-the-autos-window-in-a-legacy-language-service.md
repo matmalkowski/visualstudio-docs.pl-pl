@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135825"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Obsługa okno zmiennych automatycznych w starsza wersja usługi języka
 **Automatycznych** wyświetlany w oknie wyrażeń zmiennych i parametrów, które znajdują się w zakresie, gdy program debugowany jest wstrzymana (albo z powodu punkt przerwania lub wyjątek). Wyrażenia może zawierać zmiennych lokalnych i globalnych oraz parametry, które zostały zmienione w zakresie lokalnym. **Automatycznych** okna mogą również obejmować wystąpień klasy, struktury lub innego typu. Wszystkie elementy, które można ocenić ewaluatora wyrażeń potencjalnie może być wyświetlany w **automatycznych** okna.  

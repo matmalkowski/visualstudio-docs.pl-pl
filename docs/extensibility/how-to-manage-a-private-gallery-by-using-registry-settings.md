@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126786"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Porady: Zarządzanie galerii prywatnego za pomocą ustawień rejestru
 Jeśli jesteś administratorem lub deweloperem rozszerzenia Isolated Shell, można kontrolować dostęp do formantów, szablony i narzędzia w galerii programu Visual Studio, Galeria przykładów lub prywatnej galerii. Aby galerii dostępne lub niedostępne, należy utworzyć plik .pkgdef, który opisuje modyfikacji rejestru i ich wartości.  

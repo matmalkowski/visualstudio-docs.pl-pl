@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138359"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu VSCT XML
 Atrybuty warunkowe może być stosowany do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzenia symbol zwrócić wartość true lub false. Jeśli PRAWDA, skojarzone lista lub element znajduje się w dane wyjściowe.  

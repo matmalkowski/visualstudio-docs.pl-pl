@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133802"
 ---
 # <a name="project-subtypes-design"></a>Podtypów projektu
 Projekt podtypów umożliwiają VSPackages rozszerzanie projektów opartych na aparat kompilacji firmy Microsoft (MSBuild). Użycie agregacji umożliwia ponowne użycie zbiorczego podstawowego zarządzane systemu projektu w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jeszcze nadal dostosować zachowanie dla danego scenariusza.  

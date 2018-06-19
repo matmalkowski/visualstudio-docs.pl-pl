@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947170"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Kontrolowanie koloru, stylu linii i innych właściwości kształtu
 Niektóre właściwości kształtu, takie jak kolor może być "widoczne" - oznacza to, połączony z właściwością domeny kształtu. Inne muszą być kontrolowane bezpośrednio.

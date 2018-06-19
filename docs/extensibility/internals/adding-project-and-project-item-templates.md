@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128751"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Dodawanie projekt oraz szablony elementów projektu
 Podczas tworzenia własnych typów projektu do dodawania nowych projektów i elementów projektu przy użyciu standardu musi zapewnić obsługę [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane rozwoju (IDE) środowiska okien dialogowych. W poniższych tematach opisano różne techniki dodawanie projektów i elementów projektu.  

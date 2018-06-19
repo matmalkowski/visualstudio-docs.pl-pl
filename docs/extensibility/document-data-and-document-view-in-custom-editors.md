@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130263"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i Widok dokumentu w edytorach niestandardowych
 Niestandardowy Edytor składa się z dwóch części: obiekt danych dokumentu i obiektu widoku dokumentu. Jako nazwy sugerują, obiekt danych dokumentu reprezentuje danych tekst do wyświetlenia, a obiekt widoku dokumentu (lub "Widok") — co najmniej jeden windows wyświetlania obiektu danych dokumentu.  

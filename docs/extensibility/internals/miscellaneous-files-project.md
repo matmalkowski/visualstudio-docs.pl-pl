@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129980"
 ---
 # <a name="miscellaneous-files-project"></a>Projekt różne pliki
 Po otwarciu elementy projektu IDE przypisuje do projektu różne pliki wszystkie elementy, które nie są elementami członkowskimi żadnych projektów w rozwiązaniu.  

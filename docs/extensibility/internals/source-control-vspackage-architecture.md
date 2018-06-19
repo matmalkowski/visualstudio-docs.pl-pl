@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131897"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura pakiet VSPackage kontroli źródła
 Pakiet kontroli źródła jest pakiet VSPackage, który korzysta z usług [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia IDE. W zamian pakiet kontroli źródła zawiera jej funkcji jako usługi kontroli źródła. Ponadto pakiet kontroli źródła jest alternatywą bardziej elastyczne niż wtyczka do kontroli źródła do integracji kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

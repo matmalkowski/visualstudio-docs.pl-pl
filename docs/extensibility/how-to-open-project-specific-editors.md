@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129048"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Porady: Otwórz edytory specyficznego dla projektu
 Jeśli plik elementu otwierany przez projekt leżą jest powiązana z określonego edytora dla tego projektu, projekt musi otworzyć plik za pomocą edytora określonego projektu. Plik nie może być delegowane do IDE mechanizm wybierania edytora. Na przykład zamiast za pomocą edytora standardowego mapy bitowej, możesz użyć tej opcji edytora specyficznych dla projektu do określenia Edytor określonych mapy bitowej, które rozpoznaje informacje w pliku, który jest unikatowy dla projektu.  

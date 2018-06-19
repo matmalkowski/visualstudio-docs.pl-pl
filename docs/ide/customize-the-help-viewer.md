@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923842"
 ---
 # <a name="customize-the-help-viewer"></a>Dostosowywanie podglądu pomocy
 Można dostosować układ okna podglądu pomocy, jak również inne opcje, takie jak rozmiar czcionki, maksymalna liczba wyników i czy mają zostać dołączone do zawartości w języku angielskim.

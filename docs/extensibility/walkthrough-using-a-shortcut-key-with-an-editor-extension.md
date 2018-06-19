@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704028"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Wskazówki: Używanie klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótu można odpowiedzieć w rozszerzenia edytora. Poniższe wskazówki przedstawiono sposób dodawania ozdób widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie Edytor ozdób okienka ekranu, i umożliwia dodawanie ozdób przy użyciu + znak.  

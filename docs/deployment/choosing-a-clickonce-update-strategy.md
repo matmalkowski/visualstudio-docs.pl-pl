@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065692"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Umożliwia automatyczne stosowanie aktualizacji. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja okresowo odczytuje jej wdrożenia pliku manifestu w celu sprawdzenia, czy aktualizacje aplikacji są dostępne. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.  

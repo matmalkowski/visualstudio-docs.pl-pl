@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129225"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Współtworzenie Dodaj nowy element — okno dialogowe
 Podtyp projektu zapewniają pełną nowy katalog elementów dla **Dodaj nowy element** okno dialogowe rejestrując **Dodaj element** szablonów w obszarze `Projects` podklucza rejestru.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130012"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Określanie otwieranym edytora plików w projekcie
 Po otwarciu pliku w projekcie, środowisko przechodzi przez proces sondowania, po pewnym czasie otwierania odpowiedniego edytora lub projektanta dla tego pliku. Procedury początkowej przez środowisko jest taki sam dla edytory standardowe i niestandardowe. Środowisko używają różnych kryteriów, podczas sondowania Edytor Otwórz plik i pakiet VSPackage musi koordynować ze środowiskiem w trakcie tego procesu.  

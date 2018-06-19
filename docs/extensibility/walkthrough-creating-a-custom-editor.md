@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138775"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Wskazówki: Tworzenie edytora niestandardowego
 Szablon projektu pakiet VSPackage można utworzyć prosty niestandardowego edytora w języku C++.  Szablon projektu pakiet VSPackage już nie obsługuje projektów C# lub Visual Basic. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  

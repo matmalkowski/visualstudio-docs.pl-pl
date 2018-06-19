@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136832"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Weryfikowanie podtypów projektu w czasie wykonywania
 Pakiet VSPackage, który jest zależny od podtypu projektu niestandardowych powinna zawierać logiki do wyszukania podtypu tak, aby go może zakończyć się niepowodzeniem bezpiecznie Jeśli podtyp nie istnieje. Poniższa procedura przedstawia sposób sprawdzić, czy z określonym podtypem.  

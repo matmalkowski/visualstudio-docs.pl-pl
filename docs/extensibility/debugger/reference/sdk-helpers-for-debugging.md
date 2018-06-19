@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135925"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracje są funkcje globalne pomocy wykonywania aparatami debugowania, ewaluatorów wyrażeń i dostawców symbol w języku C++.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[wyjątek]*|Nazwa wyjątku: na przykład **_com_error** lub **Ctrl-Break**. Te nazwy są również używane do identyfikowania określonego wyjątku dla użytkownika.|  
   
 ## <a name="requirements"></a>Wymagania  
- Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] katalogu instalacyjnego zestawu SDK (domyślnie *[dysk]*\Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
+ Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] katalogu instalacyjnego zestawu SDK (domyślnie *[dysk]* \Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
   
  Nagłówek: includes\dbgmetric.h  
   

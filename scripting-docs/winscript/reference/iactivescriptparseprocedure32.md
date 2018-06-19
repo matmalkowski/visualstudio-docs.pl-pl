@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24793354"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Jeśli aparat skryptu systemu Windows zezwala na tekst kod źródłowy dla procedury do dodania do skryptu, implementuje `IActiveScriptParseProcedure32` interfejsu. Dla interpretowany języków skryptów, które mają nie niezależne środowisko tworzenia raportów, takich jak VBScript, zapewnia alternatywny mechanizm (inne niż `IActiveScriptParse32` lub `IPersist`*) można dodać skrypt procedury do przestrzeni nazw.  

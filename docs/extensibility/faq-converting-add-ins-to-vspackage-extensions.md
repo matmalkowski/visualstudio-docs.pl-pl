@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134048"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage
 Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące sposób konwertowania dodatku programu Visual Studio do rozszerzenia VSIX.  
@@ -67,7 +68,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
   
 1.  Utwórz pakiet VSPackage, który zawiera polecenie menu. (Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >*Package.cs.)  
+2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >* Package.cs.)  
   
 3.  Dodaj następujące `using` instrukcje do pliku:  
   
@@ -129,7 +130,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Aby uzyskać obiektu DTE z pakiet VSPackage  
   
-1.  W projekcie VSIX z szablonem elementu pakiet programu Visual Studio, wyszukaj  *\<Nazwa projektu >*Package.cs pliku. Jest to klasa, która jest pochodną <xref:Microsoft.VisualStudio.Shell.Package>; może pomóc w interakcję z programem Visual Studio. W takim przypadku należy użyć jego <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> uzyskanie <xref:EnvDTE80.DTE2> obiektu.  
+1.  W projekcie VSIX z szablonem elementu pakiet programu Visual Studio, wyszukaj  *\<Nazwa projektu >* Package.cs pliku. Jest to klasa, która jest pochodną <xref:Microsoft.VisualStudio.Shell.Package>; może pomóc w interakcję z programem Visual Studio. W takim przypadku należy użyć jego <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> uzyskanie <xref:EnvDTE80.DTE2> obiektu.  
   
 2.  Dodaj te `using` instrukcji:  
   
@@ -161,7 +162,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
   
 1.  Utwórz pakiet VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzenia VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
   
-2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >*Package.cs.)  
+2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >* Package.cs.)  
   
 3.  Dodaj te `using` instrukcji:  
   
@@ -209,7 +210,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
   
 1.  Utwórz pakiet VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzenia VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
   
-2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >*Package.cs.)  
+2.  Otwórz plik, który zawiera definicję pakiet VSPackage. (W projekcie C# ma  *\<nazwę projektu >* Package.cs.)  
   
 3.  Dodaj te `using` instrukcji:  
   

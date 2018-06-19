@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128094"
 ---
 # <a name="createexpinstance-utility"></a>Narzędzie CreateExpInstance
 Narzędzia CreateExpInstance do tworzenia, zresetować, lub usuń eksperymentalne wystąpienie programu Visual Studio. Eksperymentalne wystąpienie służy do debugowania i testowania rozszerzeń programu Visual Studio bez zmiany podstawowego produktu.  

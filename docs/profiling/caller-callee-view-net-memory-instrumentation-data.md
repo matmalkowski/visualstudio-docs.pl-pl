@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265504"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok wywołujący/wywoływany - Instrumentacja pamięci .NET danych
 Widok wywołujący/wywoływany danych, który został zebrany przy użyciu metody Instrumentacji profilowania pamięci .NET Wyświetla alokacji i danych o chronometrażu dla wybranej funkcji i funkcji nadrzędne i podrzędne tych wybranych funkcji. Widok wywołujący/wywoływany zawiera trzy siatki.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130248"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Porady: Obsługa konspekt w starsza wersja usługi języka
 Tworzenie konspektu służy do rozwiń lub Zwiń różnych regionach tekstu. Sposób tworzenia konspektu służy może być określony inaczej w różnych językach. Aby uzyskać więcej informacji, zobacz [Tworzenie konspektu](../../ide/outlining.md).  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917166"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Wskazówki: Przykład LinqToXmlDataBinding
 W tym przewodniku opisano przykład LinqToXmlDataBinding oraz omówiono bardziej interesującego zawartości jego dwa pliki podstawowym źródłem L2DBForm.xaml i L2DBForm.xaml.cs.

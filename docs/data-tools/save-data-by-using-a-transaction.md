@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920550"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Porady: zapisywanie danych przy użyciu transakcji
 Zapisywanie danych w transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. Użyj <xref:System.Transactions.TransactionScope> obiekt, aby uczestniczyć w transakcji, która jest automatycznie zarządzane dla Ciebie.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126900"
 ---
 # <a name="security-issues"></a>Problemy z zabezpieczeniami
 Tylko uprawnienia potrzebne do debugowania programu przy użyciu programu Visual Studio, są takie same, jak deweloper musi on zostać uruchomiony program. W tym zdalnego debugowania w większości sytuacji (niektórych sytuacjach dotyczących innych usług, takich jak Internet Information Services mogą wymagać wyższego poziomu uprawnień).  

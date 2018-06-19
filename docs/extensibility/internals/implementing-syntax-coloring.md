@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131858"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowanie składni
 Kiedy usługa języka udostępnia kolorowanie składni, analizator konwertuje wiersza tekstu na tablicę elementów colorable i zwraca odpowiadający te elementy colorable typy tokenów. Analizator powinien zwrócić token typy, które należą do listy elementów colorable. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Wyświetla każdy element colorable w oknie Kod zgodnie z atrybutów przypisane przez obiekt colorizer do odpowiedniego typu tokenu.  

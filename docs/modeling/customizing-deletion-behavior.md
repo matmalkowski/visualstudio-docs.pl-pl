@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952618"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia również. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne zostaną usunięte. To zachowanie jest o nazwie *usunąć propagacji*. Można dostosować propagacji delete, na przykład ułożyć, że dodatkowe powiązane elementy są usuwane. Pisanie kodu programu, możesz wprowadzić propagacji delete są zależne od stanu modelu. Może również spowodować inne zmiany w odpowiedzi do usunięcia.

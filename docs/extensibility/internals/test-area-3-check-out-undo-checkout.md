@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134968"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Obszar testu 3: Zapoznaj się z / cofnąć wyewidencjonowania
 Ten obszar testu wtyczkę kontroli źródła obejmuje edycji i cofanie elementy z magazynu wersji za pomocą **Wyewidencjonuj** i **Cofnij wyewidencjonowanie** poleceń.  

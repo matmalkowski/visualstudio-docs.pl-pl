@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132198"
 ---
 # <a name="project-configuration-for-output"></a>Konfiguracja projektu dla danych wyjściowych
 Co konfiguracja może obsługiwać zestaw procesów kompilacji, które wywołują elementów wyjściowych, takich jak pliki wykonywalne lub zasobu. Te elementy dane wyjściowe są prywatne dla użytkownika i można umieścić w grupach, które łącze powiązanych typów danych wyjściowych, takich jak pliki wykonywalne (.exe, dll, .lib) i pliki źródłowe (.idl, pliki .h).  

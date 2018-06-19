@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262234"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Widok drzewa wywołań - dane Instrumentacji
 Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpienia funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpień funkcji łączny całkowity czas, który upłynął, wszystkich funkcji w przebiegu profilowania.  

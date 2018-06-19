@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447196"
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdź kodu za pomocą polecenia przejdź do
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141516"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Zakończenie programu Word w starsza wersja usługi języka
 Uzupełnianie Word wypełnia brakujących znaków na częściowo typu wyrazu. Jeśli istnieje tylko jeden ukończenia możliwe, wyraz zostało zakończone, po wprowadzeniu znak zakończenia. Jeśli częściowe word odpowiada więcej niż jedną z możliwości, jest wyświetlona lista możliwe uzupełnienia. Znak zakończenia może być dowolny znak, który nie jest używany dla identyfikatorów.  

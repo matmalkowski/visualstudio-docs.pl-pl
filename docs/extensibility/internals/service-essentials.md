@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132658"
 ---
 # <a name="service-essentials"></a>Usługa Essentials
 Usługa jest Umowa między dwoma VSPackages. Jeden pakiet VSPackage zawiera określony zbiór interfejsów dla innego pakiet VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest to zbiór VSPackages udostępniająca usługi inne pakiety VSPackage.  

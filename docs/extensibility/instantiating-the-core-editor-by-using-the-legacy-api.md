@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132341"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Tworzenie wystąpień Edytor Core przy użyciu interfejsu API starsza wersja
 Edytor jest odpowiedzialny za funkcji, takich jak wstawianie, usuwanie, kopiowanie i wklejanie edycji tekstu. Te funkcje łączy z udostępnianych przez usługi języka, takie jak tekstu kolorowania, wcięcia i uzupełniania IntelliSense.  

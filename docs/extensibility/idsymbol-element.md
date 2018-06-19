@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127529"
 ---
 # <a name="idsymbol-element"></a>IDSymbol Element
 `IDSymbol` Element zawiera identyfikator pary GUID:ID, który reprezentuje menu, grupy lub polecenie. Identyfikator GUID pochodzi z obiektu nadrzędnego `GuidSymbol` elementu. `IDSymbol` Element ma `name` atrybut, który udostępnia przyjazną nazwę dla Identyfikatora, który jest zawarty w `value` atrybutu.  

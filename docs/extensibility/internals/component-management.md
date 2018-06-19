@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129539"
 ---
 # <a name="component-management"></a>Składnik zarządzania
 Jednostki zadań w Instalatorze systemu Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każda usługa WIC to podstawowa jednostka instalacji i zliczanie dla ustawień używające Instalatora Windows.  

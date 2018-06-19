@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447248"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Udziel zaufania do rozwiązań pakietu Office
   Zaufanie GRANT oznacza rozwiązań pakietu Office modyfikowanie zasad zabezpieczeń każdego komputera docelowego zaufania zestawu rozwiązania, manifest aplikacji i manifest wdrażania oraz dokumentu. Zaufania może zostać przydzielony do rozwiązania pakietu Office przez użytkownika lub użytkownika końcowego.  

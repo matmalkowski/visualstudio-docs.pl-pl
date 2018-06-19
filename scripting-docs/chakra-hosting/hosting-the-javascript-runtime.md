@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789268"
 ---
 # <a name="hosting-the-javascript-runtime"></a>Hostowanie środowiska uruchomieniowego JavaScript
 Interfejsy API środowiska wykonawczego języka JavaScript (JsRT) zapewniają sposób pulpitu, Sklep Windows i aplikacji po stronie serwera działa w systemie operacyjnym Windows umożliwiające dodanie funkcji obsługi skryptów do aplikacji przy użyciu aparatu Chakra JavaScript opartych na standardach jest również użyte przez Microsoft Edge i przeglądarki Internet Explorer. Te interfejsy API są dostępne na systemu Windows 10 i dowolna wersja systemu operacyjnego ma Internet Explorer w wersji 11.0 zainstalowane na tym komputerze. Aby uzyskać więcej informacji, zobacz [odwołanie (środowisko uruchomieniowe JavaScript)](../chakra-hosting/reference-javascript-runtime.md). Aby uzyskać informacje na temat używania JsRT w aplikacjach w Sklepie Windows, zobacz [JsRT i platformy uniwersalnej systemu Windows](#Windows).  

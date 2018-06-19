@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921872"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Porady: Zmienianie zwracanego typu metody DataContext (Projektanta obiektów relacyjnych)
 Zwracany typ <xref:System.Data.Linq.DataContext> — metoda (utworzone na podstawie procedury składowanej lub funkcji) różni się w zależności od tego, gdzie porzucić procedury składowanej lub funkcji w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Jeśli musisz porzucić elementu bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> metodę, która ma zwracany typ klasy jednostka jest tworzony (Jeśli schemat danych zwróconych przez procedura składowana lub funkcja odpowiada kształtu klasy jednostka). Jeśli element jest upuścić nad pustym obszarem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> metodę zwracającą automatycznie wygenerowany typ jest tworzony. Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu do okienka metody. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typu zwracanego** właściwości w **właściwości** okna.

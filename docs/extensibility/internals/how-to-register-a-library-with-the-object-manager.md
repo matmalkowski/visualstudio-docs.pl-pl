@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132998"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Porady: rejestrowanie biblioteki z Menedżera obiektów
 Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki Znajdź Symbol**, umożliwiają wyświetlanie symbole w projekcie lub składników zewnętrznych. Symbole obejmują obszary nazw, klasy, interfejsy, metody i inne elementy języka. Biblioteki śledzenie tych symboli i ujawniać je, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów, które wypełnia narzędzia z danymi.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131275"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i waluty w środowisku IDE
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) przechowuje informacje dotyczące użytkowników aktualnie wybranych obiektów za pomocą wyboru *kontekstu*. Kontekst zaznaczenia VSPackages mogą brać udział w walucie śledzenia na dwa sposoby:  

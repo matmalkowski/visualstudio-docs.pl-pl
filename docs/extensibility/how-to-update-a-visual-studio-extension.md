@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134685"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Porady: aktualizowanie rozszerzenie programu Visual Studio
 Można zaktualizować rozszerzenia programu Visual Studio na komputerze przy użyciu **rozszerzenia i aktualizacje** Aby zainstalować zaktualizowaną wersję. Jeśli tworzysz zaktualizowaną wersję rozszerzenia, oznaczyć go jako zaktualizowany przez zwiększenie numeru wersji w manifeście VSIX.  

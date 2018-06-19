@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133364"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Projektowanie tabeli polecenia XML (. Pliki Vsct)
 Plik XML polecenia tabeli (vsct) opisano układ i wygląd elementów polecenia pakiet VSPackage. Polecenie elementy obejmują przyciski, pola kombi, menu, paski narzędzi i grupy elementów polecenia. W tym temacie opisano XML pliki tabeli poleceń, ich wpływ na elementy poleceń i menu oraz sposób ich tworzenia.

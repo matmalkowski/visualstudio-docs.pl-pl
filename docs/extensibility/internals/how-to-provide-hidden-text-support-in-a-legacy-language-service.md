@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132645"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Porady: zapewniają obsługę tekstu ukrytego w starsza wersja usługi języka
 Można utworzyć regiony tekstu ukrytego oprócz konspektu regionów. Regiony tekstu ukrytego mogą być kontrolowane przez klienta lub kontrolowanych przez Edytor i są używane do ukrywania całkowicie obszaru tekstu. Edytor wyświetla ukryte regionu jako poziome linie. Na przykład jest widok tylko skrypt w edytorze HTML.  

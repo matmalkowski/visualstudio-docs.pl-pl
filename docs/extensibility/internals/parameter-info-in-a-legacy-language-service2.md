@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134610"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starsza wersja usługi języka
 Informacje o parametrach funkcji IntelliSense jest znak (zazwyczaj nawias otwierający) na liście parametrów metody początkowy etykietka narzędzia wyświetlana podpis metody, gdy użytkownik wpisze listy parametrów. Każdy parametr jest wprowadzana i wpisano parametr separatora (zazwyczaj przecinkami), element tooltip jest aktualizowana w celu wyświetlenia następny parametr pogrubione.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131616"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sekwencja inicjowania podtypów projektu
 Środowisko tworzy projekt wywołując projektu Podstawowa implementacja fabryki <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Konstrukcja podtypu projektu rozpoczyna się, gdy środowisko określa, czy listy identyfikatorów GUID typu projektu dla rozszerzenia pliku projektu nie jest pusta. Rozszerzenie pliku projektu i identyfikator GUID projektu Określ, czy projekt jest [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] typu projektu. Na przykład rozszerzenie vbproj i {F184B08F-C81C-45F6-A57F-5ABD9991F28F} zidentyfikować [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu.

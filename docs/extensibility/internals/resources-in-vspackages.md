@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130956"
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w VSPackages
 Zlokalizowane zasoby można osadzić w natywnej satelitarnej biblioteki DLL interfejsu użytkownika, zarządzanych satelitarnej biblioteki dll, lub zarządzanych pakiet VSPackage sam.  

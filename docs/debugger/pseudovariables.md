@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926839"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables w debugerze programu Visual Studio
 Pseudovariables są warunki, używany do wyświetlania pewne informacje w oknie zmiennej lub **QuickWatch** okno dialogowe. Możesz wprowadzić pseudovariable w taki sam sposób jak wprowadzasz normalnym zmiennej. Pseudovariables zmienne nie są jednak i nazwy zmiennych w programie nie są zgodne.  

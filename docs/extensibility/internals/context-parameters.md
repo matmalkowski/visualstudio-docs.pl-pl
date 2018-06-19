@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132107"
 ---
 # <a name="context-parameters"></a>Parametry kontekstu
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE), możesz dodać kreatorów, aby **nowy projekt**, **Dodaj nowy element**, lub **dodać projektu podrzędnego** okien dialogowych. Dodano kreatorzy są dostępne na **pliku** menu lub klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**. IDE przekazuje parametrów kontekstu do wykonania kreatora. Parametrów kontekstu Zdefiniuj stan projektu, gdy IDE wywołuje kreatora.  

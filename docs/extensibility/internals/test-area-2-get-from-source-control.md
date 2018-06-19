@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133248"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Obszar Test 2: Uzyskaj z kontroli źródła
 Obszar ten test obejmuje przypadków testowych do pobierania elementów z magazynu wersji za pomocą polecenia Get. Te przypadki testowe można zastosować do lokalnego i projekty sieci Web.  

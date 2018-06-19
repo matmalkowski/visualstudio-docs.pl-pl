@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135371"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów
 Narzędzia przeglądanie symbol **widoku klasy**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki Znajdź Symbol**, żądania dla nowych danych do przekazania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżera obiektów znajduje odpowiednich bibliotek i żąda nowej listy symboli. Biblioteki odpowiedzieć w żądane dane do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu w celu uzyskania danych i używa go do wypełnienia lub zaktualizuj widoki narzędzia przeglądanie symbolu.  

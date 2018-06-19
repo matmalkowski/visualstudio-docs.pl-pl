@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132261"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Konfiguracja projektu do zarządzania wdrożenia
 Wdrożenie jest czynnością fizycznie przeniesienie elementów dane wyjściowe z procesu kompilacji do oczekiwanej lokalizacji do debugowania i instalacji. Na przykład aplikacji sieci Web może być oparty na komputerze lokalnym i następnie umieszczone na serwerze.  

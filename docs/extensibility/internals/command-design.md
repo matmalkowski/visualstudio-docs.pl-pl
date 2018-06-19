@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132178"
 ---
 # <a name="command-design"></a>Polecenie projektu
 Dodając polecenie do pakiet VSPackage, należy określić, którym jest wyświetlany, jeśli jest dostępny i jak ma być obsługiwane.  

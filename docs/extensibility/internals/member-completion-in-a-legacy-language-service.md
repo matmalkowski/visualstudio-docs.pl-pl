@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134035"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Element członkowski uzupełniania w starsza wersja usługi języka
 IntelliSense zakończenia elementu członkowskiego jest etykietka narzędzia, która wyświetla listę możliwych elementów członkowskich z określonego zakresu, takich jak klasy, struktury, wyliczenia lub przestrzeni nazw. Na przykład w języku C#, jeśli użytkownik wpisze "to" następuje okres, listę wszystkich elementów członkowskich klasy lub struktury w bieżącym zakresie jest podana w listę, z którego użytkownik może wybrać.  

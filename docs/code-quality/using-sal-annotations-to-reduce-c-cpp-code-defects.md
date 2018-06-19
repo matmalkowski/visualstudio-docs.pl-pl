@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921714"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą adnotacji kodu źródłowego, możesz wprowadzić zamiar za kodu jawnego. Adnotacje również włączyć funkcję automatycznej analizy statycznej narzędzia do analizy kodu dokładniej ze znacznie mniejszą liczbę fałszywych alarmów i fałszywych wyników negatywnych.

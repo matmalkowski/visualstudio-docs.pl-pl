@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131652"
 ---
 # <a name="solutions-overview"></a>Omówienie rozwiązania
 Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projekt i stan informacje dotyczące rozwiązania są przechowywane w dwóch plikach inne rozwiązanie. Plik rozwiązania (sln) jest tekstowy umieszczony pod kontrolą kodu źródłowego i udostępniana między użytkownikami i. Plik rozwiązania użytkownika opcji (.suo) jest plikiem binarnym. W związku z tym plik .suo — nie można umieścić pod kontrolą kodu źródłowego i zawiera informacje specyficzne dla użytkownika.  

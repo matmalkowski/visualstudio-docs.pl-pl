@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130605"
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
 Po dodaniu nowego typu projektu można zarządzać otwieranie i zapisywanie plików projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). W poniższych tematach opisano różne podejścia do otwierania i zapisywania plików.  

@@ -4,14 +4,16 @@ author: jasongroce
 ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: "Dokumentacja rozszerzalności programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Więcej informacji na temat rozszerzeń programu Visual Studio."
-ms.workload: apexprodleads
+title: Dokumentacja rozszerzalności programu Visual Studio | Dokumentacja firmy Microsoft
+description: Więcej informacji na temat rozszerzeń programu Visual Studio.
+ms.workload:
+- apexprodleads
 ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/22/2017
+ms.locfileid: "27246550"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentacja rozszerzalności programu Visual Studio
 

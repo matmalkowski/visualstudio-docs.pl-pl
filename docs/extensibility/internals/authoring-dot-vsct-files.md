@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134776"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 Ten dokument przedstawia sposób tworzenia pliku vsct, aby dodać elementy menu, paski narzędzi i inne elementy interfejsu użytkownika do programu Visual Studio zintegrowane środowisko programistyczne (IDE). Po dodaniu elementów interfejsu użytkownika do pakietu Visual Studio (pakiet VSPackage), który nie ma jeszcze pliku vsct, wykonaj następujące kroki.  

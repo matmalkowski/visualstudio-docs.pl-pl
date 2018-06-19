@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127751"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Dodawanie katalogów do dodania okno dialogowe Nowy element
 Poniższy przykład kodu pokazuje, jak zarejestrować nowy zestaw katalogów **Dodaj nowy element** okno dialogowe. Katalogi do **Dodaj nowy element** okno dialogowe są różne dla każdego projektu. W związku z tym katalogi są rejestrowane w podkluczu projektów znalezione w \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

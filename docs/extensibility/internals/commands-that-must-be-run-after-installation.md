@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132342"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia uruchamiane po instalacji
 Jeśli rozszerzenie zostanie wdrożony przy użyciu pliku msi, musisz uruchomić `devenv /setup` jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.  

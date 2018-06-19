@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902275"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
 Można użyć zestawu skupić się na ułatwiając kodu zrozumieniu i użytkowaniu reguł podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft. Należy uwzględnić tej reguły, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymuszać najlepsze rozwiązania dotyczące kodu, który jest łatwe w konserwacji.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129121"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywaniu polecenia usługi języka starsza wersja
 Z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], może mieć polecenia intercept usługi języka, które widoku tekstu może obsłużyć w inny sposób. Pozwala to na zachowanie specyficzne dla języka, które nie zarządza widoku tekstu. Można przechwycić tych poleceń, dodając co najmniej jeden filtr polecenia do widoku tekstu z usługi języka.  

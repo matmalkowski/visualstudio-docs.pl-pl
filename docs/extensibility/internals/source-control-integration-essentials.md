@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132037"
 ---
 # <a name="source-control-integration-essentials"></a>Essentials integracji kontroli źródła
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy integracji kontroli źródła: wtyczka do kontroli źródła zapewnia podstawowe funkcje, który jest utworzony przy użyciu API dodatku typu Plug-in kontroli źródła (znanego wcześniej jako interfejs API MSSCCI) i rozwiązania integracji kontroli źródła na podstawie pakiet VSPackage który zapewnia bardziej niezawodne funkcje.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126493"
 ---
 # <a name="extensibility-in-visual-studio"></a>Rozszerzalność w programie Visual Studio
 Visual Studio zapewnia wiele opcji rozszerzalności. Można tworzyć własne zestawy SDK, skorzystaj z systemu Windows, Windows Phone i zestawy SDK platformy Azure, (który jest instalowany jako część programu Visual Studio) i rozszerzenia programu Visual Studio, sam.  
