@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031351"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 

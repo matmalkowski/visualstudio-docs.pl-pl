@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965614"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania są zawarte w elementów docelowych. Biblioteka typowych zadań jest dołączana do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], i można również tworzyć własne zadania. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  

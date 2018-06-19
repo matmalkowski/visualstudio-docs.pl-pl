@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965982"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Ta sekcja ma o tym, jak skonfigurować i dostosować rozwiązania.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974685"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Okno dialogowe Ustawianie reguły wybierz (starsze)
 

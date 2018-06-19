@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967237"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
 Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicji jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodać elementy do Twojej domeny modelu i definiowanie relacji na diagramie i możesz zmodyfikować układ diagramu, aby był bardziej czytelny.

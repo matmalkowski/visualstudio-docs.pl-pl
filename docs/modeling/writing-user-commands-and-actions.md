@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965180"
 ---
 # <a name="writing-user-commands-and-actions"></a>Pisanie poleceń i akcji użytkownika
 Dodawanie poleceń do diagramu i odpowiedzi na gesty, takich jak przeciągania i upuszczania, kliknij przycisk, a następnie kliknij dwukrotnie zdarzenia można dostosować języka specyficznego dla domeny.

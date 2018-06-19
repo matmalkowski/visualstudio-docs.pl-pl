@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954232"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia określenia niestandardowego schematu czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, klikając **narzędzia / Opcje**, a następnie wybierając **środowiska / czcionki i kolory**. Jeśli ta strona nie ma na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
