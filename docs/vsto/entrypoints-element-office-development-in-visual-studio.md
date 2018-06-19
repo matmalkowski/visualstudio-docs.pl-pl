@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448392"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;punkty wejścia&gt; elementu (Office development w Visual Studio)
   `entryPoints` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoint` elementy skojarzone z rozwiązania do pakietu Office.  

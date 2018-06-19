@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957135"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio subskrypcje w chmurze rozliczeń — często zadawane pytania
 Upewnij się, że [porównać zalety subskrypcji chmury i cenach](https://www.visualstudio.com/vs/pricing/) korzyści każdego Visual Studio subskrypcji z porównania między chmurą i standardowe subskrypcji programu Visual Studio, uzyskać szczegółowe informacje na korzyści dla subskrybentów itd.

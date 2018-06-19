@@ -1,16 +1,16 @@
 ---
 title: Interfejs IDebugHelper | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugHelper interface
 ms.assetid: ef5691e0-1d82-42c2-997c-888e31c478dd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24794347"
 ---
 # <a name="idebughelper-interface"></a>Interfejs IDebugHelper
 Służy jako fabryki dla obiekt przeglądarki i punkty połączenia proste. Menedżer debugowania procesu (PDM) implementuje ten interfejs, który jest używany przez aparaty skryptów.  

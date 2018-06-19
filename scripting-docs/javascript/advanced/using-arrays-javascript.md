@@ -1,12 +1,13 @@
 ---
-title: "Używanie tablic (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Używanie tablic (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788788"
 ---
 # <a name="using-arrays-javascript"></a>Używanie tablic (JavaScript)
 Stałych w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] są *rozrzedzonych*. Oznacza to jeśli tablica nie zawierająca trzy elementy, które są numerowane 0, 1 i 2, nie martwiąc się o elementach 3 – 49 można utworzyć elementu 50. Jeśli tablica zmiennej długości automatyczne (zobacz [obiekty wewnętrzne](../../javascript/intrinsic-objects-javascript.md) wyjaśnienie automatyczne monitorowanie długość tablicy), zmiennej długości jest ustawiony na 51, a nie do 4. Można utworzyć tablic, w których są nie przerw w numeracji elementów, ale nie jest wymagane, aby to zrobić.  

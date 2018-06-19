@@ -1,13 +1,13 @@
 ---
 title: Informacje o wersji JavaScript | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, version information
 ms.assetid: 440f4924-f7a9-48e0-873e-bd599a93b437
-caps.latest.revision: 
+caps.latest.revision: 93
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753500"
 ---
 # <a name="javascript-version-information"></a>Informacje o wersji JavaScript
 Różne wersje języka JavaScript obsługują różne zbiory jego elementów. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikacje obsługują nieco inny zestaw funkcji w programie Internet Explorer.  

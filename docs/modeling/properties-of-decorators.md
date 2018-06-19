@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954215"
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być wyświetlane na kształtów lub łączników na diagramie. W poniższej tabeli przedstawiono trzy rodzaje dekoratora właściwości. Niektóre właściwości są wyświetlane tylko na elementy kształtu decorator lub tylko dla elementów decorator łącznika.

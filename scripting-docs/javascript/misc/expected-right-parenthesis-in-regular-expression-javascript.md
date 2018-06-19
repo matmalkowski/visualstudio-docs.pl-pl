@@ -1,13 +1,13 @@
 ---
-title: "Oczekiwano &#39;) &#39; w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Oczekiwano &#39;) &#39; w wyrażeniu regularnym (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789028"
 ---
 # <a name="expected-3939-in-regular-expression-javascript"></a>Oczekiwano &#39;) &#39; w wyrażeniu regularnym (JavaScript)
 Podjęto próbę utworzenia wyrażenia regularnego przechwytywania, potwierdzenia lub grupy, ale nie zawiera nawiasem zamykającym. Nawiasy ma kilka celów w wyrażeniach regularnych. Przede wszystkim, są one używane do przechwytywania wyrażeń podrzędnych, aby określić potwierdzeń lub aby zgrupować wzorców, tak aby elementy mogą być traktowane jako pojedyncza jednostka przez *, +,?, i tak dalej.  

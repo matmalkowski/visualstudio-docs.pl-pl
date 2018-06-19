@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064522"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Krok 4: Dodawanie metody CheckTheAnswer()
 W czwartym części tego samouczka przedstawiono tworzenie metody, `CheckTheAnswer()`, który określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią samouczek serii o podstawowych pojęciach kodowania. Omówienie samouczka, zobacz [samouczek 2: tworzenie kwizu matematycznego](../ide/tutorial-2-create-a-timed-math-quiz.md).  
