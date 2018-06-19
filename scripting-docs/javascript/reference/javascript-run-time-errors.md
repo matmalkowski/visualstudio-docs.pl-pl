@@ -1,12 +1,13 @@
 ---
-title: "Błędy środowiska wykonawczego języka JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Błędy środowiska wykonawczego języka JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT-32725
@@ -38,7 +39,7 @@ helpviewer_keywords:
 - errors [JavaScript]
 - run-time errors, JavaScript
 ms.assetid: c111469d-8f31-4bde-9d46-16d58775db7d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -47,6 +48,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791752"
 ---
 # <a name="javascript-run-time-errors"></a>Błędy środowiska wykonawczego JavaScript
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]błędy środowiska wykonawczego są błędów występujących, gdy skrypt próbuje wykonać akcję system nie może wykonać. Gdy wyrażeniach zmiennych są oceniane i jest przydzielana pamięć mogą zostać wyświetlone błędy czasu wykonywania.  

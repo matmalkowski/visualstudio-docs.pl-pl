@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921448"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Oddzielne zestawy danych i TableAdapters do różnych projektów
 Typizowane zbiory danych zostały rozszerzone, aby [TableAdapters](create-and-configure-tableadapters.md) i klasy zestawu danych mogą być generowane w oddzielnych projekty. Dzięki temu można szybko oddzielne warstwy aplikacji i generowanie aplikacji warstwowych.

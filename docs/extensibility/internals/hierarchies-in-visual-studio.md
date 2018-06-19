@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129925"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie w programie Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) Wyświetla projektu jako *hierarchii*. W środowisku IDE programu hierarchii jest drzewo węzłów, gdzie każdy węzeł ma zestaw właściwości. A *projektu hierarchii* jest kontenerem, który zawiera elementy projektu, relacje elementów członkowskich i elementów powiązanych właściwości i poleceń.  

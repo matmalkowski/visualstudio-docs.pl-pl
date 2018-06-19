@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129196"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Wprowadzenie do szablonu projektu VSIX
 Można użyć szablonu projektu VSIX, można utworzyć rozszerzenia lub istniejące rozszerzenie dla wdrożenia pakietu. Szablon projektu VSIX wersji zarówno Visual Basic i Visual C# i jest instalowany jako część programu Visual Studio SDK.  
@@ -35,7 +36,7 @@ Można użyć szablonu projektu VSIX, można utworzyć rozszerzenia lub istniej�
   
     2.  Na **projektu** menu, kliknij przycisk **Eksportuj szablon**. Wykonaj kroki kreatora.  
   
-         Plik zip jest tworzony w %USERPROFILE%\My Documents\Visual Studio  *\<wersji >*\My wyeksportowane szablony\\.  
+         Plik zip jest tworzony w %USERPROFILE%\My Documents\Visual Studio  *\<wersji >* \My wyeksportowane szablony\\.  
   
 2.  Utwórz pusty projekt VSIX.  
   

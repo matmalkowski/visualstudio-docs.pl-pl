@@ -1,14 +1,14 @@
 ---
-title: "Interfejsy skryptów systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Interfejsy skryptów systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24796498"
 ---
 # <a name="windows-script-interfaces"></a>Interfejsy skryptów systemu Windows
 Interfejsy skryptów systemu Windows firmy Microsoft zapewnia możliwości aplikacji, aby dodać skryptów i automatyzacji OLE. Wykonywanie skryptów hosty, które zależą od skryptów systemu Windows umożliwia aparatów skryptów z wielu źródeł i dostawców Zarządzanie skryptów między składnikami. Implementacja sam skrypt — języka, składni, trwałym formacie, model wykonania itd. — pozostało do dostawcy skryptu.  

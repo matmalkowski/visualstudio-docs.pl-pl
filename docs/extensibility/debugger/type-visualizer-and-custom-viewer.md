@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126913"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typ wizualizatora i podglądu niestandardowego
 Wizualizator typu jest składnik, który wyświetla element danych bardzo określonego formatu. Ten format jest całkowicie zależy implementujący wizualizatora, użytkownik końcowy i innych firm dostawcą wizualizatorów.  

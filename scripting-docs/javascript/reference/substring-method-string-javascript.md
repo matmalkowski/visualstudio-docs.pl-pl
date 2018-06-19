@@ -1,13 +1,13 @@
 ---
-title: "substring — metoda (ciąg) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: substring — metoda (ciąg) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791791"
 ---
 # <a name="substring-method-string-javascript"></a>substring — Metoda (Ciąg) (JavaScript)
 Zwraca podciąg w określonej lokalizacji w ramach `String` obiektu.  
@@ -52,7 +53,7 @@ Zwraca podciąg w określonej lokalizacji w ramach `String` obiektu.
 ## <a name="remarks"></a>Uwagi  
  `substring` Metoda zwraca ciąg zawierający podciąg `start` do, z wyłączeniem `end`.  
   
- **Podciąg** metoda używa niższe wartości `start` i `end` jako punkt początkowy podciągu. Na przykład strvar.substring (0, 3**)** i tego samego podciąg zwracać strvar.substring (3, 0).  
+ **Podciąg** metoda używa niższe wartości `start` i `end` jako punkt początkowy podciągu. Na przykład strvar.substring (0, 3 **)** i tego samego podciąg zwracać strvar.substring (3, 0).  
   
  Jeśli dowolny `start` lub `end` jest `NaN` lub ujemne, zostanie zastąpiony wartością zero.  
   

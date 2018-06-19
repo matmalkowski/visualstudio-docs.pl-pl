@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128177"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
 `SccStatus` Modułu wyliczającego zawiera nazwanych wartości stałej, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używany przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcja wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) szczegółowe informacje).  

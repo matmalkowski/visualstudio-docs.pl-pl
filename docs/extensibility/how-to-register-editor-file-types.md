@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129173"
 ---
 # <a name="how-to-register-editor-file-types"></a>Porady: Rejestrowanie typów plików edytora
 Najprostszym sposobem zarejestrować Edytor typów plików jest za pomocą atrybutów rejestracji w ramach [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] zarządzanych klas framework (MPF) pakietu. W przypadku wdrażania pakietu w trybie macierzystym [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], można również napisać skrypt rejestru, który rejestruje w edytorze i skojarzonych rozszerzeń.

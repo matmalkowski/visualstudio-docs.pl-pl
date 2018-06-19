@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127073"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozszerzalność debugera programu Visual Studio
 Visual Studio zawiera debugera kodu źródłowego całkowicie interakcyjny, udostępnieniem wydajny i łatwy w użyciu narzędzia śledzeniu usterki w programie. Debuger ma pełnej obsługi języka Visual Basic, C#, C/C++ i JavaScript. Jednak w przypadku [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], która jest dostępna z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), innych języków programowania, może być obsługiwany w debugerze przy użyciu tej samej funkcji zaawansowanych.  

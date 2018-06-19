@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127506"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Pobieranie informacji o usłudze z ustawień magazynu
 Aby odnaleźć wszystkie dostępne usługi lub w celu ustalenia, czy określona usługa jest zainstalowana, można użyć magazyn ustawień. Należy znać typu klasy usługi.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127047"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Porady: wyzwalać zdarzeń, gdy Edytor traci fokus
 Czasami zachodzi konieczność wiedzieć, kiedy edytora traci fokus na ramki okna. Na przykład może być konieczne pobierania kodu z okna Kod po edytor nie ma już fokusu w nim. Poniższa procedura zawiera kroki, które należy wykonać, aby otrzymać powiadomienie o Edytorze utraci fokus.  

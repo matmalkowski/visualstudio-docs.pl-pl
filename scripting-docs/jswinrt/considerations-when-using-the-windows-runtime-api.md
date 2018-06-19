@@ -1,18 +1,18 @@
 ---
-title: "Uwagi dotyczące korzystania z interfejsu API środowiska wykonawczego systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uwagi dotyczące korzystania z interfejsu API środowiska wykonawczego systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime API
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792115"
 ---
 # <a name="considerations-when-using-the-windows-runtime-api"></a>Uwagi dotyczące korzystania z interfejsu API środowiska wykonawczego systemu Windows
 Można użyć niemal każdego elementu interfejsu API środowiska wykonawczego systemu Windows w języku JavaScript. Istnieją jednak niektóre aspekty JavaScript reprezentację elementów środowiska wykonawczego systemu Windows, które należy mieć na uwadze.  

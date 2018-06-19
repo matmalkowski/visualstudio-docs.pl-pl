@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126632"
 ---
 # <a name="editor-and-language-service-extensions"></a>Edytora i rozszerzenia usługi języka
 Można rozszerzyć większość funkcji edytora kodu programu Visual Studio. Edytor jest oparta na systemie Windows Presentation Foundation (WPF) i jest zapisywany w kodzie zarządzanym. Mimo że ten projekt różni się od projektów we wcześniejszych wersjach programu Visual Studio, zawiera większość tej samej funkcji. Do rozszerzania edytora, użyj Framework Managed Extensibility (MEF).  

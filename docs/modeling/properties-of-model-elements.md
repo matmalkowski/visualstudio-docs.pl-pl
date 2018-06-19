@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947719"
 ---
 # <a name="properties-of-model-elements"></a>Właściwości elementów modelu
 Ta sekcja zawiera listę właściwości, które są wyświetlane w oknie właściwości po wybraniu elementu na diagramie definicji DSL lub w Eksploratorze DSL.

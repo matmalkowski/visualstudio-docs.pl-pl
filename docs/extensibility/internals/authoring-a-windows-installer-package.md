@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127939"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Tworzenie pakietu Instalatora Windows
 Dane dysków modelu Instalatora Windows. Zamiast pisania procedurach skryptu do kopiowania plików i zapisywanie wpisów rejestru, na przykład można tworzyć wierszy i kolumn w tabelach bazy danych, które zawierają dane plików i rejestru.  

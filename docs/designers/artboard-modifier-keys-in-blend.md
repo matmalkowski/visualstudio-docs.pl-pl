@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923100"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar roboczy w programie Blend
 Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie można użyć [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika, aby wykrywać je. Poniższa tabela zawiera listę skrótów, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920657"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Zestaw reguł globalizacji dla zarządzanego kodu
 Można użyć programu Microsoft globalizacji zestaw reguł skupić się na problemy, które mogą uniemożliwić danych w aplikacji poprawnie wyświetlany w różnych językach, ustawień regionalnych i kultur. Należy uwzględnić tej reguły, jeśli aplikacja jest zlokalizowana globalizowana, lub obie.

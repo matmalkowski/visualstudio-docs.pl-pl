@@ -1,13 +1,13 @@
 ---
-title: "toJSON — metoda (Data) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: toJSON — metoda (Data) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - toJSON method
 ms.assetid: f91df030-e9c9-425e-8e6d-b46bdda66cb6
-caps.latest.revision: 
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791899"
 ---
 # <a name="tojson-method-date-javascript"></a>toJSON — Metoda (Data) (JavaScript)
 Używane przez [JSON.stringify](../../javascript/reference/json-stringify-function-javascript.md) metodę umożliwiającą włączenie transformacja obiekt danych serializacji JavaScript Object Notation (JSON).  
