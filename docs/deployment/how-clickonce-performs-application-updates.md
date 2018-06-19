@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557700"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Jak technologia ClickOnce wykonuje aktualizacje aplikacji
 ClickOnce używa informacji o wersji pliku określona w manifeście wdrażania aplikacji, aby zdecydować, czy należy zaktualizować pliki aplikacji. Po rozpoczęciu aktualizacji ClickOnce stosowana jest metoda o nazwie *plik poprawki* Aby uniknąć nadmiarowe pobierania plików aplikacji.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474417"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Informacje o oknie rejestrów w programie Visual Studio
 **Rejestruje** okno jest dostępne tylko wtedy, gdy w włączone jest debugowanie poziomie adresu **opcje** okno dialogowe **debugowanie** węzła.  

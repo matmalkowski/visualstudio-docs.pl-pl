@@ -21,6 +21,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957830"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Porady: podział klas na klasy częściowe w Projektancie klas
 

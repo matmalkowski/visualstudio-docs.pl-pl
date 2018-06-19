@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563378"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Przykłady i wskazówki dotyczące wdrażania ClickOnce
 Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i wskazówki krok po kroku, ilustrujących składni, struktury i techniki wdrażania formularzy systemu Windows, WPF i aplikacji konsoli.  

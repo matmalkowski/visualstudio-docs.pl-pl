@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560898"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Wskazówki: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce za pomocą Projektanta
 Dla wielu kultur przy użyciu zestawów satelickich można skonfigurować aplikacji formularzy systemu Windows. A *zestawu satelickiego* jest zestawu zawierającego zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.  

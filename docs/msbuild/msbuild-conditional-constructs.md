@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569088"
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia mechanizm dla dowolnego / lub przetwarzania z [wybierz](../msbuild/choose-element-msbuild.md), [podczas](../msbuild/when-element-msbuild.md), i [w przeciwnym razie](../msbuild/otherwise-element-msbuild.md) elementów.  

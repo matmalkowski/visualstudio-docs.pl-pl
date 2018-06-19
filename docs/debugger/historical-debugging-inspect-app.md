@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476825"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Sprawdź aplikację z programem IntelliTrace historical debugowania w programie Visual Studio
 Można użyć [debugowania historycznego](../debugger/historical-debugging.md) do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jego stan.  

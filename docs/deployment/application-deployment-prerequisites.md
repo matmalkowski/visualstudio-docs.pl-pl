@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565695"
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 Aby upewnić się, że aplikacja będzie zainstalować i uruchomić pomyślnie, należy najpierw upewnić, że wszystkie składniki, od których zależy aplikacja są już zainstalowane na komputerze docelowym. Na przykład większość aplikacji utworzony za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależy od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; poprawną wersję środowiska CLR musi być obecny na komputerze docelowym, przed zainstalowaniem aplikacji.  

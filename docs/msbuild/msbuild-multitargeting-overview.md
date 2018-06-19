@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569173"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 Przy użyciu programu MSBuild, będzie można kompilować aplikacji do uruchomienia na jednym z kilku wersji programu .NET Framework i na jednym z kilku platform system. Na przykład można skompilować aplikację do uruchamiania na .NET Framework 2.0 na platformie 32-bitowe i skompilować tej samej aplikacji do uruchamiania na na 64-bitowej platformy .NET Framework 4.5.  
