@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Tworzenie dodatku dla przeglądarki wyników
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Używanie automatyzacji interfejsu użytkownika do testowania kodu
+- name: Automatyzacja testów interfejsu użytkownika
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika'
+    - name: 'Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Testowanie aplikacji platformy UWP systemu Windows za pomocą kodowanych testów interfejsu użytkownika
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Testowanie aplikacji platformy UWP i 8.1 Phone systemu Windows za pomocą kodowanych testów interfejsu użytkownika
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy UWP przeznaczonych do testowania
+    - name: Testowanie aplikacji platformy UWP za pomocą kodowanych testów interfejsu użytkownika
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy UWP
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
       href: creating-a-data-driven-coded-ui-test.md
-    - name: Wstrzymywanie kodowanych testów interfejsu użytkownika dla określonych zdarzeń podczas odtwarzania
+    - name: Oczekiwanie na określone zdarzenia podczas odtwarzania
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Korzystanie z różnych przeglądarek internetowych do przeprowadzania kodowanych testów interfejsu użytkownika
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
+    - name: Obsługiwane konfiguracje i platformy
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel
+    - name: Rozszerzanie struktury kodowanych testów interfejsu użytkownika
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Przykładowy dodatek Excel dla kodowanych testów UI
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Interfejs komunikatora programu Excel
-          href: sample-excel-communicator-interface.md
-        - name: Przykładowe rozszerzenie kodowanych testów UI dla programu Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Przykładowe rozszerzenie programu Excel: klasa ExtensionPackage'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Przykładowe rozszerzenie programu Excel: klasa TechnologyManager'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Przykładowe rozszerzenie programu Excel: klasa PropertyProvider'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Przykładowe rozszerzenie programu Excel: klasy elementów'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Przykładowe rozszerzenie programu Excel: klasa ActionFilter'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Zarządzanie laboratorium testowym
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

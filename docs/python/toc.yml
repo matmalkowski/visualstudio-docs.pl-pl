@@ -49,6 +49,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 — Korzystanie z szablonów projektów internetowych platformy Django dla ankiet
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: Nauka platformy Flask w programie Visual Studio
+      items:
+        - name: 1 — Tworzenie projektu i rozwiązania
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 — Tworzenie aplikacji platformy Flask
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 — Obsługa plików statycznych i dodawanie stron
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 — Korzystanie z szablonu projektów internetowych platformy Flask
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 — Korzystanie z szablonu projektów internetowych platformy Flask dla ankiet
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Pojęcia
   items:
     - name: Projekty Python
