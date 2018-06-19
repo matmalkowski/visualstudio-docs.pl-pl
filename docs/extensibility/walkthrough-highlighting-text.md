@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147222"
 ---
 # <a name="walkthrough-highlighting-text"></a>Wskazówki: Wyróżnianie tekstu
 Różne efekty można dodać do edytora, tworząc części Managed Extensibility Framework (MEF). W tym przewodniku przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli wyraz występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie zostanie wyróżniona.  

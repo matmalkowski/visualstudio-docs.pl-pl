@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195325"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Trwa konfigurowanie subskrypcji platformy Azure i testowania płatność za rzeczywiste użycie
 Współpraca z zespołem w chmurze.  Utwórz subskrypcje wielu deweloperów i płatność za rzeczywiste użycie testu Umożliwianie współpracy z innymi subskrybentami jednocześnie zapewnia izolację między zespołami i środowiskach.  Otrzymasz wyłącznego rabaty co godzinę do programowania i testowania i w chmurze prawa do używania oprogramowania subskrypcji na platformie Azure.

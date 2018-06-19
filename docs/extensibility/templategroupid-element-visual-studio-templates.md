@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144440"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID — Element (szablony Visual Studio)
 Określa, jaki rodzaj projektu szablonów elementów będą widoczne w. Ten element jest istotne, kiedy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) ma ustawioną wartość `false`. Gdy [ShowByDefault (szablony Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) ma ustawioną wartość `true`, szablon elementu jest dostępna we wszystkich typach projektu.  
@@ -58,7 +59,7 @@ Określa, jaki rodzaj projektu szablonów elementów będą widoczne w. Ten elem
 ## <a name="remarks"></a>Uwagi  
  `TemplateGroupID` jest elementem.  
   
- Wartość `TemplateGroupID` element jest używany wraz z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numer wersji >*\Projects\\) Szablony filtru, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
+ Wartość `TemplateGroupID` element jest używany wraz z rejestracji systemu projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numer wersji >* \Projects\\) Szablony filtru, które pojawiają się w **Dodaj nowy element** okno dialogowe.  
   
 |Visual C++ wartość|Znaczenie|  
 |------------------------|-------------|  

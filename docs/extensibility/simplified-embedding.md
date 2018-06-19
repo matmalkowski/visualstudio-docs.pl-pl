@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142935"
 ---
 # <a name="simplified-embedding"></a>Uproszczone osadzanie
 Osadzanie uproszczony jest włączona w edytorze, po jego obiekt widoku dokumentu jest elementem nadrzędnym (to znaczy dokonać elementu podrzędnego) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfejs jest implementowany jej okna poleceń. Uproszczony edytory osadzania nie może obsługiwać aktywny formant. Obiekty używane do tworzenia edytora z uproszczone osadzanie przedstawiono na poniższej ilustracji.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32065250"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8: Dostosowywanie kwizu
 W ostatniej części samouczka będziesz Poznaj sposoby Dostosowywanie kwizu i rozszerzają co już znasz. Na przykład zastanowić się, jak program tworzy losowe dzielenia problemów dla których odpowiedź nigdy nie jest ułamek. Aby dowiedzieć się więcej, należy włączyć `timeLabel` kontrolować różne kolory i przypisz przyjmującego kwizu wskazówkę.  

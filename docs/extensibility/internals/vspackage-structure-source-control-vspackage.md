@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142792"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (VSPackage kontroli źródła)
 Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia pakiet VSPackage, który umożliwia implementujący kontroli źródła zintegrować swoje funkcje kontroli źródła z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska. Pakiet VSPackage jest składnik modelu COM, który jest zwykle ładowane na żądanie przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) na podstawie usług, które są rozgłaszane przez pakiet w nim wpisów rejestru. Każdy pakiet VSPackage musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Pakiet VSPackage zwykle zużywa usług oferowanych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE i proffers niektóre usługi własnych.  

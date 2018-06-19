@@ -23,6 +23,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106950"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — Zadanie
 

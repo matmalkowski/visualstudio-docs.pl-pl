@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143455"
 ---
 # <a name="menu-element"></a>Menu Element
 Definiuje jeden element menu. Są to sześć menu: kontekstu, Menu MenuController, MenuControllerLatched, narzędzi i ToolWindowToolbar.  

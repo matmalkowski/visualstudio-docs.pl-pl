@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458180"
 ---
 # <a name="com-server-and-container-debugging"></a>Debugowanie kontenera i serwera COM
 Aplikacje COM wykonać szereg zadań poza programisty bezpośrednią kontrolę. Komunikacja między bibliotek DLL, użycie Zlicza na obiektach, a operacje schowka przedstawiono kilka obszarów, w którym mogą wystąpić nieoczekiwane zachowanie. W takim przypadku pierwszym krokiem jest śledzenie źródła problemu.  

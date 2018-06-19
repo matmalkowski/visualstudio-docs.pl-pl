@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974594"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Porady: Tworzenie biblioteki projektanta działań
 Projektantów działań niestandardowych umożliwiają tworzenie interfejsu użytkownika dla standardowej lub działania niestandardowego. Kontrolowanie złożoności interfejsu użytkownika i mieć możliwość tworzenia więcej niż jeden Projektant działań dla działania. W tym scenariuszu pozwala utworzyć Designer, które są dostosowane do wielu odbiorców.

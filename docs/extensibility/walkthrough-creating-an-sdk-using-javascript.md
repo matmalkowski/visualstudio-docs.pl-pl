@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144219"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Wskazówki: Tworzenie SDK przy użyciu języka JavaScript
 Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visual Studio rozszerzenia (VSIX) przy użyciu języka JavaScript.  Instruktaż jest podzielona na następujące elementy:  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146822"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Za pomocą programu Visual Studio zestawy międzyoperacyjne
 Visual Studio zestawy międzyoperacyjne Zezwalaj zarządzanym aplikacjom dostęp do interfejsów modelu COM, które zapewni możliwość rozszerzenia programu Visual Studio. Istnieją pewne różnice między proste interfejsy COM i ich wersje międzyoperacyjnego. Na przykład wyników HRESULT zazwyczaj są reprezentowane jako wartości int i muszą być obsługiwani w taki sam sposób jak wyjątki, a parametry (szczególnie parametrów out) są traktowane inaczej.  

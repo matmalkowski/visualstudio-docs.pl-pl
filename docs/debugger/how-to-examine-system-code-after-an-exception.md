@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472468"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Porady: badanie kodu systemu po wystąpieniu wyjątku
 Po wystąpieniu wyjątku, może być konieczne zbadanie kodu wewnątrz wywołania systemu, aby ustalić przyczynę tego wyjątku. W poniższej procedurze wyjaśniono, jak to zrobić, jeśli nie masz symbole załadowany na potrzeby kod systemu lub jeśli włączono opcję tylko mój kod.  

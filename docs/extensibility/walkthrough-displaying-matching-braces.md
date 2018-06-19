@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143322"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Wskazówki: Wyświetlanie pasujących nawiasów klamrowych
 Można zaimplementować opartych na języku funkcje, takie jak parowanie nawiasów klamrowych Definiowanie nawiasów klamrowych, które chcesz dopasować, a następnie dodaniu tekstu znacznika do pasujących nawiasów klamrowych podczas karetka znajduje się na jednym z nawiasy klamrowe. Można zdefiniować nawiasy klamrowe w kontekście języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i dotyczą tagi tylko tego typu lub tagów można zastosować do istniejącego typu zawartości (na przykład "tekst"). Poniższe wskazówki pokazano, jak zastosować parowanie nawiasów klamrowych znaczniki, aby typ zawartości "text".  

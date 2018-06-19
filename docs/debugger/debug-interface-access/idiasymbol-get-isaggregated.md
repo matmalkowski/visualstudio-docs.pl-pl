@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464706"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Pobiera flagę określającą, czy symbol danych jest częścią agregacji lub zbiór symbolami; kompilator będzie traktować zagregowane symboli jako osobne jednostki, ale naprawdę są częścią tego samego symbolu większy.  

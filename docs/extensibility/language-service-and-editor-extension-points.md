@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148601"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Usługa języka i punkty rozszerzenia Edytora
 Edytor umożliwia punktów rozszerzenia, które można rozszerzyć jako części Managed Extensibility Framework (MEF), w tym większości funkcji usługi języka. Są to kategorie punktu rozszerzenia główne:  

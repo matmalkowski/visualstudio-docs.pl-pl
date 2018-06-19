@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148249"
 ---
 # <a name="upgrading-projects"></a>Uaktualnianie projektów
 Zmiany modelu projektu z jednej wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do następnego może wymagać projektów i rozwiązań uaktualnienia, dzięki czemu mogą być uruchamiane na nowszą wersję. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Udostępnia interfejsy, które mogą służyć do implementowania obsługi uaktualniania do własnych projektów.  

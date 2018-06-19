@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457345"
 ---
 # <a name="debug-hook-function-writing"></a>Pisanie debugowanie funkcji punktów zaczepienia
 W tej sekcji opisano różne niestandardowych debugowania funkcji punktów zaczepienia, który może zapisać umożliwiające Wstaw kod w niektórych punktach wstępnie zdefiniowane wewnątrz normalnego przetwarzania debugera.  

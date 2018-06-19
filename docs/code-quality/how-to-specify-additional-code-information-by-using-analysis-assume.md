@@ -19,6 +19,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031530"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Porady: Określ informacji o dodatkowym kodzie za pomocą _Analysis_assume
 Musisz podać wskazówki narzędzie do analizy kodu dla kodu C/C++, który będzie pomocy procesu analizy i zmniejszyć ostrzeżenia. Aby podać dodatkowe informacje, należy użyć następującej funkcji:

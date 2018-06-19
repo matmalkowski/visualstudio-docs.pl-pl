@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457767"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Prawa autorskie dla Spy++ — Pomoc
 Informacje przedstawione w tym dokumencie jest mogą ulec zmianie bez uprzedzenia. Firmy, nazwy i dane używane w przykładach są fikcyjne. Nie części niniejszego dokumentu może odtworzyć lub przekazywać w jakimkolwiek formularzu pomocą jakichkolwiek metod elektronicznych lub mechanicznych, w jakimkolwiek celu, bez pisemnej zgody firmy Microsoft Corporation.  

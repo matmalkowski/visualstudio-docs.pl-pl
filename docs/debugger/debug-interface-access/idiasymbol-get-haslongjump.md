@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463910"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Pobiera flagę określającą, czy funkcja zawiera korzystanie z [longjmp](/cpp/c-runtime-library/reference/longjmp) polecenia (sparowany z [setjmp](/cpp/c-runtime-library/reference/setjmp) poleceń, tworzą one metody stylu języka C dla obsługi wyjątków).  

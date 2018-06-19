@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064051"
 ---
 # <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z wstawki kodu programu
 

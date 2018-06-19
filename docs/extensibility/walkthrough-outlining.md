@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143901"
 ---
 # <a name="walkthrough-outlining"></a>Wskazówki: Tworzenie konspektu
 Można zaimplementować opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwiń lub Zwiń. Regiony można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i dotyczą definicji region tylko tego typu lub definicje regionie można zastosować do istniejącego typu zawartości (na przykład "tekst"). W tym przewodniku pokazano, jak zdefiniować i wyświetlanie konspektu regionów.  

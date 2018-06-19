@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144372"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funkcje API wtyczkę kontroli źródła
 Interfejs API dodatku typu Plug-in kontroli źródła udostępnia następujące funkcje, które musi być implementowana przez wtyczki zgodnie z tego interfejsu API kontroli źródła. Podpisy każdej funkcji oraz semantykę skojarzone z flagi bitów i inne parametry zostały szczegółowo opisane w tym dokumencie.  
@@ -85,7 +86,7 @@ Interfejs API dodatku typu Plug-in kontroli źródła udostępnia następujące 
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: scc.h  
   
- (Podany w zestawie SDK środowiska common folderu, domyślnie zawiera *[dysk]*\Program Files\VSIP 8.0\EnvSDK\common\inc; dostarczyć także w folderze VSIP próbki MSSCCI *[dysk]*\Program Files\VSIP 8.0\MSSCCI).  
+ (Podany w zestawie SDK środowiska common folderu, domyślnie zawiera *[dysk]* \Program Files\VSIP 8.0\EnvSDK\common\inc; dostarczyć także w folderze VSIP próbki MSSCCI *[dysk]* \Program Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   

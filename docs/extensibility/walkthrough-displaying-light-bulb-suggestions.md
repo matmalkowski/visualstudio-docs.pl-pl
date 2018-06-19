@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148704"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Wskazówki: Wyświetlanie sugestii żarówka
 Żarówki są ikon używanych w edytorze programu Visual Studio, które Rozwiń, aby wyświetlić zestaw akcji, na przykład poprawki dla problemy zidentyfikowane przez analizatorów wbudowanego kodu lub refaktoryzacji kodu.  

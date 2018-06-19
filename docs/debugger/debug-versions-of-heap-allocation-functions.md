@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470946"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Wersja debugowania funkcji alokacji sterty
 Biblioteki wykonawcze języka C zawiera specjalne wersje debugowania funkcji alokacji stosu. Te funkcje mają takie same nazwy co wydanie z _dbg dołączany do ich wersje. W tym temacie opisano różnice między wersji funkcji CRT i wersji _dbg przy użyciu `malloc` i `_malloc_dbg` jako przykłady.  

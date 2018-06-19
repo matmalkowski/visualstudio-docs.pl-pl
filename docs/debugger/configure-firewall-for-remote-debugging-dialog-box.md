@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459652"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
 To okno dialogowe jest wyświetlany, gdy Zapora systemu Windows zablokuje debugera z odbieranie informacji za pośrednictwem sieci. Aby kontynuować debugowanie zdalne, należy otworzyć dziury w zaporze, debuger może odbierać informacje.  

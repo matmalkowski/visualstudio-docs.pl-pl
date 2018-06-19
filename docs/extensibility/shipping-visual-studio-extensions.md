@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142760"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Wysyłanie rozszerzeń programu Visual Studio
 Po zakończeniu tworzenia rozszerzenia, można go zainstalować na innych komputerach, udostępnić go znajomych i współpracowników lub opublikować go w programie Visual Studio Marketplace. W tej sekcji opisano możemy wszystkie czynności należy wykonać w celu publikowania i obsługa rozszerzenia: Praca z plikami .vsix, publikowania, lokalizowanie i aktualizowanie.  

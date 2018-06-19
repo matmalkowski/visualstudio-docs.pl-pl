@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973918"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukaj i wybierz typ .NET okno dialogowe
 

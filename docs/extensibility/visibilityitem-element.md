@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143468"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem Element
 `VisibilityItem` Określa statyczne widoczności poleceń i pasków narzędzi. Każdy wpis identyfikuje polecenia lub menu a skojarzone polecenie kontekstu interfejsu użytkownika. Visual Studio wykrywa polecenia, menu i paski narzędzi oraz ich widoczności bez ładowania VSPackages, który definiuje ich. Używa IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodę, aby sprawdzić, czy kontekst interfejsu użytkownika poleceń jest aktywny.  

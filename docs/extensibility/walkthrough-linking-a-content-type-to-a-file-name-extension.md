@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144898"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku
 Można definiować własne typu zawartości i połączyć rozszerzenie nazwy pliku przy użyciu edytora rozszerzeń Managed Extensibility Framework (MEF). W niektórych przypadkach rozszerzenie nazwy pliku został już zdefiniowany przez usługę języka; Niemniej jednak do korzystania z niego MEF nadal musisz dołączyć ją do typu zawartości.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147412"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Wskazówki: Tworzenie edytora rdzeni i rejestrowania edytora typu pliku
 W tym przewodniku pokazano, jak utworzyć pakiet VSPackage, który rozpoczyna się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] core edytor, gdy plik ma rozszerzenie nazwy pliku .myext jest załadowany.  

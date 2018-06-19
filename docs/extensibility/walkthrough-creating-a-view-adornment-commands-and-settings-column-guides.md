@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148197"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Wskazówki: Tworzenie ozdób widoku, poleceń i ustawień (prowadnice kolumn)
 Można rozszerzyć Edytor tekstu/kodu programu Visual Studio z poleceniami i efekty widoku.  W tym temacie opisano Rozpoczynanie pracy z funkcją popularnych rozszerzenia prowadnice kolumn.  Przewodniki kolumny są wizualnie światła linii w widoku edytora tekstu w celu zarządzania kodu do określonej szerokości.  W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisy na blogu lub usterek raportów.  

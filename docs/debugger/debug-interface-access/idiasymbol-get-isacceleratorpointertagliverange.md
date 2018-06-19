@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467291"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Pobiera flagę wskazującą, czy symbol odpowiada *definicji symbolu zakresu* składnika tag zmiennej wskaźnikowej w kodzie skompilowanym dla C++ AMP akceleratora. Symbol zakresu definicji jest lokalizacja zmiennej dla zakresu adresów.  

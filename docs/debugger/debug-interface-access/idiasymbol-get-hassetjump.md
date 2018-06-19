@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464290"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Pobiera flagę określającą, czy funkcja zawiera korzystanie z [setjmp](/cpp/c-runtime-library/reference/setjmp) polecenia (sparowany z [longjmp](/cpp/c-runtime-library/reference/longjmp) poleceń, tworzą one metody stylu języka C dla obsługi wyjątków).  

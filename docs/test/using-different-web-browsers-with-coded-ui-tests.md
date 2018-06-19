@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978378"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Różnych przeglądarek sieci Web za pomocą kodowanych testów interfejsu użytkownika
 

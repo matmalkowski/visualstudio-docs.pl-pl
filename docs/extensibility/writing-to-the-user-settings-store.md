@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145415"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawienia użytkownika
 Ustawienia użytkownika są zapisywalne ustawienia, takie jak te w **narzędzia / Opcje** okna dialogowego Właściwości systemu windows i niektórych okien dialogowych. Rozszerzenia programu Visual Studio może użyć tych do przechowywania niewielkich ilości danych. W tym przewodniku przedstawiono sposób dodawania Notatnik dla programu Visual Studio jako narzędzie zewnętrzne za odczytywanie z oraz zapisywanie w magazynie ustawień użytkownika.  

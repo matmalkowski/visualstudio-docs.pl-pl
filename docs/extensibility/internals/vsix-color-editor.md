@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147951"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolor VSIX
 Narzędzia Visual Studio rozszerzenia kolor edytora można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio. Narzędzie można również generować klucze zasobów motywu, dzięki czemu kolory może być używane w kodzie. To narzędzie jest przydatne w przypadku wprowadzania kolorów dla rozszerzenia Visual Studio, który obsługuje tworzenia motywów. To narzędzie może otwierać pliki .pkgdef i XML. Visual Studio motywów (pliki .vstheme) może służyć z edytora programu Visual Studio rozszerzenia kolor zmieniając rozszerzenie pliku .xml. Ponadto pliki .vstheme można importować do bieżącego pliku .xml.  

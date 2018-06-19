@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148740"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Kolor wartości odwołania dla programu Visual Studio
 Ten temat jest odwołanie do tworzenia nowych tokenów kolorów. Podczas tworzenia nowego interfejsu użytkownika, można użyć podobne kolory z istniejącego interfejsu użytkownika, aby wybrać kolorów motywu każdego głównego i nazwy kolorów systemu dla tego elementu motywów duży kontrast. 

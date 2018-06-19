@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458456"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Niestandardowe (Zestaw SDK dostępu do interfejsu debugowania)
 Niektóre kompilatory wprowadzać symbole, które nie są identyfikowane przez żaden z typów standardowe leksykalne symboli. Te symbole są identyfikowane za pomocą `SymTagCustom` tagu.  

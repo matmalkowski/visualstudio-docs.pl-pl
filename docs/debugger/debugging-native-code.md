@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472909"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcji opisano niektóre typowe problemy debugowania i techniki natywnych aplikacji. Techniki omówione w tej sekcji są techniki wysokiego poziomu. Aby mechanika za pomocą debugera programu Visual Studio, zobacz [plan debugera](../debugger/debugger-basics.md).  

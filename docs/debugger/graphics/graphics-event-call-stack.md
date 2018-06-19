@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474053"
 ---
 # <a name="graphics-event-call-stack"></a>Stos wywołań zdarzeń grafiki
 Stos wywołań zdarzeń grafiki w analizatora grafiki programu Visual Studio ułatwia mapowania relacji między zdarzeń grafiki powodować problemy i kodu źródłowego aplikacji.  

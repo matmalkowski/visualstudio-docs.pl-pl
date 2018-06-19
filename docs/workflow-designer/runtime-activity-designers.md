@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971548"
 ---
 # <a name="runtime-activity-designers"></a>Środowisko uruchomieniowe projektantami działań
 Środowisko uruchomieniowe projektantami działań są używane do utrwalić i przerwanie działania przepływu pracy. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące sposobu używania projektanta przepływów pracy projektantów działań.

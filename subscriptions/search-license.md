@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031185"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcji programu Visual Studio
 Portalu administracyjnego subskrypcji programu Visual Studio umożliwia wyszukiwanie konkretnego podzestawu subskrybentów na podstawie różnych kryteriów. Można filtrować listy subskrybentów nazwa, adres e-mail, poziom subskrypcji i różnych innych informacji. 

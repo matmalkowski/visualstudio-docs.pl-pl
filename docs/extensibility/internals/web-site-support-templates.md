@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147131"
 ---
 # <a name="web-site-support-templates"></a>Szablony witryn sieci Web pomocy technicznej
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Witryny sieci Web szablonów projektów i elementów podać zastępcze projektu i elementu wielokrotnego użytku i dostosowywanych witryny sieci Web, które przyspieszyć ten proces programowania, usuwając konieczność tworzenia nowej witryny sieci Web projektów i elementów od początku. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] szablony, zobacz [szablony tworzenie projektów i elementów](../../ide/creating-project-and-item-templates.md).

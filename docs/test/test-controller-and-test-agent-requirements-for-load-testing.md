@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974861"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Wymagania dla kontrolera testów i agentów testowych niezbędnych do testów obciążenia
 

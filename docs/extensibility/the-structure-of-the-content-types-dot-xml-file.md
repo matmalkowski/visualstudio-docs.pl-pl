@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144570"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura pliku XML [Content_types]
 Zawiera informacje o rodzajach zawartość pakietu VSIX. Do zainstalowania pakietu Visual Studio korzysta z pliku XML [Content_Types], ale nie jest instalowana w samym pliku.  

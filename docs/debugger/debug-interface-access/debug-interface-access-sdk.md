@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457449"
 ---
 # <a name="debug-interface-access-sdk"></a>Zestaw SDK dostępu do interfejsu debugowania
 Microsoft debugowania interfejsu dostępu Software Development Kit (DIA SDK) zapewnia dostęp do debugowania informacje przechowywane w plikach bazy danych (.pdb) program generowane przez postcompiler narzędzi firmy Microsoft. Ponieważ format pliku PDB wygenerowany za pomocą narzędzi postcompiler ulega poprawki stałej, udostępnianie format jest niepraktyczne. Przy użyciu interfejsu API DIA, można tworzyć aplikacje, które wyszukiwać i przeglądać informacje o debugowaniu przechowywane w pliku PDB. Takie aplikacje można na przykład raport informacje zwrotne śledzenia stosu i analizowanie danych dotyczących wydajności.  

@@ -1,13 +1,13 @@
 ---
 title: Operatory (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753274"
 ---
 # <a name="operators-javascript"></a>Operatory (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ma pełny zakres operatorów, łącznie z arytmetyczne logiczne, operator przypisania, jak również niektórych różne operatory. Wyjaśnienia dotyczące i przykłady zobacz Tematy w szczególnych operatorów.  

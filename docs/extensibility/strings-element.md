@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143894"
 ---
 # <a name="strings-element"></a>Element ciągów
 Element ciągi musi zawierać co najmniej **ButtonText** element podrzędny. Wszystkie elementy podrzędne są opcjonalne. Nieprawidłowy kod XML znaków, takich jak "&" i "<" musi być zakodowane jako jednostki ("&amp;"i"&lt;" i tak dalej).  

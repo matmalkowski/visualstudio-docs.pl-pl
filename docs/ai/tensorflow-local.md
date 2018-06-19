@@ -1,6 +1,6 @@
 ---
 title: Uczenie modelu tensorflow lokalnie
-description: "Uruchamianie modelu tensorflow lokalnie w narzędziach AI programu Visual Studio"
+description: Uruchamianie modelu tensorflow lokalnie w narzędziach AI programu Visual Studio
 keywords: AI, visual studio, tensorflow, lokalnego
 author: lisawong19
 ms.author: liwong
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708936"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Uczenie modelu TensorFlow lokalnie
 

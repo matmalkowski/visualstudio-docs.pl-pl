@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954395"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy zależności* w programie Visual Studio. Upewnij się, kod pozostaje zgodne z tym projekcie weryfikując kodu przy użyciu diagramu zależności. Walidacja warstw mogą również obejmować procesu kompilacji. Zobacz [Channel 9 wideo: projektowania i walidacji architektury przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147584"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Wskazówki: Tworzenie zestawu SDK, w języku C++
 W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne biblioteki zestawu SDK, pakiet SDK jako Visual rozszerzenia Studio (VSIX), a następnie użyć jej do utworzenia aplikacji. Instruktaż jest podzielona na następujące kroki:  

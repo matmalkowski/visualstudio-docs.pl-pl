@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148665"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowanie nowe lub zostały zmienione z kartami edytora
 Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji edytorze podstawowych programu Visual Studio i zamierzasz używać kart edytora (lub podkładek) zamiast przy użyciu nowego interfejsu API, należy zwrócić uwagę następujące różnice w zachowaniu kart edytora względem poprzedniej Edytor core.  

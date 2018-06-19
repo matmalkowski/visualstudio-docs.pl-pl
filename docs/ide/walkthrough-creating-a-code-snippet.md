@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425160"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Wskazówki: Tworzenie wstawek kodu
 Fragment kodu można utworzyć tylko kilka prostych kroków. To wszystko, co należy zrobić, tworzenie pliku XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. W kodzie, można dodać odniesienia i parametry zamiany. Fragment kodu można dodać do instalacji programu Visual Studio za pomocą **importu** znajdującego się na **Menedżerze fragmentów kodu** (**narzędzia**  >   **Menedżer wstawek kodu**).
