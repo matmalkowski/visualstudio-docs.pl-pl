@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31894351"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą adnotacji przypominają invariants — są one domniemania PRAWDA dowolnego wywołanie funkcji i funkcji wejścia/wyjścia, który obejmuje otaczającej strukturę jako parametr lub wartość wyniku.
