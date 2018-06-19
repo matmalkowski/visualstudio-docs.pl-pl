@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479906"
 ---
 # <a name="debugging-preparation-windows-services"></a>Przygotowanie debugowania: usługi systemu Windows
 Usługa systemu Windows to program, który działa w tle w obszarze Microsoft Windows. Przykładami usługi Telnet i usługi Czas systemu Windows, która aktualizuje widoczne zegar komputera. Usługa systemu Windows nie można uruchomić z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; musi działać w kontekście Menedżera sterowania usługami. Aby uzyskać więcej informacji, zobacz [tworzenia usług systemu Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [debugowanie aplikacji usług systemu Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), i [aplikacji usług systemu Windows](/dotnet/framework/windows-services/index).  

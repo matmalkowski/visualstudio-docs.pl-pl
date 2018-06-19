@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448717"
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziome dokumentu są nieco inne niż programy obsługi zdarzeń dla dodatków VSTO.  

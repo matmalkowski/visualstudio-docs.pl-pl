@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474745"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)
 Metody należą alfabetycznie każdego interfejsu w tabeli treści i na stronie interfejsu w kolejności Vtable.  

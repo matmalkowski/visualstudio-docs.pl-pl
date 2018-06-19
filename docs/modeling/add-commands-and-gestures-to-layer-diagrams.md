@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952145"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na wykresach zależności w Visual Studio. Rozszerzenia te można spakować do programu Visual Studio integracji rozszerzenia (VSIX) dystrybuowanej do innych użytkowników programu Visual Studio.

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476676"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Porady: określanie wersji programu .NET Framework do debugowania
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Debuger obsługuje debugowanie starsze wersje programu Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz bieżącej wersji. Po uruchomieniu aplikacji w programie Visual Studio debuger zawsze można zidentyfikować poprawną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] debugowania aplikacji. Jeśli aplikacja jest już uruchomiona i używana będzie **dołączyć do**, debuger może nie zawsze można zidentyfikować starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W takim przypadku otrzymasz komunikat o błędzie informujący,  

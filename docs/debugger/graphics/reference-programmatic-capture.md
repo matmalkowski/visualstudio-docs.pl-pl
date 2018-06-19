@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474391"
 ---
 # <a name="reference-programmatic-capture"></a>Odwołanie (przechwycenie programowe)
 Diagnostyka grafiki obsługuje programowe kontrolę nad jego funkcji przechwytywania, za pośrednictwem programowe Przechwytywanie interfejsu API. Ten interfejs API umożliwia Przełącz i dodawać komunikaty do diagnostyki grafiki HUD (wyświetlanie Head w górę), zainicjować i utworzyć pliki dziennika grafiki i przechwytywanie informacji graficznych.  

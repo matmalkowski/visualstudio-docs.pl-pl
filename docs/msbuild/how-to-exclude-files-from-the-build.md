@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576810"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Porady: wykluczanie plików z kompilacji
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżony zbiór katalogi jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dołączyć jako dane wejściowe dla kompilacji. Na liście wejść można jawnie wykluczyć tego pliku lub katalogu. W projekcie, który ma być uwzględniony w niektórych warunkach również może być plikiem. Można jawnie deklarować warunków, w których pliku jest uwzględniona w kompilacji.  

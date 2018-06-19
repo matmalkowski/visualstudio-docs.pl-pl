@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562003"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Porady: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień
 Deweloperzy najprawdopodobniej działają komputerze dewelopera z uprawnień pełnego zaufania, nie zobaczysz tego samego wyjątki zabezpieczeń podczas debugowania aplikacji ClickOnce, której użytkownik końcowy może zostać wyświetlony podczas uruchamiania go z ograniczonymi uprawnieniami.  

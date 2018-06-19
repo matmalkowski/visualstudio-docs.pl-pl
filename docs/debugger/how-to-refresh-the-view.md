@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480088"
 ---
 # <a name="how-to-refresh-the-view"></a>Porady: Odświeżanie widoku
 Spy ++ pobiera "migawkę" tabel systemowych i odświeżenie widoku na podstawie tych informacji. Należy okresowo odświeżanie widoków systemu. Jeśli masz Spy ++ widoku Otwórz i nie ma odświeżyć widok, nie będą widzieć te procesy, wątki i systemu windows, które następnie są tworzone. Ponadto może zostać wyświetlony elementy, które już istnieją. **Odśwież** polecenie jest dostępne dla wszystkich widokach oprócz widoku komunikatów.  

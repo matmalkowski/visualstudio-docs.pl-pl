@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478138"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prostego ciągu jest prosty przykład pokazanie, sposób tworzenia wizualizatorów dla innych typów danych bardziej odpowiednie do projektów.  

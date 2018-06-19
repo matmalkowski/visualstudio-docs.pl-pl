@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140472"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Tabela polecenia programu Visual Studio (. Pliki Vsct)
 Plik konfiguracji tabeli polecenia to plik tekstowy, który opisuje zestaw poleceń, które zawiera pakiet VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Polecenia kompilatora tabeli (VSCT) kompiluje konfiguracji w formacie XML plików (vsct) do plików wyjściowych (.cto) tabeli polecenie binary. Pliki wynikowe .cto są takie same jak te, które są tworzone za pomocą polecenia kompilatora tabeli (CTC) do kompilowania plików konfiguracyjnych .ctc. Pliki vsct opartych na języku XML ma jednak pewne korzyści, takich jak edytor XML i XML IntelliSense.  

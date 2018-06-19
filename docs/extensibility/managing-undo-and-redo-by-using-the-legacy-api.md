@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137514"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>Zarządzanie Cofnij i ponów przy użyciu interfejsu API starsza wersja
 Edytory musi obsługiwać operacje cofania, które pozwalają użytkownikom wycofać swoje ostatnie zmiany ich modyfikowania kodu. Większość edytorów realizowane w ramach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] może mieć Obsługa polecenia Cofnij automatycznie udostępniane przez zintegrowane środowisko programistyczne (IDE).  

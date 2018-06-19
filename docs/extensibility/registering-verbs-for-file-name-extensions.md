@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138109"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
 Skojarzenie rozszerzenia nazwy pliku z aplikacją ma zazwyczaj preferowane działanie, gdy użytkownik kliknie dwukrotnie plik. To preferowane akcji jest połączony z zlecenie, na przykład po otwarciu umożliwiająca akcji.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31583934"
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety z pliku requirements.txt
 

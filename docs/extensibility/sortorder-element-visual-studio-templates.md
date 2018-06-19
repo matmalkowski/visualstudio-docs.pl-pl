@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140326"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder — Element (szablony Visual Studio)
 Określa wartość, która służy do rozmieszczania szablonu, między innymi szablony w tej samej kategorii, pojawiającą się w jednej **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  

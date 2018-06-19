@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481518"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debugowanie i proces hostingu
 Procesu hostingu Visual Studio poprawia wydajność debugera i włącza nowe funkcje debugera, takich jak debugowanie częściowo zaufane i Obliczanie wyrażenia czasu projektowania. Jeśli potrzebujesz, można wyłączyć procesu hostingu. Aby uzyskać więcej informacji, zobacz [porady: wyłączanie procesu hostingu](../ide/how-to-disable-the-hosting-process.md). W poniższych sekcjach opisano niektóre różnice między debugowanie z włączonymi i wyłączonymi procesu hostingu.  

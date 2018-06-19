@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571623"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 Transformacja jest jeden do jednego konwersji jeden element listy do innej. Oprócz włączenia projektu można przekonwertować elementu listy, transformacji umożliwia cel, aby zidentyfikować bezpośredniego mapowania między jej danych wejściowych i wyjściowych. W tym temacie opisano transformacji i w jaki sposób [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa ich do kompilacji projektów bardziej efektywnie.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578223"
 ---
 # <a name="how-to-clean-a-build"></a>Porady: czyszczenie kompilacji
 Podczas oczyszczania kompilacji wszystkich plików pośrednich i wynikowych są usuwane, pozostawiając tylko pliki projektów i składnika. Z plików projektu i składników nowe wystąpienia klasy obiektów i pliki wyjściowe mogą następnie zostać skompilowane. Biblioteka typowych zadań, które jest udostępniane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje [Exec](../msbuild/exec-task.md) zadanie, które służy do uruchamiania polecenia systemowe. Aby uzyskać więcej informacji w bibliotece zadań, zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  

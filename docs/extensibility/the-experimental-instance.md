@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138928"
 ---
 # <a name="the-experimental-instance"></a>Eksperymentalne wystąpienie programu
 Do ochrony środowiska deweloperskiego Visual Studio z zastosowaniem aplikacji, które może go zmienić, VSSDK miejsce eksperymentalne używanej do wykonywania eksperymentów. Tworzenie nowej aplikacji za pomocą programu Visual Studio w zwykły sposób, ale Uruchom za pomocą tego eksperymentalne wystąpienie.  
@@ -28,7 +29,7 @@ Do ochrony środowiska deweloperskiego Visual Studio z zastosowaniem aplikacji, 
   
  Jeśli chcesz Uruchom eksperymentalne wystąpienie programu Visual Studio poza konkretnego rozwiązania, uruchom następujące polecenie w oknie wiersza polecenia:  
   
- "*\<Ścieżki instalacji programu visual studio >*\Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Ścieżki instalacji programu visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
 >  Eksperymentalne wystąpienie są zapisywane w kluczu rejestru `<version number>Exp` i `<version number>Exp_Config` węzłów. Na przykład jest obszar eksperymentalne rejestru programu Visual Studio 2015  

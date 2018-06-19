@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130235"
 ---
 # <a name="font-and-color-overview"></a>Omówienie kolorów i czcionek
 W tym temacie omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Również wprowadza pojęcia związane z kategorii i Wyświetl elementy, a także opisano, jak pakiety VSPackage i Edytor core używają atrybutów tekstu.  

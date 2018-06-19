@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449029"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń EventSource znaczników
 Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki i kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczników EventSource, należy zarejestrować identyfikator GUID dostawców ETW za pomocą [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe. Narzędzia Concurrency Visualizer ma domyślnych Konwencji reprezentują zdarzenia EventSource jako [znaczniki typu Flaga](../profiling/flag-markers.md), [znaczniki zakresu](../profiling/span-markers.md), i [znaczniki komunikatu](../profiling/message-markers.md). Można dostosować sposób wyświetlania zdarzeń EventSource przez dodanie pola niestandardowe do zdarzenia. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczników wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji o zdarzeniach EventSource, zobacz <xref:System.Diagnostics.Tracing>.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477605"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Porada: Oflagowanie i usuwanie oflagowania wątków
 Mogą oznaczać wątku, który chcesz nadać szczególną uwagę przez oznaczenie go za pomocą ikony w **wątków**, **stosów równoległych** (Widok wątku), **czujki równoległej**i  **Wątków GPU** systemu windows. Ta ikona może pomóc i inne odróżnić od innych wątków oflagowane wątki.  

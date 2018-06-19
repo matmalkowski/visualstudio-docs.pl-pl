@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134587"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizatora usługi starszej wersji języka i skanera
 Analizator jest Puls usługi języka. Klasy języka zarządzane pakietu Framework (MPF) wymagają analizatora składni języka aby wybrać informacji na temat kodu będzie wyświetlany. Analizator oddziela tekst w tokenach leksykalne, a następnie identyfikuje tokeny te według typu i funkcjonalność.  

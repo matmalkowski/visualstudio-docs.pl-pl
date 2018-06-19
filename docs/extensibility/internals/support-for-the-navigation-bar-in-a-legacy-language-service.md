@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134663"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w usłudze języka starsza wersja
 Pasek nawigacyjny u góry widoku edytora Wyświetla typy i składniki w pliku. Typy są wyświetlane w lewym listy rozwijanej, a elementy członkowskie są wyświetlane w prawej listy rozwijanej. Po wybraniu typu karetkę znajduje się w pierwszym wierszu typu. Gdy użytkownik wybierze element członkowski, karetkę znajduje się w definicji elementu członkowskiego. Pola listy rozwijanej są aktualizowane w celu odzwierciedlenia bieżącej lokalizacji karetki.  

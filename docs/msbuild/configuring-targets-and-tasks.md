@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570294"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurowanie obiektów docelowych i zadań
 Można skonfigurować program MSBuild obiektów docelowych i zadań w celu uruchomienia poza procesem przy użyciu programu MSBuild, dzięki czemu można wskazać kontekstach, które różnią się od pierwszego są uruchomione na. Na przykład możesz zastosować 32-bitowej aplikacji .NET Framework 2.0 jest uruchomiona na komputerze deweloperskim na 64-bitowym systemie operacyjnym program .NET Framework 4.5. Możesz też określić komputerach przy użyciu programu .NET Framework 4 lub starszej. W połączeniu z 32 - lub 64-bitowości określoną wersję systemu .NET Framework jest nazywany *kontekst docelowy*.  

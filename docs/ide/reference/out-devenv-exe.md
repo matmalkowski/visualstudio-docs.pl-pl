@@ -25,6 +25,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704489"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, utworzyć, odbudować lub wdrożyć rozwiązanie.

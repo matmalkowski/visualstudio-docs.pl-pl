@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140706"
 ---
 # <a name="wizard-interface-idtwizard"></a>Kreator interfejsu (IDTWizard)
 Zintegrowane środowisko programistyczne (IDE) używa <xref:EnvDTE.IDTWizard> interfejs do komunikacji z kreatorów. Kreatorzy musi implementować ten interfejs, aby mogło zostać zainstalowane w środowisku IDE.  

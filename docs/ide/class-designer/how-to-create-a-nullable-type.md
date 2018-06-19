@@ -21,6 +21,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957369"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Porady: Tworzenie typu zerowalnego w Projektancie klas
 

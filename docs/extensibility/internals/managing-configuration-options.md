@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134763"
 ---
 # <a name="managing-configuration-options"></a>Opcje konfiguracji zarządzania
 Podczas tworzenia nowego typu projektu muszą zarządzać projektu i rozwiązania ustawienia konfiguracji, które określają jak projekt zostanie skompilowany, spakowanych, wdrażania i uruchamiania. W poniższych tematach opisano konfigurację projektu i rozwiązania.  

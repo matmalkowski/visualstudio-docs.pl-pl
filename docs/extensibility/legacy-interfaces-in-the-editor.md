@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142903"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfejsy starszej wersji w edytorze
 Dostępne edytorze programu Visual Studio z interfejsów starszej wersji. Visual Studio SDK zawiera karty znany jako *podkładek*, umożliwiające te interfejsy do interakcji z nowego edytora. Niemniej jednak zaleca się zaktualizowanie starszej wersji kodu za pomocą edytora nowego interfejsu API. Kod będą działać lepiej i można używać nowych technologii, takich jak Windows Presentation Foundation (WPF) i zarządzane Extensibility Framework (MEF).  

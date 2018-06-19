@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575848"
 ---
 # <a name="walkthrough-using-msbuild"></a>Wskazówki: używanie programu MSBuild
 MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przewodniku przedstawiono bloków konstrukcyjnych programu MSBuild i pokazano, jak napisać, manipulowanie nimi oraz debugowania projektów MSBuild. Poznasz:

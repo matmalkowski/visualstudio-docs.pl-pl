@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584584"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reguły wydajności monitorowania zasobu
 Komunikaty wydajności w kategorii monitorowania zasobów zawierają dodatkowe dane dotyczące wydajności aplikacji. Można użyć tych danych do analizowania problemów z wydajnością. Te reguły są informacyjny i podać dla każdego przebiegu profilowania.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263916"
 ---
 # <a name="instrumentation-method-data-views"></a>Widok danych metody Instrumentacji
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zostały wygenerowane za pomocą metody instrumentacji.  

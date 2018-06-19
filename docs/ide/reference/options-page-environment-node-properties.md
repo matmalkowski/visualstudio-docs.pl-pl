@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953926"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzone z **środowiska** kategorii, `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdego podsekcji to wywołanie, które umożliwia dostęp do właściwości kolekcji, a tabeli w każdym podsekcja zawiera listę właściwości w kolekcji.

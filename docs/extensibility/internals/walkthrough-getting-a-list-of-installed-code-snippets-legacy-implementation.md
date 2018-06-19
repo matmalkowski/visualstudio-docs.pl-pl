@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141356"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Wskazówki: Pobieranie listy fragmentów kodu zainstalowanych (wykonanie starsza wersja)
 Fragment kodu jest fragment kodu, który można wstawiać do bufora źródłowego za pomocą polecenia menu, (co pozwala wybierania listę zainstalowanych wstawki) lub przez wybranie skrótów fragmentu w liście uzupełniania IntelliSense.  

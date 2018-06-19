@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147118"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Wskazówki: Wyświetlanie uzupełniania
 Uzupełnianie opartych na języku można zaimplementować definiujący identyfikatory, dla których chcesz podać ukończenia, a następnie wyzwalania zakończenia sesji. Można zdefiniować uzupełniania w kontekście usługi języka, definiować własne rozszerzenie nazwy pliku i typu zawartości i Wyświetl uzupełnianie tylko tego typu lub możesz wyzwolić uzupełnianie istniejącego typu zawartości — na przykład "w postaci zwykłego tekstu". W tym przewodniku przedstawiono sposób wyzwolenia uzupełniania dla typu zawartości "zwykły tekst", który jest typem zawartości plików tekstowych. Typ zawartości "text" jest elementem nadrzędnym wszystkich innych typów zawartości, łącznie z kodu i pliki XML.  

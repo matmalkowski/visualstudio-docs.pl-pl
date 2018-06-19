@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137248"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Jest to określone w wywołaniu funkcji wywołania zwrotnego [SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji `SCC_OPT_NAMECHANGEPFN`) i jest używany do komunikacji nazwa zmiany wprowadzone przez kontroli źródła wtyczek do środowiska IDE.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705076"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Porady: Podaj usługa asynchronicznego programu Visual Studio
 Jeśli chcesz uzyskać usługi bez blokowania wątku interfejsu użytkownika, należy utworzyć asynchroniczne usługi i załadować pakiet wątku w tle. W tym celu można użyć <xref:Microsoft.VisualStudio.Shell.AsyncPackage> zamiast <xref:Microsoft.VisualStudio.Shell.Package>i Dodaj usługę z pakietu asynchroniczne specjalnych metod asynchronicznych.

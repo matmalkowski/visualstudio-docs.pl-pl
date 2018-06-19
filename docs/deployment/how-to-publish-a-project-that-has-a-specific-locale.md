@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561613"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Porady: publikowanie projektu o specyficznych ustawieniach regionalnych
 Nie jest rzadko aplikacji zawiera składniki, które mają różne ustawienia regionalne. W tym scenariuszu czy tworzenia rozwiązania, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. W tej procedurze pokazano, jak opublikować pierwszy projekt w rozwiązaniu przy użyciu ustawień regionalnych "PL" przy użyciu makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", należy ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład "de" lub "de-DE").  

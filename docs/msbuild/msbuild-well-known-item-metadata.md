@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572611"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadane dobrze znanego elementu MSBuild
 W poniższej tabeli opisano metadanych przypisany do każdego elementu po jego utworzeniu. W każdym przykładzie użyto następujących deklaracji elementu można dołączyć plik `C:\MyProject\Source\Program.cs` w projekcie.  

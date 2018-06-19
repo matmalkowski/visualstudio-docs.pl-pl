@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559062"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy najpierw pobrać pakietów Instalatora dla tych wymagań wstępnych na komputerze deweloperskim. Podczas publikowania aplikacji i wybierz **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co Moja aplikacja**, wystąpi błąd, jeśli pakietów Instalatora nie ma w **pakiety** folderu.  

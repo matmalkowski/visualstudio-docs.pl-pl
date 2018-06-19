@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132577"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Rozszerzanie edytora i usług języka
 Dodawanie funkcji usługi języka (takie jak IntelliSense) do własnego edytora i rozszerzenia większość funkcji edytora kodu programu Visual Studio.  Aby uzyskać pełną listę można rozszerzyć, zobacz [usługi języka oraz punktów rozszerzenia edytora](../extensibility/language-service-and-editor-extension-points.md).  

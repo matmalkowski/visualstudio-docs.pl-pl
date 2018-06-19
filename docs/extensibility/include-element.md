@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133309"
 ---
 # <a name="include-element"></a>Umieść Element
 Include element Określa plik, który może znajdować się na podane obejmują ścieżki w celu wstawienia go do bieżącego pliku.  Wszystkie symbole i typy zdefiniowane staną się częścią skompilowanych wyniku.  

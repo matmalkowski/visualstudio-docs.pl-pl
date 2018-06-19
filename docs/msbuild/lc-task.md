@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574210"
 ---
 # <a name="lc-task"></a>LC — Zadanie
 LC.exe zawija generuje plik .license z .licx — plik. Aby uzyskać więcej informacji o LC.exe, zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).  

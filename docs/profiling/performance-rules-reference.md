@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579852"
 ---
 # <a name="performance-rules-reference"></a>Zasady wydajności — Odwołanie
 Zasady wydajności narzędzi profilowania zapewniają dodatkowe ostrzeżenia i informacje o wydajności aplikacji. Reguły wydajności analizowanie danych w przebiegu profilowania, zebrane ze źródeł, takich jak liczniki wydajności procesora i systemu Windows. Reguła komunikaty są wyświetlane w oknie dane wyjściowe błędów [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane środowisko deweloperskie. Komunikaty są wyświetlane z jedną z następujących poziomów reguły:  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567970"
 ---
 # <a name="wpf-msbuild-reference"></a>Odwołanie do WPF MSBuild
 Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) obsługujących dodatkowe kompilacji jest opisana w tej sekcji.  

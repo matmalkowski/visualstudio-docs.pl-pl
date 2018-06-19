@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705050"
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
 Dodaje nowy element rozwiązania, takie jak htm, CSS, txt lub ramek do obecnego rozwiązania, a następnie go otwiera.

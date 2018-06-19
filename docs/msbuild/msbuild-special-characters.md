@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568009"
 ---
 # <a name="msbuild-special-characters"></a>Znaki specjalne w programie MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezerwuje niektórych znaków specjalnych w określonych okolicznościach. Masz ucieczki takich znaków, jeśli chcesz użyć ich dosłownie w kontekście, w którym są zastrzeżone. Na przykład gwiazdkę ma specjalne znaczenie tylko w `Include` i `Exclude` atrybutów definicji elementu i w wywołaniach `CreateItem`. Chcąc gwiazdkę są wyświetlane jako gwiazdki w jednym z tych kontekstach, musi on escape. W każdym kontekście po prostu wpisz gwiazdkę, którym ma być wyświetlany.  

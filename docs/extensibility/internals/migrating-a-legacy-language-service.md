@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135860"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrowanie usługi języka starsza wersja
 Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest do projektu, można migrować usługi starszej wersji języka do nowszej wersji programu Visual Studio. Sama usługa języka będzie działał jak wcześniej, ponieważ w edytorze programu Visual Studio dostosowuje go.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263140"
 ---
 # <a name="controls-on-office-documents"></a>Formanty w dokumentach pakietu Office
   Narzędzia deweloperskie pakietu Office w Visual Studio służy do dodawania formantów formularzy systemu Windows i *hostowania formantów* do dokumentów programu Word i arkusze programu Excel. Formanty hosta są obiekty, które rozszerzają różnych obiektów interfejsu użytkownika w modelach obiektów programu Word i Excel.  

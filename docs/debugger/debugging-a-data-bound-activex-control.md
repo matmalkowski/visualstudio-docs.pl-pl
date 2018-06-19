@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474294"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Debugowanie kontrolki ActiveX powiązanego z danymi
 Jeśli tworzysz formantu ActiveX, który zostanie powiązany do kontroli źródła danych można tworzyć aplikacji kontenera i debugowanie formantu ActiveX przy użyciu tego kontenera.  

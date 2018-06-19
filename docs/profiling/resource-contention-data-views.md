@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581035"
 ---
 # <a name="resource-contention-data-views"></a>Widok danych kontencji zasobów
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zawierają dane profilowania rywalizacji wątku.  

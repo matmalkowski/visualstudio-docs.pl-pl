@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581880"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 Nawigator wykorzystania w Concurrency Visualizer służy do wybierania interwał czasu w śledzenia. Narzędzia Concurrency Visualizer pokazuje wykorzystania rdzeni procesora CPU przez proces docelowy w czasie. To ułatwia zbadać wzorce użycia procesora CPU i umożliwia porównanie danych użycia i dane w innych widokach. Nawigator wykorzystania pojawia się w górnej części każdego widoku w wizualizatora współbieżności. Na poniższej ilustracji przedstawiono Nawigator wykorzystania.  

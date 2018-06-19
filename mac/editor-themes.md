@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865022"
 ---
 # <a name="editor-themes"></a>Edytor motywów
 Motywami edytora może być zmieniona na wszystkich systemów 10 kolor domyślnie w programie Visual Studio dostępne dla komputerów Mac za pomocą **programu Visual Studio > Preferencje... > Edytor tekstu > motywy kolorów** opcji menu:

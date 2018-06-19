@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140137"
 ---
 # <a name="managing-vspackages"></a>Zarządzanie VSPackages
 W większości przypadków nie musisz martwić się o zarządzanie VSPackages, ponieważ szablonów projektów i elementów Zarejestruj i automatycznie załadować pakietu. Jednak w niektórych sytuacjach może być konieczne Dowiedz się więcej bit, aby można było zarządzać pakietu.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130759"
 ---
 # <a name="how-to-implement-undo-management"></a>Porady: Implementowanie zarządzania cofania
 Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, wdrożenie jednostek cofania oddzielne (to znaczy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, które zawierają wiele poszczególne kroki.  

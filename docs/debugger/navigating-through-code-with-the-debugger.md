@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479748"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Przejdź do kodu za pomocą debugera programu Visual Studio
 Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który ułatwi szybsze i łatwiejsze do znalezienia i rozwiąż problemy w aplikacji. Podczas nawigacji kodu w debugerze, można sprawdzić stan aplikacji lub Dowiedz się więcej o przepływ wykonania.  

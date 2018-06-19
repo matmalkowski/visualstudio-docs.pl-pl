@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138291"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otwieranie okna narzędzia dynamiczne
 Narzędzia windows zwykle są otwierane z polecenia w menu lub skrótu klawiaturowego równoważne. Czasami jednak może być konieczne okna narzędzia, która otwiera za każdym razem kontekście konkretnego interfejsu użytkownika ma zastosowanie i zostanie zamknięte po kontekstu interfejsu użytkownika nie ma zastosowania. Tego rodzaju okna narzędzi są nazywane *dynamiczne* lub *automatycznie widoczne*.  

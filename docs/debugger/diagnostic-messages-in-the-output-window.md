@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474586"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Wysyłać komunikaty diagnostyczne w oknie danych wyjściowych
 Można pisać wiadomości środowiska wykonawczego **dane wyjściowe** przy użyciu okna `Debug` klasy lub `Trace` klasy, które wchodzą w skład z <xref:System.Diagnostics> biblioteki klas. Jeśli tylko dane wyjściowe w wersji do debugowania programu, należy użyć klasy debugowania. Klasa śledzenia należy użyć, jeśli dane wyjściowe w wersjach zarówno Debug i Release.  

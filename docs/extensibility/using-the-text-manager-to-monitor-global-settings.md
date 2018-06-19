@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141675"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
 W przypadku zastosowania edytora core, należy monitorować zmiany wprowadzone w ustawieniach globalnych, ponieważ te zmiany mogą wpłynąć na wystąpienie edytora. Można śledzić zmiany przez nasłuchiwanie zdarzeń zgłaszanych przez Menedżera tekstu. Na przykład po określeniu globalne preferencji wygląd i zachowanie składnika w edytorze podstawowe, takie jak jego obiekt danych dokumentu Menedżera tekstu przechowuje te informacje i przesyła je do wszystkich klientów, których dotyczy.  

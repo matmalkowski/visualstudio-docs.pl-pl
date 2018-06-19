@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562185"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej kultury aplikacji. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowanie waluty, dostosowanie rozmiaru formantów w formularzu, i formanty dublowania od prawej do lewej w razie potrzeby.  

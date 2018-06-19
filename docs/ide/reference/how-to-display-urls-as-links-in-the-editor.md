@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448055"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Porady: wyświetlanie adresów URL jako łączy w Edytorze
 Istnieje możliwość edytora kodu Traktuj Uniform Resource Locator (URL) w kodzie jako aktywny łącza. Jeśli używasz tej funkcji, adresy URL:

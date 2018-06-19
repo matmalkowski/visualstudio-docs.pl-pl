@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131966"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Parowanie nawiasów klamrowych w starsza wersja usługi języka
 Dopasowywanie nawiasu klamrowego pomaga developer śledzić elementy języka, które muszą zostać wykonane ze sobą, takie jak nawiasy i nawiasy klamrowe. Gdy dewelopera wprowadza zamykający nawias klamrowy, zostanie wyróżniona nawiasem otwierającym.  

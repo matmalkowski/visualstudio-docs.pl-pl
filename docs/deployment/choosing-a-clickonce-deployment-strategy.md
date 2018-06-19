@@ -22,6 +22,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454730"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Wybieranie strategii wdrażania ClickOnce
 Istnieją trzy różne strategie wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; strategii, która zależy przede wszystkim typu aplikacji, w której wdrażasz. Poniżej przedstawiono wszystkie trzy strategie wdrażania:  

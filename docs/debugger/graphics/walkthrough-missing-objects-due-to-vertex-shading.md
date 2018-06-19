@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482012"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków
 W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do sprawdzania, czy obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.  

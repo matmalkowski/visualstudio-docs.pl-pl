@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141652"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework w edytorze
 Edytor jest utworzony przy użyciu składników Managed Extensibility Framework (MEF). Można tworzyć własne składników MEF do rozszerzania edytora, a kod może wykorzystać również składników edytora.  

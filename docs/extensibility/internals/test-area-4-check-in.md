@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133154"
 ---
 # <a name="test-area-4-check-in"></a>Obszar testu 4: Zaewidencjonuj
 Ten obszar testu wtyczkę kontroli źródła obejmuje wysyłanie zaktualizowane elementy do magazynu wersji za pomocą **Zaewidencjonuj** polecenia.  

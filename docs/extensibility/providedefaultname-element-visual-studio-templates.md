@@ -20,6 +20,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454379"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName — Element (szablony Visual Studio)
 Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu system będzie generował domyślną nazwę szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  

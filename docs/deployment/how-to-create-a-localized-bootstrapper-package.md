@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566020"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu programu inicjującego można utworzyć przez utworzenie dwóch większej liczby plików dla poszczególnych ustawień regionalnych: postanowień licencyjnych dotyczących oprogramowania, plik (na przykład eula.rtf) oraz manifest pakietu (plik package.xml).  

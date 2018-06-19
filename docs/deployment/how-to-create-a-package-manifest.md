@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563677"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Porady: tworzenie manifestu pakietu
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera jeden produkt pliku manifestu ale manifest pakietu dla każdego ustawienia regionalne. Funkcji udostępnionych w różnych wersjach zlokalizowanych powinien przejść do manifestu produkt.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578549"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadań generuje zestawu, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, która jest zadeklarowana jako lokalnie w tym projekcie. Wygenerowanym zestawie zostaną usunięte po ukończeniu procesu kompilacji, czy Proces kompilacji nie powiedzie się.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565773"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Wskazówki: pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Mogą jednak mieć części aplikacji, które są używane przez niewielki zestaw użytkowników. W takim przypadku chcesz pobrać zestawu tylko wtedy, gdy utworzenie jednego z jego typów. Poniższe wskazówki pokazano, jak Oznacz niektóre zestawy w aplikacji jako "opcjonalne", jak pobrać je przy użyciu klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy środowisko uruchomieniowe języka wspólnego (CLR) wymaga ich.  

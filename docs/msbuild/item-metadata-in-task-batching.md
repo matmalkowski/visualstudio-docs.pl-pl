@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573568"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementu i uruchom zadanie z każdej z partii. Może być trudne do zrozumienia dokładnie elementy jest przekazywany z partii, które. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.  

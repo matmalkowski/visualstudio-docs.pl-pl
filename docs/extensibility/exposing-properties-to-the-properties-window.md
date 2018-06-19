@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134265"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości
 Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** okna. Te właściwości są uwzględniane w **właściwości** okna.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473520"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Porady: wyszukiwanie komunikatu w widoku komunikatów
 Możesz wyszukać określonego komunikatu w widoku komunikatów za pomocą jego uchwytu, typu lub identyfikator komunikatu jako kryterium wyszukiwania. Jeden z tych — lub kombinacji — będą prawidłowe kryteria. Można również określić początkowego kierunku wyszukiwania. Pola w oknie dialogowym są wstępnie ładowane z atrybutami wybranego komunikatu.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478294"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Widok wątków i zadań za pomocą okna stosów równoległych
 **Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Umożliwia nawigowanie między wątków i ramek stosu na tych wątków. W kodzie zarządzanym **widoku zadania** stosy wywołań pokazuje <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** stosy wywołań pokazuje [zadań grup](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorytmy równoległe](/cpp/parallel/concrt/parallel-algorithms), [agentów asynchronicznych](/cpp/parallel/concrt/asynchronous-agents)i [zadań lekkich](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

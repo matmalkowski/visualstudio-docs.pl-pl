@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562835"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrożenia, która umożliwia tworzenie samoaktualizacji aplikacji systemu Windows, które można instalować i uruchamiać z minimalnym interakcji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie oraz aktualizowanie aplikacje wdrożone przy użyciu technologii ClickOnce, jeśli korzystasz z projektów z języka Visual Basic i Visual C#. Aby uzyskać informacje o wdrażaniu aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476159"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Porady: debugowanie wyjątków ASP.NET
 Debugowanie wyjątkami jest ważną częścią tworzenie niezawodnych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji. Informacje ogólne o tym, jak można debugować wyjątki znajduje się na [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).  

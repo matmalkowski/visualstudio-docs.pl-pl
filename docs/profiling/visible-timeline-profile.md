@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447703"
 ---
 # <a name="visible-timeline-profile"></a>Profil widocznej osi czasu
 Profil widocznej osi czasu dla widoku wątków blokuje zawiera informacje statystyczne i linki do raportów. Można powiększać, pomniejszyć, przewijane w poziomie, Ukryj kanały lub Pokaż kanały, numery w legendzie active zmienić do uwzględnienia, co to jest aktualnie w widoku. Aby wyświetlić raport dotyczący elementu w legendzie, kliknij element.  

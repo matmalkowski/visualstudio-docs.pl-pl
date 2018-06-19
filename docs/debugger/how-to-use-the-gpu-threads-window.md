@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476731"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Porady: korzystanie z okna wątków GPU
 Okno wątków GPU można zbadać i pracy z wątków, które są uruchomione na procesor GPU w aplikacji, która debugowania. Aby uzyskać więcej informacji na temat aplikacji uruchamianych na procesora GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446533"
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** opcja określa systemu Windows lub licznika wydajności aplikacji do zbierania w ustalonych odstępach czasu w profilu Uruchom. System Windows i liczniki wydajności aplikacji są wyświetlane jako znaki w pliku danych profilowania. Można określić wiele liczników wydajności zbierania oddzielne opcje.  

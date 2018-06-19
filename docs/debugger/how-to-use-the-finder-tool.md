@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476188"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzie wyszukiwania można również Znajdź okno podrzędne wyłączone i wykrycia, które okno, aby wyróżnić, jeśli wyłączono podrzędnych przedziały czasu nakładają na.  

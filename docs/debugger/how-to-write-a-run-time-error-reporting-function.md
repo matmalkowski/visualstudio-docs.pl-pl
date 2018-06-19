@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474885"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Porady: pisanie funkcji raportowania błędów czasu wykonywania
 Raportów niestandardowych funkcji błędy środowiska wykonawczego musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Powinien on zwrócić wartość 1 dla debugera.  

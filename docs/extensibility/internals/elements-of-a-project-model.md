@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135562"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnić podstawowej struktury: modelu projektu dla danego typu projektu. W modelu projektu jest pakiet VSPackage, tworzysz, tworzenia obiektów, które spełniają swoje decyzje dotyczące projektu i współdziała z globalnej funkcji udostępnianych przez usługę IDE. Mimo że można kontrolować, jak element projektu jest trwały, na przykład nie kontrolujesz powiadomienia musi zostać utrwalony pliku. Gdy użytkownik umieszcza fokus w elemencie Otwórz projekt i wybiera **zapisać** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu paska, kodzie typ projektu musi przechwycić polecenie z IDE, utrwalić pliku, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.  

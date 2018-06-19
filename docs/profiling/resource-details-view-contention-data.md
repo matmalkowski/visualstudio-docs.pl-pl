@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584402"
 ---
 # <a name="resource-details-view---contention-data"></a>Widok szczegółów zasobów - dane Kontencji
 Widok szczegółów zasobów przedstawia wykres osi czasu zdarzeń blokujące, które zostały spowodowane rywalizacji za pośrednictwem wybranego zasobu. To blokującego zdarzenie występuje, gdy wątek jest wymuszone wstrzymania wykonywania, ponieważ inny wątek został zablokowany dostęp do zasobu.  

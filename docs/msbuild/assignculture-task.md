@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578721"
 ---
 # <a name="assignculture-task"></a>AssignCulture — Zadanie
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kultury identyfikator. Na przykład nazwa pliku Form1.fr fr.resx ma osadzonych kultury identyfikator "fr-fr", dlatego to zadanie spowoduje utworzenie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie również tworzy listę nazw plików z kulturą usunięte z nazwy pliku.  

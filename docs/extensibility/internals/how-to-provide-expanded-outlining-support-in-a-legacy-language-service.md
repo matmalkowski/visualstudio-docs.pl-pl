@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132154"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Porady: Podaj rozszerzona obsługa zwijania w starsza wersja usługi języka
 Dostępne są dwie opcje do rozszerzania zwijania obsługę języka poza obsługi **Zwiń definicji** polecenia. Możesz dodać regionów kontrolowane przez Edytor konspektu i dodawanie regionów konspektu kontrolowane przez klienta.  

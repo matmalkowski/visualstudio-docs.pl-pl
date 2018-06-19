@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128775"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Porady: pomijanie powiadomienia o zmianie pliku
 Po zmianie pliku fizycznego reprezentująca bufor tekstowy, zostanie wyświetlone okno dialogowe z komunikatem **czy chcesz zapisać zmiany w następujących elementach?** Jest to nazywane powiadomienia o zmianie pliku. Jeśli wiele zmian mają być do pliku, jednak to okno dialogowe Wyświetlanie wielokrotnie może szybko stać się irytujące.  

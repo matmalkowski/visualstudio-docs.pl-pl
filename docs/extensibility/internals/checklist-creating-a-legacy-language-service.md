@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133212"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starsza wersja usługi języka
 Poniższa lista kontrolna zawiera podsumowanie podstawowe kroki, które należy wykonać, aby utworzyć usługę języka [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] core edytora. Integracja usługi języka do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [zapisywania ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [programu Visual Studio Extensibility debugera](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

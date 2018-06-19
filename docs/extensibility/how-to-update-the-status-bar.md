@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134499"
 ---
 # <a name="how-to-update-the-status-bar"></a>Porady: aktualizowanie paska stanu
 **Pasek stanu** pasek sterowania znajduje się u dołu wiele okien aplikacji zawiera jeden lub więcej wierszy tekstu stanu lub wskaźników.  

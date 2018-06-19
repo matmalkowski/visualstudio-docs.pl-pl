@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132724"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązania przechowywania właściwości poziomu rozwiązania. Bezpośrednie ich zachowanie **Start** klucza (F5) i **kompilacji** poleceń. Domyślnie te polecenia skompilować i uruchomić z konfiguracji debugowania. Zarówno polecenie zostanie wykonane w ramach konfiguracji rozwiązania. Oznacza to, że użytkownik może spodziewać się F5 do uruchamiania i kompilacji, niezależnie od aktywne rozwiązanie są konfigurowane za pomocą ustawienia. Środowisko zaprojektowano w celu optymalizacji dla rozwiązania, a nie projektów po przejściu do tworzenia i uruchamiania.  

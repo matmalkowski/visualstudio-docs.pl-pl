@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133192"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisy, część druga
 W [nowej generacji projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy jak **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows aplikacji**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i klikniętej OK.  

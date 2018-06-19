@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560716"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 ClickOnce — aplikacje są oparte na programie .NET Framework i obowiązują ograniczenia zabezpieczeń dostępu kodu. Dlatego jest ważne, że rozumiesz konsekwencje kod dostępu zabezpieczeń i w związku z tym zapisu aplikacji ClickOnce.  

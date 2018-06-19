@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131501"
 ---
 # <a name="command-routing-algorithm"></a>Polecenie algorytmu routingu
 W programie Visual Studio polecenia są obsługiwane przez wiele różnych składników. Polecenia są kierowane z najbardziej kontekstu, która jest oparta na bieżącym zaznaczeniu, peryferyjnych kontekst (znanej także jako globalny). Aby uzyskać więcej informacji, zobacz [dostępności](../../extensibility/internals/command-availability.md).  

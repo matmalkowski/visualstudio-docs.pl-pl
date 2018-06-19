@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141037"
 ---
 # <a name="vstextbuffer-object"></a>Obiekt VSTextBuffer
 Obiekt buforu tekstu reprezentuje strumień tekst Unicode, który jest zwykle skojarzone z plikiem. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu można użyć poza kontekstem edytora podstawowe, jak w przypadku kreatora.  

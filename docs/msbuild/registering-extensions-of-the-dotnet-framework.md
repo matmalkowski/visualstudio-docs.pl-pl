@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579046"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Rejestrowanie rozszerzeń środowiska .NET Framework
 Można utworzyć zestawu, który rozszerza określonej wersji programu .NET Framework. Aby włączyć zestaw pojawią się w programie Visual Studio **Dodaj odwołania** okno dialogowe, należy dodać folder zawierający go do rejestru systemowego.  

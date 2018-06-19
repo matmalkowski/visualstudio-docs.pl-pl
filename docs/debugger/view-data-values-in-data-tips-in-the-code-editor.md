@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477332"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w etykietek danych w edytorze kodu
 Etykietki danych Podaj wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. Etykietki danych działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania.

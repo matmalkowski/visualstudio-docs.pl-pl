@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479745"
 ---
 # <a name="no-source-available"></a>Nie jest dostępne żadne źródło
 Projekt nie zawiera kodu źródłowego dla kodu, który chcesz wyświetlić. Najczęstszą przyczyną jest dwukrotnie moduł, który nie ma kodu źródłowego w **okna stosu wywołań** lub **okno wątków**. Można kontynuować debugowania, ale nie można użyć okna źródła można ustawić punktów przerwania i wykonywać inne akcje w tej lokalizacji. Jeśli trzeba ustawić punkt przerwania, użyj **dezasemblacja, okno** zamiast tego.  

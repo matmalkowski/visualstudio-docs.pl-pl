@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703960"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
 Wyświetla wybrany lub określony tekst w polu wyrażenie [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) okna. To okno dialogowe służy do obliczania bieżącą wartość zmiennej lub wyrażenie rozpoznawane przez debuger lub zawartość rejestru. Ponadto można zmienić wartość zmiennej żadnych wartością stałą lub zawartość dowolnego rejestru.

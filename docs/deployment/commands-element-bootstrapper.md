@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566202"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; elementu (programu inicjującego)
 `Commands` Testy opisanego przez elementy podrzędne implementuje element `InstallChecks` elementu i oświadcza, które pakiety [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programu inicjującego należy zainstalować, jeśli test zakończy się niepowodzeniem.  

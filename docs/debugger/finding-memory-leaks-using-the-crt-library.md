@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477865"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, która była przydzielona wcześniej, są najbardziej delikatny i twardych do wykrycia błędów w aplikacji C/C++. Przeciek pamięci może pozostać niezauważone w pierwszej, ale wraz z upływem czasu, przeciek pamięci progresywnego może spowodować objawy zakresu spadek wydajności do awarii po uruchomieniu aplikacji za mało pamięci. Gorsze ulatniający aplikacji, która używa wszystkich dostępną pamięć, może spowodować inna aplikacja awarię, tworzenie pomyłek, które odpowiada aplikacji. Przecieki pamięci nieszkodliwe może być nawet pozornie objawowych innych problemów, które powinno zostać naprawione.  

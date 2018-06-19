@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471603"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (Destruktor)
 Niszczy wystąpienia `VsgDbg` klasy. Informacji graficznych aktywnie są rejestrowane, plik dziennika grafiki jest zakończona i zamknięte, a udostępnieniu zasobów, które były używane podczas aktywnie przechwytywanie informacji graficznych.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475689"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Porady: przełączanie na inny wątek podczas debugowania w programie Visual Studio
 Podczas debugowania aplikacji wielowątkowych służy jednej z kilku metod przejść z wątku, który pracy z do innego wątku.
