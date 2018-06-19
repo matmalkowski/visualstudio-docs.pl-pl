@@ -1,19 +1,20 @@
 ---
 title: Metoda Set (Int32Array) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: c0716454-88dc-43d5-8ce9-f8fdc91da4c5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791305"
 ---
 # <a name="set-method-int32array"></a>Metoda set (Int32Array)
 Ustaw wartość lub tablicę wartości.  

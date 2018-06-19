@@ -1,18 +1,18 @@
 ---
-title: "Przy użyciu środowiska uruchomieniowego systemu Windows w języku JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przy użyciu środowiska uruchomieniowego systemu Windows w języku JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/03/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792034"
 ---
 # <a name="using-the-windows-runtime-in-javascript"></a>W języku JavaScript za pomocą środowiska wykonawczego systemu Windows
 Podczas pisania aplikacji systemu Windows platformy Uniwersalnej środowiska wykonawczego systemu Windows klas, metod i właściwości można użyć w podobnie jak że użyje natywny obiektów JavaScript, metod i właściwości. Ten temat zawiera informacje wprowadzające i linki do tematów dotyczących podstawowych koncepcji przy użyciu interfejsów API środowiska wykonawczego systemu Windows w języku JavaScript, w tym wyjaśnienie sposobu typów środowiska wykonawczego systemu Windows są reprezentowane, jak używać metod asynchronicznych środowiska wykonawczego systemu Windows, i jak do nasłuchiwania i obsługi zdarzeń środowiska wykonawczego systemu Windows.  

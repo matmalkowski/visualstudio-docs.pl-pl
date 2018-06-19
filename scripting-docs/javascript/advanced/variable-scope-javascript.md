@@ -1,12 +1,13 @@
 ---
 title: Zakres zmiennej (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789115"
 ---
 # <a name="variable-scope-javascript"></a>Zakres zmiennej (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]ma dwa zakresy: globalne i lokalne. Zmienna, która jest zadeklarowana poza definicją funkcji jest zmienną globalną i jego wartość jest dostępna i modyfikować w programie. Zmienna, która jest zadeklarowana w definicji funkcji jest lokalny. Jest tworzone i niszczone za każdym razem funkcja jest uruchomiona, i są niedostępne na dowolny kod poza funkcją. Język JavaScript nie obsługuje zakresie bloku (w którym zestaw nawiasów klamrowych `{. . .}` definiuje nowy zakres), z wyjątkiem w szczególnych przypadkach zmiennych o zakresie bloku.  

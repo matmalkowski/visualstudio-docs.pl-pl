@@ -1,14 +1,14 @@
 ---
-title: "Jsgetindexedpropertiesexternaldata — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Jsgetindexedpropertiesexternaldata — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 2c313163-3462-42fd-8dee-3dfb3ac7f43f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788305"
 ---
 # <a name="jsgetindexedpropertiesexternaldata-function"></a>JsGetIndexedPropertiesExternalData — funkcja
 Pobiera informacje o danych zewnętrznych indeksowanej właściwości obiektu.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135951"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starsza wersja usługi języka
 Kolorowanie składni to funkcja, która powoduje, że różne elementy języka programowania, który będzie wyświetlany w pliku źródłowym w różnych kolorach i style. Do obsługi tej funkcji, należy podać analizator lub skanera, który można określić typy elementów leksykalne lub tokenów w pliku. Wiele języków rozróżnienia słowa kluczowe, ograniczniki (na przykład lub nawiasy klamrowe nawiasy) i komentarze przez kolorowanie je na różne sposoby.  

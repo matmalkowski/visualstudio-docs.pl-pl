@@ -1,13 +1,13 @@
 ---
 title: Bitowy Operator przypisania OR (| =) (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - bitwise operators, OR operator
 - OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789034"
 ---
 # <a name="bitwise-or-assignment-operator--javascript"></a>Operator przypisania sumy bitowej OR (|=) (JavaScript)
 Wykonuje logiczną lub na wartość zmiennej i wartość wyrażenia i przypisuje wynik do zmiennej.  

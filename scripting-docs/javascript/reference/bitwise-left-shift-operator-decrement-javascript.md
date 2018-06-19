@@ -1,13 +1,13 @@
 ---
-title: "Bitowy Operator przesunięcia w lewo (&lt;&lt;) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Bitowy Operator przesunięcia w lewo (&lt;&lt;) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - <<
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - << operator, about << operator
 - bitwise operators, Left Shift operator
 ms.assetid: 18148596-7b86-4add-aeef-106991c69435
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789163"
 ---
 # <a name="bitwise-left-shift-operator-ltlt-javascript"></a>Bitowy Operator przesunięcia w lewo (&lt;&lt;) (JavaScript)
 Po lewej wykonuje przesunięcie bitów wyrażenia.  

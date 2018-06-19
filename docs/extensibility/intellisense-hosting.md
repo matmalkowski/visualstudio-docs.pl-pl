@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135728"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense Hosting
 Program Visual Studio pozwala IntelliSense hosting. IntellSense hosting umożliwia podanie IntelliSense do kodu, który nie jest obsługiwany przez Edytor tekstu Visual Studio.  

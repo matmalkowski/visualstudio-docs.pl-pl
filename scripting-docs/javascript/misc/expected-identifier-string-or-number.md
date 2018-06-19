@@ -1,13 +1,13 @@
 ---
-title: "Oczekiwano identyfikatora, ciągu lub liczbę | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Oczekiwano identyfikatora, ciągu lub liczbę | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1028
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788692"
 ---
 # <a name="expected-identifier-string-or-number"></a>Oczekiwano identyfikatora, ciągu lub numeru
 Błędna składnia literału umożliwia deklarowanie literałów obiektu. Właściwości literału obiektu musi być identyfikatora, ciągu lub liczbą. Literał obiektu (zwane również "inicjatora obiektu") składa się z listy rozdzielanej przecinkami pary właściwość: wartość wszystkie zamknięte w nawiasach kwadratowych. Na przykład:  

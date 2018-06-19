@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464839"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Utwórz niestandardowe Wizualizatory danych
  Wizualizatory są składnikami [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] debugera interfejsu użytkownika. A *wizualizatora* tworzy okno dialogowe lub inny interfejs do wyświetlenia w taki sposób, który jest jego typu danych zmiennej lub obiektu. Na przykład wizualizatora HTML interpretuje ciąg HTML i wyświetla wynik w postaci pojawią się w oknie przeglądarki; Wizualizator mapy bitowej interpretuje struktury mapy bitowej i wyświetla grafiki, który reprezentuje. Niektóre wizualizatorów umożliwiają modyfikowanie, a także wyświetlić dane.

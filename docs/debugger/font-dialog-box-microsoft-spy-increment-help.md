@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471167"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Okno dialogowe czcionek (Microsoft Spy++ — Pomoc)
 To okno dialogowe służy do konfigurowania znak czcionkę w [widoków Spy ++](../debugger/spy-increment-views.md) okna. Aby wyświetlić to okno dialogowe, rozwiń węzeł **widoku** menu i wybierz polecenie **czcionki**.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142583"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odwołanie do schematu manifestu szablonu programu Visual Studio
 Ten schemat opisuje formatu plików manifestu (.vstman) szablonu Visual Studio wygenerowany dla szablonów projektów lub elementów programu Visual Studio oraz lokalizacja oraz inne istotne informacje o szablonie.  

@@ -1,19 +1,20 @@
 ---
-title: "Jaki &#39; s nowego w języku JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Jaki &#39; s nowego w języku JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 342b68ef-df93-48c4-81de-bdf6b6ce58d9
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792151"
 ---
 # <a name="what39s-new-in-javascript"></a>Jaki &#39; s nowego w języku JavaScript
 Ten dokument zawiera listę nowych funkcji w języku JavaScript, które są obsługiwane zarówno w [tryb Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]i aplikacji ze Sklepu Windows Phone.  

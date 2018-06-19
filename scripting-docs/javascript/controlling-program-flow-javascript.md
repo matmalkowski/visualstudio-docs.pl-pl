@@ -1,12 +1,13 @@
 ---
-title: "Sterowanie przepływem programu (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sterowanie przepływem programu (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789304"
 ---
 # <a name="controlling-program-flow-javascript"></a>Sterowanie przepływem programu (JavaScript)
 Zwykle instrukcje w [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] skryptu są wykonywane jeden po drugim, w kolejności, w którym są zapisywane. Jest nazywana wykonywania sekwencyjnego, a jest to domyślny kierunek przepływu danych programu.  

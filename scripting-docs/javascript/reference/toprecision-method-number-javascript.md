@@ -1,13 +1,13 @@
 ---
-title: "toPrecision — metoda (numer) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: toPrecision — metoda (numer) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toPrecision
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toPrecision method
 ms.assetid: ac13c82f-1038-447a-823f-f755bba535ca
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791725"
 ---
 # <a name="toprecision-method-number-javascript"></a>toPrecision — Metoda (Numer) (JavaScript)
 Reprezentuje numer w notacji wykładniczej lub stałoprzecinkowego z określonej liczby cyfr.  

@@ -1,12 +1,13 @@
 ---
 title: Tryb z ograniczeniami (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1038
@@ -25,7 +26,7 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -34,6 +35,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789262"
 ---
 # <a name="strict-mode-javascript"></a>Tryb z ograniczeniami (JavaScript)
 Tryb z ograniczeniami jest sposób wprowadzenie lepsze sprawdzanie błędów w kodzie. Użycie tryb z ograniczeniami, użytkownik nie może, na przykład używać zmiennych niejawnie zadeklarowanej przypisać wartości do właściwości tylko do odczytu lub dodawanie właściwości do obiektu, który nie jest rozszerzony. Ograniczenia są wymienione w [ograniczenia dotyczące kodu w trybie z ograniczeniami](../../javascript/advanced/strict-mode-javascript.md#rest) później w tym temacie. Aby uzyskać dodatkowe informacje w trybie z ograniczeniami, zobacz [specyfikacji języka ECMAScript, 5. Wersja](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134994"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Wdrażanie usługi języka starsza wersja
 Do wdrożenia usługi języka przy użyciu zarządzanego pakietu framework (MPF), musi pochodzić z klasy <xref:Microsoft.VisualStudio.Package.LanguageService> klasy i implementować następujące metody abstrakcyjne i właściwości:  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30306724"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Uczenie modelu przy użyciu TensorFlow w chmurze
 

@@ -26,6 +26,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454547"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatorów wyrażeń, działające po wprowadzeniu wyrażenia w **QuickWatch** okno dialogowe **czujki** okna, lub **Immediate** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okno i wielu innych miejscach w debugerze.

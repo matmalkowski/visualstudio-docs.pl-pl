@@ -1,19 +1,20 @@
 ---
-title: "Uint32array — obiekt | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uint32array — obiekt | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: c4bf5409-2d4b-4660-9f4b-a45d7a02b47e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791980"
 ---
 # <a name="uint32array-object"></a>Uint32Array — Obiekt
 Typizowaną tablicę wartości 32-bitowej liczby całkowitej bez znaku. Zawartość jest inicjowana wartością 0. Jeśli żądanej liczby bajtów nie można przydzielić, zgłaszany jest wyjątek.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140232"
 ---
 # <a name="test-area-6-delete"></a>Testowanie obszaru 6: usuwanie
 Ten obszar testu wtyczkę kontroli źródła obejmuje akcje usuwania.  

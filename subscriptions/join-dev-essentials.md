@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863641"
 ---
 # <a name="how-to-join-visual-studio-dev-essentials"></a>Jak sprzęgać Visual Studio Dev Essentials
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135611"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Porady: Podaj kontekstu edytorów
 Edytora kontekstu jest aktywny tylko wtedy, gdy Edytor ma fokus lub był aktywny bezpośrednio przed fokus została przeniesiona do okna narzędzia. Kontekst dla edytora zapewniają w następujący sposób:  

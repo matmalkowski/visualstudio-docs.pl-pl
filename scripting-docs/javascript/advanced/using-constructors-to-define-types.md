@@ -1,12 +1,13 @@
 ---
-title: "Używanie konstruktorów w celu definiowania typów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Używanie konstruktorów w celu definiowania typów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - objects, creating [JavaScript]
 - constructors, creating
 ms.assetid: e869702e-4caf-4513-8dd5-fe690535f8aa
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788821"
 ---
 # <a name="using-constructors-to-define-types"></a>Używanie konstruktorów w celu definiowania typów
 Konstruktor to funkcja, która tworzy wystąpienie określonego typu [obiektu](../../javascript/objects-and-arrays-javascript.md). Wywołanie konstruktora z **nowe** — słowo kluczowe. Oto kilka przykładów konstruktorów z wbudowanymi obiektami JavaScript i obiektami niestandardowymi.  

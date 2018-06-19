@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307272"
 ---
 # <a name="variables-javascript"></a>Zmienne (JavaScript)
 W [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], zmienna zawiera wartość, na przykład "hello" lub 5. Użycie zmiennej, możesz odwoływać się do danych go reprezentuje, na przykład `NumberOfDaysLeft = EndDate - TodaysDate`.  

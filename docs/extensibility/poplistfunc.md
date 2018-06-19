@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138567"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Tego wywołania zwrotnego został dostarczony do [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE i jest używany przez wtyczkę kontroli źródła, aby zaktualizować listę plików lub katalogów (również dostarczony do `SccPopulateList` funkcji).  

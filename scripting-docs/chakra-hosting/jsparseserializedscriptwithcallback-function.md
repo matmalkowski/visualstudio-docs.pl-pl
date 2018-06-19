@@ -1,13 +1,13 @@
 ---
 title: Funkcja JsParseSerializedScriptWithCallback | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a93ecfb-4b82-4a85-b24c-6816db2332ea
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788551"
 ---
 # <a name="jsparseserializedscriptwithcallback-function"></a>Funkcja JsParseSerializedScriptWithCallback
 Analizuje serializacji skryptu i zwraca funkcję reprezentujący skryptu.     Zapewnia możliwość ładowania opóźnionego źródła skryptu tylko jeśli się jest wymagana.  

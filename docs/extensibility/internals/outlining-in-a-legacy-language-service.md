@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135655"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Konspekt w starsza wersja usługi języka
 Tworzenie konspektu umożliwia zwijane złożony program Przegląd lub konspektu. Na przykład w języku C# wszystkie metody może zostać zwinięty do jednej linii, pokazujący tylko sygnatura metody. Ponadto aby wyświetlić tylko nazwy struktur i klas może zostać zwinięty struktury i klasy. Wewnątrz jednej metody może zostać zwinięty złożonej logiki, aby pokazać ogólny przepływ poprzez wyświetlenie tylko pierwszego wiersza instrukcji takich jak `foreach`, `if`, i `while`.  

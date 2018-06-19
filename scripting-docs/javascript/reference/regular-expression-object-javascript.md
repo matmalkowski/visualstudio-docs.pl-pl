@@ -1,13 +1,13 @@
 ---
-title: "Obiekt będący wyrażeniem regularnym (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obiekt będący wyrażeniem regularnym (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RegularExpression_JavaScript
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - regular expressions, RegExp object
 - RegExp object, overview
 ms.assetid: 346aa83e-a045-47ea-acae-b42c7b121534
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792142"
 ---
 # <a name="regular-expression-object-javascript"></a>Obiekt będący wyrażeniem regularnym (JavaScript)
 Obiekt, który zawiera wzorzec wyrażenia regularnego, wraz z flag określających sposób stosowania ze wzorcem.  

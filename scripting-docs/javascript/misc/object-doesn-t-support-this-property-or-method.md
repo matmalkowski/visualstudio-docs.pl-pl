@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24788869"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>Obiekt&#39;t obsługuje tej właściwości lub metody
 Możesz określić właściwości lub metody, która nie istnieje dla tego obiektu. Nie wszystkie obiekty obsługują wszystkie właściwości i metody.  

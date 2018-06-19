@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459743"
 ---
 # <a name="exe"></a>Exe
 Exe jest jedynym symbolu bez leksykalne lub klasy nadrzędnej, ponieważ reprezentuje on globalnego zakresu pliku .exe lub .dll. Istnieje tylko jeden symbol o `SymTagExe` tagu dla każdego pliku. [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) metoda zwraca symbol.  

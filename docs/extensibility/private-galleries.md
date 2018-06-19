@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139279"
 ---
 # <a name="private-galleries"></a>Galerie prywatnych
 Formanty, szablony i narzędzia tworzonych przez ich firmę można udostępniać *prywatnej galerii* w sieci intranet dla organizacji, w następujący sposób:  

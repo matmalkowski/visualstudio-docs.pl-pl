@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139029"
 ---
 # <a name="source-control-plug-in-glossary"></a>Słownik wtyczkę kontroli źródła
 Poniższe terminy przydatne i definicje odnoszą się do dokumentacji zestawu SDK dodatku typu Plug-in kontroli źródła.  

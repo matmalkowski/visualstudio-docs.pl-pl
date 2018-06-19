@@ -1,13 +1,13 @@
 ---
-title: "getUTCMonth — metoda (Data) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: getUTCMonth — metoda (Data) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getUTCMonth
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - Month method
 - getUTCMonth method
 ms.assetid: eabae139-4da0-4e4a-a4cb-608e6375fc9e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790549"
 ---
 # <a name="getutcmonth-method-date-javascript"></a>getUTCMonth — Metoda (Data) (JavaScript)
 Pobiera miesiąc `Date` przy użyciu uniwersalnego czasu koordynowanego (UTC).  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148954"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone połączyć elementy projektu i interakcji w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio w zakresie spójności:  

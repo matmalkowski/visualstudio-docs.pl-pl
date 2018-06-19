@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135794"
 ---
 # <a name="createpkgdef-utility"></a>Narzędzie elementu CreatePkgDef
 Plik DLL rozszerzenia programu Visual Studio jako parametr przyjmuje i tworzy plik .pkgdef towarzyszące biblioteki dll. Plik .pkgdef zawiera wszystkie informacje, które w przeciwnym razie będzie zapisany w rejestrze systemu, gdy rozszerzenie jest zainstalowane.  

@@ -1,13 +1,13 @@
 ---
 title: JavaScript Oczekiwany obiekt | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5014
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788740"
 ---
 # <a name="javascript-object-expected"></a>JavaScript oczekiwany obiekt
 Próbowano przekazać niż[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu do wbudowanych funkcji, która oczekuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] obiektu. Różne funkcje wbudowane wymagają obiektów zdefiniowanych w [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (a nie obiekty zdefiniowane przez hosta lub składników zewnętrznych, takich jak formantu).  

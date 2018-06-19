@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899948"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypy i dziedziczenie
 W języku JavaScript `prototype` jest właściwością, funkcje i obiekty, które są tworzone za pomocą funkcji konstruktora. Prototyp funkcji jest obiektem. Znajduje podstawowe zastosowanie, gdy funkcja jest używana jako konstruktor.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140219"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in kontroli źródła
 Sekcja odwołania zestawu SDK dodatku typu Plug-in kontroli źródła zawiera specyfikacja interfejsu pełną, który umożliwia systemów kontroli źródła do można zintegrować z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Określa składnię i semantyki różne typy danych i funkcje, które wtyczka do kontroli źródła należy zaimplementować interfejsu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE).  

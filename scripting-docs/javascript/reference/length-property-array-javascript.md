@@ -1,13 +1,13 @@
 ---
-title: "length — właściwość (tablica) (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: length — właściwość (tablica) (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - length Property
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Length property
 - length property (array)
 ms.assetid: e1c6377c-2e84-440a-9660-f1f512e4a938
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790885"
 ---
 # <a name="length-property-array-javascript"></a>length — Właściwość (Tablica) (JavaScript)
 Pobiera lub ustawia długość tablicy. To jest numer wyższy niż najwyższy element zdefiniowany w tablicy.  

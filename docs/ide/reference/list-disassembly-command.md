@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704736"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
 Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.

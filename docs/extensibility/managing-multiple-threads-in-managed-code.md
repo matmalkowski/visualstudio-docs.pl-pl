@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139669"
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Porady: Zarządzanie wiele wątków w kodzie zarządzanym
 Jeśli masz rozszerzenie pakiet VSPackage zarządzanych, które wywołuje metody asynchronicznej lub zawiera operacje, które są wykonywane na wątki innego niż wątek interfejsu użytkownika programu Visual Studio, należy stosować się wskazówek podanych poniżej. Wątku interfejsu użytkownika umożliwia zachowanie reakcji, ponieważ nie trzeba czekać do pracy w innym wątku do wykonania. Możesz wprowadzić kod bardziej wydajne, ponieważ nie ma dodatkowych wątków, które zajmują miejsce na stosie, a można tworzyć bardziej niezawodne i łatwiejsze do debugowania, ponieważ uniknąć zakleszczenie i zawiesza się.  

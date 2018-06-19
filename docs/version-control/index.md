@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795355"
 ---
 # <a name="version-control-in-visual-studio"></a>Kontrola wersji programu Visual Studio
 

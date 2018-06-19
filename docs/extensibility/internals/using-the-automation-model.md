@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136541"
 ---
 # <a name="using-the-automation-model"></a>Przy użyciu modelu automatyzacji
 Po podłączeniu VSPackage automatyzacji, wywołując można uzyskać właściwości i metody <xref:EnvDTE.DTEClass.GetObject%2A> metoda <xref:EnvDTE._DTE> przekazania ciąg reprezentujący obiekt chcesz pobrać obiektu.  

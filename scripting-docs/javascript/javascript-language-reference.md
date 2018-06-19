@@ -1,13 +1,13 @@
 ---
-title: "Dokumentacja języka JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dokumentacja języka JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.General
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript
 ms.assetid: 1c457e66-a6b2-4545-b2dd-33a59d8661e8
-caps.latest.revision: 
+caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789085"
 ---
 # <a name="javascript-language-reference"></a>Dokumentacja języka JavaScript
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]jest językiem skryptowym, który można ją osadzić w innych aplikacjach i stron sieci web.  

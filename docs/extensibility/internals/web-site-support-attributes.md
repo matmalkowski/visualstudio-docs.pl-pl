@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140839"
 ---
 # <a name="web-site-support-attributes"></a>Witryna sieci Web pomocy technicznej atrybutów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt witryny sieci Web może zostać rozszerzony do zapewniają obsługę sieci Web języków programowania. Język musi się zarejestrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby szablony projektu może występować w **nowej witryny sieci Web** okno dialogowe, gdy jest wybrany język.

@@ -1,12 +1,13 @@
 ---
-title: "Tworzenie obiektów (JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie obiektów (JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -26,7 +27,7 @@ helpviewer_keywords:
 - custom objects
 - initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -35,6 +36,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788872"
 ---
 # <a name="creating-objects-javascript"></a>Tworzenie obiektów (JavaScript)
 Istnieją różne sposoby tworzenia własnych obiektów w języku JavaScript. Można bezpośrednio utworzyć wystąpienia [dla obiektu](../javascript/reference/object-object-javascript.md) , a następnie dodać własne właściwości i metod. Lub notacji literału obiektu umożliwia definiowanie obiektu. Funkcja Konstruktor umożliwia również definiowanie obiektu. Aby uzyskać więcej informacji o korzystaniu z funkcji konstruktora, zobacz [za pomocą konstruktorów do definiowania typów](../javascript/advanced/using-constructors-to-define-types.md).  

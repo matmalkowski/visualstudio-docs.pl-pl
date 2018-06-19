@@ -1,14 +1,14 @@
 ---
-title: "Odwołanie (środowisko uruchomieniowe JavaScript) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Odwołanie (środowisko uruchomieniowe JavaScript) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789442"
 ---
 # <a name="reference-javascript-runtime"></a>Odwołanie (środowisko uruchomieniowe JavaScript)
 Interfejsy API środowiska wykonawczego języka JavaScript (JsRT) umożliwiają dodanie funkcji obsługi skryptów do pulpitów i aplikacji po stronie serwera z systemem Windows.  

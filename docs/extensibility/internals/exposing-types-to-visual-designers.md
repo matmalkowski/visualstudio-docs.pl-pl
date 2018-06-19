@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135977"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Udostępnianie typów wizualnych projektantów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć dostęp do definicje klas i typów w czasie projektowania, aby wyświetlić wizualnego projektanta. Klasy są ładowane z wstępnie zdefiniowane zestawy, które obejmują pełne zależności zestawu bieżącego projektu (odniesienia oraz ich zależności). Może być również wymagany do dostępu do klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe wizualnych projektantów.  

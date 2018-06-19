@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863654"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio subskrypcje oferowane do uruchomienia
 Kwalifikowana uruchomień, którzy Dołącz do firmy Microsoft dla programu Startupy mogą uzyskać 5 [miesięczne subskrypcji chmury programu Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/). Są to tej samej subskrypcji, które są oferowane w rynku, bez ograniczeń specjalnych lub ograniczenia. Każda subskrypcja musi być przypisany do użytkownika końcowego (który jest licencjonowanym użytkownikiem) zanim użytkownik może uruchomić program Visual Studio i rozpoznana jako subskrybent Visual Studio Enterprise w VSTS.

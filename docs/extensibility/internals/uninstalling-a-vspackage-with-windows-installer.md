@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141099"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Odinstalowywanie pakiet VSPackage za pomocą Instalatora Windows
 W większości przypadków Instalatora Windows można odinstalować VSPackage tylko przez "Cofanie" zastosowała do zainstalowania VSPackage. Akcje niestandardowe omówione w [polecenia czy musi być Uruchom po instalacji](../../extensibility/internals/commands-that-must-be-run-after-installation.md) musi być uruchamiane po odinstalowaniu również. Ponieważ wywołań devenv.exe występować bezpośrednio przed działania standardowe funkcję InstallFinalize dla instalacji i dezinstalacji, wpisy tabeli Akcja niestandardowa i InstallExecuteSequence obsługiwać obu przypadkach.  

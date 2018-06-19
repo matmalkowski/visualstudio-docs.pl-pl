@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140690"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie obsługi pliku rozszerzenia nazw plików
 Istnieje wiele sposobów, aby określić aplikację, która obsługuje pliku, który ma rozszerzenie określonego pliku. Zleceń OpenWithList i OpenWithProgids są dwa sposoby określania obsługi pliku w obszarze wpis rejestru dla rozszerzenia pliku.  

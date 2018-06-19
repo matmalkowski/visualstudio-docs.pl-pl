@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470790"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Pobiera oryginalnego typu dla tego symbolu. Używany, gdy [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ma ustawioną wartość typu.  

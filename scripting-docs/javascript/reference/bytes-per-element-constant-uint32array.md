@@ -1,19 +1,20 @@
 ---
-title: "Bytes_per_element — stała [Uint32Array] | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Bytes_per_element — stała [Uint32Array] | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9a82d1bf-0e97-4e14-b86f-343ccc8dfac2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788959"
 ---
 # <a name="bytesperelement-constant-uint32array"></a>BYTES_PER_ELEMENT — Stała [Uint32Array]
 Rozmiar w bajtach każdego elementu w tablicy.  

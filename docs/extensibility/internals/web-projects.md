@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141122"
 ---
 # <a name="web-projects"></a>Projekty sieci Web
 System projektu sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzenie aplikacji sieci Web. Zostanie strony sieci Web przy użyciu tradycyjnych języków programowania, takich jak [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], aby zbierać i przetwarzają informacje od użytkownika, zapisz go w bazie danych i tak dalej. Strony sieci Web z kodem skojarzone są nazywane inteligentne stron sieci Web.  

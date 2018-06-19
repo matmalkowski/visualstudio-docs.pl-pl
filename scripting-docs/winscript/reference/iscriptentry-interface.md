@@ -1,16 +1,16 @@
 ---
 title: Interfejs IScriptEntry | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IScriptEntry interface
 ms.assetid: 86da3bc1-58b7-4d73-87ab-bc3ce34e3f41
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24795097"
 ---
 # <a name="iscriptentry-interface"></a>Interfejs IScriptEntry
 Obiekt, który implementuje `IScriptEntry` interfejsu reprezentuje blok skryptu albo obiektem funkcji.  

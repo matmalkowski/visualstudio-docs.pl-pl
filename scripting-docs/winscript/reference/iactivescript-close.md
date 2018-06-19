@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::Close | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Close
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Close
 ms.assetid: cc7dd63b-1d7e-410a-857b-09ea3aade275
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791803"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Powoduje, że aparat skryptów abandon dowolnego skryptu aktualnie załadowanych utratę stanu i zwolnić wszystkie wskaźniki interfejsu, wymagana jest wartość inne obiekty, w związku z tym wprowadzanie stanie zamkniętym. Wychwytywanie zdarzeń, natychmiast wykonać skryptu tekst i wywołań makra, które są już w toku zostały zakończone przed zmianą stanu (Użyj [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) anulować uruchomiony wątek skryptu). Tej metody należy wywołać można przez hosta tworzenia interfejsu zwolnieniu aby zapobiec problemom odwołanie cykliczne.  

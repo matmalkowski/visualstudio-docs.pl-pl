@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135717"
 ---
 # <a name="registering-a-legacy-language-service"></a>Zarejestrowanie starsza wersja usługi języka
 W ramach zarządzanego pakietu (MPF), usługa języka jest proffered przez pakiet VSPackage (zobacz [VSPackages](../../extensibility/internals/vspackages.md)) i jest zarejestrowana w usłudze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez dodanie kluczy rejestru i zapisów. Ten proces rejestracji odbywa się częściowo podczas instalacji i częściowo w czasie wykonywania.  

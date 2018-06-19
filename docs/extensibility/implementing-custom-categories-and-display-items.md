@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134886"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
 Pakiet VSPackage zapewnia kontrolę nad czcionki i kolory jego tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) za pomocą niestandardowych kategorii i wyświetlania elementów.
@@ -47,7 +48,7 @@ Pakiet VSPackage zapewnia kontrolę nad czcionki i kolory jego tekstu do [!INCLU
 
 ## <a name="to-create-or-identify-categories"></a>Aby utworzyć lub wskazać kategorii
 
--   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\`<Category>`]
+-   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Kategoria >* niezlokalizowana nazwa kategorii.
 
@@ -62,7 +63,7 @@ Pakiet VSPackage zapewnia kontrolę nad czcionki i kolory jego tekstu do [!INCLU
 
 ## <a name="to-create-or-identify-groups"></a>Aby utworzyć lub wskazać grupy
 
--   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\  *\<grupy >*]
+-   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\  *\<grupy >*]
 
      *\<grupy >* niezlokalizowana Nazwa grupy.
 

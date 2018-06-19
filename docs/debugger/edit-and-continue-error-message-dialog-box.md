@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471840"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Komunikat o błędzie Edytuj i kontynuuj — Okno dialogowe
 To okno dialogowe pojawia się podczas debugowania w języku, który obsługuje Edytuj i Kontynuuj, ale **Edytuj i Kontynuuj** nie jest dostępna tylko dla typu zmiany kodu zostały wykonane. Komunikat o błędzie wewnątrz pola zawiera bardziej szczegółowy opis. Możliwe przyczyny przy przeglądaniu to okno dialogowe, które obejmują:  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148629"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Wskazówki: Wyświetlanie pomocy podpisu
 Podpis pomocy (znanej także jako *informacje o parametrach*) wyświetlany w etykietce narzędzia podpis metody, gdy użytkownik wpisze znak start listy parametrów (zazwyczaj nawias otwierający). Trakcie wpisywania parametru i parametr separatora (zazwyczaj przecinkami), element tooltip jest aktualizowana w celu wyświetlenia następny parametr pogrubione. Podpis pomocy można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i wyświetlić Pomoc podpisu dla właśnie tego typu lub można wyświetlić pomocy podpisu dla istniejącego typu zawartości (na przykład "tekst"). Ten przewodnik przedstawia sposób wyświetlenia pomocy podpisu dla typu zawartości "text".  

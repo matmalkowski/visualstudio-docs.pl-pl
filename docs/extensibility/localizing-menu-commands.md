@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142711"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizowanie poleceń Menu
 Możesz podać zlokalizowany tekst menu i narzędzi poleceń, tworząc vsct zlokalizowanych plików i zlokalizowane pliki .resx dla VSPackage, a następnie zaktualizować plików projektu zmiany.  

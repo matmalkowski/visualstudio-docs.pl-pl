@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135518"
 ---
 # <a name="error-handling-and-return-values"></a>Obsługa błędów i wartości zwracane
 Pakiety VSPackage i modelu COM przy użyciu takiej samej architekturze błędy. `SetErrorInfo` i `GetErrorInfo` funkcje są częścią interfejsu programowania aplikacji (API) Win32. Wszelkie pakiet VSPackage w zintegrowane środowisko programistyczne (IDE) mogą wywoływać te globalne API Win32, aby informacje o błędzie sformatowanego rekordu po otrzymaniu powiadomienia o błędach. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zawiera zestawy międzyoperacyjne do zarządzania informacje o błędzie.  

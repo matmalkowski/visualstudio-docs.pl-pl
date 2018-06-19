@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135516"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Rozszerzanie filtru Eksploratora rozwiązań
 Można rozszerzyć **Eksploratora rozwiązań** filtrować funkcji, aby wyświetlić lub ukryć różne pliki. Na przykład można utworzyć filtr, który pokazuje tylko pliki C# klasy fabryki w **Eksploratora rozwiązań**, jak pokazano w tym przewodniku.  

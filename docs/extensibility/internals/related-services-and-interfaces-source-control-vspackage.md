@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135355"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (VSPackage kontroli źródła)
 Ta sekcja zawiera listę wszystkich powiązanych pakiet VSPackage interfejsów w kontroli źródła [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kontroli źródła pakiet VSPackage implementuje niektóre z tych interfejsów i używa innych użytkowników do wykonywania zadań kontroli źródła.  

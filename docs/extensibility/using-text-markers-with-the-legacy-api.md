@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141945"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja
 Znacznik tekst jest przestawne zakres tekstu w buforze, który może mieć wpływ na wyświetlanie i zachowanie obszaru tekstu. Znaczniki zawierają punkty przerwania, zakładki faliste podkreślenie i regionów tylko do odczytu. Znacznikach tekstu zasadniczo różnią się od kolorowanie składni. Kolorowanie składni jest szybkim sposobem przekazywania składni języka, który jest skojarzony z obszaru tekstu. Kolorowanie składni zazwyczaj jest wymagany, gdy Windows odświeża ekranu, gdy szybkość jest istotna. Kolorowanie składni zmienia kolor tekstu. Inne właściwości tekstu, można zmienić znacznikach tekstu. Znaczniki tekst można "float" i zastosować specjalnego zachowania i kolorowania.  

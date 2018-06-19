@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108339"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
 W programie Visual Studio projekty są kontenerami, które deweloperzy korzystać w celu uporządkowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksploratora rozwiązań**. Projekty umożliwiają organizowanie, tworzenia, debugowania i wdróż kod źródłowy i utworzyć odwołania do usług sieci Web, baz danych i innych zasobów.  

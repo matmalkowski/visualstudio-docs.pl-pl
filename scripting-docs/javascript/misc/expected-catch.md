@@ -1,13 +1,13 @@
 ---
 title: Oczekiwano &#39; catch &#39; | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1033
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788995"
 ---
 # <a name="expected-39catch39"></a>Oczekiwano &#39; catch &#39;
 Użyto obsługi wyjątków **spróbuj** zablokować, ale nie zapisano skojarzony **catch** instrukcji. Mechanizm obsługi wyjątków wymaga, aby kod, który może zakończyć się niepowodzeniem, wraz z kodem, który nie należy wykonać, jeśli wystąpi wyjątek, być ujęte w **spróbuj** bloku. Wyjątki są zgłaszane z poziomu **spróbuj** zablokowane, używając **throw** instrukcji i zgłoszony poza **spróbuj** bloku co najmniej jednym **catch**instrukcje.  

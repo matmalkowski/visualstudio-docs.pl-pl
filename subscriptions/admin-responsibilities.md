@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863001"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Omówienie obowiązków administratora
 Jako administrator możesz mieć możliwość Zarządzaj subskrypcjami dla Twojej organizacji.  Rola administratora niesie również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczeń roli administratora.

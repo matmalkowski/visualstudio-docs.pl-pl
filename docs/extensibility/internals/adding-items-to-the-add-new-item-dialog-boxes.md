@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135069"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do Dodaj nowy element okien dialogowych
 Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna się od kluczy rejestru. Jak przedstawiono w następujących wpisach rejestru, w sekcji AddItemTemplates zawiera ścieżkę i nazwę katalogu, w które elementy udostępniona w **Dodaj nowy element** są umieszczane okno dialogowe.  
