@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561558"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Porady: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
 Możesz określić wiersz zaufania ClickOnce do formantu, czy użytkownicy końcowi otrzymują możliwość instalowania aplikacji ClickOnce, takie jak aplikacje systemu Windows Presentation Foundation, aplikacje konsoli, przeglądarce WPF w aplikacji formularzy systemu Windows aplikacje i rozwiązań pakietu Office. Możesz skonfigurować wiersz zaufania poprzez ustawienie kluczy rejestru na komputerze użytkownika końcowego.  

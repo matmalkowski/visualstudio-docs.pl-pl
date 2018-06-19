@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568353"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> Zadań klasyfikuje zestaw zasobów źródła jako te, które zostaną osadzone w zestawie. Jeśli zasób nie jest Lokalizowalny, jest osadzony w zestawie aplikacji głównej; w przeciwnym razie jest osadzony w zestawie satelickim.  

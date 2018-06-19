@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479614"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnozowanie problemów po wdrożeniu
 Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy użyciu funkcji IntelliTrace, obejmują informacje o kompilacji z Twojej wersji, aby umożliwić programowi Visual Studio automatycznie znaleźć poprawnych plików źródłowych i pliki symboli, które są wymagane do debugowania dziennika funkcji IntelliTrace.  

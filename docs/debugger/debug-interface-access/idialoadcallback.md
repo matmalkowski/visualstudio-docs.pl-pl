@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466156"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Odbiera wywołania zwrotne z symboli DIA lokalizowanie procedury, umożliwiając w ten sposób raport dotyczący postępu próba lokalizacji do interfejsu użytkownika.  

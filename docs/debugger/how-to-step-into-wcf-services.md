@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472617"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Porady: usługi WCF krok po kroku
 W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], można przejść do usługi WCF. Jeśli usługa WCF jest w tej samej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania jako klient, naciśnij klawisz punktów przerwania wewnątrz usługi WCF.  

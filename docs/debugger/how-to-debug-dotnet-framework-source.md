@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475642"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Porady: debugowanie źródła .NET Framework
 Debugowanie źródła .NET Framework, musi mieć dostęp do debugowania symbole dla kodu. Należy również włączyć wykonywanie krok po kroku do źródła .NET Framework.  

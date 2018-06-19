@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561457"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański to wirusów lub innych szkodliwych program, który złośliwego innej posiadałaby jako program uzasadnionych ustanowione, zaufanego źródła. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić nie zmodyfikowane pliki i zestawy.  

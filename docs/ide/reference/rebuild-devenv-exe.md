@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704658"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Czyści a potem kompiluje określona konfiguracja rozwiązania.

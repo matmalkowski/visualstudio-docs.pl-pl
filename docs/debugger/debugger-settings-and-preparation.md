@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473319"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugowania i przygotowanie
 W tej sekcji opisano ustawienia właściwości związanych z debugera i przygotowywania było debugowania programu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. W przypadku utworzenia programu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] za pomocą szablonów projektu, te ustawienia są poprawnie ustawione dla Ciebie w konfiguracji debugowania.  

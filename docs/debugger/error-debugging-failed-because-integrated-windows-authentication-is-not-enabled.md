@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477121"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 Uwierzytelnianie użytkownika, który debugowania żądanego uniemożliwiły błąd uwierzytelniania. Taka sytuacja może wystąpić przy próbie wkroczyć do aplikacji sieci Web lub usługi XML sieci Web. Jedną z przyczyn tego błędu jest tym zintegrowane uwierzytelnianie systemu Windows nie jest włączona. Aby go włączyć, postępuj zgodnie z instrukcjami "Aby włączyć zintegrowane uwierzytelnianie systemu Windows".  

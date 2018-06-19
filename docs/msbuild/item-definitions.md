@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572507"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umożliwia deklaracji statycznych elementów w plikach projektu przy użyciu [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Jednak metadanych można wprowadzić tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu o nazwie [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) pozwala pokonać tego ograniczenia. *ItemDefinitionGroup* pozwala zdefiniować zestaw definicje elementów, które dodają domyślnych wartościach metadanych dla wszystkich elementów w typie nazwanego elementu.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475129"
 ---
 # <a name="thread-search-dialog-box"></a>Wyszukiwanie wątków — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierz węzeł określonego wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz pozycję **znaleźć wątku** z **wyszukiwania** menu.  

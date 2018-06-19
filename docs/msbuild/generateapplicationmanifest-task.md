@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575322"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub natywny manifest. Natywny manifest opisuje składnika przez definiowanie unikatową tożsamość składnika i zidentyfikowaniu wszystkie pliki wchodzące w skład składnika i zestawów. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza natywny manifest wskazujący punkt wejścia aplikacji, a następnie określając poziom zabezpieczeń aplikacji.  

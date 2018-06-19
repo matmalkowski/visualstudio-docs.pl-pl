@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466061"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Plik źródłowy Dia2dump.cpp
 Poniższy kod źródłowy Dia2dump.cpp Wyświetla zawartość pliku PDB. Ten kod źródłowy jest używany przez [dia2dump — przykład](../../debugger/debug-interface-access/dia2dump-sample.md).  

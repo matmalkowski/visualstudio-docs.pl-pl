@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574473"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
 Po dodaniu odwołania do zestawu za pomocą karty .NET okna dialogowego Dodaj Odwołanie, odwołanie wskazuje na pośrednie odwołanie do zestawu, który jest zestawem zawierającym wszystkie informacje o typie i podpisie, ale nie musi zawierać żadnego kodu. Karta .NET zawiera listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w .NET Framework. Ponadto wyświetla listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w zarejestrowanych folderach AssemblyFoldersEx używanych przez inne firmy.  

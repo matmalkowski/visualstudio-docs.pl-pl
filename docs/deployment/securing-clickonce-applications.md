@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562471"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje obowiązują ograniczenia zabezpieczeń dostępu kodu w programie .NET Framework, aby ograniczyć dostęp przez kod ma do chronionych zasobów i operacji. Z tego powodu, ważne jest, że rozumiesz konsekwencje zabezpieczenia dostępu kodu, aby zapisać Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.  

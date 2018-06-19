@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481947"
 ---
 # <a name="how-to-stop-code-changes"></a>Porady: zatrzymywanie zmian kodu
 Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, można zatrzymać operacji.  

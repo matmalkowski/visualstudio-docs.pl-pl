@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480270"
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
 Większość symbole mają określonej lokalizacji w pliku obrazu. Lokalizacja symbolu zostanie określony z wartością z przedziału od [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) wyliczenia. Symbol może obsługiwać dodatkowe właściwości, w zależności od jego lokalizacji.  

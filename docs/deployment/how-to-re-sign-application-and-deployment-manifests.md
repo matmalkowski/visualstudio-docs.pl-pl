@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566137"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia
 Po wprowadzeniu zmian do właściwości wdrożenia w aplikacji manifestu dla aplikacji formularzy systemu Windows, aplikacje systemu Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ponownie zalogować się zarówno aplikacji i manifesty wdrożenia z certyfikat. Ten proces gwarantuje, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  

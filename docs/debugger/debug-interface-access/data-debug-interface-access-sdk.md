@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468375"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dane (Zestaw SDK dostępu do interfejsu debugowania)
 Wszystkie zmienne, takie jak parametry, zmienne lokalne, zmienne globalne i elementów członkowskich klasy, są identyfikowane za pomocą `SymTagData` symboli. Wartości stałe (`LocIsConstant`) również są oznaczone symbolem tego typu.  

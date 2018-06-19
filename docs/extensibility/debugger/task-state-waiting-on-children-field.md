@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125508"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>Pole TASK_STATE_WAITING_ON_CHILDREN
 Zadanie zakończono wykonywanie swojego delegata i niejawnie oczekuje na ukończenie zadań podrzędnych dołączone.  

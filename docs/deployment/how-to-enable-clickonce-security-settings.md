@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558623"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Porady: włączenie ustawień zabezpieczeń technologii ClickOnce
 Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączona, aby opublikować aplikację. Odbywa się to automatycznie podczas publikowania aplikacji przy użyciu Kreatora publikowania.  
