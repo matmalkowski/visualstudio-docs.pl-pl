@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566189"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], nawet jeśli są one tworzone w zintegrowane środowisko programistyczne (IDE) można tworzyć projektów z wiersza polecenia. W rzeczywistości, można ponownie utworzyć projekt utworzone za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który zawiera tylko [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zainstalowane. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub przy użyciu zaawansowanych skryptów techniki poza zakres tworzenia projektu.  

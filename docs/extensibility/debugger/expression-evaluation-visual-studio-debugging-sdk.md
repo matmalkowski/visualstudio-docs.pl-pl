@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109808"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Szacowanie wyrażeń (debugowanie zestawu SDK programu Visual Studio)
 W trybie przerwania musi być może korzystać z prostych wyrażeń zawierających wiele zmiennych programu IDE. Aby to zrobić, aparat debugowania (DE) musi być mogła przeanalizować i ocenić wyrażenie, które jest wprowadzany do jednego z okien IDE.  

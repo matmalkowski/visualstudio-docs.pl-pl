@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578416"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Porady: konfigurowanie obiektów docelowych i zadań
 Do uruchomienia w środowisku, które ich elementami docelowymi, niezależnie od środowiska na komputerze deweloperskim można ustawić wybranego zadania programu MSBuild. Na przykład gdy używasz 64-bitowym komputerze do tworzenia aplikacji danej architektury 32-bitowych obiektów docelowych wybranych zadań są uruchamiane w procesie 32-bitowych.  

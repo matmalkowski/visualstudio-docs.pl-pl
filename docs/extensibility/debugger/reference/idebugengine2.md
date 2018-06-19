@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113097"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Ten interfejs reprezentuje aparat debugowania (DE). Służy zarządzania różnych aspektów sesji debugowania, od utworzenia punktów przerwania do ustawiania i czyszczenia wyjątków.  

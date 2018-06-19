@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561418"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: określanie plików publikowanych za pomocą technologii ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, wszystkie z systemem innym niż kodu w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach można mogą nie ma, należy opublikować określonych plików lub można zainstalować niektórych plików na podstawie warunków. Visual Studio oferuje możliwości Wyklucz pliki, pliki są oznaczane jako pliki danych lub wymagania wstępne i tworzenie grup plików instalacji warunkowego.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112473"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Porównuje kontekst pamięci do każdego kontekstu w podanej tablicy w sposób wskazany przez flag Porównaj zwracanie indeks pierwszego kontekstu zgodny.  

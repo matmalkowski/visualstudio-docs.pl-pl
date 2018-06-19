@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117000"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Ten interfejs umożliwia obiekt wywołujący określić, czy dostawca portu można zachować portów (zapisując je na dysku) między wywołań debugera, a następnie Pobierz listę tych portów konserwowane.  

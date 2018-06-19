@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110868"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 Umożliwia to aparat debugowania, który używa modelu DCOM, aby zadać [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika, aby upewnić się, że Zapora nie blokuje debugowanie zdalne.  

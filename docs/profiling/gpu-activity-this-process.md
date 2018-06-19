@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570388"
 ---
 # <a name="gpu-activity-this-process"></a>Aktywności procesora GPU (ten proces)
 **Aktywności procesora GPU (ten proces)** segmentów w widoku wątków w Concurrency Visualizer reprezentują razy podczas przetwarzania żądania w imieniu bieżącego procesu procesora GPU. Te żądania są wysyłane do procesora GPU jako pamięci (DMA) dostępu do pakietów. Długość segmentu reprezentuje czas procesora GPU zostało przetwarzania pakietów DMA imieniu bieżącego procesu.  

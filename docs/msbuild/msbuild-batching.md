@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570632"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementu i uruchom docelowej lub zadania z każdej z partii.  

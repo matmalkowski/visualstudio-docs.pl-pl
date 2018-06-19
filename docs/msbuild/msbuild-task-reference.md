@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576043"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej liście uwzględniono z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są używane do tworzenia [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadania w programie Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  

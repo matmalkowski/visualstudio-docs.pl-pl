@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899358"
 ---
 # <a name="annotating-function-behavior"></a>Zachowanie funkcji dodawania adnotacji
 Oprócz Dodawanie adnotacji do [parametry funkcji i wartości zwracane](../code-quality/annotating-function-parameters-and-return-values.md), może dodawać adnotacje do właściwości całej funkcji.

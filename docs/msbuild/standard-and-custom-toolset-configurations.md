@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573118"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narzędzi, które służy do tworzenia aplikacji projektu. MSBuild obejmuje standardowych narzędzi, ale można również utworzyć niestandardowe procesami. Aby uzyskać informacje o określaniu zestawu narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

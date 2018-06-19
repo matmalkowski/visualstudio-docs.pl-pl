@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108352"
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugera jest wdrażany jako pakiet VSPackage i zarządza nimi cała debugowanie. Sesja debugowania obejmuje następujące elementy:  

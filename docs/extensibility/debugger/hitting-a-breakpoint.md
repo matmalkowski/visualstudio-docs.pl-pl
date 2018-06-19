@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109145"
 ---
 # <a name="hitting-a-breakpoint"></a>Aktywując punkt przerwania
 Poniżej opisano proces, gdy aparat debugowania (DE) trafienia punktu przerwania podczas uruchamiania lub wykonywanie krok po kroku:  

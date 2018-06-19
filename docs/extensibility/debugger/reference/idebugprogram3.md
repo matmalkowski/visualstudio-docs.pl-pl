@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121768"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Ten interfejs reprezentuje program, który działa w procesie i rozszerza [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) przez podanie informacji o wątku.  

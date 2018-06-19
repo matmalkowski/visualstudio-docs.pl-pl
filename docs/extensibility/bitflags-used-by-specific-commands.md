@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108789"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Używane przez określonego polecenia flag bitowych
 Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źródła może być modyfikowany przez ustawienie jednego lub więcej bitów w pojedynczej wartości. Te wartości są określane jako flag bitowych. Różne flag bitowych używany przez interfejs API dodatku typu Plug-in kontroli źródła są szczegółowo opisane w tym miejscu pogrupowane według funkcji, która używa ich.  

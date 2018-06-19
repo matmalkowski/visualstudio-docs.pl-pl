@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575796"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Wskazówki: tworzenie zadania wbudowanego
 Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. W programie .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie masz Utwórz osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573447"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> Zadań zwraca katalogu bieżącego [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] środowiska wykonawczego.  

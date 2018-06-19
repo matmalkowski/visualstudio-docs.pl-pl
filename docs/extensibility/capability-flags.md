@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108391"
 ---
 # <a name="capability-flags"></a>Flagi możliwości
 SCC_CAP_*xxx* flagi są flagi bitów służy do określania możliwości wtyczka do kontroli źródła. SCC_EXCAP_*xxx* flagi są przyrostowe flagi, które wskazują rozszerzone możliwości i rozpoznać wartości będące liczbami całkowitymi.  

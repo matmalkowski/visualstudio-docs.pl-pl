@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569358"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly — Zadanie
 Odczytuje metadanych w obrębie określonego zestawu i dodaje niezbędne wpisy w rejestrze, dzięki czemu klienci COM utworzyć [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klas w sposób niewidoczny dla użytkownika. Zachowanie tego zadania jest podobny, ale nie są identyczne, te [Regasm.exe (narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

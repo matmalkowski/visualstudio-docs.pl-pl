@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109454"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia z pakiet VSPackage
 W tym przewodniku przedstawiono sposób tworzenia projektu VSIX i Dodaj element projektu pakiet VSPackage. Pakiet VSPackage zostanie wykorzystany do pobrania usługi powłoki interfejsu użytkownika, aby pokazać okno komunikatu.  

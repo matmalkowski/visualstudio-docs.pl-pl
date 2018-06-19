@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120562"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Ten interfejs zarejestrowanych umożliwia sesji debugowania (SDM), aby uzyskać informacje o programach "opublikowane" za pośrednictwem Menedżera [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfejsu.  

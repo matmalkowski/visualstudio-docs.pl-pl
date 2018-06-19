@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563056"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależności&gt; elementu (wdrażania ClickOnce)
 Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacji.  

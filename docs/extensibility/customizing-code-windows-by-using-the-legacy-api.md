@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109967"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Dostosowywanie kodu systemu Windows przy użyciu interfejsu API starsza wersja
 Okno kodu jest obiekt okno dokumentu, który obsługuje co najmniej jeden widok tekstu. Dokładne funkcje okna kodu są zależne od usługi skojarzone języka. W trybie interfejsu wielu dokumentów (MDI) w oknie Kod jest ramki podrzędnych MDI.  

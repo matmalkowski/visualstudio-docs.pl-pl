@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109691"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego zaimplementowana IDE
 Aby Integracja z zintegrowane środowisko programistyczne (IDE) jako bezproblemowe, jak to możliwe oraz zapewnienie ujednoliconego końcowego wtyczkę kontroli źródła można użyć funkcji wywołania zwrotnego, które są implementowane przez IDE. Wtyczka może wywoływać te funkcje w odpowiednich momentach operacji kontroli źródła do przekazywania informacji do środowiska IDE; IDE można następnie wyświetlić te informacje jako elementy osadzone w jego natywnego interfejsu użytkownika. Użytkownik ma mniej pofragmentowane środowisko, w tym scenariuszu niż Jeśli wtyczka zatrudnionych własnego interfejsu użytkownika.  

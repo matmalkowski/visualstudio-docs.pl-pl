@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568643"
 ---
 # <a name="creating-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
 Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając wybranie zdarzenia, które chcesz monitorować podczas kompilacji projektów w systemie wieloprocesorowym. Przez włączenie przekazywania rejestratorów, można zapobiec niechciane zdarzenia z przeciążając uda się rozpoznać rejestratora centralnego, spowalniając czas kompilacji i przeładowania dziennika.  

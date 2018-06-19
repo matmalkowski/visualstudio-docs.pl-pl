@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108365"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder — Element (szablony Visual Studio)
 Określa, czy należy sprawdzić, czy katalog docelowy, na którym ma być utworzony projekt nie istnieje. Jeśli katalog istnieje, można utworzyć nowego katalogu projektu. To ustawienie jest zazwyczaj zastępowany przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) czy wszystkie popularne typy projektu umożliwia określenie, czy należy utworzyć nowy projekt w nowym katalogu.  

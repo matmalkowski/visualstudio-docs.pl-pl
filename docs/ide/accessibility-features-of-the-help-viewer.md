@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917097"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkcje ułatwień dostępu w Podglądzie pomocy
 Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dla każdego. Ten temat zawiera informacje na temat funkcji, produktów i usług ułatwiających podglądu pomocy firmy Microsoft dostępne dla osób z szeroką gamę możliwości.

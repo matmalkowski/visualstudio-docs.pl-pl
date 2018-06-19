@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578890"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 Program MSBuild używa zestawu narzędzi zadań, elementy docelowe i narzędzia do tworzenia aplikacji. Zazwyczaj narzędzi MSBuild zawiera plik microsoft.common.tasks, microsoft.common.targets i kompilatory, takie jak csc.exe i vbc.exe. Większość procesami może służyć do skompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jednej platformie systemu. Jednak zestaw narzędzi MSBuild 2.0 może służyć do mają być stosowane tylko programu .NET Framework 2.0.  
