@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949646"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Tworzenie rozwiązań języka specyficznego dla domeny, wybierz jeden z szablonów rozwiązania, które są dostępne w Kreatorze projektanta języka specyficznego dla domeny. Wybierając szablon najlepiej odpowiadający język, w którym chcesz utworzyć, można zminimalizować zmiany, które należy do początkowej rozwiązania.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919898"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują naruszeń zasady w bibliotekach kodu zarządzanego. Ostrzeżenia są podzielone na reguły obszarów, takich jak projekt, lokalizacji, wydajności i zabezpieczeń. Każde ostrzeżenie oznacza naruszenia reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dotyczące każdego ostrzeżenia analizy kodu zarządzanego.

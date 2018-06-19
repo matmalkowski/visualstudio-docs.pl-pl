@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946653"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — Okno dialogowe [Visual Studio]
 **Opcje** okno dialogowe umożliwia skonfigurowanie zintegrowane środowisko programistyczne (IDE) do własnych potrzeb. Na przykład można założyć domyślną lokalizację zapisywania dla projektów, zmienić domyślny wygląd i zachowanie systemu windows i tworzenie skrótów do często używanych poleceń. Dostępne są także opcje specyficzne dla języka programowania i platform. Dostęp można uzyskać **opcje** z **narzędzia** menu.

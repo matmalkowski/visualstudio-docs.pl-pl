@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900633"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 Zestaw reguł podstawowe reguły poprawności koncentruje się na błędów logicznych i typowych pomyłek przy używaniu framework interfejsów API. Podstawowe reguły poprawności obejmują reguły w zestawie reguł reguł zalecanych Minimum. Aby uzyskać więcej informacji, zobacz [ustawić zarządzane zalecane reguły dla zarządzanego kodu](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) powinna zawierać tę regułę, ustaw, aby rozszerzyć listę ostrzeżeń, że minimalna zalecana raportu reguł.

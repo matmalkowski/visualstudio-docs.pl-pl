@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099961"
 ---
 # <a name="command-handling"></a>Obsługa poleceń
 Edytor można zdefiniować nowe polecenia. Polecenia są zwykle wyświetlane w menu na pasku narzędzi lub w menu kontekstowym.  

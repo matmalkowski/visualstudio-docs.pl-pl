@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950494"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikowania** strony **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.

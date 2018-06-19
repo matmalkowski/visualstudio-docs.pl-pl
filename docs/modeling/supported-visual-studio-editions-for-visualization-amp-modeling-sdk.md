@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948197"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization &amp; Modeling SDK
 Poniżej przedstawiono listę wersje programu Visual Studio, które są obsługiwane z [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] środowisk do tworzenia i wdrażania. Aby uzyskać więcej informacji na te wersje, zobacz Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Centrum deweloperów](http://go.microsoft.com/fwlink/?LinkId=75628).

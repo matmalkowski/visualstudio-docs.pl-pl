@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948811"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które mają wpływ na działanie funkcji IntelliSense dla języka JavaScript. Dostęp można uzyskać **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozszerzanie **Edytor tekstu**,  **JavaScript**, **IntelliSense.**

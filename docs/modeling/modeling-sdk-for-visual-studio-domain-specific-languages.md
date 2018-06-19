@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950845"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
 Przy użyciu zestawu SDK modelowania dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można utworzyć narzędzia wydajne programowanie oparte na modelu, które można zintegrować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W ten sam sposób można utworzyć co najmniej jedną definicję modelu i zintegrować ją w zestaw narzędzi.

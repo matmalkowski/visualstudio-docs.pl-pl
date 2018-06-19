@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951313"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny języka specyficznego dla domeny (DSL) mogą być wyświetlane dla użytkownika na diagramie i w Eksploratorze z języka i można uzyskać, sprawdzając kod programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.

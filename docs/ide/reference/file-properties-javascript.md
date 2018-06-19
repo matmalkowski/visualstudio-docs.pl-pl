@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947927"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 Wskaż, jakie akcje system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik powinien być dodany do pakietu jako plik zasobów.

@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945860"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opcje, edytor tekstów, Basic (Visual Basic)
 **VB określonych** strony właściwości, **podstawowe** folderu **Edytor tekstu** folderu **opcje** (**narzędzia** menu) — okno dialogowe zawiera następujące właściwości:

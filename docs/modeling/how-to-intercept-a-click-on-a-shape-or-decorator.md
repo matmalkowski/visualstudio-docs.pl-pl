@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952303"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury pokazują, jak przechwycenia kliknięcie ikony dekoratora lub kształtu. Można przechwycić kliknięć, dwukrotne kliknięcia, przeciąga, oraz innych gestów i elementowi odpowiedzi.

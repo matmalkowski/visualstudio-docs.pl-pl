@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953619"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 Tych ogólnych wytycznych mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zasady nie zostały ustalone.

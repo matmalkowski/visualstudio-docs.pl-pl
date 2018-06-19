@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925628"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Porady: tworzenie i modyfikacja poziomów MIP
 W tym dokumencie przedstawiono sposób użycia **edytor obrazów** do generowania i zmodyfikować *poziomów Mipmapy* dla przestrzeni tekstury elementu szczegóły na poziomie (LoD).
