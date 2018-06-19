@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578760"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  

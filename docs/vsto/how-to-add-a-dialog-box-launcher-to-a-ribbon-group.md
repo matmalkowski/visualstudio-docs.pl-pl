@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548396"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Porady: Dodawanie przycisk Uruchom okno dialogowe do grupy wstążek
   Uruchom okno dialogowe można dodać do żadnej grupy na Wstążce. Uruchom okno dialogowe jest mała ikona, który pojawia się w grupie. Użytkownicy kliknij tę ikonę, aby otworzyć określone okno dialogowe lub okienka zadań, które zapewniają więcej opcji, które odnoszą się do grupy.  

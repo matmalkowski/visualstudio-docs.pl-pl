@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573287"
 ---
 # <a name="wpf-targets-files"></a>WPF — Pliki .Targets
 [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] Rozszerza [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] przez dodanie zestawu [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]-określonych zadań, które są łączone w pliku .targets specjalne **Microsoft.WinFX.targets**. Ten plik łączy zbiór [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] zadań, które są wymagane do utworzenia [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] projektu w [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].  

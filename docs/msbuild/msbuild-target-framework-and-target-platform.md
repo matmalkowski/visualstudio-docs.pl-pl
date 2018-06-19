@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578279"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określonej wersji programu .NET Framework i *platformy docelowej*, czyli architektura konkretnego oprogramowania.  Na przykład możesz zastosować aplikacji do uruchamiania na .NET Framework 2.0 na platformie 32-bitowego, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja platformy docelowej i platforma docelowa jest nazywany *kontekst docelowy*.  

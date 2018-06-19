@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477014"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Wyświetl wartości rejestru i korzystanie z okna rejestrów w debugerze programu Visual Studio
 Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie poziomie adresu jest włączone w **opcje** okno dialogowe **debugowanie** węzła, **ogólne** kategorii.  

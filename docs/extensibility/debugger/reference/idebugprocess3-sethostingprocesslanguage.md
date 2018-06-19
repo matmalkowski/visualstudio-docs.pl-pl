@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115164"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Ta metoda określa język, który proces będzie udostępniana w obszarze. Ten język następnie można przez aparat debugowania (DE) załadować ewaluatora wyrażenia odpowiednie.  

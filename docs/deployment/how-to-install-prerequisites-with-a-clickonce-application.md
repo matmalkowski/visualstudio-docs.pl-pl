@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559338"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Porady: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce
 Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wymagają, że poprawna wersja programu .NET Framework jest zainstalowany na komputerze, zanim zostaną one uruchomione; wiele aplikacji ma również inne wymagania wstępne. Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, możesz wybrać zestaw wstępnie wymagane składniki do umieszczone razem z aplikacji. Podczas instalacji zostanie wykonane sprawdzenie dla poszczególnych wymagań wstępnych określić, jeśli już istnieje; Jeśli nie zostanie zainstalowany przed zainstalowaniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  

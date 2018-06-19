@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125906"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Odwołanie (Visual Studio debugowanie interfejsów API)
 Odwołania programu Visual Studio SDK debugowania konspektu podstawowy model Architektura środowiska wykonawczego i funkcje debugera i jego składniki. Dokumentację sprawia, że w kilku założenia możliwie dotyczące składników i interfejsów, które opisują, oprócz zachowania, który definiuje za pośrednictwem interfejsów.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262835"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody Instrumentacji w narzędziach profilowania injects profilowania kodu do kopii modułu. Każdy wpis, zakończenia i wywołanie funkcji funkcji w module kod rejestruje podczas przebiegu profilowania. Metoda Instrumentacji jest przydatne do zbierania czasu szczegółowe informacje o sekcji kodu i zrozumienie wpływu wejściowymi i wyjściowymi operacje na wydajność aplikacji.  

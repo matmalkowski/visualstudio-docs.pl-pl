@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561444"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 *Ciągu zapytania* jest to część adresem URL zaczynającym się znakiem zapytania (?) zawierający dowolne informacje w formularzu *nazwa = wartość*. Załóżmy, że masz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację o nazwie `WindowsApp1` hostującego na `servername`, i chcesz przekazać wartość zmiennej `username` po uruchomieniu aplikacji. Adres URL może wyglądać następująco:  

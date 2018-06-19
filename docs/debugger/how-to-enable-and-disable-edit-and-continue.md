@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480456"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Porady: Włącz i Wyłącz Edytuj i Kontynuuj (C#, VB, C++)
 Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe w czasie projektowania. Nie można zmienić to ustawienie podczas debugowania.  

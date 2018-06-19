@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474849"
 ---
 # <a name="processes-view"></a>Widok procesów
 Widok procesy Wyświetla drzewa wszystkich aktywnych procesów w systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić proces określony system, który zazwyczaj odpowiada zakresowi wykonywania programu. Procesy są identyfikowane za pomocą nazwy modułu lub są wyznaczone "procesy systemowe".  

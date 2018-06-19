@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptErrorDebug::GetDocumentContext | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptErrorDebug.GetDocumentContext
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptErrorDebug::GetDocumentContext
 ms.assetid: 567601a1-551a-4905-bda1-1f54610174f4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24793351"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
 Udostępnia kontekst dokumentu dla tego błędu.  

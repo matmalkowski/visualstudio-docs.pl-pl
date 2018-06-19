@@ -25,6 +25,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477694"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.

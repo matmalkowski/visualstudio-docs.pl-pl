@@ -11,6 +11,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33870757"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Utworzyć Instalatora w trybie Offline dla programu Visual Studio dla komputerów Mac
 

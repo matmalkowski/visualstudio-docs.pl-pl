@@ -27,6 +27,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065309"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] właściwości publikowania aplikacji po raz pierwszy, można ustawić za pomocą Kreatora publikacji. Tylko kilka właściwości są dostępne w Kreatorze; wszystkie inne właściwości są ustawiane na wartości domyślne.  

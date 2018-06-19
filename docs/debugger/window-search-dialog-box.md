@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476634"
 ---
 # <a name="window-search-dialog-box"></a>Wyszukiwanie okien — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierz węzeł w określonym oknie w [widoku systemu Windows](../debugger/windows-view.md). Aby wyświetlić to okno dialogowe, przejść do okna widoku systemu Windows. Następnie wybierz pozycję **Znajdź okno** z **wyszukiwania** menu.  

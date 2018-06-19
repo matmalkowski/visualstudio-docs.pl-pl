@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584142"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Widok Kontencji zasobów - dane Kontencji
 Widok Kontencji zasobów zawiera dane kontencji zasobów, które zostały źródło zdarzenia rywalizacji. Zdarzenia rywalizacji występuje, gdy funkcja w wątku jest wymuszone czekać do uzyskiwania dostępu do zasobu, ponieważ funkcja w innym wątku uzyskał wyłączny dostęp do zasobu. Każdy zasób jest węzła głównego drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały otrzymanie zdarzenia rywalizacji.  

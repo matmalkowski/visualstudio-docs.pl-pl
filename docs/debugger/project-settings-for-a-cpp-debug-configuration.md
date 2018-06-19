@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479248"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania języka C++
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C lub Visual C++ w **strony właściwości** okno dialogowe, zgodnie z opisem w [porady: Ustaw debugowania i wydania konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono gdzie można znaleźć ustawień debugera w **strony właściwości** okno dialogowe.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575660"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączanych dynamicznie (pliki dll) lub moduły kodu (pliki modułu .netmodule). Aby uzyskać więcej informacji o CSC.exe, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).  

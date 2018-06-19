@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475483"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Rozwiązywania niejednoznaczności — Okno dialogowe
 `Resolve Ambiguity` Zostanie wyświetlone okno dialogowe, gdy debuger nie można wybrać lokalizację, aby wyświetlić. Na przykład jeśli korzystasz z szablonów języka C++, można utworzyć wiele funkcji z szablonu jednej funkcji. Jeśli debuger zatrzymuje się w lokalizacji źródłowej, w szablonie i użytkownik wybierze `Go To Disassembly`, debuger ma wiele opcji. Każda funkcja utworzone na podstawie szablonu ma własny kod dezasemblacji i debuger nie może określić, które kodu, który chcesz wyświetlić. `Resolve Ambiguity` — Okno dialogowe można wybrać lokalizację z listy wszystkich odpowiednich lokalizacjach.  

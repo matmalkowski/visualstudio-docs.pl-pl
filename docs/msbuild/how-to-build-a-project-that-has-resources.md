@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569505"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Porady: kompilacja projektu zawierającego zasoby
 Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu użytkownika muszą być rozdzielane do plików zasobów dla różnych języków. Jeśli projekt używa tylko ciągi, pliki zasobów można użyć plików tekstowych. Alternatywnie można użyć pliki .resx jako pliki zasobów.  

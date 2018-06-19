@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114693"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 Żądania następnej program jest uruchomiony kod w tym procesie zatrzymanie i wysyłać [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) obiekt zdarzenia.  

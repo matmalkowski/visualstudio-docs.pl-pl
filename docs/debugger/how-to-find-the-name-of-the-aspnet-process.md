@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473822"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Porada: Znajdowanie nazwy procesu ASP.NET
 Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, musisz znać nazwę [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces:  

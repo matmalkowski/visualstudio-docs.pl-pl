@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577226"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference — Zadanie
 Usuwa odwołania natywnego. Implementuje <xref:Microsoft.Build.Tasks.ResolveNativeReference> klasy. Ta klasa obsługuje infrastrukturę programu .NET Framework, która nie jest przeznaczona do użycia bezpośrednio w kodzie.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262283"
 ---
 # <a name="control-data-collection"></a>Kontrola zbierania danych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania umożliwiają podczas profilowania danych zbieranych podczas sesji wydajności, a także określać funkcje, które są profilowaniu. W tej sekcji opisano sposób uruchomić i zatrzymać zbieranie danych z **Eksplorator wydajności** i **kontroli zbierania danych** systemu windows oraz sposób ograniczyć liczbę obiektów, dla których są zbierane dane profilowania.  

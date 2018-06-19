@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269144"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask — Element (MSBuild)
 Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) elementu do zestawu zawierającego implementację zadania.  

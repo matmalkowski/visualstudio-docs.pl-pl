@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575861"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — Zadanie
 Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejmuje to drugie i `n`th kolejność zależności.  

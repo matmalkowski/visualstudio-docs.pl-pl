@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474609"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości wątku
 Użyj tego okna dialogowego, aby dowiedzieć się więcej o konkretnym wątkiem. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomości. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33995884"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Porady: wizualizacja skojarzeń kolekcji w Projektancie klas
 

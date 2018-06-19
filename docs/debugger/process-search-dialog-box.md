@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475512"
 ---
 # <a name="process-search-dialog-box"></a>Wyszukiwanie procesów — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierz węzeł dla określonego procesu w [widok procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **procesów** okno widoku. Następnie wybierz pozycję **Znajdź proces** z **wyszukiwania** menu.  

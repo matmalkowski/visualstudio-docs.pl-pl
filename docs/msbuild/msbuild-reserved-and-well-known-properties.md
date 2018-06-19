@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573674"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Właściwości MSBuild zarezerwowane i dobrze znane
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia zestaw wstępnie zdefiniowanych właściwości, które zawierają informacje o pliku projektu i [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plików binarnych. Te właściwości są oceniane w taki sam sposób jak inne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości. Na przykład, aby użyć `MSBuildProjectFile` właściwości, wpisz `$(MSBuildProjectFile)`.  

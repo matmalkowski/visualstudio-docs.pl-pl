@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475950"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Ustaw czujki w zmiennych w równoległych wątków w programie Visual Studio
 Okno czujki równoległej może jednocześnie wyświetlać wartości, które posiada jedno wyrażenie w wielu wątkach. Każdy wiersz reprezentuje wątku, który działa w aplikacji, ale może być reprezentowany przez wątek w wielu wierszach. W szczególności każdy wiersz reprezentuje wywołanie funkcji, w której funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienianie kolejności, usuwanie i grupować elementy, które są w kolumnach. Można Flaga, Usuń flagę ze, Zablokuj (Wstrzymaj) i odblokowania wątków (Wznów). Następujące kolumny są wyświetlane w **czujki równoległej** okno:  

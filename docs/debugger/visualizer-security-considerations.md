@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476520"
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
 Pisanie wizualizatora polega na potencjalne zagrożenia. Nie znanego wykorzystać nie istnieje dla tych potencjalnych zagrożeń, ale deweloperów powinien mieć świadomość ich i podjąć odpowiednie środki ostrożności, zgodnie z opisem w tym miejscu, w celu ochrony przed lukami w przyszłości.  

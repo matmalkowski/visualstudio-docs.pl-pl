@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264038"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elementu (Office development w Visual Studio)
   `customHostSpecified` Element wskazuje, że to rozwiązanie nie jest aplikacją samodzielną. Rozwiązania Office zawiera składniki, które są obsługiwane w aplikacjach firmy Microsoft Office.  

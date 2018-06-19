@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479958"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomaga w zrozumieniu wpływ pikseli określone przez zdarzenia Direct3D, jakie występują podczas ramka gry lub aplikacji.  

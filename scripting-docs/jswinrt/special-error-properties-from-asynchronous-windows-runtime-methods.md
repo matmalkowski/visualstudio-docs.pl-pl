@@ -1,15 +1,16 @@
 ---
-title: "Błąd specjalne właściwości asynchronicznego Windows metody środowiska uruchomieniowego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Błąd specjalne właściwości asynchronicznego Windows metody środowiska uruchomieniowego | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -18,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791743"
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>Błąd specjalne właściwości asynchronicznego Windows metody środowiska uruchomieniowego
 Może być trudne do debugowania metod asynchronicznych środowiska wykonawczego systemu Windows w języku JavaScript, ponieważ może zostać zgłoszony błąd z innym głębokie w stosie wywołań. Kod JavaScript `Error` obiekt ma dodatkowe właściwości, które są wyświetlane tylko wtedy, gdy zostanie zgłoszony błąd ze środowiska wykonawczego systemu Windows metody asynchronicznej gdy aplikacja działa w trybie debugowania.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565253"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; elementu (aplikacji ClickOnce)
 Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana na komputerze klienckim.  

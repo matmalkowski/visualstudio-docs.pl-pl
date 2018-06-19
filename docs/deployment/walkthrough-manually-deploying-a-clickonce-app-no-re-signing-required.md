@@ -29,6 +29,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262792"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, klient miał tradycyjnie manifest wdrażania aktualizacji i ponownie zaloguj się. Gdy nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 umożliwia utworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownego generowania nowych manifest wdrażania. Aby uzyskać więcej informacji, zobacz [wdrażania ClickOnce aplikacji do testowania i obsługi serwerów produkcyjnych bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

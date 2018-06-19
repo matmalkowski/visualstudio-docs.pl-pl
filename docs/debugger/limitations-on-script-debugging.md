@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476838"
 ---
 # <a name="limitations-on-script-debugging"></a>Ograniczenia debugowania skryptu
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowanie skryptu po stronie klienta, może ulec ograniczenia w tym temacie.  

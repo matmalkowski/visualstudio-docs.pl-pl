@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571360"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
 W tym temacie opisano błędy MSBuild, które mogą występować z powodu odwołania problemy i jak można usunąć te błędy.  

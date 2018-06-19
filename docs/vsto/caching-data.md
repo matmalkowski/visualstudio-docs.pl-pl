@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264372"
 ---
 # <a name="cache-data"></a>Dane w pamięci podręcznej
   Może buforować dane obiektów w dostosowaniu poziomie dokumentu, tak, aby dane są dostępne w trybie offline lub bez konieczności otwierania programu Microsoft Office Word i Microsoft Office Excel. W pamięci podręcznej obiektu, obiekt musi mieć typ danych, który spełnia określone wymagania. Wiele typowych typów danych w programie .NET Framework spełnia te wymagania, w tym <xref:System.String>, <xref:System.Data.DataSet>, i <xref:System.Data.DataTable>.  

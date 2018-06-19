@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262321"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
   Microsoft Visual Studio i Microsoft Office, zawierają wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowe ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [dostępności witryny sieci Web](http://go.microsoft.com/fwlink/?LinkID=37113).  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264092"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, kliknięciu **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przycisków akcji. Każdy z tych akcji tworzy nowy element poczty i wypełnienie pól elementów przy użyciu informacji z oryginalnego elementu.  

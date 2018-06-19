@@ -17,6 +17,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34063687"
 ---
 # <a name="code-style-preferences"></a>Preferencje styl kodu
 

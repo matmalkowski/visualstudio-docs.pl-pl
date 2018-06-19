@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262515"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Porady: aplikacje pakietu Office docelowym za pośrednictwem podstawowe zestawy międzyoperacyjne
   Podczas tworzenia nowego projektu pakietu Office Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIAs), które są wymagane, aby skompilować projekt. Należy dodać odwołania do innych PIAs w następujących scenariuszach:  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578604"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Porady: ignorowanie błędów w zadaniach
 Czasami ma kompilacji jako odporna na błędy w niektórych zadań. Jeśli te zadania niekrytyczne zakończą się niepowodzeniem, które mają kompilacji, aby kontynuować, ponieważ nadal powodują wymagane dane wyjściowe. Na przykład, jeśli projekt używa `SendMail` zadanie, aby wysłać wiadomość e-mail po utworzeniu każdego składnika można rozważyć go akceptowalne dla kompilacji przejść do ukończenia, nawet w przypadku serwerów poczty są niedostępne i nie można wysyłać komunikaty o stanie. Lub, na przykład, jeśli plików pośrednich zwykle są usuwane podczas kompilacji, można rozważyć go akceptowalne dla kompilacji przejść do ukończenia, nawet wtedy, gdy nie można usunąć tych plików.  

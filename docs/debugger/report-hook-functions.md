@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481181"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 Raport funkcji punktów zaczepienia, zainstalować za pomocą [_crtsetreporthook —](/cpp/c-runtime-library/reference/crtsetreporthook), jest nazywany zawsze [_crtdbgreport —](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje raport debugowania. Można użyć, między innymi do filtrowania raportów skupić się na określonych typów przydziałów. Raport funkcji punktów zaczepienia powinny mieć prototypu podobne do poniższych:  

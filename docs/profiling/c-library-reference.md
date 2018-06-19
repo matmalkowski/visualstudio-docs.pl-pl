@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266375"
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C
 Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżności.  

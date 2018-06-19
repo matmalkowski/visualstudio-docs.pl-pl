@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264779"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce — Metoda (Tablica) (JavaScript)
 Wywołuje funkcję wywołania zwrotnego określony dla wszystkich elementów w tablicy. Zwracana wartość funkcji wywołania zwrotnego jest wynikiem zakumulowanym i jest dostarczana jako argument w następnym wywołaniu funkcji wywołania zwrotnego.  

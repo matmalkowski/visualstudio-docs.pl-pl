@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574938"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Porady: wyświetlanie listy elementów rozdzielanych przecinkami
 Podczas pracy z elementem list w [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), czasami jest to przydatne wyświetlić zawartość tych list elementów w taki sposób, który jest łatwy do odczytania. Lub może być zadanie, które przyjmuje listę elementów oddzielonych ciąg separatora specjalnych. W obu przypadkach można określić ciąg separatora listy elementów.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116799"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Porównuje jedno odwołanie do innego. Zarezerwowane do użytku w przyszłości.  

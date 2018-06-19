@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578058"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wykonywalne (.exe), pliki biblioteki dołączanej (dynamicznie dll) lub plików kodu modułu (modułu .netmodule). Aby uzyskać więcej informacji, zobacz [— opcje kompilatora](/cpp/build/reference/compiler-options).  

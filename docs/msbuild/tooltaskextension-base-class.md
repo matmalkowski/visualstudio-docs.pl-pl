@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569719"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension — Klasa podstawowa
 Wielu zadań, które dziedziczą z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które pochodzi z nich. Te parametry są wymienione w niniejszym dokumencie.  

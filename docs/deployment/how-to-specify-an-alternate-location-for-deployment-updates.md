@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561353"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Porady: określanie alternatywnej lokalizacji aktualizacji wdrażania
 Można zainstalować programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji początkowo z dysku CD lub udziału plików, ale aplikacja musi sprawdzić okresowej aktualizacji w sieci Web. Alternatywnej lokalizacji aktualizacji można określić w manifeście wdrażania, aby aplikację można aktualizować się z sieci Web po początkowej instalacji.  

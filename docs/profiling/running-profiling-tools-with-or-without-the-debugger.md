@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268272"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchom profilowanie narzędzia z lub bez debugera
 Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre z nich (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchomić z lub bez debugera. Narzędzia non debugera wydajności są przeznaczone do uruchamiania na wersji konfiguracji, gdy debuger zintegrowane narzędzia są przeznaczone do uruchamiania na konfiguracji debugowania.  

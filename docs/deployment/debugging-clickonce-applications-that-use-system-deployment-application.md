@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561665"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Debugowanie aplikacji ClickOnce używających System.Deployment.Application
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia można skonfigurować sposób aktualizowania aplikacji. Jednak jeśli chcesz używać i dostosowywanie zaawansowane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funkcje wdrażania, konieczne będzie dostępu do modelu obiektu wdrożenia podał <xref:System.Deployment.Application>. Można użyć <xref:System.Deployment.Application> interfejsy API dla zaawansowanych zadań, takich jak:  

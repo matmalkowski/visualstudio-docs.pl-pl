@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110032"
 ---
 # <a name="debug-package"></a>Debugowanie pakietu
 Pakiet debugowania jest uruchamiany w powłoce programu Visual Studio i obsługuje wszystkie interfejsu użytkownika. Korzysta z programu Visual Studio debugowanie interfejsów, a komunikuje się z menedżerem sesji debugowania (SDM).  

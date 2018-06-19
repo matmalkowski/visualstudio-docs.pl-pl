@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574262"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element nazwany odnosi się do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy w projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku Microsoft.Build.CommonTypes.xsd.  

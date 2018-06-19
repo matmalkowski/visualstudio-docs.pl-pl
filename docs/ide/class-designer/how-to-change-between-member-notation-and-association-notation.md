@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957804"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji w Projektancie klas
 

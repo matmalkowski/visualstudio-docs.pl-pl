@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119477"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Ten interfejs udostępnia porty do menedżera sesji debugowania (SDM).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561860"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Rozwiązywanie problemów z wdrożeniami ClickOnce
 Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń.  

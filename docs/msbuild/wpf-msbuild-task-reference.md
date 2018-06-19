@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573141"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
 Proces kompilacji systemu Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) za sprawą dodatkowego zestawu zadania kompilacji, w tym na kompilowanie zakładek i zasobów procesowych zadań.  
