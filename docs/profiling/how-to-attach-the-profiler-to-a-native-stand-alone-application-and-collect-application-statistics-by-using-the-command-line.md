@@ -94,7 +94,7 @@ W tym artykule opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/include
   
     -   Zamknij aplikacji docelowej.  
   
-2.  Zamknij profilera. Wpisz:  
+2.  Zamknij profilera. Typ:  
   
      **VSPerfCmd** [ /shutdown](../profiling/shutdown.md)  
   
