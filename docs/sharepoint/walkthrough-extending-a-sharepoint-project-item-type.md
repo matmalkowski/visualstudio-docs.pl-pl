@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21e94a842ce4c2b45dd746c96f8e4a84f479a84d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238360"
 ---
-# <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Wskazówki: rozszerzanie typu elementu projektu SharePoint
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Wskazówki: Rozszerzanie typu elementu projektu SharePoint
   Można użyć **modelu łączności danych biznesowych** element projektu do tworzenia modelu usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu w modelu danych jest on wyświetlany użytkownikom. Należy także utworzyć listy zewnętrznej w programie SharePoint, aby umożliwić użytkownikom na wyświetlanie danych.  
   
  W tym przewodniku utworzy to rozszerzenie **modelu łączności danych biznesowych** elementu projektu. Deweloperzy mogą używać rozszerzenia do tworzenia listy zewnętrznej w ich projektu, który wyświetla dane w modelu usługi łączności danych biznesowych. W tym przewodniku przedstawiono następujące zadania:  
   
 -   Tworzenie rozszerzenia programu Visual Studio, który wykonuje dwie główne zadania:  
   
-    -   Generuje on listy zewnętrznej, który wyświetla dane w modelu usługi łączności danych biznesowych. Rozszerzenia używa model obiektów dla systemu projektu SharePoint, aby wygenerować plik Elements.xml, który definiuje listy. Dodane również plik do projektu, aby wraz z modelu BDC jest wdrożona.  
+    -   Generuje on listy zewnętrznej, który wyświetla dane w modelu usługi łączności danych biznesowych. Rozszerzenie używa model obiektów dla systemu projektu SharePoint do generowania *Elements.xml* pliku, który definiuje listy. Dodane również plik do projektu, aby wraz z modelu BDC jest wdrożona.  
   
     -   Dodaje element menu skrótów do **modelu łączności danych biznesowych** projektu elementów w **Eksploratora rozwiązań**. Deweloperzy mogą kliknij ten element menu, aby wygenerować listy zewnętrznej dla modelu usługi łączności danych biznesowych.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Schemat XML dla modeli usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [infrastruktury modelu BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
-## <a name="creating-the-projects"></a>Tworzenie projektów  
+## <a name="create-the-projects"></a>Tworzenie projektów
  W tym przewodniku, należy utworzyć dwa projekty:  
   
 -   Projektu VSIX, aby utworzyć pakiet VSIX do rozszerzenia elementu projektu wdrożenia.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+2.  Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 3.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **Visual Basic** węzłów, a następnie wybierz pozycję **rozszerzalności** węzła.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Usuń plik kodu Class1 z projektu.  
   
-## <a name="configuring-the-extension-project"></a>Konfigurowanie projekt rozszerzenia  
+## <a name="configure-the-extension-project"></a>Skonfiguruj projekt rozszerzenia
  Przed przystąpieniem do napisania kod w celu utworzenia rozszerzenia elementu projektu, należy dodać pliki kodu i odwołania do zestawów w projekcie rozszerzenia.  
   
 #### <a name="to-configure-the-project"></a>Aby skonfigurować projekt  
@@ -112,7 +113,7 @@ ms.lasthandoff: 04/16/2018
   
     -   GenerateExternalDataLists  
   
-2.  Wybierz projekt BdcProjectItemExtension, a następnie na pasku menu wybierz **projektu**, **Dodaj odwołanie**.  
+2.  Wybierz projekt BdcProjectItemExtension, a następnie na pasku menu wybierz **projektu** > **Dodaj odwołanie**.  
   
 3.  W obszarze **zestawy** węzła, wybierz **Framework** węzeł, a następnie zaznacz pole wyboru dla każdej z następujących zestawów:  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Wybierz **OK** przycisku.  
   
-## <a name="defining-the-project-item-extension"></a>Definiowanie rozszerzenia elementu projektu  
+## <a name="define-the-project-item-extension"></a>Zdefiniuj rozszerzenia elementu projektu
  Utwórz klasę, która definiuje rozszerzenie **modelu łączności danych biznesowych** elementu projektu. Aby zdefiniować rozszerzenia implementuje klasy <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfejsu. Zawsze, gdy chcesz rozszerzyć istniejącego typu elementu projektu, należy zaimplementować ten interfejs.  
   
 #### <a name="to-define-the-project-item-extension"></a>Aby zdefiniować rozszerzenia elementu projektu  
@@ -139,7 +140,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]  
   
-## <a name="creating-the-external-data-lists"></a>Tworzenie list danych zewnętrznych  
+## <a name="create-the-external-data-lists"></a>Tworzenie list danych zewnętrznych
  Dodaj częściową definicją `GenerateExternalDataListsExtension` klasy, która tworzy listę danych zewnętrznych dla każdej jednostki w modelu usługi łączności danych biznesowych. Aby utworzyć listę danych zewnętrznych, ten kod odczytuje danych jednostki w modelu BDC najpierw za analizowanie danych XML w pliku modelu BDC. Następnie tworzy wystąpienie listy, który jest oparty na modelu BDC i dodaje do projektu tego wystąpienia listy.  
   
 #### <a name="to-create-the-external-data-lists"></a>Aby utworzyć listę danych zewnętrznych  
@@ -154,9 +155,9 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-build-the-solution"></a>Tworzenie rozwiązania  
   
-1.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+1.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-item-extension"></a>Tworzenie pakietu VSIX, aby wdrożyć rozszerzenia elementu projektu  
+## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Utwórz pakiet VSIX, aby wdrożyć rozszerzenia elementu projektu
  Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX, modyfikując plik Source.Extension.vsixmanifest,a, który jest dołączony do projektu VSIX. Następnie utwórz pakiet VSIX przez utworzenie rozwiązania.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i tworzenia pakietu VSIX  
@@ -184,7 +185,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  W **projektu** wybierz **BdcProjectItemExtension**, a następnie wybierz pozycję **OK** przycisku.  
   
-9. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+9. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
 10. Upewnij się, że projekt kompiluje i tworzy bez błędów.  
   
@@ -192,7 +193,7 @@ ms.lasthandoff: 04/16/2018
   
      Domyślnie jest folder wyjściowy kompilacji... folder \bin\Debug folder zawierający plik projektu.  
   
-## <a name="testing-the-project-item-extension"></a>Testowanie rozszerzenia elementu projektu  
+## <a name="test-the-project-item-extension"></a>Testowanie rozszerzenia elementu projektu
  Teraz można przystąpić do testowania rozszerzenia elementu projektu. Najpierw należy uruchomić debugowanie projektu rozszerzenia w eksperymentalne wystąpienie programu Visual Studio. Następnie można wygenerować listy zewnętrznej dla modelu BDC za pomocą rozszerzenia w eksperymentalne wystąpienie programu Visual Studio. Na koniec Otwórz listy zewnętrznej w witrynie programu SharePoint, aby sprawdzić, czy działa zgodnie z oczekiwaniami.  
   
 #### <a name="to-start-debugging-the-extension"></a>Aby rozpocząć debugowanie rozszerzenia  
@@ -203,13 +204,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Otwórz plik kodu GenerateExternalDataLists, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `GenerateExternalDataLists_Execute` metody.  
   
-4.  Rozpocznij debugowanie, wybierając klawisz F5 lub na pasku menu, wybierając **debugowania**, **Rozpocznij debugowanie**.  
+4.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
      Visual Studio instaluje rozszerzenia %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Generator\1.0 listy danych i rozpoczyna się eksperymentalne wystąpienie programu Visual Studio. Element projektu przetestuje w tym wystąpieniu programu Visual Studio.  
   
 #### <a name="to-test-the-extension"></a>Aby przetestować rozszerzenia  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 2.  W **nowy projekt** okna dialogowego rozwiń **szablony** węzła, rozwiń węzeł **Visual C#** węzła, rozwiń węzeł **SharePoint** węzeł, a następnie Wybierz **2010**.  
   
@@ -231,9 +232,9 @@ ms.lasthandoff: 04/16/2018
   
 11. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkt przerwania ustawiony w `Initialize` metody ProjectItemExtension pliku kodu.  
   
-12. Zatrzymano wystąpienie programu Visual Studio, wybierz **F5** klucza, lub na pasku menu wybierz **debugowania**, **Kontynuuj** do kontynuowania debugowania projektu.  
+12. Zatrzymano wystąpienie programu Visual Studio, wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj** do kontynuowania debugowania projektu.  
   
-13. Eksperymentalne wystąpienie programu Visual Studio, wybierz **F5** klucza, lub na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do tworzenia, wdrażania, a następnie uruchom  **TestBDCModel** projektu.  
+13. Eksperymentalne wystąpienie programu Visual Studio, wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie** do tworzenia, wdrażania i uruchamiania **TestBDCModel** projektu.  
   
      Przeglądarki sieci web zostanie otwarty na domyślną stronę witryny programu SharePoint, określony dla debugowania.  
   
@@ -243,11 +244,11 @@ ms.lasthandoff: 04/16/2018
   
 16. W wystąpieniu programu Visual Studio, która ma TestBDCModel Otwórz projekt, otwórz menu skrótów **TestBDCModel** w węźle **Eksploratora rozwiązań**, a następnie wybierz pozycję **generowania danych zewnętrznych Lista**.  
   
-17. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkt przerwania ustawiony w `GenerateExternalDataLists_Execute` metody. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania**, **Kontynuuj** do kontynuowania debugowania projektu.  
+17. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkt przerwania ustawiony w `GenerateExternalDataLists_Execute` metody. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj** do kontynuowania debugowania projektu.  
   
 18. Eksperymentalne wystąpienie programu Visual Studio dodaje wystąpienia listy, o nazwie **Entity1DataList** do TestBDCModel projektu i wystąpienie generowany jest również funkcja o nazwie **Feature2** listy wystąpienie.  
   
-19. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do tworzenia, wdrażania i uruchomić projekt TestBDCModel.  
+19. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie** do tworzenia, wdrażania i uruchomić projekt TestBDCModel.  
   
      Przeglądarki sieci web zostanie otwarty na domyślną stronę witryny programu SharePoint, która jest używana do debugowania.  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 22. Zamknij przeglądarkę sieci web.  
   
-## <a name="cleaning-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim  
+## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu testowania rozszerzenia elementu projektu, Usuń z listy zewnętrznej i model usługi łączności danych biznesowych z witryny programu SharePoint i Usuń rozszerzenia elementu projektu w programie Visual Studio.  
   
 #### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>Aby usunąć listę dane zewnętrzne z witryny programu SharePoint  
@@ -276,13 +277,13 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Aby usunąć modelu usługi łączności danych biznesowych z witryny programu SharePoint  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **kompilacji**, **Wycofaj**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **kompilacji** > **Wycofaj**.  
   
      Visual Studio usuwa modelu usługi łączności danych biznesowych z witryny programu SharePoint.  
   
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Aby usunąć rozszerzenia elementu projektu w programie Visual Studio  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia**, **rozszerzenia i aktualizacje**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.  
   
      **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zamknij oba wystąpienia programu Visual Studio (eksperymentalne wystąpienie i wystąpienia, w którym jest otwarte rozwiązanie GenerateExternalDataLists).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  

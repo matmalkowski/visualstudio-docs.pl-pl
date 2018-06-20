@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575796"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234101"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Wskazówki: tworzenie zadania wbudowanego
 Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. W programie .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie masz Utwórz osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).  
@@ -235,7 +235,7 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
   
 -   `Files` jest wymagany element listy wejściowej parametr ma wartość, która znajduje się lista plików, które mają być wyszukiwane dopasowania. W tym przykładzie `Files` ma ustawioną wartość `Compile` elementu, który zawiera pliki źródłowe projektu.  
   
--   `Result` to parametr wyjściowy, który ma wartość, która jest to lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
+-   `Result` jest parametrem wyjściowym, który ma wartość, która jest lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
   
  Wartości parametrów wejściowych jest ustawiana, jeśli element docelowy TestBuild wywołuje zadań RegX. Zadanie RegX odczytuje każdego pliku i zwraca listę plików, które odpowiada wyrażeniu regularnemu. Ta lista jest zwracana jako `Result` parametru wyjściowego, który jest emitowany elementu MSBuild `MatchedFiles`.  
   

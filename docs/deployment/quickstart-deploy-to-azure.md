@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f28de642d6a1f4f9071099593f990c6197ed34ec
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765378"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234754"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikowanie aplikacji ASP.NET lub ASP.NET Core dla usługi Azure App Service przy użyciu programu Visual Studio
 
@@ -33,7 +33,7 @@ Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. W programie Visual Studio, wybierz **pliku** > **nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web platformy ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
@@ -43,7 +43,7 @@ Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](
 
     Program Visual Studio tworzy projekt.
 
-1. Wybierz **kompilacji > Kompiluj rozwiązanie** Aby skompilować projekt.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** Aby skompilować projekt.
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2845057fe970299d249d580d97b557a5ed311fc0
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477319"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233571"
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym w programie Visual Studio
   
@@ -44,7 +44,7 @@ Pre twórcy wersją aktualizacji systemu Windows komputerów z systemem Windows 
 - Systemem Windows 10 w wersji starszej niż Windows 10 Creator aktualizacji komputerów z systemem Windows 10, należy najpierw [zainstalować i uruchomić składniki zdalnego debugowania](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a> Zabezpieczeń  
-Domyślnie **uniwersalnego (nieszyfrowanego protokołu)** jest używany w systemie Windows 10. Protokół ten należy używać tylko w sieciach zaufanych. Połączenie debugowania jest narażony na złośliwych użytkowników, którzy może przechwytywać i zmiany danych są przekazywane między opracowywania i komputer zdalny.
+Domyślnie **uniwersalnego (nieszyfrowanego protokołu)** jest używany w systemie Windows 10. Ten protokół należy używać tylko w sieciach zaufanych. Połączenie debugowania jest narażony na złośliwych użytkowników, którzy może przechwytywać i zmiany danych są przekazywane między opracowywania i komputer zdalny.
   
 > [!WARNING]
 >  Brak żadnych zabezpieczeń sieci po ustawieniu trybu uwierzytelniania **uniwersalnego (nieszyfrowanego protokołu)** lub **Brak**. Te tryby należy wybrać tylko wtedy, gdy masz pewność, że sieć nie jest narażone z złośliwego lub szkodliwy ruch.  

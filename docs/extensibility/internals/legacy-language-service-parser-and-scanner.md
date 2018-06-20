@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134587"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234650"
 ---
-# <a name="legacy-language-service-parser-and-scanner"></a>Analizatora usługi starszej wersji języka i skanera
+# <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 Analizator jest Puls usługi języka. Klasy języka zarządzane pakietu Framework (MPF) wymagają analizatora składni języka aby wybrać informacji na temat kodu będzie wyświetlany. Analizator oddziela tekst w tokenach leksykalne, a następnie identyfikuje tokeny te według typu i funkcjonalność.  
   
 ## <a name="discussion"></a>Omówienie  
@@ -79,7 +79,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Analiza kodu dla pasujących nawiasów klamrowych  
  Ten przykład przedstawia przepływu sterowania do dopasowania zamykający nawias klamrowy, wpisanego przez użytkownika. W tym procesie skanera, który jest używany do kolorowania umożliwia również określić typ tokenu i określa, czy token może wyzwolić operacji nawiasu klamrowego dopasowania. Jeśli zostanie znaleziony wyzwalacza, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda jest wywoływana można odnaleźć pasującego nawiasu klamrowego. Na koniec dwa nawiasy klamrowe są wyróżnione.  
   
- Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i analiza przyczyn, ten proces nie jest ograniczony do rzeczywistego nawiasów klamrowych. Jakiejkolwiek parze znaki, które jest określone jako odpowiadającego mu pary jest obsługiwana. Przykłady obejmują (a), \< i >, a [i].  
+ Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i analiza przyczyn, ten proces nie jest ograniczony do rzeczywistego nawiasów klamrowych. Pary znaków, określonym jako pary pasujących jest obsługiwana. Przykłady obejmują (a), \< i >, a [i].  
   
  Załóżmy, że usługa języka obsługuje pasujących nawiasów klamrowych.  
   

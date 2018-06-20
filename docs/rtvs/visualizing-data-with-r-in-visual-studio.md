@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238358"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>Tworzenie danych wizualnych geograficzne z języka R
+# <a name="create-visual-data-plots-with-r"></a>Utwórz danych wizualnych powierzchni z języka R
 
 Kreślenia jest kluczowym elementem naukowca danych przepływu pracy. W menu Narzędzia R dla programu Visual Studio (RTVS) wszystkie działania kreślenia koncentruje się wokół co najmniej jeden wykres systemu windows, które mają na celu poprawę wydajności dzięki tego klucza działania.
 
@@ -44,7 +45,7 @@ Zmiana rozmiaru okna kreślenia zawsze renderuje ponownie kreślenia, aby zapewn
 
 ## <a name="plot-window-commands"></a>Polecenia okna kreślenia
 
-Pasek narzędzi okna kreślenia posiada odpowiednich poleceń, z których większość są również dostępne za pośrednictwem **narzędzia R > powierzchni** menu.
+Pasek narzędzi okna kreślenia posiada odpowiednich poleceń, z których większość są również dostępne za pośrednictwem **narzędzia R** > **powierzchni** menu.
 
 | Przycisk | Polecenie | Opis | 
 | --- | --- | --- |
@@ -63,17 +64,17 @@ Pasek narzędzi okna kreślenia posiada odpowiednich poleceń, z których więks
 
 Ponieważ analityków danych często pracować z wielu powierzchni z wielu różnych zestawów danych, RTVS pozwala utworzyć dowolną liczbę niezależnych kreślenia systemu windows. Następnie można rozmieścić tych z systemem windows, jednak chcesz całkowicie w ramce Visual Studio lub spoza tej ramki. (Zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) ogólne informacje na temat zadokowane i zmiany rozmiaru okna.)
 
-Utwórz nowe okno wykresu za pomocą przycisku paska narzędzi lub **narzędzia R > powierzchni > nowe okno wykresu**. Staje się nowe okno wykresu *active* okna, które jest, gdzie mają być renderowane nowych powierzchni. Aby zmienić aktywnego okna, przełącz się do niego i kliknij przycisk Aktywuj wykreślenia okna narzędzi lub **narzędzia R > geograficzne > aktywować okno wykreślenia**.
+Utwórz nowe okno wykresu za pomocą przycisku paska narzędzi lub **narzędzia R** > **powierzchni** > **nowe okno wykresu**. Staje się nowe okno wykresu *active* okna, które jest, gdzie mają być renderowane nowych powierzchni. Aby zmienić aktywnego okna, przełącz się do niego, a następnie wybierz **aktywować okno wykreślenia** przycisku paska narzędzi lub **narzędzia R** > **geograficzne**  >  **Uaktywnij okno kreślenia**.
 
 Wykresy, zbyt, są niezależne obiektów, co oznacza można skopiować lub przenieść je między kreślenia systemu windows za pomocą obu przeciągania i upuszczania za pomocą myszy lub za pomocą **kopiowania**, **Wytnij**, i **Wklej** polecenia w kontekście kliknij prawym przyciskiem myszy i **Edytuj** menu.
 
-Domyślnym zachowaniem przeciągania i upuszczania jest kopiowania; Aby przenieść, przeciągnij i upuść trzymając naciśnięty klawisz Shift.
+Domyślnym zachowaniem przeciągania i upuszczania jest kopiowania; Aby przenieść, przeciągnij i upuść trzymając wciśnięty **Shift** klucza.
 
 ## <a name="plot-history"></a>Historia kreślenia
 
-Polecenia kreślenia są obsługiwane w historii wykresu dla każdego okna, zapewniając, że wszystkie Twoje kreślenia w ramach sesji jest zachowywany. Aby poruszać historii, użyj przycisków strzałek na powierzchni okna narzędzi lub Ctrl + Alt + F11 i Ctrl + Alt + F12. Można również usunąć pojedynczego powierzchni lub wyczyść wszystkie powierzchnie z okna ponownie, używając przycisków paska narzędzi lub **narzędzia R > geograficzne** poleceń menu.
+Polecenia kreślenia są obsługiwane w historii wykresu dla każdego okna, zapewniając, że wszystkie Twoje kreślenia w ramach sesji jest zachowywany. Aby Przejdź historii, użyj przycisków strzałek na pasku narzędzi okna kreślenia lub **Ctrl**+**Alt**+**F11** i **Ctrl** + **Alt**+**F12**. Można również usunąć pojedynczego powierzchni lub wyczyść wszystkie powierzchnie z okna ponownie, używając przycisków paska narzędzi lub **narzędzia R** > **geograficzne** poleceń menu.
 
-Aby wyświetlić całą kolekcję powierzchni, Otwórz okno Historia kreślenia za pomocą przycisku paska narzędzi lub **narzędzia R > geograficzne > okno historii kreślenia**.
+Aby wyświetlić całą kolekcję powierzchni, Otwórz okno Historia kreślenia za pomocą przycisku paska narzędzi lub **narzędzia R** > **geograficzne** > **okno historii kreślenia**.
 Historia zawiera listę miniatur dla powierzchni, które były wyświetlane w danym przedziale pogrupowane według różnych kreślenia systemu windows (lub urządzenia). Używanie przycisków powiększenia na pasku narzędzi zmienia rozmiar miniatur.
 
 ![Okno historii kreślenia](media/plotting-plot-history-window.png)
@@ -82,7 +83,7 @@ Aby otworzyć wykresu w jego oknie skojarzone, kliknij dwukrotnie ten wykres, za
 
 Okres istnienia historii kreślenia we wszystkich okien jest powiązany z okres istnienia sesji R interaktywnego. Zresetuj sesję R lub zamknięcia i ponownego uruchomienia programu Visual Studio jest resetowany historii kreślenia.
 
-## <a name="programmatically-manipulating-plot-windows"></a>Programowo manipulowanie kreślenia systemu windows
+## <a name="programmatically-manipulate-plot-windows"></a>Programowo manipulować kreślenia systemu windows
 
 Można programowo manipulować windows kreślenia z kodu języka R, przy użyciu numerów urządzeń do identyfikowania kreślenia określonego systemu windows. 
 

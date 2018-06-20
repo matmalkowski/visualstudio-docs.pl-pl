@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2c84b8e5d37876d890d40144b281e236fdcd0c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e301131afc62b0564ca302adb9a079b42b52c5f8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766314"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234689"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -47,7 +47,7 @@ Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć 
 
 - **Środowiska uruchomieniowego Visual C++**: można wdrożyć środowiska uruchomieniowego Visual C++ przy użyciu lokalnego wdrożenia lub statycznego łączenia. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych pulpitu aplikacji (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
-## <a name="azure"></a> Publikowanie na platformie Azure
+## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
 - **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: narzędzie publikowania umożliwia szybkie wdrażanie aplikacji w usłudze Azure App Service lub wirtualnych Azure Maszyny. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **publikowania**. (Jeśli wcześniej skonfigurowano żadnych profilów publikowania, należy kliknąć **Utwórz nowy profil**.) W oknie dialogowym Publikowanie wybierz **usługi aplikacji** lub **maszyny wirtualne Azure**, a następnie wykonaj kroki konfiguracji.
 
@@ -62,7 +62,7 @@ Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć 
     > [!NOTE]
     > Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="web"></a> Publikowanie w sieci Web lub wdrożyć do udziału sieciowego
+## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikowanie w sieci Web lub wdrożyć do udziału sieciowego
 
 - **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, i **Python**: narzędzie publikowania do wdrożenia witryny sieci Web przy użyciu protokołu FTP lub narzędzie Web Deploy. Aby uzyskać więcej informacji, zobacz [Wdróż do witryny sieci web](quickstart-deploy-to-a-web-site.md).
 
@@ -78,7 +78,7 @@ Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć 
 
 - **System Windows desktop** opublikowaniem aplikacji pulpitu systemu Windows na serwerze sieci web lub sieciowego udziału plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji komputerowej za pomocą aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) i [wdrażanie natywnych aplikacji za pomocą aplikacji ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
-## <a name="microsoft_store"></a> Publikowanie w sklepie Microsoft
+## <a name="publish-to-microsoft-store"></a>Publikowanie w sklepie Microsoft
 
 W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia na Microsoft Store.
 
@@ -94,7 +94,7 @@ W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia na Mi
 
 Jeśli wdrażasz aplikacji platformy uniwersalnej systemu Windows, do testowania na urządzeniu, zobacz [aplikacji platformy uniwersalnej systemu Windows uruchom na komputerze zdalnym w programie Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="installer"></a> Utwórz pakiet Instalatora (klient z systemem Windows)
+## <a name="create-an-installer-package-windows-client"></a>Utwórz pakiet Instalatora (klient z systemem Windows)
 
 Jeśli wymagane bardziej złożonych instalacji aplikacji pulpitu niż [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) zapewniają można utworzyć pakietu, instalacja projektu lub niestandardowego programu inicjującego.
 

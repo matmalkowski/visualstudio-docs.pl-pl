@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a63d9947f544ddff1de81aaf34ed62c9646fba3d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 87dc6c4152cd2f162880256b9b8372e04142913c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34794226"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233519"
 ---
 # <a name="deploy-aspnet-to-a-remote-iis-computer-using-web-deploy-in-visual-studio"></a>Wdrażanie programu ASP.NET z komputerem zdalnym usług IIS przy użyciu narzędzia Web Deploy w programie Visual Studio
 
@@ -26,7 +26,7 @@ Procedury te zostały przetestowane na tych konfiguracji serwera:
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Utwórz platformy ASP.NET 4.5.2 aplikacji na komputerze programu Visual Studio
   
-1. Na komputerze, działanie programu Visual Studio, wybierz **Plik > Nowy projekt**.
+1. Na komputerze, działanie programu Visual Studio, wybierz **pliku** > **nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)**, a następnie kliknij przycisk **OK**.
 
@@ -38,15 +38,15 @@ Procedury te zostały przetestowane na tych konfiguracji serwera:
 
     Program Visual Studio tworzy projekt.
 
-1. Wybierz **kompilacji > Kompiluj rozwiązanie** Aby skompilować projekt.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** Aby skompilować projekt.
 
-## <a name="bkmk_configureIIS"></a> Instalowanie i konfigurowanie usług IIS w systemie Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a>Instalowanie i konfigurowanie usług IIS w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Zaktualizuj ustawienia zabezpieczeń przeglądarki w systemie Windows Server
 
-Jeśli Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Internet Explorer (jest ona włączona domyślnie), następnie należy dodać niektóre domeny jako zaufane witryny, aby możliwe było pobrać niektórych składników serwera sieci web. Dodaj zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Dodaj następujące domeny.
+Jeśli Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Internet Explorer (jest ona włączona domyślnie), następnie należy dodać niektóre domeny jako zaufane witryny, aby możliwe było pobrać niektórych składników serwera sieci web. Dodaj zaufanych witryn, przechodząc do **Opcje internetowe** > **zabezpieczeń** > **zaufanych witryn** > **witryn** . Dodaj następujące domeny.
 
 - microsoft.com
 - go.microsoft.com
@@ -55,7 +55,7 @@ Jeśli Konfiguracja zwiększonych zabezpieczeń jest włączona w programie Inte
 
 Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. Niektóre z tych zasobów nie są wymagane, ale w celu uproszczenia procesu, kliknij przycisk **Dodaj** po wyświetleniu monitu.
 
-## <a name="BKMK_deploy_asp_net"></a> Zainstaluj program ASP.NET 4.5 w systemie Windows Server
+## <a name="install-aspnet-45-on-windows-server"></a>Zainstaluj program ASP.NET 4.5 w systemie Windows Server
 
 Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program ASP.NET w usługach IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -72,11 +72,11 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
 
 2. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
-## <a name="BKMK_install_webdeploy"></a> Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
+## <a name="install-web-deploy-36-on-windows-server"></a>Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+## <a name="configure-aspnet-web-site-on-the-windows-server-computer"></a>Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 
@@ -94,13 +94,13 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
 
 8. Z witryną wybrane w Menedżerze usług IIS, wybierz **Edytuj uprawnienia**i upewnij się, że IUSR, IIS_IUSRS lub nazwą użytkownika skonfigurowaną dla puli aplikacji jest autoryzowanym użytkownikiem z prawami Odczyt i wykonywanie. Jeśli żaden z tych użytkowników nie jest obecny, Dodaj konta IUSR jako użytkownik z uprawnieniami Odczyt i wykonywanie.
 
-## <a name="bkmk_webdeploy"></a> Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
+## <a name="publish-and-deploy-the-app-using-web-deploy-from-visual-studio"></a>Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
 
 [!INCLUDE [deploy-app-web-deploy](../deployment/includes/deploy-app-web-deploy.md)]
 
-Ponadto należy przeczytać sekcję na [Rozwiązywanie problemów z portów](#bkmk_openports).
+Ponadto może być konieczne przeczytaj następujące sekcję na temat rozwiązywania problemów portów.
 
-## <a name="bkmk_openports"></a> Rozwiązywanie problemów: Otwórz wymagane porty w systemie Windows Server
+## <a name="troubleshoot-open-required-ports-on-windows-server"></a>Rozwiązywanie problemów z: Otwarte porty wymagane w systemie Windows Server
 
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i narzędzia Web Deploy. Jednak należy sprawdzić, czy porty są otwarte.
 
@@ -114,7 +114,7 @@ Wymagane porty:
 
 1. Aby otworzyć port w systemie Windows Server, otwórz **Start** menu, wyszukaj **Zapora systemu Windows z zabezpieczeniami zaawansowanymi**.
 
-2. Następnie wybierz pozycję **reguły ruchu przychodzącego > Nowa reguła > portu**. Wybierz **dalej** i w obszarze **określone porty lokalne**, wprowadź numer portu, kliknij przycisk **dalej**, następnie **zezwalały na połączenie**, kliknij przycisk Dalej, a Dodaj nazwę (**IIS**, **narzędzia Web Deploy**, lub **polecenia msvsmon**) dla reguły ruchu przychodzącego.
+2. Następnie wybierz pozycję **reguły ruchu przychodzącego** > **nową regułę** > **portu**. Wybierz **dalej** i w obszarze **określone porty lokalne**, wprowadź numer portu, kliknij przycisk **dalej**, następnie **zezwalały na połączenie**, kliknij przycisk Dalej, a Dodaj nazwę (**IIS**, **narzędzia Web Deploy**, lub **polecenia msvsmon**) dla reguły ruchu przychodzącego.
 
     Aby uzyskać więcej informacji na temat konfigurowania Zapory systemu Windows, zobacz [konfigurowania Zapory systemu Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

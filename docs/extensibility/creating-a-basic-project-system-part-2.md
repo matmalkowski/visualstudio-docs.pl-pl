@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39150f02481e18997035a8027518648fa410f48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 022a449d94b09b9810309dc441d823fea0ec9e4e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107949"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233961"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy wskazówki w tej serii [tworzenia podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy projekt systemu. W tym przewodniku opiera się na system podstawowych projektów przez dodanie szablonu Visual Studio, strony właściwości i inne funkcje. Pierwszy wskazówki należy wykonać przed rozpoczęciem tego.  
@@ -49,7 +49,7 @@ Pierwszy wskazówki w tej serii [tworzenia podstawowego systemu projektu, częś
   
 1.  W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz rozwiązanie SimpleProject, który został utworzony przez następujące [tworzenia podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  W pliku SimpleProjectPackage.cs znajduje się atrybut ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a parametr czwarty (ścieżka do folderu szablon projektu) ". \\\NullPath ", wykonując następujące czynności.  
+2.  W pliku SimpleProjectPackage.cs odnaleźć atrybutu ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a parametr czwarty (ścieżka do folderu szablon projektu) ". \\\NullPath ", wykonując następujące czynności.  
   
     ```  
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  

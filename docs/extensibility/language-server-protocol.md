@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7de0ce4d37ed74a7d2291ecf2f0db98c07478b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147095"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233416"
 ---
-# <a name="language-server-protocol"></a>Protokół serwera języka
+# <a name="language-server-protocol"></a>Language Server Protocol
 
 ## <a name="what-is-the-language-server-protocol"></a>Co to jest protokół serwera języka?
 
@@ -54,7 +54,7 @@ Poniżej jest przykładem narzędzie a serwerem języka komunikowania się podcz
 
 * **Użytkownik otwiera plik (określone jako dokument) w narzędziu**: narzędzie powiadamia serwer języka, że dokument jest otwarty ("textDocument/didOpen"). Odtąd prawdy o zawartości dokumentu nie jest już w systemie plików, ale przechowywane przez narzędzie w pamięci.
 
-* **Użytkownik nie wybrał edycji**: narzędzie informuje serwer o zmianie dokumentu ("textDocument/didChange") i informacje semantyczne programu został zaktualizowany przez serwer języka. Dzieje się tak, serwer języka analizy te informacje i powiadamia narzędzie z wykryto błędy i ostrzeżenia ("textDocument/publishDiagnostics").
+* **Użytkownik nie wybrał edycji**: narzędzie informuje serwer o zmianie dokumentu ("textDocument/didChange") i informacje semantyczne programu został zaktualizowany przez serwer języka. Jak dzieje się tak, serwer języka analizuje te informacje i powiadamia narzędzie z wykryto błędy i ostrzeżenia ("textDocument/publishDiagnostics").
 
 * **Użytkownik wykonuje "Przejdź do definicji" na symbol w edytorze**: narzędzie wysyła żądanie "textDocument/definicji" dwa parametry: (1) (2 położenie tekstu, z której zainicjowano przejdź do definicji żądania do serwera i dokumentów identyfikatora URI. Serwer odpowiada, podając identyfikator URI dokumentu i położenie definicji symbolu w dokumencie.
 

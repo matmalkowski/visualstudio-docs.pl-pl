@@ -23,17 +23,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 513ac512c1f4bd368e069ceaf8448d5712a23b4e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747472"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234569"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 *Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (z zestawu danych z dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu zasady integralności referencyjnej. *Integralność referencyjna* odwołuje się do reguły spójności udostępniane przez ograniczenia w bazie danych, które kontrolują zachowanie wstawiania, aktualizowania i usuwania rekordów powiązanych. Na przykład jest integralności referencyjnej, wymusza tworzenie rekordu klienta przed zezwoleniem zamówień ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacje w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md)
 
- Używa funkcji hierarchicznej aktualizacji `TableAdapterManager` do zarządzania `TableAdapter`s w typizowanego obiektu dataset. `TableAdapterManager` Składnik jest [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-wygenerowane klasy, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabelę z okna źródeł danych do formularzy systemu Windows lub programu WPF strony Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony, a następnie zostanie wyświetlony w Projektancie na pasku składnika. Aby uzyskać szczegółowe informacje o `TableAdapterManager` klasy, zobacz sekcję odwołanie TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+ Używa funkcji hierarchicznej aktualizacji `TableAdapterManager` do zarządzania `TableAdapter`s w typizowanego obiektu dataset. `TableAdapterManager` Składnika jest klasą generowanych przez program Visual Studio, więc nie jest częścią [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Podczas przeciągania tabelę z okna źródeł danych do formularzy systemu Windows lub programu WPF strony Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony, a następnie zostanie wyświetlony w Projektancie na pasku składnika. Aby uzyskać szczegółowe informacje o `TableAdapterManager` klasy, zobacz sekcję odwołanie TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
  Domyślnie zestawu danych traktuje powiązane tabele jako "tylko relacje" oznacza, że nie wymuszania ograniczeń klucza obcego. To ustawienie w czasie projektowania można modyfikować za pomocą Projektanta obiektów Dataset. Wybierz wiersz relacji między dwiema tabelami, aby wyświetlić **relacji** okno dialogowe. Zmiany wprowadzone w tym miejscu będą określają sposób TableAdapterManager zachowania, gdy wysłać zmiany w tabelach pokrewnych w bazie danych.
 

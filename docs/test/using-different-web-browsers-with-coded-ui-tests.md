@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0f8efe8f64c166a549080d10432fd0dd7e241f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978378"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235066"
 ---
-# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Różnych przeglądarek sieci Web za pomocą kodowanych testów interfejsu użytkownika
+# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek internetowych do przeprowadzania kodowanych testów interfejsu użytkownika
 
-Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji sieci Web przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji sieci Web.
+Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
 Najpierw zainstaluj [składników Selenium kodowanego interfejsu użytkownika dla wielu przeglądarki testowania](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
@@ -34,9 +34,9 @@ Najpierw zainstaluj [składników Selenium kodowanego interfejsu użytkownika dl
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
 
-Testując aplikację sieci Web za pomocą przeglądarek sieci Web różnego typu, można lepiej emulować doświadczenia z interfejsem użytkowników korzystających z różnych przeglądarek. Na przykład aplikacja może zawierać formant lub kod w Internet Explorer, który nie jest zgodny z innymi przeglądarkami sieci Web. Uruchamianie kodowanych testów interfejsu użytkownika w różnych przeglądarkach pozwoli wykryć i naprawić wszelkie problemy, zanim wpłyną one na doświadczenia klientów.
+Testując aplikację internetową za pomocą przeglądarek internetowych różnego typu, można lepiej emulować doświadczenia z interfejsem użytkowników korzystających z różnych przeglądarek. Na przykład aplikacja może zawierać formant lub kod w Internet Explorer, który nie jest zgodny z innymi przeglądarkami sieci Web. Uruchamianie kodowanych testów interfejsu użytkownika w różnych przeglądarkach pozwoli wykryć i naprawić wszelkie problemy, zanim wpłyną one na doświadczenia klientów.
 
-## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach sieci Web przy użyciu obsługiwanych przeglądarek sieci Web?
+## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach internetowych przy użyciu obsługiwanych przeglądarek internetowych?
 
 **Rejestrowanie:** Aby zarejestrować testu aplikacji sieci web przy użyciu programu Internet Explorer, należy użyć konstruktora kodowanego interfejsu użytkownika testu. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md).
 
@@ -64,7 +64,7 @@ Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interf
 
 ### <a name="enable-debugging"></a>Włączanie debugowania
 
-Aby włączyć debugowanie aplikacji sieci Web, należy zastosować następujące opcje konfiguracji:
+Aby włączyć debugowanie aplikacji internetowej, należy zastosować następujące opcje konfiguracji:
 
 1.  Włączyć funkcję Tylko mój kod:
 
@@ -94,7 +94,7 @@ Poniżej przedstawiono niektóre elementy, których należy wiedzieć:
 
 Można skonfigurować dane wyjściowe do uwzględnienia zrzutów ekranu w zakodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy ustawić niektóre ustawienia konfiguracji *QTAgent32.exe.config* pliku. Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-     *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Ustaw następujące wartości:
 

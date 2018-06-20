@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135424"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234676"
 ---
-# <a name="microsoft-help-viewer-sdk"></a>Podgląd Pomocy firmy Microsoft SDK
+# <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 Ten artykuł zawiera następujące zadania integratory Visual Studio Podgląd pomocy:  
   
 -   Tworzenie tematu (Obsługa F1)  
@@ -454,7 +454,7 @@ Uwaga: zmienne zauważyć przez "{n}" ma zależności w kodzie — usuwanie lub 
 |Za pomocą:|Podaj formantu opinii dla klienta przekazać opinię na temat bieżącego za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo.|  
 |**Element**|**Wartość (te ciągi można zmodyfikować, aby sprostać wymaganiom adopter zawartości.)**|  
 |Prawa autorskie|© 2013 Microsoft Corporation. Wszelkie prawa zastrzeżone.|  
-|SendFeedback|\<href = "{0}" {1} > Prześlij opinię\</a > na ten temat do firmy Microsoft.|  
+|SendFeedback|\<href = "{0}" {1}> Prześlij opinię\</a > na ten temat do firmy Microsoft.|  
 |FeedbackLink||  
 |LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
 |LogoFileName|vs_logo_bk.GIF|  
@@ -473,28 +473,28 @@ Uwaga: zmienne zauważyć przez "{n}" ma zależności w kodzie — usuwanie lub 
 |**Element**|**Wartość**|  
 |LinkTableTitle|Łącze tabeli|  
 |TopicEnuLinkText|Pokaż angielską wersję\</a > w tym temacie, który jest dostępny na tym komputerze.|  
-|TopicOnlineLinkText|Wyświetl ten temat \<href = "{0}" {1} > online\</a >|  
+|TopicOnlineLinkText|Wyświetl ten temat \<href = "{0}" {1}> online\</a >|  
 |OnlineText|online|  
 |Funkcja:|**Formant Audio wideo**|  
 |Za pomocą:|Wyświetlanie elementów i tekst dla zawartości wideo|  
 |**Element**|**Wartość**|  
-|MultiMediaNotSupported|Do obsługi zawartości {0} musi być zainstalowany program Internet Explorer 9 lub nowsza.|  
+|MultiMediaNotSupported|Internet Explorer 9 lub wyższej musi zostać zainstalowany, aby obsługiwać {0} zawartości.|  
 |VideoText|Wyświetlanie wideo|  
 |Audiotekst|przesyłanie strumieniowe audio|  
-|OnlineVideoLinkText|\<p > Aby wyświetlić wideo, związane z tym tematem, kliknij {0}\<href = "\ {1\}" > {2}here\</a >.\< /p >|  
-|OnlineAudioLinkText|\<p > Aby wysłuchać nagrań audio, związanych z tym tematem, kliknij {0}\<href = "\ {1\}" > {2}here\</a >.\< /p >|  
+|OnlineVideoLinkText|\<p > Aby wyświetlić wideo, związane z tym tematem, kliknij przycisk {0} \<href = "{1}" >{2}tutaj\</a >.\< /p >|  
+|OnlineAudioLinkText|\<p > Aby wysłuchać nagrań audio, związanych z tym tematem, kliknij przycisk {0} \<href = "{1}" >{2}tutaj\</a >.\< /p >|  
 |Funkcja:|**Formant zawartości nie jest zainstalowany**|  
 |Za pomocą:|Tekst elementów (ciągi) używany do renderowania contentnotinstalled.htm|  
 |**Element**|**Wartość**|  
 |ContentNotInstalledTitle|Nie znaleziono zawartości na komputerze.|  
-|ContentNotInstalledDownloadContentText|\<p > Aby pobrać zawartość do komputera, \<href = "{0}" {1} > klikając kartę Zarządzaj\</a >.\< /p >|  
+|ContentNotInstalledDownloadContentText|\<p > Aby pobrać zawartość do komputera, \<href = "{0}" {1}> klikając kartę Zarządzaj\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > Brak zainstalowanej zawartości na komputerze. Zobacz instalacji lokalnej zawartości Pomocy można uzyskać od administratora. \</p >|  
 |Funkcja:|**Formant nie znaleziono tematu**|  
 |Za pomocą:|Tekst elementów (ciągi) używany do renderowania topicnotfound.htm|  
 |**Element**|**Wartość**|  
 |TopicNotFoundTitle|Nie można odnaleźć żądanego tematu na komputerze.|  
-|TopicNotFoundViewOnlineText|\<p > nie można odnaleźć żądanego tematu na komputerze, ale można \<href = "{0}" {1} > przeglądać temat online\</a >.\< /p >|  
-|TopicNotFoundDownloadContentText|\<p > można znaleźć w okienku nawigacji odnośniki do podobnych tematów lub \<href = "{0}" {1} > klikając kartę Zarządzaj\</a > Aby pobrać zawartość do komputera.\< /p >|  
+|TopicNotFoundViewOnlineText|\<p > nie można odnaleźć żądanego tematu na komputerze, ale można \<href = "{0}" {1}> przeglądać temat online\</a >.\< /p >|  
+|TopicNotFoundDownloadContentText|\<p > można znaleźć w okienku nawigacji odnośniki do podobnych tematów lub \<href = "{0}" {1}> klikając kartę Zarządzaj\</a > Aby pobrać zawartość do komputera.\< /p >|  
 |TopicNotFoundText|\<p > nie można odnaleźć żądanego tematu na komputerze. \</p >|  
 |Funkcja:|**Temat uszkodzony formantu**|  
 |Za pomocą:|Tekst elementów (ciągi) używany do renderowania topiccorrupted.htm|  
@@ -506,7 +506,7 @@ Uwaga: zmienne zauważyć przez "{n}" ma zależności w kodzie — usuwanie lub 
 |**Element**|**Wartość**|  
 |HomePageTitle|Strona główna podglądu pomocy|  
 |HomePageIntroduction|\<p > Witamy podglądu pomocy firmy Microsoft, zasadniczym źródłem informacji dla każdego użytkownika, który korzysta z narzędzi, produktów, technologii i usług firmy Microsoft. Podgląd Pomocy umożliwia dostęp do instrukcje i dokumentację, przykładowego kodu, artykułów technicznych i. Aby znaleźć zawartość potrzebujesz, przejrzyj spis treści, użyj wyszukiwania pełnotekstowego lub poruszanie się po zawartości przy użyciu indeksu słów kluczowych. \</p >|  
-|HomePageContentInstallText|\<p >\<br / > Użyj \<href = "{0}" {1} > Zarządzaj zawartością\</a > kartę, aby wykonać następujące czynności:\<ul >\<li > dodać zawartość do komputera.\< /li >\<li > sprawdzić aktualizacje zawartości w sieci lokalnej.\< /li >\<li > usunąć zawartość z komputera.\< /li >\</ul >\</p >|  
+|HomePageContentInstallText|\<p >\<br / > Użyj \<href = "{0}" {1}> Zarządzaj zawartością\</a > kartę, aby wykonać następujące czynności:\<ul >\<li > dodać zawartość do komputera.\< /li >\<li > sprawdzić aktualizacje zawartości w sieci lokalnej.\< /li >\<li > usunąć zawartość z komputera.\< /li >\</ul >\</p >|  
 |HomePageInstalledBooks|Zainstalowanych książek|  
 |HomePageNoBooksInstalled|Nie znaleziono zawartości na komputerze.|  
 |HomePageHelpSettings|Ustawienia zawartości pomocy|  

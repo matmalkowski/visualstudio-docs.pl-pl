@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482012"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234260"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków
 W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do sprawdzania, czy obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.  
@@ -108,7 +108,7 @@ W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qua
     > [!TIP]
     >  Jeśli jednocześnie debugowania aplikacji, można ustawić punktu przerwania w tej lokalizacji i zostanie uruchomiona podczas renderowania następnej ramki. Następnie możesz sprawdzić członków `m_marbleConstantBufferData` potwierdzić, że wartość `projection` elementu członkowskiego jest ustawiona na same zera, gdy stały bufor jest wypełnione.  
   
- Po Znajdź lokalizację, w którym wypełniany jest stały bufor i czy jego wartości pochodzą z zmiennej odnajdywanie `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` elementu członkowskiego jest ustawiona na same zera. Można użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
+ Po Znajdź lokalizację, w którym wypełniany jest stały bufor i odnajdywanie, że jego wartości pochodzą z zmiennej `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` elementu członkowskiego jest ustawiona na same zera. Można użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Aby dowiedzieć się, których projekcji element członkowski ma wartość w kodzie źródłowym aplikacji  
   

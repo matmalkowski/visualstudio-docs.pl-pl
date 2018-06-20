@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91f406ec97479472b29391c87b932d9178c2d1d8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560326"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233717"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifest wdrożenia ClickOnce
 Manifest rozmieszczenia jest plik XML, który opisuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, w tym identyfikacji bieżącego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wersji aplikacji do wdrożenia.  
@@ -52,7 +52,7 @@ Manifest rozmieszczenia jest plik XML, który opisuje [!INCLUDE[ndptecclick](../
  Plik manifestu wdrożenia musi być silna i może również zawierać certyfikaty na potrzeby weryfikacji wydawcy.  
   
 ## <a name="file-name-syntax"></a>Składnia nazwy pliku  
- Nazwa pliku manifestu wdrożenia musi mieć rozszerzenie .application.  
+ Nazwa pliku manifestu wdrożenia musi kończyć się `.application` rozszerzenia.  
   
 ## <a name="examples"></a>Przykłady  
  Poniższy przykład kodu pokazuje manifest wdrażania.  

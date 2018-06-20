@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c479435ccd37c260c199b66a3a6fee20ce3e602
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969109"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235128"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: dodawanie parametrów kontekstu do ustawień testu obciążenia
 
@@ -36,9 +36,9 @@ Jeśli można przypisać wartość parametru kontekstowego serwer_sieci_Web_1 do
 
 Ponadto przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w ustawieniach testu różnym obciążeniem, można uruchomić testu obciążenia za pomocą różnych środowiskach:
 
--   Ustawienia uruchamiania firmowy serwer sieci Web przemieszczania: parametr kontekstowy o nazwie Serwer_sieci_web_1 =http://CorporateStagingWebServer
+-   Ustawienia uruchamiania firmowy serwer sieci Web przemieszczania: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
--   Ustawienia uruchamiania firmowy serwer sieci Web produkcji: parametr kontekstu, o nazwie Serwer_sieci_web_1 =http://CorporateProductionWebServer
+-   Ustawienia uruchamiania firmowy serwer sieci Web produkcji: parametr kontekstu, o nazwie `WebServer1=http://CorporateProductionWebServer`
 
  **Zmiana ustawień z poziomu wiersza polecenia**
 
@@ -64,9 +64,9 @@ Ponadto przypisując różne wartości do parametru kontekstu przy użyciu tej s
 
      Jeśli uruchomienie ustawienie już zawiera **parametrów kontekstu** folderu, możesz kliknij go prawym przyciskiem myszy i wybierz **Dodaj parametr kontekstowy**.
 
-4.  W oknie Właściwości zmień wartość atrybutu **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W oknie Właściwości zmień **wartość** do parametru, który chcesz użyć (na przykład http://CorporateStagingWebServer).
+4.  W oknie Właściwości zmień wartość atrybutu **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W oknie Właściwości zmień **wartość** do parametru, który chcesz użyć (na przykład `http://CorporateStagingWebServer`).
 
-5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i użyj innego ciągu dla **wartość** właściwości (na przykład http://CorporateProductionWebServer).
+5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i użyj innego ciągu dla **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
 
 6.  Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów w ustawieniach uruchamiania i wybierz polecenie **Ustaw jako aktywny**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c6556ab99f7c72407da9915d73e7a19e6dd45da
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583154"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234597"
 ---
 # <a name="debugging-python-and-c-together"></a>Debugowanie razem Python i C++
 
@@ -64,7 +64,7 @@ Funkcje debugowania w trybie mieszanym zawierają następujące informacje, jak 
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Włącz debugowanie w trybie mieszanym w projekcie C/C++
 
-Visual Studio 2017 (wersja 15.5 i nowsze) obsługuje debugowanie w trybie mieszanym z projektu C/C++ (na przykład, podczas gdy [osadzanie Python w innej aplikacji, zgodnie z opisem na python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt C/C++ do uruchomienia Debuggera"Python lub natywne":
+Visual Studio 2017 (wersja 15.5 i nowsze) obsługuje debugowanie w trybie mieszanym z projektu C/C++ (na przykład, gdy [osadzanie Python w innej aplikacji, zgodnie z opisem na python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt C/C++ do uruchomienia Debuggera"Python lub natywne":
 
 1. Kliknij prawym przyciskiem myszy projekt C/C++ w Eksploratorze rozwiązań i wybierz **właściwości**
 1. Wybierz **debugowanie** , a następnie wybierz "Python lub natywne debugera" z **debugera, aby uruchomić**i wybierz **OK**.

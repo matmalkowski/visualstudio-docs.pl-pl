@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129566"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234029"
 ---
 # <a name="registering-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -30,7 +30,7 @@ ms.locfileid: "31129566"
 ## <a name="managed-code-expression-evaluator"></a>Kod zarządzany Ewaluator wyrażeń  
  Zarządzany kod EE jest zaimplementowany jako biblioteki klas, czyli bibliotekę DLL, która rejestruje się ze środowiskiem COM, zazwyczaj uruchamiane przez wywołanie do programu VSIP **regpkg.exe**. Rzeczywisty proces zapisywania kluczy rejestru dla środowiska COM odbywa się automatycznie.  
   
- Metoda klasy głównym jest oznaczona atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, wskazując, że ta metoda jest wywoływana, gdy biblioteka DLL jest rejestrowana z modelu COM. Ta metoda rejestracji, często nazywane `RegisterClass`, wykonuje zadanie rejestrowania biblioteki DLL programu Visual Studio. Odpowiadającego `UnregisterClass` (oznaczone <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), cofa skutków `RegisterClass` po odinstalowaniu biblioteki DLL.  
+ Metoda klasy głównym jest oznaczona atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, co oznacza, że metoda jest wywoływana, gdy biblioteka DLL jest rejestrowana z modelu COM. Ta metoda rejestracji, często nazywane `RegisterClass`, wykonuje zadanie rejestrowania biblioteki DLL programu Visual Studio. Odpowiadającego `UnregisterClass` (oznaczone <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), cofa skutków `RegisterClass` po odinstalowaniu biblioteki DLL.  
   
  Tym samym wpisy rejestru są wprowadzane podobnie jak w przypadku EE zapisywane w niezarządzanym kodzie; Jedyna różnica polega na brak żadnej funkcji pomocnika takich jak `SetEEMetric` które wykonają tę pracę za Ciebie. Przykładem tego procesu rejestracji/wyrejestrowanie wygląda następująco:  
   

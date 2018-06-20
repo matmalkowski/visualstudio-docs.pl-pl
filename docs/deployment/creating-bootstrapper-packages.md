@@ -22,17 +22,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f645f030edc9b815e212b040fddc401ad8a4a8e9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572728"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235079"
 ---
 # <a name="create-bootstrapper-packages"></a>Tworzenie niestandardowych pakietów programu inicjującego
 Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub wymagań wstępnych, który pojawia się w **wymagania wstępne** okno dialogowe ClickOnce jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wymagań wstępnych. 
   
-Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik końcowy akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
+Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
   
 ## <a name="create-custom-bootstrapper-packages"></a>Utwórz niestandardowe pakiety programu inicjującego  
 Manifesty programu inicjującego można wygenerować za pomocą edytora XML w Visual Studio. Aby zapoznać się z przykładem tworzenia pakietu programu inicjującego, zobacz [wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
@@ -88,7 +88,7 @@ W poniższej tabeli przedstawiono właściwości, które są wypełniane automat
 |Element ProcessorArchitecture|Procesor i usługi bits na word platformy docelowej przez plik wykonywalny. Następujące wartości:<br /><br /> -Intel<br />-IA64<br />— AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numer wersji systemów operacyjnych Microsoft Windows 95, Windows 98 lub Windows ME. Składnia wersji jest Major.Minor.ServicePack.|  
 |[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numer wersji systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji jest Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalatora Windows (msi.dll) uruchom podczas instalacji.|  
+|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalatora Windows (msi.dll), aby uruchomić podczas instalacji.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Ta właściwość jest ustawiona, jeśli użytkownik ma uprawnienia administratora. Wartości to PRAWDA lub FAŁSZ.|  
 |Tryb instalacji|Tryb instalacji wskazuje, gdzie składnik musi zostać zainstalowany z. Następujące wartości:<br /><br /> -HomeSite — wstępnie wymagane składniki są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wstępnie wymagane składniki są instalowane z wybranej lokalizacji.<br />-SameSite — wstępnie wymagane składniki są instalowane z tej samej lokalizacji co aplikacja.|  
   
@@ -97,7 +97,7 @@ Aby zapobiec plików pakietu redystrybucyjnego wdrażany w projektach Instalator
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Pakiet redystrybucyjny listy jest plik XML, który należy nazwę w następującym formacie: *nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak, na przykład, jeśli składnik jest wywoływana przez xyz Datawidgets, użycie *Acme.DataWidgets.RedistList.xml*. Przykładem listy do dystrybucji zawartości, może wyglądać następująco:  
+Pakiet redystrybucyjny listy jest plik XML, który należy nazwę w następującym formacie: *nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak, na przykład, jeśli składnik jest wywoływana przez xyz DataWidgets, użycie *Acme.DataWidgets.RedistList.xml*. Przykładem listy do dystrybucji zawartości, może wyglądać następująco:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a37cc4c17a403b398fd523f3582aaba910338f4d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746017"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233603"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 
@@ -86,7 +86,7 @@ Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formant
 
 2. W **Form1.vb** okna, między **Private Sub** wiersza i **End Sub** wiersz, wpisz lub Wklej `lblHelloWorld.Text = "Hello World!"`.
 
-     ![Dodaj kod, aby formularz formularza](../ide/media/vb-add-code-to-the-form.png)
+     ![Dodawanie kodu do formularza](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

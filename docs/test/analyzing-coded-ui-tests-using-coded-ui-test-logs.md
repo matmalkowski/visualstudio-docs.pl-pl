@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750730"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233916"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie kodowanego interfejsu użytkownika kodowanych testów przy użyciu dzienników testu interfejsu użytkownika
 
 Zakodowanych filtru dzienników testu interfejsu użytkownika i rekord, który uruchamia ważne informacje o kodowanego testu interfejsu użytkownika. Dzienniki są przedstawione w formacie, który umożliwia szybkie debugowanie problemów.
 
@@ -26,7 +26,7 @@ W zależności od scenariusza należy użyć jednej z następujących metod Aby 
 
 - Docelowy .NET Framework w wersji 4 bez *App.config* plik istnieje w projekcie testowym:
 
-   1. Otwórz **QTAgent32_40.exe.config** pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Otwórz *QTAgent32_40.exe.config* pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Zmień wartość dla EqtTraceLevel na poziom dziennika, który ma.
 
@@ -34,7 +34,7 @@ W zależności od scenariusza należy użyć jednej z następujących metod Aby 
 
 - Docelowy .NET Framework w wersji 4.5 bez *App.config* plik istnieje w projekcie testowym:
 
-   1. Otwórz **QTAgent32.exe.config** pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Otwórz *QTAgent32.exe.config* pliku. Domyślnie ten plik znajduje się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Zmień wartość EqtTraceLevel na poziom dziennika, który ma.
 
@@ -58,20 +58,20 @@ W zależności od scenariusza należy użyć jednej z następujących metod Aby 
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Uruchamianie kodowanego testu interfejsu użytkownika i sprawdź dzienniki
 
-Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do **QTAgent32.exe.config** pliku w miejscu, zobacz dane wyjściowe link w wynikach testów Explorer. Pliki dziennika są produkowane nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także dla testów powiodło się, gdy poziom śledzenia jest ustawiona na "pełne."
+Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do *QTAgent32.exe.config* pliku w miejscu, zobacz dane wyjściowe łącze w **Eksploratora testów** wyników. Pliki dziennika są produkowane nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także dla testów powiodło się, gdy poziom śledzenia jest ustawiona na "pełne."
 
 1.  Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksploratora testów**.
 
 2.  Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
-3.  W Eksploratorze testów, wybierz kodowanego testu interfejsu użytkownika, które chcesz uruchomić, otwórz menu skrótów, a następnie wybierz **Uruchom testy wybierz**.
+3.  W **Eksploratora testów**, wybierz kodowanego testu interfejsu użytkownika, które chcesz uruchomić, otwórz menu skrótów, a następnie wybierz **Uruchom testy wybierz**.
 
      Testy automatyczne uruchamianie i wskazują one przekazany lub niepowodzenie.
 
     > [!TIP]
-    > Aby wyświetlić narzędzia Eksplorator testów, wybierz **testu** > **Windows**, a następnie wybierz pozycję **Eksploratora testów**.
+    > Aby wyświetlić **Eksploratora testów**, wybierz **testu** > **systemu Windows**, a następnie wybierz pozycję **Eksploratora testów**.
 
-4.  Wybierz **dane wyjściowe** łącze w wynikach narzędzia Eksplorator testów.
+4.  Wybierz **dane wyjściowe** łącze w **Eksploratora testów** wyników.
 
      ![Dane wyjściowe link w Eksploratora testów](../test/media/cuit_htmlactionlog1.png)
 

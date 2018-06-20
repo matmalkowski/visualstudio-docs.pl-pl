@@ -1,5 +1,5 @@
 ---
-title: Powiązanie formantów WPF z usługi danych WCF
+title: Powiązywanie kontrolek WPF z usługą danych programu WCF
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8152a02df8f335a92024134dde89b45d2f3e115a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927363"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234504"
 ---
-# <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązanie formantów WPF z usługi danych WCF
+# <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordy klientów, które znajdują się w [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Dodasz również przycisków, których klienci mogą używać do wyświetlania i aktualizowania rekordów.
 
@@ -45,7 +45,7 @@ W instruktażu przedstawiono następujące zagadnienia:
 ## <a name="prerequisites"></a>Wymagania wstępne
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
--   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+-   Visual Studio
 
 -   Dostęp do działającego wystąpienia programu SQL Server lub SQL Server Express z AdventureWorksLT przykładowej bazy danych do niego dołączony. Możesz pobrać bazę danych AdventureWorksLT z [witryny sieci Web w witrynie CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
 

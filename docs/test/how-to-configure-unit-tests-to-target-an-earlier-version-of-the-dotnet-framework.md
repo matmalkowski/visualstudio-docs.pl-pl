@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750743"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233493"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 
@@ -32,7 +32,7 @@ Jednostki można tworzyć projekty testowe, które odnoszą się do określonych
 
 **Testowanie aplikacji SharePoint**
 
-Funkcje wymienione powyżej również umożliwia pisanie testów jednostkowych i integracji aplikacji programu SharePoint przy użyciu programu Visual Studio. Aby uzyskać więcej informacji o sposobie tworzenia aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [tworzenie rozwiązań programu SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) i [weryfikacji i debugowanie kodu aplikacji programu SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Funkcje wymienione powyżej również umożliwia pisanie testów jednostkowych i integracji aplikacji programu SharePoint przy użyciu programu Visual Studio. Aby uzyskać więcej informacji o sposobie tworzenia aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md), [kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) i [weryfikacji i debugowanie kodu aplikacji programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Ograniczenia**
 
@@ -126,6 +126,6 @@ Gdy ponownie docelowego Twoje projekty testowe do wcześniejszych wersji program
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie rozwiązań SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Zaawansowane ustawienia kompilatora (Visual Basic), okno dialogowe](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

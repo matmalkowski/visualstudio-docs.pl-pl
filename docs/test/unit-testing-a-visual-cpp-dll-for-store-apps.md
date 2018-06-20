@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751874"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233534"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
 
@@ -46,7 +46,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
     -   Metody testowe są podzielone na klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
 
-         Gdy testy są uruchamiane, tworzone jest wystąpienie klasy każdego testu. Metody testowe są nazywane w nieokreślonej kolejności. Można określić specjalne metody, które są wywoływane przed i po każdej modułu, klasy lub metody. Aby uzyskać więcej informacji, zobacz [korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) w bibliotece MSDN.
+         Gdy testy są uruchamiane, tworzone jest wystąpienie klasy każdego testu. Metody testowe są nazywane w nieokreślonej kolejności. Można określić specjalne metody, które są wywoływane przed i po każdej modułu, klasy lub metody. Aby uzyskać więcej informacji, zobacz [korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) w bibliotece MSDN.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sprawdź, że testy uruchamiane w narzędzia Eksplorator testów
 
@@ -113,7 +113,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 5.  Dodaj minimalnego implementacje zadeklarowanej funkcji. Otwórz **RooterLib.cpp** i Dodaj następujący kod:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -151,7 +151,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 3.  Dodaj test, który używa funkcji zaimportowany. Dodaj następujący kod do **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 1.  Dodawanie innego testu do **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
     3.  Dodaj kod, aby **RooterLib.cpp** do catch wyjątku:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

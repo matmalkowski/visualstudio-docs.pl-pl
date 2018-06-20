@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560898"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233467"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Wskazówki: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce za pomocą Projektanta
 Dla wielu kultur przy użyciu zestawów satelickich można skonfigurować aplikacji formularzy systemu Windows. A *zestawu satelickiego* jest zestawu zawierającego zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.  
@@ -51,7 +51,7 @@ Dla wielu kultur przy użyciu zestawów satelickich można skonfigurować aplika
   
      Zestaw satelicki mają nazwy w postaci *isoCode*\ApplicationName.resources.dll, gdzie *isoCode* jest w formacie RFC 1766 identyfikatorem języka.  
   
-5.  Kliknij przycisk **nowych...**  w **grupy pobierania** listy dla każdego identyfikatora języka. Po wyświetleniu monitu o podanie nazwy grupy pobierania, wprowadź identyfikator języka. Na przykład dla zestawu satelickiego japońskim, należy określić nazwę grupy pobierania `ja-JP`.  
+5.  Kliknij przycisk **nowy** w **grupy pobierania** listy dla każdego identyfikatora języka. Po wyświetleniu monitu o podanie nazwy grupy pobierania, wprowadź identyfikator języka. Na przykład dla zestawu satelickiego japońskim, należy określić nazwę grupy pobierania `ja-JP`.  
   
 6.  Zamknij **pliki aplikacji** okno dialogowe.  
   

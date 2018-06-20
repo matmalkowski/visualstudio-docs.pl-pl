@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0be2bc034c209ad43abc7cb0866480ede61a7777
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766682"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235027"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji usług IIS przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -47,7 +47,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Utwórz nowy projekt ASP.NET w programie Visual Studio
 
-1. Na komputerze, działanie programu Visual Studio, wybierz **Plik > Nowy projekt**.
+1. Na komputerze, działanie programu Visual Studio, wybierz **pliku** > **nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web platformy ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
@@ -59,7 +59,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
     Program Visual Studio tworzy projekt.
 
-1. Wybierz **kompilacji > Kompiluj rozwiązanie** Aby skompilować projekt.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** Aby skompilować projekt.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Instalowanie i Konfigurowanie narzędzia Web Deploy w systemie Windows Server
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: efc2cd7ccf0eddee72ac8dcb2828e6945554d0d7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751783"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233954"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 Pakiet Microsoft.SharePoint.Emulators zawiera zestaw bibliotek, które ułatwiają tworzenie testów jednostkowych izolowanych aplikacji Microsoft SharePoint 2010. Użyj emulatory [podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolacji platformę, by utworzyć lekkie obiekty w pamięci, które imitują najczęściej obiekty i metody interfejsu API programu SharePoint. Jeśli metoda programu SharePoint nie jest emulowana, lub aby zmienić domyślne zachowanie emulatora, można utworzyć elementów sztucznych podkładek do udostępniania wyników, które mają.
@@ -47,7 +47,7 @@ Pakiet Microsoft.SharePoint.Emulators zawiera zestaw bibliotek, które ułatwiaj
 
  `ScheduleAppointment` Metody naszego kodu w ramach testu jest prawdopodobnie jednej z metod pierwszy zapisywane dla tego składnika:
 
-```
+```csharp
 // method under test
 public bool ScheduleAppointment(SPWeb web, string listName, string name,
     string phone, string email, string age, DateTime date, out string errorMsg)
@@ -550,4 +550,4 @@ namspace MySPAppTests
 
 - [Testowanie jednostek kodu](../test/unit-test-your-code.md)
 - [Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-- [Opracowywanie rozwiązań SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
+- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238352"
 ---
 # <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -33,7 +34,7 @@ A. Nie.
 A. Absolutnie. W rzeczywistości poniżej przedstawiono kilka, które są popularne dla osób, Praca z R.
 
 - [VsVim dla powiązań klucza vim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [Edytor markdown z podglądem na żywo](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 Zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Aby uzyskać więcej informacji.
@@ -50,7 +51,7 @@ A. W wersji 1.0 RTVS jest tylko do języka angielskiego. Wersji 1.1 będzie loka
 
 **Q. Podoba naprawdę Moje bieżące ustawienia programu Visual Studio, ale chcę wypróbować nowe ustawienia analizy danych. Co należy zrobić?**
 
-A. Zapisz bieżące ustawienia programu Visual Studio przy użyciu **Narzędzia > Import i eksport ustawień...** , następnie przejdź do ustawień analizy danych. Aby przywrócić zapisane ustawienia, należy użyć **Import i eksport ustawień...**  polecenie ponownie.
+A. Zapisz bieżące ustawienia programu Visual Studio przy użyciu **narzędzia** > **Import i eksport ustawień**, następnie przejdź do ustawień analizy danych. Aby przywrócić zapisane ustawienia, należy użyć **Import i eksport ustawień** polecenie ponownie.
 
 **Q. Czy mogę przechowywać w udziale sieciowym projektu programu Visual Studio?**
 
@@ -78,19 +79,19 @@ A. Nie, RTVS obsługuje tylko 64-bitowe wersje R systemem 64-bitowych wersji sys
 
 A. Tak, można użyć do systemu kontroli źródła, który jest zintegrowany z programu Visual Studio.
 
-**Q. Co to są zalecane `.gitignore` ustawień dla projektu RTVS?**
+**Q. Co to są zalecane *.gitignore* ustawień dla projektu RTVS?**
 
-A. Głównym repozytorium przechowuje Github zalecane `.gitignore` plików. Można to sprawdzić tutaj: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. Głównym repozytorium przechowuje Github zalecane *.gitignore* plików. Można to sprawdzić tutaj: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Usługi zdalne
 
 Q. **Co to jest zdalny w programie Visual Studio?**
 
-A. Usługi zdalnego R dla programu Visual Studio umożliwia konfigurowanie komputera z systemem Windows lub Linux, a następnie podłącz do niego z RTVS. Zobacz [Konfigurowanie zdalnych obszarów roboczych](setting-up-remote-r-workspaces.md).
+A. Usługi zdalnego R dla programu Visual Studio umożliwia konfigurowanie komputera z systemem Windows lub Linux, a następnie podłącz do niego z RTVS. Zobacz [Konfigurowanie zdalnego obszarów roboczych](setting-up-remote-r-workspaces.md).
 
-Q. **Czy RTVS można połączyć się serwerem R firmy Microsoft?**
+Q. **RTVS mogą łączyć się Microsoft Machine Learning Server?**
 
-A. Nie, ponieważ R serwera jest różne technologie i nie zapewnia sam mechanizm łączności jako wymagany przez RTVS.
+A. Nie, ponieważ Microsoft ML Server różne technologie i nie zapewnia sam mechanizm łączności jako wymagany przez RTVS.
 
 Q. **RTVS można podłączyć do maszyny Wirtualnej utworzonej przy użyciu obrazu maszyny Wirtualnej nauki danych na platformie Azure?**
 
@@ -98,7 +99,7 @@ A. Tak; [danych nauki VM - Windows 2016](https://azure.microsoft.com/services/vi
 
 Q, **RTVS można połączyć się z komputerem zdalnym z języka R zainstalowanego?**
 
-Wykonanie kodu języka R na zdalnym komputerze, musi istnieć niektóre usługi nasłuchiwanie żądań, kod odbieranie i wysyłanie wyniki z powrotem do komputera klienckiego. Jest to, czy usługi R zdalnego dla programu Visual Studio. Zobacz [Konfigurowanie zdalnych obszarów roboczych](setting-up-remote-r-workspaces.md).
+Wykonanie kodu języka R na zdalnym komputerze, musi istnieć niektóre usługi nasłuchiwanie żądań, kod odbieranie i wysyłanie wyniki z powrotem do komputera klienckiego. Jest to, czy usługi R zdalnego dla programu Visual Studio. Zobacz [Konfigurowanie zdalnego obszarów roboczych](setting-up-remote-r-workspaces.md).
 
 Q. **Co to jest sesji zdalnej?**
 

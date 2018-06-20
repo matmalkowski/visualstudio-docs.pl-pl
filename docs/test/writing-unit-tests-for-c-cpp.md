@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752082"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238355"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
 
@@ -38,7 +38,7 @@ Oprócz zainstalowanych struktur można napisać własny adapter testowy dla dow
 
 - **Boost.Test** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jest zintegrowany z **Eksploratora testów** , ale obecnie nie ma szablonu projektu, dlatego należy go ręcznie skonfigurować. Aby uzyskać więcej informacji, zobacz [porady: Użyj Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** pomocy technicznej jest dołączana do [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) składnika, który jest częścią programu **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jednak CTest nie jest jeszcze pełni zintegrowana z **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [porady: Użyj CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
+- **CTest** pomocy technicznej jest dołączana do [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jednak CTest nie jest jeszcze pełni zintegrowana z **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [porady: Użyj CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 i starsze wersje**
 
@@ -69,7 +69,7 @@ Następnie w pliku .cpp testu jednostki, Dodaj `#include` dyrektywy dla nagłów
 ### <a name="write-test-methods"></a>Zapis metody testowe
 
 > [!NOTE]
-> W tej sekcji przedstawiono składnię dla Framework testów jednostkowych firmy Microsoft do C/C++. Jest opisanych tutaj: [dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test dokumentację można znaleźć [Elementarz testu Google](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md). Aby uzyskać Boost.Test, zobacz [zwiększanie wyniku testu biblioteki: Frameworka testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> W tej sekcji przedstawiono składnię dla Framework testów jednostkowych firmy Microsoft do C/C++. Jest opisanych tutaj: [dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test dokumentację można znaleźć [Elementarz testu Google](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Aby uzyskać Boost.Test, zobacz [zwiększanie wyniku testu biblioteki: Frameworka testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Plik .cpp w projekcie testowym ma Klasa zastępcza i metody zdefiniowane dla użytkownika, na przykład dotyczących tworzenia, testowania kodu. Należy pamiętać, że podpisy makra TEST_CLASS i TEST_METHOD, które metody wykrywalny z okna narzędzia Eksplorator testów.
 
@@ -77,7 +77,7 @@ Plik .cpp w projekcie testowym ma Klasa zastępcza i metody zdefiniowane dla uż
 
 TEST_CLASS i TEST_METHOD są częścią [Microsoft natywnego struktury testowej](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testowanie Explorer** odnajduje metody testowe w innych obsługiwanych platform, w podobny sposób.
 
-TEST_METHOD zwraca typ void. Aby uzyskać wynik testu, użyj metody statyczne w `Assert` klasy do przetestowania rzeczywiste wyniki oczekiwano. W poniższym przykładzie założono `MyClass` zawiera konstruktora przyjmującego który `std::string`. Można sprawdzić, czy Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
+TEST_METHOD zwraca typ void. Aby uzyskać wynik testu, użyj metody statyczne w `Assert` klasy do przetestowania rzeczywiste wyniki oczekiwano. W poniższym przykładzie założono `MyClass` zawiera konstruktora przyjmującego `std::string`. Można sprawdzić, czy Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
 
 ```cpp
         TEST_METHOD(TestClassInit)

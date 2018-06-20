@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 425a4e6fd85f635d6e95122a55fe0d09fde7825c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752069"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238359"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -54,7 +54,7 @@ Na pasku przebiegu/Niepowodzenie w górnej części okna Eksploratora testów je
 
 ### <a name="run-tests-after-every-build"></a>Uruchom testy po każdej kompilacji
 
-|||
+|Przycisk|Opis|
 |-|-|
 |![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdym lokalnej kompilacji, wybierz pozycję **testu** w standardowe menu, a następnie wybierz **Uruchom testy po kompilacji** na pasku narzędzi Eksplorator testów.|
 
@@ -126,7 +126,7 @@ Eksplorator testów umożliwia grupowanie testów do wstępnie zdefiniowanych ka
 
 Filtry Eksploratora testów służy do ograniczania metody testowe w projektach, które możesz wyświetlać i uruchamiać.
 
-Wpisz ciąg w Eksploratora testów w polu wyszukiwania, a następnie wybierz polecenie ENTER, listy testów są filtrowane do wyświetlenia tylko te testy, których nazwy FQDN zawierają ciąg znaków.
+Wpisz ciąg w polu wyszukiwania Eksploratora testów, a następnie wybierz polecenie ENTER, listy testów są filtrowane do wyświetlenia tylko te testy, których nazwy FQDN zawierają ciąg znaków.
 
 Aby filtrować według różnych kryteriów:
 
@@ -153,7 +153,7 @@ Aby filtrować według różnych kryteriów:
 
 Aby wykluczyć podzbiór wyników filtru, należy użyć następującej składni:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

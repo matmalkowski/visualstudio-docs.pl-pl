@@ -17,18 +17,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e963472ee51f2439b50807a49425dcd7f6d8443a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1118fa4e6408698187e7f50ca6f9b61bf596a6e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791911"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234949"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>Obsługa zdarzeń środowiska wykonawczego systemu Windows w języku JavaScript
-Zdarzenia środowiska uruchomieniowego systemu Windows nie są reprezentowane w taki sam sposób, w języku JavaScript, jak w języku C++ i .NET Framework. Nie są właściwościami klasy, ale raczej są reprezentowane jako identyfikatory ciągów, które są przekazywane do klasy `addEventListener` i `removeEventListener` metody. Na przykład można dodać obsługi zdarzeń dla [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) zdarzenia przez przekazanie do ciągu "positionchanged" `Geolocator.addEventListener` metody:  
+Zdarzenia środowiska uruchomieniowego systemu Windows nie są reprezentowane w taki sam sposób, w języku JavaScript, jak w języku C++ i .NET Framework. Nie są właściwościami klasy, ale raczej są reprezentowane jako identyfikatory ciągów (małej), które są przekazywane do klasy `addEventListener` i `removeEventListener` metody. Na przykład można dodać obsługi zdarzeń dla [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) zdarzenia przez przekazanie do ciągu "positionchanged" `Geolocator.addEventListener` metody:  
   
 ```JavaScript  
-var locator =  new Windows.Devices.Geolocation.Geolocator();  
+var locator = new Windows.Devices.Geolocation.Geolocator();  
 locator.addEventListener(  
     "positionchanged",   
      function (ev) {  
@@ -36,9 +36,9 @@ locator.addEventListener(
     });  
 ```  
   
- Można również ustawić `locator.onpositionchanged` właściwości.  
+ Można również ustawić `locator.onpositionchanged` właściwości:  
   
-```  
+```JavaScript  
 locator.onpositionchanged =    
     function (ev) {  
         console.log("Got event");  
@@ -61,4 +61,4 @@ function (ev) {
 >  Funkcje środowiska wykonawczego systemu Windows nie są dostępne dla aplikacji, które są uruchamiane w programie Internet Explorer.  
   
 ## <a name="see-also"></a>Zobacz też  
- [W języku JavaScript za pomocą środowiska wykonawczego systemu Windows](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Używanie środowiska wykonawczego systemu Windows w języku JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)

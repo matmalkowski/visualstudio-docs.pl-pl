@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e67a44efface97c1cbcf0bd96756467268416ee2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561613"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234130"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Porady: publikowanie projektu o specyficznych ustawieniach regionalnych
 Nie jest rzadko aplikacji zawiera składniki, które mają różne ustawienia regionalne. W tym scenariuszu czy tworzenia rozwiązania, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. W tej procedurze pokazano, jak opublikować pierwszy projekt w rozwiązaniu przy użyciu ustawień regionalnych "PL" przy użyciu makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", należy ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład "de" lub "de-DE").  
@@ -155,7 +155,7 @@ Nie jest rzadko aplikacji zawiera składniki, które mają różne ustawienia re
   
      Po wyświetleniu strony publikowania w sieci Web, należy go zamknąć. (W tym kroku należy opublikować projekt, nie trzeba go zainstalować.)  
   
-5.  Ponownie opublikować PublishLocales przez wywołanie makra w oknie Wiersz polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia na **widoku** menu wskaż **inne okna** , a następnie kliknij przycisk **okno polecenia**, lub naciśnij klawisze CTRL + ALT + A. W oknie wiersza polecenia, wpisz `macros`; funkcja automatycznego uzupełniania będzie zawierają listę dostępnych makr. Wybierz następujące makra, a następnie naciśnij klawisz ENTER:  
+5.  Ponownie opublikować PublishLocales przez wywołanie makra w oknie Wiersz polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia na **widoku** menu wskaż **inne okna** , a następnie kliknij przycisk **okno polecenia**, lub naciśnij klawisz **Ctrl** + **Alt**+**A**. W oknie wiersza polecenia, wpisz `macros`; funkcja automatycznego uzupełniania będzie zawierają listę dostępnych makr. Wybierz następujące makra, a następnie naciśnij klawisz ENTER:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   

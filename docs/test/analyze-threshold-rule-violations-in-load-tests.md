@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750912"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234988"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w czasie testów obciążenia za pomocą analizatora testu obciążenia
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizowanie naruszeń zasady progu w testach obciążenia za pomocą analizatora testu obciążenia
 
 Reguły progu są skojarzone z konkretnych licznikach wydajności i naruszeń wskazywać, że licznika wydajności przekroczony lub spadła poniżej ustaw wartość. Po uruchomieniu testu obciążenia może analizowanie naruszeń zasady progu skonfigurowane wcześniej.
 
-Jeśli nastąpiło naruszenie, **naruszenia progu** hiperłącze jest wyświetlana na pasku stanu analizatora testu obciążenia i określa liczbę naruszeń, które wystąpiły. Możesz wybrać hiperłącze, aby wyświetlić tabelę naruszenia progu. Można również wyświetlić naruszenia progu w **liczniki** okna, a na wykresie.
+Jeśli nastąpiło naruszenie, **naruszenia progu** hiperłącze pojawia się na **analizatora testu obciążenia** paska stanu i określa liczbę naruszeń, które wystąpiły. Możesz wybrać hiperłącze, aby wyświetlić tabelę naruszenia progu. Można również wyświetlić naruszenia progu w **liczniki** okna, a na wykresie.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Naruszenia progu widoku tabeli
 
@@ -74,7 +74,7 @@ Jeśli nastąpiło naruszenie, **naruszenia progu** hiperłącze jest wyświetla
 
  Naruszenia progu można wyświetlić na wykresie. Podobnie jak **liczniki** panelu ikony komunikacji naruszenia progowe na wykresie. Ikony są wyświetlane na wykresie obok punkt danych, w którym wystąpiło naruszenie progu. Jeśli występuje naruszenie progu w licznika, który nie jest wyświetlane na wykresie, można dodać go do wykresu przeciągając je z **liczniki** panelu do wykresu.
 
- Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Aby uzyskać więcej informacji, zobacz [z wynikami testów obciążenia analizowanie w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20f7f09688fbeeb3ccd9d79b35dd334bdba888f5
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558012"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235014"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Porady: określanie strony publikowania dla aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji domyślnej strony sieci Web (publish.htm) zostaną wygenerowane i opublikowane wraz z aplikacji. Ta strona zawiera nazwę aplikacji, łącze do zainstalowania aplikacji i/lub wymagań wstępnych i link do tematu Pomocy zawierająca opis [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. **Opublikuj stronę** właściwości projektu można określić nazwę strony sieci Web dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
@@ -45,7 +45,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 5.  W **opcji publikowania** okna dialogowego upewnij się, że **opublikować stronę sieci web Otwórz wdrożenia po** jest zaznaczone pole wyboru (ona powinny zostać wybrana domyślnie).  
   
-6.  W **stronę sieci web wdrożenia:** , wprowadź nazwę dla strony sieci Web, a następnie kliknij **OK**.  
+6.  W **stronę sieci web wdrożenia** , wprowadź nazwę dla strony sieci Web, a następnie kliknij **OK**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Aby zapobiec uruchamianiu zawsze, gdy opublikujesz strony publikowania  
   

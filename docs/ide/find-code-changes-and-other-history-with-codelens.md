@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238400"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -83,7 +84,7 @@ Jest to, zobacz korzystając z Team Foundation wersji formantu (TFVC) w programi
 
 ![CodeLens: Historia zmian Get dla kodu w TFVC](../ide/media/codelens-code-changes.png)
 
-Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli kod jest przechowywany na serwerze Team Foundation Server, można zmienić okres czasu, uruchamiając [polecenia TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd) z [CodeIndex — polecenie](../ide/codeindex-command.md) i **/indexHistoryPeriod**flagi.
+Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli kod jest przechowywany na serwerze Team Foundation Server, można zmienić okres czasu, uruchamiając [polecenia TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) z [CodeIndex — polecenie](../ide/codeindex-command.md) i **/indexHistoryPeriod**flagi.
 
 Aby wyświetlić szczegółowej historii wszystkie zmiany, w tym z więcej niż rok temu, wybierz pozycję **Pokaż wszystkie zmiany w pliku**:
 
@@ -205,23 +206,25 @@ Może odnajdywać testy jednostek, które istnieją dla kodu C# lub Visual Basic
 
 1. Przejdź do kodu aplikacji, który został skojarzony [kod testu jednostkowego](../test/unit-test-your-code.md).
 
-2. Przejrzyj testów dla kodu, naciskając klawisz **Alt**+**3**.
+2. Jeśli jeszcze tego nie zrobiono, należy skompilować aplikację do ładowania testów wskaźniki CodeLens. Upewnij się, że [odnajdywania przez zbudowanych zestawy](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) jest włączona.
+
+3. Przejrzyj testów dla kodu, naciskając klawisz **Alt**+**3**.
 
      ![Wybierz CodeLens — stan testu w edytorze kodu](../ide/media/codelens-choose-test-indicator.png)
 
-3. Jeśli widzisz ikonę ostrzeżenia ![Ikona ostrzeżenia](../ide/media/codelenstestwarningicon.png), testy nie Uruchom jeszcze, więc ich uruchamiać.
+4. Jeśli widzisz ikonę ostrzeżenia ![Ikona ostrzeżenia](../ide/media/codelenstestwarningicon.png), testy nie Uruchom jeszcze, więc ich uruchamiać.
 
      ![CodeLens — widok testów jednostkowych nie jeszcze uruchomione](../ide/media/codelens-tests-not-yet-run.png)
 
-4. Aby przejrzeć definicji testu, kliknij dwukrotnie element testu w oknie wskaźników CodeLens można otworzyć pliku kodu w edytorze.
+5. Aby przejrzeć definicji testu, kliknij dwukrotnie element testu w oknie wskaźników CodeLens można otworzyć pliku kodu w edytorze.
 
      ![CodeLens - przejdź do definicji testów jednostkowych](../ide/media/codelens-unit-test-definition.png)
 
-5. Aby przejrzeć wyniki testu, wybierz pozycję wskaźnika stanu testu (![nie powiodło się ikona testowa](../ide/media/codelenstestfailedicon.png) lub ![ikona pomyślny](../ide/media/codelenstestpassedicon.png)), lub naciśnij klawisz **Alt**+**1**.
+6. Aby przejrzeć wyniki testu, wybierz pozycję wskaźnika stanu testu (![nie powiodło się ikona testowa](../ide/media/codelenstestfailedicon.png) lub ![ikona pomyślny](../ide/media/codelenstestpassedicon.png)), lub naciśnij klawisz **Alt**+**1**.
 
      ![CodeLens - wyniku testu jednostkowego zobacz](../ide/media/codelens-unit-test-result.png)
 
-6. Aby sprawdzić, ile osób zmienić ten test, który zmienić ten test lub liczbę zmian do tego testu [Znajdź swój kod historii](#find-code-history) i połączone elementy.
+7. Aby sprawdzić, ile osób zmienić ten test, który zmienić ten test lub liczbę zmian do tego testu [Znajdź swój kod historii](#find-code-history) i połączone elementy.
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -252,7 +255,7 @@ Wskaźniki poziomu plików CodeLens należy włączyć i wyłączyć przy użyci
 
 - Upewnij się, że jest włączona CodeLens. Przejdź do **narzędzia** > **opcje** > **Edytor tekstu** > **wszystkie języki**  >  **CodeLens**.
 
-- Jeśli kod jest przechowywany w programie TFS, upewnij się, że kod indeksowania jest włączona przy użyciu [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/vsts/tfs-server/command-line/tfsconfig-cmd).
+- Jeśli kod jest przechowywany w programie TFS, upewnij się, że kod indeksowania jest włączona przy użyciu [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/tfs/server/ref/command-line/tfsconfig-cmd).
 
 - Wskaźniki związane z TFS pojawiają się tylko wtedy, gdy elementy robocze są połączone z kodem, a użytkownik ma uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia zabezpieczeń elementów członkowskich zespołu](/vsts/work/scale/multiple-teams).
 
@@ -320,7 +323,11 @@ Aby użyć klawiatury:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Pytanie: czy można zarządzać w jaki sposób CodeLens przetwarza kod, aby wyświetlić historię i połączone elementy?
 
-**Odpowiedź:** tak. Jeśli kod jest w programie TFS, użyj [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/vsts/tfs-server/command-line/tfsconfig-cmd).
+**Odpowiedź:** tak. Jeśli kod jest w programie TFS, użyj [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/tfs/server/ref/command-line/tfsconfig-cmd).
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Pytanie: czy Moje wskaźniki testu CodeLens nie są widoczne w pliku po raz pierwszy jest otwarty Moje rozwiązanie. Jak załadować je?
+
+**Odpowiedź:** Odbuduj projekt, aby uzyskać wskaźniki CodeLens testu do załadowania w pliku. Upewnij się, że [odnajdywania przez zbudowanych zestawy](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) jest włączona. Aby zwiększyć wydajność, Visual Studio już nie pobiera informacje o źródle wskaźników testu po załadowaniu plików kodu. Załadowano wskaźniki testu po kompilacji lub po przejściu do badania klikając dwukrotnie w **Eksploratora testów**.
 
 ## <a name="see-also"></a>Zobacz także
 

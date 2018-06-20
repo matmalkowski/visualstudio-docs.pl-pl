@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c806971a68811f6e067c5edd49fdefa87cd67194
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238357"
 ---
-# <a name="setting-up-remote-workspaces"></a>Konfigurowanie zdalnego obszary robocze
+# <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnego obszarów roboczych
 
 W tym artykule opisano sposób konfigurowania serwera zdalnego z protokołu SSL i odpowiednią usługę R. Dzięki temu R narzędzi dla programu Visual Studio (RTVS) do nawiązania połączenia zdalnego obszaru roboczego na tym serwerze.
 
@@ -36,9 +37,9 @@ W tym artykule opisano sposób konfigurowania serwera zdalnego z protokołu SSL 
 
 ## <a name="install-an-ssl-certificate"></a>Zainstaluj certyfikat SSL
 
-RTVS wymaga, aby cała komunikacja z serwerem zdalnym się stanie, za pośrednictwem protokołu HTTP, która wymaga certyfikatu SSL na serwerze. Można użyć certyfikatu podpisanego przez zaufany urząd certyfikacji (zalecane) lub certyfikatu z podpisem własnym. (Certyfikatu z podpisem własnym powoduje, że RTVS ostrzeżenia problem podczas połączenia). Z jednej następnie należy go zainstalować na komputerze i zezwolić na dostęp do jego klucz prywatny.
+RTVS wymaga, aby cała komunikacja z serwerem zdalnym się stanie, za pośrednictwem protokołu HTTP, która wymaga certyfikatu SSL na serwerze. Można użyć certyfikatu podpisanego przez zaufany urząd certyfikacji (zalecane) lub certyfikatu z podpisem własnym. (Certyfikatu z podpisem własnym powoduje RTVS z ostrzeżeniami problem podczas połączenia). Z jednej następnie należy go zainstalować na komputerze i zezwolić na dostęp do jego klucz prywatny.
 
-### <a name="obtaining-a-trusted-certificate"></a>Uzyskiwanie zaufanego certyfikatu
+### <a name="obtain-a-trusted-certificate"></a>Uzyskanie zaufanego certyfikatu
 
 Zaufany certyfikat jest wystawiony przez urząd certyfikacji (zobacz [certyfikatów urzędów w witrynie Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) w tle). Podobnie jak uzyskiwanie karty identyfikacyjne dla instytucji rządowych, wystawiania certyfikatów zaufanych obejmuje więcej procesów oraz ewentualne opłaty, ale sprawdza autentyczności żądania oraz obiekt żądający.
 
@@ -50,7 +51,7 @@ W tle więcej, zobacz [certyfikatów kluczy publicznych](https://en.wikipedia.or
 
 Certyfikat SSL musi zostać zainstalowany ręcznie w systemie windows. Postępuj zgodnie z instrukcjami poniżej, aby zainstalować certyfikat protokołu SSL.
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>Uzyskiwanie certyfikatu z podpisem własnym (system Windows)
+### <a name="obtain-a-self-signed-certificate-windows"></a>Uzyskiwanie certyfikatu z podpisem własnym (system Windows)
 
 Jeśli masz zaufanego certyfikatu, należy pominąć tę sekcję. W porównaniu z certyfikatu z zaufanego urzędu certyfikatu z podpisem własnym przypomina tworzenia karty identyfikacyjne dla siebie. Ten proces jest oczywiście znacznie łatwiejsze niż w przypadku pracy z zaufanego urzędu, ale również nie ma silnego uwierzytelniania, co oznacza, że atakujący można zastąpić certyfikatu dla certyfikatu bez znaku i przechwytywać cały ruch między klientem i serwer. W związku z tym *certyfikatu z podpisem własnym należy używać tylko do testowania scenariuszy, w zaufanej sieci, a nie w środowisku produkcyjnym.*
 
@@ -75,19 +76,19 @@ Do wystawiania certyfikatu z podpisem własnym:
 
 W tle, zobacz [certyfikaty z podpisem własnym](https://en.wikipedia.org/wiki/Self-signed_certificate) w witrynie Wikipedia.
 
-### <a name="installing-the-certificate"></a>Instalowanie certyfikatu
+### <a name="install-the-certificate"></a>Instalowanie certyfikatu
 
-Aby zainstalować certyfikat na komputerze zdalnym, uruchom `certlm.msc` (Menedżer certyfikatów) w wierszu polecenia. Kliknij prawym przyciskiem myszy **osobistych** i wybierz polecenie **wszystkie zadania > Import** polecenie:
+Aby zainstalować certyfikat na komputerze zdalnym, uruchom *certlm.msc* (Menedżer certyfikatów) w wierszu polecenia. **Kliknij prawym przyciskiem myszy** na **osobistych** i wybierz polecenie **wszystkie zadania** > **importu** polecenia:
 
 ![Polecenie Import certyfikatu](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Udzielanie uprawnień do odczytu klucza prywatnego certyfikatu SSL
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>Przyznaj uprawnienia do odczytu klucza prywatnego certyfikatu SSL
 
 Po zaimportowaniu certyfikatu udzielić `NETWORK SERVICE` uprawnienia do odczytu klucza prywatnego, zgodnie z opisem w poniższych instrukcjach konta. `NETWORK_SERVICE` to konto służy do uruchamiania brokera usług R to usługa, która kończy przychodzących połączeń SSL na serwerze.
 
-1. Uruchom `certlm.msc` (Menedżer certyfikatów) z wiersza polecenia z uprawnieniami administratora.
-1. Rozwiń węzeł **osobiste > Certyfikaty**, kliknij prawym przyciskiem myszy certyfikat, a wybierz **wszystkie zadania > Zarządzaj kluczami prywatnymi**.
-1. Kliknij prawym przyciskiem myszy certyfikat, a następnie wybierz polecenie Zarządzaj kluczami prywatnymi, w obszarze wszystkich zadań
+1. Uruchom *certlm.msc* (Menedżer certyfikatów) z wiersza polecenia z uprawnieniami administratora.
+1. Rozwiń węzeł **osobistych** > **certyfikaty**, kliknij prawym przyciskiem myszy certyfikat, a wybierz **wszystkie zadania** > **Zarządzanie prywatnych Klucze**.
+1. **Kliknij prawym przyciskiem myszy** na certyfikatu i wybierz **Zarządzaj kluczami prywatnymi** polecenia w obszarze **wszystkie zadania**.
 1. W wyświetlonym oknie dialogowym wybierz **Dodaj** , a następnie wprowadź `NETWORK SERVICE` jako nazwa konta:
 
     ![Okno dialogowe kluczy prywatnych, Dodawanie usługi NETWORK_SERVICE Zarządzanie](media/workspaces-remote-manage-private-key-dialog.png)
@@ -98,11 +99,11 @@ Po zaimportowaniu certyfikatu udzielić `NETWORK SERVICE` uprawnienia do odczytu
 
 `rtvs-daemon` Pakietu zostanie zainstalowany certyfikat z podpisem własnym domyślnie jako część instalacji.
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Uzyskiwanie certyfikatu z podpisem własnym (Ubuntu)
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>Uzyskiwanie certyfikatu z podpisem własnym (Ubuntu)
 
-Zalety i wady używania certyfikatu z podpisem własnym dla opis systemu windows. `rtvs-daemon` Pakietu generuje i konfiguruje certyfikatu z podpisem własnym podczas instalacji. Należy to zrobić tylko, jeśli chcesz zastąpić automatycznie wygenerowany certyfikat z podpisem własnym.
+Zalety i wady używania certyfikatu z podpisem własnym dla opis systemu windows. `rtvs-daemon` Pakietu generuje i konfiguruje certyfikat z podpisem własnym podczas instalacji. Należy to zrobić tylko, jeśli chcesz zastąpić automatycznie wygenerowany certyfikat z podpisem własnym.
 
-Aby wystawić samodzielnie certyfikat z podpisem samodzielnie:
+Aby samodzielnie wystawiania certyfikatu z podpisem własnym:
 
 1. SSH lub zaloguj się do komputera z systemem linux.
 1. Zainstaluj `ssl-cert` pakietu:
@@ -118,7 +119,7 @@ Aby wystawić samodzielnie certyfikat z podpisem samodzielnie:
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>Konfigurowanie demon RTVS
+### <a name="configure-rtvs-daemon"></a>Skonfiguruj demona RTVS
 
 Ścieżka pliku certyfikatu SSL (ścieżka do pliku PFX) musi być ustawiona w `/etc/rtvs/rtvsd.config.json`. Aktualizacja `X509CertificateFile` i `X509CertificatePassword` przy użyciu ścieżki pliku i hasła odpowiednio.
 
@@ -150,17 +151,17 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 1. Uruchom [Instalatora usług R](https://aka.ms/rtvs-services) i ponowny rozruch po wyświetleniu monitu. Instalator wykonuje następujące czynności:
 
-    - Utwórz folder w `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` i skopiuj wszystkie wymagane pliki binarne.
+    - Utwórz folder w *%PROGRAMFILES%\R Tools dla Visual Studio\1.0\* i skopiuj wszystkie wymagane pliki binarne.
     - Zainstaluj `RHostBrokerService` i `RUserProfileService` i skonfigurować do automatycznego uruchamiania.
     - Skonfiguruj `seclogon` na uruchamianie automatyczne.
-    - Dodaj `Microsoft.R.Host.exe` i `Microsoft.R.Host.Broker.exe` do zapory reguły dla ruchu przychodzącego na domyślnym porcie 5444.
+    - Dodaj *Microsoft.R.Host.exe* i *Microsoft.R.Host.Broker.exe* do zapory reguły dla ruchu przychodzącego na domyślnym porcie 5444.
 
 R usług jest uruchamiana automatycznie przy ponownym uruchomieniu komputera:
 
 - **Usługa Broker hosta R** obsługuje cały ruch HTTPS między Visual Studio i procesów, którym kod języka R jest uruchomiona na komputerze.
 - **Usługi profilu użytkownika R** jest składnikiem uprzywilejowane, który obsługuje tworzenie profilu użytkownika systemu Windows. Usługa jest wywoływana, gdy nowy użytkownik najpierw loguje się do komputera serwera R.
 
-Widzisz tych usług w konsoli zarządzania usługami (`compmgmt.msc`).
+Widzisz tych usług w konsoli zarządzania usługami (*compmgmt.msc*).
 
 ## <a name="install-r-services-on-linux"></a>Zainstaluj usługi R w systemie Linux
 
@@ -189,7 +190,7 @@ Z usługami R uruchomiony na komputerze zdalnym można również muszą tworzyć
 
     Jednak jeśli certyfikat jest instalowany na serwerze połączonych z Internetem (na przykład w przypadku maszyny Wirtualnej platformy Azure), użyć pełni kwalifikowaną nazwą domeny (FQDN) serwera, ponieważ nazwa FQDN serwera internetowy nigdy nie jest taka sama jak jego nazwa NETBIOS.
 
-    Użyj nazwy FQDN, przejdź do zainstalowanym usług R (`%PROGRAM FILES%\R Remote Service for Visual Studio\1.0` domyślnie), otwórz `Microsoft.R.Host.Broker.Config.json` plik w edytorze tekstów i zastąp jego zawartość CN następujących, przypisywanie do niezależnie od serwera do nazwy FQDN, takich jak `foo.westus.cloudapp.azure.com`:
+    Użyj nazwy FQDN, przejdź do zainstalowanym usług R (*% PROGRAM FILES%\R usługi zdalnej dla Visual Studio\1.0* domyślnie), otwórz *Microsoft.R.Host.Broker.Config.json* plik w edytorze tekstu i zastąp jego zawartość CN następujących, przypisywanie do niezależnie od serwera do nazwy FQDN, takich jak `foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -216,18 +217,18 @@ Istnieją trzy możliwe przyczyny:
 - Zasady zapory `Microsoft.R.Host.Broker` i `Microsoft.R.Host` nie są włączone dla przychodzących i wychodzących połączeń na porcie 5444.
 - Certyfikat SSL z `CN=<remote-machine-name>` nie został zainstalowany.
 
-Ponowne uruchomienie komputera po wprowadzeniu zmiany powyżej. Następnie upewnij się, że `RHostBrokerService` i `RUserProfileService` są uruchomione przy użyciu albo Menedżera zadań (karta usług) lub `services.msc`.
+Ponowne uruchomienie komputera po wprowadzeniu zmiany powyżej. Następnie upewnij się, że `RHostBrokerService` i `RUserProfileService` są uruchomione przy użyciu albo Menedżera zadań (karta usług) lub *services.msc*.
 
 **Q. Dlaczego okno interaktywne R powiedzieć "401 Odmowa dostępu" podczas nawiązywania połączenia z serwerem R?**
 
 Istnieją dwie możliwe przyczyny:
 
 - Istnieje duże prawdopodobieństwo, że `NETWORK SERVICE` konto nie ma dostępu do klucza prywatnego certyfikatu protokołu SSL. Postępuj zgodnie z instrukcjami wcześniejszych udzielenia `NETWORK SERVICE` dostępu do klucza prywatnego.
-- Upewnij się, że `seclogon` usługa jest uruchomiona. Użyj `services.msc` skonfigurować `seclogon` do automatycznego uruchamiania.
+- Upewnij się, że `seclogon` usługa jest uruchomiona. Użyj *services.msc* skonfigurować `seclogon` do automatycznego uruchamiania.
 
 **Q. Dlaczego okno interaktywne R powiedzieć "nie znaleziono 404" podczas nawiązywania połączenia z serwerem R?**
 
-Ten błąd prawdopodobnie z powodu braku biblioteki pakietu redystrybucyjnego Visual C++. Sprawdź okno interaktywne R, czy jest komunikatem dotyczącym library(DLL) Brak. Następnie sprawdź, czy VS 2015 redistributable jest zainstalowany, i czy masz R również zainstalowany.
+Ten błąd prawdopodobnie z powodu braku biblioteki pakietu redystrybucyjnego Visual C++. Sprawdź okno interaktywne R, aby sprawdzić, czy wiadomość dotyczącą brakujących Biblioteka (DLL). Następnie sprawdź, czy VS 2015 redistributable jest zainstalowany, i czy masz R również zainstalowany.
 
 **Q. Nie mam dostępu do Internetu/zasobu z okno interaktywne R, co należy zrobić?**
 
@@ -235,4 +236,4 @@ Upewnij się, że reguły zapory `Microsoft.R.Host.Broker` i `Microsoft.R.Host` 
 
 **Q. Podejmowano tych rozwiązań, a nadal nie działa. Co teraz?**
 
-Szukaj w plikach dzienników w `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Ten folder zawiera osobne pliki dziennika dla każdego wystąpienia usługi Broker R, która została uruchomiona. Nowy plik dziennika jest tworzony przy każdym ponownym uruchomieniu usługi. Sprawdź najnowszy plik dziennika dla wskazówek dotyczących co może być przejście niewłaściwy.
+Szukaj w plikach dzienników w *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Ten folder zawiera osobne pliki dziennika dla każdego wystąpienia usługi Broker R, która została uruchomiona. Nowy plik dziennika jest tworzony przy każdym ponownym uruchomieniu usługi. Sprawdź najnowszy plik dziennika dla wskazówek dotyczących co może być przejście niewłaściwy.

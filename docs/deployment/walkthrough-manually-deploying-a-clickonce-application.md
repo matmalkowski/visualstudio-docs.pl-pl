@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2255bab39a90e52423915d4b9ede3efdebd1ea26
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238399"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lub należy korzystać z funkcji zaawansowanego wdrożenia, takich jak wdrażanie zaufanej aplikacji należy za pomocą narzędzia wiersza polecenia Mage.exe tworzenia Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Ten przewodnik zawiera opis sposobu tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wiersza polecenia wersji (Mage.exe) lub wersji graficznego (MageUI.exe) generowania manifestu i narzędzia do edycji.  
@@ -82,7 +83,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 5.  Utwórz manifest aplikacji przy użyciu wywołania do Mage.exe. Poniższa instrukcja tworzy manifest aplikacji dla kodu skompilowanego do uruchomienia z procesora Intel x86.  
   
-    ```  
+    ```console  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
@@ -91,34 +92,24 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 6.  Zaloguj się przy użyciu certyfikatu Authenticode manifest aplikacji. Zastąp *mycert.pfx* ze ścieżką do pliku certyfikatu. Zastąp *haseł* hasłem do pliku certyfikatu.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     Aby podpisać manifest aplikacji przy użyciu certyfikatu CNG, użyj następującego polecenia. Zastąp *cngCert.pfx* ze ścieżką do pliku certyfikatu.  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
-    ```  
-  
+    Począwszy od zestawu SDK .NET Framework 4.6.2, który jest dostarczany z programem Visual Studio i zestaw Windows SDK, znaki mage.exe manifesty z CNG, a także z certyfikatami Authenticode. Użyj te same parametry wiersza polecenia, podobnie jak w przypadku certyfikatów kodu Authenticode.
+    
 7.  Przejdź do katalogu głównego katalogu wdrażania.  
   
 8.  Generuj manifest wdrażania przy użyciu wywołania do Mage.exe. Domyślnie oznaczy Mage.exe Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia jako zainstalowanej aplikacji, którego nie można uruchomić zarówno online i offline. Aby udostępnić aplikację, tylko wtedy, gdy użytkownik jest w trybie online, należy użyć `-Install` opcja o wartości `false`. Jeśli użytkownik korzysta z domyślnych, a użytkownicy będą instalować aplikację z witryny sieci Web lub udziału plików, upewnij się, że wartość `-ProviderUrl` manifestu opcja wskazuje lokalizację aplikacji na serwerze sieci Web lub w udziale.  
   
-    ```  
+    ```console  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
 9. Zaloguj się przy użyciu certyfikatu Authenticode lub CNG manifest wdrażania.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
-    ```  
-  
-     lub  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
 10. Skopiuj wszystkie pliki w katalogu wdrożenia do wdrożenia docelowego lub nośnika. Może to być folderem na witryny sieci Web lub witryny FTP, udziału plików lub dysku CD.  
@@ -138,7 +129,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 4.  Uruchom narzędzie graficzne MageUI.exe.  
   
-    ```  
+    ```console  
     MageUI.exe  
     ```  
   
@@ -172,7 +163,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 17. Na **nazwa** karcie, określ nazwę i numer wersji dla tego wdrożenia (**1.0.0.0** w tym przykładzie). Określ również **procesora** wbudowanej aplikacji, takich jak x86.  
   
-18. Wybierz **opis** , a następnie określ wartości dla **wydawcy** i **Produc *** t**. (**Produktu** jest nazwa aplikacji w menu Start systemu Windows po zainstalowaniu aplikacji na komputerze klienckim w trybie offline.)  
+18. Wybierz **opis** , a następnie określ wartości dla **wydawcy** i **produktu**. (**Produktu** jest nazwa aplikacji w menu Start systemu Windows po zainstalowaniu aplikacji na komputerze klienckim w trybie offline.)  
   
 19. Wybierz **opcje wdrażania** kartę i w **Start lokalizacji** tekst Określ lokalizację manifest aplikacji na serwerze sieci Web lub w udziale. Na przykład \\\myServer\myShare\AppToDeploy.application.  
   

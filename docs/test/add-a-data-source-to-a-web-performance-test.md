@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a8ca3780af4db9a9fe8b59d58f8c2b537c621d8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0f50e8a2f9381b4fd248b044772f5c2bdbf95a41
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255096"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234767"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -24,7 +24,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
  ![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
 
- Chcemy użyć przykładowej aplikacji ASP.NET. Składa się z trzech strony .aspx — domyślnej strony, strony czerwony i niebieski strony. Domyślna strona zawiera formant radiowych, aby wybrać czerwony lub niebieski i przycisk przesyłania. Dwie pozostałe strony .aspx są bardzo proste. Jeden z nich ma etykietę o nazwie Red i innych ma etykietę o nazwie niebieski. Po wybraniu przesłać na stronie domyślnej wyświetli jeden z innych stron. Możesz pobrać [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowe lub po prostu wykonaj, wraz z aplikacji sieci web.
+ Chcemy użyć przykładowej aplikacji ASP.NET. Składa się z trzech *.aspx* strony — domyślnej strony, strony czerwony i niebieski strony. Domyślna strona zawiera formant radiowych, aby wybrać czerwony lub niebieski i przycisk przesyłania. Pozostałe dwa *.aspx* strony są bardzo proste. Jeden z nich ma etykietę o nazwie Red i innych ma etykietę o nazwie niebieski. Po wybraniu przesłać na stronie domyślnej wyświetli jeden z innych stron. Możesz pobrać [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowe lub po prostu wykonaj, wraz z aplikacji sieci web.
 
  ![Aplikacją sieci web ma zostać przetestowana](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 ## <a name="create-a-sql-database"></a>Utwórz bazę danych SQL
 
-1. Jeśli nie masz programu Visual Studio Enterprise cand można go pobrać z [programu Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony.
+1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [programu Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony.
 
 2. Utwórz bazę danych SQL.
 
@@ -90,11 +90,11 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 ## <a name="bind-the-data"></a>Powiązanie danych
 
-1. Powiązać pole ColorName.
+1. Powiąż **ColorName** pola.
 
      ![Powiązać pole ColorName RadioButtonList1 wartości](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. Otwórz plik Local.testsettings w Eksploratorze rozwiązań i wybierz jeden przebieg poszczególnych opcji wiersz źródła danych.
+2. Otwórz *Local.testsettings* w pliku **Eksploratora rozwiązań** i wybierz **jedno uruchomienie na wiersz źródła danych** opcji.
 
      ![Edytuj plik ustawień testu](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
      ![Uruchamianie testu wydajności sieci web, aby sprawdzić powiązania](../test/media/web_test_databinding_sql_runtest.png)
 
-     Dla każdego wiersza danych są wyświetlane dwa przebiegi. Uruchom 1 wysyła żądanie strony Red.aspx i uruchom 2 wysyła żądanie strony Blue.aspx.
+     Dla każdego wiersza danych są wyświetlane dwa przebiegi. Uruchom 1 wysyła żądanie strony *Red.aspx*, i uruchom 2 wysyła żądanie strony *Blue.aspx*.
 
      ![Wyniki uruchomienia testu](../test/media/web_test_databinding_sql_runresults.png)
 
-     Po powiązaniu ze źródłem danych, może naruszyć domyślną regułę adres URL odpowiedzi. W takim przypadku błąd podczas uruchamiania 2 jest spowodowany przez reguły, która oczekuje stronę Red.aspx z oryginalnego rejestrowania testu, ale teraz powiązania danych kieruje je do strony Blue.aspx.
+     Po powiązaniu ze źródłem danych, może naruszyć domyślną regułę adres URL odpowiedzi. W takim przypadku Uruchom 2 jest przyczyną błędu reguły, która oczekuje *Red.aspx* strony z oryginalnego rejestrowania testu, ale teraz powiązania danych kieruje je do *Blue.aspx* strony.
 
-2. Popraw błąd sprawdzania poprawności, usuwanie reguły sprawdzania poprawności adresu URL odpowiedzi i ponowne uruchomienie testu.
+2. Usuń błąd sprawdzania poprawności, usuwając **adres URL odpowiedzi** reguły sprawdzania poprawności i ponowne uruchomienie testu.
 
      ![Usuń regułę walidacji adresu URL odpowiedzi](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -166,11 +166,11 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
 **Odpowiedź:** , jeśli nie można dodać nagłówków kolumn, można użyć pliku opisu schematu można traktować jako baza danych pliku CSV.
 
-1. Dodaj nowy plik tekstowy o nazwie schema.ini.
+1. Dodaj nowy plik tekstowy o nazwie *schema.ini*.
 
      ![Dodaj plik schema.ini](../test/media/web_test_databinding_schemafile.png)
 
-2. Edytuj plik schema.ini, aby dodać informacje opisujące struktury danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
+2. Edytuj *schema.ini* plik, aby dodać informacje opisujące struktury danych. Na przykład plik schematu opisujący plik CSV może wyglądać następująco:
 
     ```text
     [testdata.csv]
@@ -181,7 +181,7 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
      ![Dodawanie źródła danych do testu wydajności sieci web](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Jeśli używasz Plik schema.ini, wybierz bazę danych (nie plik CSV), jako źródło danych i nadaj mu nazwę.
+4. Jeśli używasz *schema.ini* plików, wybierz **bazy danych** (nie plik CSV) jako źródło danych i nadaj mu nazwę.
 
      ![Dodawanie źródła danych bazy danych](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ Powiązanie danych, aby zapewnić różne wartości tych testów, na przykład, 
 
      ![Wybierz dostawcy danych OLE DB programu .NET framework](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Wybierz pozycję Zaawansowane.
+7. Wybierz **zaawansowane**.
 
      ![Wybierz polecenie Zaawansowane](../test/media/web_test_databinding_advanced.png)
 
-8. Dla właściwości dostawcy wybierz Microsoft.Jet.OLEDB.4.0, a następnie ustaw właściwości rozszerzone do tekstu; HDR = NIE.
+8. Dla właściwości dostawcy, wybierz Microsoft.Jet.OLEDB.4.0, a następnie ustaw **właściwości rozszerzone** Text; HDR = NIE.
 
      ![Zastosuj właściwości zaawansowane](../test/media/web_test_databinding_advancedproperties.png)
 

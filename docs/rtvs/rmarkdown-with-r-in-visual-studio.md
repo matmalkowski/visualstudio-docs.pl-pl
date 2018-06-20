@@ -1,5 +1,5 @@
 ---
-title: R Markdown
+title: Znaczniki R Markdown
 description: Jak utworzyć R Markdown dokumenty w Visual Studio do tworzenia wysokiej jakości raportów, prezentacji i pulpitów nawigacyjnych.
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bc8ffe0f6d3cdc0cd572c39dedb5f059e63525cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238350"
 ---
-# <a name="creating-r-markdown-documents"></a>Tworzenie dokumentów R Markdown
+# <a name="create-r-markdown-documents"></a>Tworzenie dokumentów R Markdown
 
 [R Markdown](https://rmarkdown.rstudio.com/) to format dokumentu, który włącza analizę w R do dokumentów wysokiej jakości, raportów, prezentacji i pulpitów nawigacyjnych.
 
@@ -34,7 +35,7 @@ R narzędzi dla programu Visual Studio (RTVS) zawiera szablon elementu R Markdow
     install.packages("rmarkdown")
 
     ```
-1. Tworzenie nowego pliku R Markdown, przy użyciu **Plik > Nowy > plik** polecenia menu i wybierając **R > R Markdown** z listy. W kontekście projektu, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz **dodać Markdown R** (lub **Dodaj > Nowy element...**  i wybierając **R Markdown** z listy).
+1. Tworzenie nowego pliku R Markdown, przy użyciu **pliku** > **nowy** > **pliku** polecenia menu i wybierając **R**  >  **R Markdown** z listy. W kontekście projektu, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz **dodać Markdown R** (lub **Dodaj** > **nowy element** i wybierając **R Markdown** z listy).
 
 1. Domyślna zawartość nowego pliku są następujące:
 
@@ -64,8 +65,8 @@ R narzędzi dla programu Visual Studio (RTVS) zawiera szablon elementu R Markdow
 
 ## <a name="previews"></a>Wersje zapoznawcze
 
-Visual Studio 2017 wersji 15.5 i nowszych automatycznie udostępnić na żywo Podgląd R Markdown. Aby włączyć funkcję automatycznej synchronizacji między edytorze i podglądu, wybierz **narzędzia R > Markdown > synchronizacji automatycznej** (Ctrl + Shift + Y). Jeśli nie używasz synchronizacji, można odświeżyć przy użyciu podglądu **narzędzia R > Markdown > Podgląd Markdown R Załaduj ponownie**.
+Visual Studio 2017 wersji 15.5 i nowszych automatycznie udostępnić na żywo Podgląd R Markdown. Aby włączyć funkcję automatycznej synchronizacji między edytorze i podglądu, wybierz **narzędzia R** > **Markdown** > **synchronizacji automatycznej** ( **CTRL**+**Shift**+**Y**). Jeśli nie używasz synchronizacji, można odświeżyć przy użyciu podglądu **narzędzia R** > **Markdown** > **Podgląd Markdown R Załaduj ponownie**.
 
-Można również wyświetlić podgląd pliku w formacie HTML, PDF, i Microsoft Word formatuje prawym przyciskiem myszy w edytorze i wybierając jedną z **Podgląd** poleceń. Te same polecenia są również dostępne na **narzędzia R > Markdown** menu. (W starszych wersjach programu Visual Studio te polecenia znajdują się na **narzędzia R > Publikuj** menu.)
+Można również wyświetlić podgląd pliku w formacie HTML, PDF, i Microsoft Word formatuje prawym przyciskiem myszy w edytorze i wybierając jedną z **Podgląd** poleceń. Te same polecenia są również dostępne na **narzędzia R** > **Markdown** menu. (W starszych wersjach programu Visual Studio te polecenia znajdują się na **narzędzia R** > **publikowania** menu.)
 
 ![Podgląd aktywny RMarkdown i innych poleceń menu podglądu](media/rmarkdown-live-preview.png)

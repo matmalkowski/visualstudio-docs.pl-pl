@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97919ae62a0d9fdde187c10aedb87243e69af61d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923908"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234244"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produktów i usług (mieszany)
 Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dla każdego. W rozdziałach poniżej zawarto informacje o funkcjach, produktach i usługach, dzięki którym system Microsoft Windows jest łatwiej dostępny dla osób niepełnosprawnych:
@@ -65,7 +65,7 @@ Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dl
 
  Adresy internetowe czasami się zmieniają, dlatego witryna wymieniona powyżej może okazać się niedostępna.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Obsługa klienta dla osób z wadą słuchu
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Usługa klienta dla osoby niedosłyszące
  Osoby niesłyszące lub niedosłyszące mają pełny dostęp do produktów i obsługi klienta firmy Microsoft za pośrednictwem usługi telefonu tekstowego (TTY/TDD):
 
  Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.

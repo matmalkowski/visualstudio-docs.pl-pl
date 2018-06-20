@@ -37,15 +37,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9ffe8acdf64394052e89af76ef5ade833c1bee9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1fc9a9975f2caeea0c1361900dca4d211f4c2ee
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925917"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233629"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
-Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communication Foundation (WCF) i [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologii firmy Microsoft do tworzenia aplikacji rozproszonych. Ten temat zawiera wprowadzenie do usługi z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektywy. Pełną dokumentację można znaleźć [4.5 usługi danych WCF](/dotnet/framework/data/wcf/index).
+Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communication Foundation (WCF) i [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologii firmy Microsoft do tworzenia aplikacji rozproszonych. Ten temat zawiera wprowadzenie do usługi z punktu widzenia programu Visual Studio. Pełną dokumentację można znaleźć [4.5 usługi danych WCF](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Co to jest WCF?
  [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] to ujednoliconego platforma do tworzenia bezpiecznego, niezawodne, transakcyjne i interoperacyjne aplikacji rozproszonych. Zastępuje starsze technologii komunikacji międzyprocesowej, takich jak usługi sieci Web ASMX, .NET Remoting, usługi przedsiębiorstwa (DCOM) i usługi MSMQ. Usługi WCF, połączono funkcji tych technologii w ujednoliconego modelu programowania. Upraszcza to środowisko rozwoju aplikacji rozproszonych.
@@ -84,20 +84,20 @@ Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communi
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
 
 ## <a name="wcf-tools-in-visual-studio"></a>Narzędzia WCF w programie Visual Studio
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia narzędzia umożliwiające tworzenie zarówno usługi WCF i klienci WCF. Aby uzyskać wskazówki, który demonstruje narzędzi, zobacz [wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+ Program Visual Studio oferuje narzędzia ułatwiające tworzenie zarówno usługi WCF i klienci WCF. Aby uzyskać wskazówki, który demonstruje narzędzi, zobacz [wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="creating-and-testing-wcf-services"></a>Tworzenie i testowanie usługi WCF
- Można użyć usługi WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów jako podstawę do szybkiego tworzenia własnej usługi. Host automatycznie usługi WCF i testowanie klienta WCF można następnie użyć do debugowania i testowania usługi. Te narzędzia razem zapewniają szybki i wygodny debugowania i testowania cyklu i wyeliminowanie konieczności zatwierdzenia w modelu hostingu na wczesnym etapie.
+ Szablony WCF Visual Studio jako podstawę umożliwia szybkie tworzenie własnej usługi. Host automatycznie usługi WCF i testowanie klienta WCF można następnie użyć do debugowania i testowania usługi. Te narzędzia razem zapewniają szybki i wygodny debugowania i testowania cyklu i wyeliminowanie konieczności zatwierdzenia w modelu hostingu na wczesnym etapie.
 
 #### <a name="wcf-templates"></a>Szablony programu WCF
- Usługi WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Szablony zapewniają strukturę klasa podstawowa dla rozwoju usługi. Są dostępne w kilku szablonów WCF **Dodawanie nowego projektu** okno dialogowe. Obejmują one projekty biblioteki usługi WCF, witryn sieci Web usługi WCF i szablony element usługi WCF.
+ Szablony WCF Visual Studio stanowią strukturę klasa podstawowa dla rozwoju usługi. Są dostępne w kilku szablonów WCF **Dodawanie nowego projektu** okno dialogowe. Obejmują one projekty biblioteki usługi WCF, witryn sieci Web usługi WCF i szablony element usługi WCF.
 
  Po wybraniu szablonu pliki są dodawane do umowy serwisowej, implementacji usługi i konfiguracji usługi. Wszystkie atrybuty niezbędne są już dodane, tworzenie prostego tekstu "Hello World" usługi, a nie miał pisania kodu. Oczywiście chcesz Dodaj kod, aby zapewnić funkcje i metody dla usługi rzeczywistych, ale te szablony stanowią podstawę podstawowe.
 
  Aby uzyskać więcej informacji o szablonach WCF, zobacz [szablony Visual Studio WCF](/dotnet/framework/wcf/wcf-vs-templates).
 
 #### <a name="wcf-service-host"></a>Host usługi WCF
- Po rozpoczęciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera (naciskając klawisz F5) w projekcie usługi WCF, Host usługi WCF, które są automatycznie uruchamiane jest narzędzie do obsługi usługi lokalnie. Host usługi WCF wylicza usług w projekcie usługi WCF, ładuje konfigurację projektu i tworzy wystąpienie hosta dla każdej usługi, która znajdzie.
+ Po uruchomieniu debugera programu Visual Studio (naciskając klawisz F5) w projekcie usługi WCF do obsługi usługi lokalnie jest automatycznie uruchamiane narzędzie Host usługi WCF. Host usługi WCF wylicza usług w projekcie usługi WCF, ładuje konfigurację projektu i tworzy wystąpienie hosta dla każdej usługi, która znajdzie.
 
  Za pomocą Host usługi WCF, można przetestować usługi WCF bez pisania kodu dodatkowe lub zobowiązuje się do określonego hosta podczas tworzenia.
 
@@ -111,7 +111,7 @@ Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communi
  Aby dowiedzieć się więcej na temat klienta testowego WCF, zobacz [klienta testowego WCF (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Uzyskiwanie dostępu do usług WCF w programie Visual Studio
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] upraszcza zadanie tworzenia klienci WCF, automatyczne generowanie serwera proxy i punktu końcowego dla usług, które można dodać przy użyciu **Dodaj odwołanie do usługi** okno dialogowe. Wszystkie informacje o konfiguracji niezbędne są dodawane do pliku app.config. Większość czasu, wszystkie punkty, które musisz wykonać jest utworzenia wystąpienia usługi do jej używania.
+ Visual Studio upraszcza zadanie tworzenia klienci WCF, automatyczne generowanie serwera proxy i punktu końcowego dla usług, które można dodać przy użyciu **Dodaj odwołanie do usługi** okno dialogowe. Wszystkie informacje o konfiguracji niezbędne są dodawane do pliku app.config. Większość czasu, wszystkie punkty, które musisz wykonać jest utworzenia wystąpienia usługi do jej używania.
 
  **Dodaj odwołanie do usługi** okno dialogowe umożliwia wprowadź adres dla usługi lub wyszukaj usługi, która jest zdefiniowana w rozwiązaniu. Okno dialogowe zwraca listę usług i operacji dostarczonych przez tych usług. Umożliwia on również zdefiniowanie przestrzeni nazw za pomocą którego można będzie odwoływać się do usługi w kodzie.
 
@@ -236,10 +236,10 @@ Aby uniknąć tego problemu, domyślnie są udostępniane typów w zestawach, do
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Udostępnia krok Pokaz tworzenia i używania usługi WCF w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[Wskazówki: Tworzenie usługi danych WCF z WPF i strukturą Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Udostępnia pokaz krok po kroku dotyczące tworzenia i używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[Używanie narzędzi deweloperskich programu WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|W tym artykule omówiono sposób tworzenia i testowania usługi WCF w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-||[Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Omówiono sposób odwołania i użyj [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
+|[Wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Zawiera krok Pokaz tworzenia i używania usługi WCF w programie Visual Studio.|
+|[Wskazówki: Tworzenie usługi danych WCF z WPF i strukturą Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Udostępnia pokaz krok po kroku dotyczące tworzenia i używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w programie Visual Studio.|
+|[Używanie narzędzi deweloperskich programu WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|W tym artykule omówiono sposób tworzenia i testowania usługi WCF w programie Visual Studio.|
+||[Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Omówiono sposób odwołania i użyj [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w programie Visual Studio.|
 |[Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md)|Przedstawia informacje o niektórych typowych błędów, które mogą wystąpić z odwołania do usług i jak zapobiec ich.|
 |[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|W tym artykule opisano typowe problemy debugowania i techniki, które mogą wystąpić podczas debugowania usług WCF.|
 |[Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Zawiera szczegółowe instrukcje dotyczące tworzenie typizowanego zestaw danych i rozdzielić wiele projektów kodu TableAdapter i zestawu danych.|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7550c2e3b7d635d20df342558537e7a3dbd7d619
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766555"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234702"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikowanie witryny sieci web przy użyciu narzędzia Visual Studio publikowania aplikacji sieci web lub aplikacji .NET Core
 
@@ -33,7 +33,7 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. W programie Visual Studio, wybierz **pliku** > **nowy projekt**.
 
 1. W obszarze **Visual C#** lub **Visual Basic**, wybierz **sieci Web**, a następnie w środkowym okienku wybierz albo **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web platformy ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
@@ -43,7 +43,7 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
     Program Visual Studio tworzy projekt.
 
-1. Wybierz **kompilacji > Kompiluj rozwiązanie** Aby skompilować projekt.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** Aby skompilować projekt.
 
 ## <a name="publish-to-a-web-site"></a>Publikowanie witryny sieci web
 

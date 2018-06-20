@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477865"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233642"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, która była przydzielona wcześniej, są najbardziej delikatny i twardych do wykrycia błędów w aplikacji C/C++. Przeciek pamięci może pozostać niezauważone w pierwszej, ale wraz z upływem czasu, przeciek pamięci progresywnego może spowodować objawy zakresu spadek wydajności do awarii po uruchomieniu aplikacji za mało pamięci. Gorsze ulatniający aplikacji, która używa wszystkich dostępną pamięć, może spowodować inna aplikacja awarię, tworzenie pomyłek, które odpowiada aplikacji. Przecieki pamięci nieszkodliwe może być nawet pozornie objawowych innych problemów, które powinno zostać naprawione.  
@@ -186,7 +186,7 @@ Oznacza to, że ujawnione przydział został w wierszu 20 debug_new.cpp.
   
 2.  Gdy aplikacja dzieli się na punkt przerwania, **czujki** okna.  
   
-3.  W **czujki** wpisz `_crtBreakAlloc` w w **nazwa** kolumny.  
+3.  W **czujki** wpisz `_crtBreakAlloc` w **nazwa** kolumny.  
   
      Jeśli używane są wielowątkowe wersja DLL biblioteki CRT (opcja / / MD), należy uwzględnić w operatorze kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

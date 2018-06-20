@@ -16,22 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74aa647fc1048ffd8e8871b8e387657eff4d485a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e8d53cad00e3a1faedf07af42966a5cceddc2f33
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238365"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Wskazówki: importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Wskazówki: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym przewodniku pokazano, jak zaimportować SharePoint niestandardowej strony wzorcowej oraz strony witryny, która ma obrazu na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.  
   
  W tym przewodniku przedstawiono sposób wykonania następujących zadań:  
   
 -   Tworzenie niestandardowej strony wzorcowej oraz strony witryny przy użyciu obrazu w programie SharePoint Designer.  
   
--   Wyeksportuj niestandardowej strony wzorcowej, obraz oraz strony witryny do pliku rozwiązania (wsp) programu SharePoint.  
+-   Eksportuj niestandardowej strony wzorcowej, obraz oraz strony witryny do rozwiązania programu SharePoint (*WSP*) pliku.  
   
--   Importowanie i wdrażanie w pliku wsp [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint przy użyciu projektu Importowanie pakietu rozwiązań programu SharePoint.  
+-   Importowanie i wdrażanie *.wsp* pliku do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint przy użyciu projektu Importowanie pakietu rozwiązań programu SharePoint.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -44,10 +45,10 @@ ms.lasthandoff: 05/22/2018
   
 -   SharePoint Designer 2010.  
   
-## <a name="create-items-in-sharepoint-designer"></a>Tworzenie elementów w programie SharePoint Designer  
+## <a name="create-items-in-sharepoint-designer"></a>Tworzenie elementów w programie SharePoint Designer
  W tym przykładzie pokazano, jak utworzyć trzy elementy w programie SharePoint Designer eksportu: niestandardowej strony wzorcowej, witryna, który odwołuje się do niestandardowej strony wzorcowej i plikiem obrazu na stronie witryny. Obraz jest dodawany do folderu /images/ w programie SharePoint.  
   
-#### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>Aby utworzyć niestandardowe strony głównej w programie SharePoint Designer  
+#### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>Aby utworzyć niestandardowe strony głównej w programie SharePoint Designer
   
 1.  W programie SharePoint Designer w okienku nawigacji wybierz **stron wzorcowych** obiektu lokacji.  
   
@@ -80,10 +81,10 @@ ms.lasthandoff: 05/22/2018
   
 6.  Wybierz pozycję Zapisz stronę **stron wzorcowych** , a następnie zmień nazwę strony wzorcowej jako **mybasic1.master**.  
   
-## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Dodawanie obrazu do bazy danych zawartości w programie SharePoint Designer  
+## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Dodawanie obrazu do bazy danych zawartości w programie SharePoint Designer
  Teraz możesz dodać obraz do wyświetlania na stronie witryny. Baza danych zawartości programu SharePoint jest wdrażany.  
   
-#### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Aby dodać obraz do bazy danych zawartości w programie SharePoint Designer  
+#### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Aby dodać obraz do bazy danych zawartości w programie SharePoint Designer
   
 1.  W okienku nawigacji wybierz **wszystkie pliki** lokacji obiektu, a następnie, w widoku drzewa wybierz **obrazów** folderu.  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 05/22/2018
   
 3.  Zamknij **importu** okno dialogowe.  
   
-## <a name="create-a-site-page"></a>Tworzenie strony witryny  
+## <a name="create-a-site-page"></a>Tworzenie strony witryny
  Ta strona podstawowa lokacji używa niestandardowej strony wzorcowej i wyświetla obraz, który został dodany w poprzednim kroku.  
   
 #### <a name="to-create-a-site-page"></a>Aby utworzyć stronę lokacji  
@@ -128,23 +129,23 @@ ms.lasthandoff: 05/22/2018
   
 6.  Zapisz zaktualizowane strony.  
   
-## <a name="export-the-items-from-sharepoint"></a>Eksportuj elementy z programu SharePoint  
- Eksportuj elementy z programu SharePoint do pliku rozwiązania (wsp) programu SharePoint.  
+## <a name="export-the-items-from-sharepoint"></a>Eksportuj elementy z programu SharePoint
+ Eksportuj elementy z programu SharePoint do rozwiązania programu SharePoint (*WSP*) pliku.  
   
-#### <a name="to-export-items-from-sharepoint-designer"></a>Aby wyeksportować elementy z programu SharePoint Designer  
+#### <a name="to-export-items-from-sharepoint-designer"></a>Aby wyeksportować elementy z programu SharePoint Designer
   
 1.  W programie SharePoint Designer w okienku nawigacji wybierz **witryny zespołu** obiektu, a następnie na **lokacji** wstążki, wybierz **Zapisz jako szablon**.  
   
 2.  W **Zapisz jako szablon** okna dialogowego wprowadź nazwę pliku i nazwa szablonu, wybierz opcję **dołączanie zawartości** pole wyboru, a następnie wybierz pozycję **OK** przycisku.  
   
-     To jest zapisywany zawartości witryny w pliku wsp.  
+     Spowoduje to zapisanie zawartości witryny w *WSP* pliku.  
   
 3.  Po rozwiązaniu eksportuje, wybierz **galerii rozwiązań** łącze, aby wyświetlić listę plików dostępne rozwiązania.  
   
-4.  Otwórz menu skrótów dla nowego pliku wsp, a następnie wybierz pozycję **cel Zapisz jako** zapisać go w systemie.  
+4.  Otwórz menu skrótów dla nowego *.wsp* pliku, a następnie wybierz pozycję **cel Zapisz jako** zapisać go w systemie.  
   
-## <a name="import-the-items-into-visual-studio"></a>Importowanie elementów do programu Visual Studio  
- Importowanie plików .wsp do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Po zaimportowaniu zawartości można dostosować go, Dodaj więcej elementów i następnie wdrożyć go.  
+## <a name="import-the-items-into-visual-studio"></a>Importowanie elementów do programu Visual Studio
+ Importuj *.wsp* pliku do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Po zaimportowaniu zawartości można dostosować go, Dodaj więcej elementów i następnie wdrożyć go.  
   
 #### <a name="to-import-items-from-the-wsp-file-into-visual-studio"></a>Aby zaimportować elementy z pliku wsp do programu Visual Studio  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 05/22/2018
   
 4.  W **Eksploratora rozwiązań**, wybierz _catalogsmasterpage\_ węzeł i ustaw wartość jego **Rozwiązywanie konfliktów wdrożenia** właściwości **automatyczne**.  
   
-     Dzięki temu, upewnij się, że automatycznie rozwiązać wszystkie konflikty wdrażania.  
+     Dzięki temu automatycznie rozwiązać wszystkie konflikty wdrażania.  
   
 5.  Jeśli nowej strony wzorcowej ma taką samą nazwę jak istniejącej strony, upewnij się, czy istniejącej strony nie jest oznaczony jako stronę wzorcową domyślnej lub niestandardowej strony wzorcowej w programie SharePoint Designer.  
   
@@ -172,15 +173,14 @@ ms.lasthandoff: 05/22/2018
   
     -   Jeśli istniejące strony wzorcowej jest ustawiony jako niestandardowej strony wzorcowej, tymczasowo ustawić innej strony wzorcowej jako niestandardowej strony wzorcowej. Po wdrożeniu plików do programu SharePoint, należy ustawić nowej strony wzorcowej jako niestandardowej strony wzorcowej.  
   
-6.  Na pasku menu wybierz **kompilacji**, **wdrożyć rozwiązanie**.  
+6.  Na pasku menu wybierz **kompilacji** > **wdrożyć rozwiązanie**.  
   
 7.  Otwórz witrynę programu SharePoint, aby wyświetlić elementy wdrożone.  
   
  Alternatywny sposób importowanie plików do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je do programu SharePoint jest dodanie plików w modułach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Porady: importowanie tematu lub strony wzorcowej](../sharepoint/how-to-import-a-master-page-or-theme.md) i [przy użyciu modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  
   

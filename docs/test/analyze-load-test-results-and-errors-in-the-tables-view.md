@@ -23,18 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3820e1d7ef4294b4c46e0e7d0174a89dfe5b0e75
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2599968aad98339014182edf21282a4e5e26fbcf
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978791"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234523"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli analizatora testu obciążenia
 
 Podczas wyświetlania wyników uruchomienia testu obciążenia można wyświetlić różnych okienek, które zapewniają różne sposoby analizowania danych. Dane można wyświetlić jako wykresu, aby zobaczyć, jak zmieniają się w czasie, lub można wyświetlić dane jako tabele szczegółów.
 
-Aby przełączyć do widoku tabeli, wybierz **tabel** na pasku narzędzi testu obciążenia. Aby przełączyć się z różnych tabel, należy użyć **tabeli** listy rozwijanej na pasku narzędzi nad siatki tabeli. W widoku tabeli można wyświetlić tabele do czterech naraz. Aby uzyskać więcej informacji, zobacz [tabele testu obciążenia kafelka](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) w tym temacie.
+Aby przełączyć do widoku tabeli, wybierz **tabel** na **testu obciążenia** paska narzędzi. Aby przełączyć się z różnych tabel, należy użyć **tabeli** listy rozwijanej na pasku narzędzi nad siatki tabeli. W widoku tabeli można wyświetlić tabele do czterech naraz. Aby uzyskać więcej informacji, zobacz [tabele testu obciążenia kafelka](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) w tym temacie.
 
 Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kumulują się za pośrednictwem uruchomienia testu obciążenia całego. Kolumny o nazwie **ostatniego** są wyjątkiem i reprezentują wartość od ostatniego interwału próbkowania.
 
@@ -52,19 +52,19 @@ Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kum
 
 |Nazwa tabeli|Opis|
 |----------------|-----------------|
-|błędy|Wyświetla listę błędów, które wystąpiły podczas testu obciążenia. Aby uzyskać więcej informacji, zobacz [Table błędy](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) w tym temacie i [analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Strony|Zostanie wyświetlona lista stron dostęp podczas uruchomienia testu obciążenia. Niektóre dane w tej tabeli jest dostępna tylko po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
-|żądania|Wyświetla szczegóły dotyczące poszczególnych żądań wystawiony podczas testu obciążenia. W tym wszystkie żądania HTTP i zależnych żądań, takich jak obrazy. Aby uzyskać więcej informacji, zobacz [Table żądań](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) w tym temacie.|
-|Śledzenie programu SQL Server|Wyświetla wyniki śledzenia SQL. Ta tabela jest dostępna tylko po zakończeniu testowania obciążenia i tylko wtedy, gdy śledzenia SQL został użyty podczas testu. Aby uzyskać więcej informacji, zobacz [Table danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) w tym temacie.|
-|Testy|Wyświetla szczegóły dla poszczególnych testów uruchomić podczas testu obciążenia. Aby uzyskać więcej informacji, zobacz [Table testy](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) w tym temacie.|
+|błędy|Wyświetla listę błędów, które wystąpiły podczas testu obciążenia. Aby uzyskać więcej informacji, zobacz [tabeli błędy](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) w tym temacie i [wyników testów obciążenia Analizuj](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|Strony|Zostanie wyświetlona lista stron dostęp podczas uruchomienia testu obciążenia. Niektóre dane w tej tabeli jest dostępna tylko po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie czasu odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|żądania|Wyświetla szczegóły dotyczące poszczególnych żądań wystawiony podczas testu obciążenia. W tym wszystkie żądania HTTP i zależnych żądań, takich jak obrazy. Aby uzyskać więcej informacji, zobacz [tabeli żądań](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) w tym temacie.|
+|Śledzenie programu SQL Server|Wyświetla wyniki śledzenia SQL. Ta tabela jest dostępna tylko po zakończeniu testowania obciążenia i tylko wtedy, gdy śledzenia SQL został użyty podczas testu. Aby uzyskać więcej informacji, zobacz [tabeli danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) w tym temacie.|
+|Testy|Wyświetla szczegóły dla poszczególnych testów uruchomić podczas testu obciążenia. Aby uzyskać więcej informacji, zobacz [tabeli testy](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) w tym temacie.|
 |Progi|Wyświetla listę naruszeń zasady progu, które wystąpiły podczas testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizowanie naruszeń zasady progu](../test/analyze-threshold-rule-violations-in-load-tests.md).|
-|Transakcje|Wyświetla listę transakcji, które wystąpiły podczas uruchomienia testu obciążenia. Aby uzyskać więcej informacji, zobacz [Table transakcji](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) w tym temacie.|
+|Transakcje|Wyświetla listę transakcji, które wystąpiły podczas uruchomienia testu obciążenia. Aby uzyskać więcej informacji, zobacz [tabeli transakcji](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) w tym temacie.|
 |Agenci|Wyświetla tylko wtedy, gdy test obciążenia używa kontrolera testów i agentów testowych. Wyświetla listę agentów, które były używane podczas testu obciążenia. Agenci uwzględniono liczbę żądań, agent przetestowane i tych wniosków o ile nie powiodło się. Ponadto w tabeli agentów obejmuje liczba testów w mieszanki testów testów obciążenia, które agent przetestowane i tych, ile nie powiodło się.|
 |Szczegóły testu|Wyświetla szczegóły testy objęte testu mieszanego dla testu obciążenia. Szczegóły zawierają nazwę testu, scenariusz, który test został w uruchomieniu testu, długość czasu, jaki zajęło testów do uruchomienia i wynik testu, wskazującą, czy test przekazany lub niepowodzenie. Jeśli test nie powiodła się, łącze znajduje się w **szczegóły** kolumny. Można wybrać łącza, co spowoduje przejście do edytora testów wydajności sieci Web z nieudanych żądań, które są wyróżnione.|
 
 ## <a name="collect-percentile-data"></a>Zbieranie danych percentyl
 
- Niektóre tabele testu obciążenia może zawierać dodatkowe kolumn, które obejmują percentyl danych i czasy odpowiedzi podzielić grup opartych na emulacji sieci. Domyślnie te dane nie są zbierane. Percentyl danych jest dostępna tylko podczas zapisywania wyników z bazą danych, a nie w przypadku, gdy zapiszesz lokalnie. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyników testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ponadto do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz konkretnym Uruchom węzła Ustawienia można zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **StatisticsOnly** lub **AllIndividualDetails**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Niektóre tabele testu obciążenia może zawierać dodatkowe kolumn, które obejmują percentyl danych i czasy odpowiedzi podzielić grup opartych na emulacji sieci. Domyślnie te dane nie są zbierane. Percentyl danych jest dostępna tylko podczas zapisywania wyników z bazą danych, a nie w przypadku, gdy zapiszesz lokalnie. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testu obciążenia z wynikami testów obciążenia zarządzanie](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ponadto do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz konkretnym Uruchom węzła Ustawienia można zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **StatisticsOnly** lub **AllIndividualDetails**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie czasu odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>W tabeli żądań
 
@@ -74,12 +74,12 @@ Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kum
 
 |Kolumny|Opis|Domyślnie widoczne|
 |------------|-----------------|------------------------|
-|**Żądanie**|Adres URL żądania. Na przykład home.html lub arrow.gif pomarańczowy.|Tak|
+|**Żądanie**|Adres URL żądania. Na przykład *home.html*, lub *arrow.gif pomarańczowy*.|Tak|
 |**Scenariusz**|Nazwa scenariusza.|Tak|
 |**Test**|Nazwa testu.|Tak|
 |**Całkowita liczba**|Całkowita liczba to żądanie testu wydajności sieci Web wystawiony podczas testu obciążenia uruchamiane. Łączna obejmuje przekazany, jak i nieudane żądania, ale nie obejmuje żądań z pamięci podręcznej, ponieważ nie zostały przekazane do serwera sieci Web.|Tak|
 |**Przekazany**|Ile razy żądanie zostało wydane i przekazany.|Nie|
-|**Niepowodzenie**|Ile razy żądanie wystawiony i nie powiodło się. W tej kolumnie są wyświetlane jako hiperlinki. Można wybrać dowolne hiperłącze, aby wyświetlić listę poszczególnych problemów odnotowanych w **błędów testu obciążenia** okno dialogowe. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Tak|
+|**Niepowodzenie**|Ile razy żądanie wystawiony i nie powiodło się. W tej kolumnie są wyświetlane jako hiperlinki. Można wybrać dowolne hiperłącze, aby wyświetlić listę poszczególnych problemów odnotowanych w **błędów testu obciążenia** okno dialogowe. Aby uzyskać więcej informacji, zobacz [wyników testów obciążenia Analizuj](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Tak|
 |**W pamięci podręcznej**|Całkowita liczba powtórzeń żądania już był buforowany.|Nie|
 |**Żądania na sekundę**|Szybkość na sekundę żądań podczas testu obciążenia.|Nie|
 |**Przekazany na sekundę**|Szybkość na sekundę podczas testu obciążenia, wystąpień tego żądania, który przekazał żądanie.|Nie|
@@ -100,7 +100,7 @@ Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kum
 |**Scenariusz**|Nazwa scenariusza.|Tak|
 |**Całkowita liczba**|Całkowita liczba razy uruchomienia testu w scenariuszu. W tym liczba testu przesłane i nie powiodło się.|Tak|
 |**Przekazany**|Ile razy testu zostało uruchomione w tym scenariuszu i przekazany.|Tak|
-|**Niepowodzenie**|Liczba razy uruchomienia w scenariuszu testu i nie powiodło się. W tej kolumnie są wyświetlane jako hiperlinki. Można wybrać dowolne hiperłącze, aby wyświetlić listę poszczególnych problemów odnotowanych w **błędów testu obciążenia** okno dialogowe. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Tak|
+|**Niepowodzenie**|Liczba razy uruchomienia w scenariuszu testu i nie powiodło się. W tej kolumnie są wyświetlane jako hiperlinki. Można wybrać dowolne hiperłącze, aby wyświetlić listę poszczególnych problemów odnotowanych w **błędów testu obciążenia** okno dialogowe. Aby uzyskać więcej informacji, zobacz [wyników testów obciążenia Analizuj](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Tak|
 |**Tests/Sec**|Częstotliwość testu podczas testu obciążenia.|Tak|
 |**Przekazany na sekundę**|Częstotliwość tego testu podczas uruchomienia wystąpień tego testu, który przekazał testu obciążenia.|Nie|
 |**Nie powiodło się na sekundę**|Częstotliwość tego testu podczas testu obciążenia, wystąpień tego testu, który uległ awarii.|Nie|
@@ -153,7 +153,7 @@ Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kum
 
  Aby uzyskać więcej informacji, zobacz [Praca z tabelami testu obciążenia](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-### <a name="drilling-down-to-the-error-list"></a>Przechodzenie do listy błędów
+### <a name="drill-down-to-the-error-list"></a>Następnie przejść do listy błędów
 
 Błędy tabeli grup błędów według typu i podtypu błędu. Aby wyświetlić tabelę poszczególnych problemów, możesz wyświetlić **błędów testu obciążenia** okno dialogowe. Aby wyświetlić okno dialogowe, wybierz hiperłącze w **liczba** kolumny w tabeli błędów. Można również wyświetlić okno dialogowe przez kliknięcie prawym przyciskiem myszy wiersz w tabeli błędów, który jest wypełniony, a następnie wybierając **błędy**.
 
@@ -194,45 +194,45 @@ Jeśli włączone jest śledzenie SQL, plik jest tworzony podczas uruchomienia t
 
    Kolumny wyświetlane są następujące:
 
-    - Event — klasa
+    - **Event — klasa**
 
-    - Czas trwania
+    - **Czas trwania**
 
-    - CPU
+    - **CPU**
 
-    - Odczytuje
+    - **Odczytuje**
 
-    - Zapisuje
+    - **Zapisuje**
 
-    - TextData
+    - **TextData**
 
-    - StartTime
+    - **Czas rozpoczęcia**
 
-    - EndTime
+    - **wartość endTime**
 
    Jeśli chcesz śledzić zdarzenia SQL innych niż określone w tych kolumn danych, można skonfigurować własne niestandardowe śledzenia SQL przy użyciu narzędzia SQL Profiler, niezależnie od programu Visual Studio.
 
 ## <a name="tile-load-test-tables"></a>Tabele testu obciążenia kafelka
 
-Podczas przeglądania wyników uruchomienia testu obciążenia można wyświetlić jako tabele szczegółowe dane. Aby przełączyć do widoku tabeli, wybierz **tabel** na pasku narzędzi testu obciążenia. Tabele, które są dostępne są błędy, stron, żądania, śledzenie programu SQL Server, testy, progi i transakcji. Aby uzyskać więcej informacji, zobacz [Praca z tabelami testu obciążenia](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Podczas przeglądania wyników uruchomienia testu obciążenia można wyświetlić jako tabele szczegółowe dane. Aby przełączyć do widoku tabeli, wybierz **tabel** na **testu obciążenia** paska narzędzi. Tabele, które są dostępne są **błędy**, **stron**, **żądań**, **śledzenia SQL**, **testy**,  **Progi**, i **transakcji**. Aby uzyskać więcej informacji, zobacz [Praca z tabelami testu obciążenia](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 W widoku tabeli można wyświetlić maksymalnie cztery tabel w czasie bez tabel nakładających się.
 
 ### <a name="to-tile-tables"></a>Na kafelku tabel
 
-1. Na pasku narzędzi analizatora testu obciążenia, wybierz **tabel**.
+1. Na **analizatora testu obciążenia** narzędzi wybierz **tabel**.
 
      Otwiera widok tabeli. Układ domyślny to dwa panele poziomej.
 
-2. Na pasku narzędzi analizatora testu obciążenia wybierz przycisk Układ, a następnie wybierz jedną z następujących opcji:
+2. Na **analizatora testu obciążenia** narzędzi wybierz **układu** przycisk, a następnie wybierz jedną z następujących opcji:
 
-    - Jednego panelu
+    - **Jednego panelu**
 
-    - Dwa panele pozioma
+    - **Dwa panele pozioma**
 
-    - Trzy panele pozioma
+    - **Trzy panele pozioma**
 
-    - Cztery panele pozioma
+    - **Cztery panele pozioma**
 
 3. Aby przełączyć się z różnych tabel, należy użyć listy rozwijanej powyżej siatki tabeli w każdym panelu.
 
@@ -242,8 +242,8 @@ W widoku tabeli można wyświetlić maksymalnie cztery tabel w czasie bez tabel 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: dostęp do analizy wyników testu obciążenia](../test/how-to-access-load-test-results-for-analysis.md)
+- [Porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analizowanie naruszeń zasady progu](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Zarządzenie wynikami testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Podgląd podsumowania wyników testu obciążenia](../test/load-test-results-summary-overview.md)
+- [Zarządzanie wyników testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Omówienie podsumowania wyników testu obciążenia](../test/load-test-results-summary-overview.md)

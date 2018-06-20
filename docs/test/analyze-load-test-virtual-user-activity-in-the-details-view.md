@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5ab42b66fca32dc5325ce0cb4d78fbb53df8b90f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750841"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233798"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizowanie aktywności wirtualnego użytkownika testów obciążenia w widoku szczegółów analizatora testu obciążenia
 
@@ -26,16 +26,16 @@ ms.locfileid: "34750841"
 
  ![Wykres aktywności użytkownika wirtualnego](../test/media/virtual_actchart.png)
 
- Widok szczegółów wyświetla wirtualnego wykres aktywności użytkownika, który służy do wizualnego analizowanie, co poszczególnych wirtualnych użytkowników podczas ładowania testów. Wykres aktywności użytkownika wirtualnego umożliwia Zobacz wzorców aktywności użytkownika, wzorce obciążenia skorelowania testy zakończone niepowodzeniem lub wolne i żądań z innych działań wirtualnego użytkownika w temacie. Wirtualnego wykres aktywności użytkownika mogą również ułatwić określenie wzrostów użycia procesora CPU, przerwy w żądań na sekundę i jakie testów lub stron były uruchomione podczas wzrostów i porzucania.
+ **Szczegóły** wyświetlić Wyświetla **wykres aktywności użytkownika wirtualnego**, który służy do wizualnego analizowanie poszczególnych wirtualnych użytkowników czy podczas testu obciążenia. **Wykres aktywności użytkownika wirtualnego** umożliwia Zobacz wzorców aktywności użytkownika, wzorce obciążenia, skorelowania testy zakończone niepowodzeniem lub wolne i wyświetlania żądań z innych działań wirtualnego użytkownika. **Wykres aktywności użytkownika wirtualnego** można także ustalić gwałtowny wzrost użycia procesora CPU, przerwy w żądań na sekundę, Pomoc i co testów lub stron, które były uruchomione podczas wzrostów i porzucania.
 
 > [!NOTE]
-> Przed uruchomieniem testu obciążenia, dla którego chcesz użyć wykres szczegóły aktywności wirtualnego użytkownika, należy sprawdzić, czy **magazynowania szczegółów chronometrażu** właściwość jest ustawiona na **AllIndividualDetails** opcji za pomocą Edytor testów obciążenia wydajności. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych informacji umożliwiających włączyć wirtualnego wykres aktywności użytkownika](../test/how-to-configure-load-tests-to-collect-full-details.md).
+> Przed uruchomieniem testu obciążenia, dla którego chcesz użyć **wykres szczegóły aktywności użytkownika wirtualnego**, należy sprawdzić, czy **magazynowania szczegółów chronometrażu** właściwość jest ustawiona na  **AllIndividualDetails** opcji za pomocą edytora testu obciążenia wydajności. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności użytkownika wirtualnego](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
  **Panel szczegółów legendy**
 
  ![Panel szczegółów legendy](../test/media/ltest_detailslegend.png)
 
- Panel szczegółów Legenda jest widoczna w wirtualnej wykres aktywności użytkownika. Szczegóły legendy okienko umożliwia filtrowanie testów, stron i transakcji dla kilku różnych kryteriów. Na przykład możesz usunąć niektóre testy z widoku, lub Usuń wszystkie testy pomyślne lub usunąć testy, których nie powiodła się z niektórych błędów. Można również usunąć wszystkie testy, które nie mają dzienników.
+ Jest widoczna w panelu szczegółów legendy **wykres aktywności użytkownika wirtualnego**. Szczegóły legendy okienko umożliwia filtrowanie testów, stron i transakcji dla kilku różnych kryteriów. Na przykład możesz usunąć niektóre testy z widoku, lub Usuń wszystkie testy pomyślne lub usunąć testy, których nie powiodła się z niektórych błędów. Można również usunąć wszystkie testy, które nie mają dzienników.
 
  Można wyróżnić testy, których nie powiodła się, który zawiera wszystkie testy nie powiodły się pokolorowane kolorem czerwonym. Można też wyróżnić testy, które mają dzienników testu. Testy z dziennikami będzie kolor na zielono.
 
@@ -43,7 +43,7 @@ ms.locfileid: "34750841"
 
  ![Panel wyników filtru](../test/media/ltest_filterresults.png)
 
- Panel wyników filtru jest widoczny w wirtualnej wykres aktywności użytkownika. Panel wyników filtru można filtrować według następujących czynności:
+ Jest widoczna w panelu wyników filtr **wykres aktywności użytkownika wirtualnego**. Panel wyników filtru można filtrować według następujących czynności:
 
 -   **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki mających dzienników testu skojarzonych z nimi.
 
@@ -56,9 +56,9 @@ ms.locfileid: "34750841"
 |Zadania|Skojarzone — tematy|
 |-----------|-----------------------|
 |**Skonfiguruj test obciążenia w celu użycia wirtualnej wykres aktywności użytkownika:** przed uruchomieniem testu obciążenia, który chcesz wyświetlić dane o aktywności użytkownika wirtualnego na, należy najpierw skonfigurować ustawienia właściwości testów obciążenia.|-   [Porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności użytkownika wirtualnego](../test/how-to-configure-load-tests-to-collect-full-details.md)|
-|**Uruchamianie testów obciążenia:** po utworzeniu testu obciążenia i skonfigurować go w celu włączenia zbierania danych aktywności wirtualnego użytkownika, należy uruchomić testu, dopóki nie zostanie ukończone, aby wyświetlić wirtualnego wykres aktywności użytkownika.||
-|**Wyświetlanie wyników testu obciążenia, które zawierają dane o aktywności wirtualnego użytkownika:** po testów obciążenia zostało utworzone, skonfigurowane i zakończy działanie, można wyświetlić dane o aktywności wirtualnego użytkownika przy użyciu wirtualnego wykres aktywności użytkownika.|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Porady: analizowanie, co użytkownicy wirtualni podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Wyizolować problemy z wydajnością w testach obciążenia:** można wyizolować problemy z wydajnością w teście obciążenia sieci wirtualnych wykres aktywności użytkownika.|-   [Wskazówki: Używanie wykres aktywności użytkownika wirtualnego do izolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Uruchamianie testów obciążenia:** po utworzeniu testu obciążenia i skonfigurować go w celu włączenia zbierania danych aktywności wirtualnego użytkownika, należy uruchomić testu do czasu ukończenia w wymagany do wyświetlania **wykres aktywności użytkownika wirtualnego**.||
+|**Wyświetlanie wyników testu obciążenia, które zawierają dane o aktywności wirtualnego użytkownika:** po testów obciążenia zostało utworzone, skonfigurowane i zakończy działanie, można wyświetlić dane o aktywności wirtualnego użytkownika używając **wykres aktywności użytkownika wirtualnego** .|-   [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Porady: analizowanie, co użytkownicy wirtualni podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Wyizolować problemy z wydajnością w testach obciążenia:** można użyć **wykres aktywności użytkownika wirtualnego** Aby wyizolować problemy z wydajnością w teście obciążenia sieci.|-   [Wskazówki: Używanie wykres aktywności użytkownika wirtualnego do izolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

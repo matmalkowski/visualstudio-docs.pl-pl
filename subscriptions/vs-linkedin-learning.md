@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści LinkedIn Learning zawarte w r
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbc3f5bc39a21f76f8b45ba5da20ed8504ea1349
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199225"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233454"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści LinkedIn Learning w ramach subskrypcji programu Visual Studio
 
@@ -89,7 +89,7 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 
 17. Pomyślnie zostały aktywowane ofertę subskrypcji Premium i teraz można rozpocząć korzystanie z LinkedIn Learning i wszystkie inne korzyści Premium!
 
-    ![Strona główna Learning Learning LinkedIn](_img\vs-linkedin\vs-linkedin-learning-home.png)
+    ![Strona główna Learning LinkedIn](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
 ## <a name="eligibility"></a>Kwalifikujących się usług
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
@@ -101,7 +101,7 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 | Visual Studio Dev Essentials | NA  | 3 miesiące |Nie.  Dostępne tylko dla nowych subskrybentów |
 | Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
 
-<sup>1</sup>*obejmuje: nie do sprzedaży (niego), programu Visual Studio Industry Partner (VSIP).    Wyklucza: Sieci Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).  MCT oprogramowania i usług.*
+<sup>1</sup>*obejmuje: nie do sprzedaży (niego), programu Visual Studio Industry Partner (VSIP).  Wyklucza: Sieci Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).  MCT oprogramowania i usług.*
 
 
 

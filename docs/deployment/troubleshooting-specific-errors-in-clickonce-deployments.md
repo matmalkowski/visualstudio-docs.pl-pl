@@ -21,31 +21,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564509"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234013"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
-W tym temacie opisano następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i zawiera kroki umożliwiające rozwiązanie problemu.  
+W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i zawiera kroki umożliwiające rozwiązanie problemu.  
   
 ## <a name="general-errors"></a>Ogólne błędy  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Podczas lokalizowania pliku .application nic się nie dzieje, XML renderuje w programie Internet Explorer lub pojawi się okno dialogowe Run lub Zapisz jako  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Podczas próby zlokalizuj plik aplikacji nic się nie dzieje, XML renderuje w programie Internet Explorer lub pojawi się okno dialogowe Run lub Zapisz jako  
  Typy zawartości (znanej także jako typy MIME) nie jest poprawnie zarejestrowany na serwerze lub klienta prawdopodobnie przyczyną tego błędu.  
   
- Najpierw upewnij się, że serwer jest skonfigurowany do skojarzenia z rozszerzeniem .application z typem zawartości "application/x-ms aplikacji".  
+ Najpierw upewnij się, że serwer jest skonfigurowany do skojarzenia `.application` rozszerzenie o zawartości typu "application/x-ms aplikacji."  
   
- Jeśli serwer jest skonfigurowany prawidłowo, upewnij się, że [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowany na tym komputerze. Jeśli [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowana, i są nadal występuje ten problem, spróbuj odinstalować i ponownie zainstalować [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] Aby ponownie zarejestrować typ zawartości na kliencie.  
+ Jeśli serwer jest skonfigurowany prawidłowo, sprawdź, czy [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowany na tym komputerze. Jeśli [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] jest zainstalowana, i są nadal występuje ten problem, spróbuj odinstalować i ponownie zainstalować [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] Aby ponownie zarejestrować typ zawartości na kliencie.  
   
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Komunikat o błędzie jest wyświetlany komunikat "nie można pobrać aplikacji. Pliki Brak we wdrożeniu"lub"pobrania aplikacji zostało przerwane, sprawdź, czy błędy sieciowe i spróbuj ponownie później "  
  Ten komunikat oznacza, że jeden lub więcej plików, do których odwołuje się [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestów nie można pobrać. Najprostszym sposobem debugowania tego błędu jest próba pobrania adresu URL który [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mówi, nie można go pobrać. Poniżej przedstawiono niektóre możliwe przyczyny:  
   
 -   Jeśli plik dziennika mówi "(403) zabroniony" lub "(404) nie znaleziono" Sprawdź, czy serwer sieci Web jest skonfigurowany tak, aby pobrać ten plik nie są blokowane. Aby uzyskać więcej informacji, zobacz [serwera i klienta problemów z konfiguracją we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Jeśli plik .config jest blokowana przez serwer, zobacz sekcję "Pobierz błąd podczas próby zainstalowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z pliku .config" dalszej części tego tematu.  
+-   Jeśli plik .config jest blokowana przez serwer, zobacz sekcję "Pobierz błąd podczas próby zainstalowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z pliku .config" dalszej części tego artykułu.  
   
 -   Określenia, czy wystąpiły ponieważ `deploymentProvider` wskazuje adres URL w manifeście rozmieszczenia w innej lokalizacji niż adres URL używany do aktywacji.  
   

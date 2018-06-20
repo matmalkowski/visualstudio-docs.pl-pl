@@ -19,23 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 81bd18d10b91f06636ad6bba8230ec29b0d81312
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558935"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235157"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Wdrożenie ClickOnce w systemie Windows Vista
-Tworzenie aplikacji w programie Visual Studio Kontrola konta użytkownika (UAC) w systemie Windows Vista zazwyczaj generuje manifest osadzonych zakodowane jako dane binarne dane XML w pliku wykonywalnego aplikacji. Ponieważ aplikacji ClickOnce i COM bez rejestrowania wymaga manifest zewnętrznych, Visual Studio generuje plik dla tych typów projektów zawierających dane funkcji Kontrola konta użytkownika zamiast osadzonych manifestu. Domyślnie program Visual Studio używa informacji z pliku o nazwie app.manifest do generowania informacji manifestu kontroli konta użytkownika zewnętrznego (w przypadku wdrażania ClickOnce i COM bez rejestrowania) lub aby osadzić go w pliku wykonywalnego aplikacji (dla wszystkich innych przypadkach). Program Visual Studio udostępnia następujące opcje do generowania manifestu:  
+
+Tworzenie aplikacji w programie Visual Studio Kontrola konta użytkownika (UAC) w systemie Windows Vista zazwyczaj generuje manifest osadzonych zakodowane jako dane binarne dane XML w pliku wykonywalnego aplikacji.  ClickOnce i COM bez rejestrowania aplikacji wymaga manifest zewnętrznego, dzięki czemu można Visual Studio generuje plik dla tych projektów zawierających dane funkcji Kontrola konta użytkownika, zamiast osadzonych manifestu. We wdrożeniach ClickOnce i COM bez rejestrowania Visual Studio używa informacji z pliku o nazwie app.manifest do generowania zewnętrznych informacji manifestu kontroli konta użytkownika. We wszystkich innych przypadkach Visual Studio osadza dane funkcji Kontrola konta użytkownika w pliku wykonywalnym aplikacji. 
+
+Program Visual Studio udostępnia następujące opcje do generowania manifestu:  
   
 -   Używać osadzonych manifestu. Osadzone dane funkcji Kontrola konta użytkownika plik wykonywalny aplikacji i Uruchom jako zwykłego użytkownika.  
   
-     To ustawienie domyślne (chyba że używasz ClickOnce). To ustawienie będzie obsługiwać zwykły sposób, w którym działa program Visual Studio w systemie Windows Vista; oznacza to, że Generowanie manifestu wewnętrznych i zewnętrznych, zarówno przy użyciu `AsInvoker`.  
+     To ustawienie domyślne (chyba że używasz ClickOnce). To ustawienie sprzyja zwykły sposób, w którym działa program Visual Studio w systemie Windows Vista, generacji wewnętrzne i zewnętrzne manifestu przy użyciu `AsInvoker`.  
   
 -   Użyj zewnętrznego manifestu. Generuj manifest zewnętrznych za pomocą app.manifest.  
   
-     Spowoduje to wygenerowanie zewnętrznych manifestu, korzystając z informacji w app.manifest. Podczas publikowania aplikacji za pomocą ClickOnce lub COM bez rejestrowania, Visual Studio dodaje app.manifest do projektu i dodaje tej opcji.  
+     Spowoduje to wygenerowanie zewnętrznych manifestu, korzystając z informacji w app.manifest. Podczas publikowania aplikacji za pomocą ClickOnce lub COM bez rejestrowania, dodaje app.manifest do projektu programu Visual Studio, a następnie dodaje tej opcji.  
   
 -   Używać nie manifestu. Utwórz aplikację bez manifestu.  
   
@@ -43,11 +46,11 @@ Tworzenie aplikacji w programie Visual Studio Kontrola konta użytkownika (UAC) 
   
  Nowe właściwości są dostępne na **aplikacji** strony projektanta projektu (dla programu Visual C# tylko dla projektów) i format pliku projektu MSBuild.  
   
- Należy pamiętać, że metoda konfigurowania Generowanie manifestu UAC w programie Visual Studio IDE różni się w zależności od typu projektu (Visual C# i Visual Basic).  
+ Metoda konfigurowania Generowanie manifestu UAC w programie Visual Studio IDE różni się w zależności od typu projektu (Visual C# lub Visual Basic).  
   
- Aby uzyskać informacje o konfigurowaniu projekty Visual C# do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+   * Aby uzyskać informacje o konfigurowaniu projekty Visual C# do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
- Aby uzyskać informacje o konfigurowaniu projekty Visual Basic do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+   * Aby uzyskać informacje o konfigurowaniu projekty Visual Basic do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   

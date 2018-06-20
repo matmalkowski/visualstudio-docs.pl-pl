@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 210fd6049f3df068d02f58e0271318591a051396
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065081"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234276"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdrożyć same aplikacje. Wiele z nich tylko pakietu aplikacji przy użyciu technologii ClickOnce, a następnie przekazują pliki do klienta, takich jak dużych przedsiębiorstw. Klient staje się odpowiedzialne za hosting aplikacji w swojej sieci. W tym temacie omówiono niektóre problemy związane z takich wdrożeniach w wersjach programu .NET Framework, przed w wersji 3.5. Opisuje nowe rozwiązanie, używając nowej funkcji "używać manifestu dla zaufania" w .NET Framework 3.5. Ponadto zawiera z zalecanych Strategie tworzenia wdrożenia ClickOnce dla klientów, którzy nadal używają starszej wersji programu .NET Framework.  
@@ -43,7 +43,7 @@ Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdroży
   
  Załóżmy, że firma Adventure Works ma działu finansowego i działu kadr. Zarówno działów licencji aplikacji ClickOnce firmy Microsoft Corporation, który generuje raporty na podstawie danych przechowywanych w bazie danych SQL. Firma Microsoft dostarcza każdy dział przy użyciu wersji aplikacji, która jest dostosowany do swoich danych. Jeśli aplikacje są podpisane za pomocą tego samego certyfikatu Authenticode, użytkownika, który próbuje użyć obydwu aplikacji napotyka błąd, ponieważ ClickOnce będzie uznawać drugiej aplikacji jest taka sama jak pierwsza. W takim przypadku klient mogą wystąpić nieprzewidywalne i niechcianych efekty uboczne, obejmujących utratę wszystkich danych przechowywanych lokalnie przez aplikację.  
   
- Dodatkowe problem związany, podpisywanie kodu jest `deploymentProvider` elementu w manifeście rozmieszczenia, która wskazuje miejsce wyszukać aktualizacje aplikacji ClickOnce. Ten element ma mają zostać dodane do manifestu wdrożenia przed podpisaniem. Jeśli ten element zostanie dodany później, manifest rozmieszczenia musi być ponownie podpisane.  
+ Dodatkowe problem związany, podpisywanie kodu jest `deploymentProvider` elementu w manifeście rozmieszczenia, która wskazuje miejsce wyszukać aktualizacje aplikacji ClickOnce. Ten element należy dodać do manifestu wdrożenia przed podpisaniem. Jeśli ten element zostanie dodany później, manifest rozmieszczenia musi być ponownie podpisane.  
   
 ### <a name="requiring-the-customer-to-sign-the-deployment-manifest"></a>Wymaganie klienta, aby podpisać Manifest wdrażania  
  Jedno rozwiązanie tego problemu nie jest unikatowa wdrożeń ma znak developer manifest aplikacji, a klient podpisać manifest wdrażania. Gdy ta metoda działa, podaj inne problemy. Ponieważ certyfikatu Authenticode musi pozostać chronionych zasobów, klienta nie można nadać tylko certyfikat do podpisania wdrożenia deweloperów. Gdy klienta może podpisać manifest wdrażania się przy użyciu bezpłatnych narzędzi z zestawu .NET Framework SDK, może to wymagać wiedzy technicznej niż klienta gotowa lub możliwość zapewnienia. W takich przypadkach dewelopera zazwyczaj tworzy aplikację, witryny sieci Web lub inny mechanizm, za pomocą którego klient może przesłać ich wersji aplikacji do podpisywania.  
@@ -95,7 +95,7 @@ Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdroży
  Wadą metodę ustawienia wdrażania projektu jest wymagane do tworzenia aplikacji niestandardowe wdrożenie wydatków i godzinę.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Mieć klienta Generuj Manifest wdrażania  
- Trzeci strategii wdrażania wyłączeniu do strony tylko pliki aplikacji i manifest aplikacji do klienta. W tym scenariuszu klient jest odpowiedzialny za Generowanie i podpisać manifest wdrażania przy użyciu zestawu .NET Framework SDK.  
+ Trzeci strategii wdrażania jest do strony poza tylko aplikację plików i aplikacji manifestu do klienta. W tym scenariuszu klient jest odpowiedzialny za Generowanie i podpisać manifest wdrażania przy użyciu zestawu .NET Framework SDK.  
   
  Wadą tego rozwiązania jest wymaga klienta, aby zainstalować narzędzia zestawu SDK programu .NET Framework i deweloperów lub administratorem systemu, kto jest doświadczona za ich pomocą. Niektórzy klienci mogą wymagać rozwiązania, które wymaga niewielkiego lub żadnego techniczne z ich strony.  
   

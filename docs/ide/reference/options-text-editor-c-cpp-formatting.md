@@ -1,6 +1,6 @@
 ---
 title: Opcje, edytor tekstu, C/C++, formatowanie
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946068"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235144"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
-Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub C++.
+
+Te strony właściwości umożliwia zmianę domyślnego zachowania edytora kodu są programowania C lub C++.
+
+[C++, formatowanie strony właściwości](media/cpp-formatting.png)
 
  Dostępu do tej strony, w **opcje** okno dialogowe, w lewym okienku rozwiń **Edytor tekstu**, rozwiń węzeł **C/C++**, a następnie kliknij przycisk **formatowanie** .
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Strona Ogólne
 
-## <a name="cc-options"></a>Opcje C/C++
- **Włącz automatyczne szybka podpowiedź**
+Ta strona zawiera opcje formatowania instrukcje i bloków w trakcie pisania.
 
- Włącza lub wyłącza funkcję Szybkie informacje technologii IntelliSense.
+**Visual Studio 2017 wersji 15.7 i nowszych**: strona zawiera również opcje dotyczące konfigurowania obsługi [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) w wersji 5.0. ClangFormat to narzędzie, które ułatwia stylu i formatowania kodu na podstawie zestawu reguł, które można skonfigurować w pliku formatu .clang lub _clang format.
 
-## <a name="inactive-code"></a>Kod nieaktywny
- **Pokaż nieaktywnych bloków kodu**
+### <a name="configuring-clangformat-options"></a>Konfigurowanie opcji ClangFormat
 
- Kod, który jest nieaktywny, ze względu na `#ifdef` deklaracje są kolorowane w inny sposób, aby ułatwić jego identyfikację.
+W Visual Studio 2017 wersji 15.7 i nowszych ClangFormat obsługa jest domyślnie włączona. Można określić, które z tych typowych konwersji formatowanie, aby zastosować do wszystkich projektów: LLVM, Google, chromu, Mozilla lub WebKit. Można także utworzyć plik formatu .clang lub _clang — Definicja formatu niestandardowego. Jeśli taki plik znajduje się w folderze projektu, Visual Studio używa jej do formatowania wszystkich plików kodu źródłowego w tym folderze i jego podfolderach. 
 
- **Wyłącz nieprzezroczystość nieaktywnego kodu**
+Domyślnie program Visual Studio clangformat.exe działa w tle stosuje formatowanie podczas pisania. Można również określić go tylko w przypadku ręcznie uruchomić wywołać polecenia formatowania **dokumentu w formacie (Ctrl + K, Ctrl + D)** lub **Wybieranie formatu (Ctrl + K, Ctrl + F)**.
 
- Nieaktywny kod można zidentyfikować za pomocą kolorów zamiast przezroczystości.
 
- **Procent nieprzezroczystość nieaktywnego kodu**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Wcięcie, nowe wiersze, odstępy zawijania stron
 
- Można dostosować stopień krycia dla bloków nieaktywnego kodu.
-
-## <a name="indentation"></a>Wcięcie
- **Wcięcie nawiasów klamrowych**
-
- Można skonfigurować sposób wyrównania nawiasów klamrowych po naciśnięciu klawisza ENTER po rozpoczęciu blok kodu, na przykład funkcję lub a `for` pętli. Nawiasy klamrowe mogą być wyrównane względem pierwszego znaku bloku kodu lub wcięte.
-
- **Automatyczne wcięcia na karcie**
-
- Można skonfigurować, co się dzieje w bieżącym wierszu kodu po naciśnięciu klawisza TAB. Albo wiersz zostaje wcięty, albo zostaje wstawiony tabulator.
-
-## <a name="miscellaneous"></a>Różne
- **Wyliczanie komentarzy w oknie Lista zadań**
-
- Edytor może skanować otwarte pliki źródłowe pod kątem wstępnie określonych słów w komentarzach. Tworzy wpis w **listy zadań** okna dla dowolnego słowa kluczowe, które znajdzie.
-
- **Wyróżnij zgodnych tokenów**
-
- Gdy kursor znajduje się obok nawiasu klamrowego, edytor może wyróżnić pasujący nawias klamrowy, abyś mógł łatwiej wyróżnić odpowiedni kod.
-
-## <a name="outlining"></a>Tworzenie konspektu
- **Trybu zwijania przy otwieraniu plików**
-
- Po przywróceniu pliku do edytora tekstów można włączyć funkcję tworzenia konspektów. Aby uzyskać więcej informacji, zobacz [Tworzenie konspektu](../../ide/outlining.md). Gdy ta opcja jest zaznaczona, tworzenie konspektów jest włączone po otwarciu pliku.
-
- **Automatyczne zwijanie bloków obszaru #pragma**
-
- Gdy ta opcja jest wybrana i automatyczne tworzenie konspektu dla [dyrektywy pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) jest włączona. Dzięki temu można rozwinąć lub zwinąć bloki regionów pragmy w trybie konspektu.
-
- **Automatyczne zwijanie bloków instrukcji**
-
- Kiedy ta opcja jest zaznaczona, automatyczne tworzenie konspektu jest włączone dla następujących konsruktów instrukcji:
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch, instrukcja (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while, instrukcja (C++)](/cpp/cpp/while-statement-cpp)
+Te strony włączyć różne dostosowania formatowania, ale są ignorowane, jeśli ClangFormat jest włączone.
 
 ## <a name="see-also"></a>Zobacz też
 

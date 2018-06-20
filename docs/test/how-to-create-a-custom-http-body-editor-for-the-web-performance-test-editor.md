@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 97f0d77e59b629523a34bbad55576219a9660109
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750698"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233987"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Porady: tworzenie niestandardowego edytora HTTP dla edytora testów wydajności sieci Web
 
@@ -301,7 +301,7 @@ Po zakończeniu edycji ciągów tekstowych i użytkownik klika polecenie **OK** 
 
 1.  Tworzenie projektu testu.
 
-2.  Tworzenie testu wydajności sieci Web i wprowadź adres URL w przeglądarce z usługą sieci Web, na przykład http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Utwórz test wydajności i wprowadź adres URL usługi sieci Web w przeglądarce sieci Web.
 
 3.  Po zakończeniu rejestrowania w sieci Web edytorze testów wydajności, rozwiń żądania usługi sieci Web i wybierz opcję **ciągów tekstowych** lub **binarne treści**.
 

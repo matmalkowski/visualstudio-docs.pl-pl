@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704762"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235105"
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używany do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). W żadnym menu mogą wykonywać zarówno poleceń menu i poleceń, które nie są wyświetlane. Aby wyświetlić **polecenia** okna, wybierz **inne okna** z **widoku** menu, a następnie wybierz **okno polecenia**.
@@ -75,7 +75,7 @@ ms.locfileid: "33704762"
  W **Immediate** okna, natomiast znak równości (=) jest interpretowana jako operatora przypisania. Tak, na przykład polecenie `>Debug.EvaluateStatement(varA=varB)` przypisze do zmiennej `varA` wartość zmiennej `varB`.
 
 ## <a name="parameters-switches-and-values"></a>Parametry, przełączniki i wartości
- Niektóre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia mają odpowiednie polecenia i argumentów opcjonalnych, przełączniki i wartości. Niektóre zasady mają zastosowanie podczas pracy z tych poleceń. Oto przykład poleceniu sformatowanego wyjaśnienie terminologii.
+ Niektóre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wymagać polecenia i argumentów opcjonalnych, przełączniki i wartości. Niektóre zasady mają zastosowanie podczas pracy z tych poleceń. Oto przykład poleceniu sformatowanego wyjaśnienie terminologii.
 
 ```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar

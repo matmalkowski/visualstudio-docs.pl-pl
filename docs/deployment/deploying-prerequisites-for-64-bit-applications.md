@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4db38a1a95ca179f793dd7a9e13c35f25f623f03
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566007"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233688"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych
 Wdrożenie ClickOnce obsługuje instalacji aplikacji na platformach 64-bitowych. Platformy docelowe są **x86** dla 32-bitowych platform **x64** obsługi zestawów instrukcji AMD64 i EM64T maszyn i **Itanium** dla 64-bitowego procesora Itanium.  
@@ -39,7 +39,7 @@ Wdrożenie ClickOnce obsługuje instalacji aplikacji na platformach 64-bitowych.
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)]|Tak|Nie|  
 |Visual C++ 2010 środowiska uruchomieniowego bibliotek (IA64)|Nie|Tak|  
-|Visual C++ 2010 środowiska uruchomieniowego Libriaries (x64)|Tak|Nie|  
+|Visual C++ 2010 środowiska uruchomieniowego bibliotek (x64)|Tak|Nie|  
 |Microsoft .NET Framework 4 (x86 i x64)|Tak||  
 |Program Microsoft .NET Framework 4 Client Profile (x86 i x64)|Tak||  
   

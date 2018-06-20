@@ -1,5 +1,5 @@
 ---
-title: Wpisane a nietypizowane zbiory danych
+title: Typizowane i nietypizowane zestawy danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32bbbe0aef325ee3866ec441404e30ec9f182b38
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9fe44a0a83b82afb317346b719d804e12b13293b
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922326"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233480"
 ---
-# <a name="typed-vs-untyped-datasets"></a>Wpisane a nietypizowane zbiory danych
+# <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektant obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy dataset. Informacje ze schematu (tabel, kolumn i tak dalej) są generowane i skompilowany w tej nowej klasy dataset jako zestaw obiektów pierwszej klasy i właściwości. Ponieważ typizowanego obiektu dataset pochodząca od klasy podstawowej <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, które przyjmują wystąpienia <xref:System.Data.DataSet> klasy jako parametr.
 
  Nietypizowanego zestawu danych z kolei ma brak odpowiednich wbudowanego schematu. Jak typizowanego obiektu dataset nietypizowanego zestawu danych zawiera tabele, kolumny i tak dalej, ale te są widoczne tylko w kolekcjach. (Jednak utworzony ręcznie tabele i inne elementy w nietypizowanego zestawu danych, można wyeksportować struktury zestawu danych jako schematu za pomocą zestawu danych <xref:System.Data.DataSet.WriteXmlSchema%2A> metody.)
@@ -36,7 +36,7 @@ Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podst
  [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
  [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
- Dostęp typu nie jest tylko czytelności, ale również pełni obsługiwane przez funkcję IntelliSense w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **edytora kodu**. Oprócz łatwiej współpracować, składnia typizowanego obiektu dataset zawiera typ sprawdzenie w czasie kompilacji, co pozwala znacznie zmniejszyć prawdopodobieństwo wystąpienia błędów w przypisywanie wartości do elementów członkowskich zestawu danych. Jeśli zmienisz nazwę kolumny w Twojej <xref:System.Data.DataSet> klasy, a następnie skompilować aplikację, komunikat o błędzie kompilacji. Klikając dwukrotnie błąd kompilacji w **listy zadań**, można przejść bezpośrednio do wiersze kodu, które odwołują się do starej nazwy kolumny. Dostęp do tabel i kolumn w typizowanego zestawu danych również jest nieco większa w czasie wykonywania, ponieważ dostęp jest określany w czasie kompilacji, nie za pomocą kolekcji w czasie wykonywania.
+ Dostęp typu nie jest tylko czytelności, ale również pełni obsługiwane przez funkcję IntelliSense w Visual Studio **edytora kodu**. Oprócz łatwiej współpracować, składnia typizowanego obiektu dataset zawiera typ sprawdzenie w czasie kompilacji, co pozwala znacznie zmniejszyć prawdopodobieństwo wystąpienia błędów w przypisywanie wartości do elementów członkowskich zestawu danych. Jeśli zmienisz nazwę kolumny w Twojej <xref:System.Data.DataSet> klasy, a następnie skompilować aplikację, komunikat o błędzie kompilacji. Klikając dwukrotnie błąd kompilacji w **listy zadań**, można przejść bezpośrednio do wiersze kodu, które odwołują się do starej nazwy kolumny. Dostęp do tabel i kolumn w typizowanego zestawu danych również jest nieco większa w czasie wykonywania, ponieważ dostęp jest określany w czasie kompilacji, nie za pomocą kolekcji w czasie wykonywania.
 
  Mimo że typizowane zbiory danych ma wiele zalet, nietypizowanego zestawu danych jest przydatne w różnych sytuacjach. Najbardziej oczywisty scenariusz jest gdy brak schematu nie jest dostępny dla zestawu danych. Taka sytuacja może wystąpić, na przykład jeśli aplikacja prowadzi interakcję z składnik, który zwraca dataset, ale nie znasz z wyprzedzeniem jego struktura jest. Podobnie są razy podczas pracy z danymi, które nie ma on struktury statycznych, przewidywalnych. W takim przypadku jest niemożliwe do użycia typizowanego zestaw danych, ponieważ będzie musiał ponownie wygenerować klasy typizowanego zestawu danych z każdej zmiany w strukturze danych.
 
