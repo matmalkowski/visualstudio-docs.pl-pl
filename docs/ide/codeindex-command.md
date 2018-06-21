@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296299"
 ---
 # <a name="codeindex-command"></a>CodeIndex — polecenie
 
 Użyj **CodeIndex** polecenia do zarządzania kodu indeksowania na Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje wskaźników CodeLens lub wyłączyć funkcję indeksowania do badania problemów z wydajnością serwera.
 
-**Wymagane uprawnienia**
+## <a name="required-permissions"></a>Wymagane uprawnienia
 
-Aby użyć **CodeIndex** polecenia, musisz być członkiem **Team Foundation Administratorzy** grupy zabezpieczeń. Zobacz [uprawnienia i grup zdefiniowanych dla usługi Team Services i TFS](https://www.visualstudio.com/docs/setup-admin/permissions).
+Aby użyć **CodeIndex** polecenia, musisz być członkiem **Team Foundation Administratorzy** grupy zabezpieczeń. Zobacz [uprawnienia i grup zdefiniowanych dla usługi Team Services i TFS](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Nawet jeśli użytkownik loguje się przy użyciu poświadczeń administracyjnych, należy otworzyć z podwyższonym poziomem uprawnień okno wiersza polecenia, aby uruchomić to polecenie. Należy także wykonać to polecenie z warstwy aplikacji programu Team Foundation.
@@ -45,7 +46,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |`CollectionId`|Określa numer identyfikacyjny kolekcji projektów zespołowych.|
 |`ServerPath`|Określa ścieżkę do pliku kodu.|
 
-|**Opcja**|**Opis**|
+|**Option**|**Opis**|
 |----------------|---------------------|
 |**/indexingStatus**|Pokazuje stan i konfigurację usługi indeksowania kodu.|
 |**/setIndexing:**[na &#124; poza &#124; keepupOnly]|-   **na**: uruchomić indeksowania wszystkich grup zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich grup zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowe grupy zmian.|
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie zmian w kodzie i innych elementów historii za pomocą wskaźników CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Zarządzanie konfiguracją serwera z TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Zarządzanie konfiguracją serwera z TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

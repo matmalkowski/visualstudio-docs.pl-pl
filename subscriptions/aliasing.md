@@ -9,16 +9,16 @@ description: Logowanie może zakończyć się niepowodzeniem, jeśli są używan
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8226a72f2d53973e31e37a0cb0dac5d4b4a8e3be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477655"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283345"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas aliasy użycia
 
-W zależności od typu konta używane do logowania, dostępnych subskrypcji mogą nie być poprawnie wyświetlane po zalogowaniu się do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jeden potencjalną przyczyną jest użycie "aliasów" lub "przyjazne nazwy" zamiast tożsamości logowania przypisaniu subskrypcji. Jest to "aliasów". 
+W zależności od typu konta używane do logowania, dostępnych subskrypcji mogą nie być poprawnie wyświetlane po zalogowaniu się do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jeden potencjalną przyczyną jest użycie "aliasów" lub "przyjazne nazwy" zamiast tożsamości logowania przypisaniu subskrypcji. Jest to "aliasów".
 
 ## <a name="what-is-aliasing"></a>Co to jest aliasów?
 
@@ -28,7 +28,7 @@ Wygładzanie może wystąpić, gdy firma ma usługi Online firmy Microsoft dla s
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Jako administrator jakie opcje są dostępne?
 
-Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybenci pomyślnego logowania na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybenci pomyślnego logowania na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - Pierwsza opcja (zalecane), ma korzystać z konta katalogu jako przypisanego adresu w wolumin licencjonowania Service Center (VLSC). Zapoznaj się [przypisywanie subskrybentów z kontem katalogu](#assigning-subscribers-to-a-directory-account) w tym artykule, aby uzyskać więcej informacji.
 - Druga opcja (mniej bezpieczna opcja), jest umożliwienie subskrybenci skojarzyć swój adres e-mail "Pracy lub szkoły" kontu "Osobiste" () Konta Microsoft lub zarządzanych kont usług). Zapoznaj się [określenie konta firmowego lub szkolnego jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) w tym artykule, aby uzyskać więcej informacji.
 
@@ -37,9 +37,9 @@ Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybenci pomyśl
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Jako subskrybent jakie opcje są dostępne?
 
-Z punktu widzenia subskrybenta ważne jest pierwszym pracować z administratorem, aby zrozumieć konfigurację tożsamość firmy.  Jeśli to konieczne, administrator może trzeba zaktualizować ustawienia konta z ich portalu administracyjnego lub może być konieczne utworzenie Microsoft konta (MSA) przy użyciu adresu e-mail firmy.  Przed wykonaniem czynności, aby utworzyć konto, skontaktuj się z odpowiednim administratorem w sprawie żadnych zasad lub problemy z wykonaniem tej akcji.  Zapoznaj się [określenie konta firmowego lub szkolnego jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) w tym artykule, aby uzyskać więcej informacji.  
+Z punktu widzenia subskrybenta ważne jest pierwszym pracować z administratorem, aby zrozumieć konfigurację tożsamość firmy.  Jeśli to konieczne, administrator może trzeba zaktualizować ustawienia konta z ich portalu administracyjnego lub może być konieczne utworzenie Microsoft konta (MSA) przy użyciu adresu e-mail firmy.  Przed wykonaniem czynności, aby utworzyć konto, skontaktuj się z odpowiednim administratorem w sprawie żadnych zasad lub problemy z wykonaniem tej akcji.  Zapoznaj się [określenie konta firmowego lub szkolnego jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) w tym artykule, aby uzyskać więcej informacji.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Przypisywanie subskrybentów z kontem katalogu 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Przypisywanie subskrybentów z kontem katalogu
 
 We wszystkich przypadkach Menedżer subskrypcji w ramach wolumin licencjonowania Service Center (VLSC) należy użyć adresu katalogu dla nowych subskrybentów lub zaktualizować adres e-mail dla subskrybentów "istniejące".  Należy pamiętać, że przy użyciu adresu katalogu oznacza żadnych nowych subskrybentów nie otrzyma powitalnej wiadomości E-mail, a Administrator będzie musiał powiadomić subskrybenta, które subskrypcji przypisano do nich.  Po wykonaniu następujące czynności, również, Wyślij wiadomość e-mail korzystać [szablonu](#notifying-your-subscribers-with-directory-addresses) subskrybenci, i pomóc w procesie logowania.
 
@@ -62,13 +62,13 @@ Wykonaj następujące kroki, aby dodać nowy subskrybenta z kontem katalogu.
 
 5. Wybierz żądaną **poziom subskrypcji**.
 
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" />
 
 6. Sprawdź poprawność posiadania subskrypcji można przypisać i kliknij **dalej**.
 7.  Wprowadź szczegóły subskrybenta i katalogu adres w polu Adres E-mail, a następnie kliknij przycisk **dalej**.
 
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" />
+
 8. Sprawdzanie poprawności informacji dotyczących subskrybenta, a następnie kliknij przycisk **Zakończ**.
 
 9. Powiadom subskrybenta, że zainicjowano swoją subskrypcją przy użyciu poniżej [szablonu](#notifying-your-subscribers-with-directory-addresses).
@@ -101,9 +101,9 @@ Ponieważ powitalnej wiadomości E-mail nie zostanie pomyślnie osiągnąć Twoj
 
 Witaj % SUBSKRYBENTA NAME %
 
-Przypisane subskrypcji programu Visual Studio.  Odwiedź stronę https://my.visualstudio.comi zaloguj się przy użyciu adresu % adres katalogu % aktywować i dostępu do Twojej subskrypcji. 
+Przypisane subskrypcji programu Visual Studio.  Odwiedź stronę https://my.visualstudio.comi zaloguj się przy użyciu adresu % adres katalogu % aktywować i dostępu do Twojej subskrypcji.
 
-Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://www.visualstudio.com/subscriptions/support/).
+Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://visualstudio.microsoft.com/subscriptions/support/).
 
 W dolnej części strony wybierz jedną z poniższych:
    - Konta, subskrypcje i obsługę rozliczeń
@@ -115,7 +115,7 @@ W dolnej części strony wybierz jedną z poniższych:
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Określenie konta firmowego lub szkolnego jako konta osobistego 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Określenie konta firmowego lub szkolnego jako konta osobistego
 Należy korzystać z instrukcji przedstawionych w temacie [przypisywanie subskrybentów z kontem katalogu](#assigning-subscribers-to-a-directory-account) sekcji, aby dodać nowego użytkownika lub zaktualizować adres e-mail użytkownika w ramach wolumin licencjonowania Service Center (VLSC).  W przypadku których adres e-mail nie został rozpoznany przez katalog użytkownik będzie musiał kroków procesu, aby utworzyć nowe konto, aby zdefiniować adres e-mail jako konta osobistego.  Dla krótkoterminowej zespołu Visual Studio subskrypcji ma zabezpieczone wyjątek od zasad tożsamości określonych poniżej, ale możemy inwestują w możliwości należy usunąć te zasady.
 
 > [!WARNING]
@@ -151,7 +151,7 @@ Przypisano subskrypcji programu Visual Studio i może przekierowanie do zalogowa
 
 2. Kliknij przycisk Utwórz nowe Account Microsoft po prawej stronie
 
-3. Wypełnij formularz: 
+3. Wypełnij formularz:
     - Użyj adresu firmowej poczty e-mail w someone@example.com pole
     - Wprowadź hasło
     - Wybierz preferencje promocyjna
@@ -165,7 +165,7 @@ Przypisano subskrypcji programu Visual Studio i może przekierowanie do zalogowa
 
 Uwaga: Podczas odwiedzania https://my.visualstudio.com w przyszłości może pojawić się prośba wybierz konto, które chcesz użyć (np. "Konto służbowe" lub "Osobiste konto").  Po wykonaniu powyższych czynności, należy skorzystać z opcji "Osobiste konto".
 
-Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://www.visualstudio.com/subscriptions/support/).
+Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://visualstudio.microsoft.com/subscriptions/support/).
 
 W dolnej części strony wybierz jedną z poniższych:
    - Konta, subskrypcje i obsługę rozliczeń

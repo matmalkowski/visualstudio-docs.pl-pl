@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574688"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303312"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji za pomocą narzędzia MSBuild
 Za pomocą przełączników przy użyciu programu MSBuild, można określić, ile danych kompilacji, aby przeglądu i określa, czy chcesz zapisać dane kompilacji do jednego lub więcej plików. Można również określić niestandardowe rejestratora zbierania danych kompilacji. Aby uzyskać informacje dotyczące przełączników wiersza polecenia programu MSBuild, których nie opisano w tym temacie, zobacz [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ Za pomocą przełączników przy użyciu programu MSBuild, można określić, il
   
  Proces kompilacji może przebiegać wolniej, ustawiając **/verbosity** do `detailed` , a nawet wolniejsze w przypadku ustawienia **/verbosity** do `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Zapisywanie dziennika kompilacji do pliku  
  Można użyć **/fileLogger** (**fl**) przełącznik, aby zapisać w pliku danych kompilacji. Poniższy przykład zapisuje dane kompilacji w pliku o nazwie `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  W poniższym przykładzie plik dziennika o nazwie `MyProjectOutput.log`, a poziom szczegółowości danych wyjściowych dziennika jest ustawiona na `diagnostic`. Określ te dwa ustawienia za pomocą **/filelogparameters** (`flp`) przełącznika.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  **/Filelogparameters** (`flp`) zmienia określić pliki, 2 i 3 co nazwa każdego pliku oraz elementów do uwzględnienia w każdym pliku. Nie określono nazwy dla pliku 1, więc domyślną nazwę `msbuild1.log` jest używany.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ Możesz zapisać dziennik w skompresowany, binarny format za pomocą **/binaryLo
 
 W poniższym przykładzie binarny plik dziennika jest tworzony z nazwą `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 Developer uwzględ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199875"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280549"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Office 365 Developer korzyści subskrypcji w ramach subskrypcji programu Visual Studio
 
@@ -26,21 +26,21 @@ Subskrybenci z wybranych subskrypcji Visual Studio Enterprise skorzystają subsk
 
 2. W zależności od Twojego konta nastąpi albo przekierowanie do strony logowania organizacji lub Account Microsoft strony logowania.   W obu przypadkach wprowadź nazwę użytkownika i hasło, a następnie kliknij przycisk **dalej**.
 
-3. Po ukończeniu procesu logowania powinna zostać wyświetlona strona korzyści z subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, można przełączać się między subskrypcjami, klikając strzałkę listy rozwijanej w górnym prawym rogu poniżej Wstążki czarny.  Na kafelku korzyści subskrypcji dewelopera usługi Office 365 znajduje się w kategorii narzędzi.  Przewiń do momentu wyświetlenia na kafelku pakietu Office za pomocą strzałki po prawej stronie wiersza Kafelki. 
+3. Po ukończeniu procesu logowania powinna zostać wyświetlona strona korzyści z subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, można przełączać się między subskrypcjami, klikając strzałkę listy rozwijanej w górnym prawym rogu poniżej Wstążki czarny.  Na kafelku korzyści subskrypcji dewelopera usługi Office 365 znajduje się w kategorii narzędzi.  Przewiń do momentu wyświetlenia na kafelku pakietu Office za pomocą strzałki po prawej stronie wiersza Kafelki.
 
-4. W sekcji narzędzia Znajdź Kafelek subskrypcji dewelopera usługi Office 365.  Polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.   Po pobraniu kodu kliknij **Aktywuj**. 
+4. W sekcji narzędzia Znajdź Kafelek subskrypcji dewelopera usługi Office 365.  Polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.   Po pobraniu kodu kliknij **Aktywuj**.
 
     ![Kafelek korzyści deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
 
-5.  Następnym krokiem jest utworzenie konta.  Podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**. 
+5.  Następnym krokiem jest utworzenie konta.  Podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**.
 
     ![Konto deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-6.  Podaj wymagane informacje o którym będzie można za pomocą subskrypcji i kliknij przycisk **dalej**.  Informacje są używane do określenia dostępność subskrypcji i wszelkich podatków.  
+6.  Podaj wymagane informacje o którym będzie można za pomocą subskrypcji i kliknij przycisk **dalej**.  Informacje są używane do określenia dostępność subskrypcji i wszelkich podatków.
 
     ![Informacje kontaktowe deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-7.  Utwórz nazwę użytkownika i hasło dla swojego konta.  
+7.  Utwórz nazwę użytkownika i hasło dla swojego konta.
 
     ![Nazwa użytkownika deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
@@ -48,16 +48,16 @@ Subskrybenci z wybranych subskrypcji Visual Studio Enterprise skorzystają subsk
 
 9.  Może być monit Zaloguj się na tym etapie.  Jeśli masz więcej niż jedno konto wyświetlany na stronie logowania usługi Office 365, wybierz konto, które są skojarzone z tą subskrypcją.
 
-10. Następna strona potwierdzi, że Twoja subskrypcja jest dostępne bezpłatnie.  Kliknij przycisk **Dalej** , aby kontynuować.  
+10. Następna strona potwierdzi, że Twoja subskrypcja jest dostępne bezpłatnie.  Kliknij przycisk **Dalej** , aby kontynuować.
 
     ![Korzyści deweloperów usługi Office 365, jak to wygląd](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. W finalizowanie "Krok 3", użytkownik zostanie poproszony o wybranie "Formy płatności".  Dostępne są dwie opcje płatności.  Pierwsza opcja byłoby dodać **karty kredytowej** (jak wyświetlane poniżej), i drugą opcją jest **faktury**.  W obu przypadkach kolejności 0,00 jest przesyłany przez kliknięcie przycisku **złóż zamówienie**.   
+11. W finalizowanie "Krok 3", użytkownik zostanie poproszony o wybranie "Formy płatności".  Dostępne są dwie opcje płatności.  Pierwsza opcja byłoby dodać **karty kredytowej** (jak wyświetlane poniżej), i drugą opcją jest **faktury**.  W obu przypadkach kolejności 0,00 jest przesyłany przez kliknięcie przycisku **złóż zamówienie**.
 
     > [!NOTE]
     > Dla subskrybentów, którzy nie chcą podać dane karty kredytowej, wybierz **faktury** formy płatności.  Możesz też wybrać **płacić za roku** ograniczenie odbieranie faktury raz na rok.
 
-12. W tym momencie pomyślnie zostały zrealizowane korzyści z subskrypcji dewelopera usługi Office 365.  Zostanie wyświetlona strona potwierdzenia zamówienia.  Strona będzie udostępniać link do [strony logowania](https://portal.office.com "strony logowania usługi Office 365").  Zaleca się tworzenie zakładek dla strony do późniejszego użycia.  Należy również zarejestrować identyfikator użytkownika wyświetlany na stronie.  (Również otrzymasz powitalnej wiadomości e-mail na adres e-mail podany podczas konfigurowania konta).  Kliknij przycisk **uruchamiania Instalatora** aby kontynuować.  
+12. W tym momencie pomyślnie zostały zrealizowane korzyści z subskrypcji dewelopera usługi Office 365.  Zostanie wyświetlona strona potwierdzenia zamówienia.  Strona będzie udostępniać link do [strony logowania](https://portal.office.com "strony logowania usługi Office 365").  Zaleca się tworzenie zakładek dla strony do późniejszego użycia.  Należy również zarejestrować identyfikator użytkownika wyświetlany na stronie.  (Również otrzymasz powitalnej wiadomości e-mail na adres e-mail podany podczas konfigurowania konta).  Kliknij przycisk **uruchamiania Instalatora** aby kontynuować.
 
     ![Potwierdzić zamówienia deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-confirm.png)
 
@@ -71,9 +71,9 @@ Subskrybenci z wybranych subskrypcji Visual Studio Enterprise skorzystają subsk
 | Visual Studio Dev Essentials | NA  | Niedostępne |NA |
 | Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
 
-<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT oprogramowania i deweloperów usług, MCT oprogramowania i usług.    Wyklucza: Sieci Microsoft Partner Network (MPN), załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).*
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT oprogramowania i deweloperów usług, MCT oprogramowania i usług.  Wyklucza: Sieci Microsoft Partner Network (MPN), załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).*
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -90,7 +90,7 @@ Odpowiedź: Definiowanie korzyści z subskrypcji dla Office 365 Developer
     ![Centrum administracyjne usługi Office 365 deweloperów korzyści](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
-3.  Krok 2 umożliwia administratorom dodawanie użytkowników do konta usługi Office 365.  Dodaj odpowiednie użytkowników, a następnie kliknij przycisk **dalej**.  
+3.  Krok 2 umożliwia administratorom dodawanie użytkowników do konta usługi Office 365.  Dodaj odpowiednie użytkowników, a następnie kliknij przycisk **dalej**.
 
 4.  Krok 3 umożliwia zainstalowanie aplikacji pakietu Office.  Możesz zainstalować teraz lub później.  Aby zainstalować pakiet Office Professional Plus lub Skype dla firm, po prostu kliknij jedną z odpowiadającego **teraz zainstalować** przycisków.  Twoja subskrypcja usługi Office 365 ProPlus obejmuje:
     - Word
@@ -103,18 +103,18 @@ Odpowiedź: Definiowanie korzyści z subskrypcji dla Office 365 Developer
     - Skype dla firm
     - OneDrive dla firm
 
-5.  Wybierz preferowany język i kliknij przycisk **zainstalować**. 
+5.  Wybierz preferowany język i kliknij przycisk **zainstalować**.
 
     ![Usługi Office 365 korzyści deweloperów instalacji aplikacji](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
 
 6. Kliknij przycisk **Uruchom** natychmiast rozpocząć instalację, lub kliknij przycisk **zapisać** Aby zapisać pakiet instalacyjny do Twojego komputera i zainstalować je później.
 
-7.  Kiedy wyświetli się okno dialogowe kontroli konta użytkownika, kliknij przycisk **tak** umożliwia Office do zainstalowania na tym komputerze.  
+7.  Kiedy wyświetli się okno dialogowe kontroli konta użytkownika, kliknij przycisk **tak** umożliwia Office do zainstalowania na tym komputerze.
 
 
 ### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>Pytanie: jak zaktualizować liczby użytkowników z portalu administratora usługi Office 365?
-Odpowiedź: W przypadku, gdy nie przypisać wymaganą liczbę użytkowników podczas procesu realizacji i zwiększyć ten numer w późniejszym czasie, wykonaj poniższe kroki. 
+Odpowiedź: W przypadku, gdy nie przypisać wymaganą liczbę użytkowników podczas procesu realizacji i zwiększyć ten numer w późniejszym czasie, wykonaj poniższe kroki.
 
 1. Aby zwiększyć liczbę użytkowników, po ukończeniu procesu realizacji, należy odwiedzić [ https://portal.office.com ](https://portal.office.com) i zaloguj się przy użyciu "Identyfikator użytkownika" utworzone podczas tworzenia dzierżawy.
 
@@ -136,5 +136,5 @@ Odpowiedź: W przypadku, gdy nie przypisać wymaganą liczbę użytkowników pod
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy w ramach subskrypcji pakietu Office Developer? Zapoznaj się z [obsługuje](https://developer.microsoft.com/office/support) zasobów na [Centrum deweloperów pakietu Office](https://developer.microsoft.com/office).
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

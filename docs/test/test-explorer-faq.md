@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975631"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303286"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -72,7 +72,7 @@ ms.locfileid: "31975631"
   Ikony obok projektu, Namespace i klasa grupowania odzwierciedlają stan testów w ramach tej grupy. Zobacz poniższą tabelę.
 
   ![Ikony hierarchii Eksploratora testów](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Nie ma filtru "Ścieżka pliku" w polu wyszukiwania Eksploratora testów.
 
 Filtr ścieżki pliku w **Eksploratora testów** pole wyszukiwania został usunięty w wersji zapoznawczej programu Visual Studio 2017 wersji 15.7 3. Ta funkcja ma niskie obciążenie i Eksploratora testów można pobrać metody testowe szybsze, wyłączając tę funkcję. Jeśli ta zmiana przerwania z przepływem programowanie, prosimy o kontakt poprzez przesłanie opinii na [społeczność deweloperów](https://developercommunity.visualstudio.com/).

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766041"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282957"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017 r.
 
@@ -33,7 +33,7 @@ Aby obejść ten problem, wykonaj następujące kroki.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Krok 1 — Sprawdź, czy ten problem występuje znany problem
 
-Brak niektórych znanych problemów z programem Instalator programu Visual Studio, które firma Microsoft pracuje rozwiązanie problemu. Aby sprawdzić, czy istnieje obejście tego problemu, sprawdź [sekcji Znane problemy z naszym informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
+Brak niektórych znanych problemów z programem Instalator programu Visual Studio, które firma Microsoft pracuje rozwiązanie problemu. Aby sprawdzić, czy istnieje obejście tego problemu, sprawdź [sekcji Znane problemy z naszym informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>Krok 2 — wyboru z społeczność deweloperów
 
@@ -48,7 +48,7 @@ Wykonaj następujące czynności ponownie instaluje pliki Instalator programu Vi
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń katalog Instalator programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Uruchom program inicjujący Instalator programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje `vs_[Visual Studio edition]__*.exe` wzorca. Nie można znaleźć tej aplikacji, możesz pobrać inicjujący, przechodząc do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Uruchom plik wykonywalny do zresetowania metadanych instalacji.
+3. Uruchom program inicjujący Instalator programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje `vs_[Visual Studio edition]__*.exe` wzorca. Nie można znaleźć tej aplikacji, możesz pobrać inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Uruchom plik wykonywalny do zresetowania metadanych instalacji.
 4. Spróbuj zainstalować lub aktualizacji programu Visual Studio. Jeśli Instalator zakończy się niepowodzeniem, przejdź do następnego kroku.
 
 ### <a name="step-4---report-a-problem"></a>Krok 4 — Zgłoś problem
@@ -71,7 +71,7 @@ W ostateczności można [usuwanie programu Visual Studio](remove-visual-studio.m
 
 ### <a name="step-6---contact-us-optional"></a>Krok 6 — skontaktuj się z nami (opcjonalnie)
 
-Jeśli żadne inne czynności nie zezwalać na pomyślnie zainstalować, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Jeśli żadne inne czynności nie zezwalać na pomyślnie zainstalować, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Jak rozwiązywać problemy z Instalatora w trybie offline
 
@@ -100,7 +100,7 @@ Aby zebrać dzienniki:
 
 ## <a name="more-support-options"></a>Dodatkowe opcje pomocy technicznej
 
-Jeśli żadne inne czynności nie zezwalać na pomyślnie zainstalować, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Jeśli żadne inne czynności nie zezwalać na pomyślnie zainstalować, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka dodatkowych opcji:
 

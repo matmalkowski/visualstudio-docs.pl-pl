@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 49314b5a9e2c95549207b938187bbe94ba393de1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031816"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280774"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
@@ -29,7 +29,7 @@ Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych pomo
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. Zainstaluj [zestawu Azure SDK .NET dla programu Visual Studio](https://www.visualstudio.com/vs/azure-tools/), które jest wymagane do używania szablonu usługi w chmurze.
+1. Zainstaluj [zestawu Azure SDK .NET dla programu Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), które jest wymagane do używania szablonu usługi w chmurze.
 1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt...** , następnie wyszukaj "Azure Python" i wybierz **usługi w chmurze Azure** z listy:
 
     ![Szablonu projektu w chmurze Azure dla języka Python](media/template-azure-cloud-project.png)

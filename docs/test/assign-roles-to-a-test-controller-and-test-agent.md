@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968771"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280614"
 ---
-# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról kontrolera testów i Agent testowy
+# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisz role do kontrolera i testowania agenta testowego
 
 W tym przewodniku pokazano, jak utworzyć i skonfigurować ustawienie testu używa kontrolera testów i agent testowy do dystrybucji testowania na kilku komputerach przy użyciu programu Visual Studio. Ponadto w tym przewodniku przedstawiono sposób dodawania dane diagnostyczne i dane karty Ustawienia testu.
 
@@ -41,7 +41,7 @@ W tym przewodniku będzie wykonać następujące zadania:
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Aby utworzyć i skonfigurować ustawienia testu
 
-1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **elementy rozwiązania** wskaż **Dodaj**, a następnie wybierz pozycję **nowy element**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania** wskaż **Dodaj**, a następnie wybierz pozycję **nowy element**.
 
      **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
 
@@ -51,7 +51,7 @@ W tym przewodniku będzie wykonać następujące zadania:
 
 4.  Wybierz **dodać**.
 
-     Nowy test TestSettingDistributedTestWalkthrough.testsettings plik zostanie wyświetlony w Eksploratorze rozwiązań w obszarze **elementy rozwiązania** folderu.
+     Nowy test *TestSettingDistributedTestWalkthrough.testsettings* plik zostanie wyświetlony w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
 
      **Ustawień testu** zostanie wyświetlone okno dialogowe. **Ogólne** strony jest zaznaczone.
 

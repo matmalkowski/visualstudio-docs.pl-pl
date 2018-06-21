@@ -1,5 +1,5 @@
 ---
-title: Proces instalacji programu Visual Studio przy użyciu pliku odpowiedzi
+title: Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi
 description: Dowiedz się, jak utworzyć plik odpowiedzi JSON, który pomaga zautomatyzować instalację programu Visual Studio
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef060f77a7ac580cb93c93f8e48889b7f19e4fab
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0029dc1599005cfe100bebbf9069dce672dd61b1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622058"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282245"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Sposób definiowania ustawień w pliku odpowiedzi
 
@@ -98,7 +98,7 @@ W poniższym przykładzie instalowana Visual Studio Enterprise z sześciu typowy
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

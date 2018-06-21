@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 96634ddabdf955fd969d9c004c6d3b83d1e56a92
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0abe9da4ff34217097cd8c4021f44b2ce7d52d5f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255197"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281134"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Samouczek: Debugowanie kodu zarządzanego i natywnego w programie Visual Studio
 
@@ -40,7 +40,7 @@ W tym samouczku obejmują:
 
 * Musi mieć zainstalowanego programu Visual Studio i **tworzenia klasycznych aplikacji w języku C++** obciążenia.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 

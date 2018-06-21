@@ -5,18 +5,18 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f80debf3098fd8296ddfa205db3ed296707e23c0
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572420"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279853"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![Obraz stylizowane Unity i Visual Studio dla komputerów Mac](media/vsmac-tools-unity-image1.png)
 
-Visual Studio dla komputerów Mac Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które przekształca program Visual Studio dla komputerów Mac w zaawansowane narzędzie do tworzenia międzyplatformowych gier i aplikacji z wykorzystaniem platformy Unity. 
+Visual Studio dla komputerów Mac Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które przekształca program Visual Studio dla komputerów Mac w zaawansowane narzędzie do tworzenia międzyplatformowych gier i aplikacji z wykorzystaniem platformy Unity.
 
 Unity integracji znajduje się poza pole w programie Visual Studio dla komputerów Mac, a począwszy od platformy Unity 2018.1, Visual Studio for Mac jest ustawieniem domyślnym IDE języka C# dla projektów Unity.
 
@@ -26,7 +26,7 @@ Poniżej przedstawiono niektóre główne funkcje programu Visual Studio for Mac
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Zgodny z programem Visual Studio for Mac Community Edition
 
-[Visual Studio for Mac Community Edition](https://www.visualstudio.com/) dostępne jest bezpłatny i powiązane z Unity instaluje począwszy Unity 2018.1. Zobacz Visual Studio dla komputerów Mac Tools for Unity [Instalatora dokumentacji](setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji.
+[Visual Studio for Mac Community Edition](https://visualstudio.microsoft.com/) dostępne jest bezpłatny i powiązane z Unity instaluje począwszy Unity 2018.1. Zobacz Visual Studio dla komputerów Mac Tools for Unity [Instalatora dokumentacji](setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji.
 
 ### <a name="intellisense-for-unity-messages"></a>IntelliSense dla komunikatów Unity
 

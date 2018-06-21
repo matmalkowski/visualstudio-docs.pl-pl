@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: ef13c1c5c345b635b73ba320f9245c2461a9ab8b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b499802d9cb381ec29bc447fdeb9b382e0e2e470
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33873329"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280238"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 składników katalogu
 
@@ -61,7 +61,7 @@ n/d | n/d | n/d
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765518"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281836"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
 
 W tym samouczku środowiska deweloperskiego C# przy użyciu platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -41,7 +41,7 @@ Platformy ASP.NET Core to struktura open source i wielu platform przy tworzeniu 
 
 ### <a name="what-is-visual-studio"></a>Co to jest program Visual Studio?
 
-Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla deweloperów. Go traktować jako program, który służy do tworzenia programy i aplikacje.  
+Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla deweloperów. Go traktować jako program, który służy do tworzenia programy i aplikacje.
 
 ## <a name="start-developing"></a>Rozpocząć tworzenie
 
@@ -81,7 +81,7 @@ Jeśli nie widzisz **aplikacji sieci Web platformy ASP.NET Core** szablon projek
 
 #### <a name="add-a-project-template"></a>Dodaj szablon projektu
 
-1. W **nową aplikację sieci Web Core ASP.NET** oknie dialogowym wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu projektu.  
+1. W **nową aplikację sieci Web Core ASP.NET** oknie dialogowym wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu projektu.
 
 2. Wybierz **ASP.NET Core 2.0** z górnego menu rozwijanego. (Jeśli nie widzisz **ASP.NET Core 2.0** na liście, zainstaluj go, wykonując **Pobierz** łącza, które powinny być wyświetlane w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
 

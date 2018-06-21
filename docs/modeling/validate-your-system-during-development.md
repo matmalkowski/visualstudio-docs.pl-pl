@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5030fef12683282ca41088790b6bbf47febb91e1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749944"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280948"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników oraz z architektury Twojego systemu.
@@ -40,9 +40,9 @@ Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników
 |**Blogi**|-   [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Testowanie aplikacji](https://www.visualstudio.com/en-gb/docs/test/overview)
+- [Testowanie aplikacji](/vsts/test/overview?view=vsts)
 - [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)
 - [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
 

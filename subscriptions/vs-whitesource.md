@@ -9,37 +9,38 @@ description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt uwzględ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0c2eed9efdcca076c20a240d60b4d38cdda23019
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199404"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280316"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt w ramach subskrypcji programu Visual Studio
 
-Znajdź i napraw luk w zabezpieczeniach typu open source i generowania kompleksowe raportów spisu i licencji wszystkich składników typu open source w kompilacji.  Wybierz program Visual Studio subskrypcje obejmują sześciu miesięcy bezpłatny dostęp. 
+Znajdź i napraw luk w zabezpieczeniach typu open source i generowania kompleksowe raportów spisu i licencji wszystkich składników typu open source w kompilacji. Niektóre subskrypcje Visual Studio obejmują sześciu miesięcy bezpłatny dostęp.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
 1.  Aby aktywować korzyści WhiteSource Bolt, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
-2.  Znajdź Kafelek WhiteSource Bolt w sekcji narzędzia, a następnie kliknij polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.    
+2.  Znajdź Kafelek WhiteSource Bolt w sekcji narzędzia, a następnie kliknij polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.
 
     ![Korzyści WhiteSource kafelka](_img\vs-whitesource\vs-whitesource-tile.png)
 
-2.  Otrzymasz powiadomienie wyświetlanie kod aktywacji.  **Skopiuj kod do Schowka**, następnie kliknij przycisk **Aktywuj**. 
+2.  Otrzymasz powiadomienie wyświetlanie kod aktywacji.  **Skopiuj kod do Schowka**, następnie kliknij przycisk **Aktywuj**.
 
     ![Kod WhiteSource korzyści ](_img\vs-whitesource\vs-whitesource-code.png)
 
-3.  Na stronie sieci web WhiteSource kliknij **Aktywuj** przycisk lub przewiń w dół do **aktywować konto** części strony.  
+3.  Na stronie sieci web WhiteSource kliknij **Aktywuj** przycisk lub przewiń w dół do **aktywować konto** części strony.
 
     ![Aktywowanie korzyści WhiteSource](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
 4.  W **aktywować konto** części strony, będzie obejmuje cztery kroki:
-    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z witryny marketplace programu Microsoft Visual Studio. Jeśli nie masz uprawnienia do instalowania rozszerzeń, odwiedź stronę [tej strony](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#request).
 
-    Kliknij zielony **zainstalować** przycisku, jeśli używasz programu VSTS, lub **Pobierz** przycisk dla serwera Team Foundation Server.  W tym przykładzie używamy VSTS. 
+    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z witryny marketplace programu Microsoft Visual Studio. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [Zainstaluj bezpłatne rozszerzeń dla programu VSTS](/vsts/marketplace/install-vsts-extension?view=vsts).
+
+    Kliknij zielony **zainstalować** przycisku, jeśli używasz programu VSTS, lub **Pobierz** przycisk dla serwera Team Foundation Server.  W tym przykładzie używamy VSTS.
 
     ![Rozszerzenie instalacji WhiteSource korzyści](_img\vs-whitesource\vs-whitesource-download-install.png)
 
@@ -47,7 +48,7 @@ Znajdź i napraw luk w zabezpieczeniach typu open source i generowania komplekso
 
     ![Korzyści WhiteSource Potwierdź konto](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - Otrzymasz potwierdzenie, że rozszerzenie jest zainstalowana i gotowa do użycia.  Kliknij przycisk **wprowadzenie** aby powrócić do strony WhiteSource Bolt i kontynuować.  
+    - Otrzymasz potwierdzenie, że rozszerzenie jest zainstalowana i gotowa do użycia.  Kliknij przycisk **wprowadzenie** aby powrócić do strony WhiteSource Bolt i kontynuować.
 
     ![Zakończenie instalacji WhiteSource korzyści](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
@@ -55,13 +56,13 @@ Znajdź i napraw luk w zabezpieczeniach typu open source i generowania komplekso
 
     ![Korzyści WhiteSource dodanie rozszerzenia](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
-6. Wklej kod aktywacji na kafelku korzyści WhiteSource Bolt, a następnie kliknij przycisk **Aktywuj**. Każdy z kolejnych kodów aktywacji można aktywować tylko jeden projekt. 
+6. Wklej kod aktywacji na kafelku korzyści WhiteSource Bolt, a następnie kliknij przycisk **Aktywuj**. Każdy z kolejnych kodów aktywacji można aktywować tylko jeden projekt.
 
     ![Korzyści WhiteSource aktywować kodu](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
-7.  Proces aktywacji jest teraz gotowy i będzie mieć 180 dni pozostałych w subskrypcji. 
+7.  Proces aktywacji jest teraz gotowy i będzie mieć 180 dni pozostałych w subskrypcji.
 
-8.  Należy dodać rozszerzenie WhiteSource Bolt jako jeden z kroków kompilacji.  Wideo jest dostępna w [WhiteSource Bolt strony](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) do przedstawia sposób.  
+8.  Należy dodać rozszerzenie WhiteSource Bolt jako jeden z kroków kompilacji.  Wideo jest dostępna w [WhiteSource Bolt strony](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) do przedstawia sposób.
 
 9. Po uruchomieniu kompilacji, następujące kompleksowe raporty i pulpity nawigacyjne będą automatycznie generowane:
     - Pulpit nawigacyjny luk w zabezpieczeniach
@@ -71,6 +72,7 @@ Znajdź i napraw luk w zabezpieczeniach typu open source i generowania komplekso
     - Raport o spisie
 
 ## <a name="eligibility"></a>Kwalifikujących się usług
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | 6 miesięcy       |  Tak          |
@@ -80,13 +82,12 @@ Znajdź i napraw luk w zabezpieczeniach typu open source i generowania komplekso
 | Visual Studio Dev Essentials | NA  | Niedostępne |NA |
 | Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
 
-<sup>1</sup>*obejmuje: Microsoft Partner Network (Enterprise).    Wyklucza: Innych nie odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), MCT oprogramowania i usług, Microsoft Partner sieci () Professional).*
+<sup>1</sup>*obejmuje: Microsoft Partner Network (Enterprise).  Wyklucza: Innych nie odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), MCT oprogramowania i usług, Microsoft Partner sieci () Professional).*
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Potrzebujesz pomocy dotyczącej WhiteSource Bolt?  Porozmawiaj z przedstawicielem WhiteSource Bolt na żywo https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 
 
+-  Potrzebujesz pomocy dotyczącej WhiteSource Bolt?  Porozmawiaj z przedstawicielem WhiteSource Bolt na żywo https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

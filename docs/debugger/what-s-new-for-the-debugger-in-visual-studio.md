@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f25edb63e3418bab44d71bc8314d3aa83e7a84
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dfdddaab181455ede946a47eac96fdfee022d200
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477157"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282486"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w debugerze programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -58,7 +58,7 @@ Debuger zawiera następujące nowe funkcje:
 
 - Możesz teraz używać do wiersza kodu podczas wstrzymaniu w debugerze, wybierając **uruchomienia wykonania dotąd** ikona zieloną strzałkę (pojawi się ikona podczas kursora myszy nad wiersz kodu). Eliminuje to potrzebę ustawienia tymczasowych punktów przerwania.
 
-    ![Debuger do uruchomienia kliknij](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Debuger do uruchomienia kliknij](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
 - Można ustawić warunki na wyjątki w **ustawienia wyjątków** okno dialogowe (można to zrobić za pomocą **Edytuj warunek** ikonę w oknie dialogowym Ustawienia wyjątków lub za pomocą menu kliknij prawym przyciskiem myszy na wyjątek.) Obecnie obsługiwane warunki obejmować nazwy modułu do dołączania lub wykluczania dla wyjątku.
 
@@ -66,10 +66,11 @@ Debuger zawiera następujące nowe funkcje:
 
 - Dołącz do okno dialogowe zawiera nową funkcję wyszukiwania, które mogą ułatwić szybkie identyfikowanie proces, który należy dołączyć do procesu.
 
-    ![Wyszukaj w dołączyć do procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch") 
+    ![Wyszukaj w dołączyć do procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Aby uzyskać więcej informacji na temat tych nowych funkcji, zobacz [informacje o wersji dla [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
-  
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+Aby uzyskać więcej informacji na temat tych nowych funkcji, zobacz [informacje o wersji dla [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+
+## <a name="see-also"></a>Zobacz także
+
+- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750171"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281339"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -238,7 +238,7 @@ Aby upewnić się, że kod jest zgodny ze projektu, zespołów, należy skonfigu
 
 Zobacz:
 
-- [Testowanie aplikacji](https://www.visualstudio.com/docs/test/overview)
+- [Testowanie aplikacji](/vsts/test/overview?view=vsts)
 
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 

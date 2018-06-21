@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453832"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280497"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Konfigurowanie i instalowanie oprogramowania Visual Studio dla komputerów Mac
 
@@ -27,7 +27,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 
 ## <a name="install"></a>Zainstaluj
 
-1. Pobierz program Visual Studio for Mac z [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Pobierz program Visual Studio for Mac z [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
 2. Pobrany pakiet Instalatora kliknij **VisualStudioInstaller.dmg** plik, aby zainstalować Instalatora i uruchomić go przez dwukrotne kliknięcie logo, jak pokazano na poniższej ilustracji:
 
@@ -84,7 +84,7 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
   ![Otwórz program Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Jeśli została wybrana opcja Instaluj platformy lub narzędzia podczas oryginalnej instalacji (przez unselecting go w kroku #6), należy uruchomić [Instalator](https://www.visualstudio.com/vs/) ponownie, jeśli chcesz później dodać składniki.
+Jeśli została wybrana opcja Instaluj platformy lub narzędzia podczas oryginalnej instalacji (przez unselecting go w kroku #6), należy uruchomić [Instalator](https://visualstudio.microsoft.com/vs/) ponownie, jeśli chcesz później dodać składniki.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy

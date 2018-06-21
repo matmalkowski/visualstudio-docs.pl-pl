@@ -1,5 +1,5 @@
 ---
-title: Określ ustawienia domyślne dla wdrożeń w przedsiębiorstwie programu Visual Studio
+title: Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 description: Więcej informacji na temat zasad domeny i inne operacje konfiguracji do wdrożeń w przedsiębiorstwie programu Visual Studio.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
@@ -17,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f229ea889a478281ee0db123da00cd67c82ec13a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9616c8fcc8d9c6cea6c91891f5765cd688c61ae0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264220"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280235"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Określ ustawienia domyślne dla wdrożeń w przedsiębiorstwie programu Visual Studio
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
 Można ustawić zasady rejestru, które mają wpływ na wdrożenie programu Visual Studio. Te zasady są globalne dla nowego Instalatora i wpływają na:
 
@@ -61,7 +61,7 @@ Można ustawić następujące wartości rejestru:
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

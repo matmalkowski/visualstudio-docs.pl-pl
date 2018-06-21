@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 17e91ac47b4e8a6a2d94caa523309bc0cfe9dd7e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765846"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281368"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i platformy React w programie Visual Studio
 Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i korzystać z funkcji IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React.
@@ -35,7 +35,7 @@ Z tego samouczka, dowiesz się, jak:
 
 * Musi mieć Visual Studio 2017 r zainstalowany i jego obciążenie programowanie Node.js.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 

@@ -9,16 +9,16 @@ description: Dowiedz się, jak skorzystać z asysty Azure Advisory rozmowę zawa
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f33c4fdfd026fc7517fb32b16fc90ea4bedeec7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196791"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280806"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory rozmowy
 
-Uzyskaj pomoc w czasie rzeczywistym począwszy od platformy Azure! Zawiera poradnik dla usług Azure PaaS.  Korzyści Azure Advisory Rozmowa jest dostępna w Visual Studio Enterprise standardowe i roczne subskrypcje w chmurze.  
+Uzyskaj pomoc w czasie rzeczywistym począwszy od platformy Azure! Zawiera poradnik dla usług Azure PaaS.  Korzyści Azure Advisory Rozmowa jest dostępna w Visual Studio Enterprise standardowe i roczne subskrypcje w chmurze.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
@@ -32,7 +32,7 @@ Przy użyciu Azure Advisory Rozmowa jest bardzo proste.
 
     ![Zastrzeżenie Azure Advisory rozmowy](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
-4. To wszystko jest do niego.  Zostanie otwarte okno rozmowy i zostanie wyświetlony stan informowanie o tym, gdzie są w kolejce.  Okno rozmowy będą odbierane przez dalej eksperta dostępne. 
+4. To wszystko jest do niego.  Zostanie otwarte okno rozmowy i zostanie wyświetlony stan informowanie o tym, gdzie są w kolejce.  Okno rozmowy będą odbierane przez dalej eksperta dostępne.
 
     ![Azure Advisory rozmowy](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
@@ -45,9 +45,9 @@ Przy użyciu Azure Advisory Rozmowa jest bardzo proste.
 | Visual Studio Test Professional (standardowy)                         | Wszystkie                                              | Niedostępne                                             |  Nie          |
 | Platformy MSDN (standardowy)                                          | Wszystkie                                              |Niedostępne                                              |  Nie          |
 | Visual Studio Dev Essentials                                          | Brak                                              |Niedostępne                                              |  Nie          |
-<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP) dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP), BizSpark, Wyobraź sobie, MCT* 
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP) dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP), BizSpark, Wyobraź sobie, MCT*
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -55,5 +55,5 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://
 -  A: rozmów Advisory Azure to usługa rozmów w czasie rzeczywistym z pytania dotyczące usługi Azure. [Klasyfikator Azure](/azure/advisor/advisor-overview) jest konsultanta spersonalizowane chmury, ułatwiająca należy stosować najlepsze rozwiązania w celu zoptymalizowania wdrożeń platformy Azure. Analizuje konfigurację zasobu i danych telemetrycznych użycia, a następnie zaleca rozwiązania, które ułatwiają zwiększenie opłacalności, wydajność, wysoką dostępność i zabezpieczeń zasobów platformy Azure.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

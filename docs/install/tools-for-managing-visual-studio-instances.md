@@ -1,5 +1,5 @@
 ---
-title: Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
+title: Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 description: Więcej informacji na temat narzędzia, których można użyć do wykrywania i zarządzanie instalacji programu Visual Studio na komputerach klienckich.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1701ff4d17815bc70444fe360ebf1acf61ea2af4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7052908751058b08be8afc3f1c40123ca8ddba48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31625103"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280578"
 ---
-# <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
+# <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
 Istnieje kilka narzędzi, których można użyć do wykrywania instalacji programu Visual Studio na komputerach klienckich i za zarządzanie instalacje programu.
 
@@ -71,7 +71,7 @@ Pojawi się monit o podanie nazwy hive, która staje się nazwa sieci izolowanej
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

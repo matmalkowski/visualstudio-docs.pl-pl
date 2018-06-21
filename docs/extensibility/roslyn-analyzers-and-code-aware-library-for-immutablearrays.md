@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3006f14e98723068ea28f222c00fdff48af46d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148522"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281381"
 ---
-# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i obsługujących kod biblioteki ImmutableArrays
+# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i biblioteka obsługująca kod dla tablic ImmutableArray
 
 [Platformy kompilatora .NET](https://github.com/dotnet/roslyn) ("Roslyn") pomaga w utworzeniu obsługujący kod biblioteki.  Obsługujący kod biblioteki zawiera funkcje, których można używać i narzędzi (Roslyn analizatorów), aby ułatwić korzystanie z biblioteki w najlepszy sposób, lub aby uniknąć błędów.  W tym temacie przedstawiono sposób tworzenia analizator Roslyn rzeczywistych, aby wykryć typowych błędów, korzystając z [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) pakietu NuGet.  W przykładzie pokazano także jak zapewnić poprawkę kod problemu kodu znaleziono przez analizatora.  Użytkownicy widzą poprawki kodu w Visual Studio żarówkę interfejsu użytkownika i można automatycznie zastosować poprawkę dla kodu.
 
@@ -26,7 +26,7 @@ ms.locfileid: "31148522"
 
 Potrzebne do tworzenia w tym przykładzie:
 
-* Visual Studio 2015 (nie Express Edition) lub nowszy.  Można korzystać z BEZPŁATNEJ [programu Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
+* Visual Studio 2015 (nie Express Edition) lub nowszy.  Można korzystać z BEZPŁATNEJ [programu Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Można także podczas instalowania programu Visual Studio, sprawdzić rozszerzalności programu Visual Studio Tools w obszarze narzędziom do instalowania zestawu SDK, w tym samym czasie.  Jeśli zainstalowano program Visual Studio można także zainstalować zestaw SDK, przechodząc do menu głównego **pliku &#124; nowy &#124;projektu...** , wybierając C# w lewym okienku nawigacji, a następnie wybierając rozszerzalności.  Po wybraniu "**Zainstaluj narzędzia rozszerzalności programu Visual Studio**" szablonu projektu nawigacją, monituje użytkownika o pobranie i zainstalowanie zestawu SDK.
 * [Platforma kompilatora .NET ("Roslyn") zestawu SDK](http://aka.ms/roslynsdktemplates).  Można także zainstalować zestaw SDK, przechodząc do menu głównego **pliku &#124; nowy &#124; projektu...** , wybierając pozycję **C#** w lewym okienku nawigacji, a następnie wybierając **rozszerzalności**.  Po wybraniu "**Pobierz zestaw SDK platformy .NET kompilatora**" szablonu projektu nawigacją, monituje użytkownika o pobranie i zainstalowanie zestawu SDK.  Ten zestaw SDK zawiera [wizualizatora składni Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Pomaga to bardzo przydatne narzędzie możesz dowiedzieć się, jakie typy modelu kodu należy szukać w Twojej analizatora.  Wywołania infrastruktury analizatora do kodu dla typów modelu określonego kodu, dzięki czemu kod tylko wykonuje się, gdy jest to konieczne i mogą skupić się tylko na analizowanie odpowiedni kod.
 
@@ -108,7 +108,7 @@ internal const string Category = "Naming";
 
 Zmień `"Naming"` do `"API Guidance"`.
 
-Następnie Znajdowanie i otwieranie `Resources.resx` pliku w projekcie za pomocą **Eksploratora rozwiązań**.  Możesz umieścić w opisie z analizatora, tytuł itd.  Można zmienić wartości dla wszystkich tych do `"Don't use ImmutableArray<T> constructor"` teraz.  Ciąg formatowania argumenty w ciągu ({0}, {1}, itp.), można umieścić i nowszym, jeśli wywołujesz `Diagnostic.Create()`, możesz podać `params` tablicy argumenty do przekazania.
+Następnie Znajdowanie i otwieranie `Resources.resx` pliku w projekcie za pomocą **Eksploratora rozwiązań**.  Możesz umieścić w opisie z analizatora, tytuł itd.  Można zmienić wartości dla wszystkich tych do `"Don't use ImmutableArray<T> constructor"` teraz.  Możesz też zaznaczyć ciąg formatowania argumenty w ciągu ({0}, {1}, itd.) i później, podczas wywoływania `Diagnostic.Create()`, możesz podać `params` tablicy argumenty do przekazania.
 
 ## <a name="analyzing-an-object-creation-expression"></a>Analizowanie wyrażenie Tworzenie obiektu
 

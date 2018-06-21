@@ -11,18 +11,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 29768717144efef9c843abb5e0e3e6e81817895d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d12d17f1cacd6c77fb1f27420a4540fe33e6bffe
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255726"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281056"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Szybki Start: Za pomocą edytora kodu
 
 W tym wprowadzenie 10-minutowych do edytora dodamy kod do pliku, aby wyglądały na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i kod ułatwia zrozumienie.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 Tego przewodnika Szybki Start założono, że czytelnik zna już język programowania. Jeśli nie, zalecamy najpierw Szukaj w jednej z programowania poradniki Szybki Start, takich jak tworzenie aplikacji sieci web z [Python](../ide/quickstart-python.md) lub [C#](../ide/tutorial-csharp-aspnet-core.md), lub Utwórz aplikację konsoli z [Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

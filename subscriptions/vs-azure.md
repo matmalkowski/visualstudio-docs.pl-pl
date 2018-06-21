@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyści Azure uwzględnione w ramach
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336087"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280660"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Użyj Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -94,7 +94,7 @@ W przypadku zakupu subskrypcji bezpośrednio, wykonaj jedną z następujących c
 1.  Kup rocznego programu Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) lub [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) subskrypcji za pomocą programu Visual Studio Marketplace w chmurze.
 2.  Korzystanie z 50% lub wyższej rabat dzięki odnawianie Twojej bieżącej subskrypcji za pośrednictwem [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
-Porównaj wszystko [subskrypcji i ich zalety](https://www.visualstudio.com/vs/pricing/).
+Porównaj wszystko [subskrypcji i ich zalety](https://visualstudio.microsoft.com/vs/pricing/).
 
 Jeśli masz inną aktywnych subskrypcji programu Visual Studio na **tego samego** subskrypcji poziomu przy użyciu konta Microsoft, można je połączyć tego Azure korzystania przez dodanie [alternatywne konto](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) w programie Visual Studio portal subskrypcji. Jeśli to nie pomoże, możesz również spróbować [przesyłania Azure korzyści](/azure/billing/billing-subscription-transfer/) do aktywnej subskrypcji programu Visual Studio.
 
@@ -111,5 +111,5 @@ Jeśli uważasz, ta wiadomość e-mail zostały odebrane z błędami, skontaktuj
 -  Potrzebujesz pomocy przy użyciu platformy Azure?  Zobacz następujące zasoby:
     - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Dokumentację platformy Azure](/azure/)
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/).
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

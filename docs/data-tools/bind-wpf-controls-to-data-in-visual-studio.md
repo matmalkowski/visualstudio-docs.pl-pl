@@ -18,20 +18,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: dcd98094c1346ffd43f607a1c5885fddb36b4138
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 87991e778a045aa86bca91ff737d528a55b0079f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234085"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281238"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązanie formantów WPF z danymi w Visual Studio
+
 Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrolki. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] w programie Visual Studio. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzia i klasy, które umożliwia tworzenie powiązanych z danymi [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] aplikacji.
 
- Aby uzyskać ogólne informacje o sposobie tworzenia formantów powiązanych z danymi w Visual Studio, zobacz [powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] dane powiązanie, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).
+Aby uzyskać ogólne informacje o sposobie tworzenia formantów powiązanych z danymi w Visual Studio, zobacz [powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Aby uzyskać więcej informacji na temat [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] dane powiązanie, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Zadania związane z powiązywanie kontrolek WPF z danymi
- W poniższej tabeli wymieniono zadania, które można wykonywać przez przeciąganie elementów z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
+
+W poniższej tabeli wymieniono zadania, które można wykonywać przez przeciąganie elementów z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
 |Zadanie|Więcej informacji|
 |----------|----------------------|
@@ -41,12 +43,14 @@ Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do 
 |Powiąż formant z obrazem w bazie danych.|[Powiązywanie kontrolek z obrazami z bazy danych](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>Nieprawidłowa miejsc docelowych
- Możesz przeciągnąć elementów w **źródeł danych** okna tylko prawidłowe miejsc docelowych w [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Istnieją dwa główne rodzaje z prawidłowych miejsc upuszczania: kontenery i formanty. Kontener jest element interfejsu użytkownika, który zwykle zawiera formanty. Na przykład siatka jest kontenerem i podobnie okno.
+
+Możesz przeciągnąć elementów w **źródeł danych** okna tylko prawidłowe miejsc docelowych w [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Istnieją dwa główne rodzaje z prawidłowych miejsc upuszczania: kontenery i formanty. Kontener jest element interfejsu użytkownika, który zwykle zawiera formanty. Na przykład siatka jest kontenerem i podobnie okno.
 
 ## <a name="generated-xaml-and-code"></a>Wygenerowany XAML i kodem
- Przeciągnięcie elementu z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] definiuje nowy formant powiązany z danymi (lub wiąże istniejącego formantu źródła danych). Dla niektórych źródeł danych programu Visual Studio generuje kod w pliku związanym z kodem, który wypełnia źródła danych przy użyciu danych.
 
- W poniższej tabeli wymieniono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] i kod generowany dla każdego typu źródła danych w Visual Studio **źródeł danych** okna.
+Przeciągnięcie elementu z **źródeł danych** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] definiuje nowy formant powiązany z danymi (lub wiąże istniejącego formantu źródła danych). Dla niektórych źródeł danych programu Visual Studio generuje kod w pliku związanym z kodem, który wypełnia źródła danych przy użyciu danych.
+
+W poniższej tabeli wymieniono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] i kod generowany dla każdego typu źródła danych w Visual Studio **źródeł danych** okna.
 
 |Źródło danych|Generowanie pliku XAML, która wiąże formant ze źródłem danych|Generowanie kodu, który wypełnia źródło danych danymi|
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|
@@ -56,7 +60,8 @@ Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do 
 |Obiekt|Tak|Nie|
 
 ### <a name="datasets"></a>Zestawy danych
- Przeciągnięcie tabeli lub kolumny z **źródeł danych** okna projektanta programu Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
+
+Przeciągnięcie tabeli lub kolumny z **źródeł danych** okna projektanta programu Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
 
 -   Dodaje zestaw danych i nowy <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera przeciągnąć element. <xref:System.Windows.Data.CollectionViewSource> Jest obiekt, który może służyć do nawigacji i wyświetlania danych w zestawie danych.
 
@@ -67,7 +72,8 @@ Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:
 -   Tworzy <xref:System.Windows.FrameworkElement.Loaded> programu obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element zawierający formant. Program obsługi zdarzeń wypełnia tabelę z danymi, pobiera <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwsze dane elementu bieżącego elementu. Jeśli <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń już istnieje, Visual Studio dodaje ten kod do istniejącego programu obsługi zdarzeń.
 
 ### <a name="entity-data-models"></a>Modeli danych jednostki
- Przeciągnięcie jednostki lub właściwości jednostki z **źródeł danych** generuje okna projektanta programu Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
+
+Przeciągnięcie jednostki lub właściwości jednostki z **źródeł danych** generuje okna projektanta programu Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
 
 -   Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera przeciągnąć element. <xref:System.Windows.Data.CollectionViewSource> Jest obiekt, który może służyć do nawigowania i wyświetlić dane w jednostce.
 
@@ -75,26 +81,28 @@ Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:
 
 Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:
 
--   Dodaje nową metodę, która zwraca kwerendy dla elementu, który został przeciągnięty do projektanta (lub elementu zawierającego właściwość, która została przeciągnięta do projektanta). Nowa metoda ma nazwę Get*EntityName*kwerendy, gdzie *EntityName* to nazwa jednostki.
+-   Dodaje nową metodę, która zwraca kwerendy dla elementu, który został przeciągnięty do projektanta (lub elementu zawierającego właściwość, która została przeciągnięta do projektanta). Nowa metoda ma nazwę `Get<EntityName>Query`, gdzie `\<EntityName>` to nazwa jednostki.
 
--   Tworzy <xref:System.Windows.FrameworkElement.Loaded> programu obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element zawierający formant. Pobierz wywołuje program obsługi zdarzeń*EntityName*metody, aby wypełnić jednostka danych, pobiera zapytania <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwsze dane elementu bieżącego elementu. Jeśli <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń już istnieje, Visual Studio dodaje ten kod do istniejącego programu obsługi zdarzeń.
+-   Tworzy <xref:System.Windows.FrameworkElement.Loaded> programu obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element zawierający formant. Wywołań obsługi zdarzeń `Get<EntityName>Query` metoda umożliwia wypełnienie jednostka danych, pobiera <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwsze dane elementu bieżącego elementu. Jeśli <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń już istnieje, Visual Studio dodaje ten kod do istniejącego programu obsługi zdarzeń.
 
 ### <a name="services"></a>Usługi
- Przeciągnięcie obiektu usługi lub właściwość z **źródeł danych** generuje okna projektanta programu Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzy kontrolkę powiązanych z danymi (lub wiąże formant do obiektu lub właściwości). Jednak program Visual Studio nie generuje kod, który wypełnia obiekt usługi Serwer proxy przy użyciu danych. Musisz napisać ten kod samodzielnie. Na przykład, który pokazuje, jak to zrobić, zobacz [powiązania WPF kontrolki do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
- Visual Studio generuje plik XAML, który wykonuje następujące czynności:
+Przeciągnięcie obiektu usługi lub właściwość z **źródeł danych** generuje okna projektanta programu Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzy kontrolkę powiązanych z danymi (lub wiąże formant do obiektu lub właściwości). Jednak program Visual Studio nie generuje kod, który wypełnia obiekt usługi Serwer proxy przy użyciu danych. Musisz napisać ten kod samodzielnie. Na przykład, który pokazuje, jak to zrobić, zobacz [powiązania WPF kontrolki do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+
+Visual Studio generuje plik XAML, który wykonuje następujące czynności:
 
 -   Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> zasobów kontenera, w którym możesz przeciągnąć element. <xref:System.Windows.Data.CollectionViewSource> Jest obiekt, który może służyć do nawigowania i wyświetlić dane w obiekcie, który jest zwracany przez usługę.
 
 -   Tworzy wiązania danych dla formantu. Jeśli przeciągnij element do istniejącego formantu w Projektancie [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wiąże formantu do elementu. Przeciągnięcie elementu do kontenera, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzy kontrolkę, która została wybrana dla przeciąganego elementu i do elementu tworzy ona powiązanie formantu. Formant nie zostanie utworzony w nowej <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Obiekty
- Podczas przeciągania obiektu lub właściwości z **źródeł danych** okna projektanta programu Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzy kontrolkę powiązanych z danymi (lub wiąże formant do obiektu lub właściwości). Jednak program Visual Studio nie generuje kod, aby wypełnić obiektu danych. Musisz napisać ten kod samodzielnie.
+
+Podczas przeciągania obiektu lub właściwości z **źródeł danych** okna projektanta programu Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] tworzy kontrolkę powiązanych z danymi (lub wiąże formant do obiektu lub właściwości). Jednak program Visual Studio nie generuje kod, aby wypełnić obiektu danych. Musisz napisać ten kod samodzielnie.
 
 > [!NOTE]
 >  Niestandardowe klasy musi być publiczny i domyślnie ma konstruktora bez parametrów. One can'tbe zagnieżdżone klasy, które mają "kropkę" w ich składni. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowych dla WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
- Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
+Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:
 
 -   Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> zasobów kontenera, w którym możesz przeciągnąć element. <xref:System.Windows.Data.CollectionViewSource> To obiekt, który może służyć do nawigowania i wyświetlić dane w obiekcie.
 

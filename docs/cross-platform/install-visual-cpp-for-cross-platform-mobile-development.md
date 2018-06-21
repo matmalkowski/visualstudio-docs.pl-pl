@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454704"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281107"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalowanie i platform Mobile development przy użyciu języka C++
 
@@ -25,7 +25,7 @@ C++ w programie Visual Studio umożliwia tworzenie aplikacji pulpitu systemu Win
 
 ## <a name="requirements"></a>Wymagania
 
-- Wymagania instalacji można znaleźć [wymagania systemowe rodziny produktów Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+- Wymagania instalacji można znaleźć [wymagania systemowe rodziny produktów Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Jeśli korzystasz z systemu Windows 7 lub Windows Server 2008 R2, można opracować kodu dla aplikacji pulpitu systemu Windows, Android Native działanie aplikacji i bibliotek i aplikacje i bibliotek kodu dla systemu iOS, ale aplikacje nie Windows Phone lub platformy uniwersalnej systemu Windows.

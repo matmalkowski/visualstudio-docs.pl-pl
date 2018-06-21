@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 683d848aaab7b17fbb6756c9a31d10e02aa97985
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746030"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281631"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Opracuj kodu w programie Visual Studio bez projektów i rozwiązań
 
@@ -89,7 +89,7 @@ Jeśli używany przez codebase niestandardowych narzędzi kompilacji, a następn
 
 Jeżeli baza kodu zawiera kod języka Python lub JavaScript, nie trzeba skonfigurować dowolne *JSON* pliki, ale trzeba instalować odpowiednie obciążenie. Należy także skonfigurować skrypt uruchamiania:
 
-1. Zainstaluj [programowanie Node.js](https://www.visualstudio.com/vs/node-js/) lub [programowania Python](https://www.visualstudio.com/vs/python/) obciążenie, wybierając **narzędzia** > **Pobierz narzędzia i funkcje...** , lub zamknięcia programu Visual Studio i uruchamiając Instalator programu Visual Studio.
+1. Zainstaluj [programowanie Node.js](https://visualstudio.microsoft.com/vs/node-js/) lub [programowania Python](https://visualstudio.microsoft.com/vs/python/) obciążenie, wybierając **narzędzia** > **Pobierz narzędzia i funkcje...** , lub zamknięcia programu Visual Studio i uruchamiając Instalator programu Visual Studio.
 
    ![Node.js i Python obciążeń programowanie](media/python_nodejs_workloads.png)
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d6b30f3b264e5bdffc5f9c0f36ba17e67e8a5d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31621171"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280445"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Zainstaluj certyfikaty wymagane do instalacji w trybie offline program Visual Studio
 
@@ -109,13 +109,13 @@ Jednym ze sposobów sprawdzenia instalowania systemu jest wykonanie następując
 
 Jeśli nazwy certyfikatów nie były w **wystawiony** kolumn, musi być zainstalowany.  Jeśli certyfikat pośredniego była tylko w **bieżącego użytkownika** certyfikatu pośredniego przechowywania, wówczas jest dostępne tylko dla użytkownika, który jest zalogowany. Może być konieczne zainstalowanie go dla innych użytkowników.
 
-## <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
+## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
 Po zainstalowaniu certyfikatów, wdrażania programu Visual Studio można kontynuować, korzystając z instrukcji z [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) sekcji "Tworzenie instalacji sieciowej programu Visual Studio" strona.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

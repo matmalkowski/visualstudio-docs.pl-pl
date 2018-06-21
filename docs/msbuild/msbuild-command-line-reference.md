@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 536a19e26fa935f26201692d539c6ecd51270d32
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c99a72c4679c334d202e0a30c7c1b846b1aa30af
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576017"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303351"
 ---
 # <a name="msbuild-command-line-reference"></a>Informacje w wierszu polecenia programu MSBuild
 Korzystając z programu MSBuild.exe tworzenia pliku projektu lub rozwiązania, mogą obejmować kilka przełączników, aby określić różne aspekty procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```cmd  
 MSBuild.exe [Switches] [ProjectFile]  
 ```  
   
@@ -77,14 +77,14 @@ MSBuild.exe [Switches] [ProjectFile]
 ## <a name="example"></a>Przykład  
  Poniższy przykład tworzy `rebuild` docelowy `MyProject.proj` projektu.  
   
-```  
+```cmd  
 MSBuild.exe MyProject.proj /t:rebuild  
 ```  
   
 ## <a name="example"></a>Przykład  
  MSBuild.exe służy do wykonywania bardziej złożonych kompilacji. Na przykład służy ona do kompilacja określonych obiektów docelowych określonych projektów w rozwiązaniu. Poniższy przykład odtwarza projektu `NotInSolutionFolder` i czyści projektu `InSolutionFolder`, która znajduje się w `NewFolder` folder rozwiązania.  
   
-```  
+```cmd  
 msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0a8eab90f0817051c57530cead9bd30dffa35584
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765671"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281170"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy
 
@@ -49,7 +49,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i se
 | download.visualstudio.com | Ustawienia lokalizacji pobierania pakietów |
 | dl.xamarin.com | Ustawienia lokalizacji pobierania pakietów |
 | visualstudiogallery.msdn.microsoft.com | Lokalizacja pobierania rozszerzenia programu Visual Studio |
-| www.visualstudio.com | Lokalizacja dokumentacji |
+| VisualStudio.microsoft.com | Lokalizacja dokumentacji |
 | docs.microsoft.com | Lokalizacja dokumentacji |
 | msdn.microsoft.com | Lokalizacja dokumentacji |
 | www.microsoft.com | Lokalizacja dokumentacji |

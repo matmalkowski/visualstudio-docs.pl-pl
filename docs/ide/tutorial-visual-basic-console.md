@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764936"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280341"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
 
 W tym samouczku Visual Basic (VB) można będzie użyć programu Visual Studio do tworzenia i uruchamiania kilka aplikacji w innej konsoli i eksplorować niektóre funkcje [programu Visual Studio zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -58,7 +58,7 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
 
 2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
-3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *HelloWorld*.  
+3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *HelloWorld*.
 
    ![Konsoli szablonu projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 
 1. Otwórz program Visual Studio 2017 r, a następnie na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
-2. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *CalculateThis*.  
+2. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *CalculateThis*.
 
 3. Wprowadź następujący kod między `Module Program` wiersza i `End Module` wiersza:
 
@@ -136,7 +136,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 
    ![W oknie kod przedstawiający Calculate ten kod](../ide/media/vb-codewindow-calculate-this.png)
 
-4. Kliknij przycisk **CalculateThis** do uruchomienia programu. Okna konsoli powinien wyglądać podobnie do następującego zrzutu ekranu:       
+4. Kliknij przycisk **CalculateThis** do uruchomienia programu. Okna konsoli powinien wyglądać podobnie do następującego zrzutu ekranu:
 
     ![Okno konsoli przedstawiający CaluculateThis aplikacji, która zawiera monity w akcje, które należy podjąć.](../ide/media/vb-console-calculate-this.png)
 

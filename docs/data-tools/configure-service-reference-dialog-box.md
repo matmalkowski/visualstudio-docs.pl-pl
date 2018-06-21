@@ -16,19 +16,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: abdb65b32f5f660257ecdc4d94fd9fcc387686f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925641"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281069"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
 
 **Odwołania do konfigurowania usługi** okno dialogowe umożliwia konfigurowanie zachowania usługi Windows Communication Foundation (WCF).
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe, kliknij prawym przyciskiem myszy usługę odwołania w **Eksploratora rozwiązań** i wybierz polecenie **skonfigurować odwołania do usługi**. Można również otworzyć okno dialogowe, klikając **zaawansowane** przycisk **okno dialogowe Dodaj odwołanie do usługi**.
 
@@ -46,11 +46,11 @@ Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe,
 
 - Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć typ udostępniania dla podzbioru zestawów występujących w odwołaniach, wybierz **ponownie użyj typów w przywoływanych zestawach** zaznacz pole wyboru **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz jedną z dostępnych odwołania w **listy zestawy przywoływane**.
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
 
  **Adres**
 
- Używane do aktualizowania adres sieci Web, w którym wygląda odwołania do usługi dla usługi. Na przykład podczas tworzenia usługi może być hostowana na serwerze projektowym następnie przenieść później na serwerze produkcyjnym wymagających zmiany adresu.
+ Aktualizuje adres sieci Web, w którym wygląda odwołania do usługi dla usługi. Na przykład podczas tworzenia, usługi mogą być hostowane na serwerze projektowym i później przeniesiony na serwerze produkcyjnym wymagających zmiany adresu.
 
 > [!NOTE]
 > Address element jest niedostępne podczas **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
@@ -64,15 +64,15 @@ Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe,
 
  **Generowanie operacji asynchronicznych**
 
- Określa, czy będzie można wywołać metody usługi WCF synchronicznie (ustawienie domyślne) lub asynchronicznie.
+ Określa, czy metody usług WCF jest wywoływana synchronicznie (ustawienie domyślne) lub asynchronicznie.
 
  **Generowanie operacji opartego na zadaniach**
 
- Podczas pisania kodu asynchroniczne, ta opcja umożliwia korzystanie z zadań równoległych biblioteki (TPL) wprowadzonej z platformą .net 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+ Podczas pisania kodu asynchroniczne, ta opcja pozwala korzystać z zadań równoległych biblioteki (TPL) wprowadzonej z .NET 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
  **Zawsze Generuj kontraktów komunikatu**
 
- Określa, czy typy kontraktu komunikatu, zostanie wygenerowany dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu, zobacz [za pomocą kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).
+ Określa, czy typy kontraktu komunikatu są generowane dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu, zobacz [używanie kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).
 
  **Typ kolekcji**
 
@@ -84,31 +84,31 @@ Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe,
 
  **Ponownie użyj typów w przywoływanych zestawach**
 
- Określa, czy klient WCF podejmie próbę ponownego użycia już istnieje w przywoływanych zestawach zamiast generowania nowych typów, gdy usługa jest dodane lub zaktualizowane. Ta opcja jest domyślnie zaznaczona.
+ Określa, czy klient WCF próbuje ponownie wykorzystać istniejące już w przywoływanych zestawach zamiast generowania nowych typów, gdy usługa jest dodane lub zaktualizowane. Ta opcja jest domyślnie zaznaczona.
 
  **Ponownie użyj typów w wszystkich przywoływanych zestawach**
 
- Po wybraniu wszystkich typów w **listy zestawy przywoływane** zostanie ono użyte ponownie, jeśli to możliwe. Domyślnie ta opcja jest zaznaczona.
+ Po wybraniu wszystkich typów w **listy zestawy przywoływane** są używane ponownie, jeśli to możliwe. Domyślnie ta opcja jest zaznaczona.
 
  **Ponownie użyj typów w określonych przywoływanych zestawach**
 
- W przypadku wybrania tylko wybranych typów w **listy zestawy przywoływane** zostanie ono użyte ponownie.
+ W przypadku wybrania tylko wybranych typów w **listy zestawy przywoływane** są używane ponownie.
 
  **Lista przywoływanych zestawach**
 
- Zawiera listę zestawów występujących w odwołaniach projektu lub witryny sieci Web. Gdy **ponownie użyj typów w określonych przywoływanych zestawach** jest zaznaczona, pojedyncze zestawy można zaznaczyć lub wyczyścić.
+ Zawiera listę zestawów występujących w odwołaniach projektu lub witryny sieci Web. Po wybraniu **ponownie użyj typów w określonych przywoływanych zestawach**, można zaznaczyć lub wyczyścić pojedyncze zestawy.
 
  **Dodaj odwołanie sieci Web**
 
- Wyświetla okno dialogowe Dodaj odwołanie sieci Web.
+ Wyświetla **Dodaj odwołanie sieci Web** okno dialogowe.
 
 > [!NOTE]
-> Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla wersji 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Tej opcji należy używać tylko dla projektów przeznaczonych dla wersji 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 > [!NOTE]
-> **Dodaj odwołanie sieci Web** przycisk jest dostępny tylko wtedy, gdy **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
+> **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Porady: Dodawanie odwołania do usługi sieci web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

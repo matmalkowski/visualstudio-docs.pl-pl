@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296332"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
 To 5 – 10 min wprowadzenie do programu Visual Studio jako IDE języka Python utworzysz prostą aplikację sieci web języka Python w ramach struktury platformy Flask. Tworzenie projektu za pomocą odrębny kroki, które ułatwiają Dowiedz się więcej o podstawowych funkcji programu Visual Studio.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) bezpłatnie go zainstalować. W Instalatorze, upewnij się wybrać **programowania Python** obciążenia.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) bezpłatnie go zainstalować. W Instalatorze, upewnij się wybrać **programowania Python** obciążenia.
 
 ## <a name="create-the-project"></a>Utwórz projekt
 

@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a37cc4c17a403b398fd523f3582aaba910338f4d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 48ce29f06289f99444fc9fa231ea853a667ccc82
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233603"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281576"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 
 W tym krótkie wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 

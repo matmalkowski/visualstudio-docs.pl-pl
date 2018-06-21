@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944414"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279989"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
 
@@ -46,7 +46,7 @@ Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.P
 
 Należy określić wersję docelową i minimalną wersję systemu Windows 10 dla aplikacji, przy użyciu list rozwijanych w tej sekcji. Zaleca się docelowych najnowszej wersji systemu Windows 10 i jeśli tworzysz aplikację przedsiębiorstwa, zbyt obsługuje starsza wersja minimalna. Aby uzyskać więcej informacji o wersji systemu Windows 10 do wyboru, zobacz [wybierz wersję platformy uniwersalnej systemu Windows](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Informacje o platformie elementów docelowych w programie Visual Studio 2017 r, zobacz [obsługiwane platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Informacje o platformie elementów docelowych w programie Visual Studio 2017 r, zobacz [obsługiwane platformy](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
 
 ## <a name="see-also"></a>Zobacz także
 

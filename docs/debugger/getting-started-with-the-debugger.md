@@ -1,8 +1,8 @@
 ---
-title: Wprowadzenie do debugera
+title: Więcej informacji do debugowania za pomocą debugera programu Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
-ms.date: 03/16/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1144e7e33709510cb03ed02cb62020f81e8e8b62
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766262"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303149"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugować przy użyciu programu Visual Studio
 
-W tym temacie przedstawiono funkcje debugera programu Visual Studio w przewodniku krok po kroku. Widok wyższego poziomu funkcje debugera, zobacz [samouczek funkcji debugera](../debugger/debugger-feature-tour.md).
+W tym temacie przedstawiono funkcje debugera programu Visual Studio w przewodniku krok po kroku. Widok wyższego poziomu funkcje debugera, zobacz [samouczek funkcji debugera](../debugger/debugger-feature-tour.md). Gdy użytkownik *debugowanie aplikacji*, zwykle oznacza to, czy korzystasz z aplikacji w debugerze. Po wykonaniu tej czynności debuger zapewnia wiele sposobów, aby wyświetlić czynności kod po uruchomieniu. Można wykonywać krokowo kodu i przyjrzyj się wartościami przechowywanymi w zmiennych, obserwowanie można ustawić na zmiennych, aby zobaczyć zmiany wartości, ścieżka wykonywania kodu, można sprawdzić i wsp. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących bezwzględną](../debugger/debugging-absolute-beginners.md) przed rozpoczęciem tego tematu.
 
 Albo odczytanie wzdłuż, zobacz Funkcje debugera, lub można pobrać kompletne przykładowe używany w funkcji samouczka i postępuj zgodnie z instrukcjami samodzielnie. Aby pobrać przykład i z niego skorzystać, przejdź do [pokaz podglądu zdjęć](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
 
@@ -45,7 +45,7 @@ W tym samouczku obejmują:
 
 * Musi mieć Visual Studio 2017 r zainstalowany i. **NET development pulpitu** obciążenia.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalator programu Visual Studio. Wybierz. **NET development pulpitu** obciążenia, a następnie wybierz **Modyfikuj**.
 
@@ -62,13 +62,13 @@ W tym samouczku obejmują:
 
      ![Otwórz przykładowy projekt](../debugger/media/dbg-tour-open-project.png "Otwórz projekt")
 
-3. Otwórz pokaz podgląd fotografii WPF > C#, wybierz plik photoapp.sln i wybierz opcję **Otwórz**.
+3. Otwórz pokaz podgląd fotografii WPF > C# folderu, wybierz *photoapp.sln* pliku, a następnie wybierz **Otwórz**.
 
      Projekt zostanie otwarty w programie Visual Studio. Eksplorator rozwiązań w okienku po prawej stronie zawiera wszystkie pliki projektu.
 
     ![Pliki w Eksploratorze rozwiązania](../debugger/media/dbg-tour-solution-explorer.png "Eksploratora rozwiązań")
 
-4. Naciśnij klawisz F5 (**Debuguj > Rozpocznij debugowanie** lub **Rozpocznij debugowanie** przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania).
+4. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub **Rozpocznij debugowanie** przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie ") na pasku narzędzi debugowania.
 
      ![Zdjęcie podglądu aplikacji](../debugger/media/dbg-tour-wpf-app.png "Photo aplikacji Viewer")
 
@@ -86,7 +86,9 @@ Aby debugować, należy uruchomić aplikację w debugerze procesu aplikacji.
 
      ![Ustaw punkt przerwania](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
 
-6. Naciśnij klawisz F5 lub **Rozpocznij debugowanie** przycisk uruchamiania aplikacji i debuger uruchamia do wiersza kodu, którym można ustawić punktu przerwania.
+    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio należy zawiesić kodu uruchomionej, aby móc przeglądać wartości zmiennych, ani zachowanie pamięci lub czy jest pobieranie uruchamiana gałąź kodu. 
+
+6. Naciśnij klawisz **F5** lub **Rozpocznij debugowanie** przycisk uruchamiania aplikacji i debuger uruchamia do wiersza kodu, którym można ustawić punktu przerwania.
 
     Żółta strzałka reprezentuje instrukcję, w której debuger wstrzymana, również wstrzymuje wykonywanie aplikacji w tym samym punkcie (Ta instrukcja nie wykonane).
 
@@ -94,9 +96,9 @@ Aby debugować, należy uruchomić aplikację w debugerze procesu aplikacji.
 
     Punkty przerwania są to przydatne, gdy wiesz, wiersz kodu lub części kodu, który ma zostać zbadany szczegółowo.
 
-## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchomienie aplikacji
+## <a name="optional-restart-your-app-quickly"></a>(Opcjonalnie) Szybkie ponowne uruchomienie aplikacji
 
-Kliknij przycisk **Uruchom ponownie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku w pasku narzędzi debugowania (Ctrl + Shift + F5).
+Kliknij przycisk **Uruchom ponownie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku w pasku narzędzi debugowania (**Ctrl** + **przesunięcia**   +  **F5**).
 
 Po naciśnięciu **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji i ponowne uruchamianie debugera. Debuger wstrzymuje na pierwszy punkt przerwania, który zostaje trafiony za wykonywanie kodu.
 
@@ -106,7 +108,7 @@ Debuger ponownie zatrzymuje się na punkt przerwania, należy ustawić w `MainWi
 
 Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on sposobem uzyskania przy wykonywania aplikacji w debugerze (odpowiednik polecenia takie jak menu poleceń są wyświetlane w nawiasach).
 
-1. Naciśnij klawisz F11 (**debugowania > Wkrocz**) dwa razy, aby poprawić wykonywania aplikacji `InitializeComponent()` funkcji.
+1. Naciśnij klawisz **F11** (**debugowania > Wkrocz**) dwa razy, aby poprawić wykonywania aplikacji `InitializeComponent()` funkcji.
 
      ![Umożliwia F11 kod Step Into](../debugger/media/dbg-tour-f11.png "F11 Step Into")
 
@@ -115,7 +117,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
      >[!NOTE]
      > W kodzie zarządzanym zobaczysz okno dialogowe z pytaniem, jeśli chcesz otrzymać powiadomienie, gdy automatycznie wkroczyć nad właściwościami i operatorami (domyślnie). Jeśli chcesz zmienić ustawienie później, wyłącz **Przekrocz nad właściwościami i operatorami** w **Narzędzia > Opcje** menu w obszarze **debugowanie**.
 
-2. Naciśnij klawisz F10 (**Debuguj > Step Over**) kilka razy, aż debuger zatrzymuje się w pierwszym wierszu kodu w `OnApplicationStartup` obsługi zdarzeń.
+2. Naciśnij klawisz **F10** (**Debuguj > Step Over**) kilka razy, aż debuger zatrzymuje się w pierwszym wierszu kodu w `OnApplicationStartup` obsługi zdarzeń.
 
      ![Użyj F10, aby kod Step Over](../debugger/media/dbg-tour-f10-step-over.png "F10 Step Over")
 
@@ -125,7 +127,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
 1. Z debugera wstrzymana na ten wiersz kodu:
 
-    ````
+    ````c#
     mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
     ````
 
@@ -143,7 +145,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
      ![Za pomocą polecenia Uruchom kliknięcie funkcji](../debugger/media/dbg-tour-run-to-click-2.png "Uruchom kliknięcie")
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > **Uruchom kliknięcie** przycisku jest nowa w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj F11 w tym przykładzie można poprawić debugera.
 
 6. Kliknij przycisk **Uruchom kliknięcie** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
@@ -152,11 +154,11 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
     Przejście do debugera `Update` implementacji metody.
 
-7. Naciśnij klawisz F11, aby wkraczać do `Update` metody.
+7. Naciśnij klawisz **F11** do kroku do `Update` metody.
 
      ![Wynik Wkraczanie do metody aktualizacji](../debugger/media/dbg-tour-update-method.png "krok do aktualizacji — metoda")
 
-    W tym miejscu znaleźliśmy więcej kodu wyglądająca interesujące; aplikacja otrzymuje wszystkie pliki *.jpg znajdującej się w określonym katalogu, a następnie utworzenie obiektu fotografii dla każdego pliku. Ten kod daje możliwość uruchomienia sprawdzania stanu Twojej aplikacji (zmienne) z debugera. Firma Microsoft będzie zrobić w kolejnych sekcjach tego samouczka.
+    W tym miejscu znaleźliśmy więcej kodu wyglądająca interesujące; aplikacja otrzymuje wszystkie. *jpg* plików znajdujących się w określonym katalogu, a następnie utworzenie obiektu fotografii dla każdego pliku. Ten kod daje możliwość uruchomienia sprawdzania stanu Twojej aplikacji (zmienne) z debugera. Firma Microsoft będzie zrobić w kolejnych sekcjach tego samouczka.
 
     Funkcje, które pozwalają sprawdzić zmienne są jednym z najbardziej przydatnych funkcji debugera i są to robić na różne sposoby. Często podczas debugowania problemu, próbujesz sprawdzić, czy zmienne są przechowywane wartości, które powinni mieć w określonym czasie.
 
@@ -181,25 +183,25 @@ Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań**
 
 Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chcesz uzyskać z funkcji, ale pozostają w debugerze. Można to zrobić za pomocą **Wyjdź** polecenia.
 
-1. Naciśnij klawisze Shift + F11 (lub **Debuguj > Wyjdź**).
+1. Naciśnij klawisz **Shift** + **F11** (lub **Debuguj > Wyjdź**).
 
      To polecenie wznawia wykonywanie aplikacji (i wyjście z kodu) do momentu zwraca bieżącej funkcji.
 
      Należy ponownie `Update` wywołania metody w Data.cs.
 
-2. Naciśnij klawisze Shift + F11 ponownie i debuger umieszczane w górę stosu wywołań z powrotem do `OnApplicationStartup` obsługi zdarzeń.
+2. Naciśnij klawisz **Shift** + **F11** ponownie, i debuger rośnie stosu wywołań do `OnApplicationStartup` obsługi zdarzeń.
 
 ## <a name="run-to-cursor"></a>Uruchom do kursora
 
-1. Wybierz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub Shift + F5.
+1. Wybierz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub **Shift** + **F5** .
 
-2. W `Update` metody w Data.cs, kliknij prawym przyciskiem myszy `Add` metody wywołań i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia profilowanie i ustawia w bieżącym wierszu kodu tymczasowej punktu przerwania.
+2. W `Update` metody w *Data.cs*, kliknij prawym przyciskiem myszy `Add` metody wywołań i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia profilowanie i ustawia w bieżącym wierszu kodu tymczasowej punktu przerwania.
 
      ![Użyj Uruchom, aby funkcja kursora](../debugger/media/dbg-tour-run-to-cursor.png "Uruchom do kursora")
 
     Powinien być wstrzymane na punkt przerwania w `MainWindow` (ponieważ jest pierwszy punkt przerwania został skonfigurowany).
 
-3. Naciśnij klawisz F5, aby przejść do `Add` po wybraniu metody **Uruchom do kursora**.
+3. Naciśnij klawisz **F5** aby przejść do `Add` po wybraniu metody **Uruchom do kursora**.
 
     To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera.
 
@@ -211,22 +213,22 @@ Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chces
 
     Zmieniając przepływu wykonywania, możesz to zrobić rzeczy, takich jak przetestować różne ścieżki wykonywania lub uruchom ponownie kodu bez ponownego uruchamiania debugera.
 
-2. Teraz naciśnij klawisz F5.
+2. Teraz, naciśnij klawisz **F5**.
 
     Widać obrazy dodane do okna aplikacji. Ponieważ są ponowne uruchamianie kodu w `foreach` pętli, niektóre obrazy zostały dodane dwa razy!
-    
+
     > [!WARNING]
     > Często należy zachować ostrożność przy użyciu tej funkcji i zostanie wyświetlone ostrzeżenie w etykietce narzędzia. Zbyt mogą pojawić się inne ostrzeżenia. Przesuń wskaźnik nie można przywrócić aplikację do wcześniejszego stanu aplikacji.
 
 ## <a name="inspect-variables-with-data-tips"></a>Sprawdź zmienne etykietki danych
 
-1. Otwórz Data.cs w aplikacji demonstracyjnej podgląd fotografii, kliknij prawym przyciskiem myszy `private void Update` deklaracji funkcji i wybierz polecenie **Uruchom do kursora** (Zatrzymaj aplikację najpierw Jeśli jest już uruchomiona).
+1. Otwórz *Data.cs* w aplikacji demonstracyjnej podgląd fotografii, kliknij prawym przyciskiem myszy `private void Update` deklaracji funkcji i wybierz polecenie **Uruchom do kursora** (Zatrzymaj aplikację najpierw Jeśli jest już uruchomiona).
 
     Wstrzyma aplikacji w debugerze. Umożliwia firmie Microsoft w celu zbadania stanu.
 
 2. Umieść kursor nad `Add` metodę wywołania i kliknij przycisk **Uruchom kliknięcie** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-3. Teraz, umieść kursor nad obiektu pliku (`f`) i sprawdź wartość właściwości domyślną nazwę pliku `market 031.jpg`.
+3. Teraz, umieść kursor nad obiektu pliku (`f`) i sprawdź wartość właściwości domyślną nazwę pliku *rynku 031. jpg*.
 
      ![Wyświetl etykietki danych](../debugger/media/dbg-tour-data-tips.gif "wyświetlenia etykietki danych")
 
@@ -279,7 +281,7 @@ Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chces
      ![Wyjątek był zgłaszany](../debugger/media/dbg-tour-cause-an-exception.png "spowodowało wyjątku")
 
      Aplikacja zgłasza wyjątek i debuger przejście do wiersza kodu, która zgłosiła wyjątek.
-     
+
      ![Pomocnik wyjątków](../debugger/media/dbg-tour-exception-helper.png "pomocnika wyjątków")
 
      W tym miejscu **pomocnika wyjątków** pokazuje `System.ArgumentException` i komunikat o błędzie z informacją, że ścieżka nie jest niedozwolony format. Tak wiemy, że wystąpił błąd na argumentu metody lub funkcji.
@@ -288,12 +290,12 @@ Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chces
 
      Pomocnik wyjątków jest doskonałym funkcja, która może pomóc w debugowaniu błędy. Można również wykonywać następujące czynności widoku Szczegóły błędu i Dodaj wyrażenie kontrolne pomocnika wyjątków. Lub, w razie potrzeby można zmienić warunki zgłaszanie określonego wyjątku.
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > Pomocnik wyjątków zastępuje Asystenta wyjątków w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 2. Rozwiń węzeł **ustawienia wyjątków** węzeł, aby wyświetlić więcej opcji, w jaki sposób obsługiwać ten typ wyjątku, ale nie ma potrzeby zmian w tym samouczku!
 
-3. Naciśnij klawisz F5, aby kontynuować aplikacji.
+3. Naciśnij klawisz **F5** kontynuowanie aplikacji.
 
 Aby dowiedzieć się więcej na temat funkcji debugera, zobacz [debugera porady i wskazówki](../debugger/debugger-tips-and-tricks.md).
 

@@ -1,36 +1,34 @@
 ---
-title: Visual Studio 2017 dla deweloperów platformy .NET
-description: Omówienie funkcji programu Visual Studio 2017 ułatwia pisanie szybciej lepsze kodu platformy .NET.
+title: Zwiększenie wydajności dla .NET — rozwój
+description: Omówienie nawigacji, analizy kodu, testowania i inne funkcje jednostki ułatwia pisanie lepsze kodu platformy .NET szybciej.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3f6640d8e4c3adbd92dc6fd41469712988b9112d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257476"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281225"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 wydajność przewodnik dla deweloperów platformy .NET
+# <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik po Visual Studio 2017 C# wydajności
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zwiększa wydajność niż kiedykolwiek deweloperów! Firma Microsoft poprawia wydajność i niezawodność dla uruchomienia rozwiązania i obciążenia, wykrywania testów i wpisując opóźnienia. Firma Microsoft również został dodany i ulepszone funkcje umożliwiające szybsze pisanie kodu lepsze. Oto niektóre z tych funkcji: Nawigacja do zestawów decompiled, zmiennej nazwy sugestie podczas wpisywania, widok hierarchii w **Eksploratora testów**, przejdź do wszystkich (**Ctrl** +  **T**) można przejść do pliku/typu/elementu członkowskiego/symbol deklaracji, inteligentnego **pomocnika wyjątków**, styl konfiguracji i wymuszania i refaktoryzacje wiele kodu i kodu poprawki.
-
-Postępuj zgodnie z tego przewodnika, aby zoptymalizować wydajność.
+Dowiedz się, jak [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zwiększa wydajność niż kiedykolwiek deweloperów. Skorzystać z naszych ulepszenia wydajności i produktywności, takich jak nawigacji do zestawów decompiled, nazwa zmiennej sugestie podczas wpisywania, widok hierarchii w **Eksploratora testów**, przejdź do wszystkich (**Ctrl** + **T**) można przejść do pliku/typu/elementu członkowskiego/symbol deklaracji, inteligentnego **pomocnika wyjątków**, styl konfiguracji i wymuszania i refaktoryzacje wiele kodu i poprawki kodu.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Używany jest skróty klawiaturowe z różnych rozszerzenia/Edytor/IDE.
 
 Jeśli pochodzących z innego środowiska IDE lub środowisko programistyczne, może się okazać, instalowania jednego z następujących rozszerzeń, które są pomocne:
 
-- [Emacs: emulacji](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [Klawisze dostępu dla programu Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emacs: emulacji](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Poniżej przedstawiono popularne skróty programu Visual Studio:
@@ -85,6 +83,7 @@ Visual Studio 2017 pochodzi z dużą refaktoryzacje kodu generowania akcji i kod
   - Więcej informacji, zobacz Zobacz nasze [dokumentacji](https://aka.ms/refactorings)
 - Pisanie własnych poprawka refaktoryzacji lub kod z [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Kilka członków społeczności napisano wolnego rozszerzenia, które dodać dodatkowy kod inspekcji:
+  - [Analizatory FXCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +119,7 @@ Dodano wiele możliwości nowe funkcje debugowania w programie Visual Studio 201
 - [Krok wstecz](../debugger/how-to-use-intellitrace-step-back.md) debugowanie umożliwia wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości.
 - [Debugowanie migawki](/azure/application-insights/app-insights-snapshot-debugger) umożliwia badanie stanu aplikacji sieci web w tej chwili Wystąpił wyjątek (musi być na platformie Azure).
 
-![Nowy Pomocnik wyjątków w VS2017](../ide/media/VSGuide_Debugging.png)
+![Nowy Pomocnik wyjątków w programie Visual Studio 2017 r.](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Chcę użyć kontroli wersji z projektami.
 Git lub TFVC służy do przechowywania i zaktualizuj kod w programie Visual Studio.
@@ -141,8 +140,6 @@ Oto lista edytora i produktywność funkcje ułatwiające efektywniejsze pisanie
 | Tryb uzupełniania/sugestii | Zmiany zachowanie uzupełniania IntelliSense — deweloperom tła IntelliJ często Zmień ustawienie tutaj wartości domyślnej | **Menu** > **Edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla informacje o odwołaniu kodu i zmień historii w edytorze | **Narzędzia** > **opcje** > **Edytor tekstu** > **wszystkie języki**  >   **CodeLens** |
 | [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc stub limitu wspólnej standardowego |  Wpisz nazwę fragment kodu i naciśnij klawisz **kartę** dwa razy. |
-
-![Wstawki kodu programu Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Brak funkcja, która zwiększa produktywność lub obciążony pogorszenie wydajności?
 Istnieje kilka sposobów Wystaw nam opinię:

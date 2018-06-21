@@ -14,18 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766327"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281553"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowania na żywo aplikacji ASP.NET Azure za pomocą debugera migawki
 
 Debuger migawki wykonuje migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który chcesz. Aby nakazać debugera do tworzenia migawki, należy ustawić snappoints i logpoints w kodzie. Debuger pozwala zobaczyć dokładnie co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Debuger migawki ułatwiają znacznie skrócić czas potrzebny na rozwiązać problemy występujące w środowisku produkcyjnym.
 
-Snappoints i logpoints są podobne do punktów przerwania, jednak w przeciwieństwie do punktów przerwania, snappoints nie wstrzymać aplikacja po trafieniu. Trwa przechwytywanie migawek na snappoint zazwyczaj, 10-20 w milisekundach. 
+Snappoints i logpoints są podobne do punktów przerwania, jednak w przeciwieństwie do punktów przerwania, snappoints nie wstrzymać aplikacja po trafieniu. Trwa przechwytywanie migawek na snappoint zazwyczaj, 10-20 w milisekundach.
 
 W tym samouczku obejmują:
 
@@ -38,7 +38,7 @@ W tym samouczku obejmują:
 
 * Debuger migawki jest dostępna tylko dla programu Visual Studio Enterprise 2017 wersji 15.5 lub nowszym oraz **ASP.NET i sieć web development obciążenia**. Dla platformy ASP.NET Core może też być konieczne. **NET Core development** obciążenia zainstalowane.
 
-    Jeśli to nie jest jeszcze zainstalowana, zainstaluj [Visual Studio Enterprise 2017 wersji 15,5 cala](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszym. Aktualizowania z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika debugera migawki **ASP.NET i sieć web development obciążenia**.
+    Jeśli to nie jest jeszcze zainstalowana, zainstaluj [Visual Studio Enterprise 2017 wersji 15,5 cala](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszym. Aktualizowania z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika debugera migawki **ASP.NET i sieć web development obciążenia**.
 
 * Plan usługi aplikacji Azure podstawowa lub nowszej.
 
@@ -49,16 +49,16 @@ W tym samouczku obejmują:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otwórz projekt i uruchomić debugera migawki
 
-1. Otwórz projekt, który ma zostać debugowania migawki. 
+1. Otwórz projekt, który ma zostać debugowania migawki.
 
-    > [!IMPORTANT] 
-    > Aby debugowania migawki, należy otworzyć **tę samą wersję programu kodu źródłowego** który jest opublikowany w usłudze Azure App Service. 
+    > [!IMPORTANT]
+    > Aby debugowania migawki, należy otworzyć **tę samą wersję programu kodu źródłowego** który jest opublikowany w usłudze Azure App Service.
 
 1. W Eksploratorze chmury (**Widok > Eksplorator chmury**), kliknij prawym przyciskiem myszy projekt jest wdrożony w usłudze Azure App Service i wybierz **dołączyć debuger migawki**.
 
    ![Uruchom debuger migawki](../debugger/media/snapshot-launch.png)
 
-    Po raz pierwszy należy wybrać **dołączyć debuger migawki**, zostanie wyświetlony monit, aby zainstalować rozszerzenie lokacji debugera migawki w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service. 
+    Po raz pierwszy należy wybrać **dołączyć debuger migawki**, zostanie wyświetlony monit, aby zainstalować rozszerzenie lokacji debugera migawki w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
 
    Program Visual Studio jest teraz migawki tryb debugowania.
 
@@ -77,7 +77,7 @@ W tym samouczku obejmują:
 
    ![Ustaw snappoint](../debugger/media/snapshot-set-snappoint.png)
 
-2. Kliknij przycisk **Rozpocznij zbieranie** włączyć snappoint.  
+2. Kliknij przycisk **Rozpocznij zbieranie** włączyć snappoint.
 
    ![Włącz snappoint](../debugger/media/snapshot-start-collection.png)
 

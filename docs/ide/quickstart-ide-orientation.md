@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94c065d17d60ac8090e057f9b8c961d7718504a5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 86b8d9f5e577395234dc4d7bb8de30283b0df8af
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254670"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280520"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio
 
 W to 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) firma Microsoft będzie przewodnik niektóre z okien, menu i inne funkcje interfejsu użytkownika.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="start-page"></a>Strona początkowa
 

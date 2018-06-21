@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572394"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283461"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje Edytor kodu
 
-Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edytować kod](https://www.visualstudio.com/vs/features/ide/) szybki przegląd.
+Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edytować kod](https://visualstudio.microsoft.com/vs/features/ide/) szybki przegląd.
 
 Kodu można wyświetlić na kilka różnych sposobów. Domyślnie **Eksploratora rozwiązań** zawiera kod uporządkowane według plików. Możesz kliknąć **widoku klasy** u dołu okna, aby wyświetlić kod uporządkowane według klasy.
 

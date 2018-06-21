@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: a2bdc24a3e1ee30ffa569fa0c9e5b2ab208aa7ef
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851893"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280880"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Wprowadzenie do programu Visual Studio Tools Kubernetes
 
@@ -24,7 +24,7 @@ Visual Studio Kubernetes Tools usprawnić tworzenie konteneryzowanych aplikacji 
 
 Aby korzystać z tej nowej funkcji, musisz:
 
-- W najnowszej wersji zapoznawczej [programu Visual Studio 2017](https://www.visualstudio.com/vs/preview) z obciążeniem rozwoju platformy Azure.
+- W najnowszej wersji zapoznawczej [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) z obciążeniem rozwoju platformy Azure.
 
 - [Kubernetes narzędzi dla programu Visual Studio](https://aka.ms/get-vsk8stools), dostępne jako osobny plik do pobrania.
 

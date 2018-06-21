@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7550c2e3b7d635d20df342558537e7a3dbd7d619
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1f7fc936211188ee623a8b7c28ccdfe7fde25606
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234702"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280971"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikowanie witryny sieci web przy użyciu narzędzia Visual Studio publikowania aplikacji sieci web lub aplikacji .NET Core
 
@@ -29,9 +29,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 * Musi mieć Visual Studio 2017 r zainstalowany i **ASP.NET i sieć web development** obciążenia i. **NET development pulpitu** obciążenia. W przypadku aplikacji .NET Core należy. **NET Core** obciążenia.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
-## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
 1. W programie Visual Studio, wybierz **pliku** > **nowy projekt**.
 

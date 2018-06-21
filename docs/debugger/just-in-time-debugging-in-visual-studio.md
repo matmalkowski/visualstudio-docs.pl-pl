@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454665"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281501"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Porady: odpowiadanie na debuger Just In Time
 
@@ -26,7 +26,7 @@ Działania należy podjąć po wyświetleniu Just in Time okno dialogowe debuger
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Jeśli chcesz naprawić lub Debugowanie błędów (użytkowników programu Visual Studio)
 
-- Musi mieć [zainstalowanego programu Visual Studio](http://www.visualstudio.com) wyświetlić szczegółowe informacje o błędzie i spróbuj on debugowania. Aby uzyskać więcej informacji, zobacz [debugowania za pomocą debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie można usunąć błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby usunąć błąd.
+- Musi mieć [zainstalowanego programu Visual Studio](http://visualstudio.microsoft.com) wyświetlić szczegółowe informacje o błędzie i spróbuj on debugowania. Aby uzyskać więcej informacji, zobacz [debugowania za pomocą debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie można usunąć błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby usunąć błąd.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Jeśli chcesz zapobiec wyświetlaniu okna dialogowego debuger just in Time
 
@@ -48,6 +48,6 @@ Możesz wykonać czynności, aby zapobiec Just in Time wyświetlaniu — okno di
 2. (Platformy ASP.NET i IIS) Jeśli przechowujesz aplikacji sieci Web ASP.NET w usługach IIS należy wyłączyć debugowanie po stronie serwera.
 
     W Menedżerze usług IIS kliknij prawym przyciskiem myszy węzeł serwera i wybierz polecenie **Przełącz do widoku funkcji**. W sekcji platformy ASP.NET, wybierz **kompilacja platformy .NET** i upewnij się, możesz wybrać **False** jako zachowanie debugowania (kroki są różne w starszych wersjach usług IIS).
-  
-## <a name="see-also"></a>Zobacz też    
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
+
+## <a name="see-also"></a>Zobacz też
+ [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)

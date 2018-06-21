@@ -9,16 +9,16 @@ description: Więcej informacji na temat korzyści społeczności Azure uwzględ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199186"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280380"
 ---
-# <a name="azure-community"></a>Azure Community  
+# <a name="azure-community"></a>Azure Community
 
-Get-help bezpośrednio przez zespół Azure w ramach wybierz — fora pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyści społeczności Azure zapewnia dostęp do kolekcji fora koncentruje się na tematy związane z platformy Azure.  
+Get-help bezpośrednio przez zespół Azure w ramach wybierz — fora pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyści społeczności Azure zapewnia dostęp do kolekcji fora koncentruje się na tematy związane z platformy Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Get-help bezpośrednio przez zespół Azure w ramach wybierz — fora pomocy tec
 
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-Wprowadzenie do społeczności platformy Azure jest bardzo proste.  
+Wprowadzenie do społeczności platformy Azure jest bardzo proste.
 1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Zlokalizuj kafelka społeczności Azure dział pomocy technicznej, a następnie kliknij przycisk **uzyskiwanie pomocy** łącza. 
+2. Zlokalizuj kafelka społeczności Azure dział pomocy technicznej, a następnie kliknij przycisk **uzyskiwanie pomocy** łącza.
 
    ![Azure Community Tile](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Zobaczysz listę dostępnych forach.  Po prostu kliknij na forum wybranych przez użytkownika.  
+3. Zobaczysz listę dostępnych forach.  Po prostu kliknij na forum wybranych przez użytkownika.
 
    ![Fora społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  W ramach forum można wyświetlać, tematy i odpowiedzi, wyszukiwanie odpowiedzi na pytanie, lub Opublikuj nowe pytanie. 
+4.  W ramach forum można wyświetlać, tematy i odpowiedzi, wyszukiwanie odpowiedzi na pytanie, lub Opublikuj nowe pytanie.
 
    ![Przykład społeczności platformy Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -60,12 +60,12 @@ Dostępność korzyści społeczności Azure zależy od poziomu subskrypcji w sp
 | Visual Studio Enterprise (miesięczne w chmurze), program Visual Studio Professional (miesięczne w chmurze), niego<sup>1</sup>                                          | Wszystkie                                              |Niedostępne                                              |  Nie          |
 | Visual Studio Dev Essentials                                        | Brak                                              |Niedostępne                                              |  Nie          |
 |
-<sup>1</sup>*obejmuje: nie dla Wyobraź sobie odsprzedaż (niego), Microsoft ekwiwalentu pełnego wymiaru czasu, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP), BizSpark, Microsoft Certified Trainer (MCT)* 
+<sup>1</sup>*obejmuje: nie dla Wyobraź sobie odsprzedaż (niego), Microsoft ekwiwalentu pełnego wymiaru czasu, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP), BizSpark, Microsoft Certified Trainer (MCT)*
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Inne zasoby społeczności platformy Azure, odwiedź społeczności Azure [strony pomocy technicznej](https://azure.microsoft.com/support/forums/).
 -  [Dokumentację platformy Azure](/azure/).
--  Potrzebujesz pomocy z zakresu sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji?  Skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 
+-  Potrzebujesz pomocy z zakresu sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji?  Skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

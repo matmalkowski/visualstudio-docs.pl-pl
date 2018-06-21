@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a2a3b35f8757e0554a062a43954a776025f4ec7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7384bbdb136038cf73914e9743f56790c2150ca6
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234715"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281212"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Praca z języka Python w programie Visual Studio w systemie Windows
 
@@ -169,7 +169,7 @@ A. Python to zwykle interpretacji języka, z którym jest on uruchamiany na żą
 
 Funkcje języka Python można zainstalować w następujących wersjach programu Visual Studio zgodnie z opisem w [Przewodnik instalacji](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2017 (wszystkie wersje)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017 (wszystkie wersje)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015 (wszystkie wersje)
 - Visual Studio 2013 Community Edition
 - Visual Studio Express 2013 for Web, aktualizacja 2 lub nowszy
@@ -178,7 +178,7 @@ Funkcje języka Python można zainstalować w następujących wersjach programu 
 - Program Visual Studio 2012 (Pro edition lub nowszy)
 - Visual Studio 2010 z dodatkiem SP1 (Pro edition lub nowszy; .NET 4.5 wymagana)
 
-Visual Studio 2015 i starsze wersje są dostępne pod adresem [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+Visual Studio 2015 i starsze wersje są dostępne pod adresem [visualstudio.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Funkcje są w pełni obsługiwane i utrzymywana w najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.

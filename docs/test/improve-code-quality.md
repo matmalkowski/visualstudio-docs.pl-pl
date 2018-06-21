@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967224"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281618"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 
@@ -38,7 +38,7 @@ Visual Studio, narzędzia do testowania może pomóc i rozwijać i podtrzymania 
 - [Testy obciążenia](../test/quickstart-create-a-load-test-project.md) symuluje obciążenie dla aplikacji serwera, uruchamiając testów jednostkowych i wydajności sieci Web.
 
 > [!NOTE]
-> Testy jednostkowe jest dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takich jak live testowania, jednostek IntelliTest, i kodowanych testów interfejsu użytkownika są dostępne tylko w programie Visual Studio Enterprise edition. Aby uzyskać więcej informacji na temat wersji zobacz [porównania Visual Studio 2017 IDEs](https://www.visualstudio.com/vs/compare/).
+> Testy jednostkowe jest dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takich jak live testowania, jednostek IntelliTest, i kodowanych testów interfejsu użytkownika są dostępne tylko w programie Visual Studio Enterprise edition. Aby uzyskać więcej informacji na temat wersji zobacz [porównania Visual Studio 2017 IDEs](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Scenariusze pokrewne
 

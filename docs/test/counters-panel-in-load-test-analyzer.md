@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd276a70a99344b837dad5cb12a0d87365535f39
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36304779"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Za pomocą panelu liczników w widoku wykresów i tabel
 
-Panel liczników jest widoczny w widokach Wykresy i Tabele w Analizatorze testu obciążeniowego, gdy uruchomiony jest test obciążeniowy lub podczas analizy wyniku testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md), [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
+**Liczniki** panel jest widoczny w widoku wykresów i tabel widoku w analizatorze testu obciążenia, podczas testu obciążenia jest uruchomiona lub podczas analizowania wyników testów obciążenia. Aby uzyskać więcej informacji, zobacz [z wynikami testów obciążenia analizowanie w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md), [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: dostęp wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
-Panel liczników przedstawia widok strukturalnych wszystkie liczniki wydajności, które zostały zebrane podczas testu obciążenia. Możesz wyświetlić lub ukryć panel liczników, wybierając **Pokaż panelu liczników** na narzędzi analizatora testu obciążenia.
+**Liczniki** panelu wyświetlane strukturalnych wszystkie liczniki wydajności, które zostały zebrane podczas testu obciążenia. Można wyświetlić lub ukryć **liczniki** panelu, wybierając **Pokaż panelu liczników** na **analizatora testu obciążenia** paska narzędzi.
 
 Liczniki są zorganizowane w strukturze drzewa, w którym węzłów liści są wystąpienia licznika wydajności, które mogą zostać wyświetlone na wykresie.
 
@@ -46,7 +47,7 @@ Panel liczników oferuje następujące funkcje:
 
 ### <a name="scenario-name-node-in-counters-panel"></a>Scenariusz nazwa węzła w panelu liczników
 
-|||
+|Panel liczników|Opis|
 |-|-|
 |![Licznik panelu scenariusz nazwa węzła](../test/media/ltest__namenode.png)|1. W tym węźle są wyświetlane wszystkie liczniki wydajności skojarzonego z Scenario1 testu obciążenia.<br />2. Wszystkie testy scenariusza znajdują się pod węzłem scenariusza. Etykieta wskazuje nazwę testu.<br />3. Węzły liści w węźle testu są liczniki przypadek testowy testu obciążenia, gdzie nazwa wystąpienia licznika to nazwa testu.<br />4. Załaduj wszystkie wystąpienia licznika strony testu skojarzone z gałęzi testu wydajności sieci Web. W tym węźle testu obciążenia tempie wystąpień liczników skojarzony ze stroną logowania UZYSKAĆ (nazwy raportowania) testu wydajności sieci IBuyBrowse Web w Scenario1 testu obciążenia są zawarte w tym miejscu.<br />5. Węzły liści w węźle strony są załadować liczników strony testu.<br />6. Wszystkie obciążenia licznik żądania testu, który wystąpienia skojarzony z testem wydajności sieci Web są zawarte w gałęzi testu wydajności sieci Web. W tym węźle wszystkie żądania wystąpienia liczników skojarzony z żądaniem logowania UZYSKAĆ (nazwy raportowania) testu wydajności sieci IBuyBrowse Web w Scenario1 o testu obciążenia zawartych w tym miejscu.<br />7. Węzły liści w węźle żądania są załadować liczników żądania testu.<br />8. Wszystkie obciążenia testu transakcji licznika wystąpienia skojarzony z testem wydajności sieci Web są zawarte w gałęzi testu wydajności sieci Web. W tym węźle wszystkich wystąpień liczników transakcji skojarzyć z transakcji o nazwie Transaction1 testu wydajności sieci IBuyBrowse Web w Scenraio1 testu obciążenia są zawarte w tym miejscu.<br />9. Węzły liści w węźle transakcji są załadować liczników transakcji testu.<br />10. Węzeł testu jednostki.|
 
@@ -54,9 +55,9 @@ Panel liczników oferuje następujące funkcje:
 
 |Zadania|Skojarzone — tematy|
 |-----------|-----------------------|
-|**Dodaj więcej liczniki wydajności do wykresu, w widoku wykresu:** panelu w liczniki można dodać różne rodzaje danych do wykresu testu obciążenia przez dodanie większej liczby liczników wydajności na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Analizowanie wszelkie progi określone w teście obciążenia, które zostały naruszone:** panelu liczników Wyświetla ikony reprezentujące naruszenia progu, które można następnie dodać do tabel i wykresów do dalszej analizy.|-   [Porady: analizowanie naruszeń progu za pomocą panelu liczników](../test/analyze-threshold-rule-violations-in-load-tests.md)|
-|**Analizowanie błędów, które zostały wykryte podczas testu obciążenia:** panelu liczników zawiera węzeł błędy, która zawiera błąd kategorie i podkategorie, takich jak błędy HTTP, które można dodawać błędów do wykresy do dalszej analizy.|-   [Porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md)|
+|**Dodaj więcej liczniki wydajności do wykresu, w widoku wykresu:** w **liczniki** panelu, można dodać różne rodzaje danych do wykresu testu obciążenia przez dodanie większej liczby liczników wydajności na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Analizowanie wszelkie progi określone w teście obciążenia, które zostały naruszone:** **liczniki** panel wyświetla ikony reprezentujące naruszenia progu, które można następnie dodać do tabel i wykresów do dalszej analizy.|-   [Porady: analizowanie naruszeń progu za pomocą panelu liczników](../test/analyze-threshold-rule-violations-in-load-tests.md)|
+|**Analizowanie błędów, które zostały wykryte podczas testu obciążenia:** **liczniki** panel zawiera błędy węzeł, który zawiera błąd kategorie i podkategorie, takich jak błędy HTTP, które można dodawać błędów na wykresach dla dalszej analizy.|-   [Porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md)|
 
 ## <a name="performance-counter-sampling-interval-considerations"></a>Zagadnienia dotyczące interwał próbkowania licznika wydajności
 
@@ -71,11 +72,11 @@ Poniżej przedstawiono wskazówki dotyczące częstotliwości próbkowania:
 |8 – 24 godziny|30 sekund|
 |> 24 godziny|60 sekund|
 
-## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Zagadnienia dotyczące szczegółów chronometrażu do zbierania danych percentyl, w tym
+## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Zagadnienia dotyczące szczegółów chronometrażu służąca do gromadzenia danych percentyl, w tym
 
 Brak właściwości w ustawieniach wykonywania w edytora testu obciążenia o nazwie **magazynowania szczegółów chronometrażu**. Jeśli **magazynowania szczegółów chronometrażu** właściwość jest włączona, a następnie czas wykonywania każdego poszczególnych testu, transakcji i strony podczas testu obciążenia jest przechowywany w repozytorium wyników testów obciążenia. Dzięki temu danych percentyl 90 i 95 ma być wyświetlany w analizatorze testów obciążenia w tabelach testy, transakcji i strony.
 
-Istnieją dwie opcje do włączania **magazynowania szczegółów chronometrażu** właściwości we właściwościach ustawień uruchamiania:**StatisticsOnly** i **AllIndividualDetails**. Za pomocą obu opcji wszystkie poszczególne testy, strony i transakcji jest mierzony i danych percentyl jest obliczana na podstawie danych poszczególnych czas. Różnica jest to, że z **StatisticsOnly** opcję zaraz po obliczeniu danych percentyl poszczególnych czas dane zostaną usunięte z repozytorium. Zmniejsza to ilość miejsca, który jest wymagany w repozytorium, gdy używasz szczegółów chronometrażu. Użytkownicy wersji advanced może być jednak przetwarzania danych szczegółów chronometrażu w inny sposób, przy użyciu narzędzia SQL. Jeśli tak, jest **AllIndividualDetails** opcja powinna być używana, dzięki czemu dane szczegółów chronometrażu są dostępne do przetworzenia. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, a następnie można analizowanie aktywności wirtualnego użytkownika za pomocą wykresu aktywności wirtualnego użytkownika w analizatorze testu obciążenia, po zakończeniu testu obciążenia uruchomione. Aby uzyskać więcej informacji, zobacz [analizowanie wirtualnego działań użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Istnieją dwie opcje do włączania **magazynowania szczegółów chronometrażu** właściwości we właściwościach ustawień uruchamiania: **StatisticsOnly** i **AllIndividualDetails**. Za pomocą obu opcji wszystkie poszczególne testy, strony i transakcji jest mierzony i danych percentyl jest obliczana na podstawie danych poszczególnych czas. Różnica jest to, że z **StatisticsOnly** opcję zaraz po obliczeniu danych percentyl poszczególnych czas dane zostaną usunięte z repozytorium. Zmniejsza to ilość miejsca, który jest wymagany w repozytorium, gdy używasz szczegółów chronometrażu. Użytkownicy wersji advanced może być jednak przetwarzania danych szczegółów chronometrażu w inny sposób, przy użyciu narzędzia SQL. Jeśli tak, jest **AllIndividualDetails** opcja powinna być używana, dzięki czemu dane szczegółów chronometrażu są dostępne do przetworzenia. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, a następnie można analizować przy użyciu działań wirtualnego użytkownika **aktywności użytkownika wirtualnego** wykresu w załadować Test analizatora po testu obciążenia zakończeniu działania. Aby uzyskać więcej informacji, zobacz [analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Ilość miejsca, która jest wymagana w repozytorium wyników testów obciążenia do przechowywania danych szczegółów chronometrażu może być duży, zwłaszcza w przypadku testów obciążenia jest już uruchomiona. Ponadto czas przechowywania tych danych w repozytorium wyników testów obciążenia na końcu testu obciążenia jest dłużej, ponieważ te dane są przechowywane w agentach testu obciążenia do momentu zakończenia testu obciążenia wykonywania. Po zakończeniu testu obciążenia, dane są przechowywane w repozytorium. Domyślnie **magazynowania szczegółów chronometrażu** właściwość jest włączona. Jeśli jest to problem w środowisku do testowania, możesz ustawić **magazynowania szczegółów chronometrażu** do **Brak**.
 

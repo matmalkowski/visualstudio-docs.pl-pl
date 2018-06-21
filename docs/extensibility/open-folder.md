@@ -11,12 +11,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d916ea30dd9b72a2d8bd59e8d3d34f9e73c74877
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138987"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302979"
 ---
 # <a name="open-folder-extensibility"></a>Otwórz Folder rozszerzalności
 
@@ -54,7 +54,7 @@ Funkcje korzystające z następujących typów konieczne będzie wdrożenie nowy
 
 ## <a name="feedback-comments-issues"></a>Opinie, komentarze, problemy
 
-Otwórz Folder i `Microsoft.VisualStudio.Workspace.*` opracowywane active są interfejsów API. Jeśli widzisz nieoczekiwanego zachowania, zobacz znane problemy dotyczące wersji zainteresowań. Społeczność deweloperów jest zalecane miejsce do głosowania i tworzyć problemy. Dla każdego opinii zdecydowanie zaleca się szczegółowy opis problemu. Obejmują projektujesz dla używanej wersji programu Visual Studio, interfejsy API używasz (zostały zaimplementowane i co w przypadku interakcji z), oczekiwany wynik i rzeczywiste wyniki. Jeśli to możliwe zawierać zrzut procesu devenv.exe. Użyj śledzenia do przekazywania opinii na ten problem GitHub i związanych z dokumentacją.
+Otwórz Folder i `Microsoft.VisualStudio.Workspace.*` opracowywane active są interfejsów API. Jeśli widzisz nieoczekiwanego zachowania, zobacz znane problemy dotyczące wersji zainteresowań. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest zalecane miejsce do głosowania i tworzyć problemy. Dla każdego opinii zdecydowanie zaleca się szczegółowy opis problemu. Obejmują projektujesz dla używanej wersji programu Visual Studio, interfejsy API używasz (zostały zaimplementowane i co w przypadku interakcji z), oczekiwany wynik i rzeczywiste wyniki. Jeśli to możliwe zawierać zrzut procesu devenv.exe. Użyj śledzenia do przekazywania opinii na ten problem GitHub i związanych z dokumentacją.
 
 ## <a name="next-steps"></a>Następne kroki
 

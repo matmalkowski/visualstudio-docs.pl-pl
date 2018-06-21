@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b185beaeefeeedaeb63ac6d102d2207926e52748
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257738"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280354"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizacja wydajności programu Visual Studio
 
@@ -26,9 +26,9 @@ W tym artykule przedstawiono kilka sugestii próby, jeśli okaże się, że prog
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Uaktualnienie do wersji Visual Studio 2017 15,6 lub nowszej
 
-Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) bezpłatnie do zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej w Visual Studio 2017 r. o ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 jest side-by-side zgodny z programem Visual Studio 2015, aby nie dopuścić do przeoczenia żadnych podejmując.
+Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) bezpłatnie do zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej w Visual Studio 2017 r. o ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 jest side-by-side zgodny z programem Visual Studio 2015, aby nie dopuścić do przeoczenia żadnych podejmując.
 
-Jeśli obecnie używasz programu Visual Studio 2017 r, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązań załadować dwie lub trzy godziny szybszy w wersji 15,6. Pobierz go [tutaj](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Jeśli obecnie używasz programu Visual Studio 2017 r, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązań załadować dwie lub trzy godziny szybszy w wersji 15,6. Pobierz go [tutaj](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Rozszerzenia i okna narzędzi
 

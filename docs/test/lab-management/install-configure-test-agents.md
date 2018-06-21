@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972108"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281667"
 ---
-# <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolery testów
+# <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
 Scenariusze testowania, korzystających z programu Visual Studio i Visual Studio Team Services (VSTS) lub Team Foundation Server (TFS) nie trzeba kontrolera testów. Agents for Visual Studio obsługują aranżacji komunikując się z programu VSTS lub TFS. Scenariusz można uruchomić ciągłego testów dla kompilacji, a następnie zwolnij przepływów pracy programu VSTS lub TFS.
 
@@ -34,9 +34,9 @@ Można także rozważyć czy lepiej używać jest [kompilacji lub zarządzania z
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj test controller i agenci testowi
 
-Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
 
-Możesz pobrać agentów dla programu Visual Studio 2015 i Visual Studio 2013 z [starsze pliki do pobrania](https://www.visualstudio.com/vs/older-downloads/) strony.
+Możesz pobrać agentów dla programu Visual Studio 2015 i Visual Studio 2013 z [starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/) strony.
 
 Te pliki instalacyjne są dostępne w postaci plików ISO prosta instalacja na maszynach wirtualnych.
 
