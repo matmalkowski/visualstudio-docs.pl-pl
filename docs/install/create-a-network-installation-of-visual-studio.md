@@ -1,5 +1,5 @@
 ---
-title: Utworzyć sieciowej instalację programu Visual Studio
+title: Tworzenie instalacji sieciowej programu Visual Studio
 description: Dowiedz się, jak utworzyć punkt instalacji sieci do wdrażania programu Visual Studio w obrębie przedsiębiorstwa.
 ms.date: 10/17/2017
 ms.technology: vs-acquisition
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f25e277a4743d27115485e791fd44f12078a4b2f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622890"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282590"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
@@ -121,7 +121,7 @@ Administratorzy mogą wdrożyć program Visual Studio na klienckich stacjach rob
 > [!TIP]
 > Gdy wykonywane jako część pliku wsadowego `--wait` opcji zapewnia, że `vs_enterprise.exe` procesu czeka przed zakończeniem instalacji przed zwraca kod zakończenia. Jest to przydatne, jeśli chce wykonać dalsze działania na Ukończono instalację administratora przedsiębiorstwa (na przykład, aby [Zastosuj klucz produktu do pomyślnej instalacji](automatically-apply-product-keys-when-deploying-visual-studio.md)), ale należy poczekać na zakończenie do obsługi instalacji Kod powrotu z tej instalacji.  Jeśli nie używasz `--wait`, `vs_enterprise.exe` proces kończy się przed instalacja została zakończona i zwraca kod zakończenia niedokładne nie reprezentujący stan operacji instalacji.
 
-Po zainstalowaniu z układu zawartość, która jest zainstalowana są uzyskiwane z układu. Jednak w przypadku wybrania składnika, który nie jest w układzie, będzie można uzyskać z Internetu.  Jeśli chcesz zapobiec instalacji programu Visual Studio pobieraniu zawartość, która nie istnieje w układzie, użyj `--noWeb` opcji.  Jeśli `--noWeb` jest używany i układu nie ma żadnej zawartości, który został wybrany do zainstalowania, konfiguracja kończy się niepowodzeniem.  
+Po zainstalowaniu z układu zawartość, która jest zainstalowana są uzyskiwane z układu. Jednak w przypadku wybrania składnika, który nie jest w układzie, będzie można uzyskać z Internetu.  Jeśli chcesz zapobiec instalacji programu Visual Studio pobieraniu zawartość, która nie istnieje w układzie, użyj `--noWeb` opcji.  Jeśli `--noWeb` jest używany i układu nie ma żadnej zawartości, który został wybrany do zainstalowania, konfiguracja kończy się niepowodzeniem.
 
 ### <a name="error-codes"></a>Kody błędów
 
@@ -140,7 +140,7 @@ Gdy będą dostępne aktualizacje produktu, może zaistnieć potrzeba [aktualiza
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Tworzenie układu w poprzedniej wersji programu Visual Studio 2017 r.
 
 > [!NOTE]
-> Bootstrappers 2017 usługi Visual Studio, które są dostępne na [VisualStudio.com](http://www.visualstudio.com) pobranie i zainstalowanie najnowszej wersji programu Visual Studio 2017 dostępny zawsze, gdy są uruchamiane. Jeśli już dziś Pobierz programu inicjującego Visual Studio i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio 2017, która jest dostępna w późniejszym czasie. W przypadku utworzenia układu, instalacja programu Visual Studio z tego układu instaluje określonej wersji programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, która jest w układzie.
+> Bootstrappers 2017 usługi Visual Studio, które są dostępne na [VisualStudio.com](http://visualstudio.microsoft.com) pobranie i zainstalowanie najnowszej wersji programu Visual Studio 2017 dostępny zawsze, gdy są uruchamiane. Jeśli już dziś Pobierz programu inicjującego Visual Studio i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio 2017, która jest dostępna w późniejszym czasie. W przypadku utworzenia układu, instalacja programu Visual Studio z tego układu instaluje określonej wersji programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, która jest w układzie.
 
 Jeśli potrzebujesz do tworzenia układu dla starszej wersji programu Visual Studio 2017 r, możesz przejść do https://my.visualstudio.com pobierania "fixed" wersje bootstrappers programu Visual Studio 2017 r.
 
@@ -152,7 +152,7 @@ Mamy zbyt inne dostępne opcje pomocy technicznej. Aby uzyskać listę, zobacz n
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

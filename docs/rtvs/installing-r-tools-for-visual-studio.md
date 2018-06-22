@@ -10,19 +10,20 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296302"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Instalowanie narzędzi R dla programu Visual Studio
 
 W tym artykule:
 
 - [Obsługiwane wersje programu Visual Studio](#supported-versions-of-visual-studio)
-- [Instalowanie RTVS w Visual Studio 2017 r.](#installing-rtvs-in-visual-studio-2017)
-- [Instalowanie RTVS w programie Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Zainstaluj RTVS w programie Visual Studio 2017 r.](#installing-rtvs-in-visual-studio-2017)
+- [Zainstaluj RTVS w programie Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
 - [Instalacja w trybie offline](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -30,13 +31,13 @@ W tym artykule:
 
 ## <a name="supported-versions-of-visual-studio"></a>Obsługiwane wersje programu Visual Studio
 
-R narzędzi dla programu Visual Studio (RTVS) jest obsługiwana w systemie Windows z społeczność (bezpłatnie), Professional i w wersji Enterprise obu [programu Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) i [programu Visual Studio 2015 Update 3 (lub nowszej)](http://go.microsoft.com/fwlink/?LinkId=691129) (bezpośrednie Pobierz).
+R narzędzi dla programu Visual Studio (RTVS) jest obsługiwana w systemie Windows z społeczność (bezpłatnie), Professional i w wersji Enterprise obu [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) i [programu Visual Studio 2015 Update 3 (lub nowszej)](http://go.microsoft.com/fwlink/?LinkId=691129) (bezpośrednie Pobierz).
 
 RTVS nie jest obecnie obsługiwana w programie Visual Studio dla komputerów Mac.
 
 Nie można zainstalować RTVS, jeśli masz tylko program Visual Studio Shell dołączonego z produktami, takie jak Visual Studio Test Professional i SQL Server Management Studio. Visual Studio Shell nie zawiera składniki niezbędne dla RTVS.
 
-## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalowanie RTVS w Visual Studio 2017 r.
+## <a name="install-rtvs-in-visual-studio-2017"></a>Zainstaluj RTVS w programie Visual Studio 2017 r.
 
 1. Uruchom Instalator programu Visual Studio i wybierz **Modyfikuj** opcji (Aby uzyskać więcej informacji, zobacz [zmodyfikować Visual Studio](../install/modify-visual-studio.md)). Jeśli jeszcze nie masz zainstalowanego programu Visual Studio, zobacz [program Visual Studio](../install/install-visual-studio.md). W systemie Windows 7, upewnij się, że Instalatorem zostało zaktualizowane do wyświetlenia wersji programu Visual Studio 2017 *15,2 kompilacji 26430.12* lub nowszym.
 
@@ -46,9 +47,9 @@ Nie można zainstalować RTVS, jeśli masz tylko program Visual Studio Shell do�
 
 1. Ustaw dodatkowe opcje z prawej strony z tą samą nazwą obciążenia. Domyślnie to obciążenie obejmuje F # i obsługi języka Python. Dla języka R, są minimalne wymagania **obsługę języka R**, **Obsługa środowiska uruchomieniowego dla rozwoju R**, i **klienta Microsoft R**.
 
-RTVS jest zainstalowany w: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` gdzie `<version>` jest zwykle `2017` i `<edition>` jest `Community`, `Professional`, lub `Enterprise`.
+RTVS jest zainstalowany w: *% ProgramFiles (x86) %\Microsoft Visual Studio\<wersji >\<edition > Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* gdzie  *\<wersji >* jest zwykle `2017` i  *\<edition >* jest `Community`, `Professional`, lub `Enterprise`.
 
-## <a name="installing-rtvs-in-visual-studio-2015"></a>Instalowanie RTVS w programie Visual Studio 2015
+## <a name="install-rtvs-in-visual-studio-2015"></a>Zainstaluj RTVS w programie Visual Studio 2015
 
 Z programem Visual Studio 2015 musisz zainstalować interpreter języka R i narzędzia R oddzielnie.
 
@@ -88,6 +89,6 @@ Instalacja w trybie offline jest odpowiednia dla komputerów, które nie są po�
 
 - [Wprowadzenie do języka R](getting-started-with-r.md)
 - [Narzędzia języka R przykładowych projektach](getting-started-samples.md)
-- [Uzyskiwanie pomocy](getting-started-help.md)
-- [Ustawienia opcji](options-for-r-tools-in-visual-studio.md)
+- [Pomoc w narzędziach R](getting-started-help.md)
+- [Opcje narzędzia R](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning serwer (dawniej R)](/machine-learning-server/)

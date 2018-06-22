@@ -14,15 +14,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0a78f9fdfd1ea3612d86432619c463d526eed5c2
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 6eebbcd696b55a6034864cc3cf0c4f44eaca8259
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296293"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js
 
-W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli nie została jeszcze zainstalowana Visual Studio 2017, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli nie została jeszcze zainstalowana Visual Studio 2017, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utworzysz projekt aplikacji sieci web Node.js.

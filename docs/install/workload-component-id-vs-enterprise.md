@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d10f671f392965579283a276908ce4e5859ed7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3571ce02bdbe90b406175782ba1e147fdf8f663e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865580"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281423"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 składników katalogu
 
@@ -344,7 +344,7 @@ Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.6.27309.
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# i Visual Basic | 15.0.27205.0 | Wymagane
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 15.7.27617.1 | Wymagane
+Microsoft.VisualStudio.Component.Unity | Narzędzia Visual Studio Tools for Unity | 15.7.27617.1 | Wymagane
 Component.UnityEngine.x64 | Edytor 64-bitowych Unity 2017.2 | 15.6.27406.0 | Zalecane
 Component.UnityEngine.x86 | Edytor 32-bitowej platformy Unity 5.6 | 15.6.27406.0 | Zalecane
 
@@ -1083,7 +1083,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

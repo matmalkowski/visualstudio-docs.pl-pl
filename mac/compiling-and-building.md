@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 89463ca785a995f475519eeba5e2d4af07563428
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453886"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283152"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilowanie i tworzenia w programie Visual Studio dla komputerów Mac
 
@@ -20,7 +20,7 @@ Visual Studio for Mac może służyć do tworzenia aplikacji i tworzenie zestaw�
 
 Za pomocą programu Visual Studio dla komputerów Mac umożliwia tworzenie i uruchamianie natychmiast, tworzy podczas przekazywania nadal kontrolować funkcjonalność kompilacji. Visual Studio for Mac używa MSBuild jako źródłowy system kompilacji.
 
-Wszystkie projekty i rozwiązania utworzone w IDE ma domyślnej konfiguracji kompilacji, która Definiowanie kontekstu dla kompilacji. Te konfiguracje można edytowane lub Utwórz swój własny. Tworzenie lub modyfikowanie tych konfiguracji zostanie automatycznie zaktualizowane do pliku projektu, który jest następnie używany przez program MSBuild do tworzenia projektu.  
+Wszystkie projekty i rozwiązania utworzone w IDE ma domyślnej konfiguracji kompilacji, która Definiowanie kontekstu dla kompilacji. Te konfiguracje można edytowane lub Utwórz swój własny. Tworzenie lub modyfikowanie tych konfiguracji zostanie automatycznie zaktualizowane do pliku projektu, który jest następnie używany przez program MSBuild do tworzenia projektu.
 
 Aby uzyskać więcej informacji dotyczących sposobu tworzenia projektów i rozwiązań w środowisku IDE, zobacz [kompilowanie oraz Oczyszczanie projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md) przewodnik.
 
@@ -42,9 +42,9 @@ Visual Studio for Mac można również wykonać następujące czynności:
 
 Aparat kompilacji MSBuild umożliwia tworzenie aplikacji za pomocą wiersza polecenia.
 
-Zobacz [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) zawartości, aby uzyskać więcej informacji na temat używania programu MSBuild.
+Zobacz [MSBuild](/visualstudio/msbuild/msbuild) zawartości, aby uzyskać więcej informacji na temat używania programu MSBuild.
 
 ## <a name="building-from-visual-studio-team-services"></a>Kompilowanie z programu Visual Studio Team Services
 
-* [Tworzenie aplikacji platformy Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
+* [Tworzenie aplikacji platformy Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Ciągła Integracja z platformą Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

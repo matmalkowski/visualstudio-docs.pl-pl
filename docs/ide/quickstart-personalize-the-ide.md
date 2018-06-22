@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326da0003e73c78a17df489473b49cf6d7b62380
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d10a1136806f66855c51fdcd8e83fb735d9cad99
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255418"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281995"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora
 
 W przypadku tego przewodnika Szybki Start 5 – 10 min możemy dostosować motywu kolorów w Visual Studio i kolory dwóch tekstu w **Edytor tekstu**.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="set-the-color-theme"></a>Ustaw motywu kolorów
 

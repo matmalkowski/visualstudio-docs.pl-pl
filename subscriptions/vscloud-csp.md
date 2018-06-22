@@ -9,21 +9,21 @@ description: Informacje dotyczące dostawców rozwiązań w chmurze o tym, jak k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199082"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283380"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kup i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 
-Partnerzy w [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) zakupić program Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla klientów. 
+Partnerzy w [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) zakupić program Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla klientów.
 
-[Porównanie opcjach subskrypcji chmury](https://www.visualstudio.com/vs/pricing)
+[Porównanie opcjach subskrypcji chmury](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Należy najpierw skonfigurować klienta dzierżawców w Centrum partnerskiego i Utwórz subskrypcję platformy Azure dla tej dzierżawy. 
+Należy najpierw skonfigurować klienta dzierżawców w Centrum partnerskiego i Utwórz subskrypcję platformy Azure dla tej dzierżawy.
 [Dowiedz się więcej](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Jak kupić
@@ -58,9 +58,10 @@ Po potwierdzeniu zakupu można wybrać **Zarządzaj** można przypisać subskryp
 
 Jeśli masz więcej niż jedną subskrypcją platformy Azure dla tego klienta, użyj menu rozwijanego, aby wybrać subskrypcji platformy Azure za pomocą którego wprowadzone zakupów.  **Podsumowanie licencji** pokazuje liczbę subskrypcji, które zostały przypisane i liczby dostępnych dla każdej opcji subskrypcji chmury programu Visual Studio.  Podsumowanie umożliwia również kupić dodatkowe subskrypcji lub Zmniejsz liczbę subskrypcji.
 
-Wybierz **dodać** można przypisać subskrypcji do nowego użytkownika.  Aktualizacje, liczba wyświetlanych, a użytkownik końcowy otrzymuje wiadomość e-mail z powiadomieniem. Użytkownik końcowy może następnie logować się za pomocą adres e-mail podany aby aktywować subskrypcję programu Visual Studio w [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Wybierz **dodać** można przypisać subskrypcji do nowego użytkownika.  Aktualizacje, liczba wyświetlanych, a użytkownik końcowy otrzymuje wiadomość e-mail z powiadomieniem.
+Użytkownik końcowy może następnie logować się za pomocą adres e-mail podany aby aktywować subskrypcję programu Visual Studio w [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Do ponownego przypisania subskrypcji programu Visual Studio do innego użytkownika, możesz usunąć bieżący subskrybenta i dodać nowe subskrybenta. 
+Do ponownego przypisania subskrypcji programu Visual Studio do innego użytkownika, możesz usunąć bieżący subskrybenta i dodać nowe subskrybenta.
 
 Subskrybent nie aktywowano ich subskrypcję programu Visual Studio, może być ponieważ one pominięte wiadomość e-mail z zaproszeniem.  Możesz poprosić o ponowne przesłanie aktywacji zaproszenie do użytkownika w portalu administracyjnym programu Visual Studio za.
 
@@ -81,15 +82,17 @@ Firma Microsoft oferuje rabat 5% 6. jednostki zakupie (dla danego klienta) każd
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Pytanie: jak są **miesięczne** opłat subskrypcji przetwarzania w chmurze?
-A. w pierwszego zakupu obciążony proporcjonalnie ilość tak, aby pokrywał pozostałych dni w bieżącym miesiącu. Na przykład jeśli zakupu 10 Visual Studio Professional miesięczne subskrypcje w chmurze zostało wykonane w 15 kwietnia, a następnie firma Microsoft będzie obciążyć 5 jednostki, ponieważ istnieją pozostanie aktywna przez 15 dni w miesiącu 30-dniowej lub 50% i my prorate jednostki pobieranych przez 50%. Na pierwszy może, a następnie każdego miesiąca do momentu anulowania, pełne 10 jednostek będą naliczane.
+A. w pierwszego zakupu obciążony proporcjonalnie ilość tak, aby pokrywał pozostałych dni w bieżącym miesiącu. Na przykład jeśli zakupu 10 Visual Studio Professional miesięczne subskrypcje w chmurze zostało wykonane w 15 kwietnia, a następnie firma Microsoft będzie obciążyć 5 jednostki, ponieważ istnieją pozostanie aktywna przez 15 dni w miesiącu 30-dniowej lub 50% i my prorate jednostki pobieranych przez 50%.
+Na pierwszy może, a następnie każdego miesiąca do momentu anulowania, pełne 10 jednostek będą naliczane.
 
-Później możesz zwiększyć ilość płatną, będziemy również prorate zwiększona jednostki, które obejmują pozostałych dni w bieżącym miesiącu. Dlatego jeśli zakupiono 1 więcej Visual Studio Professional miesięczne subskrypcję chmury na 10 maja nas rachunku około 0.677 jednostki (pozostały w miesiącu dzień 31 maja 21 dni). 
+Później możesz zwiększyć ilość płatną, będziemy również prorate zwiększona jednostki, które obejmują pozostałych dni w bieżącym miesiącu. Dlatego jeśli zakupiono 1 więcej Visual Studio Professional miesięczne subskrypcję chmury na 10 maja nas rachunku około 0.677 jednostki (pozostały w miesiącu dzień 31 maja 21 dni).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Pytanie: jak są **roczne** opłat subskrypcji przetwarzania w chmurze?
 A. w każdym zakupu obciążony pełna ilość zakupione od razu. Opłaty nie są rozkładane roku i nie bez określenia proporcjonalnego. Jeśli kupisz Roczne subskrypcje w chmurze w różnym czasie w roku, masz subskrypcje odnawianie w różnych miesięcy. Firma Microsoft nie należy wprowadzać wszystkie subskrypcje roczne chmury klienta coterminous, jak często z Microsoft wolumin licencjonowania umowy zakupów.
 
 ### <a name="q-how-do-cancelations-work"></a>Pytanie: jak działają więcej przypadków anulowania?
-A. Jeśli anulujesz subskrypcję chmury programu Visual Studio są anulowanie automatycznego odnawiania. Subskrypcja będzie kontynuowane aż do daty jego normalnej odnowienia i po prostu wygaśnie. Na wygaśnięcie subskrybent Visual Studio nie można już używać programu Visual Studio lub inne korzyści z subskrypcji.
+A. Jeśli anulujesz subskrypcję chmury programu Visual Studio są anulowanie automatycznego odnawiania. Subskrypcja będzie kontynuowane aż do daty jego normalnej odnowienia i po prostu wygaśnie.
+Na wygaśnięcie subskrybent Visual Studio nie można już używać programu Visual Studio lub inne korzyści z subskrypcji.
 
 Z miesięczne subskrypcje w chmurze więcej przypadków anulowania zaczynają obowiązywać pierwszego dnia następnego miesiąca. Anulowanie tylko niektórych klientów miesięczne subskrypcje w chmurze, należy usunąć użytkowników z pierwszego dnia miesiąca dalej, aby upewnić się, że osobom w dalszym ciągu mieć aktywne subskrypcje przypisane.
 
@@ -108,7 +111,7 @@ Tak na przykład, jeśli kupisz 6 subskrypcji miesięczne Visual Studio Professi
 
 Ponadto rabat dotyczy tylko opłat w danym okresie rozliczeniowym miesięcznych. Dlatego jeśli kupisz 5 subskrypcje roczne Visual Studio Professional w jeden miesiąc, a następnie Kup 5 więcej następnego miesiąca, zapłacisz ceny dla wszystkich subskrypcji 10.
 
-Zniżek są uwzględniane w cenową danych w ramach [Centrum partnerskiego](https://partnercenter.microsoft.com). 
+Zniżek są uwzględniane w cenową danych w ramach [Centrum partnerskiego](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>Pytanie: czy istnieją rabaty odnawiania?
 

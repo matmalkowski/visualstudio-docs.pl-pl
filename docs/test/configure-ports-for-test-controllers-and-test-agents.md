@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296296"
 ---
-# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurowanie portów dla kontrolerów testów i agentów testowych
+# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurowanie portów dla kontrolerów testów i agenci testowi
 
 Można zmienić domyślne porty przychodzące używany przez kontrolera testu, agenta testowego i klienta. Może to być konieczne, jeśli chcesz korzystać z kontrolera testów, agenta testowego lub klienta razem niektóre inne oprogramowanie powodujące konflikt z ustawieniami portu. Kolejny powód, aby zmienić porty wynika z ograniczeń zapory między kontrolerem testów i klienta. W takim przypadku można ręcznie skonfigurować port umożliwiających włączenie zaporę, tak, aby kontroler testów może wysyłać wyniki do klienta.
 
@@ -33,22 +34,22 @@ Można zmienić domyślne porty przychodzące używany przez kontrolera testu, a
 
 Domyślny port używany przez kontrolera testu jest 6901 i agenta testowego domyślny port to 6910. Klient korzysta z portu losowe domyślnie, który jest używany do odbierania wyników testu z kontrolera testów. W przypadku wszystkich połączeń przychodzących kontrolera testów uwierzytelnia strony i sprawdza, czy należy do określonej grupy zabezpieczeń.
 
-- **Kontroler testów** są połączenia przychodzące na porcie TCP 6901. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#ConfigurePorts).
+- **Kontroler testów** są połączenia przychodzące na porcie TCP 6901. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [skonfigurować porty przychodzące](#configure-the-incoming-ports).
 
     Kontroler testów musi mieć możliwość połączenia wychodzącego do agenci testowi i do klienta.
 
     > [!NOTE]
     > Kontroler testów musi przychodzące **plików i drukarek udostępnianie** otwarte połączenia.
 
-- **Agent testowy** są połączenia przychodzące na porcie TCP 6910. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#ConfigurePorts).
+- **Agent testowy** są połączenia przychodzące na porcie TCP 6910. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [skonfigurować porty przychodzące](#configure-the-incoming-ports).
 
    Agent testowy musi mieć możliwość połączenia wychodzące z kontrolerem testów.
 
-- **Klient** domyślnie losowy port TCP jest używany dla połączeń przychodzących. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#ConfigurePorts).
+- **Klient** domyślnie losowy port TCP jest używany dla połączeń przychodzących. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [skonfigurować porty przychodzące](#configure-the-incoming-ports).
 
    Kontroler testów próba nawiązania połączenia czas klienta pierwszy, mogą otrzymywać powiadomień zapory.
 
-   W systemie Windows Server 2008 powiadomienia zapory są domyślnie wyłączone i należy ręcznie dodać wyjątki zapory dla programów klienckich (devenv.exe, mstest.exe, mlm.exe) tak, aby umożliwić akceptowanie połączeń przychodzących.
+   W systemie Windows Server 2008, powiadomienia zapory są domyślnie wyłączone i należy ręcznie dodać wyjątki zapory dla programów klienckich (*devenv.exe*, *mstest.exe*, *mlm.exe*) tak, aby umożliwić akceptowanie połączeń przychodzących.
 
 ## <a name="outgoing-connections"></a>Połączenia wychodzące
 
@@ -60,11 +61,11 @@ Losowe porty TCP są używane dla wszystkich połączeń wychodzących.
 
 - **Klient** klient musi mieć możliwość połączenia wychodzące do kontrolera.
 
-## <a name="configure-the-incoming-ports"></a>Skonfiguruj porty przychodzące
+## <a name="configure-the-incoming-ports"></a>Konfigurowanie portów przychodzących
 
 Wykonaj te kroki, aby skonfigurować porty dla kontrolera testów i agenci testowi.
 
-- **Usługa kontrolera** zmodyfikować wartość portu, edytując plik % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config:
+- **Usługa kontrolera** zmodyfikować wartość portu, edytując *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* pliku:
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ Wykonaj te kroki, aby skonfigurować porty dla kontrolera testów i agenci testo
     </appSettings>
     ```
 
-- **Usługa agenta** zmodyfikować, edytując plik % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config port:
+- **Usługa agenta** zmodyfikować, edytując port *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* pliku:
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ Wykonaj te kroki, aby skonfigurować porty dla kontrolera testów i agenci testo
     </appSettings>
     ```
 
-- **Klient** Edytor rejestru i dodaj następujące wartości rejestru (DWORD). Klient użyje jeden z portów z określonego zakresu przy odbieraniu danych z kontrolera testów:
+- **Klient** Edytor rejestru i dodaj następującą w rejestrze (**DWORD**) wartości. Klient użyje jeden z portów z określonego zakresu przy odbieraniu danych z kontrolera testów:
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>Zobacz także
 

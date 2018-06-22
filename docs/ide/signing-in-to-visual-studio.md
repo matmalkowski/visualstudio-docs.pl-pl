@@ -1,5 +1,5 @@
 ---
-title: Zaloguj się do programu Visual Studio
+title: Logowanie do programu Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
@@ -11,14 +11,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948343"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282235"
 ---
-# <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
+# <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
 Można spersonalizować i poprawić komfort Programowanie w programie Visual Studio, jeśli ustawisz konto personalizacji, logując się w środowisku IDE.
 
@@ -26,7 +26,7 @@ Można spersonalizować i poprawić komfort Programowanie w programie Visual Stu
 
 Po zalogowaniu, można uzupełnić środowiska Visual Studio. Na przykład po zalogowaniem się możesz synchronizację ustawień urządzenia, przedłużyć okres próbny i automatycznie łączyć się z usługami Azure, kilka.
 
-Poniżej przedstawiono pełną listę można oczekiwać i co można zrobić po znaku w:  
+Poniżej przedstawiono pełną listę można oczekiwać i co można zrobić po znaku w:
 
 - **Dostęp do programu Visual Studio Dev Essentials** — ten program zawiera oferty bezpłatnego oprogramowania, szkolenia, pomocy technicznej i inne. Zobacz [podstawowe informacje dotyczące programu Visual Studio Dev](http://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
 
@@ -62,9 +62,9 @@ Jeśli nie wylogujesz, automatycznie zalogowano Cię do programu Visual Studio p
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli wystąpią problemy podczas logowania, zobacz [kont Obsługa](https://www.visualstudio.com/subscriptions/support/) stronę, aby uzyskać pomoc.
+Jeśli wystąpią problemy podczas logowania, zobacz [kont Obsługa](https://visualstudio.microsoft.com/subscriptions/support/) stronę, aby uzyskać pomoc.
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

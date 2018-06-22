@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40c68aba0599f2f86285cbea841d06f0a652828a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abec4dd6d5cded79e1f25a6dbb5ec2e55c2d444f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921489"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282758"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Zmiany zwracanego typu metody DataContext nie można cofnąć
 
-Nie można cofnąć zmiany zwracanego typu metody DataContext. Aby przywrócić automatycznie wygenerowany typ, musisz przeciągnąć element z Eksploratora serwera Explorer/bazy danych do Projektanta obiektów relacyjnych ponownie. Czy na pewno chcesz zmienić zwracany typ?
+Nie można cofnąć zmiany zwracanego typu metody DataContext. Aby przywrócić automatycznie wygenerowany typ, musisz przeciągnąć element z **Eksploratora serwera** lub **Eksploratora bazy danych** do Projektanta obiektów relacyjnych ponownie. Czy na pewno chcesz zmienić zwracany typ?
 
 Zwracany typ <xref:System.Data.Linq.DataContext> metoda różni się w zależności od tego, gdzie upuścić element [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Jeśli musisz porzucić elementu bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> utworzeniu metodę, która ma zwracany typ klasy jednostka. Jeśli element jest upuścić nad pustym obszarem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> metodę zwracającą automatycznie wygenerowany typ jest tworzony. Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu do okienka metody. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typu zwracanego** właściwości w **właściwości** okna.
 

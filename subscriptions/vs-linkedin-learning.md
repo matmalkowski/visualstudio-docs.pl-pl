@@ -9,19 +9,19 @@ description: Więcej informacji na temat korzyści LinkedIn Learning zawarte w r
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dbc3f5bc39a21f76f8b45ba5da20ed8504ea1349
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 5f9e25838112862bf4b4d02b7ac57e2f7b7c5fc9
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233454"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283093"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści LinkedIn Learning w ramach subskrypcji programu Visual Studio
 
 Odblokowanie możliwości LinkedIn z dostępem do osób, szczegółowych informacji i umiejętności potrzebne do zawodowych z wyprzedzeniem.  Dowiedz się najwyżej w żądanie business, technologii i creative umiejętności z branży ekspertów.
 
 Wybrane subskrypcje Visual Studio obejmują subskrypcji LinkedIn Premium, co obejmuje uczenie LinkedIn.  Długość subskrypcji Premium zależy od typu subskrypcji programu Visual Studio, do których masz.
-Musisz mieć konto LinkedIn przeprowadzać korzyści LinkedIn Learning.  Jeśli nie masz już, będziesz mieć możliwość utwórz je aby aktywować subskrypcję Premium.  
+Musisz mieć konto LinkedIn przeprowadzać korzyści LinkedIn Learning.  Jeśli nie masz już, będziesz mieć możliwość utwórz je aby aktywować subskrypcję Premium.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
@@ -35,19 +35,19 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 3. Jeśli masz już konto LinkedIn i po zarejestrowaniu się automatycznie, natychmiast spowoduje przekierowanie do strony aktywacji korzyści uczenie LinkedIn.  Jeśli masz konto LinkedIn, ale użytkownik nie zostanie automatycznie zalogowany, wystarczy wprowadzić nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**.  Przejdź do [ten krok](#activate-your-offer) aktywować ofertę.
 
 ### <a name="create-a-linkedin-account"></a>Utwórz konto LinkedIn
-4. Jeśli nie masz jeszcze konta LinkedIn, kliknij przycisk **Dołącz teraz**.  
+4. Jeśli nie masz jeszcze konta LinkedIn, kliknij przycisk **Dołącz teraz**.
 
     ![Teraz sprzężenia Learning LinkedIn](_img\vs-linkedin\vs-linkedin-join-now.png)
 
-5. Wprowadź informacje osobiste, wybierz nazwę użytkownika i hasło, a następnie kliknij przycisk **Dołącz teraz**. 
+5. Wprowadź informacje osobiste, wybierz nazwę użytkownika i hasło, a następnie kliknij przycisk **Dołącz teraz**.
 
     ![LinkedIn Learning Tworzenie konta](_img\vs-linkedin\vs-linkedin-create-account.png)
 
-6. Określ nazwę kraju i kod POCZTOWY, a następnie kliknij przycisk **dalej**.  
+6. Określ nazwę kraju i kod POCZTOWY, a następnie kliknij przycisk **dalej**.
 
     ![LinkedIn uczenia lokalizacji zestawu](_img\vs-linkedin\vs-linkedin-set-location.png)
 
-7. Następnie zostanie zapewnione niektóre informacje o użytkowniku w profilu.  Wskazuje, czy w przypadku gdy uczniowie i podaj najnowszych stanowisko, firmy oraz z branży. 
+7. Następnie zostanie zapewnione niektóre informacje o użytkowniku w profilu.  Wskazuje, czy w przypadku gdy uczniowie i podaj najnowszych stanowisko, firmy oraz z branży.
 
     ![LinkedIn Learning roli](_img\vs-linkedin\vs-linkedin-role.png)
 
@@ -55,7 +55,7 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 
     ![LinkedIn Learning zainteresowań](_img\vs-linkedin\vs-linkedin-interests.png)
 
-9.  Jeśli podany adres e-mail zostały wysłane wiadomość zawierającą kod potwierdzenia.  Wiadomość pochodzi od "Linkedin wiadomości".  Jeśli nie możesz znaleźć w Twojej skrzynce odbiorczej, sprawdź, czy foldery wiadomości-śmieci.  Wprowadź kod z komunikatu, a następnie kliknij przycisk **Sprawdź**.  
+9.  Jeśli podany adres e-mail zostały wysłane wiadomość zawierającą kod potwierdzenia.  Wiadomość pochodzi od "Linkedin wiadomości".  Jeśli nie możesz znaleźć w Twojej skrzynce odbiorczej, sprawdź, czy foldery wiadomości-śmieci.  Wprowadź kod z komunikatu, a następnie kliknij przycisk **Sprawdź**.
 
     ![Sprawdź LinkedIn Learning](_img\vs-linkedin\vs-linkedin-verify.png)
 
@@ -63,27 +63,27 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 
     ![LinkedIn Learning kontaktów](_img\vs-linkedin\vs-linkedin-contacts.png)
 
-11. Alerty zadań umożliwiają powiadamianych zadań w Twoim rejonie, który może być odpowiedni dla Ciebie.  Można teraz ustawić alert zadania lub pominąć ten krok, aby kontynuować tworzenie konta.  
+11. Alerty zadań umożliwiają powiadamianych zadań w Twoim rejonie, który może być odpowiedni dla Ciebie.  Można teraz ustawić alert zadania lub pominąć ten krok, aby kontynuować tworzenie konta.
 
     ![Zadania uczenia LinkedIn alertów](_img\vs-linkedin\vs-linkedin-job-alerts.png)
 
-12. Na podstawie preferencji i informacje osobiste, podane pory, zobaczysz wybór zalecane połączeń, aby rozpocząć tworzenie sieci.  Można dodać połączenia lub pominąć ten krok.  
+12. Na podstawie preferencji i informacje osobiste, podane pory, zobaczysz wybór zalecane połączeń, aby rozpocząć tworzenie sieci.  Można dodać połączenia lub pominąć ten krok.
 
 13. Aby dodać zdjęcia profilu, kliknij przycisk **Przekaż zdjęcie**.  W przeciwnym razie można pominąć ten krok.  (Możesz zawsze dodać zdjęcie później.)
 
     ![LinkedIn Learning Przekaż zdjęcie](_img\vs-linkedin\vs-linkedin-photo.png)
 
-14. Możesz pobrać aplikację LinkedIn na Twój telefon na dowolnym dostęp do sieci.  Wyślij łącze na Twój telefon lub pobranie bezpośrednio ze sklepu z aplikacjami lub Google Play.  Możesz również kliknąć **dalej** teraz pominąć ten krok i Pobierz aplikację później.  
+14. Możesz pobrać aplikację LinkedIn na Twój telefon na dowolnym dostęp do sieci.  Wyślij łącze na Twój telefon lub pobranie bezpośrednio ze sklepu z aplikacjami lub Google Play.  Możesz również kliknąć **dalej** teraz pominąć ten krok i Pobierz aplikację później.
 
     ![LinkedIn Learning Przekaż zdjęcie](_img\vs-linkedin\vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Aktywuj ofertę
-15. Skoro już zalogowany do konta LinkedIn lub utworzyć nowy, wszystko jest gotowe do aktywowania subskrypcji Premium i rozpocząć korzystających z LinkedIn Learning.  Kliknij przycisk **aktywować ofertę**. 
+15. Skoro już zalogowany do konta LinkedIn lub utworzyć nowy, wszystko jest gotowe do aktywowania subskrypcji Premium i rozpocząć korzystających z LinkedIn Learning.  Kliknij przycisk **aktywować ofertę**.
 
     ![Aktywuj LinkedIn Learning](_img\vs-linkedin\vs-linkedin-Activate1.png)
 
 
-16. Możesz rozpocząć eksplorowanie umiejętności, które są potrzebne.  Wybierz z listy zalecenia, Wyszukaj inne umiejętności, lub kliknij przycisk **Pomiń** aby kontynuować bez wybierania umiejętności. 
+16. Możesz rozpocząć eksplorowanie umiejętności, które są potrzebne.  Wybierz z listy zalecenia, Wyszukaj inne umiejętności, lub kliknij przycisk **Pomiń** aby kontynuować bez wybierania umiejętności.
 
     ![Umiejętności Learning LinkedIn](_img\vs-linkedin\vs-linkedin-skills.png)
 
@@ -105,15 +105,15 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 
 
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Pytanie: czy odnowić subskrypcję, Moje korzyści LinkedIn Learning również odnawia?
-Odpowiedź: nie oferta LinkedIn Learning jest dostępne tylko dla nowych subskrybentów. 
+Odpowiedź: nie oferta LinkedIn Learning jest dostępne tylko dla nowych subskrybentów.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu LinkedIn Learning?  Zobacz następujące zasoby:
     - Pomoc dotycząca [przy użyciu uczenia LinkedIn](https://www.linkedin.com/help/learning).
     - Pomoc dotycząca ogólne pytania o [LinkedIn](https://www.linkedin.com/help/linkedin) takich jak tworzenie konta i profile i obsługę sieci.
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/).    
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).

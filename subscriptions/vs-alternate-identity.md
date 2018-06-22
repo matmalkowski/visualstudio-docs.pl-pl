@@ -9,12 +9,12 @@ description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji program
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 2899c6ba8c87d6f814dc1f0d59e6bd9defc214a2
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b8d260a101840b04bd2c54e64665abbec78dbe7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845603"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283396"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 
@@ -50,27 +50,26 @@ Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu możn
 
 2. Przejdź do **subskrypcje**.
 
-  ![Dodawanie alternatywnego konta — Przejdź do subskrypcji w wersji programu VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+   ![Dodawanie alternatywnego konta — Przejdź do subskrypcji w wersji programu VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Wybierz **Dodawanie alternatywnego konta**.
 
-  ![Wybierz pozycję Dodaj konto alternatywnej ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Wybierz pozycję Dodaj konto alternatywnej ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Dodaj konto służbowe.
 
-  ![Dodaj konto służbowe](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Dodaj konto służbowe](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Logować się do programu Visual Studio Team Services (https://{youraccount}.visualstudio.com), należy użyć konta firmowego lub szkolnego.
 
-  ![Użyj konta służbowego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Użyj konta służbowego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości mogą korzystać z zalet subskrypcji wymagające Zaloguj się przy użyciu alternatywnego konta (IDE programu VSTS i Azure).
-
-Aby uzyskać więcej informacji dotyczących dodawania konta alternatywne, zobacz [Moje Visual Studio — często zadawane pytania](https://www.visualstudio.com/my/myvsfaq#alternate) strony.
+   Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości mogą korzystać z zalet subskrypcji wymagające Zaloguj się przy użyciu alternatywnego konta (IDE programu VSTS i Azure).
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>Pytanie: Dlaczego nie VSTS rozpoznaje mnie jako subskrybent Visual Studio?
+
 A: VSTS powinien automatycznie rozpoznać subskrypcji podczas logowania przy użyciu tożsamości głównego lub alternatywnego. Jeśli nie, możesz spróbować kilka rzeczy:
 
 * Sprawdź, czy masz aktywnych subskrypcji programu Visual Studio który [obejmuje VSTS jako świadczenie](vs-vsts.md).
@@ -79,4 +78,4 @@ A: VSTS powinien automatycznie rozpoznać subskrypcji podczas logowania przy uż
 
 * Odwiedź stronę [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) co najmniej raz przed logowania do usługi VSTS.
 
-Jeśli nadal VSTS nie rozpoznaje subskrypcji, [się z pomocą techniczną](https://www.visualstudio.com/team-services/support/)
+Jeśli nadal VSTS nie rozpoznaje subskrypcji, [się z pomocą techniczną](https://visualstudio.microsoft.com/team-services/support/)

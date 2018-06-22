@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3251f3f4f9ee43584d427ada7c014a566dc4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d90f1bb73b4d327cc1deabc94fbb4f97c8421e69
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567983"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302781"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata — Element (MSBuild)
 Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  
@@ -34,7 +34,7 @@ Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawier
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
 

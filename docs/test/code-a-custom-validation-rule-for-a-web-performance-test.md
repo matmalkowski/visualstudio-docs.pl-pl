@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971400"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282281"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Kodowanie niestandardowej reguły walidacji dla testów wydajności sieci Web
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły walidacji dla testów wydajności sieci web
 
 Można utworzyć własne reguły sprawdzania poprawności. Aby to zrobić, klasy reguły pochodną klasy reguły sprawdzania poprawności. Reguły sprawdzania poprawności pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> klasy podstawowej.
 

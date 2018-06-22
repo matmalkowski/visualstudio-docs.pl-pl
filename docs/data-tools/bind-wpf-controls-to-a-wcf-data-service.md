@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a7095b1cd8e386ec93d95f2a7cd13ed753b13a95
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234504"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282911"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -47,7 +47,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 -   Visual Studio
 
--   Dostęp do działającego wystąpienia programu SQL Server lub SQL Server Express z AdventureWorksLT przykładowej bazy danych do niego dołączony. Możesz pobrać bazę danych AdventureWorksLT z [witryny sieci Web w witrynie CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+-   Dostęp do działającego wystąpienia programu SQL Server lub SQL Server Express z AdventureWorksLT przykładowej bazy danych do niego dołączony. Możesz pobrać bazę danych AdventureWorksLT z [witryny sieci web w witrynie CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
 
 Znajomość następujące pojęcia jest również przydatna, ale nie są wymagane do ukończenia Instruktaż:
 
@@ -55,9 +55,9 @@ Znajomość następujące pojęcia jest również przydatna, ale nie są wymagan
 
 -   Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   A modeli danych jednostki ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie struktury jednostek](/dotnet/framework/data/adonet/ef/overview).
+-   A modeli danych jednostki ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).
+-   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [— wiązanie danych omówienie](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
 Skorzystaniem z tego przewodnika, tworząc projekt [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
@@ -112,7 +112,7 @@ Utwórz [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)
 
 1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
-2.  Na liście Zainstalowane szablony kliknij **Web**, a następnie wybierz **usługi danych WCF** elementu projektu.
+2.  W **zainstalowane szablony** kliknij **Web**, a następnie wybierz **usługi danych WCF** elementu projektu.
 
 3.  W **nazwa** wpisz `AdventureWorksService.svc`i kliknij przycisk **Dodaj**.
 
@@ -165,7 +165,7 @@ Aby wyświetlić dane z [!INCLUDE[ss_data_service](../data-tools/includes/ss_dat
 
 10. W **usług** kliknij **AdventureWorksService.svc**, a następnie kliknij przycisk **OK**.
 
-     Visual Studio pobierze informacje usługi, a następnie zwraca do **konfiguracji źródła danych** kreatora.
+     Pobiera informacje o usłudze Visual Studio, a następnie wróci **konfiguracji źródła danych** kreatora.
 
 11. W **Dodaj odwołanie do usługi** kliknij przycisk **Zakończ**.
 
@@ -289,7 +289,7 @@ Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktual
 
 1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Upewnij się, że rozwiązanie kompilacje bez błędów.
 
-2.  Naciśnij klawisz **klawisze Ctrl + F5**.
+2.  Naciśnij klawisz **Ctrl**+**F5**.
 
      Uruchamia program Visual Studio **AdventureWorksService** projekt bez debugowania go.
 

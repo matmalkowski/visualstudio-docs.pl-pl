@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544851ca500e417cbc3010c23ad122a4ab1f2cc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567946"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302606"
 ---
 # <a name="parameter-element"></a>Parameter — Element
 Zawiera informacje na temat określonego parametru dla zadania, które są generowane przez `UsingTask``TaskFactory`.  Nazwa elementu jest nazwą parametru.  Aby uzyskać więcej informacje, zobacz [usingtask — Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -36,7 +36,7 @@ Zawiera informacje na temat określonego parametru dla zadania, które są gener
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <ParameterGroup ParameterType="SystemType"  
     Output="true/false"  
     Required="true/false" />  

@@ -2,7 +2,7 @@
 title: Modyfikowanie Visual Studio 2017 | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak zmodyfikuj program Visual Studio, krok po kroku.
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2018
+ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab0aa786dcaf5e99290dce79bc72deb9f0d5805
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296359"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie Visual Studio 2017 przez dodanie lub usunięcie obciążeń i składniki
 
@@ -36,20 +37,20 @@ Poniżej przedstawiono sposób.
 >[!IMPORTANT]
 >Aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio, musisz zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i programu Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-1. Instalator programu Visual Studio odnaleźć na tym komputerze.  
+1. Instalator programu Visual Studio odnaleźć na tym komputerze.
 
-     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do literę **V**, w którym znajduje się w **Instalator programu Visual Studio**.  
+     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do literę **V**, w którym znajduje się w **Instalator programu Visual Studio**.
 
      ![Instalator programu Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "zlokalizować Instalator programu Microsoft Visual Studio")
 
      >[!NOTE]
-     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz pozycję **Modyfikuj**.  
+2. Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz pozycję **Modyfikuj**.
 
      ![Uruchom lub zmodyfikuj program Visual Studio](media/modify-visual-studio.png "zmodyfikować 2017 Visual Studio")
 
-     Jeśli masz oczekujących aktualizacji przycisk Modyfikuj jest w innym miejscu. Kliknij przycisk **więcej**, a następnie wybierz pozycję **Modyfikuj**.   
+     Jeśli masz oczekujących aktualizacji przycisk Modyfikuj jest w innym miejscu. Dzięki temu można zmodyfikować Visual Studio bez aktualizacji, należy wybrać w tym celu. Kliknij przycisk **więcej**, a następnie wybierz pozycję **Modyfikuj**.
 
      ![Zaktualizuj lub zmodyfikuj program Visual Studio](media/modify-or-update-visual-studio.png "aktualizacji lub zmodyfikować Visual Studio 2017 r.")
 
@@ -57,7 +58,7 @@ Poniżej przedstawiono sposób.
 
     ![Okno dialogowe programu Visual Studio 2017 ustawienia](media/vs2017-modify-workloads.PNG "wybierz obciążenie w Visual Studio 2017 r.")
 
-4. Wybierz **Modyfikuj** ponownie.  
+4. Wybierz **Modyfikuj** ponownie.
 
 5. Po zainstalowaniu nowego obciążeń i składników, wybierz **uruchamianie**.
 
@@ -67,7 +68,7 @@ Jeśli nie chcesz dostosować instalację programu Visual Studio, wybierz za pom
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony, aby uzyskać pomoc. Można również skontaktować się nam pomocy instalacji przez [komunikatora](https://www.visualstudio.com/vs/support/#talktous) (tylko angielski); Aby uzyskać więcej informacji, zobacz [programu Visual Studio "Skontaktuj się z nami" strony](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony, aby uzyskać pomoc. Można również skontaktować się nam pomocy instalacji przez [komunikatora](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko angielski); Aby uzyskać więcej informacji, zobacz [programu Visual Studio "Skontaktuj się z nami" strony](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

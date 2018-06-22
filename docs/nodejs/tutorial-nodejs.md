@@ -13,15 +13,15 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f3d8bb6eb64433ef8e2cd369ed0c1e0ba59a03dd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765833"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282512"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
-Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
 
 Z tego samouczka, dowiesz się, jak:
 > [!div class="checklist"]
@@ -51,7 +51,7 @@ Express jest platforma aplikacji sieci web, używany jako serwer podstawę Node.
 
 * Musi mieć Visual Studio 2017 r zainstalowany i jego obciążenie programowanie Node.js.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
     Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 
@@ -147,7 +147,7 @@ Aplikacja używa Pug frontonu Framework JavaScript. Pug korzysta z kodu znacznik
         res.render('index', { title: 'Express', "data" });
     });
     ```
-    
+
     Poprzedni kod ustawia bieżącej strony przy użyciu obiektu router Express i renderuje stronę, przekazanie obiektu tytuł i danych do strony. *Index.pug* określony plik jako stronę, aby załadować kiedy *index.js* działa. *index.js* jest skonfigurowany jako domyślną trasę w *app.js* kodu (tego nie pokazano).
 
     Aby zademonstrować kilka funkcji programu Visual Studio, jest dostępna wystąpił błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy naprawić błąd, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.

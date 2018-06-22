@@ -10,34 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd8c5100158b5761047d38e10f953fc832e0ce2b
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569306"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302887"
 ---
 # <a name="whats-new-in-msbuild-15"></a>What's New in 15 MSBuild
-MSBuild jest teraz dostępna jako część [.NET Core SDK](https://www.microsoft.com/net/download/core) i można tworzyć projektów .NET Core w systemie Windows, macOS i Linux.  
+
+MSBuild jest teraz dostępna jako część [.NET Core SDK](https://www.microsoft.com/net/download/core) i można tworzyć projektów .NET Core w systemie Windows, macOS i Linux.
 
 ## <a name="changed-path"></a>Zmieniona ścieżka
+
  Program MSBuild został zainstalowany w folderze w każdej wersji programu Visual Studio. Na przykład `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild`. Można również użyć następujące modułu programu PowerShell, aby zlokalizować MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
  Program MSBuild nie jest już zainstalowane w globalnej pamięci podręcznej zestawów. Aby odwołać MSBuild programowo, należy użyć pakietów NuGet.
 
-## <a name="changed-properties"></a>Zmiany właściwości  
- Następujące właściwości programu MSBuild zostały zaktualizowane z powodu nowego numeru wersji.  
+## <a name="changed-properties"></a>Zmiany właściwości
 
--   `MSBuildToolsVersion` w tej wersji narzędzi jest 15.0. Wersja zestawu jest 15.1.0.0.
+ Następujące właściwości programu MSBuild zostały zaktualizowane z powodu nowego numeru wersji.
 
--   `MSBuildToolsPath` nie ma położenie ustalone. Domyślnie znajduje się w folderze MSBuild\15.0\Bin względną wobec lokalizacji instalacji programu Visual Studio, ale godzina instalacji programu Visual Studio można zmienić lokalizacji instalacji.
+- `MSBuildToolsVersion` w tej wersji narzędzi jest 15.0. Wersja zestawu jest 15.1.0.0.
 
--   `ToolsVersion` Nie ustawiono wartości w rejestrze.  
+- `MSBuildToolsPath` nie ma położenie ustalone. Domyślnie znajduje się w folderze MSBuild\15.0\Bin względną wobec lokalizacji instalacji programu Visual Studio, ale godzina instalacji programu Visual Studio można zmienić lokalizacji instalacji.
 
--   `SDK35ToolsPath` i `SDK40ToolsPath` właściwości wskaż zestawu .NET Framework SDK, który jest spakowany w tej wersji programu Visual Studio (na przykład 10.0A dla narzędzi 4.X).  
+- `ToolsVersion` Nie ustawiono wartości w rejestrze.
+
+- `SDK35ToolsPath` i `SDK40ToolsPath` właściwości wskaż zestawu .NET Framework SDK, który jest spakowany w tej wersji programu Visual Studio (na przykład 10.0A dla narzędzi 4.X).
 
 ## <a name="updates"></a>Aktualizacje
-- [Element projektu](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybut teraz jest opcjonalne. Aby uzyskać więcej informacji, zobacz [pakietów, metadane i platform](/dotnet/core/packages) i [dodatki do csproj format .NET Core](/dotnet/core/tools/csproj).
+
+- [Element projektu](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybut teraz jest opcjonalne. Aby uzyskać więcej informacji, zobacz [jak: zestawy SDK projektu MSBuild użyj](../msbuild/how-to-use-project-sdk.md), a także [pakietów, metadane i platform](/dotnet/core/packages) i [dodatki do csproj format .NET Core](/dotnet/core/tools/csproj).
 - [Pozycja elementu](../msbuild/item-element-msbuild.md) poza cele ma nową `Update` atrybutu. Ponadto ograniczenie `Remove` atrybut został wyeliminowany.
 - `Directory.Build.props` to zapewnia dostosowań do projektów w katalogu plik zdefiniowane przez użytkownika. Ten plik jest automatycznie importowany z Microsoft.Common.props, chyba że właściwość `ImportDirectoryBuildTargets` ustawiono **false**. `Directory.Build.targets` zostaną zaimportowane przez Microsoft.Common.targets.
 - Opcjonalnie można wyrazić wszystkich metadanych o nazwie, która nie koliduje to z bieżącą listę atrybutów jako atrybut. Aby uzyskać więcej informacji, zobacz [elementu](../msbuild/item-element-msbuild.md).

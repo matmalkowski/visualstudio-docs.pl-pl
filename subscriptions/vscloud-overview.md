@@ -9,23 +9,22 @@ description: Wynajmować Visual Studio Professional i Visual Studio Enterprise n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196430"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302834"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupować subskrypcje w chmurze programu Visual Studio Professional i Visual Studio Enterprise
 
-Można również kupić [subskrypcji Visual Studio Professional i Visual Studio Enterprise](https://www.visualstudio.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są to zwany subskrypcje w chmurze.
+Można również kupić [subskrypcji Visual Studio Professional i Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są one nazywane subskrypcje w chmurze.
 
-[Porównanie korzyści subskrypcji chmury i cen](https://www.visualstudio.com/vs/pricing/)
+[Porównanie korzyści subskrypcji chmury i cen](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
-*   Aby rozliczyć swoje zakupy, konieczne będzie [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/).
-Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupu lub podczas pierwszego zakupu w witrynie Marketplace programu Visual Studio.
+*   Aby rozliczyć swoje zakupy, należy [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/). Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupu lub podczas pierwszego zakupu w witrynie Marketplace programu Visual Studio.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Jak kupić subskrypcje w chmurze
 
@@ -57,16 +56,13 @@ Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupu lub podcz
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Anuluj odnowienia subskrypcji chmury, które zostały zakupione
-
+## <a name="manage-subscriptions"></a>Anuluj odnowienia subskrypcji chmury, które zostały zakupione
 
 *   Aby zmienić liczbę zakupionych subskrypcji:
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Aby anulować te subskrypcje, Zmniejsz liczbę subskrypcji na wartość zero (0).
-Nie będą one odnowić na początku następnym okresie rozliczeniowym (pierwszy następnego miesiąca dla miesięczne subskrypcje w chmurze; 12 miesięcy później Roczne subskrypcje w chmurze).
+*   Aby anulować te subskrypcje, Zmniejsz liczbę subskrypcji na wartość zero (0). Nie będą one odnowić na początku następnym okresie rozliczeniowym (pierwszy następnego miesiąca dla miesięczne subskrypcje w chmurze; 12 miesięcy później Roczne subskrypcje w chmurze).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Kup teraz subskrypcje w chmurze
 
@@ -78,6 +74,6 @@ Nie będą one odnowić na początku następnym okresie rozliczeniowym (pierwszy
 ## <a name="related-resources"></a>Zasoby pokrewne
 
 * [Visual Studio subskrypcje administracji portalu](https://manage.visualstudio.com/)
-* [Obsługa subskrypcji w usłudze Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Obsługa subskrypcji w usłudze Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio subskrypcję chmury rozliczeń — często zadawane pytania](vscloud-billing-faq.md)
 * [Visual Studio subskrypcję chmury zakupu dla dostawców usług kryptograficznych](vscloud-csp.md)

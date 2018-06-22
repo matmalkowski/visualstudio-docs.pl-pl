@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296305"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Zainstaluj program Visual Studio 2017 na o niskiej przepustowości lub zawodnych w środowiskach sieci
 
 Zalecamy wypróbowanie Instalator sieci web programu Visual Studio&mdash;naszym zdaniem znajdziesz ją dobrej doświadczenie w większości sytuacji.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Jednak jeśli połączenie z Internetem jest niedostępne lub zawodnych, można użyć wiersza polecenia utworzyć lokalnej pamięci podręcznej plików trzeba wykonać instalację w trybie offline. Poniżej przedstawiono sposób.
@@ -46,7 +47,7 @@ Plik Instalatora&mdash;lub dokładniej, plik inicjujący&mdash;będzie odpowiada
 
 ## <a name="step-2---create-a-local-install-cache"></a>Krok 2 — Tworzenie instalacji lokalnej pamięci podręcznej
 
-Musi mieć połączenie internetowe, aby ukończyć ten krok. Aby utworzyć lokalnego układu, otwórz wiersz polecenia i użyj jednej z poniższych przykładach poleceń: tutaj przykładów założono, że używasz wersji społeczności programu Visual Studio; Dostosuj polecenia odpowiednie dla posiadanej wersji.
+Musi mieć połączenie internetowe, aby ukończyć ten krok. Aby utworzyć lokalnego układu, otwórz wiersz polecenia i użyj jednej z poniższych przykładach poleceń. Tutaj przykładów założono, że używasz wersji społeczności programu Visual Studio; Dostosuj polecenia odpowiednie dla posiadanej wersji.
 
 - Dla sieci web .NET i .NET — rozwój pulpitu Uruchom polecenie:
 
@@ -106,7 +107,7 @@ Uruchom instalację za pomocą tego polecenia:
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
@@ -120,3 +121,4 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 obciążenia i składnik identyfikatorów](workload-and-component-ids.md)

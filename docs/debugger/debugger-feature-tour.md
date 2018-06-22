@@ -1,8 +1,8 @@
 ---
-title: Pierwsze spojrzenie na debugera
-description: Szybkie Spójrz na różne funkcje debuger programu Visual Studio.
+title: Wprowadzenie do debugowania w programie Visual Studio
+description: Wprowadzenie do debugowania aplikacji za pomocą debugera programu Visual Studio
 ms.custom: mvc
-ms.date: 03/27/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,36 +13,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a2a01a392ee87d220079ba8f3d8704d739b83ae3
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691095"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303129"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debuger programu Visual Studio
 
-W tym temacie przedstawiono funkcje debugera programu Visual Studio. Jeśli chcesz z niego skorzystać, otwierając własną aplikację w programie Visual Studio, możesz to zrobić, lub można skorzystać z przykładowych aplikacji przy użyciu [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+W tym temacie przedstawiono narzędzi debugera w programie Visual Studio. W kontekście programu Visual Studio gdy użytkownik *debugowanie aplikacji*, zwykle oznacza to, czy korzystasz z aplikacji w debugerze (oznacza to, w trybie debugowania). Po wykonaniu tej czynności debuger zapewnia wiele sposobów, aby wyświetlić czynności kod po uruchomieniu. Można wykonywać krokowo kodu i przyjrzyj się wartościami przechowywanymi w zmiennych, obserwowanie można ustawić na zmiennych, aby zobaczyć zmiany wartości, ścieżka wykonywania kodu, można sprawdzić i wsp. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących bezwzględną](../debugger/debugging-absolute-beginners.md) przed rozpoczęciem tego tematu.
 
 Funkcje opisane w tym miejscu są stosowane do języka C#, C++, Visual Basic, JavaScript i innych języków obsługiwanych przez program Visual Studio (inaczej w przypadku gdy).
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomienia debugera
 
-Aby debugować, należy uruchomić aplikację w debugerze procesu aplikacji. F5 (**Debuguj > Rozpocznij debugowanie**) jest najczęściej w tym celu. Jednak prawo teraz może nie wybrano żadnych punktów przerwania, aby zbadać aplikacji kodu, więc firma Microsoft będzie zrobić w pierwszej kolejności, a następnie uruchom debugowanie.
+Aby debugować, należy uruchomić aplikację w debugerze procesu aplikacji. **F5** (**Debuguj > Rozpocznij debugowanie**) jest najczęściej w tym celu. Jednak prawo teraz może nie wybrano żadnych punktów przerwania, aby zbadać aplikacji kodu, więc firma Microsoft będzie zrobić w pierwszej kolejności, a następnie uruchom debugowanie. Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio należy zawiesić kodu uruchomionej, aby móc przeglądać wartości zmiennych, ani zachowanie pamięci lub czy jest pobieranie uruchamiana gałąź kodu. 
 
 Jeśli plik jest otwarty w edytorze kodu można ustawić punktu przerwania, klikając na marginesie na lewo od wiersza kodu.
 
 ![Ustaw punkt przerwania](../debugger/media/dbg-tour-set-a-breakpoint.gif "Ustaw punkt przerwania")
 
-Naciśnij klawisz F5 (**Debuguj > Rozpocznij debugowanie**) i debuger działa dla pierwszego punktu przerwania, który wykryje. Jeśli aplikacja nie jest jeszcze uruchomiona, F5 uruchomienie debugera i zatrzymuje się na pierwszym punktu przerwania.
+Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub **Rozpocznij debugowanie** przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie ") w pasku narzędzi debugowania i używa debugera do pierwszego punktu przerwania, który wykryje. Jeśli aplikacja nie jest jeszcze uruchomiona, F5 uruchomienie debugera i zatrzymuje się na pierwszym punktu przerwania.
 
 Punkty przerwania są to przydatne, gdy wiesz, wiersz kodu lub części kodu, który ma zostać zbadany szczegółowo.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Przejdź do kodu w debugerze przy użyciu poleceń krokowych
+## <a name="navigate"></a> Przejdź do kodu w debugerze przy użyciu poleceń krokowych
 
 Udostępniamy skróty klawiaturowe dla większości poleceń, ponieważ ich nawigacji kodu aplikacji szybciej. (Odpowiednik polecenia takie jak polecenia menu są wyświetlane w nawiasach).
 
-Aby uruchomić aplikację w debugerze, naciśnij klawisz F11 (**Debuguj > Wkrocz**). Jest F11 **Step Into** poleceń i zmienia aplikacji wykonanie jednej instrukcji w czasie. Po uruchomieniu aplikacji z F11 debuger dzieli się na pierwszej instrukcji, który jest wykonywany.
+Aby uruchomić aplikację w debugerze, naciśnij klawisz **F11** (**Debuguj > Wkrocz**). Jest F11 **Step Into** poleceń i zmienia aplikacji wykonanie jednej instrukcji w czasie. Po uruchomieniu aplikacji z F11 debuger dzieli się na pierwszej instrukcji, który jest wykonywany.
 
 ![F11 Wkrocz](../debugger/media/dbg-tour-f11.png "F11 wkroczyć do")
 
@@ -55,7 +55,7 @@ F11 jest dobrym sposobem Sprawdź przepływ wykonania w najbardziej szczegółow
 
 ## <a name="step-over-code-to-skip-functions"></a>Przekrocz nad kod, aby pominąć funkcji
 
-Podczas pracy w wierszu kodu, który jest wywołanie metody lub funkcji, można nacisnąć klawisz F10 (**Debuguj > Step Over**) zamiast F11.
+Podczas pracy w wierszu kodu, który jest wywołanie metody lub funkcji, można nacisnąć klawisz **F10** (**Debuguj > Step Over**) zamiast F11.
 
 F10 wyjście z kodu bez Wkraczanie do funkcji lub metody w kodzie aplikacji (kod nadal wykonuje). Naciskając F10, można pominąć kod, który użytkownik nie chce w. W ten sposób szybki dostęp do kodu, która Cię interesuje więcej.
 
@@ -88,13 +88,13 @@ Za pomocą tego przycisku jest podobne do tymczasowego punktu przerwania. To pol
 
 Czasami można kontynuować sesję debugowania, ale wcześniejszego debugera aż po bieżącej funkcji.
 
-Naciśnij klawisze Shift + F11 (lub **Debuguj > Wyjdź**).
+Naciśnij klawisz **Shift + F11** (lub **Debuguj > Wyjdź**).
 
 To polecenie wznawia wykonywanie aplikacji (i wyjście z kodu) do momentu zwraca bieżącej funkcji.
 
 ## <a name="run-to-cursor"></a>Uruchom do kursora
 
-Zatrzymywanie działania debugera, naciskając klawisz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub Shift + F5.
+Zatrzymywanie działania debugera, naciskając klawisz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub **Shift**  +  **F5**.
 
 Kliknij prawym przyciskiem myszy linię kodu w aplikacji i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia profilowanie i ustawia w bieżącym wierszu kodu tymczasowej punktu przerwania.
 
@@ -102,9 +102,9 @@ Kliknij prawym przyciskiem myszy linię kodu w aplikacji i wybierz polecenie **U
 
 Jeśli ustawisz punktów przerwania, debuger wstrzymuje pierwszy punkt przerwania, który go trafienia.
 
-Naciśnij klawisz F5, aż zostanie wyświetlony wiersz kodu po wybraniu **Uruchom do kursora**.
+Naciśnij klawisz **F5** aż do wiersza kodu po wybraniu **Uruchom do kursora**.
 
-To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera.
+To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera w tym samym czasie.
 
 > [!NOTE]
 > Można użyć **Uruchom do kursora** w **stos wywołań** okno podczas debugowania.
@@ -176,7 +176,7 @@ Możesz kliknąć dwukrotnie linię kod Przyjrzyj się tej kodu źródłowego i 
 
 Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okno, aby wykonać inne czynności. Na przykład można wstawić punktów przerwania do określonych funkcji, uruchom komputer przy użyciu aplikacji **Uruchom do kursora**i przejść zbadanie kodu źródłowego. Zobacz [porady: zbadanie stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="examine-an-exception"></a>Sprawdź Wystąpił wyjątek
+## <a name="exception"></a> Sprawdź Wystąpił wyjątek
 
 Gdy aplikacja zgłasza wyjątek, debuger przejście do wiersza kodu, która zgłosiła wyjątek.
 

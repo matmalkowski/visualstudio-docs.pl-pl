@@ -10,56 +10,56 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 62871cefc6d5b4f54d56ea17f04774d9d91b9984
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b5c990b89e3bd149481d7d908c4eec8f7ed56d40
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254956"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296353"
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 
 Tworzenie natywnych iOS, Android i Windows aplikacji ze wspólnego C# / kodu .NET podstawowej za pomocą platformy Xamarin, potrzebny następujący sprzęt i oprogramowanie:
 
--   Do pracy z systemem Windows i aplikacje dla systemu Android: Programowanie komputerem z systemem Windows (nie maszynę wirtualną) z programu Visual Studio 2017 r (w tym funkcje tworzenia Xamarin) zainstalowany.  
+-   Do pracy z systemem Windows i aplikacje dla systemu Android: Programowanie komputerem z systemem Windows (nie maszynę wirtualną) z programu Visual Studio 2017 r (w tym funkcje tworzenia Xamarin) zainstalowany.
 
 -   Do pracy z aplikacjami systemu iOS: Mac z macOS Sierra 10.12 lub powyżej, z Xcode zainstalowany i programu Visual Studio for Mac zainstalowane.
 
 Brak licencji oddzielne muszą korzystać z platformy Xamarin.
- 
+
 Można skonfigurować komputery z systemem Windows i Mac, w tym samym czasie, a podczas wykonywania tych instalatorów można przejść przez [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) do odczytywania i obejrzyj materiałów niezbędne tła.
 
 Jeśli masz problemy po wykonaniu tego Instalatora i zainstaluj za pomocą platformy Xamarin, zgłoś zapytanie na [forums.xamarin.com](http://forums.xamarin.com/).
 
-<a name="prereq" /> 
+<a name="prereq" />
 
 ## <a name="pre-requisites"></a>Wymagania wstępne
 
 ###  <a name="for-targeting-windows-and-android"></a>Przeznaczony do systemu Windows i Android
 
-Zobacz [Visual Studio 2017 produktu z rodziny System wymagania](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs) dla szczegółowe wymagania wstępne dotyczące instalowania programu Visual Studio 2017 r.
+Zobacz [Visual Studio 2017 produktu z rodziny System wymagania](/visualstudio/productinfo/vs2017-system-requirements-vs) dla szczegółowe wymagania wstępne dotyczące instalowania programu Visual Studio 2017 r.
 
-Visual 2017 należy zainstalować na komputerze fizycznym z systemem Windows (nie maszyny wirtualnej) systemem Windows 10 z wszystkie zainstalowane aktualizacje. 
+Visual 2017 należy zainstalować na komputerze fizycznym z systemem Windows (nie maszyny wirtualnej) systemem Windows 10 z wszystkie zainstalowane aktualizacje.
 
 ### <a name="for-targeting-ios"></a>Przeznaczony dla systemu iOS
 
-Emulatory dla systemu iOS docelowych i urządzeń z komputera z systemem Windows musisz również sieciowych Mac lub Mac mini system macOS, 10.12 lub nowszy i Xcode 8.3. Zobacz [Instalatora i zainstaluj pakiet Visual Studio for Mac](/visualstudio/mac/installation.md) bardziej szczegółowe wymagania.
+Emulatory dla systemu iOS docelowych i urządzeń z komputera z systemem Windows musisz również sieciowych Mac lub Mac mini system macOS, 10.12 lub nowszy i Xcode 8.3. Zobacz [Instalatora i zainstaluj pakiet Visual Studio for Mac](/visualstudio/mac/installation) bardziej szczegółowe wymagania.
 
-<a name="windows" /> 
+<a name="windows" />
 
 ##  <a name="windows-setup-visual-studio-and-xamarin"></a>Instalator systemu Windows (Visual Studio i Xamarin)
 
 Jeśli jeszcze nie został zainstalowany program Visual Studio 2017 r, wykonaj następujące czynności:
 
-1.  [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja. Wersje Professional i Enterprise są dostępne na podstawie wersji próbnej przez 30 dni, po których konieczne jest licencja.
+1.  [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja. Wersje Professional i Enterprise są dostępne na podstawie wersji próbnej przez 30 dni, po których konieczne jest licencja.
 
-2.  Gdy **instalowanie** zostanie wyświetlone okno dialogowe, sprawdź następujące pola:    
+2.  Gdy **instalowanie** zostanie wyświetlone okno dialogowe, sprawdź następujące pola:
 
-    - **Mobile i gier > Mobile Development z platformą .NET**. Ta opcja będzie również automatycznie wybierać różnych narzędzi dla systemu Android i Software Development Kit. 
+    - **Mobile i gier > Mobile Development z platformą .NET**. Ta opcja będzie również automatycznie wybierać różnych narzędzi dla systemu Android i Software Development Kit.
 
         ![Wybierz opcję programowania aplikacji mobilnych, gier i aplikacji mobilnych](../cross-platform/media/cross-plat-xamarin-setup-2a.png "na wiele różnych Xamarin Instalatora 2")
 
-    - (Opcjonalnie) **Windows > rozwoju platformy uniwersalnej systemu Windows**. 
+    - (Opcjonalnie) **Windows > rozwoju platformy uniwersalnej systemu Windows**.
 
 Jeśli już masz Visual Studio 2017 r zainstalowany, ale nie został jeszcze zainstalowany platformy Xamarin, wykonaj następujące czynności:
 
@@ -75,7 +75,7 @@ Podczas instalacji, możesz kontynuować Mac instrukcje dotyczące instalacji i 
 
 5.  Po zakończeniu instalacji uruchom program Visual Studio i zaloguj się przy użyciu konta Microsoft, jeśli zostanie wyświetlony monit. To konto jest to samo konto, które są używane w systemie Windows.
 
-6.  Do testowania aplikacji systemu Android, użyj [emulatora Android SDK](/xamarin/android/get-started/installation/android-emulator/) Jeśli nie masz urządzenia fizycznego systemu Android. 
+6.  Do testowania aplikacji systemu Android, użyj [emulatora Android SDK](/xamarin/android/get-started/installation/android-emulator/) Jeśli nie masz urządzenia fizycznego systemu Android.
 
 <a name="mac" />
 

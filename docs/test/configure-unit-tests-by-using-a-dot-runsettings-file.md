@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0cb4989877445a0679a5682aaa17e4b7f759a33
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d66d1027358e173f0ee86c4c799347b555196392
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815980"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303071"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *runsettings* pliku
 
@@ -159,15 +159,15 @@ W kolejnych sekcjach opisano elementy *runsettings* pliku.
 </RunConfiguration>
 ```
 
-**RunConfiguration** może zawierać następujące elementy:
+**RunConfiguration** elementu mogą obejmować następujące elementy:
 
 |Węzeł|Domyślny|Wartości|
 |----------|-------------|------------|
 |**ResultsDirectory**||Katalog rozmieszczenia wyników testu.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa, która wersja platformy testów jednostkowych służy do odnajdywania i wykonać testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
+|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa wersję platformy testów jednostkowych, które są używane do odnajdywania i wykonać testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|fałsz, prawda|
-|**TestAdaptersPaths**||Jeden lub wiele ścieżek do katalogu, w którym znajdują się TestAdapters|
+|**TestAdaptersPaths**||Co najmniej jedną ścieżkę do katalogu, w którym znajdują się TestAdapters|
 |**MaxCpuCount**|1|Ten kontroluje stopień wykonywanie równoległe testu podczas testów jednostkowych uruchomione, przy użyciu dostępne rdzenie komputera. Aparat wykonywania testu uruchamiania jako proces unikatowe na każdym dostępne rdzenie i zapewnia kontener core każdego z testów do uruchomienia. Kontener może być zestawu, biblioteki DLL lub odpowiednie artefaktu. Kontener testu jest jednostka planowania. W każdym kontenerze testy są uruchamiane zgodnie ze struktury testowej. Jeśli istnieje wiele kontenerów, następnie przetwarza zakończenia wykonywania testów w kontenerze, one są podane następnego kontenera dostępności.<br /><br />MaxCpuCount można:<br /><br />n, gdzie 1 < = n < = liczba rdzeni: maksymalnie n procesy uruchamiania<br /><br />n, gdzie n = dowolna inna wartość: liczba procesów uruchomić wynosi liczba rdzeni dostępne|
 |**TestSessionTimeout**||Umożliwia użytkownikom zakończyć sesję testową, gdy przekracza ona podanego limitu czasu. Test sesji i ustawienia, którego przekroczenie limitu czasu gwarantuje, że zasoby są również używane są ograniczone do określonym czasie. Ustawienie jest dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowszych.|
 
@@ -253,4 +253,4 @@ Te ustawienia są specyficzne dla adaptera testu, który uruchamia metody testow
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio Test zadań (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio test zadań (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)

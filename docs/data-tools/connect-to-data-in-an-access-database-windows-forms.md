@@ -16,18 +16,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f1d0b5d2d0391d401394929e16d5bfc97aa6d555
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746819"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282642"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze systemu Windows)
-Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za pomocą programu Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
+Możesz połączyć się z bazą danych programu Access (albo *.mdf* pliku lub *.accdb* pliku) w programie Visual Studio. Po zdefiniowaniu połączenia, dane są wyświetlane w **źródeł danych** okna. Stamtąd można przeciągnąć tabele lub widoki na formularze.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby korzystać z tych procedur, potrzebny jest projektem aplikacji formularzy systemu Windows i bazy danych programu Access (plik .accdb) lub bazy danych programu Access 2000-2003 (plik mdb). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
+ Aby korzystać z tych procedur, należy projekt aplikacji formularzy systemu Windows i albo bazy danych programu Access (*.accdb* pliku) lub baza danych programu Access 2000-2003 (*.mdb* pliku). Wykonaj procedurę, która odnosi się do typu Twojego pliku.
 
 ## <a name="creating-the-dataset-for-an-accdb-file"></a>Tworzenie zestawu danych dla pliku .accdb
  Można połączyć z baz danych utworzonych za pomocą dostępu 2013, Office 365, Access 2010 lub Access 2007 przy użyciu poniższej procedury.
@@ -65,7 +65,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
      > [!NOTE]
      >  Jeśli nie widzisz **Microsoft Office 12.0 dostępu do bazy danych aparatu OLE DB Provider** w dostawcy OLE DB listy rozwijanej, należy zainstalować [sterownik systemu Office 2007: składniki łączności danych](https://www.microsoft.com/download/confirmation.aspx?id=23734).
 
-9. W **nazwę serwera lub pliku** polu tekstowym określ ścieżkę i plików, nazwa pliku .accdb chcesz nawiązać połączenie, a następnie wybierz **OK**. (Jeśli plik bazy danych ma nazwę użytkownika i hasło, określ je przed wybraniem **OK**.)
+9. W **nazwę serwera lub pliku** pola tekstowego, określ ścieżkę i nazwę pliku *.accdb* chcesz nawiązać połączenie, a następnie wybierz plik **OK**. (Jeśli plik bazy danych ma nazwę użytkownika i hasło, określ je przed wybraniem **OK**.)
 
 10. Wybierz **dalej** na **wybierz połączenie danych** strony.
 
@@ -79,7 +79,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
      Zestaw danych zostanie dodany do projektu i tabele i widoki są wyświetlane w **źródeł danych** okna.
 
-## <a name="creating-the-dataset-for-an-mdb-file"></a>Tworzenie zestawu danych dla plikowych
+## <a name="create-the-dataset-for-an-mdb-file"></a>Tworzenie zestawu danych dla plikowych
  Utwórz zestaw danych, uruchamiając **Kreator konfiguracji źródła danych**.
 
 #### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
@@ -102,7 +102,7 @@ Bazy danych programu Access (pliku MDF lub pliku .accdb) można nawiązać za po
 
 7.  Jeśli źródło danych nie jest **pliku bazy danych programu Microsoft Access (OLE DB)**, wybierz pozycję **zmiany** otworzyć **źródło danych zmiany** okno dialogowe i wybierz **firmy Microsoft Dostęp do pliku bazy danych**, a następnie wybierz **OK**.
 
-8.  W **nazwa pliku bazy danych**, określ ścieżkę i nazwę pliku MDB chcesz nawiązać połączenie, a następnie wybierz **OK**.
+8.  W **nazwa pliku bazy danych**, określ ścieżkę i nazwę *.mdb* chcesz nawiązać połączenie, a następnie wybierz plik **OK**.
 
      ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/dataaddconnectionaccessmdb.png)
 

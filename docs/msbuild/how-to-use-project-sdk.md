@@ -11,14 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b4d5d404574c00332a63d4927de3198f096145c4
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569891"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302669"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Porady: Użyj zestawów SDK projektu programu MSBuild
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 wprowadzono koncepcję "Projekt zestawu SDK", który upraszcza przy użyciu software development kit wymagających właściwości i obiekty docelowe do zaimportowania.
 
 ```xml
@@ -27,8 +28,8 @@ ms.locfileid: "31569891"
         <TargetFramework>net46</TargetFramework>
     </PropertyGroup>
 </Project>
-```  
-  
+```
+
 Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dodaje niejawne importów u góry i u dołu projektu:
 
 ```xml
@@ -42,30 +43,36 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 
     <!-- Implicit bottom import -->
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-</Project>  
-```  
+</Project>
+```
 
 ## <a name="referencing-a-project-sdk"></a>Odwołanie do projektu zestawu SDK
+
  Istnieją trzy sposoby odwoływać się do projektu zestawu SDK
 
 1. Użyj `Sdk` atrybutu `<Project/>` elementu:
+
     ```xml
     <Project Sdk="My.Custom.Sdk">
         ...
     </Project>
     ```
+
     Niejawne importu jest dodawany do góry i u dołu projektu, zgodnie z powyższym opisem.  Format `Sdk` atrybutu `Name[/Version]` których wersja jest opcjonalne.  Na przykład można określić `My.Custom.Sdk/1.2.3`.
 
 2. Użyj najwyższego poziomu `<Sdk/>` elementu:
+
     ```xml
     <Project>
         <Sdk Name="My.Custom.Sdk" Version="1.2.3" />
         ...
     </Project>
    ```
+
    Niejawne importu jest dodawany do góry i u dołu projektu, zgodnie z powyższym opisem.  `Version` Atrybut nie jest wymagana.
 
 3. Użyj `<Import/>` element w dowolnym miejscu w projekcie:
+
     ```xml
     <Project>
         <PropertyGroup>
@@ -76,11 +83,13 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
         <Import Project="Sdk.targets" Sdk="My.Custom.Sdk" />
     </Project>
    ```
+
    Jawnie w tym elemencie imports w projekcie umożliwia pełną kontrolę nad kolejności.
 
    Korzystając z `<Import/>` elementu, można określić opcjonalny `Version` również atrybutu.  Na przykład można określić `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Jak są rozwiązywane zestawów SDK projektu
+
 Podczas obliczania importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicznie rozpoznaje ścieżkę do zestawu SDK na podstawie nazwy i wersji określonego projektu.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera także listę zarejestrowanych mechanizmów rozpoznawania zestawu SDK, które wtyczek, które zlokalizować projektu zestawów SDK na tym komputerze.  Te wtyczki obejmują:
 
 1. Na podstawie NuGet program rozpoznawania nazw który odpytuje pakietu skonfigurowanych źródeł danych na potrzeby pakiety NuGet zgodne, identyfikator i wersji określonego zestawu SDK.<br/>
@@ -99,8 +108,12 @@ Program rozpoznawania nazw na podstawie NuGet SDK obsługuje określanie wersji 
     }
 }
 ```
+
 Tylko jedna wersja każdy projekt zestawu SDK można użyć podczas kompilacji.  Jeśli odwołuje się dwie różne wersje tego samego projektu zestawu SDK, MSBuild będzie wysyłać ostrzeżenie.  Zaleca się **nie** Określ wersję w projektach, jeśli określono wersję w Twojej `global.json`.  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz też
+
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Dostosowywanie kompilacji](../msbuild/customize-your-build.md)   
+ [Pakiety, metadane i platform](/dotnet/core/packages)   
+ [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj)

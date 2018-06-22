@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3bb1c2f43504a89ede3e9ad9e6f13c05130c9c34
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234101"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303056"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Wskazówki: tworzenie zadania wbudowanego
 Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. W programie .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie masz Utwórz osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).  
@@ -65,7 +65,9 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
   
 1.  W folderze głównym `Project` węzła, zmień `DefaultTargets` atrybutu `TestBuild`. Powstałe w ten sposób `Project` węzeł powinien wyglądać następująco:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  Dodaj następujące zadania wbudowanego i docelowych do pliku projektu bezpośrednio przed `</Project>` tagu.  
   
@@ -225,9 +227,13 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
   
 3.  Sprawdź dane wyjściowe w **okno wiersza polecenia**. Powinny pojawić się następujące wiersze:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  Ten kod definiuje zadania wbudowanego nosi nazwę RegX i ma trzy następujące parametry:  
   
@@ -242,16 +248,16 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
 ### <a name="handling-reserved-characters"></a>Obsługa zastrzeżone znaki  
  Analizator MSBuild przetwarza zadania wbudowane jako XML. Znaki, które mają zastrzeżone znaczenie w formacie XML, na przykład "\<" i ">" Wykryto i obsługi, tak jakby były to XML, a nie kodu źródłowego .NET,. Aby uwzględnić zarezerwowanych znaków w wyrażeniach kodu takie jak `Files.Length > 0`, zapisać `Code` element, aby jego zawartości znajdują się w wyrażeniu CDATA w następujący sposób:  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>Zobacz też  
  [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)   
  [Zadania](../msbuild/msbuild-tasks.md)   

@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e49ea6de96f89e2761699972ffaf6bf9fd16356
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238176"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281806"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Aplikacji mobilnych dla wielu Platform w programie Visual Studio
 
@@ -33,11 +33,11 @@ Program Visual Studio Tools dla platformy Xamarin można kierować systemu Andro
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Więcej informacji na temat platformy Xamarin w programie Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Zainstaluj program Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Więcej informacji na temat platformy Xamarin w programie Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Dokumentacji dla deweloperów aplikacji mobilnych Xamarin](/xamarin/) |
 |[Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[Więcej informacji na temat aplikacji uniwersalnych systemu Windows w programie Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Więcej informacji na temat aplikacji uniwersalnych systemu Windows w programie Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Dowiedz się więcej o podobieństwa między Swift i C#](http://aka.ms/scposter) (witrynie download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Z jednej bazy kodu docelową systemu Android, iOS i Windows
@@ -106,9 +106,9 @@ Program Visual Studio Tools dla platformy Xamarin można kierować systemu Andro
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Zainstaluj program Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Wprowadzenie do programu Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Dowiedz się więcej o programie Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Dowiedz się więcej o programie Visual Studio Emulator for Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ Program Visual Studio Tools dla platformy Xamarin można kierować systemu Andro
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Pobierz program Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Pobierz program Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Zainstaluj Visual C++ for Cross Platform Mobile Development tools.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Biblioteka MSDN)|
-|[Dowiedz się więcej o języku C++ do wielu platform docelowych.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Dowiedz się więcej o języku C++ do wielu platform docelowych.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Zainstaluj co i następnie tworzenie aplikacji natywnych działania dla systemu Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Biblioteka MSDN)|
-|[Dowiedz się więcej o udostępnianiu kod w języku C++ aplikacji systemu Android i Windows](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Dowiedz się więcej o udostępnianiu kod w języku C++ aplikacji systemu Android i Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Wiele platform przenośnych przykłady dla języka C++](https://msdn.microsoft.com/library/dn707596.aspx) (Biblioteka MSDN)|
 |[Aplikacji mobilnych dla wielu platform dodatkowe przykłady dla języka C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ Program Visual Studio Tools dla platformy Xamarin można kierować systemu Andro
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Dowiedz się więcej o tworzeniu Unity gry z programem Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Dowiedz się więcej o tworzeniu Unity gry z programem Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Więcej informacji na temat programu Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Uruchom przy użyciu programu Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Przeczytaj o najnowsze ulepszenia do programu Visual Studio Tools dla Unity 2.0 w wersji zapoznawczej](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog Visual Studio)|

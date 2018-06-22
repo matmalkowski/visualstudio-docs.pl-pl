@@ -14,27 +14,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: ddc0fcb1983d6cfa7a3fe9e1fffff7070c3caf3e
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064077"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302861"
 ---
 # <a name="talk-to-us"></a>Porozmawiaj z nami
-Interesuje nas pomysłów dla poprawy naszych produktów i dokumentacji. Nie zawsze możemy osobiście, ale firma Microsoft będzie upewnij się, że Twoja opinia pobiera do prawej osobie lub zespołowi.  
+
+Interesuje nas pomysłów dla poprawy naszych produktów i dokumentacji. Nie zawsze możemy osobiście, ale firma Microsoft będzie upewnij się, że Twoja opinia pobiera do prawej osobie lub zespołowi.
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Chcę zgłosić problem z programem Visual Studio
-Jeśli używasz do problemów przy użyciu programu Visual Studio, na przykład awarii (Crash), wydajność pogarsza nieoczekiwanego zachowania i tak dalej, zgłoś problem do nas przy użyciu **zgłosić Problem** narzędzia. Po prostu kliknij ikonę opinii obok pozycji **szybkiego uruchamiania**, lub wybierz **pomocy** > **Prześlij opinię** > **zgłosić Problem** z poziomu menu głównego. Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programu Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+
+Jeśli używasz do problemów przy użyciu programu Visual Studio, na przykład awarii (Crash), wydajność pogarsza nieoczekiwanego zachowania i tak dalej, zgłoś problem do nas przy użyciu **zgłosić Problem** narzędzia. Po prostu kliknij ikonę opinii obok pozycji **Szybkie uruchamianie**, lub wybierz **pomocy** > **Prześlij opinię** > **zgłosić Problem** na pasku menu. Visual Studio zgłasza problemu na [społeczność deweloperów](https://developercommunity.visualstudio.com). Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programu Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chcę sugestię o funkcje programu Visual Studio
+
 Czy jest coś, co możemy ulepszyć, prosimy o kontakt! Wybierz **pomocy** > **Prześlij opinię** > **Podaj sugestię** Sugeruj funkcji lub zmień program Visual Studio team. Automatycznie zostaną opublikowane swoją sugestię w [UserVoice](https://visualstudio.uservoice.com), gdy inne można up głos go.
 
 ### <a name="rate-this-product"></a>Oceń ten produkt
+
 Wersje wstępne programu Visual Studio ma **Oceń ten produkt** element menu, który pozwala na wysyłanie informacji zwrotnych jakości kompilacji są uruchomione. Nie będzie to widoczna w wydanej wersji produktu.
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Chcę skontaktuj się z Microsoft Support
-Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [obsługuje cyklu pomocy i obsługi](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs) strony.
+
+Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [Cykl wsparcia technicznego i obsługi](/visualstudio/productinfo/vs-servicing-vs) strony.
 
 Dla innych produktów firmy Microsoft i usług, zobacz [pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
 
@@ -48,10 +53,15 @@ Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, produce
 Usługi pomocy technicznej firmy Microsoft podlegają aktualnej cenie i warunkom. Ceny i warunki mogą ulec zmianie bez powiadomienia.
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Chcę angażowanie się w społeczność deweloperów
-Jeśli chcesz udostępnić pytania i odpowiedzi z innymi deweloperami, możesz użyć [społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/index.html) lokacji, [fora MSDN](http://social.msdn.microsoft.com/Forums/home), lub [StackOverflow](http://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępnianie własnych przykłady na [przykłady kodu dewelopera](http://code.msdn.microsoft.com/) lokacji.
+
+Jeśli chcesz udostępnić pytania i odpowiedzi z innymi deweloperami, możesz użyć [Visual Studio Developer Community](https://developercommunity.visualstudio.com) lokacji, [fora MSDN](http://social.msdn.microsoft.com/Forums/home), lub [StackOverflow](http://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępnianie własnych przykłady na [przykłady kodu dewelopera](http://code.msdn.microsoft.com/) lokacji.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Chcę, aby pomóc udoskonalić dokumentację programu Visual Studio
+
 Użyj **był pomocny tę stronę?** przycisku opinii u dołu strony. Ten przycisk, można znaleźć na wszystkich stronach dokumentacji. Alternatywnie możesz dodać opinię do dowolnej strony Visual Studio na [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) za pomocą **Zaloguj się przekazać opinię o dokumentacji** przycisk również w dolnej części strony.
 
 ## <a name="see-also"></a>Zobacz także
-[Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+
+* [Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Społeczność deweloperów](https://developercommunity.visualstudio.com)
+* [Prywatność danych społeczność deweloperów](developer-community-privacy.md)

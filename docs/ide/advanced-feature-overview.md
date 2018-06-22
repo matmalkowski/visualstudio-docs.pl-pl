@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694115"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282528"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017 r.
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694115"
 
 Moduły Instalator Visual Studio umożliwia wybierz i zainstaluj *obciążeń*, które są grup funkcji potrzebnych do programowania języka lub platformy wolisz. Ta strategia pomaga zachować rozmiaru instalacji programu Visual Studio mniejsze, co oznacza instalowany i uaktualni szybciej.
 
-Jeśli nie została jeszcze zainstalowana Visual Studio 2017, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie została jeszcze zainstalowana Visual Studio 2017, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [zainstalować program Visual Studio 2017](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ Dostępne **usług połączonych** są zależne od typu projektu. Dodaj usługę
 
 ![Visual Studio połączone usługi](media/connected-services.png)
 
-Aby uzyskać więcej informacji, zobacz [przenosić do chmury z programu Visual Studio i Azure](https://www.visualstudio.com/vs/azure-tools/).
+Aby uzyskać więcej informacji, zobacz [przenosić do chmury z programu Visual Studio i Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
 
 ## <a name="create-apps-for-the-web"></a>Tworzenie aplikacji dla sieci web
 
 Nasze współczesnym świecie dyski sieci web i Visual Studio ułatwia pisanie aplikacji dla niego. Można utworzyć aplikacji sieci web ASP.NET, Node.js, Python, JavaScript i TypeScript. Visual Studio rozumie struktur sieci web, takich jak kątową, jQuery, Express i inne. Oprogramowanie .NET Core i ASP.NET Core uruchomienia w systemach operacyjnych Windows, Mac i Linux. [Platformy ASP.NET Core](http://www.asp.net/core/overview) jest dużej aktualizacji MVC, WebAPI i SignalR i działa w systemie Windows, Mac i Linux.  Platformy ASP.NET Core ma został zaprojektowany od podstaw zapewnienie, że program .NET gotowa i zezwala na składanie stosu do tworzenia aplikacji sieci web opartych na chmurze nowoczesnych i usług.
 
-Aby uzyskać więcej informacji, zobacz [nowoczesnych witryn sieci web narzędzia](https://www.visualstudio.com/vs/modern-web-tooling/).
+Aby uzyskać więcej informacji, zobacz [nowoczesnych witryn sieci web narzędzia](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Tworzenie wieloplatformowych aplikacji i gier
 
-Można użyć programu Visual Studio do tworzenia aplikacji i gier dla macOS, Linux i Windows, a także dla systemu Android, iOS oraz inne [urządzeń przenośnych](https://www.visualstudio.com/vs/mobile-app-development/).
+Można użyć programu Visual Studio do tworzenia aplikacji i gier dla macOS, Linux i Windows, a także dla systemu Android, iOS oraz inne [urządzeń przenośnych](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
 - Tworzenie [.NET Core](/dotnet/core/) aplikacji uruchamianych w systemie Windows, system macOS i Linux.
 
@@ -122,7 +122,7 @@ Kompilator platformy .NET ("Roslyn") służy do pisania własnych analizatorów 
 
 Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla programu Visual Studio utworzone przez deweloperzy firmy Microsoft, a także naszą społeczność programowanie.
 
-Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzenia programu Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzenia programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Zobacz także
 

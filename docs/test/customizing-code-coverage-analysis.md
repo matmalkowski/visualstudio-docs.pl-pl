@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9cdf1b9051f409571989073692cf38906d26b85b
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815954"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303006"
 ---
 # <a name="customize-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 
@@ -34,7 +34,7 @@ Aby dostosować pokrycie kodu, wykonaj następujące kroki:
 
 1. Dodaj zawartość z przykładowy plik na końcu tego artykułu, a następnie dostosować go do potrzeb zgodnie z opisem w poniższych sekcjach.
 
-1. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawień testu** > **wybierz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych dla uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+1. Wybierz plik parametrów uruchomieniowych na **testu** menu, wybierz **ustawień testu** > **wybierz plik ustawień testu**. Aby określić plik parametrów uruchomieniowych dla uruchamiania testów z wiersza polecenia lub w przepływie pracy kompilacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu *runsettings* pliku](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
 
    Po wybraniu **Analizuj pokrycie kodu**, informacje o konfiguracji zostanie odczytany z pliku ustawień uruchamiania.
 
@@ -89,7 +89,7 @@ Jeśli **Include** jest pusta, a następnie przetwarzania pokrycia kodu zawiera 
 
 ### <a name="regular-expressions"></a>Wyrażenia regularne
 
-Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:
+Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są takie same, jak symbole wieloznaczne. W szczególności:
 
 - **. \***  ciąg znaków
 
@@ -135,7 +135,7 @@ Na przykład:
 
 - **Źródło** -odpowiada elementów przez nazwę ścieżki pliku źródłowego, w którym jest zdefiniowany.
 
-- **Atrybut** -odpowiada elementów, do których jest dołączony określonego atrybutu. Określ pełną nazwę atrybutu, a inclue "Atrybutu" na końcu nazwy.
+- **Atrybut** -odpowiada elementów, do których jest dołączony określonego atrybutu. Określ pełną nazwę atrybutu, a obejmują "Atrybutu" na końcu nazwy.
 
 - **Funkcja** -odpowiada procedury, funkcji lub metody przez w pełni kwalifikowanej nazwy. Aby dopasować nazwę funkcji, wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwy funkcji, łącznie z przestrzeni nazw, nazwę klasy, nazwy metody i listy parametrów. Na przykład:
 

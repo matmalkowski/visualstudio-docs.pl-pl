@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9e1149803516e0b411bfef1da06fd6e1af9a12f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691163"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282729"
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -30,7 +30,7 @@ Ten artykuł dotyczy programu Visual Studio 2017 r dla systemu Windows. Go przed
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
-Aby rozpocząć, [pobierania programu Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) i zainstaluj go w tym systemie.
+Aby rozpocząć, [pobierania programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) i zainstaluj go w tym systemie.
 
 Moduły Instalator umożliwia wybierz i zainstaluj *obciążeń*, które są grup funkcji potrzebnych do programowania języka lub platformy wolisz. Wykonanie czynności dla [tworzenia program](#create-a-program), pamiętaj o wybraniu **aplikacji dla wielu platform .NET Core** obciążenie podczas instalacji. Tematy szybkiego startu, takich jak [wprowadzenie do języka C++ w programie Visual Studio](getting-started-with-cpp-in-visual-studio.md), zawiera instrukcje dotyczące instalowania innych obciążeń.
 
@@ -255,6 +255,6 @@ Możesz również sprawdzić limit bezpłatnych kursów Visual Studio na [Micros
 ## <a name="see-also"></a>Zobacz także
 
 * [Więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
-* [www.VisualStudio.com](https://www.visualstudio.com/vs/)
+* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Blog programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Pobieranie programu Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Pobieranie programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

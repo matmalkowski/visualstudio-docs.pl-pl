@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ceb6aef12851472d8c276b7077a9975e957930e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5b85f9ea5e9e570203d6d1f4148f714b0da1f861
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255502"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283435"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
 W tym szybkiego startu 10 minut firma Microsoft będzie Poznaj, co to oznacza, że tworzenie rozwiązania i projektu w programie Visual Studio. Przyjrzymy właściwości projektu, a niektóre z plików, które może zawierać. Utworzymy również odwołanie do projektu drugiego.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 > [!TIP]
 > Firma Microsoft będzie można konstruowania rozwiązania i projektu od podstaw w tego przewodnika Szybki Start, jako edukacyjnych wykonywania zrozumienie pojęcia projektu. W ogólne, używając programu Visual Studio najprawdopodobniej użyjesz wielu szablony projektu Visual Studio oferuje podczas tworzenia nowego projektu.

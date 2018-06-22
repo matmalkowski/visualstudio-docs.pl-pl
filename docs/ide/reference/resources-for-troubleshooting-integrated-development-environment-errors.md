@@ -1,5 +1,5 @@
 ---
-title: Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
+title: Zasoby dla rozwiązywania problemów
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106924"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302629"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Błędy środowiska programowania zintegrowane zasoby dla rozwiązywania problemów
 
-Nie wszystkie komunikaty o błędach ma określonego skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie pomaga w rozwiązaniu problemu, można znaleźć inne zasoby, takie jak artykuły bazy wiedzy, społeczność deweloperów lub Centrum pomocy technicznej.
+Nie wszystkie komunikaty o błędach ma określonego skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie pomaga w rozwiązaniu problemu, można znaleźć inne zasoby, takie jak artykuły bazy wiedzy, fora lub pomocą techniczną.
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 
 Można wyszukiwać bazy wiedzy Knowledge Base (KB) online w artykułach dotyczących produktu. Nie wszystkie problemy dotyczące mają odpowiedni artykuł KB, ale zazwyczaj są udokumentowane błędów występujących duża liczba klientów. Dostęp do artykułów bazy wiedzy na [Microsoft Support](https://support.microsoft.com) witryny sieci Web.
 
-## <a name="the-developer-community"></a>Społeczność deweloperów
+## <a name="developer-forums"></a>Fora deweloperów
 
 Fora umożliwiają interakcję z innymi deweloperów, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla pytania o problemie można opublikuj wpis na forum. Można także przeszukać grup dyskusyjnych, aby zobaczyć, czy inne ogłoszeniu o ten sam problem.
 

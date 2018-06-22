@@ -1,5 +1,5 @@
 ---
-title: Aktualizacja instalacji sieciowej programu Visual Studio
+title: Aktualizowanie instalacji sieciowej programu Visual Studio
 description: Informacje o sposobie aktualizowania instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620456"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282564"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizacja instalacji sieciowej programu Visual Studio
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
 Go ma można zaktualizować sieci układ instalacji programu Visual Studio z najnowszymi aktualizacjami produktu, tak aby można go jednocześnie jako punkt instalacji używane w przypadku najnowszej aktualizacji programu Visual Studio, a także do obsługi urządzeń, które są już wdrożone do klienta stacje robocze.
 
@@ -41,10 +41,10 @@ Przejdźmy sposobu tworzenia, a następnie zaktualizuj układ:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Poniżej przedstawiono sposób zaktualizować do nowszej wersji tego samego układu. Nie trzeba określać żadnych dodatkowych parametrów wiersza polecenia. Poprzednie ustawienia zostały zapisane i będą używane przez wszystkie polecenia kolejnych układu, w tym folderze układu.  
+* Poniżej przedstawiono sposób zaktualizować do nowszej wersji tego samego układu. Nie trzeba określać żadnych dodatkowych parametrów wiersza polecenia. Poprzednie ustawienia zostały zapisane i będą używane przez wszystkie polecenia kolejnych układu, w tym folderze układu.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * Poniżej przedstawiono sposób zaktualizować do nowszej wersji układu w trybie nienadzorowanym. Operacja układu uruchamia proces instalacji w nowym oknie konsoli. Okno pozostanie otwarty, użytkownicy mogą zobaczyć wynik końcowy oraz podsumowanie wszelkie błędy, które mogły wystąpić. Jeśli przeprowadzasz operację układu w trybie nienadzorowanym (na przykład masz skryptów, regularnie uruchamiany w celu aktualizacji do najnowszej wersji układu), następnie użyć `--passive` parametru i proces zostanie automatycznie zamknięte okno.
@@ -96,7 +96,7 @@ Vs_enterprise.exe może być wywoływana wewnątrz layoutDir.
 > [!NOTE]
 > Niektóre pliki ważne metadane, które są wymagane przez `--verify` opcja musi być w pamięci podręcznej w trybie offline układu. Jeśli brakuje tych plików metadanych, "--Sprawdź" nie można uruchomić i Instalator zwraca błąd. Jeśli wystąpi błąd, ponownie utwórz nowy układ w trybie offline do innego folderu (lub do tego samego folderu pamięci podręcznej w trybie offline. Aby to zrobić, uruchom tego samego polecenia układu, który został użyty do utworzenia początkowego układu w trybie offline. Na przykład `Vs_enterprise.exe --layout <layoutDir>`.
 
-Microsoft dostarczany aktualizacji dla programu Visual Studio okresowo, więc nowy układ utworzonego może być tej samej wersji co początkowego układu.  
+Microsoft dostarczany aktualizacji dla programu Visual Studio okresowo, więc nowy układ utworzonego może być tej samej wersji co początkowego układu.
 
 ## <a name="how-to-fix-a-layout"></a>Jak rozwiązać układu
 
@@ -114,9 +114,9 @@ Po wykonaniu aktualizacji układu do pamięci podręcznej offline układu folder
 
 Aby to zrobić, musisz ścieżki pliku do manifest(s) katalogu, zawierające te pakiety przestarzałe. Znajdziesz się, że katalog manifesty w folderze "Archiwum" w pamięci podręcznej w trybie offline układu. Są zapisywane istnieje podczas aktualizacji układu. W folderze "Archiwum" ma co najmniej jeden "GUID" o nazwie folderów, z których każdy zawiera manifest przestarzałe katalogu. Liczba folderów "GUID" powinna być taka sama jak liczba aktualizacji do pamięci podręcznej w trybie offline.
 
-Kilka plików są zapisywane w folderze każdego "GUID". Dwa pliki najbardziej przydatnych są oraz plik "catalog.json" "version.txt". Plik "catalog.json" jest manifest przestarzałe katalogu należy przekazać do `--clean` opcji. Plik version.txt zawiera wersję tego manifestu przestarzałe katalogu. Oparte na numer wersji, można zdecydować, czy chcesz usunąć przestarzałe pakiety z manifestu tego katalogu. Możesz to zrobić takie same jak przechodzić przez innych folderach "GUID". Po podjęciu decyzji o katalogi, które chcesz wyczyścić, uruchom `--clean` polecenia, podając pliki ścieżki do tych katalogów.  
+Kilka plików są zapisywane w folderze każdego "GUID". Dwa pliki najbardziej przydatnych są oraz plik "catalog.json" "version.txt". Plik "catalog.json" jest manifest przestarzałe katalogu należy przekazać do `--clean` opcji. Plik version.txt zawiera wersję tego manifestu przestarzałe katalogu. Oparte na numer wersji, można zdecydować, czy chcesz usunąć przestarzałe pakiety z manifestu tego katalogu. Możesz to zrobić takie same jak przechodzić przez innych folderach "GUID". Po podjęciu decyzji o katalogi, które chcesz wyczyścić, uruchom `--clean` polecenia, podając pliki ścieżki do tych katalogów.
 
-Oto kilka przykładów sposobu użycia czystą opcji:   
+Oto kilka przykładów sposobu użycia czystą opcji:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Można także wywoływać vs_enterprise.exe wewnątrz &lt;layoutDir&gt;. Oto przykład:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Podczas wykonywania tego polecenia, Instalator analizuje folder pamięci podręc
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

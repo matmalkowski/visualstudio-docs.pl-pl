@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 855bd7af4372f5216abab3d6ddd45ec8f7809baa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c38d7ba577beedce8651bb291700a6c071ee7b48
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573118"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303019"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narzędzi, które służy do tworzenia aplikacji projektu. MSBuild obejmuje standardowych narzędzi, ale można również utworzyć niestandardowe procesami. Aby uzyskać informacje o określaniu zestawu narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -39,9 +39,9 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narz�
   
 |Klucz rejestru|Nazwa klucza|Wartość klucza ciągu|  
 |------------------|--------------|----------------------|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 2.0|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 3.5|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 4|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\  |MSBuildToolsPath|Ścieżka instalacji programu .NET framework 2.0|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\  |MSBuildToolsPath|Ścieżka instalacji programu .NET framework 3.5|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\  |MSBuildToolsPath|Ścieżka instalacji programu .NET framework 4|  
   
 ### <a name="sub-toolsets"></a>Podzestawach  
  Jeśli klucz rejestru w poprzedniej tabeli podklucz, MSBuild używa można ustalić ścieżki sub-zestawu narzędzi zastępujący ścieżki w zestawie narzędzi nadrzędnej. Przykładem jest następujący podklucz:  

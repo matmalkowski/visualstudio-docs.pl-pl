@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a514459e834e5652e544991eb061f0c96767dd32
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31964954"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302643"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie adaptera danych diagnostycznych zbieranie danych niestandardowych lub mają wpływ na maszynę testową
 
@@ -24,7 +24,7 @@ Można chcieć tworzyć własne adaptery danych diagnostycznych do zbierania dan
 
 Można dostarczyć domyślne dane wejściowe do niestandardowego adaptera danych diagnostycznych przy użyciu pliku ustawień konfiguracji. Na przykład może dostarczyć informacji na temat lokalizacji pliku do zebrania i dołączenia do wyników testu lub ile miejsca ma pozostać w systemie. Dane te można skonfigurować dla wszystkich ustawień testu, które są tworzone. Mogą być wyświetlane i edytowanych przy użyciu domyślnego edytora dostarczane z Microsoft Test Manager lub mogą tworzyć własne kontrolki użytkownika edytora. Wszelkie zmiany wprowadzone do konfiguracji adaptera w edytorze są przechowywane z ustawieniami testu.
 
-Jeśli korzystasz z testów w programie Visual Studio, należy ustawić te ustawienia jako aktywne testu. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbieranie diagnostycznych informacji za pomocą testu ustawień](../test/collect-diagnostic-information-using-test-settings.md).
+Jeśli korzystasz z testów w programie Visual Studio, należy ustawić te ustawienia jako aktywne testu. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbierania informacji diagnostycznych za pomocą ustawienia testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 ## <a name="tasks"></a>Zadania
 

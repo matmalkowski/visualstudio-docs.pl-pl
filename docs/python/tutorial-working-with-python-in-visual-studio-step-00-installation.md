@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e4825a65fa2ba09bc37b4962d51286a17c1fff92
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751391"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283552"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Zainstaluj obsługę języka Python w programie Visual Studio
 
@@ -26,10 +26,10 @@ ms.locfileid: "34751391"
 1. Pobierz i Uruchom najnowszą wersję Instalatora programu Visual Studio 2017 r dla systemu Windows (Obsługa języka Python znajduje się w wersji 15.2 i nowsze). Jeśli masz już zainstalowanego programu Visual Studio, uruchom Instalatora programu Visual Studio i przejdź do kroku 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Zainstaluj program Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Zainstaluj program Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > Wersja Community to dla indywidualnych deweloperów, uczenie klasy academic badań i rozwoju typu open source. Do innych celów, należy zainstalować <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> lub <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > Wersja Community to dla indywidualnych deweloperów, uczenie klasy academic badań i rozwoju typu open source. Do innych celów, należy zainstalować <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> lub <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
 
 1. Instalator wyświetla listę obciążeń, grup powiązane opcje dla rozwoju określonych obszarów. Dla języka Python, wybierz **programowania Python** obciążenia i wybierz **zainstalować**:
 

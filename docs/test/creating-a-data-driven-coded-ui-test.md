@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692190"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303043"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu opartego na danych interfejsu użytkownika
 
@@ -40,7 +40,7 @@ Ten przykład tworzy kodowanego testu interfejsu użytkownika w aplikacji Kalkul
    > [!NOTE]
    > Jeśli nie widzisz **projekt testowanie kodowanego interfejsu użytkownika** szablonu, musisz [zainstalować składnik kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Wybierz zarejestrować akcje.
+2.  Wybierz **Rejestruj akcje**.
 
      ![Wybierz do rejestrowania akcji](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -65,7 +65,7 @@ Ten przykład tworzy kodowanego testu interfejsu użytkownika w aplikacji Kalkul
 
 5.  Użyj `AddNumbers()` metody, aby sprawdzić, czy test jest uruchomiony. Umieść kursor w metodzie testowej przedstawionych powyżej, otwórz menu kontekstowe i wybierz polecenie **Uruchom testy**. (Skrót klawiaturowy: **Ctrl**+**R**,**T**).
 
-     Wynik testu, który pokazuje, czy test przekazany lub niepowodzenie jest wyświetlany w oknie Eksploratora testów. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksploratora testów**.
+     Wynik testu, pokazujący, jeśli test przekazany lub niepowodzenie jest wyświetlany w **Eksploratora testów** okna. Aby otworzyć okno Eksploratora testów z **testu** menu, wybierz **Windows** , a następnie wybierz **Eksploratora testów**.
 
 6.  Ponieważ źródło danych może także służyć do wartości parametrów potwierdzenia — które są używane przez testu do weryfikowania oczekiwanych wartości — Dodajmy potwierdzenia, aby sprawdzić, czy sumę dwóch liczb jest poprawna. Umieść kursor w metodzie testowej przedstawionych powyżej, otwórz menu kontekstowe i wybierz polecenie **Generuj kod dla kodowanego testu interfejsu użytkownika**, a następnie **Użyj konstruktora kodowanego interfejsu użytkownika testu**.
 
@@ -98,7 +98,7 @@ Ten przykład tworzy kodowanego testu interfejsu użytkownika w aplikacji Kalkul
 
 ### <a name="step-2---create-a-data-set"></a>Krok 2 — Tworzenie zestawu danych
 
-1.  Dodaj plik tekstowy do projektu dataDrivenSample o nazwie `data.csv`.
+1.  Dodaj plik tekstowy do projektu dataDrivenSample o nazwie *data.csv*.
 
      ![Dodaj do projektu pliku wartości rozdzielone przecinkami](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -180,7 +180,7 @@ Ten przykład tworzy kodowanego testu interfejsu użytkownika w aplikacji Kalkul
 
      Aby dowiedzieć się, które właściwości wyszukiwania, aby dane do kodu, użyj edytora kodowanego testu interfejsu użytkownika.
 
-    -   Otwórz plik UIMap.uitest.
+    -   Otwórz *UIMap.uitest* pliku.
 
          ![Otwórz Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -188,7 +188,7 @@ Ten przykład tworzy kodowanego testu interfejsu użytkownika w aplikacji Kalkul
 
          ![Użyj edytora kodowanego testu interfejsu użytkownika z kodu](../test/media/cuit_datadriven_testeditor.png)
 
-    -   W oknie właściwości Otwórz **właściwości wyszukiwania**. Właściwości wyszukiwania **nazwa** wartość to, co jest zmieniany w kodzie za pomocą źródła danych. Na przykład `SearchProperties` jest ona obecnie przypisywana wartości z pierwszej kolumny każdego wiersza danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji zmieni ten test **nazwa** wartości dla właściwości wyszukiwania, aby 3, a następnie 5, a na koniec 6.
+    -   W **właściwości** okna, otwórz **właściwości wyszukiwania**. Właściwości wyszukiwania **nazwa** wartość to, co jest zmieniany w kodzie za pomocą źródła danych. Na przykład `SearchProperties` jest ona obecnie przypisywana wartości z pierwszej kolumny każdego wiersza danych: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Dla trzech iteracji zmieni ten test **nazwa** wartości dla właściwości wyszukiwania, aby 3, a następnie 5, a na koniec 6.
 
          ![Użyj właściwości wyszukiwania w kodowania](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -230,15 +230,15 @@ Skopiować je do kodu i wprowadzając niezbędne dostosowania służy parametry 
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Pytanie: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
 
-**Odpowiedź:** wprowadzone w pliku UIMapDesigner.cs zmiany kodu zostaną zastąpione zawsze Generuj kod przy użyciu UIMap — Konstruktor kodowanego testu interfejsu użytkownika. W tym przykładzie, w większości przypadków wymagane do włączenia test, aby używać źródła danych zmian w kodzie możliwe do pliku kodu źródłowego testu (czyli CodedUITest1.cs).
+**Odpowiedź:** kodu wszelkie zmiany wprowadzone w *UIMapDesigner.cs* plik zostanie zastąpiony zawsze Generuj kod przy użyciu UIMap — Konstruktor kodowanego testu interfejsu użytkownika. W tym przykładzie i w większości przypadków zmiany kodu wymagane do włączenia test, aby używać źródła danych można nawiązać pliku kodu źródłowego testu (to znaczy *CodedUITest1.cs*).
 
-Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
+Jeśli masz zmodyfikuj metodę zarejestrowane, należy skopiować go do *UIMap.cs* pliku i jego nazwa zostanie zmieniona. *UIMap.cs* plików może służyć do przesłonięcia metod i właściwości w *UIMapDesigner.cs* pliku. Należy usunąć odwołanie do oryginalnej metody w kodowany *UITest.cs* pliku i zamień ją na nazwę zmieniono nazwę metody.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
+- [Utwórz kodowane testy interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

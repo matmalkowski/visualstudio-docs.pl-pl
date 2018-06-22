@@ -19,18 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238241"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283448"
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 
 Nowy sposób, aby zainstalować program Visual Studio — Zapraszamy! W naszym najnowsza wersja ułatwiliśmy ułatwia wybierania i instalowania tylko potrzebnych funkcji, które są potrzebne. Minimalnego miejsca zajmowanego przez program Visual Studio również już zostać zmniejszony, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
 
-Chcesz dowiedzieć się więcej na temat innych nowości w tej wersji? Zobacz nasze [informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+Chcesz dowiedzieć się więcej na temat innych nowości w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes).
 
 Gotowe do zainstalowania? Pomożemy Ci przez niego krok po kroku.
 
@@ -38,19 +38,19 @@ Gotowe do zainstalowania? Pomożemy Ci przez niego krok po kroku.
 
 Przed rozpoczęciem instalowania programu Visual Studio:
 
-1. Sprawdź [wymagania systemowe](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Te wymagania ułatwiają wiedzieć, czy komputer obsługuje Visual Studio 2017 r.
+1. Sprawdź [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs). Te wymagania ułatwiają wiedzieć, czy komputer obsługuje Visual Studio 2017 r.
 2. Zastosuj najnowsze aktualizacje systemu Windows. Te aktualizacje upewnij się, że komputer ma zarówno najnowsze aktualizacje zabezpieczeń i składniki systemowe wymagane dla programu Visual Studio.
 3. Ponowne uruchomienie komputera. Ponownego rozruchu gwarantuje, że wszystkie oczekujące instaluje lub aktualizacji nie utrudniać instalację programu Visual Studio.
 4. Zwolnij miejsce. Usuń niepotrzebne pliki i aplikacje z sieci % SystemDrive %, na przykład aplikację Oczyszczanie dysku.
 
-Odpowiedzi na pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok siebie z programu Visual Studio 2017, zobacz [szczegóły zgodności programu Visual Studio](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Odpowiedzi na pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok siebie z programu Visual Studio 2017, zobacz [szczegóły zgodności programu Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2 — pobierania programu Visual Studio
 
 Następnie należy pobrać plik inicjujący Instalatora programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wersji programu Visual Studio 2017, żądany, kliknij przycisk **zapisać**, a następnie kliknij przycisk **Otwórz folder**.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -69,7 +69,7 @@ Następnie uruchom plik inicjujący tak, aby zainstalować Instalator programu V
 
   Jeśli zostanie wyświetlone powiadomienie kontroli konta użytkownika, kliknij przycisk **tak**.
 
-2. Poprosimy Cię możesz potwierdzić Microsoft [postanowień licencyjnych](https://www.visualstudio.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://go.microsoft.com/fwlink/?LinkID=824704). Kliknij przycisk **Kontynuuj**.  
+2. Poprosimy Cię możesz potwierdzić Microsoft [postanowień licencyjnych](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://go.microsoft.com/fwlink/?LinkID=824704). Kliknij przycisk **Kontynuuj**.
 
    ![Licencja warunki i zasady zachowania poufności informacji](media/vs2017-privacy-and-license-terms.PNG "postanowienia licencyjne firmy Microsoft i zasady zachowania poufności informacji")
 
@@ -81,16 +81,16 @@ Po zainstalowaniu Instalator, można go dostosować instalację, wybierając zes
 
  ![Wybieranie obciążenia w oknie dialogowym Instalator Visual Studio 2017 r.](../install/media/install-visual-studio-community.png)
 
-     Na przykład wybierz obciążenie ".NET development pulpitu". Pochodzi on z domyślnego edytora core, która obejmuje podstawowych czynności edytowania Obsługa ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu kodu i zintegrowane kontroli kodu źródłowego.  
+     Na przykład wybierz obciążenie ".NET development pulpitu". Pochodzi on z domyślnego edytora core, która obejmuje podstawowych czynności edytowania Obsługa ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu kodu i zintegrowane kontroli kodu źródłowego.
 
 2. Po wybraniu workload(s) ma, kliknij przycisk **zainstalować**.
 
     Następnie stan pojawią się ekrany pokazujące postęp instalacji programu Visual Studio.
 
-3. Po zainstalowaniu nowego obciążeń i składników, kliknij przycisk **uruchamianie**.  
+3. Po zainstalowaniu nowego obciążeń i składników, kliknij przycisk **uruchamianie**.
 
 > [!TIP]
-> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składniki, które należy wstępnie zainstalować. Jeśli masz program Visual Studio Otwórz, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**  otwierający Instalator programu Visual Studio. Możesz również otworzyć **Instalator programu Visual Studio** z Start menu. Z tego miejsca, możesz wybrać obciążeń lub składniki, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.  
+> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składniki, które należy wstępnie zainstalować. Jeśli masz program Visual Studio Otwórz, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**  otwierający Instalator programu Visual Studio. Możesz również otworzyć **Instalator programu Visual Studio** z Start menu. Z tego miejsca, możesz wybrać obciążeń lub składniki, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.
 
 |         |         |
 |---------|---------|
@@ -140,7 +140,7 @@ Aby uzyskać więcej informacji, zobacz [zmienić lokalizację instalacji progra
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 

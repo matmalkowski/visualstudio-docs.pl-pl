@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f17e3214c1222eaadf43f3ea2d0e56742cd1ecf
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 48c9e38a0e3a1bcc5a12ed764c43747b27a5e303
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234663"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283367"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Wdrażanie aplikacji sieci web lub aplikacji .NET Core w lokalnym folderze przy użyciu narzędzia publikowanie programu Visual Studio
 
-Można użyć **publikowania** narzędzia do publikowania aplikacji do folderu lokalnego. 
+Można użyć **publikowania** narzędzia do publikowania aplikacji do folderu lokalnego.
 
 Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python aplikacji w programie Visual Studio. Dla środowiska Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
 
@@ -29,9 +29,9 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 * Musi mieć Visual Studio 2017 r zainstalowany i. **NET development pulpitu** obciążenia i. **Podstawowe NET** obciążenia.
 
-    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+    Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
-## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
 1. W programie Visual Studio, wybierz **pliku** > **nowy projekt**.
 
@@ -63,7 +63,7 @@ Te kroki dotyczą programu ASP.NET, platformy ASP.NET Core .NET Core i Python ap
 
 1. Kliknij, aby skonfigurować ustawienia wdrażania **ustawienia** w profilu podsumowania.
 
-    ![Ustawienia profili](../deployment/media/quickstart-profile-settings.png "ustawień profilu") 
+    ![Ustawienia profili](../deployment/media/quickstart-profile-settings.png "ustawień profilu")
 
 1. Skonfiguruj opcje, takie jak czy wdrażanie debugowania lub wersji konfiguracji, a następnie kliknij przycisk **zapisać**.
 

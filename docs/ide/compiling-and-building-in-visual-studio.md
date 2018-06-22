@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924225"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283129"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 
@@ -36,7 +36,7 @@ W ramach rodziny produktów Visual Studio, istnieją trzy metody, można użyć 
 | Wiersz polecenia programu MSBuild| -Kompilacji projektów bez instalowania programu Visual Studio.<br />-Wykonywania wielu procesorów kompilacje dla wszystkich typów projektów.<br />-Dostosować większość obszarów system kompilacji.|
 | Team Foundation Build | -Automatyzacji procesu kompilacji w ramach ciągłej integracji/ciągłego dostarczania potoku.<br />-Zastosuj testów automatycznych z każdej kompilacji.<br />-Zastosowana nieograniczoną zasoby oparte na może do procesów kompilacji.<br />-Modyfikowanie przepływu pracy kompilacji i tworzenie działań kompilacji do wykonywania zadań ściśle dostosowany.|
 
-Dokumentacja w tej sekcji przechodzi w stan szczegółowe informacje o procesie kompilacji na podstawie IDE. Aby uzyskać więcej informacji na temat innych metod, zobacz [MSBuild](../msbuild/msbuild.md) i [ciągłej integracji i wdrażania](https://www.visualstudio.com/docs/build/overview)odpowiednio.
+Dokumentacja w tej sekcji przechodzi w stan szczegółowe informacje o procesie kompilacji na podstawie IDE. Aby uzyskać więcej informacji na temat innych metod, zobacz [MSBuild](../msbuild/msbuild.md) i [ciągłej integracji i wdrażania](/vsts/pipelines/index?view=vsts)odpowiednio.
 
 ## <a name="overview-of-building-from-the-ide"></a>Omówienie tworzenia z IDE
 

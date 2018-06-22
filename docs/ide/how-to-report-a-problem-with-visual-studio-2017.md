@@ -12,80 +12,87 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 735f0d5160466c81560ba5afb6bfc0e696d88230
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745998"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302935"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
-Jeśli wystąpi problem z programem Visual Studio, chcemy wiadomo o nim. Oto jak zgłosić problem, tak aby firma Microsoft może zdiagnozować i rozwiązać ten problem.
+Jeśli wystąpi problem z programem Visual Studio, chcemy wiadomo o nim. Poniżej przedstawiono sposób Zgłoś problem do [społeczność deweloperów](https://developercommunity.visualstudio.com/) tak, aby firma Microsoft może zdiagnozować i rozwiązać ten problem.
 
-## <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
+## <a name="report-a-problem-by-using-visual-studio"></a>Zgłoś problem za pomocą programu Visual Studio
 
-Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed zgłosić problem. W ten sposób można zgłosić problem, które występują, a także głosu lub komentarz na nim. Można nawet głosu lub komentarz na inny problem, który zostanie wyświetlony przesłane za.
+Aby zgłosić problem dla programu Visual Studio, konieczne jest zainicjowanie raportu z programu Visual Studio lub Instalator programu Visual Studio. Nie można go bezpośrednio za pomocą [społeczność deweloperów](https://developercommunity.visualstudio.com/) witryny sieci Web. Raportowanie za pomocą programu Visual Studio umożliwia informacje diagnostyczne mają zostać automatycznie uwzględnione w raporcie.
+
+![Raport podręczne problem dotyczący społeczność deweloperów usługi Visual Studio](media/report-an-issue.png)
 
 1. W programie Visual Studio, wybierz **pomocy** > **Prześlij opinię** > **zgłosić Problem**.
-2. Jeśli użytkownik nie jest zarejestrowany, wybierz **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu.
-3. Postępuj zgodnie z instrukcjami na ekranie do logowania.
 
- ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png)
+   > [!TIP]
+   > Jeśli nie można ukończyć instalacji programu Visual Studio lub nie masz dostępu do narzędzia opinię w programie Visual Studio, może zgłosić problem przy użyciu **Instalator programu Visual Studio**. Aby to zrobić, wybierz ikonę opinii w prawym górnym rogu **Instalator programu Visual Studio**.
 
-## Wyszukiwanie i głosów dla podobnych problemów <a name="search_and_vote"></a>
+1. Jeśli użytkownik nie jest zarejestrowany, wybierz **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu. Postępuj zgodnie z instrukcjami na ekranie do logowania.
 
-1. Wyszukaj problemu, a następnie sprawdź, czy inne osoby mają zgłoszone, zbyt.
-2. Jeśli ktoś zgłosił go, "góra głos" go, aby poinformować nas.
+   ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png)
 
-  ![Wyszukiwanie i głosów dla podobnych problemów](../ide/media/search-and-vote.png)
+   Po zalogowaniu, możesz zgłosić problem, który występują, lub w przypadku głosu lub komentarz na nim. Można również głosu lub opublikowane komentarz na inny problem, który zostanie wyświetlony.
 
-## Zgłoś problem nowy <a name="report_new_problem"></a>
+1. Visual Studio udostępnia interfejs do wyszukania problemu i sprawdź, czy inne osoby mają zgłoszone, zbyt. Jeśli ktoś zgłosił go, "góra głos" go, aby poinformować nas.
 
-1. Jeśli nie możesz znaleźć, czego szukasz, wybierz **problem nowy raport** u dołu ekranu.
-2. Utwórz opisowy tytuł problemu, który pomoże nam go rozesłać do poprawne zespołu Visual Studio.
-3. Przekaż dodatkowe szczegóły i w miarę możliwości opisz kroki, które spowodowały wystąpienie problemu.
+   ![Wyszukiwanie i głosów dla podobnych problemów](../ide/media/search-and-vote.png)
 
-  ![Zgłoś problem nowy](../ide/media/report-new-problem.png)
+1. Jeśli nie możesz znaleźć tego problemu, wybierz **problem nowy raport** w dolnej części ekranu.
 
-## Zrzut ekranu i załączniki (opcjonalnie) <a name="provide_screenshots"></a>
+   > [!NOTE]
+   > **Problem nowy raport** przycisk jest wyświetlany tylko w interfejsie programu Visual Studio dla społeczności deweloperów. Nie można zgłosić problem bezpośrednio na [społeczność deweloperów](https://developercommunity.visualstudio.com/) witryny sieci Web.
 
- Wybierz wysyłanie bieżącego ekranu do firmy Microsoft. Możesz dołączyć dodatkowe zrzuty ekranu lub inne pliki, wybierając **Dołącz dodatkowe pliki** przycisku.
+1. Utwórz opisowy tytuł problemu, który pomoże nam go rozesłać do poprawne zespołu Visual Studio.
 
-## Podaj zrzutu śledzenia i sterty (opcjonalnie) <a name="provide_a_trace_and_heap_dump"></a>
+1. Przekaż dodatkowe szczegóły i w miarę możliwości opisz kroki, które spowodowały wystąpienie problemu.
 
-Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cenimy korzystając z **zgłosić Problem** narzędzia, aby rejestrować wszystkie czynności dotyczące reprodukcja i wysyłać dane do firmy Microsoft. Oto jak to zrobić.
+   ![Zgłoś problem nowy](../ide/media/report-new-problem.png)
+
+1. Wybierz **dalej** można przenieść do **załączników** kartę. W tym miejscu można przechwycić bieżącego ekranu do wysłania do firmy Microsoft. Aby dołączyć dodatkowe zrzuty ekranu lub innych plików, wybierz polecenie **Dołącz dodatkowe pliki**.
+
+   ![Dołącz zrzut ekranu do raport o problemie Visual Studio](media/report-a-problem-screenshot.png)
+
+1. Jeśli nie chcesz dołączyć zrzut ekranu lub [rekord reprodukcja](#record-a-repro), wybierz pozycję **dalej** można przenieść do **Podsumowanie** kartę.
+
+1. Wybierz **przesyłania** wysłanie raportu, wraz z żadnych obrazów i plików śledzenia lub zrzut. (Jeśli **przesyłania** przycisk będzie szary, upewnij się, że podano tytuł i opis raportu.)
+
+## <a name="record-a-repro"></a>Rekord reprodukcja
+
+Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cenimy korzystając z **zgłosić Problem** narzędzia, aby rejestrować wszystkie czynności dotyczące reprodukcja i wysyłać dane do firmy Microsoft. Oto jak to zrobić:
+
+1. Po wprowadzeniu tytuł i opis dla tego problemu, wybierz **dalej** można przenieść do **załączników** kartę.
 
 1. Wybierz **rekordu** kartę.
-2. Wybierz **Rozpocznij rejestrowanie**. Nadaj uprawnienia do uruchamiania narzędzia.
 
-  ![Wybierz polecenie "Rozpocznij nagrywanie" pozwala udostępnić plik zrzutu śledzenia i sterty ](../ide/media/record-dialog-box.png)
+1. W obszarze **Zarejestruj swoje czynności**, wybierz bieżące wystąpienie programu Visual Studio, czy można odtworzyć problem. Jeśli nie możesz na przykład jeśli odpowiada Visual Studio, wybierz  **\<utworzenia nowego wystąpienia >** do rejestrowania akcji w nowym wystąpieniu programu Visual Studio.
 
-3. Gdy **Rejestrator** pojawi się narzędzie, wykonaj kroki, które odtworzenia problemu.
-4. Gdy wszystko będzie gotowe, wybierz pozycję **zatrzymać rekordu** przycisku.
-5. Poczekaj kilka minut dla programu Visual Studio do gromadzenia i pakiet zarejestrowane informacje.
+1. Wybierz **Rozpocznij rejestrowanie**. Nadaj uprawnienia do uruchamiania narzędzia.
 
-## Przesłanie raportu <a name="submit_the_report"></a>
+   ![Wybierz polecenie "Rozpocznij nagrywanie" pozwala udostępnić plik zrzutu śledzenia i sterty w raporcie problem Visual Studio](../ide/media/record-dialog-box.png)
 
- Wybierz **przesyłania** przycisk, aby wysłać raport, wraz z żadnych obrazów i plików śledzenia lub zrzut. (Jeśli **przesyłania** przycisk będzie szary, upewnij się, że podano tytuł i opis raportu.)
+1. Gdy **Rejestrator** pojawi się narzędzie, wykonaj kroki, które odtworzenia problemu.
 
-## Alternatywy raportowania <a name="alternate_reporting"></a>
+1. Gdy wszystko będzie gotowe, wybierz pozycję **zatrzymać rekordu** przycisku.
 
-### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Zgłoś problem za pomocą Instalator programu Visual Studio
+1. Poczekaj kilka minut dla programu Visual Studio do gromadzenia i pakiet zarejestrowane informacje.
 
-Jeśli nie można ukończyć instalacji programu Visual Studio lub nie masz dostępu do narzędzia opinię w programie Visual Studio, może zgłosić problem przy użyciu **Instalator programu Visual Studio**. Aby to zrobić, wybierz ikonę opinii w prawym górnym rogu **Instalator programu Visual Studio**.
+## <a name="search-for-solutions-or-provide-feedback"></a>Wyszukaj rozwiązania lub Prześlij opinię
 
- ![Można karty, aby przycisk Podaj opinii w Instalator programu Visual Studio, aby otworzyć narzędzie opinii](../install/media/report-a-problem.png)
-
-### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Wyszukaj problemy i rozwiązania przy użyciu programu Visual Studio społeczność deweloperów
-
-Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje ryzyko, że problem już został zgłoszony i rozwiązanie opublikowane w społeczność deweloperów programu Visual Studio. Aby uzyskać więcej informacji, zobacz [społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
-
-#### <a name="provide-product-feedback-or-a-suggestion"></a>Podaj opinię o produkcie lub sugestię
+Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje szansa, że problem już został zgłoszony i rozwiązanie zamieszczony na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) strony.
 
 Jeśli nie masz problem do raportu, ale chcesz wyrazić opinię o produkcie lub sugestię jest miejsce do tego zbyt. Aby uzyskać więcej informacji, zobacz [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) strony.
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Porozmawiaj z nami](../ide/talk-to-us.md)
-* [Społeczność deweloperów usługi Visual Studio](https://developercommunity.visualstudio.com/)
+* [Zgłoś problem z programem Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
+* [Zgłoś problem z C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
+* [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Prywatność danych społeczność deweloperów](developer-community-privacy.md)

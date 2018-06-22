@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e16680b9122565430907b14e16b32d277bfb455
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234491"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283210"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -106,11 +106,11 @@ Przed utworzeniem formantów powiązanych z danymi musi definiować modelu danyc
 
 Aby wypełnić dataset z danymi, użyj `Fill` metody `ProductTableAdapter`. Domyślnie `Fill` wypełnienia metody `ProductDataTable` w `AdventureWorksLTDataSet` z wszystkich wierszy danych z tabeli produktu. Można zmodyfikować tę metodę, aby zwrócić tylko podzbiór wierszy. W ramach tego przewodnika należy zmodyfikować `Fill` metodę, aby zwrócić tylko wiersze, dla produktów, które mają zdjęć.
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie `AdventureWorksLTDataSet.xsd` pliku.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie *AdventureWorksLTDataSet.xsd* pliku.
 
      Zostanie otwarty projektant obiektów Dataset.
 
-2.  W projektancie, kliknij prawym przyciskiem myszy **wypełnienia GetData()** zapytań i wybierz **Konfiguruj**.
+2.  W projektancie, kliknij prawym przyciskiem myszy **wypełnienia**, **GetData()** zapytań i wybierz **Konfiguruj**.
 
      **Konfiguracji TableAdapter** zostanie otwarty Kreator.
 
@@ -177,7 +177,7 @@ Tworzenie formantów, które Wyświetl rekordy klientów, przeciągając `Produc
 
 7.  W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.
 
-## <a name="navigating-product-records"></a>Nawigowanie po rekordów produktu
+## <a name="navigate-product-records"></a>Przejdź rekordów produktu
 
 Dodaj kod, który umożliwia przewijanie rekordów produktu za pomocą **\<** i **>** przycisków.
 

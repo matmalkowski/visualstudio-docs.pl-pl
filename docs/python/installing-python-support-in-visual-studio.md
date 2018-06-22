@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0c940fdefdc732f277b9a5c71ff3e9a7e8ed244a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296314"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio w systemie Windows
 
@@ -40,10 +41,10 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 1. Pobierz i Uruchom najnowszą wersję Instalatora programu Visual Studio 2017 r. Jeśli masz już zainstalowanego programu Visual Studio, uruchomić Instalator programu Visual Studio, wybierz **Modyfikuj** opcji (zobacz [zmodyfikować Visual Studio](../install/modify-visual-studio.md)) i przejdź do kroku 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Zainstaluj program Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Zainstaluj program Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > Wersja Community to dla indywidualnych deweloperów, uczenie klasy academic badań i rozwoju typu open source. Do innych celów, należy zainstalować <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> lub <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+    > Wersja Community to dla indywidualnych deweloperów, uczenie klasy academic badań i rozwoju typu open source. Do innych celów, należy zainstalować <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> lub <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
 
 1. Instalator wyświetla listę obciążeń, grup powiązane opcje dla rozwoju określonych obszarów. Dla języka Python, wybierz **programowania Python** obciążenia.
 
@@ -67,7 +68,7 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
     | Narzędzia deweloperskie macierzystego języka Python | Instaluje kompilator języka C++ i inne składniki niezbędne do opracowywania rozszerzeń macierzystego dla języka Python. Zobacz [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). Zainstaluj również **tworzenia klasycznych aplikacji w języku C++** obciążenia dla pełnej obsługi języka C++. |
     | Azure podstawowe narzędzia usługi w chmurze | Udostępnia dodatkowe wsparcie dla deweloperów usług Azure Cloud Services w języku Python. Zobacz [projektów usług w chmurze Azure](python-azure-cloud-service-project-template.md). |
 
-1. Po zakończeniu instalacji Instalator udostępnia opcje umożliwiające modyfikowanie, uruchamianie, napraw lub odinstaluj program Visual Studio. **Modyfikuj** przycisku zmienia się na **aktualizacji** podczas aktualizacji dla programu Visual Studio, kiedy aktualizacje są dostępne dla każdego zainstalowanych składników. (Opcja Modyfikuj, następnie jest dostępne w menu rozwijanym). Wyszukując "Visual Studio", można uruchomić Instalatora z menu Start systemu Windows i Visual Studio.
+1. Po zakończeniu instalacji Instalator udostępnia opcje umożliwiające modyfikowanie, uruchamianie, napraw lub odinstaluj program Visual Studio. **Modyfikuj** przycisku zmienia się na **aktualizacji** kiedy aktualizacje do programu Visual Studio są dostępne dla wszystkich zainstalowanych składników. (Opcja Modyfikuj, następnie jest dostępne w menu rozwijanym). Wyszukując "Visual Studio", można uruchomić Instalatora z menu Start systemu Windows i Visual Studio.
 
     ![Uruchamianie, modyfikowanie, modyfikowania lub odinstalowanie programu Visual Studio z Instalatorem](media/installation-vs-launch.png)
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: ca571b95d410dd2bd66dc818adeae12c80d00e9e
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957674"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302900"
 ---
 # <a id="top"> </a> Visual Studio obrazów na platformie Azure
 
@@ -34,8 +34,8 @@ Obrazy do najnowszej wersji głównych, Visual Studio 2017 i programu Visual Stu
 
 | Wersja                                              | Wersje                     |     Wersja produktu:     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: R (wersja 15.7)                    |    Enterprise, Community     |      Wersja 15.7.0     |
-| Programu Visual Studio 2017: Najnowszej wersji zapoznawczej (wersja 15.8, wersja zapoznawcza 1) |    Enterprise, Community     |      Wersja 15.8.1     |
+| Visual Studio 2017: R (wersja 15.7)                    |    Enterprise, Community     |      Wersja 15.7.3     |
+| Programu Visual Studio 2017: Najnowszej wersji zapoznawczej (wersja 15.8, wersja zapoznawcza 2) |    Enterprise, Community     |      Wersja 15.8.2     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.13    |
 |   Visual Studio 2015: R (Update 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Brak             | (Wygasł obsługi) |
