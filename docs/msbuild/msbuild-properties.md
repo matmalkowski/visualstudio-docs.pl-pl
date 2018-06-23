@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a45f4388fe02e7192da91a246b3dd05657f0ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 972deba96540d835ced02baa3abf33cb1972519f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573963"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326257"
 ---
 # <a name="msbuild-properties"></a>Właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.  
@@ -63,13 +63,13 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
 ## <a name="registry-properties"></a>Właściwości rejestru  
  Wartości rejestru systemu można odczytać za pomocą następującej składni, gdzie `Hive` jest gałęzią rejestru (np. HKEY_LOCAL_MACHINE), `Key` to nazwa klucza, `SubKey` jest nazwą podklucza, a `Value` to wartość podklucza.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey@Value)  
 ```  
   
  Aby odczytać domyślną wartość podklucza, należy pominąć `Value`.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey)  
 ```  
   
@@ -88,7 +88,7 @@ $(registry:Hive\MyKey\MySubKey)
   
  W przykładzie poniżej dla globalnej właściwości `Configuration` jest ustawiana wartość `DEBUG`.  
   
-```  
+```cmd  
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765606"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326990"
 ---
 # <a name="extend-sharepoint-project-items"></a>Rozszerzanie elementów projektu SharePoint
   Tworzenie rozszerzenia elementu projektu umożliwia dodawanie funkcji do typu elementu projektu SharePoint, która jest już zainstalowana w programie Visual Studio. Na przykład można utworzyć rozszerzenia wbudowanych **odbiorcy zdarzeń** lub **definicji listy** elementy projektu w programie Visual Studio lub można utworzyć rozszerzenia dla typu elementu niestandardowego projektu. Można również utworzyć rozszerzenie dla wszystkich typów elementów projektu SharePoint.  
@@ -32,7 +32,7 @@ ms.locfileid: "34765606"
   
  Podczas rozszerzania element projektu do elementu projektu można również dodać następujące funkcje:  
   
--   Dodawanie pozycji menu skrótów do elementu projektu. Element menu jest wyświetlany, gdy Otwórz menu skrótów dla elementu projektu w **Eksploratora rozwiązań**. Otwórz menu skrótów, klikając prawym przyciskiem myszy element projektu lub wybierając go, a następnie wybierając **Shift**+**F10** kluczy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie pozycji Menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+-   Dodawanie pozycji menu skrótów do elementu projektu. Element menu jest wyświetlany, gdy Otwórz menu skrótów dla elementu projektu w **Eksploratora rozwiązań**. Otwórz menu skrótów, klikając prawym przyciskiem myszy element projektu lub wybierając go, a następnie wybierając **Shift**+**F10** kluczy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
 -   Dodawanie właściwości niestandardowych do elementu projektu. Pojawi się ona w **właściwości** okna po wybraniu elementu projektu w **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
@@ -69,7 +69,7 @@ ms.locfileid: "34765606"
   
 ## <a name="see-also"></a>Zobacz także
  [Porady: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Porady: Dodawanie pozycji Menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Porady: Dodawanie pozycji menu skrótów do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Porady: Dodawanie właściwości do rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [Wskazówki: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  

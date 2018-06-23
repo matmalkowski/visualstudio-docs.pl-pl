@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca01699b8dfef3b427579b839359953742a15758
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 497479ea7b49581e478534e2f8d83d0dd917a2da
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304770"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326968"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debugowanie dla początkujących bezwzględne
 
@@ -25,9 +25,9 @@ Dowiedz się bardzo podstawowe sposoby debugowania za pomocą debugera. Jeśli p
 
 Po pierwsze, może być przydatne do odpowiedzi na podstawowe pytania takie jak "Co to jest debugowanie?" i "Co to jest tryb debugowania?"
 
-* *Debugowanie* jest proces usuwania błędów w kodzie. W kontekście debugowania narzędzia, takiego jak Visual Studio.
+* *Debugowanie* jest proces usuwania błędów w kodzie.
 
-* *Tryb debugowania* oznacza z tą aplikacją (wykonywanie kodu) podczas debuger programu Visual Studio jest dołączony do aplikacji. W debugerze widać, czynności kod po uruchomieniu. Na przykład możesz sprawdzić aplikacji stanu (przyjrzeć zmienne), zobacz co funkcji pobierania noszą nazwę i prób znalezienia usterek. W dokumentów gdy chcemy, aby wprowadzić tryb debugowania, wystarczy zwykle powiedzieć "Debuger Start" lub "Uruchamianie aplikacji w debugerze".
+* *Tryb debugowania* sposób uruchamiania aplikacji (wykonywanie kodu) podczas debuger jest dołączony do aplikacji. Debugerze widać, czynności kod po uruchomieniu. Na przykład możesz sprawdzić aplikacji stanu (przyjrzeć zmienne), zobacz co funkcji pobierania noszą nazwę i prób znalezienia usterek. W dokumentacji programu Visual Studio gdy chcemy, aby wprowadzić tryb debugowania, wystarczy zwykle powiedzieć "Uruchomienia debugera" lub "Uruchamianie aplikacji w debugerze".
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Wyjaśnienie problem pytając samodzielnie odpowiednie pytania
 

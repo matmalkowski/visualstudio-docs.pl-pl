@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571623"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325299"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 Transformacja jest jeden do jednego konwersji jeden element listy do innej. Oprócz włączenia projektu można przekonwertować elementu listy, transformacji umożliwia cel, aby zidentyfikować bezpośredniego mapowania między jej danych wejściowych i wyjściowych. W tym temacie opisano transformacji i w jaki sposób [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa ich do kompilacji projektów bardziej efektywnie.  
@@ -28,7 +28,7 @@ Transformacje nie są dowolne, ale są ograniczone przez specjalnej składni, w 
   
 W poniższym przykładzie lista *.resx* plików jest przekształcana na listę *.resources* plików. Modyfikator transformacji %(filename) określa, że każdy *.resources* plik ma taką samą nazwę jak odpowiadający mu *.resx* pliku.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Na przykład, jeśli elementy na liście element @(RESXFile) są *Form1.resx*, *
 ## <a name="using-multiple-modifiers"></a>Przy użyciu wielu modyfikatorów  
  Wyrażenie do przekształcenia może zawierać wiele modyfikatorów, które mogą być łączone w dowolnej kolejności i można powtarzać. W poniższym przykładzie nazwę katalogu, który zawiera pliki jest zmieniany, ale pliki zachować oryginalne rozszerzenie nazwy, a nazwa pliku.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

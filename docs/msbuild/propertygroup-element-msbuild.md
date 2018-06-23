@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8df7de09fe90b0825d1b990b18b3a7d2309e4a08
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b7d300a1a47499f963e7ff717c12f72e2483e05
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575523"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326322"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup — Element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być elementem podrzędnym elementu `PropertyGroup` elementu.  
@@ -35,7 +35,7 @@ Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/pro
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <PropertyGroup Condition="'String A' == 'String B'">  
     <Property1>...</Property1>  
     <Property2>...</Property2>  
@@ -55,7 +55,7 @@ Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/pro
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Właściwość](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwości* elementów w `PropertyGroup` elementu.|  
+|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwości* elementów w `PropertyGroup` elementu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 

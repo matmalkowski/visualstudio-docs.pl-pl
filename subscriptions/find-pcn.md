@@ -9,12 +9,12 @@ description: Dowiedz się, jak znaleźć numer autoryzacji lub publiczny numer k
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 224cb02d2ffdeceb4c2288175968324badd0911c
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863300"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325443"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć mój "publiczny numer klienta" (PCN) lub numer autoryzacji?
 
@@ -24,16 +24,13 @@ Aby ukończyć procesu dołączania w Twojej organizacji do portalu administracy
 
 1.  Zaloguj się do Centrum usługi licencjonowania zbiorowego: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
 
-    ![Zaloguj się do centrum VLSC](_img/vlsc/vlsc-login.png)
-
 2. Na karcie subskrypcji, wybierz **programu Visual Studio subskrypcje**.
-
     ![Wybierz subskrypcje w centrum VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. PCN lub publiczny numer klienta znajduje się połowie stronę w dół.
-    
     ![Zlokalizuj PCN w centrum VLSC](_img/vlsc/vlsc-pcn.png)
 
+    
 Jeśli nie widzisz powyżej strony i nastąpi przekierowanie do strony logowania programu Visual Studio, skopiuj i wklej poniższe łącze w pasku adresu przeglądarki: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Mając więcej niż jeden PCN, które z nich należy użyć?

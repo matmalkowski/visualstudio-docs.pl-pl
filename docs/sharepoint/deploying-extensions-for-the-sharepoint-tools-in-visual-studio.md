@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e667c39d273b15e46ca0042130aa61fc6d16e224
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237747"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326868"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio
 
@@ -52,11 +52,11 @@ Domyślnie projektów VSIX generować tylko pakiety VSIX, nie zestawów. W zwią
 
 Możesz także pracować z projektami dodatkowych dla niektórych typów rozszerzeń:
 
--   Projekt biblioteki klasy, który implementuje żadnych poleceń programu SharePoint, które są używane przez rozszerzenia. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: rozszerzanie Eksploratora serwera do części sieci Web wyświetlaną](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+-   Projekt biblioteki klasy, który implementuje żadnych poleceń programu SharePoint, które są używane przez rozszerzenia. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Projekt elementu lub szablon projektu, który tworzy element lub szablon projektu, jeśli rozszerzenie definiuje nowy typ elementu projektu SharePoint. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowych z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+-   Projekt elementu lub szablon projektu, który tworzy element lub szablon projektu, jeśli rozszerzenie definiuje nowy typ elementu projektu SharePoint. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Projekt biblioteki klasy, który implementuje Kreator niestandardowy szablon elementu lub szablonu projektu, jeśli rozszerzenie zawiera szablon. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowych z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+-   Projekt biblioteki klasy, który implementuje Kreator niestandardowy szablon elementu lub szablonu projektu, jeśli rozszerzenie zawiera szablon. Aby uzyskać wskazówki, które przedstawiono w tym scenariuszu, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Jeśli dołączysz wszystkich projektów, w tym samym rozwiązaniu Visual Studio, można zmodyfikować pliku source.extension.vsixmanifest w projekcie VSIX, aby dołączyć dane wyjściowe kompilacji projektów biblioteki klas.
 
@@ -218,10 +218,10 @@ W poniższej tabeli przedstawiono wskazówki, które przedstawiają sposób umo�
 
 |Typ rozszerzenia|Instruktaże pokrewne|
 |--------------------|--------------------------|
-|Rozszerzenie, które obejmują tylko zestawu rozszerzenia|[Przewodnik: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Przewodnik: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Przewodnik: Wywoływanie modelu obiektów klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|Rozszerzenie zawiera polecenia SharePoint|[Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|Rozszerzenie zawiera szablon programu Visual Studio|[Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|Rozszerzenie zawiera Kreatora szablonu|[Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Rozszerzenie, które obejmują tylko zestawu rozszerzenia|[Wskazówki: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Wskazówki: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Wskazówki: Wywołują modelu obiektów klienta programu SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|Rozszerzenie zawiera polecenia SharePoint|[Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Rozszerzenie zawiera szablon programu Visual Studio|[Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|Rozszerzenie zawiera Kreatora szablonu|[Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>Ręczne tworzenie pakietów VSIX
 
@@ -271,5 +271,5 @@ W poniższym przykładzie przedstawiono zawartość pliku extension.vsixmanifest
 
 - [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

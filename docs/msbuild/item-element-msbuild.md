@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 24ce583ddfb33e48898f3bb98d79b721209ccb43
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576953"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326842"
 ---
 # <a name="item-element-msbuild"></a>Item — Element (MSBuild)
 Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `ItemGroup` elementu.  
@@ -34,7 +34,7 @@ Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy elemen
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  

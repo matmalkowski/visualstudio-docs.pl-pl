@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e897469eee33a1e4ee48b9096714b4213c099a8f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765859"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325998"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera
   Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Przy użyciu tej metody, można przejść za pośrednictwem składników witryny programu SharePoint w systemie. Składniki witryny programu SharePoint, takie jak definicje list i typów zawartości, są wyświetlane w węźle, o nazwie **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku** > **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, można usunąć elementy, przeglądania właściwości lub Odśwież widok drzewa za pomocą poleceń menu skrótów.  
@@ -52,9 +52,9 @@ ms.locfileid: "34765859"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: Dodawanie lub usuwanie połączeń SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Opisuje czynności, które są wymagane do dodawania nowej witryny programu SharePoint do **połączeń SharePoint** w węźle **Eksploratora serwera**.|  
+|[Porady: Dodawanie lub usuwanie połączeń SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Opisuje czynności, które są wymagane do dodawania nowej witryny programu SharePoint do **połączeń SharePoint** w węźle **Eksploratora serwera**.|  
   
 ## <a name="see-also"></a>Zobacz także
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
  

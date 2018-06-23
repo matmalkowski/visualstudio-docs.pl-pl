@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed794a50df41e6a8c6817a9e10d93edb7606b0e6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973519"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326829"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -124,13 +124,13 @@ Importuje Microsoft.Common.CurrentVersion.targets `$(MSBuildProjectFullPath).use
 
 Według Konwencji wiele podstawowych importowanie plików logiki kompilacji
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
 przed ich zawartość i
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 

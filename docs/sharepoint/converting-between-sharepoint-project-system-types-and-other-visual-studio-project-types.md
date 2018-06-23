@@ -15,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bcce4a414985ba291f33d3ad56abe880c08e7d2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237440"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326182"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio
   W niektórych przypadkach może być obiektem systemu projektu SharePoint i chcesz używać funkcji odpowiedni obiekt w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, albo na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metoda usługa projektu SharePoint, aby przekonwertować obiekt do innego obiektu modelu.
 
  Na przykład może być <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiekt, ale chcesz używać metod, które są dostępne tylko na <xref:EnvDTE.Project> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> obiektu. W takim przypadku można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metodę, aby przekonwertować <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> do <xref:EnvDTE.Project> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.
 
- Aby uzyskać więcej informacji na temat modelu obiektu automatyzacji programu Visual Studio i model obiektów integracji programu Visual Studio, zobacz [omówienie programowania modelu z rozszerzeniami narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
+ Aby uzyskać więcej informacji na temat modelu obiektu automatyzacji programu Visual Studio i model obiektów integracji programu Visual Studio, zobacz [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
 
 ## <a name="types-of-conversions"></a>Konwersje typów
  Poniższa tabela zawiera listę typów, które tej metody można konwertować między systemu projektu SharePoint a innymi modelami obiektu Visual Studio.
@@ -52,6 +52,6 @@ ms.locfileid: "35237440"
 ## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Instrukcje: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Porady: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f08a159d9490c5c8f92c5b093bc1b52d01c3b3d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575611"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326208"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami różnych kompilacji. Na przykład można utworzyć kompilację debugowania z informacji o symbolach lub kompilacji wydania bez informacji o symbolu, ale z włączonymi optymalizacjami. Lub w przypadku kompilowania projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większość opcji kompilacji nie zmieniają się; tylko kilka opcji nie zostaną zmienione na sterowanie konfigurację kompilacji. Z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia konfiguracji różnych kompilacji.  
@@ -56,13 +56,13 @@ Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami r
   
 -   Użyj **/property** przełącznik z właściwością, a wartość właściwości. Na przykład:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
      - lub -  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami r
   
 -   Użyj **/property** lub **/p** przełącznik wiele razy z właściwości i wartości właściwości lub użyj jednego **/property** lub **/p** przełącznika i wiele właściwości należy rozdzielić średnikami (;). Na przykład:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
      - or-  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami r
   
  Aby utworzyć wersja do debugowania tego projektu, wpisz:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Aby utworzyć wersji detalicznej tego projektu, wpisz:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Aby skompilować projekt, wprowadź następujące polecenie:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

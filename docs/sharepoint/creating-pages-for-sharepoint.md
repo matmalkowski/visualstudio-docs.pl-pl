@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765531"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326053"
 ---
 # <a name="create-pages-for-sharepoint"></a>Tworzenie stron dla SharePoint
   Można utworzyć strony aplikacji, stron w witrynie, stron wzorcowych i układy stron witryny programu SharePoint.  
@@ -59,7 +59,7 @@ ms.locfileid: "34765531"
 ## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>Tworzenie kaskadowych arkuszy stylów, ECMAScript i motywów
  Visual Studio nie ma szablonów dla tworzenie kaskadowych arkuszy stylów (CSS), ECMAScript (JavaScript, JScript) lub pliki motyw witryny programu SharePoint. Pliki te można utworzyć za pomocą wskazówki, które są dostępne w zestawie SDK programu SharePoint lub za pomocą narzędzi, takich jak SharePoint Designer.  
   
- Te pliki można dodać bezpośrednio do rozwiązania lub można je zaimportować. W obu przypadkach należy utworzyć odpowiednie foldery zamapowanego dla każdego elementu, który zostanie dodany. Aby uzyskać więcej informacji na temat tworzenia zamapowany folder, zobacz [porady: Dodawanie i usuwanie folderów mapowane](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+ Te pliki można dodać bezpośrednio do rozwiązania lub można je zaimportować. W obu przypadkach należy utworzyć odpowiednie foldery zamapowanego dla każdego elementu, który zostanie dodany. Aby uzyskać więcej informacji na temat tworzenia zamapowany folder, zobacz [porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
  Aby uzyskać więcej informacji o tworzeniu kaskadowych arkuszy stylów, zobacz [kaskadowych styl arkusze klasy użycia w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Aby uzyskać więcej informacji o tworzeniu plików JavaScript i JScript dla rozwiązania programu SharePoint, zobacz [ustawienia zapasowej ASPX strony podstawowej dla języka ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Aby uzyskać więcej informacji na temat tematów, zobacz [bloków konstrukcyjnych: stron i interfejs użytkownika](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
@@ -67,7 +67,7 @@ ms.locfileid: "34765531"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Tworzenie stron aplikacji dla SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób dodawania strony aplikacji: *.aspx* zawartość, która jest scalany z strony wzorcowej programu SharePoint.|  
-|[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)|Pokazuje, jak utworzyć stron ASP.NET, które są uruchamiane w witrynie programu SharePoint.|  
-|[Przewodnik: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Pokazuje, jak projektować i debugowania na stronie sieci Web platformy ASP.NET dla witryny programu SharePoint.|  
+|[Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób dodawania strony aplikacji: *.aspx* zawartość, która jest scalany z strony wzorcowej programu SharePoint.|  
+|[Porady: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)|Pokazuje, jak utworzyć stron ASP.NET, które są uruchamiane w witrynie programu SharePoint.|  
+|[Wskazówki: Tworzenie strony aplikacji SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Pokazuje, jak projektować i debugowania na stronie sieci Web platformy ASP.NET dla witryny programu SharePoint.|  
   

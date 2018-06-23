@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyści technicznej uwzględnionych 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1f80e5d95d5480dd2a1d63a04bdd601145a7961b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302966"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326957"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj świadczenia pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -25,13 +25,19 @@ Rozwiąż problemy naprawa w razie awarii w środowiskach nieprodukcyjnych. (Mus
 
    ![Kafelek świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-tile.png)
 
-1.  Aby rozpocząć korzystanie z świadczenia pomocy technicznej, kliknij **Aktywuj** na kafelku pomocy technicznej.
-2.  Spowoduje to Zainicjowanie sesji rozmów z przedstawicielem, który można utworzyć swoją nazwę kontraktu i identyfikator dostępu i tych, które należy podać.
+
+1.  Aby rozpocząć korzystanie z świadczenia pomocy technicznej, kliknij **rozmowy, aby aktywować** na kafelku pomocy technicznej. 
+2.  Spowoduje to Zainicjowanie sesji rozmów z przedstawicielem, który można utworzyć swoją nazwę kontraktu i identyfikator dostępu i tych, które należy podać. 
 3.  Aby ukończyć proces, należy podać przedstawiciela z:
     - Adres e-mail używanego do logowania się do subskrypcji
     - Identyfikator subskrypcji, który znajduje się na [subskrypcje](https://my.visualstudio.com/subscriptions) kartę.
 
     ![Identyfikator subskrypcji znaleźć świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+
+
+    > [!NOTE]
+    > Aby aktywować konto pomocy technicznej w innym języku niż angielski, wybierz swój kraj z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
+
 
 ## <a name="how-to-submit-an-incident"></a>Jak przesłać zdarzenia
 

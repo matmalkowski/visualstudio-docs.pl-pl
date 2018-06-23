@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5f1d4dec10970770202e685860381cdec15608
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 50786f1f42c27a793c48cb06c871b7f11c2dda25
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577356"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325436"
 ---
 # <a name="output-element-msbuild"></a>Output — Element (MSBuild)
 Magazyny wartości danych wyjściowych zadania w elementów i właściwości.  
@@ -37,7 +37,7 @@ Magazyny wartości danych wyjściowych zadania w elementów i właściwości.
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <Output TaskParameter="Parameter"  
     PropertyName="PropertyName"   
     Condition = "'String A' == 'String B'" />  

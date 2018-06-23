@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ce48f8fc21c1c035586edf48446ce1d3f103d3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2bd31b13b55defb4a8517ce9b0711395f09f99e6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570463"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326881"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 Rejestratory umożliwiają dostosowanie dane wyjściowe kompilacji i wyświetlić wiadomości, błędy lub ostrzeżenia w odpowiedzi na zdarzenia określonej kompilacji. Każdy rejestrator jest zaimplementowany jako klasy .NET, który implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs, który jest zdefiniowany w zestawie Microsoft.Build.Framework.dll.  
@@ -52,13 +52,13 @@ Rejestratory umożliwiają dostosowanie dane wyjściowe kompilacji i wyświetli�
   
  Następujące polecenie w wierszu kompilacji projektu `MyProject.csproj` i używa klasy rejestratora zaimplementowana w `SimpleLogger.dll`. **/Nologo** przełącznika ukrywa transparent i komunikat o prawach autorskich oraz **/noconsolelogger** przełącznik wyłącza domyślne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora konsoli.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
 ```  
   
  Następujące polecenie w wierszu tworzy projekt o tej samej rejestratora, ale z `Verbosity` poziom `Detailed`.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   

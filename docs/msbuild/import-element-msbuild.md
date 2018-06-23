@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 431184d2d4c2bf0bff5d6d3f4d5c44b3c6a670a2
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570970"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326975"
 ---
 # <a name="import-element-msbuild"></a>Import — Element (MSBuild)
 Importuje zawartość pliku jeden projekt do innego pliku projektu.  
@@ -35,7 +35,7 @@ Importuje zawartość pliku jeden projekt do innego pliku projektu.
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  

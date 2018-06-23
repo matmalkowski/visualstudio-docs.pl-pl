@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766510"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325724"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem — element
   Element danych niestandardowych jest skojarzony z elementem projektu programu SharePoint, w formacie klucza i wartości. Klucz i wartość muszą być ciągami.  
@@ -52,7 +52,7 @@ ms.locfileid: "34766510"
 |[Extensiondata —](../sharepoint/extensiondata-element.md)|Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.|  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy Skojarz dane niestandardowe z elementu projektu SharePoint przy użyciu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu Visual Studio zapisuje dane na nowe **extensiondataitem —** element w `.spdata` plik Element projektu. Aby uzyskać więcej informacji, zobacz [zapisywania danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Gdy Skojarz dane niestandardowe z elementu projektu SharePoint przy użyciu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu Visual Studio zapisuje dane na nowe **extensiondataitem —** element w `.spdata` plik Element projektu. Aby uzyskać więcej informacji, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informacje o elementach
   
@@ -64,6 +64,6 @@ ms.locfileid: "34766510"
 |**Może być pusta.**|Nie|  
   
 ## <a name="see-also"></a>Zobacz także
- [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

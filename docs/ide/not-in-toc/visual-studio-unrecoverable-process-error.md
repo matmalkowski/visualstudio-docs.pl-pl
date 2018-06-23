@@ -1,9 +1,10 @@
 ---
-title: Błąd nieodwracalny proces programu Visual Studio
-ms.date: 02/23/2017
+title: Proces napotkał nieodwracalny błąd
+ms.date: 06/22/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
-- editor
+- unrecoverable error
+- error, process
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,26 +12,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db7f2729ded01eedda6fff6d18ca1b2ee3607b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942224"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325705"
 ---
 # Błąd nieodwracalny proces programu Visual Studio
 
-Visual Studio 2017 używa wielu procesów poza procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, code analizatory i inne. Te procesy są uruchamiane poza procesem umożliwiają zalety wydajności programu Visual Studio, np. włączenie szybszym reagowaniu podczas wykonywania zadań intensywnie, długotrwałą programu Visual Studio. Ponieważ program Visual Studio jest proces 32-bitowy, uruchamianie poza procesem procesów daje również pracy intensywnie wykorzystujących pamięć większą przestrzeń pamięci działania.
+Visual Studio 2017 używa wielu procesów poza procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, code analizatory i inne. Te procesy są uruchamiane poza procesem umożliwiają zalety wydajności programu Visual Studio, np. włączenie szybszym reagowaniu podczas długo, uruchamiania zadań intensywnie zasobów programu Visual Studio. Ponieważ program Visual Studio jest proces 32-bitowy, uruchamianie poza procesem procesów daje również pracy intensywnie wykorzystujących pamięć większą przestrzeń pamięci działania.
 
-Jeśli jakiegoś powodu któregoś z powyższych wymaga zakończenia procesów, pasek informacji wyskakujące pojawia się następujący komunikat o błędzie:
+Jeśli *ServiceHub.RoslynCodeAnalysisService.exe* lub *ServiceHub.RoslynCodeAnalysisService32.exe* procesu jakiegoś powodu paska informacji wyskakujące pojawia się następujący komunikat o błędzie:
 
-"Niestety, proces używany przez Visual Studio napotkał nieodwracalny błąd. Zalecamy zapisywanie Twojej pracy, a następnie zamknięcie i ponowne uruchomienie programu Visual Studio."
+**"Niestety, proces używany przez Visual Studio napotkał nieodwracalny błąd. Zalecamy zapisywanie Twojej pracy, a następnie zamknięcie i ponowne uruchomienie programu Visual Studio."**
 
-Ten komunikat zostanie wyświetlony, należy natychmiast Zapisz swoją pracę, a następnie zamknij i ponownie program Visual Studio. Jeśli nie zrobisz, Visual Studio może ulec awarii w dowolnej chwili.
+Ten komunikat zostanie wyświetlony, należy zapisać pracę i następnie zamknij i uruchom ponownie program Visual Studio.
 
 ## Lista procesów
 
-Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Studio, który musi być uruchomiony dla programu Visual Studio do poprawnego działania.
+Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Studio. Ta lista jest tym procesy, które są uruchamiane w określonym przepływy pracy lub scenariuszy, a więc w większości przypadków te nie są wszystkie uruchomione w tym samym czasie.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -45,3 +46,5 @@ Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Stu
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
+
+Jeśli dowolne z tych procesów zakończy się nieoczekiwanie, niektóre funkcje w programie Visual Studio przestanie działać. Dla niektórych procesów może być nieważny utratę funkcji. Dla innych osób dotyczy stabilności programu Visual Studio i jest wyświetlany komunikat o błędzie.

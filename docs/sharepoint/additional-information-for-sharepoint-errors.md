@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691358"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326024"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
   Możesz znaleźć pomocy w rozwiązywaniu problemów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint błędów i ostrzeżeń w Rozwiązywanie problemów z tematów i fora publicznego Microsoft Developer Network (MSDN).  
@@ -34,11 +34,11 @@ ms.locfileid: "34691358"
 ## <a name="troubleshoot-errors-and-issues"></a>Rozwiązywanie problemów dotyczących błędów i problemów
  Aby uzyskać pomoc dotyczącą typowych błędów i inne problemy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia programu SharePoint, zobacz następujące tematy:  
   
--   [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+-   [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
 -   [Debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [Rozwiązywanie problemów związanych z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Inne zasoby
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint, fora i inne zasoby, które są dostępne w witrynie MSDN.  

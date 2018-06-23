@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f7211d31b8e57a88d3f6a5a585e912dd267cf943
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766275"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325589"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera
-  W programie Visual Studio można nawiązać lokalnych witryn programu SharePoint na komputerze dewelopera przy użyciu **połączeń SharePoint** w węźle **Eksploratora serwera** okna. Ten węzeł Wyświetla wielu składników lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Na przykład można wyświetlić listy, biblioteki dokumentów i typy zawartości w lokacji lokalnej. Aby uzyskać więcej informacji o korzystaniu z **Eksploratora serwera** nawiązać lokalnych witryn programu SharePoint, zobacz [przeglądanie Eksploratora przy użyciu serwera programu SharePoint połączeń](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+  W programie Visual Studio można nawiązać lokalnych witryn programu SharePoint na komputerze dewelopera przy użyciu **połączeń SharePoint** w węźle **Eksploratora serwera** okna. Ten węzeł Wyświetla wielu składników lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Na przykład można wyświetlić listy, biblioteki dokumentów i typy zawartości w lokacji lokalnej. Aby uzyskać więcej informacji o korzystaniu z **Eksploratora serwera** nawiązać lokalnych witryn programu SharePoint, zobacz [połączeń SharePoint Przeglądaj za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Można rozszerzyć **połączeń SharePoint** węzła przez tworzenie rozszerzeń dla istniejących węzłów lub przez tworzenie niestandardowego typu i dodanie go do hierarchii z węzłów.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "34766275"
   
  Istnieją dwa typy właściwości niestandardowe, które można dodać do węzła:  
   
--   Właściwości, które wyświetlić zestaw danych tylko do odczytu z witryny programu SharePoint. Dane w tym artykule opisano składnik programu SharePoint, która reprezentuje węzeł. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [wskazówki: rozszerzanie Eksploratora serwera do części sieci Web wyświetlaną](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+-   Właściwości, które wyświetlić zestaw danych tylko do odczytu z witryny programu SharePoint. Dane w tym artykule opisano składnik programu SharePoint, która reprezentuje węzeł. Aby uzyskać wskazówki, które pokazuje, jak to zrobić, zobacz [wskazówki: rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 -   Właściwości wyświetlanych danych niestandardowych odczytu/zapisu. Na przykład kodu, który pokazuje, jak to zrobić, zobacz [porady: rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
@@ -67,10 +67,10 @@ ms.locfileid: "34766275"
 |Skojarzenia przepływu pracy|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|  
 |Szablon przepływu pracy|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|  
   
- Aby uzyskać więcej informacji o korzystaniu z <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości, zobacz [kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+ Aby uzyskać więcej informacji o korzystaniu z <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości, zobacz [rozszerzeń narzędzi kojarzenie danych niestandardowych z programem SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Porady: rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Porady: Dodawanie niestandardowego węzła SharePoint do Eksploratora serwera](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Porady: pobieranie danych dla wbudowanego węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   

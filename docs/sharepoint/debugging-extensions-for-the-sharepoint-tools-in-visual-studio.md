@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 366103b7912491bca5c614e3681ab53e1c9f7257
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238072"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326098"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio
   Można debugować rozszerzeń narzędzi SharePoint w eksperymentalnym wystąpieniu lub prawidłowe wystąpienie programu Visual Studio. Jeśli potrzebujesz rozwiązać problem z rozszerzeniem, można również zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować sposób wykonuje polecenia SharePoint w Visual Studio.
@@ -32,15 +32,15 @@ ms.locfileid: "35238072"
 
  Aby uzyskać przykłady pokazujące, które pokazują, jak można debugować różne typy rozszerzeń eksperymentalne wystąpienie programu Visual Studio zobacz następujące wskazówki:
 
--   [Przewodnik: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+-   [Wskazówki: Rozszerzanie typu elementu projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu — część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+-   [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+-   [Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Przewodnik: Wywoływanie modelu obiektów klienta SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [Wskazówki: Wywołują modelu obiektów klienta programu SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Debugowanie rozszerzeń w regularnych wystąpienie programu Visual Studio
  Jeśli chcesz debugować projekt rozszerzenia w regularnych wystąpienie programu Visual Studio, należy najpierw zainstalować rozszerzenie w regularnych wystąpienia. Następnie dołącz debuger do drugiego proces programu Visual Studio. Po zakończeniu można usunąć rozszerzenia, aby nie ładuje na komputerze dewelopera.
@@ -94,7 +94,7 @@ ms.locfileid: "35238072"
 4.  Wybierz **Uruchom ponownie teraz** przycisk, aby ukończyć dezinstalację.
 
 ## <a name="debug-sharepoint-commands"></a>SharePoint — polecenia Debug
- Jeśli chcesz debugować polecenie programu SharePoint, która jest częścią rozszerzeń narzędzi SharePoint, należy dołączyć debugera do *vssphost4.exe* procesu. Jest to proces 64-bitowego hosta, który wykonuje polecenia programu SharePoint. Aby uzyskać więcej informacji dotyczących poleceń programu SharePoint i *vssphost4.exe*, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Jeśli chcesz debugować polecenie programu SharePoint, która jest częścią rozszerzeń narzędzi SharePoint, należy dołączyć debugera do *vssphost4.exe* procesu. Jest to proces 64-bitowego hosta, który wykonuje polecenia programu SharePoint. Aby uzyskać więcej informacji dotyczących poleceń programu SharePoint i *vssphost4.exe*, zobacz [wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Aby dołączyć debuger do procesu vssphost4.exe
 
@@ -118,7 +118,7 @@ ms.locfileid: "35238072"
 
 |Wartość|Opis|
 |-----------|-----------------|
-|EnableDiagnostics|REG_DWORD, który określa, czy komunikaty diagnostyczne są wyświetlane w **dane wyjściowe** okna.<br /><br /> Aby wyświetlić komunikaty diagnostyczne, ustaw tę wartość 1. Aby zatrzymać wyświetlanie wiadomości, ustaw tę wartość na 0 lub Usuń tę wartość.<br /><br /> Komunikaty, aby zapisać **dane wyjściowe** rozszerzenia narzędzi w oknie programu SharePoint, należy użyć usługi projektu SharePoint. Aby uzyskać więcej informacji, zobacz [przy użyciu usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
+|EnableDiagnostics|REG_DWORD, który określa, czy komunikaty diagnostyczne są wyświetlane w **dane wyjściowe** okna.<br /><br /> Aby wyświetlić komunikaty diagnostyczne, ustaw tę wartość 1. Aby zatrzymać wyświetlanie wiadomości, ustaw tę wartość na 0 lub Usuń tę wartość.<br /><br /> Komunikaty, aby zapisać **dane wyjściowe** rozszerzenia narzędzi w oknie programu SharePoint, należy użyć usługi projektu SharePoint. Aby uzyskać więcej informacji, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
 
  Jeśli rozszerzenie zawiera polecenie programu SharePoint, można tworzyć i ustaw dodatkowe wartości, aby ułatwić rozwiązywanie problemów z polecenia. W poniższej tabeli opisano te wartości.
 

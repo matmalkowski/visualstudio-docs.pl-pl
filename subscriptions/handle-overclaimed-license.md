@@ -9,12 +9,12 @@ description: Dowiedz się, jak Administratorzy może rozwiązać nadmiernie ośw
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ae5ed6a4d459f3131250aed89ba0aef88da1ef7c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031201"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325294"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Obsługa nadmiernie oświadczeniem subskrypcji
 
@@ -22,13 +22,11 @@ Czasami zamówień są zmieniane po subskrybentów zostały dodane, które mogą
 
 > [!NOTE] 
 > Overclaimed scenariusze nie są dozwolone w programach licencji Open.  Ponadto inne programy mogą wyświetlać te informacje w portalu inaczej. 
+![Powiadomienia o nadmiernie oświadczeniem subskrypcji](_img\over-claimed\over-claimed-alert.png)
 
- ![Powiadomienia o nadmiernie oświadczeniem subskrypcji](_img\over-claimed\over-claimed-alert.png)
 
 1.  Aby rozwiązać nadmiernie oświadczeniem licencji, kliknij tekst alertu. Spowoduje to wyświetlenie wyfiltrowanej listy subskrybentów, które są przypisane do poziomu subskrypcji i datę wygaśnięcia, który jest nadmiernie oświadczeniem. 
 
 2.  Usuń subskrybentów, zgodnie z potrzebami, aby usunąć nadmiernie oświadczeniem licencji. 
 
 3.  Omówienie w lewej części strony zostanie zaktualizowana do wyświetlenia są ponownie zgodności, czy wszystkie nadmiernie oświadczeniem powiadomienia nie będzie wyświetlany. 
-
-    ![Usuń nadmiernie oświadczeniem subskrypcji](_img\over-claimed\delete-over-claimed.png)

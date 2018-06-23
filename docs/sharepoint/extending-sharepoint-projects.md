@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab99253efbef61a3a041f261e44e8944bc7d6024
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 76648e128db23415d6a986a7d0087968c549bd13
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764156"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326011"
 ---
 # <a name="extend-sharepoint-projects"></a>Rozszerzanie projektów SharePoint
   Tworzenie rozszerzenia projektu, jeśli chcesz dostosować funkcje na poziomie projektu projektów programu SharePoint. Na przykład można dodać właściwości niestandardowe projektu lub odpowiadanie na zdarzenia na poziomie projektu, które są wywoływane, gdy użytkownik rozwija rozwiązania SharePoint w Visual Studio.  
@@ -32,7 +32,7 @@ ms.locfileid: "34764156"
   
  Podczas tworzenia rozszerzenia projektu do projektów SharePoint można również dodać następujące funkcje:  
   
--   Dodawanie pozycji menu skrótów. Element menu jest wyświetlany, gdy Otwórz menu skrótów węzła projektu SharePoint w **Eksploratora rozwiązań** prawym przyciskiem myszy węzeł lub wybierając go, a następnie wybierając **Shift** +  **F10** kluczy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie pozycji Menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
+-   Dodawanie pozycji menu skrótów. Element menu jest wyświetlany, gdy Otwórz menu skrótów węzła projektu SharePoint w **Eksploratora rozwiązań** prawym przyciskiem myszy węzeł lub wybierając go, a następnie wybierając **Shift** +  **F10** kluczy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
   
 -   Dodawanie właściwości niestandardowych. Pojawi się ona w **właściwości** okna po wybraniu projektu SharePoint w **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
   
@@ -45,10 +45,10 @@ ms.locfileid: "34764156"
   
 ## <a name="see-also"></a>Zobacz także
  [Porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Porady: Dodawanie pozycji Menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Porady: Dodawanie pozycji menu skrótów do projektów SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Wskazówki: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)   
- [Definiowanie typów elementów projektu SharePoint niestandardowych](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Rozszerzanie elementów projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  

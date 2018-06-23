@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 56bc4dbd50bedc15fcf6c69cbc334fe09c6094cc
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766392"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325602"
 ---
 # <a name="create-sharepoint-features"></a>Tworzenie funkcji SharePoint
   Funkcja programu SharePoint można użyć do grupowania powiązanych SharePoint — elementy projektu wdrożenia łatwiejsze. Można utworzyć funkcji, ustaw zakresy i oznaczyć za pomocą programu SharePoint Designer funkcji innych funkcji jako zależności. Projektant generuje również manifestu, który jest plik XML, który opisuje każdej funkcji.  
@@ -58,6 +58,6 @@ ms.locfileid: "34766392"
 ## <a name="see-also"></a>Zobacz także
  [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Porady: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
- [Instrukcje: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
+ [Porady: Dodawanie i usuwanie zależności funkcji](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
   
   

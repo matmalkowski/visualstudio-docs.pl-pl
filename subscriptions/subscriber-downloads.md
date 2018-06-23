@@ -9,12 +9,12 @@ description: Dowiedz się, jak znaleźć i pobrać produktów firmy Microsoft, u
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c6e894093ababe13e3fecedcbd9afe00f22128bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280536"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326348"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Przy użyciu subskrybenta pliki do pobrania w ramach subskrypcji programu Visual Studio
 W ramach swoje korzyści subskrybenta masz dostęp do szerokiej gamy modułu pobierania oprogramowania.
@@ -51,6 +51,7 @@ Na przykład, jeśli wybierzesz **programu Visual Studio 2017** z listy narzędz
 Możesz łatwo wybierz typ architektury, język i plików przy użyciu menu rozwijanego dostępne. Wybierz preferowany opcje, a następnie kliknij przycisk **Pobierz** aby rozpocząć pobieranie produktu.
 
 ### <a name="displaying-download-details"></a>Wyświetlanie szczegółów pobierania
+
 Kliknięcie na nazwę produktu lub **informacji** kliknięcie łącza spowoduje wyświetlenie szczegółów, który pobierania i udostępnić informacje o wersji produktu.
 
 ![Szczegóły pobierania programu Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)

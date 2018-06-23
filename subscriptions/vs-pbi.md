@@ -9,12 +9,12 @@ description: Więcej informacji o subskrypcji usługi Power BI Pro, uwzględnion
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe98aef3da7ef74a802d9dfd67f8f8917b1a20b2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d1afbe07a27ac41c8f36399b4e8cbd7463bce0b9
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282427"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326296"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w subskrypcji programu Visual Studio
 
@@ -79,10 +79,21 @@ Aby korzystać z usługi Power BI Pro, musisz skonfigurować konto lub zaloguj s
 | Visual Studio Dev Essentials | NA  | Niedostępne |NA|
 | Visual Studio Enterprise (miesięczne w chmurze) | Azure                                       | Niedostępne                                  |NA|
 
-<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP) dyrektor Region (RD).  Wyklucza: Sieci Microsoft Partner Network (MPN) ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP) dyrektor Region (RD).    Wyklucza: Sieci Microsoft Partner Network (MPN) ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
 
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
+
+ 
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Pytanie: czy korzyścią jest bezpłatne, dlaczego muszę podać numer karty kredytowej?
+A: korzyścią jest bezpłatne, ale aktywacji używa tego samego systemu używane do przetwarzania zamówienia płatną.  Dostępne są dwa typy płatności. 
+- Karty kredytowej.  Podaj numer karty kredytowej, Twoja karta nie zostanie obciążona. 
+- Faktury.  Jeśli wybierzesz "Faktura" jako typu płatności, nie trzeba podać numer karty kredytowej.  Można również ustawić interwał o "roczne".  Dzięki temu otrzymasz jednej wiadomości e-mail informujące, że faktury jest gotowa.  Kwota faktury będzie 0,00 USD.  
+
+### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Pytanie: czy można asysty usługi Power BI Pro zawarte w mojej subskrypcji można używać w środowisku produkcyjnym?
+Odpowiedź: tak.  
+
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej usługi Power BI Pro?

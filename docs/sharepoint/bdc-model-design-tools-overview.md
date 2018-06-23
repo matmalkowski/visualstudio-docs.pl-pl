@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765755"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326221"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
   Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu narzędzia Projektant BDC **szczegóły metody usługi łączności danych biznesowych** okno i **Eksplorator modelu BDC**.  
@@ -82,7 +82,7 @@ ms.locfileid: "34765755"
  [Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Porady: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
  [Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   

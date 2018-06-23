@@ -9,18 +9,17 @@ description: Dowiedz się, jak Administratorzy może obsłużyć wygasłych subs
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335622"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325128"
 ---
 # <a name="handling-expired-subscriptions"></a>Obsługa wygasłe subskrypcje
 
 Gdy użytkownik subskrypcja utraciła ważność, wskazane jest to w portalu przez czerwony pasek obok ich nazwy na liście subskrybentów. Dla tych abonentów nadal używać ich zalety subskrypcja programu Visual Studio konieczne będzie odnowić ich licencji. 
-
-![Lista wygasłych subskrypcji](_img\expired-subscriptions\expired-list.png) 
+    ![Lista wygasłych subskrypcji](_img\expired-subscriptions\expired-list.png)
 
 **Aby odnowić subskrypcji**
 1.  Skontaktuj się z odsprzedawcą licencjonowania zbiorowego lub sprzedawcy Twojej firmy Microsoft. 

@@ -9,12 +9,12 @@ description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji program
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 1b8d260a101840b04bd2c54e64665abbec78dbe7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283396"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326309"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 
@@ -35,20 +35,14 @@ To nie zapewnia kopii subskrypcji na inne konto; tylko zapewnia możliwość dos
 
 Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu można użyć tego konta z swoje korzyści, które wymagają logowania (IDE w VS VSTS i Azure).
 
-### <a name="prerequisites"></a>Wymagania wstępne
-
-* [VSTS projektu administratora kolekcji lub uprawnienia właściciela konta](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Aby użyć alternatywnego konta, musi zawierać subskrypcji skojarzonych z Twoim kontem, Visual Studio Team Services lub Microsoft Azure.
-
-> [!Note]
-> Możesz użyć korzyści z subskrypcji z Identyfikatorem alternatywny jednak Twoja subskrypcja jest nadal skojarzona z Twoim kontem oryginalnego.
 
 ### <a name="add-the-alternate-account"></a>Dodawanie alternatywnego konta
+
 
 1. Zaloguj się do portalu subskrybent Visual Studio przy użyciu konta Microsoft (https://my.visualstudio.com).
 
 2. Przejdź do **subskrypcje**.
+
 
    ![Dodawanie alternatywnego konta — Przejdź do subskrypcji w wersji programu VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
@@ -64,7 +58,7 @@ Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu możn
 
    ![Użyj konta służbowego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-   Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości mogą korzystać z zalet subskrypcji wymagające Zaloguj się przy użyciu alternatywnego konta (IDE programu VSTS i Azure).
+Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości mogą korzystać z zalet subskrypcji wymagające Zaloguj się przy użyciu alternatywnego konta (IDE programu VSTS i Azure).
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 

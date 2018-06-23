@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 735f0d5160466c81560ba5afb6bfc0e696d88230
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302935"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326144"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
@@ -63,6 +63,8 @@ Aby zgłosić problem dla programu Visual Studio, konieczne jest zainicjowanie r
 
 1. Wybierz **przesyłania** wysłanie raportu, wraz z żadnych obrazów i plików śledzenia lub zrzut. (Jeśli **przesyłania** przycisk będzie szary, upewnij się, że podano tytuł i opis raportu.)
 
+   Aby dowiedzieć się, jakie dane są zbierane, zobacz [dane zbierane](developer-community-privacy.md#data-we-collect).
+
 ## <a name="record-a-repro"></a>Rekord reprodukcja
 
 Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cenimy korzystając z **zgłosić Problem** narzędzia, aby rejestrować wszystkie czynności dotyczące reprodukcja i wysyłać dane do firmy Microsoft. Oto jak to zrobić:
@@ -82,6 +84,8 @@ Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cen
 1. Gdy wszystko będzie gotowe, wybierz pozycję **zatrzymać rekordu** przycisku.
 
 1. Poczekaj kilka minut dla programu Visual Studio do gromadzenia i pakiet zarejestrowane informacje.
+
+   Aby dowiedzieć się, jakie dane są zbierane, zobacz [dane zbierane](developer-community-privacy.md#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Wyszukaj rozwiązania lub Prześlij opinię
 

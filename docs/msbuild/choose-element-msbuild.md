@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c3e321495a362aa7f4551be7ccc913493dc3a73
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569524"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326933"
 ---
 # <a name="choose-element-msbuild"></a>Choose — Element (MSBuild)
 Oblicza elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementów i/lub `PropertyGroup` elementy do oceny.  
@@ -42,7 +42,7 @@ Oblicza elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementów i/l
 
 ## <a name="syntax"></a>Składnia  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
@@ -59,16 +59,16 @@ Oblicza elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementów i/l
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[w przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementy do oceny, czy wszystkie warunki `When` obliczać elementy `false`. Może być zero lub jeden `Otherwise` elementów w `Choose` elementu, a musi być ostatnim elementem.|  
-|[Kiedy](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwe blok kodu dla `Choose` element, aby wybrać. Może istnieć co najmniej jeden `When` elementów w `Choose` elementu.|  
+|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementy do oceny, czy wszystkie warunki `When` obliczać elementy `false`. Może być zero lub jeden `Otherwise` elementów w `Choose` elementu, a musi być ostatnim elementem.|  
+|[When](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwe blok kodu dla `Choose` element, aby wybrać. Może istnieć co najmniej jeden `When` elementów w `Choose` elementu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[w przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli wszystkie warunki `When` obliczać elementy `false`.|  
+|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli wszystkie warunki `When` obliczać elementy `false`.|  
 |[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-|[Kiedy](../msbuild/when-element-msbuild.md)|Określa możliwe blok kodu dla `Choose` element, aby wybrać.|  
+|[When](../msbuild/when-element-msbuild.md)|Określa możliwe blok kodu dla `Choose` element, aby wybrać.|  
 
 ## <a name="remarks"></a>Uwagi  
  `Choose`, `When`, I `Otherwise` elementy są używane razem w sposób, aby wybrać jedną sekcję kod do wykonania poza liczba możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764923"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325749"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Tworzenie kolumn witryn, typów zawartości i list dla SharePoint
   Program Visual Studio udostępnia szablony elementów projektu dla wielu różnych podstawowych elementów programu SharePoint, w tym *wymieniono* i *typy zawartości*, które można zastosować kolumny witryny (lub  *pola*). Nowych Designer dla typów zawartości oraz list należy tworzenia tych elementów jest łatwiejsze niż kiedykolwiek wcześniej.  
@@ -49,7 +49,7 @@ ms.locfileid: "34764923"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Przedstawia sposób tworzenia kolumny witryny, które są używane w niestandardowych typu zawartości. Typ zawartości jest następnie używana listy niestandardowej.|  
+|[Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Przedstawia sposób tworzenia kolumny witryny, które są używane w niestandardowych typu zawartości. Typ zawartości jest następnie używana listy niestandardowej.|  
   
 ## <a name="see-also"></a>Zobacz także
  [Rozpocząć wdrażanie na platformie SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  

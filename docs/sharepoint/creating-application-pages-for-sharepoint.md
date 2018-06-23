@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765008"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326130"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Tworzenie stron aplikacji dla programu SharePoint
   *Strony aplikacji* prowadzi do strony sieci Web ASP.NET, który jest przeznaczony do użytku w witrynie sieci Web programu SharePoint. Strony aplikacji są specjalistyczną odmianą strony ASP.NET. Główną różnicą między aplikacji i standardowe strony ASP.NET jest, że strony aplikacji zawiera zawartość, która jest scalany z strony wzorcowej programu SharePoint. Strona wzorcowa umożliwia stron aplikacji do udostępniania tego samego wygląd i zachowanie jako innych stron w witrynie.  
@@ -69,7 +69,7 @@ ms.locfileid: "34765008"
   
  Aby wyświetlić stronę aplikacji, musisz ręcznie przejść do lokalizacji strony aplikacji (na przykład: http://*nazwa_serwera*folderze /_layouts/*Project_Name*/ApplicationPage1.aspx).  
   
- Aby uzyskać więcej informacji na temat debugowania projektów SharePoint, zobacz [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Aby uzyskać więcej informacji na temat debugowania projektów SharePoint, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
 ## <a name="choose-a-master-page"></a>Wybierz stronę wzorcową
  Domyślnie **strony aplikacji** elementu odwołuje się do witryny, którego używasz do debugowania projektu strony wzorcowej. Czy strona ma nazwę v4.master i znajduje się ona na liście **galerii stron wzorcowych** witryny programu SharePoint.  

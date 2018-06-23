@@ -9,12 +9,12 @@ description: Dowiedz się, jak Administratorzy subskrypcji można uzyskać dost�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: a5399545108ad3731e9e415cf8b830df8b2b7bcb
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281540"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326944"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Dostęp do portalu i zarządzanie administratorami - subskrypcje zakupione za pośrednictwem wolumin Licencjonowania
 
@@ -47,6 +47,6 @@ Jeśli Twoja organizacja jest gotowy do można dołączać do portalu administra
 
 3.  Uzyskiwanie dostępu do portalu zarządzania subskrypcji. Po migracji organizacji wiadomości e-mail będą wysyłane do nowo dodanego super Administratorzy i Administratorzy, zwracając dostęp do nowego portalu i rozpocząć zarządzanie subskrypcjami.
 
-Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Zapoznaj się z [Znajdź swój głównej osoby kontaktowej](find-primary-contact.md) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
+Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Spójrz na [Znajdź swój głównej osoby kontaktowej](find-primary-contact.md) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
 
 Jeśli możesz już skonfigurowano jako administrator, a następnie można przejść bezpośrednio do subskrypcji programu Visual Studio administracji Portal pod adresem: [ https://manage.visualstudio.com ](https://manage.visualstudio.com).

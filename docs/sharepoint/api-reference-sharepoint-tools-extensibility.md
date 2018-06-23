@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692073"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325797"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint)
   Ta sekcja zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
@@ -65,5 +65,5 @@ ms.locfileid: "34692073"
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
+ [Wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
   

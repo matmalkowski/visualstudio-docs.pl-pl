@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766968"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325985"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty — element
   Reprezentuje właściwości niestandardowej, która jest zawarta w funkcji po wdrożeniu programu SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do właściwości, w kodzie.  
@@ -52,7 +52,7 @@ ms.locfileid: "34766968"
 |[Featureproperties —](../sharepoint/featureproperties-element.md)|Reprezentuje kolekcję wartości właściwości, które są dołączone do funkcji po wdrożeniu programu SharePoint.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aby uzyskać więcej informacji na temat właściwości funkcji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Aby uzyskać więcej informacji na temat właściwości funkcji, zobacz [informacjami wdrażanie pakietów i w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Informacje o elementach
   
@@ -65,6 +65,6 @@ ms.locfileid: "34766968"
   
 ## <a name="see-also"></a>Zobacz także
  [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Podaj informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

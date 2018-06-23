@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e88a8549700158a677b019424df5736cb9cc3a55
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ededaae56e9d09072e236036c15a2ccd662a952e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767322"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326468"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Wytyczne dotyczące importowania wielokrotnych przepływów danych
   Aby zaimportować wielokrotnych przepływów pracy tworzonych w programie SharePoint Designer, należy użyć szablonu projektu zaimportować programu SharePoint 2010 przepływu pracy wielokrotnego użytku w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Ten szablon importuje *deklaratywne* *przepływu pracy* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-tylko) i konwertuje ją na *kodu przepływu pracy*, czyli przepływu pracy, które mogą poprawić przy użyciu jednej [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] lub [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] kodu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wskazówki: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  
@@ -56,6 +56,6 @@ ms.locfileid: "34767322"
   
 ## <a name="see-also"></a>Zobacz także
  [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [Przewodnik: Importowanie przepływu danych wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)  
+ [Wskazówki: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)  
   
   

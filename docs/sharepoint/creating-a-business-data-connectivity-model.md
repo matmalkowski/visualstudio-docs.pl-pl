@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765193"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326037"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych biznesowych
-  Można utworzyć modelu łączności danych biznesowych (BDC) lub dostosowanie istniejącego modelu BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
+  Można utworzyć modelu łączności danych biznesowych (BDC) lub dostosowanie istniejącego modelu BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="create-a-new-model"></a>Utwórz nowy model
  Aby utworzyć nowy model, utworzyć **modelu łączności danych biznesowych** lub Dodaj **modelu łączności danych biznesowych** elementu do **pusty projekt SharePoint**.  
@@ -69,9 +69,9 @@ ms.locfileid: "34765193"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)|Pokazuje, jak utworzyć nowy model usługi łączności danych biznesowych.|  
-|[Instrukcje: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Pokazuje, jak zaimportować istniejący model do projektu programu SharePoint.|  
-|[Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Opisuje sposób udostępnić ciągów, które są łączone w metadanych modelu, jeśli model jest używany przez składnik Web Part lub strony sieci Web.|  
-|[Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Pokazuje, jak Dołączanie niestandardowego zestawu w funkcji.|  
+|[Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)|Pokazuje, jak utworzyć nowy model usługi łączności danych biznesowych.|  
+|[Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Pokazuje, jak zaimportować istniejący model do projektu programu SharePoint.|  
+|[Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Opisuje sposób udostępnić ciągów, które są łączone w metadanych modelu, jeśli model jest używany przez składnik Web Part lub strony sieci Web.|  
+|[Porady: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Pokazuje, jak Dołączanie niestandardowego zestawu w funkcji.|  
   
  

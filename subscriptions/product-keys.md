@@ -9,12 +9,12 @@ description: Informacje o sposobie uzyskiwania i zarządzania kluczami produktó
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 28db2b93a7d3d9593f0a8d66c8c7b0795530c8a1
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 810c560fcbae03678379a446f359e0a22d8ff085
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281277"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326818"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Przy użyciu kluczy produktu w ramach subskrypcji programu Visual Studio
 
@@ -47,9 +47,8 @@ Nasze badanie zawiera większość subskrybentów są objęte liczba kluczy prod
 
 ## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie, a także klucze produktów
 Możesz muszą być podpisane subskrypcji programu Visual Studio Aby wyświetlić klucze produktu. Znaleziono kluczami produktów poszczególnych wybierając niebieski **uzyskać klucz** łączy dla określonego produktu na [pliki do pobrania](https://my.visualstudio.com/downloads) strony, jak pokazano poniżej.  Wszystkie klucze są także dostępne w agregacji na [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) strony. Gdy istnieje wiele kluczy dla pojedynczego produktu, uwagi będą wyświetlane w kolumnie o wersji do pobrania pomóc w określeniu, klucz, do którego powinien być używany.
-
-   ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
-
+    ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
+    
 Niektóre produkty pakietu wiele wersji tego produktu do jednego pobierania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "statyczny", których można użyć jako wiele razy ponieważ aktywacja nie jest wymagana. Kluczy musi być żądane przez wybranie **uzyskać klucz** łącze dla produktu.
 

@@ -9,12 +9,12 @@ description: Dowiedz się, jak maksymalne wykorzystanie subskrypcji programu Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548726"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327001"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -102,8 +102,8 @@ Można łatwo zmienić informacje kontaktowe i preferencje w Twoim profilu.
 3.  Na **o** kartę, można zmienić nazwę, poczty e-mail, kraj/region, preferencje obrazów i skontaktuj się z profilu.  Na **preferencje** karcie można wybrać preferowany język, Data i czas wzorce, strefa czasowa i motyw interfejsu użytkownika.  
 4.  Po zakończeniu zmiany, kliknij przycisk **zapisać**. 
 5.  Kliknij w przeglądarce **ponownie** przycisk, aby powrócić do strony korzyści. 
+    ![Edytowanie informacji o profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Edytowanie informacji o profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Łączenie mojej subskrypcji platformy Azure lub subskrypcji do istniejącej usługi VSTS
 Zaloguj się do subskrypcji za pomocą osobistego konta Microsoft (MSA) i masz subskrypcję obejmującą Visual Studio Team Services lub Microsoft Azure przy użyciu służbowe konto zarządzane przez usługę Azure, można połączyć dwóch subskrypcji. To jest nazywany "alternatywne konto" i pozwala korzystać z kont usług zarządzanych logować się do subskrypcji, a jednocześnie ma dostęp do istniejących zasobów Azure, programu VSTS lub IDE, które są skojarzone z szkołę lub kont służbowych. 
@@ -111,12 +111,11 @@ Zaloguj się do subskrypcji za pomocą osobistego konta Microsoft (MSA) i masz s
 Nawet wtedy, gdy oba konta używają tego samego adresu e-mail, należy dodać konto robocze/służbowe dyskietki korzystanie z zalet w oba konta. 
 
 Dodawanie alternatywnego konta:
-1. Zaloguj się do [Portal subskrybenta](https://my.visualstudio.com) przy użyciu konta Microsoft (MSA).
+1. Zaloguj się do [Portal subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs) przy użyciu konta Microsoft (MSA).
 2. Polecenie **subskrypcje** kartę.
 3. W obszarze **łączy pokrewnych**, wybierz **Dodawanie alternatywnego konta**.
 4. Wprowadź adres emaiil konto służbowe/pracy, a następnie kliknij przycisk **Dodaj**. 
-
-![Alternatywne konta](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Alternatywne konta](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po dodaniu konta alternatywne możesz zaktualizować lub usunąć w dowolnym momencie, klikając **subskrypcje** kartę i wybierając odpowiednią opcję w **łączy pokrewnych** sekcji.  
 
