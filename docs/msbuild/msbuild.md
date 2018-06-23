@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576004"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327157"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  
@@ -75,7 +75,7 @@ ms.locfileid: "31576004"
 ##  <a name="BKMK_CommandPrompt"></a> Przy użyciu programu MSBuild w wierszu polecenia  
  Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, przekazać plik projektu do MSBuild.exe, wraz z niej odpowiednie opcje wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustaw inne opcje, które kontrolują proces kompilacji. Na przykład czy użyć następującej składni wiersza polecenia do tworzenia pliku `MyProj.proj` z `Configuration` ustawioną właściwość `Debug`.  
   
-```  
+```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
 ```  
   
@@ -89,7 +89,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  W poniższych sekcjach opisano niektóre podstawowe elementy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu. Samouczek dotyczący sposobu tworzenia pliku podstawowego projektu, zobacz [wskazówki: Tworzenie pliku projektu MSBuild od początku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-###  <a name="BKMK_Properties"></a> właściwości  
+###  <a name="BKMK_Properties"></a> Właściwości  
  Właściwości reprezentują pary klucz wartość, które mogą służyć do konfigurowania kompilacji. Właściwości są zadeklarowane, tworząc element, który ma nazwę właściwości jako element podrzędny [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Na przykład poniższy kod tworzy właściwość o nazwie `BuildDir` , który ma wartość `Build`.  
   
 ```xml  

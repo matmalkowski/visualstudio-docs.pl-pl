@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0971dc9d445c7a492d934c0c2bdc9b47de92028
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766067"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327245"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych biznesowych
-  Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostka opis kolekcji pól danych. Na przykład jednostka może reprezentować tabeli w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie i aktualizowanie danych reprezentowanego przez jednostek. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
+  Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostka opis kolekcji pól danych. Na przykład jednostka może reprezentować tabeli w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie i aktualizowanie danych reprezentowanego przez jednostek. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="add-entities"></a>Dodaj jednostki
  Można dodać jednostki przez przeciąganie lub kopiowanie **jednostki** z programu Visual Studio **przybornika** do projektanta usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
@@ -81,7 +81,7 @@ ms.locfileid: "34766067"
  Błędy sprawdzania poprawności może wystąpić, gdy naruszenia reguły modelu w określony sposób. Na przykład jeśli **IsCollection** ma ustawioną właściwość deskryptor typu **true**, ale nie deskryptory typu podrzędnego istnieje, pojawi się błędu sprawdzania poprawności. Może być konieczne zapoznaj się z regułami modelu BDC do zrozumienia niektórych błędów, które są wyświetlane w programie Visual Studio **listy błędów**. Aby uzyskać więcej informacji o regułach modelu usługi łączności danych biznesowych, zobacz [schematu BDCMetadata](http://go.microsoft.com/fwlink/?LinkID=169275).  
   
 ## <a name="debug-the-solution-that-contains-the-model"></a>Debugowanie rozwiązania zawierającego modelu
- Jak będzie debugowania kodu w programie Visual Studio można debugować kodu. Aby debugować kod, ustaw punkty przerwania w dowolnym miejscu w kodzie, a następnie uruchom debuger. Visual Studio otworzy w witrynie programu SharePoint. W programie SharePoint należy utworzyć listę lub składnik Web Part, który używa danych biznesowych. Następnie można przejrzeć kod. Aby uzyskać więcej informacji o debugowaniu projektów SharePoint, zobacz [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Jak będzie debugowania kodu w programie Visual Studio można debugować kodu. Aby debugować kod, ustaw punkty przerwania w dowolnym miejscu w kodzie, a następnie uruchom debuger. Visual Studio otworzy w witrynie programu SharePoint. W programie SharePoint należy utworzyć listę lub składnik Web Part, który używa danych biznesowych. Następnie można przejrzeć kod. Aby uzyskać więcej informacji o debugowaniu projektów SharePoint, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
  Można również debugowania kodu w zestawów niestandardowych, które można dodać do projektu. Jednak do debugowania kodu w zestawie niestandardowym, należy dodać zestawu do pakietu rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
@@ -109,7 +109,7 @@ ms.locfileid: "34766067"
  Mogą wystąpić sytuacje wymagające Visual Studio, aby wycofać całkowicie modelu z programu SharePoint. Na przykład modelu może być uszkodzona.  Można wdrożyć ponownie modelu do programu SharePoint, należy ustawić **aktualizacji przyrostowej** właściwości modelu do **False**, a następnie uruchom debuger. **Aktualizacji przyrostowej** właściwość jest widoczna w **właściwości** okna po wybraniu węzła, który reprezentuje model w programie **Eksplorator modelu BDC**. Domyślnie nazwa modelu jest **BdcModel1**.  
   
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Zmień identyfikator nazwy jednostek w modelu.
- Jeśli zmienisz nazwę identyfikatora po wdrożeniu modelu, zostanie zgłoszony błąd wdrażania. Nie można rozwiązać ten problem, ustawiając **aktualizacji przyrostowej** właściwości modelu do **False**. Ręcznie wycofać modelu, a następnie wykonaj ponowne wdrożenie rozwiązania. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Tego błędu można uniknąć, ustawiając **aktualizacji przyrostowej** właściwości **False** przed wdrożeniem początkowo modelu.  
+ Jeśli zmienisz nazwę identyfikatora po wdrożeniu modelu, zostanie zgłoszony błąd wdrażania. Nie można rozwiązać ten problem, ustawiając **aktualizacji przyrostowej** właściwości modelu do **False**. Ręcznie wycofać modelu, a następnie wykonaj ponowne wdrożenie rozwiązania. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md). Tego błędu można uniknąć, ustawiając **aktualizacji przyrostowej** właściwości **False** przed wdrożeniem początkowo modelu.  
   
 ## <a name="locate-documentation-for-bdc-model-elements"></a>Zlokalizuj dokumentacji dla elementów modelu BDC
  Visual Studio dodaje XML element do modelu dla każdej jednostki, metody lub inny element, który można utworzyć. Atrybuty elementu są wyświetlane jako właściwości **właściwości** okna. Informacje dotyczące elementów i atrybutów, które generuje Visual Studio podczas projektowania modelu, zobacz [schematu BDCMetadata](http://go.microsoft.com/fwlink/?LinkID=169275).  
@@ -119,18 +119,18 @@ ms.locfileid: "34766067"
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)|Zawiera opis narzędzi, które służą do wizualnego projektowania modelu zapasowego kontrolera domeny.|  
-|[Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Pokazuje, jak dodać typy zawartości zewnętrznej lub jednostki do modelu.|  
-|[Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlanie listy jednostek na liście lub części sieci Web.|  
-|[Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlić szczegóły określonej jednostki.|  
-|[Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom do dodawania rekordów do źródła danych bezpośrednio z listy lub części sieci Web.|  
-|[Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom usunąć dane ze źródła danych za pomocą opcji w interfejsie użytkownika (UI) listy lub części sieci Web.|  
-|[Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom zmianę rekordów danych w źródle danych bezpośrednio z listy lub części sieci Web.|  
-|[Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Pokazuje, jak dodać parametry wejściowe i zwracany do metody za pomocą metody okno Szczegóły programu Visual Studio.|  
-|[Instrukcje: Określanie deskryptora typu dla parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Pokazuje, jak zdefiniować typy danych parametru w modelu.|  
-|[Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)|Przedstawia sposób tworzenia wystąpienia metody, która wykonuje BDC.|  
-|[Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Pokazuje, jak umożliwić użytkownikom ograniczyć liczbę wystąpień zwrócona przez metodę wyszukiwania.|  
+|[Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Pokazuje, jak dodać typy zawartości zewnętrznej lub jednostki do modelu.|  
+|[Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlanie listy jednostek na liście lub części sieci Web.|  
+|[Porady: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlić szczegóły określonej jednostki.|  
+|[Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom do dodawania rekordów do źródła danych bezpośrednio z listy lub części sieci Web.|  
+|[Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom usunąć dane ze źródła danych za pomocą opcji w interfejsie użytkownika (UI) listy lub części sieci Web.|  
+|[Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom zmianę rekordów danych w źródle danych bezpośrednio z listy lub części sieci Web.|  
+|[Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Pokazuje, jak dodać parametry wejściowe i zwracany do metody za pomocą metody okno Szczegóły programu Visual Studio.|  
+|[Porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Pokazuje, jak zdefiniować typy danych parametru w modelu.|  
+|[Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)|Przedstawia sposób tworzenia wystąpienia metody, która wykonuje BDC.|  
+|[Porady: dodawanie opisu filtru do metody wyszukiwania](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Pokazuje, jak umożliwić użytkownikom ograniczyć liczbę wystąpień zwrócona przez metodę wyszukiwania.|  
 |[Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)|W tym artykule opisano, jak można zdefiniować relacji między jednostkami w modelu. Składniki Web Part danych biznesowych, list zewnętrznych i niestandardowe aplikacje można wyświetlić relacje tych danych w interfejsie użytkownika (UI).|  
 |[Porady: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md)|Pokazuje, jak zdefiniować relacje między obiektami w modelu.|  
-|[Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zawiera instrukcje krok po kroku opisano sposób tworzenia i testowania modelu, który wyświetla kontakty w zewnętrznych listy programu SharePoint.|  
-|[Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Omówienie tworzenia i projektowania modele usługi BDC.|  
+|[Wskazówki: Createan listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zawiera instrukcje krok po kroku opisano sposób tworzenia i testowania modelu, który wyświetla kontakty w zewnętrznych listy programu SharePoint.|  
+|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Omówienie tworzenia i projektowania modele usługi BDC.|  
   

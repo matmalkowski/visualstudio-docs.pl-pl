@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b63e332ba5cc079ac50f2ef3c4fee84727d95f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 4394c583d281f114392088ed6a346e05d084070e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765339"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327310"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Rozszerzanie narzędzi SharePoint w Visual Studio
   Narzędzia programu SharePoint w Visual Studio wymagań wiele scenariuszy programowania aplikacji. Może jednak odnajdywania przypadków, w którym nie zapewniają funkcje, które wymagają możesz lub innymi deweloperami. W takich przypadkach można rozszerzyć narzędzia programu SharePoint do tworzenia potrzebne funkcje.  
@@ -45,7 +45,7 @@ ms.locfileid: "34765339"
  Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="development-computer-requirements"></a>Wymagania dotyczące komputera programowanie
- Do tworzenia rozszerzeń dla narzędzi SharePoint, na komputerze deweloperskim musi spełniać te same wymagania dotyczące tworzenia rozwiązań programu SharePoint w Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+ Do tworzenia rozszerzeń dla narzędzi SharePoint, na komputerze deweloperskim musi spełniać te same wymagania dotyczące tworzenia rozwiązań programu SharePoint w Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
  Zalecamy również zainstalowanie [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Zestaw SDK zawiera szablony projektów i narzędzi, które służą do rozszerzania programu Visual Studio. W szczególności zestaw SDK zawiera szablon projektu, w którym można łatwo utworzyć pakiet rozszerzenia serwera Visual Studio (VSIX). Pakiety VSIX to preferowany sposób wdrażania rozszerzeń programu Visual Studio w programie Visual Studio. Należy wdrożyć wszystkie rozszerzeń narzędzi SharePoint za pomocą pakietów VSIX. Wszystkie przykłady w tej dokumentacji założono, że istnieje [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] zainstalowane.  
   

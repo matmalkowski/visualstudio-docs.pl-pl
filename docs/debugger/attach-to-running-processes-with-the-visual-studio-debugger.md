@@ -1,7 +1,7 @@
 ---
 title: Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
-ms.date: 05/18/2017
+ms.date: 06/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 260047497ddb9515505c13f0b861c8eee05d71b0
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454560"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327336"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Możesz dołączyć debuger programu Visual Studio do uruchomionego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu kliknij **debugowania > dołączyć do procesu** (lub naciśnij klawisz **CTRL + ALT + P**) można otworzyć **dołączyć do procesu** okno dialogowe.
@@ -53,7 +53,7 @@ Ta funkcja służy do debugowania aplikacji, które są uruchomione na komputerz
   
 2.  W **dołączyć do procesu** okna dialogowego należy znaleźć program, który chcesz dołączyć do z **dostępne procesy** listy.  
 
-     Aby szybko zaznaczyć procesu, który ma, wpisz pierwszą literę nazwy procesu. Jeśli nie znasz nazwy procesu, zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
+     Aby szybko zaznaczyć procesu, który ma, wpisz pierwszą literę nazwa procesu lub można wpisać wartość w polu filtru, aby wyszukać nazwę procesu. Jeśli nie znasz nazwy procesu, zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
      
      ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
@@ -63,18 +63,23 @@ Ta funkcja służy do debugowania aplikacji, które są uruchomione na komputerz
   
     1.  W **dołączyć do** kliknij **wybierz**.  
   
-    2.  W **wybór typu kodu** okno dialogowe, kliknij przycisk **Debuguj te typy kodu** a następnie wybierz typy do debugowania.  
+    2.  W **wybór typu kodu** okno dialogowe, kliknij przycisk **Debuguj te typy kodu** a następnie wybierz typy do debugowania.
+
+        Wartość domyślna **automatyczne** ustawienie działania dla większości aplikacji. Debugowanie skryptów po stronie klienta na Chrome, wybierz **Webkit** pisania kodu. Dla programu Chrome, może należy uruchomić przeglądarki w debugowaniu trybu w zależności od danego typu aplikacji (typ `chrome.exe --remote-debugging-port=9222` z wiersza polecenia).
+
+        > [!NOTE]
+        > Debugowanie skryptu po stronie klienta debugowanie skryptu musi być włączone w przeglądarce. 
   
     3.  Kliknij przycisk **OK**.  
   
 4.  Kliknij przycisk **dołączyć**.
 
 ##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Dołączanie do procesu na komputerze zdalnym  
- Aby można było dołączyć do procesu, musisz znać nazwę procesu (zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios) kilka typowych nazw proces). Aby uzyskać bardziej szczegółowy wskazówki dla aplikacji ASP.NET, które zostały wdrożone w usługach IIS, zobacz [zdalnego debugowania ASP.NET na komputerze zdalnym IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). W przypadku innych aplikacji można znaleźć nazwy procesu w Menedżerze zadań.
+Aby można było dołączyć do procesu, musisz znać nazwę procesu (zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios) kilka typowych nazw proces). Aby uzyskać bardziej szczegółowy wskazówki dla aplikacji ASP.NET, które zostały wdrożone w usługach IIS, zobacz [zdalnego debugowania ASP.NET na komputerze zdalnym IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Jeśli nie znasz nazwy procesu dla danego scenariusza, zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios)
   
- Jeśli używasz **dołączyć do procesu** okno dialogowe, można wybrać inny komputer, który nie został skonfigurowany do zdalnego debugowania. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania](../debugger/remote-debugging.md). Po wybraniu komputera zdalnego można wyświetlić listę dostępnych procesów uruchomionych na tym komputerze i Dołącz do co najmniej jeden z procesów do debugowania.
+Jeśli używasz **dołączyć do procesu** okno dialogowe, można wybrać inny komputer, który nie został skonfigurowany do zdalnego debugowania (oznacza to, że zdalny debuger musi być uruchomiona na komputerze zdalnym). Aby uzyskać więcej informacji, zobacz [zdalnego debugowania](../debugger/remote-debugging.md). Po wybraniu komputera zdalnego można wyświetlić listę dostępnych procesów uruchomionych na tym komputerze i Dołącz do co najmniej jeden z procesów do debugowania.
   
- **Aby wybrać komputer zdalny:**  
+**Aby wybrać komputer zdalny:**  
 
 1. W programie Visual Studio, wybierz **Debuguj > dołączyć do procesu** (lub naciśnij klawisz **CTRL + ALT + P**).
 
@@ -88,7 +93,8 @@ Ta funkcja służy do debugowania aplikacji, które są uruchomione na komputerz
   
     1.  Wpisz nazwę w **kwalifikator** pola listy.
     
-        >**Uwaga** Jeśli w kolejnych krokach, nie można połączyć przy użyciu nazwy komputera zdalnego, użyj adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Można również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślny port dla debugera zdalnego).  
+        > [!Note]
+        > Jeśli w kolejnych krokach, nie można połączyć przy użyciu nazwy komputera zdalnego, należy użyć adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Można również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślny port dla debugera zdalnego).  
 
         Jeśli chcesz użyć **znaleźć** przycisku, konieczne może być [Otwórz UDP port 3702](../debugger/remote-debugger-port-assignments.md) na serwerze.
   
@@ -104,7 +110,7 @@ Ta funkcja służy do debugowania aplikacji, które są uruchomione na komputerz
      
 4.  W **dołączyć do procesu** okna dialogowego należy znaleźć program, który chcesz dołączyć do z **dostępne procesy** listy.
 
-     Aby szybko zaznaczyć procesu, który ma, wpisz pierwszą literę nazwy procesu. Jeśli nie znasz nazwy procesu, zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
+     Aby szybko zaznaczyć procesu, który ma, wpisz pierwszą literę nazwa procesu lub można wpisać wartość w polu filtru, aby wyszukać nazwę procesu. Jeśli nie znasz nazwy procesu, zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
   
      Jeśli proces jest uruchomiony w ramach innego konta użytkownika, wybierz **Pokaż procesy wszystkich użytkowników** pole wyboru.
      
@@ -129,7 +135,7 @@ W niektórych przypadkach podczas debugowania w sesji pulpitu zdalnego (usług t
 
 ## <a name="BKMK_Scenarios"></a> Typowe scenariusze debugowania
 
-Aby ustalić, czy należy użyć **dołączyć do procesu** i jakie procesy, aby dołączyć do, poniżej przedstawiono kilka typowych scenariuszy debugowania (lista nie jest wyczerpująca). Jeżeli dostępne są dodatkowe instrukcje, firma Microsoft udostępnia łącza.
+Aby ustalić, czy należy użyć **dołączyć do procesu** i jakie procesy, aby dołączyć do, poniżej przedstawiono kilka typowych scenariuszy debugowania (lista nie jest wyczerpująca). Jeżeli dostępne są dodatkowe instrukcje, firma Microsoft udostępnia łącza. Aby szybko uzyskać dostęp do okna dialogowego, należy użyć **CTRL + ALT + P** , a następnie wpisz pierwszą literę nazwy procesu.
 
 W przypadku niektórych typów aplikacji (takich jak aplikacje platformy uniwersalnej systemu Windows), nie podłączone bezpośrednio do nazwę procesu, ale użyj **Debuguj zainstalowany pakiet aplikacji** menu opcji w zamian (patrz tabela).
 
@@ -138,12 +144,13 @@ W przypadku niektórych typów aplikacji (takich jak aplikacje platformy uniwers
 
 |Scenariusz|Debug — metoda|Nazwa procesu|Uwagi i łącza|
 |-|-|-|-|
-|Debugowanie zarządzanego i natywnego aplikacji na komputerze lokalnym|Użyj dołączyć do procesu lub [standardowe debugowania](../debugger/getting-started-with-the-debugger.md)|*AppName*.exe|Aby szybko uzyskać dostęp do okna dialogowego, należy użyć **CTRL + ALT + P** , a następnie wpisz pierwszą literę nazwy procesu.|
-|Debugowanie aplikacji ASP.NET na komputerze lokalnym po uruchomieniu aplikacji bez debugera|Użyj dołączyć do procesu|iiexpress.exe|Może to być przydatne zapewnić aplikacji załadować szybszy, takich jak (na przykład) podczas profilowania. |
 |Zdalnego debugowania programu ASP.NET 4 lub 4.5 na serwerze IIS|Za pomocą narzędzi zdalnego i dołączyć do procesu|W3wp.exe|Zobacz [zdalnego debugowania ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Zdalne debugowanie platformy ASP.NET Core na serwerze IIS|Za pomocą narzędzi zdalnego i dołączyć do procesu|DotNet.exe|Do wdrożenia aplikacji, zobacz [publikowania w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html). Do debugowania, zobacz [zdalnego debugowania ASP.NET Core na zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debugowanie innych typów obsługiwanej aplikacji na proces serwera|Narzędzia zdalne (Jeśli serwer jest zdalny) i dołączyć do procesu|Iexplore.exe lub inne procesy|W razie potrzeby identyfikowania procesu za pomocą Menedżera zadań. Zobacz [zdalnego debugowania](../debugger/remote-debugging.md) i nowszym sekcje w tym temacie|
-|Zdalne debugowanie aplikacji klasycznej systemu Windows|Zdalne narzędzia i F5|Brak| Zobacz [debugowanie zdalne](../debugger/remote-debugging.md)|
+|Debugowanie skryptu po stronie klienta na lokalnym serwerze IIS (tylko dla typów obsługiwanej aplikacji)|Użyj dołączyć do procesu|Chrome.exe, MicrosoftEdgeCP.exe lub iexplore.exe|Musi być włączone debugowanie skryptu. Dla programu Chrome, należy uruchomić Chrome w trybie debugowania, a następnie wybierz **kod Webkit** w **dołączyć do** pola.|
+|Debugowanie C#, VB lub C++ aplikacji na komputerze lokalnym|Użyj jednej [standardowe debugowania](../debugger/getting-started-with-the-debugger.md) lub dołączanie do procesu|*AppName*.exe|W większości przypadków użyć standardowego debugowania i nie dołączyć do procesu.|
+|Zdalne debugowanie aplikacji klasycznej systemu Windows|Zdalne narzędzia|Brak| Zobacz [zdalnego debugowania aplikacji C# lub Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji C++](../debugger/remote-debugging-cpp.md)|
+|Debugowanie aplikacji ASP.NET na komputerze lokalnym po uruchomieniu aplikacji bez debugera|Użyj dołączyć do procesu|iiexpress.exe|Może to być przydatne zapewnić aplikacji załadować szybszy, takich jak (na przykład) podczas profilowania. |
+|Debugowanie innych typów obsługiwanej aplikacji na proces serwera|Narzędzia zdalne (Jeśli serwer jest zdalny) i dołączyć do procesu|Chrome.exe, iexplore.exe lub inne procesy|Jeśli to konieczne, należy użyć Monitora zasobów do identyfikowania procesu. Zobacz [zdalnego debugowania](../debugger/remote-debugging.md) i nowszym sekcje w tym temacie|
 |Zdalne debugowanie aplikacji Uniwersalnej, systemem OneCore, HoloLens i IoT|Debuguj zainstalowany pakiet aplikacji|Brak|Zobacz [Debuguj zainstalowany pakiet aplikacji](debug-installed-app-package.md) zamiast **dołączyć do procesu**|
 |Debugowanie aplikacji uniwersalnych aplikacji systemu Windows (UWP), systemem OneCore, HoloLens i IoT, który nie został uruchomiony z programu Visual Studio|Debuguj zainstalowany pakiet aplikacji|Brak|Zobacz [Debuguj zainstalowany pakiet aplikacji](debug-installed-app-package.md) zamiast **dołączyć do procesu**|  
   

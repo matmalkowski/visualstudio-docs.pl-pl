@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764878"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327232"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Niestandardowe dane można dodać do niektórych obiektów w rozszerzeń narzędzi SharePoint. Jest to przydatne, gdy znajdują się dane w jednym z rozszerzenia, które ma dostęp do później z poziomu innego kodu w Twoje rozszerzenie. Zamiast Implementowanie niestandardowych sposób przechowywania i uzyskać dostęp do danych, można skojarzyć dane z obiektu w rozszerzenia i następnie pobierają dane z tego samego obiektu później.  
@@ -33,7 +33,7 @@ ms.locfileid: "34764878"
   
  Po dodaniu niestandardowych danych do obiektów w rozszerzeń narzędzi SharePoint danych nie jest trwały. Dane są dostępne tylko podczas cykl życia obiektu. Po obiektu jest odzyskana przez wyrzucanie elementów bezużytecznych, dane zostaną utracone.  
   
- W rozszerzeniach systemu projektu SharePoint można także zapisać dane ciąg będzie nadal występować po rozszerzenie zostanie zwolniona. Aby uzyskać więcej informacji, zobacz [zapisywania danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ W rozszerzeniach systemu projektu SharePoint można także zapisać dane ciąg będzie nadal występować po rozszerzenie zostanie zwolniona. Aby uzyskać więcej informacji, zobacz [zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="objects-that-can-contain-custom-data"></a>Obiekty, które mogą zawierać niestandardowe dane
  Niestandardowe dane można dodać do każdego obiektu w modelu obiektów programu SharePoint narzędzia, która implementuje <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interfejsu. Ten interfejs definiuje tylko jedną właściwość <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, która jest kolekcja obiektów danych niestandardowych. Następujące typy wdrożenia <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
@@ -85,8 +85,8 @@ ms.locfileid: "34764878"
 ## <a name="see-also"></a>Zobacz także
  [Koncepcje programowania oraz funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Instrukcje: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+ [Porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
    
  

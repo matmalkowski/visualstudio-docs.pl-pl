@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf90c51ec2cd4f1864d5573925ed17a0d69b2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7cba96b4ca87333acbd778282c86a73e531ec3cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575381"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327105"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Logowanie w środowisku wielu procesorów
 Możliwość używania wielu procesorów MSBuild może znacznie skrócić czas tworzenia projektu, ale również dodaje złożoność do rejestrowania. W środowisku z jednym procesorem rejestratora może obsługiwać przychodzące zdarzenia, wiadomości, ostrzeżenia i błędy w sposób przewidywalne, sekwencyjnych. Jednak w środowisku wielu procesorów z wielu źródeł można odebrania zdarzeń równocześnie lub poza kolejnością. MSBuild udostępnia nowe rejestratora kilku-procesorów obsługujących i umożliwia tworzenie niestandardowych "przekazywanie rejestratorów."  
@@ -64,7 +64,7 @@ public interface IForwardingLogger: INodeLogger
 ### <a name="attaching-a-distributed-logger"></a>Dołączanie rozproszonej rejestratora  
  Aby dołączanie rozproszonej rejestratora kompilacji wiersza polecenia, użyj `/distributedlogger` (lub, `/dl` skrócie) przełącznika. Format służący do określania nazwy klas i typów rejestratora są takie same jak te dotyczące `/logger` przełącznika, z wyjątkiem tego rejestratora rozproszonej składa się z dwóch klas rejestrowania: Rejestrator przekazujący i centralnego rejestrowania. Poniżej przedstawiono przykład dołączanie rejestratora rozproszonych:  
   
-```  
+```cmd  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  

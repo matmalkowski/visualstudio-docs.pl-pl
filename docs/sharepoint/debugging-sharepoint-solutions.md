@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45990b9885d81192f6c1a7d12fb3027b6041fc6b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234351"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327170"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
   Rozwiązania programu SharePoint można debugować przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Po rozpoczęciu debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu do serwera programu SharePoint, a następnie otwiera wystąpienia witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -110,7 +110,7 @@ ms.locfileid: "36234351"
   
 9. Uruchamia polecenia po wdrożeniu można dostosowywać.  
   
-10. Dołącza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Jeśli typ projektu umożliwia zmianę *rozwiązania w trybie piaskownicy* właściwość i jej wartość jest równa **true**, a następnie dołącza debuger do innego procesu (*SPUCWorkerProcess.exe*). Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+10. Dołącza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Jeśli typ projektu umożliwia zmianę *rozwiązania w trybie piaskownicy* właściwość i jej wartość jest równa **true**, a następnie dołącza debuger do innego procesu (*SPUCWorkerProcess.exe*). Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 11. Uruchomienie debugera JavaScript, jeśli rozwiązanie farmy jest rozwiązania programu SharePoint.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "36234351"
   
  Po uruchomieniu projektu w trybie debugowania procesu wdrażania tworzy folder w *funkcji* katalogu w *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Nazwy funkcji ma format *Nazwa projektu*_Feature*x*, takich jak TestProject_Feature1.  
   
- Folder rozwiązania w katalogu funkcji zawiera *definicji funkcji* pliku i *definicji przepływu pracy* pliku. Plik definicji funkcji (Feature.xml) opisuje pliki w pliku definicji projektu Feature.The projektu (*Elements.xml*) zawiera opis szablonu projektu. *Elements.XML* znajdują się w **Eksploratora rozwiązań**, ale Feature.xml jest generowany po utworzeniu pakietu rozwiązania. Aby uzyskać więcej informacji o tych plikach, zobacz [projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Folder rozwiązania w katalogu funkcji zawiera *definicji funkcji* pliku i *definicji przepływu pracy* pliku. Plik definicji funkcji (Feature.xml) opisuje pliki w pliku definicji projektu Feature.The projektu (*Elements.xml*) zawiera opis szablonu projektu. *Elements.XML* znajdują się w **Eksploratora rozwiązań**, ale Feature.xml jest generowany po utworzeniu pakietu rozwiązania. Aby uzyskać więcej informacji o tych plikach, zobacz [SharePoint elementu szablonów projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 ## <a name="debug-workflows"></a>Debugowania przepływów pracy
  Podczas debugowania projektów przepływu pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje szablonu przepływu pracy (w zależności od jego typu) do biblioteki lub do listy. Następnie należy uruchomić szablon przepływu pracy ręcznie lub przez dodanie lub uaktualnienie elementu. Następnie można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aby debugować przepływ pracy.  
@@ -152,5 +152,5 @@ ms.locfileid: "36234351"
  Aby uzyskać więcej informacji na temat kluczy rejestru programu SharePoint, zobacz [Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+ [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   

@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327408"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
 
@@ -50,7 +51,7 @@ Jeśli Twoja organizacja jest gotowy do można dołączać do portalu administra
 > [!NOTE]
 > Jeśli serwer podstawowy bądź powiadomienia kontaktów odbierają więcej niż jeden adres e-mail, oznacza to, że PCN więcej niż jeden. Należy ukończyć proces przy użyciu łącza unikatowy dla PCN występujący w odwołaniu w każdym email.*
 
-Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Spójrz na [Znajdź swój głównej osoby kontaktowej](/find-primary-contact/) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
+Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Spójrz na [Znajdź swój głównej osoby kontaktowej](find-primary-contact.md) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
 Jeśli użytkownik ma już został skonfigurowany jako administrator, a następnie można przejść bezpośrednio do [portalu administracyjnego subskrypcji programu Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Opis strony subskrybentów
@@ -67,11 +68,9 @@ Po przypisane subskrypcje, na karcie subskrybentów udostępnia szczegółowe in
 - Pole opcjonalne dla innego adresu e-mail używane do komunikacji niż logowania. 
 
 W lewej części strony można wyświetlić dodatkowe informacje o liczbie zakupionych, przypisane i nadal dostępne w Twojej organizacji, dla każdej umowy licencji subskrypcji.
-
-   ![Strona Subscibers portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Strona Subscibers portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Opis strony szczegółów
 Aby uzyskać więcej informacji o umowie, że jest wyświetlana wybierz kartę szczegółów. Widoczny jest stan umowy, zakupu konta, szczegóły organizacji, kontaktów podstawowych (VLSC), Administratorzy super (jeśli jest dostępny) i inne istotne informacje.
-
-   ![Strona szczegółów portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Strona szczegółów portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 

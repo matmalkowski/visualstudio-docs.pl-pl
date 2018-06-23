@@ -10,19 +10,19 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795321"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327193"
 ---
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
 Visual Studio subskrypcji jest rozbudowany zestaw zasoby umożliwiające tworzenie, wdrażanie i zarządzanie niezawodnych aplikacji na platformach preferowanych i urządzeń, takich jak Windows, iOS, Android i Linux.  Korzyści z subskrypcji obejmują dostęp do narzędzi dla deweloperów, usługi w chmurze i oprogramowania, szkoleniom i obsługę projektowania i testowania potrzeb.
 
 ##  <a name="get-started"></a>Rozpocznij
-Administratorzy Zaloguj się do [https://manage.visualstudio.com](https://manage.visualstudio.com) można przypisać subskrypcji do zespołu.<br>
-Subskrybenci Zaloguj się do [https://my.visualstudio.com](https://my.visualstudio.com) do korzyści z subskrypcji.
+Administratorzy Zaloguj się do [ https://manage.visualstudio.com ](https://manage.visualstudio.com) można przypisać subskrypcji do zespołu.<br>
+Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualstudio.com) do korzyści z subskrypcji.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -149,7 +149,6 @@ Subskrybenci Zaloguj się do [https://my.visualstudio.com](https://my.visualstud
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server i TFS CAL</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ Subskrybenci Zaloguj się do [https://my.visualstudio.com](https://my.visualstud
                         <p>W ramach subskrypcji programu Visual Studio może pojawić się miesięczne środki Azure i bezpłatny dostęp do usług platformy Azure, rabaty projektowania i testowania i wyłącznego dostępu do obrazu tylko do subskrybenta g allery z wstępnie skonfigurowanych maszyn wirtualnych. W zależności od Twojej subskrypcji usługi w chmurze mogą obejmować:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Subskrypcji dewelopera usługi Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Konto dewelopera systemu Windows</a></li>
                             <li>PowerBI Pro</li>

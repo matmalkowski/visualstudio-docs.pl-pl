@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575848"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327040"
 ---
 # <a name="walkthrough-using-msbuild"></a>Wskazówki: używanie programu MSBuild
 MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przewodniku przedstawiono bloków konstrukcyjnych programu MSBuild i pokazano, jak napisać, manipulowanie nimi oraz debugowania projektów MSBuild. Poznasz:
@@ -129,7 +129,7 @@ MSBuild śledzi docelowe kompilacji i gwarantuje, że każdego obiektu doceloweg
 
 3.  Uruchom program msbuild z /t:HelloWorld przełącznika polecenia. Wybiera i tworzy element docelowy HelloWorld:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ MSBuild śledzi docelowe kompilacji i gwarantuje, że każdego obiektu doceloweg
 ## <a name="examining-a-property-value"></a>Badanie wartość właściwości
  Aby uzyskać wartość właściwości, użyj następującej składni, gdzie PropertyName jest nazwą właściwości:
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>Badanie elementów typu wartości
  Aby uzyskać wartości typu elementu, użyj następującej składni, gdzie ItemType jest nazwą typu elementu:
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  Aby zmienić separator typ elementu, użyj następującej składni, gdzie ItemType jest typ elementu, a separatorem jest co najmniej jeden znak oddzielający ciąg:
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  Zbadaj dane wyjściowe. Powinny pojawić się następujące wiersze:
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  Aby uzyskać wartość metadanych typu elementu, należy użyć następującej składni, gdzie ItemType jest nazwa typu elementu, a MetaDataName Nazwa metadanych:
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>Przekształcenia metadanych
  Element listy może zostać zamieniony na nowy element listy. Aby przekształcić listy elementów, użyj następującej składni, gdzie ItemType jest nazwa typu elementu, a MetadataName Nazwa metadanych:
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  Z **okno polecenia**, wprowadź i wykonać ten wiersz:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
