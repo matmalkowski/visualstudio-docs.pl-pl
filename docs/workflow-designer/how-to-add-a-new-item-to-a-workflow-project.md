@@ -1,6 +1,6 @@
 ---
 title: 'Projektant przepływu pracy — porady: Dodawanie nowego elementu do projektu przepływu pracy'
-ms.date: 11/04/2016
+ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f1202c87986eab6af899a3d4c3b7a5f62e5af6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971650"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757682"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Porady: Dodawanie nowego elementu do projektu przepływu pracy
 
-Po utworzeniu projektu przepływu pracy działania przepływu pracy, projektantów i innych znanych elementów programu Visual Studio można dodać do projektu.
+Po utworzeniu projektu przepływu pracy, można dodać działania przepływu pracy, projektantów i innych znanych elementów programu Visual Studio do projektu.
 
-W poniższej tabeli wymieniono elementy programu Windows Workflow Foundation (WF), które można dodać do projektu przepływu pracy.
+W poniższej tabeli wymieniono elementy programu Windows Workflow Foundation (WF), które można dodać do projektu przepływu pracy:
 
 |Nazwa|Opis|
 |----------|-----------------|
@@ -32,17 +32,18 @@ W poniższej tabeli wymieniono elementy programu Windows Workflow Foundation (WF
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
 
-1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element...** .
+1. Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
-     **Dodaj nowy element** zostanie otwarte okno dialogowe.
+   **Dodaj nowy element** zostanie otwarte okno dialogowe.
 
-2.  W **zainstalowane szablony** okienku wybierz **przepływu pracy** grupy.
+1. W okienku po lewej stronie wybierz **przepływu pracy** kategorii, a następnie wybierz szablon elementu przepływu pracy.
 
-3.  Wybierz jedną z czterech elementów. W poprzedniej tabeli wymieniono dostępne opcje.
+   > [!NOTE]
+   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio 2017 r. Aby uzyskać szczegółowe instrukcje, zobacz [zainstalować program Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-4.  Wpisz odpowiednią nazwę elementu w **nazwa** u dołu okna dialogowego.
+1. Wprowadź nazwę dla elementu w **nazwa** u dołu okna dialogowego.
 
-5.  Kliknij przycisk **Dodaj** można dodać elementu do bieżącego projektu przepływu pracy.
+1. Wybierz **Dodaj** można dodać elementu do projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

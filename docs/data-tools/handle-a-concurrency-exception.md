@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 179718223f181619a3121df8c88132a07e392678
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752336"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757178"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 Wyjątków współbieżności (<xref:System.Data.DBConcurrencyException>) są wywoływane, gdy dwóch użytkowników próba zmiany tych samych danych w bazie danych, w tym samym czasie. W tym przewodniku tworzenia aplikacji systemu Windows, która ilustruje sposób catch <xref:System.Data.DBConcurrencyException>, odszukaj wiersz, który spowodował błąd i Dowiedz się strategię sposobu jego obsługa.
@@ -44,16 +44,16 @@ Wyjątków współbieżności (<xref:System.Data.DBConcurrencyException>) są wy
 
 6.  Zmień ten sam rekord na inną wartość, zaktualizować dataset i próba zapisania zmian w bazie danych, co powoduje błąd współbieżności są zgłaszane.
 
-7.  CATCH błąd, a następnie wyświetlić różne wersje rekordu, dzięki czemu użytkownika w celu ustalenia, czy kontynuować i zaktualizować bazę danych, aby anulować aktualizację.
+7.  Błąd catch, wyświetlania różnych wersji rekordu, co pozwala na określanie, czy kontynuować i zaktualizować bazę danych lub Anuluj aktualizację.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB w ramach **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -61,7 +61,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
     3. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
 
-       Po pewnym czasie zapytanie kończy wykonywanie i utworzeniu bazy danych Northwind.
+       Po pewnym czasie zakończeniu zapytania i utworzeniu bazy danych Northwind.
 
 > [!NOTE]
 >  Okna dialogowe i dostępne polecenia menu mogą różnić się od opisanych w pomocy w zależności od ustawienia active lub edition, którego używasz. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -71,7 +71,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -92,7 +92,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Na **wybierz typ źródła danych** ekranu wybierz **bazy danych**.
 
-3.  Wybierz połączenie z przykładową bazą danych Northwind z listy dostępnych połączeń. Jeśli połączenie nie jest dostępny na liście połączeń, wybierz **nowego połączenia**
+3.  Wybierz połączenie z przykładową bazą danych Northwind z listy dostępnych połączeń. Jeśli połączenie nie jest dostępny na liście połączeń, wybierz **nowe połączenie**.
 
     > [!NOTE]
     >  Jeśli łączysz się z plikiem bazy danych lokalnych, wybierz **nr** po otrzymaniu monitu, jeśli jak chcesz dodać plik do projektu.
@@ -116,14 +116,14 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 4.  Przeciągnij tabeli na wolne miejsce formularza.
 
-     A <xref:System.Windows.Forms.DataGridView> formantu o nazwie `CustomersDataGridView` i <xref:System.Windows.Forms.BindingNavigator> o nazwie `CustomersBindingNavigator` są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource>. Jest to, w, jest ruch związany z `Customers` w tabeli `NorthwindDataSet`.
+     A <xref:System.Windows.Forms.DataGridView> formantu o nazwie `CustomersDataGridView` i <xref:System.Windows.Forms.BindingNavigator> o nazwie `CustomersBindingNavigator` są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource>. To z kolei powiązany z `Customers` w tabeli `NorthwindDataSet`.
 
 ## <a name="test-the-form"></a>Przetestuj formularz
  Teraz możesz przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami do tego punktu.
 
 #### <a name="to-test-the-form"></a>Aby przetestować formularz
 
-1.  Wybierz **F5** do uruchamiania aplikacji
+1.  Wybierz **F5** do uruchomienia aplikacji.
 
      Formularz pojawia się z <xref:System.Windows.Forms.DataGridView> sterowania na nim wypełnionej danych z `Customers` tabeli.
 
@@ -153,12 +153,12 @@ Użytkownik będzie mógł zastąpienia bazy danych z wersją proponowanych, lub
 4.  Wyślij ponownie aktualizację, lub zresetuj danych w zestawie danych.
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Dodaj kod obsługi wyjątku współbieżności
- Podczas próby przeprowadzenia aktualizacji, a następnie pobiera zgłoszony wyjątek, zazwyczaj chcesz zrobić coś z danych, które jest dostępne zgłoszono wyjątek.
+ Podczas próby przeprowadzenia aktualizacji, a zgłoszony wyjątek, zazwyczaj chcesz zrobić coś z danych, które jest dostępne zgłoszono wyjątek.
 
- W tej sekcji możesz dodać kod, który próbuje zaktualizować bazę danych. Można również obsługiwać żadnego <xref:System.Data.DBConcurrencyException> który może pobrać wywołane, a także inne wyjątki.
+ W tej sekcji możesz dodać kod, który próbuje zaktualizować bazę danych. Można również obsługiwać żadnego <xref:System.Data.DBConcurrencyException> który może zostać wywołane, a także inne wyjątki.
 
 > [!NOTE]
->  `CreateMessage` i `ProcessDialogResults` metody zostanie dodany w dalszej części tego przewodnika.
+>  `CreateMessage` i `ProcessDialogResults` metody są dodawane w dalszej części tego przewodnika.
 
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Aby dodać obsługę błędów dla błąd współbieżności
 
@@ -183,7 +183,7 @@ Użytkownik będzie mógł zastąpienia bazy danych z wersją proponowanych, lub
      [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Przetwarzanie odpowiedzi użytkownika
- Należy również kod w celu przetworzenia odpowiedzi użytkownika do pola wiadomości. Aby zastąpić bieżący rekord w bazie danych proponowanej zmiany lub Porzuć lokalne zmiany i Odśwież tabelę danych z rekordu, który jest obecnie w bazie danych są następujące opcje. Jeśli użytkownik zdecyduje się tak, <xref:System.Data.DataTable.Merge%2A> metoda jest wywoływana z *preserveChanges* argument wartość `true`. Powoduje to, że próba aktualizacji był udany, ponieważ oryginalna wersja rekordu zgodna z rekord w bazie danych.
+ Należy również kod w celu przetworzenia odpowiedzi użytkownika do pola wiadomości. Aby zastąpić bieżący rekord w bazie danych proponowanej zmiany lub Porzuć lokalne zmiany i Odśwież tabelę danych z rekordu, który jest obecnie w bazie danych są następujące opcje. Jeśli użytkownik zdecyduje się **tak**, <xref:System.Data.DataTable.Merge%2A> metoda jest wywoływana z *preserveChanges* argument wartość `true`. Powoduje to, że próba aktualizacji był udany, ponieważ oryginalna wersja rekordu zgodna z rekord w bazie danych.
 
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Do przetworzenia użytkownika dane wejściowe z pola wiadomości
 
@@ -193,7 +193,7 @@ Użytkownik będzie mógł zastąpienia bazy danych z wersją proponowanych, lub
      [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Przetestuj formularz
- Teraz możesz przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami. Aby symulować Naruszenie współbieżności, musisz zmienić po wypełnieniu NorthwindDataSet w bazie danych.
+ Teraz możesz przetestować formularz, aby upewnić się, że działa zgodnie z oczekiwaniami. Aby symulować Naruszenie współbieżności, możesz zmienić po wypełnieniu NorthwindDataSet w bazie danych.
 
 #### <a name="to-test-the-form"></a>Aby przetestować formularz
 

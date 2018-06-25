@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746731"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756402"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Można na przykład wyświetlanie zleceń dla określonych odbiorców lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie zapytanie jest wykonywane przy użyciu danych wejściowych użytkownika jako parametr; oznacza to, że jest wybrane dane na podstawie zapytania parametrycznego. Zapytanie zwraca tylko dane, które spełnia kryteria wprowadzony przez użytkownika. W tym przewodniku pokazano, jak utworzyć kwerendę, która zwraca klientów w określonym mieście i zmodyfikować interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzać nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.
@@ -32,11 +32,11 @@ Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Mo
 
  Zadania przedstawione w tym przewodniku obejmują:
 
--   Tworzenie nowego projektu aplikacji Windows Forms.
+-   Tworzenie nowego **aplikacji Windows Forms** projektu.
 
 -   Tworzenie i konfigurowanie źródła danych do aplikacji z **konfiguracji źródła danych** kreatora.
 
--   Ustawienie typu listy elementów w **źródeł danych**okna.
+-   Ustawienie typu listy elementów w **źródeł danych** okna.
 
 -   Tworzenie formantów wyświetlających dane przez przeciąganie elementów z **źródeł danych** okna w formularzu.
 
@@ -50,11 +50,11 @@ Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Mo
 
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**, można jako część platformy SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążeń w **Instalator programu Visual Studio**.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -62,14 +62,14 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
     3. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
 
-       Po pewnym czasie zapytanie kończy wykonywanie i utworzeniu bazy danych Northwind.
+       Po pewnym czasie zakończeniu zapytania i utworzeniu bazy danych Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Tworzenie aplikacji formularzy systemu Windows
  Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**. Przypisanie nazwy do projektu jest opcjonalne w tym kroku, ale można będzie nadaj mu nazwę w tym miejscu, ponieważ projekt będzie zapisać później.
 
 #### <a name="to-create-the-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -145,11 +145,11 @@ Spowoduje to utworzenie źródła danych z bazy danych przy użyciu **konfigurac
      A **FillByCityToolStrip** zostanie dodany do formularza.
 
 ## <a name="testing-the-application"></a>Testowanie aplikacji
- Uruchamianie aplikacji otwiera gotowa do sporządzenia parametr jako dane wejściowe formularza.
+ Uruchamianie aplikacji zostanie otwarty formularz i czyni go gotowa do sporządzenia parametr jako dane wejściowe.
 
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację
 
-1.  Naciśnij klawisz F5, aby uruchomić aplikację.
+1.  Naciśnij klawisz **F5** do uruchomienia aplikacji.
 
 2.  Typ **Londyn** do **miasta** polu tekstowym, a następnie kliknij przycisk **FillByCity**.
 
@@ -162,6 +162,6 @@ Spowoduje to utworzenie źródła danych z bazy danych przy użyciu **konfigurac
 
 -   Edytowanie zestawu danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

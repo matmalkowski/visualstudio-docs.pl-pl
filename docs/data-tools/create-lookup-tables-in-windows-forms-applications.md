@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 315bed179a21ec99a256fcc8cb16f6fc1164f238
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917071"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756769"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach formularzy systemu Windows
 Termin *tabeli odnośników* zawiera opis kontrolek, które są powiązane z dwóch powiązanych tabel danych. Te kontrolki wyszukiwania odnośników pokazują dane z pierwszej tabeli w oparciu o wartości wybrane w drugiej tabeli.
@@ -47,16 +47,16 @@ Termin *tabeli odnośników* zawiera opis kontrolek, które są powiązane z dw�
 
      W formularzu pojawią się kontrolki powiązane z danymi (z etykietami opisowymi) oraz pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>). A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane na pasku składnika.
 
-6.  Teraz przeciągnij węzeł nadrzędny głównego tabeli z **źródeł danych** okna bezpośrednio na formant wyszukiwania ( <xref:System.Windows.Forms.ComboBox>).
+6.  Teraz, przeciągnij węzeł nadrzędny głównego tabeli z **źródeł danych** okna bezpośrednio na formant wyszukiwania ( <xref:System.Windows.Forms.ComboBox>).
 
-     Powiązania wyszukiwania odnośników są teraz ustanowione. W poniższej tabeli opisano konkretne właściwości skonfigurowane w kontrolce.
+     Powiązania wyszukiwania odnośników są teraz ustanowione. Zapoznaj się z poniższej tabeli określone właściwości, które zostały określone w formancie.
 
     |Właściwość|Wyjaśnienie ustawienia|
     |--------------|----------------------------|
-    |**DataSource**|Jako wartość tej właściwości program Visual Studio ustawia element <xref:System.Windows.Forms.BindingSource> utworzony dla tabeli przeciągniętej na kontrolkę (w przeciwieństwie do elementu <xref:System.Windows.Forms.BindingSource> utworzonego podczas tworzenia kontrolki).<br /><br /> Jeśli trzeba dokonać korekty, zmień wartość na element <xref:System.Windows.Forms.BindingSource> tabeli zawierającej kolumnę, która ma być wyświetlana.|
-    |**DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli trzeba dokonać korekty, zmień wartość na nazwę kolumny, która ma być wyświetlana.|
-    |**ValueMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę należącą do klucza podstawowego, a jeśli klucz nie został zdefiniowany, pierwszą kolumnę tabeli.<br /><br /> Jeśli trzeba dokonać korekty, zmień wartość na klucz podstawowy w tabeli zawierającej kolumnę, która ma być wyświetlana.|
-    |**SelectedValue**|Visual Studio ustawia tę właściwość do oryginalnego kolumny z **źródeł danych** okna.<br /><br /> Jeśli trzeba dokonać korekty, zmień wartość na kolumnę klucza obcego w pokrewnej tabeli.|
+    |**DataSource**|Visual Studio ustawia tę właściwość na <xref:System.Windows.Forms.BindingSource>, utworzony dla tabeli, przeciągnij formantu (w przeciwieństwie do <xref:System.Windows.Forms.BindingSource>, utworzone podczas tworzenia kontrolki).<br /><br /> Jeśli trzeba wprowadzić korektę, ustaw tę wartość na <xref:System.Windows.Forms.BindingSource> tabeli z kolumny mają być wyświetlane.|
+    |**DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli musisz wprowadzić korektę ustawioną to nazwa kolumny, które mają być wyświetlane.|
+    |**ValueMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę należącą do klucza podstawowego, a jeśli klucz nie został zdefiniowany, pierwszą kolumnę tabeli.<br /><br /> Jeśli trzeba wprowadzić korektę, ustaw tę opcję na klucz podstawowy w tabeli z kolumny, które mają być wyświetlane.|
+    |**SelectedValue**|Visual Studio ustawia tę właściwość do oryginalnego kolumny z **źródeł danych** okna.<br /><br /> Jeśli trzeba wprowadzić korektę, ustaw tę opcję na kolumny klucza obcego w tabeli powiązanych.|
 
 ## <a name="see-also"></a>Zobacz także
 

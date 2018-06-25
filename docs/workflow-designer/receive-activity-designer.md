@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1fb30ce4b4792b7083cbe22afaa259d07b9a0821
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979519"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756656"
 ---
-# <a name="receive-activity-designer"></a>Odbieranie Projektant działań
+# <a name="receive-activity-designer"></a>Receive, projektant działań
 
 **Receive** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Receive> działania. A <xref:System.ServiceModel.Activities.Receive> działania jest działaniem, który odbiera komunikat, który może być wbudowany typ takich jak <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> lub <xref:System.Xml.Linq.XElement>, lub kontrakt danych zdefiniowanym przez aplikację, kontraktu komunikatu lub klasy XML, który można serializować.
 
@@ -28,16 +28,16 @@ ms.locfileid: "31979519"
 <xref:System.ServiceModel.Activities.Receive> Działania mogą odbierać pojedynczy element lub wielu elementów w zależności od typu odbierać zawartość używane. A <xref:System.ServiceModel.Activities.SendReply> działania może być powiązana z <xref:System.ServiceModel.Activities.Receive> działania, który odbiera wiadomości w ramach wymiany komunikatów żądań i odpowiedzi w usłudze.
 
 ### <a name="using-the-receive-activity-designer"></a>Przy użyciu odbierania Projektant działań
- **Receive** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **Receive** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dostęp **Receive** Projektant działań w **wiadomości** kategorii **przybornika**. **Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **Receive** Projektant działań lub **DisplayName** pola siatki właściwości.
 
- Można utworzyć <xref:System.ServiceModel.Activities.SendReply> działania i powiązać ją z wybranym <xref:System.ServiceModel.Activities.Receive> działania, kliknij prawym przyciskiem myszy **Receive** działania projektanta, kliknij przycisk **utworzyć SendReply** elementu w menu kontekstowym i **SendReplyToReceive** projektanta pojawia się poniżej **Receive** projektanta. <xref:System.ServiceModel.Activities.SendReply> Działania jest działanie powodujące wysłanie komunikatu odpowiedzi w ramach wymiany komunikatów żądań i odpowiedzi usługi. Mogą być skonfigurowane przy użyciu **SendReplyToReceive** projektanta.
+Można utworzyć <xref:System.ServiceModel.Activities.SendReply> działania i powiązać ją z wybranym <xref:System.ServiceModel.Activities.Receive> działania, kliknij prawym przyciskiem myszy **Receive** działania projektanta, kliknij przycisk **utworzyć SendReply** elementu w menu kontekstowym i **SendReplyToReceive** projektanta pojawia się poniżej **Receive** projektanta. <xref:System.ServiceModel.Activities.SendReply> Działania jest działanie powodujące wysłanie komunikatu odpowiedzi w ramach wymiany komunikatów żądań i odpowiedzi usługi. Mogą być skonfigurowane przy użyciu **SendReplyToReceive** projektanta.
 
- Alternatywnie **ReceiveAndSendReply** Projektant szablonów w **wiadomości** kategorii **przybornika** można utworzyć pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive>i <xref:System.ServiceModel.Activities.SendReply> działania. Aby uzyskać więcej informacji o wykorzystaniu **ReceiveAndSendReply** i **SendReplyToReceive** szablonu, zobacz [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tematu.
+Alternatywnie **ReceiveAndSendReply** Projektant szablonów w **wiadomości** kategorii **przybornika** można utworzyć pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive>i <xref:System.ServiceModel.Activities.SendReply> działania. Aby uzyskać więcej informacji o wykorzystaniu **ReceiveAndSendReply** i **SendReplyToReceive** szablonu, zobacz [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tematu.
 
 ### <a name="the-receive-activity-properties"></a>Właściwości działania odbierania
- W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy. Jest wymagana tylko właściwość <xref:System.ServiceModel.Activities.Receive.OperationName%2A> właściwości.
+
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy. Jest wymagana tylko właściwość <xref:System.ServiceModel.Activities.Receive.OperationName%2A> właściwości.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

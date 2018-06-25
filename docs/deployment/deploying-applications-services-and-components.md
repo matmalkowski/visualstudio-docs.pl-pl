@@ -2,7 +2,7 @@
 title: Przegląd funkcji wdrażania
 description: Więcej informacji na temat opcji dotyczących wdrażania aplikacji w programie Visual Studio.
 ms.custom: mvc
-ms.date: 11/26/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
@@ -24,22 +24,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e301131afc62b0564ca302adb9a079b42b52c5f8
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a37207fb541a57bbf67b63bff5168185135bc27f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234689"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756960"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
-Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach, serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Inne narzędzia wdrażania takich jak wdrożenia wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu obsługuje wiele typów aplikacji.)
+Przez wdrożenie aplikacji, usług lub składników, rozesłać do instalacji na innych komputerach, urządzenia lub serwerów lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Inne narzędzia wdrażania takich jak wdrożenia wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu obsługuje wiele typów aplikacji.)
 
-Zobacz samouczki, aby uzyskać instrukcje krok po kroku wdrażania. Jeśli wdrażana aplikacja sieci web i uzyskać bardziej szczegółowe informacje do podejmowania decyzji o najlepszej opcji wdrażania z programu Visual Studio, zobacz [jakie opcje publikowania jest dla mnie odpowiednia?](../ide/not-in-toc/web-publish-options.md).
+Zobacz poradniki Szybki Start i samouczki, aby uzyskać instrukcje krok po kroku wdrażania. Omówienie opcji wdrażania, zobacz [jakie opcje publikowania jest dla mnie odpowiednia?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
 ## <a name="deploy-to-local-folder"></a>Wdrażanie na folder lokalny
 
-Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć wdrożenia etapowego, w którym innego narzędzia będzie służyć do końcowego wdrożenia.
+Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć wdrożenia etapowego, w którym inne narzędzie służy do rozmieszczania ostatecznego.
 
 - **ASP.NET**, **platformy ASP.NET Core**, **Node.js**, **Python**, i. **Podstawowe NET**: Użyj narzędzia do publikowania do wdrożenia na folder lokalny. Dostępne opcje zależą od typu aplikacji. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **publikowania**. (Jeśli wcześniej skonfigurowano żadnych profilów publikowania, należy kliknąć **Utwórz nowy profil**.) Następnie wybierz **folderu**. Aby uzyskać więcej informacji, zobacz [wdrażanie na folder lokalny](quickstart-deploy-to-local-folder.md).
 
@@ -53,7 +53,9 @@ Wdrożenia na folder lokalny jest zwykle używane do testowania lub rozpocząć 
 
     ![Wybierz usługi aplikacji Azure](../deployment/media/quickstart-publish-azure.png "wybierz usługi aplikacji Azure")
 
-    W programie Visual Studio 2017 wersji 15.7, można wdrażać aplikacje platformy ASP.NET Core do **usługi aplikacji dla systemu Linux**.
+    W Visual Studio 2017 wersji 15.7 i nowszych, można wdrożyć aplikacji platformy ASP.NET Core **usługi aplikacji dla systemu Linux**.
+
+    W przypadku aplikacji Python, zobacz też [Python - publikowania w usłudze Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service dla programu Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
@@ -124,8 +126,7 @@ W środowisku zespołu można używać programu Visual Studio Team Services (VST
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku wykonane krótki przegląd opcje wdrażania dla różnych aplikacji. Jeśli wdrażana jest aplikacja sieci web, takich jak ASP.NET, przeczytaj więcej informacji na temat o niektórych opcji wdrażania dostępnych w programie Visual Studio.
+W tym samouczku wykonane krótki przegląd opcje wdrażania dla różnych aplikacji.
 
 > [!div class="nextstepaction"]
-> [Jakie opcje publikowania jest dla mnie odpowiednia?](../ide/not-in-toc/web-publish-options.md)
-
+> [Jakie opcje publikowania jest dla mnie odpowiednia?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)

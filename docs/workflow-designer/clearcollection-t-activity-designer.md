@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2422f7165e3f00e4059bc593c129c7723daed2f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974515"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757899"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > Projektant działań
 
 **ClearCollection\<T >** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ClearCollection%601> działania.
 
 ## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > działania
- <xref:System.Activities.Statements.ClearCollection%601> Działania usuwa wszystkie elementy dla określonej kolekcji.
+
+<xref:System.Activities.Statements.ClearCollection%601> Działania usuwa wszystkie elementy dla określonej kolekcji.
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Przy użyciu ClearCollection\<T > Projektant działań
- **ClearCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **ClearCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczone, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.ClearCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z ClearCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **ClearCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
+**ClearCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+
+**ClearCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczone, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.ClearCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z ClearCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **ClearCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
 
 ### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > Właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ClearCollection%601> właściwości oraz opis korzystania z nich w projektancie.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ClearCollection%601> właściwości oraz opis korzystania z nich w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

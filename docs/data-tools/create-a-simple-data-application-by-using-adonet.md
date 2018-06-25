@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745805"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758486"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 
 Podczas tworzenia aplikacji, która obsługuje dane w bazie danych można wykonywać podstawowe zadania, takie jak definiowanie parametry połączenia, wstawiania danych i uruchamianie procedur składowanych. Wykonując w tym temacie, można wykryć jak wchodzić w interakcję z bazą danych z wewnątrz prostą aplikację "formularzy nad danymi" formularzy systemu Windows za pomocą Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — łącznie z zestawów danych LINQ do SQL i programu Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawionych w tym artykule.
 
- W tym artykule przedstawiono prosty sposób, aby pobrać dane z bazy danych w sposób bardzo szybko. Jeśli aplikacja wymaga do modyfikacji danych w sposób nieuproszczony i zaktualizować bazę danych, należy rozważyć przy użyciu programu Entity Framework i danych powiązanie formantów interfejsu użytkownika na zmiany w danych są synchronizowane automatycznie.
+ W tym artykule przedstawiono prosty sposób można pobrać danych z bazy danych w sposób, szybkie. Jeśli aplikacja wymaga do modyfikacji danych w sposób nieuproszczony i zaktualizować bazę danych, należy rozważyć przy użyciu programu Entity Framework i danych powiązanie formantów interfejsu użytkownika na zmiany w danych są synchronizowane automatycznie.
 
 > [!IMPORTANT]
 > Aby zachować prostego kodu, nie ma wśród nich obsługi wyjątków gotowe do produkcji.
@@ -45,7 +45,7 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
 
 1. W programie Visual Studio Otwórz **Eksploratora serwera** okna.
 
-2. Kliknij prawym przyciskiem myszy **połączenia danych** i wybierz polecenie ** Tworzenie nowej bazy danych serwera SQL... ".
+2. Kliknij prawym przyciskiem myszy **połączenia danych** i wybierz polecenie **Tworzenie nowej bazy danych SQL Server**.
 
 3. W **nazwy serwera** tekst wprowadź **(localdb) \mssqllocaldb**.
 
@@ -61,21 +61,21 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
 
 7. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
 
-     Po pewnym czasie zapytanie kończy wykonywanie i są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: klienta oraz zleceń. Te tabele nie zawierają danych początkowo, ale możesz dodać dane po uruchomieniu aplikacji, które zostaną utworzone. Baza danych zawiera również czterech prostych procedur składowanych.
+     Po pewnym czasie zakończeniu zapytania i są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: klienta oraz zleceń. Te tabele nie zawierają danych początkowo, ale możesz dodać dane po uruchomieniu aplikacji, które zostaną utworzone. Baza danych zawiera również czterech prostych procedur składowanych.
 
 ## <a name="create-the-forms-and-add-controls"></a>Utwórz formularze i Dodaj formanty
 
-1.  Utwórz projekt aplikacji formularzy systemu Windows, a następnie nadaj mu nazwę SimpleDataApp.
+1.  Utwórz projekt aplikacji formularzy systemu Windows i nadaj mu nazwę **SimpleDataApp**.
 
-     Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz systemu Windows o nazwie Form1.
+     Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz systemu Windows o nazwie **Form1**.
 
 2.  Dodaj dwa formularze systemu Windows do projektu, aby miała trzy formularzy, a następnie nadaj im następujące nazwy:
 
-    -   Nawigacji
+    -   **Nawigacja**
 
-    -   NewCustomer
+    -   **NewCustomer**
 
-    -   FillOrCancel
+    -   **FillOrCancel**
 
 3.  Dla każdego formularza Dodaj pola tekstowe, przycisków i innych kontrolek, które pojawiają się na poniższych ilustracjach. Dla każdego formantu można ustawić właściwości, które w tabelach opisano.
 
@@ -122,9 +122,9 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
 |Przycisk|Nazwa = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Przechowywanie parametrów połączenia
- Gdy aplikacja próbuje otworzyć połączenia z bazą danych, aplikacja musi mieć dostęp do ciągu połączenia. Aby uniknąć wprowadzenia ciąg ręcznie na każdym formularzu, umieść ciąg w pliku App.config w projekcie, a tworzenie metody, która zwraca ciąg, gdy metoda jest wywoływana z dowolnego formularza w aplikacji.
+ Gdy aplikacja próbuje otworzyć połączenia z bazą danych, aplikacja musi mieć dostęp do ciągu połączenia. Aby uniknąć wprowadzenia ciąg ręcznie na każdym formularzu, przechowywanie ciągów w *App.config* pliku w projekcie i Tworzenie metody, która zwraca ciąg, gdy metoda jest wywoływana z dowolnego formularza w aplikacji.
 
- Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając polecenie **właściwości**. Zlokalizuj **ConnectionString** właściwości, a następnie użyj klawiszy Ctrl + A klawisze Ctrl + C, zaznacz i skopiuj ciąg do Schowka.
+ Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając polecenie **właściwości**. Zlokalizuj **ConnectionString** właściwości, następnie użyć **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
 
 1.  Jeśli używasz C# w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
     Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** węzeł, a następnie otwórz **Settings.settings** pliku.
@@ -150,7 +150,7 @@ Formularz nawigacji zostanie otwarte po uruchomieniu aplikacji. **Dodaj konto** 
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Umożliwiają tworzą formularz startowy
 
-Jeśli używasz C# w **Eksploratora rozwiązań**, otwórz plik Program.cs, a następnie zmień `Application.Run` wiersza do tego: `Application.Run(new Navigation());`
+Jeśli używasz C# w **Eksploratora rozwiązań**, otwórz **Program.cs**, a następnie zmień `Application.Run` wiersza do tego: `Application.Run(new Navigation());`
 
 Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, otwórz **właściwości** wybierz **aplikacji** , a następnie wybierz  **SimpleDataApp.Navigation** w **formularz startowy** listy.
 

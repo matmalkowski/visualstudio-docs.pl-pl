@@ -14,15 +14,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747043"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756158"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Utwórz bazę danych i dodawanie tabel w programie Visual Studio
-Visual Studio umożliwia tworzenie i aktualizowanie pliku lokalnej bazy danych w programu SQL Server Express LocalDB. Można również utworzyć bazę danych, wykonując instrukcje języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzia w programie Visual Studio. W tym temacie firma Microsoft Tworzenie pliku MDF i dodać tabelami i kluczami przy użyciu projektanta tabel.
+Visual Studio umożliwia tworzenie i aktualizowanie pliku lokalnej bazy danych w programu SQL Server Express LocalDB. Można również utworzyć bazę danych, wykonując instrukcje języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzia w programie Visual Studio. W tym temacie, utworzymy *.mdf* plik i dodać tabelami i kluczami przy użyciu projektanta tabel.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 W tym przewodniku, musi mieć opcjonalny **magazynu danych i przetwarzania** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalator programu Visual Studio** i wybierz polecenie **obciążeń** kartę. W obszarze **sieci Web & chmurze**, wybierz **magazynu danych i przetwarzania**. Wybierz **Modyfikuj** przycisk, aby dodać obciążenia do programu Visual Studio.
@@ -32,7 +32,7 @@ W tym przewodniku, musi mieć opcjonalny **magazynu danych i przetwarzania** obc
 ### <a name="to-create-a-project-and-a-database-file"></a>Aby utworzyć projekt i plik bazy danych
 1.  Tworzenie projektu formularzy systemu Windows o nazwie `SampleDatabaseWalkthrough`.
 
-2.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.
+2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
 3.  Na liście szablony elementów, przewiń w dół i wybierz **bazy danych opartej na usługi**.
 
@@ -41,7 +41,7 @@ W tym przewodniku, musi mieć opcjonalny **magazynu danych i przetwarzania** obc
 4.  Nazwa bazy danych **SampleDatabase**, a następnie wybierz **Dodaj** przycisku.
 
 ### <a name="to-add-a-data-source"></a>Aby dodać źródła danych
-5.  Jeśli **źródeł danych** okno nie jest otwarty, otwórz go, wybierając **Shift + Alt + D** kluczy lub z menu, wybierając **widoku**, **inne okna**, **Źródeł danych**.
+5.  Jeśli **źródeł danych** okno nie jest otwarty, otwórz go, wybierając **Shift**+**Alt**+**D** kluczy lub na na pasku menu, wybierz opcję **widoku** > **inne okna** > **źródeł danych**.
 
 6.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** łącza.
 
@@ -58,11 +58,11 @@ W tym przewodniku, musi mieć opcjonalny **magazynu danych i przetwarzania** obc
 11. Jeden **wybierz obiekty bazy danych** strony, zostanie wyświetlony komunikat z informacją bazy danych nie zawiera żadnych obiektów. Wybierz **Zakończ**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Aby wyświetlić właściwości połączenia danych
-Parametry połączenia dla pliku SampleDatabase.mdf można wyświetlić, otwierając okno właściwości połączenia danych:
+Parametry połączenia można wyświetlić *SampleDatabase.mdf* plików, otwierając okno właściwości połączenia danych:
 
--   W programie Visual Studio, wybierz **widoku**, **Eksplorator obiektów SQL Server** Jeśli okno nie jest jeszcze otwarty. Otwórz okno właściwości rozwijając **połączenia danych** węzła, otwieranie menu skrótów dla SampleDatabase.mdf, a następnie wybierając **właściwości**.
+-   W programie Visual Studio, wybierz **widoku** > **Eksplorator obiektów SQL Server** Jeśli okno nie jest jeszcze otwarty. Otwórz okno właściwości rozwijając **połączenia danych** węzła, otwieranie menu skrótów *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
 
--   Alternatywnie można wybrać **widoku**, **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarty. Otwórz okno właściwości rozwijając **połączenia danych** węzła. Otwórz menu skrótów dla SampleDatabase.mdf, a następnie wybierz **właściwości**.
+-   Alternatywnie można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarty. Otwórz okno właściwości rozwijając **połączenia danych** węzła. Otwórz menu skrótów *SampleDatabase.mdf*, a następnie wybierz **właściwości**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i klucze przy użyciu projektanta tabeli
 W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wierszy przykładowych danych. Zostanie również utworzony klucz obcy, aby określić, jak odpowiadają rekordów w drugiej tabeli rekordów w jednej tabeli.
@@ -165,9 +165,9 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 6.  Dodawanie danych dla niektórych zleceń.
 
     > [!IMPORTANT]
-    > Upewnij się, że wszystkie identyfikatory kolejności i ilości kolejności są liczbami całkowitymi i czy każdy identyfikator klienta jest zgodna wartość określoną w kolumnie CustomerID tabeli klientów.
+    > Upewnij się, że wszystkie identyfikatory kolejności i ilości kolejności są liczbami całkowitymi oraz że każdy identyfikator klienta zgodny z wartością określoną w **CustomerID** kolumny tabeli Klienci.
 
-7.  Na pasku menu wybierz **pliku**, **Zapisz wszystko**.
+7.  Na pasku menu wybierz **pliku** > **Zapisz wszystko**.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767445"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755615"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów
   Aby skonfigurować pakiet do wdrożenia SharePoint — elementy i funkcje, można użyć Eksploratora pakietów. SharePoint — elementy projektu i funkcji można dostosować w pliku wsp.  
   
  Alternatywnie można użyć projektanta pakietów do wyświetlania i zmienić kolejność te funkcje, aby zmienić kolejność aktywacji. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
-## <a name="opening-the-packaging-explorer"></a>Otwieranie Eksploratora pakietów  
+## <a name="open-the-packaging-explorer"></a>Otwórz Eksploratora pakietów  
  Poniższa procedura służy do Otwórz Eksploratora pakietów, jeśli rozwiązanie Visual Studio ma co najmniej jeden projekt programu SharePoint. Alternatywnie Eksploratora pakietów otwierany automatycznie, podczas wyświetlania funkcji lub pakietu projektanta. Po zamknięciu wszystkich funkcji i pakiet projektantów Eksploratora pakietów również zostanie zamknięte.  
   
 #### <a name="to-open-the-packaging-explorer"></a>Aby otworzyć Eksploratora pakietów  
@@ -58,7 +58,7 @@ ms.locfileid: "34767445"
     > [!NOTE]  
     >  Użyj tej procedury, jeśli masz więcej niż jeden projekt programu SharePoint w rozwiązaniu.  
   
-## <a name="validating-a-feature-or-package"></a>Sprawdzanie poprawności funkcji lub pakietu  
+## <a name="validate-a-feature-or-package"></a>Sprawdzanie poprawności funkcji lub pakietu  
  Weryfikowanie plików można zidentyfikować potencjalne problemy w funkcji programu SharePoint i pakietów. Ostrzeżenia i błędy są wyświetlane w oknie danych wyjściowych i w oknie Lista błędów.  
   
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Aby sprawdzić poprawność funkcji programu SharePoint lub pakietu
@@ -68,5 +68,5 @@ ms.locfileid: "34767445"
 2.  Otwórz menu skrótów dla funkcji lub pakiet, a następnie wybierz pozycję **weryfikacji**.  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

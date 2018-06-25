@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f9a40434821294384154ddcbbfebbd0a7885eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1032df2f7ebcf4cbc1eae0d4b18757a3f90c4f68
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975344"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758065"
 ---
-# <a name="cancellationscope-activity-designer"></a>Projektant działań CancellationScope
+# <a name="cancellationscope-activity-designer"></a>CancellationScope, projektant działań
 
 **CancellationScope** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CancellationScope> działania.
 
 ## <a name="the-cancellationscope-activity"></a>Działanie CancellationScope
- <xref:System.Activities.Statements.CancellationScope> Działania można określić działanie logiki wykonywania i anulowania dla tego działania.
+
+<xref:System.Activities.Statements.CancellationScope> Działania można określić działanie logiki wykonywania i anulowania dla tego działania.
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Przy użyciu narzędzia Projektant działań CancellationScope
- **CancellationScope** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie projektanta przepływów pracy. Można także wybrać **narzędzi** z **widoku** menu lub naciśnij klawisze CTRL + ALT + X.
 
- **CancellationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucanie **CancellationScope** tworzy Projektant działań <xref:System.Activities.Statements.CancellationScope> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z CancellationScope. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku **CancellationScope** Projektant działań. Można również edytować go w **DisplayName** pola siatki właściwości.
+**CancellationScope** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+
+**CancellationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucanie **CancellationScope** tworzy Projektant działań <xref:System.Activities.Statements.CancellationScope> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z CancellationScope. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku **CancellationScope** Projektant działań. Można również edytować go w **DisplayName** pola siatki właściwości.
 
 ### <a name="the-cancellationscope-properties"></a>Właściwości CancellationScope
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości, ale inne właściwości, należy edytować na powierzchni projektanta przepływów pracy.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości, ale inne właściwości, należy edytować na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

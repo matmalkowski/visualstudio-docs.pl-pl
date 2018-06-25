@@ -8,9 +8,9 @@ f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
 helpviewer_keywords:
-- Visual Studio 2010 Workflow Designer [WFD], overview
+- Visual Studio Workflow Designer [WFD], overview
 - Workflow Designer [WFD]
-- Visual Studio 2010 Workflow Designer [WFD]
+- Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: gewarren
@@ -18,35 +18,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc9e42146bfa7de259551ff1c90d27201db5725
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6fa987303ccbc3c6dc9122fb03daef02896a327
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970128"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756424"
 ---
-# <a name="developing-applications-with-the-workflow-designer"></a>Tworzenie aplikacji za pomocą projektanta przepływów pracy
+# <a name="develop-apps-with-the-workflow-designer"></a>Tworzenie aplikacji za pomocą projektanta przepływów pracy
 
-Projektant przepływu pracy systemu Windows jest Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie aplikacji systemu Windows Workflow Foundation (WF) w programie .NET Framework 4 jest hostowany w środowisku projektowym Visual Studio 2010. Umożliwia utworzenie aplikacji złożonych przepływu pracy, biblioteka działań lub usługi Windows Communication Foundation (WCF) przy użyciu szablonów i projektantów działań. Aby uzyskać więcej informacji o przepływach pracy, zobacz [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+Projektanta przepływów pracy jest widoczny Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) aplikacji (WF) w programie Visual Studio. Umożliwia utworzenie aplikacji złożonych przepływu pracy, biblioteka działań lub usługi Windows Communication Foundation (WCF) przy użyciu szablonów i projektantów działań.
 
- Poniżej przedstawiono kilka nowych funkcji projektowania, które ustawić tej nowej wersji projektanta przepływów pracy, oprócz starsze wersje projektanta przepływów pracy:
+## <a name="install-windows-workflow-foundation"></a>Instalowanie programu Windows Workflow Foundation
 
--   Projektant przepływu pracy jest utworzony przy użyciu systemu Windows Presentation Foundation (WPF). Podnosi poziom obsługi projektanta działania i zwiększa wydajność w przypadku dużych i złożonych przepływów pracy.
+Aby użyć szablonów projektu przepływu pracy w Visual Studio 2017, należy najpierw zainstalować **Windows Workflow Foundation** składnika.
 
--   Działania niestandardowe są wyposażone [!INCLUDE[avalon2](../workflow-designer/includes/avalon2_md.md)], przy użyciu języka XAML i modelu programowania do tworzenia projektantów działań zostały uproszczone.
+1. Otwórz Instalator programu Visual Studio. Jest szybkim sposobem go otworzyć, wybierając **narzędzia** > **Pobierz narzędzia i funkcje** w programie Visual Studio.
 
--   Działanie flowchart został zaimplementowany, więc można zwizualizować przepływem programu przy użyciu znanych schemat blokowy modelowania stylu.
+1. Instalator programu Visual Studio, wybierz **pojedynczych składników** kartę.
 
--   Projektanta przepływów pracy ma nowej zmiennej projektanta umożliwiający deklarowanie i zakres zmiennych w ramach przepływów pracy, powiązanie ich działania.
+1. Przewiń w dół do **rozwoju** kategorii, a następnie wybierz **Windows Workflow Foundation** składnika.
 
--   W programie Visual Studio 2010 projektanta przepływów pracy zapewnia pełne możliwości funkcji IntelliSense podczas tworzenia wyrażenia języka Visual Basic w ramach przepływów pracy programu .NET Framework 4.
+   ![Składnik programu Windows Workflow Foundation dla Visual Studio 2017 r.](media/windows-workflow-foundation-component.png)
 
--   Działanie debugowania została rozszerzona w języku XAML, dzięki czemu można ustawić punktów przerwania w definicji przepływu pracy XAML i Wkrocz do kodu XAML w czasie wykonywania, która zapewnia środowisko, podobnie jak w kodzie zarządzanym.
+1. Wybierz **zmodyfikować**.
 
--   Rehosting projektanta przepływów pracy poza Visual Studio jest znacznie uproszczone porównaniu z poprzednimi wersjami, teraz wymagające tylko kilka wierszy kodu.
+   Visual Studio instaluje **Windows Workflow Foundation** składnika.
 
--   Nowy <xref:System.Activities.Statements.Flowchart> działanie i jego [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) pozwala na wizualizowanie z przepływem programu przy użyciu znanych schemat blokowy modelowania stylu.
+## <a name="see-also"></a>Zobacz także
 
--   Zostały rozszerzone działania obsługi wiadomości, co umożliwia zapis w pełni deklaracyjnego (Brak kodu) usług Windows Communication Foundation (WCF).
-
--   **Dodać odwołania do usługi...**  funkcjonalność umożliwia generowanie działania automatycznie uzyskiwać dostęp do usług sieci Web.
+- [Program Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

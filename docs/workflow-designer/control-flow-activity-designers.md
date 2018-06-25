@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967403"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758397"
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
 
-Projektant przepływu pracy systemu Windows zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używana do sterowania przepływem w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.
+Projektanta przepływów pracy zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używana do sterowania przepływem w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.
 
 ## <a name="reference"></a>Tematy pomocy
 

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37155d7a322b2421fc0c9828d22df8d625f8573a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978287"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758019"
 ---
 # <a name="switcht-activity-designer"></a>Przełącznik\<T > Projektant działań
 
 <xref:System.Activities.Statements.Switch%601> Działania oblicza określone wyrażenie i wykonuje działania z działań, których skojarzony klucz jest zgodna z wartością uzyskane z oceny kolekcji.
 
-**Przełącznika < T\>**  Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Switch%601> działania w Projektancie przepływów pracy systemu Windows.
+**Przełącznika < T\>**  Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Switch%601> działania w Projektancie przepływów pracy.
 
 ## <a name="the-switchtactivity"></a>Przełącznik\<T > działania
 
@@ -32,7 +32,7 @@ A <xref:System.Activities.Statements.Switch%601> zawiera działanie <xref:System
 
 ## <a name="how-to-use-the-switcht-activity-designer"></a>Jak użyć przełącznika\<T > Projektant działań
 
-**Przełącznika\<T >** Projektant działań można znaleźć w **przepływ sterowania** kategorii **przybornika**, które jest dostępne po kliknięciu **Przybornika** karty w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.) Po usunięcie go w Projektancie przepływów pracy, wyświetla **wybierz typy** okna dialogowego, aby umożliwić użytkownikowi, określ typ ogólny *T* używane w <xref:System.Activities.Statements.Switch%601> działania. Wartość domyślna to **Int32**. Raz typu ogólnego *T* został wybrany, **przełącznika < T\>**  projektanta została dodana do projektanta przepływów pracy.
+Dostęp **przełącznika\<T >** Projektant działań w **przepływ sterowania** kategorii **przybornika**. Po usunięcie go w Projektancie przepływów pracy, wyświetla **wybierz typy** okna dialogowego, aby umożliwić użytkownikowi, określ typ ogólny *T* używane w <xref:System.Activities.Statements.Switch%601> działania. Wartość domyślna to **Int32**. Raz typu ogólnego *T* został wybrany, **przełącznika < T\>**  projektanta została dodana do projektanta przepływów pracy.
 
 Poniżej przedstawiono właściwości **przełącznika < T\>**  projektanta. Wszystkie te właściwości można edytować w siatce właściwości. Niektóre z nich można również edytować na powierzchnię projektanta.
 
@@ -51,9 +51,9 @@ Kliknięcie przycisku klucz istniejącego przypadku zmienia klucz z etykiety w p
 
 Istnieją 2 sposobów usuwania przypadku:
 
-1.  Wybierz wielkość liter i usuń go.
+- Wybierz wielkość liter i usuń go.
 
-2.  Wybierz kliknij prawym przyciskiem myszy case, aby wyświetlić menu kontekstowe i wybrać **usunąć**.
+- Wybierz kliknij prawym przyciskiem myszy case, aby wyświetlić menu kontekstowe i wybrać **usunąć**.
 
 Należy pamiętać, że należy wybrać case, aby go usunąć. Wybierając i usuwając działanie w przypadku usuwa tylko działania inaczej.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de974ebba6fbe746a4d7acb4c1a20fefa5488a8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970651"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755865"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Porady: Użyj projektanta importów
 
@@ -35,7 +35,7 @@ Projektanta importów reaguje na zmiany w interfejsie użytkownika i zmian wprow
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Aby dodać przestrzeni nazw na liście importowane przestrzenie nazw
 
-1.  Otwórz aplikację usługi przepływu pracy WCF, aplikacja konsoli przepływu pracy lub działania projektu biblioteki w Visual Studio 2010 lub aplikacja rehosted przepływu pracy.
+1.  Otwórz aplikację usługi przepływu pracy WCF, aplikacja konsoli przepływu pracy lub działania projektu biblioteki w programie Visual Studio lub aplikacja rehosted przepływu pracy.
 
 2.  Kliknij przycisk **importów** w dolnej części obszaru głównego. Projektanta importów będą wyświetlane.
 

@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dd44a91ac2a3d823c5a5690edbdd57422857ea9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974277"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755631"
 ---
-# <a name="flowchart-activity-designer"></a>Schemat blokowy Projektant działań
+# <a name="flowchart-activity-designer"></a>Flowchart, projektant działań
 
-<xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy, zdefiniuj i zarządzać związanymi z formantów złożonych przepływu. A <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą projektanta przepływów pracy. W tym temacie opisano środowisko projektanta przepływów pracy. Projektant działań przepływu pracy projektanta przepływów pracy systemu Windows umożliwia deweloperom tworzyć przepływy pracy w sposób fizycznych.
+<xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy, zdefiniuj i zarządzać związanymi z formantów złożonych przepływu. A <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą projektanta przepływów pracy. W tym temacie opisano środowisko projektanta przepływów pracy. Projektant działań przepływu pracy projektanta przepływów pracy umożliwia deweloperom tworzenie przepływów pracy w sposób fizycznych.
 
 ## <a name="the-flowchart-activity"></a>Schemat blokowy działania
 
@@ -31,7 +31,7 @@ ms.locfileid: "31974277"
 
 ### <a name="using-the-flowchart-activity-designer"></a>Przy użyciu narzędzia Projektant działań schematu blokowego
 
-**Schemat blokowy** Projektant działań można znaleźć w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+**Schemat blokowy** Projektant działań można znaleźć w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w Projektancie przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
 **Schemat blokowy** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie projektantów działań są zazwyczaj umieszczone, jako działania głównego lub element podrzędny innego działania przepływu sterowania. Jeśli **schemat blokowy** Projektant działań jest przerywane na pusty powierzchnię projektanta przepływów pracy, tworzy <xref:System.Activities.Statements.Flowchart> działania, które domyślnie wyświetla się w widoku rozwiniętego, w którym jest węzeł początkowy, który inicjuje wykonywania reprezentowany jako piłka zielony. Jeśli **schemat blokowy** Projektant działań są przenoszone do innego działania przepływu sterowania, wyświetla się w trybie zminimalizowanym widoku, który można rozszerzać przez dwukrotne kliknięcie **schemat blokowy** Projektant działań. Wszystkie działania w **przybornika** mogą być przeciągnięte bezpośrednio na **schemat blokowy** Projektant działań, włącznie z innymi działaniami przepływu sterowania.
 

@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972366"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755512"
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 
-Projektant przepływu pracy systemu Windows zawiera szereg projektantów działań, których można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i Zarządzaj przepływami pracy komputera stanu. Poniższe tematy opisują te projektantów i zawierają wskazówki dotyczące sposobu ich używania.
+Projektant przepływów pracy zawiera szereg projektantów działań, których można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i Zarządzaj przepływami pracy komputera stanu. Poniższe tematy opisują te projektantów i zawierają wskazówki dotyczące sposobu ich używania.
 
 ## <a name="reference"></a>Tematy pomocy
  <xref:System.Activities.Statements.StateMachine>

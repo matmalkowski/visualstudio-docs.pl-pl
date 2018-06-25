@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81edef642fd2d83f6bb65c01f9a1726812ba0fca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926538"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757139"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 Termin *tabeli odnośników* (nazywane również *powiązania wyszukiwania*) opisano formant, który wyświetla informacje dotyczące jednego danych tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników przeciągając węzeł główny tabeli nadrzędnej lub obiekt w **źródeł danych** okna na formant, który jest już powiązany z kolumną lub właściwości w tabeli podrzędnych.

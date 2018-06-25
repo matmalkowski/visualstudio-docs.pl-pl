@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cfe187a77a956c9ebca2649b33dba9218f0fb4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9b77ab2b9effc305469b3a4e489342f496a89997
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975030"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755953"
 ---
-# <a name="writeline-activity-designer"></a>Projektant działań WriteLine
+# <a name="writeline-activity-designer"></a>WriteLine, projektant działań
 
 **WriteLine** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.WriteLine> działania.
 
@@ -28,12 +28,12 @@ ms.locfileid: "31975030"
 <xref:System.Activities.Statements.WriteLine> Działania zapisuje tekst w określonym <xref:System.IO.TextWriter> obiektu. Jeśli nie <xref:System.IO.TextWriter> jest określony, <xref:System.Activities.Statements.WriteLine> zapisuje tekst do konsoli.
 
 ### <a name="using-the-writeline-activity-designer"></a>Przy użyciu narzędzia Projektant działań WriteLine
- **WriteLine** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **WriteLine** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.WriteLine> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z WriteLine. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **WriteLine** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dostęp **WriteLine** Projektant działań w **podstawowych** kategorii **przybornika**. **WriteLine** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.WriteLine> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z WriteLine. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **WriteLine** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-writeline-properties"></a>Właściwości WriteLine
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre z nich można edytowane na powierzchni Designerdesigner przepływu pracy.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre z nich można edytowane na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

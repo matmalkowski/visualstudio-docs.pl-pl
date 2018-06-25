@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c09d3b6bbc9f1b3c895f0b8844fc91875c1484
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280471"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757282"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie za pomocą debugera just in Time programu Visual Studio
 Debugowanie Just In Time uruchamia program Visual Studio automatycznie po wyjątku lub awarii w aplikacji, która działa poza Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie przy użyciu programu Visual Studio, gdy występuje problem.
@@ -104,7 +104,7 @@ Debugowanie Just In Time może nadal być włączone, nawet jeśli program Visua
 
  Upewnij się, że Just-In-Time debugowanie jest [włączone](#BKMK_Enabling).
 
- Na potrzeby tej sekcji wybierzemy aplikacji konsolowej C# w programie Visual Studio, która zgłasza [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).
+ Na potrzeby tej sekcji wybierzemy aplikacji konsolowej C# w programie Visual Studio, która zgłasza [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
  W programie Visual Studio Utwórz aplikację konsoli języka C# (**Plik > Nowy > Projekt > Visual C# > aplikacji konsoli**) o nazwie **ThrowsNullException**. Aby uzyskać więcej informacji na temat tworzenia projektów programu Visual Studio, zobacz [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 

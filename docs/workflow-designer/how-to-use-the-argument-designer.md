@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971875"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755525"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Porady: Użyj projektanta argumentów
 
@@ -26,7 +26,7 @@ W porównaniu do poprzednich wersji programu .NET Framework, projektanta argumen
 
 ## <a name="to-create-a-new-argument"></a>Aby utworzyć nowy argument
 
-1.  Otwórz rozwiązanie przepływu pracy lub działania w programie Visual Studio 2010.
+1.  Otwórz rozwiązanie przepływu pracy lub działania w programie Visual Studio.
 
 2.  Otwórz projektanta argumentów, klikając przycisk **argumenty** przycisk w lewym dolnym rogu obszaru projektowania. Zostanie wyświetlona projektanta argumentów.
 

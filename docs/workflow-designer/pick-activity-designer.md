@@ -12,26 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975435"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757754"
 ---
-# <a name="pick-activity-designer"></a>Pobierz Projektant działań
+# <a name="pick-activity-designer"></a>Pick, projektant działań
 
 <xref:System.Activities.Statements.Pick> Działania zawiera przepływu sterowania opartego na zdarzeniach. Działania wykonuje jeden z kilku gałęzie w odpowiedzi na wyzwalająca zdarzenia.
 
 ## <a name="the-pick-activity"></a>Wybierz działanie
 
-A <xref:System.Activities.Statements.Pick> działania zawiera kolekcję <xref:System.Activities.Statements.PickBranch> obiektów, z których jedna <xref:System.Activities.Statements.Pick> działania może zostać uruchomiony ze względu na niektóre zdarzenia przychodzącego, która służy jako wyzwalacz. W ten sposób projektanta przepływów pracy systemu Windows udostępnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>. Na początku <xref:System.Activities.Statements.Pick> wykonania działania, wszystkie działania wyzwalacza z <xref:System.Activities.Statements.PickBranch> zaplanowane elementy. Po ukończeniu pierwsze działanie zaplanowano odpowiadające mu działanie akcji, a inne działania wyzwalacza zostały anulowane.
+A <xref:System.Activities.Statements.Pick> działania zawiera kolekcję <xref:System.Activities.Statements.PickBranch> obiektów, z których jedna <xref:System.Activities.Statements.Pick> działania może zostać uruchomiony ze względu na niektóre zdarzenia przychodzącego, która służy jako wyzwalacz. W ten sposób projektanta przepływów pracy udostępnia modelowanie przepływu sterowania opartego na zdarzeniach. Każdy <xref:System.Activities.Statements.PickBranch> zawiera <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A>. Na początku <xref:System.Activities.Statements.Pick> wykonania działania, wszystkie działania wyzwalacza z <xref:System.Activities.Statements.PickBranch> zaplanowane elementy. Po ukończeniu pierwsze działanie zaplanowano odpowiadające mu działanie akcji, a inne działania wyzwalacza zostały anulowane.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Jak używać Projektant działań pobrania
 
-**Wybierz** Projektant działań można znaleźć w **przepływ sterowania** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
-
-**Wybierz** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie projektantów działań są zazwyczaj umieszczone, na przykład wewnątrz  **Sekwencja** Projektant działań. Po usunięcie go w Projektancie przepływów pracy, tworzy <xref:System.Activities.Statements.Pick> działania, która domyślnie zawiera dwa puste <xref:System.Activities.Statements.PickBranch> działań jako elementy z wyświetlane nazwy Branch1 i Branch2. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta aktywności lub poziomu **właściwości** okna dla każdej gałęzi.
+Dostęp **wybierz** Projektant działań w **przepływ sterowania** kategorii **przybornika**. **Wybierz** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie projektantów działań są zazwyczaj umieszczone, na przykład wewnątrz  **Sekwencja** Projektant działań. Po usunięcie go w Projektancie przepływów pracy, tworzy <xref:System.Activities.Statements.Pick> działania, która domyślnie zawiera dwa puste <xref:System.Activities.Statements.PickBranch> działań jako elementy z wyświetlane nazwy Branch1 i Branch2. Te odpowiednich <xref:System.Activities.Statements.PickBranch.DisplayName%2A> wartości właściwości mogą być edytowane w **PickBranch** nagłówka projektanta aktywności lub poziomu **właściwości** okna dla każdej gałęzi.
 
 Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> działań do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika** lub korzystając z menu kontekstowego w ramach **wybierz** powierzchnię projektu. Aby uzyskać więcej informacji, zobacz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tematu. Powiadomienie, że tylko element, którego może być umieszczony wewnątrz **wybierz** Projektant działań jest **PickBranch** Projektant działań.
 

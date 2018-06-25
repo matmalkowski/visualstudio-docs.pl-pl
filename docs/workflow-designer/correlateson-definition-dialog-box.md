@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 490740f8f2682ad6b82bc60edb5d24e6d410b192
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7ed52f7898f10b5f13f55c27cba380334489871
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970301"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758137"
 ---
-# <a name="correlateson-definition-dialog-box"></a>Okno dialogowe definicji CorrelatesOn
+# <a name="correlateson-definition-dialog-box"></a>Definicja wyrażenia CorrelatesOn, okno dialogowe
 
-**CorrelatesOn** okno dialogowe służy do edycji w Projektancie przepływów pracy Windows <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działania. Aby uzyskać więcej informacji, zobacz [Receive](../workflow-designer/receive-activity-designer.md) tematu.
+**CorrelatesOn** okno dialogowe służy do edycji w Projektancie przepływów pracy <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działania. Aby uzyskać więcej informacji, zobacz [odbierania Projektant działań](../workflow-designer/receive-activity-designer.md).
 
 Korelację między <xref:System.ServiceModel.Activities.Receive> działań określa, jak różne usługi operations połączyć ze sobą w przepływie pracy.
 
@@ -30,11 +30,11 @@ W poniższej tabeli opisano elementy interfejsu użytkownika **CorrelatesOn** ok
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
 |**CorrelatesWith**|<xref:System.ServiceModel.Activities.CorrelationHandle> Używany do kierowania wiadomości do wystąpienia przepływu pracy odpowiednie.|
-|**Kwerendy XPath**|Para klucza i wartości zawierający zapytania, używane do wyodrębniania danych korelacji wiadomości przychodzących. Odpowiada to <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwości. Kwerendy XPath są zawarte w <xref:System.ServiceModel.MessageQuerySet> obiektu.|
+|**Kwerendy XPath**|Para klucza i wartości zawierający zapytania, używane do wyodrębniania danych korelacji wiadomości przychodzących. Ta wartość odpowiada <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> właściwości. Kwerendy XPath są zawarte w <xref:System.ServiceModel.MessageQuerySet> obiektu.|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>Aby uruchomić okno dialogowe CorrelatesOn
 
-**Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. Wybierz **Receive** Projektant działań i kliknij przycisk wielokropka obok tekstu (kolekcja) dla **CorrelatesOn** właściwości w siatce właściwości **CorrelatesOn definicji**  okno dialogowe okna.
+**Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy, wszędzie tam, gdzie działania są zwykle umieszczane. Projektant działań porzucenie tworzy <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. Aby otworzyć **definicji CorrelatesOn** okno dialogowe, wybierz opcję **Receive** działania projektanta, a następnie w siatce właściwości, kliknij przycisk wielokropka obok tekstu kolekcji dla  **CorrelatesOn** właściwości.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a64da6c7289aa8af67436ca38404ef3d050b5ab
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 80181525c63593da783b620917b82c5a8c0bf177
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768108"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758212"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Porady: Dodawanie elementów do projektu SharePoint
   Rozwiązania programu SharePoint zawiera jeden lub więcej projektów, z których każdy zawiera wiele elementów projektu SharePoint. Po otwarciu lub tworzenie rozwiązań programu SharePoint, można dodać nowe lub istniejące elementy do tych projektów. Na przykład domyślnego formularza, o nazwie default.aspx wyposażone w nowych projektów przepływu pracy, ale zastąp formularz nowe lub inne formularza lub dodać innej formy ASPX.  
@@ -53,5 +53,5 @@ ms.locfileid: "34768108"
   
 ## <a name="see-also"></a>Zobacz także
  [Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

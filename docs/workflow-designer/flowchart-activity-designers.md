@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6294b2e2392c81e20c984972ec875c589a7167
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967842"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755723"
 ---
-# <a name="flowchart-activity-designers"></a>Schemat blokowy projektantów działań
+# <a name="flowchart-activity-designers"></a>Projektanci działań Flowchart
 
-Projektant przepływu pracy systemu Windows zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używany do zarządzania zaprezentowane w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.
+Projektanta przepływów pracy zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używany do zarządzania zaprezentowane w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.
 
 ## <a name="reference"></a>Tematy pomocy
  <xref:System.Activities.Activity>

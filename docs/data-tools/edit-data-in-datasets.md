@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 256b22281f64a1a04f8d691f2f48cc7b0295b1a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926382"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757152"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 Taki sam sposób, jak edytować dane w tabeli w dowolnej bazy danych można edytować dane w tabelach danych. Proces może obejmować, wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formularzu powiązane z danymi można określić pola, które są można edytować użytkownika. W takich przypadkach infrastruktury wiązania danych obsługuje wszystkie śledzenia zmian, aby zmiany mogą być wysyłane w bazie danych później. Jeśli programowo wprowadź zmiany do danych i chcesz wysłać te zmiany z powrotem do bazy danych, należy użyć obiektów i metod, które wykonują śledzenia zmian dla Ciebie.
@@ -44,14 +44,14 @@ Jeśli znasz indeks wiersza, mogą uzyskiwać dostęp do i umożliwia edytowanie
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Aby wstawić nowe wiersze do zestawu danych
 Aplikacji, które zwykle korzystają z formantów powiązanych z danymi na dodawanie nowych rekordów za pośrednictwem **Dodaj nowy** znajdującego się na [formantu BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).
 
-Aby ręcznie dodać nowych rekordów do zestawu danych, należy utworzyć nowy wiersz danych przez wywołanie metody w elemencie DataTable. Następnie dodaj wiersz, aby <xref:System.Data.DataRow> kolekcji (<xref:System.Data.DataTable.Rows%2A>) z <xref:System.Data.DataTable>:
+Aby ręcznie dodać nowych rekordów do zestawu danych, należy utworzyć nowy wiersz danych przez wywołanie metody w elemencie DataTable. Następnie należy dodać do wiersza <xref:System.Data.DataRow> kolekcji (<xref:System.Data.DataTable.Rows%2A>) z <xref:System.Data.DataTable>:
 
 [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
 [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
 
 Aby zachować informacje wymagane przez zestaw danych do wysyłania aktualizacji do źródła danych, użyj <xref:System.Data.DataRow.Delete%2A> sposób usuwania wierszy w tabeli danych. Na przykład, jeśli aplikacja używa TableAdapter (lub <xref:System.Data.Common.DataAdapter>), TableAdapter `Update` metoda usuwa wierszy w bazie danych, które mają <xref:System.Data.DataRow.RowState%2A> z <xref:System.Data.DataRowState.Deleted>.
 
-Jeśli aplikacja nie wymaga wysyłać aktualizacje źródła danych, możliwe jest usuwanie rekordów, uzyskując bezpośrednio dostęp do zbierania danych wiersza (<xref:System.Data.DataRowCollection.Remove%2A>).
+Jeśli aplikacja nie wymaga wysyłać aktualizacje źródła danych, istnieje możliwość usuwania rekordów, uzyskując bezpośrednio dostęp do zbierania danych wiersza (<xref:System.Data.DataRowCollection.Remove%2A>).
 
 #### <a name="to-delete-records-from-a-data-table"></a>Aby usunąć rekordy z tabeli danych
 

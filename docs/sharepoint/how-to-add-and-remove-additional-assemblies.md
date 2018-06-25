@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767780"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756291"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: Dodawanie i usuwanie zestawów dodatkowych
   Jeśli pakiet programu SharePoint jest zależny od innych zestawów dla funkcji lub danych, możesz dodać zestawy do pakietu rozwiązań (wsp). W ten sposób programu SharePoint server upewnia się, że niestandardowe zestawy są instalowane przy użyciu pakietu.  
   
  Można również dodawać i zmienić bezpieczne kontrolki i klasa zasobów plików skojarzonych z zestawów.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Dodawanie następującej liczby dodatkowych zestawów, bezpieczne kontrolki i klasa zasobów  
+## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Dodaj dodatkowe zestawy, bezpieczne kontrolki i klasa zasobów  
  Możesz dodać dodatkowe zestawy do pakietu rozwiązania programu SharePoint. Dodatkowe zestawy w trybie piaskownicy rozwiązania wdrożyć w globalnej pamięci podręcznej zestawów, ale w trybie piaskownicy rozwiązania SharePoint — elementy projektu zostaną dodane do bazy danych zawartości. Bezpieczne kontrolki i klasa zasobów można również dodać do tych zestawów dodatkowych. Aby uzyskać więcej informacji na temat bezpiecznych formantów, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) lub "Tworzenie SafeControl — wpis" w [wdrażanie części sieci Web w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Aby dodać istniejący zestaw  
@@ -84,7 +84,7 @@ ms.locfileid: "34767780"
   
 3.  W **nazwę pliku** kolumny, wybierz wielokropek (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipsy ASP.NET Mobile Designer")) i wybierz zasób klasy, do którego chcesz dodać.  
   
-## <a name="deleting-custom-assemblies"></a>Usuwanie zestawów niestandardowych  
+## <a name="delete-custom-assemblies"></a>Usuwanie zestawów niestandardowych  
  Usuwanie zestawów z pakietu programu SharePoint lub usunąć bezpieczne kontrolki i klasa zasobów z istniejących zestawów.  
   
 #### <a name="to-delete-an-existing-assembly"></a>Aby usunąć istniejący zestaw  
@@ -116,5 +116,5 @@ ms.locfileid: "34767780"
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
+ [Porady: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
   

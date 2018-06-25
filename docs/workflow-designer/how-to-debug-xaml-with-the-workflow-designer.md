@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: eac6294861080614cbdd46e6ac1cc9a05d7124ff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f965a7ba94242b44fc83317bf0d152de540e0a90
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969899"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758192"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Porady: debugowanie XAML z projektanta przepływów pracy
 
-Przepływy pracy są zdefiniowane w języku XAML. Reprezentacja interfejsu użytkownika przepływu pracy jest oparty na drzewie XAML definiujący przepływ pracy. Działanie debugowania jest podobny do debugowania przepływów pracy w Projektancie przepływów pracy systemu Windows. Na przykład podczas debugowania XAML, zmiennych lokalnych, obejrzyj i wątków windows działał tak samo jak w debugowaniu projektanta przepływów pracy. Ponadto widoku stosu wywołań podczas debugowania XAML jest liniowej hierarchiczny widok przepływ wykonania przepływu pracy.
+Przepływy pracy są zdefiniowane w języku XAML. Reprezentacja interfejsu użytkownika przepływu pracy jest oparty na drzewie XAML definiujący przepływ pracy. Działanie debugowania jest podobny do debugowania przepływów pracy w Projektancie przepływów pracy. Na przykład podczas debugowania XAML, zmiennych lokalnych, obejrzyj i wątków windows działał tak samo jak w debugowaniu projektanta przepływów pracy. Ponadto widoku stosu wywołań podczas debugowania XAML jest liniowej hierarchiczny widok przepływ wykonania przepływu pracy.
 
 > [!NOTE]
 > XAML przepływu pracy znajduje się w tym samym zestawie co działania, zestawu część nazwy klas nie są uwzględniane. Bez tej części nazwy klas (działanie) XAML nie można załadować w czasie wykonywania. Nie zaleca się definiowania działań w tej samej przestrzeni nazw jako głównego projektu; w przeciwnym razie XAML musi być edytowane ręcznie po edycji w projektancie.

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdab42766fd20989831e446a45115d17b3ee28fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978664"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758296"
 ---
-# <a name="compensableactivity-activity-designer"></a>Działanie CompensableActivity Projektant działań
+# <a name="compensableactivity-activity-designer"></a>CompensableActivity, projektant działań
 
 **Działanie CompensableActivity** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CompensableActivity> działania.
 
@@ -27,7 +27,7 @@ ms.locfileid: "31978664"
  <xref:System.Activities.Statements.CompensableActivity> Definiuje jednostkę pracy, które mogą być potwierdzone lub skompensowane po pomyślnym ukończeniu.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Przy użyciu narzędzia Projektant działań działanie CompensableActivity
- **Działanie CompensableActivity** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **narzędzi** z **widoku** menu lub naciśnij klawisze CTRL + ALT + X.
+ **Działanie CompensableActivity** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
  **Działanie CompensableActivity** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Projektant działań wewnątrz można porzucić <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.CompensableActivity> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z działania CompensableActivity. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku **działanie CompensableActivity** Projektant działań. Mogą być edytowane także w **DisplayName** pola siatki właściwości.
 

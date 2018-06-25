@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e22c80712bcb0c792fb929ae85b84912122a0bc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971657"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758456"
 ---
-# <a name="delay-activity-designer"></a>Projektant działań opóźnienia
+# <a name="delay-activity-designer"></a>Delay, projektant działań
 
 **Opóźnienie** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Delay> działania.
 
@@ -27,15 +27,15 @@ ms.locfileid: "31971657"
 
 <xref:System.Activities.Statements.Delay> Działania opóźnienie wykonywania przepływu pracy dla określonego przedziału czasu.
 
-### <a name="using-the-delay-activity-designer"></a>Przy użyciu narzędzia Projektant działań opóźnienia
+### <a name="use-the-delay-activity-designer"></a>Za pomocą projektanta działania opóźnienia
 
-**Opóźnienie** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+**Opóźnienie** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
-**Opóźnienie** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Delay> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> opóźnienia. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **opóźnienie** Projektant działań lub **DisplayName** pola siatki właściwości.
+**Opóźnienie** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.Delay> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> opóźnienia. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **opóźnienie** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-delay-properties"></a>Właściwości opóźnienia
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Delay> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i ich niektóre mogą być edytowane na powierzchni Designerdesigner przepływu pracy.
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Delay> właściwości i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości i niektóre z nich można edytowane na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

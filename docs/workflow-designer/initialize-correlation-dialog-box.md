@@ -12,27 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971793"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755843"
 ---
-# <a name="initialize-correlation-dialog-box"></a>Inicjowanie korelacji — okno dialogowe
+# <a name="initialize-correlation-dialog-box"></a>Inicjowanie korelacji, okno dialogowe
 
-**Inicjowania korelacji** okno dialogowe służy do edycji w Projektancie przepływów pracy Windows <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. Aby uzyskać więcej informacji, zobacz [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tematu.
+**Inicjowania korelacji** okno dialogowe służy do edycji w Projektancie przepływów pracy <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. Aby uzyskać więcej informacji, zobacz [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
- W poniższej tabeli opisano elementy interfejsu użytkownika **inicjowania korelacji** okno dialogowe.
+W poniższej tabeli opisano elementy interfejsu użytkownika **inicjowania korelacji** okno dialogowe:
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
 |**Korelacja**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelacji zainicjować.|
-|**Inicjowanie na**|Para klucza i wartości zawierający dane inicjowania. Odpowiada to <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości. Przykład parę klucza i wartości prawidłowe byłoby klucz o nazwie "OrderID" łączyć się z zmiennej o nazwie OrderID.|
+|**Inicjowanie na**|Para klucza i wartości zawierający dane inicjowania. Ta wartość odpowiada <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości. Przykład parę nieprawidłowy klucz/wartość jest klucz o nazwie "OrderID" łączyć się z zmiennej o nazwie OrderID.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Aby uruchomić okno dialogowe inicjowania korelacji
 
--   Kliknij przycisk **widoku** na **InitializeCorrelation** działania projektanta lub wybierz opcję <xref:System.ServiceModel.Activities.InitializeCorrelation> działania w Projektancie przepływów pracy a następnie kliknij przycisk wielokropka obok przycisku <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości w siatki właściwości.
+Kliknij przycisk **widoku** na **InitializeCorrelation** działania projektanta lub wybierz opcję <xref:System.ServiceModel.Activities.InitializeCorrelation> działania w Projektancie przepływów pracy. Następnie kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości w siatce właściwości.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Bezpośredni dostęp do bazy danych za pomocą TableAdapter
+title: Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,20 +25,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9985d9e072163bab722edde403ee1ec8aa801a69
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53d4b2e75be288422300122d5ef9f523068dd9fc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921065"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756457"
 ---
-# <a name="directly-access-the-database-with-a-tableadapter"></a>Bezpośredni dostęp do bazy danych za pomocą TableAdapter
-Oprócz `InsertCommand`, `UpdateCommand`, i `DeleteCommand`, TableAdapters są tworzone za pomocą metod, które mogą być uruchamiane bezpośrednio w bazie danych. Te metody (`TableAdapter.Insert`, `TableAdapter.Update`, i `TableAdapter.Delete`) można wywołać w celu manipulowania bezpośrednio w bazie danych.
+# <a name="directly-access-the-database-with-a-tableadapter"></a>Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter
+Oprócz `InsertCommand`, `UpdateCommand`, i `DeleteCommand`, TableAdapters są tworzone za pomocą metod, które mogą być uruchamiane bezpośrednio w bazie danych. Te metody można wywołać (`TableAdapter.Insert`, `TableAdapter.Update`, i `TableAdapter.Delete`) do manipulowania bezpośrednio w bazie danych.
 
- Jeśli nie chcesz utworzyć te metody bezpośredniego, należy ustawić element TableAdapter `GenerateDbDirectMethods` właściwości `false` w **właściwości** okna. Wszelkie zapytania są dodawane do TableAdapter oprócz zapytanietableadapter głównym, są autonomiczne zapytań, które nie Generuj te DbDirect — metody.
+ Jeśli nie chcesz utworzyć te metody bezpośredniego, należy ustawić element TableAdapter `GenerateDbDirectMethods` właściwości `false` w **właściwości** okna. Wszelkie zapytania są dodawane do TableAdapter oprócz zapytanietableadapter głównym, są autonomiczne zapytań, które nie generują one `DbDirect` metody.
 
 ## <a name="send-commands-directly-to-a-database"></a>Wysyłanie poleceń, bezpośrednio do bazy danych
- Wywołaj metodę TableAdapter DbDirect, który wykonuje zadanie, które mają być osiągnięte.
+ Wywołaj element TableAdapter `DbDirect` metodę, która wykonuje zadanie próbujesz osiągnąć.
 
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Aby wstawić nowe rekordy bezpośrednio do bazy danych
 

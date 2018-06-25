@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747433"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757256"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 
@@ -50,7 +50,7 @@ Należy wykonać te czynności, aby go skompilować:
 >  -   Xamarin aplikacji za pomocą natywnego interfejsu użytkownika:
 >     -   [Witaj, Android](/xamarin/android/get-started/hello-android/) (prosta aplikacja z jednym ekranie)
 >     -   [Witaj, Android Wieloekranowy](/xamarin/android/get-started/hello-android-multiscreen/) (aplikacja z nawigacją między ekranami)
->     -   [Android wskazówki fragmenty](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (używanych do ekranów wzorzec/szczegół, między innymi)
+>     -   [Android wskazówki fragmenty](/xamarin/android/platform/fragments/implementing-with-fragments/) (używanych do ekranów wzorzec/szczegół, między innymi)
 >     -   [Witaj, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Witaj, iOS Multiscreen (wiele ekranów)](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -249,7 +249,7 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
 
     |Właściwość|Wartość|
     |--------------|-----------|
-    |**Tekst**|**Wyszukiwanie według kod pocztowy**|
+    |**tekst**|**Wyszukiwanie według kod pocztowy**|
     |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginStart**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -280,7 +280,7 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
 
     |Właściwość|Wartość|
     |--------------|-----------|
-    |**Tekst**|**Kod pocztowy**|
+    |**tekst**|**Kod pocztowy**|
     |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginStart**|`10dp`|
     |**layout_marginTop**|`6dp`|
@@ -330,7 +330,7 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     |Właściwość|Wartość|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
-    |**Tekst**|**Pobierz pogody**|
+    |**tekst**|**Pobierz pogody**|
     |**layout_marginStart**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7d3220bc67b764b96033ad516eb857bec6014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978274"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756909"
 ---
 # <a name="parallelforeach-activity-designer"></a>Projektant działań działania ParallelForEach
 
@@ -35,7 +35,7 @@ Ale jeśli masz działań w <xref:System.Activities.Statements.ParallelForEach%6
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Za pomocą działania ParallelForEach\<T > Projektant działań
 
-**Działania ParallelForEach\<T >** Projektant działań można znaleźć w **przepływ sterowania** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+Dostęp **działania ParallelForEach\<T >** Projektant działań w **przepływ sterowania** kategorii **przybornika**.
 
 **Działania ParallelForEach\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie są zazwyczaj umieszczone projektantów działań, dla przykład, wewnątrz **sekwencji** Projektant działań. Po usunięcie go w Projektancie przepływów pracy, tworzy <xref:System.Activities.Statements.ParallelForEach%601> działania, która domyślnie zawiera <xref:System.Activities.Activity.DisplayName%2A> z **działania ParallelForEach < Int32\>.**
 

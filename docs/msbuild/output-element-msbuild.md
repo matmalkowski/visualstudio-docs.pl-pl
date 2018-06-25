@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50786f1f42c27a793c48cb06c871b7f11c2dda25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 754968b95ce1332991ddc921138741a1d9235015
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325436"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756928"
 ---
 # <a name="output-element-msbuild"></a>Output — Element (MSBuild)
 Magazyny wartości danych wyjściowych zadania w elementów i właściwości.  
@@ -52,7 +52,7 @@ Magazyny wartości danych wyjściowych zadania w elementów i właściwości.
 |---------------|-----------------|  
 |`TaskParameter`|Atrybut wymagany.<br /><br /> Parametr wyjściowy nazwę zadania.|  
 |`PropertyName`|Albo `PropertyName` lub `ItemName` atrybut jest wymagany.<br /><br /> Właściwość, która odbiera zadanie wyjściowy wartość parametru. Projekt można odwołać właściwości o `$(` *PropertyName* `)` składni. Nazwa tej właściwości może być nową nazwę właściwości lub nazwę, która jest już zdefiniowany w projekcie.<br /><br /> Nie można użyć tego atrybutu, jeśli `ItemName` jest również używany.|  
-|`ItemName`|Albo `PropertyName` lub `ItemName` atrybut jest wymagany.<br /><br /> Wartość parametru wyjściowy element, który odbiera zadania. Projekt można odwołać elementu z `@(` *ItemName* `)` składni. Nazwa elementu może być nową nazwę elementu lub nazwę, która jest już zdefiniowany w projekcie.<br /><br /> Nie można użyć tego atrybutu, jeśli `PropertyName` jest również używany.|  
+|`ItemName`|Albo `PropertyName` lub `ItemName` atrybut jest wymagany.<br /><br /> Wartość parametru wyjściowy element, który odbiera zadania. Projekt można odwołać elementu z `@(` *ItemName* `)` składni. Nazwa elementu może być nową nazwę elementu lub nazwę, która jest już zdefiniowany w projekcie. Jeśli nazwa elementu jest istniejący element, wartości parametrów wyjściowych są dodawane do istniejącego elementu. <br /><br /> Nie można użyć tego atrybutu, jeśli `PropertyName` jest również używany.|  
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  

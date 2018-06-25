@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 447d1c1d9a60e1ff2a360790abe2c3c89f174fa6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e8605671d1c245826ce6d699e91795fcd7ee32e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474330"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756863"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C# w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu. Umożliwia także specyfikatory formatu w **Immediate** okna, **polecenia** okna w [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w systemie windows źródła. Jeśli zostanie wstrzymana na wyrażeniu w oknach, wyniki będą wyświetlane w etykietki danych. Etykietki danych będzie odzwierciedlać specyfikator formatu wyświetlania etykietek danych.  
@@ -64,6 +64,7 @@ Można zmienić format wyświetlania wartości w **czujki** okna używanie specy
 |dynamic|Wyświetla określony obiekt przy użyciu widoku dynamicznego|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla widok dynamiczny|  
 |h|Szesnastkowa liczba całkowita|61541|0x0000F065|  
 |nq|Ciąg zawierający nie oferty|"Mój ciągu"|Moje ciągu|  
+|nse|Określa zachowanie, nie formatu. Oblicza wyrażenie z "Żadnych efektów ubocznych". Jeśli wyrażenie nie mogą być interpretowane tylko można rozwiązać przez ocenę (np. wywołanie funkcji), zamiast tego zostanie wyświetlony błąd.|Brak|Brak|
 |hidden|Wyświetla wszystkie publiczne i niepubliczne elementy członkowskie|Wyświetla publiczne elementy członkowskie|Wyświetla wszystkie elementy członkowskie|  
 |nieprzetworzone|Wyświetla elementu wyświetlaną w węźle elementu raw. Prawidłowy na tylko obiekty serwera proxy.|Słownik\<T >|Pierwotny widok słownika\<T >|  
 |wyniki|Używany ze zmienną typu, który implementuje interfejs IEnumerable lub IEnumerable\<T >, zazwyczaj wynikiem wyrażenia zapytania. Wyświetla tylko elementy członkowskie, które zawierają wyniku zapytania.|Wyświetla wszystkie elementy członkowskie.|Wyświetla elementy Członkowskie spełniają warunki zapytania.|  

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3a5cebc3cb04872ff9266a2fa404b261a32c2d6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748960"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757100"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 TableAdapters zapewniają komunikację pomiędzy aplikacją i bazą danych. Łączą się z bazy danych, uruchom zapytania lub procedur składowanych i zwrócenie danych nowej tabeli lub wypełnienia istniejące <xref:System.Data.DataTable> z zwróconych danych. TableAdapters może także wysłać zaktualizowane dane z aplikacji w bazie danych.
@@ -32,7 +32,7 @@ TableAdapters są tworzone automatycznie podczas wykonywania jednej z następuj�
 
 -   Przeciągnij obiekty z **Eksploratora serwera** do **Projektant obiektów Dataset**.
 
-Można również utworzyć nowy obiekt TableAdapter i skonfiguruj ją ze źródłem danych, przeciągając TableAdapter z przybornika do pustego regionu w **Projektant obiektów Dataset** powierzchni.
+Można również utworzyć nowy obiekt TableAdapter i skonfiguruj ją ze źródłem danych, przeciągając TableAdapter z **przybornika** pusty regionu w **Projektant obiektów Dataset** powierzchni.
 
 Aby obejrzeć wprowadzenie do TableAdapters, zobacz [wypełnienia zestawów danych przy użyciu TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -98,11 +98,11 @@ Poniższy przykład przedstawia sposób wywołania dodatkowe kwerendę o nazwie 
 -   Jeśli edytujesz istniejące zapytanie TableAdapter, kliknij prawym przyciskiem myszy kwerendę, a następnie wybierz **Konfigurowanie** z menu skrótów.
 
     > [!NOTE]
-    >  Prawym przyciskiem myszy główne zapytanie TableAdapter spowoduje zmianę konfiguracji TableAdapter i <xref:System.Data.DataTable> schematu. Jednak prawym przyciskiem myszy dodatkowych zapytań w TableAdapter, konfiguruje wybrane zapytanie. **TableAdapter Kreator konfiguracji** ponownie konfiguruje definicji TableAdapter, podczas gdy Kreator konfiguracji zapytania TableAdapter ponownie konfiguruje wybrane zapytanie.
+    >  Prawym przyciskiem myszy główne zapytanie TableAdapter spowoduje zmianę konfiguracji TableAdapter i <xref:System.Data.DataTable> schematu. Jednak prawym przyciskiem myszy dodatkowych zapytań w TableAdapter, konfiguruje wybrane zapytanie. **TableAdapter Kreator konfiguracji** ponownie konfiguruje definicji TableAdapter, podczas gdy **Kreator konfiguracji zapytania TableAdapter** ponownie konfiguruje wybrane zapytanie.
 
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Aby dodać zapytanie globalne do TableAdapter
 
--   *Zapytania globalne* zapytań SQL, które zwraca pojedynczą wartość (skalarną) lub brak wartości. Zwykle funkcje globalne wykonywać operacje bazy danych, takie jak usuwa operacji wstawienia, aktualizacje. Agregować one również informacje, takie jak liczba klientów w tabeli lub sumę opłat dla wszystkich elementów w określonej kolejności.
+-   Zapytania globalne są zapytania SQL, które zwraca pojedynczą wartość (skalarną) lub brak wartości. Zwykle funkcje globalne wykonywania operacji bazy danych, takich jak wstawienia, aktualizacje i usunięcia. Agregować one również informacje, takie jak liczba klientów w tabeli lub sumę opłat dla wszystkich elementów w określonej kolejności.
 
      Dodawanie zapytań globalnych przeciągając **zapytania** obiekt z **DataSet** karty **przybornika** na pustym obszarem **Projektant obiektów Dataset**.
 

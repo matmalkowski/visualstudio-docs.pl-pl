@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a4c1b31769387470d58f27a060d4e3ec7ae70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68259200bbd89f851e75a5ca097b248153a2399e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972062"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757552"
 ---
-# <a name="confirm-activity-designer"></a>Upewnij się, Projektant działań
+# <a name="confirm-activity-designer"></a>Confirm, projektant działań
 
 **Potwierdź** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Confirm> działania.
 
@@ -29,7 +29,7 @@ ms.locfileid: "31972062"
  <xref:System.Activities.Statements.CompensationToken> Określonego przez <xref:System.Activities.Statements.Compensate.Target%2A> umożliwia jawnie potwierdzić lub kompensacji <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> z <xref:System.Activities.Statements.CompensableActivity> zostało pomyślnie ukończone.
 
 ### <a name="using-the-confirm-activity-designer"></a>Przy użyciu potwierdzić Projektant działań
- **Potwierdź** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **Potwierdź** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
  **Potwierdź** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Confirm> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> o potwierdzenie. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowany w nagłówku **Potwierdź** Projektant działań lub **DisplayName** pola siatki właściwości.
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c717cc1bc744438afd277e5f154fdcd8852e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a837e41a3aca165f638be5adb578728e9f6d91e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568439"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755788"
 ---
 # <a name="warning-task"></a>Warning — Zadanie
 Dzienniki ostrzeżenie podczas kompilacji w oparciu obliczane instrukcji warunkowej.  
@@ -43,7 +43,7 @@ Dzienniki ostrzeżenie podczas kompilacji w oparciu obliczane instrukcji warunko
 ## <a name="remarks"></a>Uwagi  
  `Warning` Zadanie pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów, aby sprawdzić obecność wymaganej konfiguracji lub właściwości przed wykonaniem następnego kroku kompilacji.  
   
- Jeśli `Condition` parametr `Warning` daje w wyniku zadania `true`, wartość `Text` parametru jest rejestrowana i kontynuuje wykonywanie kompilacji. Jeśli `Condition` parametru nie nie exisit, tekst ostrzeżenie jest rejestrowane. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Jeśli `Condition` parametr `Warning` daje w wyniku zadania `true`, wartość `Text` parametru jest rejestrowana i kontynuuje wykonywanie kompilacji. Jeśli `Condition` parametr nie istnieje, tekst ostrzeżenie jest rejestrowane. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
  Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
   

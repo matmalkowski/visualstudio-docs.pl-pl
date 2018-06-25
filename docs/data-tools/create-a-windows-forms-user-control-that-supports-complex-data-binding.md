@@ -16,18 +16,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e48e6a3a5694a518f30b3d9ec749d01b1e7127b8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b0189682576c495d031cf160261e16fd920a1615
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746507"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758384"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie formantu użytkownika formularzy systemu Windows obsługującego złożone powiązanie danych
 
 Wyświetlanie danych w formularzach w aplikacjach systemu Windows, można wybrać istniejących formantów z **przybornika**, lub jeśli aplikacja wymaga funkcji, które nie jest dostępna w standardowych kontrolek, mogą tworzyć niestandardowe kontrolki. W tym przewodniku przedstawiono sposób tworzenia formant, który implementuje <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> zawierają `DataSource` i `DataMember` właściwości, które mogą być powiązane z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.DataGridView> lub <xref:System.Windows.Forms.ListBox>.
 
-Aby uzyskać więcej informacji o kontroli, zobacz [opracowywanie formantów formularzy systemu Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Aby uzyskać więcej informacji o kontroli, zobacz [formanty tworzenie formularzy systemu Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
 Podczas tworzenia formantów w scenariuszach wiązania danych należy implementować jeden z następujących atrybutów wiązania z danymi:
 
@@ -59,11 +59,11 @@ W tym przewodniku przedstawiono sposób:
 
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
-1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
+1. Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB w ramach **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
 
 1. Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -71,7 +71,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
     1. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
 
-       Po pewnym czasie zapytanie kończy wykonywanie i utworzeniu bazy danych Northwind.
+       Po pewnym czasie zakończeniu zapytania i utworzeniu bazy danych Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji formularzy systemu Windows
 
@@ -79,7 +79,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 ### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt dla systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 1. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -180,7 +180,7 @@ Przeciągnij głównym **klientów** węzła z **źródeł danych** okna na form
 
 ### <a name="to-run-the-application"></a>Aby uruchomić aplikację
 
-Naciśnij klawisz F5, aby uruchomić aplikację.
+Naciśnij klawisz **F5** do uruchomienia aplikacji.
 
 ## <a name="next-steps"></a>Następne kroki
 

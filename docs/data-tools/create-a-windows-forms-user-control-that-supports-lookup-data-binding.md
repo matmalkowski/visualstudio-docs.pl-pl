@@ -17,19 +17,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 560d19c8efeaa6c1cf206bcb40fa0b11347b4217
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e79d4ba6db70876539aa2e85f0579953937cab14
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746523"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756327"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie formantu użytkownika formularzy systemu Windows, który obsługuje powiązanie danych wyszukiwania
 Wyświetlanie danych w formularzach systemu Windows, można wybrać istniejących formantów z **przybornika**, lub jeśli aplikacja wymaga funkcji niedostępnych w standardowych kontrolek, mogą tworzyć niestandardowe kontrolki. W tym przewodniku przedstawiono sposób tworzenia formant, który implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.LookupBindingPropertiesAttribute> może zawierać trzech właściwości, które można powiązać z danymi. Takie kontrolki są podobne do <xref:System.Windows.Forms.ComboBox>.
 
- Aby uzyskać więcej informacji o kontroli, zobacz [opracowywanie formantów formularzy systemu Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+ Aby uzyskać więcej informacji o kontroli, zobacz [formanty tworzenie formularzy systemu Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
- Podczas tworzenia formantów w scenariuszach wiązania danych należy implementować jeden z następujących atrybutów wiązania z danymi:
+ Podczas tworzenia kontrolki korzystać w scenariuszach wiązania danych, należy implementować jeden z następujących atrybutów wiązania z danymi:
 
 |Użycie atrybutu powiązanie danych|
 |-----------------------------------|
@@ -37,7 +37,7 @@ Wyświetlanie danych w formularzach systemu Windows, można wybrać istniejącyc
 |Wdrożenie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> formantów, takich jak <xref:System.Windows.Forms.DataGridView>, który wyświetlenia listy (lub tabele) danych. Aby uzyskać więcej informacji, zobacz [Tworzenie formantu użytkownika formularzy systemu Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementowanie <xref:System.ComponentModel.LookupBindingPropertiesAttribute> formantów, takich jak <xref:System.Windows.Forms.ComboBox>, wyświetlania list lub tabele danych, ale również musi przedstawiać pojedyncza kolumna lub właściwości. (Ten proces jest opisany na tej stronie wskazówki).|
 
- W tym przewodniku tworzy kontrolkę wyszukiwania, która tworzy powiązanie z danymi z dwóch tabel. W tym przykładzie użyto `Customers` i `Orders` tabele w bazie danych Northwind. Formant wyszukiwania zostanie powiązany `CustomerID` pola `Orders` tabeli. Ta wartość zostanie użyty do wyszukania `CompanyName` z `Customers` tabeli.
+ W tym przewodniku tworzy kontrolkę wyszukiwania, która tworzy powiązanie z danymi z dwóch tabel. W tym przykładzie użyto `Customers` i `Orders` tabele w bazie danych Northwind. Kontrolka wyszukiwania jest powiązana z `CustomerID` pola `Orders` tabeli. Używa tę wartość do wyszukania `CompanyName` z `Customers` tabeli.
 
  W tym przewodniku przedstawiono sposób:
 
@@ -59,11 +59,11 @@ Wyświetlanie danych w formularzach systemu Windows, można wybrać istniejącyc
 
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W **Instalator programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB w ramach **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -71,14 +71,14 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
     3. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
 
-       Po pewnym czasie zapytanie kończy wykonywanie i utworzeniu bazy danych Northwind.
+       Po pewnym czasie zakończeniu zapytania i utworzeniu bazy danych Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
  Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt dla systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -120,7 +120,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 3.  Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Utwórz źródło danych z bazy danych
-Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła danych**kreatora, na podstawie `Customers` i `Orders` tabele w bazie danych Northwind.
+Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła danych** kreatora, na podstawie `Customers` i `Orders` tabele w bazie danych Northwind.
 
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
@@ -186,10 +186,10 @@ Spowoduje to utworzenie źródła danych przy użyciu **konfiguracji źródła d
 
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację
 
--   Naciśnij klawisz F5, aby uruchomić aplikację.
+-   Naciśnij klawisz **F5** do uruchomienia aplikacji.
 
 -   Przejdź przez niektóre rekordy i sprawdź, czy `CompanyName` pojawia się w `LookupBox` formantu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

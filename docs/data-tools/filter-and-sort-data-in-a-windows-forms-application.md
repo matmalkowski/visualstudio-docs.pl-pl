@@ -1,5 +1,5 @@
 ---
-title: Filtrowanie i sortowanie danych w aplikacji formularzy systemu Windows
+title: Filtrowanie i sortowanie danych w aplikacji Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,17 +21,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f693e0a370a05508753dc6881b99157c21ea47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924972"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757598"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrowanie i sortowanie danych w aplikacji formularzy systemu Windows
+# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrowanie i sortowanie danych w aplikacji Windows Forms
 Filtrowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Filter%2A> właściwości wyrażenia ciągu, która zwraca odpowiednie rekordy.
 
- Sortowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Sort%2A> nazwa kolumny dla właściwości należy do sortowania; Dołącz `DESC` do sortowania w kolejności malejącej, lub Dołącz `ASC` do sortowania w porządku rosnącym.
+ Sortowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Sort%2A> dla właściwości Nazwa kolumny, na którym mają być sortowane; Dołącz `DESC` do sortowania w kolejności malejącej, lub Dołącz `ASC` do sortowania w porządku rosnącym.
 
 > [!NOTE]
 >  Jeśli aplikacja nie używać <xref:System.Windows.Forms.BindingSource> składników, można filtrować i sortować dane przy użyciu <xref:System.Data.DataView> obiektów. Aby uzyskać więcej informacji, zobacz [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).

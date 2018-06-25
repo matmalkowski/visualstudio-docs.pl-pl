@@ -1,5 +1,5 @@
 ---
-title: Tworzenie parametrycznych zapytań TableAdapter
+title: Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d3985cc8faf76c5c5767090abd5b87101ddbb45
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fe77d3622e9c41d98ff89972e522bb25aae58b9d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924199"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756013"
 ---
-# <a name="create-parameterized-tableadapter-queries"></a>Tworzenie parametrycznych zapytań TableAdapter
+# <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 Uruchamianie zapytania parametrycznego zwraca dane, które spełniają warunki klauzuli WHERE, w ramach zapytania. Na przykład można parametryzacja listę klientów, aby wyświetlić tylko w przypadku klientów z niektórych miasta przez dodanie `WHERE City = @City` na końcu instrukcji SQL, które zwraca listę klientów.
 
  Tworzenie parametrycznych zapytań TableAdapter w **Projektant obiektów Dataset**. Można je również utworzyć w aplikacji systemu Windows z **parametryzacja źródła danych** na **danych** menu. **Parametryzacja źródła danych** polecenie tworzy formantów w formularzu gdzie wartości parametrów wejściowych i uruchom zapytanie.
@@ -65,7 +65,7 @@ Uruchamianie zapytania parametrycznego zwraca dane, które spełniają warunki k
     > [!NOTE]
     >  Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, zaznacz kontrolkę w formularzu, że wyświetla źródła danych, należy dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz go. Jeśli dane są wyświetlane w formularzu w pojedynczych formantów, wybierz wszystkie kontrolki powiązania danych.
 
-3.  W **tabeli źródła danych wybierz** obszaru, wybierz tabelę, który chcesz dodać parametryzacja do.
+3.  W **tabeli źródła danych wybierz** obszaru, zaznacz tabelę, do której chcesz dodać parametry.
 
 4.  Wpisz nazwę w **nową nazwę zapytania** Jeśli tworzysz nową kwerendę.
 

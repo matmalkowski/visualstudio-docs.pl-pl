@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30536dae7e0da76f0252240b98f1ed5af5f28916
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920300"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758287"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Nie można pobrać informacji o schemacie dla obiektu bazy danych \<nazwa obiektu >
 
-Ten komunikat jest zwykle wyświetlany, gdy obiekt w **Eksploratora Explorer/bazy danych serwera** skopiowany do Schowka, usunięte z bazy danych i następnie wkleić do projektanta. Ponieważ obiekt bazy danych już nie istnieje, zostanie wyświetlony ten komunikat.
+Ten komunikat jest zwykle wyświetlany, gdy obiekt w **Eksploratora serwera** lub **Eksploratora bazy danych** skopiowany do Schowka, usunięte z bazy danych i następnie wkleić do projektanta. Ponieważ obiekt bazy danych już nie istnieje, zostanie wyświetlony ten komunikat.
 
 Aby rozwiązać ten problem, wybierz **OK** aby odrzucić okno dialogowe.
 

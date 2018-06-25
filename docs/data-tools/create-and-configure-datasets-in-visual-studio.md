@@ -13,28 +13,28 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746575"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756035"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 
-A *dataset* jest zestaw obiektów, które przechowują dane z bazy danych w pamięci i obsługuje śledzenia zmian, aby włączyć tworzenia, odczytu, aktualizacji i usuwania (CRUD) operacje na danych bez konieczności być zawsze połączone z bazą danych. Zestawy danych zostały zaprojektowane do prosty *formularzy nad danymi* aplikacji biznesowych. Dla nowych aplikacji należy rozważyć użycie programu Entity Framework do przechowywania i model danych w pamięci. Aby pracować z zestawami danych, należy mieć podstawową wiedzę na temat pojęć bazy danych.
+Zestaw danych to zbiór obiektów, które przechowuje dane z bazy danych w pamięci i obsługuje śledzenia zmian, aby umożliwić tworzenie, odczytu, aktualizacji i usuwania (CRUD) operacje na danych bez konieczności być zawsze połączone z bazą danych. Zestawy danych zostały zaprojektowane do prosty *formularzy nad danymi* aplikacji biznesowych. Dla nowych aplikacji należy rozważyć użycie programu Entity Framework do przechowywania i model danych w pamięci. Aby pracować z zestawami danych, należy mieć podstawową wiedzę na temat pojęć bazy danych.
 
-Można utworzyć typu <xref:System.Data.DataSet> klasy w Visual Studio w czasie projektowania przy użyciu **Kreator konfiguracji źródła danych**. Informacje o tworzeniu zestawów danych programowo, zobacz [tworzenia zestawu danych (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+Można utworzyć typu <xref:System.Data.DataSet> klasy w Visual Studio w czasie projektowania przy użyciu **Kreator konfiguracji źródła danych**. Informacje o tworzeniu zestawów danych programowo, zobacz [Tworzenie zestawu danych (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Utwórz nowy zestaw danych za pomocą Kreatora konfiguracji źródła danych
 
 1.  Na **projektu** menu, kliknij przycisk **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.
 
-2.  Wybierz typ źródła danych, które będą łączyć się.
+2.  Wybierz typ źródła danych, z którym będą łączyć.
 
      ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
-3.  W przypadku baz danych wybierz bazę danych lub bazy danych, które będą źródła danych dla zestawu danych.
+3.  Wybierz bazę danych lub bazy danych, które będą źródła danych dla zestawu danych.
 
      ![Źródło danych wybierz połączenie](../data-tools/media/data-source-choose-a-connection.png)
 
@@ -44,11 +44,11 @@ Można utworzyć typu <xref:System.Data.DataSet> klasy w Visual Studio w czasie 
 
 5.  Kliknij przycisk **Zakończ**.
 
-6.  Zestaw danych jest wyświetlany jako węzeł **Eksploratora rozwiązań**:
+6.  Zestaw danych jest wyświetlany jako węzeł **Eksploratora rozwiązań**.
 
      ![Zestaw danych w Eksploratorze rozwiązań](../data-tools/media/dataset-in-solution-explorer.png)
 
-     Kliknij ten węzeł, a zestaw danych zostanie wyświetlony w **Projektant obiektów DataSet**. Należy pamiętać, że każdy tabeli w zestawie danych nie ma skojarzonego obiektu TableAdapter, która jest reprezentowana w dolnej części. Karta tabeli jest używany do wypełniania zestawu danych i opcjonalnie należy wysyłać polecenia do bazy danych.
+     Kliknij ten węzeł, a zestaw danych zostanie wyświetlony w **Projektant obiektów DataSet**. Należy pamiętać, że każda tabela w zestawie danych ma skojarzoną `TableAdapter` obiektu, który odpowiada na dole. Karta tabeli jest używany do wypełniania zestawu danych i opcjonalnie należy wysyłać polecenia do bazy danych.
 
      ![Projektant obiektów DataSet](../data-tools/media/dataset-designer.png)
 
@@ -86,7 +86,7 @@ W tej procedurze pokazano, jak dodać tabelę z tej samej bazy danych, który zo
 
 2.  Przeciągnij <xref:System.Data.DataTable> klasę z **DataSet** karcie **przybornika** na **Projektant obiektów Dataset**.
 
-3.  Dodawanie kolumn do definiowania tabeli danych. Kliknij prawym przyciskiem myszy w tabeli, a następnie wybierz pozycję **Dodaj > kolumny**. Użyj **właściwości** okno, aby ustawić typ danych kolumny i klucz, jeśli to konieczne.
+3.  Dodawanie kolumn do definiowania tabeli danych. Kliknij prawym przyciskiem myszy w tabeli, a następnie wybierz pozycję **Dodaj** > **kolumny**. Użyj **właściwości** okno, aby ustawić typ danych kolumny i klucz, jeśli to konieczne.
 
 4.  Tabele autonomicznej konieczne wdrożenie `Fill` logikę w tabelach autonomicznej tak, aby wypełnić je danymi. Uzyskać informacji o Wypełnianie tabel danych autonomicznych, zobacz [wypełnianie zestawu danych z element DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2315c27bc0a35ac1dc839b5fd98003105d92bd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977243"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756679"
 ---
-# <a name="parallel-activity-designer"></a>Projektant działań równoległych
+# <a name="parallel-activity-designer"></a>Parallel, projektant działań
 
 <xref:System.Activities.Statements.Parallel> Działania jest wykonywany współbieżnie zbiór działań podrzędnych.
 
@@ -31,7 +31,7 @@ ms.locfileid: "31977243"
 
 ### <a name="using-the-parallel-activity-designer"></a>Przy użyciu narzędzia Projektant działania równoległego
 
-**Równoległych** Projektant działań można znaleźć w **przepływ sterowania** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+Dostęp **równoległych** Projektant działań w **przepływ sterowania** kategorii **przybornika**.
 
 **Równoległych** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie na przykład projektantów działań zazwyczaj są umieszczone wewnątrz **Sekwencji** Projektant działań. Po usunięcie go w Projektancie przepływów pracy, tworzy <xref:System.Activities.Statements.Parallel> działania, która domyślnie zawiera <xref:System.Activities.Activity.DisplayName%2A> z **równoległych**
 

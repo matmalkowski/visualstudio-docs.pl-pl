@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c655987f3cafd77b284d9d11eafefd56a188fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978008"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757235"
 ---
 # <a name="flowswitcht-activity-designer"></a>Elementu FlowSwitch\<T > Projektant działań
 
@@ -32,7 +32,7 @@ ms.locfileid: "31978008"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Przy użyciu elementu FlowSwitch\<T > Projektant działań
 
-**Elementu FlowSwitch\<T >** Projektant działań można znaleźć w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **Przybornika** karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+**Elementu FlowSwitch\<T >** Projektant działań można znaleźć w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **Przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
 **Elementu FlowSwitch\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy w ramach **schemat blokowy** Projektant działań. Użyj **wybierz typy** okna do określania typu (skojarzone w kodzie z <xref:System.Activities.Statements.FlowSwitch%601> przez jego parametru ogólnego) uzyskane z obliczenia <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Ta procedura powoduje utworzenie <xref:System.Activities.Statements.FlowSwitch%601> działania z etykietą **przełącznika** w <xref:System.Activities.Statements.Flowchart> działania. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> Można wpisać w **wyrażenie** pole **właściwości** okna, klikając, gdy tekst podpowiedzi mówi "Wprowadź wyrażenia języka VB.".
 

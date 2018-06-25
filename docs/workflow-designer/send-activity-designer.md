@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751519fe2cba331f0de08b492505e2fba568fe8b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978352"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758500"
 ---
-# <a name="send-activity-designer"></a>Projektant działań wysyłania
+# <a name="send-activity-designer"></a>Send, projektant działań
 
 **Wysyłania** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Send> działania.
 
@@ -28,16 +28,16 @@ ms.locfileid: "31978352"
  A <xref:System.ServiceModel.Activities.Send> to działanie służy do wysyłania komunikatu do usługi. A <xref:System.ServiceModel.Activities.ReceiveReply> działania może być powiązana z <xref:System.ServiceModel.Activities.Send> działania, który odbiera wiadomości w ramach wymiany komunikatów żądań i odpowiedzi na kliencie.
 
 ### <a name="using-the-send-activity-designer"></a>Przy użyciu narzędzia Projektant działań wysyłania
- **Wysyłania** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** Karta w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **Wysyłania** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Send> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z wysyłania. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **wysyłania** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dostęp **wysyłania** Projektant działań w **wiadomości** kategorii **przybornika**. **Wysyłania** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Send> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z wysyłania. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **wysyłania** Projektant działań lub **DisplayName** pola siatki właściwości.
 
- Można utworzyć <xref:System.ServiceModel.Activities.ReceiveReply> działania i powiązać ją z wybranym <xref:System.ServiceModel.Activities.Send> działania, kliknij prawym przyciskiem myszy **wysyłania** działania projektanta, kliknij przycisk **utworzyć ReceiveReply** elementu w menu kontekstowym i **ReceiveReplyForSend** projektanta pojawia się poniżej **wysyłania** projektanta. <xref:System.ServiceModel.Activities.ReceiveReply> Działania jest działaniem, który odbiera wiadomości w ramach wymiany komunikatów żądań i odpowiedzi na kliencie. Mogą być skonfigurowane przy użyciu **ReceiveReplyForSend** projektanta.
+Można utworzyć <xref:System.ServiceModel.Activities.ReceiveReply> działania i powiązać ją z wybranym <xref:System.ServiceModel.Activities.Send> działania, kliknij prawym przyciskiem myszy **wysyłania** działania projektanta, kliknij przycisk **utworzyć ReceiveReply** elementu w menu kontekstowym i **ReceiveReplyForSend** projektanta pojawia się poniżej **wysyłania** projektanta. <xref:System.ServiceModel.Activities.ReceiveReply> Działania jest działaniem, który odbiera wiadomości w ramach wymiany komunikatów żądań i odpowiedzi na kliencie. Mogą być skonfigurowane przy użyciu **ReceiveReplyForSend** projektanta.
 
- Alternatywnie **SendAndReceiveReply** Projektant szablonów w **wiadomości** kategorii **przybornika** można utworzyć pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Send>i <xref:System.ServiceModel.Activities.ReceiveReply> działań. Aby uzyskać więcej informacji o wykorzystaniu **SendAndReceiveReply** i **ReceiveReplyForSend** szablony, zobacz [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tematu.
+Alternatywnie **SendAndReceiveReply** Projektant szablonów w **wiadomości** kategorii **przybornika** można utworzyć pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Send>i <xref:System.ServiceModel.Activities.ReceiveReply> działań. Aby uzyskać więcej informacji o wykorzystaniu **SendAndReceiveReply** i **ReceiveReplyForSend** szablony, zobacz [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tematu.
 
 ### <a name="the-send-activity-properties"></a>Właściwości działania wysyłania
- W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Send> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy.
+
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Send> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

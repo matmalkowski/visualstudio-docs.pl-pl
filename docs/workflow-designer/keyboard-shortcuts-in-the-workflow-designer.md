@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977647"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756597"
 ---
-# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływów pracy
+# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 
-Wszystkie podstawowe funkcje projektanta przepływów pracy systemu Windows mogą uzyskiwać klawiatury.
+Wszystkie podstawowe funkcje projektanta przepływów pracy mogą uzyskiwać klawiatury.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie po projektanta przepływów pracy za pomocą klawiatury
 
-Visual Studio 2010 skróty globalne i debugowania skróty dotyczą projektanta przepływów pracy. Ponadto liczba projektanta przepływów pracy określonych skróty klawiaturowe zostały utworzone. W programie Visual Studio 2010 wszystkie skróty klawiaturowe mogą być mapowane ponownie. Jednak w aplikacji rehosted te skróty klawiaturowe są zapisane na stałe.
+W programie Visual Studio skróty globalne i debugowania skróty dotyczą projektanta przepływów pracy. Ponadto liczba projektanta przepływów pracy określonych skróty klawiaturowe zostały utworzone. W programie Visual Studio wszystkie skróty klawiaturowe mogą być mapowane ponownie. Jednak w aplikacji rehosted te skróty klawiaturowe są zapisane na stałe.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe projektanta przepływów pracy
 
@@ -49,7 +49,7 @@ W poniższej tabeli przedstawiono domyślne skróty klawiaturowe przypisane do p
 
 ### <a name="flowchart"></a>Schemat blokowy
 
-Na poniższej liście przedstawiono gestów użyty do utworzenia schematu blokowego przez klawiatury. Tak jak pozostałe projektanta przepływów pracy działania są dodawane do powierzchni projektanta przy użyciu skrótów globalne przybornika wyposażone w Visual Studio 2010.
+Na poniższej liście przedstawiono gestów użyty do utworzenia schematu blokowego przez klawiatury. Tak jak pozostałe projektanta przepływów pracy działania są dodawane do powierzchni projektanta przy użyciu skrótów globalne przybornika dostarczone z programem Visual Studio.
 
 - Aby przenieść działanie, wybierz działanie, a następnie użyj klawiszy strzałek, aby zmienić jego położenie.
 
@@ -88,4 +88,4 @@ Domyślnie domyślne skróty klawiaturowe do edycji tekstu w języku Visual Basi
    - Cofnij
    - Wykonaj ponownie
 
-- Aby ponownie zamapować skróty klawiaturowe dla wyrażenia poleceń edycji w Projektancie przepływów pracy w Visual Studio 2010, należy edytować skróty w zakresie projektanta przepływów pracy. Zmiany wprowadzone w zakresie edytora tekstów nie automatycznie dotyczą projektanta przepływów pracy. Jeśli chcesz ponownie zamapować skróty w obu miejscach, należy zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+- Aby ponownie zamapować skróty klawiaturowe dla wyrażenia poleceń edycji w Projektancie przepływów pracy w programie Visual Studio, Edytuj skróty w zakresie projektanta przepływów pracy. Zmiany wprowadzone w zakresie edytora tekstów nie automatycznie dotyczą projektanta przepływów pracy. Jeśli chcesz ponownie zamapować skróty w obu miejscach, należy zastosować zmiany dwukrotnie (raz dla każdego zakresu).

@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766922"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757722"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Porady: Dodawanie jednostki do modelu
   Aby utworzyć jednostkę, Dodaj formant jednostki z programu Visual Studio **przybornika** do projektanta łączności danych biznesowych (BDC).  
@@ -57,6 +57,6 @@ ms.locfileid: "34766922"
  [Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)  
+ [Porady: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
  

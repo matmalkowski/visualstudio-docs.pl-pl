@@ -12,20 +12,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975862"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757717"
 ---
-# <a name="state-activity-designer"></a>Projektant działań stanu
+# <a name="state-activity-designer"></a>State, projektant działań
 
 A <xref:System.Activities.Statements.State> reprezentuje stan, w którym mogą mieć automatu stanów.
 
 ## <a name="using-the-state-activity-designer"></a>Przy użyciu narzędzia Projektant stanu działania
 
-Aby dodać <xref:System.Activities.Statements.State> do przepływu pracy, przeciągnij **stanu** Projektant działań z **automatu stanów** sekcji **przybornika** i upuść ją na do <xref:System.Activities.Statements.StateMachine> działanie na powierzchni projektanta przepływów pracy systemu Windows. A <xref:System.Activities.Statements.State> działania mogą być upuszczone na <xref:System.Activities.Statements.StateMachine> i przejść, dodane później; lub przejście może zostać utworzony jako <xref:System.Activities.Statements.State> działanie zostało porzucone. Aby dodać <xref:System.Activities.Statements.State> działania i utworzyć przejście w jednym kroku, przeciągnij **stanu** działania z **automatu stanów** sekcji **przybornika** i aktywuj go innym Stan w Projektancie przepływów pracy. Gdy przeciąganego <xref:System.Activities.Statements.State> znajduje się nad innym <xref:System.Activities.Statements.State>, cztery trójkąty pojawi się wokół innych <xref:System.Activities.Statements.State>. Jeśli <xref:System.Activities.Statements.State> jest przerywane na jedną z czterech trójkąty, jest ona dodawana do automatu stanów i utworzeniu przejście ze źródła <xref:System.Activities.Statements.State> porzuconych docelowego <xref:System.Activities.Statements.State>. Aby uzyskać więcej informacji, zobacz [przejścia](../workflow-designer/transition-activity-designer.md).
+Aby dodać <xref:System.Activities.Statements.State> do przepływu pracy, przeciągnij **stanu** Projektant działań z **automatu stanów** sekcji **przybornika** i upuść ją na do <xref:System.Activities.Statements.StateMachine> działanie na powierzchni projektanta przepływów pracy. A <xref:System.Activities.Statements.State> działania mogą być upuszczone na <xref:System.Activities.Statements.StateMachine> i przejść, dodane później; lub przejście może zostać utworzony jako <xref:System.Activities.Statements.State> działanie zostało porzucone. Aby dodać <xref:System.Activities.Statements.State> działania i utworzyć przejście w jednym kroku, przeciągnij **stanu** działania z **automatu stanów** sekcji **przybornika** i aktywuj go innym Stan w Projektancie przepływów pracy. Gdy przeciąganego <xref:System.Activities.Statements.State> znajduje się nad innym <xref:System.Activities.Statements.State>, cztery trójkąty pojawi się wokół innych <xref:System.Activities.Statements.State>. Jeśli <xref:System.Activities.Statements.State> jest przerywane na jedną z czterech trójkąty, jest ona dodawana do automatu stanów i utworzeniu przejście ze źródła <xref:System.Activities.Statements.State> porzuconych docelowego <xref:System.Activities.Statements.State>. Aby uzyskać więcej informacji, zobacz [przejścia](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Właściwości stanu aktywności w Projektancie przepływów pracy
 
@@ -42,4 +42,4 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.State> wła
 
 - [Obiekt StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [Stan końcowy](../workflow-designer/finalstate-activity-designer.md)
-- [przejścia](../workflow-designer/transition-activity-designer.md)
+- [Przejścia](../workflow-designer/transition-activity-designer.md)

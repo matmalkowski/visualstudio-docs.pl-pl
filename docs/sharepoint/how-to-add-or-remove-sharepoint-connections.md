@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 117c2c95eb9b7ea92f41e72fa2ecca9a4e713c93
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768186"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755418"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Porady: Dodawanie lub usuwanie połączeń SharePoint
   W Eksploratorze serwera umożliwia przeglądanie witryn programu SharePoint, a także połączenia danych. Jednak przed przystąpieniem do przeglądania zawartości witryny programu SharePoint należy dodać go do **połączeń SharePoint** węzła.  

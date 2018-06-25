@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 533deb22f37af012ab9c4fd3a8d369edad64ce06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766831"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756574"
 ---
 # <a name="how-to-add-a-resource-file"></a>Porady: Dodawanie pliku zasobów
-  Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów węzła rozwiązania, a funkcja węzłów w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz [lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+  Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów węzła rozwiązania, a funkcja węzłów w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint lokalizowanie](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Aby dodać plik zasobów globalnych rozwiązania programu SharePoint  
   
@@ -56,6 +56,6 @@ ms.locfileid: "34766831"
 3.  Gdy **Edytor zasobów** otworzy się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.  
   
 ## <a name="see-also"></a>Zobacz także
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
  

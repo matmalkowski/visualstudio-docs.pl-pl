@@ -15,15 +15,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf9869c81100352d97b168a1dc0694d9fcd010f4
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 03dca206f38d98c44e711e945f5d4015142f0af9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235001"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758410"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projektów baz danych i aplikacji warstwy danych w programie Visual Studio
-Projektów bazy danych służy do tworzenia nowych baz danych, nowych aplikacji warstwy danych (DAC) oraz do aktualizowania istniejących baz danych oraz aplikacji warstwy danych. Zarówno projektów bazy danych, jak i projektów DAC umożliwiają dotyczą metody zarządzania projektu i kontroli wersji wysiłków programowanie bazy danych w podobny sposób zastosowania tych metod do kodu zarządzanego i natywnego. Może ułatwić zarządzanie zmianami do baz danych i serwerów baz danych przez utworzenie zespołu deweloperów *projektu DAC*, *projekt bazy danych*, lub *Projekt serwera* i umieścić go w ramach kontroli wersji. Członkowie zespołu można zapoznać się z plików podejmowaniu, tworzenie i testowanie zmian w *izolowane środowisko*, lub piaskownicy przed udostępnieniem je zespołowi. Aby zapewnić jakości kodu, zespołu Zakończ i przetestować w środowisku przemieszczania wszystkich zmian dla konkretnej wersji bazy danych, przed wdrożeniem zmian w środowisku produkcyjnym.
+Projektów bazy danych służy do tworzenia nowych baz danych, nowych aplikacji warstwy danych (DAC) oraz do aktualizowania istniejących baz danych oraz aplikacji warstwy danych. Zarówno projektów bazy danych, jak i projektów DAC umożliwiają dotyczą metody zarządzania projektu i kontroli wersji wysiłków programowanie bazy danych w podobny sposób zastosowania tych metod do kodu zarządzanego i natywnego. Możesz pomóc zespół deweloperów zarządzania zmianami do baz danych i serwerów baz danych, tworząc projekt aplikacji DAC, projekt bazy danych lub Projekt serwera i umieścić go w ramach kontroli wersji. Członkowie zespołu można następnie wyewidencjonować pliki, aby upewnij, tworzenie i testowanie zmian w środowisko projektowe izolowanej lub piaskownicy, przed udostępnieniem im z zespołem. Aby zapewnić jakości kodu, zespołu Zakończ i przetestować w środowisku przemieszczania wszystkich zmian dla konkretnej wersji bazy danych, przed wdrożeniem zmian w środowisku produkcyjnym.
 
 Aby uzyskać listę funkcji bazy danych, które są obsługiwane przez aplikacje warstwy danych, zobacz [funkcje obsługiwane w aplikacji warstwy danych](http://go.microsoft.com/fwlink/?LinkId=164239) w witrynie sieci web firmy Microsoft. Jeśli używasz funkcji, które nie są obsługiwane przez aplikacje warstwy danych w bazie danych, należy zamiast tego użyć projekt bazy danych do zarządzania zmianami w bazie danych.
 

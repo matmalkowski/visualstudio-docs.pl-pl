@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0302ef4c974179619800ece37fa7650ea2b4ebd0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976705"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755827"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Projektant działań
 
@@ -29,7 +29,7 @@ ms.locfileid: "31976705"
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Przy użyciu AddToCollection\<T > Projektant działań
 
-**AddToCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+**AddToCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
 **AddToCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczone, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucanie **AddToCollection\<T >** tworzy Projektant działań <xref:System.Activities.Statements.AddToCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **AddToCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
 

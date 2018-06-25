@@ -12,27 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aedee945ab19201406ce26183db4e2f3519263
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977962"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755940"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Projektant działań
 
 **RemoveFromCollection\<T >** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.RemoveFromCollection%601> działania.
 
 ## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > działania
- <xref:System.Activities.Statements.RemoveFromCollection%601> Działania usuwa określony element z danej kolekcji.
+
+<xref:System.Activities.Statements.RemoveFromCollection%601> Działania usuwa określony element z danej kolekcji.
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Przy użyciu RemoveFromCollection\<T > Projektant działań
- **RemoveFromCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu **Przybornika** karty w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **RemoveFromCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań zwykle są umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **RemoveFromCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
+Dostęp **RemoveFromCollection\<T >** Projektant działań w **kolekcji** kategorii **przybornika**. **RemoveFromCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań zwykle są umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **RemoveFromCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.RemoveFromCollection%601> właściwości oraz opis korzystania z nich w projektancie.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.RemoveFromCollection%601> właściwości oraz opis korzystania z nich w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

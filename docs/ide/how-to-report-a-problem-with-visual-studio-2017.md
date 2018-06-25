@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326144"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755927"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
@@ -38,9 +38,15 @@ Aby zgłosić problem dla programu Visual Studio, konieczne jest zainicjowanie r
 
    ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png)
 
-   Po zalogowaniu, możesz zgłosić problem, który występują, lub w przypadku głosu lub komentarz na nim. Można również głosu lub opublikowane komentarz na inny problem, który zostanie wyświetlony.
+   Po zalogowaniu, możesz zgłosić problem, który występują. Można również głosu lub opublikowane komentarz na inny problem, który zostanie wyświetlony.
 
-1. Visual Studio udostępnia interfejs do wyszukania problemu i sprawdź, czy inne osoby mają zgłoszone, zbyt. Jeśli ktoś zgłosił go, "góra głos" go, aby poinformować nas.
+1. Po zalogowaniu można wyświetlić z **problemów** i **działania** w **elementów, I wykonaj** ekranu
+
+    ![Elementy, które można wykonać](../ide/media/items-i-follow.png)
+
+1. Visual Studio udostępnia interfejs do wyszukania problemu i sprawdź, czy inne osoby mają zgłoszone go. Jeśli ktoś zgłosił go, "góra głos" go, aby poinformować nas.
+   > [!NOTE]
+   > Aby przejść do wyszukiwania, wprowadź odpowiedni tekst w polu wyszukiwania i kliknij przycisk Enter lub naciśnij ikonę wyszukiwania.
 
    ![Wyszukiwanie i głosów dla podobnych problemów](../ide/media/search-and-vote.png)
 
@@ -86,6 +92,34 @@ Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cen
 1. Poczekaj kilka minut dla programu Visual Studio do gromadzenia i pakiet zarejestrowane informacje.
 
    Aby dowiedzieć się, jakie dane są zbierane, zobacz [dane zbierane](developer-community-privacy.md#data-we-collect).
+
+## <a name="when-further-information-is-needed-need-more-info"></a>Gdy dalsze informacje są potrzebne (należy dowiedzieć się więcej)
+
+Począwszy od wersji 2017 Visual Studio 15,5 cala jest utworzenie nowego przepływu pracy, aby ułatwić użytkownikom zawierają dodatkowe informacje o raporty problemów.
+
+1. Gdy ustawia pracownikiem firmy Microsoft [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) problem do **wymagają więcej informacji o** stanu, każdy użytkownik, który ogłaszanie, Głosowany, a następnie lub na problem pobiera powiadomienie w **Raport A Problem** narzędzia w programie Visual Studio.
+
+   ![Więcej informacji o powiadomień w programie Visual Studio potrzebne](../ide/media/nmi-notification.png)
+
+1. Polecenie **problemów widoku** łącze do filtrowania i sortowania widoku problemów, które wymagają uwagi. Te problemy mają także wskaźnik obok nich, do odróżnienia ich ogólnie wyszukiwania.
+
+1. Polecenie problem, aby wyświetlić szczegóły problemu.
+
+   ![Więcej informacji o powiadomień należy](../ide/media/nmi-details-view.png)
+
+1. Aby wyświetlić **wymagają więcej informacji o** żądań, kliknij przycisk **ich żądania i Odpowiedz** łącze w widoku szczegółów problemu. Okno dialogowe jest wyświetlane żądanie.
+
+   ![Więcej informacji o powiadomień należy](../ide/media/nmi-request.png)
+
+1. Musisz podać więcej informacji, dodając komentarze, załączniki lub kroki rejestrowania. To środowisko jest podobny do raportowania nowy problem lub udostępnia dodatkowe informacje po głosowanie w problem.
+
+1. Żądania pracownikiem firmy Microsoft, otrzyma powiadomienie o dodatkowe informacje, pod warunkiem. Jeśli dysponują wystarczającą ilość informacji do sprawdzania, czy problem stan zmieni się. W przeciwnym razie inżynier wprowadza się nawet dalszych informacji.
+
+   > [!NOTE]
+   > * Odpowiedź, powiadomienie zniknie. W tym miejscu zostanie wyświetlony Baner, który Dziękujemy i ułatwia sposobem zapewnienia nawet więcej informacji.
+   > * Gdy problem zmienia stan, powiadomienie zniknie dla każdej osoby, która jest po wystawieniu.
+   > * Więcej niż jedna osoba może odpowiedzieć na tym samym **wymagają więcej informacji o** żądania.
+   > * Nie ma **wymagają więcej informacji o** przepływu pracy na [społeczność deweloperów](https://developercommunity.visualstudio.com/) po otwarciu bezpośrednio za pomocą przeglądarki sieci web, ale można też podać komentarze i załączniki.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Wyszukaj rozwiązania lub Prześlij opinię
 

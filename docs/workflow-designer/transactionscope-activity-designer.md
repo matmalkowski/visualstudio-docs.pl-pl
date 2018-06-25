@@ -12,27 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c8a5c610492f298d3f2ef6de35444c96f7310f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975888"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755801"
 ---
-# <a name="transactionscope-activity-designer"></a>Projektant działań elementu TransactionScope
+# <a name="transactionscope-activity-designer"></a>TransactionScope, projektant działań
 
 **TransactionScope** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.TransactionScope> działania.
 
 ## <a name="the-transactionscope-activity"></a>Działania TransactionScope
- <xref:System.Activities.Statements.TransactionScope> Działania wykonuje zawarte działanie w ramach jednej transakcji. Zatwierdza transakcji, gdy <xref:System.Activities.Statements.TransactionScope.Body%2A> działania i innych uczestników w transakcji została ukończona pomyślnie.
+
+<xref:System.Activities.Statements.TransactionScope> Działania wykonuje zawarte działanie w ramach jednej transakcji. Zatwierdza transakcji, gdy <xref:System.Activities.Statements.TransactionScope.Body%2A> działania i innych uczestników w transakcji została ukończona pomyślnie.
 
 ### <a name="using-the-transactionscope-activity-designer"></a>Przy użyciu narzędzia Projektant działania TransactionScope
- **TransactionScope** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**  karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **TransactionScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.TransactionScope> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> elementu TransactionScope. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **TransactionScope** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dostęp **TransactionScope** Projektant działań w **transakcji** kategorii **przybornika**. **TransactionScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.TransactionScope> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> elementu TransactionScope. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **TransactionScope** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-transactionscope-properties"></a>Właściwości elementu TransactionScope
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.TransactionScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> i <xref:System.Activities.Statements.TransactionScope.Body%2A> właściwości można edytować na powierzchni projektanta przepływów pracy. Jednak inne właściwości, należy edytować na siatce właściwości.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.TransactionScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> i <xref:System.Activities.Statements.TransactionScope.Body%2A> właściwości można edytować na powierzchni projektanta przepływów pracy. Jednak inne właściwości, należy edytować na siatce właściwości.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

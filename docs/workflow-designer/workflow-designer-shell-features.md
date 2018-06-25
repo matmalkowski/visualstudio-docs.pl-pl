@@ -1,5 +1,5 @@
 ---
-title: Funkcji powłoki projektanta przepływów pracy
+title: Funkcje powłoki Projektanta przepływu pracy
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973711"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757212"
 ---
-# <a name="workflow-designer-shell-features"></a>Funkcji powłoki projektanta przepływów pracy
+# <a name="workflow-designer-shell-features"></a>Funkcje powłoki Projektanta przepływu pracy
 
-Projektant przepływu pracy systemu Windows składa się z trzech głównych obszarów interfejsu użytkownika: powierzchnię projektanta, pasek stron nadrzędnych powyżej i powłoki poniżej. Na pasku stron nadrzędnych, znajduje się w górnej części ekranu, służy do wyświetlania na liście elementów nadrzędnych bieżącego działania głównego. Aby uzyskać więcej informacji, zobacz [porady: użycie nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta, znajduje się w środku ekranu służy do tworzenia przepływów pracy. Powłoki, znajduje się w dolnej części ekranu, zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.
+Projektant przepływów pracy składa się z trzech głównych obszarów interfejsu użytkownika: powierzchnię projektanta, pasek stron nadrzędnych powyżej i powłoki poniżej. Na pasku stron nadrzędnych, znajduje się w górnej części ekranu, służy do wyświetlania na liście elementów nadrzędnych bieżącego działania głównego. Aby uzyskać więcej informacji, zobacz [porady: użycie nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta, znajduje się w środku ekranu służy do tworzenia przepływów pracy. Powłoki, znajduje się w dolnej części ekranu, zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.
 
 ## <a name="shell-features"></a>Funkcje powłoki
  Powłoka zawiera przyciski po prawej stronie paska można powiększyć lub pomniejszyć przepływu pracy, zawartości do przepływu pracy do rozmiaru ekranu, a Pokaż lub Ukryj mapę omówienie. Można również powiększania i poza przepływu pracy za pomocą skrótów klawiaturowych CTRL ++ i CTRL +-.
@@ -39,4 +39,4 @@ Projektant przepływu pracy systemu Windows składa się z trzech głównych obs
 
 ## <a name="fonts-and-colors"></a>Czcionki i kolory
 
-Czcionki używane w Projektancie przepływów pracy w Visual Studio 2010 są kontrolowane przez czcionkę środowiska. Kolory wyświetlane w Projektancie przepływów pracy zmienić, jeśli używasz schemat kolorów Duży kontrast dla motywu systemu operacyjnego. Po wprowadzeniu zmian w ustawieniach czcionek i kolorów, aby zmiany zostały wprowadzone w Projektancie przepływów pracy, należy ponownie uruchomić program Visual Studio 2010.
+Czcionki używane w Projektancie przepływów pracy w programie Visual Studio są kontrolowane przez czcionkę środowiska. Kolory wyświetlane w Projektancie przepływów pracy zmienić, jeśli używasz schemat kolorów Duży kontrast dla motywu systemu operacyjnego. Po wprowadzeniu zmian w ustawieniach czcionek i kolorów, aby zmiany zostały wprowadzone w Projektancie przepływów pracy, należy ponownie uruchomić program Visual Studio.

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cf70cf7f69091590c950d6b5eccd6393708e7c9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767212"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757651"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Porady: Dodawanie i usuwanie folderów mapowanych
   Niektóre często używane foldery w programie SharePoint, takie jak obrazy i układy, głęboko osadzone w hierarchii plików. Możesz mapować te foldery do projektu SharePoint łatwiej je otworzyć. Zmapowane katalogi są foldery w projekcie programu SharePoint, które odpowiadają fizyczną lokalizację plików w instalacji programu SharePoint Server.  
@@ -59,7 +59,7 @@ ms.locfileid: "34767212"
      Folder o nazwie **zasobów** pojawia się w projekcie. Ten folder może przechowywać elementów, takich jak pliki zasobów ciągu. Podfoldery mogą być przydatne do organizowania zawartość zamapowany folder, ale są tworzone automatycznie podczas dodawania zamapowany folder przy użyciu **Dodaj SharePoint zamapowany Folder** polecenia. Aby dodać podfolder, wybierz **zasobów** folder, a następnie na pasku menu wybierz **projektu** > **nowy Folder**.  
   
 ## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Zmień lokalizację wdrożenia zamapowany folder  
- Domyślnie zmapowane katalogi są dodawane do określonych lokalizacji względem ścieżki instalacji programu SharePoint głównego, który wskazuje token {SharePointRoot}. Można jednak zmienić tę lokalizację, zmieniając **lokalizacja wdrożenia** właściwości zamapowany folder. Każdy zamapowany folder ma własną **lokalizacja wdrożenia** właściwości.  
+ Domyślnie zmapowane katalogi są dodawane do określonych lokalizacji względem ścieżki instalacji programu SharePoint głównym, który token \<SharePointRoot > oznacza. Można jednak zmienić tę lokalizację, zmieniając **lokalizacja wdrożenia** właściwości zamapowany folder. Każdy zamapowany folder ma własną **lokalizacja wdrożenia** właściwości.  
   
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Aby zmienić lokalizację wdrożenia zamapowany folder  
   
@@ -84,5 +84,5 @@ ms.locfileid: "34767212"
 3.  Aby usunąć zamapowany folder z projektu, otwórz menu skrótów, wybierz pozycję **usunąć**, a następnie wybierz pozycję **OK** przycisk w oknie dialogowym, aby potwierdzić usunięcie.  
   
 ## <a name="see-also"></a>Zobacz także
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

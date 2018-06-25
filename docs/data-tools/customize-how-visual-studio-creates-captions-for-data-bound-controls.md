@@ -1,5 +1,5 @@
 ---
-title: Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio
+title: Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33871191"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758423"
 ---
-# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio
+# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 
 Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) do konstruktora, szczególną uwagę wejścia play: nazwy kolumn w etykietach podpis są ponownie sformatowany na ciąg był bardziej czytelny, gdy dwie lub więcej wyrazów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia etykiety, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
 
@@ -35,7 +35,7 @@ W poniższej tabeli opisano wartości rejestru, które sterują podpis etykiety.
 
 |Element rejestru|Opis|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|Wyrażenie regularne służące do Twoich wzorców dopasowania.|
+|**SmartCaptionExpression**|Wyrażenie regularne, używanej do dopasowania Twoich wzorców.|
 |**SmartCaptionReplacement**|Format wyświetlania grup dopasowywane w **SmartCaptionExpression**.|
 |**SmartCaptionSuffix**|Opcjonalny ciąg do dołączenia do końca podpis.|
 
@@ -43,9 +43,9 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
 
 |Element rejestru|Wartość domyślna|Wyjaśnienie|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Dopasowuje małą literę, a następnie wielkie litery lub znaku podkreślenia.|
-|**SmartCaptionReplacement**|$1 $2|$1 reprezentuje znaków dopasowana w pierwszym nawiasów wyrażenia, a $2 — wszystkie znaki dopasowywane w nawiasach drugi. Zastąpienie jest pierwsze dopasowanie, spacji i drugi dopasowania.|
-|**SmartCaptionSuffix**|:|Reprezentuje znak dołączany do zwracany ciąg. Na przykład, jeśli podpis jest `Company Name`, sufiks ułatwia `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Dopasowuje małą literę, a następnie wielkie litery lub znaku podkreślenia.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje wszystkie znaki dopasowana w pierwszym nawiasów wyrażenia i **$2** reprezentuje znaków dopasowywane w nawiasach drugiego. Zastąpienie jest pierwsze dopasowanie, spacji i drugi dopasowania.|
+|**SmartCaptionSuffix**|**:**|Reprezentuje znak dołączany do zwracany ciąg. Na przykład, jeśli podpis jest `Company Name`, sufiks ułatwia `Company Name:`|
 
 > [!CAUTION]
 > Należy zachować ostrożność w Edytorze rejestru żadnego działania. Utwórz kopię zapasową rejestru przed rozpoczęciem edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Microsoft nie gwarantuje, że można rozwiązać problemy powodujące przez niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.
@@ -58,7 +58,7 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
 
 2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń węzeł **HKEY_CURRENT_USER**, **oprogramowania**, **Microsoft**, **VisualStudio** węzła.
+3.  Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
 7.  Kliknij prawym przyciskiem myszy **15.0** węzeł i utworzyć nową **klucza** o nazwie `Data Designers`.
 
@@ -88,7 +88,7 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
 
 2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń węzeł **HKEY_CURRENT_USER**, **oprogramowania**, **Microsoft**, **VisualStudio** węzła.
+3.  Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
 7.  Kliknij prawym przyciskiem myszy **15.0** węzeł i utworzyć nową **klucza** o nazwie `Data Designers`.
 

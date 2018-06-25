@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b7eb7586eeb746bdeb3d28dfcc5fb14fe7bd6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3b0ce34d5d8cdc3de6225aafa90b5b20016e5062
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976608"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757730"
 ---
-# <a name="correlationscope-activity-designer"></a>Projektant działań CorrelationScope
+# <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
 
 **CorrelationScope** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.CorrelationScope> działanie, które umożliwia zarządzanie niejawne komunikatów działań podrzędnych za pomocą <xref:System.ServiceModel.Activities.CorrelationHandle> obiektu.
 
@@ -27,17 +27,19 @@ ms.locfileid: "31976608"
 
 <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> Właściwość określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania wiadomości działań podrzędnych. <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.Receive> działań zawartych w <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> są skonfigurowane do używania <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> właściwość zawierający <xref:System.ServiceModel.Activities.CorrelationScope> działanie korelacji.
 
-### <a name="using-the-correlationscope-activity-designer"></a>Przy użyciu narzędzia Projektant działań CorrelationScope
- **CorrelationScope** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+### <a name="use-the-correlationscope-activity-designer"></a>Za pomocą projektanta CorrelationScope działania
 
- **CorrelationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **CorrelationScope** Projektant działań lub **DisplayName** pole **właściwości** okna.
+**CorrelationScope** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
- Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** w **właściwości** okno, aby wyświetlić **edytora wyrażeń**  okno dialogowe. Tej właściwości można ustawić w taki sposób, na powierzchni projektowej działania.
+**CorrelationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **CorrelationScope** Projektant działań lub **DisplayName** pole **właściwości** okna.
 
- Zakres w korelacji działania są określane przez usunięcie ich projektantów w **treści** polu w **CorrelationScope** projektanta.
+Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** w **właściwości** okno, aby wyświetlić **edytora wyrażeń**  okno dialogowe. Tej właściwości można ustawić w taki sposób, na powierzchni projektowej działania.
+
+Zakres w korelacji działania są określane przez usunięcie ich projektantów w **treści** polu w **CorrelationScope** projektanta.
 
 ### <a name="the-correlationscope-properties"></a>Właściwości CorrelationScope
- W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.CorrelationScope> właściwości oraz opis korzystania z nich w projektancie. Te właściwości mogą być edytowane w **właściwości** oknie lub na powierzchni projektanta projektanta przepływów pracy, a często w obu.
+
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.CorrelationScope> właściwości oraz opis korzystania z nich w projektancie. Te właściwości mogą być edytowane w **właściwości** oknie lub na powierzchni projektanta przepływów pracy, a często w obu.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e1e76cfd1d13610329bc2e5124c089e8de028abf
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282463"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757841"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
 
@@ -110,7 +110,7 @@ Aby dowiedzieć się więcej, przeczytaj [wprowadzenie symulatora systemu iOS](h
 
 ### <a name="microsofts-windows-phone-emulator"></a>Emulator Windows Phone firmy Microsoft.
 
-Aby dowiedzieć się więcej, przeczytaj [testu w emulatorze firmy Microsoft dla systemu Windows 10 Mobile](/windows-uwp/windows-apps-src/debug-test-perf/test-with-the-emulator/).
+Aby dowiedzieć się więcej, przeczytaj [testu w emulatorze firmy Microsoft dla systemu Windows 10 Mobile](/windows/uwp/debug-test-perf/test-with-the-emulator).
 
 <a name="components" />
 

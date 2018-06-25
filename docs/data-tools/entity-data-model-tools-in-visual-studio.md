@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b1d98422d9527220b54232d1180ae4b91a28e6b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3209a79b0358471977a0e58e8ab5d8d7e5c08e07
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922991"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755371"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework narzędzia w programie Visual Studio
 Entity Framework jest technologia mapowania relacyjnego obiektu, która umożliwia deweloperom platformy .NET pracować z relacyjnej bazie danych przy użyciu obiektów specyficznego dla domeny. Dzięki temu większa część kodu dostępu do danych, który programiści muszą zwykle tworzyć, nie jest już potrzebna. Entity Framework jest zalecane mapowania obiektów relacyjnych (ORM) modelowania technologii nowych aplikacji .NET.
@@ -39,7 +39,7 @@ Są to określone narzędzia, które tworzą narzędzia Entity Framework w progr
     > [!NOTE]
     >  Począwszy od programu Visual Studio 2010 narzędzia Entity Framework nie obsługują [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
-Narzędzia Generowanie lub zmodyfikowania pliku edmx. Ten plik edmx zawiera informacje opisujące modelu koncepcyjnego i modelu magazynu, mapowań między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
+Narzędzia Generowanie lub zmodyfikować *edmx* pliku. To *edmx* plik zawiera informacje opisujące modelu koncepcyjnego i modelu magazynu, mapowań między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 
 [Entity Framework zaawansowanych narzędzi](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) tworzenia aplikacji, które używają modelu danych jednostki. Narzędzia power można wygenerować model koncepcyjny, sprawdzania poprawności istniejącego modelu, tworzenia plików kodu źródłowego, zawierające klasy obiektu oparte na modelu koncepcyjnego i tworzenia plików kodu źródłowego, które zawierają widoki, które generuje modelu. Aby uzyskać szczegółowe informacje, zobacz [widoków mapowania Pre-Generated](https://msdn.microsoft.com/data/dn469601.aspx).
 
