@@ -1,41 +1,30 @@
-- name: Tworzenie aplikacji przy użyciu Projektanta przepływu pracy
+- name: Programowanie aplikacji za pomocą Projektanta przepływu pracy
   href: developing-applications-with-the-workflow-designer.md
   items:
-    - name: Używanie Projektanta przepływu pracy
-      href: using-the-workflow-designer.md
+    - name: Tworzenie projektu przepływu pracy
+      href: creating-a-workflow-project.md
       items:
-        - name: Tworzenie projektu przepływu pracy
-          href: creating-a-workflow-project.md
-          items:
-            - name: Tworzenie aplikacji konsoli przepływu pracy
-              href: how-to-create-a-workflow-console-application.md
-            - name: Tworzenie aplikacji usługi przepływu pracy WCF
-              href: how-to-create-a-wcf-workflow-service-application.md
-            - name: Tworzenie biblioteki działań
-              href: how-to-create-an-activity-library.md
-            - name: Tworzenie biblioteki projektanta działań
-              href: how-to-create-an-activity-designer-library.md
-            - name: Dodawanie nowego elementu do projektu przepływu pracy
-              href: how-to-add-a-new-item-to-a-workflow-project.md
-        - name: Dodawanie działań do przybornika
-          href: how-to-add-activities-to-the-toolbox.md
-        - name: Używanie projektanta argumentów
-          href: how-to-use-the-argument-designer.md
-        - name: Używanie projektanta zmiennych
-          href: how-to-use-the-variable-designer.md
-        - name: Używanie edytora wyrażeń
-          href: how-to-use-the-expression-editor.md
-        - name: Używanie projektanta importów
-          href: how-to-use-the-imports-designer.md
-        - name: Używanie nawigacji za pomocą linków do stron nadrzędnych
-          href: how-to-use-breadcrumb-navigation.md
-        - name: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
-          href: how-to-use-search-in-the-workflow-designer.md
-        - name: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
-          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-        - name: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
-          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: Używanie projektantów działań
+        - name: Dodawanie nowego elementu do projektu przepływu pracy
+          href: how-to-add-a-new-item-to-a-workflow-project.md
+    - name: Dodawanie działań do przybornika
+      href: how-to-add-activities-to-the-toolbox.md
+    - name: Używanie projektanta argumentów
+      href: how-to-use-the-argument-designer.md
+    - name: Używanie projektanta zmiennych
+      href: how-to-use-the-variable-designer.md
+    - name: Używanie edytora wyrażeń
+      href: how-to-use-the-expression-editor.md
+    - name: Używanie projektanta importów
+      href: how-to-use-the-imports-designer.md
+    - name: Używanie nawigacji za pomocą linków do stron nadrzędnych
+      href: how-to-use-breadcrumb-navigation.md
+    - name: Używanie funkcji wyszukiwania w Projektancie przepływu pracy
+      href: how-to-use-search-in-the-workflow-designer.md
+    - name: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
+      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+    - name: Dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
+      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: Projektanci działań
       href: using-the-activity-designers.md
       items:
         - name: Projektanci działań przepływu sterowania
@@ -156,18 +145,16 @@
           items:
             - name: 'Interop, projektant działań'
               href: interop-activity-designer.md
-    - name: Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy
+    - name: Debugowania przepływów pracy
       href: debugging-workflows-with-the-workflow-designer.md
       items:
-        - name: Wywoływanie debugera przepływu pracy
-          href: how-to-invoke-the-workflow-debugger.md
         - name: Ustawianie punktów przerwania w przepływach pracy
           href: how-to-set-breakpoints-in-workflows.md
         - name: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy
           href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
+        - name: Nieobsługiwane scenariusze debugowania
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Pomoc interfejsu użytkownika Projektanta przepływu pracy
+    - name: Odwołanie interfejsu użytkownika
       href: workflow-designer-ui-help.md
       items:
         - name: 'Wyszukiwanie i wybieranie typu .NET, okno dialogowe'
@@ -188,97 +175,7 @@
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
         - name: Funkcje powłoki Projektanta przepływu pracy
           href: workflow-designer-shell-features.md
-        - name: Skróty klawiaturowe w Projektancie przepływu pracy
+        - name: Skróty klawiaturowe
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Komunikaty o błędach w Projektancie przepływu pracy
+        - name: komunikaty o błędach
           href: error-messages-in-workflow-designer.md
-    - name: Opracowywanie aplikacji przepływu pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5
-      href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
-      items:
-        - name: Debugowanie starszych wersji przepływów pracy
-          href: debugging-legacy-workflows.md
-          items:
-            - name: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)
-              href: how-to-debug-aspnet-based-workflows-legacy.md
-            - name: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)
-              href: how-to-set-breakpoints-in-workflows-legacy.md
-            - name: Debugowanie przepływów pracy ze zdalnego komputera (starsza wersja)
-              href: debugging-workflows-from-a-remote-computer-legacy.md
-            - name: Opcje debugowania wykonywania krokowego (starsza wersja)
-              href: debug-stepping-options-legacy.md
-            - name: Opcja zmiany debugowania krokowego (starsza wersja)
-              href: how-to-change-the-debug-stepping-option-legacy.md
-            - name: Wyłączanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)
-              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-            - name: Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)
-              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-        - name: Używanie starszej wersji Projektanta przepływu pracy
-          href: using-the-legacy-workflow-designer.md
-          items:
-            - name: Okna przepływów pracy programu Visual Studio (starsza wersja)
-              href: visual-studio-workflow-windows-legacy.md
-            - name: Tworzenie starszej wersji projektów przepływu pracy
-              href: creating-legacy-workflow-projects.md
-              items:
-                - name: Tworzenie biblioteki działań przepływów pracy (starsza wersja)
-                  href: how-to-create-a-workflow-activity-library-legacy.md
-                - name: Tworzenie pustego projektu przepływu pracy (starsza wersja)
-                  href: how-to-create-an-empty-workflow-project-legacy.md
-                - name: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)
-                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
-                - name: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja)
-                  href: how-to-configure-workflow-project-properties-legacy.md
-                - name: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
-                  href: how-to-create-sequential-workflow-console-applications-legacy.md
-                - name: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)
-                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
-                - name: Tworzenie projektów przepływu pracy (starsza wersja)
-                  href: how-to-create-workflow-projects-legacy.md
-                - name: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsza wersja)
-                  href: how-to-create-a-sequential-workflow-library-legacy.md
-                - name: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)
-                  href: how-to-create-a-state-machine-workflow-library-legacy.md
-            - name: Widoki sekwencyjnego przepływu pracy (starsza wersja)
-              href: sequential-workflow-views-legacy.md
-            - name: Działania przepływu pracy w starszej wersji
-              href: legacy-workflow-activities.md
-              items:
-                - name: Tworzenie warunku reguły deklaratywnej (starsza wersja)
-                  href: how-to-create-a-declarative-rule-condition-legacy.md
-                - name: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)
-                  href: how-to-create-a-policyactivity-rule-set-legacy.md
-                - name: Widoki działania (starsza wersja)
-                  href: activity-views-legacy.md
-                - name: Dodawanie działań do przybornika (starsza wersja)
-                  href: how-to-add-activities-to-the-toolbox-legacy.md
-                - name: 'Instrukcje: implementowanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)'
-                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
-                - name: Wywoływanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)
-                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
-            - name: Używanie motywów w przepływach pracy (starsza wersja)
-              href: using-themes-in-workflows-legacy.md
-            - name: Używanie starszej wersji Projektanta przepływu pracy automatu stanów
-              href: using-the-legacy-state-machine-workflow-designer.md
-            - name: Używanie starszej wersji projektanta działań
-              href: using-the-legacy-activity-designer.md
-            - name: Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation
-              href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-              items:
-                - name: 'Powiązanie z właściwością działania, okno dialogowe (starsza wersja)'
-                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
-                - name: 'Wyszukiwanie i wybieranie typu .NET, okno dialogowe (starsza wersja)'
-                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
-                - name: 'Wybieranie operacji, okno dialogowe (starsza wersja)'
-                  href: choose-operation-dialog-box-legacy.md
-                - name: 'Edytor warunku reguły, okno dialogowe (starsza wersja)'
-                  href: rule-condition-editor-dialog-box-legacy.md
-                - name: 'Edytor zestawu reguł, okno dialogowe (starsza wersja)'
-                  href: rule-set-editor-dialog-box-legacy.md
-                - name: 'Wybieranie warunku, okno dialogowe (starsza wersja)'
-                  href: select-condition-dialog-box-legacy.md
-                - name: 'Wybieranie zestawu reguł, okno dialogowe (starsza wersja)'
-                  href: select-rule-set-dialog-box-legacy.md
-                - name: 'Konfigurowanie motywu, okno dialogowe (starsza wersja)'
-                  href: theme-configuration-dialog-box-legacy.md
-                - name: 'Motywy, Projektant przepływu pracy, Opcje, okno dialogowe (starsza wersja)'
-                  href: themes-workflow-designer-options-dialog-box-legacy.md
