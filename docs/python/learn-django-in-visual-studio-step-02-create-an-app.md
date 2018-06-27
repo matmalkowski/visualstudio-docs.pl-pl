@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750509"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947498"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Samouczek krok 2: tworzenie aplikacji Django z widokami i strony szablonów
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoki i szablony stron
 
 **Poprzedni krok: [tworzenia projektu Visual Studio i rozwiązania](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -50,8 +50,8 @@ Przy użyciu jednej z metod, Utwórz aplikację o nazwie "HelloDjangoApp". Wynik
 
 | Element | Opis |
 | --- | --- |
-| `__init.py__` | Plik, który identyfikuje aplikację jako pakiet. |
-| `migrations` | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby były wyrównane z zmiany do modeli. Narzędzia migracji w Django następnie dotyczą niezbędne zmiany wszelkie wcześniejsze wersje bazy danych, aby był zgodny z bieżącym modeli. Przy użyciu migracji, skup na modeli i umożliwić Django obsługi podstawowy schemat bazy danych. Migracje zostały omówione w kroku 6. teraz, po prostu zawiera folder `__init.py__` pliku (co oznacza, że folder definiuje własny pakiet języka Python). |
+| `__init__.py` | Plik, który identyfikuje aplikację jako pakiet. |
+| `migrations` | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby były wyrównane z zmiany do modeli. Narzędzia migracji w Django następnie dotyczą niezbędne zmiany wszelkie wcześniejsze wersje bazy danych, aby był zgodny z bieżącym modeli. Przy użyciu migracji, skup na modeli i umożliwić Django obsługi podstawowy schemat bazy danych. Migracje zostały omówione w kroku 6. teraz, po prostu zawiera folder `__init__.py` pliku (co oznacza, że folder definiuje własny pakiet języka Python). |
 | `templates` | Folder zawierający pojedynczy plik szablony stron Django `index.html`. Szablony są bloki kodu HTML, do którego widoków można dodać informacje do dynamicznego renderowania strony. Takie jak strona "zmiennych szablonu," `{{ content }}` w `index.html`, są symbole zastępcze wartości dynamiczne zgodnie z objaśnieniem w dalszej części tego artykułu (krok 2). Zwykle aplikacji Django tworzenie przestrzeni nazw dla ich szablonów przez umieszczenie ich w podfolderze, która jest zgodna z nazwą aplikacji. |
 | `admin.py` | Plik Python, w którym można rozszerzyć aplikacji użytkownika administracyjnego interfejsu (zobacz krok 6), który służy do wyświetlania i edycji danych w bazie danych. Początkowo ten plik zawiera tylko instrukcja `from django.contrib import admin`. Domyślnie Django obejmuje standardowych interfejsu administracyjnego za pomocą wpisów w projekcie Django `settings.py` pliku, który można włączyć Trwa usuwanie komentarza istniejących wpisów `urls.py`. |
 | `apps.py` | Plik języka Python, który definiuje klasę konfiguracji dla aplikacji (zobacz poniżej, pod tą tabelą). |
@@ -272,7 +272,7 @@ Odpowiedź: Gdy Django szuka szablon określony w `render` funkcji używa niezal
 > [!div class="nextstepaction"]
 > [Obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Pisanie pierwszej aplikacji Django, część 1 - widoków](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Aby uzyskać więcej możliwości Django szablony, takie jak obejmuje i dziedziczenia, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

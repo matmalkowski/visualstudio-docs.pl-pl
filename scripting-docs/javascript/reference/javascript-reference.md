@@ -1,13 +1,13 @@
 ---
-title: "JavaScript — odwołanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: JavaScript — odwołanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - vs.htmldesigner.html
@@ -18,20 +18,24 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, reference
 ms.assetid: 29f83a2c-48c5-49e2-9ae0-7371d2cda2ff
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4fd8a514abcc42b7ec34340f963326cd9a66762
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41d2a3f72b07c947faae2f70f1f5f0b0dffac9ad
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962667"
 ---
 # <a name="javascript-reference"></a>JavaScript — Odwołanie
 W tych sekcjach opisano elementy wchodzące w skład [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] języka.  
+
+> [!NOTE]
+> Dołączeniu nakładu całej społeczności, aby [dokumentów sieci web MDN](https://developer.mozilla.org/en-US/) zasobów programowanie kompleksowych, najważniejszych sieci web, przez przekierowywanie wszystkie (500 + strony) firmy Microsoft JavaScript API reference w witrynie docs.microsoft.com do ich MDN odpowiedniki. Aby uzyskać więcej informacji, zobacz [anonsu](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]kod w programie Internet Explorer mogą współdziałać z kodu HTML, CSS i modelu DOM (Document Object), reprezentujący HTML i przeglądarka obiektów.  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kod w programie Internet Explorer mogą współdziałać z kodu HTML, CSS i modelu DOM (Document Object), reprezentujący HTML i przeglądarka obiektów.  
   
 -   Aby dowiedzieć się, HTML, zobacz [odwołania HTML/XHTML](http://go.microsoft.com/fwlink/p/?LinkId=251007).  
   
@@ -39,7 +43,7 @@ W tych sekcjach opisano elementy wchodzące w skład [!INCLUDE[javascript](../..
   
 -   Aby uzyskać informacje o modelu DOM, zobacz [modelu DOM (Document Object)](http://go.microsoft.com/fwlink/p/?LinkId=251009).  
   
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Kod może być używany w aplikacji przeglądarki oraz [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikacji. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]aplikacje są obsługiwane w [!INCLUDE[win8](../../javascript/includes/win8-md.md)] przy użyciu [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] i [!INCLUDE[win81](../../javascript/includes/win81-md.md)] przy użyciu [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)].  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Kod może być używany w aplikacji przeglądarki oraz [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikacji. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikacje są obsługiwane w [!INCLUDE[win8](../../javascript/includes/win8-md.md)] przy użyciu [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] i [!INCLUDE[win81](../../javascript/includes/win81-md.md)] przy użyciu [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)].  
   
 -   Informacje o JavaScript w [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikacji, zobacz [plan JavaScript](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
   
@@ -47,9 +51,9 @@ W tych sekcjach opisano elementy wchodzące w skład [!INCLUDE[javascript](../..
   
 -   Aby uzyskać informacje o [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] interfejsów API, zobacz [dokumentacja interfejsu API dla środowiska wykonawczego systemu Windows i biblioteka systemu Windows dla języka JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- Edytor kodu JavaScript w programie Visual Studio zapewnia obsługę technologii IntelliSense. Aby uzyskać więcej informacji, zobacz [IntelliSense dla JavaScript](/visualstudio/ide/javascript-intellisense.md).  
+ Edytor kodu JavaScript w programie Visual Studio zapewnia obsługę technologii IntelliSense. Aby uzyskać więcej informacji, zobacz [IntelliSense dla JavaScript](/visualstudio/ide/javascript-intellisense).  
   
-## <a name="in-this-section"></a>W tej sekcji  
+## <a name="reference-information"></a>Informacje referencyjne
  [Informacje o wersji](../../javascript/reference/javascript-version-information.md)  
  Zawiera listę [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] — funkcje językowe i wersji programu Internet Explorer, w których zostały wprowadzone.  
   
@@ -74,21 +78,19 @@ W tych sekcjach opisano elementy wchodzące w skład [!INCLUDE[javascript](../..
  [Instrukcje](../../javascript/reference/javascript-statements.md)  
  Zawiera listę instrukcji wraz z łączami do informacji o każdej z nich.  
   
- [JavaScript — dyrektywy](../../javascript/reference/javascript-directives.md)  
+ [Dyrektywy JavaScript](../../javascript/reference/javascript-directives.md)  
  Zawiera łącza do informacji o dyrektywach.  
   
- [Błędy](../../javascript/reference/javascript-errors.md)  
+ [błędy](../../javascript/reference/javascript-errors.md)  
  Zawiera łącza do informacji o błędach w czasie wykonywania oraz błędów składni.  
   
- [JavaScript słowa zastrzeżone](../../javascript/reference/javascript-reserved-words.md)  
+ [Słowa zastrzeżone JavaScript](../../javascript/reference/javascript-reserved-words.md)  
  Zawiera listę słów zastrzeżonych. Tych słów nie można używać jako identyfikatorów.  
   
- [JavaScript przyszłe słowa zastrzeżone](../../javascript/reference/javascript-future-reserved-words.md)  
+ [Przyszłe słowa zastrzeżone JavaScript](../../javascript/reference/javascript-future-reserved-words.md)  
  Zawiera listę słów, które w przyszłości zostaną zastrzeżone. Tych słów nie można używać jako identyfikatorów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Podstawowe założenia JavaScript](../../javascript/javascript-fundamentals.md)  
- Zawiera informacje o sposobie używania [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
-  
+
  [Dokumentacja DHTML i HTML](http://go.microsoft.com/fwlink/?LinkId=148095)  
  Zawiera dodatkowe informacje dotyczące interfejsu API dynamicznego języka HTML (DHTML).
