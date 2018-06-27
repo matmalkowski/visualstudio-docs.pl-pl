@@ -1,7 +1,7 @@
 ---
 title: Port, migrowanie i uaktualnianie projektów
 description: Odwołanie w Visual Studio 2017 obsługę projektów utworzonych w starszych wersjach programu Visual Studio i jak Visual Studio decyduje o tym, kiedy zachodzi potrzeba migracji projektu.
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,21 +19,20 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8a09dc06ac76ff94ea8bbf933a1873221bfe0952
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea7f001179a206e3dfcf8e7026b54d6da6ebffbd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281728"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947183"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu dla Visual Studio 2017 r.
 
 Każda nowa wersja programu Visual Studio obsługuje ogólnie większość typów poprzednich projektów, plików i innych zasobów. Można pracować z nimi [jako użytkownik zawsze mieć](../ide/solutions-and-projects-in-visual-studio.md), i pod warunkiem, że nie są zależne od funkcji nowszą, programu Visual Studio zazwyczaj próbuje wstecz zachowania zgodności z poprzednimi wersjami, takich jak Visual Studio 2015, Visual Studio 2013, i Visual Studio 2012. (Zobacz [wersji](https://visualstudio.microsoft.com/vs/release-notes/) dla funkcji, które są specyficzne dla których wersji.)
 
-Wraz z upływem czasu zmieniają się także obsługę niektórych typów projektów. Nowsza wersja programu Visual Studio może nie obsługiwać niektórych projektów lub wymaga zaktualizowania projekt w taki sposób, że nie jest już wstecznie zgodne. Bieżący stan na problemy przy migracji, można znaleźć w temacie [witryny programu Visual Studio Community Developer](https://developercommunity.visualstudio.com).
+Wraz z upływem czasu zmieniają się także obsługę niektórych typów projektów. Nowsza wersja programu Visual Studio może nie obsługiwać niektórych projektów wszystkich lub wymaga zaktualizowania projekt w taki sposób, że nie jest już wstecznie zgodne. Bieżący stan na problemy przy migracji, można znaleźć w temacie [witryny programu Visual Studio Community Developer](https://developercommunity.visualstudio.com).
 
-> [!Important]
-> W tym artykule istnieje zawiera szczegółowe informacje tylko dla typów projektu w programie Visual Studio 2017 dotyczących migracji. Nie ma typów obsługiwanych projektu, które mają nie problemy przy migracji; tej listy znajduje się na [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs). Należy też zauważyć, że niektóre typy projektu nie są już obsługiwane w programie Visual Studio 2017 cały i nie mogą być migrowane.
+W tym artykule istnieje zawiera szczegółowe informacje tylko dla typów projektów, które można migrować Visual Studio 2017 r. Artykuł nie obejmuje typów projektów, które nie są już obsługiwane w programie Visual Studio 2017 i dlatego nie można migrować. Artykuł nie obejmuje także typy obsługiwanych projektu, które mają nie problemy przy migracji; tej listy znajduje się na [obsługiwane platformy i zgodność](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
 > Niektóre typy projektów wymagają zainstalowanie odpowiednich obciążeń przez Instalator programu Visual Studio. Jeśli masz zainstalowany obciążenia programu Visual Studio raporty typu projektu nieznane lub niezgodne. W takim przypadku sprawdź opcje instalacji i spróbuj ponownie. Ponownie, zobacz [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs) artykułu, aby uzyskać więcej informacji na temat obsługi projektu w programie Visual Studio 2017 r.

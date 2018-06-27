@@ -1,7 +1,7 @@
 ---
 title: Integrowanie programu SQL Server z języka R
 description: Program Visual Studio obsługuje tworzenie i uruchamianie zapytania SQL z R i możliwość wykonywania R, aby pracować z procedur składowanych.
-ms.date: 01/24/2018
+ms.date: 06/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 63196bcf7188ffea838390cbb2c4133aece95313
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3b9fa1f675754257a2278c7282c45d9816c034cd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238351"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946916"
 ---
 # <a name="work-with-sql-server-and-r"></a>Praca z programu SQL Server i R
 
@@ -75,13 +75,13 @@ RTVS upraszcza inaczej niewygodna błędów oraz łączenia kodu SQL i R wewnąt
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Pisania i testowania procedury składowane SQL
 
-Aby dodać nowe procedury składowanej SQL, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy element**, wybierz pozycję **procedury składowanej SQL z R** z listy szablonów Nadaj nazwę pliku (*StoredProcedure.R* w tym przykładzie) i wybierz **OK**.
+Aby dodać nowe procedury składowanej SQL, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy element**, wybierz pozycję **procedury składowanej SQL z R** z listy szablonów Nadaj nazwę pliku, a następnie wybierz **OK**. Domyślna nazwa pliku jest *SqlSProc.R*; aby ułatwić czytanie, nazwa pliku *StoredProcedure.R* jest używany w dalszej części tej sekcji. Jeśli masz wiele procedur składowanych, każdy plik musi mieć unikatową nazwę pliku.
 
 RTVS tworzy trzy pliki dla procedury składowanej: *. R* pliku dla kodu języka R, *. Query.SQL* kod SQL w pliku i *. Template.SQL* pliku, który łączy dwa. Ostatnie dwa są wyświetlane w Eksploratorze rozwiązań jako elementy podrzędne są *. R* pliku:
 
 ![Eksplorator rozwiązań rozszerzony widok procedury składowanej SQL z języka R](media/sql-solution-explorer-expanded.png)
 
-*StoredProcedure.R* (w tym przykładzie) to, gdzie pisania kodu języka R. Wartości domyślne są:
+*. R* pliku (*StoredProcedure.R* w tym przykładzie) jest, gdzie należy wpisać kod R. Wartości domyślne są:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -103,9 +103,9 @@ Prostu, kod odbiera dataframe R o nazwie `InputDataSet` i zwraca wyniki w `Outpu
 
 Wygenerowany kod (w komentarzach) zawiera skrypt teście małych, który używa [pakietu RODBC](https://cran.r-project.org/web/packages/RODBC/index.html) do przesyłania instrukcję SQL z programem SQL Server, uruchom go i pobrać jego zestawu wyników jako dataframe R. Użytkownik może usuń znaczniki komentarza Ustaw ten kod testu, aby interaktywnie wpisz swój kod R wyniku uzyskanie programu SQL Server.
 
-*StoredProcedure.Query.sql* zapisu i przetestować zapytanie SQL, które generuje dane dotyczące `InputDataSet`. Z tym *SQL* plik, Edytor zawiera wszystkie funkcje języka Transact-SQL zwykle do Ciebie.
+*. Query.SQL* pliku (*StoredProcedure.Query.sql* w tym przykładzie) zapisu i przetestować zapytanie SQL, które generuje dane dotyczące `InputDataSet`. Z tym *SQL* plik, Edytor zawiera wszystkie funkcje języka Transact-SQL zwykle do Ciebie.
 
-Po zakończeniu modyfikowania swoim własnym kodem SQL, zintegrować ją z kodu języka R w *StoredProcedure.R* przeciągając *SQL* pliku na Otwórz edytor dla *. R* pliku. Na ilustracji poniżej *StoredProcedure.Query.sql* został przeciągnięty do punktu po przecinku w `sqlQuery(channel, )`:
+Po zakończeniu modyfikowania swoim własnym kodem SQL, zintegrować ją z kodu języka R przeciągając *SQL* pliku na Otwórz edytor dla *. R* pliku. Na ilustracji poniżej *StoredProcedure.Query.sql* została przeciągnięta do punktu w *StoredProcedure.R* po przecinku w `sqlQuery(channel, )`:
 
 ![Odczytywanie plików SQL do zmiennej ciągu R](media/sql-reference-sql-file-from-r.png)
 
@@ -113,7 +113,7 @@ Jak widać, w tym kroku proste automatycznie generuje kod języka R, aby otworzy
 
 Możesz teraz interaktywnie zapisu R obsługujące `InputDataSet` dataframe zgodnie z potrzebami. Należy pamiętać, że można po prostu wybierz R kodu w edytorze i wysyłać je do [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md) naciskając **Ctrl**+**Enter**.
 
-*StoredProcedure.Template.sql*, koniec zawiera szablon służący do generowania procedury składowanej SQL:
+*. Template.SQL* pliku (*StoredProcedure.Template.sql* w tym przykładzie), zawiera wreszcie szablonu służącego do generowania procedury składowanej SQL:
 
 ```sql
 CREATE PROCEDURE [StoredProcedure]
@@ -127,8 +127,8 @@ EXEC sp_execute_external_script @language = N'R'
 END;
 ```
 
-- `_RCODE_` Symbol zastępczy zostanie zastąpiony przez zawartość *StoredProcedure.R*.
-- `_INPUT_QUERY_` Symbol zastępczy zostanie zastąpiony przez zawartość *StoredProcedure.Query.sql*.
+- `_RCODE_` Symbol zastępczy zostanie zastąpiony przez zawartość *. R* pliku (na przykład *StoredProcedure.R*).
+- `_INPUT_QUERY_` Symbol zastępczy zostanie zastąpiony przez zawartość *. Query.SQL* pliku (na przykład *StoredProcedure.Query.sql*).
 - Edytuj `WITH RESULT SETS` klauzuli do opisywania schemat zestawu zwrócone z procedury składowanej wyników. W szczególności zidentyfikować kolumny z `OutputDataSet` dataframe, który chcesz przywrócić do obiektu wywołującego procedurę składowaną.
 
 Na przykład dla następującej kwerendy:

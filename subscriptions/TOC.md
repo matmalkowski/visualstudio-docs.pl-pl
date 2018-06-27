@@ -1,4 +1,5 @@
 # [Subskrypcje programu Visual Studio](index.md)
+## [Co nowego](whats-new-in-subscriptions.md)
 ## Środowiska subskrybenta
 ### [Korzystanie z portalu dla subskrybentów](using-the-subscriber-portal.md)
 #### [Aktywowanie subskrypcji detalicznych](activate-store-subscriptions.md)

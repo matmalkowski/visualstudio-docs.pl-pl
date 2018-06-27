@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4de49b7ebb7299a005ab822bc880707196b1da3
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582348"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947030"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
+# <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 
 Program Visual Studio udostępnia okno interaktywne odczytu oceny Drukuj pętli (REPL) dla każdego środowiska Python, które poprawia REPL pobrać o `python.exe` w wierszu polecenia. Okno interaktywne (otwartej z **Widok > inne okna > &lt;środowiska&gt; Interactive** polecenia menu) pozwala wprowadzić dowolny kod języka Python i wyświetlania wyników bezpośrednim. Ten sposób kodowania pomaga informacje i Poeksperymentuj z interfejsów API i bibliotek oraz interakcyjnie tworzenie pracy kodu do uwzględnienia w projektach.
 

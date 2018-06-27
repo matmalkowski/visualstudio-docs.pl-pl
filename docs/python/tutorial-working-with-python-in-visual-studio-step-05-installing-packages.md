@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 4591d0c7f7061a79551991cedb42e3b66d735190
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875321"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946804"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
 **Poprzedni krok: [uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 > [!div class="nextstepaction"]
 > [Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>Przechodząc głębiej
+### <a name="go-deeper"></a>Przejść głębiej
 
 - [Środowiska Python](managing-python-environments-in-visual-studio.md)

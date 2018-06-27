@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8b9d14a9ba3c6428b4ec997d91addfaea30c0baf
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750366"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947495"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Samouczek krok 4: Użyj pełnego szablonu projektu sieci Web Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Użyj pełnej szablonu projektu sieci Web Django
 
 **Poprzedni krok: [obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Na poziomie najszerszych szablonu "Projekt sieci Web Django" tworzy następując
   - `requirements.txt` zawierający zależności Django 1.x.
   - `readme.html`, pliku, który jest wyświetlany w programie Visual Studio po utworzeniu projektu. Jak wspomniano w poprzedniej sekcji, postępuj zgodnie z instrukcjami w tym miejscu można utworzyć konta administratora (administrator) dla aplikacji.
 - `app` Folder zawiera wszystkie pliki aplikacji, łącznie z widoków, modeli testów, formularzy, szablony i pliki statyczne (zobacz krok 4-2). Zwykle Zmień nazwę tego folderu do używania więcej charakterystyczne nazwy aplikacji.
-- `DjangoWeb` Folder (Django projekt) zawiera typowe pliki projektu Django: `__init.py__`, `settings.py`, `urls.py`, i `wsgi.py`. Za pomocą szablonu projektu `settings.py` został już skonfigurowany dla pliku bazy danych i aplikacji oraz `urls.py` jest już skonfigurowana przy użyciu tras dla wszystkich stron aplikacji, w tym formularz logowania.
+- `DjangoWeb` Folder (Django projekt) zawiera typowe pliki projektu Django: `__init__.py`, `settings.py`, `urls.py`, i `wsgi.py`. Za pomocą szablonu projektu `settings.py` został już skonfigurowany dla pliku bazy danych i aplikacji oraz `urls.py` jest już skonfigurowana przy użyciu tras dla wszystkich stron aplikacji, w tym formularz logowania.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: Jest można udostępniać między projektami Visual Studio środowiska wirtualnego?
 
@@ -215,7 +215,7 @@ Odpowiedź: Brak końcowe "$" w wyrażeniu regularnym został proste nadzoru wie
 > [!div class="nextstepaction"]
 > [Uwierzytelnianie użytkowników w Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Pisanie pierwszej aplikacji Django, część 4 - formularzy i rodzajowy widoków](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

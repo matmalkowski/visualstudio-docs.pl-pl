@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750496"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947066"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Samouczek krok 6: należy użyć szablonu projektu sieci Web Django sond
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 
 **Poprzedni krok: [uwierzytelniania użytkowników w Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 

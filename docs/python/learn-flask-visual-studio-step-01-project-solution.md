@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752502"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947118"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy Flask struktura sieci web w programie Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Wprowadzenie do platformy Flask struktura sieci web w programie Visual Studio
 
 [Flask](http://flask.pocoo.org/) to lekkie platforma języka Python dla aplikacji sieci web, która zapewnia podstawowe informacje dotyczące routingu adresów URL i renderowania stron.
 
@@ -251,7 +251,7 @@ W tym momencie podstawowego projektu platformy Flask zawiera kod uruchomienia i 
 > [!div class="nextstepaction"]
 > [Tworzenie aplikacji platformy Flask widoki i szablony stron](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Szybki Start flask](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

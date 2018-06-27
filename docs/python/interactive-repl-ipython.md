@@ -1,7 +1,7 @@
 ---
 title: REPL IPython (okno interaktywne)
 description: Przy użyciu okno interaktywne programu Visual Studio w trybie IPython w środowisku przyjazną dla użytkownika interaktywnego programowanie z funkcjami interakcyjnego przetwarzania równoległego.
-ms.date: 07/13/2017
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1581c9cd7cb317a50932e85bb46159c508d8522
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e35e8be8434adcf26f29f01c41720455f33232dd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582530"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946875"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>W oknie interaktywnym przy użyciu IPython
 
@@ -27,9 +27,9 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) środowisko
 > [!Note]
 > IronPython nie obsługuje IPython, mimo że możesz wybrać je w formularzu Opcje interakcyjne. Aby uzyskać więcej informacji, zobacz [żądanie funkcji](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Otwórz program Visual Studio, Przełącz do okna środowiska Python (**Widok > inne okna > środowiska Python**) i wybierz środowisko Python, które wystąpiły podczas uruchamiania IPython.
+1. Otwórz program Visual Studio, Przełącz do okna środowiska Python (**Widok > inne okna > środowiska Python**) i wybierz środowisko Anaconda.
 
-1. Przyjrzyj się **pakiety** (lub **pip**) i upewnij się, że `IPython` i `matplotlib` są wyświetlane. Jeśli nie, zainstaluj je tutaj.
+1. Sprawdź **pakietów (Conda)** kartę (która może być wyświetlana jako **pip** lub **pakiety**) dla tego środowiska upewnić się, że `IPython` i `matplotlib` są wyświetlane. Jeśli nie, zainstaluj je tutaj. (Zobacz [Windows środowiska Python — karta pakiety](python-environments-window-tab-reference.md).)
 
 1. Wybierz **omówienie** i wybierz **IPython używany tryb interaktywny.** (W programie Visual Studio 2015, wybierz **skonfigurować opcje interakcyjne** można otworzyć **opcje** okna dialogowego, a następnie ustaw **trybie interaktywnym** IPython i wybierz **OK** ).
 
@@ -49,7 +49,7 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) środowisko
 
     ![Wykres wbudowany w oknie interaktywnym](media/ipython-repl-04.png)
 
-1. Zamiast wpisywać w REPL, zamiast tego można napisać kod w edytorze, zaznacz go, kliknij prawym przyciskiem myszy i wybierz **wysłać do interaktywnego** polecenia (lub naciśnij klawisze Ctrl-Enter). Spróbuj wkleić poniższy kod do nowego pliku w edytorze, wybierając ją z Ctrl-A, a następnie wysyłanie do okna interaktywnego. (Należy pamiętać, Visual Studio i wysyła kodu jako jedna całość, aby uniknąć, umożliwiając wykresy pośredniego lub jego część. Należy również zauważyć, że jeśli nie masz otworzyć za pomocą innego środowiska wybrany projekt języka Python, Visual Studio otworzy interaktywnego okna dla niezależnie od środowiska jest wybrany jako domyślnego w **środowiska Python** okna.)
+1. Zamiast wpisywać w REPL, zamiast tego można napisać kod w edytorze, zaznacz go, kliknij prawym przyciskiem myszy i wybierz **wysłać do interaktywnego** polecenia (lub nacisnąć klawisze Ctrl + Enter). Spróbuj wkleić poniższy kod do nowego pliku w edytorze, wybierając ją z Ctrl-A, a następnie wysyłanie do okna interaktywnego. (Visual Studio wysyła kodu jako jedna całość, aby uniknąć, umożliwiając wykresy pośredniego lub jego część. A jeśli nie masz otworzyć za pomocą innego środowiska wybrany projekt języka Python, Visual Studio otwiera interaktywnego okna dla niezależnie od środowiska jest wybrany jako domyślnego w **środowiska Python** okna.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D

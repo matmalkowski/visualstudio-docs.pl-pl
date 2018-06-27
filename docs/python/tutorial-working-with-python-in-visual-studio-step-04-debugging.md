@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7e2f9f4635a1effc7ad46d1d842f22b3943a2b16
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031985"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947017"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
+# <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
 **Poprzedni krok: [za pomocą okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 > [!div class="nextstepaction"]
 > [Instalowanie pakietów w środowisku Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Przechodząc głębiej
+### <a name="go-deeper"></a>Przejść głębiej
 
 - [Debugowanie](debugging-python-in-visual-studio.md)
 - [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md) zapewnia pełną dokumentację programu Visual Studio na debugowanie funkcji.

@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24789085"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962661"
 ---
 # <a name="javascript-language-reference"></a>Dokumentacja języka JavaScript
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]jest językiem skryptowym, który można ją osadzić w innych aplikacjach i stron sieci web.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] jest językiem skryptowym, który można ją osadzić w innych aplikacjach i stron sieci web.  
   
  W niniejszej dokumentacji opisano implementację JavaScript przez firmę Microsoft. Implementacja jest zgodna z 5 wydniem specyfikacji języka ECMAScript (ECMAScript Language Specification 5th Edition). Udostępnia także dodatkowe funkcje, które nie znajdują się w normach ECMA.  
+
+> [!NOTE]
+> Dołączeniu nakładu całej społeczności, aby [dokumentów sieci web MDN](https://developer.mozilla.org/en-US/) zasobów programowanie kompleksowych, najważniejszych sieci web, przez przekierowywanie wszystkie (500 + strony) firmy Microsoft JavaScript API reference w witrynie docs.microsoft.com do ich MDN odpowiedniki. Aby uzyskać więcej informacji, zobacz [anonsu](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Można użyć [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] kodu w aplikacji przeglądarki HTML, CSS i modelu DOM (Document Object), reprezentujący HTML i przeglądarka obiektów.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24789085"
 -   Aby dowiedzieć się, jak za pomocą interfejsu API środowiska wykonawczego systemu Windows z użyciem języka JavaScript, zobacz [przy użyciu środowiska uruchomieniowego systemu Windows w języku JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md).  
   
  Edytor kodu JavaScript w programie Visual Studio zapewnia obsługę technologii IntelliSense. Aby uzyskać więcej informacji, zobacz [IntelliSense dla JavaScript](http://go.microsoft.com/fwlink/p/?LinkId=256499).  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- Więcej informacji na temat języka JavaScript można znaleźć w poniższych sekcjach.  
-  
- [Nowości w języku JavaScript](../javascript/what-s-new-in-javascript.md)  
- W tym artykule opisano nowe funkcje w języku JavaScript.  
-  
- [Podstawowe założenia JavaScript](../javascript/javascript-fundamentals.md)  
- Zawiera wprowadzenie do podstawowych struktur w języku JavaScript.  
-  
- [Zaawansowane JavaScript](../javascript/advanced/advanced-javascript.md)  
- W tym artykule wyjaśniono zaawansowane funkcje języka JavaScript, takie jak rekursja, tablice, rozwiązywanie problemów i tak dalej.  
-  
- [JavaScript — odwołanie](../javascript/reference/javascript-reference.md)  
- W tym artykule wyjaśniono elementy języka JavaScript.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Model obiektów dokumentu](http://go.microsoft.com/fwlink/?LinkId=148095)

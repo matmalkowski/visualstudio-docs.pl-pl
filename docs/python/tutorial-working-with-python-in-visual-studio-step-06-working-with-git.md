@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fb05e6032e985d2e282b089ba5afc93421f4d82
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965023"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946778"
 ---
-# <a name="step-6-working-with-git"></a>Krok 6: Praca z usługą Git
+# <a name="step-6-work-with-git"></a>Krok 6: Praca z usługą Git
 
 **Poprzedni krok: [instalowanie pakietów i zarządzanie środowiskiem Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Ten artykuł zawiera omówienie tworzenia lokalnego repozytorium Git dla istniej
 
 1. Korzystając z lokalnego repozytorium, zatwierdzone zmiany przejdź bezpośrednio do repozytorium. Jeśli korzystasz z repozytorium zdalnym nagłówek listy rozwijanej wybierz **Team Explorer**, wybierz **synchronizacji** Aby przełączyć się do **synchronizacji** sekcji i pracy z Brak przedstawionych ściągania i pobieranie poleceń.
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 Krótki przewodnik tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: Klonuj repozytorium kodu języka Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

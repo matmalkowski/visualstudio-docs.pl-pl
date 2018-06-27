@@ -1,26 +1,28 @@
 ---
 title: Subskrypcje programu Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327193"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946929"
 ---
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
+
 Visual Studio subskrypcji jest rozbudowany zestaw zasoby umożliwiające tworzenie, wdrażanie i zarządzanie niezawodnych aplikacji na platformach preferowanych i urządzeń, takich jak Windows, iOS, Android i Linux.  Korzyści z subskrypcji obejmują dostęp do narzędzi dla deweloperów, usługi w chmurze i oprogramowania, szkoleniom i obsługę projektowania i testowania potrzeb.
 
-##  <a name="get-started"></a>Rozpocznij
+## <a name="get-started"></a>Rozpocznij
+
 Administratorzy Zaloguj się do [ https://manage.visualstudio.com ](https://manage.visualstudio.com) można przypisać subskrypcji do zespołu.<br>
 Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualstudio.com) do korzyści z subskrypcji.
 
@@ -134,6 +136,12 @@ Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualst
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Co nowego?
+
+Aby subskrypcji jeszcze bardziej użyteczna, możemy Dodawanie i aktualizowanie subskrypcji korzyści często. Aby dowiedzieć się więcej, zobacz [nowości w ramach subskrypcji](whats-new-in-subscriptions.md) strony.
 
 ---
 

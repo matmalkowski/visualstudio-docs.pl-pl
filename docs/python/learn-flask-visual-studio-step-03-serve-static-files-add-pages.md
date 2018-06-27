@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b6c0e01106664429b3d355e488b453fa05cca4c6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752503"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946965"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Samouczek krok 3: obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługi plików statycznych, dodać strony i użyj szablonu dziedziczenia
 
 **Poprzedni krok: [tworzenie aplikacji platformy Flask widoki i szablony strony](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,7 +283,7 @@ Poniższe kroki prezentują dziedziczenia:
 > [!div class="nextstepaction"]
 > [Szablon projektu sieci Web platformy Flask pełny](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - Aby uzyskać więcej możliwości Jinja szablonów, takich jak przepływu sterowania, zobacz [Jinja szablon projektanta dokumentacji](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Aby uzyskać więcej informacji na temat używania `url_for`, zobacz [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) w dokumentacji obiektu aplikacji platformy Flask (flask.pocoo.org)

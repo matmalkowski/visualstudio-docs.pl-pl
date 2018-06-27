@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: cea618f0b2670e1f36c39b21a8ed1feddd379cec
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425754"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946818"
 ---
-# <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Okno interaktywny REPL
 
 **Poprzedni krok: [kodu napisanego i uruchomione](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
@@ -95,7 +95,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 > [!div class="nextstepaction"]
 > [Uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Przy użyciu okna interaktywnego](python-interactive-repl-in-visual-studio.md)
 - [Użycie IPython REPL](interactive-repl-ipython.md)

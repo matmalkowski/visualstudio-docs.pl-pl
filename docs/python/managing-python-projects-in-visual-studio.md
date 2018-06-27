@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2ed8b99f51cbcce5445ef0c6f27f26ddfe5400f4
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032193"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947092"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty języka Python w programie Visual Studio
 
@@ -109,7 +109,7 @@ Połączone pliki są ignorowane w dowolnej z następujących warunków:
 - Połączony plik zawiera łącze metadanych i ścieżki łącza jest ścieżką względną poza hierarchii projektu
 - Ścieżka łącza jest ścieżką do katalogu głównego
 
-### <a name="working-with-linked-files"></a>Praca z plikami połączonego
+### <a name="work-with-linked-files"></a>Praca z plikami połączonego
 
 Aby dodać istniejący element jako łącza, kliknij prawym przyciskiem myszy folder w projekcie, w miejsce którego chcesz dodać plik, a następnie wybierz **Dodaj > Kończenie elementu...** . W oknie dialogowym, wybierz plik i wybierz **Dodaj jako Link** z listy rozwijanej na **Dodaj** przycisku. Pod warunkiem, że nie ma żadnych plików powodujące konflikt, to polecenie tworzy łącze w wybranym folderze. Jednak łącze nie została dodana, jeśli istnieje już plik o takiej samej nazwie lub łącze do tego pliku już istnieje w projekcie.
 

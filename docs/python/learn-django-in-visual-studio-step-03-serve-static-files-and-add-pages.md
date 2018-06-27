@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750337"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947079"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Samouczek krok 3: obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługi plików statycznych, dodać strony i użyj szablonu dziedziczenia
 
 **Poprzedni krok: [tworzenie aplikacji Django z widokami i strony szablonów](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,7 +277,7 @@ Poniższe kroki prezentują dziedziczenia:
 > [!div class="nextstepaction"]
 > [Użyj pełnego szablonu projektu sieci Web Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Pisanie pierwszej aplikacji Django, część 3 (widoki)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Aby uzyskać więcej możliwości szablonów Django, takich jak przepływu sterowania, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

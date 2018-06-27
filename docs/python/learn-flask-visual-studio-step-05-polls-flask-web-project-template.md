@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c99dea00506fa838a2bb5c800fa05b7d55af3844
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752515"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947105"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Samouczek krok 5: należy użyć szablonu projektu sieci Web platformy Flask sond
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web platformy Flask sond
 
 **Poprzedni krok: [użyj pełnego szablonu projektu sieci Web platformy Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 

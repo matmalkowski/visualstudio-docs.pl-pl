@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4c50a7b6e3fe14f27bfd78e6814f9e120864d60
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752505"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947497"
 ---
-# <a name="tutorial-step-4-use-the-full-flask-web-project-template"></a>Samouczek krok 4: Użyj pełnego szablonu projektu sieci Web platformy Flask
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Użyj pełnej szablonu projektu sieci Web platformy Flask
 
 **Poprzedni krok: [obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -231,8 +231,8 @@ Możesz eksperymentować zarówno Jinja i Jade składni, aby zobaczyć, która z
 > [!div class="nextstepaction"]
 > [Szablon projektu sieci Web platformy Flask sond](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Pisanie pierwszej aplikacji platformy Flask, część 4 - formularzy i rodzajowy widoków](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade na GitHib (dokumentacja)](https://github.com/liuliqiang/pyjade) (witrynie github.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się flask](https://github.com/Microsoft/python-sample-vs-learn-flask)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

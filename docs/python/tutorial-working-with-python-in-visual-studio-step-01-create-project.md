@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2eadee7562f8dd08de55f333ade005ceaf766a66
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031712"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946860"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z języka Python w programie Visual Studio
 
 Python to niezawodne, elastyczne, łatwe dowiedzieć się, bez używania we wszystkich systemach operacyjnych i obsługiwanych przez społeczność deweloperów silne i wiele bibliotek wolnego popularnych język programowania. Język obsługuje wszystkie środki projektowanie, łącznie z aplikacji sieci web, usług sieci web, aplikacji klasycznych, skrypty i obliczanie naukowe i jest używany przez wiele uczelni, służące zwykłych deweloperzy i deweloperów podobne.
 
@@ -73,7 +73,7 @@ W tym samouczku rozpoczynać prostego projektu zawierającego jeden pusty plik k
 > [!div class="nextstepaction"]
 > [Zapisywanie i uruchamiania kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Projekty języka Python w programie Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Dowiedz się więcej o języku Python w python.org](https://www.python.org)

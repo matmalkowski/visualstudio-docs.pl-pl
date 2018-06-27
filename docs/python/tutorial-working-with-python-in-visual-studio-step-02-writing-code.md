@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 6624e6730d141421dc4373f8ee9cef91edc9efd6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031553"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947053"
 ---
-# <a name="step-2-writing-and-running-code"></a>Krok 2: Pisania i uruchamiania kodu
+# <a name="step-2-write-and-run-code"></a>Krok 2: Zapisu i uruchomienia kodu
 
-**Poprzedni krok: [tworzenia nowego projektu języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Poprzedni krok: [Utwórz nowy projekt języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jest zwykle miejsca pracy *zawartość* plików, takich jak kodu źródłowego. Edytor zna kontekstowej typ pliku, edytowania, w tym języku programowania (na podstawie pliku rozszerzenia), i udostępnia funkcje właściwe dla danego języka, takie jak kolorowanie składni i automatycznego uzupełniania za pomocą funkcji IntelliSense.
 
@@ -91,7 +91,7 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
 > [!div class="nextstepaction"]
 > [W oknie interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Edytowanie kodu](editing-python-code-in-visual-studio.md)
 - [Formatowanie kodu](formatting-python-code.md)

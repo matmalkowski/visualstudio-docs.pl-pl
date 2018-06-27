@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103141"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946978"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Samouczek krok 5: uwierzytelnianie użytkowników w Django
+# <a name="step-5-authenticate-users-in-django"></a>Krok 5: Uwierzytelnianie użytkowników w Django
 
 **Poprzedni krok: [użyj pełnego szablonu projektu sieci Web Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -33,7 +33,7 @@ W tym kroku dowiesz się:
 
 Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu, które są związane z:
 
-1. Jeśli nie zostały już wykonane z instrukcjami wyświetlanymi w `readme.html` pliku w katalogu głównym projektu, aby utworzyć konta administratora (administrator), zrób to teraz.
+1. Jeśli nie jest jeszcze wykonaniu instrukcji w `readme.html` pliku w katalogu głównym projektu, aby utworzyć konta administratora (administrator), zrób to teraz.
 
 1. Uruchamianie aplikacji z programu Visual Studio za pomocą **debugowania** > **Rozpocznij debugowanie** (F5). Gdy aplikacja zostanie wyświetlona w przeglądarce, która obserwować **Zaloguj** zostanie wyświetlona w prawym górnym rogu paska nawigacyjnego.
 
@@ -62,7 +62,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     {% endif %}
     ```
 
-1. Ponieważ żaden użytkownik nie jest uwierzytelniony przy pierwszym uruchomieniu aplikacji, ten kod szablonu renderuje tylko "Zaloguj" łącze do ścieżki względnej "login". Jak określono w `urls.py` opisane w poprzedniej sekcji, że trasy jest mapowany na `django.contrib.auth.views.login` widok, w którym znajduje się następujące dane:
+1. Ponieważ żaden użytkownik nie jest uwierzytelniony przy pierwszym uruchomieniu aplikacji, ten kod szablonu renderuje tylko "Zaloguj" łącze do ścieżki względnej "login". Jak określono w `urls.py` (jak pokazano w poprzedniej sekcji), tej trasy jest mapowany na `django.contrib.auth.views.login` widoku. Ten widok otrzymuje następujące dane:
 
     ```python
     {
@@ -95,7 +95,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
                                        'placeholder':'Password'}))
     ```
 
-    Jak widać, ta klasa formularza jest pochodną `AuthenticationForm` i zastąpi pola nazwy użytkownika i hasła, aby dodać tekst zastępczy. Szablon programu Visual Studio zawiera ten kod jawne przy założeniu, że prawdopodobnie należy do dostosowywania formularza, takie jak dodawanie walidacji siły hasła.
+    Jak widać, ta klasa formularza jest pochodną `AuthenticationForm` i zastąpi pola nazwy użytkownika i hasła, aby dodać tekst zastępczy. Szablon programu Visual Studio zawiera ten kod jawne przy założeniu, że prawdopodobnie chcesz dostosować formularz, takie jak dodawanie walidacji siły hasła.
 
 1. Po przejściu do strony logowania, następnie renderuje aplikacji `login.html` szablonu. Zmienne `{{ form.username }}` i `{{ form.password }}` renderowania `CharField` formularzy z `BootstrapAuthenticationForm`. Istnieje również wbudowane sekcję, aby wyświetlić błędy sprawdzania poprawności, a element gotowych do logowania społecznościowych, jeśli użytkownik chce dodać tych usług.
 
@@ -144,13 +144,13 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     {% endblock %}
     ```
 
-1. Po przesłaniu formularza Django podejmie próbę uwierzytelniania poświadczenia podane przez użytkownika (na przykład poświadczenia użytkownika nadrzędnego). Jeśli uwierzytelnianie nie powiedzie się, nadal będą na tej samej stronie, ale `form.errors` ustawioną na true. Jeśli uwierzytelnianie zakończy się pomyślnie, Django przechodzi do względny adres URL w polu "dalej" `<input type="hidden" name="next" value="/" />`, czyli w tym przypadku strony głównej (`/`).
+1. Po przesłaniu formularza Django podejmuje próbę uwierzytelnienia poświadczeń użytkownika (na przykład poświadczenia użytkownika nadrzędnego). W przypadku niepowodzenia uwierzytelniania, użytkownik pozostanie na bieżącej stronie, ale `form.errors` ustawioną na true. Jeśli uwierzytelnianie zakończy się pomyślnie, Django przechodzi do względny adres URL w polu "dalej" `<input type="hidden" name="next" value="/" />`, czyli w tym przypadku strony głównej (`/`).
 
 1. Teraz, gdy strona główna jest renderowany ponownie, `user.is_authenticated` właściwość ma wartość true, gdy `loginpartial.html` renderowania szablonu. W związku z tym zostanie wyświetlony komunikat "Hello (nazwa_użytkownika)" i "Wyloguj". Można użyć `user.is_authenticated` w innych częściach aplikacji, aby sprawdzić uwierzytelniania.
 
     ![Witaj wiadomości i wylogowywania kontrolki na stronie aplikacji projektu sieci Web Django](media/django/step05-logoff-control.png)
 
-1. Aby sprawdzić, czy uwierzytelniony użytkownik jest autoryzowany do dostępu do określonych zasobów, należy pobrać uprawnienia specyficzne dla użytkownika z bazy danych dla tego użytkownika. Aby uzyskać więcej informacji, zobacz [przy użyciu uwierzytelniania systemu Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django dokumentów).
+1. Aby sprawdzić, czy uwierzytelniony użytkownik jest autoryzowany do dostępu do określonych zasobów, musisz pobrać uprawnienia specyficzne dla użytkownika z bazy danych. Aby uzyskać więcej informacji, zobacz [przy użyciu uwierzytelniania systemu Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django dokumentów).
 
 1. Administratora lub administratora, w szczególności jest autoryzowany do dostępu wbudowanych interfejsy administratora Django, użyj względnych adresów URL "/admin/" i "/ admin/doc /". Aby włączyć te interfejsy, otwórz projekt Django `urls.py` i Usuń komentarze z poniższych:
 
@@ -200,14 +200,14 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: co to jest celem {% crsf_token %} tagów, które pojawia się w \<formularza\> elementy?
 
-Odpowiedź: `{% crsf_token %}` znacznik zawiera wbudowane w Django [międzylokacyjnej ochrony sfałszowaniem (crsf) żądania](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django dokumentów). Zwykle Dodaj ten tag do elementów, które obejmuje metody żądania POST, PUT i DELETE, takie jak formularz, a funkcja renderowania szablonu (`render`) wstawia potrzeby ochrony.
+Odpowiedź: `{% crsf_token %}` znacznik zawiera wbudowane w Django [międzylokacyjnej ochrony sfałszowaniem (crsf) żądania](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django dokumentów). Zazwyczaj ten tag są dodawane do elementów, które obejmuje metody żądania POST, PUT i DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia potrzeby ochrony.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
 > [Należy użyć szablonu projektu sieci Web Django sond](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="go-deeper"></a>Przejść głębiej
 
 - [Uwierzytelnianie użytkownika w Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
