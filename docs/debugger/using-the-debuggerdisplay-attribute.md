@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573248"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057589"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Za pomocą atrybutu DebuggerDisplay
 [Debuggerdisplayattribute — klasa](/dotnet/api/system.diagnostics.debuggerdisplayattribute) Określa, jak obiekt, właściwość lub pole jest wyświetlany w oknach zmiennych debugera. Ten atrybut można stosować do typów delegatów, właściwości, pól i zestawów.  
@@ -51,7 +51,7 @@ ms.locfileid: "34573248"
   
  Aby utworzyć autoexp.cs, otwórz wiersz polecenia zapasowej Developer dla VS2015 i uruchom następujące polecenia  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  

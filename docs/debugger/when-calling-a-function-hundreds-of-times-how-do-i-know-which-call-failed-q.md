@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6edf60616a3cbf67d05282ebd15798749b263f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdae654dacf7c5965d51cc39f7970bd0347b9dcf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481739"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056238"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Skąd wiadomo, gdy funkcja jest wywoływana setki razy, które wywołanie nie powiodło się?
 ## <a name="problem-description"></a>Opis problemu  
@@ -43,7 +43,7 @@ ms.locfileid: "31481739"
 ## <a name="solution"></a>Rozwiązanie  
  Można ustawić punktu przerwania w funkcji z **liczba trafień** pola na wartość tak duży, że nigdy nie zostanie on osiągnięta. W takim przypadku ponieważ uważasz funkcji `CnvtV` nazywa się o kilka kilkaset razy, można ustawić **liczba trafień** do 1000 lub większej. Następnie uruchom program i poczekaj, aż to Niepowodzenie wywołania. Gdy nie powiedzie się, Otwórz okno punktów przerwania i przyjrzyj się na liście punktów przerwania. Punkt przerwania ustawiony na `CnvtV` pojawia się, że liczba trafień i liczby iteracji pozostałych:  
   
-```  
+```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  
 ```  
   

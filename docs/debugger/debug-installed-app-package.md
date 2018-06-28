@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059343"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debugowanie pakietu aplikacji zainstalowanych w programie Visual Studio (UWP)
 
@@ -90,7 +91,7 @@ Podczas debugowania pakietu aplikacji zainstalowanych na komputerze zdalnym po r
      > [!NOTE]
 > Przedstawia XBox lub urządzenia HoloLens uruchomi aplikację w debugerze, jeśli jest już uruchomiona.
 
-Aby uzyskać informacje na Zaawansowane opcje zdalnego wdrażania usług aplikacji platformy uniwersalnej systemu Windows, zobacz [wdrażanie i debugowanie aplikacji platformy uniwersalnej systemu Windows](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
+Informacje na Zaawansowane opcje zdalnego wdrażania usług aplikacji platformy uniwersalnej systemu Windows Zobacz [wdrażanie i debugowanie apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) platformy uniwersalnej systemu Windows. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  

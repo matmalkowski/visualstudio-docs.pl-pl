@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091f8fc770b2e9bc6ef2e61e8287f0e8ded5323
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 921cb50efa3806c550d7fe8c949e00c3eb08f478
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233616"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057414"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
-Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](/windows/desktop/Controls/visual-styles-overview). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Usuń błąd i publikowanie rozwiązania, należy wykonać następujące zadania:  
   
@@ -163,6 +163,6 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Omówienie style wizualne](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
+ [Omówienie style wizualne](/windows/desktop/Controls/visual-styles-overview)   
  [Włączanie style wizualne](https://msdn.microsoft.com/library/bb773175.aspx)   
  [Wiersze polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs)

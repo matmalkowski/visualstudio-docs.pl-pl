@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a29b8ec34a33ea43ede68ea477138cca58e16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474885"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057876"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Porady: pisanie funkcji raportowania błędów czasu wykonywania
 Raportów niestandardowych funkcji błędy środowiska wykonawczego musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Powinien on zwrócić wartość 1 dla debugera.  
@@ -33,7 +33,7 @@ Raportów niestandardowych funkcji błędy środowiska wykonawczego musi mieć t
   
 ## <a name="example"></a>Przykład  
   
-```  
+```cpp
 #include <stdio.h>  
 int errorhandler = 0;  
 void configureMyErrorFunc(int i)  
@@ -65,7 +65,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono bardziej złożonych funkcji raportowania niestandardowej. W tym przykładzie instrukcji switch obsługi różnych typów błędów, zgodnie z definicją w `reportType` parametr `_CrtDbgReportW`. Ponieważ użytkownik zastępuje `_CrtDbgReportW`, nie można użyć `_CrtSetReportMode`. Funkcja musi obsługiwać dane wyjściowe. Pierwszym argumentem zmiennej w tej funkcji ma wiele błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_rtc_seterrortype —](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
-```  
+```cpp
 #include <windows.h>  
 #include <stdarg.h>  
 #include <rtcapi.h>  
@@ -110,7 +110,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ## <a name="example"></a>Przykład  
  Użyj `_RTC_SetErrorFuncW` do zainstalowania funkcji niestandardowych zamiast `_CrtDbgReportW`. Aby uzyskać więcej informacji, zobacz [_rtc_seterrorfuncw —](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` Zwracana wartość to poprzedniej funkcji raportowania, którego można zapisywać i można przywrócić w razie potrzeby.  
   
-```  
+```cpp
 #include <rtcapi.h>  
 int main()  
 {  

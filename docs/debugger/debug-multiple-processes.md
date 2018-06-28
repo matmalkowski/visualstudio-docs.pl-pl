@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08a089feceb6ba66791358096e3c4663df06494e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 498c865b1a904af28386e27fe58836cb0c0e2070
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478229"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057970"
 ---
 # <a name="debug-multiple-processes"></a>Debugowanie wielu procesów
 Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz między procesami, Podziel i kontynuować działanie, krokowo źródła, Zatrzymaj debugowanie i przerwanie lub odłączyć od procesów.  
@@ -38,14 +38,10 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
   
 2.  Na **debugowanie**, **ogólne** wyczyść **Przerwij wszystkie procesy w przypadku przerwania jednego procesu** pole wyboru.  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
-  
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Znajdowanie symboli i źródłowych plików (.pdb)  
  Aby kod źródłowy procesu, debuger musi mieć dostęp do plików źródłowych i pliki symboli procesu. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
  Jeśli nie masz dostępu do plików dla procesu, można nawigować przy użyciu okna dezasemblacji. Zobacz [porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Uruchamiać wiele procesów w rozwiązaniu programu VS, dołączyć do procesu, automatyczne uruchamianie procesu w debugerze  
   
@@ -82,8 +78,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [uruchamiać wiele procesów w rozwiązaniu programu VS, dołączyć do procesu, automatyczne uruchamianie procesu w debugerze](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
-  
 ####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Uruchom wielu projektów w rozwiązaniu  
   
 1.  Wybierz rozwiązanie w Eksploratorze rozwiązań, a następnie wybierz pozycję **właściwości** w menu kontekstowym.  
@@ -93,8 +87,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
 3.  Dla każdego projektu, który chcesz zmienić, wybierz **Start**, **uruchomienie bez debugowania**, lub **Brak**.  
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [uruchamiać wiele procesów w rozwiązaniu programu VS, dołączyć do procesu, automatyczne uruchamianie procesu w debugerze](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ###  <a name="BKMK_Attach_to_a_process"></a> Dołączanie do procesu  
  Debuger może również do *dołączyć* programy są uruchomione w procesach poza Visual Studio, w tym programy, które są uruchomione na urządzeniu zdalnym. Po dołączeniu do programu można używać debugera wykonywania poleceń, sprawdź stan programu i itd. Możliwość kontroli program może być ograniczona, w zależności od tego, czy program został skompilowany bez informacji o debugowaniu i czy masz dostęp do kodu źródłowego i czy kompilatora JIT środowiska uruchomieniowego języka wspólnego służy do śledzenia informacji o debugowaniu.  
@@ -106,8 +98,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
  Kliknij przycisk **Debuguj > dołączyć do procesu**. Na **dołączyć do procesu** oknie dialogowym Wybierz proces z **dostępne procesy** listy, a następnie wybierz pozycję **Attach**.  
   
  ![Okno dialogowe procesu dołączania do](../debugger/media/dbg_attachtoprocessdlg.png "DBG_AttachToProcessDlg")  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Automatyczne uruchamianie procesu w debugerze  
  Czasami może być konieczne debugowania kodu uruchamiania programu, który jest uruchamiana przez inny proces. Przykłady obejmują usługi i działania niestandardowego Instalatora. W tych scenariuszach możesz mieć uruchamiania debugera i dołączać automatycznie podczas uruchamiania aplikacji.  
@@ -131,8 +121,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
      ![Ciąg, okno dialogowe Edytowanie](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
   
  ![Automatyczne debugera Rozpocznij wprowadzanie w regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "DBG_Execution_AutomaticStart_Result")  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Przełącz procesów, przerwanie i kontynuować działanie, kroków źródła  
   
@@ -161,16 +149,13 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [przełącznika procesów, przerwanie i kontynuować działanie, kroków źródła](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
-  
 ###  <a name="BKMK_Break__step__and_continue_commands"></a> Przerwij, kroku i kontynuować poleceń  
   
 > [!NOTE]
 >  Domyślnie podziału, kontynuować i poleceń debugera krok wpływają na wszystkie procesy, które są debugowane. Aby zmienić to zachowanie, zobacz [skonfigurować sposób wykonywania wielu procesów](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
-||||  
+|**Polecenie**|**Przerwij wszystkie procesy w przypadku przerwania jednego procesu**<br /><br /> Checked (ustawienie domyślne)|**Przerwij wszystkie procesy w przypadku przerwania jednego procesu**<br /><br /> Wyczyszczone|  
 |-|-|-|  
-|**polecenie**|**Przerwij wszystkie procesy w przypadku przerwania jednego procesu**<br /><br /> Checked (ustawienie domyślne)|**Przerwij wszystkie procesy w przypadku przerwania jednego procesu**<br /><br /> Wyczyszczone|  
 |**Debugowanie** menu:<br /><br /> -   **Przerwij wszystkie**|Przerwij wszystkie procesy.|Przerwij wszystkie procesy.|  
 |**Debugowanie** menu:<br /><br /> -   **Kontynuuj**|Wznawianie wszystkich procesów.|Wznawianie wszystkich procesów wstrzymane.|  
 |**Debugowanie** menu:<br /><br /> -   **Wkrocz**<br />-   **Przekrocz**<br />-   **Wyjdź**|Wszystkie procesy są uruchamiane podczas bieżącej kroki tej procedury.<br /><br /> Następnie Przerwij wszystkie procesy.|Bieżący kroki tej procedury.<br /><br /> Wznawia zawieszone procesy.<br /><br /> Nadal uruchomione procesy.|  
@@ -181,8 +166,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
 |**Procesy** menu kontekstowe okna:<br /><br /> -   **Kontynuuj proces**|Brak|Wznawia wybrany proces.<br /><br /> Inne procesy Obsługa stanu istniejącego (wstrzymany lub systemem).|  
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [przełącznika procesów, przerwanie i kontynuować działanie, kroków źródła](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Zatrzymaj debugowanie, przerwanie lub odłączyć od procesów  
   
@@ -205,9 +188,8 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
   
 ###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Zatrzymaj, przerwanie i odłączyć poleceń  
   
-|||  
-|-|-|  
-|**polecenie**|**Opis**|  
+|**Polecenie**|**Opis**|  
+|-|-| 
 |**Debugowanie** menu:<br /><br /> -   **Zatrzymaj debugowanie**|Chyba, że zachowanie zmieni się przez **procesów** okna **odłączyć podczas debugowania zatrzymuje** opcji:<br /><br /> 1.  Procesy uruchomione przez debuger są zakończone.<br />2.  Procesy dołączone są odłączone z debugera.|  
 |**Debugowanie** menu:<br /><br /> -   **Zakończ wszystkie**|Wszystkie procesy zostały zakończone.|  
 |**Debugowanie** menu:<br /><br /> -   **Odłącz wszystkich**|Debuger odłącza od wszystkich procesów.|  
@@ -216,8 +198,6 @@ Poniżej przedstawiono sposób Rozpocznij debugowanie procesów, Przełącz mię
 |**Procesy** menu kontekstowe okna:<br /><br /> -   **Odłącz podczas debugowania zatrzymuje**|Włącza zachowanie **debugowania**, **Zatrzymaj debugowanie** dla wybranego procesu:<br /><br /> -Zaznaczone: Debuger odłączenie od procesu.<br />-Wyczyszczone: Proces jest zakończony.|  
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zatrzymać debugowanie, przerwanie lub odłączyć od procesów](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
-  
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

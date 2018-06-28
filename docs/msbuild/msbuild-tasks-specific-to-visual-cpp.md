@@ -1,7 +1,7 @@
 ---
 title: MSBuild zadania właściwe dla Visual C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0aaec01c24e68c42d2dc87e71875f664b7b61def
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573762"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056514"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Zadania narzędzia MSBuild właściwe dla Visual C++
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  
@@ -47,9 +47,12 @@ Zadania Podaj kod uruchamiany podczas procesu kompilacji. Po zainstalowaniu prog
 |[MT, zadanie](../msbuild/mt-task.md)|Zawijania narzędzie Microsoft manifestu (mt.exe).|  
 |[RC, zadanie](../msbuild/rc-task.md)|Opakowuje narzędzia kompilatora zasobów systemu Windows firmy Microsoft (rc.exe).|  
 |[SetEnv, zadanie](../msbuild/setenv-task.md)|Ustawia lub usuwa wartość zmiennej określonego środowiska.|  
-|[VCMessage, zadanie](../msbuild/vcmessage-task.md)|Dzienniki ostrzeżenie wiadomości i komunikaty o błędach podczas kompilacji.|  
+|[VCMessage, zadanie](../msbuild/vcmessage-task.md)|Dzienniki ostrzeżenie wiadomości i komunikaty o błędach podczas kompilacji. (Nie mogą rozszerzać go. Tylko do użytku wewnętrznego.)|  
 |[XDCMake, zadanie](../msbuild/xdcmake-task.md)|Zawijania narzędzie dokumentacji XML (xdcmake.exe), które scala pliki dokumentacji XML (.xdc) w pliku XML.|  
-|[XSD, zadanie](../msbuild/xsd-task.md)|Zawijania narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy ze źródła.|  
+|[XSD, zadanie](../msbuild/xsd-task.md)|Zawijania narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy ze źródła. *Zobacz uwagi poniżej.*|  
 |[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)|Zawiera opis elementów MSBuild systemu.|  
 |[Zadania](../msbuild/msbuild-tasks.md)|W tym artykule opisano zadania, które są jednostkami kodu, który można łączyć, aby wygenerować kompilacji.|  
 |[Wpisywanie zadania](../msbuild/task-writing.md)|Opisuje sposób tworzenia zadania.|
+
+> [!NOTE]
+> W programie Visual Studio 2017 r. xsd.exe obsługę projektów języka C++ jest przestarzały. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API przez ręczne dodanie **CppCodeProvider.dll** w pamięci GAC.

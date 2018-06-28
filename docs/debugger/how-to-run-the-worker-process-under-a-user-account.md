@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475757"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057190"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
 Aby skonfigurować komputer, co umożliwia uruchamianie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) przy użyciu konta użytkownika, wykonaj następujące kroki.  
@@ -58,12 +58,12 @@ Aby skonfigurować komputer, co umożliwia uruchamianie [!INCLUDE[vstecasp](../c
   
 5.  Otwórz wiersz polecenia systemu Windows i zresetuj serwera, uruchamiając:  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     — lub —  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  

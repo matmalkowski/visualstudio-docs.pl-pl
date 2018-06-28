@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477667"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058038"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Porady: debugowanie w klastrze o wysokiej wydajności
 Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieje jednak kilka dodatkowych kwestii dotyczących. Wymagania ogólne ustawienia zdalnego, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  
@@ -95,9 +95,8 @@ Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajno�
 ## <a name="example"></a>Przykład  
  Poniższy przykład przedstawia sposób utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątku o nazwie `fourier1`.  
   
-```  
-(MachineName = marvin) & (ThreadName = fourier1)  
-```  
+`(MachineName = marvin) & (ThreadName = fourier1)`  
+
   
 ## <a name="see-also"></a>Zobacz też  
  [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

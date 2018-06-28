@@ -24,24 +24,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476913"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056605"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
-Można użyć **_rptn —**, i **_rptfn —** makra zdefiniowane w CRTDBG. H, aby zastąpić użycie `printf` instrukcje do debugowania. Te makra automatycznie znikają w Twojej wersji podczas kompilacji **_DEBUG** nie jest zdefiniowana, a więc nie trzeba umieścić je w **#ifdef**s.  
+W przypadku debugowania, można użyć **_rptn —** i **_rptfn —** makra zdefiniowane w CRTDBG. H, aby zastąpić użycie `printf` instrukcje. Nie trzeba je w inclose **#ifdef**s, ponieważ znikają one automatycznie w Twojej wersji podczas kompilacji **_DEBUG** nie jest zdefiniowany.  
   
 |Macro|Opis|  
 |-----------|-----------------|  
 |**_RPT0 —**, **_RPT1 —**, **_RPT2 —**, **_RPT3 —**, **_RPT4 —**|Generuje ciąg z komunikatem i zera do czterech argumentów. Dla _rpt1 — za pośrednictwem **_rpt4 —**, ciąg z komunikatem służy jako ciąg formatowania stylu funkcji printf dla argumentów.|  
-|**_RPTF0 —**, **_RPTF1 —**, **, _RPTF2 —**, **_RPTF4 —**|Taki sam jak **_rptn —**, ale makra te dane wyjściowe pliku nazwę i numer wiersza którym znajduje się makra.|  
+|**_RPTF0 —**, **_RPTF1 —**, **_RPTF2 —**, **_RPTF4 —**|Taki sam jak **_rptn —**, ale makra te dane wyjściowe pliku nazwę i numer wiersza którym znajduje się makra.|  
   
  Rozważmy następujący przykład:  
   
-```  
+```cpp
 #ifdef _DEBUG  
     if ( someVar > MAX_SOMEVAR )  
         printf( "OVERFLOW! In NameOfThisFunc( ),  
@@ -52,13 +52,13 @@ Można użyć **_rptn —**, i **_rptfn —** makra zdefiniowane w CRTDBG. H, ab
   
  Ten kod wyświetla wartości `someVar` i `otherVar` do **stdout**. Można zastosować następujące wywołanie `_RPTF2` zgłoszenia te same wartości, a ponadto pliku nazwę i numer wiersza:  
   
-```  
+```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- Jeśli okaże się, że określonej aplikacji wymaga debugowania raportowania, który makra dostarczony wraz z biblioteki wykonawczej języka C nie zostanie określona, można napisać makro zaprojektowany specjalnie w celu dopasowania do własnych wymagań. W jednym z plików nagłówka, na przykład możesz dołączyć kodu, takie jak następujące polecenie, aby zdefiniować makro o nazwie **ALERT_IF2**:  
+Może się okazać, że określonej aplikacji wymaga który makra dostarczony wraz z biblioteki wykonawczej języka C nie udostępniają raportowanie debugowania. W tych przypadkach można napisać makra zaprojektowany specjalnie w celu dopasowania do własnych wymagań. W jednym z plików nagłówka, na przykład możesz dołączyć kodu, takie jak następujące polecenie, aby zdefiniować makro o nazwie **ALERT_IF2**:  
   
-```  
+```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
 #define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
 #else                           /* For DEBUG builds   */  
@@ -72,14 +72,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Jedno wywołanie **ALERT_IF2** może wykonywać wszystkie funkcje **printf** kod na początku tego tematu:  
+ Jedno wywołanie **ALERT_IF2** może wykonać wszystkie funkcje **printf** kodu:  
   
-```  
+```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- Ponieważ makra niestandardowego można łatwo zmienić na bardziej lub mniej zgłaszanie informacji do różnych miejsc docelowych (w zależności od co to jest wygodniejsze), ta metoda może być szczególnie przydatne, jak rozwijać, wymagania dotyczące debugowania.  
+ Można łatwo zmienić makra niestandardowego do zgłaszania więcej lub mniej informacji do różnych miejsc docelowych. Ta metoda jest szczególnie przydatne jako rozwijać, wymagania dotyczące debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)

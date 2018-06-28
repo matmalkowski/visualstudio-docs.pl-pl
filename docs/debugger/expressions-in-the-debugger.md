@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454547"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056651"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatorów wyrażeń, działające po wprowadzeniu wyrażenia w **QuickWatch** okno dialogowe **czujki** okna, lub **Immediate** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okno i wielu innych miejscach w debugerze.
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - nieobsługiwane wyrażenia  
   
 ### <a name="dynamic-objects"></a>Obiekty dynamiczne  
- W wyrażeniach debugera, wypełnianych statycznie jako dynamiczny, można używać zmiennych. Jeśli obiekty, które implementują [interfejsu interfejs IDynamicMetaObjectProvider](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) są oceniane w oknie wyrażeń kontrolnych widoku dynamicznego węzeł zostanie dodany. Węzeł widoku dynamicznego pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości składników.  
+ W wyrażeniach debugera, wypełnianych statycznie jako dynamiczny, można używać zmiennych. Jeśli obiekty, które implementują [interfejsu interfejs IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) są oceniane w oknie wyrażeń kontrolnych widoku dynamicznego węzeł zostanie dodany. Węzeł widoku dynamicznego pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości składników.  
   
  Następujące funkcje obiekty dynamiczne nie są obsługiwane:  
   

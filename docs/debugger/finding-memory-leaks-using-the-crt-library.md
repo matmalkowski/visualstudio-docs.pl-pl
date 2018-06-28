@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233642"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057216"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, która była przydzielona wcześniej, są najbardziej delikatny i twardych do wykrycia błędów w aplikacji C/C++. Przeciek pamięci może pozostać niezauważone w pierwszej, ale wraz z upływem czasu, przeciek pamięci progresywnego może spowodować objawy zakresu spadek wydajności do awarii po uruchomieniu aplikacji za mało pamięci. Gorsze ulatniający aplikacji, która używa wszystkich dostępną pamięć, może spowodować inna aplikacja awarię, tworzenie pomyłek, które odpowiada aplikacji. Przecieki pamięci nieszkodliwe może być nawet pozornie objawowych innych problemów, które powinno zostać naprawione.  
@@ -48,7 +48,7 @@ Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, k
   
  Aby włączyć funkcje sterty debugowania, Dołącz poniższe instrukcje w programie:  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -62,13 +62,13 @@ Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, k
   
  Po włączeniu funkcji sterty debugowania przy użyciu tych instrukcji, możesz nawiązać połączenie z `_CrtDumpMemoryLeaks` przed punkt wyjścia aplikacji, aby wyświetlić raport przeciek pamięci, gdy aplikacja jest kończona:  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  Jeśli aplikacja zawiera wielu wyjść, nie trzeba ręcznie nawiązać połączenie z [_crtdumpmemoryleaks —](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) w każdym punkcie wyjścia. Wywołanie `_CrtSetDbgFlag` na początku aplikacji spowoduje automatyczne wywołanie `_CrtDumpMemoryLeaks` w każdej zamknąć punktu. Należy ustawić pól bitowych dwóch pokazano poniżej:  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -76,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  Jeśli używasz biblioteki biblioteki może zresetować dane wyjściowe do innej lokalizacji. W takim przypadku można ustawić lokalizacja danych wyjściowych do **dane wyjściowe** okna, jak pokazano poniżej:  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretowanie raportu przeciek pamięci  
  Jeśli aplikacja nie ma zdefiniowanej `_CRTDBG_MAP_ALLOC`, [_crtdumpmemoryleaks —](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) wyświetla raport przeciek pamięci, że wygląda podobnie do następującej:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -93,7 +93,7 @@ Object dump complete.
   
  Jeśli aplikacja definiuje `_CRTDBG_MAP_ALLOC`, raport przeciek pamięci wygląda następująco:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -202,20 +202,20 @@ Oznacza to, że ujawnione przydział został w wierszu 20 debug_new.cpp.
   
  Można również ustawić alokacji pamięci punktów przerwania w kodzie. Istnieją dwa sposoby wykonania tej czynności:  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  lub:  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>Porównywanie stanów pamięci  
  Innej techniki do lokalizowania przecieki pamięci obejmuje tworzenie migawek stan pamięci aplikacji w punktach klucza. Aby utworzyć migawkę stanu pamięci w danym punkcie w aplikacji, Utwórz **_crtmemstate —** struktury i przekaż go do `_CrtMemCheckpoint` funkcji. Ta funkcja wprowadza w strukturze migawki bieżący stan pamięci:  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -225,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  Do wyjściowego zawartość **_crtmemstate —** struktury należy przekazać do struktury `_ CrtMemDumpStatistics` funkcji:  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` generuje zrzutu pamięci stan, który wygląda następująco:  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -245,7 +245,7 @@ Total allocations: 3764 bytes.
   
  Aby ustalić, czy w sekcji kodu wystąpił wyciek pamięci, można wykonać migawki stanu pamięci przed i po sekcji i następnie użyć `_ CrtMemDifference` Aby porównać dwa stany:  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

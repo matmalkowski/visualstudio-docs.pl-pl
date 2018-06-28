@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474937"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056698"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowania języka zintegrowane zapytania (LINQ) kodu, z pewnymi ograniczeniami. Najbardziej debugowania funkcje działają w instrukcjach LINQ, w tym wykonywanie krok po kroku, ustawianie punktów przerwania i wyświetlania wyników w oknach debugera. W tym temacie opisano głównych ograniczenia debugowanie LINQ.  
@@ -53,7 +53,7 @@ ms.locfileid: "31474937"
   
  Jeśli krokowo Poniższy przykładowy kod, debuger prezentuje deklaracji zapytania lub tworzenie zapytań, za pomocą jednej instrukcji.  
   
-```  
+```vb
 Function MyFunction(ByVal x As Char)  
     Return True  
 End Function  
@@ -76,7 +76,7 @@ End Sub
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Zastępowanie predykat funkcji, aby włączyć wykonywania krokowego (Visual Basic)  
  Jeśli do wykonania kroków opisanych predykatu kodu na potrzeby debugowania, można zastąpić predykatu wywołania funkcji, które zawiera oryginalny kod predykatu. Załóżmy na przykład, ten kod:  
   
-```  
+```vb
 Dim items() as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -89,7 +89,7 @@ Next
   
  Można przenieść kod predykatu nową funkcję o nazwie `IsEven`:  
   
-```  
+```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  

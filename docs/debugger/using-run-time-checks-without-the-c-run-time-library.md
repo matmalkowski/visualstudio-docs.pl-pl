@@ -25,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 533e4254b6222af1713691a0c448cad1383cd273
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a4fb9f61242490b30e1b89132f4e79fbb56d48de
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481762"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056019"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Korzystanie ze sprawdzania w trakcie wykonywania bez biblioteki wykonawczej języka C
 Możesz połączyć program bez biblioteki wykonawczej języka C, za pomocą **/nodefaultlib**i chcesz używać sprawdzania w trakcie wykonywania, należy połączyć z RunTmChk.lib.  
   
  `_RTC_Initialize` Inicjuje program na potrzeby sprawdzania w trakcie wykonywania. Jeśli nie zostanie połączony z biblioteki wykonawczej języka C, musisz sprawdzić, aby zobaczyć, czy program ma być kompilowana z sprawdzanie błędów czasu wykonywania przed wywołaniem `_RTC_Initialize`w następujący sposób:  
   
-```  
+```cpp
 #ifdef __MSVC_RUNTIME_CHECKS  
     _RTC_Initialize();  
 #endif  
@@ -45,7 +45,7 @@ Możesz połączyć program bez biblioteki wykonawczej języka C, za pomocą **/
   
  Jeśli nie możesz połączyć z biblioteki wykonawczej języka C, również muszą definiować funkcji o nazwie `_CRT_RTC_INITW`. `_CRT_RTC_INITW` funkcja zdefiniowana przez użytkownika jest instalowany jako błąd domyślny raportowania funkcji, w następujący sposób:  
   
-```  
+```cpp
 // C version:  
 _RTC_error_fnW __cdecl _CRT_RTC_INITW(  
         void *res0, void **res1, int res2, int res3, int res4)  
