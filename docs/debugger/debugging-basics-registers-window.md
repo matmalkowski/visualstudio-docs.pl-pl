@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474417"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056300"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Informacje o oknie rejestrów w programie Visual Studio
 **Rejestruje** okno jest dostępne tylko wtedy, gdy w włączone jest debugowanie poziomie adresu **opcje** okno dialogowe **debugowanie** węzła.  
@@ -41,13 +41,9 @@ ms.locfileid: "31474417"
   
  Aby uzyskać więcej informacji na temat wyświetlania **rejestruje** okna, zobacz [korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md).  
   
- Podczas przeglądania **rejestruje** okna, zobaczysz wpisów, np. w tym przykładzie:  
+ Podczas przeglądania **rejestruje** , zostaną wyświetlone wpisy, takich jak `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
-  
- Symbol z lewej strony logowania = jest nazwa rejestru, EAX, w tym przypadku. Liczba z prawej strony logowania = reprezentuje zawartość rejestru.  
+ Symbol z lewej strony `=` znak jest nazwa rejestru `EAX`, w tym przypadku. Liczba z prawej strony `=` znak reprezentuje zawartość rejestru.  
   
  **Rejestruje** okna umożliwia wykonanie więcej niż tylko widok zawartości rejestru. Podczas pracy w trybie przerwania w kodzie natywnym, można kliknij zawartość rejestru i edytować wartość. Nie jest to coś, co należy zrobić losowo. Bez zrozumienia rejestru, którą edytujesz, a dane, które zawiera, w wyniku edycji careless jest prawdopodobnie awarię programu lub niepożądane skutki. Niestety szczegółowy opis zestawów rejestru dla różnych procesorów Intel i zgodnych z Intel daleko wykracza poza zakres to krótkie wprowadzenie.  
   

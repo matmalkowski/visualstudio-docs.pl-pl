@@ -1,7 +1,7 @@
 ---
 title: Praca z samouczka Python, krok 2, pisania i uruchamiania kodu
 description: Krok 2 przewodnika podstawowe możliwości języka Python w programie Visual Studio, w tym edytowanie kodu i uruchamianie projektu.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6624e6730d141421dc4373f8ee9cef91edc9efd6
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 6db523754baa24465406d0472589d92454cc1afe
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947053"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056527"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Zapisu i uruchomienia kodu
 

@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478047"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057473"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
 
@@ -93,7 +93,7 @@ W przypadku wybrania wyjątek **ustawienia wyjątków** okna, spowoduje przerwan
   
      Jeśli masz **accessviolationexception —** zaewidencjonowany **ustawienia wyjątków**, po uruchomieniu tego kodu podczas wykonywania debugera spowoduje przerwanie na `throw` wiersza. Następnie można kontynuować wykonywania. Obie linie powinien być wyświetlany w konsoli:  
   
-    ```  
+    ```cmd
     caught exception  
     goodbye  
     ```  

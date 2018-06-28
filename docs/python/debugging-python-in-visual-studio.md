@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python
 description: Wskazówki dotyczące funkcji debugowania w programie Visual Studio specjalnie z myślą o kod języka Python, w tym ustawianie punktów przerwania, wykonywanie krok po kroku, sprawdzania wartości, patrzeć wyjątków i debugowanie w oknie interaktywnym.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dbce50a578bc056510b9982dce63d355da383e93
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032258"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058185"
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 

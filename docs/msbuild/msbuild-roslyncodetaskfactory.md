@@ -1,5 +1,5 @@
 ---
-title: Zadania wbudowane programu MSBuild | Dokumentacja firmy Microsoft
+title: Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 09/21/2017
 ms.technology: msbuild
@@ -12,29 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77bda15937c9761d21f982a7a5006d457ac91d40
+ms.openlocfilehash: b12d0ae775d37a436898bb34acca0c7f4a50e649
 ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056782"
+ms.locfileid: "37059349"
 ---
-# <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
-Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
-  
- Uruchamianie programu .NET Framework w wersji 4, można utworzyć zadania wbudowanego w pliku projektu. Nie masz Utwórz osobny zestaw do obsługi zadań. Dzięki temu łatwiejsze do śledzenia kodu źródłowego i łatwiejsze do wdrożenia zadania. Kod źródłowy jest zintegrowany skryptu.  
-  
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
+Podobnie jak [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory nawiązywał generowanie zestawów w pamięci zadań do użycia jako zadania wbudowane kompilatory Roslyn między platformami.  Zadania RolynCodeTaskFactory docelowego .NET Standard, a może pracować nad programów .NET Framework i .NET Core, a także innych platform, takich jak systemu Linux i Mac OS.
 
- W MSBuild 15.8 [RoslnCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) został dodany, które można utworzyć zadania wbudowane i platform .NET Standard.  Jeśli musisz użyć zadania wbudowane w oprogramowanie .NET Core, należy użyć RoslynCodeTaskFactory.
-## <a name="the-structure-of-an-inline-task"></a>Struktura zadania wbudowanego  
- Zadania wbudowanego jest zawarty w [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Zadania wbudowane i `UsingTask` element, który go zawiera zwykle są zawarte w pliku .targets i importowane do innych plików projektu, zgodnie z wymaganiami. Poniżej przedstawiono podstawowe wbudowanego zadania. Zwróć uwagę, że nie działają.  
+**Uwaga:** `RolynCodeTaskFactory` jest dostępne w MSBuild 15.8 i powyżej tylko.
+  
+## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura z RoslynCodeTaskFactory zadania wbudowanego
+ Zadania wbudowane RoslynCodeTaskFactory są zadeklarowane w taki sam sposób jak [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Jedyną różnicą jest ich elementami docelowymi .NET Standard.  Zadania wbudowane i `UsingTask` element, który go zawiera zwykle są zawarte w pliku .targets i importowane do innych plików projektu, zgodnie z wymaganiami. Poniżej przedstawiono podstawowe wbudowanego zadania. Zwróć uwagę, że nie działają.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -91,14 +89,14 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
 >  Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy należy uzgodnić z `TaskName` atrybutu odpowiadającego [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.  
   
 ## <a name="hello-world"></a>Witaj Świecie  
- Poniżej przedstawiono bardziej niezawodne zadania wbudowanego. Wyświetla zadania HelloWorld "Hello, world!" na domyślnego urządzenia rejestrowania błędów, który jest zwykle konsoli systemu lub Visual Studio **dane wyjściowe** okna. `Reference` Element w tym przykładzie jest on dołączony tylko do ilustracji.  
+ Poniżej przedstawiono bardziej niezawodne zadania wbudowanego z RoslynCodeTaskFactory. Wyświetla zadania HelloWorld "Hello, world!" na domyślnego urządzenia rejestrowania błędów, który jest zwykle konsoli systemu lub Visual Studio **dane wyjściowe** okna. `Reference` Element w tym przykładzie jest on dołączony tylko do ilustracji.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -149,7 +147,7 @@ Na przykład
 ```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+    <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
     <Tally ParameterType="System.Int32" Output="true" />  
 </ParameterGroup>  
 ```  
@@ -165,30 +163,94 @@ definiuje trzy następujące parametry:
  Jeśli `Code` element ma `Type` atrybutu `Fragment` lub `Method`, a następnie właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie wartość właściwości musi być jawnie zadeklarowany w kodzie źródłowym zadań i musi dokładnie odpowiadać ich definicje parametru.  
   
 ## <a name="example"></a>Przykład  
- Następujące zadania wbudowanego zamienia każde wystąpienie tokenu w danym pliku z danej wartości.  
+ Następujące zadania wbudowanego rejestruje komunikaty i zwraca wartość typu ciąg.  
   
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
-    <ParameterGroup>  
-      <Path ParameterType="System.String" Required="true" />  
-      <Token ParameterType="System.String" Required="true" />  
-      <Replacement ParameterType="System.String" Required="true" />  
-    </ParameterGroup>  
-    <Task>  
-      <Code Type="Fragment" Language="cs"><![CDATA[  
-string content = File.ReadAllText(Path);  
-content = content.Replace(Token, Replacement);  
-File.WriteAllText(Path, content);  
+    <UsingTask TaskName="MySample"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Parameter1 ParameterType="System.String" Required="true" />
+            <Parameter2 ParameterType="System.String" />
+            <Parameter3 ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+              <![CDATA[
+              Log.LogMessage(MessageImportance.High, "Hello from an inline task created by Roslyn!");
+              Log.LogMessageFromText($"Parameter1: '{Parameter1}'", MessageImportance.High);
+              Log.LogMessageFromText($"Parameter2: '{Parameter2}'", MessageImportance.High);
+              Parameter3 = "A value from the Roslyn CodeTaskFactory";
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
   
-]]></Code>  
-    </Task>  
-  </UsingTask>  
+    <Target Name="Demo">  
+      <MySample Parameter1="A value for parameter 1" Parameter2="A value for parameter 2">
+          <Output TaskParameter="Parameter3" PropertyName="NewProperty" />
+      </MySample>
+
+      <Message Text="NewProperty: '$(NewProperty)'" />
+    </Target>  
+</Project>  
+```  
+
+ Te zadania wbudowane można łączyć ścieżki i nazwy pliku.  
   
-  <Target Name='Demo' >  
-    <TokenReplace Path="C:\Project\Target.config" Token="$MyToken$" Replacement="MyValue"/>  
-  </Target>  
+```xml  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
+  
+    <UsingTask TaskName="PathCombine"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Paths ParameterType="System.String[]" Required="true" />
+            <Combined ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            Combined = Path.Combine(Paths);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+
+    <UsingTask TaskName="PathGetFileName"
+             TaskFactory="RoslynCodeTaskFactory"
+             AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Path ParameterType="System.String" Required="true" />
+            <FileName ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            FileName = System.IO.Path.GetFileName(Path);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+  
+    <Target Name="Demo">  
+        <PathCombine Paths="$(Temp);MyFolder;$([System.Guid]::NewGuid()).txt">
+            <Output TaskParameter="Combined" PropertyName="MyCombinedPaths" />
+        </PathCombine>
+
+        <Message Text="Combined Paths: '$(MyCombinedPaths)'" />
+
+        <PathGetFileName Path="$(MyCombinedPaths)">
+            <Output TaskParameter="FileName" PropertyName="MyFileName" />
+        </PathGetFileName>
+
+        <Message Text="File name: '$(MyFileName)'" />
+    </Target>  
 </Project>  
 ```  
   

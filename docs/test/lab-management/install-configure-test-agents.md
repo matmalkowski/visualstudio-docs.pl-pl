@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 09d48461d46153731d66844080cb35aa1135d17c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281667"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056981"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -34,7 +34,7 @@ Można także rozważyć czy lepiej używać jest [kompilacji lub zarządzania z
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj test controller i agenci testowi
 
-Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
 
 Możesz pobrać agentów dla programu Visual Studio 2015 i Visual Studio 2013 z [starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/) strony.
 

@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cc889accc116fb2115ae56155a190ed6ea2d3fc0
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746770"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058444"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017 r.
 
@@ -62,7 +62,7 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="remote_debug_azure_app_service"></a> Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
 
-W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#BKMK_azure_vm).) 
+W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#remote_debug_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Aby wdrożyć aplikację i zdalnego debugowania za pomocą Eksploratora serwera
 
@@ -232,7 +232,7 @@ Jeśli masz problem otwarcie strony z pobierania zdalnego debugera, zobacz [odbl
 
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i zdalnego debugera. Jednak w przypadku rozwiązywania problemów wdrożenia aplikacji znajduje się za zaporą, może być konieczne Sprawdź, czy porty są otwarte.
 
-Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
 
 Wymagane porty:
 

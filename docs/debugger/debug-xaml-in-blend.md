@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 686a6393a219d089d185789a776a76d5726dfde2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477456"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058542"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] debugowanie XAML w aplikacji. Podczas kompilowania projektu błędy są wyświetlane w **wyniki** panelu. Kliknij dwukrotnie błędu można znaleźć znacznika związane z błędem. Jeśli potrzebujesz więcej miejsca do pracy można ukryć **wyniki** panelu, naciskając klawisz F12.  
@@ -68,7 +68,7 @@ Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../debugger/includ
   
 8.  Skopiuj następujący kod, klikając **kopiowania** łącze w prawym górnym rogu kodu.  
   
-    ```  
+    ```xml
     <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
          <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  
          <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,38,0,0">  
@@ -81,7 +81,7 @@ Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../debugger/includ
   
 9. Znajdź wartość domyślna **siatki**i Wklej kod między otwarcia i zamknięcia **siatki** tagów. Po zakończeniu kod powinien wyglądać następująco:  
   
-    ```  
+    ```xml
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
          <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
               <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  

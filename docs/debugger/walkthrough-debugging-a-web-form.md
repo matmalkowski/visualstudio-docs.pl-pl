@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480335"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057177"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
 Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji, znanej także jako formularza sieci Web. Przedstawiono sposób uruchamiania i zatrzymuje wykonywanie, ustaw punkty przerwania i Sprawdź zmienne w **czujki** okna.  
@@ -73,11 +73,11 @@ Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../c
   
 12. W `Button1_Click` funkcji, Dodaj następujący kod:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,11 +91,11 @@ Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../c
   
 1.  W oknie Default.aspx.cs lub Default.aspx.vb kliknij lewy margines, w tym samym wierszu jako tekst, który zostanie dodany:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -117,17 +117,13 @@ Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../c
   
      **Czujki** okno zawiera wartość zmiennej `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
 7.  Na **debugowania** menu, kliknij przycisk **Step Over**.  
   
      Wartość `TextBox1.Text` zmiany w **czujki** okna do odczytu:  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
 8.  Na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
@@ -147,11 +143,11 @@ Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../c
   
 2.  W oknie Default.aspx.cs lub Default.aspx.vb kliknij lewy margines ponownie ustawić punkt przerwania w wierszu dodane:  
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8c5100158b5761047d38e10f953fc832e0ce2b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 485350efd38fda9c141fe0ee1ae9ee5cfbffcafd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302887"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056374"
 ---
 # <a name="whats-new-in-msbuild-15"></a>What's New in 15 MSBuild
 
@@ -40,8 +40,7 @@ MSBuild jest teraz dostępna jako część [.NET Core SDK](https://www.microsoft
 - `SDK35ToolsPath` i `SDK40ToolsPath` właściwości wskaż zestawu .NET Framework SDK, który jest spakowany w tej wersji programu Visual Studio (na przykład 10.0A dla narzędzi 4.X).
 
 ## <a name="updates"></a>Aktualizacje
-
-- [Element projektu](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybut teraz jest opcjonalne. Aby uzyskać więcej informacji, zobacz [jak: zestawy SDK projektu MSBuild użyj](../msbuild/how-to-use-project-sdk.md), a także [pakietów, metadane i platform](/dotnet/core/packages) i [dodatki do csproj format .NET Core](/dotnet/core/tools/csproj).
+- [Element projektu](../msbuild/project-element-msbuild.md) ma nową `SDK` atrybutu. Również `Xmlns` atrybut teraz jest opcjonalne. Aby uzyskać więcej informacji na temat `SDK` atrybutów, zobacz [jak: zestawy SDK projektu MSBuild użyj](../msbuild/how-to-use-project-sdk.md), [pakietów, metadane i platform](/dotnet/core/packages) i [dodatki do csproj format .NET Core ](/dotnet/core/tools/csproj).
 - [Pozycja elementu](../msbuild/item-element-msbuild.md) poza cele ma nową `Update` atrybutu. Ponadto ograniczenie `Remove` atrybut został wyeliminowany.
 - `Directory.Build.props` to zapewnia dostosowań do projektów w katalogu plik zdefiniowane przez użytkownika. Ten plik jest automatycznie importowany z Microsoft.Common.props, chyba że właściwość `ImportDirectoryBuildTargets` ustawiono **false**. `Directory.Build.targets` zostaną zaimportowane przez Microsoft.Common.targets.
 - Opcjonalnie można wyrazić wszystkich metadanych o nazwie, która nie koliduje to z bieżącą listę atrybutów jako atrybut. Aby uzyskać więcej informacji, zobacz [elementu](../msbuild/item-element-msbuild.md).

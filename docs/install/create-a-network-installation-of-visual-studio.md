@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25e277a4743d27115485e791fd44f12078a4b2f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282590"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057999"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
@@ -127,7 +127,7 @@ Po zainstalowaniu z układu zawartość, która jest zainstalowana są uzyskiwan
 
 Jeśli używasz `--wait` parametr, a następnie w zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiona na jedną z następujących wartości:
 
-  | **Wartość** | **wynik** |
+  | **Wartość** | **Wynik** |
   | --------- | ---------- |
   | 0 | Operacja została wykonana pomyślnie |
   | 3010 | Operacja zakończyła się pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można go używać. |
@@ -140,7 +140,7 @@ Gdy będą dostępne aktualizacje produktu, może zaistnieć potrzeba [aktualiza
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Tworzenie układu w poprzedniej wersji programu Visual Studio 2017 r.
 
 > [!NOTE]
-> Bootstrappers 2017 usługi Visual Studio, które są dostępne na [VisualStudio.com](http://visualstudio.microsoft.com) pobranie i zainstalowanie najnowszej wersji programu Visual Studio 2017 dostępny zawsze, gdy są uruchamiane. Jeśli już dziś Pobierz programu inicjującego Visual Studio i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio 2017, która jest dostępna w późniejszym czasie. W przypadku utworzenia układu, instalacja programu Visual Studio z tego układu instaluje określonej wersji programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, która jest w układzie.
+> Bootstrappers 2017 usługi Visual Studio, które są dostępne na [visualstudio.microsoft.com](http://visualstudio.microsoft.com) pobranie i zainstalowanie najnowszej wersji programu Visual Studio 2017 dostępny zawsze, gdy są uruchamiane. Jeśli już dziś Pobierz programu inicjującego Visual Studio i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio 2017, która jest dostępna w późniejszym czasie. W przypadku utworzenia układu, instalacja programu Visual Studio z tego układu instaluje określonej wersji programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, która jest w układzie.
 
 Jeśli potrzebujesz do tworzenia układu dla starszej wersji programu Visual Studio 2017 r, możesz przejść do https://my.visualstudio.com pobierania "fixed" wersje bootstrappers programu Visual Studio 2017 r.
 

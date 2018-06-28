@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab48d9b6a67563171e28dab1f08e496750585288
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59379e2b6a10ac98a739487eac064f3b261f35c5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476052"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057807"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger Visual Studio można uruchomić jako aplikacja lub usługa w tle. Po uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  
@@ -52,9 +52,8 @@ Zdalny debuger Visual Studio można uruchomić jako aplikacja lub usługa w tle.
 ## <a name="remote-debugger-ports-on-azure"></a>Zdalny debuger porty na platformie Azure  
  Następujące porty są używane przez debuger zdalny na platformie Azure. Porty usługi w chmurze są mapowane na porty na poszczególnych maszyn wirtualnych. Wszystkie porty są TCP.  
   
-||||  
+|Połączenia|Port na usługi w chmurze|Port na maszynie Wirtualnej|
 |-|-|-|  
-|**Połączenia**|**Port na usługi w chmurze**|**Port na maszynie Wirtualnej**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  

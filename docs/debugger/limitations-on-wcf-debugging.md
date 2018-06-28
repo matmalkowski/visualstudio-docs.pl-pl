@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a865a9852b8a6700e250225244546567967257de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477001"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058526"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:  
@@ -47,7 +47,7 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
   
 -   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     </system.web>  
@@ -69,7 +69,7 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
   
 -   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     <system.web>  

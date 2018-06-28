@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482116"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058727"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra
 Podczas debugowania kodu zarządzanego, mogą pojawić się następujący komunikat o błędzie:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   W wierszu polecenia wpisz polecenie:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  W wierszu polecenia wpisz polecenie:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -78,13 +78,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Zlokalizuj plik boot.ini na dysku systemowym (zazwyczaj C:\\). Plik boot.ini mogą być ukryte i tylko do odczytu. W związku z tym należy użyć następującego polecenia go wyświetlać:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Otwórz plik boot.ini za pomocą Notatnika i Usuń następujące opcje:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

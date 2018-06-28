@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5b39437dc5f81b17c0bcfe27dbb7b8d99bebbc87
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0647cde0b81c74250306ad45ad015f8f8710d8a4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953118"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057934"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
@@ -182,7 +182,7 @@ Można ustawić punktu przerwania w szablonu tekstowego. Po uruchomieniu aplikac
 
 ### <a name="passing-parameters-in-the-constructor"></a>Przekazywanie parametrów w Konstruktorze
 
-Zazwyczaj szablonu należy zaimportować niektóre dane z innych części aplikacji. Aby ułatwić to, kod utworzony przez szablon jest klasy częściowej. Można utworzyć inną część tej samej klasy w innym pliku w projekcie. Ten plik może zawierać konstruktora z parametrami, właściwości i funkcje, które można uzyskać dostępu do zarówno kod, który jest osadzony w szablonie i w pozostałej części aplikacji.
+Zazwyczaj szablonu należy zaimportować niektóre dane z innych części aplikacji. Aby ułatwić to, kod utworzony przez szablon jest klasy częściowej. Można utworzyć inną część tej samej klasy w innym pliku w projekcie. Ten plik może zawierać konstruktora z parametrami, właściwości i funkcje, które mogą być dostępne zarówno kod, który jest osadzony w szablonie i w pozostałej części aplikacji.
 
 Na przykład można utworzyć oddzielny plik **MyWebPageCode.cs**:
 

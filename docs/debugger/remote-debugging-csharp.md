@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058620"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Debugowanie aplikacji Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, skonfigurować projekt do nawiązania połączenia z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.
@@ -101,7 +101,7 @@ Debuger nie może wdrożyć Visual C# lub Visual Basic aplikacje klasyczne z kom
   
 15. Na komputerze programu Visual Studio powinny być widoczne czy wykonywanie zostało zatrzymane na punkt przerwania.
   
- Jeśli masz plików z systemem innym niż kodu, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Tworzenie folderu projektu dla dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > Nowy Folder**). Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > istniejący element**, następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, ustaw **Kopiuj do katalogu wyjściowego** do **skopiuj zawsze**.
+ Jeśli masz kod-pliki, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Tworzenie folderu projektu dla dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > Nowy Folder**). Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > istniejący element**, następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, ustaw **Kopiuj do katalogu wyjściowego** do **skopiuj zawsze**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Konfigurowanie debugowania przy użyciu zdalnego symboli 
 

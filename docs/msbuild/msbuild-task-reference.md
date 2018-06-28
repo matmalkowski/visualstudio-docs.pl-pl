@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576043"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058649"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej liście uwzględniono z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są używane do tworzenia [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadania w programie Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -88,6 +88,9 @@ Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej 
   
  [Delete, zadanie](../msbuild/delete-task.md)  
  Usuwa określone pliki.  
+
+ [Zadanie DownloadFile](../msbuild/downloadfile-task.md)  
+ Pobieranie pliku do określonej lokalizacji.  
   
  [Error, zadanie](../msbuild/error-task.md)  
  Zatrzymuje kompilację i rejestruje błąd oparte na obliczane instrukcji warunkowej.  
@@ -200,6 +203,9 @@ Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej 
  [UnregisterAssembly, zadanie](../msbuild/unregisterassembly-task.md)  
  Wyrejestrowuje określonych zestawów do COM interop celów.  
   
+ [Unzip — zadanie](../msbuild/unzip-task.md)  
+ Unzips `.zip` archiwum do określonej lokalizacji.
+  
  [UpdateManifest, zadanie](../msbuild/updatemanifest-task.md)  
  Aktualizuje wybrane właściwości w manifeście i poddały.  
   
@@ -223,6 +229,9 @@ Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej 
   
  [XslTransformation, zadanie](../msbuild/xsltransformation-task.md)  
  Przekształca dane wejściowe XML przy użyciu *Extensible transformacji języka arkusza stylów* (XSLT) lub skompilowany XSLT i dane wyjściowe do urządzenia wyjściowego lub pliku.  
+  
+  [Zadanie ZipDirectory](../msbuild/zipdirectory-task.md)  
+ Tworzy `.zip` archiwum z zawartości katalogu.
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   

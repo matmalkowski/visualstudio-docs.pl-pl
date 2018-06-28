@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: af106709ca578abeab19c4f474548476efbeea57
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926839"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057690"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables w debugerze programu Visual Studio
 Pseudovariables są warunki, używany do wyświetlania pewne informacje w oknie zmiennej lub **QuickWatch** okno dialogowe. Możesz wprowadzić pseudovariable w taki sam sposób jak wprowadzasz normalnym zmiennej. Pseudovariables zmienne nie są jednak i nazwy zmiennych w programie nie są zgodne.  
@@ -32,9 +32,7 @@ Pseudovariables są warunki, używany do wyświetlania pewne informacje w oknie 
 ## <a name="example"></a>Przykład  
  Załóżmy, że pisania aplikacji kodu natywnego i chcesz zobaczyć liczby dojść przydzielone w aplikacji. W **czujki** okna, możesz wprowadzić następujące pseudovariable w **nazwa** kolumny, a następnie naciśnij klawisz Return, aby go ocenić:  
   
-```  
-$handles  
-```  
+`$handles`
   
  W kodzie natywnym można użyć pseudovariables przedstawione w tej tabeli:  
   
@@ -67,7 +65,7 @@ $handles
 |`$delete` lub `$$delete`|Usuwa Zmienna niejawna, który został utworzony w **Immediate** okna. Składnia jest `$delete,` *zmiennej* lub`$delete,` *zmiennej*`.`|  
 |`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów podrzędnych określone wyrażenie. Składnia jest `$objectid,` *wyrażenie* lub`$listobjectids,` *wyrażenia*`.`|  
 |`$` *N* `#`|Wyświetla obiekty o identyfikatorze obiektu równa *N*.|  
-|`$dynamic`|Wyświetla specjalną **widoku dynamicznego** węzła dla obiekt, który implementuje `IDynamicMetaObjectProvider`. Interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4.|  
+|`$dynamic`|Wyświetla specjalną **widoku dynamicznego** węzła dla obiekt, który implementuje `IDynamicMetaObjectProvider`. interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Oglądanie i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)   

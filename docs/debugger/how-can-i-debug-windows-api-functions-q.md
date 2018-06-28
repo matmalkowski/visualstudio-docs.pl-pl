@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480879"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058615"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 Jeśli chcesz debugować funkcji interfejsu API systemu Windows, która ma załadować symbole NT, wykonaj następujące czynności.  
@@ -37,7 +37,7 @@ Jeśli chcesz debugować funkcji interfejsu API systemu Windows, która ma zała
   
 -   Wprowadź nazwę funkcji, łącznie z nazwą biblioteki DLL, w której znajduje się funkcja. W 32-bitowy kod formularz ozdobione nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład, musisz wprowadzić następujące.  
   
-    ```  
+    ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   

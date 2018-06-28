@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f5c2a0a8623228091e2acee184fa0272c2bbf311
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693087"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059344"
 ---
 # <a name="threading-support-in-office"></a>Obsługa wątkowości w pakietu Office
   Ten artykuł zawiera informacje dotyczące sposobu wątków jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów pakietu Office nie jest bezpieczne dla wątków, ale istnieje możliwość pracy z wielu wątków w rozwiązaniach pakietu Office. Aplikacje pakietu Office są serwery składnika modelu COM (Object). COM pozwala klientom wywoływać serwerów COM na dowolne wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM udostępnia mechanizm do serializacji równoczesnych wywołań, tak aby tylko jeden wątek logiczny jest wykonywana na serwerze w dowolnym momencie. Mechanizm ten nosi nazwę modelu jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, wywołań może zostać zablokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania wątku w tle.  
@@ -59,9 +59,9 @@ ms.locfileid: "34693087"
   
 3.  Program Excel może być w stanie tak, aby natychmiast nie może on obsługiwać połączenia przychodzącego. Na przykład aplikacji pakietu Office może wyświetlenie modalnego okna dialogowego.  
   
- Możliwości 2 i 3, zapewnia COM [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) interfejsu. Jeśli serwer ją implementuje, wszystkie wywołania wprowadź za pośrednictwem [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) metody. Możliwości 2 wywołania są automatycznie odrzucane. Możliwość 3 serwer można odrzucić wywołanie, w zależności od okoliczności. Jeśli połączenie zostanie odrzucony, wywołujący musi podejmowania decyzji. Zwykle implementuje wywołującego [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), w którym to przypadku będą otrzymywać powiadomienia o odrzucenie przez [RetryRejectedCall](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) — metoda.  
+ Możliwości 2 i 3, zapewnia COM [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) interfejsu. Jeśli serwer ją implementuje, wszystkie wywołania wprowadź za pośrednictwem [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) metody. Możliwości 2 wywołania są automatycznie odrzucane. Możliwość 3 serwer można odrzucić wywołanie, w zależności od okoliczności. Jeśli połączenie zostanie odrzucony, wywołujący musi podejmowania decyzji. Zwykle implementuje wywołującego [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), w którym to przypadku będą otrzymywać powiadomienia o odrzucenie przez [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) — metoda.  
   
- Jednak w przypadku rozwiązania utworzone przy użyciu narzędzi programowania pakietu Office w Visual Studio, współdziałanie z COM konwertuje wszystkie odrzucone wywołań <xref:System.Runtime.InteropServices.COMException> ("filtr wiadomości wykazał, że aplikacja jest zajęta"). Po każdej zmianie wprowadzeniu model obiektowy wywołania wątku w tle, muszą być przygotowane do obsługi tego wyjątku. Zwykle obejmujące ponowną próbą przez pewien czas i wyświetlania okna dialogowego. Można jednak również utworzyć wątku w tle jako STA i zarejestruj filtr komunikatu dla tego wątku do obsługi tej sprawy.  
+ Jednak w przypadku rozwiązania utworzone przy użyciu narzędzi programowania pakietu Office w Visual Studio, współdziałanie z COM konwertuje wszystkie odrzucone wywołań <xref:System.Runtime.InteropServices.COMException> ("filtr wiadomości wykazał, że aplikacja jest zajęta"). Po każdej zmianie wprowadzeniu model obiektowy wywołania wątku w tle, musi być przygotowany do obsługi tego wyjątku. Zwykle obejmujące ponowną próbą przez pewien czas i wyświetlania okna dialogowego. Można jednak również utworzyć wątku w tle jako STA i zarejestruj filtr komunikatu dla tego wątku do obsługi tej sprawy.  
   
 ## <a name="start-the-thread-correctly"></a>Poprawne uruchomienie wątku  
  Podczas tworzenia nowego wątku STA, Ustaw stan apartamentu STA przed rozpoczęciem wątku. W poniższym przykładzie pokazano, jak to zrobić.  

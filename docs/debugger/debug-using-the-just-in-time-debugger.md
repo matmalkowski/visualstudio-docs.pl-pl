@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757282"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058766"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie za pomocą debugera just in Time programu Visual Studio
 Debugowanie Just In Time uruchamia program Visual Studio automatycznie po wyjątku lub awarii w aplikacji, która działa poza Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie przy użyciu programu Visual Studio, gdy występuje problem.
@@ -83,7 +83,7 @@ Debugowanie Just In Time może nadal być włączone, nawet jeśli program Visua
 
 2.  Ustaw `jitDebugging` do wartości `true` w `system.windows.form` sekcji pliku machine.config lub  *\<Nazwa aplikacji >*. exe.config pliku:
 
-    ```
+    ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
@@ -91,7 +91,7 @@ Debugowanie Just In Time może nadal być włączone, nawet jeśli program Visua
 
 3.  W aplikacji formularzy systemu Windows w języku C++, należy także ustawić `DebuggableAttribute` w pliku .config lub w kodzie. Jeśli kompilacji z [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) i bez [/Og](/cpp/build/reference/og-global-optimizations), kompilator ustawia tego atrybutu. Jeśli chcesz debugować kompilacji wydania niezoptymalizowaną, jednak należy ustawić samodzielnie. Można to zrobić, dodając następujący wiersz do użytkownika w przypadku pliku AssemblyInfo.cpp aplikacji:
 
-    ```
+    ```cpp
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
     ```
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b462c3ed02ebd622a39cd08039037b3ba63e7f57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479425"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056664"
 ---
 # <a name="error-aspnet-not-installed"></a>Błąd: ASP.NET nie jest zainstalowany
 Ten błąd występuje, gdy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nie jest poprawnie zainstalowana na komputerze, na którym chcesz debugować. Może to oznaczać, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nigdy nie został zainstalowany lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] najpierw zainstalować i program IIS został zainstalowany później.  
@@ -35,7 +35,7 @@ Ten błąd występuje, gdy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp
   
 1.  W oknie wiersza polecenia Uruchom następujące polecenie:  
   
-    ```  
+    ```cmd
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   

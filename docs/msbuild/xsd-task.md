@@ -1,7 +1,7 @@
 ---
 title: XSD — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571198"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057375"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Zawijania narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy ze źródła.  
+
+> [!NOTE]
+> W programie Visual Studio 2017 r. xsd.exe obsługę projektów języka C++ jest przestarzały. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API przez ręczne dodanie **CppCodeProvider.dll** w pamięci GAC. 
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry **XSD** zadań.  

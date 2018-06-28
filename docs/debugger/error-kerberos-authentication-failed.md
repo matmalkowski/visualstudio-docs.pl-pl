@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b3ed3349403bef0c85af9775f77cc980fc4e63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474219"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056860"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 Podczas próby wykonania zdalnego debugowania, może uzyskać następujący komunikat o błędzie:  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
 ```  
   
@@ -50,7 +50,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 2.  W **wiersza polecenia** okna, wpisz:  
   
-    ```  
+    ```cmd
     ping <debugger_host_computer_name>  
     ```  
   

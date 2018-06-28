@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957340"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057027"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu języka Python z szablonu w programie Visual Studio
 
@@ -37,11 +37,31 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
     > [!Tip]
     > Po rozpoczęciu projektu jest zdecydowanie zalecane od razu utworzyć środowisko wirtualne jak większość szablonów programu Visual Studio zaprosić podczas wykonywania. Środowiska wirtualne Obsługa dokładne wymagania dotyczące projektu w czasie, jak dodać i usunąć biblioteki. Następnie można łatwo wygenerować `requirements.txt` pliku, który umożliwia ponowne zainstalowanie tych zależności na innych komputerach Programowanie (jako gdy za pomocą kontroli źródła) i w przypadku wdrażania projektu na serwerze produkcyjnym. Aby uzyskać więcej informacji w środowiskach wirtualnych i ich korzyści, zobacz [za pomocą środowisk wirtualnych](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) i [zarządzania wymagane pakiety z pliku requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Gdy program Visual Studio utworzy tego środowiska, Szukaj w **Eksploratora rozwiązań** aby zobaczyć, czy masz `app.py` plików wraz z programem `requirements.txt`. Otwórz `app.py` aby zobaczyć, że szablon dostarczył kodu tak jak w [Szybki Start — tworzenie aplikacji sieci web w usłudze platformy Flask](../ide/quickstart-python.md), przy użyciu dwóch dodane sekcje.
+1. Gdy program Visual Studio utworzy tego środowiska, Szukaj w **Eksploratora rozwiązań** aby zobaczyć, czy masz `app.py` plików wraz z programem `requirements.txt`. Otwórz `app.py` aby zobaczyć, że szablon dostarczył kodu tak jak w [Szybki Start — tworzenie aplikacji sieci web w usłudze platformy Flask](../ide/quickstart-python.md), kilka sekcje dodany. Cały kod poniżej jest tworzony przez szablon, więc nie trzeba wkleić żadnego do `app.py` samodzielnie.
 
-    Najpierw jest to wiersz `wsgi_app = app.wsgi_app` które mogą być przydatne podczas wdrażania aplikacji na serwerze sieci web.
+    Kod rozpoczyna się od niezbędnych operacji importu:
 
-    Drugi jest uruchamianie kodu, który można ustawić hosta i portu za pomocą zmiennych środowiskowych, zamiast kodować je. Taki kod, można łatwo zarządzać konfiguracji na komputerach zarówno rozwoju i produkcji, bez konieczności zmieniania kodu:
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    Następnie jest następujący wiersz, które mogą być przydatne w przypadku wdrażania aplikacji na serwerze sieci web:
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    Skąd dekoratora trasy dla funkcji prostego, definiujący widok:
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    Na koniec poniższy kod startowy umożliwia ustawienie hosta i portu za pomocą zmiennych środowiskowych, zamiast kodować je. Taki kod, można łatwo zarządzać konfiguracji na komputerach zarówno rozwoju i produkcji, bez konieczności zmieniania kodu:
 
     ```python
     if __name__ == '__main__':

@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 241937c8462577d6af375d2440efe828a738a8cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 458b320b971cbb3c4db74d6f2202455332ca5465
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475927"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056328"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debugowanie aplikacji platformy uniwersalnej systemu Windows przy użyciu prefetched zawartości w programie Visual Studio
   
- Aby zapewnić poprawę reakcji aplikacji platformy uniwersalnej systemu Windows, możesz poprosić o wstępnie zawartość sieci web, takich jak strony sieci web lub obrazów, do aplikacji z systemem Windows [WinINet](http://msdn.microsoft.com/library/0a06f2af-957a-4dff-a8cc-187370181b5c) pamięci podręcznej. Ta funkcja jest wywoływana odczyt z wyprzedzeniem. Jest szczególnie użyteczna, dla zawartości, która jest używana podczas uruchamiania, ale użytkownik może zawartość pobrana z wyprzedzeniem inne często używane, za. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) klasy pozwalają określić identyfikatory URI zawartości, którą chcesz wstępnie. Zobacz zestaw Windows SDK [przykładowej zawartości pobierania z wyprzedzeniem](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) przykłady sposobu dodawania funkcji ContentPrefetcher do aplikacji.  
+ Aby zapewnić poprawę reakcji aplikacji platformy uniwersalnej systemu Windows, możesz poprosić o wstępnie zawartość sieci web, takich jak strony sieci web lub obrazów, do aplikacji z systemem Windows [WinINet](/windows/desktop/WinInet/about-wininet) pamięci podręcznej. Ta funkcja jest wywoływana odczyt z wyprzedzeniem. Jest szczególnie użyteczna, dla zawartości, która jest używana podczas uruchamiania, ale użytkownik może zawartość pobrana z wyprzedzeniem inne często używane, za. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) klasy pozwalają określić identyfikatory URI zawartości, którą chcesz wstępnie. Zobacz zestaw Windows SDK [przykładowej zawartości pobierania z wyprzedzeniem](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) przykłady sposobu dodawania funkcji ContentPrefetcher do aplikacji.  
   
  System Windows używa algorytmu heurystycznego, aby określić, gdy a odczyt z wyprzedzeniem powinna się odbyć i zasobów, do których zostaną pobrane. Algorytm heurystyczny uwzględniać konta systemu sieci i stan zasilania, historii użycia aplikacji użytkownika i liczbę prób uprzedniego pobierania z wyprzedzeniem. W programie Visual Studio, można użyć **wyprzedzeniem aplikacji Sklepu Windows wyzwalacza** polecenie, aby wymusić systemu Windows, aby zignorować heurystyki ContentPrefetcher i wstępnie całej zawartości sieci web określonego. Może to być przydatne w przypadku testowania aplikacji zachowanie lub wydajności ze zawartością pobrana z wyprzedzeniem w znanego stanu (załadowany lub nie jest załadowany).  
   

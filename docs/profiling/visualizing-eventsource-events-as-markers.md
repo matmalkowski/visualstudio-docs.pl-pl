@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449029"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058594"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń EventSource znaczników
 Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki i kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczników EventSource, należy zarejestrować identyfikator GUID dostawców ETW za pomocą [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe. Narzędzia Concurrency Visualizer ma domyślnych Konwencji reprezentują zdarzenia EventSource jako [znaczniki typu Flaga](../profiling/flag-markers.md), [znaczniki zakresu](../profiling/span-markers.md), i [znaczniki komunikatu](../profiling/message-markers.md). Można dostosować sposób wyświetlania zdarzeń EventSource przez dodanie pola niestandardowe do zdarzenia. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczników wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji o zdarzeniach EventSource, zobacz <xref:System.Diagnostics.Tracing>.  
@@ -25,9 +25,9 @@ Concurrency Visualizer można wyświetlać zdarzenia EventSource jako znaczniki 
   
 ### <a name="marker-type"></a>Typ znacznika  
   
-1.  Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win: Start lub win: Stop są traktowane jako początku lub na końcu zakresu, odpowiednio.  Zagnieżdżone lub nakładających się zakresów nie można wyświetlić. Nie można wyświetlić pary zdarzeń, które zaczynają się jeden wątek i kończyć w innym.  
+1.  Zdarzenia, które mają [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win: Start lub win: Stop są traktowane jako początku lub na końcu zakresu, odpowiednio.  Zagnieżdżone lub nakładających się zakresów nie można wyświetlić. Nie można wyświetlić pary zdarzeń, które zaczynają się jeden wątek i kończyć w innym.  
   
-2.  Zdarzenie, którego kod operacji nie jest win: Rozpocznij ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
+2.  Zdarzenie, którego kod operacji nie jest win: Rozpocznij ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](/windows/desktop/WES/defining-severity-levels) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
   
 3.  We wszystkich innych przypadkach zdarzenie jest traktowany jako wiadomości.  
   

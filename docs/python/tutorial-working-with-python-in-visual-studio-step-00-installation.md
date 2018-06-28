@@ -1,7 +1,7 @@
 ---
 title: Praca z Python samouczek krok 0, instalacji
 description: Krok 0 (wymagania wstępne instalacji) przewodnik podstawowej pracy z języka Python w programie Visual Studio.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4825a65fa2ba09bc37b4962d51286a17c1fff92
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9ce7a388a9cc26ba84796710ff6f94395890a3df
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283552"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057651"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Zainstaluj obsługę języka Python w programie Visual Studio
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b0b3412c450976cb15211813de32ab6e78eaa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471115"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058064"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Błąd: Sprawdzanie zabezpieczeń nie powiodło się ponieważ usługa administratora nie odpowiada
 Ten błąd występuje, gdy administrator usług IIS nie odpowiada. Zwykle oznacza to, że jest problem z instalacją usług IIS. Po pierwsze sprawdzenie, czy usługa jest uruchomiona za pomocą **usług** narzędzia z **narzędzia administracyjne**.  
@@ -36,9 +36,7 @@ Ten błąd występuje, gdy administrator usług IIS nie odpowiada. Zwykle oznacz
   
 -   Usuwanie usług IIS z komputera, za pomocą apletu Dodaj lub usuń programy w Panelu sterowania. Jeśli usunięto usług IIS i nadal występują problemy, sprawdź w rejestrze i upewnij się, że ten klucz już istnieje:  
   
-    ```  
-    HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
-    ```  
+    `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`  
   
      —lub—  
   

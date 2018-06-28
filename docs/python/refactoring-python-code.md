@@ -1,7 +1,7 @@
 ---
 title: Refaktoryzacji kodu języka Python
 description: Jak można łatwo zrefaktoryzuj kod języka Python w programie Visual Studio zmieniając identyfikatory wyodrębniania metody, importy Dodawanie i usuwanie nieużywanych importuje.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc06ba43261a90dcfe6677a73c8a267a7efdcb1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583076"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056543"
 ---
 # <a name="refactoring-python-code"></a>Refaktoryzacji kodu języka Python
 
@@ -42,7 +42,7 @@ Program Visual Studio udostępnia kilka polecenia automatycznie Przekształcanie
 
 1. Wybierz **Zastosuj** będzie wprowadzenie zmian do plików kodu źródłowego. (Ta akcja może być cofnięte).
 
-## <a name="extract-method"></a>Wyodrębnij — metoda
+## <a name="extract-method"></a>Wyodrębnianie metody
 
 1. Wybierz wiersze, kodu lub wyrażenie, które ma wyodrębnić w oddzielnych metodach.
 1. Wybierz **Edytuj > Refaktoryzuj > wyodrębniania metody...**  polecenia menu lub typ Ctrl-R, M.

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478125"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057759"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C++ w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu.  
@@ -76,7 +76,7 @@ int main() {
 |**sb**|Const char * ciąg (bez cudzysłowu)|\<Lokalizacja > "hello world"|Cześć ludzie|  
 |s8|Ciąg UTF-8|\<Lokalizacja > "Jest â˜• Filiżanka kawy UTF-8"|"Jest ☕ Filiżanka kawy UTF-8"|
 |**s8b**|Ciąg UTF-8 (bez cudzysłowu)|\<Lokalizacja > "hello world"|Cześć ludzie|  
-|su|Ciąg Unicode (kodowania UTF-16)|\<Lokalizacja > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
+|su|Ciąg Unicode (kodowania UTF-16)|\<Lokalizacja > L "hello world"|L "hello world"<br /><br /> u "hello world"|  
 |Sub|Ciąg Unicode (UTF-16 kodowanie) (bez cudzysłowu)|\<Lokalizacja > L "hello world"|Cześć ludzie|  
 |bstr|Ciągów BSTR|\<Lokalizacja > L "hello world"|L "hello world"|  
 |env|Blok środowiska (ciąg zakończone o podwójnej precyzji null)|\<Lokalizacja > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
@@ -115,13 +115,13 @@ int main() {
 |**g, h**|Prefiks długich i krótkich: d, i, u, o x X|00406042|0x0c22|  
 |**f**|podpisana zmiennoprzecinkowych|(3. / 2.), f|1.500000|  
 |**e**|Notacja naukowa podpisem|(3.0/2.0)|1.500000e + 000|  
-|**g**|podpisana zmiennoprzecinkowa lub podpisany notacji naukowej, zależności jest krótszy|(3.0/2.0)|1.5|  
+|**g**|podpisany zmiennoprzecinkowa lub podpisany zapis naukowy<br/> zależności jest krótszy|(3.0/2.0)|1.5|  
 |c|pojedynczy znak|\<Lokalizacja >|101 "e"|  
 |s|Const char *|\<Lokalizacja >|"hello world"|  
 |su|wchar_t const *<br /><br /> Const char16_t\*|\<Lokalizacja >|L "hello world"|  
 |Sub|wchar_t const *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
 |s8|Const char *|\<Lokalizacja >|"hello world"|  
-|hr|Kod błędu HRESULT lub Win32. (Debuger teraz dekoduje wyników HRESULT automatycznie, więc to specyfikator nie jest wymagany w przypadku.|S_OK|S_OK|  
+|hr|Kod błędu HRESULT lub Win32.<br/>(Debuger dekoduje wyników HRESULT automatycznie,<br/> Specyfikator tak nie jest wymagane w takich przypadkach.|S_OK|S_OK|  
 |WC|Flaga klasy okna.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Liczby komunikatów systemu Windows|0x0010|WM_CLOSE|  
 |!|format RAW, ignorując wszystkie dostosowania widoków typu danych|\<dostosowane reprezentacja >|4|  

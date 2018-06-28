@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059377"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 Jeśli debugowany program MFC, mogą być przydatne tych metod debugowania.  
@@ -64,14 +65,14 @@ Jeśli debugowany program MFC, mogą być przydatne tych metod debugowania.
 ##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak —  
  MFC zapewnia specjalnego [afxdebugbreak —](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) funkcja dla kodować punktów przerwania w kodzie źródłowym:  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  Na platformach firmy Intel `AfxDebugBreak` tworzy następujący kod, w jakich źródła code zamiast kodu jądra:  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  W poniższych przykładach pokazano niektóre sposoby używania **śledzenia** makra. Podobnie jak `printf`, **śledzenia** makro może obsługiwać liczbę argumentów.  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  TRACE — makro prawidłowo obsługuje zarówno char * i wchar_t\* parametrów. Poniższe przykłady przedstawiają sposób używania TRACE — makro wraz z różnych typów parametrów typu ciąg.  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  Jeśli nie chcesz przepisywania całego programu do użycia `DEBUG_NEW` zamiast **nowe**, to makro można zdefiniować w plikach źródłowych:  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tworzenie migawek pamięci  
   
-1.  Utwórz [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiekt i wywołanie [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) funkcję elementu członkowskiego. Spowoduje to utworzenie pierwszej migawki pamięci.  
+1.  Utwórz [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiekt i wywołanie [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) funkcję elementu członkowskiego. Spowoduje to utworzenie pierwszej migawki pamięci.  
   
 2.  Po program wykonuje operacje alokacji i dezalokacji jej pamięci, należy utworzyć inny `CMemoryState` obiekt i wywołanie `Checkpoint` dla tego obiektu. Pobiera to drugi migawki użycia pamięci.  
   
-3.  Utwórz innej `CMemoryState` obiekt i wywołanie jego [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) funkcji członkowskiej, podając jako argumenty dwa poprzednie `CMemoryState` obiektów. Jeśli ma różnicy między Stanami dwóch pamięci `Difference` funkcja zwraca wartość różną od zera. Oznacza to, że niektóre bloki pamięci nie przydział został cofnięty.  
+3.  Utwórz innej `CMemoryState` obiekt i wywołanie jego [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) funkcji członkowskiej, podając jako argumenty dwa poprzednie `CMemoryState` obiektów. Jeśli ma różnicy między Stanami dwóch pamięci `Difference` funkcja zwraca wartość różną od zera. Oznacza to, że niektóre bloki pamięci nie przydział został cofnięty.  
   
      Ten przykład przedstawia kod wygląda następująco:  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -190,16 +191,16 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
      Należy zauważyć, że instrukcje sprawdzanie pamięci są otoczone **#ifdef _DEBUG / #endif** blokuje, dzięki czemu są one kompilowane tylko w wersjach debugowania programu.  
   
-     Teraz, znając występuje przeciek pamięci, można użyć innej funkcji członkowskiej, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) który ułatwi jego znalezienie.  
+     Teraz, znając występuje przeciek pamięci, można użyć innej funkcji członkowskiej, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) który ułatwi jego znalezienie.  
   
  [W tym temacie](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Wyświetlanie statystyk pamięci  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) Funkcja przegląda dwa obiekty stanu pamięci i wykrywa wszystkie obiekty nie cofnąć alokacji sterty między Stanami początku i na końcu. Po podjęte migawki pamięci i porównać je przy użyciu `CMemoryState::Difference`, można wywołać [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) można pobrać informacji o obiektach, które nie zostały alokację.  
+ [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) Funkcja przegląda dwa obiekty stanu pamięci i wykrywa wszystkie obiekty nie cofnąć alokacji sterty między Stanami początku i na końcu. Po podjęte migawki pamięci i porównać je przy użyciu `CMemoryState::Difference`, można wywołać [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) można pobrać informacji o obiektach, które nie zostały alokację.  
   
  Rozważmy następujący przykład:  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Zrzut próbki z przykładu wygląda następująco:  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [W tym temacie](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> Zrzuty obiektu z argumentami  
- W programie MFC, można użyć [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) do zrzutu opis wszystkich obiektów na stercie, które nie zostały alokację. `DumpAllObjectsSince` zrzuty wszystkie obiekty przydzielone od momentu ostatniego [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Jeśli nie `Checkpoint` wywołanie miało miejsce, `DumpAllObjectsSince` zrzuty wszystkich obiektów i nonobjects aktualnie w pamięci.  
+ W programie MFC, można użyć [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) do zrzutu opis wszystkich obiektów na stercie, które nie zostały alokację. `DumpAllObjectsSince` zrzuty wszystkie obiekty przydzielone od momentu ostatniego [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Jeśli nie `Checkpoint` wywołanie miało miejsce, `DumpAllObjectsSince` zrzuty wszystkich obiektów i nonobjects aktualnie w pamięci.  
   
 > [!NOTE]
 >  Przed użyciem zrzucanie obiekt MFC, należy najpierw [włączyć śledzenie diagnostyczne](#BKMK_Enabling_Memory_Diagnostics).  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  Poniższy kod testów dla przeciek pamięci na podstawie porównania ilości pamięci dwustanowy i zrzuty wszystkie obiekty, wykryje przeciek.  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Zawartość zrzutu wyglądać następująco:  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpretowanie pamięci zrzuty  
  Obejrzyj ten zrzut obiektu bardziej szczegółowo:  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  Program wygenerowania tego zrzutu ma tylko dwa alokacji jawne — jedną na stosie, a drugi na stercie:  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` Konstruktor ma trzy argumenty, które są wskaźnikami do `char`, które są używane do zainicjowania `CString` zmiennych Członkowskich. Zrzut pamięci zawiera `CPerson` obiektu wraz z trzech bloków nonobject (3, 4 i 5). Przechowywania tych znaków dla `CString` zmiennych Członkowskich i nie zostaną usunięte po `CPerson` destruktor obiektu jest wywoływany.  
   
- Blok Numer 2 jest `CPerson` samego obiektu. `$51A4` reprezentuje adres bloku i następuje zawartość obiektu, który zostały danych wyjściowych przez `CPerson`::`Dump` wywołanego [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
+ Blok Numer 2 jest `CPerson` samego obiektu. `$51A4` reprezentuje adres bloku i następuje zawartość obiektu, który zostały danych wyjściowych przez `CPerson`::`Dump` wywołanego [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
   
  Można odgadnąć, z którymi skojarzony jest blok o numerze 1 `CString` zmiennej ramki z powodu jego numer sekwencji i wielkości, która jest zgodna z liczbą znaków w ramce `CString` zmiennej. Zmienne przydzielone ramki są automatycznie alokację ramki systemowi poza zakresem.  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  Ogólnie rzecz biorąc mogą nie występować sterty obiektów skojarzonych z zmienne ramek, ponieważ są automatycznie alokację podczas zmienne ramek się znaleźć poza zakresem. Aby uniknąć bałaganu Twojego diagnostycznych zrzuty pamięci, należy umieścić wywołaniami `Checkpoint` , które stają się poza zakresem zmienne ramek. Na przykład umieścić zakresu w nawiasach poprzedni kod alokacji, jak pokazano poniżej:  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  W zakresie nawiasy w miejscu zrzut pamięci w tym przykładzie jest następujący:  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  Dla obiektów przydzielony na stosie jednak należy jawnie usunąć obiektu, aby zapobiec przeciek pamięci. Aby wyczyścić ostatniego przeciek pamięci w poprzednim przykładzie, należy usunąć `CPerson` obiekt przydzielony na stosie, w następujący sposób:  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [W tym temacie](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> Dostosowywanie obiektów zrzuty  
- Gdy klasa wyprowadzona z z [CObject](/cpp/mfc/reference/cobject-class), można zastąpić `Dump` funkcji członkowskiej, aby podać dodatkowe informacje, gdy używasz [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) do obiektów zrzutu do [Okno danych wyjściowych](../ide/reference/output-window.md).  
+ Gdy klasa wyprowadzona z z [CObject](/cpp/mfc/reference/cobject-class), można zastąpić `Dump` funkcji członkowskiej, aby podać dodatkowe informacje, gdy używasz [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) do obiektów zrzutu do [Okno danych wyjściowych](../ide/reference/output-window.md).  
   
  `Dump` Funkcja zapisuje tekstową reprezentację wartości elementu członkowskiego obiektu zmienne w kontekście zrzutu ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontekst zrzutu jest podobny do strumienia we/wy. Można użyć operatora append (**<<**) do wysyłania danych do `CDumpContext`.  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  Deklaracja `Dump` funkcja wygląda następująco:  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  W poniższym przykładzie `Dump` pierwsze wywołania funkcji `Dump` funkcja dla swojej klasy podstawowej. Następnie zapisuje krótki opis każdego zmiennej członkowskiej, wraz z wartością elementu członkowskiego w strumieniu diagnostycznych.  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  Należy podać `CDumpContext` argumentu, aby określić, gdzie dane wyjściowe zrzutu. Wersja debugowania MFC udostępnia wstępnie zdefiniowanej `CDumpContext` obiektu o nazwie `afxDump` który wysyła dane wyjściowe do debugera.  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  

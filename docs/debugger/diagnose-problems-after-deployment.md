@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479614"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058012"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnozowanie problemów po wdrożeniu
 Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy użyciu funkcji IntelliTrace, obejmują informacje o kompilacji z Twojej wersji, aby umożliwić programowi Visual Studio automatycznie znaleźć poprawnych plików źródłowych i pliki symboli, które są wymagane do debugowania dziennika funkcji IntelliTrace.  
@@ -102,7 +102,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
   
      Dodaj też te linie do pliku projektu sieci Web (.csproj, .vbproj):  
   
-    ```  
+    ```xml
     <!-- Import the targets file. Change the folder location as necessary. -->  
        <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
@@ -282,7 +282,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
      Nazwa projektu programu Visual Studio. Na przykład:  
 
-    ```  
+    ```xml
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
@@ -300,7 +300,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
          Na przykład:  
 
-        ```  
+        ```xml
         <SourceControl type="TFS">  
            <TfsSourceControl>  
               <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
@@ -322,7 +322,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
          Na przykład:  
 
-        ```  
+        ```xml
         <SourceControl type="Git">   
            <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
               <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
@@ -350,7 +350,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
     -   **TFS**  
 
-        ```  
+        ```xml
         <Build type="TeamBuild">  
            <MsBuild>  
               <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
@@ -364,7 +364,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
     -   **Git**  
 
-        ```  
+        ```xml
         <Build type="MSBuild">   
            <MSBuild>  
               <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478138"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058701"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prostego ciągu jest prosty przykład pokazanie, sposób tworzenia wizualizatorów dla innych typów danych bardziej odpowiednie do projektów.  
@@ -66,7 +66,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 6.  W DebuggerSide.vb, dodaj następującą instrukcję do `Imports` instrukcji:  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -77,13 +77,13 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 1.  W DebuggerSide.vb przejdź do następującego kodu:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Edytuj kod, tak aby wygląda następująco:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -94,7 +94,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 -   W `public class DebuggerSide`, dodaj następującą metodę:  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -112,7 +112,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 4.  W DebuggerSide.cs, dodaj następującą instrukcję do `Imports` instrukcji:  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -123,7 +123,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 1.  W `Show` metody, Dodaj następujący wiersz kodu:  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
@@ -138,7 +138,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 1.  Dodaj następujący kod atrybutu do DebuggerSide.vb, po `Imports` instrukcje ale przed wysłaniem `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
@@ -151,7 +151,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 1.  Dodaj następującą metodę do klasy `public DebuggerSide`:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
@@ -201,13 +201,13 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
   
 3.  W TestConsole. VB, Dodaj następujący `Imports` instrukcji:  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  W metodzie `Main`, Dodaj następujący kod:  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  

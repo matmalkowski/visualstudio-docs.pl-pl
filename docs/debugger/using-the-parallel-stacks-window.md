@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19e39ef16bddce9910a65c6833e79d9263fba97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478294"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058740"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Widok wątków i zadań za pomocą okna stosów równoległych
 **Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Umożliwia nawigowanie między wątków i ramek stosu na tych wątków. W kodzie zarządzanym **widoku zadania** stosy wywołań pokazuje <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** stosy wywołań pokazuje [zadań grup](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorytmy równoległe](/cpp/parallel/concrt/parallel-algorithms), [agentów asynchronicznych](/cpp/parallel/concrt/asynchronous-agents)i [zadań lekkich](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -37,7 +37,7 @@ ms.locfileid: "31478294"
  Na ilustracji ścieżka wywołania bieżącego wątku jest zaznaczone na niebiesko i bieżącej lokalizacji (ramki stosu active) wątku jest oznaczona żółta strzałka. Bieżącej ramki stosu można zmienić, wybierając inną metodę w **stosów równoległych** okna. Może to spowodować również przełączania bieżącego wątku, w zależności od tego, czy wybrana metoda jest częścią bieżącego wątku już lub inny wątek. W poniższej tabeli opisano główne funkcje **stosów równoległych** okna, jak pokazano na rysunku.  
   
 |Objaśnienie list|Nazwa elementu|Opis|  
-|--------------------|------------------|-----------------|  
+|-|-|-|  
 |ELEMENT|Segment stosu wywołań lub węzeł|Zawiera szereg metod dla co najmniej jeden wątek. Jeśli węzeł nie ma wierszy strzałkę dołączone do niego, jego reprezentuje ścieżkę całego wywołania dla wątkiem(mi).|  
 |B|Niebieskie wyróżnienie|Określa ścieżkę wywołania bieżącego wątku.|  
 |C|Linie strzałek|Łączenie węzłów do tworzą wywołania całą ścieżkę wątkiem(mi).|  
@@ -50,9 +50,8 @@ ms.locfileid: "31478294"
 ## <a name="stack-frame-icons"></a>Ikony ramki stosu  
  W poniższej tabeli opisano ikony, które zawierają informacje na temat ramek stosu aktywne i bieżący:  
   
-|||  
-|-|-|  
 |Ikona|Opis|  
+|-|-|  
 |![Równoległych stosów żółta strzałka](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Wskazuje, że metoda zawiera bieżącą lokalizację bieżącego wątku (ramki stosu active).|  
 |![Równoległych stosów ikona wątków](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Wskazuje, że metoda zawiera bieżącą lokalizację (ramki stosu active) z systemem innym niż bieżący wątek.|  
 |![Równoległych stosów zieloną strzałkę](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Wskazuje, że metoda zawiera bieżącą ramkę stosu (bieżącego kontekstu debugera). Podana nazwa metody jest pogrubioną we wszystkich węzłach, w których występuje.|  
@@ -63,7 +62,7 @@ ms.locfileid: "31478294"
  ![Pasek narzędzi okna stosów równoległych](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
 |Objaśnienie list|Formant|Opis|  
-|--------------------|-------------|-----------------|  
+|-|-|-|  
 |ELEMENT|Pole kombi wątki/zadania|Przełączniki widok między stosy wątków wywołań i stosy zadań wywołań. Aby uzyskać więcej informacji zobacz widok zadań i wątków.|  
 |B|Pokaż tylko oflagowane|Stosy wywołań pokazuje tylko dla wątków, które są oznaczone w innych oknach debugowania, takich jak **wątki GPU** okna i **czujki równoległej** okna.|  
 |C|Przełącz widok — metoda|Przełącza między widokiem stosu i metody. Aby uzyskać więcej informacji zobacz widoku metody.|  
@@ -76,7 +75,7 @@ ms.locfileid: "31478294"
  ![Menu skrótów okna stosów równoległych](../debugger/media/parallel_contmenu.png "Parallel_ContMenu")  
   
 |Element menu|Opis|  
-|---------------|-----------------|  
+|-|-|  
 |Flaga|Flagi wybranego elementu.|  
 |Usuwanie oflagowania|Unflags wybranego elementu.|  
 |Blokowanie|Zawiesza się wybrany element.|  

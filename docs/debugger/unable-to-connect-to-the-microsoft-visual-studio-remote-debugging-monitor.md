@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7af9c41aac0531a9af014a49e9e0a1e71763d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058714"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ monitor debugera zdalnego nie prawidłowo ustawiono na zdalnym komputerze lub komputer zdalny jest niedostępny z powodu problemów z siecią lub obecności zapory.
@@ -84,7 +84,7 @@ Program Visual Studio nie może połączyć się ze zdalnym debugerem. Ten komun
 - Wersja zdalnego debugera jest niezgodna z programu Visual Studio. Aby zainstalować poprawną wersję zdalnego debugera, zobacz [debugowanie zdalne](../debugger/remote-debugging.md)
 
 
-## <a name="#valid_name"></a> Żądana nazwa jest prawidłowa, ale nie żądanego typu znaleziono danych
+## <a name="valid_name"></a> Żądana nazwa jest prawidłowa, ale nie żądanego typu znaleziono danych
 
 Komputer zdalny istnieje, ale Visual Studio nie może połączyć się ze zdalnym debugerem. Ten komunikat może wystąpić z kilku powodów:
 

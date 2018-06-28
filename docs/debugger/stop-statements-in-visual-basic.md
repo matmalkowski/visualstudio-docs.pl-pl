@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056146"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instrukcje stop w Visual Basic
 Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu przerwania. Gdy debuger napotka instrukcję Stop, przerywa wykonywanie programu (przejdzie do trybu przerwania). C# programistów można osiągnąć ten sam efekt za pomocą wywołania System.Diagnostics.Debugger.Break.  
@@ -39,7 +39,7 @@ Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu 
   
  Aby uniknąć usunięcia instrukcje Stop, można użyć kompilacja warunkowa:  
   
-```  
+```cpp
 #If DEBUG Then  
    Stop  
 #Else  
@@ -49,13 +49,13 @@ Instrukcji Stop Visual Basic zapewnia programowy alternatywne ustawienia punktu 
   
  Alternatywą jest instrukcja Assert zamiast instrukcji Stop. Instrukcja Debug.Assert dzieli wykonanie tylko wtedy, gdy określony warunek nie jest spełniony, a zostanie automatycznie usunięta, podczas tworzenia wersji. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kod zarządzany](../debugger/assertions-in-managed-code.md). Chcąc instrukcję Assert, która zawsze spowoduje przerwanie wykonywania w wersji do debugowania, możesz to zrobić:  
   
-```  
+```csharp
 Debug.Assert(false)  
 ```  
   
  Jeszcze inną alternatywą jest przy użyciu metody Debug.Fail:  
   
-```  
+```csharp
 Debug.Fail("a clever output string goes here")  
 ```  
   

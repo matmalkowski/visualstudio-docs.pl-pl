@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860d6bd5f89ff85f3abf75f1beceb62b6b860d54
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b41a65fb92615bf8b8e38cc13260187a6abc946f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476140"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058415"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Porady: testowanie i debugowanie wizualizera
 Raz zostały zapisane wizualizatora, musisz debugowania i testowania go.  
@@ -37,7 +37,7 @@ Raz zostały zapisane wizualizatora, musisz debugowania i testowania go.
   
 1.  W klasie po stronie debugera obejmują statyczną metodę, która tworzy <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> obiektu i wywołuje metodę jego Pokaż:  
   
-    ```  
+    ```csharp
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost myHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -49,7 +49,7 @@ Raz zostały zapisane wizualizatora, musisz debugowania i testowania go.
   
 2.  Dodaj następującą instrukcję do wywołania `TestShowVisualizer`. Jeśli utworzono z wizualizatora w bibliotece klas, należy utworzyć plik wykonywalny do wywołania biblioteki klas i umieścić to oświadczenie w pliku wykonywalnego:  
   
-    ```  
+    ```csharp
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   

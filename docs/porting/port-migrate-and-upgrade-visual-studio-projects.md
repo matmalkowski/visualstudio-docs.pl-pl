@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ea7f001179a206e3dfcf8e7026b54d6da6ebffbd
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947183"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058753"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu dla Visual Studio 2017 r.
 
@@ -32,7 +32,7 @@ Każda nowa wersja programu Visual Studio obsługuje ogólnie większość typó
 
 Wraz z upływem czasu zmieniają się także obsługę niektórych typów projektów. Nowsza wersja programu Visual Studio może nie obsługiwać niektórych projektów wszystkich lub wymaga zaktualizowania projekt w taki sposób, że nie jest już wstecznie zgodne. Bieżący stan na problemy przy migracji, można znaleźć w temacie [witryny programu Visual Studio Community Developer](https://developercommunity.visualstudio.com).
 
-W tym artykule istnieje zawiera szczegółowe informacje tylko dla typów projektów, które można migrować Visual Studio 2017 r. Artykuł nie obejmuje typów projektów, które nie są już obsługiwane w programie Visual Studio 2017 i dlatego nie można migrować. Artykuł nie obejmuje także typy obsługiwanych projektu, które mają nie problemy przy migracji; tej listy znajduje się na [obsługiwane platformy i zgodność](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
+W tym artykule istnieje zawiera szczegółowe informacje tylko dla typów projektów, które można migrować Visual Studio 2017 r. Artykuł nie obejmuje typów projektów, które nie są już obsługiwane w programie Visual Studio 2017 i dlatego nie można migrować. Artykuł nie obejmuje także typy obsługiwanych projektu, które mają nie problemy przy migracji; tej listy znajduje się na [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
 > Niektóre typy projektów wymagają zainstalowanie odpowiednich obciążeń przez Instalator programu Visual Studio. Jeśli masz zainstalowany obciążenia programu Visual Studio raporty typu projektu nieznane lub niezgodne. W takim przypadku sprawdź opcje instalacji i spróbuj ponownie. Ponownie, zobacz [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs) artykułu, aby uzyskać więcej informacji na temat obsługi projektu w programie Visual Studio 2017 r.

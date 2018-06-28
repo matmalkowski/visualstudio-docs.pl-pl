@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 438e5a96ef07faf399d06ae517afe313a44673b4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479393"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057853"
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debugowanie aplikacji ASP.NET w programie Visual Studio
 
@@ -88,7 +88,7 @@ Plik web.config powinna wyglądać następująco:
   
 #### <a name="example"></a>Przykład  
   
-```  
+```xml
 <configuration>  
     ...  
     <system.web>  

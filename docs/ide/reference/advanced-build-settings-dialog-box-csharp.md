@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948356"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057544"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
 
@@ -54,7 +54,7 @@ Użyj **Zaawansowane ustawienia kompilacji** okna dialogowego **projektanta proj
 
  Poniższe opcje pozwalają określić opcje wyjściowe zaawansowanych.
 
- **Informacje o debugowaniu** Określa typ informacji dotyczących debugowania generowanych przez kompilator. Aby uzyskać informacje na temat konfigurowania wydajność debugowania aplikacji, zobacz [ułatwiając obraz do debugowania](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). To ustawienie ma następujące opcje:
+ **Informacje o debugowaniu** Określa typ informacji dotyczących debugowania generowanych przez kompilator. Aby uzyskać informacje na temat konfigurowania wydajność debugowania aplikacji, zobacz [ułatwiając obraz do debugowania](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). To ustawienie ma następujące opcje:
 
 - **Brak**
 
@@ -67,7 +67,7 @@ Użyj **Zaawansowane ustawienia kompilacji** okna dialogowego **projektanta proj
 - **pdbonly**
 
   Umożliwia debugowanie, gdy program jest uruchamiany w debugerze, ale będą wyświetlane tylko asemblera jeśli uruchomiony program jest podłączony do debugera kodu źródłowego.
-- **Przenośna**
+- **przenośne**
 
   Tworzy. Plik PDB, plik symboli nie poszczególnych platform, przenośne z innych narzędzi, szczególnie debuger, informacje o tym, co w głównym pliku wykonywalnego i jak został utworzony. Zobacz [przenośnych PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Aby uzyskać więcej informacji.
 

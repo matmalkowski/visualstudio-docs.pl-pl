@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477420"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057401"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debugowanie projektów DLL z programu Visual Studio
 Następujące szablony programu Visual Studio Utwórz biblioteki DLL:  
@@ -82,7 +82,7 @@ Przed rozpoczęciem debugowania aplikacji wywołującej, zwykle można ustawić 
   
 2.  Aby przetestować metodę o nazwie `Test` w klasie `Class1`, utworzyć wystąpienia typu obiektu `Class1` przez wpisanie następującego kodu C# w oknie bezpośrednim. Ten kod zarządzany działa Visual Basic i C++, ze zmianami odpowiedniej składni:  
   
-    ```  
+    ```cpp
     Class1 obj = new Class1();  
     ```  
   
@@ -90,7 +90,7 @@ Przed rozpoczęciem debugowania aplikacji wywołującej, zwykle można ustawić 
   
 3.  Przy założeniu, że `Test` przyjmuje jeden `int` parametru oceny `Test` przy użyciu **Immediate** okno:  
   
-    ```  
+    ```cpp
     ?obj.Test(10)  
     ```  
   
@@ -98,7 +98,7 @@ Przed rozpoczęciem debugowania aplikacji wywołującej, zwykle można ustawić 
   
 4.  Można kontynuować debugowania `Test` umieszczając punkt przerwania w nim, a następnie ponownie obliczania funkcji:  
   
-    ```  
+    ```cpp
     ?obj.Test(10);  
     ```  
   

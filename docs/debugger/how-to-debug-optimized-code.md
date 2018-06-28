@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478083"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058513"
 ---
 # <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
 > [!NOTE]
@@ -84,7 +84,7 @@ ms.locfileid: "31478083"
   
  Podczas debugowania zoptymalizowanego kodu, użyj **dezasemblacji** okna, aby zobaczyć, jakie instrukcje faktycznie są tworzone i wykonywane. W przypadku ustawienia punktów przerwania, musisz wiedzieć, że punkt przerwania może przenosić wraz z instrukcji. Rozważmy na przykład następujący kod:  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   
