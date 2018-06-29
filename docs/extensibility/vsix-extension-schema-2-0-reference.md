@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7459b4292220e6bb1e5a00b912efe7eb99cce825
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148652"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089373"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest otwarty. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie zrozumieć.  
@@ -182,7 +182,9 @@ Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest 
   
          Tworzenie własnych typów i nadaj im unikatowe nazwy. W czasie wykonywania w programie Visual Studio kodu można wyliczyć i dostęp do tych typów niestandardowych za pomocą interfejsu API Menedżera rozszerzenia.  
   
-    -   Ścieżka - ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
+    -   `Path` — Ścieżka względna do pliku lub folderu w pakiecie, który zawiera element zawartości.  
+    
+    -   `TargetVersion` -zakres wersji, w którym dotyczy danego zasobu. Używane do wysyłania wielu wersji zasobów dla różnych wersji programu Visual Studio. Wymaga programu Visual Studio 2017.3 lub nowszej obowiązują.
   
     -   `AnyAttribute*` -Otwarty zestaw atrybutów, które będą udostępniane w czasie wykonywania w formie słownika pary nazwa wartość.  
   

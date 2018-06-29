@@ -15,32 +15,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 349103e59df3acb3719b7b36162cac818f94f03e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f73248ee79be384ae3733924e9235363717fb82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746686"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089616"
 ---
-# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Wskazówki: tworzenie zestawu danych za pomocą narzędzia Projektant obiektów Dataset
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Wskazówki: Tworzenie zestawu danych w Projektancie obiektów Dataset
 
-W tym przewodniku spowoduje utworzenie zestawu danych za pomocą **Projektant obiektów Dataset**. Nastąpi przekierowanie przez proces tworzenia nowego projektu i dodawanie nowej **DataSet** element, aby go. Nauczysz się, w jaki sposób tworzyć tabele na podstawie tabel w bazie danych bez używania kreatora.
-
-Zadania przedstawione w tym przewodniku obejmują:
-
--   Tworzenie nowego **aplikacji Windows Forms** projektu.
-
--   Dodawanie pustą **DataSet** elementu do projektu.
-
--   Tworzenie i konfigurowanie źródła danych w aplikacji przez utworzenie zestawu danych z **Projektant obiektów Dataset**.
-
--   Tworzenie połączenia z bazą danych Northwind w **Eksploratora serwera**.
-
--   Tworzenie tabel z elementami TableAdapter w zestawie danych na podstawie tabel istniejących w bazie danych.
-
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+W tym przewodniku można utworzyć zestawu danych przy użyciu **Projektant obiektów Dataset**. Artykuł przeprowadza użytkownika przez proces tworzenia nowego projektu i dodawanie nowej **DataSet** element, aby go. Dowiesz się, jak utworzyć tabel na podstawie tabel w bazie danych bez użycia kreatora.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
 1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
@@ -57,11 +44,9 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
        Po pewnym czasie zapytanie kończy wykonywanie i utworzeniu bazy danych Northwind.
 
-## <a name="creating-a-new-windows-forms-application-project"></a>Tworzenie nowego projektu aplikacji Windows Forms
+## <a name="create-a-new-windows-forms-application-project"></a>Utwórz nowy projekt aplikacji formularzy systemu Windows
 
-#### <a name="to-create-a-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms
-
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -71,11 +56,9 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
      Visual Studio dodaje projekt do **Eksploratora rozwiązań** i wyświetlić nowy formularz w projektancie.
 
-## <a name="adding-a-new-dataset-to-the-application"></a>Dodawanie nowego zestawu danych do aplikacji
+## <a name="add-a-new-dataset-to-the-application"></a>Dodaj nowy zestaw danych do aplikacji
 
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Aby dodać nowy zestaw danych do projektu
-
-1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element...** .
+1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
      **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
 
@@ -85,9 +68,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
      Visual Studio dodaje plik o nazwie **NorthwindDataset.xsd** do projektu i otwarcie go w **Projektant obiektów Dataset**.
 
-## <a name="creating-a-data-connection-in-server-explorer"></a>Tworzenie połączenia danych w Eksploratorze serwera
-
-#### <a name="to-create-a-connection-to-the-northwind-database"></a>Aby utworzyć połączenie z bazą danych Northwind
+## <a name="create-a-data-connection-in-server-explorer"></a>Utwórz połączenie danych w Eksploratorze serwera
 
 1.  Na **widoku** menu, kliknij przycisk **Eksploratora serwera**.
 
@@ -95,10 +76,11 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 3.  Utwórz połączenie z przykładową bazą danych Northwind.
 
-## <a name="creating-the-tables-in-the-dataset"></a>Tworzenie tabel w zestawie danych
+## <a name="create-the-tables-in-the-dataset"></a>Tworzenie tabel w zestawie danych
+
 W tej sekcji opisano sposób dodawania tabel do zestawu danych.
 
-#### <a name="to-create-the-customers-table"></a>Aby utworzyć tabelę Customers
+### <a name="to-create-the-customers-table"></a>Aby utworzyć tabelę Customers
 
 1.  Rozwiń węzeł połączenia danych utworzonego w **Eksploratora serwera**, a następnie rozwiń węzeł **tabel** węzła.
 
@@ -106,21 +88,19 @@ W tej sekcji opisano sposób dodawania tabel do zestawu danych.
 
      A **klientów** tabeli danych i **CustomersTableAdapter** są dodawane do zestawu danych.
 
-#### <a name="to-create-the-orders-table"></a>Aby utworzyć tabelę Orders
+### <a name="to-create-the-orders-table"></a>Aby utworzyć tabelę Orders
 
 -   Przeciągnij **zamówień** tabeli **Eksploratora serwera** na **Projektant obiektów Dataset**.
 
      **Zamówień** tabeli danych **OrdersTableAdapter**i danych relacji między **klientów** i **zamówień** tabele są dodawane do zestaw danych.
 
-#### <a name="to-create-the-orderdetails-table"></a>Aby utworzyć tabelę OrderDetails
+### <a name="to-create-the-orderdetails-table"></a>Aby utworzyć tabelę OrderDetails
 
 -   Przeciągnij **szczegółów zamówienia** tabeli **Eksploratora serwera** na **Projektant obiektów Dataset**.
 
      **Szczegółów zamówienia** tabeli danych **OrderDetailsTableAdapter**i relację danych między **zamówień** i **SzczegółyZamówienia** tabel zostaną dodane do zestawu danych.
 
 ## <a name="next-steps"></a>Następne kroki
-
-### <a name="to-add-functionality-to-your-application"></a>Dodawanie funkcji do aplikacji
 
 -   Zapisywanie zestawu danych.
 
@@ -136,4 +116,3 @@ W tej sekcji opisano sposób dodawania tabel do zestawu danych.
 - [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)
-- [Zapisywanie danych](../data-tools/saving-data.md)

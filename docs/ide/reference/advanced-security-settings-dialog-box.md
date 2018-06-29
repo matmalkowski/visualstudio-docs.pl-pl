@@ -1,6 +1,6 @@
 ---
 title: Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,29 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fec353f6ede2a9d2f99a8dfc19611577bbc6160
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3910383733171775bd1f25e230cbb896648034bb
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943039"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089545"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
+
 To okno dialogowe służy do określenia ustawień zabezpieczeń dotyczące debugowania w strefie.
 
- Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** zostanie wyświetlony, kliknij przycisk **zabezpieczeń** kartę. Na **zabezpieczeń** wybierz pozycję **włączenia ustawień zabezpieczeń technologii ClickOnce**, kliknij przycisk **jest częściowo zaufanych aplikacji**, a następnie kliknij przycisk **zaawansowane**.
+![Zaawansowane okno dialogowe Ustawienia zabezpieczeń w programie Visual Studio](../media/advanced-security-settings.png)
 
-## <a name="uielement-list"></a>Lista elementów UI
- **Debuguj aplikację z wybranym zestawem uprawnień** zaznaczenie tego pola wyboru uprawnień wybranego na **zabezpieczeń** strona jest używana podczas debugowania. Domyślnie ta opcja jest zaznaczona.
+Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** zostanie wyświetlony, kliknij przycisk **zabezpieczeń** kartę. Na **zabezpieczeń** wybierz pozycję **włączenia ustawień zabezpieczeń technologii ClickOnce**, kliknij przycisk **jest częściowo zaufanych aplikacji**, a następnie kliknij przycisk **zaawansowane**.
 
- Debugowanie w strefie zabezpieczeń do pracy, ta opcja musi być włączone; Ponadto **włączyć procesu hostingu Visual Studio** opcji (dostępne na **debugowania** strony **projektanta projektu**) musi być włączona.
+## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
 
- W przypadku projektów aplikacji przeglądarki sieci Web WPF **Debuguj aplikację z wybranym zestawem uprawnień** opcji jest zaznaczony i wyłączone.
+**Przyznać aplikacji dostęp do witryny pochodzenia**
 
- **Przyznać aplikacji dostęp do witryny pochodzenia** Jeśli to pole wyboru jest zaznaczone, aplikacja ma dostęp do witryny sieci Web lub udział serwera, na którym jest opublikowana. Domyślnie ta opcja jest zaznaczona.
+Jeśli zaznaczysz to pole wyboru, aplikacji można uzyskać dostępu do witryny sieci Web lub udział serwera, na którym jest opublikowana. Domyślnie ta opcja jest zaznaczona.
 
- **Debuguj aplikację tak, jakby była pobrana z następującego adresu URL** Jeśli trzeba umożliwić aplikacji dostęp do witryny sieci Web lub udział serwera odpowiadającego **URL instalacji** określone na **Publikowania** strony, wpisz w tym miejscu tego adresu URL. Ta opcja jest dostępna tylko wtedy, gdy **udzielić dostępu aplikacji do witryny pochodzenia** jest zaznaczone.
+**Debuguj aplikację tak, jakby była pobrana z następującego adresu URL**
 
-## <a name="see-also"></a>Zobacz też
+Jeśli trzeba umożliwić aplikacji dostęp do witryny sieci Web lub udział serwera odpowiadającego **URL instalacji** określone na **publikowania** Wprowadź tutaj tego adresu URL. Ta opcja jest dostępna tylko wtedy, gdy **udzielić dostępu aplikacji do witryny pochodzenia** jest zaznaczone.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Strona zabezpieczeń, Projektant projektu](../../ide/reference/security-page-project-designer.md)

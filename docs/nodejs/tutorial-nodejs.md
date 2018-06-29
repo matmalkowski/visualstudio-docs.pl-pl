@@ -2,7 +2,7 @@
 title: Tworzenie środowiska Node.js i aplikacji Express
 description: W tym samouczku tworzenie aplikacji za pomocą narzędzia Node.js dla programu Visual Studio
 ms.custom: ''
-ms.date: 03/13/2018
+ms.date: 06/27/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3d8bb6eb64433ef8e2cd369ed0c1e0ba59a03dd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e22b530fdebf227597e3c70b3bf58dd538754b3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282512"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089603"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
@@ -138,7 +138,7 @@ Aplikacja używa Pug frontonu Framework JavaScript. Pug korzysta z kodu znacznik
     }
     ````
 
-    Ten kod tworzy obiekt danych, który będzie jest przekazywana do dynamicznie generowanym strony HTML.
+    Ten kod tworzy obiekt danych, który jest przekazywany do dynamicznie generowanym strony HTML.
 
 1. Zastąp `router.get` wywołania funkcji z następującym kodem:
 
@@ -150,7 +150,7 @@ Aplikacja używa Pug frontonu Framework JavaScript. Pug korzysta z kodu znacznik
 
     Poprzedni kod ustawia bieżącej strony przy użyciu obiektu router Express i renderuje stronę, przekazanie obiektu tytuł i danych do strony. *Index.pug* określony plik jako stronę, aby załadować kiedy *index.js* działa. *index.js* jest skonfigurowany jako domyślną trasę w *app.js* kodu (tego nie pokazano).
 
-    Aby zademonstrować kilka funkcji programu Visual Studio, jest dostępna wystąpił błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy naprawić błąd, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.
+    Aby zademonstrować kilka funkcji programu Visual Studio, występuje błąd zamierzonego do wiersza zawierającego kod `res.render`. Należy naprawić błąd, zanim można uruchomić aplikacji, co zrobić w następnej sekcji.
 
 ## <a name="use-intellisense"></a>Korzystanie z funkcji IntelliSense
 
@@ -180,7 +180,7 @@ IntelliSense to narzędzie Visual Studio, które pomaga podczas pisania kodu.
 
 ## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania
 
-Zamierzamy do uruchomienia aplikacji w debugerze programu Visual Studio. Zanim firma Microsoft to zrobić, musimy ustawić punkt przerwania.
+Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. Przed operacją, należy ustawić punkt przerwania.
 
 1. W *index.js*, kliknij w lewym odstępu przed następujący wiersz kodu, aby ustawić punkt przerwania:
 
@@ -238,7 +238,7 @@ Gratulujemy wykonanie kroków tego samouczka!
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku przedstawiono sposób tworzenia i uruchamiania aplikacji Node.js przy użyciu Express i trafiony punkt przerwania korzystanie z debugera.
-
 > [!div class="nextstepaction"]
-> [Narzędzia node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Wdrażanie aplikacji w usłudze Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+
+W tym samouczku przedstawiono sposób tworzenia i uruchamiania aplikacji Node.js przy użyciu Express i trafiony punkt przerwania korzystanie z debugera. Aby dowiedzieć się więcej, zobacz [narzędzia Node.js dla programu Visual Studio w witrynie GitHub](https://github.com/Microsoft/nodejstools).

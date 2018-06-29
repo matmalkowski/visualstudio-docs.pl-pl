@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947066"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089506"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 
@@ -368,11 +368,11 @@ Teraz zostały przedstawione całości "Pusty projekt sieci Web Django", "Projek
 
 Uruchamianie aplikacji sieci web na komputerze dewelopera jest tylko jeden krok w zakresie udostępniania aplikacji dla klientów. Następne kroki mogą obejmować następujące zadania:
 
+- Wdrażanie aplikacji sieci web na serwerze produkcyjnym, takie jak usługi Azure App Service. Zobacz [publikowania w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), która obejmuje zmiany wymagane dla aplikacji Django.
+
 - Dostosowywanie strony 404, tworząc szablon o nazwie `templates/404.html`. Jeśli jest obecny, Django korzysta z tego szablonu zamiast jego domyślny. Aby uzyskać więcej informacji, zobacz [widoków błąd](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) w dokumentacji Django.
 
 - Pisanie testów jednostkowych `tests.py`; szablony projektu Visual Studio stanowią punkt wyjścia dla tych i więcej informacji można znaleźć w [pisanie pierwszej aplikacji Django, część 5 - testowania](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) i [testowania w Django](https://docs.djangoproject.com/en/2.0/topics/testing/) w dokumentacji Django.
-
-- Wdrażanie aplikacji sieci web na serwerze produkcyjnym, takie jak usługi Azure App Service. Zobacz [publikowania w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), która obejmuje zmiany wymagane dla aplikacji Django.
 
 - Zmień aplikacji z bazy danych SQLite w magazynie danych poziom produkcji, takich jak PostgreSQL, MySQL i SQL Server (które może być hostowana na platformie Azure). Zgodnie z opisem na [użycie SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite działa prawidłowo, do małej witryn średnia ruchu z mniej niż 100 KB trafień/dzień, ale nie jest zalecane w przypadku większej ilości. Istnieje również ograniczone do jednego komputera, więc nie można w jakimkolwiek scenariuszu wielu serwerów, takie jak Równoważenie obciążenia i replikację geograficzną. Informacji na temat obsługi Django w innych baz danych, zobacz [konfiguracji bazy danych](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Można również użyć [zestaw Azure SDK for Python](azure-sdk-for-python.md) do pracy z usług magazynu Azure, takich jak tabele i obiektów blob.
 

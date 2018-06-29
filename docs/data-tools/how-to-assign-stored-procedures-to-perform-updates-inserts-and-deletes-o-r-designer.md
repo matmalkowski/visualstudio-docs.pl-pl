@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a26d3702bcf885e5d8da48144c8f6458392bab4f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: b7fd690997b7d7b58f8d1c1f84ea7f471d4fe496
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057148"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089779"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawienia i usunięcia (Projektanta obiektów relacyjnych)
 
-Procedury składowane można dodać do Projektanta obiektów relacyjnych i wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One również pozwala zastąpić domyślną LINQ do zachowania w czasie wykonywania SQL wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klasami jednostki bazy danych (na przykład podczas wywoływania metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).
+Procedury składowane można dodać do **Projektanta obiektów relacyjnych** i wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One również pozwala zastąpić domyślną LINQ do zachowania w czasie wykonywania SQL wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klasami jednostki bazy danych (na przykład podczas wywoływania metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).
 
 > [!NOTE]
 > Jeśli Twoja procedura składowana zwraca wartości, które muszą zostać odesłany do klienta (na przykład obliczania wartości w procedurze składowanej), utwórz parametry wyjściowe w Twojej procedur składowanych. Jeśli nie możesz użyć parametrów wyjściowych, zapis zastępuje implementację metody częściowej, zdejmując to zadanie wygenerowany przez Projektanta obiektów relacyjnych. Elementy członkowskie, baza danych wygenerowała wartości muszą należy ustawić odpowiednie wartości po pomyślnym ukończeniu operacji INSERT lub UPDATE. Aby uzyskać więcej informacji, zobacz [obowiązki deweloperów w zastępowanie domyślne zachowanie](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
@@ -33,13 +33,13 @@ Domyślnie logika zaktualizować bazę danych (wstawienia, aktualizacje i usuni�
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Aby przypisać procedur składowanych, aby zastąpić domyślne zachowanie klasę jednostki
+### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Aby przypisać procedur składowanych, aby zastąpić domyślne zachowanie klasę jednostki
 
-1.  Otwórz **LINQ do SQL** pliku w projektancie. (Kliknij dwukrotnie plik .dbml w **Eksploratora rozwiązań**.)
+1.  Otwórz **LINQ do SQL** pliku w projektancie. (Kliknij dwukrotnie **.dbml** w pliku **Eksploratora rozwiązań**.)
 
 2.  W **Eksploratora serwera** lub **Eksploratora bazy danych**, rozwiń węzeł **procedur składowanych** i Znajdź procedur składowanych, których chcesz użyć dla Insert, Update i/lub usunąć polecenia klasy jednostka.
 
-3.  Przeciągnąć procedurę składowaną do Projektanta obiektów relacyjnych.
+3.  Przeciągnąć procedurę składowaną na **Projektanta obiektów relacyjnych**.
 
      Procedura składowana jest dodawany do okienka metod jako <xref:System.Data.Linq.DataContext> metody. Aby uzyskać więcej informacji, zobacz [metodę DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md).
 
@@ -53,7 +53,7 @@ Domyślnie logika zaktualizować bazę danych (wstawienia, aktualizacje i usuni�
 
 8.  Wybierz odpowiednie procedury składowanej w **Dostosuj** listy.
 
-9. Listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (Original_*ArgumentName*) do jego początkowych właściwości (*PropertyName* (oryginalny)) dla poleceń Update i Delete.
+9. Listę **argumenty metody** i **właściwości klasy** do sprawdzenia, czy **argumenty metody** mapy do odpowiedniego **właściwości klasy**. Mapowanie oryginalnego argumenty metody (`Original_<ArgumentName>`) do jego początkowych właściwości (`<PropertyName> (Original)`) dla `Update` i `Delete` poleceń.
 
     > [!NOTE]
     > Domyślnie argumenty metody mapować do właściwości klasy podczas nazwy są zgodne. Po zmianie właściwości nazwy nie jest już zgodne między tabelą i klasy jednostka, może być konieczne wybierz właściwość klasy równoważne do mapowania na, jeśli projektant nie może określić poprawne mapowania.
@@ -61,13 +61,13 @@ Domyślnie logika zaktualizować bazę danych (wstawienia, aktualizacje i usuni�
 10. Kliknij przycisk **OK** lub **zastosować**.
 
     > [!NOTE]
-    > Możesz skonfigurować działanie dla każdej kombinacji klasy/zachowanie, pod warunkiem, możesz kliknąć przycisk **Zastosuj** po każdej zmianie. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, zapewniając możliwość zastosować zmiany będą wyświetlane okno dialogowe.
+    >  Możesz skonfigurować działanie dla każdej kombinacji klasę i zachowanie, pod warunkiem, możesz kliknąć przycisk **Zastosuj** po każdej zmianie. Jeśli zmienisz klasy lub zachowania przed kliknięciem przycisku **Zastosuj**, okno dialogowe zostanie wyświetlone i zapewnia możliwość zastosowania zmian.
 
-Aby przywrócić za pomocą domyślnej środowiska uruchomieniowego logiki aktualizacji, kliknij przycisk wielokropka obok Insert, Update, lub Usuń polecenie w **właściwości** okna, a następnie wybierz **Użyj środowiska wykonawczego** w  **Konfigurowanie zachowania** okno dialogowe.
+Aby przywrócić za pomocą domyślnej środowiska uruchomieniowego logiki aktualizacji, kliknij wielokropek **Wstaw**, **aktualizacji**, lub **usunąć** w **właściwości**  okna, a następnie wybierz **Użyj środowiska wykonawczego** w **Konfigurowanie zachowania** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ do SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
-- [Wstawiania, aktualizowania i usuwania działań (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
+- [Wstawianie, aktualizowanie i usuwanie operacji (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

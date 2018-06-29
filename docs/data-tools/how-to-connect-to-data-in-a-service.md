@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3975d7f0bcfc9b80c944c892cde52f2b625e0bbf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6f90a99a387452500686af332edb1d112a88f82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921104"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089121"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
 
@@ -32,7 +32,7 @@ ms.locfileid: "31921104"
 Po zakończeniu działania kreatora, odwołania do usługi zostanie dodany do projektu i jest dostępny w [Data Sources — okno](add-new-data-sources.md).
 
 > [!NOTE]
-> Elementy, które są widoczne w **źródeł danych** okna są zależne od informacje zwracane usługi. Niektóre usługi mogą nie zawiera informacji wystarczających **Kreator konfiguracji źródła danych** do tworzenia obiektów powiązania. Na przykład, jeśli usługa zwraca nietypizowanego zestawu danych, następnie nie widać żadnych elementów w **Data Sources — okno** po ukończeniu kreatora. Jest to spowodowane nietypizowane zbiory danych nie udostępniają schematu, więc kreator nie ma wystarczających informacji do utworzenia źródła danych.
+> Elementy, które są widoczne w **źródeł danych** okna są zależne od informacje zwracane usługi. Niektóre usługi mogą nie zawiera informacji wystarczających **Kreator konfiguracji źródła danych** do tworzenia obiektów powiązania. Na przykład, jeśli usługa zwraca nietypizowanego zestawu danych, nie widać żadnych elementów w **Data Sources — okno** po ukończeniu kreatora. Jest to spowodowane nietypizowane zbiory danych nie udostępniają schematu, więc kreator nie ma wystarczających informacji do utworzenia źródła danych.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -44,10 +44,10 @@ Po zakończeniu działania kreatora, odwołania do usługi zostanie dodany do pr
 
 3.  Wprowadź adres usługi ma zostać użyty, lub kliknij przycisk **odnajdowania** znajdowanie usług w bieżącym rozwiązaniu, a następnie kliknij przycisk **Przejdź**.
 
-4.  Opcjonalnie, nowe **Namespace** można wpisać zamiast wartości domyślnej.
+4.  Opcjonalnie można wpisać nowy **Namespace** zamiast wartości domyślnej.
 
     > [!NOTE]
-    > Kliknij przycisk **zaawansowane** otworzyć [skonfigurować usługi odwołania — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md).
+    > Kliknij przycisk **zaawansowane** otworzyć [okno dialogowe Konfigurowanie odwołania do usługi](../data-tools/configure-service-reference-dialog-box.md).
 
 5.  Kliknij przycisk **OK** można dodać odwołania do usługi do projektu.
 
@@ -62,4 +62,4 @@ Dodawanie funkcji do aplikacji, wybierz element w **źródeł danych** okna i pr
 ## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie kontrolek WPF z usługą danych programu WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Usługi Windows Communication Foundation oraz usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Usługi danych usługi Windows Communication Foundation oraz usługi WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

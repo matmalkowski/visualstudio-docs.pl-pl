@@ -14,34 +14,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: baf4fca6c45bb81473b5b4fa0169c7958105803f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2e02f01924d5bae2770c579c4bfadd314e03cbe3
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747446"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089108"
 ---
-# <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Wskazówki: tworzenie DataTable w projektancie obiektów Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Wskazówki: Tworzenie DataTable w Projektancie obiektów Dataset
 
 W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez TableAdapter) przy użyciu **Projektant obiektów Dataset**. Aby uzyskać informacje na temat tworzenia tabel danych, które obejmują TableAdapters, zobacz [tworzenie i konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-Zadania przedstawione w tym przewodniku obejmują:
+## <a name="create-a-new-windows-forms-application"></a>Tworzenie nowej aplikacji Windows Forms
 
--   Tworzenie nowego projektu aplikacji Windows Forms
-
--   Dodawanie nowy zestaw danych do aplikacji
-
--   Dodawanie nowej tabeli danych do zestawu danych
-
--   Dodawanie kolumn do tabeli danych
-
--   Ustawienie klucza podstawowego dla tabeli
-
-## <a name="creating-a-new-windows-forms-application"></a>Tworzenie nowej aplikacji Windows Forms
-
-### <a name="to-create-a-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms
-
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -49,13 +35,11 @@ Zadania przedstawione w tym przewodniku obejmują:
 
 4. Nazwij projekt **DataTableWalkthrough**, a następnie wybierz pozycję **OK**.
 
-     **DataTableWalkthrough** projektu jest tworzony i dodane do **Eksploratora rozwiązań**.
+     **DataTableWalkthrough** projektu jest tworzony i dodawany do **Eksploratora rozwiązań**.
 
-## <a name="adding-a-new-dataset-to-the-application"></a>Dodawanie nowy zestaw danych do aplikacji
+## <a name="add-a-new-dataset-to-the-application"></a>Dodaj nowy zestaw danych do aplikacji
 
-### <a name="to-add-a-new-dataset-item-to-the-project"></a>Aby dodać nowy zestaw danych do projektu
-
-1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element...** .
+1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
      Zostanie wyświetlone okno dialogowe Dodaj nowy element.
 
@@ -65,9 +49,7 @@ Zadania przedstawione w tym przewodniku obejmują:
 
      Visual Studio dodaje plik o nazwie **DataSet1.xsd** do projektu i otwarcie go w **Projektant obiektów Dataset**.
 
-## <a name="adding-a-new-datatable-to-the-dataset"></a>Dodawanie nowego elementu DataTable z zestawem danych
-
-### <a name="to-add-a-new-data-table-to-the-dataset"></a>Aby dodać nową tabelę danych do zestawu danych
+## <a name="add-a-new-datatable-to-the-dataset"></a>Dodaj nową tabelę DataTable z zestawem danych
 
 1.  Przeciągnij **DataTable** z **DataSet** karcie **przybornika** na **Projektant obiektów Dataset**.
 
@@ -75,9 +57,7 @@ Zadania przedstawione w tym przewodniku obejmują:
 
 2.  Kliknij na pasku tytułu **DataTable1** i zmień jego nazwę `Music`.
 
-## <a name="adding-columns-to-the-datatable"></a>Dodawanie kolumn do DataTable
-
-### <a name="to-add-columns-to-the-datatable"></a>Aby dodać kolumny do elementu DataTable
+## <a name="add-columns-to-the-datatable"></a>Dodawanie kolumn do DataTable
 
 1.  Kliknij prawym przyciskiem myszy **utworów muzycznych** tabeli. Wskaż **Dodaj**, a następnie kliknij przycisk **kolumny**.
 
@@ -93,25 +73,18 @@ Zadania przedstawione w tym przewodniku obejmują:
 
      `Genre`: <xref:System.String?displayProperty=fullName>
 
-## <a name="setting-the-primary-key-for-the-table"></a>Ustawienie klucza podstawowego dla tabeli
+## <a name="set-the-primary-key-for-the-table"></a>Ustaw klucz podstawowy dla tabeli
 
 Wszystkie tabele danych powinny mieć klucz podstawowy. Klucz podstawowy unikatowo identyfikuje określonego rekordu w tabeli danych.
 
-### <a name="to-set-the-primary-key-of-the-data-table"></a>Można ustawić klucza podstawowego tabeli danych
+Można ustawić klucza podstawowego, kliknij prawym przyciskiem myszy **SongID** kolumny, a następnie kliknij przycisk **klucz podstawowy**. Ikona klucza jest wyświetlany obok pozycji **SongID** kolumny.
 
--   Kliknij prawym przyciskiem myszy **SongID** kolumny, a następnie kliknij przycisk **klucz podstawowy**.
+## <a name="save-your-project"></a>Zapisz projekt
 
-     Ikona klucza jest wyświetlany obok pozycji **SongID** kolumny.
-
-## <a name="saving-your-project"></a>Zapisanie projektu
-
-### <a name="to-save-the-datatablewalkthrough-project"></a>Aby zapisać projekt DataTableWalkthrough
-
--   Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
+Aby zapisać projekt DataTableWalkthrough na **pliku** menu, wybierz opcję **Zapisz wszystko**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)
-- [Zapisywanie danych](../data-tools/saving-data.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js'
 description: W tym szybkiego startu możesz utworzyć aplikację Node.js w programie Visual Studio
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,18 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6eebbcd696b55a6034864cc3cf0c4f44eaca8259
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 664eb75fb8fe105058ef78470245500e5e835515
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296293"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089280"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js
 
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli nie została jeszcze zainstalowana Visual Studio 2017, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
+
 Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Jeśli nie masz środowisko uruchomieniowe Node.js już zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
@@ -50,11 +51,11 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
    ![Eksplorator rozwiązań](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. Na dysku, ten projekt jest reprezentowana przez *.njsproj* pliku w folderze projektu.
+   - Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. Na dysku, ten projekt jest reprezentowana przez *.njsproj* pliku w folderze projektu.
 
-  - Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub więcej projektów powiązanych.
+   - Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub więcej projektów powiązanych.
 
-  - Węzeł npm zawiera wszystkie pakiety zainstalowane npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm wyszukiwanie i instalowanie pakietów npm za pomocą okna dialogowego.
+   - Węzeł npm zawiera wszystkie pakiety zainstalowane npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm wyszukiwanie i instalowanie pakietów npm za pomocą okna dialogowego.
 
 1. Jeśli chcesz zainstalować pakiet npm lub node.js polecenia z wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz pozycję **Otwórz wiersz polecenia w tym miejscu**.
 
@@ -84,9 +85,12 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Zamknij przeglądarkę sieci web.
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start, w którym został uruchomiony z programu Visual Studio IDE i Node.js. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Przejdź przez [samouczek środowiska Node.js i Express](../nodejs/tutorial-nodejs.md)
-- Przejdź przez [samouczek środowiska Node.js i bibliotece React.](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Wdrażanie aplikacji w usłudze Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+- [Samouczek środowiska Node.js i Express](../nodejs/tutorial-nodejs.md)
+- [Samouczek środowiska Node.js i bibliotece React.](../nodejs/tutorial-nodejs-with-react-and-jsx.md)

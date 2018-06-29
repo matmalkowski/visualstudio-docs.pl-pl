@@ -1,6 +1,6 @@
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zainstalowane z obciążeniami odpowiednie dla Twojej języka:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zainstalowane z obciążeniami odpowiednie dla Twojej języka:
   * ASP.NET: **ASP.NET i sieć web development**
   * Node.js: **programowanie Node.js**
 

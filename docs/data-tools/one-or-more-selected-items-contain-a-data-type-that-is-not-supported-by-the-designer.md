@@ -1,5 +1,5 @@
 ---
-title: Co najmniej jeden wybrany element zawiera typ danych, który nie jest obsługiwany przez projektanta
+title: Co najmniej jeden wybrany element zawiera typ danych nieobsługiwany przez projektanta
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
@@ -10,22 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 710bd42ea87f4d994a3176a736a55f534d1d9fd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920789"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089493"
 ---
-# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Co najmniej jeden wybrany element zawiera typ danych, który nie jest obsługiwany przez projektanta
+# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Co najmniej jeden wybrany element zawiera typ danych nieobsługiwany przez projektanta
 
-Co najmniej jeden z elementów przeciągnięte z **Eksploratora serwera**/**Eksploratora bazy danych** na [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] zawiera dane typu, który nie jest obsługiwany przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] na przykład [Typy danych zdefiniowane przez użytkownika CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Co najmniej jeden z elementów przeciągnięte z **Eksploratora serwera** lub **Eksploratora bazy danych** na **Projektanta obiektów relacyjnych** zawiera dane typu, który nie jest obsługiwany przez **O /R projektanta**, na przykład [typy danych zdefiniowane przez użytkownika CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 1. Utwórz widok, w którym jest oparty na żądaną tabeli i nie zawiera nieobsługiwany typ danych.
 
-2. Przeciągnij widoku z **Eksploratora serwera**/**Eksploratora bazy danych** do projektanta.
+2. Przeciągnij widoku z **Eksploratora serwera** lub **Eksploratora bazy danych** do projektanta.
 
 ## <a name="see-also"></a>Zobacz także
 

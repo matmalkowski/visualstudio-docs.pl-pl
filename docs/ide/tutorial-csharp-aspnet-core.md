@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281836"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089454"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
 
@@ -65,9 +65,9 @@ Jeśli nie widzisz **aplikacji sieci Web platformy ASP.NET Core** szablon projek
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: Użyj okna dialogowego Nowy projekt
 
-1. Kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.
+1. Wybierz **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.
 
-   ![Kliknij łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Wybierz łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
 
@@ -134,7 +134,7 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
 1. Wybierz **usług IIS Express** przycisk w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Można również nacisnąć klawisz **F5**, lub wybierz **Debuguj > Rozpocznij debugowanie** na pasku menu.)
 
-   ![Kliknij przycisk usług IIS Express programu Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Wybierz przycisk usług IIS Express programu Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Jeśli zostanie wyświetlony komunikat o błędzie informujący o **nie można nawiązać połączenia z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcji z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
@@ -183,7 +183,9 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy wykonanie kroków tego samouczka! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Nawet więcej informacji, kontynuuj następujące samouczka.
+Gratulujemy wykonanie kroków tego samouczka! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Aby wyświetlić aplikacji uruchomionych na serwerze publiczne, przycisk.
 
- > [!div class="nextstepaction"]
- > [Wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Wdrażanie aplikacji w usłudze Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+Można także zapoznać się używając framework Model-widok-kontroler (MVC) w ASP.NET Core samouczka, [wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

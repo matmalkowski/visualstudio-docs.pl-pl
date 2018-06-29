@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747629"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089662"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -53,7 +53,12 @@ W programie Visual Studio, plik projektu jest używany przez **Eksploratora rozw
 
 Projekt jest zawarty w *rozwiązania*. Rozwiązanie zawiera jeden lub więcej projektów pokrewnych, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z danym projekcie. Rozwiązanie opisanego przez plik tekstowy (rozszerzenie *.sln*) z własną unikatową format; nie jest on przeznaczony do można edytowane ręcznie.
 
-Rozwiązanie ma skojarzoną *.suo* plik przechowujący ustawień, preferencji i informacje o konfiguracji dla każdego użytkownika, który działał w projekcie.
+Visual Studio wykorzystuje dwa typy plików (*.sln* i *.suo*) do przechowywania ustawień dla rozwiązań:
+
+|Rozszerzenia|Nazwa|Opis|
+|---------------|----------|-----------------|
+|.sln|Rozwiązanie programu Visual Studio|Organizuje projektów, elementy projektów i elementów rozwiązania w rozwiązaniu.|
+|.suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia na poziomie użytkownika i dostosowania, takie jak punkty przerwania.|
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
 
@@ -63,7 +68,7 @@ Istnieje również możliwość utworzenia niestandardowych szablonów projektó
 
 ## <a name="manage-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
 
-Po utworzeniu nowego projektu można użyć **Eksploratora rozwiązań** do wyświetlania i zarządzania projektu i rozwiązania i ich skojarzonych elementów. Na poniższej ilustracji pokazano **Eksploratora rozwiązań** z rozwiązaniem C#, który zawiera dwa projekty.
+Po utworzeniu nowego projektu można użyć **Eksploratora rozwiązań** do wyświetlania i zarządzania projektu i rozwiązania i ich skojarzonych elementów. Na poniższej ilustracji pokazano **Eksploratora rozwiązań** z rozwiązaniem C#, który zawiera dwa projekty:
 
 ![Eksplorator rozwiązań](../ide/media/vs2015_solution_explorer.png)
 

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f60b9ebe3847db0f139c9369f5a3e0fc6c4fd8a9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4cc9ec25ab6bc69359649764074a3e908c06c4ae
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296308"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089558"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testy jednostkowe za pomocą programu Visual Studio 2017 na żywo
 
@@ -155,7 +155,7 @@ Istnieją pewne różnice między Live testów jednostkowych automatyczne urucha
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Testowanie jednostkowe na żywo i dużych rozwiązaniach
 
-Rozwiązania jest 10 lub więcej projektów, podczas uruchamiania testów jednostkowych na żywo i nie ma żadnych danych lub w przypadku wybrania **testu**, **Live testów jednostkowych**, **zresetować czystą** Opcja menu najwyższego poziomu programu Visual Studio, Visual Studio wyświetla to okno dialogowe do ostrzega o tym, że dynamiczne wykonywania dużej liczby testów w dużych projektów może poważnie obniżyć wydajność. W przypadku wybrania **OK**, Live testów jednostkowych wykonuje wszystkie teksty w rozwiązaniu. W przypadku wybrania **anulować**, możesz wybrać testów do wykonania. Aby uzyskać informacje, jak to zrobić, zobacz następującą sekcję [Włączanie i wyłączanie projekty testowe i metod testowych](#including-and-excluding-test-projects-and-test-methods).
+Rozwiązania jest 10 lub więcej projektów, podczas uruchamiania testów jednostkowych na żywo i nie ma żadnych danych lub w przypadku wybrania **testu**, **Live testów jednostkowych**, **zresetować czystą** Opcja menu najwyższego poziomu programu Visual Studio, Visual Studio wyświetla to okno dialogowe do ostrzega o tym, że dynamiczne wykonywania dużej liczby testów w dużych projektów może poważnie obniżyć wydajność. W przypadku wybrania **OK**, Live testów jednostkowych wykonuje wszystkie testy w rozwiązaniu. W przypadku wybrania **anulować**, możesz wybrać testów do wykonania. Aby uzyskać informacje, jak to zrobić, zobacz następującą sekcję [Włączanie i wyłączanie projekty testowe i metod testowych](#including-and-excluding-test-projects-and-test-methods).
 
  ![Na żywo dialogowego dużych projektów testów jednostkowych](media/lut-large-project.png)
 

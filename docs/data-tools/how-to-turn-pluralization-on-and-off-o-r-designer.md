@@ -10,15 +10,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8c477ac276ce0ff9c292dc42ba2f5f7d1e53dd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921686"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089386"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Porady: Włączanie określania liczby mnogiej i wyłączanie (Projektanta obiektów relacyjnych)
-Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się s lub IE z **Eksploratora serwera**/**Eksploratora bazy danych** na [składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazw wygenerowanych klas jednostek nie zostaną zmienione w liczbie mnogiej na liczbę pojedynczą. To jest bardziej przedstawiać fakt, że klasa jednostki wystąpień mapuje pojedynczy rekord danych. Na przykład dodawania tabeli klientów do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] wyniki w klasie jednostki o nazwie odbiorcy, ponieważ klasa będą przechowywane dane tylko jednego odbiorcy.
+Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się s lub IE z **Eksploratora serwera** lub **Eksploratora bazy danych** na [narzędzi LINQ do SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazw wygenerowanych klas jednostek są zmieniane w liczbie mnogiej do pojedynczej. To jest bardziej przedstawiać fakt, że klasa jednostki wystąpień mapuje pojedynczy rekord danych. Na przykład dodać `Customers` do tabeli **Projektanta obiektów relacyjnych** powoduje klasę jednostki o nazwie `Customer` ponieważ klasa będą przechowywane dane tylko jednego odbiorcy.
 
 > [!NOTE]
 >  Pluralizacja jest domyślnie tylko w języku angielskim wersji programu Visual Studio.
@@ -36,12 +36,12 @@ Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy końc
 
 3.  Kliknij przycisk **Projektanta obiektów relacyjnych**.
 
-4.  Ustaw **Pluralizację nazw** do **włączone** = **False** można ustawić [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] tak, aby nie zmienia nazwy klasy.
+4.  Ustaw **Pluralizację nazw** do **włączone** = **False** można ustawić **Projektanta obiektów relacyjnych** tak, aby nie zmienia nazwy klas .
 
-5.  Ustaw **Pluralizację nazw** do **włączone** = **True** do stosowania reguł do określania liczby mnogiej do nazwy klasy obiektów dodanych do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+5.  Ustaw **Pluralizację nazw** do **włączone** = **True** do stosowania reguł do określania liczby mnogiej do nazwy klasy obiektów dodanych do **obiektów relacyjnych Projektant**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

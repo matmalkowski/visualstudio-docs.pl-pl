@@ -15,14 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747147"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089033"
 ---
-# <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
+# <a name="n-tier-data-applications-overview"></a>Omówienie aplikacji warstwowych
 *N-warstwowa* dane aplikacji są dane aplikacji, które są podzielone na wielu *warstw*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
 
 Typowa aplikacja n-warstwowa zawiera warstwę prezentacji, warstwę środkową i warstwę danych. Najłatwiejszym sposobem rozdzielenia różnych warstw w n-warstwowej aplikacji jest utworzenie dyskretnych projektów dla każdej warstwy, która ma się znaleźć w aplikacji. Na przykład warstwą prezentacji może być aplikacja środowiska Windows Forms, podczas gdy logiką dostępu do danych może być biblioteka klas umieszczona w warstwie środkowej. Ponadto warstwa prezentacji może się komunikować z logiką dostępu do danych w warstwie środkowej za pośrednictwem usługi. Rozdzielanie składników aplikacji w oddzielne warstwy ułatwia konserwację i zwiększa skalowalność aplikacji. Wynika to z możliwości łatwiejszego wprowadzania nowych technologii do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Dodatkowo zazwyczaj n-warstwowe aplikacje przechowują wrażliwe informacje w środkowej warstwie, która utrzymuje izolację od warstwy prezentacji.
@@ -31,7 +31,7 @@ Program Visual Studio zawiera kilka funkcji, które ułatwiają deweloperom twor
 
 -   Zestaw danych zawiera **projektu DataSet** właściwość, która umożliwia dataset (dane jednostki layer) i TableAdapters (Warstwa dostępu do danych) w projektach dyskretnych.
 
--   [Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zawiera ustawienia do generowania klasy DataContext i dane w oddzielnych przestrzeni nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.
+-   [Narzędzi LINQ do SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zawiera ustawienia do generowania klasy DataContext i dane w oddzielnych przestrzeni nazw. Takie rozwiązania pozwala logicznie rozdzielić warstwy dostępu do danych i jednostek danych.
 
 -   [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index) zapewnia <xref:System.Data.Linq.Table%601.Attach%2A> metodę, która umożliwia zbieranie DataContext z różnych warstw w aplikacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa oraz zdalnych aplikacji za pomocą LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
@@ -72,14 +72,14 @@ Na ilustracji poniżej widać funkcje i technologie, które są dostępne w prog
 
 Warstwa danych nie może być dostępna bezpośrednio z klienta w warstwie prezentacji. Zamiast tego składnik dostępu do danych w warstwie środkowej obsługuje komunikację między warstwami prezentacji i danych.
 
-## <a name="help-for-n-tier-development"></a>Pomoc dotycząca tworzenia aplikacji n-warstwowych
+## <a name="help-for-n-tier-development"></a>Pomoc dla rozwoju n warstwowa
 Poniższe tematy zawierają informacje dotyczące pracy z aplikacjami n-warstwowymi:
 
 [Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
 [Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[N-warstwowa oraz zdalnych aplikacji za pomocą LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Zobacz także
 

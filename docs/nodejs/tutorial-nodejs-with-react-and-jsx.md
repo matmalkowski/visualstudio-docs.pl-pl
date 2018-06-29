@@ -13,15 +13,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17e91ac47b4e8a6a2d94caa523309bc0cfe9dd7e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8ea6494cbf71cced24ead52cd091500578b25f8c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281368"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089818"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i platformy React w programie Visual Studio
-Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i korzystać z funkcji IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React.
+
+Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i może wystąpić IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React.
 
 Z tego samouczka, dowiesz się, jak:
 > [!div class="checklist"]
@@ -37,7 +38,7 @@ Z tego samouczka, dowiesz się, jak:
 
     Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
 
-    Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale jeszcze programu Visual Studio, zaznacz **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 
 * Musi mieć zainstalowane środowisko uruchomieniowe Node.js.
 
@@ -46,6 +47,7 @@ Z tego samouczka, dowiesz się, jak:
     Jeśli użytkownik nie jest zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Nie wykrywa zainstalowane środowisko uruchomieniowe, można skonfigurować do odwołania zainstalowanego środowiska uruchomieniowego na stronie właściwości projektu (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
+
 Najpierw utwórz projekt aplikacji sieci web Node.js.
 
 1. Otwórz program Visual Studio 2017 r.
@@ -60,19 +62,19 @@ Najpierw utwórz projekt aplikacji sieci web Node.js.
 
     ![Node.js projekt w Eksploratorze rozwiązań](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
-    - Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. W systemie plików, ten projekt jest reprezentowany przez *.njsproj* pliku w folderze projektu. Można ustawić właściwości i zmiennych środowiskowych skojarzony z projektem, klikając prawym przyciskiem myszy projekt i wybierając pozycję **właściwości**. Możesz to zrobić dwustronną komunikację z innymi narzędziami programistycznymi, ponieważ plik projektu nie wprowadzać zmian niestandardowe źródło projektu Node.js.
+    * Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. W systemie plików, ten projekt jest reprezentowany przez *.njsproj* pliku w folderze projektu. Można ustawić właściwości i zmiennych środowiskowych skojarzony z projektem, klikając prawym przyciskiem myszy projekt i wybierając pozycję **właściwości**. Możesz to zrobić dwustronną komunikację z innymi narzędziami programistycznymi, ponieważ plik projektu nie wprowadzać zmian niestandardowe źródło projektu Node.js.
 
-    - Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub więcej projektów powiązanych.
+    * Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub więcej projektów powiązanych.
 
-    - Węzeł npm zawiera wszystkie pakiety zainstalowane npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm wyszukiwanie i instalowanie pakietów npm za pomocą okna dialogowego.
+    * Węzeł npm zawiera wszystkie pakiety zainstalowane npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm wyszukiwanie i instalowanie pakietów npm za pomocą okna dialogowego.
 
-    - Pliki takie jak projektu *server.js* wyświetlane w węźle projektu. *Server.js* jest plikiem uruchomienia projektu.
+    * Pliki takie jak projektu *server.js* wyświetlane w węźle projektu. *Server.js* jest plikiem uruchomienia projektu.
 
 ## <a name="add-npm-packages"></a>Dodawanie pakietów npm
 
 Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
 
-* Reakcji
+* reakcji
 * dom bibliotece react.
 * Express
 * ścieżka
@@ -85,11 +87,11 @@ Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
 
     W **zainstalować nowych pakietów npm** okno dialogowe, są dostępne do zainstalowania najnowszej wersji pakietu lub określ wersję. Jeśli zostanie zainstalowana bieżąca wersja te pakiety, ale wystąpiły nieoczekiwane błędy później, może być konieczne zainstalowanie wersji pakietu dokładnie opisane w dalszej części następujące kroki.
 
-1. W **zainstalować nowych pakietów npm** okno dialogowe Wyszukiwanie pakietu platformy react, a następnie kliknij przycisk **zainstaluj pakiet** go zainstalować.
+1. W **zainstalować nowych pakietów npm** okno dialogowe Wyszukiwanie pakietu platformy react, a następnie wybierz **zainstaluj pakiet** go zainstalować.
 
     ![Instalowanie pakietów npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    Kliknij przycisk **dane wyjściowe** okna, aby wyświetlić postęp instalacji pakietu (wybierz **Npm** w **Pokaż dane wyjściowe z** pól). Po zainstalowaniu pakietu jest wyświetlany w obszarze **npm** węzła.
+    Wybierz **dane wyjściowe** okna, aby wyświetlić postęp instalacji pakietu (wybierz **Npm** w **Pokaż dane wyjściowe z** pól). Po zainstalowaniu pakietu jest wyświetlany w obszarze **npm** węzła.
 
     Projektu *package.json* plik został zaktualizowany przy użyciu nowych informacji pakietu, łącznie z wersją pakietu.
 
@@ -110,7 +112,7 @@ Ta aplikacja wymaga liczba moduły npm by działała poprawnie.
 
 1. Kliknij prawym przyciskiem myszy **npm** węzeł projektu i wybierz polecenie **aktualizację pakietów npm**.
 
-    Kliknij przycisk **dane wyjściowe** okna, aby zobaczyć postęp na temat instalowania pakietów. Może to potrwać kilka minut i może nie od razu Zobacz wyniki.
+    Wybierz **dane wyjściowe** okna, aby zobaczyć postęp na temat instalowania pakietów. Instalacja może zająć kilka minut i może nie od razu Zobacz wyniki.
 
     Poniżej przedstawiono moduły npm, w jakiej występują w Eksploratorze rozwiązań po ich zainstalowaniu.
 
@@ -132,7 +134,7 @@ Dla tej aplikacji proste dodawane są pliki projektu w katalogu głównym projek
 
 1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt **NodejsWebAppBlank** i wybierz polecenie **Dodaj** > **nowy element**.
 
-1. W **Dodaj nowy element** oknie dialogowym wybierz **plików TypeScript JSX**, wpisz nazwę *app.tsx*i kliknij przycisk **OK**.
+1. W **Dodaj nowy element** oknie dialogowym wybierz **plików TypeScript JSX**, wpisz nazwę *app.tsx*i wybierz **OK**.
 
 1. Powtórz te kroki, aby dodać *webpack config.js*. Zamiast pliku TypeScript JSX, wybierz **plik JavaScript**.
 
@@ -268,13 +270,13 @@ W poprzednich krokach, możesz dodać *webpack config.js* do projektu. Następni
 
     Jeśli są wyświetlane błędy zamiast powyższych danych wyjściowych, należy rozwiązać problemy przed aplikacja będzie działać. Jeśli Twojej wersji pakietu npm są inne niż wersje przedstawiona w tym samouczku, który jest źródłem błędów. Jednym ze sposobów na błędy jest umożliwia dokładną wersję wyświetlane we wcześniejszych krokach. Ponadto jeśli co najmniej jeden z tych wersji pakietu jest przestarzała i powoduje błąd, może być konieczne Zainstaluj nowszą wersję, aby naprawić błędy.
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **istniejący Folder**, a następnie wybierz *dist* folder i kliknij przycisk  **Wybierz Folder**.
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **istniejący Folder**, a następnie wybierz *dist* folder i wybierz polecenie  **Wybierz Folder**.
 
     Dodaje programu Visual Studio *dist* folderu do projektu, który zawiera *bundle.js aplikacji* i *bundle.js.map aplikacji*.
 
 1. Otwórz *bundle.js aplikacji* wyświetlić transpiled kodu JavaScript.
 
-1. Jeśli zostanie wyświetlony monit, aby ponownie załadować zewnętrznie zmodyfikowane pliki, kliknij przycisk **tak, aby wszystkie**.
+1. Jeśli zostanie wyświetlony monit, aby ponownie załadować zewnętrznie zmodyfikowane pliki, wybierz **tak, aby wszystkie**.
 
     ![Ładowanie plików zmodyfikowanych](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
@@ -340,7 +342,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
 1. W **dołączyć do procesu** oknie dialogowym wybierz **kod Webkit** w **dołączyć do** wpisz **chrome** w polu filtru do filtrowania wyniki wyszukiwania.
 
-1. Wybierz proces Chrome o właściwy host port (1337 w tym przykładzie), a następnie kliknij przycisk **Attach**.
+1. Wybierz proces Chrome o właściwy host port (1337 w tym przykładzie), a następnie wybierz **Attach**.
 
     ![Dołączanie do procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -366,7 +368,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku przedstawiono sposób tworzenia aplikacji Node.js i platformy React, transpile JSX i debugowania. Aby dowiedzieć się więcej na temat narzędzia Node.js dla programu Visual Studio, zobacz strony typu Wiki.
-
 > [!div class="nextstepaction"]
-> [Narzędzia node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Wdrażanie aplikacji w usłudze Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+
+W tym samouczku przedstawiono sposób tworzenia aplikacji Node.js i platformy React, transpile JSX i debugowania. Aby dowiedzieć się więcej, zobacz [narzędzia Node.js dla programu Visual Studio w witrynie GitHub](https://github.com/Microsoft/nodejstools).

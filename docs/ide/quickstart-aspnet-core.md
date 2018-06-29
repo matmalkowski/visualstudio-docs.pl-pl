@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji sieci web platformy ASP.NET Core w języku C# za pomocą programu Visual Studio
 description: Informacje o sposobie tworzenia aplikacji sieci web platformy ASP.NET Core w programie Visual Studio w języku C#, krok po kroku.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1240056d8a4ad90b763e28d0576d87282bdc7518
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296365"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089302"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -53,7 +53,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
    ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. Następnie firma Microsoft będzie wyczyścić `using` dyrektywy w górnej części pliku przy użyciu skrótu simple. Wybierz dowolną wyszarzone poza dyrektyw using a [szybkie akcje](../ide/quick-actions.md) żarówki pojawi się na lewym marginesie lub pod karetką. Wybierz żarówkę, a następnie wybierz **usunąć niepotrzebne deklaracje Using**.
+1. Następnie wyczyść `using` dyrektywy w górnej części pliku przy użyciu skrótu simple. Wybierz dowolną wyszarzona dyrektyw using a [szybkie akcje](../ide/quick-actions.md) żarówki pojawi się na lewym marginesie lub pod karetką. Wybierz żarówkę, a następnie wybierz **usunąć niepotrzebne deklaracje Using**.
 
      Niepotrzebne deklaracje Using są usuwane z pliku.
 
@@ -87,7 +87,10 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 
 ## <a name="next-steps"></a>Następne kroki
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Aby dowiedzieć się więcej, kontynuuj następujące samouczka.
+
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Aby wyświetlić aplikacji uruchomionych na serwerze publiczne, przycisk.
 
 > [!div class="nextstepaction"]
-> [Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Wdrażanie aplikacji w usłudze Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+Aby dowiedzieć się więcej, kontynuuj samouczki, [wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md) i [wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

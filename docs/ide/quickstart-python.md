@@ -1,7 +1,7 @@
 ---
 title: 'Szybki Start: tworzenie aplikacji sieci web języka Python za pomocą programu Visual Studio'
 description: W tego przewodnika Szybki Start możesz użyć programu Visual Studio i platformy Flask do tworzenia aplikacji sieci web proste w języku Python.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296332"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089428"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
@@ -146,15 +146,12 @@ Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci 
 
 Gratulujemy programem pierwszej aplikacji Python z programu Visual Studio, w których znasz nieco jako IDE języka Python za pomocą programu Visual Studio!
 
-Ponieważ kroki, które należy przestrzegać w tego przewodnika Szybki Start są dość ogólny, prawdopodobnie zostały odgadnąć może i powinno zostać zautomatyzowane. Takie automatyzacji jest rola szablony projektu Visual Studio. Kliknij przycisk poniżej do pokazania, która tworzy aplikację sieci web podobny do tego, który został utworzony w tym artykule, ale przy użyciu mniejszej liczby kroków.
-
 > [!div class="nextstepaction"]
-> [Szybki Start — tworzenie za pomocą szablonu projektu języka Python](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Wdrażanie aplikacji w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Aby kontynuować pełniejsze samouczek dotyczący Python w programie Visual Studio, w tym za pomocą okna interaktywnego debugowania wizualizacji danych i Praca z usługą Git, kliknij przycisk poniżej.
+Ponieważ kroki, które należy przestrzegać w tego przewodnika Szybki Start są dość ogólny, prawdopodobnie zostały odgadnąć może i powinno zostać zautomatyzowane. Takie automatyzacji jest rola szablony projektu Visual Studio. Przejdź przez [Szybki Start — tworzenie za pomocą szablonu projektu języka Python](../python/quickstart-02-python-in-visual-studio-project-from-template.md) dla dla pokaz tworzącą podobny do aplikacji sieci web są tworzone w tym artykule, ale przy użyciu mniejszej liczby kroków.
 
-> [!div class="nextstepaction"]
-> [Samouczek: Wprowadzenie do języka Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Aby kontynuować pełniejsze samouczek dotyczący Python w programie Visual Studio, w tym za pomocą okna interaktywnego debugowania, wizualizacji danych i Praca z usługą Git, przejdź [samouczek: wprowadzenie do języka Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Aby zapoznać się z bardziej Visual Studio ma oferty, zaznacz poniższe łącza.
 

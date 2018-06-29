@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b9d14a9ba3c6428b4ec997d91addfaea30c0baf
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947495"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090052"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Użyj pełnej szablonu projektu sieci Web Django
 
@@ -217,5 +217,6 @@ Odpowiedź: Brak końcowe "$" w wyrażeniu regularnym został proste nadzoru wie
 
 ## <a name="go-deeper"></a>Przejść głębiej
 
+- [Wdrażanie aplikacji sieci web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Pisanie pierwszej aplikacji Django, część 4 - formularzy i rodzajowy widoków](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

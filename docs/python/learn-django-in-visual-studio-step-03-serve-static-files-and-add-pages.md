@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się Django w programie Visual Studio, krok 3
 description: Przewodnik podstawy Django w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak do obsługi plików statycznych, dodać stron aplikacji i używać szablonu dziedziczenia
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947079"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089590"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługi plików statycznych, dodać strony i użyj szablonu dziedziczenia
 
@@ -279,6 +279,7 @@ Poniższe kroki prezentują dziedziczenia:
 
 ## <a name="go-deeper"></a>Przejść głębiej
 
+- [Wdrażanie aplikacji sieci web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Pisanie pierwszej aplikacji Django, część 3 (widoki)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Aby uzyskać więcej możliwości szablonów Django, takich jak przepływu sterowania, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Aby uzyskać szczegółowe informacje na temat używania `{% url %}` tagów, zobacz [adres url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) w [tagi wbudowanych szablonów i filtry dla odwołania szablonów Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)

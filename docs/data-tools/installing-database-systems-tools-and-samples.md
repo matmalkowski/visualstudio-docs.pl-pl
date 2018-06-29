@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 883287c782742aa7bfb7d24f9e2d846a1caa149e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923626"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089198"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systemy zgodne bazy danych dla programu Visual Studio
 
@@ -27,7 +27,7 @@ Aby opracować połączone dane aplikacji w programie Visual Studio, zwykle Zain
 
 System bazy danych mają być dostępne z aplikacji .NET i które będą widoczne w Visual Studio danych narzędzi systemu windows musi on mieć dostawcy danych ADO.NET. Dostawcy specjalnie musi obsługiwać Entity Framework, jeśli planujesz używanie modeli danych jednostki w aplikacji .NET. Wielu dostawców są dostępne za pośrednictwem Menedżera pakietów NuGet lub za pomocą programu Visual Studio Marketplace.
 
-Jeśli używane są interfejsy API usługi Azure Storage, aby uniknąć naliczania opłat, aż wszystko będzie gotowe do wdrożenia w środowisku produkcyjnym należy zainstalować te emulatory magazynu Azure na komputerze lokalnym podczas programowania. Aby uzyskać więcej informacji, zobacz [użyć emulatora magazynu Azure do programowania i testowania](/azure/storage/common/storage-use-emulator).
+Jeśli używasz usługi Azure storage interfejsów API, aby uniknąć naliczania opłat, aż wszystko będzie gotowe do wdrożenia w środowisku produkcyjnym należy zainstalować te emulatory magazynu Azure na komputerze lokalnym podczas tworzenia. Aby uzyskać więcej informacji, zobacz [użyć emulatora magazynu Azure do programowania i testowania](/azure/storage/common/storage-use-emulator).
 
 Poniższa lista zawiera niektóre z najpopularniejszych systemów bazy danych, które mogą być używane w projektach Visual Studio. Lista nie jest kompletną. Aby uzyskać listę dostawców innych firm, które oferują dostawcy danych ADO.NET, umożliwiających głęboką integrację z narzędziami Visual Studio, zobacz [dostawcy danych ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
@@ -37,15 +37,15 @@ Program SQL Server jest bazą danych programu Microsoft najważniejszych oferty.
 
 ## <a name="oracle"></a>Oracle
 
-Możesz pobrać płatną lub bezpłatnej wersji bazy danych programu Oracle [Oracle technologii sieci](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) strony. Obsługę projektowania dla programu Entity Framework i TableAdapters należy [Oracle Developer Tools dla programu Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Inne oficjalnego produktów Oracle, w tym błyskawicznych klienta Oracle, są dostępne za pośrednictwem Menedżera pakietów NuGet.  Możesz pobrać Oracle przykładowe schematy zgodnie z instrukcjami w [dokumentacji Online Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+Możesz pobrać płatną lub bezpłatnej wersji bazy danych programu Oracle [Oracle technologii sieci](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) strony. Obsługę projektowania dla programu Entity Framework i TableAdapters należy [Oracle Developer tools dla Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Inne oficjalnego produktów Oracle, w tym błyskawicznych klienta Oracle, są dostępne za pośrednictwem Menedżera pakietów NuGet. Możesz pobrać Oracle przykładowe schematy zgodnie z instrukcjami w [dokumentacji online Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ## <a name="mysql"></a>MySQL
 
-MySQL to system popularnych open source bazy danych, który jest powszechnie używany w przedsiębiorstwach i witryn sieci Web. Pliki do pobrania dla programu MySQL, MySQL dla programu Visual Studio oraz pokrewnych produktów są na [MySQL w systemie Windows](http://www.mysql.com/why-mysql/windows/).  Stron trzecich oferują różne rozszerzenia programu Visual Studio i aplikacje autonomiczne zarządzania dla programu MySQL. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
+MySQL to system popularnych open source bazy danych, który jest powszechnie używany w przedsiębiorstwach i witryn sieci Web. Pliki do pobrania dla programu MySQL, MySQL dla programu Visual Studio oraz pokrewnych produktów są na [MySQL w systemie Windows](http://www.mysql.com/why-mysql/windows/). Stron trzecich oferują różne rozszerzenia programu Visual Studio i aplikacje autonomiczne zarządzania dla programu MySQL. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) .
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL to bezpłatne, open source obiektu system relacyjnej bazy danych. Aby go zainstalować w systemie Windows, możesz pobrać go z [stronę pobierania PostgreSQL](http://www.postgresql.org/download/windows/).  Można również tworzyć PostgreSQL z kodu źródłowego.  PostgreSQL core system zawiera interfejs języka C. Wiele podmiotów Podaj pakietów NuGet przy użyciu PostgreSQL z aplikacji .NET.  Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) . Prawdopodobnie najpopularniejszych pakietu jest zapewniana przez [npgsql.org](http://www.npgsql.org).
+PostgreSQL to bezpłatne, open source obiektu system relacyjnej bazy danych. Aby go zainstalować w systemie Windows, możesz pobrać go z [stronę pobierania PostgreSQL](http://www.postgresql.org/download/windows/). Można również tworzyć PostgreSQL z kodu źródłowego. PostgreSQL core system zawiera interfejs języka C. Wiele podmiotów Podaj pakietów NuGet przy użyciu PostgreSQL z aplikacji .NET. Możesz przeglądać ofert Menedżera pakietów NuGet (**narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**) . Czasem najpopularniejszych pakietu jest zapewniana przez [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
