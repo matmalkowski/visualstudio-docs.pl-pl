@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90015dce107eb15859fcb707cc265b84840ca546
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120314"
 ---
-# <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Wskazówki: tworzenie i debugowanie rozwiązania przepływu pracy SharePoint
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Wskazówki: Tworzenie i debugowanie rozwiązania przepływu pracy SharePoint
   W tym przewodniku pokazano, jak utworzyć szablon podstawowy sekwencyjnego przepływu pracy. Właściwości biblioteki dokumentów udostępnionych w celu określenia, czy dokumentu została przejrzana sprawdza, czy przepływ pracy. Jeśli dokumentu została przejrzana, zakończeniu przepływu pracy.  
   
  W instruktażu przedstawiono następujące zagadnienia:  
@@ -46,11 +47,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
-## <a name="adding-properties-to-the-sharepoint-shared-documents-library"></a>Dodawanie właściwości do programu SharePoint udostępnione biblioteki dokumentów  
+## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Dodawanie właściwości do biblioteki udostępnionych dokumentów programu SharePoint
  Aby śledzić stan przeglądu dokumentów w **udostępnionych dokumentów** biblioteki, utworzymy trzy nowe właściwości dla udostępnionych dokumentów w naszej witrynie programu SharePoint: `Status`, `Assignee`, i `Review Comments`. Definiujemy tych właściwości w **dokumenty udostępnione** biblioteki.  
   
 #### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>Aby dodać właściwości do programu SharePoint udostępnionych dokumentów biblioteki  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Utwórz dwie kolumny i nazwij je **ona** i **komentarzy**. Ustaw typ kolumny ona jako pojedynczy wiersz tekstu i typ kolumny komentarzy jako wiele wierszy tekstu.  
   
-## <a name="enabling-documents-to-be-edited-without-requiring-a-check-out"></a>Włączanie dokumentów do edycji bez wyewidencjonowania  
+## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>Włącz dokumentów do edycji bez konieczności wyewidencjonowanie
  Jest łatwiejsze testowanie szablonu przepływu pracy, gdy dokumenty można edytować, bez konieczności ich wyewidencjonować. Witryna programu SharePoint, aby włączyć, który skonfigurujesz w następnej procedurze.  
   
 #### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>Aby włączyć dokumentów do edycji bez wyewidencjonowania ich  
@@ -86,14 +87,14 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zamknij przeglądarkę.  
   
-## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Tworzenie projektu sekwencyjnego przepływu pracy programu SharePoint  
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>Tworzenie projektu sekwencyjnego przepływu pracy programu SharePoint
  Sekwencyjny przepływ pracy jest zestaw kroków wykonuje w kolejności, dopóki nie zakończy się ostatnie działanie. W tej procedurze utworzymy sekwencyjnego przepływu pracy, które będą stosowane do naszej listy Dokumenty udostępnione. Kreator przepływu pracy można skojarzyć przepływu pracy z definicji witryny lub definicji listy i pozwala określić, gdy zostanie uruchomiony przepływ pracy.  
   
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Aby utworzyć projekt sekwencyjnego przepływu pracy programu SharePoint  
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+2.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
 3.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -105,9 +106,9 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **określić poziom lokacji i zabezpieczeń dla debugowania** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisk, aby zaakceptować poziom i domyślne witryny zaufania.  
   
-     Ten krok określa poziom zaufania dla rozwiązania jako rozwiązanie farmy, jedyną dostępną opcją dla projektów przepływu pracy. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+     Ten krok określa poziom zaufania dla rozwiązania jako rozwiązanie farmy, jedyną dostępną opcją dla projektów przepływu pracy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+7.  W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
 8.  Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/16/2018
   
      Ta strona umożliwia określenie, po uruchomieniu przepływu pracy. Domyślnie, przepływ pracy jest uruchamiany albo gdy użytkownik ręcznie uruchamia go w SharePoint lub utworzenia elementu, z którym skojarzony jest przepływ pracy.  
   
-## <a name="creating-workflow-activities"></a>Tworzenie działań przepływu pracy  
+## <a name="create-workflow-activities"></a>Tworzenie działań przepływu pracy
  Przepływy pracy zawierają jedną lub więcej *działania* reprezentujące akcje do wykonania. Rozmieść działań przepływu pracy za pomocą projektanta przepływu pracy. W tej procedurze dwa działania zostanie dodany do przepływu pracy: działanie HandleExternalEventActivity i OnWorkFlowItemChanged. Te działania monitorowania stanu przeglądu dokumentów w **dokumenty udostępnione** listy  
   
 #### <a name="to-create-workflow-activities"></a>Aby utworzyć działań przepływu pracy  
@@ -171,12 +172,12 @@ ms.lasthandoff: 04/16/2018
     |**CorrelationToken**|**workflowToken**|  
     |**Wywołany**|**onWorkflowItemChanged**|  
   
-## <a name="handling-activity-events"></a>Obsługa zdarzeń działania  
+## <a name="handle-activity-events"></a>Obsługa zdarzeń działania
  Na koniec sprawdź stan dokumentu z każdego działania. Jeśli dokumentu została przejrzana, przepływu pracy zostało zakończone.  
   
 #### <a name="to-handle-activity-events"></a>Do obsługi zdarzeń działania  
   
-1.  W Workflow1.cs lub Workflow1.vb, Dodaj następujące pole na początku `Workflow1` klasy. To pole jest używane w działaniu, aby określić, czy przepływ pracy został zakończony.  
+1.  W *Workflow1.cs* lub *Workflow1.vb*, Dodaj następujące pole na początku `Workflow1` klasy. To pole jest używane w działaniu, aby określić, czy przepływ pracy został zakończony.  
   
     ```vb  
     Dim workflowPending As Boolean = True  
@@ -247,14 +248,14 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zapisz projekt.  
   
-## <a name="testing-the-sharepoint-workflow-template"></a>Testowanie szablonu przepływu pracy programu SharePoint  
+## <a name="test-the-sharepoint-workflow-template"></a>Testowanie szablonu przepływu pracy programu SharePoint
  Po uruchomieniu debugera, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] szablonu przepływu pracy jest wdrażana na serwerze programu SharePoint i kojarzy przepływu pracy z **dokumenty udostępnione** listy. Aby przetestować przepływ pracy, należy uruchomić wystąpienie przepływu pracy z dokumentu **dokumenty udostępnione** listy.  
   
 #### <a name="to-test-the-sharepoint-workflow-template"></a>Aby przetestować szablonu przepływu pracy programu SharePoint  
   
-1.  W Workflow1.cs lub Workflow1.vb, ustaw punkt przerwania **ramach działania onWorkflowActivated** metody.  
+1.  W *Workflow1.cs* lub *Workflow1.vb*, dalej, aby ustawić punkt przerwania **ramach działania onWorkflowActivated** metody.  
   
-2.  Wybierz klawisz F5, aby skompilować i uruchomić rozwiązanie.  
+2.  Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie.  
   
      Zostanie wyświetlona witryna programu SharePoint.  
   
@@ -268,7 +269,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sprawdź, czy debuger zatrzymuje się na punkt przerwania obok `onWorkflowActivated` metody.  
   
-7.  Wybierz klawisz F5, aby kontynuować działanie.  
+7.  Wybierz **F5** klawisz, aby kontynuować działanie.  
   
 8.  Zmienianie ustawień w tym miejscu dokument, ale pozostaw je w wartości domyślne dla teraz, wybierając **zapisać** przycisku.  
   
@@ -284,16 +285,15 @@ ms.lasthandoff: 04/16/2018
   
 12. W **dokumenty udostępnione** Sprawdź, czy wartość poniżej **stan dokumentu** kolumny ustawiono **pełny przegląd**. Odśwież **dokumenty udostępnione** strony i sprawdź, czy wartość poniżej **MySharePointWorkflow - Workflow1** kolumny ustawiono **Ukończono**. Oznacza to, że przepływ pracy został zakończony i dokumentu została przejrzana.  
   
-## <a name="next-steps"></a>Następne kroki  
+## <a name="next-steps"></a>Następne kroki
  Można poznać więcej informacji na temat sposobu tworzenia szablonów przepływu pracy z tych tematów:  
   
 -   Aby dowiedzieć się więcej na temat działania przepływu pracy programu SharePoint, zobacz [działania przepływu pracy programu SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).  
   
 -   Aby dowiedzieć się więcej na temat działania Windows Workflow Foundation, zobacz [Namespace System.Workflow.Activities](http://go.microsoft.com/fwlink/?LinkId=178993).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
   

@@ -1,7 +1,7 @@
 ---
 title: Wybieranie interpreter języka Python i środowisko dla projektu
 description: Jak przypisać środowiska Python dla projektu programu Visual Studio, a także instrukcje dotyczące tworzenia środowisk wirtualnych.
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976692"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117111"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak przypisać środowiska Python, który jest używany w projekcie
 

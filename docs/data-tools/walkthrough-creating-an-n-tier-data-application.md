@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5dae8a0cbc58bb202a609f465461e073006768e9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747004"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117709"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 *N-warstwowa* dane aplikacji są aplikacjom dostęp do danych i są podzielone na kilka logicznych warstw, lub *warstw*. Rozdzielić składniki aplikacji odrębny warstw zwiększa łatwość konserwacji i skalowalność aplikacji. Robi to przez włączenie ułatwia przyjęcie nowych technologii, które można zastosować do pojedynczej warstwie bez konieczności ponownego zaprojektowania całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji warstwy środkowej i warstwy danych. Warstwy środkowej obejmują zazwyczaj Warstwa dostępu do danych, warstwy logiki biznesowej i udostępniane składniki, takie jak uwierzytelniania i weryfikacji. Warstwa danych zawiera relacyjnej bazy danych. Aplikacje warstwowe zwykle przechowuj poufnych informacji w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
@@ -59,7 +59,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -77,7 +77,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Aby utworzyć rozwiązanie warstwowe i DataEntityTier biblioteki klas
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 
@@ -94,7 +94,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Do tworzenia biblioteki klas osobne dla TableAdapters
 
-1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj**, **nowy projekt...** .
+1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj** > **nowy projekt**.
 
 2.  W **nowy projekt** okno dialogowe, w środkowym okienku, wybierz opcję **biblioteki klas**.
 
@@ -164,7 +164,7 @@ W tym przewodniku pokazano, jak dostęp do warstwy dostępu do danych za pomocą
 
 #### <a name="to-create-a-new-wcf-service-application"></a>Aby utworzyć nową aplikację usługi WCF
 
-1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj**, **nowy projekt...** .
+1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj** > **nowy projekt**.
 
 2.  W **nowy projekt** okno dialogowe, w okienku po lewej stronie wybierz **WCF**.  W środkowym okienku wybierz **biblioteki usługi WCF**.
 
@@ -288,7 +288,7 @@ W tym przewodniku pokazano, jak dostęp do warstwy dostępu do danych za pomocą
 
 #### <a name="to-create-the-presentation-tier-project"></a>Aby utworzyć projekt warstwy prezentacji
 
-1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj**, **nowy projekt...** .
+1.  Kliknij prawym przyciskiem myszy w ramach rozwiązania w Eksploratorze rozwiązań i wybierz polecenie **Dodaj** > **nowy projekt**.
 
 2.  W **nowy projekt** okno dialogowe, w okienku po lewej stronie wybierz **Windows Desktop**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows**.
 

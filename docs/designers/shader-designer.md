@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d42699e08bd407f5481b7ad99981aef4ea3638bc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746783"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117579"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -43,7 +43,7 @@ W tej sekcji opisano sposób dodawania DGSL programu do cieniowania do Twojej [!
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Aby dodać do cieniowania DGSL do projektu
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz dodać program do cieniowania, a następnie wybierz **Dodaj**, **nowy element**.
+1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz dodać program do cieniowania, a następnie wybierz **Dodaj** > **nowy element**.
 
 2.  W **Dodaj nowy element** okna dialogowego, w obszarze **zainstalowana**, wybierz pozycję **grafiki**, a następnie wybierz **Visual wykres programu do cieniowania (dgsl)**.
 

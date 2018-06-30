@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c68df756e24fc45603d34dd6982a09889bd5203
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120579"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Porady: tworzenie funkcji niestandardowej oraz zasady walidacji pakietu dla Rozwiązań SharePoint
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Porady: Tworzenie funkcji niestandardowej oraz pakietu reguł sprawdzania poprawności dla rozwiązań SharePoint
   Można utworzyć niestandardowe reguły walidacji można zweryfikować pakietu rozwiązania generowane przez program Visual Studio. Można wykonać pełnej weryfikacji w całej funkcji lub pakietu, wybierając **weryfikacji** z menu kontekstowego pakietu lub funkcji w **PackagingExplorer**. Częściowego sprawdzania poprawności jest wykonywane podczas dodawania nowych elementów projektu SharePonit lub funkcje do projektu, aby określić pakietu lub funkcji działałoby w prawidłowym stanie.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Aby utworzyć regułę sprawdzania poprawności pakietu niestandardowego  
@@ -49,17 +50,16 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]
  [!code-csharp[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs#1)]  
   
-## <a name="compiling-the-code"></a>Kompilowanie kodu  
+## <a name="compile-the-code"></a>Kompilowanie kodu  
  W tym przykładzie wymaga odwołania do następujących zestawów:  
   
 -   Microsoft.VisualStudio.SharePoint.  
   
 -   System.ComponentModel.Composition.  
   
-## <a name="deploying-the-extension"></a>Wdrażanie rozszerzenia  
- Aby wdrożyć rozszerzenie, należy utworzyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
+ Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [narzędzia wdrażania rozszerzeń dla programu SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  
   

@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767666"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117140"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Porady: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzia programu SharePoint, należy utworzyć niestandardowego *polecenia SharePoint* do wywołania interfejsu API. Polecenie programu SharePoint do definiowania zestawu, który można wywołać bezpośrednio do modelu obiektów serwera.  
   
- Aby uzyskać więcej informacji dotyczących przeznaczenia polecenia SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+ Aby uzyskać więcej informacji dotyczących przeznaczenia polecenia SharePoint, zobacz [wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 ### <a name="to-create-a-sharepoint-command"></a>Aby utworzyć polecenie programu SharePoint  
   
@@ -78,10 +78,10 @@ ms.locfileid: "34767666"
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia  
- Aby wdrożyć polecenia, należy uwzględnić zestaw polecenia w tej samej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia (*vsix*) pakietu z zestawu rozszerzenia, która używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku extension.vsixmanifest. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Aby wdrożyć polecenia, należy uwzględnić zestaw polecenia w tej samej [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia (*vsix*) pakietu z zestawu rozszerzenia, która używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku extension.vsixmanifest. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
+ [Wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Porady: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+ [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   

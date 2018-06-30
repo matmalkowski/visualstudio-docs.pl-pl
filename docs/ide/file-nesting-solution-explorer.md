@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582620"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118148"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie pliku zagnieżdżenia w Eksploratorze rozwiązań
+# <a name="customize-file-nesting-in-solution-explorer"></a>Dostosowywanie zagnieżdżania plików w Eksploratorze rozwiązań
 
 Zagnieżdżania powiązanych plików w **Eksploratora rozwiązań** nie jest nowe, ale do teraz miało kontroli nad regułami zagnieżdżenia. Możesz wybrać ustawienia wstępne **poza**, **domyślne** i **sieci Web**, ale można również dostosować zagnieżdżanie dokładnie do potrzeb użytkownika. Można również utworzyć określonego rozwiązania i ustawienia specyficzne dla projektu, ale więcej informacji na temat wszystkich później. Przejdź najpierw w ofercie poza pole.
 
@@ -116,7 +116,7 @@ Ten dostawca pozwala zdefiniować reguły zagnieżdżenia pliku na podstawie ca�
 
 ![fileToFile przykład reguły](media/filenesting_filetofile.png) ![efekt przykład fileToFile](media/filenesting_filetofile_effect.png)
 
-* *bower.JSON* jest zagnieżdżony w obszarze *.bowerrc* z powodu **fileToFile** reguły
+* *.bowerrc* jest zagnieżdżony w obszarze *bower.json* z powodu **fileToFile** reguły
 
 ### <a name="rule-order"></a>Kolejność reguł
 

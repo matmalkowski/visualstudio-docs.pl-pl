@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d703beb24821663b08ed69238fcf27e2a752d64b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120571"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Porady: oznaczanie kontrolek pojęciem bezpiecznych kontrolek
   Dla bezpieczeństwa SharePoint oddzieli formantów sieci Web, które są chronione przed uruchomienie skryptu formantów sieci Web, które nie są. Chronione formantów, lub *bezpieczne kontrolki*, mogą uzyskiwać niezaufanym użytkownikom. Można oznaczyć formanty jako bezpieczne właściwości bezpieczne wpisy kontroli elementu projektu SharePoint lub w **projektanta pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Oznaczenie bezpieczne kontrolki we właściwości wpisy kontroli bezpieczne  
   
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Aby oznaczyć formanty jako bezpieczny lub niebezpieczny we właściwości bezpieczne wpisy kontroli  
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Aby oznaczyć formanty jako bezpieczny lub niebezpieczny we właściwości wpisy kontroli bezpieczne
   
 1.  Tworzenie rozwiązania programu SharePoint z projektu programu Visual Web Part.  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Oznaczenie bezpiecznych formantów w Projektancie pakietu  
   
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Aby oznaczyć formanty jako bezpieczny lub niebezpieczny w Projektancie pakietu  
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Aby oznaczyć formanty jako bezpieczny lub niebezpieczny w Projektancie pakietu
   
 1.  Tworzenie rozwiązania programu SharePoint z projektu programu Visual Web Part.  
   
@@ -67,11 +68,11 @@ ms.lasthandoff: 04/16/2018
   
      Zwróć uwagę, przestrzeni nazw kontrolki, ponieważ jest ona używana później.  
   
-3.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie** Aby skompilować projekt.  
+3.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** Aby skompilować projekt.  
   
 4.  Utwórz innego rozwiązania programu SharePoint.  
   
-5.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku Package.Package, a następnie wybierz **Otwórz** otworzyć **projektanta pakietów**.  
+5.  W **Eksploratora rozwiązań**, otwórz menu skrótów *Package.Package* pliku, a następnie wybierz pozycję **Otwórz** otworzyć **projektanta pakietów**.  
   
 6.  W **projektanta pakietów**, wybierz **zaawansowane** kartę.  
   
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  **Nazwy zestawu** wartość dla zestawów dodane za pośrednictwem **zaawansowane** karty **projektanta pakietów** nie może być token, musi być to zestaw o silnej nazwie. Aby uzyskać więcej informacji, zobacz [tworzenie i zestawy Using Strong-Named](http://go.microsoft.com/fwlink/?LinkId=177513).  
   
-13. Wybierz klawisz Tab, aby utworzyć inną wpisu kontroli bezpieczne.  
+13. Wybierz **kartę** klawisz, aby utworzyć inną wpisu kontroli bezpieczne.  
   
 14. Wybierz **kliknij tutaj, aby dodać nowy element** przycisk ponownie.  
   
@@ -114,10 +115,9 @@ ms.lasthandoff: 04/16/2018
     |Bezpieczne|Wybierz **bezpieczne** pole wyboru.|  
     |Bezpieczne względem skryptu|Wybierz **bezpieczne skryptu przed** pole wyboru.|  
   
-16. Wybierz klawisz Tab, a następnie wybierz **OK** przycisk, aby zamknąć okno dialogowe.  
+16. Wybierz **kartę** klucza, a następnie wybierz pozycję **OK** przycisk, aby zamknąć okno dialogowe.  
   
-## <a name="see-also"></a>Zobacz też  
- [Opakowanie i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Zobacz także
+ [Podaj informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

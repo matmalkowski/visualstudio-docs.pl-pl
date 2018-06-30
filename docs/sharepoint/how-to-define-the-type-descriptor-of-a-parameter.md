@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ebdd8e968d631cf1d53515449c7e705c2978087
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1709ea21fa785a573dae03ad8c89814c9952b50
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120307"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Porady: określanie deskryptora typu dla parametru
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Porady: Określanie deskryptora typu parametru
   Deskryptor typu zawiera właściwości opisujące typ danych parametru. Deskryptor typu można zdefiniować pola, jednostki lub kolekcji jednostek. Aby uzyskać więcej informacji, zobacz [deskryptora typu](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru  
@@ -121,11 +122,10 @@ ms.lasthandoff: 04/16/2018
   
      Nowy deskryptor typu jest dodawana jako element podrzędny do deskryptora typu kolekcji. Skonfiguruj ten deskryptor typu jako jednostki.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
   

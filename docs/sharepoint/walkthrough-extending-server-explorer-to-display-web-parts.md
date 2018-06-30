@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c1554bad679a856725a984504d914859733ee73
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238404"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117839"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web
   W programie Visual Studio, można użyć **połączeń SharePoint** węzła **Eksploratora serwera** Aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie są wyświetlane domyślnie niektórych składników. W tym przewodniku będzie można rozszerzyć **Eksploratora serwera** tak, aby Wyświetla Galeria składników Web Part na każdy jest połączony witryny programu SharePoint.  
@@ -36,19 +36,19 @@ ms.locfileid: "36238404"
   
     -   Rozszerzenie definiuje nowego typu węzła, który reprezentuje wystąpienie składnika Web Part. Ten nowy typ węzła stanowi podstawę dla węzłów podrzędnych w nowym **Galeria składników Web Part** węzła. Nowy typ węzła składnika Web Part wyświetla informacje w **właściwości** okna składnik Web Part, który reprezentuje informacje. Typ węzła zawiera również element menu skrótów niestandardowych, który służy jako punkt początkowy do wykonywania innych zadań, które odnoszą się do składnika Web Part.  
   
--   Utworzenie dwóch niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzenia. Polecenia SharePoint są metody, które mogą być wywoływane przez zestawy rozszerzenia, aby użyć interfejsów API w modelu obiektów serwera dla programu SharePoint. W tym przewodniku tworzenia poleceń, które pobrać informacji o części sieci Web z lokalnej witryny programu SharePoint na komputerze dewelopera. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Utwórz dwa niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzenia. Polecenia SharePoint są metody, które mogą być wywoływane przez zestawy rozszerzenia, aby użyć interfejsów API w modelu obiektów serwera dla programu SharePoint. W tym przewodniku tworzenia poleceń, które pobrać informacji o części sieci Web z lokalnej witryny programu SharePoint na komputerze dewelopera. Aby uzyskać więcej informacji, zobacz [wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 -   Tworzenie pakietu rozszerzenia serwera Visual Studio (VSIX), aby wdrożyć rozszerzenie.  
   
 -   Debugowanie i testowanie rozszerzenia.  
   
 > [!NOTE]  
->  Dla alternatywnej wersji tego przewodnika, która używa client object model dla programu SharePoint zamiast jego modelu obiektów serwera, zobacz [wskazówki: wywoływanie Model obiektu klienta programu SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Dla alternatywnej wersji tego przewodnika, która używa client object model dla programu SharePoint zamiast jego modelu obiektów serwera, zobacz [wskazówki: wywołują modelu obiektów klienta programu SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  
   
--   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio SDK. W tym przewodniku zastosowano **projektu VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrażania elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -374,7 +374,7 @@ ms.locfileid: "36238404"
   
 ## <a name="see-also"></a>Zobacz także
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Wskazówki: Wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Wskazówki: Wywołują modelu obiektów klienta programu SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)   
  [Tworzenie ikony lub innego obrazu &#40;edytor obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   

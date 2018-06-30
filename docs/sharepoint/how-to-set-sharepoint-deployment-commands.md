@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8779ba4ee4cf9803982d9849b3af7c83930d8a5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120629"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Porady: ustawianie poleceń wdrażania SharePoint
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Porady: poleceń wdrażania SharePoint zestawu
   Proces wdrażania można dostosować, ustawiając polecenia przed wdrożeniem i po wdrożeniu. Te polecenia są uruchamiane przed i po nich inne akcje wdrażania podczas debugowania rozwiązań programu SharePoint z programu Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Aby dodać polecenia przed wdrożeniem  
   
-1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**.  
+1.  Na pasku menu wybierz **projektu** > **\<*ProjectName*> właściwości**.  
   
 2.  Wybierz **SharePoint** kartę.  
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="to-add-a-post-deployment-command"></a>Aby dodać polecenia po wdrożeniu  
   
-1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**.  
+1.  Na pasku menu wybierz **projektu** > **\<*ProjectName*> właściwości**.  
   
 2.  Wybierz **SharePoint** kartę.  
   
@@ -46,7 +47,6 @@ ms.lasthandoff: 04/16/2018
   
      Na przykład, aby wyświetlić listę zawartości katalogu, po zakończeniu wdrożenia, wprowadź **dir**. Aby użyć zmiennej MSBuild, aby skopiować zestaw z katalogu kompilacji, wprowadź **skopiuj c:\DeploymentDirectory $(targetpath) —**.  
   
-## <a name="see-also"></a>Zobacz też  
- [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Zobacz także
+ [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

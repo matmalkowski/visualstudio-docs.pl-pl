@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 48ce29f06289f99444fc9fa231ea853a667ccc82
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281576"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117774"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 
@@ -33,11 +33,11 @@ Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
 
 1. Otwórz program Visual Studio 2017 r.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **pulpitu systemu Windows**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows (.NET Framework)**. Nadaj nazwę plikowi `HelloWorld`.
 
-     Jeśli nie widzisz **aplikacji formularzy systemu Windows (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje...** . Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie wybierz **Modyfikuj**.
+     Jeśli nie widzisz **aplikacji formularzy systemu Windows (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje**. Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie wybierz **Modyfikuj**.
 
      ![Obciążenie .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 

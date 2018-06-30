@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5cd225fe1eae267116610e2f08c7092d33c592af
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745532"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117683"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Przewodnik: zapisywanie danych w transakcji
 W tym przewodniku pokazano, jak można zapisać danych w transakcji za pomocą <xref:System.Transactions> przestrzeni nazw. W tym przewodniku utworzysz aplikacji formularzy systemu Windows. Użyjesz Kreator konfiguracji źródła danych można utworzyć zestawu danych dla dwóch tabel w bazie danych Northwind. Zostanie dodana dane powiązane kontrolki formularza systemu Windows i będzie zmodyfikować kod używany w parametrze BindingNavigator na przycisk zapisywania do aktualizacji bazy danych wewnątrz elementu TransactionScope.
@@ -36,7 +36,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -51,7 +51,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt dla systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 

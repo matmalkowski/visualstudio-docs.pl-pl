@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 824a747d9253817e1f188730996dac707b3e5ee5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120611"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Porady: wykonywanie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzia programu SharePoint, należy utworzyć niestandardowego *polecenia SharePoint* do wywołania interfejsu API. Po zdefiniowaniu polecenia i wdrożyć ją z rozszerzeniem narzędzia programu SharePoint, rozszerzenie można wykonać polecenie do wywołania w modelu obiektów programu SharePoint server. Można wykonać polecenia, użyj jednej z metod parametr ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu.  
   
- Aby uzyskać więcej informacji dotyczących przeznaczenia polecenia SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+ Aby uzyskać więcej informacji dotyczących przeznaczenia polecenia SharePoint, zobacz [wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 ### <a name="to-execute-a-sharepoint-command"></a>Do wykonania polecenia SharePoint  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
     -   W kodzie, który nie jest częścią rozszerzeń narzędzi SharePoint, takich jak Kreator szablonu projektu, należy użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> właściwości.  
   
-         Aby uzyskać więcej informacji na temat pobierania usługi projektu, zobacz [przy użyciu usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+         Aby uzyskać więcej informacji na temat pobierania usługi projektu, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
 2.  Wywoływanie jednego z metody parametr ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> obiektu. Podaj nazwę polecenia, które chcesz wykonać, aby pierwszy argument metody parametr ExecuteCommand. Jeśli polecenie ma niestandardowy parametr, do drugiego argumentu metody parametr ExecuteCommand przekazać tego parametru.  
   
@@ -65,16 +66,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Pierwszy parametr określa polecenie, które ma zostać wywołana. Ten ciąg jest zgodna z wartością, który jest przekazywany do <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> w definicji polecenia.  
   
--   Drugi parametr jest wartością, który chcesz przekazać do niestandardowy drugi parametr polecenia. W takim przypadku jest pełna ścieżka pliku wsp, który jest uaktualniany do witryny programu SharePoint.  
+-   Drugi parametr jest wartością, który chcesz przekazać do niestandardowy drugi parametr polecenia. W takim przypadku jest pełna ścieżka *WSP* pliku, który jest uaktualniany do witryny programu SharePoint.  
   
 -   Ten kod nie zostały spełnione niejawne <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> do polecenia parametr. Ten parametr jest przekazywany do polecenia automatycznie po wywołaniu polecenia z rozszerzeniem systemu projektu SharePoint lub rozszerzenie **połączeń SharePoint** w węźle **Eksploratora serwera**. W przypadku innych typów rozwiązań, takich jak Kreator szablonu projektu, który implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, ten parametr jest **null**.  
   
-## <a name="compiling-the-code"></a>Kompilowanie kodu  
+## <a name="compile-the-code"></a>Kompilowanie kodu  
  W tym przykładzie wymaga odwołania do zestawu Microsoft.VisualStudio.SharePoint.  
   
-## <a name="see-also"></a>Zobacz też  
- [Wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
+## <a name="see-also"></a>Zobacz także
+ [Wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Porady: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   

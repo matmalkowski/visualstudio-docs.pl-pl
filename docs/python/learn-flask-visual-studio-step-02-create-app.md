@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 907b20d3665a84f764619dc40a906b1d4096fd04
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946846"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118203"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji platformy Flask, widoki i szablony stron
 
@@ -36,7 +36,7 @@ W kodzie utworzonej przez szablon "Pusty projekt sieci Web platformy Flask", nal
 
 1. W folderze projektu, należy utworzyć folder aplikacji o nazwie `HelloFlask` (kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy Folder** .)
 
-1. W `HelloFlask` folderu, Utwórz plik o nazwie `__init.py__` z następującą zawartość, które tworzy `Flask` wystąpienia i ładuje widoków aplikacji (tworzonych w następnym kroku):
+1. W `HelloFlask` folderu, Utwórz plik o nazwie `__init__.py` z następującą zawartość, które tworzy `Flask` wystąpienia i ładuje widoków aplikacji (tworzonych w następnym kroku):
 
     ```python
     from flask import Flask

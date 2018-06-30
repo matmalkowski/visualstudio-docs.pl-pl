@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446696"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117098"
 ---
 # <a name="encodings-and-line-endings"></a>Kodowanie i wiersza zakończenia
 
@@ -51,9 +51,9 @@ Można użyć **pliku** > **zaawansowane opcje zapisywania** okno dialogowe, aby
 ![Okno dialogowe Zaawansowane opcje zapisywania](media/line_endings.png)
 
 > [!NOTE]
-> Jeśli nie widzisz **zaawansowane opcje zapisywania** na **pliku** menu, można go dodać. Wybierz **narzędzia**, **dostosować...** , a następnie wybierz pozycję **polecenia** kartę. W **paska Menu** listy rozwijanej wybierz pozycję **pliku**, a następnie wybierz **polecenia Dodaj...**  przycisku. W **polecenia Add** okna dialogowego, w obszarze **kategorii**, wybierz **pliku**, a następnie w **polecenia** wybierz **Zaawansowane opcje zapisywania...**. Wybierz **OK** , a następnie wybierz **Przenieś w dół** przycisk, aby przenieść polecenie na dowolne miejsce w menu. Wybierz **zamknąć** zamknąć **Dostosuj** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Jeśli nie widzisz **zaawansowane opcje zapisywania** na **pliku** menu, można go dodać. Wybierz **narzędzia**, **Dostosuj**, a następnie wybierz pozycję **polecenia** kartę. W **paska Menu** listy rozwijanej wybierz pozycję **pliku**, a następnie wybierz **polecenia Add** przycisku. W **polecenia Add** okna dialogowego, w obszarze **kategorii**, wybierz **pliku**, a następnie w **polecenia** wybierz  **Zaawansowane opcje zapisywania**. Wybierz **OK** , a następnie wybierz **Przenieś w dół** przycisk, aby przenieść polecenie na dowolne miejsce w menu. Wybierz **zamknąć** zamknąć **Dostosuj** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternatywnie można uzyskać dostęp **zaawansowane opcje zapisywania** okno dialogowe, wybierając **pliku** > **zapisać \<pliku\> jako...** . W **Zapisz plik jako** oknie dialogowym Wybierz trójkąt listy rozwijanej obok pola **zapisać** przycisk i wybierz polecenie **Zapisz z kodowaniem...** .
+> Alternatywnie można uzyskać dostęp **zaawansowane opcje zapisywania** okno dialogowe, wybierając **pliku** > **zapisać \<pliku\> jako**. W **Zapisz plik jako** oknie dialogowym Wybierz trójkąt listy rozwijanej obok pola **zapisać** przycisk i wybierz polecenie **Zapisz z kodowaniem**.
 
 ## <a name="see-also"></a>Zobacz także
 

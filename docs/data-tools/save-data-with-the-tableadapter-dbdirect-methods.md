@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 63b802603b586efa8b801423fce20cd4add5348a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747550"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117618"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji SQL bezpośrednio na bazie danych za pomocą metod TableAdapter DBDirect. Metody TableAdapter DBDirect Podaj poprawnie poziom kontroli nad aktualizacje bazy danych. Można je do uruchomienia określonej instrukcji SQL i zapisanych procedur wywołując poszczególne `Insert`, `Update`, i `Delete` metody odpowiednio do potrzeb aplikacji (zamiast zastąpionej `Update` metodę, która wykonuje AKTUALIZACJĘ INSERT i DELETE instrukcje wszystko w jednym wywołaniu).
@@ -47,7 +47,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -62,7 +62,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt dla systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 

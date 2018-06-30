@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 74d1181936a5efa3b286999ea832e78dffdcccf3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120320"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Wskazówki: tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint
   Poniższe procedury pokazują, jak utworzyć niestandardowe kolumny witryny programu SharePoint — lub *pola*— oraz typu zawartości, który używa kolumny witryny. Ponadto sposobu tworzenia list, która używa nowego typu zawartości.  
   
  Ten instruktaż zawiera następujące zagadnienia:  
@@ -50,16 +51,16 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a> Tworzenie kolumny witryny niestandardowej  
+## <a name="create-custom-site-columns"></a>Utwórz niestandardową witrynę kolumny
  W tym przykładzie tworzy listę pacjentów w szpital Twoich zarządzania. Najpierw należy utworzyć projekt programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i Dodaj kolumny witryny, w następujący sposób.  
   
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt  
   
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **pliku** menu, wybierz **nowy**, **projektu**.  
+1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **pliku** menu, wybierz **nowy** > **projektu**.  
   
 2.  W **nowy projekt** okno dialogowe, w obszarze albo **Visual C#** lub **Visual Basic**, rozwiń węzeł **programu SharePoint** węzeł, a następnie wybierz pozycję **2010**.  
   
@@ -71,17 +72,17 @@ ms.lasthandoff: 05/22/2018
   
 5.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** sekcji, użyj wartości domyślnej **Wdróż jako rozwiązanie w trybie piaskownicy**.  
   
-     Aby uzyskać więcej informacji o trybie piaskownicy oraz rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+     Aby uzyskać więcej informacji o trybie piaskownicy oraz rozwiązaniami farmy, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 6.  Wybierz **Zakończ** przycisku. Projekt powinien być teraz wyświetlany w **Eksploratora rozwiązań**.  
   
 #### <a name="to-add-site-columns"></a>Aby dodać kolumny witryny  
   
-1.  Dodaj nową kolumnę witryny. Aby to zrobić, w **Eksploratora rozwiązań**, otwórz menu skrótów **Clinic**, a następnie wybierz pozycję **Dodaj**, **nowy element**.  
+1.  Dodaj nową kolumnę witryny. Aby to zrobić, w **Eksploratora rozwiązań**, otwórz menu skrótów **Clinic**, a następnie wybierz pozycję **Dodaj** > **nowy element**.  
   
 2.  W **Dodaj nowy element** okna dialogowego wybierz **kolumny witryny**, Zmień nazwę, aby **pacjenta nazwa**, a następnie wybierz pozycję **Dodaj** przycisku.  
   
-3.  W pliku Elements.xml kolumny witryny, należy pozostawić **typu** ustawienie jako **tekst**i zmień **grupy** ustawienie **kolumny witryny Clinic**. Po zakończeniu pliku Elements.xml kolumny witryny powinien wyglądać jak w następującym przykładzie.  
+3.  W kolumnie lokacji *Elements.xml* plików, pozostaw **typu** ustawienie jako **tekst**i zmień **grupy** ustawienie  **Kolumny witryny clinic**. Po zakończeniu, kolumny witryny *Elements.xml* plik powinien wyglądać jak w następującym przykładzie.  
   
     ```xml  
     <Field  
@@ -96,14 +97,14 @@ ms.lasthandoff: 05/22/2018
   
 4.  Przy użyciu tej samej procedury, Dodaj dwie kolumny witryny do projektu: **pacjenta identyfikator** (typ = "Integer") i **nazwa lekarza** (typ = "Text"). Ustaw wartość ich grupy **kolumny witryny Clinic**.  
   
-##  <a name="BKMK_CreateCustContType"></a> Tworzenie niestandardowego typu zawartości  
+## <a name="create-a-custom-content-type"></a>Utwórz niestandardowy typ zawartości
  Następnie należy utworzyć typu zawartości — na podstawie typu zawartości kontaktów — zawierającej kolumny witryny, które zostały utworzone w poprzedniej procedurze. Użycie typu zawartości na istniejący typ zawartości, można zaoszczędzić czas, ponieważ podstawowy typ zawartości zawiera kilka kolumn witryny do użycia w nowego typu zawartości.  
   
 #### <a name="to-create-a-custom-content-type"></a>Aby utworzyć niestandardowy typ zawartości  
   
 1.  Dodaj typ zawartości do projektu. Aby to zrobić, w **Eksploratora rozwiązań**, wybierz węzeł projektu  
   
-2.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
 3.  Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -128,16 +129,16 @@ ms.lasthandoff: 05/22/2018
   
 10. Zmień **Nazwa grupy** do **typy zawartości Clinic**i pozostawić innymi ustawieniami domyślnymi.  
   
-11. Na pasku menu wybierz **pliku**, **Zapisz wszystko**, a następnie zamknij projektanta typu zawartości.  
+11. Na pasku menu wybierz **pliku** > **Zapisz wszystko**, a następnie zamknij projektanta typu zawartości.  
   
-##  <a name="BKMK_CreateList"></a> Tworzenie listy  
+## <a name="create-a-list"></a>Utwórz listę
  Teraz Utwórz listę, która korzysta z nowej zawartości kolumny typu i witryny.  
   
 #### <a name="to-create-a-list"></a>Aby utworzyć listę  
   
 1.  Dodaj listę do projektu. Aby to zrobić, w **Eksploratora rozwiązań**, wybierz węzeł projektu.  
   
-2.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
 3.  Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -204,14 +205,14 @@ ms.lasthandoff: 05/22/2018
   
 15. W **nazwa kolumny** wybierz **pacjenta nazwa**, upewnij się, że **sortowanie** kolumny ustawiono **rosnąco**, a następnie wybierz pozycję  **OK** przycisku.  
   
-##  <a name="BKMK_TestApp"></a> Testowanie aplikacji  
+## <a name="test-the-application"></a>Testowanie aplikacji
  Teraz, gotowe kolumn niestandardowej witryny, typu zawartości i listy, wdrażania ich w programie SharePoint, a następnie uruchom aplikację do testowania.  
   
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację  
   
-1.  Na pasku menu wybierz **pliku**, **Zapisz wszystko**.  
+1.  Na pasku menu wybierz **pliku** > **Zapisz wszystko**.  
   
-2.  Wybierz klawisz F5, aby uruchomić aplikację.  
+2.  Wybierz **F5** klawisz, aby uruchomić aplikację.  
   
      Aplikacja została skompilowana, a następnie jego funkcje są wdrożone w programie SharePoint i aktywowane.  
   
@@ -225,11 +226,10 @@ ms.lasthandoff: 05/22/2018
   
      Nowy rekord zostanie wyświetlony na liście.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie kolumn witryn, typów zawartości i list dla SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Porady: Tworzenie niestandardowego pola typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Typy zawartości](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [kolumny](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  
+ [Kolumny](http://go.microsoft.com/fwlink/?LinkId=192081)  
   

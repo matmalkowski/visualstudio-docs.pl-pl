@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9522e793171500b7b7f0a356eff63947fdba84cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120566"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Porady: rozszerzanie węzła SharePoint w Eksploratorze serwera
   Można rozszerzyć węzłów w **połączeń SharePoint** w węźle **Eksploratora serwera**. Jest to przydatne, jeśli chcesz dodać nowe węzły podrzędne, elementy menu skrótów lub właściwości do istniejący węzeł. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -67,9 +68,9 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- To rozszerzenie dodaje właściwości można edytować ciągu do węzłów. Można również utworzyć niestandardowe właściwości, które zawiera tylko do odczytu danych z serwera programu SharePoint. Na przykład, który pokazuje, jak to zrobić, zobacz [wskazówki: rozszerzanie Eksploratora serwera do części sieci Web wyświetlaną](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ To rozszerzenie dodaje właściwości można edytować ciągu do węzłów. Można również utworzyć niestandardowe właściwości, które zawiera tylko do odczytu danych z serwera programu SharePoint. Na przykład, który pokazuje, jak to zrobić, zobacz [wskazówki: rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="compiling-the-code"></a>Kompilowanie kodu  
+## <a name="compile-the-code"></a>Kompilowanie kodu  
  W tym przykładzie wymaga odwołania do następujących zestawów:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -80,13 +81,12 @@ ms.lasthandoff: 04/16/2018
   
 -   System.Windows.Forms  
   
-## <a name="deploying-the-extension"></a>Wdrażanie rozszerzenia  
- Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
+ Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Porady: Dodawanie niestandardowego węzła SharePoint do Eksploratora serwera](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  
   

@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75bbdadba08ecb16dd789242feb1b2e2a204981d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120283"
 ---
-# <a name="reference-sharepoint-tools-extensibility"></a>Odwołanie (Rozszerzalność Narzędzi SharePoint)
+# <a name="reference-sharepoint-tools-extensibility"></a>Odwołanie (rozszerzalność narzędzi SharePoint)
   Ta sekcja zawiera dokumentacja referencyjna dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
   
-## <a name="in-this-section"></a>W tej sekcji  
- [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
- Zawiera dokumentacja referencyjna dla schematu pliku .spdata —.  
+## <a name="in-this-section"></a>W tej sekcji
+ [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ Zawiera dokumentacja referencyjna dla *.spdata —* pliku schematu.  
   
  [Dokumentacja interfejsu API &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
  Zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  
   

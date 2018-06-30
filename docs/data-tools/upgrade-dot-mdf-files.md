@@ -1,5 +1,5 @@
 ---
-title: Uaktualnij plików .mdf
+title: Uaktualnianie plików mdf
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,16 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa7fac39e8f198c473bf79a68a48feb136eccda3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924436"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117943"
 ---
-# <a name="upgrade-mdf-files"></a>Uaktualnij plików .mdf
+# <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 
-W tym temacie opisano opcje uaktualniania pliku bazy danych (mdf), po zainstalowaniu nowszej wersji programu Visual Studio. Zawiera instrukcje dotyczące następujących zadań:
+W tym temacie opisano opcje uaktualniania pliku bazy danych (*.mdf*) po Zainstaluj nowszą wersję programu Visual Studio. Zawiera instrukcje dotyczące następujących zadań:
 
 - Uaktualnić plik bazy danych do nowszej wersji programu SQL Server Express LocalDB
 
@@ -35,7 +35,7 @@ W tym temacie opisano opcje uaktualniania pliku bazy danych (mdf), po zainstalow
 
 - Wprowadź programu SQL Server Express domyślny aparat bazy danych
 
-Aby otworzyć projekt, który zawiera plik bazy danych (mdf), który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB, można użyć programu Visual Studio. Aby kontynuować tworzenie projektu w programie Visual Studio, musi mieć danej wersji programu SQL Server Express lub LocalDB zainstalowany na tym samym komputerze co program Visual Studio lub należy uaktualnić plik bazy danych. Jeżeli uaktualnisz plik bazy danych nie można do niego dostęp przy użyciu starszej wersji programu SQL Server Express lub LocalDB.
+Możesz otworzyć projekt, który zawiera plik bazy danych za pomocą programu Visual Studio (*.mdf*) który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB. Aby kontynuować tworzenie projektu w programie Visual Studio, musi mieć danej wersji programu SQL Server Express lub LocalDB zainstalowany na tym samym komputerze co program Visual Studio lub należy uaktualnić plik bazy danych. Jeżeli uaktualnisz plik bazy danych nie można do niego dostęp przy użyciu starszej wersji programu SQL Server Express lub LocalDB.
 
 Może też pojawić się prośba uaktualnić plik bazy danych, który został utworzony za pomocą starszej wersji programu SQL Server Express lub LocalDB, jeśli wersja pliku nie jest zgodna z wystąpienia programu SQL Server Express lub LocalDB, które jest obecnie zainstalowane. Aby rozwiązać ten problem, Visual Studio spowoduje wyświetlenie monitu do uaktualnienia pliku.
 
@@ -43,7 +43,7 @@ Może też pojawić się prośba uaktualnić plik bazy danych, który został ut
 > Firma Microsoft zaleca, Utwórz kopię zapasową pliku bazy danych przed rozpoczęciem uaktualniania.
 
 > [!WARNING]
-> Po uaktualnieniu plik mdf, który został utworzony w LocalDB 2014 r. (wersja 12) 32-bitowych do LocalDB 2016 (V13) lub nowszym, nie można ponownie otworzyć plik w 32-bitowej wersji bazy danych LocalDB.
+> W przypadku uaktualniania *.mdf* plik, który został utworzony w LocalDB 2014 r. (wersja 12) 32-bitowych do LocalDB 2016 (V13) lub nowszym, nie można ponownie otworzyć plik w 32-bitowej wersji bazy danych LocalDB.
 
 Przed rozpoczęciem uaktualniania bazy danych, należy wziąć pod uwagę następujące kryteria:
 
@@ -71,7 +71,7 @@ Przed rozpoczęciem uaktualniania bazy danych, należy wziąć pod uwagę nastę
 
         -   Do korzystania z określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, gdzie V12 jest LocalDB 2014, a V13 LocalDB 2016.
 
-    -   **Dołącz plik bazy danych**: ścieżka fizyczna głównego pliku *.mdf.
+    -   **Dołącz plik bazy danych**: ścieżka fizyczna podstawową *.mdf* pliku.
 
     -   **Nazwa logiczna**: nazwa, która ma być używany z plikiem.
 
@@ -99,11 +99,11 @@ Można również zmodyfikować połączenie programu SQL Server Express do użyc
 
     -   Aby uruchomić projekt, zaznacz **F5** klucza.
 
-    -   Aby edytować bazy danych, otwórz plik .mdf w **Eksploratora rozwiązań**, rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.
+    -   Aby edytować bazy danych, otwórz *.mdf* w pliku **Eksploratora rozwiązań**, rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby program SQL Server Express domyślny aparat bazy danych
 
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.
+1.  Na pasku menu wybierz **narzędzia** > **opcje**.
 
 2.  W **opcje** okna dialogowego rozwiń **narzędzi bazy danych** opcje, a następnie wybierz **połączenia danych**.
 

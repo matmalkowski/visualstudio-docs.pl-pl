@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1411df09c1d79b2c350d70b0959724dd45f36488
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c39546d48cd8b8bf71594685f944751c1f023750
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757058"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117813"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych z WPF i Entity Framework 6
 
@@ -32,7 +32,7 @@ W tym przykładzie używa programu SQL Server Express LocalDB i przykładowej ba
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (**Eksplorator obiektów SQL Server** jest instalowany jako część **magazynu danych i przetwarzania** obciążeń w **Instalator programu Visual Studio**.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (**Eksplorator obiektów SQL Server** jest instalowany jako część **magazynu danych i przetwarzania** obciążeń w **Instalator programu Visual Studio**.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 

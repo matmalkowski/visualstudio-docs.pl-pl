@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cedf05457b397598d7417bce331be27aa8ac4e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756506"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118216"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Porady: dodawanie działań do przybornika
 
@@ -48,9 +48,9 @@ Można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. 
 
 1.  Otwórz rozwiązanie przepływu pracy.
 
-2.  Z **narzędzia** menu, wybierz opcję **wybierz elementy przybornika...** .
+2.  Z **narzędzia** menu, wybierz opcję **wybierz elementy przybornika**.
 
-3.  W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **składniki elementu System.Activities** karcie, a następnie kliknij przycisk **Przeglądaj...**  można przejść do zestawu zawierającego to niestandardowe działanie ma zostać dodany.
+3.  W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **składniki elementu System.Activities** karcie, a następnie kliknij przycisk **Przeglądaj** można przejść do zestawu zawierającego niestandardowy działanie, które chcesz dodać.
 
 4.  Wybierz zestaw, a następnie kliknij przycisk **OK**. Składnik niestandardowego działania zostanie dodany do listy składników i jest automatycznie wybierany.
 

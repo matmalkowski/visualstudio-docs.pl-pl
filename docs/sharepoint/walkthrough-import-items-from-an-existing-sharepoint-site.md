@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: acd471ca33b0b3dc5057744e22c9d7e5a4c25980
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca29232acae2b67d4e2b04c96bd1dde5e595b83f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120559"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Wskazówki: importowanie elementów z istniejącej witryny SharePoint
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Wskazówki: Importowanie elementów z istniejącej witryny SharePoint
   W tym przewodniku pokazano sposób importowania elementów z istniejącej witryny SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.  
   
  W tym przewodniku przedstawiono następujące zadania:  
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
-## <a name="customizing-a-sharepoint-site"></a>Dostosowywanie witryny programu SharePoint  
+## <a name="customize-a-sharepoint-site"></a>Dostosowywanie witryny programu SharePoint
  Na przykład można będzie tworzyć i dostosowywać podwitryny programu SharePoint, dodając do niej nowej kolumny witryny i tworząc inną witrynę do użycia w przyszłości. Później będzie wyeksportować pierwszej witryny podrzędnej w pliku wsp i zaimportowanie kolumny niestandardową witrynę do drugiej witryny podrzędnej przy użyciu WSP Importowanie projektu.  
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>Tworzenie i dostosowywanie witryny programu SharePoint  
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 13. **Kolumny testu** kolumna jest wyświetlana w kolumnach niestandardowy nagłówek w galerii kolumny.  
   
-## <a name="exporting-the-sharepoint-site"></a>Eksportowanie witryny programu SharePoint  
+## <a name="exporting-the-sharepoint-site"></a>Eksportowanie witryny programu SharePoint
  Następnie uzyskaj plik Instalatora (wsp) programu SharePoint, który zawiera elementy programu SharePoint i elementy, które mają zostać zaimportowane do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint. Jeśli nie masz już plik wsp, następnie należy utworzyć jeden z istniejącej witryny SharePoint. W tym przykładzie będzie eksportować domyślnej witryny programu SharePoint, w pliku wsp.  
   
 > [!IMPORTANT]  
@@ -101,12 +102,12 @@ ms.lasthandoff: 04/16/2018
   
 7.  W **pobieranie pliku** oknie dialogowym wybierz **zapisać** przycisk, aby zapisać plik w systemie lokalnym domyślnie w folderze pobrane.  
   
-## <a name="importing-the-wsp-file"></a>Importowanie plików .wsp  
- Teraz, gdy masz plik wsp, który zawiera element, który chcesz użyć ponownie (niestandardowej witryny kolumnie testu kolumna), zaimportuj plik wsp do niego dostęp.  
+## <a name="import-the-wsp-file"></a>Importowanie plików .wsp
+ Teraz, gdy masz *.wsp* pliku, który zawiera element, który chcesz ponownie użyć (niestandardowej witryny kolumnie testu kolumna), zaimportuj *WSP* pliku do niego dostęp.  
   
 #### <a name="to-import-a-wsp-file"></a>Aby zaimportować plik .wsp  
   
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe. Jeśli środowiskiem IDE ustawiono użyć ustawienia środowiska deweloperskiego Visual Basic, na pasku menu, wybierz **pliku**, **nowy projekt**.  
+1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt**okno dialogowe. Jeśli środowiskiem IDE ustawiono użyć ustawienia środowiska deweloperskiego Visual Basic, na pasku menu, wybierz **pliku** > **nowy projekt**.  
   
 2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -118,23 +119,23 @@ ms.lasthandoff: 04/16/2018
   
 5.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** sekcji, należy pozostawić wybór jako **Wdróż jako rozwiązanie w trybie piaskownicy**.  
   
-6.  W **określ nowe źródło projektu** strony, przejdź do lokalizacji w systemie, w którym zapisano plik wsp wcześniej, a następnie wybierz pozycję **dalej** przycisku.  
+6.  W **określ nowe źródło projektu** strony, przejdź do lokalizacji w systemie, w której zapisano *.wsp* wcześniej pliku, a następnie wybierz pozycję **dalej** przycisku.  
   
     > [!NOTE]  
-    >  Jeśli wybierzesz **Zakończ** przycisk na tej stronie, wszystkie dostępne elementy w pliku wsp zostaną zaimportowane.  
+    >  Jeśli wybierzesz **Zakończ** przycisk na tej stronie, wszystkie dostępne elementy *WSP* można zaimportować pliku.  
   
 7.  W **wybierz elementy do zaimportowania** polu, wyczyść wszystkie pola wyboru na liście, z wyjątkiem **kolumny testu**, a następnie wybierz pozycję **Zakończ** przycisku.  
   
-     Ponieważ listy zawiera wiele pozycji, można wybrać klawisze Ctrl + aby wybrać wszystkie elementy na liście, wybierz klawisz spacji, aby wyczyścić wszystkie pola wyboru, a następnie zaznacz pole wyboru obok **kolumny testu** elementu.  
+     Ponieważ listy zawiera wiele pozycji, można wybrać **Ctrl**+**A** kluczy, aby wybrać wszystkie elementy na liście, wybierz klawisz spacji, aby wyczyścić wszystkie pola wyboru, a następnie wybierz tylko wyboru obok pola **kolumny testu** elementu.  
   
-     Po zakończeniu operacji importowania nowego projektu o nazwie **WspImportProject1** utworzeniu zawiera folder o nazwie **pola**. W tym folderze to kolumna niestandardową witrynę **kolumny testu** i jego pliku definicji Elements.xml.  
+     Po zakończeniu operacji importowania nowego projektu o nazwie **WspImportProject1** utworzeniu zawiera folder o nazwie **pola**. W tym folderze to kolumna niestandardową witrynę **kolumny testu** i jego pliku definicji *Elements.xml*.  
   
-## <a name="deploying-the-project"></a>Wdrażanie projektu  
+## <a name="deploy-the-project"></a>Wdrażanie projektu
  Ponadto wdrożyć **WspImportProject1** do drugiego programu SharePoint podwitryny utworzony wcześniej, aby wyświetlić kolumny niestandardowej witryny.  
   
 #### <a name="to-deploy-the-project"></a>Aby wdrożyć projekt  
   
-1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz klawisz F5, aby wdrożyć i uruchomić projekt importu WSP.  
+1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klucza do wdrożenia i uruchomienia *WSP* Importowanie projektu.  
   
 2.  W witrynie programu SharePoint, należy otworzyć **Akcje witryny** menu, a następnie wybierz pozycję **ustawienia lokacji** do wyświetlenia strony ustawień lokacji.  
   
@@ -144,9 +145,8 @@ ms.lasthandoff: 04/16/2018
   
      Zwróć uwagę, że kolumna niestandardowej witryny importowany z pierwszej lokacji programu SharePoint zostanie wyświetlony na liście.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
   

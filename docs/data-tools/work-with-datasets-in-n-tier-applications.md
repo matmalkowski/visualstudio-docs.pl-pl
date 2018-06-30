@@ -1,5 +1,5 @@
 ---
-title: Praca z zestawami danych w aplikacjach warstwowych
+title: Praca z zestawami danych w aplikacjach n-warstwowych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -21,14 +21,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f97e0d4c0cd16fd2bc7cc8bf140a59a800a254ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926118"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116968"
 ---
-# <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach warstwowych
+# <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 
 *Aplikacje warstwowe —* są skoncentrowane na dane aplikacji, które są podzielone na kilka logicznych warstw (lub *warstw*). Innymi słowy aplikacji warstwowych jest aplikacja, która jest podzielony na wiele projektów z warstwą dostępu do danych, warstwy logiki biznesowej, a warstwą prezentacji każdego własnego projektu. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
 
@@ -52,5 +52,5 @@ Obsługa N-warstwowa w typizowanych zbiorach danych umożliwia iteracyjne projek
 - [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
 - [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Tworzenie i konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md)
-- [N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)
+- [N-warstwowa oraz zdalnych aplikacji za pomocą LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

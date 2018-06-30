@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979415"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117404"
 ---
 # <a name="unit-testing-visual-c-code"></a>Kod Visual C# testy jednostkowe
 
@@ -26,7 +26,7 @@ W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projekt
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Tworzenie rozwiązania i jednostkowy projekt testowy
 
-1. Na **pliku** menu, wybierz **nowy** > **projektu...** .
+1. Na **pliku** menu, wybierz **nowy** > **projektu**.
 
 2. W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#** i wybierz polecenie **uniwersalnych systemu Windows**. Następnie wybierz pozycję **pusta aplikacja** z listy szablonów projektu.
 
@@ -116,7 +116,7 @@ W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projekt
 
 1. Dodaj odwołanie do aplikacji matematycznych do projektu RooterTests.
 
-    1. W Eksploratorze rozwiązań wybierz **RooterTests** projektu, a następnie wybierz pozycję **Dodawanie odwołania...**  menu skrótów.
+    1. W Eksploratorze rozwiązań wybierz **RooterTests** projektu, a następnie wybierz pozycję **Dodaj odwołanie** menu skrótów.
 
     2. W **Dodaj odwołanie - RooterTests** okna dialogowego rozwiń **rozwiązania** i wybierz polecenie **projekty**. Następnie wybierz **matematycznych** elementu.
 

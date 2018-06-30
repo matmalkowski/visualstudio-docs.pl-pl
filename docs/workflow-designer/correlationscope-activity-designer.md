@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0ce34d5d8cdc3de6225aafa90b5b20016e5062
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757730"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117065"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
 
@@ -33,7 +33,7 @@ ms.locfileid: "36757730"
 
 **CorrelationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **CorrelationScope** Projektant działań lub **DisplayName** pole **właściwości** okna.
 
-Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** w **właściwości** okno, aby wyświetlić **edytora wyrażeń**  okno dialogowe. Tej właściwości można ustawić w taki sposób, na powierzchni projektowej działania.
+Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** w **właściwości** okno, aby wyświetlić **wyrażenia Edytor** okno dialogowe. Tej właściwości można ustawić w taki sposób, na powierzchni projektowej działania.
 
 Zakres w korelacji działania są określane przez usunięcie ich projektantów w **treści** polu w **CorrelationScope** projektanta.
 

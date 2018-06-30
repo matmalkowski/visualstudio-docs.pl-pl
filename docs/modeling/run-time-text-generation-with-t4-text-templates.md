@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0647cde0b81c74250306ad45ad015f8f8710d8a4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057934"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117657"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
@@ -55,7 +55,7 @@ W usłudze ułatwia aplikacji przy użyciu szablonu jest widoczność końcowego
 
 ### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstu czasu wykonywania
 
-1. W Eksploratorze rozwiązań, w menu skrótów projektu, wybierz **Dodaj**, **nowy element**.
+1. W Eksploratorze rozwiązań, w menu skrótów projektu, wybierz **Dodaj** > **nowy element**.
 
 2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **szablonu tekstowego środowiska uruchomieniowego**. (W języku Visual Basic, sprawdź w obszarze **wspólne elementy** > **ogólne**.)
 

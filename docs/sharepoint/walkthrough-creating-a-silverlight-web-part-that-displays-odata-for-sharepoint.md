@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ec4c37c8014fe20b136f01d7170240fc4813d04
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120587"
 ---
-# <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Wskazówki: Tworzenie składnika Web Part programu Silverlight wyświetlającego dane OData dla programu SharePoint
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Wskazówki: Tworzenie składnika web part Silverlight, na który wyświetlającego dane OData dla programu SharePoint
   SharePoint 2010 udostępnia dane listy za pomocą OData. W programie SharePoint usługa OData jest wdrażana przez usługę ListData.svc RESTful. W tym przewodniku przedstawiono sposób tworzenia programu SharePoint składnik web part, który jest hostem aplikacji Silverlight. Aplikacji Silverlight Wyświetla informacje o liście anonsów programu SharePoint przy użyciu ListData.svc. Aby uzyskać więcej informacji, zobacz [interfejsu REST programu SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) i [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -33,15 +34,15 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-##  <a name="creating-a-silverlight-application-and-silverlight-web-part"></a>Tworzenie aplikacji Silverlight i składnik Web Part Silverlight  
+## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Tworzenie aplikacji Silverlight i składnik web part Silverlight
  Najpierw utwórz aplikację Silverlight w programie Visual Studio. Aplikacji Silverlight pobiera dane z listy anonsów programu SharePoint przy użyciu usługi ListData.svc.  
   
 > [!NOTE]  
 >  Brak wersji Silverlight przed 4.0 obsługę wymaganych interfejsów odwołujące się do danych listy programu SharePoint.  
   
-#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Aby utworzyć aplikację Silverlight i składnik web part Silverlight  
+#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Aby utworzyć aplikację Silverlight i składnik web part Silverlight
   
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
 2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji.  
   
-     Mimo że w tym przykładzie użyto rozwiązanie farmy, projekty części sieci web Silverlight można wdrożyć jako farmy lub rozwiązań w trybie piaskownicy. Aby uzyskać więcej informacji na temat rozwiązań w trybie piaskownicy oraz rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+     Mimo że w tym przykładzie użyto rozwiązanie farmy, projekty części sieci web Silverlight można wdrożyć jako farmy lub rozwiązań w trybie piaskownicy. Aby uzyskać więcej informacji na temat rozwiązań w trybie piaskownicy oraz rozwiązaniami farmy, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 7.  W **jak chcesz skojarzyć składnik Web Part Silverlight** sekcji **Określ informacje o konfiguracji Silverlight** wybierz pozycję **Utwórz nowy projekt Silverlight i skojarzyć go z części sieci web** przycisk opcji.  
   
@@ -65,10 +66,10 @@ ms.lasthandoff: 04/16/2018
   
      Rozwiązanie zawiera dwa projekty: aplikacji Silverlight oraz składnik web part Silverlight. Aplikacji Silverlight są pobierane i wyświetlane dane listy z programu SharePoint oraz składnika web part Silverlight obsługuje aplikację Silverlight, dzięki któremu można go wyświetlić w programie SharePoint.  
   
-##  <a name="customizing-the-silverlight-application"></a>Dostosowywanie aplikacji Silverlight  
+## <a name="customize-the-silverlight-application"></a>Dostosowywanie aplikacji Silverlight
  Dodaj elementy kodu i projektu do aplikacji Silverlight.  
   
-#### <a name="to-customize-the-silverlight-application"></a>Aby dostosować aplikacji Silverlight  
+#### <a name="to-customize-the-silverlight-application"></a>Aby dostosować aplikacji Silverlight
   
 1.  Dodaj odwołanie do zestawu do System.Windows.Data w aplikacji Silverlight. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
@@ -83,9 +84,9 @@ ms.lasthandoff: 04/16/2018
   
 4.  Wybierz **OK** przycisk, aby dodać odwołania do usługi do projektu i użyj domyślnej nazwy usługi, ServiceReference1.  
   
-5.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+5.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
-6.  Dodaj nowe źródło danych do projektu, na podstawie usługi programu SharePoint. Aby to zrobić, na pasku menu, wybierz polecenie **widoku**, **inne okna**, **źródeł danych**.  
+6.  Dodaj nowe źródło danych do projektu, na podstawie usługi programu SharePoint. Aby to zrobić, na pasku menu, wybierz polecenie **widoku** > **inne okna** > **źródeł danych**.  
   
      **Źródeł danych** okna są wyświetlane wszystkie dostępne dane listy programu SharePoint, takie jak zadania, anonsów i kalendarza.  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Rozmiar formantu siatki w celu dopasowania jej do strony programu Silverlight.  
   
-9. W pliku kodu MainPage.xaml (MainPage.xaml.cs Visual C#) lub MainPage.xaml.vb dla języka Visual Basic Dodaj następujące odwołania do przestrzeni nazw.  
+9. W pliku kodu MainPage.xaml (*MainPage.xaml.cs* Visual C# lub *MainPage.xaml.vb* w języku Visual Basic), Dodaj następujące odwołania do przestrzeni nazw.  
   
     ```vb  
     ' Add the following three Imports statements.  
@@ -192,7 +193,7 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
        
-## <a name="modifying-the-silverlight-web-part"></a>Modyfikowanie składnika Web Part Silverlight  
+## <a name="modify-the-silverlight-web-part"></a>Modyfikowanie składnika web part Silverlight
  Zmień właściwości w projekcie części sieci web Silverlight, aby włączyć debugowanie Silverlight.  
   
 #### <a name="to-modify-the-silverlight-web-part"></a>Aby zmodyfikować składnik web part Silverlight  
@@ -205,12 +206,12 @@ ms.lasthandoff: 04/16/2018
   
 4.  Zapisz projekt.  
   
-##  <a name="testing-the-silverlight-web-part"></a>Testowanie składnik Web Part Silverlight  
+## <a name="test-the-silverlight-web-part"></a>Testowanie składnika web part Silverlight
  Nowy składnik web part Silverlight należy przetestować w programie SharePoint, aby zapewnić prawidłowe wyświetlanie danych listy programu SharePoint.  
   
 #### <a name="to-test-the-silverlight-web-part"></a>Aby przetestować składnik web part Silverlight  
   
-1.  Wybierz klawisz F5, aby skompilować i uruchomić rozwiązania programu SharePoint.  
+1.  Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązania programu SharePoint.  
   
 2.  W programie SharePoint na **Akcje witryny** menu, wybierz **Nowa strona**.  
   
@@ -231,8 +232,8 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Podczas uzyskiwania dostępu do danych w programie Silverlight między domenami, Silverlight chroni przed luk w zabezpieczeniach, które mogą służyć do wykorzystania w aplikacji sieci web. Jeśli wystąpią problemy podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight, zobacz [wprowadzania Service Available Across Domain Boundaries](http://go.microsoft.com/fwlink/?LinkId=223276).  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie składników Web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Wdrażanie, publikowanie i aktualizowanie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
+## <a name="see-also"></a>Zobacz także
+ [Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Wdrażanie, publikowanie i uaktualnić pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   
   

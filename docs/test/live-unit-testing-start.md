@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978921"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117800"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z Live testów jednostkowych programu Visual Studio
 
@@ -41,7 +41,7 @@ Rozpocznij od utworzenia rozwiązania Visual Studio o nazwie `UtilityLibraries` 
 
 Rozwiązanie to po prostu kontener dla jednego lub więcej projektów. Aby utworzyć rozwiązanie, Otwórz program Visual Studio 2017 i wykonaj następujące czynności:
 
-1. Wybierz **pliku**, **nowy**, **projektu** z menu najwyższego poziomu programu Visual Studio.
+1. Wybierz **pliku** > **nowy** > **projektu** z menu najwyższego poziomu programu Visual Studio.
 
 1. W **nowy projekt** okna dialogowego, rozwiń węzeł **inne typy projektów** a następnie wybierz węzeł **rozwiązań programu Visual Studio**. Wybierz **puste rozwiązanie** szablonu w okienku po prawej stronie, a następnie wprowadź `UtilityLibraries` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
@@ -52,7 +52,7 @@ Rozwiązanie to po prostu kontener dla jednego lub więcej projektów. Aby utwor
 Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLibrary` zawiera szereg metody rozszerzenia dla pracy z ciągami znaków.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj**, **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
 1. W **Dodawanie nowego projektu** okna dialogowego, węzeł wybierz C#, następnie wybierz **.NET Standard**.
 
@@ -80,7 +80,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 1.  Wybierz **kompilacji**, **Kompiluj rozwiązanie** z menu najwyższego poziomu programu Visual Studio. Visual Studio pomyślnie należy utworzyć bibliotekę.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj**, **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
 1. W **Dodawanie nowego projektu** okno dialogowe, wybierz węzeł języka Visual Basic, a następnie wybierz **.NET Standard**.
 
@@ -118,7 +118,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 Następnym krokiem jest utworzenie jednostkowy projekt testowy do testowania `StringLibrary` biblioteki. Tworzenie testów jednostkowych, wykonując następujące czynności:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj**, **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
 1. W **Dodawanie nowego projektu** okna dialogowego, węzeł wybierz C#, następnie wybierz **.NET Core**.
 
@@ -156,7 +156,7 @@ Następnym krokiem jest utworzenie jednostkowy projekt testowy do testowania `St
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj**, **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
 1. W **Dodawanie nowego projektu** okno dialogowe, wybierz węzeł języka Visual Basic, a następnie wybierz **.NET Core**.
 

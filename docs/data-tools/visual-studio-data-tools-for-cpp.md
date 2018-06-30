@@ -12,12 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fe50ecd01b8f3112340510a78f76d6e380ec3136
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752401"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117033"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio tools danych dla języka C++
 
@@ -33,17 +33,17 @@ Aby móc korzystać z funkcji niestandardowych w programie SQL Server 2005 i now
 
 2.  Przykładowa baza danych SQL do nawiązania połączenia, należy pobrać bazy danych Northwind i Rozpakuj go do nowej lokalizacji.
 
-3.  Umożliwia dołączenie rozpakować pliku Northwind.mdf localDB programu SQL Server Management Studio. Po uruchomieniu programu SQL Server Management Studio połącz się (localdb) \MSSQLLocalDB.
+3.  Dołączyć rozpakowane za pomocą programu SQL Server Management Studio *Northwind.mdf* pliku do localDB. Po uruchomieniu programu SQL Server Management Studio połącz się (localdb) \MSSQLLocalDB.
 
      ![Okno dialogowe Połącz SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Kliknij prawym przyciskiem myszy w węźle localdb w okienku po lewej stronie i wybierz polecenie **Attach**.
 
-     ![Dołącz SSMS bazy danych](../data-tools/media/raddata-ssms-attach-database.png)
+     ![SSMS dołączyć bazy danych](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Pobierz przykład zestawu SDK systemu Windows ODBC i Rozpakuj go do nowej lokalizacji. W tym przykładzie przedstawiono podstawowe polecenia ODBC, które są używane do połączenia z bazą danych i problem zapytań i poleceń. Dowiedz się więcej o tych funkcji w [Otwórz połączenie bazy danych (ODBC) firmy Microsoft](/sql/odbc/microsoft-open-database-connectivity-odbc). Podczas ładowania najpierw rozwiązania (jest w folderze C++), programu Visual Studio oferuje Uaktualnij rozwiązanie do bieżącej wersji programu Visual Studio. Kliknij przycisk **Tak**.
 
-5.  Aby korzystać z natywnego klienta, należy jego plik nagłówka i pliku lib. Te pliki zawierają funkcje i definicje charakterystyczne dla programu SQL Server poza funkcji ODBC zdefiniowanych w sql.h. W **projektu** > **właściwości** > **katalogi VC ++**, Dodaj katalog dołączania następujące:
+5.  Aby użyć natywnego klienta, należy jej *nagłówka* pliku i *lib* pliku. Te pliki zawierają funkcje i definicje charakterystyczne dla programu SQL Server poza funkcji ODBC zdefiniowanych w sql.h. W **projektu** > **właściwości** > **katalogi VC ++**, Dodaj katalog dołączania następujące:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -51,14 +51,14 @@ I ten katalog biblioteki:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6.  Dodaj następujące wiersze w odbcsql.cpp. #Define uniemożliwia kompilowany nie znaczenia definicji OLE DB.
+6.  Dodaj następujące wiersze do *odbcsql.cpp*. #Define uniemożliwia kompilowany nie znaczenia definicji OLE DB.
 
     ```cpp
     #define _SQLNCLI_ODBC_
     #include <sqlncli.h>
     ```
 
-    Należy pamiętać, że próbki nie faktycznie funkcjonalności klienta natywnej, poprzednie kroki nie są niezbędne, aby skompilować i uruchomić. Ale projektu jest skonfigurowany do użycia tej funkcji. Aby uzyskać więcej informacji, zobacz [programu SQL Server Native klienta programowania](/sql/relational-databases/native-client/sql-server-native-client).
+    Należy pamiętać, że próbki nie faktycznie funkcjonalności klienta natywnej, poprzednie kroki nie są niezbędne, aby skompilować i uruchomić. Ale projektu jest skonfigurowany do użycia tej funkcji. Aby uzyskać więcej informacji, zobacz [programowania w języku SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
 7.  Określ, który sterownik do użycia w podsystemie ODBC. Przykład przekazuje atrybut parametrów połączenia sterownika w jako argument wiersza polecenia. W **projektu** > **właściwości** > **debugowanie**, Dodaj ten argument polecenia:
 
@@ -66,9 +66,9 @@ I ten katalog biblioteki:
     DRIVER="SQL Server Native Client 11.0"
     ```
 
-8.  Naciśnij klawisz F5, aby skompilować i uruchomić aplikację. Powinny pojawić okno dialogowe w sterowniku wyświetli monit o wprowadzenie bazy danych. Wprowadź `(localdb)\MSSQLLocalDB`i sprawdź **Użyj zaufanego połączenia**. Press **OK**. Powinna zostać wyświetlona konsola z komunikatów, które wskazują udane połączenie. Należy również sprawdzić wiersza polecenia można wpisać w instrukcji SQL. Poniższym ekranie przedstawiono przykładowe zapytanie i wyniki:
+8.  Naciśnij klawisz **F5** Aby skompilować i uruchomić aplikację. Powinny pojawić okno dialogowe w sterowniku wyświetli monit o wprowadzenie bazy danych. Wprowadź `(localdb)\MSSQLLocalDB`i sprawdź **Użyj zaufanego połączenia**. Naciśnij klawisz **OK**. Powinna zostać wyświetlona konsola z komunikatów, które wskazują udane połączenie. Należy również sprawdzić wiersza polecenia można wpisać w instrukcji SQL. Poniższym ekranie przedstawiono przykładowe zapytanie i wyniki:
 
-     ![Przykładowe ODBC wyników zapytania](../data-tools/media/raddata-odbc-sample-query-output.png)
+     ![ODBC przykładowe zapytanie dane wyjściowe](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Zobacz także
 

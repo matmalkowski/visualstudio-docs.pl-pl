@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746562"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117722"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: Analizowanie zarządzanego kodu dla kodu usterki
 
@@ -29,7 +29,7 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
 ### <a name="to-create-a-class-library"></a>Do tworzenia biblioteki klas
 
-1. Na **pliku** menu, wybierz **nowy** > **projektu...** .
+1. Na **pliku** menu, wybierz **nowy** > **projektu**.
 
 1. W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#**, a następnie wybierz pozycję **Windows Desktop**.
 

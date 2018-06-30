@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425218"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117254"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
 
@@ -113,7 +113,7 @@ Za pomocą platform testów innych firm, takich jak zwiększenie wydajności, Go
 
 Poniżej przedstawiono kroki, aby włączyć platform testów do innych części:
 
-1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje...**  na pasku menu.
+1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje** na pasku menu.
 
 1. W **rozszerzenia i aktualizacje** okna dialogowego rozwiń **Online** kategorii, a następnie **Visual Studio Marketplace**. Następnie wybierz pozycję **narzędzia** > **testowanie**.
 
@@ -125,7 +125,7 @@ Poniżej przedstawiono kroki, aby włączyć platform testów do innych części
 
    ![Nazwa projektu biblioteki klas i dodaj go](media/create3rdpartyunittest3.png)
 
-1. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**wybierz projektu biblioteki klas, a następnie wybierz pozycję **Zarządzaj pakietami NuGet...**  menu kliknij prawym przyciskiem myszy lub kontekstu.
+1. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**wybierz projektu biblioteki klas, a następnie wybierz pozycję **Zarządzaj pakietami NuGet** menu kliknij prawym przyciskiem myszy lub kontekstu.
 
    ![Zarządzanie pakietami NuGet, aby zainstalować dodatek typu plug-in](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Poniżej przedstawiono kroki, aby włączyć platform testów do innych części
 
    ![Dokumentacja dla platformy testów jednostkowych firmy 3rd została dodana do rozwiązania](media/create3rdpartyunittest6.png)
 
-1. Z projektu biblioteki klas **odwołania** węzła, wybierz opcję **Dodawanie odwołania...** .
+1. Z projektu biblioteki klas **odwołania** węzła, wybierz opcję **Dodaj odwołanie**.
 
    ![Dodaj odwołanie do projektu](media/createunittest6.png)
 

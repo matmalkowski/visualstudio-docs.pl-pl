@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120321"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Porady: tworzenie obsługiwanego odbiornika dla określonej listy formularzy
   Odbiornik zdarzeń wystąpienia listy reaguje na zdarzenia występujące w żadnym wystąpieniu definicji listy. Mimo że szablonu odbiorcy zdarzeń nie obsługuje wartości docelowej określonej listy formularzy, można zmodyfikować odbiorcy zdarzeń, które są ograniczone do definicji listy w celu reagowania na zdarzenia w wystąpieniu określonej listy.  
   
- Pod kątem określonej listy formularzy w Elements.xml odbiornika zdarzeń, Zastąp `ListTemplateId` z `ListUrl` i Dodaj adres URL wystąpienia listy.  
+ Pod kątem określonej listy formularzy w *Elements.xml* odbiornika zdarzeń, Zastąp `ListTemplateId` z `ListUrl` i Dodaj adres URL wystąpienia listy.  
   
-## <a name="creating-a-list-instance-event-receiver"></a>Tworzenie odbiornika zdarzeń wystąpienia listy  
+## <a name="create-a-list-instance-event-receiver"></a>Tworzenie odbiornika zdarzeń wystąpienia listy  
  Poniższe kroki przedstawiają sposób zmodyfikować odbiornik zdarzeń elementu listy, aby odpowiadać tylko na zdarzenia występujące w wystąpieniu niestandardowe listy anonsów.  
   
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Aby zmodyfikować obsługiwanego odbiornika odpowiedzieć na określonej listy formularzy  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  W **obsługi następujących zdarzeń** listy, wybierz **jest dodawany element** pole wyboru, a następnie wybierz pozycję **Zakończ** przycisku.  
   
-9. W **Eksploratora rozwiązań**, w obszarze EventReceiver1, otwórz Elements.xml.  
+9. W **Eksploratora rozwiązań**, w obszarze EventReceiver1, otwórz *Elements.xml*.  
   
      Odbiorcy zdarzeń obecnie odwołuje się do definicji listy anonsów przy użyciu następującego wiersza:  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 05/22/2018
   
 10. Otwórz plik kodu dla odbiornika zdarzeń i umieść punkt przerwania w metodzie ItemAdding.  
   
-11. Wybierz klawisz F5, aby skompilować i uruchomić rozwiązanie.  
+11. Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie.  
   
 12. W programie SharePoint, wybierz **TestAnnouncements** łącze w okienku nawigacji.  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/22/2018
   
      Zwróć uwagę, że punkt przerwania zostaje trafiony po dodaniu nowego elementu do listy niestandardowe anonsów.  
   
-15. Wybierz klawisz F5, aby wznowić.  
+15. Wybierz **F5** klawisz, aby wznowić.  
   
 16. W okienku nawigacji wybierz **wymieniono** łącza, a następnie wybierz pozycję **anonsów** łącza.  
   
@@ -87,8 +88,7 @@ ms.lasthandoff: 05/22/2018
   
      Należy zauważyć, że odbiorcy zdarzeń nie spowoduje wyzwolenia na nowy anons, ponieważ odbiornika jest skonfigurowany do odpowiadać tylko na zdarzenia w wystąpienia listy niestandardowe anons, **TestAnnouncements**.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

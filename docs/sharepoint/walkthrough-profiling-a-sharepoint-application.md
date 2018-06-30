@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c52fdfd2a4598c63073476ae6b0ce3ee96bd94a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120583"
 ---
-# <a name="walkthrough-profiling-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
   W tym przewodniku przedstawiono sposób korzystania z narzędzi profilowania w programie Visual Studio do optymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest odbiorcy zdarzeń funkcji programu SharePoint, zawierający pętli bezczynności, który powoduje spadek wydajności odbiorcy zdarzeń funkcji. Profilera Visual Studio można znaleźć i wyeliminować najdroższych (najwolniejsze wykonywania) część projektu, znanej także jako *aktywnej ścieżki*.  
   
  W tym przewodniku przedstawiono następujące zadania:  
@@ -46,12 +47,12 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-## <a name="creating-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint  
+## <a name="create-a-sharepoint-project"></a>Tworzenie projektu SharePoint
  Najpierw utwórz projekt programu SharePoint.  
   
 #### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint  
   
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
 2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -65,11 +66,11 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji.  
   
-     Obecnie można tylko profilu rozwiązania farmy. Aby uzyskać więcej informacji na temat rozwiązania piaskownicy w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+     Obecnie można tylko profilu rozwiązania farmy. Aby uzyskać więcej informacji na temat rozwiązania piaskownicy w porównaniu z rozwiązaniami farmy, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 7.  Wybierz **Zakończ** przycisku. Projekt zostanie wyświetlony w **Eksploratora rozwiązań**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Dodawanie funkcji i funkcji odbiorcy zdarzeń  
+## <a name="add-a-feature-and-feature-event-receiver"></a>Dodawanie funkcji i odbiorcy zdarzeń funkcji
  Następnie dodaj funkcji do projektu wraz z obsługiwanego odbiornika dla funkcji. Odbiornik zdarzeń będzie zawierać kod do profilowania.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcy zdarzeń funkcji  
@@ -190,7 +191,7 @@ ms.lasthandoff: 04/16/2018
   
 9. Zapisz projekt.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a> Konfigurowanie i wdrażanie aplikacji programu SharePoint  
+## <a name="configure-and-deploy-the-sharepoint-application"></a>Konfigurowanie i wdrażanie aplikacji programu SharePoint
  Teraz, projekt SharePoint jest gotowy, ją skonfigurować i wdrożyć go na serwerze programu SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Aby skonfigurować i wdrożyć aplikację programu SharePoint  
@@ -213,7 +214,7 @@ ms.lasthandoff: 04/16/2018
   
      Kreator Włącza profilowanie aplikacji na serwerze, wyświetla **Eksplorator wydajności** okna, a następnie kompilacji, wdraża i uruchamia aplikację programu SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a> Uruchamianie aplikacji programu SharePoint  
+## <a name="run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
  Uaktywnij funkcję w programie SharePoint, wyzwalania `FeatureActivation` zdarzeń kod wymagany do uruchomienia.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint  
@@ -234,10 +235,10 @@ ms.lasthandoff: 04/16/2018
   
      Po zamknięciu programu SharePoint, profilera tworzy i Wyświetla przykładowy raport profilowania i zapisuje go jako plik Vsp w **ProfileTest** folder tego projektu.  
   
-##  <a name="BKMK_ViewResults"></a> Wyświetlanie i interpretowaniu wyników profilowania  
+## <a name="view-and-interpret-the-profile-results"></a>Wyświetlanie i zrozumienie wyników profilu
  Teraz, gdy zostało uruchomione i profilowane aplikacji programu SharePoint, należy wyświetlić wyniki testów.  
   
-#### <a name="to-view-and-interpret-the-profiling-results"></a>Aby wyświetlić i interpretuj wyniki profilowania  
+#### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlić i zrozumienie wyników profilu
   
 1.  W **funkcje wykonujące najwięcej indywidualnej pracy** sekcji raportu profilowania próbki, należy zauważyć, że `TimeCounter` znalazł się na górze listy.  
   
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/16/2018
   
      Aby wyświetlić raport ponownie w dowolnej chwili, otwórz plik Vsp w **Eksplorator wydajności** okna.  
   
-## <a name="fixing-the-code-and-reprofiling-the-application"></a>Rozwiązanie problemu kod i Reprofiling aplikacji  
+## <a name="fix-the-code-and-reprofile-the-application"></a>Usuń kod i reprofile aplikacji
  Teraz, gdy wykryto funkcja punkt aktywny w aplikacji programu SharePoint, usuń go.  
   
 #### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i reprofile aplikacji  
@@ -274,10 +275,9 @@ ms.lasthandoff: 04/16/2018
   
      Teraz, gdy wywołanie pętli bezczynności został wyeliminowany, funkcję należy aktywować znacznie szybciej. Przykładowy raport profilowania powinien odzwierciedlać to.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Eksplorator wydajności](/visualstudio/profiling/performance-explorer)   
  [Sesja wydajności — omówienie](/visualstudio/profiling/performance-session-overview)   
  [Profilowanie wydajności — przewodnik dla początkujących](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Znajdź wąskich gardeł aplikacji z profilera Visual Studio](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  
   

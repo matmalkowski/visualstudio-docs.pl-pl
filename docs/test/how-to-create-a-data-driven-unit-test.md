@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844270"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117601"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 
@@ -153,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Uruchamianie testu i wyświetlanie wyników
- Po zakończeniu zapisu metody testowej kompilacji projektu testowego. Metoda testowa jest wyświetlany w oknie Eksploratora testów w **nie Uruchom testy** grupy. Jak uruchamiać, zapisu i ponownie uruchomić testy narzędzia Eksplorator testów wyświetla wyniki w grupach **testy nie powiodło się**, **przekazany testy**, i **nie Uruchom testy**. Możesz wybrać **Uruchom wszystkie** do uruchomienia wszystkich testów, lub wybierz **Uruchom...**  wybranie podzestawu testów do uruchomienia.
+ Po zakończeniu zapisu metody testowej kompilacji projektu testowego. Metoda testowa jest wyświetlany w oknie Eksploratora testów w **nie Uruchom testy** grupy. Jak uruchamiać, zapisu i ponownie uruchomić testy narzędzia Eksplorator testów wyświetla wyniki w grupach **testy nie powiodło się**, **przekazany testy**, i **nie Uruchom testy**. Możesz wybrać **Uruchom wszystkie** do uruchomienia wszystkich testów, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
 
  Na pasku wyników testu w górnej części Eksploratora jest animowany podczas działania testu. Po zakończeniu uruchomienia testu pasek będzie zielonego, jeśli wszystkie testy zostały pomyślnie sprawdzone lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie uruchomienia testu zostanie wyświetlony w okienku szczegółów w dolnej części okna Eksploratora testów. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
 

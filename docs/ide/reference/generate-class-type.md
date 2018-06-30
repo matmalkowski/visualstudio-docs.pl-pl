@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25e56d77ef9094338455b3a3f576fe8bc58387b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947365"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116991"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generuj klasy lub typu w programie Visual Studio
 
@@ -68,7 +68,7 @@ Dotyczy to generowanie kodu:
    > [!TIP]
    > Użyj **podgląd zmian** łącze umieszczone u dołu okna podglądu [aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) która zostanie podjęta przed dokonaniem wyboru.
 
-1. W przypadku wybrania **wygenerować nowy typ...**  elementu **Generowanie typu** zostanie otwarte okno dialogowe. Skonfiguruj dostępność, typu i lokalizacji, nowego typu.
+1. W przypadku wybrania **wygenerować nowy typ** elementu **Generowanie typu** zostanie otwarte okno dialogowe. Skonfiguruj dostępność, typu i lokalizacji, nowego typu.
 
    ![Generowanie typu](media/class-newtype-cs.png)
 

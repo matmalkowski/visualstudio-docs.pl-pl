@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8d53cad00e3a1faedf07af42966a5cceddc2f33
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: eed72e71cbebc3bec167e23179220dc1c1a1f061
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238365"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118255"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Wskazówki: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym przewodniku pokazano, jak zaimportować SharePoint niestandardowej strony wzorcowej oraz strony witryny, która ma obrazu na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.  
@@ -177,10 +177,10 @@ ms.locfileid: "36238365"
   
 7.  Otwórz witrynę programu SharePoint, aby wyświetlić elementy wdrożone.  
   
- Alternatywny sposób importowanie plików do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je do programu SharePoint jest dodanie plików w modułach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Porady: importowanie tematu lub strony wzorcowej](../sharepoint/how-to-import-a-master-page-or-theme.md) i [przy użyciu modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Alternatywny sposób importowanie plików do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je do programu SharePoint jest dodanie plików w modułach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Porady: importowanie tematu lub strony wzorcowej](../sharepoint/how-to-import-a-master-page-or-theme.md) i [Użyj modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Zobacz także
  [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
   

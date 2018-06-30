@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a21a84a9b8e96d771478415eae1a874d015572f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a83d9287fa4e89db439853737ed8d3140197ce69
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746289"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117644"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektanta obiektów relacyjnych)
 [Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenia pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zapewnia niektórych danych rzeczywistych na przedstawiają sposób używania dziedziczenia w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -55,8 +55,8 @@ ms.locfileid: "34746289"
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Typ**|**int**|**True**|
-    |**Imię**|**Nvarchar(200)**|**False**|
-    |**Nazwisko**|**Nvarchar(200)**|**False**|
+    |**Imię**|**nvarchar(200)**|**False**|
+    |**Nazwisko**|**nvarchar(200)**|**False**|
     |**Menedżer**|**int**|**True**|
 
 3.  Wartość w kolumnie identyfikator jako klucz podstawowy.
@@ -93,7 +93,7 @@ ms.locfileid: "34746289"
 
 #### <a name="to-create-the-new-windows-forms-application"></a>Aby utworzyć nową aplikację formularzy systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 

@@ -16,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aec11e54547f05e3ac7babae29e0c95737bc725e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924421"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117787"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
@@ -35,7 +35,7 @@ W języku C + +/ CLI, użyj makra urzędu certyfikacji\_POMIŃ\_wiadomości lub 
 > Nie należy używać pominięć w źródła w kompilacjach wydania, aby uniknąć przypadkowego wysyłania metadanych pomijanie w źródła. Ponadto z powodu przetwarzania pomijania-source, może być niższa wydajność aplikacji.
 
 > [!NOTE]
-> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany utrudnione numerem ostrzeżenia analizy kodu. Jeśli nie jest gotowa na rozwiązanie ostrzeżeń, aby tymczasowo wyłączyć analizy kodu, otwieranie stron właściwości projektu (**projektu** > ***projektu* właściwości...** ) i przejdź do **analizy kodu** kartę. Anuluj wybór **Włącz analizę kodu podczas kompilacji**, a następnie ponownie skompiluj projekt. Alternatywnie można wybrać różne, mniejszym zestawu reguł jest w celu uruchomienia kodu. Pamiętaj, aby włączyć analizę kodu na powrót po osiągnięciu gotowości do napraw ostrzeżenia.
+> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany utrudnione numerem ostrzeżenia analizy kodu. Jeśli nie jest gotowa na rozwiązanie ostrzeżeń, aby tymczasowo wyłączyć analizy kodu, otwieranie stron właściwości projektu (**projektu** > **\<projektu > właściwości**) i przejdź do **analizy kodu** kartę. Anuluj wybór **Włącz analizę kodu podczas kompilacji**, a następnie ponownie skompiluj projekt. Alternatywnie można wybrać różne, mniejszym zestawu reguł jest w celu uruchomienia kodu. Pamiętaj, aby włączyć analizę kodu na powrót po osiągnięciu gotowości do napraw ostrzeżenia.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
 

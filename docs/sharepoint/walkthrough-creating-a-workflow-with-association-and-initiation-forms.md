@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120602"
 ---
-# <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: tworzenie i przepływu pracy z formularzami inicjacji i skojarzenia
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania
   Ten przewodnik przedstawia sposób tworzenia podstawowych sekwencyjnego przepływu pracy, uwzględniająca stosowanie formularzy skojarzenia i inicjowania. Są to formularzy ASPX, umożliwiających parametrów, które mają zostać dodane do przepływu pracy, gdy najpierw została skojarzona przez administratora programu SharePoint (formularz skojarzenia), a po uruchomieniu przepływu pracy przez użytkownika (formularza inicjowania).  
   
  W tym przewodniku opisano scenariusz, w których użytkownik chce, aby utworzyć przepływ zatwierdzenia w raportach wydatków, który ma następujące wymagania:  
@@ -61,16 +62,16 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
-## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Tworzenie projektu sekwencyjnego przepływu pracy programu SharePoint  
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>Tworzenie projektu sekwencyjnego przepływu pracy programu SharePoint
  Najpierw utwórz projekt sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Sekwencyjny przepływ pracy jest pewne czynności wykonywane w kolejności Zakończenie ostatniej aktywności. W tej procedurze utworzysz sekwencyjnego przepływu pracy, która ma zastosowanie do listy dokumentów udostępnionych w programie SharePoint. Kreator przepływu pracy można skojarzyć przepływu pracy z poziomu lokacji lub definicji listy i pozwala określić, gdy zostanie uruchomiony przepływ pracy.  
   
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Aby utworzyć projekt sekwencyjnego przepływu pracy programu SharePoint  
   
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
 2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  W **Eksploratora rozwiązań**, wybierz węzeł projektu.  
   
-7.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+7.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
 8.  Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -102,14 +103,14 @@ ms.lasthandoff: 05/22/2018
   
 12. Wybierz **Zakończ** przycisku.  
   
-## <a name="adding-an-association-form-to-the-workflow"></a>Dodawanie formularz skojarzenia przepływu pracy  
+## <a name="add-an-association-form-to-the-workflow"></a>Dodaj formularz skojarzenia przepływu pracy
  Następnie należy utworzyć. Formularz skojarzenia ASPX, który jest wyświetlany, gdy administrator programu SharePoint najpierw kojarzy przepływu pracy z dokumentu raportu wydatków.  
   
 #### <a name="to-add-an-association-form-to-the-workflow"></a>Aby dodać formularz skojarzenia przepływu pracy  
   
 1.  Wybierz **Workflow1** w węźle **Eksploratora rozwiązań**.  
   
-2.  Na pasku menu wybierz **projektu**, **Dodaj nowy element** do wyświetlenia **Dodaj nowy element** okno dialogowe.  
+2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element** do wyświetlenia **Dodaj nowy element** okno dialogowe.  
   
 3.  W widoku drzewa — okno dialogowe, rozwiń **Visual C#** lub **Visual Basic** (w zależności od język projektu), rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  Wybierz **Dodaj** przycisk, aby dodać formularza do projektu.  
   
-## <a name="designing-and-coding-the-association-form"></a>Projektowanie i kodowania formularz skojarzenia  
+## <a name="designing-and-coding-the-association-form"></a>Projektowanie i kodowania formularz skojarzenia
  W tej procedurze funkcji formularza skojarzenia wprowadzania przez dodanie do niej formanty i kod.  
   
 #### <a name="to-design-and-code-the-association-form"></a>Do projektu i kodu formularz skojarzenia  
@@ -163,14 +164,14 @@ ms.lasthandoff: 05/22/2018
     }  
     ```  
   
-## <a name="adding-an-initiation-form-to-the-workflow"></a>Dodawanie formularza inicjowania przepływu pracy  
+## <a name="add-an-initiation-form-to-the-workflow"></a>Dodaj formularza inicjowania przepływu pracy
  Następnie należy utworzyć formularza inicjowania wyświetlany, jeśli użytkownicy uruchamiają przepływ pracy przed ich raporty wydatków.  
   
 #### <a name="to-create-an-initiation-form"></a>Aby utworzyć formularza inicjowania  
   
 1.  Wybierz **Workflow1** w węźle **Eksploratora rozwiązań**.  
   
-2.  Na pasku menu wybierz **projektu**, **Dodaj nowy element** wyświetlić **Dodaj nowy element** okno dialogowe.  
+2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element** wyświetlić **Dodaj nowy element** okno dialogowe.  
   
 3.  W widoku drzewa — okno dialogowe, rozwiń **Visual C#** lub **Visual Basic** (w zależności od język projektu), rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
   
@@ -180,7 +181,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  Wybierz **Dodaj** przycisk, aby dodać formularza do projektu.  
   
-## <a name="designing-and-coding-the-initiation-form"></a>Projektowanie i kodowania formularza inicjowania  
+## <a name="designing-and-coding-the-initiation-form"></a>Projektowanie i kodowania formularza inicjowania
  Następnie wprowadzić funkcje do formularza inicjowania przez dodanie do niej formanty i kod.  
   
 #### <a name="to-code-the-initiation-form"></a>Do kodu formularza inicjowania  
@@ -250,7 +251,7 @@ ms.lasthandoff: 05/22/2018
     }  
     ```  
   
-## <a name="customizing-the-workflow"></a>Dostosowywanie przepływu pracy  
+## <a name="cutomize-the-workflow"></a>Dostosowywanie przepływu pracy
  Następnie można dostosować przepływ pracy. Później zostanie skojarzony dwa formularze do przepływu pracy.  
   
 #### <a name="to-customize-the-workflow"></a>Aby dostosować przepływu pracy  
@@ -295,7 +296,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Przeciągnij **LogToHistoryListActivity** działania z **przybornika**i upuść ją na innych **Upuść działania w tym miejscu** obszar wewnątrz **IfElseActivity1** .  
   
-## <a name="adding-code-to-the-workflow"></a>Dodawanie kodu do przepływu pracy  
+## <a name="add-code-to-the-workflow"></a>Dodawanie kodu do przepływu pracy
  Następnie dodaj kod do przepływu pracy, aby nadać jej funkcji.  
   
 #### <a name="to-add-code-to-the-workflow"></a>Aby dodać kod do przepływu pracy  
@@ -386,11 +387,11 @@ ms.lasthandoff: 05/22/2018
     }   
     ```  
   
-9. Wybierz klawisz F5, aby zdebugować program.  
+9. Wybierz **F5** klawisz, aby zdebugować program.  
   
      Kompiluje aplikacji, pakietów go, wdraża ją, aktywuje jej funkcje, jest odtwarzana [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] puli aplikacji, a następnie uruchamia przeglądarki w lokalizacji określonej w **adres Url witryny** właściwości.  
   
-## <a name="associating-the-workflow-to-the-documents-list"></a>Kojarzenie przepływu pracy do listy dokumentów  
+## <a name="associating-the-workflow-to-the-documents-list"></a>Kojarzenie przepływu pracy do listy dokumentów
  Następnie Wyświetl formularz skojarzenia przepływu pracy można skojarzyć przepływu pracy z **SharedDocuments** listy w witrynie programu SharePoint.  
   
 #### <a name="to-associate-the-workflow"></a>Aby skojarzyć przepływu pracy  
@@ -409,7 +410,7 @@ ms.lasthandoff: 05/22/2018
   
 6.  W **automatycznego zatwierdzania Limit** tekst wprowadź **1200** , a następnie wybierz **skojarzenia przepływu pracy** przycisku.  
   
-## <a name="starting-the-workflow"></a>Uruchamianie przepływu pracy  
+## <a name="start-the-workflow"></a>Uruchamianie przepływu pracy
  Następnie skojarzenia przepływu pracy do jednego z dokumentów w **dokumenty udostępnione** listy, aby wyświetlić formularza inicjowania przepływu pracy.  
   
 #### <a name="to-start-the-workflow"></a>Aby uruchomić przepływ pracy  
@@ -444,13 +445,12 @@ ms.lasthandoff: 05/22/2018
   
      W takim przypadku wpis na liście historii jest tworzony zamiast zadania. Wyświetla wpis **historii przepływu pracy** części strony stanu przepływu pracy. Należy pamiętać, wiadomości w **wynik** kolumny zdarzenia historii. Zawiera on tekst wprowadzony w `logToHistoryListActivity1.MethodInvoking` zdarzeń, która zawiera wartość, które zostało automatycznie zatwierdzone.  
   
-## <a name="next-steps"></a>Następne kroki  
+## <a name="next-steps"></a>Następne kroki
  Można poznać więcej informacji na temat sposobu tworzenia szablonów przepływu pracy z tych tematów:  
   
 -   Aby dowiedzieć się więcej na temat przepływów pracy programu SharePoint, zobacz [przepływów pracy programu Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=166275).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Przewodnik: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [Wskazówki: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   

@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120306"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Wskazówki: tworzenie składnika Web part dla SharePoint za pomocą Projektanta
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Wskazówki: Tworzenie składnika web part dla SharePoint za pomocą projektanta
 
 Jeśli tworzysz części sieci web dla witryny programu SharePoint, użytkownicy bezpośrednio można zmodyfikować zawartość, wyglądu i zachowania stron w tej lokacji za pomocą przeglądarki. W tym przewodniku przedstawiono sposób wizualnie Tworzenie składnika web part za pomocą programu SharePoint **wizualnego składnika Web Part** szablonu projektu w programie Visual Studio.
 
@@ -47,13 +48,13 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - Obsługiwane wersje systemu Windows i programu SharePoint. Zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-web-part-project"></a>Tworzenie projektu części sieci web
+## <a name="create-a-web-part-project"></a>Tworzenie projektu części sieci web
 
 Najpierw utwórz projekt części sieci web za pomocą **wizualnego składnika Web Part** szablonu projektu.
 
 1. Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] za pomocą **Uruchom jako Administrator** opcji.
 
-2. Na pasku menu wybierz **pliku**, **nowy**, **projektu**.
+2. Na pasku menu wybierz **pliku** > **nowy** > **projektu**.
 
      **Nowy projekt** zostanie wyświetlone okno dialogowe.
 
@@ -73,7 +74,7 @@ Projektowanie części sieci web, dodając formantów z **przybornika** na powie
 
 1. W Projektancie Visual Web Developer, wybierz polecenie **projekt** tab, aby przełączyć do widoku projektu.
 
-2. Na pasku menu wybierz **widoku**, **przybornika**.
+2. Na pasku menu wybierz **widoku** > **przybornika**.
 
 3. W **standardowe** węzła **przybornika**, wybierz **CheckBoxList** kontroli, a następnie wykonaj jedną z następujących czynności:
 
@@ -85,7 +86,7 @@ Projektowanie części sieci web, dodając formantów z **przybornika** na powie
 
 5. W projektancie, wybierz **Button1** przycisku.
 
-6. Na pasku menu wybierz **widoku**, **okna właściwości**.
+6. Na pasku menu wybierz **widoku** > **okna właściwości**.
 
      **Właściwości** zostanie otwarte okno.
 
@@ -129,7 +130,7 @@ Dodaj kod, który umożliwia użytkownikowi dodanie kalendarzy widoku głównego
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="testing-the-web-part"></a>Testowanie składnika web part
+## <a name="test-the-web-part"></a>Testowanie składnika web part
 
 Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik web part jest automatycznie dodawany do galerii składników Web Part w programie SharePoint. Aby przetestować ten projekt, będziesz wykonywać następujące zadania:
 
@@ -139,7 +140,7 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik web par
 
 ### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Aby dodać zdarzenia do listy kalendarza w lokacji
 
-1. W programie Visual Studio wybierz klawisz F5.
+1. W programie Visual Studio, wybierz **F5** klucza.
 
      Otwieranie witryny programu SharePoint oraz [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] pasek Szybkie uruchamianie jest wyświetlany na stronie.
 
@@ -191,7 +192,6 @@ Zdarzenia ze wszystkich kalendarzy, określone przez użytkownika są wyświetla
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Instrukcje: Tworzenie SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Instrukcje: Tworzenie części sieciowej SharePoint za pomocą narzędzia Projektant](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Przewodnik: Tworzenie części sieciowej dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Wskazówki: Tworzenie składnika web part dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

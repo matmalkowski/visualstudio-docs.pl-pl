@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120610"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Porady: pobieranie usługi projektu SharePoint
   Aby dostęp do usługi projektu SharePoint w następujących rozwiązań:  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Innego typu rozszerzenia programu Visual Studio, takich jak pakiet VSPackage.  
   
-## <a name="retrieving-the-service-in-project-system-extensions"></a>Trwa pobieranie usług w rozszerzeniach systemu projektu  
+## <a name="retrieve-the-service-in-project-system-extensions"></a>Pobierz usługę w rozszerzeniach systemu projektu  
  W dowolnej rozszerzenia systemu projektu SharePoint uzyskujesz dostęp za pomocą usługi projektu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiektu.  
   
  Usługa projektu można również pobierać za pomocą poniższych procedur.  
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
      Aby uzyskać więcej informacji na temat definiowania typów elementów projektu, zobacz [porady: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-## <a name="retrieving-the-service-in-server-explorer-extensions"></a>Trwa pobieranie usług w rozszerzenia Eksploratora serwera  
+## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Pobierz usługę w rozszerzenia Eksploratora serwera  
  W rozszerzeniu **połączeń SharePoint** w węźle **Eksploratora serwera**, uzyskać dostęp do usługi projektu za pomocą <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> obiektu.  
   
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Można pobrać usługi w rozszerzeniu Eksploratora serwera  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/16/2018
   
      Aby uzyskać więcej informacji na temat rozszerzania **połączeń SharePoint** w węźle **Eksploratora serwera**, zobacz [porady: rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="retrieving-the-service-in-other-visual-studio-extensions"></a>Trwa pobieranie usług w innych rozszerzeń programu Visual Studio  
+## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Pobierz usługę w innych rozszerzeń programu Visual Studio  
  Możesz pobrać pakiet VSPackage lub dowolnego rozszerzenia programu Visual Studio, który ma dostęp do usługi projektu <xref:EnvDTE80.DTE2> obiektu w modelu obiektu automatyzacji, takich jak Kreator szablonu projektu, który implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
   
  W pakiet VSPackage, możesz poprosić <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu przy użyciu jednej z następujących metod:  
@@ -101,9 +102,8 @@ ms.lasthandoff: 04/16/2018
   
  Rozszerzenia programu Visual Studio, który ma dostęp do <xref:EnvDTE80.DTE2> obiektu, możesz poprosić o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu za pomocą <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metody <xref:Microsoft.VisualStudio.Shell.ServiceProvider> obiektu. Aby uzyskać więcej informacji, zobacz [pobieranie usługi z obiektu DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Porady: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)   
- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Porady: Korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)  
   

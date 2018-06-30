@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cda3967d0fc95fdd8f28503f209a5f2208d07031
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4881aba0f8ac1ea0f634491d6549c72de74bf67a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120301"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Wskazówki: dodawanie odbiorców zdarzeń funkcji
+# <a name="walkthrough-add-feature-event-receivers"></a>Wskazówki: Dodawanie odbiorców zdarzeń funkcji
   Odbiorcy zdarzeń funkcji metodami wykonania, gdy wystąpi jedno z następujących zdarzeń związanych z funkcji w programie SharePoint:  
   
 -   Funkcja zostanie zainstalowana.  
@@ -49,16 +50,16 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
-## <a name="creating-a-feature-event-receiver-project"></a>Tworzenie projektu odbiorcy zdarzeń funkcji  
+## <a name="create-a-feature-event-receiver-project"></a>Tworzenie projektu odbiorcy zdarzeń funkcji
  Najpierw utwórz projekt zawiera odbiorcy zdarzeń funkcji.  
   
 #### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Aby utworzyć projekt z odbiornikiem zdarzeń funkcji  
   
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
 2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
   
@@ -72,11 +73,11 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji.  
   
-     Aby uzyskać więcej informacji na temat rozwiązania piaskownicy w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md).  
+     Aby uzyskać więcej informacji na temat rozwiązania piaskownicy w porównaniu z rozwiązaniami farmy, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
 7.  Wybierz **Zakończ** przycisk i zwróć uwagę, że funkcja o nazwie Feature1 jest wyświetlany w obszarze **funkcje** węzła.  
   
-## <a name="adding-an-event-receiver-to-the-feature"></a>Dodawanie odbiorcy zdarzeń funkcji  
+## <a name="add-an-event-receiver-to-the-feature"></a>Dodaj odbiorcy zdarzeń funkcji
  Następnie dodaj odbiorcy zdarzeń funkcji i Dodaj kod, który wykonuje się, gdy funkcja jest dezaktywowana.  
   
 #### <a name="to-add-an-event-receiver-to-the-feature"></a>Aby dodać odbiorcy zdarzeń funkcji  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  W obszarze **funkcje** węzła, otwórz menu skrótów **Feature1**, a następnie wybierz **dodać odbiorcy zdarzeń** do dodania obsługiwanego odbiornika dla funkcji.  
   
-     Spowoduje to dodanie pliku kodu, w obszarze Feature1. W takim przypadku go nosi nazwę Feature1.EventReceiver.cs lub Feature1.EventReceiver.vb, w zależności od języka programowania projektu.  
+     Spowoduje to dodanie pliku kodu, w obszarze Feature1. W takim przypadku nosić nazwę albo *Feature1.EventReceiver.cs* lub *Feature1.EventReceiver.vb*w zależności od języka programowania projektu.  
   
 3.  Jeśli projekt został napisany w [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], Dodaj następujący kod w górnej części odbiorcy zdarzeń, jeśli nie jest już istnieje:  
   
@@ -96,14 +97,14 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]  
   
-## <a name="testing-the-feature-event-receiver"></a>Testowanie odbiorcy zdarzeń funkcji  
+## <a name="test-the-feature-event-receiver"></a>Testowanie odbiorcy zdarzeń funkcji
  Następnie należy zdezaktywować funkcję do testowania czy **FeatureDeactivating** metoda generuje powiadomienia na liście anonsów programu SharePoint.  
   
 #### <a name="to-test-the-feature-event-receiver"></a>Aby przetestować odbiorcy zdarzeń funkcji  
   
 1.  Ustaw wartość projektu **aktywnej konfiguracji wdrożenia** właściwości **aktywacji nie**.  
   
-     Ustawienie tej właściwości uniemożliwia funkcję aktywacji w programie SharePoint i umożliwia debugowanie odbiorcy zdarzeń funkcji. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+     Ustawienie tej właściwości uniemożliwia funkcję aktywacji w programie SharePoint i umożliwia debugowanie odbiorcy zdarzeń funkcji. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint debugowania](../sharepoint/debugging-sharepoint-solutions.md).  
   
 2.  Wybierz **F5** klawisz, aby uruchomić projekt, a następnie wdrożyć go w programie SharePoint.  
   
@@ -119,8 +120,7 @@ ms.lasthandoff: 04/16/2018
   
      Należy zauważyć, że powiadomienia są wyświetlane w **anonsów** listy po dezaktywacji funkcję.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)   
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

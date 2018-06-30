@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3375d0cadf7a484a4965123b3ee9e82675f11ef9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296344"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118057"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji SharePoint
 
@@ -64,12 +64,12 @@ Kodowane testy interfejsu użytkownika automatycznie stacji aplikacji programu S
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Przewodnik: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profil próbkowania w aplikacji programu SharePoint.|
+|[Wskazówki: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profil próbkowania w aplikacji programu SharePoint.|
 |[Testowanie wydajności aplikacji z przed wprowadzeniem](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|Opisuje sposób tworzenia testów obciążenia, które ułatwiają testowania obciążenia aplikacji SharePoint.|
 |[Testowanie jednostek kodu](/visualstudio/test/unit-test-your-code)|Opisuje sposób wyszukiwania logiki błędów w kodzie za pomocą testów jednostkowych.|
 |[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Opisuje sposoby testowania interfejsu użytkownika aplikacji programu SharePoint.|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)
+[Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+[poprawy jakości kodu](/visualstudio/test/improve-code-quality)

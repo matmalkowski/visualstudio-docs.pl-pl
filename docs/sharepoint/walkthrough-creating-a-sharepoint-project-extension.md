@@ -17,16 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 407936d68310a675aebe1c7ea712f46aea45e807
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120625"
 ---
-# <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Wskazówki: tworzenie rozszerzenia projektu SharePoint
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>Wskazówki: Tworzenie rozszerzenia projektu SharePoint
   W tym przewodniku ilustruje sposób tworzenia rozszerzeń dla projektów programu SharePoint. Aby odpowiedzieć na poziomie projektu zdarzenia, takie jak po projektu jest dodany, usunięty lub zmieniono jego nazwę, można użyć rozszerzenia projektu. Można również dodać niestandardowe właściwości lub reagować, gdy wartość właściwości zostanie zmieniona. W przeciwieństwie do rozszerzenia elementu projektu rozszerzenia projektu nie może być skojarzony z określonym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- W tym przewodniku spowoduje utworzenie niestandardowej właściwości typu Boolean, który jest dodawany do każdego projektu SharePoint utworzone w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Jeśli wartość **True**, nową właściwość dodaje lub mapy obrazów folder zasobów do projektu. Jeśli wartość **False**, folderu Obrazy zostanie usunięty, jeśli istnieje. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie folderów mapowane](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+ W tym przewodniku spowoduje utworzenie niestandardowej właściwości typu Boolean, który jest dodawany do każdego projektu SharePoint utworzone w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Jeśli wartość **True**, nową właściwość dodaje lub mapy obrazów folder zasobów do projektu. Jeśli wartość **False**, folderu Obrazy zostanie usunięty, jeśli istnieje. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
  W tym przewodniku przedstawiono następujące zadania:  
   
@@ -45,11 +46,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym przewodniku zastosowano **projektu VSIX** szablonu w [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] do utworzenia pakietu VSIX, aby wdrożyć rozszerzenie właściwości projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="creating-the-projects"></a>Tworzenie projektów  
+## <a name="create-the-projects"></a>Tworzenie projektów
  W tym przewodniku, należy utworzyć dwa projekty:  
   
 -   VSIX projekt do utworzenia pakietu VSIX, aby wdrożyć rozszerzenie projektu.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+2.  Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 3.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **Visual Basic** węzłów, a następnie wybierz pozycję **rozszerzalności** węzła.  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Usuń plik kodu Class1 z projektu.  
   
-## <a name="configuring-the-project"></a>Konfigurowanie projektu  
+## <a name="configure-the-project"></a>Konfigurowanie projektu
  Przed przystąpieniem do napisania kodu do Tworzenie rozszerzenia projektu, należy dodać pliki kodu i odwołania do zestawów w projekcie rozszerzenia.  
   
 #### <a name="to-configure-the-project"></a>Aby skonfigurować projekt  
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  W **właściwości** Zmień **Osadź typy międzyoperacyjne** właściwości **False**.  
   
-## <a name="defining-the-new-sharepoint-project-property"></a>Definiowanie nowych właściwości projektu SharePoint  
+## <a name="define-the-new-sharepoint-project-property"></a>Zdefiniuj nowe właściwości projektu SharePoint
  Utwórz klasę, która definiuje rozszerzenia projektu i zachowanie nowej właściwości projektu. Aby zdefiniować nowe rozszerzenie projektu implementuje klasy <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejsu. Zawsze, gdy chcesz zdefiniować rozszerzenia projektu SharePoint, należy zaimplementować ten interfejs. Ponadto Dodaj <xref:System.ComponentModel.Composition.ExportAttribute> do klasy. Ten atrybut umożliwia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> typu konstruktora atrybutu.  
   
 #### <a name="to-define-the-new-sharepoint-project-property"></a>Do definiowania nowych właściwości projektu SharePoint  
@@ -116,14 +117,14 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]  
   
-## <a name="building-the-solution"></a>Tworzenie rozwiązania  
+## <a name="build-the-solution"></a>Skompiluj rozwiązanie
  Następnie Skompiluj rozwiązanie w celu upewnij się, że skompilowany bez błędów.  
   
 #### <a name="to-build-the-solution"></a>Tworzenie rozwiązania  
   
-1.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+1.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-property-extension"></a>Tworzenie pakietu VSIX, aby wdrożyć rozszerzenie właściwości projektu  
+## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>Utwórz pakiet VSIX, aby wdrożyć rozszerzenie właściwości projektu
  Aby wdrożyć rozszerzenia projektu, należy użyć projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakiet VSIX, modyfikując plik Source.Extension.vsixmanifest,a, który jest dołączony do projektu VSIX. Następnie utwórz pakiet VSIX przez utworzenie rozwiązania.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i tworzenia pakietu VSIX  
@@ -155,9 +156,9 @@ ms.lasthandoff: 04/16/2018
   
 9. Wybierz **OK** zamknąć **Dodaj nowy element zawartości** okno dialogowe.  
   
-10. Na pasku menu wybierz **pliku**, **Zapisz wszystko** gdy zakończenie, a następnie zamknij projektanta manifestu.  
+10. Na pasku menu wybierz **pliku** > **Zapisz wszystko** gdy zakończenie, a następnie zamknij projektanta manifestu.  
   
-11. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**, a następnie upewnij się, że projekt skompiluje się bez błędów.  
+11. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**, a następnie upewnij się, że projekt skompiluje się bez błędów.  
   
 12. W **Eksploratora rozwiązań**, otwórz menu skrótów **ProjectExtensionPackage** projekt i wybierz pozycję **Otwórz Folder w Eksploratorze plików** przycisku.  
   
@@ -165,20 +166,20 @@ ms.lasthandoff: 04/16/2018
   
      Domyślnie jest folder wyjściowy kompilacji... folder \bin\Debug folder zawierający plik projektu.  
   
-## <a name="testing-the-project-property"></a>Testowanie właściwości projektu  
+## <a name="test-the-project-property"></a>Testowanie właściwości projektu
  Teraz możesz przetestować właściwości niestandardowe projektu. Najłatwiej do debugowania i testowania nowego rozszerzenia właściwości projektu w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. To wystąpienie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jest tworzona po uruchomieniu VSIX lub inny projekt rozszerzalności. Po debugowania projektu można zainstalować rozszerzenia w systemie, a następnie przejdź do debugowania i testowania go w regularnych wystąpienia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 #### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>Do debugowania i testowania rozszerzenia w eksperymentalne wystąpienie programu Visual Studio  
   
 1.  Uruchom ponownie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] z poświadczeniami administracyjnymi, a następnie otwórz rozwiązanie ProjectExtensionPackage.  
   
-2.  Uruchom kompilację debugowania projektu przez wybranie **F5** klucza lub, w menu pasek wybierania **debugowania**, **Rozpocznij debugowanie**.  
+2.  Uruchom kompilację debugowania projektu przez wybranie **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 projektu i rozpoczyna eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt rozwiązania farmy programu SharePoint i użyć wartości domyślnych dla innych wartości w kreatorze.  
   
-    1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+    1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
     2.  W górnej części **nowy projekt** oknie dialogowym wybierz **.NET Framework 3.5** na liście wersji programu .NET Framework.  
   
@@ -202,11 +203,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  Zamknij eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie projektów SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  
   

@@ -13,19 +13,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fe44a0a83b82afb317346b719d804e12b13293b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233480"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117228"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektant obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy dataset. Informacje ze schematu (tabel, kolumn i tak dalej) są generowane i skompilowany w tej nowej klasy dataset jako zestaw obiektów pierwszej klasy i właściwości. Ponieważ typizowanego obiektu dataset pochodząca od klasy podstawowej <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, które przyjmują wystąpienia <xref:System.Data.DataSet> klasy jako parametr.
 
  Nietypizowanego zestawu danych z kolei ma brak odpowiednich wbudowanego schematu. Jak typizowanego obiektu dataset nietypizowanego zestawu danych zawiera tabele, kolumny i tak dalej, ale te są widoczne tylko w kolekcjach. (Jednak utworzony ręcznie tabele i inne elementy w nietypizowanego zestawu danych, można wyeksportować struktury zestawu danych jako schematu za pomocą zestawu danych <xref:System.Data.DataSet.WriteXmlSchema%2A> metody.)
 
-## <a name="contrasting-data-access-in-typed-and-untyped-datasets"></a>Kontrastem dostępu do danych w zestawach danych typu i bez typu
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Kontrast dostępu do danych w zestawach danych typu i bez typu
  Klasy typizowanego zestawu danych ma modelu obiektów, które mają jej właściwości na rzeczywiste nazwy tabel i kolumn. Na przykład jeśli pracujesz z typizowanego zestaw danych, można się odwołać kolumny przy użyciu kodu, takie jak następujące:
 
  [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]

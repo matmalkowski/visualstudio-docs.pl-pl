@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3c989807d2a2cde090e9b2619ae89344df1f22
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757022"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117176"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation, projektant działań
 
-**InitializeCorrelation** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.InitializeCorrelation> działania, który jest używany do ustanawiania korelacja komunikatów przed wysyłaniu lub odbieraniu je.
+**InitializeCorrelation** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. <xref:System.ServiceModel.Activities.InitializeCorrelation> Działania ustanawia korelacja wiadomości przed wysłaniem lub ich odbierania.
 
 ## <a name="the-initializecorrelation-activity"></a>Działanie InitializeCorrelation
 
@@ -31,21 +31,21 @@ ms.locfileid: "36757022"
 
 Dostęp **InitializeCorrelation** Projektant działań w **wiadomości** kategorii **przybornika**.
 
-**InitializeCorrelation** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.InitializeCorrelation> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z InitializeCorrelation.The <xref:System.Activities.Activity.DisplayName%2A> można edytowane w nagłówku **InitializeCorrelation** Projektant działań lub  **Nazwa wyświetlana** pole **właściwości** okna.
+**InitializeCorrelation** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Projektant działań porzucenie tworzy <xref:System.ServiceModel.Activities.InitializeCorrelation> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **InitializeCorrelation** Projektant działań lub **DisplayName** pole **właściwości** okna.
 
 <xref:System.ServiceModel.Activities.CorrelationHandle> Może być Określa **korelacji** w **właściwości** okno na **InitializeCorrelation** działania powierzchnię projektanta.
 
-Kliknięcie przycisku wielokropka obok **CorrelationData** w **właściwości** okna lub tekst wskazówki "View..." na **InitializeCorrelation** Projektant działań Wyświetla powierzchni **inicjowania korelacji** okno dialogowe, w którym można określić dojścia korelacji i par klucz wartość, można go zainicjować. Aby uzyskać więcej informacji na temat używania tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typu](../workflow-designer/type-collection-editor-dialog-box.md) tematu.
+Aby wyświetlić **inicjowania korelacji** okno dialogowe, w którym można określić dojścia korelacji i par klucz wartość używaną do inicjalizacji, kliknij przycisk wielokropka obok **CorrelationData** pole w **właściwości** okna. Lub zaznacz tekst podpowiedzi "View..." na **InitializeCorrelation** działania powierzchnię projektanta. Aby uzyskać więcej informacji na temat używania tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typu](../workflow-designer/type-collection-editor-dialog-box.md) artykułu.
 
 ### <a name="the-initializecorrelation-properties"></a>Właściwości InitializeCorrelation
 
-W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.InitializeCorrelation> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w **właściwości** oknie lub na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.InitializeCorrelation> właściwości i opisano sposób ich używania w projektancie. Te właściwości można edytować w **właściwości** oknie lub na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. Wartość domyślna to InitializeCorrelation.<br /><br /> Mimo że użycie wartości innych niż domyślne dla przyjaznych <xref:System.Activities.Activity.DisplayName%2A> nie jest ścisłym wymogiem jest najlepszym rozwiązaniem, aby użyć tych wartości.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. Wartość domyślna to InitializeCorrelation.<br /><br /> Mimo że użycie wartości innych niż domyślne dla przyjaznych <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, jest zalecane.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> Używanego do kojarzenia działań przepływu pracy w korelacji.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Słownik danych korelacji odnosi się komunikaty do wystąpienia przepływu pracy.<br /><br /> Użyj **inicjowania korelacji** okno dialogowe, aby skonfigurować <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Aby uzyskać więcej informacji na temat używania tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typu](../workflow-designer/type-collection-editor-dialog-box.md) tematu.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Słownik danych korelacji odnosi się komunikaty do wystąpienia przepływu pracy.<br /><br /> Użyj **inicjowania korelacji** okno dialogowe, aby skonfigurować <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Aby uzyskać więcej informacji na temat używania tego okna dialogowego, zobacz [okno dialogowe Edytor kolekcji typu](../workflow-designer/type-collection-editor-dialog-box.md) artykułu.|
 
 ## <a name="see-also"></a>Zobacz także
 

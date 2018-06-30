@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0659c354980eb302beb903d0107024882c6b160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120315"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Wskazówki: tworzenie części sieciowej dla SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Wskazówki: Tworzenie składnika web part dla SharePoint
 
 Części sieci Web umożliwiają użytkownikom bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki. W tym przewodniku przedstawiono sposób tworzenia składnika Web Part za pomocą **składnika Web Part** szablon elementu w Visual Studio 2010.
 
@@ -48,17 +49,17 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
 - Visual Studio 2017 lub wersji programu Visual Studio cyklu życia zarządzania aplikacji (ALM).
 
-## <a name="creating-an-empty-sharepoint-project"></a>Tworzenie pustego projektu SharePoint
+## <a name="create-an-empty-sharepoint-project"></a>Utwórz pusty projekt programu SharePoint
 
 Najpierw utwórz projekt SharePoint puste. Później, spowoduje dodanie składnika Web Part do projektu przy użyciu **składnika Web Part** szablon elementu.
 
 1. Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] za pomocą **Uruchom jako Administrator** opcji.
 
-2. Na pasku mężczyzn wybierz **pliku**, **nowy**, **projektu**.
+2. Na pasku mężczyzn wybierz **pliku** > **nowy** > **projektu**.
 
 3. W **nowy projekt** okna dialogowego rozwiń **SharePoint** węźle język, który chcesz użyć, a następnie wybierz pozycję **2010** węzła.
 
@@ -68,11 +69,11 @@ Najpierw utwórz projekt SharePoint puste. Później, spowoduje dodanie składni
 
 5. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisk, aby zaakceptować domyślne lokalnej witryny programu SharePoint.
 
-## <a name="adding-a-web-part-to-the-project"></a>Dodać składnik Web Part do projektu
+## <a name="add-a-web-part-to-the-project"></a>Dodaj składnik web part do projektu
 
 Dodaj **składnika Web Part** elementu do projektu. **Składnika Web Part** elementu dodaje plik kodu składnika Web Part. Później dodasz kod do pliku kodu składnika Web Part do renderowania zawartości części sieci Web.
 
-1. Na pasku menu wybierz **projektu**, **Dodaj nowy element**.
+1. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
 2. W **Dodaj nowy element** okna dialogowego, **zainstalowane szablony** okienku rozwiń **SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.
 
@@ -80,11 +81,11 @@ Dodaj **składnika Web Part** elementu do projektu. **Składnika Web Part** elem
 
      **Składnika Web Part** element będzie wyświetlany w **Eksploratora rozwiązań**.
 
-## <a name="rendering-content-in-the-web-part"></a>Renderowanie zawartości w składniku Web Part
+## <a name="rendering-content-in-the-web-part"></a>Renderowanie zawartości w składniku web part
 
 Można określić, które kontrolki ma być wyświetlany w części sieci Web przez dodanie ich do kolekcji controls klasy części sieci Web.
 
-1. W **Eksploratora rozwiązań**, otwórz WebPart1.vb (w języku Visual Basic) lub WebPart1.cs (w języku C#).
+1. W **Eksploratora rozwiązań**, otwórz *WebPart1.vb* (w języku Visual Basic) lub *WebPart1.cs* (w języku C#).
 
      Składnik Web Part pliku kodu zostanie otwarty w edytorze kodu.
 
@@ -129,7 +130,7 @@ Można określić, które kontrolki ma być wyświetlany w części sieci Web pr
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
 
-## <a name="testing-the-web-part"></a>Testowanie składnika Web Part
+## <a name="test-the-web-part"></a>Testowanie składnika web part
 
 Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik Web Part jest automatycznie dodawany do galerii składników Web Part w programie SharePoint. Składnik Web Part można dodać do dowolnej strony składnika Web Part.
 
@@ -166,7 +167,7 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik Web Par
         </employees>
     ```
 
-2. W programie Notatnik, na pasku menu wybierz **pliku**, **Zapisz jako**.
+2. W programie Notatnik, na pasku menu wybierz **pliku** > **Zapisz jako**.
 
 3. W **Zapisz jako** okna dialogowego, **Zapisz jako typ** wybierz **wszystkie pliki**.
 
@@ -194,7 +195,7 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik Web Par
 
      Składnik Web Part jest wyświetlany na stronie.
 
-## <a name="testing-the-custom-property"></a>Testowanie właściwości niestandardowej
+## <a name="test-the-custom-property"></a>Testowanie właściwości niestandardowej
 
 Zapełnić siatkę danych, która pojawia się w części sieci Web, określ ścieżkę pliku XML, który zawiera dane dotyczące każdego pracownika.
 
@@ -206,7 +207,7 @@ Zapełnić siatkę danych, która pojawia się w części sieci Web, określ śc
 
      Sprawdź, czy w części sieci Web zostanie wyświetlona lista pracowników.
 
-## <a name="testing-the-web-part-verb"></a>Testowanie zlecenia części sieci Web
+## <a name="test-the-web-part-verb"></a>Testowanie zlecenia części sieci web
 
 Pokazywanie i ukrywanie pracownicy, którzy nie są menedżerów klikając elementu, który jest wyświetlany w menu zleceń składnika Web Part.
 
@@ -218,9 +219,9 @@ Pokazywanie i ukrywanie pracownicy, którzy nie są menedżerów klikając eleme
 
      Wszyscy pracownicy pojawiają się w części sieci Web.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Instrukcje: Tworzenie SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Instrukcje: Tworzenie części sieciowej SharePoint za pomocą narzędzia Projektant](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Przewodnik: Tworzenie składnika Web part dla SharePoint za pomocą Projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Porady: Tworzenie składnika web part programu SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Wskazówki: Tworzenie składnika web part dla SharePoint za pomocą projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

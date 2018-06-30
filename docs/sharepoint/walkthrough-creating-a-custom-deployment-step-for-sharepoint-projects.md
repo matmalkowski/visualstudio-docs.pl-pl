@@ -16,16 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: aee7c1bf7a7a8d71d02da7bab270c4df1a4a52ab
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120331"
 ---
-# <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint
   Podczas wdrażania projektu SharePoint Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Visual Studio obejmuje wiele kroków wdrażania wbudowanych, ale mogą także tworzyć własne.  
   
- W tym przewodniku spowoduje utworzenie niestandardowego kroku wdrożenia do uaktualnienia rozwiązań na serwerze z programem SharePoint. Visual Studio zawiera kroki wdrażania wbudowanych dla wielu zadań, takich odwołaniem lub Dodawanie rozwiązania, ale nie zawiera krok wdrażania dotyczące uaktualniania rozwiązań. Domyślnie podczas wdrażania rozwiązania programu SharePoint, Visual Studio najpierw wycofuje rozwiązania (jeśli została już wdrożona), a następnie wdraża ponownie całego rozwiązania. Aby uzyskać więcej informacji na temat kroków związanych wbudowanych wdrożenia, zobacz [wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
+ W tym przewodniku spowoduje utworzenie niestandardowego kroku wdrożenia do uaktualnienia rozwiązań na serwerze z programem SharePoint. Visual Studio zawiera kroki wdrażania wbudowanych dla wielu zadań, takich odwołaniem lub Dodawanie rozwiązania, ale nie zawiera krok wdrażania dotyczące uaktualniania rozwiązań. Domyślnie podczas wdrażania rozwiązania programu SharePoint, Visual Studio najpierw wycofuje rozwiązania (jeśli została już wdrożona), a następnie wdraża ponownie całego rozwiązania. Aby uzyskać więcej informacji na temat kroków związanych wbudowanych wdrożenia, zobacz [wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
  W tym przewodniku przedstawiono następujące zadania:  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Rozszerzenie tworzy rozszerzenia projektu, który definiuje nową konfigurację wdrożenia, który jest zestaw kroków wdrażania, które są wykonywane dla danego projektu. Nową konfigurację wdrożenia zawiera niestandardowego kroku wdrożenia i kilka kroków wdrażania wbudowanych.  
   
--   Utworzenie dwóch niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzenia. Polecenia SharePoint są metody, które mogą być wywoływane przez zestawy rozszerzenia, aby użyć interfejsów API w modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Utwórz dwa niestandardowych poleceń programu SharePoint, które wywołuje zestawu rozszerzenia. Polecenia SharePoint są metody, które mogą być wywoływane przez zestawy rozszerzenia, aby użyć interfejsów API w modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [wywołują modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 -   Tworzenie pakietu rozszerzenia serwera Visual Studio (VSIX) w celu wdrażania zarówno zestawów.  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 05/22/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  
   
--   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio SDK. W tym przewodniku zastosowano **projektu VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX, aby wdrożyć rozszerzenie. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
 -   Uaktualnianie rozwiązań programu SharePoint. Aby uzyskać więcej informacji, zobacz [uaktualniania rozwiązania](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
-## <a name="creating-the-projects"></a>Tworzenie projektów  
+## <a name="create-the-projects"></a>Tworzenie projektów
  W tym przewodniku, należy utworzyć trzy projekty:  
   
 -   Aby utworzyć pakiet VSIX, aby wdrożyć rozszerzenie projekt VSIX.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 05/22/2018
   
 1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+2.  Na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 3.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **Visual Basic** węzłów, a następnie wybierz pozycję **rozszerzalności** węzła.  
   
@@ -112,10 +113,10 @@ ms.lasthandoff: 05/22/2018
   
 5.  Usuń plik kodu Class1 z projektu.  
   
-## <a name="configuring-the-projects"></a>Konfigurowanie projektów  
+## <a name="configure-the-projects"></a>Konfigurowanie projektów
  Przed przystąpieniem do napisania kod w celu utworzenia niestandardowego kroku wdrożenia, należy dodać pliki kodu i odwołania do zestawów i należy skonfigurować projektów.  
   
-#### <a name="to-configure-the-deploymentstepextension-project"></a>Aby skonfigurować projekt DeploymentStepExtension  
+#### <a name="to-configure-the-deploymentstepextension-project"></a>Aby skonfigurować projekt DeploymentStepExtension
   
 1.  W **DeploymentStepExtension** projekt, dodaj dwa pliki kodu, które mają następujące nazwy:  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 05/22/2018
   
 4.  Na **rozszerzenia** karcie, zaznacz pole wyboru dla zestawu Microsoft.VisualStudio.SharePoint, a następnie wybierz **OK** przycisku.  
   
-#### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointCommands  
+#### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointCommands
   
 1.  W **SharePointCommands** projekt, Dodaj plik kodu, który ma nazwę polecenia.  
   
@@ -141,7 +142,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-## <a name="defining-the-custom-deployment-step"></a>Definiowanie niestandardowego kroku wdrożenia  
+## <a name="define-the-custom-deployment-step"></a>Definiowanie niestandardowego kroku wdrożenia
  Utwórz klasę, która definiuje krok uaktualniania wdrożenia. Aby zdefiniować kroku wdrożenia implementuje klasy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interfejsu. Implementuje ten interfejs umożliwia zdefiniowanie niestandardowego kroku wdrożenia.  
   
 #### <a name="to-define-the-custom-deployment-step"></a>Aby zdefiniować niestandardowego kroku wdrożenia  
@@ -154,7 +155,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]  
   
-## <a name="creating-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Tworzenie konfiguracji wdrożenia, który zawiera niestandardowego kroku wdrożenia  
+## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Tworzenie konfiguracji wdrażania, która obejmuje krok niestandardowe wdrożenie
  Tworzenie rozszerzenia projektu dla konfiguracji wdrażania nowych obejmuje kilka kroków wdrażania wbudowanych i nowy krok uaktualniania wdrożenia. Tworząc to rozszerzenie, możesz pomóc deweloperom programu SharePoint do użycia w projektach programu SharePoint krok uaktualniania wdrożenia.  
   
  Aby utworzyć konfigurację wdrożenia implementuje klasy <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejsu. Implementuje ten interfejs umożliwia tworzenie rozszerzenia projektu SharePoint.  
@@ -166,7 +167,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
   
-## <a name="creating-the-custom-sharepoint-commands"></a>Tworzenie polecenia niestandardowych SharePoint  
+## <a name="create-the-custom-sharepoint-commands"></a>Tworzenie niestandardowych poleceń programu SharePoint
  Utwórz dwa polecenia niestandardowych, które wywołują modelu obiektów serwera dla programu SharePoint. Jedno polecenie Określa, czy rozwiązanie zostało już wdrożone; inne polecenia uaktualnia rozwiązania.  
   
 #### <a name="to-define-the-sharepoint-commands"></a>Aby zdefiniować polecenia SharePoint  
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 2.  Otwórz menu skrótów **SharePointCommands** projektu, a następnie wybierz pozycję **kompilacji**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Tworzenie pakietu VSIX, aby wdrożyć rozszerzenie  
+## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Utwórz pakiet VSIX, aby wdrożyć rozszerzenie
  Aby wdrożyć rozszerzenie, należy użyć projektu VSIX w rozwiązaniu, aby utworzyć pakiet VSIX. Najpierw należy skonfigurować pakietu VSIX, modyfikując plik Source.Extension.vsixmanifest,a w projekcie VSIX. Następnie utwórz pakiet VSIX przez utworzenie rozwiązania.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Aby skonfigurować i tworzenia pakietu VSIX  
@@ -226,13 +227,13 @@ ms.lasthandoff: 05/22/2018
   
 12. W **projektu** wybierz **SharePointCommands**, a następnie wybierz pozycję **OK** przycisku.  
   
-13. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje bez błędów.  
+13. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje bez błędów.  
   
 14. Upewnij się, że folder wyjściowy kompilacji projektu UpgradeDeploymentStep zawiera teraz UpgradeDeploymentStep.vsix pliku.  
   
      Domyślnie jest folder wyjściowy kompilacji... folder \bin\Debug folder zawierający plik projektu.  
   
-## <a name="preparing-to-test-the-upgrade-deployment-step"></a>Trwa przygotowywanie do testowania krok uaktualniania wdrożenia  
+## <a name="prepare-to-test-the-upgrade-deployment-step"></a>Przygotowanie do testowania krok uaktualniania wdrożenia
  Aby przetestować krok uaktualniania wdrożenia, należy najpierw wdrożyć przykładowe rozwiązanie z witryną programu SharePoint. Uruchom profilowanie rozszerzenie w eksperymentalne wystąpienie programu Visual Studio. Następnie utwórz definicji listy i wystąpienie listy na potrzeby testowania kroku wdrożenia, a następnie wdrożyć je w witrynie programu SharePoint. Następnie zmodyfikuj definicji listy i wystąpienia listy i ponownie wdrożyć je, aby zademonstrować, jak domyślny proces wdrażania powoduje zastąpienie rozwiązań w witrynie programu SharePoint.  
   
  W dalszej części tego przewodnika będą wprowadzane zmiany definicji listy i wystąpienia listy, a następnie będzie ich uaktualnieniem w witrynie programu SharePoint.  
@@ -243,13 +244,13 @@ ms.lasthandoff: 05/22/2018
   
 2.  W projekcie DeploymentStepExtension, otwórz plik kodu UpgradeStep, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `CanExecute` i `Execute` metody.  
   
-3.  Rozpocznij debugowanie, wybierając klawisz F5 lub na pasku menu, wybierając **debugowania**, **Rozpocznij debugowanie**.  
+3.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
 4.  Visual Studio instaluje rozszerzenia %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade kroku wdrożenia dla SharePoint Projects\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Krok uaktualniania wdrożenia przetestujesz, w tym wystąpieniu programu Visual Studio.  
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Aby utworzyć projekt programu SharePoint z definicji listy i wystąpienia listy  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** węzła lub **Visual Basic** węzła, rozwiń węzeł **programu SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.  
   
@@ -292,7 +293,7 @@ ms.lasthandoff: 05/22/2018
   
     1.  Imię  
   
-    2.  Firmy  
+    2.  firmy  
   
     3.  Telefon służbowy  
   
@@ -302,7 +303,7 @@ ms.lasthandoff: 05/22/2018
   
 14. W **Eksploratora rozwiązań**, rozwiń węzeł **listy pracowników** węzeł, a następnie rozwiń węzeł **wystąpienia listy pracowników** węzeł podrzędny.  
   
-15. W pliku Elements.xml zastąpić domyślne XML w tym pliku następujący kod XML. Plik XML zmienia nazwę na liście, aby **pracowników** i dodaje informacje dotyczące pracownika, który ma o nazwie Jan Kowalski.  
+15. W *Elements.xml* pliku, Zastąp domyślne XML w tym pliku następujący kod XML. Plik XML zmienia nazwę na liście, aby **pracowników** i dodaje informacje dotyczące pracownika, który ma o nazwie Jan Kowalski.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -327,7 +328,7 @@ ms.lasthandoff: 05/22/2018
     </Elements>  
     ```  
   
-16. Zapisz i zamknij plik Elements.xml.  
+16. Zapisz i Zamknij *Elements.xml* pliku.  
   
 17. Otwórz menu skrótów projektu EmployeesListDefinition, a następnie wybierz pozycję **Otwórz** lub **właściwości**.  
   
@@ -341,7 +342,7 @@ ms.lasthandoff: 05/22/2018
   
 2.  W **właściwości** okna, upewnij się, że **aktywnej konfiguracji wdrożenia** właściwość jest ustawiona na **domyślne**.  
   
-3.  Wybierz klawisz F5, lub na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie**.  
+3.  Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.  
   
 4.  Sprawdź pomyślnie kompilacji projektu, że przeglądarka sieci web otwiera się do witryny programu SharePoint, która **wymieniono** element paska Szybkie uruchamianie zawiera nowe **pracowników** listy, a  **Pracownicy** lista zawiera wpis dla Jan Kowalski.  
   
@@ -349,7 +350,7 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Do modyfikowania listy definicji i wystąpienia listy i wdróż je ponownie  
   
-1.  W projekcie EmployeesListDefinition, otwórz plik Elements.xml, który jest elementem podrzędnym **wystąpienia listy pracowników** elementu projektu.  
+1.  W projekcie EmployeesListDefinition Otwórz *Elements.xml* pliku, który jest elementem podrzędnym **wystąpienia listy pracowników** elementu projektu.  
   
 2.  Usuń `Data` elementu i jego elementów podrzędnych, aby usunąć wpis dla Jan Kowalski z listy.  
   
@@ -367,7 +368,7 @@ ms.lasthandoff: 05/22/2018
     </Elements>  
     ```  
   
-3.  Zapisz i zamknij plik Elements.xml.  
+3.  Zapisz i Zamknij *Elements.xml* pliku.  
   
 4.  Otwórz menu skrótów **listy pracowników** elementu projektu, a następnie wybierz pozycję **Otwórz** lub **właściwości**.  
   
@@ -379,7 +380,7 @@ ms.lasthandoff: 05/22/2018
   
      Ta akcja usuwa te pola z domyślny widok **pracowników** listy w witrynie programu SharePoint.  
   
-8.  Rozpocznij debugowanie, wybierając klawisz F5 lub na pasku menu, wybierając **debugowania**, **Rozpocznij debugowanie**.  
+8.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
 9. Sprawdź, czy **konflikty wdrażania** zostanie wyświetlone okno dialogowe.  
   
@@ -395,7 +396,7 @@ ms.lasthandoff: 05/22/2018
   
     -   Lista jest pusta. Kiedy używać **domyślne** konfiguracji wdrożenia na ponownego wdrożenia rozwiązania, **pracowników** listy został zastąpiony nową listę pusta w projekcie.  
   
-## <a name="testing-the-deployment-step"></a>Testowanie kroku wdrożenia  
+## <a name="test-the-deployment-step"></a>Testowanie kroku wdrożenia
  Teraz można przystąpić do testowania krok uaktualniania wdrożenia. Najpierw dodaj element do wystąpienia listy w programie SharePoint. Następnie zmiany definicji listy i wystąpienia listy, uaktualnij je w witrynie programu SharePoint i upewnij się, że krok uaktualniania wdrożenia nie zastąpienie nowy element.  
   
 #### <a name="to-manually-add-an-item-to-the-list"></a>Aby ręcznie dodać element do listy  
@@ -434,15 +435,15 @@ ms.lasthandoff: 05/22/2018
   
      Ta akcja usuwa te pola z domyślny widok **pracowników** listy w witrynie programu SharePoint.  
   
-5.  Rozpocznij debugowanie, wybierając klawisz F5 lub na pasku menu, wybierając **debugowania**, **Rozpocznij debugowanie**.  
+5.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
 6.  Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkt przerwania ustawionych wcześniej w `CanExecute` metody.  
   
-7.  Wybierz klawisz F5 ponownie, lub na pasku menu wybierz **debugowania**, **Kontynuuj**.  
+7.  Wybierz **F5** klucza ponownie, lub na pasku menu wybierz **debugowania** > **Kontynuuj**.  
   
 8.  Sprawdź, czy kod zatrzymuje się na punkt przerwania ustawionych wcześniej w `Execute` metody.  
   
-9. Wybierz klawisz F5, lub na pasku menu wybierz **debugowania**, **Kontynuuj** raz ostatni.  
+9. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj** raz ostatni.  
   
      Przeglądarki sieci web otwiera witrynę programu SharePoint.  
   
@@ -454,7 +455,7 @@ ms.lasthandoff: 05/22/2018
   
      **Uaktualnienia** konfiguracji wdrożenia modyfikuje istniejące **pracowników** wystąpienia listy w witrynie programu SharePoint. Jeśli używasz **domyślne** konfiguracji wdrożenia zamiast **uaktualnienia** konfiguracji, może wystąpić konflikt wdrażania. Visual Studio może rozwiązać konflikt, zastępując **pracowników** listy i element Adama, Menedżer urządzeń zostaną usunięte.  
   
-## <a name="cleaning-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim  
+## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu testowania krok uaktualniania wdrożenia, usunąć wystąpienia listy i definicji listy z witryny programu SharePoint i usuń rozszerzenie kroku wdrożenia w programie Visual Studio.  
   
 #### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>Aby usunąć wystąpienia listy z witryny programu SharePoint  
@@ -469,13 +470,13 @@ ms.lasthandoff: 05/22/2018
   
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Aby usunąć definicji listy z witryny programu SharePoint  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **kompilacji**, **Wycofaj**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **kompilacji** > **Wycofaj**.  
   
      Visual Studio wycofuje definicji listy z witryny programu SharePoint.  
   
 #### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenia  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia**, **rozszerzenia i aktualizacje**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.  
   
      **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.  
   
@@ -485,7 +486,6 @@ ms.lasthandoff: 05/22/2018
   
 4.  Zamknij oba wystąpienia programu Visual Studio (eksperymentalne wystąpienie i wystąpienie programu Visual Studio, w którym jest otwarte rozwiązanie UpgradeDeploymentStep).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  
   

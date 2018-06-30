@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4ee4d9a1c64d39e6ef05f9c01b26686f13c6dea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a1ef45b6bfa51944cb7fb3ac38057d9fc02a1dc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926813"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118190"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF z WPF i strukturą Entity Framework
 W tym przewodniku pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] jest hostowana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie do niego dostęp z aplikacji formularzy systemu Windows.
@@ -49,7 +49,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -154,7 +154,7 @@ W następnych krokach utworzysz aplikację kliencką opartą na interfejsie Wind
 
 #### <a name="to-create-the-client-application"></a>Aby utworzyć aplikację kliencką
 
-1.  Na pasku menu, wybierz plik, **Dodaj**, **nowy projekt**.
+1.  Na pasku menu, wybierz plik, **Dodaj** > **nowy projekt**.
 
 2.  W **nowy projekt** okna dialogowego rozwiń **Visual Basic** lub **Visual C#** węzła i wybierz polecenie **systemu Windows** węzła, a następnie wybierz pozycję  **Aplikacji formularzy systemu Windows**.
 

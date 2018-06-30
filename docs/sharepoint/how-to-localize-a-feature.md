@@ -18,16 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c143016aaec81c65c118923ff9513bb4607353dc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120318"
 ---
-# <a name="how-to-localize-a-feature"></a>Porady: lokalizowanie funkcji
+# <a name="how-to-localize-a-feature"></a>Porady: Lokalizowanie funkcji
   Domyślnie funkcja tytuły i opisy używają wartości ciągu ustalony. Do zlokalizowania funkcji tytuł i opis, Zastąp ciągi wyrażeń, które odwołują się zlokalizowanych zasobów.  
   
-## <a name="localizing-a-feature"></a>Lokalizowanie funkcji  
+## <a name="localize-a-feature"></a>Lokalizowanie funkcji  
   
 #### <a name="to-localize-a-feature"></a>Aby lokalizowanie funkcji  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
   
      Na przykład w pliku zasobów funkcji domyślny, wprowadź identyfikator ciągu **tytuł** o wartości **Mój tytuł funkcji**, a drugi ciąg Identyfikatora **opis** o wartości **Mój opis funkcji**. Dla każdego pliku zlokalizowanych zasobów Użyj tych samych parametrach identyfikatory używane w zasobie funkcji domyślny, ale wprowadź zlokalizowanych ciągów dla wartości.  
   
-5.  Po wprowadzeniu wszystkich wartości zasobów, otwórz menu skrótów dla funkcji (na przykład Feature1.feature), a następnie wybierz **Widok projektanta** otworzyć funkcję w Projektancie funkcji.  
+5.  Po wprowadzeniu wszystkich wartości zasobów, otwórz menu skrótów dla funkcji (dla wystąpienia *Feature1.feature*), a następnie wybierz pozycję **Widok projektanta** otworzyć funkcję w Projektancie funkcji.  
   
 6.  Aby zlokalizować **tytuł** i **opis** pól w funkcję, użyj następującego formatu, aby wprowadzić wartości w polach ich:  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
   
      Ciąg identyfikatory muszą być zgodne te, które są używane w plikach zasobów.  
   
-7.  Wybierz klawisz F5, aby skompilować i uruchomić aplikację.  
+7.  Wybierz **F5** klawisz, aby skompilować i uruchomić aplikację.  
   
 8.  W programie SharePoint, należy otworzyć **Akcje witryny** menu, wybierz **ustawienia lokacji**, a następnie w **Akcje witryny** wybierz **Zarządzanie funkcji witryny** łącza.  
   
@@ -61,10 +62,9 @@ ms.lasthandoff: 04/16/2018
   
      Funkcja zlokalizowane tytuły i opisy są wyświetlane w aplikacji. Aby wyświetlić zlokalizowanych zasobów, serwer programu SharePoint musi mieć zainstalowany pakiet językowy zgodny plik zasobu kultury.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
  [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)   
  [Porady: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Instrukcje: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  
-  
+ [Porady: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  
   

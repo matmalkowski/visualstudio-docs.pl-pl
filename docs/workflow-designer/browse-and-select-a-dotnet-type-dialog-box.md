@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973918"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117020"
 ---
-# <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukaj i wybierz typ .NET okno dialogowe
+# <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 
-W **właściwości** projektantów, takich jak projektanta zmiennych, po wybraniu okna, okien dialogowych lub **Przeglądaj w poszukiwaniu typów...**  z listy typów danych, jest **Wyszukaj i wybierz typ .NET** okno dialogowe (określone w formie skróconej jako "typ przeglądarki"). W tym oknie można wybrać typ z widoku drzewa, zespołów i projektów.
+W **właściwości** projektantów, takich jak projektanta zmiennych, po wybraniu okna, okien dialogowych lub **Przeglądaj w poszukiwaniu typy** z listy typów danych, jest **Przeglądaj i wybierz typ .NET** okno dialogowe (określone w formie skróconej jako "typ przeglądarki"). W tym oknie można wybrać typ z widoku drzewa, zespołów i projektów.
 
  To okno dialogowe jest stosowanych wiele scenariuszy użytkownika, takie jak następujące:
 

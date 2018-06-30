@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571617"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118105"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -43,7 +43,7 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Aby utworzyć projekt z szablonu projektu
 
-1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na **— strona początkowa**, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy Projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu...**  menu paska lub wybierz **nowy projekt** przycisk na pasku narzędzi.
+1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na **— strona początkowa**, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy Projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu** menu pasek lub wybierz **nowy projekt** przycisku na pasku narzędzi.
 
   ![Strona początkowa](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ Można również utworzyć pusty rozwiązania, które mają projektów. Może to
 
 ### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie
 
-1. W menu, wybierz **pliku** > **nowy** > **projektu...** .
+1. W menu, wybierz **pliku** > **nowy** > **projektu**.
 
 1. W lewym (**szablony**) okienku wybierz **inne typy projektów** > **rozwiązań programu Visual Studio** na wyświetlonej liście.
 

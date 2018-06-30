@@ -1,7 +1,7 @@
 ---
 title: Praca z C++ i języku Python
 description: Przewodnik tworzenia rozszerzenia programu C++ dla języka Python za pomocą programu Visual Studio, w tym debugowanie w trybie mieszanym.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c339b531e120c6e257dc4b5ee84c8a41b64ec6bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979272"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118307"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 

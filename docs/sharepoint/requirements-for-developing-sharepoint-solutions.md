@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb92476d64abebb0dae24109e57940a19505cc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c9d6a726b290bfed1c086f9fb03290a37c91490
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120293"
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Wymagania związane z opracowywaniem rozwiązań SharePoint
- 
 W systemie należy zainstalować następujące wymagania wstępne, przed użyciem narzędzia deweloperskie rozwiązania programu SharePoint, uwzględnione w programie Visual Studio:
 
 - Program Visual Studio w języku C# lub Visual Basic lub wersji programu Visual Studio cyklu życia zarządzania aplikacji (ALM).
@@ -49,15 +49,13 @@ Umożliwiające tworzenie rozwiązań programu SharePoint w Visual Studio, progr
 Aby uzyskać więcej informacji o sposobie instalowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zobacz [program Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="vista-and-windows-7-user-account-control-uac"></a>Kontrola konta użytkownika (UAC) w systemach Vista i Windows 7
-
 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] dołączyć do nich to funkcja zabezpieczeń, która jest znany jako kontroli konta użytkownika (UAC). Umożliwiające tworzenie rozwiązań programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systemów kontroli konta użytkownika, użytkownik musi uruchomić [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] administrator systemu. Na pulpicie otwórz menu skrótów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wybierz pozycję **Uruchom jako administrator**.
 
 Aby skonfigurować skrót zawsze Uruchom jako administrator, otwórz menu skrótów, wybierz pozycję **właściwości**, wybierz **zaawansowane** przycisk, a następnie wybierz **Uruchom jako administrator**  pole wyboru.
 
 Aby uzyskać więcej informacji, zobacz [opis i konfigurowanie Kontrola konta użytkownika w systemie Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). i [Kontrola konta użytkownika systemu Windows 7](http://go.microsoft.com/fwlink/?LinkId=177523).
 
-## <a name="sharepoint-permissions-considerations"></a>Uwagi dotyczące uprawnień programu SharePoint
-
+## <a name="sharepoint-permissions-considerations"></a>Zagadnienia dotyczące uprawnień programu SharePoint
 Umożliwiające tworzenie rozwiązań programu SharePoint, musi mieć wystarczające uprawnienia do uruchamiania i debugowanie rozwiązań SharePoint. Zanim można przetestować rozwiązania programu SharePoint, wykonaj następujące kroki, aby upewnić się, że masz wystarczające uprawnienia:
 
 1. Dodaj konto użytkownika jako administratora w systemie.
@@ -70,6 +68,5 @@ Umożliwiające tworzenie rozwiązań programu SharePoint, musi mieć wystarczaj
 
 3. Dodaj konto użytkownika w grupie WSS_ADMIN_WPG uprawnienia.
 
-## <a name="see-also"></a>Zobacz też
-
-[Wprowadzenie &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz także
+[Rozpoczynanie pracy &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)

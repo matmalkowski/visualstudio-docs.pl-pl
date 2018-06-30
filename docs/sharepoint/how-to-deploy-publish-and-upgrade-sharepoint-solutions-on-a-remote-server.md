@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120310"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym
-  Oprócz wdrażania rozwiązań programu SharePoint na system lokalny, lokacje zdalne lub lokalnych witryn programu SharePoint można opublikować rozwiązań w trybie piaskownicy programu SharePoint. Zdalny proces publikowania kopiuje plik wsp na serwer programu SharePoint, instaluje rozwiązanie i pozwala Aktywuj. Możesz również uaktualnić zdalnej instalacji rozwiązania programu SharePoint, po wprowadzeniu zmian do niego.  
+  Oprócz wdrażania rozwiązań programu SharePoint na system lokalny, lokacje zdalne lub lokalnych witryn programu SharePoint można opublikować rozwiązań w trybie piaskownicy programu SharePoint. Zdalne kopie proces publikowania *WSP* pliku na serwerze programu SharePoint instaluje rozwiązanie, a następnie umożliwia Aktywuj. Możesz również uaktualnić zdalnej instalacji rozwiązania programu SharePoint, po wprowadzeniu zmian do niego.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Aby opublikować rozwiązania w trybie piaskownicy programu SharePoint do zdalnego serwera programu SharePoint  
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów w trybie piaskownicy projektu programu SharePoint, który chcesz opublikować, a następnie wybierz pozycję **publikowania**.  
   
-2.  W **publikowania** okno dialogowe Wybierz **publikowania do witryny SharePoint** przycisk opcji, a następnie wprowadź adres URL dla online witryny publikowania, takie jak na poniższym przykładzie: **https://mytestsite.sharepoint.microsoftonline.com** .  
+2.  W **publikowania** oknie dialogowym wybierz **publikowania do witryny SharePoint** przycisk opcji, a następnie wprowadź adres URL witryny do publikowania online, takich jak: `https://mytestsite.sharepoint.microsoftonline.com`.  
   
 3.  Wybierz **Otwórz stronę galerii rozwiązań w przeglądarce po opublikowaniu** przycisk opcji, aby wyświetlić listę rozwiązań w **galerii rozwiązań** strony po opublikowaniu.  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zaloguj się na serwerze zdalnym, jeśli wymagane jest uwierzytelnienie użytkownika.  
   
-     W programie Visual Studio jest wyświetlany postęp publikowania **dane wyjściowe** okna. Po zakończeniu procesu plik rozwiązania (wsp) jest zainstalowany na zdalnym serwerze programu SharePoint. Jednak on nadal należy aktywować zanim będzie można go używać w programie SharePoint.  
+     W programie Visual Studio jest wyświetlany postęp publikowania **dane wyjściowe** okna. Po zakończeniu procesu, rozwiązania (*WSP*) plik jest zainstalowany na zdalnym serwerze programu SharePoint. Jednak on nadal należy aktywować zanim będzie można go używać w programie SharePoint.  
   
 6.  Na **galerii rozwiązań** wybierz aplikacji programu SharePoint, a następnie na Wstążce wybierz **Aktywuj** przycisku.  
   
@@ -76,10 +77,9 @@ ms.lasthandoff: 04/16/2018
   
      Stara wersja rozwiązania jest dezaktywowany, nowa wersja rozwiązania jest uaktualniony przy użyciu danych zachowywanych z rozwiązania do starego i nowego rozwiązania została aktywowana w programie SharePoint.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Porady: wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   

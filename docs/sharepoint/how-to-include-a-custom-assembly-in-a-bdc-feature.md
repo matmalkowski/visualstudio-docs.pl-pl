@@ -22,16 +22,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab104ee31246a524e2c34c513a66a5f5143d5f55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120296"
 ---
-# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Porady: dołączanie niestandardowego zestawu w funkcji BDC
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Porady: Dołączanie niestandardowego zestawu w funkcji BDC
   Projekt można odwołuje się do zestawów z innych projektów w tym samym rozwiązaniu. Jednak należy dodać te zestawy do pliku funkcji projektu za pomocą **Przypisz odwołania do zestawów do LobSystems** okno dialogowe.  
   
-### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Aby Dołączanie niestandardowego zestawu w funkcji łączności danych biznesowych (BDC)  
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Aby Dołączanie niestandardowego zestawu w funkcji (BDC) łączności danych biznesowych
   
 1.  W **Eksploratora rozwiązań**, wybierz folder, który zawiera model usługi łączności danych biznesowych.  
   
@@ -51,11 +52,10 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Aby debugować kod w zestawie niestandardowe, należy dodać zestaw do pakietu rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
+ [Dane biznesowe Integragte do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   

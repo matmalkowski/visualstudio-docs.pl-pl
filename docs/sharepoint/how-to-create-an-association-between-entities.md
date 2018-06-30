@@ -26,13 +26,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c341586fbd2a22f38385a6c613058318f5c2d6a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51527092332f1fa82019f1abf9251a8b44aedf06
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120309"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Porady: tworzenie skojarzenia między jednostkami
+# <a name="how-to-create-an-association-between-entities"></a>Porady: Tworzenie skojarzenia między jednostkami
   Można zdefiniować relacji między obiektami modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metod, zapewniających konsumentów modelu z informacji na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, listy lub niestandardowych aplikacji, aby wyświetlić relacji danych w interfejsie użytkownika (UI).  
   
  Można tworzyć dwa typy skojarzeń w Projektancie BDC: obcego skojarzenia opartego na kluczach i skojarzenia bez kluczy obcych. Aby uzyskać więcej informacji, zobacz [tworzenia skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).  
@@ -65,11 +66,11 @@ ms.lasthandoff: 04/16/2018
   
      Przykłady Navigator skojarzenia metod można znaleźć [tworzenia skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Porady: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
  [Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
@@ -77,6 +78,5 @@ ms.lasthandoff: 04/16/2018
  [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
-  
+ [Wskazówki: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
   

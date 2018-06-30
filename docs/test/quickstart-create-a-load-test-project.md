@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89a72c115edf8eae11fc1159686dee2b7b3f44d6
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976718"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118284"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Szybki Start: Tworzenie projektu testu obciążenia
+# <a name="quickstart-create-a-load-test-project"></a>Szybki start: tworzenie projektu testu obciążeniowego
 
 W tym szybkiego startu 10 minut dowiesz się, jak do tworzenia i uruchamiania wydajności sieci Web i projektu testu obciążenia w programie Visual Studio. Wydajności sieci Web lub testów jednostkowych, aby symulować wielu użytkowników, dostęp do serwera w tym samym czasie uruchamiać testów obciążenia.
 
@@ -27,7 +27,7 @@ W tym szybkiego startu 10 minut dowiesz się, jak do tworzenia i uruchamiania wy
 
 Jeśli jeszcze nie masz wydajności sieci Web i obciążenia zainstalowany składnik narzędzia do testowania, musisz zainstalować go za pośrednictwem Instalator programu Visual Studio.
 
-1. Otwórz Instalator programu Visual Studio z menu Start systemu Windows. Można także używać go w programie Visual Studio z **nowy projekt** okno dialogowe, lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje...**  na pasku menu.
+1. Otwórz Instalator programu Visual Studio z menu Start systemu Windows. Można także używać go w programie Visual Studio z **nowy projekt** okno dialogowe, lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu.
 
 1. Instalator programu Visual Studio, wybierz **pojedynczych składników** karcie, a następnie przewiń w dół do **debugowania i testowania** sekcji. Wybierz **wydajności sieci Web i narzędzia do testowania obciążenia**.
 
@@ -41,7 +41,7 @@ Jeśli jeszcze nie masz wydajności sieci Web i obciążenia zainstalowany skła
 
 W tej sekcji utworzymy projektu testu obciążenia C#. Można również tworzenie projektu testu obciążenia Visual Basic, jeśli wolisz.
 
-1. Otwórz program Visual Studio i wybierz polecenie **pliku** > **nowy** > **projektu...**  na pasku menu.
+1. Otwórz program Visual Studio i wybierz polecenie **pliku** > **nowy** > **projektu** na pasku menu.
 
    **Nowy projekt** zostanie otwarte okno dialogowe.
 
@@ -55,7 +55,7 @@ W tej sekcji utworzymy projektu testu obciążenia C#. Można również tworzeni
 
 ## <a name="add-a-load-test-to-the-project"></a>Dodaj do projektu testu obciążenia
 
-1. Po kliknięciu prawym przyciskiem lub menu kontekstowego węzła projektu w **Eksploratora rozwiązań**, wybierz **Dodaj** > **testu obciążenia...** .
+1. Po kliknięciu prawym przyciskiem lub menu kontekstowego węzła projektu w **Eksploratora rozwiązań**, wybierz **Dodaj** > **testu obciążenia**.
 
    **Nowy Kreator testu obciążenia** otwiera.
 

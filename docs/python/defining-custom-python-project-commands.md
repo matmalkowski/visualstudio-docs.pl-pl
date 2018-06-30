@@ -1,7 +1,7 @@
 ---
 title: Sposób definiowania polecenia niestandardowych menu dla projektów języka Python
 description: Pokazuje, jak edytować pliki projektów i elementów docelowych, aby dodać niestandardowych poleceń do menu kontekstowego projektu języka Python w programie Visual Studio. Polecenia można wywołać na programów wykonywalnych, skryptów, modułów, fragmentów kodu wbudowanego i pip.
-ms.date: 02/02/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d6113b9c102ff367d4b41bd4780c365c1928705
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583635"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117914"
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definiowanie niestandardowego polecenia dla projektów języka Python
 
@@ -145,7 +145,7 @@ Wszystkie wartości atrybutów jest rozróżniana wielkość liter.
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
 | Element TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z argumentami atrybutu:<ul><li>**wykonywalny**: uruchomienia pliku wykonywalnego o nazwie w celu dołączania wartości argumentów, tak jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom `python.exe` z nazwą pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: Uruchom kodu wbudowanego zawarte w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**PIP**: Uruchom `pip` przy użyciu polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn ma ustawioną wartość "output", jednak zakłada pip `install` poleceń i używa docelowy jako nazwę pakietu.</li></ul> |
-| docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub pip polecenia do użycia, w zależności od TargetType. |
+| Docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub pip polecenia do użycia, w zależności od TargetType. |
 | Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje) ma zostać przypisany do obiektu docelowego. Należy pamiętać, że po TargetType `script`, argumenty są podane z programem Python nie `python.exe`. Ignorowane dla `code` TargetType. |
 | ExecuteIn | Tak | Określa środowisko, w którym uruchomienia polecenia:<ul><li>**Konsola**: (domyślnie) uruchamia docelowy i argumenty tak, jakby ich zostaną wprowadzone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, podczas gdy elementem docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: tej samej konsoli, ale oczekuje na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w oknie danych wyjściowych w programie Visual Studio. Jeśli element TargetType "pip", Visual Studio wykorzystuje docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [okna interaktywnego Python](python-interactive-repl-in-visual-studio.md); opcjonalna nazwa wyświetlana jest używany jako tytuł okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
 | WorkingDirectory | Optional | Folder, w którym można uruchomić polecenie. |

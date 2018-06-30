@@ -26,14 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b039b1cf31a04a24819b03114c661a3ab1b108a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b94856d4e00cd15f324040ccd49c90bb1be29a7d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120285"
 ---
-# <a name="sharepoint-project-item-schema-reference"></a>Element projektu SharePoint — Odwołanie do schematu
-  Visual Studio będzie korzystać schematu elementu projektu SharePoint do sprawdzania poprawności zawartości .spdata — pliki. Plik .spdata — określa zawartości i zachowanie elementu projektu SharePoint. Aby uzyskać więcej informacji o zawartości programu SharePoint — elementy projektu, zobacz [Tworzenie szablonów elementów i szablonów projektu dla SharePoint — elementy projektu](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+# <a name="sharepoint-project-item-schema-reference"></a>Odwołanie do schematu elementu projektu SharePoint
+  Visual Studio będzie korzystać schematu elementu projektu SharePoint do sprawdzania poprawności zawartości *.spdata —* plików. *.Spdata —* plik Określa zawartości i zachowanie elementu projektu SharePoint. Aby uzyskać więcej informacji o zawartości programu SharePoint — elementy projektu, zobacz [elementu Tworzenie szablonów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
  Schemat elementu projektu SharePoint o nazwie ProjectItemModelSchema.xsd i jest instalowany domyślnie w lokalizacji % Program Files (11.0\Xml\Schemas x86)%\Microsoft programu Visual Studio.  
   
@@ -53,7 +54,6 @@ ms.lasthandoff: 04/16/2018
 |[SafeControl —](../sharepoint/safecontrol-element.md)|Reprezentuje kontrolki ASPX lub składnik Web Part jest oznaczony jako bezpieczny dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.|  
 |[SafeControls —](../sharepoint/safecontrols-element.md)|Reprezentuje kolekcję ASPX kontrolek i składników Web Part, które są wyznaczone jako bezpieczne dla każdego użytkownika uzyskiwać dostęp do dowolnej strony ASPX w witrynie programu SharePoint.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
-  
+## <a name="see-also"></a>Zobacz także
+ [Tworzenie szablonów elementów i szablonów projektu dla SharePoint — elementy projektu](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
   

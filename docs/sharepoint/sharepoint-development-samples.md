@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57ae572d6377ceef221c5040086e3418eb87b991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f1e41056fd0cbadb863a918182bc76ad2c91c29
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120292"
 ---
 # <a name="sharepoint-development-samples"></a>Przykłady rozwoju SharePoint
   Visual Studio można użyć do pobrania i zainstalowania przykłady aplikacji programu SharePoint z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).  
   
- Każda próbka można pobrać oddzielnie, można również pobrać przykładowy pakiet, który zawiera powiązane przykłady, które współużytkują technologii lub temat. Podczas zmiany kodu źródłowego są publikowane dla każdej próbki pobranych, otrzymasz powiadomienie.  
+ Każda próbka można pobrać osobno. Możesz również pobrać przykładowy pakiet, który ma powiązane przykłady, które współużytkują technologii lub artykułu. Podczas zmiany kodu źródłowego są publikowane dla każdej próbki pobranych, otrzymasz powiadomienie.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md)   
  [Przykłady programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150928)   
  [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
-  
   

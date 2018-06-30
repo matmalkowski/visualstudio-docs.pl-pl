@@ -14,16 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 6ecd69f6527348e39c4eadeef6f17b396852bf39
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120333"
 ---
-# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można utworzyć nowy projekt, który zawiera element projektu. Informacje zbierane można zainicjować elementu projektu.  
   
- W tym przewodniku kreatora zostanie dodany do szablonu projektu kolumn witryny przedstawionej w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Gdy użytkownik tworzy projekt kolumny witryny, Kreator zbiera informacje o kolumny witryny (takie jak jego typu podstawowego i grupy) i dodaje te informacje do pliku Elements.xml w nowym projekcie.  
+ W tym przewodniku kreatora zostanie dodany do szablonu projektu kolumn witryny przedstawionej w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Gdy użytkownik tworzy projekt kolumny witryny, Kreator zbiera informacje o kolumny witryny (takie jak jego typu podstawowego i grupy) i dodaje te informacje do *Elements.xml* plik w nowym projekcie.  
   
  W tym przewodniku przedstawiono następujące zadania:  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/23/2018
   
 -   Kolumny witryny w programie SharePoint. Aby uzyskać więcej informacji, zobacz [kolumn](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a> Opis składników Kreatora  
+## <a name="understand-the-wizard-components"></a>Opis składników Kreatora
  Kreator przedstawionej w tym przewodniku zawiera kilka składników. W poniższej tabeli opisano te składniki.  
   
 |Składnik|Opis|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/23/2018
 |Menedżer podpisywania projektu|Jest to klasa pomocy o nazwie `ProjectSigningManager`, która umożliwia przez implementację kreator Utwórz nowy plik key.snk w każdym wystąpieniu nowego projektu.|  
 |SharePoint — Polecenia|Są to metody, które są używane przez kreatora modelu danych do wywołania w lokalnej witrynie programu SharePoint podczas działania kreatora. Ponieważ polecenia SharePoint muszą wskazywać programu .NET Framework 3.5, te polecenia są implementowane w innym zestawie niż reszta kodem kreatora.|  
   
-## <a name="creating-the-projects"></a>Tworzenie projektów  
+## <a name="create-the-projects"></a>Tworzenie projektów
  W tym przewodniku, należy dodać kilka projektów w rozwiązaniu SiteColumnProjectItem, który został utworzony w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 -   Projekt WPF. Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 05/23/2018
   
  Uruchom przewodnika tworzenia projektów.  
   
-#### <a name="to-create-the-wpf-project"></a>Aby utworzyć projekt WPF  
+#### <a name="to-create-the-wpf-project"></a>Aby utworzyć projekt WPF
   
 1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz rozwiązanie SiteColumnProjectItem.  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 05/23/2018
   
 5.  Usuń plik kodu Class1 z projektu.  
   
-## <a name="configuring-the-projects"></a>Konfigurowanie projektów  
+## <a name="configure-the-projects"></a>Konfigurowanie projektów
  Przed utworzeniem kreatora, należy dodać niektóre pliki kodu i odwołania do zestawów w projektach.  
   
 #### <a name="to-configure-the-wizard-project"></a>Aby skonfigurować projekt Kreatora  
@@ -164,7 +165,7 @@ ms.lasthandoff: 05/23/2018
   
      Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie zaimportowane przestrzenie nazw &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
-#### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointCommands  
+#### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointcommands
   
 1.  W **Eksploratora rozwiązań**, wybierz **SharePointCommands** węzła projektu.  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 05/23/2018
   
 5.  W **SharePointCommands** projekt, Dodaj inny plik kodu, który ma nazwę polecenia.  
   
-6.  Wybierz projekt SharePointCommands, a następnie na pasku menu wybierz **projektu**, **Dodaj odwołanie**.  
+6.  Wybierz projekt SharePointCommands, a następnie na pasku menu wybierz **projektu** > **Dodaj odwołanie**.  
   
 7.  Rozwiń węzeł **zestawy** węzła, wybierz **rozszerzenia** węzeł, a następnie zaznacz pola wyboru obok następujących zestawów:  
   
@@ -188,7 +189,7 @@ ms.lasthandoff: 05/23/2018
   
 8.  Wybierz **OK** przycisk, aby dodać zestawy do projektu.  
   
-## <a name="creating-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Tworzenie modelu Kreatora podpisywania Manager i identyfikatory poleceń programu SharePoint  
+## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Tworzenie modelu kreatora, Menedżer podpisywania i identyfikatory poleceń programu SharePoint
  Dodaj kod do projektu ProjectTemplateWizard do zaimplementowania w próbce następujące składniki:  
   
 -   Identyfikatory poleceń programu SharePoint. Te ciągi zidentyfikować poleceń programu SharePoint, które korzysta z kreatora. W dalszej części tego przewodnika dodasz kod w projekcie SharePointCommands do wykonania polecenia.  
@@ -199,7 +200,7 @@ ms.lasthandoff: 05/23/2018
   
  Aby uzyskać więcej informacji dotyczących tych składników, zobacz [opis składników kreatora](#wizardcomponents).  
   
-#### <a name="to-define-the-sharepoint-command-ids"></a>Aby zdefiniować identyfikatory poleceń programu SharePoint  
+#### <a name="to-define-the-sharepoint-command-ids"></a>Aby zdefiniować identyfikatory poleceń programu SharePoint
   
 1.  W projekcie ProjectTemplateWizard Otwórz plik kodu CommandIds, a następnie zastąp całą zawartość pliku następującym kodem.  
   
@@ -220,13 +221,13 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]  
   
-## <a name="creating-the-wizard-ui"></a>Tworzenie kreatora interfejsu użytkownika  
+## <a name="create-the-wizard-ui"></a>Tworzenie kreatora interfejsu użytkownika
  Dodaj kod XAML, aby zdefiniować interfejsu użytkownika kreatora i formanty dwóch użytkownika, które udostępniają interfejs użytkownika dla stron kreatora, a następnie dodaj kod, aby zdefiniować zachowanie formantów okna i użytkownika. Kreator tworzenia podobny wbudowanych kreatora dla projektów programu SharePoint w Visual Studio.  
   
 > [!NOTE]  
 >  W poniższych krokach projektu mają błędy kompilacji, po dodaniu XAML lub kodu do projektu. Te błędy zniknie po dodaniu kod w kolejnych krokach.  
   
-#### <a name="to-create-the-wizard-window-ui"></a>Aby utworzyć okno Kreatora interfejsu użytkownika  
+#### <a name="to-create-the-wizard-window-ui"></a>Aby utworzyć okno Kreatora interfejsu użytkownika
   
 1.  W projekcie ProjectTemplateWizard Otwórz menu skrótów dla pliku WizardWindow.xaml, a następnie wybierz **Otwórz** można otworzyć okna w projektancie.  
   
@@ -250,7 +251,7 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]  
   
-#### <a name="to-create-the-first-wizard-page-ui"></a>Aby utworzyć pierwszej stronie Kreatora interfejsu użytkownika  
+#### <a name="to-create-the-first-wizard-page-ui"></a>Aby utworzyć pierwszej stronie Kreatora interfejsu użytkownika
   
 1.  W projekcie ProjectTemplateWizard Otwórz menu skrótów dla pliku Page1.xaml, a następnie wybierz **Otwórz** otworzyć kontrolki użytkownika w projektancie.  
   
@@ -269,7 +270,7 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]  
   
-#### <a name="to-create-the-second-wizard-page-ui"></a>Aby utworzyć na drugiej stronie Kreatora interfejsu użytkownika  
+#### <a name="to-create-the-second-wizard-page-ui"></a>Aby utworzyć na drugiej stronie Kreatora interfejsu użytkownika
   
 1.  W projekcie ProjectTemplateWizard Otwórz menu skrótów dla pliku Page2.xaml, a następnie wybierz **Otwórz**.  
   
@@ -290,7 +291,7 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]  
   
-## <a name="implementing-the-wizard"></a>Implementowanie Kreatora  
+## <a name="implement-the-wizard"></a>Kreator implementacji
  Zdefiniuj główną funkcjonalność kreatora zaimplementowanie <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu. Ten interfejs definiuje metody, które wywołuje program Visual Studio, gdy Kreator uruchamia zakończeniu i w określonym czasie podczas Kreator uruchamia.  
   
 #### <a name="to-implement-the-wizard"></a>Aby zaimplementować Kreatora  
@@ -302,7 +303,7 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]  
   
-## <a name="creating-the-sharepoint-commands"></a>Tworzenie polecenia SharePoint  
+## <a name="create-the-sharepoint-commands"></a>Tworzenie polecenia SharePoint
  Utwórz dwa polecenia niestandardowych, które wywołują modelu obiektów programu SharePoint server. Jedno polecenie Określa, czy adres URL witryny, że użytkownik wpisze w kreatorze jest prawidłowa. Inne polecenie pobiera wszystkie typy pól z określonej witryny programu SharePoint, dzięki czemu użytkownicy mogą wybrać, które z nich do użycia jako podstawy dla ich nowej kolumny witryny.  
   
 #### <a name="to-define-the-sharepoint-commands"></a>Aby zdefiniować polecenia SharePoint  
@@ -319,9 +320,9 @@ ms.lasthandoff: 05/23/2018
   
 #### <a name="to-build-your-project"></a>Aby utworzyć projekt  
   
-1.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+1.  Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
-## <a name="removing-the-keysnk-file-from-the-project-template"></a>Usuwanie pliku key.snk z szablonu projektu  
+## <a name="removing-the-keysnk-file-from-the-project-template"></a>Usuwanie pliku key.snk z szablonu projektu
  W [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), utworzony szablon projektu zawiera plik key.snk, który jest używany do podpisywania każde wystąpienie projektu kolumn witryny. Ten plik key.snk nie jest już konieczne ponieważ Kreator generuje nowy plik key.snk dla każdego projektu. Usuń plik key.snk z szablonu projektu i usunąć odwołania do tego pliku.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Aby usunąć plik key.snk z szablonu projektu  
@@ -355,7 +356,7 @@ ms.lasthandoff: 05/23/2018
   
 7.  Zapisz i zamknij plik.  
   
-## <a name="associating-the-wizard-with-the-project-template"></a>Kojarzenie kreatora z szablonu projektu  
+## <a name="associating-the-wizard-with-the-project-template"></a>Kojarzenie kreatora z szablonu projektu
  Teraz, gdy zostały zaimplementowane kreatora, należy skojarzyć kreatora **kolumny witryny** szablonu projektu. Istnieją trzy procedur, które należy wykonać, aby to zrobić:  
   
 1.  Zaloguj się przy użyciu silnej nazwy zestawu kreatora.  
@@ -409,14 +410,14 @@ ms.lasthandoff: 05/23/2018
   
 3.  Zapisz i zamknij plik.  
   
-## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Dodawanie do pliku Elements.xml w szablonie projektu parametry wymienne  
- Dodaj kilka parametrów wymiennych do pliku Elements.xml w projekcie SiteColumnProjectTemplate. Te parametry są inicjowane w `RunStarted` metoda `SiteColumnProjectWizard` klasy, która wcześniej zdefiniowany. Gdy użytkownik tworzy projekt kolumny witryny, Visual Studio automatycznie zastępuje tych parametrów w pliku Elements.xml w nowym projekcie wartości, które są określone w kreatorze.  
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Dodaj do pliku Elements.xml w szablonie projektu parametry wymienne
+ Dodać kilka wymienne parametry *Elements.xml* plik w projekcie SiteColumnProjectTemplate. Te parametry są inicjowane w `RunStarted` metoda `SiteColumnProjectWizard` klasy, która wcześniej zdefiniowany. Gdy użytkownik tworzy projekt kolumny witryny, Visual Studio automatycznie zastępuje tych parametrów w *Elements.xml* pliku z wartościami, które są określone w Kreatorze nowego projektu.  
   
  Parametr wymienny to token, który rozpoczyna się i kończy się znakiem dolara ($). Oprócz Definiowanie wymienne parametry, można użyć wbudowanych parametrów, które są zdefiniowane i zainicjowane przez system projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [parametry wymienne](../sharepoint/replaceable-parameters.md).  
   
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Aby dodać do pliku Elements.xml parametry wymienne  
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Aby dodać do pliku Elements.xml parametry wymienne
   
-1.  W projekcie SiteColumnProjectTemplate Zastąp zawartość pliku Elements.xml następujący kod XML.  
+1.  W projekcie SiteColumnProjectTemplate Zastąp zawartość *Elements.xml* pliku za pomocą następujących XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -434,7 +435,7 @@ ms.lasthandoff: 05/23/2018
   
 2.  Zapisz i zamknij plik.  
   
-## <a name="adding-the-wizard-to-the-vsix-package"></a>Dodawanie kreatora do pakietu VSIX  
+## <a name="add-the-wizard-to-the-vsix-package"></a>Kreator dodawania pakietu VSIX
  Aby wdrożyć kreatora z pakietem VSIX, który zawiera szablon projektu kolumn witryny, dodaj odwołania do projektu kreatora i projektu poleceń programu SharePoint do pliku source.extension.vsixmanifest w projekcie VSIX.  
   
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>Aby dodać kreatora do pakietu VSIX  
@@ -463,9 +464,9 @@ ms.lasthandoff: 05/23/2018
   
 9. W **projektu** wybierz **SharePointCommands** projektu, a następnie wybierz pozycję **OK** przycisku.  
   
-10. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompilacje bez błędów.  
+10. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompilacje bez błędów.  
   
-## <a name="testing-the-wizard"></a>Testowanie Kreatora  
+## <a name="test-the-wizard"></a>Kreator testu
  Teraz można przystąpić do testowania kreatora. Najpierw należy uruchomić debugowanie rozwiązania SiteColumnProjectItem w eksperymentalne wystąpienie programu Visual Studio. Następnie należy przetestować Kreator projektu kolumn witryny w eksperymentalne wystąpienie programu Visual Studio. Na koniec Skompiluj i uruchom projekt, aby sprawdzić, czy kolumna lokacji działa zgodnie z oczekiwaniami.  
   
 #### <a name="to-start-debugging-the-solution"></a>Aby rozpocząć debugowanie rozwiązania  
@@ -474,17 +475,17 @@ ms.lasthandoff: 05/23/2018
   
 2.  W projekcie ProjectTemplateWizard, otwórz plik kodu SiteColumnProjectWizard, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `RunStarted` metody.  
   
-3.  Na pasku menu wybierz **debugowania**, **wyjątki**.  
+3.  Na pasku menu wybierz **debugowania** > **wyjątki**.  
   
 4.  W **wyjątki** okna dialogowego upewnij się, że **wyrzuconych** i **nieobsługiwanych przez użytkownika** pól wyboru dla **wspólnego języka środowiska uruchomieniowego wyjątki**zostaną wyczyszczone, a następnie wybierz **OK** przycisku.  
   
-5.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania**, **Rozpocznij debugowanie**.  
+5.  Rozpocznij debugowanie, wybierając **F5** klucza lub, w menu pasek wybierania **debugowania** > **Rozpocznij debugowanie**.  
   
      Visual Studio instaluje rozszerzenia %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Element projektu przetestujesz, w tym wystąpieniu programu Visual Studio.  
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Aby przetestować kreatora w programie Visual Studio  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **pliku** > **nowy** > **projektu**.  
   
 2.  Rozwiń węzeł **Visual C#** węzła lub **Visual Basic** rozwiń węzeł (w zależności od języka obsługującego szablon projektu), **SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.  
   
@@ -492,7 +493,7 @@ ms.lasthandoff: 05/23/2018
   
 4.  Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkt przerwania ustawionych wcześniej w `RunStarted` metody.  
   
-5.  Kontynuuj debugowanie projektu przez wybranie **F5** klucza lub, w menu pasek wybierania **debugowania**, **Kontynuuj**.  
+5.  Kontynuuj debugowanie projektu przez wybranie **F5** klucza lub, w menu pasek wybierania **debugowania** > **Kontynuuj**.  
   
 6.  W **Kreator dostosowania programu SharePoint**, wprowadź adres URL witryny, która ma być używany na potrzeby debugowania, a następnie wybierz pozycję **dalej** przycisku.  
   
@@ -504,13 +505,13 @@ ms.lasthandoff: 05/23/2018
   
     -   W **nazwa** wprowadź **Moje kolumny Yes/No**, a następnie wybierz pozycję **Zakończ** przycisku.  
   
-     W **Eksploratora rozwiązań**, pojawi się nowy projekt i zawiera element projektu o nazwie **pole1**, i Visual Studio otworzy plik Elements.xml projektu w edytorze.  
+     W **Eksploratora rozwiązań**, pojawi się nowy projekt i zawiera element projektu o nazwie **pole1**, i Visual Studio otworzy projektu *Elements.xml* plik w edytorze.  
   
-8.  Sprawdź, czy Elements.xml zawiera wartości, które zostały określone w kreatorze.  
+8.  Sprawdź, czy *Elements.xml* zawiera wartości, które zostały określone w kreatorze.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Aby przetestować kolumny witryny w programie SharePoint  
   
-1.  W eksperymentalnym wystąpieniu programu Visual Studio wybierz klawisz F5.  
+1.  Eksperymentalne wystąpienie programu Visual Studio, wybierz **F5** klucza.  
   
      Kolumny witryny zostaje spakowany i wdrożyć do programu SharePoint witryny **adres URL witryny** określa właściwości projektu. Przeglądarki sieci web zostanie otwarty na domyślną stronę tej lokacji.  
   
@@ -523,12 +524,12 @@ ms.lasthandoff: 05/23/2018
   
 4.  Na liście kolumn witryn, upewnij się, że **kolumn Yes/No niestandardowy** grupa zawiera kolumny o nazwie **Moje kolumny Yes/No**, a następnie zamknij przeglądarkę sieci web.  
   
-## <a name="cleaning-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim  
+## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu testowania elementu projektu, należy usunąć szablon projektu z eksperymentalne wystąpienie programu Visual Studio.  
   
 #### <a name="to-clean-up-the-development-computer"></a>Aby wyczyścić na komputerze deweloperskim  
   
-1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia**, **rozszerzenia i aktualizacje**.  
+1.  Eksperymentalne wystąpienie programu Visual Studio na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.  
   
      **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.  
   
@@ -540,11 +541,10 @@ ms.lasthandoff: 05/23/2018
   
      Aby uzyskać informacje o sposobie wdrażania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia, zobacz [wysyłania rozszerzenia dla programu Visual Studio](/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także
  [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
- [Definiowanie typów elementów projektu SharePoint niestandardowych](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
   

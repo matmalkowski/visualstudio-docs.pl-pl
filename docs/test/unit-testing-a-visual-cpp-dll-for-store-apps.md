@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233534"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117631"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
 
@@ -26,7 +26,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Tworzenie rozwiązania i jednostkowy projekt testowy
 
-1.  Na **pliku** menu, wybierz **nowy** > **nowy projekt...** .
+1.  Na **pliku** menu, wybierz **nowy** > **nowy projekt**.
 
 2.  W oknie dialogowym Nowy projekt, rozwiń węzeł **zainstalowana** > **Visual C++** i wybierz polecenie **uniwersalnych systemu Windows**. Następnie wybierz pozycję **aplikacji testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
 
@@ -131,11 +131,11 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 1.  Dodaj RooterLib do projektu RooterLibTests.
 
-    1.  W Eksploratorze rozwiązań wybierz **RooterLibTests** projektu, a następnie wybierz pozycję **odwołania...**  menu skrótów.
+    1.  W Eksploratorze rozwiązań wybierz **RooterLibTests** projektu, a następnie wybierz pozycję **odwołania** menu skrótów.
 
     2.  W oknie dialogowym właściwości projektu RooterLib rozwiń **wspólne właściwości** i wybierz polecenie **Framework i odwołania**.
 
-    3.  Wybierz **dodać nowego odwołania...**
+    3.  Wybierz **Dodaj nowe odwołanie**
 
     4.  W **Dodaj odwołanie** okna dialogowego rozwiń **rozwiązania** , a następnie wybierz **projekty**. Następnie wybierz **RouterLib** elementu.
 

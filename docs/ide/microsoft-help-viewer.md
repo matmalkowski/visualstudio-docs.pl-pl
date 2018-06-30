@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948210"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117163"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 
-Można zainstalować i wyświetlić zawartość różne produkty i technologie, na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft, w tym programu Visual Studio, .NET Framework, dokumentację języka, SQL Server i systemu Windows dla deweloperów. Podgląd Pomocy umożliwia:
+Można zainstalować i wyświetlić zawartość różne produkty i technologie, na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft. Produkty te obejmują Visual Studio, .NET Framework, dokumentację języka, SQL Server i systemu Windows dla deweloperów. Podgląd Pomocy umożliwia:
 
--   Znajdź i pobrania zawartości, które także są nazywane książek.
+- Pobierz zestawy zawartości, które także są nazywane książek. Może to być przydatne, jeśli potrzebujesz do pracy w "trybie offline" i nadal mieć dostęp do dokumentacji.
 
--   Znajdowanie tematów przez tytuł przeglądania i wyszukując spisu treści.
+- Znajdowanie tematów przez tytuł przeglądania i wyszukując spisu treści.
 
--   Wyszukiwanie tematów w indeksie.
+- Wyszukiwanie tematów w indeksie.
 
--   Informacje można znaleźć przy użyciu wyszukiwania pełnotekstowego.
+- Informacje można znaleźć przy użyciu wyszukiwania pełnotekstowego.
 
--   Widok, zakładki i drukowanie tematów.
+- Widok, zakładki i drukowanie tematów.
 
 Aby zainstalować podglądu pomocy, zobacz [instalacja podglądu pomocy firmy Microsoft](../ide/microsoft-help-viewer-installation.md). Aby rozpocząć odczyt tematów pomocy w Podglądzie pomocy, a nie w trybie online, przejdź do **pomocy** menu programu Visual Studio, a następnie wybierz **Ustaw preferencje pomocy** > **Uruchom w Podglądzie pomocy** .
+
+> [!TIP]
+> Innym sposobem na pobieranie zawartości lokalnie, aby mogły go wyświetlać, gdy nie ma połączenia internetowego jest pobrać wersję plików PDF z niego. Wiele zestawów dokumentacji w witrynie docs.microsoft.com zawiera łącza w dolnej części spisu treści (TOC), aby pobrać plik PDF, który zawiera wszystkie artykuły dla tego spisu treści.
+>
+> ![Pobierz plik PDF dokumentacji programu Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Samouczek podglądu pomocy
 
@@ -74,19 +79,19 @@ Na liście zawartości pokazano książki można zainstalować lub został już 
 
 Pasek narzędzi w **podglądu pomocy** okna zawiera następujące przyciski:
 
--   **Pokaż temat w spisie treści** przycisk wyświetlana jest lokalizacja tematu w **zawartość** kartę.
+- **Pokaż temat w spisie treści** przycisk wyświetlana jest lokalizacja tematu w **zawartość** kartę.
 
--   **Dodaj do ulubionych** przycisk Dodaje temat active **ulubione** kartę.
+- **Dodaj do ulubionych** przycisk Dodaje temat active **ulubione** kartę.
 
--   **Znaleźć w temacie** przycisk wyróżnia wyszukiwanie tekstu w aktywny temat.
+- **Znaleźć w temacie** przycisk wyróżnia wyszukiwanie tekstu w aktywny temat.
 
--   **Drukowania** przycisku drukuje lub Podgląd aktywny temat.
+- **Drukowania** przycisku drukuje lub Podgląd aktywny temat.
 
--   **Opcje aplikacji Viewer** przycisk wyświetla ustawienia, takie jak rozmiar, jaki jest wyświetlany tekst, liczbę wyników wyszukiwania do zwrócenia, jak wiele tematów do wyświetlenia w historii i czy do sprawdzania aktualizacji w trybie online.
+- **Opcje aplikacji Viewer** przycisk wyświetla ustawienia, takie jak rozmiar, jaki jest wyświetlany tekst, liczbę wyników wyszukiwania do zwrócenia, jak wiele tematów do wyświetlenia w historii i czy do sprawdzania aktualizacji w trybie online.
 
--   **Zarządzania zawartością** sprawia, że przycisk **zarządzania zawartością** kartę aktywne.
+- **Zarządzania zawartością** sprawia, że przycisk **zarządzania zawartością** kartę aktywne.
 
--   Mały trójkąt po prawej stronie otwiera listy kart, w tym temacie kart i **zarządzania zawartością** kartę. Można wybrać nazwę karty dokonanie aktywnej karty.
+- Mały trójkąt po prawej stronie otwiera listy kart, w tym temacie kart i **zarządzania zawartością** kartę. Można wybrać nazwę karty dokonanie aktywnej karty.
 
 ## <a name="see-also"></a>Zobacz także
 

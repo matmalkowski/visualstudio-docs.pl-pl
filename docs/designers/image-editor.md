@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2981a94ec34d9631b8a125407e709b8400eaa0dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747313"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117852"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
@@ -46,7 +46,7 @@ W tej sekcji opisano, jak dodać obraz do projektu programu Visual Studio i skon
 
 ### <a name="to-add-an-image-to-your-project"></a>Aby dodać obraz do projektu
 
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz dodać obraz do, a następnie wybierz pozycję **Dodaj**, **nowy element**.
+1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz dodać obraz do, a następnie wybierz pozycję **Dodaj** > **nowy element**.
 
 2.  W **Dodaj nowy element** okna dialogowego, w obszarze **zainstalowana**, wybierz pozycję **grafiki**, a następnie wybierz odpowiedni format pliku obrazu. Aby uzyskać informacje o wybieraniu format pliku, w zależności od wymagań zobacz sekcję poniżej.
 
@@ -127,7 +127,7 @@ Edytor obrazów paski narzędzi zawierają polecenia pomagające w pracy z obraz
 |**Pędzel**|Używa zaznaczenie aktywnego koloru do rysowania pociągnięcie wygładzanie. Można ustawić kolor i grubość pociągnięć w **właściwości** okna.|
 |**Aerografu**|Używa zaznaczenie aktywnego koloru do rysowania pociągnięcie wygładzanie miesza wraz z obrazu, który staje się bardziej nasycenia w funkcji czasu. Można ustawić kolor i grubość pociągnięć w **właściwości** okna.|
 |**Kroplomierz**|Ustawia kolor wybranego piksela zaznaczenie aktywnego koloru.|
-|**wypełnienia**|Używa wybór kolorów active w celu wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienia wraz z każdego piksela podłączonego do niego pikseli tego samego koloru, którym jest ten sam kolor sam. W przypadku zastosowania wypełnienie wewnątrz aktywnego zaznaczenia dotyczy region jest ograniczane przez zaznaczenie.<br /><br /> Domyślnie zaznaczenie aktywnego koloru mieszania wraz z odpowiednim region obrazu zgodnie z jego składnika alfa. Aby użyć opcji aktywnego koloru zastąpić dotyczy regionu, naciśnij i przytrzymaj klawisz Shift, korzystając z narzędzia.|
+|**Wypełnienia**|Używa wybór kolorów active w celu wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienia wraz z każdego piksela podłączonego do niego pikseli tego samego koloru, którym jest ten sam kolor sam. W przypadku zastosowania wypełnienie wewnątrz aktywnego zaznaczenia dotyczy region jest ograniczane przez zaznaczenie.<br /><br /> Domyślnie zaznaczenie aktywnego koloru mieszania wraz z odpowiednim region obrazu zgodnie z jego składnika alfa. Aby użyć opcji aktywnego koloru zastąpić dotyczy regionu, naciśnij i przytrzymaj klawisz Shift, korzystając z narzędzia.|
 |**Gumka**|Ustawia pikseli całkowicie przezroczysty kolor, jeśli obraz obsługuje kanał alfa. W przeciwnym razie Ustawia kolor tła active pikseli.|
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i szerokość konturu w **właściwości** okna.<br /><br /> Aby narysować podstawowy, który ma taki sam, szerokość i wysokość, naciśnij i przytrzymaj klawisz Shift podczas rysowania.|
 |**Tekst**|Używa kolor pierwszego planu zaznaczenia do rysowania tekstu. Kolor tła jest określana przez opcję Kolor tła. Przezroczyste tło wartość alfa zaznaczenia kolor tła musi być 0. Gdy obszaru tekstu jest aktywny, można określić, czy tekst jest rysowany z pociągnięcie wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Italics**, lub **podkreślona**— w **właściwości** okna. Zawartość i wyglądu tekstu jest zakończona po obszaru tekstu nie są już aktywne.|
@@ -145,7 +145,7 @@ Niektóre formaty obrazów — na przykład DirectDraw Surface (.dds) — obsłu
 |Narzędzie|Opis|
 |----------|-----------------|
 |**Ołówka**, **pędzla**, **aerografu**, **wiersza**, **prostokąt**, **prostokąt zaokrąglony** , **Elipsy**, **tekstu**|Aby dopasować wybór aktywnego koloru wraz z obrazu, w **właściwości** okna, rozwiń węzeł **kanałów** grupa właściwości i zestaw **rysowania** wyboru na  **Alpha** kanału, a następnie narysuj normalnie.<br /><br /> Rysowanie za pomocą wyboru aktywnego koloru i pozostaw wartość alfa obrazu w miejscu, wyczyść **rysowania** wyboru z **alfa** kanału, a następnie narysuj normalnie.|
-|**wypełnienia**|Aby dopasować wybór aktywnego koloru wraz z obrazu, wystarczy wybrać obszar, aby wypełnić.<br /><br /> Aby użyć opcji aktywnego koloru — łącznie z wartością kanału alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz Shift, a następnie wybierz obszar, aby wypełnić.|
+|**Wypełnienia**|Aby dopasować wybór aktywnego koloru wraz z obrazu, wystarczy wybrać obszar, aby wypełnić.<br /><br /> Aby użyć opcji aktywnego koloru — łącznie z wartością kanału alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz Shift, a następnie wybierz obszar, aby wypełnić.|
 
 ### <a name="image-properties"></a>Właściwości obrazu
 
@@ -156,7 +156,7 @@ W poniższej tabeli opisano właściwości obrazu.
 |Właściwość|Opis|
 |--------------|-----------------|
 |Szerokość|Szerokość obrazu.|
-|Wysokość|Wysokość obrazu.|
+|wysokość|Wysokość obrazu.|
 |Bity na piksel|Liczba bitów, które reprezentują każdego piksela. Wartość tej właściwości jest zależna od **Format koloru** obrazu.|
 |Zaznaczenie przezroczyste|**Wartość true,** mieszania warstwy wybór wraz z głównym obrazu, na podstawie wartości alfa warstwy wybór; w przeciwnym razie **False**. Ten element jest dostępny tylko dla obrazów, które obsługują alfa.|
 |Format|Format koloru z obrazu. Można określić różne formaty kolor, w zależności od format obrazu. Format koloru definiuje liczbę i rodzaj kanałów, które są uwzględniane w obrazie i rozmiaru i kodowania dla różnych kanałów.|

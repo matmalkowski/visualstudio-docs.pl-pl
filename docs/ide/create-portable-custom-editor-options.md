@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446504"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117566"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Utwórz Edytor przenośny, niestandardowe ustawienia z EditorConfig
 
@@ -58,7 +58,7 @@ Usunięcie pliku EditorConfig z projektu lub ścieżka bazowa kodu, musisz zamkn
 
 1. Otwórz projekt lub rozwiązanie programu Visual Studio. Wybierz projekt lub rozwiązanie węzła, w zależności od tego, czy Twoje *.editorconfig* ustawienia dotyczą wszystkich projektów w rozwiązaniu lub jeden z nich. Można również wybrać folder w projekcie lub rozwiązaniu, aby dodać *.editorconfig* pliku.
 
-1. Na pasku menu wybierz **projektu** > **Dodaj nowy element...** , lub naciśnij klawisz **Ctrl**+**Shift**+**A**.
+1. Na pasku menu wybierz **projektu** > **Dodaj nowy element**, lub naciśnij klawisz **Ctrl**+**Shift** + **A**.
 
    **Dodaj nowy element** zostanie otwarte okno dialogowe.
 

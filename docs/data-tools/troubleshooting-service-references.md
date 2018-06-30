@@ -18,14 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c244489f21dec3783aed9d970b46805d204a1104
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925058"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118086"
 ---
-# <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołania do usług
+# <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
 Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pracy z systemem Windows Communication Foundation (WCF) lub odwołań usługi danych WCF w programie Visual Studio.
 
@@ -35,7 +35,7 @@ Po powrocie `DataSet` lub `DataTable` z usługą, może zostać wyświetlony wyj
 
 Aby naprawić ten błąd:
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik app.config, aby go otworzyć.
+1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie *app.config* plik, aby go otworzyć.
 
 2.  Zlokalizuj `MaxReceivedMessageSize` właściwości i zmień ją na większej wartości.
 
@@ -58,7 +58,7 @@ Aby naprawić ten błąd:
 2.  Na **opcje uruchamiania** kartę, wyczyść **uwierzytelniania NTLM** pole wyboru.
 
     > [!NOTE]
-    > Należy wyłączyć uwierzytelnianie NTLM tylko dla witryn sieci Web, zawierające wyłącznie usługi WCF. Zabezpieczenia usług WCF jest zarządzana za pomocą konfiguracji w pliku web.config. Dzięki temu można niepotrzebnych uwierzytelniania NTLM.
+    > Należy wyłączyć uwierzytelnianie NTLM tylko dla witryn sieci Web, zawierające wyłącznie usługi WCF. Zabezpieczenia usług WCF jest zarządzany przy użyciu konfiguracji w *web.config* pliku. Dzięki temu można niepotrzebnych uwierzytelniania NTLM.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Poziom dostępu dla klas wygenerowane ustawienie nie ma wpływu
 
@@ -104,6 +104,6 @@ Aby naprawić ten błąd, należy wyłączyć źródeł danych RSS:
 
 4.  Kliknij przycisk **OK** zamknąć **Opcje internetowe** okno dialogowe.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Usługi Windows Communication Foundation oraz usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

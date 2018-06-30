@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 08a2d3a0f8d629e1110316c3cf18c348fa31f445
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752362"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117046"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 Jest jedną z najbardziej typowych scenariuszy w aplikacjach do wyświetlania danych formularza w aplikacji systemu Windows, edycję danych i wysyłać zaktualizowane dane w bazie danych. W tym przewodniku tworzy formularz, który wyświetla dane z powiązanych tabel i przedstawia sposób edytowania rekordów i zapisać zmiany w bazie danych. W tym przykładzie użyto `Customers` i `Orders` tabele w bazie danych Northwind.
@@ -54,7 +54,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:
 
-    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .
+    1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowe zapytanie**.
 
        Zostanie otwarte okno edytora zapytań.
 
@@ -69,7 +69,7 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 
 #### <a name="to-create-the-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji formularzy systemu Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .
+1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy** > **projektu**.
 
 2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, następnie wybierz **Windows Desktop**.
 

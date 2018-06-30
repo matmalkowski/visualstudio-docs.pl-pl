@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954095"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117696"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych plików w sieci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Zazwyczaj pisania szablonów, aby różnią kodu, które generują one zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje na temat wymagań aplikacji.
@@ -42,11 +42,11 @@ Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych
 
 1.  Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu lub Otwórz istniejący.
 
-     Na przykład na **pliku** menu, wybierz **nowy**, **projektu**.
+     Na przykład na **pliku** menu, wybierz **nowy** > **projektu**.
 
 2.  Dodawanie pliku szablonu tekstowego do projektu i nadaj mu nazwę, która ma rozszerzenie **.TT —**.
 
-     Aby to zrobić, w **Eksploratora rozwiązań**, w menu skrótów projektu, wybierz **Dodaj**, **nowy element**. W **Dodaj nowy element** wybierz okno dialogowe **szablonu tekstowego** w środkowym okienku.
+     Aby to zrobić, w **Eksploratora rozwiązań**, w menu skrótów projektu, wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** wybierz okno dialogowe **szablonu tekstowego** w środkowym okienku.
 
      Zwróć uwagę, że **narzędzie niestandardowe** właściwość pliku jest **texttemplatingfilegenerator —**.
 

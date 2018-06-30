@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fb7f8445cf43209ffed47140b1d8d204c68eaa4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120302"
 ---
-# <a name="walkthrough-deploying-a-project-task-list-definition"></a>Wskazówki: Wdrażanie definicji listy zadań projektu
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Wskazówki: Wdrażanie definicji listy zadań projektu
 
 Ten przewodnik przedstawia sposób użycia [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] do tworzenia, dostosowywania, debugowania i wdrażania listy programu SharePoint, aby śledzić zadania projektu.
 
@@ -31,11 +32,11 @@ Ten przewodnik przedstawia sposób użycia [!INCLUDE[vs_dev11_long](../sharepoin
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
 - Visual Studio 2017 lub wersji programu Visual Studio cyklu życia zarządzania aplikacji (ALM).
 
-## <a name="CreatingListDef"></a> Tworzenie listy programu SharePoint
+## <a name="create-a-sharepoint-list"></a>Utwórz listę programu SharePoint
 
 Utwórz projekt listy programu SharePoint i skojarz definicji listy zadań.
 
@@ -47,7 +48,7 @@ Utwórz projekt listy programu SharePoint i skojarz definicji listy zadań.
 
 3. Określ lokalnej witryny programu SharePoint, którego używasz do debugowania, wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisku.
 
-4. Otwórz menu skrótów projektu, a następnie wybierz pozycję **Dodaj**, **nowy element**.
+4. Otwórz menu skrótów projektu, a następnie wybierz pozycję **Dodaj** > **nowy element**.
 
 5. W **szablony** okienku wybierz **listy** szablonu, a następnie wybierz pozycję **Dodaj** przycisku.
 
@@ -59,7 +60,7 @@ Utwórz projekt listy programu SharePoint i skojarz definicji listy zadań.
 
      Lista funkcji i pakietu są wyświetlane w **Eksploratora rozwiązań**.
 
-## <a name="AddEventRcvr"></a> Dodawanie odbiorcy zdarzeń
+## <a name="add-an-event-receiver"></a>Dodaj odbiorcy zdarzeń
 
 Na liście zadań można dodać obsługiwanego odbiornika, który automatycznie ustawia ukończenia daty i opis zadania. Poniższa procedura dodaje obsługi zdarzenia prostego do wystąpienia listy jako odbiornik zdarzeń.
 
@@ -82,7 +83,7 @@ Na liście zadań można dodać obsługiwanego odbiornika, który automatycznie 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
-## <a name="CustomizeFeature"></a> Dostosowywanie funkcji listy zadań projektu
+## <a name="customize-the-project-task-list-feature"></a>Dostosowywanie funkcji listy zadań projektu
 
 Po utworzeniu rozwiązania SharePoint Visual Studio automatycznie tworzy funkcje domyślne elementy projektu. Ustawienia listy zadań projektu witryny programu SharePoint można dostosować przy użyciu narzędzia Projektant funkcji.
 
@@ -96,7 +97,7 @@ Po utworzeniu rozwiązania SharePoint Visual Studio automatycznie tworzy funkcje
 
 5. W **właściwości** okna, wprowadź **1.0.0.0** jako wartość **wersji** właściwości.
 
-## <a name="CustomizePackage"></a> Dostosowywanie pakiet listy zadań projektu
+## <a name="customize-the-project-task-list-package"></a>Dostosowywanie pakietu listy zadań projektu
 
 Podczas tworzenia projektu programu SharePoint, Visual Studio automatycznie dodaje funkcje, które zawierają domyślne elementy projektu do pakietu. Ustawienia listy zadań projektu witryny programu SharePoint można dostosować przy użyciu projektanta pakietów.
 
@@ -106,11 +107,11 @@ Podczas tworzenia projektu programu SharePoint, Visual Studio automatycznie doda
 
 3. Wybierz **resetowania serwera sieci Web** pole wyboru.
 
-## <a name="BuildTest"></a> Tworzenie i testowanie listy zadań projektu
+## <a name="build-and-test-the-project-task-list"></a>Tworzenie i testowanie listy zadań projektu
 
 Po uruchomieniu projektu otwiera witrynę programu SharePoint. Jednak należy ręcznie przejdź do lokalizacji listy zadań.
 
-1. Wybierz klawisz F5, aby skompilować i wdrożyć listy zadań projektu.
+1. Wybierz **F5** klucz do tworzenia i wdrażania listy zadań projektu.
 
      Otwieranie witryny programu SharePoint.
 
@@ -134,19 +135,19 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Jednak należy r�
 
      Zostanie wyświetlony widok szczegółowy zadania i zawiera opis "Jest zadanie krytyczne".
 
-## <a name="Deploy"></a> Wdrażanie listy zadań projektu
+## <a name="deploy-the-project-task-list"></a>Wdrażanie listy zadań projektu
 
 Po utworzeniu i przetestować projekt listy zadań można wdrożyć na *systemu lokalnego* lub *systemu zdalnego*. System lokalny jest tym samym komputerze, na którym utworzono rozwiązania, system zdalny jest innym komputerze.
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Aby wdrożyć system lokalny listy zadań projektu
 
-Na pasku menu programu Visual Studio wybierz **kompilacji**, **wdrożyć rozwiązanie**.
+Na pasku menu programu Visual Studio wybierz **kompilacji** > **wdrożyć rozwiązanie**.
 
-Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie istniejące wersje rozwiązania kopiuje plik pakietu (wsp) rozwiązania programu SharePoint i następnie aktywuje jego funkcje. Można teraz używać rozwiązania w programie SharePoint. Aby uzyskać więcej informacji na temat kroków konfiguracji wdrażania, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie wersje istniejącego rozwiązania, kopiuje pakietu rozwiązania (*WSP*) pliku do programu SharePoint, a następnie aktywuje jego funkcje. Można teraz używać rozwiązania w programie SharePoint. Aby uzyskać więcej informacji na temat kroków konfiguracji wdrażania, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Aby wdrożyć projekt listy zadań do systemu zdalnego
 
-1. Na pasku menu programu Visual Studio wybierz **kompilacji**, **publikowania**.
+1. Na pasku menu programu Visual Studio wybierz **kompilacji** > **publikowania**.
 
 2. W **publikowania** oknie dialogowym wybierz **publikowanie w systemie plików** przycisk opcji.
 
@@ -154,9 +155,9 @@ Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie istniej�
 
 3. Wybierz **publikowania** przycisku.
 
-     Plik wsp jest tworzony dla rozwiązania.
+     A *WSP* plik jest tworzony dla rozwiązania.
 
-4. Skopiuj plik wsp do systemu zdalnego programu SharePoint.
+4. Kopiuj *WSP* pliku do systemu zdalnego programu SharePoint.
 
 5. Użyj programu PowerShell `Add-SPUserSolution` polecenie, aby zainstalować pakiet w zdalnej instalacji programu SharePoint. (Dla rozwiązania farmy, należy użyć `Add-SPSolution` polecenia.)
 
@@ -172,12 +173,11 @@ Visual Studio odtwarzania puli aplikacji usług IIS, wycofuje wszystkie istniej�
 
 Można poznać więcej informacji o sposobie dostosowywania i wdrażania rozwiązań programu SharePoint z poniższych tematów:
 
-- [Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Program Windows PowerShell dla programu SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 
-## <a name="see-also"></a>Zobacz też
-
-[Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>Zobacz także
+[Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

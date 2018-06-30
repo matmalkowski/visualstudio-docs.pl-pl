@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 739368b8611d4755138466b8de37c16e5552fe11
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751627"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120299"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać Boost.Test dla języka C++ w programie Visual Studio
 
@@ -48,20 +48,20 @@ Wymaga Boost.Test [zwiększanie wyniku](http://www.boost.org/)! Jeśli nie masz 
 
 1. Nowy plik zawiera przykładowe metody testowej. Skompilowanie projektu Aby włączyć **Eksploratora testów** metody odnajdywania.
 
-Szablon elementu używa wariant jeden nagłówek Boost.Test, ale można modyfikować #include ścieżkę do użycia autonomicznego variant biblioteki. Aby uzyskać więcej informacji, zobacz [Dodaj zawiera dyrektywy, które](#add_include_directives).
+Szablon elementu używa wariant jeden nagłówek Boost.Test, ale można modyfikować #include ścieżkę do użycia autonomicznego variant biblioteki. Aby uzyskać więcej informacji, zobacz [Dodaj zawiera dyrektywy, które](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Tworzenie projektu testu (Visual Studio 2017 wersji 15,5 cala)
 
 W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowane szablony projektów lub elementów są dostępne dla Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli do przechowywania testów.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt...** .
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
 1. W okienku po lewej stronie wybierz **Visual C++** > **Windows Desktop**, a następnie wybierz pozycję **aplikacji konsoli systemu Windows** szablonu.
 
 1. Nadaj nazwę projektu i wybierz polecenie **OK**.
 1. Usuń `main` funkcji w pliku .cpp.
 
-1. Jeśli używasz wersji nagłówka jednym lub dynamicznej biblioteki Boost.Test, przejdź do [Dodaj zawiera dyrektywy, które](#add_include_directives). Jeśli używasz wersji biblioteki statycznej, następnie należy wykonać pewne dodatkowe czynności konfiguracyjne:
+1. Jeśli używasz wersji nagłówka jednym lub dynamicznej biblioteki Boost.Test, przejdź do [Dodaj zawiera dyrektywy, które](#add-include-directives). Jeśli używasz wersji biblioteki statycznej, następnie należy wykonać pewne dodatkowe czynności konfiguracyjne:
 
    a. Aby edytować plik projektu, najpierw zwolnić ją. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Zwolnij projekt**. Następnie kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Edytuj < nazwa\>.vcxproj**.
 
