@@ -826,3 +826,5 @@
   items:
     - name: Co nowego w debugerze programu Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Debugowanie dla całkowicie początkujących
+      href: debugging-absolute-beginners.md

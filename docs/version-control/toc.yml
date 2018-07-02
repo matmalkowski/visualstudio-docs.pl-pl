@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Resources
   items:
-    - name: Poznaj usługę Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Co to jest usługa Git
+      href: /azure/devops/git/what-is-git

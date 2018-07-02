@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Importowanie ustawień publikowania i wdrażanie w usługach IIS
           href: tutorial-import-publish-settings-iis.md
+        - name: Wdrażanie w usługach IIS przy użyciu rozszerzenia Web Deploy
+          href: deploy-iis-with-web-deploy.md
         - name: Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: Wdrażanie platformy ASP.NET w usługach IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: Publikowanie w usłudze Kubernetes przy użyciu narzędzi Kubernetes programu Visual Studio
+          href: tutorial-kubernetes-tools.md
     - name: Natywne
       items:
         - name: Wdrażanie w języku Visual C++...

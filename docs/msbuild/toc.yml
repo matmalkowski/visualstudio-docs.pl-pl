@@ -84,6 +84,8 @@
               items:
                 - name: 'Wskazówki: tworzenie zadania wbudowanego'
                   href: walkthrough-creating-an-inline-task.md
+            - name: Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Porównanie właściwości i elementów
           href: comparing-properties-and-items.md
         - name: Znaki specjalne w programie MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete — Zadanie
               href: delete-task.md
+            - name: DownloadFile — Zadanie
+              href: downloadfile-task.md
             - name: Error — Zadanie
               href: error-task.md
             - name: Exec — Zadanie
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly — Zadanie
               href: unregisterassembly-task.md
+            - name: Unzip — Zadanie
+              href: unzip-task.md
             - name: UpdateManifest — Zadanie
               href: updatemanifest-task.md
             - name: Vbc — Zadanie
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation — Zadanie
               href: xsltransformation-task.md
+            - name: ZipDirectory — Zadanie
+              href: zipdirectory-task.md
         - name: Warunki MSBuild
           href: msbuild-conditions.md
         - name: Konstrukcje warunkowe MSBuild
