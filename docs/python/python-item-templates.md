@@ -13,9 +13,10 @@ ms.workload:
 - data-science
 ms.openlocfilehash: 9811905e842eeb62399ef3b88558ee0286b05c84
 ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032813"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
