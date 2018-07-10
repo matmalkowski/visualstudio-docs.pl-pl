@@ -13,7 +13,7 @@ ms.workload:
 - data-science
 ms.openlocfilehash: 571cbdac0a311ab1cd65b957b0081c26c7f96bd9
 ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/08/2018
 ms.locfileid: "34851867"
