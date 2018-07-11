@@ -15,38 +15,38 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: ddc0fcb1983d6cfa7a3fe9e1fffff7070c3caf3e
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "36302861"
 ---
 # <a name="talk-to-us"></a>Porozmawiaj z nami
 
-Interesuje nas pomysłów dla poprawy naszych produktów i dokumentacji. Nie zawsze możemy osobiście, ale firma Microsoft będzie upewnij się, że Twoja opinia pobiera do prawej osobie lub zespołowi.
+Jesteśmy zainteresowani pomysłami dotyczącymi poprawy naszych produktów i dokumentację. Nie zawsze możemy osobiście, ale My sprawiamy, żeby się upewnić, że Twoja opinia pobiera do odpowiednich osób lub zespołów.
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Chcę zgłosić problem z programem Visual Studio
 
-Jeśli używasz do problemów przy użyciu programu Visual Studio, na przykład awarii (Crash), wydajność pogarsza nieoczekiwanego zachowania i tak dalej, zgłoś problem do nas przy użyciu **zgłosić Problem** narzędzia. Po prostu kliknij ikonę opinii obok pozycji **Szybkie uruchamianie**, lub wybierz **pomocy** > **Prześlij opinię** > **zgłosić Problem** na pasku menu. Visual Studio zgłasza problemu na [społeczność deweloperów](https://developercommunity.visualstudio.com). Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programu Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Jeśli używasz do problemów za pomocą programu Visual Studio, takich jak awarie, wolna wydajności, nieoczekiwane zachowanie i tak dalej, zgłoś do nas przy użyciu **Zgłoś Problem** narzędzia. Po prostu kliknij obok ikony opinii **Szybkie uruchamianie**, lub wybierz **pomocy** > **Wyślij opinię** > **Zgłoś Problem** z paska menu. Program Visual Studio zgłasza problem, aby [społeczności deweloperów](https://developercommunity.visualstudio.com). Aby uzyskać więcej informacji, zobacz [jak zgłosić problem w programie Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chcę sugestię o funkcje programu Visual Studio
+## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Czy chcesz sugestię o funkcje programu Visual Studio
 
-Czy jest coś, co możemy ulepszyć, prosimy o kontakt! Wybierz **pomocy** > **Prześlij opinię** > **Podaj sugestię** Sugeruj funkcji lub zmień program Visual Studio team. Automatycznie zostaną opublikowane swoją sugestię w [UserVoice](https://visualstudio.uservoice.com), gdy inne można up głos go.
+Jeśli jest coś, co możemy zrobić lepiej, Daj nam znać! Wybierz **pomocy** > **Wyślij opinię** > **sugestię** zasugerować funkcję lub zmienić do zespołu usługi Visual Studio. Twoja sugestia zostanie automatycznie opublikowane w usłudze [UserVoice](https://visualstudio.uservoice.com), gdy inne mogą w górę — głos go.
 
 ### <a name="rate-this-product"></a>Oceń ten produkt
 
-Wersje wstępne programu Visual Studio ma **Oceń ten produkt** element menu, który pozwala na wysyłanie informacji zwrotnych jakości kompilacji są uruchomione. Nie będzie to widoczna w wydanej wersji produktu.
+Wersje wstępne programu Visual Studio mają **Oceń ten produkt** elementu menu, który umożliwia użytkownikowi na przesyłanie opinii na temat jakości kompilacji, są uruchomione. Nie widzisz to w wydanej wersji produktu.
 
-## <a name="i-want-to-contact-microsoft-support"></a>Chcę skontaktuj się z Microsoft Support
+## <a name="i-want-to-contact-microsoft-support"></a>Chcę, aby skontaktować się z Microsoft Support
 
 Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [Cykl wsparcia technicznego i obsługi](/visualstudio/productinfo/vs-servicing-vs) strony.
 
-Dla innych produktów firmy Microsoft i usług, zobacz [pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
+Dla innych produktów i usług, zobacz [pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
 
 > [!NOTE]
-> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Lista kontaktów regionalnych, zobacz [na całym świecie witryn firmy Microsoft](http://www.microsoft.com/worldwide/).
+> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [witryny Microsoft na świecie](http://www.microsoft.com/worldwide/).
 
-W przypadku większych organizacji, które wymagają obsługi zarządzanych bezpośrednio od firmy Microsoft kontrakty są dostępne za pośrednictwem różnych ofert obsługi wersji Enterprise. Aby uzyskać więcej informacji, zobacz [rozwiązań pomocy technicznej Microsoft Enterprise](http://go.microsoft.com/fwlink/?LinkId=258223).
+W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft kontrakty są dostępne za pośrednictwem różnych ofert pomocy technicznej Enterprise. Aby uzyskać więcej informacji, zobacz [rozwiązań pomocy technicznej Microsoft Enterprise](http://go.microsoft.com/fwlink/?LinkId=258223).
 
 Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, producent sprzętu zapewnia pomoc i obsługę techniczną dla tego oprogramowania. Skontaktuj się bezpośrednio z producentem, aby uzyskać wsparcie.
 
@@ -54,14 +54,14 @@ Usługi pomocy technicznej firmy Microsoft podlegają aktualnej cenie i warunkom
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Chcę angażowanie się w społeczność deweloperów
 
-Jeśli chcesz udostępnić pytania i odpowiedzi z innymi deweloperami, możesz użyć [Visual Studio Developer Community](https://developercommunity.visualstudio.com) lokacji, [fora MSDN](http://social.msdn.microsoft.com/Forums/home), lub [StackOverflow](http://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępnianie własnych przykłady na [przykłady kodu dewelopera](http://code.msdn.microsoft.com/) lokacji.
+Jeśli chcesz udostępnić swoje pytania i odpowiedzi z innymi deweloperami, możesz użyć [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com) lokacji [fora MSDN](http://social.msdn.microsoft.com/Forums/home), lub [StackOverflow](http://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępniać własne przykłady w [próbki kodu deweloperskiego](http://code.msdn.microsoft.com/) lokacji.
 
-## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Chcę, aby pomóc udoskonalić dokumentację programu Visual Studio
+## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Czy chcesz pomóc udoskonalić dokumentację programu Visual Studio
 
-Użyj **był pomocny tę stronę?** przycisku opinii u dołu strony. Ten przycisk, można znaleźć na wszystkich stronach dokumentacji. Alternatywnie możesz dodać opinię do dowolnej strony Visual Studio na [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) za pomocą **Zaloguj się przekazać opinię o dokumentacji** przycisk również w dolnej części strony.
+Użyj **ta strona była pomocna?** przycisku wysyłania opinii na dole strony. Ten przycisk, można znaleźć na naszej strony dokumentacji. Alternatywnie, możesz dodać opinię do dowolnej strony w programie Visual Studio na [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) przy użyciu **Zaloguj się przekazać opinię dotyczącą dokumentacji** przycisku, a także w dolnej części strony.
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
 * [Społeczność deweloperów](https://developercommunity.visualstudio.com)
-* [Prywatność danych społeczność deweloperów](developer-community-privacy.md)
+* [Prywatność danych społeczności deweloperów](developer-community-privacy.md)

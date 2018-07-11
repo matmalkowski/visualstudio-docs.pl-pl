@@ -1,5 +1,5 @@
 ---
-title: Edycja zakodowanych testów interfejsu użytkownika
+title: Edytowanie kodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,182 +13,182 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692372"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35677293"
 ---
-# <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
+# <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
-Edytor kodowanego testu interfejsu użytkownika pozwala łatwo zmodyfikować kodowanych testów interfejsu użytkownika. Za pomocą edytora testu interfejsu użytkownika na stałe, można znaleźć, Wyświetl i Edytuj właściwości metody testowe i działania interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika do wyświetlania i edytowania ich kontroli.
+Edytor kodowanego testu interfejsu użytkownika umożliwia łatwe modyfikowanie kodowanych testów interfejsu użytkownika. Za pomocą edytora testu interfejsu użytkownika, możesz zlokalizować, wyświetlić i edytować właściwości swoje metody testowe i działania interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika, możesz wyświetlać i edytować ich odpowiednie metody kontroli.
 
 **Wymagania**
 
 - Visual Studio Enterprise
-- Kodowane składnika testu interfejsu użytkownika
+- Kodowane składnik testu interfejsu użytkownika
 
 ## <a name="features-of-the-coded-ui-test-editor"></a>Funkcje z edytora testu kodowanego interfejsu użytkownika
 
-Za pomocą edytora testu interfejsu użytkownika na stałe jest szybsza i bardziej wydajna niż Edycja kodu za pomocą edytora kodu metody kodowanego testu interfejsu użytkownika. Z kodowanego interfejsu użytkownika edytora testów, aby szybko znaleźć i zmodyfikować wartości właściwości skojarzonych z akcji interfejsu użytkownika i kontrolek można użyć narzędzi i menu skrótów. Na przykład umożliwia narzędzi kodowanego interfejsu użytkownika testu redaktora wykonaj następujące polecenia:
+Za pomocą edytora testu interfejsu użytkownika jest szybsza i bardziej efektywne niż edytowanie kodu w metodach testów kodowanego interfejsu użytkownika za pomocą edytora kodu. Za pomocą interfejsu użytkownika edytora kodowanego testu, można użyć narzędzi i menu skrótów szybko zlokalizować i modyfikować wartości właściwości skojarzone z działania interfejsu użytkownika i kontrolek. Na przykład służy interfejs użytkownika edytora kodowanego testu na pasku narzędzi do wykonywania następujących poleceń:
 
-![Edytor testów interfejsu użytkownika](../test/media/uitesteditor.png)
+![Edytor testu interfejsu użytkownika](../test/media/uitesteditor.png)
 
-1. [Znajdź](../ide/finding-and-replacing-text.md) ułatwia wykrywanie, akcji interfejsu użytkownika i kontrolek.
+1. [Znajdź](../ide/finding-and-replacing-text.md) ułatwia wykrywanie, akcje interfejsu użytkownika i kontrolek.
 
-2. **Usuń** usuwa niepożądanych akcji UI.
+2. **Usuń** spowoduje usunięcie niepożądanych akcji UI.
 
-3. **Zmień nazwę** zmienia nazwy metody testowe i kontrolek.
+3. **Zmień nazwę** zmiany nazwy dla metody testowe i formanty.
 
 4. **Właściwości** otwiera **właściwości** okna dla wybranego elementu.
 
-5. **Podziel do nowej metody** umożliwia modularyzacji akcji interfejsu użytkownika.
+5. **Podziel do nowej metody** umożliwia modularyzacji działania interfejsu użytkownika.
 
-6. **Przenieś kod** dodaje niestandardowy kod do metody testu.
+6. **Przenieś kod** dodaje niestandardowy kod do metod badania.
 
-7. **Wstawianie opóźnienia przed** Dodaje pauzę przed akcją UI wyrażona w milisekundach.
+7. **Wstaw opóźnienie przed** dodaje Wstrzymaj przed akcją UI wyrażona w milisekundach.
 
-8. **Zlokalizuj formant interfejsu użytkownika** identyfikuje lokalizację kontroli w interfejsie użytkownika aplikacji w ramach testu.
+8. **Zlokalizuj formant interfejsu użytkownika** identyfikuje położenie formantu w Interfejsie użytkownika aplikacji w ramach testu.
 
-9. **Znajdź wszystkie** sprawdzisz pomaga kontrolować właściwości i znaczących zmian do formantów w aplikacji.
+9. **Zlokalizuj wszystkie** upewnieniu się, kontrolować właściwość i znaczące zmiany i kontrolki w aplikacji.
 
-Po otwarciu *UIMap.uitest* pliku powiązane z kodowanego testu interfejsu użytkownika, kodowanego testu interfejsu użytkownika, zostanie otwarty w programie **edytorze testu kodowanego interfejsu użytkownika**. W poniższych procedurach opisano, jak można zlokalizować i Edytuj metody i właściwości działania interfejsu użytkownika i kontrolek przy użyciu paska narzędzi edytora i menu skrótów.
+Po otwarciu *UIMap.uitest* pliku przynależność użytkownika kodowany test interfejsu użytkownika kodowany test interfejsu użytkownika, zostanie otwarty w programie **edytora testu interfejsu użytkownika**. W poniższych procedurach opisano, jak można zlokalizować i edytować swoje metody testowe i właściwości działania interfejsu użytkownika i kontrolek przy użyciu edytora narzędzi i menu skrótów.
 
 ## <a name="open-a-coded-ui-test"></a>Otwórz kodowanego testu interfejsu użytkownika
 
-Można wyświetlać i edytować programu Visual C# i opartych na języku Visual Basic kodowanego testu interfejsu użytkownika przy użyciu **edytorze testu kodowanego interfejsu użytkownika**.
+Można wyświetlać i edytować swoje Visual C# i Visual Basic na podstawie kodowanego testu interfejsu użytkownika przy użyciu **edytora testu interfejsu użytkownika**.
 
-![Menu kontekstowe edycji z interfejsu użytkownika Konstruktor kodowanego testu](../test/media/editcodeduitest.png)
+![Menu kontekstowe edycji z kodowanego testu interfejsu użytkownika](../test/media/editcodeduitest.png)
 
-W **Eksploratora rozwiązań**, otwórz menu skrótów *UIMap.uitest* i wybierz polecenie **Otwórz**. Kodowanego testu interfejsu użytkownika jest wyświetlany w **edytorze testu kodowanego interfejsu użytkownika**. Można teraz wyświetlić i edytować zarejestrowane metody, działania i kontroli w kodowanego testu interfejsu użytkownika.
+W **Eksploratora rozwiązań**, otwórz menu skrótów dla *UIMap.uitest* i wybierz polecenie **Otwórz**. Kodowany test interfejsu użytkownika jest wyświetlany w **edytora testu interfejsu użytkownika**. Można teraz wyświetlać i edytować, zarejestrowane metody, działania i odpowiednie metody kontroli w kodowanym teście interfejsu użytkownika.
 
 > [!TIP]
-> Po wybraniu akcji interfejsu użytkownika, który znajduje się w metodzie w **akcji UI** okienku odpowiedniego formantu zostanie wyróżniona. Można również zmodyfikować właściwości formantów lub akcji interfejsu użytkownika.
+> Po wybraniu akcji interfejsu użytkownika, który znajduje się w metodzie, w **akcji UI** zostanie wyróżniona w okienku odpowiedni formant. Można również zmodyfikować właściwości formantów lub działania interfejsu użytkownika.
 
-## <a name="modify-ui-action-and-control-properties"></a>Modyfikowanie właściwości akcji i formantu interfejsu użytkownika
+## <a name="modify-ui-action-and-control-properties"></a>Zmodyfikuj właściwości akcji i kontrolki interfejsu użytkownika
 
-Za pomocą edytora testu interfejsu użytkownika na stałe, możesz szybko znaleźć i wyświetlić wszystkich akcji interfejsu użytkownika na metody testu. Po wybraniu akcji interfejsu użytkownika w edytorze, automatycznie zostanie wyróżniona odpowiedniego formantu. Podobnie w przypadku wybrania formantu są wyróżnione skojarzonych z nimi działań interfejsu użytkownika. Po wybraniu akcji interfejsu użytkownika lub formantu, następnie jest łatwe w użyciu okna właściwości, aby zmodyfikować właściwości, które odpowiadają z nim.
+Za pomocą edytora testu interfejsu użytkownika, możesz szybko znaleźć i wyświetlić wszystkie akcje interfejsu użytkownika w swoich metod testowych. Po wybraniu akcji interfejsu użytkownika w edytorze odpowiedni formant automatycznie zostanie wyróżniona. Podobnie jeśli wybranie kontrolki skojarzonych z nimi działań interfejsu użytkownika są wyróżnione. Po wybraniu akcji interfejsu użytkownika lub kontrolki, następnie jest łatwe do zmodyfikowania właściwości, które odnoszą się do jego oknie dialogowym właściwości.
 
 ![Właściwości akcji UI](../test/media/codeduiedituiaction.png)
 
-Aby zmodyfikować właściwości akcji UI w **akcji IU** okienku rozwiń metody testowej, zawierający akcji interfejsu użytkownika, który chcesz edytować właściwości, wybierz akcji interfejsu użytkownika, a następnie zmodyfikuj właściwości, używając okna właściwości.
+Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.
 
-Na przykład, jeśli serwer jest niedostępny, i ma akcji interfejsu użytkownika skojarzonego z przeglądarki sieci Web które stany **przejdź do strony sieci Web "http://Contoso1/default.aspx"**, można zmienić adres URL, który `'http://Contoso2/default.aspx'`.
+Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "http://Contoso1/default.aspx"**, można zmienić adres URL do `'http://Contoso2/default.aspx'`.
 
 ![Właściwości formantów](../test/media/codeduitestcontrolprop.png)
 
-Modyfikowanie właściwości kontrolki odbywa się w taki sam sposób jak akcji interfejsu użytkownika. W **mapy formantów interfejsu użytkownika** okienku wybierz formant, który chcesz edytować i zmodyfikować jego właściwości, używając okna właściwości.
+Modyfikowanie właściwości kontrolki odbywa się w taki sam sposób jak działania interfejsu użytkownika. W **mapy formantów UI** okienku zaznacz formant, który chcesz edytować i modyfikowania jego właściwości w oknie właściwości.
 
-Na przykład deweloper może zmieniono **(ID)** właściwości formantu przycisku w kodzie źródłowym aplikacji testowane z "idSubmit" do "idLogin." Z **(ID)** właściwości została zmieniona w aplikacji, nie będzie można zlokalizować formantu przycisku kodowanego testu interfejsu użytkownika i zakończy się niepowodzeniem. W takim przypadku można otworzyć tester **właściwości wyszukiwania** kolekcji i zmień **identyfikator** właściwość, aby pasowała do nowej wartości używanego przez dewelopera w aplikacji. Tester można również zmienić **przyjazną nazwę** wartość właściwości z "Zatwierdź" do "Logowanie". Przez wprowadzenie tej zmiany, skojarzonej akcji interfejsu użytkownika w kodowanego interfejsu użytkownika edytora testu jest zaktualizowany z "Wybierz"Prześlij"button" do "Wybierz"Logowanie"przycisku."
+Na przykład, być może zmieniono Deweloper **(ID)** właściwości kontrolki przycisku w kodzie źródłowym aplikacji testowane z "idSubmit" do "idLogin." Za pomocą **(ID)** właściwości zmienione w aplikacji, nie będzie można znaleźć formantu przycisku kodowany test interfejsu użytkownika i zakończy się niepowodzeniem. W takim przypadku można otworzyć tester **wyszukującą** kolekcji i zmień **identyfikator** właściwość, aby pasowała do nowej wartości, używany przez dewelopera aplikacji. Tester może również ulec zmianie **przyjazną nazwę** wartości właściwości z "Prześlij" do "Logowanie". Przez wprowadzenie tej zmiany, skojarzonej akcji interfejsu użytkownika w interfejsie użytkownika edytora kodowanego testu został zaktualizowany z "Wybierz"Prześlij"button" do "Wybierz"Login"button."
 
-Po zakończeniu modyfikacji, zapisać zmiany w pliku UIMap.Designer, wybierając **zapisać** na pasku narzędzi programu Visual Studio.
+Po zakończeniu modyfikacji, Zapisz zmiany w pliku UIMap.Designer, wybierając **Zapisz** na pasku narzędzi programu Visual Studio.
 
 ### <a name="tips"></a>Porady
 
-- Jeśli **właściwości** okno nie jest wyświetlane, naciśnij i przytrzymaj klawisz **Alt** podczas używania **Enter**, lub naciśnij klawisz **F4**.
+- Jeśli **właściwości** nie zostanie wyświetlone okno, naciśnij i przytrzymaj klawisz **Alt** podczas, gdy użytkownik naciśnie klawisz **Enter**, lub naciśnij **F4**.
 
-- Aby wycofać wprowadzone zmiany właściwości, wybierz **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**.
+- Aby cofnąć wprowadzone zmiany właściwości, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**.
 
-- Można użyć **znaleźć** przycisk paska narzędzi edytora kodowanego testu interfejsu użytkownika, aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio. Następnie można kontroli Znajdź zlokalizować akcji interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład możesz znaleźć "kliknij przycisk"Logowanie"." Może to być przydatne w testach dużych. Nie można użyć funkcji Zamień narzędzia Znajdź i Zamień w kodowanego interfejsu użytkownika edytora testu. Aby uzyskać więcej informacji, zobacz Znajdź kontroli w [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).
+- Możesz użyć **znaleźć** przycisk na pasku narzędzi edytora kodowanego testu interfejsu użytkownika, aby otworzyć narzędzie Znajdź i Zamień w programie Visual Studio. Znajdź formant można następnie użyć do zlokalizowania działania interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład, możesz spróbować znaleźć "kliknij przycisk"Logowanie"." Może to być przydatne w testach dużych. Funkcje replace nie można używać narzędzi Znajdź i Zamień w interfejsie użytkownika edytora kodowanego testu. Aby uzyskać więcej informacji, zobacz Znajdź w kontrolce [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).
 
-- Czasami może być trudne do wizualizacji, gdy formanty znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać formant mapy formantów interfejsu użytkownika na liście i wyświetlić jej lokalizacji w testowanej aplikacji. Aby uzyskać więcej informacji, zobacz [lokalizowanie formantu interfejsu użytkownika w testowanej aplikacji](#CodedUITestEditor_LocateUIControl) znajduje się dalsze poniżej w tym artykule.
+- Czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. Aby uzyskać więcej informacji, zobacz [lokalizowanie kontrolki interfejsu użytkownika w aplikacji poddawanej testowi](#locate-a-ui-control-in-the-application-under-test) znajduje się dalej poniżej w tym artykule.
 
-- Może być konieczne rozwinąć formantu kontenera, który zawiera formant, który chcesz edytować. Aby uzyskać więcej informacji, zobacz [lokalizowanie formantu i jego elementy podrzędne](#CodedUITestEditor_LocateDecendants) znajduje się dalsze poniżej w tym artykule.
+- Może być konieczne rozwinąć kontrolki kontenera, który zawiera formant, który chcesz edytować. Aby uzyskać więcej informacji, zobacz [lokalizowanie formantu i jego elementy potomne](#locate-a-control-and-its-descendants) znajduje się dalej poniżej w tym artykule.
 
 ## <a name="delete-unwanted-ui-actions"></a>Usuwanie niepożądanych akcji UI
 
 Można łatwo usunąć niepożądanych akcji UI w kodowanego testu interfejsu użytkownika.
 
-![Usuń akcję interfejsu użytkownika](../test/media/codeduideleteuiaction.png)
+![Usuń działania interfejsu użytkownika](../test/media/codeduideleteuiaction.png)
 
-W **akcji IU** okienku rozwiń metody testowej, zawierający akcji interfejsu użytkownika, który chcesz usunąć. Otwórz menu skrótów, akcji interfejsu użytkownika i wybierz polecenie **usunąć**.
+W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz usunąć. Otwórz menu skrótów dla akcji interfejsu użytkownika, a następnie wybierz **Usuń**.
 
-## <a name="split-a-test-method-into-two-separate-methods"></a>Dzielenie metody testu do dwóch oddzielnych metod
+## <a name="split-a-test-method-into-two-separate-methods"></a>Podziel metody testowej na dwa odrębne metody
 
-Można podzielić metody testowej uściślić lub modularyzacji akcji interfejsu użytkownika. Na przykład test może mieć metody pojedynczy test z działania interfejsu użytkownika w dwóch formantów kontenera. Działania interfejsu użytkownika można lepiej modularized w dwóch metod, które odpowiadają jeden kontener.
+Możesz podzielić metodę testową, aby zawęzić lub modularyzację działania interfejsu użytkownika. Na przykład test może być metodą jeden test za pomocą akcji interfejsu użytkownika w dwóch kontrolek w kontenerze. Akcje interfejsu użytkownika musi być lepiej modularized za pomocą dwóch metod, które odnoszą się do jednego kontenera.
 
-![Dzielenie metody testowej](../test/media/codeduitestsplitmethod1.png)
+![Podziel metody testowej](../test/media/codeduitestsplitmethod1.png)
 
-![Dwie metody](../test/media/codeduitestsplitmethod2.png)
+![Dwie metody badania](../test/media/codeduitestsplitmethod2.png)
 
-W **akcji IU** okienku rozwiń metody testowej, który chcesz podzielić na dwa oddzielne metod i wybierz akcję interfejsu użytkownika, w którym ma nowej metody testowej, aby rozpocząć. Albo otwórz menu skrótów, akcji interfejsu użytkownika, a następnie wybierz pozycję **Podziel do nowej metody**, lub wybierz **Podziel do nowej metody** przycisk na pasku narzędzi edytora testu interfejsu użytkownika na stałe. Nowa metoda testu zostanie wyświetlony w okienku akcji interfejsu użytkownika. Zawiera ona akcji interfejsu użytkownika, począwszy od akcji określoną podziału.
+W **działania interfejsu użytkownika** okienku rozwiń metodę testową, która ma zostać podzielona na dwie odrębne metody i wybieranie akcji interfejsu użytkownika, którego nowej metody testowej, aby rozpocząć. Albo otwórz menu skrótów dla działania interfejsu użytkownika, a następnie wybierz **Podziel do nowej metody**, lub wybierz **Podziel do nowej metody** przycisk na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Nowa metoda testu jest wyświetlana w okienku Akcje interfejsu użytkownika. Zawiera ona działania interfejsu użytkownika, zaczynając od akcji, gdzie określone podziału.
 
-Po ukończeniu dzielenia metody, należy zapisać zmiany w pliku UIMap.Designer, wybierając **zapisać** na pasku narzędzi programu Visual Studio.
+Po wykonaniu dzielenia metody, należy zapisać zmiany w pliku UIMap.Designer, wybierając **Zapisz** na pasku narzędzi programu Visual Studio.
 
 > [!WARNING]
-> Dzielenie metody, należy zmodyfikować każdy kod wywołujący istniejącą metodę także wywołać nowej metody, które zostały utworzone, jeśli chcesz nadal tych akcji interfejsu użytkownika uwzględnione. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Go ostrzega, że należy zmodyfikować każdy kod wywołujący istniejącą metodę także wywołać nowej metody, które zostały utworzone. Wybierz **tak**.
+> Jeśli podzieli metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą zamierzasz utworzyć, jeśli nadal chcesz te akcje interfejsu użytkownika uwzględnione. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą chcesz utworzyć. Wybierz **tak**.
 
 ### <a name="tips"></a>Porady
 
-- Aby cofnąć podziału, wybierz polecenie **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**.
+- Aby cofnąć podziału, wybierz opcję **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**.
 
-- Można zmienić nazwę nowej metody. Wybierz go w okienku Akcje interfejsu użytkownika, a następnie wybierz pozycję **zmienić** przycisk paska narzędzi edytora testu interfejsu użytkownika na stałe.
+- Można zmienić nazwę nowej metody. Wybierz je w okienku Akcje interfejsu użytkownika, a następnie wybierz **Zmień nazwę** przycisku na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
 
    —lub—
 
-   Otwórz menu skrótów, metoda testowa i wybierz nowy **zmienić**.
+   Otwórz menu skrótów dla nowego metoda testowa i wybierz polecenie **Zmień nazwę**.
 
-   Pojawi się okno dialogowe programu Microsoft Visual Studio. Go ostrzega, że należy zmodyfikować każdy kod odwołujący się do metody. Wybierz **tak**.
+   Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod odwołujący się do metody. Wybierz **tak**.
 
-## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>Przenieś do pliku UIMap w celu ułatwienia dostosowania metody testowej
+## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>Przenieś metody testowej do pliku UIMap w celu ułatwienia dostosowywania
 
-Jeśli okaże się, że jedna z metody testu w Interfejsie użytkownika kodowanego testu wymaga kodu niestandardowego, przenieś go do pliku UIMap.cs albo UIMap.vb. W przeciwnym razie kodu zostaną zastąpione zawsze, gdy jest ponownie kompilowana kodowanego testu interfejsu użytkownika. Jeśli metoda nie są przenoszone niestandardowy kod zostanie zastąpiony zawsze, gdy test jest ponownie kompilowana.
+Jeśli stwierdzisz, że jeden swoje metody testowe w interfejsie użytkownika usług kodowany test wymaga kodu niestandardowego, przenieś go do pliku UIMap.cs lub UIMap.vb. W przeciwnym razie kodu zostaną zastąpione po każdym kodowanego testu interfejsu użytkownika jest ponownie kompilowana. Jeśli metoda nie jest przeniesienie, niestandardowy kod zostaną zastąpione każdorazowo, gdy test jest ponownie kompilowana.
 
-W **akcji IU** okienku, wybierz metodę testu, który chcesz przenieść plik UIMap.cs lub UIMap.vb ułatwiające funkcji kodu niestandardowego, zostaną zastąpione, gdy kod testu jest ponownie kompilowana. Następnie wybierz **Przenieś kod** znajdującego się na pasku narzędzi edytora testu kodowanego interfejsu użytkownika lub Otwórz menu skrótów metody testowej i wybierz polecenie **Przenieś kod**. Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować plik testu przeniesiony, otwórz UIMap.cs lub plik UIMap.vb w Eksploratorze rozwiązań.
+W **działania interfejsu użytkownika** okienku, wybierz metodę testową, która ma zostać przeniesiony do pliku UIMap.cs lub UIMap.vb w celu ułatwienia działania kodu niestandardowego zostaną zastąpione, gdy kod testu jest ponownie kompilowana. Następnie wybierz pozycję **Przenieś kod** znajdujący się na pasku narzędzi edytora testu interfejsu użytkownika lub Otwórz menu skrótów dla metody testu i wybierz pozycję **Przenieś kod**. Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować plik testu, który został przeniesiony, otwórz UIMap.cs lub UIMap.vb plik z Eksploratora rozwiązań.
 
-Po zakończeniu przenoszenia metody, należy zapisać zmiany w pliku UIMap.Designer, wybierając **zapisać** na pasku narzędzi programu Visual Studio.
+Po zakończeniu przenoszenia metody, należy zapisać zmiany w pliku UIMap.Designer, wybierając **Zapisz** na pasku narzędzi programu Visual Studio.
 
 > [!WARNING]
-> Gdy zostaną przeniesione metody, może nie trzeba już edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Go ostrzega, czy metoda zostanie przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie możliwe edytowanie metody, za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
+> Po przeniesieniu metody mogą nie trzeba już edytować go za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody, zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ma zostać przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie już można edytować metody za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
 ### <a name="tips"></a>Porady
 
-Aby cofnąć przeniesienie, wybierz **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**. Jednak należy następnie ręcznie usunąć kod z pliku UIMap.cs lub UIMap.vb.
+Aby cofnąć przeniesienie, zaznacz **Cofnij** z **Edytuj** menu lub naciśnij klawisz **Ctrl**+**Z**. Jednakże należy następnie ręcznie usunąć kod w pliku UIMap.cs lub UIMap.vb.
 
-## <a name="locate-a-ui-control-in-the-application-under-test"></a>Zlokalizuj formant interfejsu użytkownika w testowanej aplikacji
+## <a name="locate-a-ui-control-in-the-application-under-test"></a>Zlokalizuj kontrolkę interfejsu użytkownika w testowanej aplikacji
 
-Czasami może być trudne do wizualizacji, gdy formanty znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać formant mapy formantów interfejsu użytkownika na liście i wyświetlić jej lokalizacji w testowanej aplikacji. Przy użyciu **zlokalizuj formant interfejsu użytkownika** funkcję w testowanej aplikacji można również sprawdzić wyszukiwania właściwości zmiany wprowadzone do formantu.
+Czasami może być trudne do wizualizacji, gdzie kontrolki znajdują się w Interfejsie użytkownika aplikacji w ramach testu. Jest jedną z możliwości edytora kodowanego testu interfejsu użytkownika, można wybrać kontrolkę mapy formantów interfejsu użytkownika na liście i wyświetlić jego lokalizację w testowanej aplikacji. Za pomocą **zlokalizuj formant interfejsu użytkownika** funkcję na testowaną aplikację można również sprawdzić wyszukiwania właściwości modyfikacje wprowadzone do formantu.
 
 ![Zlokalizuj formant interfejsu użytkownika](../test/media/codeduilocatecontrol.png)
 
-![Formant w testowanej aplikacji](../test/media/codeduilocatecontrol2.png)
+![Formant zlokalizowany w testowanej aplikacji](../test/media/codeduilocatecontrol2.png)
 
-W **mapy formantów interfejsu użytkownika** okienku, wybierz kontrolkę, która ma zostać umieszczony w aplikacji skojarzonych z testu. Następnie otwórz menu skrótów dla formantu, a następnie wybierz pozycję **zlokalizuj formant interfejsu użytkownika**. W aplikacji, która jest poddawana testom niebieską linią jest wyznaczony formant.
+W **mapy formantów UI** okienku, wybierz formant, który ma zostać umieszczony w aplikacji skojarzony z testem. Następnie otwórz menu skrótów dla formantu, a następnie wybierz **zlokalizuj formant interfejsu użytkownika**. W aplikacji, która jest testowana formant jest wyznaczony z niebieskim obramowaniem.
 
 > [!NOTE]
-> Przed zlokalizuj formant interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z testu jest uruchomiony.
+> Przed kontrolki interfejsu użytkownika możesz zlokalizować, należy sprawdzić, czy jest uruchomiona aplikacja skojarzona z testem.
 
 ### <a name="tips"></a>Porady
 
-Można użyć **zlokalizować wszystkie** opcję, aby sprawdzić, czy wszystkie formanty w kontenerze można poprawnie. Ta opcja jest opisany w następnej sekcji.
+Możesz użyć **Znajdź wszystkie** opcję, aby sprawdzić, czy wszystkich kontrolek w kontenerze można przechowywać poprawnie. Ta opcja jest opisane w następnej sekcji.
 
 ## <a name="locate-a-control-and-its-descendants"></a>Zlokalizuj formant i jego elementy podrzędne
 
-Możesz sprawdzić, czy wszystkich kontrolek w kontenerze może poprawnie umieszczone w Interfejsie testowanej aplikacji. Może to być przydatne podczas weryfikowania zmiany właściwości wyszukiwania, które mogły zostać wprowadzone w kontenerze. Ponadto jeżeli dokonano znaczących zmian w Interfejsie użytkownika aplikacji w ramach testu, można sprawdzić czy istniejącej właściwości wyszukiwania są nadal prawidłowe.
+Możesz sprawdzić, czy wszystkich kontrolek w kontenerze można poprawnie znajdować w Interfejsie użytkownika aplikacji w ramach testu. Może to być przydatne podczas weryfikowania zmiany właściwości wyszukiwania, które mogły zostać wprowadzone w kontenerze. Ponadto jeśli miały miejsce znaczące zmiany w interfejsie użytkownika aplikacji poddawanej testowi, może się sprawdzić, czy istniejące właściwości wyszukiwania kontrolki są nadal prawidłowe.
 
 ![Znajdź wszystkie formanty podrzędne](../test/media/codeduilocateall.png)
 
-![Wszystkie formanty, znajduje się](../test/media/codeduilocateall2.png)
+![Wszystkie kontrolki znajdujący się](../test/media/codeduilocateall2.png)
 
-W **mapy formantów interfejsu użytkownika** okienku wybierz formantu kontenera, który ma zostać lokalizowanie i wyświetlanie wszystkich elementów podrzędnych dla. Następnie otwórz menu skrótów dla formantu i wybierz **zlokalizować wszystkie**. Formantu kontenera i wszystkich jego elementów podrzędnych kontrolki, są oznaczone w kodowanego interfejsu użytkownika edytora testu z zielonym znacznikiem wyboru lub czerwony symbol "X". Znaczniki informacją o tym, czy formanty pomyślnie znajdowały się w testowanej aplikacji.
+W **mapy formantów UI** okienku zaznacz formant kontenera, który chcesz znaleźć i wyświetlić wszystkie elementy podrzędne dla. Następnie otwórz menu skrótów dla formantu i wybierz **Znajdź wszystkie**. Formant kontenera i wszystkie jego formantów podrzędnych, są oznaczone w interfejsie użytkownika edytora kodowanego testu z zielonym znacznikiem wyboru lub czerwony symbol "X". Te znaczniki pozwalają dowiedzieć się, jeśli kontrolki pomyślnie znajdowały się w testowanej aplikacji.
 
 > [!NOTE]
-> Przed lokalizowanie kontrolki interfejsu użytkownika, sprawdź, czy aplikacja skojarzona z testu jest uruchomiona.
+> Przed lokalizować kontrolek interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z test jest uruchomiony.
 
 ## <a name="insert-a-delay-before-a-ui-action"></a>Wstawianie opóźnienia przed akcją UI
 
-Czasami możesz wykonać próbę poczekaj na niektóre zdarzenia, takie jak okna pojawiają się paska postępu zniknąć i tak dalej. Za pomocą edytora kodowanego testu interfejsu użytkownika, można to zrobić przez wstawianie opóźnienia przed akcją UI. Można można określić liczbę sekund opóźnienia się.
+Czasami możesz chcieć wykonać próbę, poczekaj, aż niektóre zdarzenia, takiego jak okna wyświetlany pasek postępu znikną i tak dalej. Za pomocą edytora kodowanego testu interfejsu użytkownika, można to zrobić, wstawiając opóźnienia przed akcją UI. Można określić, ile sekund ma opóźnienie za.
 
-![Wstawianie opóźnienia przed akcją UI](../test/media/codeduidelay.png)
+![Wstaw opóźnienie przed akcją UI](../test/media/codeduidelay.png)
 
-![Dodaje się 5 sekund opóźnienia](../test/media/codeduidealy2.png)
+![Dodaje się z 5 sekund opóźnienia](../test/media/codeduidealy2.png)
 
-W **akcji IU** okienku rozwiń zawierający akcji interfejsu użytkownika, który ma zostać Wstawianie opóźnienia przed metody testowej. Wybierz akcję interfejsu użytkownika. Następnie otwórz menu skrótów, akcji interfejsu użytkownika i wybierz **Wstawianie opóźnienia przed**. Opóźnienie jest wstawiony i wyróżnione przed wybranej akcji interfejsu użytkownika z następującym tekstem: **poczekaj 1 w sekundach dla opóźnienia użytkownika pomiędzy działaniami**. W oknie Właściwości zmień wartość atrybutu **opóźnienie** właściwości odpowiednią liczbę milisekund.
+W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz wstawić opóźnienie przed. Wybieranie akcji interfejsu użytkownika. Następnie otwórz menu skrótów dla działania interfejsu użytkownika i wybierz polecenie **Wstaw opóźnienie przed**. Opóźnienie jest wstawiany i wyróżnione przed wybranej akcji interfejsu użytkownika w następującym tekstem: **poczekaj 1 w sekundach dla opóźnienia użytkownika między akcjami**. W oknie Właściwości zmień wartość **opóźnienie** żądaną liczbę milisekund.
 
-Po zakończeniu Wstawianie opóźnienia, zapisać zmiany w pliku UIMap.Designer, wybierając **zapisać** na pasku narzędzi programu Visual Studio.
+Po zakończeniu Wstawianie opóźnienia, zapisać zmiany w pliku UIMap.Designer, wybierając **Zapisz** na pasku narzędzi programu Visual Studio.
 
-Jeśli potrzebujesz upewnić się, że określonego formantu jest dostępny przed akcją UI, warto rozważyć zwiększenie niestandardowy kod do metody testu przy użyciu metody odpowiedniej UITestControl.WaitForControlXXX(). Aby uzyskać więcej informacji, zobacz [tworzenie kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+Jeśli potrzebujesz upewnić się, że jest określona kontrolka jest dostępny przed akcją UI, należy rozważyć dodanie niestandardowego kodu do metody testowej przy użyciu metody odpowiedniej UITestControl.WaitForControlXXX(). Aby uzyskać więcej informacji, zobacz [wprowadzania kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="see-also"></a>Zobacz także
 

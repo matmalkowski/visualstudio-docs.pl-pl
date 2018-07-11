@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie licencji do subskrypcji usługi Visual Studio | Dokumentacja firmy Microsoft
+title: Przypisywanie licencji do subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -10,55 +10,55 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: d0dbd509d60ed3528186e41c98f374ab6db60fa3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "36327027"
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 
-Jako administrator subskrypcji programu Visual Studio można użyć portalu administratora programu Visual Studio subskrypcji można przypisać subskrypcji dla poszczególnych użytkowników.  
-Można przypisać pojedynczo lub użyj funkcji "Dodaj zbiorczo", aby przekazać listy subskrybentów z informacjami o swoich subskrypcji, szybkie i łatwe. 
+Jako administratora subskrypcji programu Visual Studio z portalu administratora subskrypcji programu Visual Studio służy do przypisywania subskrypcji do poszczególnych użytkowników.  
+Możesz przypisać pojedynczo lub użyj funkcji "Dodaj zbiorczo", aby przekazać listę subskrybentów z informacjami o subskrypcji, szybkie i łatwe. 
 
-## <a name="assigning-a-single-user"></a>Przypisywanie jednego użytkownika
-Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można przypisać do nowych użytkowników na ich ich zalety subskrypcji dostęp do tych licencji. 
+## <a name="assigning-a-single-user"></a>Przypisywanie pojedynczego użytkownika
+Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, możesz przypisać licencje do nowych użytkowników do nich uzyskiwać dostęp do swoich korzyści z subskrypcji. 
 1.  Zaloguj się do [portal administratora](https://manage.visualstudio.com)
 
-2.  Aby przypisać jeden subskrybent Visual Studio, w górnej części tabeli, kliknij przycisk **Dodaj**.
+2.  Aby przypisać pojedynczego subskrybenta programu Visual Studio, w górnej części tej tabeli, kliknij przycisk **Dodaj**.
    
-3.  Wprowadź informacje do pól formularza dla nowych subskrybentów. Jeśli organizacja korzysta z usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania: wyszukiwanie osób w bieżącym katalogu, można wybrać użytkownika w wynikach wyszukiwania. Po wybraniu tej osoby ich nazw, logowania poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie zgodnie z poniższą. 
+3.  Wprowadź informacje w polach formularza dla nowych subskrybentów. Jeśli Twoja organizacja używa usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania można znaleźć osób w bieżącym katalogu, dzięki czemu można wybrać właściwy użytkownik z wyników wyszukiwania. Po wybraniu tej osobie, ich nazwy, zaloguj się poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie jak widać poniżej. 
 
-    Jeśli Twoja organizacja nie używa usługi Azure Active Directory (Azure AD), ale ma inny adres e-mail do odbierania wiadomości e-mail niż używanego do logowania, istnieje możliwość wprowadzania go tutaj. Wybierz hiperłącze z etykietą "Dodaj inny adres e-mail do odbierania komunikacji". 
+    Jeśli Twoja organizacja nie korzysta z usługi Azure Active Directory (Azure AD), ale ma inny adres e-mail do odbierania wiadomości e-mail niż ten, który ma być używany do logowania, istnieje możliwość wprowadzania go tutaj. Wybierz hiperłącze etykietą "Dodaj inny adres e-mail do odbierania komunikacji". 
 
     **Dostęp do plików do pobrania:**  
-    Jeśli chcesz, aby ten subskrybent ma nieprawidłowy plików do pobrania oprogramowania podczas logowania się do [Portal subskrypcji w usłudze Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się pozostawić Przełącz pliki do pobrania włączone. Jeśli chcesz wyłączyć pliki do pobrania, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści zawarte w subskrypcji. 
+    Jeśli chcesz, aby mieć dostępu do plików do pobrania oprogramowania, po zalogowaniu się do tego subskrybenta [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że pozostawisz przełącznik pliki do pobrania, włączone. Jeśli chcesz wyłączyć pliki do pobrania, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale będą nadal mieć dostęp do wszystkich innych korzyści objętych subskrypcją. 
     
     Po zakończeniu wybierania opcji dla tego subskrybenta, kliknij przycisk **Dodaj**.
 
     <img alt="Enter subscriber information" src="_img\assign-license-add\add-subscriber-1.png" style="border: 1px solid #CCCCCC" />
     <img alt="Enter subscriber information" src="_img\assign-license-add\add-subscriber-2.png" style="border: 1px solid #CCCCCC" />
 
-4.  Po dodaniu subskrybenta, wiadomości E-mail przypisania będą automatycznie wysyłane do nowych subskrybentów z dalszymi instrukcjami. Możesz wysłać wiadomości E-mail przypisania w dowolnym momencie ponownie zaznaczając subskrybenta i klikając przycisk **Wyślij ponownie** przycisk w menu u góry.
+4.  Po dodaniu subskrybenta, wiadomość e-mail dotycząca przypisania będzie automatycznie przesyłane nowy abonent z dalszymi instrukcjami. Możesz wysłać wiadomość e-mail dotycząca przypisania w dowolnym momencie ponownie, wybierając subskrybenta i klikając **Wyślij ponownie** przycisku w menu u góry.
 
 
-## <a name="bulk-assignments"></a>Przydziały zbiorcze
-1.  Aby dodać jednocześnie wiele subskrybentów, przejdź do **Zarządzanie subskrybentów** kartę. Na Wstążce u góry kliknij **Dodawanie zbiorcze**. 
+## <a name="bulk-assignments"></a>Zbiorcze przypisania
+1.  Aby dodać jednocześnie wielu subskrybentów, przejdź do **Zarządzanie subskrybentów** kartę. Na Wstążce u góry kliknij **zbiorcze Dodawanie**. 
 
-2. Przypisz masowo używa szablonu programu Microsoft Excel można przekazać subskrybentów. W oknie dialogowym przekazać wielu subskrybentów, kliknij przycisk **Pobierz** można pobrać szablonu. Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji zbiorczego przekazania może zakończyć się niepowodzeniem.
+2. Przypisz zbiorczo używa szablonu programu Microsoft Excel, można przekazać subskrybentów. W oknie dialogowym Przekaż wielu subskrybentów kliknij **Pobierz** pobrać szablon. Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
 
-3.  W arkuszu kalkulacyjnym programu Excel Wypełnij pola o informacje dla użytkowników indywidualnych, które chcesz przypisać subskrypcje. Odwołanie pole jest opcjonalne. Jeśli wypełniony dowolnej części szablonu nieprawidłowo, powinien zostać wyświetlony komunikat o błędzie opisujący problem. Zapisz plik lokalnie wykonać jeden raz.
-**W celu zapewnienia sprawnego przekazywania, należy stosować poniższe najlepsze rozwiązania:**
-    - Upewnij się, że żadne z pól formularza zawierać przecinków.
-    - Usuwaj odstępy przed i po pól formularza, takich jak nazwy użytkowników.
-    - Upewnij się, że nie zawierają dodatkowe spacje między nazwami pierwszego lub ostatniego dwuczęściowej nazwy użytkowników (np. dwuczęściową imię, takie jak "Może Maggie" należy nie wpisać jako "Może Maggie", ponieważ system nie będzie ograniczać dodatkowe miejsce.)
+3.  W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla użytkowników indywidualnych, którą chcesz przypisać subskrypcje. Odwołanie pole jest opcjonalne. Jeśli wypełnienie dowolnej części szablonu niepoprawnie, powinien zobaczysz komunikat o błędzie opisujący problem. Zapisz plik lokalnie po zakończeniu.
+**Aby zapewnić bezproblemowe przekazywania, należy stosować poniższe najlepsze rozwiązania:**
+    - Upewnij się, że żadne pole formularza będzie zawierać przecinków.
+    - Usuwaj odstępy przed i po nim pola formularza, takie jak nazwy użytkowników.
+    - Upewnij się, nazwy użytkowników nie zawierają dodatkowe spacje między nazwami legalną dwuczęściową pierwszy lub ostatni (np. imię legalną dwuczęściową, takie jak "Może być użytkownikami są Maggie" powinna nie wpisać jako "Może być użytkownikami są Maggie", ponieważ system nie będzie ograniczać dodatkowe miejsce.)
 
-4.  Powrócić do portalu Visual Studio subskrypcje administracyjnej i w oknie dialogowym przekazać wielu subskrybentów, kliknij przycisk **Przeglądaj**. Przejdź do pliku programu Excel został zapisany i kliknij **OK**. Na ekranie pojawi się postępu przekazywania. 
+4.  Wróć do portalu administratora subskrypcji programu Visual Studio i w oknie dialogowym Przekaż wielu subskrybentów, kliknij przycisk **Przeglądaj**. Przejdź do pliku programu Excel został zapisany, a następnie kliknij przycisk **OK**. Postęp przekazywania zobaczą na ekranie. 
 
     <img alt="Bulk add upload" src="_img\assign-license-add\bulk-assign-upload-2.png" style="border: 1px solid #CCCCCC" />
 
-Jeśli szablon zawiera błędy, przekazywanie zakończy się niepowodzeniem i zostaną wyświetlone błędy można więc Popraw szablon i próbę przekazania zbiorczego.
+Jeśli szablon zawiera błędy, przekazywanie zakończy się niepowodzeniem i zostaną wyświetlone błędy można więc Popraw szablon i przekazywania masowego próbę.
     <img alt="Upload fail" src="_img\assign-license-add\bulk-assign-upload-fail.png" style="border: 1px solid #CCCCCC" />
 
-Po pomyślnym zakończeniu operacji przekazywania, zobaczysz listę subskrybentów i komunikat potwierdzenia.
+Jeśli przekazywanie zakończy się pomyślnie, zobaczysz listę subskrybentów i komunikat z potwierdzeniem.
 

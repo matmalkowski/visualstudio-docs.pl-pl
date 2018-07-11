@@ -10,43 +10,43 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: b986aa50f282ef6df985919ab5fb83934befcee8
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "36325381"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edytowanie przypisania subskrypcji programu Visual Studio
 
-Jako administrator subskrypcji możesz wprowadzić zmiany do subskrypcji, przypisane do osób w danej organizacji.  W tym artykule omówiono typy zmian można wprowadzać i niezbędne instrukcje. 
+Jako administratora subskrypcji programu użytkownik wprowadzać zmiany do subskrypcji, przypisane do osoby w Twojej organizacji.  W tym artykule omówiono rodzaje zmian, może być i zawiera niezbędne instrukcje. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Wprowadzanie zmian do subskrybenta informacji
-Można edytować informacje abonenta naprawić błędy lub zaktualizować informacje. 
+Można edytować informacje o subskrybenta, aby poprawić błędy lub zaktualizować informacje. 
 
-Aby edytować subskrybenta, wybierz wielokropek (...), które są wyświetlane obok abonenta adresu e-mail, po wskaźnika myszy nad nim. Pojawi się listy rozwijanej.  Wybierz **Edytuj** Aby zmodyfikować szczegóły abonenta. Możesz również kliknąć dwukrotnie w wierszu abonenta w siatce, aby otworzyć okno edycji.
+Aby edytować subskrybenta, wybierz wielokropek (...), które pojawiają się obok adres e-mail subskrybenta, po umieszczeniu wskaźnika myszy nad nim. Pojawi się listy rozwijanej.  Wybierz **Edytuj** Aby zmodyfikować szczegóły subskrybenta. Możesz także dwukrotnie kliknąć na subskrybenta wierszy w siatce, aby otworzyć okno edycji.
     ![Wybierz subskrybenta do edycji](_img\edit-license\select-subscriber.png)
 
-Można aktualizować abonenta imię, nazwisko, kraj, język i pliki do pobrania. Edytuj informacje abonenta, a następnie kliknij przycisk **zapisać**.
+Możesz zaktualizować imię, nazwisko subskrybenta, kraj, język i pliki do pobrania. Edytuj informacje na subskrybenta, a następnie kliknij przycisk **Zapisz**.
 
    > [!NOTE]
    > Jeśli potrzebujesz zmienić poziom subskrypcji dla subskrybenta, należy usunąć użytkownika z portalu i dodać je ponownie. Poziomy subskrypcji jest niemożliwa.
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Edytowanie wielu subskrybentów za pomocą edycji zbiorczej
+## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Edycja wielu subskrybentów przy użyciu Edycja zbiorcza
 
-Można edytować wielu subskrybentów jednocześnie przy użyciu procesu zbiorczego edycji. Ta funkcja jest głównie używana dla organizacji, które są pośrednictwa firmowej poczty e-mail zmiany adresu lub jeśli podjęto decyzję o ograniczanie dostępu do plików do pobrania dla organizacji. 
+Możesz edytować wielu subskrybentów jednocześnie przy użyciu procesu edycji zbiorczej. Ta funkcja jest głównie używana w organizacjach, które są przesyłane za pośrednictwem firmowych wiadomości e-mail zmiany adresu lub jeśli podjęto decyzję o ograniczanie dostępu do plików do pobrania dla organizacji. 
 
    > [!IMPORTANT]
-   > Poziomy subskrypcji (tj. Enterprise, Professional, itp.) i nie można zmienić subskrypcji identyfikatorów GUID.  Przy próbie przekazania z następującymi elementami zmienić przekazywania zakończy się niepowodzeniem.  
+   > Subskrypcja poziomy (tj. Enterprise, Professional, itp.) i identyfikatorów GUID subskrypcji nie może być zmieniona.  Jeśli spróbujesz przekazać pliki z następującymi elementami zmienione przekazywanie zakończy się niepowodzeniem.  
 
-1.  Aby edytować wielu subskrybentom naraz, przejdź do karty subskrybentów. Na Wstążce u góry kliknij **zbiorczo edytować**. 
+1.  Aby edytować wielu subskrybentów jednocześnie, przejdź do karty subskrybentów. Na Wstążce u góry kliknij **zbiorczo edytować**. 
 
-2.  Edycji zbiorczej używa szablonu programu Excel, aby wprowadzić zmiany w informacjach subskrybenta. W polu edycji zbiorczej kliknij **eksportu programu excel to** pobrać bieżącą listę subskrybentów wszystkie informacje o tym. 
-    ![Edytowanie licencji - eksportu zbiorczego edytuje listy](_img\edit-license\edit-license-bulk-edit-export.png)
+2.  Edycja zbiorcza korzysta z szablonu programu Excel, należy edytować informacje abonenta. W polu edycji zbiorczej kliknij **eksportu ten skoroszyt programu excel** można pobrać bieżącą listę subskrybentów wraz ze wszystkimi informacjami. 
+    ![Edytowanie eksportu licencję — lista Edycja zbiorcza](_img\edit-license\edit-license-bulk-edit-export.png)
 
-3.  Następnie należy lokalnie Zapisz plik aby można było łatwo ją znaleźć i wprowadź niezbędne zmiany przed przesłaniem go. Aby zagwarantować pomyślne przekazywania **nie były edytowane poziomie subskrypcji lub identyfikator GUID** jak będzie to spowodować niepowodzenie przekazywania. 
+3.  Następnie należy zapisać plik lokalnie, można łatwo znaleźć go i wprowadź niezbędne zmiany przed ich przekazaniem. Do zapewnienia pomyślnego wysłania **nie należy ich edytować poziomie subskrypcji lub identyfikator GUID subskrypcji** jako spowodowałoby przekazywania nie powiedzie się. 
 
-4.  Powrócić do portalu Visual Studio subskrypcje administracyjnej i w oknie dialogowym zbiorczo edytować, kliknij przycisk **Przeglądaj**. Wybierz zapisany plik programu Excel i kliknij przycisk **OK**. Na ekranie pojawi się postępu przekazywania.
-    ![Edytowanie licencji — Edycja zbiorcza przekazywania pliku](_img\edit-license\edit-license-bulk-file-upload1.png)
+4.  Wróć do portalu administratora subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza, kliknij przycisk **Przeglądaj**. Wybierz plik programu Excel został zapisany, a następnie kliknij przycisk **OK**. Postęp przekazywania zobaczą na ekranie.
+    ![Edytowanie licencję — przekazywanie pliku Edycja zbiorcza](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Po przesłaniu pliku pojawi się powiadomienie informujące, że było pomyślne. W tym momencie zmiany zostaną odzwierciedlone w informacji dotyczących subskrybenta. 
+5.  Po przekazaniu pliku, zobaczysz powiadomienie z informacją o tym, że było pomyślne. W tym momencie zmiany zostaną odzwierciedlone w informacji dotyczących subskrybenta. 
 

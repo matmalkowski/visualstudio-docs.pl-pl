@@ -12,30 +12,30 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "34335710"
 ---
-# Pomoc F1
+# F1 Pomoc
 
-Prawdopodobnie nie możemy znaleźć zostały znalezione i Przepraszamy. Sprawdź [Pomóż nam udoskonalić](#help-us-improve-f1).
+Prawdopodobnie nie możemy znaleźć, czego szukasz, a Przepraszamy. Proszę [Pomóż nam w usprawnianiu](#help-us-improve-f1).
 
 ## Pozycja kursora
 
-Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy kursor znajduje się wewnątrz lub na prawo słowo przed naciskając klawisz **F1**. Jeśli jeszcze tego nie zadziała, wybierz z [przydatne łącza](#useful-links) listy lub wykonaj wyszukiwanie w https://docs.microsoft.com.
+Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy kursor znajduje się wewnątrz lub na prawo od słowo przed naciśnięcie **F1**. Jeśli jeszcze tego nie rozwiąże problemu, należy wybrać z [przydatne linki](#useful-links) listy lub wykonaj wyszukiwanie w https://docs.microsoft.com.
 
-## Przydatne łącza
+## Przydatne linki
 
-- Aby uzyskać ogólne informacje dotyczące programu Visual Studio, zobacz [Omówienie programu Visual Studio](../../ide/visual-studio-ide.md).
+- Aby uzyskać ogólne informacje na temat programu Visual Studio, zobacz [Omówienie programu Visual Studio](../../ide/visual-studio-ide.md).
 - Aby uzyskać pomoc, Edytor tekstu Visual Studio, zobacz [za pomocą edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md).
 - C# Pomoc [przewodnik C#](/dotnet/csharp/index).
-- Aby uzyskać pomoc w Visual Basic, [przewodnik Visual Basic](/dotnet/visual-basic/).
-- F # Pomoc [przewodnik F #](/dotnet/fsharp/).
-- Aby uzyskać Pomoc języka Python, zobacz [Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
-- Aby uzyskać pomoc C++, [C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
+- Aby uzyskać pomoc w języku Visual Basic, zobacz [Przewodnik po Visual Basic](/dotnet/visual-basic/).
+- F # Pomoc [Podręcznik języka F #](/dotnet/fsharp/).
+- Aby uzyskać pomoc w języku Python, zobacz [języka Python w programie Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- Aby uzyskać pomoc w języku C++, zobacz [C++ w programie Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
-## Pomóż nam udoskonalić F1
+## Pomóż nam w usprawnianiu F1
 
-Pomóż nam w ulepszaniu środowiska Pomoc F1. Zaloguj problem Pomoc produktu, klikając **opinii produktu** przycisk poniżej. Zawierają informacje zostały znalezione, aby uzyskać pomoc dotyczącą po naciśnięciu **F1**, na przykład, jakie symbol lub kursor został na okna. Dziękuję!
+Pomóż nam ulepszyć środowisko pomocy F1. Zaloguj problem z produktem pomocy, klikając **Prześlij opinię o produkcie** przycisk poniżej. Obejmują poszukiwany Aby uzyskać pomoc dotyczącą po naciśnięciu **F1**, na przykład, jakie symboli lub kursor znajdował się w oknie. Dziękuję!
