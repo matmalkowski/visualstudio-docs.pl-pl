@@ -13,122 +13,130 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e99a98f5ea4cca5891d416bdc13656b3173a40f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
+ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925123"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993918"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurowanie i używanie reguły analizatora Roslyn
+# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurowanie i używanie zasady działania analizatora Roslyn
 
-Reguły analizatora platformy kompilatora .NET ("Roslyn"), lub *diagnostyki*, analiza kodu C# lub Visual Basic podczas pisania. Każdy Diagnostyka ma domyślne ważność i pomijania stan, który może zostać zastąpiona w projekcie. W tym artykule opisano ustawienia reguły ważność, korzystanie z zestawów reguł i pomijanie naruszeń.
+Reguły analizatora platformie kompilatora .NET ("Roslyn"), lub *diagnostyki*, analizowanie kodu C# lub Visual Basic podczas wpisywania. Każdy Diagnostyka ma domyślne ważności i pomijania stanu, który może zostać zastąpiona w projekcie. W tym artykule opisano ustawienia reguły ważności, korzystanie z zestawów reguł i pomijanie naruszenia.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analizatory w Eksploratorze rozwiązań
 
-Możliwość wiele dostosowań Diagnostyka analizatora z **Eksploratora rozwiązań**. Jeśli zostanie [zainstalować analizatorów](../code-quality/install-roslyn-analyzers.md) jako pakietu NuGet, **analizatorów** węzeł jest wyświetlany w obszarze **odwołania** lub **zależności** węzła w  **Eksplorator rozwiązań**. Po rozwinięciu **analizatorów**, a następnie rozwiń jedno ze zestawy analizatora, zobacz wszystkie diagnostyki w zestawie.
+Można wykonać wiele dostosowania Diagnostyka analyzer z **Eksploratora rozwiązań**. Jeśli użytkownik [instalowanie analizatorów](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet **analizatory** pojawia się pod węzłem **odwołania** lub **zależności** węzła w  **Eksplorator rozwiązań**. Po rozwinięciu **analizatory**i następnie rozwiń jedno ze zestawy analizatora, zobaczysz wszystkie diagnostyki w zestawie.
 
-![Węzeł analizatorów w Eksploratorze rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
+![Węzeł analizatory w Eksploratorze rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
 
-Można wyświetlić właściwości diagnostyki, łącznie z jej opis i ważność domyślne w **właściwości** okna. Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy reguły, a następnie wybierz **właściwości**, lub wybierz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
+Możesz wyświetlić właściwości danych diagnostycznych, w tym jego opis i domyślna ważność w **właściwości** okna. Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy reguły, a następnie wybierz **właściwości**, lub wybierz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
 
-![Właściwości diagnostyki w oknie właściwości](media/analyzer-diagnostic-properties.png)
+![Właściwości diagnostyczne w oknie właściwości](media/analyzer-diagnostic-properties.png)
 
-Aby wyświetlić dokumentację online dla diagnostyki, kliknij prawym przyciskiem myszy na dane diagnostyczne i wybierz **Wyświetl Pomoc**.
+Aby wyświetlić dokumentację online dla diagnostyki, kliknij prawym przyciskiem myszy na diagnostyczne, a następnie wybierz **Wyświetl Pomoc**.
 
-Ikony obok każdego diagnostyki w **Eksploratora rozwiązań** odpowiadają ikony zostanie wyświetlony w regule ustawić po otwarciu edytora:
+Ikony obok każdego Diagnostyka w **Eksploratora rozwiązań** odnoszą się do tych ikon, zostanie wyświetlony w regule ustawić po otwarciu w edytorze:
 
 - "i" w okręgu wskazuje [ważność](#rule-severity) z **informacji**
 - "!" w trójkąt wskazuje [ważność](#rule-severity) z **ostrzeżenie**
-- "x" w koło oznacza [ważność](#rule-severity) z **błąd**
-- Wskazuje "i" w okrąg na tle jasnego [ważność](#rule-severity) z **ukryty**
-- dół Strzałka w koło informuje, że dane diagnostyczne jest pomijane
+- "x" w okręgu wskazuje [ważność](#rule-severity) z **błąd**
+- Wskazuje "i" w okręgu na tle jasnego [ważność](#rule-severity) z **ukryty**
+- strzałkę skierowaną w dół w okręgu wskazuje, czy pomijane jest diagnostyczne
 
-![Ikony diagnostyki w Eksploratorze rozwiązań](media/diagnostics-icons-solution-explorer.png)
+![Ikony diagnostyki w oknie Eksploratora rozwiązań](media/diagnostics-icons-solution-explorer.png)
 
 ## <a name="rule-sets"></a>Zestawy reguł
 
-A [zestaw reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) jest plik XML, który zapisuje stan ważność i pomijania dla poszczególnych diagnostyki. Zestawy reguł dotyczą pojedynczego projektu, a projekt może mieć wiele zestawów reguł. Aby wyświetlić dla aktywnego zestawu reguł w edytorze, kliknij prawym przyciskiem myszy **analizatorów** w węźle **Eksploratora rozwiązań** i wybierz **otwórz aktywny zestaw reguł**. Jeśli jest to wartość po raz pierwszy używasz reguły, plik o nazwie  *\<projectname > .ruleset* zostanie dodany do projektu i zostanie wyświetlony w **Eksploratora rozwiązań**.
+A [zestaw reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) jest plikiem XML, który zapisuje stan ważność i pomijania poszczególnych diagnostyki. Zestawy reguł dotyczą pojedynczego projektu, a projekt może mieć wiele zestawów reguł. Aby wyświetlić aktywne reguły ustawiane za pomocą edytora, kliknij prawym przyciskiem myszy **analizatory** w węźle **Eksploratora rozwiązań** i wybierz **otwórz aktywny zestaw reguł**. Jeśli jest ustawiona po raz pierwszy uzyskujesz dostęp do reguły, w pliku o nazwie  *\<nazwa_projektu > .ruleset* zostanie dodany do projektu i pojawia się w **Eksploratora rozwiązań**.
 
 > [!NOTE]
-> Zestawy reguł obejmują zarówno analizy statycznej kodu (binarnego), jak i Roslyn reguły analizatora.
+> Zestawy reguł obejmują zarówno analizy kodu statycznego (binarnych), jak i zasady działania analizatora Roslyn.
 
-Można zmienić aktywnego zestawu reguł dla projektu na **analizy kodu** we właściwościach projektu. Wybierz dla zestawu reguł w **Uruchom ten zestaw reguł** listy rozwijanej. Można również otworzyć zestawu z reguł **analizy kodu** strony właściwości, wybierając **Otwórz**.
+Możesz zmienić aktywny zestaw reguł dla projektu na **analizy kodu** karcie we właściwościach projektu. Wybierz zestaw reguł **Uruchom ten zestaw reguł** listy rozwijanej. Można również otworzyć zestawu reguł z **analizy kodu** strony właściwości, wybierając **Otwórz**.
 
 ## <a name="rule-severity"></a>Ważność reguły
 
-Można skonfigurować ważność reguły analizatora lub *diagnostyki*, jeśli użytkownik [zainstalować analizatorów](../code-quality/install-roslyn-analyzers.md) jako pakietu NuGet. W poniższej tabeli przedstawiono opcje ważność diagnostyki:
+Można skonfigurować ważność reguły analizatora lub *diagnostyki*, jeśli użytkownik [instalowanie analizatorów](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. W poniższej tabeli przedstawiono opcje ważność diagnostyki:
 
-|Ważność|Zachowania w czasie kompilacji|Zachowanie edytora|
+|Ważność|Zachowanie w czasie kompilacji|Zachowanie edytora|
 |-|-|-|
-|Błąd|Naruszenia są wyświetlane jako *błędy* w **listy błędów** w wierszu polecenia dane wyjściowe kompilacji i spowodować niepowodzenie kompilacji.|Naruszeń kodu jest podkreślona czerwonym dowolnym kształcie i oznaczone przy małych czerwonym prostokątem na pasku przewijania.|
-|Ostrzeżenie|Naruszenia są wyświetlane jako *ostrzeżenia* w **listy błędów** w wierszu polecenia dane wyjściowe kompilacji, ale nie powodują kompilacji zakończyć się niepowodzeniem.|Naruszeń kodu jest podkreślona z zielonym dowolnym kształcie i oznaczone przy małych zielone pole na pasku przewijania.|
-|Informacje o|Naruszenia są wyświetlane jako *wiadomości* w **listy błędów**i w ogóle w danych wyjściowych kompilacji wiersza polecenia.|Naruszeń kodu jest podkreślona z szary dowolnym kształcie i oznaczone przez małe pole szarym pasku przewijania.|
-|Hidden|Non widoczny dla użytkownika.|Non widoczny dla użytkownika. Dane diagnostyczne jest jednak zgłoszone aparat diagnostycznych IDE.|
-|Brak|Całkowicie pominięty.|Całkowicie pominięty.|
+|Błąd|Naruszeń są traktowane jako *błędy* w **lista błędów** w wiersza polecenia dane wyjściowe kompilacji i powodować niepowodzenia kompilacji.|Naruszeń kodu jest podkreślony z czerwonym falista i oznaczone czerwoną otoczkę małych na pasku przewijania.|
+|Ostrzeżenie|Naruszeń są traktowane jako *ostrzeżenia* w **lista błędów** w wiersza polecenia dane wyjściowe kompilacji, ale nie powoduje niepowodzenia kompilacji.|Naruszeń kodu jest podkreślony z zielonym falista i oznaczone przez małe zielone pole na pasku przewijania.|
+|Informacje o|Naruszeń są traktowane jako *wiadomości* w **lista błędów**i w ogóle nie będzie w danych wyjściowych kompilacji z wiersza polecenia.|Naruszeń kodu jest podkreślony szaro falista i oznaczone przez małe pole szarym pasku przewijania.|
+|Hidden|Non widoczny dla użytkownika.|Non widoczny dla użytkownika. Diagnostyka jest zgłaszany do aparatu diagnostyki IDE, jednak.|
+|Brak|Całkowicie pominąć.|Całkowicie pominąć.|
 
-Ponadto można "zresetować" ważność reguły przez ustawienie jej na **domyślne**. Każdy Diagnostyka ma ważność domyślne, które są widoczne w **właściwości** okna.
+Ponadto użytkownik może "Resetuj" ważność reguły, ustawiając go na **domyślne**. Każdy Diagnostyka ma domyślna ważność, którą można wyświetlić w **właściwości** okna.
 
-Poniższy zrzut ekranu przedstawia trzy różne naruszeń diagnostycznych w edytorze kodu w trzech różnych ważności. Zwróć uwagę, kolor dowolnym kształcie, a także małe pole na pasku przewijania po prawej stronie.
+Poniższy zrzut ekranu przedstawia trzy różne naruszeń diagnostycznych w edytorze kodu z trzema różnymi poziomami ważności. Zwróć uwagę, kolor falista, jak małe pole po prawej stronie na pasku przewijania.
 
-![Naruszenie błędu, ostrzeżenia i informacje w edytorze kodu](media/diagnostics-severity-colors.png)
+![Błąd, ostrzeżenie i informacje o naruszenie w edytorze kodu](media/diagnostics-severity-colors.png)
 
-Poniższy zrzut ekranu przedstawia tego samego naruszeń trzy, w jakiej występują **listy błędów**:
+Poniższy zrzut ekranu przedstawia tych samych trzech naruszeń, w jakiej występują w **lista błędów**:
 
 ![Naruszenie błędu, ostrzeżenia i informacje o liście błędów](media/diagnostics-severities-in-error-list.png)
 
-Można zmienić ważność reguły z **Eksploratora rozwiązań**, lub w  *\<projectname > .ruleset* pliku, który zostanie dodany do rozwiązania, po zmianie ważność regułę w  **Eksplorator rozwiązań**.
+Możesz zmienić ważność reguły z **Eksploratora rozwiązań**, lub w ramach  *\<nazwa_projektu > .ruleset* pliku, który jest dodawany do rozwiązania, po zmianie ważność reguły w  **Eksplorator rozwiązań**.
 
-![Pliku zestawu reguł w Eksploratorze rozwiązań](media/ruleset-in-solution-explorer.png)
+![Pliku zestawu reguł w oknie Eksploratora rozwiązań](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Aby ustawić ważność reguły z Eksploratora rozwiązań
+### <a name="to-set-rule-severity-from-solution-explorer"></a>Aby ustawić ważność reguły za pomocą Eksploratora rozwiązań
 
-1. W **Eksploratora rozwiązań**, rozwiń węzeł **odwołania** > **analizatorów** (**zależności**  >  **Analizatorów** dla platformy .NET Core projektów).
+1. W **Eksploratora rozwiązań**, rozwiń węzeł **odwołania** > **analizatory** (**zależności**  >  **Analizatory** dla projektów .NET Core).
 
-1. Rozwiń zestaw zawierający regułę, którą chcesz ustawić waga.
+1. Rozwiń węzeł zestawu, który zawiera regułę, którą chcesz ustawić ważność.
 
-1. Kliknij prawym przyciskiem myszy na reguły i wybierz **ustawić ważność ustawić reguły**. W menu wysuwanego wybierz jedną z opcji ważności.
+1. Kliknij prawym przyciskiem myszy, reguły i wybierz pozycję **Ustaw ważność zestawu reguł**. W menu wysuwanego wybierz jedną z opcji ważności.
 
-   Ważność reguły są zapisywane w pliku zestawu reguł aktywne.
+   Ważność reguły są zapisywane w pliku zestawu reguł active.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Aby ustawić regułę ważność w regule pliku zestawu
+### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Aby ustawić regułę pliku zestawu ważność reguły
 
-1. Otwórz plik zestawu reguł przez dwukrotne kliknięcie w **Eksploratora rozwiązań**, wybierając żądane **otwórz aktywny zestaw reguł** menu kliknij prawym przyciskiem myszy **analizatorów** węzła, lub wybierając **Otwórz** na **analizy kodu** stronę właściwości projektu.
+1. Otwórz plik zestawu reguł, klikając go dwukrotnie **Eksploratora rozwiązań**, wybierając opcję **otwórz aktywny zestaw reguł** w menu kliknij prawym przyciskiem myszy **analizatory** węzła, lub wybierając **Otwórz** na **analizy kodu** strony właściwości dla projektu.
 
-1. Przejdź do reguły, rozwijając zawierający go zestaw.
+1. Przejdź do reguły, rozwijając jego zawierające zestaw.
 
-1. W **akcji** kolumnę, wybierz wartość otwarcie listy rozwijanej i wybierz żądany ważność z listy.
+1. W **akcji** kolumn, wybierz wartość do otwierania listy rozwijanej i wybierz żądany poziom zagrożenia z listy.
 
-   ![Pliku zestawu reguł jest otwarty w edytorze](media/ruleset-file-in-editor.png)
+   ![Otwórz w edytorze pliku zestawu reguł](media/ruleset-file-in-editor.png)
 
-## <a name="suppress-violations"></a>Pomiń naruszeń
+## <a name="suppress-violations"></a>Pomiń naruszenia
 
-Istnieje wiele sposobów, aby pominąć naruszeń zasady:
+Istnieje wiele sposobów, aby pominąć naruszeń reguł:
 
-- Aby pominąć wszystkie bieżące naruszenia, wybierz **Analizuj** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu. Jest to czasami określane jako "określania poziomu odniesienia".
+- Aby pominąć wszystkie bieżące naruszenia, wybierz **analizy** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu. Jest to czasami nazywane "określania poziomu odniesienia".
 
-- Aby pominąć Diagnostyka z **Eksploratora rozwiązań**, ustawić jego ważność **Brak**.
+- Aby pominąć diagnostyki z **Eksploratora rozwiązań**, równa jego ważność **Brak**.
 
-- Aby pominąć diagnostyki w edytorze zestawu reguł, usuń zaznaczenie pola wyboru obok jego nazwy lub ustawić **akcji** do **Brak**.
+- Aby pominąć diagnostyki z edytora zestawu reguł, usuń zaznaczenie pola obok jego nazwy lub ustaw **akcji** do **Brak**.
 
-- Aby pominąć diagnostyki w edytorze kodu, umieść kursor w wierszu kodu za pomocą naruszenie i naciśnij klawisz **Ctrl**+**.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAxxxx** > **w źródle** lub **Pomiń CAxxxx** > **w pliku pominięć**.
+- Aby pominąć diagnostyczne z poziomu edytora kodu, umieść kursor w wierszu kodu za pomocą naruszenie, a następnie naciśnij klawisz **Ctrl**+**.** Aby otworzyć **szybkie akcje** menu. Wybierz **Pomiń CAxxxx** > **w źródle** lub **Pomiń CAxxxx** > **w pliku pominięć**.
 
-   ![Pomiń diagnostycznych z menu Szybkie akcje](media/suppress-diagnostic-from-editor.png)
+   ![Pomiń diagnostyki w menu Szybkie akcje](media/suppress-diagnostic-from-editor.png)
 
-- Aby pominąć Diagnostyka z **listy błędów**, kliknij prawym przyciskiem myszy na błąd, ostrzeżenie lub komunikat i wybierz **Pomiń** > **źródła w** lub **Pomiń** > **w pliku pominięć**.
+- Aby pominąć diagnostyczne z **lista błędów**, zobacz [Pomiń naruszeń z listy błędów](#suppress-violations-from-the-error-list).
 
-   - W przypadku wybrania **źródła w**, **podgląd zmian** okno dialogowe zostanie otwarte i Podgląd języka C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [ostrzeżenie #Disable](/dotnet/visual-basic/language-reference/directives/directives) dyrektywy, który jest dodawany do kodu źródłowego.
+### <a name="suppress-violations-from-the-error-list"></a>Pomiń naruszeń z obszaru Lista błędów
 
-      ![Podgląd Dodawanie ostrzeżenie #pragma w pliku kodu](media/pragma-warning-preview.png)
+Można pominąć Diagnostyka jednej lub wielu z **lista błędów** , wybierając do pominięcia, a następnie kliknij prawym przyciskiem myszy i wybierając **Pomiń** > **w źródłowej**  lub **Pomiń** > **w pliku pominięć**.
 
-   - W przypadku wybrania **w pliku pominięć**, **podgląd zmian** okno dialogowe zostanie otwarte i pokazuje podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który zostanie dodany do pliku pominięć globalnych.
+   - Jeśli wybierzesz **w źródłowej**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd języka C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [ostrzeżenie #Disable](/dotnet/visual-basic/language-reference/directives/directives) dyrektywę, który zostanie dodany do kodu źródłowego.
 
-      ![Podgląd dodanie atrybutu SuppressMessage do pliku pominięć](media/preview-changes-in-suppression-file.png)
+      ![Dodawanie ostrzeżenie #pragma w pliku kodu w wersji zapoznawczej](media/pragma-warning-preview.png)
+
+   - Jeśli wybierzesz **w pliku pominięć**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który jest dodawany do pliku pominięć globalnych.
+
+      ![Dodawanie atrybutu SuppressMessage do pliku pominięć w wersji zapoznawczej](media/preview-changes-in-suppression-file.png)
 
    W **podgląd zmian** okno dialogowe, wybierz opcję **Zastosuj**.
 
+**Lista błędów** Wyświetla diagnostyki lub reguła naruszeń z obu analizy kodu na żywo i kompilacji. Ponieważ diagnostyki kompilacji mogą być nieaktualne, na przykład, jeśli zakończeniu edycji kodu, aby naprawić naruszenie, ale nie został ponownie skompilowany, nie można ukryć te Diagnostyka z **lista błędów**. Jednak diagnostyka z analizy na żywo lub funkcja IntelliSense, są zawsze aktualne z bieżącego źródła i można pominąć z **lista błędów**. Wyłączenie opcji pomijania w menu kliknij prawym przyciskiem myszy lub kontekstu, prawdopodobnie masz jedną lub więcej kompilacji diagnostyki w zaznaczonym obszarze. Aby wykluczyć diagnostyki kompilacji z wyboru, przełączać **lista błędów** Filtr źródła z **kompilacja + IntelliSense** do **tylko Intellisense**. Następnie wybierz diagnostyki, które chcesz pominąć i postępować zgodnie z opisem w poprzedniej sekcji.
+
+![Filtr źródła listy błędów w programie Visual Studio](media/error-list-filter.png)
+
 > [!NOTE]
-> W projekcie platformy .NET Core Jeśli możesz dodać odwołania do projektu, który ma analizatorów NuGet te analizatory są automatycznie dodawane do projektów zależnych zbyt. Aby wyłączyć to zachowanie, na przykład jeśli projekt zależny jest jednostkowy projekt testowy, oznacz pakietu NuGet jako prywatny w *.csproj* lub *vbproj* pliku przywoływanego projektu:
+> W projekcie platformy .NET Core Jeśli dodasz odwołanie do projektu, który ma analizatorów NuGet te analizatory są automatycznie dodawane do projektu zależnego zbyt. Aby wyłączyć to zachowanie, na przykład jeśli projekt zależny jest projekt testu jednostkowego oznaczyć pakietu NuGet jako prywatne w ramach *.csproj* lub *.vbproj* pliku przywoływanego projektu:
 >
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
@@ -137,6 +145,6 @@ Istnieje wiele sposobów, aby pominąć naruszeń zasady:
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie analizatorów Roslyn w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Zgłaszanie usterki analizator Roslyn](https://github.com/dotnet/roslyn-analyzers/issues)
+- [Prześlij usterkę analizatora Roslyn](https://github.com/dotnet/roslyn-analyzers/issues)
 - [Korzystanie z zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [Pomijanie ostrzeżeń analizy kodu](../code-quality/in-source-suppression-overview.md)

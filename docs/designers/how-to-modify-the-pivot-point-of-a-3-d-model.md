@@ -1,5 +1,5 @@
 ---
-title: 'Porady: modyfikowanie punktu obrotu 3W modelu'
+title: 'Porady: modyfikowanie punktu obrotu modelu 3D'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,41 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747108"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977822"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Porady: modyfikowanie punktu obrotu 3W modelu
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Porady: modyfikowanie punktu obrotu modelu 3D
 
-W tym artykule przedstawiono sposób użycia w edytorze modeli, aby zmodyfikować *punktu przestawnego* modelu 3D. Punkt pivot jest punktem przestrzeni definiująca środek matematyczne obiektu obrotu i skalowania.
+W tym artykule przedstawiono sposób używania edytora modelu do modyfikowania *punkt obrotu* modelu 3D. Punkt obrotu jest punktem w miejscu, definiująca środek matematyczne obiektu dla obrotu i skalowania.
 
 ## <a name="modify-the-pivot-point-of-a-3d-model"></a>Modyfikowanie punktu obrotu modelu 3D
 
-Punkt początkowy modelu 3D można zmienić, modyfikując punktu obrotu.
+Pochodzenie modelu 3D można zmienić, modyfikując jego punktu obrotu.
 
 Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Zaczyna się od istniejącego modelu 3D, takie jak opisany w [porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md).
+1.  Zacznij od istniejącego modelu 3D, takiego jak opisany w [porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md).
 
-2.  Tryb pivot. Na **tryb edytorze modeli** narzędzi wybierz **tryb Pivot** przycisk, aby aktywować tryb pivot. Zostanie wyświetlone okno z wokół **tryb Pivot** przycisk, aby wskazać, że edytor modelu jest teraz w trybie pivot. W trybie pivot operacji, takich jak tłumaczenia wpływa na punktu obrotu obiektu zamiast struktury obiektów w przestrzeni świata.
+2.  Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.
 
-3.  Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **podglądu modelu** narzędzi wybierz **Przetłumacz** narzędzia. Pole, który reprezentuje punktu obrotu pojawia się na powierzchni projektu. Przenieś okno można zmodyfikować punktu obrotu obiektu.
+3.  Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **przeglądarka modelu** narzędzi, wybierz **Translate** narzędzia. Pole, który reprezentuje punkt obrotu jest wyświetlany na powierzchni projektowej. Przenieś pole, aby zmodyfikować punkt obrotu obiektu.
 
-     Przenosząc pole, można przenieść punktu obrotu we wszystkich trzech wymiarach. Tłumaczenie punktu obrotu na jednej osi, przesuń strzałkę, która odpowiada na tej osi. Pole i strzałki Zmień kolor żółty, aby wskazać osi, których dotyczy tłumaczenia.
+     Przenosząc pole, możesz przenieść punkt obrotu we wszystkich trzech wymiarach. Do translacji punktu obrotu wzdłuż osi, Przenieś strzałkę, która odnosi się do tej osi. Strzałki i pole Zmień kolor żółty, aby wskazać osi, który jest zależna od tłumaczenia.
 
-     Można również określić przy użyciu punktu obrotu **tłumaczenia Pivot** właściwości w **właściwości** okna.
+     Można również określić przy użyciu punktu obrotu **Translacja punktu centralnego** właściwość **właściwości** okna.
 
     > [!TIP]
-    > Możesz wyświetlić efekt nowego punktu obrotu przez obrócenie obiektu. Aby obrócić go, należy użyć **Obróć** narzędzie lub zmodyfikować **obrotu** właściwości.
+    > Aby wyświetlić efekt nowego punktu obrotu, obracanie obiektu. Aby obrócić go, należy użyć **Obróć** narzędzia lub zmodyfikować **obrotu** właściwości.
 
-Oto modelu, który ma punkt pivot zmodyfikowane:
+Oto modelu, który ma punkt obrotu zmodyfikowane:
 
-![Modelu DOM, zawierający punkt zmodyfikowane pivot](../designers/media/digit-modified-model.png)
+![Model DOM, zawierający punkt obrotu zmodyfikowane](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md)
+- [Instrukcje: tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md)
 - [Edytor modelu](../designers/model-editor.md)

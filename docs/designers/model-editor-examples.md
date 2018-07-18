@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 798cf3622c5f6bc8462ce475c780ce26190b7ae6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5207c995d79f83df89224d8f44b41986ef21e898
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917439"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978062"
 ---
-# <a name="model-editor-examples"></a>Przykłady Edytora modelu
+# <a name="model-editor-examples"></a>Przykłady edytora modelu
 
-Artykuły w tej sekcji dokumentacji zawierają przykłady, które pokazują, jak za pomocą edytora modelu.
+Artykuły w tej sekcji dokumentacji zawierają przykłady, które pokazują, jak można użyć edytora modelu.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md)|Opisuje sposób tworzenia podstawowego modelu 3D.|
-|[Porady: modyfikowanie punktu obrotu 3W modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Opisuje sposób modyfikowania punktu obrotu i skali modelu 3D.|
-|[Porady: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)|Opisuje sposób tworzenia sceny podstawowe orientacji poziomej.|
-|[Porady: zastosowanie programu do cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Opisuje sposób stosowania programu do cieniowania do modelu 3D.|
+|[Instrukcje: tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md)|W tym artykule opisano sposób tworzenia podstawowego modelu 3D.|
+|[Instrukcje: modyfikowanie punktu obrotu modelu 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Opisuje sposób modyfikowania punktu obrotu i skalowania modelu 3D.|
+|[Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)|W tym artykule opisano, jak utworzyć scenę pozioma podstawowe.|
+|[Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|W tym artykule opisano sposób stosowania programu do cieniowania do modelu 3D.|

@@ -1,6 +1,6 @@
 ---
-title: Zainstaluj program Visual Studio Tools kompilacji do kontenera
-description: Dowiedz się, jak zainstalować program Visual Studio Tools kompilacji do kontenera systemu Windows do obsługi ciągłej integracji i przepływy pracy ciągłego dostarczania (CI/CD).
+title: Instalowanie narzędzia Visual Studio Build Tools do kontenera
+description: Dowiedz się, jak zainstalować narzędzia Visual Studio Build Tools w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD).
 ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
@@ -12,55 +12,55 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47657cd7b9521de365fb02202714a708a4c4c3f5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: aaf954ab2ffb9102becd8d4025043facebb36bb1
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282362"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978238"
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
-Możesz zainstalować program Visual Studio Tools kompilacji do kontenera systemu Windows do obsługi ciągłej integracji i przepływy pracy ciągłego dostarczania (CI/CD). W tym artykule przedstawiono Docker zmiany konfiguracji są wymagane, a także co [obciążeń i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
+Visual Studio Build Tools można zainstalować w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD). Ten artykuł przeprowadzi Cię przez jakie zmiany konfiguracji platformy Docker są wymagane, a także co [obciążenia i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
 
-[Kontenery](https://www.docker.com/what-container) to doskonały sposób, aby pakiet system kompilację spójności można nie tylko w środowisku serwera CI/CD, ale również środowisk deweloperskich. Na przykład można zainstalować kod źródłowy w kontenerze mają zostać utworzone przez dostosowane środowisko, nadal używać programu Visual Studio lub innych narzędzi do pisania kodu. Jeśli CI/CD przepływ pracy używa tego samego obrazu kontenera, można umieścić pewni, że kod tworzy spójne. Kontenery można użyć dla środowiska uruchomieniowego także spójność, który jest wspólny dla micro-services przy użyciu wielu kontenerów przy użyciu systemu aranżacji; jednak wykracza poza zakres tego artykułu.
+[Kontenery](https://www.docker.com/what-container) to doskonały sposób do pakietu przez system kompilacji spójne, można użyć nie tylko w środowisku serwera ciągłej integracji/ciągłego wdrażania, ale również w środowiskach programowania. Na przykład można zainstalować kod źródłowy w kontenerze, który ma zostać utworzony przez dostosowane środowisko, gdy będziesz nadal używać programu Visual Studio lub innych narzędzi, należy napisać kod. Jeśli przepływ pracy ciągłej integracji/ciągłego wdrażania korzysta z tego samego obrazu kontenera, możesz mieć pewność, Twój kod się kompiluje spójne. Możesz używać kontenerów środowiska uruchomieniowego sprawdzania spójności, która jest często mikrousługi przy użyciu wielu kontenerów z systemem aranżacji; jednak wykracza poza zakres tego artykułu.
 
-Jeśli program Visual Studio Tools kompilacji nie wymagają kompilacji kodu źródłowego, można te same kroki dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery systemu Windows nie obsługują interaktywnego interfejsu użytkownika, więc wszystkie polecenia musi zostać zautomatyzowane.
+Jeśli program Visual Studio Build Tools nie ma wymagane do kompilowania swojego kodu źródłowego, można te same kroki dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery Windows nie obsługują interaktywny interfejs użytkownika, więc wszystkie polecenia, które muszą być zautomatyzowane.
 
 ## <a name="overview"></a>Omówienie
 
-Przy użyciu [Docker](https://www.docker.com/what-docker) tworzenia obrazu, z której można utworzyć kontenerów, które kompilacji kodu źródłowego. Przykład plik Dockerfile instaluje najnowsze Visual Studio kompilacji narzędzia 2017 i inne programy przydatne często używanych do kompilowania kodu źródłowego. Dodatkowo można modyfikować własnych plik Dockerfile, aby uwzględnić inne narzędzia i skrypty do uruchomienia testów, publikowanie danych wyjściowych kompilacji i inne.
+Za pomocą [Docker](https://www.docker.com/what-docker) tworzenia obrazu, z której możesz tworzyć kontenery, które są kompilowane w kodzie źródłowym. Przykład pliku Dockerfile instaluje najnowszy program Visual Studio kompilacji narzędzia 2017 i innych programach przydatna często używane do tworzenia kodu źródłowego. Można dalej modyfikować, własny plik Dockerfile, aby uwzględnić inne narzędzia i skrypty, aby uruchomić testy, opublikuj dane wyjściowe kompilacji i nie tylko.
 
-Jeśli użytkownik zainstalował już Docker dla systemu Windows, można przejdź do kroku 3.
+Jeśli zainstalowano już Docker for Windows, możesz przejść do kroku 3.
 
 ## <a name="step-1-enable-hyper-v"></a>Krok 1. Włączanie funkcji Hyper-V
 
-Funkcja Hyper-V nie jest włączona domyślnie. Musi być włączony do uruchamiania Docker dla systemu Windows, ponieważ obecnie tylko izolacji funkcji Hyper-V jest obsługiwana dla systemu Windows 10.
+Funkcji Hyper-V nie jest włączona domyślnie. Musi być włączone, można uruchomić aparatu Docker for Windows, ponieważ obecnie tylko izolacji funkcji Hyper-V jest obsługiwana w przypadku systemu Windows 10.
 
 * [Włączanie funkcji Hyper-V w systemie Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 * [Włączanie funkcji Hyper-V w systemie Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 > [!NOTE]
-> Wirtualizacja musi być włączona na tym komputerze. Zazwyczaj jest włączona domyślnie; Jednak jeśli niepowodzenie instalacji funkcji Hyper-V, zapoznaj się z dokumentacją systemu, jak włączyć wirtualizacji.
+> Wirtualizacja musi być włączona na tym komputerze. Zazwyczaj jest włączona domyślnie Jednak jeśli niepowodzenia instalacji funkcji Hyper-V, zapoznaj się z dokumentacją systemu, jak włączyć wirtualizację.
 
-## <a name="step-2-install-docker-for-windows"></a>Krok 2. Zainstaluj Docker dla systemu Windows
+## <a name="step-2-install-docker-for-windows"></a>Krok 2. Zainstalować platformę Docker for Windows
 
-Jeśli przy użyciu systemu Windows 10, możesz [Pobierz i zainstaluj Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Jeśli używasz systemu Windows Server 2016, należy wykonać [instrukcjami, aby zainstalować Docker w wersji Enterprise](https://docs.docker.com/install/windows/docker-ee).
+Jeśli używasz systemu Windows 10, możesz [Pobierz i zainstaluj platformę Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Jeśli używasz systemu Windows Server 2016, postępuj zgodnie z [instrukcjami, aby zainstalować platformę Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
 
-## <a name="step-3-switch-to-windows-containers"></a>Krok 3. Przełącz się do systemu Windows kontenerów
+## <a name="step-3-switch-to-windows-containers"></a>Krok 3. Przełącz się do Windows kontenery
 
-2017 narzędzia kompilacji można zainstalować tylko w systemie Windows, co wymaga [przełączyć się do systemu Windows kontenery](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontenery systemu Windows w systemie Windows 10 obsługuje tylko [izolacji funkcji Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), podczas gdy kontenery systemu Windows w systemie Windows Server 2016 obsługuje zarówno funkcji Hyper-V i OLE DB.
+Tworzenie narzędzi 2017 można zainstalować tylko na Windows, co wymaga [przełączyć się do kontenerów Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontenery Windows w systemie Windows 10 obsługują tylko [izolacji funkcji Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), podczas gdy kontenery Windows w systemie Windows Server 2016 obsługuje zarówno funkcji Hyper-V i izolację procesów.
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>Krok 4. Rozwiń kontener maksymalny rozmiar dysku
 
-Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — wymaga dużej ilości miejsca na dysku dla wszystkich narzędzi, które są zainstalowane. Mimo że przykładowy plik Dockerfile wyłącza pamięć podręczną pakietów, można zwiększyć rozmiar dysku kontener obrazów, aby pomieścić wymagane miejsce. Obecnie w systemie Windows, możesz tylko zwiększyć rozmiar dysku przez zmianę konfiguracji Docker.
+Program Visual Studio Build Tools — i w większym stopniu, w programie Visual Studio — wymagają dużej ilości miejsca na dysku wszystkie narzędzia, które mają zostać zainstalowane. Mimo, że przykładowy plik Dockerfile powoduje wyłączenie pamięci podręcznej pakietu, rozmiar dysku obrazów kontenerów musisz zwiększyć miejsce wymagane. Obecnie w Windows, możesz tylko zwiększyć rozmiar dysku, zmieniając konfigurację platformy Docker.
 
 **W systemie Windows 10**:
 
-1. [Rick — kliknij ikonę Docker dla systemu Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień...** .
-2. [Polecenie demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
+1. [Rick kliknąć ikonę platformy Docker for Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień...** .
+2. [Kliknij pozycję demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
 3. [Przełącz **podstawowe** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) przycisk, aby **zaawansowane**.
-4. Dodaj następujące właściwości tablicy JSON zwiększenie miejsca na dysku do 120 GB (więcej niż wystarczającego dla narzędzia kompilacji możliwości rozbudowy).
+4. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
 
    ```json
    {
@@ -70,7 +70,7 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
    }
    ```
 
-   Ta właściwość jest dodawany do wszystkich danych, które już istnieje. Na przykład z te zmiany zostaną zastosowane do domyślnego pliku konfiguracji demon, powinien zostać wyświetlony:
+   Ta właściwość jest dodawany do niczego, którą już posiadasz. Na przykład za pomocą tych zmian dotyczy domyślny plik konfiguracji demona, powinien zostać wyświetlony:
 
    ```json
    {
@@ -94,8 +94,8 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
    sc.exe stop docker
    ```
 
-2. W wierszu polecenia z podwyższonym poziomem uprawnień, należy edytować "% ProgramData%\Docker\config\daemon.json" (lub niezależnie od określony do `dockerd --config-file`).
-3. Dodaj następujące właściwości tablicy JSON zwiększenie miejsca na dysku do 120 GB (więcej niż wystarczającego dla narzędzia kompilacji możliwości rozbudowy).
+2. W wierszu polecenia z podwyższonym poziomem uprawnień należy edytować "% ProgramData%\Docker\config\daemon.json" (lub niezależnie od rodzaju określony do `dockerd --config-file`).
+3. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
 
    ```json
    {
@@ -105,7 +105,7 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
    }
    ```
 
-   Ta właściwość jest dodawany do wszystkich danych, które już istnieje.
+   Ta właściwość jest dodawany do niczego, którą już posiadasz.
 4. Zapisz i zamknij plik.
 5. Uruchom usługę "docker":
 
@@ -113,12 +113,12 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
    sc.exe start docker
    ```
 
-## <a name="step-5-create-and-build-the-dockerfile"></a>Krok 5. Tworzenie i kompilacja plik Dockerfile
+## <a name="step-5-create-and-build-the-dockerfile"></a>Krok 5. Utwórz i skompiluj plik Dockerfile
 
-Zapisz poniższy przykład plik Dockerfile do nowego pliku na dysku. Jeśli nazwą jest po prostu plik Dockerfile"", który jest rozpoznawany przez domyślne.
+Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po prostu plik Dockerfile"", który jest rozpoznawany przez domyślny.
 
 > [!NOTE]
-> W tym przykładzie plik Dockerfile wyklucza tylko starsze zestawy Windows SDK, której nie można zainstalować w kontenerach. Starsze wersje spowodować polecenie kompilacji, aby zakończyć się niepowodzeniem.
+> W tym przykładzie plik Dockerfile tylko wyklucza starszych zestawów SDK Windows, której nie można zainstalować w kontenerach. Starsze wersje spowodować, że polecenie kompilacji, aby zakończyć się niepowodzeniem.
 
 1. Otwórz wiersz polecenia.
 2. Utwórz nowy katalog (zalecane):
@@ -127,19 +127,22 @@ Zapisz poniższy przykład plik Dockerfile do nowego pliku na dysku. Jeśli nazw
    mkdir C:\BuildTools
    ```
 
-3. Przejdź do nowego katalogu:
+3. Zmień katalogi do tego nowego katalogu:
 
    ```shell
    cd C:\BuildTools
    ```
 
-3. Zapisz C:\BuildTools\Dockerfile następującą zawartość.
+3. Zapisz C:\BuildTools\Dockerfile następującą zawartością.
 
    ```dockerfile
    # escape=`
 
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
+
+   # Restore the default Windows shell for correct batch processing below.
+   SHELL ["cmd", "/S", "/C"]
 
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
@@ -162,7 +165,7 @@ Zapisz poniższy przykład plik Dockerfile do nowego pliku na dysku. Jeśli nazw
    ```
 
    > [!NOTE]
-   > Jeśli obraz jest oparty bezpośrednio na program microsoft/windowsservercore, .NET Framework nie może poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Zarządzany kod może nie działać po zakończeniu instalacji. Zamiast tego, na podstawie obrazu [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej.
+   > Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, nowsze obrazów może używać programu PowerShell jako domyślny `SHELL` co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
 
 4. Uruchom następujące polecenie, w tym katalogu.
 
@@ -170,36 +173,36 @@ Zapisz poniższy przykład plik Dockerfile do nowego pliku na dysku. Jeśli nazw
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Wartość domyślna 1 GB nie są wystarczające po zainstalowaniu niektórych obciążeń; jednak można kompilować z tylko 1 GB pamięci, w zależności od wymagań kompilacji.
+   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Wartość domyślna 1 GB nie wystarcza podczas instalowania niektórych obciążeń; jednak może być zdolny do skompilowania z tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
 
-   Finalnego obrazu jest oznakowany "buildtools2017:latest", więc można łatwo uruchomić w kontenerze jako "buildtools2017" od "najnowszej" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji narzędzia 2017 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener o określonej kompilacji programu Visual Studio numer, a także "najnowszej" dzięki kontenery można użyć określonego Wersja spójnie.
+   Finalnego obrazu jest oznakowany "buildtools2017:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2017" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji 2017 narzędzia w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
 
 ## <a name="step-6-using-the-built-image"></a>Krok 6. Przy użyciu wbudowanego obrazu
 
-Teraz, po utworzeniu obrazu, można uruchomić w kontenerze celu kompilacji zarówno interakcyjne i automatyczne. W przykładzie użyto wiersza polecenia dewelopera, więc ścieżki i zmiennych środowiskowych są już skonfigurowane.
+Teraz, po utworzeniu obrazu, możesz ją uruchomić w kontenerze celu zarówno interaktywny, jak i automatyczne kompilacje. W przykładzie użyto wiersza polecenia dewelopera, więc zmiennej PATH i inne zmienne środowiskowe są już skonfigurowane.
 
 1. Otwórz wiersz polecenia.
-2. Uruchom zestaw zmiennych środowiska kontenera zaczynać się wszystkich deweloperów środowiska PowerShell:
+2. Uruchom kontener, aby rozpoczynać Środowisko PowerShell dla wszystkich deweloperów zmiennych środowiskowych ustawionych:
 
    ```shell
    docker run -it buildtools2017
    ```
 
-Aby użyć tego obrazu elementu konfiguracji/CD przepływu pracy, można opublikować go do własnych [rejestru kontenera Azure](https://azure.microsoft.com/services/container-registry) lub innych wewnętrzny [rejestru Docker](https://docs.docker.com/registry/deploying) , serwery muszą tylko ten.
+Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdrażania, można opublikować ją w ramach swojej własnej [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry) lub innych wewnętrznych [rejestru platformy Docker](https://docs.docker.com/registry/deploying) tak serwerów wystarczy wyciągniesz go.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+Czasami mogą wystąpić problemy. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroków rozwiązywania problemów pomoże, możesz skontaktować nam się przez czat na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [stronę pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Możesz zgłosić problemy z produktu z nami za pośrednictwem [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
+* Możesz udostępnić sugestię dotyczącą produktu z nami w [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Możesz śledzić problemy z produktu i Szukaj odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
+* Można także nawiązać kontakt z nami i innych deweloperów programu Visual Studio za pośrednictwem [konwersacji programu Visual Studio community dotyczącym oprogramowania Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)
-* [Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)

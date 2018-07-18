@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Model terenu 3D'
+title: 'Instrukcje: modelowanie terenu 3D'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,52 +10,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745581"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977749"
 ---
-# <a name="how-to-model-3d-terrain"></a>Porady: Model terenu 3D
+# <a name="how-to-model-3d-terrain"></a>Instrukcje: modelowanie terenu 3D
 
-W tym artykule przedstawiono sposób użycia w edytorze modeli do utworzenia modelu terenu 3D.
+W tym artykule przedstawiono sposób używania edytora modelu, aby utworzyć model terenu 3D.
 
 ## <a name="create-a-3d-terrain-model"></a>Tworzenie modelu terenu 3D
 
-Można utworzyć 3D terenu podziału na płaszczyźnie dokonanie kroje dodatkowe, a następnie manipulowanie ich wierzchołków do utworzenia ciekawe funkcje terenu.
+Możesz utworzyć terenu 3D podpodział płaszczyzny zapewnienie dodatkowych twarzy, a następnie manipulowanie ich wierzchołki, aby tworzyć interesujące funkcje terenu.
 
-Po zakończeniu modelu powinien wyglądać następująco:
+Gdy skończysz, model powinien wyglądać następująco:
 
 ![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png)
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Tworzenie modelu 3D do pracy z. Aby uzyskać informacje o sposobie dodawania modelu do projektu, w sekcji wprowadzenie w [edytorze modeli](../designers/model-editor.md).
+1.  Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
 
-2.  Dodaj płaszczyźnie do sceny. W **przybornika**w obszarze **kształtów**, wybierz pozycję **płaszczyzny** i przenieść ją na powierzchnię projektu.
+2.  Dodaj płaszczyznę do sceny. W **przybornika**w obszarze **kształty**, wybierz opcję **płaszczyzny** i przenieś go do powierzchni projektowej.
 
     > [!TIP]
-    > Aby ułatwić obiektu płaszczyzny do pracy z, można go ramek na powierzchni projektu. W **wybierz** tryb, wybierz obiekt płaszczyzny, a następnie na pasku narzędzi w edytorze modeli, wybierz **ramki obiektu** przycisku.
+    > Aby ułatwić obiektu płaszczyzny chcesz pracować, można ramki go na powierzchnię. W **wybierz** tryb, wybierz obiekt płaszczyzny, a następnie na pasku narzędzi edytora modelu, wybierz **obiekt w ramce** przycisku.
 
-3.  Wprowadź trybu wyboru pierwszego planu. Na pasku narzędzi w edytorze modeli, wybierz **wybierz krój**.
+3.  Wprowadź trybu wyboru pierwszego planu. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
 
-4.  Podzielić płaszczyzny. W trybie wyboru krój wybierz płaszczyzny raz, aby aktywować go do wyboru, a następnie wybierz go ponownie, aby wybrać jej tylko powierzchni. Na pasku narzędzi w edytorze modeli, wybierz **podzielić krój**. Spowoduje to dodanie nowego wierzchołków płaszczyzny podziel go na partycje równej wielkości.
+4.  Należy podzielić płaszczyzny. W przypadku trybu wyboru pierwszego planu wybierz płaszczyzny raz go uaktywnić dla zaznaczenia, a następnie wybierz ją ponownie, aby wybrać jej tylko twarzy. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki płaszczyzny i podziel go na partycje równej wielkości.
 
-5.  Utwórz więcej podziałów podrzędnych. Powierzchnie nadal zaznaczony, wybierz polecenie **podzielić krój** dwa razy. Spowoduje to utworzenie Suma powierzchnie 64. Tworząc więcej podziałów podrzędnych, można nadać terenu jeszcze więcej szczegółów.
+5.  Utwórz więcej segmentami. Przy wciąż zaznaczonym nowe powierzchnie, wybierz polecenie **Podziel pierwszy plan** dwa razy. Spowoduje to utworzenie w sumie 64 twarzy. Tworząc więcej segmentami, można nadać terenu jeszcze więcej szczegółów.
 
-6.  Wprowadź trybu wyboru punktu. Na pasku narzędzi w edytorze modeli, wybierz **wybierz punkt**.
+6.  Przejść do trybu wyboru punktu. Na pasku narzędzi edytora modelu wybierz **wybierz punkt**.
 
-7.  Modyfikowanie punktu w celu tworzenia funkcji terenu. W trybie wyboru punktu, wybierz jeden z punktów, a następnie na pasku narzędzi w edytorze modeli, wybierz **Przetłumacz** narzędzia. Pole, który reprezentuje punkt pojawia się na powierzchni projektu. Umożliwia zieloną strzałkę Przenieś okno i tym samym zmodyfikować wysokość punktu. Powtórz ten krok dla różnych punktów w celu utworzenia ciekawe funkcje terenu.
+7.  Zmodyfikuj punkt, aby utworzyć funkcję terenu. W trybie wyboru punktu, należy wybrać jeden z punktów, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia. Pole, który reprezentuje punkt jest wyświetlany na powierzchni projektowej. Aby przenieść pole i tym samym zmodyfikować wysokość punktu, użyj zieloną strzałkę. Powtórz ten krok dla różnych punktów w celu utworzenia interesujące funkcje terenu.
 
     > [!TIP]
     > Możesz wybrać kilka punktów jednocześnie z ich w jednolity sposób.
 
-Model terenu zostało ukończone. Oto ponownie ostatecznego modelu z cieniowaniem Phong stosowane:
+Model terenu jest kompletny. Poniżej przedstawiono końcowego modelu ponownie przy użyciu cieniowanie Phong zastosowane:
 
 ![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png)
 
-Ten model terenu można użyć do zaprezentowania efekt gradientu programu do cieniowania, które jest opisane w [porady: tworzenie do cieniowania gradientu geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Ten model terenu można użyć, aby zademonstrować efekt modułu cieniującego gradientu, który jest opisany w [porady: tworzenie cieniowania gradientu geometrycznego](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Zobacz także
 

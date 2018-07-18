@@ -10,111 +10,111 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abbfffd1b83b8e5e1133ea909fc14ca90254c4c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927077"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977997"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Skróty klawiaturowe w programie Blend
 ## <a name="project-shortcuts"></a>Skróty projektu
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Tworzenie nowego projektu|CTRL + SHIFT + N|
-|Otwórz projekt lub rozwiązanie (nie lokacja)|CTRL + SHIFT + O|
-|Zamknij rozwiązanie|CTRL + SHIFT + C|
-|Zapisywanie kopii rozwiązania lub lokacji|CTRL + SHIFT + P|
-|Dodaj istniejący element do projektu|CTRL+I|
-|Dodaj odwołanie do biblioteki DLL (WPF)|ALT + SHIFT + R|
-|Tworzenie projektu|CTRL + SHIFT + B|
-|Testowanie projektu lub lokacji|F5|
+|Tworzenie nowego projektu|**CTRL**+**Shift**+**N**|
+|Otwórz projekt lub rozwiązanie (nie lokacji)|**CTRL**+**Shift**+**O**|
+|Zamknij rozwiązanie|**CTRL**+**Shift**+**C**|
+|Zapisz kopię rozwiązań lub witryny|**CTRL**+**Shift**+**P**|
+|Dodaj istniejący element do projektu|**CTRL**+**I**|
+|Dodaj odwołanie do biblioteki DLL (WPF)|**ALT**+**Shift**+**R**|
+|Skompiluj projekt|**CTRL**+**Shift**+**B**|
+|Testowanie projektu lub witryny|**F5**|
 
 ## <a name="document-shortcuts"></a>Skróty do dokumentów
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Przełączanie między otwarte dokumenty|CTRL+TAB|
-|Zapisuje aktywny dokument|CTRL+S|
-|Zapisz wszystkie dokumenty|CTRL + SHIFT + S|
-|Zamyka aktywny dokument.|CTRL + W|
-|Zamknij wszystkie otwarte dokumenty|CTRL + SHIFT + W|
-|Cofa ostatnią czynność.|CTRL+Z|
-|Wykonaj ponownie ostatnią akcję, która została cofnąć|CTRL + Y lub CTRL + SHIFT + Z|
-|Utwórz adnotację czasu projektowania|CTRL + SHIFT + T|
-|Wytnij|CTRL+X|
-|Kopiuj|CTRL+C|
-|Wklej|CTRL+V|
-|Usuwanie|DELETE|
-|Znajdź tekst (XAML widoku lub tylko edytora kodu JavaScript)|CTRL + F|
-|Znajdź następne wystąpienie tekstu (XAML widoku lub tylko edytora kodu JavaScript)|F3 lub CTRL + H|
+|Przełączać się między otwartych dokumentach|**CTRL**+**kartę**|
+|Zapisz aktywny dokument|**CTRL**+**S**|
+|Zapisz wszystkie dokumenty|**CTRL**+**Shift**+**S**|
+|Zamyka aktywny dokument.|**Ctrl**+**W**|
+|Zamknij wszystkie otwarte dokumenty|**Ctrl**+**Shift**+**W**|
+|Cofnij ostatnią akcję|**CTRL**+ Z|
+|Wykonaj ponownie ostatnią akcję, która była cofnąć|**CTRL**+ Y lub **Ctrl**+**Shift**+**Z**|
+|Utwórz adnotację czasu projektowania|**CTRL**+**Shift**+**T**|
+|Wytnij|**CTRL**+**X**|
+|Kopiuj|**CTRL**+**C**|
+|Wklej|**CTRL**+**V**|
+|Usuwanie|**Usuwanie**|
+|Znajdź tekst (Widok XAML lub tylko Edytor kodu JavaScript)|**CTRL**+**F**|
+|Znajdź następne wystąpienie tekstu (Widok XAML lub tylko Edytor kodu JavaScript)|**F3** lub **Ctrl**+**H**|
 
 ## <a name="object-shortcuts"></a>Skróty do obiektu
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Utwórz nowy element|CTRL + N|
-|Duplikowanie obiektów|Naciśnij klawisz ALT, przeciągnij obiekt|
-|Zmienić elementu nadrzędnego obiektu|Przeciągnij obiekt w panelu układu, a następnie naciśnij klawisz ALT|
-|Edytowanie tekstu w formancie|F2 (ESC, aby zamknąć)|
-|Edytuj formantu (WPF)|CTRL+E|
-|Wprowadź wybrane obiekty tej samej szerokości|CTRL + SHIFT + 1|
-|Ustawianie wybrane obiekty tej samej wysokości|CTRL + SHIFT + 2|
-|Mieć ten sam rozmiar wybranych obiektów|CTRL + SHIFT + 9|
-|Przerzuć wybrany obiekt w poziomie|CTRL + SHIFT + 3|
-|Przerzuć wybrany obiekt w pionie|CTRL + SHIFT + 4|
-|Wybranie wielu obiektów|Naciśnij i przytrzymaj klawisz CTRL|
-|Zaznaczyć wiele sąsiadujących ze sobą obiektów|Naciśnij i przytrzymaj klawisz SHIFT|
-|Dopasuj zaznaczenie do rozmiaru ekranu|CTRL + 9|
-|Kontener usługi active numeru PIN|CTRL + SHIFT + D|
-|Przesunąć wybranych obiektów|Klawisze strzałek|
-|Automatycznie dopasuj szerokość|CTRL + SHIFT + 5|
-|Automatycznie dopasuj wysokość|CTRL + SHIFT + 6|
-|Obiekty grupy w panelu układu|CTRL + G|
-|Rozgrupowywanie obiektów|CTRL + SHIFT + G|
-|Przenieś zaznaczony obiekt do przodu|CTRL + SHIFT +]|
-|Przenieś do przodu|CTRL +]|
-|Przenieś zaznaczony obiekt do tyłu|CTRL + SHIFT + [|
-|Przesuń do tyłu|CTRL+[|
-|Formantu użytkownika z zaznaczonych obiektów (WPF)|F8|
-|Proporcje obiektów|Naciśnij i przytrzymaj klawisz SHIFT podczas przenoszenia obiektu|
-|Obracanie obiektu o 15 stopni|Naciśnij i przytrzymaj klawisz SHIFT podczas obracania obiektu|
-|Należy ścieżką wycinka|CTRL + 7|
-|Ścieżka wycinka zlecenia|CTRL + SHIFT + 7|
-|Ścieżkę złożoną|CTRL + 8|
-|Zwolnij złożony ścieżki|CTRL + SHIFT + 8|
-|Blokowanie wybór|CTRL+L|
-|Odblokuj wszystkie obiekty|CTRL + SHIFT + L|
-|Pokaż zaznaczenie|CTRL + T|
-|Ukryj zaznaczenia|CTRL + 3|
-|Wybierz wszystkie obiekty|CTRL+A|
-|Wyczyść zaznaczenie wszystkich obiektów|CTRL + SHIFT + A|
+|Utwórz nowy element|**CTRL**+**N**|
+|Duplikowanie obiektów|Naciśnij i przytrzymaj **Alt** , przeciągnij obiekt|
+|Zmień obiekt nadrzędny dla obiektu|Przeciągnij obiekt nad panel układu i naciśnij klawisz **Alt**|
+|Edytowanie tekstu w kontrolce|**F2** (**Esc** aby zakończyć)|
+|Edycja kontrolki (WPF)|**CTRL**+**E**|
+|Wprowadź taką samą szerokość zaznaczonych obiektów|**CTRL**+**Shift**+**1**|
+|Taka wybrane obiekty sama wysokość|**CTRL**+**Shift**+**2**|
+|Mieć ten sam rozmiar wybranych obiektów|**CTRL**+**Shift**+**9**|
+|Przerzuć w poziomie wybranego obiektu|**CTRL**+**Shift**+**3**|
+|Przerzuć w pionie wybranego obiektu|**CTRL**+**Shift**+**4**|
+|Wybranie wielu obiektów|Naciśnij i przytrzymaj **Ctrl**|
+|Zaznaczyć wiele sąsiadujących obiektów|Naciśnij i przytrzymaj **Shift**|
+|Dopasuj zaznaczenie do rozmiaru ekranu|**CTRL**+**9**|
+|Przypnij aktywny kontener|**CTRL**+**Shift**+**D**|
+|Posuń zaznaczone obiekty|**Strzałka** kluczy|
+|Automatycznie dopasuj szerokość|**CTRL**+**Shift**+**5**|
+|Automatycznie dopasuj wysokość|**CTRL**+**Shift**+**6**|
+|Obiekty grupy w panelu układu|**CTRL**+**G**|
+|Rozgrupuj obiekty|**CTRL**+**Shift**+**G**|
+|Przenieś zaznaczony obiekt do przodu|**CTRL**+**Shift**+**]**|
+|Przesuń do przodu|**CTRL**+**]**|
+|Przenieś zaznaczony obiekt do tyłu|**CTRL**+**Shift**+**[**|
+|Przesuń do tyłu|**CTRL**+**[**|
+|Kontrolka użytkownika, z zaznaczonych obiektów (WPF)|**F8**|
+|Proporcje obiektów|Naciśnij i przytrzymaj **Shift** podczas przenoszenia obiektu|
+|Obracanie obiektu w przyrostach co 15 stopni|Naciśnij i przytrzymaj **Shift** podczas obracania obiektu|
+|Utwórz ścieżkę przycinania|**CTRL**+**7**|
+|Zwolnij ścieżkę przycinania|**CTRL**+**Shift**+**7**|
+|Utwórz ścieżkę złożoną|**CTRL**+**8**|
+|Zwolnij ścieżkę złożoną|**CTRL**+**Shift**+**8**|
+|Zablokuj zaznaczenie|**CTRL**+**L**|
+|Odblokuj wszystkie obiekty|**CTRL**+**Shift**+**L**|
+|Pokaż zaznaczenie|**CTRL**+**T**|
+|Ukryj zaznaczenie|**CTRL**+**3**|
+|Zaznacz wszystkie obiekty|**CTRL**+**A**|
+|Wyczyść zaznaczenie wszystkich obiektów|**CTRL**+**Shift**+**A**|
 
 ## <a name="view-shortcuts"></a>Wyświetlanie skrótów
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Przełączanie między **projekt**, **kod**, i **podziału** widoków|F11|
-|Powiększanie obszaru roboczego|CTRL + ZNAK RÓWNOŚCI|
-|Pomniejsz w obszarze roboczym|CTRL + ZNAK MINUS (-)|
-|Powiększanie lub pomniejszanie w obszarze roboczym|Obróć koło myszy|
-|Przenieś obszar roboczy w lewo lub w prawo|Klawisz SHIFT i Obróć koło myszy|
-|Przenieś obszar roboczy w górę lub w dół|CTRL i kółka myszy obracania|
-|Dopasuj zaznaczenie do rozmiaru ekranu|CTRL+0|
-|Wyświetlić obszar roboczy w rzeczywistym rozmiarze|CTRL + 1|
-|Pokaż lub Ukryj dojść|F9|
-|Pokaż lub Ukryj granicami obiektu|CTRL + SHIFT + H|
-|Przełączanie między **projekt**, **XAML**, i **podziału** widoków|F11|
+|Przełączanie między **projektowania**, **kodu**, i **podziału** widoków|**F11**|
+|Powiększanie obszaru kompozycji|**CTRL**+**równości** (**=**)|
+|Pomniejsz w obszarze kompozycji|**CTRL**+**znak Minus** (**-**)|
+|Powiększanie lub pomniejszanie w obszarze kompozycji|Obrót kółkiem myszy|
+|Przenieś obszaru roboczego po lewej stronie lub w prawo|**SHIFT** i obrót kółkiem myszy|
+|Przenieś obszar roboczy w górę lub w dół|**CTRL** i obrót kółkiem myszy|
+|Dopasuj zaznaczenie do rozmiaru ekranu|**CTRL**+**0**|
+|Wyświetlanie obszaru roboczego w rzeczywistym rozmiarze|**CTRL**+**1**|
+|Pokaż lub Ukryj dojścia|**F9**|
+|Pokaż lub Ukryj granice obiektu|**CTRL**+**Shift**+**H**|
+|Przełączanie między **projektowania**, **XAML**, i **podziału** widoków|**F11**|
 
-## <a name="workspace-shortcuts"></a>Skrótów obszaru roboczego
+## <a name="workspace-shortcuts"></a>Skróty obszaru roboczego
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Przełączanie między **animacji** i **projekt** obszary robocze|CTRL + F11|
-|Pokaż lub Ukryj **zasoby** panelu|CTRL + KROPKA|
-|Pokaż lub Ukryj **wyniki** panelu|F12|
-|Pokaż lub Ukryj wszystkie panele|F4|
-|Resetowanie układu aktywnego obszaru roboczego|CTRL + SHIFT + R|
-|Przesuwanie obszaru roboczego|Przytrzymaj klawisz spacji|
-|Użyj tymczasowo **wybór** narzędzia (gdy inne narzędzie jest wybrane)|Naciśnij i przytrzymaj klawisz CTRL|
+|Przełączanie między **animacji** i **projektowania** obszarów roboczych|**CTRL**+**F11**|
+|Pokaż lub Ukryj **zasoby** panelu|**CTRL**+**okres**|
+|Pokaż lub Ukryj **wyniki** panelu|**F12**|
+|Pokazywanie lub ukrywanie wszystkich paneli|**F4**|
+|Resetuj układ aktywnego obszaru roboczego|**CTRL**+**Shift**+**R**|
+|Przesuń w obszarze roboczym|Naciśnij i przytrzymaj **spacja**|
+|Tymczasowo używane **wybór** narzędzia (podczas gdy inne narzędzie pozostaje wybrane)|Naciśnij i przytrzymaj **Ctrl**|
