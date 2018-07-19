@@ -1,5 +1,5 @@
 ---
-title: MSBuild. Celem plików | Dokumentacja firmy Microsoft
+title: Program MSBuild. Jest przeznaczony dla plików | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/24/2017
 ms.technology: msbuild
@@ -18,35 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe88e0c8ee041682b8af4bbfaab2a83fb21defde
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 835d6e80c650a18b3e595d1c6dc0c8bafd6b958a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571311"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080015"
 ---
-# <a name="msbuild-targets-files"></a>MSBuild — Pliki .Targets
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje kilka pliki .targets, zawierające elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliki, aby uprościć konserwację i czytelność projektu.  
+# <a name="msbuild-targets-files"></a>MSBuild — pliki .targets
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera kilka *.targets* pliki, które zawierają elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliki w celu uproszczenia konserwacji i czytelności projektu.  
 
- Projekty zwykle zaimportować co najmniej jeden plik .targets do definiowania procesu kompilacji. Na przykład [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu utworzonych przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaimportuje Microsoft.CSharp.targets importującego Microsoft.Common.targets. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Projektu zostaną zdefiniowane elementy i właściwości specyficzne do tego projektu, ale reguły dla kompilacji standardowego [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu są zdefiniowane w plikach TARGETS zaimportowany.  
+ Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Na przykład [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekt utworzony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaimportuje *Microsoft.CSharp.targets* które importuje *Microsoft.Common.targets*. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Sam projekt Definiowanie elementów i właściwości określonych do tego projektu, ale standard tworzenia reguł dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu są zdefiniowane w zaimportowanych *.targets* plików.  
 
- `$(MSBuildToolsPath)` Określa ścieżkę te wspólne pliki .targets. Jeśli `ToolsVersion` 4.0, pliki znajdują się w następującej lokalizacji: `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
+ `$(MSBuildToolsPath)` Określa ścieżkę dla tych wspólnych *.targets* plików. Jeśli `ToolsVersion` 4.0, pliki znajdują się w następującej lokalizacji:  *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*  
 
 > [!NOTE]
->  Aby uzyskać informacje o sposobie tworzenia własnych elementów docelowych, zobacz [cele](../msbuild/msbuild-targets.md). Aby uzyskać informacje o sposobie używania `Import` elementu, aby wstawić plik projektu do innego pliku projektu, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md) i [porady: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+>  Aby uzyskać informacje o sposobie tworzenia własnych elementów docelowych, zobacz [cele](../msbuild/msbuild-targets.md). Aby uzyskać informacje o sposobie używania `Import` element, aby wstawić plik projektu do innego pliku projektu, zobacz [Import — element (MSBuild)](../msbuild/import-element-msbuild.md) i [porady: użycie tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
 
-## <a name="common-targets-files"></a>Typowe. Pliki obiektów docelowych  
+## <a name="common-targets-files"></a>Wspólne pliki .targets  
 
-|. Plik elementów docelowych|Opis|  
+|*.TARGETS* pliku|Opis|  
 |-------------------|-----------------|  
-|Microsoft.Common.targets|Definiuje kroki procesu kompilacji standardowe [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów.<br /><br /> Zaimportowane pliki Microsoft.CSharp.targets i Microsoft.VisualBasic.targets, które obejmują następująca instrukcja: `<Import Project="Microsoft.Common.targets" />`|  
-|Microsoft.CSharp.targets|Definiuje kroki w procesie standardowe kompilacji w projektach Visual C#.<br /><br /> Zaimportowane przez Visual C# pliki projektu (csproj), które obejmują następująca instrukcja: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
-|Microsoft.VisualBasic.targets|Definiuje kroki w procesie kompilacji standardowe dla projektów języka Visual Basic.<br /><br /> Zaimportowane przez pliki projektu Visual Basic (.vbproj), które obejmują następująca instrukcja: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
+|*Microsoft.Common.targets*|Definiuje kroki w standardowym procesem kompilacji dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów.<br /><br /> Zaimportowany przez *Microsoft.CSharp.targets* i *Microsoft.VisualBasic.targets* pliki zawierające następującą instrukcję: `<Import Project="Microsoft.Common.targets" />`|  
+|*Microsoft.CSharp.targets*|Definiuje kroki ze standardowym procesem kompilacji dla projektów języka Visual C#.<br /><br /> Zaimportowanych przez pliki projektu Visual C# (*.csproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
+|*Microsoft.VisualBasic.targets*|Definiuje kroki w standardowym procesem kompilacji dla projektów języka Visual Basic.<br /><br /> Zaimportowanych przez pliki projektu w języku Visual Basic (*.vbproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
-Directory.Build.targets jest zdefiniowane przez użytkownika pliku, który zawiera dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z Microsoft.Common.targets, chyba że właściwość **ImportDirectoryBuildTargets** ustawiono **false**.
+*Directory.Build.targets* jest plikiem zdefiniowanych przez użytkownika zawiera dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft.Common.targets* chyba że właściwość **ImportDirectoryBuildTargets** ustawiono **false**.
 
-## <a name="see-also"></a>Zobacz też  
- [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Import — element (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)

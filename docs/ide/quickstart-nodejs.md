@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67443cdfa640c0dca020feb34f10ec3a636c982e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
-ms.translationtype: HT
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924502"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131859"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji Node.js
 
@@ -90,7 +90,7 @@ Gratulacje z okazji ukończenie tego przewodnika Szybki Start, w którym stało 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji w usłudze Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+> [Wdrażanie aplikacji do usługi App Service w systemie Linux](../javascript/publish-nodejs-app-azure.md)
 
-- [Samouczek dotyczący Node.js lub Express](../nodejs/tutorial-nodejs.md)
-- [Samouczek dotyczący środowiska Node.js i React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- [Samouczek dotyczący Node.js lub Express](../javascript/tutorial-nodejs.md)
+- [Samouczek dotyczący środowiska Node.js i React](../javascript/tutorial-nodejs-with-react-and-jsx.md)

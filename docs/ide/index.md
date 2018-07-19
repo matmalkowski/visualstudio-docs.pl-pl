@@ -1,6 +1,6 @@
 ---
-title: Dokumentacji programu Visual Studio
-description: Dowiedz się, jak Visual Studio ułatwia tworzenie aplikacji przy użyciu różnych języków programowania.
+title: Dokumentacja programu Visual Studio
+description: Dowiedz się, jak program Visual Studio pozwala tworzyć aplikacje przy użyciu różnych języków programowania.
 ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
@@ -10,17 +10,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fafcbd925d144cb619696da105f51e2f00db1421
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103206"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131947"
 ---
-# <a name="visual-studio-documentation"></a>Dokumentacji programu Visual Studio
+# <a name="visual-studio-documentation"></a>Dokumentacja programu Visual Studio
 
-Dowiedz się, jak Visual Studio ułatwia tworzenie aplikacji przy użyciu różnych języków programowania.
-Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i aplikacji przy użyciu programu Visual Studio.
+Dowiedz się, jak program Visual Studio pozwala tworzyć aplikacje przy użyciu różnych języków programowania.
+Samouczki, klipy wideo i innych dokumentach pokazano sposoby tworzenia kodu i aplikacji przy użyciu programu Visual Studio.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -52,7 +52,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Omówienie programu Visual Studio</h3>
+                            <h3>Zapoznaj się z omówieniem programu Visual Studio</h3>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio 2017 na wirtualna Akademia firmy Microsoft</h3>
+                        <h3>Program Visual Studio 2017 w Microsoft Virtual Academy</h3>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
     </li>
 </ul>
 
-<h2>Środowisko programu Visual Studio z 5-minutowy "poradniki Szybki Start"</h2>
+<h2>Środowisko Visual Studio z 5-minutowych "samouczki Szybki Start"</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -93,7 +93,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Pobierz obiektowe z zintegrowane środowisko programistyczne (IDE)</h3>
+                        <h3>Pobierz, aby poznać podstawy zintegrowanego środowiska programistycznego (IDE)</h3>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Personalizowanie kolorów motywu i tekst</h3>
+                        <h3>Personalizowanie motywu i kolorów tekstu</h3>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Utwórz aplikację konsoli za pomocą Visual Basic</h3>
+                        <h3>Tworzenie aplikacji konsoli za pomocą Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji konsoli w języku C++</h3>
+                        <h3>Tworzenie aplikacji konsolowej przy użyciu języka C++</h3>
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji sieci web języka Python</h3>
+                        <h3>Tworzenie aplikacji internetowej za pomocą języka Python</h3>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji sieci web za pomocą języka Node.js</h3>
+                        <h3>Tworzenie aplikacji internetowej przy użyciu środowiska Node.js</h3>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@ Samouczki, wideo i innych dokumentacji przedstawiono sposoby tworzenia kodu i ap
     </li>
 </ul>
 
-<h2>Przejść głębiej z samouczki</h2>
+<h2>Uzyskaj szczegółowe samouczki</h2>
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
@@ -260,7 +260,7 @@ src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span>
 
 <div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt="C++ tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
+<div class="ico48Link"><a href="/visualstudio/javascript/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt="Python tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>

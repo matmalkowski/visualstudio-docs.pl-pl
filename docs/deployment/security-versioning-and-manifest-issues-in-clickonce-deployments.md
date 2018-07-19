@@ -24,80 +24,80 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1f6005b290d1567ae922da8ec46b3db05b9b22
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561012"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081748"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 
-Istnieją różne problemy z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zabezpieczeń, wersji aplikacji i składni manifestu i semantyki, która może spowodować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia nie powiodło się.
+Istnieją różne problemy z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zabezpieczenia, przechowywanie wersji aplikacji i manifestu składni i semantykę, która może spowodować, że [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia nie powiodła się.
 
-## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce i funkcję Kontrola konta użytkownika systemu Windows Vista
+## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce i kontrola konta użytkownika programu Windows Vista
 
-W [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], aplikacje domyślnie są uruchamiane jako użytkownik standardowy, nawet jeśli bieżący użytkownik jest zalogowany przy użyciu konta z uprawnieniami administratora. Jeśli aplikacja musi wykonać akcję, która musi mieć uprawnienia administratora, informuje system operacyjny, który następnie monituje użytkownika o wprowadzenie poświadczeń administratora. Tej funkcji, która ma nazwę kontroli konta użytkownika (UAC), uniemożliwia aplikacji wprowadzania zmian, które mogą mieć wpływ na cały system operacyjny bez wyraźnej zgody użytkownika. Aplikacje systemu Windows zadeklarować potrzebują tego podniesienia uprawnień, określając `requestedExecutionLevel` atrybutu w `trustInfo` części w manifeście aplikacji.
+W [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], aplikacje, które domyślnie są uruchamiane jako użytkownik standardowy, nawet wtedy, gdy bieżący użytkownik jest zalogowany za pomocą konta mającego uprawnienia administratora. Jeśli aplikacja musi wykonać akcję, która musi mieć uprawnienia administratora, informuje system operacyjny, który następnie monituje użytkownika o wprowadzenie poświadczeń administratora. Tej funkcji, która nosi nazwę kontroli konta użytkownika (UAC), uniemożliwia aplikacji wprowadzania zmian, które mogą mieć wpływ na cały system operacyjny bez wyraźnej zgody użytkownika. Aplikacje Windows deklarują, potrzebują tego podnoszenia poziomu uprawnień, określając `requestedExecutionLevel` atrybutu w `trustInfo` części w manifeście aplikacji.
 
-Z powodu ryzyka związanego z ujawnieniem aplikacji na ataki podniesienia uprawnień zabezpieczeń [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji nie można żądać podniesienia uprawnień, jeśli włączono kontrolę konta użytkownika dla klienta. Wszelkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, która próbuje ustawić jej `requestedExecutionLevel` atrybutu `requireAdministrator` lub `highestAvailable` nie zostaną zainstalowane na [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
+Ze względu na ryzyko ujawnienia aplikacji na ataki podniesienie poziomu zabezpieczeń [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje nie mogą zażądać podnoszenia poziomu uprawnień, włączenie funkcji Kontrola konta użytkownika dla klienta. Wszelkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację, która próbuje ustawić jej `requestedExecutionLevel` atrybutu `requireAdministrator` lub `highestAvailable` nie zostaną zainstalowane na [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
 
-W niektórych przypadkach z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja może spróbować uruchomić z uprawnieniami administratora z powodu logikę wykrywania Instalatora na [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. W takim przypadku można ustawić `requestedExecutionLevel` atrybutu w manifeście aplikacji do `asInvoker`. To spowoduje, że aplikację można uruchomić bez podniesienia uprawnień. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] automatycznie dodaje atrybut do wszystkich manifestów aplikacji.
+W niektórych przypadkach Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja może spróbować uruchomić z uprawnieniami administratora z powodu logiki wykrywania Instalatora na [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. W takim przypadku można ustawić `requestedExecutionLevel` atrybutu w manifeście aplikacji do `asInvoker`. Spowoduje to aplikacja do uruchomienia bez podniesienia uprawnień. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] automatycznie dodaje ten atrybut do wszystkich manifestów aplikacji.
 
-Jeśli tworzysz aplikację, która wymaga uprawnień administratora przez cały czas ich istnienia aplikacji, należy rozważyć wdrożenie aplikacji przy użyciu technologii Instalatora Windows (MSI), zamiast tego. Aby uzyskać więcej informacji, zobacz [podstawy Instalatora systemu Windows](../extensibility/internals/windows-installer-basics.md).
+Jeśli tworzysz aplikację, która wymaga uprawnień administratora dla całego cyklu życia aplikacji, należy rozważyć, wdrażanie aplikacji przy użyciu technologii Instalatora Windows (MSI), zamiast tego. Aby uzyskać więcej informacji, zobacz [podstawowe informacje dotyczące Instalatora Windows](../extensibility/internals/windows-installer-basics.md).
 
-## <a name="online-application-quotas-and-partial-trust-applications"></a>Przydziały aplikacji online i częściowego zaufania aplikacji
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Limity przydziału aplikacji w trybie online i aplikacji częściowej relacji zaufania
 
-Jeśli Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana online, a nie za pomocą instalacji, musi mieścić się w przydziału dla aplikacji online. Ponadto aplikacji sieciowej, która działa w częściowej relacji zaufania, takich jak z ograniczonym zestawem uprawnień zabezpieczeń, nie może przekraczać połowy rozmiaru przydziału.
+Jeśli Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] działa aplikacja online zamiast za pomocą instalacji, musi mieścić się w limitu przydziału dla aplikacji w trybie online. Ponadto aplikacji sieci, która jest uruchamiana w częściowej relacji zaufania, takich jak z ograniczonym zestawem uprawnień zabezpieczeń nie może przekraczać połowę rozmiar przydziału.
 
-Aby uzyskać więcej informacji i dowiedzieć się, jak zmienić przydział aplikacji online, zobacz [Przegląd pamięci podręcznej ClickOnce](../deployment/clickonce-cache-overview.md).
+Aby uzyskać więcej informacji i instrukcje dotyczące sposobu zmiany limitu przydziału aplikacja online, zobacz [Przegląd pamięci podręcznej ClickOnce](../deployment/clickonce-cache-overview.md).
 
 ## <a name="versioning-issues"></a>Problemy z wersjonowaniem
 
-Jeśli zostanie przypisana do używanego zestawu silnych nazw zwiększenie numeru wersji zestawu do uwzględnienia aktualizacji aplikacji, mogą wystąpić problemy. Wszelkie zestawu skompilowanego z odwołaniem do zestawu z silną nazwą musi się ponownie skompilowana, lub zestawu próbuje odwołać starszej wersji. Zestaw spróbuje to, ponieważ zestaw używa stara wartość wersji w swoim żądaniu powiązania.
+Mogą wystąpić problemy, jeśli Przypisz silne nazwy do zestawu i zwiększ numer wersji zestawu, aby uwzględnić aktualizację aplikacji. Każdy zespół skompilowane z odwołaniem do zestawu z silną nazwą samego powodującej lub podejmie próbę odwoływać się do starszej wersji zestawu. Zestaw spróbuje to, ponieważ zestaw jest stara wartość wersji w swoim żądaniu powiązania.
 
-Załóżmy, że zostały zestawu z silną nazwą własnego projektu w wersji 1.0.0.0. Po kompilacji zestawu, Dodaj jako odwołanie do projektu, który zawiera głównej aplikacji. Jeśli aktualizacja zestawu, zwiększyć tę wersję 1.0.0.1 i spróbuj wdrożyć ją bez również ponowną kompilację aplikacji aplikacji nie będzie można załadować zestawu w czasie wykonywania.
+Załóżmy na przykład mieć zestawu z silną nazwą we własnym projekcie za pomocą wersji 1.0.0.0. Po kompilacji zestawu, Dodaj odwołanie do projektu, który zawiera głównej aplikacji. Jeśli aktualizacja zestawu, Zwiększ wersji 1.0.0.1 i spróbuj wdrożyć ją bez również konieczności ponownego kompilowania aplikacji Aplikacja nie będzie można załadować zestawu w czasie wykonywania.
 
-Ten błąd może wystąpić tylko wtedy, gdy edytujesz Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ręcznie; manifesty nie powinna występować ten błąd, jeśli Generowanie wdrożenia przy użyciu programu Visual Studio.
+Ten błąd może wystąpić tylko wtedy, gdy edytujesz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty ręcznie; nie powinni obawiać ten błąd, jeśli Generowanie wdrożenie za pomocą programu Visual Studio.
 
-## <a name="specifying-individual-net-framework-assemblies-in-the-manifest"></a>Określenie poszczególnych .NET Framework zestawów w manifeście
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Określ poszczególne zestawy .NET Framework w manifeście
 
-Aplikacja nie będzie można załadować, jeśli dokonano ręcznej edycji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, aby odwołać starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawu. Na przykład dodać odwołanie do zestawu System.Net wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] przed wersja określona w manifeście, następnie może wystąpić błąd. Ogólnie rzecz biorąc, należy zrezygnować do określenia odniesienia do poszczególnych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawy, jako wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] względem której aplikacja działa jest określony jako zależności w manifeście aplikacji.
+Aplikacja nie będzie można załadować po zakończeniu edycji ręcznie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, aby odwoływać się do starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawu. Na przykład, jeśli dodaje odwołanie do zestawu przestrzeni nazw System.Net wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wcześniejszymi niż wersja określona w manifeście, następnie mógłby wystąpić błąd. Ogólnie rzecz biorąc, należy zrezygnować do określenia odniesienia do poszczególnych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zespołów, jak wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] względem której działa aplikacja jest określony jako zależności w manifeście aplikacji.
 
 ## <a name="manifest-parsing-issues"></a>Manifest analizowania problemów
 
-Pliki manifestu, które są używane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] są plikami XML i muszą być zarówno poprawnie sformułowany i prawidłową: muszą przestrzegać reguły składni XML i używać tylko elementy i atrybuty zdefiniowane w odpowiednich schematu XML.
+Pliki manifestu, które są używane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] są plikami XML i musi być dobrze sformułowany i prawidłowy: muszą przestrzegać reguł dotyczących składni XML i składać się tylko elementy i atrybuty zdefiniowane w odpowiednich schematu XML.
 
-Coś, co może spowodować problemy w pliku manifestu jest wybranie nazwę aplikacji, która zawiera znaki specjalne, takie jak cudzysłowem pojedynczym lub podwójnym. Nazwa aplikacji jest częścią jego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tożsamości. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obecnie nie przeanalizować tożsamości, które zawierają znaki specjalne. Jeśli aplikacja nie może aktywować, upewnij się, przy użyciu tylko alfabetyczne, cyfry, znaki dla nazwy i ponów próbę jej wdrożenia ponownie.
+Jest coś, co może powodować problemy w pliku manifestu wybierając nazwę aplikacji, który zawiera znaki specjalne, takie jak pojedyncze lub podwójne znaki cudzysłowu. Nazwa aplikacji jest częścią jego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tożsamości. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obecnie nie analizuje tożsamości, które zawierają znaki specjalne. Jeśli aplikacja nie może aktywować, upewnij się, przy użyciu tylko alfabetycznej, cyfry dla nazwy i spróbować ponownie wdrażać.
 
-Jeśli dokonano ręcznej edycji manifestów Twoje wdrożenia lub aplikacji, należy mieć przypadkowo uszkodzony je. Manifest uszkodzony uniemożliwi poprawne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji. Można debugować takie błędy w czasie wykonywania, klikając **szczegóły** na **błąd ClickOnce** okno dialogowe i odczytywania komunikat o błędzie w dzienniku. Dziennik będzie listy jedną z następujących komunikatów:
+Jeśli edytowano ręcznie swoje manifesty wdrożenia lub aplikacji, możesz mieć przypadkowo uszkodzony je. Uszkodzony manifest uniemożliwi poprawne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji. Możesz debugować takie błędy w czasie wykonywania, klikając **szczegóły** na **błąd ClickOnce** okno dialogowe, a także odczytu komunikat o błędzie w dzienniku. Dziennik się lista jedną z następujących komunikatów:
 
-- Opis błąd składniowy, numer wiersza i znaku położenie, w którym wystąpił błąd.
+- Opis błąd składni i numer wiersza oraz znak położenie, w którym wystąpił błąd.
 
-- Nazwa elementu lub atrybutu używanego w naruszenie schematu manifestu. Dodano XML ręcznie do Twojej manifestów, należy porównać swoje dodatki do manifestu schematów. Aby uzyskać więcej informacji, zobacz [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) i [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).
+- Nazwa elementu lub atrybutu używanego w naruszenie schematu manifestu. XML zostały dodane do Twojego manifesty ręcznie, należy porównać swoje dodatki do schematów manifestu. Aby uzyskać więcej informacji, zobacz [manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) i [manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).
 
-- Wystąpi konflikt identyfikatorów. Odwołań do zależności w manifesty wdrażania i aplikacji musi być unikatowa w obu ich `name` i `publicKeyToken` atrybutów. Jeśli oba atrybuty są zgodne między dwoma elementami, które w manifeście, analizowanie manifestu nie powiedzie się.
+- Wystąpi konflikt identyfikatorów. Odwołań do zależności w manifesty wdrażania i aplikacja muszą być unikatowe w obu ich `name` i `publicKeyToken` atrybutów. Jeśli oba atrybuty są zgodne między którychkolwiek dwóch elementów w obrębie manifestu, analizowania manifestu nie powiedzie się.
 
-## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Środki ostrożności podczas ręcznej zmiany manifesty lub aplikacji
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Środki ostrożności, zmieniając ręcznie manifesty lub aplikacji
 
-Po zaktualizowaniu manifest aplikacji, należy ponownie podpisać zarówno manifest aplikacji i manifest wdrażania. Manifest rozmieszczenia zawiera odwołanie do manifestu aplikacji, czy plik skrótu i podpis cyfrowy.
+Podczas aktualizowania manifestu aplikacji, musisz ją ponownie podpisać manifest aplikacji i manifest wdrożenia. Manifest wdrożenia zawiera odwołanie do manifestu aplikacji, zawierający wartość skrótu tego pliku i jego podpis cyfrowy.
 
-### <a name="precautions-with-deployment-provider-usage"></a>Środki ostrożności z użycia dostawcy wdrożenia
+### <a name="precautions-with-deployment-provider-usage"></a>Środki ostrożności przy użyciu wdrożenia użycia dostawcy
 
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeście rozmieszczenia `deploymentProvider` właściwość, która wskazuje na pełną ścieżkę lokalizacji, z którym zainstalowane i obsługiwać aplikacji:
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifest wdrożenia zawiera `deploymentProvider` właściwości, które wskazuje na pełną ścieżkę do lokalizacji, z którym zainstalowane i obsługiwanych aplikacji:
 
 ```xml
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-Ta ścieżka jest ustawiana podczas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzy aplikację i jest obowiązkowa w przypadku zainstalowanych aplikacji. Ścieżka wskazuje standardowe miejsce gdzie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Instalator zainstaluje aplikację i wyszukaj aktualizacje. Jeśli używasz **xcopy** polecenie, aby skopiować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w innej lokalizacji, ale nie należy zmieniać `deploymentProvider` właściwość [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będą nadal odwołują się do oryginalnej lokalizacji podczas próby pobrania aplikacja.
+Ta ścieżka jest ustawiona, gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzy aplikację i jest obowiązkowy w przypadku zainstalowanych aplikacji. Ścieżka wskazuje na lokalizację standardowa gdzie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Instalator zainstaluje aplikację i wyszukiwanie aktualizacji. Jeśli używasz **xcopy** polecenie, aby skopiować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji do innej lokalizacji, ale nie należy zmieniać `deploymentProvider` właściwości [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będą nadal odwoływały się ponownie do oryginalnej lokalizacji podczas próby pobrania aplikacja.
 
-Jeśli chcesz przenieść lub skopiować aplikacji, należy również zaktualizować `deploymentProvider` ścieżki, tak aby rzeczywiście instalacji klienta z nowej lokalizacji. Ta ścieżka jest aktualizowanie przede wszystkim problemem po zainstalowaniu aplikacji. Dla aplikacji online, które są zawsze uruchamiane przy użyciu oryginalnego adresu URL, ustawienie `deploymentProvider` jest opcjonalna. Jeśli `deploymentProvider` jest ustawiona, będą honorowane; w przeciwnym razie adres URL używany do uruchomienia aplikacji będzie służyć jako podstawowy adres URL do pobrania plików aplikacji.
+Jeśli chcesz przenieść lub kopiowania aplikacji, należy również zaktualizować `deploymentProvider` ścieżki, tak aby rzeczywiście instalacji klienta z nowej lokalizacji. Aktualizacja ta ścieżka jest przede wszystkim istotna, po zainstalowaniu aplikacji. Dla aplikacji online, które są zawsze uruchamiany za pośrednictwem oryginalny adres URL, ustawienie `deploymentProvider` jest opcjonalne. Jeśli `deploymentProvider` jest ustawiony, będą honorowane; w przeciwnym razie adres URL używany do uruchamiania aplikacji będzie służyć jako podstawowy adres URL do pobierania plików aplikacji.
 
 > [!NOTE]
-> Zawsze zaktualizowanie manifestu musisz również zarejestrować go ponownie.
+> Każdym zaktualizowanie manifestu należy również podpisać go ponownie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Rozwiązywanie problemów z wdrożeniami ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
-[Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)  
+[Aplikacje Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
 [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

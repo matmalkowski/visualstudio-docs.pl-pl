@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8538ffdb1093accc8446d072ecc980586b73ee7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567255"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077662"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Porady: użycie znaków zarezerwowanych XML w plikach projektu
-Podczas tworzenia plików projektu, konieczne może być Użyj zarezerwowanych znaków XML, na przykład w wartości właściwości lub wartości parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione nazwanej jednostki, dzięki czemu można przeanalizować pliku projektu.  
+Podczas tworzenia plików projektu, może być konieczne użycie zarezerwowanych znaków XML w przypadku, na przykład w wartości właściwości lub wartości parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione nazwanych jednostek, dzięki czemu można przeanalizować pliku projektu.  
   
-## <a name="using-reserved-characters"></a>Przy użyciu zarezerwowanych znaków  
- W poniższej tabeli opisano zarezerwowanych znaków XML, które muszą zostać zastąpione odpowiednia jednostka nazwanego, dzięki czemu można przeanalizować pliku projektu.  
+## <a name="use-reserved-characters"></a>Zastrzeżone znaki  
+ W poniższej tabeli opisano zarezerwowanych znaków XML, które muszą zostać zastąpione odpowiednia jednostka o nazwie, dzięki czemu można przeanalizować pliku projektu.  
   
-|Zastrzeżonego znaku|Nazwanej jednostki|  
+|Zastrzeżonego znaku|Nazwanych jednostek|  
 |------------------------|------------------|  
 |\<|&amp;lt;|  
 |>|&amp;gt;|  
@@ -34,16 +34,16 @@ Podczas tworzenia plików projektu, konieczne może być Użyj zarezerwowanych z
 |"|&amp;quot;|  
 |'|&amp;APOS;|  
   
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Aby użyć cudzysłowów w pliku projektu  
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Aby używać cudzysłowów w pliku projektu  
   
--   Zamień podwójnych cudzysłowów odpowiadającego o nazwie podmiotu, &amp;quot;. Na przykład, aby umieścić cudzysłowów wokół `EXEFile` elementu listy, wpisz:  
+-   Zamień podwójnych cudzysłowów odpowiadającą nazwie podmiotu, &amp;quot;. Na przykład, aby umieścić podwójnego cudzysłowu wokół `EXEFile` listy elementów, wpisz:  
   
     ```xml  
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     ```  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu podwójne cudzysłowy są używane do zaznacz nazwę pliku w komunikacie, który jest wysyłany przy użyciu pliku projektu.  
+ W poniższym przykładzie kodu podwójne cudzysłowy są używane do zaznacz nazwę pliku na komunikat, który jest wysyłany przy użyciu pliku projektu.  
   
 ```xml  
 <Project DefaultTargets="Compile"  
@@ -72,6 +72,6 @@ Podczas tworzenia plików projektu, konieczne może być Użyj zarezerwowanych z
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)    
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)    
  [MSBuild](../msbuild/msbuild.md)    

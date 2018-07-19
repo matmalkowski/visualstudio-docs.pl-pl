@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 431184d2d4c2bf0bff5d6d3f4d5c44b3c6a670a2
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326975"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077493"
 ---
-# <a name="import-element-msbuild"></a>Import — Element (MSBuild)
-Importuje zawartość pliku jeden projekt do innego pliku projektu.  
+# <a name="import-element-msbuild"></a>Import — element (MSBuild)
+Importuje zawartość pliku jednego projektu do innego pliku projektu.  
 
  \<Project>  
- \<Import >  
+ \<Importuj >  
 
 ## <a name="syntax"></a>Składnia  
 
@@ -47,7 +47,7 @@ Importuje zawartość pliku jeden projekt do innego pliku projektu.
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Project`|Atrybut wymagany.<br /><br /> Ścieżka pliku projektu do zaimportowania. Nazwa ścieżki może zawierać symboli wieloznacznych. Pasujące pliki są importowane posortowane. Za pomocą tej funkcji, można dodać kod do projektu po prostu dodając pliku kodu do katalogu.|  
+|`Project`|Atrybut wymagany.<br /><br /> Ścieżka pliku projektu do zaimportowania. Ścieżka może zawierać symboli wieloznacznych. Pasujące pliki są importowane w kolejności posortowanej. Za pomocą tej funkcji, można dodać kod do projektu podczas dodawania pliku kodu do katalogu.|  
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -57,38 +57,38 @@ Importuje zawartość pliku jeden projekt do innego pliku projektu.
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-|[Importgroup —](../msbuild/importgroup-element.md)|Zawiera kolekcję `Import` elementy zgrupowane w opcjonalny warunek.|  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Importgroup —](../msbuild/importgroup-element.md)|Zawiera kolekcję `Import` elementy są pogrupowane w obszarze opcjonalny warunek.|  
 
 ## <a name="remarks"></a>Uwagi  
- Za pomocą `Import` elementu, można użyć ponownie kod, który jest wspólny dla wielu plików projektu. Ułatwia utrzymanie kodu, ponieważ wszelkie aktualizacje wprowadzone do udostępnionego kodu uzyskać propagowane do wszystkich projektów, które go zaimportować.  
+ Za pomocą `Import` elementu, można użyć ponownie kod, który jest wspólne dla wielu plików projektu. Ułatwia utrzymanie kodu, ponieważ wszelkie aktualizacje wprowadzone współużytkowanym kodem Pobierz propagowane do wszystkich projektów, które go zaimportować.  
 
- Według Konwencji projektu udostępnionego zaimportowane pliki są zapisywane jako pliki .targets, ale są standardowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie uniemożliwiają importowanie projektu, który ma rozszerzenie nazwy pliku różne, ale zalecane jest użycie rozszerzenia .targets w celu zachowania spójności.  
+ Zgodnie z Konwencją projektu udostępnionego zaimportowane pliki są zapisywane jako *.targets* plików, ale są standardowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] uniemożliwia importowania projektu, który ma rozszerzenie nazwy pliku różnych, ale zaleca się, że używasz *.targets* rozszerzenia w celu zachowania spójności.  
 
- Ścieżki względne w projektach importowanych interpretowania względem katalogu projektu importowania. W związku z tym jeśli plik projektu jest importowany do wielu plików projektu w różnych lokalizacjach, ścieżek względnych w zaimportowanego pliku projektu zostanie potraktowany inaczej dla każdego zaimportowanego projektu.  
+ Ścieżki względne w projektach zaimportowane, są interpretowane względem katalogu projektu importowania. W związku z tym jeśli plik projektu jest importowany do niektóre pliki projektu w różnych lokalizacjach, ścieżek względnych w pliku importowanych projektu będą interpretowane inaczej dla każdego zaimportowanego projektu.  
 
- Wszystkie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zastrzeżone właściwości, które odnoszą się do pliku projektu, na przykład `MSBuildProjectDirectory` i `MSBuildProjectFile`, który odwołuje się do zaimportowanego projektu są przypisane wartości na podstawie importowania pliku projektu.  
+ Wszystkie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zastrzeżone właściwości, które odnoszą się do pliku projektu, na przykład `MSBuildProjectDirectory` i `MSBuildProjectFile`, do których istnieje odwołanie w importowanym projekcie są przypisane wartości na podstawie importowania pliku projektu.  
 
- Jeśli importowany projekt nie ma `DefaultTargets` atrybutu zaimportowane projekty są poddawane inspekcji w kolejności, są one importowane, a wartość pierwszego odnalezione `DefaultTargets` atrybut jest używany. Na przykład, jeśli ProjectA importuje ProjectB i ProjectC (w tej kolejności) i ProjectB importuje ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] najpierw szuka `DefaultTargets` określone na ProjectA, a następnie ProjectB, a następnie ProjectD, a na końcu ProjectC.  
+ Jeśli importowany projekt nie ma `DefaultTargets` atrybutu, zaimportowane projekty są kontrolowane w kolejności, są one importowane, a wartość pierwszego odnalezione `DefaultTargets` atrybut jest używany. Na przykład, jeśli ProjectA importuje ProjectB i ProjectC (w tej kolejności) i ProjectB importuje ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] szuka najpierw `DefaultTargets` określone w ProjectA, a następnie ProjectB, a następnie ProjectD, a na koniec ProjectC.  
 
- Schemat zaimportowanego projektu jest identyczna jak standardowe projektu. Mimo że [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może być zdolny do skompilowania zaimportowanego projektu, jest mało prawdopodobne, ponieważ zwykle zaimportowanego projektu nie zawiera informacji na temat właściwości do zestawu lub kolejność elementów docelowych uruchomienia. Importowany projekt zależy od projektu, do którego jest importowany do Przekaż te informacje.  
+ Schemat importowanym projekcie jest identyczna jak standardowy projekt. Mimo że [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może być zdolny do skompilowania importowanym projekcie, jest mało prawdopodobne, ponieważ importowanym projekcie zwykle nie zawiera informacji na temat właściwości, które z zestawem lub kolejność, w którym ma być uruchamiany elementów docelowych. Zaimportowanego projektu zależy od projektu, do którego jest importowany, aby podać te informacje.  
 
 > [!NOTE]
->  Podczas importowania warunkowe instrukcje pracy w MSBuilds wiersza polecenia, nie działają przy użyciu programu MSBuild w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Importy warunkowego są oceniane przy użyciu wartości configuration i platform, które są ustawiane po załadowaniu projektu. Jeśli następnie wprowadzono zmiany wymagające ponownej oceny warunków w pliku projektu, na przykład zmiana platformy, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reevaluates warunki właściwości i elementów, ale nie w przypadku importów. Import został pominięty, ponieważ nie jest ponownie szacowane warunkowego importu.  
+>  Instrukcje warunkowe importu współdziałanie w MSBuilds wiersza polecenia, nie działają z użyciem MSBuild w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Importy warunkowego są oceniane przy użyciu wartości konfiguracji i platformy, które są ustawione, gdy projekt jest ładowany. Jeśli następnie wprowadzono zmiany wymagające ponownej oceny instrukcje warunkowe w pliku projektu, na przykład zmiana platformę [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reevaluates warunki na właściwości i elementów, ale nie w przypadku importów. Ponieważ nie jest ponownie szacowane warunkowe importu, importowania zostanie pominięta.  
 >   
->  Aby obejść ten problem, umieść warunkowego Importy w plikach TARGETS lub umieść kod w bloku warunkowego, takich jak [wybierz Element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
+>  Aby obejść ten problem, należy umieścić Importy warunkowe w *.targets* plików lub umieść kod warunkowego zablokować takie jak [wybierz element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
 
-## <a name="wildcards"></a>Symbole wieloznaczne  
- W .NET Framework 4 MSBuild umożliwia symbole wieloznaczne w atrybucie projektu. W przypadku symboli wieloznacznych wszystkich znalezionych dopasowań sortowania (w przypadku powtarzalności), a następnie są importowane w kolejności, jeśli kolejność miały jawnie ustawiona.  
+## <a name="wildcards"></a>Symboli wieloznacznych  
+ W programie .NET Framework 4 program MSBuild umożliwia symboli wieloznacznych w atrybucie projektu. W przypadku symboli wieloznacznych znalezione wszystkie dopasowania są sortowane (w przypadku odtwarzaniem), a następnie są importowane w tej kolejności tak, jakby kolejność ma jawnie ustawione.  
 
- Jest to przydatne, jeśli chcesz zaoferować punkcie rozszerzenia, aby ktoś inny mógł zaimportować pliku bez konieczności jawnie dodać nazwę pliku do importowania pliku. W tym celu Microsoft.Common.Targets zawiera następujący wiersz w górnej części pliku.  
+ Jest to przydatne, jeśli chcesz zaoferować punkt rozszerzeń, aby ktoś można zaimportować plik bez konieczności jawnie dodać nazwę pliku do importowania pliku. W tym celu *Microsoft.Common.Targets* zawiera następujący wiersz u góry pliku.  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  
 ```  
 
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono projekt, który zawiera kilka elementów i właściwości, a następnie importuje plik ogólnego projektu.  
+ Poniższy przykład przedstawia projekt, który ma kilka elementów i właściwości, a następnie importuje plik ogólnego projektu.  
 
 ```xml  
 <Project DefaultTargets="Compile"  
@@ -113,6 +113,6 @@ Importuje zawartość pliku jeden projekt do innego pliku projektu.
 </Project>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Instrukcje: Użycie tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Porady: użycie tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

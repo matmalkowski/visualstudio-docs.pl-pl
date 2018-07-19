@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie w programie MSBuild | Dokumentacja firmy Microsoft
+title: Logowanie w programie MSBuild | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,32 +12,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80a73f2433f942c35413f77143203c06cd9447a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d866f0bc3181b6f338ec0b07df0ad5ff0e51010
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567996"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079164"
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
-Rejestrowanie umożliwia można monitorować postęp kompilacji. Przechwytywanie rejestrowanie kompilacji zdarzenia, komunikaty ostrzeżeń i błędów w pliku dziennika.  
+Rejestrowanie umożliwia możesz monitorować postępy kompilacji. Przechwytywanie rejestrowanie kompilacji, zdarzenia, komunikaty, ostrzeżenia i błędy w pliku dziennika.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)  
- Zawiera opis różnych aspektów logowanie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ W tym artykule opisano różne aspekty logowania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Rejestratory kompilacji](../msbuild/build-loggers.md)  
- Omówiono kroki wymagane do utworzenia rejestratora jeden procesor.  
+ Omówiono kroki wymagane do utworzenia rejestratora jednoprocesorowym.  
   
  [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)  
  W tym artykule opisano, jak działa logowanie w środowisku wielu procesorów i dwa modele rejestrowanie wielu procesorów.  
   
- [Zapisywanie rejestratorów uwzględniających wiele procesorów](../msbuild/writing-multi-processor-aware-loggers.md)  
- Zawiera opis sposobu tworzenia kilku-procesorów obsługujących rejestratorów i sposobu użycia ConfigurableForwardingLogger.  
+ [Zapis procesorów uwzględniających rejestratorów](../msbuild/writing-multi-processor-aware-loggers.md)  
+ Opisano sposób tworzenia wielu procesorów rejestratorów uwzględniających wiele oraz jak używać ConfigurableForwardingLogger.  
   
  [Tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md)  
- Zawiera opis sposobu tworzenia niestandardowych przekazywania rejestratorów.  
+ Zawiera opis sposobu tworzenia niestandardowych przekazywanie rejestratorów.  
   
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie wielu projektów równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
- Zawiera opis sposobu tworzenia wielu projektów szybsze, uruchamiając jednocześnie.
+## <a name="see-also"></a>Zobacz także  
+ [Tworzenie wielu projektów wykonywane równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+ W tym artykule opisano sposób tworzenia wielu projektów przez uruchomienie ich równolegle.

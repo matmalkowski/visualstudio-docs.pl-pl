@@ -1,5 +1,5 @@
 ---
-title: '&lt;compatibleFrameworks&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;compatibleFrameworks&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d406ecf058bf1c570b57ed8f50815cc3d9378cbe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560781"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077688"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elementu (wdrażania ClickOnce)
-Określa wersje programu .NET Framework, której tę aplikację można instalować i uruchamiać.  
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; — element (wdrażanie ClickOnce)
+Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalować i uruchamiać.  
   
 > [!NOTE]
->  [MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) nie obsługuje `compatibleFrameworks` elementu podczas zapisywania manifest aplikacji, która została już podpisana z certyfikatu przy użyciu [MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Zamiast tego należy użyć [Mage.exe](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+>  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) nie obsługuje `compatibleFrameworks` elementu podczas zapisywania manifestu aplikacji, która została już podpisana za pomocą certyfikatu za pomocą [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Zamiast tego należy użyć [ *Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <compatibleFrameworks  
       SupportUrl>   
    <framework  
@@ -42,30 +42,30 @@ Określa wersje programu .NET Framework, której tę aplikację można instalowa
 </ compatibleFrameworks>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `compatibleFrameworks` Element jest wymagany dla obiektu docelowego manifesty wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udostępniane przez środowisko uruchomieniowe [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub nowszym. `compatibleFrameworks` Elementu zawiera jeden lub więcej `framework` elementów, które Określ wersje programu .NET Framework, na których można uruchomić tej aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Środowiska uruchomieniowego uruchomi aplikację na pierwszy dostępny `framework` na tej liście.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `compatibleFrameworks` Element jest wymagany, dla których obiektem docelowym manifesty wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime udostępnianym przez [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub nowszej. `compatibleFrameworks` Elementu zawiera jeden lub więcej `framework` elementy, które określają wersje programu .NET Framework, na których można uruchomić tę aplikację. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Środowisko uruchomieniowe będzie uruchomić aplikację na pierwszy dostępny `framework` na tej liście.  
   
- W poniższej tabeli wymieniono atrybut który `compatibleFrameworks` obsługuje elementu.  
+ Poniższa tabela zawiera listę atrybutów, `compatibleFrameworks` obsługuje element.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`S``upportUrl`|Opcjonalna. Określa adres URL, w którym można pobrać preferowanych zgodnej wersji programu .NET Framework.|  
+|`S``upportUrl`|Opcjonalna. Określa adres URL, gdzie można pobrać preferowanych zgodnej wersji programu .NET Framework.|  
   
 ## <a name="framework"></a>szablon  
- Wymagana. W poniższej tabeli przedstawiono atrybuty który `framework` obsługuje elementu.  
+ Wymagane. W poniższej tabeli przedstawiono atrybuty, `framework` obsługuje element.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`targetVersion`|Wymagana. Określa numer wersji docelowej platformy .NET Framework.|  
-|`profile`|Wymagana. Określa profil docelowej platformy .NET Framework.|  
-|`supportedRuntime`|Wymagana. Określa numer wersji środowiska uruchomieniowego skojarzone z docelowej platformy .NET Framework.|  
+|`targetVersion`|Wymagane. Określa numer wersji obiektu docelowego .NET Framework.|  
+|`profile`|Wymagane. Określa profil docelową aplikację .NET Framework.|  
+|`supportedRuntime`|Wymagane. Określa numer wersji środowiska uruchomieniowego, skojarzone z docelową aplikację .NET Framework.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod przedstawia przykład `compatibleFrameworks` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania. To wdrożenie może działać na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Można również uruchomić na [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ponieważ jest on podzbiorem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].  
+ Poniższy kod przedstawia przykład `compatibleFrameworks` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Tego wdrożenia można uruchomić na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Można również uruchomić na [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest nadzbiorem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].  
   
-```  
+```xml  
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
   <framework   
       targetVersion="4.0"   
@@ -74,5 +74,5 @@ Określa wersje programu .NET Framework, której tę aplikację można instalowa
 </compatibleFrameworks>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz także  
+ [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)

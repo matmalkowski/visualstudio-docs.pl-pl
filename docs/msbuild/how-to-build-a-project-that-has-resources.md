@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Tworzenie projektu zawierającego zasoby | Dokumentacja firmy Microsoft'
+title: 'Porady: kompilacja projektu zawierającego zasoby | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -15,33 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fef7a6a5d585625471794df3c6e98b8c149a82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569505"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946667"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Porady: kompilacja projektu zawierającego zasoby
-Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu użytkownika muszą być rozdzielane do plików zasobów dla różnych języków. Jeśli projekt używa tylko ciągi, pliki zasobów można użyć plików tekstowych. Alternatywnie można użyć pliki .resx jako pliki zasobów.  
+Jeśli tworzysz zlokalizowane wersje projektu, wszystkich elementów interfejsu użytkownika muszą być oddzielone do plików zasobów w różnych językach. Jeśli projekt używa tylko ciągi, pliki zasobów, można użyć plików tekstowych. Alternatywnie, można użyć *resx* pliki jako pliki zasobów.  
   
-## <a name="compiling-resources-with-msbuild"></a>Kompilowanie zasobów przy użyciu programu MSBuild  
- Biblioteka typowych zadań, które jest udostępniane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje `GenerateResource` zadanie, które służy do kompilowania zasobów w plikach .resx lub tekst. To zadanie obejmuje `Sources` parametr, aby określić pliki zasobów do skompilowania i `OutputResources` parametru w celu określenia nazwy plików zasobów danych wyjściowych. Aby uzyskać więcej informacji na temat `GenerateResource` zadań, zobacz [generateresource — zadanie](../msbuild/generateresource-task.md).  
+## <a name="compiling-resources-with-msbuild"></a>Kompilowanie zasobów za pomocą narzędzia MSBuild  
+ Biblioteka typowych zadań, które jest dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje `GenerateResource` zadanie, które można użyć do skompilowania zasobów albo *resx* lub pliki tekstowe. To zadanie obejmuje `Sources` parametru do określenia, który zasób plików do kompilacji i `OutputResources` parametru do określenia nazwy plików zasobów danych wyjściowych. Aby uzyskać więcej informacji na temat `GenerateResource` zadań, zobacz [generateresource — zadanie](../msbuild/generateresource-task.md).  
   
-#### <a name="to-compile-resources-with-msbuild"></a>Aby skompilować zasobów przy użyciu programu MSBuild  
+#### <a name="to-compile-resources-with-msbuild"></a>Aby skompilować zasobów za pomocą narzędzia MSBuild  
   
-1.  Identyfikowanie plików zasobów projektu i przekazywać je do `GenerateResource` zadań jako list elementów lub jako nazwy plików.  
+1.  Identyfikowanie plików zasobów projektu i przekazywać je do `GenerateResource` zadania, w postaci listy elementów lub jako nazwy plików.  
   
-2.  Określ `OutputResources` parametr `GenerateResource` zadania, które można ustawić nazwy dla plików zasobów danych wyjściowych.  
+2.  Określ `OutputResources` parametru `GenerateResource` zadania, które można ustawić nazwy plików zasobów danych wyjściowych.  
   
-3.  Użyj `Output` element zadania do przechowywania wartości `OutputResources` parametru w elemencie.  
+3.  Użyj `Output` element zadania do przechowywania wartości `OutputResources` parametr w elemencie.  
   
-4.  Użyj elementu utworzone na podstawie `Output` element jako dane wejściowe do innego zadania.  
+4.  Przy użyciu utworzonego na podstawie `Output` elementu jako dane wejściowe do innego zadania.  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod przedstawia przykład sposobu `Output` element określa, że `OutputResources` atrybutu `GenerateResource` zadań będzie zawierać pliki zasobów skompilowanych `alpha.resources` i `beta.resources` oraz że te dwa pliki zostaną umieszczone wewnątrz `Resources` listy elementów. Identyfikując tych plików .resources jako kolekcję elementów o takiej samej nazwie, łatwo można je jako dane wejściowe innego zadania, takie jak [Csc](../msbuild/csc-task.md) zadań.  
+ Poniższy kod przedstawia przykład sposób, w jaki `Output` elementu Określa, że `OutputResources` atrybutu `GenerateResource` zadanie będzie zawierać pliki skompilowane zasobów *alpha.resources* i  *beta.resources* oraz że te dwa pliki zostaną umieszczone wewnątrz `Resources` listy elementów. Identyfikując te *Resources* pliki jako kolekcja elementów o takiej samej nazwie, łatwo można je jako dane wejściowe innego zadania, takie jak [Csc](../msbuild/csc-task.md) zadania.  
   
- To zadanie jest odpowiednikiem przy użyciu **Kompiluj** przełączać [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):  
+ To zadanie jest równoważne użyciu **/compile** przełączać [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -55,7 +55,7 @@ Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu uż
 ```  
   
 ## <a name="example"></a>Przykład  
- Następujący przykładowy projekt zawiera dwa zadania: `GenerateResource` zadanie, aby skompilować zasobów i `Csc` zadanie, aby skompilować zarówno pliki kodu źródłowego, jak i plików skompilowanych zasobów. Pliki zasobów opracowane przez `GenerateResource` zadania są przechowywane w `Resources` elementu i przekazywane do `Csc` zadań.  
+ Poniższy przykładowy projekt zawiera dwa zadania: `GenerateResource` zadanie, aby skompilować zasobów i `Csc` zadania do kompilowania plików kodu źródłowego i pliki zasobów skompilowany. Pliki zasobów opracowane przez `GenerateResource` zadania są przechowywane w `Resources` elementu i przekazywane do `Csc` zadania.  
   
 ```xml  
 <Project DefaultTargets = "Build"  
@@ -78,8 +78,8 @@ Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu uż
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
 [MSBuild](../msbuild/msbuild.md)  
  [Generateresource — zadanie](../msbuild/generateresource-task.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
- [Resgen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+ [ResGen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

@@ -1,5 +1,5 @@
 ---
-title: Jak używać Boost.Test dla języka C++ w programie Visual Studio
+title: Jak używać platformy Boost.Test dla języka C++ w programie Visual Studio
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,61 +9,61 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 739368b8611d4755138466b8de37c16e5552fe11
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120299"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945487"
 ---
-# <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać Boost.Test dla języka C++ w programie Visual Studio
+# <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać platformy Boost.Test dla języka C++ w programie Visual Studio
 
-W **programu Visual Studio 2017 wersji 15,5 cala** i później, Boost.Test adapter testowy jest zintegrowany z programu Visual Studio IDE jako składnik **tworzenia klasycznych aplikacji w języku C++** obciążenia.
+W **programu Visual Studio 2017 w wersji 15.5** i później, Boost.Test adapter testowy jest zintegrowana w środowisku IDE programu Visual Studio jako składnik **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
-![Adapter testowy dla Boost.Test](media/cpp-boost-component.png)
+![Rozszerzenia test Adapter for Boost.Test](media/cpp-boost-component.png)
 
-Jeśli nie masz **tworzenia klasycznych aplikacji w języku C++** obciążenia zainstalowany, otwórz **Instalator programu Visual Studio** i wybierz **Modyfikuj**. Wybierz **tworzenia klasycznych aplikacji w języku C++** obciążenia, a następnie wybierz **Modyfikuj** przycisku.
+Jeśli nie masz **programowanie aplikacji klasycznych w języku C++** obciążenia zainstalowany, otwórz **Instalatora programu Visual Studio** i wybierz **Modyfikuj**. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj** przycisku.
 
-## <a name="install-boost"></a>Zainstaluj zwiększanie wyniku
+## <a name="install-boost"></a>Zainstaluj Boost
 
-Wymaga Boost.Test [zwiększanie wyniku](http://www.boost.org/)! Jeśli nie masz zwiększanie wyniku zainstalowane, zalecane jest użycie Vcpkg Menedżera pakietów.
+Wymaga Boost.Test [Boost](http://www.boost.org/)! Jeśli nie masz zainstalowane zwiększenie wydajności, firma Microsoft zaleca użycie Vcpkg Menedżera pakietów.
 
-1. Postępuj zgodnie z instrukcjami w [Vcpkg: Menedżer pakietów C++ dla systemu Windows](/cpp/vcpkg) do zainstalowania vcpkg (Jeśli nie masz jeszcze go).
+1. Postępuj zgodnie z instrukcjami w artykule [Vcpkg: Menedżer pakietów języka C++ dla Windows](/cpp/vcpkg) zainstalował vcpkg (Jeśli nie masz jej jeszcze).
 
-1. Zainstaluj biblioteki dynamicznej lub statycznej Boost.Test:
+1. Zainstaluj bibliotekę Boost.Test dynamicznej lub statycznej:
 
-    - Uruchom **vcpkg zainstalować zwiększanie wyniku testu** zainstalować bibliotekę dynamiczną Boost.Test.
+    - Uruchom **vcpkg zainstalować boost test** Aby zainstalować bibliotekę dynamicznych Boost.Test.
 
-       -OR-
+       -LUB-
 
-    - Uruchom **vcpkg zainstalować zwiększanie wyniku-testu: x 86 windows statycznej** do zainstalowania z biblioteką statyczną Boost.Test.
+    - Uruchom **vcpkg zainstalować boost-test: x 86-windows-static** zainstalować biblioteki statycznej platformy Boost.Test.
 
-1. Uruchom **vcpkg integracji instalacji** do konfigurowania programu Visual Studio z biblioteki i dodać ścieżki do nagłówków zwiększenie wydajności i pliki binarne.
+1. Uruchom **vcpkg integracji instalacji** do konfigurowania programu Visual Studio za pomocą biblioteki i zawierać ścieżki do nagłówków zwiększenie wydajności i danych binarnych.
 
-## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Dodaj szablon elementu (Visual Studio 2017 wersji 15.6 i nowsze)
+## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Dodaj szablon elementu (Visual Studio 2017 w wersji 15.6 i nowsze)
 
 1. Aby utworzyć plik .cpp dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**.
 
    ![Szablon elementu Boost.Test](media/boost_test_item_template.png)
 
-1. Nowy plik zawiera przykładowe metody testowej. Skompilowanie projektu Aby włączyć **Eksploratora testów** metody odnajdywania.
+1. Nowy plik zawiera przykładowe metody testowej. Tworzenie projektu w celu włączenia **Eksplorator testów** metody odnajdywania.
 
-Szablon elementu używa wariant jeden nagłówek Boost.Test, ale można modyfikować #include ścieżkę do użycia autonomicznego variant biblioteki. Aby uzyskać więcej informacji, zobacz [Dodaj zawiera dyrektywy, które](#add-include-directives).
+Szablon elementu korzysta z wariantu pojedynczego nagłówka Boost.Test, ale można zmodyfikować #include ścieżkę do użycia wariant biblioteki autonomicznych. Aby uzyskać więcej informacji, zobacz [Dodaj dyrektywy #include](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Tworzenie projektu testu (Visual Studio 2017 wersji 15,5 cala)
+## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Utwórz projekt testu (Visual Studio 2017 w wersji 15.5)
 
-W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowane szablony projektów lub elementów są dostępne dla Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli do przechowywania testów.
+W programie Visual Studio 2017 w wersji 15.5 dostępnych żadnych szablonów projektu lub elementu testowych wstępnie skonfigurowanych dla platformy Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli w celu przechowywania testów.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt**.
 
-1. W okienku po lewej stronie wybierz **Visual C++** > **Windows Desktop**, a następnie wybierz pozycję **aplikacji konsoli systemu Windows** szablonu.
+1. W okienku po lewej stronie wybierz **Visual C++** > **pulpitu Windows**, a następnie wybierz **aplikacji konsoli Windows** szablonu.
 
-1. Nadaj nazwę projektu i wybierz polecenie **OK**.
+1. Nazwij projekt i wybierz **OK**.
 1. Usuń `main` funkcji w pliku .cpp.
 
-1. Jeśli używasz wersji nagłówka jednym lub dynamicznej biblioteki Boost.Test, przejdź do [Dodaj zawiera dyrektywy, które](#add-include-directives). Jeśli używasz wersji biblioteki statycznej, następnie należy wykonać pewne dodatkowe czynności konfiguracyjne:
+1. Jeśli używasz wersji pojedynczego nagłówka lub dynamicznej biblioteki Boost.Test, przejdź do strony [Dodaj dyrektywy #include](#add-include-directives). Jeśli używasz wersji biblioteki statycznej, musisz przeprowadzić kilka dodatkowych czynności konfiguracyjnych:
 
-   a. Aby edytować plik projektu, najpierw zwolnić ją. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Zwolnij projekt**. Następnie kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Edytuj < nazwa\>.vcxproj**.
+   a. Aby edytować plik projektu, najpierw zwolnienia. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Zwolnij projekt**. Następnie kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Edytuj < nazwa\>.vcxproj**.
 
    b. Dodaj dwa wiersze do **Globals** grupy właściwości, jak pokazano poniżej:
 
@@ -76,27 +76,27 @@ W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowa
     ```
    c. Zapisz i Zamknij \*plik .vcxproj, a następnie ponownie Załaduj projekt.
 
-   d. Aby otworzyć **strony właściwości**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **właściwości**.
+   d. Aby otworzyć **stron właściwości**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **właściwości**.
 
-   d. Rozwiń węzeł **C/C++** > **generowania kodu**, a następnie wybierz **biblioteki wykonawczej**. Wybierz **/MTd** dla bibliotek statycznych środowiska uruchomieniowego debugowania lub **/MT** wersji biblioteki statycznej środowiska wykonawczego.
+   d. Rozwiń **C/C++** > **generowania kodu**, a następnie wybierz pozycję **biblioteki środowiska uruchomieniowego**. Wybierz **/mtd** dla bibliotek statycznych środowiska uruchomieniowego debugowania lub **/MT** biblioteki statycznej środowiska uruchomieniowego wersji.
 
-   f. Rozwiń węzeł **konsolidatora > System**. Sprawdź, czy **podsystemu** ustawiono **konsoli**.
+   f. Rozwiń **konsolidatora > System**. Upewnij się, że **podsystemu** ustawiono **konsoli**.
 
-   g. Wybierz **OK** zamknąć strony właściwości.
+   g. Wybierz **OK** zamknąć na stronach właściwości.
 
-## <a name="add-include-directives"></a>Dodaj dyrektyw
+## <a name="add-include-directives"></a>Dodaj dyrektywy #include
 
-1. W pliku .cpp testowego, Dodaj wszelkie potrzebne `#include` dyrektywy, aby wyświetlić typy i funkcje programu kod testu. Zazwyczaj program działa jeden poziom w hierarchii folderów. W przypadku wpisania `#include "../"`, okno IntelliSense pojawia się i umożliwia wybranie pełną ścieżkę do pliku nagłówka.
+1. W pliku testu cpp, należy dodać dowolne wymagane `#include` dyrektywy, aby uwidocznić typy i funkcje programu kod testu. Zazwyczaj program jest góry o jeden poziom w hierarchii folderów. Jeśli wpiszesz `#include "../"`, pojawi się okno technologii IntelliSense i umożliwia wybranie pełną ścieżkę do pliku nagłówka.
 
    ![Dodaj # dyrektywy include](media/cpp-gtest-includes.png)
 
-   Można użyć z biblioteki autonomicznej:
+   Można użyć biblioteki autonomiczny za pomocą:
 
    ```cpp
    #include <boost/test/unit_test.hpp>
    ```
 
-   Lub użyj wersji nagłówka jeden z:
+   Lub użyj wersji pojedynczego nagłówka przy użyciu:
 
    ```cpp
    #include <boost/test/included/unit_test.hpp>
@@ -104,7 +104,7 @@ W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowa
 
    Następnie zdefiniuj `BOOST_TEST_MODULE`.
 
-Poniższy przykład jest wystarczająca dla testu być wykrywalny w **Eksploratora testów**:
+Poniższy przykład jest wystarczające, aby test zakończył się być wykrywalne w **Eksploratora testów**:
 
 ```cpp
 #define BOOST_TEST_MODULE MyTest
@@ -112,7 +112,7 @@ Poniższy przykład jest wystarczająca dla testu być wykrywalny w **Eksplorato
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 
@@ -123,8 +123,8 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 }
 ```
 
-## <a name="write-and-run-tests"></a>Zapis i uruchamiania testów
-Teraz można przystąpić do zapisu i uruchamiać testy zwiększanie wyniku. Zobacz [zwiększanie wyniku testu biblioteka dokumentacji](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informacji o makra testu. Zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md) informacji o odnajdywaniu, uruchamiania i grupowanie testów przy użyciu **Eksploratora testów**.
+## <a name="write-and-run-tests"></a>Pisanie i Uruchamianie testów
+Teraz można przystąpić do pisania i uruchamiania testów Boost. Zobacz [dokumentację biblioteki testów Boost](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) uzyskać informacji na temat makra testu. Zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md) informacje odnajdywania i uruchamiania i grupowanie testów przy użyciu **Eksplorator testów**.
 
 ## <a name="see-also"></a>Zobacz także
-[Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
+[Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)

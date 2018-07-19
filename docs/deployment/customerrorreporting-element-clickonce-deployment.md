@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;customErrorReporting&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,38 +16,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c060c419fa72bb5914491a8ee666a9b1a2c6a622
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556346"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080356"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elementu (wdrażania ClickOnce)
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; — element (wdrażanie ClickOnce)
 Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <customErrorReporting  
    uri  
 />  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Ten element jest opcjonalny. Bez tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Wyświetla okno dialogowe błędu przedstawiający stosu wyjątku. Jeśli `customErrorReporting` element jest obecny, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zamiast tego zostanie wyświetlona wskazywanym przez identyfikator URI `uri` parametru. Docelowy identyfikator URI zawiera klasy Wyjątek zewnętrzny, wewnętrzny wyjątek klasy i komunikat wyjątku wewnętrznego jako parametry.  
+ Ten element jest opcjonalny. Bez tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Wyświetla okno dialogowe błędu przedstawiający stos wyjątków. Jeśli `customErrorReporting` element jest obecny, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zamiast tego wyświetli wskazywanym przez identyfikator URI `uri` parametru. Docelowy identyfikator URI będzie zawierać klasy wewnętrzny wyjątek, komunikat wyjątku wewnętrznego i klasy wyjątków zewnętrzne jako parametry.  
   
- Ten element umożliwia dodawanie raportów o błędach funkcje do aplikacji. Ponieważ wygenerowany identyfikator URI zawiera informacje o typie błędu, witryny sieci Web można analizować tych informacji i wyświetlania, na przykład odpowiednie ekranu rozwiązywania problemów.  
+ Ten element umożliwia dodawanie raportów o błędach funkcji do aplikacji. Ponieważ wygenerowanego identyfikatora URI zawiera informacje o typie błędu, witryny sieci Web można analizować tych informacji i ekran, na przykład odpowiednie ekranu rozwiązywania problemów.  
   
 ## <a name="example"></a>Przykład  
- Poniższy fragment kodu przedstawia `customErrorReporting` element wraz z wygenerowanego identyfikatora URI może powodować generowanie.  
+ Poniższy fragment kodu przedstawia `customErrorReporting` elementu, wraz z wygenerowanego identyfikatora URI może powodować generowanie.  
   
-```  
+```xml
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
   
 Example Generated Error:  
 http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz także  
+ [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)

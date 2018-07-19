@@ -1,5 +1,5 @@
 ---
-title: Produkt i pakiet — odwołanie do schematu | Dokumentacja firmy Microsoft
+title: Produkt i pakiet — dokumentacja schematu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -27,35 +27,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815577"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080652"
 ---
-# <a name="product-and-package-schema-reference"></a>Produkt i pakiet — odwołanie do schematu
-A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrzne [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale służy do instalowania składników zależnych od kultury zależności, takich jak zlokalizowane zestawy, umów licencyjnych i dokumentacji.  
+# <a name="product-and-package-schema-reference"></a>Odwołanie do schematu produktu i pakietu
+A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrznych [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale jest używana do instalowania składników zależnych od kultury, zależności, takich jak zestawy zlokalizowane, umów licencyjnych i dokumentacji.  
   
- Plik produktu i pakiety składa się z jednej najwyższego poziomu `Product` lub `Package` element, z których każdy zawiera następujące elementy.  
+ Plik produktu i pakietów składa się z jednej najwyższego poziomu `Product` lub `Package` elementu, z których każdy zawiera następujące elementy.  
   
 |Element|Opis|Atrybuty|  
 |-------------|-----------------|----------------|  
-|[\<Produktu > — Element](../deployment/product-element-bootstrapper.md)|Pliki produktu jest wymagany element najwyższego poziomu.|Brak|  
-|[\<Pakiet > — Element](../deployment/package-element-bootstrapper.md)|Wymagany element najwyższego poziomu w przypadku plików pakietu.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > — Element](../deployment/relatedproducts-element-bootstrapper.md)|Opcjonalny element plików produktu. Inne produkty, które instaluje lub zależy od tego produktu.|Brak|  
-|[\<InstallChecks > — Element](../deployment/installchecks-element-bootstrapper.md)|Element wymagany. Wyświetla zależności sprawdza wykonywać na lokalnym komputerze podczas instalacji.|Brak|  
-|[\<Polecenia > — Element](../deployment/commands-element-bootstrapper.md)|Element wymagany.  Wykonuje sprawdzanie instalacji co najmniej jednego, zgodnie z opisem w `InstallChecks`i określa, które pakiet do zainstalowania powinien sprawdzania zakończyć się niepowodzeniem.|Brak|  
-|[\<PackageFiles > — Element](../deployment/packagefiles-element-bootstrapper.md)|Element wymagany. Zawiera listę pakietów, które mogą być instalowane przez ten proces instalacji.|Brak|  
-|[\<Ciągi > — Element](../deployment/strings-element-bootstrapper.md)|Element wymagany. Magazyny zlokalizowane wersje produktu ciągów nazwy i błędów.|Brak|  
+|[\<Produktu > Element](../deployment/product-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików produktu.|Brak|  
+|[\<Pakiet > Element](../deployment/package-element-bootstrapper.md)|Wymagany element najwyższego poziomu dla plików pakietu.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts > Element](../deployment/relatedproducts-element-bootstrapper.md)|Opcjonalny element plików produktu. Inne produkty, które instaluje lub zależy od tego produktu.|Brak|  
+|[\<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md)|Element wymagany. Listy zależności sprawdza do wykonania na komputerze lokalnym podczas instalacji.|Brak|  
+|[\<Polecenia > Element](../deployment/commands-element-bootstrapper.md)|Element wymagany.  Wykonuje co najmniej jeden kontroli instalacji zgodnie z opisem w `InstallChecks`i wskazuje, które pakiety do zainstalowania powinien wyboru się nie powieść.|Brak|  
+|[\<Zadaniach PackageFiles > Element](../deployment/packagefiles-element-bootstrapper.md)|Element wymagany. Zawiera listę pakietów, które mogą być instalowane przez ten proces instalacji.|Brak|  
+|[\<Ciągi > Element](../deployment/strings-element-bootstrapper.md)|Element wymagany. Magazyny zlokalizowane wersje produktu ciągów nazw i błędów.|Brak|  
   
 ## <a name="remarks"></a>Uwagi  
- Schemat pakietu jest używane przez Setup.exe, program szczątkowy wygenerowany przez zadanie bootstrapping MS Build, zawierający ilością logiki ustalony własnych. Schemat dysków wszystkich aspektów procesu instalacji.  
+ Schemat pakietu jest używane przez *Setup.exe*, skrótowy programu generowane przez program MS Build uruchamianie zadania, które zawiera niewielkie ustaloną logiki swój własny. Schemat dysków każdy aspekt procesu instalacji.  
   
- `InstallChecks` testy tego setup.exe należy wykonać istnienie danego pakietu. `PackageFiles` Wyświetla listę wszystkich pakietów, które proces instalacji może być konieczne zainstalowanie, jeśli podany test nie. Każdy wpis polecenia w obszarze polecenia wykonuje jeden z testów opisanego przez `InstallChecks`i określa, która `PackageFile` do uruchamiania w przypadku testu nie. Można użyć `Strings` elementu do zlokalizowania nazw produktów i komunikaty o błędach, tak aby jedna instalacja jednego binarne umożliwia zainstalowanie aplikacji dowolną liczbę języków.  
+ `InstallChecks` testy tego setup.exe należy wykonywać istnienie danego pakietu. `PackageFiles` Wyświetla listę wszystkich pakietów, które proces instalacji może być konieczne zainstalowanie, jeżeli nie dany test. Każdy wpis polecenia w obszarze polecenia wykonuje jedno z badań opisanego przez `InstallChecks`i określa, która `PackageFile` do uruchomienia powinny test się nie powieść. Możesz użyć `Strings` elementu do zlokalizowania nazw produktów i komunikaty o błędach, tak aby jedna instalacja pojedynczego binarne umożliwia zainstalowanie aplikacji dla dowolnej liczby języków.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje pliku kompletnego produktu do instalacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ Poniższy przykład kodu demonstruje pliku kompletnego produktu do instalacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -159,6 +159,6 @@ A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętr
 </Product>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

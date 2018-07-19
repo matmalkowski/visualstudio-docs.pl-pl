@@ -3,21 +3,22 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
-title: Mobile Development dokumentacji C++ | Dokumentacja firmy Microsoft
-description: Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń z programem Visual Studio.
+title: Tworzenie aplikacji mobilnych za pomocą dokumentacji języka C++ | Dokumentacja firmy Microsoft
+description: Tworzenie natywnych aplikacji C++ dla systemów iOS, z systemami Android i Windows z programem Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060954"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924177"
 ---
-# <a name="mobile-development-with-c-documentation"></a>Tworzenie przenośnych za pomocą dokumentacji C++
+# <a name="mobile-development-with-c-documentation"></a>Tworzenie aplikacji mobilnych za pomocą dokumentacji języka C++
 
-Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń z programem Visual Studio.
+Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzenia z programem Visual Studio.
 
 <ul class="panelContent cardsF">
     <li>
@@ -31,8 +32,8 @@ Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zainstaluj Visual C++ for Cross Platform Mobile Development</h3>
-                        <p>Instalator narzędzia niezbędne do tworzenia aplikacji mobilnych i platform.</p>
+                        <h3>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform</h3>
+                        <p>Konfigurowanie narzędzia wymagane do kompilowania aplikacji mobilnych dla wielu platform.</p>
                     </div>
                 </div>
             </div>
@@ -50,8 +51,8 @@ Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o programie Visual C++ dla aplikacji mobilnych dla wielu Platform</h3>
-                        <p>Omówienie aplikacji dla wielu platform przenośnych z programem Visual C++.</p>
+                        <h3>Dowiedz się więcej o programie Visual C++ dla opracowywania aplikacji mobilnych dla wielu Platform</h3>
+                        <p>Omówienie tworzenia aplikacji mobilnych dla wielu platform przy użyciu języka Visual C++.</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +70,8 @@ Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Przykłady aplikacji mobilnych dla wielu Platform</h3>
-                        <p>Przykłady ułatwiające rozpoczęcie pracy z aplikacji mobilnych dla wielu platform.</p>
+                        <h3>Przykłady programowania międzyplatformowych aplikacji mobilnych</h3>
+                        <p>Zobacz przykłady ułatwiające rozpoczęcie pracy z aplikacji mobilnych dla wielu platform.</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +102,7 @@ Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń 
                 <div class="card">
                     <div class="cardText">
                         <h3>Platformy</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Dokumentacja platformy Uniwersalnej uniwersalnych systemu Windows</a></p>
+                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Windows Universal dokumentację platformy (systemu Windows UWP)</a></p>
                         <p><a href="https://developer.apple.com/reference">Dokumentacja interfejsu API systemu iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Dokumentacja interfejsu API systemu android</a></p>
                     </div>

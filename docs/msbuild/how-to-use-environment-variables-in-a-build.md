@@ -14,41 +14,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572543"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078244"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Porady: użycie zmiennych środowiskowych w kompilacji
-Podczas tworzenia projektów często należy ustawić opcje kompilacji za pomocą informacji, która nie znajduje się w pliku projektu lub pliki wchodzące w skład projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.  
+# <a name="how-to-use-environment-variables-in-a-build"></a>Porady: Użycie zmiennych środowiskowych w kompilacji
+Podczas kompilowania projektów często jest to konieczne, można ustawić opcji kompilacji, korzystając z informacji, który nie znajduje się w pliku projektu lub plików, wchodzące w skład projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.  
   
-## <a name="referencing-environment-variables"></a>Odwołanie do zmiennych środowiskowych  
+## <a name="reference-environment-variables"></a>Zmienne odwołujące się do środowiska  
  Wszystkie zmienne środowiskowe są dostępne dla [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) pliku projektu jako właściwości.  
   
 > [!NOTE]
->  Jeśli plik projektu zawiera jawna definicja właściwości, która ma taką samą nazwę jak zmiennej środowiskowej, właściwość w pliku projektu zastępuje wartość zmiennej środowiskowej.  
+>  Jeśli plik projektu zawiera jawna definicja właściwości, która ma taką samą nazwę jak zmienna środowiskowa, właściwość w pliku projektu zastępuje wartość zmiennej środowiskowej.  
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Aby użyć zmiennej środowiskowej w projekcie programu MSBuild  
   
--   Odwołanie do zmiennej środowiska tak samo jak Zmienna zadeklarowana w pliku projektu. Na przykład następujący kod odwołuje się do zmiennej środowiskowej BIN_PATH:  
+-   Odwoływać się do zmiennej środowiskowej w taki sam sposób, jak Zmienna zadeklarowana w pliku projektu. Na przykład poniższy kod odwołuje się do zmiennej środowiskowej BIN_PATH:  
   
      `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
   
- Można użyć `Condition` atrybut, aby podać wartość domyślną dla właściwości, jeśli nie ustawiono zmiennej środowiskowej.  
+ Możesz użyć `Condition` atrybutu, aby podać wartość domyślną dla właściwości, jeśli nie ustawiono zmiennej środowiskowej.  
   
-#### <a name="to-provide-a-default-value-for-a-property"></a>Aby podać wartości domyślnej właściwości.  
+#### <a name="to-provide-a-default-value-for-a-property"></a>Aby podać wartość domyślną dla właściwości  
   
--   Użyj `Condition` atrybutu dla właściwości ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład poniższy kod ustawia `ToolsPath` c:\tools tylko wtedy, gdy dla właściwości `ToolsPath` nie ustawiono zmiennej środowiskowej:  
+-   Użyj `Condition` atrybutu dla właściwości, aby ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład, poniższy kod ustawia `ToolsPath` właściwości *c:\tools* tylko wtedy, gdy `ToolsPath` nie ustawiono zmiennej środowiskowej:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
     > [!NOTE]
-    >  Nazwy właściwości nie jest rozróżniana tak zarówno `$(ToolsPath)` i `$(TOOLSPATH)` odwoływać się do tej samej zmiennej właściwości lub środowiska.  
+    >  Nazwy właściwości nie jest rozróżniana wielkość liter więc zarówno `$(ToolsPath)` i `$(TOOLSPATH)` odwoływać się do tej samej zmiennej właściwości lub środowiska.  
   
 ## <a name="example"></a>Przykład  
- Następujące plik projektu używa zmiennych środowiskowych, aby określić lokalizację katalogów.  
+ Następujący plik projektu używa zmiennych środowiskowych w celu określenia lokalizacji katalogów.  
   
 ```xml  
 <Project DefaultTargets="FakeBuild">  
@@ -64,7 +64,7 @@ Podczas tworzenia projektów często należy ustawić opcje kompilacji za pomoc�
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
-[MSBuild ](../msbuild/msbuild.md)  
+## <a name="see-also"></a>Zobacz także  
+[Program MSBuild ](../msbuild/msbuild.md)  
 [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)  
-[Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

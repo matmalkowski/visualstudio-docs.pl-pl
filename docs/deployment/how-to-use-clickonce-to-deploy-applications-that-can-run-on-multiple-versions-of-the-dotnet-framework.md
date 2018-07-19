@@ -1,5 +1,5 @@
 ---
-title: 'Porady: użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji platformy .NET | Dokumentacja firmy Microsoft'
+title: 'Porady: użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET Framework | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,79 +18,79 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: eb4d8696755a70005923833625c72a95e5f1e80a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815077"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079953"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Porady: użycie technologii ClickOnce do wdrażania aplikacji uruchamianych w wielu wersjach systemu .NET Framework
-Możesz wdrożyć aplikację, która jest przeznaczony dla wielu wersji platformy .NET przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i manifestów aplikacji i wdrażania aktualizacji.  
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Porady: użycie ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET framework
+Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu .NET Framework przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i zaktualizuj manifesty aplikacji i wdrożenia.  
   
 > [!NOTE]
->  Przed wprowadzeniem zmian w aplikacji, aby korzystać z wielu wersji programu .NET Framework, należy upewnić się, że aplikacja działa z wieloma wersjami programu .NET Framework. Wersja środowiska CLR różni się między [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] i .NET Framework 2.0, .NET Framework 3.0 i .NET Framework 3.5.  
+>  Zanim zmienisz aplikacji pod kątem wielu wersji programu .NET Framework, należy upewnić się, że aplikacja działa z wieloma wersjami programu .NET Framework. Wersja środowiska uruchomieniowego języka wspólnego różni się między [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] a .NET Framework 2.0, .NET Framework 3.0 i .NET Framework 3.5.  
   
- Ten proces wymaga wykonania następujących czynności:  
+ Ten proces wymaga wykonania następujących kroków:  
   
-1.  Generowanie manifestów aplikacji i wdrażania.  
+1.  Generowanie manifestów aplikacji i wdrożenia.  
   
-2.  Zmień manifest wdrażania, aby wyświetlić listę wiele wersji .NET Framework.  
+2.  Zmień manifest wdrożenia, aby wyświetlić listę wiele wersji .NET Framework.  
   
-3.  Zmianę pliku app.config, aby wyświetlić listę zgodne wersje środowiska uruchomieniowego .NET Framework.  
+3.  Zmiana *app.config* pliku, aby wyświetlić listę niezgodne wersje środowiska uruchomieniowego .NET Framework.  
   
-4.  Zmień manifest aplikacji, aby oznaczyć zależne zestawy jako zestawy .NET Framework.  
+4.  Zmień manifest aplikacji, aby oznaczyć zestawów zależnych jako zestawy .NET Framework.  
   
-5.  Zaloguj się manifest aplikacji.  
+5.  Zaloguj się w manifeście aplikacji.  
   
-6.  Zaktualizuj i podpisać manifest wdrażania.  
+6.  Zaktualizuj i podpisać manifest wdrożenia.  
   
-### <a name="to-generate-the-application-and-deployment-manifests"></a>Aby wygenerować manifestów aplikacji i wdrażania  
+### <a name="to-generate-the-application-and-deployment-manifests"></a>Aby wygenerować manifesty aplikacji i wdrożenia  
   
--   Użyj Kreatora publikowania lub publikowania strony projektanta projektu do publikowania aplikacji i generowanie aplikacje i pliki manifestu wdrożenia. Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) lub [strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md).  
+-   Użyj Kreatora publikacji lub na stronie publikowania w Projektancie projektu do publikowania aplikacji i wygenerować aplikację i plikach manifestu wdrażania. Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) lub [strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md).  
   
-### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Aby zmienić manifest wdrażania, aby wyświetlić listę wiele wersji .NET Framework  
+### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Aby zmienić manifestu wdrażania, aby wyświetlić listę wiele wersji .NET Framework  
   
-1.  W katalogu publikowania Otwórz plik manifestu wdrożenia za pomocą edytora XML w Visual Studio. Manifest rozmieszczenia ma rozszerzenie nazwy pliku .application.  
+1.  W katalogu publikowania otwarcie manifestu wdrażania za pomocą edytora XML w programie Visual Studio. Manifest wdrażania ma *.application* rozszerzenie nazwy pliku.  
   
-2.  Zastąp kod XML między `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` i `</compatibleFrameworks>` elementów XML, który zawiera listę obsługiwanych wersji systemu .NET Framework dla aplikacji.  
+2.  Zastąp kod XML między `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` i `</compatibleFrameworks>` elementy z danymi XML, który zawiera listę obsługiwanych wersji systemu .NET Framework dla aplikacji.  
   
-     W poniższej tabeli przedstawiono niektóre z dostępnych wersji .NET Framework i odpowiedni plik XML, który można dodać do manifestu wdrożenia.  
+     W poniższej tabeli przedstawiono niektóre z dostępnych wersji oprogramowania .NET Framework i odpowiedni plik XML, który można dodać do manifestu wdrażania.  
   
     |Wersja programu .NET Framework|XML|  
     |----------------------------|---------|  
     |4 klienta|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
-    |Pełne 4|\<Framework targetVersion = "4.0" profile = "Pełny" supportedRuntime = "4.0.30319" / >|  
-    |3.5 klienta|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 Pełna|\<Framework targetVersion = "3.5" profile = "Pełny" supportedRuntime = "2.0.50727" / >|  
+    |Pełne 4|\<Framework targetVersion = "4.0" profile = supportedRuntime "Pełnej" = "4.0.30319" / >|  
+    |3.5 klient|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
+    |3.5 pełne|\<Framework targetVersion = "3.5" profile = supportedRuntime "Pełnej" = "2.0.50727" / >|  
     |3.0|\<Framework targetVersion = supportedRuntime "3.0" = "2.0.50727" / >|  
   
-### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Aby zmienić pliku app.config, aby wyświetlić listę zgodne wersje środowiska uruchomieniowego .NET Framework  
+### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Aby zmienić plik app.config, aby wyświetlić listę niezgodne wersje środowiska uruchomieniowego .NET Framework  
   
-1.  W Eksploratorze rozwiązań Otwórz plik App.config za pomocą edytora XML w Visual Studio.  
+1.  W Eksploratorze rozwiązań Otwórz *app.config* plików za pomocą edytora XML w programie Visual Studio.  
   
-2.  Zastąp (lub dodać) kod XML między `<startup>` i `</startup>` elementów XML, który zawiera listę obsługiwanych środowisk uruchomieniowych .NET Framework dla aplikacji.  
+2.  Zastąp (lub dodać) kod XML między `<startup>` i `</startup>` elementów za pomocą XML, który zawiera listę obsługiwanych środowiska uruchomieniowego .NET Framework dla aplikacji.  
   
-     W poniższej tabeli przedstawiono niektóre z dostępnych wersji .NET Framework i odpowiedni plik XML, który można dodać do manifestu wdrożenia.  
+     W poniższej tabeli przedstawiono niektóre z dostępnych wersji oprogramowania .NET Framework i odpowiedni plik XML, który można dodać do manifestu wdrażania.  
   
     |Wersja środowiska uruchomieniowego .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 klienta|\<Wersja supportedRuntime = sku "4.0.30319" = ". NETFramework, Version = wersja 4.0, profilu klienta = "/ >|  
-    |Pełne 4|\<Wersja supportedRuntime = sku "4.0.30319" = ". NETFramework, wersja 4.0 = "/ >|  
-    |3.5 Pełna|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 klienta|\<Wersja supportedRuntime = sku "v2.0.50727" = "Client" / >|  
+    |4 klienta|\<Wersja supportedRuntime = jednostki sku "v4.0.30319" = ". NETFramework, Version = w wersji 4.0, profilu klienta = "/ >|  
+    |Pełne 4|\<Wersja supportedRuntime = jednostki sku "v4.0.30319" = ". NETFramework, Version = v4.0 "/ >|  
+    |3.5 pełne|\<supportedRuntime version="v2.0.50727"/ >|  
+    |3.5 klient|\<Wersja supportedRuntime = jednostki sku "v2.0.50727" = "Client" / >|  
   
-### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Aby zmienić manifest aplikacji, aby oznaczyć zależne zestawy jako zestawy .NET Framework  
+### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Aby zmienić manifest aplikacji, aby oznaczyć zestawów zależnych jako zestawy .NET Framework  
   
-1.  W katalogu publikowania Otwórz plik manifestu aplikacji przy użyciu edytora XML w Visual Studio. Manifest rozmieszczenia ma rozszerzenie nazwy pliku manifest.  
+1.  W katalogu publikowania Otwórz manifest aplikacji za pomocą edytora XML w programie Visual Studio. Manifest wdrażania ma *.manifest* rozszerzenie nazwy pliku.  
   
-2.  Dodaj `group="framework"` do kod XML zależności dla zestawów wartownik (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, i `System.Data.Entity`). Na przykład XML powinien wyglądać następująco:  
+2.  Dodaj `group="framework"` na kod XML zależności dla zestawów wartownik (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, i `System.Data.Entity`). Na przykład kod XML powinien wyglądać następująco:  
   
     ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Zaktualizuj numer wersji `<assemblyIdentity>` elementu Microsoft.Windows.CommonLanguageRuntime numer wersji dla programu .NET Framework, która jest najprostszy. Na przykład, jeśli aplikacja jest przeznaczony dla platformy .NET Framework 3.5 i [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], użyj 2.0.50727.0 numer wersji i XML powinien wyglądać następująco:  
+3.  Zaktualizuj numer wersji `<assemblyIdentity>` elementu dla Microsoft.Windows.CommonLanguageRuntime numer wersji dla programu .NET Framework, która jest najprostszy. Na przykład, jeśli aplikacja jest przeznaczony dla .NET Framework 3.5 i [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], użyj 2.0.50727.0 numer wersji i XML powinien wyglądać podobnie do poniższego:  
   
     ```xml  
     <dependency>  
@@ -100,13 +100,13 @@ Możesz wdrożyć aplikację, która jest przeznaczony dla wielu wersji platform
     </dependency>  
     ```  
   
-### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Aby zaktualizować i ponowne podpisywanie aplikacji i wdrażania manifesty  
+### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualizowanie i ponowne podpisywanie aplikacji i wdrażania manifestów  
   
--   Aktualizowanie i ponowne podpisywanie manifestów aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aktualizowanie i ponowne podpisywanie manifestów aplikacji i wdrożenia. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [\<compatibleFrameworks > — Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
- [\<zależności > — Element](../deployment/dependency-element-clickonce-application.md)   
+ [\<compatibleFrameworks > element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [\<zależność > element](../deployment/dependency-element-clickonce-application.md)   
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Schemat pliku konfiguracji](/dotnet/framework/configure-apps/file-schema/index)

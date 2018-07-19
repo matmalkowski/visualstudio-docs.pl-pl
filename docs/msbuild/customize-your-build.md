@@ -13,33 +13,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed794a50df41e6a8c6817a9e10d93edb7606b0e6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326829"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945978"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
-Proces kompilacji projektów MSBuild, które używają standardowego (importowanie `Microsoft.Common.props` i `Microsoft.Common.targets`) ma kilka punkty zaczepienia rozszerzeń, których można użyć w celu dostosowania procesu kompilacji.
+Proces kompilacji projektów MSBuild, które używają standardowych (importowanie *Microsoft.Common.props* i *Microsoft.Common.targets*) ma kilka punkty zaczepienia rozszerzalności, których można użyć w celu dostosowania kompilacji proces.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Dodanie argumentów do wiersza polecenia programu MSBuild wywołań dla projektu
+## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Dodawanie argumentów wiersza polecenia wywołań programu MSBuild w projekcie
 
-A `Directory.Build.rsp` pliku w lub powyżej katalogu źródłowego zostaną zastosowane do kompilacji z wiersza polecenia projektu. Aby uzyskać więcej informacji, zobacz [pliki odpowiedzi MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
+A *Directory.Build.rsp* pliku w lub powyżej katalogu źródłowego zostaną zastosowane do kompilacji z wiersza polecenia projektu. Aby uzyskać więcej informacji, zobacz [pliki odpowiedzi MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props i Directory.Build.targets
 
-W wersjach programu MSBuild przed wersji 15 Jeśli chcesz podać nowych, niestandardowych właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy zdefiniować właściwości w *.props* pliku, a następnie zaimportować jawnie *.props* pliku w każdym projekcie w rozwiązaniu, między innymi.
+Przed MSBuild wersji 15 Jeśli chcesz podać nowe, niestandardowe właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy zdefiniować właściwość w *.props* pliku, a następnie zaimportuj jawnie *.props* pliku każdego projektu w rozwiązaniu, między innymi.
 
-Jednak teraz możesz dodać nową właściwość do każdego projektu w jednym kroku przez zdefiniowaniem go w jednego pliku o nazwie *Directory.Build.props* w folderze głównym, który zawiera źródła. Po uruchomieniu programu MSBuild *Microsoft.Common.props* wyszukuje struktury katalogów dla *Directory.Build.props* plików (i *Microsoft.Common.targets* szuka *Directory.Build.targets*). Jeśli zostanie znaleziony, importuje właściwości. *Directory.Build.props* plik użytkownika, który zawiera dostosowania do projektów w katalogu.
+Jednak teraz możesz dodać nową właściwość do każdego projektu w jednym kroku, definiując je w pojedynczy plik o nazwie *Directory.Build.props* w folderze głównym, który zawiera Twoje źródło. Po uruchomieniu programu MSBuild *Microsoft.Common.props* wyszukuje struktury katalogów dla *Directory.Build.props* pliku (i *Microsoft.Common.targets* szuka *Directory.Build.targets*). Jeśli zostanie znaleziony, importuje właściwości. *Directory.Build.props* jest plikiem zdefiniowanych przez użytkownika zawiera dostosowania do projektów w katalogu.
 
 ### <a name="directorybuildprops-example"></a>Przykład Directory.Build.props
 
-Na przykład, jeśli chcesz włączyć wszystkie projektów dostęp do nowych Roslyn **/ deterministyczne** funkcji (która jest widoczna w Roslyn `CoreCompile` docelowego za pomocą właściwości `$(Deterministic)`), można wykonać następujące czynności.
+Na przykład, jeśli chcesz włączyć wszystkie Twoje projekty dostęp do nowych Roslyn **/ deterministic** funkcji (która jest widoczna w Roslyn `CoreCompile` docelowego przez właściwość `$(Deterministic)`), można wykonać następujące czynności.
 
-1. Utwórz nowy plik w folderze głównym Twojego repozytorium o nazwie *Directory.Build.props*.
-2. Dodaj następujący kod XML w pliku.
+1. Utwórz nowy plik w folderze głównym repozytorium o nazwie *Directory.Build.props*.
+2. Dodaj następujący kod XML do pliku.
 
   ```xml
   <Project>
@@ -48,11 +48,11 @@ Na przykład, jeśli chcesz włączyć wszystkie projektów dostęp do nowych Ro
     </PropertyGroup>
   </Project>
   ```
-3. Uruchom program MSBuild. Importy istniejącego projektu *Microsoft.Common.props* i *Microsoft.Common.targets* Znajdź plik i zaimportuj go.
+3. Uruchom program MSBuild. Importy istniejącego projektu *Microsoft.Common.props* i *Microsoft.Common.targets* znaleźć pliku i zaimportuj go.
 
 ### <a name="search-scope"></a>Zakres wyszukiwania
 
-Podczas wyszukiwania *Directory.Build.props* pliku, program MSBuild przeprowadzi struktura katalogów do góry z lokalizacji projektu (`$(MSBuildProjectFullPath)`), zatrzymywanie po klient zlokalizuje *Directory.Build.props* plik. Na przykład jeśli Twoje `$(MSBuildProjectFullPath)` został *c:\users\username\code\test\case1*, MSBuild zaczyna się wyszukiwanie istnieje i następnie wyszukiwania struktura katalogów w górę, dopóki znajduje się *Directory.Build.props* pliku, tak jak następującą strukturę katalogów.
+Podczas wyszukiwania *Directory.Build.props* pliku, MSBuild przedstawia strukturę katalogów do góry z lokalizacji projektu (`$(MSBuildProjectFullPath)`), trwa zatrzymywanie po zlokalizuje *Directory.Build.props* plik. Na przykład jeśli Twoja `$(MSBuildProjectFullPath)` został *c:\users\username\code\test\case1*, MSBuild rozpocząć wyszukiwanie istnieje, i następnie wyszukiwania struktury katalogów w górę, dopóki znajduje się *Directory.Build.props* pliku, jak następującą strukturę katalogów.
 
 ```
 c:\users\username\code\test\case1
@@ -67,13 +67,13 @@ Lokalizacja pliku rozwiązania nie ma znaczenia *Directory.Build.props*.
 
 ### <a name="import-order"></a>Kolejność importu
 
-*Directory.Build.props* jest zaimportowana bardzo wczesnym *Microsoft.Common.props*, więc właściwości zdefiniowane później są niedostępne do niego. Tak należy unikać odwołujących się do właściwości, które nie zostały jeszcze zdefiniowane (i w związku z tym oszacuje pustą).
+*Directory.Build.props* jest zaimportowana bardzo wczesnym *Microsoft.Common.props*, a właściwości zdefiniowane w dalszej części są niedostępne do niego. Tak należy unikać odnoszące się do właściwości, które nie zostały jeszcze zdefiniowane (i oceni pusty).
 
-*Directory.Build.targets* została zaimportowana z *Microsoft.Common.targets* po zaimportowaniu *.targets* pliki z pakietami NuGet. Tak może służyć do zastępowania właściwości oraz zdefiniowanego w większości logiki kompilacji, ale w czasie może być konieczna dostosowań w pliku projektu po zaimportowaniu końcowego.
+*Directory.Build.targets* została zaimportowana z *Microsoft.Common.targets* po zaimportowaniu *.targets* pliki z pakietów NuGet. Tak można zastąpić, właściwości i obiektów docelowych określonych w większości logikę kompilacji, ale czasami konieczne może być Dostosowywanie pliku projektu po zaimportowaniu końcowej.
 
-### <a name="use-case-multi-level-merging"></a>Przypadek użycia: scalanie wielu poziomów
+### <a name="use-case-multi-level-merging"></a>Przypadek użycia: scalanie wielopoziomowe
 
-Załóżmy, że ta struktura standardowego rozwiązania:
+Załóżmy, że ta struktura standardowe rozwiązanie:
 
 ```
 \
@@ -89,40 +89,40 @@ Załóżmy, że ta struktura standardowego rozwiązania:
     \Project2Tests
 ```
 
-Może być pożądane mają wspólne właściwości wszystkich projektów *(1)*, typowe właściwości *src* projekty *(2-src)* i wspólnych właściwości  *Testowanie* projekty *(2 test)*.
+Może być wskazane zastosowanie właściwości wspólne dla wszystkich projektów *(1)*, typowe właściwości *src* projektów *(2-src)* oraz typowe właściwości  *Testowanie* projektów *(2-test)*.
 
-Dla programu MSBuild poprawnie scalić pliki "wewnętrzna" (*2-src* i *2 test*) z pliku "zewnętrzna" (*1*), weź pod uwagę raz program MSBuild wyszukuje *Directory.Build.props* pliku przestaje dalsze skanowanie. Aby kontynuować skanowania i scalić z zewnętrznym plikiem, umieść to w oba pliki wewnętrzny:
+Aby poprawnie scalić "wewnętrzny" pliki programu MSBuild (*2 src* i *2 test*) z plikiem "zewnętrzny" (*1*), należy wziąć pod uwagę, o których raz MSBuild znajduje *Directory.Build.props* plik przestanie dalsze skanowanie. Aby kontynuować skanowanie i scalić do zewnętrznego pliku, umieść ten kod w obu plikach wewnętrzny:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
-Podsumowanie przez MSBuild ogólne podejście jest następujący:
+Podsumowanie w MSBuild, ogólne podejście jest następująca:
 
-- Dla żadnego danego projektu MSBuild wyszukuje pierwszy *Directory.Build.props* w górę w strukturze rozwiązania scala go przy użyciu ustawień domyślnych i zatrzymuje skanowanie, aby uzyskać więcej informacji
-- Jeśli chcesz, aby wiele poziomów znaleziono i scalić następnie [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (należy pokazanym powyżej) "zewnętrzne" pliku z pliku "wewnętrzne"
-- Jeśli plik "zewnętrzne" nie, nie również zaimportować coś powyżej, następnie skanowanie zatrzymuje
-- Aby kontrolować proces skanowania scalanie, użyj `$(DirectoryBuildPropsPath)` i `$(ImportDirectoryBuildProps)`
+- Dla każdego projektu w serwisie MSBuild wyszukuje pierwszy *Directory.Build.props* w górę w strukturze rozwiązania scala je przy użyciu ustawień domyślnych i zatrzymuje skanowanie, aby uzyskać więcej informacji
+- Jeśli chcesz, aby wiele poziomów, aby znaleźć i scalone, następnie [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (jak pokazano powyżej) "zewnętrzny" plik z pliku "wewnętrzny"
+- Jeśli plik "zewnętrzny" jest sam nie również zaimportować coś, co powyżej, następnie skanowanie zatrzymuje
+- Aby kontrolować proces skanowania scalania, należy użyć `$(DirectoryBuildPropsPath)` i `$(ImportDirectoryBuildProps)`
 
-Lub po prostu: pierwszy *Directory.Build.props* którego nie importuje niczego, jest gdzie zatrzymuje program MSBuild.
+Lub po prostu: pierwszy *Directory.Build.props* , nie importuje wszystko to, gdzie zatrzymuje programu MSBuild.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-Domyślnie `Microsoft.Common.props` importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` i `Microsoft.Common.targets` importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Wartość domyślna `MSBuildProjectExtensionsPath` jest `$(BaseIntermediateOutputPath)`, `obj/`. Jest to mechanizm, który używa NuGet do odwoływania się do tworzenia logiki oferowane przez pakiety, oznacza to, że w czasie przywracania tworzy `{project}.nuget.g.props` pliki, które odwołują się do zawartości pakietu.
+Domyślnie *Microsoft.Common.props* importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` i *Microsoft.Common.targets* importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Wartość domyślna `MSBuildProjectExtensionsPath` jest `$(BaseIntermediateOutputPath)`, `obj/`. NuGet korzysta z tego mechanizmu do odwoływania się do tworzenia logiki oferowane przez pakiety; oznacza to, w czasie przywracania tworzy `{project}.nuget.g.props` pliki, które odwołują się do zawartości pakietu.
 
-Ten mechanizm rozszerzalności można wyłączyć, ustawiając właściwość `ImportProjectExtensionProps` do `false` w `Directory.Build.props` lub przed zaimportowaniem `Microsoft.Common.props`.
+Możesz wyłączyć ten mechanizm rozszerzalności, ustawiając właściwość `ImportProjectExtensionProps` do `false` w *Directory.Build.props* lub przed zaimportowaniem *Microsoft.Common.props*.
 
 > [!NOTE]
-> Wyłączenie importów MSBuildProjectExtensionsPath uniemożliwi logiki kompilacji dostarczone w pakietach NuGet z zastosowania do projektu. Niektóre pakiety NuGet wymagają logiki kompilacji do wykonywania ich funkcji i będzie renderowany bezużyteczne po to jest wyłączona.
+> Wyłączenie Importy MSBuildProjectExtensionsPath uniemożliwia logikę kompilacji dostarczanych w pakietach NuGet z zastosowania do projektu. Niektóre pakiety NuGet wymagają logikę kompilacji do wykonywania ich funkcji i będzie renderowana bezcelowe gdy ta opcja jest wyłączona.
 
-## <a name="user-file"></a>plik .user
+## <a name="user-file"></a>plik .user, odnoszący
 
-Importuje Microsoft.Common.CurrentVersion.targets `$(MSBuildProjectFullPath).user` Jeśli istnieje, dzięki czemu można tworzyć pliku obok projektu za pomocą tego dodatkowe rozszerzenia. Długoterminowej zmiany, które chcesz sprawdzić do kontroli źródła preferowane zmianę projektu, dzięki czemu nie trzeba wiedzieć o ten mechanizm rozszerzenia przyszłych maintainers.
+*Microsoft.Common.CurrentVersion.targets* importuje `$(MSBuildProjectFullPath).user` Jeśli istnieje, aby można było utworzyć plik obok projektu za pomocą tego dodatkowe rozszerzenia. Długoterminowe zmian, które planujesz zaewidencjonować w kontroli źródła najpierw zmiany w samym projekcie, tak, aby w przyszłości maintainers nie trzeba wiedzieć o tego mechanizmu rozszerzenia.
 
 ## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath i MSBuildUserExtensionsPath
 
 > [!WARNING]
-> Korzystanie z tych mechanizmów rozszerzeń utrudnia uzyskanie powtarzalnych kompilacji na komputerach. Spróbuj użyć konfiguracji, które mogą być sprawdzane w systemie kontroli źródła i współdzielona przez wszystkich deweloperów baza kodu.
+> Za pomocą tych mechanizmów rozszerzenia utrudnia można pobrać powtarzalnych kompilacji na komputerach. Spróbuj użyć konfiguracji, które mogą być sprawdzone w systemie kontroli źródła współdzielona przez wszystkich deweloperów bazy kodu.
 
-Według Konwencji wiele podstawowych importowanie plików logiki kompilacji
+Zgodnie z Konwencją wiele głównych importowania plików logikę kompilacji
 
 ```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
@@ -134,18 +134,18 @@ przed ich zawartość i
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-później. Dzięki temu zainstalowanych zestawów SDK rozszerzyć logiki kompilacji popularne typy projektu.
+później. Dzięki temu zainstalowanych zestawów SDK rozszerzyć logikę kompilacji popularnych typów projektów.
 
-Tej samej struktury katalogów jest wyszukiwana w `$(MSBuildUserExtensionsPath)`, który jest folderem użytkownika `%LOCALAPPDATA%\Microsoft\MSBuild`. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu działać w ramach poświadczeń użytkownika. Można wyłączyć rozszerzenia użytkownika przez ustawienie właściwości o nazwie po importowania pliku we wzorcu `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Na przykład ustawienie `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` do `false` uniemożliwiłyby importowanie `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
+Tej samej struktury katalogów jest przeszukiwany w `$(MSBuildUserExtensionsPath)`, czyli do folderu na użytkownika *%LOCALAPPDATA%\Microsoft\MSBuild*. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu, uruchom w ramach poświadczeń użytkownika. Możesz wyłączyć rozszerzenia użytkownika przez ustawienie właściwości o nazwie po importowania pliku we wzorcu `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Na przykład ustawienie `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` do `false` uniemożliwiłyby importowania `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
 ## <a name="customizing-the-solution-build"></a>Dostosowywanie kompilacji rozwiązania
 
 > [!IMPORTANT]
-> Dostosowywanie kompilacji rozwiązania w ten sposób ma zastosowanie tylko do narzędzia wiersza polecenia kompilacji z `MSBuild.exe`. On **nie** dotyczą kompilacji w programie Visual Studio.
+> Dostosowywanie kompilacji rozwiązania, w ten sposób stosuje się tylko do narzędzia wiersza polecenia kompilacji z *MSBuild.exe*. Jego **nie** dotyczą kompilacje w programie Visual Studio.
 
-Gdy MSBuild tworzy plik rozwiązania, najpierw tłumaczy go wewnętrznie w pliku projektu i następnie kompilacje które. Importuje plik wygenerowanego projektu `before.{solutionname}.sln.targets` przed zdefiniowaniem wszystkich obiektów docelowych i `after.{solutionname}.sln.targets` po zaimportowaniu elementów docelowych, tym cele, aby `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` i `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` katalogów.
+Gdy MSBuild tworzy pliku rozwiązania, najpierw tłumaczy to wewnętrznie do pliku projektu, a następnie kompilacji. Importuje plik wygenerowanego projektu `before.{solutionname}.sln.targets` przed zdefiniowaniem wszystkich obiektów docelowych i `after.{solutionname}.sln.targets` po zaimportowaniu elementów docelowych, tym cele, które zainstalowano na `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` i `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` katalogów.
 
-Na przykład można zdefiniować nowy cel, aby zapisać dziennik niestandardowy komunikat po budynku `MyCustomizedSolution.sln` przez utworzenie pliku w tym samym katalogu o nazwie `after.MyCustomizedSolution.sln.targets` zawiera
+Na przykład można zdefiniować nowy obiekt docelowy, aby zapisać dziennik niestandardowy komunikat po kompilacji *MyCustomizedSolution.sln* przez utworzenie pliku w tym samym katalogu o nazwie *po. MyCustomizedSolution.sln.targets* zawierający
 
 ```xml
 <Project>
@@ -155,6 +155,8 @@ Na przykład można zdefiniować nowy cel, aby zapisać dziennik niestandardowy 
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) [odwołanie MSBuild](../msbuild/msbuild-reference.md)
+[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+
+[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)

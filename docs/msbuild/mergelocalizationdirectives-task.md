@@ -20,28 +20,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb696aae19675a12aeb9aa6f2b76c8e6b710ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 78cf1405cf3a09d43aab21c53e64644db29af0de
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571246"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077704"
 ---
-# <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives — Zadanie
-<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Zadań łączy atrybuty lokalizacji i komentarze co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jednym pliku dla całego zestawu.  
+# <a name="mergelocalizationdirectives-task"></a>Mergelocalizationdirectives — zadanie
+<xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Zadań scala atrybuty lokalizacji i komentarze, co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jeden plik dla całego zestawu.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`GeneratedLocalizationFiles`|Wymagane **[ITaskItem]** parametru.<br /><br /> Określa listę plików dyrektywy lokalizacji dla poszczególnych plików w [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] format binarny.|  
-|`OutputFile`|Wymagane **ciąg** parametru wyjściowego.<br /><br /> Ścieżka danych wyjściowych zestawu skompilowanego dyrektywy lokalizacji.|  
+|`GeneratedLocalizationFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa listę plików dyrektywy lokalizacji dla poszczególnych plików w [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] format binarny.|  
+|`OutputFile`|Wymagane **ciąg** parametr wyjściowy.<br /><br /> Określa ścieżkę wyjściową zestawu skompilowanego dyrektywy lokalizacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Można dodawać atrybuty lokalizacji i komentarze do [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] zawartości. Z [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] lokalizacja pomocy technicznej, można usunąć atrybuty lokalizacji i komentarze i umieść je w pliku .loc, który różni się od wygenerowanym zestawie. Można to zrobić za pomocą **LocalizationPropertyStorage** atrybutu. Aby uzyskać więcej informacji o lokalizacji atrybutów i komentarze i **LocalizationPropertyStorage**, zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  
+ Możesz dodać atrybuty lokalizacji i komentarze, aby [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] zawartości. Za pomocą [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] obsługi lokalizacji, możesz usunąć atrybuty lokalizacji i komentarze i umieść je w *.loc* pliku, który jest oddzielony od wygenerowanego zestawu. Można to zrobić za pomocą **LocalizationPropertyStorage** atrybutu. Aby uzyskać więcej informacji na temat atrybuty lokalizacji i komentarze a **LocalizationPropertyStorage**, zobacz [lokalizacja atrybutów i komentarzy](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład scala lokalizacja kilku [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w .loc pojedynczy plik.  
+ Poniższy przykład scala lokalizacji kilku [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jedną *.loc* pliku.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -56,9 +56,9 @@ ms.locfileid: "31571246"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+## <a name="see-also"></a>Zobacz także  
+[Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
+[Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
+[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
+[Odwołanie do zadania MSBuild](../msbuild/msbuild-task-reference.md)  
+[Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  

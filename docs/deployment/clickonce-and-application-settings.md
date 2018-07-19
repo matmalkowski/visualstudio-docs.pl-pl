@@ -16,46 +16,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e325ed1d66729eaed18c577c27f09a3db45d98f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561704"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081097"
 ---
-# <a name="clickonce-and-application-settings"></a>ClickOnce i ustawienia aplikacji
-Ustawienia aplikacji dla formularzy systemu Windows można łatwo tworzyć, przechowywać i Obsługa niestandardowych aplikacji i preferencji użytkownika na komputerze klienckim. Dokument zawiera informacje, jak działają pliki ustawień aplikacji w aplikacji ClickOnce, i jak ClickOnce wykonuje migrację ustawień, po uaktualnieniu do nowej wersji.  
+# <a name="clickonce-and-application-settings"></a>Ustawienia aplikacji i technologii ClickOnce
+Ustawienia aplikacji dla formularzy Windows Forms można łatwo tworzyć, przechowywać i Obsługa niestandardowych aplikacji i preferencji użytkowników na komputerze klienckim. Poniższy dokument w tym artykule opisano działanie pliki ustawień aplikacji w aplikacji ClickOnce, i jak ClickOnce wykonuje migrację ustawień, po uaktualnieniu do następnej wersji.  
   
- Poniższe informacje dotyczą tylko domyślny dostawca ustawień aplikacji, <xref:System.Configuration.LocalFileSettingsProvider> klasy. Jeśli podasz niestandardowego dostawcy, tego dostawcy określi, jak są przechowywane jego dane i jak uaktualni ona jego ustawienia między wersjami. Aby uzyskać więcej informacji o dostawcy ustawienia aplikacji, zobacz [Architektura ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-architecture).  
+ Poniższe informacje dotyczą tylko w domyślny dostawca ustawień aplikacji, \<xref:System.Configuration.LocalFileSettingsProvider > klasy. Jeśli podasz niestandardowego dostawcy, tego dostawcy określi, jak przechowuje swoje dane i jak uaktualni ona jego ustawienia między wersjami. Aby uzyskać więcej informacji na temat dostawców ustawień aplikacji, zobacz [Architektura ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-architecture).  
   
 ## <a name="application-settings-files"></a>Pliki ustawień aplikacji  
- Ustawienia aplikacji wykorzystuje dwa pliki: *aplikacji*. exe.config i user.config, gdzie *aplikacji* to nazwa Twojej aplikacji formularzy systemu Windows. User.config jest tworzony na czas klienta pierwsza aplikacja przechowuje ustawienia zakresu użytkownika. *Aplikacja*. exe.config, natomiast będą istnieć przed ich wdrożeniem w przypadku definiowania wartości domyślne ustawień. Visual Studio będzie zawierać ten plik automatycznie korzystając z jego **publikowania** polecenia. Jeśli tworzysz aplikację ClickOnce za pomocą Mage.exe lub MageUI.exe, należy się upewnić, ten plik jest dołączony do aplikacji przez inne pliki podczas wypełniania manifest aplikacji.  
+ Ustawienia aplikacji wykorzystuje dwa pliki:  *\<aplikacji >. exe.config* i *user.config*, gdzie *aplikacji* jest nazwą aplikacji Windows Forms. *User.config* jest tworzony na czas klienta pierwsza aplikacja przechowuje ustawienia z zakresu użytkownika. *\<Aplikacja >. exe.config*, z drugiej strony, będzie istnieć przed ich wdrożeniem zdefiniowania wartości domyślne ustawień. Program Visual Studio będzie zawierać ten plik automatycznie korzystając z jego **Publikuj** polecenia. Jeśli tworzysz, używając aplikacji ClickOnce *Mage.exe* lub *MageUI.exe*, należy się upewnić, ten plik jest dołączony do aplikacji przez inne pliki podczas wypełniania manifest aplikacji.  
   
- W aplikacjach formularzy systemu Windows, nie wdrożone za pomocą aplikacji ClickOnce, aplikacja firmy *aplikacji*. exe.config plik jest przechowywany w katalogu aplikacji, podczas gdy plików user.config są przechowywane w użytkownika **dokumenty i ustawienia**  folderu. W aplikacji ClickOnce *aplikacji*. exe.config znajduje się w katalogu aplikacji w pamięci podręcznej aplikacji ClickOnce i user.config znajduje się w katalogu danych ClickOnce dla tej aplikacji.  
+ W aplikacjach Windows Forms, nie wdrożone za pomocą technologii ClickOnce, aplikacja firmy  *\<aplikacji >. exe.config* plik jest przechowywany w katalogu aplikacji, podczas gdy *user.config* jest przechowywany plik w polu użytkownik **Documents and Settings** folderu. W aplikacji ClickOnce  *\<aplikacji >. exe.config* znajduje się w katalogu aplikacji w pamięci podręcznej aplikacji ClickOnce i *user.config* znajduje się w katalogu danych ClickOnce dla tej aplikacji.  
   
- Niezależnie od tego, jak w przypadku wdrażania aplikacji, ustawienia aplikacji zapewnia bezpieczne dostęp do odczytu do *aplikacji*. exe.config i bezpieczne odczytu i zapisu do user.config.  
+ Niezależnie od tego, w jaki sposób wdrażania aplikacji, ustawień aplikacji zapewnia bezpieczny dostęp do odczytu do  *\<aplikacji >. exe.config*i bezpieczne odczytu i zapisu do *user.config*.  
   
- W aplikacji ClickOnce rozmiar pliki konfiguracji używane przez ustawienia aplikacji jest ograniczona przez rozmiar pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [Przegląd pamięci podręcznej ClickOnce](../deployment/clickonce-cache-overview.md).  
+ W aplikacji ClickOnce rozmiar pliki konfiguracji używane przez ustawienia aplikacji jest ograniczona przez rozmiar pamięci podręcznej funkcji ClickOnce. Aby uzyskać więcej informacji, zobacz [Przegląd pamięci podręcznej ClickOnce](../deployment/clickonce-cache-overview.md).  
   
 ## <a name="version-upgrades"></a>Uaktualnienia wersji  
- Tak samo, jak każdej wersji aplikacji ClickOnce jest odizolowany od innych wersji, ustawienia aplikacji dla aplikacji ClickOnce są odizolowane od ustawień innych wersjach. Podczas uaktualniania użytkownika do nowszej wersji aplikacji, ustawienia aplikacji porównuje ustawień najnowszych (najwyższym numerze) wersji względem ustawienia dostarczony wraz z zaktualizowaną wersję i scaleń ustawień do nowego zestawu plików ustawień.  
+ Tak, jak każda wersja aplikacji ClickOnce jest odizolowana od wszystkich innych wersji, ustawień aplikacji dla aplikacji ClickOnce są odizolowane od ustawień innych wersjach. Po użytkownik uaktualnienia do nowszej wersji aplikacji, ustawień aplikacji porównuje ustawień najnowsze (najwyższym numerze) wersji względem ustawienia dostarczony wraz z zaktualizowaną wersję i scalenia ustawień do nowego zestawu plików ustawień.  
   
- W poniższej tabeli opisano, jak ustawienia aplikacji decyduje o tym, które ustawienia do skopiowania.  
+ W poniższej tabeli opisano, jak decyduje, ustawienia, które można skopiować ustawienia aplikacji.  
   
-|Typ zmiany|Uaktualnij akcji|  
+|Typ zmiany|Akcja uaktualniania|  
 |--------------------|--------------------|  
-|Ustawienie dodane do *aplikacji*. exe.config|Nowe ustawienie jest scalany bieżącej wersji *aplikacji*. exe.config|  
-|Ustawienie usunięte z *aplikacji*. exe.config|Stare ustawienie zostanie usunięte z bieżącej wersji *aplikacji*. exe.config|  
-|Domyślne ustawienia zostały zmienione; lokalne nadal ustawienie oryginalnych wartości domyślnych w user.config|Ustawienie jest scalany user.config bieżącej wersji z nowym domyślnym jako wartość|  
-|Domyślne ustawienia zostały zmienione; Ustawienie wartości niedomyślnej w user.config|Ustawienie jest scalany user.config bieżącej wersji o wartości innej niż domyślna zachowane|  
+|Ustawienie, dodane do  *\<aplikacji >. exe.config*|Nowe ustawienie zostanie scalona z bieżącą wersją  *\<aplikacji >. exe.config*|  
+|Ustawienie usunięte z  *\<aplikacji >. exe.config*|Stare ustawienie zostanie usunięte z bieżącej wersji  *\<aplikacji >. exe.config*|  
+|Domyślne ustawienia, które zostały zmienione; Ustawienie lokalne nadal równa oryginalnych wartości domyślnych w *user.config*|To ustawienie zostanie scalona z bieżącą wersją *user.config* z nowym domyślnym jako wartość|  
+|Domyślne ustawienia, które zostały zmienione; Ustawienie zestawu do wartości niedomyślnej w *user.config*|To ustawienie zostanie scalona z bieżącą wersją *user.config* o wartości innych niż domyślne, przechowywane|  
   
- Jeśli utworzono ustawienia aplikacji klasy otoki i chcą dostosować logika aktualizacji, można zastąpić <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> metody.  
+Jeśli ustawienia aplikacji zostały utworzone klasy otoki i ma zostać dostosowana logika aktualizacji, można zastąpić \<xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A > Metoda.  
   
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce i ustawienia roamingu  
- ClickOnce nie działa z ustawieniami roamingu, dzięki czemu plik ustawień do wykonania należy na komputerach w sieci. Jeśli potrzebujesz ustawienia roamingu, należy zaimplementować dostawcę ustawienia aplikacji, który przechowuje ustawienia za pośrednictwem sieci, lub opracowanie własnych klas niestandardowych ustawień do przechowywania ustawień na komputerze zdalnym. Aby uzyskać więcej informacji w dostawców ustawień, zobacz [Architektura ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-architecture).  
+ ClickOnce nie działa z ustawień mobilnego dostępu, co pozwala plik ustawień można wykonać na maszynach, w sieci. Jeśli potrzebujesz ustawienia roamingu, należy do implementowania dostawcy ustawień aplikacji, która przechowuje ustawienia za pośrednictwem sieci lub tworzenia własnych klas niestandardowych ustawień do przechowywania ustawień na komputerze zdalnym. Aby uzyskać więcej informacji w dostawców ustawień, zobacz [Architektura ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-architecture).  
   
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Przegląd ustawień aplikacji](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [Przegląd pamięci podręcznej w technologii ClickOnce](../deployment/clickonce-cache-overview.md)   
- [Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

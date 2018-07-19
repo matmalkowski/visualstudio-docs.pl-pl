@@ -19,43 +19,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30cbf4aab2975b95703c24462604c1a43ed3554c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bf26cfc6f494437b0fde9c3721b11612d4f7e45
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561665"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081608"
 ---
-# <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Debugowanie aplikacji ClickOnce używających System.Deployment.Application
-W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia można skonfigurować sposób aktualizowania aplikacji. Jednak jeśli chcesz używać i dostosowywanie zaawansowane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funkcje wdrażania, konieczne będzie dostępu do modelu obiektu wdrożenia podał <xref:System.Deployment.Application>. Można użyć <xref:System.Deployment.Application> interfejsy API dla zaawansowanych zadań, takich jak:  
+# <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debugowanie aplikacji ClickOnce używających System.Deployment.Application
+W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia można skonfigurować sposób aktualizowania aplikacji. Jednakże, jeśli chcesz dostosować zaawansowane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funkcje wdrażania, konieczne będzie dostępu do modelu obiektu wdrożenia, które są dostarczane przez <xref:System.Deployment.Application>. Możesz użyć <xref:System.Deployment.Application> interfejsów API na potrzeby zaawansowanych zadań, takich jak:  
   
 -   Tworzenie opcję "Aktualizuj" w aplikacji  
   
--   Warunkowe, pobieranie na żądanie z różnych składników aplikacji  
+-   Warunkowe, pobiera na żądanie z różnych składników aplikacji  
   
--   Aktualizacje zintegrowana bezpośrednio w aplikacji  
+-   Aktualizacje zintegrowana bezpośrednio z aplikacji  
   
--   Zagwarantowanie, czy aplikacja kliencka jest zawsze aktualny  
+-   Zagwarantowanie, że aplikacja kliencka jest zawsze aktualny  
   
- Ponieważ <xref:System.Deployment.Application> interfejsów API działa tylko, gdy aplikacja jest wdrażana z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii, jedynym sposobem na ich debugowania jest wdrożenie aplikacji przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], Dołącz do niego, a następnie jego debugowania. Może być trudne można dołączyć debugera wystarczająco, wczesne, ponieważ ten kod jest często uruchamiany, gdy aplikacja jest uruchamiany i wykonuje przed można uruchomić debugera. Rozwiązaniem jest umieszczenie podziały (lub zatrzymuje dla projektów języka Visual Basic) przed z kodu sprawdzania aktualizacji lub kodu na żądanie.  
+ Ponieważ <xref:System.Deployment.Application> działają interfejsy API, tylko wtedy, gdy aplikacja jest wdrażana przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii, jedynym sposobem debugowania ich jest wdrożenie aplikacji przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], Dołącz do niej, a następnie jej debugowania. Może być trudne dołączyć debuger, wczesne, ponieważ ten kod uruchamia często, gdy aplikacja uruchamia się i wykonuje, zanim będzie możliwe dołączenie debugera. To rozwiązanie jest umieścić podziałów (lub zatrzymuje w projektach języka Visual Basic) przed kodu sprawdzania aktualizacji lub kodu na żądanie.  
   
- Zalecana metoda debugowania jest następujący:  
+ To zalecana technika debugowania jest następująca:  
   
-1.  Przed rozpoczęciem upewnij się, że symboli (.pdb) i pliki źródłowe zostaną zarchiwizowane.  
+1.  Przed rozpoczęciem upewnij się, że symboli (.pdb) i plików źródłowych są archiwizowane.  
   
 2.  Wdrażanie aplikacji w wersji 1.  
   
-3.  Utwórz nowe puste rozwiązanie. Z **pliku** menu, kliknij przycisk **nowy**, następnie **projektu**. W **nowy projekt** po otwarciu okna dialogowego **inne typy projektów** węzła, następnie wybierz **rozwiązań programu Visual Studio** folderu. W **szablony** okienku wybierz **puste rozwiązanie**.  
+3.  Utwórz nowe, puste rozwiązanie. Z **pliku** menu, kliknij przycisk **New**, następnie **projektu**. W **nowy projekt** po otwarciu okna dialogowego **inne typy projektów** węzła, następnie wybierz pozycję **Visual Studio Solutions** folderu. W **szablony** okienku wybierz **puste rozwiązanie**.  
   
-4.  Dodaj lokalizację źródłową zarchiwizowane do właściwości dla tego nowego rozwiązania. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, a następnie kliknij przycisk **właściwości**. W **strony właściwości** okno dialogowe, wybierz opcję **debugowania plików źródłowych**, następnie dodać katalog kodu źródłowego zarchiwizowane. W przeciwnym razie debuger znajdzie pliki źródłowe nieaktualne, ponieważ ścieżki pliku źródłowego są rejestrowane w pliku PDB. Jeśli debuger używa plików źródłowych nieaktualne, zobaczysz komunikat informujący, że źródło nie jest zgodny.  
+4.  Dodaj lokalizację źródłową zarchiwizowane do właściwości dla tego nowego rozwiązania. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, a następnie kliknij przycisk **właściwości**. W **stron właściwości** okno dialogowe, wybierz opcję **Debuguj pliki źródłowe**, następnie dodaj katalog kodu źródłowego zarchiwizowane. W przeciwnym razie debugera zawiera pliki źródłowe nieaktualne, ponieważ ścieżki plików źródłowych są rejestrowane w pliku .pdb. Jeśli debuger używa plików źródłowych nieaktualne, zobaczysz komunikat informujący, że źródło nie jest zgodny.  
   
-5.  Upewnij się, że debuger można znaleźć pliku PDB. Jeśli wdrożono je z aplikacją, debuger znajdzie je automatycznie. Zawsze szuka obok zestawu zagrożona najpierw. W przeciwnym razie należy dodać ścieżkę archiwum do **symboli (.pdb) lokalizacje** (dostęp do tej opcji z **narzędzia** menu, kliknij przycisk **opcje**, następnie otwórz  **Debugowanie** węzeł, a następnie kliknij przycisk **symbole**).  
+5.  Upewnij się, że debuger można znaleźć *.pdb* plików. Jeśli wdrożono je z aplikacją, debuger wykryje je automatycznie. Zawsze szuka obok zestawu w danym najpierw. W przeciwnym razie konieczne będzie dodanie ścieżki archiwum do **symboli (.pdb) lokalizacji** (dostęp do tej opcji z **narzędzia** menu, kliknij przycisk **opcje**, otwórz  **Debugowanie** węzeł, a następnie kliknij przycisk **symbole**).  
   
 6.  Debugowanie, co się stanie, między `CheckForUpdate` i `Download` / `Update` wywołania metody.  
   
-     Na przykład że kod może wyglądać następująco:  
+     Na przykład kod aktualizacji może wyglądać następująco:  
   
-    ```  
+    ```vb
         Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
             If My.Application.Deployment.IsNetworkDeployed Then  
   
@@ -72,11 +72,11 @@ W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
   
 7.  Wdrażanie w wersji 2.  
   
-8.  Podjęto próbę dołączenia debugera do aplikacji w wersji 1, ponieważ pobierania aktualizacji w wersji 2. Możesz też użyć `System.Diagnostics.Debugger.Break` metody lub po prostu `Stop` w języku Visual Basic. Oczywiście nie opuszczaj tych wywołań metody w kodzie produkcyjnym.  
+8.  Podjęto próbę dołączenia debugera do aplikacji w wersji 1, jako pliki do pobrania aktualizacji w wersji 2. Możesz też użyć `System.Diagnostics.Debugger.Break` metody lub po prostu `Stop` w języku Visual Basic. Oczywiście nie opuszczaj te wywołania metody w kodzie produkcyjnym.  
   
-     Załóżmy na przykład, tworzenia aplikacji formularzy systemu Windows i masz program obsługi zdarzeń dla tej metody za pomocą logika aktualizacji w nim. Do debugowania tego, po prostu Dołącz, zanim przycisk jest naciśnięty, a następnie ustaw punkt przerwania (Upewnij się, że otworzyć odpowiedni plik zarchiwizowanego i ustawić punkt przerwania).  
+     Załóżmy na przykład, tworzenia aplikacji Windows Forms, a masz program obsługi zdarzeń dla tej metody wraz z logiką aktualizacji w nim. Do debugowania tego, po prostu dołączyć, zanim przycisk jest wciśnięty, a następnie ustaw punkt przerwania (Upewnij się, otwórz odpowiedni plik zarchiwizowanego, a następnie ustaw punkt przerwania ma).  
   
- Użyj <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> właściwości do wywołania <xref:System.Deployment.Application> interfejsów API tylko wtedy, gdy aplikacja jest wdrażana; interfejsy API nie powinna być wywoływana podczas debugowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Użyj <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> właściwości do wywołania <xref:System.Deployment.Application> interfejsów API, tylko wtedy, gdy aplikacja jest wdrażana; interfejsów API, nie powinna być wywoływana podczas debugowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:System.Deployment.Application>

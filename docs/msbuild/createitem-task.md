@@ -20,36 +20,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9ccb3788246e359183cff889f0996b4e74aecb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577486"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945303"
 ---
-# <a name="createitem-task"></a>CreateItem — Zadanie
-Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementów do skopiowania z listy jeden do innego.  
+# <a name="createitem-task"></a>CreateItem — zadanie
+Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementy, które mają być kopiowane z jednej listy do innej.  
   
 > [!NOTE]
->  To zadanie jest przestarzały. W programie .NET Framework 3.5, element grupy może zostać umieszczony w [docelowej](../msbuild/target-element-msbuild.md) elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+>  To zadanie jest przestarzały. Począwszy od programu .NET Framework 3.5, element grupy mogą być wprowadzane w ramach [docelowej](../msbuild/target-element-msbuild.md) elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Atrybuty  
- W poniższej tabeli opisano parametry `CreateItem` zadań.  
+ W poniższej tabeli opisano parametry `CreateItem` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Opcjonalne `String` parametr tablicy.<br /><br /> Określa dodatkowe metadane do dołączenia do elementów danych wyjściowych.  Określ nazwę metadanych i wartość dla elementu przy użyciu następującej składni:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Wiele par nazw i wartości metadanych powinny być oddzielone średnikami. Jeśli nazwa lub wartość zawiera średnika lub innych znaków specjalnych, musi być wyjściowym. Aby uzyskać więcej informacji, zobacz [porady: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Określa elementy do wykluczenia z kolekcji elementów danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md) i [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`AdditionalMetadata`|Opcjonalnie `String` tablicy parametrów.<br /><br /> Określa dodatkowe metadane, aby dołączyć do elementów wyjściowych.  Określ nazwę metadanych i wartość dla elementu przy użyciu następującej składni:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Wiele pary nazwa/wartość metadanych powinny być oddzielone średnikami. Jeśli nazwa lub wartość zawiera średnikami lub innych znaków specjalnych, muszą być wyjściowym. Aby uzyskać więcej informacji, zobacz [porady: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`Exclude`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa elementy, które mają zostać wykluczone z kolekcji element danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md) i [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.<br /><br /> Określa elementy do uwzględnienia w kolekcji elementów danych wyjściowych. Ten parametr może zawierać specyfikacji symbolu wieloznacznego.|  
-|`PreserveExistingMetadata`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `True`, zastosuj dodatkowe metadane tylko, jeśli jeszcze nie istnieje.|  
+|`PreserveExistingMetadata`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `True`, dodatkowe metadane stosowane tylko wtedy, jeśli jeszcze nie istnieje.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykładowy kod tworzy nową kolekcję elementu o nazwie `MySourceItemsWithMetadata` z kolekcji elementów `MySourceItems`. `CreateItem` Zadań wypełnia nową kolekcję elementów z elementów w `MySourceItems` elementu. Następnie dodaje wpis dodatkowych metadanych o nazwie `MyMetadata` o wartości `Hello` do każdego elementu w nowej kolekcji.  
+ Poniższy przykład kodu tworzy nową kolekcję elementów o nazwie `MySourceItemsWithMetadata` z kolekcji element `MySourceItems`. `CreateItem` Zadań wypełnia nową kolekcję elementów z elementami w `MySourceItems` elementu. Następnie dodaje wpis dodatkowe metadane o nazwie `MyMetadata` o wartości `Hello` do każdego elementu, do nowej kolekcji.  
   
- Po wykonaniu zadania `MySourceItemsWithMetadata` kolekcji elementów zawiera elementy `file1.resx` i `file2.resx`, zarówno wpisy metadanych dla `MyMetadata`. `MySourceItems` Niezmieniona kolekcji elementów.  
+ Po wykonaniu zadania `MySourceItemsWithMetadata` kolekcji elementów zawiera elementy *file1.resx* i *file2.resx*, oba metadata wpisy dla `MyMetadata`. `MySourceItems` Kolekcji elementów pozostaje niezmieniony.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -72,12 +72,12 @@ Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementów
 </Project>  
 ```  
   
- W poniższej tabeli opisano wartość elementu danych wyjściowych po wykonaniu zadań. Metadane elementu jest wyświetlany w nawiasach po elemencie.  
+ W poniższej tabeli opisano wartość elementu danych wyjściowych po wykonaniu zadania. Metadane elementu jest wyświetlany w nawiasie po elemencie.  
   
-|Kolekcji elementów|Spis treści|  
+|Kolekcja elementów|Spis treści|  
 |---------------------|--------------|  
-|`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
+|`MySourceItemsWithMetadata`|*File1.resx* (`MyMetadata="Hello"`)<br /><br /> *file2.resx* (`MyMetadata="Hello"`)|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Zadania](../msbuild/msbuild-tasks.md)

@@ -19,87 +19,87 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2080c34908f67c83baed182d8e958eb1776b8f
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 2943f2a9b0e5d23d40b05a481e45095ad52fc8a8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815824"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078368"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
-Aby udostępnić aplikacji ClickOnce, należy opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikacja zostanie opublikowana przy użyciu Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **publikowania** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md).  
+Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikację można opublikować za pomocą Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **Publikuj** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowania ClickOnce applications](../deployment/publishing-clickonce-applications.md).  
   
- Przed uruchomieniem Kreatora publikowania, należy odpowiednio ustawione właściwości publikacji. Na przykład, jeśli chcesz wyznaczyć klucza do podpisania aplikacji ClickOnce, możesz to zrobić tak **podpisywanie** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).  
-  
-> [!NOTE]
->  Po zainstalowaniu więcej niż jedną wersję aplikacji przy użyciu technologii ClickOnce instalacji przenosi wcześniejszych wersji aplikacji do folderu o nazwie archiwum w określonej lokalizacji. Archiwizowanie starszych wersji w ten sposób przechowuje katalog instalacyjny wyczyść folderów ze starszej wersji.  
+ Przed uruchomieniem Kreatora publikowania należy odpowiednio ustawić właściwości publikacji. Na przykład, jeśli chcesz wyznaczyć klucz w celu podpisania aplikacji ClickOnce, możecie więc na **podpisywanie** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [aplikacji Secure ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Okna dialogowe i dostępne polecenia menu mogą różnić się od opisanych w pomocy, w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie *archiwum*, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.  
+  
+> [!NOTE]
+>  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Aby opublikować do udziału plików lub ścieżki  
   
 1.  W **Eksploratora rozwiązań**, wybierz projekt aplikacji.  
   
-2.  Na **kompilacji** menu, kliknij przycisk **publikowania**`Projectname`.  
+2.  Na **kompilacji** menu, kliknij przycisk **Publikuj** *Projectname*.  
   
-     Zostanie wyświetlony Kreator publikowania.  
+     Pojawi się Kreator publikacji.  
   
-3.  W **gdzie chcesz opublikować aplikację?** , wprowadź prawidłowy adres serwera FTP lub prawidłową ścieżkę do pliku przy użyciu jednej z formatów pokazano, a następnie kliknij przycisk **dalej**.  
+3.  W **gdzie chcesz opublikować aplikację?** strony, wprowadź prawidłowy adres serwera FTP lub prawidłową ścieżkę do pliku przy użyciu jednego z formatów wyświetlane, a następnie kliknij **dalej**.  
   
-4.  W **użytkownicy będą instalować jak aplikacja?** wybierz lokalizację, gdzie użytkownicy przechodzą do zainstalowania aplikacji:  
+4.  W **sposób będą użytkownicy instalować aplikację?** stronie, wybierz lokalizację, gdzie użytkownicy mają zainstalować aplikację:  
   
-    -   Jeśli użytkownicy będą instalować z witryny sieci Web, kliknij przycisk **z witryny sieci Web** , a następnie wprowadź adres URL, który odpowiada na ścieżkę pliku podaną w poprzednim kroku. Kliknij przycisk **Dalej**. (Ta opcja jest zazwyczaj używana w przypadku określenia adresu FTP jako lokalizację publikowania. Bezpośrednie pobierania z FTP nie jest obsługiwane. W związku z tym należy wprowadzić adres URL, w tym miejscu.)  
+    -   Jeśli użytkownicy będą instalować z witryny sieci Web, kliknij przycisk **z witryny sieci Web** i wprowadź adres URL, który odnosi się do ścieżki pliku wprowadzonej w poprzednim kroku. Kliknij przycisk **Dalej**. (Ta opcja jest zazwyczaj używana podczas określania adresu FTP jako lokalizacji publikowania. Bezpośrednie pobieranie z FTP nie jest obsługiwane. W związku z tym musisz wpisać URL tutaj.)  
   
-    -   Jeśli użytkownicy będą instalować aplikacji bezpośrednio z udziału plików, kliknij przycisk **z UNC ścieżki lub w udziale plików**, a następnie kliknij przycisk **dalej**. (To jest publikowanie lokalizacji c:\deploy\myapp formularza lub \\\server\myapp.)  
+    -   Jeśli użytkownicy będą instalować aplikację bezpośrednio z udziału plików, kliknij przycisk **z UNC udziału pliku lub ścieżki**, a następnie kliknij przycisk **dalej**. (To jest do publikowania lokalizacji formularza *c:\deploy\myapp* lub  *\\\server\myapp*.)  
   
     -   Jeśli użytkownicy będą instalować z nośników wymiennych, kliknij przycisk **z dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
   
 5.  Na **aplikacja będzie dostępna w trybie offline?** kliknij odpowiednią opcję:  
   
-    -   Jeśli chcesz umożliwić uruchamianie aplikacji gdy użytkownik jest odłączony od sieci, kliknij przycisk **tak, ta aplikacja stanie się dostępny online lub offline**. Skrót na **Start** menu zostanie utworzony dla aplikacji.  
+    -   Jeśli chcesz umożliwić uruchomienie aplikacji kiedy użytkownik jest odłączony od sieci, kliknij przycisk **tak, ta aplikacja będzie dostępna online lub offline**. Skrót na **Start** menu zostanie utworzony dla aplikacji.  
   
     -   Jeśli chcesz uruchomić aplikację bezpośrednio z lokalizacji publikacji, kliknij przycisk **nie, ta aplikacja jest dostępna tylko online**. Skrót na **Start** menu nie zostanie utworzony.  
   
      Kliknij przycisk **Dalej** , aby kontynuować.  
   
-6.  Kliknij przycisk **Zakończ** do publikowania aplikacji.  
+6.  Kliknij przycisk **Zakończ** Aby opublikować aplikację.  
   
      Stan publikowania jest wyświetlany w obszarze powiadomień stanu.  
   
-### <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>Aby opublikować z dysku CD-ROM lub DVD-ROM  
+### <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>Aby opublikować na CD-ROM lub DVD-ROM  
   
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt aplikacji i kliknij przycisk **właściwości**.  
   
-     **Projektanta projektu** pojawi się.  
+     **Projektanta projektu** pojawia się.  
   
-2.  Kliknij przycisk **publikowania** kartę, aby otworzyć **publikowania** strony **projektanta projektu**i kliknij przycisk **Kreator publikowania** przycisku.  
+2.  Kliknij przycisk **Publikuj** kartę, aby otworzyć **Publikuj** strony w **projektanta projektu**i kliknij przycisk **Kreatora publikacji** przycisku.  
   
-     Zostanie wyświetlony Kreator publikowania.  
+     Pojawi się Kreator publikacji.  
   
-3.  W **gdzie chcesz opublikować aplikację?** wprowadź ścieżkę do pliku lub lokalizacji FTP gdy aplikacja zostanie opublikowana, na przykład d:\deploy. Następnie kliknij przycisk **dalej** aby kontynuować.  
+3.  W **gdzie chcesz opublikować aplikację?** strony, wprowadź ścieżkę do pliku lub lokalizację FTP, w którym aplikacja zostanie opublikowana, na przykład *d:\deploy*. Następnie kliknij przycisk **dalej** aby kontynuować.  
   
-4.  Na **użytkownicy będą instalować jak aplikacja?** kliknij przycisk z **CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
+4.  Na **sposób będą użytkownicy instalować aplikację?** stronie, kliknij polecenie **dysku CD-ROM lub DVD-ROM**, a następnie kliknij przycisk **dalej**.  
   
     > [!NOTE]
-    >  Jeśli chcesz, aby instalacja automatyczne uruchamianie po CD-ROM zostaną wstawione do dysku, otwórz **publikowania** strony **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **instalacji na dysku CD automatycznie Rozpocznij instalację po włożeniu dysku CD**.  
+    >  Jeśli chcesz, aby instalacja do automatycznego uruchamiania podczas dysku CD-ROM jest wstawiany do stacji, otwórz **Publikuj** strony w **projektanta projektu** i kliknij przycisk **opcje** przycisk, a następnie w **opcji publikowania** kreatora wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD**.  
   
-5.  Dystrybucję aplikacji na dysku CD, warto udostępnienia aktualizacji z witryny sieci Web. W **której aplikacja będzie sprawdzać dostępność aktualizacji?** wybierz opcję aktualizacji:  
+5.  Jeśli dystrybucji aplikacji na dysku CD-ROM, można dostarczać aktualizacje z witryny sieci Web. W **gdzie aplikacja będzie sprawdzać aktualizacje?** stronie, wybierz opcję aktualizacji:  
   
-    -   Jeśli aplikacja będzie sprawdzać dostępność aktualizacji, kliknij przycisk **aplikacja będzie sprawdzać dostępność aktualizacji z następującej lokalizacji** i wprowadź lokalizację, w której będzie można opublikować aktualizacje. Może to być lokalizacja pliku, witryny sieci Web lub serwera FTP.  
+    -   Jeśli aplikacja będzie sprawdzać dostępność aktualizacji, kliknij przycisk **aplikacja będzie sprawdzać dostępność aktualizacji z następującej lokalizacji** i podaj lokalizację, w której będą się pojawiać aktualizacje. Może to być lokalizacja pliku, witryny sieci Web lub serwera FTP.  
   
     -   Jeśli aplikacja nie będzie sprawdzać dostępność aktualizacji, kliknij przycisk **aplikacji nie będzie sprawdzać dostępność aktualizacji**.  
   
      Kliknij przycisk **Dalej** , aby kontynuować.  
   
-6.  Kliknij przycisk **Zakończ** do publikowania aplikacji.  
+6.  Kliknij przycisk **Zakończ** Aby opublikować aplikację.  
   
      Stan publikowania jest wyświetlany w obszarze powiadomień stanu.  
   
     > [!NOTE]
-    >  Po zakończeniu publikowania, należy użyć dysku CD-funkcji ponownego zapisu lub DVD-funkcji ponownego zapisu do kopiowania plików z lokalizacji określonej w kroku 3 na nośnik CD lub DVD-ROM.  
+    >  Po ukończeniu publikacji, należy użyć nagrywarki dysków CD lub nagrywarka DVD, aby skopiować pliki z lokalizacji określonej w kroku 3 do stacji CD-ROM lub DVD-ROM multimediów.  
   
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

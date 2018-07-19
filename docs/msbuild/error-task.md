@@ -20,35 +20,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f43f585320c34da17948e30d2672de9c9aa51e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7928ceb1f99e86f84247af3376edd3119deac8ea
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567811"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945786"
 ---
 # <a name="error-task"></a>Error — Zadanie
-Zatrzymuje kompilację i rejestruje błąd oparte na obliczane instrukcji warunkowej.  
+Zatrzymuje kompilację i rejestruje błąd oparte na ocenianą instrukcji warunkowej.  
   
 ## <a name="parameters"></a>Parametry  
- W tabeli następujących opisano parametry `Error` zadań.  
+ W poniższej tabeli opisano parametry `Error` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Code`|Opcjonalne `String` parametru.<br /><br /> Kod błędu do skojarzenia z powodu błędu.|  
-|`File`|Opcjonalne `String` parametru.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli zostanie podana żadna nazwa pliku, plik zawierający błąd zadań będzie używany.|  
-|`HelpKeyword`|Opcjonalne `String` parametru.<br /><br /> Słowo kluczowe pomocy do skojarzenia z powodu błędu.|  
-|`Text`|Opcjonalne `String` parametru.<br /><br /> Tekst błędu który [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestruje Jeśli `Condition` daje w wyniku parametru `true`.|  
+|`Code`|Opcjonalnie `String` parametru.<br /><br /> Kod błędu do skojarzenia z powodu błędu.|  
+|`File`|Opcjonalnie `String` parametru.<br /><br /> Nazwa pliku który zawiera błąd. Jeśli nazwa pliku nie zostanie podany, plik zawierający błąd zadania będą używane.|  
+|`HelpKeyword`|Opcjonalnie `String` parametru.<br /><br /> Słowo kluczowe pomocy do skojarzenia z powodu błędu.|  
+|`Text`|Opcjonalnie `String` parametru.<br /><br /> Tekst błędu, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestruje Jeśli `Condition` daje w wyniku parametru `true`.|  
   
 ## <a name="remarks"></a>Uwagi  
- `Error` Zadanie pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów wydać tekst błędu rejestratorów i zatrzymuje wykonywanie kompilacji.  
+ `Error` Zadanie pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów, aby wystawić rejestratorów tekst błędu i Zatrzymaj tworzenie wykonywania.  
   
- Jeśli `Condition` daje w wyniku parametru `true`, kompilacja zostanie zatrzymana i jest rejestrowany błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowany i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Jeśli `Condition` daje w wyniku parametru `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowane i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt wywołuje zdarzenie błędu i dzienniki wartość `Text` parametr `Error` zadań.  
+ Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość `Text` parametru `Error` zadania.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -64,6 +64,6 @@ Zatrzymuje kompilację i rejestruje błąd oparte na obliczane instrukcji warunk
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)

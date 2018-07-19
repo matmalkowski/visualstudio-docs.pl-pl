@@ -21,28 +21,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a871effd2b7560cc34ae8e2a91c0b55f63bcfe44
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc66d09b16c62765848a77ea4fd4a2d9f65ad418
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568519"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946542"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
-Usuwa pliki tymczasowe, które MSBuild tworzy podczas tworzenia projektu Visual C++. Proces usuwania plików kompilacji jest znany jako *czyszczenia*.  
+Usuwa pliki tymczasowe, utworzone przez program MSBuild podczas kompilowania projektu Visual C++. Proces usuwania plików kompilacji jest znany jako *czyszczenia*.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **cppclean —** zadań.  
+ W poniższej tabeli opisano parametry **cppclean —** zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**DeletedFiles**|Opcjonalne `ITaskItem[]` parametru wyjściowego.<br /><br /> Określa tablicę MSBuild wyjściowego pliku elementy, które mogą być używane i emitowane przez zadania.|  
-|**DoDelete**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, czyszczenie tymczasowych plików kompilacji.|  
-|**FilePatternsToDeleteOnClean**|Wymagane `String` parametru.<br /><br /> Określa listę rozszerzeń plików, aby wyczyścić rozdzielone średnikami.|  
-|**FilesExcludedFromClean**|Opcjonalne `String` parametru.<br /><br /> Określa Rozdzielana średnikami lista plików nie można wyczyścić.|  
-|**FoldersToClean**|Wymagane `String` parametru.<br /><br /> Określa Rozdzielana średnikami lista katalogów, aby wyczyścić. Można określić pełny lub ścieżką względną i ścieżki może zawierać symbol wieloznaczny (**\***).|  
+|**DeletedFiles**|Opcjonalnie `ITaskItem[]` parametr wyjściowy.<br /><br /> Określa tablicę elementów MSBuild dane wyjściowe pliku, które może być używany i wyemitowane przez zadania.|  
+|**DoDelete**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`czyszczenie tymczasowej pliki kompilacji.|  
+|**FilePatternsToDeleteOnClean**|Wymagane `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę rozszerzeń plików, aby wyczyścić.|  
+|**FilesExcludedFromClean**|Opcjonalnie `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę plików nie można wyczyścić.|  
+|**FoldersToClean**|Wymagane `String` parametru.<br /><br /> Określa rozdzielaną średnikami listę katalogów do czyszczenia. Można określić pełną lub względną ścieżkę i ścieżki mogą zawierać symbol wieloznaczny (**\***).|  
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

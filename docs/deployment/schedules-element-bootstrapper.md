@@ -1,5 +1,5 @@
 ---
-title: '&lt;Harmonogramy&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+title: '&lt;Harmonogramy&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c551bc9335dc41f82800e2c3435d8508967a6db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815473"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078257"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Harmonogramy&gt; elementu (programu inicjującego)
-`Schedules` Element zawiera `Schedule` elementów, które definiują określonych godzinach, na które polecenia zdefiniowane przez `Command` element powinien zostać uruchomiony.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Harmonogramy&gt; — element (program inicjujący)
+`Schedules` Element zawiera `Schedule` elementów, które definiują określonych godzinach, w której polecenia zdefiniowane przez `Command` element powinien być uruchamiany.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,29 +41,29 @@ ms.locfileid: "34815473"
 </Schedules>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
  `Schedules` Element jest elementem podrzędnym `Product` elementu. Każdy `Product` element może mieć co najwyżej jeden `Schedules` elementu. `Schedules` Element nie ma żadnych atrybutów.  
   
 ## <a name="schedule"></a>Harmonogram  
  `Schedule` Element jest elementem podrzędnym `Schedules` elementu. A `Schedules` element musi mieć co najmniej jeden `Schedule` elementu.  
   
- `Schedule` ma następującego atrybutu.  
+ `Schedule` ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagana. Nazwa elementu harmonogramu. Odpowiada to `ScheduleName` właściwość `Command` elementu. Gdy `Command` odwołuje się do nazwanych harmonogramu, będą wykonywane tylko o godzinie określonej przez tę `Schedule` elementu. Harmonogramy również mogą być skojarzone z `FailIf` i `BypassIf` elementów, które ograniczyć te testy warunkowe do wykonywania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<polecenia > elementu](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Wymagane. Nazwa elementu harmonogramu. Odpowiada to `ScheduleName` właściwość `Command` elementu. Gdy `Command` odwołuje się do harmonogramu o nazwie zostanie wykonana tylko o godzinie określonej przez to `Schedule` elementu. Harmonogramy, również mogą być skojarzone z `FailIf` i `BypassIf` elementów, które ograniczają tych testów warunkowych do wykonywania zgodnie z określonym harmonogramem. Aby uzyskać więcej informacji, zobacz [ \<polecenia > Element](../deployment/commands-element-bootstrapper.md).|  
   
  Biorąc pod uwagę `Schedule` element może mieć dokładnie jeden z następujących elementów podrzędnych.  
   
 ## <a name="buildlist"></a>BuildList  
- `BuildList` Elementu powoduje, że Instalator do wykonania polecenia, natychmiast po uruchomieniu aplikacji bootstrapping.  
+ `BuildList` Element Instruuje Instalatora Aby wykonać polecenie natychmiast, po uruchomieniu bootstrapping aplikacji.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` Elementu powoduje, że Instalator do wykonania polecenia, przed zainstalowaniem określonego pakietu.  
+ `BeforePackage` Element Instruuje Instalatora Aby wykonać polecenie przed zainstalowaniem określonego pakietu.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` Elementu powoduje, że Instalator do wykonania polecenia, po zainstalowaniu określonego pakietu.  
+ `AfterPackage` Element Instruuje Instalatora aby wykonywanie polecenia po zainstalowaniu określonego pakietu.  
   
-## <a name="see-also"></a>Zobacz też  
- [\<Produktu > — Element](../deployment/product-element-bootstrapper.md)   
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [\<Produktu > element](../deployment/product-element-bootstrapper.md)   
+ [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

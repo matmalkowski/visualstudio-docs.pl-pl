@@ -18,35 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83240cfa9deec2585aaa23db4aa79fbfe6929b09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f01ca83f4aee641f6bdcb8e1c7e1323aee374bc8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571675"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946797"
 ---
-# <a name="calltarget-task"></a>CallTarget — Zadanie
-Wywołuje określone elementy docelowe w pliku projektu.  
+# <a name="calltarget-task"></a>CallTarget — zadanie
+Wywołuje określonych celów w pliku projektu.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry `CallTarget` zadań.  
+ W poniższej tabeli opisano parametry `CallTarget` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|Opcjonalne `Boolean` parametru wejściowego.<br /><br /> Jeśli `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz na docelowy. Jeśli `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz w celu zbudowania wszystkie elementy docelowe. Wartość domyślna to `false`.|  
-|`TargetOutputs`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera wszystkie elementy docelowe wbudowanych dane wyjściowe.|  
-|`Targets`|Opcjonalne `String[]` parametru.<br /><br /> Określa docelowy lub obiekty docelowe do skompilowania.|  
-|`UseResultsCache`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, buforowane wynik jest zwracany, jeśli jest obecny.<br /><br /> **Uwaga** MSBuild gdy zadanie zostanie uruchomione, dane wyjściowe są buforowane w zakresie (ProjectFileName, GlobalProperties) [TargetNames] jako listę pozycji kompilacji.|  
+|`RunEachTargetSeparately`|Opcjonalnie `Boolean` parametr wejściowy.<br /><br /> Jeśli `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana jeden raz na docelowym. Jeśli `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana jeden raz do tworzenia wszystkich obiektów docelowych. Wartość domyślna to `false`.|  
+|`TargetOutputs`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera dane wyjściowe wszystkich skompilowanych elementów docelowych.|  
+|`Targets`|Opcjonalnie `String[]` parametru.<br /><br /> Określa cel lub cele do kompilacji.|  
+|`UseResultsCache`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, buforowane wynik jest zwracany, jeśli jest obecny.<br /><br /> **Uwaga** podczas MSBuild, zadanie zostanie uruchomione, dane wyjściowe są buforowane w zakresie (ProjectFileName, GlobalProperties) [TargetNames] jako listę elementów kompilacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli element docelowy określony w `Targets` nie powiedzie się i `RunEachTargetSeparately` jest `true`, zadanie kontynuuje tworzenie pozostałe elementy docelowe.  
+ Jeśli obiekt docelowy określony w `Targets` kończy się niepowodzeniem i `RunEachTargetSeparately` jest `true`, zadania w dalszym ciągu kompilacji pozostałe elementy docelowe.  
   
- Jeśli chcesz utworzyć domyślne elementy docelowe, użyj [zadanie programu MSBuild](../msbuild/msbuild-task.md) i ustaw `Projects` parametru równa `$(MSBuildProjectFile)`.  
+ Do kompilacji domyślnych elementów docelowych, należy użyć [zadanie MSBuild](../msbuild/msbuild-task.md) i ustaw `Projects` równa parametr `$(MSBuildProjectFile)`.  
   
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Następujące przykładowe wywołania `TargetA` z wewnątrz `CallOtherTargets`.  
+ Poniższy przykład wywołuje `TargetA` z wewnątrz `CallOtherTargets`.  
   
 ```xml  
 <Project DefaultTargets="CallOtherTargets"  
@@ -63,6 +63,6 @@ Wywołuje określone elementy docelowe w pliku projektu.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Docelowe elementy](../msbuild/msbuild-targets.md)

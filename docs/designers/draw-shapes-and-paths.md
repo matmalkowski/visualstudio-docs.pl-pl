@@ -10,124 +10,124 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f3514b042b3fbe5ebbac5f79e00d235f9d8e88
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752349"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923952"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
-W Projektancie XAML *kształtu* jest dokładnie, czego można oczekiwać. Na przykład: prostokąta, okręgu lub elipsy. A *ścieżki* jest bardziej elastyczne wersji kształtu. Można wykonywać czynności, takie jak zmienić je lub połączenie ich kształtów nowego formularza.
+W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przykład: prostokąt, okrąg lub elipsy. A *ścieżki* jest nieco bardziej elastyczne kształtu. Można wykonać czynności, jak zmienić kształt je lub połączyć je ze sobą nowe kształty formularza.
 
- Kształtów i ścieżek używać grafiki wektorowej, dlatego ich skaluje właściwie do wyświetlacze o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to są grafiki wektorowej](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
+ Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalować do ekranów o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to są grafiki wektorowej](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
  **W tym temacie:**
 
--   [Rysuj kształt](#Shape)
+-   [Rysowanie kształtu](#Shape)
 
 -   [Rysowanie ścieżki](#Path)
 
--   [Konwertuj na ścieżkę kształtu](#Convert)
+-   [Konwertowanie kształtu do ścieżki](#Convert)
 
--   [Łączenie ścieżek](#Combine)
+-   [Połącz ścieżki](#Combine)
 
--   [Ścieżek złożonych](#Compound)
+-   [Utwórz ścieżkę złożoną](#Compound)
 
 -   [Tworzenie ścieżki przycinania](#Clipping)
 
-##  <a name="Shape"></a> Rysuj kształt
- Można znaleźć kształtów w **zasoby** panelu.
+##  <a name="Shape"></a> Rysowanie kształtu
+ Możesz znaleźć kształty w **zasoby** panelu.
 
  ![Kategoria kształtów na panelu Zasoby](../designers/media/b4_shapes_assetspanel.png)
 
- Przeciągnij dowolnego kształtu, który ma obszaru roboczego. Następnie można dojść do kształtu skalowanie, obracanie, przenoszenie i pochylanie kształtu.
+ Przeciągnij dowolny kształt, który ma do obszaru kompozycji. Następnie umożliwia uchwytów na kształcie skalowanie, obracanie, Przenieś lub pochylić kształtu.
 
- ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+ ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
 ##  <a name="Path"></a> Rysowanie ścieżki
- Ścieżka jest szereg połączonych linii i krzywych. Użyj ścieżki do kształtów interesujące, które nie są dostępne w **zasoby** panelu.
+ Ścieżka jest szereg podłączonych linii i krzywych. Użyj ścieżki, aby tworzyć interesujące kształty, które nie są dostępne w **zasoby** panelu.
 
- Ścieżkę można zdefiniować przy użyciu linii, Pióro lub ołówka. Następujące narzędzia można znaleźć **narzędzia** panelu.
+ Ścieżkę można zdefiniować przy użyciu linii, Pióro lub ołówka. Można znaleźć tych narzędzi w **narzędzia** panelu.
 
- ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png)![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
+ ![Pióro](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![Opcje narzędzia pióra](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
 
 ### <a name="draw-a-straight-line"></a>Rysowanie prostej
- Użyj **pióra** narzędzie ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png), lub **wiersza** narzędzia ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png).
+ Użyj **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png), lub **wiersza** narzędzie ![narzędzie wiersza](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png).
 
- **Za pomocą pióra** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
+ **Za pomocą pióra** ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
 
- W obszarze roboczym kliknij raz, aby zdefiniować punkt początkowy, a następnie kliknij ponownie, aby zdefiniować końca wiersza.
+ W obszarze kompozycji kliknij jeden raz, aby zdefiniować punkt początkowy, a następnie kliknij ponownie, aby zdefiniować końca wiersza.
 
- **Narzędzia wiersza** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
+ **Przy użyciu narzędzia wiersza** ![narzędzie wiersza](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
 
- W obszarze roboczym przeciągnij, z którym chcesz wiersza, aby uruchomić, a następnie zwolnij w momencie, w którym ma punktu końcowego linii.
+ W obszarze kompozycji przeciągnij z dowolnego miejsca wiersza, aby rozpocząć, a następnie zwolnij się w punkcie, w którym punktu końcowego linii.
 
 ### <a name="draw-a-curve"></a>Rysowanie krzywych
- Użyj **pióra** narzędzia ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+ Użyj **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- W obszarze roboczym kliknij raz zdefiniować punkt początkowy wiersza, kliknij i przeciągnij wskaźnik do utworzenia żądanego krzywą.
+ W obszarze kompozycji kliknij jeden raz aby zdefiniować punkt początkowy dla wiersza, a następnie kliknąć i przeciągnąć wskaźnikiem w taki sposób, aby utworzyć żądany krzywej.
 
- Jeśli chcesz zamknąć ścieżkę, kliknij pierwszy punkt w wierszu.
+ Jeśli chcesz zamknąć ścieżkę, kliknij pierwszy punkt, w wierszu.
 
 ### <a name="change-the-shape-of-a-curve"></a>Zmiana kształtu krzywej
- Użyj **bezpośredni wybór** narzędzia ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
+ Użyj **bezpośrednie zaznaczenie** narzędzie ![narzędzia Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Kliknij kształt, a następnie przeciągnij dowolnego punktu kształtu, aby zmienić krzywej kształtów.
+ Kliknij kształt, a następnie przeciągnij dowolny punkt, kształtu, aby zmienić krzywej kształtów.
 
 ### <a name="draw-a-free-form-path"></a>Rysowanie ścieżki dowolnej
- Użyj **ołówka** narzędzia ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png).
+ Użyj **ołówka** narzędzie ![Ołówek-narzędzie](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png).
 
- W obszarze roboczym narysować ścieżkę dowolnych tak samo, jak przy użyciu rzeczywistego ołówka.
+ W obszarze kompozycji rysowanie ścieżki dowolnej postaci tak samo jak przy użyciu rzeczywistego ołówka.
 
-### <a name="remove-part-of-a-path"></a>Usuń części ścieżki
- Użyj **bezpośredni wybór** narzędzia ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
+### <a name="remove-part-of-a-path"></a>Usuwanie części ścieżki
+ Użyj **bezpośrednie zaznaczenie** narzędzie ![narzędzia Zaznaczanie bezpośrednie](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Wybierz ścieżkę, która zawiera segment chcesz usunąć, a następnie kliknij przycisk **usunąć** przycisku.
+ Wybierz ścieżkę zawierającą segment, aby usunąć, a następnie kliknij przycisk **Usuń** przycisku.
 
-### <a name="remove-a-point-in-a-path"></a>Usuń punkt w ścieżce
- Użyj **wybór** narzędzie ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)i **pióra** narzędzia ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+### <a name="remove-a-point-in-a-path"></a>Usuwanie punktu na ścieżce
+ Użyj **wybór** narzędzie ![narzędzia zaznaczania](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)i **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Użyj **wybór** narzędzie ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) aby wybrać ścieżkę. Następnie należy użyć **pióra** narzędzie ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kliknij punkt, który chcesz usunąć.
+ Użyj **wybór** narzędzie ![narzędzia zaznaczania](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) aby wybrać ścieżkę. Następnie należy użyć **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kliknij punkt, który chcesz usunąć.
 
 ### <a name="add-a-point-to-a-path"></a>Dodaj punkt do ścieżki
- Użyj **wybór** narzędzie ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)i **pióra** narzędzia ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+ Użyj **wybór** narzędzie ![narzędzia zaznaczania](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)i **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Użyj **wybór** narzędzie ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) aby wybrać ścieżkę. Użyj **pióra** narzędzia ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) można kliknąć ścieżkę, w której chcesz dodać punkt.
+ Użyj **wybór** narzędzie ![narzędzia zaznaczania](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) aby wybrać ścieżkę. Użyj **pióra** narzędzie ![pióro](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kliknąć ścieżkę, w której chcesz dodać punkt w dowolnym miejscu.
 
-##  <a name="Convert"></a> Konwertuj na ścieżkę kształtu
- Aby zmodyfikować kształtu w taki sam sposób, aby zmodyfikować ścieżkę, przekonwertuj kształt do ścieżki.
+##  <a name="Convert"></a> Konwertowanie kształtu do ścieżki
+ Aby zmodyfikować kształtu w taki sam sposób, aby zmodyfikować ścieżkę, konwertowanie kształtu do ścieżki.
 
- **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: przekonwertować kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+ **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: konwertowanie kształtu na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Łączenie ścieżek
- Ścieżki i kształty można łączyć w pojedynczą ścieżkę.
+##  <a name="Combine"></a> Połącz ścieżki
+ Można połączyć kształtów i ścieżek w pojedynczą ścieżkę.
 
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+ ![Połącz ścieżki](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png)|Dwa kształty przed łączenie|![](../designers/media/b1_4.png)|INTERSECT|
-|![](../designers/media/b1_2.png)|Łączenia|![](../designers/media/b1_5.png)|Wyklucz nachodzenie|
-|![](../designers/media/b1_3.png)|Podziel|![](../designers/media/b1_6.png)|Odejmowanie|
+|![Dwa kształty przed łączenie](../designers/media/b1_1.png)|Dwa kształty przed łączenie|![INTERSECT](../designers/media/b1_4.png)|INTERSECT|
+|![Wyklucz nakładanie](../designers/media/b1_2.png)|Różne|![](../designers/media/b1_5.png)|Wyklucz nakładanie|
+|![Odejmowanie](../designers/media/b1_3.png)|Dzielenie|![](../designers/media/b1_6.png)|Odejmowanie|
 
- **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: łączenia ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+ **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: łączenia ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Ścieżek złożonych
- Po utworzeniu złożony ścieżki przecinających się część ścieżki jest odejmowany od wyniku, a ścieżka przejmuje visual właściwości znajdujących się najniżej ścieżki.
+##  <a name="Compound"></a> Utwórz ścieżkę złożoną
+ Podczas tworzenia ścieżki złożonej żadnych przecinających się części ścieżki są odejmowane od wyniku, a wynikowe ścieżki zajmuje się we właściwościach visual znajdujących się najniżej ścieżki.
 
- Możesz można podzielić złożony ścieżki po jego utworzeniu.
+ Możesz przerwać od siebie ścieżkę złożoną dowolnej chwili po jego utworzeniu.
 
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
+ ![Przerwij ścieżkę złożoną](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: Tworzenie złożonego ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+ **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Tworzenie ścieżki przycinania
- Ścieżka wycinka jest ścieżkę lub kształt, który jest stosowany do innego obiektu ukrycie części maskowanego obiektu, które wykraczają poza ścieżki przycinania.
+ Ścieżki przycięcia jest ścieżka lub kształtu, który jest stosowany do innego obiektu, ukrywanie części maskowanego obiektu, które wykraczają poza przycinania.
 
- ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
+ ![Ścieżki przycięcia](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: Tworzenie ścieżki przycinania](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+ **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Praca ze ścieżkami: Tworzenie ścieżki przycinania](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Zobacz także
 

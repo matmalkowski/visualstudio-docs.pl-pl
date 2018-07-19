@@ -1,5 +1,5 @@
 ---
-title: XML (właściwość klasy XElement dynamiczny)
+title: XML (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -12,30 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b895865485ca3ac110670cd9d123d9a8c18ee8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69245a875d0c1df1942af12afaacc5a9ffc34b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925615"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080840"
 ---
-# <a name="xml-xelement-dynamic-property"></a>XML (właściwość klasy XElement dynamiczny)
+# <a name="xml-xelement-dynamic-property"></a>Xml (właściwość dynamiczna XElement)
 
-Pobiera zawartość elementu niesformatowany XML.
+Pobiera niesformatowany XML zawartości elementu.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xaml
 elem.Xml
 ```
 
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
 
-A <xref:System.String> reprezentujący niesformatowany zawartości XML elementu.
+A <xref:System.String> reprezentujący niesformatowany zawartość XML elementu.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest odpowiednikiem <xref:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)> metody <xref:System.Xml.Linq.XNode?displayProperty=fullName> klasy, z `SaveOptions` ustawiono parametr <xref:System.Xml.Linq.SaveOptions>.
+Ta właściwość jest równoważna <xref:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)> metody <xref:System.Xml.Linq.XNode?displayProperty=fullName> klasy, za pomocą `SaveOptions` parametr <xref:System.Xml.Linq.SaveOptions>.
 
 ## <a name="see-also"></a>Zobacz także
 

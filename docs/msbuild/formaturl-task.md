@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 353dd60697d1e77adced612dee79cea97e4c7ba8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38652b0273aed3712afbb05b4795cb2419bde747
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576342"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946654"
 ---
-# <a name="formaturl-task"></a>FormatUrl — Zadanie
-Konwertuje adres URL poprawny format adresu URL.  
+# <a name="formaturl-task"></a>FormatUrl — zadanie
+Konwertuje adres URL do poprawnego formatu adresu URL.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `FormatUrl` zadań.  
+ W poniższej tabeli opisano parametry `FormatUrl` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`InputUrl`|Opcjonalne `String` parametru.<br /><br /> Określa adres URL do formatowania.|  
-|`OutputUrl`|Opcjonalne `String` parametru wyjściowego.<br /><br /> Określa sformatowany adres URL.|  
+|`InputUrl`|Opcjonalnie `String` parametru.<br /><br /> Określa adres URL do sformatowania.|  
+|`OutputUrl`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa sformatowanym adresem URL.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów, które są wymienione w tabeli o to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów, które są wymienione w tabeli o to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -23,64 +23,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d7ebc762c7b1feb895323f7ef9ee0180ce954e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5e8341568fdc272bcb45184d9d263bceae792036
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31562185"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078969"
 ---
-# <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
-Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej kultury aplikacji. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowanie waluty, dostosowanie rozmiaru formantów w formularzu, i formanty dublowania od prawej do lewej w razie potrzeby.  
+# <a name="localize-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
+Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultury. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowania waluty, dopasowywanie rozmiaru formantów w formularzu, a dublowania kontrolki od prawej do lewej w razie potrzeby.  
   
- Lokalizowanie wyniki aplikacji do tworzenia jeden lub więcej zestawów satelickich. Każdy zestaw zawiera ciągi, obrazy i inne zasoby, które są specyficzne dla danej kultury interfejsu użytkownika. (Aplikacji głównego pliku wykonywalnego zawiera ciągi dla kultury domyślnej aplikacji).  
+ Lokalizowanie wyniki aplikacji podczas tworzenia jeden lub więcej zestawów satelickich. Każdy zestaw zawiera ciągi, obrazy i inne zasoby, które są specyficzne dla danej kultury interfejsu użytkownika. (Głównego pliku wykonywalnego aplikacji zawiera ciągi dla kultury domyślnej aplikacji).  
   
- W tym temacie opisano trzy sposoby wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji dla innych kultur:  
+ W tym temacie opisano trzy sposoby wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji dla innych języków:  
   
 -   Dołącz wszystkie zestawy satelickie pojedynczego wdrożenia.  
   
--   Generowanie jednego wdrożenia dla każdego kultury z jednym satelicki zawarte w każdej.  
+-   Generowanie jedno wdrożenie dla każdej kultury za pomocą zestawu satelickiego pojedynczego uwzględnione w każdej.  
   
 -   Pobieranie zestawów satelickich na żądanie.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>W przypadku wdrożenia w tym wszystkie zestawy satelickie  
- Zamiast wielu publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, możesz opublikować pojedynczy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, który zawiera wszystkie zestawy satelickie.  
+ Zamiast publikowanie wielu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, możesz opublikować jeden [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, który zawiera wszystkie zestawy satelickie.  
   
  Ta metoda jest ustawieniem domyślnym w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby użyć tej metody w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nie trzeba wykonywać żadnych dodatkowych działań.  
   
- Aby użyć tej metody z MageUI.exe, należy ustawić kultura dla aplikacji **neutralne** w MageUI.exe. Następnie należy ręcznie dołączyć wszystkie zestawy satelickie w danym wdrożeniu. Zestawy satelickie w MageUI.exe, można dodać za pomocą **wypełnij** znajdującego się na **pliki** kartę manifest aplikacji.  
+ Aby użyć tej metody za pomocą *MageUI.exe*, musisz ustawić kulturę dla aplikacji **neutralne** w *MageUI.exe*. Następnie musisz ręcznie dołączyć wszystkie zestawy satelickie w danym wdrożeniu. W *MageUI.exe*, można dodać zestawy satelickie za pomocą **wypełniania** znajdujący się na **pliki** karcie manifest aplikacji.  
   
- Zaletą tej metody jest tworzy pojedynczego wdrożenia i upraszcza wątku zlokalizowanych wdrożenia. W czasie wykonywania zestawu satelickiego odpowiednie będzie używany, w zależności od domyślną kulturę użytkownika systemu operacyjnego. Wadą tego podejścia to, że pobiera wszystkie zestawy satelickie zawsze, gdy aplikacja jest zainstalowana lub zaktualizowane na komputerze klienckim. Jeśli aplikacja ma dużą liczbę ciągów lub klienci mają wolne połączenie sieciowe, ten proces może mieć wpływ na wydajność podczas aktualizacji aplikacji.  
+ Zaletą tego podejścia jest tworzy pojedyncze wdrożenie i upraszcza swoją historię wdrożenia zlokalizowane. W czasie wykonywania zestawu satelickiego odpowiednie będzie używany, w zależności od kultury domyślnej systemów operacyjnych Windows przez użytkownika. Wadą tego podejścia jest to, że pobiera wszystkie zestawy satelickie, zawsze wtedy, gdy aplikacja jest zainstalowane lub zaktualizowane na komputerze klienckim. Jeśli aplikacja ma dużą liczbę ciągów lub klienci mają wolne połączenie sieciowe, ten proces może wpłynąć na wydajność podczas aktualizacji aplikacji.  
   
 > [!NOTE]
->  Takie podejście przyjęto założenie, że aplikację można dostosować wysokość, szerokość i położenie formantów automatycznie w celu uwzględnienia rozmiary ciągu inny tekst w innych kultur. Formularze systemu Windows zawiera wiele formantów i technologie, które umożliwiają projektowania formularza, aby był łatwo Lokalizowalny, łącznie z <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> kontroli, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [porady: Obsługa lokalizacja AutoSize przy użyciu formularzy systemu Windows i formantu TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  To podejście przyjęto założenie, że aplikacja Dopasowuje wysokość, szerokość i położenie kontrolki automatycznie w celu uwzględnienia rozmiarów ciąg tekstu różne w różnych kulturach. Windows Forms zawiera szereg kontroli i technologie, które pozwalają na projektowanie formularza umożliwiają łatwe możliwych do zlokalizowania, w tym <xref:System.Windows.Forms.FlowLayoutPanel> i <xref:System.Windows.Forms.TableLayoutPanel> formantów, jak również <xref:System.Windows.Forms.Control.AutoSize%2A> właściwości.  Zobacz też [porady: obsługiwanie lokalizacji na Windows forms przy użyciu AutoSize i TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
-## <a name="generate-one-deployment-for-each-culture"></a>Generowanie jednego wdrożenia dla każdego kultury  
- W tej strategii wdrażania generowania wielu wdrożeń. W każdym wdrożeniu obejmują tylko zestawu satelickiego potrzebne dla określonej kultury i Oznacz jako specyficzne dla kultury tego wdrożenia.  
+## <a name="generate-one-deployment-for-each-culture"></a>Generowanie jednego wdrożenia dla każdej kultury  
+ W tej strategii wdrażania możesz wygenerować wiele wdrożeń. W każdym wdrożeniu obejmują tylko zestawu satelickiego potrzebne dla określonej kultury i oznacz wdrożenia jako specyficzne dla tej kultury.  
   
- Aby użyć tej metody w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ustaw **publikowania języka** właściwości na **publikowania** kartę do odpowiedniego regionu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zostaną uwzględnione zestawu satelickiego wymagane dla regionu, wybierz i pominie wszystkie zestawy satelickie na wdrożenie.  
+ Do używania tej metody w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ustaw **publikowania języka** właściwość **Publikuj** kartę do odpowiedniego regionu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie uwzględni zestawu satelickiego wymagane dla regionu, należy zaznaczyć, a spowoduje wykluczenie innych zestawów satelickich z wdrożenia.  
   
- To samo można wykonywać za pomocą narzędzia MageUI.exe w programie Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Użyj **wypełnij** znajdującego się na **pliki** kartę manifest aplikacji w taki sposób, aby wykluczyć wszystkie zestawy satelickie z katalogu aplikacji, a następnie ustaw **kultury**na **nazwa** kartę manifeście wdrażania w MageUI.exe. Kroki te obejmują nie tylko prawidłowe satelicki, ale także ustawić `language` atrybutu `assemblyIdentity` elementu w manifeście wdrażania do odpowiedniego kultury.  
+ Ten sam efekt można osiągnąć za pomocą *MageUI.exe* narzędzia w programie Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Użyj **wypełniania** znajdujący się na **pliki** karcie manifest aplikacji w taki sposób, aby wykluczyć wszystkie zestawy satelickie z katalogu aplikacji, a następnie ustaw **kultury**na **nazwa** karcie manifest wdrożenia w *MageUI.exe*. Kroki te obejmują nie tylko zestawu satelickiego poprawne, ale również ustawić `language` atrybutu na `assemblyIdentity` elementu w manifeście wdrożenia do odpowiednich kultury.  
   
- Po opublikowaniu aplikacji, należy powtórzyć ten krok dla każdego dodatkowego kultury obsługuje Twojej aplikacji. Należy upewnić się, czy publikowania do innego katalogu serwera sieci Web lub katalog udziału pliku zawsze, ponieważ każdy manifest aplikacji będzie odwoływać się do różnych satelicki, a każdy manifest wdrażania będzie mieć inną wartość dla `language`atrybutu.  
+ Po opublikowaniu aplikacji, należy powtórzyć ten krok dla każdego dodatkowego kultury Twoja aplikacja obsługuje. Należy się upewnić, opublikowanie do innego katalogu serwera sieci Web lub katalogu w udziale plików każdym razem, ponieważ każdy manifestu aplikacji będzie odwoływać się do zestawu satelickiego różnych, a każdy manifest wdrożenia będzie miał inną wartość dla `language`atrybutu.  
   
-## <a name="downloading-satellite-assemblies-on-demand"></a>Pobieranie zestawów satelickich na żądanie  
- Jeśli zdecydujesz dołączyć wszystkie zestawy satelickie pojedynczego wdrożenia, może poprawić wydajność przy użyciu pobierania na żądanie, co pozwala na Oznacz zestawy jako opcjonalną. Zestawy oznaczone nie zostaną pobrane, gdy aplikacja jest zainstalowana lub aktualizowane. Można zainstalować zestawy, gdy będziesz potrzebować wywołując <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> metoda <xref:System.Deployment.Application.ApplicationDeployment> klasy.  
+## <a name="download-satellite-assemblies-on-demand"></a>Pobieranie zestawów satelickich na żądanie  
+ Jeśli zdecydujesz się dołączyć wszystkie zestawy satelickie pojedyncze wdrożenie, może poprawić wydajność przy użyciu pobierania danych na żądanie, co pozwala na Oznacz zestawy jako opcjonalną. Zestawy oznaczone nie zostaną pobrane po zainstalowaniu lub zaktualizowaniu aplikacji. Możesz zainstalować zestawy, gdy ich potrzebujesz, wywołując <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> metody <xref:System.Deployment.Application.ApplicationDeployment> klasy.  
   
- Pobieranie zestawów satelickich na żądanie różni się nieco innych typów zestawów na żądanie pobierania. Więcej informacji i kod przykłady dotyczące włączania tego scenariusza za pomocą [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzi dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Pobieranie zestawów satelickich na żądanie różni się nieco od innych typów zestawów na żądanie pobierania. Aby uzyskać więcej informacji i przykładów kodu o sposobie włączania tego scenariusza przy użyciu [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzi dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrożenia ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Można również włączyć ten scenariusz w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Zobacz też [wskazówki: Pobieranie zestawów satelickich na żądanie z ClickOnce wdrażania interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce Przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Można również włączyć ten scenariusz w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Zobacz też [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu technologii ClickOnce wdrażania interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrożenia ClickOnce Za pomocą projektanta](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
-## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testowanie zlokalizowanych ClickOnce — aplikacje przed wdrożeniem  
- Zestaw satelicki będzie służyć do formularzy systemu Windows aplikacji tylko wtedy, gdy <xref:System.Threading.Thread.CurrentUICulture%2A> właściwości wątku głównego aplikacji ma ustawioną wartość kultury zestawu satelickiego. Klienci na rynkach lokalnych będzie prawdopodobnie już uruchomiony zlokalizowanej wersji systemu Windows z kulturą, ich odpowiednich domyślną wartość.  
+## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testowanie zlokalizowanych aplikacji ClickOnce, przed przystąpieniem do wdrożenia  
+ Zestawu satelickiego stosowanych w odniesieniu do Windows Forms aplikacji tylko wtedy, gdy <xref:System.Threading.Thread.CurrentUICulture%2A> wątku głównego aplikacji zostaje ustalona kultury zestawu satelickiego. Klienci na rynkach lokalnych będą prawdopodobnie już uruchomione zlokalizowanej wersji systemu Windows za pomocą jego kultury, ustaw odpowiednią wartość domyślną.  
   
- Są trzy opcje do testowania wdrożenia zlokalizowanych przed udostępnieniem aplikacji dla klientów:  
+ Masz trzy opcje do testowania wdrożenia zlokalizowane przed udostępnieniem aplikacji dla klientów:  
   
--   Można uruchomić Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji na odpowiednim zlokalizowane wersje systemu Windows.  
+-   Można uruchomić usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednie zlokalizowane wersje systemu Windows.  
   
--   Można ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwości w aplikacji. (Ta właściwość musi być ustawiona przed wywołaniem <xref:System.Windows.Forms.Application.Run%2A> metody.)  
+-   Możesz ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwość programowo w aplikacji. (Ta właściwość musi być ustawiona, zanim wywołasz <xref:System.Windows.Forms.Application.Run%2A> metody.)  
   
-## <a name="see-also"></a>Zobacz też  
- [\<element assemblyIdentity > — Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
- [Globalizacja formularzy Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)
+## <a name="see-also"></a>Zobacz także  
+ [\<assemblyIdentity > element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Sprzedawać Windows forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

@@ -14,18 +14,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34794233"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38811924"
 ---
-1. Jeśli zamierzasz wdrożyć aplikacji z narzędzia Web Deploy w programie Visual Studio, należy zainstalować najnowszą wersję narzędzia Web Deploy na serwerze.
+1. Jeśli planujesz wdrażanie aplikacji za pomocą narzędzia Web Deploy w programie Visual Studio, należy zainstalować najnowszą wersję narzędzia Web Deploy na serwerze.
 
-    Aby zainstalować narzędzie Web Deploy, użyj [Instalatora platformy sieci Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Aby znaleźć łącza Instalatora platformy sieci Web za pomocą programu IIS, wybierz **IIS** w lewym okienku w Menedżerze serwera. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
+    Aby zainstalować narzędzie Web Deploy, należy użyć [Instalatora platformy sieci Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Aby znaleźć link Instalatora platformy sieci Web za pomocą programu IIS, wybierz **IIS** w okienku po lewej stronie w Menedżerze serwera. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz pozycję **Internet Information Services (IIS) Manager**.)
 
-    W Instalatorze platformy sieci Web możesz znaleźć narzędzia Web Deploy na karcie aplikacje. Możesz również uzyskać Instalator bezpośrednio z [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
+    W oknie Instalatora platformy sieci Web możesz znaleźć narzędzia Web Deploy na karcie aplikacje. Możesz również uzyskać bezpośrednio z poziomu Instalatora [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
-2. Sprawdź, czy narzędzie Web Deploy działa poprawnie, otwierając **Panel sterowania > System i Zabezpieczenia > Narzędzia administracyjne > usługi** i upewnij się, że **Usługa agenta sieci Web wdrożenia** działa ( Nazwa usługi jest inny w starszych wersjach).
+2. Sprawdź, czy narzędzie Web Deploy działa poprawnie, otwierając **Panel sterowania > System i Zabezpieczenia > Narzędzia administracyjne > usługi** i upewnij się, że **Usługa agenta wdrażania sieci Web** działa ( Nazwa usługi jest inny w starszych wersjach).
 
-    Jeśli usługa agenta nie jest uruchomiona, uruchom ją. Jeśli nie ma go na wszystkich, przejdź do **Panel sterowania > programy > Odinstaluj program**, Znajdź **Microsoft Web Deploy <version>** . Wybierz **zmiany** instalacji i upewnij się, że wybierasz **zostanie zainstalowana na lokalnym dysku twardym** składników Web Deploy. Wykonaj kroki instalacji zmiany.
+    Jeśli nie jest uruchomiona usługa agenta, należy ją uruchomić. Jeśli nie ma go na wszystkich, przejdź do strony **Panel sterowania > programy > Odinstaluj program**, Znajdź **Microsoft Web Deploy <version>** . Możliwość **zmiany** instalacji i upewnij się, że wybierasz **zostanie zainstalowana na lokalnym dysku twardym** składników Web Deploy. Wykonaj kroki instalacji zmiany.

@@ -18,20 +18,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921195"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078904"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
 
-Biblioteka obrazów programu Visual Studio zawiera obrazy aplikacji, które są wyświetlane w programie Microsoft Visual Studio, Microsoft Windows, pakietu Office i innego oprogramowania firmy Microsoft. Tego zestawu obrazów ponad 1000 może służyć do tworzenia aplikacji, które wyglądają wizualnie zgodne z oprogramowaniem firmy Microsoft.
+Bibliotekę obrazów programu Visual Studio zawiera obrazy aplikacji, które pojawiają się w programie Microsoft Visual Studio, Microsoft Windows, pakietu Office i innego oprogramowania firmy Microsoft. Ten zestaw ponad 1000 obrazów może służyć do tworzenia aplikacji, które będzie zgodne z oprogramowania firmy Microsoft.
 
-[Pobierz Biblioteka obrazów programu Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Pobierz bibliotekę obrazów programu Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Biblioteka obrazów jest podzielony na pięć kategorii: typowymi elementami, działania, adnotacje, ikony i obiektów. Pliki Readme znajdują się w formacie PDF wspólne elementy i typy ikon. Zawierają one informacje o sposobie używania tych obrazów odpowiednio w aplikacji.
+Biblioteka obrazów jest podzielona na pięć kategorii: wspólne elementy, działania, adnotacje, ikony i obiekty. Pliki Readme zawartych w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak prawidłowo używać tych obrazów w swoich aplikacjach.
 
 ## <a name="see-also"></a>Zobacz także
 

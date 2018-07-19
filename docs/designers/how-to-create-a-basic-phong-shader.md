@@ -10,61 +10,61 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746588"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924385"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Porady: tworzenie podstawowego modułu cieniowanie Phong
+# <a name="how-to-create-a-basic-phong-shader"></a>Porady: Tworzenie podstawowego modułu cieniowanie Phong
 
-W tym artykule przedstawiono sposób umożliwiają utworzenie cieniowania oświetlenia, implementujący klasycznego modelu oświetlenia Phong Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL).
+W tym artykule pokazano, jak używać języka programu do cieniowania wykres kierowany (DGSL) i Projektant programu do cieniowania w celu utworzenia oświetlenia modułu cieniującego, który implementuje Klasyczny model oświetlenie Phong.
 
-## <a name="the-phong-lighting-model"></a>Model oświetlenia Phong
+## <a name="the-phong-lighting-model"></a>Model oświetlenie Phong
 
-Model oświetlenia Phong rozszerza Lambert oświetlenia modelu do uwzględnienia odblasków wyróżnianiem, która symuluje odbicia właściwości powierzchni. Odblasków składników zapewnia dodatkowego oświetlenia z tym samym kierunkową źródła światła, które są używane w modelu oświetlenia Lambert, ale jej udziału ostateczny kolor jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na co powierzchni sceny inaczej, na podstawie relacji między kierunku widoku, kierunek źródła światła i orientację powierzchni. Jest to produkt koloru odblasków, odblasków zasilania i orientację powierzchnią i kolor, intensywność i kierunek światła źródeł. Powierzchnie odzwierciedlające źródła światła bezpośrednio w przeglądarce odbierania maksymalny udział odblasków uprawnia do powierzchni odzwierciedlające źródła światła od obserwatora nie udziału. Zgodnie z modelem oświetlenia Phong są łączone do określenia kolorów i intensywność wyróżnianie odblasków dla każdego punktu w obiekcie jeden lub więcej składników odblasków, a następnie są dodawane do wyniku modelu oświetlenia Lambert wygenerowało ostateczny kolor piksela .
+Model oświetlenie Phong rozszerza modelu oświetlenia Lamberta obejmujący odblasków wyróżnianie, która symuluje właściwości odbijające powierzchni. Odblasków składnik udostępnia dodatkowe oświetlenia z tego samego kierunkowe źródła światła, które są używane w modelu oświetlenia Lamberta, ale jej udziału ostateczny kolor jest przetwarzany inaczej. Wyróżnianie odblasków ma wpływ na co narażonego na ataki w scenie inaczej, na podstawie relacji między kierunku widoku, kierunek światła źródeł i orientację powierzchni. Jest to produkt koloru odblasków, moc odblasku i orientację powierzchni, a kolor, intensywność i kierunek źródła światła. Powierzchnie, które odzwierciedlają źródło światła bezpośrednio w przeglądarce otrzymują maksymalny udział odblasków i powierzchnie, które odzwierciedlają po stronie źródła światła od obserwatora otrzymywać nie materiałów przekazywanych. W obszarze model Phong oświetlenia co najmniej jednego składnika odblasków są łączone w celu określenia koloru i intensywność światła odblasków wyróżnianie dla każdego punktu w obiekcie i następnie są dodawane do wyniku modelu oświetlenia Lamberta, aby wygenerować ostateczny koloru piksela .
 
-Aby uzyskać więcej informacji na temat modelu oświetlenia Lambert, zobacz [porady: Tworzenie podstawowego cieniowania Lambert](../designers/how-to-create-a-basic-lambert-shader.md).
+Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Utwórz Lambert programu do cieniowania, zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania Lambert](../designers/how-to-create-a-basic-lambert-shader.md).
+1.  Tworzenie modułu cieniującego Lamberta zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2.  Odłącz **Lambert** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **Lambert** węzeł, a następnie wybierz pozycję **przerwanie łączy**. Dzięki temu miejsce na węźle, który jest dodawany w następnym kroku.
+2.  Odłącz **Lamberta** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **Lamberta** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
 
-3.  Dodaj **Dodaj** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz pozycję **Dodaj** i przenieść ją na powierzchnię projektu.
+3.  Dodaj **Dodaj** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **Dodaj** i przenieś go do powierzchni projektowej.
 
-4.  Dodaj **Specular** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz pozycję **Specular** i przenieść ją na powierzchnię projektu.
+4.  Dodaj **Specular** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **Specular** i przenieś go do powierzchni projektowej.
 
-5.  Dodaj udział odblasków. Przenieś **dane wyjściowe** terminali z **Specular** węzeł **X** terminali z **Dodaj** węzeł, a następnie przenieść **danych wyjściowych**  terminali z **Lambert** węzeł **Y** terminali z **Dodaj** węzła. Te połączenia łączyć wkładów całkowita kolor rozpraszania i odblasków dla piksela.
+5.  Dodaj udział odblasków. Przenieś **dane wyjściowe** terminali z **Specular** węzeł, aby **X** terminali z **Dodaj** węzeł, a następnie przenieść **danych wyjściowych**  terminali z **Lamberta** węzeł **Y** terminali z **Dodaj** węzła. Te połączenia łączyć wkładów całkowita kolor rozpraszania i odblasków dla piksela.
 
-6.  Wartość obliczana koloru nawiązać połączenia z ostateczny kolor. Przenieś **dane wyjściowe** terminali z **Dodaj** węzeł **RGB** terminali z **ostateczny kolor** węzła.
+6.  Połącz się ostateczny kolor z wartości obliczanej koloru. Przenieś **dane wyjściowe** terminali z **Dodaj** węzeł **RGB** terminali z **ostateczny kolor** węzła.
 
- Na poniższej ilustracji przedstawiono ukończone programu do cieniowania wykres i Podgląd programu do cieniowania zastosowano do modelu teapot.
-
-> [!NOTE]
-> Aby lepiej zaprezentować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu **MaterialDiffuse** został określony parametr programu do cieniowania i zakończenia wyszukiwania metaliczne przy użyciu **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o istotnych parametrach, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md).
-
- ![Wykres programu do cieniowania i podgląd jego wpływu](../designers/media/digit-lighting-graph.png)
-
- Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz sekcję Podgląd programów do cieniowania w [Designer programu do cieniowania](../designers/shader-designer.md)
-
- Na poniższej ilustracji przedstawiono programu do cieniowania, które jest opisane w tym dokumencie zastosowano do modelu 3D. **MaterialSpecular** właściwość ma wartość (1,00, 0,50, 0,20, 0,00), a jego **MaterialSpecularPower** właściwość jest ustawiona na 16.
+ Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.
 
 > [!NOTE]
-> **MaterialSpecular** właściwość określa jawnego Zakończ powierzchni materiału. Powierzchni połysku wysokiej, takich jak szkła lub plastiku zwykle odblasków kolor, który jest jasne odcień biały. Powierzchnia metali zwykle odblasków kolor, który znajduje się w pobliżu jego kolor rozpraszania. Powierzchnia Zakończ Satyna zwykle odblasków kolor, który jest ciemny odcień szarości.
+> Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania i wyszukiwanie metal zakończenia została określona za pomocą **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).
+
+ ![Wykres modułu cieniującego i podgląd efektów jej](../designers/media/digit-lighting-graph.png)
+
+ Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat programów do cieniowania w projektancie programu do cieniowania w wersji zapoznawczej, zobacz sekcję Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md)
+
+ Poniższa ilustracja przedstawia programu do cieniowania, który jest opisany w tym dokumencie zastosowano do modelu 3D. **MaterialSpecular** właściwość jest ustawiona na (1,00 0,50, 0.20 lub nowszej, 0,00), a jego **MaterialSpecularPower** właściwość jest ustawiona na 16.
+
+> [!NOTE]
+> **MaterialSpecular** właściwość określa jawnego zakończenia materiału powierzchni. Powierzchni połysku wysokiej, takich jak szkło lub plastiku zwykle odblasków kolor, który jest jasny cień bieli. Powierzchnia metalowych zwykle mają kolor odblasku, który znajduje się w pobliżu jej kolor rozpraszania. Powierzchnia satynowa Zakończ zwykle mają kolor odblasku ciemny odcień szarości.
 >
-> **MaterialSpecularPower** właściwość określa, jak intensywny są światła odblasków. Wysoka uprawnień odblasków symulować bardziej matowe, zlokalizowany więcej wyróżnia. Bardzo małe odblasków uprawnień symulować intensywny, polegających na usuwaniu najważniejsze funkcje, które mogą oversaturate i Ukryj kolor całej powierzchni.
+> **MaterialSpecularPower** właściwość określa, jak intensywne są światłem odbitym. Wysoka uprawnień odblasków symulować bardziej matowe, zlokalizowany więcej wyróżnia. Bardzo niskie uprawnień odblasków symulować intensywne, polegających na usuwaniu najważniejsze funkcje, które oversaturate i Ukryj kolor całej powierzchni.
 
- ![Oświetlenie Phong zastosowane do modelu](../designers/media/digit-lighting-model.png)
+ ![Oświetlenie Phong zastosowano do modelu](../designers/media/digit-lighting-model.png)
 
- Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3D, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3D, zobacz [porady: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: zastosowanie programu do cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: eksport cieniowania](../designers/how-to-export-a-shader.md)
-- [Instrukcje: tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

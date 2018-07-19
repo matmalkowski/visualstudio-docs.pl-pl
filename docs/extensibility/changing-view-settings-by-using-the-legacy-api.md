@@ -1,5 +1,5 @@
 ---
-title: Zmiana ustawień widoku przy użyciu interfejsu API starszych | Dokumentacja firmy Microsoft
+title: Zmienianie ustawień widoku za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9857daab890c2dd7bf7a799b6dca4d1b74cb9e37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099340"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077971"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>Zmiana ustawień widoku przy użyciu interfejsu API starsza wersja
-Ustawienia podstawowe funkcje edytora, takie jak zawijanie, margines zaznaczania i wirtualną przestrzeń, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.  
+# <a name="change-view-settings-by-using-the-legacy-api"></a>Zmienianie ustawień widoku przy użyciu starszej wersji interfejsu API
+Ustawienia podstawowe funkcje edytora, takie jak zawijanie wyrazów, margines zaznaczania i wirtualną przestrzenią, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.  
   
-## <a name="changing-settings-by-using-the-legacy-api"></a>Zmiana ustawień za pomocą starszego interfejsu API  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Interfejsu opisuje zestaw właściwości edytora tekstu. Wyświetl tekst zawiera kategorię właściwości (GUID_EditPropCategory_View_MasterSettings), która reprezentuje grupę programowo zmienionych ustawień widoku tekstu. Po Wyświetl ustawienia zostały zmienione w ten sposób, nie można zmienić w **opcje** okno dialogowe, dopóki nie dochodzi do zresetowania.  
+## <a name="change-settings-by-using-the-legacy-api"></a>Zmień ustawienia za pomocą starszej wersji interfejsu API  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Interfejsu ujawnia zestaw właściwości edytora tekstu. Wyświetl tekst zawiera kategorię właściwości (GUID_EditPropCategory_View_MasterSettings), która reprezentuje grupę programowo zmienione ustawienia widoku tekstu. Gdy ustawienia wyświetlania zostały zmienione w ten sposób, nie można zmienić w **opcje** okno dialogowe, dopóki nie są one resetowane.  
   
- Oto typowy proces zmiany ustawień widoku wystąpienia edytora core.  
+ Poniżej przedstawiono typowy proces dotyczące zmieniania ustawień widoku dla wystąpienia podstawowy edytor.  
   
-1.  Wywołanie `QueryInterface` na (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu.  
+1.  Wywołaj `QueryInterface` na (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu.  
   
-2.  Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metody, określając wartość GUID_EditPropCategory_View_MasterSettings dla `rguidCategory` parametru.  
+2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metody, określając wartość GUID_EditPropCategory_View_MasterSettings dla `rguidCategory` parametru.  
   
-     W ten sposób zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu, zawierający zestaw właściwości wymuszone dla widoku. Wszystkie ustawienia w tej grupie są stale wymuszone. Jeśli to ustawienie nie jest w tej grupie, a następnie będzie przestrzegany opcje określone w **opcje** okno dialogowe lub poleceń użytkownika.  
+     W ten sposób zwraca wskaźnik do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejs, który zawiera zbiór właściwości wymuszone dla widoku. Wszystkie ustawienia w tej grupie są stale wymuszone. Jeśli to ustawienie nie jest w tej grupie, a następnie będzie przestrzegany opcji określonych w **opcje** okno dialogowe lub przez użytkownika polecenia.  
   
-3.  Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metody, określając wartość odpowiednie ustawienia w `idprop` parametru.  
+3.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metody, określając wartość odpowiednie ustawienia w `idprop` parametru.  
   
-     Na przykład aby wymusić Zawijanie, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> i określ wartość VSEDITPROPID_ViewLangOpt_WordWrap, `vt` dla `idprop` parametru. W tym wywołaniu `vt` jest wariant typu VT_BOOL i `vt.boolVal` jest VARIANT_TRUE.  
+     Na przykład aby wymusić zawijanie wyrazów, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> i określ wartość VSEDITPROPID_ViewLangOpt_WordWrap, `vt` dla `idprop` parametru. W tym wywołaniu `vt` jest wariant typu VT_BOOL i `vt.boolVal` jest VARIANT_TRUE.  
   
-## <a name="resetting-changed-view-settings"></a>Resetowanie ustawienia zmiany widoku  
- Aby zresetować wszystkie zmiany widoku dla wystąpienia edytora podstawowe, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> — metoda i określ jej wartość odpowiednie ustawienie w `idprop` parametru.  
+## <a name="reset-changed-view-settings"></a>Resetowanie zmienić ustawienia widoku  
+ Aby zresetować wszystkie zmienione ustawienie dla wystąpienia podstawowy edytor widoku, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> metody i określ wartość odpowiednie ustawienie w `idprop` parametru.  
   
- Na przykład, aby umożliwić zawijanie można dowolnie przesuwać, należy usunąć go z kategorii właściwości przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> i określenie wartości VSEDITPROPID_ViewLangOpt_WordWrap dla `idprop` parametru.  
+ Na przykład, aby umożliwić zawijanie wyrazów, które można dowolnie przesuwać, należy usunąć go z kategorii właściwości przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> i określenie wartości VSEDITPROPID_ViewLangOpt_WordWrap dla `idprop` parametru.  
   
- Aby usunąć wszystkie zmienione ustawienia edytora rdzeni na raz, określ wartość VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt dla `idprop` parametru. W tym wywołaniu vt jest wariant typu VT_BOOL i vt.boolVal jest VARIANT_TRUE.  
+ Aby usunąć wszystkie zmienione ustawienia edytora podstawowych jednocześnie, określ wartość VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt dla `idprop` parametru. W tym wywołaniu vt jest wariant typu VT_BOOL, i vt.boolVal jest VARIANT_TRUE.  
   
-## <a name="see-also"></a>Zobacz też  
- [W edytorze Core](../extensibility/inside-the-core-editor.md)   
- [Uzyskiwanie dostępu do theText widoku przy użyciu interfejsu API starsza wersja](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+## <a name="see-also"></a>Zobacz także  
+ [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
+ [Wyświetl theText dostępu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Opcje, okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md)

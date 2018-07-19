@@ -10,35 +10,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c42b90998eef8314f37060b655185d1c68b53b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925363"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078319"
 ---
-# <a name="work-with-shaders"></a>Praca z programów do cieniowania
+# <a name="work-with-shaders"></a>Praca z cieniowaniem
 
-Projektant programu do cieniowania oparte na wykresie w programie Visual Studio służy do projektowania niestandardowego programu do cieniowania efekty. Możesz użyć tych programów do cieniowania w aplikacji lub gry opartych na technologii DirectX.
+Projektant programu do cieniowania opartej na wykresach w programie Visual Studio służy do efekty cieniowania niestandardowego projektu. Możesz użyć tych programów do cieniowania w sieci Web opartej na DirectX gry lub aplikacji.
 
-## <a name="shaders"></a>Programów do cieniowania
+## <a name="shaders"></a>Programy do cieniowania
 
-A *programu do cieniowania* to program komputera, który wykonuje obliczenia grafiki — na przykład przekształcenia wierzchołka lub kolorowanie pikseli — i zwykle odbywa się na procesor graficzny (GPU) zamiast Procesora. Ponieważ większość etapy potoku grafiki tradycyjnych, stałej funkcji są teraz wykonywane przez programy do cieniowania, można użyć ich do tworzenia potok, który jest przeznaczony dla potrzeb aplikacji.
+A *programu do cieniowania* to program komputera, który wykonuje obliczenia grafiki — na przykład przekształcenia wierzchołek lub piksel kolorowanie — zwykle działa ono na jednostka przetwarzania grafiki (GPU) zamiast procesora CPU. Ponieważ większość etapy potoku grafiki tradycyjnych, funkcja stałej są teraz wykonywane przez programy do cieniowania, można użyć ich do utworzenia potoku, które są specyficzne dla potrzeb swojej aplikacji.
 
-Najbardziej typowych rodzajów programów do cieniowania są *programów do cieniowania wierzchołków*, który wierzchołków obliczeń i Zastąp stałej funkcja transformacji i obwody oświetlenia sprzętu nieprzewidywalnych grafiki i *pikseli programów do cieniowania*, który przeprowadzanie obliczeń na piksel określić kolor piksel i Zastąp obwody stałej funkcji kolor łączenia sprzętu nieprzewidywalnych grafiki. Sprzęt graficzny nowoczesnych wprowadził jeszcze więcej rodzaje programów do cieniowania możliwe —*programów do cieniowania powłoki są*, *domeny programów do cieniowania*, i *programów do cieniowania geometrycznego* obliczeń graficznych i *obliczeniowe programów do cieniowania* do obliczenia i grafiki. Z tych etapów nie jest jeszcze dostępna żadna sprzętu nieprzewidywalnych grafiki. Programów do cieniowania zostały pierwotnie utworzone przy użyciu języka zestawu przypominającej zapewnianej równoległe danych (SIMD) oraz instrukcje skoncentrowane grafiki (skalarnego). Teraz programów do cieniowania jest zwykle tworzony przy użyciu wysokiego poziomu, notacji języka C w językach HLSL (język programu do cieniowania poziom).
+Najbardziej typowe rodzaje programów do cieniowania są *programów do cieniowania wierzchołków*, który wykonywania wierzchołków obliczeń oraz Zastąp Przekształcanie stałej funkcji i obwody oświetlenia w sprzęt-programowanej grafiki i *pikseli programy do cieniowania*, które wykonują obliczenia każdego piksela, które określić kolor piksela i Zastąp obwody funkcja stała koloru łączenia sprzętu-programowanej grafiki. Sprzęt graficzny nowoczesnego podejścia biznesowego uczyniło jeszcze więcej rodzajów programów do cieniowania możliwe —*programów do cieniowania powłoki*, *programów do cieniowania domeny*, i *programów do cieniowania geometrii* obliczeń graficznych i *programów do cieniowania obliczenia* dla obliczeń i grafiki. Żadna z tych etapów dostępnych nawet w sprzęt-programowanej grafiki. Programy do cieniowania początkowo zostały utworzone przy użyciu języka podobnego do zestawu, podanym danych równoległych (SIMD) oraz instrukcje skoncentrowane na grafiki (skalarnego). Teraz programów do cieniowania są zwykle tworzone za pomocą języków wysokiego poziomu, jak C, takich jak HLSL (język programu do cieniowania poziom).
 
-Projektant programu do cieniowania służy do tworzenia programów do cieniowania pikseli interaktywnie zamiast elementu wprowadzając i kompilowanie kodu. W projektancie programu do cieniowania programu do cieniowania jest zdefiniowany przez liczbę węzłów, które reprezentują danych i działań i połączeń między węzły, które reprezentują przepływ wartości danych i pośrednich wyników za pomocą programu do cieniowania. Przy użyciu tej metody i Podgląd w czasie rzeczywistym w projektancie programu do cieniowania, można łatwiej wizualizacji wykonywanie programu do cieniowania i "wykryć" interesujące odmiany programu do cieniowania poprzez eksperymenty.
+Program Shader Designer umożliwia tworzenie programów do cieniowania pikseli interaktywnie zamiast programu, wprowadzając i kompilowania kodu. W projektancie programu do cieniowania programu do cieniowania jest definiowany przez liczbę węzłów, które reprezentują dane, operacji i połączeń między węzły, które reprezentują przepływ wartości danych, a wyniki pośrednie, za pomocą programu do cieniowania. Za pomocą tego podejścia i Podgląd w czasie rzeczywistym w projektancie programu do cieniowania, aby łatwiej wizualizować wykonywanie programu do cieniowania i "wykryć" interesujące zmiany programu do cieniowania za pośrednictwem eksperymentów.
 
-## <a name="dgsl-documents"></a>DGSL dokumentów
+## <a name="dgsl-documents"></a>Dokumenty DGSL
 
-Projektant programu do cieniowania programów do cieniowania jest zapisywany w formacie skierowane wykres programu do cieniowania języka (DGSL), który jest w formacie XML, który jest oparty na przekierowanie wykres znaczników języka DGML (). DGSL programów do cieniowania można zastosować bezpośrednio do modeli 3D w edytorze modeli. Jednak zanim użyjesz cieniowania DGSL w aplikacji, należy go wyeksportować do formatu, który obsługuje usługę DirectX — na przykład HLSL.
+Projektant programu do cieniowania zapisuje programów do cieniowania w formacie kierowane wykres modułu cieniującego języka (DGSL), który jest w formacie XML, który jest oparty na przekierowanie Graph Markup Language (DGML). DGSL programów do cieniowania można zastosować bezpośrednio do modeli 3D w edytorze modeli. Jednak zanim użyjesz modułu cieniującego DGSL w swojej aplikacji, należy go wyeksportować do formatu, który rozumie DirectX — na przykład HLSL.
 
-Ponieważ DGSL jest zgodny z DGML, można użyć narzędzia, które są przeznaczone do analizowania dokumenty DGML do analizy sieci DGSL programów do cieniowania. Aby uzyskać informacje o DGML, zobacz [opis skierowane wykres znaczników języka DGML ()](http://msdn.microsoft.com/library/ee842619.aspx).
+Ponieważ DGSL jest zgodny z DGML, można użyć narzędzia, które są przeznaczone do analizowania dokumentów DGML analizować swoje programów do cieniowania z DGSL. Aby uzyskać informacje na temat DGML, zobacz [opis kierowane Graph Markup Language (DGML)](http://msdn.microsoft.com/library/ee842619.aspx).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Projektant cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania projektanta programu do cieniowania programu Visual Studio do pracy z programów do cieniowania.|
-|[Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)|W tym artykule omówiono rodzaje projektanta programu do cieniowania węzłów, które służy do osiągnięcia efekty graficzne.|
-|[Przykłady projektanta cieniowania](../designers/shader-designer-examples.md)|Zawiera łącza do tematów, które pokazują, jak uzyskać typowe efekty grafiki za pomocą projektanta programu do cieniowania.|
+|[Projektant cieniowania](../designers/shader-designer.md)|Opisuje sposób używania projektanta programu do cieniowania programu Visual Studio do pracy z programów do cieniowania.|
+|[Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)|W tym artykule omówiono rodzaje węzły Shader Designer, które można użyć w celu osiągnięcia efekty graficzne.|
+|[Przykłady projektanta cieniowania](../designers/shader-designer-examples.md)|Zawiera łącza do tematów, które pokazują, jak uzyskać typowe efekty graficzne za pomocą projektanta modułu cieniującego.|

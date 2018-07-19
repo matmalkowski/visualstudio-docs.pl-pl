@@ -16,15 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703824"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924003"
 ---
-# <a name="open-file-command"></a>Otwórz plik — Polecenie
-Otwiera istniejący plik i umożliwia określenie edytora.
+# <a name="open-file-command"></a>Otwórz plik — polecenie
+
+Otwiera istniejący plik i pozwala na określenie edytora.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,37 +34,41 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename`
 
- Wymagana. Pełnej lub częściowej ścieżkę i nazwę pliku, aby otworzyć. Ścieżek zawierających spacje musi być ujęta w cudzysłów.
+`filename`
+
+Wymagane. Pełnej lub częściowej ścieżkę i nazwę pliku, aby otworzyć. Ścieżki zawierające spacje muszą być ujęte w znaki cudzysłowu.
 
 ## <a name="switches"></a>Przełączniki
- / e:`editorname`
 
- Opcjonalna. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument zostanie określony, ale zostanie podana żadna nazwa edytora, **Otwórz za pomocą** zostanie wyświetlone okno dialogowe.
+/ e:`editorname`
 
- / E:`editorname` argumentu składni korzysta z nazw Edytor znajdujące się w otwartych z okno dialogowe, ujęty w cudzysłów.
+Opcjonalna. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument jest określony, ale nazwa edytora nie został podany, **Otwórz za pomocą** pojawi się okno dialogowe.
 
- Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.
+/ E:`editorname` argument składni używa nazw edytora, w jakiej występują w Otwórz za pomocą okno dialogowe, ujęta w znaki cudzysłowu.
+
+Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące / e:`editorname` argumentu.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Uwagi
- Podczas wprowadzania ścieżki automatycznego uzupełniania próbuje zlokalizować poprawną ścieżkę i nazwę pliku.
+
+Gdy wprowadzasz ścieżkę, automatyczne uzupełnianie próbuje zlokalizować poprawną ścieżkę i nazwę pliku.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie otwiera plik stylu "Test1.css" w edytorze kodu źródłowego.
+
+W tym przykładzie otwiera plik styl "Test1.css" w edytorze kodu źródłowego.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
+- [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
 - [Okno bezpośrednie](../../ide/reference/immediate-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Znajdź/Command — pole](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

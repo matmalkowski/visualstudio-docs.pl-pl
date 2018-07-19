@@ -1,5 +1,5 @@
 ---
-title: Wymagania wstępne dotyczące wdrażania aplikacji | Dokumentacja firmy Microsoft
+title: Wymagania wstępne wdrożenia aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,69 +21,69 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbf2b552731b7bedb50ff71bc2fb8b64e8a1b10
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 58f9de8e5b2a5f0f774bbf6f23df544bb24b2846
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233389"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081325"
 ---
-# <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
+# <a name="application-deployment-prerequisites"></a>Wymagania wstępne wdrożenia aplikacji
 
-Aby aplikacja, aby zainstalować i uruchomić się pomyślnie, należy najpierw zainstalować wszystkie składniki, na których aplikacja jest zależna na komputerze docelowym. Na przykład większość aplikacji utworzony za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależy od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W takim przypadku poprawną wersję środowiska CLR musi być obecny na komputerze docelowym, przed zainstalowaniem aplikacji.  
+Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie, należy najpierw zainstalować wszystkie składniki, od których aplikacja jest zależna na komputerze docelowym. Na przykład większość aplikacji utworzonych za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależy od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W tym przypadku poprawną wersję środowiska uruchomieniowego języka wspólnego musi być obecny na komputerze docelowym, zanim aplikacja zostanie zainstalowana.  
   
- Można wybrać te wymagania wstępne w **wstępnie wymagane składniki — okno dialogowe** i zainstalować w ramach instalacji programu .NET Framework i innych pakietów redystrybucyjnych. Takie rozwiązanie jest nazywany *uruchamianie*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje program wykonywalny systemu Windows o nazwie Setup.exe, znanej także jako *programu inicjującego*. Program inicjujący jest odpowiedzialny za instalowanie wymagań wstępnych przed uruchomieniem Twojej aplikacji. Aby uzyskać więcej informacji o wybieraniu wymagań wstępnych, zobacz [wstępnie wymagane składniki — okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  
+ Możesz wybrać te warunki wstępne **wstępnie wymagane składniki, okno dialogowe** i zainstaluj jako część instalacji programu .NET Framework i inne redistributable. To rozwiązanie jest znany jako *uruchamianie*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje program wykonywalny Windows o nazwie *Setup.exe*, znane również jako *programu inicjującego*. Program inicjujący jest odpowiedzialny za instalowanie wymagań wstępnych przed uruchomieniem Twojej aplikacji. Aby uzyskać więcej informacji o wybieraniu tych wymagań wstępnych, zobacz [wstępnie wymagane składniki, okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  
   
- Każdy warunkiem wstępnym jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików zawierających pliki manifestu, które opisują sposób instalacji wymagań wstępnych. Jeśli wymagania wstępne dotyczące Twojej aplikacji nie są wymienione w **wymagań wstępnych okno dialogowe**, można tworzyć niestandardowe pakiety programu inicjującego i dodaj je do programu Visual Studio. Można wybrać wymagania wstępne w **wstępnie wymagane składniki — okno dialogowe**. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).  
+ Każdy warunek wstępny jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików zawierających pliki manifestu, które opisują sposób instalacji wymagań wstępnych. Jeśli Twoje wstępnie wymagane składniki aplikacji nie są wymienione w **okno dialogowe wymagań wstępnych**, można tworzyć niestandardowe pakiety programu inicjującego i dodać je do programu Visual Studio. Można wybrać wstępnie wymagane składniki w **wstępnie wymagane składniki, okno dialogowe**. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).  
   
- Domyślnie ładowania jest włączona dla wdrożenia ClickOnce. Wygenerowany dla wdrażania ClickOnce inicjujący jest podpisana. Możesz wyłączyć uruchamianie do składnika, ale tylko wtedy, gdy masz pewność, że poprawna wersja składnika jest już zainstalowana na wszystkich komputerach docelowych.  
+ Uruchamianie jest włączone domyślnie dla wdrażania ClickOnce. Program inicjujący, generowany dla wdrażania ClickOnce jest podpisany. Można wyłączyć uruchamianie składnika, ale tylko wtedy, gdy masz pewność, że poprawną wersję składnika jest już zainstalowany na wszystkich komputerach docelowych.  
   
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Uruchamianie i ClickOnce wdrożenia  
- Przed zainstalowaniem aplikacji na komputerze klienckim [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sprawdza klienta, aby upewnić się, że ma wymagania określone w manifeście aplikacji. Następujące wymagania:  
+ Przed zainstalowaniem aplikacji na komputerze klienckim [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sprawdza, czy klient, aby upewnić się, że ma on wymagania określone w manifeście aplikacji. Obejmują one następujące wymagania:  
   
--   Minimalna wymagana wersja środowiska CLR, które jest określone jako zależność zestawu w manifeście aplikacji.  
+-   Minimalna wymagana wersja środowiska CLR, który jest określony jako zależność od zestawu w manifeście aplikacji.  
   
--   Minimalna wymagana wersja systemu operacyjnego Windows, które są wymagane przez aplikację, jak określono w aplikacji manifestu przy użyciu `<osVersionInfo>` elementu. (Zobacz [ \<zależności > Element](../deployment/dependency-element-clickonce-application.md).)  
+-   Minimalna wymagana wersja systemu operacyjnego Windows, które są wymagane przez aplikację, jak określono w aplikacji manifestu za pomocą `<osVersionInfo>` elementu. (Zobacz [ \<zależności > element](../deployment/dependency-element-clickonce-application.md).)  
   
--   Minimalna wersja wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w zestawie zależności deklaracji w manifeście zestawu.  
+-   Minimalna wersja wszystkich zestawów, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w deklaracji zależności zestawu w manifeście zestawu.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wykrywa brakujące wymagania wstępne i wymagania wstępne można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Aby zmienić wartości w manifestach wygenerowane za pomocą narzędzi takich jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów i ponowne podpisywanie manifestów aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie manifestów aplikacji i wdrażania](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i *MageUI.exe*, należy edytować manifest aplikacji w edytorze tekstów i ponowne podpisywanie manifestów aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
- Jeśli używasz programu Visual Studio i ClickOnce do wdrażania aplikacji, pakietów programu inicjującego, które są wybrane domyślnie są zależne od wersji programu .NET Framework w rozwiązaniu. Jednak jeśli należy zmienić docelową wersję platformy .NET, należy zaktualizować opcje w **wstępnie wymagane składniki — okno dialogowe** ręcznie.  
+ Jeśli używasz programu Visual Studio i technologii ClickOnce do wdrażania aplikacji, pakietów programu inicjującego, które są wybrane domyślnie są zależne od wersji programu .NET Framework w rozwiązaniu. Jednak jeśli zmienisz .NET Framework w wersji docelowej, należy zaktualizować opcje w **wstępnie wymagane składniki, okno dialogowe** ręcznie.  
   
-|Docelowy .NET Framework|Pakiety programu inicjującego wybranych|  
+|Docelowy .NET Framework|Wybrany program inicjujący pakietów|  
 |---------------------------|------------------------------------|  
 |.NET Framework 4 Client Profile|.NET Framework 4 Client Profile<br /><br /> Instalator Windows 3.1|  
 |Program .NET Framework 4|Program .NET Framework 4<br /><br /> Instalator Windows 3.1|  
   
- Z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, generowane przez stronę Publish.htm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Kreator publikowania punktów albo łącze, które instaluje tylko aplikację, lub do łącza instalowane zarówno aplikacji i składników bootstrapped.  
+ Za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia *Publish.htm* strony, wygenerowane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Kreatora publikacji wskazuje albo do łącza, który instaluje tylko aplikację lub Link instalowane aplikacji i uruchomionego składniki.  
   
- Jeśli program inicjujący generowane przy użyciu Kreatora publikacji ClickOnce lub opublikuj stronę w programie Visual Studio, Setup.exe automatycznie jest podpisana. Jednak jeśli chcesz używać certyfikatów klienta do podpisania program inicjujący można podpisać plik później.  
+ Jeśli możesz wygenerować za pomocą Kreatora publikacji technologii ClickOnce lub opublikuj stronę w programie Visual Studio, program inicjujący *Setup.exe* zostanie automatycznie zarejestrowany. Jednak jeśli chcesz zarejestrować program inicjujący za pomocą certyfikatu klienta, można podpisać go później.  
   
 ## <a name="bootstrapping-and-msbuild"></a>Uruchamianie i MSBuild  
- Jeśli nie używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale raczej kompilowania aplikacji w wierszu polecenia, można utworzyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Inicjowanie aplikacji za pomocą zadania kompilacji Engine (MSBuild) firmy Microsoft. Aby uzyskać więcej informacji, zobacz [generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md).  
+ Jeśli nie używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale raczej kompilowania aplikacji w wierszu polecenia, można utworzyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Inicjowanie aplikacji za pomocą zadania aparatu Microsoft Build Engine (MSBuild). Aby uzyskać więcej informacji, zobacz [generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md).  
   
- Alternatywą wobec uruchamianie wstępnie składniki można wdrożyć przy użyciu systemu dystrybucji oprogramowania elektronicznych, takich jak Microsoft Systems Management Server (SMS).  
+ Jako alternatywę do uruchomienia można wdrożyć wstępnie składników za pomocą system dystrybucji oprogramowania elektronicznych, takich jak Microsoft Systems Management Server (SMS).  
   
 ## <a name="bootstrapper-setupexe-command-line-arguments"></a>Argumenty wiersza polecenia programu inicjującego (Setup.exe)  
- Setup.exe generowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i zadania programu MSBuild obsługuje następujący zestaw argumenty wiersza polecenia. Inne argumenty są przekazywane do Instalatora aplikacji.  
+ *Setup.exe* generowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i zadania programu MSBuild obsługuje następujący zestaw argumentów wiersza polecenia. Wszystkie inne argumenty są przekazywane do Instalatora aplikacji.  
   
- Jeśli zmienisz żadnych opcji programu inicjującego musi Zmień inicjujący bez znaku i później zarejestrować plik inicjujący Instalatora programu.  
+ W przypadku zmiany żadnych opcji programu inicjującego należy zmienić bez znaku program inicjujący i później Zaloguj się w pliku programu inicjującego.  
   
-|Argument wiersza polecenia|Opis|  
+|argument wiersza polecenia|Opis|  
 |---------------------------|-----------------|  
-|**-?, -h, — pomoc**|Wyświetla okno dialogowe Pomoc.|  
-|**— adres url, - componentsurl**|Pokazuje przechowywanych adresu URL i adresu url składników dla tego zestawu w górę.|  
-|**-url =** `location`|Ustawia adres URL, w którym będzie szukać Setup.exe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.|  
-|**-componentsurl =** `location`|Ustawia adres URL, w którym Setup.exe będzie szukać zależności, takich jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true`**&#124;** `false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji dostawcy witryny. Przesłania **- componentsurl** ustawienie. Gdy `false`, pliki do pobrania zależności z adresu URL określonego przez **- componentsurl**.|  
+|**-?, -h, — pomoc**|Wyświetla okno dialogowe pomocy.|  
+|**— adres url, - componentsurl**|Pokazuje adres URL przechowywanych i składników adresów url dla tego zestawu w górę.|  
+|**-url =** `location`|Ustawia adres URL, gdzie *Setup.exe* będzie szukał [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.|  
+|**-componentsurl =** `location`|Ustawia adres URL, gdzie *Setup.exe* będzie szukał zależności, takie jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. To ustawienie przesłania **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Obsługa systemów operacyjnych  
- Inicjujący Instalatora programu Visual Studio nie jest obsługiwana instalacja Server Core systemu Windows Server 2008 lub Windows Server 2008 R2 Server Core, ponieważ zapewniają środowisku małej konserwacji serwera z ograniczoną funkcjonalnością. Opcja instalacji Server Core obsługuje tylko profil platformy .NET Framework 3.5 Server Core, nie można uruchomić funkcji programu Visual Studio, które są zależne od pełnego .NET Framework.  
+ Program inicjujący programu Visual Studio nie jest obsługiwana instalacja Server Core systemu Windows Server 2008 lub Windows Server 2008 R2 Server Core, ponieważ zapewniają środowisku niski konserwacji serwera z ograniczoną funkcjonalnością. Opcja instalacji Server Core obsługuje tylko profilu platformy .NET Framework 3.5 Server Core, którego nie można uruchomić funkcji programu Visual Studio, które są zależne od pełny program .NET Framework.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

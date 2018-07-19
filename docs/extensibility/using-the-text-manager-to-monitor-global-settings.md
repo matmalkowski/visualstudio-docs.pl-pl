@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c61a6859a2e8d359b2185ce959aa941944380f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0378d4c8c021cb47362220b49c8d7cb5a4ebc82
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141675"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079790"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
-W przypadku zastosowania edytora core, należy monitorować zmiany wprowadzone w ustawieniach globalnych, ponieważ te zmiany mogą wpłynąć na wystąpienie edytora. Można śledzić zmiany przez nasłuchiwanie zdarzeń zgłaszanych przez Menedżera tekstu. Na przykład po określeniu globalne preferencji wygląd i zachowanie składnika w edytorze podstawowe, takie jak jego obiekt danych dokumentu Menedżera tekstu przechowuje te informacje i przesyła je do wszystkich klientów, których dotyczy.  
+# <a name="use-the-text-manager-to-monitor-global-settings"></a>Ustawienia globalne monitorowanie za pomocą Menedżera tekstu
+W przypadku zastosowania edytorze podstawowych, należy monitorować zmiany wprowadzone do ustawień globalnych, ponieważ te zmiany mogą wpłynąć na wystąpienie edytora. Możesz śledzić zmiany przez nasłuchiwanie zdarzeń zgłaszanych przez Menedżer tekstu. Na przykład po określeniu globalne preferencje wygląd i zachowanie składnika w edytorze podstawowych, takich jak jego obiekt danych dokumentów, Menedżer tekstu przechowuje te informacje i przesyła je do wszystkich klientów, których to dotyczy.  
   
-## <a name="text-manager-functions"></a>Funkcje Menedżera tekstu  
- Menedżer tekstu informuje o zdarzeniach dla wielu ustawień, takich jak następujące:  
+## <a name="text-manager-functions"></a>Funkcje Menedżera tekstowe  
+ Menedżer tekstu wywołuje zdarzenia, dla liczby ustawienia, takie jak następujące:  
   
--   Określa, czy bufor jest pod kontrolą kodu źródłowego  
+-   Czy bufor jest pod kontrolą kodu źródłowego  
   
--   Jak zarejestrować powiadomienia o zmianach pliku  
+-   Jak zarejestrować dla powiadomień o zmianie pliku  
   
--   Jak do śledzenia widoków, które są skojarzone z niektórych buforów  
+-   Sposób śledzić widoków, które są skojarzone z niektórych buforów  
   
--   Tekstu kolorowania preferencji  
+-   Preferencje Kolorowanie tekstu  
   
--   Karta i preferencje miejsca  
+-   Karty w stosunku do miejsca preferencje  
   
- Preferencje, które są unikatowe dla danego języka nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez usługę każdego języka.  
+ Preferencje, które są unikatowe dla danego języka nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez poszczególne usługi języka.  
   
- Powiadamianie o zdarzeniach dla Menedżera tekstu jest zapewniana przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejsu. Implementuje ten interfejs na komputerze klienckim obiektu do obsługi zdarzenia wywoływane Menedżera tekstu. Zarejestruj te zdarzenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu na Menedżera tekstu.  
+ Powiadomienie o zdarzeniu Menedżera tekstu jest świadczona przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejsu. Implementuje ten interfejs na komputerze klienckim obiektu do obsługi zdarzeń zgłoszone przez Menedżera tekstu. Zarejestruj te zdarzenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu na Menedżer tekstu.  
   
-## <a name="see-also"></a>Zobacz też  
- [W edytorze Core](../extensibility/inside-the-core-editor.md)   
- [Funkcje edycji](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+## <a name="see-also"></a>Zobacz także  
+ [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
+ [Funkcje edytora](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

@@ -1,5 +1,5 @@
 ---
-title: Element (właściwość klasy XElement dynamiczny)
+title: Element (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -13,30 +13,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82bc4566fbfa4a5801feb710f07d4391a11bde67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bf8d964a41193d1db845a608749b0ca671dd9349
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923527"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924056"
 ---
-# <a name="element-xelement-dynamic-property"></a>Element (właściwość klasy XElement dynamiczny)
+# <a name="element-xelement-dynamic-property"></a>Element (właściwość dynamiczna XElement)
 
-Pobiera indeksatora używane do pobierania elementu podrzędnego wystąpienie elementu, odpowiadający określonej nazwie rozwinięte.
+Pobiera indeksatora używane do pobierania elementu podrzędnego wystąpienia elementu, który odpowiada określony rozwiniętej nazwy.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xaml
 elem.Element[{namespaceName}localName]
 ```
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
 
-Indeksatora typu `XElement Item(String expandedName)`. Ten indeksator przyjmuje parametr rozwiniętą nazwą i zwraca odpowiednie <xref:System.Xml.Linq.XElement>, lub `null` Jeśli brak elementów o określonej nazwie.
+Indeksator typu `XElement Item(String expandedName)`. Ten indeksator przyjmuje parametr rozwiniętej nazwy i zwraca odpowiedni <xref:System.Xml.Linq.XElement>, lub `null` Jeśli nie ma żadnego elementu o podanej nazwie.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest odpowiednikiem <xref:System.Xml.Linq.XContainer.Element%2A> metody <xref:System.Xml.Linq.XContainer?displayProperty=fullName> klasy.
+Ta właściwość jest równoważna <xref:System.Xml.Linq.XContainer.Element%2A> metody <xref:System.Xml.Linq.XContainer?displayProperty=fullName> klasy.
 
 ## <a name="see-also"></a>Zobacz także
 

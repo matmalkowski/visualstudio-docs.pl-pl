@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890217"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131872"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -41,7 +41,7 @@ Ułatwia ustalenie problemu, który rozwiąże przed spróbować go naprawić. O
 
 ## <a name="examine-your-assumptions"></a>Sprawdź swoje założenia
 
-Zanim badania, błędu lub komunikat o błędzie, należy traktować założeń, które można oczekiwać, że niektóre wynik wprowadzone. Ukryte lub nieznany założenia może utrudniać identyfikowanie problemu, nawet wtedy, gdy chcesz dokładnie przyczyny problemu w debugerze. Masz długą listę możliwych założenia! Poniżej przedstawiono zamieszczono kilka pytań, które warto zadać sobie zażąda założeń.
+Zanim badania, błędu lub komunikat o błędzie, należy traktować założeń, które można oczekiwać, że niektóre wynik wprowadzone. Ukryte lub nieznany założenia może utrudniać identyfikowanie problemu, nawet wtedy, gdy chcesz dokładnie przyczyny problemu w debugerze. Masz długą listę możliwych założenia! Oto kilka pytań, aby zadać sobie zażąda założeń.
 
 * Czy używasz prawo interfejsu API (oznacza to, prawego obiektu, funkcji, metody lub właściwości) Nie może być interfejsu API, którego używasz, co uważasz, że robi. (Po badania wywołania interfejsu API w debugerze, naprawienie go może wymagać podróż do dokumentacji, aby ułatwić identyfikację poprawne interfejsu API.)
 
@@ -322,7 +322,7 @@ Po znalezieniu region kodu z tym problemem, należy użyć debugera, aby zbadać
 
 * [Sprawdzanie zmiennych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) i sprawdź, czy zawierają one typ wartości, które powinny zawierać. Jeśli okaże się zła wartość, Dowiedz się, jeżeli Zła wartość została ustawiona (Aby dowiedzieć się, gdzie wartość została ustawiona, konieczne może być albo ponownie uruchom debuger, Przyjrzyj się [stos wywołań](../debugger/how-to-use-the-call-stack-window.md), i / lub).
 
-* Sprawdź, czy aplikacja wykonuje kod, który powinien być. (Na przykład w przykładowej aplikacji, Oczekiwano kodu dla instrukcji switch ustawić automatyczny typ galaxy nieregularnie, ale aplikacja pominięte kodu ze względu na błąd pisowni.)
+* Sprawdź, czy aplikacja wykonuje kod, który powinien być. (Na przykład w przykładowej aplikacji, Oczekiwano kodu dla instrukcji switch ustawić automatyczny typ galaxy nieregularne, ale aplikacja pominięte kodu ze względu na błąd pisowni.)
 
 > [!TIP]
 > Możesz użyć debugera, aby pomóc w znalezieniu błędów. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy wie celem swój kod. To narzędzie można tylko zamiar kodu, jeśli informacje możesz developer, express, tym przeznaczeniem. Zapisywanie [testów jednostkowych](../test/improve-code-quality.md) się, jak to zrobić.

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Podpis&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;Podpis&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814963"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081517"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Podpis&gt; elementu (wdrażania ClickOnce)
-Zawiera informacje potrzebne do cyfrowego podpisywania manifestu tego wdrożenia.  
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Podpis&gt; — element (wdrażanie ClickOnce)
+Zawiera informacje potrzebne do cyfrowego podpisywania to manifest wdrożenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,12 +36,12 @@ Zawiera informacje potrzebne do cyfrowego podpisywania manifestu tego wdrożenia
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Podpisywanie manifestu wdrożenia przy użyciu podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania plików XML, zobacz sieci World Wide Web konsorcjum zalecenia, "Podpis XML składni i przetwarzanie" w sposób opisany w [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Podpisywania manifestu wdrożenia za pomocą podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania plików XML, zobacz World Wide Web Consortium zalecenia, "Podpis XML składni i przetwarzanie" opisane w [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
- Jeśli chcesz zarejestrować w manifeście, należy podać wartości skrótu dla wszystkich plików. Nie można podpisać manifest z plikami, które nie jest przemieszane, ponieważ użytkownicy nie może zweryfikować zawartości bez haszowania plików.  
+ Jeśli chcesz zarejestrować manifeście skróty należy określić dla wszystkich plików. Nie można podpisać manifest z plikami, które nie mają formę skrótu, ponieważ użytkownicy nie może sprawdzić zawartości bez haszowania plików.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje `Signature` elementu w manifeście wdrażania, używane w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
+ W poniższym przykładzie kodu pokazano `Signature` elementu w manifeście wdrożenia, używane w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
 ```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -72,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz także  
+ [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)

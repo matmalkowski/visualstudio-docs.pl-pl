@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0bd5663383638de8411c44169b22adefadc758
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325492"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079247"
 ---
-# <a name="importgroup-element"></a>ImportGroup — Element
-Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+# <a name="importgroup-element"></a>Importgroup — element
+Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — element (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Project>  
  \<Importgroup — >  
@@ -53,15 +53,13 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warune
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|Importuje zawartość pliku jeden projekt do innego pliku projektu.|  
+|[Import](../msbuild/import-element-msbuild.md)|Importuje zawartość pliku jednego projektu do innego pliku projektu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-
-## <a name="remarks"></a>Uwagi  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="example"></a>Przykład  
  Poniższy kod przedstawia przykład `ImportGroup` elementu.  
@@ -76,6 +74,6 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warune
 </Project>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementy](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: MSBuild najlepszych rozwiązań | Dokumentacja firmy Microsoft
+title: MSBuild — najlepsze praktyki | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2572e300c666462c5f514452a40f810a349040f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f32626f02e0381ab285d1d6ae1b3127022da438
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571126"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078202"
 ---
-# <a name="msbuild-best-practices"></a>Najlepsze praktyki w programie MSBuild
-Zaleca się następujące najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild:  
+# <a name="msbuild-best-practices"></a>Najlepsze rozwiązania programu MSBuild
+Zalecamy następujące najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild:  
   
--   Domyślne wartości właściwości najlepiej są obsługiwane przy użyciu `Condition` atrybutu, a nie przez deklarowanie właściwości, której domyślna wartość może zostać zastąpiona w wierszu polecenia. Na przykład użyć  
+-   Domyślne wartości właściwości najlepiej są obsługiwane przy użyciu `Condition` atrybutu, a nie przez zadeklarowanie właściwość, której domyślna wartość może zostać przesłonięta w wierszu polecenia. Na przykład użyć  
   
-     `<MyProperty Condition="'$(MyProperty)' == ''">`  
+```xml
+<MyProperty Condition="'$(MyProperty)' == ''">
+   MyDefaultValue
+</MyProperty>
+```
   
-     `MyDefaultValue`  
+-   Po zaznaczeniu elementów, należy unikać symboli wieloznacznych. Zamiast tego należy jawnie określić pliki. Ta funkcja ułatwia śledzenie błędów, które mogą wystąpić podczas dodawania i usuwania plików.  
   
-     `</MyProperty>`  
-  
--   Po wybraniu elementów, należy unikać symboli wieloznacznych. Zamiast tego należy jawnie określić pliki. Ułatwia to śledzenie błędów, które mogą wystąpić podczas dodawania i usuwania plików.  
-  
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

@@ -20,58 +20,58 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b79990cf41e69e2c175691e94b344d4de116691
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03e2ee64002d286c899f638f2fed16d4ef22abc7
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561457"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080776"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
-*Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański to wirusów lub innych szkodliwych program, który złośliwego innej posiadałaby jako program uzasadnionych ustanowione, zaufanego źródła. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić nie zmodyfikowane pliki i zestawy.  
+*Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisywania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.  
   
- Poniższe sekcje opisują różne typy certyfikatów cyfrowych używanych w Authenticode, jak certyfikaty są weryfikowane przy użyciu certyfikatów urzędów certyfikacji, rola stosowania sygnatur czasowych w certyfikatach i metody dla miejsca do magazynowania certyfikaty.  
+ Poniższe sekcje opisują różne typy certyfikatów cyfrowych używanych w Authenticode, w jaki sposób certyfikaty są weryfikowane przy użyciu certyfikatów urzędów certyfikacji, rola Oznaczanie sygnaturą czasową w certyfikatach oraz metody przestrzeń dyskowa dostępna dla certyfikaty.  
   
-## <a name="authenticode-and-code-signing"></a>Authenticode i podpisywania kodu  
- A *certyfikatu cyfrowego* plik, który zawiera publicznego i prywatnego klucza kryptograficznego, wraz z metadane opisujące wydawcy do której certyfikat został wystawiony i agencji, który wystawił certyfikat.  
+## <a name="authenticode-and-code-signing"></a>Authenticode i podpisywanie kodu  
+ A *certyfikatu cyfrowego* jest plik, który zawiera publicznego i prywatnego klucza kryptograficznego, wraz z metadanych opisujących wydawcy do której certyfikat został wystawiony i agencja, który wystawił certyfikat.  
   
- Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany dla różnych typów podpisywania. Dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, musi mieć certyfikat jest prawidłowy do podpisywania kodu Authenticode. Jeśli spróbujesz zarejestrować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu innego typu certyfikatu, takie jak certyfikat cyfrowy poczty e-mail, będzie on działał. Aby uzyskać więcej informacji, zobacz [wprowadzenie do podpisywania kodu](http://go.microsoft.com/fwlink/?LinkId=179452).  
+ Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany dla różnych typów rejestracji. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, konieczne jest posiadanie certyfikatu Authenticode, który jest prawidłowy do podpisywania kodu. Jeśli spróbujesz zarejestrować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu innego typu certyfikatu, takie jak certyfikat cyfrowy poczty e-mail nie będzie ono działać. Aby uzyskać więcej informacji, zobacz [wprowadzenie do podpisywania kodu](http://go.microsoft.com/fwlink/?LinkId=179452).  
   
  Można uzyskać certyfikat podpisywania w jeden z trzech sposobów kodu:  
   
--   Kupić ją od dostawcy certyfikatu.  
+-   Kupić od dostawcy certyfikatu.  
   
--   Wyświetlony jeden z grupy w organizacji odpowiedzialną za tworzenie certyfikatów cyfrowych.  
+-   Wyświetlany jest jeden z grupy w Twojej organizacji, które są odpowiedzialne za tworzenie certyfikatów cyfrowych.  
   
--   Generowanie własnego certyfikatu za pomocą polecenia cmdlet New-SelfSignedCertificate programu PowerShell lub przy użyciu MakeCert.exe, która jest dostarczana z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
+-   Generowanie własnego certyfikatu za pomocą polecenia cmdlet New-SelfSignedCertificate programu PowerShell lub za pomocą *MakeCert.exe*, który jest dołączony do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
-### <a name="how-using-certificate-authorities-helps-users"></a>Jak przy użyciu urzędów certyfikacji ułatwia użytkownikom  
- Certyfikat, który został wygenerowany za pomocą nowego SelfSignedCertificate lub narzędzia MakeCert.exe jest popularnie określany *samoobsługowego cert* lub *certyfikatu testowego*. Tego rodzaju certyfikatu działa podobnie jak w pliku .snk — programu .NET Framework. Składa się wyłącznie z publicznego i prywatnego klucza kryptograficznego, a nie zawiera możliwe do zweryfikowania informacji o wydawcy. Certyfikaty samoobsługowego można użyć do wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim poziomem zaufania w intranecie. Jednak gdy te aplikacje uruchomione na komputerze klienckim [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikować je jako pochodzący od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podpisane przez certyfikaty samoobsługowego i wdrożone za pośrednictwem Internetu nie może korzystać z zaufanego wdrożenia aplikacji.  
+### <a name="how-using-certificate-authorities-helps-users"></a>Jak za pomocą urzędów certyfikacji ułatwia użytkownikom  
+ Certyfikat wygenerowany za pomocą New-SelfSignedCertificate lub *MakeCert.exe* narzędzie jest popularnie określany mianem *self-cert* lub *certyfikatu testowego*. Tego rodzaju certyfikatu znacznie działa tak samo jak *.snk* pliku działa w programie .NET Framework. Składa się wyłącznie z pary kluczy kryptograficznych publiczny/prywatny, a nie zawiera możliwe do zweryfikowania informacji o wydawcy. Certyfikaty z własnym można użyć do wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim poziomem zaufania w sieci intranet. Jednak gdy te aplikacje uruchomione na komputerze klienckim [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikować je jako pochodzący od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podpisane przy użyciu własnym certyfikatami i wdrożone przez Internet nie może wykorzystać zaufanego wdrożenia aplikacji.  
   
- Z kolei jeśli zostanie wyświetlony certyfikat od urzędu certyfikacji, takiego jak dostawcy certyfikatu, lub dział w przedsiębiorstwie, certyfikatu zapewnia lepszą ochronę dla użytkowników. Nie tylko identyfikuje wydawcę oprogramowania podpisany, ale sprawdzi tej tożsamości, sprawdzając z urzędem certyfikacji, który podpisał go. Jeśli urząd certyfikacji nie ma głównego urzędu certyfikacji, Authenticode będzie również "łańcucha" powrotem do głównego urzędu, aby sprawdzić, czy urząd certyfikacji jest autoryzowany do wystawiania certyfikatów. Ze względów bezpieczeństwa należy używać certyfikatu wystawionego przez urząd certyfikacji, jeśli to możliwe.  
+ Z drugiej strony Jeśli zostanie wyświetlony certyfikat od urzędu certyfikacji, takich jak dostawcy certyfikatu lub działu, w przedsiębiorstwie, certyfikat oferuje większe bezpieczeństwo dla użytkowników. Nie tylko identyfikuje wydawcę oprogramowania podpisany, ale tej tożsamości weryfikuje, sprawdzając z urzędem certyfikacji, który podpisał go. Jeśli urząd certyfikacji nie jest główny urząd certyfikacji, Authenticode będą również "połączony" do głównego urzędu, aby sprawdzić, czy urząd certyfikacji jest autoryzowany do wystawiania certyfikatów. Ze względów bezpieczeństwa należy używać certyfikatu wystawionego przez urząd certyfikacji, jeśli to możliwe.  
   
- Aby uzyskać więcej informacji na temat generowania samoobsługowego certyfikaty, zobacz [SelfSignedCertificate nowy](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) lub [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Aby uzyskać więcej informacji na temat generowania certyfikatów self zobacz [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) lub [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
   
-### <a name="timestamps"></a>Znaczniki czasu  
- Certyfikaty używane do podpisywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji wygasają po określonego czasu, zwykle dwanaście miesięcy. Aby wyeliminować konieczność stale ponowne podpisanie aplikacji za pomocą nowego świadectwa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obsługuje sygnatury czasowej. Gdy aplikacja jest podpisana z sygnaturą czasową, jego certyfikat będzie akceptowany nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest nieprawidłowa. Dzięki temu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą wygasłe certyfikaty, ale prawidłowe sygnatury czasowe, aby pobierać i uruchamiać. Umożliwia także zainstalowanych aplikacji z wygasłe certyfikaty kontynuować pobrać i zainstalować aktualizacje.  
+### <a name="timestamps"></a>Sygnatury czasowe  
+ Certyfikaty używane do podpisywania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wygasają po upływie określonego czasu, zwykle przez dwanaście miesięcy. Aby wyeliminować potrzebę stale ponownego podpisywania aplikacji przy użyciu nowych certyfikatów [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obsługuje sygnatury czasowej. Gdy aplikacja jest podpisana z sygnaturą czasową, jego certyfikat będzie nadal być akceptowane, nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest nieprawidłowa. Dzięki temu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą wygasłe certyfikaty, ale nieprawidłowy sygnatury czasowe, aby pobrać i uruchomić. Umożliwia także zainstalowanych aplikacji za pomocą wygasłe certyfikaty, aby w dalszym ciągu pobieranie i instalowanie aktualizacji.  
   
- Aby dołączyć sygnaturę czasową serwera aplikacji, musi być dostępny serwer znaczników czasu. Aby dowiedzieć się, jak wybrać serwer znaczników czasu, zobacz [porady: logowania aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Aby uwzględnić znacznika czasu w serwera aplikacji, musi być dostępny serwera znacznika czasowego. Aby uzyskać informacje o sposobie wybierania serwera znacznika czasowego, zobacz [porady: podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
-### <a name="updating-expired-certificates"></a>Aktualizowanie wygasłych certyfikatów  
- We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygaśnięciu certyfikatu, którego może spowodować aplikację przestanie działać. Aby rozwiązać ten problem, użyj jednej z następujących metod:  
+### <a name="update-expired-certificates"></a>Aktualizuj certyfikaty wygasłe  
+ We wcześniejszych wersjach programu .NET Framework aktualizowanie aplikacji wygasło którego certyfikat może spowodować tę aplikację, przestanie działać. Aby rozwiązać ten problem, należy użyć jednej z następujących metod:  
   
--   Aktualizacja programu .NET Framework do w wersji 2.0 z dodatkiem SP1 lub nowszego systemu Windows XP lub w wersji 3.5 lub nowszego systemu Windows Vista.  
+-   Zaktualizuj programu .NET Framework w wersji 2.0 z dodatkiem SP1 lub nowszy na Windows XP, lub w wersji 3.5 lub nowszy na Windows Vista.  
   
--   Odinstalowanie aplikacji, i ponowne zainstalowanie nowej wersji przy użyciu prawidłowego certyfikatu.  
+-   Odinstaluj tę aplikację, a następnie ponownie zainstaluj nową wersję z prawidłowym certyfikatem.  
   
--   Tworzenie zestawu wiersza polecenia, które aktualizuje certyfikat. Szczegółowe informacje o tym procesie można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
+-   Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Szczegółowe informacje o tym procesie, można znaleźć w folderze [925521 artykuł pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
   
-### <a name="storing-certificates"></a>Przechowywanie certyfikatów  
+### <a name="store-certificates"></a>Certyfikaty Store  
   
--   Certyfikaty można zapisać jako plik pfx w systemie plików, lub można je przechowywać wewnątrz kontenera kluczy. Użytkownika w domenie systemu Windows może mieć wiele kontenerów kluczy. Domyślnie program MakeCert.exe będzie certyfikaty są przechowywane w osobistych kontenera kluczy, chyba że zostanie określony, aby go należy zapisywać do pliku PFX zamiast tego. Mage.exe i MageUI.exe, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzia do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w każdej sposób.  
+-   Można przechowywać certyfikaty jako *PFX* pliku w systemie plików, lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywane certyfikaty w Twoje osobiste kontenera kluczy, chyba że określisz, że jej należy zapisać go w celu *PFX* zamiast tego. *Mage.exe* i *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzia służące do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w dowolnym czasie.  
   
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Przegląd wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

@@ -1,5 +1,5 @@
 ---
-title: Właściwości dynamiczne klasy XElement — klasa
+title: Właściwości dynamiczne klasy XElement
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,27 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b81821c6a0af0b8fa769c4ef7958b921cee91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921753"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077106"
 ---
-# <a name="xelement-class-dynamic-properties"></a>Właściwości dynamiczne klasy XElement — klasa
+# <a name="xelement-class-dynamic-properties"></a>Właściwości dynamiczne klasy XElement
 
-W tej sekcji opisano właściwości dynamicznych <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy.
+W tej sekcji opisano właściwości dynamicznych z <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Atrybut](../designers/attribute-xelement-dynamic-property.md)|Pobiera indeksatora używane do pobierania atrybut, który odpowiada określonym rozwiniętą nazwą.|
-|[Element](../designers/element-xelement-dynamic-property.md)|Pobiera indeksatora używane do pobierania odpowiadający określonej nazwie rozwinięty element podrzędny.|
-|[Elements](../designers/elements-xelement-dynamic-property.md)|Pobiera indeksatora używane do pobierania elementy podrzędne bieżącego elementu, które odpowiada określonym rozwiniętą nazwą.|
-|[Elementy podrzędne](../designers/descendants-xelement-dynamic-property.md)|Pobiera indeksatora używane do pobierania wszystkie elementy zależne bieżącego elementu spełniających określony rozwiniętą nazwą.|
+|[Atrybut](../designers/attribute-xelement-dynamic-property.md)|Pobiera służy do pobierania atrybut, który odpowiada określony rozwiniętą nazwę indeksatora.|
+|[Element](../designers/element-xelement-dynamic-property.md)|Pobiera służy do pobierania elementu podrzędnego, który odpowiada określony rozwiniętą nazwę indeksatora.|
+|[Elements](../designers/elements-xelement-dynamic-property.md)|Pobiera służy do pobierania elementy podrzędne bieżącego elementu, które odpowiadają określonej rozwiniętą nazwę indeksatora.|
+|[Elementy podrzędne](../designers/descendants-xelement-dynamic-property.md)|Pobiera służy do pobierania wszystkie elementy zależne bieżącego elementu, które odpowiadają określonej rozwiniętą nazwę indeksatora.|
 |[Wartość](../designers/value-xelement-dynamic-property.md)|Pobiera lub ustawia zawartość elementu.|
-|[Xml](../designers/xml-xelement-dynamic-property.md)|Pobiera niesformatowany reprezentację XML elementu.|
+|[Xml](../designers/xml-xelement-dynamic-property.md)|Pobiera niesformatowany Reprezentacja XML element.|
 
 ## <a name="see-also"></a>Zobacz także
 

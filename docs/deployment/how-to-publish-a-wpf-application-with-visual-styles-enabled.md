@@ -1,5 +1,5 @@
 ---
-title: 'Porady: publikowanie aplikacji WPF przy włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
+title: 'Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -10,72 +10,72 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 921cb50efa3806c550d7fe8c949e00c3eb08f478
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057414"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078381"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
-Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](/windows/desktop/Controls/visual-styles-overview). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [style wizualne omówienie](/windows/desktop/Controls/visual-styles-overview). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
- Usuń błąd i publikowanie rozwiązania, należy wykonać następujące zadania:  
+ Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:  
   
 -   [Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych](#publish-the-solution-without-visual-styles-enabled).  
   
 -   [Utwórz plik manifestu](#create-a-manifest-file).  
   
--   [Osadzanie pliku manifestu w pliku wykonywalnego opublikowanych rozwiązania](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+-   [Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Podpisać manifestów aplikacji i wdrażania](#sign-the-application-and-deployment-manifests).  
+-   [Podpisywanie manifestów aplikacji i wdrożenia](#sign-the-application-and-deployment-manifests).  
   
- Następnie można przenieść opublikowane pliki do lokalizacji, z którego mają zostać użytkowników końcowych do zainstalowania aplikacji.  
+ Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych  
   
-1.  Upewnij się, że projekt nie ma włączonej funkcji stylów wizualnych. Najpierw sprawdź plik manifestu projektu dla następującego pliku XML. Następnie jeśli istnieje plik XML, ujmij XML znacznika komentarza.  
+1.  Upewnij się, że projekt nie ma włączonej funkcji stylów wizualnych. Najpierw sprawdź następujący kod XML manifestu pliku projektu. Następnie kod XML jest obecny, należy ująć XML przy użyciu znacznik komentarza.  
   
-     Domyślnie style wizualne nie są włączone.  
+     Style wizualne nie są włączone domyślnie.  
   
     ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
-     Poniższe procedury pokazują, jak można otworzyć pliku manifestu skojarzone z projektu.  
+     Poniższe procedury pokazują, jak można otworzyć pliku manifestu skojarzony z projektem.  
   
-    ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Aby otworzyć pliku manifestu w projektach Visual Basic  
+    ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Aby otworzyć plik manifestu w projekcie Visual Basic  
   
-    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
-  
-         Są wyświetlane na stronach właściwości projektu WPF.  
-  
-    2.  Na **aplikacji** , wybierz pozycję **ustawienia systemu Windows widoku**.  
-  
-         Otworzy się w pliku app.manifest **edytora kodu**.  
-  
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Aby otworzyć pliku manifestu w projekcie C#  
-  
-    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
+    1.  Na pasku menu wybierz **projektu**, *ProjectName* **właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
   
          Są wyświetlane na stronach właściwości projektu WPF.  
   
-    2.  Na **aplikacji** karcie, zanotuj nazwę wyświetlaną w polu manifestu. Jest to nazwa manifestu, który jest skojarzony z projektu.  
+    2.  Na **aplikacji** kartę, wybrać **ustawienia Windows widoku**.  
+  
+         Plik app.manifest zostanie otwarty w **Edytor kodu**.  
+  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Aby otworzyć plik manifestu w projekcie języka C#  
+  
+    1.  Na pasku menu wybierz **projektu**, *ProjectName* **właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
+  
+         Są wyświetlane na stronach właściwości projektu WPF.  
+  
+    2.  Na **aplikacji** kartę, zwróć uwagę na nazwę, która jest wyświetlana w polu manifestu. Jest to nazwa manifestu, który jest skojarzony z projektem.  
   
         > [!NOTE]
-        >  Jeśli **osadzania manifestu z ustawieniami domyślnymi** lub **Utwórz aplikację bez manifestu** są wyświetlane w polu manifestu style wizualne nie są włączone. Jeśli nazwa pliku manifestu jest wyświetlana w polu manifestu, przejdź do następnego kroku tej procedury.  
+        >  Jeśli **osadzania manifestu z ustawieniami domyślnymi** lub **tworzenie aplikacji bez manifestu** są wyświetlane w polu manifestu nie mają włączonej funkcji stylów wizualnych. Jeśli nazwa pliku manifestu zostanie wyświetlona w polu manifestu, przejdź do następnego kroku w tej procedurze.  
   
-    3.  W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** ().  
+    3.  W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**.  
   
-         Ten przycisk zawiera wszystkie elementy projektu, w tym te, które zostały wykluczone, które zwykle są ukryte. Plik manifestu jest wyświetlany jako element projektu.  
+         Ten przycisk pokazuje wszystkie elementy projektu, w tym te, które zostały wykluczone, które zwykle są ukryte. Plik manifestu jest wyświetlany jako element projektu.  
   
-2.  Tworzenie i publikowanie rozwiązania. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Twórz i Publikuj swoje rozwiązanie. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="create-a-manifest-file"></a>Utwórz plik manifestu  
   
-1.  Wklej następujący kod XML w pliku Notatnika.  
+1.  Wklej następujący kod XML do pliku Notatnika.  
   
-     Plik XML zawiera opis zestawu, który zawiera formanty, które obsługują stylów wizualnych.  
+     Poniższy kod XML w tym artykule opisano zestaw, który zawiera formanty, które obsługują stylów wizualnych.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
@@ -83,20 +83,20 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
 2.  W programie Notatnik, kliknij przycisk **pliku**, a następnie kliknij przycisk **Zapisz jako**.  
   
-3.  W **Zapisz jako** okna dialogowego, **Zapisz jako typ** listy rozwijanej wybierz **wszystkie pliki**.  
+3.  W **Zapisz jako** dialogowym **Zapisz jako typ** listy rozwijanej wybierz **wszystkie pliki**.  
   
-4.  W **nazwę pliku** polu, nazwę pliku i Dołącz **manifest** na końcu nazwy pliku. Na przykład: **themes.manifest**.  
+4.  W **nazwy pliku** polu, nadaj plikowi nazwę i Dołącz *.manifest* na końcu nazwy pliku. Na przykład: *themes.manifest*.  
   
-5.  Wybierz **Przeglądaj foldery** przycisku Wybierz dowolnego folderu, a następnie kliknij przycisk **zapisać**.  
+5.  Wybierz **Przeglądaj foldery** przycisku, wybierz dowolny folder, a następnie kliknij **Zapisz**.  
   
     > [!NOTE]
-    >  W pozostałych procedurach założono, że nazwa tego pliku jest **themes.manifest** oraz że plik jest zapisywany w katalogu C:\temp na komputerze.  
+    >  W pozostałych procedurach założono, że nazwa tego pliku jest *themes.manifest* i czy plik jest zapisywany do *C:\temp* katalogu na komputerze.  
   
-## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Osadzanie pliku manifestu w pliku wykonywalnego opublikowanych rozwiązania  
+## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania  
   
 1.  Otwórz **wiersz polecenia programu Visual Studio**.  
   
-     Aby uzyskać więcej informacji o sposobie otwierania **wiersz polecenia programu Visual Studio**, zobacz [wiersze polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs).  
+     Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
     > [!NOTE]
     >  Pozostałe kroki zakładają następujące rozwiązania:  
@@ -104,65 +104,65 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
     >  -   Nazwa rozwiązania jest **MyWPFProject**.  
     > -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
-    >      Rozwiązania została opublikowana do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+    >      To rozwiązanie jest publikowane do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
     > -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
-    >  Nie trzeba używać nazwy lub lokalizacji katalogu opisane powyżej. Nazwy i lokalizacje opisane powyżej są używane tylko w celu zilustrowania kroki wymagane do opublikowania rozwiązania.  
+    >  Nie trzeba używać nazwy lub lokalizacje katalogu opisanych powyżej. Nazwy i lokalizacje opisanych powyżej są używane tylko w celu zilustrowania kroki wymagane do publikowania rozwiązania.  
   
-2.  W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. W poniższym przykładzie pokazano, w tym kroku.  
+2.  W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. Poniższy przykład pokazuje, w tym kroku.  
   
-    ```  
+    ```cmd  
 cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w plik wykonywalny aplikacji.  
+3.  W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w pliku wykonywalnego aplikacji.  
   
-    ```
+    ```cmd
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-## <a name="sign-the-application-and-deployment-manifests"></a>Podpisać manifestów aplikacji i wdrażania  
+## <a name="sign-the-application-and-deployment-manifests"></a>Podpisywanie manifestów aplikacji i wdrożenia  
   
-1.  W wierszu polecenia Uruchom następujące polecenie, aby usunąć `.deploy` rozszerzenia pliku wykonywalnego w bieżącym katalogu.  
+1.  W wierszu polecenia Uruchom następujące polecenie, aby usunąć *.deploy* rozszerzenie z pliku wykonywalnego w bieżącym katalogu.  
   
-    ```  
+    ```cmd  
     ren MyWPFApp.exe.deploy MyWPFApp.exe  
     ```  
   
     > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, że tylko jeden plik ma `.deploy` rozszerzenia pliku. Upewnij się, że zmiany nazwy wszystkich plików w tym katalogu, które mają `.deploy` rozszerzenia pliku.  
+    >  W tym przykładzie założono, że tylko jeden plik ma *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, które mają *.deploy* rozszerzenie pliku.  
   
 2.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest aplikacji.  
   
-    ```  
+    ```cmd  
     mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
     ```  
   
     > [!NOTE]
-    >  W tym przykładzie założono podpisywania manifestu przy użyciu `.pfx` pliku projektu. Jeśli nie są podpisywanie manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. Jeśli tworzysz manifest przy użyciu certyfikatu, który wymaga hasła, określ `-password` opcji (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby dodać `.deploy` rozszerzenia nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
+3.  W wierszu polecenia Uruchom następujące polecenie, aby dodać *.deploy* rozszerzenie nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
   
     ```  
     ren MyWPFApp.exe MyWPFApp.exe.deploy  
     ```  
   
     > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, że tylko jeden plik ma `.deploy` rozszerzenia pliku. Upewnij się, że zmiany nazwy wszystkich plików w tym katalogu, który miał poprzednio `.deploy` rozszerzenia nazwy pliku.  
+    >  W tym przykładzie przyjęto założenie, że tylko jeden plik miał *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, który stracił *.deploy* rozszerzenie nazwy pliku.  
   
-4.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrażania.  
+4.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrożenia.  
   
     ```  
     mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
     ```  
   
     > [!NOTE]
-    >  W tym przykładzie założono podpisywania manifestu przy użyciu `.pfx` pliku projektu. Jeśli nie są podpisywanie manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. Jeśli tworzysz manifest przy użyciu certyfikatu, który wymaga hasła, określ `-password` opcji, jak w poniższym przykładzie:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji, jak w poniższym przykładzie:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Po wykonaniu tych kroków można przenieść opublikowane pliki do lokalizacji, z którego mają zostać użytkowników końcowych do zainstalowania aplikacji. Jeśli planujesz zaktualizować rozwiązania często, można przenieść te polecenia do skryptu i uruchom skrypt w każdym publikowaniu nowej wersji.  
+ Po wykonaniu tych kroków można umieścić opublikowanych pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym. Jeśli zamierzasz często aktualizacji rozwiązania, można przenieść te polecenia do skryptu i uruchom skrypt na każdym publikowaniu nowej wersji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Omówienie style wizualne](/windows/desktop/Controls/visual-styles-overview)   
- [Włączanie style wizualne](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Wiersze polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs)
+ [Omówienie funkcji stylów wizualnych](/windows/desktop/Controls/visual-styles-overview)   
+ [Włączanie stylów wizualnych](https://msdn.microsoft.com/library/bb773175.aspx)   
+ [Wiersz polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs)

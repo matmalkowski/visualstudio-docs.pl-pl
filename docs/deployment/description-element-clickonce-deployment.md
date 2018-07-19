@@ -1,5 +1,5 @@
 ---
-title: '&lt;Opis elementu&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;Opis&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a8f1a1e5ec5f4663ed999566158d104c6a7364
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564249"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079813"
 ---
-# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Opis elementu&gt; elementu (wdrażania ClickOnce)
-Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **Dodaj lub usuń programy** w Panelu sterowania.  
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Opis&gt; — element (wdrażanie ClickOnce)
+Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **apletu Dodaj lub usuń programy** w Panelu sterowania.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
   
       <description   
    publisher   
@@ -40,28 +40,28 @@ Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i 
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `description` Element jest wymagany i znajduje się w `urn:schemas-microsoft-com:asm.v1` przestrzeni nazw. Nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `description` Element jest wymagany i znajduje się w `urn:schemas-microsoft-com:asm.v1` przestrzeni nazw. Go nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`publisher`|Wymagana. Określa nazwę firmy, użyty do umieszczenia ikonę w oknach **Start** menu i **Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
-|`product`|Wymagana. Identyfikuje Pełna nazwa produktu. Używane jako tytuł ikony zainstalowane w systemie Windows **Start** menu.|  
-|`suiteName`|Opcjonalna. Identyfikuje podfolder w `publisher` folderu w oknach **Start** menu.|  
-|`supportUrl`|Opcjonalna. Określa adres URL pomocy technicznej, który jest wyświetlany w obszarze **Dodaj lub usuń programy** w Panelu sterowania. Skrót do tego adresu URL tworzona jest również obsługę aplikacji w oknach **Start** menu, gdy wdrożenie jest skonfigurowane do instalacji.|  
+|`publisher`|Wymagane. Określa nazwę firmy, używane do umieszczenia ikony w Windows **Start** menu i **apletu Dodaj lub usuń programy** w Panelu sterowania, gdy wdrożenie jest skonfigurowane do instalacji.|  
+|`product`|Wymagane. Identyfikuje Pełna nazwa produktu. Używane jako tytuł na ikonę zainstalowane w Windows **Start** menu.|  
+|`suiteName`|Opcjonalna. Identyfikuje podfolder w `publisher` folderu w Windows **Start** menu.|  
+|`supportUrl`|Opcjonalna. Określa adres URL pomocy technicznej, która jest wyświetlana w **apletu Dodaj lub usuń programy** w Panelu sterowania. Skrót do tego adresu URL tworzona jest również obsługę aplikacji w Windows **Start** menu, gdy wdrożenie jest skonfigurowane do instalacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Opis elementu jest wymagany w wszystkie konfiguracje wdrożenia.  
+ Opis elementu jest wymagany we wszystkich konfiguracjach wdrażania.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje `description` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania. Ten przykładowy kod jest częścią większego przykładu udostępnionego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
+ W poniższym przykładzie kodu pokazano `description` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
   
-```  
+```xml  
 <description   
   asmv2:publisher="My Company Name"  
   asmv2:product="My Application"  
   xmlns="urn:schemas-microsoft-com:asm.v1" />  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz także  
+ [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)

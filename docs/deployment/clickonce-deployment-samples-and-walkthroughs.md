@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd796f39e5beff02c2df837985bb6404ca9860a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563378"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077568"
 ---
-# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Przykłady i wskazówki dotyczące wdrażania ClickOnce
-Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i wskazówki krok po kroku, ilustrujących składni, struktury i techniki wdrażania formularzy systemu Windows, WPF i aplikacji konsoli.  
+# <a name="clickonce-deployment-samples-and-walkthroughs"></a>Wskazówki i przykłady wdrażania ClickOnce
+Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po kroku instruktaży, które ilustrują składni, struktury i techniki służące do wdrażania Windows Forms, WPF i aplikacji konsoli.  
   
- Przykładowy kod jest przeznaczony dla celów informacyjny i nie powinna być używana w rozwiązaniach wdrożonej bez modyfikacji. W szczególności zabezpieczeń musi być brana pod uwagę większa.  
+ Przykładowy kod jest przeznaczona do celów instruktażowych i nie należy używać w przypadku rozwiązań wdrożonych bez modyfikacji. W szczególności zabezpieczeń musi należy uwzględnić większa.  
   
-## <a name="clickonce-deployment"></a>Wdrożenie ClickOnce  
+## <a name="clickonce-deployment"></a>wdrożenie ClickOnce  
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Opisano sposób wdrażania aplikacji ClickOnce za pomocą narzędzi .NET Framework.|  
-|[Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Przedstawiono Oznacz niektóre zestawy w aplikacji jako "opcjonalne" oraz pobrać je przy użyciu klas w <xref:System.Deployment.Application> przestrzeni nazw.|  
-|[Pobieranie zestawów na żądanie przy użyciu interfejsu API przy użyciu narzędzia Projektant wdrażania ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Wyjaśniono, jak pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
+|[Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|W tym temacie omówiono wdrażanie aplikacji ClickOnce przy użyciu narzędzia .NET Framework.|  
+|[Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Przedstawia sposób oznaczania niektórych zestawów w Twojej aplikacji w postaci "opcjonalny" oraz jak pobierać je przy użyciu klas w <xref:System.Deployment.Application> przestrzeni nazw.|  
+|[Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące programu Visual Studio](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
- [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio — wskazówki](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Przykłady Visual Studio](../ide/visual-studio-samples.md)

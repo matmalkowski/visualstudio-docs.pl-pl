@@ -20,32 +20,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26adf9bd97e10e25402db100ebb0140917ac6143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 233088958605c5d03f5ad5ce932b63868729e6c0
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578721"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945510"
 ---
-# <a name="assignculture-task"></a>AssignCulture — Zadanie
-To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kultury identyfikator. Na przykład nazwa pliku Form1.fr fr.resx ma osadzonych kultury identyfikator "fr-fr", dlatego to zadanie spowoduje utworzenie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie również tworzy listę nazw plików z kulturą usunięte z nazwy pliku.  
+# <a name="assignculture-task"></a>AssignCulture — zadanie
+To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kulturze identyfikatora. Na przykład, nazwa_pliku *Form1.fr-fr.resx* ma identyfikator "fr-fr", embedded kultury, dlatego to zadanie powoduje wygenerowanie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie tworzy także listę nazw plików z kulturą usunięte z nazwy pliku.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry `AssignCulture` zadań.  
+ W poniższej tabeli opisano parametry `AssignCulture` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AssignedFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera listę elementów odebranych w `Files` parametru z `Culture` wpis metadanych dodane do każdego elementu.<br /><br /> Jeśli element przychodzącego z `Files` zawiera już parametr `Culture` wpis metadanych, oryginalny wpis metadanych jest używany.<br /><br /> Przypisuje tylko zadania `Culture` wpis metadanych, jeśli nazwa pliku zawiera identyfikator prawidłową kulturą. Identyfikator kultury musi należeć do zakresu od ostatnich dwóch kropki w nazwie pliku.|  
-|`AssignedFilesWithCulture`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera podzbiór elementów z `AssignedFiles` parametr, który ma `Culture` wpis metadanych.|  
-|`AssignedFilesWithNoCulture`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera podzbiór elementów z `AssignedFiles` parametr, który nie ma `Culture` wpis metadanych.|  
-|`CultureNeutralAssignedFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera tę samą listę elementów, które jest tworzone w `AssignedFiles` parametru, chyba że kultura usunięte z nazwy pliku.<br /><br /> Zadanie tylko usuwa kultura od nazwy pliku, jeśli jest identyfikator prawidłową kulturą.|  
-|`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa listę plików z nazwy kultury osadzonych można przypisać do kultury.|  
+|`AssignedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera listę elementów trafiła `Files` parametru za pomocą `Culture` wpis metadanych dodany do każdego elementu.<br /><br /> Jeśli przychodzący element z `Files` zawiera już parametr `Culture` wpis metadanych, oryginalnym wpis metadanych jest używany.<br /><br /> Przypisuje tylko zadania `Culture` wpis metadanych, jeśli nazwa pliku zawiera identyfikator prawidłową kulturą. Identyfikator kultury musi wynosić od ostatnie dwie kropki w nazwie pliku.|  
+|`AssignedFilesWithCulture`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera podzestaw elementów z `AssignedFiles` parametr, który ma `Culture` wpis metadanych.|  
+|`AssignedFilesWithNoCulture`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera podzestaw elementów z `AssignedFiles` parametrów, które nie mają `Culture` wpis metadanych.|  
+|`CultureNeutralAssignedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera listę tych samych elementów, które są generowane w `AssignedFiles` parametru, z wyjątkiem z kulturą usunięte z nazwy pliku.<br /><br /> Zadanie powoduje usunięcie tylko kultury na podstawie nazwy pliku, gdy jest to identyfikator prawidłową kulturą.|  
+|`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa listę plików z osadzonych kultury nazwy kultury, aby przypisać.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład wykonuje `AssignCulture` zadań z `ResourceFiles` Kolekcja elementów.  
+ Poniższy przykład wykonuje `AssignCulture` zadań za pomocą `ResourceFiles` elementu kolekcji.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -70,15 +70,15 @@ To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg
 </Project>  
 ```  
   
- W poniższej tabeli opisano wartości elementów wyjściowych po wykonaniu zadań. Metadane elementu jest wyświetlany w nawiasach po elemencie.  
+ W poniższej tabeli opisano wartości elementów danych wyjściowych po wykonaniu zadania. Metadane elementu jest wyświetlany w nawiasie po elemencie.  
   
-|Kolekcji elementów|Spis treści|  
+|Kolekcja elementów|Spis treści|  
 |---------------------|--------------|  
 |`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (Brak dodatkowych metadanych)|  
 |`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (Brak dodatkowych metadanych)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`nie dodatkowe metadane)|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

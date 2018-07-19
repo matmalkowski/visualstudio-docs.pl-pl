@@ -14,20 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e512ad9f932e34a6ddd95e165b116465aa359a09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486169788ad4533f5d45bf48c979ce3d0f5f7920
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568327"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081062"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadane elementu w przetwarzaniu wsadowym obiektów docelowych
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość wykonywania analizy zależności w danych wejściowych i wyjściowych elementu docelowego kompilacji. Jeśli okaże się, że wejściowych i wyjściowych elementu docelowego są aktualne, element docelowy zostanie pominięta i kompilacji będzie kontynuować. `Target` Użyj elementów `Inputs` i `Outputs` atrybutów, aby określić elementy, aby sprawdzić podczas analizy zależności.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zdolność przeprowadzania analizy zależności wejść i wyjść docelowej kompilacji. Jeśli okaże się, że dane wejściowe lub wyjściowe, obiektu docelowego są aktualne, element docelowy zostanie pominięta, a kompilacja będzie kontynuowana. `Target` Użyj elementów `Inputs` i `Outputs` atrybutów, aby określić elementy, aby sprawdzić podczas analizy zależności.  
   
- Jeśli element docelowy zawiera zadania, które wykorzystuje wsadów elementów jako danych wejściowych lub wyjściowych, `Target` elementu docelowego należy użyć, przetwarzanie wsadowe w jego `Inputs` lub `Outputs` atrybutów w celu włączenia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pomijania partie elementy, które są już aktualne.  
+ Jeśli obiekt docelowy zawiera zadania, które używa elementy w partii jako danych wejściowych lub wyjściowych, `Target` elementu docelowego należy używać, przetwarzanie wsadowe w jego `Inputs` lub `Outputs` atrybutów, aby umożliwić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do pominięcia instancji elementów, które są już aktualne.  
   
-## <a name="batching-targets"></a>Przetwarzanie wsadowe obiektów docelowych  
- Poniższy przykład zawiera listy elementów o nazwie `Res` które jest podzielony na dwie partie na podstawie `Culture` metadanych elementu. Każdy z tych instancji są przekazywane do `AL` zadania, które tworzy zestawu wyjściowego dla każdej partii. Za pomocą przetwarzanie wsadowe `Outputs` atrybutu `Target` elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można określić, czy jest każdej poszczególnych partii aktualne przed uruchomieniem obiektu docelowego. Bez użycia w przetwarzaniu wsadowym obiektów docelowych, zarówno partie elementów może działać przez zadanie każdorazowego wykonano obiektu docelowego.  
+## <a name="batch-targets"></a>Cele usługi Batch  
+ Poniższy przykład zawiera listę elementów o nazwie `Res` który jest podzielony na dwie partie na podstawie `Culture` metadanych elementu. Każda z tych partii jest przekazywana do `AL` zadania, które tworzy zestaw danych wyjściowych dla każdej partii. Za pomocą adapterów przetwarzania wsadowego na `Outputs` atrybutu `Target` elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można określić, czy jest każdej partii poszczególnych aktualne przed uruchomieniem element docelowy. Bez użycia przetwarzaniu wsadowym obiektów docelowych, zarówno partie elementów zostałoby uruchomione przez zadanie podrzędne, za każdym razem, gdy element docelowy został wykonany.  
   
 ```xml  
 <Project  
@@ -67,8 +67,8 @@ ms.locfileid: "31568327"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
- [TARGET — Element (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Metadane elementu w przetwarzaniu wsadowym zadań](../msbuild/item-metadata-in-task-batching.md)

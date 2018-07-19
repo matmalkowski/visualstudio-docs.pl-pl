@@ -18,34 +18,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564551"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077730"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce
-Podczas ustawiania uprawnień zabezpieczeń dla aplikacji ClickOnce kod dostępu, należy uruchomić podstawowy zestaw uprawnień na **zabezpieczeń** strony **projektanta projektu**.  
+Podczas ustawiania dostępu kodu uprawnień zabezpieczeń dla aplikacji ClickOnce, należy uruchomić podstawowy zestaw uprawnień na **zabezpieczeń** strony **projektanta projektu**.  
   
- W większości przypadków można także **Internet** strefy, który zawiera ograniczony zestaw uprawnień, lub **lokalny Intranet** strefy, który zawiera większy zestaw uprawnień. Jeśli aplikacja wymaga uprawnień niestandardowych, możesz to zrobić, wybierając **niestandardowych** strefy zabezpieczeń. Aby uzyskać więcej informacji o ustawianiu uprawnień niestandardowych, zobacz [porady: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ W większości przypadków można także **Internet** strefy, który zawiera ograniczony zestaw uprawnień lub **lokalny Intranet** strefy, który zawiera większy zestaw uprawnień. Jeśli aplikacja wymaga uprawnień niestandardowych, możesz to zrobić, wybierając **niestandardowe** strefy zabezpieczeń. Aby uzyskać więcej informacji na temat ustawiania uprawnień niestandardowych, zobacz [porady: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
-### <a name="to-set-a-security-zone"></a>Aby ustawić strefy zabezpieczeń  
+### <a name="to-set-a-security-zone"></a>Aby ustawienie strefy zabezpieczeń  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
 2.  Kliknij przycisk **zabezpieczeń** kartę.  
   
 3.  Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
   
-4.  Wybierz **jest częściowo zaufanych aplikacji** przycisk opcji.  
+4.  Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
   
-     Formanty w **uprawnień zabezpieczeń ClickOnce** sekcji są włączone.  
+     Formanty w **uprawnienia zabezpieczeń aplikacji ClickOnce** sekcji są włączone.  
   
-5.  W **strefy aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.  
+5.  W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Porady: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

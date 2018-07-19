@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ce583ddfb33e48898f3bb98d79b721209ccb43
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326842"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081023"
 ---
-# <a name="item-element-msbuild"></a>Item — Element (MSBuild)
-Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `ItemGroup` elementu.  
+# <a name="item-element-msbuild"></a>Item — element (MSBuild)
+Zawiera element zdefiniowany przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `ItemGroup` elementu.  
 
  \<Project>  
  \<ItemGroup>  
@@ -45,9 +45,9 @@ Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy elemen
 ```  
 
 ## <a name="specify-metadata-as-attributes"></a>Określ metadanych jako atrybuty
-W MSBuild 15.1 lub nowszym wszystkich metadanych o nazwie, która nie koliduje to z bieżącą listę atrybutów opcjonalnie może zostać wyrażona jako atrybut.
+W MSBuild 15.1 lub nowszym żadnych metadanych o nazwie, który jest zgodny z bieżącą listę atrybutów, opcjonalnie może być wyrażona jako atrybut.
 
-Na przykład aby określić listę pakietów NuGet, należy zwykle użyje przypominać następującą składnię.
+Na przykład aby określić listę pakietów NuGet, należy zwykle użyć podobną do następującej składni.
 
 ```xml
 <ItemGroup>
@@ -72,36 +72,36 @@ Teraz, jednak można przekazać `Version` metadanych jako atrybut, taki jak nast
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Include`|Atrybut opcjonalny.<br /><br /> Plik lub symbol wieloznaczny w celu dołączenia do listy elementów.|  
-|`Exclude`|Atrybut opcjonalny.<br /><br /> Plik lub symbolu wieloznacznego, aby wykluczyć z listy elementów.|  
+|`Include`|Atrybut opcjonalny.<br /><br /> Plik lub symbol wieloznaczny, które mają zostać objęte listy elementów.|  
+|`Exclude`|Atrybut opcjonalny.<br /><br /> Plik lub symbol wieloznaczny, które mają zostać wykluczone z listy elementów.|  
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
-|`Remove`|Atrybut opcjonalny.<br /><br /> Plik lub symbolu wieloznacznego, aby usunąć z listy elementów.<br /><br />|  
-|`KeepDuplicates`|Atrybut opcjonalny.<br /><br /> Określa, czy element należy dodać do grupy docelowej, jeśli jest identyczna z istniejącym elementem. Jeśli element źródłowy i docelowy mają taki sam `Include` wartość, ale różne metadane, element jest dodany, nawet jeśli `KeepDuplicates` ma ustawioną wartość `false`. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy został określony dla elementu w `ItemGroup` w `Target`.|  
-|`KeepMetadata`|Atrybut opcjonalny.<br /><br /> Metadane dla elementów źródła do dodania do elementów docelowych. Metadane, których nazwy zostały określone na liście rozdzielanej średnikami są przenoszone z elementu źródłowego do elementu docelowego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy został określony dla elementu w `ItemGroup` w `Target`.|  
-|`RemoveMetadata`|Atrybut opcjonalny.<br /><br /> Metadane dla elementów źródła nie są przenoszone do elementów docelowych. Wszystkie metadane są przesyłane z elementu źródłowego do elementu docelowego, z wyjątkiem metadanych których nazwy są zawarte w Rozdzielana średnikami lista nazw. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy został określony dla elementu w `ItemGroup` w `Target`.|  
-|`Update`|Atrybut opcjonalny. (Dostępne tylko w przypadku projektów .NET Core w Visual Studio 2017 lub nowszej).<br /><br /> Umożliwia modyfikowanie metadanych pliku zawierającego przy użyciu glob.<br /><br />  Ten atrybut jest prawidłowy tylko wtedy, gdy został określony dla elementu w `ItemGroup` nie jest to w `Target`.|  
+|`Remove`|Atrybut opcjonalny.<br /><br /> Plik lub symbol wieloznaczny, aby usunąć z listy elementów.<br /><br />|  
+|`KeepDuplicates`|Atrybut opcjonalny.<br /><br /> Określa, czy element należy dodać do grupy docelowej, gdy jest identyczna z istniejącym elementem. Jeśli w elemencie źródłowym i docelowym mają taką samą `Include` wartość, ale innych metadanych, element jest dodano nawet wtedy, gdy `KeepDuplicates` ustawiono `false`. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy jest określona dla elementu w `ItemGroup` w `Target`.|  
+|`KeepMetadata`|Atrybut opcjonalny.<br /><br /> Metadane dla elementów źródła do dodania do elementów docelowych. Tylko metadane, których nazwy zostały określone w liście rozdzielanej średnikami przenosi się z elementu źródłowego do elementu docelowego. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy jest określona dla elementu w `ItemGroup` w `Target`.|  
+|`RemoveMetadata`|Atrybut opcjonalny.<br /><br /> Metadane dla elementów źródła nie są przenoszone do elementów docelowych. Wszystkie metadane są przesyłane z elementu źródłowego do docelowego elementu z wyjątkiem metadanych których nazwy są zawarte w rozdzieloną średnikami listę nazw. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).<br /><br /> Ten atrybut jest prawidłowy tylko wtedy, gdy jest określona dla elementu w `ItemGroup` w `Target`.|  
+|`Update`|Atrybut opcjonalny. (Dostępne tylko dla projektów .NET Core w programie Visual Studio 2017 lub nowszego).<br /><br /> Umożliwia modyfikowanie metadanych pliku, który został dołączony przy użyciu glob.<br /><br />  Ten atrybut jest prawidłowy tylko wtedy, gdy jest określona dla elementu w `ItemGroup` nie jest w `Target`.|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Zdefiniowane przez użytkownika elementu metadanych klucz, który zawiera wartość metadanych elementu. Może wynosić zero lub więcej `ItemMetadata` elementy w elemencie.|  
+|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Element zdefiniowany przez użytkownika klucza metadanych, który zawiera wartość metadanych elementu. Może wynosić zero lub więcej `ItemMetadata` elementy w elemencie.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element GROUPING dla elementów.|  
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element grupujący elementy.|  
 
 ## <a name="remarks"></a>Uwagi  
- `Item` elementy zdefiniować dane wejściowe w systemie kompilacji i są zgrupowane w kolekcji elementów na podstawie ich nazw kolekcji zdefiniowane przez użytkownika. Te kolekcji elementów mogą być używane jako parametry w celu [zadania](../msbuild/msbuild-tasks.md), który umożliwia poszczególnych elementów w kolekcjach wykonaj kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ `Item` elementy definiowania danych wejściowych do systemu kompilacji i są grupowane w kolekcji elementów na podstawie ich nazw kolekcji zdefiniowanych przez użytkownika. Te kolekcje elementów mogą być używane jako parametry dla [zadania](../msbuild/msbuild-tasks.md), które używają poszczególnych elementów w kolekcjach wykonaj kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
 
- Przy użyciu notacji `@(` *Mojtyp* `)` umożliwia kolekcję elementów typu *Mojtyp* można rozszerzyć do Rozdzielana średnikami lista ciągów i przekazany do parametru. Jeśli parametr jest typu `string`, wartość parametru jest lista elementów, oddzielając je średnikami. Jeśli parametr jest tablicą ciągów (`string[]`), a następnie każdy element zostaną wstawione do tabeli na podstawie lokalizacji średnikami. Jeśli parametr zadania jest typu <xref:Microsoft.Build.Framework.ITaskItem> `[]`, wartość jest zawartość kolekcji elementów wraz z wszystkich metadanych dołączony. Aby ograniczyć każdego elementu przy użyciu znaków innych niż średnika, należy użyć składni `@(` *Mojtyp*`, '`*separatora*`')`.  
+ Przy użyciu notacji @(\<myType >) umożliwia zbieranie elementów typu \<myType > można rozszerzyć do rozdzieloną średnikami listę ciągów i przekazanego do parametru. Jeśli parametr jest typu `string`, a następnie wartość parametru znajduje się lista elementów, oddzielając je średnikami. Jeśli parametr jest tablicą ciągów (`string[]`), a następnie każdy element jest wstawiany do tablicy, na podstawie lokalizacji średnikami. Jeśli parametr zadania jest typu <xref:Microsoft.Build.Framework.ITaskItem> `[]`, wartością jest zawartość kolekcji elementów wraz z wszystkich metadanych, dołączone. Aby ograniczyć każdego elementu przy użyciu znaków innych niż średnikiem, należy użyć składni @(<myType>, "<separator>").  
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat można ocenić takie jak symbole wieloznaczne `*` i `?` i cykliczne symboli wieloznacznych, takich jak `/**/*.cs`. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparatu może służyć do oceny symboli wieloznacznych takich jak `*` i `?` i symboli wieloznacznych cykliczne, takie jak  */ \* \* / \*.cs*. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
 
 ## <a name="examples"></a>Przykłady  
- Poniższy przykładowy kod przedstawia sposób zadeklarować dwóch elementów typu `CSFile`. Drugi zadeklarowany element zawiera metadanych, który ma `MyMetadata` ustawioną `HelloWorld`.  
+ Poniższy przykład kodu pokazuje sposób deklarowania dwóch elementów tego typu `CSFile`. Drugi zadeklarowany element zawiera metadane, który ma `MyMetadata` równa `HelloWorld`.  
 
 ```xml  
 <ItemGroup>  
@@ -111,7 +111,7 @@ Teraz, jednak można przekazać `Version` metadanych jako atrybut, taki jak nast
     </CSFile>  
 </ItemGroup>  
 ```  
-Poniższy przykładowy kod przedstawia sposób użycia `Update` atrybut do zmodyfikowania metadanych w pliku o nazwie somefile.cs, który został dostarczony przez glob. (Dostępne tylko w przypadku projektów .NET Core w Visual Studio 2017 lub nowszej).
+Poniższy przykład kodu pokazuje sposób użycia `Update` atrybutu, aby zmodyfikować metadane w pliku o nazwie *somefile.cs* wchodził za pośrednictwem glob. (Dostępne tylko dla projektów .NET Core w programie Visual Studio 2017 lub nowszego).
 
 ```xml  
 <ItemGroup>
@@ -122,7 +122,7 @@ Poniższy przykładowy kod przedstawia sposób użycia `Update` atrybut do zmody
 ```  
 
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Elementy](../msbuild/msbuild-items.md)   
  [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

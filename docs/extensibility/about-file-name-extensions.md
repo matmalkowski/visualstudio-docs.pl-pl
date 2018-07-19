@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c940319cd0ce3204f6dd9bb62e731de49b8baac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd181bb7daca21ff263dcb7989a0aecbef3ed278
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108472"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081699"
 ---
 # <a name="about-file-name-extensions"></a>Temat rozszerzeń nazw plików
-Podczas rejestrowania rozszerzenia pliku pakiet VSPackage, należy ją skojarzyć z wersją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest to ważne w przypadku więcej niż jedną wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany na komputerze.  
+Po zarejestrowaniu rozszerzenie pliku pakietu VSPackage, należy ją skojarzyć z wersją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest to ważne, jeśli więcej niż jedna wersja [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany na komputerze.  
   
- Rozszerzenia plików do VSPackages są rejestrowane w kluczu HKEY_CLASSES_ROOT o wartości domyślne, wskazujące skojarzony identyfikator programowy (ProgID).  
+ Rozszerzenia plików dla pakietów VSPackage są zarejestrowane w obszarze **HKEY_CLASSES_ROOT** klucza z wartością domyślną, który wskazuje na skojarzony identyfikator programowy (ProgID).  
   
- Poniżej przedstawiono przykład informacji o rejestracji dla rozszerzenia pliku .vcproj:  
+ W poniższym przykładzie przedstawiono informacje o rejestracji dla *.vcproj* rozszerzenie pliku:  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -34,10 +34,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"   
 ```  
   
- Pliki skojarzone z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi mieć określonej wersji ProgID, takich jak `VisualStudio.vcproj.8.0`, aby zezwolić side-by-side instalacji produktu do obsługi pliku rozszerzenia skojarzenia między wersjami. ProgID określonej wersji można też użyć zleceń standardowych, takich jak edytowanie otwarty i tak dalej, bez obawy, zastępowanie lub zastąpieniem przez inną aplikację lub wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Plików skojarzonych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi mieć określonej wersji ProgID, takich jak `VisualStudio.vcproj.8.0`. Numerów wersji ProgID umożliwia instalacje side-by-side produktu do utrzymania skojarzenia rozszerzeń plików między wersji produktu. ProgID specyficzny dla wersji pozwala również na używanie zleceń standardowych, takie jak edytowanie otwarte i tak dalej, bez obawy, zastępowanie lub zastąpieniem przez inne aplikacje lub wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- W niektórych przypadkach ProgID skojarzone z rozszerzeniem pliku nie powinna być zmieniana. Na przykład identyfikator ProgID dla rozszerzenia pliku .htm (progid = htmlfile) jest kodowany w wielu miejscach w systemie operacyjnym i jest powszechnie znane i używany w skojarzenie z pliki htm i HTML.  
+ W niektórych przypadkach także identyfikator ProgID skojarzone z rozszerzeniem pliku nie powinna być zmieniana. Na przykład identyfikatora programu *.htm* rozszerzenie pliku (progid = htmlfile) jest ustalony w wielu miejscach w systemie operacyjnym, a jest powszechnie znane i używane w połączeniu z *.htm* i *.html* plików.  
   
-## <a name="see-also"></a>Zobacz też  
- [Rejestrowanie rozszerzeń nazw plików na potrzeby wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [Określanie programów obsługi plików dla rozszerzeń nazw plików](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

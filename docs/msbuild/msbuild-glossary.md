@@ -10,164 +10,164 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01020148db1c5d34b4108d2c7ab25aa74fb1b308
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575081"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078758"
 ---
 # <a name="msbuild-glossary"></a>Słownik programu MSBuild
-Te terminy są używane do opisywania aparat kompilacji firmy Microsoft (MSBuild) i jej składniki.  
+Te warunki są używane do opisywania aparatu Microsoft Build Engine (MSBuild) i jego składników.  
   
 ## <a name="glossary"></a>Słownik  
  AssemblyFoldersEx  
- Lokalizacji rejestru, w którym dostawców innych firm przechowywać ścieżki dla każdej wersji framework, które obsługują one, gdzie można sprawdzić rozpoznawanie czasu projektowania można odnaleźć zestawów odwołań.  
+ Lokalizacja rejestru, której od innych dostawców przechowywać ścieżki dla każdej wersji platformy obsługują one, gdzie rozpoznawania czasu projektowania można sprawdzić szukać zestawów odwołań.  
   
  przetwarzanie wsadowe  
- Przetwarzanie wsadowe oznacza podział elementów na różne kategorie znany jako *partie*, na podstawie metadanych elementu i ponownie uruchomić docelowego lub zadania raz za pomocą każdej partii. Tworzenie plików wsadowych jest odpowiednikiem MSBuild--pętli konstrukcji. Aby uzyskać więcej informacji, zobacz [wsadowe](../msbuild/msbuild-batching.md).  
+ Przetwarzanie wsadowe oznacza, że podział elementów na różne kategorie, znane jako *partie*zgodnie z metadanych elementu, a następnie uruchamiając docelowego lub zadanie raz przy użyciu każdej partii. Przetwarzanie wsadowe jest odpowiednikiem MSBuild--pętli konstrukcji. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
   
  zakres kompilacji  
- Zakres kompilacji opisuje obiekt MSBuild, na przykład właściwością globalną, widocznego potencjalnie do projektu i do żadnego projektu podrzędne, które są tworzone w kompilacji wielu projektów.  
+ Zakres kompilacji opisuje obiekt, MSBuild, na przykład właściwość globalną, potencjalnie widocznej na projekt i żadne projekty podrzędne, które są tworzone w kompilacji wielu projektów.  
   
- projektu podrzędnego  
+ Projekt podrzędny  
  Zobacz *projektu, podrzędne*.  
   
  Warunek  
- Wiele elementów MSBuild można zdefiniować warunkowo; oznacza to, że `Condition` atrybut występuje w elemencie. Zawartość warunkowego elementy są ignorowane, chyba że wyrażenie `true`. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).  
+ Warunkowo; można zdefiniować wiele elementów MSBuild oznacza to, że `Condition` atrybutu jest wyświetlany w elemencie. Zawartość elementów warunkowych jest ignorowana, chyba, że warunek to `true`. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).  
   
  Definicja, element  
- Zobacz *definicji elementu*.  
+ Zobacz *elementu definicji*.  
   
  Dodaj element  
- Podczas fazy wykonywania kompilacji można utworzony lub zmodyfikowany przez zadania, które mają podrzędnych elementów `Output` elementów, które mają `ItemName` atrybutu. Zadanie jest nazywany "Emituj" nowych elementów.  
+ W fazie wykonywania kompilacji elementów można utworzone lub zmodyfikowane przez zadania, które mają podrzędnych `Output` elementy, które mają `ItemName` atrybutu. Zadanie jest nazywany "emisji" nowe elementy.  
   
- Emituj właściwości  
- Podczas fazy wykonywania kompilacji właściwości można utworzyć lub zmodyfikować przez zadania, które mają podrzędnych `Output` elementów, które mają `PropertyName` atrybutu. Zadanie jest nazywany "Emituj" nowej właściwości.  
+ Dodaj właściwość  
+ W fazie wykonanie procesu kompilacji, właściwości mogą utworzone lub zmodyfikowane przez zadania, które mają podrzędnych `Output` elementy, które mają `PropertyName` atrybutu. Zadanie jest nazywany "emisji" nowej właściwości.  
   
  Faza oceny  
- Obliczanie jest pierwszą fazę kompilacji projektu. Wszystkie właściwości i elementy są oceniane w kolejności, w jakiej występują w projekcie. Zaimportowane projekty są oceniane po ich napotkaniu w projekcie. Elementy docelowe i zadania nie zostaną uruchomione do fazy wykonywania i żadnych właściwości ani elementy będą one zadeklarować lub Emituj są ignorowane podczas obliczania.  
+ Ocena jest pierwszą fazę kompilacji projektu. Wszystkie właściwości i elementy są obliczane w kolejności, w jakiej występują w projekcie. Importowany projektów są oceniane, po ich napotkaniu w projekcie. Elementy docelowe i zadania nie są uruchamiane, dopóki fazę wykonywania i właściwości lub elementy będą one zadeklarować lub emisji, są ignorowane podczas obliczania wartości.  
   
- fazy wykonywania  
- Wykonanie jest drugiej fazy kompilacji projektu. Wybrane elementy są tworzone i zadania są uruchamiane. Utworzone lub zmodyfikowane właściwości i elementów w porównaniu z wartościami oceny.  
+ Faza wykonania  
+ Wykonanie jest drugiej fazy kompilacji projektu. Wybrane elementy są tworzone i wykonywania zadań. Utworzone lub zmodyfikowane właściwości i elementy w porównaniu do ich wartości oceny.  
   
- Funkcja, właściwości  
- Zobacz *funkcja właściwości*.  
+ Funkcja, właściwość  
+ Zobacz *funkcji właściwości*.  
   
- działanie, element  
- Zobacz opis funkcji elementu.  
+ Funkcja elementu  
+ Można znaleźć elementu funkcji.  
   
  element  
- Elementy są dane wejściowe w systemie kompilacji i są podzielone na na podstawie ich nazw elementu typów elementów. Elementy reprezentują zazwyczaj pliki. Ponieważ elementy są reprezentowane przez typ elementu należą one do warunków *elementu* i *wartość elementu* mogą być używane zamiennie. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ Elementy to wejścia do systemu kompilacji i są grupowane w typy elementów na podstawie ich nazw elementu. Elementy zazwyczaj reprezentują pliki. Ponieważ elementy są reprezentowane przez typ elementu należą one do warunków *elementu* i *wartość elementu* mogą być używane zamiennie. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
- definicje elementów  
- Element definicji grupy zawierają definicje elementów, które Dodaj domyślny metadanych do dowolnego typu elementu. Takich jak metadane dobrze znanego metadanych domyślny jest skojarzony z wszystkimi elementami typu określony element. Domyślne metadanych może być jawnie przesłonięte w definicji elementu. Aby uzyskać więcej informacji, zobacz [definicje elementów](../msbuild/item-definitions.md).  
+ definicja elementu  
+ Grupach definicji elementów zawierają definicji elementów, które dodawać metadane domyślne do dowolnego typu elementu. Podobnie jak metadane dobrze znanego metadanych domyślny jest skojarzone z wszystkimi elementami typu określonego elementu. Metadane domyślne można jawnie przesłonić w definicji elementu. Aby uzyskać więcej informacji, zobacz [definicje elementów](../msbuild/item-definitions.md).  
   
  Funkcja Item  
- Funkcje elementów uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i szybsze niż w pętli elementy. Brak funkcji do manipulowania ścieżki elementu i ciągów. Aby uzyskać więcej informacji, zobacz [funkcje elementów](../msbuild/item-functions.md)  
+ Funkcje elementów uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i są szybsze niż elementy w pętli. Dostępne są funkcje do manipulowania ścieżki elementu i ciągów. Aby uzyskać więcej informacji, zobacz [elementu funkcji](../msbuild/item-functions.md)  
   
  metadane elementu  
  Zobacz *metadanych elementu*.  
   
  Typ elementu  
- Typy elementów są nazywane listę elementów, które mogą być używane jako parametry dla zadania. Zadań użyj wartości elementu, aby wykonać kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
  metadane, element  
- Metadane elementu jest kolekcją par nazwa wartość, skojarzony z elementem. Metadane informacje opisowe dla elementu i jest opcjonalny, z wyjątkiem dobrze znanego metadanych. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ Metadane elementu jest kolekcją pary nazwa wartość, który jest skojarzony z elementem. Metadane informacje opisowe dla elementu i jest opcjonalny, z wyjątkiem dobrze znanych metadanych. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
  metadane dobrze znanego  
- Metadane dobrze znanego są metadane elementu tylko do odczytu, który został zainicjowany przy użyciu wstępnie zdefiniowanych wartości. Metadane dobrze znanego informacje opisowe dla elementu, który odwołuje się do pliku. Na przykład wartość dobrze znanego metadanych o nazwie `FullPath` jest pełną ścieżką do pliku. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ Metadane dobrze znanego są metadane elementu tylko do odczytu, który jest inicjowany przy użyciu wstępnie zdefiniowanych wartości. Metadane dobrze znanego informacje opisowe dla elementu, który odwołuje się do pliku. Na przykład, wartość dobrze znanych metadanych o nazwie `FullPath` jest pełną ścieżką do pliku. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
   
  przeznaczanie dla wielu platform  
- Zdolność do aplikacji lub zestawu projekt pod kątem wielu różnych CLR i platform z MSBuild i Visual Studio.  
+ Zdolność do aplikacji lub zestawu projekt przeznaczony dla wielu różnych CLR i struktury z programu MSBuild i Visual Studio.  
   
  Profil  
- Podzbiór pełna platformy. Służy to zminimalizować ilość, która musi zostać pobrana do komputera.  
+ Podzbiór pełny framework. Służy to zminimalizować ilość, które muszą zostać pobrane na maszynę.  
   
  plik projektu  
- Plik projektu zawiera skrypt programu MSBuild, który kontroluje kompilacji. Pliki projektu mają zwykle rozszerzenie pliku, który kończy się wyrazem "proj", takie jak pliku .csproj lub .vbproj. Pliki projektu można zaimportować właściwości plików i pliki docelowe.  
+ Plik projektu zawiera skrypt programu MSBuild, który kontroluje kompilacji. Pliki projektu zazwyczaj mają rozszerzenie pliku, która kończy się *proj*, takich jak *.csproj* lub *.vbproj*. Pliki projektu mogą importować pliki właściwości i pliki docelowe.  
   
  property  
- Właściwość jest pary klucz wartość, która jest używana do sterowania procesu kompilacji. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ Właściwości to pary klucz wartość, która służy do kontrolowania procesu kompilacji. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
- Właściwość, środowiska  
- Właściwość środowiska jest właściwością, która jest automatycznie ustawiana na wartość zmiennej środowiskowej systemu, który ma taką samą nazwę. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ właściwości, środowisko  
+ Właściwość środowiska jest właściwością, która jest inicjowana automatycznie wartość zmiennej środowiskowej systemu, który ma taką samą nazwę. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
  właściwości pliku  
- Plik właściwości to pliku projektu, który zawiera głównie właściwości grup i grup, do których prowadzą kompilacji. Konwencja musi on .props rozszerzenia pliku. Właściwość pliki zwykle są importowane na początku projektu skojarzonych plików.  
+ Plik właściwości jest plik projektu, który zawiera głównie właściwości grup i grup, do których prowadzą kompilacji. Zgodnie z Konwencją ma rozszerzenie pliku *.props*. Pliki właściwości zwykle są importowane na początku pliki skojarzonego projektu.  
   
  Właściwość, funkcja  
- Funkcja właściwości jest systemu właściwości lub metody, który może służyć do oceny skrypty programu MSBuild. Właściwość metod może służyć do odczytu z czasem systemowym, porównywanie ciągów dopasowanie wyrażeń regularnych i wykonywać inne akcje. Aby uzyskać więcej informacji, zobacz [funkcje właściwości](../msbuild/property-functions.md).  
+ Funkcja właściwości jest system właściwości lub metody, który może służyć do oceny, skryptów programu MSBuild. Metody właściwości mogą służyć do odczytywanie godziny systemowej, porównywanie ciągów, porównywanie wyrażeń regularnych i wykonywanie innych czynności. Aby uzyskać więcej informacji, zobacz [funkcji właściwości](../msbuild/property-functions.md).  
   
- Funkcja właściwości, zagnieżdżone  
+ właściwości funkcji zagnieżdżonej  
  Funkcje właściwości mogą być łączone do formularza bardziej złożone funkcje. Na przykład  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
- Aby uzyskać więcej informacji, zobacz [funkcje właściwości](../msbuild/property-functions.md).  
+ Aby uzyskać więcej informacji, zobacz [funkcji właściwości](../msbuild/property-functions.md).  
   
  właściwości globalne  
- Właściwość globalna jest pary klucz wartość, która jest używana do sterowania procesu kompilacji. Globalne właściwości są ustawiane w wierszu polecenia lub przy użyciu `Properties` atrybutu [zadanie programu MSBuild](../msbuild/msbuild-task.md)i nie można zmodyfikować kompilacji w fazie oceny. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ Globalne właściwości to pary klucz wartość, która służy do kontrolowania procesu kompilacji. Globalne właściwości są ustawiane w wierszu polecenia lub przy użyciu `Properties` atrybutu [zadanie MSBuild](../msbuild/msbuild-task.md)i nie można modyfikować w fazie obliczania kompilacji. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
- właściwości lokalne  
- Właściwości lokalnej jest pary klucz wartość, która jest używana do sterowania procesu kompilacji. Termin ten jest używany tylko do odróżnienia właściwości, która nie jest właściwością globalną.  
+ właściwości lokalnej  
+ Właściwość lokalna jest parą klucz wartość, która służy do kontrolowania procesu kompilacji. Ten termin służy wyłącznie do właściwości, która nie jest właściwością globalną rozróżniania.  
   
- Właściwość, rejestru  
- Właściwość rejestru ma wartość, która jest ustawiona przy użyciu składni specjalne, które odczytuje wartość podklucza rejestru systemu. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ Właściwość, rejestr  
+ Właściwości rejestru ma wartość ustawioną przy użyciu specjalnej składni, która odczytuje wartość podklucza rejestru systemu. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
  właściwości zastrzeżone  
- Właściwości zastrzeżone jest pary klucz wartość, która jest używana do sterowania procesu kompilacji. Właściwości zastrzeżone automatycznie są inicjowane ze wstępnie zdefiniowanymi wartościami. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ Zastrzeżonych właściwości to pary klucz wartość, która służy do kontrolowania procesu kompilacji. Właściwości zastrzeżone są automatycznie inicjowane ze wstępnie zdefiniowanymi wartościami. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
  zakres projektu  
- Zakres projektu zawiera opis obiektu MSBuild, na przykład właściwości lokalnej, która jest widoczna tylko w pliku projektu zawierającego i wszystkie projekty, które importuje.  
+ Zakres projektu opisuje obiekt, MSBuild, na przykład właściwości lokalnej, która jest widoczna tylko w pliku projektu zawierającego i wszelkich projektów, które importuje.  
   
  Projekt, podrzędne  
- Projekt podrzędny jest tworzony przez zadanie programu MSBuild podczas kompilowania projektu. Ten nowy projekt jest elementem podrzędnym elementu projektu, który zawiera lub importuje docelowego, który zawiera zadanie programu MSBuild. Projektu podrzędnego dziedziczy globalnych właściwości projektu nadrzędnego, chyba że zostaną one zmienione przez `Properties` atrybutu.  
+ Projekt podrzędny jest tworzony przez zadanie programu MSBuild podczas kompilacji projektu. Ten nowy projekt jest elementem podrzędnym elementu projektu, który zawiera lub importuje docelowy, który zawiera zadania programu MSBuild. Projekt podrzędny dziedziczy globalne właściwości projektu nadrzędnego, chyba że zostaną one zmienione przez `Properties` atrybutu.  
   
- Lista redystrybucyjna  
- Listy ponownej dystrybucji: listę zestawów, które odpowiadają danym framework.  
+ Lista REDIST  
+ Lista redystrybucyjna: listę zestawów, które odnoszą się do danej struktury.  
   
  Odwołanie do zestawu  
- Zestaw, który służy do tworzenia aplikacji, w czasie projektowania. Zestaw odwołania może mieć rzeczywisty kod i interfejsów prywatnych usuwane z niej, pozostawiając tylko metadane i interfejsów publicznych.  
+ Zestaw, który jest używany w czasie projektowania, tworzenia aplikacji. Zestaw odwołania może mieć rzeczywisty kod i interfejsów prywatnych, usunąć z niego, pozostawiając tylko metadane i interfejsów publicznych.  
   
- Właściwość rejestru  
- Zobacz *właściwości, rejestru*.  
+ właściwości rejestru  
+ Zobacz *właściwości, rejestr*.  
   
- docelowy  
- Obiekt docelowy grupowanie zadań w określonej kolejności i udostępnia sekcji w pliku projektu jako punkty wejścia do procesu kompilacji. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  
+ Docelowy  
+ Obiekt docelowy grupowanie zadań w określonej kolejności i udostępnia sekcje pliku projektu jako punkty wejścia do procesu kompilacji. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  
   
- Wartość docelowa, kompilowanie  
- Zobacz obiektu docelowego, systemem.  
+ Wartość docelowa, tworzenie  
+ Zobacz obiektu docelowego, które są uruchomione.  
   
- Celem oceny  
- Z powodu kompilacji przyrostowej elementów docelowych musi zostać przeanalizowany potencjalnych zmian właściwości i elementów. Nawet jeśli pominięto element docelowy muszą być wprowadzane zmiany. Obliczenia docelowy oznacza wykonywanie analiz to i wprowadzania tych zmian. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).  
+ docelowe i ocena  
+ Ze względu na kompilację przyrostową elementów docelowych musi zostać przeanalizowany potencjalnych zmian właściwości i elementów. Nawet jeśli element docelowy jest pomijany, należy te zmiany. Oceny elementu docelowego oznacza, że wykonywanie tej analizy i wprowadzania tych zmian. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).  
   
- docelowa wykonywania  
- Wykonywanie obiektu docelowego oznacza oceny i wykonywania wszystkich zadań, które nie mają żadnych warunków lub którego warunki zwrócić wartość true. Podczas kompilacji przyrostowej elementy docelowe może być pominięte lub wykonane, ale są zawsze obliczane. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
+ docelowe i wykonywanie  
+ Element docelowy wykonywania oznacza, że jej oceny i wykonywania wszystkich zadań, które nie mają żadnych warunków lub których warunki zostaną obliczone na wartość true. Podczas kompilacji przyrostowej obiekty docelowe może być pominięty lub wykonywane, ale są zawsze obliczane. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
   
  docelowym systemem  
- Element docelowy, który zawiera warunek, który nie jest spełniony nie jest uruchamiane, oznacza to, nie ma wpływu na kompilacji. Obiekty docelowe, które są uruchamiane są wykonywane lub pominięte. W obu przypadkach sprawdzane jest elementem docelowym. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
+ Obiekt docelowy, który zawiera warunek, który zwróci wartość false nie jest uruchamiane, oznacza to, nie ma wpływu na kompilację. Obiekty docelowe, które są uruchamiane, jest wykonywany czy pomijany. W obu przypadkach element docelowy jest oceniany. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
   
- obiekt docelowy, pomijanie  
- Jeśli kompilacji przyrostowej określi, że wszystkie pliki wyjściowe są aktualne, a następnie pominięto element docelowy, oznacza to, element docelowy jest obliczane, ale nie są wykonywane zadania należące do obiektu docelowego. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
+ cel, pomijanie  
+ Jeśli kompilację przyrostową ustali, że wszystkie pliki wyjściowe są aktualne, a następnie element docelowy jest pomijany, oznacza to, element docelowy jest obliczane, ale zadania w ramach docelowej nie są wykonywane. Aby uzyskać więcej informacji, zobacz docelowych i oceny.  
   
  moniker platformy docelowej  
- Nazwę opisującą platformę (np. NETFramwork, Silverlight, itp.), wersja i profilu (na przykład klienta, serwera, itp.), który ma zostać celem.  
+ Na nazwę opisującą platformę (np. NETFramework, Silverlight, itp.), wersja i profil (na przykład klienta, serwer itp.), który ma zostać celem.  
   
  targeting pack  
- Lista zestawów, które są dystrybuowane wraz z danym framework i zestawu zestawów referencyjnych dla tej struktury.  
+ Lista zestawów, które są dystrybuowane przy użyciu danego framework i zestaw zestawów referencyjnych dla tej struktury.  
   
- plik elementów docelowych  
- Plik elementów docelowych to plik projektu, który zawiera przede wszystkim obiektów docelowych i zadań, które prowadzą kompilacji. Konwencja musi on .targets rozszerzenia pliku. Pliki docelowe zwykle są importowane z końcem okresu pliki projektu skojarzone.  
+ Plik docelowy  
+ Plik elementów docelowych to pliku projektu, który zawiera głównie elementy docelowe i zadania, które przeprowadzą kompilacji. Zgodnie z Konwencją ma rozszerzenie pliku *.targets*. Pliki docelowe zwykle są importowane z końcem pliki skojarzonego projektu.  
   
  — zadanie  
- Zadania są jednostki plik wykonywalny jest kod [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów służy do wykonywania operacji kompilacji. Na przykład zadanie może skompilować plików wejściowych lub uruchomić narzędzia zewnętrznego. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
+ Zadania to jednostki kodu wykonywalnego, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów służy do wykonywania operacji kompilacji. Na przykład zadanie może skompilować pliki wejściowe lub uruchomić narzędzie zewnętrzne. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
   
  transform  
- Transformacja jest jeden do jednego konwersji jednego elementu kolekcji do innego. Oprócz włączenia projektu do przekonwertowania kolekcji elementów, transformacji umożliwia cel, aby zidentyfikować bezpośredniego mapowania między jej danych wejściowych i wyjściowych. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
+ Przekształcenia jest konwersją jeden do jednego, jeden element kolekcji do innego. Oprócz włączenia projektu do przekonwertowania kolekcji elementów, przekształcenia umożliwia docelowego w celu identyfikowania bezpośrednie mapowanie między ich dane wejściowe i wyjściowe. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
   
  metadane dobrze znanego  
  Zobacz *metadane dobrze znanego*.  
   
-## <a name="see-also"></a>Zobacz też  
- [MSBUILD](../msbuild/msbuild.md)
+## <a name="see-also"></a>Zobacz także  
+ [MSBuild](../msbuild/msbuild.md)

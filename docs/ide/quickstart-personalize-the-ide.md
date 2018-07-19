@@ -9,41 +9,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d10a1136806f66855c51fdcd8e83fb735d9cad99
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281995"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078228"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem
 
-W przypadku tego przewodnika Szybki Start 5 – 10 min możemy dostosować motywu kolorów w Visual Studio i kolory dwóch tekstu w **Edytor tekstu**.
+W tym przewodniku Szybki Start 5 – 10 minut możemy dostosować motyw kolorów programu Visual Studio i dwóch kolorów tekstu w edytorze tekstów.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
-## <a name="set-the-color-theme"></a>Ustaw motywu kolorów
+## <a name="set-the-color-theme"></a>Ustaw motyw kolorów
 
-Nosi nazwę domyślny motyw kolorów dla programu Visual Studio 2017 **Blue**. Teraz Zmień, aby **ciemny**.
+Motyw domyślny dla interfejsu użytkownika w Visual Studio 2017 jest nazywany **niebieski**. Zmieńmy go do **ciemny**.
 
-1. Na pasku menu wybierz **narzędzia** > **opcje**.
+1. Na pasku menu, czyli wiersz menu, takich jak **pliku** i **Edytuj**, wybierz **narzędzia** > **opcje**.
 
-1. Na **środowiska** > **ogólne** Strona opcji, zmień **motywu kolorów** zaznaczenie, aby **ciemny**, a następnie wybierz pozycję **OK**.
+1. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
 
-   Motyw kolorów dla całego środowiska IDE jest zmieniana na **ciemny**.
+   Motyw kolorów dla całego programu Visual Studio środowiska programistycznego (IDE) jest zmieniana na **ciemny**.
 
-   ![VS ciemnego motywu](media/quickstart-personalize-dark-theme.png)
+   ![W PORÓWNANIU z motywu ciemny](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Można zainstalować dodatkowe kompozycje wstępnie zdefiniowanych przez zainstalowanie **Visual Studio kolor motywu edytora** z [programu Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane w **motywu kolorów** listy rozwijanej.
+> Można zainstalować dodatkowe predefiniowane motywy, instalując **Edytor motywów kolorystycznych programu Visual Studio** z [witryny marketplace programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** listy rozwijanej.
 
-## <a name="change-text-color"></a>Zmiana koloru tekstu
+## <a name="change-text-color"></a>Zmienianie koloru tekstu
 
-Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pierwsze umożliwia otwieranie pliku XML, aby wyświetlić domyślne kolory.
+Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Najpierw utwórz nowy plik XML, aby wyświetlić domyślne kolory.
 
-1. Na pasku menu wybierz **pliku** > **nowy** > **pliku**.
+1. Na pasku menu wybierz **pliku** > **New** > **pliku**.
 
-1. W **nowy plik** okna dialogowego, w obszarze **ogólne** kategorii, wybierz **pliku XML**, a następnie wybierz pozycję **Otwórz**.
+1. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **pliku XML**, a następnie wybierz **Otwórz**.
 
 1. Wklej następujący kod XML poniżej wiersza, który zawiera `<?xml version="1.0" encoding="utf-8"?>`.
 
@@ -73,34 +73,34 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pi
    </Catalog>
    ```
 
-   Zwróć uwagę, że numery wierszy są kolor niebieski turkusowy i atrybutów XML są jasny kolor niebieski. Zamierzamy zmienić kolor tekstu dla tych elementów.
+   Zauważ, że numery wierszy są kolor niebieski turkusowy i atrybutów XML (takie jak `id="bk101"`) są jasny kolor niebieski. Zamierzamy zmianę koloru tekstu dla tych elementów.
 
-   ![Kolor czcionki pliku XML](media/quickstart-personalize-xml-file.png)
+   ![Kolory czcionek w pliku XML](media/quickstart-personalize-xml-file.png)
 
-1. Aby otworzyć **opcje** oknie dialogowym wybierz **narzędzia** > **opcje** na pasku menu.
+1. Aby otworzyć **opcje** okna dialogowego wybierz **narzędzia** > **opcje** z paska menu.
 
 1. W obszarze **środowiska**, wybierz **czcionki i kolory** kategorii.
 
-   Należy zauważyć, że tekst w polu **Pokaż ustawienia dla** mówi **Edytor tekstu**&mdash;jest to, co chcemy. Może rozszerzyć listy rozwijanej tylko w celu lista dużą ilością miejsca, w którym można dostosowywać czcionki i kolor tekstu.
+   Należy zauważyć, że tekst w polu **Pokaż ustawienia dla** mówi **Edytor tekstu**&mdash;jest to, co chcemy zrobić. Rozwiń listy rozwijanej, po prostu, aby zobaczyć obszerną listę miejsca, w którym można dostosowywać czcionek i kolorów tekstu.
 
-1. Zmiana koloru tekstu numerów linii w **wyświetlania elementów** wybierz **numer wiersza**. W **pierwszego planu elementu** wybierz **oliwek**.
+1. Aby zmienić kolor tekstu numery wiersza, w **wyświetlania elementów** wybierz **numer wiersza**. W **pierwszy plan elementu** wybierz **oliwek**.
 
-   ![Opcje — okno dialogowe, czcionki i kolory kategorii](media/quickstart-personalize-line-number-color.png)
+   ![Okno dialogowe opcji, czcionki i kolory kategorii](media/quickstart-personalize-line-number-color.png)
 
-   Niektóre języki mają własne określone ustawienia czcionek i kolorów. Jeśli jesteś deweloperem C++ i chcesz zmienić kolor używany dla funkcji, na przykład można wyszukać **funkcje języka C++** w **wyświetlania elementów** listy.
+   Niektóre języki mają swoje własne szczególne ustawienia czcionek i kolorów. Jeśli jesteś programistą języka C++ i chcesz zmienić kolor używany na potrzeby funkcji, na przykład, można wyszukać **funkcji języka C++** w **wyświetlania elementów** listy.
 
-1. Przed zakończeniu poza okno dialogowe, umożliwia również zmianę koloru atrybutów XML. W **wyświetlania elementów** listy, przewiń w dół do **atrybutu XML** i zaznacz je. W **pierwszego planu elementu** wybierz **wapna**. Wybierz **OK** naszych opcji Zapisz i zamknij okno dialogowe.
+1. Zanim firma wyjście z okna dialogowego, również zmienimy kolor atrybutów XML. W **wyświetlania elementów** listy, przewiń w dół do **atrybutu XML** i wybierz ją. W **pierwszy plan elementu** wybierz **wapna**. Wybierz **OK** naszej opcji Zapisz i zamknij okno dialogowe.
 
-   Numery wierszy są teraz oliwek kolorów i atrybutów XML jasny, limonowy zielony. Otwórz plik innego typu, takich jak plik kodu C++ lub C#, zobaczysz czy numery wierszy również są wyświetlane w kolorze oliwek.
+   Numery wierszy są teraz oliwek kolorów i atrybutów XML jasny, Limonowozielony. Jeśli otworzysz plik innego typu, takich jak plik kodu C++ lub C#, zobaczysz, że numery wierszy są również wyświetlane w kolorze oliwek.
 
    ![Plik XML z nowych kolorów czcionki](media/quickstart-personalize-xml-file-new-colors.png)
 
-Firma Microsoft przedstawione kilka sposobów dostosowywanie kolorów w Visual Studio. Mamy nadzieję, że będzie zapoznanie się inne opcje dostosowywania w **opcje** okno dialogowe, aby rzeczywiście Visual Studio własne.
+Rozważyliśmy dostosowywanie kolorów w programie Visual Studio na kilka sposobów. Mamy nadzieję, że dowiesz się o innych opcji dostosowywania w **opcje** okno dialogowe, aby naprawdę dostosować Visual Studio do własnych potrzeb.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)
+- [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Szybki Start: Generowanie kodu z edytora](../ide/quickstart-editor.md)
 - [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Dopasowywanie edytora](../ide/customizing-the-editor.md)

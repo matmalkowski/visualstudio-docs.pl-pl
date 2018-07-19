@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wyświetlanie sugestii żarówki | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Wyświetlanie sugestie z żarówką | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,46 +11,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 750e3b0915478b4249ce8db1ac294c1f2a3006f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b356cc000492b8f186f93485f30c4a3cb0dd3579
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148704"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131898"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Wskazówki: Wyświetlanie sugestii żarówka
-Żarówki są ikon używanych w edytorze programu Visual Studio, które Rozwiń, aby wyświetlić zestaw akcji, na przykład poprawki dla problemy zidentyfikowane przez analizatorów wbudowanego kodu lub refaktoryzacji kodu.  
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii „żarówka”
+Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć w celu wyświetlenia zestawem akcji, na przykład poprawki dotyczące problemów identyfikowane za pomocą analizatorów kodu wbudowanego lub refaktoryzacji kodu.  
   
- W edytorach Visual C# i Visual Basic umożliwia także kompilatora platformy .NET ("Roslyn") do zapisu i analizatorów własnego kodu z akcjami, które automatycznie wyświetlać żarówki. Aby uzyskać więcej informacji, zobacz:  
+ W edytorach Visual C# i Visual Basic można również użyć platformie kompilatora .NET ("Roslyn") do zapisu i tworzenia pakietów analizatorów własnego kodu z akcjami, które automatycznie wyświetlają żarówki. Aby uzyskać więcej informacji, zobacz:  
   
--   [Porady: Pisanie diagnostyki C# i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+-   [Instrukcje: Pisanie C# diagnostyki i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Porady: Pisanie diagnostycznych Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+-   [Instrukcje: Pisanie diagnostyki programu Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Inne języki, takie jak C++ stanowią Ponadto żarówki niektóre szybkie akcje, takie jak uwag do tworzenia szkieletu stosowania tej funkcji.  
+ Innych języków, takich jak C++ także zapewnić żarówki szybkich akcji, takich jak sugestię do tworzenia szkieletu stosowania tej funkcji.  
   
- Oto, jak wygląda żarówka. W projektach Visual Basic lub Visual C# czerwona falista jest wyświetlany w obszarze Nazwa zmiennej, gdy jest on nieprawidłowy. Jeśli myszą nieprawidłowy identyfikator, żarówka jest wyświetlany obok kursora.  
+ Oto jak wygląda żarówki. W projekcie języka Visual Basic lub Visual C# czerwona fala pojawi się w obszarze Nazwa zmiennej, gdy jest on nieprawidłowy. Gdy wskaźnik myszy nad nieprawidłowy identyfikator żarówki jest wyświetlany obok kursora.  
   
- ![żarówki](../extensibility/media/lightbulb.png "żarówka")  
+ ![Ikona żarówki](../extensibility/media/lightbulb.png "żarówka")  
   
- Jeśli klikniesz przycisk strzałki w dół przez żarówkę, wyświetlany jest zestaw sugerowanych akcji wraz z wersji zapoznawczej wybranej akcji. W takim przypadku go zawiera zmiany, które zostaną wprowadzone w kodzie, jeśli wykonanie akcji.  
+ Po kliknięciu strzałki w dół, żarówki zbiór sugerowanych akcji zostanie wyświetlona wraz z (wersja zapoznawcza) wybranej akcji. W tym przypadku pokazuje zmiany, które zostaną wprowadzone do kodu, jeśli wykonanie akcji.  
   
- ![Podgląd żarówki](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+ ![żarówka — Podgląd](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Żarówki służy do nadania sugerowanych akcji. Na przykład można udostępnić akcje przenieść je na końcu poprzedniego wiersza lub Przenieś otwierających nawiasów klamrowych do nowego wiersza. Poniższe wskazówki przedstawiono sposób tworzenia żarówki, który pojawia się na bieżącego słowa i ma dwa sugerowanych akcji: **Konwertuj na wielkie litery** i **przekonwertować na małe litery**.  
+ Żarówki służy do zapewnienia sugerowanych akcji. Na przykład można dostarczyć działania, aby przenieść, otwierając nawiasy klamrowe do nowego wiersza lub przenieść je do końca poprzedniego wiersza. Następujące instruktaż przedstawia sposób tworzenia żarówki, która pojawia się na bieżącego słowa i ma dwa sugerowanych akcji: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Tworzenie projektu Framework (MEF) zarządzanych rozszerzeń  
   
-1.  Tworzenie projektu C# VSIX. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projektu VSIX**.) Nazwa rozwiązania `LightBulbTest`.  
+1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `LightBulbTest`.  
   
-2.  Dodaj **klasyfikatora edytor** szablon elementu do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Dodaj **klasyfikatora edytora** szablonu elementu projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Usuń pliki istniejące klasy.  
+3.  Usuń istniejące pliki klasy.  
   
-4.  Dodaj następujące odwołanie do projektu i ustawić **Kopiuj lokalnie** do `False`:  
+4.  Dodaj następujące odwołanie do projektu i ustaw **Kopiuj lokalnie** do `False`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
@@ -75,7 +75,7 @@ ms.locfileid: "31148704"
   
 ## <a name="implementing-the-light-bulb-source-provider"></a>Implementowanie dostawcy źródła żarówka  
   
-1.  Plik klasy LightBulbTest.cs Usuń klasy LightBulbTest. Dodaj klasę o nazwie **TestSuggestedActionsSourceProvider** implementującej <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Wyeksportować go przy użyciu nazwy **testu sugerowane akcje** i <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text".  
+1.  W pliku klasy LightBulbTest.cs Usuń klasy LightBulbTest. Dodaj klasę o nazwie **TestSuggestedActionsSourceProvider** implementującej <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Wyeksportuj go z nazwą **testu zalecane czynności** i <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text".  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -84,7 +84,7 @@ ms.locfileid: "31148704"
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2.  Wewnątrz klasy dostawcy źródłowej, należy zaimportować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> i dodaj go jako właściwość.  
+2.  Wewnątrz klasy dostawcy źródła, należy zaimportować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> i dodaj ją jako właściwość.  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
@@ -96,7 +96,7 @@ ms.locfileid: "31148704"
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
     {  
-        if (textBuffer == null && textView == null)  
+        if (textBuffer == null || textView == null)  
         {  
             return null;  
         }  
@@ -105,7 +105,7 @@ ms.locfileid: "31148704"
     ```  
   
 ## <a name="implementing-the-isuggestedactionsource"></a>Implementowanie ISuggestedActionSource  
- Źródło sugerowanych akcji jest odpowiedzialny za zbieranie zestaw sugerowanych akcji i dodawanie ich w kontekście prawo. W takim przypadku kontekst jest bieżącego słowa i sugerowane akcje są **UpperCaseSuggestedAction** i **LowerCaseSuggestedAction**, który omówimy w następnej sekcji.  
+ Źródło sugerowanej akcji jest odpowiedzialny za zbieranie zbiór sugerowane akcje i dodawanie ich w odpowiednim kontekście. W tym przypadku jest bieżącego słowa w kontekście i sugerowane akcje są **UpperCaseSuggestedAction** i **LowerCaseSuggestedAction**, które omówimy w poniższej sekcji.  
   
 1.  Dodaj klasę **TestSuggestedActionsSource** implementującej <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "31148704"
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2.  Dodać pól prywatnych tylko do odczytu dla zalecane działanie źródłowego dostawcy, buforu tekstu i widoku tekstu.  
+2.  Dostawca źródła sugerowanej akcji, bufor tekstowy i widoku tekstu, należy dodać prywatnego pola tylko do odczytu.  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -132,7 +132,7 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-4.  Dodaj metody prywatnej, która zwraca słowa, które jest obecnie pod kursorem. Następującą metodę wygląda w bieżącej lokalizacji kursora i prosi Nawigatora struktury tekst o stopniu Word. Jeśli kursor znajduje się na wyraz <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> jest zwracane w parametrze wyjściowym; w przeciwnym razie `out` parametr jest `null` i metoda zwraca `false`.  
+4.  Dodaj metody prywatnej, która zwraca wyrazu, który jest obecnie pod kursorem. Następującą metodę wyglądu w bieżącej lokalizacji kursora i prosi Nawigator struktury tekstu dla zakresu programu word. Jeśli kursor znajduje się na słowo, <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> jest zwracana w parametrze wyjściowym; w przeciwnym razie `out` parametr jest `null` a metoda zwraca `false`.  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -157,9 +157,9 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-5.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> metody. Edytor wywołuje tę metodę, aby dowiedzieć się, czy mają być wyświetlane żarówkę. To wywołanie bardzo często, na przykład zawsze, gdy kursor są przenoszone z jednego wiersza do innego lub gdy wskaźnik myszy jest przesuwany nad wężyk błąd. Jest asynchroniczne, aby umożliwić inne operacje interfejsu użytkownika do przenoszenia, gdy ta metoda działa. W większości przypadków ta metoda musi wykonać niektóre analizowania i analizy bieżącego wiersza więc przetwarzanie może zająć trochę czasu.  
+5.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> metody. Edytor wywołuje tę metodę, aby dowiedzieć się, czy mają być wyświetlane ikony żarówki. To wywołanie wykonano bardzo często, na przykład zawsze wtedy, gdy kursor przesuwa się w jednym wierszu do innego lub wskaźnika myszy nad wężyk błędu. Jest asynchroniczne, aby umożliwić innych operacji interfejsu użytkownika do wykonania, gdy ta metoda działa. W większości przypadków ta metoda musi wykonać niektóre analizy i analizy bieżący wiersz więc przetwarzania może trochę potrwać.  
   
-     W naszym implementacji asynchronicznie pobiera <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> i określa, czy zakres jest istotne, tj., czy ma ona tekst inne niż odstępy.  
+     W naszej implementacji asynchronicznie pobiera <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> i określa, czy zakres jest istotne, czyli czy zawiera on tekst innym niż spacja.  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -177,10 +177,10 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-6.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> metodę, która zwraca tablicę <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> obiektów zawierających różnych <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> obiektów. Ta metoda jest wywoływana po rozwinięciu żarówkę.  
+6.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> metody, która zwraca tablicę <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> obiektów, które zawierają różne <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> obiektów. Ta metoda jest wywoływana, gdy żarówki jest rozwinięty.  
   
     > [!WARNING]
-    >  Upewnij się, że implementacje `HasSuggestedActionsAsync()` i `GetSuggestedActions()` są spójne; która jest, jeśli `HasSuggestedActionsAsync()` zwraca `true`, następnie `GetSuggestedActions()` powinny mieć określone akcje do wyświetlenia. W wielu przypadkach `HasSuggestedActionsAsync()` jest wywoływana tuż przed `GetSuggestedActions()`, ale nie zawsze jest wielkość liter. Na przykład, jeśli użytkownik wywołuje akcje żarówki naciskając (CTRL +.) tylko `GetSuggestedActions()` jest wywoływana.  
+    >  Upewnij się, że implementacje `HasSuggestedActionsAsync()` i `GetSuggestedActions()` są spójne; który jest, jeśli `HasSuggestedActionsAsync()` zwraca `true`, następnie `GetSuggestedActions()` powinny mieć pewne działania, aby wyświetlić. W wielu przypadkach `HasSuggestedActionsAsync()` jest wywoływana tuż przed `GetSuggestedActions()`, ale nie zawsze jest to wymagane. Na przykład, jeśli użytkownik wywoła akcje żarówki, naciskając klawisz (CTRL +.) tylko `GetSuggestedActions()` jest wywoływana.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -203,7 +203,7 @@ ms.locfileid: "31148704"
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8.  Aby ukończyć implementacji, należy dodać implementacji dla `Dispose()` i `TryGetTelemetryId()` metody. Nie chcemy nie telemetrii, zwraca wartość false, więc po prostu i Ustaw identyfikator GUID na element Empty.  
+8.  Aby wykonać wdrożenia, należy dodać implementacje dla `Dispose()` i `TryGetTelemetryId()` metody. Nie chcemy czy telemetrii i zwraca wartość false, więc tylko pusta wartość identyfikatora GUID.  
   
     ```csharp  
     public void Dispose()  
@@ -218,18 +218,18 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>Implementowanie akcje żarówka  
+## <a name="implementing-light-bulb-actions"></a>Implementowanie akcji żarówka  
   
-1.  W projekcie Dodaj odwołanie do Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll i zestaw **Kopiuj lokalnie** do `False`.  
+1.  W projekcie Dodaj odwołanie do Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll i ustaw **Kopiuj lokalnie** do `False`.  
   
-2.  Utwórz dwie klasy o nazwie pierwszy `UpperCaseSuggestedAction` i drugiego o nazwie `LowerCaseSuggestedAction`. Zarówno klasy implementować <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Utwórz dwie klasy o nazwie pierwszy `UpperCaseSuggestedAction` i druga o nazwie `LowerCaseSuggestedAction`. Zarówno klasy implementować <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Obie klasy są podobne, z wyjątkiem tego, że jeden wywołuje <xref:System.String.ToUpper%2A> i inne wywołania <xref:System.String.ToLower%2A>. W poniższych krokach opisano tylko klasy akcji wielkie litery, ale musi implementować zarówno klasy. Wykonaj kroki implementacji wielkie akcji jako wzorzec do wykonania akcji małe litery.  
+     Obie klasy są podobne, z tą różnicą, że jeden wywołuje <xref:System.String.ToUpper%2A> i inne wywołania <xref:System.String.ToLower%2A>. W poniższych krokach opisano tylko klasy akcji wielkie litery, ale musi implementować zarówno klasy. Wykonaj kroki wykonania akcji wielkie litery jako wzorzec do wykonywania akcji małe litery.  
   
 3.  Dodaj następujące instrukcje using dla tych klas:  
   
@@ -242,7 +242,7 @@ ms.locfileid: "31148704"
   
     ```  
   
-4.  Deklarowanie zestaw pól prywatnych.  
+4.  Zadeklaruj zestaw pól prywatnych.  
   
     ```csharp  
     private ITrackingSpan m_span;  
@@ -263,7 +263,7 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-6.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> metody, którego nie wyświetla podgląd akcji.  
+6.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> metodę, tak że Wyświetla podgląd akcji.  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -275,7 +275,7 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-7.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> metody, dzięki czemu zwraca pustą <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> wyliczenia.  
+7.  Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> metodę, tak że zwraca pustą <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> wyliczenia.  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -284,7 +284,7 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-8.  Implementowanie właściwości w następujący sposób.  
+8.  Implementuje właściwości w następujący sposób.  
   
     ```csharp  
     public bool HasActionSets  
@@ -319,7 +319,7 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-9. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> metody, zastępując tekst w zakresie odpowiadającym mu wielkie litery.  
+9. Implementowanie <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> metody, zastępując tekst w zakresie równoważnik wielkie litery.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  
@@ -329,9 +329,9 @@ ms.locfileid: "31148704"
     ```  
   
     > [!WARNING]
-    >  Akcja żarówki **Invoke** nie oczekiwano metody można wyświetlić interfejsu użytkownika.  Jeśli Twoja Akcja wyświetlić nowy interfejs użytkownika (na przykład podgląd lub zaznaczenie okna dialogowego), nie są bezpośrednio z poziomu interfejsu użytkownika **Invoke** metody, ale zamiast tego harmonogramu do wyświetlenia interfejsu użytkownika po powrocie z **Invoke**.  
+    >  Akcję żarówki **Invoke** metoda nie powinna się wyświetlić interfejs użytkownika.  Jeśli akcji wyświetlić nowy interfejs użytkownika (na przykład (wersja zapoznawcza) lub wyboru okna dialogowego), nie są wyświetlane interfejsu użytkownika bezpośrednio z poziomu **Invoke** metody, ale zamiast tego zaplanować, aby wyświetlić interfejs użytkownika po powrocie z **Invoke**.  
   
-10. Aby ukończyć implementację, Dodaj `Dispose()` i `TryGetTelemetryId()` metody.  
+10. Aby wykonać wdrożenia, należy dodać `Dispose()` i `TryGetTelemetryId()` metody.  
   
     ```csharp  
     public void Dispose()  
@@ -346,24 +346,24 @@ ms.locfileid: "31148704"
     }  
     ```  
   
-11. Nie zapomnij tak samo postąpić w `LowerCaseSuggestedAction` zmiana wyświetlany tekst "Konwersji"{0}"na małe litery" i wywołanie <xref:System.String.ToUpper%2A> do <xref:System.String.ToLower%2A>.  
+11. Nie należy zapominać zrobić to samo `LowerCaseSuggestedAction` zmiana wyświetlanie tekstu w "Konwertuj"{0}"na małe litery", a następnie wywołać <xref:System.String.ToUpper%2A> do <xref:System.String.ToLower%2A>.  
   
 ## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
- Do przetestowania tego kodu, Skompiluj rozwiązanie LightBulbTest i uruchom go w eksperymentalnym wystąpieniu.  
+ Aby przetestować ten kod, Kompiluj rozwiązanie LightBulbTest, a następnie uruchomić go w doświadczalnym wystąpieniu.  
   
 1.  Skompiluj rozwiązanie.  
   
-2.  Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio zostanie uruchomiony.  
+2.  Po uruchomieniu tego projektu w debugerze drugiego wystąpienia programu Visual Studio jest uruchomiony.  
   
-3.  Utwórz plik tekstowy i wpisz tekst. Powinny pojawić się żarówka się po lewej stronie tekstu.  
+3.  Utwórz plik tekstowy i wpisz jakiś tekst. Powinien zostać wyświetlony żarówki po lewej stronie tekstu.  
   
-     ![Testowanie żarówkę](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
+     ![Testowanie żarówki](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4.  Wskaż żarówkę. Powinny pojawić się strzałkę w dół.  
+4.  Wskaż żarówki. Powinien zostać wyświetlony strzałkę w dół.  
   
-5.  Po kliknięciu żarówkę dwóch sugerowanych akcji powinien zostać wyświetlony wraz z wersji zapoznawczej wybranej akcji.  
+5.  Po kliknięciu ikony żarówki, dwie akcje sugerowane powinien zostać wyświetlony wraz z wersji zapoznawczej wybranej akcji.  
   
-     ![Testowanie żarówki rozwinięty](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![Testowanie żarówki, rozwinięte](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
-6.  Jeśli klikniesz pierwszą akcją cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz przycisk drugiej akcji, cały tekst powinien zostać przekonwertowany na małe litery.  
+6.  Jeśli klikniesz pierwszą akcją, cały tekst w bieżącego słowa powinny być konwertowane na wielkie litery. Jeśli klikniesz drugiej akcji, cały tekst powinny być konwertowane na małe litery.  
   

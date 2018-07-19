@@ -1,5 +1,5 @@
 ---
-title: Przegląd pamięci podręcznej ClickOnce | Dokumentacja firmy Microsoft
+title: Przegląd pamięci podręcznej funkcji ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b5a036be1075a8a911e351689ec9b02837db0a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d846ec60f6cf1722584c4ea93c56c29bc7007b89
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234589"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077623"
 ---
 # <a name="clickonce-cache-overview"></a>Przegląd pamięci podręcznej w technologii ClickOnce
-Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, czy są one zainstalowane lokalnie lub hostowanych w trybie online są przechowywane na komputerze klienckim w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacji *pamięci podręcznej*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej to rodzina ukrytych katalogów w katalogu lokalnym ustawienia folderu Dokumenty i ustawienia bieżącego użytkownika. Ta pamięć podręczna przechowuje pliki wszystkich aplikacji, w tym zestawy, pliki konfiguracji, aplikacji i ustawień użytkownika i katalog danych. Pamięć podręczna również jest odpowiedzialny za migracji katalogu danych do najnowszej wersji. Aby uzyskać więcej informacji na temat migracji danych, zobacz [dostęp do lokalnych i zdalnych danych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, czy są one zainstalowane lokalnie, czy hostowanego w trybie online, są przechowywane na komputerze klienckim w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacji *pamięci podręcznej*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej to rodzina ukrytych katalogów w katalogu ustawienia lokalnego folderu Documents and Settings bieżącego użytkownika. Ta pamięć podręczna przechowuje pliki wszystkich aplikacji, w tym zestawy, pliki konfiguracji, aplikacji i ustawień użytkownika i katalog danych. Pamięć podręczna jest również odpowiedzialny za migracją katalog danych aplikacji do najnowszej wersji. Aby uzyskać więcej informacji na temat migracji danych, zobacz [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
- Zapewniając pojedynczą lokalizację magazynu aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przejmuje zadań związanych z zarządzaniem fizycznej instalacji aplikacji przez użytkownika. Pamięć podręczna pomaga również w izolowania aplikacji dzięki przechowywaniu plików danych dla wszystkich aplikacji i zestawy i ich różne wersje oddzielić od siebie nawzajem. Na przykład po uaktualnieniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, wersji i jej zasoby danych dostarczanych z ich własnych katalogów w pamięci podręcznej.  
+ W jednej lokalizacji do przechowywania danych aplikacji, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przejmuje zadań związanych z zarządzaniem fizycznych instalacji aplikacji przez użytkownika. Pamięć podręczna pomaga również w izolowania aplikacji dzięki przechowywaniu zestawów i plików danych dla wszystkich aplikacji i ich różne wersje oddzielić od siebie nawzajem. Na przykład po uaktualnieniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, wersji i jej zasoby danych są dostarczane za pomocą ich własnych katalogów w pamięci podręcznej.  
   
-## <a name="cache-storage-quota"></a>Przydział pamięci masowej w pamięci podręcznej  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, które są obsługiwane w trybie online są ograniczone ilości miejsca może zajmują przez przydziału, która ogranicza rozmiar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej. Rozmiar pamięci podręcznej ma zastosowanie do wszystkich użytkowników aplikacji online; pojedynczej aplikacji częściowo zaufany, online jest ograniczona do zajmujące połowy limitu przydziału miejsca. Zainstalowane aplikacje nie są ograniczone przez rozmiar pamięci podręcznej i nie są uwzględniane limit pamięci podręcznej. Dla wszystkich [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, pamięci podręcznej zachowuje bieżącej wersji i wcześniej zainstalowanej wersji.  
+## <a name="cache-storage-quota"></a>Limit przydziału magazynu pamięci podręcznej  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, które są hostowane w trybie online są ograniczone ilości miejsca na ich mogą zajmować zgodnie z limitem przydziału, który ogranicza rozmiar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej. Rozmiar pamięci podręcznej, który ma zastosowanie do wszystkich użytkowników aplikacji online; pojedynczej aplikacji częściowo zaufanej, online jest ograniczona do zajmuje połowę miejsca limitu przydziału. Zainstalowane aplikacje nie są ograniczone przez rozmiar pamięci podręcznej i nie wliczają limit pamięci podręcznej. Dla wszystkich [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w pamięci podręcznej zachowuje tylko bieżącej wersji i wcześniej zainstalowanej wersji.  
   
- Domyślnie komputery klienckie mają 250 MB przestrzeni dyskowej na online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Pliki danych nie są wliczane do tego limitu. Administrator systemu może zwiększenia lub zmniejszenia ten limit przydziału na komputerze klienckim w szczególności, zmieniając klucz rejestru **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, czyli wartość DWORD, która określa rozmiar pamięci podręcznej w kilobajtach. Na przykład aby zmniejszyć rozmiar pamięci podręcznej do 50 MB, czy Zmień tę wartość na 51200.  
+ Domyślnie komputery klienckie mają 250 MB magazynu dla online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Pliki danych nie są wliczane do tego limitu. Administrator systemu można zwiększyć lub zmniejszyć ten limit przydziału na komputerze klienckim określonego, zmieniając klucz rejestru **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, który ma wartość DWORD, który wyraża rozmiar pamięci podręcznej w kilobajtach. Na przykład aby zmniejszyć rozmiar pamięci podręcznej do 50 MB, należy zmienić tę wartość do 51200.  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

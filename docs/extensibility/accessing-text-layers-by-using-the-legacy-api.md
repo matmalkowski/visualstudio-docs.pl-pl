@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie dostępu do warstwy tekstu przy użyciu interfejsu API starszych | Dokumentacja firmy Microsoft
+title: Uzyskiwanie dostępu do warstwy tekstu za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21b31940f1e1ebca767b9d3f0cf5ab802181bda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098670"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078670"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Uzyskiwanie dostępu do warstwy tekstu przy użyciu interfejsu API starsza wersja
-Warstwa tekstu hermetyzuje zwykle aspektów układu tekstu. Na przykład warstwy "Funkcja w pojedynczych" Ukrywa tekst przed i po funkcja zawierająca karetki (punktu wstawiania).  
+# <a name="access-text-layers-by-using-the-legacy-api"></a>Dostęp do warstwy tekstu przy użyciu starszej wersji interfejsu API
+Warstwa tekstu hermetyzuje zazwyczaj niektóre aspekty układu tekstu. Na przykład warstwa "Funkcja u pojedynczych" powoduje ukrycie opcji tekstu przed i po nim funkcja zawierająca karetki (punktu wstawiania).  
   
- Warstwa tekstu znajduje się pomiędzy buforu a widokiem i modyfikuje sposób widoku widzi zawartości buforu.  
+ Warstwy tekst, który znajduje się między buforu i widokiem i modyfikuje sposób, w widoku zobaczy zawartość buforu.  
   
-## <a name="text-layer-information"></a>Informacje tekstowe warstwy  
+## <a name="text-layer-information"></a>Tekst informacji  
  Na poniższej liście opisano, jak działa warstwy tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   Tekst w warstwie tekst można adorned kolorowanie składni i znaczników.  
+-   Tekst w warstwie tekstu można powiązany z kolorowanie składni i znacznikami.  
   
--   Obecnie nie można wdrożyć własne warstwy.  
+-   Obecnie nie może implementować własne warstwy.  
   
--   Przedstawia warstwy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, która jest pochodną <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Bufor tekstowy się również jest implementowany jako warstwy, co umożliwia wyświetlanie radzenia sobie polymorphically z warstwy podstawowej.  
+-   Udostępnia warstwę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, który pochodzi od <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Bufor tekstowy, sama również jest implementowany jako warstwy, która umożliwia wyświetlanie radzenia sobie polymorphically z warstwy źródłowej.  
   
--   Dowolna liczba warstw może znajdować się między widokiem a buforu. Każda warstwa dotyczy tylko warstwy poniżej, a widok dotyczy przede wszystkim z warstwą najwyższy. (W widoku ma pewne informacje o buforu).  
+-   Dowolną liczbę warstw może znajdować się między widokiem a buforu. Każda warstwa dotyczy tylko warstwy poniżej, a widok dotyczy głównie warstwy najważniejsze. (W widoku ma pewne informacje o buforze).  
   
--   Warstwa może mieć wpływ na tylko warstwy, które są poniżej. Nie może to wpłynąć na warstwy powyżej poza pochodzących standardowych zdarzeń.  
+-   Warstwa może mieć wpływ na tylko warstwy, znajdujących się poniżej. Nie może to wpłynąć na warstwy nad nim poza pochodzące standardowych zdarzeń.  
   
--   W edytorze tekstu ukrytego, syntetycznych tekst i zawijanie są zaimplementowane jako warstwy. Można zaimplementować tekstu ukrytego i syntetycznych bez poprzez bezpośrednią interakcję z warstwy. Aby uzyskać więcej informacji, zobacz [konspekt w starsza wersja usługi języka](../extensibility/internals/outlining-in-a-legacy-language-service.md) i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+-   W edytorze tekstu ukrytego, tekst syntetyczne i zawijania wierszy są implementowane jako warstwy. Możesz zaimplementować tekst ukryty i syntetyczne bez poprzez bezpośrednią interakcję z warstwy. Aby uzyskać więcej informacji, zobacz [zwijania w starszej wersji usługi językowej](../extensibility/internals/outlining-in-a-legacy-language-service.md) i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Każda warstwa tekst ma swój własny lokalny system współrzędnych, udostępnianym przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfejsu. Warstwa zawijanie wierszy, na przykład może zawierać dwa wiersze podczas podstawowej buforu tekstu może zawierać tylko jeden wiersz.  
+-   Każda warstwa tekst ma swój własny lokalnym układzie współrzędnych, która jest dostępna za pośrednictwem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfejsu. Warstwa zawijanie wierszy, na przykład może zawierać dwa wiersze podczas bazowego bufor tekstowy może zawierać tylko jeden wiersz.  
   
--   Widok komunikuje się z warstwy za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfejsu. Ten interfejs umożliwia uzgodnienia wyświetlanie współrzędnych z buforu współrzędnych.  
+-   Widok, który komunikuje się z warstwami za pośrednictwem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfejsu. Aby uzgodnić wyświetlanie współrzędnych współrzędnych buforu, należy użyć tego interfejsu.  
   
--   Wszelkie warstwy, takie jak warstwy syntetycznych tekstu, od którego pochodzi tekst podać lokalnego wdrożenia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
+-   Dowolny warstw, np. warstwy syntetycznych tekst pochodzący z tekstu, należy podać lokalnego wdrożenia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Oprócz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, musi implementować warstwy tekstu <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> i wyzwalać zdarzeń w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfejsu.  
+-   Oprócz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, warstwy tekstu musi implementować <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> i wyzwalać zdarzeń w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfejsu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Kolorowania w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)   
- [Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Dostosowywanie menu i formanty edytora przy użyciu interfejsu API starsza wersja](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+## <a name="see-also"></a>Zobacz także  
+ [Kolorowanie składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Dostosowywanie menu i formantów w edytorze przy użyciu starszej wersji interfejsu API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

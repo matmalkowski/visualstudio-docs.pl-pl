@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64e867430c2ae55f530bdb66844240a887bd5545
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 867bef2ddf1463005e1d6b0d9ca6c508ede97014
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142903"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079510"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfejsy starszej wersji w edytorze
-Dostępne edytorze programu Visual Studio z interfejsów starszej wersji. Visual Studio SDK zawiera karty znany jako *podkładek*, umożliwiające te interfejsy do interakcji z nowego edytora. Niemniej jednak zaleca się zaktualizowanie starszej wersji kodu za pomocą edytora nowego interfejsu API. Kod będą działać lepiej i można używać nowych technologii, takich jak Windows Presentation Foundation (WPF) i zarządzane Extensibility Framework (MEF).  
+Edytor programu Visual Studio dostęp ze starszych interfejsów. Visual Studio SDK zawiera kart znanych jako *podkładki*, umożliwiają one te interfejsy do interakcji z nowego edytora. Niemniej jednak zaleca się zaktualizowanie starszej wersji kodu, aby użyć nowego edytora interfejsu API. Twój kod będzie działać lepiej i można użyć nowych technologii, takich jak Windows Presentation Foundation (WPF) i Managed Extensibility Framework (MEF).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Adaptacja starszego kodu do edytora](../extensibility/adapting-legacy-code-to-the-editor.md)|Wyjaśniono, jak dostosować swój kod, aby nowy edytor.|  
-|[Zachowanie nowe lub zostały zmienione z kartami edytora](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|W tym artykule wyjaśniono, jak zachowania kart Edytor różni się od wcześniejszych wersji edytora.|  
-|[W edytorze Core](../extensibility/inside-the-core-editor.md)|W tym artykule opisano różne składniki wcześniejszych wersji edytora.|  
-|[Tworzenie wystąpień Edytor Core przy użyciu interfejsu API starsza wersja](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Wyjaśniono, jak utworzyć wystąpienia Edytor core za pomocą starszej wersji interfejsu API.|  
-|[Fabryki edytora](../extensibility/editor-factories.md)|Wyjaśniono, jak fabryki edytora za pomocą starszej wersji interfejsu API.|  
-|[Porady: Rejestrowanie typów plików edytora](../extensibility/how-to-register-editor-file-types.md)|Wyjaśniono, jak połączyć rozszerzenie nazwy pliku w edytorze.|  
-|[Wskazówki: Tworzenie edytora rdzeni i rejestrowania edytora typu pliku](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Wyjaśniono, jak utworzyć podstawowa edytora i połączyć rozszerzenie nazwy pliku.|  
-|[Porady: Podaj kontekstu edytorów](../extensibility/how-to-provide-context-for-editors.md)|Wyjaśniono, jak zapewnienie kontekst tego edytora.|  
-|[Usługi językowe i Edytor Core](../extensibility/language-services-and-the-core-editor.md)|Opisano interakcje między usługą języka i edytora.|  
-|[Dostęp do buforu tekstu przy użyciu interfejsu API starsza wersja](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Wyjaśniono, jak dostęp do buforu tekstu przy użyciu starszej wersji interfejsu API.|  
-|[Uzyskiwanie dostępu do theText widoku przy użyciu interfejsu API starsza wersja](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Wyjaśniono, jak dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API.|  
-|[Dostosowywanie kodu systemu Windows przy użyciu interfejsu API starsza wersja](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)|Opis sposobu dostosowywania kodu systemu windows przy użyciu starszej wersji interfejsu API.|  
-|[Uzyskiwanie dostępu do warstwy tekstu przy użyciu interfejsu API starsza wersja](../extensibility/accessing-text-layers-by-using-the-legacy-api.md)|Wyjaśniono, jak dostęp do różnych warstw tekstu przy użyciu starszej wersji interfejsu API.|  
-|[Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja](../extensibility/using-text-markers-with-the-legacy-api.md)|Wyjaśniono, jak dodać znacznikach tekstu przy użyciu starszej wersji interfejsu API.|  
-|[Dostosowywanie menu i formanty edytora przy użyciu interfejsu API starsza wersja](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Opis sposobu dostosowywania formanty edytora przy użyciu starszej wersji interfejsu API.|  
-|[Zarządzanie Cofnij i ponów przy użyciu interfejsu API starsza wersja](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Wyjaśniono, jak zarządzać cofania i ponawiania przy użyciu starszej wersji interfejsu API.|  
-|[Porady: Implementowanie Znajdź i Zastąp mechanizmu](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Wyjaśniono, jak zarządzać Znajdź i Zamień przy użyciu starszej wersji interfejsu API.|  
-|[Porady: pomijanie powiadomienia o zmianie pliku](../extensibility/how-to-suppress-file-change-notifications.md)|Wyjaśniono, jak wyłączyć powiadomienia o zmianie pliku przy użyciu starszej wersji interfejsu API.|  
+|[Dostosowanie starszego kodu do edytora](../extensibility/adapting-legacy-code-to-the-editor.md)|Wyjaśnia, jak dostosować swój kod, aby nowego edytora.|  
+|[Zachowaniem nowe lub zostały zmienione z kartami edytora](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|W tym artykule wyjaśniono, jak zachowanie kart edytora różni się od wcześniejszych wersjach edytora.|  
+|[W edytorze podstawowych](../extensibility/inside-the-core-editor.md)|W tym artykule opisano różne składniki wcześniejszych wersjach edytora.|  
+|[Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Wyjaśnia, jak utworzyć podstawowy edytor za pomocą starszej wersji interfejsu API.|  
+|[Fabryki edytora](../extensibility/editor-factories.md)|Wyjaśnia, jak fabryki edytora za pomocą starszej wersji interfejsu API.|  
+|[Porady: rejestrowanie Edytor typów plików](../extensibility/how-to-register-editor-file-types.md)|Wyjaśnia, jak połączyć z rozszerzeniem nazwy pliku do edytora.|  
+|[Wskazówki: Tworzenie podstawowej edytora i typ pliku edytora rejestru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Wyjaśnia sposób tworzenia podstawowej edytora i połączyć rozszerzenie nazwy pliku.|  
+|[Porady: dostarczanie kontekstu edytorów](../extensibility/how-to-provide-context-for-editors.md)|Wyjaśnia, jak zapewnić kontekst tego edytora.|  
+|[Usługi języka oraz podstawowy edytor](../extensibility/language-services-and-the-core-editor.md)|W tym artykule wyjaśniono, interakcji między usługi językowej i edytora.|  
+|[Dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Wyjaśnia, jak dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API.|  
+|[Wyświetl theText dostępu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Wyjaśnia, jak dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API.|  
+|[Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)|Opis sposobu dostosowywania kodu systemu windows przy użyciu starszej wersji interfejsu API.|  
+|[Dostęp do warstwy tekstu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-text-layers-by-using-the-legacy-api.md)|Wyjaśnia, jak dostęp do różnych warstw tekstu przy użyciu starszej wersji interfejsu API.|  
+|[Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)|Wyjaśnia, jak dodać znaczniki tekstu przy użyciu starszej wersji interfejsu API.|  
+|[Dostosowywanie menu i formantów w edytorze przy użyciu starszej wersji interfejsu API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Wyjaśnia, jak dostosować formanty edytora przy użyciu starszej wersji interfejsu API.|  
+|[Zarządzanie Cofnij i wykonaj ponownie przy użyciu starszej wersji interfejsu API](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Wyjaśnia, jak zarządzać Cofnij i wykonaj ponownie przy użyciu starszej wersji interfejsu API.|  
+|[Porady: Implementowanie Znajdź i Zamień mechanizm](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Wyjaśnia, jak zarządzać Znajdź i Zamień przy użyciu starszej wersji interfejsu API.|  
+|[Porady: pomijanie powiadomienia o zmianie pliku](../extensibility/how-to-suppress-file-change-notifications.md)|Wyjaśnia, jak wyłączyć powiadomienia o zmianie pliku przy użyciu starszej wersji interfejsu API.|  
 |[Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)|Wyjaśnia sposób tworzenia niestandardowych edytorów i projektantów.|  
-|[Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)|Zawiera linki do dokumentów dotyczących funkcji zapewniających możliwości dostosowywania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor core przez dodanie obsługi usługi języka.|  
-|[Używanie czcionek i kolorów](../extensibility/using-fonts-and-colors.md)|Wyjaśniono, jak czcionki i kolory za pomocą starszej wersji interfejsów.|
+|[Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)|Zawiera łącza do dokumentów o funkcjach, które zapewniają możliwość dostosowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji przez dodanie obsługi dla usługi w języka.|  
+|[Używanie czcionek i kolorów](../extensibility/using-fonts-and-colors.md)|Opis sposobu użycia czcionki i kolory z interfejsami starszej wersji.|

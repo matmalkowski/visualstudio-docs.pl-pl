@@ -19,39 +19,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c59ffc2324f25c42b505505b0dbea9160ef023a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: efe2e5ab9f2074c1706f14ac52f655921af4b9a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561418"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080467"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: określanie plików publikowanych za pomocą technologii ClickOnce
-Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, wszystkie z systemem innym niż kodu w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach można mogą nie ma, należy opublikować określonych plików lub można zainstalować niektórych plików na podstawie warunków. Visual Studio oferuje możliwości Wyklucz pliki, pliki są oznaczane jako pliki danych lub wymagania wstępne i tworzenie grup plików instalacji warunkowego.  
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: Określanie plików publikowanych za pomocą technologii ClickOnce
+Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, a wszystkie inne niż kod w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach mogą nie ma lub musisz opublikować określone pliki lub można zainstalować niektórych plików, na podstawie warunków. Program Visual Studio oferuje możliwości Wyklucz pliki oznaczyć pliki jako pliki danych lub wstępnie wymagane składniki oraz tworzenie grup plików dla warunkowego instalacji.  
   
- Pliki [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są zarządzane w **pliki aplikacji** okno dialogowe, dostępne z **publikowania** strony **projektanta projektu**.  
+ Pliki [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są zarządzane w **pliki aplikacji** okno dialogowe, dostępna z **Publikuj** strony **projektanta projektu**.  
   
- Początkowo istnieje grupa pojedynczy plik o nazwie **(wymagane)**. Można tworzyć grup dodatkowych plików i przypisywać im plików. Nie można zmienić **grupy pobierania** plików, które są wymagane do uruchomienia aplikacji. Na przykład aplikacji .exe lub pliki oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.  
+ Początkowo jest grupą pojedynczy plik o nazwie **(wymagane)**. Można tworzyć grup dodatkowych plików i przypisać im odpowiednie pliki. Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania. Na przykład .exe lub pliki aplikacji oznaczone jako pliki danych, trzeba należeć do **(wymagane)** grupy.  
   
- Stan publikowania domyślne wartości pliku jest oznaczane **(automatycznie)**. Na przykład .exe aplikacji ma stan publikowania **Include (automatycznie)** domyślnie.  
+ Stan publikowania domyślną wartość plik zostanie oznaczony za pomocą **(Auto)**. Na przykład .exe aplikacji ma stan publikowania **Include (Auto)** domyślnie.  
   
- Pliki z **Akcja kompilacji** ustawioną właściwość **zawartości** są wyznaczone jako pliki aplikacji i zostanie oznaczony jako domyślnie włączone. One może być uwzględnione, wykluczone lub oznaczone jako pliki danych. Dostępne są następujące wyjątki:  
+ Pliki z **Build Action** właściwością **zawartości** zostały oznaczone jako pliki aplikacji i zostanie oznaczony jako domyślnie włączone. Można je dołączony, wykluczony lub oznaczone jako pliki danych. Wyjątki są następujące:  
   
--   Pliki danych, takie jak pliki bazy danych SQL (*.mdf i .mdb) i pliki XML zostaną oznaczone jako pliki danych domyślnie.  
+-   Pliki danych, takich jak SQL Database (*.mdf* i *.mdb*) plików i plików XML zostaną oznaczone jako pliki danych domyślnie.  
   
--   Podczas dodawania odwołania do odwołania do zestawów (pliki dll) są określone w następujący sposób: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako zestaw wymagań wstępnych (**(wymagań wstępnych Auto)**) który musi znajdować się w pamięci podręcznej GAC przed zainstalowaniem aplikacji. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony jako domyślnie jako do zestawu aplikacji (**Include (automatycznie)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM będą wyświetlane w **pliki aplikacji** okno dialogowe pola (jako pliku ocx) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostanie on uwzględniony.  
+-   Odwołania do zestawów (*.dll* pliki) zostały oznaczone następujący po dodaniu odwołania: Jeśli **Kopiuj lokalnie** jest **False**, jest oznaczona domyślnie jako warunek wstępny zestaw (**wymagań wstępnych (Auto)**), musi znajdować się w pamięci podręcznej GAC, zanim aplikacja zostanie zainstalowana. Jeśli **Kopiuj lokalnie** jest **True**, zestaw jest oznaczony domyślnie jako zestawu aplikacji (**Include (Auto)**) i zostaną skopiowane do folderu aplikacji podczas instalacji. Odwołanie COM pojawi się w **pliki aplikacji** okno dialogowe (jako *.ocx* pliku) tylko wtedy, gdy jego **izolowany** właściwość jest ustawiona na **True**. Domyślnie zostaną dołączone.  
   
-### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego plików aplikacji  
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Aby dodać pliki do okna dialogowego pliki aplikacji  
   
 1.  Wybierz plik danych w **Eksploratora rozwiązań**.  
   
-2.  W oknie Właściwości zmień **Akcja kompilacji** właściwości **zawartości** wartość.  
+2.  W oknie Właściwości zmień **Build Action** właściwości **zawartości** wartość.  
   
-### <a name="to-exclude-files-from-clickonce-publishing"></a>Aby wykluczyć pliki z publikacji ClickOnce  
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Aby wykluczyć pliki z publikacji technologii ClickOnce  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.  
   
@@ -61,60 +61,60 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ### <a name="to-mark-files-as-data-files"></a>Aby oznaczyć pliki jako pliki danych  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.  
   
-4.  W **pliki aplikacji** oknie dialogowym Wybierz plik, który chcesz oznaczyć jako dane.  
+4.  W **pliki aplikacji** oknie dialogowym Wybierz plik który chcesz oznaczyć jako dane.  
   
 5.  W **stan publikowania** pól, zaznacz **pliku danych** z listy rozwijanej.  
   
-### <a name="to-mark-files-as-prerequisites"></a>Aby oznaczyć pliki jako wstępnie wymagane składniki  
+### <a name="to-mark-files-as-prerequisites"></a>Aby oznaczyć pliki w ramach wymagań wstępnych  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.  
   
-4.  W **pliki aplikacji** oknie dialogowym Wybierz zestaw aplikacji (plik dll), którą chcesz oznaczyć jako warunek wstępny. Należy pamiętać, że aplikacja musi mieć odwołanie do zestawu aplikacji w celu znajdują się na liście.  
+4.  W **pliki aplikacji** okna dialogowego Wybierz zestaw aplikacji (*.dll* pliku), którą chcesz oznaczyć jako warunek wstępny. Należy pamiętać, że aplikacja musi mieć odwołanie do zestawu aplikacji w celu pojawiają się na liście.  
   
 5.  W **stan publikowania** pól, zaznacz **wymagań wstępnych** z listy rozwijanej.  
   
 ### <a name="to-add-a-new-file-group"></a>Aby dodać nowe grupy plików  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.  
   
-4.  W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** dla plików, które mają zostać uwzględnione w nowej grupie pole.  
+4.  W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** pola dla pliku, który chcesz dołączyć do nowej grupy.  
   
     > [!NOTE]
-    >  Pliki muszą mieć **Akcja kompilacji** ustawioną właściwość **zawartości** przed nazwy plików są wyświetlane w **pliki aplikacji** okno dialogowe.  
+    >  Pliki muszą mieć **Build Action** właściwością **zawartości** przed nazwami plików są wyświetlane w **pliki aplikacji** okno dialogowe.  
   
-5.  W **grupy pobierania** pól, zaznacz  **\<nowy... >** z listy rozwijanej.  
+5.  W **grupa pobierania** pól, zaznacz  **\<nowy... >** z listy rozwijanej.  
   
 6.  W **Nowa grupa** okno dialogowe, wprowadź nazwę grupy, a następnie kliknij przycisk **OK**.  
   
 ### <a name="to-add-a-file-to-a-group"></a>Aby dodać plik do grupy  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **pliki aplikacji** przycisk, aby otworzyć **pliki aplikacji** okno dialogowe.  
   
-4.  W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** dla plików, które mają zostać uwzględnione w nowej grupie pole.  
+4.  W **pliki aplikacji** okno dialogowe, wybierz opcję **grupy** pola dla pliku, który chcesz dołączyć do nowej grupy.  
   
-5.  W **grupy pobierania** wybierz grupę z listy rozwijanej.  
+5.  W **grupa pobierania** wybierz grupę z listy rozwijanej.  
   
     > [!NOTE]
-    >  Nie można zmienić **grupy pobierania** plików, które są wymagane do uruchomienia aplikacji.  
+    >  Nie można zmienić **grupa pobierania** dla plików, które są wymagane przez aplikację do uruchamiania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

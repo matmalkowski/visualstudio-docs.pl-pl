@@ -15,35 +15,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e325ab2d5a5a54a9aaf8378753ccbe8f3a72a5a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d921236fe44c7402bb26800c02624e2c391301a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569192"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077069"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Porady: znaki specjalne ucieczki w MSBuild
 Niektóre znaki mają specjalne znaczenie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. Przykłady znaków średnikami (;) i gwiazdki (*). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).  
   
- Aby można było używać tych znaków specjalnych jako literał w pliku projektu, muszą być one określone za pomocą składni %*xx*, gdzie *xx* reprezentuje wartość szesnastkową ASCII znaku.  
+ Aby można było używać tych znaków specjalnych jako literały w pliku projektu, muszą one być określone za pomocą składni %\<xx >, gdzie \<xx > reprezentuje wartości szesnastkowej znaku ASCII.  
   
-## <a name="msbuild-special-characters"></a>Znaki specjalne w programie MSBuild  
- Co znajduje się przykład gdy są używane znaki specjalne w `Include` atrybutu list elementów. Na przykład na poniższej liście element deklaruje dwóch elementów: `MyFile.cs` i `MyClass.cs`.  
+## <a name="msbuild-special-characters"></a>Znaki specjalne w MSBuild  
+ Co znajduje się przykład użycia znaków specjalnych w `Include` atrybutu elementu listy. Na przykład na poniższej liście elementu deklaruje dwa elementy: *MyFile.cs* i *MyClass.cs*.  
   
 ```xml  
 <Compile Include="MyFile.cs;MyClass.cs"/>  
 ```  
   
- Jeśli chcesz zadeklarować elementu, który zawiera średnikiem w nazwie, należy użyć %*xx* składni escape średnik i zapobiec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z deklarowanie dwa osobne elementy. Na przykład następujący element specjalne średnik i jedną o nazwie deklaruje `MyFile.cs;MyClass.cs`.  
+ Jeśli chcesz zadeklarować elementu, który zawiera średnikami w nazwie, należy użyć %\<xx > składni ucieczki średnika i zapobiec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] od zadeklarowania dwa oddzielne elementy. Na przykład, następujący element specjalne średnika i deklaruje jeden element o nazwie *MyFile.cs; MyClass.cs*.  
   
 ```xml  
 <Compile Include="MyFile.cs%3BMyClass.cs"/>  
 ```  
   
-#### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>Aby użyć MSBuild znak specjalny w postaci literału znaku  
+#### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>Aby użyć znaku specjalnego MSBuild jako znak literału  
   
--   Użyj % notacji*xx* zamiast znaków specjalnych, gdzie *xx* reprezentuje wartość szesnastkową znaków ASCII. Na przykład, aby użyć gwiazdki (*) jako literał znaków, użyj wartości `%2A`.  
+-   Użyj % notacji\<xx > zamiast znaki specjalne, gdzie \<xx > reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znak literałowy, użyj wartości `%2A`.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md) [elementów](../msbuild/msbuild-items.md)
+ [Program MSBuild](../msbuild/msbuild.md)   
+ [Elementy](../msbuild/msbuild-items.md)   

@@ -1,93 +1,187 @@
 ---
-title: IntelliCode pytania i odpowiedzi
-ms.date: 05/22/2018
+title: Rozszerzenie IntelliCode pytań i odpowiedzi
+ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: f0410b3ffd04c42f316d99c150253e72bb1b1944
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 79e18778eae231d16cf32c0fa68bcb6f5564b09d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34468807"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079314"
 ---
-# Visual Studio IntelliCode — często zadawane pytania
+# Program Visual Studio IntelliCode — często zadawane pytania
 
-Dziękujemy za zainteresowanie Visual Studio IntelliCode! Przygotowaliśmy tych często zadawanych PYTAŃ krótkich miejmy nadzieję, że niektóre pytania, które mogą mieć odpowiedzi.
+Dziękujemy za zainteresowanie usługą Visual Studio IntelliCode. Ten krótki — często zadawane pytania będzie miejmy nadzieję uzyskania odpowiedzi na niektóre pytania, które mogą wiązać Ciebie.
 
-## Q. Co to jest program Visual Studio IntelliCode?
+## PYTANIA I ODPOWIEDZI. Co to jest Visual Studio IntelliCode?
 
-Visual Studio IntelliCode, nową możliwość, która zwiększa rozwoju oprogramowania przy użyciu AI wprowadziliśmy na 2018 kompilacji. IntelliCode ułatwia deweloperom i zespoły kodu bez obaw znaleźć problemy szybsze i skoncentrować się przeglądy kodu.
+W kompilacji 2018 r. Firma Microsoft ogłosiła Visual Studio IntelliCode, nowe możliwości, które usprawnia tworzenie oprogramowania za pomocą sztucznej Inteligencji. Rozszerzenie IntelliCode ułatwia deweloperom i zespołom kod bez obaw, znaleźć problemy i skupić się przeglądów kodu.
 
-Firma Microsoft wykazały, wczesne widok jak IntelliCode zwiększa procesem tworzenia oprogramowania w następujący sposób:
+Wczesne widok jak IntelliCode pokazano, jak zwiększa procesu tworzenia oprogramowania w następujący sposób:
 
-- Udostępnia kod obsługujący kontekst zakończeń
-- Przewodniki deweloperom stosować się do wzorców i style ich zespołu
-- Wyszukuje problemy dotyczące trudnych do catch kodu
-- Skupiono się przeglądy kodu przez zwrócenie uwagi na obszary naprawdę znaczenia
+- Zapewnia uzupełnianie kodu oparte na kontekście
+- Zawiera informacje na temat deweloperzy mogą stosować się do wzorców i style ich zespołu
+- Umożliwia znalezienie problemów z kodem trudne catch
+- Koncentruje się przeglądów kodu za pomocą rysowania uwagę na obszary, które naprawdę mają znaczenie
 
-Deweloperzy i można znaleźć więcej informacji i zaloguj się wiadomości przyszłych podglądy prywatnych w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+Deweloperzy mogą znaleźć więcej informacji i zaloguj się do grup dyskusyjnych i przyszłych prywatnych wersji zapoznawczych w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Co program Visual Studio IntelliCode umożliwia klientom?
+## PYTANIA I ODPOWIEDZI. Co program Visual Studio IntelliCode umożliwia klientom wykonywanie?
 
-Visual Studio IntelliCode jest zakres możliwości, który oferuje nowe ulepszenia wydajności za pomocą analizy sztucznego (AI).
+Visual Studio IntelliCode to szeroką gamę możliwości oferuje nowych udoskonaleń dotyczących produktywności za pomocą sztucznej inteligencji (AI).
 
-Deweloperzy mogą [pobrać rozszerzenie eksperymentalne](https://go.microsoft.com/fwlink/?linkid=872707) dla programu Visual Studio 2017 wersji 15.7 i nowszych. Rozszerzenie udostępnia udoskonalone IntelliSense, który prognozuje najprawdopodobniej poprawne interfejsu API dla deweloperów do użycia, a nie tylko przedstawiający alfabetyczną listę elementów członkowskich. Aby udostępnić tę listę dynamiczne używa bieżącego kontekstu kodu i wzorce dewelopera. Będziemy informować o więcej możliwości rozszerzenia w najbliższych miesiącach.
+Deweloperzy mogą [Pobierz eksperymentalne rozszerzenie](https://go.microsoft.com/fwlink/?linkid=872707) programu Visual Studio 2017 wersji 15.7 lub nowszej. Rozszerzenie udostępnia obecnie:
 
-## Q. Czy istnieją inne funkcje pochodzące z rozszerzeniem Visual Studio IntelliCode? Co editorconfig generacji?
+- Ulepszone sztucznej Inteligencji funkcji IntelliSense, które przewiduje najprawdopodobniej poprawne interfejsu API dla deweloperów do użycia zamiast po prostu prezentowanie alfabetyczną listę elementów członkowskich. Aby udostępnić tę listę dynamiczne używa bieżący kontekst kodu i wzorców dla deweloperów.
 
-Aktywnie pracujemy nad szereg funkcji, które jesteśmy radością publicznie staną się one dostępne. Firma Microsoft przedstawiona wczesne wersji wewnętrzny narzędziem wnioskuje ustawienia editorconfig styl kodu i formatowania w języku C# w 2018 kompilacji firmy Microsoft. Nie ma rozszerzenia eksperymentalne jeszcze, ale planujemy udostępnić go tam wkrótce. Możesz zarejestrować dla wiadomości i aktualizacji w [ https://aka.ms/intellicode ](https://aka.ms/intellicode) aby się dowiedzieć, gdy będziemy mieć nowe funkcje dostępne.
+- Wnioskowanie styl kodu i formatowania Konwencji, które ułatwiają Zapewnij spójność kodu przez dynamiczne tworzenie [pliku .editorconfig](../create-portable-custom-editor-options.md) z Twojej bazy kodu w celu zdefiniowania kodowania stylów i formatów. Tych konwencji programowi Visual Studio do zaoferowania styl automatycznych i format poprawek wyczyścić dokumentu.
 
-## Pytanie: co sprawia, że "wspierana AI IntelliSense" obsługiwane przez IntelliCode lepszym rozwiązaniem niż regularne IntelliSense?
+Zaktualizujemy rozszerzenie więcej możliwości w nadchodzących miesiącach.
 
-Z IntelliCode na liście uzupełniania sugeruje się, że najczęściej Popraw interfejsu API dla deweloperów do użycia zamiast przedstawiający proste alfabetyczną listę elementów członkowskich. Używany bieżący kontekst kodu dewelopera i wzorce w oparciu o wysokiej jakości 2000, open source projektów, w witrynie GitHub każdego z ponad 100 gwiazdek, aby udostępnić tę listę dynamicznych. Wyniki tworzą modelu, który prognozuje najprawdopodobniej i najbardziej odpowiednie wywołania interfejsu API.
+## PYTANIA I ODPOWIEDZI. Dlaczego wnioskowania EditorConfig dołączana 1 do nazwy pliku?
 
-## Pytanie: jak dobrej są sugestie ukończenia IntelliCode?
+1 spowoduje, że to znany problem w możliwościach rozszerzania programu Visual Studio. ma zostać dołączony do nazwy pliku .editorconfig podczas jego tworzenia, kliknij prawym przyciskiem myszy i wybierając pozycję **Dodaj > Nowy element**. Pliki o nazwie w ten sposób nie są rozpoznawane przez procesor polecenia editorconfig w programie Visual Studio. Problem ten został rozwiązany w Visual Studio 2017 w wersji Preview należy zachować 15,8 4, ale w międzyczasie można obejść, usuwając 1 w **Dodaj nowy element** okna dialogowego.
 
-Firma Microsoft korzystasz zalecenia firmy IntelliCode wewnętrznie w firmie Microsoft przez pewien czas i uważają, że są przydatne sugestie. Ostatecznie, dowód będzie w sposób przydatne te zalecenia są dostępne dla Ciebie jako użytkownik kodu. Chętnie poznamy można umożliwić programu Visual Studio [rozszerzenia IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) try. Daj nam wiedzieć, jak działa dla Ciebie i wyślij nam swoją opinię. Również nauczymy naszych model oparty na pobranie w Nasze zalecenia i będziemy informować rozszerzenia jako zwiększa modelu.
+## PYTANIA I ODPOWIEDZI. Nie widzę mojego konwencje EditorConfig działają — Dlaczego
+Istnieje kilka typowych przyczyn, że ten problem może wystąpić:
+
+- W wersjach programu Visual Studio 2017 przed należy zachować 15,8 w wersji zapoznawczej 3, musisz zamknąć i otworzyć ponownie wszystkie otwarte dokumenty, aby zobaczyć konwencje w pliku EditorConfig, możesz utworzyć zaczęły obowiązywać. Ten problem jest rozwiązany w wersji zapoznawczej należy zachować 15,8 wersji 3.
+- Konwencje formatowania nigdy nie pojawiają się w **lista błędów** lub jako "zygzaki" w kodzie. Jednak mogą być rozwiązane za pomocą nowego rozszerzenia Formatuj dokument (Ctrl + K, Ctrl + D) w programie Visual Studio 2017 wersja 15.8 3 lub nowszym w wersji zapoznawczej
+
+## PYTANIA I ODPOWIEDZI. Format dokumentu nie naprawianie Dlaczego mój Konwencji stylistycznych?
+Istnieje kilka typowych przyczyn, że ten problem może wystąpić:
+
+- Nie używasz programu Visual Studio 2017 w wersji 15.8 (wersja zapoznawcza), 3 lub nowszej. Należy tej wersji, aby można było użyć rozszerzonego poleceń "Formatuj dokument" do wykonywania oczyszczania dodatkowy kod dla bieżącego dokumentu.
+- Może nie być wybrana została opcja w stylu poprawki. Rozszerzone możliwości ustalenia możliwości oparty na Konwencji problemów w dokumencie Format tylko obejmuje ustalony zestaw elementów problemów. Możesz zmienić rozwiązane problemy w **opcje narzędzi** w obszarze **Edytor tekstu > C# > Styl kodu > Formatowanie > Ogólne > ustawień dokumentów w formacie (eksperyment)**. Zwróć uwagę, ustawienia domyślne nie rozwiązują niektóre konwencje stylu. Można włączyć do tych za pośrednictwem **Narzędzia > Opcje**. Na przykład "Zastosuj niejawnej/jawnej preferencjach" uruchomi reguły stylów dotyczących używania `var`.
+
+## PYTANIA I ODPOWIEDZI. Konwencje EditorConfig, które może wywnioskować w Visual Studio IntelliCode
+
+Obecnie ta funkcja jest eksperymentalny, więc firma Microsoft nie obsługuje pełny zestaw konwencje udokumentowane w artykule [odwołanie do ustawienia stylu kodu](../editorconfig-code-style-settings-reference.md) jeszcze.
+
+Rozszerzenie IntelliCode aktualnie może wywnioskować następujących konwencji:
+
+Konwencje formatowania:
+
+-   csharp_space_between_method_declaration_parameter_list_parentheses
+-   csharp_space_between_method_declaration_empty_parameter_list_parentheses
+-   csharp_space_between_method_call_name_and_opening_parenthesis
+-   csharp_space_between_method_call_parameter_list_parentheses
+-   csharp_space_between_method_call_empty_parameter_list_parentheses
+-   csharp_space_after_keywords_in_control_flow_statements
+-   csharp_space_between_parentheses
+-   csharp_space_after_cast
+-   csharp_space_after_colon_in_inheritance_clause
+-   csharp_space_before_colon_in_inheritance_clause
+-   csharp_space_around_binary_operators
+-   csharp_indent_switch_labels
+-   csharp_indent_case_contents
+-   csharp_indent_case_contents_when_block
+-   csharp_indent_labels
+-   csharp_preserve_single_line_blocks
+-   csharp_preserve_single_line_statements
+-   csharp_new_line_before_open_brace
+-   csharp_new_line_before_else
+-   csharp_new_line_before_catch
+-   csharp_new_line_before_finally
+-   csharp_new_line_before_members_in_object_initializers
+-   csharp_new_line_before_members_in_anonymous_types
+-   csharp_new_line_between_query_expression_clauses
+
+Konwencje stylu
+-   csharp__new_line_before_catch
+-   csharp_new_line_before_else
+-   csharp_new_line_before_members_in_anonymous_types
+-   csharp_new_line_before_members_in_object_initializers
+-   csharp_new_line_before_finally_style
+-   csharp_new_line_between_query_expression_clauses
+-   csharp_prefer_braces_style
+-   csharp_preferred_modifier_order_style
+-   csharp_prefer_simple_default_expression
+-   csharp_preserve_single_line_blocks
+-   csharp_space_after_cast
+-   csharp_space_after_keywords_in_control_flow_statements
+-   csharp_space_between_method_call_parameter_list_parentheses
+-   csharp_space_between_method_declaration_parameter_list_parentheses
+-   csharp_space_between_parentheses
+-   csharp_style_expression_bodied_accessors
+-   csharp_style_expression_bodied_constructors
+-   csharp_style_expression_bodied_indexers
+-   csharp_style_expression_bodied_methods
+-   csharp_style_expression_bodied_operators
+-   csharp_style_expression_bodied_properties
+-   csharp_style_inlined_variable_declaration
+-   csharp_style_pattern_local_over_anonymous_function
+-   csharp_style_pattern_matching_over_as_with_null_check
+-   csharp_style_var_for_built_in_types
+-   csharp_style_var_when_type_is_apparent
+-   dotnet_sort_system_directives_first
+-   dotnet_style_explicit_tuple_names
+-   dotnet_style_object_initializer
+-   dotnet_style_predefined_type_for_locals_parameters_members
+-   dotnet_style_predefined_type_for_member_access
+-   dotnet_style_prefer_inferred_anonymous_type_member_names
+-   dotnet_style_qualification_for_event
+-   dotnet_style_qualification_for_field
+-   dotnet_style_qualification_for_method
+-   dotnet_style_qualification_for_property
+-   dotnet_style_require_accessibility_modifiers
+
+## PYTANIA I ODPOWIEDZI. Czy istnieją inne funkcje dostępne do rozszerzenia programu Visual Studio IntelliCode?
+
+Aktywnie pracujemy nad pewną liczbę funkcji, które Cieszymy się do publicznego udostępniania w miarę ich udostępniania. Możesz zalogować się do wiadomości i aktualizacje w [ https://aka.ms/intellicode ](https://aka.ms/intellicode) jako pierwszy, aby dowiedzieć się, gdy mamy nowych funkcji dostępnych.
+
+## P: co sprawia, że "wspierane przez Sztuczną inteligencję IntelliSense" obsługiwane przez IntelliCode lepsze niż regularne IntelliSense?
+
+Za pomocą IntelliCode na liście uzupełniania sugeruje, że najbardziej prawdopodobne Popraw interfejsu API dla deweloperów, można użyć zamiast prezentacji prostego Alfabetyczna lista elementów członkowskich. Używa bieżący kontekst kodu dla deweloperów i wzorce oparte na 2000 wysokiej jakości, typu open-source projektów, w witrynie GitHub każdego z ponad 100 gwiazdek, aby udostępnić tę listę dynamicznych. Wyniki tworzą modelu, który najprawdopodobniej i najbardziej efektywnym wywołań interfejsu API.
+
+## P: jak dobre są sugestie uzupełniania IntelliCode?
+
+Firma Microsoft wcześniej użyto zalecenia rozszerzenia IntelliCode wewnętrznie w firmie Microsoft przez pewien czas i uważają, że przydają się sugestie. Ostatecznie jednak będzie dowód w jak użyteczne te zalecenia są dla Ciebie jako kodowania. Chcielibyśmy Cię jednak do wypróbowania programu Visual Studio [rozszerzenia IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) try. Daj nam znać, jak działa dla Ciebie i wyślij nam swoją opinię. Również nauczymy nasz model, w oparciu o wybór w Nasze zalecenia, a dodamy rozszerzenia, ponieważ zwiększa modelu.
 
 > [!NOTE]
-> Nie są zbierane żadne z kodu użytkownika. Zobacz pytanie na [prywatności](#privacy).
+> Brak kodu użytkownika nie są zbierane. Zobacz pytanie na [zachowania](#privacy).
 
-## Q. Co to jest przyszłości IntelliCode?
+## PYTANIA I ODPOWIEDZI. Jaka jest przyszłość IntelliCode?
 
-Firma Microsoft jest eksploracji wiele różnych sposobów zwiększenie produktywności deweloperów przy użyciu AI i innych zaawansowanych technik. W 2018 kompilacji firmy Microsoft, firma Microsoft wykazały, wczesne widoku niektórych scenariuszy, w którym naszym zdaniem AI może pomóc deweloperom, ale istnieje wiele więcej! Interesuje nas learning deweloperów, które eksperymentować co możemy już widoczny, tak logowania przez wiadomości i aktualizacji w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+Firma Microsoft Eksplorowanie szereg sposobów na zwiększenie produktywności deweloperów za pomocą sztucznej Inteligencji i inne zaawansowane techniki. W programie Microsoft Build 2018 pokazaliśmy wczesne widok Niektóre scenariusze, w którym uważamy, że AI może pomóc deweloperom, ale istnieje wiele więcej! Jesteśmy zainteresowani learning od deweloperów, które eksperymentować, co firma Microsoft już widoczny, tak logowania przez wiadomości i aktualizacje, [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Ile kosztuje?
+## PYTANIA I ODPOWIEDZI. Ile kosztuje?
 
-Nie mamy żadnych anonsów dotyczących cen w chwili obecnej.
+Nie mamy żadnych ogłoszenia dotyczące cen w chwili obecnej.
 
-## Q. Gdy zostaną wydane IntelliCode?
+## PYTANIA I ODPOWIEDZI. Kiedy zostanie wydana IntelliCode?
 
-W IntelliCode wspierana AI IntelliSense jest obecnie jego pierwszym Podgląd eksperymentalne. Będziemy można zaktualizować rozszerzenia eksperymentalne i dodamy dodatkowe możliwości w przyszłości. Nie mamy żadnych harmonogram ostatecznej wersji, ale chętnie poznamy opinię deweloperów w celu udostępnienia najlepsze możliwe procesy. Możesz zarejestrować dla wiadomości i aktualizacji w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
+IntelliCode wspierane przez Sztuczną inteligencję w technologii IntelliSense jest obecnie w wersji zapoznawczej swoje pierwsze eksperymentalne. Będziemy można zaktualizować rozszerzenia eksperymentalne i dodamy więcej możliwości w przyszłości. Mamy bez harmonogramu ostatecznego wydania, ale zachęcamy opinii od deweloperów, dzięki czemu firma Microsoft mogą dostarczać najlepsze możliwe środowisko. Możesz zalogować się do wiadomości i aktualizacje w [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## Q. Jest to środowisko dostępna tylko w programie Visual Studio i w języku C#?
+## PYTANIA I ODPOWIEDZI. Jest to środowisko dostępne tylko w programie Visual Studio i języka C#?
 
-Środowisko użytkownika był wyświetlany w 2018 kompilacji w programie Visual Studio 2017 na codebase C#. Jednak mamy nadzieję do rozszerzania IntelliCode więcej języków i narzędzi z rodziny Visual Studio w przyszłości.
+Środowisko wyświetleniem konferencji Build 2018 w programie Visual Studio 2017 kodu C#. Jednakże chętnie rozszerzanie IntelliCode do większej liczby języków i narzędzi z rodziny Visual Studio w przyszłości.
 
-## Q. <a name="whynointellisense"/> Nie widzę sugestie IntelliCode w mojej C# edytowania — co dzieje się?
+## PYTANIA I ODPOWIEDZI. <a name="whynointellisense"/> Nie widzę sugestie IntelliCode w mojej C# edytowanie - co się dzieje?
 
-Sugestie IntelliCode są wyświetlane w standardowe środowisko programu Visual Studio IntelliSense dla języka C#. Rozszerzenia, które zastępują środowiska zapobiec sugestii IntelliCode "starred" z znajdujących się na początku listy. Aby sprawdzić, czy rozszerzenia są przyczyną to zachowanie, wyłączając je i podjęcie ponownej próby IntelliSense.
+Sugestie IntelliCode są wyświetlane w standardowych technologii IntelliSense interfejsie użytkownika Visual Studio dla języka C#. Rozszerzenia, które zastępują ten interfejs użytkownika uniemożliwia sugestie "oznaczone" IntelliCode pojawianiu się u góry listy. Aby sprawdzić, czy rozszerzenia są przyczyną to zachowanie, wyłączając je i podjęcie ponownej próby IntelliSense.
 
-Jeśli to nie rozwiąże problemu, dla Ciebie, zgłoś problem za pomocą programu Visual Studio [zgłosić Problem](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) funkcji i wspomina IntelliCode w raporcie.
+Jeśli to nie rozwiąże problemu, dla Ciebie, zgłoś problem za pomocą programu Visual Studio [Zgłoś Problem](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) funkcji i wspomnieć o IntelliCode w raporcie.
 
-## Q. Jakie wydania programu Visual Studio należy uruchomić tego rozszerzenia?
+## PYTANIA I ODPOWIEDZI. Jakie wersji programu Visual Studio należy uruchomić to rozszerzenie?
 
-Rozszerzenia programu Visual Studio IntelliCode jest obsługiwana dla programu Visual Studio 2017 wersji 15.7 preview 5 i nowsze (wszystkie jednostki SKU). Instalacja rozszerzenia zostanie zatrzymany z "to rozszerzenie nie jest w żadnym z aktualnie zainstalowanych produktów." Jeśli nie masz zainstalowanej minimalnej wymaganej wersji.
+Rozszerzenie Visual Studio IntelliCode jest obsługiwana w wersji 15.7 programu Visual Studio 2017 w wersji zapoznawczej 5 i nowsze (wszystkie jednostki SKU). Instalacja rozszerzenia zostanie zatrzymany z "to rozszerzenie nie jest możliwe na żadnym z aktualnie zainstalowanych produktów". Jeśli nie ma minimalnej wymaganej wersji zainstalowane.
 
-## Q. Jest to środowisko dostępna tylko w języku angielskim?
+## PYTANIA I ODPOWIEDZI. Jest to środowisko dostępna tylko w języku angielskim?
 
-IntelliCode to rozszerzenie Podgląd dzisiaj i firma Microsoft chętnie dowiedzieć, jak przydatne te funkcje są dla szerokiego zakresu klientów. Gdy traktujemy IntelliCode poza Podgląd teraz pewnością przyjrzymy się które ustawień regionalnych lub język do obsługi pierwszy oraz sposób przygotowania, na podstawie tych informacji.
+IntelliCode to rozszerzenie w wersji zapoznawczej już dziś i chcielibyśmy się dowiedzieć, jak użyteczne te funkcje są dla szerokiego zakresu klientów. Gdy podejmujemy IntelliCode poza wersję zapoznawczą teraz bez obaw przyjrzymy się które ustawień regionalnych lub język na potrzeby obsługi pierwszy i jak jest spakowany, na podstawie tych opinii.
 
-## <a name="privacy"/> Pytanie: jak prywatności? Jest wysyłany mojego kodu w chmurze? Jakie dane klienta są wysyłane do firmy Microsoft?
+## <a name="privacy"/> P: co mogę zrobić informacji o prywatności? Jest wysyłany jest kod w chmurze? Jakie dane klienta są wysyłane do firmy Microsoft?
 
-Deweloperzy zaproszono środowisko Visual Studio IntelliCode dzisiaj jako rozszerzenie eksperymentalne podglądu. Celem rozszerzenia jest umożliwienie deweloperom do testowania IntelliCode jego możliwości i wyrazić swoją opinię do zespołu produktu.
+Deweloperzy są zaproszeni do środowiska Visual Studio IntelliCode w obecnie jako rozszerzenie eksperymentalnej wersji zapoznawczej. Cel rozszerzenia jest umożliwiają deweloperom, aby przetestować funkcje IntelliCode i aby przekazać opinię do zespołu produktu.
 
-Firma Microsoft przechwytywania niektórych anonimowe dane o użyciu i raportowanie błędów z rozszerzenia, aby pomóc w ulepszaniu tego produktu. Brak kodu użytkownika jest wysyłane do firmy Microsoft, ale zbierane są informacje dotyczące sposobu używania IntelliCode wyników. Dane obejmują tylko open source i typów .NET i elementów członkowskich, które wybrany z listy przez IntelliCode. Deweloperzy mogą zrezygnować z [Program poprawy jakości obsługi programu Visual Studio](../../ide/visual-studio-experience-improvement-program.md), która wyłącza zbieranie danych dla rozszerzenia IntelliCode zbyt. Na pasku menu wybierz **pomocy** > **Prześlij opinię** > **ustawienia**. W **Program poprawy jakości obsługi programu Visual Studio** okno dialogowe, wybierz opcję **nie, nie chcę brać udziału** , a następnie wybierz **OK**.
+Przechwytujemy niektóre anonimowe dane dotyczące użycia i raportowanie błędów z rozszerzenia, aby pomóc w ulepszaniu produktu. Brak kodu użytkownika są wysyłane do firmy Microsoft, ale firma Microsoft gromadzi informacje o sposobie używania IntelliCode wyników. Dane obejmują tylko typu open source i platformy .NET typów i elementów członkowskich, które wybrane z listy sugerowanych IntelliCode. Deweloperzy mogą zrezygnować z [Visual Studio Experience Improvement Program](../../ide/visual-studio-experience-improvement-program.md), która wyłącza zbieranie danych dla rozszerzenia IntelliCode zbyt. Na pasku menu wybierz **pomocy** > **Wyślij opinię** > **ustawienia**. W **Visual Studio Experience Improvement Program** okno dialogowe, wybierz opcję **nie, nie chcę uczestniczyć** , a następnie wybierz **OK**.
 
-Rozszerzenie IntelliCode mogą okresowo skontaktuj się z deweloperem przeprowadzenie ankietę ponownie jest anonimowy. Użytkownicy mogą rejestrować się aktualności i przyszłych prywatnej wersji zapoznawczej, ale obecnie nie są wymagane w tym celu próbę użycia rozszerzenia eksperymentalne.
+Rozszerzenie IntelliCode może okresowo prosić deweloperowi na ukończenie ankietę ponownie są anonimowe. Użytkownicy, można zarejestrować nowości i przyszłych prywatnej wersji zapoznawczej, ale obecnie nie są wymagane w tym celu próbę użycia rozszerzenia eksperymentalne.
 
-Przyszłe funkcje mogą wymagać dostępu do usługi, który wymaga rejestracji. Firma Microsoft będzie publikować więcej szczegółów, jeśli te funkcje są gotowe do prywatnej wersji zapoznawczej.
+Przyszłych funkcji mogą wymagać dostępu do usługi, które będą wymagać rejestracji. Opublikujemy więcej szczegółów, jeśli te funkcje są gotowe do prywatnej wersji zapoznawczej.

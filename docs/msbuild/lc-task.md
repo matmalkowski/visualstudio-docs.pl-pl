@@ -20,33 +20,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b80d43a291f5afaf9be34ad5b7f1f7a474ba93e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 870661c8c28a164b2156009e1327e03cabfcfa48
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574210"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077639"
 ---
 # <a name="lc-task"></a>LC — Zadanie
-LC.exe zawija generuje plik .license z .licx — plik. Aby uzyskać więcej informacji o LC.exe, zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).  
+Opakowuje *LC.exe*, która generuje *.license* plik wchodzącej w skład *licx* pliku. Aby uzyskać więcej informacji na temat *LC.exe*, zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametrów dla `LC` zadań.  
+ W poniższej tabeli opisano parametry `LC` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`LicenseTarget`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa, dla których są generowane pliki .licenses — plik wykonywalny.|  
-|`NoLogo`|Opcjonalne `Boolean` parametru.<br /><br /> Pomija wyświetlanie transparentu startowego firmy Microsoft.|  
-|`OutputDirectory`|Opcjonalne `String` parametru.<br /><br /> Określa katalog, w którym można umieścić pliki wyjściowe .licenses —.|  
-|`OutputLicense`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru wyjściowego.<br /><br /> Określa nazwę .licenses — plik. Jeśli nazwa nie zostanie określona, zostanie użyta nazwa .licx — plik i .licenses — plik znajduje się w katalogu, który zawiera .licx — plik.|  
-|`ReferencedAssemblies`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa składniki do którego istnieje odwołanie do załadowania podczas generowania pliku .license.|  
-|`SdkToolsPath`|Opcjonalne `String` parametru.<br /><br /> Określa ścieżkę do narzędzia zestawu SDK, takich jak resgen.exe.|  
-|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy, które zawierają licencjonowane składniki do uwzględnienia w .licenses — plik. Aby uzyskać więcej informacji, zobacz dokumentację `/complist` przełącznika w [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).|  
+|`LicenseTarget`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa plik wykonywalny, dla którego *licenses* pliki są generowane.|  
+|`NoLogo`|Opcjonalnie `Boolean` parametru.<br /><br /> Pomija wyświetlanie transparentu startowego firmy Microsoft.|  
+|`OutputDirectory`|Opcjonalnie `String` parametru.<br /><br /> Określa katalog, w której chcesz umieścić dane wyjściowe *licenses* plików.|  
+|`OutputLicense`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa nazwę *licenses* pliku. Jeśli nie określisz nazwy, nazwa *licx* plik jest używany i *licenses* plik zostanie umieszczony w katalogu, który zawiera *licx* pliku.|  
+|`ReferencedAssemblies`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa odwołania składniki można załadować podczas generowania *.license* pliku.|  
+|`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe*.|  
+|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy, które zawierają licencjonowanych składników, które mają zostać objęte *licenses* pliku. Aby uzyskać więcej informacji, zobacz dokumentację dla `/complist` przełącznika w [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).|  
   
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.ToolTaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [tooltaskextension — klasa podstawowa](../msbuild/tooltaskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `LC` zadań do kompilacji licencji.  
+ W poniższym przykładzie użyto `LC` zadanie, aby skompilować licencji.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -68,6 +68,6 @@ LC.exe zawija generuje plik .license z .licx — plik. Aby uzyskać więcej info
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;fileassociation —&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f59ef1d00951d4c49c1bcb19c6c9122e281c3ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561080"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080028"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elementu (aplikacji ClickOnce)
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileassociation —&gt; — element (aplikacja ClickOnce)
 Określa rozszerzenie pliku do skojarzenia z aplikacją.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <fileAssociation  
     xmlns="urn:schemas-microsoft-com:clickonce.v1"  
     extension  
@@ -39,25 +39,25 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `fileAssociation` Element jest opcjonalny. Element ma następujące atrybuty.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `fileAssociation` Element jest opcjonalne. Element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`extension`|Wymagana. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
-|`description`|Wymagana. Opis typów plików do użytku przez powłokę.|  
-|`progid`|Wymagana. Nazwa, który unikatowo identyfikuje typ pliku.|  
-|`defaultIcon`|Wymagana. Określa ikonę do używania plików dla tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<pliku > Element](../deployment/file-element-clickonce-application.md) w [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
+|`extension`|Wymagane. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
+|`description`|Wymagane. Opis typu plików do użytku przez powłokę.|  
+|`progid`|Wymagane. Nazwa, który unikatowo identyfikuje typ pliku.|  
+|`defaultIcon`|Wymagane. Określa ikonę do używania z plików z tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<Plik > Element](../deployment/file-element-clickonce-application.md) w ramach [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi występować po `<application>` elementu nadrzędnego [ \<zestawu > elementu](../deployment/assembly-element-clickonce-application.md).  
+ Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi być późniejsza `<application>` elementu w jego element nadrzędny [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie spowoduje zastąpienie istniejącego skojarzenia plików. Jednak aplikacji ClickOnce, mogą zastąpić rozszerzenie pliku dla bieżącego użytkownika. Po odinstalowaniu tej aplikacji ClickOnce ClickOnce usuwa skojarzenie pliku dla użytkownika i skojarzenie dla poszczególnych komputerów active ponownie.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie spowoduje zastąpienie istniejących skojarzeń plików. Aplikacja ClickOnce może jednak zmienić rozszerzenie pliku dla bieżącego użytkownika. Po odinstalowaniu tej aplikacji ClickOnce ClickOnce spowoduje usunięcie skojarzenia pliku dla użytkownika, a następnie ponownie skojarzenia komputera jest aktywny.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje `fileAssociation` elementów w aplikacji manifestu dla aplikacji edytora tekstu, wdrożenie za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ten przykładowy kod zawiera również [ \<pliku > Element](../deployment/file-element-clickonce-application.md) wymagane przez `defaultIcon` atrybutu.  
+ W poniższym przykładzie kodu pokazano `fileAssociation` elementów w aplikacji manifestu dla aplikacji edytora tekstu, wdrożone za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ten przykładowy kod zawiera również [ \<Plik > Element](../deployment/file-element-clickonce-application.md) wymagane przez `defaultIcon` atrybutu.  
   
-```  
+```xml  
 <file name="text.ico" size="4286">  
   <hash>  
     <dsig:Transforms>  
@@ -80,5 +80,5 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

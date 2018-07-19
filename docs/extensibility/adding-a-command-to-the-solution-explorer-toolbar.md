@@ -1,5 +1,5 @@
 ---
-title: Dodawanie polecenia na pasku narzędzi Eksplorator rozwiązań | Dokumentacja firmy Microsoft
+title: Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,39 +15,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f732900ff3e73decb1dc01d5c131e26ba50669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92f14710646925778cb55f7e6e6d16f456ef496b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107390"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078415"
 ---
-# <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Dodawanie polecenia na pasku narzędzi Eksplorator rozwiązań
-W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań** paska narzędzi.  
+# <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Dodaj polecenie do paska narzędzi Eksploratora rozwiązań
+W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi.  
   
- Dowolnego polecenia na pasku narzędzi lub menu jest nazywany przycisku w programie Visual Studio. Po kliknięciu przycisku wykonywany jest kod obsługi polecenia. Zazwyczaj polecenia powiązane są zgrupowane w celu jedną grupę. Menu i pasków narzędzi działają jak kontenery grup. Priorytet określa kolejność wyświetlania poszczególnych poleceń w grupie w menu lub na pasku narzędzi. Aby zapobiec przycisk będzie wyświetlany na pasku narzędzi lub menu kontrolując jej widoczność. Polecenie, które ma na liście `<VisibilityConstraints>` sekcji pliku vsct pojawia się tylko w kontekście skojarzone. Widoczność nie może być stosowany do grup.  
+ Dowolnego polecenia na pasku narzędzi lub menu nosi nazwę przycisku w programie Visual Studio. Po kliknięciu przycisku, jest wykonywany kod w program obsługi poleceń. Zazwyczaj powiązane polecenia są grupowane razem tworzą jedną grupę. Menu i paski narzędzi działają jak kontenery dla grupy. Priorytet określa kolejność wyświetlania pojedynczych poleceń w grupie w menu lub na pasku narzędzi. Aby uniemożliwić przycisku są wyświetlane na pasku narzędzi lub menu poprzez kontrolowanie jego widoczność. Polecenia, który znajduje się w `<VisibilityConstraints>` części *vsct* pliku pojawia się tylko w skojarzonego kontekstu. Widoczność nie może być stosowany do grup.  
   
- Aby uzyskać więcej informacji na temat menu, paska narzędzi poleceń i vsct plików, zobacz [polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Aby uzyskać więcej informacji na temat menu i polecenia paska narzędzi i *vsct* plików, zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Użyj plików XML polecenia tabeli (vsct) zamiast pliki konfiguracji (.ctc) tabeli poleceń do definiowania wygląd menu i poleceń w Twojej VSPackages. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+>  Użyj tabeli poleceń XML (*vsct*) plików zamiast Konfiguracja tabeli poleceń (*.ctc*) pliki do definiowania sposobu wyświetlania menu i poleceń w swojej pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia Menu  
- Tworzenie projektu VSIX o nazwie `SolutionToolbar`. Dodaj szablon elementu menu polecenie o nazwie **ToolbarButton**. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+## <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu  
+ Utwórz projekt VSIX, o nazwie `SolutionToolbar`. Dodaj szablon elementu polecenia menu o nazwie **ToolbarButton**. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Dodawanie przycisku w pasku narzędzi Eksplorator rozwiązań  
- Ta część przewodnika pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań** paska narzędzi. Po kliknięciu przycisku jest uruchamiany kod w metodzie wywołania zwrotnego.  
+## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Dodaj przycisk na pasku narzędzi Eksploratora rozwiązań  
+ Tej części instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi. Po kliknięciu przycisku uruchamiania kodu w metodzie wywołania zwrotnego.  
   
-1.  W pliku ToolbarButtonPackage.vsct, przejdź do `<Symbols>` sekcji. `<GuidSymbol>` Węzeł zawiera grupy menu i poleceń, który został wygenerowany przez szablon pakietu. Dodaj `<IDSymbol>` elementu, aby ten węzeł, aby zadeklarować grupy, w którym będą przechowywane polecenia.  
+1.  W *ToolbarButtonPackage.vsct* pliku, przejdź do `<Symbols>` sekcji. `<GuidSymbol>` Węzeł zawiera grupy menu i poleceń, który został wygenerowany przez szablon pakietu. Dodaj `<IDSymbol>` elementu do tego węzła do deklarowania grupy, w którym będą przechowywane do swojej dyspozycji.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  W `<Groups>` sekcji po istniejący wpis grupy, zdefiniuj nową grupę, która można zadeklarować w poprzednim kroku.  
+2.  W `<Groups>` sekcji po istniejący wpis grupy zdefiniować nową grupę, zadeklarowanej w poprzednim kroku.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -56,9 +56,9 @@ W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań*
           </Group>  
     ```  
   
-     Ustawienie nadrzędnego pary GUID:ID `guidSHLMainMenu` i `IDM_VS_TOOL_PROJWIN` umieszcza w tej grupie **Eksploratora rozwiązań** narzędzi, a ustawienie wartości o wysokim priorytecie umieszcza je od innych grup polecenia.  
+     Ustawienie nadrzędnego pary GUID:ID `guidSHLMainMenu` i `IDM_VS_TOOL_PROJWIN` umieszcza tę grupę na **Eksploratora rozwiązań** narzędzi i ustawienie wartości o wysokim priorytecie umieszcza go od innych grup poleceń.  
   
-3.  W `<Buttons>` sekcji, zmień identyfikator elementu nadrzędnego wygenerowany `<Button>` wpis w celu uwzględnienia grupy, który został zdefiniowany w poprzednim kroku. Zmodyfikowane `<Button>` element powinien wyglądać następująco:  
+3.  W `<Buttons>` sekcji, zmień identyfikator elementu nadrzędnego w wygenerowanym `<Button>` wpis w celu uwzględnienia grupy, które są zdefiniowane w poprzednim kroku. Zmodyfikowanego `<Button>` element powinien wyglądać następująco:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -70,29 +70,29 @@ W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań*
     </Button>  
     ```  
   
-4.  Skompiluj projekt i Rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie.  
+4.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-     **Eksploratora rozwiązań** na prawo od istniejących przycisków paska narzędzi powinien być wyświetlany nowy przycisk polecenia. Ikona przycisku jest przekreślenia.  
+     **Eksploratora rozwiązań** na prawo od istniejących przycisków paska narzędzi powinien być wyświetlany nowy przycisk polecenia. Ikona przycisku jest przekreślenie.  
   
 5.  Kliknij przycisk Nowy.  
   
-     Okno dialogowe ma wiadomości **ToolbarButtonPackage wewnątrz SolutionToolbar.ToolbarButton.MenuItemCallback()** powinien być wyświetlany.  
+     Okno dialogowe z komunikatu **ToolbarButtonPackage wewnątrz SolutionToolbar.ToolbarButton.MenuItemCallback()** powinien być wyświetlany.  
   
-## <a name="controlling-the-visibility-of-a-button"></a>Kontrolowanie widoczności przycisku  
- Ta część przewodnika pokazano, jak ustawić widoczność przycisku paska narzędzi. Ustawiając jeden lub więcej projektów w kontekście `<VisibilityConstraints>` sekcji pliku SolutionToolbar.vsct ograniczyć przycisk się pojawić tylko po projektu lub projektów są otwarte.  
+## <a name="control-the-visibility-of-a-button"></a>Kontrolowanie widoczności przycisku  
+ Tej części instruktażu pokazano, jak kontrolować widoczność przycisku paska narzędzi. Ustawiając jeden lub więcej projektów w kontekście `<VisibilityConstraints>` części *SolutionToolbar.vsct* pliku, można ograniczyć przycisku, aby są wyświetlane tylko kiedy projekt lub projekty są otwarte.  
   
-#### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Do wyświetlania przycisku, gdy jeden lub więcej projektów są otwarte  
+### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Aby wyświetlić przycisk, gdy jeden lub więcej projektów są otwarte  
   
-1.  W `<Buttons>` sekcji ToolbarButtonPackage.vsct, dodać dwie flagi polecenia do istniejącego `<Button>` elementu, między `<Strings>` i `<Icons>` tagów.  
+1.  W `<Buttons>` części *ToolbarButtonPackage.vsct*, dodać dwie flagi polecenia do istniejącej `<Button>` elementu, między `<Strings>` i `<Icons>` tagów.  
   
     ```xml  
     <CommandFlag>DefaultInvisible</CommandFlag>  
     <CommandFlag>DynamicVisibility</CommandFlag>  
     ```  
   
-     `DefaultInvisible` i `DynamicVisibility` flagi musi być ustawiona dlatego w tym wpisy `<VisibilityConstraints>` sekcji zostały wprowadzone.  
+     `DefaultInvisible` i `DynamicVisibility` flagi musi być ustawiona tak że wpisy w `<VisibilityConstraints>` sekcji zostały wprowadzone.  
   
-2.  Utwórz `<VisibilityConstraints>` sekcja, która ma dwa `<VisibilityItem>` wpisów. Umieść nową sekcję tylko po upływie `</Commands>` tagu.  
+2.  Tworzenie `<VisibilityConstraints>` sekcja, która ma dwa `<VisibilityItem>` wpisów. Umieść nową sekcję zaraz po zamykającym `</Commands>` tagu.  
   
     ```xml  
     <VisibilityConstraints>  
@@ -105,19 +105,19 @@ W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań*
     </VisibilityConstraints>  
     ```  
   
-     Każdy element widoczność reprezentuje warunku, pod którym jest wyświetlany przycisk określony. Aby zastosować wiele warunków, należy utworzyć wiele pozycji dla tego samego przycisku.  
+     Każdy element widoczność reprezentuje warunek, pod którym jest wyświetlana określonego przycisku. Aby zastosować wiele warunków, należy utworzyć wiele pozycji dla tego samego przycisku.  
   
-3.  Skompiluj projekt i Rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie.  
+3.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-     **Eksploratora rozwiązań** paska narzędzi nie zawiera przycisk przekreślenia.  
+     **Eksploratora rozwiązań** paska narzędzi nie zawiera przycisk przekreślenie.  
   
-4.  Otwórz dowolnego rozwiązania, które zawiera projekt.  
+4.  Otwórz dowolnego rozwiązania zawierającego projekt.  
   
-     Na pasku narzędzi z prawej strony istniejące przyciski pojawi się przycisk przekreślenia.  
+     Przycisk będzie już przekreślanych pojawia się na pasku narzędzi po prawej stronie istniejące przyciski.  
   
 5.  Na **pliku** menu, kliknij przycisk **Zamknij rozwiązanie**. Przycisk zniknie z paska narzędzi.  
   
- Widoczność przycisku jest kontrolowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakiet VSPackage. Po załadowaniu pakiet VSPackage widoczność przycisku jest kontrolowana przez pakiet VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands Vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
+ Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands programu vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

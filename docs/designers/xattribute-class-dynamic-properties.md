@@ -1,5 +1,5 @@
 ---
-title: Właściwości dynamiczne XAttribute — klasa
+title: Właściwości dynamiczne klasy XAttribute
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926917"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077190"
 ---
-# <a name="xattribute-class-dynamic-properties"></a>Właściwości dynamiczne XAttribute — klasa
+# <a name="xattribute-class-dynamic-properties"></a>Właściwości dynamiczne klasy XAttribute
 
-W tej sekcji opisano właściwości dynamicznych <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
+W tej sekcji opisano właściwości dynamicznych z <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
 
 ## <a name="in-this-section"></a>W tej sekcji
 

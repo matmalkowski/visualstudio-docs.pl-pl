@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisheridentity —&gt; — Element (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;publisheridentity —&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815145"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081413"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisheridentity —&gt; — Element (wdrażania ClickOnce)
-Zawiera informacje o wydawcy, który podpisał tego manifestu wdrożenia.  
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisheridentity —&gt; — element (wdrażanie ClickOnce)
+Zawiera informacje o wydawcy, który podpisał tego manifestu wdrażania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ Zawiera informacje o wydawcy, który podpisał tego manifestu wdrożenia.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `publisherIdentity` Element jest wymagany dla podpisanych manifestów. W poniższej tabeli przedstawiono atrybuty `publisherIdentity` obsługuje elementu.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `publisherIdentity` Element jest wymagany dla podpisanych manifestów. W poniższej tabeli przedstawiono atrybuty `publisherIdentity` obsługuje element.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Wymagana. Opisuje tożsamości strony, która wydała tej aplikacji.|  
-|`issuerKeyHash`|Wymagana. Zawiera skrótu SHA-1 wystawcy certyfikatu klucza publicznego.|  
+|`name`|Wymagane. W tym artykule opisano tożsamości innych firm, która opublikowała tę aplikację.|  
+|`issuerKeyHash`|Wymagane. Zawiera skrót SHA-1 wystawca certyfikatu klucza publicznego.|  
   
 #### <a name="parameters"></a>Parametry  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość  
   
 ## <a name="exceptions"></a>Wyjątki  
   

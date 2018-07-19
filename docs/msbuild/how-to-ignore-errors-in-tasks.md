@@ -11,39 +11,39 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578604"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081478"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Porady: ignorowanie błędów w zadaniach
-Czasami ma kompilacji jako odporna na błędy w niektórych zadań. Jeśli te zadania niekrytyczne zakończą się niepowodzeniem, które mają kompilacji, aby kontynuować, ponieważ nadal powodują wymagane dane wyjściowe. Na przykład, jeśli projekt używa `SendMail` zadanie, aby wysłać wiadomość e-mail po utworzeniu każdego składnika można rozważyć go akceptowalne dla kompilacji przejść do ukończenia, nawet w przypadku serwerów poczty są niedostępne i nie można wysyłać komunikaty o stanie. Lub, na przykład, jeśli plików pośrednich zwykle są usuwane podczas kompilacji, można rozważyć go akceptowalne dla kompilacji przejść do ukończenia, nawet wtedy, gdy nie można usunąć tych plików.  
+Czasami chcesz być odporne na błędy w wykonywaniu pewnych zadań kompilacji. Jeśli te krytyczne zadania nie powiedzie się, które mają kompilacji, aby kontynuować, ponieważ nadal może utworzyć wymagane dane wyjściowe. Na przykład, jeśli projekt używa `SendMail` zadanie, aby wysłać wiadomość e-mail po utworzeniu każdego składnika, warto rozważyć je dopuszczalny dla kompilacji przejść do ukończenia, nawet wtedy, gdy serwery poczty są niedostępne i nie można wysłać komunikaty o stanie. Lub, na przykład, jeśli pliki pośrednie zwykle są usuwane podczas kompilacji, można rozważyć jej dopuszczalny dla kompilacji przejść do ukończenia, nawet wtedy, gdy nie można usunąć tych plików.  
   
-## <a name="using-the-continueonerror-attribute"></a>Za pomocą atrybutu ContinueOnError  
- `ContinueOnError` Atrybutu `Task` element określa, czy kompilacja zatrzymuje się lub będzie kontynuowane po wystąpieniu błędu zadania. Ten atrybut kontroluje również, czy błędy są traktowane jako błędy lub ostrzeżenia podczas kompilacji będzie kontynuowane.  
+## <a name="use-the-continueonerror-attribute"></a>Użyj ContinueOnError — atrybut  
+ `ContinueOnError` Atrybutu `Task` element kontroluje, czy kompilacja zatrzymuje się lub być kontynuowana po wystąpieniu awarii zadań. Ten atrybut określa również, czy błędy są traktowane jako błędy lub ostrzeżenia, gdy kontynuuje kompilację.  
   
  `ContinueOnError` Atrybut może zawierać jedną z następujących wartości:  
   
--   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) element i kompilacji, nadal można wykonać, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.  
+-   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.  
   
--   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` element i kompilacji, nadal można wykonać, a wszystkie błędy z zadania są traktowane jako błędy.  
+-   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.  
   
--   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na `Target` element i kompilacji nie są wykonywane i całą `Target` element i kompilacji jest traktowane jako powiodła się.  
+-   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na `Target` elementu i kompilacja nie są wykonywane i całą `Target` elementu i kompilacja jest uważany za nie powiodło się.  
   
- Wersje programu .NET Framework, przed 4.5 obsługiwane tylko `true` i `false` wartości.  
+ Wersje programu .NET Framework przed 4.5 obsługiwane tylko `true` i `false` wartości.  
   
- Wartość domyślna `ContinueOnError` jest `ErrorAndStop`. Jeśli ustawiono atrybut `ErrorAndStop`, wprowadzeniu zachowanie jawne osobom czytającym pliku projektu.  
+ Wartość domyślna `ContinueOnError` jest `ErrorAndStop`. Jeśli ten atrybut zostanie ustawiony `ErrorAndStop`, wprowadzeniu zachowanie jawne dla każdego, kto czyta pliku projektu.  
   
-#### <a name="to-ignore-an-error-in-a-task"></a>Aby zignorować błąd w zadanie  
+#### <a name="to-ignore-an-error-in-a-task"></a>Ignorowanie błędu w zadaniu  
   
 -   Użyj `ContinueOnError` atrybut zadania. Na przykład:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje, że `Build` docelowej nadal działa i kompilacji jest uznawany za Powodzenie, nawet jeśli `Delete` zadań kończy się niepowodzeniem.  
+ Poniższy przykład kodu pokazuje, że `Build` docelowej nadal działa i kompilacja, jest uznawany za sukces, nawet jeśli `Delete` zadań kończy się niepowodzeniem.  
   
 ```xml  
 <Project DefaultTargets="FakeBuild"  
@@ -61,7 +61,7 @@ Czasami ma kompilacji jako odporna na błędy w niektórych zadań. Jeśli te za
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [MSBuild](../msbuild/msbuild.md)  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Zadania](../msbuild/msbuild-tasks.md)
+[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
+[Zadania](../msbuild/msbuild-tasks.md)

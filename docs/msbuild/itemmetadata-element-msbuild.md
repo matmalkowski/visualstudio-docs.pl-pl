@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d90f1bb73b4d327cc1deabc94fbb4f97c8421e69
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 78e9bfffc38ac54ec7aeb525665dc7e3a8927f74
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302781"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080492"
 ---
-# <a name="itemmetadata-element-msbuild"></a>ItemMetadata — Element (MSBuild)
-Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  
+# <a name="itemmetadata-element-msbuild"></a>Itemmetadata — element (MSBuild)
+Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  
 
  \<Project>  
  \<ItemGroup>  
@@ -45,7 +45,7 @@ Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawier
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -54,17 +54,15 @@ Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawier
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element](../msbuild/item-element-msbuild.md)|Element zdefiniowane przez użytkownika, który definiuje dane wejściowe dla procesu kompilacji.|  
+|[Element](../msbuild/item-element-msbuild.md)|Element zdefiniowany przez użytkownika, który definiuje dane wejściowe dla procesu kompilacji.|  
 
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest opcjonalna.  
 
  Ten tekst Określa wartość elementu metadanych, które mogą być tekstem lub XML.  
 
-## <a name="remarks"></a>Uwagi  
-
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.  
+ W poniższym przykładzie kodu przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.  
 
 ```xml  
 <ItemGroup>  
@@ -74,6 +72,6 @@ Zawiera klucz metadanych elementu zdefiniowane przez użytkownika, który zawier
 </ItemGroup>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementy](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: Wartość (właściwość XAttribute dynamiczny)
+title: Wartość (właściwość dynamiczna XAttribute)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -13,26 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19808b10c64b469d3d9191fa2e4fc282d7696c5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c31179d33467f6be440882bce6f6cd9559d9a00
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923594"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080827"
 ---
-# <a name="value-xattribute-dynamic-property"></a>Wartość (właściwość XAttribute dynamiczny)
+# <a name="value-xattribute-dynamic-property"></a>Wartość (właściwość dynamiczna XAttribute)
 
 Pobiera lub ustawia wartość atrybutu XML.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xaml
 attrib.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
 
-A <xref:System.String> zawierający wartość tego atrybutu.
+Element <xref:System.String> zawierający wartość tego atrybutu.
 
 ## <a name="exceptions"></a>Wyjątki
 
@@ -42,7 +42,7 @@ A <xref:System.String> zawierający wartość tego atrybutu.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest odpowiednikiem <xref:System.Xml.Linq.XAttribute.Value%2A> właściwość <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> klasy, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianie.
+Ta właściwość jest równoważna <xref:System.Xml.Linq.XAttribute.Value%2A> właściwość <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> klasy, ale ta właściwość dynamiczna obsługuje również powiadomienia o zmianach.
 
 ## <a name="see-also"></a>Zobacz także
 

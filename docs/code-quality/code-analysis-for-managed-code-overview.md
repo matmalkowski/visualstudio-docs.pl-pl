@@ -14,38 +14,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7b992dadb703cf1c4f73830324e9934d7525645
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920460"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131885"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla zarządzanego kodu
+# <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla kodu zarządzanego
 
-Visual Studio 2017 analizuje kodu zarządzanego na dwa sposoby: z starszych *FxCop* analizy statycznej zarządzanych zestawów i z platformą kompilatora .NET *analizatorów*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów platformy kompilatora .NET, zobacz [analizatorów omówienie Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Program Visual Studio 2017 analizuje kod zarządzany na dwa sposoby: za pomocą starszej wersji *FxCop* analizy statycznej zestawów zarządzanych, a dzięki platformie kompilatora .NET *analizatory*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów platformie kompilatora .NET, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
-Analiza kodu dla kodu zarządzanego analizuje zarządzanych zestawów i raportuje informacje o zestawy, takie jak naruszenia programowania i reguły projektowania określonymi w wytycznych projektowych programu Microsoft .NET Framework.
+Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia programowania i projektowania reguły określone w wytycznych projektowych programu Microsoft .NET Framework.
 
-Narzędzie do analizy reprezentuje kontroli, którą wykonuje jako komunikaty ostrzegawcze podczas analizy. Komunikaty ostrzegawcze identyfikację problemów odpowiednich programowania i projektowania oraz, jeśli jest to możliwe, dostawy informacji na temat sposobu rozwiązania problemu.
+Narzędzie do analizy reprezentuje kontrole wykonywane podczas analizy jako komunikaty ostrzegawcze. Komunikaty ostrzegawcze identyfikują wszystkie istotne błędy programowania i projektowania i gdy jest możliwe, dostarczają informacji na temat sposobu rozwiązania problemu.
 
-## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)
+> [!NOTE]
+> Statyczna analiza kodu nie jest obsługiwana dla projektów .NET Core i .NET Standard w programie Visual Studio. Po uruchomieniu analizy kodu dla projektu .NET Core lub .NET Standard w ramach programu msbuild, zobaczysz błąd podobny do **błąd: CA0055: nie można zidentyfikować platformy dla \<your.dll >**. Aby przeanalizować kod w projektach .NET Core lub .NET Standard, należy użyć [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md) zamiast tego.
 
-Ręcznie lub automatycznie, można uruchomić analizy kodu w projekcie.
+## <a name="ide-integrated-development-environment-integration"></a>Integracja z IDE (zintegrowanym środowiskiem programistycznym)
 
-Aby uruchomić kod — analiza za każdym razem w przypadku kompilowania projektu, zaznacz **Włącz analizę kodu podczas kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Możesz uruchomić analizę kodu projektu, ręcznie lub automatycznie.
 
-Aby ręczne przeprowadzanie analizy kodu w projekcie, na pasku menu wybierz **Analizuj** > **uruchamiania analizy kodu** > **Uruchom analizę kodu na \<projektu >**.
+Aby uruchomić analizę kodu za każdym razem, tworzysz projekt, wybierz **Włącz analizę kodu podczas kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+
+Aby ręczne przeprowadzanie analizy kodu dla projektu, na pasku menu wybierz **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<projektu >**.
 
 ## <a name="rule-sets"></a>Zestawy reguł
 
-Reguły analizy kodu dla zarządzanego kodu są podzielone na [zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Można użyć jednej z zestawów reguł standardowe firmy Microsoft, lub możesz [Tworzenie niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md) do zrealizowania konkretna potrzeba użycia.
+Reguły analizy kodu dla zarządzanego kodu są grupowane w [zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Można użyć jednej standardowych zestawów reguł Microsoft lub możesz [Tworzenie niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md) aby spełnić szczególną potrzebę.
 
 ## <a name="suppress-warnings"></a>Pomijanie ostrzeżeń
 
-Często jest przydatne do wskazywania ostrzeżenie nie dotyczy. Informuje deweloperów oraz inne osoby, które może przejrzeć kod później, że ostrzeżenie został zbadana i następnie pominięte lub ignorowane.
+Często jest to użyteczne, aby wskazać, że ostrzeżenie nie ma zastosowania. Informuje dewelopera i inne osoby, które mogą później przejrzeć kod że ostrzeżenie zostało zbadane a następnie pominięte lub ignorowane.
 
-Pomijanie w źródła ostrzeżeń jest implementowane za pośrednictwem atrybutów niestandardowych. Aby wyłączyć ostrzeżenia, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:
+Pomijanie ostrzeżeń w źródłowej jest implementowane za pomocą atrybutów niestandardowych. Aby pominąć ostrzeżenie, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -55,24 +58,24 @@ Public class MyClass
 }
 ```
 
-Aby uzyskać więcej informacji, zobacz [tłumienie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
+Aby uzyskać więcej informacji, zobacz [pomijanie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany z dużą liczbą ostrzeżenia analizy kodu. Jeśli nie są gotowe do napraw ostrzeżenia i chcesz stać się wydajni od razu, możesz *linii bazowej* stanu analizy projektu. Z **Analizuj** menu, wybierz opcję **Uruchom analizę kodu i Pomiń aktywne problemy**.
+> Jeśli migrujesz projektu programu Visual Studio 2017, nagle może być wystąpiły z dużą liczbą ostrzeżenia analizy kodu. Jeśli jesteś gotowy naprawić ostrzeżenia, a następnie od razu się w produktywności, możesz to zrobić *linii bazowej* stanu analiza projektu. Z **analizy** menu, wybierz opcję **Uruchom analizę kodu i Pomiń aktywne problemy**.
 
-## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchom jako część zasad ewidencjonowania analizy kodu
+## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchamianie analizy kodu jako części zasad ewidencjonowania
 
-Jako organizacji można wymagać, że wszystkie zaewidencjonowania spełniają określone zasady. W szczególności chcesz upewnij się, że należy wykonać te zasady:
+Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że spełnione są następujące zasady:
 
-- Nie ma żadnych błędów kompilacji w kodzie zostały zaewidencjonowane.
+- Nie ma żadnych błędów kompilacji w kodzie, które zostały zaewidencjonowane.
 
-- Kod — analiza jest uruchomiony jako część ostatniej kompilacji.
+- Uruchamianie analizy kodu jako część najnowszej kompilacji.
 
-Można to zrobić, określając zasady ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu z zasadami ewidencjowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
-## <a name="team-build-integration"></a>Integracja kompilacji Team
+## <a name="team-build-integration"></a>Integracji kompilacji zespołu
 
-Zintegrowane funkcje systemu kompilacji służy do uruchamiania narzędzia analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania (VSTS)](/vsts/build-release/index).
+Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Build and release (VSTS) i](/vsts/build-release/index).
 
 ## <a name="see-also"></a>Zobacz także
 

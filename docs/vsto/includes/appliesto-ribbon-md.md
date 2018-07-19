@@ -1,3 +1,3 @@
-  **Dotyczy:** informacje przedstawione w tym temacie dotyczą dokumentu\-poziom projektów i dodać VSTO\-w projektach dla następujących aplikacji: Excel; InfoPath 2013 i InfoPath 2010; Outlook; PowerPoint; Projektu. Visio; Word. Aby uzyskać więcej informacji, zobacz [funkcje dostępne w typu aplikacji i projektów pakietu Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Dotyczy:** informacje przedstawione w tym temacie mają zastosowanie do dokumentu\-poziomu projektów i dodać VSTO\-w projektach dla następujących aplikacji: Excel; InfoPath 2013 i InfoPath 2010; Program Outlook; PowerPoint; Projektu. Visio; Program Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../../vsto/features-available-by-office-application-and-project-type.md).
 
   

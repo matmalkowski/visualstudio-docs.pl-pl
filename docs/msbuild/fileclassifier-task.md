@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a754f5aef53eed581deb9ccafa0bf5c453d8086d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6533154b81afb96ab6874c686f0c85000ae3fef1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568353"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946722"
 ---
-# <a name="fileclassifier-task"></a>FileClassifier — Zadanie
-<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Zadań klasyfikuje zestaw zasobów źródła jako te, które zostaną osadzone w zestawie. Jeśli zasób nie jest Lokalizowalny, jest osadzony w zestawie aplikacji głównej; w przeciwnym razie jest osadzony w zestawie satelickim.  
+# <a name="fileclassifier-task"></a>Fileclassifier — zadanie
+<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Zadań klasyfikuje zestaw zasobów źródłowego, jak te, które zostaną osadzone w zestawie. Jeśli zasób nie jest możliwych do zlokalizowania, jest osadzony w głównym zestawem aplikacji; w przeciwnym razie jest osadzony w zestawie satelickim.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
@@ -36,17 +36,17 @@ ms.locfileid: "31568353"
 |`CLREmbeddedResource`|Nieużywane.|  
 |`CLRResourceFiles`|Nieużywane.|  
 |`CLRSatelliteEmbeddedResource`|Nieużywane.|  
-|`Culture`|Opcjonalne **ciąg** parametru.<br /><br /> Określa kulturę dla kompilacji. Ta wartość może być **null** Jeśli kompilacja jest niemożliwe do zlokalizowania. Jeśli **null**, wartością domyślną jest wartość małe **wartość CultureInfo.InvariantCulture** zwraca.|  
-|`MainEmbeddedFiles`|Opcjonalne **[ITaskItem]** parametru wyjściowego.<br /><br /> Określa zasoby niemożliwe do zlokalizowania, które są osadzone w zestawie głównym.|  
-|`OutputType`|Wymagane **ciąg** parametru.<br /><br /> Określa typ pliku do plików źródłowych określonej do osadzenia. Prawidłowe wartości to **exe**, **winexe**, lub **biblioteki**.|  
-|`SatelliteEmbeddedFiles`|Opcjonalne **[ITaskItem]** parametru wyjściowego.<br /><br /> Określa Lokalizowalny pliki, które są osadzone w zestawu satelickiego dla kultury określonej przez **kultury** parametru.|  
-|`SourceFiles`|Wymagane **[ITaskItem]** parametru.<br /><br /> Określa listę plików do klasyfikowania.|  
+|`Culture`|Opcjonalnie **ciąg** parametru.<br /><br /> Określa kulturę dla kompilacji. Ta wartość może być **null** Jeśli kompilacja jest niemożliwe do zlokalizowania. Jeśli **null**, wartością domyślną jest wartość małej litery, która **CultureInfo.InvariantCulture** zwraca.|  
+|`MainEmbeddedFiles`|Opcjonalnie **[] ITaskItem** parametr wyjściowy.<br /><br /> Określa zasoby niemożliwe do zlokalizowania, które są osadzone w głównym zestawie.|  
+|`OutputType`|Wymagane **ciąg** parametru.<br /><br /> Określa typ pliku w celu osadzenia plików źródłowych określonej w. Prawidłowe wartości to **exe**, **winexe**, lub **biblioteki**.|  
+|`SatelliteEmbeddedFiles`|Opcjonalnie **[] ITaskItem** parametr wyjściowy.<br /><br /> Określa możliwych do zlokalizowania plików, które są osadzone w zestawu satelickiego dla kultury określonej parametrem **kultury** parametru.|  
+|`SourceFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa listę plików do klasyfikowania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli **kultury** parametru nie jest ustawiona, wszystkie zasoby, które są określone za pomocą **SourceFiles** parametru są niemożliwe do zlokalizowania; w przeciwnym razie są one Lokalizowalny, chyba że są one powiązane z  **Lokalizowalny** atrybut, który ma ustawioną wartość **false**.  
+ Jeśli **kultury** parametr nie jest ustawiona, wszystkie zasoby, które są określone za pomocą **Pliki_źródłowe** parametru są niemożliwe do zlokalizowania; w przeciwnym razie są one możliwych do zlokalizowania, chyba że są one skojarzone z  **Lokalizowalne** atrybut, który jest ustawiony na **false**.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie klasyfikuje pliku jednego źródła jako zasób i osadza go w zestawie satelickim dla kultury French-Canadian (fr-CA).  
+ Poniższy przykład klasyfikuje jednym pliku źródłowym jako zasób i osadzenie go w zestawu satelickiego dla kultury French-Canadian (fr-CA).  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -65,9 +65,9 @@ ms.locfileid: "31568353"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+ [Kompilowanie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
