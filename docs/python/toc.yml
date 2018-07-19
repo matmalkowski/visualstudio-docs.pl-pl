@@ -8,7 +8,8 @@
 - name: Przewodniki Szybki Start
   items:
     - name: Tworzenie aplikacji internetowej za pomocą platformy Flask
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: Tworzenie projektu z szablonu
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: Tworzenie projektu z istniejącego kodu
