@@ -26,9 +26,6 @@
   items:
     - name: Analizowanie użycia procesora CPU
       href: cpu-usage.md
-      items:
-        - name: Analizowanie użycia procesora CPU za pomocą aplikacji uniwersalnej systemu Windows
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Analizowanie użycia pamięci
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Analizowanie pamięci języka JavaScript
       href: javascript-memory.md
-      items:
-        - name: 'Przewodnik: Znajdowanie wycieku pamięci (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Analizowanie użycia sieci
       href: network-usage.md
     - name: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML
       href: html-ui-responsiveness.md
-      items:
-        - name: 'Przewodnik: skracanie czasu odpowiedzi interfejsu użytkownika (HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Używanie Eksploratora wydajności
       href: performance-explorer.md
       items:

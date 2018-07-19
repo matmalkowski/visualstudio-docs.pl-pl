@@ -1,6 +1,6 @@
 ---
-title: Edytowanie kodu języka Python
-description: Python edycji w programie Visual Studio oferuje IntelliSense, fragmentów kodu i funkcje nawigacji obok formatowania, linting i refaktoryzacji.
+title: Edytowanie kodu w języku Python
+description: Edycji języka Python w programie Visual Studio zawiera funkcję IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
 ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,95 +11,95 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 454d8b0294181329c8b1c4414d8f7c70127e661c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449143"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175063"
 ---
-# <a name="editing-python-code"></a>Edytowanie kodu języka Python
+# <a name="editing-python-code"></a>Edytowanie kodu w języku Python
 
-Deweloperzy poświęcać dużo czasu w edytorze kodu tak [Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) zapewnia funkcję ułatwiającą Twoją produktywność. Cechy IntelliSense wyróżnianie składni, automatycznego uzupełniania pomocy podpisu, zamienników metod, wyszukiwania i nawigacji.
+Deweloperzy poświęcają wiele czasu w edytorze kodu, więc [obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) udostępnia funkcje ułatwiające mu bardziej wydajnej pracy. Funkcje obejmują IntelliSense wyróżniania składni, automatyczne uzupełnianie, pomocy dotyczącej sygnatur, zastąpienia metody, wyszukiwania i nawigacji.
 
-Edytor jest także zintegrowane z okno interaktywne programu Visual Studio, co ułatwia wymienić kod między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [przy użyciu okna interaktywnego — Wyślij kod, aby polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) szczegółowe informacje.
+Edytor jest także zintegrowana z okna interaktywnego w programie Visual Studio, co ułatwia wymienić kod między tymi dwoma. Zobacz [samouczek krok 3: użycie okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [użycie okna interaktywnego — Wyślij kod w celu polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) Aby uzyskać szczegółowe informacje.
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) dla pokaz edytowanie kodu języka Python (2 m 30s).|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) demonstracyjne edycji kodu w języku Python (2 mln 30 sekund).|
 
-Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w Visual Studio](../ide/outlining.md), który pomaga pozostać koncentruje się na poszczególnych sekcji kodu.
+Ogólna dokumentacja na temat edytowania kodu w programie Visual Studio, można zobaczyć [funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w programie Visual Studio](../ide/outlining.md), co pomoże Ci bieżąco koncentruje się na określonych sekcji kodu.
 
-Można również użyć przeglądarki obiektów Visual Studio (**Widok > inne okna > przeglądarki obiektów** lub Ctrl + W, J) do sprawdzania Python klas zdefiniowanych w każdym module i funkcji zdefiniowanych w tych klas.
+Można również użyć przeglądarki obiektów usługi Visual Studio (**Widok > inne Windows > przeglądarki obiektów** lub Ctrl + W, J) do sprawdzania klasy Python określone w każdym module i funkcji zdefiniowanych w tych klas.
 
 ## <a name="intellisense"></a>IntelliSense
 
-Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Visual Studio 2017 wersji 15.7 lub nowszym obsługuje również [wpisz wskazówek](#type-hints).
+Technologia IntelliSense zawiera [uzupełnienia](#completions), [pomocy dotyczącej sygnatur](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie kodu](#code-coloring). Visual Studio 2017 w wersji 15.7 lub nowszej obsługuje również [wskazówek dotyczących typów](#type-hints).
 
-Aby zwiększyć wydajność, IntelliSense w **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab)).
+Aby zwiększyć wydajność, funkcja IntelliSense w **programu Visual Studio 2017 w wersji 15.5** i wcześniej zależy od bazy danych uzupełniania, który jest generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie, jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [dokumentacja okna środowiska](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 wersji 15,6** i później używa różne sposoby, aby zapewnić zakończeń IntelliSense, które nie są zależne od bazy danych.
+**Visual Studio 2017 w wersji 15.6** później przy użyciu różnych środków dostarcza uzupełnianiu IntelliSense, które nie są zależne od bazy danych.
 
-### <a name="completions"></a>Zakończeń
+### <a name="completions"></a>Uzupełnianie
 
-Zakończeń są wyświetlane jako instrukcji, identyfikatorów i słów, które mogą być odpowiednio wprowadzone w bieżącej lokalizacji w edytorze. Co to jest wyświetlane na liście jest oparta na kontekście i jest filtrowana na pominięcie nieprawidłowe lub rozpraszać opcje. Zakończeń często są wyzwalane przez wpisanie różnych instrukcje (takie jak `import`) i operatory (w tym okresie), ale można je pojawiać się w dowolnym momencie, wpisując polecenie Ctrl-J, miejsca.
+Uzupełnianie są traktowane jako instrukcji, identyfikatorów i słów, które mogą być wprowadzane prawidłowo w bieżącej lokalizacji w edytorze. Co to jest wyświetlane na liście jest na podstawie kontekstu i jest filtrowana, aby pominąć opcje niepoprawne lub rozprasza uwagę. Uzupełnianie często są wyzwalane, wpisując różne instrukcje (takie jak `import`) i operatory (w tym okresie), ale można je pojawiają się w dowolnym momencie, wpisując Ctrl-J miejsca.
 
-![Element członkowski uzupełniania](media/code-editing-completions-simple.png)
+![Uzupełnianie składowych](media/code-editing-completions-simple.png)
 
-Po otwarciu listy uzupełniania można wyszukać uzupełnianie przy użyciu klawiszy strzałek myszy lub kontynuując do typu. Podczas wpisywania więcej liter listy dalsze są filtrowane do wyświetlenia prawdopodobnie zakończeń. Można także użyć skróty takich jak:
+Po otwarciu listy uzupełniania, można wyszukać uzupełnianie przy użyciu klawiszy strzałek, mysz, lub, przechodząc do typu. Podczas pisania więcej liter listy jest dalej filtrowana pokazanie prawdopodobnie uzupełnienia. Można również użyć skrótów takich jak:
 
-- Wpisywanie liter, które nie są na początku nazwy, takich jak analizy, aby znaleźć "argparse"
-- Wpisywanie tylko litery, które są w chwili rozpoczęcia słów, takich jak "abc", aby znaleźć "AbstractBaseClass" lub "lotniczego", aby znaleźć "as_integer_ratio"
-- Pomijanie litery, takich jak b64, aby znaleźć "base64"
+- Wpisywanie liter, które nie znajdują się na początku nazwy, np. analizy, aby znaleźć "argparse"
+- Wpisanie tylko liter, które są na początku wyrazy, takie jak "abc", aby znaleźć "AbstractBaseClass" lub "air", aby znaleźć "as_integer_ratio"
+- Pomijanie liter, takich jak b64, aby znaleźć "base64"
 
 Kilka przykładów:
 
-![Element członkowski uzupełnianie za pomocą filtrowania](media/code-editing-completion-filtering.png)
+![Uzupełnianie składowych z filtrowaniem](media/code-editing-completion-filtering.png)
 
-Członek zakończeń pojawiają się automatycznie po wpisaniu okres po wartości oraz atrybutów potencjalnych typy i metody lub zmienne. Jeśli zmienna może być więcej niż jednego typu, lista zawiera wszystkie możliwości ze wszystkich typów, z dodatkowych informacji o tym, typy, które obsługują każdego ukończenia. W przypadku, gdy zakończeniu jest obsługiwana przez wszystkie możliwe typy, jest wyświetlany bez adnotacji.
+Uzupełnienia Członkowskie pojawiają się automatycznie, gdy wpiszesz kropkę po zmiennej lub wartość, oraz metody i atrybuty potencjalnych typów. Jeśli zmienna może być więcej niż jeden typ, lista zawiera wszystkie możliwości ze wszystkich typów, przy użyciu dodatkowych informacji, aby wskazać, typy, które obsługują każdego uzupełnianie. W przypadku, gdy uzupełniania jest obsługiwana przez wszystkie możliwe typy, przedstawiono bez adnotacji.
 
-![Element członkowski wykonania wielu typów](media/code-editing-completion-types.png)
+![Uzupełnianie składowych na wiele typów](media/code-editing-completion-types.png)
 
-Domyślnie nie są pokazywane elementy członkowskie "dunder" (członkowie otwierające i zamykające podkreślenia podwójny). Ogólnie rzecz biorąc takie elementy członkowskie nie powinien być dostępny bezpośrednio. Jeśli potrzebujesz jednej jednak wpisanie wiodące podkreślenie podwójne dodaje te zakończeń do listy:
+Domyślnie członkowie "dunder" (członkowie rozpoczynający się i kończy z podwójnym podkreśleniem) nie są wyświetlane. Ogólnie rzecz biorąc takich elementów członkowskich nie powinna być dostępna bezpośrednio. Jeśli potrzebujesz jednej, wpisując wiodącego podwójnego podkreślenia dodaje te uzupełnienia do listy:
 
-![Uzupełnianie prywatnego elementu członkowskiego](media/code-editing-completion-dunder.png)
+![Uzupełnianie składowych prywatne](media/code-editing-completion-dunder.png)
 
-`import` i `from ... import` instrukcje wyświetlić listę modułów, które można importować. Z `from ... import`, lista zawiera elementy członkowskie, które mogą zostać zaimportowane z określonego modułu.
+`import` i `from ... import` instrukcji wyświetlić listę modułów, które mogą zostać zaimportowane. Za pomocą `from ... import`, lista zawiera elementy członkowskie, które mogą zostać zaimportowane z określonym module.
 
 ![Ukończenia importowania](media/code-editing-completion-import.png)
 
-`raise` i `except` instrukcje wyświetlania listy klas, które mogą być typy błędów. Listy nie może zawierać wszystkie wyjątki zdefiniowane przez użytkownika, ale pomaga szybko odnaleźć odpowiednie wyjątki wbudowany:
+`raise` i `except` instrukcje wyświetlania list klas, które mogą być typów błędów. Lista może nie zawierać wszystkich wyjątków zdefiniowanych przez użytkownika, ale pomaga szybko znaleźć odpowiednie wyjątki wbudowane:
 
-![Ukończenia wyjątków](media/code-editing-completion-exception.png)
+![Uzupełnianie wyjątku](media/code-editing-completion-exception.png)
 
-Wpisanie uruchamia dekoratora i przedstawia potencjalne elementów decorator. Wiele z tych elementów nie są możliwe do użycia jako elementów decorator; Sprawdź dokumentację biblioteki, aby określić, który ma zostać użyty.
+Wpisywanie uruchamia dekoratora i pokazuje potencjalne dekoratory. Wiele z tych elementów nie są możliwe do użycia jako dekoratory; Zapoznaj się z dokumentacją biblioteki, aby określić, której mają zostać użyte.
 
-![Dekoratora zakończenia](media/code-editing-completion-decorator.png)
+![Uzupełnianie dekoratora](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Można skonfigurować zachowanie zakończeń za pośrednictwem **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane "**. Wśród nich **na ciąg wyszukiwania na podstawie listy filtrów**: stosuje filtrowanie sugestii ukończenia podczas wpisywania (domyślny jest zaznaczone), i **zakończenia elementu członkowskiego Wyświetla przecięcie składników** zawiera tylko zakończeń, które są obsługiwane przez wszystkie możliwe typy (Domyślnie zaznaczenie jest usunięte). Zobacz [opcji - wyników zakończenia](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> Można skonfigurować zachowanie uzupełniania za pośrednictwem **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane "**. Wśród nich **listy filtrów na podstawie wyszukiwania ciągu**: ma zastosowanie filtrowanie sugestie uzupełniania podczas wpisywania (pole jest domyślnie zaznaczone), i **uzupełnianie składowych Wyświetla część wspólną członków** zawiera tylko uzupełnianie, które są obsługiwane przez wszystkie możliwe typy (Domyślnie zaznaczenie jest usunięte). Zobacz [opcje — wyniki zakończenia](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
-### <a name="type-hints"></a>Wskazówki dotyczące typu
+### <a name="type-hints"></a>Wskazówek dotyczących typów
 
-*Visual Studio 2017 wersji 15.7 i nowszych.*
+*Visual Studio 2017 w wersji 15.7 lub nowszej.*
 
-"Typ wskazówki" w języku Python 3.5 + ([484 program ten](https://www.python.org/dev/peps/pep-0484/) (python.org) jest składnia adnotacja dla funkcji i klasy, które wskazują typy argumentów, zwracać wartości i atrybuty klasy. IntelliSense wyświetla typ wskazówek po umieszczeniu na wywołania funkcji, argumentów i zmiennych, które mają te adnotacji.
+"Wskazówek dotyczących typów" w języku Python 3.5 + ([484 program ten](https://www.python.org/dev/peps/pep-0484/) (python.org) jest składnia adnotacji dla funkcji i klas, które wskazują typy argumentów, zwracać wartości i atrybuty klasy. Funkcja IntelliSense wyświetla wskazówek dotyczących typów, po najechaniu kursorem na wywołania funkcji, argumentów i zmiennych, które mają tych adnotacji.
 
-W poniższym przykładzie `Vector` klasy jest zadeklarowany jako `List[float]`i `scale` funkcja zawiera wskazówki typu dla jego argumentów i wartości zwracanej. Kursora myszy nad wywołanie tej funkcji zawiera wskazówki dotyczące typu:
+W poniższym przykładzie `Vector` klasy jest zadeklarowana jako `List[float]`i `scale` funkcja zawiera wskazówek dotyczących typów dla jego argumentów i wartości zwracanej. Kursor wywołanie tej funkcji zawiera wskazówek dotyczących typów:
 
-![Ustawiając kursor nad wywołanie funkcji, aby wyświetlić wskazówki typu](media/code-editing-type-hints1.png)
+![Kursor wywołanie funkcji, aby wyświetlić wskazówek dotyczących typów](media/code-editing-type-hints1.png)
 
-W poniższym przykładzie widać, jak adnotacji atrybutów `Employee` klasy są wyświetlane w menu podręcznym uzupełniania IntelliSense dla atrybutu:
+W poniższym przykładzie można zobaczyć jak atrybuty z adnotacjami `Employee` klasy są wyświetlane w okienku wyskakującym uzupełniania IntelliSense dla atrybutu:
 
 ![Wskazówki typu przedstawiający uzupełniania IntelliSense](media/code-editing-type-hints2.png)
 
-Warto także sprawdzić poprawności typu wskazówek w projekcie, ponieważ błędy normalnie nie będą wyświetlane do czasu wykonywania. W tym celu programu Visual Studio integruje branży standardowe narzędzie MyPy za pomocą polecenia menu kontekstowe **Python > Uruchom Mypy** w **Eksploratora rozwiązań**:
+Warto także sprawdzić poprawność wskazówek dotyczących typów w całym projekcie, ponieważ błędy zwykle nie są wyświetlane do czasu wykonywania. W tym celu program Visual Studio integruje się branży narzędzie MyPy standard za pomocą polecenia menu kontekstowego **Python > Mypy Uruchom** w **Eksploratora rozwiązań**:
 
-![Uruchom polecenie z menu kontekstowego MyPy w Eksploratorze rozwiązań](media/code-editing-type-hints-run-mypy.png)
+![Uruchom narzędzie MyPy polecenie z menu kontekstowego w Eksploratorze rozwiązań](media/code-editing-type-hints-run-mypy.png)
 
-Uruchomiony wiersz polecenia do zainstalowania pakietu mypy, jeśli potrzebne. Visual Studio następnie uruchamia mypy można sprawdzić poprawności typu wskazówek w każdym pliku Python w projekcie. Błędy są wyświetlane w programie Visual Studio **listy błędów** okna. Zaznaczenie elementu w oknie powoduje przejście do odpowiedniej linii w kodzie.
+Uruchomiony wiersz polecenia do zainstalowania pakietu mypy, jeśli potrzebna. Visual Studio uruchamia następnie mypy w celu zweryfikowania wskazówek dotyczących typów w każdym pliku Python w projekcie. Błędy są wyświetlane w programie Visual Studio **lista błędów** okna. Zaznaczenie elementu w oknie powoduje przejście do odpowiedniego wiersza kodu.
 
-Jako prosty przykład definicji następujących funkcji zawiera wskazówki typu w celu wskazania, że `input` argument jest typu `str`, podczas gdy wywołanie tej funkcji podejmuje próbę przekazania całkowitą:
+Prostym przykładem następującą definicję funkcji zawiera wskazówki typu w celu wskazania, że `input` argument jest typu `str`, podczas gdy wywołaniu tej funkcji, podejmie próbę przekazać liczbę całkowitą:
 
 ```python
 def commas_to_colons(input: str):
@@ -110,62 +110,62 @@ def commas_to_colons(input: str):
 commas_to_colons(1)
 ```
 
-Przy użyciu **Uruchom Mypy** polecenia dla tego kodu generuje następujący błąd:
+Za pomocą **Uruchom narzędzie Mypy** polecenie na ten kod generuje następujący błąd:
 
-![Przykład wynik sprawdzania poprawności typu wskazówek mypy](media/code-editing-type-hints-validation-error.png)
+![Przykład wyniku sprawdzania poprawności wskazówek dotyczących typów mypy](media/code-editing-type-hints-validation-error.png)
 
 > [!Tip]
-> W przypadku wersji środowiska Python przed 3.5, Visual Studio wyświetla również typ wskazówek, zapewniających za pośrednictwem *stub pliki* (`.pyi`). Pliki szczątkowe można używać zawsze, gdy nie chcesz dołączyć wskazówki typu bezpośrednio w kodzie, lub gdy chcesz utworzyć typu wskazówek dotyczących serwerów biblioteki, która nie używa ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia klas zastępczych dla modułów środowiska Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie wiki mypy projektu.
+> W przypadku wersji środowiska Python wcześniejsze niż 3.5, Visual Studio wyświetla również wskazówek dotyczących typów, które należy podać za pośrednictwem *namiastki pliki* (`.pyi`). Można użyć pliki szczątkowe, zawsze wtedy, gdy nie chcesz uwzględnić wskazówek dotyczących typów bezpośrednio w kodzie lub w przypadku, gdy chcesz utworzyć wskazówek dotyczących typów, biblioteki, która nie korzysta z ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia wycinków dla modułów języka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie Wiki dotyczącej projektu mypy.
 >
-> W chwili obecnej Visual Studio nie obsługuje typu wskazówek w komentarzach.
+> Obecnie program Visual Studio nie obsługuje wskazówek dotyczących typów w komentarzach.
 
-### <a name="signature-help"></a>Podpis pomocy
+### <a name="signature-help"></a>Pomocy dotyczącej sygnatur
 
-Podczas pisania kodu, który wywołuje funkcję, podpisu pomoc jest wyświetlany, gdy typ otwarcia `(` i wyświetla informacje o dostępnej dokumentacji i parametru. Można również wyświetlić ją z klawiszy Ctrl + Shift + spacja wewnątrz wywołania funkcji. Informacje wyświetlane jest zależna od ciągów dokumentacji w kodzie źródłowym funkcji, ale zawiera wartości domyślne.
+Podczas pisania kodu, który wywołuje funkcję pomocy dotyczącej sygnatur pojawia się po wpisaniu otwarcia `(` i wyświetla dostępne informacje dotyczące dokumentacji i parametrów. Można również wyświetlić ją za pomocą klawiszy Ctrl + Shift + spacja wewnątrz wywołania funkcji. Informacje wyświetlane jest zależna od ciągów dokumentacji w kodzie źródłowym funkcji, ale zawiera wartości domyślne.
 
-![Podpis pomocy](media/code-editing-signature-help.png)
+![Pomocy dotyczącej sygnatur](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Aby wyłączyć pomocy podpisu, przejdź do **Narzędzia > Opcje > Edytor tekstu > Python > Ogólne** i wyczyść **uzupełniania > informacje o parametrach**.
+> Aby wyłączyć pomocy dotyczącej sygnatur, przejdź do **Narzędzia > Opcje > Edytor tekstu > Python > Ogólne** i wyczyść **uzupełniania instrukcji > informacje o parametrach**.
 
 ### <a name="quick-info"></a>Szybkie informacje
 
-Kursor myszy nad identyfikator wyświetlana etykietka narzędzia Szybkie informacje. W zależności od identyfikatora szybkie informacje mogą być wyświetlane potencjalnych wartości lub typów, dowolnej dostępnej dokumentacji zwracać typy i lokalizacje definicji:
+Kursor myszy nad identyfikator są wyświetlane etykietki narzędzia Szybkie informacje. W zależności od identyfikatora szybkie informacje może wyświetlać potencjalnych wartości lub typy, dowolnej dostępnej dokumentacji typy zwracane i, lokalizacje definicji:
 
 ![Szybkie informacje](media/code-editing-quick-info.png)
 
-### <a name="code-coloring"></a>Kolorowanie
+### <a name="code-coloring"></a>Kolorowanie kodu
 
-Kolorowanie używa informacji z analizy kodu do zmiennych kolorów, instrukcje i inne części kodu. Na przykład zmienne, które odwołują się do klasy lub moduły mogą być wyświetlane w kolorze innego niż funkcji lub inne wartości, a w innym kolorze niż zmiennych lokalnych i globalnych są wyświetlane nazwy parametrów. (Domyślnie funkcje nie są wyświetlane wytłuszczonym drukiem):
+Kolorowanie kodu używa informacji z analizy kodu do zmiennych kolorów, instrukcje i inne części kodu. Na przykład zmienne, które odwołują się do modułów lub klasy mogą być wyświetlane w innym kolorze niż funkcji lub innych wartości i nazwy parametrów są wyświetlane w innym kolorze niż zmiennych lokalnych lub globalnych. (Domyślnie, funkcje nie są wyświetlane pogrubioną czcionką):
 
-![Kolorowanie](media/code-editing-code-coloring.png)
+![Kolorowanie kodu](media/code-editing-code-coloring.png)
 
-Aby dostosować kolory, przejdź do **Narzędzia > Opcje > środowiska > czcionki i kolory** i modyfikowanie wpisów Python w **wyświetlania elementów** listy:
+Aby dostosować kolory, przejdź do **Narzędzia > Opcje > środowisko > czcionki i kolory** i modyfikować wpisów języka Python w **wyświetlania elementów** listy:
 
 ![Opcje czcionek i kolorów](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Aby wyłączyć kolorowania kodu, przejdź do **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane** i wyczyść **różne opcje > Kolor nazw oparty na typie**. Zobacz [opcji - różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Aby wyłączyć kolorowaniem kodu, przejdź do **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane** i wyczyść **różne opcje > Kolor nazwy na podstawie typu**. Zobacz [opcje - różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Fragmenty kodu
 
-Wstawki kodu są fragmenty kodu, który można wstawiać do plików, wpisując skrót i naciśnięcie klawisza Tab lub przy użyciu **Edytuj > IntelliSense > Wstaw fragment kodu** i **z funkcji Otocz przez** poleceń, Wybieranie **Python**, a następnie wybierając żądane fragment kodu.
+Fragmenty kodu pochodzą z fragmentami kodu, które mogą być wstawiane do plików, wpisując skrótu i naciskając klawisz Tab lub przy użyciu **Edytuj > IntelliSense > Wstaw fragment kodu** i **Otocz** poleceń Wybieranie **Python**, a następnie wybierając żądany fragment kodu.
 
-Na przykład `class` jest skrót dla fragmentu kodu, która wstawia definicji klasy. Zobacz fragment znajdują się na liście automatycznego uzupełniania po wpisaniu `class`:
+Na przykład `class` jest skrótem dla fragmentu kodu, który wstawia definicji klasy. Zostanie wyświetlony fragment kodu, są wyświetlane na liście automatycznego uzupełniania, podczas wpisywania tekstu `class`:
 
-![Fragment kodu dotyczący skrótów — klasa](media/code-editing-code-snippet-class.png)
+![Fragment kodu dotyczący skrótów klasy](media/code-editing-code-snippet-class.png)
 
-Naciśnięcie klawisza Tab generuje rest klasy. Mogą być następnie typu na liście nazwy i typy podstawowe przechodzenia między wyróżnione pola z kartą, naciśnij klawisz Enter, aby rozpocząć, wpisując treści.
+Naciśnięcie klawisza Tab generuje pozostałą część tej klasy. Następnie możesz typu na liście nazw i typy bazowe przechodzenia między wyróżnione pola z kartą, naciśnij klawisz Enter na Rozpocznij wpisywanie ciągu treści.
 
-![Najważniejsze funkcje w obszarach fragment kodu zakończenia](media/code-editing-code-snippets.png)
+![Najważniejsze funkcje w obszarach fragmentu kodu, aby móc wykonać](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Polecenia menu
 
-Jeśli używasz **Edytuj > IntelliSense > Wstaw fragment kodu** polecenia menu, musisz najpierw wybierz pozycję "Python", a następnie wybierz fragment:
+Kiedy używasz **Edytuj > IntelliSense > Wstaw fragment kodu** polecenia menu, należy najpierw wybierz pozycję "Python", a następnie wybierz fragment kodu:
 
-![Wybieranie fragment kodu za pomocą polecenia wstawiania wstawki kodu programu](media/code-editing-code-snippet-insert.png)
+![Wybierając fragment kodu za pomocą polecenia Wstaw fragment kodu](media/code-editing-code-snippet-insert.png)
 
-**Edytuj > IntelliSense > z funkcji Otocz przez** polecenia, podobnie, umieszcza bieżące zaznaczenie w edytorze tekstu w wybranym elemencie strukturalnych. Na przykład załóżmy, że ma nieco kodu podobne do poniższych:
+**Edytuj > IntelliSense > Otocz** polecenie podobnie umieszcza bieżące zaznaczenie w edytorze tekstu w wybranym elemencie strukturalnych. Na przykład załóżmy, że masz ilość kodu, jak pokazano poniżej:
 
 ```python
 sum = 0
@@ -173,27 +173,27 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-Wybierając ten kod i wybierając pozycję **z funkcji Otocz przez** polecenie wyświetla listę dostępnych fragmentów. Wybieranie `def` w miejscach listy wybranego kodu w ramach definicji funkcji, a można za pomocą klawisza Tab do przechodzenia między nazwą funkcji wyróżnione i argumenty:
+Wybierając ten kod i wybierając pozycję **Otocz** polecenie wyświetla listę dostępnych fragmentów kodu. Wybieranie `def` z listy umieszcza zaznaczony kod w definicji funkcji, a można użyj klawisza Tab Aby poruszać się między nazwą funkcji wyróżnione i argumenty:
 
-![Dla wstawki kodu za pomocą polecenia z funkcji Otocz przez](media/code-editing-code-snippet-surround-with.png)
+![Za pomocą polecenia Otocz wstawek kodu](media/code-editing-code-snippet-surround-with.png)
 
-### <a name="examine-available-snippets"></a>Przejrzyj dostępne wstawki kodu programu
+### <a name="examine-available-snippets"></a>Sprawdź dostępne fragmenty kodu
 
-Zostanie wyświetlony fragmenty kodu dostępnych w Menedżerze fragmentów kodu otworzyć za pomocą **Narzędzia > Menedżerze fragmentów kodu** polecenia menu i wybierając **Python** jako język:
+Możesz zobaczyć fragmenty kodu dostępnych w Menedżerze fragmentów kodu, otwartego przy użyciu **Narzędzia > Menedżer fragmentów kodu** polecenia menu i wybierając polecenie **Python** jako język:
 
-![Menedżer wstawek kodu](media/code-editing-code-snippets-manager.png)
+![Menedżer fragmentów kodu](media/code-editing-code-snippets-manager.png)
 
-Aby utworzyć własną fragmentów, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).
+Aby utworzyć własne fragmenty kodu, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
-Jeśli piszesz fragment kodu dużą, którą chcesz udostępnić, możesz zająć się on wysłany w gist i [Daj nam znać](https://github.com/Microsoft/PTVS/issues). Firma Microsoft może istnieć możliwość uwzględniania go w przyszłej wersji programu Visual Studio.
+Jeśli piszesz fragmentu świetnego kodu, które chcesz udostępnić, możesz opublikować ją w gist i [Daj nam znać](https://github.com/Microsoft/PTVS/issues). Firma Microsoft może mieć uwzględniania go w przyszłej wersji programu Visual Studio.
 
-## <a name="navigating-your-code"></a>Nawigowanie po kodzie
+## <a name="navigating-your-code"></a>Poruszanie się po kodzie
 
-Obsługa języka Python w programie Visual Studio zapewnia kilka oznacza szybką nawigację w kodzie, w tym bibliotek, które źródła kod jest dostępny: [pasek nawigacyjny](#navigation-bar), [przejdź do definicji](#go-to-definition), [Przejdź do](#navigate-to), i [Znajdź wszystkie odwołania](#find-all-references). Można również użyć programu Visual Studio [przeglądarki obiektów](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
+Obsługa języka Python w programie Visual Studio zawiera kilka oznacza, że można szybko przejść w kodzie, w tym bibliotek, dla którego źródło kod jest dostępny: [pasek nawigacyjny](#navigation-bar), [przejdź do definicji](#go-to-definition), [Przejdź do](#navigate-to), i [Znajdź wszystkie odwołania](#find-all-references). Można również używać programu Visual Studio [przeglądarki obiektów](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
 
 ### <a name="navigation-bar"></a>Pasek nawigacyjny
 
-Na pasku nawigacyjnym jest wyświetlany w górnej części każdego okna edytora i zawiera listę dwupoziomowej definicji. Po lewej stronie rozwiń zawiera klasę najwyższego poziomu i definicje funkcji w bieżącym pliku; Prawy listy rozwijanej zostanie wyświetlona lista definicji w zakresie wyświetlane po lewej stronie. Jak przenoszenia w edytorze listy aktualizacji, aby wyświetlić bieżący kontekst i można również wybrać wpis z tych list można przejść bezpośrednio do w.
+Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora i zawiera listę dwupoziomowej definicji. Lista rozwijana po lewej stronie zawiera klasę najwyższego poziomu i definicje funkcji w bieżącym pliku; prawo rozwijanej Wyświetla listę definicji w zakresie wyświetlane po lewej stronie. Jak zmieniają położenie w edytorze list zaktualizowane, aby wyświetlić bieżący kontekst. Ponadto można również wybrać wpis z tych list można przechodzić bezpośrednio do w.
 
 ![Pasek nawigacyjny](media/code-editing-navigation-bar.png)
 
@@ -202,26 +202,26 @@ Na pasku nawigacyjnym jest wyświetlany w górnej części każdego okna edytora
 
 ### <a name="go-to-definition"></a>Przejdź do definicji
 
-**Przejdź do definicji** szybko przechodzi z użycia dla identyfikatora (np. nazwę funkcji, klasy lub zmienna), do kodu źródłowego których jest zdefiniowana. Można go wywołać prawym przyciskiem myszy identyfikator i wybierając **przejdź do definicji** lub umieszczając karetki w identyfikatorze i naciskając klawisz F12. Działa ona za pośrednictwem kod i zewnętrznej biblioteki pod warunkiem, że kod źródłowy jest dostępny. Jeśli kod źródłowy biblioteki nie jest dostępna, **przejdź do definicji** przechodzi do odpowiedniego `import` instrukcji odwołania do modułu lub wyświetlania wystąpił błąd.
+**Przejdź do definicji** szybko przechodzi z użytkowania identyfikator (np. nazwę funkcji, klasy lub zmiennej), do kodu źródłowego którym jest zdefiniowana. Można wywołać, klikając prawym przyciskiem myszy identyfikator i wybierając **przejdź do definicji** lub umieszczając karetkę w identyfikatorze i naciskając klawisz F12. Działa ona za pośrednictwem kodu oraz zewnętrznych bibliotekach pod warunkiem, że kod źródłowy jest dostępny. Jeśli kod źródłowy biblioteki nie jest dostępna, **przejdź do definicji** skacze do odpowiedniego `import` instrukcji odwołania do modułu lub otrzymuję komunikat o błędzie.
 
 ![Przejdź do definicji](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Przejdź do
 
-**Edytuj > Przejdź do...**  polecenie (Ctrl przecinkami) Wyświetla pole wyszukiwania w edytorze, na którym wpisz dowolny ciąg i wyświetlić możliwe dopasowania w kodzie, który definiuje funkcję, klasa lub zmienną zawierającą ten ciąg. Ta funkcja udostępnia podobną funkcję jak **przejdź do definicji** , ale bez konieczności zlokalizować Użyj identyfikatora.
+**Edytuj > Przejdź do...**  polecenie (Ctrl przecinkami) Wyświetla pola wyszukiwania w edytorze, w którym można wpisać dowolny ciąg i zobacz możliwych dopasowań w kodzie, który definiuje funkcję, klasę lub zmienną, która zawiera ciąg. Ta funkcja udostępnia podobną funkcję jak **przejdź do definicji** , ale bez konieczności zlokalizować Użyj identyfikatora.
 
-Dwukrotnie dowolną nazwę, lub wybierając z klawiszy strzałek i wprowadź, przechodzi do definicji tego identyfikatora.
+Dwukrotne kliknięcie dowolną nazwę, albo wybierz przy użyciu klawiszy strzałek oraz Enter, przechodzi do definicji tego identyfikatora.
 
 ![Przejdź do](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Znajdź wszystkie odwołania
 
-**Znajdź wszystkie odwołania** jest pomocny sposób odnajdowania, gdzie jest zarówno z dowolnym danym identyfikatorem zdefiniowany i używany, oraz importowania przypisania. Można go wywołać prawym przyciskiem myszy identyfikator i wybierając **Znajdź wszystkie odwołania**, lub umieszczając karetki w identyfikatorze i naciskając klawisz Shift + F12. Dwukrotne kliknięcie elementu na liście przechodzi do jego lokalizacji.
+**Znajdź wszystkie odwołania** jest pomocny sposób odnajdowania, gdzie jest zarówno z dowolnym danym identyfikatorem zdefiniowane i używane w tym Importy i przydziałów. Można wywołać, klikając prawym przyciskiem myszy identyfikator i wybierając **Znajdź wszystkie odwołania**, lub poprzez umieszczenie karetkę w identyfikatorze, a następnie naciśnij klawisz Shift + F12. Dwukrotne kliknięcie elementu na liście powoduje przejście do jego lokalizacji.
 
-![Znajdź wszystkie odwołania wyników](media/code-editing-find-all-references.png)
+![Znajdź wszystkie odwołania wyniki](media/code-editing-find-all-references.png)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Formatowanie](formatting-python-code.md)
 - [Refaktoryzacja](refactoring-python-code.md)
-- [Zaznaczanie błędów](linting-python-code.md)
+- [Użyj linter](linting-python-code.md)

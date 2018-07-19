@@ -1,5 +1,5 @@
 ---
-title: Wybrane połączenie używa dostawcy nieobsługiwanej bazy danych
+title: Wybrane połączenie używa nieobsługiwanego dostawcy bazy danych
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
@@ -10,23 +10,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77519a5497c26553e2023862e46f3ba618e4f99f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d102404cf14fecc89fc65773d283d748914bc0a5
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920938"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174177"
 ---
-# <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>Wybrane połączenie używa dostawcy nieobsługiwanej bazy danych
+# <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>Wybrane połączenie używa nieobsługiwanego dostawcy bazy danych
 
-Ten komunikat jest wyświetlany, gdy przeciągnij elementy, które nie korzystają z dostawcy danych programu .NET Framework dla programu SQL Server z **Eksploratora serwera**/**Eksploratora bazy danych** na [LINQ do SQL Narzędzia programu Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md).
+Ten komunikat pojawia się podczas przeciągania elementów, które nie korzystają z dostawcy danych .NET Framework dla programu SQL Server z **Eksploratora serwera** lub **Eksplorator bazy danych** na [LINQ to SQL tools w wizualizacji Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md).
 
-[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Obsługuje tylko połączenia danych, które używają dostawcy programu .NET Framework dla programu SQL Server. Tylko połączenia programu Microsoft SQL Server lub plik bazy danych programu Microsoft SQL Server są prawidłowe.
+**O/R Designer** obsługuje tylko połączenia danych, które używają dostawcy programu .NET Framework dla programu SQL Server. Prawidłowe są tylko połączenia do programu Microsoft SQL Server lub plik bazy danych programu Microsoft SQL Server.
 
-Aby rozwiązać ten problem, należy dodać tylko elementy z połączenia danych, które używają dostawcy danych programu .NET Framework dla programu SQL Server do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+Aby rozwiązać ten problem, należy dodać tylko elementy z połączeń danych, korzystających z .NET Framework Data Provider for SQL Server, aby **O/R Designer**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:System.Data.SqlClient>
 - [Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,5 @@
 ---
-title: Zestawy danych zapytania
+title: Tworzenie zapytań względem zestawów danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,85 +13,85 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0fb1310649a1aeba7fd46acf9277ef7ea5825472
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926705"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174296"
 ---
-# <a name="query-datasets"></a>Zestawy danych zapytania
-Aby wyszukiwać określone rekordy w zestawie danych, użyj metody FindBy DataTable, zapis własnych instrukcji foreach do pętli kolekcji wierszy tabeli lub użyj [LINQ do DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+# <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
+Aby wyszukać konkretne rekordy w zestawie danych, należy użyć `FindBy` metody w elemencie DataTable pisania własnych instrukcji foreach do pętli kolekcji wierszy w tabeli lub użyj [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
-## <a name="dataset-case-sensitivity"></a>Uwzględniana wielkość liter zestawu danych
-W zestawie danych, bez uwzględniania wielkości liter domyślnie są nazwy tabel i kolumn, oznacza to, tabelę w zestawie danych o nazwie "Klientów" można także określane jako "klienci". Konwencje nazewnictwa w wielu baz danych, w tym program SQL Server jest zgodny. W programie SQL Server domyślne zachowanie to, że nazwy elementów danych nie można rozróżnić tylko wielkością liter.
+## <a name="dataset-case-sensitivity"></a>Rozróżnianie wielkości liter dla zestawu danych
+W zestawie danych, nazwy tabel i kolumn domyślnie wielkość liter — oznacza to, tabeli w zestawie danych o nazwie "Klienci" może również określane jako "klientów." Odpowiada to konwencje nazewnictwa w wielu bazach danych, w tym program SQL Server. W programie SQL Server domyślne zachowanie to, że nazwy elementów danych nie mogą być wyodrębnione tylko wielkością liter.
 
 > [!NOTE]
->  W przeciwieństwie do zestawów danych dokumentów XML uwzględniana jest wielkość liter, nazwy zdefiniowanych w schematach elementów danych jest rozróżniana wielkość liter. Na przykład protokół schematu umożliwia schematu do definiowania tabeli o nazwie "Klientów" oraz różnych tabeli o nazwie "klienci". Może to spowodować konflikty nazw podczas schemat, który zawiera elementy, które różnią się tylko wielkością liter służy do generowania klasy dataset.
+>  W przeciwieństwie do zestawów danych dokumentów XML jest rozróżniana wielkość liter, więc nazwy elementów danych zdefiniowanych w schematach jest rozróżniana wielkość liter. Na przykład protokół schemat umożliwia schematu do definiowania tabeli o nazwie "Klientów" i inną tabelę o nazwie "klientów." Może to spowodować Kolizje nazw podczas schematu, który zawiera elementy, które różnią się tylko wielkością liter jest używany do generowania klasy dataset.
 
-Uwzględniana wielkość liter, można jednak czynnikiem interpretacji danych wewnątrz elementu dataset. Na przykład jeśli filtrowanie danych w tabeli zestawu danych, kryteria wyszukiwania mogą zwracać różne wyniki, w zależności od tego, czy wynik porównania jest rozróżniana wielkość liter. Można kontrolować uwzględniana wielkość liter, filtrowanie, wyszukiwanie i sortowanie przez ustawienie dataset <xref:System.Data.DataSet.CaseSensitive%2A> właściwości. Domyślnie wszystkie tabele w zestawie danych dziedziczą wartość tej właściwości. (Można zmienić tej właściwości dla każdej pojedynczej tabeli, ustawiając w tabeli <xref:System.Data.DataTable.CaseSensitive%2A> właściwości.)
+Wielkość liter, jednak może być czynnikiem, w jaki sposób interpretowania danych w zestawie danych. Na przykład w możesz filtrować dane w tabeli zestawu danych, kryteria wyszukiwania mogą zwracać różne wyniki w zależności od tego, czy wynikiem porównania jest uwzględniana wielkość liter. Można kontrolować rozróżnianie wielkości liter, filtrowanie, wyszukiwanie i sortowanie według ustawienia zestawu danych <xref:System.Data.DataSet.CaseSensitive%2A> właściwości. Domyślnie wszystkie tabele w zestawie danych dziedziczą wartość tej właściwości. (Można zastąpić tę właściwość, dla każdej pojedynczej tabeli, ustawiając w tabeli <xref:System.Data.DataTable.CaseSensitive%2A> właściwości.)
 
 ## <a name="locate-a-specific-row-in-a-data-table"></a>Lokalizowanie określonego wiersza w tabeli danych
 
-#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Aby odnaleźć wiersza typizowanego zestaw danych z wartości klucza podstawowego
+#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Aby znaleźć wiersza w zestawie danych wpisywanych za pomocą wartości klucza podstawowego
 
 -   Aby zlokalizować wiersza, należy wywołać silnie typizowaną `FindBy` metody, która używa klucza podstawowego tabeli.
 
-     W poniższym przykładzie `CustomerID` kolumna jest kluczem podstawowym `Customers` tabeli. Oznacza to, że wygenerowany `FindBy` jest metoda `FindByCustomerID`. W przykładzie pokazano, jak przypisać określony <xref:System.Data.DataRow> ze zmienną za pomocą wygenerowany `FindBy` metody.
+     W poniższym przykładzie `CustomerID` kolumna jest klucz podstawowy `Customers` tabeli. Oznacza to, że wygenerowany `FindBy` metodą jest `FindByCustomerID`. W przykładzie pokazano, jak przypisać określonego <xref:System.Data.DataRow> do zmiennej za pomocą wygenerowany `FindBy` metody.
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
 
-#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Aby odnaleźć wiersza nietypizowanego zestawu danych z wartości klucza podstawowego
+#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Aby odnaleźć wiersza nietypizowany zestaw danych o wartości klucza podstawowego
 
--   Wywołanie <xref:System.Data.DataRowCollection.Find%2A> metody <xref:System.Data.DataRowCollection> kolekcji, przekazując klucza podstawowego jako parametr.
+-   Wywołaj <xref:System.Data.DataRowCollection.Find%2A> metody <xref:System.Data.DataRowCollection> kolekcji, przekazując klucz podstawowy, jako parametr.
 
-     Poniższy przykład przedstawia sposób zadeklarować nowy wiersz o nazwie `foundRow` i przypisz jej wartość zwracaną <xref:System.Data.DataRowCollection.Find%2A> metody. Jeśli zostanie znaleziony taki klucz podstawowy, zawartość indeks kolumny 1 są wyświetlane w oknie komunikatu.
+     Poniższy przykład pokazuje sposób deklarowania nowego wiersza, o nazwie `foundRow` i przypisz mu wartość zwracaną przez <xref:System.Data.DataRowCollection.Find%2A> metody. Jeśli zostanie znaleziony klucza podstawowego, zawartość 1. indeks kolumny są wyświetlane w oknie komunikatu.
 
      [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]
      [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]
 
 ## <a name="find-rows-by-column-values"></a>Znajdź wiersz według wartości w kolumnie
 
-#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Aby znaleźć na podstawie wartości w kolumnie wszystkie wiersze
+#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Aby znaleźć wiersze na podstawie wartości w dowolnej kolumnie
 
--   Tabele danych są tworzone za pomocą <xref:System.Data.DataTable.Select%2A> metodę, która zwraca tablicę <xref:System.Data.DataRow>s oparte na wyrażeniu przekazany do <xref:System.Data.DataTable.Select%2A> metody. Aby uzyskać więcej informacji o tworzeniu prawidłowe wyrażenia, zobacz sekcję "Składni wyrażeń" strony <xref:System.Data.DataColumn.Expression%2A> właściwości.
+-   Tabele danych są tworzone za pomocą <xref:System.Data.DataTable.Select%2A> metody, która zwraca tablicę <xref:System.Data.DataRow>s oparte na wyrażeniu przekazany do <xref:System.Data.DataTable.Select%2A> metody. Aby uzyskać więcej informacji na temat tworzenia prawidłowych wyrażeń, zobacz sekcję "Składni wyrażenia" strony <xref:System.Data.DataColumn.Expression%2A> właściwości.
 
-     Poniższy przykład przedstawia użycie <xref:System.Data.DataTable.Select%2A> metody <xref:System.Data.DataTable> zlokalizować określonych wierszy.
+     Poniższy przykład pokazuje, jak używać <xref:System.Data.DataTable.Select%2A> metody <xref:System.Data.DataTable> zlokalizować określonych wierszy.
 
      [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]
      [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]
 
 ## <a name="access-related-records"></a>Dostęp do powiązanych rekordów
-Gdy są powiązane tabele w zestawie danych, <xref:System.Data.DataRelation> obiektu można udostępnić powiązane rekordy z innej tabeli. Na przykład zestaw danych zawierający `Customers` i `Orders` tabele mogą być udostępniane.
+W przypadku tabel w zestawie danych są powiązane, <xref:System.Data.DataRelation> obiektu można udostępnić powiązanych rekordów w innej tabeli. Na przykład zestaw danych zawierający `Customers` i `Orders` tabele mogą być udostępniane.
 
-Można użyć <xref:System.Data.DataRelation> obiekt do zlokalizowania powiązanych rekordów przez wywołanie metody <xref:System.Data.DataRow.GetChildRows%2A> metody <xref:System.Data.DataRow> w tabeli nadrzędnej. Ta metoda zwraca tablicę rekordów podrzędnych. Lub możesz wywołać <xref:System.Data.DataRow.GetParentRow%2A> metody <xref:System.Data.DataRow> w tabeli podrzędnej. Ta metoda zwraca pojedynczą <xref:System.Data.DataRow> między tabelą nadrzędną.
+Możesz użyć <xref:System.Data.DataRelation> obiekt do zlokalizowania rekordy pokrewne, wywołując <xref:System.Data.DataRow.GetChildRows%2A> metody <xref:System.Data.DataRow> w tabeli nadrzędnej. Ta metoda zwraca tablicę powiązane rekordy podrzędne. Ewentualnie możesz wywołać <xref:System.Data.DataRow.GetParentRow%2A> metody <xref:System.Data.DataRow> w tabeli podrzędnej. Ta metoda zwraca pojedynczą <xref:System.Data.DataRow> z tabeli nadrzędnej.
 
-Ta strona zawiera przykłady użycia typizowane zbiory danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [nawigowanie po DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
+Ta strona zawiera przykłady użycia typizowanych zestawów danych. Aby dowiedzieć się, jak nawigowanie po relacjach w nietypizowane zbiory danych, zobacz [przejść elementów DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Jeśli pracujesz w aplikacji formularzy systemu Windows i korzysta z funkcji powiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularza może zapewnić za mało funkcjonalność aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). W szczególności, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
+>  Jeśli pracujesz w aplikacji Windows Forms i przy użyciu funkcji wiązania danych, aby wyświetlić dane, wygenerowany przez projektanta formularzy może zapewnić wystarczającą ilość funkcjonalność dla aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). W szczególności zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
-W poniższych przykładach kodu pokazują, jak przechodzić w górę i w dół relacje w typizowanych zbiorach danych. Użyj przykłady kodu wpisany <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowanego FindBy*PrimaryKey* (`FindByCustomerID`) metody do wyszukiwania żądanego wiersza i zwracać powiązane rekordy. Przykłady skompilować i działa poprawnie tylko wtedy, gdy:
+Poniższe przykłady kodu pokazują, jak poruszać się po relacjach w typizowanych zestawów danych. Użyj przykłady kodu wpisane <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowanego FindBy*PrimaryKey* (`FindByCustomerID`) metody znajdź żądany wiersz i zwracać powiązanych rekordów. Przykłady skompilować i uruchomić się poprawnie, tylko wtedy, gdy masz:
 
 -   Wystąpienie zestawu danych o nazwie `NorthwindDataSet` z `Customers` tabeli.
 
 -   `Orders` Tabeli.
 
--   Relacja o nazwie `FK_Orders_Customers`dotyczące dwóch tabel.
+-   Relacji o nazwie `FK_Orders_Customers`odnoszących się dwie tabele.
 
-Ponadto obie tabele muszą zostać wypełnione z danymi dla wszystkich rekordów, które ma zostać zwrócona.
+Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwrócenia.
 
-#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Aby powrócić rejestruje rekord nadrzędny wybranego elementu podrzędnego
+#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Aby powrócić podrzędne rekordy wybrany rekord nadrzędny
 
--   Wywołanie <xref:System.Data.DataRow.GetChildRows%2A> metody określonej `Customers` danych wiersza, a następnie zwraca tablicę wiersze z `Orders` tabeli:
+-   Wywołaj <xref:System.Data.DataRow.GetChildRows%2A> metody określonej `Customers` danych wiersza, a następnie zwraca tablicę wiersze z `Orders` tabeli:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Aby przywrócić rekord nadrzędny wybranego podrzędnego rekordu
 
--   Wywołanie <xref:System.Data.DataRow.GetParentRow%2A> metody określonej `Orders` wiersz danych i zwracany pojedynczy wiersz z tabeli `Customers` tabeli:
+-   Wywołaj <xref:System.Data.DataRow.GetParentRow%2A> metody określonej `Orders` wiersz danych i zwrócenia pojedynczy wiersz z tabeli `Customers` tabeli:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

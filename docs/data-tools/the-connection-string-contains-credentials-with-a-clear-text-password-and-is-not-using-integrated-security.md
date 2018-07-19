@@ -1,5 +1,5 @@
 ---
-title: Parametry połączenia zawiera poświadczenia za pomocą hasła w postaci zwykłego tekstu, a nie korzysta ze zintegrowanych zabezpieczeń
+title: Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
@@ -10,23 +10,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf8a8fc3bb024c1eb8ee7baf91856a54dcb9d21f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcd459208529441022669e799e3c59b16b4ef682
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922615"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174078"
 ---
-# <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Parametry połączenia zawiera poświadczenia za pomocą hasła w postaci zwykłego tekstu, a nie korzysta ze zintegrowanych zabezpieczeń
+# <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
 
-Czy chcesz zapisać parametry połączenia w bieżącym pliku DBML i pliki konfiguracji aplikacji z tymi informacjami poufnymi?  Kliknij przycisk nie, aby zapisać parametry połączenia bez informacji poufnych.
+Czy chcesz zapisać parametry połączenia w bieżącym pliku DBML i pliki konfiguracyjne aplikacji z tymi informacjami poufnymi?  Kliknij przycisk **nr** można zapisać parametry połączenia bez informacji poufnych.
 
-Podczas pracy z połączeń danych, które zawierają poufne informacje (hasła, które znajdują się w parametrach połączenia), możesz skorzystać z opcji zapisywania parametry połączenia w pliku DBML projektu i pliku konfiguracji aplikacji lub bez poufne informacje.
+Podczas pracy z połączeniami danych, zawierające informacje poufne (hasła, które znajdują się w parametrach połączenia), możesz skorzystać z opcji zapisanie parametrów połączenia w pliku DBML projektu i pliku konfiguracji aplikacji z użyciem lub bez poufne informacje.
 
 > [!WARNING]
-> Jawne ustawienie **połączenia** właściwości **ustawienia aplikacji** właściwości **False** spowoduje dodanie hasła do pliku DBML.
+> Jawne ustawianie **połączenia** właściwości **ustawienia aplikacji** właściwości **False** spowoduje dodanie hasła do pliku DBML.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia z poufne informacje w ustawieniach aplikacji projektu
+## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia z poufnych informacji w ustawieniach aplikacji projektu
 
 - Kliknij przycisk **Tak**.
 
@@ -34,11 +34,11 @@ Podczas pracy z połączeń danych, które zawierają poufne informacje (hasła,
 
 ## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Aby zapisać parametry połączenia bez informacji poufnych w ustawieniach aplikacji projektu
 
-- Kliknij przycisk **nr**.
+- Kliknij przycisk **nie**.
 
    Parametry połączenia są przechowywane jako ustawienie aplikacji, ale hasło nie jest dołączony.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

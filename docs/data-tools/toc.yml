@@ -1,7 +1,5 @@
 - name: Omówienie
-  items:
-    - name: Uzyskiwanie dostępu do danych w programie Visual Studio
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Samouczki
   items:
     - name: Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET

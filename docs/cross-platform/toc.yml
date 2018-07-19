@@ -18,7 +18,7 @@
     - name: 'Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac'
       href: setup-install-and-verifications-for-mac-users.md
 - name: Visual Studio Tools for Apache Cordova
-  href: visual-studio-tools-for-apache-cordova.md
+  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Narzędzia Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:

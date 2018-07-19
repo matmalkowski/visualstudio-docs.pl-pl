@@ -1,5 +1,4 @@
 # [Wprowadzenie do programu Visual Studio dla komputerów Mac](index.md)
-## [Zalety programu Visual Studio dla komputerów Mac w porównaniu z programem Xamarin Studio](benefits-vsmac-over-xs.md)
 # [Samouczek środowiska IDE](ide-tour.md)
 
 # [Instalacja](installation.md)

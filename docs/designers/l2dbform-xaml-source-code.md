@@ -10,87 +10,87 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924330"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978193"
 ---
-# <a name="l2dbformxaml-source-code"></a>Kod źródłowy L2DBForm.XAML
+# <a name="l2dbformxaml-source-code"></a>Kod źródłowy L2DBForm.xaml
 
-Ten temat zawiera i opisuje źródłowy plik XAML dla [WPF danych powiązania za pomocą LINQ do XML przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Ten temat zawiera i opisuje plik źródłowy XAML [powiązanie danych WPF za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md), *L2DBForm.xaml*.
 
 ## <a name="overall-ui-structure"></a>Ogólna struktura interfejsu użytkownika
 
-Podobnie jak w typowej w projekcie WPF, ten plik zawiera jeden element nadrzędny <xref:System.Windows.Window> — element XML skojarzone z klasy pochodnej `L2XDBFrom` w `LinqToXmlDataBinding` przestrzeni nazw.
+Podobnie jak w typowej dla projektu WPF, ten plik zawiera jeden element nadrzędny <xref:System.Windows.Window> — element XML skojarzony z klasą pochodną `L2XDBFrom` w `LinqToXmlDataBinding` przestrzeni nazw.
 
-Obszar klienta znajduje się w obrębie <xref:System.Windows.Controls.StackPanel> uzyskuje światła niebieskie tło. Panel ten zawiera cztery <xref:System.Windows.Controls.DockPanel> interfejsu użytkownika sekcje oddzielone <xref:System.Windows.Controls.Separator> pasków. Celem tych sekcjach opisano w **uwagi** w [poprzedniego tematu](../designers/walkthrough-linqtoxmldatabinding-example.md).
+Obszar klienta znajduje się w obrębie <xref:System.Windows.Controls.StackPanel> , otrzymuje światła niebieskim tłem. Ten panel zawiera cztery <xref:System.Windows.Controls.DockPanel> oddzielone sekcje interfejsu użytkownika <xref:System.Windows.Controls.Separator> pasków. Celem tych sekcjach opisano w **uwagi** w [poprzednim temacie](../designers/walkthrough-linqtoxmldatabinding-example.md).
 
-Każda sekcja zawiera etykietę, którą identyfikuje ją. Pierwsze dwie sekcje tej etykiecie jest obrócony o 90 stopni za pośrednictwem <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Pozostała część sekcji zawiera elementy interfejsu użytkownika należy celem tej sekcji: bloki tekstu, pól tekstowych, przycisków i tak dalej. Czasami element podrzędny <xref:System.Windows.Controls.StackPanel> służy do Dopasuj tych formantów podrzędnych.
+Każda sekcja zawiera etykietę, która identyfikuje go. W pierwszych dwóch sekcjach, ta etykieta jest obrócony o 90 stopni za pośrednictwem <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Pozostała część sekcji zawiera elementy interfejsu użytkownika, właściwe jest celem tej sekcji: bloki tekstu, pola tekstowe, przyciski i tak dalej. Czasami element podrzędny <xref:System.Windows.Controls.StackPanel> jest używane do dostosowywania tych formantów podrzędnych.
 
-## <a name="window-resource-section"></a>Sekcja zasobów okna
+## <a name="window-resource-section"></a>Okno sekcji zasobów
 
-Otwarcie `<Window.Resources>` tagu wiersza 9 wskazuje początek sekcji zasobów okna. Kończy się w wierszu 35 tagu zamykającego.
+Otwieranie `<Window.Resources>` tagów w wierszu 9 wskazuje początek okna sekcji zasobów. Kończy się ona tagu zamykającego w wierszu 35.
 
-`<ObjectDataProvider>` Deklaruje tagu, który obejmuje 11 do 25 wierszy, <xref:System.Windows.Data.ObjectDataProvider>nazwanego `LoadedBooks`, która używa <xref:System.Xml.Linq.XElement> jako źródło. <xref:System.Xml.Linq.XElement> Jest inicjowany przez podczas analizowania osadzonego dokumentu XML ( `CDATA` elementu). Zwróć uwagę, że biały znak jest zachowywana przy deklarowaniu osadzonych dokument XML, a także, gdy zostanie przeanalizowany. Biały znak jest zachowywana, ponieważ <xref:System.Windows.Controls.TextBlock> formant, który służy do wyświetlania raw XML, nie ma nie XML specjalne formatowanie możliwości.
+`<ObjectDataProvider>` Znacznik, który obejmuje wiersze 11 do 25, deklaruje <xref:System.Windows.Data.ObjectDataProvider>o nazwie `LoadedBooks`, który używa <xref:System.Xml.Linq.XElement> jako źródło. <xref:System.Xml.Linq.XElement> Jest inicjowany przez analizowanie osadzonego dokumentu XML ( `CDATA` elementu). Należy zauważyć, że biały znak są zachowywane podczas deklarowania osadzonego dokumentu XML, a także, kiedy jest analizowany. Biały znak są zachowywane, ponieważ <xref:System.Windows.Controls.TextBlock> formant, który służy do wyświetlania nieprzetworzonym kodzie XML, nie ma żadnych specjalnych XML funkcji formatowania.
 
-Ponadto <xref:System.Windows.DataTemplate> o nazwie `BookTemplate` jest zdefiniowany w wierszach 28 za pośrednictwem 34. Ten szablon służy do wyświetlania wpisy w **listy książek** sekcji interfejsu użytkownika. Używa powiązania danych i LINQ do XML właściwości dynamicznych pobieranie książki identyfikator i nazwa za pośrednictwem następujących przydziałów:
+Na koniec <xref:System.Windows.DataTemplate> o nazwie `BookTemplate` jest zdefiniowany w wierszach 28 za pośrednictwem 34. Ten szablon służy do wyświetlania wpisy w **listy książek** sekcji interfejsu użytkownika. Korzysta powiązanie danych oraz LINQ do XML właściwości dynamicznych do pobrania książki identyfikator i Nazwa książki za pośrednictwem następujących przypisań:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
 ## <a name="data-binding-code"></a>Kod powiązania danych
 
-Oprócz <xref:System.Windows.DataTemplate> elementu powiązania danych jest używany w wielu innych miejsc, w tym pliku.
+Oprócz <xref:System.Windows.DataTemplate> element, wiązanie danych jest używany w wielu innych miejscach, w tym pliku.
 
-W otwarcia `<StackPanel>` tagu wiersza 38 <xref:System.Windows.FrameworkElement.DataContext%2A> ma ustawioną właściwość tego zespołu `LoadedBooks` dostawcy danych.
+W otwarcia `<StackPanel>` tagów w wierszu 38 <xref:System.Windows.FrameworkElement.DataContext%2A> tego panelu zostaje ustalona `LoadedBooks` dostawcy danych.
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
-Ustawienie kontekstu danych umożliwia (w wierszu 46) dla <xref:System.Windows.Controls.TextBlock> o nazwie `tbRawXml` do wyświetlania przez powiązanie do tego dostawcy danych raw XML `Xml` właściwości:
+Ustawianie kontekstu danych umożliwia (w wierszu 46) dla <xref:System.Windows.Controls.TextBlock> o nazwie `tbRawXml` do wyświetlenia nieprzetworzonym kodzie XML przez powiązanie tego dostawcy danych `Xml` właściwości:
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
-<xref:System.Windows.Controls.ListBox> w **listy książek** sekcji interfejsu użytkownika w wierszach 58 za pośrednictwem 62, ustawia szablon jego wyświetlania elementów do `BookTemplate` zdefiniowane w sekcji zasobów okno:
+<xref:System.Windows.Controls.ListBox> w **listy książek** sekcji interfejsu użytkownika w wierszach 58 za pośrednictwem 62, ustawia szablon dla jego elementów wyświetlana `BookTemplate` zdefiniowane w sekcji zasobów okna:
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
-Następnie wierszach 59 za pośrednictwem 62 rzeczywistymi wartościami książek są powiązane z tej listy:
+Następnie w wierszach 59 za pośrednictwem 62 rzeczywiste wartości książek, które są powiązane z tego pola listy:
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
 ```
 
-Trzeci sekcji interfejsu użytkownika, **edytować wybraną książkę**, najpierw wiąże <xref:System.Windows.FrameworkElement.DataContext%2A> elementu nadrzędnego <xref:System.Windows.Controls.StackPanel> do aktualnie wybranego elementu z **listy książek** sekcji interfejsu użytkownika (wiersza 82):
+Trzecia sekcja interfejsu użytkownika **Edytuj wybrane książki**, najpierw wiąże <xref:System.Windows.FrameworkElement.DataContext%2A> nadrzędnej <xref:System.Windows.Controls.StackPanel> do aktualnie wybranego elementu z **listy książek** sekcji interfejsu użytkownika (wiersza 82):
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
-Następnie używa powiązanie dwukierunkowe danych tak, aby bieżące wartości elementy księgi są wyświetlane i aktualizowane na podstawie polach tekstowych wyświetlanych w tym panelu. Powiązywanie danych do właściwości dynamicznych jest podobny do wiązania danych używany w `BookTemplate` szablon danych:
+Następnie używa powiązanie dwukierunkowe danych, tak aby bieżące wartości książki elementy są wyświetlane i aktualizowane na podstawie dwóch pól tekstowych w tym panelu. Powiązania danych właściwości dynamicznych jest podobny do wiązania danych używanych w `BookTemplate` szablon danych:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
-W ostatniej sekcji interfejsu użytkownika **Dodawanie nowej książki**, nie są używane powiązanie danych w jego kod XAML. Zamiast tego jest powiązanie danych w jego obsługa kodu w pliku zdarzeń *L2DBForm.xaml.cs*.
+Ostatnia sekcja interfejsu użytkownika **Dodawanie nowej książki**, nie używa powiązanie danych w jego kod XAML. Zamiast tego powiązania danych znajduje się w jego obsługa kodu w pliku zdarzeń *L2DBForm.xaml.cs*.
 
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
 
 > [!NOTE]
-> Firma Microsoft zaleca, skopiuj następujący kod poniżej w edytorze kodu, takich jak C# Edytor kodu źródłowego w programie Visual Studio, aby numery wierszy są łatwiejsze do śledzenia.
+> Firma Microsoft zaleca, skopiuj poniższy kod poniżej do edytora kodu, takich jak C# Edytor kodu źródłowego w programie Visual Studio, aby numery wierszy będzie można łatwiej śledzić.
 
 ### <a name="code"></a>Kod
 
@@ -243,9 +243,9 @@ W ostatniej sekcji interfejsu użytkownika **Dodawanie nowej książki**, nie s�
 
 ### <a name="comments"></a>Komentarze
 
-C# kodu źródłowego dla programów obsługi zdarzeń skojarzonych z elementów interfejsu użytkownika WPF, zobacz [kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
+Dla języka C# kodu źródłowego dla obsługi zdarzeń skojarzonych elementów interfejsu użytkownika WPF, zobacz [kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: LinqToXmlDataBinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Wskazówki: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

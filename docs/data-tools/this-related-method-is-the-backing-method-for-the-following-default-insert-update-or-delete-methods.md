@@ -1,5 +1,5 @@
 ---
-title: Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete
+title: Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
@@ -10,32 +10,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fdb359ebe4a42e0ddad8b93c1e746922ac609f60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30e08cb10b6e1912fe5962620faf34a1c6250cf3
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922486"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174171"
 ---
-# <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete
+# <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania
 
-Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete. Jeśli zostanie usunięta, te metody także zostaną usunięte. Czy chcesz kontynuować?
+Ta powiązana metoda to metoda zapasowa następujące domyślne `Insert`, `Update`, lub `Delete` metody. Jeśli zostanie usunięta, te metody także zostaną usunięte. Czy chcesz kontynuować?
 
-Wybrane `DataContext` metody jest obecnie używana jako jedną z metod Insert, Update lub Delete dla jednej z klas jednostek w Projektancie obiektów relacyjnych. Usunięcie wybranej metody powodują klasę jednostki, która była za pomocą tej metody można powrócić do domyślne zachowanie środowiska wykonawczego do operacji Insert, Update, lub usunąć w trakcie aktualizacji.
+Wybrane `DataContext` metoda jest obecnie używany jako jeden z `Insert`, `Update`, lub `Delete` metody dla jednej z klas jednostek na **O/R Designer**. Usunięcie przyczyny wybranej metody Klasa jednostki, która została przy użyciu tej metody, aby powrócić do domyślnego zachowania czasu wykonywania do operacji wstawiania, aktualizowania lub usuwania podczas aktualizacji.
 
-## <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>Aby usunąć wybranej metody, powodując klasy jednostki do korzystania z aktualizacji środowiska uruchomieniowego
+## <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>Można usunąć wybranej metody, powodując Klasa jednostki użyć aktualizacje środowiska uruchomieniowego
 
 - Kliknij przycisk **Tak**.
 
-    Wybrane metody zostaną usunięte i wszystkie klasy, które użyć tej metody dla zastępowanie zachowania aktualizacji są przywracane do przy użyciu domyślnego LINQ do SQL zachowania w czasie wykonywania.
+    Wybranej metody zostanie usunięty, a wszystkie klasy, które umożliwiający zastępowanie zachowania aktualizacji tej metody są przywracane przy użyciu domyślnego LINQ do zachowania w czasie wykonywania SQL.
 
 ## <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>Aby zamknąć okno komunikatu, pozostawiając wybranej metody bez zmian
 
-- Kliknij przycisk **nr**.
+- Kliknij przycisk **nie**.
 
-    Zamyka okno komunikatu i nie zostały zmienione.
+    Zamyka okno komunikatu, i są wprowadzane żadne zmiany.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
