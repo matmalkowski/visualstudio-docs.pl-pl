@@ -1,5 +1,5 @@
 ---
-title: Elementy (właściwość klasy XElement dynamiczny)
+title: Elementy (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4100e26d07b9dc76f9947e4f5a5f7db3a901abe2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924359"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924414"
 ---
-# <a name="elements-xelement-dynamic-property"></a>Elementy (właściwość klasy XElement dynamiczny)
+# <a name="elements-xelement-dynamic-property"></a>Elementy (właściwość dynamiczna XElement)
 
-Pobiera indeksatora używane do pobierania elementy podrzędne bieżącego elementu, które odpowiada określonym rozwiniętą nazwą.
+Pobiera służy do pobierania elementy podrzędne bieżącego elementu, które odpowiadają określonej rozwiniętą nazwę indeksatora.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xaml
 elem.Elements[{namespaceName}localName]
 ```
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
 
-Indeksatora typu `IEnumerable<XElement> Item(String expandedName)`. Ten indeksator pobiera nazwę rozwinięte wymaganymi podrzędnymi elementami i zwraca zgodnych elementów podrzędnych w <xref:System.Collections.IEnumerable> `<` <xref:System.Xml.Linq.XElement> `>` kolekcji.
+Indeksator typu `IEnumerable<XElement> Item(String expandedName)`. Ten indeksator ma rozwiniętej nazwy wymaganymi podrzędnymi elementami i zwraca pasujące elementy podrzędne w <xref:System.Collections.IEnumerable> `<` <xref:System.Xml.Linq.XElement> `>` kolekcji.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest odpowiednikiem <xref:System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)?displayProperty=fullName> metody <xref:System.Xml.Linq.XContainer> klasy.
+Ta właściwość jest równoważna <xref:System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)?displayProperty=fullName> metody <xref:System.Xml.Linq.XContainer> klasy.
 
-Elementy w zwracanej kolekcji znajdują się w kolejności dokumentu XML źródła.
+Elementy w kolekcji zwracane są w kolejności dokumentu źródła XML.
 
-Wykonanie odroczone korzysta z tej właściwości.
+Ta właściwość używa odroczonego wykonania.
 
 ## <a name="see-also"></a>Zobacz także
 

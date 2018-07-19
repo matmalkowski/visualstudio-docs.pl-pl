@@ -23,33 +23,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eccc1781174394da333d2fc703fec0b4d31e522a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ee0209c082185e111988e5f8e39f2f0b806a4995
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457234"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433122"
 ---
 # <a name="client-block-hook-functions"></a>Funkcje punktu zaczepienia bloku klienta
-Jeśli chcesz zweryfikować lub zgłosić zawartości danych przechowywanych w `_CLIENT_BLOCK` blokuje, można napisać funkcję specjalnie do tego celu. Funkcja, który można zapisać musi mieć prototyp podobny do następującego, zgodnie z definicją w CRTDBG. H:  
+Jeśli chcesz sprawdzić lub zgłosić zawartość danych przechowywanych w `_CLIENT_BLOCK` blokuje, można napisać funkcję specjalnie do tego celu. Napisana funkcja musi mieć podobny do poniższego, prototyp, zgodnie z definicją w CRTDBG. GODZ.:  
   
-```  
+```cpp
 void YourClientDump(void *, size_t)  
   
 ```  
   
- Innymi słowy, należy zaakceptować funkcji punktów zaczepienia **void** wskaźnika na początku bloku alokacji, wraz z **size_t** wpisz wartość wskazującą, rozmiar alokacji i zwracać `void`. Inną niż jego zawartość jest od użytkownika.  
+ Innymi słowy, funkcja podłączania powinna obsługiwać **void** wskaźnika na początku bloku alokacji, wraz z **size_t** wpisz wartość wskazującą, rozmiar alokacji i zwracać `void`. Innych niż jego zawartość, zależą od Ciebie.  
   
- Po zainstalowaniu, używając funkcji punktów zaczepienia [_crtsetdumpclient —](/cpp/c-runtime-library/reference/crtsetdumpclient), będzie ona wywoływana zawsze `_CLIENT_BLOCK` bloku jest utworzyć zrzutu. Następnie można użyć [_crtreportblocktype —](/cpp/c-runtime-library/reference/crtreportblocktype) Aby uzyskać informacje na temat typu lub podtypu zrzut bloków.  
+ Po zainstalowaniu, używając funkcji punktów zaczepienia [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), będzie ona wywoływana zawsze `_CLIENT_BLOCK` jest zrzucany bloku. Następnie można użyć [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) można pobrać informacji na temat typu lub podtypu zrzut bloków.  
   
- Wskaźnik do funkcji, które są przekazywane do `_CrtSetDumpClient` jest typu **_crt_dump_client —**, zgodnie z definicją w CRTDBG. H:  
+ Wskaźnik do funkcji, możesz przekazać do `_CrtSetDumpClient` typu **_crt_dump_client —**, zgodnie z definicją w CRTDBG. GODZ.:  
   
-```  
+```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
    (void *, size_t);  
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [Przykładowe crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)   
+ [Przykładowe crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
  [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

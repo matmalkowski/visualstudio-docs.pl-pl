@@ -24,35 +24,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c46b498ea36459dff0eb538ac3e0371fd9c5707
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c8a051641811da3658ffe556982c67649704069
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460111"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433359"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
-Funkcja punktu zaczepienia alokacji, zainstalować za pomocą [_crtsetallochook —](/cpp/c-runtime-library/reference/crtsetallochook), jest nazywany każdorazowo przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten rodzaj punktu zaczepienia może służyć do wielu różnych celów. Użyj go do testowania, jak aplikacja obsługuje sytuacjach za mało pamięci, na przykład, lub zbadać wzorce alokacji lub alokacji informacji w celu późniejszej analizy.  
+Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielane lub zwolnienie pamięci. Ten typ punktu zaczepienia służy do wielu różnych celów. Go używać do testowania, jak aplikacja obsługuje sytuacje braku pamięci, takich jak do zbadania wzorców przydziału lub rejestrowania informacji o alokacji do późniejszej analizy.  
   
 > [!NOTE]
->  Należy pamiętać o ograniczenia dotyczące używania funkcji biblioteki wykonawczej języka C w funkcji punktów zaczepienia alokacji, opisanego w [przechwytuje alokacji i C Run-Time pamięci alokacji](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+>  Należy pamiętać o ograniczeń dotyczących używania funkcji biblioteki wykonawczej języka C w funkcji podłączania alokacji, opisanego w [punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
- Funkcja alokacji musi mieć prototypu podobne do poniższych:  
+ Funkcji podłączania alokacji powinny mieć prototypu, jak w poniższym przykładzie:  
   
-```  
+```cpp
 int YourAllocHook(int nAllocType, void *pvData,  
         size_t nSize, int nBlockUse, long lRequest,  
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Wskaźnik, który jest przekazywany do [_crtsetallochook —](/cpp/c-runtime-library/reference/crtsetallochook) jest typu **_crt_alloc_hook —**, zgodnie z definicją w CRTDBG. H:  
+ Wskaźnik, który jest przekazywany do [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) typu **_crt_alloc_hook —**, zgodnie z definicją w CRTDBG. GODZ.:  
   
-```  
+```cpp
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Po biblioteki wykonawczej programu haku *nAllocType* argument wskazuje alokacji, jakie ma zostać wykonana operacja (**_HOOK_ALLOC**, **_HOOK_REALLOC**, lub **_HOOK_FREE**). W przypadku bezpłatny lub ponowne przydzielenie `pvData` zawiera wskaźnik do tematu użytkownika bloku o ma zostać zwolniony. Jednak w przypadku alokacji ten wskaźnik ma wartość null, ponieważ nie przeprowadzono jeszcze alokacji. Pozostałe argumenty zawierają rozmiar alokacji danego, jego typ bloku numer sekwencyjny żądania skojarzone z i wskaźnika do pliku nazwę i numer wiersza w których alokacji została wprowadzona, jeśli jest dostępna. Po funkcji punktów zaczepienia wykonuje niezależnie od analizy i inne zadania chce jego autora, aplikacja musi zwracać jedną **TRUE**, co oznacza, że można kontynuować operacji alokacji, lub **FALSE**, wskazujące który operacja powinna zakończyć się niepowodzeniem. Proste haku tego typu może sprawdzić ilość pamięci przydzielonej do tej pory i zwracać **FALSE** Jeśli wielkość przekracza limit mała. Następnie doświadczenie rodzaju błędów alokacji, które normalnie mogą się pojawić tylko wtedy, gdy ilość dostępnej pamięci zostało bardzo niskich aplikacji. Punkty zaczepienia bardziej złożonych może informacji o alokacji wzorce, analiza użycia pamięci lub Raportuj, gdy wystąpić w następujących sytuacjach.  
+ Gdy biblioteka środowiska uruchomieniowego wywołuje usługi podłączania *nAllocType* argument wskazuje alokacji, jakie ma być przeprowadzana operacja (**_HOOK_ALLOC**, **_HOOK_REALLOC**, lub **_HOOK_FREE**). Bezpłatne lub ponowne przydzielenie `pvData` zawiera wskaźnik do tego artykułu użytkownika bloku, która będzie zwolniona. Jednak dla alokacji this, wskaźnik ma wartość null, ponieważ nie wystąpiła Alokacja. Pozostałe argumenty zawierają rozmiar alokacji w danym, jego typ bloku numeru sekwencyjnego żądania skojarzonego z, a także wskaźnik do nazwy pliku. Jeśli to możliwe, argumenty również obejmować numer wiersza, w którym wykonano alokacji. Po funkcja podłączania wykonuje niezależnie od analizy i inne zadania chce jego autora, aplikacja musi zwracać jedną **TRUE**, co oznacza, że można kontynuować operacji alokacji, lub **FALSE**oznaczający, operacja powinna zakończyć się niepowodzeniem. Proste punktu zaczepienia tego typu może sprawdzić ilość pamięci przydzielonej do tej pory i powrócić **FALSE** przekroczeniu limitu małych takimi problemami znacznie mniej. Aplikacja następnie doświadczenie rodzaju błędów alokacji, które normalnie mogą się pojawić tylko wtedy, gdy ilość dostępnej pamięci była bardzo niska. Bardziej złożone punkty zaczepienia może informacje o wzorcach alokacji, analiza użycia pamięci lub raportu po wystąpieniu określonych sytuacjach.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   

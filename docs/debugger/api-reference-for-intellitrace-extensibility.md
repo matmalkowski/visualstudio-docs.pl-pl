@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457465"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433148"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Odwołanie API rozszerzalności IntelliTrace
-Korzystając z informacji w tej sekcji, można użyć rozszerzalności IntelliTrace interfejsów API do odczytu i dekodowania .itrace, pliki w aplikacji.  
+Korzystając z informacji w tej sekcji, można użyć rozszerzalności IntelliTrace interfejsów API do odczytywania i dekodować pliki .itrace w aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- To API rozszerzalności IntelliTrace znajdują się w jednym obszarze nazw  
+ Interfejsów API rozszerzania funkcji IntelliTrace są zawarte w jednej przestrzeni nazw  
   
 -   <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [IntelliTrace](../debugger/intellitrace.md)  
- Zawiera informacje o tym, jak można debugować przy użyciu funkcji IntelliTrace.  
+ Zawiera informacje o tym, jak można debugować za pomocą funkcji IntelliTrace.  
   
- [Galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=166091)  
- Obsługuje aplikację przykładową przedstawiająca sposób używania rozszerzalności IntelliTrace.
+ [Galerii kodów MSDN](https://code.msdn.microsoft.com/)  
+ Obsługuje aplikację przykładową, przedstawiający sposób użycia rozszerzalności funkcji IntelliTrace.

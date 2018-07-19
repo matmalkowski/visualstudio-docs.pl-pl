@@ -1,5 +1,5 @@
 ---
-title: Klawisze modyfikujące obszar roboczy w programie Blend
+title: Klawisze modyfikujące obszar kompozycji w programie Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,39 +10,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e48dea790b5cb3adb6396a2bdd74b4625e30ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923100"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890191"
 ---
-# <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar roboczy w programie Blend
-Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie można użyć [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika, aby wykrywać je. Poniższa tabela zawiera listę skrótów, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.
+# <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
+Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich wykrycie. W poniższej tabeli wymieniono skróty, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.
 
 |Do tej czynności|Zrób to|
 |-----------------------|-------------|
-|Wybierz tymczasowo **wybór** narzędzia, podczas gdy inne narzędzie pozostaje wybranego (zmniejsza liczbę razy, należy kliknąć element **narzędzia** panelu, i z powrotem przechodzi między  **Wybór** narzędzie i innych użytkowników)|Naciśnij i przytrzymaj klawisz CTRL|
-|Przesunąć wybranych obiektów podczas **wybór** wybrane narzędzie|Naciśnij klawisze strzałek|
-|Przesuwanie obszaru roboczego|Przytrzymaj klawisz spacji i przeciągnij obszaru roboczego|
-|Powiększać i pomniejszać w obszarze roboczym|Obróć koło myszy|
-|Powiększanie obszaru roboczego|Przytrzymaj klawisze CTRL + SPACJA, podczas klikania w dowolnym miejscu w obszarze roboczym|
-|Pomniejsz w obszarze roboczym|Przytrzymaj klawisze CTRL + ALT + SPACJA, podczas klikania w dowolnym miejscu w obszarze roboczym|
-|Przenieś obszaru roboczego, lewy i prawy|Naciśnij i przytrzymaj klawisz SHIFT i Obróć koło myszy|
-|Przenieś obszar roboczy w górę i w dół|Przytrzymaj klawisz CTRL i kółka myszy Obróć|
-|Proporcje obiektów są rysowane lub przekształcenia|Naciśnij i przytrzymaj klawisz SHIFT|
-|Obracanie obiektu o 15 stopni|Naciśnij i przytrzymaj klawisz SHIFT|
-|Duplikowanie obiektów|Naciśnij klawisz ALT, przeciągnij obiekt|
-|Zmienić elementu nadrzędnego obiektu|Przeciągnij obiekt w panelu układu, a następnie naciśnij klawisz ALT przed zwolnieniem przycisku myszy|
-|Wybranie wielu obiektów|Przytrzymaj klawisz CTRL podczas zaznaczania poszczególnych obiektów|
-|Zaznaczyć wiele sąsiadujących ze sobą obiektów|Naciśnij i przytrzymaj klawisz SHIFT podczas wybierania obiektów imię i nazwisko|
-|Wybierz za pomocą rysowania ramkę|Naciśnij i przytrzymaj klawisz SHIFT i przeciągnij|
-|Wybierz obiekt poniżej innego obiektu|Naciśnij klawisz ALT i kliknij jeden raz dla każdej warstwy obiektów|
-|Przełączanie między otwarte dokumenty|Naciśnij klawisze CTRL + TAB|
-|Otwórz **zasoby** panelu|Naciśnij klawisze CTRL + kropka|
+|Wybierz tymczasowo **wybór** narzędzia, podczas gdy inne narzędzie pozostaje wybrane (zmniejsza to liczbę razy, należy kliknąć element **narzędzia** panelu, przechodząc do i z powrotem między  **Wybór** narzędzia i innych użytkowników)|Naciśnij i przytrzymaj **Ctrl**|
+|Posuń zaznaczone obiekty podczas **wybór** wybrane narzędzie|Naciśnij klawisze strzałek|
+|Przesuwanie obszaru kompozycji|Naciśnij i przytrzymaj **spacja** i przeciągnij obszaru kompozycji|
+|Powiększaj i pomniejszaj, w obszarze kompozycji|Obrót kółkiem myszy|
+|Powiększanie obszaru kompozycji|Naciśnij i przytrzymaj **Ctrl**+**spacja** podczas kliknięcie w dowolnym miejscu w obszarze kompozycji|
+|Pomniejsz w obszarze kompozycji|Naciśnij i przytrzymaj **Ctrl**+**Alt**+**spacja** podczas kliknięcie w dowolnym miejscu w obszarze kompozycji|
+|Przenieś obszaru kompozycji, lewy i prawy|Naciśnij i przytrzymaj **Shift** i obrót kółkiem myszy|
+|Przenieś obszar roboczy w górę i w dół|Naciśnij i przytrzymaj **Ctrl** i obrót kółkiem myszy|
+|Proporcje obiekty są rysowane lub przekształcane|Naciśnij i przytrzymaj **Shift**|
+|Obracanie obiektu w przyrostach co 15 stopni|Naciśnij i przytrzymaj **Shift**|
+|Duplikowanie obiektów|Naciśnij i przytrzymaj **Alt** , przeciągnij obiekt|
+|Zmień obiekt nadrzędny dla obiektu|Przeciągnij obiekt nad panel układu i naciśnij klawisz **Alt** przed zwolnieniem przycisku myszy|
+|Wybranie wielu obiektów|Naciśnij i przytrzymaj **Ctrl** podczas zaznaczania poszczególnych obiektów|
+|Zaznaczyć wiele sąsiadujących obiektów|Naciśnij i przytrzymaj **Shift** podczas wybierania obiektów imię i nazwisko|
+|Wybierz za pomocą rysowania ramkę|Naciśnij i przytrzymaj **Shift** i przeciągnij|
+|Wybierz obiekt pod innym obiektem|Naciśnij i przytrzymaj **Alt** i kliknij jeden raz dla każdej warstwy obiektów|
+|Przełączać się między otwartych dokumentach|Naciśnij klawisz **Ctrl**+**kartę**|
+|Otwórz **zasoby** panelu|Naciśnij klawisz **Ctrl**+**okres**|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Skróty klawiaturowe](../designers/keyboard-shortcuts-in-blend.md)
 - [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
-- [Bezpośrednie klawisze modyfikujące zaznaczenia](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)

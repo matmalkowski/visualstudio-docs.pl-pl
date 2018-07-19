@@ -15,53 +15,53 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950884"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800623"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
-Użyj **formatowanie** strony **opcje** okno dialogowe, aby ustawić opcje formatowania kodu w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia**, **opcje**, a następnie rozwiń węzeł **Edytor tekstu**, **JavaScript**i **Formatowania**.
+Użyj **formatowanie** strony **opcje** okno dialogowe, aby ustawić opcje formatowania kodu w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia**, **opcje**, a następnie rozwiń węzeł **edytora tekstów**, **JavaScript**i **Formatowanie**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Automatyczne formatowanie
- Opcje te określają, kiedy formatowanie występuje w **źródła** widoku.
+ Te opcje określają, kiedy formatowanie występuje w **źródła** widoku.
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Formatuj ukończony wiersz po Enter**|Gdy ta opcja jest zaznaczona, edytora kodu automatycznie formatuje wiersz po wybraniu klawisz Enter.|
-|**Formatuj ukończony instrukcji.**|Gdy ta opcja jest zaznaczona, edytora kodu automatycznie formatuje wiersz, w przypadku klucza średnika.|
-|**Formatuj ukończony blok na}**|Gdy ta opcja jest zaznaczona, edytora kodu automatycznie formatuje wiersz po wybraniu zamykający nawias klamrowy klucza.|
-|**Format po wklejeniu**|Gdy ta opcja jest zaznaczona, edytora kodu formatuje kodu podczas wklejania do edytora. Edytor używa obecnie zdefiniowane reguły formatowania. Jeśli ta opcja nie jest zaznaczona, Edytor używa oryginalne formatowanie kodu wkleić w.|
+|**Formatuj ukończony wiersz na wprowadź**|Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie formatuje wiersz po naciśnij klawisz Enter.|
+|**Formatuj ukończony instrukcji.**|Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie formatuje wiersz, po wybraniu klawisza średnikami.|
+|**Formatuj ukończony blok po naciśnięciu}**|Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie formatuje wiersz, w przypadku wybrania zamykający nawias klamrowy klucza.|
+|**Formatuj przy wklejeniu**|Gdy ta opcja jest zaznaczona, Edytor kodu formatuje kod, wkleić go do edytora. Edytor przy użyciu aktualnie zdefiniowanych reguł formatowania. Jeśli ta opcja nie jest zaznaczone, Edytor używa oryginalne formatowanie kodu w wklejone.|
 
 ## <a name="new-lines"></a>Nowe wiersze
- Opcje te określają, czy edytor kodu umieszcza otwierający nawias klamrowy funkcje i bloków kontroli w nowym wierszu.
+ Te opcje określają, czy edytor kodu umieszcza otwierający nawias klamrowy, funkcje i bloki sterujące w nowym wierszu.
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
 |Opcja|Opis|
 |------------|-----------------|
 |**Umieść otwierający nawias klamrowy w nowym wierszu dla funkcji**|Edytor kodu, gdy ta opcja jest zaznaczona, przenosi otwierający nawias klamrowy, skojarzone z funkcją do nowego wiersza.|
-|**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, edytora kodu przenosi otwierający nawias klamrowy, skojarzone z bloku sterowania (na przykład `if` i `while` kontrolować bloki) do nowego wiersza.|
+|**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu przenosi otwierający nawias klamrowy, skojarzone z bloku sterowania (na przykład `if` i `while` bloki sterujące) do nowego wiersza.|
 
 ## <a name="spacing"></a>Odstępy
- Opcje te określają, jak spacje są dodawane w **źródła**widoku.
+ Te opcje określają, jak spacje są dodawane w **źródła**widoku.
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Wstaw spację po ogranicznik przecinkami**|Gdy ta opcja jest zaznaczona, edytora kodu dodaje spację po ograniczniki przecinkami.|
-|**Wstaw spację po średniku w instrukcji "for"**|Gdy ta opcja jest zaznaczona, edytora kodu dodaje odstęp po każdym średniku w pierwszym wierszu `for` pętli.|
-|**Wstaw spację przed operatorami binarnymi i po**|Gdy ta opcja jest zaznaczona, edytora kodu spację przed operatorami binarnymi i po (na przykład, +, -, & &, &#124; &#124;).|
-|**Wstaw spację po słowach kluczowych w instrukcjach przepływu sterowania**|Gdy ta opcja jest zaznaczona, edytora kodu spację po słowach kluczowych JavaScript w instrukcjach przepływu sterowania.|
-|**Wstaw spację po — słowo kluczowe funkcji dla funkcji anonimowych.**|Gdy ta opcja jest zaznaczona, edytora kodu spację po `function` dla funkcji anonimowych.|
-|**Wstaw spację po otwarciu i przed zamknięciem nawiasy niepusta**|Gdy ta opcja jest zaznaczona, edytora kodu dodaje odstęp po nawiasie otwierającym, a także przed nawiasem zamykającym Jeśli znaki niepustym znajdują się w nawiasie.|
+|**Wstaw spację po przecinek oddzielający**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po ograniczniki przecinkami.|
+|**Wstaw spację po średniku w instrukcji "for"**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po każdym średniku w pierwszym wierszu `for` pętli.|
+|**Wstaw spację przed operatorami binarnymi i po**|Gdy ta opcja jest zaznaczona, Edytor kodu spację przed operatorami binarnymi i po (na przykład, +, -, & &, &#124; &#124;).|
+|**Wstaw spację po słowach kluczowych w instrukcjach przepływu sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po słowach kluczowych języka JavaScript, w instrukcjach przepływu sterowania.|
+|**Wstaw spację po funkcji — słowo kluczowe dla funkcji anonimowych.**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po `function` kluczowym dla funkcji anonimowych.|
+|**Wstaw spację po otwarciu i przed zamknięciem nawiasu niepustego**|Gdy ta opcja jest zaznaczona, Edytor kodu dodaje odstęp po nawiasie otwierającym, a także przed nawiasem zamykającym Jeśli znaków niepuste znajdują się w nawiasach.|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)

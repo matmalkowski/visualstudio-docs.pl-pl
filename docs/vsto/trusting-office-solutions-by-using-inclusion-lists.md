@@ -1,5 +1,5 @@
 ---
-title: Zaufania rozwiązań pakietu Office przy użyciu list dołączania
+title: Zaufanie rozwiązań pakietu Office przy użyciu list dołączania
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,34 +19,34 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844228"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38783704"
 ---
-# <a name="trust-office-solutions-by-using-inclusion-lists"></a>Zaufania rozwiązań pakietu Office przy użyciu list dołączania
-  Listy dołączania użytkownicy udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcy. Listy dołączania są specyficzne dla użytkownika i może służyć do dostosowania na poziomie dokumentu i dodatków narzędzi VSTO.  
+# <a name="trust-office-solutions-by-using-inclusion-lists"></a>Zaufanie rozwiązań pakietu Office przy użyciu list dołączania
+  Włączenie listy umożliwiają użytkownikom udzielenia zaufania do rozwiązań pakietu Office, które są podpisane za pomocą certyfikatu, który identyfikuje wydawcy. Listy dołączania są specyficzne dla użytkownika i może służyć do dostosowywania na poziomie dokumentu i dodatków narzędzi VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Gdy użytkownik uruchamia rozwiązania do pakietu Office, które nie zostały przyznane zaufania dla danego użytkownika, rozwiązania Microsoft Office wyświetla monit o jej decyzji zabezpieczeń z [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufania wiersza. Jeśli użytkownik zdecyduje się na zaufania rozwiązania, uruchamia dostosowania, a użytkownik nie jest monitowany podczas następnego.  
+ Gdy użytkownik uruchamia rozwiązań pakietu Office, które nie zostały nadane dla relacji zaufania dla danego użytkownika, rozwiązania Microsoft Office jej wyświetla monit o podanie decyzja dotycząca zabezpieczeń za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monit o udzielenie zaufania. Jeśli użytkownik zdecyduje się na rozwiązaniu zaufania, przebiegów dostosowywania i użytkownik nie jest monitowany przy następnym.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Lista dołączania i Instalator Windows  
- Instalowanie rozwiązań pakietu Office do *Program Files* katalogu za pomocą Instalatora systemu Windows wymaga uprawnień administratora. Dla rozwiązań pakietu Office w *Program Files* katalogu, ponieważ już przyznano rozwiązań pakietu Office uprawnień FullTrust Visual Studio Tools for Office runtime nie sprawdza lista dołączania.  
+ Instalowanie rozwiązania dla pakietu Office do *Program Files* katalogu przy użyciu Instalatora Windows wymaga uprawnień administratora. Dla rozwiązań pakietu Office w *Program Files* katalogu, ponieważ rozwiązań pakietu Office zostały już przyznane uprawnienie FullTrust Visual Studio Tools for Office runtime nie jest już sprawdza lista dołączania.  
   
-## <a name="clickonce-trust-prompt"></a>Wiersz zaufania ClickOnce  
- Za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] wdrożenia dla rozwiązań pakietu Office, Administratorzy można skonfigurować poziom monitu zaufania, aby zezwolić na monitowanie, wyłącz monitowania lub wymagają zaufanego certyfikatu. Ta konfiguracja jest implementowana przy użyciu klucza rejestru, która kontroluje dostęp do listy dołączania.  
+## <a name="clickonce-trust-prompt"></a>Monit o udzielenie zaufania ClickOnce  
+ Za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] wdrożenia dla rozwiązań pakietu Office, Administratorzy można skonfigurować poziom monitu zaufania do Zezwalaj na monit, wyłącz monitowanie lub wymagają zaufanego certyfikatu. Ta konfiguracja jest implementowana przy użyciu klucza rejestru, który kontroluje dostęp do listy dołączania.  
   
- Jeśli monitowania jest wyłączone, można zainstalować tylko w przypadku rozwiązania, które mają certyfikat zaufanego i znanego. Jeśli poziom sygnalizowania Authenticode wymagane rozwiązania muszą być podpisane przy użyciu certyfikatu ze znanego urzędu, ale nie wymaga certyfikatu, który tworzy łańcuch z zaufanym głównym urzędem (zaufanego certyfikatu). Jeśli monitowania jest dozwolone, rozwiązanie może być podpisany przy użyciu certyfikatu z nieznanych tożsamości. W tym scenariuszu decyzja dotycząca zaufania została odroczona dla użytkownika końcowego, a certyfikat tymczasowego wystarczyć zainstalować rozwiązanie.  
+ Jeśli monit zostanie wyłączona, można zainstalować tylko w przypadku rozwiązań, które mają certyfikat zaufanego i znanego. Jeśli poziom monitem jest ustawiony na wymagane Authenticode, rozwiązania muszą być podpisane przy użyciu certyfikatu ze znanego urzędu, ale nie wymaga certyfikatu, który tworzy łańcuch zaufanego głównego urzędu certyfikacji (zaufanego certyfikatu). Jeśli dozwolone jest monitowanie, rozwiązanie może być podpisany przy użyciu certyfikatu przy użyciu tożsamości nieznany. W tym scenariuszu decyzji zaufania jest odroczone do użytkownika końcowego, a tymczasowy certyfikat będzie odpowiednia do zainstalowania rozwiązania.  
   
- Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zabezpieczeń listy dołączania](../vsto/how-to-configure-inclusion-list-security.md) i tabela 2, zatytułowany monitowania poziom rejestru klucz wartość Uruchom efekty, [ClickOnce Konfigurowanie zaufanych wydawców](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie zabezpieczeń listy dołączania](../vsto/how-to-configure-inclusion-list-security.md) i tabela 2, zatytułowany monitowania poziom rejestru klucz wartość Uruchom skutki, [ClickOnce Konfigurowanie zaufanych wydawców](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
-## <a name="structure-of-the-inclusion-list"></a>Struktura listy dołączania  
- Włączenie nieprawidłowy wpis na liście ma dwie części: ścieżka do manifestu wdrożenia, a klucz publiczny używany do podpisywania rozwiązania. Po rozwiązaniu zostanie dodany do listy dołączania, jest on uznawany za zaufany. Po uruchomieniu rozwiązania pakietu Office aplikacji pakietu Office porównuje klucza publicznego na liście dołączania przy użyciu klucza podpisywania w manifeście rozmieszczenia, aby sprawdzić, czy rozwiązanie, które jest aktualnie uruchomione jest taki sam, jak oryginalna wersja zaufanych.  
+## <a name="structure-of-the-inclusion-list"></a>Struktura tej listy dołączania  
+ Wpis na liście prawidłowe dołączania ma dwie części: ścieżka do pliku manifestu wdrożenia, a klucz publiczny służący do podpisania rozwiązania. Po dodaniu rozwiązania do listy dołączania jest uznawane za zaufane. Po uruchomieniu rozwiązania dla pakietu Office aplikacji pakietu Office porównuje klucz publiczny na liście dołączania przy użyciu klucza podpisywania w pliku manifestu wdrożenia, aby sprawdzić, czy rozwiązanie, które jest aktualnie uruchomione jest taka sama co wersja oryginalna zaufanych.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Udziel zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)   
+ [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
   
   

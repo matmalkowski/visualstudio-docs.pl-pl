@@ -14,14 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233506"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797512"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
-Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które mają wpływ na działanie funkcji IntelliSense dla języka JavaScript. Dostęp można uzyskać **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozszerzanie **Edytor tekstu**,  **JavaScript**, **IntelliSense.**
+Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka JavaScript. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**,  **JavaScript**, **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -35,7 +35,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
 
  Gdy to pole wyboru nie jest zaznaczone, edytor kodu JavaScript nie pokazuje błędów składniowych. Jest to przydatne, jeśli pracujesz z nieswoim kodem, w którym nie zamierzasz naprawiać błędów składniowych.
 
- Gdy to pole wyboru jest zaznaczone, masz możliwość wybrania **Pokaż błędy jako ostrzeżenie** pole wyboru.
+ Gdy to pole wyboru jest zaznaczone, masz możliwość dokonania wyboru **Pokaż błędy jako ostrzeżenia** pole wyboru.
 
  **Pokaż błędy jako ostrzeżenia**
 
@@ -53,7 +53,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
  Możesz użyć tych opcji do zmiany zachowania dokańczania instrukcji IntelliSense.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- **Tylko przy użyciu karty lub wprowadź do zatwierdzenia**
+ **Używaj tylko tabulatora lub enter, aby zatwierdzić**
 
  Gdy to pole wyboru jest zaznaczone, edytor kodu JavaScript dołącza instrukcje z elementami zaznaczonymi na liście dokańczania dopiero po wybraniu klawisza Tab lub Enter. Gdy to pole wyboru nie jest zaznaczone, inne znaki, takie jak kropka, przecinek, dwukropek, nawias otwierający i otwierający nawias klamrowy ({) również mogą dołączać instrukcje z wybranymi elementami.
 
@@ -61,13 +61,13 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
  Można używać tych opcji, aby określać typy plików .js IntelliSense, które znajdują się w zakresie dla różnych typów projektów JavaScript. Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych. Można również użyć tej strony, aby ustawić kolejność ładowania skryptów, które muszą być ładowane w czasie wykonywania, oraz aby dodawać pliki rozszerzeń IntelliSense.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- **Grupy odwołania**
+ **Grupy odwołań**
 
  Ta opcja określa typ grupy odwołania. Obsługiwane są trzy grupy odwołań:
 
  Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że konkretne pliki .js IntelliSense znajdują się w zakresie dla różnych projektów JavaScript. Dostępne są cztery grupy odniesień:
 
--   Niejawne (Windows *wersji*), dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji przy użyciu języka JavaScript. Pliki uwzględnione w tej grupie znajdują się w zakresie dla każdego pliku js otwarty w edytorze kodu dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji przy użyciu języka JavaScript.
+-   Niejawna (Windows *wersji*), dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji przy użyciu języka JavaScript. Pliki zawarte w tej grupie znajdują się w zakresie dla każdego pliku .js otwartego w edytorze kodu dla [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikacji przy użyciu języka JavaScript.
 
 -   Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.
 
@@ -75,7 +75,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
 
 -   Ogólna dla innych typów projektów języka JavaScript.
 
-**Pliki dołączane**
+**Dołączone pliki**
 
 Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usługi języka. Kolejność można skonfigurować za pomocą **Usuń**, **Przenieś w górę**, i **Przenieś w dół** przycisków. Aby technologia IntelliSense działała poprawnie, plik, który jest zależny od innego, musi być załadowany po pliku, od którego zależy.
 

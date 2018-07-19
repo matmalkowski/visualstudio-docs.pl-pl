@@ -10,84 +10,84 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745633"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924463"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
-Ten dokument pokazano, jak umożliwiają utworzenie tekstury podstawowej edytora obrazów.
+W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytora obrazu.
 
- W tym dokumencie przedstawiono następujące działania:
+ Ten dokument przedstawia te działania:
 
 -   Ustawianie rozmiaru tekstury
 
--   Ustawienie kolory pierwszego planu i tła
+-   Ustawianie pierwszego planu i tła kolorów
 
 -   Za pomocą kanału alfa (przezroczystości)
 
--   Przy użyciu **wypełnienia** i **elipsy** narzędzia
+-   Za pomocą **wypełnienia** i **elipsy** narzędzia
 
--   Ustawienie właściwości narzędzia
+-   Ustawianie właściwości narzędzia
 
-## <a name="creating-a-basic-texture"></a>Tworzenie podstawowych tekstury
- Edytor obrazów służy do tworzenia i modyfikowania obrazów i tekstur gry lub aplikacji.
+## <a name="creating-a-basic-texture"></a>Tworzenie tekstury podstawowej
+ Edytor obrazu do tworzenia i modyfikowania obrazów i tekstur dla Twojej gry lub aplikacji.
 
- Poniższe kroki pokazują, jak utworzyć tekstury, który reprezentuje element docelowy "bullseye". Gdy skończysz, tekstury powinien wyglądać poniższej ilustracji. Aby lepiej zaprezentować przezroczystość tekstury, edytor obrazów skonfigurowano na potrzeby wzorzec zielony, szachownicą go wyświetlić.
+ Poniższe kroki pokazują jak utworzyć teksturę, która reprezentuje element docelowy "bullseye". Gdy skończysz, Tekstura powinno wyglądać jak na poniższym obrazie. Aby zademonstrować lepiej przezroczystości tekstury, edytora obrazów skonfigurowano do korzystania z wzorca zielony, szachownicą, aby go wyświetlić.
 
- ![Miejsce docelowe "Bullseye" z przezroczystość wyświetlany na zielono](../designers/media/digit-bullseye-texture-in-editor.png)
+ ![Docelowy "Bullseye" z przezroczystością na zielono](../designers/media/digit-bullseye-texture-in-editor.png)
 
- Przed rozpoczęciem upewnij się, że **właściwości** okno jest wyświetlane. Możesz użyć **właściwości** okno, aby ustawić rozmiar obrazu, zmień właściwości narzędzia i określić kolory podczas pracy.
+ Przed rozpoczęciem upewnij się, że **właściwości** zostanie wyświetlone okno. Możesz użyć **właściwości** okna, aby ustawić rozmiar obrazu, zmień właściwości narzędzia i określić kolory, podczas pracy.
 
-#### <a name="to-create-a-bullseye-target-texture"></a>Aby utworzyć tekstury docelowej "bullseye"
+#### <a name="to-create-a-bullseye-target-texture"></a>Aby utworzyć teksturę target "bullseye"
 
-1.  Utwórz tekstury do pracy z. Aby uzyskać informacje o sposobie dodawania tekstury do projektu, w sekcji wprowadzenie w [edytor obrazów](../designers/image-editor.md).
+1.  Utwórz teksturę, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).
 
-2.  Ustawienie rozmiaru obrazu 512 x 512 pikseli. W **właściwości** Ustaw wartości **szerokość** i **wysokość** właściwości `512`.
+2.  Ustaw wielkość obrazu do 512 x 512 pikseli. W **właściwości** okna, ustaw wartości **szerokość** i **wysokość** właściwości `512`.
 
-3.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia. **Właściwości** oknie zostaną wyświetlone właściwości **wypełnienia** wraz z właściwości obrazu.
+3.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia. **Właściwości** oknie zostaną wyświetlone właściwości **wypełnienia** narzędzie wraz z właściwości obrazu.
 
-4.  Ustaw kolor pierwszego planu na kolor czarny pełna przezroczystość. W **właściwości** okna w **kolory** właściwości grupy wybierz **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok próbnika kolorów do `0`.
+4.  Ustaw kolor pierwszego planu, aby całkowicie przezroczysty czarny. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok selektor kolorów do `0`.
 
-5.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj klawisz Shift i wybrać dowolny punkt na obrazie. Przy użyciu klawisza Shift powoduje, że wartość alfa koloru wypełnienia zastąpić kolor obrazu. w przeciwnym razie wartość alfa umożliwia blend kolor wypełnienia wraz z koloru z obrazu.
+5.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj **Shift** klucza i wybrać dowolny punkt na obrazie. Za pomocą **Shift** klucza powoduje, że wartość alfa odpowiadającą koloru wypełnienia, aby zastąpić kolor w obrazie; w przeciwnym razie wartość alfa odpowiadającą służy do programu blend kolor wypełnienia wraz z kolorów na obrazie.
 
     > [!IMPORTANT]
-    >  Ten krok, wraz z wybór kolorów w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do docelową teksturę "bullseye" będzie rysowany. Gdy obraz jest wypełniony przezroczysty czarne — i dlatego obramowania elementu docelowego jest czarny — nie będzie żadnych aliasów artefakty wokół docelowej.
+    >  Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.
 
 6.  Na pasku narzędzi edytora obrazów, wybierz **elipsy** narzędzia.
 
-7.  Kolor pierwszego planu na kolor czarny pełni nieprzezroczyste. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwości `255`.
+7.  Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwość `255`.
 
-8.  Kolor tła na kolor biały pełni nieprzezroczyste. W **właściwości** okna w **kolory** właściwości grupy wybierz **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.
+8.  Na biały całkowicie nieprzezroczysty, ustaw kolor tła. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.
 
-9. Ustawia szerokość konturu elipsy. W **właściwości** okna w **wygląd** grupy właściwość, ustaw wartość **szerokość** właściwości `8`.
+9. Ustaw szerokość konturu elipsy. W **właściwości** okna w **wygląd** grupy właściwość, ustaw wartość **szerokość** właściwość `8`.
 
-10. Upewnij się, że wygładzanie jest włączona. W **właściwości** okna w **wygląd** właściwości grupy, upewnij się, że **wygładzanie** właściwość jest ustawiona.
+10. Upewnij się, że wygładzanie jest włączony. W **właściwości** okna w **wygląd** właściwości grupy, upewnij się, że **wygładzanie** właściwość jest ustawiona.
 
-11. Przy użyciu **elipsy** narzędzie, narysuj koło z współrzędnych pikseli `(3, 3)` do współrzędnych pikseli `(508, 508)`. Do rysowania więcej okręgu łatwe, możesz można naciśnij i przytrzymaj klawisz Shift podczas rysowania.
+11. Za pomocą **elipsy** narzędzie, narysuj okręg z współrzędnych pikseli `(3, 3)` do współrzędnej pikseli `(508, 508)`. Aby narysować łatwiej koła, naciśnij i przytrzymaj **Shift** klucza podczas rysowania.
 
     > [!NOTE]
-    >  Współrzędne pikseli w bieżącym położeniu kursora są wyświetlane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paska stanu.
+    >  Współrzędne bieżącej lokalizacji wskaźnika w pikselach są wyświetlane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasek stanu.
 
-12. Zmiana koloru tła. Ustaw **R** do `44`, **G** do `165`, **B** do `211`, i **A** do `255`.
+12. Umożliwia zmianę koloru tła. Ustaw **R** do `44`, **G** do `165`, **B** do `211`, i **A** do `255`.
 
-13. Rysowanie innego koło z współrzędnych pikseli `(64, 64)` do współrzędnych pikseli `(448, 448)`.
+13. Rysowanie okrąg inny od współrzędnych pikseli `(64, 64)` do współrzędnej pikseli `(448, 448)`.
 
-14. Zmiana koloru tła do pełni nieprzezroczyste biały. Ustaw **R**, **G**, **B**, i **A** do `255`.
+14. Zmienić kolor tła na całkowicie nieprzezroczysty biały. Ustaw **R**, **G**, **B**, i **A** do `255`.
 
-15. Rysowanie innego koło z współrzędnych pikseli `(128, 128)` do współrzędnych pikseli `(384, 384)`.
+15. Rysowanie okrąg inny od współrzędnych pikseli `(128, 128)` do współrzędnej pikseli `(384, 384)`.
 
-16. Zmiana koloru tła. Ustaw **R** do `255`, **G** i **B** do `64`, i **A** do `255`.
+16. Umożliwia zmianę koloru tła. Ustaw **R** do `255`, **G** i **B** do `64`, i **A** do `255`.
 
-17. Rysowanie innego koło z współrzędnych pikseli `(192, 192)` do współrzędnych pikseli `(320, 320)`.
+17. Rysowanie okrąg inny od współrzędnych pikseli `(192, 192)` do współrzędnej pikseli `(320, 320)`.
 
- Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu wyświetlany z efektem przezroczystości.
+ Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu, przedstawiono przezroczystości.
 
- ![Zakończenie "bullseye" docelową teksturę](../designers/media/gfx_image_demo_bullseye.png)
+ ![Ukończone "bullseye" docelowej tekstury](../designers/media/gfx_image_demo_bullseye.png)
 
- Jako kolejny krok można wygenerować poziomów Mipmapy tego tekstury. Aby uzyskać informacje, zobacz [porady: tworzenie i modyfikowanie MCI poziomy](../designers/how-to-create-and-modify-mip-levels.md).
+ Kolejnym krokiem może wygenerować poziomy MIP dla tej tekstury. Aby uzyskać informacje, zobacz [porady: tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Zobacz także
 

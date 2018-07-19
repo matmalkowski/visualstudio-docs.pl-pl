@@ -75,41 +75,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf71bd4d424c372a6dadf85593fd3b456bc7ec0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465450"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433473"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
-Ten temat zawiera szczegółowe przyjrzeć się sterty debugowania CRT.  
+Ten temat zawiera szczegółowy widok sterty debugowania CRT.  
   
 ##  <a name="BKMK_Contents"></a> Zawartość  
- [Znajdź przepełnienia buforu ze stertą debugowania](#BKMK_Find_buffer_overruns_with_debug_heap)  
+ [Znajdź przepełnienia bufora z debugowaniem sterty](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
- [Typy bloków w stercie debugowania](#BKMK_Types_of_blocks_on_the_debug_heap)  
+ [Typy bloków na stercie debugowania](#BKMK_Types_of_blocks_on_the_debug_heap)  
   
- [Sprawdź, czy sterty integralności i przecieki pamięci](#BKMK_Check_for_heap_integrity_and_memory_leaks)  
+ [Sprawdzanie sterty integralności i przecieki pamięci](#BKMK_Check_for_heap_integrity_and_memory_leaks)  
   
- [Skonfiguruj stercie debugowania](#BKMK_Configure_the_debug_heap)  
+ [Skonfiguruj debugowanie sterty](#BKMK_Configure_the_debug_heap)  
   
- [Nowy, Usuń i _CLIENT_BLOCKs w języku C++ sterta debugowania](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
+ [New, delete i _CLIENT_BLOCKs w języku C++ sterta debugowania](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
   
- [Funkcje raportowania stanu sterty](#BKMK_Heap_State_Reporting_Functions)  
+ [Funkcje raportowania stanu stosu](#BKMK_Heap_State_Reporting_Functions)  
   
- [Żądań alokacji stosu śledzenia](#BKMK_Track_Heap_Allocation_Requests)  
+ [Śledź zlecenia alokacji sterty](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Znajdź przepełnienia buforu ze stertą debugowania  
- Są dwa najczęstszych i intractable problemy napotykane przez programistów zastępowanie koniec przydzielonego buforu i przecieki pamięci (nie można zwolnić alokacji po nie są już potrzebne). Sterta debugowania udostępnia zaawansowane narzędzia do rozwiązywania problemów z alokacją pamięci tego rodzaju.  
+##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Znajdź przepełnienia bufora z debugowaniem sterty  
+ Dwie najbardziej typowe i trudne problemy, które napotykają programiści to zastępowanie końca przydzielonego buforu i przecieki pamięci (nie można zwolnić alokacji, które są już potrzebne). Stos debugowania oferuje zaawansowane narzędzia do rozwiązywania problemów z alokacją pamięci tego rodzaju.  
   
- Debugowania wersji funkcje stosu wywołań wersji standard lub podstawowej używanych w wersji kompilacji. W przypadku żądania blok pamięci, menedżera sterty debugowania przydziela z podstawowej sterty nieco większy blok pamięci niż żądana i zwraca wskaźnik do Twojej części tego bloku. Załóżmy na przykład, aplikacja zawiera wywołanie: `malloc( 10 )`. W kompilacji wydania [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) spowodowałoby wywołanie procedury alokacji sterty podstawowej żąda alokacji 10 bajtów. Kompilacji debugowanej, jednak `malloc` spowodowałoby wywołanie [_malloc_dbg —](/cpp/c-runtime-library/reference/malloc-dbg), który może wywoływać procedury alokacji sterty podstawowej żąda alokacji 10 bajtów plus około 36 bajtów pamięci dodatkowe. Wszystkie wynikowy bloki pamięci w stosie debugowania są połączone w jednym listy połączonej, uporządkowanych według kiedy zostały przydzielone.  
+ Debuguj wersje funkcji w stosie wywołań wersje standardowe lub podstawowe używane w wersji kompilacji. Żądając bloku pamięci, Menedżer stosu debugowania przydziela ze stosu podstawowego nieco większy blok pamięci niż żądany, a następnie zwraca wskaźnik do Twojej części tego bloku. Załóżmy, że aplikacja zawiera wywołanie: `malloc( 10 )`. W kompilacji wydania [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) wywołuje procedurę alokacji stosu podstawowego z żądaniem o przydział 10 bajtów. Do kompilacji debugowanej, jednak `malloc` wywoływałby [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg), która będzie następnie wywołaj procedurę alokacji stosu podstawowego z żądaniem przydziału 10 bajtów plus około 36 bajtów dodatkowej pamięci. Wszystkie wynikające bloki pamięci w stercie debugowania są połączone na pojedynczej liście połączonej, uporządkowane według daty alokacji.  
   
- Dodatkowej pamięci przydzielonej przez procedury sterty debugowania jest używana do informacji księgowości, dla wskaźników, że bloki pamięci link Debuguj razem i dla małych buforów po obu stronach dane, aby przechwycić zastępuje przydzielonego obszaru.  
+ Dodatkowa pamięć przydzielana przez procedury stosu debugowania jest używana na potrzeby informacji księgowych, wskaźników, bloki pamięci debugowania łączy ze sobą oraz małych buforów po obu stronach danych, aby przechwycić zastępuje przydzielonego regionu.  
   
- Struktura nagłówka bloku używany do przechowywania informacji księgowości sterty debugowania jest obecnie zadeklarowana w następujący sposób w DBGINT. Plik nagłówka H:  
+ Obecnie Struktura nagłówka bloku używana do przechowywania informacji księgowych sterty debugowania jest zadeklarowana w następujący sposób w DBGINT. Plik nagłówka H:  
   
-```  
+```cpp
 typedef struct _CrtMemBlockHeader  
 {  
 // Pointer to the block allocated just before this one:  
@@ -132,96 +132,96 @@ typedef struct _CrtMemBlockHeader
  */  
 ```  
   
- `NoMansLand` Buforów po obu stronach obszaru danych użytkownika w bloku są obecnie 4 bajty rozmiaru i wypełniane znane bajt, używane przez procedury sterty debugowania, aby zweryfikować, że limity bloku pamięci użytkownika nie został zastąpiony. Sterty debugowania wprowadza również nowe bloki pamięci o znanej wartości. W przypadku wybrania zachować zwolnionych bloków w połączonej listy sterty, jak wyjaśniono poniżej, znanej wartości te bloki zwolnionych również są wypełnione. Obecnie wartości rzeczywistych bajtów, używane są następujące:  
+ `NoMansLand` Buforów po obu stronach obszaru danych użytkownika bloku są obecnie rozmiar 4 bajtów i są wypełnione znaną wartością bajtową używane przez procedury stosu debugowania, aby sprawdzić, czy limity bloku pamięci użytkownika nie zostały zastąpione. Stos debugowania wypełnia również nowe bloki pamięci znaną wartością. Jeśli zostanie wybrana opcja zachowania zwolnionych bloków połączonej liście stosu jak wyjaśniono poniżej, te bloki zwolnione również są wypełnione znaną wartością. Obecnie rzeczywiste wartości bajt są następujące:  
   
  NoMansLand (0xFD)  
- Bufory "NoMansLand" po obu stronach pamięci używane przez aplikacje są obecnie wypełnione 0xFD.  
+ "NoMansLand" buforów po obu stronach pamięci używanej przez aplikację są obecnie wypełniane wartością 0xFD.  
   
- Bloki zwolnionych (0xDD)  
- Bloki zwolnionych przechowywane nieużywane w stercie debugowania na połączone listy podczas `_CRTDBG_DELAY_FREE_MEM_DF` flagę obecnie wypełnione 0xDD.  
+ Bloki zwolnione (0xDD)  
+ Zwolnione bloki, które pozostają nieużywane dwukierunkowej stosu debugowania po liście `_CRTDBG_DELAY_FREE_MEM_DF` jest ustawiona flaga są obecnie wypełnione wartością 0xDD.  
   
  Nowe obiekty (0xCD)  
- Nowe obiekty są wypełnione 0xCD, gdy są przydzielone.  
+ Nowe obiekty są wypełnione 0xcd, gdy są przydzielone.  
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop")  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Typy bloków w stercie debugowania  
- Każdy blok pamięci w stosie debugowania jest przypisany do jednego z pięciu typów alokacji. Te typy są śledzone i podać inaczej w celu wykrywania przecieków i raportowanie stanu. Można określić typ bloku przydzielając go przy użyciu bezpośrednie wywołania do jednej z funkcji alokacji sterty debugowania, takich jak [_malloc_dbg —](/cpp/c-runtime-library/reference/malloc-dbg). Pięć typów bloki pamięci w stosie debugowania (w **nBlockUse** członkiem **_crtmemblockheader —** struktury) są następujące:  
+##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Typy bloków na stercie debugowania  
+ Każdy blok pamięci w stosie debugowania jest przypisany do jednego z pięciu typów alokacji. Te typy są śledzone i raportowane inaczej do celów wykrywania przecieków i raportowania stanu. Można określić typ bloku, przydzielając go za pomocą bezpośredniego wywołania jednej z funkcji alokacji sterty debugowania, takie jak [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Pięć typów bloków pamięci w stosie debugowania (w **nBlockUse** członkiem **_CrtMemBlockHeader** struktury) są następujące:  
   
- **_NORMAL_BLOCK —**  
- Wywołanie [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) lub [calloc —](/cpp/c-runtime-library/reference/calloc) tworzy blok normalnego. Jeśli zamierzasz używać tylko normalne bloków, a nie potrzebują bloki klienta, można zdefiniować [_crtdbg_map_alloc —](/cpp/c-runtime-library/crtdbg-map-alloc), co powoduje, że wszystkie Alokacja stosu wywołań można mapować na ich odpowiedniki debugowania w kompilacjach debugowania. Pozwoli to nazwy i wiersz numer informacje dotyczące każdego wywołania alokacji mają być przechowywane w odpowiedni nagłówek bloku.  
+ **_NORMAL_BLOCK**  
+ Wywołanie [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) lub [calloc](/cpp/c-runtime-library/reference/calloc) tworzy Blok normalny. Jeśli zamierzasz używać tylko bloków normalnych i nie potrzebujesz bloków klienta, warto zdefiniować [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), co powoduje, że wszystkie alokacji stosu wywołań mają być mapowane do ich odpowiedników debugowania w kompilacjach do debugowania. Umożliwi to pliku nazwa i wierszu numer informacji na temat każdego wywołania alokacji mogą być przechowywane w odpowiednim nagłówku bloku.  
   
  `_CRT_BLOCK`  
- Bloki pamięci przydzielonej wewnętrznie przez wiele funkcji biblioteki wykonawczej są oznaczone jako CRT bloków, mogą być obsługiwane oddzielnie. W związku z tym wyciek wykrywania i inne operacje nie wpływa to przez nich. Alokacji nigdy nie musi przydzielić, ponowne przydzielenie lub zwolnij bloku CRT typu.  
+ Bloki pamięci przydzielane wewnętrznie przez wiele funkcji biblioteki wykonawczej są oznaczane jako bloki CRT, dzięki czemu mogą być obsługiwane osobno. W rezultacie, wykrywanie przecieków i inne operacje nie wpływa to przez nich. Alokacji nigdy nie należy przydzielić, ponownego przydzielenia lub bloku typu CRT.  
   
  `_CLIENT_BLOCK`  
- Aplikację można śledzić specjalne określonej grupy alokacji na potrzeby debugowania przydzielając je jako tego typu blok pamięci, za pomocą jawnego wywołania funkcji sterty debugowania. MFC, na przykład wszystkie przydziela **CObject — obiekty** jako bloki klienta; inne aplikacje mogą przechowywać obiekty różnych pamięci w bloki klienta. Można również określić podtypów bloki klienta osiągnąć większy poziom szczegółowości śledzenia. Określanie podtypów bloki klienta, przesunięcie numer przy 16 bitów w lewo i `OR` za pomocą `_CLIENT_BLOCK`. Na przykład:  
+ Aplikacja może śledzić daną grupę alokacji na potrzeby debugowania, alokując je jako ten typ bloku pamięci, za pomocą jawnych wywołań funkcji debugowania sterty. MFC, na przykład przydziela wszystkim **obiektów CObject** jako bloki klienta; inne aplikacje mogą zachować pamięci różnych obiektów w blokach klienta. Można również określić podtypy bloków klienta ziarnistość śledzenia. Aby określić podtypy bloków klienta, przesuń liczbę lewo o 16 bitów i `OR` ją za pomocą `_CLIENT_BLOCK`. Na przykład:  
   
-```  
+```cpp
 #define MYSUBTYPE 4  
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Funkcji dostarczonych przez klienta punktu zaczepienia dla zrzucanie obiekty przechowywane w blokach klienta można zainstalować przy użyciu [_crtsetdumpclient —](/cpp/c-runtime-library/reference/crtsetdumpclient), a następnie zostanie wywołany, gdy blok klienta jest utworzyć zrzutu przez funkcję debugowania. Ponadto [_crtdoforallclientobjects —](/cpp/c-runtime-library/reference/crtdoforallclientobjects) może służyć do wywoływania funkcji danego dostarczone przez aplikację dla każdego bloku klienta w stercie debugowania.  
+ Funkcję klienta hak służąca do zrzucania obiektów przechowywanych w blokach klienta można zainstalować przy użyciu [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), a następnie wywoływana zawsze wtedy, gdy blok klienta jest zrzucany przez funkcję debugowania. Ponadto [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects) może służyć do wywołania danej funkcji dostarczanej przez aplikację dla każdego bloku klient w stercie debugowania.  
   
- **_FREE_BLOCK —**  
- Zwykle bloków, które są zwalniane zostaną usunięte z listy. Aby sprawdzić, czy zwolnienie pamięci jest nadal nie jest zapisywana lub aby zasymulować niedobór pamięci, użytkownik może zachować zwolnionych bloków w połączonej listy oznaczone jako wolne i podać wartość bajtu znane (obecnie 0xDD).  
+ **_FREE_BLOCK**  
+ Normalnie bloki, które są zwalniane, są usuwane z listy. Aby sprawdzić, czy zwolniona pamięć jest nadal nie zapisywana lub do symulacji warunków braku pamięci, można zachować zwolnione bloki na liście połączonej, oznaczone jako wolne i wypełnione za pomocą znanej wartości bajtu (obecnie 0xDD).  
   
- **_IGNORE_BLOCK —**  
- Istnieje możliwość wyłączyć operacji sterty debugowania w danym okresie czasu. W tym czasie bloki pamięci pozostają na liście, ale są oznaczone jako Ignoruj bloków.  
+ **_IGNORE_BLOCK**  
+ Istnieje możliwość wyłączyć operacje debugowania sterty przez pewien czas. W tym czasie bloki pamięci są przechowywane na liście, ale są oznaczone jako bloki do ignorowania.  
   
- Do określenia typu i podtypu bloku, użyj funkcji [_crtreportblocktype —](/cpp/c-runtime-library/reference/crtreportblocktype) i makra **_block_type —** i **_block_subtype —**. Makra są zdefiniowane w następujący sposób (w crtdbg.h):  
+ Aby określić typ i podtyp bloku, należy użyć funkcji [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) i makr **_BLOCK_TYPE** i **_BLOCK_SUBTYPE**. Makra są zdefiniowane (w pliku crtdbg.h), w następujący sposób:  
   
-```  
+```cpp
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Sprawdź, czy sterty integralności i przecieki pamięci  
- Funkcje sterty debugowania musi być dostępny z w kodzie. W poniższej sekcji opisano niektóre funkcje i sposobu ich używania.  
+##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Sprawdzanie sterty integralności i przecieki pamięci  
+ Wiele funkcji sterty debugowania musi być dostępny z w obrębie kodu. W poniższej sekcji opisano niektóre funkcje i sposobu ich używania.  
   
  `_CrtCheckMemory`  
- Można używać wywołania [_crtcheckmemory —](/cpp/c-runtime-library/reference/crtcheckmemory), na przykład, aby sprawdzić spójność sterty w dowolnym momencie. Ta funkcja sprawdza każdy blok pamięci w stosie, sprawdza, czy informacje o nagłówku bloku pamięci jest nieprawidłowa i potwierdza, że bufor nie zostały zmodyfikowane.  
+ Można użyć wywołania [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory), na przykład, aby sprawdzić integralność sterty w dowolnym momencie. Ta funkcja sprawdza każdy blok pamięci w stercie, sprawdza, czy informacje nagłówka bloku pamięci są prawidłowe i potwierdza, że bufory nie zostały zmodyfikowane.  
   
  `_CrtSetDbgFlag`  
- Można kontrolować sposób sterty debugowania przechowuje informacje o alokacji używających flaga wewnętrzna [_crtdbgflag —](/cpp/c-runtime-library/crtdbgflag), który może odczytywać i ustawić za pomocą [_crtsetdbgflag —](/cpp/c-runtime-library/reference/crtsetdbgflag) funkcji. Zmieniając tę flagę można nakazać sterty debugowania, sprawdź przecieki pamięci, gdy program zamyka i zgłoś wszelkie przecieki, które są wykrywane. Podobnie można określić, że bloki zwolnionych pamięci nie można usunąć z listy połączonej, aby symulować sytuacjach ilości pamięci. Po zaznaczeniu tej opcji sterty te zwolnionych bloki są kontrolowane w całości, aby upewnić się, że nie zostały w naruszonych.  
+ Można kontrolować, jak śledzi informacje o stercie debugowania alokacje za pomocą flagi wewnętrznej, [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag), który można odczytać i ustawić za pomocą [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) funkcji. Zmieniając tę flagę, możesz poinstruować stertę debugowania, tak aby sprawdzała przecieki pamięci, gdy zamyka program i zgłoś wszelkie wykryte nieszczelności. Podobnie można określić, że zwolnione bloki pamięci nie można usunąć z listy dwukierunkowej, aby symulować sytuacje małej ilości pamięci. Podczas sprawdzania stosu zwolnione bloki są kontrolowane w całości, aby upewnić się, że ich nie zostały zajęte.  
   
- **_Crtdbgflag —** flagi zawiera następujące pola bitowego:  
+ **_CrtDbgFlag** Flaga zawiera następujące pola bitowe:  
   
 |Pole bitowe|Domyślny<br /><br /> value|Opis|  
 |---------------|-----------------------|-----------------|  
-|**_CRTDBG_ALLOC_MEM_DF**|On|Powoduje włączenie debugowania alokacji. Jeśli ten bit jest wyłączony, pozostają alokacji połączonych ze sobą, ale jest ich typ bloku **_ignore_block —**.|  
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|Zapobiega pamięci faktycznie zwalniana, podobnie jak w przypadku symulacji ilość pamięci jest mała. Po włączeniu tego bit zwolnionych bloki są przechowywane w stercie debugowania listy połączonej, ale nie została oznaczona jako **_free_block —** i wypełnione specjalne bajt.|  
-|**_CRTDBG_CHECK_ALWAYS_DF**|Off|Powoduje, że **_crtcheckmemory —** przy każdej alokacji i cofania alokacji. Spowalnia wykonywania, ale szybko przechwytuje błędy.|  
-|**_CRTDBG_CHECK_CRT_DF —**|Off|Powoduje, że bloki oznaczona jako typu **_crt_block —** mają zostać uwzględnione w operacji wykrywania przecieków i stan różnicy. Jeśli ten bit jest wyłączona, pamięć używana wewnętrznie przez biblioteki wykonawczej jest ignorowany w takich operacjach.|  
-|**_CRTDBG_LEAK_CHECK_DF —**|Off|Powoduje, że sprawdzanie przeciek wykonywanych przy zamykaniu program za pomocą wywołania **_crtdumpmemoryleaks —**. Raport o błędzie jest generowany, jeśli aplikacja nie powiodło się zwolnić pamięć, która ona przydzielone.|  
+|**_CRTDBG_ALLOC_MEM_DF**|On|Włącza debugowanie alokacji. Jeśli ten bit jest wyłączony, alokacje są powiązane ze sobą, ale ich typem bloku jest **_IGNORE_BLOCK**.|  
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|Zapobiega faktycznemu, jeśli chodzi o symulowanie warunków małej ilości pamięci w pamięci. Jeśli ten bit jest włączony, zwolnione bloki są trzymane w połączonej liście stosu debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtu.|  
+|**_CRTDBG_CHECK_ALWAYS_DF**|Off|Powoduje, że **_CrtCheckMemory** do wywoływania na każdej alokacji i dezalokacji. To spowalnia wykonanie, ale zapewnia szybkie wyłapywanie błędów.|  
+|**_CRTDBG_CHECK_CRT_DF**|Off|Powoduje, że bloki oznaczone jako typ **_CRT_BLOCK** mają zostać uwzględnione w operacjach wykrywania przecieków i różnic stanów. Jeśli ten bit jest wyłączony, pamięć używana wewnętrznie przez bibliotekę uruchomieniową jest ignorowana podczas takich operacji.|  
+|**_CRTDBG_LEAK_CHECK_DF**|Off|Powoduje sprawdzanie przecieków, wykonywane przy zamykaniu programu poprzez wywołanie **_CrtDumpMemoryLeaks**. Raport o błędzie jest generowany, gdy aplikacja nie udało się zwolnić pamięć, jaką przydzieliła.|  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> Skonfiguruj stercie debugowania  
- Wszystkie wywołania funkcji sterty, takich jak `malloc`, `free`, `calloc`, `realloc`, `new`, i `delete` rozwiązania do debugowania wersje tych funkcji, które działają w stercie debugowania. Po zwolnieniu blok pamięci sterty debugowania automatycznie sprawdza spójność buforów po obu stronach obszaru przydzielone i wystawia raportu o błędach, jeśli przeprowadzono zastępowanie.  
+##  <a name="BKMK_Configure_the_debug_heap"></a> Skonfiguruj debugowanie sterty  
+ Wszystkie wywołania do funkcji sterty, takich jak `malloc`, `free`, `calloc`, `realloc`, `new`, i `delete` rozwiązania do wersje tych funkcji, które działają na stercie debugowania. Po zwolnieniu bloku pamięci stos debugowania automatycznie sprawdza spójność buforów po obu stronach obszaru przydzielonego i generuje raport o błędach, jeżeli zastąpienie wystąpiło.  
   
- **Aby użyć stercie debugowania**  
+ **Aby używać debugowania sterty**  
   
--   Łącze do kompilacji debugowania aplikacji z wersja biblioteki wykonawczej języka C do debugowania.  
+-   Połącz debugera kompilacji swojej aplikacji przy użyciu debugowania wersji biblioteki wykonawczej C.  
   
- **Aby zmienić jeden lub więcej pól bitowych _crtdbgflag — i utworzyć nowy stan flagi**  
+ **Aby zmienić jedno lub więcej pól bitowych _crtDbgFlag i utworzyć nowy stan flagi**  
   
-1.  Wywołania `_CrtSetDbgFlag` z `newFlag` ustawiona `_CRTDBG_REPORT_FLAG` (Aby uzyskać bieżącą `_crtDbgFlag` stanu) i przechowywać zwrócona wartość w zmiennej tymczasowej.  
+1.  Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr `_CRTDBG_REPORT_FLAG` (Aby uzyskać bieżący `_crtDbgFlag` stanu) i przechowuj zwracaną wartość w zmiennej tymczasowej.  
   
-2.  Włącz wszystkie bity przez `OR`- ne (bitowe &#124; symbol) zmiennej tymczasowej z odpowiedniego masek bitowych (reprezentowane przez stałe manifestu w kodzie aplikacji).  
+2.  Włącz wszystkie bity, używając `OR`- ing (bitowe &#124; symbol) zmienną tymczasową i odpowiednimi maskami bitowymi (reprezentowane przez stałe manifestu w kodzie aplikacji).  
   
-3.  Wyłącz usługi bits przez `AND`- ne (bitowe & symbol) zmienna o `NOT` (bitowe ~ symbolu) z odpowiednią masek bitowych.  
+3.  Wyłącz usługi bits przez `AND`- ing (bitowe & symbol) zmiennej `NOT` (bitowe ~ symbol) z odpowiednią masek bitowych.  
   
-4.  Wywołanie `_CrtSetDbgFlag` z `newFlag` parametr ustawiony na wartość przechowywana w zmiennej tymczasowej, aby utworzyć nowy stan dla `_crtDbgFlag`.  
+4.  Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr ustawiony na wartość przechowywana w zmiennej tymczasowej, aby utworzyć nowy stan dla `_crtDbgFlag`.  
   
- Na przykład następujące wiersze kodu Włącz przeciek automatycznego wykrywania i wyłączyć sprawdzanie bloków typu `_CRT_BLOCK`:  
+ Na przykład następujące wiersze kodu, włączyć funkcję automatycznego wykrywania przecieków i wyłączają sprawdzanie bloków typu `_CRT_BLOCK`:  
   
-```  
+```cpp
 // Get current flag  
 int tmpFlag = _CrtSetDbgFlag( _CRTDBG_REPORT_FLAG );  
   
@@ -235,12 +235,12 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Nowy, Usuń i _CLIENT_BLOCKs w języku C++ sterta debugowania  
- Wersje biblioteki wykonawczej języka C do debugowania zawierają debugowania wersji języka C++ `new` i `delete` operatorów. Jeśli używasz `_CLIENT_BLOCK` typ alokacji, należy wywołać wersja do debugowania z `new` operator bezpośrednio lub tworzenia makr, które zastępują `new` operatora w trybie debugowania, jak pokazano w poniższym przykładzie:  
+##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> New, delete i _CLIENT_BLOCKs w języku C++ sterta debugowania  
+ Wersje do debugowania biblioteki wykonawczej języka C zawierają wersje do debugowania języka C++ `new` i `delete` operatorów. Jeśli używasz `_CLIENT_BLOCK` typu alokacji, należy wywołać wersję debugowania `new` operator bezpośrednio lub utworzyć makra, które zastępują `new` operatora w trybie debugowania, jak pokazano w poniższym przykładzie:  
   
-```  
+```cpp
 /* MyDbgNew.h  
  Defines global operator new to allocate from  
  client blocks  
@@ -271,16 +271,16 @@ int main( )   {
 }  
 ```  
   
- Wersja debugowania `delete` operator współpracuje z bloku wszystkich typów, a nie wymaga żadnych zmian w programie podczas kompilowania wersji.  
+ Wersja debugowania `delete` operator współpracuje z bloku wszystkich typów i nie wymaga wprowadzania zmian w programie podczas kompilowania wersji do.  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkcje raportowania stanu sterty  
- **_Crtmemstate —**  
+##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funkcje raportowania stanu stosu  
+ **_CrtMemState**  
   
- Aby przechwycić migawkę podsumowania stanu sterty w danym momencie, użyj _crtmemstate — struktury zdefiniowane w CRTDBG. H:  
+ Aby przechwycić migawkę podsumowania stanu stosu w danym momencie, użyj struktury _CrtMemState zdefiniowanej w CRTDBG. GODZ.:  
   
-```  
+```cpp
 typedef struct _CrtMemState  
 {  
     // Pointer to the most recently allocated block:  
@@ -296,38 +296,38 @@ typedef struct _CrtMemState
 } _CrtMemState;  
 ```  
   
- Ta struktura zapisuje wskaźnik pierwszy blok (najbardziej ostatnio przydzielone) w stercie debugowania listy połączonej. Następnie, w dwie tablice, rejestruje zablokować ile każdego rodzaju pamięci (_normal_block —, `_CLIENT_BLOCK`, _free_block —, itd.) są na liście i liczba bajtów przydzielonych w każdym typ bloku. Na koniec rejestruje największa liczba bajtów przydzielonych w stercie jako całości do tego punktu, a liczba bajtów aktualnego przydziału.  
+ Struktura ta zapisuje wskaźnik do pierwszego bloku (najbardziej niedawno przydzielonego) połączonej liście stosu debugowania. Następnie w dwóch tablicach rejestruje block ile poszczególnych typów pamięci (_NORMAL_BLOCK, `_CLIENT_BLOCK`, _FREE_BLOCK itd.) są na liście oraz liczbę bajtów alokowanych w każdym typie bloku. Na koniec rejestruje najwyższą liczbą bajtów alokowaną w stercie jako całość do tego punktu oraz liczbę aktualnie przydzielonych bajtów.  
   
  **Inne funkcje raportowania CRT**  
   
- Następujące funkcje raport stanu i zawartość sterty i skorzystaj z informacji w celu ułatwienia wykrycia przecieki pamięci i innych problemów.  
+ Poniższe funkcje raportują stan i zawartość stosu i skorzystaj z informacji w celu wykrycia przecieków pamięci i innych problemów.  
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Zapisuje migawkę sterty w **_crtmemstate —** struktury dostarczone przez aplikację.|  
-|[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Porównuje dwie struktury stanu pamięci, zapisuje różnica między nimi w strukturze trzeci stan i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
-|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Zrzuty danego **_crtmemstate —** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
-|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Zrzuty informacji na temat wszystkich obiektów przydzielonych od danego migawki sterty lub po rozpoczęciu wykonywania. Za każdym razem, gdy jego zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
-|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuty wszystkie przydzielone obiekty. Za każdym razem, gdy **_crtdumpmemoryleaks —** zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Zapisuje migawkę stosu w **_CrtMemState** struktury dostarczoną przez aplikację.|  
+|[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Porównuje dwie struktury stanu pamięci, zapisuje różnicę między nimi w trzeciej strukturze i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
+|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Zrzuca danego **_CrtMemState** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Zrzuca informacje o wszystkich obiektach przydzielonych od wykonania danej migawki stosu lub od początku wykonywania. Za każdym razem, gdy Zrzuca **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuca wszystkie przydzielone obiekty. Za każdym razem, gdy **_CrtDumpMemoryLeaks** zrzuty **_CLIENT_BLOCK** bloku, wywołuje funkcję zaczepienia dostarczoną przez aplikację, jeśli została ona zainstalowana za pomocą **_CrtSetDumpClient**.|  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Żądań alokacji stosu śledzenia  
- Chociaż trafić źródło pliku nazwę i numer wiersza w której wykonuje assert lub makra raportowania jest często bardzo przydatne podczas lokalizowania przyczynę problemu, nie jest taka sama jak mogą być spełnione funkcji alokacji sterty. Gdy makra można wstawiać w wielu punktach odpowiednie drzewo logikę aplikacji, w specjalnej procedury, która jest wywoływana z wielu różnych miejscach w wielu różnych momentach jest często stosie alokacji. Pytanie jest zwykle nie jakie wierszy kodu możliwe zły alokacji, ale raczej jedną z tysiącami alokacji wprowadzone przez wiersza kodu został zły i dlaczego.  
+##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Śledź zlecenia alokacji sterty  
+ Mimo że precyzyjne określenie źródła pliku nazwa i numer wiersza w którym działa makro raportowania lub potwierdzenia jest często bardzo pomocne w odnalezieniu przyczyny problemu, nie jest taka sama jak mogą być istotne w funkcji alokacji sterty. Podczas gdy makra można wstawiać w wielu odpowiednich punktach w drzewie logiki aplikacji, przydział jest często ukryty w specjalnej procedurze, która jest wywoływana z wielu różnych miejsc w wielu różnych okresach. Pytanie jest zwykle nie wiersz kodu dokonał złej alokacji, ale raczej która z tysięcy alokacji dokonanych przez ten wiersz kodu była zła i dlaczego.  
   
- **Numery żądań alokacji unikatowy i _crtbreakalloc —**  
+ **Unikatowe numery żądań alokacji i _crtBreakAlloc**  
   
- Najprostszym sposobem, aby zidentyfikować połączenia alokacji sterty określonych, który został zły ma korzystać z alokacji unikatowy numer żądania skojarzony z każdy blok w stercie debugowania. Gdy informacje o bloku zostaje zgłoszone przez jedną z funkcji zrzutu, ta liczba żądań alokacji jest ujęta w nawiasy klamrowe (na przykład "{36}").  
+ Najprostszym sposobem określenia konkretnej alokacji stosu, udała, jest korzystanie z zalet unikatowy numer żądania alokacji związanego z każdym blokiem w stosie debugowania. Gdy informacje o bloku są raportowane przez jedną z funkcji zrzutu, ten numer żądania alokacji jest ujęty w nawiasy klamrowe (na przykład "{36}").  
   
- Po sprawdzeniu, liczba żądań alokacji nieprawidłowo przydzielony blok, można przekazać to do [_crtsetbreakalloc —](/cpp/c-runtime-library/reference/crtsetbreakalloc) można utworzyć punktu przerwania. Wykonanie zostanie przerwana przed przydzielania bloku i można cofnąć w celu określenia, jakie procedury się odpowiedzialny za nieprawidłowe wywołanie. Aby uniknąć ponownej kompilacji, można wykonywać samo w debugerze przez ustawienie **_crtbreakalloc —** liczby żądań alokacji planuje się.  
+ Znając numer żądania alokacji nieprawidłowo zaalokowanego bloku, możesz przekazać ten numer do [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc) do utworzenia punktu przerwania. Wykonywanie zostanie przerwane tuż przed alokowanie bloku i używa wycofywania, aby określić, która procedura była odpowiedzialna za błędne wywołanie. Aby uniknąć konieczności ponownego kompilowania, można osiągnąć to samo w debugerze, ustawiając **_crtBreakAlloc** numer żądania alokacji Cię interesuje.  
   
- **Tworzenie wersji debugowania z procedury alokacji**  
+ **Tworzenie wersji debugowania procedur Twojej alokacji**  
   
- Nieco bardziej skomplikowane podejście jest utworzenie wersje własnych procedur alokacji, porównywalna do debugowania **_dbg** wersji [stercie funkcji alokacji](../debugger/debug-versions-of-heap-allocation-functions.md). Można następnie przekazać plik źródłowy i wiersza argumentów za pośrednictwem do podstawowej procedury alokacji sterty i natychmiast będzie można zobaczyć, skąd pochodzi zły alokacji.  
+ Nieco bardziej skomplikowane podejście dotyczy Tworzenie wersji debugowania własnych procedur alokacji, porównywalnych do **_dbg** wersje [funkcji alokacji sterty](../debugger/debug-versions-of-heap-allocation-functions.md). Możesz następnie przekazać plik źródłowy i wiersz argumentów za pośrednictwem do źródłowych procedur alokacji sterty, a następnie od razu będzie można zobaczyć, skąd pochodzi zła Alokacja.  
   
- Na przykład załóżmy, że aplikacja zawiera często używane procedury podobny do następującego:  
+ Na przykład załóżmy, że aplikacja zawiera często używaną procedurę podobną do następującej:  
   
-```  
+```cpp
 int addNewRecord(struct RecStruct * prevRecord,  
                  int recType, int recAccess)  
 {  
@@ -337,18 +337,18 @@ int addNewRecord(struct RecStruct * prevRecord,
 }  
 ```  
   
- W pliku nagłówka można dodać kod, takie jak następujące:  
+ W pliku nagłówkowym można dodać kod, takie jak następujące:  
   
-```  
+```cpp
 #ifdef _DEBUG  
 #define  addNewRecord(p, t, a) \  
             addNewRecord(p, t, a, __FILE__, __LINE__)  
 #endif  
 ```  
   
- Następnie można zmienić alokację w Twojej procedury tworzenie rekordów w następujący sposób:  
+ Następnie możesz zmienić przydział w swojej procedurze tworzenie rekordu w następujący sposób:  
   
-```  
+```cpp
 int addNewRecord(struct RecStruct *prevRecord,  
                 int recType, int recAccess  
 #ifdef _DEBUG  
@@ -363,9 +363,9 @@ int addNewRecord(struct RecStruct *prevRecord,
 }  
 ```  
   
- Teraz źródło pliku nazwę i numer wiersza gdzie `addNewRecord` wywołano będą przechowywane w każdy blok wynikowy przydzielić w stercie debugowania i zostaną zgłoszone po tym bloku się zbadana.  
+ Teraz źródła pliku nazwa i numer wiersza gdzie `addNewRecord` wywołano będą przechowywane w każdym bloku wynikowym przydzielony w stercie debugowania i będą raportowane przy tym bloku jest sprawdzany pod.  
   
- ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
+ ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

@@ -23,32 +23,32 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845481"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781692"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Wskazówki: Wywoływanie kodu z VBA w projektach Visual C#
-  W tym przewodniku przedstawiono sposób wywołania metody w dostosowaniu poziomie dokumentu dla programu Microsoft Office Excel z języka Visual Basic dla kodu aplikacji (VBA) w skoroszycie. Procedura obejmuje trzy podstawowe kroki: dodanie metody `Sheet1` elementu klasa obsługująca, ujawnia metody do kodu z VBA w skoroszycie, a następnie wywołaj metodę z kodu VBA w skoroszycie.  
+  W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Excel z Visual Basic for Applications (VBA) kod w skoroszycie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `Sheet1` hosta klasa elementu, ujawnia metody dla kodu VBA w skoroszycie i następnie wywołaj metodę z kodu VBA w skoroszycie.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Mimo że w tym przewodniku zastosowano programu Excel w szczególności, koncepcje dowodzą wskazówki mają również zastosowanie do projektów na poziomie dokumentu dla programu Word.  
+ Mimo że program Excel jest wykorzystywany w tym przewodniku szczegółowo, koncepcje dowodzą Instruktaż mają również zastosowanie do projektów na poziomie dokumentu dla programu Word.  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
 -   Tworzenie skoroszytu, który zawiera kod VBA.  
   
--   Ufające lokalizacji skoroszytu przy użyciu Centrum zaufania w programie Excel.  
+-   Ufanie lokalizacji skoroszytu przy użyciu Centrum zaufania w programie Excel.  
   
 -   Dodawanie metody do `Sheet1` hosta klasy elementu.  
   
--   Wyodrębnianie interfejs dla `Sheet1` hosta klasy elementu.  
+-   Wyodrębnianie interfejsu `Sheet1` hosta klasy elementu.  
   
--   Udostępnia metody na kod.  
+-   Udostępnia metody dla kodu VBA.  
   
--   Wywoływanie metody z kodu VBA.  
+-   Wywołanie metody z kodu VBA.  
   
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -60,31 +60,31 @@ ms.locfileid: "34845481"
   
 -   Program Microsoft Excel  
   
-## <a name="create-a-workbook-that-contains-vba-code"></a>Tworzenie skoroszytu, który zawiera kod VBA  
- Pierwszym krokiem jest tworzenia obsługą makr skoroszytu, który zawiera proste makro języka VBA. Zanim można udostępnianie kodu w VBA dostosowanie, skoroszyt już musi zawierać kod VBA. W przeciwnym razie program Visual Studio nie można zmodyfikować projekt VBA w celu włączenia kod VBA do wywołania w zestawie dostosowania.  
+## <a name="create-a-workbook-that-contains-vba-code"></a>Utwórz skoroszyt, który zawiera kod VBA  
+ Pierwszym krokiem jest w celu utworzenia skoroszytu z włączoną obsługą makr, zawierający prostą makro VBA. Zanim udostępnisz kodu w VBA dostosowanie, skoroszyt musi już zawierać kod VBA. W przeciwnym razie program Visual Studio nie można zmodyfikować projekt VBA w celu włączenia kodu VBA w celu wywołania do zestawu dostosowywania.  
   
- Jeśli masz już skoroszytu, który zawiera kod VBA, który ma być używany, można pominąć ten krok.  
+ Jeśli masz już skoroszytu, który zawiera kod VBA, którego chcesz użyć, możesz pominąć ten krok.  
   
-### <a name="to-create-a-workbook-that-contains-vba-code"></a>Aby utworzyć skoroszytu, który zawiera kod VBA  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>Aby utworzyć skoroszyt, który zawiera kod VBA  
   
 1.  Uruchom program Excel.  
   
-2.  Zapisuje aktywny dokument jako **skoroszytu Excel Macro-Enabled (\*xlsm)** o nazwie **WorkbookWithVBA**. Zapisz go w dogodnym miejscu, takich jak pulpit.  
+2.  Zapisz aktywny dokument jako **Excel Macro-Enabled skoroszytu (\*xlsm)** o nazwie **WorkbookWithVBA**. Zapisz go w dogodnym miejscu, na przykład na pulpit.  
   
 3.  Na wstążce kliknij **Developer** kartę.  
   
     > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, należy go najpierw wyświetlić. Aby uzyskać więcej informacji, zobacz [porady: pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-4.  W **kod** kliknij przycisk **Visual Basic**.  
+4.  W **kodu** grupy, kliknij przycisk **języka Visual Basic**.  
   
-     Zostanie otwarty Edytor Visual Basic.  
+     Zostanie otwarty Edytor kodu języka Visual Basic.  
   
 5.  W **projektu** okna, kliknij dwukrotnie **ThisWorkbook**.  
   
-     Plik kodowy dla `ThisWorkbook` obiekt zostanie otwarta.  
+     Plik kodu dla `ThisWorkbook` obiektu zostanie otwarta.  
   
-6.  Dodaj następujący kod VBA do pliku kodu. Ten kod definiuje proste funkcję, która nie działa. Upewnij się, że projekt VBA istnieje w tym skoroszycie jest jedynym celem tej funkcji. Jest to wymagane do wykonania kolejnych kroków tego przewodnika.  
+6.  Dodaj następujący kod VBA do pliku kodu. Ten kod definiuje prosty funkcja, która nie wykonuje żadnych działań. Jest jedynym celem tej funkcji, aby upewnić się, że projekt VBA istnieje w skoroszycie. Jest to wymagane do wykonania kolejnych kroków tego przewodnika.  
   
     ```vb  
     Sub EmptySub()  
@@ -94,34 +94,34 @@ ms.locfileid: "34845481"
 7.  Zapisz dokument i zamknij program Excel.  
   
 ## <a name="create-the-project"></a>Utwórz projekt  
- Teraz można utworzyć projekt poziomie dokumentu dla programu Excel, która korzysta z obsługą makr skoroszyt utworzony wcześniej.  
+ Teraz możesz utworzyć projekt na poziomie dokumentu dla programu Excel, który korzysta z włączoną obsługą makr skoroszytu, która została utworzona wcześniej.  
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **projektu**.  
+2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-3.  W okienku szablonów rozwiń **Visual C#**, a następnie rozwiń węzeł **Office i SharePoint**.  
+3.  W okienku szablonów, rozwiń **Visual C#**, a następnie rozwiń węzeł **Office/SharePoint**.  
   
 4.  Wybierz **dodatków pakietu Office** węzła.  
   
-5.  Na liście szablony projektów, wybierz **skoroszyt programu Excel 2010** lub **skoroszyt programu Excel 2013** projektu.  
+5.  Na liście szablonów projektu wybierz **skoroszyt programu Excel 2010** lub **skoroszytu programu Excel 2013** projektu.  
   
 6.  W **nazwa** wpisz **CallingCodeFromVBA**.  
   
 7.  Kliknij przycisk **OK**.  
   
-     **Visual Studio Tools dla pakietu Office, Kreator projektu** otwiera.  
+     **Visual Studio Tools dla pakietu Office, Kreator projektu** zostanie otwarty.  
   
-8.  Wybierz **Skopiuj istniejący dokument**, a następnie, w **pełną ścieżkę istniejącego dokumentu** Określ lokalizację **WorkbookWithVBA** skoroszytu, który został utworzony wcześniej . Jeśli korzystasz z własnego skoroszytu z obsługą makr, należy określić lokalizację tego skoroszytu.  
+8.  Wybierz **Kopiuj istniejący dokument**, a następnie w **Pełna ścieżka istniejącego dokumentu** należy określić lokalizację **WorkbookWithVBA** skoroszytu, który został utworzony wcześniej . Jeśli używasz własny skoroszyt z włączoną obsługą makr, należy określić lokalizację tego skoroszytu.  
   
 9. Kliknij przycisk **Zakończ**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **WorkbookWithVBA** skoroszytu w Projektancie i dodaje **CallingCodeFromVBA** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **WorkbookWithVBA** skoroszytu w Projektancie i dodaje **CallingCodeFromVBA** projekt **Eksploratora rozwiązań**.  
   
-## <a name="trust-the-location-of-the-workbook"></a>Zaufania lokalizacji skoroszytu  
- Przed za udostępnianie kodu w rozwiązaniu do kodu z VBA w skoroszycie, muszą ufać VBA w skoroszycie do uruchomienia. Istnieje kilka sposobów, aby to zrobić. W tym przewodniku będzie wykonać to zadanie przez ufające lokalizacji skoroszytu w **Centrum zaufania** w programie Excel.  
+## <a name="trust-the-location-of-the-workbook"></a>Zaufanie do lokalizacji, skoroszytu  
+ Zanim za udostępnianie kodu w rozwiązaniu dla kodu VBA w skoroszycie, muszą ufać VBA w skoroszycie, aby uruchomić. Istnieje kilka sposobów, aby to zrobić. W tym przewodniku będzie wykonać to zadanie przez zaufanie do lokalizacji skoroszytu w **Centrum zaufania** w programie Excel.  
   
 ### <a name="to-trust-the-location-of-the-workbook"></a>Aby zaufać lokalizacji skoroszytu  
   
@@ -135,7 +135,7 @@ ms.locfileid: "34845481"
   
 5.  W okienku szczegółów kliknij **ustawienia Centrum zaufania**.  
   
-6.  W okienku kategorii kliknij **zaufanych lokalizacji**.  
+6.  W okienku kategorii kliknij **zaufane lokalizacje**.  
   
 7.  W okienku szczegółów kliknij **Dodaj nową lokalizację**.  
   
@@ -152,81 +152,81 @@ ms.locfileid: "34845481"
 13. Zakończ **Excel**.  
   
 ## <a name="add-a-method-to-the-sheet1-class"></a>Dodawanie metody do Sheet1 — klasa  
- Teraz, kiedy projekt VBA jest skonfigurowane, Dodaj publiczną metodę do `Sheet1` klasy elementu, który można wywołać z kodu VBA hosta.  
+ Po skonfigurowaniu projektu VBA dodać metodę publiczną do `Sheet1` hosta klasa elementu, który można wywoływać z kodu VBA.  
   
-### <a name="to-add-a-method-to-the-sheet1-class"></a>Aby dodać metodę do Sheet1 — klasa  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>Aby dodać metodę do klasy Arkusz1  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.cs**, a następnie kliknij przycisk **kod widoku**.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.cs**, a następnie kliknij przycisk **Wyświetl kod**.  
   
      **Sheet1.cs** plik zostanie otwarty w edytorze kodu.  
   
-2.  Dodaj następujący kod do `Sheet1` klasy. `CreateVstoNamedRange` Metoda tworzy nowy <xref:Microsoft.Office.Tools.Excel.NamedRange> obiekt w określonym zakresie. Ta metoda tworzy także program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> zdarzenie <xref:Microsoft.Office.Tools.Excel.NamedRange>. W dalszej części tego przewodnika, wywoła `CreateVstoNamedRange` metody z kodu VBA w dokumencie.  
+2.  Dodaj następujący kod do `Sheet1` klasy. `CreateVstoNamedRange` Metoda tworzy nowy <xref:Microsoft.Office.Tools.Excel.NamedRange> obiektu w określonym zakresie. Ta metoda również tworzy program obsługi zdarzeń dla <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> zdarzenia <xref:Microsoft.Office.Tools.Excel.NamedRange>. W dalszej części tego przewodnika, będzie wywoływać `CreateVstoNamedRange` metody z kodu VBA w dokumencie.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Dodaj następującą metodę do `Sheet1` klasy. Ta metoda zastępuje <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> metody, aby przywrócić bieżące wystąpienie klasy `Sheet1` klasy.  
+3.  Dodaj następującą metodę do `Sheet1` klasy. Ta metoda zastępuje <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> metodę, aby powrócić do bieżącego wystąpienia `Sheet1` klasy.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   
-4.  Zastosuj następujące atrybuty przed pierwszym wierszem `Sheet1` deklaracji klasy. Te atrybuty uwidaczniania klasy COM, ale bez generowania interfejsu klasy.  
+4.  Stosuje się następujące atrybuty przed pierwszym wierszem `Sheet1` deklaracji klasy. Te atrybuty widoczności klasy dla modelu COM, ale bez generowania interfejsu klasy.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>Wyodrębnij interfejs dla Sheet1 — klasa  
- Przed mogą uwidaczniać `CreateVstoNamedRange` metoda kod VBA, należy utworzyć publiczny interfejs, który definiuje tę metodę i musi uwidaczniać tego interfejsu do modelu COM.  
+ Aby udostępnić `CreateVstoNamedRange` metody dla kodu VBA, należy utworzyć publiczny interfejs, który definiuje tę metodę, i musi uwidaczniać tego interfejsu COM.  
   
-### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Aby wyodrębnić interfejsu Sheet1 — klasa  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Można wyodrębnić interfejsu Sheet1 — klasa  
   
-1.  W **Sheet1.cs** kodu z pliku, kliknij w dowolnym miejscu `Sheet1` klasy.  
+1.  W **Sheet1.cs** plik kodu, kliknij w dowolnym miejscu `Sheet1` klasy.  
   
-2.  Na **Refaktoryzuj** menu, kliknij przycisk **wyodrębniania interfejsu**.  
+2.  Na **Refaktoryzuj** menu, kliknij przycisk **Wyodrębnij interfejs**.  
   
-3.  W **wyodrębniania interfejsu** okna dialogowego, **wybierz publiczne elementy członkowskie, aby utworzyć interfejs** kliknij pozycję `CreateVstoNamedRange` metody.  
+3.  W **Wyodrębnij interfejs** dialogowym **wybierz publiczne elementy członkowskie do interfejsu formularza** kliknij wpis dla `CreateVstoNamedRange` metody.  
   
 4.  Kliknij przycisk **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generuje nowy interfejs o nazwie `ISheet1`, oraz modyfikuje definicji `Sheet1` klasy tak, aby ją implementuje `ISheet1` interfejsu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarte także **ISheet1.cs** plik w edytorze kodu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generuje nowy interfejs o nazwie `ISheet1`, oraz modyfikuje definicji `Sheet1` klasy tak, aby implementuje `ISheet1` interfejsu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera również **ISheet1.cs** plik w edytorze kodu.  
   
-5.  W **ISheet1.cs** pliku, Zastąp `ISheet1` interfejsu deklaracji z następującym kodem. Ten kod sprawia, że `ISheet1` interfejs publiczny i są one stosowane <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu, aby wyświetlić interfejs do modelu COM.  
+5.  W **ISheet1.cs** pliku, Zastąp `ISheet1` interfejsu deklaracji z następującym kodem. Ten kod sprawia, że `ISheet1` interfejsu publicznego i są one stosowane <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu, aby uwidocznić interfejsu COM.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]  
   
 6.  Skompiluj projekt.  
   
-## <a name="expose-the-method-to-vba-code"></a>Ujawnia metody do kodu z VBA  
- Do udostępnienia `CreateVstoNamedRange` metody na kod w tym skoroszycie, ustawienie **ReferenceAssemblyFromVbaProject** właściwość `Sheet1` element hosta do **True**.  
+## <a name="expose-the-method-to-vba-code"></a>Ujawnia metody dla kodu VBA  
+ Do udostępnienia `CreateVstoNamedRange` metody dla kodu VBA w skoroszycie, ustawienie **ReferenceAssemblyFromVbaProject** właściwość `Sheet1` element hosta do **True**.  
   
-### <a name="to-expose-the-method-to-vba-code"></a>Aby udostępnić metodę kod VBA  
+### <a name="to-expose-the-method-to-vba-code"></a>Aby udostępnić metody dla kodu VBA  
   
 1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **Sheet1.cs**.  
   
-     **WorkbookWithVBA** plik zostanie otwarty w Projektancie z Sheet1 — widoczne.  
+     **WorkbookWithVBA** plik zostanie otwarty w projektancie, za pomocą Arkusz1 widoczne.  
   
 2.  W **właściwości** wybierz **ReferenceAssemblyFromVbaProject** właściwości i zmień wartość na **True**.  
   
-3.  Kliknij przycisk **OK** w komunikacie, który jest wyświetlany.  
+3.  Kliknij przycisk **OK** wiadomości, która jest wyświetlana.  
   
 4.  Skompiluj projekt.  
   
 ## <a name="call-the-method-from-vba-code"></a>Wywołaj metodę z kodu VBA  
- Można teraz wywołać `CreateVstoNamedRange` metody z kodu VBA w skoroszycie.  
+ Teraz można wywołać `CreateVstoNamedRange` metody z kodu VBA w skoroszycie.  
   
 > [!NOTE]  
->  W tym przewodniku dodasz kod VBA w skoroszycie podczas debugowania projektu. Kod VBA, które dodasz do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ kopię dokumentu w folderze głównym projektu programu Visual Studio zastępuje dokumentu w folderze wyjściowym kompilacji. Jeśli chcesz zapisać kod VBA, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).  
+>  W tym przewodniku dodasz kod VBA w skoroszycie podczas debugowania projektu. Kod VBA dodawany do tego dokumentu zostaną zastąpione przy następnym uruchomieniu kompilacji projektu, ponieważ program Visual Studio zastępuje dokument w folderze wyjściowym kompilacji kopię dokumentu z folderu głównego projektu. Jeśli chcesz zapisać ten kod, skopiuj go do dokumentu w folderze projektu. Aby uzyskać więcej informacji, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).  
   
-### <a name="to-call-the-method-from-vba-code"></a>Wywoływanie metody z kodu VBA  
+### <a name="to-call-the-method-from-vba-code"></a>Aby wywołać metodę z kodu VBA  
   
-1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
+1.  Naciśnij klawisz **F5** Aby uruchomić projekt.  
   
-2.  Na **Developer** karcie **kod** kliknij przycisk **Visual Basic**.  
+2.  Na **Developer** na karcie **kodu** grupy, kliknij przycisk **języka Visual Basic**.  
   
-     Zostanie otwarty Edytor Visual Basic.  
+     Zostanie otwarty Edytor kodu języka Visual Basic.  
   
 3.  Na **Wstaw** menu, kliknij przycisk **modułu**.  
   
 4.  Dodaj następujący kod do nowego modułu.  
   
-     Ten kod wywołuje `CreateTable` metody w zestawie dostosowania. Makra uzyskuje dostęp do tej metody za pomocą globalnej `GetManagedClass` metody dostępu do `Sheet1` hosta elementu klasy, która ujawniony dla kodu języka VBA. `GetManagedClass` Metoda została wygenerowana automatycznie po ustawieniu **ReferenceAssemblyFromVbaProject** właściwość we wcześniejszej części tego przewodnika.  
+     Ten kod wywołuje `CreateTable` metody w zestawie dostosowywania. Makro uzyskuje dostęp do tej metody za pomocą globalnego `GetManagedClass` metody w celu uzyskania dostępu do `Sheet1` hosta klasa elementu, który jest udostępniana dla kodu VBA. `GetManagedClass` Metoda została wygenerowana automatycznie po ustawieniu **ReferenceAssemblyFromVbaProject** właściwości we wcześniejszej części tego przewodnika.  
   
     ```vb  
     Sub CallVSTOMethod()  
@@ -238,21 +238,21 @@ ms.locfileid: "34845481"
   
 5.  Naciśnij klawisz **F5**.  
   
-6.  W skoroszycie, kliknij komórkę **A1** na **Sheet1 —**. Sprawdź, czy jest wyświetlany w oknie komunikatu.  
+6.  W skoroszycie, Otwórz, kliknij komórkę **A1** na **Arkusz1**. Sprawdź, czy pojawi się okno komunikatu.  
   
 7.  Zamknij program Excel bez zapisywania zmian.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Użytkownik może dowiedzieć się więcej o wywoływanie kodu w rozwiązaniach pakietu Office z VBA w tych tematach:  
+ Możesz dowiedzieć się więcej informacji na temat wywoływanie kodu w rozwiązaniach pakietu Office z VBA w następujących tematach:  
   
--   Wywoływanie kodu w elemencie hosta w dostosowaniu Visual Basic z kodu VBA. Ten proces różni się od procesu Visual C#. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Wywoływanie kodu w elemencie hosta w dostosowaniu języka Visual Basic z kodu VBA. Ten proces różni się od procesu Visual C#. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Wywoływanie kodu w dodatku VSTO z kodu VBA. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Wywoływanie kodu w dodatku narzędzi VSTO z kodu VBA. Aby uzyskać więcej informacji, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)   
- [Porady: Uwidacznianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Porady: Uwidacznianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
+ [Instrukcje: Uwidacznianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Instrukcje: Uwidacznianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Wskazówki: Wywoływanie kodu z VBA w projekcie Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Word'
+title: 'Wskazówki: Powiązywanie danych z kontrolkami w okienku akcji programu Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,24 +21,24 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845109"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781935"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Word
-  W tym przewodniku przedstawiono powiązywanie danych do kontrolek okienku akcji programu Word. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.  
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Wskazówki: Powiązywanie danych z kontrolkami w okienku akcji programu Word
+  W tym instruktażu przedstawiono powiązanie danych z kontrolkami w okienku akcji programu Word. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie okienek akcji za pomocą formantów formularzy systemu Windows, które są związane z danymi.  
+-   Tworzenie okienek akcji za pomocą formantów Windows Forms, które są powiązane z danymi.  
   
--   Aby wyświetlić dane w formantach przy użyciu relacji wzorzec/szczegół.  
+-   Przy użyciu relacji wzorzec/szczegół do wyświetlania danych w kontrolkach.  
   
--   Umożliwia wyświetlenie okienka Akcje po otwarciu aplikacji.  
+-   Pokaż okienko akcji, gdy aplikacja zostanie otwarta.  
   
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -50,7 +50,7 @@ ms.locfileid: "34845109"
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
--   Dostęp do serwera z przykładowej bazy danych Northwind programu SQL Server.  
+-   Dostęp do serwera z przykładową bazą danych Northwind programu SQL Server.  
   
 -   Uprawnienia do odczytu i zapisu w bazie danych programu SQL Server.  
   
@@ -59,76 +59,76 @@ ms.locfileid: "34845109"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Tworzenie projektu dokument programu Word o nazwie **Moje okienku akcji programu Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
+1.  Tworzenie projektu dokument programu Word z nazwą **Moje okienku akcji programu Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje okienku akcji programu Word** projektu do **Eksploratora rozwiązań**.  
+     Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje okienku akcji programu Word** projekt **Eksploratora rozwiązań**.  
   
-## <a name="add-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka Akcje  
- W ramach tego przewodnika należy formant okienka Akcje, który zawiera formanty formularzy systemu Windows z danymi. Dodawanie źródła danych do projektu, a następnie przeciągnij formanty z **źródeł danych** okna do formantu w okienku Akcje.  
+## <a name="add-controls-to-the-actions-pane"></a>Dodawanie formantów do okienka akcji  
+ W ramach tego przewodnika należy kontrolka okienka akcji, który zawiera formanty Windows Forms powiązanych z danymi. Dodawanie źródła danych do projektu, a następnie przeciągnij formanty z **źródeł danych** okna kontrolki okienka akcji.  
   
-### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolkę okienka Akcje  
+### <a name="to-add-an-actions-pane-control"></a>Aby dodać kontrolki okienka akcji  
   
 1.  Wybierz **Moje okienku akcji programu Word** projektu w **Eksploratora rozwiązań**.  
   
 2.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.  
   
-3.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **formant okienka Akcje**, nadaj jej nazwę **ActionsControl**, a następnie kliknij przycisk **Dodaj**.  
+3.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **kontrolki okienka akcji**, nadaj jej nazwę **ActionsControl**, a następnie kliknij przycisk **Dodaj**.  
   
-### <a name="to-add-a-data-source-to-the-project"></a>Aby dodać źródła danych do projektu  
+### <a name="to-add-a-data-source-to-the-project"></a>Aby dodać źródło danych do projektu  
   
-1.  Jeśli **źródeł danych** okna nie jest widoczne, wyświetl ją, z menu, wybierając **widoku** > **inne okna**  >   **Źródła danych**.  
+1.  Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
   
     > [!NOTE]  
-    >  Jeśli **Pokaż źródeł danych** nie jest dostępny, kliknij go, a następnie sprawdź ponownie.  
+    >  Jeśli **Pokaż źródła danych** nie jest dostępny, kliknij go, a następnie sprawdź ponownie.  
   
-2.  Kliknij przycisk **Dodaj nowe źródło danych** uruchomić **Kreator konfiguracji źródła danych**.  
+2.  Kliknij przycisk **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Wybierz **bazy danych** , a następnie kliknij przycisk **dalej**.  
+3.  Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
   
 4.  Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
   
 5.  Kliknij przycisk **Dalej**.  
   
-6.  Wyczyść opcję, aby zapisać połączenie, jeśli jest zaznaczone, a następnie kliknij przycisk **dalej**.  
+6.  Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
   
-7.  Rozwiń węzeł **tabel** w węźle **obiekty bazy danych** okna.  
+7.  Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
   
 8.  Zaznacz pole wyboru obok pozycji **dostawców** i **produktów** tabel.  
   
 9. Kliknij przycisk **Zakończ**.  
   
- Kreator dodaje **dostawców** tabeli i **produktów** do tabeli **źródeł danych** okna. Dodano również typizowanego zestaw danych do projektu, które są widoczne w **Eksploratora rozwiązań**.  
+ Kreator dodaje **dostawców** tabeli i **produktów** do tabeli **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
   
-### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać formanty formularzy systemu Windows z danymi z formantem w okienku Akcje  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać kontrolki formularzy Windows powiązane z danymi kontrolki okienka akcji  
   
 1.  W **źródeł danych** okna, rozwiń węzeł **dostawców** tabeli.  
   
-2.  Kliknij strzałkę listy rozwijanej w **nazwa firmy** , a następnie wybierz węzeł **ComboBox**.  
+2.  Kliknij strzałkę listy rozwijanej **nazwa firmy** , a następnie wybierz węzeł **ComboBox**.  
   
-3.  Przeciągnij **NazwaFirmy** z **źródeł danych** okna do formantu w okienku Akcje.  
+3.  Przeciągnij **CompanyName** z **źródeł danych** okna kontrolki okienka akcji.  
   
-     A <xref:System.Windows.Forms.ComboBox> formant jest tworzony na formancie w okienku Akcje. W tym samym czasie <xref:System.Windows.Forms.BindingSource> o nazwie `SuppliersBindingSource`, karty tabeli, a <xref:System.Data.DataSet> zostaną dodane do projektu na pasku składnika.  
+     A <xref:System.Windows.Forms.ComboBox> formant zostanie utworzony na kontrolki okienka akcji. W tym samym czasie <xref:System.Windows.Forms.BindingSource> o nazwie `SuppliersBindingSource`, karty tabeli, a <xref:System.Data.DataSet> są dodawane do projektu w zasobniku składnika.  
   
-4.  Wybierz `SuppliersBindingNavigator` w **składnika** na pasku zadań i naciśnij klawisz **usunąć**. Nie będzie używać `SuppliersBindingNavigator` w tym przewodniku.  
+4.  Wybierz `SuppliersBindingNavigator` w **składnika** na pasku zadań, a następnie naciśnij klawisz **Usuń**. Nie będzie używać `SuppliersBindingNavigator` w tym przewodniku.  
   
     > [!NOTE]  
-    >  Usuwanie `SuppliersBindingNavigator` nie powoduje usunięcia wszystkich kodu, który został wygenerowany dla niego. Można usunąć tego kodu.  
+    >  Usuwanie `SuppliersBindingNavigator` nie powoduje usunięcia cały kod, który został wygenerowany dla niego. Możesz usunąć ten kod.  
   
-5.  Przenieś pola kombi tak, aby w ramach etykiety i zmień **rozmiar** właściwości **171, 21**.  
+5.  Przenieś pole kombi tak, aby w ramach etykiety i zmień **rozmiar** właściwości **171, 21**.  
   
-6.  W **źródeł danych** okna, rozwiń węzeł **produktów** tabeli będący elementem podrzędnym **dostawców** tabeli.  
+6.  W **źródeł danych** okna, rozwiń węzeł **produktów** tabeli, czyli elementem podrzędnym **dostawców** tabeli.  
   
-7.  Kliknij strzałkę listy rozwijanej w **ProductName** , a następnie wybierz węzeł **ListBox**.  
+7.  Kliknij strzałkę listy rozwijanej **ProductName** , a następnie wybierz węzeł **ListBox**.  
   
-8.  Przeciągnij **ProductName** do formantu w okienku Akcje.  
+8.  Przeciągnij **ProductName** do kontrolki okienka akcji.  
   
-     A <xref:System.Windows.Forms.ListBox> formant jest tworzony na formancie w okienku Akcje. W tym samym czasie <xref:System.Windows.Forms.BindingSource> o nazwie `ProductBindingSource` i karty tabeli zostaną dodane do projektu na pasku składnika.  
+     A <xref:System.Windows.Forms.ListBox> formant zostanie utworzony na kontrolki okienka akcji. W tym samym czasie <xref:System.Windows.Forms.BindingSource> o nazwie `ProductBindingSource` i karty tabeli są dodawane do projektu w zasobniku składnika.  
   
-9. Przenieś pola listy, aby była w obszarze etykiety i zmień **rozmiar** właściwości **171,95**.  
+9. Przenieś pole listy tak, aby w ramach etykiety i zmień **rozmiar** właściwości **171,95**.  
   
-10. Przeciągnij <xref:System.Windows.Forms.Button> z **przybornika** do okienka Akcje kontroli i umieść go poniżej.  
+10. Przeciągnij <xref:System.Windows.Forms.Button> z **przybornika** do okienka Akcje kontroli i umieść ją poniżej pola listy.  
   
 11. Kliknij prawym przyciskiem myszy <xref:System.Windows.Forms.Button>, kliknij przycisk **właściwości** w menu skrótów i Zmień następujące właściwości.  
   
@@ -137,110 +137,110 @@ ms.locfileid: "34845109"
     |**Nazwa**|**Wstaw**|  
     |**Tekst**|**Wstaw**|  
   
-12. Zmień rozmiar formantu użytkownika w celu dopasowania kontrolki.  
+12. Zmień rozmiar kontrolki użytkownika, aby dopasować kontrolki.  
   
 ## <a name="set-up-the-data-source"></a>Konfigurowanie źródła danych  
- Aby skonfigurować źródło danych, Dodaj kod, aby <xref:System.Windows.Forms.UserControl.Load> zdarzeń formant okienka Akcje do wypełnienia kontrolki z danymi z <xref:System.Data.DataTable>i ustaw <xref:System.Windows.Forms.Binding.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości dla każdego formantu.  
+ Aby skonfigurować źródło danych, Dodaj kod, aby <xref:System.Windows.Forms.UserControl.Load> zdarzeń kontrolki okienka akcji w celu wypełnienia kontrolki z danymi z <xref:System.Data.DataTable>i ustaw <xref:System.Windows.Forms.Binding.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości dla każdego formantu.  
   
-### <a name="to-load-the-control-with-data"></a>Aby załadować formantu z danymi  
+### <a name="to-load-the-control-with-data"></a>Aby załadować kontrolki z danymi  
   
-1.  W <xref:System.Windows.Forms.UserControl.Load> obsługi zdarzeń `ActionsControl` klasy, Dodaj następujący kod.  
+1.  W <xref:System.Windows.Forms.UserControl.Load> program obsługi zdarzeń `ActionsControl` klasy, Dodaj następujący kod.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  W języku C#, należy dołączyć do programu obsługi zdarzeń <xref:System.Windows.Forms.UserControl.Load> zdarzeń. Możesz umieścić ten kod w `ActionsControl` konstruktora, po wywołaniu `InitializeComponent`. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  W języku C#, należy dołączyć program obsługi zdarzeń do <xref:System.Windows.Forms.UserControl.Load> zdarzeń. Możesz umieścić ten kod w `ActionsControl` konstruktora, po wywołaniu `InitializeComponent`. Aby uzyskać więcej informacji na temat tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
 ### <a name="to-set-data-binding-properties-of-the-controls"></a>Aby ustawić właściwości powiązania danych formantów  
   
-1.  Wybierz `CompanyNameComboBox` formantu.  
+1.  Wybierz `CompanyNameComboBox` kontroli.  
   
-2.  W **właściwości** okna, kliknij przycisk z prawej strony **źródła danych** właściwości, a następnie wybierz **suppliersBindingSource**.  
+2.  W **właściwości** okna, kliknij przycisk po prawej stronie **DataSource** właściwości, a następnie wybierz **suppliersBindingSource**.  
   
-3.  Kliknij przycisk z prawej strony **DisplayMember** właściwości, a następnie wybierz **NazwaFirmy**.  
+3.  Kliknij przycisk po prawej stronie **elementu DisplayMember** właściwości, a następnie wybierz **CompanyName**.  
   
-4.  Rozwiń węzeł **powiązania danych** właściwości, kliknij przycisk z prawej strony **tekst** właściwości, a następnie wybierz **Brak**.  
+4.  Rozwiń **powiązania danych** właściwości, kliknij przycisk po prawej stronie **tekstu** właściwości, a następnie wybierz **Brak**.  
   
-5.  Wybierz `ProductNameListBox` formantu.  
+5.  Wybierz `ProductNameListBox` kontroli.  
   
-6.  W **właściwości** okna, kliknij przycisk z prawej strony **źródła danych** właściwości, a następnie wybierz **productsBindingSource**.  
+6.  W **właściwości** okna, kliknij przycisk po prawej stronie **DataSource** właściwości, a następnie wybierz **productsBindingSource**.  
   
-7.  Kliknij przycisk z prawej strony **DisplayMember** właściwości, a następnie wybierz **ProductName**.  
+7.  Kliknij przycisk po prawej stronie **elementu DisplayMember** właściwości, a następnie wybierz **ProductName**.  
   
-8.  Rozwiń węzeł **powiązania danych** właściwości, kliknij przycisk z prawej strony **SelectedValue** właściwości, a następnie wybierz **Brak**.  
+8.  Rozwiń **powiązania danych** właściwości, kliknij przycisk po prawej stronie **SelectedValue** właściwości, a następnie wybierz **Brak**.  
   
-## <a name="add-a-method-to-insert-data-into-a-table"></a>Dodawanie metody do wstawiania danych do tabeli  
- Następne zadanie to odczytywanie danych z formanty powiązane i wypełnianie tabeli w dokumencie programu Word. Najpierw utwórz procedurę formatowania nagłówków w tabeli, a następnie dodaj `AddData` metody do utworzenia i sformatowania tabeli programu Word.  
+## <a name="add-a-method-to-insert-data-into-a-table"></a>Dodaj metodę, aby wstawić dane do tabeli  
+ Kolejnym krokiem jest odczytać danych z powiązanej kontrolki i wypełnić tabelę w dokumencie programu Word. Najpierw należy utworzyć procedurę formatowania nagłówków w tabeli, a następnie dodaj `AddData` metodę, aby utworzyć i sformatować tabelę programu Word.  
   
 ### <a name="to-format-the-table-headings"></a>Aby sformatować nagłówki tabeli  
   
-1.  W `ActionsControl` klasy, Utwórz metodę formatowania nagłówków w tabeli.  
+1.  W `ActionsControl` klasy, Utwórz metodę, aby sformatować nagłówki tabeli.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]  
   
 ### <a name="to-create-the-table"></a>Aby utworzyć tabelę  
   
-1.  W `ActionsControl` klasy, napisanie metody, która spowoduje utworzenie tabeli, jeżeli jeszcze nie istnieje i dodać dane w okienku Akcje do tabeli.  
+1.  W `ActionsControl` klasy, napisanie metody, która utworzy tabelę, w przypadku, gdy jeden jeszcze nie istnieje i dodać dane w okienku Akcje do tabeli.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]  
   
 ### <a name="to-insert-text-into-a-word-table"></a>Aby wstawić tekst do tabeli w programie Word  
   
-1.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń **Wstaw** przycisku.  
+1.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń **Wstaw** przycisku.  
   
      [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]  
   
-2.  W języku C#, należy utworzyć programu obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzeń przycisku.  Możesz umieścić ten kod w <xref:System.Windows.Forms.UserControl.Load> obsługi zdarzeń `ActionsControl` klasy.  
+2.  W języku C#, należy utworzyć program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia przycisku.  Możesz umieścić ten kod w <xref:System.Windows.Forms.UserControl.Load> program obsługi zdarzeń `ActionsControl` klasy.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]  
   
-## <a name="show-the-actions-pane"></a>Umożliwia wyświetlenie okienka Akcje  
- W okienku Akcje staje się widoczna po dodaniu do niego formantów.  
+## <a name="show-the-actions-pane"></a>Pokaż okienko akcji  
+ W okienku Akcje staje się widoczna po dodaniu kontrolki do niego.  
   
-### <a name="to-show-the-actions-pane"></a>Aby wyświetlić w okienku Akcje  
+### <a name="to-show-the-actions-pane"></a>Aby pokazać okienko akcji  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument.vb** lub **ThisDocument.cs**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument.vb** lub **ThisDocument.cs**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.  
   
-2.  Utwórz nowe wystąpienie formantu w górnej części `ThisDocument` klasy wyglądającą jak w następującym przykładzie.  
+2.  Utwórz nowe wystąpienie kontrolki w górnej części `ThisDocument` klasy tak, aby wyglądał jak w poniższym przykładzie.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
      [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]  
   
-3.  Dodaj kod, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> obsługi zdarzeń `ThisDocument` wyglądającą jak w następującym przykładzie.  
+3.  Dodaj kod, aby <xref:Microsoft.Office.Tools.Word.Document.Startup> program obsługi zdarzeń `ThisDocument` tak, aby wyglądał jak w poniższym przykładzie.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
      [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
   
 ## <a name="test-the-application"></a>Testowanie aplikacji  
- Teraz możesz przetestować dokumencie, aby sprawdzić, czy po otwarciu dokumentu jest widoczny w okienku Akcje. Testowanie dla relacji wzorzec/szczegół w formantach w okienku Akcje i upewnij się, że danych jest wypełniana w wyrazie tabeli, gdy **Wstaw** kliknięciu przycisku.  
+ Teraz można przetestować dokument, aby sprawdzić, czy po otwarciu dokumentu jest wyświetlana w okienku Akcje. Testowanie dla relacji wzorzec/szczegół w kontrolkach w okienku akcji i upewnij się, wypełnieniu danych w programie Word tabeli, gdy **Wstaw** przycisku.  
   
 ### <a name="to-test-your-document"></a>Aby przetestować dokumentu  
   
-1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
+1.  Naciśnij klawisz **F5** Aby uruchomić projekt.  
   
 2.  Upewnij się, że widoczne jest okienko akcji.  
   
 3.  Wybierz firmę, w polu kombi i sprawdź, czy elementy w **produktów** zmiany pola listy.  
   
-4.  Kliknij pozycję Wybierz produkt **Wstaw** w okienku Akcje i sprawdź, czy szczegóły produktu są dodawane do tabeli w programie Word.  
+4.  Wybierz produkt, kliknij przycisk **Wstaw** w okienku akcji i sprawdź, czy szczegóły produktu są dodawane do tabeli w programie Word.  
   
 5.  Wstaw dodatkowe produkty z różnych firm.  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym przewodniku przedstawiono podstawowe wiązanie danych do kontrolek okienku akcji programu Word. Poniżej przedstawiono niektóre zadania, które mogą występować:  
+ W tym przewodniku przedstawiono podstawowe informacje dotyczące powiązania danych z kontrolkami w okienku akcji programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Wiązanie danych do kontrolek w programie Excel. Aby uzyskać więcej informacji, zobacz [wskazówki: wiązanie danych do kontrolek okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Powiązanie danych z kontrolkami w programie Excel. Aby uzyskać więcej informacji, zobacz [wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
--   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
- [Porady: Dodawanie okienek akcji do dokumentów programu Word lub skoroszyty programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

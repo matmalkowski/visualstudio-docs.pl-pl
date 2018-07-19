@@ -1,5 +1,5 @@
 ---
-title: Produktów i usług (mieszany)
+title: Dostępność produktów i usług (program Blend)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,42 +10,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97919ae62a0d9fdde187c10aedb87243e69af61d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234244"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890051"
 ---
-# <a name="accessibility-products-and-services-blend"></a>Produktów i usług (mieszany)
-Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dla każdego. W rozdziałach poniżej zawarto informacje o funkcjach, produktach i usługach, dzięki którym system Microsoft Windows jest łatwiej dostępny dla osób niepełnosprawnych:
+# <a name="accessibility-products-and-services-blend"></a>Dostępność produktów i usług (program Blend)
+Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. W rozdziałach poniżej zawarto informacje o funkcjach, produktach i usługach, dzięki którym system Microsoft Windows jest łatwiej dostępny dla osób niepełnosprawnych:
 
--   „Funkcje ułatwień dostępu w systemie Windows”
+-   Funkcje ułatwień dostępu w systemie Windows
 
--   „Dokumentacja w alternatywnych formatach”
+-   Dokumentacja w alternatywnych formatach
 
--   „Obsługa klienta dla osób z wadą słuchu”
+-   Obsługa klienta dla osób z wadami słuchu
 
--   „Informacje dodatkowe”
+-   Więcej informacji
 
 > [!NOTE]
->  Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić witrynę [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069) listę firmy Microsoft obsługuje usługi telefonu numerów i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
+>  Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069) listę Microsoft pomocy technicznej usługi telefonu liczby i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
 
 ## <a name="accessibility-features-of-windows"></a>Funkcje ułatwień dostępu w systemie Windows
- System operacyjny Windows ma wiele wbudowanych funkcji ułatwień dostępu. Są one przeznaczone dla osób mających trudności z pisaniem na klawiaturze lub używaniem myszy, niewidomych lub niedowidzących albo niesłyszących lub niedosłyszących. Funkcje są instalowane podczas instalacji. Aby uzyskać więcej informacji o tych funkcjach, patrz Pomoc systemu Windows i [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).
+ System operacyjny Windows ma wiele wbudowanych funkcji ułatwień dostępu. Są one przeznaczone dla osób mających trudności z pisaniem na klawiaturze lub używaniem myszy, niewidomych lub niedowidzących albo niesłyszących lub niedosłyszących. Funkcje są instalowane podczas instalacji. Aby uzyskać więcej informacji o tych funkcjach, zobacz temat Pomocy programu Windows i [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069).
 
 ### <a name="free-step-by-step-tutorials"></a>Bezpłatne samouczki krok po kroku
  Firma Microsoft oferuje szereg samouczków krok po kroku, które zawierają szczegółowe procedury konfigurowania opcji i ustawień ułatwień dostępu na komputerze. Informacje te są prezentowane w formacie równoległym, dzięki czemu można nauczyć się używać myszy, klawiatury lub obu urządzeń jednocześnie.
 
- Aby znaleźć samouczki krok po kroku dotyczące produktów firmy Microsoft, zobacz [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Aby znaleźć samouczki krok po kroku dotyczące produktów Microsoft, zobacz [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069).
 
 ### <a name="assistive-technology-products-for-windows"></a>Produkty technologii pomocniczej dla systemu Windows
- Firma Microsoft oferuje szeroki asortyment produktów technologii pomocniczej, które ułatwiają posługiwanie się komputerem przez osoby niepełnosprawne. Możesz przeszukać wykaz produktów technologii pomocniczej, które działają w systemie Windows w [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Firma Microsoft oferuje szeroki asortyment produktów technologii pomocniczej, które ułatwiają posługiwanie się komputerem przez osoby niepełnosprawne. Można wyszukać w katalogu produktów technologii pomocniczej, które działają w Windows u [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069).
 
  W przypadku korzystania z technologii pomocniczej należy przed uaktualnianiem oprogramowania lub sprzętu skontaktować się z jej dostawcą i sprawdzić, czy nie istnieje ryzyko problemów ze zgodnością.
 
 ## <a name="documentation-in-alternative-formats"></a>Dokumentacja w alternatywnych formatach
- Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mogą dla wielu produktów Microsoft uzyskać dokumentację w bardziej przystępnych formatach. Możesz wyświetlić indeks przystępnej dokumentacji produktów w [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mogą dla wielu produktów Microsoft uzyskać dokumentację w bardziej przystępnych formatach. Możesz wyświetlić indeks przystępnej dokumentacji produktów w [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069).
 
  Dodatkowo kolejne publikacje Microsoft można uzyskać od firmy Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D rozpowszechnia te dokumenty zarejestrowanym użytkownikom spełniającym odpowiednie kryteria. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:
 
@@ -61,11 +61,11 @@ Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dl
 
  Faks: (609) 987-8116
 
- [Learning Ally lokacji](http://go.microsoft.com/fwlink/?LinkId=111110)
+ [Learning ally lokacji](http://go.microsoft.com/fwlink/?LinkId=111110)
 
  Adresy internetowe czasami się zmieniają, dlatego witryna wymieniona powyżej może okazać się niedostępna.
 
-## <a name="customer-service-for-people-with-hearing-impairments"></a>Usługa klienta dla osoby niedosłyszące
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Obsługa klienta dla osób z wadami słuchu
  Osoby niesłyszące lub niedosłyszące mają pełny dostęp do produktów i obsługi klienta firmy Microsoft za pośrednictwem usługi telefonu tekstowego (TTY/TDD):
 
  Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.
@@ -75,4 +75,4 @@ Firma Microsoft dokłada starań, aby ułatwiając swoich produktów i usług dl
  Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanowieniom w miejscu, w którym są świadczone.
 
 ## <a name="for-more-information"></a>Więcej informacji
- Aby uzyskać więcej informacji o tym jak przystępna technika komputerowa pomaga w polepszaniu życia osób niepełnosprawnych, zobacz [witryny Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Aby uzyskać więcej informacji na temat jak przystępna technika komputerowa pomaga w polepszaniu życia osób niepełnosprawnych, zobacz [Microsoft poświęconej ułatwieniom dostępu](http://go.microsoft.com/fwlink/?LinkID=75069).

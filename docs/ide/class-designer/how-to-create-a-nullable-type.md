@@ -17,45 +17,45 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957369"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785840"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Porady: Tworzenie typu zerowalnego w Projektancie klas
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Porady: Tworzenie typu dopuszczającego wartość null w Projektancie klas
 
-Niektórych typów wartości nie zawsze mieć lub muszą zdefiniowanej wartości. Jest typowym rozwiązaniem w przypadku baz danych, gdy niektóre pola nie można przypisać wartości. Na przykład można przypisać wartości null na wskazują, że jej nie został jeszcze przypisany wartość pole bazy danych.
+Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej wartości. Jest to powszechną praktyką w bazach danych, gdzie niektóre pola nie można przypisać dowolną wartość. Na przykład może przypisać wartości null z polem bazy danych, aby oznaczają, że nie jeszcze nadano jej wartość.
 
-A *typ dopuszczający wartość null* jest typem wartości, które można rozszerzyć, aby przyspieszyć typowe zakres wartości dla tego typu, a także wartość null. Na przykład wartości null z `Int32`, również oznaczane jako wartości null\<Int32 > można przypisać wartości od -2147483648 do 2147483647 i można do niej przypisywać wartości null. Typu Nullable\<bool > można przypisać wartości `True`, `False`, lub wartość null (Brak wartości we wszystkich).
+A *typu dopuszczającego wartość null* jest typem wartości, które można rozszerzyć, aby przyspieszyć typowy zakres wartości dla tego typu, a także wartość null. Na przykład dopuszczający wartości null z `Int32`, są również oznaczane jako dopuszczającego wartość null\<Int32 > można przypisać dowolną wartość od -2147483648 do 2147483647 i może ona zostać przypisana wartość null. Nullable\<bool > można przypisać wartości `True`, `False`, lub wartość null (Brak wartości wszystkie).
 
-Typy dopuszczające wartości null są wystąpieniami klasy <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartości null ma dwa publicznej właściwości tylko do odczytu, `HasValue` i `Value`:
+Typy dopuszczające wartości null są wystąpieniami <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartość null, ma dwa publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
 
--   `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera zdefiniowanej wartości. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz przetestować zdefiniowanych wartości przy użyciu instrukcji, takich jak `if (x.HasValue)` lub `if (y != null)`.
+-   `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera wartość zdefiniowana. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz sprawdzić wartości zdefiniowanej przy użyciu instrukcji takich jak `if (x.HasValue)` lub `if (y != null)`.
 
--   `Value` jest tego samego typu jako typu bazowego. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, podczas uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku Nieprawidłowa operacja.
+-   `Value` jest taki sam typ co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku dotyczącego nieprawidłowej operacji.
 
-Domyślnie w deklaracji zmiennej jako wartości null typu go nie ma zdefiniowanej wartości (`HasValue` jest `False`), inne niż domyślna wartość jego typem podstawowym wartość.
+Domyślnie, kiedy Deklarujesz zmienną typu dopuszczającego wartość null, go nie ma zdefiniowanej wartości (`HasValue` jest `False`), inne niż domyślna wartość typu wartości podstawowej.
 
-Projektant klas Wyświetla typ dopuszczający wartość null, tak samo, jak wyświetla jego typem podstawowym.
+Projektant klas Wyświetla typ dopuszczający wartość null, tak samo, jak wyświetla jego typ podstawowy.
 
-Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [typy dopuszczające wartości zerowe](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typy dopuszczające wartości zerowe wartości](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).
+Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [typów dopuszczających wartości zerowe](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typów wartości dopuszczających wartości zerowe](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Aby dodać typ dopuszczający wartość null, za pomocą projektanta klas
 
-1.  Na diagramie klas rozwiń istniejącej klasy lub Utwórz nową klasę.
+1.  Na diagramie klasy należy rozwinąć istniejącej klasy, lub Utwórz nową klasę.
 
-2.  Aby dodać klasę do projektu na **diagramu klas** menu, kliknij przycisk **Dodaj** > **Dodaj klasę**.
+2.  Aby dodać klasę do projektu, na **Diagram klas** menu, kliknij przycisk **Dodaj** > **Dodaj klasę**.
 
-3.  Aby rozwinąć kształt klasa na **diagramu klas** menu, kliknij przycisk **rozwiń**.
+3.  Aby rozwinąć kształt klasy na **Diagram klas** menu, kliknij przycisk **rozwiń**.
 
-4.  Wybierz kształt klasy. Na **diagramu klas** menu, kliknij przycisk **Dodaj** > **pola**. Nowe pole o nazwie domyślnej **pola** będą wyświetlane w kształtu klasy, a także w **szczegółów klasy** okna.
+4.  Wybierz kształt klasy. Na **Diagram klas** menu, kliknij przycisk **Dodaj** > **pola**. Nowe pole o nazwie domyślnej **pola** pojawi się w kształt klasy, a także w **szczegóły klasy** okna.
 
-5.  W **nazwa** kolumny **szczegółów klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola na prawidłową i łatwy do rozpoznania nazwy.
+5.  W **nazwa** kolumny **szczegóły klasy** okna (lub w klasie kształtu, sam), Zmień nazwę nowego pola do nazwy ważne i istotne.
 
-6.  W **typu** kolumny **szczegółów klasy** oknie zadeklarowana jako typ dopuszczający wartość null, określając następujące:
+6.  W **typu** kolumny **szczegóły klasy** oknie zadeklarowana jako typ dopuszczający wartość null, określając następujące czynności:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
@@ -64,7 +64,7 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerow
 
 1.  Dodaj klasę do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **Dodaj klasę**.
 
-2.  W pliku .cs lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasy do deklaracji klasy.
+2.  W pliku CS lub .vb dla nowej klasy należy dodać co najmniej jeden typ dopuszczający wartość null w nowej klasie do deklaracji klasy.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -81,11 +81,11 @@ Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerow
     End Class
     ```
 
-3.  Z widoku klasy przeciągnij ikonę nowe klasy powierzchnię projektanta klas. Kształt klasy pojawia się na diagramie klas.
+3.  W widoku klas przeciągnij nową ikonę klasy do powierzchni projektowej projektanta klas. Kształt klasy pojawia się na diagramie klasy.
 
-4.  Rozwiń szczegóły dla kształtu klasy i przesuń wskaźnik myszy nad elementów członkowskich klasy. Etykietka narzędzia wyświetlana deklaracji dla każdego elementu członkowskiego.
+4.  Rozwiń szczegóły kształt klasy, a następnie przesuń wskaźnik myszy nad składowych klasy. Etykietka narzędzia zawiera deklarację każdego elementu członkowskiego.
 
-5.  Kliknij prawym przyciskiem myszy kształtu klasy, a następnie kliknij przycisk **szczegółów klasy**. Można wyświetlać lub modyfikować nowy typ właściwości w **szczegółów klasy** okna.
+5.  Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij przycisk **szczegóły klasy**. Można wyświetlać lub modyfikować właściwości nowego typu w **szczegóły klasy** okna.
 
 ## <a name="see-also"></a>Zobacz także
 

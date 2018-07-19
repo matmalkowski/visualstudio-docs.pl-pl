@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2f97793c838316d252aa56dcadd9fbb045decf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 168b358bf58dcb2c91814f5460b203873255e275
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472061"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433249"
 ---
-# <a name="1x1-viewport-size-variant"></a>Wariant rozmiaru okienka ekranu 1 x 1
-Zmniejsza wymiary okienka ekranu na wszystkie elementy docelowe renderowania na 1 x 1 pikseli.  
+# <a name="1x1-viewport-size-variant"></a>Wariant rozmiaru 1x1 okienka ekranu
+Maksymalne wymiary okienka ekranu na wszystkie elementy docelowe renderowania na 1 x 1 pikseli.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Mniejsze okienka ekranu zmniejsza liczbę pikseli, które muszą być przyciemnione, ale nie zmniejszyć liczbę wierzchołków, które muszą zostać przetworzone. Ustawienie wymiary okienka ekranu 1 x 1 pikseli skutecznie eliminuje cieniowanie pikseli, który z aplikacji.  
+ Mniejsze okienka ekranu zmniejsza liczbę pikseli, które wymagają cień. Ale mniejsze okienka ekranu nie zmniejszyć liczbę wierzchołki, które wymagają procesu. Ustawienie wymiary okienka ekranu na 1 x 1 piksel skutecznie eliminuje cieniowania pikseli, z poziomu aplikacji.  
   
- Jeśli ten wariant wyświetlane są bardziej wydajne duży, może to oznaczać, że aplikacja zużywa zbyt dużej ilości fillrate. Może to oznaczać, że rozdzielczość wybrano jest za duża dla platformy docelowej lub że aplikacja zużywa długiego czasu cieniowanie pikseli, które później zostaną zastąpione (overdraw). Tego wyniku sugeruje, że zmniejszaniu rozmiaru z obiektu lub ograniczenie liczby overdraw poprawi wydajność aplikacji.  
+ Jeśli ten wariant wykazuje duże są bardziej wydajne, może to wskazywać, że aplikacja zużywa zbyt dużo szybkość wypełniania. Ponadto rozdzielczość może być zbyt duża dla platformy docelowej lub aplikacji może poświęcać dużo czasu na cieniowania pikseli, które później zostaną zastąpione, znany również jako *overdraw*. Mniejsze buforu ramki lub zmniejszyć ilość overdraw poprawi wydajność Twojej aplikacji.  
   
 ## <a name="remarks"></a>Uwagi  
- Wymiary okienka ekranu są resetowane do 1 x 1 pikseli po każdym wywołaniu `ID3D11DeviceContext::OMSetRenderTargets` lub `ID3D11DeviceContext::RSSetViewports`.  
+ Wymiary okienka ekranu są resetowane do pikseli 1 x 1 po każdym wywołaniu `ID3D11DeviceContext::OMSetRenderTargets` lub `ID3D11DeviceContext::RSSetViewports`.  
   
 ## <a name="example"></a>Przykład  
- Ten wariant można odtworzyć za pomocą kodu w następujący sposób:  
+ Ten wariant można odtworzyć z następującym kodem:  
   
-```  
+```cpp
 D3D11_VIEWPORT viewport;  
 viewport.TopLeftX = 0;  
 viewport.TopLeftY = 0;  

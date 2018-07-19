@@ -10,40 +10,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c9c2d28a3e36a53e7a9da3acf36752f1f8d82f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926525"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890119"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 
-W projektancie programu do cieniowania stałych węzły reprezentują wartości literałów i interpolowane atrybuty wierzchołków w obliczeniach cieniowania pikseli. Ponieważ wierzchołek atrybuty są interpolowane — różni się od tak, dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera innej wersji stałej. Dzięki temu każdego piksela unikatowego wyglądu.
+W projektancie programu do cieniowania stałe węzły przedstawiają wartości literałów i interpolowane wierzchołka atrybutów w obliczeniach cieniowania pikseli. Ponieważ wierzchołek atrybuty są interpolowane — i dlatego są różne dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera nieco innej stałej. Dzięki temu każdego piksela unikatowego wyglądu.
 
-## <a name="vertex-attribute-interpolation"></a>Interpolacji atrybutu wierzchołków
+## <a name="vertex-attribute-interpolation"></a>Interpolacja atrybut wierzchołka
 
-Obraz scenę 3D w grę, aplikacji lub zostało utworzone przez ze sobą matematycznie Przekształcanie liczba obiektów — które są definiowane przez wierzchołków wierzchołka i atrybuty pierwotnych definicje — do na ekranie pikseli. Wszystkie informacje, które są wymagane, aby nadać jej unikatowego wyglądu piksel jest dostarczany za pomocą wierzchołka atrybuty, które są ze sobą mieszane zgodnie z bliskości piksela różnych wierzchołki wchodzące w skład jego *pierwotnych*. Podstawowy jest elementem renderowania podstawowego; oznacza to prosty kształtu, takie jak punkt, wiersza lub trójkąt. Piksel jest bardzo bliski co najmniej jeden wierzchołki otrzymuje stałe, które są niemal identyczne z tym wierzchołków, ale pikseli, który ma równomiernie między wierzchołki podstawowy otrzymuje stałe, które są średnią tych wierzchołków. W programowaniu grafiki, stałe, które odbierają pikseli są określane jako *interpolowane*. Dostarcza dane stałej do pikseli w ten sposób tworzy bardzo wysokiej jakości wizualnej i w tym samym czasie powoduje zmniejszenie ilości miejsca i przepustowości.
+Obraz sceny 3D w grach i aplikacjach odbywa się przy ze sobą matematycznie Przekształcanie liczba obiektów — które są definiowane przez wierzchołki, atrybuty wierzchołka i definicje pierwotnych — do wyświetlanymi na ekranie pikseli. Wszystkie informacje, które są wymagane, aby dać jej unikatowego wyglądu piksel jest dostarczany za pomocą atrybutów wierzchołka, które są ze sobą mieszane zgodnie z piksela odległości między elementami do różnych wierzchołków, które tworzą jego *pierwotnych*. Podstawowy jest elementem renderowania podstawowego; oznacza to prostą kształtu, takie jak punkt, linii lub trójkąt. Piksel, który jest bardzo zbliżona do co najmniej jeden wierzchołki otrzymuje stałe, które są niemal identyczne, z tego wierzchołka, ale pikseli, który ma mają równe odstępy między wszystkie wierzchołki podstawowy otrzymuje stałe, które są średnią te wierzchołki. W programowaniu grafiki, stałe, które odbierają pikseli są określane jako *interpolowane*. Dostarcza dane stałej pikseli w ten sposób daje bardzo dobra jakość wizualną i jednocześnie pozwala zmniejszyć wymagania dotyczące zużycia i przepustowość pamięci.
 
-Mimo że każde wystąpienie programu do cieniowania pikseli odbiera tylko jeden zestaw wartości stałych i nie można zmienić tych wartości, wystąpień różne cieniowania pikseli odbierać różne zestawy danych stałej. Ten projekt umożliwia programu do cieniowania do generowania danych wyjściowych kolorów dla każdego piksela element pierwotny.
+Mimo że każde wystąpienie programu do cieniowania pikseli odbiera tylko jeden zestaw wartości stałych i nie można zmienić tych wartości, do cieniowania pikseli różnych wystąpień odbierać różne zestawy danych stała. Ten projekt umożliwia program do cieniowania do generowania danych wyjściowych innego koloru dla każdego piksela podstawowego.
 
-## <a name="constant-node-reference"></a>Odwołanie do węzła stałej
+## <a name="constant-node-reference"></a>Stałe węzeł odniesienia
 
 |Węzeł|Szczegóły|Właściwości|
 |----------|-------------|----------------|
-|**Wektor kamery**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|
-|**Stała kolorów**|Wartość stałą koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość koloru.|
-|**Stała**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarną.|**Output**<br /> Wartość skalarną.|
-|**Stała 2D**|Stała wektora z dwoma składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|
-|**Stała 3D**|Wektor z trzema składowymi stałą.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|
-|**Stała 4D**|Stała czterema składowymi wektora.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektora.|
-|**Pozycja znormalizowane**|Pozycja bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Współrzędna x i współrzędna y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnika zawiera głębokość punktu w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
-|**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołków atrybutów koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|
+|**Wektor kamery**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Służy to do obliczenia odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|
+|**Stała koloru**|Wartość stała koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość koloru.|
+|**Stałe**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Output**<br /> Wartość skalarna.|
+|**Stała 2W**|Stała dwiema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|
+|**Stała 3W**|Stała trzema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|
+|**Stała 4W**|Stała czterema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektorowa.|
+|**Pozycja znormalizowana**|Pozycja bieżącego piksela wyrażona w urządzenia znormalizowanych współrzędnych.<br /><br /> Współrzędne x i współrzędne y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnik zawiera wartość głębię punktów w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
+|**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołka atrybutów koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|
 |**Głębokość punktu**|Głębokość bieżącego piksela w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|
-|**Głębokość punktu znormalizowane**|Głębokość bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Wynik zawiera wartość z zakresu [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|
-|**Pozycja ekranu**|Pozycja bieżącego piksela wyrażona w współrzędne ekranu.<br /><br /> Współrzędne ekranu są oparte na bieżącego okienka ekranu. X i y składników zawiera współrzędne ekranu, składnik z zawiera głębokość znormalizowany do zakresu [0, 1], i w składnik zawiera głębokość w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
+|**Znormalizowana głębokość punktu**|Głębokość bieżącego piksela wyrażona w urządzenia znormalizowanych współrzędnych.<br /><br /> Wynik zawiera wartość z zakresu [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|
+|**Pozycja ekranu**|Pozycja bieżącego piksela wyrażona w współrzędne ekranu.<br /><br /> Współrzędne ekranu zależą od bieżącego okienka ekranu. X i y składniki zawierają współrzędne ekranu, składnik z zawiera głębokość znormalizowane do zakresu [0, 1], a w składnik zawiera głębokość w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
 |**Normalna powierzchni**|Normalna powierzchni bieżącego piksela w przestrzeni obiektów.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni obiektów.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|
-|**Wektor kamery przestrzeni stycznej**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni stycznej.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni stycznej.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|
-|**Kierunek światła przestrzeni stycznej**|Wektor definiujący kierunek padania światła ze źródła światła w przestrzeni stycznej bieżącego piksela.<br /><br /> Służy to do obliczenia udziału oświetlenia i odblasków w przestrzeni stycznej.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do źródła światła.|Brak|
-|**Normalny świata**|Normalna powierzchni bieżącego piksela w przestrzeni świata.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|
+|**Wektor kamery przestrzeni stycznej**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni stycznej.<br /><br /> Służy to do obliczenia odbić w przestrzeni stycznej.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|
+|**Kierunek światła przestrzeni stycznej**|Wektor definiujący kierunek, w którym światła jest rzutowanie ze źródła światła w przestrzeni stycznej bieżącego piksela.<br /><br /> Służy to do obliczenia udziału oświetlenia i odblasków w przestrzeni stycznej.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do źródła światła.|Brak|
+|**Normalna świata**|Normalna powierzchni bieżącego piksela w przestrzeni świata.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|
 |**Pozycja świata**|Pozycja bieżącego piksela w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|

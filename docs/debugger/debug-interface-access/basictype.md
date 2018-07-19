@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458778"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433083"
 ---
 # <a name="basictype"></a>BasicType
 Określa podstawowy typ symbolu.  
@@ -46,12 +46,14 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
 ## <a name="elements"></a>Elementy  
  btNoType  
- Nie podstawowe określono typu.  
+ Nie typ podstawowy jest określony.  
   
  btVoid  
  Typ podstawowy jest `void`.  
@@ -60,7 +62,7 @@ enum BasicType {
  Typ podstawowy jest `char` (C/C++ typu).  
   
  btWChar  
- Typ podstawowy jest znaków dwubajtowych (Unicode) (`WCHAR`).  
+ Typ podstawowy jest znakiem dwubajtowym (Unicode) (`WCHAR`).  
   
  btInt  
  Typ podstawowy jest `signed int` (C/C++ typu).  
@@ -84,33 +86,33 @@ enum BasicType {
  Typ podstawowy jest `unsigned long int` (C/C++ typu).  
   
  btCurrency  
- Typ podstawowy jest waluty.  
+ Typ podstawowy jest waluta.  
   
  btDate  
  Typ podstawowy jest daty/godziny (`DATE`).  
   
  btVariant  
- Podstawowy typ jest strukturą typu zmiennej (`VARIANT`).  
+ Typ podstawowy jest strukturą typu zmiennej (`VARIANT`).  
   
  btComplex  
  Typ podstawowy jest liczbą.  
   
  btBit  
- Typ podstawowy jest typu bit.  
+ Typ podstawowy jest nieco.  
   
  btBSTR  
- Podstawowy typ to ciąg podstawowego lub binarne (`BSTR`).  
+ Typ podstawowy jest ciągiem podstawowe lub binarny (`BSTR`).  
   
  btHresult  
  Typ podstawowy jest `HRESULT`.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane przez [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_basetype —](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [Idiasymbol::get_basetype —](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

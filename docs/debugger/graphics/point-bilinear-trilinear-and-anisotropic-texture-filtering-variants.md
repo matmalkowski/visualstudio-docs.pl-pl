@@ -1,5 +1,5 @@
 ---
-title: Punkt, dwuliniowa Trilinear i anizotropowej tekstury filtrowania wariantów | Dokumentacja firmy Microsoft
+title: Punkt, warianty punktowego, Trójliniowego i Anizotropowego filtrowania tekstur | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8002a0f85d2e2e04ff061c1f156b6c8528d85d07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93b809bbb4a26ac759478e84e85fdccf5b05771e
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474508"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433238"
 ---
-# <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Punkt, dwuliniowa Trilinear i anizotropowej tekstury filtrowania wariantów
+# <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Warianty punktowego, dwuliniowego, trójliniowego i anizotropowego filtrowania tekstur
 Zastępuje tryb filtrowania na próbników odpowiednie tekstury.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Różne metody pobierania próbek tekstury ma kosztów różnych wydajności i jakości obrazu. W kolejności zwiększenie kosztów — i zwiększyć jakość — tryby filtru to:  
+ Różne metody pobierania próbek tekstury ma koszty wydajności i jakości obrazu. W celu zwiększenia kosztów — oraz zwiększyć jakość wizualną — są tryby filtrowania:  
   
-1.  Polecenie filtrowania (jakość najniższych, najgorszych visual)  
+1.  Polecenie Filtrowanie (jakość najniższy, najgorzej visual)  
   
-2.  Filtrowanie dwuliniowa  
+2.  Warianty punktowego filtrowania  
   
-3.  Filtrowanie trilinear  
+3.  Filtrowanie trójliniowego  
   
-4.  Anizotropowej filtrowania (jakość najdroższych, najlepiej visual)  
+4.  Anizotropowego filtrowania (jakość najbardziej kosztowne, najlepiej visual)  
   
- Jeśli koszt wydajności każdego wariantu jest znacząca lub zwiększa się wraz z bardziej intensywnie tryby filtrowania, należy porównać koszt przed jego zwiększona jakość. Na podstawie oceny, może akceptować koszty dodatkowe zwiększyć jakość lub może zaakceptować zmniejszyć visual jakości do osiągnięcia wyższej szybkość klatek lub odzyskiwaniu wydajność, których można użyć w inny sposób.  
+ Jeśli spadek wydajności przy każdym wariant jest znaczący, zwiększa się wraz z intensywnie korzystających z innych trybów filtrowania można porównać jego kosztów względem jego zwiększona jakość. Oparte na swoją ocenę, można przyjąć koszty dodatkowej wydajności, aby zwiększyć jakość wizualną lub można przyjąć zmniejszyła się jakość wizualną, w celu uzyskania większej szybkości odtwarzania lub odzyskać wydajności używanego w inny sposób.  
   
- Jeśli okaże się, że koszt wydajności jest niewielka lub stałą niezależnie od tego, tryb filtrowania — na przykład, jeśli procesora GPU, który docelowych zawiera wiele przepustowość programu do cieniowania przepływności i pamięci — należy rozważyć użycie filtrowania anizotropowej do osiągnięcia najlepsze obrazu jakość w aplikacji.  
+ Jeśli okaże się, że spadek wydajności jest niewielki lub stały niezależnie od tego trybu filtrowania — na przykład w przypadku, gdy procesora GPU, który zostaną objęci zawiera licznych przepustowości programu do cieniowania przepływności i pamięci, należy rozważyć użycie filtrowanie anizotropowe, aby osiągnąć najlepsze obrazu jakość w swojej aplikacji.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wariantów zastąpienie stanów przykłady na wywołania `ID3D11DeviceContext::PSSetSamplers` w tryb filtru próbnika dostarczony do aplikacji czyli jeden z nich:  
+ Warianty te zastąpienia stany próbkowania na wywołania `ID3D11DeviceContext::PSSetSamplers` w tryb filtru próbnika aplikacji — pod warunkiem czyli jeden z nich:  
   
 -   `D3D11_FILTER_MIN_MAG_MIP_POINT`  
   
@@ -56,17 +56,17 @@ Zastępuje tryb filtrowania na próbników odpowiednie tekstury.
   
 -   `D3D11_FILTER_ANISOTROPIC`  
   
- W **filtrowania tekstury punktu** variant, tryb filtru dostarczony do aplikacji jest zastępowany `D3D11_FILTER_MIN_MAG_MIP_POINT`; na liście **dwuliniowa filtrowania tekstury** variant, zostaje zastąpiony `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; i w **Trilinear filtrowania tekstury** variant, zostaje zastąpiony `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+ W **filtrowania tekstur punktu** typu variant, tryb filtru dostarczane do aplikacji jest zastępowany `D3D11_FILTER_MIN_MAG_MIP_POINT`; w **warianty punktowego filtrowania tekstur** typu variant, zostaje zastąpiony `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; a następnie w **Trójliniowego filtrowania tekstur** typu variant, zostaje zastąpiony `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
- W **anizotropowych filtrowania tekstury** variant, tryb filtru dostarczony do aplikacji jest zastępowany `D3D11_FILTER_ANISOTROPIC`, a Anisotropy maksymalna jest ustawiona na 16.  
+ W **Anizotropowego filtrowania tekstur** typu variant, tryb filtru dostarczane do aplikacji jest zastępowany `D3D11_FILTER_ANISOTROPIC`, a Anisotropy maksymalna jest ustawiona na 16.  
   
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia  
- W Direct3D poziom funkcji 9.1 określa maksymalny anisotropy x 2. Ponieważ **anizotropowej filtrowania tekstury** variant próbuje użyć wyłącznie 16 x anisotropy, odtwarzania kończy się niepowodzeniem, gdy analiza ramek jest uruchamiana na urządzeniu 9.1 funkcji na poziomie. Nowoczesne urządzenia, których dotyczy to ograniczenie obejmują tablety Surface RT i Windows 2 powierzchni opartego na architekturze ARM. Starszych procesorów graficznych, które może nadal znajdować się w niektórych komputerów może mieć wpływ, ale są powszechnie uznawane za przestarzałe i są coraz bardziej rzadko.  
+ W interfejsie Direct3D poziom funkcji 9.1 określa maksymalny anisotropy 2 x. Ponieważ **Anizotropowego filtrowania tekstur** wariant odwołuje się do 16 x anisotropy wyłącznie, odtwarzanie zakończy się niepowodzeniem, gdy analiza klatek jest uruchamiana na urządzeniu 9.1 poziomu funkcji. Współczesne urządzeń, których dotyczy to ograniczenie obejmują tabletów Surface RT i Windows 2 powierzchni oparte na ARM. Starsze procesory GPU może nadal można je znaleźć w niektórych komputerów może mieć wpływ, ale są powszechnie uznawane za przestarzałe i są coraz bardziej rzadko.  
   
 ## <a name="example"></a>Przykład  
- **Filtrowania tekstury punktu** wariant można odtworzyć za pomocą kodu w następujący sposób:  
+ **Filtrowania tekstur punktu** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;  
   
 // ... other sampler description setup ...  
@@ -78,9 +78,9 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Przykład  
- **Dwuliniowa filtrowania tekstury** wariant można odtworzyć za pomocą kodu w następujący sposób:  
+ **Warianty punktowego filtrowania tekstur** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -92,9 +92,9 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Przykład  
- **Trilinear filtrowania tekstury** wariant można odtworzyć za pomocą kodu w następujący sposób:  
+ **Trójliniowego filtrowania tekstur** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -106,9 +106,9 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Przykład  
- **Anizotropowej filtrowania tekstury** wariant można odtworzyć za pomocą kodu w następujący sposób:  
+ **Anizotropowego filtrowania tekstur** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  

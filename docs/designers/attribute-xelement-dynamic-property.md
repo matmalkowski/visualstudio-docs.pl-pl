@@ -1,5 +1,5 @@
 ---
-title: Atrybut (właściwość klasy XElement dynamiczny)
+title: Atrybut (właściwość dynamiczna XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac173785804ce2ed2874b9628c68d3ab78be6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: caacdd787f1765721d281db885364aafc36c5183
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923268"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890012"
 ---
-# <a name="attribute-xelement-dynamic-property"></a>Atrybut (właściwość klasy XElement dynamiczny)
+# <a name="attribute-xelement-dynamic-property"></a>Atrybut (właściwość dynamiczna XElement)
 
-Pobiera indeksatora używane do pobierania wystąpienie atrybutu odpowiadający określonej nazwie rozwinięte.
+Pobiera indeksatora używane do pobierania wystąpienia atrybutu, który odpowiada określony rozwiniętej nazwy.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```xaml
 elem.Attribute[{namespaceName}attribName]
 ```
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
 
-Indeksatora typu `XAttribute Item(String expandedName)`. Ten indeksator ma rozwiniętą nazwą określonego atrybutu i zwraca odpowiednie <xref:System.Xml.Linq.XAttribute>, lub `null` Jeśli nie istnieje atrybut o określonej nazwie.
+Indeksator typu `XAttribute Item(String expandedName)`. Ten indeksator rozwiniętą nazwę określonego atrybutu przyjmuje i zwraca odpowiedni <xref:System.Xml.Linq.XAttribute>, lub `null` Jeśli istnieje atrybut o określonej nazwie.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta właściwość jest odpowiednikiem <xref:System.Xml.Linq.XElement.Attribute%2A> metody <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy.
+Ta właściwość jest równoważna <xref:System.Xml.Linq.XElement.Attribute%2A> metody <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy.
 
 ## <a name="see-also"></a>Zobacz także
 

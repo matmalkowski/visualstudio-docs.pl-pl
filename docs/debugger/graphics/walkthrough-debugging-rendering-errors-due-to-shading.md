@@ -10,87 +10,87 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b03a8f88c5daa421a3d6a10870b8d66b209402
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 62e64634d968e391b0414b55a5220c97e181d456
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480049"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433415"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Wskazówki: debugowanie błędów renderowania spowodowanych cieniowaniem
-W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do sprawdzania, czy obiekt, który jest niepoprawnie pokolorowane z powodu błędu programu do cieniowania.  
+W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do zbadania obiekt, który jest niepoprawnie kolorowe z powodu usterki programu do cieniowania.  
   
- W tym przewodniku pokazano, jak:  
+ W tym instruktażu przedstawiono sposób:  
   
--   Sprawdź dokument dziennika grafiki, aby zidentyfikować pikseli, które zawierają problem.  
+-   Sprawdź dokument dziennika grafiki, aby zidentyfikować pikseli, które pokazują problem.  
   
--   Użyj **Historia pikseli grafiki** okno, aby lepiej sprawdzić stan pikseli.  
+-   Użyj **Historia pikseli grafiki** okna, aby dokładniej zbadać stan pikseli.  
   
--   Użyj **debuger HLSL** do sprawdzenia programów do cieniowania pikseli i wierzchołków.  
+-   Użyj **Debuger języka HLSL** do zbadania cieniowania pikseli i wierzchołka.  
   
 ## <a name="scenario"></a>Scenariusz  
- Niepoprawne kolorowanie na obiekty najczęściej występuje po cieniowania wierzchołków przekazuje piksel programu do cieniowania nieprawidłowe lub niekompletne informacje.  
+ Niepoprawne kolorowanie na obiektach często występuje po program do cieniowania wierzchołków przekazuje piksel niepoprawne lub niepełne informacje programu do cieniowania.  
   
- W tym scenariuszu użytkownik niedawno dodał obiektu do aplikacji, oraz nowe wierzchołka i Przekształć obiekt i nadaj mu unikatowy wygląd programów do cieniowania pikseli. Po uruchomieniu aplikacji podczas testu, obiekt jest renderowany w kolorze czarnym stałe. Przy użyciu diagnostyki grafiki, przechwytywania problem do dziennika grafiki, aby umożliwić debugowanie aplikacji. Problem wygląda następująco w aplikacji:  
+ W tym scenariuszu ostatnio dodane do Twojej aplikacji obiektu. Dodano także nowy wierzchołek i programów do cieniowania pikseli, Przekształć obiekt i nadaj mu unikatowego wyglądu. Po uruchomieniu aplikacji podczas testu, obiekt jest renderowany w stałych czarny. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki tak, aby można było debugować aplikację. Ten problem będzie wyglądać następująco w aplikacji:  
   
- ![Obiekt jest odwzorowywany z nieprawidłowych kolorów. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
+ ![Obiekt jest renderowany przy użyciu nieprawidłowych kolorów. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
   
 ## <a name="investigation"></a>Badanie  
- Za pomocą narzędzia diagnostyki grafiki, można załadować dokument dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.  
+ Korzystając z narzędzi programu Graphics Diagnostics, należy załadować dokument dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby sprawdzić ramkę w dzienniku grafiki  
+   
+1.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załaduj dziennik grafiki zawierający ramkę, która zawiera Brak modelu. Nowe okno dokumentu dziennika grafiki pojawia się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W górnej części tego okna jest dane wyjściowe docelowy renderowania zaznaczonej klatki. W dolnej części jest **lista ramek**, powoduje wyświetlenie jako miniaturę każdej uchwyconej klatki.  
   
-1.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załadować dziennika grafiki, który zawiera ramkę, która wykazuje Brak modelu. Nowe okno Dokument dziennika grafiki pojawia się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W górnej części tego okna jest renderowanie danych wyjściowych zaznaczonej ramki. W dolnej części jest **listy ramek**, który będzie wyświetlany jako obraz miniatury każdego przechwyconej ramce.  
+2.  W **lista ramek**, zaznacz klatkę, w której ten obiekt nie jest poprawną wygląd. Obiektu docelowego renderowania jest aktualizowana, aby odzwierciedlić wybraną ramkę. W tym scenariuszu dziennika grafiki w oknie dokumentu wygląda następująco:  
   
-2.  W **listy ramek**, wybierz obiekt nie ma poprawny wygląd ramki. Obiektu docelowego renderowania jest aktualizowana w celu odzwierciedlenia zaznaczonej ramki. W tym scenariuszu grafiki dziennika dokumentu okno wygląda następująco:  
+     ![Dokument dziennika w grafiki w programie Visual Studio. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
   
-     ![Grafika Rejestruj dokument w programie Visual Studio. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
+ Po zaznaczeniu klatki, która demonstruje problem, można użyć **Historia pikseli grafiki** okna do zdiagnozowania go. **Historia pikseli grafiki** okno pokazuje podstawowych, które może wywrzeć wpływ na określonych pikseli, ich programów do cieniowania i co ich wpływu na obiektu docelowego renderowania były w porządku chronologicznym.  
   
- Po zaznaczeniu ramki demonstrujący problem, można użyć **Historia pikseli grafiki** okno, aby zdiagnozować go. **Historia pikseli grafiki** okno zawiera podstawowych, które może wywrzeć wpływ na określonych pikseli, ich programów do cieniowania i co ich wpływu na obiektu docelowego renderowania były w kolejności chronologicznej.  
+#### <a name="to-examine-a-pixel"></a>Aby zbadać piksel  
   
-#### <a name="to-examine-a-pixel"></a>Aby sprawdzić piksel  
+1.  Otwórz **Historia pikseli grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **historii pikseli**.  
   
-1.  Otwórz **Historia pikseli grafiki** okna. Na **diagnostyki grafiki** narzędzi wybierz **historii pikseli**.  
+2.  Wybierz piksel do sprawdzenia. W oknie dokumentu dziennika grafiki wybierz jedną z pikseli na obiekt, który jest niepoprawnie pokolorowane:  
   
-2.  Wybierz piksel do sprawdzenia. W oknie Dokument dziennika grafiki wybierz jedną z pikseli na obiekt, który jest niepoprawnie pokolorowane:  
+     ![Wybieranie piksel Wyświetla informacje na temat jego historię. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
-     ![Wybranie piksel powoduje wyświetlenie informacji o jego historii. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
-  
-     **Historia pikseli grafiki** okna jest aktualizowana w celu odzwierciedlenia wybranego piksela. W tym scenariuszu **Historia pikseli grafiki** okno wygląda następująco:  
+     **Historia pikseli grafiki** okno zostanie zaktualizowany w celu odzwierciedlenia wybrany piksel. W tym scenariuszu **Historia pikseli grafiki** okna wygląda następująco:  
   
      ![Historia pikseli zawiera jedno zdarzenie DrawIndexed. ] (media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Zauważ, że wynik cieniowania pikseli jest całkowicie nieprzezroczyste czarne (0, 0, 0, 1), a **połączenia danych wyjściowych** połączone z tym **Wstecz** kolor pikseli w taki sposób, który **wynik** jest również całkowicie nieprzezroczyste czarny.  
+     Zauważ, że wynik do cieniowania pikseli jest całkowicie nieprzezroczysty czarny (0, 0, 0, 1), a **scalanie danych wyjściowych** połączone ten program do cieniowania pikseli z **Wstecz** kolor piksela w taki sposób, który  **Wynik** jest również całkowicie nieprzezroczysty czarny.  
   
- Po zbadać pikseli, który jest niepoprawnie pokolorowane i wykryć, czy dane wyjściowe programu do cieniowania pikseli nie jest oczekiwanym kolorów, można użyć debuger HLSL do badania programu do cieniowania pikseli i dowiedzieć się, co się stało z kolor obiektu. Można użyć debuger HLSL sprawdzać stan HLSL zmienne w czasie wykonywania kroków kodu HLSL i ustaw punkty przerwania, aby zdiagnozować problem.  
+ Po zbadać pikseli, który jest niepoprawnie kolorowe i odnajdywać dane wyjściowe programu do cieniowania pikseli nie jest oczekiwanym kolor, można użyć debugera HLSL do badania program do cieniowania pikseli i Dowiedz się, co się stało z kolor obiektu. Możesz za pomocą debugera HLSL przeanalizować stan zmiennych HLSL w czasie wykonywania, krokowe kodu języka HLSL i ustawić punkty przerwania, aby pomóc w diagnozowaniu problemu.  
   
-#### <a name="to-examine-the-pixel-shader"></a>Aby sprawdzić programu do cieniowania pikseli  
+#### <a name="to-examine-the-pixel-shader"></a>Aby sprawdzić program do cieniowania pikseli  
   
-1.  Rozpocznij debugowanie programu do cieniowania pikseli. W **Historia pikseli grafiki** okna, w obszarze obiektu na pierwotny, obok pozycji **programu do cieniowania pikseli**, wybierz **Rozpocznij debugowanie** przycisku.  
+1.  Rozpocznij debugowanie programu do cieniowania pikseli. W **Historia pikseli grafiki** obok okna w obiekcie użytkownika typy pierwotne **programu do cieniowania pikseli**, wybierz **Rozpocznij debugowanie** przycisku.  
   
-2.  W tym scenariuszu ponieważ program do cieniowania pikseli po prostu przekazuje w kolor za pośrednictwem programu do cieniowania wierzchołków jest łatwo sprawdzić, czy program do cieniowania pikseli nie jest źródłem problemu.  
+2.  W tym scenariuszu ponieważ program do cieniowania pikseli po prostu przekazuje w kolor cieniowania wierzchołków to ułatwia zaobserwować, że program do cieniowania pikseli nie jest źródłem problemu.  
   
-3.  Umieść wskaźnik na `input.color`. Zwróć uwagę, że jego wartość wynosi czarne pełni nieprzezroczyste (0, 0, 0, 1).  
+3.  Umieść wskaźnik myszy na `input.color`. Należy zauważyć, że jego wartość jest całkowicie nieprzezroczysty czarny (0, 0, 0, 1).  
   
-     ![Element członkowski "color", "danych wejściowych" jest czarny. ] (media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")  
+     !["Pole color" członek "input" jest czarny. ] (media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")  
   
-     W tym scenariuszu badanie ujawnia nieprawidłowy kolor jest prawdopodobnie wynik do cieniowania wierzchołków, która nie zawiera informacji prawidłowy kolor dla programu do cieniowania pikseli do działania na.  
+     W tym scenariuszu badania wykaże, że niepoprawny kolor jest prawdopodobnie wynik cieniowania wierzchołków, który nie zawiera informacji prawy kolor dla programu do cieniowania pikseli do wykonywania operacji.  
   
- Po określeniu, czy program do cieniowania wierzchołków prawdopodobnie nie dostarcza potrzebnych informacji do programu do cieniowania pikseli, następnym krokiem jest zbadanie programu do cieniowania wierzchołków.  
+ Po określeniu, czy program do cieniowania wierzchołków prawdopodobnie nie dostarcza właściwe informacje programu do cieniowania pikseli, następnym krokiem jest Sprawdź program do cieniowania wierzchołków.  
   
-#### <a name="to-examine-the-vertex-shader"></a>Aby sprawdzić programu do cieniowania wierzchołków  
+#### <a name="to-examine-the-vertex-shader"></a>Aby sprawdzić program do cieniowania wierzchołków  
   
-1.  Rozpocznij debugowanie programu do cieniowania wierzchołków. W **Historia pikseli grafiki** okna, w obszarze obiektu na pierwotny, obok pozycji **programu do cieniowania wierzchołków**, wybierz **Rozpocznij debugowanie** przycisku.  
+1.  Rozpocznij debugowanie programu do cieniowania wierzchołków. W **Historia pikseli grafiki** obok okna w obiekcie użytkownika typy pierwotne **program do cieniowania wierzchołków**, wybierz **Rozpocznij debugowanie** przycisku.  
   
-2.  Zlokalizuj strukturę wyjściową do cieniowania wierzchołków — jest to dane wejściowe programu do cieniowania pikseli. W tym scenariuszu nazwa ta struktura jest `output`. Badanie kodu programu do cieniowania wierzchołków i zwróć uwagę, że `color` członkiem `output` struktury została jawnie ustawiona na kolor czarny pełni nieprzezroczyste, być może w związku z tym osoby jest debugowanie działań.  
+2.  Znajdź moduł cieniujący wierzchołków strukturę wyjściową — jest to dane wejściowe programu do cieniowania pikseli. W tym scenariuszu jest nazwa tej struktury `output`. Poszukaj w kodzie programu do cieniowania wierzchołków i zwróć uwagę, że `color` członkiem `output` struktura została jawnie ustawiona na całkowicie nieprzezroczysty czarny, prawdopodobnie w wyniku osoby trwa debugowanie wysiłków.  
   
-3.  Upewnij się, że Członkowskie kolor nigdy nie został skopiowany z strukturze wejściowej. Ponieważ wartość `output.color` jest ustawiona na kolor czarny pełni nieprzezroczyste tuż przed `output` struktury jest zwracany, jest dobrym pomysłem jest upewnij się, że wartość `output` nie został prawidłowo zainicjowany w poprzednim wierszu. Krok za pomocą kodu programu do cieniowania wierzchołków aż do wiersza, który ustawia `output.color` na kolor czarny podczas odtwarzania wartość `output.color`. Zwróć uwagę, że wartość `output.color` nie została zainicjowana, dopóki nie jest ustawiona na kolor czarny. Potwierdza to, że wiersza kodu, który ustawia `output.color` do czarne powinny być zmodyfikowane, a nie usunięte.  
+3.  Upewnij się, czy członek kolor nigdy nie jest kopiowany z strukturze wejściowej. Ponieważ wartość `output.color` jest ustawiony na całkowicie nieprzezroczysty czarny tuż przed `output` struktury jest zwracany, to dobry pomysł, aby upewnić się, że wartość `output` nie został prawidłowo zainicjowany w poprzednim wierszu. Przechodź przez kod programu do cieniowania wierzchołków aż do wiersza, który ustawia `output.color` czarny podczas oglądania wartość `output.color`. Należy zauważyć, że wartość `output.color` nie została zainicjowana, dopóki nie jest ustawiona na czarny. Będzie to potwierdzenie, że wiersza kodu, który ustawia `output.color` na czarny powinny być zmodyfikowane, a nie usunięte.  
   
      ![Wartość "output.color" jest czarny. ] (media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   
- Po określeniu, czy jest przyczyny tego problemu renderowania, że programu do cieniowania wierzchołków nie zawiera wartości prawidłowy kolor programu do cieniowania pikseli, można użyć tych informacji, aby rozwiązać ten problem. W tym scenariuszu możesz go rozwiązać, zmieniając następujący kod w programu do cieniowania wierzchołków  
+ Po ustaleniu, czy przyczyny tego problemu renderowania jest, że program do cieniowania wierzchołków nie dostarcza wartość prawidłowy kolor programu do cieniowania pikseli, można użyć tych informacji, aby rozwiązać ten problem. W tym scenariuszu możesz ją naprawić, zmieniając następujący kod w program do cieniowania wierzchołków  
   
-```  
+```hlsl  
 output.color = float3(0.0f, 0.0f, 0.0f);  
 ```  
   
@@ -100,10 +100,10 @@ output.color = float3(0.0f, 0.0f, 0.0f);
 output.color = input.color;  
 ```  
   
- Ten kod po prostu przekazuje kolor wierzchołka z obiektu wierzchołków nie mają być modyfikowane — bardziej złożonych programów do cieniowania wierzchołków można zmodyfikować kolor przed przekazaniem go za pośrednictwem. Kod programu do cieniowania wierzchołków poprawiony powinien wyglądać następująco:  
+ Ten kod po prostu przekazuje kolor wierzchołka z obiektu wierzchołków w niezmienionej postaci — bardziej złożonych programów do cieniowania wierzchołków można zmodyfikować kolor przed przekazaniem go za pośrednictwem. Kod programu do cieniowania wierzchołków poprawiony powinien wyglądać następująco:  
   
  ![Kod programu do cieniowania wierzchołków poprawiony. ] (media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")  
   
- Po rozwiązaniu kod skompilować go ponownie i uruchomić aplikację ponownie, aby dowiedzieć się, że rozwiązanie jest problem renderowania.  
+ Po rozwiązaniu kodu skompilować go ponownie, a następnie uruchom aplikację ponownie, aby wykryć, że rozwiązanie jest problem z renderowaniem.  
   
- ![Obiekt jest odwzorowywany z poprawną kolorów. ] (media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![Obiekt jest renderowany poprawne kolorów. ] (media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

@@ -1,5 +1,5 @@
 ---
-title: Narzędzie wiersza polecenia przechwytywania | Dokumentacja firmy Microsoft
+title: Narzędzie wiersza polecenia do przechwytywania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2424fdcb36e9157c358ab510849a4dbb709d7e62
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4e083a0db3fbe85b793f9190b35112fd0aeb6a4b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057703"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433512"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
-DXCap.exe to narzędzie wiersza polecenia do przechwytywania diagnostyki grafiki i odtwarzania. Obsługuje ona Direct3D 10 do Direct3D 12 na wszystkich poziomach funkcji.  
+DXCap.exe jest narzędziem wiersza polecenia do przechwytywania diagnostyki grafiki i odtwarzania. Obsługuje ona Direct3D 10 za pośrednictwem Direct3D 12 na wszystkich poziomach funkcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,240 +34,240 @@ DXCap.exe -info
   
 #### <a name="parameters"></a>Parametry  
  `-file``filename`  
- W trybie przechwytywania (`-c`), `filename` Określa nazwę pliku dziennika grafiki zapisaną informacji graficznych. Jeśli `filename` nie zostanie określony, informacji graficznych jest rejestrowany w pliku o nazwie `<appname>-<date>-<time>.vsglog` domyślnie.  
+ W obszarze tryb przechwytywania (`-c`), `filename` Określa nazwę pliku dziennika grafiki, które informacje graficzne są rejestrowane w celu. Jeśli `filename` nie jest określona, informacje graficzne są rejestrowane w pliku o nazwie `<appname>-<date>-<time>.vsglog` domyślnie.  
   
- W obszarze sprawdzania poprawności (-v) trybie `filename` Określa nazwę pliku dziennika grafiki do sprawdzenia poprawności. Jeśli `filename` nie zostanie określony, dziennik grafiki, który ostatniego sprawdzenia poprawności jest używane ponownie.  
+ W ramach sprawdzania poprawności (-v) trybie `filename` Określa nazwę pliku dziennika grafiki, który ma zostać zweryfikowana. Jeśli `filename` nie jest określony, dziennik grafiki, która ostatniego sprawdzenia poprawności jest ponownie używany.  
   
  `-frame``frames`  
- W trybie przechwytywania `frames` określa ramek, które mają być przechwytywane. Pierwsza ramka jest 1. Można określić wiele ramek przy użyciu przecinków i zakresów. Na przykład jeśli `frames` jest `2, 5, 7-9, 15`, następnie ramki `2`, `5`, `7`, `8`, `9`, i `15` są przechwytywane.  
+ W obszarze tryb przechwytywania `frames` określa ramek, które mają być przechwytywane. Pierwsza ramka to 1. Za pomocą przecinków i zakresów, można określić kilka ramek. Na przykład jeśli `frames` jest `2, 5, 7-9, 15`, następnie ramek `2`, `5`, `7`, `8`, `9`, i `15` są przechwytywane.  
 
 > [!TIP]
-> Użyj `-frame` `manual` do określenia, że ramki zostanie ręcznie przechwycone przez naciśnięcie klawisza Print Screen. Po uruchomieniu aplikacji; można przechwycić ramki Aby zatrzymać przechwytywanie ramek, wróć do interfejsu wiersza polecenia i naciśnij klawisz enter.  
+> Użyj `-frame` `manual` do określenia, że ramek zostaną przechwycone ręcznie, naciskając klawisz Print Screen. Ramki mogą być przechwytywane, po uruchomieniu aplikacji; Aby zatrzymać przechwytywanie ramek, wróć do interfejsu wiersza polecenia, a następnie naciśnij klawisz enter.  
   
  `-period``periods`  
- W trybie przechwytywania `periods` określa zakres czasu, w sekundach, w których chcesz przechwytywać ramki. Można określić wiele okresów, przy użyciu przecinków i zakresów. Na przykład jeśli `periods` jest `2.1-5, 7.0-9.3`, a następnie ramek, które mają być renderowane między `2.1` i `5` sekund, a między`7` i `9.3` sekund są przechwytywane.  
+ W obszarze tryb przechwytywania `periods` Określa zakresy czasu, w ciągu kilku sekund, podczas których chcesz przechwycić ramki. Za pomocą przecinków i zakresów, można określić kilka okresów. Na przykład jeśli `periods` jest `2.1-5, 7.0-9.3`, a następnie ramek, które mają być renderowane między `2.1` i `5` sekund oraz między`7` i `9.3` są przechwytywane w ciągu kilku sekund.  
   
  `-c` `app` [`args...`]  
- Przechwyć tryb. W trybie przechwytywania `app` Określa nazwę aplikacji, którą chcesz przechwytywanie informacji graficznych; `args...` określa dodatkowe parametry wiersza polecenia do danej aplikacji.  
+ Przechwyć trybu. W obszarze tryb przechwytywania `app` Określa nazwę aplikacji, którą chcesz przechwytywać informacje graficzne z; `args...` określa dodatkowe parametry wiersza polecenia do tej aplikacji.  
   
  `-p` [`filename`]  
- Tryb odtwarzania (`-p`). W trybie odtwarzania `filename` Określa nazwę pliku dziennika grafiki, aby go odtworzyć. Jeśli `filename` nie zostanie określony, dziennik grafiki, który został ostatnio odtwarzane jest używane ponownie.  
+ Tryb odtwarzania (`-p`). W trybie odtwarzania `filename` Określa nazwę pliku dziennika grafiki do odtworzenia. Jeśli `filename` nie jest określony, dziennik grafiki, który został ostatnio odtwarzany jest ponownie używany.  
   
  `-debug`  
- W trybie odtwarzania `-debug` Określa, że odtwarzania powinny być wykonywane z warstwą debugowania Direct3D włączone.  
+ W trybie odtwarzania `-debug` określa odtwarzania tego powinna być odtworzona z włączoną warstwę debugowanie Direct3D.  
   
  `-warp`  
- W trybie odtwarzania `-warp` Określa, że odtwarzania powinny być wykonywane przy użyciu renderowanie programowe WARP.  
+ W trybie odtwarzania `-warp` określa można odtworzyć tego odtwarzanie przy użyciu modułu renderowania oprogramowania WARP.  
   
  `-hw`  
- W trybie odtwarzania `-hw` Określa, że odtwarzania powinny być wykonywane przy użyciu sprzętu procesora GPU.  
+ W trybie odtwarzania `-hw` określa można odtworzyć tego odtwarzania za pomocą sprzętowego procesora GPU.  
   
  `-config`  
- W trybie odtwarzania `-config` Wyświetla informacje o maszynie użytej do przechwytywania grafiki pliku dziennika, jeśli te informacje został zapisany w dzienniku.  
+ W trybie odtwarzania `-config` Wyświetla wszelkie informacje o komputerze który został użyty do przechwytywania plik dziennika grafiki.  
   
  `-rawmode`  
- W trybie odtwarzania `-rawmode` Określa, że odtwarzania powinny być wykonywane bez modyfikacji zarejestrowane zdarzenia. W normalnych warunkach trybie odtwarzania wprowadzać drobne zmiany odtwarzania do uproszczenia, debugowanie i przyspieszenia odtwarzania. Na przykład może zasymulować dane wyjściowe łańcucha wymiany, a nie wykonywania poleceń łańcucha wymiany. Zazwyczaj nie jest to problem, ale może być konieczne odtwarzania w taki sposób, który jest bardziej dobrej wierze, aby zarejestrowane zdarzenia; na przykład służy tę opcję, aby przywrócić pełnego ekranu renderowania zachowanie aplikacji, która została przechwycona podczas pracy w trybie pełnoekranowym.  
+ W trybie odtwarzania `-rawmode` Określa, że odtwarzania powinno być wykonywane bez modyfikacji zarejestrowane zdarzenia. W ramach normalnych operacji trybie odtwarzania wprowadzać niewielkie zmiany odtwarzanie do uproszczenia, debugowania i przyspieszenia odtwarzania. Na przykład może zasymulować, dane wyjściowe łańcucha wymiany, a nie wykonywania poleceń w ramach łańcucha wymiany. Zazwyczaj ten odtwarzania nie stanowi to problemu, ale może być konieczne odtwarzania w sposób, który jest bardziej wierne zarejestrowane zdarzenia. Na przykład służy tę opcję, aby przywrócić zachowanie renderowania pełnego ekranu do aplikacji, która została przechwycona w trybie pełnoekranowym.  
   
  `-toXML` [`xml_filename`]  
- W trybie odtwarzania `xml_filename` Określa nazwę pliku, w którym zapisywana jest reprezentację XML odtwarzania. Jeśli `xml_filename` nie zostanie określony, reprezentacja w formacie XML są zapisywane w pliku o nazwie taki sam jak plik jest odtwarzany, ale podany `.xml` rozszerzenia.  
+ W trybie odtwarzania `xml_filename` Określa nazwę pliku, w którym zapisywana jest reprezentacja XML odtwarzania. Jeśli `xml_filename` nie zostanie określony, reprezentacja XML są zapisywane w pliku o nazwie taki sam jak plik jest odtwarzany, ale biorąc pod uwagę `.xml` rozszerzenia.  
   
  `-v`  
- Tryb walidacji. W trybie sprawdzania poprawności ramki przechwycone są odtwarzane na sprzęt i WARP, a ich wyniki są porównywane przy użyciu funkcji porównanie obrazu. Ta funkcja umożliwia szybką identyfikację problemów sterowników, które wpływają na Twoje renderowania.  
+ Tryb weryfikacji. W trybie weryfikacji przechwyconych klatek jest odtwarzany na sprzęt i WARP, a ich wyniki są porównywane za pomocą funkcji porównywania obrazu. Ta funkcja umożliwia szybkie identyfikowanie problemów sterowników, które mają wpływ na Twoje renderowania.  
   
  `-examine``events`  
- W obszarze tryb walidacji `events` określa zestaw zdarzeń grafiki, którego natychmiastowego wyniki są porównywane. Na przykład `-examine present,draw,copy,clear` ogranicza porównanie z tylko zdarzenia należące do tych kategorii.  
+ W trybie weryfikacji `events` określa zestaw zdarzenia grafiki, którego wyniki wprowadzenia są porównywane. Na przykład `-examine present,draw,copy,clear` ogranicza porównanie z tylko zdarzenia należące do tych kategorii.  
   
 > [!TIP]
->  Firma Microsoft zaleca, począwszy od `-examine present,draw,copy,clear` ponieważ spowoduje to ujawnić większości problemów, ale trwać znacznie krócej niż szerszy zestaw zdarzeń. Jeśli to konieczne, można określić zestaw większy lub innych zdarzeń, aby sprawdzić te zdarzenia i ujawnić inne rodzaje problemów.  
+>  Zalecamy rozpoczęcie od `-examine present,draw,copy,clear` ponieważ spowoduje to ujawnić większości problemów, ale trwać znacznie krócej niż szerszy zestaw zdarzeń. Jeśli to konieczne, można określić zestaw większy lub różnych zdarzeń, aby zweryfikować te zdarzenia i wyświetlić inne rodzaje problemów.  
   
  `-haltonfail`  
- W obszarze tryb walidacji `-haltonfail` zatrzymuje weryfikacji po wykryciu różnice między sprzętu i renderowania WARP. Sprawdzanie poprawności wznawia działanie po naciśnięciu klawisza.  
+ W trybie weryfikacji `-haltonfail` zatrzymuje sprawdzania poprawności po wykryciu różnic między sprzętem i renderowanie WARP. Sprawdzanie poprawności zostanie wznowione po naciśnięciu klawisza.  
   
  `-exitonfail`  
- W obszarze tryb walidacji `-exitonfail` kończy działanie sprawdzania poprawności, natychmiast po wykryciu różnice między sprzętu i renderowania WARP. Gdy program kończy się w ten sposób, zwraca `0` środowiska; w przeciwnym razie zwraca `1`.  
+ W trybie weryfikacji `-exitonfail` kończy działanie sprawdzania poprawności natychmiast po wykryciu różnic między sprzętem i renderowanie WARP. Gdy program jest zamykany w ten sposób, zwraca `0` środowiska; w przeciwnym razie zwraca `1`.  
   
  `-showprogress`  
- W obszarze tryb walidacji `-showprogress` Wyświetla informacje o postępie o sesji sprawdzania poprawności. WARP postęp jest wyświetlany po lewej stronie; sprzęt postęp jest wyświetlany po prawej stronie.  
+ W trybie weryfikacji `-showprogress` Wyświetla informacje o postępie o sesji sprawdzania poprawności. Postęp WARP jest wyświetlany po lewej stronie; postęp sprzętu jest wyświetlany po prawej stronie.  
   
  `-e``search_string`  
- Wylicza aplikacji platformy uniwersalnej systemu Windows, które są zainstalowane. Te informacje można użyć do wykonania wiersza polecenia przechwytywane z aplikacjami platformy uniwersalnej systemu Windows.  
+ Wylicza aplikacje platformy uniwersalnej systemu Windows, które są zainstalowane. Te informacje można użyć do wykonania wiersza polecenia przechwytywania przy użyciu aplikacji platformy uniwersalnej systemu Windows.  
   
  `-info`  
- Wyświetla informacje dotyczące bibliotek DLL maszyny i przechwytywania.  
+ Wyświetla informacje o bibliotece DLL maszyny i przechwytywania.  
   
 ## <a name="remarks"></a>Uwagi  
  DXCap.exe działa w trzech trybów:  
   
- Przechwyć w trybie (-c)  
- Przechwytywanie informacji graficznych w uruchomionej aplikacji i zarejestruj go w pliku dziennika grafiki. Możliwości przechwytywania i format pliku są identyczne z programu Visual Studio.  
+ Tryb przechwytywania (-c)  
+ Przechwytywać informacje graficzne z uruchomionej aplikacji i zapisaniu go w pliku dziennika grafiki. Możliwości przechwytywania i formatu pliku są identyczne z programu Visual Studio.  
   
  Tryb odtwarzania (-p)  
- Odtwarzanie zdarzeń grafiki przechwyconych wcześniej z istniejącego pliku dziennika grafiki. Domyślnie odtwarzania występuje w oknie, nawet wtedy, gdy dziennika grafiki plików przechwyconej z aplikacji pełny ekran. Odtwarzanie występuje w trybie pełnoekranowym tylko podczas logowania grafiki plików przechwyconej z aplikacji fullscreen i `-rawmode` jest określona.  
+ Odtwarzanie wcześniej przechwycone zdarzenia grafiki z istniejącego pliku dziennika grafiki. Domyślnie odtwarzanie odbywa się w oknie, nawet wtedy, gdy dziennika grafiki pliku przechwycone z poziomu aplikacji na pełnym ekranie. Odtwarzanie występuje w trybie pełnoekranowym, tylko gdy dziennika grafiki pliku został przechwycony z aplikacją pełny ekran i `-rawmode` jest określony.  
   
- Tryb walidacji (`-v`)  
- Weryfikuje sposób renderowania odtwarzanie do tyłu ramki przechwycone na sprzęt i WARP, a następnie porównanie ich wyników za pomocą funkcji porównanie obrazu. Ta funkcja umożliwia szybką identyfikację problemów sterowników, które wpływają na Twoje renderowania.  
+ Tryb weryfikacji (`-v`)  
+ Sprawdza poprawność zachowanie renderowania odtwarzania przechwycone ramki na sprzęt i WARP, a następnie porównywanie ich wyników przy użyciu funkcji porównywania obrazu. Ta funkcja umożliwia szybkie identyfikowanie problemów sterowników, które mają wpływ na Twoje renderowania.  
   
- Oprócz tych trybów dxcap.exe wykonuje dwie funkcje, które nie wykonuj przechwytywania lub odtwarzania informacji graficznych.  
+ Oprócz tych trybów dxcap.exe wykonuje dwie funkcje, które nie wykonują przechwytywania i odtwarzania informacji graficznych.  
   
- Funkcja wyliczania (`-e`)  
- Wyświetla szczegółowe informacje o aplikacji platformy uniwersalnej systemu Windows, które są zainstalowane na tym komputerze. Te informacje obejmują nazwę pakietu i identyfikator aplikacji, które identyfikują plik wykonywalny w aplikacji platformy uniwersalnej systemu Windows. Aby przechwytywanie informacji graficznych z aplikacji ze sklepu windows przy użyciu DXCap.exe, należy użyć nazwy pakietu i appid zamiast nazwy pliku wykonywalnego używanego podczas przechwytywania aplikacji komputerowej.  
+ Funkcję wyliczenia (`-e`)  
+ Wyświetla szczegółowe informacje dotyczące aplikacji platformy uniwersalnej systemu Windows, które są zainstalowane na maszynie. Te informacje obejmują nazwę pakietu i identyfikator aplikacji, które identyfikują pliku wykonywalnego w aplikacji platformy uniwersalnej systemu Windows. Aby przechwytywać informacje graficzne z aplikacji do sklepu windows przy użyciu DXCap.exe, należy użyć nazwy pakietu i appid zamiast nazwy pliku wykonywalnego używanego podczas przechwytywania aplikacji klasycznej.  
   
  Informacje o funkcji)`-info)`  
- Przedstawia szczegółowe informacje dotyczące bibliotek DLL maszyny i przechwytywania.  
+ Wyświetla szczegóły dotyczące bibliotek DLL maszyny i przechwytywania.  
   
 ## <a name="examples"></a>Przykłady  
   
-### <a name="capture-graphics-information-from-a-desktop-app"></a>Przechwytywanie informacji graficznych z aplikacji klasycznych  
- Użyj `-c` do określenia aplikacji, z którego mają być przechwytywane informacji graficznych.  
+### <a name="capture-graphics-information-from-a-desktop-app"></a>Przechwytywać informacje graficzne z aplikacji klasycznej  
+ Użyj `-c` określić aplikację, z którego chcesz przechwytywać informacje graficzne.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -c BasicHLSL11.exe  
 ```  
   
- Domyślnie informacji graficznych jest rejestrowany w pliku o nazwie `<appname>-<date>-<time>.vsglog`. Użyj `-file` Aby określić inny plik do rejestrowania się.  
+ Domyślnie informacje graficzne są rejestrowane w pliku o nazwie `<appname>-<date>-<time>.vsglog`. Użyj `-file` można określić inny plik do rejestrowania się.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe  
 ```  
   
- Określ dodatkowe parametry wiersza polecenia do aplikacji, która jest przechwytywanie od, umieszczając je po filename aplikacji.  
+ Wymagają podania dodatkowych parametrów wiersza polecenia do aplikacji, która udało się przechwycić z uwzględniając po aplikacji nazwa_pliku.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- W powyższym przykładzie polecenia przechwytuje informacje dotyczące grafiki z tej wersji programu Internet Explorer podczas wyświetlania strony sieci Web w www.fishgl.com używający interfejsu API WebGL do renderowania zawartości 3-w lokalizacji.  
+ Polecenia w powyższym przykładzie przechwytuje informacje graficzne z wersji klasycznej programu Internet Explorer podczas wyświetlania strony sieci Web, znajduje się w www.fishgl.com korzystającego z interfejsu API WebGL do renderowania zawartości 3D.  
   
 > [!NOTE]
->  Ponieważ argumenty wiersza polecenia, które pojawią się po aplikacji są przekazywane do niego, należy określić argumenty przeznaczonych do DXCap.exe przed użyciem `-c` opcji.  
+>  Ponieważ argumenty wiersza polecenia, które pojawiają się po aplikacji są przekazywane do niego, należy określić argumenty przeznaczonych do DXCap.exe przed rozpoczęciem korzystania z `-c` opcji.  
   
-### <a name="capture-graphics-information-from-a-uwp-app"></a>Przechwytywanie informacji graficznych z aplikacji platformy uniwersalnej systemu Windows.  
- Można przechwycić informacji graficznych z aplikacji platformy uniwersalnej systemu Windows.  
+### <a name="capture-graphics-information-from-a-uwp-app"></a>Przechwytywać informacje graficzne z aplikacji platformy uniwersalnej systemu Windows.  
+ Można przechwytywać informacje graficzne z aplikacji platformy uniwersalnej systemu Windows.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -c Microsof.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps  
 ```  
   
- Przechwytywania z aplikacji platformy uniwersalnej systemu Windows za pomocą DXCap.exe jest podobny do sposobu używania go do przechwycenia z aplikacji klasycznej systemu Windows, ale zamiast tego zidentyfikowania aplikacji komputerowej nazwy, zidentyfikuj aplikacji platformy uniwersalnej systemu Windows, jego nazwa pakietu i nazwę lub identyfikator wewnątrz pliku wykonywalnego, który pakietu, który ma być  Przechwyć z. Aby ułatwić dowiedzieć się, jak zidentyfikować aplikacji platformy uniwersalnej systemu Windows, które są zainstalowane na tym komputerze, należy użyć `-e` opcji DXCap.exe wyliczyć je:  
+ Używanie DXCap.exe do przechwycenia z aplikacją platformy uniwersalnej systemu Windows jest podobne do korzystania z niego do przechwycenia z aplikacji klasycznej w Windows, ale w zamian identyfikowanie aplikacji komputerowej nazwy, możesz zidentyfikować aplikacji platformy uniwersalnej systemu Windows, jego nazwa pakietu i nazwę lub identyfikator wewnątrz pliku wykonywalnego, który pakiet, który ma być  Przechwytywanie z. Aby ułatwić Dowiedz się, jak do identyfikowania aplikacji platformy uniwersalnej systemu Windows, które są zainstalowane na komputerze, należy użyć `-e` opcji z DXCap.exe wyliczanie ich:  
   
-```ms-dos  
+```cmd  
 DXCap.exe -e  
 ```  
   
- Można podać ciąg opcjonalne wyszukiwania ułatwiają znajdowanie aplikacji, którego szukasz. Jeśli podany ciąg wyszukiwania DXCap.exe wylicza aplikacji platformy uniwersalnej systemu Windows, którego nazwa pakietu, nazwa aplikacji lub identyfikatorów aplikacji odpowiada ciąg wyszukiwania. Wyszukiwanie jest rozróżniana wielkość liter.  
+ Możesz podać ciąg opcjonalne wyszukiwania, aby ułatwić znajdowanie aplikacji, którego szukasz. Jeśli zostanie podany ciąg wyszukiwania, DXCap.exe wylicza aplikacji platformy uniwersalnej systemu Windows, których nazwy pakietu, nazwę aplikacji lub identyfikatory aplikacji pasuje do ciągu wyszukiwania. Wyszukiwanie jest rozróżniana wielkość liter.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -e map  
 ```  
   
- Polecenie powyżej wylicza aplikacji platformy uniwersalnej systemu Windows, które odpowiada "map"; Poniżej przedstawiono dane wyjściowe:  
+ Powyższe polecenie wylicza aplikacji platformy uniwersalnej systemu Windows, które odpowiada "mapy"; Oto dane wyjściowe:  
   
  **Pakiet "Microsoft.BingMaps":**  
  **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nazwa: Microsoft.BingMaps**  
- **Wydawca: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S Waszyngton, C = = US**  
+ **Wydawca: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Wersja: 2.1.2914.1734**  
  **Możliwych do uruchomienia aplikacji:**  
  **Identyfikator: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: nie**  
- ** AppSpec (do uruchamiania): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** ostatni wiersz danych wyjściowych dla każdej aplikacji wyliczany wyświetla polecenie umożliwia przechwytywanie informacji graficznych z niego.  
+ **Exe: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe C:\Program**  
+ **IsWWA: Brak**  
+ ** AppSpec (do uruchomienia): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** ostatni wiersz danych wyjściowych dla każdej aplikacji wyliczany zawiera polecenia, można użyć, aby przechwytywać informacje graficzne z niego.  
   
-### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Przechwycić ramki określonych lub ramki między określonym czasie.  
- Użyj `-frame` określić ramek, które mają być przechwytywane przy użyciu przecinków i zakresów:  
+### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Przechwytywanie ramki określonego lub ramki między określonym czasie.  
+ Użyj `-frame` określić ramek, które mają być przechwytywane za pomocą przecinków i zakresów:  
   
-```ms-dos  
+```cmd  
 DXCap.exe -frame 2,5,7-9,15 -c SimpleBezier11.exe  
 ```  
   
- Możesz też użyć `-period` do określenia zestawu przedziałów czasu, w którym mają być przechwytywane ramki. Podane przedziałów czasu w sekundach i można określić wiele zakresów:  
+ Możesz też korzystać z `-period` do określenia zestawu zakresy czasu, podczas której ramki. Zakresy czasu są określane w sekundach i można określić wiele zakresów:  
   
-```ms-dos  
+```cmd  
 DXCap.exe -period 2.1-5, 7.0-9.3 -c SimpleBezier11.exe  
 ```  
   
-### <a name="capture-frames-interactively"></a>Interaktywnie przechwycić ramki.  
- Użyj `-manual` Aby przechwycić ramki interaktywnie. Naciśnij klawisz Enter, aby rozpocząć przechwytywanie, a następnie naciśnij klawisz Enter, aby zatrzymać.  
+### <a name="capture-frames-interactively"></a>Przechwytywanie ramek interaktywnie.  
+ Użyj `-manual` interaktywnie przechwycić ramki. Naciśnij klawisz Enter, aby rozpocząć przechwytywania, a następnie naciśnij klawisz Enter, ponownie, aby zatrzymać.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -manual -c SimpleBezier11.exe  
 ```  
   
-### <a name="play-back-a-graphics-log-file"></a>Odtwarzanie plików dziennika grafiki  
- Użyj `-p` do odtwarzania pliku dziennika grafiki przechwyconych wcześniej.  
+### <a name="play-back-a-graphic-log-file"></a>Odtwarzanie pliku dziennika grafiki  
+ Użyj `-p` do odtwarzania pliku dziennika grafiki przechwyconego wcześniej.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog  
 ```  
   
- Opuść nazwę pliku, aby odtworzyć dziennik grafiki przechwyconej ostatnio.  
+ Opuść nazwę pliku, aby odtworzyć dziennik grafiki, przechwyconą ostatnio.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p  
 ```  
   
 ### <a name="play-back-in-raw-mode"></a>Odtwarzanie w trybie raw  
- Użyj `-rawmode` odtwarzać przechwyconych poleceń, dokładnie tak, jak ich wystąpienia. W obszarze normalne odtwarzanie niektórych poleceń są emulowane, na przykład plik dziennika grafiki przechwytywane z pełnego ekranu aplikacji zostaną odtworzone w oknie; włączono obsługę trybu raw ten sam plik będzie podejmować próby odtwarzanie na pełnym ekranie.  
+ Użyj `-rawmode` do odtwarzania przechwyconych poleceń, dokładnie tak, jak ich wystąpienia. W obszarze normalne odtwarzanie niektórych poleceń są emulowane, na przykład plik dziennika grafiki przechwytywane z aplikacji pełny ekran zostaną odtworzone w oknie; z włączonym trybem raw ten sam plik będzie podejmować próby odtwarzania w trybie pełnoekranowym.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog -rawmode  
 ```  
   
-### <a name="play-back-using-warp-or-a-hardware-device"></a>Odtwórz przy użyciu WARP lub urządzenia sprzętowego  
- Można wymusić odtwarzania obu plik dziennika grafiki przechwycone na urządzenie, aby użyć WARP lub wymusić odtwarzania dziennika przechwycone na WARP do użycia z urządzeniem sprzętowym. Użyj `-warp` prowadzonych ponownie przy użyciu WARP.  
+### <a name="play-back-using-warp-or-a-hardware-device"></a>Odtwórz ponownie za pomocą WARP lub urządzenia sprzętowego  
+ Możesz chcieć wymusić odtwarzania tylnej stronie plik dziennika grafiki, przechwycone na urządzenie sprzętowe, aby użyć WARP lub wymusić odtwarzania dziennika przechwycone na WARP, aby użyć urządzenia sprzętowego. Użyj `-warp` odtwarzanie ponownie za pomocą WARP.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog -warp  
 ```  
   
- Użyj `-hw` prowadzonych ponownie przy użyciu sprzętu.  
+ Użyj `-hw` odtwarzanie ponownie za pomocą sprzętu.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog -hw  
 ```  
   
-### <a name="validate-a-graphics-log-file-against-warp"></a>Sprawdzanie poprawności względem WARP pliku dziennika grafiki  
- W trybie weryfikacji pliku dziennika grafiki odtwarzania na sprzęt i WARP, a ich wyniki są porównywane. Może to pomóc w identyfikacji błędów renderowania, które są spowodowane przez sterownik. -V umożliwia sprawdzanie poprawności poprawne zachowanie grafiki sprzętu przed WARP.  
+### <a name="validate-a-graphics-log-file-against-warp"></a>Sprawdzanie poprawności względem WARP plik dziennika grafiki  
+ W trybie weryfikacji pliku dziennika grafiki jest odtwarzany na sprzęt i WARP, a jego wyniki są porównywane. Może to ułatwić identyfikację błędy renderowania, które są spowodowane przez sterownik. Użyj - v, aby zweryfikować poprawne zachowanie sprzęt graficzny względem WARP.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Aby zmniejszyć ilość porównań, można określić podzestaw poleceń porównać sprawdzanie poprawności i innych poleceń zostaną zignorowane. Użyj - Sprawdź Aby określić polecenie, którego chcesz porównać wyniki.  
+ Aby zmniejszyć ilość porównań, można określić podzestaw poleceń do sprawdzania poprawności do porównania i inne polecenia zostaną zignorowane. Użyj - zbadać, aby określić polecenie, którego wyniki chcesz porównać.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  
 ```  
   
-### <a name="convert-a-graphics-log-file-to-pngs"></a>Konwertowanie pliku dziennika grafiki PNG  
- Aby wyświetlić lub analizy ramek z plikiem dziennika grafiki, DXCap.exe zapisać ramki przechwycone jako .png pliki obrazów (Portable Network Graphics). Użyj `-screenshot` się w trybie odtwarzania, aby dane wyjściowe przechwycić ramki jako pliki PNG.  
+### <a name="convert-a-graphics-log-file-to-pngs"></a>Konwertuj plik dziennika grafiki na PNG  
+ Aby wyświetlić lub analizowanie ramek z pliku dziennika grafiki, DXCap.exe można zapisać przechwycone ramki jako .png pliki obrazów (Portable Network Graphics). Użyj `-screenshot` do w trybie odtwarzania, służący do wypełniania wyjściowego przechwycone ramki jako pliki PNG.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p BasicHLSL11.vsglog -screenshot  
 ```  
   
- Użyj `-frame` z `-screenshot` określa ramki, które ma zostać wyprowadzony.  
+ Użyj `-frame` z `-screenshot` określa ramki, które mają być danych wyjściowych.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p BasicHLSL11.vsglog -screenshot -frame 5, 7-9  
 ```  
   
-### <a name="convert-a-graphics-log-file-to-xml"></a>Konwertowanie pliku dziennika grafiki XML  
- Przetwarzanie i analizowanie dzienników grafiki przy użyciu znanych narzędzi, takich jak FindStr lub XSLT, DXCap.exe można przekonwertować pliku dziennika grafiki do pliku XML. Użyj `-toXML` w trybie odtwarzania, aby przekonwertować dziennika XML zamiast jego odtwarzanie kopii.  
+### <a name="convert-a-graphics-log-file-to-xml"></a>Konwertowanie pliku dziennika grafiki do pliku XML  
+ Aby przetwarzać i analizować dzienniki grafiki przy użyciu znanych narzędzi, takich jak FindStr lub XSLT, DXCap.exe przekonwertować plik dziennika grafiki do pliku XML. Użyj `-toXML` w trybie odtwarzania, aby przekonwertować dziennika XML zamiast jego odtwarzanie kopii.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog -toXML  
 ```  
   
- Domyślnie dane wyjściowe XML są zapisywane w pliku z taką samą nazwę jak dziennika grafiki, ale który ma rozszerzenie .xml. W powyższym przykładzie będzie miała nazwę pliku XML **regression_test_12.xml**. Aby podać inną nazwę pliku XML, określ je po `-toXML`.  
+ Domyślnie dane wyjściowe XML są zapisywane w pliku z taką samą nazwę jak dziennika grafiki, ale która ma rozszerzenie .xml. W powyższym przykładzie będzie nazwę pliku XML **regression_test_12.xml**. Nazwij plik XML inny, określ je po `-toXML`.  
   
-```ms-dos  
+```cmd  
 DXCap.exe -p regression_test_12.vsglog -toXML temp.xml  
 ```  
   
- Wynikowy plik będzie zawierał XML, która wygląda podobnie do poniższego:  
+ Wynikowy plik będzie zawierać plik XML, który wygląda podobnie do następującej:  
   
 ```xml  
 <Moment value="67"/>  

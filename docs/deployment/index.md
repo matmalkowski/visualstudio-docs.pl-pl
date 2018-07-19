@@ -1,24 +1,25 @@
 ---
 layout: LandingPage
 title: Wdrażanie aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak wdrożyć aplikacji, usług i składników za pomocą programu Visual Studio 2017 r.
+description: Dowiedz się, jak używać programu Visual Studio 2017 do wdrożenia aplikacji, usług i składników.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815327"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030406"
 ---
-# <a name="deployment-in-visual-studio"></a>Wdrożenia w programie Visual Studio
+# <a name="deployment-in-visual-studio"></a>Wdrożenie w programie Visual Studio
 
-Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplikacji.
+Visual Studio zawiera kilka różnych narzędzi, które ułatwiają wdrażanie aplikacji.
 
-<h2>Środowisko wdrażania programu Visual Studio z 5-minutowy poradniki Szybki Start</h2>
+<h2>Środowisko wdrażania programu Visual Studio z 5-minutowe Przewodniki Szybki Start</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -68,7 +69,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdróż do witryny sieci Web lub udziału sieciowego</h3>
+                        <h3>Wdrażanie witryny sieci Web lub udziału sieciowego</h3>
                     </div>
                 </div>
             </div>
@@ -86,7 +87,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdrażanie usługi Azure App Service</h3>
+                        <h3>Wdrażanie w usłudze Azure App Service</h3>
                     </div>
                 </div>
             </div>
@@ -95,7 +96,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
     </li>
 </ul>
 
-<h2>Przejść głębiej z samouczki</h2>
+<h2>Uzyskaj szczegółowe samouczki</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -127,7 +128,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Pakiet aplikacji platformy uniwersalnej systemu Windows dla sklepu firmy Microsoft</h3>
+                        <h3>Pakiet aplikacji platformy UWP dla Microsoft Store</h3>
                     </div>
                 </div>
             </div>
@@ -145,7 +146,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdrażanie programu ASP.NET na platformie Azure</h3>
+                        <h3>Wdrażanie platformy ASP.NET na platformie Azure</h3>
                     </div>
                 </div>
             </div>
@@ -163,7 +164,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Pakiet aplikacji komputerowej Microsoft Store (C#, C++)</h3>
+                        <h3>Tworzenie pakietu aplikacji klasycznej dla Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@ Program Visual Studio udostępnia kilka różnych narzędzi do wdrażania aplika
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdrażanie Python na platformie Azure</h3>
+                        <h3>Wdrażanie języka Python na platformie Azure</h3>
                     </div>
                 </div>
             </div>
