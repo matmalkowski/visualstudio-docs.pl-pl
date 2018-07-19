@@ -1,6 +1,8 @@
+- name: Dokumentacja dotycząca analizy kodu
+  href: index.md
 - name: Omówienie
   items:
-    - name: Analizowanie kodu zarządzanego
+    - name: Analiza kodu zarządzanego
       href: code-analysis-for-managed-code-overview.md
     - name: Analizatory Roslyn
       href: roslyn-analyzers-overview.md
@@ -19,11 +21,11 @@
     - name: Analizowanie kodu C/C++ pod kątem błędów
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
-        - name: Przykład
+        - name: Przykładowy pokaz
           href: demo-sample.md
 - name: Przewodniki z instrukcjami
   items:
-    - name: Analizowanie kodu zarządzanego
+    - name: Analiza kodu zarządzanego
       items:
         - name: Instalowanie analizatorów Roslyn
           href: install-roslyn-analyzers.md
@@ -81,7 +83,7 @@
         - name: Zestawy reguł na potrzeby kodu zarządzanego
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: Konfigurowanie analizy kodu dla aplikacji sieci Web ASP.NET
+            - name: Konfigurowanie analizy kodu dla aplikacji internetowej ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Zestawy reguł na potrzeby kodu C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -100,7 +102,7 @@
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Zgodność wersji
           href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Metryki kodów
+    - name: Metryki kodu
       items:
         - name: Generowanie danych metryk kodu
           href: how-to-generate-code-metrics-data.md
@@ -137,7 +139,7 @@
           href: native-recommended-rules-rule-set.md
         - name: Zestaw reguł zabezpieczeń dla zarządzanego kodu
           href: security-rules-rule-set-for-managed-code.md
-    - name: Analiza kodu dla zarządzanego kodu — Ostrzeżenia
+    - name: Analiza kodu zarządzanego — ostrzeżenia
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: Ostrzeżenia analizy kodu dla zarządzanego kodu dzięki CheckId
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Ostrzeżenia projektu
+        - name: Ostrzeżenia dotyczące projektu
           href: design-warnings.md
           items:
             - name: 'CA1000: Nie deklaruj statycznych elementów członkowskich na typach generycznych'

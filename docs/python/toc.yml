@@ -12,7 +12,7 @@
     - name: Tworzenie projektu z szablonu
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: Tworzenie projektu z istniejącego kodu
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: Tworzenie projektu z repozytorium
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Tworzenie projektu z szablonu Cookiecutter
@@ -87,14 +87,14 @@
           href: search-paths.md
         - name: Dokumentacja okna środowiska
           href: python-environments-window-tab-reference.md
-    - name: Edytowanie kodu
+    - name: Edytowanie kodu w języku Python
       href: editing-python-code-in-visual-studio.md
       items:
         - name: Formatowanie kodu
           href: formatting-python-code.md
         - name: Refaktoryzacja kodu
           href: refactoring-python-code.md
-        - name: Używanie narzędzia PyLint
+        - name: Korzystanie z narzędzia PyLint
           href: linting-python-code.md
     - name: Definiowanie niestandardowych poleceń menu
       href: defining-custom-python-project-commands.md

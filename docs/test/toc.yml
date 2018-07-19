@@ -1,6 +1,6 @@
 - name: Narzędzia testowania programu Visual Studio
   href: improve-code-quality.md
-- name: Scenariusze testowe
+- name: Scenariusze testów
   href: developer-testing-scenarios.md
 - name: Testowanie jednostek
   href: unit-test-your-code.md
@@ -43,17 +43,19 @@
       items:
         - name: Eksplorator testów — często zadawane pytania
           href: test-explorer-faq.md
+    - name: Uruchamianie testów z poziomu wiersza polecenia
+      href: vstest-console-options.md
     - name: Uruchamianie testu jednostkowego jako procesu 64-bitowego
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: Konfigurowanie testów jednostkowych przy użyciu pliku runsettings
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
     - name: Pisanie testów jednostkowych dla kodu zarządzanego
       items:
-        - name: 'Wskazówki: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu'
+        - name: 'Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
         - name: 'Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Korzystanie ze składowych Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
+        - name: Korzystanie z elementów członkowskich Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Korzystanie z klas potwierdzeń
           href: using-the-assert-classes.md
@@ -69,7 +71,7 @@
         - name: Tworzenie testu jednostkowego opartego na danych
           href: how-to-create-a-data-driven-unit-test.md
           items:
-            - name: 'Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych'
+            - name: 'Przewodnik: definiowanie źródła danych przy użyciu pliku konfiguracji'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Testy jednostkowe metod ogólnych
           href: unit-tests-for-generic-methods.md
@@ -96,11 +98,11 @@
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
     - name: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
       items:
-        - name: Testowanie jednostek biblioteki DLL platformy UWP w języku C++
+        - name: Test jednostkowy biblioteki DLL platformy UWP w języku C++
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Testowanie jednostek kodu języka Visual C# w aplikacjach platformy UWP'
+        - name: 'Test jednostkowy kodu języka Visual C# w aplikacjach platformy UWP'
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: 'Przewodnik: tworzenie i uruchamianie testów jednostkowych aplikacji platformy UWP'
+        - name: 'Przewodnik: tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
     - name: 'Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom'
       href: using-code-coverage-to-determine-how-much-code-is-being-tested.md

@@ -132,7 +132,7 @@
     - name: Język R w programie Visual Studio...
       href: rtvs/getting-started-with-r.md
     - name: Środowisko Node.js w programie Visual Studio
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'Język C# w programie Visual Studio'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Basic w programie Visual Studio
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Przenoszenie, migrowanie i uaktualnianie projektów'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Dodawanie i usuwanie elementów projektu
-              href: ide/adding-and-removing-project-items.md
             - name: Zarządzanie właściwościami projektów i rozwiązań
               href: ide/managing-project-and-solution-properties.md
             - name: Zarządzanie odwołaniami w projekcie
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Filtrowane listy uzupełniania w języku Visual Basic
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Programowanie aplikacji mobilnych dla wielu platform
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'Programowanie w języku F#'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Używanie starszych wersji platformy .NET jako docelowych
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Programowanie aplikacji pakietu Office i programu SharePoint
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Praca z plikami XML i XSLT
@@ -605,15 +605,15 @@
         - name: 'Przewodnik: tworzenie środowiska kompilowania na wielu komputerach'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Debugowanie...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Testowanie...
       href: test/improve-code-quality.md
     - name: Mierzenie wydajności...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Analizowanie jakości kodu...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Wdrażanie...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Rozszerzanie funkcjonalności programu Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: Analizowanie i modelowanie architektury...
@@ -686,8 +686,6 @@
       items:
         - name: Parametry szablonu
           href: ide/template-parameters.md
-        - name: Odwołanie do schematu szablonu (rozszerzalność)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Ogólne elementy interfejsu użytkownika
       items:
         - name: Hierarchia wywołań
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: Otwórz projekt — Polecenie
           href: ide/reference/open-project-command.md
-        - name: Otwórz rozwiązanie — Polecenie
-          href: ide/reference/open-solution-command.md
         - name: Print — Polecenie
           href: ide/reference/print-command.md
         - name: Szybka czujka — Polecenie

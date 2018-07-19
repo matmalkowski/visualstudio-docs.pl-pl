@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Wyświetlanie migawki za pomocą opcji cofania do poprzedniego kroku funkcji IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Debugowanie dla całkowicie początkujących
+      href: debugging-absolute-beginners.md
 - name: Przewodniki z instrukcjami
   items:
     - name: Nawigowanie po kodzie za pomocą debugera
@@ -105,8 +107,6 @@
           items:
             - name: Stosowanie edycji w trybie przerwania za pomocą funkcji Edytuj i kontynuuj
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Nieobsługiwane edycje funkcji Edytuj i kontynuuj programu Visual Basic
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Funkcja Edytuj i kontynuuj nieobsługiwana w przypadku języka F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Wyświetlanie danych debugera
@@ -826,5 +826,3 @@
   items:
     - name: Co nowego w debugerze programu Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Debugowanie dla całkowicie początkujących
-      href: debugging-absolute-beginners.md

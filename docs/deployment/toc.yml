@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Wdrażanie aplikacji klasycznej za pomocą technologii ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Tworzenie aplikacji ClickOnce z wiersza poleceń
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: Wdrażanie w usługach IIS przy użyciu rozszerzenia Web Deploy
+          href: deploy-iis-with-web-deploy.md
         - name: Importowanie ustawień publikowania i wdrażanie na platformie Azure
           href: tutorial-import-publish-settings-azure.md
         - name: Importowanie ustawień publikowania i wdrażanie w usługach IIS
           href: tutorial-import-publish-settings-iis.md
-        - name: Wdrażanie w usługach IIS przy użyciu rozszerzenia Web Deploy
-          href: deploy-iis-with-web-deploy.md
         - name: Ciągłe wdrażanie platformy ASP.NET Core na platformie Azure za pomocą usługi Git
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: Publikowanie w usłudze Kubernetes przy użyciu narzędzi Kubernetes programu Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Natywne
@@ -45,21 +45,21 @@
         - name: Wdrażanie w języku Visual C++...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Tworzenie pakietu aplikacji klasycznej dla sklepu Microsoft Store (mostek dla aplikacji klasycznych)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Wdrażanie aplikacji natywnej za pomocą technologii ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: Platforma UWP
       items:
         - name: Tworzenie pakietu aplikacji platformy UWP przy użyciu programu Visual Studio
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publikowanie w witrynie internetowej platformy Azure za pomocą narzędzia Web Deploy
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: Publikowanie w usłudze App Service w systemie Linux
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Publikowanie w usłudze Azure App Service
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Przewodniki z instrukcjami
   items:
     - name: Wskazówki dotyczące wdrażania ClickOnce
