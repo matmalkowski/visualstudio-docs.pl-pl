@@ -1,6 +1,6 @@
 ---
-title: Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio
-description: Rozwiązania błędów dotyczących sieci lub serwera proxy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy.
+title: Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
+description: Rozwiązania związane z siecią lub serwer proxy błędy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwerem proxy.
 ms.custom: ''
 ms.date: 02/12/2018
 ms.technology: vs-acquisition
@@ -18,26 +18,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62b6ecddaa58ba8fd7172886bbf567402a03006
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282655"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978075"
 ---
-# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio
+# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 
-Mamy rozwiązania najczęstszych błędów dotyczących sieci lub serwera proxy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy.
+Mamy rozwiązań dla najbardziej typowe błędy związane z siecią lub serwera proxy, które można napotkać podczas instalowania lub używania programu Visual Studio za zaporą lub serwerem proxy.
 
-## <a name="error-proxy-authorization-required"></a>Błąd: "Proxy zezwoleń wymaganych"
+## <a name="error-proxy-authorization-required"></a>Błąd: "serwer Proxy wymaga autoryzacji"
 
-Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pośrednictwem serwera proxy, a serwer proxy blokuje wywołań Visual Studio wysyła do niektórych zasobów sieciowych.
+Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pośrednictwem serwera proxy i serwer proxy blokuje wywołania, które program Visual Studio sprawia, że do niektórych zasobów sieciowych.
 
 ### <a name="to-fix-this-proxy-error"></a>Aby naprawić ten błąd serwera proxy
 
-- Uruchom ponownie program Visual Studio. Powinny być wyświetlane okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
+- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
-- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje problemu, może to oznaczać czy serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresów, ale jest to spowodowane &#42;. visualStudio.com adresów. Na tych serwerach należy wziąć pod uwagę listę dozwolonych podobnej o następujących adresach URL, aby odblokować wszystkie logowania scenariusze w programie Visual Studio:
+- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje ten problem, może to oznaczać, serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresy, ale jest to spowodowane &#42;. adresów visualStudio.com. Na tych serwerach należy wziąć pod uwagę umieszczania na białej liście następujące adresy URL, aby odblokować wszystkie w scenariuszach logowania w programie Visual Studio:
 
     - &#42;.windows.net
 
@@ -49,35 +49,35 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
     - &#42;.live.com
 
-- W przeciwnym razie można usunąć http:&#47;&#47;go.microsoft.com adres z listy dozwolonych, dzięki czemu dialog uwierzytelniania serwera proxy zostaną wyświetlone dla obu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponowne uruchomienie.
+- W przeciwnym razie możesz usunąć http:&#47;&#47;go.microsoft.com adresów z listy dozwolonych adresów, tak, aby w oknie dialogowym uwierzytelniania serwera proxy, pojawia się dla obu protokołu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponownie uruchomione.
 
     LUB
 
-- Jeśli chcesz użyć poświadczeń domyślnej z serwera proxy, można wykonywać następujące czynności:
+- Jeśli chcesz używać Twoich poświadczeń domyślne na serwerze proxy, należy wykonać następujące czynności:
 
-    1. Znajdź **devenv.exe.config** (plik konfiguracji devenv.exe) w: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+    1. Znajdź **devenv.exe.config** (plik devenv.exe w konfiguracji) w: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Wizualne Studio\2017\Enterprise\Common7\IDE**.
 
-    1. W pliku konfiguracji, należy znaleźć `<system.net>` zablokować, a następnie dodaj ten kod:
+    1. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
 
         ```xml
         <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
         </defaultProxy>
         ```
 
-        Adres serwera proxy poprawne należy wstawić sieci w `proxyaddress="<http://<yourproxy:port#>`.
+        Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
     LUB
 
-- Można również postępuj zgodnie z instrukcjami [sposób nawiązywania połączenia za pośrednictwem uwierzytelnionego serwera Proxy sieci Web](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) blogu pokazuje, jak dodać kod, który umożliwi używanie serwera proxy.
+- Można również postępuj zgodnie z instrukcjami [jak nawiązać połączenie za pośrednictwem uwierzytelnionego serwera Proxy sieci Web](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) wpis w blogu, który pokazuje, jak dodać kod, który umożliwi używanie serwera proxy.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Błąd: "Połączenie podstawowe zostało zamknięte"
 
-Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studio nie można nawiązać połączenia z niektórych zasobów sieciowych. Zasoby te mogą obejmować Visual Studio Team Services (VSTS) dla logowania i licencjonowania NuGet i usług Azure. Jeśli program Visual Studio nie może połączyć się z jednego z tych zasobów, mogą pojawić następujący komunikat o błędzie:
+Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studio nie można nawiązać połączenia z niektórych zasobów sieciowych. Te zasoby mogą obejmować Visual Studio Team Services (VSTS) do logowania i licencjonowania NuGet i usług platformy Azure. Visual Studio nie może połączyć się z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
 
   **Połączenie podstawowe zostało zamknięte: Wystąpił nieoczekiwany błąd podczas wysyłania**
 
-Visual Studio korzysta z protokołu Transport Layer Security (TLS) 1.2 nawiązywania połączenia z zasobami sieciowymi. Urządzenia zabezpieczeń w niektórych sieciach prywatnych blokować niektóre połączenia z serwerem, gdy program Visual Studio korzysta z protokołu TLS 1.2.
+Visual Studio używa protokołu Transport Layer Security (TLS) 1.2, połączyć się z zasobami sieciowymi. Gdy program Visual Studio używa protokołu TLS 1.2, urządzenia zabezpieczeń w prywatnych sieciach zablokować niektóre połączenia z serwerem.
 
 ### <a name="to-fix-this-connection-error"></a>Aby naprawić ten błąd połączenia
 
@@ -97,34 +97,34 @@ Włącz połączenia dla następujących adresów URL:
 
 - https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.net (dla połączeń Azure)
+- &#42;. azurewebsites.net (dla połączenia platformy Azure)
 
 - &#42;.visualstudio.com
 
-- CDN.vsassets.IO (hosty sieci dostarczania zawartości lub CDN, zawartości)
+- CDN.vsassets.IO (hosty usługa content delivery network lub sieci CDN, zawartości)
 
-- &#42;. gallerycdn.vsassets.io (rozszerzenia programu VSTS hostów)
+- &#42;. gallerycdn.vsassets.io (rozszerzenia VSTS hostów)
 
-- static2.sharepointonline.com (obsługuje zasoby używane przez program Visual Studio w zestawie sieci szkieletowej interfejsu użytkownika pakietu Office, takich jak czcionki)
+- static2.sharepointonline.com (hosty zasobów używanych przez program Visual Studio w zestawie danych sieci szkieletowej interfejsu użytkownika pakietu Office, takie jak czcionki)
 
-- &#42;. nuget.org (dla połączenia narzędzia NuGet)
+- &#42;. nuget.org (w przypadku połączenia narzędzia NuGet)
 
  > [!NOTE]
- > Powyższa prywatnych adresów URL serwera NuGet mogą nie zostać zawarte w tej listy. Możesz sprawdzić serwery NuGet, które są używane w % APPData%\Nuget\NuGet.Config.
+ > Prywatnego, że adresy URL serwerów NuGet mogą nie zostać zawarte na tej liście. Możesz sprawdzić, czy dla serwerów NuGet, które korzystasz z % APPData%\Nuget\NuGet.Config.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z instalacji, kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z instalacji, kroki rozwiązywania problemów pomoże, możesz skontaktować nam się przez czat na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [stronę pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Możesz zgłosić problemy z produktu z nami za pośrednictwem [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
+* Możesz udostępnić sugestię dotyczącą produktu z nami w [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Możesz śledzić problemy z produktu i Szukaj odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
+* Można także nawiązać kontakt z nami i innych deweloperów programu Visual Studio za pośrednictwem [konwersacji programu Visual Studio community dotyczącym oprogramowania Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
-* [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
+* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)

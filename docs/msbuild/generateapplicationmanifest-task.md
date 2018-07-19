@@ -21,75 +21,75 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9368e752a2b3064c8f4b70bde6005fa5996d4f78
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575322"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945965"
 ---
-# <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
-Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub natywny manifest. Natywny manifest opisuje składnika przez definiowanie unikatową tożsamość składnika i zidentyfikowaniu wszystkie pliki wchodzące w skład składnika i zestawów. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza natywny manifest wskazujący punkt wejścia aplikacji, a następnie określając poziom zabezpieczeń aplikacji.  
+# <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — zadanie
+Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub manifest macierzysty. Manifest natywny zawiera opis składnika poprzez określenie unikatowej tożsamości składnika i identyfikację wszystkich zestawów i plików, które tworzą składnik. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza manifest natywny przez wskazanie punktu wejścia aplikacji i określenie poziomu zabezpieczeń aplikacji.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `GenerateApplicationManifest` zadań.  
+ W poniższej tabeli opisano parametry `GenerateApplicationManifest` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AssemblyName`|Opcjonalne `String` parametru.<br /><br /> Określa `Name` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, nazwa jest wywnioskowany na podstawie `EntryPoint` lub `InputManifest` parametrów. Jeśli nazwa nie mogą być tworzone zadania zgłasza błąd.|  
-|`AssemblyVersion`|Opcjonalne `String` parametru.<br /><br /> Określa `Version` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, wartością domyślną "1.0.0.0" jest używany.|  
-|`ClrVersion`|Opcjonalne `String` parametru.<br /><br /> Określa minimalną wersję z wspólnego języka środowiska uruchomieniowego (CLR) wymagane przez aplikację. Wartość domyślna to wersja CLR używany przez system kompilacji. Jeśli zadanie generuje natywny manifest, ten parametr zostanie zignorowany.|  
-|`ConfigFile`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa, który element zawiera plik konfiguracji aplikacji. Jeśli zadanie generuje natywny manifest, ten parametr zostanie zignorowany.|  
-|`Dependencies`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa, który określa zbiór zestawów zależnych dla manifest wygenerowanego listy elementów. Każdy element może być opisane przez metadane elementu w celu wskazania stanu dodatkowe wdrożenia, a typ zależność. Aby uzyskać więcej informacji zobacz sekcję "Metadanych elementu" poniżej.|  
-|`Description`|Opcjonalne `String` parametru.<br /><br /> Określa opis aplikacji lub składnika.|  
-|`EntryPoint`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa pojedynczy element, która wskazuje punkt wejścia dla zestawu wygenerowanego manifestu.<br /><br /> Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, ten parametr określa zestaw, który rozpoczyna się po uruchomieniu aplikacji.|  
-|`ErrorReportUrl`|Opcjonalne <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Określa adres URL strony sieci Web wyświetlaną w oknach dialogowych podczas raportów o błędach w instalacjach ClickOnce.|  
-|`FileAssociations`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa listę co najmniej jeden typ pliku, które są skojarzone z manifest wdrażania ClickOnce.<br /><br /> Skojarzeń plików jedyne prawidłowe, tylko jeśli .NET Framework w wersji 3.5 lub nowszej.|  
-|`Files`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Pliki do uwzględnienia w manifeście. Określ pełną ścieżkę dla każdego pliku.|  
-|`HostInBrowser`|Opcjonalne <xref:System.Boolean> parametru.<br /><br /> Jeśli `true`, aplikacja jest obsługiwana w przeglądarce (jak są aplikacje przeglądarki sieci Web WPF).|  
-|`IconFile`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa plik ikony aplikacji. Ikona aplikacji jest wyrażona w manifeście aplikacji wygenerowany i jest używany dla okna dialogowego Start Menu i Dodaj lub usuń programy. Jeśli nie określono tych danych wejściowych, ikony domyślnej jest używana. Jeśli zadanie generuje natywny manifest, ten parametr zostanie zignorowany.|  
-|`InputManifest`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje wejściowy dokument XML służyć jako podstawa dla generatora manifestu. Dzięki temu danych strukturalnych, takich jak zabezpieczenia aplikacji lub niestandardowe definicje manifestu zostaną odzwierciedlone w manifeście danych wyjściowych. Element główny dokumentu XML musi być węzłem zestawu w przestrzeni nazw asmv1.|  
-|`IsolatedComReferences`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa składniki COM do izolowania w wygenerowanego manifestu. Ten parametr umożliwia do izolowania składników COM dla wdrożenia "Rejestracji wolnego COM". Działa on przez automatyczne generowanie manifestu z standardowe definicje rejestracji COM. Jednak składniki modelu COM musi być zarejestrowany na maszynie kompilacji, aby to działać prawidłowo.|  
-|`ManifestType`|Opcjonalne `String` parametru.<br /><br /> Określa typ manifestu do wygenerowania. Ten parametr może mieć następujące wartości:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Jeśli ten parametr nie jest określony, domyślnie zadanie `ClickOnce`.|  
-|`MaxTargetPath`|Opcjonalne `String` parametru.<br /><br /> Określa maksymalną dozwoloną długość ścieżki do pliku w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji. Jeśli ta wartość jest określona, długość ścieżki każdego pliku w aplikacji jest porównywany ten limit. Wszystkie elementy, które przekraczają limit zostanie podniesiony w ostrzeżeniu kompilacji. Jeśli tych danych wejściowych nie została określona lub jest równa zero, następnie nie jest przeprowadzane żadne sprawdzanie. Jeśli zadanie generuje natywny manifest, ten parametr zostanie zignorowany.|  
-|`OSVersion`|Opcjonalne `String` parametru.<br /><br /> Określa minimalnej wymaganej wersji systemu operacyjnego (OS) wymagane przez aplikację. Na przykład wartość "5.1.2600.0" oznacza, że systemem operacyjnym jest Windows XP. Jeśli ten parametr nie jest określony, zostanie użyta wartość "4.10.0.0", która wskazuje, Windows 98 Wydanie drugie, minimalny obsługiwany system operacyjny programu .NET Framework. Jeśli zadanie jest generowany natywny manifest, tych danych wejściowych jest ignorowana.|  
-|`OutputManifest`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru wyjściowego.<br /><br /> Określa nazwę pliku manifestu wygenerowanych danych wyjściowych. Jeśli ten parametr nie jest określony, nazwa pliku wyjściowego jest wywnioskowany na podstawie tożsamości wygenerowanego manifestu.|  
-|`Platform`|Opcjonalne `String` parametru.<br /><br /> Określa platformę docelową aplikacji. Ten parametr może mieć następujące wartości:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Jeśli ten parametr nie jest określony, domyślnie zadanie `AnyCPU`.|  
-|`Product`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę aplikacji. Jeśli ten parametr nie jest określony, nazwa jest wywnioskowany na podstawie tożsamości wygenerowanego manifestu. Ta nazwa jest używana dla nazwy skrótu w Start menu i jest częścią nazwy, która jest wyświetlana w oknie dialogowym Dodaj lub usuń programy.|  
-|`Publisher`|Opcjonalne `String` parametru.<br /><br /> Określa wydawcy aplikacji. Jeśli ten parametr nie jest określony, nazwa jest wywnioskowany na podstawie zarejestrowanego użytkownika lub tożsamość wygenerowanego manifestu. Ta nazwa jest używana nazwa folderu, w Start menu i jest częścią nazwy, która jest wyświetlana w oknie dialogowym Dodaj lub usuń programy.|  
-|`RequiresMinimumFramework35SP1`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli PRAWDA, aplikacja wymaga platformy .NET Framework 3.5 z dodatkiem SP1 lub nowsza wersja.|  
-|`TargetCulture`|Opcjonalne `String` parametru.<br /><br /> Określa kulturę aplikacji i określa `Language` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zakłada się, że aplikacja jest niezmienna kultura.|  
-|`TargetFrameworkMoniker`|Opcjonalne `String` parametru.<br /><br /> Określa moniker platformy docelowej.|  
-|`TargetFrameworkProfile`|Opcjonalne `String` parametru.<br /><br /> Określa profil platformy docelowej.|  
-|`TargetFrameworkSubset`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę podzbioru .NET Framework do obiektu docelowego.|  
-|`TargetFrameworkVersion`|Opcjonalne `String` parametru.<br /><br /> Określa docelowy Framework .NET projektu.|  
-|`TrustInfoFile`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument XML, który określa zabezpieczeń aplikacji. Element główny dokumentu XML musi być węzłem trustinfo — w obszarze nazw asmv2. Jeśli zadanie generuje natywny manifest, ten parametr zostanie zignorowany.|  
-|`UseApplicationTrust`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli PRAWDA, `Product`, `Publisher`, i `SupportUrl` właściwości są zapisywane w manifeście aplikacji.|  
+|`AssemblyName`|Opcjonalnie `String` parametru.<br /><br /> Określa `Name` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, nazwa wynika z `EntryPoint` lub `InputManifest` parametrów. Jeśli nazwa nie można utworzyć, zadanie wyrzuca błąd.|  
+|`AssemblyVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa `Version` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, jest używana wartość domyślna "1.0.0.0".|  
+|`ClrVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa minimalną wersję z języka wspólnego środowiska uruchomieniowego (CLR) wymaganą przez aplikację. Wartość domyślna to wersja środowiska CLR używana przez system kompilacji. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
+|`ConfigFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa, który element zawiera plik konfiguracji aplikacji. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
+|`Dependencies`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa elementu listy, który definiuje zestaw zestawów zależnych dla wygenerowanego manifestu. Każdy element może być opisane przez metadane elementu, aby wskazać dodatkowy stan wdrożenia i typ zależności. Aby uzyskać więcej informacji, zobacz [metadanych elementu](#item-metadata).|  
+|`Description`|Opcjonalnie `String` parametru.<br /><br /> Określa opis dla aplikacji lub składnika.|  
+|`EntryPoint`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa pojedynczy element, który wskazuje punkt wejścia dla wygenerowanego zestawu manifestu.<br /><br /> Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, ten parametr określa zestaw, który rozpoczyna się, gdy aplikacja jest uruchomiona.|  
+|`ErrorReportUrl`|Opcjonalnie <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Określa adres URL strony sieci web, która jest wyświetlana w oknach dialogowych podczas raportów błędu instalacji ClickOnce.|  
+|`FileAssociations`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa listę typu pliku, które są skojarzone z manifestem wdrażania ClickOnce.<br /><br /> Skojarzenia plików poprawne tylko, tylko wtedy, gdy architekturą docelową jest .NET Framework 3.5 lub nowszy.|  
+|`Files`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Pliki do dołączenia w manifeście. Określ pełną ścieżkę do każdego pliku.|  
+|`HostInBrowser`|Opcjonalnie <xref:System.Boolean> parametru.<br /><br /> Jeśli `true`, aplikacja jest obsługiwana w przeglądarce (tak jak aplikacje przeglądarki sieci Web dla WPF).|  
+|`IconFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje plik ikony aplikacji. Ikona aplikacji jest wyrażona w manifeście aplikacji wygenerowanym i jest używana dla **Start Menu** i **Dodaj/Usuń programy** okna dialogowego. Jeśli wejście to nie jest określony, ikona domyślna jest używana. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
+|`InputManifest`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument danych wejściowych XML, która będzie służyć jako podstawa do generatora manifestu. Dzięki temu dane strukturalnych, takie jak zabezpieczenia aplikacji lub niestandardowe definicje manifestu są odzwierciedlane w manifeście danych wyjściowych. Element główny dokumentu XML musi być zbiorem węzła trustinfo w obszarze nazw asmv1.|  
+|`IsolatedComReferences`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa składniki COM do izolowania w manifeście. Ten parametr obsługuje możliwość izolowania składników COM wdrażania "Wolna rejestracja COM". Działa polega na automatycznym generowaniu manifestu ze standardowymi definicjami rejestracji com. Jednak składniki COM musi być zarejestrowana na komputerze kompilacji, aby działać prawidłowo.|  
+|`ManifestType`|Opcjonalnie `String` parametru.<br /><br /> Określa, jakiego typu manifest wygenerować. Ten parametr może mieć następujące wartości:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Jeśli ten parametr nie jest określony, domyślnym zadaniem `ClickOnce`.|  
+|`MaxTargetPath`|Opcjonalnie `String` parametru.<br /><br /> Określa dozwoloną maksymalną długość ścieżki pliku w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji. Jeśli ta wartość jest określona, długość każdej ścieżki pliku w aplikacji jest sprawdzana względem tego limitu. Wszystkie elementy, które przekraczają limit wywołają ostrzeżenia kompilacji. Jeśli wejście to nie jest określona lub jest równe zeru, żadne sprawdzanie nie jest przeprowadzane. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
+|`OSVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa wersję minimalną wymaganego systemu operacyjnego (OS) wymagane przez aplikację. Na przykład wartość "5.1.2600.0" wskazuje, że system operacyjny Windows XP. Jeśli ten parametr nie jest określony, zostanie użyta wartość "4.10.0.0", która wskazuje Windows 98 Wydanie drugie, minimum obsługiwany system operacyjny programu .NET Framework. Jeśli zadanie generuje natywny manifest, ta wejściowa jest ignorowana.|  
+|`OutputManifest`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa nazwę utworzonego wyjściowego pliku manifestu. Jeśli ten parametr nie jest określony, nazwa pliku wyjściowego wynika z tożsamości wygenerowanego manifestu.|  
+|`Platform`|Opcjonalnie `String` parametru.<br /><br /> Określa platformę docelową aplikacji. Ten parametr może mieć następujące wartości:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Jeśli ten parametr nie jest określony, domyślnym zadaniem `AnyCPU`.|  
+|`Product`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę aplikacji. Jeśli ten parametr nie jest określony, nazwa wynika z tożsamości wygenerowanego manifestu. Ta nazwa jest używaną nazwą skrótu w **Start** menu i jest częścią nazwy, która jest wyświetlana w **apletu Dodaj lub usuń programy** okno dialogowe.|  
+|`Publisher`|Opcjonalnie `String` parametru.<br /><br /> Określa wydawcę aplikacji. Jeśli ten parametr nie jest określony, nazwa wynika z zarejestrowanego użytkownika lub tożsamości wygenerowanego manifestu. Ta nazwa jest używana nazwa folderu na **Start** menu i jest częścią nazwy, która jest wyświetlana w **apletu Dodaj lub usuń programy** okno dialogowe.|  
+|`RequiresMinimumFramework35SP1`|Opcjonalnie `Boolean` parametru.<br /><br /> W przypadku opcji true, aplikacja wymaga .NET Framework 3.5 z dodatkiem SP1 lub nowsza wersja.|  
+|`TargetCulture`|Opcjonalnie `String` parametru.<br /><br /> Identyfikuje kulturę aplikacji i określa `Language` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zakłada się, że aplikacja jest kulturowo niezmienna.|  
+|`TargetFrameworkMoniker`|Opcjonalnie `String` parametru.<br /><br /> Określa krótką nazwę platformy docelowej.|  
+|`TargetFrameworkProfile`|Opcjonalnie `String` parametru.<br /><br /> Określa profil platformy docelowej.|  
+|`TargetFrameworkSubset`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę podzbioru .NET Framework do obiektu docelowego.|  
+|`TargetFrameworkVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa docelową aplikację .NET Framework projektu.|  
+|`TrustInfoFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument XML, który określa zabezpieczenia aplikacji. Element główny dokumentu XML musi być węzłem trustInfo w obszarze nazw asmv2. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
+|`UseApplicationTrust`|Opcjonalnie `Boolean` parametru.<br /><br /> W przypadku opcji true `Product`, `Publisher`, i `SupportUrl` właściwości są zapisywane w manifeście aplikacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.GenerateManifestBase> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę parametrów klasy zadania, zobacz [klasa podstawowa zadania](../msbuild/task-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.GenerateManifestBase> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę parametrów klasy zadanie, zobacz [zadań klasy bazowej](../msbuild/task-base-class.md).  
   
  Aby uzyskać informacje o sposobie używania `GenerateDeploymentManifest` zadań, zobacz [generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md).  
   
- Dane wejściowe dla zależności i plików może mieć więcej przypisany metadanych elementu, aby określić stan dodatkowe wdrożenia dla każdego elementu.  
+ Dane wejściowe dla zależności i pliki mogą być dalej ozdobione metadanymi elementu, aby określić dodatkowy stan wdrożenia dla każdego elementu.  
   
 ## <a name="item-metadata"></a>Metadane elementu  
   
 |Nazwa metadanych|Opis|  
 |-------------------|-----------------|  
-|`DependencyType`|Wskazuje, czy zależność jest opublikowana i zainstalować aplikację lub wymagań wstępnych. Te metadane jest prawidłowa dla wszystkich zależności, ale nie jest używana w przypadku plików. Dostępne wartości to metadane są:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Wartością domyślną jest instalacja.|  
-|`AssemblyType`|Wskazuje, czy zależność jest zarządzanego lub zestaw macierzysty. Te metadane jest prawidłowa dla wszystkich zależności, ale nie jest używana w przypadku plików. Dostępne wartości to metadane są:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` jest to wartość domyślna, co oznacza, że manifestu generator automatycznie zadecyduje o typie zestawu.|  
-|`Group`|Wskazuje grupę do pobrania dodatkowych plików na żądanie. Nazwa grupy jest zdefiniowane przez aplikację i może być dowolnym ciągiem. Pustego ciągu oznacza, że plik nie jest częścią grupy pobierania, która jest ustawiona domyślnie. Plików w grupie nie są częścią pobrania początkowej aplikacji. Pliki w grupie tylko są pobierane, gdy wyraźnie zażąda aplikacji przy użyciu <xref:System.Deployment.Application>.<br /><br /> Te metadane jest prawidłowa dla wszystkich plików gdzie `IsDataFile` jest `false` i wszystkie zależności gdzie `DependencyType` jest `Install`.|  
-|`TargetPath`|Określa, jak ścieżka powinien być zdefiniowany w manifeście wygenerowany. Ten atrybut jest prawidłowy dla wszystkich plików. Jeśli ten atrybut nie jest określony, używana jest określenie elementu. Ten atrybut jest nieprawidłowy dla wszystkich plików i zależności z `DependencyType` wartość `Install`.|  
-|`IsDataFile`|A `Boolean` wartość metadanych, która wskazuje, czy plik jest plikiem danych. Plik danych jest specjalne, że jest migrowana między aktualizacjami aplikacji. Te metadane jest prawidłowa tylko dla plików. `False` jest to wartość domyślna.|  
+|`DependencyType`|Wskazuje, czy zależność jest opublikowana i zainstalowana z aplikacją lub warunkiem wstępnym. Te metadane obowiązuje w przypadku wszystkich zależności, ale nie jest używany do plików. Dostępne wartości dla tych metadanych są następujące:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Wartością domyślną jest instalacja.|  
+|`AssemblyType`|Wskazuje, czy zależność jest zarządzany lub natywny zestaw. Te metadane obowiązuje w przypadku wszystkich zależności, ale nie jest używany do plików. Dostępne wartości dla tych metadanych są następujące:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` jest to wartość domyślna, co oznacza, że generator manifestu automatycznie określi typ zespołu.|  
+|`Group`|Wskazuje grupę do pobierania dodatkowych plików na żądanie. Nazwa grupy jest zdefiniowany przez aplikację i może być dowolnym ciągiem. Pusty ciąg wskazuje, że plik nie jest częścią grupy pobrania, co jest ustawieniem domyślnym. Pliki nie w grupie są częścią pierwszego pobrania aplikacji. Pliki w grupie są pobierane tylko wtedy, gdy wyraźnie żąda tego aplikacja za pomocą <xref:System.Deployment.Application>.<br /><br /> Te metadane obowiązuje dla wszystkich plików gdzie `IsDataFile` jest `false` i wszystkie zależności gdzie `DependencyType` jest `Install`.|  
+|`TargetPath`|Określa, jak ścieżka powinna być zdefiniowana w manifeście. Ten atrybut jest ważny dla wszystkich plików. Jeśli ten atrybut nie jest określony, Specyfikacja elementu jest używana. Ten atrybut jest ważny dla wszystkich plików i współzależności z `DependencyType` wartość `Install`.|  
+|`IsDataFile`|A `Boolean` wartość metadanych, która wskazuje, czy plik jest plikiem danych. Plik danych jest wyjątkowy, w tym, że jest on przenoszony między aktualizacjami aplikacji. Te metadane obowiązuje tylko dla plików. `False` jest to wartość domyślna.|  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie użyto `GenerateApplicationManifest` zadań, aby wygenerować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji i `GenerateDeploymentManifest` zadań do generowania manifestu wdrożenia dla aplikacji z jednym zestawie. Następnie używa `SignFile` zadań do podpisywania manifestów.  
+ W tym przykładzie użyto `GenerateApplicationManifest` zadania do wygenerowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji i `GenerateDeploymentManifest` zadania do wygenerowania wdrażania manifestu dla aplikacji z pojedynczym zestawem. Następnie używa `SignFile` zadania do podpisania manifestów.  
   
- Przedstawiono to najprostszy scenariusz możliwe generowanie manifestu gdzie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty są generowane w jednym programie. Domyślną nazwę i tożsamości są wywnioskować na podstawie zestawu dla manifest.  
+ Obrazuje to najprostszy scenariusz możliwości generowania manifestu gdzie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] w jednym programie są generowane manifesty. Domyślna nazwa i tożsamość są dedukowane z zestawu dla manifestu.  
   
 > [!NOTE]
->  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie przygotowanych, aby skupić się na aspektach Generowanie manifestu. Ten przykład generuje w pełni pracy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
+>  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
 > [!NOTE]
 >  Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).  
@@ -137,12 +137,12 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 ```  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie użyto `GenerateApplicationManifest` i `GenerateDeploymentManifest` zadań w celu wygenerowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i wdrażania manifesty dla aplikacji z jednego zestawu, określanie nazwy i tożsamości manifestów.  
+ W tym przykładzie użyto `GenerateApplicationManifest` i `GenerateDeploymentManifest` do wygenerowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stosowania i wdrażania manifestów aplikacji z jednego zestawu, określając nazwę tożsamości manifestów.  
   
- W tym przykładzie jest podobny do poprzedniego przykładu, z wyjątkiem nazwy i tożsamości manifesty jawnie określony. Ponadto w tym przykładzie jest skonfigurowana jako aplikacji online zamiast zainstalowanej aplikacji.  
+ Ten przykład jest podobny do poprzedniego przykładu, z wyjątkiem jawnie określonej nazwy i tożsamości manifestów. Ponadto ten przykład jest konfigurowany jako aplikacja online zamiast zainstalowanej aplikacji.  
   
 > [!NOTE]
->  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie przygotowanych, aby skupić się na aspektach Generowanie manifestu. Ten przykład generuje w pełni pracy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
+>  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
 > [!NOTE]
 >  Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).  
@@ -197,10 +197,10 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 ```  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie użyto `GenerateApplicationManifest` i `GenerateDeploymentManifest` zadań w celu wygenerowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i wdrażania manifesty dla aplikacji z wielu plików i zestawów.  
+ W tym przykładzie użyto `GenerateApplicationManifest` i `GenerateDeploymentManifest` do wygenerowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stosowania i wdrażania manifestów aplikacji z wielu plików i zestawów.  
   
 > [!NOTE]
->  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie przygotowanych, aby skupić się na aspektach Generowanie manifestu. Ten przykład generuje w pełni pracy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
+>  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
 > [!NOTE]
 >  Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).  
@@ -315,12 +315,12 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 ```  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie użyto `GenerateApplicationManifest` zadań do generowania manifestu natywnych aplikacji Test.exe odwołanie do natywnego Alpha.dll i izolowane składnik modelu COM Bravo.dll.  
+ W tym przykładzie użyto `GenerateApplicationManifest` zadania, aby wygenerować macierzysty manifest aplikacji *Test.exe*, odwołuje się do składnika macierzystego *Alpha.dll* i wyizolowanego modelu COM składnika  *Bravo.dll*.  
   
- W tym przykładzie powoduje Test.exe.manifest, co aplikacja XCOPY można wdrożyć, korzystając z modelu COM. wolnego rejestracji  
+ Ten przykład generuje *Test.exe.manifest*, że aplikacja staje się XCOPY możliwych do wdrożenia i zdolności do przyjmowania korzystać z rejestracji wolnego modelu COM.  
   
 > [!NOTE]
->  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie przygotowanych, aby skupić się na aspektach Generowanie manifestu. Ten przykład generuje w pełni pracy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
+>  W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.  
   
 ```xml  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -351,7 +351,7 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)   
  [Signfile — zadanie](../msbuild/signfile-task.md)   

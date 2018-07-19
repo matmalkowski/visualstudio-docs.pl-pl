@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926060"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977736"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
+# <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.xaml.cs
 
-Ten temat zawiera zawartość i opis kodu źródłowego C# w pliku L2DBForm.xaml.cs. Klasy częściowe L2XDBForm zawarte w tym pliku mogą być podzielone trzy części logiczne: elementy członkowskie danych i `OnRemove` i `OnAddBook` przycisk kliknięcie uchwytów zdarzeń.
+Ten temat zawiera zawartość i opis kodu źródłowego języka C# w pliku *L2DBForm.xaml.cs*. Klasy częściowe L2XDBForm zawarte w tym pliku można podzielić na trzy logiczne sekcje: elementy członkowskie danych i `OnRemove` i `OnAddBook` procedury obsługi zdarzeń kliknięcia przycisku.
 
 ## <a name="data-members"></a>Elementy członkowskie danych
 
-Dwa elementy członkowskie danych prywatne są używane do kojarzenia klasę okna Zasoby L2DBForm.xaml.
+Dwie prywatne składowe danych są używane do kojarzenia tej klasy, aby zasoby okna używane w *L2DBForm.xaml*.
 
--   Zmienna przestrzeni nazw `myBooks` jest ustawiana na `"http://www.mybooks.com"`.
+-   Zmienna przestrzeni nazw `myBooks` jest inicjowany do `"http://www.mybooks.com"`.
 
--   Element członkowski `bookList` został zainicjowany w Konstruktorze ciągu CDATA w L2DBForm.xaml o następujący wiersz:
+-   Element członkowski `bookList` jest inicjowana w Konstruktorze ciąg CDATA w *L2DBForm.xaml* o następujący wiersz:
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
@@ -37,31 +37,31 @@ Dwa elementy członkowskie danych prywatne są używane do kojarzenia klasę okn
 
 Ta metoda zawiera trzy następujące instrukcje:
 
--   Pierwsze wyrażenie warunkowe służy do sprawdzania poprawności danych wejściowych.
+-   Pierwsza instrukcja warunkowego jest używany do sprawdzania poprawności danych wejściowych.
 
--   Druga instrukcja tworzy nowy <xref:System.Xml.Linq.XElement> z ciągu wartości wprowadzone w **Dodawanie nowej książki** sekcji interfejsu użytkownika.
+-   Druga instrukcja tworzy nową <xref:System.Xml.Linq.XElement> z ciągu wartości które użytkownik wprowadził w **Dodawanie nowej książki** sekcji interfejsu użytkownika.
 
--   Ostatnią instrukcją dodaje ten nowy element książki do dostawcy danych w L2DBForm.xaml. W rezultacie powiązania danych dynamicznego automatycznie zaktualizuje interfejsu użytkownika tego nowego elementu; Brak kodu bardzo dostarczone przez użytkownika jest wymagana.
+-   Ostatnią instrukcją dodaje ten nowy element książki do dostawcy danych w *L2DBForm.xaml*. W związku z tym dane dynamiczne powiązanie automatycznie aktualizuje interfejsu użytkownika za pomocą tego nowego elementu; bardzo dostarczone przez użytkownika jest wymagany żaden kod.
 
 ## <a name="onremove-event-handler"></a>Program obsługi zdarzeń OnRemove
 
-`OnRemove` Program obsługi jest bardziej skomplikowane niż `OnAddBook` obsługi dwóch powodów. Najpierw ponieważ raw XML zawiera zachowanego biały znak, dopasowania newlines musi zostać usunięty z wpisu książki. Po drugie, jako udogodnienie zaznaczenia, który został usunięty element, zostanie zresetowany do poprzedniego na liście.
+`OnRemove` Program obsługi jest bardziej skomplikowane niż `OnAddBook` obsługi dwóch powodów. Po pierwsze ponieważ nieprzetworzonym kodzie XML zawiera zachowanych biały znak, dopasowania oddzielane należy również usunąć wpis książki. Po drugie dla wygody zaznaczoną opcję spowodowało na usunięty element jest resetowany do poprzedniego na liście.
 
-Jednak usunięcie elementu zaznaczoną książkę pracy core odbywa się przy tylko dwie instrukcje:
+Jednak pracy core usunięcia elementu zaznaczoną książkę odbywa się przez tylko dwóch instrukcji:
 
--   Po pierwsze element book skojarzony z aktualnie wybranego elementu w polu listy są pobierane:
+-   Po pierwsze element książki, skojarzone z aktualnie wybranego elementu w polu listy są pobierane:
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
 -   Następnie ten element zostanie usunięty z dostawcy danych:
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 
-Ponownie powiązania danych dynamicznego zapewnia interfejsu użytkownika programu jest automatycznie aktualizowany.
+Ponownie wiązania danych dynamicznego gwarantuje interfejsu użytkownika programu jest automatycznie aktualizowana.
 
 ## <a name="example"></a>Przykład
 
@@ -141,5 +141,5 @@ Dla skojarzonego źródła XAML te programy obsługi, zobacz [kod źródłowy L2
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: LinqToXmlDataBinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Wskazówki: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Kod źródłowy L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)
