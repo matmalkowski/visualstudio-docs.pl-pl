@@ -1,5 +1,5 @@
 ---
-title: Czasów reakcji obciążenia testowania w programie Visual Studio
+title: Czasy reakcji testy obciążeniowe w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad5961d3af1e729d33d216c55e7386885a970e0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4eafd4e031188e62b502dc7fd6c04ebee0d145d3
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965497"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153481"
 ---
-# <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnienia człowieka witryny sieci Web w scenariuszach testów obciążenia
+# <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnienia interakcja z witryny sieci Web w scenariuszach testów obciążenia
 
-Czasów reakcji są używane do symulowania człowieka zachowanie, które powoduje, że osoby między interakcji z witryną sieci Web. Czasów reakcji wystąpić żądań w teście wydajności sieci Web oraz między iteracji testowych w scenariuszu testu obciążenia. Może być przydatne podczas tworzenia bardziej dokładne symulacje obciążenia przy użyciu czasów reakcji w teście obciążenia. Czy testy Pomyśl czasy są używane lub ignorowane w obciążeniu, można zmienić. Możesz określić, czy Pomyśl czasy są używane w obciążenia testów w edytorze testu obciążenia.
+Czasy reakcji służą do symulowania zachowań ludzkich, który powoduje, że osoby do interakcji z witryną sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci Web i między poszczególnymi iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążeniowym może być przydatne przy tworzeniu bardziej dokładnych symulacji obciążenia. Można zmienić, czy testy reakcji, czasy są używane, lub zignorować obciążenia. Możesz określić, czy reakcji, czasy są używane w obciążenia testy w **edytorze testu obciążeniowego**.
 
- *Wziąć pod uwagę profilu* to ustawienie ma zastosowanie do scenariusza w teście obciążenia. Ustawienie określa, czy traktować razy, które są zapisywane w poszczególnych testów wydajności sieci Web są używane podczas testu obciążenia. Jeśli chcesz użyć wziąć pod uwagę razy w niektórych testów wydajności sieci Web, ale nie w innych osób, należy umieścić je w różnych scenariuszach. Aby uzyskać więcej informacji na temat scenariuszy, zobacz [edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md).
+ *Profil reakcji* to ustawienie ma zastosowanie do scenariusza w teście obciążeniowym. Ustawienie określa, czy reakcji, czasy, które są zapisywane w poszczególnych testów wydajności sieci Web są używane podczas testu obciążeniowego. Jeśli chcesz używać traktować razy w niektórych testów wydajności sieci Web, ale nie w innych, należy umieścić je w różnych scenariuszach. Aby uzyskać więcej informacji na temat scenariuszy, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
 
- Początkowo ustawiony czy używać czasów reakcji w testach obciążenia podczas tworzenia testu obciążenia za pomocą załadować Test Kreator nowego. Aby uzyskać więcej informacji, zobacz [edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md).
+ Początkowo ustawić czy używać czasów reakcji w testach obciążenia, podczas tworzenia testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**. Aby uzyskać więcej informacji, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md).
 
- Na poniższej liście opisano opcje profilu wziąć pod uwagę:
+ **Profil reakcji** opcje są opisane na poniższej liście:
 
 **Off**
 
-Czasy reakcji są ignorowane. Tego ustawienia należy używać wtedy, gdy chcesz wygenerować maksymalne obciążenie w dużym stopniu obciąża aspekt serwera sieci Web. Nie jest używana podczas próby utworzenia bardziej realistyczne interakcji użytkowników z serwera sieci Web.
+Czasy reakcji są ignorowane. Użyj tego ustawienia, jeśli chcesz wygenerować maksymalnego obciążenia intensywnie podkreślanie serwera sieci Web. Nie jest używana podczas próby tworzenia bardziej realistycznego interakcji użytkownika z serwerem sieci Web.
 
 **On**
 
-Czasy reakcji są używane, dokładnie tak, jak są one rejestrowane w teście wydajności sieci Web. Symuluje wielu użytkownikom uruchamianie testów wydajności sieci Web, dokładnie tak, jak rejestrowane. Ponieważ symuluje testu obciążenia wielu użytkowników, korzystającej z tego samego wydaje się, że czas można utworzyć wzorca obciążenia nienaturalnej zsynchronizowanych użytkowników wirtualnych.
+Czasy reakcji służą dokładnie tak, jak są one rejestrowane w teście wydajności sieci Web. Symuluje wielu użytkownikom uruchamianie testów wydajności sieci Web, dokładnie tak, jak zarejestrowany. Ponieważ zasymulowano obciążenie wielu użytkowników, korzystając z tych samych zdaniem czasu można utworzyć wzorzec obciążenia nienaturalnym synchronizowanych użytkowników wirtualnych.
 
 **Rozkład normalny**
 
-Czasów reakcji są używane, ale różne na typową krzywą. Zapewnia bardziej realistyczne symulacji wirtualnych użytkowników przez zróżnicowanie nieco czasu namysłu między żądaniami.
+Czasy reakcji są używane, ale zróżnicowane na typową krzywą. Zapewnia bardziej realistyczna symulacja użytkowników wirtualnych przez zróżnicowanie nieco czas namysłu między żądaniami.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-## <a name="changing-the-think-profile"></a>Zmiana reakcji profilu
+## <a name="change-the-think-profile"></a>Zmień profil reakcji
 
-### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Aby zmienić reakcji profil w scenariuszu testu obciążenia
+### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Aby zmienić profil reakcji w scenariuszu testu obciążenia
 
-1.  Od wydajności sieci Web i obciążenia projekt testowy, otwórz testu obciążenia.
+1.  Od wydajności sieci Web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  W **edytora testu obciążenia**, wybierz węzeł scenariusz, której chcesz zmienić **wziąć pod uwagę profilu**. **Wziąć pod uwagę profilu** jest wyświetlany w oknie właściwości. Naciśnij klawisz F4, aby wyświetlić okno właściwości.
+2.  W **edytora testu obciążenia**, wybierz węzeł scenariusz, w której chcesz zmienić **profil reakcji**. **Profil reakcji** jest wyświetlany w **właściwości** okna. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
-3.  Zmień **wziąć pod uwagę profilu** właściwości w oknie właściwości.
+3.  Zmiana **profil reakcji** właściwość **właściwości** okna.
 
-4.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego profilu reakcji.
+4.  Po zmianie właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić test obciążenia przy użyciu nowego profilu reakcji.
 
 ## <a name="see-also"></a>Zobacz także
 

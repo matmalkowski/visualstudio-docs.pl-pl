@@ -1,5 +1,5 @@
 ---
-title: TARGET — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Docelowy Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183e549f6f582593915a89b7b0e907aa97253b17
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326643"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152464"
 ---
-# <a name="target-element-msbuild"></a>Target — Element (MSBuild)
-Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
+# <a name="target-element-msbuild"></a>TARGET — element (MSBuild)
+Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
 
  \<Project>  
  \<Docelowy >  
@@ -61,48 +61,48 @@ Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/int
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Name`|Atrybut wymagany.<br /><br /> Nazwa elementu docelowego.|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Jeśli wyrażenie `false`, element docelowy nie zostanie wykonany treści docelowej lub obiektów docelowych, które są ustawiane w `DependsOnTargets` atrybutu. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Sygnatury czasowe plików będą porównywane ze znacznikami czasu plików w `Outputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: tworzenie przyrostowo](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki, które formujących produkty wyjściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Sygnatury czasowe plików będą porównywane ze znacznikami czasu plików w `Inputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: tworzenie przyrostowo](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
-|`Returns`|Atrybut opcjonalny.<br /><br /> Zestaw elementów, które będą dostępne do zadań, które wywołują ten element docelowy, na przykład zadania programu MSBuild. Wiele obiektów docelowych są oddzielone średnikami. Jeśli nie mają elementów docelowych w pliku `Returns` atrybutów wyjściowych atrybuty są używane zamiast niej w tym celu.|  
-|`KeepDuplicateOutputs`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, wiele odwołań do tego samego elementu w element docelowy zwraca są rejestrowane.  Domyślnie ten atrybut jest `false`.|  
-|`BeforeTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych.  W przypadku wskazuje, że ten element docelowy powinien być wykonywany przed określonego obiektu docelowego lub miejsc docelowych. Dzięki temu Autor projektu rozszerzyć bez bezpośrednie modyfikowanie istniejącego zestawu elementów docelowych. Aby uzyskać więcej informacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).|  
-|`AfterTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych. W przypadku wskazuje, że ten element docelowy powinny być uruchamiane po określonego obiektu docelowego lub miejsc docelowych. Dzięki temu Autor projektu rozszerzyć bez bezpośrednie modyfikowanie istniejącego zestawu elementów docelowych. Aby uzyskać więcej informacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).|  
-|`DependsOnTargets`|Atrybut opcjonalny.<br /><br /> Obiekty docelowe, które należy wykonać, można było wykonać ten element docelowy lub analizy zależności najwyższego poziomu mogą wystąpić. Wiele obiektów docelowych są oddzielone średnikami.|  
-|`Label`|Atrybut opcjonalny.<br /><br /> Identyfikator, który można identyfikacji lub porządkowania elementów systemu i użytkownika.|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Jeśli warunek jest `false`, element docelowy nie zostanie wykonany treści obiektu docelowego lub obiektów docelowych, które są ustawiane w `DependsOnTargets` atrybutu. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Outputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki wyjściowe do tego obiektu docelowego. Wiele plików są oddzielone średnikami. Pliki znacznikami czasu będą porównywane ze znacznikami czasu plików w `Inputs` ustalenie, czy `Target` jest aktualny. Aby uzyskać więcej informacji, zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md), [porady: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md), i [przekształca](../msbuild/msbuild-transforms.md).|  
+|`Returns`|Atrybut opcjonalny.<br /><br /> Zestaw elementów, które będą dostępne do zadań, które wywołują ten element docelowy, na przykład zadania programu MSBuild. Wiele elementów docelowych są oddzielone średnikami. Jeśli nie mają elementów docelowych w pliku `Returns` atrybuty danych wyjściowych atrybuty są używane zamiast tego w tym celu.|  
+|`KeepDuplicateOutputs`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, są rejestrowane przez wiele odwołań do tego samego elementu w element docelowy.  Domyślnie ten atrybut jest `false`.|  
+|`BeforeTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych.  Jeśli zostanie określony, wskazuje, że ten element docelowy powinien być wykonywany przed określonego obiektu docelowego lub miejsc docelowych. Dzięki temu autora projektu rozszerzenia istniejącego zestawu obiektów docelowych bez modyfikowania ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).|  
+|`AfterTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych. Jeśli zostanie określony, wskazuje, że ten element docelowy powinien być wykonywany po określonego obiektu docelowego lub miejsc docelowych. Dzięki temu autora projektu rozszerzenia istniejącego zestawu obiektów docelowych bez modyfikowania ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [kolejność kompilacji docelowej](../msbuild/target-build-order.md).|  
+|`DependsOnTargets`|Atrybut opcjonalny.<br /><br /> Może wystąpić, obiektów docelowych, które muszą być wykonane przed ten element docelowy, mogą być wykonywane lub analizy zależności najwyższego poziomu. Wiele elementów docelowych są oddzielone średnikami.|  
+|`Label`|Atrybut opcjonalny.<br /><br /> Identyfikator, który może identyfikacji lub porządkowania elementów systemu i użytkownika.|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Zadanie](../msbuild/task-element-msbuild.md)|Tworzy i wykonuje wystąpienia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań. Element docelowy może być zero lub więcej zadań.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Property` elementów. W programie .NET Framework 3.5, `Target` element może zawierać `PropertyGroup` elementów.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Item` elementów. W programie .NET Framework 3.5, `Target` element może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).|  
-|[OnError —](../msbuild/onerror-element-msbuild.md)|Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybut jest ErrorAndStop (lub `false`) dla zadania nie powiodło się. Może wynosić zero lub więcej `OnError` elementy w element docelowy. Jeśli `OnError` elementy są obecne, muszą one być ostatnich elementów w `Target` elementu.<br /><br /> Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — Element (MSBuild)](../msbuild/task-element-msbuild.md).|  
+|[Zadanie](../msbuild/task-element-msbuild.md)|Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. W elemencie docelowym może być zero lub więcej zadań.|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Property` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `PropertyGroup` elementów.|  
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Item` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).|  
+|[OnError](../msbuild/onerror-element-msbuild.md)|Powoduje, że jeden lub więcej obiektów docelowych do wykonania, jeśli `ContinueOnError` atrybut jest ErrorAndStop (lub `false`) dla zadania nie powiodło się. Może wynosić zero lub więcej `OnError` elementy w elemencie docelowym. Jeśli `OnError` elementy, muszą być ostatnie elementy w `Target` elementu.<br /><br /> Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — element (MSBuild)](../msbuild/task-element-msbuild.md).|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
- Pierwszy element docelowy do wykonania jest określona w czasie wykonywania. Obiekty docelowe może być zależny od innych celów. Na przykład cel wdrożenia jest zależny od docelowej dla kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat wykonuje zależności w kolejności, w jakiej występują w `DependsOnTargets` atrybutu od lewej do prawej. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  
+ Pierwszy element docelowy do wykonania jest określona w czasie wykonywania. Obiekty docelowe mogą mieć zależności na innych celów. Na przykład cel wdrożenia jest zależny od docelowej dla kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat wykonuje zależności w kolejności, w jakiej występują w `DependsOnTargets` atrybutu, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  
 
- Element docelowy jest wykonywane tylko raz podczas kompilacji, nawet wtedy, gdy więcej niż jeden element docelowy ma zależność od niej.  
+ Obiekt docelowy jest wykonywane tylko raz podczas kompilacji, nawet wtedy, gdy więcej niż jeden element docelowy ma zależność od jej.  
 
- Jeśli element docelowy jest pominięta, ponieważ jego `Condition` atrybutu daje w wyniku `false`, mogą być wykonywane nadal, jeśli jest wywoływana w dalszej części kompilacji i jej `Condition` daje w wyniku atrybutu `true` w tym czasie.  
+ Jeśli element docelowy jest pomijany, ponieważ jego `Condition` atrybutu daje w wyniku `false`, mogą być wykonywane nadal, jeśli jest wywoływany w dalszej części kompilacji i jej `Condition` atrybutu daje w wyniku `true` w tym czasie.  
 
- Przed MSBuild 4 `Target` zwrócone wszystkie elementy, które zostały określone w `Outputs` atrybutu.  Aby to zrobić, MSBuild musiał Rejestruj, w przypadku żądanego zadania później w kompilacji, ich. Ponieważ nie było w żaden sposób, aby wskazać, które obiekty docelowe ma wyjść, które wymagają wywołań, MSBuild zgromadzonych wszystkie elementy ze wszystkich `Outputs` na wszystkich wywoływane `Target`s. To prowadzić do skalowania problemów dla kompilacji, które ma dużą liczbę elementów danych wyjściowych.  
+ Przed MSBuild 4 `Target` zwrócone wszystkie elementy, które zostały określone w `Outputs` atrybutu.  Aby to zrobić, MSBuild musiał Rejestruj, w przypadku, gdy zadania w dalszej części kompilacji żądane je. Ponieważ nie było żadnych sposób, aby wskazać, które elementy docelowe miał danych wyjściowych, które wymagałyby obiektów wywołujących, program MSBuild zgromadzonych wszystkie elementy ze wszystkich `Outputs` na wszystkich wywoływane `Target`s. To doprowadzić do skalowania problemy dla kompilacji, które ma dużą liczbę elementów danych wyjściowych.  
 
- Jeśli użytkownik określi `Returns` na dowolnym `Target` element w projekcie, a następnie tylko te `Target`s, który ma `Returns` atrybutu rejestrowanie tych elementów.  
+ Jeśli użytkownik określi `Returns` na dowolnym `Target` elementu w projekcie, a następnie tylko te `Target`s, który ma `Returns` atrybut rejestrowanie tych elementów.  
 
- A `Target` może zawierać zarówno `Outputs` atrybutu i `Returns` atrybutu.  `Outputs` jest używany z `Inputs` do ustalenia, czy element docelowy jest aktualny. `Returns`, jeśli jest obecny, wartość przesłania `Outputs` ustalenie, elementy, które są zwracane do wywoływania.  Jeśli `Returns` nie jest obecny, następnie `Outputs` będą dostępne dla kodu wywołującego, z wyjątkiem w tym przypadku opisanego wcześniej.  
+ A `Target` może zawierać zarówno `Outputs` atrybutu i `Returns` atrybutu.  `Outputs` jest używana z `Inputs` do ustalenia, czy element docelowy jest aktualny. `Returns`, jeśli jest obecna, przesłania wartość `Outputs` Aby określić elementy, które są zwracane do obiektów wywołujących.  Jeśli `Returns` nie jest dostępny, wówczas `Outputs` będą dostępne dla kodu wywołującego, z wyjątkiem w przypadku opisanego wcześniej.  
 
- Przed MSBuild 4, który wtedy `Target` dołączony wiele odwołań do tego samego elementu w jego `Outputs`, zduplikowane pozycje są rejestrowane. W bardzo dużych kompilacji, który ma dużą liczbę wyjść i wiele zależnościami projektu, spowodowałoby dużej ilości pamięci do niewykorzystana, ponieważ zduplikowane elementy nie zostały użycia. Gdy `KeepDuplicateOutputs` atrybut ma ustawioną `true`, te duplikaty są rejestrowane.  
+ Przed 4 programu MSBuild, dowolny czas `Target` uwzględnione wiele odwołań do tego samego elementu w jego `Outputs`, są zapisywane te zduplikowane elementy. W bardzo dużych kompilacji, który ma dużą liczbę danych wyjściowych i wiele współzależności projektu, spowodowałoby to duża ilość pamięci do zostałby zmarnowany, ponieważ zduplikowane elementy nie zostały każde użycie. Gdy `KeepDuplicateOutputs` ma ustawioną wartość atrybutu `true`, są rejestrowane następujące duplikaty.  
 
 ## <a name="example"></a>Przykład  
- Poniższy kod przedstawia przykład `Target` element, który wykonuje `Csc` zadań.  
+ Poniższy kod przedstawia przykład `Target` element, który jest wykonywany `Csc` zadania.  
 
 ```xml  
 <Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">  
@@ -118,6 +118,6 @@ Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/int
 </Target>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Obiekty docelowe](../msbuild/msbuild-targets.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

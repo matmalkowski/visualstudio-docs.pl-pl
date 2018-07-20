@@ -20,31 +20,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e8c45e966c83549f2bb99a5ba8d6a2b7cd9d15f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1e3eb6108ac96716895ff996b043bc486c16e38
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569358"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155441"
 ---
-# <a name="registerassembly-task"></a>RegisterAssembly — Zadanie
-Odczytuje metadanych w obrębie określonego zestawu i dodaje niezbędne wpisy w rejestrze, dzięki czemu klienci COM utworzyć [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klas w sposób niewidoczny dla użytkownika. Zachowanie tego zadania jest podobny, ale nie są identyczne, te [Regasm.exe (narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  
+# <a name="registerassembly-task"></a>RegisterAssembly — zadanie
+Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru, co umożliwia klientom COM utworzyć [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy w sposób niewidoczny dla użytkownika. Zachowanie to zadanie jest podobne, ale nie są identyczne, z [Regasm.exe (narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `RegisterAssembly` zadań.  
+ W poniższej tabeli opisano parametry `RegisterAssembly` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Assemblies`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa zestawy, które ma zostać zarejestrowany z modelu COM.|  
-|`AssemblyListFile`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Zawiera informacje o stanie między `RegisterAssembly` zadań i [unregisterassembly —](../msbuild/unregisterassembly-task.md) zadań. Zapobiega to `UnregisterAssembly` zadań z próby wyrejestrować zestawu, którego nie udało się zarejestrować w `RegisterAssembly` zadań.|  
-|`CreateCodeBase`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy codebase wpis w rejestrze, który określa ścieżkę do zestawu, który nie jest zainstalowany w globalnej pamięci podręcznej zestawów. Nie należy określać tej opcji, jeśli później instalowany będzie zestaw, który jest rejestrowany w globalnej pamięci podręcznej zestawów.|  
-|`TypeLibFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Określa bibliotekę typów, aby wygenerować z określonego zestawu. Biblioteka wygenerowanego typu zawiera definicje dostępne typy zdefiniowane w zestawie. Biblioteki typów jest generowany tylko, jeśli jest spełniony jeden z następujących czynności:<br /><br /> -Biblioteki typów o tej nazwie nie istnieje w tej lokalizacji.<br />-Biblioteki typów istnieje, ale jest starszy niż zestaw przekazywany.<br /><br /> Jeśli biblioteka typów jest nowsza niż zestaw przekazywany, nie zostanie utworzony nowy, ale nadal będzie można zarejestrować zestawu.<br /><br /> Jeśli ten parametr jest określony, musi mieć taką samą liczbę elementów jako `Assemblies` parametru lub zadanie zakończy się niepowodzeniem. Jeśli nie określono żadnych danych wejściowych, zadanie zostanie domyślnie nazwa zestawu i zmień rozszerzenie elementu .tlb.|  
+|`Assemblies`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa zestawy, które mają być zarejestrowane przy użyciu modelu COM.|  
+|`AssemblyListFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Zawiera informacje na temat stanu między `RegisterAssembly` zadań i [unregisterassembly —](../msbuild/unregisterassembly-task.md) zadania. Te informacje zapobiega `UnregisterAssembly` zadanie z próbą wyrejestrowanie zestawie, do którego nie można zarejestrować w `RegisterAssembly` zadania.|  
+|`CreateCodeBase`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy wpis codebase w rejestrze, który określa ścieżkę pliku dla zestawu, który nie jest zainstalowany w globalnej pamięci podręcznej. Nie należy określać tej opcji, jeśli później instalowany będzie zestaw, który jest rejestrowany w globalnej pamięci podręcznej zestawów.|  
+|`TypeLibFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa plik biblioteki typów do wygenerowania z określonego zestawu. Biblioteka wygenerowany typ zawiera definicje dostępnych typów zdefiniowanych w zestawie. Biblioteka typów jest generowany tylko w sytuacji, gdy jest spełniony jeden z następujących warunków:<br /><br /> -Bibliotekę typów o takiej nazwie nie istnieje w tej lokalizacji.<br />— Biblioteka typów istnieje, ale jest starszy niż zestaw przekazywany.<br /><br /> Jeśli biblioteka typów jest nowsza niż zestaw przekazywana, nie zostaną utworzone nowe konto, ale nadal będzie można zarejestrować zestawu.<br /><br /> Jeśli ten parametr jest określony, musi mieć taką samą liczbę elementów jako `Assemblies` parametru lub zadanie zakończy się niepowodzeniem. Jeśli nie określono żadnych danych wejściowych, zadanie będzie domyślnie nazwa zestawu i zmień rozszerzenie elementu *.tlb*.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `RegisterAssembly` zadań można zarejestrować zestawu określony przez `MyAssemblies` Kolekcja elementów.  
+ W poniższym przykładzie użyto `RegisterAssembly` zadanie, aby zarejestrować zestaw określony przez `MyAssemblies` elementu kolekcji.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -61,6 +61,6 @@ Odczytuje metadanych w obrębie określonego zestawu i dodaje niezbędne wpisy w
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

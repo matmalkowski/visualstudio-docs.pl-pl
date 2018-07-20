@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7d300a1a47499f963e7ff717c12f72e2483e05
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326322"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152191"
 ---
-# <a name="propertygroup-element-msbuild"></a>PropertyGroup — Element (MSBuild)
-Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być elementem podrzędnym elementu `PropertyGroup` elementu.  
+# <a name="propertygroup-element-msbuild"></a>PropertyGroup — element (MSBuild)
+Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` elementu używanego przy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być obiektem podrzędnym obiektu `PropertyGroup` elementu.  
 
  \<Project>  
  \<PropertyGroup>  
@@ -49,22 +49,22 @@ Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/pro
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|Warunek|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwości* elementów w `PropertyGroup` elementu.|  
+|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwość* elementów w `PropertyGroup` elementu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="example"></a>Przykład  
- Poniższy przykładowy kod przedstawia sposób ustawiania właściwości na podstawie warunku. W tym przykładzie Jeśli wartość `CompileConfig` właściwość jest `DEBUG`, `Optimization`, `Obfuscate`, i `OutputPath` właściwości wewnątrz `PropertyGroup` ustawiono element.  
+ Poniższy przykład kodu pokazuje sposób ustawiania właściwości na podstawie warunku. W tym przykładzie Jeśli wartość `CompileConfig` właściwość `DEBUG`, `Optimization`, `Obfuscate`, i `OutputPath` właściwości wewnątrz `PropertyGroup` elementu są ustawione.  
 
 ```xml  
 <PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  
@@ -74,6 +74,6 @@ Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/pro
 </PropertyGroup>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
  [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Mapy bitowej elementu | Dokumentacja firmy Microsoft
+title: Bitmap, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2456e68088208e4915fe4809c411e5ec002de7b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27e37a9da06145df2e940705650b1ab085250c53
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098111"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150814"
 ---
-# <a name="bitmap-element"></a>Element mapy bitowej
-Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.  
+# <a name="bitmap-element"></a>Bitmap, element
+Definiuje mapę bitową. Mapa bitowa jest ładowany z zasobu lub z pliku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,11 +37,11 @@ Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikator GUID/identyfikator polecenia.<br /><br /> Atrybut identyfikatora guid dla mapy bitowej nie jest skojarzony z dowolnym pakiet VSPackage lub innej grupie polecenia.  Powinna być unikatowa w definicji mapy bitowej, a nie powinna być używana do innych celów.|  
-|resID|Identyfikator GUID/identyfikator identyfikator polecenia. Wymagany jest resID lub atrybut href.<br /><br /> Atrybut resID jest liczbą całkowitą identyfikator zasobu określa paska mapy bitowej, który ma być załadowany podczas scalania tabeli polecenia.  Podczas ładowania tabeli poleceń, określony przez identyfikator zasobu mapy bitowej zostaną załadowane z zasobów tego samego modułu.|  
-|usedList|Wymagane, jeśli obecny jest atrybut resID. Wybiera dostępnych obrazów w paska mapy bitowej.|  
-|href|Ścieżka do mapy bitowej. Wymagany jest resID lub atrybut href.<br /><br /> Ścieżka include jest wyszukiwany plik wskazany obraz, który jest osadzony w wynikowego pliku binarnego.  Podczas scalania tabeli polecenia obraz jest kopiowany i nie wyszukiwania dodatkowych zasobów obciążenia jest wymagane ani.  Jeśli nie ma atrybutu usedList, dostępne są wszystkie obrazy na pasku. **Uwaga:** obrazy mogą być dostarczane w jednym z kilku formatów obejmujących bmp, PNG i GIF.  Wcześniejszej wersji kompilatora nie obsługuje 32-bitowe bitmapy, których zastosowano dane alfa przezroczystości częściowej. Obejście dla tych wersji jest w formacie PNG.|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.<br /><br /> Atrybut guid dla mapy bitowej nie jest skojarzony z dowolnego pakietu VSPackage lub inne grupy poleceń.  Powinna mieć unikatowe dla definicji mapy bitowej i nie powinna być używana do żadnych innych celów.|  
+|Atrybut resID|Identyfikator GUID/ID identyfikator polecenia. Wymagany jest resID lub atrybut href.<br /><br /> Atrybut resID jest identyfikator zasobu liczba całkowita, określająca paska mapy bitowej, który ma być załadowane podczas tabeli poleceń scalania.  Podczas ładowania tabeli poleceń, mapy bitowe, określonego przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|  
+|usedList|Wymagane, jeśli atrybut resID jest obecny. Wybiera dostępne obrazy paska mapy bitowej.|  
+|href|Ścieżka do mapy bitowej. Wymagany jest resID lub atrybut href.<br /><br /> Ścieżka include jest wyszukiwana w plik wskazany obraz, który jest osadzony w wynikowego pliku binarnego.  Polecenie scalania tabeli obraz, który jest kopiowany, a nie wyszukiwanie dodatkowych zasobów obciążenia jest wymagana ani.  Jeśli nie ma atrybutu usedList, wszystkie obrazy w pasku są dostępne. **Uwaga:** obrazy mogą być dostarczane w jednym z kilku formatów, które obejmują *.bmp*, *.png*, i *.gif*.  Wcześniejsze wersje kompilatora nie obsługiwał obrazy bitmapowe 32-bitowych, których dane alfa przezroczystości częściowe. Obejście dla tych wersji polega na użyciu *.png* formatu.|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -60,5 +60,5 @@ Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.
   usedList="1, 2, 3, 4"/>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

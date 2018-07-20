@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100030"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153036"
 ---
-# <a name="calling-debugger-events"></a>Wywoływanie zdarzeń debugera
-Zdarzenia w sesji debugowania występują w żadnej określonej kolejności.  
+# <a name="call-debugger-events"></a>Wywoływanie zdarzeń debugera
+Zdarzenia w sesji debugowania występują w określonej kolejności.  
   
-## <a name="discussion"></a>Omówienie  
- Aby poznać wzorzec wywołań między aparat debugowania (DE) i Menedżer debugowania sesji (SDM), następujące reprezentuje wywołanie kolejność zdarzeń występujących w typowej sesji debugowania:  
+## <a name="discussion"></a>Dyskusja  
+ Aby poznać wzorzec wywołań między aparat debugowania (DE), a Menedżer debugowania sesji (SDM), następujące reprezentuje kolejność wywoływania zdarzeń występujących w Typowa sesja debugowania:  
   
 1.  [Dołączanie i odłączanie do programu](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
 2.  [Uruchamianie debugera](../../extensibility/debugger/launching-the-debugger.md)  
   
-3.  [Trwa przerywanie wykonywania programu](../../extensibility/debugger/terminating-a-program.md)  
+3.  [Kończenie programu](../../extensibility/debugger/terminating-a-program.md)  
   
 4.  [Tworzenie punktu przerwania](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [Gdy jest powiązany punkt przerwania lub staje się niepowiązanych](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5.  [Gdy powiązanie punktu przerwania lub staje się niepowiązanych](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
 6.  [Błędy punktu przerwania](../../extensibility/debugger/breakpoint-errors.md)  
   
-7.  [Aktywując punkt przerwania](../../extensibility/debugger/hitting-a-breakpoint.md)  
+7.  [Aktywacja punktu przerwania](../../extensibility/debugger/hitting-a-breakpoint.md)  
   
 8.  [Usuwanie punktu przerwania](../../extensibility/debugger/deleting-a-breakpoint.md)  
   
-9. [Wprowadzanie tryb przerwania](../../extensibility/debugger/entering-break-mode.md)  
+9. [Przejście do trybu break](../../extensibility/debugger/entering-break-mode.md)  
   
-10. [Wykonywanie krok po kroku, w trybie przerwania](../../extensibility/debugger/stepping-in-break-mode.md)  
+10. [Wykonywanie krokowe w trybie przerwania](../../extensibility/debugger/stepping-in-break-mode.md)  
   
-11. [Szacowanie wyrażeń w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+11. [Obliczanie wyrażenia w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
 12. [Obsługa wyjątków](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)

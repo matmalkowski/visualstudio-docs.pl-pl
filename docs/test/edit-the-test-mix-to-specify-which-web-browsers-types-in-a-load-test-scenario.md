@@ -1,5 +1,5 @@
 ---
-title: Przeglądarka testu mieszanego dla obciążenia testowania w programie Visual Studio
+title: Przeglądarek test obciążeniowy w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,73 +13,73 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7dc934807ba14b218708086e59765f05b6bee932
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967960"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154931"
 ---
-# <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edytowanie mieszanki testów, aby określić, które Web typów przeglądarek w obciążeniu scenariusza testu
+# <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które typy przeglądarek sieci web w scenariuszu testu obciążenia
 
-*Rozkład przeglądarek* umożliwia Symulacja obciążenia bardziej realistycznie w scenariuszu testu obciążenia. Obciążenia jest generowany przy użyciu heterogenicznych różnych przeglądarek sieci Web, a jeden pojedynczy przeglądarki sieci Web. Możesz utworzyć bliżej zbliżenia przeglądarki sieci Web, które będą używane z aplikacjami.
+*Mieszaną przeglądarkę* umożliwia realistycznie symulować obciążenia więcej w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu różnorodnych przeglądarek sieci Web zamiast jednej przeglądarki sieci Web. Możesz utworzyć zbliżenie przeglądarek sieci Web, które będą używane z aplikacjami.
 
- Rozkład przeglądarek określa prawdopodobieństwo wirtualny użytkownik korzystający z określonego typu przeglądarki sieci Web w scenariuszu testu obciążenia. Podczas tworzenia testu obciążenia można symulować, czy obciążenie jest generowany przez więcej niż jednej przeglądarki sieci Web. Po dodaniu typ przeglądarki sieci Web z różnymi z zestawu przeglądarki sieci Web, które są dostarczane, zbiór skojarzone nagłówki dla wybranej przeglądarki sieci Web jest dodawany na każde żądanie HTTP, który jest przesyłany w teście wydajności sieci Web.
+ Mieszana przeglądarka określa prawdopodobieństwo, że użytkownik wirtualny uruchomi określonego typu przeglądarki sieci Web w scenariuszu testu obciążenia. Podczas tworzenia testu obciążeniowego można zasymulować, czy obciążenie jest generowane przy użyciu przeglądarek sieci Web. Po dodaniu typ przeglądarki sieci Web do mieszanki z zestawu przeglądarki sieci Web, które znajdują się zestaw skojarzone nagłówki dla wybranej przeglądarki sieci Web zostanie dodany do każdego żądania HTTP, który jest przesyłany przez test wydajności sieci Web.
 
- Rozkład przeglądarek działa jak inne opcje mieszanego. Typ przeglądarki sieci Web jest losowo skojarzony z użytkownikiem wirtualnego oparte na rozkład przeglądarek. Testy tego użytkownika są uruchamiane w szczególności przeglądarki sieci Web, oparte na prawdopodobieństwo, że określone w zestawie.
+ Mieszana przeglądarka działa jak inne opcje mieszanego. Typ przeglądarki sieci Web jest losowo skojarzony użytkownik wirtualny, oparte na mieszaną przeglądarkę. Tego użytkownika są testy w konkretnej przeglądarce sieci Web oparte na prawdopodobieństwo, że określone w zestawie.
 
- Po określeniu rozkład przeglądarek, można później Dodawanie i usuwanie typów przeglądarek sieci Web z różnymi. Możesz również zmienić dystrybucji mieszanego przeglądarki za pomocą formantu mieszanego. Formant mieszanego pozwala łatwo Dopasuj rozkład przeglądarek w scenariuszu.
+ Po określeniu mieszaną przeglądarkę można później dodać i usunąć typy przeglądarek sieci Web do mieszanki. Można również zmienić rozkład przeglądarek, za pomocą formantu mieszanego. Kontrolka mieszanego pozwala łatwo dopasować rozkład przeglądarek w scenariuszu.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>Dodawanie nowych przeglądarek do scenariusza
+## <a name="add-new-browsers-to-a-scenario"></a>Dodanie nowych przeglądarek do scenariusza
 
-### <a name="to-add-new-browsers-to-a-scenario"></a>Aby dodać nowy przeglądarek do scenariusza
+### <a name="to-add-new-browsers-to-a-scenario"></a>Aby dodać nowych przeglądarek do scenariusza
 
-1.  Gdy w trakcie określania wybierz rozkład przeglądarek do scenariusza **Dodaj**.
+1.  Gdy w trakcie określania wybierz przeglądarek do scenariusza **Dodaj**.
 
-     Nowy wpis przeglądarki jest dodawany do siatki.
+     Nowy wpis w przeglądarce jest dodawany do siatki.
 
     > [!NOTE]
-    > Do wyświetlenia **Edytuj rozkład przeglądarek** okno dialogowe, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz pozycję **Edytuj rozkład przeglądarek**.
+    > Aby wyświetlić **Edytuj mieszaną przeglądarkę** okna dialogowego pole, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Edytuj mieszaną przeglądarkę**.
 
-2.  W **typ przeglądarki** kolumny, wybierz strzałkę nowego wpisu i wybierz typ żądanego przeglądarki.
+2.  W **typ przeglądarki** kolumnę, wybierz strzałkę znajdującą się nowy wpis i wybierz typ żądanego przeglądarki.
 
-3.  (Opcjonalnie) Dostosuj kontroli mieszanego do określenia dystrybucji testu.
+3.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
 
-4.  Po zakończeniu dodawania przeglądarki wybierz **OK**.
+4.  Po zakończeniu dodawania przeglądarki, wybierz **OK**.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> Usuwanie przeglądarek ze scenariusza
+##  <a name="remove-browsers-from-a-scenario"></a>Usuwanie przeglądarek ze scenariusza
 
-### <a name="to-remove-browsers-from-a-scenario"></a>Aby usunąć przeglądarki z scenariusza
+### <a name="to-remove-browsers-from-a-scenario"></a>Aby usunąć przeglądarki ze scenariusza
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-2.  Kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć przeglądarki, a następnie wybierz pozycję **Edytuj rozkład przeglądarek**.
+2.  Kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć przeglądarkę, a następnie wybierz polecenie **Edytuj mieszaną przeglądarkę**.
 
-     **Edytuj rozkład przeglądarek** zostanie wyświetlone okno dialogowe.
+     **Edytuj mieszaną przeglądarkę** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz przeglądarkę w siatce, a następnie wybierz pozycję **Usuń**.
+3.  Wybierz przeglądarkę w siatce, a następnie wybierz **Usuń**.
 
-4.  (Opcjonalnie) Dostosuj kontroli mieszanego do określenia dystrybucji testu.
+4.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu.
 
-5.  Po zakończeniu usuwanie przeglądarek wybierz **OK**.
+5.  Po zakończeniu usuwania przeglądarki, wybierz **OK**.
 
 ## <a name="about-the-mix-control"></a>Informacje o formancie mieszany
 
- Formant mieszanego pozwala na dostosowanie procent obciążenia, które jest rozdzielona testy, typy przeglądarek lub typów sieci w scenariuszu testu obciążenia. Wartości procentowe są Dostosuj Przesuń suwaki. Dopasowywanie różnych typów przeglądarki określa prawdopodobieństwo wirtualny użytkownik, który uruchomił typ przeglądarki określonych w scenariuszu testu obciążenia.
+ Sterowanie mieszany umożliwia dostosowanie procent obciążenia, który jest rozproszona w ramach testów, typy przeglądarek i typy sieci w scenariuszu testu obciążenia. Wartości procentowe można dostosować, przenosząc suwaki. Dostosowywanie mieszany profil dla typów przeglądarek określa prawdopodobieństwo, że użytkownik wirtualny uruchomi typ przeglądarki w scenariuszu testu obciążenia.
 
- W przypadku przenoszenia suwaka, zmień wartości procentowe wszystkie dostępne elementy. Jeśli masz więcej niż dwa elementy wielkość Dodaj lub usuń jest równomiernie między innymi elementami. Istnieje możliwość zastąpienia tego zachowania. Zaznacz pole wyboru w kolumnie blokady dla danego elementu, należy zablokować określoną wartość procentową wartość dla tego elementu. Następnie gdy suwak wielkość Dodaj lub usuń jest stosowana tylko do wszystkie pozostałe elementy odblokowane.
+ Podczas przesuwania suwaka, zmień wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota, dodawanie lub usuwanie jest rozłożona równomiernie innych elementów. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, można zablokować określoną wartość procentową wartość dla tego elementu. Następnie podczas przesuwania suwaka, kwota, dodawanie lub usuwanie są stosowane tylko do wszystkie pozostałe elementy odblokowane.
 
- **Dystrybucji** przycisk umożliwia przydzielenie wartości procentowe równomiernie wszystkie elementy. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34 33 i 33.
+ **Dystrybucji** przycisk służy do przydzielania wartości procentowe równomiernie wszystkie elementy. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34, 33 i 33.
 
 > [!WARNING]
 > **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
- Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
+ Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny, a nie za pomocą suwaków. Jeśli bezpośrednio wprowadzasz wartość procentową, inne elementy nie skoryguje automatycznie.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w **%** kolumny są miejsc dziesiętnych.
+> Suwaki są wyłączone, gdy łączny nie powoduje dodania do 100% lub wartości procentowe są wprowadzane do **%** kolumny są liczbę miejsc dziesiętnych.
 
- Po wprowadzeniu wartości procentowe ręcznie, należy upewnić się, że suma wszystkich elementów jest 100%. Po zapisaniu mieszane, jeśli nie jest sumą 100%, pojawi się monit zaakceptować wartości procentowe są one lub do Przejdź wstecz i dostosować je. Jeśli wybierzesz je zaakceptować, ponieważ są one, zostaną obliczone proporcjonalnie do 100%.  Na przykład jeśli dwa elementy i ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawiona do 66,67% (80 podzielona przez 120) i drugiego elementu zostanie ustawiona do 33,33% (40 podzielona przez 120).
+ Po wprowadzeniu wartości procentowe ręcznie, należy pamiętać, że sumę wszystkich elementów wynosi 100%. Podczas zapisywania mieszany, jeśli suma nie jest w 100%, możesz zostanie wyświetlony monit o zaakceptowanie wartości procentowe są one, lub przejdź wstecz i zmieniaj je tak. Jeśli zdecydujesz się je zaakceptować, ponieważ są one, będzie naliczana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy, a następnie ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawione na % 66,67 (80 podzielona przez 120), a drugi element zostanie ustawione na % 33,33 (40 podzielona przez 120).
 
 ## <a name="see-also"></a>Zobacz także
 

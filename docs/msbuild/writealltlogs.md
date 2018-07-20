@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de6a67be8390f2b4353b05eea489c07e095b092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ceec441f6f0110ea514225ed0fab4c4dc2d575bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570996"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153088"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
-Zapisuje dzienniki śledzenia dla wszystkich wątków i konteksty.  
+Zapisuje dzienniki śledzenia dla wszystkich wątków i kontekstów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,16 +35,16 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
   
 #### <a name="parameters"></a>Parametry  
  [in] `intermediateDirectory`  
- Katalog, w którym będą przechowywane w dzienniku śledzenia.  
+ Katalog, w którym mają zostać zapisane w dzienniku śledzenia.  
   
  [in] `tlogRootName`  
- Nazwa głównego nazwa pliku dziennika.  
+ Nazwa głównej nazwy pliku dziennika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- **HRESULT** z **zakończyło się pomyślnie** ustawiony bit, jeśli kontekst śledzenia został utworzony.  
+ **HRESULT** z **Powodzenie** bitu, jeśli kontekst śledzenia został utworzony.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h  
+ **Nagłówek:** *FileTracker.h*  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

@@ -21,28 +21,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec47adec3a9c979a21a543f2c073c440384b26d1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e2d9cec2c76b2159e14b1e7abe19b93ab91f6688
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572182"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153777"
 ---
-# <a name="setenv-task"></a>SetEnv — Zadanie
-Ustawia lub usuwa wartość zmiennej określonego środowiska.  
+# <a name="setenv-task"></a>SETENV — zadanie
+Ustawia lub usuwa wartość określonej zmiennej środowiskowej.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **SetEnv** zadań.  
+ W poniższej tabeli opisano parametry **SetEnv** zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
 |**Nazwa**|Wymagane **ciąg** parametru.<br /><br /> Nazwa zmiennej środowiskowej.|  
-|**OutputEnvironmentVariable**|Opcjonalne **ciąg** parametru wyjściowego.<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, która jest określona przez **nazwa** parametru.|  
-|**Prefiks**|Obowiązkowe `Boolean` parametru.<br /><br /> Jeśli `true`, łączy wartość **wartość** parametru przed wartością zmiennej środowiskowej, która jest określona przez **nazwa** parametr, a następnie przypisuje wynik do środowiska Zmienna. Jeśli `false`, przypisuje tylko wartość **wartość** parametr do zmiennej środowiskowej.|  
-|**docelowy**|Opcjonalne **ciąg** parametru.<br /><br /> Określa lokalizację, w której jest przechowywana wartość zmiennej środowiskowej. Określ "`User`"lub"`Machine`".<br /><br /> Aby uzyskać więcej informacji, zobacz "EnvironmentVariableTarget wyliczenie" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**Wartość**|Opcjonalne **ciąg** parametru.<br /><br /> Wartość przypisana do zmiennej środowiskowej, która jest określona przez **nazwa** parametru. Jeśli **wartość** jest pusty i istnieje zmienna, usunąć zmiennej. Jeśli zmienna nie istnieje, nie występuje błąd, nawet jeśli nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz "Metoda Environment::SetEnvironmentVariable" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**OutputEnvironmentVariable**|Opcjonalnie **ciąg** parametr wyjściowy.<br /><br /> Zawiera wartość, która jest przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru.|  
+|**Prefiks**|Obowiązkowe `Boolean` parametru.<br /><br /> Jeśli `true`, łączy wartości **wartość** parametru przed wartością zmiennej środowiskowej, który jest określony przez **nazwa** parametru, a następnie przypisuje wynik do środowiska Zmienna. Jeśli `false`, przypisuje wartość elementu **wartość** parametr do zmiennej środowiskowej.|  
+|**Docelowy**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa lokalizację przechowywania dla zmiennej środowiskowej. Określ "User" lub "Machine".<br /><br /> Aby uzyskać więcej informacji, zobacz [wyliczenie EnvironmentVariableTarget](https://msdn.microsoft.com/library/system.environmentvariabletarget(v=vs.110).aspx) w witrynie MSDN.|  
+|**Wartość**|Opcjonalnie **ciąg** parametru.<br /><br /> Wartość przypisana do zmiennej środowiskowej, który jest określony przez **nazwa** parametru. Jeśli **wartość** jest pusta i zmienna istnieje, zmienna zostanie usunięty. Jeśli zmienna nie istnieje, nie występuje błąd, mimo że nie można wykonać operacji.<br /><br /> Aby uzyskać więcej informacji, zobacz [metoda Environment::SetEnvironmentVariable](https://msdn.microsoft.com/library/96xafkes(v=vs.110).aspx) w witrynie MSDN.|  
   
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

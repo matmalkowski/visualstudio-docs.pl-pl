@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945523"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152558"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd*.  
@@ -78,6 +78,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|  
 |Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania, w postaci {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Opcjonalny ciąg. Ścieżka pliku projektu, do którego prowadzi odwołanie.|  
+|ReferenceOutputAssembly|Opcjonalny atrybut typu wartość logiczna. Jeśli ustawiono `false`, nie zawiera danych wyjściowych przywoływanego projektu jako [odwołania](#Reference) tego projektu, ale zapewnia, że inne projekt zostanie skompilowany przed ten zestaw. Wartość domyślna to `true`.|
   
 ### <a name="compile"></a>Kompilacji  
  Reprezentuje pliki źródłowe dla kompilatora.  

@@ -20,65 +20,63 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578175"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152402"
 ---
-# <a name="resolvecomreference-task"></a>ResolveComReference — Zadanie
-Przyjmuje listę nazw bibliotek typu lub .tlb — pliki i usuwa te biblioteki typów do lokalizacji na dysku.  
+# <a name="resolvecomreference-task"></a>Resolvecomreference — zadanie
+Przyjmuje listę wpisz jeden lub więcej nazw bibliotek lub *.tlb* pliki i jest rozpoznawana jako tych bibliotek typów do lokalizacji na dysku.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `ResolveCOMReference` zadań.  
+ W poniższej tabeli opisano parametry `ResolveCOMReference` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, umieszcza klucz publiczny w zestawie. Jeśli `false`, pełni podpisuje zestawu.|  
-|`EnvironmentVariables`|Opcjonalne `String[]` parametru.<br /><br /> Tablica par zmiennych środowiskowych, oddzielonych znaku równości. Te zmienne są przekazywane do uruchomionego tlbimp.exe i aximp.exe oprócz lub selektywnie zastępowanie, blokowanie regularne środowiska...|  
-|`ExecuteAsTool`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, uruchamia tlbimp.exe i aximp.exe z odpowiedniego docelowego framework poza procesem do generowania otoki niezbędne zestawy. Ten parametr umożliwia wielowersyjności kodu.|  
-|`IncludeVersionInInteropName`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, wersja biblioteki typów będą uwzględniane w nazwie otoki. Wartość domyślna to `false`.|  
-|`KeyContainer`|Opcjonalne `String` parametru.<br /><br /> Określa kontener, który zawiera publiczny/prywatny<br /><br /> pary kluczy.|  
-|`KeyFile`|Opcjonalne `String` parametru.<br /><br /> Określa element, który zawiera publicznego i prywatnego<br /><br /> pary kluczy.|  
-|`NoClassMembers`|Opcjonalne `Boolean`parametru.|  
-|`ResolvedAssemblyReferences`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Określa odwołania rozpoznanego zestawu.|  
-|`ResolvedFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Określa pełną pliki na dysku, które odpowiadają lokalizacje fizyczne bibliotek typów, które zostały podane jako dane wejściowe dla tego zadania.|  
-|`ResolvedModules`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.|  
-|`SdkToolsPath`|Opcjonalne <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Jeśli `ExecuteAsTool` jest `true`, ten parametr musi być ustawiony na ścieżkę narzędzia zestawu SDK dla framework w wersji docelowej.|  
-|`StateFile`|Opcjonalne `String` parametru.<br /><br /> Określa plik pamięci podręcznej sygnatur czasowych składnika COM. Jeśli nie istnieje, uruchom co spowoduje ponowne wygenerowanie wszystkich otoki.|  
-|`TargetFrameworkVersion`|Opcjonalne `String` parametru.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. co oznacza, że nie bez filtrowania dla odwołania oparte na platformie docelowej.|  
-|`TargetProcessorArchitecture`|Opcjonalne `String` parametru.<br /><br /> Określa preferowany docelowej architektury procesora. Przekazany do flagi/Machine tlbimp.exe po translacji.<br /><br /> Wartość parametru musi być członkiem <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
-|`TypeLibFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa ścieżkę pliku biblioteki typów odwołań COM. Elementy zawarte w tym parametrze może zawierać metadane elementu. Aby uzyskać więcej informacji zobacz sekcję "TypeLibFiles metadanych elementu" poniżej.|  
-|`TypeLibNames`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa nazwy biblioteki typów, aby rozwiązać. Elementy zawarte w tym parametrze musi zawierać niektóre metadane elementu. Aby uzyskać więcej informacji zobacz sekcję "TypeLibNames metadanych elementu" poniżej.|  
-|`WrapperOutputDirectory`|Opcjonalne `String` parametru.<br /><br /> Lokalizacji na dysku, w którym znajduje się zestaw międzyoperacyjny wygenerowany. Jeśli ten element metadanych nie jest określona, zadanie używa ścieżkę bezwzględną katalogu którym znajduje się plik projektu.|  
-  
-## <a name="remarks"></a>Uwagi  
+|`DelaySign`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, umieszcza klucz publiczny w zestawie. Jeśli `false`, w pełni podpisuje zestaw.|  
+|`EnvironmentVariables`|Opcjonalnie `String[]` parametru.<br /><br /> Tablica par zmiennych środowiskowych, oddzielone znaku równości. Te zmienne są przekazywane do zduplikowanych *tlbimp.exe* i *aximp.exe* dodatkowo do lub selektywnie zastępują, blok regularnych środowiska...|  
+|`ExecuteAsTool`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uruchamia *tlbimp.exe* i *aximp.exe* z odpowiedniego obiektu docelowego framework-procesem do generowania zestawów niezbędne otoki. Ten parametr umożliwia wielowersyjności kodu.|  
+|`IncludeVersionInInteropName`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, wersja biblioteki typów, które zostaną uwzględnione w nazwa otoki. Wartość domyślna to `false`.|  
+|`KeyContainer`|Opcjonalnie `String` parametru.<br /><br /> Określa kontener, który zawiera pary kluczy publiczny/prywatny.|  
+|`KeyFile`|Opcjonalnie `String` parametru.<br /><br /> Określa element, który zawiera pary kluczy publiczny/prywatny.|  
+|`NoClassMembers`|Opcjonalnie `Boolean`parametru.|  
+|`ResolvedAssemblyReferences`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa odwołania rozpoznanego zestawu.|  
+|`ResolvedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa w pełni kwalifikowaną pliki na dysku, które odnoszą się do fizycznej lokalizacji biblioteki typów, które były dostarczane jako dane wejściowe dla tego zadania.|  
+|`ResolvedModules`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.|  
+|`SdkToolsPath`|Opcjonalnie <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Jeśli `ExecuteAsTool` jest `true`, ten parametr musi być równa ścieżkę narzędzi zestawu SDK dla framework w wersji docelowej.|  
+|`StateFile`|Opcjonalnie `String` parametru.<br /><br /> Określa plik pamięci podręcznej składnika modelu COM w sygnatur czasowych. Jeśli nie występuje każdego uruchomienia spowoduje to ponowne wygenerowanie wszystkich otoki.|  
+|`TargetFrameworkVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. co oznacza, że jest nie filtrowania dla odwołania, w oparciu o platformę docelową.|  
+|`TargetProcessorArchitecture`|Opcjonalnie `String` parametru.<br /><br /> Określa preferowany cel architektury procesora. Przekazany do *tlbimp.exe*  /machine flagi po translacji.<br /><br /> Wartość parametru powinna być członkiem <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`TypeLibFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa ścieżkę pliku biblioteki typów do odwołań COM. Elementy zawarte w tym parametrze mogą zawierać metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibFiles elementu metadanych](#typelibfiles-item-metadata) poniżej.|  
+|`TypeLibNames`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa nazwy biblioteki typów, aby rozwiązać. Elementy zawarte w tym parametrze musi zawierać niektóre metadane elementu. Aby uzyskać więcej informacji, zobacz sekcję [TypeLibNames elementu metadanych](#typelibnames-item-metadata) poniżej.|  
+|`WrapperOutputDirectory`|Opcjonalnie `String` parametru.<br /><br /> Lokalizacja na dysku, w którym została umieszczona wygenerowanego zestawu międzyoperacyjnego. Jeśli metadane tego elementu nie jest określona, zadanie używa ścieżkę bezwzględną katalogu, w którym znajduje się w pliku projektu.|  
   
 ## <a name="typelibnames-item-metadata"></a>Metadane elementu TypeLibNames  
- W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazanego do `TypeLibNames` parametru.  
+ W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazany do `TypeLibNames` parametru.  
   
 |Metadane|Opis|  
 |--------------|-----------------|  
-|`GUID`|Wymagany element metadanych.<br /><br /> Identyfikator GUID dla biblioteki typów. Ten element metadanych nie jest określona, zadanie nie powiedzie się.|  
-|`VersionMajor`|Wymagany element metadanych.<br /><br /> Wersja główna biblioteki typów. Ten element metadanych nie jest określona, zadanie nie powiedzie się.|  
-|`VersionMinor`|Wymagany element metadanych.<br /><br /> Wersja pomocnicza biblioteki typów. Ten element metadanych nie jest określona, zadanie nie powiedzie się.|  
-|`LocaleIdentifier`|Opcjonalny element metadanych.<br /><br /> Identyfikator ustawień regionalnych (lub identyfikator LCID) dla biblioteki typów. Podany jako wartość 32-bitowego, która identyfikuje człowieka język preferowany przez użytkownika, regionu lub aplikacji. Jeśli ten element metadanych nie jest określona, zadanie używa domyślny identyfikator ustawień regionalnych "0".|  
-|`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który służy do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie korzysta z domyślnym narzędziem otoki z "tlbimp". Są dostępne, bez uwzględniania wielkości liter wyboru typelibs:<br /><br /> -   `Primary`: Użyj tego narzędzia otoki, jeśli chcesz użyć już wygenerowany podstawowego zestawu międzyoperacyjnego dla składnika modelu COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje niepowodzenie wykonania zadania.<br />-   `TLBImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla składnika modelu COM.<br />-   `AXImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla formantu ActiveX.|  
+|`GUID`|Wymagany element metadanych.<br /><br /> Identyfikator GUID dla biblioteki typów. Metadane tego elementu nie jest określona, zadanie kończy się niepowodzeniem.|  
+|`VersionMajor`|Wymagany element metadanych.<br /><br /> Wersja główna biblioteki typów. Metadane tego elementu nie jest określona, zadanie kończy się niepowodzeniem.|  
+|`VersionMinor`|Wymagany element metadanych.<br /><br /> Wersja pomocnicza biblioteki typów. Metadane tego elementu nie jest określona, zadanie kończy się niepowodzeniem.|  
+|`LocaleIdentifier`|Opcjonalny element metadanych.<br /><br /> Identyfikator ustawień regionalnych (lub identyfikatora LCID) dla biblioteki typów. Podany jako wartość 32-bitowych, która identyfikuje ludzi język preferowany przez użytkownika, region lub aplikacji. Jeśli ten element metadanych nie jest określona, zadanie używa domyślny identyfikator ustawień regionalnych "0".|  
+|`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który jest używany do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie używa domyślnego narzędzia otoki "tlbimp". Dostępne są następujące opcje dostępności, bez uwzględniania wielkości liter typelibs:<br /><br /> -   `Primary`: To narzędzie otoki użyć już wygenerowany podstawowy zestaw międzyoperacyjny dla składnika COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje, że zadanie nie powiedzie się.<br />-   `TLBImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla składnika COM.<br />-   `AXImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla formantu ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadane elementu TypeLibFiles  
- W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazanego do `TypeLibFiles` parametru.  
+ W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazany do `TypeLibFiles` parametru.  
   
 |Metadane|Opis|  
 |--------------|-----------------|  
-|`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który służy do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie korzysta z domyślnym narzędziem otoki z "tlbimp". Są dostępne, bez uwzględniania wielkości liter wyboru typelibs:<br /><br /> -   `Primary`: Użyj tego narzędzia otoki, jeśli chcesz użyć już wygenerowany podstawowego zestawu międzyoperacyjnego dla składnika modelu COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje niepowodzenie wykonania zadania.<br />-   `TLBImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla składnika modelu COM.<br />-   `AXImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla formantu ActiveX.|  
+|`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który jest używany do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie używa domyślnego narzędzia otoki "tlbimp". Dostępne są następujące opcje dostępności, bez uwzględniania wielkości liter typelibs:<br /><br /> -   `Primary`: To narzędzie otoki użyć już wygenerowany podstawowy zestaw międzyoperacyjny dla składnika COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje, że zadanie nie powiedzie się.<br />-   `TLBImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla składnika COM.<br />-   `AXImp`: To narzędzie otoki wygenerować zestaw międzyoperacyjny dla formantu ActiveX.|  
   
 > [!NOTE]
->  Więcej informacji, które zapewniają do unikatowego identyfikowania biblioteki typów, tym większa możliwość, że zadanie rozwiąże właściwy plik na dysku.  
+>  Więcej informacji podasz do unikatowego identyfikowania bibliotekę typów, tym większa możliwość, że zadanie zostanie rozwiązany do prawidłowego pliku na dysku.  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [klasa podstawowa zadania](../msbuild/task-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [zadań klasy bazowej](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

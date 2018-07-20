@@ -1,5 +1,5 @@
 ---
-title: MSBuild | Dokumentacja firmy Microsoft
+title: Program MSBuild | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -13,84 +13,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: cd6736242e6fa130fdbb356261cae8e63f3c952f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327157"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154791"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również znany jako MSBuild, dostarcza schemat XML pliku projektu, który kontroluje, jak platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa MSBuild, ale go nie są zależne od programu Visual Studio. Za pomocą wywołania *msbuild.exe* w pliku projektu lub rozwiązania organizowania i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.  
   
- Visual Studio będzie korzystać program MSBuild do ładowania i kompilacji projektów zarządzanych. Pliki projektu w programie Visual Studio (.csproj, vbproj, vcxproj i inne) zawiera kod XML programu MSBuild, który wykonuje podczas kompilowania projektu za pomocą środowiska IDE. Projektów programu Visual Studio zaimportować wszystkie niezbędne ustawienia i procesów pracy typowy programowanie kompilacji, ale można rozszerzyć lub zmodyfikować je z poziomu programu Visual Studio lub za pomocą edytora XML.  
+ Visual Studio używa MSBuild do ładowania i kompilacji projektów zarządzanych. Pliki projektu w programie Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*i inne) zawierają kod MSBuild XML, który jest wykonywany, gdy tworzysz projekt za pomocą IDE. Zaimportuj wszystkie niezbędne ustawienia projektów programu Visual Studio, a procesy typowe dla pracy deweloperów kompilacji, ale można rozszerzyć lub zmodyfikować je z poziomu programu Visual Studio lub za pomocą edytora XML.  
   
- Aby uzyskać informacje o MSBuild C++, zobacz [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
+ Aby uzyskać informacje dotyczące programu MSBuild dla języka C++, zobacz [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
- Poniższe przykłady przedstawiają podczas kompilacji może działać przy użyciu wiersza polecenia programu MSBuild zamiast środowiska IDE programu Visual Studio.  
+ Poniższe przykłady ilustrują, kiedy można uruchamiać kompilacje przy użyciu wiersza polecenia MSBuild zamiast Visual Studio IDE.  
   
--   Nie jest zainstalowany program Visual Studio.  
+-   Nie zainstalowano programu Visual Studio.  
   
--   Chcesz użyć w 64-bitowej wersji programu MSBuild. Ta wersja programu MSBuild jest zazwyczaj zbędne, ale pozwala MSBuild, aby dostęp do większej ilości pamięci.  
+-   Chcesz użyć 64-bitowej wersji programu MSBuild. Ta wersja programu MSBuild jest zazwyczaj zbędna, ale pozwala MSBuild na dostęp do większej ilości pamięci.  
   
--   Chcesz uruchomić kompilację w wielu procesów. Jednak można użyć IDE uzyskanie takiego samego wyniku w projektach C++ i C#.  
+-   Chcesz uruchomić kompilację w wielu procesach. Jednak można użyć środowiska IDE, aby osiągnąć ten sam wynik w projektach w językach C++ i C#.  
   
--   Chcesz zmodyfikować system kompilacji. Na przykład możesz włączyć następujące akcje:  
+-   Chcesz zmodyfikować system kompilacji. Na przykład możesz chcieć umożliwić następujące działania:  
   
-    -   Przetwarzanie wstępne plików przed dotarciem kompilatora.  
+    -   Przetwórz wstępnie pliki, zanim dotrą do kompilatora.  
   
-    -   Skopiuj pliki wyjściowe kompilacji w inne miejsce.  
+    -   Skopiuj skompilowane pliki w inne miejsce.  
   
-    -   Utwórz skompresowane pliki na podstawie danych wyjściowych kompilacji.  
+    -   Stwórz skompresowane pliki z wyjścia kompilacji.  
   
-    -   Wykonaj krok przetwarzania końcowego. Na przykład możesz chcieć sygnatury zestawu za pomocą innej wersji.  
-  
- W środowisku IDE programu Visual Studio można napisać kod, ale Uruchom tworzy się przy użyciu programu MSBuild. Jako kolejny alternatywny można kompilacji kodu w środowisku IDE programu na komputerze dewelopera, ale kompilacji kodu, który jest zintegrowany z wielu deweloperów za pomocą wiersza polecenia programu MSBuild.  
+    -   Wykonaj krok przetwarzania końcowego. Na przykład możesz chcieć sygnatury zestaw z innej wersji.  
+
+Można napisać kod w środowisku IDE programu Visual Studio, ale uruchamiać kompilacje przy użyciu programu MSBuild. Jako inną alternatywę można skompilować kod w środowisku IDE na komputerze deweloperskim, ale użyj wiersza polecenia MSBuild do kompilowania kodu, który jest zintegrowany z wielu deweloperów.  
   
 > [!NOTE]
->  Umożliwia Team Foundation Build automatycznie Kompiluj, testowania i wdrażania aplikacji. Możesz system kompilacji automatycznie uruchomić kompilacji, gdy deweloperzy zaewidencjonowaniu kodu (na przykład w ramach strategii ciągłej integracji) lub zgodnie z harmonogramem (na przykład co noc kompilacji testu weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania](/vsts/build-release/index).  
+>  Team Foundation Build służy do automatycznego kompilowania, testowania i wdrażania aplikacji. System kompilacji można automatycznie uruchamiać kompilacje, gdy deweloperzy ewidencjonują kod (na przykład, jako część strategii ciągłej integracji) lub według harmonogramu (na przykład nocna kompilacja Test weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [kompilowania i wydawania](/vsts/build-release/index).  
   
- Ten temat zawiera omówienie programu MSBuild. Samouczek wprowadzający, zobacz [wskazówki: przy użyciu programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
-  
- **W tym temacie**  
-  
--   [Przy użyciu programu MSBuild w wierszu polecenia](#BKMK_CommandPrompt)  
-  
--   [Plik projektu](#BKMK_ProjectFile)  
-  
-    -   [Właściwości](#BKMK_Properties)  
-  
-    -   [Elementy](#BKMK_Items)  
-  
-    -   [Zadania](#BKMK_Tasks)  
-  
-    -   [Docelowe elementy](#BKMK_Targets)  
-  
--   [Dzienniki kompilacji](#BKMK_BuildLogs)  
-  
--   [Przy użyciu programu MSBuild w programie Visual Studio](#BKMK_VisualStudio)  
-  
--   [Przeznaczanie dla wielu platform](#BKMK_Multitargeting)  
-  
-##  <a name="BKMK_CommandPrompt"></a> Przy użyciu programu MSBuild w wierszu polecenia  
- Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, przekazać plik projektu do MSBuild.exe, wraz z niej odpowiednie opcje wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustaw inne opcje, które kontrolują proces kompilacji. Na przykład czy użyć następującej składni wiersza polecenia do tworzenia pliku `MyProj.proj` z `Configuration` ustawioną właściwość `Debug`.  
+ Ten temat zawiera omówienie programu MSBuild. Aby uzyskać Samouczek wprowadzający, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+
+##  <a name="use-msbuild-at-a-command-prompt"></a>Użyj programu MSBuild w wierszu polecenia  
+ Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe*, wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych obiektów docelowych i ustaw inne opcje, które sterują procesem kompilacji. Na przykład można użyć następującej składni wiersza polecenia do tworzenia pliku *MyProj.proj* z `Configuration` właściwością `Debug`.  
   
 ```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
 ```  
   
- Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] opcji wiersza polecenia, zobacz [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+ Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] opcji wiersza polecenia, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 > [!IMPORTANT]
->  Przed pobraniem projektu określają wiarygodności kodu.  
+>  Przed pobierania projektu Ustal wiarygodność kodu.  
   
-##  <a name="BKMK_ProjectFile"></a> Plik projektu  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykorzystuje format pliku projektu opartego na formacie XML, który jest bardzo proste i rozszerzalny. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Format pliku projektu umożliwia deweloperom opisano elementy, które mają zostać skompilowane, a także, jak są ma zostać utworzony dla różnych systemów operacyjnych i konfiguracji. Ponadto format pliku projektu umożliwia deweloperom autora wielokrotnego użytku kompilacji reguł, które mogą być brana pod uwagę w oddzielnych plików tak, aby kompilacje mogą być wykonywane stale w wielu różnych projektów w produkcie.  
+##  <a name="project-file"></a>plik projektu  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa formatu pliku projektu opartego na języku XML, który jest bardzo prosty i rozszerzalny. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formatu pliku projektu umożliwia deweloperom opisywanie elementów, które mają być tworzone, a także, jak są one tworzone dla różnych systemów operacyjnych i konfiguracji. Ponadto format pliku projektu umożliwia deweloperom tworzenie kompilacji wielokrotnego użytku reguł, które mogą być umieszczane w osobnych plikach, tak aby kompilacje mogły być wykonywane konsekwentnie między różnymi projektami w produkcie.  
   
- W poniższych sekcjach opisano niektóre podstawowe elementy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu. Samouczek dotyczący sposobu tworzenia pliku podstawowego projektu, zobacz [wskazówki: Tworzenie pliku projektu MSBuild od początku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ W poniższych sekcjach opisano niektóre z podstawowych elementów [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu pliku projektu. Samouczek dotyczący sposobu tworzenia podstawowego pliku projektu, zobacz [wskazówki: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ###  <a name="BKMK_Properties"></a> Właściwości  
- Właściwości reprezentują pary klucz wartość, które mogą służyć do konfigurowania kompilacji. Właściwości są zadeklarowane, tworząc element, który ma nazwę właściwości jako element podrzędny [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Na przykład poniższy kod tworzy właściwość o nazwie `BuildDir` , który ma wartość `Build`.  
+ Właściwości reprezentują pary klucz/wartość, które mogą służyć do konfigurowania kompilacji. Właściwości deklaruje się poprzez utworzenie elementu zawierającego nazwę właściwości jako element podrzędny elementu [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Na przykład, poniższy kod tworzy właściwość o nazwie `BuildDir` wartością `Build`.  
   
 ```xml  
 <PropertyGroup>  
@@ -98,20 +78,20 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </PropertyGroup>  
 ```  
   
- Definiuje właściwości warunkowo przez umieszczenie `Condition` atrybutu w elemencie. Zawartość warunkowego elementy są ignorowane, chyba że wyrażenie `true`. W poniższym przykładzie `Configuration` jest zdefiniowany element, jeśli jeszcze nie został zdefiniowany.  
+ Można zdefiniować właściwość warunkowo przez umieszczenie `Condition` atrybutu w elemencie. Zawartość elementów warunkowych jest ignorowana, chyba, że warunek to `true`. W poniższym przykładzie `Configuration` jest zdefiniowany element, jeśli jeszcze nie został zdefiniowany.  
   
 ```xml  
 <Configuration  Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
 ```  
   
- Właściwości można odwoływać się w pliku projektu przy użyciu składni $(*PropertyName*). Na przykład możesz odwoływać się do właściwości w poprzednich przykładach przy użyciu `$(BuildDir)` i `$(Configuration)`.  
+ Właściwości można się odwoływać w całym pliku projektu przy użyciu składni $(\<PropertyName >). Na przykład, można się odwoływać do właściwości w poprzednich przykładach za pomocą `$(BuildDir)` i `$(Configuration)`.  
   
  Aby uzyskać więcej informacji o właściwościach, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
   
 ###  <a name="BKMK_Items"></a> Elementy  
- Elementy są dane wejściowe w systemie kompilacji i zwykle odpowiadają pliki. Elementy są pogrupowane w typy elementów, na podstawie nazw elementów zdefiniowanych przez użytkownika. Te typy elementów może być używane jako parametry dla zadania, które umożliwia poszczególne elementy wykonaj kroki procesu kompilacji.  
+ Elementy to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki. Elementy są grupowane w typy elementów, na podstawie nazw elementów zdefiniowanych przez użytkownika. Te typy elementów może służyć jako parametry dla zadań, które używają poszczególnych elementów, aby wykonać kroki procesu kompilacji.  
   
- Elementy są zadeklarowane w pliku projektu, tworząc element, który ma nazwę typu elementu jako elementu podrzędnego [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Na przykład poniższy kod tworzy typ elementu o nazwie `Compile`, która obejmuje dwa pliki.  
+ Elementy deklaruje się w pliku projektu, tworząc element, który ma nazwę typu elementu jako element podrzędny elementu [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Na przykład, poniższy kod tworzy typ elementu o nazwie `Compile`, który zawiera dwa pliki.  
   
 ```xml  
 <ItemGroup>  
@@ -120,9 +100,9 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- Typy elementów można odwoływać się w pliku projektu przy użyciu składni @(*ItemType*). Na przykład typ elementu w tym przykładzie będzie odwoływać się przy użyciu `@(Compile)`.  
+ Typy elementów można odwoływać się w całym pliku projektu przy użyciu składni @(\<ItemType >). Na przykład typ elementu w przykładzie będzie używane odwołanie za pomocą `@(Compile)`.  
   
- W programie MSBuild nazw elementów i atrybutów jest rozróżniana wielkość liter. Jednak nazwy właściwości, element i metadanych nie są. W poniższym przykładzie tworzony typ elementu `Compile`, `comPile`, lub innych przypadków zmiany i zwraca wartość "one.cs;two.cs" typ elementu.  
+ W programie MSBuild nazw elementów i atrybutów jest rozróżniana wielkość liter. Jednak nazwy właściwości, elementów i metadanych nie są. Poniższy przykład tworzy typ elementu `Compile`, `comPile`, lub inne zmiany wielkości liter i daje typowi elementu wartość "one.cs;two.cs".  
   
 ```xml  
 <ItemGroup>  
@@ -131,16 +111,16 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- Elementy mogą być deklarowane przy użyciu symboli wieloznacznych i może zawierać dodatkowe metadane dla bardziej zaawansowanych scenariuszy kompilacji. Aby uzyskać więcej informacji na temat elementów, zobacz [elementów](../msbuild/msbuild-items.md).  
+ Elementy mogą być deklarowane przy użyciu symboli wieloznacznych i mogą zawierać dodatkowe metadane dla bardziej zaawansowanych scenariuszy kompilacji. Aby uzyskać więcej informacji na temat elementów, zobacz [elementów](../msbuild/msbuild-items.md).  
   
 ###  <a name="BKMK_Tasks"></a> Zadania  
- Zadania są jednostki plik wykonywalny jest kod [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów służy do wykonywania operacji kompilacji. Na przykład zadanie może skompilować plików wejściowych lub uruchomić narzędzia zewnętrznego. Zadania mogą być ponownie używane, i mogą być współużytkowane przez różnych deweloperów w różnych projektów.  
+ Zadania to jednostki kodu wykonywalnego, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów służy do wykonywania operacji kompilacji. Na przykład zadanie może skompilować pliki wejściowe lub uruchomić narzędzie zewnętrzne. Zadania mogą zostać ponownie użyte i mogą być współdzielone przez różnych deweloperów w różnych projektach.  
   
- Logiki wykonywania zadania jest zapisywane w kodzie zarządzanym i mapować do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] za pomocą [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Można pisać własne zadania przy tworzenia zarządzanego typu, który implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji na temat tworzenia zadania, zobacz [wpisywanie zadania](../msbuild/task-writing.md).  
+ Logika wykonania zadania jest zapisywana w kodzie zarządzanym i mapowana do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] przy użyciu [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Można napisać własne zadanie, tworząc typ zarządzany, który implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji na temat pisania zadań, zobacz [zadań zapisywanie](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera typowe zadania, które można dostosować do własnych wymagań.  Przykłady [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [makedir —](../msbuild/makedir-task.md), co powoduje katalogów, i [Csc](../msbuild/csc-task.md), który kompiluje pliki kodu źródłowego języka Visual C#. Aby uzyskać listę dostępnych zadań wraz z informacjami użycia, zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera typowe zadania, które można dostosować do własnych wymagań.  Należą do nich [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [MakeDir](../msbuild/makedir-task.md), który tworzy katalogi, i [Csc](../msbuild/csc-task.md), który kompiluje pliki kodu źródłowego języka Visual C#. Aby uzyskać listę dostępnych zadań wraz z informacji o użyciu, zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).  
   
- Zadania są wykonywane w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu, tworząc element, który ma nazwę zadania jako element podrzędny [docelowej](../msbuild/target-element-msbuild.md) elementu. Zadania zazwyczaj zaakceptować parametrów, które są przekazywane jako atrybuty elementu. Zarówno [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości i elementów, które mogą być używane jako parametry. Na przykład poniższy kod wywołania [makedir —](../msbuild/makedir-task.md) zadań i przekazuje jego wartość `BuildDir` właściwość, która została zadeklarowana w poprzedniego przykładu.  
+ Zadanie jest wykonywane w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu poprzez utworzenie elementu zawierającego nazwę zadania jako element podrzędny elementu [docelowej](../msbuild/target-element-msbuild.md) elementu. Zadania zazwyczaj akceptują parametry, które są przekazywane jako atrybuty elementu. Zarówno [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości i elementy, które mogą być używane jako parametry. Na przykład, poniższy kod wywoła [MakeDir](../msbuild/makedir-task.md) zadań, a następnie przekazuje jej wartość `BuildDir` właściwości, który został zadeklarowany we wcześniejszym przykładzie.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -151,9 +131,9 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Aby uzyskać więcej informacji o zadaniach, zobacz [zadania](../msbuild/msbuild-tasks.md).  
   
 ###  <a name="BKMK_Targets"></a> Obiekty docelowe  
- Obiekty docelowe grupowania zadań w określonej kolejności i udostępnić sekcji w pliku projektu jako punkty wejścia do procesu kompilacji. Obiekty docelowe często są pogrupowane w logiczne sekcje, aby zwiększyć czytelność, a Zezwalaj na rozszerzenia. Fundamentalne kroki procesu kompilacji w docelowych elementach umożliwia wywołanie jedną część procesu kompilacji z innymi celami bez kopiowania tej sekcji kodu do każdego obiektu docelowego. Na przykład jeśli kilka punktów wejścia z procesem kompilacji wymaga odwołania ma zostać utworzony, można utworzyć obiektu docelowego, który tworzy odwołania, a następnie uruchom przeznaczonych z każdego punktu wejścia, gdzie są wymagane.  
+ Obiekty docelowe grupują zadania w określonej kolejności i udostępniają sekcje pliku projektu jako punkty wejścia do procesu kompilacji. Obiekty docelowe często są pogrupowane w logiczne sekcje, aby zwiększyć czytelność i pozwolić na rozbudowę. Podział kroków kompilacji na obiekty docelowe pozwala wywołać jeden fragment procesu kompilacji z innych obiektów docelowych bez kopiowania tej sekcji kodu do każdego obiektu docelowego. Na przykład jeśli wiele punktów wejścia do procesu kompilacji wymaga wbudowania odwołań, można utworzyć obiekt docelowy, który tworzy odwołania i następnie uruchomić obiekt docelowy z każdego punktu wejścia, gdzie jest to wymagane.  
   
- Obiekty docelowe są zadeklarowane w pliku projektu za pomocą [docelowej](../msbuild/target-element-msbuild.md) elementu. Na przykład poniższy kod tworzy element docelowy o nazwie `Compile`, które następnie wywołuje [Csc](../msbuild/csc-task.md) zadania, które ma listy elementów, który został zadeklarowany w poprzedniego przykładu.  
+ Obiekty docelowe są deklarowane w pliku projektu za pomocą [docelowej](../msbuild/target-element-msbuild.md) elementu. Na przykład, poniższy kod tworzy obiekt docelowy o nazwie `Compile`, która następnie wywołuje metodę [Csc](../msbuild/csc-task.md) zadanie, które ma element listy zadeklarowany we wcześniejszym przykładzie.  
   
 ```xml  
 <Target Name="Compile">  
@@ -161,51 +141,51 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </Target>  
 ```  
   
- W bardziej zaawansowanych scenariuszy elementy docelowe może służyć do opisano relacje między sobą i wykonywać analizy zależności, dzięki czemu można był pomijany sekcje całego procesu kompilacji, jeśli ten cel jest aktualny. Aby uzyskać więcej informacji na temat elementów docelowych, zobacz [cele](../msbuild/msbuild-targets.md).  
+ W bardziej zaawansowanych scenariuszach obiekty docelowe może służyć do opisywania relacji między sobą i przeprowadzać analizę zależności, tak aby całe sekcje procesu kompilacji może zostać pominięta, jeżeli ten obiekt docelowy jest aktualny. Aby uzyskać więcej informacji na temat elementów docelowych, zobacz [cele](../msbuild/msbuild-targets.md).  
   
-##  <a name="BKMK_BuildLogs"></a> Dzienniki kompilacji  
- Może rejestrować błędy kompilacji, ostrzeżenia i komunikaty do konsoli lub innego urządzenia wyjściowego. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [rejestrowania w programie MSBuild](../msbuild/logging-in-msbuild.md).  
+##  <a name="build-logs"></a>Kompilacja dzienników  
+ Możesz rejestrować błędy kompilacji, ostrzeżenia i komunikaty na konsoli lub innym urządzeniu wyjściowym. Aby uzyskać więcej informacji, zobacz [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md) i [logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md).  
   
-##  <a name="BKMK_VisualStudio"></a> Przy użyciu programu MSBuild w programie Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu do przechowywania informacji o kompilacji o zarządzanych projektów. Projekt ustawień, które zostały dodane lub zmienione za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu są uwzględniane w. * proj pliku, który jest generowany dla każdego projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa hostowanej wystąpienia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do tworzenia projektów zarządzanych. Oznacza to, że zarządzanego projektu mogą być wbudowane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub w wierszu polecenia (nawet jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany), a wyniki musi być taka sama.  
+## <a name="use-msbuild-in-visual-studio"></a>Użyj programu MSBuild w programie Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu pliku projektu do przechowywania informacji tworzenia zarządzanych projektów. Ustawienia projektu, które są dodane lub zmienione za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu są odzwierciedlane w *.\* Proj* pliku, który jest generowany dla każdego projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa hostowanej instancji [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do tworzenia projektów zarządzanych. Oznacza to, że zarządzanego projektu mogą być wbudowane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub w wierszu polecenia (nawet wtedy, gdy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany), a wyniki będą identyczne.  
   
- Samouczek dotyczący sposobu używania programu MSBuild w programie Visual Studio, zobacz [wskazówki: przy użyciu programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Samouczek dotyczący sposobu użycia MSBuild w programie Visual Studio, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-##  <a name="BKMK_Multitargeting"></a> Przeznaczanie dla wielu platform  
- Za pomocą programu Visual Studio, można skompilować aplikację do uruchamiania na jednym z kilku wersji programu .NET Framework. Na przykład można skompilować aplikację do uruchamiania na .NET Framework 2.0 na platformie 32-bitowe i można kompilować tej samej aplikacji do uruchamiania na na 64-bitowej platformy .NET Framework 4.5. Zdolność do kompilowania więcej niż jeden Framework nosi nazwę przeznaczanie dla wielu platform.  
+##  <a name="BKMK_Multitargeting"></a> Wielowersyjności kodu w programie  
+ Za pomocą programu Visual Studio, można kompilować aplikację do uruchamiania w jednej z kilku różnych wersji programu .NET Framework. Na przykład można kompilować aplikacje do uruchamiania na .NET Framework 2.0 na platformie 32-bitowe i można kompilować tej samej aplikacji do uruchamiania na .NET Framework 4.5 na platformie 64-bitowej. Możliwość kompilowania do więcej niż jednej struktury jest lub multitargeting.  
   
- Oto niektóre zalety przeznaczanie dla wielu platform:  
+ Oto niektóre korzyści wynikające z wielowersyjności:  
   
--   Można programować aplikacje, które odnoszą się do wcześniejszych wersji programu .NET Framework, na przykład, w wersjach 2.0, 3.0 i 3.5.  
+-   Można tworzyć aplikacje przeznaczone dla wcześniejszych wersji programu .NET Framework, na przykład wersji 2.0, 3.0 i 3.5.  
   
--   Możesz zastosować struktur niż programu .NET Framework, na przykład Silverlight.  
+-   Można wskazać platform innych niż .NET Framework, na przykład Silverlight.  
   
--   Celem może być *profilu framework*, który jest wstępnie zdefiniowanych podzbiór platformy docelowej.  
+-   Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
   
--   Jeśli zostanie zwolniony z dodatkiem Service pack dla bieżącej wersji programu .NET Framework, można stosowanie ich.  
+-   Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
   
--   Przeznaczanie dla wielu platform gwarantuje, że aplikacja używa tylko funkcje dostępne w docelowy framework i platformę.  
+-   Wielowersyjność gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w platformę docelową i platformy.  
+
+Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md).  
   
- Aby uzyskać więcej informacji, zobacz [przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md).  
-  
-## <a name="related-topics"></a>Tematy pokrewne  
+## <a name="see-also"></a>Zobacz także  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Przewodnik: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Przedstawiono sposób tworzenia pliku podstawowego projektu przyrostowo, używając tylko tekstowy edytora.|  
-|[Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)|Wprowadza blokami konstrukcyjnymi elementów MSBuild oraz sposób zapisu, manipulowanie nimi oraz debugowania projektów MSBuild bez zamykania programu Visual Studio IDE.|  
-|[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)|Przedstawia informacje o czterech bloków konstrukcyjnych programu MSBuild: właściwości, elementów docelowych i zadań.|  
-|[Elementy](../msbuild/msbuild-items.md)|W tym artykule opisano ogólne pojęcia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plik formatu i sposób elementy dopasowania.|  
-|[Właściwości programu MSBuild](../msbuild/msbuild-properties.md)|Wprowadza właściwości i kolekcji właściwości. Właściwości są kompilacje pary klucz wartość, które mogą służyć do konfigurowania.|  
-|[Docelowe elementy](../msbuild/msbuild-targets.md)|Wyjaśniono, jak grupy zadań w określonej kolejności i Włącz sekcje proces kompilacji ma być wywoływana w wierszu polecenia.|  
-|[Zadania](../msbuild/msbuild-tasks.md)|Pokazuje, jak utworzyć jednostkę kodu wykonywalnego, który może być używany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania operacji niepodzielnych kompilacji.|  
-|[Warunki](../msbuild/msbuild-conditions.md)|W tym artykule omówiono sposób użycia `Condition` w elemencie MSBuild.|  
-|[Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)|Przedstawia informacje o liczbie przetwarzanie wsadowe, wykonywania transformacji przeznaczanie dla wielu platform i innych zaawansowanych technik.|  
-|[Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)|Opisuje sposób rejestrowania zdarzeń kompilacji, wiadomości i błędów.|  
-|[Dodatkowe zasoby](../msbuild/additional-msbuild-resources.md)|Zawiera listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji o programie MSBuild.|  
+|[Wskazówki: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Przedstawia sposób tworzenia podstawowego pliku projektu przyrostowo, używając tylko tekst edytora.|  
+|[Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)|Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamykania środowiska IDE programu Visual Studio.|  
+|[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)|Przedstawia cztery bloki konstrukcyjne MSBuild: właściwości, elementów, obiektów docelowych i zadań.|  
+|[Elementy](../msbuild/msbuild-items.md)|Opisuje ogólne pojęcia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plik formatu i sposób dopasowywania.|  
+|[Właściwości programu MSBuild](../msbuild/msbuild-properties.md)|Wprowadza właściwości i kolekcje właściwości. Właściwości to pary klucz/wartość, które mogą być używane do konfigurowania kompilacji.|  
+|[Docelowe elementy](../msbuild/msbuild-targets.md)|Wyjaśnia, jak grupować zadania razem w określonej kolejności i włączyć sekcje procesu kompilacji, który ma być wywoływana w wierszu polecenia.|  
+|[Zadania](../msbuild/msbuild-tasks.md)|Pokazuje, jak utworzyć jednostkę kodu wykonywalnego, który może być używany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania niepodzielnych operacji kompilacji.|  
+|[Warunki](../msbuild/msbuild-conditions.md)|W tym artykule omówiono sposób używania `Condition` atrybutu w elemencie programu MSBuild.|  
+|[Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)|Przedstawia przetwarzanie wsadowe, wykonywanie przekształceń, wielowersyjność i inne zaawansowane techniki.|  
+|[Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)|Opisuje sposób rejestrowania zdarzeń kompilacji, wiadomości i błędy.|  
+|[Dodatkowe zasoby](../msbuild/additional-msbuild-resources.md)|Wyświetla listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji na temat programu MSBuild.|  
   
 ## <a name="reference"></a>Tematy pomocy  
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
- Łącza do tematów, które zawierają informacje o odwołaniu.  
+ Zawiera łącza do tematów, które zawierają informacje odniesienia.  
   
- [Słownik](msbuild-glossary.md) definiuje typowe warunki MSBuild.
+ [Słownik](msbuild-glossary.md) definiuje typowe terminy programu MSBuild.

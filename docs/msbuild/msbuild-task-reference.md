@@ -17,223 +17,223 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fd171f01a44a38d9256576780c3a15a322d0a43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058649"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155304"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
-Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania na poniższej liście uwzględniono z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są używane do tworzenia [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadania w programie Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
+Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania na poniższej liście są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są wykorzystywane do zorganizowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadań Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma następujące parametry:  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`Condition`|Opcjonalne `String` parametru.<br /><br /> A `Boolean` wyrażenie który [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat używa w celu określenia, czy będzie można wykonać tego zadania. Aby uzyskać informacje o warunkach, które są obsługiwane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [warunki](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) element i kompilacji, nadal można wykonać, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` element i kompilacji, nadal można wykonać, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na `Target` element i kompilacji nie są wykonywane i całą `Target` element i kompilacji jest traktowane jako powiodła się.<br /><br /> Wersje programu .NET Framework, przed 4.5 obsługiwane tylko `true` i `false` wartości.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: ignorowanie błędów w zadaniach](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`Condition`|Opcjonalnie `String` parametru.<br /><br /> A `Boolean` wyrażenia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat używa do określenia, czy to zadanie zostanie wykonany. Aby uzyskać informacje o warunkach, które są obsługiwane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`ContinueOnError`|Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na `Target` elementu i kompilacja nie są wykonywane i całą `Target` elementu i kompilacja jest uważany za nie powiodło się.<br /><br /> Wersje programu .NET Framework przed 4.5 obsługiwane tylko `true` i `false` wartości.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: ignorowanie błędów w zadaniach](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Klasa podstawowa zadania](../msbuild/task-base-class.md)  
- Dodaje kilka parametrów do zadań, które pochodzą z <xref:Microsoft.Build.Utilities.Task> klasy.  
+ Dodaje kilka parametrów do zadań, które wynikają z <xref:Microsoft.Build.Utilities.Task> klasy.  
   
- [TaskExtension, klasa podstawowa](../msbuild/taskextension-base-class.md)  
- Dodaje kilka parametrów do zadań, które pochodzą z <xref:Microsoft.Build.Tasks.TaskExtension> klasy.  
+ [Taskextension — klasa bazowa](../msbuild/taskextension-base-class.md)  
+ Dodaje kilka parametrów do zadań, które wynikają z <xref:Microsoft.Build.Tasks.TaskExtension> klasy.  
   
- [ToolTaskExtension, klasa podstawowa](../msbuild/tooltaskextension-base-class.md)  
- Dodaje kilka parametrów do zadań, które pochodzą z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy.  
+ [Tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md)  
+ Dodaje kilka parametrów do zadań, które wynikają z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy.  
   
- [AL (Assembly Linker), zadanie](../msbuild/al-assembly-linker-task.md)  
- Tworzy zestaw z manifestu z jednego lub więcej plików, które moduły albo lub plików zasobów.  
+ [AL (Assembly Linker) zadanie](../msbuild/al-assembly-linker-task.md)  
+ Tworzy zestaw z manifestem z co najmniej jeden plik, który jest modułem lub plikiem zasobów.  
   
- [AspNetCompiler, zadanie](../msbuild/aspnetcompiler-task.md)  
- Opakowuje aspnet_compiler.exe, narzędzie do wstępnego kompilowania aplikacji ASP.NET.  
+ [Aspnetcompiler — zadanie](../msbuild/aspnetcompiler-task.md)  
+ Opakowuje *aspnet_compiler.exe*, narzędzie wstępnej kompilacji aplikacji ASP.NET.  
   
- [AssignCulture, zadanie](../msbuild/assignculture-task.md)  
- Przypisuje kultury identyfikatory elementów.  
+ [Assignculture — zadanie](../msbuild/assignculture-task.md)  
+ Przypisuje identyfikatory kultury elementów.  
   
- [AssignProjectConfiguration, zadanie](../msbuild/assignprojectconfiguration-task.md)  
- Akceptuje listy ciągów konfiguracji i przypisuje je do określonych projektów.  
+ [Assignprojectconfiguration — zadanie](../msbuild/assignprojectconfiguration-task.md)  
+ Akceptuje ciągi konfiguracji listy i przypisuje je do określonych projektów.  
   
- [AssignTargetPath, zadanie](../msbuild/assigntargetpath-task.md)  
- Akceptuje listę plików i dodaje `<TargetPath>` atrybuty, jeśli nie są już określony.  
+ [Assigntargetpath — zadanie](../msbuild/assigntargetpath-task.md)  
+ Akceptuje listę plików i dodaje `<TargetPath>` atrybuty, jeśli nie są już określone.  
   
- [CallTarget, zadanie](../msbuild/calltarget-task.md)  
+ [Calltarget — zadanie](../msbuild/calltarget-task.md)  
  Wywołuje element docelowy w pliku projektu.  
   
- [CombinePath, zadanie](../msbuild/combinepath-task.md)  
- Scala określonych ścieżek w pojedynczą ścieżkę.  
+ [Combinepath — zadanie](../msbuild/combinepath-task.md)  
+ Łączy określonych ścieżek w pojedynczą ścieżkę.  
   
- [ConvertToAbsolutePath, zadanie](../msbuild/converttoabsolutepath-task.md)  
- Konwertuje ścieżką bezwzględną ścieżkę względną lub odwołanie.  
+ [Converttoabsolutepath — zadanie](../msbuild/converttoabsolutepath-task.md)  
+ Konwertuje ścieżką względną lub odwołanie do ścieżki bezwzględnej.  
   
- [Copy, zadanie](../msbuild/copy-task.md)  
+ [Copy — zadanie](../msbuild/copy-task.md)  
  Kopiuje pliki do nowej lokalizacji.  
   
- [CreateCSharpManifestResourceName, zadanie](../msbuild/createcsharpmanifestresourcename-task.md)  
- Tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]— styl nazwy manifestu z nazwę pliku .resx danego lub innego zasobu.  
+ [Createcsharpmanifestresourcename — zadanie](../msbuild/createcsharpmanifestresourcename-task.md)  
+ Tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.  
   
- [CreateItem, zadanie](../msbuild/createitem-task.md)  
- Wypełnia kolekcji elementów z elementów wejściowych, umożliwiając elementów do skopiowania z listy jeden do innego.  
+ [Createitem — zadanie](../msbuild/createitem-task.md)  
+ Wypełnia kolekcji elementów z elementów wejściowych, umożliwiając elementy, które mają być kopiowane z jednej listy do innej.  
   
- [CreateProperty, zadanie](../msbuild/createproperty-task.md)  
- Wypełnia właściwości z wartości wejściowe, umożliwiając wartości do skopiowania z jedną właściwość lub ciągu na inny.  
+ [CreateProperty — zadanie](../msbuild/createproperty-task.md)  
+ Wypełnia właściwości z wartości wejściowych, dzięki czemu wartości, które mają być kopiowane z jedną właściwość lub ciągu do innego.  
   
- [CreateVisualBasicManifestResourceName, zadanie](../msbuild/createvisualbasicmanifestresourcename-task.md)  
- Tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]— styl nazwy manifestu z nazwę pliku .resx danego lub innego zasobu.  
+ [Createvisualbasicmanifestresourcename — zadanie](../msbuild/createvisualbasicmanifestresourcename-task.md)  
+ Tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.  
   
- [Csc, zadanie](../msbuild/csc-task.md)  
- Wywołuje kompilatora Visual C# do tworzenia plików wykonywalnych, biblioteki DLL lub moduły kodu.  
+ [CSC — zadanie](../msbuild/csc-task.md)  
+ Wywołuje kompilatora Visual C#, aby wygenerować pliki wykonywalne, bibliotek dołączanych dynamicznie lub modułów kodu.  
   
- [Delete, zadanie](../msbuild/delete-task.md)  
+ [Delete — zadanie](../msbuild/delete-task.md)  
  Usuwa określone pliki.  
 
  [Zadanie DownloadFile](../msbuild/downloadfile-task.md)  
- Pobieranie pliku do określonej lokalizacji.  
+ Pobiera plik do określonej lokalizacji.  
   
- [Error, zadanie](../msbuild/error-task.md)  
- Zatrzymuje kompilację i rejestruje błąd oparte na obliczane instrukcji warunkowej.  
+ [Error — zadanie](../msbuild/error-task.md)  
+ Zatrzymuje kompilację i rejestruje błąd oparte na ocenianą instrukcji warunkowej.  
   
- [Exec, zadanie](../msbuild/exec-task.md)  
- Uruchamia określony program lub poleceń z określonymi argumentami.  
+ [Exec — zadanie](../msbuild/exec-task.md)  
+ Uruchamia określony program lub polecenie z określonymi argumentami.  
   
- [FindAppConfigFile, zadanie](../msbuild/findappconfigfile-task.md)  
- Umożliwia znalezienie pliku app.config, w podanych list.  
+ [Findappconfigfile — zadanie](../msbuild/findappconfigfile-task.md)  
+ Umożliwia znalezienie *app.config* plik w podanej listy.  
   
- [FindInList, zadanie](../msbuild/findinlist-task.md)  
- Odnajduje element w określonej listy, która ma pasującego specyfikacja_elementu.  
+ [Findinlist — zadanie](../msbuild/findinlist-task.md)  
+ Wyszukuje element w określonej listy, która ma pasujące itemspec.  
   
- [FindUnderPath, zadanie](../msbuild/findunderpath-task.md)  
- Określa, które elementy w kolekcji określony element istnieje w określonym folderze i wszystkie jego podfoldery.  
+ [Findunderpath — zadanie](../msbuild/findunderpath-task.md)  
+ Określa, które elementy w kolekcji określony element istnieje w określonym folderze i wszystkich jego podfolderów.  
   
- [FormatUrl, zadanie](../msbuild/formaturl-task.md)  
- Konwertuje adres URL poprawny format adresu URL.  
+ [Formaturl — zadanie](../msbuild/formaturl-task.md)  
+ Konwertuje adres URL do poprawnego formatu adresu URL.  
   
- [FormatVersion, zadanie](../msbuild/formatversion-task.md)  
- Dołącza numer poprawki numer wersji.  
+ [Formatversion — zadanie](../msbuild/formatversion-task.md)  
+ Dołącza numer wersji do numeru wersji.  
   
- [GenerateApplicationManifest, zadanie](../msbuild/generateapplicationmanifest-task.md)  
- Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub natywny manifest.  
+ [Generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md)  
+ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub manifest macierzysty.  
   
- [GenerateBootstrapper, zadanie](../msbuild/generatebootstrapper-task.md)  
- Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jego wymagań wstępnych.  
+ [Generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md)  
+ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki.  
   
- [GenerateDeploymentManifest, zadanie](../msbuild/generatedeploymentmanifest-task.md)  
- Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania.  
+ [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)  
+ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia.  
   
- [GenerateResource, zadanie](../msbuild/generateresource-task.md)  
- Konwertuje pliki txt i .resx wspólne pliki binarne .resources środowiska uruchomieniowego języka.  
+ [Generateresource — zadanie](../msbuild/generateresource-task.md)  
+ Konwertuje *.txt* i *resx* plików środowiska uruchomieniowego języka wspólnego binarne *Resources* plików.  
   
- [GenerateTrustInfo, zadanie](../msbuild/generatetrustinfo-task.md)  
- Generuje zaufanie aplikacji w manifeście podstawowej i z `TargetZone` i `ExcludedPermissions` parametrów.  
+ [Generatetrustinfo — zadanie](../msbuild/generatetrustinfo-task.md)  
+ Generuje zaufanie aplikacji z manifestu podstawowej oraz `TargetZone` i `ExcludedPermissions` parametrów.  
   
- [GetAssemblyIdentity, zadanie](../msbuild/getassemblyidentity-task.md)  
- Pobiera tożsamości zestawu z określonych plików i wyświetla informacje o tożsamości.  
+ [Getassemblyidentity — zadanie](../msbuild/getassemblyidentity-task.md)  
+ Pobiera tożsamość zestawu z określonych plików i wyświetla informacje o tożsamości.  
   
- [GetFrameworkPath, zadanie](../msbuild/getframeworkpath-task.md)  
+ [Getframeworkpath — zadanie](../msbuild/getframeworkpath-task.md)  
  Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawów.  
   
- [GetFrameworkSdkPath, zadanie](../msbuild/getframeworksdkpath-task.md)  
+ [Getframeworksdkpath — zadanie](../msbuild/getframeworksdkpath-task.md)  
  Pobiera ścieżkę do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
- [GetReferenceAssemblyPaths, zadanie](../msbuild/getreferenceassemblypaths-task.md)  
- Zwraca odwołanie ścieżki zestawu z różnych platform.  
+ [Getreferenceassemblypaths — zadanie](../msbuild/getreferenceassemblypaths-task.md)  
+ Zwraca odwołanie ścieżki zestawów w różnych architektur.  
   
- [LC, zadanie](../msbuild/lc-task.md)  
- Generuje plik .license z .licx — plik.  
+ [LC — zadanie](../msbuild/lc-task.md)  
+ Generuje *.license* plik wchodzącej w skład *licx* pliku.  
   
- [MakeDir, zadanie](../msbuild/makedir-task.md)  
- Tworzy katalogi i w razie potrzeby dominujące katalogów.  
+ [Makedir — zadanie](../msbuild/makedir-task.md)  
+ Tworzy katalogów i, jeśli to konieczne, dominujące katalogów.  
   
- [Message, zadanie](../msbuild/message-task.md)  
+ [Komunikat — zadanie](../msbuild/message-task.md)  
  Rejestruje komunikat podczas kompilacji.  
   
- [Move, zadanie](../msbuild/move-task.md)  
+ [MOVE — zadanie](../msbuild/move-task.md)  
  Przenosi pliki do nowej lokalizacji.  
   
- [MSBuild, zadanie](../msbuild/msbuild-task.md)  
- Tworzy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
+ [Zadanie MSBuild](../msbuild/msbuild-task.md)  
+ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
   
- [ReadLinesFromFile, zadanie](../msbuild/readlinesfromfile-task.md)  
+ [Readlinesfromfile — zadanie](../msbuild/readlinesfromfile-task.md)  
  Odczytuje listę elementów z pliku tekstowego.  
   
- [RegisterAssembly, zadanie](../msbuild/registerassembly-task.md)  
- Odczytuje metadanych w określonym zestawie i dodaje niezbędne wpisy do rejestru.  
+ [Registerassembly — zadanie](../msbuild/registerassembly-task.md)  
+ Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru.  
   
- [RemoveDir, zadanie](../msbuild/removedir-task.md)  
- Usuwa określone katalogi i wszystkie jego pliki i podkatalogi.  
+ [Removedir — zadanie](../msbuild/removedir-task.md)  
+ Usuwa określony katalog i wszystkie jego pliki i podkatalogi.  
   
- [RemoveDuplicates, zadanie](../msbuild/removeduplicates-task.md)  
- Usuwa zduplikowane elementy z kolekcji określony element.  
+ [Removeduplicates — zadanie](../msbuild/removeduplicates-task.md)  
+ Usuwa zduplikowane elementy z kolekcji określonego elementu.  
   
- [RequiresFramework35SP1Assembly, zadanie](../msbuild/requiresframework35sp1assembly-task.md)  
- Określa, czy aplikacja wymaga platformy .NET Framework 3.5 SP1.  
+ [Requiresframework35sp1assembly — zadanie](../msbuild/requiresframework35sp1assembly-task.md)  
+ Określa, czy aplikacja wymaga .NET Framework 3.5 SP1.  
   
  Zadanie ResGen  
- Nieaktualne. Użyj [generateresource — zadanie](../msbuild/generateresource-task.md) zadań na konwertowanie plików txt i .resx wspólne pliki binarne .resources środowiska uruchomieniowego języka.  
+ Nieaktualne. Użyj [generateresource — zadanie](../msbuild/generateresource-task.md) zadanie, aby przekonwertować *.txt* i *resx* plików do i z środowiska uruchomieniowego języka wspólnego binarne *Resources* pliki.  
   
- [ResolveAssemblyReference, zadanie](../msbuild/resolveassemblyreference-task.md)  
+ [Resolveassemblyreference — zadanie](../msbuild/resolveassemblyreference-task.md)  
  Określa wszystkie zestawy, które są zależne od określonych zestawów.  
   
- [ResolveCOMReference, zadanie](../msbuild/resolvecomreference-task.md)  
- Przyjmuje listę nazw bibliotek typu lub .tlb — pliki i usuwa te biblioteki typów do lokalizacji na dysku.  
+ [Resolvecomreference — zadanie](../msbuild/resolvecomreference-task.md)  
+ Przyjmuje listę wpisz jeden lub więcej nazw bibliotek lub *.tlb* pliki i jest rozpoznawana jako tych bibliotek typów do lokalizacji na dysku.  
   
- [ResolveKeySource, zadanie](../msbuild/resolvekeysource-task.md)  
+ [Resolvekeysource — zadanie](../msbuild/resolvekeysource-task.md)  
  Określa źródło klucza silnej nazwy  
   
- [ResolveManifestFiles, zadanie](../msbuild/resolvemanifestfiles-task.md)  
- Rozpoznaje następujących elementów w procesie kompilacji do plików do generowania manifestu: wbudowane elementy, zależności satelity, zawartość, symbole debugowania i dokumentacji.  
+ [Resolvemanifestfiles — zadanie](../msbuild/resolvemanifestfiles-task.md)  
+ Jest rozpoznawana jako następujące elementy w procesie kompilacji plików do generowania manifestu: wbudowane elementy, zależności, satelity, zawartość, symbole debugowania i dokumentację.  
   
- [ResolveNativeReference, zadanie](../msbuild/resolvenativereference-task.md)  
- Usuwa odwołania natywnego.  
+ [Resolvenativereference — zadanie](../msbuild/resolvenativereference-task.md)  
+ Usuwa odwołania natywne.  
   
- [ResolveNonMSBuildProjectOutput, zadanie](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
- Określa pliki wyjściowe dla innych niż MSBuild odwołania do projektu.  
+ [Resolvenonmsbuildprojectoutput — zadanie](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
+ Określa pliki wyjściowe dla odwołań do projektu niekorzystających z programu MSBuild.  
   
- [SGen, zadanie](../msbuild/sgen-task.md)  
+ [SGen — zadanie](../msbuild/sgen-task.md)  
  Tworzy zestaw serializacji XML dla typów w określonym zestawie.  
   
- [SignFile, zadanie](../msbuild/signfile-task.md)  
- Rejestruje określony plik przy użyciu określonego certyfikatu.  
+ [Signfile — zadanie](../msbuild/signfile-task.md)  
+ Podpisuje określonego pliku przy użyciu określonego certyfikatu.  
   
- [Touch, zadanie](../msbuild/touch-task.md)  
+ [Touch — zadanie](../msbuild/touch-task.md)  
  Ustawia czas dostępu i modyfikacji plików.  
   
- [UnregisterAssembly, zadanie](../msbuild/unregisterassembly-task.md)  
- Wyrejestrowuje określonych zestawów do COM interop celów.  
+ [Unregisterassembly — zadanie](../msbuild/unregisterassembly-task.md)  
+ Wyrejestrowuje określonych zestawów do celów międzyoperacyjności COM.  
   
- [Unzip — zadanie](../msbuild/unzip-task.md)  
- Unzips `.zip` archiwum do określonej lokalizacji.
+ [Rozpakuj zadania](../msbuild/unzip-task.md)  
+ Unzips *zip* archiwum do określonej lokalizacji.
   
- [UpdateManifest, zadanie](../msbuild/updatemanifest-task.md)  
- Aktualizuje wybrane właściwości w manifeście i poddały.  
+ [Updatemanifest — zadanie](../msbuild/updatemanifest-task.md)  
+ Aktualizuje właściwości wybranego w manifeście i rezygnuje.  
   
- [Vbc, zadanie](../msbuild/vbc-task.md)  
- Wywołuje kompilator Visual Basic, aby utworzyć pliki wykonywalne, biblioteki DLL lub moduły kodu...  
+ [Vbc — zadanie](../msbuild/vbc-task.md)  
+ Wywołuje kompilator języka Visual Basic generuje pliki wykonywalne, bibliotek dołączanych dynamicznie lub modułów kodu...  
   
- [Warning, zadanie](../msbuild/warning-task.md)  
- Dzienniki ostrzeżenie podczas kompilacji w oparciu obliczane instrukcji warunkowej.  
+ [Warning — zadanie](../msbuild/warning-task.md)  
+ Dzienniki ostrzeżenie podczas kompilacji w oparciu ocenianą instrukcji warunkowej.  
   
- [WriteCodeFragment, zadanie](../msbuild/writecodefragment-task.md)  
- Generuje plik tymczasowy kod za pomocą fragmentu określonego wygenerowanego kodu. Nie powoduje usunięcia pliku.  
+ [Writecodefragment — zadanie](../msbuild/writecodefragment-task.md)  
+ Generuje plik tymczasowy kod, za pomocą fragmentu określonego wygenerowanego kodu. Nie powoduje usunięcia pliku.  
   
- [WriteLinesToFile, zadanie](../msbuild/writelinestofile-task.md)  
- Zapisuje określone elementy do określonego pliku.  
+ [Writelinestofile — zadanie](../msbuild/writelinestofile-task.md)  
+ Zapisuje określone elementy do pliku określony tekst.  
   
- [XmlPeek, zadanie](../msbuild/xmlpeek-task.md)  
+ [Xmlpeek — zadanie](../msbuild/xmlpeek-task.md)  
  Zwraca wartości określonych przez zapytanie XPath z pliku XML.  
   
- [XmlPoke, zadanie](../msbuild/xmlpoke-task.md)  
+ [Xmlpoke — zadanie](../msbuild/xmlpoke-task.md)  
  Ustawia wartości określonych przez zapytanie XPath do pliku XML.  
   
- [XslTransformation, zadanie](../msbuild/xsltransformation-task.md)  
- Przekształca dane wejściowe XML przy użyciu *Extensible transformacji języka arkusza stylów* (XSLT) lub skompilowany XSLT i dane wyjściowe do urządzenia wyjściowego lub pliku.  
+ [Xsltransformation — zadanie](../msbuild/xsltransformation-task.md)  
+ Przekształca dane wejściowe XML przy użyciu *Extensible arkusza stylów języka przekształcenia* (XSLT) lub obliczonych XSLT i dane wyjściowe do wyjścia urządzenia lub pliku.  
   
   [Zadanie ZipDirectory](../msbuild/zipdirectory-task.md)  
- Tworzy `.zip` archiwum z zawartości katalogu.
+ Tworzy *zip* archiwum z zawartości katalogu.
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Wpisywanie zadania](../msbuild/task-writing.md)   
  [Zadania](../msbuild/msbuild-tasks.md)

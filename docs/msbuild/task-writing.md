@@ -1,5 +1,5 @@
 ---
-title: Zadanie zapisu | Dokumentacja firmy Microsoft
+title: Zadanie zapisywania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -14,26 +14,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57917b3820bac6005faa7b31f8cdd6cffd4978b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cf8c8a05d07d1a75a8794c52a2f89a55f01419e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965614"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152070"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
-Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania są zawarte w elementów docelowych. Biblioteka typowych zadań jest dołączana do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], i można również tworzyć własne zadania. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
+Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania są zawarte w elementów docelowych. Bibliotekę typowych zadań jest dołączana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], możesz również tworzyć własnych zadań. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Zadania  
- Przykłady zadań [kopiowania](../msbuild/copy-task.md), który kopiuje jeden lub więcej plików, [makedir —](../msbuild/makedir-task.md), która tworzy katalog, i [Csc](../msbuild/csc-task.md), który kompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plików kodu źródłowego. Każde zadanie jest zaimplementowany jako klasy .NET, który implementuje <xref:Microsoft.Build.Framework.ITask> interfejs, który jest zdefiniowany w zestawie Microsoft.Build.Framework.dll.  
+ Przykłady zadań [kopiowania](../msbuild/copy-task.md), który kopiuje jeden lub więcej plików [MakeDir](../msbuild/makedir-task.md), co powoduje utworzenie katalogu, i [Csc](../msbuild/csc-task.md), który kompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pliki kodów źródłowych. Każde zadanie podrzędne jest implementowany jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejs, który jest zdefiniowany w *Microsoft.Build.Framework.dll* zestawu.  
   
  Istnieją dwie metody, których można użyć podczas wykonywania zadania:  
   
--   Implementowanie <xref:Microsoft.Build.Framework.ITask> interfejsu bezpośrednio.  
+-   Implementowanie <xref:Microsoft.Build.Framework.ITask> interfejs bezpośrednio.  
   
--   Klasy być pochodną klasy Pomocnika <xref:Microsoft.Build.Utilities.Task>, który jest zdefiniowany w zestawie Microsoft.Build.Utilities.dll. Zadanie implementuje ITask i zawiera domyślne implementacje niektóre elementy ITask. Ponadto rejestrowanie jest łatwiejsze.  
-  
- W obu przypadkach należy dodać do własnej klasy metodę o nazwie `Execute`, która jest metoda wywoływana, gdy to zadanie jest uruchamiane. Ta metoda nie przyjmuje żadnych parametrów i zwraca `Boolean` wartość: `true` Jeśli zadanie zakończyło się pomyślnie lub `false` Jeśli go nie powiodła się. W poniższym przykładzie przedstawiono zadania, które nie wykonuje żadnej akcji i zwraca `true`.  
+-   Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Task>, który jest zdefiniowany w *Microsoft.Build.Utilities.dll* zestawu. Zadanie implementuje ITask i zawiera domyślne implementacje niektórych członków ITask. Ponadto rejestrowanie jest łatwiejsze.  
+
+W obu przypadkach należy dodać do swojej klasy metodę o nazwie `Execute`, czyli metody, która jest wywoływana, gdy zadanie jest uruchamiane. Ta metoda nie przyjmuje żadnych parametrów i zwraca `Boolean` wartość: `true` Jeśli zadanie zakończyło się pomyślnie lub `false` Jeśli go nie powiodła się. Poniższy przykład przedstawia zadanie, które nie wykonuje żadnych działań i zwraca `true`.  
   
 ```csharp
 using System;  
@@ -52,7 +52,7 @@ namespace MyTasks
 }  
 ```  
   
- Następujący plik projektu uruchomienia tego zadania:  
+ Następujący plik projektu uruchamia to zadanie:  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -62,7 +62,7 @@ namespace MyTasks
 </Project>  
 ```  
   
- Uruchomienie zadania one może również odbierać dane wejściowe z pliku projektu w przypadku utworzenia właściwości platformy .NET dla klasy zadania. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Ustawia właściwości bezpośrednio przed wywołaniem zadania `Execute` metody. Aby utworzyć właściwości ciągu, użyj kodu zadań takich jak:  
+ Po uruchomieniu zadania można również otrzyma dane wejściowe z pliku projektu tworzenia właściwości platformy .NET dla klasy zadania. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Ustawia właściwości bezpośrednio przed wywołaniem zadania podrzędnego `Execute` metody. Aby utworzyć właściwość ciągu, użyj kodu zadania, takie jak:  
   
 ```csharp
 using System;  
@@ -88,7 +88,7 @@ namespace MyTasks
 }  
 ```  
   
- Następujące tego zadania i zestawy uruchomień pliku projektu `MyProperty` podanej wartości:  
+ Następujące projektu pliku uruchomienia tego zadania i zestawy `MyProperty` podanej wartości:  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -98,16 +98,16 @@ namespace MyTasks
 </Project>  
 ```  
   
-## <a name="registering-tasks"></a>Rejestrowanie zadania  
- Jeśli projekt będzie uruchomić zadanie, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi wiedzieć, jak można zlokalizować zestawu, który zawiera klasę zadań. Zadania są rejestrowane przy użyciu [usingtask — Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+## <a name="register-tasks"></a>Rejestrowanie zadania  
+ Jeśli projekt zostanie uruchomione zadanie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi wiedzieć, jak zlokalizować zestaw, który zawiera klasę zadania. Zadania są rejestrowane przy użyciu [usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku Microsoft.Common.Tasks to plik projektu, który zawiera listę `UsingTask` elementy, które rejestrują wszystkie zadania, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ten plik jest automatycznie dołączane podczas tworzenia każdego projektu. Jeśli zadanie, które jest zarejestrowane w Microsoft.Common.Tasks również jest zarejestrowany w bieżącym pliku projektu, bieżący plik projektu ma pierwszeństwo przed; oznacza to można zastąpić domyślne zadania z własnych zadań, który ma taką samą nazwę.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Pliku *Microsoft.Common.Tasks* plik projektu, który zawiera listę `UsingTask` elementy, które rejestrują wszystkie zadania, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ten plik jest automatycznie dołączane podczas tworzenia każdego projektu. Jeśli zadanie, który jest zarejestrowany w *Microsoft.Common.Tasks* również jest zarejestrowany w bieżącym pliku projektu, pierwszeństwo ma bieżącego pliku projektu; oznacza to, że można przesłonić domyślnego zadania przy użyciu własnych zadań, który ma taką samą nazwę.  
   
 > [!TIP]
->  Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wyświetlając zawartość Microsoft.Common.Tasks.  
+>  Można wyświetlić listę zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , wyświetlając zawartość *Microsoft.Common.Tasks*.  
   
-## <a name="raising-events-from-a-task"></a>Wywoływanie zdarzeń z zadania  
- Jeśli zadanie pochodzi od <xref:Microsoft.Build.Utilities.Task> Klasa pomocy, możesz użyć dowolnej z następujących metod pomocnika w <xref:Microsoft.Build.Utilities.Task> klasy, aby wywołać zdarzenia, które zostanie przechwycony i wyświetlane przez dowolnego rejestratorów zarejestrowanych:  
+## <a name="raise-events-from-a-task"></a>Wywoływanie zdarzeń od zadania  
+ Jeśli zadanie jest pochodną <xref:Microsoft.Build.Utilities.Task> klasy pomocnika, umożliwia dowolny z następujących metod pomocnika na <xref:Microsoft.Build.Utilities.Task> klasy, aby wywołać zdarzenia, które będą przechwytywane i wyświetlane przez dowolnego rejestratorów zarejestrowanych:  
   
 ```csharp
 public override bool Execute()  
@@ -119,7 +119,7 @@ public override bool Execute()
 }  
 ```  
   
- Jeśli zadanie implementuje <xref:Microsoft.Build.Framework.ITask> bezpośrednio, nadal może wywoływać takie zdarzenia, ale należy użyć interfejsu IBuildEngine. W poniższym przykładzie przedstawiono zadania, który implementuje ITask i zgłasza zdarzenie niestandardowe:  
+ Jeśli zadanie implementuje <xref:Microsoft.Build.Framework.ITask> bezpośrednio, możesz nadal umieszczać takie zdarzenia, ale należy użyć interfejsu IBuildEngine. Poniższy przykład przedstawia zadanie, które implementuje ITask i zgłasza zdarzenie niestandardowe:  
   
 ```csharp
 public class SimpleTask : ITask  
@@ -143,8 +143,8 @@ public class SimpleTask : ITask
 }  
 ```  
   
-## <a name="requiring-task-parameters-to-be-set"></a>Parametry zadania należy ustawić wymaganie  
- Niektóre właściwości zadania jako "required" można oznaczyć tak, aby ustawić wartości tych właściwości każdego pliku projektu, który uruchamia zadanie lub kompilacja zakończy się niepowodzeniem. Zastosuj `[Required]` atrybutu właściwości platformy .NET w zadania w następujący sposób:  
+## <a name="require-task-parameters-to-be-set"></a>Wymagane parametry zadania należy ustawić  
+ Tak, aby ustawić wartości tych właściwości każdego pliku projektu, który uruchamia zadanie lub kompilacja nie powiedzie się, można oznaczyć niektórych właściwości zadania jako "required". Zastosuj `[Required]` atrybutu do właściwości platformy .NET w zadaniu w następujący sposób:  
   
 ```csharp
 private string requiredProperty;  
@@ -157,12 +157,12 @@ public string RequiredProperty
 }  
 ```  
   
- `[Required]` Atrybutu jest definiowana za pomocą <xref:Microsoft.Build.Framework.RequiredAttribute> w <xref:Microsoft.Build.Framework> przestrzeni nazw.  
+ `[Required]` Atrybutu jest definiowana przez <xref:Microsoft.Build.Framework.RequiredAttribute> w <xref:Microsoft.Build.Framework> przestrzeni nazw.  
   
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  
- Poniższej [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy przedstawiono zadania pochodny <xref:Microsoft.Build.Utilities.Task> Klasa pomocy. To zadanie zwraca `true`, co oznacza, że jego powodzenia.  
+ Poniższej [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasa przedstawia zadanie pochodząca od <xref:Microsoft.Build.Utilities.Task> Klasa pomocy. To zadanie zwraca `true`, co oznacza, że udało mu się.  
   
 ### <a name="code"></a>Kod  
   
@@ -186,7 +186,7 @@ namespace SimpleTask1
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  
- Poniższej [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy pokazuje wykonania zadań <xref:Microsoft.Build.Framework.ITask> interfejsu. To zadanie zwraca `true`, co oznacza, że jego powodzenia.  
+ Poniższej [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy pokazano Implementowanie zadań <xref:Microsoft.Build.Framework.ITask> interfejsu. To zadanie zwraca `true`, co oznacza, że udało mu się.  
   
 ### <a name="code"></a>Kod  
   
@@ -244,7 +244,7 @@ namespace SimpleTask2
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  
- To [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pokazuje, zadań, która jest pochodną klasy <xref:Microsoft.Build.Utilities.Task> Klasa pomocy. Ma właściwość ciąg wymaganych i zgłasza zdarzenie, wyświetlane przez wszystkich rejestratorów zarejestrowanych.  
+ To [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasa przedstawia zadania, która pochodzi od klasy <xref:Microsoft.Build.Utilities.Task> Klasa pomocy. Ma właściwość wymagane parametry i wywołuje zdarzenie, które jest wyświetlane przez wszystkich rejestratorów zarejestrowanych.  
   
 ### <a name="code"></a>Kod  
  [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]  
@@ -267,5 +267,5 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   

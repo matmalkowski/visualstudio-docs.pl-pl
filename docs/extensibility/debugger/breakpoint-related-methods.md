@@ -14,76 +14,76 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce44a7d3d3578d5157bcefcf14172d92ece677d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107293"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152148"
 ---
 # <a name="breakpoint-related-methods"></a>Metody dotyczące punktu przerwania
-Aparat debugowania (DE) musi obsługiwać ustawienia punktów przerwania. Debugowanie programu Visual Studio obsługuje następujące typy punktów przerwania:  
+Aparat debugowania (DE) musi obsługiwać ustawienie punktów przerwania. Debugowanie programu Visual Studio obsługuje następujące typy punktów przerwania:  
   
--   Powiązany  
+-   powiązane  
   
-     Żądanie za pośrednictwem interfejsu użytkownika i pomyślnie powiązane z lokalizacji określony kod  
+     Żądanie za pośrednictwem interfejsu użytkownika i pomyślnie powiązane z lokalizacją określony kod  
   
 -   Oczekujące  
   
-     Żądanie za pośrednictwem interfejsu użytkownika, ale nie są jeszcze powiązane z rzeczywistego instrukcje  
+     Żądanie za pośrednictwem interfejsu użytkownika, ale jeszcze nie jest powiązana z rzeczywistych instrukcje  
   
-## <a name="discussion"></a>Omówienie  
- Na przykład oczekującym punktem przerwania występuje, gdy nie są jeszcze załadowane zgodnie z instrukcjami. Jeśli kod jest ładowany, oczekujących spróbuj punktów przerwania powiązać kodu w określonej lokalizacji, oznacza to, aby wstawić instrukcji podziału w kodzie. Zdarzenia są wysyłane do Menedżera debugowania sesji (SDM), aby wskazać Powiązanie pomyślne lub powiadamiania wystąpiły błędy podczas wiązania.  
+## <a name="discussion"></a>Dyskusja  
+ Na przykład oczekujący punkt przerwania występuje, gdy instrukcje nie zostały jeszcze załadowane. Gdy kod jest ładowany, oczekujących spróbuj punktów przerwania można powiązać kod w określonej lokalizacji, oznacza to, aby wstawić podział instrukcji w kodzie. Zdarzenia są wysyłane do Menedżer debugowania sesji (SDM) wskazuje pomyślne powiązania lub powiadomienie, że wystąpiły błędy powiązania.  
   
- Oczekującym punktem przerwania również zarządza własną wewnętrzną listę odpowiednich powiązane punkty przerwania. Jeden oczekujący punkt przerwania może spowodować wstawiania wiele punktów przerwania w kodzie. Visual Studio debugowanie interfejsu użytkownika pokazano widok drzewa oczekujących punktów przerwania i odpowiednie powiązane punkty przerwania.  
+ Oczekujący punkt przerwania zarządza także swój własny wewnętrzną listę odpowiednich powiązanych punktów przerwania. Jeden oczekujący punkt przerwania może spowodować wstawiania wielu punktów przerwania w kodzie. Debugowania interfejsu użytkownika programu Visual Studio Pokazuje widok drzewa oczekujących punktów przerwania i odpowiadające im powiązane punkty przerwania.  
   
- Tworzenie i używanie oczekujących punktów przerwania wymagają wykonania [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) metody, a także z następujących metod [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsów.  
+ Stworzeniem i używaniem oczekujących punktów przerwania wymagają wykonania [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) metody, jak również z następujących metod [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsów.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Określa, czy określonej oczekujących punkt przerwania można powiązać z lokalizacji kodu.|  
-|[BIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Wiąże określoną oczekujących punktu przerwania co najmniej jedna lokalizacja kodu.|  
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Określa, czy określony oczekujących punktów przerwania można powiązać z lokalizacji kodu.|  
+|[powiązania](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Wiąże określoną oczekujących punktów przerwania z jedną lub więcej lokalizacji kodu.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Pobiera stan oczekujący punkt przerwania.|  
-|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Pobiera żądanie przerwania, używany do tworzenia oczekującym punktem przerwania.|  
+|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Pobiera żądanie przerwania, użyty do utworzenia oczekujący punkt przerwania.|  
 |[Włącz](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Włącza/wyłącza włączony stan oczekujący punkt przerwania.|  
-|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Wylicza wszystkie punkty przerwania powiązana z oczekującym punktem przerwania.|  
-|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Wylicza wszystkie punkty przerwania błędów wynikających z oczekującym punktem przerwania.|  
-|[Usuń](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa oczekującym punktem przerwania i powiązany z niego wszystkie punkty przerwania.|  
+|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Wylicza wszystkie punkty przerwania, powiązana z oczekującym punktem przerwania.|  
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Wylicza wszystkie punkty przerwania błędów wynikających z Oczekujący punkt przerwania.|  
+|[Usuń](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Usuwa oczekujący punkt przerwania i wszystkie punkty przerwania, powiązany z niego.|  
   
- Wyliczyć powiązane punkty przerwania i błąd punktów przerwania, musisz zaimplementować wszystkie metody [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) i [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
+ Wyliczyć powiązane punkty przerwania i punkty przerwania błędu musi implementować wszystkie metody [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) i [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
   
- Oczekujące punktów przerwania, które wiążą się z kodem lokalizacji wymaga wykonania następujących [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) metody.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Pobiera oczekującym punktem przerwania, która zawiera punkt przerwania.|  
-|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Pobiera stan powiązania punktu przerwania.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Pobiera rozpoznawania punkt przerwania, opisujący punktu przerwania.|  
-|[Włącz](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Włącza lub wyłącza punktu przerwania.|  
-|[Usuń](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Usuwa powiązania punktu przerwania.|  
-  
- Rozdzielczość i żądania informacji wymaga wykonania następujących [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) metody.  
+ Oczekujące punkty przerwania, które należy powiązać kod lokalizacji wymaga wykonania następujących [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Pobiera typ punktu przerwania reprezentowany przez rozwiązanie.|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Pobiera oczekujący punkt przerwania, który zawiera punkt przerwania.|  
+|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Pobiera stan powiązany punkt przerwania.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Pobiera rozwiązanie punktu przerwania, który opisuje punktu przerwania.|  
+|[Włącz](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Włącza lub wyłącza punkt przerwania.|  
+|[Usuń](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Usuwa powiązany punkt przerwania.|  
+  
+ Rozdzielczość i żądanie informacji wymaga wykonania następujących [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) metody.  
+  
+|Metoda|Opis|  
+|------------|-----------------|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Pobiera typ punktu przerwania reprezentowany przez rozwiązania.|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Pobiera informacje o rozdzielczości punkt przerwania, opisujący punktu przerwania.|  
   
  Rozpoznawanie błędów, które mogą wystąpić podczas tworzenia powiązania wymaga wykonania następujących [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Pobiera oczekującym punktem przerwania, która zawiera błąd punktu przerwania.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Pobiera rozpoznawania błędu przerwania opisujący błąd punktu przerwania.|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Pobiera oczekujący punkt przerwania, który zawiera błąd punktu przerwania.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Pobiera rozwiązanie błąd punktu przerwania, który opisuje błąd punktu przerwania.|  
   
- Rozpoznawanie błędów, które mogą wystąpić podczas tworzenia powiązania wymaga również następujące metody [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
+ Rozpoznawanie błędów, które mogą wystąpić podczas tworzenia powiązania wymaga również z następujących metod [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Pobiera typ punktu przerwania.|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Pobiera informacje o rozdzielczości punktu przerwania.|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Pobiera informacje o rozwiązania punktu przerwania.|  
   
- Wyświetlanie kodu źródłowego w punkcie przerwania wymaga wykonania metody [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) i/lub metody [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).  
+ Wyświetlanie kodu źródłowego w punkcie przerwania, musisz zaimplementować metody [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) i/lub metody [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Zobacz także  
+ [Wykonanie kontroli i stan oceny](../../extensibility/debugger/execution-control-and-state-evaluation.md)

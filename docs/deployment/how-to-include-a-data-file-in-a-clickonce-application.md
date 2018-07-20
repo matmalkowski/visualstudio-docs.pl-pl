@@ -18,41 +18,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815548"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151703"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Porady: uwzględnianie pliku danych w aplikacji ClickOnce
-Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany katalog danych na dysku lokalnym komputera docelowego, której aplikacji można zarządzać własnych danych. Pliki danych może zawierać plików dowolnego typu: pliki tekstowe, pliki XML lub nawet pliki bazy danych (.mdb) programu Microsoft Access. Poniższe procedury pokazują, jak można dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany do katalogu danych na dysku lokalnym komputera docelowego, gdzie aplikacja można zarządzać swoimi danymi. Pliki danych może zawierać pliki dowolnego typu: pliki tekstowe, pliki XML lub nawet bazy danych Microsoft Access (*.mdb*) plików. Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Aby dołączyć plik danych przy użyciu Mage.exe  
   
-1.  Dodawanie pliku danych do katalogu aplikacji z resztą pliki aplikacji.  
+1.  Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
   
-     Zazwyczaj katalogu aplikacji jest katalogiem etykietą wdrożenia bieżącej wersji — na przykład v1.0.0.0.  
+     Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
   
 2.  Zaktualizuj manifest aplikacji do listy plików danych.  
   
      `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji i automatycznie generuje podpisów wyznaczania wartości skrótu.  
+     Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji, a także automatycznie wygeneruje sygnatury skrótu.  
   
-3.  Otwórz plik manifestu aplikacji w preferowanym tekstu lub edytora XML i Znajdź `file` element ostatnio dodany plik.  
+3.  Otwórz manifest aplikacji w preferowanym tekstu lub edytora XML i Znajdź `file` element ostatnio dodane pliku.  
   
-     Jeśli dodano plik XML o nazwie `Data.xml`, plik będzie wyglądała podobnie do poniższego przykładu kodu.  
+     Jeśli został dodany plik XML o nazwie `Data.xml`, plik będzie wyglądać podobnie jak w poniższym przykładzie kodu.  
   
  `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Dodaj atrybut `type` do tego elementu i przekazać jej wartość `data`.  
+1.  Dodaj atrybut `type` do tego elementu i dostarczyć wartość `data`.  
   
  `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Ponownie podpisać manifest aplikacji przy użyciu pary kluczy lub certyfikatu, a następnie ponownie zaloguj manifeście wdrażania.  
+1.  Ponownie podpisać manifest aplikacji przy użyciu certyfikatu lub parę kluczy, a następnie ponownie podpisać manifest wdrożenia.  
   
-     Musi ponownie podpisać manifeście wdrażania, ponieważ jego skrót manifest aplikacji została zmieniona.  
+     Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.  
   
      `mage -s app manifest -cf cert_file -pwd password`
   
@@ -62,27 +62,27 @@ Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalo
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe  
   
-1.  Dodawanie pliku danych do katalogu aplikacji z resztą pliki aplikacji.  
+1.  Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
   
-2.  Zazwyczaj katalogu aplikacji jest katalogiem etykietą wdrożenia bieżącej wersji — na przykład v1.0.0.0.  
+2.  Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
   
 3.  Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.  
   
 4.  Wybierz **pliki** kartę.  
   
-5.  W polu tekstowym u góry karty wprowadź katalog zawierający pliki aplikacji, a następnie kliknij przycisk **wypełnij**.  
+5.  W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.  
   
-     Plik danych będą wyświetlane w siatce.  
+     Plik danych zostaną wyświetlone w siatce.  
   
-6.  Ustaw **typ pliku** wartości w pliku danych do **danych**.  
+6.  Ustaw **typ pliku** wartość plik danych do **danych**.  
   
-7.  Zapisz manifest aplikacji, a następnie ponownie podpisać plik.  
+7.  Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.  
   
-     MageUI.exe wyświetli monit o ponowne podpisanie pliku.  
+     *MageUI.exe* wyświetli monit o ponowne podpisywanie pliku.  
   
-8.  Ponowne podpisanie manifeście wdrażania  
+8.  Ponownie podpisać manifest wdrożenia  
   
-     Musi ponownie podpisać manifeście wdrażania, ponieważ jego skrót manifest aplikacji została zmieniona.  
+     Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.  
   
-## <a name="see-also"></a>Zobacz też  
- [Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+## <a name="see-also"></a>Zobacz także  
+ [Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567902"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154827"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
-Zatrzymuje wszystkie śledzenia i zwalnia wszystkie pamięci używane w sesji śledzenia.  
+Zatrzymanie wszystkich funkcji śledzenia i zwalnia pamięć, wszystkie używane w sesji śledzenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca **HRESULT** z **zakończyło się pomyślnie** bitu zatrzymanie śledzenia.  
+ Zwraca **HRESULT** z **Powodzenie** bitu, jeśli śledzenie została zatrzymana.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h  
+ **Nagłówek:** *FileTracker.h*  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

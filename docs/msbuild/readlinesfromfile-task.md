@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f05bb6e3f12dde2fbfd17120b9e2d646cb6e9f59
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9b545efb397e2dcd5052605db1d14e113ea9fc76
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567346"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152051"
 ---
-# <a name="readlinesfromfile-task"></a>ReadLinesFromFile — Zadanie
+# <a name="readlinesfromfile-task"></a>ReadLinesFromFile — zadanie
 Odczytuje listę elementów z pliku tekstowego.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `ReadLinesFromFile` zadań.  
+ W poniższej tabeli opisano parametry `ReadLinesFromFile` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`File`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa plik do odczytu. Plik musi mieć jeden element w każdym wierszu.|  
-|`Lines`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera wiersze do odczytu z pliku.|  
+|`File`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa plik do odczytu. Nazwa pliku musi mieć jedną pozycję w każdym wierszu.|  
+|`Lines`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera wiersze odczytu z pliku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `ReadLinesFromFile` zadanie tworzenia elementów z listy w pliku tekstowym. Elementy odczytu z pliku są przechowywane w `ItemsFromFile` Kolekcja elementów.  
+ W poniższym przykładzie użyto `ReadLinesFromFile` zadanie tworzenia elementów z listy w pliku tekstowym. Elementy odczytu z pliku są przechowywane w `ItemsFromFile` elementu kolekcji.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -63,7 +63,7 @@ Odczytuje listę elementów z pliku tekstowego.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Zadania](../msbuild/msbuild-tasks.md)

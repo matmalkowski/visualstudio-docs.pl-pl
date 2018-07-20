@@ -1,5 +1,5 @@
 ---
-title: Element map bitowych | Dokumentacja firmy Microsoft
+title: Bitmaps, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea89ae212a85ed2a164ce133d055aebe551cf545
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f407347946df5ddc537001fcb14bae909e52646
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098225"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153666"
 ---
-# <a name="bitmaps-element"></a>Element map bitowych
-Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.  
+# <a name="bitmaps-element"></a>Bitmaps, element
+Grupy [element bitmapy](../extensibility/bitmap-element.md) elementów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,20 +40,20 @@ Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[Bitmaps, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
-|[Bitmap, element](../extensibility/bitmap-element.md)|Definiuje mapy bitowej.|  
+|[Bitmap, element](../extensibility/bitmap-element.md)|Definiuje mapę bitową.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -65,6 +65,6 @@ Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.
 </Bitmaps>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

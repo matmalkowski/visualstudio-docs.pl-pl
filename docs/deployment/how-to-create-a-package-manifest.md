@@ -20,31 +20,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2e6a231ce597e2ec6a3e04cf74521b6c10d2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563677"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154632"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Porady: tworzenie manifestu pakietu
-Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera jeden produkt pliku manifestu ale manifest pakietu dla każdego ustawienia regionalne. Funkcji udostępnionych w różnych wersjach zlokalizowanych powinien przejść do manifestu produkt.  
+Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.  
   
- Aby uzyskać więcej informacji na temat manifestów pakietu, zobacz [porady: tworzenie manifestu produkt](../deployment/how-to-create-a-product-manifest.md).  
+ Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  
   
-## <a name="creating-the-package-manifest"></a>Tworzenie manifestu pakietu  
+## <a name="create-the-package-manifest"></a>Tworzenie manifestu pakietu  
   
-#### <a name="to-create-the-package-manifest"></a>Aby utworzyć plik manifestu pakietu  
+#### <a name="to-create-the-package-manifest"></a>Aby utworzyć manifest pakietu  
   
-1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.  
+1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto *C:\package*.  
   
-2.  Utwórz podkatalog o nazwie ustawień regionalnych, takich jak en dla języka angielskiego.  
+2.  Utwórz podkatalog o nazwie ustawień regionalnych, takich jak *en* w języku angielskim.  
   
-3.  W programie Visual Studio, Utwórz plik XML o nazwie `package.xml`i zapisz go w folderze C:\package\en.  
+3.  W programie Visual Studio, należy utworzyć plik XML, który nosi nazwę *package.xml*i zapisać go w celu *C:\package\en* folderu.  
   
-4.  Dodaj XML, aby wyświetlić listę nazwę pakietu programu inicjującego, culture dla manifest tego pakietu zlokalizowane i umowy licencyjnej opcjonalne. Następujący kod XML używa zmiennych `DisplayName` i `Culture`, które zostały określone w elemencie nowsze.  
+4.  Dodaj kod XML, aby wyświetlić listę Nazwa pakietu programu inicjującego, kultura tego manifestu pakietu zlokalizowane i umowę licencyjną opcjonalne. Następujący kod XML używa zmiennych `DisplayName` i `Culture`, które są określone w elemencie nowsze.  
   
-    ```  
+    ```xml  
     <Package  
         xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
         Name="DisplayName"  
@@ -52,17 +52,17 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Dodaj XML, aby wyświetlić listę wszystkich plików, które znajdują się w katalogu ustawień regionalnych. Następujący kod XML używany jest plik o nazwie eula.txt, która jest stosowana do **en** ustawień regionalnych.  
+5.  Dodaj kod XML, aby wyświetlić listę wszystkich plików, które znajdują się w katalogu specyficzny dla ustawień regionalnych. Następujący kod XML, używany jest plik o nazwie *eula.txt* który jest odpowiedni dla **en** ustawień regionalnych.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
       <PackageFile Name="eula.txt"/>  
     </PackageFiles>  
     ```  
   
-6.  Dodaj XML do definiowania Lokalizowalny ciągów dla pakietu programu inicjującego. Następujący kod XML dodaje ciągów błędów dla ustawień regionalnych pl.  
+6.  Dodaj kod XML do definiowania możliwych do zlokalizowania ciągi dla pakietu programu inicjującego. Następujący kod XML dodaje ciągi błędów dla **en** ustawień regionalnych.  
   
-    ```  
+    ```xml  
       <Strings>  
         <String Name="DisplayName">Custom Bootstrapper Package</String>  
         <String Name="CultureName">en</String>  
@@ -73,12 +73,12 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
     </Strings>  
     ```  
   
-7.  Skopiuj C:\package folder do katalogu zawierającego program inicjujący Instalatora programu Visual Studio. Dla programu Visual Studio 2010 to jest katalog SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
+7.  Kopiuj *C:\package* folder w katalogu program inicjujący Instalatora programu Visual Studio. W przypadku programu Visual Studio 2010, jest *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* katalogu.  
   
 ## <a name="example"></a>Przykład  
  Manifest pakietu zawiera informacje specyficzne dla ustawień regionalnych, takie jak komunikaty o błędach, postanowienia licencyjne dotyczące oprogramowania i pakietów językowych.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
@@ -100,5 +100,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

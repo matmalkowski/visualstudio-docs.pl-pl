@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 7abbd976e1ed97df257856f6b31b13966441fd9a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35676210"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154401"
 ---
-# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników
+# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
 Właściwości szablonu obciążenia określają o tym, jak symulowane obciążenie użytkownika jest korygowane w trakcie testu obciążenia. Program Visual Studio zapewnia trzy wbudowane wzorce ładowania: stałe, etapu i ukierunkowane na cel. Możesz wybrać wzorzec obciążenia i dostosować właściwości do odpowiednich poziomów dla swoich celów testu obciążenia.
 
@@ -36,16 +36,16 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 #### <a name="constant-load-pattern-considerations"></a>Zagadnienia dotyczące wzoru stałego obciążenia
 
- Wzór obciążenia stałej jest używany do uruchamiania tego samego obciążenia użytkownika podczas uruchamiania testu obciążenia. Zachować ostrożność przy używaniu wzoru stałego obciążenia, który ma dużą liczbą użytkowników; Spowoduje to więc umieścić nieuzasadnione i nierealistyczne żądania na serwerze lub serwerach, na początku testu obciążenia. Na przykład jeśli test obciążenia zawiera test sieci Web, który rozpoczyna się żądaniem do strony głównej i ustawisz test obciążenia przy stałym obciążeniu 1000 użytkowników, test obciążeniowy, prześle pierwsze 1000 żądań do strony głównej tak szybko, jak to możliwe. To może nie być realistyczna symulacja rzeczywistego dostępu do witryny sieci Web. Aby rozwiązać ten problem, należy wziąć pod uwagę przy użyciu krokowego wzorca obciążenia, który stopniowo zwiększa się do 1000 użytkowników jednocześnie lub określić okres rozgrzewania w ustawieniach testu obciążenia. Jeśli określono okres rozgrzewania, test obciążeniowy automatycznie zwiększy obciążenie stopniowo w okresie rozgrzewania. Aby uzyskać więcej informacji, zobacz [opóźnienia rozpocząć konfigurowanie scenariusza](../test/configure-scenario-start-delays.md).
+ Wzór obciążenia stałej jest używany do uruchamiania tego samego obciążenia użytkownika podczas uruchamiania testu obciążenia. Zachować ostrożność przy używaniu wzoru stałego obciążenia, który ma dużą liczbą użytkowników; Spowoduje to więc umieścić nieuzasadnione i nierealistyczne żądania na serwerze lub serwerach, na początku testu obciążenia. Na przykład jeśli test obciążenia zawiera test sieci Web, który rozpoczyna się żądaniem do strony głównej i ustawisz test obciążenia przy stałym obciążeniu 1000 użytkowników, test obciążeniowy, prześle pierwsze 1000 żądań do strony głównej tak szybko, jak to możliwe. To może nie być realistyczna symulacja rzeczywistego dostępu do witryny sieci Web. Aby rozwiązać ten problem, należy wziąć pod uwagę przy użyciu krokowego wzorca obciążenia, który stopniowo zwiększa się do 1000 użytkowników jednocześnie lub określić okres rozgrzewania w ustawieniach testu obciążenia. Jeśli określono okres rozgrzewania, test obciążeniowy automatycznie zwiększy obciążenie stopniowo w okresie rozgrzewania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie opóźnień uruchamiania scenariuszy](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Krok
 
  Krokowego wzorca obciążenia służy do określania obciążenie użytkownikami, która zwiększa z czasem do zdefiniowanych maksymalne obciążenie użytkownikami. Dla obciążeń przechodzenie krok po kroku, należy określić **początkowa liczba użytkowników**, **maksymalna liczba użytkowników**, **czas trwania kroku (w sekundach)**, i **liczba użytkowników zwiększana podczas kroku**.
 
- Na przykład obciążenia krokowego z **początkowej użytkownika** liczenia jedengo, **maksymalna liczba użytkowników** 100, **czas trwania kroku (w sekundach)** 10, a **liczbę użytkowników** 1 tworzy wzorzec obciążenia użytkownika, który rozpoczyna się od 1, zwiększa się o 1 co 10 sekund, aż do osiągnięcia 100 użytkowników.
+ Na przykład obciążenia krokowego z **początkowa liczba użytkowników** jednego, **maksymalna liczba użytkowników** 100, **czas trwania kroku (w sekundach)** 10, a **liczbę użytkowników** 1 tworzy wzorzec obciążenia użytkownika, który rozpoczyna się od 1, zwiększa się o 1 co 10 sekund, aż do osiągnięcia 100 użytkowników.
 
 > [!NOTE]
-> Jeśli czas trwania całkowita testu jest krótszy niż czas, który jest wymagany do kroku maksymalnie maksymalne obciążenie użytkownikami, test zatrzyma się po Upłynęło czasu trwania i nie osiąga docelowej maksymalna liczba użytkowników.
+> Jeśli czas trwania całkowita testu jest krótszy niż czas, który jest wymagany do kroku maksymalnie maksymalne obciążenie użytkownikami, a następnie zatrzyma się po czas trwania testu, a nie dociera **maksymalna liczba użytkowników** docelowej.
 
 
  Celem kroku umożliwia zwiększenie obciążenia, dopóki serwer osiągnie punkt którym wydajności znacznie zmniejsza. W miarę wzrostu obciążenia serwera po pewnym czasie wyczerpania zasobów. Obciążenia krokowego to dobry sposób, aby określić liczbę użytkowników, w których ten problem wystąpi. Korzystając z obciążenia przechodzenia krok po kroku masz również monitorowanie zasobów agenta ściśle, aby upewnić się, że agenci mogą wygenerowania pożądanego obciążenia.
@@ -56,17 +56,17 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
  Krokowego wzorca obciążenia może służyć do uruchomienia testów obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się wraz ze wzrostem obciążenia użytkownika to zwiększenie obciążenia na serwerze lub serwerach. Na przykład, aby zobaczyć, jak wykonać serwer lub serwery jako obciążenie użytkownikami wzrasta do 2000 użytkowników, może uruchomić 10-godzinny test obciążenia przy użyciu krokowego wzorca obciążenia, który ma następujące właściwości:
 
--   Początkowa liczba użytkowników: 100
+-   **Początkowa liczba użytkowników**: 100
 
--   Maksymalna liczba użytkowników: 2000
+-   **Maksymalna liczba użytkowników**: 2000
 
--   Czas trwania kroku (w sekundach): 1800
+-   **Czas trwania kroku (w sekundach)**: 1800
 
--   Czas narastania (w sekundach): 20
+-   **Czas narastania (w sekundach)**: 20
 
--   Liczba użytkowników zwiększana podczas kroku: 100
+-   **Liczba użytkowników zwiększana podczas kroku**: 100
 
- Te ustawienia, uruchom test obciążenia w ciągu 30 minut (1800 sekund) po użytkownik ładuje 100, 200, 300, a także do 2000 użytkowników. **Czas do zwiększenia kroku** właściwość warto szczególnej uwagi, ponieważ jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w Kreatorze nowego testu obciążenia. Ta właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu. W przykładzie obciążenia użytkownikami zwiększyłoby się ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę). Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+ Te ustawienia, uruchom test obciążenia w ciągu 30 minut (1800 sekund) po użytkownik ładuje 100, 200, 300, a także do 2000 użytkowników. **Czas do zwiększenia kroku** właściwość warto szczególnej uwagi, ponieważ jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w **nowego kreatora testu obciążenia**. Ta właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu. W przykładzie obciążenia użytkownikami zwiększyłoby się ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę). Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Opartego na celach
 
@@ -110,41 +110,41 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 |Zadania|Skojarzone tematy|
 |-----------|-----------------------|
-|**Określanie wzorzec ładowania początkowego dla testu obciążeniowego:** po utworzeniu testu obciążenia za pomocą Kreatora nowego testu obciążeniowego wybierz wzorzec obciążenia.|-   [Zmienianie wzorca obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
-|**Edytowanie wzorzec obciążenia dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować wzorca obciążenia w edytorze testu obciążeniowego.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Określanie, czy użytkownicy wirtualni w obciążenia scenariusza testu powinien zawierać dane pamięci podręcznej sieci Web:** można zmienić **procent nowych użytkowników** wpływają na sposób, w którym zasymulowano obciążenie sieci Web, buforowanie, właściwość może być wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Określanie wzorzec ładowania początkowego dla testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, wybierz wzorzec obciążenia.|-   [Zmień wzorzec obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Edytowanie wzorzec obciążenia dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować wzorca obciążenia w **edytora testu obciążenia**.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Określanie, czy użytkownicy wirtualni w obciążenia scenariusza testu powinien zawierać dane pamięci podręcznej sieci Web:** można zmienić **procent nowych użytkowników** wpływają na sposób, w którym zasymulowano obciążenie sieci Web, buforowanie, właściwość może być wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Określanie czas do zwiększenia kroku dla wzorca obciążenia krokowego:** **czas do zwiększenia kroku** właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
-## <a name="changing-the-load-pattern"></a>Zmienianie wzorca obciążenia
+## <a name="change-the-load-pattern"></a>Zmień wzorzec obciążenia
 
  Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości szablonu obciążenia, które są skojarzone ze scenariuszem do poziomu, który spełnia Twoje cele testu.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 
- Wzorzec obciążenia określa liczbę użytkowników wirtualnych aktywnych podczas testu obciążenia i szybkość jaką nowi użytkownicy są dodawani. Możesz wybrać spośród trzech dostępnych wzorców: krok wzorca, stała i opartego na celach. Aby uzyskać więcej informacji, zobacz [określenie liczby użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+ Wzorzec obciążenia określa liczbę użytkowników wirtualnych aktywnych podczas testu obciążenia i szybkość jaką nowi użytkownicy są dodawani. Możesz wybrać spośród trzech dostępnych wzorców: krok wzorca, stała i opartego na celach. Aby uzyskać więcej informacji, zobacz [Określ liczbę użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Możesz również zmienić właściwości obciążenia programowo przy użyciu wtyczki testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [jak: utworzyć wtyczkę testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
+> Możesz również zmienić właściwości obciążenia programowo przy użyciu wtyczki testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie wtyczki testu obciążeniowego](../test/how-to-create-a-load-test-plug-in.md).
 
 
 ### <a name="to-change-the-load-pattern"></a>Aby zmienić wzorzec obciążenia
 
 1.  Otwórz test obciążenia.
 
-2.  W **edytorze testu obciążeniowego**, w tym folderze scenariuszy rozwiń scenariusz, aby edytować wzorzec obciążenia i wybrać wzorzec obciążenia dla scenariusza.
+2.  W **edytorze testu obciążeniowego**w *scenariuszy* folder, rozwiń węzeł scenariusz, aby edytować wzorzec obciążenia i wybrać wzorzec obciążenia dla scenariusza.
 
     > [!NOTE]
     > Treść węzła wzorca obciążenia, jest wyświetlany w drzewie scenariusza w teście obciążenia odzwierciedla profilu obciążenia, można wybrać podczas tworzenia obciążenia testu. Może być albo **stałej Załaduj profil** lub **kroku Załaduj profil**.
 
-3.  Naciśnij klawisz **F4** do wyświetlenia w oknie właściwości.
+3.  Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
-     **Wzorca obciążenia** i **parametry** kategorii są wyświetlane w oknie dialogowym właściwości.
+     **Wzorca obciążenia** i **parametry** kategorii są wyświetlane w **właściwości** okna.
 
 4.  (Opcjonalnie) Zmiana **wzorzec** właściwość **wzorca obciążenia** kategorii.
 
-     Wybrane opcje dla **wzorzec** właściwości są **kroku**, **stałej**, i **na podstawie celem**. Aby uzyskać więcej informacji na temat typów wzorca obciążenia, zobacz [określenie liczby użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+     Wybrane opcje dla **wzorzec** właściwości są **kroku**, **stałej**, i **na podstawie celem**. Aby uzyskać więcej informacji na temat typów wzorca obciążenia, zobacz [Określ liczbę użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 5.  (Opcjonalnie) W **parametry** kategorii, zmień wartości.
 
@@ -156,5 +156,5 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
 - [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

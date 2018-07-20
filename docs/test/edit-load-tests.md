@@ -1,5 +1,5 @@
 ---
-title: Edycja testów obciążenia w programie Visual Studio
+title: Edytowanie testów obciążenia w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0841faf5e63b6c4108b9f65777416ded63227bb9
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968635"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152438"
 ---
-# <a name="edit-load-tests"></a>Edytuj testów obciążenia
+# <a name="edit-load-tests"></a>Edytowanie testów obciążenia
 
-Testy obciążenia Uruchamianie testów wydajności sieci Web i testów jednostkowych, aby symulować wielu użytkowników jednocześnie dostęp do serwera. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
+Testy obciążenia są uruchamiane testy wydajności sieci Web lub testów jednostkowych, aby zasymulować wielu użytkownikom dostęp do serwera, w tym samym czasie. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
 
 > [!NOTE]
-> Testów obciążenia jest dostępna tylko w wersji Enterprise programu Visual Studio 2017 r.
+> Testowanie obciążenia jest dostępna tylko w wersji Enterprise programu Visual Studio 2017.
 
-Test obciążenia jest definiowana za pomocą *scenariusze*, *licznika zestawy*, i *parametrów uruchomieniowych*. Poniższa ilustracja wyjaśniono różnice między [scenariusze](../test/edit-load-test-scenarios.md), [licznika zestawy](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), i [parametrów uruchomieniowych](../test/load-test-run-settings-properties.md):
+Test obciążenia jest definiowany przez *scenariuszy*, *zbiory liczników*, i *parametrów uruchomieniowych*. Na poniższej ilustracji wyjaśnia różnice między [scenariuszy](../test/edit-load-test-scenarios.md), [zbiory liczników](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), i [parametrów uruchomieniowych](../test/load-test-run-settings-properties.md):
 
 ![Architektura testu obciążenia](../test/media/load_test_editor.png)
 
-## <a name="edit-load-test-scenario-settings"></a>Edytuj ustawienia scenariusza testu obciążenia
+## <a name="edit-load-test-scenario-settings"></a>Edytowanie ustawień scenariusza testu obciążeniowego
 
-Scenariusz jest używana do modelu, jak grupa użytkowników współdziała z aplikacji serwera. Scenariusz składa się z wzorca obciążenia, modelu testu mieszanego, testu mieszanego, mieszanej przeglądarki i mieszanego profilu sieciowego. Test obciążeniowy może mieć więcej niż jeden scenariusz, a jeden scenariusz może zawierać testy wydajności sieci Web oraz testy jednostkowe. Grupując podobne ustawienia, scenariusz umożliwia łączenie i wspólne wykonywanie testów o podobnym charakterze.
+Scenariusz służy do modelowania współdziałania grupy użytkowników z aplikacji serwera. Scenariusz składa się z wzorca obciążenia, modelu testu mieszanego, testu mieszanego, mieszanej przeglądarki i mieszanego profilu sieciowego. Test obciążeniowy może mieć więcej niż jeden scenariusz, a jeden scenariusz może zawierać testy wydajności sieci Web oraz testy jednostkowe. Grupując podobne ustawienia, scenariusz umożliwia łączenie i wspólne wykonywanie testów o podobnym charakterze.
 
-Aby uzyskać więcej informacji, zobacz [edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md) i [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+Aby uzyskać więcej informacji, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md) i [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Konfigurowanie i zarządzanie zbiorami liczników wydajności
 
-Testy obciążenia udostępniają zbiorów liczników o nazwie, uporządkowane według technologii, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników obejmują testu obciążenia, usługi IIS, platformy ASP.NET i SQL. Po utworzeniu testu obciążenia przy użyciu nowego załadować Test kreatora początkowego zestawu liczników wstępnie zdefiniowane i ważne jest skonfigurowany dla komputerów, które określają do uwzględnienia w teście obciążenia. Możesz zarządzać liczniki w edytorze testu obciążenia.
+Testy obciążenia dostarczają nazwanych zestawów licznika, uporządkowanych według technologii, które są przydatne podczas analizowania danych licznika wydajności. Zestawy liczników obejmują Test obciążenia, IIS, ASP.NET i SQL. Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, początkowy zestaw wstępnie zdefiniowanych i ważnych liczników jest skonfigurowany dla komputerów, które określono jako uwzględniane w teście obciążeniowym. Zarządzasz licznikami w **edytora testu obciążenia**.
 
-Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
-## <a name="configure-and-manage-load-test-run-settings"></a>Konfigurowanie i zarządzanie nimi ustawień uruchomienia testu obciążenia
+## <a name="configure-and-manage-load-test-run-settings"></a>Konfigurowanie i zarządzanie nimi uruchomieniowych testu obciążeniowego
 
-Ustawienia uruchamiania są właściwości wpływające na uruchomieniu testu obciążenia. Parametry uruchomieniowe są pogrupowane według kategorii w oknie właściwości.
+Ustawienia uruchamiania są właściwości, które mają wpływ na sposób, w jaki przebieg testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna.
 
-Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień uruchomienia testu obciążenia](../test/configure-load-test-run-settings.md) i [właściwości ustawień uruchamiania testu obciążenia](../test/load-test-run-settings-properties.md).
+Aby uzyskać więcej informacji, zobacz [parametrów uruchomieniowych testu obciążeniowego Konfiguruj](../test/configure-load-test-run-settings.md) i [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
 ## <a name="see-also"></a>Zobacz także
 

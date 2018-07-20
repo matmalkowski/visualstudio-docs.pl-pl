@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109614"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153860"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — Element (rozszerzenie kreatora szablonów programu Visual Studio)
-Określa nazwę lub silnej nazwy zestawu, który implementuje `IWizard` interfejsu.  
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — element (rozszerzenie Kreatora szablonów programu Visual Studio)
+Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejsu.  
   
  \<VSTemplate>  
 \<Wizardextension — >  
-\<zestaw >  
+\<Zestaw >  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -54,13 +54,13 @@ Określa nazwę lub silnej nazwy zestawu, który implementuje `IWizard` interfej
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Ten tekst Określa zestaw, który implementuje `IWizard` interfejsu. Ta nazwa zestawu musi być określony jako pełną nazwą zestawu. Na przykład `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Ten tekst Określa zestaw, który implementuje `IWizard` interfejsu. Ta nazwa zestawu należy określić nazwę pełnego zestawu. Na przykład `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
 ## <a name="remarks"></a>Uwagi  
- `Assembly` jest elementem podrzędnym wymagane `WizardExtension`.  
+ `Assembly` jest wymaganym elementem podrzędnym elementu `WizardExtension`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadane szablonu projektu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.  
+ W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -90,7 +90,7 @@ Określa nazwę lub silnej nazwy zestawu, który implementuje `IWizard` interfej
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
+ [Porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

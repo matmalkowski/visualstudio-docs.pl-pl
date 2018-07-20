@@ -15,39 +15,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8591c55a176493ace23df2de61ba26d58a3155e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0d01e64915004eb21a92c21a67291dc4f034112d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098395"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155021"
 ---
-# <a name="adding-icons-to-menu-commands"></a>Dodawanie ikon do poleceń Menu
-Polecenia może występować w zarówno menu i pasków narzędzi. Na paskach narzędzi jest typowe dla polecenia mają być wyświetlane tylko ikona (Aby zaoszczędzić miejsce) podczas menu polecenie zwykle wyświetlany jest zarówno ikony, jak i tekstu.  
+# <a name="add-icons-to-menu-commands"></a>Dodawanie ikon do poleceń menu
+Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzędzi jest typowe dla polecenia będą wyświetlane tylko ikony (tak, aby zaoszczędzić miejsce na) podczas w menu, że polecenia pojawi się zazwyczaj z zarówno ikonę i tekst.  
   
- Ikony są 16 pikseli szerokości i wysokości 16 pikseli i może być 8-bitowej głębi kolorów (256 kolorów) lub głębi kolorów 32-bitowych (kolor true). 32-bitowe ikony są preferowane. Ikony zwykle ułożone w jednym wierszu poziomy w jednym mapy bitowej, mimo że wiele map bitowych są dozwolone. Ta mapa bitowa jest zadeklarowany w pliku vsct wraz z poszczególnych ikon dostępne w pliku mapy bitowej. Zobacz odwołanie do [Element map bitowych](../extensibility/bitmaps-element.md) więcej szczegółów.  
+ Ikony są 16 pikseli szerokości i wysokości 16 pikseli i może być 8-bitowej głębi kolorów (256 kolorów) lub 32-bitowej głębi kolorów (kolor true). ikon koloru 32-bitowe są preferowane. Ikony zwykle są rozmieszczone w jednym wierszu poziomy w postaci bitmapy, chociaż wiele mapy bitowe są dozwolone. Ta mapa bitowa jest zadeklarowana w *vsct* plików wraz z poszczególnych ikon dostępnych w mapie bitowej. Zobacz odwołanie do [Bitmaps, element](../extensibility/bitmaps-element.md) Aby uzyskać więcej informacji.  
   
-## <a name="adding-an-icon-to-a-command"></a>Dodawanie ikon do polecenia  
- W poniższej procedurze przyjęto, że masz istniejący projekt pakiet VSPackage za pomocą polecenia menu. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+## <a name="add-an-icon-to-a-command"></a>Dodaj ikonę do polecenia  
+ W poniższej procedurze przyjęto, że masz istniejący projekt pakietu VSPackage przy użyciu polecenia menu. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-1.  Utwórz mapę bitową o głębi kolorów 32-bitowej. Ikona jest zawsze 16 x 16, więc tej mapy bitowej musi być 16 pikseli i wielokrotnością 16 pikseli szerokości.  
+1.  Tworzenie mapy bitowej o głębi kolorów 32 bity. Ikona jest zawsze 16 x 16, więc tej mapy bitowej muszą być 16 pikseli i wielokrotnością liczby 16 pikseli szerokości.  
   
-     Każda z ikon jest umieszczona na mapę bitową obok siebie w jednym wierszu. Umożliwia wskazanie miejsca przezroczystość w każdej ikony kanału alfa.  
+     Każda ikona jest umieszczany na mapę bitową obok siebie w jednym wierszu. Kanał alfa umożliwia wskazanie miejsc przejrzystości każda ikona.  
   
-     Jeśli używasz 8-bitowej głębi kolorów, użyj magenta, `RGB(255,0,255)`, jako przezroczystość. Jednak ikon koloru 32-bitowych są preferowane.  
+     Jeśli korzystasz z 8-bitowej głębi kolorów, użyj amarantowy, `RGB(255,0,255)`, jako przejrzystości. Jednak ikon koloru 32-bitowe są preferowane.  
   
-2.  Skopiuj plik ikony do katalogu zasobów w projekcie pakiet VSPackage. W Eksploratorze rozwiązań należy dodać ikony do projektu. (Wybierz zasoby, w menu kontekstowym kliknij przycisk Dodaj, a następnie istniejący element i wybrać plik ikony.)  
+2.  Skopiuj plik ikony *zasobów* katalogu projektu pakietu VSPackage. W **Eksploratora rozwiązań**, Dodaj ikonę do projektu. (Wybierz **zasobów**i na kliknięcie menu kontekstowe **Dodaj**, następnie **istniejący element**i wybierz swój plik ikony.)  
   
-3.  Otwórz plik vsct w edytorze.  
+3.  Otwórz *vsct* plik w edytorze.  
   
-4.  Dodaj `GuidSymbol` elementu o nazwie **testIcon**. Utwórz identyfikator GUID (**narzędzi / Create GUID**, a następnie wybierz pozycję **Format rejestru** i kliknij pozycję Kopiuj) i wklej ją do `value` atrybutu. Wynik powinien wyglądać następująco:  
+4.  Dodaj `GuidSymbol` elementu o nazwie **testIcon**. Utwórz identyfikator GUID (**narzędzia** > **Utwórz GUID**, a następnie wybierz **Format rejestru** i kliknij przycisk **kopiowania**) i wklej go do `value` atrybutu. Wynik powinien wyglądać następująco:  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  Dodaj `<IDSymbol>` ikony. `name` Atrybut jest identyfikator ikony i `value` wskazuje pozycji na pasku, jeśli istnieje. Jeśli istnieje tylko jedna ikona, Dodaj 1. Wynik powinien wyglądać następująco:  
+5.  Dodaj `<IDSymbol>` ikony. `name` Atrybut jest identyfikator ikony i `value` wskazuje swoją pozycję na taśmy, jeśli istnieje. Jeśli istnieje tylko jedna ikona, należy dodać 1. Wynik powinien wyglądać następująco:  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -56,13 +56,13 @@ Polecenia może występować w zarówno menu i pasków narzędzi. Na paskach nar
     </GuidSymbol>  
     ```  
   
-6.  Utwórz `<Bitmap>` w `<Bitmaps>` sekcji pliku vsct do reprezentowania mapy bitowej zawierającego ikony.  
+6.  Tworzenie `<Bitmap>` w `<Bitmaps>` części *vsct* pliku do reprezentowania mapy bitowej zawierający ikony.  
   
-    -   Ustaw `guid` wartość na nazwę `<GuidSymbol>` elementu utworzonego w poprzednim kroku.  
+    -   Ustaw `guid` wartość odpowiadającą nazwie `<GuidSymbol>` elementu utworzonego w poprzednim kroku.  
   
-    -   Ustaw `href` wartość do ścieżki względnej pliku mapy bitowej (w tym przypadku **zasobów\\< nazwa pliku ikony\>**.  
+    -   Ustaw `href` wartość względną ścieżką pliku mapy bitowej (w tym przypadku **zasobów\\< nazwa pliku ikony\>**.  
   
-    -   Ustaw `usedList` wartość IDSymbol utworzony wcześniej. Ten atrybut określa listę rozdzielanych przecinkami ikon do użycia w pakiecie VSPackage. Ikony nie ma na liście są wykluczone formularza kompilacji.  
+    -   Ustaw `usedList` wartość IDSymbol, została utworzona wcześniej. Ten atrybut określa rozdzielana przecinkami lista ikon, które zostaną użyte w pakietu VSPackage. Ikony nie ma na liście są wykluczone formularza kompilacji.  
   
          Blok mapy bitowej powinien wyglądać następująco:  
   
@@ -70,7 +70,7 @@ Polecenia może występować w zarówno menu i pasków narzędzi. Na paskach nar
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  W istniejących `<Button>` , ustaw `Icon` elementu wartości GUIDSymbol i IDSymbol utworzony wcześniej. Oto przykład elementu przycisk tymi wartościami:  
+7.  W istniejącym `<Button>` elementu, ustaw `Icon` elementu GUIDSymbol i IDSymbol utworzonych wcześniej wartości. Poniżej przedstawiono przykład elementu przycisk z tych wartości:  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -82,8 +82,8 @@ Polecenia może występować w zarówno menu i pasków narzędzi. Na paskach nar
     </Button>  
     ```  
   
-8.  Twoje ikona testowa. Skompiluj projekt i Rozpocznij debugowanie. W eksperymentalnym wystąpieniu znaleźć polecenia. Ikona powinny mieć zostały dodane.  
+8.  Przetestuj ikona. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu znaleźć polecenia. Należy widoczna ikona została dodana.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
- [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)
+ [Odwołanie do schematu VSCT XML](../extensibility/vsct-xml-schema-reference.md)

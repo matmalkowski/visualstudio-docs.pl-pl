@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 868deef955ce90f49ce3ba2719903bdcbb38f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097409"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151486"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Właściwość AsyncVoidMethodBuilder.ObjectIdForDebugger
-Pobiera obiekt, który może być używany do jednoznacznego identyfikowania tego konstruktora do debugera.  
+Pobiera obiekt, który może służyć do unikatowej identyfikacji tego konstruktora do debugera.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   

@@ -3,7 +3,7 @@ title: Ustawienia stron właściwości dla projektów sieci Web | Dokumentacja f
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480719"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151636"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Ustawienia stron właściwości dla projektów sieci Web
-Możesz zmienić ustawienia właściwości dla konfiguracji debugowania witryny sieci web w **strony właściwości** okno dialogowe, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono gdzie można znaleźć ustawień debugera w **strony właściwości** okno dialogowe.  
+Możesz zmienić ustawienia właściwości dla konfiguracji debugowania witryny sieci web w **stron właściwości** okno dialogowe, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
   
-### <a name="configuration-properties-folder-start-options-category"></a>Folder właściwości konfiguracji (opcje uruchamiania kategorii)  
+### <a name="configuration-properties-folder-start-options-category"></a>Folder właściwości konfiguracji (kategoria opcje Start)  
   
 |**Ustawienie**|**Opis**|  
 |-----------------|---------------------|  
-|**Uruchomienie akcji**|Pozycja, że opcje grupy dotyczące uruchamiania aplikacji.|  
-|**Użyj bieżącej strony.**|Określa bieżącą stronę jako punktu wyjścia do debugowania.|  
-|**Określona strona:**|Określa strony sieci Web, w której chcesz rozpocząć debugowanie.|  
-|**Uruchom program zewnętrznych:**|Określa polecenia dla uruchamiania programu, które chcesz debugować.|  
+|**Akcja uruchamiania**|Nagłówek, że opcje grupy odnosi się do uruchomienia aplikacji.|  
+|**Bieżąca strona**|Określa bieżącą stronę jako punktu wyjścia do debugowania.|  
+|**Określona strona:**|Określa strony sieci Web, w którym chcesz rozpocząć debugowanie.|  
+|**Uruchom zewnętrzny program:**|Określa polecenia do uruchamiania programu, które chcesz debugować.|  
 |**Argumenty wiersza polecenia:**|Określa argumenty dla polecenia wymienione powyżej.|  
-|**Katalog roboczy:**|Określa katalog roboczy debugowany program. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], katalog roboczy jest katalogiem, aplikacja jest uruchamiana z \bin\debug domyślnie.|  
-|**Początkowy adres URL**|Określa lokalizację, w aplikacji sieci Web, którą chcesz debugować.|  
-|**Nie otwieraj strony. Czekaj na żądanie od aplikacji zewnętrznej**|Wskazuje, że wskazuje oczekiwania na żądanie od aplikacji zewnętrznej. Ta opcja nie zostanie uruchomiony program Internet Explorer lub innej aplikacji. Po prostu przygotowuje do debugowania wywołanego przez aplikację.|  
-|**Serwer**|Pozycja, że opcje grupy związany z serwera, który będzie używany.|  
-|**Użyj domyślnego serwera sieci Web**|Mówi użyć domyślnego serwera sieci Web.|  
-|**Użyj niestandardowego serwera**|Umożliwia wprowadzenie do użycia jako serwer podstawowy adres URL.|  
-|**Debugery**|Pozycja opcje grupy dotyczące typu debugowania do wykonania.|  
-|**Debugowanie ASP.NET**|Włącza debugowanie napisane dla stron serwera [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] platformy programistycznej. Należy określić adres URL w **początkowy adres URL**.|  
-|**Debugowanie kodu natywnego**|Umożliwia debugowanie wywołania do kodu natywnego Win32 (niezarządzany) z zarządzanych aplikacji.|  
-|**Debugowanie SQL Server**|Pozwala na debugowanie obiektów bazy danych programu SQL Server.|  
-|**Silverlight — debugowanie**|Pozwala na debugowanie Silverlight składników.|  
+|**Katalog roboczy:**|Określa katalog roboczy debugowanego programu. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z \bin\debug domyślny.|  
+|**Początkowy adres URL**|Określa lokalizację w aplikacji sieci Web, który chcesz debugować.|  
+|**Nie otwieraj strony. Czekaj na żądanie od aplikacji zewnętrznej**|Wynika z oczekiwania na żądanie od aplikacji zewnętrznej. Ta opcja nie zostanie uruchomiony program Internet Explorer lub innej aplikacji. Po prostu przygotowuje do debugowania, gdy zostanie wywołana przez aplikację.|  
+|**Serwer**|Nagłówek, że grupy opcje związane z serwera, który ma być używany.|  
+|**Użyj domyślnego serwera sieci Web**|Wyświetlana jest informacja użyć domyślnego serwera sieci Web.|  
+|**Użyj niestandardowego serwera**|Umożliwia wprowadzenie podstawowy adres URL do użycia jako serwer.|  
+|**Debugery**|Pozycja opcji grupy powiązany typ debugowania do wykonania.|  
+|**Debugowanie ASP.NET**|Włącza debugowanie stron ASP napisane dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] platformy deweloperskiej. Należy określić adres URL w **początkowy adres URL**.|  
+|**Debugowanie kodu natywnego**|Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji.|  
+|**Debugowanie serwera SQL Server**|Umożliwia debugowanie obiektów bazy danych programu SQL Server.|  
+|**Debugowanie Silverlight**|Umożliwia debugowanie Silverlight składników.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

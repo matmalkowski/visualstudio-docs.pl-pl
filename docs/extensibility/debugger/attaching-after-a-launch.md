@@ -1,5 +1,5 @@
 ---
-title: Dołączanie po Launch | Dokumentacja firmy Microsoft
+title: Dołączanie po uruchomieniu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,43 +13,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69f9f9cde76c5fa66294fd2cdbdc5252169e0183
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b767ef1aeed691255a62a9cb5c1e264034acf24e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104709"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152923"
 ---
-# <a name="attaching-after-a-launch"></a>Dołączanie po Launch
-Po uruchomieniu programu sesji debugowania jest gotowy do podłączenia aparat debugowania (DE) do wspomnianej program.  
+# <a name="attach-after-a-launch"></a>Dołączanie po uruchomieniu
+Po uruchomieniu programu sesji debugowania jest gotowy do dołączania aparat debugowania (DE) do wspomnianej programu.  
   
 ## <a name="design-decisions"></a>Decyzje dotyczące projektu  
- Ponieważ komunikacja jest łatwiejsze w współużytkowanego obszaru adresów, należy zdecydować, czy warto więcej ułatwiają komunikację między sesji debugowania i DE lub między Urządzeniom i program. Wybierz jedną z następujących:  
+ Ponieważ komunikacja jest łatwiejsze w przestrzeni adresowej udostępnionego, należy wybrać opcję dwa podejścia do projektowania: Ustaw komunikacji między sesji debugowania i "de". Lub ustaw komunikację między DE i program. Wybierz jedną z następujących:  
   
--   Jeśli warto więcej komunikację między sesji debugowania i DE, sesji debugowania wspólnie tworzy DE i prosi o DE można dołączyć do programu. Spowoduje to pozostawienie sesji debugowania i DE razem w jedną przestrzeń adresową i środowisko wykonawcze i programie razem w innym.  
+-   Jeśli więcej sensu skonfigurować komunikację między sesji debugowania i "de", sesja debugowania wspólnie tworzy DE i pyta, Niemcy, aby dołączyć do programu. W tym projekcie pozostawia sesji debugowania i "de" ze sobą w jedną przestrzeń adresową i środowiska wykonawczego i program razem w innym.  
   
--   Jeśli warto więcej komunikację między Urządzeniom i program, następnie środowisko wykonawcze wspólnie tworzy DE. Spowoduje to pozostawienie SDM w jedną przestrzeń adresową, a DE, środowisko wykonawcze i program w innym razem. To jest typowe dla DE, który jest realizowana za pomocą tłumacza, aby uruchomić języków skryptowych.  
+-   Jeśli więcej sensu do skonfigurowania komunikacji między DE i program, środowiska wykonawczego powoduje utworzenie wspólnej DE. W tym projekcie pozostawia SDM w jedną przestrzeń adresową i Niemcy, środowiska wykonawczego i program razem w innym. Ten projekt jest typowy dla DE, który jest implementowany przy użyciu tłumacza do uruchamiania przy użyciu skryptu języków.  
   
     > [!NOTE]
-    >  Jak DE dołącza do program jest zależny od implementacji. Komunikacja między DE i programem również jest zależne od implementacji.  
+    >  Jak DE dołącza do programu zależy od implementacji. Komunikacja między DE i program jest również zależna od implementacji.  
   
 ## <a name="implementation"></a>Implementacja  
- Programistycznie, gdy Menedżer debugowania sesji (SDM) otrzymuje najpierw [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) wywołuje obiekt, który reprezentuje program do uruchomienia, [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) metody przekazanie jej [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) obiektu, który jest nowsza służy do przekazywania zdarzenia debugowania do SDM. `IDebugProgram2::Attach` Metoda wywołuje [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. Więcej informacji dotyczących sposobu odbiera SDM `IDebugProgram2` interfejsu, zobacz [Port powiadamiania](../../extensibility/debugger/notifying-the-port.md).  
+ Programistycznie, gdy Menedżer debugowania sesji (SDM) otrzymuje najpierw [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) wywołuje obiekt, który reprezentuje program do uruchomienia, [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) metody, podając mu [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) obiektu, który jest późniejsza służy do przekazywania zdarzenia debugowania do SDM. `IDebugProgram2::Attach` Następnie wywołuje metodę [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. Aby uzyskać więcej informacji na temat sposobu odbiera SDM `IDebugProgram2` interfejsu, zobacz [powiadamianie portu](../../extensibility/debugger/notifying-the-port.md).  
   
- Jeśli Twoje DE musi być uruchamiane w przestrzeni adresowej programu debugowany, zwykle ponieważ DE jest częścią tłumacza, uruchomienie skryptu, `IDebugProgramNodeAttach2::OnAttach` metoda zwraca `S_FALSE`, wskazującą, czy zakończyła się procesu dołączania.  
+ Jeśli Twoje DE musi zostać uruchomiony w przestrzeni adresowej jako program debugowania: ponieważ DE zazwyczaj interpretera działającego skryptu `IDebugProgramNodeAttach2::OnAttach` metoda zwraca `S_FALSE`. `S_FALSE` Return wskazuje, czy zakończyła się procesu dołączania.  
   
- Jeśli z drugiej strony, DE uruchamia się w przestrzeni adresowej SDM, `IDebugProgramNodeAttach2::OnAttach` metoda zwraca `S_OK` lub [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejsu nie jest zaimplementowana w ogóle na [IDebugProgramNode2 ](../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt skojarzony z debugowany program. W takim przypadku [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) wywoływana jest metoda po pewnym czasie ukończyć operacji dołączania.  
+ Jeśli jednak DE działa w przestrzeni adresowej SDM: `IDebugProgramNodeAttach2::OnAttach` metoda zwraca `S_OK`, lub [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejsu nie jest zaimplementowany w ogóle na [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt skojarzony z programu, który debugujesz. W tym przypadku [Dołącz](../../extensibility/debugger/reference/idebugengine2-attach.md) wywoływana jest metoda po pewnym czasie ukończyć operacji dołączania.  
   
- W drugim przypadku należy wywołać [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metoda `IDebugProgram2` obiektu, który został przekazany do `IDebugEngine2::Attach` metody, magazyn `GUID` w lokalnym programie obiektu i zwraca to `GUID` po `IDebugProgram2::GetProgramId` następnie wywoływana jest metoda w tym obiekcie. `GUID` Służy do unikatowego identyfikowania program między różnymi składnikami debugowania.  
+ W tym drugim przypadku należy wywołać [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metody `IDebugProgram2` obiektu, który został przekazany do `IDebugEngine2::Attach` metody, magazyn `GUID` w lokalnym programie obiektu i zwraca ten `GUID` po `IDebugProgram2::GetProgramId` następnie wywoływana jest metoda dla tego obiektu. `GUID` Służy do identyfikowania program jednoznacznie między różnymi składnikami debugowania.  
   
- Należy pamiętać, że w przypadku programu `IDebugProgramNodeAttach2::OnAttach` metody zwracanie `S_FALSE`, `GUID` do użycia dla programu jest przekazywany do metody i jest `IDebugProgramNodeAttach2::OnAttach` metodę, która ustawia `GUID` na obiekt lokalny program.  
+ W przypadku właściwości `IDebugProgramNodeAttach2::OnAttach` metody zwracają `S_FALSE`, `GUID` do użycia dla programu jest przekazywany do tej metody, a jest `IDebugProgramNodeAttach2::OnAttach` metodę, która ustawia `GUID` na obiekt lokalny program.  
   
- Niemcy zostanie dołączony do programu i są gotowe do wysyłania zdarzeń uruchomienia.  
+ DE zostanie dołączony do programu i jest gotowa do wysyłania zdarzenia uruchamiania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dołączanie bezpośrednio do programu](../../extensibility/debugger/attaching-directly-to-a-program.md)   
- [Port powiadamiania](../../extensibility/debugger/notifying-the-port.md)   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)   
+ [Powiadamianie portu](../../extensibility/debugger/notifying-the-port.md)   
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
  [Dołącz](../../extensibility/debugger/reference/idebugprogram2-attach.md)   

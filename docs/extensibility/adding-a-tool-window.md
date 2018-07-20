@@ -1,5 +1,5 @@
 ---
-title: Dodawanie okna narzędzia | Dokumentacja firmy Microsoft
+title: Dodawanie okna narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,55 +14,55 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db06bebd700fa229685d6b79ffcfb014ef301994
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 550e483ec2a8cd4b4126e4c0838dc8d2870af59c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107884"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151934"
 ---
-# <a name="adding-a-tool-window"></a>Dodawanie okna narzędzia
-W tym przewodniku Dowiedz się jak utworzyć okna narzędzia i zintegrować ją z programu Visual Studio w następujący sposób:  
+# <a name="add-a-tool-window"></a>Dodawanie okna narzędzi
+W tym przewodniku dowiesz się, jak tworzyć okna narzędzi i zintegrować ją z programu Visual Studio w następujący sposób:  
   
--   Dodawanie formantu do okna narzędzia.  
+-   Dodawanie formantu do okna narzędzi.  
   
--   Dodaj pasek narzędzi do okna narzędzia.  
+-   Dodawanie paska narzędzi do okna narzędzi.  
   
 -   Dodaj polecenie do paska narzędzi.  
   
--   Wykonuje polecenia.  
+-   Implementowanie polecenia.  
   
--   Ustaw położenie domyślne okna narzędzia.  
+-   Ustaw domyślne położenie okna narzędzia.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-tool-window"></a>Utworzenie okna narzędzia  
+## <a name="create-a-tool-window"></a>Utworzenie okna narzędzia  
   
-1.  Tworzenie projektu o nazwie **FirstToolWin** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okna o nazwie **FirstToolWindow**.  
+1.  Utwórz projekt o nazwie **FirstToolWin** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Aby uzyskać więcej informacji o tworzeniu rozszerzenie z okna narzędzia, zobacz [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    >  Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Dodawanie formantu do okna narzędzi  
   
-1.  Usuwanie domyślnej kontroli. Otwórz FirstToolWindowControl.xaml i Usuń **kliknij mnie!** przycisk.  
+1.  Usuń domyślny formant. Otwórz *FirstToolWindowControl.xaml* i Usuń **kliknij mnie!** przycisk.  
   
-2.  W **przybornika**, rozwiń węzeł **wszystkich kontrolek WPF** sekcji i przeciągnij **elementu mediów** formant **FirstToolWindowControl** formularza. Wybierz kontrolkę, a następnie w **właściwości** okna, nazwa tego elementu **mediaElement1**.  
+2.  W **przybornika**, rozwiń węzeł **wszystkie formanty WPF** sekcji, a następnie przeciągnij **Element multimedialny** kontrolę **FirstToolWindowControl** formularza. Wybierz kontrolkę a następnie w **właściwości** oknie Nazwa tego elementu **mediaElement1**.  
   
-## <a name="add-a-toolbar-to-the-tool-window"></a>Dodaj pasek narzędzi do okna narzędzi  
- Dodając pasek narzędzi w następujący sposób, użytkownik gwarantuje, że jego gradienty i kolory są spójności z resztą środowiska IDE.  
+## <a name="add-a-toolbar-to-the-tool-window"></a>Dodawanie paska narzędzi do okna narzędzi  
+ Dodawanie paska narzędzi w następujący sposób, zagwarantować, jego gradientów i kolory są zgodne z pozostałą częścią środowiska IDE.  
   
-1.  W **Eksploratora rozwiązań**, otwórz FirstToolWindowPackage.vsct. Pliku vsct definiuje elementów graficznego interfejsu użytkownika (GUI) w oknie narzędzia, za pomocą XML.  
+1.  W **Eksploratora rozwiązań**, otwórz *FirstToolWindowPackage.vsct*. *Vsct* plik definiuje elementów graficznego interfejsu użytkownika (GUI) w oknie narzędzia za pomocą pliku XML.  
   
-2.  W `<Symbols>` sekcji, Znajdź `<GuidSymbol>` węzła których `name` atrybutu `guidFirstToolWindowPackageCmdSet`. Dodaj następujące dwa `<IDSymbol>` elementów do listy `<IDSymbol>` elementów w tym węźle do definiowania paska narzędzi i grupy paska narzędzi.  
+2.  W `<Symbols>` sekcji, Znajdź `<GuidSymbol>` węzła którego `name` atrybut jest `guidFirstToolWindowPackageCmdSet`. Dodaj dwie poniższe `<IDSymbol>` elementy do listy `<IDSymbol>` elementów w tym węźle, aby zdefiniować paska narzędzi i pasek narzędzi grupy.  
   
     ```xml  
     <IDSymbol name="ToolbarID" value="0x1000" />  
     <IDSymbol name="ToolbarGroupID" value="0x1001" />  
     ```  
   
-3.  Po prostu powyżej `<Buttons>` sekcji, Utwórz `<Menus>` sekcji podobny to:  
+3.  Tuż nad `<Buttons>` sekcji, Utwórz `<Menus>` sekcja, która jest podobny do tego:  
   
     ```xml  
     <Menus>  
@@ -76,11 +76,11 @@ W tym przewodniku Dowiedz się jak utworzyć okna narzędzia i zintegrować ją 
     </Menus>  
     ```  
   
-     Istnieje kilka różnych rodzajów menu. Tego menu jest paskiem narzędzi w oknie narzędzia zdefiniowane przez jego `type` atrybutu. `guid` i `id` ustawienia tworzą pełny identyfikator paska narzędzi. Zazwyczaj `<Parent>` menu jest grupy zawierającej. Jednak narzędzi jest zdefiniowany jako własnego elementu nadrzędnego. W związku z tym samym identyfikatorze służy do `<Menu>` i `<Parent>` elementy. `priority` Atrybut jest tylko "0".  
+     Istnieje kilka różnych rodzajów menu. To menu jest pasek narzędzi w oknie narzędzi zdefiniowane przez jego `type` atrybutu. `guid` i `id` ustawienia tworzą w pełni kwalifikowanym Identyfikatorem paska narzędzi. Zazwyczaj `<Parent>` menu jest grupy zawierającej. Jednakże pasek narzędzi jest zdefiniowany jako własny element nadrzędny. W związku z tym, ten sam identyfikator jest używany dla `<Menu>` i `<Parent>` elementów. `priority` Atrybut jest po prostu "0".  
   
-4.  Paski narzędzi przypominać menu na wiele sposobów. Na przykład tak samo, jak menu może mieć grup poleceń, paski narzędzi mogą także mieć grup. (W menu, grup polecenia są oddzielone poziome linie. Na paskach narzędzi grupy nie są rozdzielone visual separatorów.)  
+4.  Paski narzędzi przypominają menu na wiele sposobów. Na przykład tak, jak menu mogą mieć grupy poleceń, paskach narzędzi grupy mogą również mieć. (W menu, grup poleceń są oddzielone poziome linie. Na paskach narzędzi grupy nie są rozdzielone visual separatorów.)  
   
-     Dodaj `<Groups>` sekcję zawierającą `<Group>` elementu. To definiuje grupę, do których identyfikator zadeklarowany w `<Symbols>` sekcji. Dodaj `<Groups>` sekcji tuż po `<Menus>` sekcji.  
+     Dodaj `<Groups>` sekcję zawierającą `<Group>` elementu. Definiuje grupę, których identyfikator zadeklarowany w `<Symbols>` sekcji. Dodaj `<Groups>` sekcji tuż za `<Menus>` sekcji.  
   
     ```xml  
     <Groups>  
@@ -90,19 +90,19 @@ W tym przewodniku Dowiedz się jak utworzyć okna narzędzia i zintegrować ją 
     </Groups>  
     ```  
   
-     Ustawiając nadrzędny identyfikator GUID i identyfikator GUID i identyfikator paska narzędzi, Dodaj grupę do paska narzędzi.  
+     Ustawiając element nadrzędny identyfikator GUID i identyfikator GUID i identyfikator paska narzędzi, Dodaj grupę do paska narzędzi.  
   
 ## <a name="add-a-command-to-the-toolbar"></a>Dodaj polecenie do paska narzędzi  
  Dodaj polecenie do paska narzędzi, który jest wyświetlany jako przycisk.  
   
-1.  W `<Symbols>` sekcji, Zadeklaruj następujące elementy IDSymbol zaraz po narzędzi i narzędzi deklaracje grupy.  
+1.  W `<Symbols>` sekcji, Zadeklaruj następujące elementy IDSymbol zaraz po narzędzi i pasek narzędzi deklaracje grupy.  
   
     ```xml  
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />  
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />  
     ```  
   
-2.  Dodaj element przycisku wewnątrz `<Buttons>` sekcji. Ten element pojawi się na pasku narzędzi w oknie narzędzi z ikoną wyszukiwania (Lupa).  
+2.  Dodaj element przycisku wewnątrz `<Buttons>` sekcji. Element ten pojawi się na pasku narzędzi w oknie narzędzia z **wyszukiwania** ikonę (Lupa).  
   
     ```xml  
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">  
@@ -115,7 +115,7 @@ W tym przewodniku Dowiedz się jak utworzyć okna narzędzia i zintegrować ją 
     </Button>  
     ```  
   
-3.  Otwórz FirstToolWindowCommand.cs i dodaj następujące wiersze w klasie zaraz po istniejących pól.  
+3.  Otwórz *FirstToolWindowCommand.cs* i dodaj następujące wiersze w klasie zaraz po istniejących pól.  
   
     ```csharp  
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
@@ -124,12 +124,12 @@ W tym przewodniku Dowiedz się jak utworzyć okna narzędzia i zintegrować ją 
     public const int ToolbarID = 0x1000;  
     ```  
   
-     W ten sposób udostępnia poleceniach w kodzie.  
+     W ten sposób sprawia, że poleceń dostępnych w kodzie.  
   
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Dodaj właściwość MediaPlayer do FirstToolWindowControl  
- Z obsługi zdarzeń dla formantów narzędzi kod musi mieć możliwość kontroli Media Player, który jest elementem podrzędnym klasy FirstToolWindowControl dostępu.  
+ Z programu obsługi zdarzeń dla formantów paska narzędzi kod musi umożliwiać dostęp do formantu programu Media Player, który jest elementem podrzędnym klasy FirstToolWindowControl.  
   
- W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy FirstToolWindowControl.xaml, kliknij przycisk **kod widoku**i Dodaj następujący kod do klasy FirstToolWindowControl.  
+ W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *FirstToolWindowControl.xaml*, kliknij przycisk **Wyświetl kod**i Dodaj następujący kod do klasy FirstToolWindowControl.  
   
 ```csharp  
 public System.Windows.Controls.MediaElement MediaPlayer  
@@ -138,10 +138,10 @@ public System.Windows.Controls.MediaElement MediaPlayer
 }  
 ```  
   
-## <a name="instantiate-the-tool-window-and-toolbar"></a>Utwórz wystąpienie okna narzędzia i paska narzędzi  
- Dodaj pasek narzędzi i polecenie menu, które wywołuje **Otwórz plik** okno dialogowe i odtwarzany wybrany plik multimedialny.  
+## <a name="instantiate-the-tool-window-and-toolbar"></a>Utwórz wystąpienie okna narzędzi i pasek narzędzi  
+ Dodawanie paska narzędzi i polecenia menu, który wywołuje **Otwórz plik** okno dialogowe i odtwarzany wybrany plik multimedialny.  
   
-1.  Otwórz FirstToolWindow.cs i dodaj następujące `using` instrukcje.  
+1.  Otwórz *FirstToolWindow.cs* i dodaj następującą `using` instrukcji.  
   
     ```csharp  
     using System.ComponentModel.Design;  
@@ -149,20 +149,20 @@ public System.Windows.Controls.MediaElement MediaPlayer
     using Microsoft.VisualStudio.Shell.Interop;   
     ```  
   
-2.  Wewnątrz klasy FirstToolWindow Dodaj publiczny odwołanie do formantu FirstToolWindowControl.  
+2.  Wewnątrz klasy FirstToolWindow dodać publiczny odwołanie do formantu FirstToolWindowControl.  
   
     ```csharp  
     public FirstToolWindowControl control;  
     ```  
   
-3.  Na końcu konstruktora należy ustawić tę zmienną kontroli do nowo utworzonego formantu.  
+3.  Na koniec Konstruktor należy ustawić tę zmienną formantu do nowo utworzonego formantu.  
   
     ```csharp  
     control = new FirstToolWindowControl();   
     base.Content = control;  
     ```  
   
-4.  Uruchamianie narzędzi w konstruktorze.  
+4.  Tworzy pasek narzędzi w konstruktorze.  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),   
@@ -170,7 +170,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     this.ToolBarLocation = (int)VSTWT_LOCATION.VSTWT_TOP;  
     ```  
   
-5.  W tym momencie konstruktora FirstToolWindow powinien wyglądać następująco:  
+5.  W tym momencie Konstruktor FirstToolWindow powinien wyglądać następująco:  
   
     ```csharp  
     public FirstToolWindow() : base(null)  
@@ -204,17 +204,17 @@ public System.Windows.Controls.MediaElement MediaPlayer
     mcs.AddCommand(menuItem);  
     ```  
   
-#### <a name="to-implement-a-menu-command-in-the-tool-window"></a>Do wykonania polecenia menu okna narzędzi  
+### <a name="to-implement-a-menu-command-in-the-tool-window"></a>Implementowanie polecenia menu w oknie narzędzia  
   
-1.  W klasie FirstToolWindowCommand dodanie metody ButtonHandler, która wywołuje **Otwórz plik** okna dialogowego. Po wybraniu pliku odtwarzania pliku multimedialnego.  
+1.  W klasie FirstToolWindowCommand dodanie metody ButtonHandler, która wywołuje **Otwórz plik** okna dialogowego. Po wybraniu pliku odtwarza plik nośnika.  
   
-2.  W klasie FirstToolWindowCommand Dodaj odwołanie prywatnych do okna FirstToolWindow, który jest tworzony w metodzie FindToolWindow().  
+2.  W klasie FirstToolWindowCommand Dodaj odwołanie prywatnych do okna FirstToolWindow utworzonej w metodzie FindToolWindow().  
   
     ```csharp  
     private FirstToolWindow window;  
     ```  
   
-3.  Zmień metodę ShowToolWindow() można ustawić okna zdefiniowanych powyżej (tak, aby program obsługi poleceń ButtonHandler można uzyskać dostępu do formantu okna. W tym miejscu jest pełną metodą ShowToolWindow().  
+3.  Zmień metodę ShowToolWindow(), aby ustawić okno zdefiniowanych powyżej (tak, aby program obsługi poleceń ButtonHandler tak powstały formant będzie okna. Poniżej przedstawiono całą metodę ShowToolWindow().  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -237,7 +237,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }  
     ```  
   
-4.  Dodaj metodę ButtonHandler. Tworzy OpenFileDialog dla użytkownika określić plik, aby odtworzyć, i następnie odtworzenie wybranego pliku.  
+4.  Dodaj metodę ButtonHandler. Tworzy OpenFileDialog dla użytkownika określić plik, aby odtworzyć, a następnie odgrywa wybranego pliku.  
   
     ```csharp  
     private void ButtonHandler(object sender, EventArgs arguments)  
@@ -251,10 +251,10 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }  
     ```  
   
-## <a name="set-the-default-position-for-the-tool-window"></a>Ustaw położenie domyślne okna narzędzi  
- Następnie należy określić domyślną lokalizację w IDE dla okna narzędzia. Informacje o oknie narzędzia konfiguracji są w pliku FirstToolWindowPackage.cs.  
+## <a name="set-the-default-position-for-the-tool-window"></a>Ustaw domyślne położenie okna narzędzi  
+ Następnie należy określić domyślną lokalizację w środowisku IDE dla okna narzędzia. Informacje o konfiguracji dla okna narzędzia znajduje się w *FirstToolWindowPackage.cs* pliku.  
   
-1.  W FirstToolWindowPackage.cs, Znajdź <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybutu `FirstToolWindowPackage` klasy, która przekazuje do konstruktora typu FirstToolWindow. Aby określić domyślne położenie, należy dodać większej liczby parametrów do konstruktora poniższy przykład.  
+1.  W *FirstToolWindowPackage.cs*, Znajdź <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> atrybutu na `FirstToolWindowPackage` klasy, która przekazuje typ FirstToolWindow do konstruktora. Aby określić położenie domyślne, należy dodać większą liczbę parametrów dla konstruktora poniższy przykład.  
   
     ```csharp  
     [ProvideToolWindow(typeof(FirstToolWindow),  
@@ -262,22 +262,22 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]  
     ```  
   
-     Pierwszy parametr o nazwie jest `Style` i jego wartość wynosi `Tabbed`, która oznacza, że okno będzie na karcie istniejącego okna. Pozycję dokowania jest określona przez `Window` parametru, n-tym przypadku identyfikator GUID **Eksploratora rozwiązań**.  
+     Pierwszy parametr o danej nazwie jest `Style` i jego wartość wynosi `Tabbed`, co oznacza, że okno będzie na karcie w istniejącym oknie. Pozycję dokowania jest określona przez `Window` parametr, n-tym przypadku identyfikator GUID **Eksploratora rozwiązań**.  
   
     > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat typów systemu windows w środowisku IDE, zobacz <xref:EnvDTE.vsWindowType>.  
+    >  Aby uzyskać więcej informacji na temat typów okna w IDE, zobacz <xref:EnvDTE.vsWindowType>.  
   
-## <a name="testing-the-tool-window"></a>Testowanie okna narzędzi  
+## <a name="test-the-tool-window"></a>Testowanie okna narzędzi  
   
-1.  Naciśnij klawisz F5, aby otworzyć nowe wystąpienie programu Visual Studio eksperymentalne kompilacji.  
+1.  Naciśnij klawisz **F5** do Otwórz nowe wystąpienie eksperymentalne kompilacja programu Visual Studio.  
   
-2.  Na **widoku** menu wskaż **inne okna** , a następnie kliknij przycisk **pierwszy okna narzędzia**.  
+2.  Na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **pierwsze okno narzędzia**.  
   
-     Należy otworzyć okno narzędzia media player, w tym samym miejscu **Eksploratora rozwiązań**. Jeśli nadal wyświetlany w tym samym miejscu wcześniej, należy zresetować układ okna (**okna / zresetować układ okna**).  
+     Okno narzędzia media player powinna zostać otwarta w tym samym położeniu co **Eksploratora rozwiązań**. Jeśli nadal występuje w tym samym miejscu wcześniej, Resetuj układ okien (**okno / Zresetuj układ okna**).  
   
-3.  Kliknij przycisk (ma ikonę wyszukiwania) w oknie narzędzia. Wybierz obsługiwany plik dźwiękowy lub wideo, na przykład C:\windows\media\chimes.wav, naciśnij klawisz **Otwórz**.  
+3.  Kliknij przycisk (ma **wyszukiwania** ikonę) w oknie narzędzia. Wybierz obsługiwane dźwięk lub pliku wideo, na przykład *C:\windows\media\chimes.wav*, naciśnij klawisz **Otwórz**.  
   
-     Usłyszeć dźwięk brzęczyka.  
+     Powinno być słychać dźwięk brzęczyka.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

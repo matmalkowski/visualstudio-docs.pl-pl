@@ -1,10 +1,10 @@
 ---
-title: Debugowanie aplikacji ASP.NET Azure na żywo
+title: Debugowanie na żywo aplikacji ASP.NET, Azure
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
-ms.topic: tutorial
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
@@ -14,137 +14,137 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281553"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154466"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowania na żywo aplikacji ASP.NET Azure za pomocą debugera migawki
+# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
-Debuger migawki wykonuje migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który chcesz. Aby nakazać debugera do tworzenia migawki, należy ustawić snappoints i logpoints w kodzie. Debuger pozwala zobaczyć dokładnie co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Debuger migawki ułatwiają znacznie skrócić czas potrzebny na rozwiązać problemy występujące w środowisku produkcyjnym.
+Rozszerzenie Snapshot Debugger tworzy migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który chcesz wziąć. Aby nakazać debugera, aby utworzyć migawkę, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie tego, co poszło, bez wywierania wpływu na ruch z aplikacji produkcyjnej. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
 
-Snappoints i logpoints są podobne do punktów przerwania, jednak w przeciwieństwie do punktów przerwania, snappoints nie wstrzymać aplikacja po trafieniu. Trwa przechwytywanie migawek na snappoint zazwyczaj, 10-20 w milisekundach.
+Punkty przyciągania i punkty rejestrowania są podobne do punktów przerwania, ale w przeciwieństwie do punktów przerwania, punkty przyciągania nie zatrzymanie aplikacji po trafieniu. Zazwyczaj przechwytywania migawkę punktu przyciągania zajmuje 10 20 milisekund.
 
-W tym samouczku obejmują:
+W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
-> * Uruchom debuger migawki
-> * Ustaw snappoint i Wyświetl migawki
-> * Ustaw logpoint
+> * Uruchom rozszerzenie Snapshot Debugger
+> * Ustawianie punktu przyciągania i Wyświetl migawki
+> * Ustaw punkt rejestrowania
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Debuger migawki jest dostępna tylko dla programu Visual Studio Enterprise 2017 wersji 15.5 lub nowszym oraz **ASP.NET i sieć web development obciążenia**. Dla platformy ASP.NET Core może też być konieczne. **NET Core development** obciążenia zainstalowane.
+* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie projektowania platformy ASP.NET i sieci web**. Dla platformy ASP.NET Core, należy również. **Programowania .NET Core** zainstalowanym obciążeniem.
 
-    Jeśli to nie jest jeszcze zainstalowana, zainstaluj [Visual Studio Enterprise 2017 wersji 15,5 cala](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszym. Aktualizowania z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika debugera migawki **ASP.NET i sieć web development obciążenia**.
+    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio Enterprise 2017 w wersji 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) lub nowszej. Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
 
-* Plan usługi aplikacji Azure podstawowa lub nowszej.
+* Planu usługi Azure App Service podstawowa lub wyższej.
 
-* Kolekcja migawki jest dostępne dla następujących aplikacji sieci web uruchomionych w usłudze Azure App Service:
+* Zbieranie migawek jest dostępna dla następujących aplikacji sieci web działające w usłudze Azure App Service:
 
-    * Aplikacji platformy ASP.NET działających w środowisku .NET Framework 4.6.1 lub nowszej.
-    * Aplikacji platformy ASP.NET Core uruchomionych na .NET Core 2.0 lub nowszego systemu Windows.
+    * Aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
+    * Aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otwórz projekt i uruchomić debugera migawki
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otwórz swój projekt i uruchomić rozszerzenia Snapshot Debugger
 
-1. Otwórz projekt, który ma zostać debugowania migawki.
+1. Otwórz projekt, który chcesz debugowania migawek.
 
     > [!IMPORTANT]
-    > Aby debugowania migawki, należy otworzyć **tę samą wersję programu kodu źródłowego** który jest opublikowany w usłudze Azure App Service.
+    > Do debugowania migawki, należy otworzyć **tę samą wersję kodu źródłowego** , są publikowane w usłudze Azure App Service.
 
-1. W Eksploratorze chmury (**Widok > Eksplorator chmury**), kliknij prawym przyciskiem myszy projekt jest wdrożony w usłudze Azure App Service i wybierz **dołączyć debuger migawki**.
+1. W programie Cloud Explorer (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy projekt jest wdrażany do usługi Azure App Service i wybierz **dołączyć rozszerzenie Snapshot Debugger**.
 
-   ![Uruchom debuger migawki](../debugger/media/snapshot-launch.png)
+   ![Uruchamianie rozszerzenia snapshot debugger](../debugger/media/snapshot-launch.png)
 
-    Po raz pierwszy należy wybrać **dołączyć debuger migawki**, zostanie wyświetlony monit, aby zainstalować rozszerzenie lokacji debugera migawki w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
+    Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger**, zostanie wyświetlony monit zainstalować rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
 
-   Program Visual Studio jest teraz migawki tryb debugowania.
+   Program Visual Studio jest teraz w trybie debugowania migawek.
 
     > [!NOTE]
-    > Rozszerzenia usługi Application Insights witryny obsługuje również debugowania migawki. Jeśli wystąpią komunikat o błędzie "w lokacji rozszerzenie nieaktualne", zobacz [Rozwiązywanie problemów z porady i znane problemy dotyczące debugowania migawki](../debugger/debug-live-azure-apps-troubleshooting.md) uaktualniania szczegóły.
+    > Rozszerzenie witryny usługi Application Insights obsługuje również debugowania migawek. Jeśli wystąpią "rozszerzenie nieaktualna witryny" komunikat o błędzie, zobacz [rozwiązania problemu wskazówki i znanych problemów dotyczących debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md) dla uaktualnienie szczegółowe informacje.
 
-   ![Tryb debugowania migawki](../debugger/media/snapshot-message.png)
+   ![Tryb debugowania migawek](../debugger/media/snapshot-message.png)
 
-   **Modułów** okna pokazuje, kiedy wszystkie moduły zostały załadowane dla usługi Azure App Service (wybierz **Debug / Windows / modułów** otworzyć to okno).
+   **Modułów** okna dowiesz się, gdy wszystkie moduły zostały załadowane dla usługi Azure App Service (wybierz **debugowanie / Windows / modułów** otworzyć to okno).
 
    ![Sprawdź okno modułów](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint"></a>Ustaw snappoint
+## <a name="set-a-snappoint"></a>Ustaw punkt przyciągania
 
-1. W edytorze kodu kliknij odstępu po lewej stronie obok wiersza kodu, który chcesz ustawić snappoint. Upewnij się, że jest kod, który zostanie wykonany.
+1. W edytorze kodu kliknij lewym marginesie na oprawę obok wiersza kodu, który Cię interesuje można ustawić punktu przyciągania. Upewnij się, że kod, który będzie wykonywać.
 
-   ![Ustaw snappoint](../debugger/media/snapshot-set-snappoint.png)
+   ![Ustaw punkt przyciągania](../debugger/media/snapshot-set-snappoint.png)
 
-2. Kliknij przycisk **Rozpocznij zbieranie** włączyć snappoint.
+2. Kliknij przycisk **Rozpocznij zbieranie** włączenie punktu przyciągania.
 
-   ![Włącz snappoint](../debugger/media/snapshot-start-collection.png)
+   ![Włącz punkt przyciągania](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
-    > Nie można wykonać kroku podczas wyświetlania migawki, ale wiele snappoints można umieścić w kodzie wykonać wykonywania na różne wiersze kodu. Jeśli masz wiele snappoints w kodzie debugera migawki zapewniają odpowiedniego migawek z tej samej sesji użytkownika końcowego. Debuger migawki dzieje się tak nawet w przypadku wielu użytkowników naciśnięcie aplikacji.
+    > Nie można wykonać kroku podczas wyświetlania migawki, ale można umieścić wiele punktów przyciągania w kodzie z wykonania na różne wiersze kodu. Jeśli masz wiele punktów przyciągania w kodzie rozszerzenia Snapshot Debugger sprawia, że się, że odpowiednie migawek z tej samej sesji użytkownika końcowego. Rozszerzenie Snapshot Debugger robi to, nawet jeśli wielu użytkowników osiągnięcia swojej aplikacji.
 
-## <a name="take-a-snapshot"></a>Utworzenie migawki
+## <a name="take-a-snapshot"></a>Utwórz migawkę
 
-Po włączeniu snappoint będzie przechwytywać migawki, zawsze, gdy wiersz kodu rozmieszczenia snappoint wykonuje. Wykonanie tego może być spowodowane rzeczywistego żądania na serwerze. Aby wymusić snappoint Twojego trafień, przejdź do widoku przeglądarki witryny sieci web i podjąć działania wymagane które spowodować snappoint Twojego do trafiony.
+Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wykonywany wiersza kodu, w którym znajduje się punkt przyciągania. To wykonanie może być spowodowany rzeczywistego żądania na serwerze. Aby wymusić Twojego punktu przyciągania trafień, przejdź do widoku przeglądarki witryny sieci web i podjąć działania wymaganego co powodować Twojego punktu przyciągania na.
 
 ## <a name="inspect-snapshot-data"></a>Sprawdź dane migawki
 
-1. Po wybraniu snappoint, migawka zostanie wyświetlony w oknie narzędzia diagnostyczne. Aby otworzyć to okno, wybierz polecenie **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+1. Po osiągnięciu punktu przyciągania migawki pojawia się w oknie narzędzia diagnostyczne. Aby otworzyć to okno, wybierz **debugowanie / Windows / Pokaż narzędzia diagnostyczne**.
 
-   ![Otwórz snappoint](../debugger/media/snapshot-diagsession-window.png)
+   ![Otwarcie punktu przyciągania](../debugger/media/snapshot-diagsession-window.png)
 
-1. Kliknij dwukrotnie snappoint, aby otworzyć migawki w edytorze kodu.
+1. Kliknij dwukrotnie punktu przyciągania, aby otworzyć migawki w edytorze kodu.
 
    ![Sprawdź dane migawki](../debugger/media/snapshot-inspect-data.png)
 
-   W tym widoku można umieść kursor nad zmienne do wyświetlania etykietek danych, użyj **zmiennych lokalnych**, **obserwowanie**, i **stos wywołań** systemu windows, a także obliczać wyrażeń.
+   Z poziomu tego widoku możesz umieścić kursor zmienne, aby przeglądać DataTips, **zmiennych lokalnych**, **zegarki**, i **stos wywołań** systemu windows, a także obliczać wyrażeń.
 
-    Sama witryna sieci Web jest nadal aktywne i nie ma wpływu na użytkowników końcowych. Tylko jedna migawka jest przechwytywany na snappoint domyślnie: po przechwyceniu migawki snappoint zostanie wyłączony. Chcesz przechwytywać kolejną migawkę na snappoint, można włączyć snappoint ponownie, klikając **kolekcji aktualizacji**.
+    Nadal działa z witryną i nie ma to wpływ na użytkowników końcowych. Tylko jedna migawka jest przechwytywany na punkt przyciągania domyślnie: po przechwyceniu migawkę punktu przyciągania zostanie wyłączony. Chcesz przechwytywać innego migawkę punktu przyciągania, można włączyć punkt przyciągania ponownie, klikając **Aktualizuj kolekcję**.
 
-Możesz również dodać więcej snappoints do aplikacji i włączyć je z **kolekcji aktualizacji** przycisku.
+Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawki](../debugger/debug-live-azure-apps-faq.md) stron.
+**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
-## <a name="set-a-conditional-snappoint"></a>Ustaw snappoint warunkowe
+## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 
-Jeśli trudno odtworzyć określonego stanu w aplikacji, należy wziąć pod uwagę czy użycie warunkowego snappoint może pomóc. Warunkowe snappoints uniknąć wykonywania migawki, dopóki aplikacja przechodzi żądany stan, na przykład jeśli zmienna zawiera konkretną wartość, które chcesz sprawdzić. Można ustawić warunki za pomocą wyrażeń, filtry lub liczbą trafień.
+Jeśli jest trudne do odtworzenia w określonym stanie w swojej aplikacji, należy rozważyć, czy korzystanie z warunkowego punktu przyciągania mogą pomóc w. Warunkowe punkty przyciągania uniknąć wykonywania migawki, aż aplikacja przejdzie do żądanego stanu, na przykład w przypadku zmiennej określonej wartości, które chcesz sprawdzić. Można określić warunki, używając wyrażeń i filtry, lub liczbą trafień.
 
-#### <a name="to-create-a-conditional-snappoint"></a>Aby utworzyć snappoint warunkowe
+#### <a name="to-create-a-conditional-snappoint"></a>Aby utworzyć warunkowego punktu przyciągania
 
-1. Kliknij prawym przyciskiem myszy ikonę snappoint (piłka pusty) i wybierz polecenie **ustawienia**.
+1. Kliknij prawym przyciskiem myszy ikoną punkt przyciągania (piłka puste), a następnie wybierz **ustawienia**.
 
    ![Wybierz ustawienia](../debugger/media/snapshot-snappoint-settings.png)
 
-1. W oknie Ustawienia snappoint wpisz wyrażenie.
+1. W oknie Ustawienia punktu przyciągania wpisz wyrażenie.
 
    ![Wpisz wyrażenie](../debugger/media/snapshot-snappoint-conditions.png)
 
-   Na powyższej ilustracji tylko migawki dla snappoint podczas `visitor.FirstName == "Dan"`.
+   Na powyższej ilustracji tylko migawki dla punktu przyciągania podczas `visitor.FirstName == "Dan"`.
 
-## <a name="set-a-logpoint"></a>Ustaw logpoint
+## <a name="set-a-logpoint"></a>Ustaw punkt rejestrowania
 
-Oprócz wykonywania migawki po wybraniu snappoint, można również skonfigurować snappoint do rejestrowania wiadomości (czyli tworzenie logpoint). Możesz ustawić logpoints bez konieczności ponownego wdrażania aplikacji. Logpoints są wykonywane w praktycznie i spowodować nie wpływu i efekty uboczne w uruchomionej aplikacji.
+Oprócz wykonywania migawki po trafieniu punktu przyciągania, można również skonfigurować punktu przyciągania, aby zarejestrować komunikat (to znaczy, Utwórz punkt rejestrowania). Możesz ustawić punkty rejestrowania, bez konieczności ponownego wdrażania aplikacji. Punkty rejestrowania są wykonywane w praktycznie i spowodować nie wpływu i efekty uboczne uruchomionej aplikacji.
 
-#### <a name="to-create-a-logpoint"></a>Aby utworzyć logpoint
+#### <a name="to-create-a-logpoint"></a>Aby utworzyć punkt rejestrowania
 
-1. Kliknij prawym przyciskiem myszy ikonę snappoint (sześciokąt niebieski) i wybierz polecenie **ustawienia**.
+1. Kliknij prawym przyciskiem myszy ikonę punkt przyciągania (sześciokąt niebieski), a następnie wybierz **ustawienia**.
 
-1. W oknie Ustawienia snappoint wybierz **akcje**.
+1. W oknie Ustawienia punktu przyciągania wybierz **akcje**.
 
-    ![Utwórz logpoint](../debugger/media/snapshot-logpoint.png)
+    ![Utwórz punkt rejestrowania](../debugger/media/snapshot-logpoint.png)
 
-1. W polu komunikat można wprowadzić nowy komunikat dziennika, które mają być rejestrowane. Zmienne w wiadomości dziennika można również ocenić, umieszczając je wewnątrz nawiasów klamrowych.
+1. W polu wiadomości można wprowadzić nowy komunikat dziennika, które mają być rejestrowane. Można również obliczyć zmiennych w wiadomości dziennika, umieszczając je wewnątrz nawiasów klamrowych.
 
-    Jeśli wybierzesz **Wyślij do okna wyjściowego**, gdy zostaje trafiony logpoint komunikat jest wyświetlany w oknie narzędzia diagnostyczne.
+    Jeśli wybierzesz **Wyślij do okna danych wyjściowych**, gdy zostanie osiągnięty punkt rejestrowania komunikat jest wyświetlany w oknie narzędzia diagnostyczne.
 
-    ![Logpoint danych w oknie diagsession](../debugger/media/snapshot-logpoint-output.png)
+    ![Punkt rejestrowania danych w oknie sesji diagnostycznej](../debugger/media/snapshot-logpoint-output.png)
 
-    Jeśli wybierzesz **wysyłane do dziennika aplikacji**, po wybraniu logpoint, pojawi się komunikat z dowolnego miejsca można wyświetlić komunikaty z `System.Diagnostics.Trace` (lub `ILogger` w .NET Core), takich jak [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
+    Jeśli wybierzesz **Wyślij do dziennika aplikacji**, gdy zostanie osiągnięty punkt rejestrowania, komunikat pojawi się gdziekolwiek zobaczyć komunikaty z `System.Diagnostics.Trace` (lub `ILogger` platformie .NET Core), takich jak [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku kiedy znasz już jak używać debugera migawki. Warto przeczytać więcej informacji na temat tej funkcji.
+W tym samouczku wyjaśniono sposób użycia rozszerzenia Snapshot Debugger. Warto przeczytać więcej na temat tej funkcji.
 
 > [!div class="nextstepaction"]
 > [Debugowanie migawek — często zadawane pytania](../debugger/debug-live-azure-apps-faq.md)
