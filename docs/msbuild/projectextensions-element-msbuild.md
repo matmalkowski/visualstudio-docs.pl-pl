@@ -1,5 +1,5 @@
 ---
-title: ProjectExtensions — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Projectextensions — Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210c4bdf67907af2271000708ae30e2e1102d7ea
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: c977578a01c6d0af62f328e44a617ff2e00fe128
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326897"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150859"
 ---
-# <a name="projectextensions-element-msbuild"></a>ProjectExtensions — Element (MSBuild)
-Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki zawiera inną niż projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Cokolwiek wewnątrz elementu `ProjectExtensions` element zostanie zignorowany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+# <a name="projectextensions-element-msbuild"></a>Projectextensions — element (MSBuild)
+Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki, aby zawierała non - projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Wszystko wewnątrz elementu `ProjectExtensions` element zostanie zignorowana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
 
  \<Project>  
- \<ProjectExtensions >  
+ \<Projectextensions — >  
 
 ## <a name="syntax"></a>Składnia  
 
@@ -54,13 +54,13 @@ Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
  Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
 
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje informacje z zintegrowane środowisko programistyczne są przechowywane w `ProjectExtensions` elementu.  
+ Poniższy przykład kodu pokazuje informacje z zintegrowanego środowiska programistycznego znajdujących się w `ProjectExtensions` elementu.  
 
 ```xml  
 <ProjectExtensions>  
@@ -74,6 +74,6 @@ Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 </ProjectExtensions>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](../msbuild/msbuild.md)

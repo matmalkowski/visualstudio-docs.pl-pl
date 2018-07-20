@@ -18,34 +18,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 230f0491993b3804c3147e727900de2647ff7bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558246"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151249"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Porady: włączenie funkcji AutoStart dla instalacji z dysku CD
-W przypadku wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą nośników wymiennych, takich jak stacje CD-ROM lub DVD-ROM, można włączyć `AutoStart` , aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana automatycznie, gdy znajduje się nośnik.  
+W przypadku wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji za pomocą nośników wymiennych, takich jak dysk CD-ROM lub DVD-ROM, aby umożliwić `AutoStart` tak, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana automatycznie, gdy nośnik zostanie wstawiona.  
   
- `AutoStart` można włączyć dla **publikowania** strony **projektanta projektu**.  
+ `AutoStart` można włączyć dla **Publikuj** strony **projektanta projektu**.  
   
 ### <a name="to-enable-autostart"></a>Aby włączyć automatyczne uruchamianie  
   
-1.  Z projektem wybranym **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
-2.  Kliknij przycisk **publikowania** kartę.  
+2.  Kliknij przycisk **Publikuj** kartę.  
   
 3.  Kliknij przycisk **opcje** przycisku.  
   
-     **Opcji publikowania** zostanie wyświetlone okno dialogowe.  
+     **Opcji publikowania** pojawi się okno dialogowe.  
   
 4.  Kliknij przycisk **wdrożenia**.  
   
-5.  Wybierz **instalacji na dysku CD automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.  
+5.  Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.  
   
-     Plik Autorun.inf zostaną skopiowane do lokalizacji publikacji po opublikowaniu aplikacji.  
+     *Autorun.inf* po opublikowaniu aplikacji plik zostanie skopiowany do lokalizacji publikowania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -20,41 +20,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e9841bd93e1bf41f15dec36b11137edfd5fa14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ed195596715c044268b2b1fdf434d1fda20967c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570018"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150893"
 ---
 # <a name="sgen-task"></a>SGen — Zadanie
-Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie zawijania narzędzie generowania serializatora XML (Sgen.exe). Aby uzyskać więcej informacji, zobacz [narzędzie generowania serializatora XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie jest zawijany narzędzie generatora serializatora XML (*Sgen.exe*). Aby uzyskać więcej informacji, zobacz [narzędzie generatora serializatora XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `SGen` zadań.  
+ W poniższej tabeli opisano parametry `SGen` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`BuildAssemblyName`|Wymagane `String` parametru.<br /><br /> Zestaw do generowania kodu serializacji dla.|  
-|`BuildAssemblyPath`|Wymagane `String` parametru.<br /><br /> Ścieżka do zestawu do generowania kodu serializacji dla.|  
-|`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, określa, czy zestawem całkowicie podpisane. Jeśli `false`, określa, że chcesz umieścić klucz publiczny w zestawie.<br /><br /> Ten parametr nie obowiązuje, chyba że używana w trybie `KeyFile` lub `KeyContainer` parametru.|  
-|`KeyContainer`|Opcjonalne `String` parametru.<br /><br /> Określa kontener zawierający parę kluczy. Spowoduje to wylogowanie zestawu wstawiając klucz publiczny w manifeście zestawu. Zadanie będzie Zaloguj się w zestawie końcowym z kluczem prywatnym.|  
-|`KeyFile`|Opcjonalne `String` parametru.<br /><br /> Określa pary kluczy lub klucza publicznego do użycia, aby podpisać zestaw. Kompilator wstawia klucz publiczny w manifeście zestawu, a następnie podpisuje ostateczny zestaw przy użyciu klucza prywatnego.|  
-|`Platform`|Opcjonalne `String` parametru.<br /><br /> Pobiera lub ustawia platformy kompilatora służący do generowania zestawu wyjściowego. Ten parametr może mieć wartość `x86`, `x64`, lub `anycpu`. Wartość domyślna to `anycpu`.|  
-|`References`|Opcjonalne `String[]` parametru.<br /><br /> Określa zestawy, które są określone przez typy wymagające serializacji XML.|  
-|`SdkToolsPath`|Opcjonalne `String` parametru.<br /><br /> Określa ścieżkę do narzędzia zestawu SDK, takich jak resgen.exe.|  
-|`SerializationAssembly`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera zestaw wygenerowanego serializacji.|  
-|`SerializationAssemblyName`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę zestawu wygenerowanego serializacji.|  
-|`ShouldGenerateSerializer`|Wymagane `Boolean` parametru.<br /><br /> Jeśli `true`, zadania SGen powinien wygenerować zestawu serializacji.|  
-|`Timeout`|Opcjonalne `Int32` parametru.<br /><br /> Określa ilość czasu, w milisekundach, po których plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue`, wskazując, że to nie okres limitu czasu.|  
-|`ToolPath`|Opcjonalne `String` parametru.<br /><br /> Określa lokalizację, z której zadanie zostanie załadowany podstawowy plik wykonywalny (sgen.exe). Jeśli ten parametr nie jest określony, zadanie użyje ścieżki instalacji zestawu SDK, odpowiadający wersji framework, na którym działa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-|`Types`|Opcjonalne `String[]` parametru.<br /><br /> Pobiera lub ustawia listę określonych typów do generowania kodu serializacji dla. SGen — spowoduje wygenerowanie kodu serializacji tylko w przypadku tych typów.|  
-|`UseProxyTypes`|Wymagane `Boolean` parametru.<br /><br /> Jeśli `true`, zadania SGen generuje kod serializacji tylko dla typów serwera proxy usług XML sieci Web.|  
+|`BuildAssemblyName`|Wymagane `String` parametru.<br /><br /> Zestaw do generowania kodu serializacji.|  
+|`BuildAssemblyPath`|Wymagane `String` parametru.<br /><br /> Ścieżka do zestawu do generowania kodu serializacji.|  
+|`DelaySign`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, określa, że chcesz, aby podpisać zestaw całkowicie. Jeśli `false`, określa, że chcesz tylko umieścić klucz publiczny w zestawie.<br /><br /> Ten parametr jest ignorowany, chyba że używany z `KeyFile` lub `KeyContainer` parametru.|  
+|`KeyContainer`|Opcjonalnie `String` parametru.<br /><br /> Określa kontener zawierający parę kluczy. Zestaw zostanie podpisany przez wstawienie klucza publicznego do manifestu zestawu. Zadanie następnie podpisze ostateczny zestaw przy użyciu klucza prywatnego.|  
+|`KeyFile`|Opcjonalnie `String` parametru.<br /><br /> Określa pary kluczy lub klucz publiczny używany do podpisywania zestawu. Kompilator wstawia klucz publiczny w manifeście zestawu, a następnie podpisuje ostateczny zestaw przy użyciu klucza prywatnego.|  
+|`Platform`|Opcjonalnie `String` parametru.<br /><br /> Pobiera lub ustawia platformy kompilatora, używane do generowania zestawu wyjściowego. Ten parametr może mieć wartość `x86`, `x64`, lub `anycpu`. Wartość domyślna to `anycpu`.|  
+|`References`|Opcjonalnie `String[]` parametru.<br /><br /> Określa zestawy, które są określone przez typy wymagające serializacji XML.|  
+|`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe*.|  
+|`SerializationAssembly`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera zestaw wygenerowany serializacji.|  
+|`SerializationAssemblyName`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę zestawu wygenerowanego serializacji.|  
+|`ShouldGenerateSerializer`|Wymagane `Boolean` parametru.<br /><br /> Jeśli `true`, SGen — zadanie powinien wygenerować zestawu serializacji.|  
+|`Timeout`|Opcjonalnie `Int32` parametru.<br /><br /> Określa ilość czasu w milisekundach, po których zostanie zakończony wykonywalnego zadania podrzędnego. Wartość domyślna to `Int.MaxValue`, wskazujący, że nie okres limitu czasu.|  
+|`ToolPath`|Opcjonalnie `String` parametru.<br /><br /> Określa lokalizację, z którym zadanie załaduje podstawowego pliku wykonywalnego (*sgen.exe*). Jeśli nie określono tego parametru, zadanie używa ścieżki instalacji zestawu SDK odpowiadający wersję framework, na którym działa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|`Types`|Opcjonalnie `String[]` parametru.<br /><br /> Pobiera lub ustawia listę określonych typów do generowania kodu serializacji. SGen wygeneruje kod serializacji tylko dla tych typów.|  
+|`UseProxyTypes`|Wymagane `Boolean` parametru.<br /><br /> Jeśli `true`, SGen — zadanie generuje kod serializacji tylko dla typów serwera proxy usług sieci Web XML.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.ToolTaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [tooltaskextension — klasa podstawowa](../msbuild/tooltaskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

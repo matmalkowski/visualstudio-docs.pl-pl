@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: deb3034c00a6f929ed728534bccf66325a45ed38
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3b1a7890bd8ebf083f6d0ebec17d05de4ca831d4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079966"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151316"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania na jednym z kilku różnych wersji programu .NET Framework i na jednym z różnych platform system. Na przykład można kompilować aplikację do uruchamiania na .NET Framework 2.0 na platformie 32-bitowej i kompilacji tej samej aplikacji do uruchamiania na .NET Framework 4.5 na platformie 64-bitowej.  

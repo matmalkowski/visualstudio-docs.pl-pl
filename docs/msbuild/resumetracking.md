@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326283"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151184"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Wznawia śledzenia w bieżącym kontekście.  
@@ -34,10 +34,10 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- **HRESULT** z **zakończyło się pomyślnie** ustawiony bit, jeśli śledzenie zostało wznowione. **E_FAIL** jest zwracany, jeśli nie można wznowić śledzenia, ponieważ kontekst nie jest dostępna.  
+ **HRESULT** z **Powodzenie** bitu, jeśli śledzenie zostało wznowione. **E_FAIL** jest zwracany, jeśli nie można wznowić śledzenia, ponieważ kontekst nie jest dostępna.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h  
+ **Nagłówek:** *FileTracker.h*  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [SuspendTracking](../msbuild/suspendtracking.md)

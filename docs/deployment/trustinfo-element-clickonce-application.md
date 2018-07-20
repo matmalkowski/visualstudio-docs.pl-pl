@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustinfo —&gt; — Element (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;trustInfo&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816006"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151068"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustinfo —&gt; — Element (aplikacji ClickOnce)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; — element (aplikacja ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomienia na komputerze klienckim.  
   
 ## <a name="syntax"></a>Składnia  
@@ -68,42 +68,42 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 </trustInfo>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `trustInfo` Element jest wymagany i znajduje się w `asm.v2` przestrzeni nazw. Nie ma żadnych atrybutów, a zawiera następujące elementy.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `trustInfo` Element jest wymagany i znajduje się w `asm.v2` przestrzeni nazw. Go nie ma żadnych atrybutów i zawiera następujące elementy.  
   
 ## <a name="security"></a>zabezpieczenia  
- Wymagana. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera on `applicationRequestMinimum` elementu i nie ma żadnych atrybutów.  
+ Wymagane. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera on `applicationRequestMinimum` elementu i nie ma żadnych atrybutów.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- Wymagana. Ten element jest elementem podrzędnym `security` element i zawiera `PermissionSet`, `assemblyRequest`, i `defaultAssemblyRequest`elementy. Ten element nie ma żadnych atrybutów.  
+ Wymagane. Ten element jest elementem podrzędnym `security` elementu i zawiera `PermissionSet`, `assemblyRequest`, i `defaultAssemblyRequest`elementów. Ten element nie ma żadnych atrybutów.  
   
 ## <a name="permissionset"></a>PermissionSet  
- Wymagana. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.  
+ Wymagane. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.  
   
 -   `ID`  
   
-     Wymagana. Identyfikuje zestaw uprawnień. Ten atrybut może mieć dowolną wartość. Odwołuje się identyfikator `defaultAssemblyRequest` i `assemblyRequest` atrybutów.  
+     Wymagane. Identyfikuje zestaw uprawnień. Ten atrybut może być dowolna wartość. Identyfikator jest przywoływany w `defaultAssemblyRequest` i `assemblyRequest` atrybutów.  
   
 -   `version`  
   
-     Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
+     Wymagane. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
-## <a name="ipermission"></a>IPermission  
- Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odpowiadają właściwości klasy uprawnień. Aby sprawdzić składnię określonego uprawnienia, zobacz temat przykłady wymienione w pliku Security.config —.  
+## <a name="ipermission"></a>Interfejsu IPermission  
+ Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odnoszą się do właściwości klasy uprawnień. Aby sprawdzić składnię określone uprawnienie, zobacz temat w przykładach wymienionych w pliku Security.config —.  
   
 -   `class`  
   
-     Wymagana. Identyfikuje klasy uprawnień przy użyciu silnej nazwy. Na przykład następujący kod identyfikuje `FileDialogPermission` typu.  
+     Wymagane. Identyfikuje klasy uprawnień za pomocą silnej nazwy. Na przykład, poniższy kod określa `FileDialogPermission` typu.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
+     Wymagane. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
 -   `Unrestricted`  
   
-     Wymagana. Określa, czy aplikacja musi nieograniczony przyznawania to uprawnienie. Jeśli `true`, przyznaj uprawnienie jest bezwarunkowe. Jeśli `false`, lub jeśli zdefiniowano ten atrybut jest ograniczone w zależności od zdefiniowanych atrybutów specyficzne uprawnienia `IPermission` tagu. Wykonaj następujące uprawnienia:  
+     Wymagane. Określa, czy aplikacja musi nieograniczony przyznanie tego uprawnienia. Jeśli `true`, udzielenia uprawnień to bezwarunkowy. Jeśli `false`, lub jeśli ten atrybut jest niezdefiniowana, jest ograniczona zgodnie z atrybutów określonych uprawnień wobec `IPermission` tagu. Wykonaj następujące uprawnienia:  
   
     ```xml  
     <IPermission  
@@ -116,35 +116,35 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
       Unrestricted="true" />  
     ```  
   
-     W tym przykładzie deklaracja <xref:System.Security.Permissions.EnvironmentPermission> ogranicza aplikację do odczytywania tylko zmiennej środowiskowej USERNAME, podczas gdy deklaracja <xref:System.Security.Permissions.FileDialogPermission> daje aplikacji bez ograniczeń użycia wszystkich <xref:System.Windows.Forms.FileDialog> klasy.  
+     W tym przykładzie deklaracji pod kątem <xref:System.Security.Permissions.EnvironmentPermission> ogranicza aplikacji do odczytywania tylko zmienna środowiskowa USERNAME, natomiast deklaracji pod kątem <xref:System.Security.Permissions.FileDialogPermission> zapewnia użytkowania aplikacji bez ograniczeń, wszystkie <xref:System.Windows.Forms.FileDialog> klasy.  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- Opcjonalna. Określa zestaw uprawnień do wszystkich zestawów. Ten element jest elementem podrzędnym `applicationRequestMinimum` element a ma następującego atrybutu.  
+ Opcjonalna. Identyfikuje zestaw wszystkich zestawów uprawnień. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujący atrybut.  
   
 -   `permissionSetReference`  
   
-     Wymagana. Określa identyfikator zestaw uprawnień będący uprawnienia domyślne. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
+     Wymagane. Określa identyfikator zestawu uprawnień, który jest domyślnym uprawnieniem. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- Opcjonalna. Określa uprawnienia dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i ma następujące atrybuty.  
+ Opcjonalna. Umożliwia określenie uprawnień dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` elementu i ma następujące atrybuty.  
   
 -   `Name`  
   
-     Wymagana. Określa nazwę zestawu.  
+     Wymagane. Określa nazwę zestawu.  
   
 -   `permissionSetReference`  
   
-     Wymagana. Określa identyfikator zestaw uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
+     Wymagane. Określa identyfikator zestawu uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- Opcjonalna. Ten element jest elementem podrzędnym `security` element i zawiera `requestedExecutionLevel` elementu. Ten element nie ma żadnych atrybutów.  
+ Opcjonalna. Ten element jest elementem podrzędnym `security` elementu i zawiera `requestedExecutionLevel` elementu. Ten element nie ma żadnych atrybutów.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- Opcjonalna. Określa poziom zabezpieczeń, w którym aplikacja żądań do wykonania. Ten element nie ma elementów podrzędnych i ma następujące atrybuty.  
+ Opcjonalna. Określa poziom zabezpieczeń, w którym aplikacja żąda wykonania. Ten element nie ma elementów podrzędnych i ma następujące atrybuty.  
   
 -   `Level`  
   
-     Wymagana. Wskazuje, że żąda poziom zabezpieczeń aplikacji. Możliwe wartości to:  
+     Wymagane. Wskazuje, że żąda poziomu zabezpieczeń aplikacji. Możliwe wartości to:  
   
      `asInvoker`, żądanie żadne dodatkowe uprawnienia. Ten poziom nie wymaga żadnych dodatkowych zaufania wyświetla monit o.  
   
@@ -152,23 +152,23 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
      `requireAdministrator`, żąda uprawnienia administrator o pełnych uprawnieniach.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje będą instalowane tylko o wartości `asInvoker`. Instalowanie za pomocą innej wartości zakończy się niepowodzeniem.  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje będą instalowane tylko z wartością `asInvoker`. Instalowanie przy użyciu dowolnej innej wartości zakończy się niepowodzeniem.  
   
 -   `uiAccess`  
   
-     Opcjonalna. Wskazuje, czy aplikacja wymaga dostępu do elementów interfejsu użytkownika chronionych. Wartości są albo `true` lub `false`, a wartość domyślna to false. Tylko podpisane aplikacje powinien mieć wartość true.  
+     Opcjonalna. Wskazuje, czy aplikacja wymaga dostępu do elementów interfejsu użytkownika chronionych. Wartości są albo `true` lub `false`, a wartość domyślna to false. Tylko podpisane aplikacje powinny mieć wartość true.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja prosi o więcej uprawnień niż komputer kliencki będzie zezwalał na domyślnie języka wspólnego menedżera zaufania w czasie wykonywania będzie monitować użytkownika, jeśli chce udzielić aplikacji tym podwyższonego poziomu zaufania. Jeśli użytkownik nie, aplikacja nie zostanie uruchomiona; w przeciwnym razie będzie uruchamiane z żądanych uprawnień.  
+ Jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja prosi o więcej uprawnień niż przyzna komputer kliencki domyślnie języka wspólnego, Menedżer zaufania środowiska uruchomieniowego będzie monitować użytkownika, jeśli chce udzielić aplikacji tym podwyższonego poziomu zaufania. Jeśli jest ona w stanie nie, aplikacja nie zostanie uruchomiona; w przeciwnym razie zostaną uruchomione żądane uprawnienia.  
   
- Wszystkie uprawnienia żądana za pomocą `defaultAssemblyRequest` i `assemblyRequest` zostaną przyznane bez monitowania użytkownika, jeśli manifest rozmieszczenia ma prawidłową licencję zaufania.  
+ Wszystkie uprawnienia żądana za pomocą `defaultAssemblyRequest` i `assemblyRequest` zostaną przyznane bez monitowania użytkownika, jeśli manifest wdrożenia ma prawidłową licencję zaufania.  
   
- Aby uzyskać więcej informacji na temat podniesienia uprawnień, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md). Aby uzyskać więcej informacji na temat wdrażania zasad, zobacz [zaufane Omówienie wdrożenia aplikacji](../deployment/trusted-application-deployment-overview.md).  
+ Aby uzyskać więcej informacji o podniesienie uprawnień, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md). Aby uzyskać więcej informacji na temat wdrażania zasad, zobacz [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Przykłady  
- Kod trzy poniższe przykłady przedstawiają `trustInfo` elementów domyślnych o nazwie strefy zabezpieczeń — Internet, LocalIntranet i FullTrust — do użycia w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia w manifeście aplikacji.  
+ W poniższych przykładach kodu trzy pokazano `trustInfo` elementów domyślnego o nazwie strefy zabezpieczeń — Internet, LocalIntranet i FullTrust — do użytku w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia manifest aplikacji.  
   
- Pierwszym przykładzie przedstawiono `trustInfo` elementu domyślne uprawnienia dostępne w strefie Internet.  
+ W pierwszym przykładzie pokazano `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń Internet.  
   
 ```xml  
 <trustInfo>  
@@ -204,7 +204,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   </trustInfo>  
 ```  
   
- Drugi przykład ilustruje `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń LocalIntranet.  
+ Drugi przykład przedstawia `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń LocalIntranet.  
   
 ```xml  
 <trustInfo>  
@@ -256,7 +256,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 </trustInfo>  
 ```  
   
- Pokazano w przykładzie trzeci `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń FullTrust.  
+ Trzeci przykład ilustruje `trustInfo` elementu domyślne uprawnienia dostępne w strefie zabezpieczeń FullTrust.  
   
 ```xml  
 <trustInfo>  
@@ -269,6 +269,6 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Przegląd wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Zaufane wdrożenie aplikacji — omówienie](../deployment/trusted-application-deployment-overview.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

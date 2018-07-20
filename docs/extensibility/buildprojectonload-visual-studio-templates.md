@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70cc3522d59c2abe4633f38f746aeeb3159fe8a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097884"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150668"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (szablony Visual Studio)
-Określa, czy natychmiast po jej utworzeniu, skompiluj projekt.  
+Określa, czy należy skompilować projekt natychmiast, po jego utworzeniu.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -49,18 +49,18 @@ Określa, czy natychmiast po jej utworzeniu, skompiluj projekt.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, oznaczająca, czy natychmiast po jej utworzeniu, skompiluj projekt.  
+ Tekst musi być albo `true` lub `false`, oznaczająca, czy do skompilowania projektu, natychmiast, po jego utworzeniu.  
   
 ## <a name="remarks"></a>Uwagi  
  `BuildProjectOnLoad` jest atrybutem opcjonalnym. Wartość domyślna to `false`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.  
+ W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,7 +87,7 @@ Określa, czy natychmiast po jej utworzeniu, skompiluj projekt.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [TemplateContent — Element (szablony Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Templatecontent — element (szablony Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
