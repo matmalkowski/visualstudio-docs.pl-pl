@@ -1,8 +1,8 @@
 ---
-title: Rozwiązywanie problemów i znane problemy dotyczące debugowania migawki | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek | Dokumentacja firmy Microsoft
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
@@ -11,79 +11,79 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7340b5f6ce7e9f8cbcbb0e2673b22712b3ab45a3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480101"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152019"
 ---
-# <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące migawki debugowania w programie Visual Studio
+# <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
-Jeśli kroki opisane w tym temacie nie rozwiąże problemu, skontaktuj się z snaphelp@microsoft.com.
+Jeśli kroki opisane w tym artykule nie rozwiązują problemu, skontaktuj się z snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Snappoint jest wyłączone
+## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Punkt przyciągania jest wyłączone
 
-Jeśli widzisz ikonę ostrzeżenia ![ikona ostrzeżenia Snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "ikona ostrzeżenia Snappoint") z Twojej snappoint zamiast ikony regularne snappoint następnie snappoint nie jest włączona.
+Jeśli widoczna jest ikona ostrzeżenia ![ikona ostrzeżenia punktu przyciągania](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "ikona ostrzeżenia punktu przyciągania") przy użyciu punktu przyciągania zamiast ikony regularne punktu przyciągania następnie punktu przyciągania nie jest włączona.
 
-![Nie włączaj Snappoint](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint jest wyłączone")
-
-Wykonaj następujące czynności:
-
-1. Upewnij się, że korzystasz z tej samej wersji kodu źródłowego, który był używany do tworzenia i wdrażania app.isua1 Twojego. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna pliku symboli zawiera plik PDB dla modułu debugowania. Należy pamiętać, że debuger migawki podejmie próbę automatycznego pobrania i zastosowania symboli dla danego wdrożenia.
-
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole nie są ładowane, podczas otwierania migawki
-
-Jeśli zostanie wyświetlone następujące okno, symbole nie został załadowany.
-
-![Nie ładuj symbole](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "symbole nie są ładowane.")
+![Punkt przyciągania nie włączać](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "punktu przyciągania jest wyłączone")
 
 Wykonaj następujące czynności:
 
-- Kliknij przycisk **zmiany ustawień symboli...** łącze na tej stronie. W **debugowanie > Symbol** ustawienia, Dodaj katalog pamięci podręcznej symboli. Uruchom ponownie debugowanie migawki po ustawieniu ścieżki symboli.
+1. Upewnij się, że mają tę samą wersję kodu źródłowego, który został użyty do tworzenia i wdrażania usługi app.isua1. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna plik symboli zawiera plik .pdb załadowanych modułów, debugowania. Rozszerzenie Snapshot Debugger podejmie próbę automatycznego pobrania i zastosowania symbole dla danego wdrożenia.
 
-   Symbole lub .pdb, pliki, dostępne w projekcie musi odpowiadać wdrożenia usługi aplikacji. Większości wdrożeń (wdrożenia za pomocą programu Visual Studio, CI/CD programu VSTS lub Kudu, itp.) będą publikowane plików symboli wraz z usługi aplikacji. Ustawianie katalogu pamięci podręcznej symboli umożliwia Visual Studio, aby użyć tych symboli.
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole nie są ładowane, otwieraniu migawki
 
-   ![Symbol ustawienia](../debugger/media/snapshot-troubleshooting-symbol-settings.png "ustawień symboli")
+Jeśli zostanie wyświetlone następujące okno, symboli nie został załadowany.
 
-- Alternatywnie Jeśli Twoja organizacja korzysta z serwera symboli lub porzuca symbole w inną ścieżkę, należy użyć ustawień symbol załadować poprawne symbole dla danego wdrożenia.
-
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: nie widzę opcja "Dołącz debugera migawki" w Eksploratorze chmury
+![Symbole nie są ładowane](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "symbole nie są ładowane.")
 
 Wykonaj następujące czynności:
 
-- Upewnij się, że jest zainstalowany składnik debugera migawki. Otwórz Instalator programu Visual Studio i sprawdź **debugera migawki** składnika pracą platformy Azure.
-- Upewnij się, że aplikacja jest obsługiwana. Obecnie tylko ASP.NET (4.6.1+) i aplikacje platformy ASP.NET Core (2.0 +) wdrożone usługi aplikacji Azure są obsługiwane.
+- Kliknij przycisk **Zmień ustawienia symboli...** Połącz na tej stronie. W **debugowanie > Symbol** ustawienia, Dodaj katalog pamięci podręcznej symboli. Uruchom ponownie debugowanie migawki po ustawieniu ścieżki symboli.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: można wyświetlić tylko ograniczony migawek w narzędziach diagnostycznych
+   Symbole lub pliki .pdb, dostępne w projekcie musi odpowiadać wdrożenia usługi App Service. Większości wdrożeń (wdrożenia za pomocą programu Visual Studio, ciągłej integracji/ciągłego wdrażania za pomocą usługi VSTS lub Kudu, itp.) będzie publikować swoje pliki symboli, wzdłuż do usługi App Service. Ustawianie katalogu pamięci podręcznej symboli umożliwia środowisku Visual Studio za pomocą tych symboli.
 
-![Throttled snappoint](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Zdławionych snappoint")
+   ![Ustawienia symboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "ustawienia symboli")
+
+- Również jeśli Twoja organizacja korzysta z serwera symboli lub porzuca symbole w inną ścieżkę, aby załadować symbole prawidłowy dla danego wdrożenia należy użyć ustawienia symboli.
+
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: nie widzę opcji "Dołączanie rozszerzenia Snapshot Debugger" w Eksploratorze chmury
 
 Wykonaj następujące czynności:
 
-- Migawki potrwać bardzo mała ilość pamięci, ale ma opłat zatwierdzania. Jeśli debuger migawki wykrywa, że serwer jest pamięci mocno obciążony, nie będą brane migawki. Można usunąć migawki już przechwyconych zatrzymywania sesji debugera migawki i podjęcie ponownej próby.
+- Upewnij się, że jest zainstalowany składnik rozszerzenia Snapshot Debugger. Otwórz Instalatora programu Visual Studio i sprawdź **rozszerzenia Snapshot Debugger** składnik pakietu roboczego platformy Azure.
+- Upewnij się, że Twoja aplikacja jest obsługiwana. Obecnie tylko ASP.NET (4.6.1+) i aplikacji platformy ASP.NET Core (w wersji 2.0 i nowsze) wdrożonych w usłudze Azure App Services są obsługiwane.
+
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: można wyświetlić tylko ograniczona migawek w narzędziach diagnostycznych
+
+![Punkt przyciągania ograniczona](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "punkt przyciągania z ograniczoną przepływnością")
+
+Wykonaj następujące czynności:
+
+- Migawki zajmują mało pamięci, ale charakteryzują się opłaty zatwierdzenia. Jeśli rozszerzenie Snapshot Debugger wykryje, że usługi na serwerze występuje duże obciążenie pamięci duże, nie będzie wykonywać migawek. Możesz usunąć migawki już przechwycony przez zatrzymanie sesji rozszerzenia Snapshot Debugger i podjęcie ponownej próby.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Migawki debugowania z wielu klientów programu Visual Studio z tej samej usługi aplikacji nie jest obecnie obsługiwane.
-- Optymalizacje Roslyn IL nie są w pełni obsługiwane w projektów platformy ASP.NET Core. Dla niektórych projektów platformy ASP.NET Core mogą nie być mogli zobaczyć niektóre zmienne ani niektóre zmienne w instrukcjach warunkowego. 
-- Zmienne specjalne, takie jak *$FUNCTION* lub *$CALLER*, nie można obliczyć w instrukcji warunkowej lub logpoints dla projektów platformy ASP.NET Core.
-- Debugowanie migawki nie działa na usługi aplikacji, która ma [buforowanie lokalne](/azure/app-service/app-service-local-cache) włączona.
-- Debugowanie aplikacji interfejsu API migawki nie jest obecnie obsługiwane.
+- Debugowanie migawki za pomocą wielu klientów programu Visual Studio dla tej samej usługi App Service nie jest obecnie obsługiwane.
+- Optymalizacje Roslyn IL nie są w pełni obsługiwane w projektach ASP.NET Core. Dla niektórych projektów ASP.NET Core może nie mieć możliwość Zobacz pewnych zmiennych, lub użyj niektóre zmienne w instrukcjach warunkowych. 
+- Zmienne specjalne, takie jak *$FUNCTION* lub *$CALLER*, nie można obliczyć w instrukcjach warunkowych lub punkty rejestrowania dla projektów ASP.NET Core.
+- Debugowanie migawki nie działa na temat usług aplikacji, które mają [buforowaniem lokalnym](/azure/app-service/app-service-local-cache) włączona.
+- Migawka debugowania aplikacji interfejsu API nie jest obecnie obsługiwane.
 
-## <a name="site-extension-upgrade"></a>Uaktualnienie rozszerzenia lokacji
+## <a name="site-extension-upgrade"></a>Uaktualnienia rozszerzenia lokacji
 
-Migawki debugowanie i usługa Application Insights zależą od ICorProfiler, który ładuje z procesem lokacji i powoduje problemy podczas uaktualniania. Zalecamy, aby ten proces, aby upewnić się, że nie nie czas przestoju do swojej witryny produkcji.
+Debugowanie migawki i usługi Application Insights są zależne od ICorProfiler, ładuje do procesu lokacji, która powoduje problemy podczas uaktualniania. Firma Microsoft zaleca tego procesu, aby upewnić się, że ma nie czas przestoju, do witryny produkcyjnej.
 
-- Utwórz [miejsce wdrożenia](/azure/app-service/web-sites-staged-publishing) w usłudze App Service i wdrażanie witryny dla gniazda.
-- W Eksploratorze chmury w programie Visual Studio lub z portalu Azure, Zamień miejsca produkcji.
-- Zatrzymaj witrynę miejsca. To może zająć kilka sekund kill poza procesu w3wp.exe lokacji ze wszystkich wystąpień.
-- Uaktualnienie gniazdo rozszerzenia lokacji w lokacji Kudu lub w portalu Azure (*bloku usługi aplikacji > Narzędzia do programowania > Rozszerzenia > aktualizacji*).
-- Uruchom witrynę miejsca. Firma Microsoft zaleca w witrynie do rozgrzewki go ponownie.
-- Zamienić miejsca produkcji.
+- Tworzenie [miejsce wdrożenia](/azure/app-service/web-sites-staged-publishing) w ramach usługi App Service i wdrażanie witryny do gniazda.
+- W programie Cloud Explorer programu Visual Studio lub w witrynie Azure portal, należy zamienić gniazda z produkcji.
+- Zatrzymaj witrynę miejsca. To może potrwać kilka sekund, aby skasować procesu w3wp.exe lokacji ze wszystkich wystąpień.
+- Uaktualnianie miejsca rozszerzenia witryny z witryny Kudu lub witryny Azure portal (*bloku usługi App Service > Narzędzia programistyczne > Rozszerzenia > Aktualizacja*).
+- Uruchom witrynę miejsca. Firma Microsoft zaleca, odwiedzając witrynę do rozgrzewki go ponownie.
+- Zamienić gniazda z produkcji.
 
 ## <a name="see-also"></a>Zobacz także
 
 [Debugowanie w programie Visual Studio](../debugger/index.md)  
-[Debugowania na żywo aplikacji ASP.NET, za pomocą debugera migawki](../debugger/debug-live-azure-applications.md)  
+[Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)  
 [Debugowanie migawek — często zadawane pytania](../debugger/debug-live-azure-apps-faq.md)  

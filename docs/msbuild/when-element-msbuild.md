@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303338"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152431"
 ---
-# <a name="when-element-msbuild"></a>When — Element (MSBuild)
+# <a name="when-element-msbuild"></a>Gdy element (MSBuild)
 Określa możliwe blok kodu dla `Choose` element, aby wybrać.  
   
  \<Project>  
@@ -62,23 +62,23 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz pozycję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kod do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
+|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `When` elementu.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `When` elementu.|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `When` elementu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Choose, element (MSBuild)](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kod do wykonania.|  
+|[Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
 
 ## <a name="remarks"></a>Uwagi  
- Jeśli `Condition` atrybutu zwraca wartość true, obiekt podrzędny `ItemGroup` i `PropertyGroup` elementy `When` elementu są wykonywane i wszystkie kolejne `When` elementy są pomijane.  
+ Jeśli `Condition` atrybutu daje w wyniku wartość true, element podrzędny `ItemGroup` i `PropertyGroup` elementy `When` elementu są wykonane i wszystkich kolejnych `When` elementy są pomijane.  
 
- `Choose`, `When`, I `Otherwise` elementy są używane razem w sposób, aby wybrać jedną sekcję kod do wykonania poza liczba możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
+ `Choose`, `When`, I `Otherwise` elementy są używane razem w sposób wybrać jedną sekcję kodu w celu wykonania wielu możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Przykład  
- Następujące projektu używa `Choose` element, aby wybrać który zestaw wartości właściwości w `When` elementy, które można ustawić. Jeśli `Condition` oba atrybuty `When` elementy obliczać `false`, wartości właściwości w `Otherwise` ustawiono element.  
+ Poniższy projekt używa `Choose` element, aby wybrać, który zestaw wartości właściwości w `When` elementy, aby ustawić. Jeśli `Condition` oba atrybuty `When` zwrócić elementy `false`, wartości właściwości w `Otherwise` elementu są ustawione.  
 
 ```xml  
 <Project  
@@ -125,6 +125,6 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
 </Project>  
 ```  
 
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

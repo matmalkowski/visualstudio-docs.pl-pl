@@ -21,26 +21,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6156111c680bb7d9462fc94f879df9784486c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e56cfe5e3c7c8c4142babe920746ae7c0a5f229
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575822"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154680"
 ---
-# <a name="uidmanager-task"></a>UidManager — Zadanie
-<xref:Microsoft.Build.Tasks.Windows.UidManager> Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] elementów zawartych w źródle [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików.  
+# <a name="uidmanager-task"></a>Uidmanager — zadanie
+<xref:Microsoft.Build.Tasks.Windows.UidManager> Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] elementy, które znajdują się w źródle [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`IntermediateDirectory`|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog, który służy do tworzenia kopii zapasowych źródła [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, które są określone przez **MarkupFiles** parametru.|  
-|`MarkupFiles`|Wymagane **[ITaskItem]** parametru.<br /><br /> Określa źródło [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, aby objąć UID sprawdzania, aktualizowanie lub usuwanie.|  
-|`Task`|Wymagane **ciąg** parametru.<br /><br /> Określa identyfikator UID zadanie zarządzania, które chcesz wykonać. Prawidłowe opcje to **Sprawdź**, **aktualizacji**, lub **Usuń**.|  
+|`IntermediateDirectory`|Opcjonalnie **ciąg** parametru.<br /><br /> Określa katalog, który służy do tworzenia kopii zapasowej źródła [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, które są określone przez **MarkupFiles** parametru.|  
+|`MarkupFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa źródło [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki do dołączenia do UID sprawdzania, aktualizowania lub usuwania.|  
+|`Task`|Wymagane **ciąg** parametru.<br /><br /> Określa zadanie zarządzania UID, które chcesz wykonać. Prawidłowe opcje to **Sprawdź**, **aktualizacji**, lub **Usuń**.|  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto <xref:Microsoft.Build.Tasks.Windows.UidManager> zadań, aby sprawdzić, czy określone źródło [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki zawierają [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] elementów, które mają odpowiednie UID.  
+ W poniższym przykładzie użyto <xref:Microsoft.Build.Tasks.Windows.UidManager> zadania, aby sprawdzić, czy określone źródło [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki zawierają [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] elementy, które mają odpowiednie UID.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -56,10 +56,10 @@ ms.locfileid: "31575822"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Kompilowanie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
  [Porady: lokalizowanie aplikacji](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

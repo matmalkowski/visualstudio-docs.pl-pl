@@ -20,35 +20,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9269be9c47a430a262379c251add9ddfe48d3731
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 548fd2182292d9e7fdeac59d09dab2977c351d0b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573167"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155532"
 ---
-# <a name="resolvekeysource-task"></a>ResolveKeySource — Zadanie
+# <a name="resolvekeysource-task"></a>ResolveKeySource — zadanie
 Określa źródło klucza silnej nazwy.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry `ResolveKeySource` zadań.  
+ W poniższej tabeli opisano parametry `ResolveKeySource` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AutoClosePasswordPromptShow`|Opcjonalne `Int32` parametru.<br /><br /> Pobiera lub ustawia czas, w sekundach, aby wyświetlić liczbę w dół wiadomości.|  
-|`AutoClosePasswordPromptTimeout`|Opcjonalne `Int32` parametru.<br /><br /> Pobiera lub ustawia czas, w ciągu sekund oczekiwania przed zamknięciem okna dialogowego monitu o hasło.|  
-|`CertificateFile`|Opcjonalne `String` parametru.<br /><br /> Pobiera lub ustawia ścieżkę pliku certyfikatu.|  
-|`CertificateThumbprint`|Opcjonalne `String` parametru.<br /><br /> Pobiera lub ustawia odcisk palca certyfikatu.|  
-|`KeyFile`|Opcjonalne `String` parametru.<br /><br /> Pobiera lub ustawia ścieżkę pliku klucza.|  
-|`ResolvedKeyContainer`|Opcjonalne `String` parametru wyjściowego.<br /><br /> Pobiera lub ustawia rozpoznać kontener klucza.|  
-|`ResolvedKeyFile`|Opcjonalne `String` parametru wyjściowego.<br /><br /> Pobiera lub ustawia rozpoznać pliku klucza.|  
-|`ResolvedThumbprint`|Opcjonalne `String` parametru wyjściowego.<br /><br /> Pobiera lub ustawia rozpoznać odcisk palca.|  
-|`ShowImportDialogDespitePreviousFailures`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, Pokaż okno dialogowe Importuj pomimo poprzednie błędy.|  
-|`SuppressAutoClosePasswordPrompt`|Opcjonalne `Boolean` parametru.<br /><br /> Pobiera lub ustawia wartość logiczna określająca, czy okno dialogowe monitu o hasło powinno nie automatycznego zamykania.|  
+|`AutoClosePasswordPromptShow`|Opcjonalnie `Int32` parametru.<br /><br /> Pobiera lub ustawia czas, w ciągu kilku sekund, aby wyświetlić liczbę w dół wiadomości.|  
+|`AutoClosePasswordPromptTimeout`|Opcjonalnie `Int32` parametru.<br /><br /> Pobiera lub ustawia czas, w ciągu kilku sekund oczekiwania przed zamknięciem okna dialogowego monitu hasła.|  
+|`CertificateFile`|Opcjonalnie `String` parametru.<br /><br /> Pobiera lub ustawia ścieżkę do pliku certyfikatu.|  
+|`CertificateThumbprint`|Opcjonalnie `String` parametru.<br /><br /> Pobiera lub ustawia odcisk palca certyfikatu.|  
+|`KeyFile`|Opcjonalnie `String` parametru.<br /><br /> Pobiera lub ustawia ścieżkę pliku klucza.|  
+|`ResolvedKeyContainer`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Pobiera lub ustawia rozwiązane kontener kluczy.|  
+|`ResolvedKeyFile`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Pobiera lub ustawia rozpoznać pliku klucza.|  
+|`ResolvedThumbprint`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Pobiera lub ustawia odcisk palca certyfikatu rozwiązane.|  
+|`ShowImportDialogDespitePreviousFailures`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, Pokaż Importuj okno dialogowe, niezależnie od wcześniejszych niepowodzeń.|  
+|`SuppressAutoClosePasswordPrompt`|Opcjonalnie `Boolean` parametru.<br /><br /> Pobiera lub ustawia wartość logiczną, która określa, czy okno dialogowe monitu hasła powinna nie automatycznego zamykania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

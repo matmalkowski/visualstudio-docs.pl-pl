@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808445"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152503"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -116,7 +116,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
     2.  Na **projektu** menu, kliknij przycisk **Dodawanie modułu**, a następnie kliknij przycisk **Dodaj**.  
   
-    3.  W pliku kodu Module1.vb Dodaj następujący kod.  
+    3.  W *Module1.vb* plik kodu, Dodaj następujący kod.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
      Visual C# tylko dla deweloperów:  
   
-     Otwórz plik kodu w pliku Program.cs i Dodaj następujący kod.  
+     Otwórz *Program.cs* plik kodu i Dodaj następujący kod.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
  Ta procedura pokazuje, jak utworzyć niestandardowy pakiet programu inicjującego, tworząc następujące dokumenty:  
   
--   Product.xml manifest pliku, aby opisać zawartość program inicjujący.  
+-   A *product.xml* pliku manifestu do opisania zawartości program inicjujący.  
   
--   Package.xml plik manifestu do listy lokalizacji określonych aspektów pakietu, takich jak ciągi i postanowienia licencyjne dotyczące oprogramowania.  
+-   A *package.xml* plik manifestu, aby wyświetlić listę lokalizacji określonych aspektów pakietu, takich jak ciągi i postanowienia licencyjne dotyczące oprogramowania.  
   
 -   Dokument postanowienia licencyjne dotyczące oprogramowania.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1: Można utworzyć katalogu programu inicjującego  
   
-1.  Utwórz katalog o nazwie **UpdateConsentDialog** w %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1.  Utwórz katalog o nazwie **UpdateConsentDialog** w *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Uprawnienia administracyjne, aby utworzyć ten folder może być konieczne.  
   
-2.  W katalogu UpdateConsentDialog Utwórz podkatalog o nazwie en.  
+2.  W *UpdateConsentDialog* katalogu, Utwórz podkatalog o nazwie *en*.  
   
     > [!NOTE]
     >  Utwórz nowy katalog dla poszczególnych ustawień regionalnych. Na przykład można dodać podkatalogów dla ustawień regionalnych fr i "de". Te katalogi zawierałoby ciągi francuskim i niemieckim i pakietów językowych, jeśli to konieczne.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Aby utworzyć plik manifestu product.xml  
   
-1.  Utwórz plik tekstowy o nazwie `product.xml`.  
+1.  Utwórz plik tekstowy o nazwie *product.xml*.  
   
-2.  W pliku product.xml Dodaj następujący kod XML. Upewnij się, że nie zastępuj istniejącego kodu XML.  
+2.  W *product.xml* plików, Dodaj następujący kod XML. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3: Aby utworzyć package.xml manifest plików i oprogramowania postanowienia licencyjne  
   
-1.  Utwórz plik tekstowy o nazwie `package.xml`.  
+1.  Utwórz plik tekstowy o nazwie *package.xml*.  
   
-2.  W pliku package.xml Dodaj następujący kod XML do definiowania ustawień regionalnych i zawierają postanowienia licencyjne dotyczące oprogramowania. Upewnij się, że nie zastępuj istniejącego kodu XML.  
+2.  W *package.xml* plików, Dodaj następujący kod XML do definiowania ustawień regionalnych i zawierają postanowienia licencyjne dotyczące oprogramowania. Upewnij się, że nie zastępuj istniejącego kodu XML.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 3.  Zapisz plik do podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
   
-4.  Utwórz dokument o nazwie eula.rtf dla postanowienia licencyjne dotyczące oprogramowania.  
+4.  Utwórz dokument o nazwie *eula.rtf* na postanowienia licencyjne dotyczące oprogramowania.  
   
     > [!NOTE]
     >  Postanowienia licencyjne dotyczące oprogramowania powinny zawierać informacje dotyczące licencji, gwarancji, zobowiązania i prawa miejscowego. Pliki te powinny być specyficzne dla ustawień regionalnych, dlatego upewnij się, że plik jest zapisywany w formacie, który obsługuje znaki MBCS lub UNICODE. Zapoznaj się z działem prawnym o zawartości postanowienia licencyjne dotyczące oprogramowania.  
   
-5.  Zapisz dokument w podkatalogu en w katalogu program inicjujący UpdateConsentDialog.  
+5.  Zapisz dokument w podkatalogu en *UpdateConsentDialog* katalogu programu inicjującego.  
   
-6.  Jeśli to konieczne, Utwórz nowy plik manifestu package.xml i nowy dokument eula.rtf dla postanowienia licencyjne dotyczące oprogramowania dla poszczególnych ustawień regionalnych. Na przykład jeśli utworzono podkatalogów dla ustawień regionalnych fr i "de" tworzą pliki manifestu package.xml oddzielnym i postanowień licencyjnych dotyczących oprogramowania i zapisują je do podkatalogów fr i "de".  
+6.  Jeśli to konieczne, Utwórz nową *package.xml* manifestu plik i nowy *eula.rtf* dokument na potrzeby postanowienia licencyjne dotyczące oprogramowania dla poszczególnych ustawień regionalnych. Na przykład jeśli utworzono podkatalogów dla ustawień regionalnych fr i "de" tworzą pliki manifestu package.xml oddzielnym i postanowień licencyjnych dotyczących oprogramowania i zapisują je do podkatalogów fr i "de".  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Ustaw aktualizowanie zgody aplikacji jako warunek wstępny  
  W programie Visual Studio można ustawić zgody aktualizacji aplikacji jako warunek wstępny.  
@@ -260,7 +260,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 4.  Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
   
-5.  Uruchom Setup.exe program.  
+5.  Uruchom *Setup.exe* program.  
   
      Program instalacyjny zawiera umowy licencyjnej okna dialogowego zgody aktualizacji oprogramowania.  
   
@@ -286,7 +286,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 4.  Jeśli dane wyjściowe publikowania nie jest otwierany automatycznie, przejdź do publikowanych danych wyjściowych.  
   
-5.  Uruchom Setup.exe program.  
+5.  Uruchom *Setup.exe* program.  
   
      Program instalacyjny zawiera umowy licencyjnej okna dialogowego zgody aktualizacji oprogramowania.  
   
@@ -300,9 +300,9 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 8.  Jeśli pojawi się okno dialogowe instalowanie aplikacji, kliknij przycisk **zainstalować**.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
  [Porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
  [Porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)   
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+ [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

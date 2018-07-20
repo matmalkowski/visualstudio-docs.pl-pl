@@ -1,5 +1,5 @@
 ---
-title: Wiązania punktów przerwania | Dokumentacja firmy Microsoft
+title: Tworzenie powiązań punktów przerwania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,48 +13,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: efda5969e7022f8c44d7060a29ee31fbc5968d96
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104154"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153449"
 ---
-# <a name="binding-breakpoints"></a>Wiązania punktów przerwania
-Jeśli punkt przerwania ustawiony przez użytkownika, prawdopodobnie naciskając F9 IDE formulates żądanie i wyświetla monit o sesji debugowania, aby utworzyć punkt przerwania.  
+# <a name="bind-breakpoints"></a>Powiąż punktów przerwania
+Jeśli użytkownik ustawia punkt przerwania, być może, naciskając klawisz **F9**, IDE formulates żądanie i wyświetla monit o sesji debugowania, aby utworzyć punkt przerwania.  
   
-## <a name="setting-a-breakpoint"></a>Ustawienia punktu przerwania  
- Ustawienia punktu przerwania jest procesem dwuetapowym, ponieważ kod lub danych dotyczy punkt przerwania może jeszcze być niedostępne. Najpierw punktu przerwania musi być opisany, a następnie udostępnieniu kodu lub danych, jej musi być powiązana z tego kodu lub danych, w następujący sposób:  
+## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania  
+ Ustawienie punktu przerwania jest procesem dwuetapowym, ponieważ kod lub wpływ punkt przerwania danych mogą jeszcze być niedostępne. Najpierw należy opisać punkt przerwania, a następnie kodu lub danych staje się dostępny, jego musi być powiązana z tego kodu lub danych, w następujący sposób:  
   
-1.  Punkt przerwania zażąda aparatami debugowania odpowiednich (DEs), a następnie punkt przerwania jest powiązane z kodu lub danych stanie się dostępny.  
+1.  Punkt przerwania zostanie wywołana z silniki debugowania odpowiednie (DEs), a następnie punkt przerwania jest powiązany z kodu lub danych, po jej udostępnieniu.  
   
-2.  Żądanie przerwania jest wysyłane do sesji debugowania, który wysyła je do wszystkich odpowiednich DEs. Wszelkie DE, który wybiera do obsługi punktu przerwania tworzy odpowiadającego oczekujących punktu przerwania.  
+2.  Żądanie przerwania jest wysyłane do sesji debugowania i wysyła je do wszystkich odpowiednich DEs. Wszelkie DE, który wybiera do obsługi punktu przerwania tworzy odpowiedni oczekujących punktów przerwania.  
   
-3.  Sesja debugowania zbiera oczekujących punktów przerwania i wysyła je z powrotem do pakietu debugowania (składnik debugowania programu Visual Studio).  
+3.  Sesja debugowania umożliwia zbieranie informacji o oczekujących punktów przerwania i wysyła je do pakietu debugowania (składnik debugowania programu Visual Studio).  
   
-4.  Pakiet debugowania monituje sesji debugowania, aby powiązać oczekującym punktem przerwania kodu lub danych. Sesja debugowania wysyła to żądanie do wszystkich odpowiednich DEs.  
+4.  Debugowanie pakietu monituje o sesji debugowania, aby powiązać oczekujący punkt przerwania z kodu lub danych. Sesja debugowania wysyła to żądanie do wszystkich odpowiednich DEs.  
   
-5.  Jeśli DE jest w stanie powiązać punktu przerwania, wysyła się, że punkt przerwania powiązane zdarzenia do sesji debugowania. Jeśli nie, zamiast tego wysyła zdarzenie błędu punktu przerwania.  
+5.  Jeśli DE jest w stanie powiązać punkt przerwania, wysyła to, że punkt przerwania powiązane zdarzenia do sesji debugowania. W przeciwnym razie zamiast wysyła zdarzenie błąd punktu przerwania.  
   
-## <a name="pending-breakpoints"></a>Oczekujące punkty przerwania  
- Oczekującym punktem przerwania można powiązać z wielu lokalizacji kodu. Na przykład wiersz kodu źródłowego dla szablonów języka C++ można powiązać z każdej kolejny kodu wygenerowane z szablonu. Sesja debugowania zdarzenia można użyć w punktu przerwania powiązanej wyliczyć kontekstów kod powiązany punkt przerwania w czasie, którego wysłano zdarzenie. Więcej kontekstów kod może być powiązana później, więc DE może wysłać zdarzenia dla każdego żądania bind powiązany wiele punktów przerwania. Jednak URZ należy wysłać tylko jedno zdarzenie błędu punktu przerwania na żądanie powiązania.  
+## <a name="pending-breakpoints"></a>Oczekujących punktów przerwania  
+ Oczekujący punkt przerwania można powiązać wiele lokalizacji kodu. Na przykład wiersz kodu źródłowego dla szablonów języka C++ można powiązać każdy sekwencji kod generowany na podstawie szablonu. Sesja debugowania zdarzenia można użyć w punkt przerwania powiązanej wyliczyć kontekstów kod powiązany punkt przerwania w czasie, w którym zdarzenie zostało wysłane. Więcej kontekstów kod może być powiązana później, więc DE może wysłać zdarzenia dla każdego żądania powiązania powiązany wiele punkt przerwania. Jednak DE należy wysłać tylko jedno zdarzenie błędu punkt przerwania na żądania powiązania.  
   
 ## <a name="implementation"></a>Implementacja  
- Programowo, pakiet debugowania wywołanie sesji debugowania Menedżera (SDM) i nadaje mu [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfejs, który opakowuje [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) struktury, która opisuje punkt przerwania do ustawienia. Mimo że punktów przerwania może mieć wiele form, ostatecznie rozpoznają kontekst kodu lub danych.  
+ Programowo, debugowanie pakietu wywołuje debugowania sesji manager (SDM) i nadaje jej [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfejsu, który otacza [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) struktury, która opisuje punkt przerwania do ustawienia. Mimo że punkty przerwania może mieć wiele form, ostatecznie rozpoznają do kontekstu kodu lub danych.  
   
- SDM przekazuje tego wywołania do każdego odpowiednich DE przez wywołanie jego [CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) metody. Jeśli do obsługi punktu przerwania DE, tworzy i zwraca [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu. SDM zbierania tych interfejsów i przekazuje je do debugowania pakiet jako pojedynczy `IDebugPendingBreakpoint2` interfejsu.  
+ SDM przekazuje tego wywołania do każdego odpowiedniego DE przez wywołanie jego [CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) metody. Jeśli wybierze DE do obsługi punktu przerwania, tworzy i zwraca [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu. Model SDM umożliwia zbieranie informacji o tych interfejsów i przekazuje je do pakietu debugowania jako pojedynczy `IDebugPendingBreakpoint2` interfejsu.  
   
  Do tej pory zostały wygenerowane żadne zdarzenia.  
   
- Pakiet debugowania podejmuje próbę powiązać oczekującym punktem przerwania kodu lub danych przez wywołanie metody [powiązać](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md), który jest implementowany przez Niemcy.  
+ Debugowanie pakietu podejmuje oczekujący punkt przerwania można powiązać kod lub dane, wywołując [powiązać](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md), który jest implementowany przez DE.  
   
- Jeśli punkt przerwania jest powiązany, wysyła DE [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfejsu zdarzenia do pakietu debugowania. Używa pakietu debugowania wyliczyć wszystkie konteksty kodu (lub kontekstu danych) w tym interfejsie powiązany punkt przerwania przez wywołanie metody [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md), która zwraca co najmniej jeden [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfejsów. [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) interfejsu zwraca [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu i [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) zwraca [BP_ RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) związkiem zawierającym kod lub dane kontekstu.  
+ Jeśli punkt przerwania jest związany, DE wysyła [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfejsu zdarzenia do pakietu debugowania. Używa pakietu debugowania, ten interfejs, można wyliczyć wszystkie konteksty kodu (lub kontekstu danych jednego) powiązany punkt przerwania, wywołując [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md), która zwraca co najmniej jeden [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfejsów. [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) interfejsu zwraca [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu, a [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) zwraca [BP_ RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) Unii zawierająca kontekst kodu lub danych.  
   
- Jeśli nie można powiązać punktu przerwania DE, wysyła pojedynczy [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) interfejsu zdarzenia do pakietu debugowania. Pakiet debugowania pobiera typ błędu (błąd lub ostrzeżenie) i komunikat informacyjny wywołując [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md), a następnie [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) i [ GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). To polecenie zwróci [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) strukturę, która zawiera typ błędów i komunikatów.  
+ Jeśli nie można powiązać punkt przerwania jest DE, wysyła pojedynczy [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) interfejsu zdarzenia do pakietu debugowania. Debugowanie pakietu pobiera typ błędu (błąd lub ostrzeżenie) i komunikat informacyjny, wywołując [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md), a następnie [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) i [ GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md). Spowoduje to zwrócenie [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) strukturę, która zawiera typ błędu i komunikatu.  
   
- Jeśli URZ obsługuje punkt przerwania, ale nie można powiązać ją, zwracany jest błąd typu `BPET_TYPE_ERROR`. Pakiet debugowania odpowiada wyświetlania okna dialogowego błędu, i IDE umieszcza symbolu wykrzyknika wewnątrz symbolu punktu przerwania na lewo od wiersza kodu źródłowego.  
+ Jeśli DE obsługuje punkt przerwania, ale nie można powiązać, zwracany jest błąd typu `BPET_TYPE_ERROR`. Debugowanie pakietu odpowiada wyświetlania okna dialogowego błędu, a następnie IDE umieszcza symbol wykrzyknika wewnątrz symbol punktu przerwania po lewej stronie wiersza kodu źródłowego.  
   
- Jeśli URZ obsługuje punkt przerwania, nie można powiązać ją, ale niektóre inne DE może powiązać ją, zwracana jest ostrzeżenie. IDE odpowiada przez umieszczenie symbolu zapytania wewnątrz symbolu punktu przerwania na lewo od wiersza kodu źródłowego.  
+ Jeśli DE obsługuje punkt przerwania, nie można powiązać, lecz innej DE może powiązać go, zwracana jest ostrzeżenie. IDE odpowiada, umieszczając glif pytanie wewnątrz symbol punktu przerwania po lewej stronie wiersza kodu źródłowego.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

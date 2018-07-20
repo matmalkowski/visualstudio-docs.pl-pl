@@ -1,5 +1,5 @@
 ---
-title: Przyciski elementu | Dokumentacja firmy Microsoft
+title: Przyciski Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097653"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155415"
 ---
-# <a name="buttons-element"></a>Element przycisków
-Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezentują poszczególnych poleceń.  
+# <a name="buttons-element"></a>Buttons, element
+Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentują poszczególne polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,7 +40,7 @@ Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezen
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
@@ -53,7 +53,7 @@ Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezen
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -69,6 +69,6 @@ Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezen
 </Buttons>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

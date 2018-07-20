@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: f55165e77b7bde7d922fd1544e1e8cc9959bc16c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35676220"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152132"
 ---
 # <a name="edit-load-test-scenarios"></a>Edytowanie scenariuszy testu obciążenia
 
@@ -27,7 +27,7 @@ Na przykład użytkownik może testować witrynę e-commerce, która ma internet
 
 ## <a name="scenario-components"></a>Składniki scenariusza
 
-W dalszej części edytora testu obciążenia można modyfikować wszystkie ustawienia, które można określić podczas tworzenia testu obciążeniowego, i opcje konfiguracji początkowej. Można również dodać obsługę nowych scenariuszy, parametrów uruchomieniowych i zbiory liczników do testu obciążeniowego.
+Wszelkie opcje konfiguracji początkowej i ustawienia określić po utworzeniu testu obciążenia, można zmodyfikować później w **edytora testu obciążenia**. Można również dodać obsługę nowych scenariuszy, parametrów uruchomieniowych i zbiory liczników do testu obciążeniowego.
 
 ![Scenariusze testów obciążenia](../test/media/loadtesteditinscenarios.png)
 
@@ -41,21 +41,21 @@ Scenariusze zawierają następujące składniki:
 |Test mieszany|Test mieszany jest wybór Web wydajności i testy jednostkowe wchodzących w skład tego scenariusza i dystrybucji tych testów.|
 |Mieszany profil sieciowy|Symuluje wirtualnych użytkownicy mieli dostęp do witryny sieci Web za pomocą różnych połączeń sieciowych. Mieszany profil sieciowy oferuje opcje, które obejmują sieć LAN, modem kablowy i inne opcje.|
 
-Scenariusz ma kilka właściwości, które można edytować za pomocą edytora testu obciążenia. Aby uzyskać więcej informacji, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+Scenariusz ma kilka właściwości, które można edytować za pomocą **edytora testu obciążenia**. Aby uzyskać więcej informacji, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
 |-----------|-----------------------|
-|**Dodaj sztuczne z reakcji człowieka przerw w tym scenariuszu:** czasy reakcji służą do symulowania zachowań ludzkich, który powoduje, że osoby do interakcji z witryną sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci Web i między poszczególnymi iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążeniowym może być przydatne przy tworzeniu bardziej dokładnych symulacji obciążenia.|-   [Edytowanie czasów reakcji w celu symulacji witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md)|
-|**Określ liczbę użytkowników wirtualnych dla danego scenariusza:** można skonfigurować właściwości wzorca obciążenia, aby określić, jak symulowane obciążenie użytkownika jest korygowane w trakcie testu obciążenia. Możesz uzyskać trzy wbudowane wzorce ładowania: stałe, etapu i ukierunkowane na cel. Możesz wybrać wzorzec obciążenia i dostosować właściwości do odpowiednich poziomów dla swoich celów testu obciążenia.|-   [Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
+|**Dodaj sztuczne z reakcji człowieka przerw w tym scenariuszu:** czasy reakcji służą do symulowania zachowań ludzkich, który powoduje, że osoby do interakcji z witryną sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci Web i między poszczególnymi iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążeniowym może być przydatne przy tworzeniu bardziej dokładnych symulacji obciążenia.|-   [Edytowanie czasów reakcji w celu symulowania witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md)|
+|**Określ liczbę użytkowników wirtualnych dla danego scenariusza:** można skonfigurować właściwości wzorca obciążenia, aby określić, jak symulowane obciążenie użytkownika jest korygowane w trakcie testu obciążenia. Możesz uzyskać trzy wbudowane wzorce ładowania: stałe, etapu i ukierunkowane na cel. Możesz wybrać wzorzec obciążenia i dostosować właściwości do odpowiednich poziomów dla swoich celów testu obciążenia.|-   [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Konfiguruj prawdopodobieństwo, że użytkownik wirtualny uruchomi testu w scenariuszu:** możesz użyć testu mieszanego, który określa prawdopodobieństwo, że użytkownik wirtualny uruchomi dany test w scenariuszu testu obciążenia. Dzięki temu można bardziej realistycznie symulowanie obciążenia. Zamiast tylko jedego przepływu pracy za pośrednictwem aplikacji, może mieć wiele przepływów pracy, który jest większym zbliżeniem tego jak użytkownicy końcowi są wzajemne powiązani ze swoimi aplikacjami.|-   [Edytowanie modeli testów mieszanych](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
-|**Dodaj lub usuń test wydajności lub jednostki sieci Web w scenariuszu testu obciążenia:** można dodawać lub usunąć test wydajności lub jednostki w sieci Web z testu obciążeniowego w scenariuszu. Test obciążenia zawiera jeden lub więcej scenariuszy, z których każdy zawiera jeden lub więcej testów sieci Web wydajności lub jednostki.|-   [Edytowanie mieszanki testów](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
+|**Dodaj lub usuń test wydajności lub jednostki sieci Web w scenariuszu testu obciążenia:** można dodawać lub usunąć test wydajności lub jednostki w sieci Web z testu obciążeniowego w scenariuszu. Test obciążenia zawiera jeden lub więcej scenariuszy, z których każdy zawiera jeden lub więcej testów sieci Web wydajności lub jednostki.|-   [Edytuj test mieszany](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Konfiguruj żądany mieszany profil sieciowy dla danego scenariusza:** za pomocą mieszanego profilu sieciowego, można symulować obciążenia sieci bardziej realistycznie w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu typów siecie zamiast jednego typu sieci. Możesz utworzyć zbliżenie tego jak użytkownicy końcowi są wzajemne powiązani ze swoimi aplikacjami. Model mieszany sieci powinien odzwierciedlać cele tego scenariusza.|-   [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|
-|**Wybierz odpowiednią mieszaną przeglądarkę sieci Web dla danego scenariusza:** za pomocą mieszanego profilu przeglądarki, można symulować obciążenia sieci Web bardziej realistycznie w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu różnorodnych przeglądarek zamiast jednej przeglądarki. Możesz utworzyć zbliżenie przeglądarek, które będą używane z aplikacjami.|-   [Określanie typów przeglądarek sieci Web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
+|**Wybierz odpowiednią mieszaną przeglądarkę sieci Web dla danego scenariusza:** za pomocą mieszanego profilu przeglądarki, można symulować obciążenia sieci Web bardziej realistycznie w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu różnorodnych przeglądarek zamiast jednej przeglądarki. Możesz utworzyć zbliżenie przeglądarek, które będą używane z aplikacjami.|-   [Określanie typów przeglądarek sieci web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Konfiguruj ustawienia iteracji testu dla danego scenariusza:** możesz edytować Scenariusz testów obciążenia do konfigurowania ustawień iteracji testowej przy użyciu edytora Test obciążenia i oknie dialogowym właściwości. Domyślnie scenariusz jest konfigurowany za pomocą bez maksymalnych iteracji testowych. Opcjonalnie można skonfigurować maksymalną liczbę iteracji, w tym scenariuszu i długość przerwy między nimi.|-   [Konfigurowanie iteracji testowych dla scenariuszy](../test/configure-test-iterations-in-a-load-test-scenario.md)|
-|**Konfiguruj ustawienia opóźnienia dla danego scenariusza:** za pomocą edytora testu obciążenia i w oknie właściwości, można określić opóźnienie przed rozpoczęciem scenariusza w teście obciążeniowym. Kiedy warto używać przykład **opóźnienie uruchamiania** właściwość jest, jeśli potrzebujesz jeden scenariusz rozpoczął produkcję elementów, które korzysta inny scenariusz. Można opóźnić scenariusz zużycia w celu umożliwienia scenariuszowi wytwarzania pewnych danych.|-   [Konfigurowanie opóźnień uruchamiania scenariuszy](../test/configure-scenario-start-delays.md)|
-|**Określ komputery zdalne do użycia w scenariuszu testu obciążenia:** po utworzeniu testu obciążenia, można edytować właściwości scenariusza testu obciążenia, aby wskazać, którzy agenci testowi mają zostać uwzględnione. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).|-   [Porady: Określanie agentów testowych do użycia](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
+|**Konfiguruj ustawienia opóźnienia dla danego scenariusza:** Using **edytora testu obciążenia** i **właściwości** oknie można określić opóźnienie przed rozpoczęciem scenariusza w teście obciążeniowym. Kiedy warto używać przykład **opóźnienie uruchamiania** właściwość jest, jeśli potrzebujesz jeden scenariusz rozpoczął produkcję elementów, które korzysta inny scenariusz. Można opóźnić scenariusz zużycia w celu umożliwienia scenariuszowi wytwarzania pewnych danych.|-   [Opóźnień uruchamiania scenariuszy Configureng](../test/configure-scenario-start-delays.md)|
+|**Określ komputery zdalne do użycia w scenariuszu testu obciążenia:** po utworzeniu testu obciążenia, można edytować właściwości scenariusza testu obciążenia, aby wskazać, którzy agenci testowi mają zostać uwzględnione. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).|-   [Porady: Określanie agentów testowych należy użyć](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd1d899d3b3a84af2b07602b959dd031874e972c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571360"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155454"
 ---
-# <a name="troubleshooting-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
-W tym temacie opisano błędy MSBuild, które mogą występować z powodu odwołania problemy i jak można usunąć te błędy.  
+# <a name="troubleshoot-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych w .NET Framework
+W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu odwołania problemy i jak można naprawić te błędy.  
   
-## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ma odwołanie do projektu lub zestawu, którego celem jest inna wersja programu .NET Framework  
- Można tworzyć aplikacje, które odwołują się do projektów lub zestawów, które odnoszą się do różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład można utworzyć aplikację, przeznaczonego dla profilu klienta [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale odwołuje się do zestawu, przeznaczonego dla programu .NET Framework 2.0. Jednak w przypadku utworzenia projektu który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nie można ustawić odwołanie projektu do projektu lub zestawu, który jest przeznaczony dla profilu klienta [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] samej siebie. Aby rozwiązać problem, upewnij się, że aplikacja jest przeznaczony dla profilu lub profilach, które są zgodne z profilem, który jest celem projektów lub zestawów, które odwołuje się do aplikacji.  
+## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ma odwołanie do projektu lub zestawu, który jest przeznaczony dla innej wersji programu .NET Framework  
+ Możesz tworzyć aplikacje odwołujące się do projektów lub zestawów, przeznaczonych dla różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład utworzysz aplikację, który jest przeznaczony dla profilu klienta dla [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale odwołuje się do zestawu, który jest przeznaczony dla .NET Framework 2.0. Jednak jeśli tworzysz projekt, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nie można ustawić odwołania w tym projekcie do projektu lub zestawu, który jest przeznaczony dla profilu klienta dla [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lub [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] sam. Aby naprawić błąd, upewnij się, że aplikacja jest przeznaczony dla profil lub profile, które są zgodne z profilem, który jest określony przez projektów lub zestawów, do których odwołuje się do aplikacji.  
   
-## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Ponownie jest skierowany projektu do innej wersji programu .NET Framework  
- Jeśli zmienisz wersję docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dla aplikacji, Visual Studio zmienia niektórych odwołań, ale być może trzeba ręcznie aktualizować niektórych odwołań. Na przykład jeden z wymienionych błędów mogą wystąpić w przypadku zmiany aplikację docelową [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)] i że aplikacja ma zasoby ani ustawienia, które są oparte na profilu klienta dla [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)].  
+## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Jest ponownie skierowany projektu do innej wersji programu .NET Framework  
+ Jeśli zmienisz wersję docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dla aplikacji, Visual Studio zmieniają niektóre odwołania, ale musisz ręcznie zaktualizować niektóre odwołania. Na przykład jeden z wymienionych wcześniej błędów może wystąpić, jeśli zmienisz aplikację docelową [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)] i że aplikacja ma zasoby lub ustawień, które opierają się na profil klienta [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)].  
   
- Aby obejść ustawienia aplikacji, otwórz **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**, a następnie przeprowadź edycję pliku app.config w edytorze XML programu Visual Studio. Zmiana wersji w ustawieniach, aby dopasować odpowiednią wersję programu .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0 do 2.0.0.0. Podobnie dla aplikacji, która została dodana zasobów, należy otworzyć **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** , rozwiń pozycję **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie przeprowadź edycję pliku Resources.resx w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0.  
+ Aby obejść ustawienia aplikacji, otwórz **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**, a następnie Edytuj *app.config* plik w edytorze XML programu Visual Studio. Zmień wersję w ustawieniach, aby dopasować odpowiednią wersję programu .NET Framework. Na przykład można zmienić ustawienie wersji z 4.0.0.0, aby 2.0.0.0 lub nowszej. Podobnie, dla aplikacji, która została dodana zasobów, należy otworzyć **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** , rozwiń pozycję **mój projekt** (Visual Basic) lub **Właściwości** (C#), a następnie Edytuj *Resources.resx* plik w edytorze XML programu Visual Studio. Zmień ustawienie wersji z 4.0.0.0 na 2.0.0.0 lub nowszej.  
   
- Jeśli aplikacja ma zasoby, takie jak ikony lub mapy bitowe lub ustawienia, takie jak parametry połączenia danych, można również rozwiązać błąd, usuwając wszystkie elementy na **ustawienia** strony **projektanta projektu**, a następnie ponowne dodanie wymaganych ustawień.  
+ Jeśli aplikacja ma zasoby, takie jak ikony lub mapy bitowe lub ustawienia, takie jak parametry połączenia danych, można również rozwiązać błąd, usuwając wszystkie elementy na **ustawienia** stronie **projektanta projektu**, a następnie ponowne dodanie wymaganych ustawień.  
   
-## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework-and-references-do-not-resolve"></a>Ponownie jest skierowany projektu do innej wersji programu .NET Framework i nie rozpoznać odwołania  
- Jeśli przekierowanie projektu do innej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], referencje mogą nie być rozpoznawane poprawnie w niektórych przypadkach. Jawne pełni kwalifikowanego odwołania do zestawów często przyczyną tego problemu, ale można go rozpoznać Usuwanie odwołań, które nie umożliwiają rozwiązania, a następnie dodanie ich do projektu. Alternatywnie można edytować pliku projektu w celu zastąpienia odwołań. Najpierw należy usunąć odwołania mają następującą postać:  
+## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework-and-references-do-not-resolve"></a>Projekt do innej wersji programu .NET Framework jest ponownie skierowany i odwołania nie został rozwiązany  
+ Jeśli przekierowanie projektu do innej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], odwołaniami mogą nie być rozpoznawane prawidłowo w niektórych przypadkach. Jawne w pełni kwalifikowanego odwołania do zestawów często przyczyną tego problemu, ale można go naprawić przez usunięcie odwołania, które nie umożliwiają rozwiązania, a następnie dodanie ich do projektu. Alternatywnie można edytować plik projektu w celu zastąpienia odwołań. Najpierw należy usunąć odwołania następującą postać:  
   
 ```xml  
 <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />  
@@ -53,10 +53,10 @@ W tym temacie opisano błędy MSBuild, które mogą występować z powodu odwoł
 ```  
   
 > [!NOTE]
->  Po zamknięciu i ponownie otwórz projekt, należy również można odbudować go, aby poprawnie rozpoznać wszystkich odwołań.  
+>  Po zamknięciu i ponownym otwarciu projektu powinien również można odbudować ją, aby zapewnić poprawnie rozpoznać wszystkie odwołania.  
   
-## <a name="see-also"></a>Zobacz też  
- [Porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET framework Client Profile](/dotnet/framework/deployment/client-profile)   
- [Przeznaczonych dla określonej wersji platformy .NET](../ide/targeting-a-specific-dotnet-framework-version.md)   
- [Przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md)
+## <a name="see-also"></a>Zobacz także  
+ [Porady: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Profil klienta .NET framework](/dotnet/framework/deployment/client-profile)   
+ [Przeznaczone dla określonej wersji środowiska .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
+ [Wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)

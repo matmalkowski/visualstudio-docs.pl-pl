@@ -3,7 +3,7 @@ title: Mieszane kodu i brakujące informacje w oknie stosu wywołań | Dokumenta
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -25,21 +25,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f0a0822dc99eccea4ddd621ae622a112e0909bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480231"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151989"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Kod mieszany i brakujące informacje w oknie stosu wywołań
-Z powodu różnic między stosy wywołań do kodu zarządzanego i natywnego debuger zawsze nie można wyświetlić stosu wywołań pełną, gdy mieszane typy kodu. Gdy natywny kod wywołuje kod zarządzany, możesz zauważyć następujące rozbieżności w **stos wywołań** okno:  
+Ze względu na różnice stosy wywołań dla kodu zarządzanego i natywnego debuger zawsze nie można wyświetlić pełny stos wywołań, gdy kod wpisuje mieszanego. Gdy kod natywny wywołuje kod zarządzany, możesz zauważyć poniższe niezgodności w **stos wywołań** okna:  
   
--   Może brakować natywną bezpośrednio nad kodu zarządzanego z **stos wywołań** okna. Aby uzyskać więcej informacji, zobacz [porady: wychodzenia z kodu zarządzanego gdy ramek natywnych brakuje oknie stosu wywołań](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+-   Ramka natywna bezpośrednio nad kod zarządzany może być brak **stos wywołań** okna. Aby uzyskać więcej informacji, zobacz [porady: wychodzenia z kodu zarządzanego, gdy ramek natywnych brakuje oknie stosu wywołań](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Do uruchomienia poza debugerem, aplikacje w trybie mieszanym **stos wywołań** okna mogą wyświetlać tylko kod zarządzany, a żaden z ramek natywnych nie będzie widoczna.  
+-   Dla aplikacji w trybie mieszanym uruchomiony poza debugerem **stos wywołań** okno może być wyświetlany tylko kodu zarządzanego i Brak ramek natywnych będą widoczne.  
   
- Obu przypadkach są stosunkowo rzadko. W najbardziej macierzystych wywołań do kodu zarządzanego stosy wywołań są wyświetlane poprawnie.  
+ Oba przypadki są stosunkowo rzadkie. W najbardziej macierzystych wywołań do kodu zarządzanego stosy wywołań są poprawnie wyświetlane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md)

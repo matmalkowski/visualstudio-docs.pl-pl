@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd683ee7edc2a8641d38ef84d69c30badd5b14db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 476e711f8b2e65652bb750c4933a5dfa98fbbf63
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097214"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153738"
 ---
 # <a name="archive"></a>Archiwum
-Ta sekcja zawiera omówienie technologii rozszerzalności programu Visual Studio nadal są obsługiwane, ale mają zastępczy technologie, które są nowsze.  
+Ta sekcja zawiera dyskusje technologii rozszerzalności programu Visual Studio, nadal są obsługiwane, ale mają zastąpienie technologie, które są nowsze.  
   
 ## <a name="legacy-interfaces-in-the-editor"></a>Interfejsy starszej wersji w edytorze  
- W tej sekcji opisano sposób dostępu Edytor interfejsów w starszej wersji (wektory inicjacji *), a nie nowsze kodu MEF: [starszych interfejsów w edytorze](../extensibility/legacy-interfaces-in-the-editor.md).  
+ W tej sekcji wyjaśniono, jak dostęp do edytora za pomocą starszej wersji (wektory *) interfejsów, a nie nowszego kodu MEF: [interfejsy starszej wersji, w edytorze](../extensibility/legacy-interfaces-in-the-editor.md).  
   
-## <a name="tool-windows-in-the-registry"></a>Narzędzia systemu Windows w rejestrze  
- W tej sekcji wyjaśniono, jak skonfigurować okna narzędzi bezpośrednio w rejestrze: [okna narzędzi w rejestrze](../extensibility/tool-windows-in-the-registry.md).
+## <a name="tool-windows-in-the-registry"></a>Okna narzędzi w rejestrze  
+ W tej sekcji wyjaśniono, jak skonfigurować okna narzędzi bezpośrednio w rejestrze: [okien narzędzi w rejestrze](../extensibility/tool-windows-in-the-registry.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: uwzględnianie wstępnie wymaganych składników za pomocą aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -10,46 +10,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cdcdb89896662a6d4e474c7df2ee09cea4d8bf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3f961229e60cb291efdd7630f9df10e162c2f17b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559062"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153845"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
-Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy najpierw pobrać pakietów Instalatora dla tych wymagań wstępnych na komputerze deweloperskim. Podczas publikowania aplikacji i wybierz **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co Moja aplikacja**, wystąpi błąd, jeśli pakietów Instalatora nie ma w **pakiety** folderu.  
+Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, musisz najpierw pobrać pakiety instalacyjne tych wstępnie wymaganych składników na komputerze dewelopera. Po opublikowaniu aplikacji i wybraniu **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co aplikację**, wystąpi błąd, jeśli pakiety instalacyjne nie są w **pakietów** folderu.  
   
 > [!NOTE]
->  Aby dodać pakiet Instalatora programu .NET Framework, zobacz [.NET Framework — przewodnik wdrażania dla deweloperów](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+>  Aby dodać pakiet instalacyjny dla programu .NET Framework, zobacz [.NET Framework — przewodnik wdrażania dla deweloperów](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> Aby dodać pakiet Instalatora przy użyciu plik Package.xml  
+##  <a name="Package"></a> Aby dodać pakiet instalacyjny przy użyciu pliku Package.xml  
   
-1.  Otwórz w Eksploratorze plików **pakiety** folderu.  
+1.  W Eksploratorze plików otwórz **pakietów** folderu.  
   
-     Domyślnie ścieżka to C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages w 32-bitowym systemie C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages w 64-bitowym systemie.  
+     Domyślna ścieżka to *14.0\SDK\Bootstrapper\Packages C:\Program Files\Microsoft Visual Studio* w systemie 32-bitowe i *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* w systemie 64-bitowych.  
   
-2.  Otwórz folder wymagania wstępne, które chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **en** w języku angielskim).  
+2.  Otwórz folder wstępnie wymaganego składnika, który chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **en** w języku angielskim).  
   
-3.  Otwórz w Notatniku **plik Package.xml** pliku.  
+3.  Otwórz w Notatniku *Package.xml* pliku.  
   
-4.  Zlokalizuj **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**i skopiuj adres URL. Obejmują **LinkID** części.  
+4.  Znajdź **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**, a następnie skopiuj adres URL. Obejmują **LinkID** części.  
   
     > [!NOTE]
-    >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** plików w folderze głównym dla wymagań wstępnych i Znajdź **fwlink** ciągu.  
+    >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** pliku w folderze głównym wstępnie wymaganego składnika i zlokalizuj **fwlink** ciągu.  
   
     > [!IMPORTANT]
     >  Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele **nazwa** elementy zawierają **fwlink**, pozostałe kroki należy powtórzyć dla każdego z nich.  
   
-5.  Wklej adres URL na pasku adresu przeglądarki, a następnie, gdy zostanie wyświetlony monit o uruchomienie lub zapisanie, wybierz **zapisać**.  
+5.  Wklej adres URL w pasku adresu przeglądarki, a następnie, gdy zostanie wyświetlony monit o uruchomienie lub zapisanie, wybierz **Zapisz**.  
   
      W tym kroku plik instalatora jest pobierany na komputer.  
   
 6.  Skopiuj plik do folderu głównego dla wstępnie wymaganego składnika.  
   
-     Na przykład dla wstępnie wymaganego składnika Instalator Windows 4.5 skopiuj plik do folderu \Packages\WindowsInstaller4_5.  
+     Na przykład dla wstępnie wymaganego programu Windows Installer 4.5 skopiuj plik do *\Packages\WindowsInstaller4_5* folderu.  
   
      Teraz można dystrybuować pakiet instalacyjny z aplikacją.  
   
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>Zobacz także  
+ [Porady: Instalowanie wymagania wstępne przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a30dde405c172a1bf29f69edf4e3b9d1b79eee
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327362"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154983"
 ---
-# <a name="property-element-msbuild"></a>Property — Element (MSBuild)
-Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każdej właściwości używane w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `PropertyGroup` elementu.  
+# <a name="property-element-msbuild"></a>Property — element (MSBuild)
+Zawiera użytkownika zdefiniowane nazwy i wartości właściwości. Dla każdej właściwości używana w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `PropertyGroup` elementu.  
 
  \<Project>  
  \<PropertyGroup>  
@@ -46,7 +46,7 @@ Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każd
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do sprawdzenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -55,7 +55,7 @@ Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każd
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element GROUPING dla właściwości.|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element grupujący właściwości.|  
 
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest opcjonalna.  
@@ -63,7 +63,7 @@ Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każd
  Ten tekst Określa wartość właściwości i może zawierać kod XML.  
 
 ## <a name="remarks"></a>Uwagi  
- Nazwy właściwości są ograniczone do tylko znaki ASCII. Wartości właściwości odwołuje się do projektu wprowadzania nazwy właściwości między "`$(`"i"`)`". Na przykład `$(builddir)\classes` rozwiąże "build\classes", jeśli `builddir` właściwość ma wartość `build`. Aby uzyskać więcej informacji na temat właściwości, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
+ Nazwy właściwości są ograniczone do tylko znaki ASCII. Wartości właściwości są przywoływane w projekcie, umieszczając nazwę właściwości między "`$(`"i"`)`". Na przykład `$(builddir)\classes` może prowadzić do *build\classes*, jeśli `builddir` właściwość ma wartość `build`. Aby uzyskać więcej informacji na temat właściwości, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).  
 
 ## <a name="example"></a>Przykład  
  Poniższy kod ustawia `Optimization` właściwości `false` i `DefaultVersion` właściwości `1.0` Jeśli `Version` właściwość jest pusta.  
@@ -75,6 +75,6 @@ Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każd
 </PropertyGroup>  
 ```  
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

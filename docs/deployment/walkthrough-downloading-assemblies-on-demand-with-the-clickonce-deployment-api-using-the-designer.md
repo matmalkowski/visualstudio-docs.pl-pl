@@ -19,85 +19,85 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565461"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151519"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Wskazówki: pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce za pomocą Projektanta
-Domyślnie wszystkie zestawy są uwzględniane w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak może być części aplikacji, które są używane przez niewielki zestaw użytkowników. W takim przypadku chcesz pobrać zestawu tylko wtedy, gdy utworzenie jednego z jego typów. Poniższe wskazówki pokazano, jak Oznacz niektóre zestawy w aplikacji jako "opcjonalne", jak pobrać je przy użyciu klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy środowisko uruchomieniowe języka wspólnego wymaga ich.  
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Wskazówki: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant
+Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak może być częścią aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego.  
   
 > [!NOTE]
->  Aplikacja będzie musiał uruchomić w trybie pełnego zaufania, aby użyć tej procedury.  
+>  Aplikacja będzie mieć do uruchamiania w trybie pełnego zaufania, aby użyć tej procedury.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, kliknij przycisk **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-the-projects"></a>Tworzenie projektów  
+## <a name="create-the-projects"></a>Tworzenie projektów  
   
-#### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Aby utworzyć projekt, który używa zestawu na żądanie z programem Visual Studio  
+#### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Aby utworzyć projekt, który używa zestawu na żądanie przy użyciu programu Visual Studio  
   
-1.  Utwórz nowy projekt formularzy systemu Windows w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Na **pliku** menu wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**. Wybierz **biblioteki klas** projektu w oknie dialogowym i nadaj mu nazwę `ClickOnceLibrary`.  
+1.  Utwórz nowy projekt Windows Forms w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Na **pliku** menu wskaż **Dodaj**, a następnie kliknij przycisk **nowy projekt**. Wybierz **biblioteki klas** projektu w oknie dialogowym, a następnie nadaj mu nazwę `ClickOnceLibrary`.  
   
     > [!NOTE]
-    >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić głównej przestrzeni nazw dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.  
+    >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.  
   
-2.  Zdefiniuj klasę o nazwie `DynamicClass` z jedną właściwość o nazwie `Message`.  
+2.  Zdefiniuj klasę o nazwie `DynamicClass` za pomocą pojedynczej właściwości o nazwie `Message`.  
   
      [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
      [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
   
-3.  Wybierz projekt formularzy systemu Windows w **Eksploratora rozwiązań**. Dodaj odwołanie do <xref:System.Deployment.Application> zestawu i projekt odwołuje się do `ClickOnceLibrary` projektu.  
+3.  Wybierz projekt Windows Forms w **Eksploratora rozwiązań**. Dodaj odwołanie do <xref:System.Deployment.Application> zestawu i projekt odwołuje się do `ClickOnceLibrary` projektu.  
   
     > [!NOTE]
-    >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić głównej przestrzeni nazw dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.  
+    >  W języku Visual Basic, zaleca się zmodyfikowanie właściwości projektu, aby zmienić przestrzeń nazw korzenia dla tego projektu do `Microsoft.Samples.ClickOnceOnDemand` lub do wybranej przestrzeni nazw. Dla uproszczenia dwa projekty w tym przewodniku znajdują się w tej samej przestrzeni nazw.  
   
-4.  Kliknij prawym przyciskiem myszy formularz, kliknij przycisk **kod widoku** z menu i dodaj następujące odwołania do formularza.  
+4.  Kliknij prawym przyciskiem myszy formularz, kliknij przycisk **Wyświetl kod** z menu i dodaj następujące odwołania do formularza.  
   
      [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
      [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-5.  Dodaj następujący kod, aby pobrać ten zestaw na żądanie. Ten kod przedstawia sposób mapowania zbiór zestawów na nazwę grupy przy użyciu ogólnego <xref:System.Collections.DictionaryBase.Dictionary%2A> klasy. Ponieważ pobierane są tylko jednego zestawu, w tym przewodniku, istnieje tylko jeden zestaw w naszej grupy. W rzeczywistej aplikacji czy może chcesz pobrać wszystkie zestawy związane z funkcją jednej aplikacji w tym samym czasie. W tabeli mapowania pozwala to łatwo zrobić, kojarząc wszystkie biblioteki dll, które należą do funkcji o nazwie grupy pobierania.  
+5.  Dodaj następujący kod do pobierania tego zestawu na żądanie. Ten kod pokazuje jak mapować zbiór zestawów, do nazwy grupy, za pomocą rodzajowego <xref:System.Collections.DictionaryBase.Dictionary%2A> klasy. Ponieważ pobierane są tylko jednego zestawu, w tym przewodniku, istnieje tylko jeden zestaw w naszej grupy. W rzeczywistej aplikacji prawdopodobnie chcesz pobrać wszystkie zestawy związane z pojedynczej funkcji w aplikacji w taki sposób, w tym samym czasie. W tabeli mapowania można łatwo to zrobić przez skojarzenie wszystkich bibliotek DLL, które należą do funkcji z nazwą grupy pobierania.  
   
      [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
      [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
-6.  Na **widoku** menu, kliknij przycisk **przybornika**. Przeciągnij <xref:System.Windows.Forms.Button> z **przybornika** na formularzu. Kliknij dwukrotnie przycisk i Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń.  
+6.  Na **widoku** menu, kliknij przycisk **przybornika**. Przeciągnij <xref:System.Windows.Forms.Button> z **przybornika** na formularz. Kliknij dwukrotnie przycisk, a następnie dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> programu obsługi zdarzeń.  
   
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>Oznaczanie zestawy jako opcjonalne  
+## <a name="mark-assemblies-as-optional"></a>Oznacz zestawy jako opcjonalne  
   
-#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Aby oznaczyć zestawy jako opcjonalne w aplikacji ClickOnce za pomocą programu Visual Studio  
+#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce za pomocą programu Visual Studio  
   
-1.  Kliknij prawym przyciskiem myszy projekt formularzy systemu Windows w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**. Wybierz **publikowania** kartę.  
+1.  Kliknij prawym przyciskiem myszy projekt Windows Forms w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**. Wybierz **Publikuj** kartę.  
   
 2.  Kliknij przycisk **pliki aplikacji** przycisku.  
   
-3.  Znajdź na liście ClickOnceLibrary.dll. Ustaw **stan publikowania** pole listy rozwijanej, aby **Include**.  
+3.  Znajdź listę dla *ClickOnceLibrary.dll*. Ustaw **stan publikowania** pole listy rozwijanej, aby **Include**.  
   
-4.  Rozwiń węzeł **grupy** pole rozwijane i wybierz **nowy**. Wprowadź nazwę `ClickOnceLibrary` jako nazwę nowej grupy.  
+4.  Rozwiń **grupy** pole listy rozwijanej i wybierz pozycję **New**. Wprowadź nazwę `ClickOnceLibrary` jako nazwę nowej grupy.  
   
 5.  Kontynuować publikowanie aplikacji, zgodnie z opisem w [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Aby oznaczyć zestawy jako opcjonalne w aplikacji ClickOnce za pomocą Generowanie manifestu i edytowania narzędzia — graficznego klienta (MageUI.exe)  
+#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce przy użyciu Manifest Generation i narzędzia do edytowania — graficzny klient (MageUI.exe)  
   
-1.  Tworzenie sieci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty zgodnie z opisem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1.  Utwórz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty zgodnie z opisem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Przed zamknięciem MageUI.exe, wybierz kartę, która zawiera manifest aplikacji w danym wdrożeniu, a na karcie Wybierz **pliki** kartę.  
+2.  Przed jego zamknięciem, MageUI.exe, wybierz kartę która zawiera manifest aplikacji danego wdrożenia, a następnie na karcie Wybierz **pliki** kartę.  
   
-3.  Znajdź na liście plików aplikacji ClickOnceLibrary.dll i ustawić jej **typ pliku** kolumny **Brak**. Aby uzyskać **grupy** wpisz `ClickOnceLibrary.dll`.  
+3.  Znajdź ClickOnceLibrary.dll na liście plików aplikacji i ustaw jego **typ pliku** kolumny **Brak**. Aby uzyskać **grupy** wpisz `ClickOnceLibrary.dll`.  
   
-## <a name="testing-the-new-assembly"></a>Testowanie nowego zestawu  
+## <a name="test-the-new-assembly"></a>Nowy zestaw testów  
   
-#### <a name="to-test-your-on-demand-assembly"></a>Aby przetestować używanemu zestawowi na żądanie  
+#### <a name="to-test-your-on-demand-assembly"></a>Aby przetestować zestaw na żądanie  
   
-1.  Uruchom aplikację z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+1.  Rozpocznij aplikacja wdrożona za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
-2.  Gdy pojawi się główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button>. Powinny pojawić się ciąg w oknie okno komunikatu o treści "Hello, World!"  
+2.  Gdy pojawi się główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button>. Powinien zostać wyświetlony ciąg w okno komunikatu, która odczytuje "Hello, World!"  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:System.Deployment.Application.ApplicationDeployment>

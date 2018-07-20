@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e435b420377c2b8a1cf3c2b85769a418a2c3e7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 81687eac5b109c9e3fd441fa5ba0c526f380c3d6
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945757"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155545"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 Rejestratory umożliwiają umożliwiające dostosowanie dane wyjściowe kompilacji i wyświetlanie wiadomości, błędy lub ostrzeżenia w odpowiedzi na zdarzenia w konkretnej kompilacji. Każdy rejestrator jest implementowany jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs, który jest zdefiniowany w *Microsoft.Build.Framework.dll* zestawu.  
@@ -70,8 +70,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>Kod  
  [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### <a name="comments"></a>Komentarze  
-  
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  
@@ -79,8 +77,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="code"></a>Kod  
  [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
-  
-### <a name="comments"></a>Komentarze  
   
 ## <a name="see-also"></a>Zobacz także  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   

@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6885cb0dea801ab95e2e88e3f8168c139fea0e0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1fa232e0e8bfca31d16209ca8cb7acd15954940
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100380"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151788"
 ---
-# <a name="attaching-directly-to-a-program"></a>Dołączanie bezpośrednio do programu
-Użytkownicy, którzy chcą do debugowania programów w procesie, która jest już uruchomiona zwykle skorzystać z tego procesu:  
+# <a name="attach-directly-to-a-program"></a>Dołączanie bezpośrednio do programu
+Użytkownicy, którzy chcą do debugowania programów w procesie, który zazwyczaj jest już uruchomiony, wykonaj następujące czynności:  
   
-1.  W środowisku IDE, wybierz **debugowanie procesów** polecenie **narzędzia** menu.  
+1.  W środowisku IDE, wybierz **debugowanie procesów** polecenia **narzędzia** menu.  
   
-     **Procesów** zostanie wyświetlone okno dialogowe.  
+     **Procesy** pojawi się okno dialogowe.  
   
-2.  Wybierz proces, a następnie kliknij przycisk **Attach** przycisku.  
+2.  Wybierz proces, a następnie kliknij przycisk **Dołącz** przycisku.  
   
-     **Dołączyć do procesu** zostanie wyświetlone okno dialogowe, wyświetlone wszelkie aparatami debugowania (DEs) zainstalowane na tym komputerze.  
+     **Dołączyć do procesu** pojawi się okno dialogowe, wyświetlanie listy wszystkich aparaty debugowania (DEs) zainstalowane na komputerze.  
   
-3.  Określ DEs na potrzeby debugowania wybrany proces, a następnie kliknij przycisk **OK**.  
+3.  Określ DEs na potrzeby debugowania wybranego procesu, a następnie kliknij przycisk **OK**.  
   
- Pakiet debugowania uruchamia sesję debugowania i przekazuje listę DEs. Sesja debugowania z kolei przekazuje tej listy, wraz z funkcję wywołania zwrotnego do wybranego procesu i następnie prosi procesu wyliczyć jego uruchomione programy.  
+ Pakiet debugowania uruchamia sesję debugowania i przekazuje listę DEs do niego. Sesji debugowania z kolei przekazuje tej listy, wraz z funkcją wywołania zwrotnego do wybranego procesu, a następnie prosi procesu wyliczania jego uruchomione programy.  
   
- Programowo w odpowiedzi na żądanie użytkownika, pakiet debugowania tworzy wystąpienie Menedżera debugowania sesji (SDM) i przekazuje do listy wybranych DEs. Wraz z listy, pakiet debugowania przekazuje SDM [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interfejsu. Pakiet debugowania przekazuje listę DEs do wybranego procesu przez wywołanie metody [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Następnie wywołuje SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) na porcie wyliczyć programów uruchomionych w procesie.  
+ Programowe w odpowiedzi na żądanie użytkownika, debugowanie pakietu tworzy Menedżer debugowania sesji (SDM) i przekazuje listę wybranych DEs do niego. Wraz z listy, debugowanie pakietu przekazuje SDM [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interfejsu. Debugowanie pakietu przekazuje listę DEs do wybranego procesu przez wywołanie metody [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Następnie wywołuje SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) na porcie wyliczyć programów uruchomionych w procesie.  
   
- Od tego momentu każdy aparat debugowania jest dołączony do programu dokładnie zgodnie z opisem w [dołączanie po uruchamianie](../../extensibility/debugger/attaching-after-a-launch.md), z dwoma wyjątkami.  
+ Od tego momentu każdego silnika debugowania jest dołączony do programu dokładnie zgodnie z opisem w [dołączanie po uruchomieniu](../../extensibility/debugger/attaching-after-a-launch.md), z dwoma wyjątkami.  
   
- W celu zwiększenia wydajności DEs, które są wdrożone na udostępnianie przestrzeń adresową SDM są grupowane tak, aby każdy DE zestaw programów, które będzie dołączać. W takim przypadku [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) wywołania [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) i przekazuje je programów do dołączenia do tablicy.  
+ W celu zwiększenia wydajności DEs, które są wdrożone na udostępnianie przestrzeń adresową SDM są grupowane, aby każdy DE ma zestaw programów, które ma być dołączone do. W tym przypadku [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) wywołania [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) i przekazuje je tablicę programy można dołączyć do.  
   
- Drugi wyjątek to, że zdarzenia uruchamiania wysyłane przez DE, dołączenie do programu, który jest już uruchomiona nie dołączaj zwykle zdarzenie punktu wejścia.  
+ Drugi wyjątek to, że zdarzenia uruchamiania wysyłane przez DE, dołączając do programu, który jest już uruchomiony zwykle obejmuje zdarzenie punktu wejścia.  
   
-## <a name="see-also"></a>Zobacz też  
- [Wysyłanie zdarzeń do uruchomienia po Launch](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wysyłanie zdarzeń uruchamiania po uruchomieniu](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

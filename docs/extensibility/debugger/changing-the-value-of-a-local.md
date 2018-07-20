@@ -1,5 +1,5 @@
 ---
-title: Zmiana wartości zmiennej lokalnej | Dokumentacja firmy Microsoft
+title: Zmienianie wartości zmiennej lokalnej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,41 +14,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 422d1702f319db6da21892bcaa1bd50adad7909d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 788f496f2afeb3b6392cb165d243a9d83f8ea005
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109588"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151076"
 ---
-# <a name="changing-the-value-of-a-local"></a>Zmiana wartości zmiennej lokalnej
+# <a name="change-the-value-of-a-local"></a>Zmień wartość zmiennej lokalnej
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Gdy jest wpisana nową wartość w polu wartość **zmiennych lokalnych** okna, pakiet debugowania przekazuje ciąg, jak została wpisana do ewaluatora wyrażenia (EE). EE daje w wyniku tego ciągu, który może zawierać prosty wartość lub wyrażenie i przechowuje wartość wynikową w lokalnej skojarzone.  
+ Po wpisaniu nową wartość w polu wartość **lokalne** oknie Debugowanie pakietu przekazuje ciąg, ponieważ wpisany Ewaluator wyrażeń (EE). EE daje w wyniku tego ciągu, który może zawierać proste wartość lub wyrażenie, a przechowuje wartość wynikową w lokalnej skojarzone.  
   
- Ten temat zawiera omówienie procesu zmiany wartości elementu lokalnego:  
+ To omówienie procesu zmiany wartości zmiennej lokalnej:  
   
-1.  Gdy użytkownik wprowadzi nową wartość, Visual Studio wymaga [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) na [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z lokalnym.  
+1.  Gdy użytkownik wprowadzi nową wartość, program Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) na [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z lokalnym.  
   
 2.  `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
   
-    1.  Oblicza ciąg w celu utworzenia wartości.  
+    1.  Wylicza wartość ciągu do uzyskiwania wartości.  
   
-    2.  Wiąże skojarzony [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu uzyskanie [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
+    2.  Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu w celu uzyskania [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
   
     3.  Konwertuje wartość na serię bajtów.  
   
-    4.  Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) aby umieścić wartości bajtów do pamięci, aby program debugowany mogą uzyskiwać do nich dostęp.  
+    4.  Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) można umieścić wartości bajtów do pamięci, aby program poddawany mają do nich dostęp.  
   
-3.  Odświeża programu Visual Studio **zmiennych lokalnych** wyświetlić (zobacz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) szczegółowe informacje).  
+3.  Odświeża programu Visual Studio **zmiennych lokalnych** wyświetlania (patrz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać szczegółowe informacje).  
   
- Ta procedura umożliwia również zmienić wartość zmiennej w **czujki** okno, ale jest `IDebugProperty2` obiektu skojarzone z wartością używaną zamiast lokalnej `IDebugProperty2` obiekt skojarzony z lokalnym samego siebie.  
+ Ta procedura umożliwia również zmienić wartość zmiennej w **Obejrzyj** okna, z wyjątkiem jest `IDebugProperty2` obiekt skojarzony z wartością lokalnej, która jest używana zamiast `IDebugProperty2` obiekt skojarzony z lokalnym samego siebie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przykład implementacji zmieniania wartości](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
- Używa próbki MyCEE do kroków procesu zmiany wartości.  
+ Używa przykładowych MyCEE, aby przejść przez proces zmiany wartości.  
   
-## <a name="see-also"></a>Zobacz też  
- [Zapisywanie Ewaluator wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie manifestu produkt | Dokumentacja firmy Microsoft'
+title: 'Porady: tworzenie manifestu produktu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,27 +20,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815772"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153114"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Porady: tworzenie manifestu produkt
-Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet programu inicjującego. Pakiet programu inicjującego zawiera jeden produkt pliku manifestu ale manifest pakietu dla każdego ustawienia regionalne. Manifest pakietu zawiera aspekty specyficzne dla lokalizacji pakietu. W tym ciągów, Umowa licencyjna użytkownika oprogramowania i pakietów językowych.  
+# <a name="how-to-create-a-product-manifest"></a>Porady: tworzenie manifestu produktu
+Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Manifest pakietu zawiera aspekty specyficzne dla lokalizacji pakietu. W tym ciągi, Umowa licencyjna użytkownika oprogramowania i pakietów językowych.  
   
  Aby uzyskać więcej informacji na temat manifestów produktu, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
   
-## <a name="creating-the-product-manifest"></a>Tworzenie manifestu produkt  
+## <a name="create-the-product-manifest"></a>Tworzenie manifestu produktu  
   
-#### <a name="to-create-the-product-manifest"></a>Aby utworzyć manifestu produkt  
+#### <a name="to-create-the-product-manifest"></a>Aby utworzyć manifest produktu  
   
 1.  Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.  
   
-2.  W programie Visual Studio Utwórz nowy plik XML o nazwie `product.xml`i zapisz go w folderze C:\package.  
+2.  W programie Visual Studio Utwórz nowy plik XML o nazwie *product.xml*i zapisać go w celu *C:\package* folderu.  
   
-3.  Dodaj następujące XML opisujący kod XML przestrzeń nazw i produktu dla pakietu. Zastąp kod produktu unikatowy identyfikator dla pakietu.  
+3.  Dodaj następujący kod XML opisujący przestrzeni nazw i produktu kod XML dla pakietu. Zastąp kod produktu o unikatowym identyfikatorze dla pakietu.  
   
     ```xml  
     <Product  
@@ -48,7 +48,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Dodaj XML, aby określić, że pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.  
+4.  Dodaj kod XML, aby określić, czy pakiet ma zależność. W tym przykładzie użyto zależność w systemie Microsoft Windows Installer 3.1.  
   
     ```xml  
     <RelatedProducts>  
@@ -56,7 +56,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
       </RelatedProducts>  
     ```  
   
-5.  Dodaj XML, aby wyświetlić listę wszystkich plików znajdujących się w pakiet programu inicjującego. W tym przykładzie używane CorePackage.msi nazwę pliku pakietu.  
+5.  Dodaj kod XML, aby wyświetlić listę wszystkich plików, które należą do pakietu programu inicjującego. W tym przykładzie użyto nazwa pliku pakietu *CorePackage.msi*.  
   
     ```xml  
     <PackageFiles>  
@@ -64,16 +64,16 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
     </PackageFiles>  
     ```  
   
-6.  Skopiuj lub Przenieś plik CorePackage.msi do folderu C:\package.  
+6.  Kopiowanie lub przenoszenie *CorePackage.msi* plik *C:\package* folderu.  
   
-7.  Dodaj XML do zainstalowania pakietu za pomocą poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flagi do pliku msi, który zostanie zainstalowany w trybie dyskretnym. Jeśli plik .exe, inicjujący uruchamia plik .exe przy użyciu powłoki. Następujący kod XML zawiera bez argumentów do CorePackage.msi, ale argument wiersza polecenia można umieszczać w atrybucie argumentów.  
+7.  Dodaj kod XML, aby zainstalować pakiet przy użyciu poleceń programu inicjującego. Program inicjujący automatycznie dodaje **/qn** flaga *.msi* pliku, który zostanie zainstalowany w trybie dyskretnym. Jeśli plik jest *.exe*, uruchamia program inicjujący *.exe* plików przy użyciu powłoki. Następujący kody XML pokazuje bez argumentów do *CorePackage.msi*, ale można umieścić argument wiersza polecenia do `Arguments` atrybutu.  
   
     ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Dodaj następujący kod XML, sprawdź, czy jest zainstalowany ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID pakietu redystrybucyjnego składnika.  
+8.  Dodaj następujący kod XML, aby sprawdzić, czy zainstalowano ten pakiet programu inicjującego. Zastąp kod produktu o identyfikatorze GUID dla składnik redystrybucyjny.  
   
     ```xml  
     <InstallChecks>  
@@ -83,7 +83,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
     </InstallChecks>  
     ```  
   
-9. Dodaj XML do zmiany zachowania programu inicjującego zależnie od tego, jeśli jest już zainstalowany składnik inicjujący. Jeśli jest zainstalowany składnik, nie zostanie uruchomiony pakiet programu inicjującego. Następujący kod XML sprawdza, czy aktualny użytkownik ma uprawnienia administratora, ponieważ ten składnik wymaga uprawnień administracyjnych.  
+9. Dodaj kod XML, aby zmienić zachowanie programu inicjującego zależnie od tego, jeśli jest już zainstalowany składnik programu inicjującego. Jeśli zainstalowano składnik pakietu programu inicjującego nie działa. Następujący kod XML sprawdza, czy aktualny użytkownik ma uprawnienia administratora, ponieważ ten składnik wymaga uprawnień administracyjnych.  
   
     ```xml  
     <InstallConditions>  
@@ -96,7 +96,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
     </InstallConditions>  
     ```  
   
-10. Dodaj XML można ustawić kody wyjścia, jeśli Instalacja powiodła się i konieczne jest ponowne uruchomienie. Następujący kod XML przedstawiono zakończy się niepowodzeniem i FailReboot kody, które wskazują, że inicjujący nie będzie kontynuowane, instalowanie pakietów zakończenia.  
+10. Dodaj kod XML, aby ustawić kody zakończenia, jeśli instalacja się powiodła, a jeśli konieczne jest ponowne uruchomienie komputera. Następujący kod XML pokazuje, że zakończy się niepowodzeniem i FailReboot wyjść kodów, które wskazują, że program inicjujący nie będzie kontynuowana, instalowanie pakietów.  
   
     ```xml  
     <ExitCodes>  
@@ -107,17 +107,17 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
     </ExitCodes>  
     ```  
   
-11. Dodaj następujący kod XML koniec sekcji poleceń programu inicjującego.  
+11. Dodaj następujący kod XML do końca sekcji dla poleceń programu inicjującego.  
   
     ```xml  
         </Command>  
     </Commands>  
     ```  
   
-12. Przenieść C:\package folder do katalogu zawierającego program inicjujący Instalatora programu Visual Studio. Dla programu Visual Studio 2010 to jest katalog SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
+12. Przenieś *C:\package* folder w katalogu program inicjujący Instalatora programu Visual Studio. W przypadku programu Visual Studio 2010, jest *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* katalogu.  
   
 ## <a name="example"></a>Przykład  
- Manifest produktu zawiera instrukcje dotyczące niestandardowe wstępne wymagania instalacji.  
+ Manifest produktu zawiera instrukcje dotyczące instalacji niestandardowej wstępnie wymaganych składników.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -160,5 +160,5 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakiet p
 </Product>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

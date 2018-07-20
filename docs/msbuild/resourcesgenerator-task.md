@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea13b4d097792baf2da46745be2f64a565fdf2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56d6a965c7565faf085456cb174ba73358bfd454
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575978"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153283"
 ---
-# <a name="resourcesgenerator-task"></a>ResourcesGenerator — Zadanie
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Zadań osadza co najmniej jeden zasób (.ico jpg, bmp, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) w plik .resources.  
+# <a name="resourcesgenerator-task"></a>Resourcesgenerator — zadanie
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Zadań osadza co najmniej jeden zasób (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) do *Resources* pliku.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`OutputPath`|Wymagane **ciąg** parametru.<br /><br /> Określa ścieżkę do katalogu wyjściowego. Jeśli ścieżka nie jest ścieżką bezwzględną, będzie traktowane jako ścieżkę względną wobec katalogu głównym projektu.|  
-|`OutputResourcesFile`|Wymagane **[ITaskItem]** parametru wyjściowego.<br /><br /> Określa ścieżkę i nazwę pliku .resources wygenerowany. Jeśli ścieżka nie jest ścieżką bezwzględną, w pliku .resources jest generowany względem katalogu głównego projektu.|  
-|`ResourcesFiles`|Wymagane **[ITaskItem]** parametru.<br /><br /> Określa jeden lub więcej zasobów do osadzenia w pliku .resources wygenerowany.|  
+|`OutputPath`|Wymagane **ciąg** parametru.<br /><br /> Określa ścieżkę do katalogu wyjściowego. Jeśli ścieżka nie jest ścieżką bezwzględną, jest ona traktowana jako ścieżkę, która jest określana względem katalogu głównego projektu.|  
+|`OutputResourcesFile`|Wymagane **[] ITaskItem** parametr wyjściowy.<br /><br /> Określa ścieżkę i nazwę wygenerowany *Resources* pliku. Jeśli ścieżka nie jest ścieżką bezwzględną *Resources* wygenerowaniu pliku względem katalogu głównego projektu.|  
+|`ResourcesFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa co najmniej jeden zasób do osadzenia w wygenerowanym *Resources* pliku.|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład generuje plik .resources o .bmp pojedynczy zasób. Zasób .bmp jest generowany do katalogu, który jest określana względem katalogu głównego projektu.  
+ Poniższy przykład generuje *Resources* plików za pomocą jednego *.bmp* zasobów. *.Bmp* zasobów jest generowana do katalogu, który jest określana względem katalogu głównego projektu.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -54,9 +54,9 @@ ms.locfileid: "31575978"
 </Project>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+ [Kompilowanie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

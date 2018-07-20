@@ -1,5 +1,5 @@
 ---
-title: Zestaw SDK — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Zestaw SDK, Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/25/2018
 ms.technology: msbuild
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d674e7613898816f905e0d0a11bdc2484cf4f25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325326"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154096"
 ---
-# <a name="sdk-element-msbuild"></a>Sdk — Element (MSBuild)
+# <a name="sdk-element-msbuild"></a>Zestaw SDK, element (MSBuild)
 Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zestawu SDK.  
 
  \<Project>  
@@ -47,8 +47,8 @@ Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Atrybut wymagany.<br /><br /> Nazwa projektu zestawu SDK.|  
-|`Version`|Atrybut opcjonalny.<br /><br /> Wersja projektu zestawu SDK|  
+|`Name`|Atrybut wymagany.<br /><br /> Nazwa zestawu SDK projektu.|  
+|`Version`|Atrybut opcjonalny.<br /><br /> Wersja zestawu SDK projektu|  
 
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.
@@ -56,9 +56,9 @@ Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ### <a name="parent-elements"></a>Elementy nadrzędne  
  |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
-## <a name="see-also"></a>Zobacz też  
- [Porady: odwołania projektu MSBuild zestawu SDK](../msbuild/how-to-use-project-sdk.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Porady: odwołanie do zestawu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

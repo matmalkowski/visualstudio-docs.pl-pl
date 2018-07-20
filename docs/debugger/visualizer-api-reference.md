@@ -19,29 +19,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4f05611f02abfd754ec2f71fd60a8598603030
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476955"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155064"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
-Wizualizator API są dostępne dla użytkowników, którzy chcą pisanie wizualizatora w debugerze programu Visual Studio. Wizualizatora jest mała aplikacja, która umożliwia rozbudowywanie interfejsu użytkownika funkcji debuger programu Visual Studio. Wizualizatora można wyświetlić (i opcjonalnie edytować) obiekt danych określonego typu, dla którego przeznaczona jest wizualizatora.  
+
+Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą pisanie wizualizatora w debugerze programu Visual Studio. Wizualizatora to mała aplikacja, która umożliwia rozbudowanie interfejsu użytkownika funkcji debugera programu Visual Studio. Wizualizatora może wyświetlić (i opcjonalnie edytować) obiekt danych określonego typu, dla których zaprojektowano wizualizatora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
-## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+## <a name="see-also"></a>Zobacz też
+
+ [Wskazówki: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
- [Utwórz niestandardowe Wizualizatory](../debugger/create-custom-visualizers-of-data.md)
+ [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

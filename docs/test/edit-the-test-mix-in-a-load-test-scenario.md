@@ -1,5 +1,5 @@
 ---
-title: Mieszanka testów dla scenariusza testu obciążenia w programie Visual Studio
+title: Test mieszany dla scenariusza testu obciążeniowego w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,82 +13,82 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f66299f1e5f5a40e0ad8f022645f81873bc55b56
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750938"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151450"
 ---
-# <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytowanie mieszanki testów, aby określić, który wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika do scenariusza testów obciążenia
+# <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 
-*Mieszanka testów* scenariusza jest kombinacją wybór testów wydajności i jednostki sieci Web, które są zawarte w tym scenariuszu i dystrybucji tych testów w scenariuszu. Dystrybucja to ustawienie można określić dla prawdopodobieństwo wybrane przez użytkownika wirtualnego podczas uruchomienia testu obciążenia poszczególnego testu.
+*Test mieszany* scenariusz składa się z wybranych sieci Web wydajności i testy jednostkowe, które są zawarte w tym scenariuszu i dystrybucji tych testów, w tym scenariuszu. Dystrybucja to ustawienie można określić prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia.
 
- Po dodaniu zestawu testów do testu obciążenia, *mieszanka testów* działa jak inny mieszać opcji. Użytkownikiem wirtualnego losowo wybiera badanie, oparte na prawdopodobieństwo, że określone w zestawie. Na przykład jeśli dwóch testów, każdy 50 procent w mieszanym, nowy wirtualny użytkownik wybiera testu pierwszy około połowy czasu. W różnych 50/50 Jeśli jeden test jest długi, a inny jest krótkie, większe obciążenie, pochodzi z długo testu.
+ Po dodaniu zestawu testów do testu obciążeniowego *test mieszany* podobnie jak inne mieszać opcji. Użytkownik wirtualny losowo wybiera test, oparty na prawdopodobieństwo, że określone w zestawie. Na przykład w przypadku dwóch testów, każdy 50 procent w asortymencie, nowego użytkownika wirtualnego decyduje się pierwszy test około połowę czasu uruchomienia. W asortymencie 50/50 Jeśli jeden test jest długa i inny jest krótki, większe obciążenie jest dostarczany z długiego testu.
 
- Po dodaniu testy z różnymi, można je usunąć. Możesz również zmienić dystrybucji testu mieszanego przy użyciu formantu mieszanego. Formant mieszanego pozwala łatwo Dopasuj dystrybucji testów w scenariuszu.
+ Po dodaniu testy do mieszanki można je usunąć. Można również zmienić dystrybucji testu mieszanego, za pomocą formantu mieszanego. Formant mieszanego pozwala łatwo dopasować rozkład testów w scenariuszu.
 
 > [!NOTE]
-> Dystrybucji jest miarą prawdopodobieństwa wybrane przez użytkownika wirtualnego podczas uruchomienia testu obciążenia poszczególnego testu. Dystrybucji jest wyrażona w procentach. W związku z tym sumę liczb dystrybucji dla wszystkich testów, które są zawarte w scenariuszu to 100. Na przykład jeśli scenariusz zawiera tylko jeden test, dystrybucji dla tego testu jest 100 procent.
+> Dystrybucja jest miarą prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia. Dystrybucja jest wyrażona w procentach. W związku z tym sumę liczb dystrybucji dla wszystkich testów, które są zawarte w scenariuszu to 100. Na przykład jeśli scenariusz zawiera tylko jeden test, dystrybucji dla tego testu jest 100 procent.
 
-## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Dodaj nowe testy do testu mieszanego w istniejącego scenariusza
+## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Dodaj nowe testy do mieszanki testów, w istniejącego scenariusza
 
-Tworząc nowy scenariusz przy użyciu Kreatora nowego testu obciążenia, można określić testy wydajności i jednostki sieci Web, aby dodać do testu mieszanego nowy scenariusz.
+Gdy tworzysz nowy scenariusz przy użyciu **Kreatora nowego testu obciążenia**, można określić testy wydajności i jednostki sieci Web, aby dodać do testu mieszanego nowy scenariusz.
 
-Można dodać więcej wydajności sieci Web i testów jednostkowych z różnymi tekst scenariusza za pomocą edytora testu obciążenia.
+Można dodać więcej Web wydajności i testy jednostkowe do mieszanki tekstu scenariusza za pomocą **edytora testu obciążenia**.
 
 ![Dodawanie testu do istniejącego testu obciążenia](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Aby dodać więcej testów do istniejącego scenariusza
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-2.  W edytorze testu obciążenia, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz pozycję **Dodaj testy**.
+2.  W **edytora testu obciążenia**, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Dodaj testy**.
 
-     **Dodaj testy** zostanie wyświetlone okno dialogowe. Wszystkie wydajności sieci Web, jednostkowe i kodowane testy interfejsu użytkownika w rozwiązaniu, które nie są już w danym scenariuszu są dostępne dodać do scenariusza.
+     **Dodaj testy** zostanie wyświetlone okno dialogowe. Wszystkie wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika w rozwiązaniu, które nie są już w tym scenariuszu są dostępne, można dodać do scenariusza.
 
-3.  W **dostępne testy** okienku wybierz wydajności sieci Web, jednostkowe i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testów do **wybrane testy** okienka.
+3.  W **dostępne testy** okienku zaznacz wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testy **wybrane testy** okienka.
 
-4.  Po dodaniu testy wybierz **OK**.
+4.  Po dodaniu testów wybierz **OK**.
 
-     Testy są dodawane do testu mieszanego. Nowe dystrybucji jest automatycznie przypisywana do testów w teście mieszanym.
+     Testy zostaną dodane do testu mieszanego. Nowe dystrybucji jest automatycznie przypisywany do testy w asortymencie test.
 
-5.  (Opcjonalnie) Dostosuj kontroli mieszanego do określenia dystrybucji testu. Aby uzyskać więcej informacji, zobacz [o różnych kontroli](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5.  (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Usuwanie testów ze scenariusza
+##  <a name="remove-tests-from-a-scenario"></a>Usuń testy ze scenariusza
  ![Usuwanie testu z istniejącego testu obciążenia](../test/media/ltest_removetest.png)
 
-### <a name="to-remove-tests-from-a-scenario"></a>Aby usunąć testy z scenariusza
+### <a name="to-remove-tests-from-a-scenario"></a>Aby usunąć testy ze scenariusza
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-2.  W edytorze testu obciążenia, w drzewie testu obciążenia, kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć testu oraz wybierz **edytowanie mieszanki testów**. **Edytowanie mieszanki testów** zostanie wyświetlone okno dialogowe.
+2.  W **edytora testu obciążenia**, obciążenia test drzewa, kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć test i wybierz pozycję **Edytuj Test mieszany**. **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz wydajności sieci Web, jednostki lub kodowanego testu interfejsu użytkownika w siatce, a następnie wybierz pozycję **Usuń**.
+3.  Wybierz wydajność sieci Web, jednostki lub kodowany test interfejsu użytkownika w siatce, a następnie wybierz **Usuń**.
 
     > [!NOTE]
-    > Po usunięciu testu Dostosuj testu mieszanego do preferowanego dystrybucji.
+    > Po usunięciu testu dopasować test mieszany do Twojej dystrybucji.
 
 4.  Aby zakończyć usuwanie testów, wybierz **OK**.
 
 ##  <a name="EditingTestMixAboutMixControl"></a> Informacje o formancie mieszany
- Formant mieszanego pozwala na dostosowanie procent obciążenia, które jest rozdzielona testy, typy przeglądarek lub typów sieci w scenariuszu testu obciążenia. Wartości procentowe są Dostosuj Przesuń suwaki. Dopasowywanie mieszanki testów określa prawdopodobieństwo wirtualny użytkownik korzystający z określonych testów w scenariuszu testu obciążenia.
+ Sterowanie mieszany umożliwia dostosowanie procent obciążenia, który jest rozproszona w ramach testów, typy przeglądarek i typy sieci w scenariuszu testu obciążenia. Wartości procentowe można dostosować, przenosząc suwaki. Dostosowywanie mieszanki testów określa prawdopodobieństwo, że użytkownik wirtualny uruchomi określony test w scenariuszu testu obciążenia.
 
- W przypadku przenoszenia suwaka, zmień wartości procentowe wszystkie dostępne elementy. Jeśli masz więcej niż dwa elementy wielkość Dodaj lub usuń jest równomiernie między innymi elementami. Istnieje możliwość zastąpienia tego zachowania. Zaznacz pole wyboru w kolumnie blokady dla danego elementu, należy zablokować określoną wartość procentową wartość dla tego elementu. Następnie gdy suwak wielkość Dodaj lub usuń jest stosowana tylko do wszystkie pozostałe elementy odblokowane.
+ Podczas przesuwania suwaka, zmień wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota, dodawanie lub usuwanie jest rozłożona równomiernie innych elementów. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, można zablokować określoną wartość procentową wartość dla tego elementu. Następnie podczas przesuwania suwaka, kwota, dodawanie lub usuwanie są stosowane tylko do wszystkie pozostałe elementy odblokowane.
 
- **Dystrybucji** przycisk umożliwia przydzielenie wartości procentowe równomiernie wszystkie elementy. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34 33 i 33.
+ **Dystrybucji** przycisk służy do przydzielania wartości procentowych równomiernie wszystkie elementy. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34, 33 i 33.
 
 > [!WARNING]
 > **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
 
- Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
+ Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny, a nie za pomocą suwaków. Jeśli bezpośrednio wprowadzasz wartość procentową, inne elementy nie skoryguje automatycznie.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w **%** kolumny są miejsc dziesiętnych.
+> Suwaki są wyłączone, gdy łączny nie powoduje dodania do 100% lub wartości procentowe są wprowadzane do **%** kolumny są liczbę miejsc dziesiętnych.
 
 
- Po wprowadzeniu wartości procentowe ręcznie, należy upewnić się, że suma wszystkich elementów jest 100%. Po zapisaniu mieszane, jeśli nie jest sumą 100%, pojawi się monit zaakceptować wartości procentowe są one lub do Przejdź wstecz i dostosować je. Jeśli wybierzesz je zaakceptować, ponieważ są one, zostaną obliczone proporcjonalnie do 100%.  Na przykład jeśli dwa elementy i ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawiona do 66,67% (80 podzielona przez 120) i drugiego elementu zostanie ustawiona do 33,33% (40 podzielona przez 120).
+ Po wprowadzeniu wartości procentowe ręcznie, należy pamiętać, że sumę wszystkich elementów wynosi 100%. Podczas zapisywania mieszany, jeśli suma nie jest w 100%, możesz zostanie wyświetlony monit o zaakceptowanie wartości procentowe są one, lub przejdź wstecz i zmieniaj je tak. Jeśli zdecydujesz się je zaakceptować, ponieważ są one, będzie naliczana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy, a następnie ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawione na % 66,67 (80 podzielona przez 120), a drugi element zostanie ustawione na % 33,33 (40 podzielona przez 120).
 
 ## <a name="see-also"></a>Zobacz także
 

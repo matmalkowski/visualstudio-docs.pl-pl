@@ -18,37 +18,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ca91726cdb20df2d77b497bd756fdc344aae6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460ba44e7e8734e294c6da3628b8f142b241c471
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567970"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155031"
 ---
 # <a name="wpf-msbuild-reference"></a>Odwołanie do WPF MSBuild
-Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) obsługujących dodatkowe kompilacji jest opisana w tej sekcji.  
+Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) dzięki obsłudze dodatkowe kompilacji jest opisana w tej sekcji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [. Pliki obiektów docelowych](../msbuild/wpf-dot-targets-files.md)  
- W tym artykule opisano WPF. Pliki obiektów docelowych.  
+ [Pliki .targets WPF](../msbuild/wpf-dot-targets-files.md)  
+ W tym artykule opisano pliki .targets WPF.  
   
- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)  
+ [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
  Wyświetla dostępne WPF zadania kompilacji.  
   
  <xref:Microsoft.Build.Tasks>  
- W zestawie zadania kompilacji.  
+ Zestawu zadań kompilacji.  
   
  <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- Kompilacja zadania wdrażania programu inicjującego zestawem.  
+ Zadanie wdrażania programu inicjującego zestawu kompilacji.  
   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- Kompilacja zadania wdrażania narzędzia manifestu zestawu.  
+ Zadanie wdrażania narzędzia manifestu zestawu kompilacji.  
   
  <xref:Microsoft.Build.Tasks.Hosting>  
- Zestaw hostingu zadania kompilacji.  
+ Zestaw hostingu zadań kompilacji.  
   
  <xref:Microsoft.Build.Tasks.Windows>  
- Zestaw windows zadania kompilacji.  
+ Zestaw windows zadań kompilacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [MSBuild](../msbuild/msbuild.md)

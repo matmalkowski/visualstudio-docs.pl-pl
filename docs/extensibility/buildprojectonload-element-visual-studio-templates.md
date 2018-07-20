@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097825"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154161"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
-Tworzy tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe rozwiązanie nie jest tworzone.  
+Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe rozwiązanie nie jest wbudowane.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -44,18 +44,18 @@ Tworzy tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe roz
   
 |Element|Opis|  
 |-------------|-----------------|  
-|TemplateData|Kategoryzuje szablonu i definiuje sposobu jej wyświetlania w obu **nowy projekt** i **Dodaj nowy element** okien dialogowych.|  
+|`TemplateData`|Klasyfikuje szablon i definiuje sposób wyświetlania w obu **nowy projekt** i **Dodaj nowy element** okien dialogowych.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false` wskazująca, czy do tworzenia nowego projektu tworzona z szablonu.  
+ Tekst musi być albo `true` lub `false` wskazująca, czy do tworzenia nowego projektu, gdy jest tworzona z szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- `BuildProjectOnLoad` to opcjonalny element. Wartość domyślna to `false`.  
+ `BuildProjectOnLoad` element jest opcjonalny. Wartość domyślna to `false`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadane szablonu Visual C#.  
+ Poniższy przykład ilustruje metadanych dla szablonu programu Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,6 +82,6 @@ Tworzy tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe roz
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

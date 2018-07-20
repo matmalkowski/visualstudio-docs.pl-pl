@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078855"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154388"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce
 Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie rozpoznaje Windows, takich jak plik programu Microsoft Word, usługi IIS będą odrzucać do przekazywania pliku, a wdrożenie zakończy się niepowodzeniem.  
@@ -93,7 +93,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce i zamapowanego dysków  
  Jeśli publikowanie aplikacji ClickOnce przy użyciu programu Visual Studio, nie można określić zamapowanego dysku jako lokalizację instalacji. Jednak można modyfikować aplikacji ClickOnce, aby zainstalować z dysku zmapowanego przy użyciu generatora manifestu i Edytor (Mage.exe i MageUI.exe). Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) i [MageUI.exe (Manifest Generation i graficzny klient Editing Tool)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP protokołu nt obsługiwane w przypadku instalowania aplikacji  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokół FTP nie obsługiwane w przypadku instalowania aplikacji  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] obsługuje instalowanie aplikacji z dowolnego serwera HTTP 1.1 w sieci Web lub serwera plików. FTP, protokół transferu plików, nie jest obsługiwana dla instalacji aplikacji. FTP umożliwia publikowanie tylko aplikacji. Poniższa tabela zawiera podsumowanie tych różnic:  
   
 |Typ adresu URL|Opis|  

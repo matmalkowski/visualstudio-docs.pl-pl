@@ -3,60 +3,60 @@ title: Rozwiązywanie problemów z punktów przerwania w debugerze programu Visu
 ms.custom: ''
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d587809a9690e312e923ba184c9d90c38405a5d6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477108"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155402"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio
 
 ## <a name="breakpoint-warnings"></a>Ostrzeżenia punktu przerwania
 
-Podczas debugowania, punkt przerwania ma dwa możliwe stany wizualne: stałe czerwone kółko i pusty (biały wypełnione) okręgu. Debuger jest w stanie pomyślnie Ustaw punkt przerwania w procesie docelowym, pozostanie stałe czerwonym kółku. Jeśli punkt przerwania jest ono w pusty okrąg, punkt przerwania jest wyłączona lub ostrzeżenie podczas próby ustawienia punktu przerwania. Aby określić różnicę, umieść kursor nad punkt przerwania i sprawdzić, czy jest ostrzeżenie.
+Podczas debugowania, punkt przerwania ma dwa możliwe stany wizualne: stałe czerwone kółko i puste (biały wypełnione) koło. Debuger jest w stanie pomyślnie ustawiono punkt przerwania w procesie docelowym, pozostanie stałe czerwone kółko. Jeśli punkt przerwania jest pusty okrąg, punkt przerwania jest wyłączony lub ostrzeżenia podczas próby ustawienia punktu przerwania. Aby określić różnica, umieść kursor nad punkt przerwania i sprawdzić, czy jest ostrzeżenie.
 
-Następujące dwie sekcje opisują poświęcone ostrzeżenia i sposobu ich rozwiązania. 
+Następujące dwie sekcje opisują widoczne ostrzeżenia i jak je rozwiązać. 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nie załadowano symboli dla tego dokumentu" 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Symboli nie zostały załadowane dla tego dokumentu" 
 
-Przejdź do **modułów** okna (**debugowania** > **Windows** > **modułów**) i sprawdź, czy modułu załadowane.  
-* Sprawdź, czy załadowaniu modułu **stan Symbol** kolumny, aby zobaczyć, czy załadowano symbole. 
-  * Jeśli nie załadowano symboli, sprawdź stan symbolu, aby zdiagnozować problem. Z menu kontekstowego na moduł **modułów** okna, kliknij przycisk **informacji o symbolach obciążenia...**  aby zobaczyć, których debuger wyszukiwanego, i spróbuj załadować symbole. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  * Jeśli, czy załadowano symbole, oznacza to, pliku PDB nie zawiera informacji o plikach źródłowych. Poniżej przedstawiono kilka możliwych przyczyn: 
-    * Jeśli niedawno dodano plików źródłowych, upewnij się, jest ładowany zaktualizowanej wersji modułu.  
-    * Można utworzyć przy użyciu pliki PDB **/pdbstripped** — opcja konsolidatora. Pliki PDB nie zawierają informacji o pliku źródłowym. Upewnij się, że korzystasz z pełnego pliku PDB i nie pozbawionego włókien pliku PDB.  
-    * Plik PDB częściowo jest uszkodzony. Spróbuj usunąć plik i wykonywanie czystej kompilacji modułu, aby sprawdzić, czy ten został rozwiązany. 
+Przejdź do **modułów** okna (**debugowania** > **Windows** > **modułów**) i sprawdź, czy jest modułu załadowane.  
+* Jeśli Twoje moduł jest załadowany, sprawdź **stan symboli** kolumny, aby zobaczyć, czy załadowano symbole. 
+  * Jeśli nie załadowano symboli, sprawdź stan symboli do zdiagnozowania problemu. Z menu kontekstowego w module w **modułów** okna, kliknij przycisk **informacje o ładowaniu symboli...**  aby zobaczyć, gdzie debuger oglądałem się i spróbuj załadować symbole. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+  * Czy symbole są załadowane, PDB nie zawiera informacji o plikach źródłowych. Poniżej przedstawiono kilka możliwych przyczyn: 
+    * Niedawno dodano plików źródłowych, upewnij się, że aktualna wersja modułu jest ładowany.  
+    * Istnieje możliwość tworzenia PDB przy użyciu **/pdbstripped** — opcja konsolidatora. PDB nie zawierają informacji o pliku źródłowym. Upewnij się, że pracujesz z pełnego pliku PDB, a nie informacje PDB zostały usunięte.  
+    * Plik PDB częściowo jest uszkodzony. Usuń ten plik i wykonać czystą kompilację modułu w celu rozwiązania problemu. 
 
-* Jeśli modułu nie jest załadowane, sprawdź następujące polecenie, aby znaleźć przyczynę: 
-  * Upewnij się, czy debugowany proces prawo. 
-  * Sprawdź, czy debugujesz rodzaj kodu. Można ustalić, jakiego typu kodu debuger jest skonfigurowany do debugowania w **procesów** okna (**debugowania** > **Windows**  >  **Procesów**). Na przykład, jeśli chcesz debugować kod w języku C#, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu .NET Framework (na przykład zarządzane (v4\*) i zarządzane (v2\*/v3\*) i zarządzane (środowisko CoreCLR)). 
+* Jeśli modułu nie jest załadowany, sprawdź następujące polecenie, aby znaleźć przyczynę: 
+  * Upewnij się, debugowany proces prawo. 
+  * Sprawdź, czy debugujesz właściwego rodzaju kodu. Możesz dowiedzieć się jakiego typu kodu, Debuger jest skonfigurowany do debugowania w **procesy** okna (**debugowania** > **Windows**  >  **Procesy**). Na przykład, jeśli próbujesz debugowanie kodu C#, upewnij się, że debuger jest skonfigurowany dla odpowiedniego typu .NET Framework (na przykład zarządzane (v4\*) i zarządzane (v2\*/v3\*) i zarządzane (CoreCLR)). 
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… Bieżący kod źródłowy różni się od wersji skompilowanej w..." 
 
-Jeśli plik źródłowy zmienił i źródła nie jest już zgodny z kodem, debugowana, debuger będzie nie domyślnie punktów przerwania w kodzie. Zazwyczaj ten problem się stanie, jeśli plik źródłowy jest zmieniony, ale nie został ponownie skompilowany kod źródłowy. Aby rozwiązać ten problem, skompiluj ponownie projekt. Jeśli system kompilacji sądzi, że projekt jest już aktualne, nawet jeśli nie jest, możesz wymusić systemu projektu albo zapisując plik źródłowy odbudować lub przez czyszczenie projektu kompilować wynik przed kompilacją. 
+Jeśli plik źródłowy został zmieniony i źródło nie jest już zgodny z kodu, który jest debugowany, debuger nie ustawi punktów przerwania w kodzie domyślnie. Zwykle ten problem ma to miejsce po zmodyfikowaniu pliku źródłowego, ale kod źródłowy nie został odbudowany. Aby rozwiązać ten problem, ponownie skompilować projekt. Jeśli system kompilacji podejrzewać, że projekt jest już aktualne, nawet jeśli nie jest, możesz wymusić system projektu, aby odbudować albo zapisując pliku źródłowego lub przez czyszczenie projektu dane wyjściowe przed kompilacją kompilacji. 
 
-W rzadkich przypadkach można debugować bez pasującego kodu źródłowego. To prowadzić do mylące obsługi debugowania, dlatego należy upewnić się, że jest to, jaki sposób chcesz kontynuować.  
+W rzadkich scenariuszach można debugować bez odpowiedniego kodu źródłowego. Debugowanie bez pasującego znaku kod źródłowy potencjalnego klienta do mylące debugowania środowiska, więc upewnić się, to sposób chcesz kontynuować.  
 
-Aby wyłączyć kontrole bezpieczeństwa, wykonaj jedną z następujących czynności: 
-* Aby zmodyfikować pojedynczy punkt przerwania, umieść kursor nad ikoną punktu przerwania w edytorze i kliknij ikonę ustawień (koło zębate). Okno podglądu zostanie dodany do edytora. W górnej części okna podglądu jest hiperłącze, które wskazuje lokalizację punktu przerwania. Kliknij hiperłącze, aby możliwa jego modyfikacja lokalizacji punktu przerwania i sprawdź **Zezwalaj kod źródłowy różni się od oryginału**.
-* Aby zmodyfikować to ustawienie dla wszystkich punktów przerwania, przejdź do **debugowania** > **opcje i ustawienia**. Na **debugowanie/ogólne** wyczyść **wymaga plików źródłowych odpowiadających dokładnie oryginalnej wersji** opcji. Upewnij się ponownie włączyć tę opcję, po zakończeniu debugowania. 
+Aby wyłączyć te kontrole bezpieczeństwa, wykonaj jedną z następujących czynności: 
+* Aby zmodyfikować pojedynczy punkt przerwania, wskaźnik myszy na ikonie punkt przerwania w edytorze, a następnie kliknij ikonę ustawienia (koło zębate). Okno podglądu jest dodawany do edytora. W górnej części okna podglądu jest hiperłącze, które wskazuje lokalizację punktu przerwania. Kliknij hiperlink do Zezwalaj na modyfikowanie lokalizacji punktu przerwania i sprawdź **Zezwalaj kod źródłowy różnił się od oryginału**.
+* Aby zmodyfikować to ustawienie w przypadku wszystkich punktów przerwania, przejdź do **debugowania** > **opcje i ustawienia**. Na **debugowanie/ogólne** strony, wyczyść **wymaga plików źródłowych, które dokładnie dopasować oryginalną wersję** opcji. Upewnij się ponownie włączyć tę opcję, po zakończeniu debugowania. 
 
-## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Punkt przerwania został pomyślnie ustawiony (bez ostrzeżenia), ale nie został trafiony 
+## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Punkt przerwania została ustawiona pomyślnie (bez ostrzeżenia), ale nie został osiągnięty 
 
-Ta sekcja zawiera informacje o rozwiązywaniu problemów, gdy debuger nie są wyświetlane ostrzeżenia — punkt przerwania jest stałe czerwone kółko podczas debugowania aktywnie, ale nie jest trafienia punktu przerwania. 
+Ta sekcja zawiera informacje, aby rozwiązać problemy, gdy debuger nie są wyświetlane wszelkie ostrzeżenia — punkt przerwania jest stałe czerwone kółko podczas aktywnego debugowania, ale nie jest trafienia punktu przerwania. 
 
 Oto kilka rzeczy, aby sprawdzić: 
-1. Jeśli kod jest uruchomiony w procesie więcej niż jeden lub więcej niż jeden komputer, upewnij się, że debugowania procesu prawej lub komputera.  
-2. Upewnij się, że kod jest uruchomiony. Jeden łatwy sposób na sprawdzenie to polega na dodaniu wywołanie `System.Diagnostics.Debugger.Break` (C# /VB) lub `__debugbreak` (C++) do wiersza kodu, w którym chcesz ustawić punkt przerwania, a następnie ponownie skompiluj projekt. 
-3. Przypadku debugowania zoptymalizowanego kodu, upewnij się, że funkcja, gdy punkt przerwania jest ustawiony nie jest wbudowana w innej funkcji. `Debugger.Break` Test opisany w poprzednim wyboru mogą służyć do testowania tej funkcji oraz. 
+1. Jeśli kod jest wykonywany w procesie więcej niż jeden lub więcej niż jednym komputerze, upewnij się, czy debugujesz prawo proces lub komputer.  
+2. Upewnij się, że Twój kod jest uruchomiony. Aby sprawdzić, czy kod działa, dodaj wywołanie `System.Diagnostics.Debugger.Break` (C# /VB) lub `__debugbreak` (C++) do wiersza kodu, w której chcesz ustawić punkt przerwania, a następnie ponownego skompilowania projektu. 
+3. Jeśli debugujesz zoptymalizowany kod, upewnij się, że funkcja, w którym ustawiono punkt przerwania nie jest wbudowana w innej funkcji. `Debugger.Break` Test opisany w poprzednim wyboru może pracować do przetestowania także ten problem. 
 
-## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania, ale można kontynuować trafień go podczas uruchamiania debugowania ponownie 
+## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania, ale można kontynuować trafień je, gdy I ponownie Rozpocznij debugowanie 
 
-Usunięcie punktu przerwania podczas debugowania mogą trafiony punkt przerwania ponownie przy następnym uruchomieniu debugowania. Aby zatrzymać naciśnięcie tego punktu przerwania, sprawdź, czy wszystkie wystąpienia punktu przerwania są usuwane z **punktów przerwania** okna.  
+Usunięcie punktu przerwania podczas debugowania może trafiony punkt przerwania ponownie przy następnym uruchomieniu debugowania. Aby zatrzymać, naciśnięcie tego punktu przerwania, sprawdź, czy wszystkie wystąpienia punktu przerwania są usuwane z **punktów przerwania** okna.  

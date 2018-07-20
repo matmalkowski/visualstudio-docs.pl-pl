@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87a5e6d29877efb857b846a7b3fac5f19f790d7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101797"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153634"
 ---
-# <a name="adding-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
-Po utworzeniu strony początkowej niestandardowe polecenia programu Visual Studio można dodać do niego. W tym dokumencie omówiono różne sposoby Powiąż polecenia programu Visual Studio z obiekty XAML strony początkowej.  
+# <a name="add-visual-studio-commands-to-a-start-page"></a>Dodawanie poleceń programu Visual Studio do strony początkowej
+Podczas tworzenia niestandardowej strony początkowej poleceń programu Visual Studio można dodać do niego. W tym dokumencie omówiono różne sposoby, aby powiązać obiekty XAML na stronie sieci uruchomić poleceń programu Visual Studio.  
   
- Aby uzyskać więcej informacji dotyczących poleceń w języku XAML, zobacz [droższe — omówienie](/dotnet/framework/wpf/advanced/commanding-overview)  
+ Aby uzyskać więcej informacji na temat poleceń w XAML, zobacz [Commanding — omówienie](/dotnet/framework/wpf/advanced/commanding-overview)  
   
-## <a name="adding-commands-from-the-command-well"></a>Dodawanie poleceń również polecenia  
- Utworzone strony początkowej w [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md) dodane <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> i <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> przestrzeni nazw w następujący sposób.  
+## <a name="add-commands-from-the-command-well"></a>Dodawanie poleceń polecenia dobrze  
+ Strona startowa utworzone w [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md) dodano <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> i <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> przestrzeni nazw, w następujący sposób.  
   
 ```  
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
 ```  
   
- Dodaj inny obszar nazw dla Microsoft.VisualStudio.Shell z zestawu Microsoft.VisualStudio.Shell.Immutable.11.0.dll. (Może być konieczne dodanie odwołania do tego zestawu w projekcie).  
+ Dodawanie innej przestrzeni nazw dla Microsoft.VisualStudio.Shell z zestawu *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Może być konieczne dodanie odwołania do tego zestawu w projekcie).  
   
 ```xml  
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"  
 ```  
   
- Można użyć `vscom:` alias powiązać polecenia programu Visual Studio w języku XAML kontrolki na stronie przez ustawienie <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> właściwości formantu `vscom:VSCommands.ExecuteCommand`. Następnie można ustawić <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> właściwość na nazwę polecenie do wykonania, jak pokazano w poniższym przykładzie.  
+ Możesz użyć `vscom:` alias, aby powiązać polecenia programu Visual Studio XAML kontrolki na stronie przez ustawienie <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> właściwości formantu, aby `vscom:VSCommands.ExecuteCommand`. Następnie można ustawić <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> właściwość na nazwę polecenia do wykonania, jak pokazano w poniższym przykładzie.  
   
 ```xml  
 <Button Name="btnNewProj" Content="New Project"   
@@ -52,9 +52,9 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 > [!NOTE]
 >  `x:` Alias, który odwołuje się do schematu XAML, jest wymagany na początku wszystkich poleceń.  
   
- Można ustawić wartości `Command` właściwości dowolne polecenie, które są dostępne z **polecenia** okna. Aby uzyskać listę dostępnych poleceń, zobacz [programu Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).  
+ Można ustawić wartość `Command` właściwości do dowolnego polecenia, które są dostępne z **polecenia** okna. Aby uzyskać listę dostępnych poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).  
   
- Jeśli polecenie, aby dodać wymaga dodatkowych parametrów, można dodać go do wartości `CommandParameter` właściwości. Oddzielne parametry poleceń za pomocą spacji, jak pokazano w poniższym przykładzie.  
+ Jeśli polecenie, aby dodać wymagane dodatkowy parametr, można dodać ją do wartości `CommandParameter` właściwości. Oddzielne parametry za pomocą poleceń za pomocą spacji, jak pokazano w poniższym przykładzie.  
   
 ```xml  
 <Button Content="Web Search"   
@@ -62,26 +62,26 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
         CommandParameter="View.WebBrowser www.bing.com" />  
 ```  
   
-### <a name="calling-extensions-from-the-command-well"></a>Podczas wywoływania rozszerzenia polecenia również  
- Polecenia można wywołać z VSPackages zarejestrowanych przy użyciu takiej samej składni, które są używane do wywoływania inne polecenia programu Visual Studio. Na przykład, jeśli jest zainstalowany pakiet VSPackage dodaje **strony głównej** polecenie **widoku** menu, należy wywołać polecenie ustawiając `CommandParameter` do `View.HomePage`.  
+### <a name="call-extensions-from-the-command-well"></a>Również wywołać rozszerzenia polecenia  
+ Polecenia można wywołać z zarejestrowanych pakietów VSPackage przy użyciu tej samej składni, która służy do wywoływania innych poleceń programu Visual Studio. Na przykład, jeśli dodaje zainstalowanego pakietu VSPackage **strony głównej** polecenie **widoku** menu, można wywołać tego polecenia, ustawiając `CommandParameter` do `View.HomePage`.  
   
 > [!NOTE]
->  Wywołanie polecenia, który jest skojarzony z pakiet VSPackage po wywołaniu polecenia musi załadować pakietu.  
+>  Wywołanie polecenia, który jest skojarzony z pakietu VSPackage można załadować pakietu, gdy polecenie jest wywoływany.  
   
-## <a name="adding-commands-from-assemblies"></a>Dodawanie poleceń z zestawów  
- Aby wywołać polecenie z zestawu lub kod dostępu w pakiet VSPackage, który nie jest skojarzony z polecenia menu, należy utworzyć alias dla zestawu, a następnie wywołać alias.  
+## <a name="add-commands-from-assemblies"></a>Dodawanie poleceń z zestawów  
+ Aby wywołać polecenie z zestawu lub kod dostępu w pakietu VSPackage, który nie jest skojarzony z polecenia menu, możesz utworzyć alias dla zestawu, a następnie wywołać aliasu.  
   
-#### <a name="to-call-a-command-from-an-assembly"></a>Aby wywołać polecenie z zestawu  
+### <a name="to-call-a-command-from-an-assembly"></a>Aby wywołać polecenie z zestawu  
   
 1.  W rozwiązaniu Dodaj odwołanie do zestawu.  
   
-2.  W górnej części pliku StartPage.xaml należy dodać dyrektywę przestrzeń nazw dla zestawu, jak pokazano w poniższym przykładzie.  
+2.  W górnej części *StartPage.xaml* pliku, dodać dyrektywę przestrzeni nazw dla zestawu, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  Wywołaj polecenie ustawiając `Command` właściwości obiektu XAML, jak pokazano w poniższym przykładzie.  
+3.  Wywołaj polecenie ustawiając `Command` właściwość obiektu XAML, jak pokazano w poniższym przykładzie.  
   
      XAML  
   
@@ -90,12 +90,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Należy skopiować z zestawu, a następnie wklej go w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\ się upewnić, że jest załadowany, przed jego wywołaniu.  
+>  Należy skopiować zestaw, a następnie wklej go w *... \\\Common7\IDE\PrivateAssemblies {folder instalacji programu visual Studio}\* się upewnić, że jest załadowany, przed jego wywołaniem.  
   
-## <a name="adding-commands-with-the-dte-object"></a>Dodawanie poleceń za pomocą obiektu DTE  
- Można uzyskać dostępu do obiektu DTE ze strony początkowej, zarówno w znaczniku, jak i w kodzie.  
+## <a name="add-commands-with-the-dte-object"></a>Dodawanie poleceń za pomocą obiektu DTE  
+ Ze strony Start, zarówno w znaczników i kodu, możesz uzyskać dostęp obiekt DTE.  
   
- W znaczniku, można do niego dostęp przy użyciu [powiązanie — rozszerzenie znaczników](/dotnet/framework/wpf/advanced/binding-markup-extension) składni, aby wywołać <xref:EnvDTE.DTE> obiektu. Ta metoda służy do powiązania właściwości proste, takich jak te, które zwracają kolekcje, ale nie można powiązać z metodami lub usług. W poniższym przykładzie przedstawiono <xref:System.Windows.Controls.TextBlock> formant, który jest powiązany z <xref:EnvDTE._DTE.Name%2A> właściwości oraz <xref:System.Windows.Controls.ListBox> formant, który wylicza <xref:EnvDTE.Window.Caption%2A> właściwości kolekcji, która jest zwracana w wyniku <xref:EnvDTE._DTE.Windows%2A> właściwości.  
+ W znaczniku, możesz do niego dostęp za pomocą [— rozszerzenie znaczników powiązania](/dotnet/framework/wpf/advanced/binding-markup-extension) składnia do wywoływania <xref:EnvDTE.DTE> obiektu. Takie podejście umożliwia powiązania proste właściwości, takie jak te, które zwracają kolekcje, ale nie można powiązać z metody lub usługi. W poniższym przykładzie przedstawiono <xref:System.Windows.Controls.TextBlock> kontrolki, która jest powiązywana z <xref:EnvDTE._DTE.Name%2A> właściwości i <xref:System.Windows.Controls.ListBox> formant, który wylicza <xref:EnvDTE.Window.Caption%2A> właściwości kolekcji, który jest zwracany przez <xref:EnvDTE._DTE.Windows%2A> właściwości.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  
@@ -108,7 +108,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- Na przykład zobacz [wskazówki: zapisywanie ustawień użytkownika na stronie Start](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
+ Aby uzyskać przykład, zobacz [wskazówki: zapisywanie ustawień użytkownika na stronie sieci uruchomić](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)

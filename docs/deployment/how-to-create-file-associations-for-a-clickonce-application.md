@@ -17,45 +17,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf60327e622f8eb32757d29051e3dce94661722d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bcffae0cadfb5973b532fcca5b0356eba004762
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557765"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152698"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Porady: tworzenie skojarzeń plików dla aplikacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być skojarzony z jedną lub więcej rozszerzeń nazw plików, dzięki czemu aplikacja zostanie uruchomiony automatycznie, gdy użytkownik otwiera plik tych typów. Dodawanie obsługi rozszerzenia nazw plików do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest prosta.  
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Porady: Tworzenie skojarzeń plików dla aplikacji ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być skojarzone z jednego lub więcej rozszerzeń nazw plików, więc, że aplikacja będzie uruchamiana automatycznie kiedy użytkownik otwiera plik z tych typów. Dodaniem obsługi rozszerzenia nazwy pliku [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest bardzo proste.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Aby utworzyć skojarzenia plików dla aplikacji ClickOnce  
   
-1.  Utwórz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zwykle, lub użyj istniejącą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+1.  Tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zwykle, lub użyj istniejącej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
-2.  Otwórz plik manifestu aplikacji z tekstu lub edytora XML, takiego jak Notatnik.  
+2.  Otwórz manifest aplikacji przy użyciu tekstu lub edytorze XML, takiego jak Notatnik.  
   
-3.  Znajdź `assembly` elementu. Aby uzyskać więcej informacji, zobacz [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
+3.  Znajdź `assembly` elementu. Aby uzyskać więcej informacji, zobacz [manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-4.  Jako element podrzędny `assembly` elementu, Dodaj `fileAssociation` elementu. `fileAssociation` Element ma cztery atrybuty:  
+4.  Jako element podrzędny elementu `assembly` elementu Dodawanie `fileAssociation` elementu. `fileAssociation` Element ma cztery atrybuty:  
   
-    -   `extension`Rozszerzenie nazwy pliku, które chcesz skojarzyć z aplikacją.  
+    -   `extension`Rozszerzenie nazwy pliku, który chcesz skojarzyć z aplikacją.  
   
-    -   `description`Opis typ pliku, który będzie wyświetlany w powłoce systemu Windows.  
+    -   `description`Opis typ pliku, który pojawi się w usłudze Windows shell.  
   
-    -   `progid`: Ciąg unikatowo identyfikujący typ plików, aby oznaczyć go w rejestrze.  
+    -   `progid`: Ciąg unikatowo identyfikujący typ pliku, aby oznaczyć go w rejestrze.  
   
-    -   `defaultIcon`: Ikonę do używania tego typu pliku. Ikona muszą zostać dodane jako zasób pliku w manifeście aplikacji. Aby uzyskać więcej informacji, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+    -   `defaultIcon`: Ikony do użycia dla tego typu pliku. Ikony, należy dodać jako zasób w pliku w manifeście aplikacji. Aby uzyskać więcej informacji, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
-     Przykład `file` i `fileAssociation` elementów, zobacz [ \<fileAssociation > elementu](../deployment/fileassociation-element-clickonce-application.md).  
+     Na przykład `file` i `fileAssociation` elementów, zobacz [ \<fileassociation — > Element](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Jeśli chcesz skojarzyć więcej niż jeden typ pliku z aplikacją, Dodaj dodatkowe `fileAssociation` elementy. Należy pamiętać, że `progid` atrybut powinien być inne dla każdego.  
+5.  Jeśli chcesz skojarzyć więcej niż jeden typ pliku z aplikacją, Dodaj dodatkowe `fileAssociation` elementów. Należy pamiętać, że `progid` atrybut powinien być inne dla każdego.  
   
-6.  Po zakończeniu manifest aplikacji, należy ponownie podpisać plik manifestu. Można to zrobić z wiersza polecenia przy użyciu Mage.exe.  
+6.  Po zakończeniu manifest aplikacji, należy ponownie podpisać manifest. Możesz to zrobić z wiersza polecenia, za pomocą *Mage.exe*.  
   
      `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Aby uzyskać więcej informacji, zobacz [Mage.exe (narzędzie do edycji i generowanie manifestu)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+     Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
-## <a name="see-also"></a>Zobacz też  
- [\<fileAssociation > — Element](../deployment/fileassociation-element-clickonce-application.md)   
+## <a name="see-also"></a>Zobacz także  
+ [\<fileassociation — > element](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
  [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
