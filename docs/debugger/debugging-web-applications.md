@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472400"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178920"
 ---
-# <a name="debugging-web-applications"></a>Debugowanie aplikacji sieci Web
+# <a name="debugging-web-applications"></a>Debugowanie aplikacji internetowych
 W tej sekcji wyjaśniono, jak można debugować kilka typów aplikacji sieci Web.  
   
 ## <a name="in-this-section"></a>W tej sekcji   
@@ -36,11 +36,11 @@ W tej sekcji wyjaśniono, jak można debugować kilka typów aplikacji sieci Web
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
- Opisuje czynności, które są wymagane, aby włączyć debugowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji.  
+ W tym artykule opisano kroki, które są wymagane, aby włączyć debugowanie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md)   
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

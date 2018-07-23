@@ -9,53 +9,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693724"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176190"
 ---
-# <a name="working-with-xml-data"></a>Praca z danych XML
+# <a name="working-with-xml-data"></a>Praca z danymi XML
 
-Visual Studio zawiera narzędzia i funkcje, które ułatwiają pracę z XML, XSLT i XML schematów.
+Visual Studio zawiera narzędzia i funkcje, dzięki którym łatwiej jest pracować z XML, XSLT i XML, schematy.
 
 ## <a name="xml-editor"></a>Edytor XML
 
-Edytor XML jest używany do edytowania dokumentów XML. Typ, kolorowania i technologii IntelliSense zapewnia pełne XML 1.0 składni sprawdzania, sprawdzanie poprawności schematu podczas pracy. Jeśli podano definicję typu schematu lub dokument, aby wyświetlić listę dopuszczalny elementów i atrybutów jest używany przez funkcję IntelliSense.
+Edytor XML jest używany do edytowania dokumentów XML. Zapewnia pełną XML 1.0 sprawdzanie składni, sprawdzanie poprawności schematu podczas typu kolorowania i technologii IntelliSense. Jeśli definicję typu schematu lub dokumentu zostanie podany, aby wyświetlić listę dopuszczalny rozmiar elementów i atrybutów jest używany przez funkcję IntelliSense.
 
-Dodatkowe funkcje:
+Dodatkowe funkcje obejmują:
 
-- Obsługę fragment kodu XML, w tym wygenerować schematu wstawki.
+- Obsługa fragmentów kodu XML, tym wygenerować schematu fragmentów kodu.
 
-- Dokument, zwijania, tak aby elementy można rozszerzyć i zwinięty.
+- Dokumentu, tworzenie konspektu, tak aby elementy można rozszerzyć i zwinięte.
 
-- Możliwość wykonania przekształcenia XSLT i wyświetlić wyniki jako typu text, XML lub HTML.
+- Możliwość wykonania przekształcenia XSLT i wyświetlić wyniki jako tekst, XML lub HTML.
 
-- Możliwość generowania schematu XML definition language (XSD) schematów z wystąpienia dokumentu XML.
+- Możliwość generowania schematy języka (XSD) definicji schematu XML z wystąpienia dokumentu XML.
 
-- Obsługa Edytowanie arkuszy stylów XSLT, w tym obsługę funkcji IntelliSense.
+- Obsługa Edytowanie arkuszy stylów XSLT, łącznie z obsługą technologii IntelliSense.
 
-- **Eksploratora schematu XML**.
+- **Eksplorator schematu XML**.
 
 ## <a name="xml-schema-designer"></a>Projektant schematu XML
 
-Projektant schematu XML jest zintegrowany z programu Visual Studio i edytora XML, aby umożliwić pracę z schematu XML definition language (XSD) schematów.
+Projektant schematu XML jest zintegrowany z Visual Studio i edytorem XML, aby umożliwić Praca ze schematami języka (XSD) definicji schematu XML.
 
-## <a name="xslt-debugging"></a>Profilowanie XSLT
+## <a name="xslt-debugging"></a>Debugowanie kodu XSLT
 
-Program Visual Studio obsługuje debugowania arkuszy stylów XSLT. Korzystanie z debugera, można ustawić punktów przerwania w arkusz stylów XSLT Wkrocz do arkusza stylów XSLT z kodu i tak dalej.
+Program Visual Studio obsługuje debugowania arkuszy stylów XSLT. Za pomocą debugera, możesz ustawić punkty przerwania w arkuszu stylów XSLT, krok po kroku do arkusza stylów XSLT z kodu i tak dalej.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Profilowanie XSLT](../xml-tools/debugging-xslt.md) omówiono sposób debugowania arkusze stylów, za pomocą debugera programu Visual Studio.
+[Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md) w tym artykule omówiono sposób debugowania arkuszy stylów, za pomocą debugera programu Visual Studio.
 
-[Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
+[Odwołanie do standardów XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
 
-[Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) zawiera wyjaśnienie czasu projektowania narzędzi do tworzenia zestawów danych.
+[Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) zawiera wyjaśnienie, narzędzi czasu projektowania do tworzenia zestawów danych.
 
-[Usługi XML sieci Web w kodzie zarządzanym](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) zawiera omówienie sposobu tworzenia i wdrażania usług XML sieci Web i dostępu do usług XML sieci Web.
+[Usługi sieci web XML w kodzie zarządzanym](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) w tym artykule omówiono sposób tworzenia i wdrażania usług XML sieci web oraz dostęp do usług sieci web XML.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

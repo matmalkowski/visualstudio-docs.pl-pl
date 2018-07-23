@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,48 +17,48 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282281"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178206"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły walidacji dla testów wydajności sieci web
 
-Można utworzyć własne reguły sprawdzania poprawności. Aby to zrobić, klasy reguły pochodną klasy reguły sprawdzania poprawności. Reguły sprawdzania poprawności pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> klasy podstawowej.
+Możesz utworzyć własne reguły sprawdzania poprawności. Aby to zrobić, klasa reguły jest pochodzi od klasy reguł sprawdzania poprawności. Reguły sprawdzania poprawności pochodzić od <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> klasy bazowej.
 
 > [!NOTE]
-> Istnieje również możliwość utworzenia niestandardowych reguł wyodrębniania. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+> Można również utworzyć niestandardowe reguły wyodrębniania. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md).
 
-## <a name="to-create-custom-validation-rules"></a>Aby utworzyć niestandardowe reguły walidacji
+## <a name="to-create-custom-validation-rules"></a>Aby utworzyć niestandardowe reguły sprawdzania poprawności
 
-1.  Otwórz projekt Test zawierający test wydajności sieci Web.
+1.  Otwórz projekt Test zawierający test wydajności sieci web.
 
-2.  (Opcjonalnie) Utwórz oddzielne projektu biblioteki klas, w którym będą przechowywane reguły sprawdzania poprawności.
+2.  (Opcjonalnie) Należy utworzyć oddzielny projekt biblioteki klas, w której chcesz przechowywać regułę sprawdzania poprawności.
 
     > [!IMPORTANT]
     > Klasę można utworzyć w tym samym projekcie, w którym znajdują się testy. Jednak chcąc używać zdefiniowanej reguły do różnych testów, najlepiej utworzyć oddzielny projekt Biblioteki klas i w nim przechowywać regułę. W przypadku utworzenia oddzielnego projektu należy wykonać opcjonalne kroki podane w tej procedurze.
 
-3.  (Opcjonalnie) W projektu biblioteki klas Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3.  (Opcjonalnie) W projekcie biblioteki klas Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
 4.  Utwórz klasę pochodną od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Zaimplementuj elementy członkowskie <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
 5.  (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
 
-6.  (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu biblioteki klas, który zawiera niestandardowej reguły walidacji.
+6.  (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę poprawności.
 
-7.  W projekcie Test, otwórz testu wydajności sieci Web w **edytora testów wydajności sieci Web**.
+7.  W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
 
-8.  Aby dodać niestandardowej reguły walidacji na żądanie testu wydajności sieci Web, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie reguły walidacji**.
+8.  Aby dodać niestandardową regułę poprawności na żądanie testu wydajności sieci web, kliknij prawym przyciskiem myszy żądanie i wybierz pozycję **Dodaj regułę walidacji**.
 
-     **Dodawanie reguły walidacji** zostanie wyświetlone okno dialogowe. Zostanie wyświetlony z niestandardowej reguły walidacji w **wybierz regułę** listy wraz z reguł sprawdzania poprawności wstępnie zdefiniowane. Wybierz reguły walidacji niestandardowej, a następnie wybierz pozycję **OK**.
+     **Dodaj regułę walidacji** pojawi się okno dialogowe. Zostanie wyświetlony swojej niestandardowej reguły walidacji w **wybierz regułę** listy wraz z reguł sprawdzania poprawności wstępnie zdefiniowane. Wybierz swoje niestandardowej reguły walidacji, a następnie wybierz **OK**.
 
-9. Wykonaj test wydajności sieci Web.
+9. Uruchom test wydajności sieci web.
 
 ## <a name="example"></a>Przykład
 
-Poniższy kod przedstawia implementację niestandardowej reguły walidacji. Ta reguła walidacji naśladuje zachowanie wstępnie zdefiniowana reguła sprawdzania poprawności wymaganego tagu. Należy użyć tego przykładu jako punktu wyjścia dla własnych niestandardowych reguł walidacji.
+Poniższy kod pokazuje implementację niestandardowej reguły walidacji. Ta reguła walidacji naśladuje zachowanie wstępnie zdefiniowana reguła sprawdzania poprawności wymaganego tagu. Na użytek tego przykładu jako punktu wyjścia własne niestandardowe reguły sprawdzania poprawności.
 
 > [!WARNING]
 > Właściwości publiczne w kodzie dla niestandardowego modułu weryfikacji nie może mieć wartości null.

@@ -17,48 +17,48 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9aca0c3c17c64ccbc90550305e8f9673de388d98
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234465"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175751"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresu analizatora testu obciążenia
 
-Wyniki testu obciążenia są wyświetlane jako dane w kilku różnych okienek.
+Wyniki testu obciążeniowego są wyświetlane jako dane w kilku różnych okienek.
 
-Aby wyświetlić wyniki testów jako wykresy, wybierz **wykresy** na **testu obciążenia** paska narzędzi. Każdy wykres poszczególnych są wyświetlane w panelu nazwy wykresu wyświetlany u góry na liście rozwijanej. Aby wyświetlić innego wykresu, w panelu, wybierz nazwę innego wykresu, z listy.
+Aby wyświetlić wyniki testów jako wykresy, wybierz opcję **wykresów** na **testu obciążeniowego** paska narzędzi. Każdy Graf poszczególnych są wyświetlane w panelu nazwy programu graph, wyświetlane u góry na liście rozwijanej. Aby wyświetlić inny wykres na panelu, wybierz nazwę innego wykresu z listy.
 
-Maksymalnie cztery wykres panele mogą być wyświetlane w czasie. Można przełączać się między układów różnych panelu przy użyciu **Układ panelu** przycisku paska narzędzi.
+Maksymalnie cztery wykres panele mogą być wyświetlane w danym momencie. Możesz przełączać się między różnych paneli układów przy użyciu **Układ panelu** przycisku paska narzędzi.
 
-Podano kilka wbudowanych wykresy. Można użyć wbudowanej wykresy, ponieważ jest lub dostosować je. Ponadto można tworzyć własne wykresy. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) i [porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Kilka wbudowanych wykresy. Można użyć wbudowanego wykresów, ponieważ jest lub dostosować je. Ponadto można utworzyć własnego wykresów. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) i [porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
-## <a name="built-in-graphs"></a>Wykresy wbudowane
+## <a name="built-in-graphs"></a>Wbudowane wykresów
 
-W poniższej tabeli przedstawiono wbudowane wykresy, które są dostępne do analizowania wyników testów obciążenia.
+Poniższa tabela zawiera listę wbudowanych wykresów, które są dostępne do analizowania wyników testów obciążenia.
 
 |Nazwa wykresu|Opis|
 |----------------|-----------------|
-|Kluczowych wskaźników|Liczniki, które opisują podstawowe aspektów testowanie wydajności, takie jak czas ładowania, przepływności i odpowiedzi użytkownika.|
+|Kluczowe wskaźniki|Liczniki, które opisują podstawowych aspektów testowanie wydajności, takie jak czas ładowania, przepływność i odpowiedzi użytkownika.|
 |Czas odpowiedzi testu|Dane dotyczące ilości czasu testy wykonać, aby uruchomić.|
-|Czas odpowiedzi strony|Średni czas odpowiedzi dla stron sieci Web, które są dostępne podczas testu obciążenia.|
-|System w ramach testu|Informacje o komputerach, na których aplikacja testowane działa. Dotyczy to również dane dotyczące użycia pamięci, procesora, dysku fizycznego, procesów.<br /><br /> Domyślnie są zbierane tylko liczniki dostępna pamięć (MB) i czasu procesora.|
-|Kontroler i agenty|Informacje o komputerach, na których Uruchamianie testów obciążenia. Dotyczy to również dane dotyczące użycia pamięci, procesora, dysku fizycznego, procesów.<br /><br /> Domyślnie tylko dostępna pamięć (MB) i są zbierane przez liczniki czas procesora.|
-|Czas odpowiedzi transakcji|Średni czas odpowiedzi transakcji występujących podczas testu obciążenia.|
+|Czas odpowiedzi strony|Średni czas odpowiedzi dla stron sieci web, które są dostępne podczas testu obciążeniowego.|
+|System w trakcie testu|Informacje o komputerach, na których aplikacja testowana przebiegów. Obejmuje to dane dotyczące użycia pamięci, procesora, dysku fizycznego, procesów.<br /><br /> Domyślnie są zbierane tylko liczniki dostępna pamięć (MB) i czasu procesora.|
+|Kontroler i agentów|Informacje o komputerach, na których Uruchom testy obciążenia. Obejmuje to dane dotyczące użycia pamięci, procesora, dysku fizycznego, procesów.<br /><br /> Domyślnie tylko dostępnej ilości megabajtów i są zbierane przez liczniki czas procesora.|
+|Czas odpowiedzi transakcji|Średni czas odpowiedzi transakcji, które występują podczas testu obciążeniowego.|
 
- W czasie wykonywania i po wykonaniu testu, można wyświetlić różnych liczniki na wykresie.
+ Możesz wyświetlić różne liczniki na wykresie, w czasie wykonywania i po wykonaniu testu.
 
 > [!NOTE]
-> Tylko liczniki wydajności czasu odpowiedzi można dodać do wykresu czasu odpowiedzi wygenerowanej automatycznie.
+> Tylko liczniki wydajności czasu odpowiedzi można dodać do wykresu czasu odpowiedzi automatycznie wygenerowany.
 
- Informacje o liczniku wyświetla zarówno na wykresie, jak i w legendzie poniżej wykresy. Możesz również powiększać w sekcji wykresu. Aby uzyskać więcej informacji, zobacz [porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ Informacje o liczniku wyświetla zarówno na wykresie, a w legendzie poniżej wykresy. Możesz również powiększać sekcji wykresu. Aby uzyskać więcej informacji, zobacz [porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Liczniki wyświetlane na wykresach
 
- Wykres wyświetlania *liczniki*. Liczniki odwoływać się do danych użytkownika zebranych podczas testu obciążenia, takich jak testów na czas testu drugi lub średnia. Aby uzyskać więcej informacji na temat liczników, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+ Wyświetlanie wykresów *liczniki*. Liczniki dotyczą danych zebranych podczas testu obciążenia, takich jak testy na sekundę lub średnia test czasu. Aby uzyskać więcej informacji na temat liczników, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- Legenda liczniki, które są wyświetlane na wykresach zawiera kilka kolumn przydatne dane dotyczące uruchomienia testu obciążenia. Aby wyłączyć funkcję wyświetlania wszystkich danych na wykresie, wyczyść pole wyboru w wierszu w legendzie.
+ Legenda liczniki, które są wyświetlane na wykresach zawiera kilka kolumn użyteczne dane na temat przebiegu testu obciążeniowego. Aby wyłączyć funkcję wyświetlania wszystkich danych na wykresie, wyczyść pole wyboru w wierszu w legendzie.
 
  Legenda zawiera następujące kolumny:
 
@@ -66,31 +66,31 @@ W poniższej tabeli przedstawiono wbudowane wykresy, które są dostępne do ana
 |-------------|-----------------------------|
 |Wystąpienie|Nazwa wystąpienia licznika.|
 |Kategoria|Nazwa kategorii licznika.|
-|Komputer|Nazwa komputera, do którego są zbierane licznika.|
+|Komputer|Nazwa komputera, do którego zbierane są licznika.|
 |Kolor|Kolor linii na wykresie.|
-|Zakres|Wskazuje liczbę, która jest reprezentowana przez 100 na wykresie dla tego licznika. Na przykład dla zakresu, w których górna wartość wynosi 10 000, 100 etykiety w górnej części wykresu reprezentuje 10 000.|
-|Min|Wskazuje wartość minimalną dla licznika (w milisekundach).|
-|Maksymalna|Wskazuje wartość maksymalną dla licznika (w milisekundach).|
-|Śr.|Wskazuje średnia wartość licznika w milisekundach.|
-|ostatni|Pokazuje wartość licznika podczas ostatniego interwału próbkowania w milisekundach.|
+|Zakres|Określa liczbę, która jest reprezentowana przez 100 na wykresie dla tego licznika. Na przykład dla zakresu, w której górna wartość wynosi 10 000, 100 etykiety w górnej części wykresu reprezentuje 10 000.|
+|min|Wskazuje wartość minimalna dla licznika (w milisekundach).|
+|Maksymalna|Wskazuje maksymalną wartość licznika w milisekundach.|
+|Średni|Wskazuje, średnia wartość licznika w milisekundach.|
+|ostatni|Przedstawia wartość licznika w interwale próbkowania najbardziej aktualne w milisekundach.|
 
 ## <a name="tasks"></a>Zadania
 
-|Zadania|Skojarzone — tematy|
+|Zadania|Skojarzone tematy|
 |-----------|-----------------------|
-|**Dostosowywanie wykresów za pomocą legendy:** widoku wykresu legendy Wyświetla informacje dla każdego licznika wydajności, który jest skojarzony z wykresu. Legenda służy do usuwania liczników wydajności, zaznacz liczników wydajności na wykresie i Dostosuj opcje kreślenia.|-   [Analizowanie testów obciążenia za pomocą legendy wykresu](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Wyświetlanie liczników na wykresach:** można dodać różne rodzaje danych do testu obciążenia powoduje wykres przez umieszczenie liczniki na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Powiększ na wykresach:** po zakończeniu testu obciążenia umożliwia paski powiększenia powiększanie i przewijanie do obszaru wykresu. Powiększając należy zbadać danych, który został wygenerowany podczas testu obciążenia szczegółowo bardziej precyzyjną.|-   [Porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Wykresy kafelkowe:** można rozmieścić wykresy wyników testu obciążenia w jednym z kilku wzorców. Można podzielić maksymalnie cztery wykresy.||
-|**Modyfikowanie wyglądu wykresów liczników wydajności na wykresach:** kreślenia opcje linii dla liczników wydajności na wykresach można zmienić. W tym styl linii. Ponadto można określić, czy chcesz automatycznie lub ręcznie określ zakres, który ma być używany do kreślenia licznika wydajności.|-   [Porady: Określ opcje dla liczników sporządzających wykresy kreślenia](../test/how-to-specify-plot-options-for-graphing-counters.md)|
-|**Tworzenie wykresów niestandardowych:** można projektować wykresy zawierające szczegółowe informacje na temat wyników testu obciążenia. Projektowanie wykres niestandardowe, określając liczniki testu obciążenia, które służy do wyświetlenia wykresu.|-   [Porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Eksportuj dane liczników wydajności na wykresie:** można wyeksportować dane wykresu do programu Microsoft Excel za pomocą **Eksportuj dane wykresu do programu Excel** znajdującego się na **analizatora testu obciążenia** narzędzi podczas w **wykresy** widoku.||
+|**Dostosowywanie wykresów za pomocą legendy:** widoku wykresu, Legenda zawiera informacje dla każdego licznika wydajności, który jest skojarzony z wykresu. Aby usunąć liczniki wydajności, wyróżnij liczników wydajności na wykresie i Dostosuj opcje wykreślania, można użyć legendy.|-   [Korzystanie z legendy wykresu do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Wyświetlanie liczników na wykresach:** możesz dodać różne rodzaje danych do testu obciążenia powoduje wykresu, umieszczając liczniki na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Powiększ na wykresach:** po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększyć obraz i przewiń do obszaru wykresu. Przez powiększyć, można sprawdzić dane, który został wygenerowany podczas testu obciążenia uruchamiane w bardziej szczegółowo.|-   [Porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Kafelkowe:** można rozmieścić wykresy wyników testu obciążenia w jednym z kilku wzorców. Można kafelka maksymalnie cztery wykresy.||
+|**Modyfikowanie wyglądu wykresy liczników wydajności na wykresach:** wykreślania opcje linii dla liczników wydajności na wykresach można zmienić. Obejmuje to styl linii. Ponadto można określić, czy ma być automatycznie lub ręcznie określić zakres, który chcesz użyć do kreślenia licznika wydajności.|-   [Porady: Określ opcje dla liczników sporządzających wykresy wykresu](../test/how-to-specify-plot-options-for-graphing-counters.md)|
+|**Tworzenie wykresów niestandardowych:** można zaprojektować wykresów wyświetlających określone informacje na temat wyników testów obciążenia. Projektujesz niestandardowy wykres, określając liczniki testu obciążenia, które wykresie będą wyświetlane.|-   [Porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Eksportowanie danych liczników wydajności na wykresie:** możesz wyeksportować dane wykresu do programu Microsoft Excel za pomocą **Eksportuj dane wykresu do programu Excel** znajdujący się na **analizatora testu obciążenia** narzędzi podczas znajdują się w **wykresów** widoku.||
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
  [Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
+ [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
 
  [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 

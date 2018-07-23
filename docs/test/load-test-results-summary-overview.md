@@ -1,5 +1,5 @@
 ---
-title: Ładowanie omówienie podsumowania wyników testu w programie Visual Studio
+title: Ładowanie Przegląd podsumowania wyników testów w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,125 +16,125 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751861"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175936"
 ---
 # <a name="load-test-results-summary-overview"></a>Podsumowanie wyników testów obciążenia — Przegląd
 
-Po uruchomieniu testu obciążenia, można wyświetlić podsumowanie testu obciążenia, aby szybko poznać wyniki. Podsumowanie testu obciążenia zapewnia klucza wyniki w compact i łatwo odczytać formatu. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikacji wyniki do uczestników. Podsumowanie testu obciążenia jest również domyślny widok po otwarciu wyniku testu obciążenia z testu obciążenia wcześniej wykonywania. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
+Po uruchomieniu testu obciążenia, możesz wyświetlić podsumowanie testu obciążeniowego, aby szybko poznać wyniki. Podsumowanie testu obciążeniowego zapewnia kluczowe wyniki w compact, łatwe do odczytania formacie. Pozwala również na drukowanie podsumowania testu obciążenia. Ułatwia to używane podczas komunikowania się wyniki do zainteresowanych stron. Podsumowanie testu obciążeniowego jest również domyślny widok, po otwarciu wyniku testu obciążeniowego z wcześniej uruchomionego testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
  ![Widok podsumowania](../test/media/ltest_summaryview.png)
 
-## <a name="the-load-test-summary"></a>Podsumowanie testu obciążenia
+## <a name="the-load-test-summary"></a>Podsumowanie testu obciążeniowego
 
-Podsumowanie testu obciążenia jest podzielony na sekcje. Sekcje początkowej pojawiają się u góry podsumowania i są zawsze widoczne. Podczas wyświetlania podsumowania testu obciążenia pierwszego są następujące elementy:
+Podsumowanie testu obciążeniowego jest podzielona na sekcje. Początkowe sekcje są wyświetlane u góry strony podsumowania i są zawsze widoczne. Podczas wyświetlania podsumowania testu obciążenia pierwszego są następujące elementy:
 
-- Informacje o uruchomienia testu
+- Informacje o przebiegu testu
 
 - Ogólne wyniki
 
-- Kluczowe statystyki: 5 najwolniejszych stron z góry
+- Kluczowe statystyki: 5 najpopularniejszych najwolniejszych stron
 
-- Kluczowe statystyki: 5 najwolniejszych testów z góry
+- Kluczowe statystyki: Top 5 najwolniejszych testów
 
-- Kluczowe statystyki: 5 najwolniejszych operacji SQL z góry
+- Kluczowe statystyki: Top 5 najwolniejszych operacji SQL
 
     > [!NOTE]
-    > W sekcji operacji SQL jest wyświetlana tylko wtedy, gdy jest włączone śledzenie SQL w teście obciążenia.
+    > W sekcji operacji SQL jest wyświetlana tylko wtedy, gdy włączone jest śledzenie SQL w teście obciążeniowym.
 
-Sekcje zamknięcia znajdują się na końcu podsumowania i może zostać zwinięty aby zaoszczędzić miejsce. Następujące elementy są wyświetlane na końcu podsumowania testu obciążenia:
+Sekcje zamknięcia pojawiają się pod koniec podsumowania i może zostać zwinięty, aby zaoszczędzić miejsce. Na koniec podsumowania testu obciążenia wyświetlane są następujące elementy:
 
 - Wyniki tekstu
 
-- Strona z wynikami
+- Wyniki strony
 
 - Wyniki transakcji
 
-- System w obszarze zasoby testów
+- System w trakcie zasobów testowych
 
-- Kontroler i zasobów agenta
+- Kontroler i Agent zasobów
 
 - błędy
 
-## <a name="test-run-information"></a>Informacje o uruchomienia testu
+## <a name="test-run-information"></a>Informacje o przebiegu testu
 
-Uruchomienie testu sekcji informacji zawiera ogólne informacje o przebiegu, włącznie z nazwą testu, rozpoczęcia i zakończenia oraz kontrolera uruchomionego testu. Ta sekcja zawiera również opcjonalny opis uruchomienia umożliwiającego dodawanie po uruchomieniu testu obciążenia.
+Sekcja informacji o przebiegu testu zawiera ogólne informacje o przebiegu, łącznie z nazwą testu, rozpoczęcia i zakończenia oraz kontroler, który prowadził test. Ta sekcja zawiera również opcjonalny opis przebiegu, możesz dodać po uruchomieniu testu obciążenia.
 
 ## <a name="overall-results"></a>Ogólne wyniki
 
-Ogólny sekcji wyników zawiera podsumowania wyników testu, w tym liczbę żądań na sekundę, całkowita liczba nieudanych żądań, Średni czas odpowiedzi i strony Średni czas.
+Ogólny sekcja wyników zawiera podsumowania wyników testu, w tym liczbę żądań na sekundę, całkowita liczba żądań zakończonych niepowodzeniem, Średni czas odpowiedzi i czas średni strony.
 
-## <a name="key-statistic-top-5-slowest-pages"></a>Kluczowe statystyki: 5 najwolniejszych stron z góry
+## <a name="key-statistic-top-5-slowest-pages"></a>Kluczowe statystyki: 5 najpopularniejszych najwolniejszych stron
 
-Najwolniejsze sekcja strony zawiera pierwsze 5 najwolniejszych stron w teście obciążenia. Adres URL i czas ładowania strony są wyświetlane na każdej stronie. Strony są wymienione w kolejności malejącej. Można wybrać adres URL strony, aby otworzyć **stron** tabeli i Sprawdź więcej szczegółów na tej stronie. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Sekcji Najwolniejsze strony zawiera 5 pierwszych Najwolniejsze strony w teście obciążeniowym. Adres URL i czas ładowania strony są wyświetlane dla każdej strony. Strony są wymienione w kolejności malejącej. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
-Wartość percentylu **95% czasu strony (s)** raport zakończenie 95% stron w czasie krótszym niż ten czas w sekundach.
+Wartość percentylu **95% czasu strony (s)** zgłosić, że 95% strony ma być wykonane w czasie krótszym niż ten czas w sekundach.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Kluczowe statystyki: 5 najwolniejszych testów z góry
+## <a name="key-statistic-top-5-slowest-tests"></a>Kluczowe statystyki: Top 5 najwolniejszych testów
 
-Najwolniejsze sekcji testy zawiera top 5 najwolniejszych testów w teście obciążenia. Nazwa testu oraz średni czas testu są wyświetlane dla każdego z testów. Testy są wymienione w kolejności malejącej. Można wybrać nazwę testu, aby otworzyć **testy** tabeli i Sprawdź więcej szczegółów dla tego testu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Najwolniejsze sekcja testów zawiera najważniejsze 5 najwolniejszych testów w teście obciążeniowym. Nazwa testu i Średni czas testu są wyświetlane dla każdego testu. Testy są wymienione w kolejności malejącej. Można wybrać nazwę testu, aby otworzyć **testy** tabeli i sprawdzić szczegółowe informacje dla tego testu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 Wartość percentylu **95% czasu testu (s)** zgłosić, że 95% testy wykonane w czasie krótszym niż ten czas w sekundach.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Kluczowe statystyki: 5 najwolniejszych operacji SQL z góry
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Kluczowe statystyki: Top 5 najwolniejszych operacji SQL
 
-Włączenie śledzenia SQL w teście obciążenia najwolniejsze sekcji zapytania zawiera najpopularniejsze 5 najwolniejszych kwerendy w teście obciążenia. Nazwa operacji i czas trwania są wyświetlane dla każdego z testów. Czas trwania jest wyświetlany w mikrosekundach programu SQL Server 2005 lub milisekund (SQL Server 2000 lub starszym). Testy są wymienione w kolejności malejącej według czasu trwania. Można wybrać nazwę działania, aby otworzyć **śledzenia SQL** tabeli i Sprawdź więcej szczegółów dla tej operacji. Aby uzyskać więcej informacji, zobacz [Table danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
+Włączenie śledzenia SQL w teście obciążeniowym najwolniejsze sekcja zapytań zawiera najpopularniejsze 5 najwolniejszych zapytania w teście obciążeniowym. Nazwa operacji i czas trwania są wyświetlane dla każdego testu. Czas trwania jest wyświetlany w mikrosekundach programu SQL Server 2005 lub milisekund (SQL Server 2000 lub starszym). Testy są wymienione w kolejności malejącej według czasu trwania. Można wybrać nazwę działania, aby otworzyć **śledzenia SQL** tabeli i sprawdzić szczegółowe informacje dla tej operacji. Aby uzyskać więcej informacji, zobacz [tabela danych śledzenia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
 ## <a name="test-results"></a>Wyniki tekstu
 
-Sekcja wyników testu zawiera listę wszystkich testów i scenariusze w teście obciążenia. Nazwa testu, scenariusz, ile razy, że zostało wykonane, ile razy nie powiodło się oraz średni czas testu są wyświetlane. Można wybrać nazwę testu, aby otworzyć **testy** tabeli i Sprawdź więcej szczegółów dla tego testu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Sekcja wyniki testu zawiera listę wszystkich testów i scenariusze do testu obciążeniowego. Nazwa testu, scenariusz, ile razy został uruchomiony, ile razy nie powiodło się oraz średni czas testu są wyświetlane. Można wybrać nazwę testu, aby otworzyć **testy** tabeli i sprawdzić szczegółowe informacje dla tego testu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
 
-## <a name="page-results"></a>Strona z wynikami
+## <a name="page-results"></a>Wyniki strony
 
-Sekcja wyniki strona zawiera listę wszystkich stron sieci Web w teście obciążenia. Adres URL, scenariusz, nazwa testu, czas średni strony i liczby są wyświetlane. Można wybrać adres URL strony, aby otworzyć **stron** tabeli i Sprawdź więcej szczegółów na tej stronie. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Sekcja wyniki strona zawiera listę wszystkich stron sieci web w teście obciążeniowym. Adres URL, scenariusz, nazwy testu, czas strony średni i liczby są wyświetlane. Możesz wybrać adres URL strony, aby otworzyć **stron** tabeli i sprawdzić szczegółowe informacje dla tej strony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie strony sieci Web odpowiedzi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
 
 ## <a name="transaction-results"></a>Wyniki transakcji
 
-Sekcja wyników transakcji zawiera listę wszystkich transakcji w teście obciążenia. Nazwa transakcji, scenariusza testu, czas odpowiedzi, czas, który upłynął i liczba są wyświetlane. Można wybrać nazwę transakcji, aby otworzyć **transakcji** tabeli i Sprawdź więcej szczegółów dla tej transakcji. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Sekcja wyniki transakcji zawiera listę wszystkich transakcji w teście obciążeniowym. Nazwa transakcji, scenariusz, testu, czas odpowiedzi, upłynęło czasu i liczby są wyświetlane. Można wybrać nazwę transakcji, aby otworzyć **transakcji** tabeli i sprawdzić szczegółowe informacje dla tej transakcji. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
 
-Wartości percentylu raportu transakcji następujące informacje:
+Wartości percentyla raportu następujące informacje o transakcji:
 
--   Zakończono 90% wszystkich transakcji w mniej niż \<czasu > sekund.
+-   Zakończono 90% łącznej liczby transakcji w mniej niż \<czas > sekund.
 
--   Zakończono 95% wszystkich transakcji w mniej niż \<czasu > sekund.
+-   Zakończono 95% łącznej liczby transakcji w mniej niż \<czas > sekund.
 
-## <a name="system-under-test-resources"></a>System w obszarze zasoby testów
+## <a name="system-under-test-resources"></a>System w trakcie zasobów testowych
 
-System sekcji Zasoby testu zawiera listę komputerów, które są zbiór komputerów docelowych, dla których wygenerowane obciążenie. W tym dowolnego komputera, z którego można zebrać zbiorów liczników niż agenta lub kontrolera. Nazwa komputera % czasu procesora i pamięci są wyświetlane. Można wybrać nazwę komputera, aby otworzyć **testowanym systemie** wykres i Sprawdź użycie zasobów w czasie. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md).
-
-> [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
-
-## <a name="controller-and-agent-resources"></a>Kontroler i zasobów agenta
-
-Sekcja Zasoby kontrolera i agenta zawiera listę komputerów, które są używane do uruchomienia testu. Nazwa komputera % czasu procesora i pamięci są wyświetlane. Można wybrać nazwę komputera, aby otworzyć **kontroler i agenty** wykres i Sprawdź użycie zasobów w czasie. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md).
+System sekcji Zasoby testu zawiera listę komputerów, które są zbiór komputerów docelowych, dla których obciążenie jest generowane. Dotyczy to również dowolnego komputera, z którego są zbierane zbiory liczników, innym niż agenta lub kontrolera. Nazwa komputera, % czasu procesora i pamięci są wyświetlane. Można wybrać nazwę komputera, aby otworzyć **badanego** programu graph i sprawdź wykorzystanie zasobów wraz z upływem czasu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
+
+## <a name="controller-and-agent-resources"></a>Kontroler i Agent zasobów
+
+Sekcja Zasoby kontrolera i agenta zawiera listę komputerów, które są używane do uruchomienia testu. Nazwa komputera, % czasu procesora i pamięci są wyświetlane. Można wybrać nazwę komputera, aby otworzyć **kontrolera i agentów** programu graph i sprawdź wykorzystanie zasobów wraz z upływem czasu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
+
+> [!NOTE]
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
 
 ## <a name="errors"></a>błędy
 
-W sekcji błędy zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążenia. Wyświetlane są typu i podtypu błąd, liczba i ostatniego komunikatu. Możesz wybrać błąd, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów dla tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md).
+Sekcja błędów zawiera listę wszystkich błędów, które wystąpiły podczas testu obciążeniowego. Typ i podtyp błąd, liczby wartości oraz ostatni komunikat są wyświetlane. Możesz wybrać błędu, aby otworzyć **błędy** tabeli i Sprawdź więcej szczegółów tego błędu. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) i [porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md).
 
 > [!NOTE]
-> Można zwijać i rozwijać w tej sekcji, wybierając strzałkę w lewo tytuł sekcji.
+> Można zwinąć, a następnie rozwiń tę sekcję, wybierając strzałkę po lewej stronie w tytułach sekcji.
 
 ## <a name="printing-a-summary"></a>Drukowanie podsumowanie
 
-Podsumowanie testu obciążenia można wydrukować, wybierając **drukowanie** menu skrótów w podsumowaniu. Wyświetl podgląd wydruku pierwszy, wybierając **Podgląd wydruku** menu skrótów w podsumowaniu. Pozwala również na drukowanie bezpośrednio na ekranie podglądu.
+Podsumowanie testu obciążeniowego można wydrukować, wybierając **drukowanie** menu skrótów w podsumowaniu. Możesz wyświetlić podgląd wydruku pierwszy, wybierając **Podgląd wydruku** menu skrótów w podsumowaniu. Można również drukować bezpośrednio z ekranu (wersja zapoznawcza).
 
 ## <a name="see-also"></a>Zobacz także
 

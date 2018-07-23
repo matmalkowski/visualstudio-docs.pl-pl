@@ -1,5 +1,5 @@
 ---
-title: API testu wydajności sieci Web w programie Visual Studio
+title: Test wydajności sieci Web interfejsu API w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,59 +11,59 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969132"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175798"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Porady: korzystanie z API testu wydajności sieci Web
 
-Można napisać kod dla testów wydajności sieci Web. Testu wydajności sieci Web interfejsu API jest używany do tworzenia zakodowanych testów wydajności sieci Web, testu wydajności sieci Web niego dodatki plug-in, wtyczki żądania, żądania, reguły wyodrębniania i reguł sprawdzania poprawności. Klasy, które tworzą te typy są podstawowe klasy w tym interfejsie API. Inne typy w tym interfejsie API są używane do obsługi tworzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> obiektów. Możesz użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw, aby utworzyć dostosowany testów wydajności sieci Web.
+Można napisać kod dla testów wydajności sieci web. Test wydajności sieci web interfejsu API jest używany do utworzenia kodowanego testu wydajności WWW, sieci web wydajności wtyczki testu, wtyczki żądania, żądania, reguły wyodrębniania, reguł sprawdzania poprawności. Klasy, które tworzą te typy są klasy podstawowe, w tym interfejsie API. Inne typy w tym interfejsie API są używane do obsługi tworzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, i <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> obiektów. Możesz użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw, aby tworzyć niestandardowe internetowe testy wydajnościowe.
 
- Aby programowo utworzyć i zapisać deklaratywne testów wydajności sieci Web umożliwia także interfejsu API testu wydajności sieci Web. Aby to zrobić, użyj <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> klasy.
+ Aby programowo utworzyć i zapisać testów wydajności sieci web deklaratywne umożliwia także interfejsu API testu wydajności sieci web. Aby to zrobić, należy użyć <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> klasy.
 
 > [!TIP]
-> Użyj przeglądarki obiektów do sprawdzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw. Edytory Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense dla kodowania z klas w przestrzeni nazw.
+> Używanie przeglądarki obiektów do zbadania <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw. Edytory zarówno Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense na kodowanie przy użyciu klas w przestrzeni nazw.
 
 
- Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więcej informacji, zobacz [porady: za pomocą interfejsu API Test obciążenia](../test/how-to-use-the-load-test-api.md) i [porady: tworzenie wtyczek testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
+ Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Użyj interfejsu API testu obciążeniowego](../test/how-to-use-the-load-test-api.md) i [jak: utworzyć wtyczkę testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Użycie tej przestrzeni nazw WebTesting
 
-1.  Otwórz projekt testów wydajności i testów obciążeniowych sieci Web zawierający test wydajności sieci Web.
+1.  Otwórz wydajności sieci web i obciążenia projektu testowego, który zawiera test wydajności sieci web.
 
-2.  Dodaj Visual C# lub Visual Basic projektu biblioteki klas do rozwiązania testu.
+2.  Dodaj Visual C# lub projekt biblioteki klas języka Visual Basic do rozwiązania testu.
 
-3.  Dodaj odwołanie w projekcie testowym wydajności i obciążenia sieci Web do projektu biblioteki klas.
+3.  Dodaj odwołanie w projekcie testu wydajności i obciążenia sieci web do projektu biblioteki klas.
 
-4.  Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework w projektu biblioteki klas.
+4.  Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.WebTestFramework w projekcie biblioteki klas.
 
-5.  W pliku klasy, które znajdują się w temacie projektu biblioteki klas, Dodaj `using` instrukcji dla <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw.
+5.  W pliku klasy, który znajduje się w projekcie biblioteki klas, Dodaj `using` poufności informacji dotyczące <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw.
 
 6.  Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> interfejsu.
 
 7.  Skompiluj projekt.
 
-8.  Dodaj wtyczkę testu wydajności nowej sieci Web za pomocą edytora testu wydajności sieci Web:
+8.  Dodaj nowy test wydajności sieci web wtyczki za pomocą edytora testu wydajności sieci Web:
 
-    1.  Wybierz **Dodawanie wtyczek testu sieci Web** na pasku narzędzi.
+    1.  Wybierz **Dodaj wtyczkę testu sieci Web** na pasku narzędzi.
 
-         **Dodawanie wtyczek testu sieci Web** zostanie wyświetlone okno dialogowe.
+         **Dodaj wtyczkę testu sieci Web** zostanie wyświetlone okno dialogowe.
 
-    2.  W obszarze **wtyczka jest wybierana**, wybierz klasy wtyczki testu wydajności sieci Web.
+    2.  W obszarze **Wybierz wtyczkę**, zaznacz klasę wtyczki testu wydajności sieci web.
 
-    3.  W **właściwości wybranych wtyczek** okienko, ustaw wartość początkową dla wtyczki do użycia w czasie wykonywania.
+    3.  W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
         > [!NOTE]
-        > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci Web można również edytować później przy użyciu okna właściwości.
+        > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci web można również edytować później za pomocą okna właściwości.
 
     4.  Wybierz **OK**.
 
-9. Wykonaj test wydajności sieci Web.
+9. Uruchom test wydajności sieci web.
 
-     Na przykład stosowania <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, zobacz [porady: tworzenie wtyczek testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Przykład wykonania <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, zobacz [porady: tworzenie wtyczki testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Zobacz także
 

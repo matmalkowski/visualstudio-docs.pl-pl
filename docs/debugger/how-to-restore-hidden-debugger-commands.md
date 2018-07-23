@@ -20,60 +20,60 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47f8cbb342f480e6124f765b3b427a615ec6a38
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475200"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176846"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Porady: przywracanie ukrytych poleceń debugera
-Podczas konfigurowania programu Visual Studio, zostanie wyświetlona prośba o wybranie zestaw domyślnych ustawień IDE podstawowy język programowania. Domyślne ustawienia IDE w przypadku niektórych języków może ukryć niektórych poleceń debugera.  
+Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnego ustawienia środowiska IDE dla Twojego nadrzędnego języka programowania. Domyślne ustawienia IDE w przypadku niektórych języków może ukryć niektórych poleceń debugera.  
   
- Jeśli chcesz korzystać z funkcji debugera, który jest ukryty przez ustawienia domyślne IDE, można dodać polecenia do menu za pomocą poniższej procedury.  
+ Jeśli chcesz korzystać z funkcji debugera, które zostały ukryte przez domyślne ustawienia IDE, można dodać polecenie do menu, korzystając z następującej procedury.  
   
-### <a name="to-restore-hidden-debugger-commands"></a>Aby przywrócić ukrytych poleceń debugera  
+### <a name="to-restore-hidden-debugger-commands"></a>Aby Przywracanie ukrytych poleceń debugera  
   
-1.  Z projektem otwarty na **narzędzia** menu, kliknij przycisk **Dostosuj**.  
+1.  W projekcie, które są otwarte, w **narzędzia** menu, kliknij przycisk **Dostosuj**.  
   
 2.  W **Dostosuj** okno dialogowe, kliknij przycisk **polecenia** kartę.  
   
-3.  W **paska Menu:** listy rozwijanej, wybierz pozycję **debugowania** menu, które ma zawierać polecenia przywrócone.  
+3.  W **pasek Menu:** listę rozwijaną, wybierz opcję **debugowania** menu, które ma zawierać przywróconej polecenia.  
   
 4.  Kliknij przycisk **Dodaj polecenie...**  przycisku.  
   
-5.  W **polecenia Add** wybierz polecenie, które chcesz dodać, a następnie kliknij przycisk **OK**.  
+5.  W **Dodaj polecenie** wybierz polecenie, które chcesz dodać, a następnie kliknij przycisk **OK**.  
   
-6.  Powtórz poprzedni krok, aby dodać innego polecenia.  
+6.  Powtórz poprzedni krok, aby dodać inne polecenie.  
   
-7.  Kliknij przycisk **Zamknij** po ukończeniu Dodawanie poleceń do menu.  
+7.  Kliknij przycisk **Zamknij** Kiedy zakończysz dodawanie poleceń do menu.  
   
     > [!WARNING]
-    >  Niektóre elementy menu są wyświetlane, gdy debuger jest w trybach określonych, takie jak tryb uruchamiania lub w trybie przerwania. W związku z tym dodanego elementu nie można od razu widoczne po wykonaniu tych kroków.  
+    >  Niektóre elementy menu są wyświetlane, gdy debuger jest w trybach określonych, takie jak tryb uruchamiania lub trybie przerwania. W związku z tym nie może być od razu widoczne element, który został dodany, po wykonaniu tych kroków.  
   
-## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Przywracanie poleceń nie jest dostępna w oknie dialogowym Dostosuj  
- Nie można przywrócić niektórych poleceń, zwłaszcza tych, które w menu hierarchiczna z **Dostosuj** okno dialogowe. Aby przywrócić te polecenia, należy zaimportować nową kolekcję ustawień IDE.  
+## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Przywracanie poleceń, które nie są dostępne w oknie dialogowym Dostosuj  
+ Nie można przywrócić niektórych poleceń, zwłaszcza tych, które dostępnych w menu hierarchiczne z **Dostosuj** okno dialogowe. Aby przywrócić tych poleceń, należy zaimportować nową kolekcję ustawień środowiska IDE.  
   
-#### <a name="to-import-new-ide-settings"></a>Aby zaimportować nowe ustawienia IDE  
+#### <a name="to-import-new-ide-settings"></a>Aby zaimportować nowe ustawienia środowiska IDE  
   
 1.  Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.  
   
-2.  Na **Kreator importowania i eksportowania ustawień-Zapraszamy** kliknij przycisk **Importuj wybrane ustawienia środowiska**, a następnie kliknij przycisk **dalej**.  
+2.  Na **Kreatora importowania i eksportowania ustawień-Zapraszamy** kliknij **Importuj ustawienia wybranego środowiska**, a następnie kliknij przycisk **dalej**.  
   
-3.  Na **zapisać bieżące ustawienia** zdecyduj, czy chcesz zapisać Twoje istniejące ustawienia, a następnie kliknij pozycję **dalej**.  
+3.  Na **zapisać bieżące ustawienia** strony, zdecyduj, czy chcesz zapisać Twoje istniejące ustawienia, a następnie kliknij przycisk **dalej**.  
   
-4.  Na **wybierz kolekcję ustawień do zaimportowania** w obszarze **ustawienia domyślne** folderu, wybierz kolekcję ustawień środowiska ma polecenia, którego chcesz użyć. Jeśli nie wiadomo, które kolekcji, spróbuj **ogólne ustawienia środowiska deweloperskiego** lub **ustawienia środowiska deweloperskiego w usłudze Visual C++**, które zapewniają najbardziej poleceń debugera.  
+4.  Na **wybierz kolekcję ustawień do zaimportowania** w obszarze **ustawienia domyślne** folderu, wybierz kolekcję ustawień środowiska deweloperskiego, zawierający polecenia, którego chcesz użyć. Jeśli nie wiadomo, którą kolekcję, aby wybrać, spróbuj **ogólnych ustawieniach projektowych** lub **ustawienia środowiska deweloperskiego Visual C++**, które zawierają najbardziej poleceń debugera.  
   
 5.  Kliknij przycisk **Dalej**.  
   
-6.  Na **wybierz ustawienia do importowania** w obszarze **opcje**, upewnij się, że **debugowanie** jest zaznaczone. Usuń zaznaczenie innych pól wyboru, chyba że chcesz zaimportować te ustawienia, a także.  
+6.  Na **wybierz ustawienia do importowania** w obszarze **opcje**, upewnij się, że **debugowanie** jest zaznaczone. Wyczyść pozostałe pola wyboru, chyba że chcesz zaimportować te ustawienia, a także.  
   
 7.  Kliknij przycisk **Zakończ**.  
   
-8.  Na **pełny Import** Przejrzyj błędy skojarzone z Resetowanie ustawień w obszarze **szczegóły**.  
+8.  Na **pełny Import** przejrzyj wszelkie błędy skojarzone z Resetowanie ustawień w obszarze **szczegóły**.  
   
 9. Kliknij przycisk **Zamknij**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

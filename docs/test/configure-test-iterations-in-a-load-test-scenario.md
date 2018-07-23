@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie iteracji testowych dla obciążenia testowania w programie Visual Studio
+title: Konfigurowanie iteracji testowych dla testy obciążeniowe w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,86 +12,86 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1892afefa7840910c51f184ca16ef2a6c6cd771a
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302913"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176144"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurowanie iteracji testowych w scenariuszu testu obciążenia
 
-Aby skonfigurować ustawienia iteracji testu, należy edytować scenariusza testu obciążenia za pomocą edytora testu obciążenia i **właściwości** okna. Domyślnie scenariusza testu obciążenia jest skonfigurowany bez określania maksymalnej liczby iteracji testu. Istnieje możliwość konfigurowania maksymalna liczba iteracji w scenariuszu i jak długo, aby wstrzymać między nimi.
+Aby skonfigurować ustawienia iteracji testu, edytować Scenariusz testów obciążenia za pomocą edytora testu obciążenia i **właściwości** okna. Domyślnie scenariusza testu obciążeniowego jest skonfigurowany bez określania opcji Maksymalna liczba iteracji testu. Masz możliwość skonfigurowania maksymalną liczbę iteracji, w tym scenariuszu i długość przerwy między nimi.
 
-## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Określ maksymalnej liczby iteracji testu dla scenariusza
+## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Określ maksymalna liczba iteracji testu dla scenariusza
 
-Można określić maksymalną liczbę razy ma testów do uruchomienia dla scenariusza za pomocą edytora testu obciążenia, aby zmienić **maksymalna liczba iteracji testu** właściwości w **właściwości** okna.
+Można określić maksymalną liczbę razy, które mają testów do uruchamiania dla scenariusza za pomocą edytora testu obciążenia, aby zmienić **maksymalna liczba iteracji testu** właściwość **właściwości** okna.
 
-**Maksymalna liczba iteracji testu** właściwość kontroluje maksymalną liczbę iteracji testu do uruchamiania dla tego scenariusza. Podobnie jak w przypadku **iteracje testu** parametrów uruchomieniowych właściwości w teście obciążenia, nie jest to maksymalna dla wszystkich użytkowników na wszystkich agentów na ustawienia użytkownika.
-
-> [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
-
- W przypadku sekwencyjnych testu mieszanego iteracji jednego jest jeden przekazywania wszystkich testów w zestawie. Dla wszystkich innych mieszanki testów Każde wykonanie testu jest traktowana jako iteracji. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
-
- Jeśli test obciążenia opartego na czas trwania testu obciążenia, a czas trwania wygasa przed zakończeniem liczby iteracji, zatrzyma się nadal testu. Jeśli test jest oparta na protokole iteracji i iteracjami testu są spełnione przed iteracji scenariusz, test zostanie zatrzymane. Czas trwania jest konfigurowana przy użyciu **Uruchom czas trwania** właściwości w **właściwości** okno skojarzone z ustawień w teście obciążenia.
-
- Po spełnieniu liczby iteracji scenariusz scenariusza przestanie działać, ale innych scenariuszy aktywnej będzie kontynuował działanie.
+**Maksymalna liczba iteracji testu** właściwość kontroluje maksymalną liczbę iteracji testu do uruchomienia dla tego scenariusza. Podobnie jak w przypadku **iteracje testu** parametrów uruchomieniowych właściwości w teście obciążenia, nie jest to maksymalna dla wszystkich użytkowników dla wszystkich agentów według ustawień użytkownika.
 
 > [!NOTE]
-> Właściwość powiązane jest **Unique** właściwości źródła danych testu sieci Web, które przenosi sekwencyjnie przez dane, wiersz po wierszu, ale tylko jeden raz dla każdego rekordu. Aby uzyskać więcej informacji, zobacz [Dodawanie źródła danych do testu wydajności sieci web](../test/add-a-data-source-to-a-web-performance-test.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
- **Maksymalna liczba iteracji testu** właściwość jest przydatna w różnych sytuacjach. Niektóre testerów obciążenia wolą należy przeprowadzić na podstawie iteracji test, podczas gdy inne obciążenia testerów wolą należy przeprowadzić test na podstawie czasu trwania.
+ W przypadku sekwencyjnych testu mieszanego jednej iteracji jest jeden przekazuj wszystkie testy w asortymencie. Dla wszystkich innych mieszanki testów każdego wykonania testu jest liczona jako iteracji. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+
+ Jeśli test obciążenia jest test obciążenia opartego na czasie trwania i wygaśnięciu czasu trwania przed zakończeniem liczbę iteracji, test nadal zostanie zatrzymane. Jeśli test jest oparte na iteracji i iteracjami testu są spełnione przed iteracji w scenariuszu, test zostanie zatrzymane. Czas trwania jest konfigurowana przy użyciu **czas trwania uruchomienia** właściwość **właściwości** okna skojarzonych ustawieniach testu w teście obciążeniowym.
+
+ Po spełnieniu scenariusz liczby iteracji scenariusza przestanie działać, ale inne scenariusze active będą nadal działać.
+
+> [!NOTE]
+> Powiązane właściwości **unikatowe** właściwości w źródle danych testu sieci web, która przenosi sekwencyjnie przez dane, wiersz po wierszu, ale tylko jeden raz dla każdego rekordu. Aby uzyskać więcej informacji, zobacz [Dodawanie źródła danych do testu wydajności sieci web](../test/add-a-data-source-to-a-web-performance-test.md).
+
+ **Maksymalna liczba iteracji testu** właściwość jest przydatna dla wielu różnych sytuacjach. Testerzy obciążenia wolą należy przeprowadzić testowanie oparte na iteracji, natomiast inne obciążenia testerów Preferuj przeprowadzenie testowania opartego na czasie trwania.
 
  ![Określanie iteracji testowych w scenariuszu](../test/media/loadtest_prop.png)
 
-### <a name="to-specify-the-maximum-test-iterations"></a>Aby określić maksymalnej liczby iteracji testu
+### <a name="to-specify-the-maximum-test-iterations"></a>Aby określić, maksymalna liczba iteracji testu
 
-1. Otwórz testu obciążenia.
+1. Otwórz test obciążenia.
 
-2. Zostanie wyświetlone edytora testu obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
+2. Zostanie wyświetlony Edytor testów obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
 
-3. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testowych.
+3. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, dla którego chcesz określić maksymalną liczbę iteracji testu.
 
-4. Na **widoku** menu, wybierz opcję **okna właściwości**.
+4. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości scenariusza są wyświetlane w **właściwości** okna.
 
-5. W polu tekstowym dla **maksymalna liczba iteracji testu** właściwości, wpisz wartość, która wskazuje maksymalną liczbę testów do uruchomienia dla tego scenariusza, po uruchomieniu testu obciążenia.
+5. W polu tekstowym dla **maksymalna liczba iteracji testu** właściwości, wpisz wartość, która określa maksymalną liczbę testów do uruchomienia w ramach scenariusza opisywanego po uruchomieniu testu obciążenia.
 
     > [!NOTE]
     > Przy użyciu wartości 0 dla **maksymalna liczba iteracji testu** właściwość określa nie maksymalna liczba iteracji.
 
-6. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowej **maksymalna liczba iteracji testu** wartość.
+6. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie można uruchomić testu obciążenia za pomocą nowego **maksymalna liczba iteracji testu** wartość.
 
-## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Określ czasów reakcji pomiędzy iteracjami testu dla scenariusza
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Określić czasy reakcji pomiędzy iteracjami testu dla scenariusza
 
-**Wziąć pod uwagę czas między iteracje testu** właściwość jest ustawiona przy użyciu **właściwości** okno podczas edytowania właściwości scenariusza testów obciążenia w edytorze testu obciążenia.
+**Traktować czas między iteracjami testu** właściwość można ustawić przy użyciu **właściwości** okna podczas edytowania właściwości scenariusza testów obciążenia w edytorze testu obciążeniowego.
 
-**Wziąć pod uwagę czas między iteracje testu** właściwość jest używana, aby określić liczbę sekund oczekiwania przed rozpoczęciem iteracji testu.
+**Traktować czas między iteracjami testu** właściwość jest używana, aby określić liczbę sekund oczekiwania przed rozpoczęciem iteracji testu.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Aby określić czas namysłu pomiędzy iteracjami testu
 
-1. Otwórz testu obciążenia.
+1. Otwórz test obciążenia.
 
-     **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusza, aby określić czas reakcji.
+2. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, aby określić czas namysłu na potrzeby.
 
-3. Na **widoku** menu, wybierz opcję **okna właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
-4. Wartości **wziąć pod uwagę czas między iteracje testu** właściwości, wprowadź liczbę reprezentującą liczbę sekund oczekiwania przed rozpoczęciem następnej iteracji testu.
+4. Wartości **traktować czas między iteracjami testu** właściwość, wprowadź liczbę reprezentującą liczbę sekund oczekiwania przed rozpoczęciem następnej iteracji testu.
 
-5. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **wziąć pod uwagę czas między iteracje testu** wartość.
+5. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **traktować czas między iteracjami testu** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Konfigurowanie agentów testowych i testowanie kontrolerów testów obciążenia](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Konfigurowanie agentów testowych i kontrolerów testów obciążenia testów](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
-- [Edytowanie czasów reakcji w celu symulowania opóźnienia człowieka witryny sieci Web](../test/edit-think-times-in-load-test-scenarios.md)
+- [Edytowanie czasów reakcji w celu symulowania witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md)

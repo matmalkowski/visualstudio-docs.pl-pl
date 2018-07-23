@@ -16,35 +16,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957830"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179170"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Porady: podział klas na klasy częściowe w Projektancie klas
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Porady: podział klasy na klasy częściowe w Projektancie klas
 
-Można użyć `partial` — słowo kluczowe (`Partial` w języku Visual Basic) do dzielenia deklaracji klasy lub struktury między kilka deklaracji. Możesz użyć dowolnej liczby częściowe deklaracje.
+Możesz użyć `partial` — słowo kluczowe (`Partial` w języku Visual Basic) do dzielenia deklaracji klasy lub struktury między kilka deklaracji. Można użyć tylu częściowe deklaracje.
 
-Deklaracje można w jednym lub wielu plików źródłowych. Wszystkie deklaracje muszą być w tym samym zestawie i tego samego obszaru nazw.
+Deklaracje może być w jednym lub w wielu plikach źródłowych. Wszystkie deklaracje musi należeć do tego samego zestawu i tej samej przestrzeni nazw.
 
-Klasy częściowe są przydatne w kilku sytuacjach. Na dużego projektu na przykład rozdzielić wiele plików klasy umożliwia więcej niż jeden programisty do pracy nad projektem w tym samym czasie. Podczas pracy z kodem, który generuje Visual Studio, można zmienić klasy bez konieczności ponownego tworzenia pliku źródłowego. (Przykłady kodu, który generuje Visual Studio obejmuje kod otoki formularzy systemu Windows i usługi sieci Web). W związku z tym można tworzyć kod, który używa automatycznie generowanej klasy bez konieczności modyfikowania pliku, który tworzy Visual Studio.
+Klasy częściowe są przydatne w kilku sytuacjach. W dużym projekcie na przykład oddzielenie klasę do wielu plików umożliwia więcej niż jeden programisty do pracy nad projektem w tym samym czasie. Podczas pracy z kodem, który program Visual Studio generuje klasę można zmienić bez konieczności ponownego tworzenia pliku źródłowego. (Przykłady kodu, który generuje programie Visual Studio obejmuje kodu otoki usługi sieci web i Windows Forms). Ten sposób można utworzyć kod, który używa klasy generowane automatycznie, bez konieczności modyfikowania pliku przez program Visual Studio.
 
-Istnieją dwa rodzaje metod częściowych. W języku C# są one nazywane deklarowanie i wdrażanie; w języku Visual Basic są one nazywane deklaracji i implementacji.
+Istnieją dwa rodzaje metod częściowych. W języku C# są nazywane deklarowania i implementowanie; w języku Visual Basic są nazywane deklarację i implementację.
 
-**Projektant klas** obsługuje klasy częściowe i metody. Typ kształtu na diagramie klas odwołuje się do lokalizacji Pojedyncza deklaracja klasy częściowej. Jeśli częściowej klasy jest zdefiniowany w wielu plikach, można określić, które lokalizacji deklaracji **Projektant klas** użyje przez ustawienie **nowej lokalizacji elementu członkowskiego** właściwości w **właściwości**  okna. Oznacza to, kliknij dwukrotnie kształt klasy **Projektant klas** zbliża się do pliku źródłowego, który zawiera deklarację klasy oznaczona **nowej lokalizacji elementu członkowskiego** właściwości. Po dwukrotnym kliknięciu metody częściowej w kształcie klasy **Projektant klas** przechodzi do deklaracji metody częściowej. W przypadku **właściwości** okna, **nazwę pliku** właściwość odwołuje się do lokalizacji deklaracji. Dla klas częściowych **nazwę pliku** zawiera listę wszystkich plików, które zawierają kod deklaracji i implementacji dla tej klasy. Niemniej jednak w przypadku metody częściowe **nazwę pliku** listę plików, który zawiera deklaracji metody częściowej.
+**Projektant klasy** obsługuje klasy częściowe i metody. Typ kształtu na diagramie klasy odwołuje się do lokalizacji jednej deklaracji klasy częściowej. Jeśli częściowa klasa jest zdefiniowana w wielu plikach, można określić lokalizacji, do której deklaracji **projektanta klas** użyje ustawiając **Lokalizacja nowej składowej** właściwość **właściwości**  okna. Oznacza to, że po dwukrotnym kliknięciu kształt klasy **projektanta klas** zbliża się do pliku źródłowego, który zawiera deklarację klasy identyfikowane przez **Lokalizacja nowej składowej** właściwości. Po dwukrotnym kliknięciu metody częściowej w kształcie klasy **projektanta klas** przechodzi do deklaracji metody częściowej. Ponadto **właściwości** oknie **nazwy pliku** właściwość odwołuje się do lokalizacji, w deklaracji. Dla klas częściowych **nazwy pliku** zawiera listę wszystkich plików, które zawierają kod deklarację i implementację dla tej klasy. Jednak w przypadku metod częściowych **nazwy pliku** plik zawierający deklaracji metody częściowej.
 
-Poniższe przykłady dzielenie definicji klasy `Employee` do dwóch deklaracji, z których każdy definiuje innej procedury. Dwie definicje częściowe w przykładach można w jednym pliku źródłowym lub w dwóch plikach innego źródła.
+Poniższe przykłady dzielenie definicji klasy `Employee` na dwie deklaracje, z których każdy definiuje różne procedury. Dwie definicje częściowe w przykładach można w jednym pliku źródłowym lub w dwóch innych plików źródłowych.
 
 > [!NOTE]
-> Visual Basic używa definicje klas częściowego do oddzielania Visual Studio — wygenerowanego kodu z kodu utworzonymi przez użytkownika. Kod jest podzielone na osobne źródłowe pliki. Na przykład **projektanta formularzy systemu Windows** definiuje częściowej klasy formantów, takich jak `Form`. Wygenerowany kod w tych kontrolek nie należy modyfikować.
+> Visual Basic używa definicji częściowej klasy do oddzielania programu Visual Studio — wygenerowanego kodu z kodu utworzonych przez użytkownika. Kod jest dzielony na pliki źródłowe dyskretnych. Na przykład **projektanta formularzy Windows** definiuje częściowe klasy dla kontrolek, takich jak `Form`. Kod wygenerowany w tych kontrolek nie należy modyfikować.
 
 Aby uzyskać więcej informacji na temat typów częściowych w języku Visual Basic, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial).
 
 ## <a name="example"></a>Przykład
 
-Aby podzielić definicję klasy, należy użyć `partial` — słowo kluczowe (`Partial` w języku Visual Basic), jak pokazano w poniższym przykładzie:
+Aby podzielić definicji klasy, należy użyć `partial` — słowo kluczowe (`Partial` w języku Visual Basic), jak pokazano w poniższym przykładzie:
 
 ```csharp
 // First part of class definition.
@@ -82,5 +82,5 @@ End Class
 
 - [Klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - [Partial (typ) (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/partial-type)
-- [Partial — metoda () (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/partial-method)
+- [Partial (metoda) (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/partial-method)
 - [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

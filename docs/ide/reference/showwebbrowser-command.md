@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704879"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176388"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
-Wyświetla adres URL, określ w oknie przeglądarki sieci Web albo w ramach zintegrowane środowisko programistyczne (IDE) lub zewnętrzne względem programu IDE.
+
+Wyświetla adres URL w oknie przeglądarki sieci web w ramach zintegrowanego środowiska programistycznego (IDE) lub zewnętrznego dla IDE.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,22 +35,22 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Argumenty
  `URL`
 
- Wymagana. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
+ Wymagane. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
 
 ## <a name="switches"></a>Przełączniki
- / new
+ / Nowy
 
- Opcjonalna. Określa, czy strona jest wyświetlana w nowym wystąpieniu przeglądarki sieci Web.
+ Opcjonalna. Określa, czy strona jest wyświetlana w nowym wystąpieniu przeglądarki sieci web.
 
  /ext
 
- Opcjonalna. Określa, czy strona jest wyświetlana w domyślnej przeglądarce sieci Web poza IDE.
+ Opcjonalna. Określa, czy strona jest wyświetlana w domyślnej przeglądarce sieci web poza IDE.
 
 ## <a name="remarks"></a>Uwagi
  Alias **showwebbrowser —** polecenie jest **Przejdź** lub **nav**.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono MSDN Online strony głównej w przeglądarce sieci Web poza IDE. Jeśli wystąpienie przeglądarki sieci Web jest już otwarty, jest używany; w przeciwnym razie uruchamiane jest nowe wystąpienie.
+ Poniższy przykład wyświetla MSDN Online strony głównej w przeglądarce sieci web poza IDE. Jeśli wystąpienie przeglądarki sieci web jest już otwarty, jest używany; w przeciwnym razie jest uruchamiana nowe wystąpienie.
 
 ```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
@@ -59,5 +60,5 @@ View.ShowWebBrowser URL [/new][/ext]
 
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Znajdź/Command — pole](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35676368"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177321"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -83,7 +83,7 @@ Aby uzyskać dostęp do narzędzi do testowania interfejsu użytkownika kodowany
 
 3. Rekord sekwencję akcji.
 
-     **Aby rozpocząć rejestrowanie**, wybierz **rekordu** ikony. Wykonywanie akcji, które mają zostać przetestowane w aplikacji, w tym uruchamianie aplikacji, jeśli jest to wymagane. Na przykład jeśli testujesz aplikację sieci web możesz może uruchamiają przeglądarkę, przejdź do witryny sieci web i zaloguj się do aplikacji.
+     **Aby rozpocząć rejestrowanie**, wybierz **rekordu** ikony. Wykonywanie akcji, które mają zostać przetestowane w aplikacji, w tym uruchamianie aplikacji, jeśli jest to wymagane. Na przykład jeśli testujesz aplikację sieci web możesz może uruchamiają przeglądarkę, przejdź do witryny sieci Web i zaloguj się do aplikacji.
 
      **Aby Wstrzymaj nagrywanie**, na przykład jeśli masz do czynienia z przychodzących wiadomości e-mail, wybierz **wstrzymać**.
 
@@ -267,9 +267,9 @@ W pliku konfiguracji, zmień wartości `HoverKeyModifier` i `HoverKey` klucze do
 
 Jeśli występują problemy dotyczące rejestrowania wskaźnik myszy znajdzie się w witrynie internetowej:
 
-W wielu witryn sieci Web po najechaniu kursorem na określonego formantu rozszerza on Aby wyświetlić dodatkowe szczegóły. Ogólnie rzecz biorąc one wyglądać podobnie jak menu w aplikacji klasycznych. Ponieważ jest to typowy wzorzec, kodowane testy interfejsu użytkownika Włącz niejawny ruchów do przeglądania sieci Web. Na przykład jeśli rekord użytkownik znajduje się w programie Internet Explorer, zdarzenie jest wywoływane. Te zdarzenia może prowadzić do nadmiarowego ruchów rejestrowane. W związku z tym, niejawny ruchów są rejestrowane przy użyciu `ContinueOnError` równa `true` w pliku konfiguracji testu interfejsu użytkownika. Dzięki temu odtwarzania kontynuować, jeśli zdarzenie po wskazaniu wskaźnikiem zakończy się niepowodzeniem.
+W wielu witryn sieci Web po najechaniu kursorem na określonego formantu rozszerza on Aby wyświetlić dodatkowe szczegóły. Ogólnie rzecz biorąc one wyglądać podobnie jak menu w aplikacji klasycznych. Ponieważ jest to typowy wzorzec, kodowane testy interfejsu użytkownika Włącz niejawny ruchów do przeglądania sieci web. Na przykład jeśli rekord użytkownik znajduje się w programie Internet Explorer, zdarzenie jest wywoływane. Te zdarzenia może prowadzić do nadmiarowego ruchów rejestrowane. W związku z tym, niejawny ruchów są rejestrowane przy użyciu `ContinueOnError` równa `true` w pliku konfiguracji testu interfejsu użytkownika. Dzięki temu odtwarzania kontynuować, jeśli zdarzenie po wskazaniu wskaźnikiem zakończy się niepowodzeniem.
 
-Aby włączyć rejestrowanie ruchów niejawne w przeglądarce sieci Web, otwórz plik konfiguracji:
+Aby włączyć rejestrowanie ruchów niejawne w przeglądarce sieci web, otwórz plik konfiguracji:
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
@@ -371,7 +371,7 @@ Po wybraniu **Generuj kod**, tworzonych jest kilka fragmentów kodu:
 
     Te deklaracje reprezentują kontrolek interfejsu użytkownika aplikacji, które są używane w ramach testu. Służą one przez wygenerowany kod do obsługi formantów i uzyskiwanie dostępu do ich właściwości.
 
-    Umożliwia także je w przypadku pisania własnego kodu. Na przykład można mieć swojej metody testowej, wybierz hiperłącze w aplikacji sieci Web, wpisz wartość w polu tekstowym lub gałęzie i wykonać różne operacje testowania na podstawie wartości w polu.
+    Umożliwia także je w przypadku pisania własnego kodu. Na przykład można mieć swojej metody testowej, wybierz hiperłącze w aplikacji sieci web, wpisz wartość w polu tekstowym lub gałęzie i wykonać różne operacje testowania na podstawie wartości w polu.
 
     Można dodać wiele kodowane testy interfejsu użytkownika i wiele obiektów mapy interfejsu użytkownika i pliki, aby usprawnić testowanie dużej aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md).
 

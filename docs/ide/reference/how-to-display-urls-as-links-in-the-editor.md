@@ -14,44 +14,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448055"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177714"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Porady: wyświetlanie adresów URL jako łączy w Edytorze
-Istnieje możliwość edytora kodu Traktuj Uniform Resource Locator (URL) w kodzie jako aktywny łącza. Jeśli używasz tej funkcji, adresy URL:
+
+Istnieje możliwość mają Edytor kodu, Traktuj Uniform Resource Locator (URL) w kodzie jako aktywnych łączy. Podczas korzystania z tej funkcji, adresy URL:
 
 -   Podkreślone.
 
--   Wyświetl **ToolTip** gdy wskaźnik myszy nad nimi.
+-   Wyświetlanie **etykietki narzędzia** po umieszczeniu na nich.
 
--   Spróbuj otworzyć witryny sieci Web, gdy wskazane możesz **CTRL** + lewym przyciskiem myszy łącze. Domyślnie witryny sieci Web jest wyświetlany w wewnętrznej przeglądarce sieci Web.
+-   Próba otwarcia witryny sieci Web, gdy wskazane możesz **Ctrl**+**kliknij** łącze. Domyślnie witryny sieci Web jest wyświetlany w przeglądarce sieci web wewnętrznej.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="procedure"></a>Procedura
 
-#### <a name="to-display-urls-as-links"></a>Aby wyświetlić adresy URL jako łączy
+### <a name="to-display-urls-as-links"></a>Aby wyświetlić adresy URL jako linków
 
 1.  Na **narzędzia** menu, kliknij przycisk **opcje**.
 
-2.  Kliknij przycisk **Edytor tekstu**.
+2.  Kliknij przycisk **edytora tekstów**.
 
-3.  Aby zmienić opcję tylko dla jednego języka, rozwiń folder dla tego języka i wybierz polecenie **ogólne**.
+3.  Aby zmienić opcję dla tylko jednego języka, rozwiń folder dla danego języka, a następnie wybierz **ogólne**.
 
      —lub—
 
      Aby zmienić opcję dla wszystkich języków, rozwiń węzeł **wszystkie języki** folder i wybierz polecenie **ogólne**.
 
-4.  W obszarze **wyświetlania**, wybierz pozycję **włączyć nawigację adresów URL jednym kliknięciem**.
+4.  W obszarze **wyświetlania**, wybierz opcję **Włącz nawigację adresów URL jednym kliknięciem**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Opcje edytora tekstowego, okno dialogowe](../../ide/reference/text-editor-options-dialog-box.md)
-- [Funkcje Edytor kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

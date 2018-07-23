@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie przy użyciu okna stosów równoległych wątków | Dokumentacja firmy Microsoft
+title: Wyświetl wątki używające Parallel Stacks Window | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -19,106 +19,106 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058740"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176970"
 ---
-# <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Widok wątków i zadań za pomocą okna stosów równoległych
-**Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Umożliwia nawigowanie między wątków i ramek stosu na tych wątków. W kodzie zarządzanym **widoku zadania** stosy wywołań pokazuje <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** stosy wywołań pokazuje [zadań grup](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorytmy równoległe](/cpp/parallel/concrt/parallel-algorithms), [agentów asynchronicznych](/cpp/parallel/concrt/asynchronous-agents)i [zadań lekkich](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
+# <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Widok wątków i zadań za pomocą Parallel Stacks Window
+**Stosów równoległych** okno jest przydatne podczas debugowania aplikacji wielowątkowych. Jego **Widok wątków** pokazuje informacje stosu wywołań dla wszystkich wątków w aplikacji. Dzięki temu można przechodzić między wątkami i ramki stosu w tych wątkach. W kodzie zarządzanym **widoku zadania** pokazuje Wywołaj stosy <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów. W kodzie natywnym **widoku zadania** pokazuje Wywołaj stosy [grupy zadań](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [równoległe algorytmy](/cpp/parallel/concrt/parallel-algorithms), [agentów asynchronicznych](/cpp/parallel/concrt/asynchronous-agents)i [zadań lekkich](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
   
 ## <a name="threads-view"></a>Widok wątków  
- Na poniższej ilustracji przedstawiono jeden wątek, który zakończył się z głównym a na B, a następnie do zewnętrznego kodu. Dwa inne wątki rozpoczynający się od zewnętrznego kodu, a następnie próby A, ale jeden z wątków nadal b, a następnie do zewnętrznego kodu i innych wątków nadal C, a następnie niektóre AnonymousMethod.  
+ Poniższa ilustracja przedstawia jeden wątek, który wystąpił z głównym a, B, a następnie kodu zewnętrznego. Dwie inne wątki pracę z zewnętrznego kodu, a następnie przeszedł do A, ale jeden z wątków, ciąg dalszy B, a następnie zewnętrznego kodu i innego wątku ciąg dalszy C, a następnie niektóre AnonymousMethod.  
   
  ![Widok okna stosów równoległych wątków](../debugger/media/parallel_stacksthread.png "Parallel_StacksThread")  
   
- Na ilustracji ścieżka wywołania bieżącego wątku jest zaznaczone na niebiesko i bieżącej lokalizacji (ramki stosu active) wątku jest oznaczona żółta strzałka. Bieżącej ramki stosu można zmienić, wybierając inną metodę w **stosów równoległych** okna. Może to spowodować również przełączania bieżącego wątku, w zależności od tego, czy wybrana metoda jest częścią bieżącego wątku już lub inny wątek. W poniższej tabeli opisano główne funkcje **stosów równoległych** okna, jak pokazano na rysunku.  
+ Na ilustracji ścieżka wywołań bieżącego wątku jest wyróżnione na niebiesko, a bieżąca lokalizacja (Aktywna ramka stosu) wątek jest oznaczona żółtą strzałką. Bieżąca ramka stosu można zmienić, wybierając inną metodę w **stosów równoległych** okna. Może to spowodować również przełączanie bieżącego wątku, w zależności od tego, czy wybrana metoda jest częścią już bieżącego wątku lub inny wątek. W poniższej tabeli opisano główne funkcje **stosów równoległych** okna, jak pokazano na ilustracji.  
   
 |Objaśnienie list|Nazwa elementu|Opis|  
 |-|-|-|  
-|ELEMENT|Segment stosu wywołań lub węzeł|Zawiera szereg metod dla co najmniej jeden wątek. Jeśli węzeł nie ma wierszy strzałkę dołączone do niego, jego reprezentuje ścieżkę całego wywołania dla wątkiem(mi).|  
-|B|Niebieskie wyróżnienie|Określa ścieżkę wywołania bieżącego wątku.|  
-|C|Linie strzałek|Łączenie węzłów do tworzą wywołania całą ścieżkę wątkiem(mi).|  
-|D|Etykietka narzędzia węzła nagłówka|Zawiera identyfikator i nazwę użytkownika każdy wątek, których ścieżką wywołania współużytkują ten węzeł.|  
+|ELEMENT|Segment stosu wywołań lub węzła|Zawiera szereg metod dla jednego lub więcej wątków. Jeśli węzeł nie ma do niego podłączone wierszy strzałkę, jego reprezentuje ścieżkę całego wywołania dla wątków.|  
+|B|Niebieskie podkreślenie|Wskazuje ścieżkę wywołań bieżącego wątku.|  
+|C|Strzałka wierszy|Łączenie węzłów, tworząc ścieżkę wywołania całej wątki.|  
+|D|Etykietka narzędzia w nagłówku węzła|Zawiera identyfikator i zdefiniowanych przez użytkownika nazwa każdego wątku, którego ścieżka wywołanie udziałów tego węzła.|  
 |E|Metoda|Reprezentuje jedną lub więcej ramek stosu w tej samej metody.|  
-|F|Etykietka narzędzia na — metoda|W widoku wątków pokazuje wszystkie wątki w tabeli podobny do **wątków** okna. W widoku zadań pokazuje wszystkie zadania w tabeli podobny do **zadania** okna.|  
+|F|Etykietka narzędzia na — metoda|W widoku wątków pokazuje wszystkie wątki w tabeli podobne do **wątków** okna. W widoku zadań pokazuje wszystkie zadania w tabeli podobne do **zadania** okna.|  
   
- Ponadto zawiera okna stosów równoległych **widok** ikonę w okienku głównym, gdy wykres jest za duży dla do okna. Możesz kliknąć ikonę, aby zobaczyć cały wykres w oknie.  
+ Ponadto przedstawiono okna stosów równoległych **ptaka** ikonę w okienku głównym, gdy wykres jest zbyt duży, aby mieściły się w oknie. Możesz kliknąć ikonę, aby zobaczyć cały wykres w oknie.  
   
 ## <a name="stack-frame-icons"></a>Ikony ramki stosu  
- W poniższej tabeli opisano ikony, które zawierają informacje na temat ramek stosu aktywne i bieżący:  
+ W poniższej tabeli opisano ikony, które zawierają informacje dotyczące ramek stosu aktywnych i bieżące:  
   
 |Ikona|Opis|  
 |-|-|  
-|![Równoległych stosów żółta strzałka](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Wskazuje, że metoda zawiera bieżącą lokalizację bieżącego wątku (ramki stosu active).|  
-|![Równoległych stosów ikona wątków](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Wskazuje, że metoda zawiera bieżącą lokalizację (ramki stosu active) z systemem innym niż bieżący wątek.|  
-|![Równoległych stosów zieloną strzałkę](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Wskazuje, że metoda zawiera bieżącą ramkę stosu (bieżącego kontekstu debugera). Podana nazwa metody jest pogrubioną we wszystkich węzłach, w których występuje.|  
+|![Żółta strzałka stosów równoległych](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Wskazuje, że metoda zawiera bieżącą lokalizację bieżącego wątku (Aktywna ramka stosu).|  
+|![Ikona wątków stosów równoległych](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Wskazuje, że metoda zawiera bieżącą lokalizację (Aktywna ramka stosu) innym niż bieżący wątek.|  
+|![Zielona strzałka stosów równoległych](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Wskazuje, że metoda zawiera bieżącą ramkę stosu (bieżący kontekst debugera). Nazwa tej metody jest pogrubiony w wszystkie węzły, w których występuje.|  
   
 ## <a name="toolbar-controls"></a>Formanty paska narzędzi  
- Poniższe ilustracja i tabela opisano formantów, które są dostępne na pasku narzędzi stosów równoległych.  
+ Ilustracja i tabela poniżej opisano formanty, które są dostępne na pasku narzędzi stosów równoległych.  
   
  ![Pasek narzędzi okna stosów równoległych](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
 |Objaśnienie list|Formant|Opis|  
 |-|-|-|  
-|ELEMENT|Pole kombi wątki/zadania|Przełączniki widok między stosy wątków wywołań i stosy zadań wywołań. Aby uzyskać więcej informacji zobacz widok zadań i wątków.|  
-|B|Pokaż tylko oflagowane|Stosy wywołań pokazuje tylko dla wątków, które są oznaczone w innych oknach debugowania, takich jak **wątki GPU** okna i **czujki równoległej** okna.|  
-|C|Przełącz widok — metoda|Przełącza między widokiem stosu i metody. Aby uzyskać więcej informacji zobacz widoku metody.|  
-|D|Automatycznie przewiń do bieżącej ramki stosu|Autoscrolls diagramu, dzięki czemu ramki stosu bieżącego jest w widoku. Ta funkcja jest przydatna, gdy zmieniasz bieżącej ramki stosu w innych oknach, lub gdy są naciśnięcie nowego punktu przerwania w dużych diagramów.|  
-|E|Formant powiększania przełączania|Pokazuje lub ukrywa formantu powiększenia. Można również powiększenie naciskając klawisz CTRL i kółka myszy, niezależnie od tego, widoczność formantu powiększenia, włączając lub przy użyciu klawiszy CTRL + SHIFT + '+', aby powiększyć lub CTRL + SHIFT + "-" Aby pomniejszyć. Naciśnięcie klawiszy CTRL + F8 będzie widok do rozmiaru ekranu.|  
+|ELEMENT|Pole kombi wątków/zadań|Przełącza widok między Wywołaj stosy wątków i Wywołaj stosy zadania. Aby uzyskać więcej informacji zobacz widoku zadania i Widok wątków.|  
+|B|Pokaż tylko oflagowane|Pokazuje stosy wywołań tylko dla wątków, które są oznaczone w innych oknach debugowania, takie jak **wątków GPU** okna i **równoległego wyrażenia kontrolnego** okna.|  
+|C|Przełącz widok metody|Przełącza między widokiem stosu i metody. Aby uzyskać więcej informacji zobacz widoku metody.|  
+|D|Automatycznie przewiń do bieżącej ramki stosu|Autoscrolls diagramu, aby bieżącego stosu ramki znajduje się w widoku. Ta funkcja jest przydatna, gdy w przypadku zmiany bieżącej ramki stosu w innych oknach lub w przypadku osiągnięcia nowy punkt przerwania w dużych diagramów.|  
+|E|Przełącz kontrolkę powiększenia|Pokazuje lub ukrywa Kontrolka powiększenia. Możesz także powiększać naciskając klawisz CTRL i włączenie kółka myszy, niezależnie od tego, widoczność Kontrolka powiększenia lub za pomocą klawiszy CTRL + SHIFT + '+', aby powiększyć i klawisze CTRL + SHIFT + "-" Aby pomniejszyć. Naciśnięcie klawiszy CTRL + F8 będzie Dopasuj widok do rozmiaru ekranu.|  
   
 ### <a name="context-menu-items"></a>Elementy Menu kontekstowego  
- Poniższe ilustracja i tabela opisano elementy menu skrótów, które są dostępne po kliknięciu prawym przyciskiem myszy metodę, w widoku wątków lub zadania. Ostatnich sześciu elementy są pobierają bezpośrednio z okna stosu wywołań i powodować nie nowe zachowanie.  
+ Ilustracja i tabela poniżej opisano elementy menu skrótów, które są dostępne po kliknięciu prawym przyciskiem myszy metodę w widoku wątków lub zadania. Ostatnie sześć elementów są pobierają bezpośrednio z okna stosu wywołań i powodować nie nowe zachowanie.  
   
  ![Menu skrótów okna stosów równoległych](../debugger/media/parallel_contmenu.png "Parallel_ContMenu")  
   
 |Element menu|Opis|  
 |-|-|  
 |Flaga|Flagi wybranego elementu.|  
-|Usuwanie oflagowania|Unflags wybranego elementu.|  
-|Blokowanie|Zawiesza się wybrany element.|  
-|Odblokowania|Thaws wybranego elementu.|  
-|Przejdź do zadania (wątek)|Pełni taką samą funkcję jak pole kombi na pasku narzędzi, ale zachowuje tej samej ramki stosu wyróżnione.|  
-|Przejdź do kodu źródłowego|Powoduje przejście do lokalizacji w kodzie źródłowym, umożliwiająca ramki stosu, który użytkownik kliknął prawym przyciskiem myszy.|  
-|Przełącz do ramki|Taka sama jak odpowiedniego polecenia menu w oknie stosu wywołań. Jednak z stosów równoległych wiele ramek mogą odpowiadać jednej metody. Dlatego element menu ma podmenu, z których każdy reprezentuje ramka stosu określone. Jeśli jeden z ramki stosu w bieżącym wątku, jest wybierana menu, która odnosi się do tej ramki stosu.|  
-|Przejdź do dezasemblacji|Powoduje przejście do lokalizacji w oknie dezasemblacji umożliwiająca ramki stosu, który użytkownik kliknął prawym przyciskiem myszy.|  
-|Pokaż kodu zewnętrznego|Pokazuje lub ukrywa kod zewnętrzny.|  
-|Wyświetlacz|Przełącza między wyświetlania dziesiętną, a szesnastkową.|  
-|Informacje dotyczące załadowania symboli|Wyświetla okno dialogowe odpowiednie.|  
-|Ustawienia symboli|Wyświetla okno dialogowe odpowiednie.|  
+|Usuń flagę|Unflags wybranego elementu.|  
+|blokowanie|Zawiesza się wybrany element.|  
+|Odblokowywanie|Thaws wybranego elementu.|  
+|Przejdź do zadania (wątek)|Pełni taką samą funkcję jak pole kombi na pasku narzędzi, ale utrzymuje ten sam ramki stosu wyróżnione.|  
+|Przejdź do kodu źródłowego|Powoduje przejście do lokalizacji w kodzie źródłowym, odpowiadający ramki stosu, który kliknięto prawym przyciskiem myszy użytkownika.|  
+|Przełącz do ramki|Taka sama jak odpowiednie polecenie menu w oknie stosu wywołań. Jednak za pomocą stosów równoległych większą liczbę ramek może odpowiadać jednej metody. Dlatego element menu ma podmenu, z których każdy reprezentuje ramki określonego stosu. W przypadku jednej ramki stosu w bieżącym wątku, menu, który odnosi się do tej ramki stosu jest zaznaczone.|  
+|Przejdź do demontażu|Powoduje przejście do lokalizacji w oknie demontażu odpowiadający ramki stosu, który kliknięto prawym przyciskiem myszy użytkownika.|  
+|Pokaż kod zewnętrzny|Pokazuje lub ukrywa kod zewnętrzny.|  
+|Wyświetlanie szesnastkowe|Przełącza pomiędzy wyświetlania dziesiętną, a szesnastkową.|  
+|Informacje dotyczące załadowania symboli|Wyświetla odpowiednie okno dialogowe.|  
+|Ustawienia symboli|Wyświetla odpowiednie okno dialogowe.|  
   
-## <a name="tasks-view"></a>Zadania widoku  
- Jeśli aplikacja korzysta <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów (zarządzany kod) lub `task_handle` obiektów (kod natywny) Express równoległości służy pole kombi na pasku narzędzi okna stosów równoległych Aby przełączyć się do *widoku zadania*. Zadania widoku są wyświetlane stosy wywołań zadań zamiast wątków. Zadania widoku różni się od widoku wątków w następujący sposób:  
+## <a name="tasks-view"></a>Widok zadania  
+ Jeśli aplikacja wykorzystuje <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów (kod zarządzany) lub `task_handle` obiektów (kodu natywnego) do wyrażania równoległości umożliwia pola kombi na pasku narzędzi okna stosów równoległych przełączyć się do *widoku zadania*. Widok zadania przedstawia stosy wywołań zadań zamiast wątków. Widok zadania różni się od widoku wątków w następujący sposób:  
   
--   Stosy wywołań wątków, które nie są uruchomione zadania nie są wyświetlane.  
+-   Stosy wywołań wątków, które nie zostały uruchomione zadania nie są wyświetlane.  
   
--   Stosy wywołań wątków, które są uruchomione zadania wizualne są usuwane u góry i u dołu, aby wyświetlić najbardziej odpowiednie ramek, które odnoszą się do zadań.  
+-   Stosy wywołań wątków, które są uruchomione zadania wizualnie są usuwane u góry i u dołu, aby wyświetlić najbardziej istotnych ramek, które odnoszą się do zadań.  
   
 -   W przypadku wielu zadań w jednym wątku, stosy wywołań tych zadań są dzielone na osobne węzły.  
   
- Na poniższej ilustracji przedstawiono widoku zadania stosów równoległych po prawej stronie i odpowiedni widok wątki po lewej stronie.  
+ Na poniższej ilustracji przedstawiono równoległych stosów widoku zadania po prawej stronie i odpowiedniego widoku wątków po lewej stronie.  
   
- ![Zadania widoku w okna stosów równoległych](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+ ![Zadania widoku okna stosów równoległych](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- Aby wyświetlić cały stos wywołań, przełącz się do widoku wątków prawym przyciskiem myszy ramka stosu, a następnie klikając polecenie **przejdź do wątku**.  
+ Aby wyświetlić cały stos wywołań, wystarczy przełączyć do widoku wątków przez kliknięcie prawym przyciskiem myszy ramkę stosu, a następnie klikając polecenie **przejdź do wątku**.  
   
- Zgodnie z opisem w tabeli wcześniej, ustawiając kursor nad metodą, znajdują się dodatkowe informacje. Na poniższej ilustracji przedstawiono informacji w etykietce narzędzia dla widoku wątków i widok zadań.  
+ Zgodnie z opisem w tabeli wcześniej, ustawiając kursor w metodzie, znajdują się dodatkowe informacje. Na poniższej ilustracji przedstawiono informacje w etykietce narzędzia, widok wątki i widoku zadań.  
   
  ![Etykietki narzędzi w okna stosów równoległych](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Widok — metoda  
- Z wątków widoku lub widok zadań klikając ikonę widoku metody, na pasku narzędzi można przestawiać wykres w bieżącej metodzie. Widoku metody zawiera krótki przegląd wszystkie metody wszystkie wątki, które wywołania lub są wywoływane przy bieżącej metody. Na poniższej ilustracji przedstawiono widok wątków, a także wygląd tych samych informacji w widoku metody.  
+ Widok wątków lub widoku zadań można przestawiać wykresu na bieżącą metodę, klikając ikonę widoku metody, na pasku narzędzi. Metoda widoku wyświetlane są w skrócie wszystkie metody we wszystkich wątkach, które są wywoływane przy bieżącej metody lub wywołania. Na poniższej ilustracji przedstawiono widok wątków, a także wygląd te same informacje w widoku metody.  
   
  ![Metoda widok okna stosów równoległych](../debugger/media/parallel_methodview.png "Parallel_MethodView")  
   
- Przełączając nowej ramki stosu, można spowodować metoda bieżącej metody i do wyświetlenia wszystkich obiektów wywołujących i callees dla nowej metody w oknie. Może to spowodować, że niektóre wątki są wyświetlane lub usuwane z widoku, w zależności od tego, czy metoda jest wyświetlane na ich stosy wywołań. Aby powrócić do widoku stosu, kliknij ponownie przycisk paska narzędzi widoku metody.  
+ Przełączając się do nowej ramki stosu, można spowodować tej metody bieżącej metody i okna pokazać wszystkie obiekty wywołujące i wywoływane dla nowej metody. Może to spowodować, że niektóre wątki wyświetlone lub znikają z widoku, w zależności od tego, czy ta metoda jest wyświetlana na ich stosy wywołań. Aby powrócić do widoku stosu, kliknij ponownie przycisk paska narzędzi widoku metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozpocząć debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)   
+ [Rozpocznij debugowanie wielowątkowe aplikację](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Programowanie równoległe](/dotnet/standard/parallel-programming/index)   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)   

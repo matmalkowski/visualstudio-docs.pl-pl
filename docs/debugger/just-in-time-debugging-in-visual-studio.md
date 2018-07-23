@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cec8887ddf2023a8abd08f409b93f47efdc7001
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155571"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179778"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Porady: odpowiadanie na debugera Just In Time
 
@@ -50,4 +50,4 @@ Możesz wykonać kroki, aby zapobiec Just-in-Time okno dialogowe debuger pojawia
     W Menedżerze usług IIS, kliknij prawym przyciskiem myszy węzeł serwera i wybierz polecenie **Przełącz do widoku funkcji**. W sekcji platformy ASP.NET, wybierz **kompilacja platformy .NET** i upewnij się, możesz wybrać **False** jako zachowanie debugowania (kroki różnią się w starszych wersjach usług IIS).
 
 ## <a name="see-also"></a>Zobacz też
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

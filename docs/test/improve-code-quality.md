@@ -12,38 +12,38 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281618"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180116"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 
-Visual Studio, narzędzia do testowania może pomóc i rozwijać i podtrzymania wyśrubowane standardy kodu doskonałości Twojego zespołu.
+Program Visual Studio, narzędzia do testowania pomaga i zespołowi opracowywać i utrzymywać wysokie standardy doskonałości kodu.
 
-- **Eksploratora testów** okna ułatwia integrowanie [testów jednostkowych](../test/unit-test-your-code.md) Twojego praktycznego programowanie. Można użyć framework testów jednostkowych firmy Microsoft lub jednego z kilku innych firm i Otwórz źródło struktury.
+- **Eksplorator testów** okna można łatwo zintegrować [testów jednostkowych](../test/unit-test-your-code.md) w projektowaniu. Można użyć frameworka testów jednostkowych firmy Microsoft lub jednego z kilku struktur innych firm i open source.
 
-- [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) automatycznie generuje testów jednostkowych i danych testowych dla kodu zarządzanego.
+- [Funkcja IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) automatycznie generuje testów jednostkowych i dane z badań dla kodu zarządzanego.
 
-- [Pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) Określa, jaka część kodu projektu jest rzeczywiście testowane przez kodowane testy, takie jak testów jednostkowych.
+- [Pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) Określa, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe.
 
-- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) pomocy można odizolować kodu podczas testowania przez zastąpienie klas zastępczych i podkładek innych części aplikacji.
+- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) pomaga w izolowaniu kodu testowanego przez zastąpienie innych części aplikacji przy użyciu wycinków i podkładek.
 
-- [Testowanie jednostkowe na żywo](../test/live-unit-testing.md) automatycznie uruchamia testy jednostkowe w tle i graficznie wyświetla wyniki pokrycia i testowania kodu w edytorze kodu programu Visual Studio.
+- [Live Unit Testing](../test/live-unit-testing.md) automatycznie uruchamia testy jednostkowe w tle i wyświetla w postaci graficznej wyniki pokrycia i testowanie kodu w edytorze kodu programu Visual Studio.
 
-- [Kodowane testy interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) można przetestować aplikację za pomocą jego interfejsu użytkownika.
+- [Kodowane testy interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) umożliwiają testowanie aplikacji za pośrednictwem jego interfejsu użytkownika.
 
-- [Testy obciążenia](../test/quickstart-create-a-load-test-project.md) symuluje obciążenie dla aplikacji serwera, uruchamiając testów jednostkowych i wydajności sieci Web.
+- [Testowanie obciążeniowe](../test/quickstart-create-a-load-test-project.md) symuluje obciążenie aplikacji serwera, uruchamiając testy jednostkowe i testy wydajności sieci web.
 
 > [!NOTE]
-> Testy jednostkowe jest dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takich jak live testowania, jednostek IntelliTest, i kodowanych testów interfejsu użytkownika są dostępne tylko w programie Visual Studio Enterprise edition. Aby uzyskać więcej informacji na temat wersji zobacz [porównania Visual Studio 2017 IDEs](https://visualstudio.microsoft.com/vs/compare/).
+> Testy jednostkowe są dostępne we wszystkich wersjach programu Visual Studio. Inne narzędzia do testowania, takie jak testy jednostkowe, funkcję IntelliTest, na żywo i kodowanych testów interfejsu użytkownika są dostępne tylko w programie Visual Studio Enterprise. Aby uzyskać więcej informacji dotyczących wersji zobacz [porównanie programu Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Scenariusze pokrewne
 
-* [Eksploracyjnego & (VSTS) testowania ręcznego](/vsts/manual-test/)
-* [Ładowanie testowania (VSTS)](/vsts/load-test/index)
+* [Poznawcze i ręczne testowanie (VSTS)](/vsts/manual-test/)
+* [Ładowanie testów (VSTS)](/vsts/load-test/index)
 * [Ciągłe testowanie (VSTS)](/vsts/build-release/test/index)
-* [Omówienie opracowywania oprogramowania dla usługi Team Services i TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
-* [Narzędzi analizy kodu](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Omówienie metodyki DevOps dla usługi Team Services i serwera TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Narzędzia do analizy kodu](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

@@ -13,94 +13,94 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d2c31db4c117f3bc902218a61656e5eca49e27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951024"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177896"
 ---
 # <a name="manage-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
-Ustawienia aplikacji pozwalają dynamicznie przechowywać informacje o aplikacji. Ustawienia umożliwiają przechowywanie danych na komputerze klienckim, który nie powinny znajdować się w kodzie aplikacji (na przykład parametry połączenia), preferencje użytkownika i inne informacje, które są potrzebne w czasie wykonywania.
+Ustawienia aplikacji umożliwiają przechowywanie informacji o aplikacji dynamicznie. Ustawienia pozwalają na przechowywanie danych na komputerze klienckim, który nie powinny znajdować się w kodzie aplikacji (na przykład parametry połączenia), preferencji użytkownika i innych informacji potrzebnych w czasie wykonywania.
 
-Ustawienia aplikacji zastąpienie właściwości dynamicznych, używany w starszych wersjach programu Visual Studio.
+Ustawienia aplikacji zastępują właściwości dynamiczne stosowane we wcześniejszych wersjach programu Visual Studio.
 
-Każde ustawienie aplikacji musi mieć unikatową nazwę. Nazwa może zawierać dowolną kombinację litery, cyfry i podkreślenia, że nie rozpoczyna się od numeru i nie może zawierać spacji. Nazwa została zmieniona przez `Name` właściwości.
+Każde ustawienie aplikacji musi mieć unikatową nazwę. Nazwa może być dowolną kombinacją liter, cyfr lub znaku podkreślenia, która nie rozpoczyna się od numeru i nie może zawierać spacji. Nazwa zostanie zmieniona przez `Name` właściwości.
 
-Ustawienia aplikacji mogą być przechowywane jako dowolny typ danych, który jest serializowany do pliku XML lub ma `TypeConverter` implementującej `ToString` / `FromString`. Najbardziej typowych są `String`, `Integer`, i `Boolean`, ale można również przechowywać wartości jako <xref:System.Drawing.Color>, <xref:System.Object>, lub w postaci ciągu połączenia.
+Ustawienia aplikacji mogą być przechowywane jako dowolny typ danych, który jest serializowany do XML lub `TypeConverter` implementującej `ToString` / `FromString`. Najczęściej używane typy to `String`, `Integer`, i `Boolean`, ale można również przechowywać wartości jako <xref:System.Drawing.Color>, <xref:System.Object>, lub jako parametry połączenia.
 
-Ustawienia aplikacji także zawierać wartość. Ma wartość **wartość** właściwości musi być zgodny z typem danych ustawienie.
+Ustawienia aplikacji również zawierającą wartość parametru. Wartość została ustawiona za pomocą **wartość** właściwość musi być zgodny z typem danych ustawienia.
 
-Ponadto ustawienia aplikacji może być powiązana z właściwością formularza lub kontrolki, w czasie projektowania.
+Ponadto ustawienia aplikacji może być powiązana z właściwością formularza lub formantu w czasie projektowania.
 
-Istnieją dwa typy ustawień aplikacji, w oparciu o zakresie:
+Istnieją dwa rodzaje ustawień aplikacji, w oparciu o zakres:
 
-- Informacje takie jak adres URL usługi sieci Web lub parametry połączenia bazy danych można użyć ustawień zakresu aplikacji. Te wartości są skojarzone z aplikacją. W związku z tym użytkownicy nie mogą zmieniać ich w czasie wykonywania.
+- Ustawienia w zakresie aplikacji może służyć do informacje, takie jak adres URL usługi sieci web lub ciąg połączenia bazy danych. Te wartości są skojarzone z aplikacją. Dlatego użytkownicy nie mogą zmieniać ich w czasie wykonywania.
 
-- Ustawień z zakresu użytkownika można uzyskać informacje, takie jak utrwalanie ostatniej pozycji formularza lub preferencji czcionki. Użytkownicy mogą zmieniać tych wartości w czasie wykonywania.
+- Ustawienia z zakresu użytkownika mogą służyć do informacje, np. dotyczących utrwalenia ostatniej pozycji formularza lub preferencji czcionek. Użytkownicy mogą zmieniać te wartości w czasie wykonywania.
 
 Typ ustawienia można zmienić za pomocą **zakres** właściwości.
 
-System projektu przechowuje ustawienia aplikacji w dwóch plikach XML:
+System projektów przechowuje ustawienia aplikacji w dwóch plikach XML:
 
-- *app.config* pliku, który jest tworzony w czasie projektowania, podczas tworzenia pierwsze ustawienie aplikacji
+- *app.config* pliku, który jest tworzony w czasie projektowania podczas tworzenia pierwszego ustawienia aplikacji
 
-- *user.config* pliku, który jest tworzony w czasie wykonywania, gdy użytkownik uruchomi aplikację zmienia wartość każdego ustawienia użytkownika.
+- *user.config* pliku, który jest tworzony w czasie wykonywania, gdy użytkownik uruchamiający aplikację zmienia wartość dowolnego ustawienia użytkownika.
 
 Należy zauważyć, że zmiany w ustawieniach użytkownika nie są zapisywane na dysku, chyba że aplikacja specjalnie wywołuje metodę, aby to zrobić.
 
-## <a name="create-application-settings-at-design-time"></a>Utwórz ustawienia aplikacji w czasie projektowania
+## <a name="create-application-settings-at-design-time"></a>Tworzenie ustawień aplikacji w czasie projektowania
 
-Ustawienia aplikacji w czasie projektowania, można utworzyć na dwa sposoby: za pomocą **ustawienia** strony **projektanta projektu**, lub za pomocą **właściwości** okna formularza lub formant, dzięki czemu można powiązać ustawienie właściwości.
+W czasie projektowania ustawienia aplikacji można tworzyć na dwa sposoby: za pomocą **ustawienia** strony **projektanta projektu**, lub za pomocą **właściwości** okna formularza lub formant, który pozwala powiązać ustawienie z właściwością.
 
-Podczas tworzenia ustawienia zakresu aplikacji (na przykład parametry połączenia bazy danych lub odwołania do zasobów serwera), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje go w *app.config* z `<applicationSettings>` tagu. (Parametry połączenia są zapisywane w obszarze `<connectionStrings>` tagu.)
+Podczas tworzenia ustawień o zakresie aplikacji (na przykład parametry połączenia bazy danych lub odwołania do zasobów serwera), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje je w *app.config* z `<applicationSettings>` tagu. (Ciągi połączeń są zapisywane w obszarze `<connectionStrings>` tagu.)
 
-Podczas tworzenia ustawienia zakresu użytkownika (na przykład domyślną czcionkę, strony głównej lub rozmiaru okna), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje go w *app.config* z `<userSettings>` tagu.
+Podczas tworzenia ustawień z zakresu użytkownika (na przykład czcionki domyślnej, strony głównej lub rozmiaru okna), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapisuje je w *app.config* z `<userSettings>` tagu.
 
 > [!IMPORTANT]
-> Parametry połączenia w przypadku zapisania *app.config*, należy podjąć środki ostrożności, aby uniknąć ujawniania poufne informacje, takie jak hasła lub ścieżki serwera w parametrach połączenia.
+> Jeśli przechowujesz ciągi połączeń w *app.config*, należy podjąć środki ostrożności, aby uniknąć ujawnienia poufnych informacji, takich jak hasła lub ścieżki serwera w parametrach połączenia.
 >
-> Jeśli skorzystasz z ciągu połączenia ze źródła zewnętrznego, takich jak użytkownika, podając identyfikator użytkownika i hasło, należy zachować ostrożność do upewnij się, że wartości, które można użyć do utworzenia połączenia ciąg zawiera dodatkowych ciąg parametrów połączenia Spowoduje to zachowanie połączenia.
+> Jeśli nie podejmiesz informacje o parametrach połączenia z zewnętrznego źródła, takiego jak podanie Identyfikatora użytkownika i hasła, należy zachować ostrożność, aby upewnić się, że wartości, które można używać do tworzenia połączenia ciągu nie zawierają dodatkowych parametrów połączenia które zmieniają zachowanie połączenia.
 >
-> Rozważ użycie funkcji chronione konfiguracji do szyfrowania poufnych informacji w pliku konfiguracji. Aby uzyskać więcej informacji, zobacz [chronić informacje o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
+> Należy rozważyć użycie funkcji konfiguracji chronionej do szyfrowania poufnych informacji w pliku konfiguracji. Aby uzyskać więcej informacji, zobacz [chronić informacje o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
 
 > [!NOTE]
-> Ponieważ nie istnieje żaden model pliku konfiguracji dla bibliotek klas, ustawienia aplikacji nie są stosowane dla projektów biblioteki klas. Wyjątek stanowi Visual Studio Tools dla pakietu Office DLL projektu, który może mieć plik konfiguracji.
+> Ponieważ nie istnieje żaden model pliku konfiguracji dla bibliotek klas, ustawienia aplikacji nie są stosowane do projektów biblioteki klas. Wyjątkiem jest Visual Studio Tools dla pakietu Office DLL projektu, co może mieć plik konfiguracji.
 
-## <a name="use-customized-settings-files"></a>Użyj ustawień niestandardowych, pliki
+## <a name="use-customized-settings-files"></a>Użyj plików ustawień niestandardowych
 
-Możesz dodać pliki dostosowanych ustawień do projektu wygodny zarządzania grupami ustawień. Ustawienia, które znajdują się w jednym pliku są ładowane i zapisywane jako jednostki. Zapisanie ustawień w oddzielnych plików dla często używane i rzadko używane grup, można zaoszczędzić czas ładowania i zapisywania ustawień.
+Można dodać pliki niestandardowych ustawień do projektu, aby móc wygodniej zarządzać grupami ustawień. Ustawienia, które są zawarte w pojedynczym pliku są ładowane i zapisywane jako jednostka. Przechowywanie ustawień w oddzielnych plikach często używane i rzadko używanych grup może skrócić czas ładowania i zapisywania ustawień.
 
-Na przykład, takich jak można dodać pliku *SpecialSettings.settings* do projektu. Podczas Twojego `SpecialSettings` klasy nie jest widoczna w `My` przestrzeni nazw, **kod widoku** można odczytać pliku ustawień niestandardowych, który zawiera `Partial Class SpecialSettings`.
+Na przykład, takich jak możesz dodać plik *SpecialSettings.settings* do projektu. Gdy usługi `SpecialSettings` klasy nie jest widoczny w `My` przestrzeni nazw, **Wyświetl kod** może odczytać plik ustawień niestandardowych, który zawiera `Partial Class SpecialSettings`.
 
-**Projektanta ustawień** najpierw szuka *Settings.settings* plik, który tworzy system projektu; ten plik jest domyślnie plik, który **projektanta projektu** Wyświetla w **ustawienia** kartę. *Settings.Settings* znajduje się w *mój projekt* folder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów i *właściwości* folder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów. **Projektanta projektu** wyszukuje inne ustawienia plików w folderze głównym projektu. W związku z tym należy umieścić plik ustawień niestandardowych. Jeśli dodasz *.settings* pliku w innym miejscu w projekcie, **projektanta projektu** nie będzie mógł go zlokalizować.
+**Projektant ustawień** najpierw szuka *Settings.settings* pliku, który tworzy system projektu; ten plik jest domyślnie pliku, który **projektanta projektu** Wyświetla w **ustawienia** kartę. *Plik Settings.Settings* znajduje się w *mój projekt* folder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów i *właściwości* folder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów. **Projektanta projektu** następnie wyszukuje inne pliki ustawień w folderze głównym projektu. W związku z tym należy umieścić plik ustawień niestandardowych istnieje. Jeśli dodasz *.settings* pliku w innym miejscu w projekcie **projektanta projektu** nie będzie mógł go zlokalizować.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Dostępu lub zmień ustawienia aplikacji w czasie wykonywania w języku Visual Basic
 
-W projektach Visual Basic, mogą korzystać ustawienia aplikacji w czasie wykonywania za pomocą `My.Settings` obiektu. Na **ustawienia** kliknij przycisk **wyświetlić kod** przycisk, aby wyświetlić *Settings.vb* pliku. *Settings.VB* definiuje `Settings` klasy, która pozwala na obsługę tych zdarzeń w klasie ustawień: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Zwróć uwagę, że `Settings` klasy w *Settings.vb* jest częściowej klasy, która wyświetla tylko użytkowników kod, nie całego wygenerowanej klasy. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji przy użyciu `My.Settings` obiektów, zobacz [dostęp do ustawień aplikacji (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
+W projektach języka Visual Basic, uzyskujesz dostęp ustawienia aplikacji w czasie wykonywania za pomocą `My.Settings` obiektu. Na **ustawienia** kliknij **wyświetlić kod** przycisk, aby wyświetlić *Settings.vb* pliku. *Settings.VB* definiuje `Settings` klasy, która umożliwia obsługę następujących zdarzeń w klasie ustawień: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Należy zauważyć, że `Settings` klasy w *Settings.vb* jest częściową klasą, która wyświetla tylko włany kod, nie całje wygenerowanej klasy. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `My.Settings` obiektu, zobacz [uzyskać dostęp ustawienia aplikacji (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
 
-Wartości ustawienia zakresu użytkownika, które zmiany użytkowników w czasie wykonywania (na przykład pozycję formularza od razu) są przechowywane w *user.config* pliku. Należy zauważyć, że wartości domyślne są nadal zapisywane w *app.config*.
+Wartości ustawienia zakresu użytkownika, które użytkownik zmienia w czasie wykonywania (na przykład położenie formularza) są przechowywane w *user.config* pliku. Należy zauważyć, że wartości domyślne są nadal zapisywane w *app.config*.
 
-Jeśli ustawienia zakresu użytkownika zostały zmienione w czasie wykonywania, na przykład w przypadku testowania aplikacji i chcesz zresetować te ustawienia do wartości domyślnych, kliknij przycisk **Synchronizuj** przycisku.
+Jeśli wszystkie ustawienia z zakresu użytkownika zostały zmienione w czasie wykonywania, na przykład podczas testowania aplikacji i chcesz zresetować te ustawienia do wartości domyślnych, kliknij przycisk **Synchronize** przycisku.
 
-Zdecydowanie zaleca się używanie `My.Settings` obiekt i domyślnie *.settings* pliku ustawień dostępu. Jest to spowodowane służy **projektanta ustawień** można przypisać właściwości do ustawienia i, ponadto użytkownika ustawienia są automatycznie zapisywane przed zamykania aplikacji. Jednak aplikacji Visual Basic można uzyskać dostępu do ustawień bezpośrednio. W takim przypadku należy uzyskać dostęp `MySettings` klasy i używać niestandardowej *.settings* w katalogu głównym projektu. Musisz zapisać ustawienia użytkownika przed zakończeniem aplikacji, jak C# aplikacji; jest to opisane w poniższej sekcji.
+Zdecydowanie zalecamy użycie `My.Settings` obiektu i domyślnego *.settings* pliku ustawień dostępu. To dlatego, możesz użyć **Projektant ustawień** do przypisywania właściwości do ustawienia i, dodatkowo użytkownika ustawienia są zapisywane automatycznie przed zamknięciem aplikacji. Jednak aplikacji Visual Basic można uzyskiwać dostęp do ustawień bezpośrednio. W takim przypadku musisz uzyskać dostęp `MySettings` klasy i użyć niestandardowego *.settings* plik w folderze głównym projektu. Musisz zapisać ustawienia użytkownika przed zakończeniem aplikacji, tak jak w języku C# aplikacji; jest to opisane w poniższej sekcji.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Dostępu lub zmień ustawienia aplikacji w czasie wykonywania w języku C# #
 
-W językach innych niż Visual Basic, takich jak C#, muszą uzyskać dostęp do `Settings` klasy bezpośrednio, jak pokazano w następującym [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] przykład.
+W językach innych niż Visual Basic, takich jak C#, należy przejść do `Settings` klasy bezpośrednio, jak pokazano w następującym [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] przykład.
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
 ```
 
-Należy jawnie wywołać `Save` metody tej klasy otoki w celu utrzymania ustawień użytkownika. Zwykle to zrobić w `Closing` obsługi zdarzeń formularza głównego. W poniższym przykładzie C# przedstawiono sposób wywołania `Save` metody.
+Należy jawnie wywołać `Save` metody tej klasy otoki, aby utrwalić ustawienia użytkownika. Zwykle to zrobić w `Closing` programu obsługi zdarzeń formularza głównego. Poniższy przykład C# pokazuje wywołanie `Save` metody.
 
 ```csharp
 Properties.Settings.Default.Save();
 ```
 
-Aby uzyskać ogólne informacje o uzyskiwaniu dostępu do ustawień aplikacji `Settings` , zobacz [Przegląd ustawień aplikacji (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Informacje o iteracji w ustawieniach, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Aby uzyskać ogólne informacje na temat uzyskiwania dostępu do ustawień aplikacji za pomocą `Settings` klasy, zobacz [Przegląd ustawień aplikacji (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Aby uzyskać informacje o iterowaniu przez ustawienia, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Zobacz także
 

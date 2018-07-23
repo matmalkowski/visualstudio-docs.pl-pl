@@ -9,12 +9,12 @@ description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e43e9050e2b021025ed4ae104f4345bce6e8eee3
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131934"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178403"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisz licencje w portal administratora subskrypcji programu Visual Studio
 
@@ -24,7 +24,7 @@ Dla grup użytkowników, można przypisać subskrypcji do nich jedną w czasie, 
 
 ## <a name="individual-assignments"></a>Poszczególne przypisania
 
-Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual Studio, aby do nowego użytkownika, dzięki czemu mogą uzyskiwać dostęp do korzyści z subskrypcji.
+Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual Studio do nowego użytkownika, dzięki czemu mogą uzyskiwać dostęp do korzyści z subskrypcji.
 
 1. Zaloguj się do [portal administratora](https://manage.visualstudio.com).
 

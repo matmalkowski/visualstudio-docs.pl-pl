@@ -16,97 +16,97 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281069"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180467"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
 
-**Odwołania do konfigurowania usługi** okno dialogowe umożliwia konfigurowanie zachowania usługi Windows Communication Foundation (WCF).
+**Konfiguruj odwołanie do usługi** okno dialogowe umożliwia konfigurowanie zachowania usług Windows Communication Foundation (WCF).
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe, kliknij prawym przyciskiem myszy usługę odwołania w **Eksploratora rozwiązań** i wybierz polecenie **skonfigurować odwołania do usługi**. Można również otworzyć okno dialogowe, klikając **zaawansowane** przycisk **okno dialogowe Dodaj odwołanie do usługi**.
+Aby uzyskać dostęp do **Konfiguruj odwołanie do usługi** odwoływać się okno dialogowe, kliknij prawym przyciskiem myszy, a usługa **Eksploratora rozwiązań** i wybierz polecenie **Konfiguruj odwołanie do usługi**. Okno dialogowe można również przejść, klikając **zaawansowane** znajdujący się w **okno dialogowe Dodaj odwołanie do usługi**.
 
 ## <a name="task-list"></a>Lista zadań
 
-- Aby zmienić adres, gdzie jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.
+- Aby zmienić adres, na którym jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.
 
-- Aby zmienić poziom dostępu dla klas w klienta WCF, wybierz słowo kluczowe poziom dostępu w **dostępu poziom wygenerowane klasy** listy.
+- Aby zmienić poziom dostępu dla klas w klienta WCF, wybierz słowo kluczowe poziom dostępu w **poziom do wygenerowanych klas dostępu** listy.
 
-- Aby wywołać metody usługi WCF asynchronicznie, wybierz **Generuj operacje asynchroniczne** pole wyboru.
+- Aby asynchroniczne wywoływanie metod klasy usługi WCF, wybierz pozycję **Eneruj operacje asynchroniczne** pole wyboru.
 
-- Aby wygenerować typy kontraktu komunikatu w klienta WCF, wybierz **zawsze Generuj kontraktów komunikatu** pole wyboru.
+- Aby wygenerować typy kontraktu komunikatu w klienta WCF, wybierz **zawsze Generuj kontrakty komunikatów** pole wyboru.
 
-- Aby określić listę lub słownik typy kolekcji dla klienta programu WCF, wybierz typy z **— typ kolekcji** i **słownika — typ kolekcji** listy.
+- Aby określić typy kolekcji list lub słownika dla klienta programu WCF, wybierz typy z **— typ kolekcji** i **słownikowy typ kolekcji** listy.
 
-- Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć typ udostępniania dla podzbioru zestawów występujących w odwołaniach, wybierz **ponownie użyj typów w przywoływanych zestawach** zaznacz pole wyboru **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz jedną z dostępnych odwołania w **listy zestawy przywoływane**.
+- Aby wyłączyć, typ udostępniania, wyczyść **ponownie użyj typów w przywoływanych zestawach** pole wyboru. Aby włączyć udostępnianie dla podzbioru przywoływanych zestawach typu, wybierz **ponownie użyj typów w przywoływanych zestawach** pole wyboru, wybierz opcję **ponownie użyj typów w określonych przywoływanych zestawach**i wybierz żądany przywoływane w **przywoływane zestawy listy**.
 
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
 
  **Adres**
 
- Aktualizuje adres sieci Web, w którym wygląda odwołania do usługi dla usługi. Na przykład podczas tworzenia, usługi mogą być hostowane na serwerze projektowym i później przeniesiony na serwerze produkcyjnym wymagających zmiany adresu.
+ Aktualizuje adres sieci web, w której odwołanie do usługi szuka usługi. Na przykład podczas tworzenia aplikacji, usługa może być hostowana na serwerze rozwoju i później przenieść na serwerze produkcyjnym, przez co konieczna zmiana adresu.
 
 > [!NOTE]
-> Address element jest niedostępne podczas **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
+> Element adres nie jest dostępna podczas **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
 
- **Poziom dostępu dla wygenerowane klasy**
+ **Poziom dostępu do wygenerowanych klas**
 
- Określa poziom dostępu do kodu dla klasy klienta WCF.
+ Określa poziom dostępu do kodu dotyczące klas klientów usługi WCF.
 
 > [!NOTE]
-> W projektach witryny sieci Web, ta opcja jest zawsze równa `Public` i nie można zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).
+> Dla projektów witryny sieci Web, ta opcja jest zawsze równa `Public` i nie można zmienić. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).
 
  **Generowanie operacji asynchronicznych**
 
- Określa, czy metody usług WCF jest wywoływana synchronicznie (ustawienie domyślne) lub asynchronicznie.
+ Określa, czy metody usługi WCF jest wywoływana synchronicznie (ustawienie domyślne) lub asynchronicznie.
 
- **Generowanie operacji opartego na zadaniach**
+ **Generuj operacje oparte na zadanie**
 
- Podczas pisania kodu asynchroniczne, ta opcja pozwala korzystać z zadań równoległych biblioteki (TPL) wprowadzonej z .NET 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+ Podczas pisania kodu asynchronicznego, ta opcja pozwala korzystać z Biblioteka zadań równoległych (TPL) wprowadzone za pomocą .NET 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
- **Zawsze Generuj kontraktów komunikatu**
+ **Zawsze Generuj kontrakty komunikatów**
 
- Określa, czy typy kontraktu komunikatu są generowane dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu, zobacz [używanie kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).
+ Określa, czy typy kontraktu komunikatu, są generowane dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu zobacz [używanie kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).
 
  **Typ kolekcji**
 
- Określa typ kolekcji listy dla klienta programu WCF. Jest to domyślny typ <xref:System.Array>.
+ Określa typ kolekcji listy dla klienta programu WCF. Domyślny typ to <xref:System.Array>.
 
- **Słownik — typ kolekcji**
+ **Słownikowy typ kolekcji**
 
- Określa typ kolekcji słownika dla klienta programu WCF. Jest to domyślny typ <xref:System.Collections.Generic.Dictionary%602>.
+ Określa słownikowy typ kolekcji dla klienta programu WCF. Domyślny typ to <xref:System.Collections.Generic.Dictionary%602>.
 
- **Ponownie użyj typów w przywoływanych zestawach**
+ **Użyj ponownie typów w przywoływanych zestawach**
 
- Określa, czy klient WCF próbuje ponownie wykorzystać istniejące już w przywoływanych zestawach zamiast generowania nowych typów, gdy usługa jest dodane lub zaktualizowane. Ta opcja jest domyślnie zaznaczona.
+ Określa, czy klient WCF podejmie próbę ponownego użycia, co już istnieje w przywoływanych zestawach zamiast generowania nowych typów, gdy usługa jest dodane lub zaktualizowane. Domyślnie ta opcja jest zaznaczona.
 
- **Ponownie użyj typów w wszystkich przywoływanych zestawach**
+ **Użyj ponownie typów w wszystkich przywoływanych zestawach**
 
- Po wybraniu wszystkich typów w **listy zestawy przywoływane** są używane ponownie, jeśli to możliwe. Domyślnie ta opcja jest zaznaczona.
+ Po wybraniu wszystkich typów w **listę zestawów do którego się odwoływano** są ponownie, jeśli jest to możliwe. Domyślnie ta opcja jest zaznaczona.
 
  **Ponownie użyj typów w określonych przywoływanych zestawach**
 
- W przypadku wybrania tylko wybranych typów w **listy zestawy przywoływane** są używane ponownie.
+ W przypadku wybrania tylko wybranych typów w **listę zestawów do którego się odwoływano** są ponownie używane.
 
- **Lista przywoływanych zestawach**
+ **Listę przywoływanych zestawach**
 
- Zawiera listę zestawów występujących w odwołaniach projektu lub witryny sieci Web. Po wybraniu **ponownie użyj typów w określonych przywoływanych zestawach**, można zaznaczyć lub wyczyścić pojedyncze zestawy.
+ Zawiera listę przywoływanych zestawach dla projektu lub witryny sieci Web. Po wybraniu **ponownie użyj typów w określonych przywoływanych zestawach**, można zaznaczyć lub wyczyścić poszczególnych zespołów.
 
  **Dodaj odwołanie sieci Web**
 
  Wyświetla **Dodaj odwołanie sieci Web** okno dialogowe.
 
 > [!NOTE]
-> Tej opcji należy używać tylko dla projektów przeznaczonych dla wersji 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Ta opcja powinna służyć wyłącznie dla projektów przeznaczonych dla wersji 2.0 programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 > [!NOTE]
-> **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
+> **Dodaj odwołanie sieci Web** przycisk jest dostępny, gdy **Konfiguruj odwołanie do usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
 
 ## <a name="see-also"></a>Zobacz także
 

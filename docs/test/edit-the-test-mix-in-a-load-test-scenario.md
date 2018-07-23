@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f66299f1e5f5a40e0ad8f022645f81873bc55b56
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151450"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179518"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 
-*Test mieszany* scenariusz składa się z wybranych sieci Web wydajności i testy jednostkowe, które są zawarte w tym scenariuszu i dystrybucji tych testów, w tym scenariuszu. Dystrybucja to ustawienie można określić prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia.
+*Test mieszany* scenariusz składa się z wybranych sieci web wydajności i testy jednostkowe, które są zawarte w tym scenariuszu i dystrybucji tych testów, w tym scenariuszu. Dystrybucja to ustawienie można określić prawdopodobieństwo, że konkretnego testu zostanie wybrany przez użytkownika wirtualnego podczas przebiegu testu obciążenia.
 
  Po dodaniu zestawu testów do testu obciążeniowego *test mieszany* podobnie jak inne mieszać opcji. Użytkownik wirtualny losowo wybiera test, oparty na prawdopodobieństwo, że określone w zestawie. Na przykład w przypadku dwóch testów, każdy 50 procent w asortymencie, nowego użytkownika wirtualnego decyduje się pierwszy test około połowę czasu uruchomienia. W asortymencie 50/50 Jeśli jeden test jest długa i inny jest krótki, większe obciążenie jest dostarczany z długiego testu.
 
@@ -33,9 +33,9 @@ ms.locfileid: "39151450"
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Dodaj nowe testy do mieszanki testów, w istniejącego scenariusza
 
-Gdy tworzysz nowy scenariusz przy użyciu **Kreatora nowego testu obciążenia**, można określić testy wydajności i jednostki sieci Web, aby dodać do testu mieszanego nowy scenariusz.
+Gdy tworzysz nowy scenariusz przy użyciu **Kreatora nowego testu obciążenia**, można określić testy wydajności i jednostki sieci web, aby dodać do testu mieszanego nowy scenariusz.
 
-Można dodać więcej Web wydajności i testy jednostkowe do mieszanki tekstu scenariusza za pomocą **edytora testu obciążenia**.
+Można dodać więcej web wydajności i testy jednostkowe do mieszanki tekstu scenariusza za pomocą **edytora testu obciążenia**.
 
 ![Dodawanie testu do istniejącego testu obciążenia](../test/media/ltest_addingtests.png)
 
@@ -45,9 +45,9 @@ Można dodać więcej Web wydajności i testy jednostkowe do mieszanki tekstu sc
 
 2.  W **edytora testu obciążenia**, kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz **Dodaj testy**.
 
-     **Dodaj testy** zostanie wyświetlone okno dialogowe. Wszystkie wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika w rozwiązaniu, które nie są już w tym scenariuszu są dostępne, można dodać do scenariusza.
+     **Dodaj testy** zostanie wyświetlone okno dialogowe. Wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika w rozwiązaniu, które nie są już w tym scenariuszu są dostępne dodać do scenariusza.
 
-3.  W **dostępne testy** okienku zaznacz wydajności sieci Web, jednostki i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testy **wybrane testy** okienka.
+3.  W **dostępne testy** okienku zaznacz wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika, które chcesz dodać. Wybierz strzałkę w prawo, aby dodać testy **wybrane testy** okienka.
 
 4.  Po dodaniu testów wybierz **OK**.
 
@@ -64,7 +64,7 @@ Można dodać więcej Web wydajności i testy jednostkowe do mieszanki tekstu sc
 
 2.  W **edytora testu obciążenia**, obciążenia test drzewa, kliknij prawym przyciskiem myszy scenariusza, z którego chcesz usunąć test i wybierz pozycję **Edytuj Test mieszany**. **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz wydajność sieci Web, jednostki lub kodowany test interfejsu użytkownika w siatce, a następnie wybierz **Usuń**.
+3.  Wybierz wydajność sieci web, jednostki lub kodowany test interfejsu użytkownika w siatce, a następnie wybierz **Usuń**.
 
     > [!NOTE]
     > Po usunięciu testu dopasować test mieszany do Twojej dystrybucji.

@@ -1,6 +1,6 @@
 ---
 title: Zasoby do projektowania dostępnych aplikacji
-description: Dowiedz się, jak tworzyć aplikacje dostępne, aby ułatwić osobom niepełnosprawnym do użycia.
+description: Dowiedz się, jak tworzyć aplikacje dostępne, aby ułatwić ich dla osób niepełnosprawnych, można użyć.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,42 +16,42 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704177"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179024"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 
-Skorzystaj z poniższych linków, aby uzyskać informacje o technologii, które obsługuje dostępny projektu, a także wskazówki i przykłady rozwoju dostępne aplikacje systemu Windows i witryn sieci Web. Ogólne informacje o ułatwieniach dostępu można znaleźć w [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).
+Użyj następujących linków, aby znaleźć informacje o technologii obsługujących dostępny projekt, a także wskazówki i przykłady dotyczące tworzenia dostępnych aplikacji Windows i witryn sieci Web. Ogólne informacje na temat ułatwień dostępu można znaleźć w [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).
 
 ## <a name="technologies"></a>Technologies
 
-* **Microsoft Active Accessibility** technologii A COM, który zwiększa dostępność sposób pomaga w pracy z aplikacjami z systemem Microsoft Windows. Udostępnia biblioteki dll, które są włączone do systemu operacyjnego, a także interfejsu COM i elementy programowania aplikacji, które zapewniają niezawodne metod publikowania informacji na temat elementów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility** technologii opartych na modelu COM, który poprawia dostępność sposób ułatwia pracę z aplikacjami uruchomionymi w Microsoft Windows. Zapewnia ona bibliotek DLL, które są dołączone do systemu operacyjnego, a także interfejsu COM i elementy programowania aplikacji, które zapewnia niezawodne metody do ujawnienia informacji na temat elementów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
 
-* **Microsoft .NET mowy technologii** zestawu SDK programu Microsoft .NET mowy to zestaw Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] formantów, dodatku programu Microsoft Internet Explorer mowy przykładowe aplikacje i dokumentacji, który umożliwia deweloperom sieci Web do tworzenia, debugowania i Wdrażanie włączone mowy [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] aplikacji. Narzędzia są bezproblemowo zintegrowane z programu Microsoft Visual Studio, co umożliwia deweloperom wykorzystać środowisko projektowe znane. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Technologii programu Microsoft .NET mowy** zestawu SDK programu Microsoft .NET mowy to zestaw Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] formantów, dodatek programu Microsoft Internet Explorer mowy, przykładowych aplikacji i dokumentacji, która umożliwia deweloperom sieci web do tworzenia, debugowania i wdrażanie z obsługą mowy [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] aplikacji. Narzędzia są bezproblemowo zintegrowane z programu Microsoft Visual Studio, umożliwiając deweloperom korzystanie z środowisko programistyczne znanych. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
 
-* **Opis SAMI 1.0** technologii firmy Microsoft synchronizowane dostępny Media Interchange (SAMI), umożliwia deweloperom podpis audio zawartości dla multimediów komputera. Aby uzyskać więcej informacji, zobacz [1.0 SAMI opis](http://msdn.microsoft.com/library/ms971327.aspx).
+* **Informacje o wersji 1.0 SAMI** technologii firmy Microsoft synchronizowane dostępne Media Interchange (SAMI), umożliwia deweloperom zawartość audio podpis dla komputera multimediów. Aby uzyskać więcej informacji, zobacz [1.0 SAMI opis](http://msdn.microsoft.com/library/ms971327.aspx).
 
 ## <a name="windows-applications"></a>Aplikacje systemu Windows
 
-* **[Wskazówki: Tworzenie aplikacji opartych na systemie Windows dostępne](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)**  ten temat zawiera instrukcje krok po kroku włączania pięć wymagania związane z dostępem do logo "Certified for Windows" Windows próbki aplikacja.
+* **[Wskazówki: Tworzenie dostępnej aplikacji z systemem Windows](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)**  ten temat zawiera instrukcje krok po kroku, w tym pięć wymagania związane z dostępem do logo "Certified for Windows" w Windows próbki aplikacja.
 
-* **Wytyczne dotyczące klawiatury użytkownika interfejsu projektu** techniczne opisano sposób projektowania przez użytkowników interfejsu użytkownika aplikacji systemu Windows można przechodzić z klawiatury. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Wskazówki dotyczące klawiatury użytkownika projekt interfejsu** tego artykułu technicznego na temat opisuje, jak przejść projektowania interfejs użytkownika aplikacji Windows przez użytkowników za pomocą klawiatury. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
 
-* **Ułatwienia dostępu konsoli** tego artykułu technicznego opisuje interfejsów API i zdarzenia używany do udostępnienia narzędzi ułatwień dostępu w konsoli programu w systemie Windows XP. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Ułatwienia dostępu do konsoli** artykułu technicznego na ten temat opisuje interfejsy API i zdarzenia używany do udostępnienia narzędzi ułatwień dostępu w konsoli programu Windows XP. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
 
 ## <a name="websites"></a>Witryny internetowe
 
--   [Wskazówki: Dostęp — wytyczne za pomocą formantów obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku włączania dostępne elementy sterujące przykładowa strona sieci Web, jak również pewne wskazówki dotyczące projektowania ułatwień dostępu Witryna sieci Web.
+-   [Wskazówki: Dostęp — wytyczne dla za pomocą kontrolki obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku, w tym formantów dostępny w przykładowej strony internetowej, a także pewne wskazówki dotyczące projektowania ułatwień dostępu sieci Web.
 
--   **Tworzenie stron sieci Web dostępne z DHTML** tego artykułu technicznego zawiera listę elementów HTML 4.0, które są dostępne, a także dostępne wskazówki dotyczące projektowania sieci Web. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Tworzenie stron sieci Web dostępny za pomocą DHTML** artykułu technicznego na ten temat zawiera listę elementów HTML 4.0, które są dostępne, a także wskazówki dotyczące projektowania internetowego. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Zasoby innych firm
 
--   **Sieci Web inicjatywy ułatwień dostępu w sieci World Wide Web konsorcjum W3C** tej witryny sieci Web zawiera wytyczne i techniki rozwoju dostępnej witryny sieci Web. Aby uzyskać więcej informacji, zobacz [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+-   **Inicjatywy ułatwień dostępu w sieci World Wide Web Consortium (W3C) w sieci Web** tej witryny sieci Web udostępnia wskazówki i technik projektowania dostępne witryn sieci Web. Aby uzyskać więcej informacji, zobacz [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Zobacz także
 

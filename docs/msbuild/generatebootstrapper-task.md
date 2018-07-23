@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a81b02d4179c58c63c1429aa2e522bb39bb9aaf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945939"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177740"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — zadanie
 Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.  
@@ -86,7 +86,7 @@ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej ws
   
      Opcjonalnie `String` parametr wyjściowy.  
   
-     Określa lokalizację utworzonych setup.exe  
+     Określa lokalizację utworzonych *setup.exe*  
   
 -   `ComponentsLocation`  
   

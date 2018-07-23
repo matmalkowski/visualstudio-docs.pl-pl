@@ -21,97 +21,97 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749232"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175738"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
-To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia dotyczą również inne edytory oparte na kodzie edytora, takiego jak projektanta HTML widoku źródła. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **Edytor tekstu** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.
+To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.
 
 > [!CAUTION]
-> Ta strona Ustawia opcje domyślne dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji w tym oknie dialogowym przywróci Opcje ogólne we wszystkich językach, niezależnie od opcji wybrano tutaj. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz strony jej opcji.
+> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Należy pamiętać, że zresetowanie opcji, w tym oknie dialogowym przywróci ogólne opcje we wszystkich językach niezależnie od opcji wybranych są w tym miejscu. Aby zmienić opcje edytora tekstowego dla tylko jednego języka, rozwiń podfolder dla danego języka, a następnie wybierz jego stron opcji.
 
 
- Wyszarzonymi polami wyboru jest wyświetlane, gdy wybrano opcję na stronach ogólnych opcji w przypadku niektórych języków programowania, ale nie do innych użytkowników.
+ Wygaszone znacznik wyboru jest wyświetlane, gdy po wybraniu opcji na stronach opcji ogólnych dla niektórych języków programowania, ale nie dla innych użytkowników.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
- Automatycznie lista składników
+ Automatyczna lista członków
 
- Po wybraniu wyskakujących listy dostępne elementy członkowskie, właściwości lub metody wartości są wyświetlane przez funkcję IntelliSense podczas wpisywania tekstu w edytorze. Wybierz dowolny element na liście wyskakującego można umieścić element w kodzie. Wybranie tej opcji umożliwia **Ukryj zaawansowane członków** opcji.
+ Po wybraniu wyskakującego listy dostępne elementy członkowskie, właściwości, wartości lub metody są wyświetlane przez technologię IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z wyskakującej listy do podawania pozycji w kodzie. Wybranie tej opcji umożliwia **kryj składowe zaawansowane** opcji.
 
- Ukryj zaawansowane elementy członkowskie
+ Kryj składowe zaawansowane
 
- Po wybraniu skraca listy uzupełniania instrukcji wyskakujących poprzez wyświetlenie tylko tych elementów, które są najczęściej używane. Inne elementy są filtrowane z listy.
+ Po wybraniu skraca uzupełniania instrukcji wyskakujące, wyświetlając tylko te elementy, które są używane najczęściej. Inne elementy są odfiltrowywane z listy.
 
  Informacje o parametrach
 
- Po wybraniu pełnej składni dla bieżącej deklaracji lub procedura jest wyświetlana w obszarze kursora w edytorze, biorąc pod uwagę jego dostępnych parametrów. Następny parametr, który można przypisać jest wyświetlane wytłuszczonym drukiem.
+ Po wybraniu pełną składnię bieżącej deklaracji lub procedura jest wyświetlana w obszarze punkt wstawiania w edytorze, ze wszystkimi jego dostępnych parametrów. Następny parametr, które można przypisać jest wyświetlany czcionką pogrubioną.
 
 ## <a name="settings"></a>Ustawienia
- Włącz pamięć wirtualna
+ Włączyć wirtualną przestrzeń
 
- Po wybraniu tej opcji i **zawijanie** jest wyczyszczone, możesz kliknąć dowolnego miejsca za końcem wiersza w edytorze kodu i typu. Ta funkcja umożliwia umieść komentarzy w punkcie spójne obok kodu.
+ Gdy ta opcja jest zaznaczona i **zawijanie wyrazów** jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i typu. Ta funkcja może służyć do pozycji Komentarze w momencie spójne obok kodu.
 
- Zawijanie tekstu
+ Zawijanie wyrazów
 
- Po wybraniu jakiejkolwiek jego części linii w poziomie wykracza poza obszar Edytor widoczny jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.
+ Po wybraniu dowolnej części wiersza, który mieści się w poziomie w obszarze edytora w widoczne jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.
 
 > [!NOTE]
-> **Wirtualną przestrzeń** jest włączona funkcja wyłączony podczas **zawijanie** znajduje się na.
+> **Wirtualną przestrzenią** włączenia funkcji wyłączone podczas **zawijanie** znajduje się na.
 
 
  Pokaż zualne przy zawijaniu wierszy
 
- Po wybraniu wskaźnika Strzałka powrotu jest wyświetlany, gdy długi wiersz jest zawijana wokół drugi wiersz.
+ Po wybraniu wskaźnik zwracany strzałkę jest wyświetlany, gdy długi wiersz zawijana drugi wiersz.
 
  ![LineBreakSymbol — zrzut ekranu](../../ide/reference/media/linebreak.gif)
 
  Usuń zaznaczenie tej opcji, jeśli nie chcesz wyświetlić te wskaźniki.
 
 > [!NOTE]
-> Te strzałki monitu nie są dodawane do kodu, a nie do drukowania. Są one jedynie do celów referencyjnych.
+> Tych strzałek monitu nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
 
 
- Zastosowanie polecenia Wytnij lub Kopiuj do pustych wierszy, gdy nie ma żadnego zaznaczenia
+ Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu
 
- Ta opcja umożliwia ustawienie zachowania edytora po umieszczeniu kursora na pusty wiersz, wybierz nothing, a następnie skopiować lub Wytnij.
+ Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.
 
--   Gdy ta opcja jest zaznaczona, pusty wiersz jest kopiowany lub Wytnij. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.
+-   Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.
 
--   Po wyłączeniu tej opcji polecenia Wytnij usuwa puste wiersze. Jednak dane w Schowku zostaną zachowane. W związku z tym Jeśli następnie użyć polecenia Wklej, jest wkleić zawartość ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie jest wkleić.
+-   Gdy ta opcja jest wyczyszczone, polecenie Cut usuwa pustych wierszy. Jednak dane w Schowku jest zachowywana. W związku z tym Jeśli następnie użyć polecenia Wklej, zostanie wklejony zawartości ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie zostanie wklejony.
 
-To ustawienie nie ma wpływu na kopiowania lub wycinania podczas wiersza nie jest pusty. Jeśli nic nie zostanie wybrane, cały wiersz jest kopiowany lub Wytnij. Jeśli następnie wkleić, są wklejane tekst cały wiersz i jego endline znaku.
+To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cały wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, tekst cały wiersz i jej znak endline zostaną wklejone.
 
 > [!TIP]
-> Aby wyświetlić wskaźniki spacje, tabulatory i końców linii i w związku z tym odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **biały widoku Miejsce**.
+> Aby wyświetlić wskaźniki dla miejsca do magazynowania oraz o końców linii, a zatem odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **widoku biały Miejsce**.
 
 
 ## <a name="display"></a>Monitor
- Numery wiersza
+ Numery wierszy
 
- W przypadku wybrania, numer wiersza obok każdego wiersza kodu.
+ Po wybraniu numer wiersza obok każdego wiersza kodu.
 
 > [!NOTE]
-> Tych numerów wierszy nie są dodawane do kodu, a nie do drukowania. Są one jedynie do celów referencyjnych.
+> Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
 
 
  Włącz nawigację adresów URL jednym kliknięciem
 
- Po wybraniu kursor myszy zmienia postać dłoni jako przesuwa się nad adres URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazanych w przeglądarce sieci Web.
+ Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci web.
 
  Pasek nawigacyjny
 
- Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** listy można wybrać określonego obiektu w kodzie, wybierz jedną z jej elementów członkowskich i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
+ Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** list pozwalają na wybranie określonego obiektu w kodzie, wybierz jedną z jej członków i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

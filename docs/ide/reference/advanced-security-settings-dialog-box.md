@@ -14,30 +14,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3910383733171775bd1f25e230cbb896648034bb
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: dce482f53f9f3e6dd0b57d6cb905f97cdfaa601a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089545"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180519"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
 
-To okno dialogowe służy do określenia ustawień zabezpieczeń dotyczące debugowania w strefie.
+To okno dialogowe umożliwia określenie ustawień zabezpieczeń dotyczące debugowania w strefie.
 
-![Zaawansowane okno dialogowe Ustawienia zabezpieczeń w programie Visual Studio](../media/advanced-security-settings.png)
+![Okno dialogowe Zaawansowane ustawienia zabezpieczeń w programie Visual Studio](../media/advanced-security-settings.png)
 
-Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** zostanie wyświetlony, kliknij przycisk **zabezpieczeń** kartę. Na **zabezpieczeń** wybierz pozycję **włączenia ustawień zabezpieczeń technologii ClickOnce**, kliknij przycisk **jest częściowo zaufanych aplikacji**, a następnie kliknij przycisk **zaawansowane**.
+Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **zabezpieczeń** kartę. Na **zabezpieczeń** wybierz opcję **włączenia ustawień zabezpieczeń technologii ClickOnce**, kliknij przycisk **to częściowo zaufanych aplikacji**, a następnie kliknij przycisk **zaawansowane**.
 
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
 
 **Przyznać aplikacji dostęp do witryny pochodzenia**
 
-Jeśli zaznaczysz to pole wyboru, aplikacji można uzyskać dostępu do witryny sieci Web lub udział serwera, na którym jest opublikowana. Domyślnie ta opcja jest zaznaczona.
+Jeśli wybierzesz to pole wyboru, aplikacja może wykorzystywać udziału witryny sieci Web lub serwera, na którym została opublikowana. Domyślnie ta opcja jest zaznaczona.
 
-**Debuguj aplikację tak, jakby była pobrana z następującego adresu URL**
+**Debuguj aplikację tak, jakby zostały pobrane z następującego adresu URL**
 
-Jeśli trzeba umożliwić aplikacji dostęp do witryny sieci Web lub udział serwera odpowiadającego **URL instalacji** określone na **publikowania** Wprowadź tutaj tego adresu URL. Ta opcja jest dostępna tylko wtedy, gdy **udzielić dostępu aplikacji do witryny pochodzenia** jest zaznaczone.
+Jeśli trzeba umożliwić aplikacji dostęp do witryny sieci Web lub serwera udziału odpowiadający **adres URL instalacji** określone na **Publikuj** wpisz tutaj tego adresu URL. Ta opcja jest dostępna tylko wtedy, gdy **przyznać aplikacji dostęp do witryny pochodzenia** jest zaznaczone.
 
 ## <a name="see-also"></a>Zobacz także
 

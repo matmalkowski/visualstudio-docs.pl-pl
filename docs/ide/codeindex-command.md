@@ -1,5 +1,5 @@
 ---
-title: CodeIndex — polecenie
+title: Polecenie CodeIndex
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,23 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296299"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176375"
 ---
-# <a name="codeindex-command"></a>CodeIndex — polecenie
+# <a name="codeindex-command"></a>Polecenie CodeIndex
 
-Użyj **CodeIndex** polecenia do zarządzania kodu indeksowania na Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje wskaźników CodeLens lub wyłączyć funkcję indeksowania do badania problemów z wydajnością serwera.
+Użyj **CodeIndex** polecenia do zarządzania indeksowaniem kodu na serwerze Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje narzędzia CodeLens, lub wyłączyć indeksowanie, aby zbadać problemy z wydajnością serwera.
 
 ## <a name="required-permissions"></a>Wymagane uprawnienia
 
-Aby użyć **CodeIndex** polecenia, musisz być członkiem **Team Foundation Administratorzy** grupy zabezpieczeń. Zobacz [uprawnienia i grup zdefiniowanych dla usługi Team Services i TFS](/vsts/organizations/security/permissions?view=vsts).
+Aby użyć **CodeIndex** polecenia, musi być członkiem **Administratorzy Team Foundation** grupy zabezpieczeń. Zobacz [uprawnień i grup zdefiniowanych dla usługi Team Services i serwera TFS](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
-> Nawet jeśli użytkownik loguje się przy użyciu poświadczeń administracyjnych, należy otworzyć z podwyższonym poziomem uprawnień okno wiersza polecenia, aby uruchomić to polecenie. Należy także wykonać to polecenie z warstwy aplikacji programu Team Foundation.
+> Nawet wtedy, gdy użytkownik loguje się przy użyciu poświadczeń administracyjnych, należy otworzyć podwyższone okno Wiersz polecenia, aby uruchomić to polecenie. Należy także uruchomić to polecenie z warstwy aplikacji programu Team Foundation.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,56 +42,56 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argument**|**Opis**|
 |------------------|---------------------|
-|`CollectionName`|Określa nazwę kolekcji projektów zespołowych. Jeśli nazwa zawiera spacje, należy wpisać nazwę w cudzysłowie, na przykład "Fabrikam Web Site".|
-|`CollectionId`|Określa numer identyfikacyjny kolekcji projektów zespołowych.|
+|`CollectionName`|Określa nazwę kolekcji projektu zespołowego. Jeśli nazwa zawiera spacje, należy ją ująć w cudzysłów, na przykład "Fabrikam Website".|
+|`CollectionId`|Określa numer identyfikujący kolekcji projektu zespołowego.|
 |`ServerPath`|Określa ścieżkę do pliku kodu.|
 
 |**Option**|**Opis**|
 |----------------|---------------------|
 |**/indexingStatus**|Pokazuje stan i konfigurację usługi indeksowania kodu.|
-|**/setIndexing:**[na &#124; poza &#124; keepupOnly]|-   **na**: uruchomić indeksowania wszystkich grup zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich grup zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowe grupy zmian.|
-|**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; widok] `ServerPath`<br /><br /> Na początek, koniec lub obu końców ścieżki serwera, można użyć znaku wieloznacznego (*).|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowane do listy plików została zignorowana.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików została zignorowana.<br />-   **removeAll**: Wyczyść listy plików została zignorowana i uruchomić indeksowania wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|
-|**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zawiera określoną liczbę plików, która przekracza określony rozmiar w KB. Następnie można użyć **/ignoreList** opcji, aby wykluczyć pliki indeksowania.|
-|**/reindexAll**|Wyczyść wcześniej zindeksowanych danych i uruchom ponownie indeksowania.|
-|**/destroyCodeIndex [/noPrompt]**|Usuwanie indeksu kodu i wszystkie zindeksowanych danych. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|
-|**/temporaryDataSizeLimit**: [widok &#124; <`SizeInGBs`> &#124; Wyłącz]|Kontroli ilości tymczasowe dane CodeLens tworzy podczas przetwarzania grupy zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmienić limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzana przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens wstrzyma przetwarzania poza grupy zmian, nie nowe. CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Oczyszczanie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczenia tego limitu do momentu wyczyszczenia zacznie działać.|
-|**/indexHistoryPeriod**: [widok &#124; wszystkie &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historii zmian. Ma to wpływ na ile historii CodeLens przedstawiono. Domyślny limit wynosi 12 miesięcy. Oznacza to, CodeLens przedstawia historię zmian tylko w ostatnich 12 miesięcy.<br /><br /> -   **Widok**: Pokaż bieżąca liczba miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Liczba miesięcy, używany do historii zmian indeksu zmienić.|
-|**/collectionName:** `CollectionName`|Określa nazwę kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Określa numer identyfikacyjny kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|
+|**/setIndexing:**[na &#124; poza &#124; keepupOnly]|-   **na**: Uruchom indeksowanie wszystkich zestawów zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich zestawów zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonych zestawów zmian i Rozpocznij indeksowanie tylko nowych zestawów zmian.|
+|**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; view] `ServerPath`<br /><br /> Można użyć znaku wieloznacznego (*) na początku, zakończenia lub obu końcach ścieżki serwera.|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowany do listy plików ignorowanych.<br />-   **Usuń**: Usuń plik, który ma indeksowane z listy plików ignorowanych.<br />-   **removeAll**: Wyczyść listę ignorowanych plików i Rozpocznij indeksowanie wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|
+|**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Przedstawia określoną liczbę plików, która przekracza określony rozmiar w KB. Następnie można użyć **/ignoreList** opcji, aby wykluczyć te pliki z indeksowania.|
+|**/reindexAll**|Wyczyść wcześniej zaindeksowane dane i ponownie uruchom indeksowanie.|
+|**/destroyCodeIndex [/noPrompt]**|Usuń indeks kodu i wszystkie indeksowane dane. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|
+|**/temporaryDataSizeLimit**: [widok &#124; <`SizeInGBs`> &#124; wyłączone]|Kontrolowanie ile tymczasowe dane CodeLens tworzy podczas przetwarzania zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmień limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzany przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens spowoduje wstrzymanie przetwarzania ostatnie zestawy zmian, nie nowe. Funkcja CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Czyszczenie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczyć tego limitu, dopóki oczyszczania zacznie działać.|
+|**/indexHistoryPeriod**: [widok &#124; wszystkich &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historię zmian. Dotyczy to, ile historii CodeLens pokazuje. Domyślny limit to 12 miesięcy. Oznacza to rozwiązanie CodeLens Pokazuje historię zmian z ostatnich 12 miesięcy tylko.<br /><br /> -   **Widok**: Pokaż bieżącą liczbę miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Zmień liczbę miesięcy, używany do historii zmian indeksu.|
+|**/collectionName:** `CollectionName`|Określa nazwę kolekcji projektu zespołowego, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Określa numer identyfikujący kolekcji projektu zespołowego, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|
 
 ## <a name="examples"></a>Przykłady
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia opisywane w przykładach są fikcyjne.  Wszelkie rzeczywistą firmą, organizacji, produktu, nazwa domeny, adres e-mail, logo, osoby, miejscami lub zdarzeniami ma i zdarzeniami.
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne.  Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane.
 
- Aby wyświetlić kod indeksowania stanu i konfiguracji:
+ Aby zobaczyć status indeksowania kodu i konfiguracji:
 
 ```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- Aby uruchomić indeksowania wszystkich grup zmian:
+ Aby rozpocząć indeksowanie wszystkich zestawów zmian:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- Aby zatrzymać, indeksowania wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowych grup zmian:
+ Aby zatrzymać indeksowanie wcześniej utworzonych zestawów zmian i Rozpocznij indeksowanie tylko nowych zestawów zmian:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
  Aby znaleźć do 50 plików, które są większe niż 10 KB:
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- Aby wykluczyć określony plik z indeksowania i dodać go do listy zignorowany plik:
+ Aby wykluczyć określony plik z indeksowania i dodać go do listy plików ignorowanych:
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
  Aby wyświetlić wszystkie pliki, które nie są indeksowane:
@@ -100,31 +100,31 @@ TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collection
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- Aby wyczyścić wcześniej zindeksowanych danych i uruchom ponownie indeksowania:
+ Aby wyczyścić wcześniej indeksowane dane i ponownie uruchomić indeksowanie:
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  Aby zapisać całą historię zmian:
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- Aby usunąć limit rozmiaru na CodeLens dane tymczasowe i kontynuować indeksowanie niezależnie od rozmiaru danych tymczasowych:
+ Aby usunąć limit rozmiaru danych tymczasowych CodeLens i kontynuować indeksowanie niezależnie od rozmiaru danych tymczasowych:
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- Aby usunąć indeksu kod potwierdzenia:
+ Aby usunąć indeks kodu z potwierdzeniem:
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Znajdowanie zmian w kodzie i innych elementów historii za pomocą wskaźników CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Zarządzanie konfiguracją serwera z TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Zarządzanie konfiguracją serwera za pomocą TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

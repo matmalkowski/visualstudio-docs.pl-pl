@@ -11,38 +11,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c9122ec3f6eaed156c48f6fd31b4cbbed32292b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965565"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179651"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Porady: określanie liczby iteracji testowych w ustawieniach testu obciążenia
 
-Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** Aby zmienić właściwości scenariuszy, aby spełnić potrzeby testowania i cele. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
-Przy użyciu **edytora testu obciążenia**, można edytować **iteracjami testu** właściwości wartości ustawień uruchamiania w oknie właściwości. **Iteracje testu** właściwość określa liczbę iteracji, aby uruchomić na wszystkich testów sieci Web wydajności i jednostka we wszystkich scenariuszach testów obciążenia przy użyciu **edytorze testu obciążenia**.
+Za pomocą **edytora testu obciążenia**, można edytować **iteracji testu** właściwości wartości parametrów uruchomieniowych w oknie dialogowym właściwości. **Iteracje testu** właściwość określa liczbę iteracji do uruchamiania na wszystkich sieci web wydajności i testy jednostkowe we wszystkich scenariuszach testów obciążenia przy użyciu **edytora testu obciążenia**.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości parametry uruchomieniowe i ich opisy, zobacz [właściwości ustawień uruchamiania testu obciążenia](../test/load-test-run-settings-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
 
-## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Umożliwia określenie liczby iteracji testowych w ustawieniach testu
+## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Aby określić liczbę iteracji testowych w ustawieniach testu
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-     **Edytorze testu obciążenia** zostanie wyświetlony i drzewa testu obciążenia.
+     **Edytora testu obciążenia** pojawi się i wyświetli drzewa testu obciążenia.
 
-2.  Obciążenia przetestować drzewa, w **parametrów uruchomieniowych** folderu, wybierz ustawienie uruchamiania.
+2.  Obciążenia testowanie drzewa, w **parametrów uruchomieniowych** folderu, wybierz ustawienie uruchamiania.
 
-3.  Na **widoku** menu, wybierz opcję **okna właściwości** do wyświetlania obciążenia Uruchom kategorii i właściwości tego ustawienia.
+3.  Na **widoku** menu, wybierz opcję **okno właściwości** do wyświetlania obciążenia Uruchom kategorii i właściwości tego ustawienia.
 
-4.  Ustaw **iteracjami testu użyj** właściwości **True**.
+4.  Ustaw **Użyj iteracji testu** właściwości **True**.
 
-5.  W **iteracje testu** właściwości, wprowadź liczbę wskazującą liczbę iteracji testu, aby uruchomić podczas testu obciążenia.
+5.  W **iteracje testu** właściwość, wprowadź numer, który wskazuje liczbę iteracji testu do uruchomienia podczas testu obciążeniowego.
 
-6.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **iteracje testu** wartość.
+6.  Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **iteracje testu** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

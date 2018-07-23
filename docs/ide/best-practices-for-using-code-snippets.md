@@ -12,36 +12,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923684"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179534"
 ---
-# <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z wstawek kodu
+# <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
-Kod w fragment kodu przedstawia tylko najbardziej podstawową metodą coś zrobić. Dla większości aplikacji należy zmodyfikować kod do własnych aplikacji.
+W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś zrobić. W przypadku większości aplikacji należy zmodyfikować kod do własnych aplikacji.
 
 ## <a name="handling-exceptions"></a>Obsługa wyjątków
 
-Zazwyczaj fragment kodu Try... Bloki catch przechwytuje i rethrow wszystkie wyjątki. Może to nie być odpowiednie opcje dla projektu. Dla każdego wyjątku Brak odpowiedzi na kilka sposobów. Przykłady można znaleźć [porady: obsługa wyjątków za pomocą bloku try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) i [spróbuj... CATCH... Finally — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Zazwyczaj fragment kodu Try... CATCH w blokach catch i zgłoś ponownie wszystkie wyjątki. Może to nie być dobrym wyborem dla projektu. Dla każdego wyjątku istnieje kilka sposobów na odpowiedź. Aby uzyskać przykłady, zobacz [jak: obsługi wyjątku za pomocą bloku try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) i [spróbuj... CATCH... Finally — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Lokalizacje plików
 
-Podczas lokalizacji plików dostosowania się do aplikacji, możesz pomyśleć o następujących czynności:
+Podczas lokalizacji plików można przystosować do aplikacji, możesz pomyśleć o następujących czynności:
 
-- Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do *Program Files* folderu na komputerze, dlatego przechowywanie plików z aplikacją plików może nie służbowych.
+- Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do *Program Files* folderu na komputerze, dlatego przechowywanie plików za pomocą aplikacji plików może nie działają.
 
-- Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C:\\*) nie jest bezpieczna. Dla danych aplikacji, firma Microsoft zaleca *danych aplikacji* folderu. Dla danych poszczególnych użytkowników aplikacji można utworzyć pliku dla każdego użytkownika w *dokumenty* folderu.
+- Znajdowanie w bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C:\\*) nie jest bezpieczna. W przypadku danych aplikacji zaleca się *dane aplikacji* folderu. Dla danych poszczególnych użytkowników aplikacji można utworzyć pliku dla każdego użytkownika w *dokumenty* folderu.
 
-- Przy użyciu prawidłową nazwę pliku. Można użyć <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog> formantów, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że między czasem użytkownik wybierze plik i czas kodu manipuluje pliku, plik może być usunięty. Ponadto użytkownik może nie ma uprawnień do zapisu w pliku.
+- Przy użyciu prawidłowej nazwy pliku. Możesz użyć <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog> formantów, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że między czasie użytkownik wybierze plik i czas, w kodzie manipuluje pliku, plik może być usunięty. Ponadto użytkownik nie może mieć uprawnienia do zapisu do pliku.
 
 ## <a name="security"></a>Zabezpieczenia
 
-Jak bezpieczne fragment jest zależy od tego, gdzie jest używane w kodzie źródłowym oraz jak zmienić po w kodzie. Poniższa lista zawiera kilka obszarów, które należy wziąć pod uwagę.
+Jak bezpieczne wstawka to zależy od tego, gdzie jest używana w kodzie źródłowym i jak zmienić po w kodzie. Poniższa lista zawiera kilka obszarów, które muszą być rozważone.
 
-- Dostępu do plików i bazy danych
+- Dostęp do plików i bazy danych
 
 - Zabezpieczenia dostępu kodu
 
@@ -49,28 +49,28 @@ Jak bezpieczne fragment jest zależy od tego, gdzie jest używane w kodzie źró
 
 - Przechowywanie kluczy tajnych
 
-- Weryfikowanie, czy dane wejściowe
+- Weryfikowanie danych wejściowych
 
-- Przekazywanie danych do technologii skryptów
+- Przekazywanie danych do technologii wykonywania skryptów
 
 Aby uzyskać więcej informacji, zobacz [zabezpieczanie aplikacji](../ide/securing-applications.md).
 
-## <a name="downloaded-code-snippets"></a>Wstawki kodu pobrany
+## <a name="downloaded-code-snippets"></a>Fragmenty kodu z pobranego
 
-Wstawki kodu IntelliSense zainstalowany przez program Visual Studio nie są w sobie zagrożenie bezpieczeństwa. Mogą jednak utworzyć zagrożenia bezpieczeństwa w aplikacji. Wstawki kodu programu pobrane z Internetu powinny być traktowane jak inne pobieranej zawartości — z najwyższą ostrożność.
+Fragmenty kodu IntelliSense instalowane przez Visual Studio nie są w sobie zagrożenie bezpieczeństwa. Jednak może być utworzona zagrożenia bezpieczeństwa w Twojej aplikacji. Fragmenty kodu, pobranego z Internetu, powinny być traktowane jak inne pobranej zawartości — z najwyższą ostrożnością.
 
-- Pobierz wstawki tylko z witryn, którym ufasz, a wirusów aktualne oprogramowanie.
+- Pobierz fragmenty tylko z lokacji, której możesz zaufać i używać aktualnych przed wirusami.
 
-- Otwórz wszystkie pliki pobrane fragmentu kodu w Notatniku lub edytora XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Poszukaj następujących problemów:
+- Otworzyć wszystkie pliki pobrane fragment kodu w Notatniku lub edytorze XML programu Visual Studio i uważnie przeczytać przed zainstalowaniem ich. Zwróć uwagę na następujące kwestie:
 
-    - Jeśli zostanie wykonana, fragment kodu może uszkodzić system. Należy uważnie przeczytać kod źródłowy przed jego uruchomieniem.
+    - Fragment kodu uszkodzenie systemu, jeśli zostanie wykonana. Należy uważnie przeczytać kodu źródłowego, przed jego uruchomieniem.
 
-    - Blok adresu URL pomocy fragment pliku może zawierać adresów URL, które wykonać pliku skryptu złośliwego lub wyświetlić obraźliwe witryny sieci Web.
+    - Blok adresu URL pomocy plik fragmentu kodu może zawierać adresy URL, których wykonanie pliku złośliwy skrypt lub wyświetlić obraźliwe witryny sieci Web.
 
-    - Fragment kodu może zawierać odwołań, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mogą została pobrana do komputera, z którego został pobrany fragment kodu. Fragment kodu może następnie wprowadzić wywołanie do metody w odwołaniu, która wykonuje złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, przejrzyj bloki importów i odwołania do pliku fragmentu.
+    - Fragment może zawierać odwołania, które są dodawane w trybie dyskretnym do projektu i mogą być ładowane z dowolnego miejsca w systemie. Te odwołania mógł zostać pobrany na komputer, z którego został pobrany fragmentu kodu. Fragment kodu może następnie wprowadzić wywołanie do metody odwołania, który jest wykonywany złośliwego kodu. Aby zabezpieczyć się przed takimi atakami, należy sprawdzić bloki Importy i odwołania do pliku fragmentu kodu.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Basic IntelliSense — wstawki programu](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Fragmenty kodu IntelliSense w języku Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Zabezpieczanie aplikacji](../ide/securing-applications.md)
 - [Fragmenty kodu](../ide/code-snippets.md)

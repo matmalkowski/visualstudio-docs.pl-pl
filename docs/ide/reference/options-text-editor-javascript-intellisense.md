@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797512"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179752"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka JavaScript. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**,  **JavaScript**, **IntelliSense.**
@@ -46,7 +46,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
  Gdy to pole wyboru jest zaznaczone i gdy masz plik JavaScript otwarty poza kontekstem projektu, Visual Studio pobierze zdalne pliki JavaScript, do których odwołuje się plik w celu dostarczania informacji w technologii IntelliSense. Gdy ta opcja jest zaznaczona, pliki zostaną pobrane po włączeniu ich jako odwołania w pliku JavaScript.
 
 > [!NOTE]
-> Dla projektów sieci Web domyślnie pobierane są pliki zdalne, do których odwołuje się projekt.
+> Dla projektów sieci web domyślnie pobierane są pliki zdalne, do którego odwołuje się projekt.
 
 
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
@@ -71,7 +71,7 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
 
 -   Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.
 
--   Grupy odwołań wyspecjalizowanych funkcji roboczych, dla funkcji roboczych HTML5 sieci Web. Pliki określone w tej grupie są w zakresie plików .js, które mają wyraźne odniesienie do grupy odwołań wyspecjalizowanych funkcji roboczych.
+-   Grupy odniesienia dedykowanych procesów roboczych dla roboczych HTML5 sieci web. Pliki określone w tej grupie są w zakresie plików .js, które mają wyraźne odniesienie do grupy odwołań wyspecjalizowanych funkcji roboczych.
 
 -   Ogólna dla innych typów projektów języka JavaScript.
 

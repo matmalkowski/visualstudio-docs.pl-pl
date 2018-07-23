@@ -17,24 +17,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476770"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180181"
 ---
 # <a name="debug-at-design-time-in-visual-studio"></a>Debugowanie w czasie projektowania w programie Visual Studio
 
-W niektórych scenariuszach może być do debugowania kodu na projekt czasu zamiast, gdy aplikacja jest uruchomiona. Można to zrobić za pomocą **Immediate** okna. Jeśli chcesz debugować kodu XAML, który współdziała z innymi kodu, na przykład kod powiązania danych, możesz użyć **debugowania** > **dołączyć do procesu** w tym celu.
+W niektórych przypadkach warto możliwe jest debugowanie kodu na projekt czasu zamiast, gdy aplikacja jest uruchomiona. Można to zrobić za pomocą **bezpośrednie** okna. Jeśli chcesz debugować kodu XAML, który wchodzi w interakcję z innego kodu, takie jak kod powiązania danych, możesz użyć **debugowania** > **dołączyć do procesu** Aby to zrobić.
   
-### <a name="debug-at-design-time-using-the-immediate-window"></a>Debugowanie w czasie projektowania, w oknie bezpośrednim  
+### <a name="debug-at-design-time-using-the-immediate-window"></a>Debugowanie w czasie projektowania za pomocą okna bezpośredniego  
 
-Można użyć programu Visual Studio **Immediate** okno, aby wykonać funkcji lub procedury, gdy aplikacja nie jest uruchomiona. Jeśli funkcja lub procedura zawiera punkt przerwania, Visual Studio spowoduje przerwanie wykonywania we właściwym momencie. Następnie można okna debugera Sprawdź swój stan programu. Ta funkcja jest nazywana debugowanie w czasie projektowania.  
+Możesz użyć programu Visual Studio **bezpośrednie** okna do wykonania funkcji lub podprocedury, gdy aplikacja nie jest uruchomiona. Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Ta funkcja jest wywoływana, debugowanie w czasie projektowania.  
 
-Poniższy przykład jest w języku Visual Basic, ale **Immediate** okna jest również obsługiwany w aplikacji C# i C++.
+Poniższy przykład jest w języku Visual Basic, ale **bezpośrednie** okno jest również obsługiwane w aplikacjach języka C# i C++.
   
-1.  Wklej następujący kod w aplikacji konsoli języka Visual Basic:  
+1.  Wklej następujący kod do aplikacji konsoli Visual Basic:  
   
     ```vb  
     Module Module1  
@@ -58,49 +58,49 @@ Poniższy przykład jest w języku Visual Basic, ale **Immediate** okna jest ró
     End Module  
     ```  
   
-2.  Ustaw punkt przerwania w wierszu, `s="Add BreakPoint Here"`.  
+2.  Ustaw punkt przerwania w wierszu, który odczytuje, `s="Add BreakPoint Here"`.  
   
-3.  Otwórz **Immediate** okna (**debugowania** > **Windows** > **Immediate**) i wpisz następujące polecenie w okno: `?MyFunction<enter>`  
+3.  Otwórz **bezpośrednie** okna (**debugowania** > **Windows** > **bezpośrednie**) i wpisz następujące polecenie w okno: `?MyFunction<enter>`  
   
-4.  Sprawdź, czy punkt przerwania został trafiony i że stosu wywołań są prawidłowe.  
+4.  Sprawdź, czy punkt przerwania został trafiony i że stos wywołań jest prawidłowo wprowadzony.  
   
-5.  Na **debugowania** menu, kliknij przycisk **Kontynuuj**i upewnij się, że jesteś nadal w trybie projektowania.  
+5.  Na **debugowania** menu, kliknij przycisk **Kontynuuj**i sprawdź, że jesteś nadal w trybie projektowania.  
   
-6.  Wpisz następujące polecenie w **Immediate** okno: `?MyFunction<enter>`  
+6.  Wpisz następujące polecenie w **bezpośrednie** okna: `?MyFunction<enter>`  
   
-7.  Wpisz następujące polecenie w **Immediate** okno: `?MySub<enter>`  
+7.  Wpisz następujące polecenie w **bezpośrednie** okna: `?MySub<enter>`  
   
-8.  Sprawdź, czy trafiony punkt przerwania i sprawdź wartość statyczna zmienna `i` w **zmiennych lokalnych** okna. Powinien mieć wartość 3.  
+8.  Sprawdź, czy trafiony punkt przerwania i sprawdzić wartość zmiennej statycznej `i` w **lokalne** okna. Powinien mieć wartość 3.  
   
-9. Sprawdź, czy stos wywołań jest dokładne.  
+9. Sprawdź, czy wywołanie stosu jest prawidłowa.  
   
-10. Na **debugowania** menu, kliknij przycisk **Kontynuuj**i upewnij się, że jesteś nadal w trybie projektowania.  
+10. Na **debugowania** menu, kliknij przycisk **Kontynuuj**i sprawdź, że jesteś nadal w trybie projektowania.  
 
 ## <a name="debug-at-design-time-from-the-xaml-designer"></a>Debugowanie w czasie projektowania przy użyciu projektanta XAML
 
-Może być przydatne do debugowania kodu za przy użyciu projektanta XAML w niektórych scenariuszach powiązanie dane deklaratywne.
+Może być przydatne debugować kod związany z projektanta XAML w niektórych scenariuszach powiązania dane deklaratywne.
 
-1. W projekcie, Dodaj nową stronę XAML, takich jak *temp.xaml*. Nowa strona XAML może pozostać puste. 
+1. W projekcie, Dodaj nową stronę XAML, takich jak *temp.xaml*. Nowa strona XAML należy pozostawić pusty. 
 
 1. Skompiluj rozwiązanie.
 
-1. Otwórz *temp.xaml*, który ładuje projektanta (*UwpSurface.exe* w aplikacji platformy uniwersalnej systemu Windows lub *XDesProc.exe*), możesz dołączyć do niego w kolejnych krokach. 
+1. Otwórz *temp.xaml*, który ładuje projektanta (*UwpSurface.exe* w aplikacji platformy uniwersalnej systemu Windows lub *XDesProc.exe*), dzięki czemu możesz dołączyć do niego w kolejnych krokach. 
 
-1. Otwórz nowe wystąpienie programu Visual Studio. Otwórz nowe wystąpienie **dołączyć do procesu** okno dialogowe (**debugowania** > **dołączyć do procesu**) ustaw **dołączyć do** pole typu prawidłowego kodu, takie jak **kodu zarządzanego (środowisko CoreCLR)** lub typ prawidłowego kodu zależnie od wersji platformy .NET. Wybierz z listy poprawny proces projektanta, a **Attach**.
+1. Otwórz nowe wystąpienie programu Visual Studio. Otwórz w nowym wystąpieniu **dołączyć do procesu** okno dialogowe (**debugowania** > **dołączyć do procesu**) ustaw **dołączyć do** pole do typu prawidłowego kodu, takich jak **kodu zarządzanego (CoreCLR)** lub wpisz poprawny kod zależnie od wersji platformy .NET. Z listy wybierz poprawny procesu projektanta i wybierz polecenie **Dołącz**.
 
-    Dla platformy uniwersalnej systemu Windows projektach przeznaczonych dla kompilacji 16299 lub nowszego, proces projektanta *UwpSurface.exe*. WPF lub wersji platformy uniwersalnej systemu Windows Wstecz, aby 16299 proces projektanta jest *XDesProc.exe*.
+    Dla platformy UWP projekty przeznaczone dla kompilacji 16299 lub nowszego, proces projektanta *UwpSurface.exe*. WPF lub wersje platformy uniwersalnej systemu Windows przed 16299 proces projektanta jest *XDesProc.exe*.
 
-1. Dołączony do procesu, przełącz się do projektu, otwórz kod związany z którym chcesz debugować i ustaw punkt przerwania.
+1. Gdy dołączony do procesu, przejdź do swojego projektu, otwórz kod związany z którym chcesz debugować i ustaw punkt przerwania.
 
-1. Na koniec Otwórz stronę, która zawiera kod XAML, który zawiera powiązanie danych.
+1. Wreszcie Otwórz stronę, która zawiera kod XAML, który zawiera powiązanie danych.
 
-    Na przykład można ustawić punktu przerwania w kodzie konwerter typu dla następujących XAML, który wiąże blok tekstu w czasie projektowania.
+    Na przykład można ustawić punkt przerwania w kodzie konwerter typu dla następujących XAML, który wiąże TextBlock w czasie projektowania.
 
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
-   Podczas ładowania strony punkt przerwania zostaje trafiony.
+   Po załadowaniu strony zostanie osiągnięty punkt przerwania.
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

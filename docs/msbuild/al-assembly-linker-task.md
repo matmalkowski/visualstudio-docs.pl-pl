@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945900"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177841"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) zadanie
 Al — zadanie jest zawijany *AL.exe*, to narzędzie, które jest rozpowszechniana z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker służy do tworzenia zestawu z manifestem z co najmniej jeden plik, który jest modułem lub plikiem zasobów. Kompilatory języków i środowisk programistycznych może już zapewniają te funkcje, często nie jest niezbędne do korzystania z tego zadania bezpośrednio. Assembly Linker jest najbardziej użyteczna dla deweloperów, konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak oferowanych od etapu programowania w językach mieszanych. To zadanie nie łączyć modułów w pliku jednym zestawie; indywidualne moduły muszą być rozproszone i dostępne, aby Wynikowy zestaw można prawidłowo załadować. Aby uzyskać więcej informacji na temat *AL.exe*, zobacz [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -59,7 +59,7 @@ Al — zadanie jest zawijany *AL.exe*, to narzędzie, które jest rozpowszechnia
 |`ProductVersion`|Opcjonalnie `String` parametru.<br /><br /> Określa ciąg dla `ProductVersion` pole w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację dla `/productv[ersion]` opcji [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`ResponseFiles`|Opcjonalnie `String[]` parametru.<br /><br /> Określa pliki odpowiedzi, które zawierają dodatkowe opcje do przejścia do Assembly Linker.|  
 |`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak resgen.exe.|  
-|`SourceModules`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Przynajmniej jeden moduł skompilowany w zestawie. Moduły zostaną wyświetlone w manifeście zestawu wynikowego i nadal obowiązują rozproszone i dostępne w kolejności dla zestawu do załadowania. Elementy przekazany do tego parametru może mieć dodatkowe metadane o nazwie `Target`, która określa ścieżkę i nazwę pliku, do którego zadanie skopiuje plik, po upływie którego kompiluje tego nowego pliku w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację dla [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Ten parametr odnosi się do listy modułów przekazywany do Al.exe bez określonego przełącznika.|  
+|`SourceModules`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Przynajmniej jeden moduł skompilowany w zestawie. Moduły zostaną wyświetlone w manifeście zestawu wynikowego i nadal obowiązują rozproszone i dostępne w kolejności dla zestawu do załadowania. Elementy przekazany do tego parametru może mieć dodatkowe metadane o nazwie `Target`, która określa ścieżkę i nazwę pliku, do którego zadanie skopiuje plik, po upływie którego kompiluje tego nowego pliku w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację dla [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Ten parametr odnosi się do listy modułów przekazany do *Al.exe* bez określonego przełącznika.|  
 |`TargetType`|Opcjonalnie `String` parametru.<br /><br /> Określa format pliku wyjściowego: `library` (biblioteka kodu) `exe` (Aplikacja konsoli) lub `win` (aplikacji systemu Windows). Wartość domyślna to `library`. Ten parametr odnosi się do `/t[arget]` opcji [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`TemplateFile`|Opcjonalnie `String` parametru.<br /><br /> Określa zestaw, z którego można odziedziczyć wszystkie metadane zestawu, z wyjątkiem pola kultury. Określony zestaw musi mieć silną nazwę.<br /><br /> Zestaw utworzony przy użyciu `TemplateFile` parametr będzie zestawem satelickim. Ten parametr odnosi się do `/template` opcji [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Timeout`|Opcjonalnie `Int32` parametru.<br /><br /> Określa ilość czasu w milisekundach, po których zostanie zakończony wykonywalnego zadania podrzędnego. Wartość domyślna to `Int.MaxValue`, wskazujący, że nie okres limitu czasu.|  

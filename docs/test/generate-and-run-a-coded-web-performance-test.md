@@ -1,5 +1,5 @@
 ---
-title: Testy wydajności WWW kodowane w programie Visual Studio
+title: Kodowanego testu wydajności WWW w programie Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,38 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750857"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179579"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generowanie i uruchamianie kodowanego testu wydajności sieci Web
 
-Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci web. Testy znajdują się w testach obciążenia do pomiaru wydajności aplikacji sieci web mocno obciążony wielu użytkowników. Test wydajności sieci web może zostać przekonwertowany do opartej na kodzie skryptu, który można edytować i dostosować podobnie jak inne kodu źródłowego. Na przykład można dodać konstrukcji pętli i gałęzi.
+Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci web. Testy są zawarte w testach obciążenia do pomiaru wydajności aplikacji sieci web pod wpływem wielu użytkowników. Test wydajności sieci web mogą być konwertowane do skryptu oparte na kodzie, który można edytować i dostosowywać jak inny kod źródłowy. Na przykład można dodać konstrukcje pętli i rozgałęzień.
 
-## <a name="generate-a-coded-web-performance-test"></a>Generowanie kodowanego testu sieci web wydajności
+## <a name="generate-a-coded-web-performance-test"></a>Generuj zakodowany internetowy test wydajnościowy
 
-1.  Jeśli nie utworzono testu wydajności sieci web, zobacz [rejestrowania testu wydajności sieci web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1.  Jeśli nie utworzono testu wydajności sieci web, zobacz [rejestrowanie testu wydajności sieci web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Generowanie kodowanego testu.
 
-     ![Generowanie kodowanego testu sieci web wydajności](../test/media/web_test_coded_generate.png)
+     ![Generuj zakodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate.png)
 
-3.  Nazwa testu.
+3.  Nazwij przypadek testowy.
 
-     ![Wprowadź nazwę dla testów wydajności sieci web kodowane](../test/media/web_test_coded_generate_nametest.png)
+     ![Wprowadź nazwę dla kodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate_nametest.png)
 
-     Nowe kodowanego testu zostanie otwarty w edytorze kodu.
+     Nowy test zakodowany otwiera się w edytorze kodu.
 
-     W zależności od tego, które wydajności sieci web i szablon projektu testu obciążenia dodany do rozwiązania zostanie wygenerowany kod w języku Visual Basic lub Visual C#.
+     Zależności od tego, które wydajności sieci web i szablon projektu testu obciążenia został dodany do rozwiązania zostanie wygenerowany kod w języku Visual Basic lub Visual C#.
 
-     ![Nowe kodowanego testu zostanie otwarty w edytorze kodu](../test/media/web_test_coded_generate_opencodeeditor.png)
+     ![Nowy test zakodowany otwiera się w edytorze kodu](../test/media/web_test_coded_generate_opencodeeditor.png)
 
-     W kodzie widać, że metoda GetRequestEnumerator() w języku C# lub w języku Visual Basic metody Run() zawiera każdego żądania sprawdzenia poprawności reguły i w sieci web w teście recoded.
+     W kodzie widać, że metoda GetRequestEnumerator() w języku C# lub metoda Run() w języku Visual Basic zawiera każdy sprawdzania poprawności reguły i żądanie sieci web w teście zapisane.
 
-4.  Aby zademonstrować, Dodawanie prostego kodu, przewiń w dół do zakończenia metody i po kod ostatniego żądania sieci web i Dodaj następujący kod:
+4.  Aby wykazać, dodając kilka prostych kodów, przewiń w dół do końca metody i po kodzie dla ostatniego żądania sieci web i Dodaj następujący kod:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,29 +72,29 @@ Testy wydajności sieci Web są rejestrowane przez przeglądanie aplikacji sieci
     End If
     ```
 
-5.  Tworzenie rozwiązania, aby sprawdzić, czy skompilowanie niestandardowego kodu.
+5.  Kompiluj rozwiązanie, aby sprawdzić, czy skompilowanie niestandardowego kodu.
 
 6.  Uruchom test.
 
-     ![Uruchamianie testu wydajności sieci web kodowane](../test/media/web_test_coded_generate_run.png)
+     ![Uruchom kodowany internetowy test wydajnościowy](../test/media/web_test_coded_generate_run.png)
 
-     Ponieważ dnia, to był uruchamiany się stało się środę...
+     A ponieważ dzień uruchomienie miało miejsce w środę...
 
-     ![Wyniki testów wydajności sieci web kodowane](../test/media/web_test_coded_generate_results.png)
+     ![Wyników testu wydajności sieci web kodowanego](../test/media/web_test_coded_generate_results.png)
 
-## <a name="qa"></a>FUNKCJA PYTANIA I ODPOWIEDZI
+## <a name="qa"></a>PYTANIA I ODPOWIEDZI
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Pytanie: czy można uruchamiać więcej niż jeden test w czasie?
- **Odpowiedź:** tak, użyj menu kontekstowego w Eksploratorze rozwiązań.
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: czy można uruchomić więcej niż jeden test naraz?
+ **Odp.:** tak, użyj menu kontekstowego w **Eksploratora rozwiązań**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Pytanie: źródło danych należy dodać przed lub po I Generowanie kodowanego testu?
- **A:** łatwiej [źródła danych](../test/add-a-data-source-to-a-web-performance-test.md), aby wygenerować kodowanego testu, ponieważ kod będą automatycznie generowane automatycznie.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: czy należy dodać źródła danych przed czy po wygenerowaniu kodowanego testu?
+ **Odp.:** ułatwia dodawanie [źródła danych](../test/add-a-data-source-to-a-web-performance-test.md) przed wygenerowaniem kodowanego testu, ponieważ kod zostanie automatycznie wygenerowany dla Ciebie.
 
- Po uruchomieniu kodowanego testu ze źródłem danych, mogą pojawić się następujący komunikat o błędzie:
+ Po uruchomieniu testu kodowanego ze źródłem danych, można napotkać następujący komunikat o błędzie:
 
- **Nie można uruchomić testu \<nazwę testu > na agencie \<nazwa komputera >: obiekt odwołania nie jest ustawione na wystąpienie obiektu.**
+ **Nie można uruchomić testu \<testu nazwy > na agencie \<nazwa komputera >: odwołanie nie ustawione na wystąpienie obiektu do obiektu.**
 
- Może to wystąpić, ponieważ ma DataSourceAttribute zdefiniowanej dla klasy testowej bez odpowiedniego DataBindingAttribute. Aby rozwiązać ten problem, Dodaj odpowiednie DataBindingAttribute, usuń go lub go komentarzy z kodu.
+ Taka sytuacja może wystąpić, ponieważ masz zdefiniowane dla klasy testowej, bez odpowiedniego DataBindingAttribute DataSourceAttribute. Aby rozwiązać ten problem, Dodaj odpowiedni DataBindingAttribute, usuń go lub Wypowiedz go z kodu.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Pytanie: reguły walidacji i wyodrębniania należy dodać przed lub po I Generowanie kodowanego testu?
- **A:** łatwiej reguł sprawdzania poprawności i reguły wyodrębniania przed wygenerowaniem kodowanego testu; jednak firma Microsoft zaleca użycie [kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) do celów weryfikacji.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>P: czy należy dodać reguły walidacji i wyodrębniania przed czy po wygenerowaniu kodowanego testu?
+ **Odp.:** ułatwia dodawanie reguł sprawdzania poprawności i reguł wyodrębniania przed wygenerowaniem zakodowanego testu; jednak zalecamy użycie [kodowane testy interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) do celów sprawdzania poprawności.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7abbd976e1ed97df257856f6b31b13966441fd9a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154401"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179443"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
@@ -32,11 +32,11 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 ### <a name="constant"></a>Stała
 
- Wzór obciążenia stałej jest używany do określenia obciążenia użytkownikami, która nie zmienia się podczas testu obciążeniowego. Na przykład po uruchomieniu testu dymu w aplikacji sieci Web, warto ustawić światła, stała obciążenia 10 użytkowników.
+ Wzór obciążenia stałej jest używany do określenia obciążenia użytkownikami, która nie zmienia się podczas testu obciążeniowego. Na przykład po uruchomieniu testu dymu w aplikacji sieci web, warto ustawić światła, stała obciążenia 10 użytkowników.
 
 #### <a name="constant-load-pattern-considerations"></a>Zagadnienia dotyczące wzoru stałego obciążenia
 
- Wzór obciążenia stałej jest używany do uruchamiania tego samego obciążenia użytkownika podczas uruchamiania testu obciążenia. Zachować ostrożność przy używaniu wzoru stałego obciążenia, który ma dużą liczbą użytkowników; Spowoduje to więc umieścić nieuzasadnione i nierealistyczne żądania na serwerze lub serwerach, na początku testu obciążenia. Na przykład jeśli test obciążenia zawiera test sieci Web, który rozpoczyna się żądaniem do strony głównej i ustawisz test obciążenia przy stałym obciążeniu 1000 użytkowników, test obciążeniowy, prześle pierwsze 1000 żądań do strony głównej tak szybko, jak to możliwe. To może nie być realistyczna symulacja rzeczywistego dostępu do witryny sieci Web. Aby rozwiązać ten problem, należy wziąć pod uwagę przy użyciu krokowego wzorca obciążenia, który stopniowo zwiększa się do 1000 użytkowników jednocześnie lub określić okres rozgrzewania w ustawieniach testu obciążenia. Jeśli określono okres rozgrzewania, test obciążeniowy automatycznie zwiększy obciążenie stopniowo w okresie rozgrzewania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie opóźnień uruchamiania scenariuszy](../test/configure-scenario-start-delays.md).
+ Wzór obciążenia stałej jest używany do uruchamiania tego samego obciążenia użytkownika podczas uruchamiania testu obciążenia. Zachować ostrożność przy używaniu wzoru stałego obciążenia, który ma dużą liczbą użytkowników; Spowoduje to więc umieścić nieuzasadnione i nierealistyczne żądania na serwerze lub serwerach, na początku testu obciążenia. Na przykład jeśli test obciążenia zawiera test sieci web, który rozpoczyna się żądaniem do strony głównej i ustawisz test obciążenia przy stałym obciążeniu 1000 użytkowników, test obciążeniowy, prześle pierwsze 1000 żądań do strony głównej tak szybko, jak to możliwe. To może nie być realistyczna symulacja rzeczywistego dostępu do witryny sieci Web. Aby rozwiązać ten problem, należy wziąć pod uwagę przy użyciu krokowego wzorca obciążenia, który stopniowo zwiększa się do 1000 użytkowników jednocześnie lub określić okres rozgrzewania w ustawieniach testu obciążenia. Jeśli określono okres rozgrzewania, test obciążeniowy automatycznie zwiększy obciążenie stopniowo w okresie rozgrzewania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie opóźnień uruchamiania scenariuszy](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Krok
 
@@ -112,7 +112,7 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 |-----------|-----------------------|
 |**Określanie wzorzec ładowania początkowego dla testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, wybierz wzorzec obciążenia.|-   [Zmień wzorzec obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Edytowanie wzorzec obciążenia dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować wzorca obciążenia w **edytora testu obciążenia**.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Określanie, czy użytkownicy wirtualni w obciążenia scenariusza testu powinien zawierać dane pamięci podręcznej sieci Web:** można zmienić **procent nowych użytkowników** wpływają na sposób, w którym zasymulowano obciążenie sieci Web, buforowanie, właściwość może być wykonywane przez przeglądarkę sieci Web dla użytkowników wirtualnych.|-   [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Określanie, czy użytkownicy wirtualni w obciążenia scenariusza testu powinien zawierać dane pamięci podręcznej sieci web:** można zmienić **procent nowych użytkowników** wpływają na sposób, w którym zasymulowano obciążenie sieci web, buforowanie, właściwość może być wykonywane przez przeglądarkę sieci web dla użytkowników wirtualnych.|-   [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Określanie czas do zwiększenia kroku dla wzorca obciążenia krokowego:** **czas do zwiększenia kroku** właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Zmień wzorzec obciążenia

@@ -34,46 +34,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb14ae44dd137d7bf600cec505fe17fa6e105a42
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ceccf3c051e3c85fa4b8e64ecbc33c388e9a884f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948980"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178183"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
-Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowane środowisko programistyczne (IDE) i zarządzanie zewnętrzne zmiany dokumentów i plików. Dostęp do tego okna dialogowego, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
+Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzanie zmianami zewnętrzne dokumenty i pliki. To okno dialogowe można skorzystać, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
 
 > [!NOTE]
-> Opcje dostępne w oknach dialogowych i nazwy i lokalizacje poleceń menu, które zostanie wyświetlone, może się różnić od co to jest opisany w pomocy, w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
- **Użyj ponownie bieżące okno dokumentu, jeśli zapisane** po wybraniu zamyka bieżący dokument, jeśli został zapisany i zostanie otwarty nowy dokument w tym samym oknie. Jeśli bieżący dokument nie został zapisany, pozostaje otwarty i nowy dokument jest otwarty w osobnym oknie. Gdy ta opcja jest zaznaczona, nowych dokumentów zawsze otwieraj w oddzielnych okien.
+ **Użyj ponownie bieżące okno dokumentu, jeśli zapisane** po wybraniu zamyka bieżącego dokumentu, jeśli zostały zapisane i zostanie otwarty nowy dokument, w tym samym oknie. Jeśli nie został zapisany bieżącego dokumentu, pozostaje otwarty, a nowy dokument jest otwarty w osobnym oknie. Gdy ta opcja jest zaznaczona, nowe dokumenty zawsze Otwórz w oddzielnych okien.
 
- Użyj tej opcji, wykonaj wycinania wielu dokumentów i wklejania rzadko, aby zminimalizować liczbę otwarte dokumenty i systemu windows w obszarze roboczym.
+ Jeśli wykonania wielu dokumentów wycinania i wklejania rzadko i chcesz zminimalizować liczbę otwartych dokumentów i systemu windows w obszarze roboczym, użyj tej opcji.
 
- **Wykryj, kiedy plik jest zmieniany poza środowiskiem** po wybraniu tej opcji wiadomości natychmiast powiadamia o zmianach w otwartego pliku, które zostały wprowadzone przez Edytor poza IDE. Ten komunikat informuje, należy ponownie załadować plik z magazynu.
+ **Wykryj, kiedy plik jest zmieniany poza środowiskiem** po wybraniu tej opcji wiadomości natychmiast powiadamia o zmianach w otwartego pliku, które zostały wprowadzone przez Edytor poza IDE. Komunikat informuje, jak ponownie załadować plik z magazynu.
 
- **Automatyczne ładowanie zmian, jeśli zapisane** Jeśli masz **Wykryj, kiedy plik jest zmieniany poza środowiskiem** zaznaczone, a plik zmian IDE poza IDE komunikat ostrzegawczy jest generowany domyślnie. Jeśli ta opcja jest włączona, zostanie wyświetlone ostrzeżenie i dokumentu zostanie ponownie załadowana w IDE w celu zastosowania zmian zewnętrznych.
+ **Automatyczne ładowanie zmian, jeśli zapisane** , gdy masz **Wykryj, kiedy plik jest zmieniany poza środowiskiem** zaznaczone, a domyślnie generowany jest plikiem otwartym w zmiany w środowisku IDE poza IDE komunikat ostrzegawczy. Jeśli ta opcja jest włączona, zostanie wyświetlone nie ostrzeżenie i dokument zostanie ponownie załadowana w środowisku IDE w celu zastosowania zmian zewnętrznych.
 
- **Zezwól na edytowanie plików tylko do odczytu. Ostrzegaj przy próbie zapisu** po włączeniu tej opcji można otwierać i edytować plik tylko do odczytu. Gdy skończysz, należy użyć **Zapisz jako**polecenie, aby zapisać plik przez nową nazwę, jeśli chcesz zapisać rekord zmiany.
+ **Zezwól na edytowanie plików tylko do odczytu. Ostrzegaj przy próbie zapisu** po włączeniu tej opcji można otwierać i edytować plik tylko do odczytu. Gdy to zrobisz, musisz użyć **Zapisz jako**polecenie, aby zapisać plik przez nową nazwę, jeśli chcesz zapisać rekord zmiany.
 
- **Otwórz plik używając katalogu aktualnie aktywnego dokumentu** po wybraniu tej opcji oznacza, że **Otwórz plik** okno dialogowe wyświetla katalog aktywnego dokumentu. Gdy ta opcja jest zaznaczona, **Otwieranie pliku** okno dialogowe wyświetla katalog ostatnio używany do otwierania pliku.
+ **Otwórz plik używając katalogu aktualnie aktywnego dokumentu** po wybraniu tej opcji określa, że **Otwórz plik** okno dialogowe wyświetla katalog aktywnego dokumentu. Gdy ta opcja jest wyczyszczone, **Otwórz plik** okno dialogowe wyświetla katalog ostatnio używany do otwierania pliku.
 
- **Sprawdź spójność zakończenia wierszy przy ładowaniu** wybierz tę opcję, aby edytora skanowania zakończenia wierszy w pliku i wyświetlać okno komunikatu, jeśli zostaną wykryte niespójności w sposób zakończenia wierszy są sformatowane.
+ **Sprawdź spójność końców wierszy przy ładowaniu** wybierz tę opcję, aby edytora skanowania końce wierszy w pliku i wyświetlić okno komunikatu, jeśli zostaną wykryte niespójności, w jak sformatowane końce wierszy.
 
- **Wyświetl ostrzeżenie, gdy globalne cofanie modyfikuje edytowane pliki** wybierz tę opcję, aby wyświetlić komunikat dialogowe **globalne cofanie** polecenia cofnie refaktoryzacji zmiany wprowadzone w plikach, które zostały zmienione od Operacja refaktoryzacji. Zwracanie pliku do stanu sprzed refaktoryzacji elementu może odrzucić kolejne zmiany wprowadzone w pliku.
+ **Wyświetlana ikona ostrzeżenia, gdy globalne cofanie modyfikuje edytowane pliki** wybierz tę opcję, aby wyświetlić komunikat przypadku **globalne cofanie** polecenia wycofa refaktoryzacji zmiany wprowadzone w plikach, które zostały zmienione od Operacja refaktoryzacji. Zwraca plik do stanu refaktoryzacji pre może odrzucić kolejne zmiany wprowadzone w pliku.
 
- **Pokaż różne pliki w Eksploratorze rozwiązań** wybierz tę opcję, aby wyświetlić **różne pliki** w węźle **Eksploratora rozwiązań**. Różne pliki to pliki, które nie są skojarzone z projektu lub rozwiązania, ale może występować w **Eksploratora rozwiązań** dla Twojej wygody.
+ **Pokaż różne pliki w Eksploratorze rozwiązań** wybierz tę opcję, aby wyświetlić **różne pliki** w węźle **Eksploratora rozwiązań**. Różne pliki to pliki, które nie są skojarzone z projektu lub rozwiązania, ale może być wyświetlany w **Eksploratora rozwiązań** dla Twojej wygody.
 
 > [!NOTE]
-> Wybierz tę opcję, aby włączyć **Wyświetl w przeglądarce** na **pliku** menu dla dokumentów sieci Web nie jest uwzględniony w aktywnej aplikacji sieci Web.
+> Wybierz tę opcję, aby umożliwić **Pokaż w przeglądarce** polecenie **pliku** menu dla dokumentów sieci web, które nie są uwzględnione w aplikacji sieci web usługi active.
 
- **\<** *n* **> Elementy zapisywane w projekcie plików pozostałych** określa liczbę plików, aby trwale w **MiscellaneousFiles** folderu **Eksploratora rozwiązań**. Pliki te są wyświetlane, nawet jeśli nie są już otwarty w edytorze. Można określić liczbę całkowitą z zakresu od 0 do 256. Wartość domyślna to 0.
+ **\<** *n* **> Elementy zapisywane w projekcie plików pozostałych** określa liczbę plików, aby trwale w **MiscellaneousFiles** folderu **Eksploratora rozwiązań**. Te pliki są wyświetlane, nawet jeśli nie są już otwarty w edytorze. Można określić liczbę całkowitą z zakresu od 0 do 256. Wartość domyślna to 0.
 
- Na przykład jeśli Ustaw tę opcję na wartość 5 i otworzył 10 różne pliki, po zamknięciu wszystkich plików 10, 5 pierwszych będą nadal wyświetlane w **różne pliki** folderu.
+ Na przykład, jeśli dla tej opcji do 5, otwartych 10 różne pliki, gdy zamkniesz wszystkie 10 plików 5 pierwszych będzie nadal widoczny we **różne pliki** folderu.
 
- **Zapisz dokumenty jako Unicode, gdy nie można zapisać danych w stronie kodowej** wybierz tę opcję, aby spowodować, że pliki zawierające informacje niezgodne z wybranych stronę kodową do zapisania jako Unicode domyślnie.
+ **Zapisz dokumenty jako Unicode, gdy nie można zapisać danych w stronie kodowej** wybierz tę opcję, aby spowodować, że pliki zawierające informacje niezgodne z wybranej strony kodowej można zapisać w formacie Unicode domyślnie.
 
 ## <a name="see-also"></a>Zobacz też
 

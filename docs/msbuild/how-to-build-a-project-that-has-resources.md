@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946667"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180350"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Porady: kompilacja projektu zawierającego zasoby
 Jeśli tworzysz zlokalizowane wersje projektu, wszystkich elementów interfejsu użytkownika muszą być oddzielone do plików zasobów w różnych językach. Jeśli projekt używa tylko ciągi, pliki zasobów, można użyć plików tekstowych. Alternatywnie, można użyć *resx* pliki jako pliki zasobów.  
   
-## <a name="compiling-resources-with-msbuild"></a>Kompilowanie zasobów za pomocą narzędzia MSBuild  
+## <a name="compile-resources-with-msbuild"></a>Kompilowanie zasobów za pomocą narzędzia MSBuild  
  Biblioteka typowych zadań, które jest dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje `GenerateResource` zadanie, które można użyć do skompilowania zasobów albo *resx* lub pliki tekstowe. To zadanie obejmuje `Sources` parametru do określenia, który zasób plików do kompilacji i `OutputResources` parametru do określenia nazwy plików zasobów danych wyjściowych. Aby uzyskać więcej informacji na temat `GenerateResource` zadań, zobacz [generateresource — zadanie](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Aby skompilować zasobów za pomocą narzędzia MSBuild  
@@ -82,4 +82,4 @@ Jeśli tworzysz zlokalizowane wersje projektu, wszystkich elementów interfejsu 
 [MSBuild](../msbuild/msbuild.md)  
  [Generateresource — zadanie](../msbuild/generateresource-task.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
- [ResGen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+ [Resgen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d2e2790db4a3e8061dcd949b79c127e67f022d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88708fdcb41a43d3e8b3f78b4e66decb7211a4b4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922720"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177425"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Nie należy oznaczać obsługiwanych składników znacznikiem WebMethod
+
 |||
 |-|-|
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
@@ -32,16 +33,22 @@ ms.locfileid: "31922720"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metody w typie, który dziedziczy z <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> jest oznaczony atrybutem <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+
+Metoda w typie, który dziedziczy z <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> jest oznaczona za pomocą <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Web.Services.WebMethodAttribute> ma zastosowanie do metod w ramach usługi XML sieci Web, które zostały utworzone przy użyciu platformy ASP.NET; Powoduje to dodanie metodę można wywołać z klientów zdalnych w sieci Web. Metoda i klasa musi być publiczny i wykonywania w aplikacji sieci Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> typy są obsługiwane przez aplikacje modelu COM + i korzystania z usług COM +. <xref:System.Web.Services.WebMethodAttribute> nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są przeznaczone do tych samych operacji. W szczególności dodanie atrybutu do <xref:System.EnterpriseServices.ServicedComponent> — metoda nie powoduje metodę można wywołać z klientów zdalnych w sieci Web. Ponieważ <xref:System.Web.Services.WebMethodAttribute> i <xref:System.EnterpriseServices.ServicedComponent> metoda ma sprzeczne zachowania i wymagania dotyczące kontekstu i przepływu transakcji, zachowanie metody będą niepoprawne w niektórych scenariuszach.
+
+<xref:System.Web.Services.WebMethodAttribute> ma zastosowanie do metody w ramach usługi sieci web XML, które zostały utworzone za pomocą programu ASP.NET; zapewnia metody wywoływane przez klientów sieci web do zdalnego. Metody i klasy musi być publiczny i wykonywanie w aplikacji sieci web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> typy są hostowane przez aplikacji modelu COM + i mogą używać usług COM +. <xref:System.Web.Services.WebMethodAttribute> nie ma zastosowania do <xref:System.EnterpriseServices.ServicedComponent> typów, ponieważ nie są przeznaczone dla tych samych scenariuszy. W szczególności Dodawanie atrybutu do <xref:System.EnterpriseServices.ServicedComponent> metody nie oznacza, że metody wywoływane przez klientów sieci web do zdalnego. Ponieważ <xref:System.Web.Services.WebMethodAttribute> i <xref:System.EnterpriseServices.ServicedComponent> metody mają konflikt zachowania i wymagania dotyczące kontekstu i przepływu transakcji, zachowanie metod będzie niepoprawne w niektórych scenariuszach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, usuń atrybut z <xref:System.EnterpriseServices.ServicedComponent> metody.
+
+Aby naprawić naruszenie tej zasady, usuń atrybut z <xref:System.EnterpriseServices.ServicedComponent> metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Brak żadnych scenariuszy, w którym połączenie tych elementów jest poprawna.
+
+Nie pomijaj ostrzeżeń dla tej reguły. Istnieje nie scenariuszy, w którym połączenie tych elementów jest poprawna.
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName><xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>
+
+- <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>
+- <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

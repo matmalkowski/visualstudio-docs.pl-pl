@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945978"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175959"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
 Proces kompilacji projektów MSBuild, które używają standardowych (importowanie *Microsoft.Common.props* i *Microsoft.Common.targets*) ma kilka punkty zaczepienia rozszerzalności, których można użyć w celu dostosowania kompilacji proces.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Dodawanie argumentów wiersza polecenia wywołań programu MSBuild w projekcie
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Dodaj argumenty wiersza polecenia wywołań programu MSBuild w projekcie
 
 A *Directory.Build.rsp* pliku w lub powyżej katalogu źródłowego zostaną zastosowane do kompilacji z wiersza polecenia projektu. Aby uzyskać więcej informacji, zobacz [pliki odpowiedzi MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
@@ -138,7 +138,7 @@ później. Dzięki temu zainstalowanych zestawów SDK rozszerzyć logikę kompil
 
 Tej samej struktury katalogów jest przeszukiwany w `$(MSBuildUserExtensionsPath)`, czyli do folderu na użytkownika *%LOCALAPPDATA%\Microsoft\MSBuild*. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu, uruchom w ramach poświadczeń użytkownika. Możesz wyłączyć rozszerzenia użytkownika przez ustawienie właściwości o nazwie po importowania pliku we wzorcu `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Na przykład ustawienie `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` do `false` uniemożliwiłyby importowania `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
-## <a name="customizing-the-solution-build"></a>Dostosowywanie kompilacji rozwiązania
+## <a name="customize-the-solution-build"></a>Dostosowywanie kompilacji rozwiązania
 
 > [!IMPORTANT]
 > Dostosowywanie kompilacji rozwiązania, w ten sposób stosuje się tylko do narzędzia wiersza polecenia kompilacji z *MSBuild.exe*. Jego **nie** dotyczą kompilacje w programie Visual Studio.

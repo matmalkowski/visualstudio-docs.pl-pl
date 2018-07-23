@@ -1,5 +1,5 @@
 ---
-title: Emulacja wykorzystanie w świecie rzeczywistym witryny sieci Web, obciążeniowy w programie Visual Studio
+title: Emulacja wykorzystanie w świecie rzeczywistym witryny sieci Web do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 562e6d4070a7796a93a2b5adc4ddcd470ae1b1f6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152012"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177269"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
 
 Załaduj opcje modelowania umożliwia bardziej dokładnie przewidzieć oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji, które obciążenia testujesz. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładne ładowanie modelu można wygenerować wyświetlenie nieprawdziwych wyników.
 
@@ -28,16 +28,16 @@ Za pomocą edytora testu obciążenia lub Kreator modelu testu mieszanego, możn
 
 Można określić jedną z następujących opcji model testu mieszanego, dla scenariusza testu obciążenia:
 
--   **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci Web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na końcu testu obciążeniowego ile razy określonego testu dopasować rozkład testu przypisane. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie testów rozpoczęte](#BasedOnTestsStarted).
+-   **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na końcu testu obciążeniowego ile razy określonego testu dopasować rozkład testu przypisane. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie testów rozpoczęte](#BasedOnTestsStarted).
 
--   **Na podstawie liczby użytkowników wirtualnych:** Określa procent wirtualnych użytkowników, którzy uruchomią konkretnego testu wydajności lub jednostki w sieci Web. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na procent użytkowników, którzy uruchomili określonego testu. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie liczby użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
+-   **Na podstawie liczby użytkowników wirtualnych:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na procent użytkowników, którzy uruchomili określonego testu. Aby uzyskać więcej informacji, zobacz [wartość procentową na podstawie liczby użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
 
--   **Na podstawie tempa użytkownika:** czasie trwania testu obciążeniowego każdy test wydajności sieci Web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy. Aby uzyskać więcej informacji, zobacz [Pacing test mieszany](#PacingTestMix).
+-   **Na podstawie tempa użytkownika:** czasie trwania testu obciążeniowego każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy. Aby uzyskać więcej informacji, zobacz [Pacing test mieszany](#PacingTestMix).
 
     > [!TIP]
     > Kiedy należy wybrać **procent test mieszany** i gdy użytkownik wybierze **wartość procentową na podstawie liczby użytkowników wirtualnych**? Różnica między te dwie opcje ważne jest, gdy niektóre testy w asortymencie test ma znacznie dłuższy czas niż inne testy. W takiej sytuacji należy prawdopodobnie wybrać **wartość procentową na podstawie liczby użytkowników wirtualnych**. Ten wybór pomaga uniknąć przebieg testu, w którym zwiększa prawdopodobieństwo, że zbyt wielu użytkowników będą uruchomione testy czas trwania długiej. Jednak jeśli wszystkie testy mają podobne czasów trwania, bezpieczniej można **procent test mieszany**.
 
--   **Na podstawie w kolejności sekwencyjnej:** każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci Web w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejności sekwencyjnej](#SequentialOrder).
+-   **Na podstawie w kolejności sekwencyjnej:** każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejności sekwencyjnej](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Procent opartych na rozpoczętych testów
  Dla każdego testu w zestawie można określić wartość procentową, która określa, jak często testu jest wybrany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
@@ -96,7 +96,7 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 
 -   Czas trwania testu obciążenia można określić czasu, a nie według liczby iteracji. W takim przypadku po zakończeniu czasu trwania przebiegu testu obciążeniowego test zakończenia nie zostanie uruchomiona.
 
--   W przypadku testu jednostkowego lub testu wydajności sieci Web test rozpoczęcia stan obiektu TestContext lub WebTestContext, po zakończeniu inicjowania testu są zapisywane. Go następnie posłuży jako kontekst początkowy dla iteracji testów w teście mieszanym.
+-   W przypadku testu jednostkowego lub testu wydajności sieci web test rozpoczęcia stan obiektu TestContext lub WebTestContext, po zakończeniu inicjowania testu są zapisywane. Go następnie posłuży jako kontekst początkowy dla iteracji testów w teście mieszanym.
 
 -   Nowych użytkowników, zgodnie z definicją we właściwości scenariusza procent dla nowych użytkowników, zawsze wykonać test rozpoczęcia, jednej iteracji testu z test mieszany i test zakończenia.
 

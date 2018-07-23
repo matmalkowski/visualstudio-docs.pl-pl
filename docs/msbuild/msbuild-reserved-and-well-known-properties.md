@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b4fb0d11c1ed100b6ebd124da909e245baa1db
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 46638f92165f48fc3de20494df226590fd9450eb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078917"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176905"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Program MSBuild zarezerwowane i dobrze znane właściwości
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki binarne. Te właściwości są obliczane w taki sam sposób jak inne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości. Na przykład, aby użyć `MSBuildProjectFile` właściwości, wpisz `$(MSBuildProjectFile)`.  
@@ -39,7 +39,7 @@ ms.locfileid: "39078917"
 |`MSBuildExtensionsPath32`|Dobrze znane|Ścieżka [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podfolderu w folderze *\Program Files* lub *\Program Files (x86)* folderu. Ta ścieżka zawsze wskazuje na 32-bitowych *\Program Files* folderu na komputerze 32-bitowym i *\Program Files (x86)* na komputerze 64-bitowym. Zobacz też `MSBuildExtensionsPath` i `MSBuildExtensionsPath64`.<br /><br /> Nie dołączaj końcowy ukośnika odwrotnego dla tej właściwości.|  
 `MSBuildExtensionsPath64`|Dobrze znane|Ścieżka [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podfolderu w folderze *\Program Files* folderu. Na komputerze 64-bitowym ta ścieżka zawsze wskazuje *\Program Files* folderu. Na komputerze 32-bitowym ta ścieżka jest pusta. Zobacz też `MSBuildExtensionsPath` i `MSBuildExtensionsPath32`.<br /><br /> Nie dołączaj końcowy ukośnika odwrotnego dla tej właściwości.|  
 |`MSBuildLastTaskResult`|Zastrzeżone|`true` Jeśli poprzednie zadanie zakończone zostało bez błędów (nawet jeśli wystąpiły ostrzeżenia), lub `false` Jeśli w poprzednim zadaniu wystąpiły błędy. Zazwyczaj po wystąpieniu błędu w zadaniu, błąd jest ostatnią czynnością, jaką wykonywanej w tym projekcie. W związku z tym, wartość tej właściwości nigdy nie jest `false`, z wyjątkiem tych scenariuszy:<br /><br /> — W przypadku `ContinueOnError` atrybutu [Task — element (MSBuild)](../msbuild/task-element-msbuild.md) ustawiono `WarnAndContinue` (lub `true`) lub `ErrorAndContinue`.<br /><br /> — W przypadku `Target` ma [OnError — element (MSBuild)](../msbuild/onerror-element-msbuild.md) jako element podrzędny.|  
-|`MSBuildNodeCount`|Zastrzeżone|Maksymalna liczba równoczesnych procesów, które są używane podczas kompilacji. Jest to wartość określona dla **/maxcpucount** w wierszu polecenia. Jeśli określono **/maxcpucount** bez określenia wartości, następnie `MSBuildNodeCount` określa liczbę procesorów w komputerze. Aby uzyskać więcej informacji, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md) i [tworzenie wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
+|`MSBuildNodeCount`|Zastrzeżone|Maksymalna liczba równoczesnych procesów, które są używane podczas kompilacji. Jest to wartość określona dla **/maxcpucount** w wierszu polecenia. Jeśli określono **/maxcpucount** bez określenia wartości, następnie `MSBuildNodeCount` określa liczbę procesorów w komputerze. Aby uzyskać więcej informacji, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md) i [kompilacji wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
 |`MSBuildProgramFiles32`|Zastrzeżone|Lokalizacja folderu program 32-bitowy; na przykład *C:\Program Files (x86)*.<br /><br /> Nie dołączaj końcowy ukośnika odwrotnego dla tej właściwości.|  
 |`MSBuildProjectDefaultTargets`|Zastrzeżone|Pełna lista obiektów docelowych, które są określone w `DefaultTargets` atrybutu `Project` elementu. Na przykład następująca `Project` element będzie mieć `MSBuildDefaultTargets` wartość właściwości `A;B;C`:<br /><br /> `<Project DefaultTargets="A;B;C" >`|  
 |`MSBuildProjectDirectory`|Zastrzeżone|Ścieżka bezwzględna katalogu zawierającego plik projektu, na przykład *C:\MyCompany\MyProduct*.<br /><br /> Nie dołączaj końcowy ukośnika odwrotnego dla tej właściwości.|  
@@ -57,7 +57,7 @@ ms.locfileid: "39078917"
 |`MSBuildThisFileFullPath`|Zastrzeżone|Ścieżka bezwzględna projektu lub pliku, który zawiera docelowy, który jest uruchomiony.<br /><br /> Porada: Można określić ścieżkę względną w pliku docelowym, która jest względem pliku docelowego, a nie względem oryginalnego pliku projektu.|  
 |`MSBuildThisFileName`|Zastrzeżone|Część nazwy pliku `MSBuildThisFileFullPath`, bez rozszerzenia nazwy pliku.|  
 |`MSBuildToolsPath`|Zastrzeżone|Ścieżka instalacji programu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wersji skojarzonej z wartością `MSBuildToolsVersion`.<br /><br /> Nie dołączaj końcowy ukośnika odwrotnego w ścieżce.<br /><br /> Nie można zastąpić tę właściwość.|  
-|`MSBuildToolsVersion`|Zastrzeżone|Wersja [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zestawem narzędzi, który jest używany do tworzenia projektu.<br /><br /> Uwaga: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zestawu narzędzi, który składa się z zadania, celów i narzędzi, które są używane do tworzenia aplikacji. Narzędzia obejmują kompilatory, takie jak *csc.exe* i *vbc.exe*. Aby uzyskać więcej informacji, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), i [konfiguracje standardowego i niestandardowego zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md).|  
+|`MSBuildToolsVersion`|Zastrzeżone|Wersja [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zestawem narzędzi, który jest używany do tworzenia projektu.<br /><br /> Uwaga: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zestawu narzędzi, który składa się z zadania, celów i narzędzi, które są używane do tworzenia aplikacji. Narzędzia obejmują kompilatory, takie jak *csc.exe* i *vbc.exe*. Aby uzyskać więcej informacji, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), i [standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md).|  
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nazwami będącymi w konflikcie z elementów MSBuild
 

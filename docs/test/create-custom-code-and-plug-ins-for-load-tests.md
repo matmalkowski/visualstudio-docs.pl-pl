@@ -13,25 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c4d828dd0f5277663c11701cd95fe1b1ea049b7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302875"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175540"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 
-Niestandardowa wtyczka używa kodu, który napiszesz i dołączysz to testu obciążeniowego lub testu wydajności sieci Web. Interfejsu API testu obciążeniowego lub testu wydajności sieci Web można użyć do utworzenia niestandardowej wtyczki dla testów, aby rozszerzyć wbudowaną funkcjonalność. Można dodać wielu wtyczek do testów obciążenia.
+Niestandardowa wtyczka używa kodu, który napiszesz i dołączysz to testu obciążeniowego lub testu wydajności sieci web. Można użyć interfejsu API testu obciążeniowego i interfejsu API testu wydajności sieci web do tworzenia niestandardowych wtyczek dla testów, aby rozszerzyć wbudowaną funkcjonalność. Możesz dodać wiele wtyczek do testu obciążeniowego.
 
 ## <a name="tasks"></a>Zadania
 
-|Zadania|Skojarzone — tematy|
+|Zadania|Skojarzone tematy|
 |-----------|-----------------------|
-|**Tworzenie niestandardowego wtyczki podczas testu obciążenia**: interfejs API testu obciążenia umożliwia utworzenie niestandardowego wtyczki, aby dodać funkcje bardziej testowych do testów obciążenia.|-   [Porady: Korzystanie z API testu obciążenia](../test/how-to-use-the-load-test-api.md)<br />-   [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)|
-|**Tworzenie niestandardowego wtyczki dla testu wydajności sieci Web:** interfejsu API testu wydajności sieci Web umożliwia utworzenie niestandardowego wtyczki, aby dodać więcej funkcji testowych do Twojej testu wydajności sieci Web, w tym na poziomie żądania. Można również utworzyć test usługi sieci Web.<br /><br /> Dodatkowo można utworzyć wtyczkę rejestratora sieci Web, która może modyfikować test wydajności sieci Web, po jego rejestracji, ale przed pojawieniem się w Podglądzie wyników testu wydajności sieci Web|-   [Porady: Korzystanie z API testu wydajności sieci web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Porady: tworzenie wtyczki testu wydajności sieci web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Porady: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Porady: Tworzenie nowego testu usług sieci web](../test/how-to-create-a-web-service-test.md)<br />-   [Porady: tworzenie wtyczki rejestratora](../test/how-to-create-a-recorder-plug-in.md)|
-|**Dodawanie funkcji interfejsu użytkownika do przeglądarka wyników testu wydajności sieci Web:** więcej funkcji interfejsu użytkownika można dodać do przeglądarka wyników testu wydajności sieci Web przy użyciu dodatku programu Visual Studio.|-   [Porady: Tworzenie dodatku programu Visual Studio dla sieci web wyników testu wydajności podglądu](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Tworzenie edytora niestandardowego ciała dokumentu HTTP:** można utworzyć niestandardowego edytora do edycji pliku binarnego lub ciąg XML odpowiedzi http usługi sieci web.|-   [Porady: Tworzenie niestandardowego treści HTTP edytora dla edytora testów wydajności sieci web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Utwórz niestandardową wtyczkę dla testu obciążeniowego**: można użyć interfejsu API testu obciążeniowego, aby utworzyć niestandardową wtyczkę, która doda więcej funkcjonalności testowej do testu obciążeniowego.|-   [Porady: Korzystanie z API testu obciążenia](../test/how-to-use-the-load-test-api.md)<br />-   [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)|
+|**Utwórz niestandardową wtyczkę dla testu wydajności sieci Web:** można użyć interfejsu API testu wydajności sieci web, aby utworzyć niestandardową wtyczkę, aby dodać więcej funkcjonalności testowej do testu wydajności sieci web, w tym na poziomie żądania. Można również utworzyć test usługi sieci web.<br /><br /> Ponadto można utworzyć sieci web dodatku plug-in rejestratora, można modyfikować test wydajności sieci web po zostało zapisane, ale przed pojawieniem się w sieci Web podglądzie wyników testu wydajności.|-   [Porady: Korzystanie z API testu wydajności sieci web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Porady: tworzenie wtyczki testu wydajności sieci web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Porady: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Porady: Tworzenie nowego testu usługi internetowej](../test/how-to-create-a-web-service-test.md)<br />-   [Porady: tworzenie wtyczki rejestratora](../test/how-to-create-a-recorder-plug-in.md)|
+|**Dodaj funkcje interfejsu użytkownika do podglądu wyników testu wydajności sieci Web:** możesz dodać więcej funkcji interfejsu użytkownika do podglądu wyników testu wydajności sieci Web za pomocą dodatku programu Visual Studio.|-   [Porady: Tworzenie dodatku programu Visual Studio dla sieci web wyników testu wydajności podglądu](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Tworzenie edytora niestandardowego ciała dokumentu HTTP:** można utworzyć niestandardowy edytor, aby edytować plik binarny lub ciąg znaków XML odpowiedzi http usługi sieci web.|-   [Porady: Tworzenie niestandardowego ciała dokumentu HTTP edytora dla edytora testów wydajności sieci web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Tematy pomocy
 
@@ -48,4 +48,4 @@ Niestandardowa wtyczka używa kodu, który napiszesz i dołączysz to testu obci
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Generowanie i Uruchamianie testów wydajności sieci web kodowane](../test/generate-and-run-a-coded-web-performance-test.md)
+- [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)

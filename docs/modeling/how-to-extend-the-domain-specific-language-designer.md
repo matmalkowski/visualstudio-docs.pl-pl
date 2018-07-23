@@ -9,42 +9,44 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951469"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176079"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
-Istnieje możliwość rozszerzenia projektanta, który służy do edytowania definicji DSL. Typy rozszerzenia, które można wprowadzić obejmują dodawanie polecenia menu dodawania obsługi przeciągnąć i kliknij dwukrotnie gestów i reguł, które są wyzwalane, gdy zmiany w określonych typach wartości lub relacji. Rozszerzenia mogą umieszczone jako Visual Studio integracji rozszerzenia (VSIX) i dystrybuowany do innych użytkowników.
 
- Przykładowy kod i uzyskać więcej informacji dotyczących tej funkcji, zobacz Visual Studio [wizualizacji i modelowania SDK (VMSDK) witryny sieci Web](http://go.microsoft.com/fwlink/?LinkID=186128).
+Można wykonać rozszerzenia do projektanta, którego używasz do edytowania definicji DSL. Typy rozszerzenia, które można wprowadzać należą: dodanie polecenia menu, dodanie obsługi przeciągnij i kliknij dwukrotnie gestów i reguł, które są wyzwalane, gdy zmienią się określone typy wartości lub relacje. Rozszerzenia można jako Visual Studio Integration rozszerzenie (VSIX) w pakiecie i dystrybuowane do innych użytkowników.
 
-## <a name="setting-up-the-solution"></a>Trwa konfigurowanie rozwiązania
- Ustawienia projektu, który zawiera kod rozszerzenia i projektu VSIX, które eksportuje projektu. Rozwiązanie może zawierać inne projekty, które są włączone do tego samego pliku VSIX.
+Przykładowy kod i więcej informacji na temat tej funkcji można znaleźć programu Visual Studio [wizualizacji i modelowania SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>Tworzenie rozwiązań rozszerzenia DSL projektanta
+## <a name="set-up-the-solution"></a>Konfigurowanie rozwiązania
 
-1.  Utwórz nowy projekt za pomocą szablonu projektu biblioteki klas. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** , a następnie w środkowym oknie kliknij pozycję **biblioteki klas**.
+Skonfiguruj projekt, który zawiera kod rozszerzenia, a projekt VSIX, które eksportuje projektu. Rozwiązanie może zawierać inne projekty, które są włączone w samym VSIX.
 
-     Ten projekt będzie zawierać kod rozszerzeń.
+### <a name="to-create-a-dsl-designer-extension-solution"></a>Aby utworzyć rozwiązanie rozszerzenia projektanta DSL
 
-2.  Utwórz nowy projekt za pomocą szablonu projektu VSIX. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie w środkowym oknie Wybierz **projektu VSIX**.
+1.  Tworzenie nowego projektu przy użyciu szablonu projektu biblioteki klas. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie w środkowym oknie kliknij pozycję **biblioteki klas**.
 
-     Wybierz **dodać do rozwiązania**.
+     Projekt ten będzie zawierał kod rozszerzenia.
+
+2.  Tworzenie nowego projektu przy użyciu szablonu projektu VSIX. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie w środkowym oknie Wybierz **projekt VSIX**.
+
+     Wybierz **Dodaj do rozwiązania**.
 
      Source.Extension.vsixmanifest zostanie otwarty w edytorze manifestu VSIX.
 
 3.  Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.
 
-4.  W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składników MEF**i ustaw **projektu** do projektu biblioteki klas.
+4.  W **Dodaj zawartość** okno dialogowe, zestaw **wybierz typ zawartości** do **składnik MEF**i ustaw **projektu** do projektu biblioteki klas.
 
-5.  Kliknij przycisk **Wybierz wersje** i upewnij się, że **Visual Studio Enterprise** jest zaznaczony.
+5.  Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio Enterprise** jest zaznaczone.
 
-6.  Upewnij się, że projekt VSIX jest projektu startowego rozwiązania.
+6.  Upewnij się, że projekt VSIX jest projektem startowym rozwiązania.
 
-7.  W projektu biblioteki klas Dodaj odwołania do następujących zestawów:
+7.  W projekcie biblioteki klas Dodaj odwołania do następujących zestawów:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -64,29 +66,31 @@ Istnieje możliwość rozszerzenia projektanta, który służy do edytowania def
 
      System.Windows.Forms
 
-## <a name="testing-and-deployment"></a>Testowanie i wdrażanie
- Aby przetestować dowolne rozszerzeń w tym temacie, tworzenie i uruchamianie rozwiązania. Eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otwiera. W tym wystąpieniu Otwórz rozwiązanie DSL. Edytuj DslDefinition diagramu. Zachowania rozszerzeń są widoczne.
+## <a name="test-and-deployment"></a>Testowanie i wdrażanie
 
- Aby wdrożyć rozszerzeń na głównym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i na innych komputerach, wykonaj następujące czynności:
+Aby przetestować jakiegokolwiek rozszerzenia, w tym temacie, tworzenie i uruchamianie rozwiązania. Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zostanie otwarty. W tym wypadku otwórz rozwiązanie DSL. Edytowanie diagramu DslDefinition. Zachowania rozszerzeń będą widoczne.
+
+Do wdrożenia rozszerzenia do głównego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i na innych komputerach, wykonaj następujące czynności:
 
 1.  Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
 
 2.  Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwiera Menedżera rozszerzenia, aby upewnić się, że zainstalowano rozszerzenia.
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwiera Menedżera rozszerzenia, aby upewnić się, że rozszerzenie zostało zainstalowane.
 
- Aby odinstalować rozszerzenia, wykonaj następujące kroki:
+Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
-1.  w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzenia**.
+1.  w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
 2.  Zaznacz rozszerzenie, a następnie usuń go.
 
-## <a name="adding-a-shortcut-menu-command"></a>Dodawanie polecenia Menu skrótów
- Polecenia menu skrótów wyświetlane na powierzchni projektanta DSL lub w oknie Eksploratora DSL, aby zapisać przypominającą następujące klasy.
+## <a name="add-a-shortcut-menu-command"></a>Dodaj polecenie Menu skrótów
 
- Klasa musi implementować `ICommandExtension` i musi mieć atrybut `DslDefinitionModelCommandExtension`.
+Aby polecenie menu skrótów, pojawiają się na powierzchni projektanta DSL lub w oknie Eksplorator DSL, napisz klasy podobne do następujących.
 
-```
+Klasa musi implementować `ICommandExtension` i muszą mieć atrybut `DslDefinitionModelCommandExtension`.
+
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Linq;
@@ -146,10 +150,11 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }
 ```
 
-## <a name="handling-mouse-gestures"></a>Obsługa gesty myszy
- Kod jest podobny do kodu polecenia menu.
+## <a name="handle-mouse-gestures"></a>Obsługa gesty myszy
 
-```
+Kod jest podobny do kodu polecenie menu.
+
+```csharp
 [DslDefinitionModelGestureExtension]
  class MouseGesturesExtensions : IGestureExtension
  {
@@ -207,10 +212,11 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }
 ```
 
-## <a name="responding-to-value-changes"></a>Odpowiada na żądania zmiany wartości
- Ten program obsługi wymaga modelu domeny działał poprawnie. Firma Microsoft udostępnia model domeny proste.
+## <a name="respond-to-value-changes"></a>Odpowiadanie na zmiany wartości
 
-```
+Ten program obsługi wymaga modelu domeny działała prawidłowo. Firma Microsoft zapewnia model domeny proste.
+
+```csharp
 using System.Diagnostics;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.DslDefinition;
@@ -248,9 +254,9 @@ namespace Fabrikam.SimpleDslDesignerExtension
 } }  }  );
 ```
 
- Poniższy kod implementuje prostego modelu. Utwórz nowy identyfikator GUID, Zastąp symbol zastępczy.
+Poniższy kod implementuje prosty model. Utwórz nowy identyfikator GUID, Zastąp symbol zastępczy.
 
-```
+```csharp
 using System;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Modeling;

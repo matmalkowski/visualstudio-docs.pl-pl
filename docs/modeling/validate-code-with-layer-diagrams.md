@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63dc6c6b1307ae5d8b8be880815f5de5e782c6f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4bc5c42867b473f38088ee1d59e0043ecfe0748
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953649"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179973"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -34,15 +34,15 @@ ms.locfileid: "31953649"
 
 [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="why-use-dependency-diagrams"></a>Dlaczego warto używać diagramy zależności?
+## <a name="why-use-dependency-diagrams"></a>Dlaczego warto używać diagramów zależności?
 
-Aby upewnić się, że kod nie koliduje to z jego projekt, sprawdź poprawność kodu przy użyciu diagramów zależności w programie Visual Studio. Może to ułatwić:
+Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu przy użyciu diagramów zależności w programie Visual Studio. Może to ułatwić:
 
--   Znajdź konfliktów między zależności w kodzie i zależności na diagramie zależności.
+-   Znajdowanie konfliktów między zależnościami w kodzie i zależności na diagram zależności.
 
 -   Znajdowanie zależności, na które mogły mieć wpływ proponowane zmiany.
 
-     Na przykład można edytować na diagramie zależności, aby wyświetlić potencjalnych architektura zmiany, a następnie zweryfikować kod w celu wyświetlenia odpowiednich zależności.
+     Na przykład możesz edytować diagram zależności, aby pokazać potencjalne zmiany architektury i następnie walidować kod, aby zobaczyć, których to dotyczy zależności.
 
 -   Refaktoryzację lub migrację kodu do innego projektu.
 
@@ -52,77 +52,77 @@ Aby upewnić się, że kod nie koliduje to z jego projekt, sprawdź poprawność
 
 -   Visual Studio
 
--   Visual Studio na serwerze Team Foundation Build, aby sprawdzić poprawność kodu automatycznie z Team Foundation Build
+-   Visual Studio na serwerze Team Foundation Build, aby walidować kod automatycznie w programie Team Foundation Build
 
--   Rozwiązania, które ma diagramu zależności projektu modelowania. Na tym wykresie zależności muszą być połączone z artefaktami w C# lub Visual Basic projektów, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).
+-   Rozwiązanie, które ma projekt modelowania z diagramem zależności. Ten diagram zależności muszą zostać połączone z artefaktami w projektach C# lub Visual Basic, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).
 
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Można sprawdzić poprawność kodu ręcznie z diagramu otwartych zależności w programie Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [Channel 9 wideo: projektowania i walidacji architektury przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+ Możesz walidować kod ręcznie z diagramu Otwórz zależności w programie Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Jeśli chcesz uruchamiać weryfikacji warstwy z Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
+>  Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
 
--   [Jeśli element obsługuje weryfikacji](#SupportsValidation)
+-   [Zobacz, czy element obsługuje walidację](#SupportsValidation)
 
--   [Zawierają inne zestawy .NET i projekty do sprawdzania poprawności](#IncludeReferences)
+-   [Dołączyć inne projekty, do weryfikacji i zestawy .NET](#IncludeReferences)
 
--   [Ręcznie Sprawdź poprawność kodu](#ValidateManually)
+-   [Ręczna Walidacja kodu](#ValidateManually)
 
--   [Weryfikacja kodu automatycznie](#ValidateAuto)
+-   [Automatycznie Walidacja kodu](#ValidateAuto)
 
--   [Rozwiązać problemy z weryfikacją warstwy](#TroubleshootingValidation)
+-   [Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy](#TroubleshootingValidation)
 
--   [Zrozumienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors)
+-   [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors)
 
-## <a name="live-dependency-validation"></a>Sprawdzanie poprawności zależności na żywo
+## <a name="live-dependency-validation"></a>Weryfikacja zależności na żywo
 
-W tej wersji programu Visual Studio walidacji zależności występuje w czasie rzeczywistym, a błędy są wyświetlane od razu w oknie Lista błędów w usłudze Visual Studio.
+W tej wersji programu Visual Studio Weryfikacja odbywa się w czasie rzeczywistym i błędy są wyświetlane od razu w oknie Lista błędów w usłudze Visual Studio.
 
-* Sprawdzanie poprawności na żywo jest obsługiwana dla C# i Visual języku.
+* Weryfikacja na żywo jest obsługiwana dla języków C# i Visual języku.
 
-* Aby włączyć pełną analizę rozwiązania, za pomocą walidacji zależności na żywo, Otwórz ustawienia opcji pasku złota, który pojawi się na liście błędów.
- - Można zignorować ten pasek gold trwale, jeśli nie jest konieczne wyświetlenie wszystkich problemów architektury w rozwiązaniu.
- - Jeśli nie włączysz Pełna analiza rozwiązania analizy odbywa się tylko w przypadku plików edytowany.<p />
+* Aby włączyć pełnej analizy rozwiązania, gdy za pomocą weryfikacji zależności na żywo, należy otworzyć ustawienia opcji z złoty pasek, który pojawia się na liście błędów.
+ - Można zignorować ten złoty pasek trwale, jeśli nie jesteś wyświetlenie wszystkich problemów architektury w rozwiązaniu.
+ - Jeśli nie włączysz pełnej analizy rozwiązania analiza odbywa się tylko dla plików edytowany.<p />
 
-* Uaktualnianie projektów można włączyć weryfikację na żywo, okno dialogowe będzie wyświetlany postęp konwersji.
+* Podczas uaktualniania projektów, można włączyć weryfikację na żywo, okna dialogowego pokazuje postęp konwersji.
 
-* Podczas aktualizowania projektu do walidacji zależności na żywo, wersja pakietu NuGet jest uaktualniany do być takie same dla wszystkich projektów i jest najwyższa wersja w użyciu.
+* Kiedy uaktualniasz projekt weryfikacji zależności na żywo, wersją pakietu NuGet została uaktualniona do być taka sama dla wszystkich projektów i jest najwyższa wersja w użyciu.
 
-* Dodawanie nowych wyzwalaczy projektu walidacji zależności Aktualizacja projektu.
+* Dodawanie nowych wyzwalaczy projektu weryfikacji zależności aktualizacji projektu.
 
-##  <a name="SupportsValidation"></a> Jeśli element obsługuje weryfikacji
- Możesz połączyć warstwy do witryn sieci Web, dokumentów pakietu Office, pliki w formacie zwykłego tekstu i pliki w projektach, które są współużytkowane przez wielu aplikacji, ale proces weryfikacji nie obejmują ich. Błędy walidacji nie będą widoczne w przypadku odwołań do projektów lub zestawów połączonych z oddzielnymi warstwami, jeżeli między tymi warstwami nie ma żadnych zależności. Odwołania te nie są uważane za zależności, chyba że w kodzie wykorzystano te odwołania.
+##  <a name="SupportsValidation"></a> Zobacz, czy element obsługuje walidację
+ Możesz połączyć warstwy z witryn sieci Web, dokumentów pakietu Office, plikami ze zwykłym tekstem i plikami w projektach, które są współużytkowane przez wiele aplikacji, ale proces walidacji nie uwzględni je. Błędy walidacji nie będą widoczne w przypadku odwołań do projektów lub zestawów połączonych z oddzielnymi warstwami, jeżeli między tymi warstwami nie ma żadnych zależności. Odwołania te nie są uważane za zależności, chyba że w kodzie wykorzystano te odwołania.
 
-1.  Na diagramie zależności, wybierz jeden lub kilku warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.
+1.  Na diagramie zależności zaznacz jedną lub więcej warstw, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij **Wyświetl łącza**.
 
-2.  W **Explorer warstwy**, obejrzyj **weryfikacji obsługuje** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.
+2.  W **Eksplorator warstw**, Przyjrzyj się **obsługuje walidację** kolumny. Jeśli wartością jest false, element nie obsługuje walidacji.
 
-##  <a name="IncludeReferences"></a> Zawierają inne zestawy .NET i projekty do sprawdzania poprawności
- Przeciągnij elementy do diagramu zależności, odwołania do odpowiednich zestawów platformy .NET lub projekty są dodawane automatycznie **odwołuje się do warstwy** folderu projektu modelowania. Folder ten zawiera odwołania do zestawów i projektów, które są analizowane podczas walidacji. Bez ręcznie przeciągając je do diagramu zależności może zawierać innych zestawów platformy .NET i projekty do weryfikacji.
+##  <a name="IncludeReferences"></a> Dołączyć inne projekty, do weryfikacji i zestawy .NET
+ Podczas przeciągania elementów do diagramu zależności odwołania do projektów lub odpowiednich zestawów .NET są dodawane automatycznie do **odwołania do warstwy** folderu w projekcie modelowania. Folder ten zawiera odwołania do zestawów i projektów, które są analizowane podczas walidacji. Może zawierać innych zestawów platformy .NET i projekty do walidacji bez ręcznego przeciągania ich na diagram zależności.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania warstwy** folder, a następnie kliknij przycisk **Dodaj odwołanie**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania lub **odwołania do warstwy** folder, a następnie kliknij **Dodaj odwołanie**.
 
-2.  W **Dodaj odwołanie** okno dialogowe, wybierz zestawy lub projektów, a następnie kliknij przycisk **OK**.
+2.  W **Dodaj odwołanie** okno dialogowe, zaznacz zestawy lub projekty, a następnie kliknij przycisk **OK**.
 
-##  <a name="ValidateManually"></a> Ręcznie Sprawdź poprawność kodu
- Jeśli masz diagramu otwartych zależności, który jest połączony z elementów rozwiązania, możesz uruchomić **weryfikacji** polecenia skrót z diagramu. Umożliwia także wiersza polecenia do uruchomienia **msbuild** z **/p:ValidateArchitecture** ustawioną właściwość niestandardowa **True**. Na przykład, po wprowadzeniu dowolnych zmian w kodzie należy regularnie wykonywać walidację warstwy tak, aby można było wcześnie wychwycić konflikty zależności.
+##  <a name="ValidateManually"></a> Ręczna Walidacja kodu
+ Jeśli masz diagram Otwórz zależności, który jest połączony z elementami rozwiązania, możesz uruchomić **weryfikacji** polecenie skrótu z diagramu. Można również użyć wiersza polecenia do uruchomienia **msbuild** polecenia **validatearchitecture** wartość właściwości niestandardowej **True**. Na przykład, po wprowadzeniu dowolnych zmian w kodzie należy regularnie wykonywać walidację warstwy tak, aby można było wcześnie wychwycić konflikty zależności.
 
-#### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Weryfikacja kodu z diagramu otwartych zależności
+#### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Aby walidować kod z diagramu Otwórz zależności
 
-1.  Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **walidację architektury**.
-
-    > [!NOTE]
-    >  Domyślnie **Akcja kompilacji** ma ustawioną właściwość na plik diagramu (.layerdiagram) zależności **weryfikacji** tak, aby diagramu znajduje się w trakcie tego procesu.
-
-     **Listy błędów** okna raportów o błędach. Aby uzyskać więcej informacji o błędach weryfikacji, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
-
-2.  Aby wyświetlić źródło każdy błąd, kliknij dwukrotnie ten błąd w **listy błędów** okna.
+1.  Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **sprawdzanie poprawności architektury**.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą być wyświetlane mapy kodu zamiast źródła błędu. Dzieje się tak, jeśli kod ma zależność na zestaw, który nie jest określony przez wykres zależności, albo kod brakuje zależności, który jest określony przez wykres zależności. Przejrzyj mapy kodu lub kod, aby określić, czy zależność powinna istnieć. Aby uzyskać więcej informacji na temat mapy kodu, zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+    >  Domyślnie **Build Action** właściwość zależności pliku diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.
 
-3.  Aby zarządzać błędy, zobacz [Zarządzanie błędy sprawdzania poprawności](#ManageErrors).
+     **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+
+2.  Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.
+
+    > [!NOTE]
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność od zestawu, który nie jest określona przez diagram zależności lub w kodzie brakuje zależności, która jest określona przez diagram zależności. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+
+3.  Aby zarządzać błędami, zobacz [zarządzanie błędami walidacji](#ManageErrors).
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>Aby walidować kod z wiersza polecenia
 
@@ -130,59 +130,59 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
 
 2.  Wybierz jedną z następujących opcji:
 
-    -   Aby sprawdzić poprawność kodu dla projektu modelowania określonych w rozwiązaniu, uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następujących właściwości niestandardowej.
+    -   Aby walidować kod dla określonego projektu modelowania w rozwiązaniu, uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następującymi niestandardowymi właściwościami.
 
         ```
         msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
         ```
 
-         - lub -
+         - lub —
 
-         Przejdź do folderu, który zawiera modelowania pliku (.modelproj) i na diagramie zależności projektu, a następnie uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następujących właściwości niestandardowych:
+         Przejdź do folderu, który zawiera modelowania (.modelproj), plików i diagram zależności projektu, a następnie uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następującymi niestandardowymi właściwościami:
 
         ```
         msbuild /p:ValidateArchitecture=true
         ```
 
-    -   Aby sprawdzić poprawność kod wszystkich projektów modelowania w rozwiązaniu, uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następujących właściwości niestandardowych:
+    -   Aby walidować kod dla wszystkich projektów modelowania w rozwiązaniu, uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następującymi niestandardowymi właściwościami:
 
         ```
         msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
         ```
 
-         - lub -
+         - lub —
 
-         Przejdź do folderu rozwiązania, które musi zawierać projekt modelowania, który zawiera diagram zależności, a następnie uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następujących właściwości niestandardowych:
+         Przejdź do folderu rozwiązania, który musi zawierać projekt modelowania zawierający diagram zależności, a następnie uruchom [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z następującymi niestandardowymi właściwościami:
 
         ```
         msbuild /p:ValidateArchitecture=true
         ```
 
-     Zostaną wyświetlone wszystkie błędy. Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [MSBuild](../msbuild/msbuild.md) i [zadanie programu MSBuild](../msbuild/msbuild-task.md).
+     Zostaną wyświetlone wszystkie błędy. Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [MSBuild](../msbuild/msbuild.md) i [zadanie MSBuild](../msbuild/msbuild-task.md).
 
- Aby uzyskać więcej informacji o błędach weryfikacji, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+ Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
 
-###  <a name="ManageErrors"></a> Zarządzanie błędy sprawdzania poprawności
- Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Pomiń błąd, jest dobrą praktyką jest zalogować elementu roboczego [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
+###  <a name="ManageErrors"></a> Zarządzanie błędami walidacji
+ Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone podczas walidacji. Na przykład możesz pominąć błędy, które są już poprawiane lub które nie są istotne w konkretnym scenariuszu. Błąd zostanie pominięty, jest dobrym rozwiązaniem do dziennika element roboczy [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 
 > [!WARNING]
->  Komputer musi już być połączony do TFS źródła kod sterowania (SCC) można utworzyć lub połączyć do elementu roboczego. Jeśli spróbujesz nawiązać połączenie z inną SCC TFS programu Visual Studio bieżące rozwiązanie zostanie automatycznie zamknięte. Upewnij się, czy masz już połączenie do odpowiednich SCC przed próbą utworzenia lub łącze do elementu roboczego. W nowszych wersjach programu Visual Studio poleceń menu nie są dostępne, jeśli nie są połączone SCC.
+>  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Aby utworzyć element roboczy dla błędu walidacji
 
--   W **listy błędów** okna, kliknij prawym przyciskiem myszy błąd, wskaż pozycję **Utwórz element roboczy**, a następnie kliknij typ elementu roboczego, który chcesz utworzyć.
+-   W **lista błędów** okna, kliknij błąd prawym przyciskiem myszy, wskaż opcję **Utwórz element pracy**, a następnie kliknij typ elementu roboczego, który chcesz utworzyć.
 
- Umożliwia zarządzanie błędy sprawdzania poprawności w tych zadań **listy błędów** okno:
+ Te zadania umożliwiają zarządzanie błędami walidacji w **lista błędów** okna:
 
-|**Aby**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
-|Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy co najmniej jeden wybrany błąd, wskaż pozycję **Zarządzanie błędy sprawdzania poprawności**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Błędy pomijane są śledzone w pliku .suppressions odpowiedni plik diagramu zależności.|
-|Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany błąd pominięty lub błędy, wskaż pozycję **Zarządzanie błędy sprawdzania poprawności**, a następnie kliknij przycisk **błędów Stop pomijanie**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
-|Przywróć wszystkie pominięty błędów w **listy błędów** okna|Kliknij prawym przyciskiem myszy **listy błędów** okna, wskaż **Zarządzanie błędy sprawdzania poprawności**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|
-|Ukryj błędy wszystkich pominięty z **listy błędów** okna|Kliknij prawym przyciskiem myszy **listy błędów** okna, wskaż **Zarządzanie błędy sprawdzania poprawności**, a następnie kliknij przycisk **Ukryj wszystkie błędy pomijane**.|
+|Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy jeden lub kilka zaznaczonych błędów, wskaż opcję **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Pominięte błędy są śledzone w pliku .suppressions związanym z odpowiedniego pliku diagramu zależności.|
+|Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany pominięty błąd lub błędy, wskaż opcję **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Przestań pomijać błędy**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
+|Przywracanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|
+|Ukrywanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|
 
-##  <a name="ValidateAuto"></a> Weryfikacja kodu automatycznie
- Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć warunkowe zaewidencjonowanie kompilacji, zobacz [aby zatwierdzić zmiany, użyj procesu kompilacji warunkowe zaewidencjonowanie](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+##  <a name="ValidateAuto"></a> Automatycznie Walidacja kodu
+ Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Aby walidować kod automatycznie podczas lokalnej kompilacji
 
@@ -192,51 +192,51 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- lub -
+ \- lub —
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, który zawiera zależności diagramu lub diagramy, a następnie kliknij przycisk **właściwości**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, który zawiera diagram zależności lub diagramów, a następnie kliknij **właściwości**.
 
-2.  W **właściwości** Ustaw projekt modelowania **walidację architektury** właściwości **True**.
+2.  W **właściwości** okna, Ustaw projekt modelowania **sprawdzanie poprawności architektury** właściwości **True**.
 
      Dotyczy to projektów modelowania w trakcie procesu walidacji.
 
-3.  W **Eksploratora rozwiązań**, kliknij plik diagramu (.layerdiagram) zależności, który ma być używany do sprawdzania poprawności.
+3.  W **Eksploratora rozwiązań**, kliknij plik diagramu (.layerdiagram) zależności, którego chcesz używać do sprawdzania poprawności.
 
-4.  W **właściwości** okna, upewnij się, że diagram **Akcja kompilacji** właściwość jest ustawiona na **weryfikacji**.
+4.  W **właściwości** okna, upewnij się, że diagram **Build Action** właściwość jest ustawiona na **weryfikacji**.
 
-     Dotyczy to również na diagramie zależności w trakcie tego procesu.
+     Obejmuje to diagram zależności w trakcie procesu walidacji.
 
- Aby zarządzać błędy w oknie Lista błędów, zobacz [Zarządzanie błędy sprawdzania poprawności](#ManageErrors).
+ Aby zarządzać błędami w oknie Lista błędów, zobacz [zarządzanie błędami walidacji](#ManageErrors).
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Aby walidować kod automatycznie podczas działania programu Team Foundation Build
 
 1.  W **Team Explorer**, kliknij dwukrotnie definicję kompilacji, a następnie kliknij przycisk **procesu**.
 
-2.  W obszarze **parametrów procesu kompilacji**, rozwiń węzeł **kompilacji**i wpisz następujące polecenie w **argumenty programu MSBuild** parametru:
+2.  W obszarze **parametrów procesu kompilacji**, rozwiń węzeł **kompilacji**i wpisz następujące polecenie w **argumenty MSBuild** parametru:
 
      `/p:ValidateArchitecture=true`
 
- Aby uzyskać więcej informacji o błędach weryfikacji, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], zobacz:
+ Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], zobacz:
 
 -   [Kompilowanie i wydawanie](/vsts/build-release/index)
 
--   [Użyj domyślnej szablonu procesu kompilacji](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
+-   [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 
--   [Modyfikowanie kompilacji starszych opartego na UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
+-   [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
--   [Dostosuj szablon procesu kompilacji](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+-   [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
--   [Monitoruj postęp kompilacji uruchomiona](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+-   [Monitoruj postęp kompilacji uruchomiony](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-##  <a name="TroubleshootingValidation"></a> Rozwiązać problemy z weryfikacją warstwy
- W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+##  <a name="TroubleshootingValidation"></a> Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy
+ W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
 
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |---------------|------------------------|--------------------|
-|Błędy walidacji nie występują w oczekiwany sposób.|Sprawdzanie poprawności nie działa na diagramach zależności, które są kopiowane z innych diagramów zależności w Eksploratorze rozwiązań i które znajdują się w tym samym projekcie modelowania. Diagramy zależności, które są kopiowane w ten sposób zawierają tego samego odwołania, co oryginalna diagram zależności.|Dodaj nowy diagram zależności do projektu modelowania.<br /><br /> Skopiować elementy z diagramu zależności źródła do nowego diagramu.|
+|Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach zależności, które są kopiowane z innych diagramów zależności w Eksploratorze rozwiązań, które działają w tym samym projekcie modelowania. Diagramy zależności, które są kopiowane w ten sposób zawierają te same odwołania, co oryginalny diagram zależności.|Dodaj nowy diagram zależności do projektu modelowania.<br /><br /> Skopiuj elementy z diagramu źródłowego zależności do nowego diagramu.|
 
-##  <a name="UnderstandingValidationErrors"></a> Opis i rozwiązywanie błędów walidacji warstwy
- Podczas sprawdzania poprawności kod diagram zależności błędy sprawdzania poprawności wystąpić, gdy kod jest w konflikcie z projektu. Na przykład następujące warunki mogą powodować występowanie błędów walidacji:
+##  <a name="UnderstandingValidationErrors"></a> Zrozumienie i rozwiązywanie błędów walidacji warstwy
+ Podczas walidacji kodu na podstawie diagram zależności, błędy walidacji występują, gdy kod jest niezgodny z projektem. Na przykład następujące warunki mogą powodować występowanie błędów walidacji:
 
 -   Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.
 
@@ -248,19 +248,19 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
 
 |**Składnia**|**Opis**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* jest artefaktu, który jest skojarzony z warstwą na diagramie zależności.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takich jak **klasy** lub **metody**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* jest artefaktem skojarzonym z warstwą na diagramie zależności.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takich jak **klasy** lub **metoda**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|
 |*NamespaceNameN*|Nazwa przestrzeni nazw.|
 |*LayerNameN*|Nazwa warstwy na diagramie zależności.|
 |*DependencyType*|Typ relacji zależności między *Artifact1* i *Artifact2*. Na przykład *Artifact1* ma **wywołania** relacji z *Artifact2*.|
 
 |**Błąd składni**|**Opis błędu**|
 |----------------------|---------------------------|
-|DV0001: **Nieprawidłowa zależność**|Ten problem został zgłoszony, gdy element kodu (przestrzeń nazw, typu, elementu członkowskiego) zamapowany na odwołania warstwy element kodu zamapowana do innej warstwy, ale nie ma strzałki zależności między tych warstw na diagramie walidacji zależności zawierający tej warstwy. Stanowi to naruszenie ograniczenia zależności.|
-|DV1001: **nieprawidłową nazwę przestrzeni nazw**|Ten problem został zgłoszony w elemencie kodu skojarzonego z warstwy, która właściwość "Dozwolone nazw Namespace" nie zawiera przestrzeń nazw, w którym jest zdefiniowany element tego kodu. Stanowi to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że ma być średnikami lista przestrzeni nazw, w którym kod elementy skojarzone z są warstwy składni "Dozwolone nazw Namespace" mogą być zdefiniowany.|
-|DV1002: **zależność od unreferenceable przestrzeni nazw**|Ten problem został zgłoszony w elemencie kodu skojarzone z warstwy i odwołuje się do innego elementu kodu zdefiniowany w przestrzeni nazw, który jest zdefiniowany we właściwości "Unreferenceable Namespace" warstwy. Stanowi to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Unreferenceable przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista przestrzenie nazw, które nie powinny być przywoływany w skojarzone z tą warstwą elementy kodu.|
-|DV1003: **niedozwolone przestrzeni nazw**|Ten problem został zgłoszony w elemencie kodu skojarzone z warstwą zawierającą właściwość "Niedozwolone nazw Namespace" w przestrzeni nazw, w którym jest zdefiniowany element tego kodu. Stanowi to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Niedozwolone nazwę przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista przestrzeni nazw, w którym kod elementy skojarzone z tą warstwą nie powinna być zdefiniowana.|
-|DV3001: **Missing Link**|Warstwa "*LayerName*"łączy się"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu?|*LayerName* linki do artefaktów, którego nie można odnaleźć. Na przykład, może brakować łącza do klasy, ponieważ w projekcie modelowania brakuje odwołania do zestawu, który zawiera klasę.|
-|DV9001: **analizy architektury znaleziono błędy wewnętrzne**|Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych.|Zobacz dziennik zdarzeń kompilacji lub okno danych wyjściowych, aby uzyskać więcej szczegółów.|
+|DV0001: **nieprawidłową zależność.**|Ten problem jest zgłaszany, gdy element kodu (przestrzeń nazw, typu, składowej) mapowany do odwołania do warstwy element kodu zamapowana do innej warstwy, ale nie ma żadnych strzałki zależności między te warstwy diagram sprawdzania poprawności zależności zawierający tej warstwy. Jest to naruszenie ograniczenia zależności.|
+|DV1001: **Nazwa Nieprawidłowa przestrzeń nazw**|Ten problem, jest zgłaszany na element kodu skojarzone z warstwą, którego właściwość "Dozwolone nazwy Namespace" nie zawiera przestrzeń nazw, w którym zdefiniowano element tego kodu. Jest to naruszenie ograniczenia nazewnictwa. Należy zauważyć, że składnia "Dozwolone nazwy Namespace", które ma być rozdzielana średnikami lista przestrzeni nazw w kodzie, które elementy związane z są warstwy mogą być zdefiniowane.|
+|DV1002: **zależność od unreferenceable przestrzeni nazw**|Ten problem, jest zgłaszany na element kodu skojarzone z warstwą i odwoływanie się do innego elementu kod zdefiniowany w przestrzeni nazw, która jest zdefiniowana we właściwości "Unreferenceable Namespace" warstwy. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Unreferenceable przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista przestrzeni nazw, które nie powinny istnieć odwołania w elementach kodu skojarzonych z tą warstwą.|
+|DV1003: **niedozwolone przestrzeni nazw**|Ten problem, jest zgłaszany na element kodu skojarzone z warstwą zawierającą właściwość "Niedozwolone nazwy Namespace" w przestrzeni nazw, w którym zdefiniowano element tego kodu. Jest to naruszenie ograniczenia nazewnictwa. Należy pamiętać, że właściwość "Name niedozwolone przestrzeni nazw" jest zdefiniowana jako Rozdzielana średnikami lista nazw w kodzie, który nie powinien być zdefiniowany elementy skojarzone z tą warstwą.|
+|DV3001: **Missing Link**|Warstwa "*LayerName*"łączy"*artefaktu*" którego nie można znaleźć. Czy nie brakuje odwołania do zestawu?|*LayerName* łącze do artefaktu, którego nie można odnaleźć. Na przykład, może brakować łącza do klasy, ponieważ w projekcie modelowania brakuje odwołania do zestawu, który zawiera klasę.|
+|DV9001: **analiza architektoniczna znalazła błędy wewnętrzne**|Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych.|Zobacz dziennik zdarzeń kompilacji lub okno danych wyjściowych, aby uzyskać więcej szczegółów.|
 
 
 ## <a name="see-also"></a>Zobacz też

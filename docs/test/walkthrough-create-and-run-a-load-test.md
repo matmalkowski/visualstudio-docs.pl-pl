@@ -12,141 +12,141 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977388"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178452"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Wskazówki: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Przewodnik: Tworzenie i uruchamianie testu obciążenia zawierającego testy jednostkowe
 
-W tym przewodniku tworzenia testu obciążenia zawierającego testy jednostkowe.
+W tym instruktażu utworzysz testu obciążenia, który zawiera testy jednostkowe.
 
-W tym przewodniku opisano proces tworzenia i uruchomienie testu obciążenia za pomocą programu Visual Studio Enterprise. Test obciążenia jest kontenerem testów wydajności sieci Web i testów jednostkowych. Nowy Kreator testu obciążenia utworzysz testy obciążenia.
+Ten instruktaż prowadzi przez tworzenie, a następnie ponownie uruchomić test obciążenia przy użyciu programu Visual Studio Enterprise. Test obciążenia jest kontenerem testów wydajności sieci web i testów jednostkowych. Testy obciążenia są tworzone za pomocą nowego kreatora testu obciążenia.
 
-Test obciążenia udostępnia również wiele właściwości środowiska wykonawczego, które można zmodyfikować, aby wygenerować symulacji żądaną obciążenia. W tym przewodniku umożliwia załadować Test Kreator nowego Dodawanie testów jednostkowych do testu obciążenia.
+Test obciążenia udostępnia również wiele właściwości czasu wykonywania, które można modyfikować, aby wygenerować pożądaną symulację obciążenia. Aby dodać testy jednostkowe do testu obciążenia, w tym przewodniku użyć Kreatora nowego testu obciążeniowego.
 
-W tym przewodniku będzie wykonać następujące zadania:
+W tym instruktażu wykonasz następujące zadania:
 
--   Tworzenie testu obciążenia, która używa testów jednostkowych.
+-   Tworzenie testu obciążenia, który używa testów jednostkowych.
 
 -   Zmiana niektórych ustawień testu obciążenia.
 
--   Uruchamianie testu obciążenia.
+-   Uruchom test obciążenia.
 
--   Wykonaj kroki opisane w [wskazówki: tworzenie i uruchomionych testów jednostkowych dla zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) utworzyć prosty biblioteki klas C# zawierającą sieci Web wydajności i obciążenia projekt testowy z niektórych testów jednostkowych w nim.
+-   Wykonaj kroki opisane w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) do tworzenia prostych biblioteki klas C# zawierającą internetowego wydajności i Załaduj projekt testowy z niektórymi testami jednostkowymi w nim.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Tworzenie testu obciążenia zawierającego testy jednostkowe przy użyciu Kreatora nowego testu obciążenia
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Tworzenie testu obciążenia zawierającego testy jednostkowe za pomocą Kreatora nowego testu obciążenia
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Aby uruchomić Kreatora nowego testu obciążenia
 
-1.  Otwórz rozwiązanie Bank, który został utworzony w [wskazówki: tworzenie i uruchomionych testów jednostkowych dla zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Otwórz rozwiązanie Bank, który został utworzony w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-2.  W **Eksploratora rozwiązań**, otwórz menu skrótów węzła rozwiązania Bank, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
+2.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla węzła rozwiązanie Bank, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**.
 
-     Wyświetla okno dialogowe Dodawanie nowego projektu.
+     Wyświetla okno dialogowe Dodaj nowy projekt.
 
-3.  W oknie dialogowym Dodawanie nowego projektu, rozwiń węzeł **Visual C#** i wybierz polecenie **testu**. Z listy szablonów wybierz **wydajności sieci Web i projektu testu obciążenia** i **nazwa** wpisz `BankLoadTest`. Wybierz **OK**.
+3.  W oknie dialogowym Dodaj nowy projekt rozwiń **Visual C#** i wybierz polecenie **testu**. Z listy szablonów wybierz **projekt testu obciążenia i wydajności sieci Web** i **nazwa** wpisz `BankLoadTest`. Wybierz **OK**.
 
-     BankLoadTest web wydajności i obciążenia projektu testowego jest dodany do rozwiązania.
+     BankLoadTest web wydajności i obciążenia projektu testowego jest dodawany do rozwiązania.
 
-4.  Otwórz menu skrótów dla BankLoadTest wydajności sieci web i testów obciążenia projektu, wybierz **Dodaj**, a następnie wybierz pozycję **testów obciążenia**.
+4.  Otwórz menu skrótów dla nowej wydajności sieci web bankloadtest i Załaduj projekt testowy, wybierz opcję **Dodaj**, a następnie wybierz **Test obciążenia**.
 
-5.  **Nowy Kreator testu obciążenia** uruchamia.
+5.  **Nowego kreatora testu obciążenia** rozpoczyna się.
 
-6.  **Powitalnej** strony **nowy Kreator testu obciążenia** jest pierwszą stroną.
+6.  **Powitalnej** strony **nowego kreatora testu obciążenia** to pierwsza strona.
 
 7.  Wybierz **dalej**.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>Aby edytować ustawienia scenariusza testu obciążenia
 
-1.  W **wprowadź nazwę scenariusza testu obciążenia** polu tekstowym **ScenarioSample**.
+1.  W **wprowadź nazwę scenariusza testu obciążeniowego** polu tekstowym **ScenarioSample**.
 
-     A *scenariusza* mechanizm grupowania. Zawiera zestaw testów i właściwości dla testów pod obciążeniem.
+     A *scenariusza* jest mechanizmem grupowania. Składa się z zestawu testów oraz właściwości do uruchamiania tych testów pod obciążeniem.
 
-2.  Ustaw **czasu Pomyśl profilu** do `Use normal distribution centered on recorded think times`. Czasów reakcji odpowiadają za czas, który użytkownik może ponder strony sieci Web przed przejściem do następnej strony.
+2.  Ustaw **czas namysłu profilu** do `Use normal distribution centered on recorded think times`. Czasy reakcji reprezentują czas, jaki użytkownik może spędzać na stronie sieci web przed przejściem do następnej strony.
 
 1.  Wybierz **dalej** po zakończeniu.
 
-### <a name="to-edit-load-pattern-setting-for-test-scenario"></a>Aby edytować ustawienia wzorca obciążenia dla scenariusza testu
+### <a name="to-edit-load-pattern-setting-for-test-scenario"></a>Aby edytować ustawienia ścieżki obciążenia scenariuszu testu
 
-1.  Wybierz **obciążenia krok**.
+1.  Wybierz **obciążenia krokowego**.
 
     > [!NOTE]
-    > Są dostępne dwa typy wzorców obciążenia: stała i kroku. Każdy typ ma swoje funkcje w testów obciążenia, ale na potrzeby tego przewodnika, wybierz **obciążenia krok**.
+    > Można wybrać spośród dwóch rodzajów wzorców obciążenia: stałego i krokowego. Każdy typ ma swoją funkcję w testowaniu obciążenia, ale dla celów tego instruktażu wybierz **obciążenia krokowego**.
 
-2.  Ustaw **Start liczba użytkowników** do 10 użytkowników.
+2.  Ustaw **zacznij liczyć użytkowników** do 10 użytkowników.
 
-3.  Ustaw **czas trwania kroku** do 10 sekund.
+3.  Ustaw **czas trwania kroku** to 10 sekund.
 
-4.  Ustaw **krok liczba użytkowników** do 10 użytkowników/kroku.
+4.  Ustaw **liczba użytkowników zwiększana podczas kroku** do 10 użytkowników/krok.
 
 5.  Ustaw **maksymalna liczba użytkowników** do 100 użytkowników.
 
 6.  Wybierz **dalej**.
 
-### <a name="to-select-test-mix-model-for-the-scenario"></a>Wybierz model testu mieszanego dla scenariusza
+### <a name="to-select-test-mix-model-for-the-scenario"></a>Aby wybrać model mieszaniny testu dla scenariusza
 
-1.  W obszarze jak należy modelować test mieszany, wybierz **na podstawie całkowitej liczby testów**.
+1.  W obszarze jak powinny być modelowane mieszaniny testów, wybierz **na podstawie całkowitej liczby testów**.
 
 2.  Wybierz **dalej**.
 
-### <a name="to-add-unit-tests-to-the-scenario"></a>Aby dodać do scenariusza testów jednostkowych
+### <a name="to-add-unit-tests-to-the-scenario"></a>Aby dodać testy jednostek do scenariusza
 
-1.  Następnym krokiem jest **Dodaj testów obciążenia scenariusza testu i Edytuj test mieszany**.
+1.  Następnym krokiem jest **Dodaj testy do obciążenia scenariusza testu i Edytuj test mieszany**.
 
-2.  Wybierz **Dodaj** do wyboru testów.
+2.  Wybierz **Dodaj** aby wybrać testy.
 
-3.  Testy jednostkowe CreditTest na liście wybierz **dostępne testy** okienko, w której znajduje się lista wszystkich testów wydajności sieci Web i testów jednostkowych w wydajności sieci Web i projektu testu obciążenia.
+3.  Wybierz testy jednostkowe CreditTest wymienione w **dostępne testy** okienko, które wyświetla listę wszystkich testów wydajności sieci web i testów jednostkowych w projekt testu obciążenia i wydajności sieci web.
 
-4.  Wybierz strzałkę, aby dodać CreditTest testu jednostkowego do **wybrane testy** okienka.
+4.  Wybierz strzałkę, aby dodać test jednostkowy CreditTest **wybrane testy** okienka.
 
-5.  Powtórz kroki 3 i 4 dla DebitTest i FreezeAccountTest testów jednostkowych.
+5.  Powtórz kroki 3 i 4 dla testów jednostkowych DebitTest i FreezeAccountTest.
 
-6.  Po zakończeniu dodawania testów jednostkowych trzy wybierz **OK**.
+6.  Po zakończeniu dodawania trzech jednostek testowych wybierz **OK**.
 
-     Dostępne są testu mieszanego.
+     Zostanie wyświetlona testu mieszanego.
 
-7.  Przesuń suwak w obszarze dystrybucji dla CreditTest nieco z prawej strony, aby dopasować dystrybucji testu. Należy zauważyć, że inne suwaki automatycznie przemieszczać się po lewej stronie, aby dystrybucji pozostaje w skali 100%.
+7.  Suwak w obszarze rozkład dla CreditTest nieznacznie w prawo, aby dopasować rozkład testu. Należy zauważyć, że inne suwaki przesuwają się po lewej stronie automatycznie tak, że rozkład pozostaje na poziomie 100%.
 
 8.  Wybierz **dalej**.
 
-### <a name="to-select-network-mix-for-test-scenario"></a>Aby wybrać mieszany profil sieciowy w scenariuszu testu
+### <a name="to-select-network-mix-for-test-scenario"></a>Aby wybrać mieszaninę sieci dla scenariusza testu
 
-1.  Wybierz typ połączenia sieci LAN do dodania do różnych przepustowości sieci.
+1.  Wybierz typ połączenia sieci LAN, aby dodać do mieszanki przepustowości sieci.
 
-     Można dodać więcej typów sieci. Za pomocą suwaków Dostosuj dystrybucji testu i wagi.
+     Możesz dodać więcej typów sieci. Użyj suwaków, aby dopasować test dystrybucji i wagi.
 
 2.  Wybierz **dalej**.
 
-### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>Aby określić komputery, aby monitorować zbiorem liczników podczas testu obciążenia
+### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>Aby określić komputery, aby monitorować zbiorem liczników podczas przebiegu testu obciążeniowego
 
 1.  Wybierz **dalej**.
 
-     Aby uzyskać więcej informacji na temat zestawów liczników, zobacz [Określanie ustawia liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+     Aby uzyskać więcej informacji na temat zbiory liczników, zobacz [określania zestawów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
-### <a name="to-edit-run-setting-for-load-test"></a>Aby edytować ustawienia uruchamiania dla testu obciążenia
+### <a name="to-edit-run-setting-for-load-test"></a>Aby edytować ustawienia przebiegu testu obciążeniowego
 
-1.  Wybierz **czas trwania testu obciążenia** , a następnie ustaw **Uruchom czas trwania** do 2 minuty w celu *dymu testu* testów obciążenia.
+1.  Wybierz **czas trwania testu obciążenia** , a następnie ustaw **czas trwania uruchomienia** jako 2 minuty w celu *testu dymu* testu obciążenia.
 
-     Podczas tworzenia testów obciążenia jest dobrym rozwiązaniem, aby sprawdzić, czy wszystko jest poprawnie skonfigurowany i uruchomiony, zgodnie z oczekiwaniami, uruchamiając testu obciążenia krótkie, światła. Ten proces jest nazywany *test*.
+     W przypadku tworzenia testów obciążenia, jest dobrym rozwiązaniem, aby sprawdzić, czy wszystko jest poprawnie skonfigurowane i działa zgodnie z oczekiwaniami, uruchamiając krótki, lekki test obciążenia. Ten proces jest nazywany *test działania*.
 
-2.  Wybierz **Zakończ**. Test obciążenia zostanie otwarty w **edytora testu obciążenia**.
+2.  Wybierz **Zakończ**. Test obciążenia jest otwierany w **edytorze testu obciążenia**.
 
 ## <a name="running-the-load-test"></a>Uruchamianie testu obciążenia
- Po utworzeniu testu obciążenia, uruchom go, aby wyświetlić sposób aplikacji bank odpowiadania na symulacyjnych obciążenia. Podczas testu obciążenia, zobacz **analizatora testu obciążenia** okna.
+ Po utworzeniu testu obciążenia uruchom go, aby obejrzeć, jak aplikacja bankowa zareaguje na symulację obciążenia. Gdy uruchomiony jest test obciążenia, zobacz **analizatora testu obciążenia** okna.
 
 ### <a name="to-run-the-load-test"></a>Aby uruchomić test obciążenia
 
-1.  Z otwartych w teście obciążenia **edytora testu obciążenia**, wybierz zielonego **Uruchom Test** przycisku w pasku narzędzi. Test obciążenia zaczyna działać.
+1.  Otwórz w programie testu obciążenia **edytorze testu obciążenia**, wybierz zielony **Uruchom Test** przycisku na pasku narzędzi. Test obciążenia rozpoczyna się.
 
-2.  Jeśli symulacji testu przekracza wszelkie progi, ikony wyświetlane w węzłach drzewa sterowania wskazująca na naruszenie progu. Czerwone koło nakładki mieć błędy, ostrzeżenia żółtego trójkąta nakładki. Można znaleźć licznika, który przekroczył próg i wykres go przeciągając ikony na wykresie. Można to zrobić, gdy test jest uruchomiony.
+2.  Jeśli Symulacja testu przekracza jakiekolwiek progi, ikony pojawiają się w węzłach drzewa w celu wskazania przekroczenia progu. Błędy mają czerwone kółko nakładki, a ostrzeżenia mają żółty trójkąt nakładki. Możesz znaleźć licznik, który przekroczył próg i jej wykres, przeciągając jego ikonę na wykres. Można to zrobić, gdy uruchomiony jest test.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Edytowanie mieszanki testów, aby określić, które testy do scenariusza testów obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Edytowanie mieszanki testów, aby określić, które testy można uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa uruchamiania testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

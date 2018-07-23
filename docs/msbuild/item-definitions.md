@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079099"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178565"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wersji 2.0 umożliwia deklarację statycznych elementów w plikach projektu za pomocą [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Jednak metadane mogą być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu o nazwie [ItemDefinitionGroup —](../msbuild/itemdefinitiongroup-element-msbuild.md) pozwala pokonać tego ograniczenia. *ItemDefinitionGroup —* umożliwiają definiowanie zestawu definicji elementu, aby dodać wartości metadanych domyślne dla wszystkich elementów w typie elementu o nazwie.  
@@ -144,7 +144,7 @@ Podczas zastąpienia wcześniej zdefiniowane metadane specyfikację ostatni ma p
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Za pomocą warunków w ItemDefinitionGroup —  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Warunki stosowania w ItemDefinitionGroup —  
  Warunki w ItemDefinitionGroup — służy do sterowania włączenia metadanych. Na przykład:  
   
 ```xml  
@@ -190,7 +190,7 @@ W powyższym przykładzie elementu "i" odwołuje się do elementu "test" w jego 
 
 W powyższym przykładzie, "m" będzie miał ustawienie na wartość "m1", jako odwołania do stanu elementu "i" w wartości metadanych dla elementu "yes". 
   
-## <a name="overriding-and-deleting-metadata"></a>Zastępowanie i usuwanie metadanych  
+## <a name="override-and-delete-metadata"></a>Zastąp i usuwanie metadanych  
  Metadane zdefiniowane w ItemDefinitionGroup — element może być zastąpiona w późniejszym ItemDefinitionGroup — element, ustawiając wartość metadanych na wartość pustą. Możesz również skutecznie usunąć element metadanych, ustawiając dla niej wartość pustą. Na przykład:  
   
 ```xml  

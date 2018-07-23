@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0841faf5e63b6c4108b9f65777416ded63227bb9
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152438"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178416"
 ---
 # <a name="edit-load-tests"></a>Edytowanie testów obciążenia
 
-Testy obciążenia są uruchamiane testy wydajności sieci Web lub testów jednostkowych, aby zasymulować wielu użytkownikom dostęp do serwera, w tym samym czasie. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
+Testy obciążenia przebiegu testu wydajności WWW lub testów jednostkowych, aby zasymulować wielu użytkownikom dostęp do serwera, w tym samym czasie. Test obciążeniowy umożliwia dostęp do danych obciążeniowych i wydajnościowych aplikacji. Test obciążeniowy można skonfigurować tak, aby emulował różne warunki obciążenia, np. obciążenie przez użytkowników i typy sieci.
 
 > [!NOTE]
 > Testowanie obciążenia jest dostępna tylko w wersji Enterprise programu Visual Studio 2017.
@@ -31,7 +31,7 @@ Test obciążenia jest definiowany przez *scenariuszy*, *zbiory liczników*, i *
 
 ## <a name="edit-load-test-scenario-settings"></a>Edytowanie ustawień scenariusza testu obciążeniowego
 
-Scenariusz służy do modelowania współdziałania grupy użytkowników z aplikacji serwera. Scenariusz składa się z wzorca obciążenia, modelu testu mieszanego, testu mieszanego, mieszanej przeglądarki i mieszanego profilu sieciowego. Test obciążeniowy może mieć więcej niż jeden scenariusz, a jeden scenariusz może zawierać testy wydajności sieci Web oraz testy jednostkowe. Grupując podobne ustawienia, scenariusz umożliwia łączenie i wspólne wykonywanie testów o podobnym charakterze.
+Scenariusz służy do modelowania współdziałania grupy użytkowników z aplikacji serwera. Scenariusz składa się z wzorca obciążenia, modelu testu mieszanego, testu mieszanego, mieszanej przeglądarki i mieszanego profilu sieciowego. Test obciążenia może mieć więcej niż jeden scenariusz, a jeden scenariusz może zawierać testy wydajności sieci web i testów jednostkowych. Grupując podobne ustawienia, scenariusz umożliwia łączenie i wspólne wykonywanie testów o podobnym charakterze.
 
 Aby uzyskać więcej informacji, zobacz [scenariusze testów obciążenia edycji](../test/edit-load-test-scenarios.md) i [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924277"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176869"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 Polecenia programu Visual Studio umożliwiają wywołanie polecenia za pomocą **polecenia** oknie **bezpośrednie** oknie lub **Find/Command** pole. W każdym przypadku znak większości (`>`) jest używany do wskazania, że polecenia zamiast operacji wyszukiwania lub debugowania jest wykonanie czynności opisanych.
@@ -69,7 +69,7 @@ Polecenia programu Visual Studio umożliwiają wywołanie polecenia za pomocą *
 |[Ustaw bieżący wątek](../../ide/reference/set-current-thread-command.md)|Umożliwia wyświetlenie określonego wątku.|
 |[Ustawianie podstawy](../../ide/reference/set-radix-command.md)|Określa liczbę bajtów do wyświetlenia.|
 |[Shell](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane z wiersza polecenia.|
-|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL w oknie przeglądarki sieci Web w ramach zintegrowanego środowiska programistycznego (IDE) lub zewnętrznego dla IDE.|
+|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL w oknie przeglądarki sieci web w ramach zintegrowanego środowiska programistycznego (IDE) lub zewnętrznego dla IDE.|
 |[Start](../../ide/reference/start-command.md)|Rozpoczyna proces debugowania i pozwala określić sposób obsługi błędów.|
 |[Path](../../ide/reference/symbol-path-command.md)|Określa listę katalogów do wyszukiwania symboli w debugerze.|
 |[Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md)|Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku.|

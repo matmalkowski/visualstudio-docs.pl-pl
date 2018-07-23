@@ -1,5 +1,5 @@
 ---
-title: Testi dużej aplikacji przy użyciu wielu map UI w programie Visual Studio
+title: Testi dużej aplikacji przy użyciu wielu map interfejsu użytkownika w programie Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,78 +12,78 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c87a8f350ecd38a4f0d1f8afd6918b560645e8f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977767"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180376"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 
-W tym temacie omówiono sposób użycia kodowane testy interfejsu użytkownika, gdy są testowanie dużej aplikacji przy użyciu wielu map UI.
+W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkownika podczas testowania dużych aplikacji przy użyciu wielu map interfejsu użytkownika.
 
  **Wymagania**
 
 -   Visual Studio Enterprise
 
- Podczas tworzenia nowego kodowanego testu interfejsu użytkownika framework testowania programu Visual Studio generuje kod dla testu domyślnie w <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji o sposobie rejestrowania kodowanych testów interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
+ Gdy tworzysz nowy kodowany test interfejsu użytkownika, struktura testowania programu Visual Studio generuje kod dla testu domyślnie <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji na temat sposobu rejestrowania kodowane testy interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).
 
- Wygenerowany kod dla mapy interfejsu użytkownika zawiera klasę dla każdego obiektu, który test współdziała z. Dla każdej wygenerowane metody klasę pomocnika dla parametrów metod jest generowany dla tej metody. W przypadku dużej liczby obiektów, stron i formularzy i formantów w aplikacji może zwiększyć się bardzo dużych mapy interfejsu użytkownika. Ponadto jeśli wiele osób pracuje testy, aplikacji staje się niewygodna z jednego dużego pliku mapy interfejsu użytkownika.
+ Kod generowany dla mapy interfejsu użytkownika zawiera klasę dla każdego obiektu, który test współdziała z. Dla każdej wygenerowanej metody do klasy pomocnika na potrzeby parametrów metody jest generowany specjalnie dla tej metody. W przypadku dużej liczby obiektów, stron i formularzy i kontrolek w aplikacji mapy interfejsu użytkownika można powiększać dużych. Ponadto jeśli kilka osób pracuje testy, aplikacja staje się niewygodna za pomocą pojedynczego dużego pliku mapy interfejsu użytkownika.
 
- Przy użyciu wielu UI Map plików zapewniają następujące korzyści:
+ Użycie wielu plików mapy interfejsu użytkownika może zapewnić następujące korzyści:
 
--   Każda mapa może być skojarzony z podzbiorem logicznej aplikacji. Dzięki temu można łatwiej zarządzać zmiany.
+-   Każda mapa może być skojarzony z podzbiorem logiczny aplikacji. Dzięki temu zmiany do zarządzania.
 
--   Każdego tester można pracować w sekcji aplikacji i sprawdzić ich kodu bez zakłócania innych testerów Praca w innych częściach aplikacji.
+-   Każdego testera może pracować nad części aplikacji, a następnie sprawdź w ich kodzie bez zakłócania innych testerów, pracy w innych częściach aplikacji.
 
--   Dodatki do interfejsu użytkownika aplikacji mogą być skalowane przyrostowo z minimalny wpływ na testy dla innych elementów interfejsu użytkownika.
+-   Dodatki do interfejsu użytkownika aplikacji mogą być skalowane przyrostowo z minimalnym wpływem na testy dla innych części interfejsu użytkownika.
 
-## <a name="do-you-need-multiple-ui-maps"></a>Czy potrzebujesz wielu map UI
- Tworzenie wielu map UI w każdym z tych typów sytuacjach:
+## <a name="do-you-need-multiple-ui-maps"></a>Czy potrzebujesz wielu map interfejsu użytkownika?
+ Tworzenie wielu map interfejsu użytkownika w każdym z tego typu sytuacje:
 
--   Kilka zestawów złożonych złożonych kontrolek interfejsu użytkownika, wykonujące operację logicznych, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk.
+-   Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.
 
--   Niezależne od zestaw kontrolek, które są dostępne w różnych punktach aplikacji, takich jak Kreator z wielu stronach operacji. W przypadku złożonych szczególnie każdej stronie kreatora, można utworzyć oddzielne mapy interfejsu użytkownika dla każdej strony.
+-   Niezależny zestaw formantów, które są dostępne w różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.
 
 ## <a name="adding-multiple-ui-maps"></a>Dodawanie wielu map UI
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Aby dodać mapy interfejsu użytkownika do projektu testowego kodowanego interfejsu użytkownika
+#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Aby dodać mapę interfejsu użytkownika do projektu kodowanego testu interfejsu użytkownika
 
-1.  W **Eksploratora rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkie mapy interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż polecenie **Dodaj** , a następnie wybierz **nowy Folder**. Można na przykład nazwy `UIMaps`.
+1.  W **Eksploratora rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkich map interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż **Dodaj** , a następnie wybierz **nowy Folder**. Na przykład nazwać ją `UIMaps`.
 
-     W obszarze Projekt kodowanego testu interfejsu użytkownika zostanie wyświetlony nowy folder.
+     W obszarze projektu kodowanego testu interfejsu użytkownika zostanie wyświetlony nowy folder.
 
-2.  Kliknij prawym przyciskiem myszy `UIMaps` folderu, wskaż **Dodaj**, a następnie wybierz pozycję **nowy element**.
+2.  Kliknij prawym przyciskiem myszy `UIMaps` folderu, wskaż **Dodaj**, a następnie wybierz **nowy element**.
 
      **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
 
     > [!NOTE]
-    > Musisz być w projekcie kodowanego testu interfejsu użytkownika można dodać nowej mapy kodowanego testu interfejsu użytkownika.
+    > Musisz być w projektu kodowanego testu interfejsu użytkownika można dodać nowej mapy kodowanego testu interfejsu użytkownika.
 
 3.  Wybierz **kodowanego interfejsu użytkownika testu mapy** z listy.
 
-     W **nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony mapy będzie reprezentować, na przykład `HomePageMap`.
+     W **nazwa** wprowadź nazwę dla nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strona, która mapy będzie reprezentować, na przykład `HomePageMap`.
 
-4.  Wybierz **dodać**.
+4.  Wybierz **Dodaj**.
 
-     Zmniejsza okno programu Visual Studio i **konstruktora kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe.
+     Minimalizuje okna programu Visual Studio i **kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe.
 
-5.  Rejestruj akcje pierwsza metoda i wybierz **Generuj kod**.
+5.  Rejestruj akcje w przypadku pierwszej metody, a następnie wybierz **Generuj kod**.
 
-6.  Zamknij po rejestrowane wszystkie akcje i potwierdzenia do pierwszej strony lub składnika i grupować je w metodach **konstruktora kodowanego testu interfejsu użytkownika** okno dialogowe.
+6.  Zamknij po rejestrowane wszystkie akcje i potwierdzenia dla pierwszego składnika lub strony i pogrupowane metody **kodowanego testu interfejsu użytkownika** okno dialogowe.
 
-7.  Kontynuuj tworzenie map UI. Rejestruje akcje i potwierdzeń, grupować w metody dla każdego składnika, a następnie wygeneruj kod.
+7.  Kontynuuj tworzenie map interfejsu użytkownika. Rejestruj akcje i potwierdzenia, zgrupować je w metody dla każdego składnika, a następnie generowania kodu.
 
- W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stała dla kreatorów, formularzy i strony. Mimo że każda mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odnoszące się do tego samego okno najwyższego poziomu w ramach wszystkich składników aplikacji Uruchom. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, począwszy od okien najwyższego poziomu, więc w aplikacji złożonych, okno rzeczywistych najwyższego poziomu można zduplikowany w każdym mapy interfejsu użytkownika. Jeśli okno rzeczywistych najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje, że w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością, podczas przełączania się między mapy interfejsu użytkownika.
+ W wielu przypadkach okien najwyższego poziomu aplikacji pozostaje na stałym dla kreatorów, formularze i stron. Mimo że każdy mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, wszystkie mapowania prawdopodobnie odwołują się do tego samego okno najwyższego poziomu w ramach której wszystkie składniki aplikacji Uruchom. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, zaczynając od okna najwyższego poziomu, dzięki czemu w przypadku złożonych aplikacji w oknie rzeczywistych najwyższego poziomu można zduplikowane w każdej mapie interfejsu użytkownika. W oknie rzeczywistych najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania między map interfejsu użytkownika.
 
- Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu w tym mapy interfejsu użytkownika jest taka sama jak okno główne najwyższego poziomu.
+ Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu, w tym mapę interfejsu użytkownika jest taka sama jak w oknie głównym najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład jest częścią klasy narzędzia, która zapewnia dostęp do poszczególnych składników oraz ich formanty podrzędne, które są reprezentowane przez klasy generowane w różnych mapy interfejsu użytkownika.
+Poniższy przykład jest częścią klasy narzędzia, która zapewnia dostęp do poszczególnych składników oraz ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych map interfejsu użytkownika.
 
-Na przykład aplikacja sieci Web o nazwie `Contoso` strony głównej, strony produktu i stronę koszyka zakupów. Każdy z tych stron udostępnianie typowych okno najwyższego poziomu czyli okna przeglądarki. Brak mapy interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:
+Na przykład aplikacja sieci web o nazwie `Contoso` ma stronę główną, stronę produktu i strony koszyka zakupów. Każda z tych stron współużytkują wspólne okno najwyższego poziomu czyli okna przeglądarki. Istnieje mapę interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:
 
 ```csharp
 using ContosoProject.UIMaps;

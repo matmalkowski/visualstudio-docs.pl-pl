@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Uruchom profilowanie XSLT'
+title: 'Porady: rozpoczynanie debugowania kodu XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -11,24 +11,24 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548414"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178351"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Porady: Uruchom profilowanie XSLT
+# <a name="how-to-start-debugging-xslt"></a>Porady: rozpoczynanie debugowania kodu XSLT
 
-Debuger XSLT może być używana do debugowania arkusz stylów XSLT lub aplikacji XSLT. Podczas debugowania, można wykonywać jeden wiersz kodu w czasie, Wkraczanie do, pominięcie lub wykonywanie krok po kroku z kodu. Polecenia, aby korzystać z funkcji krokowe wykonywanie kodu są takie same dla debuger XSLT, podobnie jak w przypadku programu Visual Studio debuger. Po rozpoczęciu debugowania, debuger XSLT otwiera systemu windows do pokazania wyjściowe dokument wejściowy i XSLT.
+Debuger XSLT może służyć do debugowania, arkusz stylów XSLT lub aplikacji XSLT. Podczas debugowania, można wykonać jednego wiersza kodu naraz, przechodzenie do, pominięcie lub przechodzenie krok po kroku z kodu. Te polecenia, aby korzystać z funkcji przeglądania kodu są takie same jak w przypadku programu Visual Studio w debugerze XSLT debugery. Po rozpoczęciu debugowania, debuger XSLT otwiera systemu windows, aby pokazać, że dokument wejściowy i XSLT danych wyjściowych.
 
 ## <a name="xml-editor"></a>Edytor XML
 
-Można uruchomić debugera w edytorze XML. Dzięki temu można debugować jako projektowania arkusza stylów.
+Można uruchomić debuger w edytorze XML. Dzięki temu można debugować w miarę projektowania arkusza stylów.
 
 ### <a name="to-start-debugging-from-a-style-sheet"></a>Aby rozpocząć debugowanie z arkusza stylów
 
-1. Otwórz arkusz stylów w edytorze XML.
+1. Otworzyć arkusz stylów w edytorze XML.
 
 1. Wybierz **debugowania XSL** z **XML** menu.
 
@@ -38,28 +38,28 @@ Można uruchomić debugera w edytorze XML. Dzięki temu można debugować jako p
 
 1. Wybierz **debugowania XSL** z **XML** menu.
 
-## <a name="xslt-from-other-languages"></a>XSLT z innych języków
+## <a name="xslt-from-other-languages"></a>XSLT przy użyciu innych języków
 
-Można także przejść do XSLT podczas debugowania aplikacji. Po naciśnięciu F11 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> wywołanie, debuger może wykonywanie kodu XSLT.
+Możesz również wejść do XSLT podczas debugowania aplikacji. Po naciśnięciu klawisza F11 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> wywołanie, Debuger można wkroczyć do kodu XSLT.
 
 > [!NOTE]
-> Wykonywanie krok po kroku do XSLT z <xref:System.Xml.Xsl.XslTransform> klasa nie jest obsługiwana. <xref:System.Xml.Xsl.XslCompiledTransform> Klasy jest tylko procesorze XSLT, który obsługuje wykonywanie krok po kroku do XSLT podczas debugowania.
+> Przechodzenie do XSLT z <xref:System.Xml.Xsl.XslTransform> klasy nie jest obsługiwane. <xref:System.Xml.Xsl.XslCompiledTransform> Klasy jest tylko procesora XSLT, który obsługuje Przechodzenie do XSLT podczas debugowania.
 
 ### <a name="to-start-debugging-an-xslt-application"></a>Aby rozpocząć debugowanie aplikacji XSLT
 
-1. Podczas tworzenia wystąpienia <xref:System.Xml.Xsl.XslCompiledTransform> obiekt, ustaw `enableDebug` parametr `true` w kodzie.
+1. Podczas tworzenia wystąpienia <xref:System.Xml.Xsl.XslCompiledTransform> obiektu, należy ustawić `enableDebug` parametr `true` w kodzie.
 
-     Ta wartość informuje procesorze XSLT można utworzyć informacji o debugowaniu podczas kompilowania kodu.
+     Oznacza to, że procesora XSLT można utworzyć informacji debugowania, gdy kod jest kompilowany.
 
-1. Naciśnij klawisz F11, aby wkraczać do kod XSLT.
+1. Naciśnij klawisz F11, aby przejść do kodu XSLT.
 
-     Arkusz stylów XSLT jest ładowany w nowym oknie dokumentu i debuger XSLT jest uruchomiona.
+     Arkusz stylów XSLT jest ładowany w nowym oknie dokumentu, a debuger XSLT jest uruchomiony.
 
      Można również dodać punkt przerwania do arkusza stylów i uruchom aplikację.
 
 ### <a name="example"></a>Przykład
 
-Oto przykład programu w języku C# XSLT. Widoczny jest sposób włączyć debugowanie XSLT.
+Oto przykład programu w języku C# XSLT. Widoczny jest sposób włączyć debugowanie kodu XSLT.
 
 ```csharp
 using System;
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Debugowanie arkusz stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+- [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: Rozpoczynanie pracy z jednostką testowania w programie Visual Studio
+title: Wprowadzenie do testowania w programie Visual Studio jednostek
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,77 +11,77 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117254"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177870"
 ---
-# <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
+# <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
-Definiowanie i Uruchamianie testów jednostek do obsługi kondycji kodu, upewnij się, pokrycie kodu, a także znalezienia błędów i błędy, zanim klienci za pomocą programu Visual Studio.
+Aby zdefiniować i uruchomić testy jednostkowe do utrzymania kondycji kodu, upewnij się, pokrycie kodu i Znajdź błędy i usterek, zanim klienci, należy użyć programu Visual Studio.
 
 ## <a name="create-unit-tests"></a>Tworzenie testów jednostkowych
 
-Utwórz testy jednostkowe i uruchom je często, aby upewnić się, że kod działa prawidłowo.
+Utwórz testy jednostkowe i uruchamiaj je często, aby upewnić się, że Twój kod działa poprawnie.
 
-1. Tworzenie projektu testu jednostki.
+1. Utwórz projekt testów jednostkowych.
 
-   ![Dodaj jednostkowy projekt testowy do rozwiązania](media/createunittest1.png)
+   ![Dodaj projekt testu jednostkowego do rozwiązania](media/createunittest1.png)
 
-1. Nazwa projektu.
+1. Nazwij swój projekt.
 
    ![Szablon projektu testu jednostki](media/createunittest2.png)
 
-   Projekt zostanie dodany do rozwiązania.
+   Projekt jest dodawany do rozwiązania.
 
-   ![Jednostkowy projekt testowy w Eksploratorze rozwiązań](media/createunittest5.png)
+   ![Projekt testów jednostkowych w Eksploratorze rozwiązań](media/createunittest5.png)
 
-1. W jednostkowy projekt testowy Dodaj odwołanie do projektu, który ma zostać przetestowana.
+1. W projekcie testu jednostki Dodaj odwołanie do projektu, który ma zostać przetestowana.
 
-   ![Dodaj odwołanie do projektu testu jednostki](media/createunittest6.png)
+   ![Dodaj odwołanie do projektu testu jednostkowego](media/createunittest6.png)
 
-1. Wybierz projekt, który zawiera kod, który będzie testu.
+1. Wybierz projekt, który zawiera kod, przetestowania.
 
-   ![Wybierz odwołanie do dodania](media/createunittest7.png)
+   ![Wybierz odwołania do dodania](media/createunittest7.png)
 
-1. Kod testu jednostki.
+1. Zakoduj test jednostki.
 
-   ![Dodaj kod, aby z testu jednostkowego](media/createunittest8.png)
+   ![Dodaj kod do testu jednostkowego](media/createunittest8.png)
 
-Można również utworzyć testu jednostkowego klas zastępczych metody z **tworzenia testów jednostkowych** [polecenia](create-unit-tests-menu.md).
+Można również utworzyć testy jednostkowe metoda wycinków z **Utwórz testy jednostkowe** [polecenia](create-unit-tests-menu.md).
 
-![Za pomocą polecenia Create testy jednostkowe](media/createunittestcommand2.png)
+![Za pomocą polecenia Utwórz testy jednostki](media/createunittestcommand2.png)
 
-## <a name="run-unit-tests"></a>Uruchom testy jednostkowe
+## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 
-1. Otwórz Eksploratora testów.
+1. Otwórz **Eksplorator testów**.
 
-   ![W menu Test Otwórz Eksplorator testów](media/rununittest1.png)
+   ![W menu Test Otwórz Eksploratora testów](media/rununittest1.png)
 
-1. Uruchom testy jednostkowe.
+1. Uruchamianie testów jednostkowych.
 
-   ![Uruchom testy jednostkowe w narzędzia Eksplorator testów](media/rununittest2.png)
+   ![Uruchamianie testów jednostkowych w Eksploratorze testów](media/rununittest2.png)
 
-   Można zauważyć, że jednostka testów, które przekazany lub Niepowodzenie w Eksploratorze testów.
+   Możesz zobaczyć testy jednostek zakończone powodzeniem i niepowodzeniem w **Eksplorator testów**.
 
-   ![Przejrzyj wyniki testów jednostkowych w Eksploratorze testów](media/rununittest3.png)
+   ![Przejrzyj wyniki testów jednostek w Eksploratorze testów](media/rununittest3.png)
 
-## <a name="view-live-unit-test-results"></a>Wyświetlanie wyników testu jednostki na żywo
+## <a name="view-live-unit-test-results"></a>Wyświetlanie wyników testów jednostek na żywo
 
-Jeśli używasz MSTest, xUnit lub NUnit framework testowych w Visual Studio 2017 lub nowszej widoczny na żywo wyniki testów jednostkowych.
+Jeśli używasz MSTest, xUnit i NUnit struktura testowania w programie Visual Studio 2017 lub nowszego, zostanie wyświetlony na żywo wyniki testów jednostkowych.
 
 > [!NOTE]
-> Testy jednostkowe na żywo jest tylko dostępne w programie Visual Studio 2017 Enterprise Edition.
+> Testowanie jednostek na żywo jest tylko dostępne w Visual Studio 2017 Enterprise Edition.
 
-1. Włącz testy z jednostkowe na żywo **testu** menu.
+1. Włącz testowanie z jednostek na żywo **testu** menu.
 
    ![Włącz testy jednostkowe na żywo](media/live-test-results-start.png)
 
-1. W oknie edytora kodu należy wyświetlić wyniki testów, jak zapisać i Edycja kodu.
+1. Wyświetl wyniki testów w ramach okna edytora kodu, wpisywania i edytowania kodu.
 
-   ![Wyświetl wyniki testów](media/live-test-results-ui.png)
+   ![Wyświetlanie wyników testów](media/live-test-results-ui.png)
 
 1. Wybierz test wskaźniki wyników, aby uzyskać więcej informacji.
 
@@ -89,72 +89,72 @@ Jeśli używasz MSTest, xUnit lub NUnit framework testowych w Visual Studio 2017
 
 Aby uzyskać więcej informacji, zobacz [testy jednostkowe na żywo](../test/live-unit-testing-intro.md).
 
-## <a name="generate-unit-tests-with-intellitest"></a>Generowanie testów jednostkowych z IntelliTest
+## <a name="generate-unit-tests-with-intellitest"></a>Generowanie testów jednostkowych za pomocą funkcji IntelliTest
 
-Po uruchomieniu IntelliTest, można łatwo Zobacz które testy kończą się niepowodzeniem i Dodaj wszelkie niezbędne kod, aby je naprawić. Można wybrać, które wygenerowane testy do zapisania do projektu testowego, aby zapewnić mechanizm regresji. Jak zmienić swój kod, należy ponownie uruchomić IntelliTest, aby zachować synchronizację ze zmianami kodu wygenerowane testy. Aby dowiedzieć się więcej, zobacz temat [Generowanie testów jednostek dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Po uruchomieniu testów funkcji IntelliTest, można łatwo zobaczyć, testy, które kończą się niepowodzeniem i Dodaj wszelkie niezbędne kod, aby je rozwiązać. Możesz wybrać, które wygenerowanych testów, aby zapisać do projektu testowego, aby zapewnić mechanizm regresji. W przypadku zmiany kodu, należy ponownie uruchomić program IntelliTest w celu synchronizowania wygenerowanych testów wprowadzania zmian w kodzie. Aby dowiedzieć się więcej, zobacz temat [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
-![Generowanie testów jednostkowych z IntelliTest](media/intellitest.png)
+![Generowanie testów jednostkowych za pomocą funkcji IntelliTest](media/intellitest.png)
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
-Użyj Eksploratora testów do uruchamiania testów jednostkowych programu Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorii, filtrowanie listy testów i tworzenia, zapisywania i uruchom listy odtwarzania testów. Można również Debuguj testy i Analizuj pokrycie testu wydajności i kod. Aby dowiedzieć się więcej, zobacz temat [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md).
+Użyj **Eksploratora testów** do uruchamiania testów jednostkowych z Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorie, filtrowanie listy testów, tworzenie, zapisywanie i uruchamianie list odtwarzania testów. Możesz również debugować testy i analizowanie testów wydajność i pokrycie kodu. Aby dowiedzieć się więcej, zobacz temat [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md).
 
-![Uruchamianie testów jednostkowych z Eksploratora testów](media/testexplorer.png)
+![Uruchamianie testów jednostkowych w Eksploratorze testów](media/testexplorer.png)
 
-## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Użyj pokrycie kodu, aby określić, ile kodu jest poddawana testom
+## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
-Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu. Aby dowiedzieć się więcej, zobacz temat [pokrycia kodu używany do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu. Aby dowiedzieć się więcej, zobacz temat [użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-![Aby określić, ile kodu jest poddawana testom korzystanie z pokrycia kodu](media/codecoverage.png)
+![Korzystanie z pokrycia kodu w celu określenia, ile kodu jest poddawana testom](media/codecoverage.png)
 
-## <a name="use-a-different-unit-test-framework"></a>Użyj struktury testowej inną jednostkę
+## <a name="use-a-different-unit-test-framework"></a>Używać różnych testów jednostkowych
 
-Za pomocą platform testów innych firm, takich jak zwiększenie wydajności, Google i nUnit można uruchomić testów jednostkowych programu Visual Studio. Użyj wtyczki dla struktury, że Visual Studio test runner może współpracować z tej struktury.
+Można uruchomić testy jednostkowe w programie Visual Studio, za pomocą platform testowych innych firm, takich jak zwiększenie wydajności, Google i nUnit. Użyj wtyczki dla struktury modułu uruchamiającego testy w tym Visual Studio może więc pracować z tą strukturą.
 
-Poniżej przedstawiono kroki, aby włączyć platform testów do innych części:
+Poniżej przedstawiono kroki, aby włączyć platform testowych innych części:
 
-1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje** na pasku menu.
+1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje** z paska menu.
 
-1. W **rozszerzenia i aktualizacje** okna dialogowego rozwiń **Online** kategorii, a następnie **Visual Studio Marketplace**. Następnie wybierz pozycję **narzędzia** > **testowanie**.
+1. W **rozszerzenia i aktualizacje** okna dialogowego rozwiń **Online** kategorii i następnie **Visual Studio Marketplace**. Następnie wybierz **narzędzia** > **testowania**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
 1. Wybierz framework lub chcesz zainstalować, a następnie wybierz kartę **Pobierz**.
 
-1. Tworzenie projektu biblioteki klas, a następnie dodaj go do rozwiązania.
+1. Utwórz projekt biblioteki klas i dodaj go do rozwiązania.
 
-   ![Nazwa projektu biblioteki klas i dodaj go](media/create3rdpartyunittest3.png)
+   ![Nazwij projekt biblioteki klas i dodaj go](media/create3rdpartyunittest3.png)
 
-1. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**wybierz projektu biblioteki klas, a następnie wybierz pozycję **Zarządzaj pakietami NuGet** menu kliknij prawym przyciskiem myszy lub kontekstu.
+1. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**, wybierz projekt biblioteki klas, a następnie wybierz **Zarządzaj pakietami NuGet** menu kliknij prawym przyciskiem myszy lub kontekstu.
 
-   ![Zarządzanie pakietami NuGet, aby zainstalować dodatek typu plug-in](media/create3rdpartyunittest3a.png)
+   ![Zarządzaj pakietami NuGet, aby zainstalować dodatek typu plug-in](media/create3rdpartyunittest3a.png)
 
-   [NuGet](https://www.nuget.org/) to rozszerzenie programu Visual Studio, która umożliwia dodawanie i aktualizowanie bibliotek i narzędzi dla projektów.
+   [NuGet](https://www.nuget.org/) to rozszerzenie programu Visual Studio, który służy do dodawania i aktualizowania bibliotek i narzędzi dla projektów.
 
-1. W **Menedżera pakietów NuGet** okna, wyszukaj i wybierz wtyczki, a następnie wybierz **zainstalować**.
+1. W **Menedżera pakietów NuGet** okna, wyszukaj i wybierz dodatek, a następnie wybierz **zainstalować**.
 
-   ![Zainstaluj z framework 3rd firm](media/create3rdpartyunittest4.png)
+   ![Zainstaluj preferowanej struktury firm 3](media/create3rdpartyunittest4.png)
 
-   Platformę odwołuje się do projektu.
+   Struktura ma odwołania w projekcie.
 
-   ![Dokumentacja dla platformy testów jednostkowych firmy 3rd została dodana do rozwiązania](media/create3rdpartyunittest6.png)
+   ![Odwołanie do testów jednostkowych innych firm 3 zostanie dodany do rozwiązania](media/create3rdpartyunittest6.png)
 
-1. Z projektu biblioteki klas **odwołania** węzła, wybierz opcję **Dodaj odwołanie**.
+1. W projekcie biblioteki klas **odwołania** węzeł **Dodaj odwołanie**.
 
    ![Dodaj odwołanie do projektu](media/createunittest6.png)
 
-1. W **Menedżera odwołań** oknie dialogowym Wybierz projekt, który zawiera kod przetestujesz.
+1. W **Menadżer odwołań** okna dialogowego Wybierz projekt, który zawiera kod, przetestowania.
 
-   ![Wybierz projekt kodu do testowania](media/createunittest7.png)
+   ![Wybierz projekt kodu do przetestowania](media/createunittest7.png)
 
-1. Kod testu jednostki.
+1. Zakoduj test jednostki.
 
-   ![Dodaj kod, aby z testu jednostkowego](media/create3rdpartyunittest7.png)
+   ![Dodaj kod do testu jednostkowego](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
-* [Generowanie testów z IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Uruchamianie testów za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)
-* [Określić pokrycie kodu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Podnoszenie jakości kodu](improve-code-quality.md)
+* [Generuj testy z funkcją IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Uruchom testy z Eksploratora testów](run-unit-tests-with-test-explorer.md)
+* [Określić pokrycia kodu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Poprawianie jakości kodu](improve-code-quality.md)

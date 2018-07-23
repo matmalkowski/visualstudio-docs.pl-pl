@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175333"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177347"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 
@@ -185,7 +185,7 @@ Możesz zatwierdzić oczekujące zmiany do zestawu danych, wywołując <xref:Sys
     > [!NOTE]
     > Można zapobiec automatycznego zatwierdzania zmian po wywołaniu przez adapter `Fill` metody, ustawiając `AcceptChangesDuringFill` właściwości karty do `false`. Jeśli jest równa `false`, a następnie <xref:System.Data.DataRow.RowState%2A> każdego wiersza, który jest wstawiany podczas wypełnienia ustawiono <xref:System.Data.DataRowState.Added>.
 
-- Po wysłaniu zmian w zestawie do innego procesu, takich jak usługi XML sieci Web.
+- Po wysłaniu zmian w zestawie do innego procesu, takich jak usługi sieci web XML.
 
     > [!CAUTION]
     > Zatwierdzanie zmian w ten sposób usuwa wszystkie informacje o zmianach. Nie zmiany aż po zakończenia wykonywania operacji, które wymagają aplikacji w taki sposób, aby dowiedzieć się, jakie zmiany zostały wprowadzone w zestawie danych.

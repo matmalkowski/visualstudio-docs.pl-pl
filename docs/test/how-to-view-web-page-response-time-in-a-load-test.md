@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35676230"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178296"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony Web w czasie testu obciążenia za pomocą analizatora testów obciążenia
 
-Czas potrzebny na każdej stronie sieci Web załadować jest znany jako *czas odpowiedzi*. Podczas tworzenia testu wydajności sieci Web, można ustawić docelowy czas odpowiedzi dla każdego żądania strony sieci Web w teście wydajności sieci Web.
+Czas potrzebny na każdej stronie sieci web załadować jest znany jako *czas odpowiedzi*. Podczas tworzenia testu wydajności sieci web, można ustawić docelowy czas odpowiedzi dla każdego żądania strony sieci web w teście wydajności sieci web.
 
-Po uruchomieniu testu wydajności sieci Web przy dużym obciążeniu w teście obciążeniowym, możliwe będzie analizowanie następujących informacji dla każdej strony:
+Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście obciążeniowym, możliwe będzie analizowanie następujących informacji dla każdej strony:
 
 -   Średni czas odpowiedzi dla strony.
 
 -   Procent iteracji testowych, które spełniają docelowy czas odpowiedzi dla strony.
 
--   Czasy reakcji stron sieci Web można analizować za pomocą widoku tabeli lub widoku wykresu w analizatorze testu obciążenia:
+-   Czasy reakcji stron sieci web można analizować za pomocą widoku tabeli lub widoku wykresu w analizatorze testu obciążenia:
 
--   Analizowanie czasy reakcji stron sieci Web w widoku tabeli
+-   Analizowanie czasy reakcji stron sieci web w widoku tabeli
 
--   Analizowanie czasy reakcji stron sieci Web w widoku wykresu
+-   Analizowanie czasy reakcji stron sieci web w widoku wykresu
 
 ## <a name="view-response-time-data-in-a-table"></a>Dane czasu odpowiedzi widok tabeli
 
@@ -47,11 +47,11 @@ Po uruchomieniu testu wydajności sieci Web przy dużym obciążeniu w teście o
 
     |Nagłówek kolumny|Opis|
     |-|-|
-    |**Strona**|Nazwa strony sieci Web.|
-    |**Scenariusz**|Nazwa scenariusza. Ważne, jeśli masz więcej niż jeden scenariusz w teście wydajności sieci Web.|
-    |**Test**|Nazwa testu wydajności sieci Web. Ważne, jeśli masz więcej niż jeden test wydajności sieci Web w teście obciążenia.|
+    |**Strona**|Nazwa strony sieci web.|
+    |**Scenariusz**|Nazwa scenariusza. Ważne, jeśli masz więcej niż jeden scenariusz w teście wydajności sieci web.|
+    |**Test**|Nazwa testu wydajności sieci web. Ważne, jeśli masz więcej niż jeden wydajności sieci web, testu w teście obciążenia.|
     |**Sieci**|Typ sieci.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Łączna liczba**|Całkowita liczba żądań, które zostały wprowadzone dla strony sieci Web. Jest to suma dla wszystkich iteracji w teście obciążeniowym.|
+    |**Łączna liczba**|Całkowita liczba żądań, które zostały wprowadzone dla strony sieci web. Jest to suma dla wszystkich iteracji w teście obciążeniowym.|
     |**Zapisz**|Średniego czasu odpowiedzi strony.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
     |**Min**|Czas odpowiedzi strony minimalnej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
     |**Mediana**|Mediana czasu odpowiedzi strony na.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
@@ -60,9 +60,9 @@ Po uruchomieniu testu wydajności sieci Web przy dużym obciążeniu w teście o
     |**99%**|99. percentylu na czas odpowiedzi. Oznacza to, że 99% stron szybciej niż ta liczba wysłanych jako odpowiedzi, a 1% stron odpowiedzi wolniej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
     |**Maksymalna**|Strona maksymalny czas odpowiedzi.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
     |**Odchylenie standardowe**|Domyślnie nie są zbierane dane odchylenia standardowego. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone dla strony sieci Web.|
-    |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci Web.|
-    |**% Osiągnięcia celu**|Procent żądań, które zostały wprowadzone na stronie sieci Web, że zostały spełnione cel dotyczący czasu odpowiedzi.|
+    |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone dla strony sieci web.|
+    |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci web.|
+    |**% Osiągnięcia celu**|Procent żądań, które zostały wprowadzone na stronie sieci web, że zostały spełnione cel dotyczący czasu odpowiedzi.|
 
  Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
@@ -76,7 +76,7 @@ Można również wyświetlić dane czasu odpowiedzi na wykresie, aby zobaczyć, 
 
 2.  W **liczniki** okna, rozwiń węzeł scenariusz, w którym interesuje Cię (na przykład `Scenario1`).
 
-3.  Rozwiń węzeł testu wydajności sieci Web, w którym interesuje Cię.
+3.  Rozwiń węzeł testu wydajności sieci web, w którym interesuje Cię.
 
 4.  Rozwiń węzeł **stron**.
 

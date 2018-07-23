@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 233088958605c5d03f5ad5ce932b63868729e6c0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf333c5339ce9a4d6046fb5156e37157004491b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945510"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177883"
 ---
 # <a name="assignculture-task"></a>AssignCulture — zadanie
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kulturze identyfikatora. Na przykład, nazwa_pliku *Form1.fr-fr.resx* ma identyfikator "fr-fr", embedded kultury, dlatego to zadanie powoduje wygenerowanie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie tworzy także listę nazw plików z kulturą usunięte z nazwy pliku.  
@@ -74,10 +74,10 @@ To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg
   
 |Kolekcja elementów|Spis treści|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (Brak dodatkowych metadanych)|  
-|`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (Brak dodatkowych metadanych)|  
-|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`nie dodatkowe metadane)|  
+|`OutAssignedFiles`|*MyResource1.fr.resx* (kultury = "fr")<br /><br /> *MyResource2.XX.resx* (nie dodatkowe metadane)|  
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (kultury = "fr")|  
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (nie dodatkowe metadane)|  
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (kultury = "fr")<br /><br /> *MyResource2.XX.resx* (nie dodatkowe metadane)|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   

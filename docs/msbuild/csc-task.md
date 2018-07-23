@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945887"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177220"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołączanych dynamicznie (*.dll* plików), lub modułów kodu (*.netmodule* pliki). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -60,12 +60,12 @@ Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołą
 |`ModuleAssemblyName`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę zestawu, który będzie należeć tego modułu.|  
 |`NoConfig`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, informuje kompilator, nie można skompilować przy użyciu *csc.rsp* pliku. Aby uzyskać więcej informacji, zobacz [- noconfig (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
 |`NoLogo`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, Pomija wyświetlanie informacji o transparencie kompilatora. Aby uzyskać więcej informacji, zobacz [- nologo (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option).|  
-|`NoStandardLib`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uniemożliwia Importuj biblioteki mscorlib.dll, która określa całą przestrzeń nazw System. Użyj tego parametru, jeśli chcesz zdefiniować lub tworzyć własne systemową przestrzenią nazw i obiektów. Aby uzyskać więcej informacji, zobacz [- nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
+|`NoStandardLib`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uniemożliwia importowania *mscorlib.dll*, która określa całą przestrzeń nazw System. Użyj tego parametru, jeśli chcesz zdefiniować lub tworzyć własne systemową przestrzenią nazw i obiektów. Aby uzyskać więcej informacji, zobacz [- nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
 |`NoWin32Manifest`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, nie dołączaj domyślny manifest Win32.|  
 |`Optimize`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, włącza optymalizacje. Jeśli `false`, wyłącza optymalizacje. Aby uzyskać więcej informacji, zobacz [-Optymalizuj (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa nazwę pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [-out (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
 |`OutputRefAssembly`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę pliku wyjściowego zestawu odwołania. Aby uzyskać więcej informacji, zobacz [- opcji refout (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
-|`PdbFile`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę pliku informacji debugowania. Domyślną nazwą jest nazwa pliku wyjściowego z rozszerzeniem .pdb.|  
+|`PdbFile`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę pliku informacji debugowania. Domyślna nazwa to nazwa pliku wyjściowego z *.pdb* rozszerzenia.|  
 |`Platform`|Opcjonalnie `String` parametru.<br /><br /> Określa platformę procesora, który ma zostać użyty przez plik wyjściowy. Ten parametr może mieć wartość `x86`, `x64`, lub `anycpu`. Wartość domyślna to `anycpu`. Aby uzyskać więcej informacji, zobacz [-platform (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Powoduje, że zadanie zaimportować informacje typu publicznego z określonych elementów do bieżącego projektu. Aby uzyskać więcej informacji, zobacz [— odwołanie (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Można określić [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] odwołania aliasu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku, dodając metadanych `Aliases` do oryginalnego elementu "Odwołanie". Na przykład można ustawić aliasu "LS1" w wierszu polecenia następujące Csc:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> należy użyć:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Osadza [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zasobów do pliku wyjściowego.<br /><br /> Pozycji przekazanych do tego parametru może zawierać wpisy opcjonalne metadane, o nazwie `LogicalName` i `Access`. `LogicalName` odnosi się do `identifier` parametru `/resource` przełączyć, i `Access` odpowiada `accessibility-modifier` parametru. Aby uzyskać więcej informacji, zobacz [-resource (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
@@ -78,9 +78,9 @@ Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołą
 |`WarningLevel`|Opcjonalnie `Int32` parametru.<br /><br /> Określa poziom ostrzeżeń kompilatora do wyświetlenia. Aby uzyskać więcej informacji, zobacz [-warn (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).|  
 |`WarningsAsErrors`|Opcjonalnie `String` parametru.<br /><br /> Określa listę ostrzeżeń do traktowania jako błędy. Aby uzyskać więcej informacji, zobacz [- warnaserror (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Ten parametr zastępuje `TreatWarningsAsErrors` parametru.|  
 |`WarningsNotAsErrors`|Opcjonalnie `String` parametru.<br /><br /> Określa listę ostrzeżeń, które nie są traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [- warnaserror (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Ten parametr jest przydatna, jeśli `TreatWarningsAsErrors` parametr ma wartość `true`.|  
-|`Win32Icon`|Opcjonalnie `String` parametru.<br /><br /> Wstawia plik .ico w zestawie, który nadaje plikowi wyjściowemu pożądany wygląd w Eksploratorze plików. Aby uzyskać więcej informacji, zobacz [-win32icon (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
+|`Win32Icon`|Opcjonalnie `String` parametru.<br /><br /> Wstawia *.ico* pliku w zestawie, który nadaje plikowi wyjściowemu pożądany wygląd w **Eksploratora plików**. Aby uzyskać więcej informacji, zobacz [-win32icon (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
 |`Win32Manifest`|Opcjonalnie `String` parametru.<br /><br /> Określa manifest Win32 do uwzględnienia.|  
-|`Win32Resource`|Opcjonalnie `String` parametru.<br /><br /> Wstawia plik zasobów (.res) Win32 w pliku wyjściowym. Aby uzyskać więcej informacji, zobacz [-win32res (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
+|`Win32Resource`|Opcjonalnie `String` parametru.<br /><br /> Wstawia zasób Win32 (*.res*) pliku w pliku wyjściowym. Aby uzyskać więcej informacji, zobacz [-win32res (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Uwagi  
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z `Microsoft.Build.Tasks.ManagedCompiler` klasy, która dziedziczy po elemencie <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  

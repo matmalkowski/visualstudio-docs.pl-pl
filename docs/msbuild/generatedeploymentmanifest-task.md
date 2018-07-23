@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 470e08454d39bf63542a63359359b1577e70f5b3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: accf8ffb81b28451f7561b027e4a11fe5a59b202
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945360"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177607"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest — zadanie
 
@@ -41,8 +41,8 @@ W poniższej tabeli opisano parametry `GenerateDeploymentManifest` zadania.
 |`CreateDesktopShortcut`|Opcjonalnie `Boolean` parametru.<br /><br /> W przypadku opcji true, tworzona jest ikona na pulpicie podczas instalacji aplikacji ClickOnce.|
 |`DeploymentUrl`|Opcjonalnie `String` parametru.<br /><br /> Określa lokalizację aktualizacji dla aplikacji. Jeśli ten parametr nie jest określony, lokalizacja aktualizacji nie jest zdefiniowana dla aplikacji. Jednak jeśli `UpdateEnabled` parametr jest `true`, należy określić zaktualizowaną lokalizację. Określona wartość powinna być w pełni kwalifikowany adres URL lub ścieżką UNC.|
 |`Description`|Opcjonalnie `String` parametru.<br /><br /> Określa opcjonalny opis dla aplikacji.|
-|`DisallowUrlActivation`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja powinna zostać uruchomiona automatycznie po otwarciu go przy użyciu adresu URL. Jeśli ten parametr jest `true`, aplikację można uruchomić tylko z Start menu. Wartość domyślna tego parametru to `false`. Wejście to stosuje się tylko wtedy, gdy `Install` wartość parametru jest `true`.|
-|`EntryPoint`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla wygenerowanego zestawu manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu wdrażania, dane wejściowe określają [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji.<br /><br />Jeśli `EntryPoint` parametr zadania nie jest określony, `<customHostSpecified>` tag jest wstawiany jako element podrzędny elementu `<entryPoint>` tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Za pomocą poniższej procedury, można dodać zależności DLL do manifestu aplikacji:<br /><br /> 1.  Rozpoznaj odwołania zestawu z wywołaniem <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i samego montażu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekazać zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
+|`DisallowUrlActivation`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja powinna zostać uruchomiona automatycznie po otwarciu go przy użyciu adresu URL. Jeśli ten parametr jest `true`, aplikację można uruchomić tylko z **Start** menu. Wartość domyślna tego parametru to `false`. Wejście to stosuje się tylko wtedy, gdy `Install` wartość parametru jest `true`.|
+|`EntryPoint`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla wygenerowanego zestawu manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu wdrażania, dane wejściowe określają [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji.<br /><br />Jeśli `EntryPoint` parametr zadania nie jest określony, `<customHostSpecified>` tag jest wstawiany jako element podrzędny elementu `<entryPoint>` tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Za pomocą poniższej procedury, można dodać zależności DLL do manifestu aplikacji:<br /><br /> 1.  Rozpoznaj odwołania zestawu z wywołaniem <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i samego montażu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekazać zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
 |`ErrorReportUrl`|Opcjonalnie <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Określa adres URL strony sieci web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce.|
 |`InputManifest`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument danych wejściowych XML, która będzie służyć jako podstawa do generatora manifestu. Dzięki temu dane strukturalnych, takich jak niestandardowe definicje manifestu są odzwierciedlane w manifeście danych wyjściowych. Element główny dokumentu XML musi być zbiorem węzła trustinfo w obszarze nazw asmv1.|
 |`Install`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja jest zainstalowaną aplikacją lub aplikacją tylko w trybie online. Jeśli ten parametr jest `true`, aplikacja zostanie zainstalowana na użytkownika **Start** menu i można go usunąć za pomocą **apletu Dodaj lub usuń programy** okno dialogowe. Jeśli ten parametr jest `false`, aplikacja jest przeznaczona do użytku online ze strony sieci web. Wartość domyślna tego parametru to `true`.|

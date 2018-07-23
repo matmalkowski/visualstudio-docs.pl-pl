@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0bf21ec99bd7b98ce90cd49c3edf5e3738c25b1
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978401"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178637"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
@@ -64,7 +64,7 @@ Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mog�
 |SpecificSolutionName|Nazwa rozwiązania. W razie wybrania opcji „Utwórz katalog rozwiązania”, `SpecificSolutionName` ma nazwę rozwiązania. Jeżeli „Utwórz katalog rozwiązania” nie jest zaznaczone, `SpecificSolutionName` jest pusta.|
 |USERDOMAIN|Bieżąca domena użytkownika.|
 |Nazwa użytkownika|Bieżąca nazwa użytkownika.|
-|webnamespace|Nazwa bieżącej witryny sieci web. Ten parametr jest używany w szablonie formularza sieci web, aby zagwarantować unikalne nazwy klas. W przypadku witryny sieci web w katalogu głównym serwera sieci web, ten parametr szablonu jest rozpoznawany jako katalog główny serwera sieci web.|
+|webnamespace|Nazwa bieżącej witryny sieci Web. Ten parametr jest używany w szablonie formularza sieci web, aby zagwarantować unikalne nazwy klas. W przypadku witryny sieci Web w katalogu głównym serwera sieci web, ten parametr szablonu jest rozpoznawany jako katalog główny serwera sieci web.|
 |Rok|Bieżący rok w formacie RRRR.|
 
 > [!NOTE]

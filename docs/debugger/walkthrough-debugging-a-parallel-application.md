@@ -1,6 +1,6 @@
 ---
 title: Debugowanie aplikacji równoległych | Dokumentacja firmy Microsoft
-description: Debugowanie za pomocą równoległych zadań i stosów równoległych systemu windows w programie Visual Studio
+description: Debugowanie za pomocą okna zadań równoległych i stosów przetwarzania równoległego w programie Visual Studio
 ms.custom: ''
 ms.date: 03/22/2018
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 055abb1f1c21dd570df954c80ff78a7d926ba23f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927298"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177308"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Wskazówki: Debugowanie aplikacji równoległych w programie Visual Studio
-Ten przewodnik przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległych. Te okna ułatwić zrozumienie i sprawdź zachowania w czasie wykonywania kod, który używa [zadań biblioteki równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punktów przerwania. Po dzieli kodu, wskazówki przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows do zbadania go.  
+Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
   
- Ten przewodnik zawiera następujące zadania:  
+ Ten przewodnik zawiera wskazówki te zadania:  
   
 -   Jak wyświetlić stosy wywołań wszystkich wątków w jednym widoku.  
   
@@ -42,36 +42,36 @@ Ten przewodnik przedstawia sposób użycia **zadań równoległych** i **stosów
   
 -   Jak wyświetlić stosy wywołań rzeczywistych zadań zamiast wątków.  
   
--   Jak można nawigować do kodu z **zadań równoległych** i **stosów równoległych** systemu windows.  
+-   Jak nawigować do kodu ze **zadań równoległych** i **stosów równoległych** systemu windows.  
   
--   Jak windows radzenia sobie z skalowania za pomocą grupowania, powiększanie i inne powiązane funkcje.  
+-   Jak windows poradzić sobie z skalę za pomocą grupowania, powiększania i inne powiązane funkcje.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- W tym przewodniku założono, że **tylko mój kod** jest włączona (ona jest domyślnie włączona w nowszych wersjach programu Visual Studio). Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **włączyć Tylko mój kod (tylko zarządzane)**. Jeśli ta funkcja nie jest ustawiona, można nadal używać tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
+ W tym przewodniku założono, że **tylko mój kod** jest włączona (jest włączony domyślnie w nowszych wersjach programu Visual Studio). Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzła, wybierz opcję **ogólne**, a następnie wybierz **Włącz Tylko mój kod (tylko zarządzany)**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
   
-## <a name="c-sample"></a>Przykład C#  
- Użycie próbki C#, w tym przewodniku założono również, że kod zewnętrzny jest ukryty. Do przełączania, czy kod zewnętrzny jest wyświetlany, kliknij prawym przyciskiem myszy **nazwa** nagłówek tabeli **stos wywołań** okna, a następnie zaznacz lub usuń zaznaczenie **Pokaż kod zewnętrzny**. Jeśli ta funkcja nie jest ustawiona, można nadal używać tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
+## <a name="c-sample"></a>Przykładowy języka C#  
+ Użycie przykładowy języka C#, w tym przewodniku również założenie, że kod zewnętrzny jest ukryty. Do wyświetlania i ukrywania kod zewnętrzny jest wyświetlany, kliknij prawym przyciskiem myszy **nazwa** nagłówek tabeli **stos wywołań** okna, a następnie zaznacz lub usuń zaznaczenie **Pokaż kod zewnętrzny**. Jeśli ta funkcja nie jest ustawiona, nadal można korzystać z tego przewodnika, ale wyniki mogą się różnić od przedstawionych na ilustracjach.  
   
 ## <a name="c-sample"></a>Przykład w języku C++  
- Jeśli używasz próbka C++, możesz zignorować odwołania do zewnętrznego kodu w tym temacie. Kod zewnętrzny dotyczy tylko przykładowe C#.  
+ Jeśli używasz przykładowej języka C++, możesz zignorować odwołania do zewnętrznego kodu w tym temacie. Kod zewnętrzny dotyczy tylko przykładowy języka C#.  
   
 ## <a name="illustrations"></a>Ilustracje  
- Na ilustracjach w tym temacie rejestrowane na komputerze czterordzeniowe próbki C#. Mimo że inne konfiguracje, można użyć w tym przewodniku, ilustracje mogą się różnić od wyświetlanych na komputerze.  
+ Ilustracje w tym temacie są rejestrowane na komputerze czterordzeniowe działa aplikacja przykładowa języka C#. Mimo, że inne konfiguracje można użyć w celu przeprowadzenia tego instruktażu, ilustracje mogą różnić się od wyświetlanych na komputerze.  
   
-## <a name="creating-the-sample-project"></a>Tworzenie projektu próbki  
- Przykładowy kod w tym przewodniku jest dla aplikacji, która nie działa. Celem jest tak, aby zrozumieć sposób debugowanie aplikacji równoległych przy użyciu narzędzia systemu windows.  
+## <a name="creating-the-sample-project"></a>Tworzenie przykładowego projektu  
+ Przykładowy kod w tym instruktażu jest dla aplikacji, która nie wykonuje żadnych działań. Celem jest po prostu, aby zrozumieć, jak używać okien narzędzi do debugowania aplikacji równoległej.  
   
-#### <a name="to-create-the-sample-project"></a>Aby utworzyć przykładowy projekt  
+#### <a name="to-create-the-sample-project"></a>Aby utworzyć projekt przykładowy  
   
-1.  W programie Visual Studio na **pliku** menu wskaż **nowy** , a następnie kliknij przycisk **projektu**.  
+1.  W programie Visual Studio na **pliku** menu wskaż **New** a następnie kliknij przycisk **projektu**.  
   
-2.  W **zainstalowane szablony** okienku, wybierz opcję Visual C#, Visual Basic lub Visual C++. W przypadku języków zarządzanego upewnij się, że [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest wyświetlana w polu framework.  
+2.  W **zainstalowane szablony** okienku wybierz opcję Visual C#, Visual Basic lub Visual C++. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest wyświetlana w polu framework.  
   
-3.  Wybierz **aplikacji konsoli** , a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, która jest ustawiona domyślnie.  
+3.  Wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.  
   
-4.  Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usuń jego zawartość w celu utworzenia pliku kodu puste.  
+4.  Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.  
   
-5.  Wklej następujący kod do wybrany język do pliku kodu puste.  
+5.  Wklej następujący kod w języku wybranym do pliku kodu pusty.  
   
  [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
  [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
@@ -79,226 +79,226 @@ Ten przewodnik przedstawia sposób użycia **zadań równoległych** i **stosów
   
 1.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
   
-2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.  
+2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-     Zwróć uwagę, że istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładowym C++) w związku z tym nie trzeba wstawić punktów przerwania; tylko działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
+     Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Przy użyciu równoległe stosów okna: widoku wątków  
- Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**. Poczekaj na pierwszy punkt przerwania do trafiony.  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Za pomocą równoległych stosów okna: widoku wątków  
+ Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**. Poczekaj, aż pierwszy punkt przerwania, aby zostanie osiągnięty.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Aby wyświetlić stos wywołań jest jeden wątek  
   
-1.  Na **debugowania** menu wskaż **Windows** , a następnie kliknij przycisk **wątków**. Dock **wątków** okna w dolnej części programu Visual Studio.  
+1.  Na **debugowania** menu wskaż **Windows** a następnie kliknij przycisk **wątków**. Zadokuj **wątków** okna w dolnej części programu Visual Studio.  
   
-2.  Na **debugowania** menu wskaż **Windows** , a następnie kliknij przycisk **stos wywołań**. Dock **stos wywołań** okna w dolnej części programu Visual Studio.  
+2.  Na **debugowania** menu wskaż **Windows** a następnie kliknij przycisk **stos wywołań**. Zadokuj **stos wywołań** okna u dołu Visual Studio.  
   
-3.  Kliknij dwukrotnie wątek **wątków** okno do bieżącego. Bieżące wątki ma żółta strzałka. Po zmianie bieżącego wątku, jego stos wywołań jest wyświetlany w **stos wywołań** okna.  
+3.  Kliknij dwukrotnie wątek na **wątków** okno do bieżącego. Wątki bieżącego mają żółta strzałka. Po zmianie bieżącego wątku, stos wywołań jest wyświetlany w **stos wywołań** okna.  
   
-#### <a name="to-examine-the-parallel-stacks-window"></a>Aby sprawdzić okna stosów równoległych  
+#### <a name="to-examine-the-parallel-stacks-window"></a>Aby sprawdzić z okna stosów równoległych  
   
-1.  Na **debugowania** menu wskaż **Windows** , a następnie kliknij przycisk **stosów równoległych**. Upewnij się, że **wątków** jest zaznaczone pole w lewym górnym rogu.  
+1.  Na **debugowania** menu wskaż **Windows** a następnie kliknij przycisk **stosów równoległych**. Upewnij się, że **wątków** jest zaznaczona w polu w lewym górnym rogu.  
   
-     Za pomocą **stosów równoległych** okna, można wyświetlić wiele stosy wywołań jednocześnie w jednym widoku. Na poniższej ilustracji pokazano **stosów równoległych** okna powyżej **stos wywołań** okna.  
+     Za pomocą **stosów równoległych** okna, można wyświetlić wiele stosy wywołań w tym samym czasie w jednym widoku. Poniższa ilustracja przedstawia **stosów równoległych** okna powyżej **stos wywołań** okna.  
   
      ![Widok okna stosów równoległych wątków](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
   
-     Stos wywołań wątku głównego pojawia się w jednym polu i stosy wywołań na inne wątki cztery są pogrupowane w innym polu. Cztery wątki są grupowane razem, ponieważ ich ramek stosu używają tego samego kontekstów metody; oznacza to, że są one w tej samej metody: `A`, `B`, i `C`. Do widoku wątków identyfikatorów i nazw wątków, które współużytkują tego samego pola, umieść kursor nad w tym polu nagłówka (**4 wątków**). Bieżący wątek jest wyświetlane wytłuszczonym drukiem.  
+     Stos wywołań wątku głównego, który pojawia się w jednym z pól i stosy wywołań cztery wątki są grupowane w innym polu. Cztery wątki są zgrupowane razem, ponieważ ich ramek stosu współużytkują ten sam kontekst metody; oznacza to, że znajdują się w tej samej metody: `A`, `B`, i `C`. Do widoku wątku identyfikatorów i nazw wątki, które współużytkują tego samego pola, umieść kursor w tym polu nagłówka (**4 wątków**). Bieżący wątek jest wyświetlany czcionką pogrubioną.  
   
      ![Etykietka narzędzia, pokazujący wątku identyfikatorów i nazw](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
   
-     Żółta strzałka wskazuje ramki stosu active bieżącego wątku.
+     Żółta strzałka wskazuje aktywną ramkę stosu bieżącego wątku.
   
-     Można ustawić ilość szczegółów do wyświetlenia ramek stosu (**nazwy modułu**, **typy parametrów**, **nazwy parametrów**, **wartości parametrów**, **Numery wierszy** i **przesunięcia bajtów**) klikając prawym przyciskiem myszy **stos wywołań** okna.  
+     Możesz ustawić ilość szczegółów, aby pokazać ramek stosu (**nazwy modułów**, **typy parametrów**, **nazwy parametrów**, **wartości parametrów**, **Numery wierszy** i **przesunięcia bajtów**) klikając prawym przyciskiem myszy **stos wywołań** okna.  
   
-     Niebieskie wyróżnienie wokół pola wskazuje, czy bieżący wątek jest częścią tego pola. Bieżący wątek jest również wskazywane przez ramki stosu pogrubienia w etykietce narzędzia. Po dwukrotnym kliknięciu wątku głównego okna wątki, można zaobserwować, który niebieskie wyróżnienie w **stosów równoległych** okna przenosi odpowiednio.  
+     Niebieskie podświetlenie wokół pola wskazuje, czy bieżący wątek jest częścią tego pola. Ramki stosu pogrubienia w etykietce narzędzia również wskazuje bieżącego wątku. Jeśli klikniesz dwukrotnie wątek główny w oknie wątki, można zaobserwować, że niebieskie podświetlenie w **stosów równoległych** okna przenosi się odpowiednio.  
   
-     ![Wyróżnione wątku głównego okna stosów równoległych](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")  
+     ![Wyróżnione wątek główny w okna stosów równoległych](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")  
   
-#### <a name="to-resume-execution-until-the-second-breakpoint"></a>Aby wznowić wykonywanie do drugiego punktu przerwania  
+#### <a name="to-resume-execution-until-the-second-breakpoint"></a>Aby wznowić wykonywanie aż do drugiego punktu przerwania  
   
-1.  Aby wznowić wykonywanie do momentu drugi punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**. Na poniższej ilustracji przedstawiono drzewa wątku na drugi punkt przerwania.  
+1.  Aby wznowić wykonywanie do momentu drugi punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**. Poniższa ilustracja przedstawia drzewo wątku na drugi punkt przerwania.  
   
      ![Okno stosów równoległych, który zawiera wiele gałęzi](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")  
   
-     W pierwszym punktem przerwania wszystkie cztery wątki próby z S.A S.B S.C metod. Czy informacje są nadal widoczny w **stosów równoległych** okna, ale cztery wątki osiągnięcia postępu dalej. Jeden z nich nadal S.D, a następnie PD Inny nadal S.F, S.G i S.H. Dwa inne nadal S.I i S.J oraz z Brak jednej z nich próby S.K i innych nadal zewnętrznego kodu innych użytkowników.  
+     W pierwszym punkcie przerwania wszystkie cztery wątki zmieniał się od S.A do S.B S.C metod. Informacji o nadal widoczne w **stosów równoległych** okna, ale cztery wątki osiągnięcia postępu dalej. Jeden z nich nadal S.D, a następnie Południowowschodnia Inny ciąg dalszy S.F S.G oraz S.H. Dwie pozostałe nadal S.I i S.J oraz z jednej dla jednej z nich próby S.K i innych nadal kod zewnętrzny niezwiązanych z użytkownikiem.  
   
-     Aktywuj przez pole nagłówka, na przykład **1 wątku** lub **2 wątkach**, aby wyświetlić wątku identyfikatory wątków. Można umieść kursor nad ramek stosu, aby zobaczyć wątku identyfikatorów oraz inne szczegóły ramki. Niebieskie wyróżnienie wskazuje bieżący wątek i żółta strzałka wskazuje ramki stosu active bieżącego wątku.  
+     Możesz umieścić kursor pole nagłówka, na przykład **1 wątek** lub **2 wątkach**, aby wyświetlić identyfikatory wątków wątek. Możesz umieścić kursor ramek stosu, aby wyświetlić identyfikatory wątków oraz inne szczegóły ramek. Niebieskie podświetlenie oznacza bieżący wątek, a żółta strzałka wskazuje aktywną ramkę stosu bieżącego wątku.  
   
-     Ikona ręczników wątków (interweaved wierszy) wskazuje ramek stosu aktywnych wątków innych niż bieżące. W **stos wywołań** okna, kliknij dwukrotnie S.B można przełączać ramki. **Stosów równoległych** okna wskazuje bieżącą ramkę stosu bieżącego wątku, korzystając z ikony zielony zakrzywioną strzałką.  
+     Ikona ręczników wątków (interweaved wierszy) wskazują ramek stosu active nieaktualnych wątków. W **stos wywołań** okna, kliknij dwukrotnie S.B na przełączanie ramek. **Stosów równoległych** okno wskazuje bieżącej ramki stosu w bieżącym wątku, przy użyciu ikony zielony zakrzywioną strzałką.  
   
-     W **wątków** okna, Przełącz między wątkami i że widoku w **stosów równoległych** okna jest aktualizowany.  
+     W **wątków** okna, przełącz się między wątkami i Zauważ, że widok w **stosów równoległych** okna jest aktualizowana.  
   
-     Można przełączyć do innego wątku lub do innej ramki inny wątek przy użyciu menu skrótów w **stosów równoległych** okna. Na przykład, kliknij prawym przyciskiem myszy S.J, wskaż polecenie **Przełącz do ramki**, a następnie kliknij przycisk polecenia.  
+     Można przełączyć do innego wątku lub do innej ramki innego wątku za pomocą menu skrótów na liście **stosów równoległych** okna. Na przykład, kliknij prawym przyciskiem myszy S.J, wskaż opcję **Przełącz do ramki**, a następnie kliknij przycisk polecenia.  
   
-     ![Równoległych stosów ścieżka wykonywania](../debugger/media/pdb_walkthrough_2b.png "PDB_Walkthrough_2B")  
+     ![Ścieżka wykonywania stosów równoległych](../debugger/media/pdb_walkthrough_2b.png "PDB_Walkthrough_2B")  
   
-     Kliknij prawym przyciskiem myszy S.C, a następnie wskaż **Przełącz do ramki**. Jedno z poleceń ma znacznik wyboru, który wskazuje ramki stosu bieżącego wątku. Możesz przełączyć się do tej ramki tego samego wątku (przeniesie zieloną strzałkę), lub możesz przełączyć się do innego wątku (niebieskie wyróżnienie przenosi także). Na poniższej ilustracji przedstawiono podmenu.  
+     Kliknij prawym przyciskiem myszy S.C, a następnie wskaż **Przełącz do ramki**. Jedno z poleceń ma znacznik wyboru wskazujący ramka stosu w bieżącym wątku. Możesz przełączyć się do tej ramki w tym samym wątku (przeniesie zieloną strzałkę), lub możesz przełączyć się do innego wątku (niebieskie podświetlenie przenosi także). Poniższa ilustracja przedstawia podmenu.  
   
-     ![Stosy menu Opcje 2 C podczas bieżącej J](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")  
+     ![Menu stosów przy użyciu opcji 2 na C "j" jest bieżący](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")  
   
-     W przypadku skojarzone z ramki stosu tylko jeden kontekst — metoda Wyświetla pole nagłówka **1 wątku** i może przełączyć się do niego przez dwukrotne kliknięcie. Po dwukrotnym kliknięciu kontekstu metoda ma więcej niż 1 ramkę skojarzonych z nim, następnie menu automatycznie wyskakującej. Po aktywowaniu przez kontekstów — metoda zauważyć czarny trójkąt po prawej stronie. Kliknięcie tego trójkąt wyświetla również menu skrótów.  
+     Po skojarzone z ramki stosu tylko jeden kontekst metody nagłówek okno wyświetla **1 wątek** i możesz przełączyć się do niego przez dwukrotne kliknięcie. Jeśli klikniesz dwukrotnie kontekst metody, który ma więcej niż 1 ramkę skojarzonych z nim, następnie menu automatycznie pojawi się. Jak wskaźnik nad kontekstów metody, zwróć uwagę, czarny trójkąt po prawej stronie. Ponadto kliknięcie tego trójkąt Wyświetla menu skrótów.  
   
-     Dla dużych aplikacji, które mają wiele wątków można skupić się na tylko ich podzbiór wątków. **Stosów równoległych** można wyświetlić w oknie stosy wywołań tylko w przypadku oflagowane wątki. Aby Flaga wątków, użyj menu skrótów lub pierwszej komórki wątku. 
+     Dla dużych aplikacji, które mają wiele wątków można skoncentrować się na określony podzbiór wątków. **Stosów równoległych** można wyświetlić w oknie stosy wywołań tylko oflagowane wątki. Aby Oflaguj wątki, należy użyć menu skrótów lub pierwszej komórki wątku. 
 
-     Na pasku narzędzi kliknij **Pokaż tylko oflagowane** przycisk obok pola listy.  
+     Na pasku narzędzi kliknij **Pokaż tylko oflagowane** przycisk znajdujący się obok pola listy.  
 
-     ![Równoległe i tooltip okna stosów](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
+     ![Równoległe okna stosów i etykietek narzędzi](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
 
-     Teraz, tylko oflagowane wątku zostaną wyświetlone w **stosów równoległych** okna.
+     Teraz tylko wątków oflagowanych zostaną wyświetlone w **stosów równoległych** okna.
   
-#### <a name="to-resume-execution-until-the-third-breakpoint"></a>Aby wznowić wykonywanie do momentu trzeci punktu przerwania  
+#### <a name="to-resume-execution-until-the-third-breakpoint"></a>Aby wznowić wykonywanie aż do trzeciego punktu przerwania  
   
 1.  Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
-     Wiele wątków znajdują się w tej samej metody, ale metoda nie jest na początku stos wywołań, metoda pojawia się w różnych pól. Przykładem w bieżącym punkt przerwania jest S.L, który trzech wątków w nim i jest wyświetlany w trzech pól. Kliknij dwukrotnie Brak miejsca  
+     Wiele wątków znajdują się w tej samej metody, ale metoda nie jest na początku stos wywołań, metoda pojawia się w różnych polach. S.L, zawiera trzy wątków, która jest wyświetlana w trzy pola to na przykład w bieżącym punkcie przerwania. Kliknij dwukrotnie opcję Brak miejsca  
   
-     ![Ścieżka wykonywania w okna stosów równoległych](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")  
+     ![Ścieżki wykonywania w okna stosów równoległych](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")  
   
-     Należy zauważyć, że S.L jest pogrubiony w dwóch polach, tak aby były widoczne else gdzie jest dostępny. Jeśli chcesz zobaczyć ramek, które wywołanie S.L i które ramki wywołania, kliknij przycisk **Przełącz widok metody** przycisk na pasku narzędzi. Na poniższej ilustracji przedstawiono widok metody **stosów równoległych** okna.  
+     Zauważ, że S.L jest pogrubiony w innych polach, dzięki czemu można zobaczyć, gdzie indziej pojawia się. Jeśli chcesz zobaczyć, który ramek wywołać S.L i który ramek wywołań, kliknij przycisk **Przełącz widok metody** przycisk na pasku narzędzi. Na poniższej ilustracji przedstawiono metodę **stosów równoległych** okna.  
   
      ![Metoda widok okna stosów równoległych](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
-     Zwróć uwagę, jak diagram przestawiać na wybranej metody i znajduje się ona w polu środku widoku. Callees i wywoływania pojawiają się u góry i u dołu. Kliknij przycisk **Przełącz widok metody** przycisk ponownie, aby wyjść z tego trybu.  
+     Zwróć uwagę, jak diagramu przestawiać na wybranej metody i umieszczony ją w swoje własne polu w środku widoku. Wywoływane a obiektami wywołującymi są wyświetlane u góry i u dołu. Kliknij przycisk **Przełącz widok metody** przycisk ponownie, aby opuścić ten tryb.  
   
      Menu skrótów **stosów równoległych** okno zawiera również następujące inne elementy.  
   
-    -   **Wyświetlacz** przełącza numery w etykietkach narzędzi między dziesiętnego i szesnastkową.  
+    -   **Wyświetlanie szesnastkowe** Włącza/wyłącza numery w etykietkach narzędzi od wartości dziesiętnej i szesnastkowej.  
   
-    -   **Symbol ustawienia** Otwórz odpowiednich okien dialogowych.  
+    -   **Ustawienia symboli** otworzyć okna dialogowe.  
   
-    -   **Pokaż wątki w źródle** Włącza wyświetlanie znaczników wątków w kodzie źródłowym, w którym wyświetlana jest lokalizacja wątków w kodzie źródłowym.
+    -   **Pokaż wątki w źródle** Przełącza wyświetlanie znaczników wątków w kodzie źródłowym, w którym wyświetlana jest lokalizacja wątków w kodzie źródłowym.
   
-    -   **Pokaż kod zewnętrzny** Wyświetla wszystkie ramki, nawet jeśli nie są w kodzie użytkownika. Wypróbuj na diagramie Rozwiń, aby pomieścić dodatkowe ramki, (które mogą być nieaktywne, ponieważ nie masz symbole dla nich).  
+    -   **Pokaż kod zewnętrzny** Wyświetla wszystkie ramki, nawet jeśli nie znajdują się w kodzie użytkownika. Wypróbuj ją, aby wyświetlić diagram Rozwiń, aby uwzględnić dodatkowe ramki, (które mogą być nieaktywne, ponieważ nie masz symboli dla nich).  
 
-2.  W **stosów równoległych** okna, upewnij się, że **automatycznie przewiń do bieżącej ramki stosu** znajduje się na przycisk na pasku narzędzi.  
+2.  W **stosów równoległych** okna, upewnij się, że **automatycznie przewiń do bieżącej ramki stosu** przycisk na pasku narzędzi znajduje się na.  
 
-     Jeśli masz dużych diagramów i krok do następnego punktu przerwania, może być widok, aby automatycznie przewiń do ramki stosu active bieżącego wątku; oznacza to, że wątek najpierw trafiony punkt przerwania.
+     Jeśli masz dużych diagramów w kroku do następnego punktu przerwania, może być widok, aby automatycznie przewiń do aktywną ramkę stosu bieżącego wątku; oznacza to, że wątek, który najpierw trafiony punkt przerwania.
   
-3.  Przed kontynuowaniem w **stosów równoległych** okna, przewiń do końca w lewo i w dół do końca.  
+3.  Przed rozpoczęciem pracy w **stosów równoległych** okna, przewijania, aż po lewej stronie i w dół do końca.  
   
-#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Aby wznowić wykonywanie do momentu czwarty punktu przerwania  
+#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Aby wznowić wykonywanie aż do czwartej punktu przerwania  
   
-1.  Aby wznowić wykonywania, dopóki czwarty punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
+1.  Aby wznowić wykonywanie do momentu czwarty punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
-     Powiadomienie jak autoscrolled widoku w miejscu. Przełącz wątków w **wątków** ramki stosu okna lub przełącznika **stos wywołań** okna i zwróć uwagę, jak widok zawsze autoscrolls do poprawnej ramki. Wyłącz **automatycznie przewiń do bieżącej ramki narzędzie** opcji i wyświetlanie różnicy.  
+     Zwróć uwagę jak autoscrolled widoku w miejscu. Przełącz wątki w **wątków** ramki stosu okna lub przełącznika **stos wywołań** okna i zwróć uwagę, jak widok zawsze autoscrolls do poprawnej ramki. Wyłącz **automatycznie przewiń do bieżącej ramki narzędzie** opcji i wyświetlenia różnicy.  
   
-     **Widok** pomaga również w dużych diagramów w **stosów równoległych** okna. Domyślnie **widok** znajduje się na. Ale można ją wyłączyć, klikając przycisk między paski przewijania w prawym dolnym rogu okna, jak pokazano na poniższej ilustracji.  
+     **Ptaka** pomaga również dużych diagramów w **stosów równoległych** okna. Domyślnie **ptaka** znajduje się na. Ale można ją wyłączyć, klikając przycisk między pasków przewijania w prawym dolnym rogu okna, jak pokazano na poniższej ilustracji.  
   
-     ![Ptaka&#45;oczu widok okna stosów równoległych](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
+     ![Ptaka&#45;oczu widoku okna stosów równoległych](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
   
-     W widok można przenieść prostokąt szybko przesuwanie na diagramie.  
+     W widok można przenieść prostokąt, Przesuń szybko w całym na diagramie.  
   
-     Przenoszenie diagramu w dowolnym kierunku w inny sposób jest pusty obszar diagramu, kliknij i przeciągnij w to miejsce.  
+     Innym sposobem na przenoszenie diagramu w dowolnym kierunku jest do pustego obszaru diagramu, kliknij i przeciągnij go w odpowiednie miejsce.  
   
-     Aby powiększyć i diagramu, naciśnij i przytrzymaj klawisz CTRL podczas przenoszenia kółka myszy. Alternatywnie kliknij przycisk Powiększenie na pasku narzędzi, a następnie użyć narzędzia powiększenia.  
+     Aby powiększyć i diagramu, naciśnij i przytrzymaj klawisz CTRL podczas przenoszenia kółka myszy. Alternatywnie kliknij przycisku Powiększenie na pasku narzędzi, a następnie użyj narzędzie do powiększania.  
   
-     Stosy można wyświetlić w kierunku góra dół zamiast dołu do góry, klikając **narzędzia** menu, klikając pozycję **opcje**, a następnie zaznacz lub usuń zaznaczenie opcji w obszarze **debugowanie** węzła.  
+     Stosy można wyświetlić w kierunku do góry na dół zamiast od dołu do góry, klikając **narzędzia** menu, klikając **opcje**, a następnie zaznacz lub wyczyść pole wyboru w obszarze **debugowanie** węzła.  
   
-2.  Przed kontynuowaniem na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie** do zakończenia wykonywania.  
+2.  Przed kontynuowaniem na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie** do realizacji celu.  
   
-## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Przy użyciu okno zadań równoległych i widok zadań okna stosów równoległych  
- Zalecane jest wykonanie procedur wcześniejszych przed kontynuowaniem.  
+## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Za pomocą okno zadań równoległych i widok zadań z okna stosów równoległych  
+ Zalecane jest, wykonaj wcześniejsze procedury, aby kontynuować.  
   
-#### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Uruchom aplikację do pierwszy punkt przerwania zostaje trafiony  
+#### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Uruchom aplikację do momentu pierwszy punkt przerwania zostaje trafiony  
   
-1.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** i poczekaj, aż pierwszy punkt przerwania do trafiony.  
+1.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** i poczekaj na pierwszy punkt przerwania, aby zostanie osiągnięty.  
   
-2.  Na **debugowania** menu wskaż **Windows** , a następnie kliknij przycisk **wątków**. Dock **wątków** okna w dolnej części programu Visual Studio.  
+2.  Na **debugowania** menu wskaż **Windows** a następnie kliknij przycisk **wątków**. Zadokuj **wątków** okna w dolnej części programu Visual Studio.  
   
-3.  Na **debugowania** menu wskaż **Windows** i kliknij przycisk **stos wywołań**. Dock **stos wywołań** okna w dolnej części programu Visual Studio.  
+3.  Na **debugowania** menu wskaż **Windows** i kliknij przycisk **stos wywołań**. Zadokuj **stos wywołań** okna u dołu Visual Studio.  
   
-4.  Kliknij dwukrotnie wątek **wątków** okna sprawia, że bieżący. Bieżące wątki ma żółta strzałka. Po zmianie bieżącego wątku innych oknach zostały zaktualizowane. Następnie zostaną omówione zadania.  
+4.  Kliknij dwukrotnie wątek na **wątków** okna sprawia, że bieżący. Wątki bieżącego mają żółtą strzałką. Inne okna są aktualizowane, po zmianie bieżącego wątku. Następnie zostanie omówiony zadania.  
   
-5.  Na **debugowania** menu wskaż **Windows**, a następnie kliknij przycisk **zadania**. Na poniższej ilustracji pokazano **zadania** okna.  
+5.  Na **debugowania** menu wskaż **Windows**, a następnie kliknij przycisk **zadania**. Poniższa ilustracja przedstawia **zadania** okna.  
   
-     ![Cztery uruchomione zadania w oknie zadania](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Cztery uruchamianie zadań w oknie zadania](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
   
-     Dla każdego uruchomionego zadania można znaleźć Identyfikatora, który jest zwracany przez właściwość o tej samej nazwie, identyfikator i nazwa wątku, który uruchamia go, jego lokalizacji (kursora myszy nad tym Wyświetla etykietki narzędzia, zawierający stos wywołań całego). Ponadto w obszarze **zadań** kolumny, można wyświetlić metodę, który został przekazany do zadania; innymi słowy, punktu początkowego.  
+     Dla każdego uruchomionego zadania można odczytać Identyfikatora, który jest zwracany przez właściwość o tej samej nazwie, identyfikator i nazwę wątku, który działa, jego lokalizacji (przesuwania wskaźnika w obrębie tego wyświetla etykietkę narzędzia, która ma całego stosu). Ponadto w obszarze **zadań** kolumny, możesz zobaczyć metodę, która została przekazana do zadania — innymi słowy, punkt początkowy.  
   
-     Można posortować kolumny. Zwróć uwagę, symbolu sortowania, wskazującą kolumna sortowania i kierunku. Można również zmienić kolejność kolumn, przeciągając je w lewo lub w prawo.  
+     Można sortować dowolnej kolumny. Zwróć uwagę, symbol sortowania, który wskazuje sortowanie kolumn i kierunek. Można również zmienić kolejność kolumn, przeciągając je w lewo lub w prawo.  
   
-     Żółta strzałka wskazuje bieżącego zadania. Można przełączyć zadania, klikając dwukrotnie zadania lub przy użyciu menu skrótów. Po przełączeniu zadania bieżącym staje się podstawowym wątku i innych oknach zostały zaktualizowane.  
+     Żółta strzałka wskazuje bieżącego zadania. Zadania można przełączać, klikając dwukrotnie zadania lub za pomocą menu skrótów. Po przełączeniu się z zadaniami, podstawowy wątek staje się bieżącym i inne okna są aktualizowane.  
   
-     Możesz ręcznie przełączać się z jednego zadania, żółta strzałka przenosi, ale białej strzałki nadal zawiera zadania, który spowodował debugera przerwać.  
+     Ręcznie przełączyć się z jednego zadania do innego, żółta strzałka przesuwa się, ale biały strzałek nadal zawiera zadania, który spowodował debuger przerywa.  
   
-#### <a name="to-resume-execution-until-the-second-breakpoint"></a>Aby wznowić wykonywanie do drugiego punktu przerwania  
+#### <a name="to-resume-execution-until-the-second-breakpoint"></a>Aby wznowić wykonywanie aż do drugiego punktu przerwania  
   
 1.  Aby wznowić wykonywanie do momentu drugi punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
-     Wcześniej **stan** kolumny pokazano wszystkie zadania jako aktywny, ale teraz dwa zadania są zablokowane. Zadania mogą zostać zablokowane w wielu różnych powodów. W **stan** kolumny, przesuń kursor myszy zadanie oczekiwania, aby dowiedzieć się, dlaczego jest zablokowany. Na przykład na poniższej ilustracji, zadanie 3 oczekuje na zadanie 4.  
+     Wcześniej **stan** kolumny wykazało, że wszystkie zadania jako aktywny, ale teraz dwa zadania są zablokowane. Zadania mogą zostać zablokowane w wielu różnych powodów. W **stan** kolumny, umieść kursor nad zadaniem oczekiwania, aby dowiedzieć się, dlaczego jest on zablokowany. Na przykład na poniższej ilustracji, zadanie 3 oczekuje na zadanie 4.  
   
      ![Dwa zadania oczekiwania w oknie zadania](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
-     Zadanie 4, z kolei czeka na monitorze należących do wątku przypisane do zadanie 2. (Kliknij prawym przyciskiem myszy nagłówek, a następnie wybierz pozycję **kolumn** > **przypisania wątku** do wyświetlania wartości przypisania wątku zadania 2).
+     Zadanie 4, z kolei czeka na monitorze własnością wątku przydzielony do zadania 2. (Kliknij prawym przyciskiem myszy wiersz nagłówka, a następnie wybierz **kolumn** > **przypisania wątku** do wyświetlania wartości przypisania wątku dla zadania 2).
   
      ![Oczekiwanie na zadanie i etykietek narzędzi w oknie zadania](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
   
-     Oznacz flagą zadania, klikając flagę w pierwszej kolumnie **zadania** okna.  
+     Zadania mogą oznaczać, klikając flagę w pierwszej kolumnie **zadania** okna.  
   
-     Możesz użyć flag śledzenia zadań między różne punkty przerwania w tej samej sesji debugowania lub aby filtrować zadania, których stosy wywołań są wyświetlane w **stosów równoległych** okna.  
+     Flagowanie można użyć do śledzenia zadań między różne punkty przerwania w tej samej sesji debugowania lub aby filtrować zadania, którego stosy wywołań są wyświetlane w **stosów równoległych** okna.  
   
-     Kiedy używać **stosów równoległych** okna wcześniej, można wyświetlić wątki aplikacji. Widok **stosów równoległych** ponownie okno, ale tym razem wyświetlania zadań aplikacji. To zrobić, wybierając **zadania** w polu w lewym górnym rogu. Na poniższej ilustracji przedstawiono widok zadań.  
+     Kiedy użyć **stosów równoległych** okna wcześniej, wyświetlać wątki aplikacji. Widok **stosów równoległych** ponownie okno, ale tym razem wyświetlania zadań aplikacji. To zrobić, wybierając **zadania** w polu w lewym górnym rogu. Na poniższej ilustracji przedstawiono zadania.  
   
-     ![Zadania widoku w okna stosów równoległych](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Zadania widoku okna stosów równoległych](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
-     Wątków, które nie są obecnie wykonuje zadania nie są wyświetlane w widoku zadań **stosów równoległych** okna. Ponadto dla wątków, które są wykonywane zadania, niektóre ramek stosu, które nie są odpowiednie do zadania są filtrowane z góry i u dołu stosu.  
+     Wątki, które nie są obecnie wykonuje zadania nie są wyświetlane w widoku zadań **stosów równoległych** okna. Ponadto dla wątków, które są wykonywane zadania, niektóre ramek stosu, które nie mają znaczenia dla zadania są filtrowane z górnej i dolnej części stosu.  
   
-     Widok **zadania** ponownie okno. Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, aby wyświetlić menu skrótów kolumny.  
+     Widok **zadania** ponownie okno. Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, aby wyświetlić menu skrótów dla kolumny.  
   
-     Menu skrótów można użyć, aby dodać lub usunąć kolumny. Na przykład nie jest zaznaczone kolumny elementu AppDomain; w związku z tym nie jest wyświetlany na liście. Kliknij przycisk **nadrzędnej**. **Nadrzędnej** kolumny pojawia się bez wartości dla każdego z czterech zadania.  
+     Aby dodać lub usunąć kolumny, można użyć menu skrótów. Na przykład nie jest zaznaczone kolumny domeny aplikacji; w związku z tym nie jest wyświetlany na liście. Kliknij przycisk **nadrzędnego**. **Nadrzędnego** kolumna jest wyświetlana bez wartości dla każdej z czterech zadania.  
   
-#### <a name="to-resume-execution-until-the-third-breakpoint"></a>Aby wznowić wykonywanie do momentu trzeci punktu przerwania  
+#### <a name="to-resume-execution-until-the-third-breakpoint"></a>Aby wznowić wykonywanie aż do trzeciego punktu przerwania  
   
 1.  Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
-     Nowe zadanie zadanie 5, jest teraz uruchomiona i obecnie oczekuje zadanie 4. Widać, dlaczego, ustawiając kursor nad zadanie oczekiwania w **stan** okna. W **nadrzędnej** kolumny, powiadomienia, że zadanie 4 jest nadrzędny zadanie 5.  
+     Nowe zadanie zadanie 5, jest teraz uruchomiona i obecnie oczekuje zadanie 4. Możesz zobaczyć, dlaczego, ustawiając kursor nad zadanie oczekujące w **stan** okna. W **nadrzędnego** kolumn należy zauważyć, że zadanie 4 jest elementem nadrzędnym zadanie 5.  
   
-     W celu lepszego wizualizacji relacji nadrzędny podrzędny, kliknij prawym przyciskiem myszy nagłówek kolumny, a następnie kliknij przycisk **widok podrzędny nadrzędnej**. Poniższa ilustracja powinna zostać wyświetlona.  
+     Aby lepiej wizualizować relacji nadrzędny podrzędny, kliknij prawym przyciskiem myszy nagłówek kolumny, a następnie kliknij przycisk **widok podrzędny nadrzędnego**. Powinny być widoczne na poniższej ilustracji.  
   
      ![Nadrzędny&#45;widok podrzędny w oknie zadania](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
-     Zwróć uwagę, że zadanie 4 i 5 zadań są uruchomione na tym samym wątku (Pokaż **przypisania wątku** kolumny, jeśli jest ukryty). Te informacje nie są wyświetlane w **wątków** okno; niewidoczny w tym miejscu jest kolejna korzyść związana z **zadania** okna. Aby to potwierdzić, Wyświetl **stosów równoległych** okna. Upewnij się, że **zadania**. Znajdź zadania 4 i 5 przez dwukrotne kliknięcie w **zadania** okna. Powoduje to niebieskie wyróżnienie **stosów równoległych** okna jest aktualizowany. Możesz również znaleźć zadań 4 i 5, skanując etykietki narzędzi na **stosów równoległych** okna.  
+     Należy zauważyć, że zadanie 4 i zadanie 5 są uruchomione na tym samym wątku (Pokaż **przypisania wątku** kolumny, jeśli jest ukryty). Te informacje nie są wyświetlane w **wątków** okno; oglądanie, w tym miejscu jest kolejną korzyścią wynikającą z **zadania** okna. Aby to sprawdzić, Wyświetl **stosów równoległych** okna. Upewnij się, że **zadania**. Znajdź zadania 4 i 5, klikając je dwukrotnie **zadania** okna. Powoduje to niebieskie podświetlenie **stosów równoległych** okna jest aktualizowana. Możesz również znaleźć zadania 4 i 5, skanując etykietki narzędzi na **stosów równoległych** okna.  
   
      ![Widok okna stosów równoległych zadań](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
   
-     W **stosów równoległych** , kliknij prawym przyciskiem myszy S.P, a następnie kliknij przycisk **przejdź do wątku**. Okno zmienia się do widoku wątków i odpowiednie ramka znajduje się w widoku. Można wyświetlić obu zadań na tym samym wątku.  
+     W **stosów równoległych** , kliknij prawym przyciskiem myszy S.P, a następnie kliknij przycisk **przejdź do wątku**. Okno przełącza do widoku wątków i odpowiednie ramki znajduje się w widoku. Zarówno do zadań są widoczne na tym samym wątku.  
   
      ![Wyróżnione wątku w widoku wątków](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")  
   
-     Jest to kolejna korzyść związana z widoku zadania w **stosów równoległych** okna w porównaniu do **wątków** okna.  
+     Jest to kolejna korzyść związana z widoku zadania na **stosów równoległych** okna, w porównaniu do **wątków** okna.  
   
-#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Aby wznowić wykonywanie do momentu czwarty punktu przerwania  
+#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Aby wznowić wykonywanie aż do czwartej punktu przerwania  
   
-1.  Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**. Kliknij przycisk **identyfikator** nagłówek kolumny, aby posortować według identyfikatora. Poniższa ilustracja powinna zostać wyświetlona.  
+1.  Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**. Kliknij przycisk **identyfikator** nagłówek kolumny, aby posortować według identyfikatora. Powinny być widoczne na poniższej ilustracji.  
   
      ![Cztery zadania stanów w okna stosów równoległych](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
   
-     Ponieważ zadanie 5 została zakończona, jest już wyświetlany. Jeśli zakleszczenia nie będzie wyświetlana, który nie jest uruchomiona na komputerze, krok jeden raz, naciskając klawisz **F11**.  
+     Ponieważ zadanie 5 zostało ukończone, jest już wyświetlany. Jeśli to nie przypadek na komputerze i zakleszczenia nie jest wyświetlany, krok jeden raz, naciskając klawisz **F11**.  
   
-     Zadanie 3 i 4 zadanie teraz trwa oczekiwanie na każdym z nich i są zablokowane. Dostępne są także 5 nowe zadania, które są elementami podrzędnymi zadanie 2 i teraz zaplanowane. Zaplanowane zadania są zadania, które zostały rozpoczęte w kodzie, ale nie został jeszcze uruchomiony. W związku z tym ich **lokalizacji** i **wątku przypisania** kolumn są puste.  
+     Zadanie 3 zadanie 4 teraz oczekują od siebie i są blokowane. Dostępne są także 5 nowych zadań, które są elementami podrzędnymi zadanie 2, a teraz są planowane. Zaplanowane zadania są zadania, które zostały rozpoczęte w kodzie, ale nie zostały jeszcze uruchomione. W związku z tym ich **lokalizacji** i **wątek przypisania** kolumny są puste.  
   
-     Widok **stosów równoległych** ponownie okno. Nagłówek każde pole ma etykietce narzędzia, która zawiera nazwy i identyfikatory wątku. Przełącz do widoku zadania w **stosów równoległych** okna. Umieść kursor nad nagłówka Identyfikatora zadania i nazwy i stan zadania, jak pokazano na poniższej ilustracji.  
+     Widok **stosów równoległych** ponownie okno. Nagłówek każde pole ma etykietkę narzędzia, która zawiera nazwy i identyfikatory wątku. Przełącz do widoku zadania na **stosów równoległych** okna. Umieść kursor nad nagłówek, aby wyświetlić identyfikator zadania oraz nazwę i stan zadania, jak pokazano na poniższej ilustracji.  
   
      ![Nagłówek tooltip okna stosów równoległych](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")  
   
-     Zadania można grupować według kolumny. W **zadania** okna, kliknij prawym przyciskiem myszy **stan** nagłówek kolumny, a następnie kliknij przycisk **grupowanie według stanu**. Na poniższej ilustracji pokazano **zadania** okna pogrupowane według stanu.  
+     Zadania można grupować według kolumny. W **zadania** okna, kliknij prawym przyciskiem myszy **stan** nagłówek kolumny, a następnie kliknij przycisk **grupa statusem**. Poniższa ilustracja przedstawia **zadania** okna pogrupowane według stanu.  
   
-     ![Grupowania zadań w oknie zadania](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
+     ![Zadania w oknie zadania pogrupowanych](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     Można także grupować według innej kolumny. Grupowanie zadań można skupić się na podzbiór zadań. Każda grupa zwijanej ma liczbę elementów, które są zgrupowane razem.
+     Można także grupować według innych kolumn. Przez grupowanie zadania można skoncentrować się na podzbiór zadań. Każda grupa zwijany ma liczbę elementów, które są zgrupowane.
   
-     Funkcja ostatniego **zadania** okno do sprawdzenia jest wyświetlany po kliknięciu prawym przyciskiem myszy zadanie menu skrótów.  
+     Ostatnie funkcji **zadania** okno do sprawdzenia jest menu skrótów, która jest wyświetlana po kliknięciu prawym przyciskiem myszy zadanie.  
   
-     Menu skrótów wyświetlane inne polecenia, w zależności od stanu zadania. Może to **kopii**, **Zaznacz wszystko**, **wyświetlacz**, **przełączyć się do zadań**, **Zablokuj przypisane Wątek**, **Zablokuj wszystkie wątki oprócz to**, i **odblokować wątku przypisanej**, i **flagi**.  
+     Menu skrótów zostaną wyświetlone różne polecenia, w zależności od stanu zadania. Polecenia mogą obejmować **kopiowania**, **Zaznacz wszystko**, **wyświetlanie szesnastkowe**, **Przełącz do zadania**, **Blokuj przypisany Wątek**, **Zablokuj wszystkie wątki oprócz tego**, i **Odblokuj przypisany wątek**, i **flagi**.  
   
-     Można zamrozić wątku podstawowe zadania lub zadania lub można zablokować wszystkie wątki oprócz jednego przypisane. Zablokowane wątku jest reprezentowana w **zadania** okna, ponieważ znajduje się w **wątków** okna przez niebieskiego *wstrzymać* ikony.  
+     Można zamrozić wątku podstawowym zadania lub zadania, lub można zablokować wszystkich wątków, z wyjątkiem przypisane. Zablokowanego wątku jest reprezentowana w **zadania** okna, ponieważ znajduje się w **wątków** okna przez niebieski *wstrzymać* ikony.  
   
 ## <a name="summary"></a>Podsumowanie  
- W tym przewodniku przedstawiono **zadań równoległych** i **stosów równoległych** debugera systemu windows. Użyj tych okien w rzeczywistych projektów wielowątkowe kodu. Można sprawdzić równoległych kod napisany w języku C++, C# lub Visual Basic.  
+ W tym instruktażu zademonstrowano **zadań równoległych** i **stosów równoległych** debugera systemu windows. Użyj tych okien na rzeczywistych projektach, korzystających z kodu wielowątkowego. Można sprawdzić równoległego kodu napisanego w języku C++, C# lub Visual Basic.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Programowanie równoległe](/dotnet/standard/parallel-programming/index)   
  [Współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime)   

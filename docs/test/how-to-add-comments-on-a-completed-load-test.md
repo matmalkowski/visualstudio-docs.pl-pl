@@ -10,32 +10,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c8efc27dd7e9dd6b201421aed17ded3dd31342cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d21c00dbb40c0262bdeae85f4957cd78d253f1a2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967142"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176043"
 ---
 # <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>Porady: dodawanie komentarzy podczas analizowania zakończonego testu obciążenia
 
-Po zakończeniu testu obciążenia, lub po załadowaniu wynik testu skorzystać z analizatora testu obciążenia, aby dodać opis i analizę komentarz w teście obciążenia. Opis i komentarza analizy zostanie trwale przechowywane z wynikami testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
+Po zakończeniu testu obciążeniowego lub po załadowaniu wynik testu, można użyć **analizatora testu obciążenia** Aby dodać opis i analiza komentarza do testu obciążenia. Opis i komentarz analizy będzie przechowywany trwale z wynikiem testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
-Możesz również wprowadzić opis wyświetlany w **opis** kolumny, która jest skojarzona z testu obciążenia w **otwarte i zarządzanie wynikami testów** okno dialogowe w **edytorze testu obciążenia**. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md). Ponadto komentarze są wyświetlane podczas tworzenia wyników testu obciążenia raport programu Excel. Aby uzyskać więcej informacji, zobacz [raportowanie wyników testów obciążenia do potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).
+Wyświetla opis, który możesz również wprowadzić **opis** kolumny, która jest skojarzona z testu obciążenia w **Otwórz i Zarządzaj wynikami testu** okno dialogowe w **edytora testu obciążenia**. Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md). Ponadto komentarze są wyświetlane, gdy tworzysz raport programu Excel dla obciążenia wyniki testu. Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).
 
-![Analiza okno dialogowe Dodawanie notatek testu obciążenia](../test/media/ltest_ananotes.png)
+![Okno dialogowe Dodawanie notatek testu obciążenia analizy](../test/media/ltest_ananotes.png)
 
 ## <a name="to-add-a-comment-to-a-load-test"></a>Aby dodać komentarz do testu obciążenia
 
-1.  Po zakończeniu testu obciążenia, lub po załadowaniu wyniku testu obciążenia Test analizatora w pasku narzędzi, wybierz opcję **dodać uwagi do analizy**.
+1.  Po zakończeniu testu obciążeniowego lub po załadowaniu wynik testu na pasku narzędzi analizatora testu obciążeniowego wybierz **Dodaj uwagi do analizy**.
 
      **Analizy** zostanie wyświetlone okno dialogowe.
 
-2.  W **opis** polu tekstowym, wpisz opis.
+2.  W **opis** pole tekstowe, wpisz opis.
 
-3.  W **analizy** test pola, wpisz komentarz analizy.
+3.  W **analizy** polu, wpisz swój komentarz analizy.
 
-    Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testu obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
+    Aby uzyskać więcej informacji, zobacz [porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -27,26 +27,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 773e6a2f351c0256fee17b1e07ff37fe9567198b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943943"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179921"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
 
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wyróżnić dwie części do tworzenia aplikacji gotowych: lokalizacja, proces tłumaczenie zasobów dla określonej kultury i globalizacja, proces projektowania aplikacji, które można dostosować do innych kultur. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
+W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], istnieją dwie części do tworzenia aplikacji gotowych do: globalizacja, proces projektowania aplikacji, które dostosowują się do różnych kultur i lokalizacja, proces tłumaczeniem zasobów dla określonej kultury. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model lokalizacji składa się z głównego zestawu, który zawiera zarówno kod aplikacji, jak i zasoby rezerwowe — ciągi, obrazy i inne obiekty, dla języka, w którym aplikacja jest przeznaczony głównie. Każda aplikacja zlokalizowanych będzie mieć zestawy satelickie lub zestawów, które zawierają zlokalizowanych zasobów. Ponieważ główny zestaw zawsze zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zestawie zlokalizowanych satelity <xref:System.Resources.ResourceManager> próbuje załadować go w hierarchiczny sposób, po pewnym czasie nastąpi powrót do zasobu w zestawie głównym. System rezerwowy zasobów jest omówiona szczegółowo w temacie większa [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model lokalizacji składa się z głównym zestawie, który zawiera kod aplikacji i zasoby rezerwowe — ciągi, obrazy i inne obiekty, dla języka, w którym pierwotnie opracowano aplikację. Każda aplikacja zlokalizowanych ma zestawy satelickie lub zespołów, które zawierają zlokalizowane zasoby. Ponieważ zawsze zestawu głównego zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zestawie satelickim zlokalizowane, <xref:System.Resources.ResourceManager> spróbuje ją załadować hierarchicznie ostatecznie nastąpi powrót do zasobu w głównym zestawie. System rezerwowy zasobu zostało wyjaśnione bardziej szczegółowo w [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Jeden zasób lokalizacji, należy rozważyć użycie jest słownik wszystkie usługi Microsoft są zlokalizowane produktów. Ten plik CSV zawiera ponad 12 000 terminy w języku angielskim oraz tłumaczenia warunki do 59 w różnych językach. Słownik jest dostępny do pobrania na [tłumaczeń terminologii Microsoft](http://go.microsoft.com/fwlink/?LinkId=128146) strony sieci Web.
+ Jeden zasób lokalizacji, należy rozważyć użycie jest słownik do firmy Microsoft zlokalizowany produktów. Ten plik CSV zawiera ponad 12 000 terminy w języku angielskim oraz tłumaczenia warunki maksymalnie 59 różnych językach. Słownik jest dostępny do pobrania [tłumaczenia terminologii firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=128146) strony sieci web.
 
- System projektu dla aplikacji formularzy systemu Windows można wygenerować plików zasobów dla obu powrotu i każdego potrzebne dodatkowe kultury interfejsu użytkownika. Plik zasobów rezerwowego jest wbudowana w zestawie głównym, a pliki zasobów specyficzne dla kultury następnie są wbudowane w zestawy satelickie, po jednej dla każdego kultury interfejsu użytkownika. Podczas tworzenia projektu, pliki zasobów są kompilowane z formatu XML usługi Visual Studio (resx) na format binarny pośredniego (.resources), które następnie są osadzone w zestawy satelickie.
+ System projektu dla aplikacji Windows Forms można wygenerować plików zasobów dla obu plan awaryjny i każdego żądanego dodatkowe kultury interfejsu użytkownika. Plik zasobów rezerwowego jest wbudowana w głównym zestawie, a pliki zasobów dla kultury następnie są tworzone w zestawy satelit, jeden dla każdej kultury interfejsu użytkownika. Podczas tworzenia projektu, pliki zasobów są kompilowane z formatu programu Visual Studio XML (resx) na pośrednie format binarny (.resources), które następnie są osadzone w zestawach satelickich.
 
- System projektu dla formularzy systemu Windows i formularzy sieci Web pozwala na tworzenie plików zasobów przy użyciu szablonu pliku zasobu zestawu, dostępu do zasobów i skompilowanie projektu. Zestawy satelickie zostanie utworzony wraz z głównym zestawu.
+ System projektu dla Windows Forms i formularzy sieci web pozwala na tworzenie plików zasobów przy użyciu szablonu usługi plik zasobów zestawu, dostęp do zasobów i skompiluj projekt. Zestawy satelickie zostanie utworzony wraz z zestawu głównego.
 
- Podczas zlokalizowanej aplikacji, jej wygląd jest określana przez dwie wartości kultury. (A *kultury* jest zestawem preferencji użytkownika związanych z języka i środowiska oraz konwencje kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektywy strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub C#. Ustawienie kultury Określa format wartości, takich jak dat, liczb, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub C#.
+ Po wykonaniu zlokalizowanych aplikacji, jego wygląd jest określany przez dwie wartości kultury. (A *kultury* jest zestawem preferencje użytkownika dotyczące języka, środowiska i Konwencji kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektyw strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub C#. Ustawienia kulturowe Określa formatowanie wartości, takich jak daty, liczby, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub C#.
 
 ## <a name="see-also"></a>Zobacz także
 

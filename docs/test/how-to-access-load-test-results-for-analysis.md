@@ -16,41 +16,41 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966690"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175676"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Porady: uzyskiwanie dostępu do wyników testu obciążenia w celu przeprowadzenia analizy
+# <a name="how-to-access-load-test-results-for-analysis"></a>Porady: dostęp do wyników testów obciążenia do analizy
 
-Po uruchomieniu testu obciążenia w edytorze testu obciążenia automatycznego otwierania wyników testu obciążenia i uruchamianie testu obciążenia jest wyświetlana w analizatorze testu obciążenia. Po uruchomieniu testu obciążenia z wiersza polecenia, można ręcznie dostępu wyników testu obciążenia.
+Po uruchomieniu testu obciążenia z edytora testu obciążenia, automatycznego otwierania wyników testów obciążenia, i uruchamianie testu obciążenia jest wyświetlana w **analizatora testu obciążenia**. Po uruchomieniu testu obciążenia z wiersza polecenia, możesz ręcznie dostęp wyniki testu obciążenia.
 
-Wynik testu obciążenia do testu obciążenia ukończone zawiera próbek licznika wydajności i informacje o błędzie, okresowo zebrane z komputerów na mocy testu. Duża liczba próbek licznika wydajności mogą być zbierane w trakcie uruchomienia testu obciążenia. Zbierane dane dotyczące wydajności zależy od długości uruchomienie testu, interwał próbkowania, liczbę komputerów w ramach testu, liczbę liczników zbieranych, modułów zbierających dane, które są skonfigurowane i poziomy rejestrowania. Dla testów obciążenia duża ilość zbieranych danych wydajności można łatwo kilku gigabajtów. Aby uzyskać więcej informacji, zobacz [kontrolery testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md).
+Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki liczników wydajności i informacje o błędzie, który zbierano okresowo z komputerów objętych testami. Duża liczba próbek liczników wydajności może być zbierana w trakcie przebiegu testu obciążeniowego. Ilość zebranych danych wydajności zależy od długości przebiegu testu, interwał próbkowania, liczby komputerów w obszarze badania, liczby gromadzonych liczników, modułów zbierających dane, które są skonfigurowane i poziomów rejestrowania. Dużym teście obciążenia ilość zebranych danych wydajności może łatwo wynieść kilka gigabajtów. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
-## <a name="to-access-a-load-test-result"></a>Aby uzyskać dostępu do wyniku testu obciążenia
+## <a name="to-access-a-load-test-result"></a>Aby dostęp do wyniku testu obciążeniowego
 
-1.  W projekcie testów wydajności i testów obciążeniowych sieci Web otwórz test obciążeniowy.
+1.  Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
 
-2.  Na pasku narzędzi edytora testu obciążenia, wybierz **otwarte i zarządzanie wynikami** przycisku.
+2.  Na pasku narzędzi edytora testu obciążenia wybierz **Otwórz i Zarządzaj wynikami** przycisku.
 
-     **Otwarte i zarządzanie wynikami** zostanie wyświetlone okno dialogowe.
+     **Otwórz i Zarządzaj wynikami** pojawi się okno dialogowe.
 
-3.  W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążenia**, wybierz kontroler. Wybierz  **\<lokalnego >-żaden kontroler** do wyników dostępu przechowywane lokalnie.
+3.  W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalny >-bez kontrolera** aby przejść do wyników przechowywanych lokalnie.
 
-4.  W **Pokaż wyniki dla następującego testu obciążenia**, wybierz testu obciążenia, którego chcesz wyświetlić wyniki. Wybierz  **\<Pokaż wyniki wszystkich testów >** Aby wyświetlić wszystkie wyniki wszystkich testów.
+4.  W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
 
-     Jeśli wyniki testu obciążenia są dostępne, pojawią się one w **wyników testów obciążenia** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, a **opis** zawiera opcjonalny opis, który zostanie dodany przed uruchomieniem testu.
+     Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu.
 
     > [!NOTE]
-    > Wyniki są wyświetlane najnowsze wyniki na początku listy.
+    > Wyniki są wyświetlane najnowsze wyniki w górnej części listy.
 
-5.  W **wyników testów obciążenia** Wybierz wyniki testu obciążenia, aby analiza i wybierz pozycję **Otwórz**.
+5.  W **wyniki testu obciążeniowego** zaznacz wyniki testu obciążenia, aby analizować i wybierz pozycję **Otwórz**.
 
-6.  Zostanie wyświetlone analizatora testu obciążenia. Wynik testu obciążenia wybrany jest wyświetlany w widoku podsumowania. Aby uzyskać więcej informacji, zobacz [omówienie podsumowanie wyników testu obciążenia](../test/load-test-results-summary-overview.md).
+6.  **Analizatora testu obciążenia** pojawia się. Wynik testu obciążenia wybranego jest wyświetlany w widoku podsumowania. Aby uzyskać więcej informacji, zobacz [Przegląd podsumowania z wynikami testów obciążeniowych](../test/load-test-results-summary-overview.md).
 
-     Możesz zarządzać innych aspektów wyników testów obciążenia w okno dialogowe otwarte i zarządzanie wynikami, w tym importowanie, eksportowanie i usuwanie wyników testu obciążenia. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyników testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Może zarządzać innymi aspektami wyników testów obciążenia w **Otwórz i Zarządzaj wynikami** okno dialogowe, w tym importowanie, eksportowanie i usuwanie wyników testu obciążenia. Aby uzyskać więcej informacji, zobacz [wyniki testu obciążeniowego Zarządzanie obciążenia test repozytorium wyników](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Zobacz także
 

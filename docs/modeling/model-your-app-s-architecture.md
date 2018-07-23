@@ -1,5 +1,5 @@
 ---
-title: Model aplikacji&#39;architektura s
+title: Model aplikacji&#39;architektury s
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,98 +11,98 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952482"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178907"
 ---
-# <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektura s
-Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia użytkowników musi, możesz utworzyć modeli w programie Visual Studio jako część opisie ogólną strukturę i zachowania systemu oprogramowania lub aplikacji. Przy użyciu modeli, można również opisać wzorców, które są używane w projekcie. Te modele pomagają zrozumieć istniejącej architektury, omówiono w nim zmiany i wyraźnie komunikacji zamiaru.
+# <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
+Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytkowników potrzebuje, możesz tworzyć modele w programie Visual Studio, jako część opisie ogólną strukturę i zachowanie systemu oprogramowania lub aplikacji. Przy użyciu modeli, może również opisywać wzorców, które są używane w całym projekcie. Modele te ułatwiają zrozumienie istniejącej architektury, omówiono zmiany i wyraźnie komunikacji zamiaru.
 
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Celem modelu jest zmniejszenie niejednoznaczności, które występują w języku naturalnym opisy, a także aby pomóc Ciebie i Twoich współpracowników do wizualizacji projektu i omówimy alternatywnych projektów. Model powinien być używany razem z innymi dokumentów lub dyskusji. Samodzielnie model nie reprezentuje pełną specyfikację architektury.
+ Cel modelu jest zmniejszenie niejasności, występujących w opisach języka naturalnego, ułatwienie Ty i Twoi współpracownicy wizualizacji projektu i w celu omówienia alternatywnych projektów. Model powinien być używany razem z innych dokumentów lub dyskusji. Przez siebie model nie reprezentuje pełną specyfikację architektury.
 
 > [!NOTE]
->  W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wiele składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub część aplikacji.
+>  W tym temacie "system" oznacza, że oprogramowanie, które tworzysz. Może być duży zbiór wielu składników oprogramowania i sprzętu, lub pojedynczej aplikacji lub jej część aplikacji.
 
- Architektura systemu można podzielić na dwa obszary:
+ Architektura systemu można podzielić na dwóch obszarach:
 
--   [Ogólnymi procedurami projektowania](#Structure). Opisuje główne składniki i sposób ich interakcji ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duży, każdego składnika może mieć własny projekt wysokiego poziomu, który pokazuje, jak składa się z mniejszych składników.
+-   [Projektowania wysokiego poziomu](#Structure). Opisuje główne składniki i jak współdziałają ze sobą w celu spełnienia poszczególnych wymagań. Jeśli system jest duża, każdy składnik może mieć własną projektowania wysokiego poziomu, który pokazuje, jak jest zbudowany z mniejszych składników.
 
--   [Wzorce projektowe](#Patterns) i konwencje używane w projektach składników. Wzorzec w tym artykule opisano sposób postępowania w osiąganiu celu programowania. Przy użyciu tego samego wzorce w projekcie, zespół może zmniejszyć koszt wprowadzanie zmian i tworzenia nowego oprogramowania.
+-   [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.
 
-##  <a name="Structure"></a> Projekt wysokiego poziomu
- Ogólny projekt zawiera opis głównych składników systemu i sposób ich interakcji ze sobą w celu osiągnięcia celów projektu. Działania na poniższej liście są zaangażowane w tworzenie projektu wysokiego poziomu, ale niekoniecznie w określonej kolejności.
+##  <a name="Structure"></a> Projektowania wysokiego poziomu
+ Projektowania wysokiego poziomu w tym artykule opisano główne składniki systemu i jak współdziałają ze sobą w celu osiągnięcia celów projektowania. Działania na poniższej liście są zaangażowane w opracowywaniu projektowania wysokiego poziomu, ale niekoniecznie w określonej kolejności.
 
- Aby zaktualizować istniejący kod może zacząć głównych składników opisano w nim. Upewnij się, zrozumieć wszelkie zmiany wymagań użytkownika, a następnie dodaje lub modyfikuje interakcje między składnikami. Jeśli tworzysz nowy system Rozpocznij zrozumienie najważniejszych funkcji potrzeb użytkowników. Następnie eksplorować sekwencji interakcji dla przypadków użycia głównego i następnie skonsolidować sekwencji do projektowania składnika.
+ Jeśli aktualizujesz istniejący kod może zacząć poprzez opisanie główne składniki. Upewnij się, zrozumieć wszelkie zmiany wymagań użytkowników i następnie dodać lub zmodyfikować interakcje między składnikami. Jeśli tworzysz nowy system begin przez opis najważniejszych funkcji potrzeb użytkowników. Następnie zapoznaj się z sekwencji interakcji dla przypadków użycia głównego i następnie konsolidowanie sekwencji do projektu składnika.
 
- W każdym przypadku jest przydatne w celu utworzenia innego działania równoległe i Opracuj kodu i testy na wczesnym etapie. Unikać prób przed rozpoczęciem innego, wykonaj jedną z tych aspektów. Zazwyczaj zarówno wymagania i zrozumieć najlepszy sposób, aby zaprojektować system ulegnie zmianie podczas pisania i testowania kodu. W związku z tym należy rozpocząć, opis i kodowania najważniejszych funkcji, wymagań i projektowania. Wprowadź szczegóły w późniejszym iteracji projektu.
+ W każdym przypadku jest przydatne do tworzenia różnych działań równoległych i tworzenie kodu i testów na wczesnym etapie. Należy unikać próby wykonaj jedną z tych aspektów, przed rozpoczęciem korzystania z innej. Zazwyczaj wymagania i zrozumieć, najlepszym sposobem na projektowanie systemu zmieni się podczas pisania i testowania kodu. W związku z tym należy rozpocząć poprzez zrozumienie i kodowania najważniejszych funkcji, wymagań i projektu. Wypełnij szczegóły w późniejszej iteracji projektu.
 
--   [Zapoznanie się z wymaganiami](#Requirements). Punkt początkowy dowolnego projektu jest przejrzysty potrzeb użytkowników.
+-   [Opis wymagań](#Requirements). Punkt początkowy dowolnego projektu jest jasne zrozumienie potrzeb użytkowników.
 
--   [Wzorce architektury](#BigDecisions). Opcje wprowadzone informacje podstawowe technologie i architektury elementów systemu.
+-   [Wzorce architektury](#BigDecisions). Opcje wprowadzone o podstawowych technologii i architektury elementów systemu.
 
--   Model danych składników i interfejsów. Diagramy klas opisujących informacje przekazywane między składnikami i przechowywane wewnątrz składników może wykonywać Rysowanie.
+-   Model danych składników i interfejsy. Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.
 
-##  <a name="Requirements"></a> Zapoznanie się z wymaganiami
- Ogólny projekt kompletna aplikacja jest najbardziej efektywne opracowany wraz z wymagań modelu lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji o modelach wymagania, zobacz [modelu wymagania użytkownika](../modeling/model-user-requirements.md).
+##  <a name="Requirements"></a> Omówienie wymagań
+ Ogólny projekt kompletnej aplikacji jest najbardziej efektywne opracowany wraz z modelem wymagania lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).
 
- W przypadku systemu, które tworzysz składnika w systemie większy, część lub wszystkie wymagania użytkownika dotyczące może zostać zawarte w interfejsów programistycznych.
+ Jeśli system, który tworzysz składnik w systemie większe, część lub całość wymagań może zostać zawarte w interfejsów programistycznych.
 
- Wymagania modelu zawiera te elementy istotnych informacji:
+ Model wymagań zapewnia tych podstawowych rodzajów informacji:
 
--   Należy podać interfejsów. Udostępnionym interfejsem zawiera listę usług lub operacje, które system lub składnik podać swoim użytkownikom człowieka użytkowników lub innych składników oprogramowania.
+-   Interfejs dostarczany. Interfejs dostarczany zawiera listę usług lub operacji, które system lub składnika, musisz podać swoim użytkownikom, czy są one ludzi użytkowników ani innych składników oprogramowania.
 
--   Wymaganych interfejsów. Wymagany interfejs Wyświetla listę usług lub operacje, których można użyć systemu lub składnik. W niektórych przypadkach można zaprojektować tych usług w ramach własnego systemu. W innych przypadkach zwłaszcza, jeśli projektujesz składnik, który można łączyć z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrznego zagadnienia.
+-   Wymagane interfejsy. Interfejs wymagany zawiera listę usług lub operacji, które można użyć systemu lub składnika. W niektórych przypadkach można zaprojektować wszystkie te usługi w ramach własnego systemu. W innych przypadkach zwłaszcza wtedy, gdy projektujesz składnik, który może być łączone z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrzne zagadnienia.
 
--   Jakość usługi wymagania. Wydajność, zabezpieczeń, niezawodności i innych celów i ograniczenia, które muszą spełniać systemu.
+-   Jakość wymagań dotyczących usług. Wydajności, bezpieczeństwa, niezawodności, a inne cele i ograniczenia, które muszą spełniać system.
 
- Wymagania modelu są zapisywane z punktu widzenia użytkowników w systemie, osób lub innych składników oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z kolei w modelu architektury jest do opisu wewnętrzne działanie i pokazać, jak spełniają użytkowników wymaga.
+ Modelu wymagań są zapisywane z punktu widzenia użytkowników w systemie, czy są one osób lub innymi składnikami oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z drugiej strony w modelu architektury jest do opisywania wewnętrzne działanie i pokazują, jak spełniają użytkowników potrzebuje.
 
- Oddzieleniu wymagania i modele architektury jest przydatne, ponieważ jego ułatwia omówiono wymagania z użytkownikami. Pomaga również Refaktoryzuj projektu i alternatywne architektury wziąć pod uwagę podczas aktualizowania wymagania bez zmian.
+ Oddzieleniu wymagań i modeli architektury jest przydatne, ponieważ ułatwia celu omówienia ich wymagań z użytkownikami. Pomaga również Refaktoryzuj projektu i należy wziąć pod uwagę alternatywnych architektury podczas przechowywania wymagania bez zmian.
 
- Szczegółów, które należy umieścić w wymagania lub model architektury zależy od skali projektu i rozmiaru i dystrybucji zespołu. Mały zespół projektu krótki może go nie więcej niż powstawać diagramu klas rozwiązań biznesowych oraz niektóre wzorców projektowych; dużego projektu rozproszone na więcej niż jeden region potrzebny znacznie więcej szczegółów.
+ Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.
 
 ##  <a name="BigDecisions"></a> Wzorce architektury
- Wczesnym etapie programowania należy wybrać najważniejszych technologii i elementy, od których zależy projektu. Obszary, w których należy te opcje są następujące:
+ Na wczesnym etapie projektowania należy wybrać technologie główne i elementów, od których zależy od projektu. Obszary, w których należy te opcje są następujące:
 
--   Podstawowa Wybór technologii, takich jak wybór między bazę danych i system plików i wybór między sieciowych aplikacji klienta sieci Web i tak dalej.
+-   Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci web i tak dalej.
 
--   Opcje platform, takich jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.
+-   Opcje struktury, takie jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.
 
--   Opcje — metoda integracji, na przykład między usługi service bus enterprise lub kanał point-to-point.
+-   Wybór metody integracji na przykład między usługi enterprise service bus lub kanał point-to-point.
 
- Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i można wykonać, zanim szczegółowe wymagania są znane. W systemie duży konfiguracji sprzętu i oprogramowania są zdecydowanie powiązanych.
+ Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i wprowadzenia szczegółowe wymagania są znane. W dużym systemie konfiguracji sprzętu i oprogramowania są silnie powiązane ze sobą.
 
- Wybrane wpływa na sposób używania i interpretować architektury modelu. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klas może reprezentować relacji lub klucze obce w bazie danych w systemie, która jest oparta na plikach XML, skojarzenia może wskazują odsyłacze korzystających z języka XPath. W rozproszonym systemie komunikatów na diagramie sekwencji może reprezentować wiadomości umieszczonego; w aplikacji niezależne reprezentują wywołania funkcji.
+ Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.
 
 ##  <a name="Patterns"></a> Wzorce projektowe
- Wzorzec projektowy jest konspekt sposobu projektowania określonej proporcji oprogramowania, szczególnie taki, który występuje w innej części systemu. Przez przyjęcie podejścia uniform w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszenie kosztów zrozumienie i zmiana kodu.
+ Wzorzec projektowy jest konspektu sposobu projektowania danego aspekt tego oprogramowania, zwłaszcza taki, który występuje w różnych częściach systemu. Przyjmując jednolite podejście w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszyć koszt zrozumienie i zmieniania kodu.
 
- Niektóre wzorce projektowe ogólne, takie jak obserwatora są dobrze znanych i powszechnie stosowane. Istnieją ponadto wzorców, które mają zastosowanie tylko do projektu. Na przykład w sieci Web systemu sprzedaży, będzie kilka operacji w kodzie gdzie zmian w kolejności klienta. W celu zapewnienia był wyświetlany na każdym etapie stanu zlecenia, wszystkie czynności musi występować po konkretnego protokołu aktualizacji bazy danych.
+ Niektóre wzorce projektowe ogólnych, takich jak obserwatora są dobrze znane i powszechnie stosowane. Ponadto są wzorce, które mają zastosowanie tylko do projektu. Na przykład w sieci web system sprzedaży, nastąpi kilka operacji w kodzie gdzie zmian zamówienia klienta. W celu zapewnienia, że był wyświetlany stan zamówienia na każdym etapie, wszystkie czynności należy wykonać konkretnego protokołu aktualizacji bazy danych.
 
- Część pracy architektura oprogramowania ma na celu określenie, jakie wzorce powinny być stosowane przez projekt. Jest to zazwyczaj bieżących zadań, ponieważ nowe wzorce i ulepszenia istniejących wzorców zostaną odnalezione w miarę postępów projektu. Warto zorganizować planu rozwoju wykonywania każdego z Twoich wzorców głównych projektu na wczesnym etapie.
+ Część pracy architektury oprogramowania ma na celu określenie, jakie wzorce powinny być przyjęte przez projekt. Jest to zazwyczaj bieżące zadanie, ponieważ nowe wzorce i ulepszenia istniejących wzorców zostaną odnalezione w miarę postępów projektu. Jest to przydatne do organizowania plan rozwoju, tak aby wykonywania wszystkich Twoich wzorców projektowania główne na wczesnym etapie.
 
- Większość wzorców projektowych może zostać częściowo zawarte w kodzie struktury. Część wzorca można zmniejszyć żądania deweloperom stosowanie poszczególnych klas lub składniki, takie jak warstwa dostępu do bazy danych, które zapewnia, że poprawnie obsługi bazy danych.
+ Większość wzorców projektowych może częściowo zawarte w kodzie framework. Część wzorca można zmniejszyć żądania dla deweloperów do użycia z określonymi klasami lub składniki, takie jak warstwa dostępu do bazy danych, które zapewnia, że baza danych odbywa się poprawnie.
 
- Wzorzec projektowy jest opisana w dokumencie i zwykle obejmuje następujące elementy:
+ Wzorzec projektowy jest opisane w dokumencie i zwykle obejmuje następujące elementy:
 
 -   Nazwa.
 
--   Opis elementu kontekstu, o których ona dotyczy. Kryteria, jakie należy się upewnić, deweloperów, należy rozważyć stosowanie tego wzorca?
+-   Opis kontekst, w której ma zastosowanie. Jakie kryteria należy upewnić się deweloperem, należy rozważyć stosowanie tego wzorca?
 
--   Krótki opis to rozwiąże problem.
+-   Krótki opis problemów, które ona rozwiązuje.
 
--   Model główne elementy i ich relacji. Może to być klasy lub składników i interfejsów o skojarzenia i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:
+-   Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:
 
 -   Konwencje nazewnictwa.
 
 -   Opis sposobu wzorzec rozwiązuje problem.
 
--   Opis zmian, które deweloperzy mogą być w stanie przyjąć.
+-   Opis zmian, które deweloperzy mogą mieć możliwość przyjęcia.
 
 ## <a name="see-also"></a>Zobacz też
 

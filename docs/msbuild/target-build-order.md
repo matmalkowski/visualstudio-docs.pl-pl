@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bc92a670cea08bcd4af0f89c6eb3a00de9f7c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155617"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178959"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
@@ -103,7 +103,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>Określenie kolejności kompilacji docelowej  
+## <a name="determine-the-target-build-order"></a>Określić kolejność kompilowania obiektów docelowych  
  MSBuild określa kolejność kompilowania obiektów docelowych w następujący sposób:  
   
 1.  `InitialTargets` obiekty docelowe są uruchamiane.  

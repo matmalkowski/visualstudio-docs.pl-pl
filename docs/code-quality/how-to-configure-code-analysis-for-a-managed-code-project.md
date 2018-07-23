@@ -15,65 +15,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: afa7a75ae083133f2cff1197b2aa111a1d7bf719
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918759"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179563"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Porady: konfigurowanie analizy kodu dla projektu zarządzanego kodu
 
-W programie Visual Studio, można wybrać z listy analizy kodu *zestawów reguł* do zastosowania do projektu zarządzanego kodu. Domyślny zestaw reguł jest *reguł zalecanych Minimum Microsoft*. Można stosować inną regułę ustawiony jako projekt lub do wszystkich projektów w rozwiązaniu.
+W programie Visual Studio, można wybrać z listy analizy kodu *zestawów reguł* do zastosowania do projektu kodu zarządzanego. Domyślny zestaw reguł jest *reguł zalecanych Minimum Microsoft*. Można stosować inną regułę ustawiony jako projekt lub dla wszystkich projektów w rozwiązaniu.
 
 > [!TIP]
-> Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci Web ASP.NET, zobacz [porady: Konfigurowanie analizy kodu dla aplikacji sieci Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla aplikacji ASP.NET aplikację sieci web](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Aby skonfigurować zestaw reguł dla projektu .NET Framework
 
-1. Otwórz **analizy kodu** kartę na stronach właściwości projektu. Można to zrobić w jeden z następujących sposobów:
+1. Otwórz **analizy kodu** kartę na stronach właściwości projektu. Można to zrobić na następujące sposoby:
 
-   - W **Eksploratora rozwiązań**, wybierz projekt. Na pasku menu wybierz **Analizuj** > **Konfigurowanie analizy kodu** > **dla \<projectname >**.
+   - W **Eksploratora rozwiązań**, wybierz projekt. Na pasku menu wybierz **analizy** > **Konfigurowanie analizy kodu** > **dla \<nazwa_projektu >**.
 
-   - Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, a następnie wybierz **analizy kodu** kartę.
+   - Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, a następnie wybierz pozycję **analizy kodu** kartę.
 
-1. W **konfiguracji** i **platformy** listy, wybierz platformę kompilacji konfiguracji i obiekt docelowy.
+1. W **konfiguracji** i **platformy** listy, wybierz platformę konfiguracji i docelowej kompilacji.
 
-1. Aby uruchomić kod — analiza za każdym razem, gdy projekt jest utworzony przy użyciu wybranej konfiguracji, wybierz **Włącz analizę kodu podczas kompilacji** pole wyboru. Można również uruchomić kod — analiza ręcznie, wybierając **Analizuj** > **uruchamiania analizy kodu** > **Uruchom analizę kodu na \<projectname >**.
+1. Aby uruchomić analizę kodu, za każdym razem, gdy projekt jest kompilowany przy użyciu wybranej konfiguracji, zaznacz **Włącz analizę kodu podczas kompilacji** pole wyboru. Można również uruchomić analizę kodu ręcznie, wybierając **analizy** > **Uruchom analizę kodu** > **Uruchom analizę kodu dla \<nazwa_projektu >**.
 
-1. Domyślnie analizy kodu nie raportuje ostrzeżenia z kodu, który jest automatycznie generowany przez zewnętrznych narzędzi. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, wyczyść **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
+1. Domyślnie program analizy kodu nie raportuje ostrzeżenia z kodu, który jest generowany automatycznie przez narzędzia zewnętrzne. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, należy wyczyścić **Pomijaj wyniki z wygenerowanego kodu** pole wyboru.
 
     > [!NOTE]
-    > Ta opcja nie odrzuca błędy analizy kodu i ostrzeżeń z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Jednocześnie można wyświetlać i obsługa kodu źródłowego dla formularza lub szablonu, bez konieczności jego zastąpienie.
+    > Ta opcja nie pomija błędy analizy kodu i ostrzeżenia z wygenerowanego kodu podczas błędy i ostrzeżenia są wyświetlane w formularzach i szablony. Zarówno można przeglądać i zachować kod źródłowy dla formularza lub szablon, bez konieczności on zastąpiony.
 
 1. W **Uruchom ten zestaw reguł** listy, wykonaj jedną z następujących czynności:
 
-    - Wybierz zestaw reguł, którego chcesz używać.
+    - Wybierz zestaw reguł, który chcesz użyć.
 
-    - Wybierz  **\<Przeglądaj >** znaleźć zestaw istniejącej reguły niestandardowe, których nie ma na liście.
+    - Wybierz  **\<Przeglądaj … >** można znaleźć, ustaw istniejącej reguły niestandardowe, który nie jest na liście.
 
     - Zdefiniuj [niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md).
 
-## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Określ zestawy reguł dla wielu projektów w rozwiązaniu
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Określanie zestawów reguł dla wielu projektów w rozwiązaniu
 
-Domyślnie są przypisane projektów zarządzanych rozwiązania *reguł zalecanych Minimum Microsoft* zestawu reguł analizy kodu. Można zmienić zestawów reguł, które są przypisane do projektów rozwiązania w **właściwości** okno dialogowe dla rozwiązania.
+Domyślnie są przypisywane projektów zarządzanych rozwiązania *reguł zalecanych Minimum Microsoft* zestaw reguł analizy kodu. Można zmienić zestawów reguł, które są przypisane do projektów rozwiązania w **właściwości** okno dialogowe dla rozwiązania.
 
 1. Otwórz rozwiązanie w programie Visual Studio.
 
-2. Na **Analizuj** menu, wybierz opcję **Konfigurowanie analizy kodu dla rozwiązania**.
+2. Na **analizy** menu, wybierz opcję **Konfigurowanie analizy kodu dla rozwiązania**.
 
-3. Jeśli to konieczne, rozwiń węzeł **wspólne właściwości**, a następnie wybierz **ustawienia analizy kodu**.
+3. Jeśli to konieczne, rozwiń węzeł **wspólne właściwości**, a następnie wybierz pozycję **ustawienia analizy kodu**.
 
-4. Można określić zestawu reguł dla jednego lub więcej projektów:
+4. Można określić zestaw reguł dla jednego lub więcej projektów:
 
     - Aby określić zestaw reguł dla pojedynczego projektu, wybierz nazwę projektu.
 
-    - Aby określić zestaw reguł dla wielu projektów, przytrzymaj **Ctrl** i zaznacz nazwy projektu.
+    - Aby określić zestaw reguł dla wielu projektów, przytrzymaj wciśnięty **Ctrl** i wybrać nazwy projektu.
 
-    - Aby określić wszystkie projekty w rozwiązaniu, przytrzymaj **Shift** i kliknij na liście projektu.
+    - Aby określić wszystkie projekty w rozwiązaniu, przytrzymaj wciśnięty **Shift** i kliknij pozycję na liście projektu.
 
-5. Wybierz **zestawu reguł** pole projektu, a następnie wybierz nazwę reguły, ustaw chcesz zastosować.
+5. Wybierz **zestaw reguł** pole projektu, a następnie wybierz nazwę reguły, ustaw chcesz zastosować.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Konfigurowanie analizy kodu dla aplikacji internetowej ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Porady: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

@@ -1,5 +1,5 @@
 ---
-title: Zasoby dla rozwiązywania problemów
+title: Zasoby dla rozwiązywania problemów z błędami
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,30 +95,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302629"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176544"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Błędy środowiska programowania zintegrowane zasoby dla rozwiązywania problemów
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tworzenie środowiska błędami związanymi ze zintegrowanym zasoby dla rozwiązywania problemów
 
-Nie wszystkie komunikaty o błędach ma określonego skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie pomaga w rozwiązaniu problemu, można znaleźć inne zasoby, takie jak artykuły bazy wiedzy, fora lub pomocą techniczną.
+Nie wszystkie komunikaty o błędach mieć określone skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie nie pomóc rozwiązać ten problem, należy skontaktować się inne zasoby, takie jak artykuły bazy wiedzy, forów lub Centrum pomocy technicznej.
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 
-Można wyszukiwać bazy wiedzy Knowledge Base (KB) online w artykułach dotyczących produktu. Nie wszystkie problemy dotyczące mają odpowiedni artykuł KB, ale zazwyczaj są udokumentowane błędów występujących duża liczba klientów. Dostęp do artykułów bazy wiedzy na [Microsoft Support](https://support.microsoft.com) witryny sieci Web.
+Wyszukiwać w bazie wiedzy Knowledge Base (KB) online w poszukiwaniu artykułów dotyczących problemów produktu. Nie wszystkie problemy mają odpowiednie artykuły bazy wiedzy, ale zazwyczaj opisano błędów napotkanych przez znacznej liczby użytkowników. Dostęp do artykułów bazy wiedzy na [Microsoft Support](https://support.microsoft.com) witryny sieci Web.
 
-## <a name="developer-forums"></a>Fora deweloperów
+## <a name="developer-forums"></a>Fora dla deweloperów
 
-Fora umożliwiają interakcję z innymi deweloperów, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla pytania o problemie można opublikuj wpis na forum. Można także przeszukać grup dyskusyjnych, aby zobaczyć, czy inne ogłoszeniu o ten sam problem.
+Fora umożliwiają interakcję z innymi deweloperami i również pracownicy firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla, możesz zadać pytania o tym problemie na forum. Można również wyszukiwać grup dyskusyjnych, aby zobaczyć, czy inne wypowiadali się o ten sam problem.
 
-Dostępne fora, blogi, rozmowy i innych zasobów na [społeczności technicznych Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) witryny sieci Web.
+Możesz uzyskać dostęp do forów, blogów, rozmów i innych zasobów na [społeczności techniczne Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) witryny sieci Web.
 
 ## <a name="product-support"></a>Pomoc techniczna
 
-Jeśli po wykonaniu inne zasoby nadal masz pytania, możesz skontaktować się usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twoim rejonie, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).
+Jeśli po wypróbowaniu innych zasobów nadal masz pytania, możesz skontaktować się ze usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twojej okolicy, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).
 
 ## <a name="see-also"></a>Zobacz także
 

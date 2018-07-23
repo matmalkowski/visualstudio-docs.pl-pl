@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078995"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177198"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchomić zadanie jeden raz z każdej partii. Może być mylące zrozumieć, dokładnie jakie elementy są przekazywany przy użyciu której usługi batch. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.  
@@ -133,7 +133,7 @@ Poniższy przykład pokazuje, jak podzielić wielu listy elementów na partie na
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>Przetwarzanie wsadowe jeden element w czasie  
+## <a name="batch-one-item-at-a-time"></a>Jeden element usługi Batch w czasie  
  Przetwarzanie wsadowe można także wykonać na metadane dobrze znanego elementu, który jest przypisany do każdego elementu przy utworzeniu. Gwarantuje to, że każdy element w kolekcji mają niektóre metadane na potrzeby przetwarzania wsadowego. `Identity` Wartości metadanych jest unikatowy dla każdego elementu i jest przydatne w przypadku dzielenia każdy element na liście elementów do oddzielnej partii. Aby uzyskać pełną listę metadane dobrze znanego elementu, zobacz [metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Poniższy przykład pokazuje, jak partii każdego elementu na liście elementów, jeden na raz. Ponieważ `Identity` wartość metadanych każdy element jest unikatowa, `ExampColl` listy elementów jest podzielony na partie sześć partie zawierające jeden element listy elementów. Obecność `%(Identity)`w `Text` powiadamia atrybutu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , należy wykonać przetwarzanie wsadowe.  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>Filtrowanie listy elementów  
+## <a name="filter-item-lists"></a>Filtruj element listy  
  Przetwarzanie wsadowe może służyć do filtrowania niektórych elementów z listy elementów przed przekazaniem go do zadania. Na przykład filtrowanie `Extension` wartość metadane dobrze znanego elementu pozwala na uruchamianie zadania tylko plików z określonym rozszerzeniem.  
   
  Poniższy przykład pokazuje, jak podzielić listy elementów na podstawie metadanych elementu partii, a następnie filtrować te partie, gdy są przekazywane do zadania. `ExampColl` Listy elementów jest podzielony na trzy partie na podstawie `Number` metadanych elementu. `Condition` Atrybut zadanie określa, który tylko partii z `Number` wartość metadanych z elementu `2` zostanie przekazany do zadania  

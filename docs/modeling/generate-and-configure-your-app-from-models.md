@@ -9,68 +9,68 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 14909ec9b5ad989dc8042b6196e84964ffb190af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952961"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176814"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
-Można wygenerować lub skonfigurować części aplikacji z modelu.
+Można wygenerować lub skonfigurować poszczególnych części aplikacji z modelu.
 
- Model reprezentuje wymagania bezpośrednio od kodu. Przez wyprowadzanie zachowania aplikacji bezpośrednio z modelu, mogą odpowiadać na zmianę wymagań znacznie więcej szybkie i niezawodne niż aktualizowanie kodu. Mimo że niektóre początkowej pracy jest wymagane do skonfigurowania wyprowadzenia, inwestycji jest zwracany, Jeśli przypuszczasz, zmiany w wymaganiach lub jeśli planujesz wykonanie kilku różnych wariantów produktu.
+ Model reprezentuje wymagania bezpośrednio niż kod. Wynikające zachowanie aplikacji bezpośrednio z modelu, można odpowiedzieć zmienionych wymagań znacznie szybciej i niezawodny niż przez aktualizowania kodu. Mimo że niektóre roboczego jest wymagane do skonfigurowania tworzenia elementów pochodnych, inwestycji jest zwracany, jeśli oczekujesz, zmiany w wymaganiach lub jeśli planujesz wprowadzić kilka wariantów produktu.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generowanie kodu aplikacji na podstawie modelu
- Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, w którym można przechowywać modelu. Aby uzyskać więcej informacji, zobacz:
+ Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, w którym są przechowywane modelu. Aby uzyskać więcej informacji, zobacz:
 
 -   [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 -   [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
 
- Ta metoda jest stosowany przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków, a następnie wybierz kilka części o tym, który ma zostać różnią się w modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się plikami tekstowymi szablonu (.TT —). W tym momencie pliki źródłowe .cs będą automatycznie generowane z plików szablonu, aplikacja będzie działać tak jak poprzednio.
+ Ta metoda jest łatwy do zastosowania przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków i wybierz kilka części, którą chcesz się nieznacznie różnić od modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się tekst, pliki szablonów (.tt). W tym momencie .cs pliki źródłowe zostaną automatycznie wygenerowane z plików szablonów, dzięki czemu aplikacja będzie działać tak jak poprzednio.
 
- Następnie możesz wykonać jedną z części kodu i Zamień tekst wyrażenia szablonu, który odczytuje modelu i generuje część pliku źródłowego. Co najmniej jedną wartość modelu powinna generować oryginalne źródło, aby ponownie uruchomić aplikację i będzie działać jak poprzednio. Po przetestowaniu wartości inny model, możesz przejść do wstawienia szablonowe w innej części kodu.
+ Następnie możesz wykonać jedną z części pakietu kodu i Zamień wyrażenia szablonu tekstu, który odczytuje model i generuje część pliku źródłowego. Co najmniej jedną wartość modelu będzie generował oryginalne źródło, aby ponownie uruchomić aplikację i będzie ona działać tak jak poprzednio. Po przetestowaniu modelu różnych wartości, możesz przejść do wstawienia wyrażeń szablonu w innej części kodu.
 
- Ta metoda przyrostowe oznacza, że generowanie kodu jest zazwyczaj podejście niskiego ryzyka. Wynikowa aplikacji zwykle wykonać prawie oraz odręcznego wersji.
+ Ta metoda przyrostowe oznacza, że generowanie kodu zwykle podejścia o niskim ryzyku. Wynikowy aplikacje zwykle wykonać prawie oraz odręcznej wersji.
 
- Jednak po uruchomieniu z istniejącej aplikacji, może się okazać, że wiele refaktoryzacji jest wymagana do oddzielania różne zachowania, które są objęte modelu, dzięki czemu może być niezależnie zmieniać. Firma Microsoft zaleca ocenić ten aspekt aplikacji, podczas szacowania kosztów projektu.
+ Jednak w przypadku uruchomienia z istniejącą aplikacją, może się okazać, że wiele refaktoryzacji jest wymagany do oddzielania różne zachowania, które są zarządzane przez model, dzięki czemu mogą być niezależne zróżnicowane. Firma Microsoft zaleca oceny ten aspekt aplikacji, podczas szacowania kosztów projektu.
 
-## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie aplikacji z modelu
- Do zmiany zachowania aplikacji w czasie wykonywania, nie można użyć generowania kodu, który generuje kod źródłowy, aby aplikacja została skompilowana. Zamiast tego można zaprojektować aplikacji ma zostać odczytany model i odpowiednio różnicującej jego zachowania. Aby uzyskać więcej informacji, zobacz:
+## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie własnej aplikacji z modelu
+ Jeśli chcesz zróżnicować zachowanie aplikacji w czasie wykonywania, nie można użyć generowania kodu, który generuje kod źródłowy, zanim aplikacja jest kompilowana. Zamiast tego można zaprojektować aplikację do odczytania modelu i różnią się odpowiednio jego zachowanie. Aby uzyskać więcej informacji, zobacz:
 
 -   [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- Ta metoda również będą stosowane przyrostowo, ale więcej pracy na początku. Należy napisać kod, który zostanie odczytany model i skonfiguruj struktury, która umożliwia jego wartości umożliwić dostęp do zmiennej części. Tworzenie ogólnych części zmiennej jest droższe niż generowanie kodu.
+ Ta metoda również będą stosowane przyrostowo, ale ma więcej pracy na początku. Musisz napisać kod, który będzie odczytania modelu i skonfigurować strukturę, która zezwala na jego wartości umożliwić dostęp do zmiennej części. Zmienna części ogólnego jest droższe niż generowania kodu.
 
- Aplikacja ogólna zazwyczaj wykonuje także mniej niż jego odpowiedników określone. Jeśli wydajność jest niezwykle ważny, planu projektu powinien zawierać ocenę to zagrożenie.
+ Aplikacja ogólna zwykle wykonuje mniej również niż ich odpowiedniki określone. Jeśli wydajność ma kluczowe znaczenie podczas, plan projektu powinna zawierać oceny tego ryzyka.
 
-## <a name="developing-a-derived-application"></a>Opracowanie aplikacji pochodne
- Może być przydatne następujące ogólne wytyczne.
+## <a name="developing-a-derived-application"></a>Opracowywanie aplikacji pochodne
+ Ogólne wytyczne mogą się okazać przydatne.
 
--   **Uruchom określone, a następnie Uogólnij.** Najpierw zapisać określonej wersji aplikacji. Ta wersja powinny działać w jednym zestawie warunków. Po zakończeniu jego działa poprawnie, możesz wprowadzić niektóre on pochodzić z modelu. Rozszerzanie stopniowo pochodnej części.
+-   **Uruchom określone, a następnie Uogólnij.** Najpierw zapisać określoną wersję aplikacji. Ta wersja powinny działać w jeden zestaw warunków. Jeżeli jesteś zadowolony jej działa poprawnie, możesz wprowadzić niektóre pochodzi z modelu. Rozszerz stopniowo pochodnej części.
 
-     Na przykład projekt witryny sieci Web, który ma określony zestaw stron sieci Web przed rozpoczęciem projektowania aplikacji sieci Web prezentuje stron, które są zdefiniowane w modelu.
+     Na przykład projekt witryny sieci Web, która ma określony zestaw stron sieci web, przed rozpoczęciem projektowania aplikacji sieci web, która przedstawia stron, które są zdefiniowane w modelu.
 
--   **Model aspekty typu variant.** Zidentyfikuj aspektów, które będą się różnić między wdrożenia jednego i drugiego, lub w czasie, gdy wymagania dotyczące zmiany. Są to aspektów, które powinny pochodzić z modelu.
+-   **Model wariantu aspektów.** Zidentyfikuj aspektów, które będą się różnić między wdrażania jednego i drugiego, lub wraz z upływem czasu zgodnie z wymaganiami zmienić. Są to aspektów, które powinny pochodzić z modelu.
 
-     Na przykład jeśli zestaw sieci Web pages i łącza między ich zmiany, ale styl i format stron jest zawsze taki sam, a następnie modelu powinna zawierać opis łącza, ale nie ma do opisywania formatu strony.
+     Na przykład jeśli zestaw web pages i łączy między ich zmiany, ale styl i format stron jest zawsze taki sam, a następnie modelu powinna opisywać łącza, ale nie ma do opisywania formatu stron.
 
--   **Oddzielne problemy.** Jeśli aspekty zmiennej można podzielić na niezależne obszarów, użycia osobnych modeli dla każdego obszaru. ModelBus można zdefiniować operacje, które mają wpływ zarówno modeli i ograniczenia między nimi.
+-   **Oddzielne uwagi.** Jeśli zmiennej aspekty można podzielić na niezależne obszarów, należy użyć oddzielnych modeli dla każdego obszaru. ModelBus można zdefiniować operacje, które mają wpływ na modelach i ograniczenia między nimi.
 
-     Na przykład użyć jednego modelu do zdefiniowania nawigacji między stronami sieci Web i inny model, do definiowania układu strony.
+     Na przykład można użyć jednego modelu do zdefiniowania Nawigacja między stronami sieci web i innego modelu, aby zdefiniować układ stron.
 
--   **Model to wymaganie nie rozwiązania.** Projektowanie modelu, tak aby wymagania użytkownika. Z kolei nie zaprojektować notacji zgodnie ze zmiennej aspektów wdrożenia.
+-   **Model wymóg nie rozwiązania.** Projektowanie modelu tak, aby go w tym artykule opisano wymagania użytkownika. Z drugiej strony nie należy projektować notacji zgodnie ze zmiennej aspektów implementacji.
 
-     Na przykład model nawigacji sieci Web powinno reprezentować stron sieci Web i hiperłącza między nimi. Model nawigacji sieci Web nie powinno reprezentować fragmentów kodu HTML lub klas w aplikacji.
+     Na przykład model nawigacyjnych w sieci web powinny reprezentować stron sieci web i hiperłączy między nimi. Model nawigacyjnych w sieci web nie powinny reprezentować fragmenty kodu HTML lub klas w aplikacji.
 
--   **Generowanie i interpretowania?** Jeśli wymagania dotyczące konkretnego wdrożenia rzadko ulegnie zmianie, generowanie kodu programu na podstawie modelu. Wymagania często mogą ulec zmianie lub mogą współistnieć w więcej niż jeden typ variant w tym samym wdrożeniu, zapisu aplikacji, dzięki czemu może odczytywać i interpretować modelu.
+-   **Generowanie i interpretowania?** Jeśli wymagania dotyczące określonego wdrożenia będą rzadko się zmieniają, generowania kodu programu z modelu. Jeśli wymagania często mogą ulec zmianie lub mogą współistnieć w więcej niż jeden typ variant, w tym samym wdrożeniu, wówczas aplikacja jest zapisywana tak, aby można odczytać i zinterpretować modelu.
 
-     Na przykład jeśli używasz modelu witryny sieci Web umożliwiające tworzenie szereg różnych i oddzielnie zainstalowanego witryn sieci Web, następnie należy generować kod lokacji z modelu. Jednak go użyć modelu do sterowania lokacji, który zmienia codziennie, wówczas jest napisanie serwer sieci Web odczytuje modelu i w związku z tym przedstawia informacje o lokacji.
+     Na przykład jeśli używasz modelu witryny sieci Web do tworzenia szereg różnych i oddzielnie zainstalowanego witryn sieci Web, następnie należy generować kod witryny z modelu. Jednak go użyć modelu do sterowania lokacji, która zmienia się codziennie, a następnie jest napisanie serwera sieci web, który odczytuje model i przedstawia informacje o lokacji.
 
--   **UML lub DSL?** Należy rozważyć utworzenie ustawienia notacji modelowania przy użyciu stereotypy w celu rozszerzenia kodu UML. Zdefiniuj DSL, jeśli nie diagram UML, która pasuje do tego celu. Jednak uniknąć dzielenia standardowa semantyka UML.
+-   **UML lub DSL?** Należy rozważyć utworzenie usługi notacji modelowania przy użyciu stereotypy w celu rozszerzenia UML. Jeśli nie diagramu UML, która pasuje do tego celu, należy zdefiniować języka DSL. Jednak należy unikać istotne semantyce UML.
 
-     Na przykład diagram klasy UML jest kolekcją pola i strzałki; w tym notacji teoretycznie zdefiniować żadnych czynności. Jednak nie zaleca się używanie diagramu klas, z wyjątkiem przypadków, gdy są w rzeczywistości opisujące zestaw typów. Na przykład można dostosować diagramy klas opisujących różne rodzaje stron sieci Web.
+     Na przykład diagram klas UML jest Kolekcja pól i strzałki; w tym notacji może teoretycznie zdefiniujesz niczego. Jednak nie zaleca się użycie na diagramie klasy, z wyjątkiem sytuacji, gdy są w rzeczywistości opisujące zestaw typów. Na przykład można przystosować diagramów klas do opisania różnych typów stron sieci web.
 
 ## <a name="see-also"></a>Zobacz też
 

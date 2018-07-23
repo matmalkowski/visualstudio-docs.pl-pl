@@ -1,5 +1,5 @@
 ---
-title: Dodawanie reguły progu obciążenia testowania w programie Visual Studio
+title: Dodaj regułę progową obciążeniowy w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,37 +13,36 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965549"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179882"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Porady: Dodawanie reguły progu za pomocą edytora testu obciążenia
 
-Reguły progu w testach obciążenia porównaj wartość licznika wydajności z wartością stałą lub inną wartość licznika wydajności.
+Reguły progów w testach obciążenia porównanie wartości licznika wydajności za pomocą wartości stałej lub inną wartość licznika wydajności.
 
 ## <a name="to-add-a-threshold-rule"></a>Aby dodać reguły progu
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
 2.  W edytorze testu obciążenia, rozwiń węzeł **zbiorów liczników** węzła.
 
-3.  Rozwiń jedno ze **kategorii licznika** w jednym z zestawów liczników. Na przykład można wybrać **LoadTest:Scenario**. Rozwiń węzeł.
+3.  Rozwiń jedno ze **kategorie liczników** w jednym ze zbiorów liczników. Na przykład, możesz wybrać **loadtest: Scenario**. Rozwiń węzeł.
 
-4.  Kliknij prawym przyciskiem myszy jeden z liczników, na przykład **obciążenie użytkownikami**w obszarze **LoadTest:Scenario**. Wybierz **Dodawanie reguły progu**.
+4.  Kliknij prawym przyciskiem myszy jeden z liczników, na przykład **obciążenie użytkownikami**w obszarze **loadtest: Scenario**. Wybierz **Dodaj regułę progową**.
 
-     **Dodawanie reguły progu** zostanie wyświetlone okno dialogowe.
+     **Dodaj regułę progową** zostanie wyświetlone okno dialogowe.
 
-5.  Są dostępne dwa typy zasad: porównanie stałej i licznik porównania. Wybierz odpowiedni typ i ustaw wartości.
+5.  Można wybrać spośród dwóch typów zasad: **Porównaj stałą** i **porównanie liczników**. Wybierz odpowiedni typ i ustaw wartości.
 
     > [!NOTE]
-    > Ustaw **alertu Jeśli za pośrednictwem** właściwości **True** do wskazywania powyżej wartości progowej problem, lub do **False** do wskazywania poniżej wartości progowej problem.
+    > Ustaw **alertu, gdy nastąpi przekroczenie** właściwości **True** do wskazania przekroczenia progu to problemu, lub **False** do wskazywania objętych poniżej wartości progowej problem.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie naruszeń zasady progu](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

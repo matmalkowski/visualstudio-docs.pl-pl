@@ -1,5 +1,5 @@
 ---
-title: Określ wartość procentową z wirtualnych użytkowników sprawdzający dane pamięci podręcznej sieci Web użycia dla obciążenia w programie Visual Studio
+title: Określ wartość procentową z użytkownicy wirtualni sprawdzająca dane w pamięci podręcznej sieci Web użycie dla obciążenia w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,41 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447261"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180054"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Porady: określanie wartości procentowej użytkowników wirtualnych korzystających z danych pamięci podręcznej sieci Web
 
-Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można zmienić właściwości scenariuszy, aby spełnić potrzeby i celów testowania przy użyciu **edytorze testu obciążenia**. Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania przy użyciu **edytora testu obciążenia**. Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
 
-**Procent nowych użytkowników** właściwość jest ustawiona w oknie właściwości. Edytowanie właściwości scenariusza testów obciążenia w edytorze testu obciążenia.
+**Procent nowych użytkowników** właściwość jest ustawiona w oknie dialogowym właściwości. Możesz edytować właściwości scenariusza testów obciążenia w edytorze testu obciążeniowego.
 
-**Procent nowych użytkowników** właściwość ma wpływ na sposób, w którym testu obciążenia symuluje buforowanie zostałoby przeprowadzone przez przeglądarkę sieci Web. Domyślnie **procent nowych użytkowników** właściwość jest ustawiona na 0%. Jeśli wartość **procent nowych użytkowników** właściwość jest ustawiona na 100%, każdego testu wydajności sieci Web uruchomione w teście obciążenia jest traktowany jak pierwszego użytkownika w czasie do witryny sieci Web, który nie ma żadnej zawartości z witryny sieci Web w swojej pamięci podręcznej przeglądarki z previ odwiedza jednostek organizacyjnych. W związku z tym wszystkie żądania w teście sieci Web, w tym wszystkich zależnych żądań, takich jak obrazy, zostaną pobrane.
+**Procent nowych użytkowników** właściwość ma wpływ na sposób, w którym zasymulowano obciążenie krokowe buforowania zostałyby wykonane przez przeglądarkę sieci web. Domyślnie **procent nowych użytkowników** właściwość jest ustawiona na 0%. Jeśli wartość **procent nowych użytkowników** właściwość jest ustawiona na 100%, każdy test wydajności sieci web, uruchom w teście obciążeniowym jest traktowany jak witrynę po raz pierwszy do witryny internetowej który nie ma żadnej zawartości z witryny sieci Web w swojej pamięci podręcznej przeglądarki, z poprzednie wizyty. W efekcie wszystkie żądania w teście sieci web, w tym wszystkich żądań zależnych, taką jak obrazy, zostaną pobrane.
 
 > [!NOTE]
-> Po zażądaniu tego samego zasobu buforowalnej w więcej niż raz w teście sieci web żądania nie zostaną pobrane.
+> Jeśli ten sam zasób podlega buforowaniu, wymagane są więcej niż raz w teście sieci web, żądania nie zostaną pobrane.
 
-Jeśli jesteś witryny sieci Web, która ma znaczących zwracany użytkowników, którzy mogą mieć obrazów do testowania obciążenia i innych buforowalnej zawartości buforowane lokalnie, następnie ustawienie 100% **procent nowych użytkowników** wygeneruje więcej właściwości żądań pobierania nie może mieć miejsce w rzeczywistych użycia. W takim przypadku należy oszacować procentową wizyt do witryny sieci Web, które pochodzą z pierwszym uruchomieniu witryny sieci web i ustaw **procent nowych użytkowników** właściwości odpowiednio.
+Jeśli jesteś obciążeniowy witryny sieci Web, która zawiera szereg istotnych zwracany użytkowników, którzy mogą mieć obrazów i innych podlega buforowaniu zawartości lokalnie w pamięci podręcznej, następnie ustawienie 100% **procent nowych użytkowników** właściwość wygeneruje więcej żądania pobierania nie może mieć miejsce w wykorzystanie w świecie rzeczywistym. W takim przypadku należy oszacować procentową wizyt do witryny sieci Web, które pochodzą z pierwszym uruchomieniu witryny sieci Web, a następnie ustaw **procent nowych użytkowników** właściwość odpowiednio.
 
-## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Aby określić procent nowych użytkowników do scenariusza
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Aby określić procent nowych użytkowników na potrzeby scenariusza
 
-1. Otwórz testu obciążenia.
+1. Otwórz test obciążenia.
 
-     **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2. Obciążenia test drzew **scenariusze** folderu, wybierz węzeł scenariusza, aby zmienić wartość procentowa nowego użytkownika dla.
+2. Obciążenia test drzew **scenariuszy** folderu, wybierz węzeł scenariusz, aby zmienić nową wartość procentową użytkownika dla.
 
-3. Na **widoku** menu, wybierz opcję **okna właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-     Kategorie i właściwości tego scenariusza są wyświetlane w oknie właściwości.
+     Kategorie i właściwości tego scenariusza są wyświetlane w oknie dialogowym właściwości.
 
-4. Ustaw wartość **procent nowych użytkowników** właściwości, wprowadzając numer procent nowych użytkowników.
+4. Ustaw wartość **procent nowych użytkowników** właściwość, według numerem procent nowych użytkowników.
 
-5. Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **procent nowych użytkowników** wartość.
+5. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **procent nowych użytkowników** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

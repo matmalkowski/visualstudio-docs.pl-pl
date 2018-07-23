@@ -19,37 +19,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056300"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178429"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Informacje o oknie rejestrów w programie Visual Studio
-**Rejestruje** okno jest dostępne tylko wtedy, gdy w włączone jest debugowanie poziomie adresu **opcje** okno dialogowe **debugowanie** węzła.  
+**Rejestruje** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
   
- Rejestry są specjalne lokalizacje w procesora (CPU), które są używane do przechowywania małych fragmentów danych, który procesor jest aktywnie nad. Kompilowanie lub interpretowanie kodu źródłowego generuje instrukcje dotyczące przenoszenia danych z pamięci do rejestrów i z powrotem ponownie, zgodnie z potrzebami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybko w porównaniu do uzyskiwania dostępu do danych w pamięci, więc zwykle wykonać szybciej niż przy użyciu kodu, który wymaga procesora do stale ładowanie i zwalnianie rejestrów kod, który umożliwia procesora do przechowywania danych w rejestrze i wielokrotnie do niego dostęp. Aby ułatwić kompilator, aby przechowywać dane w rejestrach i wykonywać inne optymalizacje, należy unikać używania zmiennych globalnych i zależą od zmiennych lokalnych, jak to możliwe. Kod napisany w ten sposób jest nazywany mają dobrej miejscowości odwołania. W przypadku niektórych języków, takich jak C/C++ programistę można zadeklarować zmiennej rejestru, który informuje kompilator, aby spróbuj najlepiej jest, aby zachować zmiennej w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [zarejestrować — słowo kluczowe](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
+ Rejestry są specjalne lokalizacje w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, który procesor jest już aktywnie pracują nad. Kompilowanie lub interpretowanie kod źródłowy generuje instrukcje, które przenoszą dane z pamięci do rejestrów i z powrotem, zgodnie z potrzebami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie uzyskiwanie dostępu do danych w pamięci, dzięki czemu kod, który umożliwia procesora do przechowywania danych w rejestrze, a następnie wielokrotnie do niego dostęp, zwykle działają szybciej niż kod, który wymaga procesora do stale ładowanie i zwalnianie rejestrów. Aby ułatwić kompilator, aby przechowywać dane w rejestrach i wykonywać inne optymalizacje, należy unikać używania zmiennych globalnych i zależą od zmiennych lokalnych, jak to możliwe. Kod napisany w ten sposób jest nazywany ma dobrą miejscowość odwołania. W przypadku niektórych języków, takich jak C/C++ programisty należy zadeklarować zmienną rejestru, który informuje kompilator, aby spróbować doskonale zapewnienie zmiennej w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [zarejestrować — słowo kluczowe](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
   
- Rejestruje można podzielić na dwa typy: ogólnego przeznaczenia i specjalne. Rejestruje ogólnego przeznaczenia przechowywania danych dla ogólnych operacji, takich jak dodawanie dwóch liczb lub odwołuje się do elementu w tablicy. Rejestruje specjalny ma określonych celów oraz specjalne znaczenie. Dobrym przykładem jest rejestrze wskaźnik stosu, który procesor jest używane do śledzenia stosu wywołań programu. Dla programisty będzie prawdopodobnie nie manipulować wskaźnik stosu bezpośrednio. Jednak jest niezbędne do sprawnego funkcjonowania programu, ponieważ bez wskaźnik stosu procesora może nie wiedzieć, gdzie powrócić do końca wywołania funkcji.  
+ Rejestry można podzielić na dwa typy: ogólnego przeznaczenia i specjalnego przeznaczenia. Ogólnego przeznaczenia rejestrów przechowywania danych ogólne operacje, takie jak dodanie dwóch liczb lub odwołuje się do elementu w tablicy. Rejestruje specjalny ma określonych celów oraz specjalne znaczenie. Dobrym przykładem jest rejestrze wskaźnik stosu, który procesor jest używane do śledzenia stosu wywołań programu. Programistą będzie prawdopodobnie nie manipulować wskaźnik stosu bezpośrednio. Jest jednak niezbędne do prawidłowego funkcjonowania program ponieważ bez wskaźnik stosu procesora nie wiadomo, gdzie można powrócić do na końcu wywołania funkcji.  
   
- Większość rejestrów ogólnego przeznaczenia przechowywane tylko danych jednego elementu. Na przykład pojedynczy liczba całkowita, liczba zmiennoprzecinkowa lub elementu tablicy. Niektóre nowsze mieć większe rejestrów, nazywany rejestrów wektora, zawierających mała tablica danych. Ponieważ posiadają bardzo dużo danych rejestrów wektor zezwala na operacje dotyczące tablice wykonywane bardzo szybko. Wektor rejestrów najpierw były używane na superkomputerów kosztownych, wysokiej wydajności, ale teraz stają się dostępne na mikroprocesorami, gdzie są używane do wykorzystanie w znacznym operacje graficzne.  
+ Większość rejestrów ogólnego przeznaczenia przechowują tylko danych jednego elementu. Na przykład pojedyncze liczby całkowite, liczba zmiennoprzecinkowa lub element tablicy. Niektóre procesory nowszej mają większe rejestrów, o nazwie rejestrów wektorowych, zawierających małą tablicę danych. Ponieważ przechowują tak dużej ilości danych, rejestrów wektorowych zezwala na operacje dotyczące tablic wykonywane bardzo szybko. Rejestrów wektorowych najpierw były używane na superkomputerów kosztownych, wysokiej wydajności, ale teraz stają się dostępne na mikroprocesorów, gdzie są one używane do wspaniałą korzyścią stosowania w ramach intensywnie korzystających z operacji graficznych.  
   
- Procesor ma zazwyczaj dwa zestawy rejestrów ogólnego przeznaczenia, jeden zoptymalizowane pod kątem operacji zmiennoprzecinkowych i innych operacjach liczby całkowitej. Spodziewać są one nazywane zmiennoprzecinkowych i rejestruje liczbę całkowitą.  
+ Procesor ma zwykle dwa zestawy rejestrów ogólnego przeznaczenia, jeden zoptymalizowane pod kątem operacji zmiennoprzecinkowych i inne operacje liczby całkowitej. Nie zaskakująco są to tak zwane zmiennoprzecinkowe i rejestruje liczbę całkowitą.  
   
- Kod zarządzany jest kompilowana w czasie wykonywania do kodu macierzystego, który uzyskuje dostęp do rejestrów fizyczny procesor. **Rejestruje** okno wyświetla te fizycznych rejestruje środowisko uruchomieniowe języka wspólnego lub kodu natywnego. **Rejestruje** okna nie są wyświetlane informacje do rejestru dla skryptu lub aplikacji SQL, ponieważ skrypt i SQL są języki, które nie obsługują koncepcji rejestrów.  
+ Kod zarządzany jest kompilowana w czasie wykonywania do kodu macierzystego, który uzyskuje dostęp do fizycznego rejestry procesora. **Rejestruje** jest wyświetlana w oknie tych fizycznych rejestrów dla środowiska uruchomieniowego języka wspólnego lub kodu natywnego. **Rejestruje** okna nie wyświetla informacji rejestru dla skryptu lub aplikacji programu SQL, ponieważ skrypt i SQL są języki, które nie obsługują koncepcję rejestrów.  
   
  Aby uzyskać więcej informacji na temat wyświetlania **rejestruje** okna, zobacz [korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md).  
   
- Podczas przeglądania **rejestruje** , zostaną wyświetlone wpisy, takich jak `EAX = 003110D8`.  
+ Podczas przeglądania **rejestruje** okna, zobaczysz wpisy, takie jak `EAX = 003110D8`.  
   
- Symbol z lewej strony `=` znak jest nazwa rejestru `EAX`, w tym przypadku. Liczba z prawej strony `=` znak reprezentuje zawartość rejestru.  
+ Symbol po lewej stronie `=` logowania jest nazwą rejestru `EAX`, w tym przypadku. Liczba po prawej stronie `=` znak reprezentuje zawartość rejestru.  
   
- **Rejestruje** okna umożliwia wykonanie więcej niż tylko widok zawartości rejestru. Podczas pracy w trybie przerwania w kodzie natywnym, można kliknij zawartość rejestru i edytować wartość. Nie jest to coś, co należy zrobić losowo. Bez zrozumienia rejestru, którą edytujesz, a dane, które zawiera, w wyniku edycji careless jest prawdopodobnie awarię programu lub niepożądane skutki. Niestety szczegółowy opis zestawów rejestru dla różnych procesorów Intel i zgodnych z Intel daleko wykracza poza zakres to krótkie wprowadzenie.  
+ **Rejestruje** okna umożliwia wykonywanie więcej niż tylko widok zawartości rejestru. Podczas pracy w trybie przerwania w kodzie natywnym, można kliknąć zawartości rejestru i przejdź do edycji wartości. To nie jest coś, co należy zrobić w losowo wybranym momencie. Chyba że rozumiesz, rejestru, który edytujesz i dane, które zawiera, w wyniku edycji nieostrożnej prawdopodobnie awarię programu lub niepożądane skutki. Niestety szczegółowy opis zestawów rejestru dla różnych procesorów firmy Intel i zgodnego z Intel wykraczają daleko poza zakres to krótkie wprowadzenie.  
   
-## <a name="register-groups"></a>Grupy rejestru  
- Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Kliknięcie prawym przyciskiem myszy na **rejestruje** , zostaną wyświetlone menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z własnymi potrzebami.  
+## <a name="register-groups"></a>Grup rejestru  
+ Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Jeśli możesz kliknąć prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z potrzebami.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)   
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+ [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c7aae7f5db19a8f72a0d4670727dbf787cf228e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d95e626349296f9b6c857263a78ce67751b471b5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896494"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178933"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Unikaj przestrzeni nazw z kilkoma typami
+
 |||
 |-|-|
 |TypeName|AvoidNamespacesWithFewTypes|
@@ -32,16 +33,20 @@ ms.locfileid: "31896494"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Przestrzeń nazw innej niż globalna przestrzeń nazw zawiera mniej niż pięć typów.
+
+Przestrzeń nazw, innym niż globalna przestrzeń nazw zawiera mniej niż pięć typów.
 
 ## <a name="rule-description"></a>Opis reguły
- Upewnij się, czy każdy obszary nazw logiczną organizację, a typy istnienie prawidłowej przyczyny mają zostać umieszczone w słabo wypełnionego obszaru nazw. Przestrzenie nazw powinien zawierać typy, które są używane razem w większości przypadków. Po ich aplikacji wzajemnie się wykluczają, typy powinien znajdować się w oddzielnych przestrzeniach nazw. Na przykład <xref:System.Web.UI> przestrzeń nazw zawiera typy, które są używane w aplikacji sieci Web i <xref:System.Windows.Forms> przestrzeń nazw zawiera typy, które są używane w [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]— na podstawie aplikacji. Mimo że obu tych przestrzeni nazw ma typy sterujące aspektów interfejsu użytkownika, te typy nie są przeznaczone do użycia w tej samej aplikacji. W związku z tym znajdują się one w oddzielnych przestrzeniach nazw. Organizacji dokładne przestrzeni nazw można także przydatne, ponieważ zwiększa możliwość odnajdowania funkcji. Sprawdzając hierarchii obszaru nazw konsumentów biblioteki powinien być zlokalizowany typów, które implementują funkcji.
+
+Upewnij się, że każda z przestrzeni nazw posiada organizację logiczną i że istnieje uzasadniony powód, aby umieścić typy w słabo wypełnionych przestrzeniach nazw. Przestrzenie nazw może zawierać typy, które są używane razem w większości scenariuszy. Po ich aplikacje są wzajemnie się wykluczają, typy powinien znajdować się w oddzielnych przestrzeniach nazw. Na przykład <xref:System.Web.UI> przestrzeń nazw zawiera typy, które są używane w aplikacji sieci web i <xref:System.Windows.Forms> przestrzeń nazw zawiera typy, które są używane w [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]— na podstawie aplikacji. Mimo że obie przestrzenie nazw mają typy sterujące aspektów interfejsu użytkownika, te typy nie są przeznaczone do użytku w samej aplikacji. W związku z tym znajdują się one w oddzielnych przestrzeniach nazw. Ponieważ zwiększa możliwości odnajdywania funkcji organizacji dokładnej przestrzeni nazw może być również przydatne. Sprawdzając hierarchii obszaru nazw, konsumenci biblioteki powinien móc znaleźć typy, które implementują funkcji.
 
 > [!NOTE]
->  Typy w czasie projektowania i uprawnienia nie powinny zostać scalone w innych przestrzeniach nazw do wykonania Niniejsze wytyczne. Te typy znajdują się w ich własnych przestrzenie nazw poniżej głównej przestrzeni nazw, a przestrzenie nazw powinny kończyć się `.Design` i `.Permissions`odpowiednio.
+> Typy w czasie projektowania i uprawnienia nie powinny zostać scalone w innych przestrzeniach nazw, aby był zgodny z niniejszymi wytycznymi. Te typy należeć własne przestrzenie nazw poniżej głównej przestrzeni nazw, a przestrzenie nazw powinny kończyć się `.Design` i `.Permissions`, odpowiednio.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, spróbuj połączyć przestrzenie nazw, które zawierają tylko kilka typów w jednej przestrzeni nazw.
+
+Aby naprawić naruszenie tej zasady, spróbuj połączyć przestrzenie nazw, który zawiera kilka typów w jednej przestrzeni nazw.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli przestrzeń nazw nie zawiera typy, które są używane z typami w Twojej przestrzeni nazw.
+
+Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli przestrzeń nazw zawiera typy, które są używane z typami w Twojej przestrzeni nazw.
