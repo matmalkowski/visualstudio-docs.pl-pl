@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 60ba453db218b108e9f1bb6c65a320a0e1d97594
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: HT
+ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154238"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177360"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
@@ -74,7 +74,7 @@ Za pomocą edytora testu interfejsu użytkownika, możesz szybko znaleźć i wy�
 
 Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.
 
-Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "http://Contoso1/default.aspx"**, można zmienić adres URL do `'http://Contoso2/default.aspx'`.
+Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci web, stanów **przejdź do strony sieci Web "http://Contoso1/default.aspx"**, można zmienić adres URL do `'http://Contoso2/default.aspx'`.
 
 ![Właściwości formantów](../test/media/codeduitestcontrolprop.png)
 

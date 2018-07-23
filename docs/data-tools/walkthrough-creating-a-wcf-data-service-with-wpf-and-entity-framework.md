@@ -18,15 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174989"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178390"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework
-W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] hostowaną w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.
+W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] hostowaną w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.
 
 W tym przewodniku możesz:
 
@@ -62,11 +62,11 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 ## <a name="creating-the-service"></a>Tworzenie usługi
 Do utworzenia [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], będzie dodać projekt internetowy, utworzyć [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], a następnie Utwórz usługę z modelu.
 
-W pierwszym kroku dodasz projekt sieci Web do obsługi usługi.
+W pierwszym kroku dodasz projekt sieci web do obsługi usługi.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Aby utworzyć projekt internetowy
+#### <a name="to-create-the-web-project"></a>Aby utworzyć projekt sieci web
 
 1.  Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
@@ -164,7 +164,7 @@ W następnych krokach utworzysz aplikację klienta Windows Forms do korzystania 
 
 5.  Na pasku menu wybierz **projektu**, **Ustaw jako projekt startowy**.
 
-W następnym kroku dodasz odwołanie do usługi [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] w projekcie sieci Web.
+W następnym kroku dodasz odwołanie do usługi [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] w projekcie sieci web.
 
 #### <a name="to-add-a-service-reference"></a>Aby dodać odwołanie do usługi
 
