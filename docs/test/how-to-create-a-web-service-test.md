@@ -1,5 +1,5 @@
 ---
-title: Tworzenie nowego testu usług sieci Web w programie Visual Studio
+title: Tworzenie nowego testu usługi internetowej w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970707"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180077"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Porady: tworzenie nowego testu usług sieci Web
 
-Testy wydajności sieci Web mogą służyć do testowania usług sieci Web. Za pomocą **Wstaw żądanie** i **Wstaw żądanie usługi sieci Web** opcje, można dostosować poszczególnych żądań w **edytora testów wydajności sieci Web** można znaleźć w sieci Web strony usługi. Zazwyczaj tych stron nie wyświetla się w aplikacji sieci Web. W związku z tym należy dostosować żądanie, aby uzyskać do nich dostęp.
+Test wydajności sieci web służy do testowania usług sieci web. Za pomocą **Wstaw żądanie** i **Wstaw żądanie usługi sieci Web** opcje, można dostosować poszczególne żądania w **edytora testów wydajności sieci Web** można zlokalizować w sieci web strony usługi. Zazwyczaj tych stron nie wyświetla w aplikacji sieci web. W związku z tym należy dostosować żądanie, aby uzyskać do nich dostęp.
 
-W procedurach poniżej jest wykorzystywana usługa sieci Web zawarta w pakiecie startowym Commerce Starter Kit. Możesz pobrać go z [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commerce Starter Kit. Możesz ją pobrać z [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
  **Wymagania**
 
@@ -31,19 +31,19 @@ W procedurach poniżej jest wykorzystywana usługa sieci Web zawarta w pakiecie 
 
 ## <a name="to-test-a-web-service"></a>Aby przetestować usługę sieci Web
 
-1.  Tworzenie nowego testu wydajności sieci Web. Zaraz po otwarciu przeglądarki wybierz **zatrzymać**.
+1.  Utwórz nowy test wydajności sieci web. Zaraz po otwarciu przeglądarki, wybierz **zatrzymać**.
 
-2.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy testu wydajności sieci Web i wybierz **Dodaj żądanie usługi sieci Web**.
+2.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy test wydajności sieci web i wybierz **Dodaj żądanie usługi sieci Web**.
 
-3.  W **adres Url** właściwości nowe żądanie, wpisz nazwę usługi sieci Web, takich jak **http://localhost/storecsvs/InstantOrder.asmx**.
+3.  W **adresu Url** właściwości nowego żądania wpisz nazwę usługi sieci web, takich jak **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Otwórz oddzielne sesję przeglądarki, a następnie wpisz adres URL strony .asmx w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
+4.  Otwórz oddzielną sesję przeglądarki i wpisz adres URL strony .asmx w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
 
-5.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie nagłówka** Aby dodać nowy nagłówek. W **nazwa** właściwości, typ `SOAPAction`. W **wartość** właściwości, wpisz wartość, która pojawi się w `SOAPAction`, takich jak `"http://tempuri.org/CheckStatus"`.
+5.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie nagłówka** Aby dodać nowy nagłówek. W **nazwa** właściwość, typ `SOAPAction`. W **wartość** właściwości, wpisz wartość, która zostanie wyświetlony w `SOAPAction`, takich jak `"http://tempuri.org/CheckStatus"`.
 
-6.  Rozwiń węzeł adresu URL w edytorze, wybierz **ciągów tekstowych** węzeł i w **typu zawartości** właściwości wprowadź wartość `text/xml`.
+6.  Rozwiń węzeł adresu URL w edytorze, wybierz polecenie **ciąg tekstowy** węzła i **typu zawartości** właściwości wprowadź wartość `text/xml`.
 
-7.  Wróć do przeglądarki z kroku 4, na stronie z opisem usługi sieci Web zaznacz fragment XML żądania protokołu SOAP i skopiuj go do schowka.
+7.  Wróć do przeglądarki z kroku 4 zaznacz fragment XML żądania SOAP ze strony opisu usługi sieci web i skopiuj go do Schowka.
 
 8.  Zawartość XML przypomina poniższy przykład:
 
@@ -60,18 +60,18 @@ W procedurach poniżej jest wykorzystywana usługa sieci Web zawarta w pakiecie 
      </soap:Envelope>
      ```
 
-9. Wróć do **edytora testów wydajności sieci Web** , a następnie wybierz wielokropek (...) w **ciągów tekstowych** właściwości. Wklej zawartość schowka do właściwości.
+9. Wróć do **edytora testów wydajności sieci Web** , a następnie wybierz przycisk wielokropka (...) w **ciąg tekstowy** właściwości. Wklej zawartość schowka do właściwości.
 
-10. Aby test kończył się pomyślnie, zamień wszystkie wartości wieloznaczne w kodzie XML prawidłowymi wartościami. W poprzednim przykładzie należy zamienić dwa wystąpienia wartości `string` i jedno wartości `int`. Ta operacja usługi sieci Web zostanie wykonana tylko pod warunkiem, że istnieje zarejestrowany użytkownik, który złożył zamówienie.
+10. Aby test kończył się pomyślnie, zamień wszystkie wartości wieloznaczne w kodzie XML prawidłowymi wartościami. W poprzednim przykładzie należy zamienić dwa wystąpienia wartości `string` i jedno wartości `int`. Ta operacja usługi sieci web zostanie wykonana tylko pod warunkiem istnieje zarejestrowany użytkownik, który złożył zamówienie.
 
-11. Kliknij prawym przyciskiem myszy na żądanie usługi sieci Web i wybierz **Dodaj parametr QueryString adresu URL**.
+11. Kliknij prawym przyciskiem myszy żądanie usługi sieci web, a następnie wybierz pozycję **Dodaj parametr QueryString adresu URL**.
 
-12. Przypisz parametrowi ciągu zapytania nazwę i wartość. W poprzednim przykładzie nazwą jest `op` i wartość jest `CheckStatus`. W ten sposób została zidentyfikowana operacja usługi sieci Web, która ma zostać wykonana.
+12. Przypisz parametrowi ciągu zapytania nazwę i wartość. W poprzednim przykładzie nazwą jest `op` , a wartość to `CheckStatus`. Identyfikuje operację usługi sieci web do wykonania.
 
     > [!NOTE]
-    > Powiązanie danych można użyć w treści protokołu SOAP zastąpienia wartości symbolu zastępczego z wartościami danych powiązany za pomocą `{{DataSourceName.TableName.ColumnName}}` składni.
+    > Powiązanie danych można używać w treści protokołu SOAP, można zmienić wszelkie wartości zastępcze wartościami powiązanymi z danymi za pomocą `{{DataSourceName.TableName.ColumnName}}` składni.
 
-13. Uruchom test. W górnym okienku podglądu wyników testu wydajności sieci Web zaznacz żądanie usługi sieci Web. W dolnym okienku kliknij kartę Przeglądarka sieci Web. Zostanie wyświetlony kod XML zwracany przez usługę sieci Web oraz wyniki wszelkich operacji.
+13. Uruchom test. W górnym okienku **podglądu wyników testu wydajności sieci Web**, zaznacz żądanie usługi sieci web. W dolnym okienku zaznacz kartę przeglądarki sieci web. Plik XML, który jest zwracany przez usługę sieci web oraz wyniki wszelkich operacji, zostaną wyświetlone.
 
 ## <a name="see-also"></a>Zobacz także
 

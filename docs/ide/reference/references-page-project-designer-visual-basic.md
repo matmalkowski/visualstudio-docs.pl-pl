@@ -18,83 +18,83 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35534c0c6965dd7f7db01e2299ff71572b8de9e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950296"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180480"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
-Użyj **odwołania** strony **projektanta projektu** do zarządzania odwołań, odwołania sieci Web i importowane przestrzenie nazw w projekcie. Projekty mogą zawierać odwołania do składników COM usług XML sieci Web, biblioteki klas .NET Framework lub zestawów albo innych bibliotek klas. Aby uzyskać więcej informacji na temat używania odwołania zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).
+Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników modelu COM, usług sieci web XML, zestawów i biblioteki klas .NET Framework lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).
 
- Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz pozycję **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.
+ Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- Poniższe opcje pozwalają na zaznacz lub usuń odwołania i importowane przestrzenie nazw w projekcie.
+ Poniższe opcje umożliwiają zaznacz lub usuń odwołania i importowanych przestrzeni nazw w projekcie.
 
- **Nieużywanych odwołań**
+ **Nieużywane odwołania**
 
- Kliknij ten przycisk, aby uzyskać dostęp do **nieużywanych odwołań** okno dialogowe.
+ Kliknij ten przycisk, aby uzyskać dostęp do **odwołań nieużywanych** okno dialogowe.
 
- **Nieużywanych odwołań** okno dialogowe umożliwia usunięcie odwołań, które są zawarte w projekcie, ale nie faktycznie używana przez kod. Zawiera on Siatka wyświetla **Nazwa odwołania**, **ścieżki**i inne informacje o odwołania do nieużywanych przestrzeni nazw w projekcie. W siatce, wybierz odwołania do przestrzeni nazw, które chcesz usunąć z projektu, a następnie kliknij przycisk **Usuń**.
+ **Odwołań nieużywanych** okno dialogowe umożliwia usunięcie odwołań, które są zawarte w projekcie, ale bez faktycznego używane przez kod. Zawiera on siatki, zawierającego **Nazwa odwołania**, **ścieżki**oraz inne informacje o odwołaniach do nieużywanych przestrzeni nazw w projekcie. W siatce, wybierz odwołania do przestrzeni nazw, które chcesz usunąć z projektu, a następnie kliknij przycisk **Usuń**.
 
- **Ścieżek odwołania**
+ **Ścieżki odwołania**
 
- Kliknij ten przycisk, aby uzyskać dostęp do **ścieżek odwołania** okno dialogowe.
+ Kliknij ten przycisk, aby uzyskać dostęp do **ścieżki odwołania** okno dialogowe.
 
 > [!NOTE]
-> Gdy system projektu znajduje się odwołanie do zestawu, system usuwa odwołanie przez wyszukiwanie w następujących lokalizacjach w następującej kolejności:
+> Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:
 
 >
->  1.  Folder projektu. Pliki folderu projektu są wyświetlane w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.
-> 2.  Foldery, które są określone w **ścieżek odwołania** okno dialogowe.
+>  1.  Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.
+> 2.  Foldery, które są określone w **ścieżki odwołania** okno dialogowe.
 > 3.  Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.
-> 4.  Folderze obj. projektu. (Podczas dodawania do projektu odwołanie COM jeden lub więcej zestawów można dodać do folderu obj projektu.)
+> 4.  Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)
 
  **Odwołania**
 
- Ta lista zawiera wszystkie odwołania do projektu, używane lub nieużywane.
+ Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.
 
  **Dodaj**
 
- Kliknij ten przycisk, aby dodać odwołanie lub odwołania sieci Web do **odwołania** listy.
+ Kliknij ten przycisk, aby dodać odwołanie lub sieci web odwołanie do **odwołania** listy.
 
  Wybierz **odwołania** można dodać odwołania do projektu przy użyciu okna dialogowego Dodaj odwołanie.
 
- Wybierz **odwołania sieci Web** można dodać odwołania sieci Web do projektu przy użyciu okna dialogowego Dodaj odwołanie sieci Web.
+ Wybierz **odwołania sieci Web** można dodać odwołania sieci web do projektu przy użyciu **Dodaj odwołanie sieci Web** okno dialogowe.
 
  **Usuń**
 
- Wybierz co najmniej jednego odwołania w **odwołania** listy, a następnie kliknij ten przycisk, aby go usunąć.
+ Wybierz jedno lub więcej odwołań w **odwołania** listy, a następnie kliknij ten przycisk, aby go usunąć.
 
- **Aktualizacja odwołania sieci Web**
+ **Aktualizuj odwołanie sieci Web**
 
- Wybierz odwołanie sieci Web w **odwołania** listy i kliknij ten przycisk, aby go zaktualizować.
+ Wybierz odwołanie sieci web w **odwołania** listy i kliknij ten przycisk, aby go zaktualizować.
 
  **Importowane przestrzenie nazw**
 
- Można wpisać własną przestrzeni nazw w tym polu i kliknij przycisk **dodać importu użytkownika** można dodać go do listy przestrzeni nazw.
+ Można wpisać własny obszar nazw, w tym polu i kliknij przycisk **dodać Import użytkownika** ją dodać do listy obszarów nazw.
 
- Można utworzyć aliasów dla importowanych przestrzeni nazw. Aby to zrobić, należy wprowadzić w formacie alias i przestrzeń nazw *alias*=*przestrzeni nazw*. Jest to przydatne, jeśli używasz długich nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Możesz tworzyć aliasy dla importowanych przestrzeni nazw. Aby to zrobić, wprowadź alias i przestrzeni nazw w formacie *alias*=*przestrzeni nazw*. Jest to przydatne, jeśli używasz długich nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
- **Dodaj użytkownika importu**
+ **Dodaj Import użytkownika**
 
- Kliknij ten przycisk, aby dodać przestrzeni nazw określonej w **importowane przestrzenie nazw** pole do listy importowanych przestrzeni nazw. Ten przycisk jest aktywny tylko wtedy, gdy w określonej przestrzeni nazw nie jest już na liście.
+ Kliknij ten przycisk, aby dodać przestrzeń nazw określona w **zaimportowane przestrzenie nazw** pole do listy importowanych przestrzeni nazw. Ten przycisk jest aktywny tylko wtedy, gdy w określonej przestrzeni nazw nie jest już na liście.
 
- **Liście przestrzeni nazw**
+ **Lista przestrzeni nazw**
 
- Ta lista zawiera wszystkich dostępnych przestrzeni nazw. Zaznaczono pola wyboru obszary nazw dołączane do projektu.
+ Ta lista zawiera wszystkich dostępnych przestrzeni nazw. Zaznaczone są pola wyboru dla przestrzeni nazw zawartym w projekcie.
 
  **Importowanie użytkowników aktualizacji**
 
- Wybierz obszar nazw określonego przez użytkownika na liście przestrzeni nazw, wpisz nazwę, którą chcesz zamienić go w **importowane przestrzenie nazw** , a następnie kliknij ten przycisk, aby zmienić nowej przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy wybranego obszaru nazw, który zostanie dodany do listy przy użyciu **dodać importu użytkownika** przycisku. Można dodać:
+ Wybierz przestrzeń nazw określonych przez użytkownika na liście przestrzeni nazw, wpisz nazwę, którą chcesz zamienić go w **zaimportowane przestrzenie nazw** , a następnie kliknij ten przycisk, aby przejść do nowej przestrzeni nazw. Przycisk jest aktywny tylko wtedy, gdy w wybranej przestrzeni nazw to taki, który zostanie dodany do listy przy użyciu **dodać Import użytkownika** przycisku. Możesz dodać:
 
--   Klasy lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.
+-   Klas lub przestrzeni nazw, takich jak <xref:System.Math?displayProperty=fullName>.
 
--   Alias imports, takich jak `VB=Microsoft.VisualBasic`.
+-   Importuje aliasem, takich jak `VB=Microsoft.VisualBasic`.
 
--   Przestrzenie nazw XML, takich jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+-   Obszary nazw XML, takie jak `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Zobacz też
 

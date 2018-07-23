@@ -11,38 +11,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c479435ccd37c260c199b66a3a6fee20ce3e602
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6c8dfffbcbfee71721b97d81a775cb0093d18bb0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235128"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179820"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: dodawanie parametrów kontekstu do ustawień testu obciążenia
 
-Po utworzeniu testu obciążenia za pomocą **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** Aby zmienić właściwości scenariuszy, aby spełnić potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości parametry uruchomieniowe i ich opisy, zobacz [właściwości ustawień uruchamiania testu obciążenia](../test/load-test-run-settings-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-Można utworzyć parametrów kontekstu do użycia w teście obciążenia, w ustawieniach testu za pomocą edytora testu obciążenia. Parametry kontekstu umożliwiają parametryzacja ciąg.
+Można utworzyć parametrów kontekstu do użycia w teście obciążeniowym, ustawienia uruchamiania za pomocą edytora testu obciążenia. Parametry kontekstu umożliwiają definiowanie parametrów ciągu.
 
-Załóżmy, że test obciążenia zawiera testu wydajności sieci Web, które już używa sparametryzowane adres URL serwera sieci Web za pomocą parametru kontekstu. Można dodać parametr kontekstowy do ustawienia, które korzysta z tej samej wartości Nazwa, która jest używana podczas testów wydajności sieci Web uruchomienia testu obciążenia. Będzie to mapować testu wydajności sieci Web na innym serwerze, po uruchomieniu testu obciążenia. Na przykład jeśli test obciążenia zawiera testu wydajności sieci Web, która używa parametru kontekstu o nazwie Serwer_sieci_web_1 dla nazwy serwera sieci Web w adresie URL. Jeśli następnie określisz parametru kontekstu testu obciążenia ustawienie o nazwie Serwer_sieci_web_1, test obciążenia zostanie użyty parametr kontekstowy przypisana w teście obciążenia, w ustawieniach testu. Wyjaśnienie, jeśli testu wydajności sieci Web w teście obciążenia używa tej samej nazwy parametru kontekstu jako parametru kontekstu w teście obciążenia, parametru kontekstowego w teście obciążenia spowoduje zastąpienie parametru kontekstowego, który jest używany podczas testu wydajności sieci Web.
+Załóżmy, że test obciążenia zawiera test wydajności sieci web, który używa już sparametryzowane internetowy adres URL serwera za pomocą parametru kontekstu. Możesz dodać parametr kontekstu do testu obciążenia uruchomieniowy, który używa tej samej wartości Nazwa, która jest używana podczas testów wydajności sieci web. Będzie to mapować testu wydajności sieci web na innym serwerze, po uruchomieniu testu obciążenia. Na przykład jeśli test obciążenia zawiera test wydajności sieci web, który używa parametru kontekstu o nazwie Serwer_sieci_web_1 dla nazwy serwera sieci web w adresie URL. Jeśli następnie możesz określić parametr kontekstowy w teście obciążenia uruchomieniowy, który jest również określany Serwer_sieci_web_1, test obciążeniowy użyje parametru kontekstowego, który można przypisać w uruchomieniowych testu obciążeniowego. Wyjaśnienie, jeśli test wydajności sieci web w teście obciążeniowym używa tego samego Nazwa parametru kontekstu jako parametru kontekstu w teście obciążeniowym, parametru kontekstowego w teście obciążenia spowoduje zastąpienie parametru kontekstowego, który jest używany podczas testu wydajności sieci web.
 
 > [!WARNING]
-> Nie można więc przypadkowo zastąpienie parametru kontekstowego testu wydajności sieci Web, korzystając z parametrów kontekstu w ustawieniach testu. Unikaj używania takie same nazwy parametrów kontekstu, chyba że w tym celowo.
+> Uważaj, aby nie przypadkowo zastąpienia parametru kontekstu testu wydajności sieci web, korzystając z parametrów kontekstu w ustawieniach testu. Należy unikać używania tych samych nazw parametrów kontekstu, chyba że w tym celowo.
 
-Jeśli można przypisać wartość parametru kontekstowego serwer_sieci_Web_1 do `http://CorporateStagingWebServer`, można użyć `WebServer1` w całym obciążenia testowania i tym samym łatwo Zmień wartość na inny serwer sieci Web w dowolnej chwili.
+Jeśli przypisujesz wartość parametru kontekstowego serwer_sieci_Web_1 do `http://CorporateStagingWebServer`, można użyć `WebServer1` w całym obciążenia testu i dzięki temu łatwo zmienić wartości do różnych serwerów sieci web w dowolnym momencie.
 
-Ponadto przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w ustawieniach testu różnym obciążeniem, można uruchomić testu obciążenia za pomocą różnych środowiskach:
+Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w uruchomieniowych testu obciążeniowego różnych, można uruchomić testu obciążeniowego za pomocą różnych środowiskach:
 
--   Ustawienia uruchamiania firmowy serwer sieci Web przemieszczania: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
+-   Firmowy serwer sieci Web przemieszczania uruchomieniowy: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
--   Ustawienia uruchamiania firmowy serwer sieci Web produkcji: parametr kontekstu, o nazwie `WebServer1=http://CorporateProductionWebServer`
+-   Firmowy serwer sieci Web w środowisku produkcyjnym uruchomieniowy: parametr kontekstu, który nosi nazwę `WebServer1=http://CorporateProductionWebServer`
 
- **Zmiana ustawień z poziomu wiersza polecenia**
+ **Zmienianie ustawień wykonywania w wierszu polecenia**
 
- Jeśli chcesz używać różnych ustawień wykonywania w wierszu polecenia przeprowadzać strategii parametru kontekstu, użyj następujących poleceń:
+ Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następujących poleceń:
 
  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
@@ -52,23 +52,23 @@ Ponadto przypisując różne wartości do parametru kontekstu przy użyciu tej s
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Aby dodać parametr kontekstu do ustawień
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-2.  Rozwiń węzeł **parametrów uruchomieniowych** folderu w drzewie testu obciążenia w edytorze testu obciążenia.
+2.  Rozwiń **parametrów uruchomieniowych** folderów w drzewie testu obciążenia w edytorze testu obciążeniowego.
 
-3.  Kliknij prawym przyciskiem myszy konkretnych ustawień, do której chcesz dodać parametr kontekstu, a następnie wybierz pozycję **Dodaj parametr kontekstowy**.
+3.  Kliknij prawym przyciskiem myszy konkretne ustawienia uruchamiania, do której chcesz dodać parametr kontekstu, a następnie wybierz **dodać parametr kontekstu**.
 
-     Nowy parametr kontekstu jest dodawany do **parametrów kontekstu** folderu w **parametrów uruchomieniowych** folderu w drzewie testu obciążenia.
+     Dodano nowy parametr kontekstu do **parametrów kontekstu** folderu w **parametrów uruchomieniowych** folderu w drzewie testu obciążenia.
 
      —lub—
 
-     Jeśli uruchomienie ustawienie już zawiera **parametrów kontekstu** folderu, możesz kliknij go prawym przyciskiem myszy i wybierz **Dodaj parametr kontekstowy**.
+     Jeśli działanie ustawienie już zawiera **parametrów kontekstu** folderu, możesz go prawym przyciskiem myszy i wybierz **dodać parametr kontekstu**.
 
-4.  W oknie Właściwości zmień wartość atrybutu **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W oknie Właściwości zmień **wartość** do parametru, który chcesz użyć (na przykład `http://CorporateStagingWebServer`).
+4.  W oknie Właściwości zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W oknie Właściwości zmień **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
 
-5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i użyj innego ciągu dla **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
+5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i używać różnych ciąg **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
 
-6.  Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów w ustawieniach uruchamiania i wybierz polecenie **Ustaw jako aktywny**.
+6.  Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów dotyczące wykonywania ustawień, a następnie wybierz **Ustaw jako aktywny**.
 
 ## <a name="see-also"></a>Zobacz także
 

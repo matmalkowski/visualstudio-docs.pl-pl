@@ -13,7 +13,7 @@ ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
 ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
+ms.lasthandoff: 07/20/2018
 ms.locfileid: "39152262"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejących aplikacji dla programu MSBuild 15
@@ -71,7 +71,7 @@ Odwołanie do pakietu Microsoft.Build.Locator, aby upewnić się, że aplikacja 
 
 ### <a name="ensure-output-is-clean"></a>Upewnij się, że dane wyjściowe są czyste
 
-Kompilowanie projektu i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera żadnego *Microsoft.Build.\*. Biblioteka DLL* zestawów innych niż *Microsoft.Build.Locator.dll*dodano w następnym kroku.
+Kompilowanie projektu i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera żadnego *Microsoft.Build.\* Biblioteka DLL* zestawów innych niż *Microsoft.Build.Locator.dll*dodano w następnym kroku.
 
 ### <a name="add-package-reference"></a>Dodawanie odwołania do pakietu
 
