@@ -1,6 +1,7 @@
 - name: Dokumentacja dotycząca analizy kodu
   href: index.md
 - name: Omówienie
+  expanded: true
   items:
     - name: Analiza kodu zarządzanego
       href: code-analysis-for-managed-code-overview.md
@@ -80,16 +81,18 @@
     - name: Zestawy reguł
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
-        - name: Zestawy reguł na potrzeby kodu zarządzanego
+        - name: Zestawy reguł dla pakietów analizatora
+          href: analyzer-rule-sets.md
+        - name: Zestawy reguł dla kodu zarządzanego
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
             - name: Konfigurowanie analizy kodu dla aplikacji internetowej ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: Zestawy reguł na potrzeby kodu C++
+        - name: Zestawy reguł dla kodu w języku C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Tworzenie niestandardowego zestawu reguł
           href: how-to-create-a-custom-rule-set.md
-        - name: Korzystanie z edytora zestawu reguł
+        - name: Korzystanie z edytora zestawów reguł
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Zasady zaewidencjonowania
       href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
@@ -125,8 +128,8 @@
           href: extended-design-guidelines-rules-rule-set-for-managed-code.md
         - name: Zestaw reguł globalizacji dla zarządzanego kodu
           href: globalization-rules-rule-set-for-managed-code.md
-        - name: Zarządzane minimalne reguły dla zarządzanego kodu
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+        - name: Zarządzany minimalny zestaw reguł dla kodu zarządzanego
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Zarządzane zalecane Reguły dla zarządzanego kodu
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Zestaw reguł Mixed Minimum Rules
