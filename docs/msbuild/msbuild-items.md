@@ -1,5 +1,6 @@
 ---
 title: Elementy programu MSBuild | Dokumentacja firmy Microsoft
+description: Użyj atrybutu obejmują MSBuild element ItemGroup, aby określić pliki do uwzględnienia w kompilacji
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a483d6dcaa4de7c2b9760704f4933a73d810061
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081839"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204131"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
-Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki. Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
+Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
   
  Ponieważ elementy są reprezentowane przez typ elementu, do których one należą, warunki "item" i "wartość elementu" może służyć zamiennie.  
   

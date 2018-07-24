@@ -1,5 +1,5 @@
 ---
-title: Dodawanie liczników do zestawów liczników dla obciążenia testowania w programie Visual Studio
+title: Dodawanie liczników do zestawów liczników dla testy obciążeniowe w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,58 +12,58 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967888"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203641"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Porady: dodawanie liczników do zestawów liczników za pomocą edytora testu obciążenia
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Porady: Dodawanie liczników do zestawów liczników za pomocą edytora testu obciążenia
 
-Podczas tworzenia testu obciążenia z wykorzystaniem **Kreator testu obciążenia**, Dodaj początkowego zestawu liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Po utworzeniu testu obciążenia za pomocą **kreatora testu obciążenia**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
-> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji o sposobie używania maszyny zdalnej w teście obciążenia sieci, zobacz [kontrolery testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md).
+> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji o sposobie używania komputerów zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
 
- Zarządzanie liczniki w **edytora testu obciążenia**. Zestawy liczników, które już są dodawane do testu są widoczne w **ustawia licznik** węzła testu obciążenia. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników.
+ Zarządzasz licznikami w **edytora testu obciążenia**. Zbiory liczników, które zostały już dodane do testu są widoczne w **zestawów liczników** węzeł testu obciążeniowego. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników.
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Aby dodać liczniki do zestawu liczników
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-2.  Rozwiń węzeł **zbiorów liczników** węzła. Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
+2.  Rozwiń **zbiorów liczników** węzła. Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
 
     > [!NOTE]
-    > Drzewo hierarchia test obciążenia zawiera także **parametrów uruchomieniowych** węzła. Ten węzeł zawiera **mapowaniach zbioru liczników** węzła, który zawiera wszystkie komputery i zbiory liczników, które są mapowane na tych komputerach.
+    > Drzewo hierarchia test obciążenia zawiera także **parametrów uruchomieniowych** węzła. Ten węzeł zawiera **mapowaniach zbioru liczników** węzła, który przedstawia wszystkie komputery i zbiory liczników, które są mapowane na tych komputerach.
 
-3.  Kliknij prawym przyciskiem myszy istniejący zestaw liczników, a następnie wybierz pozycję **Dodaj liczniki**.
+3.  Kliknij prawym przyciskiem myszy istniejący zbiór liczników, a następnie wybierz **Dodaj liczniki**.
 
      **Wybierz liczniki wydajności** zostanie wyświetlone okno dialogowe.
 
-4.  W **komputera** rozwijane kombi wpisz nazwę komputera, aby mapować do. Alternatywnie wybierz jeden z komputerów na liście rozwijanej.
+4.  W **komputera** rozwijane kombi wpisz nazwę komputera, którą chcesz zamapować do. Alternatywnie wybierz jeden z komputerów na liście rozwijanej.
 
     > [!NOTE]
-    > Ponieważ zbiorów liczników muszą być zamapowane na komputerze przed zbierane są dane dotyczące wydajności, należy określić komputer, na którym mają być zbierane dane dotyczące wydajności.
+    > Ponieważ zbiory liczników muszą być zamapowane na komputerze, zanim dane wydajności są zbierane, należy określić komputer, na którym można zbierać dane dotyczące wydajności.
 
-5.  Wybierz **kategorii wydajności** do filtrowania kategorii liczników wydajności, dane. Zostanie wyświetlone dwie kolumny danych, z którego ma zostać Wybierz liczniki wydajności.
+5.  Wybierz **kategorii wydajności** do filtrowania kategorii liczników wydajności, dane. Zostaną wyświetlone dwie kolumny danych, z którego ma zostać Wybierz liczniki wydajności.
 
     > [!NOTE]
-    > Niektóre kategorii licznika wymaga także wybrać wystąpienia. Na przykład wybierz licznik SQL, muszą wybranie wystąpienie serwera SQL, ponieważ może istnieć więcej niż jedno wystąpienie programu SQL Server zainstalowana na komputerze docelowym.
+    > Niektóre kategorie liczników wymaga również wybierz domyślne wystąpienie. Na przykład wybierzesz licznika SQL, należy wybranie wystąpienie serwera SQL, ponieważ może istnieć więcej niż jedno wystąpienie programu SQL Server zainstalowane na komputerze docelowym.
 
-6.  Wybierz licznik i wystąpienie do dodania do zestawu liczników niestandardowych.
+6.  Wybierz licznik i wystąpienie, aby dodać do zestawu liczników niestandardowych.
 
-     \- lub -
+     \- lub —
 
      Wybierz **wszystkie liczniki** przycisk radiowy, aby wybrać wszystkie dostępne liczniki.
 
 7.  Wybierz **OK**.
 
     > [!NOTE]
-    > Istnieje również możliwość Dodawanie liczników do licznika, ustawione przez prawo Wybieranie istniejącej licznika lub kategorii licznika, wybierając kopiowania, i wklejając je do różnych licznika Ustaw węzła. Dodatkowe liczniki, które są kopiowane, ale nie jest to konieczne, mogą zostać usunięte.
+    > Istnieje również możliwość dodać liczniki do zbioru liczników, wybierając istniejący licznika lub kategoria licznika, wybierając kopię i wklejając ją do innego licznika Ustaw węzła. Dodatkowe liczniki, które są kopiowane, ale nie jest to konieczne, mogą zostać usunięte.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)

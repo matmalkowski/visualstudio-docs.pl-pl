@@ -1,5 +1,5 @@
 ---
-title: Debuger koncepcji | Dokumentacja firmy Microsoft
+title: Pojęcia dotyczące debugera | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c157e570179da1e1f16ed5c2c12af63b95b0b61d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e38c743ce7170e0842a3430c7b2aa190df94782b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102684"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203809"
 ---
 # <a name="debugger-concepts"></a>Pojęcia dotyczące debugera
-Rozbudowywać pakiet debugowania programu Visual Studio, musisz znać pojęć architektury projektowanie pakietu.  
+Aby utworzyć pakiet debugowania programu Visual Studio, musisz należy zapoznać się z architektury koncepcji używanych podczas projektowania pakietu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Sesja debugowania](../../extensibility/debugger/debug-session.md)  
- Opisano rolę sesję debugowania architektury.  
+ W tym artykule wyjaśniono roli w architekturze debugowania sesji.  
   
  [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)  
- Określa, jakie serwer znajduje się pod względem debugowania architektury, zarówno abstrakcyjna, jak i fizycznych.  
+ Określa, jakie serwer znajduje się pod względem Profilowanie architektury, w warunkach abstrakcyjny i fizycznej.  
   
  [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)  
- Definiuje, jakie port dostawcy jest pod względem architektury debugowania.  
+ Definiuje, jakie dostawcy portu jest pod względem architektury debugowania.  
   
  [Porty](../../extensibility/debugger/ports.md)  
- Określa, jakie port jest pod względem architektury debugowania.  
+ Określa port usługi jest pod względem architektury debugowania.  
   
  [Procesy](../../extensibility/debugger/processes.md)  
- Określa, jakie procesy jest pod względem architektury debugowania.  
+ Określa, jakie procesy są pod względem architektury debugowania.  
   
  [Węzły programu](../../extensibility/debugger/program-nodes.md)  
- Definiuje węzeł program pod względem architektury, w tym, jak można zidentyfikować się i procesu, który jest uruchomiony w debugowania.  
+ Definiuje węzeł program pod względem architektury, w tym, jak można zidentyfikować wraz z procesu, który jest uruchomiony w debugowaniu.  
   
  [Programy](../../extensibility/debugger/programs.md)  
  Określa program pod względem architektury debugowania.  
@@ -49,20 +49,20 @@ Rozbudowywać pakiet debugowania programu Visual Studio, musisz znać pojęć ar
  Definiuje właściwości wątków pod względem architektury debugowania.  
   
  [Ramki stosu](../../extensibility/debugger/stack-frames.md)  
- Definiuje ramka stosu pod względem architektury debugowania. Ramka stosu jest abstrakcję stosu, który udostępnia Kontekst wykonywania wątku.  
+ Definiuje ramki stosu w zakresie debugowania architektury. Ramka stosu jest klasą abstrakcyjną stosu, które dostarcza kontekst wykonanie wątku.  
   
  [Moduły](../../extensibility/debugger/modules.md)  
- Definiuje moduł pod względem debugowania architektury, jako kontenera fizycznego kodu, takich jak plik wykonywalny lub biblioteka DLL.  
+ Definiuje moduł pod względem Profilowanie architektury, jako fizyczny kontenera kodu, takie jak plik wykonywalny lub bibliotekę DLL.  
   
  [Punkty przerwania](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
- Definiuje trzy typy punktów przerwania — oczekujące powiązaną i błąd — pod względem architektury debugowania.  
+ Definiuje trzy rodzaje punkty przerwania — oczekiwanie, powiązaną i błąd — pod względem architektury debugowania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)  
- W tym artykule wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w ramach kodu, dokumentacji i konteksty Obliczanie wyrażenia. Opisuje, dla każdego z trzech kontekstów lokalizacji, pozycja lub oceny odpowiednie do niego.  
+ W tym artykule wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w ramach kodu, dokumentację i konteksty oceny wyrażenia. W tym artykule opisano, dla każdego z trzech kontekstów, lokalizacji, pozycja lub oceny odpowiednie do niego.  
   
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)  
  Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).  
   
- [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
- Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i obliczaniu wyrażeń.
+ [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)  
+ Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i wyrażeń.

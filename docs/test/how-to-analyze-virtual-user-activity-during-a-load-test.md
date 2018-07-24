@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20367c2632e62d53199ee7bc1a522b81b570070e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178508"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203793"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
-Wyświetl aktywność wirtualnego użytkownika, która jest skojarzona z testu obciążenia za pomocą wykresu wirtualnego aktywności użytkownika. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. Wykres aktywności wirtualnych użytkowników zawiera dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Można widać wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. Wykres aktywności wirtualnych użytkowników jest dostępna tylko wtedy, gdy test obciążenia zakończył działanie.
+Wyświetl aktywność wirtualnego użytkownika skojarzonego z testu obciążenia przy użyciu **wykres aktywności wirtualnych użytkowników**. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. **Wykres aktywności wirtualnych użytkowników** dowiesz się, dokładnie co każdy użytkownik wirtualny był wykonywany podczas testu. Można widać wzorce aktywności użytkowników, wzorce obciążenia, korelowanie testy zakończone niepowodzeniem lub wolne i zobacz żądań z innych działań wirtualnego użytkownika. **Wykres aktywności wirtualnych użytkowników** jest dostępna tylko w przypadku, po zakończeniu testu obciążenia.
 
-Poniższe procedury pokazują, jak wyświetlać wykres aktywności wirtualnych użytkowników, jak Zbadaj działania konkretnego użytkownika oraz sposobu korzystania z filtrowania.
+Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych użytkowników**, jak Zbadaj działania konkretnego użytkownika i jak używać filtrowania.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Aby wyświetlić wykres aktywności wirtualnych użytkowników w wyniki testu obciążenia
 
-1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych informacji umożliwiających Włączanie wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Aby wyświetlić dane użytkowników wirtualnych, należy najpierw skonfigurować **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwość, która jest skojarzona z testu obciążenia. Następnie uruchom test obciążenia. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
 2.  Po załadowaniu usługi przebiegów testów, zostanie wyświetlona strona podsumowania wyników testu. Wybierz **szczegółów użytkownika** przycisk na pasku narzędzi.
 
@@ -33,13 +33,13 @@ Poniższe procedury pokazują, jak wyświetlać wykres aktywności wirtualnych u
 
      Otwórz widok wykresów, wybierając **wykresów** przycisk na pasku narzędzi. Kliknij prawym przyciskiem myszy wykres, a następnie wybierz pozycję **przejdź do szczegółów użytkownika**.
 
-     Jeśli używasz tej opcji, wykres aktywności wirtualnych użytkowników będzie automatycznego powiększania części testu, który kliknięcia. Na przykład, jeśli wskaźnik myszy znajduje się na około 30 drugim znaku, widok szczegółów wyświetli około na 30 drugim znaku w **Powiększ do okresu czasu** narzędzie u dołu wykresu wirtualnego aktywności użytkownika.
+     Jeśli używasz tej opcji **wykres aktywności wirtualnych użytkowników** spowoduje automatyczne powiększanie części testu, który kliknięcia prawym przyciskiem. Na przykład, jeśli wskaźnik myszy znajduje się na około 30 drugim znaku, widok szczegółów wyświetli około na 30 drugim znaku w **Powiększ do okresu czasu** narzędzia w dolnej części **wykres aktywności wirtualnych użytkowników** .
 
-     Następnie można zbadać szczegóły działań określonych użytkowników, w wykres aktywności wirtualnych użytkowników.
+     Następnie można zbadać szczegóły aktywności użytkowników w **wykres aktywności wirtualnych użytkowników**.
 
-## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Aby zbadać określonych użytkowników w wykres aktywności wirtualnych użytkowników
+## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Aby zbadać działania określonego użytkownika w wykres aktywności wirtualnych użytkowników
 
-1.  Użyj powiększenia do narzędzia okresu czasu w dolnej części wykres aktywności wirtualnych użytkowników, aby wybrać obszar na wykresie, w którym chcesz zbadać szczegółowe informacje na temat określonego użytkownika.
+1.  Polecenie narzędzia okresu czasu w dolnej części **wykres aktywności wirtualnych użytkowników** aby wybrać obszar na wykresie, w którym chcesz zbadać szczegółowe informacje na temat określonego użytkownika.
 
 2.  Umieść kursor myszy szczegółów na wykresie. Zwróć uwagę, że w etykietce narzędzia są wyświetlane następujące informacje:
 
@@ -66,13 +66,13 @@ Poniższe procedury pokazują, jak wyświetlać wykres aktywności wirtualnych u
     -   **Dziennik testu** (łącze do dziennika testu)
 
         > [!NOTE]
-        > Aby pomóc w debugowaniu aplikacji, jeśli wybierzesz łącze dziennika testu, otworzy się wynik testu sieci web lub wyniku testu jednostkowego skojarzone z dziennika.
+        > Aby pomóc w debugowaniu aplikacji, jeśli wybierzesz **Dziennik testu** łącze, wynik testu sieci web lub wynik skojarzony z Otwórz dziennik testu jednostkowego.
 
-     Następnie można użyć operacje filtrowania i wyróżniania, które muszą być dostępne w wykres aktywności wirtualnych użytkowników.
+     Następnie można użyć filtrowania i wyróżniania operacje dostępne w **wykres aktywności wirtualnych użytkowników**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Aby użyć opcji filtrowania w wykres aktywności wirtualnych użytkowników
 
-1.  W legendzie szczegółowe informacje, użyj listy rozwijanej, aby wybrać albo **testu**, **strony**, lub **transakcji**.
+1.  W **Legenda szczegółów**, użyj listy rozwijanej możesz wybrać opcję **testu**, **strony**, lub **transakcji**.
 
      **Legenda szczegółów — panel**
 
@@ -80,17 +80,17 @@ Poniższe procedury pokazują, jak wyświetlać wykres aktywności wirtualnych u
 
 2.  Zaznacz lub wyczyść pola wyboru dla błędów, dzienniki, testy, wyszukiwania i stron aspx, które są skojarzone z testu obciążenia.
 
-     Wykres aktywności wirtualnych użytkowników odpowiednio aktualizowany.
+     **Wykres aktywności wirtualnych użytkowników** odpowiednio aktualizowany.
 
-     Wykres aktywności wirtualnych użytkowników umożliwia filtrowanie testy, strony i transakcje na podstawie kilku różnych kryteriów. Można usunąć niektórych testów w widoku lub Usuń wszystkie testy zakończone powodzeniem i usuwać testy, które nie powiodło się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
+     **Wykres aktywności wirtualnych użytkowników** umożliwia filtrowanie testy, strony i transakcje na podstawie kilku różnych kryteriów. Można usunąć niektórych testów w widoku lub Usuń wszystkie testy zakończone powodzeniem i usuwać testy, które nie powiodło się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
 
-     Na przykład, możesz wybrać **(Podświetl błędy)** opcja, która wyświetla wszystkie błędy na koszyka pokolorowane w kolorze czerwonym. Możesz również wybrać **(Podświetl wyniki z dziennikami)** opcja, która wyświetla wszystkie wyniki testów, które mają dzienniki pokolorowane w kolorze zielonym na wykresie.
+     Na przykład, możesz wybrać **(Podświetl błędy)** opcja, która wyświetla wszystkie błędy na wykresie pokolorowane w kolorze czerwonym. Możesz również wybrać **(Podświetl wyniki z dziennikami)** opcja, która wyświetla wszystkie wyniki testów, które mają dzienniki pokolorowane w kolorze zielonym na wykresie.
 
      **Panel wyników filtrowania**
 
      ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
 
-3.  W wynikach filtrowania zaznacz lub wyczyść pola wyboru dla następujących opcji filtrowania:
+3.  W **filtrowanie wyników**, zaznacz lub wyczyść pola wyboru dla następujących opcji filtrowania:
 
     -   **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
 
@@ -99,9 +99,9 @@ Poniższe procedury pokazują, jak wyświetlać wykres aktywności wirtualnych u
     -   **Pokaż wyniki z błędami** wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
 
         > [!NOTE]
-        > Lista typów błędów, które są wyświetlane w obszarze **Pokaż wyniki z błędami** węzła może dalszego zbadania, wybierając przycisk tabele w **podglądu wyników testu wydajności sieci Web** paska narzędzi. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+        > Lista typów błędów, które są wyświetlane w obszarze **Pokaż wyniki z błędami** węzła może dalszego zbadania, wybierając **tabel** znajdujący się w **podgląduwynikówtestuwydajnościsieciWeb** paska narzędzi. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-     Wykres aktywności wirtualnych użytkowników odpowiednio aktualizowany.
+     **Wykres aktywności wirtualnych użytkowników** odpowiednio aktualizowany.
 
 ## <a name="see-also"></a>Zobacz także
 

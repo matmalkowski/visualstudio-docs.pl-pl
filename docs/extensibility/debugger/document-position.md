@@ -1,5 +1,5 @@
 ---
-title: Pozycji dokumentu | Dokumentacja firmy Microsoft
+title: Położenie dokumentu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c2c3d50c9353caf14db18a22d93cc363903961
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 456761279e41bd35a3a5f049b33403132fe07d66
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098020"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203699"
 ---
 # <a name="document-position"></a>Położenie dokumentu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, **pozycji dokumentu**:  
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania *pozycji dokumentu*:  
   
--   Udostępnia abstrakcję pozycji w pliku źródłowym, ponieważ znana IDE. Dla większości języków obecnie położenie dokumentu można traktować jako pozycji w pliku źródłowym.  
+-   Zapewnia abstrakcję pozycji w pliku źródłowym, jak wiadomo, że środowisko IDE. Większość języków już dziś, położenie dokumentu mogą być uważane za pozycji w pliku źródłowym.  
   
 -   W tym artykule opisano pozycji w dokumencie źródłowym do aparatu debugowania.  
   
--   Jest implementowany przez [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interfejsu.  
+-   Jest implementowana przez [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interfejsu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kontekst kodu](../../extensibility/debugger/code-context.md)   
- [Kontekstu dokumentu](../../extensibility/debugger/document-context.md)   
- [Dostawca — symbol](../../extensibility/debugger/symbol-provider.md)   
- [Symbol dostawcy interfejsów](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Kontekst dokumentu](../../extensibility/debugger/document-context.md)   
+ [Dostawca symboli](../../extensibility/debugger/symbol-provider.md)   
+ [Interfejsy dostawca symboli](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

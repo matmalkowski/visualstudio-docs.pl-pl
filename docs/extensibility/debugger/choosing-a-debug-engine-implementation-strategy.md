@@ -1,5 +1,5 @@
 ---
-title: Wybieranie strategii wdrażania aparat debugowania | Dokumentacja firmy Microsoft
+title: Wybieranie strategii implementacji aparatu debugowania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3715bac00b25cd2080a1162c8e2ce8cb33e63a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 058e3d3087a46de4bb3c5d9b721d3c9111b77526
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098072"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203715"
 ---
-# <a name="choosing-a-debug-engine-implementation-strategy"></a>Wybieranie strategii wdrażania aparat debugowania
-Architektura środowiska wykonawczego umożliwia określanie strategii wdrażania (DE) Aparat debugowania. Aparat debugowania może zostać utworzony w trakcie do programu debugowany, proces Menedżera debugowania sesji programu Visual Studio (SDM) lub poza procesem do obu z nich. Poniższe wskazówki powinna ułatwić wybranie jednego z tych trzech strategii.  
+# <a name="choose-a-debug-engine-implementation-strategy"></a>Wybieranie strategii implementacji aparatu debugowania
+Architektura środowiska wykonawczego umożliwia określenie strategii implementacji aparatu (DE) debugowania. Można utworzyć aparatu w — proces debugowania do programu, który debugujesz. Utwórz debugowania aparatu wewnątrz procesu Menedżer debugowania sesji programu Visual Studio (SDM). Lub Utwórz debugowania aparatu poza procesem do obu z nich. Poniższe wskazówki pomoże wybrać jeden z tych trzech strategii.  
   
 ## <a name="guidelines"></a>Wytyczne dotyczące  
- Gdy istnieje możliwość DE się poza procesem do SDM i programu do debugowania, nie istnieje zwykle Przyczyna Aby to zrobić. Wywołania przez granice procesu są stosunkowo powolne.  
+ Choć jest możliwe do DE to spoza procesu SDM i program debugujesz zwykle nie ma powodu aby to zrobić. Wywołania przez granice procesu są stosunkowo wolno.  
   
- Debugowanie aparaty są już udostępniane dla środowiska Win32 natywnego środowiska wykonawczego i środowisko uruchomieniowe języka wspólnego. Jeśli musisz zastąpić DE dla dowolnego z tych środowisk, należy utworzyć z SDM DE w procesie.  
+ Debugowanie aparaty są już udostępniane dla środowiska wykonawczego natywny Win32 i środowiska uruchomieniowego języka wspólnego. Jeśli musisz zastąpić "de" dla jednego środowiska, należy utworzyć DE w procesie z SDM.  
   
- W przeciwnym razie można wybrać tworzenie DE procesu do SDM lub proces programu do debugowania. Należy wziąć pod uwagę, czy ewaluatora wyrażenia z DE wymaga częste dostępu do magazynu symboli program i czy magazynu symboli mogą być ładowane do pamięci w celu szybkiego dostępu. Również uwzględnić następujące kwestie:  
+ W przeciwnym razie albo utworzysz DE wewnątrz procesu SDM lub debugujesz procesu do programu. Należy wziąć pod uwagę, jeśli ewaluatora wyrażenia z DE wymaga częstego dostępu do magazynu symboli programu. Lub, jeśli w magazynie symboli może być załadowany do pamięci, aby uzyskać szybki dostęp. Ponadto należy wziąć pod uwagę następujących metod:  
   
--   Jeśli nie ma wiele wywołań między ewaluatora wyrażenia, a także przechowywać symbolu lub magazynu symboli mogą być odczytywane w obszarze pamięci SDM, Utwórz DE w procesie do SDM. Identyfikator CLSID aparat debugowania musi zwrócić SDM po dołączeniu do programu. SDM używa tego identyfikatora CLSID w celu utworzenia wystąpienia w trakcie DE.  
+-   Jeśli nie ma wiele wywołań między Ewaluator wyrażeń i magazynu symboli lub mogą być odczytywane w magazynie symboli do obszaru pamięci SDM, należy utworzyć DE wewnątrz procesu SDM. Identyfikator CLSID aparat debugowania musi zwrócić SDM, po dołączeniu do programu. SDM używa tego identyfikatora CLSID, do utworzenia wystąpienia w trakcie DE.  
   
--   Jeśli DE musi wywołać program dostępu do magazynu symboli, Utwórz DE w procesie z programu. W takim przypadku program tworzy wystąpienie DE.  
+-   Jeśli DE musi wywołać program, który ma dostęp do magazynu symboli, należy utworzyć DE w procesie z programem. W takim przypadku program tworzy wystąpienie DE.  
   
-## <a name="see-also"></a>Zobacz też  
- [Rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+## <a name="see-also"></a>Zobacz także  
+ [Rozszerzeń debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

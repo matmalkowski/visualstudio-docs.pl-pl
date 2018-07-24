@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a84596246ae930cdffc0265f2f2e09652661819
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b1f3d91fd44308c1737f8066c13af730454abe
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097838"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203348"
 ---
 # <a name="code-context"></a>Kontekst kodu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, **kontekst kodu**:  
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania **kontekst kodu**:  
   
--   Udostępnia abstrakcję pozycji w kodzie, ponieważ znana aparat debugowania (DE). Dla większości architektur środowiska wykonawczego dzisiaj, kontekst kodu można traktować jako adresu w strumieniu instrukcji programu. Nietradycyjnych języków, w którym kod nie może być reprezentowany przez instrukcje, kontekst kodu mogą być reprezentowane w inny sposób.  
+-   Udostępnia abstrakcję pozycji w kodzie, ponieważ wiadomo, że aparat debugowania (DE). Dla większości architektury w czasie wykonywania, kontekst kodu można traktować jako adres w usłudze stream instrukcji programu. Nietradycyjnych języków, w którym kod nie może być reprezentowany przez instrukcje, kontekst kodu mogą być reprezentowane za pomocą innych środków.  
   
--   Opisuje bieżącą pozycję w strumieniu wykonywania debugowany program.  
+-   W tym artykule opisano bieżącą pozycję w strumieniu wykonywania programu, który debugujesz.  
   
--   Istnieje tylko, gdy program zostało zatrzymane w punkcie przerwania.  
+-   Istnieje tylko wtedy, gdy programu zostało zatrzymane w punkcie przerwania.  
   
--   Ma kontekst skojarzonego dokumentu.  
+-   Nie ma skojarzonego kontekstu.  
   
--   Jest implementowany przez [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfejsu.  
+-   Jest implementowana przez [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfejsu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Kontekstu dokumentu](../../extensibility/debugger/document-context.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Kontekst dokumentu](../../extensibility/debugger/document-context.md)   
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

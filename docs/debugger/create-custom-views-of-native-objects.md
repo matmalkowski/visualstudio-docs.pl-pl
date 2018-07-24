@@ -2,7 +2,7 @@
 title: Tworzenie niestandardowych widoków obiektów macierzystych
 description: Użyć struktury Natvis pozwala dostosować sposób, że program Visual Studio Wyświetla typy natywne w debugerze
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433577"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204248"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze programu Visual Studio
 Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie Visual Studio Wyświetla typy natywne w oknach zmiennych debugera (na przykład **Obejrzyj** okna, **zmiennych lokalnych** okna, a następnie w  **DataTips**.
@@ -631,7 +631,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 </Type>  
 ```  
   
- Możesz zobaczyć przykład UIVisualizer w rozszerzeniu Obejrzyj obraz używany do wyświetlania mapy bitowe w pamięci: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Możesz zobaczyć przykład UIVisualizer w rozszerzeniu Obejrzyj obraz używany do wyświetlania mapy bitowe w pamięci: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer element  
  `CustomVisualizer` jest punktem rozszerzalności, która określa rozszerzenie VSIX, który może zapisać do kontrolowania wizualizacji w kodzie, który działa w programie Visual Studio. Aby uzyskać więcej informacji na temat pisania rozszerzenia VSIX, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pisanie wizualizatora niestandardowego jest o wiele więcej pracy niż pisania definicji natvis XML, ale możesz są wolne od ograniczenia, o jakich natvis obsługuje ani nie obsługuje. Wizualizatory niestandardowe mają dostęp do pełnego zestawu rozszerzalności debugera interfejsów API, który może służyć do kwerendy i modyfikowanie obiektu debugowanego procesu lub komunikowania się z innymi częściami programu Visual Studio.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890412"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204209"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -26,10 +26,12 @@ Możesz też rozważyć, czy jest lepiej używać [kompilacji lub release manage
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
+W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania kontrolera testów agent lub test programu Visual Studio 2017:
+
 | Element | Wymagania |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
-| **Kontroler** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
+| **Kontroler** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj agentów testowych i kontrolera testów

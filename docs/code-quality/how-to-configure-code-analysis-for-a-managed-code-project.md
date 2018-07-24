@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179563"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204235"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Porady: konfigurowanie analizy kodu dla projektu zarządzanego kodu
 
-W programie Visual Studio, można wybrać z listy analizy kodu *zestawów reguł* do zastosowania do projektu kodu zarządzanego. Domyślny zestaw reguł jest *reguł zalecanych Minimum Microsoft*. Można stosować inną regułę ustawiony jako projekt lub dla wszystkich projektów w rozwiązaniu.
+W programie Visual Studio, można wybrać z listy analizy kodu [zestawów reguł](../code-quality/rule-set-reference.md)) do zastosowania do projektu kodu zarządzanego. Domyślnie **reguł zalecanych Minimum Microsoft** zestaw reguł jest zaznaczone, ale można zastosować inną regułę, ustaw, jeśli to konieczne. Zestawy reguł można zastosować do jednego lub wielu projektów w rozwiązaniu.
 
 > [!TIP]
 > Aby uzyskać informacje o sposobie konfigurowania zestawu reguł dla aplikacji sieci web ASP.NET, zobacz [jak: Konfigurowanie analizy kodu dla aplikacji ASP.NET aplikację sieci web](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Domyślnie są przypisywane projektów zarządzanych rozwiązania *reguł zaleca
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)
 - [Porady: Konfigurowanie analizy kodu dla sieci web platformy ASP.NET w aplikacji](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
