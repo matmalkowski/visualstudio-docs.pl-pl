@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Odblokowywanie pobierania w systemie Windows Server
+          href: remote-debugging-unblock-file-download.md
         - name: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
           href: remote-debugging-errors-and-troubleshooting.md
           items:
