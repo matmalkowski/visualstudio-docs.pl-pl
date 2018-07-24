@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c8dfffbcbfee71721b97d81a775cb0093d18bb0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179820"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203757"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: dodawanie parametrów kontekstu do ustawień testu obciążenia
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
 Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
@@ -64,7 +64,7 @@ Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej 
 
      Jeśli działanie ustawienie już zawiera **parametrów kontekstu** folderu, możesz go prawym przyciskiem myszy i wybierz **dodać parametr kontekstu**.
 
-4.  W oknie Właściwości zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W oknie Właściwości zmień **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
+4.  W **właściwości** okna, zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W **właściwości** oknie zmiany **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
 
 5.  (Opcjonalnie) Powtórz kroki od 3 do 5 i używać różnych ciąg **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
 

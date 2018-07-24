@@ -1,6 +1,6 @@
 ---
-title: Dowiedz się debugować aplikacje wielowątkowe
-description: Debugowanie za pomocą stosów równoległych i czujki równoległej systemu windows w programie Visual Studio
+title: Dowiedz się, jak debugowanie aplikacji wielowątkowych
+description: Debugowanie za pomocą okna stosów równoległych i równoległego wyrażenia kontrolnego w programie Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.technology: vs-ide-debug
@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb178a0a048a3696fc2c1ec642127906c8b83424
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926263"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204222"
 ---
-# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Rozpocząć debugowanie wielowątkowe aplikacje w programie Visual Studio
-Program Visual Studio udostępnia wiele narzędzi i elementy interfejsu użytkownika, aby pomóc w debugowaniu aplikacji wielowątkowych. Ten samouczek przedstawia sposób użycia znaczników wątku **stosów równoległych** okna, **czujki równoległej** okna, warunkowych punktów przerwania, a punkty przerwania filtru. W tym samouczku zajmuje tylko kilka minut, ale jego wypełnieniu umożliwia zapoznanie się z funkcjami do debugowania aplikacji wielowątkowych.
+# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Rozpoczynanie debugowania aplikacji wielowątkowych w programie Visual Studio
+Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytkownika w celu ułatwienia debugowania aplikacji wielowątkowych. W tym samouczku pokazano, jak i używaj znaczników wątków **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okien, warunkowe punkty przerwania i filtr punktów przerwania. Ten samouczek zawiera tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z funkcjami debugowania aplikacji wielowątkowych.
 
 |         |         |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) na debugowanie wielowątkowe, który zawiera podobne kroki. |
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) na debugowanie wielowątkowe, który zawiera podobne kroki. |
 
-Inne tematy zawierają dodatkowe informacje o przy użyciu innych narzędzi debugowania wielowątkowe:
+Inne tematy zawierają dodatkowe informacje na temat korzystania z innymi narzędziami debugowania wielowątkowe:
 
-- Dla podobnych temat, który przedstawia sposób użycia **debugowania lokalizacji** narzędzi i **wątków** okna, zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
+- Podobne tematu, który pokazuje, jak używać **Lokalizacja debugowania** narzędzi i **wątków** okna, zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
 
-- Podobne tematu z przykładu korzystającego z <xref:System.Threading.Tasks.Task> (kod zarządzany) i współbieżność środowiska wykonawczego (C++), zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md). Ogólne porady debugowania, które dotyczą najbardziej wielowątkowe typy aplikacji można znaleźć w zarówno w tym temacie oraz temat połączone.
+- Podobne tematu przy użyciu przykładu, który używa <xref:System.Threading.Tasks.Task> (kodu zarządzanego) i środowisko uruchomieniowe współbieżności (C++), zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md). Ogólne debugowania porady, które mają zastosowanie do najbardziej wielowątkowe typów aplikacji można znaleźć w tym temacie i połączone tematu.
   
-Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykonaj wszystkie czynności opisane tutaj, aby utworzyć tego projektu.  
+Do wykonywania kroków opisanych w tym samouczku, potrzebny jest projektu aplikacji wielowątkowych. Wykonaj kroki wymienione w tym miejscu do utworzenia tego projektu.  
   
 #### <a name="to-create-the-multithreaded-app-project"></a>Aby utworzyć projekt aplikacji wielowątkowych  
   
-1.  Na **pliku** menu, wybierz **nowy** , a następnie kliknij przycisk **projektu**.  
+1.  Na **pliku** menu, wybierz **New** a następnie kliknij przycisk **projektu**.  
   
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.  
+     **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  W **typu projektu**s kliknij preferowanego języka: **Visual C#**, **Visual C++**, lub **Visual Basic**.  
+2.  W **typu projektu**s kliknij wybranego przez siebie języka: **Visual C#**, **Visual C++**, lub **języka Visual Basic**.  
   
-3.  W **szablony** wybierz **aplikacji konsoli**.  
+3.  W **szablony** wybierz **aplikacja Konsolowa**.  
   
 4.  W **nazwa** wpisz nazwę MyThreadWalkthroughApp.  
   
 5.  Kliknij przycisk **OK**.  
   
-     Zostanie wyświetlony nowy projekt console. Po utworzeniu projektu, zostanie wyświetlony plik źródłowy. W zależności od wybranego języka może można wywołać plik źródłowy, plik Program.cs, MyThreadWalkthroughApp.cpp lub Module1.vb.  
+     Pojawi się nowy projekt konsoli. Po utworzeniu projektu, zostanie wyświetlony plik źródłowy. W zależności od języka wybranego pliku źródłowego może można wywołać plik Program.cs, MyThreadWalkthroughApp.cpp lub Module1.vb.  
   
-6.  Usuń kod, który pojawia się w pliku źródłowym i zastąp go przykładowy kod pokazano poniżej.
+6.  Usuń kod, który pojawia się w pliku źródłowym i Zastąp kod przykładu przedstawiony w tym miejscu.
 
     ```csharp
     using System;
@@ -112,25 +112,27 @@ Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykon
     #include <iostream>
     #include <vector>
 
+    using namespace;
+
     int count = 0;
 
     void doSomeWork() {
 
-        std::cout << "The doSomeWork function is running on another thread." << std::endl;
+        cout << "The doSomeWork function is running on another thread." << endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        std::this_thread::sleep_for(std::chrono::seconds(3));
-        std::cout << "The function called by the worker thread has ended." << std::endl;
+        this_thread::sleep_for(chrono::seconds(3));
+        cout << "The function called by the worker thread has ended." << endl;
     }
 
     int main() {
-        std::vector<std::thread> threads;
+        vector<thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(std::thread(doSomeWork));
-            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+            threads.push_back(thread(doSomeWork));
+            cout << "The Main() thread calls this after starting the new thread" << endl;
         }
 
         for (auto& thread : threads) {
@@ -196,7 +198,7 @@ Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykon
   
 #### <a name="to-begin-the-tutorial"></a>Aby rozpocząć samouczka  
   
--   Wyszukaj następujący kod w edytorze kodu źródłowego: 
+-   W edytorze kodu źródłowego Wyszukaj następujący kod: 
   
     ```csharp  
     Thread.Sleep(3000);  
@@ -204,9 +206,10 @@ Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykon
     ```  
   
     ```C++  
-    Thread::Sleep(3000);  
-    Console.WriteLine();  
+    this_thread::sleep_for(chrono::seconds(3));
+    cout << "The function called by the worker thread has ended." << endl; 
     ```  
+
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
@@ -214,25 +217,25 @@ Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykon
   
 #### <a name="to-start-debugging"></a>Aby rozpocząć debugowanie  
   
-1.  Kliknij w lewym odstępu dla `Thread.Sleep` lub `Thread::Sleep` instrukcji, aby wstawić nowego punktu przerwania.  
+1.  Kliknij na lewym marginesie z `Thread.Sleep` lub `this_thread::sleep_for` instrukcję, aby wstawić nowy punkt przerwania.  
   
-     W odstępu po lewej stronie Edytor kodu źródłowego pojawi się czerwone kółko. Oznacza to, że punkt przerwania jest teraz ustawić w tej lokalizacji. 
+     Na marginesie po lewej stronie Edytor kodu źródłowego pojawi się czerwone kółko. Oznacza to, że punkt przerwania są teraz ustawione w tej lokalizacji. 
   
 2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** (**F5**).  
   
-     Visual Studio kompiluje rozwiązanie, uruchomieniu aplikacji do uruchamiania w debugerze, a następnie aplikacja zatrzymuje się na punkt przerwania.  
+     Program Visual Studio tworzy rozwiązanie, aplikacja zaczyna być uruchamiana w debugerze i zatrzymywany aplikacji w punkcie przerwania.  
   
     > [!NOTE]
-    > Po przełączeniu fokus w oknie konsoli kliknij [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno, aby wrócić fokus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+    > Jeśli możesz przełączać fokus w oknie konsoli, kliknij w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna powrót do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  W edytorze kodu źródłowego odszukaj wiersz zawierający punkt przerwania:  
+4.  W Edytor kodu źródłowego zlokalizuj wiersz zawierający punkt przerwania:  
   
     ```csharp  
     Thread.Sleep(3000);  
     ```  
   
     ```C++  
-    Thread::Sleep(3000);  
+    this_thread::sleep_for(chrono::seconds(3)); 
     ```
 
     ```VB
@@ -241,144 +244,144 @@ Aby rozpocząć tego samouczka, należy projekt aplikacji wielowątkowych. Wykon
   
 #### <a name="ShowThreadsInSource"></a>Aby odnaleźć znacznika wątku  
 
-1.  Na pasku narzędzi debugowania, kliknij przycisk **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1.  Na pasku narzędzi debugowania kliknij **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
-2. Naciśnij klawisz **F11** raz, aby poprawić debugera jeden wiersz kodu.
+2. Naciśnij klawisz **F11** raz, aby awansować debugera jednego wiersza kodu.
   
-3.  Spójrz na odstępu w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikona ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami materiału. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
+3.  Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami ręczników. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
 
-    Zwróć uwagę, że znacznika wątku może być częściowo ukrywane przez punkt przerwania. 
+    Należy zauważyć, że znacznika wątku może częściowo zasłonięte przez punkt przerwania. 
   
-4.  Umieść kursor nad znacznika wątku. Zostanie wyświetlone etykietek danych. Etykietek danych zawiera numer identyfikacyjny nazwy i wątków dla każdego zatrzymanego wątku. W takim przypadku nazwa jest prawdopodobnie `<noname>`. 
+4.  Umieść wskaźnik myszy nad znacznika wątku. Pojawi się DataTip. DataTip informuje numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania. W takim przypadku nazwa jest prawdopodobnie `<noname>`. 
   
-5.  Kliknij prawym przyciskiem myszy znacznika wątku, aby wyświetlić opcje dostępne w menu skrótów.
+5.  Kliknij prawym przyciskiem myszy znacznika wątku, aby wyświetlić dostępne opcje w menu skrótów.
     
 ## <a name="ParallelStacks"></a>Sprawdź lokalizację wątków
 
-W **stosów równoległych** okna, można przełączać się między widokiem wątków i (na potrzeby programowania opartego na zadaniach) widoku zadania, a można przeglądać informacje stosu wywołań dla każdego wątku. W tej aplikacji możemy użyć widoku wątków.
+W **stosów równoległych** okna, można przełączać się między widokiem wątków i (w przypadku programowania opartego na zadaniach) widoku zadania, na które mogą wyświetlać informacje stosu wywołań dla każdego wątku. W tej aplikacji możemy użyć widoku wątków.
 
-1. Otwórz **stosów równoległych** okna, wybierając **Debuguj > Windows > stosów równoległych**. Powinny pojawić się podobny do poniższego (dokładne informacje będą różne w zależności od bieżącej lokalizacji każdy wątek, sprzętu i języka programowania).
+1. Otwórz **stosów równoległych** okna, wybierając **Debuguj > Windows > stosów równoległych**. Powinien zostać wyświetlony, podobne do poniższego kodu (konkretne informacje będą różne w zależności od aktualnej lokalizacji każdego wątku, sprzętu i języka programowania).
 
-    ![Równoległych stosów okna](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Okno stosów równoległych](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
-    W tym przykładzie od lewej do prawej uzyskujemy te informacje:
+    W tym przykładzie od lewej do prawej uzyskujemy te informacje dla kodu zarządzanego:
     
-    - Wątek Main (po lewej stronie) została zatrzymana na `Thread.Start` (punkt zatrzymania jest oznaczony ikoną znacznika wątku ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
-    - Dwa wątki zostały wprowadzone `ServerClass.InstanceMethod`, z których jeden jest bieżący wątek (żółta strzałka), podczas gdy inne wątku zostało zatrzymane w `Thread.Sleep`.
-    - Nowego wątku (po prawej) jest również uruchamiana (zatrzymana na `ThreadHelper.ThreadStart`).
+    - Główny wątek (lewa strona) została zatrzymana na `Thread.Start` (punkt zatrzymania jest wskazywany przez ikonę znacznika wątku ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
+    - Wprowadzono dwa wątki `ServerClass.InstanceMethod`, z których jedna jest bieżący wątek (żółta strzałka), podczas gdy inne wątku została zatrzymana w `Thread.Sleep`.
+    - Nowy wątek (po prawej stronie) jest również uruchamiana (zatrzymana na `ThreadHelper.ThreadStart`).
 
-2.  Kliknij prawym przyciskiem myszy wpisy w **stosów równoległych** okno, aby wyświetlić dostępne opcje menu skrótów.
+2.  Kliknij prawym przyciskiem myszy wpisy w **stosów równoległych** okna, aby wyświetlić dostępne opcje w menu skrótów.
 
-    Wykonaj różne akcje z tych menu kliknij prawym przyciskiem myszy, ale w tym samouczku pokazano, jeden z tych szczegółów w **czujki równoległej** okna (w następnej sekcji).
+    Możesz wykonywać różne akcje te menu kliknij prawym przyciskiem myszy, ale w tym samouczku pokazano, jeden z tych szczegółów w **równoległego wyrażenia kontrolnego** okna (w kolejnych sekcjach).
 
     > [!NOTE]
-    > Jeśli interesuje Cię więcej wyświetlenie listy, wyświetlania informacji dotyczących każdego wątku, użyj **wątków** okna zamiast tego. Zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
+    > Jeśli interesuje Cię bardziej wyświetlania listy, wyświetlania informacji dotyczących każdego wątku, należy użyć **wątków** okna zamiast tego. Zobacz [wskazówki: debugowanie aplikacji wielowątkowych](../debugger/how-to-use-the-threads-window.md).
 
-## <a name="set-a-watch-on-a-variable"></a>Ustaw czujki w zmiennej
+## <a name="set-a-watch-on-a-variable"></a>Ustawianie wyrażenia kontrolnego na zmiennej
 
-1. Otwórz **czujki równoległej** okna, wybierając **Debuguj > Windows > czujki równoległej > 1 czujki równoległej**.
+1. Otwórz **równoległego wyrażenia kontrolnego** okna, wybierając **Debuguj > Windows > równoległe wyrażenie kontrolne > równoległa Czujka 1**.
 
-2. Kliknij komórkę, w której występuje `<Add Watch>` tekst (lub komórki pusty nagłówek kolumny 4), typ `data`, i naciśnij klawisz Enter.
+2. Kliknij komórkę tam, gdzie zobaczysz `<Add Watch>` tekstu (lub komórki nagłówka puste kolumny 4), typ `data`, i naciśnij klawisz Enter.
 
     Wartości dla zmiennej danych dla każdego wątku są wyświetlane w oknie.
 
-3. Kliknij ponownie przycisk w komórce, w której występuje `<Add Watch>` tekst (lub komórki pusty nagłówek kolumny 5.), typ `count`, i naciśnij klawisz Enter.
+3. Kliknij ponownie przycisk w komórce tam, gdzie zobaczysz `<Add Watch>` tekstu (lub komórki nagłówka puste kolumny 5), typ `count`, i naciśnij klawisz Enter.
 
-    Wartości dla zmiennej licznika dla każdego wątku są wyświetlane w oknie. (Jeśli nie widzisz jeszcze tyle informacji, spróbuj nacisnąć klawisz F11 kilka razy więcej można poprawić wykonywanie wątków w debugerze.)
+    Wartości dla zmiennej liczby dla każdego wątku są wyświetlane w oknie. (Jeśli nie widzisz jeszcze tym dużo informacji, spróbuj nacisnąć klawisz F11 kilka razy więcej pomocnych wykonywanie wątków w debugerze.)
 
-    ![Okno czujki równoległych](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Równoległe okno czujki](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
-4. Kliknij prawym przyciskiem myszy jednego z wierszy w oknie, aby wyświetlić dostępne opcje.
+4. Kliknij prawym przyciskiem myszy jeden z wierszy w oknie, aby wyświetlić dostępne opcje.
 
 ## <a name="flagging-and-unflagging-threads"></a>Flagami i Unflagging wątków  
-Można Flaga wątków, które chcesz nadać szczególną uwagę. Flagowanie wątków jest dobrym sposobem do śledzenia ważnych wątków i Ignoruj wątków, które nie zależy Ci.  
+Można Oflaguj wątki, które chcesz poświęcić szczególną uwagę. Flagowanie wątków jest dobrym sposobem na śledzenie ważnych wątków i ignorowanie wątki, które nie są istotne informacje.  
   
-#### <a name="to-flag-threads"></a>Aby oflagowania wątków  
+#### <a name="to-flag-threads"></a>Do oflagowania wątków  
 
-1. W **czujki równoległej** okna, naciśnij i przytrzymaj klawisz SHIFT i zaznaczyć wiele wierszy.
+1. W **równoległego wyrażenia kontrolnego** okna, naciśnij i przytrzymaj klawisz SHIFT i wybierz opcję wiele wierszy.
 
 2. Kliknij prawym przyciskiem myszy i wybierz polecenie **flagi**.
 
-    Teraz są oznaczane wybrane wątki. Teraz możesz filtrować Pokaż tylko oflagowane wątki.
+    Teraz wybrane wątki są oflagowane. Teraz możesz filtrować Pokaż tylko oflagowane wątki.
   
-3.  W **czujki równoległej** oknie Znajdź **Pokaż tylko oflagowane wątki** przycisk ![Pokaż oflagowane wątki](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
+3.  W **równoległego wyrażenia kontrolnego** oknie Znajdź **Pokaż tylko oflagowane wątki** przycisk ![Pokaż oflagowane wątki](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
   
 4.  Kliknij przycisk **Pokaż tylko oflagowane wątki** przycisku.  
   
-    Na liście pojawi się teraz tylko oflagowane wątku.
+    Na liście pojawi się teraz tylko wątków oflagowanych.
 
     > [!TIP]
-    > Gdy flagą niektórych wątków, musisz kliknij prawym przyciskiem myszy linię kodu w edytorze kodu i wybrać **Uruchom oflagowane wątki do kursora** (Upewnij się, wybierz kod, że wszystkie oflagowane wątki osiągną). Spowoduje to wstrzymać wątków w wybranym wierszu kodu, co ułatwia kontrolowanie kolejność wykonywania przez [zamrażanie i odblokowania wątków](#bkmk_freeze).
+    > Gdy flagą niektóre wątki mogą kliknij prawym przyciskiem myszy linię kodu w edytorze kodu i wybierz polecenie **Uruchom oflagowane wątki do kursora** (Upewnij się, że wybrany kod wszystkich wątków oflagowanych będzie korzystał z). To spowoduje wstrzymanie wątków na wybrany wiersz kodu, dzięki czemu łatwiej jest kontrolować kolejność wykonywania przez [zawiesza się i odblokowania wątków](#bkmk_freeze).
 
-5.  Kliknij przycisk **Pokaż tylko oflagowane wątki** przycisk, aby powrócić do **Pokaż wszystkie wątki** tryb.
+5.  Kliknij przycisk **Pokaż tylko oflagowane wątki** przycisk, aby powrócić do **Pokaż wszystkie wątki** trybu.
     
 #### <a name="to-unflag-threads"></a>Aby usuwanie oflagowania wątków
 
-Aby usuwanie oflagowania wątków, kliknąć prawym przyciskiem myszy jeden lub więcej wątków oflagowanych w **czujki równoległej** okna i wybierz polecenie **Unflag**.
+Aby usuwanie oflagowania wątków, kliknąć prawym przyciskiem myszy jeden lub więcej wątków oflagowanych w **równoległego wyrażenia kontrolnego** oknie i wybierz polecenie **Unflag**.
 
-## <a name="bkmk_freeze"></a> Zamrażanie i odblokowania wykonywanie wątków 
+## <a name="bkmk_freeze"></a> Zawiesza się i odblokowania wykonywanie wątków 
 
 > [!TIP]
-> Możesz zablokować i odblokować (wstrzymywania i wznawiania) wątków, aby określić kolejność, w którym wątków wykonywania pracy. To może pomóc rozwiązać problemy ze współbieżnością, takich jak zakleszczenie i zastępować warunków.
+> Można blokowanie i odblokowywanie (Wstrzymanie i wznowienie) wątków, aby kontrolować kolejność, w którym wątków wykonywania pracy. Może to pomóc Ci rozwiązać problemy ze współbieżnością, takich jak zakleszczenia i wyścigu.
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>Aby blokowanie i odblokowywanie wątków  
+#### <a name="to-freeze-and-unfreeze-threads"></a>Zablokuj i Odblokuj wątki  
   
-1.  W **czujki równoległej** okno z wszystkich wybranych wierszy, kliknij prawym przyciskiem myszy i wybierz **Zablokuj**.
+1.  W **równoległego wyrażenia kontrolnego** okna z wszystkich wybranych wierszy, kliknij prawym przyciskiem myszy i wybierz pozycję **Freeze**.
 
-    W drugiej kolumnie ikoną wstrzymania jest teraz wyświetlany dla każdego wiersza. Ikona Wstrzymaj wskazuje, że wątek jest zablokowana.
+    W drugiej kolumnie ikona Wstrzymaj pojawi się dla każdego wiersza. Ikona Wstrzymaj wskazuje, że wątek jest zablokowane.
 
-2.  Anuluj wybór wiersze, klikając tylko jeden wiersz.
+2.  Usuń zaznaczenie wiersze, klikając przycisk tylko jeden wiersz.
 
-3.  Kliknij prawym przyciskiem myszy wiersza i wybierz **odblokowania**.
+3.  Kliknij prawym przyciskiem myszy wiersz, a następnie wybierz pozycję **Odblokuj**.
 
-    Wstrzymaj ikona zniknie na ten wiersz i wskazujący, że wątek jest już zablokowana.
+    Ikona Wstrzymaj stanie się niepotrzebna ten wiersz, wskazujący, że wątek nie jest już jest zamrożona.
 
-4.  Przełącz się do edytora kodu i kliknij przycisk **F11**. Uruchamia odblokowanej wątku.
+4.  Przejdź do edytora kodu, a następnie kliknij przycisk **F11**. Uruchamia odblokowanej wątku.
 
-    Aplikacja może także utworzyć wystąpienia niektóre nowe wątki. Zwróć uwagę, że wszystkie nowe wątki są bez flagi i nie są zablokowane.
+    Aplikacja może również tworzy kilka nowych wątków. Należy zauważyć, że wszystkie nowe wątki są bez flagi, a nie są zablokowane.
 
-## <a name="bkmk_follow_a_thread"></a> Wykonaj jeden wątek za pomocą warunkowe punkty przerwania
+## <a name="bkmk_follow_a_thread"></a> Postępuj zgodnie z jednego wątku za pomocą warunkowe punkty przerwania
 
-Czasami może być przydatne do wykonania wykonywania jest jeden wątek w debugerze. Jedną z metod można to zrobić zamrażanie wątków, które nie są zainteresowane, ale w niektórych przypadkach warto wykonaj pojedynczego wątku bez zamrażanie innych wątków (do określonego usterek, na przykład reprodukcja). Do wykonania wątku bez zamrażanie inne wątki, można uniknąć dzielenia na kod z wyjątkiem w wątku, który chcesz. Można to zrobić przez ustawienie [warunkowych punktów przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+Czasami może być przydatne z wykonywania jest jeden wątek w debugerze. Jednym ze sposobów, możesz to zrobić, jest zawiesza się wątki, które nie są zainteresowani, ale w niektórych scenariuszach możesz chcieć wykonać pojedynczego wątku, nie zawiesza się inne wątki (Odtwórz określonego usterek, na przykład). Aby wykonać wątek bez zawiesza się inne wątki, można uniknąć wejście do kodu, z wyjątkiem w wątku, który Cię interesuje. Można to zrobić, ustawiając [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-Można ustawić punktów przerwania w różnych warunkach, takie jak nazwa wątku lub identyfikator wątku. Innej metody, które mogą być pomocne jest warunek danych, który będzie unikatowy dla każdego wątku. To jest typowym scenariuszem debugowania, w którym myślisz więcej niż w jednym z wątków niektóre wartości danych.
+Możesz ustawić punkty przerwania dla różnych warunków, takich jak nazwa wątku lub identyfikator wątku. Innej metody, które mogą być pomocne jest ustawienie dla warunku na danych, który będzie unikatowy dla każdego wątku. Jest to typowy scenariusz debugowania, w którym interesuje Cię bardziej niż w żadnym z wątków niektóre wartości określone dane.
 
-#### <a name="to-follow-a-single-thread"></a>Do wykonania wątku pojedynczego
+#### <a name="to-follow-a-single-thread"></a>Z jednego wątku
 
-1. Kliknij prawym przyciskiem myszy punkt przerwania została wcześniej utworzona, a następnie wybierz pozycję **warunki**.
+1. Kliknij prawym przyciskiem myszy punkt przerwania został wcześniej utworzony, a następnie wybierz **warunki**.
 
-2. W **ustawienia punktów przerwania** wpisz `data == 5` dla wyrażenia warunkowego.
+2. W **ustawienia punktu przerwania** okna, typ `data == 5` dla wyrażenia warunkowego.
 
-    ![Punkt przerwania warunkowego](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
+    ![Warunkowego punktu przerwania](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > Jeśli interesuje Cię więcej w konkretnym wątkiem, użyj Nazwa wątku lub identyfikator wątku dla warunku. Aby to zrobić w **ustawienia punktów przerwania** wybierz **filtru** zamiast **wyrażenia warunkowego**i postępuj zgodnie z poradami filtru. Warto nazwa Twojej wątków w kodzie aplikacji (ponieważ wątków identyfikatorów zmiany po ponownym uruchomieniu debugera).
+    > Jeśli interesuje Cię bardziej w określonym wątku, należy następnie rozważyć Nazwa wątku lub identyfikator wątku dla warunku. Aby to zrobić w **ustawienia punktu przerwania** wybierz **filtru** zamiast **wyrażenia warunkowego**i postępuj zgodnie z poradami filtru. Można nazwać wątki w kodzie aplikacji (ponieważ wątki identyfikatory zmiany po ponownym uruchomieniu debugera).
 
-3. Zamknij **ustawienia punktów przerwania** okna.
+3. Zamknij **ustawienia punktu przerwania** okna.
 
 4. Kliknij przycisk Uruchom ponownie ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisk, aby ponownie uruchomić sesję debugowania.
 
-    Spowoduje przerwanie do kodu w wątku, dla której zmienna danych wynosi 5. Wyszukaj żółta strzałka (bieżącego kontekstu debugera) **czujki równoległej** okno, aby sprawdzić, czy.
+    Spowoduje przerwanie połączenia do kodu w wątku, dla której zmienna danych wynosi 5. Wyszukaj żółta strzałka (bieżący kontekst debugera) **równoległego wyrażenia kontrolnego** okna, aby sprawdzić, czy.
 
-5. Można teraz, Przekrocz nad kodu (F10) i wykonywanie kodu (F11) i wykonaj wykonywanie jednego wątku.
+5. Można teraz Przekrocz (F10) kod i wkroczyć do kodu (F11) i postępuj zgodnie z jednym wątkiem wykonywania.
 
-    Tak długo, jak warunku punktu przerwania jest unikatowy dla wątku i debuger nie osiągnęła innych punktów przerwania w innych wątków (może być konieczne je wyłączyć), możesz Przekrocz nad kodu i wykonywanie kodu bez przełączania do innych wątków.
+    Tak długo, jak warunek punktu przerwania jest unikatowy dla wątku i debuger nie trafień inne punkty przerwania w innych wątkach (może być konieczne ich wyłączyć), możesz Przekrocz nad kodem i wejdź do kodu bez przełączania dla innych wątków.
 
     > [!NOTE]
-    > Po przejściu debuger będzie uruchamiane są wszystkie wątki. Jednak debuger nie Dziel na kod na inne wątki, chyba, że jeden z innych wątków trafienia punktu przerwania. 
+    > Po dojściu jest debugera, zostaną uruchomione wszystkie wątki. Jednak debuger nie będzie Wejdź do kodu w innych wątkach, chyba że jeden z innych wątków trafienia punktu przerwania. 
   
-## <a name="more-about-the-multithreaded-debugging-windows"></a>Więcej informacji na temat wielowątkowe debugowania systemu windows 
+## <a name="more-about-the-multithreaded-debugging-windows"></a>Więcej informacji na temat wielowątkowe debugowanie systemu windows 
 
 #### <a name="to-switch-to-another-thread"></a>Aby przełączyć się do innego wątku 
 
 - Aby przełączyć się do innego wątku, zobacz [porady: przełączanie do innego wątku podczas debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
 
-#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Aby dowiedzieć się więcej na temat okna stosów równoległych i czujki równoległej  
+#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Aby dowiedzieć się więcej na temat okna stosów równoległych i równoległego wyrażenia kontrolnego  
   
-- Zobacz [porady: Korzystanie z okna stosu równoległych](../debugger/using-the-parallel-stacks-window.md) 
+- Zobacz [porady: Korzystanie z okna równoległego stosu](../debugger/using-the-parallel-stacks-window.md) 
 
-- Zobacz [porady: Korzystanie z okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md) 
+- Zobacz [porady: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md) 
   
 ## <a name="see-also"></a>Zobacz też  
- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: przełączanie na inny wątek podczas debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Porady: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
