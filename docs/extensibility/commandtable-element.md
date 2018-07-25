@@ -1,5 +1,5 @@
 ---
-title: CommandTable Element | Dokumentacja firmy Microsoft
+title: CommandTable, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f2dd2ebd076d4225adc86e5ba0cdc9af6ca40df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cd201a1b0a68f958cafca80fd156a5eb9ca8120
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100419"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231636"
 ---
-# <a name="commandtable-element"></a>CommandTable Element
-CommandTable jest elementem głównym pliku vsct. To jest plik definiujący rzeczywisty układ i typ poleceń, które zawiera pakiet VSPackage do środowiska IDE. Polecenia może zawierać elementy menu, menu, paski narzędzi i pola kombi. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+# <a name="commandtable-element"></a>CommandTable, element
+CommandTable jest głównym elementem *vsct* pliku. Jest to plik który definiuje układ i typ poleceń, udostępnianych przez pakietu VSPackage środowiska IDE. Polecenia może zawierać elementy menu, menu, paski narzędzi i pola kombi. Aby uzyskać więcej informacji, zobacz [pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" >  
   <Extern>... </Extern>  
   <Include>... </Include>  
@@ -49,22 +49,22 @@ CommandTable jest elementem głównym pliku vsct. To jest plik definiujący rzec
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|xmlns|Wymagany. Przestrzenie nazw XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs = "http://www.w3.org/2001/XMLSchema"|  
-|język|Opcjonalny. Atrybut języka można określić domyślny język wszystkich \<ciągów > elementów w tabeli poleceń.  Jeśli język nie jest określona, zostanie użyty język bieżącego procesu:<br /><br /> język = "en-us"|  
+|xmlns|Wymagane. Obszary nazw XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs = "http://www.w3.org/2001/XMLSchema"|  
+|język|Opcjonalna. Atrybut language może służyć do określania domyślny język wszystkich \<ciągi > elementów w tabeli poleceń.  Jeśli język nie zostanie określony, będzie używany język bieżącego procesu:<br /><br /> Language = "en-us"|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Extern, element](../extensibility/extern-element.md)|Opcjonalny. Zawiera dyrektywy preprocesora dla kompilatora.|  
-|[Include, element](../extensibility/include-element.md)|Opcjonalny. Zawiera ścieżki do plików do uwzględnienia w kompilacji.|  
-|[Define, element](../extensibility/define-element.md)|Opcjonalny. Określa symbol podanej nazwy i wartości.|  
-|[Commands, element](../extensibility/commands-element.md)|Opcjonalny. Definiowanie wszystkie polecenia dla pakiet VSPackage, który zawiera wszystkie elementy z elementu nadrzędnego.|  
-|[CommandPlacements, element](../extensibility/commandplacements-element.md)|Opcjonalny. Określa, gdzie na pasku poleceń, polecenia zostaną umieszczone.|  
-|[VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)|Opcjonalny. Określa statyczne widoczności poleceń i pasków narzędzi.|  
-|[KeyBindings, element](../extensibility/keybindings-element.md)|Opcjonalny. Określa kombinacje klawiszy skrótu dla polecenia.|  
-|[UsedCommands, element](../extensibility/usedcommands-element.md)|Opcjonalny. Umożliwia opcjonalnie implementacji wersja funkcji pierwotnie oferowanych przez inne pakiety VSPackage pakiet VSPackage.|  
-|[Symbols, element](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Opcjonalny. Zawiera wszystkie dane symbol — identyfikatory GUID, identyfikatory i tak dalej — dla kompilatora.|  
+|[Extern, element](../extensibility/extern-element.md)|Opcjonalna. Zawiera dyrektywy preprocesora dla kompilatora.|  
+|[Umieść element](../extensibility/include-element.md)|Opcjonalna. Zawiera ścieżki do plików do uwzględnienia w kompilacji.|  
+|[Define, element](../extensibility/define-element.md)|Opcjonalna. Definiuje symbol, biorąc pod uwagę jego nazwy i wartości.|  
+|[Commands, element](../extensibility/commands-element.md)|Opcjonalna. Element nadrzędny definiujący wszystkie polecenia dla pakietu VSPackage, który zawiera wszystkie inne elementy.|  
+|[CommandPlacements, element](../extensibility/commandplacements-element.md)|Opcjonalna. Określa, gdzie na pasku poleceń, polecenia zostaną umieszczone.|  
+|[VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)|Opcjonalna. Określa statyczne widoczności poleceń i paski narzędzi.|  
+|[KeyBindings, element](../extensibility/keybindings-element.md)|Opcjonalna. Określa kombinacji klawiszy skrótów dla polecenia.|  
+|[UsedCommands, element](../extensibility/usedcommands-element.md)|Opcjonalna. Umożliwia opcjonalnie zaimplementować własną wersję funkcji początkowo obsługiwana przez innych pakietów VSPackage pakietu VSPackage.|  
+|[Symbols, element](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Opcjonalna. Zawiera wszystkie dane symboliczne — identyfikatory GUID, identyfikatory itd. — dla kompilatora.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -72,5 +72,5 @@ CommandTable jest elementem głównym pliku vsct. To jest plik definiujący rzec
 |-------------|-----------------|  
 |Brak||  
   
-## <a name="see-also"></a>Zobacz też  
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
