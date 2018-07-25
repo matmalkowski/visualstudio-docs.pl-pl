@@ -1,5 +1,5 @@
 ---
-title: Stałe COM w kodzie zarządzanym | Dokumentacja firmy Microsoft
+title: Stałe modelu COM w kodzie zarządzanym | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101891"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231539"
 ---
-# <a name="com-constants-in-managed-code"></a>Stałe COM w kodzie zarządzanym
-Zarządzany pakiet Framework (MPF) udostępnia niektóre standardowe stałe COM do kodu zarządzanego. Poniżej przedstawiono te stałe użytkownikowi.  
+# <a name="com-constants-in-managed-code"></a>Stałe modelu COM w kodzie zarządzanym
+Framework pakietu zarządzanego (MPF) sprawia, że niektóre standardowe stałe modelu COM jest dostępne dla kodu zarządzanego. Te stałe są wymienione poniżej, dla której można się odwołać.  
   
-## <a name="boolean-hresult-values"></a>Wartości logiczna HRESULT  
+## <a name="boolean-hresult-values"></a>Wartości HRESULT logiczna  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -129,5 +129,5 @@ Zarządzany pakiet Framework (MPF) udostępnia niektóre standardowe stałe COM 
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>Zobacz też  
- [Obsługa błędów i wartości zwracane](../extensibility/error-handling-and-return-values.md)
+## <a name="see-also"></a>Zobacz także  
+ [Obsługa błędów i zwracanych wartości](../extensibility/error-handling-and-return-values.md)

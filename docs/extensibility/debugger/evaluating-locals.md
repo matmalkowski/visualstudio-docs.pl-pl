@@ -1,5 +1,5 @@
 ---
-title: Obliczenia zmiennych lokalnych | Dokumentacja firmy Microsoft
+title: Ocenianie zmiennych lokalnych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82910e5ab128ced43131445d237925ccb85bee55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e85191635dc7d28a860b81b6d2b07b7bd4f22baf
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103750"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231814"
 ---
-# <a name="evaluating-locals"></a>Obliczenia zmiennych lokalnych
+# <a name="evaluate-locals"></a>Oceń zmiennych lokalnych
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) jest wywoływana w celu uzyskania wartości lokalnej, a także lokalnego nazwę i typ. Ponieważ wartość lokalny jest zależny od bieżącego stanu programu, wartości lokalnej musi pochodzić od pamięci. [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) obiekt jest używany do powiązania [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący lokalnej w odpowiedniej lokalizacji w pamięci zawierającej wartość. Ta lokalizacja w pamięci jest reprezentowana przez [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
+ [Getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) jest wywoływana, aby uzyskać wartości lokalnej, a także lokalnej nazwy i typu. Ponieważ wartość zmiennej lokalnej jest zależny od bieżącego stanu programu, wartości lokalnej musi pochodzić z pamięci. [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) obiekt do powiązania zostanie użyte [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący lokalnej do odpowiedniej lokalizacji w pamięci, zawierającego wartość. Ta lokalizacja w pamięci jest reprezentowany przez [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
   
- Ta funkcja pobierania wartości lokalnej jest hermetyzowany w funkcji pomocnika, która wykonuje następujące zadania:  
+ Ta funkcja pobierania wartości zmiennej lokalnej jest hermetyzowany w funkcji pomocnika, która wykonuje następujące zadania:  
   
 1.  Wiąże `IDebugField` obiektu w pamięci, aby uzyskać `IDebugObject` obiektu.  
   
-2.  Pobiera wartość z pamięci. Ta wartość jest reprezentowany jako serię bajtów.  
+2.  Pobiera wartość z pamięci. Ta wartość jest reprezentowana jako serię bajtów.  
   
 3.  Formatuje wartość na podstawie typu lokalnego.  
   
-4.  Zwraca obiekt ogólnego, który zawiera wartość w lokalnej. W języku C# to `object`, a w języku C++ jest `VARIANT`.  
+4.  Zwraca obiekt rodzajowy, zawierający wartość lokalnego. W języku C# to `object`, a w języku C++, to `VARIANT`.  
   
-## <a name="managed-code"></a>Zarządzany kod  
- Jest to implementacja funkcji, który pobiera wartość zmiennej lokalnej w kodzie zarządzanym.  
+## <a name="managed-code"></a>Kod zarządzany  
+ Jest to implementacja funkcji, która pobiera wartości zmiennej lokalnej w kodzie zarządzanym.  
   
 ```csharp  
 namespace EEMC  
@@ -80,7 +80,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Niezarządzany kod  
- Jest to implementacja funkcji, który pobiera wartość zmiennej lokalnej za pomocą kodu niezarządzanego. `FieldGetType` jest wyświetlany w obszarze [pobierania wartości lokalnej](../../extensibility/debugger/getting-local-values.md).  
+ Jest to implementacja funkcji, która pobiera wartości zmiennej lokalnej w niezarządzanym kodzie. `FieldGetType` jest wyświetlany w [pobieranie wartości lokalnych](../../extensibility/debugger/getting-local-values.md).  
   
 ```cpp  
 HRESULT FieldGetPrimitiveValue(  
@@ -192,7 +192,7 @@ HRESULT FieldGetPrimitiveValue(
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Przykładowe zastosowanie zmiennych lokalnych](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Pobieranie wartości lokalnej](../../extensibility/debugger/getting-local-values.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Przykłady implementacji zmiennych lokalnych](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Pobieranie wartości lokalnych](../../extensibility/debugger/getting-local-values.md)   
  [Kontekst oceny](../../extensibility/debugger/evaluation-context.md)

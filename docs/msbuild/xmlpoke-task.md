@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030419"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231265"
 ---
-# <a name="xmlpoke-task"></a>XmlPoke — Zadanie
+# <a name="xmlpoke-task"></a>XmlPoke — zadanie
 
 Ustawia wartości określonych przez zapytanie XPath do pliku XML.
 
@@ -81,7 +81,7 @@ W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/Phone
 
 `dn` w tym miejscu służy jako prefiks sztuczne przestrzeni nazw dla domyślny obszar nazw.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

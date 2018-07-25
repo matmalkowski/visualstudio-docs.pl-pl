@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103347"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232510"
 ---
-# <a name="implementing-an-expression-evaluator"></a>Implementowanie ewaluatora wyrażeń
+# <a name="implement-an-expression-evaluator"></a>Implementowanie ewaluatora wyrażeń
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Obliczenia wyrażenia jest złożona, wzajemna zależność między aparat debugowania (DE), dostawca symbolu (SP), obiektu wiążącego i ewaluatora wyrażenia (EE) sam. Te cztery składniki są połączone za interfejsów implementowanych przez jeden składnik i używane przez inną.  
+ Obliczenia wyrażenia jest wzajemne oddziaływania wykresów złożonych aparat debugowania (DE), dostawca symboli (SP), obiekt integratora i Ewaluator wyrażeń (EE). Te cztery składniki są połączone za interfejsów implementowanych przez jeden składnik i używane przez inny.  
   
- EE pobiera wyrażenie DE w postaci ciągu analizuje i ocenia go. EE implementuje następujące interfejsy, które są używane przez Niemcy:  
+ EE pobiera wyrażenie DE w postaci ciągu i analizuje ani nie ocenia je. EE uruchamia następujące interfejsy, które są używane przez DE:  
   
 -   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
 -   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE wywołuje obiekt integratora dostarczonych przez DE, można uzyskać wartość symboli i obiektów. EE zużywa następujących interfejsów implementowanych przez Niemcy:  
+ EE wywołuje obiekt integratora dostarczonych przez DE, aby uzyskać wartość symboli i obiektów. EE wykorzystuje następujące interfejsy, które są implementowane przez DE:  
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
@@ -49,9 +49,9 @@ ms.locfileid: "31103347"
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Implementuje EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` udostępnia mechanizm opisujące wynik wyrażenia, takie jak zmienna lokalna, typu pierwotnego lub obiekt, do programu Visual Studio, w którym są wyświetlane odpowiednie informacje w **zmiennych lokalnych**,  **Obejrzyj**, lub **Immediate** okna.  
+ Uruchamia EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` udostępnia mechanizm do opisywania wynikiem oceny wyrażenia, takie jak zmienna lokalna, podstawowy lub obiektu w programie Visual Studio, który następnie wyświetla odpowiednie informacje w **lokalne**, **wyrażenie kontrolne** , lub **bezpośrednie** okna.  
   
- PS otrzymuje EE przez DE gdy sprawdza, czy informacje. PS implementuje interfejsów, które opisują pola, takie jak następujące interfejsy i ich pochodne i adresy:  
+ PS otrzymuje EE przez DE podczas jego poprosi o podanie informacji. PS uruchamia interfejsy, które opisują adresów i pola, takie jak następujące interfejsy i ich pochodne:  
   
 -   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
@@ -59,11 +59,11 @@ ms.locfileid: "31103347"
   
 -   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- EE wykorzystuje wszystkie te interfejsy.  
+ EE zużywa wszystkich tych interfejsów.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Strategia implementacji ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
- Definiuje proces trzech etapów strategii wdrażania expression evaluator (EE).  
+ Definiuje proces trzech kroków strategia implementacji ewaluatora (EE) wyrażeń.  
   
-## <a name="see-also"></a>Zobacz też  
- [Zapisywanie Ewaluator wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

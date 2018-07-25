@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778524"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232273"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -139,7 +139,18 @@ Również może być konieczne dodanie [ścieżki wyszukiwania](search-paths.md)
 
 Podczas pracy z IronPython, można dodać odwołania do zestawów .NET, aby włączyć technologię IntelliSense. Dla projektów platformy .NET w rozwiązaniu, kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie języka Python, wybierz opcję **Dodaj odwołanie**, wybierz opcję **projektów** , a następnie przejdź do żądany projekt. Dla bibliotek DLL pobrane oddzielnie, wybierz **Przeglądaj** zamiast kartę, a następnie przejdź do żądanego pliku DLL.
 
-Ponieważ odwołań w IronPython nie są dostępne, dopóki wywołania `clr.AddReference('AssemblyName')` jest wprowadzone, musisz również dodać `clr.AddReference` wywołania do zestawu.
+Ponieważ odwołań w IronPython nie są dostępne, dopóki wywołania `clr.AddReference('<AssemblyName>')` jest wprowadzone, musisz również dodać odpowiednią `clr.AddReference` wywołania do zestawu, zwykle na początku kodu. Na przykład, kod utworzony przez **Windows Forms v Ironpythonu** szablonu projektu w programie Visual Studio obejmuje dwa wywołań w górnej części pliku:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>Projekty Instalatora WebPI
 

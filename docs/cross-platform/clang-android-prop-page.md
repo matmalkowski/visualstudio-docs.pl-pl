@@ -43,46 +43,46 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 8a1fd92a41f145e097615bea4434ea80fd592416
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31067535"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232120"
 ---
-# <a name="clang-project-properties-android-c"></a>Clang właściwości projektu (Android C++)
+# <a name="clang-project-properties-android-c"></a>Właściwości projektu clang (Android C++)
 
 Właściwość | Opis | Opcje
 --- | ---| ---
-Dodatkowe katalogi dołączenia | Określa jeden lub więcej katalogów do dodania do ścieżki dołączenia; Oddziel przy użyciu średnikami, jeśli istnieje więcej niż jedna. (-I[path]).
-Format informacji debugowania | Określa typ informacji dotyczących debugowania generowanych przez kompilator. | **Brak** — tworzy żadnych informacji debugowania, więc kompilacji może przebiegać szybciej.<br>**Pełne informacje debugowania (DWARF2)** -informacje dotyczące debugowania DWARF2 generowania.<br>**Informacje o numerze wiersza** -tylko informacje o Generowanie numeru wiersza.<br>
-Nazwa pliku obiektu | Określa nazwę do przesłaniania domyślnej nazwy pliku obiektu; może być nazwą pliku lub katalogu. (/ Fo[name]).
-Poziom ostrzeżeń | Wybierz, jak ściśle kompilator o błędach kodu.  Inne flagi należy dodać bezpośrednio do dodatkowe opcje. (/ w, / weverything). | **Włącz Wyłącz wszystkie ostrzeżenia** — wyłącza wszystkie ostrzeżenia kompilatora.<br>**EnableAllWarnings** -włącza wszystkie ostrzeżenia, w tym te domyślnie wyłączone.<br>
-Traktuj ostrzeżenia jako błędy | Traktuje wszystkie ostrzeżenia kompilatora jako błędy. Dla nowego projektu jego najlepszym rozwiązaniem może być użycie elementu /WX we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszej defektów możliwe kodu twarde do znalezienia.
-Włącz tryb informacji pełnej | Pokaż polecenia do uruchomienia i użyj pełnych danych wyjściowych.
-Optymalizacja | Określa poziom optymalizacji dla aplikacji. | **Niestandardowe** -optymalizacji niestandardowe.<br>**Wyłączone** -wyłączenie optymalizacji.<br>**Minimalizuj rozmiar** -Optymalizuj dla rozmiaru.<br>**Maksymalizuj szybkość** -Optymalizacja szybkości.<br>**Pełna optymalizacja** -optymalizacje kosztowne.<br>
-Ścisłego aliasów | Przykładowa najbardziej rygorystyczne reguły aliasowania.  Obiekt danego typu zostanie nigdy nie zakłada się, że znajdują się na tym samym adresem co obiekt innego typu.
+Dodatkowe katalogi dyrektywy Include | Określa jeden lub więcej katalogów do dodania do ścieżki dołączenia; Oddziel przy użyciu średnikami, jeśli istnieje więcej niż jedna. (-I[ścieżka]).
+Format informacji o debugowaniu | Określa typ informacji o debugowaniu generowanych przez kompilator. | **Brak** — tworzy żadnych informacji debugowania, więc kompilacja może przebiegać szybciej.<br>**Pełne informacje debugowania (DWARF2)** — Generowanie debugowania dwarf2.<br>**Informacje o numerze wiersza** — tylko informacje o numerze wiersza wygenerować.<br>
+Nazwa pliku obiektu | Określa nazwę do zastąpienia domyślnej nazwy pliku obiektu; może być nazwą pliku lub katalogu. (/ FO[nazwa]).
+Poziom ostrzeżeń | Wybierz jak ścisły kompilator o błędów kodu.  Inne flagi należy dodać bezpośrednio do dodatkowych opcji. (/ w, / weverything). | **Włącz Wyłącz wszystkie ostrzeżenia** — wyłącza wszystkie ostrzeżenia kompilatora.<br>**EnableAllWarnings** -włącza wszystkie ostrzeżenia, w tym te domyślnie wyłączone.<br>
+Traktuj ostrzeżenia jako błędy | Traktuje wszystkie ostrzeżenia kompilatora jako błędy. Dla nowego projektu ona najlepszym rozwiązaniem może być użycie elementu /WX we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszą liczbą wad możliwe kodu twardych do znalezienia.
+Włącz tryb informacji pełnej | Pokaż polecenia umożliwiające uruchomienie i użycie pełnych danych wyjściowych.
+Optymalizacja | Określa poziom optymalizacji aplikacji. | **Niestandardowe** — niestandardowa Optymalizacja.<br>**Wyłączone** -Wyłącz optymalizację.<br>**Minimalizuj rozmiar** — Optymalizuj pod kątem rozmiaru.<br>**Maksymalizuj szybkość** — Optymalizuj pod kątem szybkości.<br>**Pełna optymalizacja** — kosztowne optymalizacje.<br>
+Aliasowanie z ograniczeniami | Przyjęto założenie, najbardziej rygorystyczne reguły aliasowania.  Obiekt danego typu zostanie nigdy nie być zakłada się, że znajdują się na tym samym adresem co obiekt innego typu.
 Pominięcie wskaźnika ramki | Pomija tworzenie wskaźników ramek na stosie wywołań.
-Włącz wyjątki C++ | Określa model obsługi wyjątków, aby używane przez kompilator. | **Nie** -wyłączenie obsługi wyjątków.<br>**Tak** — Włączanie obsługi wyjątków.<br>**Unwind tabel** — generuje wszelkie wymagane dane statyczne, ale nie ma wpływu na wygenerowany kod.<br>
-Włącz konsolidacje poziomu funkcji | Umożliwia kompilatorowi pakowanie indywidualnych funkcji w formę spakowanych funkcji (Comdat). Wymagane do edycji i kontynuować pracę.     (ffunction Section).
-Włączanie łączenia na poziomie danych | Umożliwia optymalizacjom konsolidatora usuwanie nieużywanych danych przez emitowanie każdego elementu danych w osobnej sekcji.
-Włącz zaawansowane SIMD(Neon) | Włącza generowanie kodu dla NEON sprzęt zmiennoprzecinkowy. Dotyczy tylko architektury arm.
-ABI liczb zmiennoprzecinkowych | Opcja umożliwiająca wybranie zmiennoprzecinkowego interfejsu ABI. | **Elastyczne** — "Soft" umożliwia kompilatorowi Generowanie danych wyjściowych zawierających wywołania bibliotek dotyczące operacji zmiennoprzecinkowych.<br>**SoftFP** — "SoftFP" umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania zmiennoprzecinkowych.<br>**Twarde** -alows "Twardym" Generowanie liczb zmiennoprzecinkowych instrukcje i używa FPU konwencji wywoływania specyficznych.<br>
-Kontrola zabezpieczeń | Kontrola zabezpieczeń pomaga wykryć przepełnienie stosu buforu, typowy atak na zabezpieczenia programu. (fstack-protector). | **Wyłącz sprawdzanie zabezpieczeń** -wyłączyć sprawdzanie zabezpieczeń.<br>**Włącz kontrolę zabezpieczeń** -Włącz kontrolę zabezpieczeń. (fstack-protector)<br>
-Kod niezależny | Generowanie pozycji niezależne kodu (PIC) do użycia w bibliotece udostępnionej.
-Użyj krótkich wyliczenia | Typ wyliczenia używa tylko liczby bajtów wymaganej przez wejściowy zestaw możliwych wartości.
+Włącz wyjątki języka C++ | Określa model obsługi wyjątków, aby używane przez kompilator. | **Nie** -Wyłącz obsługę wyjątków.<br>**Tak** -Włącz obsługę wyjątków.<br>**Odwiń tabele** — generuje wszelkie wymagane dane statyczne, ale nie ma wpływu na wygenerowany kod.<br>
+Włącz łączenie na poziomie funkcji | Umożliwia kompilatorowi pakowanie indywidualnych funkcji w formę spakowanych funkcji (Comdat). Wymagane do edycji i kontynuować pracę.     (ffunction Section).
+Włącz łączenie na poziomie danych | Umożliwia optymalizacjom konsolidatora usuwanie nieużywanych danych przez emitowanie każdego elementu danych w osobnej sekcji.
+Włącz zaawansowane instrukcje SIMD(Neon) | Umożliwia generowanie kodu dla sprzętu zmiennoprzecinkowego NEON. Dotyczy tylko architektury arm.
+Zmiennoprzecinkowy interfejs ABI | Opcja umożliwiająca wybranie zmiennoprzecinkowego interfejsu ABI. | **Elastyczne** — "soft" umożliwia kompilatorowi Generowanie danych wyjściowych zawierających wywołania bibliotek dotyczące operacji zmiennoprzecinkowych.<br>**SoftFP** — "SoftFP" umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania zmiennoprzecinkowych.<br>**Twarde** — Generowanie alows "Twardym" zmiennoprzecinkowych instrukcje i używa specyficznych dla operacji FPU konwencji wywoływania.<br>
+Sprawdzanie zabezpieczeń | Kontrola zabezpieczeń pomaga wykryć stosu przepełnień buforu, typowy atak na zabezpieczenia programu. (fstack-protector). | **Wyłącz sprawdzanie zabezpieczeń** -Wyłącz sprawdzanie zabezpieczeń.<br>**Włącz sprawdzanie zabezpieczeń** -Włącz sprawdzanie zabezpieczeń. (fstack-protector)<br>
+Kod niezależny od położenia | Generowanie niezależnie od kodu położenia (PIC) do użycia w bibliotece udostępnionej.
+Użyj krótkich wyliczeń | Typ wyliczenia używa tylko liczby bajtów wymaganej przez wejściowy zestaw możliwych wartości.
 Włącz informacje typu Run-Time | Dodaje kod do sprawdzania typów obiektów C++ w czasie wykonywania (informacje o typie środowiska uruchomieniowego).     (frtti, fno-rtti)
-Standard języka C | Określa standard języka C. | **Default**<br>**C89** -C89 Standard języka.<br>**C99** -C99 Standard języka.<br>**C11** -C11 Standard języka.<br>**C99 (GNU dialekt)** — Standard języka C99 (GNU dialekt).<br>**C11 (GNU dialekt)** — Standard języka C11 (GNU dialekt).<br>
-Standard języka C++ | Określa standard języka C++. | **Default**<br>**C ++ 03** — Standard 03 języka C ++.<br>**C ++ 11** -C ++ 11 języka Standard.<br>**C ++ 14** -C ++ 14 języka Standard.<br>**03 c ++ (GNU dialekt)** C ++ - 03 Standard języka (GNU dialekt).<br>**C ++ 11 (GNU dialekt)** - C ++ 11 Standard języka (GNU dialekt).<br>**C ++ 14 (GNU dialekt)** - C ++ 14 Standard języka (GNU dialekt).<br>
+Standard języka C | Określa standard języka C. | **Default**<br>**C89** — Standard języka C89.<br>**C99** — Standard języka C99.<br>**C11** — Standard języka C11.<br>**C99 (dialekt GNU)** — Standard języka programu C99 (dialekt GNU).<br>**C11 (dialekt GNU)** — Standard języka programu C11 (dialekt GNU).<br>
+Standard języka C++ | Określa standard języka C++. | **Default**<br>**C ++ 03** — Standard C ++ 03 języka.<br>**C ++ 11** — Standard C ++ 11 język.<br>**C ++ 14** — Standard C ++ 14 języka.<br>**C ++ 03 (dialekt GNU)** — C ++ 03 (dialekt GNU) języka Standard.<br>**C ++ 11 (dialekt GNU)** — C ++ 11 (dialekt GNU) języka Standard.<br>**C ++ 14 (dialekt GNU)** — C ++ 14 (dialekt GNU) języka Standard.<br>
 Definicje preprocesora | Definiuje symbole przetwarzania wstępnego dla pliku źródłowego. (-D)
-Usuń definicje preprocesora | Określa, że co najmniej jeden anulowanie definicji preprocesora.  (-U [macro])
-Usuń definicje wszystkich Preprocesorów | Usuń definicje wszystkich zdefiniowanych wcześniej wartości preprocesora.  (-undef)
-Pokaż obejmuje | Generuje listę załączonych plików z danych wyjściowych kompilatora.  (-H)
-Prekompilowanego nagłówka | Utworzenie/użycie Prekompilowanego nagłówka: umożliwia tworzenie i używanie prekompilowanych nagłówków podczas kompilacji. | **Użyj** -Użyj Prekompilowanego nagłówka.<br>**Nie używa prekompilowanych nagłówków** — nie używa Prekompilowanego nagłówka.<br>
-Prekompilowany plik nagłówka | Określa nazwę pliku nagłówka dla prekompilowanego pliku nagłówka. Ten plik zostanie też dodany do elementu "Wymuszone pliki dyrektywy Include" podczas kompilacji
-Katalog pliku wyjściowego prekompilowanego nagłówka | Określa katalog wygenerowanego prekompilowanego nagłówka. Ten katalog zostanie też dodany do elementu "Dodatkowe katalogi dołączenia" podczas kompilacji
-Kompiluj prekompilowany nagłówek jako | Wybierz język kompilacji dla prekompilowanego pliku nagłówkowego (- x c-header, - x c ++ - nagłówka). | **Skompiluj jako kod języka C** -skompiluj jako kod języka C.<br>**Skompiluj jako kod języka C++** -skompiluj jako kod języka C++.<br>
-Skompiluj jako | Wybierz opcję języka kompilowania dla plików .c i .cpp.  "Default" wykryje na podstawie rozszerzenia c lub CPP rozszerzenie. (-x c, - x c ++) | **Domyślna** — domyślna.<br>**Skompiluj jako kod języka C** -skompiluj jako kod języka C.<br>**Skompiluj jako kod języka C++** -skompiluj jako kod języka C++.<br>
-Wymuszone pliki dołączane | co najmniej jeden wymuszony Dołącz pliki.     (-include [nazwa])
-Kompilacja wielu procesorów | Kompilacja wielu procesorów.
+Usuń definicje preprocesora | Określa, że jedno anulowanie definicji preprocesora jeden lub więcej.  (-U [macro])
+Usuń wszystkie definicje preprocesora | Usuń definicje wszystkich zdefiniowanych wcześniej wartości preprocesora.  (-undef)
+Pokaż zawierania | Generuje listę załączonych plików z danych wyjściowych kompilatora.  (-H)
+Prekompilowany plik nagłówkowy | Utworzenie/użycie Prekompilowanego nagłówka: umożliwia utworzenie lub użycie prekompilowanego nagłówka podczas kompilacji. | **Użyj** — Użyj Prekompilowanego nagłówka.<br>**Nie używa prekompilowanych nagłówków** — nie używa Prekompilowanego nagłówka.<br>
+Prekompilowany plik nagłówka | Określa nazwę pliku do użycia dla prekompilowanego pliku nagłówkowego. Ten plik zostanie też dodany do "Wymuszone pliki dyrektywy Include" podczas kompilacji
+Katalog pliku danych wyjściowych prekompilowanego nagłówka | Określa katalog wygenerowanego prekompilowanego pliku nagłówkowego. Ten katalog zostanie też dodany do elementu "Dodatkowe katalogi dołączenia" podczas kompilacji
+Kompiluj prekompilowany nagłówek jako | Wybierz język kompilacji dla prekompilowanego pliku nagłówkowego (- x c-header, - x c ++ - nagłówek). | **Kompiluj jako kod C** — Kompiluj jako kod C.<br>**Kompiluj jako kod C++** — Kompiluj jako kod C++.<br>
+Kompiluj jako | Wybierz opcję języka kompilowania dla plików .c i .cpp.  "Default" wykryje na podstawie rozszerzenia c lub CPP rozszerzenie. (-x c, - x c ++) | **Domyślne** — domyślne.<br>**Kompiluj jako kod C** — Kompiluj jako kod C.<br>**Kompiluj jako kod C++** — Kompiluj jako kod C++.<br>
+Wymuszone pliki dołączane | co najmniej jeden wymuszony plik dyrektywy dołączyć pliki.     (-include [nazwa])
+Kompilacja wieloprocesorowa | Kompilacja wieloprocesorowa.
 Dodatkowe opcje | Dodatkowe opcje.

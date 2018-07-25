@@ -1,5 +1,5 @@
 ---
-title: Zmienianie dziennika (Visual Studio Tools for Unity, system Windows) | Dokumentacja firmy Microsoft
+title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 05/07/2018
 ms.technology: vs-unity-tools
@@ -10,88 +10,88 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 395b76e7cebbf774f60c845462cd758ac8e737d1
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266079"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232445"
 ---
-# <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, system Windows)
-Visual Studio Tools for Unity dziennika zmian.
+# <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
+Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="3701"></a>3.7.0.1
- Wydanych 2018-05-07
+ Wydana 2018-05-07
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Instalator:**
 
-    -   Tworzy problem stałego zależności przy użyciu eksperymentalne.
+    -   Naprawiono zależności problem, korzystając z doświadczalnych kompilacji.
 
 ## <a name="3700"></a>3.7.0.0
- Wydanych 2018-05-07
+ Wydana 2018-05-07
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debugowanie:**
 
-    -   Dodano obsługę zorkiestrowana debugowania (debugowanie wielu graczy/edytor z tej samej sesji programu Visual Studio).
+    -   Dodano obsługę debugowania zorganizowane (debugowanie w wielu graczy i edytorem przy użyciu tej samej sesji programu Visual Studio).
     
-    -   Dodano obsługę debugowania player Android USB.
+    -   Dodano obsługę odtwarzacza systemu Android USB debugowania.
     
     -   Dodano obsługę dla platformy uniwersalnej systemu Windows/IL2CPP player debugowania.
 
 -   **Ocena:**
 
-    -   Dodano obsługę specyfikatory szesnastkową.
+    -   Dodano obsługę specyfikatory szesnastkowe.
     
-    -   Środowisko oceny okna czujki ulepszona.
+    -   Obejrzyj Ulepszone okno dokonywaniu oceny oprogramowania.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Stałe użycie ustawienia wyjątków.
+    -   Naprawiono użycie ustawienia wyjątków.
 
 -   **Generowanie projektu:**
 
-    -   Wyklucz pakietu Menedżera kompilacji jednostki generacji.
+    -   Wyklucz jednostki kompilacji Menedżera pakietów z generacji.
 
 ## <a name="3605"></a>3.6.0.5
- Wydanych 2018-03-13
+ Wydana 13-2018-03
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
 
-    -   Dodano obsługę dla generatora nowego projektu w Unity 2018.1.
+    -   Dodano obsługę nowych generator projektu w 2018.1 aparatu Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Stałe obsługi uszkodzony stanów z niestandardowych projektów.
+    -   Naprawiono obsługę uszkodzony stanów niestandardowych projektów.
 
 -   **Debuger:**
 
-    -   Stałe ustawienie następnej instrukcji.
+    -   Stała, ustawienie następnej instrukcji.
 
 ## <a name="3604"></a>3.6.0.4
- Wydanych 2018-03-05
+ Wydana 2018-03-05
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Wykrywanie wersji Mono stałej.
+    -   Wykrywanie poprawionej wersji platformy Mono.
 
 -   **Integracja:**
 
-    -   Stałe problemy dotyczące synchronizacji z 2018.1 i wtyczki aktywacji.
+    -   Rozwiązano problemy dotyczące synchronizacji z 2018.1 i aktywacją wtyczka.
 
 ## <a name="3603"></a>3.6.0.3
- Wydanych 2018-02-23
+ Wydana 23-2018-02
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -103,20 +103,20 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Generowanie projektu:**
 
-    -   Stały wykrywania framework docelowej platformy Unity.
+    -   Naprawiono wykrywanie framework docelowej aparatu Unity.
 
 -   **Debuger:**
 
-    -   Stałe podziału na wyjątki, które są generowane poza usercode.
+    -   Naprawiono podziału na wyjątki, które są wyrzucane poza usercode.
 
 ## <a name="3602"></a>3.6.0.2
- Wydanych 2018-02-07
+ Wydana 07-2018-02
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
 
-    -   Zaktualizuj powierzchni interfejsu API UnityMessage dla 2017.3.
+    -   Zaktualizuj powierzchnię interfejsu API UnityMessage dla 2017.3.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -125,34 +125,34 @@ Visual Studio Tools for Unity dziennika zmian.
     -   Ponownie ładować tylko projekty na zewnętrzne zmiany (po zastosowaniu ograniczania).
 
 ## <a name="3601"></a>3.6.0.1
- Wydanych 2018-01-24
+ Wydana w 24-2018-01
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
+    -   Stałym pdb automatyczne do konwersji symboli debugowania mdb.
 
-    -   Wywołanie pośrednie stałym EditorPrefs.GetBool wpływające na Inspektor podczas próby zmiany rozmiaru tablicy.
+    -   Naprawiono wywołanie pośrednie EditorPrefs.GetBool wpływające na panelu Inspektor podczas próby zmiany rozmiaru tablicy.
 
 ## <a name="3600"></a>3.6.0.0
- Wydanych 2018-01-10
+ Wydana 10-2018-01
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
 
-    -   Dodano obsługę 2018.1 MonoIsland odwołanie modelu.
+    -   Dodano obsługę 2018.1 model referencyjny MonoIsland.
 
 -   **Ocena:**
 
-    -   Dodano obsługę $exception identyfikator.
+    -   Dodano obsługę $exception identyfikatora.
 
 -   **Debuger:**
 
-    -   Dodano obsługę atrybutów DebuggerHidden/DebuggerStepThrough o nowe środowisko uruchomieniowe platformy Unity.
+    -   Dodano obsługę DebuggerHidden/DebuggerStepThrough atrybuty z nowego środowiska uruchomieniowego platformy Unity.
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
     -   Wprowadzenie "Najnowszej" wersji dla kreatorów.
 
@@ -160,27 +160,27 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Generowanie projektu:**
 
-    -   Stałe obliczeń identyfikator guid projektu dla projektów player.
+    -   Naprawiono obliczenia identyfikatora guid projektu dla projektów odtwarzacza.
 
 -   **Debuger:**
 
-    -   Stałe wyścigu podczas obsługi zdarzenia podziału.
+    -   Naprawiono wyścigu podczas obsługi najważniejszych zdarzeń.
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Odśwież kontekst roslyn przed wstawieniem metody.
+    -   Odśwież kontekstu roslyn przed wstawieniem metody.
 
 ## <a name="3503"></a>3.5.0.3
- Wydanych 2018-01-09.
+ Wydana 2018-01-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
+    -   Stałym pdb automatyczne do konwersji symboli debugowania mdb.
 
 ## <a name="3502"></a>3.5.0.2
- Wydanych 2017 12-04-
+ Wydana 04-2017-12
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -190,7 +190,7 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Debuger:**
 
-    -   Dodano możliwość użycia Mono debuger współużytkowane przez Xamarin i Visual Studio for Mac do debugowania Edytor platformy Unity.
+    -   Dodano opcję użycia debugera Mono udostępnianego przez platformę Xamarin i programu Visual Studio dla komputerów Mac do debugowania programu Unity Editor.
 
     -   Dodano obsługę plików symboli debugowania przenośnej.
 
@@ -198,36 +198,36 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Integracja:**
 
-    -   Naprawić problemy z instalacją zależności.
+    -   Rozwiązano problemy z instalacją zależności.
 
-    -   Menu Pomoc stałym Unity interfejsu API nie są wyświetlane.
+    -   Naprawiono menu Pomoc interfejsu API aparatu Unity nie są wyświetlane.
 
 -   **Generowanie projektu:**
 
-    -   Generowanie projektu player stały podczas pracy z gier platformy uniwersalnej systemu Windows z zapleczem IL2CPP/.NET 4.6.
+    -   Generowanie projektu player stały podczas pracy nad gry platformy uniwersalnej systemu Windows z zapleczem IL2CPP/.NET 4.6.
 
-    -   Stałe rozszerzenie .dll dodatkowe błędnie dodane do nazwy pliku zestawu.
+    -   Naprawiono rozszerzenie .dll dodatkowe błędnie dodane do nazwy pliku zestawu.
 
-    -   Stałe użycie określonego projektu interfejsu API poziom zgodności zamiast jedną globalnego.
+    -   Naprawiono użycie określonego projektu interfejsu API poziom zgodności zamiast globalnego.
 
-    -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz 'true'.
+    -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz "true".
 
 ## <a name="3402"></a>3.4.0.2
- Wydanych 2017-09-19
+ Wydana 19-2017-09
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
 
-    -   Dodano obsługę assembly.json jednostki kompilacji.
+    -   Dodano obsługę jednostki kompilacji assembly.json.
 
-    -   Zatrzymać kopiowanie Unity zestawów w folderze projektu.
+    -   Zatrzymać kopiowanie zestawów aparatu Unity do folderu projektu.
 
 -   **Debuger:**
 
-    -   Dodano obsługę ustawienie następnej instrukcji z nowe środowisko uruchomieniowe platformy Unity.
+    -   Dodano obsługę ustawienie następnej instrukcji z nowego środowiska uruchomieniowego platformy Unity.
 
-    -   Dodano obsługę dla typu Decimal o nowe środowisko uruchomieniowe platformy Unity.
+    -   Dodano obsługę typu dziesiętnego za pomocą nowego środowiska uruchomieniowego platformy Unity.
 
     -   Dodano obsługę niejawnej/jawnej konwersji.
 
@@ -235,77 +235,77 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Ocena:**
 
-    -   Tworzenie tablicy o ustalonym o rozmiarze niejawnej.
+    -   Naprawiono utworzenie tablicy o rozmiarze niejawne.
 
-    -   Stałe kompilatora generowane elementy zmiennych lokalnych.
+    -   Stałą kompilatora generowane elementów zmiennych lokalnych.
 
 -   **Generowanie projektu:**
 
-    -   Stałe odwołanie do Microsoft.CSharp 4.6 poziom interfejsu API.
+    -   Naprawiono odwołania do Microsoft.CSharp 4.6 poziom interfejsu API.
 
 ## <a name="3302"></a>3.3.0.2
- Wydanych 2017-08-15
+ Wydana 2017-08-15
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Stałe generowania rozwiązania Visual Studio na Unity 5.5 i poprzednich wersjach.
+    -   Stała generowania rozwiązania programu Visual Studio na Unity 5.5 i poprzednich wersjach.
 
 ## <a name="3300"></a>3.3.0.0
- Wydanych 2017-08-14
+ Wydana 14-2017-08
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Ocena:**
 
-    -   Dodano obsługę tworzenia struktury o nowe środowisko uruchomieniowe platformy Unity.
+    -   Dodano obsługę tworzenia struktury za pomocą nowego środowiska uruchomieniowego platformy Unity.
 
-    -   Dodano obsługę minimalist wskaźników.
+    -   Dodano obsługę minimalistyczny wskaźników.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Ocena:**
 
-    -   Stała wywołania metody na nim elementów podstawowych.
+    -   Stałe wywołanie metody do elementów podstawowych.
 
-    -   Pole stałej oceny z typami oznaczony atrybutem BeforeFieldInit.
+    -   Pole stałej ocena o typach oznaczone atrybutem BeforeFieldInit.
 
-    -   Stałego połączenia z systemem innym niż obsługiwany z operatorami dwuargumentowymi (odejmowanie).
+    -   Naprawiono nieobsługiwanym wywołania z operatorami dwuargumentowymi (odejmowanie).
 
-    -   Rozwiązane problemy podczas dodawania elementów do czujki programu Visual Studio.
+    -   Rozwiązano problemy podczas dodawania elementów do programu Visual Studio zegarka.
 
 -   **Generowanie projektu:**
 
-    -   Stałych Nazwa odwołania do zestawu za pomocą mcs.rsp plików.
+    -   Naprawiono zestawu odwołania do nazwy mcs.rsp plików.
 
-    -   Stałe zdefiniowane z poziomu interfejsu API.
+    -   Naprawiono definiuje ze poziomy interfejsu API.
 
 ## <a name="3200"></a>3.2.0.0
- Wydanych 2017-05-10
+ Wydana 10-2017-05
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Instalator:**
 
-    -   Dodano obsługę czyszczenia pamięci podręcznej MEF.
+    -   Dodano obsługę czyszczenia pamięć podręczna MEF.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Edytor kodu:**
 
-    -   Stałe klasyfikacji/zakończenia z atrybutów niestandardowych.
+    -   Naprawiono klasyfikacji/Zakończenie uruchamiania nastąpi po atrybutów niestandardowych.
 
-    -   Stałe migotanie komunikatów, Unity.
+    -   Naprawiono migotanie przy użyciu komunikatów aparatu Unity.
 
 ## <a name="3100"></a>3.1.0.0
- Wydanych 2017-04-07
+ Wydana 2017-04-07
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debuger:**
 
-    -   Dodano obsługę nowe środowisko uruchomieniowe Unity (z .NET 4.6 / zgodność języka C# 6).
+    -   Dodano obsługę nowego środowiska uruchomieniowego aparatu Unity (przy użyciu platformy .NET 4.6 / zgodność z narzędziami języka C# 6).
 
 -   **Generowanie projektu:**
 
@@ -313,916 +313,916 @@ Visual Studio Tools for Unity dziennika zmian.
 
     -   Dodano obsługę mcs.rsp plików.
 
-    -   Zawsze włączaj przełącznika niebezpieczny kompilacji stosowania Unity 5.6.
+    -   Zawsze należy włączyć niebezpieczne kompilacji przełącznika, gdy jest używane środowisko Unity 5.6.
 
-    -   Dodano obsługę Generowanie projektu "Player" gdy przy użyciu Sklepu Windows platformy i il2cpp wewnętrznej bazy danych.
+    -   Dodano obsługę Generowanie projektu "Player" korzystając z zaplecza platformy i il2cpp Windows Store.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Edytor kodu:**
 
-    -   Stałe położenia karetki po wstawieniu metodę z automatycznego uzupełniania.
+    -   Naprawiono położeniu karetki, po wstawieniu metody za pomocą automatycznego uzupełniania.
 
 -   **Generowanie projektu:**
 
-    -   Usunięto zestawu wersji przetwarzania końcowego.
+    -   Przetwarzanie końcowe wersji zestawu usunięte.
 
 ## <a name="3001"></a>3.0.0.1
- Wydanych 2017-03-07
+ Wydana 2017-03-07
 
-### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Ta wersja zawiera wszystkie nowe funkcje i poprawki wprowadzone w systemie 2.8.x serii.
+### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Ta wersja zawiera wszystkie nowe funkcje i poprawki wprowadzone w programie 2.8.x serii.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 w wersji zapoznawczej 3
- Wydanych 2017-01-25
+ Wydana 2017-01-25
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Stała regresji, gdy projekty wtyczek w przypadku, gdy dwa razy, do których odwołuje się najpierw jako binarne DLL następnie jako projekt odniesienie.
+    -   Naprawiono regresji, gdzie projektów wtyczek w przypadku, gdy dwa razy, do których odwołuje się najpierw jako binarne DLL następnie jako projekt odwołania.
 
-## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 preview 2
- Wydanych 2017-01-23
+## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 w wersji zapoznawczej 2
+ Wydana 2017-01-23
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Edytor kodu:**
 
-    -   Stała awarii podczas uruchamiania deklaracji atrybutu bez ukończenia nawiasu klamrowego.
+    -   Naprawiono awarię, podczas uruchamiania deklaracji atrybutu bez uzupełnianie nawiasów.
 
 -   **Debuger:**
 
-    -   Punkty przerwania funkcji stałej z procedury wspólnej w obszarze nowe Unity kompilatora/środowisko uruchomieniowe.
+    -   Punkty przerwania funkcji stały koprocedur w obszarze nowego środowiska Unity kompilatora/środowiska uruchomieniowego.
 
-    -   Dodano ostrzeżenie w przypadku unbindable punktu przerwania (po znalezieniu nie odpowiedniej lokalizacji źródłowej).
+    -   Dodano ostrzeżenie w razie unbindable punkt przerwania (Jeśli nie odpowiedniej lokalizacji źródłowej znajduje się).
 
 -   **Generowanie projektu:**
 
-    -   Generowanie stałym csproj specjalne/zlokalizowanych znaków.
+    -   Naprawiono Generowanie pliku csproj przy użyciu znaków specjalnych/zlokalizowane.
 
-    -   Stałe odwołań poza zasobów, takich jak biblioteki (takich jak Facebook zestawu SDK).
+    -   Naprawiono odwołania poza zasobów, takich jak biblioteki (np. Facebook SDK).
 
 -   **Różne:**
 
-    -   Dodano wyboru być uruchamiany po zainstalowaniu lub odinstalowaniu Unity.
+    -   Dodano kontrolę, aby uniemożliwić Unity uruchomiona podczas instalowania lub odinstalowywania.
 
-    -   Przełączono HTTPS pod kątem zdalnego dokumentacji Unity.
+    -   Przełączono na https pod kątem zdalnego dokumentacja aparatu Unity.
 
-## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 w wersji zapoznawczej
- Wydanych 2016-11-17
+## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 (wersja zapoznawcza)
+ Wydana 2016-11-17
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Ogólne:**
 
-    -   Dodano obsługę Instalator Visual Studio 2017 r.
+    -   Dodano obsługę Instalatora programu Visual Studio 2017.
 
-    -   Dodano obsługę rozszerzenia programu Visual Studio 2017 r.
+    -   Dodano obsługę rozszerzeń programu Visual Studio 2017.
 
-    -   Obsługa dodanych lokalizacji.
+    -   Obsługa dodano lokalizacji.
 
 -   **Edytor kodu:**
 
-    -   Dodano C# IntelliSense dla Unity wiadomości.
+    -   Dodano C# funkcja IntelliSense dla komunikatów Unity.
 
-    -   Dodano C# kodu zabarwienie Unity komunikatów.
+    -   Dodano C# kodu barwy dla komunikatów Unity.
 
 -   **Debuger:**
 
-    -   Dodano obsługę `is`, `as`, bezpośrednie rzutowania, `default`, `new` wyrażenia.
+    -   Dodano obsługę `is`, `as`, bezpośrednie rzutowanie, `default`, `new` wyrażenia.
 
-    -   Dodano obsługę wyrażenia concat parametrów.
+    -   Dodano obsługę wyrażenia concat ciągu.
 
-    -   Dodano obsługę szesnastkowe wyświetlania wartości będące liczbami całkowitymi.
+    -   Dodano obsługę wyświetlanie szesnastkowe liczb całkowitych.
 
-    -   Dodano obsługę tworzenia nowe zmienne tymczasowe (instrukcje).
+    -   Dodano obsługę tworzenia nowych zmiennych tymczasowych (poufności informacji).
 
     -   Dodano obsługę niejawne konwersje pierwotnych.
 
-    -   Dodawane lepiej komunikaty o błędach podczas typu jest oczekiwany lub nie można odnaleźć.
+    -   Dodano lepsze komunikaty o błędach, gdy typem jest nieoczekiwany lub nie można odnaleźć.
 
 -   **Generowanie projektu:**
 
-    -   Usunięte z sufiksem CSharp z nazwy projektu.
+    -   Usunięte sufiksu języka CSharp z nazwy projektu.
 
-    -   Usunięto odwołanie do pliku cele szeroki msbuild systemu.
+    -   Usunięto odwołanie do pliku elementów docelowych msbuild szerokiego systemu.
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Dodano obsługę dla typów innych niż zachowania, takich jak edytor lub EditorWindow Unity wiadomości.
+    -   Dodano obsługę dla komunikatów Unity w typach innych zachowań, takich jak edytor lub EditorWindow.
 
-    -   Przełączenie do Roslyn wstrzyknąć i format wiadomości Unity.
+    -   Przełączenie do Roslyn wstrzyknąć i sformatować komunikaty aparatu Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Debuger:**
 
-    -   Stałe usterki awarii Unity podczas oceny typów ogólnych.
+    -   Usunięto usterkę uległa awarii platformy Unity podczas oceny typów ogólnych.
 
-    -   Stałe obsługi typów dopuszczających wartości zerowe.
+    -   Naprawiono obsługę typów dopuszczających wartości zerowe.
 
-    -   Stałe obsługi wyliczenia.
+    -   Naprawiono obsługę typów wyliczeniowych.
 
-    -   Stałe obsługi typów zagnieżdżonych elementów członkowskich.
+    -   Naprawiono obsługi typów zagnieżdżonych elementów członkowskich.
 
-    -   Stały dostęp indeksatora kolekcji.
+    -   Dostęp indeksatora stałej kolekcji.
 
-    -   Stałe obsługę debugowania iteratora ramki z nowy kompilator języka C#.
+    -   Naprawiono obsługę debugowania iteratora ramki za pomocą nowego kompilator języka C#.
 
 -   **Generowanie projektu:**
 
-    -   Stały błąd uniemożliwił kompilacji, jeśli celem player Unity sieci Web.
+    -   Usunięto usterkę uniemożliwiającą kompilacji, gdy gracz Unity w sieci Web.
 
-    -   Stały usterki, który uniemożliwił kompilacji podczas kompilowania skryptu z sieci web zakodowane nazwy pliku.
+    -   Usunięto usterkę uniemożliwiającą kompilacji podczas kompilacji skryptu z internetowym kodowany w formacie nazwy pliku.
 
 ## <a name="2300"></a>2.3.0.0
- Wydanych 2016-07-14
+ Wydana 2016-07-14
 
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Ogólne:**
 
-    -   Dodano możliwość wyłączenia Unity konsoli Dzienniki w Visual Studio na liście błędów.
+    -   Dodano możliwość wyłączenia konsoli Unity dzienniki w liście błędów Visual Studio.
 
     -   Dodano opcję Zezwalaj na właściwości wygenerowanego projektu do zmodyfikowania.
 
 -   **Debuger:**
 
-    -   Dodano Text, XML, HTML i JSON ciąg wizualizatorów.
+    -   Ciąg wizualizatorów, dodano tekstu XML, HTML i JSON.
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Dodaje, brak MonoBehaviors.
+    -   Dodano brakujący MonoBehaviors.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Ogólne:**
 
-    -   Stałe konflikt z ReSharper, który uniemożliwił formanty ustawień programu Visual Studio będą wyświetlane.
+    -   Rozwiązano konflikt z ReSharper, uniemożliwiającą kontrolek w Visual Studio, ustawienia będą wyświetlane.
 
-    -   Stałe konflikt z platformą Xamarin, który uniemożliwił debugowania w niektórych przypadkach.
+    -   Rozwiązano konflikt ze środowiskiem Xamarin, który uniemożliwia debugowania w niektórych przypadkach.
 
 -   **Debuger:**
 
-    -   Rozwiązano problem powodujący Visual Studio zawiesza się podczas debugowania.
+    -   Rozwiązano problem powodujący zablokowanie podczas debugowania programu Visual Studio.
 
-    -   Rozwiązano problem z punkty przerwania funkcji w programie Visual Studio 2015.
+    -   Rozwiązano problem z punktów przerwania funkcji w programie Visual Studio 2015.
 
-    -   Stałe wyrażenie kilka problemów oceny.
+    -   Rozwiązano wyrażenie kilka problemów oceny.
 
 ## <a name="2200"></a>2.2.0.0
- Wydanych 2016-02-04
+ Wydana 2016-02-04
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Dodano inteligentne wyszukiwania w **MonoBehavior wdrożenie** kreatora.
+    -   Dodano inteligentne wyszukiwanie w **MonoBehavior Implementowanie** kreatora.
 
-    -   Dokonano kreatorów kontekstu pamiętać; na przykład NetworkBehavior wiadomości są dostępne tylko podczas pracy z NetworkBehavior.
+    -   Świadomość; kontekst jako kreatorzy na przykład NetworkBehavior komunikaty są dostępne tylko podczas pracy z NetworkBehavior.
 
-    -   Dodano obsługę wiadomości NetworkBehavior w kreatorze.
+    -   Dodano obsługę komunikatów NetworkBehavior w kreatorach.
 
 -   **INTERFEJS UŻYTKOWNIKA:**
 
     -   Dodano opcję, aby skonfigurować widoczność MonoBehavior wiadomości.
 
-    -   Usunięte stron właściwości programu Visual Studio, które nie są ważnego do projektów platformy Unity.
+    -   Usunięte stron właściwości programu Visual Studio, które nie są ważnego do projektów aparatu Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Stałe odwołania do UnityEngine i UnityEditor na Unity 4.6.
+    -   Naprawiono odwołania do UnityEngine i UnityEditor na 4.6 aparatu Unity.
 
-    -   Stałe Generowanie plików projektu, gdy Unity działa w systemie OSX.
+    -   Naprawiono Generowanie plików projektu, gdy Unity jest uruchomiony w systemie OSX.
 
-    -   Stałe obsługi nazwy projektu zawierające znaki hashmark (#).
+    -   Naprawiono obsługi nazwy projektu zawierające znaki hashmark (#).
 
-    -   Ograniczone wygenerowane projekty do 4 C#.
+    -   Ograniczony wygenerowane projekty, do 4 C#.
 
 -   **Debuger:**
 
-    -   Rozwiązano problem z Szacowanie wyrażeń podczas debugowania w procedurze wspólnej Unity.
+    -   Rozwiązano problem z obliczanie wyrażeń podczas debugowania w koprocedury aparatu Unity.
 
-    -   Rozwiązano problem powodujący Visual Studio zawiesza się podczas debugowania.
+    -   Rozwiązano problem powodujący zablokowanie podczas debugowania programu Visual Studio.
 
 -   **INTERFEJS UŻYTKOWNIKA:**
 
-    -   Stały niezgodność z [Studio karty](https://tabsstudio.com/) rozszerzenie programu Visual Studio.
+    -   Naprawiono niezgodność z [Studio karty](https://tabsstudio.com/) rozszerzenia programu Visual Studio.
 
 -   **Instalator:**
 
-    -   Obsługuje instalację komputera pomocą rozszerzenia VSTU (Instalacja dla wszystkich użytkowników) przez utworzenie HKLM wpisów rejestru.
+    -   Obsługuje instalację komputera VSTU (Instalacja dla wszystkich użytkowników), tworząc wpisy rejestru HKLM.
 
-    -   Rozwiązane problemy z dezinstalacji pomocą rozszerzenia VSTU po zainstalowaniu tej samej wersji pomocą rozszerzenia VSTU wiele różnych wersji programu Visual Studio. Na przykład, jeśli pomocą rozszerzenia VSTU **2015** 2.1.0.0 i pomocą rozszerzenia VSTU **2013** 2.1.0.0 zostały zainstalowane.
+    -   Rozwiązane problemy dezinstalacji VSTU po zainstalowaniu tej samej wersji w narzędziach VSTU dla wielu różnych wersji programu Visual Studio. Na przykład, gdy w narzędziach VSTU **2015** 2.1.0.0 i w narzędziach VSTU **2013** 2.1.0.0 zostały zainstalowane.
 
 ## <a name="2100"></a>2.1.0.0
- Wydanych 2015-09-08
+ Wydana 2015-09-08
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Obsługa platformy Unity 5.2
+-   Obsługa aparatu Unity 5.2
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Wyświetlanie elementów menu na Unity < 4.2
+-   Wyświetlanie elementów menu w Unity < 4.2
 
--   Komunikat o błędzie nie są wyświetlane, gdy program Visual Studio blokuje pliki intellisense XML.
+-   Komunikat o błędzie nie będzie już wyświetlany w przypadku programu Visual Studio blokuje pliki intellisense XML.
 
--   Obsługa <\<po zmianie >> warunkowych punktów przerwania podczas warunkowego argument nie jest wartością logiczną.
+-   Obsługa <\<po zmianie >> warunkowe punkty przerwania, gdy argument warunkowy nie jest wartością logiczną.
 
--   Stałe odwołania do zestawów UnityEngine i UnityEditor dla aplikacji ze Sklepu Windows.
+-   Naprawiono odwołania do zestawów UnityEngine i UnityEditor dla aplikacji Windows Store.
 
--   Stałe błędu przy przechodzeniu w debugerze: nie można krok ogólny wyjątek.
+-   Naprawiono błąd przy przechodzeniu w debugerze: nie można wkroczyć ogólny wyjątek.
 
 -   Stałej liczby trafień punkty przerwania w programie Visual Studio 2015.
 
 ## <a name="2000"></a>2.0.0.0
- Wydanych 2015-07-20
+ Wydana 2015-07-20
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   **Integracja platformy Unity:**
+-   **Integracja aparatu Unity:**
 
-    -   Stałe konwersji symboli debugowania utworzone za pomocą programu Visual Studio 2015 podczas importowania biblioteki DLL i jego symboli debugowania (PDB).
+    -   Naprawiono konwersji symbole debugowania utworzonych za pomocą programu Visual Studio 2015, podczas importowania biblioteki DLL i jego symboli debugowania (PDB).
 
-    -   Zawsze generuj pliki MDB podczas importowania biblioteki DLL i jego symboli debugowania (PDB), z wyjątkiem przypadków, gdy jest również udostępniany pliku MDB.
+    -   Zawsze generuj pliki MDB podczas importowania biblioteki DLL i jego symboli debugowania (PDB), z wyjątkiem sytuacji, gdy podano również pliku MDB.
 
-    -   Stałe zanieczyszczenie Unity katalogu projektu z katalogu.
+    -   Naprawiono zanieczyszczeniu katalogu projektu środowiska Unity za pomocą katalogu.
 
-    -   Stałe Generowanie odwołania do System.Xml.Link i System.Runtime.Serialization.
+    -   Naprawiono Generowanie odwołania do System.Xml.Link i System.Runtime.Serialization.
 
-    -   Przechwytuje dodano obsługę wielu subskrybentom Generowanie pliku projektu interfejsu API.
+    -   Punkty zaczepienia dodano obsługę wielu subskrybentów do generowania plików projektu interfejsu API.
 
-    -   Generowanie pliku zawsze kompletnego projektu nawet wtedy, gdy jeden z plików, który ma być generowany jest zablokowany.
+    -   Generowanie pliku zawsze kompletnego projektu nawet wtedy, gdy jeden z plików do wygenerowania jest zablokowany.
 
-    -   Dodano obsługę * symbole wieloznaczne w rozszerzeniu filtrowania, określając plików do uwzględnienia w projekcie C#.
+    -   Dodano obsługę * symboli wieloznacznych w rozszerzeniu filtrowanie podczas określania plików, które mają zostać uwzględnione w projekcie języka C#.
 
 -   **Integracja z programem Visual Studio:**
 
-    -   Rozwiązany problem ze zgodnością z zaawansowanych narzędzi wydajności.
+    -   Rozwiązano problem ze zgodnością z Productivity Power Tools.
 
-    -   Stałe generowania MonoBehaviors wokół deklaracje zdarzeń i delegatów.
+    -   Naprawiono Generowanie MonoBehaviors wokół deklaracji zdarzeń i delegatów.
 
 -   **Debuger:**
 
-    -   Stała potencjalnych blokowanie podczas debugowania.
+    -   Naprawiono potencjalne blokowanie, podczas debugowania.
 
-    -   Rozwiązano problem, na którym zmiennych lokalnych, nie będzie wyświetlana w niektórych ramki stosu.
+    -   Rozwiązano problem, w której elementy lokalne, nie będzie wyświetlana w niektórych ramek stosu.
 
-    -   Stałe sprawdzania puste tablice.
+    -   Naprawiono sprawdzania pusty tablic.
 
-## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 — wersja zapoznawcza 2
- Wydanych 2015-04-02
+## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 w wersji zapoznawczej 2
+ Wydana 2015-04-02
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   **Eksplorator projektów Unity:**
+-   **Eksplorator projektu środowiska Unity:**
 
-    -   Automatycznie Zmień nazwę klasy, zmieniając nazwę pliku, w obszarze Eksplorator projektów Unity (zobacz **opcje** okna dialogowego).
+    -   Automatycznie Zmień nazwę klasy, zmieniając nazwę pliku w Eksploratorze projektów aparatu Unity (zobacz **opcje** okna dialogowego).
 
-    -   Automatycznie wybierz nowo utworzony skryptów w obszarze Eksplorator projektów Unity.
+    -   Automatycznie wybierz nowo utworzony skryptów w Eksploratorze projektów aparatu Unity.
 
-    -   Śledzenie aktywnego skryptu w Eksploratorze projektu Unity (zobacz **opcje** okna dialogowego).
+    -   Śledzenie aktywnych skryptów w Eksploratorze projektów aparatu Unity (zobacz **opcje** okna dialogowego).
 
-    -   Podwójny zsynchronizować Eksploratora rozwiązań programu Visual Studio (zobacz **opcje** okna dialogowego).
+    -   Dual — Synchronizuj Eksploratorze rozwiązań programu Visual Studio (zobacz **opcje** okna dialogowego).
 
-    -   Przyjmuje ikony programu Visual Studio w obszarze Eksplorator projektów Unity.
+    -   Przyjęcie ikony programu Visual Studio w Eksploratorze projektów aparatu Unity.
 
 -   **Debuger:**
 
-    -   Wybierz cel debugowania active z listy celów debugowania zapisana lub ostatnio używanych (zobacz **opcje** okna dialogowego).
+    -   Wybierz cel debugowania aktywnego listę celów debugowania zapisana lub ostatnio używanych (zobacz **opcje** okna dialogowego).
 
     -   Utwórz punkty przerwania funkcji w metodach MonoBehavior i zastosować je do wielu klas MonoBehavior.
 
-    -   Obsługuje wprowadzić identyfikator obiektu w debugerze.
+    -   Obsługa wprowadzić identyfikator obiektu w debugerze.
 
-    -   Obsługa liczba w debugerze trafiony punkt przerwania.
+    -   Obsługa liczba w debugerze trafień punktu przerwania.
 
     -   Obsługuje podział na wyjątek w debugerze (eksperymentalne. Zobacz **opcje** okna dialogowego).
 
-    -   Obsługuje tworzenie obiektów i tablic przy obliczaniu wyrażeń w debugerze.
+    -   Obsługuje tworzenie obiekty i tablice podczas obliczania wyrażenia w debugerze.
 
-    -   Obsługuje porównania wartości null podczas obliczania wyrażenia w debugerze.
+    -   Obsługuje porównania wartości null podczas oceny wyrażenia w debugerze.
 
-    -   Przestarzali członkowie w oknach debugera czujki filtrowania.
+    -   Odfiltruj przestarzałe składowe w oknach wyrażenie kontrolne debugera.
 
 -   **Instalator:**
 
-    -   Zoptymalizowane Visual Studio Tools for Unity rejestracji rozszerzenia.
+    -   Zoptymalizowane Visual Studio Tools for Unity Rejestracja rozszerzenia.
 
-    -   Zainstaluj program Visual Studio Tools dla pakietu Unity Unity 5.
+    -   Zainstaluj program Visual Studio Tools dla pakietu Unity dla aparatu Unity 5.
 
--   **Dokumentacja:** poprawić wydajność generowania dokumentacji.
+-   **Dokumentacja:** poprawić wydajność Generowanie dokumentacji.
 
--   **Kreatorzy:** obsługę nowych metod MonoBehavior Unity 4.6 i Unity 5.
+-   **Kreatorzy:** obsługę nowych metod MonoBehavior Unity 4.6 i aparatu Unity 5.
 
--   **Unity:** flagi niebezpieczny wyszukiwania i niestandardowe definiuje .rsp — pliki podczas generowania pliku projektu.
+-   **Unity:** flagi niebezpieczne wyszukiwania i niestandardowych definiuje .rsp — pliki podczas generowania pliku projektu.
 
--   **Interfejs użytkownika:** dodane Visual Studio Tools for Unity **opcje** okna dialogowego w programie Visual Studio.
+-   **Interfejs użytkownika:** dodano Visual Studio Tools for Unity **opcje** okna dialogowego w programie Visual Studio.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   **Eksplorator projektów Unity:**
+-   **Eksplorator projektu środowiska Unity:**
 
-    -   Eksplorator projektów Unity należy odświeżyć, po pliki są przenoszone lub zmieniona z Eksploratora rozwiązań programu Visual Studio.
+    -   Odśwież Eksploratora projektów aparatu Unity po pliki są przesyłane lub zmieniono jego nazwę w Eksploratorze rozwiązań programu Visual Studio.
 
-    -   Zachowaj opcje podczas zmiany nazwy plików w obszarze Eksplorator projektów Unity.
+    -   Zachowaj opcje podczas zmieniania nazw plików w Eksploratorze projektów aparatu Unity.
 
-    -   Zapobiegaj automatyczne rozwijanie i zwijanie Jeśli pliki są podwójnego kliknięcia w obszarze Eksplorator projektów Unity.
+    -   Uniemożliwić automatyczne rozwijać i zwijać gdy pliki są podwójnego kliknięcia w Eksploratorze projektów aparatu Unity.
 
-    -   Upewnij się, że nowo wybrane pliki są widoczne w obszarze Eksplorator projektów Unity.
+    -   Upewnij się, że nowo wybrane pliki są widoczne w Eksploratorze projektów aparatu Unity.
 
 -   **Debuger:**
 
-    -   Zapobiega to możliwe, Zablokuj Visual Studio przy obliczaniu wyrażeń w debugerze.
+    -   Uniemożliwia to możliwe, Zablokuj programu Visual Studio, podczas obliczania wyrażenia w debugerze.
 
-    -   Upewnij się, że wywołań metody opisywanego się tak zdarzyć na odpowiednie domeny w debugerze.
+    -   Upewnij się, że wywołania metod powinny być wykonywane dla domeny w debugerze.
 
 -   **Unity:**
 
-    -   Popraw lokalizację UnityVS.OpenFile z Unity 5.
+    -   Popraw lokalizację UnityVS.OpenFile za pomocą aparatu Unity 5.
 
-    -   Popraw lokalizację pdb2mdb z Unity 5.
+    -   Popraw lokalizację pdb2mdb za pomocą aparatu Unity 5.
 
-    -   Zapobiegaj możliwe wyjątek podczas generowania pliku projektu.
+    -   Zapobiegaj możliwym wyjątkiem podczas generowania pliku projektu.
 
-    -   Zapobiegaj można zablokować uruchomionej w systemie OSX Unity.
+    -   Zapobiegaj możliwe blokowanie, podczas uruchamiania aparatu Unity w systemie OSX.
 
     -   Obsługa wyjątków wewnętrznych.
 
-    -   Wyślij dzienniki konsoli Unity do listy błędów VS.
+    -   Wyślij dzienniki konsoli Unity do listy błędów programu VS.
 
--   **Dokumentacja:** Popraw Generowanie dokumentacji dla nowej dokumentacji unity.
+-   **Dokumentacja:** Popraw generowania dokumentacji dla nowej dokumentacji aparatu unity.
 
--   **Projekt:** Przenieś i Zmień nazwy plików .meta Unity w razie potrzeby, nawet w folderach.
+-   **Projekt:** Przenieś i Zmień nazwy plików .meta Unity w razie potrzeby, nawet w przypadku folderów.
 
 -   **Kreatorzy:** Popraw kolejność parametrów metody MonoBehavior podczas generowania kodu.
 
--   **Interfejs użytkownika:** motywy obsługi programu Visual Studio dla menu kontekstowe i ikony.
+-   **Interfejs użytkownika:** motywy pomocy technicznej programu Visual Studio dla ikony i menu kontekstowego.
 
-## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 — wersja zapoznawcza
- Wydanych 2014-11-12
+## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (wersja zapoznawcza)
+ Wydana 2014-11-12
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Obsługa programu Visual Studio 2015.
+-   Pomoc techniczna dla programu Visual Studio 2015.
 
--   Kod zabarwienie dla programów do cieniowania Unity w programie Visual Studio 2015.
+-   Barwy kodu dla aparatu Unity programów do cieniowania programu Visual Studio 2015.
 
 -   Ulepszone wizualizacji wartości podczas debugowania:
 
-    -   Lepsze wizualizacje ArrayLists, list, obiektach HashTable i słowników.
+    -   Lepszą wizualizację ArrayLists, list, tabele i słowników.
 
-    -   Pokaż niepubliczne elementy członkowskie i statyczne elementy członkowskie jako kategorie czujki i lokalnych widoków.
+    -   Pokaż niepubliczne elementy członkowskie i statyczne elementy członkowskie jako kategorii w wyrażenie kontrolne i lokalnych widokach.
 
-    -   Ulepszone wyświetlanie SerializedProperty firmy Unity do oceny, tylko pola wartości, które jest nieprawidłowa dla właściwości.
+    -   Ulepszone wyświetlanie SerializedProperty mechanizmu Unity do oceny, tylko pola wartość, które jest nieprawidłowa dla właściwości.
 
     -   Debuggerdisplayattribute — Obsługa klas i struktur.
 
-    -   Debuggertypeproxyattribute — pomocy technicznej.
+    -   Debuggertypeproxyattribute — pomoc techniczna.
 
--   Należy wstawiania metod MonoBehaviour za pomocą naszych kreatorów przestrzegać użytkownika konwencje kodowania.
+-   Należy wstawiania obiekt MonoBehaviour metody przy użyciu naszej kreatorów w celu uwzględniania użytkownika konwencje kodowania.
 
--   Implementuje obsługę szablony tekstu czasu kompilacji w projektach UnityVS wygenerowany.
+-   Implementuje obsługę szablony tekstowe czasu kompilacji w projektach UnityVS wygenerowany.
 
--   Implementuje obsługę ResX zasobów w projektach UnityVS wygenerowany.
+-   Implementuje obsługę zasobów ResX w projektach UnityVS wygenerowany.
 
--   Obsługa otwierania programów do cieniowania w programie Visual Studio z Unity.
+-   Obsługa otwierania programów do cieniowania w programie Visual Studio z poziomu aparatu Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Oczyszczanie gniazda przed rozpoczęciem gry w Unity po Attach i Play zostało wyzwolone w programie Visual Studio. To rozwiązuje niektóre problemy z stabilności połączenie między Unity i VS, korzystając z przełącznikami Attach i odtwarzania.
+-   Oczyszczanie gniazd przed rozpoczęciem gry na platformie Unity po Dołącz i odtwarzania zostały wyzwolone w programie Visual Studio. To naprawia pewne problemy z stabilności połączenia między Unity i programu VS, podczas korzystania z Dołącz i odtwarzania.
 
--   Należy unikać wywoływania metod w Unity przez interfejs debugera skryptów aparatu, które są podatne na blokowanie Unity. Rozwiązuje blokowanie Unity, gdy dołączanie debugera.
+-   Należy unikać wywoływania metod w interfejsie debuger aparatu skryptów mechanizmu Unity, które są podatne na blokowanie aparatu Unity. To naprawia blokowanie aparatu Unity podczas dołączania debugera.
 
--   Napraw wyświetlaniu callstacks, jeśli nie są dostępne nie symboli.
+-   Napraw, wyświetlanie elementu stosy wywołań, jeśli brak symboli nie są dostępne.
 
--   Rejestruje wywołanie zwrotne dziennika, jeśli nie trzeba było.
+-   Nie rejestruj wywołanie zwrotne dziennika, jeśli nie mamy.
 
 ## <a name="1920"></a>1.9.2.0
- Wydanych 2014-10-09
+ Wydana 2014-10-09
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Poprawa wykrywania odtwarzaczy Unity.
+-   Zwiększ wykrywania graczy aparatu Unity.
 
 -   Korzystając z naszych użytkownika otwierającego plik, należy Unity przekazać numer wiersza, a także nazwę pliku.
 
--   Domyślnie w dokumentacji online Unity, jeśli istnieje nie lokalne dokumentacji.
+-   Domyślnie się z dokumentacją online platformy Unity, jeśli nie lokalną dokumentację.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Napraw potencjalnych awarii Unity podczas aktywując punkt przerwania po domeny Załaduj ponownie.
+-   Naprawiono awarię Unity, gdy aktywacja punktu przerwania po domeny Załaduj ponownie.
 
--   Usuń wyjątki podane w konsoli platformy Unity podczas zamykania naszych konfiguracji lub dotyczące systemu windows, po domeny Załaduj ponownie.
+-   Usuń wyjątki przedstawione w konsoli platformy Unity podczas zamykania naszym konfiguracji lub dotyczące systemu windows, po nazwie domeny Załaduj ponownie.
 
--   Napraw wykrywania Unity 64-bitowy uruchomionej na komputerze lokalnym.
+-   Napraw wykrywania Unity 64-bitowy, uruchamiane lokalnie.
 
--   Usuń filtrowanie według wersji środowiska Unity w kreatorach MonoBehaviours.
+-   Usuń filtrowanie Monobehaviour poszczególnych wersji aparatu Unity w kreatorach.
 
--   Poprawka usterki, gdzie wszystkie zasoby zostały uwzględnione w plikach projektu, jeśli filtr rozszerzenia był pusty.
+-   Naprawiono błąd, w którym wszystkie zasoby zostały uwzględnione w plikach projektu, jeśli filtr rozszerzeń był pusty.
 
 ## <a name="1910"></a>1.9.1.0
- Wydanych 2014-09-22
+ Wydana 22-2014-09
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Optymalizuj punktu przerwania powiązania do lokalizacji źródłowej.
+-   Optymalizuj powiązania punktu przerwania w lokalizacji źródłowej.
 
--   Obsługa przeciążonych metod w debugera Obliczanie wyrażenia.
+-   Pomoc techniczna dla przeciążonych metod obliczania wyrażeń debugera.
 
--   Obsługa opakowanie w nim elementów podstawowych i typów wartości podczas obliczania wyrażenia debugera.
+-   Obsługa podstawowych pakowania i typy wartości obliczania wyrażeń debugera.
 
--   Obsługuje odtworzenie środowiska zmienne lokalne C# podczas debugowania metod anonimowych.
+-   Obsługa ponownego tworzenia środowiska zmienne lokalne języka C#, podczas debugowania metod anonimowych.
 
 -   Usuń, a następnie zmień nazwy plików .meta podczas usuwania lub zmiany nazwy plików w programie Visual Studio.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Napraw obsługi motywów programu Visual Studio. Wcześniej, okna dialogowe na czarnym motywy może być pusta (Połącz problemy [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) i [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Naprawiono obsługę motywów programu Visual Studio. Wcześniej, okien dialogowych na czarny motywy może się pojawić, puste (łączenie problemów [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) i [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
 
--   Poprawka Unity Zablokuj podczas łączenia debugera, gdy Unity jest ponownej kompilacji (Połącz problemy [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) i [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Poprawka Unity zawieszać się, gdy połączenie ze debugera przy jednoczesnej konieczności ponownego kompilowania aparatu Unity (łączenie problemów [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) i [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
 
--   Napraw punktów przerwania podczas debugowania zdalnego edytory lub graczy na innym systemie.
+-   Usuń punkty przerwania podczas debugowania zdalnego edytory lub graczy skompilowany w innym systemie.
 
--   Usuń możliwe awarii programu Visual Studio, gdy punkt przerwania zostaje trafiony.
+-   Naprawiono ewentualnej awarii programu Visual Studio, gdy punkt przerwania zostaje trafiony.
 
--   Punkty przerwania poprawka powiązanie w celu uniknięcia punktów przerwania przedstawiający jako zwolnione.
+-   Punkty przerwania napraw powiązania w celu uniknięcia punktów przerwania, przedstawiający jako zwolniony.
 
--   Usuń obsługę zakres zmiennej w debugerze, aby uniknąć na żywo zmienne, które pojawiają się poza zakresem.
+-   Naprawiono obsługę zakres zmiennej w debugerze, aby uniknąć zmiennych na żywo, które pojawiają się poza zakresem.
 
--   Usuń wyszukiwania statycznych elementów członkowskich na debugera Obliczanie wyrażenia (Połącz problem [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Napraw wyszukiwania statyczne elementy członkowskie obliczania wyrażeń debugera (Połącz problem [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
 
--   Napraw wyświetlanie typów podczas obliczania wyrażenia debugera, aby wyświetlić właściwości i pola statyczne.
+-   Napraw, wyświetlania typów obliczania wyrażeń debugera, aby wyświetlić właściwości i pola statyczne.
 
--   Napraw generowania rozwiązanie, gdy Unity nazwy projektu zawiera znaki specjalne, że program Visual Studio zabrania (Połącz problem #948666).
+-   Naprawiono Generowanie rozwiązania, gdy nazwy projektów aparatu Unity zawiera znaki specjalne, że program Visual Studio zabrania (Połącz problem #948666).
 
--   Napraw pakietu Visual Studio Tools Unity, aby natychmiast zatrzymać wysyłanie zdarzeń konsoli po opcji unchecked (Połącz problem #933357).
+-   Napraw pakiet Visual Studio Tools Unity, aby natychmiast zatrzymać wysyłanie zdarzenia konsoli po opcji unchecked (Połącz problem #933357).
 
 -   Napraw wykrywania odwołania do odwołania do nowych interfejsów API, takich jak UnityEngine.UI w projektach UnityVS wygenerowany został poprawnie wygenerowany.
 
--   Poprawka Instalatora, aby wymagać czy Visual Studio został zamknięty przed rozpoczęciem instalacji, aby uniknąć uszkodzenia instalacji.
+-   Napraw Instalator, aby wymagać, że program Visual Studio jest zamknięty przed rozpoczęciem instalacji, aby uniknąć uszkodzone instalacje.
 
--   Poprawka Instalatora w celu zainstalowania zestawy referencyjne Unity jako składnik autonomicznej z właściwego współużytkowane przez wszystkie wersje pomocą rozszerzenia VSTU.
+-   Napraw Instalatora w celu zainstalowania zestawy odwołań Unity jako składnik odpowiednie autonomiczne, współużytkowana przez wszystkie wersje narzędzi vstu.
 
--   Usuń skrypty Otwieranie za pomocą rozszerzenia VSTU w 64-bitowej wersji platformy Unity.
+-   Poprawka otwieranie skryptów za pomocą rozszerzenia VSTU w 64-bitowej wersji aparatu Unity.
 
 ## <a name="1900"></a>1.9.0.0
- Wydanych 2014-07-29
+ Wydana 2014-07-29
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   W oknie dołączyć debuger Unity Dodaj możliwość wprowadź niestandardowe adresu IP i portu do debugowania.
+-   W oknie Dołącz debuger aparatu Unity dodanie możliwości do wprowadzania niestandardowego adresu IP i portu do debugowania.
 
 -   Dodaj opcję konfiguracji, aby ustawić Unity do uruchamiania w tle, czy nie.
 
--   Dodaj opcję konfiguracji, aby wygenerować pliki rozwiązań i projektów lub tylko pliki projektu.
+-   Dodaj opcję konfiguracji, aby wygenerować pliki rozwiązań i projektów lub tylko plików projektu.
 
--   Docelowym uruchomienia: dołączanie do Unity lub dołączanie do Unity i odtwarzania.
+-   Docelowy uruchamiania: Dołącz do aparatu Unity lub Dołącz do aparatu Unity i Odtwórz.
 
 -   Wyświetlanie tablic wielowymiarowych w debugerze.
 
--   Obsługa nowych Player Unity debugowania portów.
+-   Obsługa nowych Unity Player debugowania portów.
 
--   Dojście odwołania do zestawów Unity nowe, takich jak 4.6 zestawy graficznego interfejsu użytkownika na platformie Unity.
+-   Uchwyt odwołania do zestawów aparatu Unity, nowe, takich jak mechanizmu Unity 4.6 zestawy graficznego interfejsu użytkownika.
 
--   Deconstructs zamknięcia do prawidłowego wyświetlenia zmiennych lokalnych podczas debugowania.
+-   Deconstructs wolnych od pracy do prawidłowego wyświetlenia zmiennych lokalnych podczas debugowania.
 
--   Deconstructs wygenerowanego Iteratory zmienne do argumentów podczas debugowania.
+-   Podczas debugowania, deconstructs zmienne wygenerowanego Iteratory do argumentów.
 
--   Zachowaj stan Eksplorator projektów Unity po ponownie Załaduj projekt.
+-   Zachowaj stan Eksploratora projektów aparatu Unity po Załaduj ponownie projekt.
 
--   Dodaj polecenie do synchronizowania Unity Eksplorator projektów z bieżącego dokumentu.
+-   Dodaj polecenie Synchronizuj Eksploratora projektów aparatu Unity za pomocą bieżącego dokumentu.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Napraw warunkowych punktów przerwania, których warunki są ustawiane przed rozpoczęciem debugera.
+-   Napraw warunkowe punkty przerwania, których warunki są ustawiane przed rozpoczęciem debugowania.
 
--   Usuń odwołania do UnityEngine, aby uniknąć ostrzeżenia.
+-   Usuń odwołania do UnityEngine w celu uniknięcia ostrzeżeń.
 
--   Napraw analizy wersje beta Unity.
+-   Napraw analizy wersje dla aparatu Unity w wersji beta.
 
--   Rozwiąż problem, w którym zmienne nie było wyświetlane w oknie zmienne lokalne podczas aktywując punkt przerwania lub wykonywanie krok po kroku.
+-   Rozwiązać problem, gdy zmienne nie było wyświetlane w oknie zmienne lokalne, po naciśnięciu klawisza punkt przerwania lub przechodzenie krok po kroku.
 
--   Usuń etykietki narzędzi zmienne w Visual Studio 2013.
+-   Napraw zmienne etykietki narzędzi w programie Visual Studio 2013.
 
--   Napraw generowania dokumentacji IntelliSense dla Unity 4.5.
+-   Naprawiono Generowanie dokumentacji funkcji IntelliSense dla aparatu Unity 4.5.
 
--   Usuń jednolitości / komunikacji programu Visual Studio po domeny Załaduj ponownie (w Unity Odtwórz/Zatrzymaj).
+-   Napraw Unity / komunikacji programu Visual Studio po domeny Załaduj ponownie (na platformie Unity Odtwórz/Zatrzymaj).
 
--   Usuń obsługę części motywów programu Visual Studio.
+-   Naprawiono obsługę części kompozycji programu Visual Studio.
 
 > [!IMPORTANT]
->  C# jest dominujący języka w ekosystemie Unity — nowe zasoby próbki są w języku C#, zostaną domyślnie Unity dokumentacji C# — usunęliśmy naszych podstawowej obsługi UnityScript i coś lepiej skoncentrować się na środowisko C#. W związku z tym pomocą rozszerzenia VSTU rozwiązania są teraz C# tylko i znacznie szybsze do załadowania.
+>  C# jest dominujący języka należący do ekosystemu platformy Unity — nowe zasoby próbki są w języku C#, będą domyślnie dokumentacja aparatu Unity C# — usunęliśmy naszych podstawowa pomoc techniczna dla UnityScript i coś lepiej skoncentrować się na środowisko C#. W wyniku VSTU rozwiązania są teraz C# tylko i szybciej, aby załadować.
 
 ## <a name="1820"></a>1.8.2.0
- Wydanych 2014-01-07
+ Wydana 2014 01-07-
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Obejścia problemu w warstwie sieci Unity przez aparat skryptów na Mavericks zdalnego odnajdywania edytory.
+-   Obejść problem w warstwie sieci firmy Unity silnik wykonywania skryptów w Mavericks zdalnego odnajdywania edytorów.
 
--   Obsługa nowych portów, aby odnaleźć zdalnego odtwarzacze Unity.
+-   Obsługa nowych portów, aby odnaleźć zdalnego graczy aparatu Unity.
 
--   Odwołanie do określonego zestawu UnityEngine do bieżącej kompilacji docelowej.
+-   Odwołanie do określonego zestawu UnityEngine do bieżącego kompilacji docelowej.
 
--   Dodaj ustawienie do filtr plików do uwzględnienia w wygenerowanym projektów.
+-   Dodaj ustawienie, aby odfiltrować pliki do uwzględnienia w wygenerowanym projektów.
 
--   Dodaj ustawienie, aby wyłączyć wysyłanie dzienniki konsoli do listy błędów programu Visual Studio. Jest to przydatne, jeśli używasz PlayMaker lub konsoli Pro, ponieważ może istnieć tylko jedno wywołanie zwrotne zarejestrowane w Unity, aby odbierać dzienniki konsoli.
+-   Dodaj ustawienie, aby wyłączyć wysyłanie dzienników konsoli, na liście błędów Visual Studio. Jest to przydatne, jeśli używasz PlayMaker lub konsoli Pro, ponieważ może istnieć tylko jedno wywołanie zwrotne zarejestrowane na platformie Unity, aby otrzymać dzienniki konsoli.
 
--   Dodaj ustawienie, aby wyłączyć generowanie pliku mdb symboli debugowania. Jest to przydatne, jeśli użytkownik mdb jest generowany.
+-   Dodaj ustawienie, aby wyłączyć generowanie symboli debugowania mdb. Jest to przydatne, jeśli generowania mdb samodzielnie.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Usuń regresji, gdy pliki otwarte w PORÓWNANIU z Unity > = 4.2 spowoduje utratę IntelliSense.
+-   Naprawiono regresję, gdy pliki otwarte w programie VS środowiska Unity > = 4.2 spowoduje utratę funkcji IntelliSense.
 
--   Napraw naszych okien dialogowych w PORÓWNANIU do obsługi niestandardowych kompozycji.
+-   Napraw naszych okien dialogowych programu VS, do obsługi motywy niestandardowe.
 
--   Poprawka zamknięcia UPE menu kontekstowego.
+-   Poprawka menu kontekstowe UPE zamknięcia.
 
--   Zapobiec awarii w Unity, gdy określonej wersji zestawu wygenerowany, jeśli zsynchronizowane.
+-   Zapobiegania awarii na platformie Unity po określonej wersji wygenerowanego zestawu, jeśli są one zsynchronizowane.
 
 ## <a name="1810"></a>1.8.1.0
- Wydanych 2013-11-21
+ Wydana 2013-11-21
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Dostosowany kreatorów MonoBehaviour z interfejsami API 4.3 Unity.
+-   Dostosowane kreatorów obiekt MonoBehaviour za pomocą interfejsów API 4.3 aparatu Unity.
 
--   Kreatorzy MonoBehaviour filtrowania interfejsów API środowiska Unity w zależności od używanej wersji.
+-   Obiekt MonoBehaviour kreatorów filtrowania w zależności od używanej wersji interfejsów API aparatu Unity.
 
--   Dodaj odwołanie do System.Xml.Linq do projektów dla Unity > 4.1.
+-   Dodaj odwołanie do System.Xml.Linq do projektów dla aparatu Unity > 4.1.
 
--   Prettify naszych wywołania Debug.Log zawiera na początku ślad stosu w komunikacie.
+-   Prettify naszych wywołania czy wykluczającą początku stacktrace w komunikacie.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Rozwiązany usterki, w którym firma Microsoft może zakłócać domyślna obsługa plików JavaScript programu Visual Studio.
+-   Usunięto usterkę, w których firma Microsoft będzie zakłócać domyślna obsługa plików JavaScript w programie Visual Studio.
 
--   Stałe białe piksel znajdujących się w programie VS rzeczywiste teraz.
+-   Naprawiono białe pikseli, pojawiają się w programie VS rzeczywiste tym razem.
 
--   Stałe usunięcie zestawu UnityVS.VersionSpecific, jeśli jest oznaczony jako tylko do odczytu przez SCM.
+-   Naprawiono usunięcie zestawu UnityVS.VersionSpecific, jeśli jest oznaczony jako tylko do odczytu przez Menedżer sterowania usługami.
 
--   Stałe wyjątków podczas tworzenia pakietu UnityVS gniazda.
+-   Naprawiono wyjątki podczas tworzenia gniazda w pakiecie UnityVS.
 
--   Stała awarię programu Visual Studio podczas ładowania obrazów standardowych z zestawów programu Visual Studio.
+-   Naprawiono awarię programu Visual Studio, podczas ładowania obrazów podstawowych z zestawów programu Visual Studio.
 
--   Rozwiązane usterki w Generowanie UnityVS.VersionSpecific dla źródła kompilacje Unity.
+-   Usunięto usterkę w generacji UnityVS.VersionSpecific źródła kompilacji aparatu Unity.
 
--   Stała można zablokować podczas otwierania pakietu Unity gniazda.
+-   Naprawiono możliwe blokowanie, podczas otwierania gniazda w pakiecie aparatu Unity.
 
--   Usunięto obsługę Unity projektu z łącznikiem (-) w ich nazwy.
+-   Naprawiono obsługę projektów aparatu Unity kreską (-) w swojej nazwie.
 
--   Stałe otwierania skryptów w Unity, aby nie należy mylić kolejności ALT + TAB dla Unity 4.2 lub nowszej.
+-   Naprawiono otwieranie skryptów środowiska Unity w celu nie należy mylić kolejności ALT + TAB dla aparatu Unity 4.2 lub nowszej.
 
 ## <a name="1800"></a>1.8.0.0
- Wydanych 2013-09-24
+ Wydana 2013-09-24
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Znaczne zwiększenie szybkości połączenia debugera.
+-   Znacznie zwiększona szybkość połączenia debugera.
 
--   Automatycznie obsługiwać Nawigacja do plików i wierszy w Unity 4.2 lub nowszym.
+-   Automatycznie obsługiwać nawigację do pliku i wierszu Unity 4.2 lub nowszej.
 
 -   Warunkowe punkty przerwania.
 
--   Generator pliku projektu obsługuje teraz szablony T4.
+-   Generator pliku projektu teraz obsługuje szablony T4.
 
--   Zaktualizuj MonBehavior kreatorów z nowych interfejsów API.
+-   Zaktualizuj kreatorów MonBehavior przy użyciu nowych interfejsów API.
 
--   Dokumentacja IntelliSense w języku C# dla typów Unity.
+-   Dokumentacja funkcji IntelliSense w języku C# dla typów aparatu Unity.
 
--   Obliczanie wyrażenia arytmetyczne i logicznych.
+-   Obliczanie wyrażenia arytmetycznych i logicznych.
 
--   Lepsze odnajdywanie edytory zdalnego do zdalnego debugowania podglądu.
+-   Lepsze odnajdywanie zdalnego edytorów dla zdalnego debugowania w wersji zapoznawczej.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stała usterki których firma Microsoft będzie wyciek wątku VS po odłączeniu debugera.
+-   Usunięto usterkę której firma Microsoft będzie przecieku wątku w programie VS po odłączeniu debugera.
 
--   Stałe białe piksel w wersji programu VS.
+-   Naprawiono białe pikseli, pojawiają się w programie VS.
 
--   Stała Obsługa kliknięć na ikony paska stanu.
+-   Stała obsługi kliknięcia na ikonę paska stanu.
 
--   Stałe Generowanie odwołań z zestawami w folderach wtyczek.
+-   Naprawiono Generowanie odwołania do zestawów w folderach wtyczek.
 
--   Stałe Tworzenie gniazda z pakietu UnityVS w przypadku wyjątków.
+-   Naprawiono Tworzenie gniazda z pakietu UnityVS w przypadku wyjątków.
 
--   Stałe wykrywanie nowych wersji UnityVS.
+-   Naprawiono wykrywania nowych wersji UnityVS.
 
--   Stałych monit Menedżera licencji, jeśli licencja wygasła.
+-   Naprawiono monit Menedżera licencji po wygaśnięciu licencji.
 
--   Stałe usterkę, która może renderować listę procesów pusta w debugerze dołączanie do procesu okna programu VS.
+-   Naprawiono usterkę, która może uniemożliwić listę procesów pusty w debugerze Dołącz do procesu okna programu VS.
 
--   Stałe zmiany wartości z wartości logiczne, w widoku lokalny.
+-   Zmienianie wartościami stałymi obliczające w widoku lokalny.
 
 ## <a name="1220"></a>1.2.2.0
- Wydanych 2013-07-09.
+ Wydana 2013-07-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   Obsługują w pełni kwalifikowane nazwy w ewaluatorze wyrażeń.
 
--   Stałej blokowanie związane z obsługi wyjątków, gdy aparat Unity skryptów jest przesłanie danych niepoprawny stackframe.
+-   Stała blokowanie związane z obsługą wyjątków, gdy aparat skryptów Unity wysyła nam stackframe nieprawidłowe dane.
 
--   Stałe procesu kompilacji dla celów sieci Web.
+-   Naprawiono procesu kompilacji dla celów sieci Web.
 
--   Stałe błędu, który może się zdarzyć, jeśli program Visual Studio została uruchomiona i został usunięty plik na liście plików, aby otworzyć podczas uruchamiania.
+-   Naprawiono błąd, który może się zdarzyć, jeśli został uruchomiony w programie Visual Studio i usunięty plik był na liście plików, aby otworzyć przy uruchamianiu.
 
--   Stałe UnityVS.OpenFile do obsługi plików z systemem innym niż skryptów, takich jak skompilować programów do cieniowania.
+-   Naprawiono UnityVS.OpenFile do obsługi plików bez skryptów, takich jak skompilowane programy do cieniowania.
 
--   Firma Microsoft odwoływać Boo.Lang i UnityScript.Lang z wszystkich C# projektów.
+-   Firma Microsoft teraz odwoływać się do Boo.Lang i UnityScript.Lang ze wszystkich projektów języka C#.
 
--   Stałe Generowanie odwołań w projektach, jeśli projekt zawiera znaki specjalne.
+-   Naprawiono Generowanie odwołania w projektach, jeśli projekt zawiera znaki specjalne.
 
--   Gdzie wywołań metody usunięty projektów problem rozwiązania VS spowoduje wywołanie wielu NullReferenceException MessageBox.
+-   Obejście VS problem gdzie wywołania metody do usunięty projektów powodowało wielu MessageBox obiektu NullReferenceException.
 
--   Stałe obsługi zestawów Unity 4.2 Beta.
+-   Naprawiono obsługi zestawów 4.2 Unity w wersji Beta.
 
 ## <a name="1210"></a>1.2.1.0
- Wydanych 2013-04-09.
+ Wydana 2013-04-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe lokalnego wdrożenia Unity zestawów do uzupełniania kodu w przypadku wystąpienia błędu We/Wy (takich jak pliki tylko do odczytu, lub pliki zablokowane przez program Visual Studio).
+-   Naprawiono lokalne Wdrażanie zestawów aparatu Unity do uzupełniania kodu w przypadku wystąpienia błędu We/Wy (takich jak pliki tylko do odczytu, lub pliki zablokowane przez program Visual Studio).
 
--   Stała regresji, gdzie otworzenie skryptu z Unity czy skupiają się plik, jeśli został on już otwarty w programie Visual Studio.
+-   Naprawiono regresję, gdzie otworzenie skryptu środowiska Unity będzie koncentruje się plik, jeśli został on już otwarty w programie Visual Studio.
 
--   Rozwiązany problem z wydajnością dla nowego obsługi wyjątków.
+-   Rozwiązano problem z wydajnością dla nowych obsługi wyjątków.
 
--   Stałym powiązaniem punkty przerwania w niektórych zewnętrznej biblioteki dll.
+-   Stałym powiązaniem punkty przerwania w pewnych zewnętrznej biblioteki dll.
 
 ## <a name="1200"></a>1.2.0.0
- Wydanych 2013-03-25
+ Wydana 2013-03-25
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Znaczne zwiększenie szybkości połączenia debugera.
+-   Znacznie zwiększona szybkość połączenia debugera.
 
--   Eksplorator projektów zoptymalizowane Unity większych projektów.
+-   Zoptymalizowane Eksplorator projektu środowiska Unity w większych projektach.
 
--   Uznawać ustawienia programu Visual Studio, aby przerwać (lub nie) na obsługiwane i nieobsługiwane wyjątki.
+-   Ustawienia programu Visual Studio, aby przerwać (lub nie) uznaje na obsługiwane i nieobsługiwane wyjątki.
 
 -   Uwzględnić ustawienie programu Visual Studio, aby wywołać ToString dla zmiennych lokalnych.
 
--   Dodaj nowe menu Debugowanie -> Unity dołączanie debugera, która służy do debugowania odtwarzacze Unity.
+-   Dodaj nowe menu Debuguj -> Dołącz debuger aparatu Unity, które służy do debugowania graczy aparatu Unity.
 
--   Zachowaj projektów niestandardowe dodane do rozwiązania UnityVS podczas generowania pliku rozwiązania.
+-   Zachowaj projektach niestandardowych dodawany do rozwiązania UnityVS podczas generowania pliku rozwiązania.
 
--   Dodawanie nowego skrótu klawiaturowego CTRL + ALT + M -> CTRL + H, aby wyświetlić dokumentację Unity funkcja Unity lub elementu członkowskiego w położeniu karetki.
+-   Dodawanie nowego skrótu klawiaturowego CTRL + ALT + M -> CTRL + H, aby wyświetlić dokumentację aparatu Unity Unity funkcji lub elementu członkowskiego w położeniu karetki.
 
--   Pliki odpowiedzi kompilatora (źródło) należy wziąć pod uwagę podczas kompilowania w programie Visual Studio.
+-   Kompilator pliki odpowiedzi (rsp) należy wziąć pod uwagę podczas kompilowania w programie Visual Studio.
 
--   Deconstruct typy wygenerowanego przez kompilator do wyświetlenia zmiennych podczas debugowania generator metody.
+-   Dekonstruować typów wygenerowanego przez kompilator do wyświetlenia zmiennych podczas debugowania metody generator.
 
--   Uproszczenie zdalnego debugowania przez usunięcie trzeba skonfigurować folder udostępniony na platformie Unity. Teraz wystarczy mieć dostęp do projektu Unity z systemu Windows.
+-   Uprość, zdalne debugowanie, usuwając konieczność, aby skonfigurować folder udostępniony do aparatu Unity. Teraz po prostu musisz mieć dostęp do swojego projektu środowiska Unity z Windows.
 
--   Zainstaluj niestandardowego profilu Unity jako profil standardowy docelowej platformy .net. To rozwiązanie wszystkich fałszywych alarmów, które można wyświetlić ReSharper.
+-   Zainstaluj profil niestandardowy Unity jako profil docelowy .net standard. To naprawia wszystkie fałszywych alarmów, które można pokazać ReSharper.
 
--   Obejść Unity skryptów błąd aparatu, aby debuger nie zostanie poprawnie przerwane na z systemem innym niż zarejestrowana wątków.
+-   Obejście Unity, skryptów błędów aparatu, aby debuger nie spowodują przerwania działania na innych prawidłowo zarejestrowane wątki.
 
--   Zmiana zasad użytkownika otwierającego plik, aby uniknąć sytuacji wyścigu w wersji programu VS, gdzie twierdzi, aby można było otworzyć plików, podczas awarii na żądanie Otwórz plik.
+-   Zmiana zasad użytkownika otwierającego plik, aby uniknąć sytuacji wyścigu, w którym twierdzi mieć możliwość otwarcia plików, podczas awarii na żądanie Otwórz plik w programie VS.
 
--   UnityVS jest teraz pytaniem odświeżyć kompilacji podczas VS jest skompilowanie projektu, a nie w pliku Zapisz już.
+-   UnityVS jest teraz pytaniem odświeżyć kompilacji podczas VS jest kompilowania projektu, a nie w pliku Zapisz dłużej.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe naszych niestandardowego profilu platformy .net
+-   Naprawiono naszych niestandardowego profilu platformy .net
 
--   Stała integracji motywów i to rozwiązać problemy z naszym z motywu ciemny VS 2012.
+-   Naprawiono integracji motywów, to rozwiązać problemy z naszych z motywu ciemny VS 2012.
 
--   Skrót stałym zachowanie szybkie VS 2012.
+-   Naprawiono zachowanie szybkiego skrótu w VS 2012.
 
--   Stała wykonywania krokowego problem, który może się zdarzyć, gdy debugowanie i wątku głównego z systemem innym niż czy trafiony punkt przerwania.
+-   Rozwiązano problem przechodzenia krok po kroku, który może występować w przypadku debugowania i inne niż główny wątek osiągnie punkt przerwania.
 
--   Stałe uzupełnianie UnityScript i coś typ aliasów, takich jak int.
+-   Naprawiono uzupełnianie UnityScript i coś, aliasów typu, takie jak int.
 
--   Stałe wyjątek podczas zapisywania nowego ciągu UnityScript lub coś.
+-   Naprawiono wyjątek przy pisaniu ciągów UnityScript lub coś nowego.
 
--   Stałe wyjątków w menu Unity, gdy rozwiązanie nie została załadowana.
+-   Naprawiono wyjątki w menu Unity, gdy to rozwiązanie nie została załadowana.
 
--   Usunięte usterki 48 UV: wpisywanie podwójnego cudzysłowu czasami utworzyć błąd i Przerwij wszystkie funkcje (uzupełnianie kodu, wyróżnianie składni itp.).
+-   Usunięto usterkę występującą 48 UV: wpisywanie podwójny cudzysłów czasami generuje błąd i przerwanie wszystkich funkcji (uzupełnianie kodu, wyróżnianie składni itp.).
 
--   Usunięte usterki 46 UV: zduplikowane pliku skryptu otwarty (UnityScript), po kliknięciu przycisku na błąd listy programu Visual Studio.
+-   Usunięto usterkę występującą UV 46: zduplikowany plik otwarty skryptu (UnityScript), po kliknięciu błąd listy z programu Visual Studio.
 
--   Usunięte usterki 42 UV: logo łączności platformy Unity na pasku stanu nie obsługuje zdarzenia myszy w VS 2012.
+-   Usunięto usterkę występującą 42 UV: logo łączność platformy Unity na pasku stanu nie obsługuje zdarzenia myszy w VS 2012.
 
--   Usunięte usterki 44 UV: CTRL + SHIFT + Q, nie jest dostępna w VS 2012 dla MonoBehaviours szybkie.
+-   Usunięto usterkę występującą UV 44: CTRL + SHIFT + Q nie jest dostępna w wersji VS 2012 dla szybkich klas Monobehaviour.
 
--   Usunięte usterki 40 UV: wybrane elementy w obszarze Eksplorator projektów Unity są nieczytelne, gdy okno jest nieaktywne w VS2012 motywu "ciemny".
+-   Usunięto usterkę występującą UV 40: wybranych elementów w Eksploratorze projektów aparatu Unity były nieczytelne w przypadku, gdy okno jest nieaktywne VS2012 motywu "ciemny".
 
--   Usunięte usterki 39 UV: problem tokenizację wpisywany ciągów.
+-   Usunięto usterkę występującą UV 39: tokenizowanie problem poprzedzone znakiem zmiany znaczenia ciągów.
 
--   Usunięte usterki 35 UV: wywołanie ToString na obiektach podczas sprawdzania zmiennych.
+-   Usunięto usterkę występującą 35 UV: wywoływanie ToString obiektów podczas sprawdzania zmiennych.
 
--   Usunięte usterki 27 UV: Symbol przejdź do okna niespójność "ciemny" kompozycji w VS2012.
+-   Usunięto usterkę występującą UV 27: niespójność okna przejdź do symbolu z "" ciemny w VS2012.
 
--   Usunięte usterki UV-11: zmiennych lokalnych w procedurach wspólnych.
+-   Usunięto usterkę występującą UV-11: zmiennych lokalnych w koprocedury.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 — wydanie beta
- Wydanych 2014-10-09
+ Wydana 2014-10-09
 
 ## <a name="10130"></a>1.0.13.0
- Wydanych 2013-01-21
+ Wydana 2013-01-21
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe blokowanie programu Visual Studio, która może się zdarzyć, jeśli debugowany obiekt docelowy wysyła zdarzenia nieprawidłowy wątku. Zwykle będzie zachodzące podczas debugowania zdalnego środowiska Unity w systemie OSX.
+-   Naprawiono blokowanie programu Visual Studio, która może się zdarzyć, jeśli obiekt debugowany docelowej wysyła zdarzenia nieprawidłowy wątek. Będzie zazwyczaj mają miejsce podczas debugowania zdalnego aparatu Unity w systemie OSX.
 
--   Stałe blokowanie programu Visual Studio, która może się zdarzyć, jeśli wyjątek zamknięcie debugera.
+-   Naprawiono blokowanie programu Visual Studio, która może się zdarzyć, jeśli wyjątek zostanie wyłączony debugera.
 
--   Stała naszych pomocników MonoBehavior po MonoBehavior C# w przestrzeni nazw.
+-   Stała naszych pomocników MonoBehavior, gdy MonoBehavior C# znajduje się w przestrzeni nazw.
 
--   Stałe debugera etykietki narzędzi dla UnityScript w programie Visual Studio 2012.
+-   Ustalonej etykietki narzędzi debugowania dla UnityScript w programie Visual Studio 2012.
 
--   Stałe zmiany tylko stałe debugowania z Unity Generowanie projektu.
+-   Naprawiono Generowanie projektu zmiany tylko stałe debugowania z aparatu Unity.
 
--   Stała klawiatury nawigacji w obszarze Eksplorator projektów Unity.
+-   Rozwiązany nawigacji za pomocą klawiatury w Eksploratorze projektów aparatu Unity.
 
--   Stałe kolorowania UnityScript zmienionym ciągów.
+-   Kolorowanie UnityScript stałych ciągów o zmienionym znaczeniu.
 
--   Stałe naszych użytkownika otwierającego plik do odgadnięcia lepsze nazwę projektu, gdy używane poza Unity. Może to być konieczne, gdy użytkownik używa trzeci użytkownika otwierającego plik części w Unity, który deleguje do UnityVS.
+-   Naprawiono naszych użytkownika otwierającego plik do odgadnięcia lepsze, nazwę projektu, gdy jest używana poza aparatu Unity. Może to być konieczne, gdy użytkownik używa trzeciego użytkownika otwierającego plik części na platformie Unity, który delegował do UnityVS.
 
--   Stałe obsługi długich komunikatów wysłanych z Unity UnityVS. Wcześniej długich mogło powodować awarię naszych komunikatów część UnityVS. W rezultacie czasami UnityVS nie Otwórz plik z Unity.
+-   Naprawiono obsługi długich komunikatów wysyłanych z aparatu Unity do UnityVS. Wcześniej wiadomości długie mogło powodować awarię naszych komunikatów część UnityVS. W konsekwencji czasami UnityVS w takich sytuacjach przydałaby Otwórz plik z poziomu aparatu Unity.
 
 ## <a name="10120"></a>1.0.12.0
- Wydanych 2013-01-03
+ Wydana 2013-01-03
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stały blokowanie programu Visual Studio, która może się zdarzyć, gdy program Visual Studio usuwania punktu przerwania.
+-   Stały blokowanie programu Visual Studio, która może się zdarzyć, gdy program Visual Studio było usunięcie punktu przerwania.
 
--   Stałe usterki, gdzie niektórych punktów przerwania nie będzie trafień, po Unity ponownie kompilowana gier skryptów.
+-   Usunięto usterkę, gdzie niektórych punktów przerwania nie będzie trafień, po Unity ponownie kompilowana skrypty gier.
 
--   Stałe debugera tak, aby prawidłowo powiadamiania programu Visual Studio zostały niezwiązanego punktów przerwania.
+-   Naprawiono debugera, aby prawidłowo powiadamiania programu Visual Studio niepowiązanych zostały punktów przerwania.
 
--   Rozwiązany problem rejestracji, który może uniemożliwić debuger programu Visual Studio do debugowania natywnego programów.
+-   Rozwiązano problem rejestracji, który może uniemożliwiać debugera programu Visual Studio do debugowania natywnych programów.
 
--   Usunięto wyjątek, który może się zdarzyć, gdy obliczenia UnityScript i rezer wyrażenia.
+-   Naprawiono wyjątek, który może się zdarzyć, gdy oceny UnityScript braz rozruchowy wyrażeń.
 
--   Stała regresji, gdzie zmieniając poziom interfejsu API platformy .net w Unity nie spowoduje aktualizację plików projektu.
+-   Naprawiono regresję gdzie zmieniając poziom interfejsu API platformy .net na platformie Unity nie powodowało aktualizację plików projektu.
 
--   Stałe usterkę interfejsu API, gdy kod użytkownika nie może uczestniczyć w funkcji wywołania zwrotnego dziennika.
+-   Naprawiono błąd interfejsu API, gdy kod użytkownika nie może uczestniczyć w obsługi wywołania zwrotnego dziennika.
 
 ## <a name="10110"></a>1.0.11.0
- Wydanych 2012-11-28
+ Wydana 28-2012-11
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Oficjalne wsparcie Unity 4.
+-   Oficjalna Obsługa 4 aparatu Unity.
 
--   Manipulowanie skryptów w Eksploratorze projektu platformy Unity.
+-   Manipulowanie skryptów w Eksploratorze projektów aparatu Unity.
 
--   Integracja w programie Visual Studio przejdź do okna.
+-   Integracja programu Visual Studio przejdź do okna.
 
--   Podczas analizowania informacji komunikatu konsoli, tak, aby kliknięcie na liście błędów przejście do pierwszego stackframe przy użyciu symboli.
+-   Podczas analizowania informacji konsoli wiadomości, więc, że kliknięcie na liście błędów przejście do pierwszego stackframe z symbolami
 
--   Dodaj [interfejsu API](../cross-platform/customize-project-files-created-by-vstu.md) aby umożliwić użytkownikowi uczestniczyć w Generowanie projektu.
+-   Dodaj [API](../cross-platform/customize-project-files-created-by-vstu.md) aby umożliwić użytkownikowi uczestniczyć w Generowanie projektu.
 
--   Dodaj [interfejsu API](../cross-platform/share-the-unity-log-callback-with-vstu.md) aby umożliwić użytkownikowi uczestniczyć w LogCallback.
+-   Dodaj [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) aby umożliwić użytkownikowi uczestniczyć w LogCallback.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe regresji w tle Eksplorator projektów środowiska Unity w programie Visual Studio 2012.
+-   Naprawiono Regresje w tle w Eksploratorze projektów aparatu Unity w programie Visual Studio 2012.
 
--   Stałe Generowanie projektu dla użytkowników Pełna profilu platformy .net.
+-   Naprawiono Generowanie projektu dla użytkowników pełnego profilu platformy .net.
 
--   Stałe Generowanie projektu dla użytkowników w docelowej sieci Web.
+-   Naprawiono Generowanie projektu dla użytkowników w docelowej sieci Web.
 
--   Generowanie stałym projektu, aby uwzględnić debugowania i śledzenia symbole kompilacji jako Unity jest.
+-   Generowanie projektu stały obejmujący debugowanie i jest śledzenia symbole kompilacji jako aparatu Unity.
 
--   Stałe awarii, używając znaków specjalnych w naszym Symbol przejdź do okna.
+-   Naprawiono awarię przy użyciu znaków specjalnych w naszym okna przejdź do symbolu.
 
--   Stałe awarii, jeśli firma Microsoft nie można wstrzyknąć naszych ikonę na pasku stanu programu Visual Studio.
+-   Naprawiono awarii, jeśli firma Microsoft nie można wstrzyknąć naszych ikonę na pasku stanu programu Visual Studio.
 
 ## <a name="10100"></a>1.0.10.0
- Wydanych 2012-10-09.
+ Wydana 2012-10-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stała tła Eksplorator projektów środowiska Unity w programie Visual Studio 2010.
+-   Ustalone tło Eksplorator projektu środowiska Unity w programie Visual Studio 2010.
 
--   Stałe blokowanie programu Visual Studio, która może się zdarzyć, jeśli UnityVS próbowano Dołącz debuger do Unity, którego interfejs debugera wcześniej awaria.
+-   Naprawiono blokowanie programu Visual Studio, która może się zdarzyć, jeśli UnityVS podjęto próbę dołączenia debugera do Unity, którego interfejs debugera wcześniej wystąpiła awaria.
 
--   Stałe blokowanie programu Visual Studio, która może się zdarzyć, gdy punkt przerwania został ustawiony i wystąpiłyby ponowne załadowanie obiektu AppDomain.
+-   Naprawiono blokowanie programu Visual Studio, który może się zdarzyć, gdy ustawiono punkt przerwania i może mieć miejsce, załadowanie obiektu AppDomain.
 
--   Stałe, jak zestawy są pobierane z Unity należy unikać blokowania plików i mylić Unity procesu kompilacji.
+-   Ustala, jak zestawy są pobierane z aparatu Unity, unikaj blokowania plików i mylić procesu kompilacji aparatu Unity.
 
 ## <a name="1090"></a>1.0.9.0
- Wydanych 2012-10-03
+ Wydana 2012-10-03
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe Generowanie projektu, gdy projekt Unity zawiera rzeczywiste zasoby JavaScript.
+-   Naprawiono Generowanie projektu, podczas projektu środowiska Unity zawiera rzeczywiste zasoby języka JavaScript.
 
--   Stałe obsługi błędów w Obliczanie wyrażenia.
+-   Naprawiono obsługę błędów w Obliczanie wyrażenia.
 
--   Stałe ustawienie nowe wartości z polami typów wartości.
+-   Naprawiono ustawiania nowych wartości do pól typu wartości.
 
--   Stałe możliwe efekty uboczne przy aktywowaniu wyrażenia w edytorze kodu.
+-   Naprawiono możliwe efekty uboczne po najechaniu kursorem na wyrażeniach w edytorze kodu.
 
--   Stałe, jak typy są przeszukiwane w zestawów załadowanych dla wyrażenia.
+-   Ustala, jak typy są przeszukiwane w załadowanych zestawów do obliczenia wyrażenia.
 
--   Usunięte usterki UV 21: oceny przypisania Unity obiektów nie ma wpływu.
+-   Usunięto usterkę występującą UV 21: ocena przydziału obiektów Unity nie ma wpływu.
 
--   Usunięte usterki UV 21: nieprawidłowy wskaźnik podczas obliczania wywołania metody, Unity matematyczne API.
+-   Usunięto usterkę występującą UV 21: nieprawidłowy wskaźnik podczas obliczania wywołanie metody do interfejsu API aparatu Unity matematyczne.
 
 ## <a name="1080"></a>1.0.8.0
- Wydanych 2012-09-26
+ Wydana 26-2012-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stały, sposób naszych obiekt otwierający skryptu ścieżka do projektu, aby można się, że jego jest w stanie otworzyć skrypty i Visual Studio.
+-   Naprawiono sposób obiekt otwierający naszego skryptu ścieżkę do projektu, aby być się, że aby znajdował się można otworzyć zarówno w programie Visual Studio, jak i skrypty.
 
--   Usunięte usterki punkty utworzone podczas sesji debugowania działała, która może spowodować, że Visual Studio, aby blokować.
+-   Naprawiono usterkę z punktami przerwania utworzone podczas sesji debugowania działał, która może spowodować zablokowanie programu Visual Studio.
 
--   Stałe, jak UnityVS jest zarejestrowany w programie Visual Studio 2010.
+-   Ustala, jak UnityVS jest zarejestrowany w programie Visual Studio 2010.
 
 ## <a name="1070"></a>1.0.7.0
- Wydanych 2012-09-14
+ Wydana 14-2012-09
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Obsługa programu Visual Studio 2012.
+-   Visual Studio 2012 pomocy technicznej.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe Generowanie zgodności zachowanie środowiska Unity w edytorze i wtyczek plików projektu.
+-   Naprawiono Generowanie edytora i wtyczek plików projektu, aby dopasować zachowanie mechanizmu Unity.
 
--   Stałe tłumaczenia .pdb symbole na Unity 4.
+-   Stałe tłumaczenia symbole .pdb do 4 aparatu Unity.
 
 > [!IMPORTANT]
->  Dzięki obsłudze programu Visual Studio 2012 było zmienić nazwę kilka plików i innymi przenoszenia. Pakiet UnityVS do zaimportowania Unity ma teraz nazwę UnityVS 2010 lub UnityVS 2012 odpowiednio programu Visual Studio 2010 i Visual Studio 2012. Ta wersja wymaga również, że pliki projektu UnityVS są generowane.
+>  Ze względu na obsługę programu Visual Studio 2012 mieliśmy kilka plików i innych poruszać. Pakiet UnityVS do zaimportowania Unity ma teraz nazwę UnityVS 2010 lub UnityVS 2012 odpowiednio programu Visual Studio 2010 i Visual Studio 2012. Ta wersja wymaga również, że UnityVS pliki projektu są generowane.
 
-## <a name="1060---internal-build"></a>1.0.6.0 — wewnętrzny kompilacji
- Wydanych 2012-09-12
+## <a name="1060---internal-build"></a>1.0.6.0 — wewnętrzne kompilacji
+ Wydana 2012-09-12
 
 ## <a name="1050"></a>1.0.5.0
- Wydanych 2012-09-10
+ Wydana 10-2012-09
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe Generowanie plików projektu, gdy skryptów i programów do cieniowania musiało znaku nieprawidłowy kod xml.
+-   Naprawiono Generowanie plików projektu, gdy skryptów lub programów do cieniowania ma znak nieprawidłowy kod xml.
 
--   Stałe wykrywania wystąpień Unity, gdy Unity był połączony z serwerem zasobów. To wyzwalane błędów, aby otworzyć pliki z Unity i automatyczne połączenie debugera programu Visual Studio.
+-   Naprawiono wykrywania wystąpień platformy Unity podczas Unity został połączony z serwerem zawartości. To wyzwalane błędów, aby otworzyć pliki z firm Unity i automatyczne połączenie debugera programu Visual Studio.
 
 ## <a name="1040"></a>1.0.4.0
- Wydanych 2012-09-05
+ Wydana 05-2012-09
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Automatyczna konwersja symboli debugowania w Unity.
+-   Automatyczna konwersja symbole debugowania na platformie Unity.
 
-     Jeśli w folderze zasobów zestawu .dll .NET z jego skojarzony .pdb, po prostu ponownie zaimportować zestaw i UnityVS przekonwertuje .pdb do pliku symboli debugowania, że rozumie Unity przez aparat skryptów, i będziesz mieć do kroku do ponownie zestawy .NET, z UnityVS.
+     Jeśli masz zestaw .NET DLL za pomocą jego skojarzonego .pdb w folderze zasobów, po prostu ponownie zaimportować zestaw i UnityVS przekonwertuje .pdb w pliku symboli debugowania, rozumie mechanizmu Unity silnik wykonywania skryptów i będzie możliwe do kroku do zestawów .NET z UnityVS.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stała UnityVS awarii podczas debugowania spowodowane wyjątków zgłaszanych przez metody lub właściwości wewnątrz Unity.
+-   Naprawiono UnityVS awarii podczas debugowania spowodowane wyjątki wyrzucane przez metody lub właściwości wewnątrz aparatu Unity.
 
 ## <a name="1030"></a>1.0.3.0
- Wydanych 2012-09-04
+ Wydana 2012-09-04
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Nowa opcja konfiguracji można wyłączyć użycie UnityVS do otwierania plików z Unity.
+-   Nowa opcja konfiguracji, aby wyłączyć użycie UnityVS umożliwia otwieranie plików z poziomu aparatu Unity.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe Generowanie odwołania do UnityEditor dla projektów z systemem innym niż edytora.
+-   Naprawiono Generowanie odwołania do UnityEditor edytora innych projektów.
 
--   Stałe definicji symbolu UNITY_EDITOR dla projektów z systemem innym niż edytora.
+-   Naprawiono definicji symbolu UNITY_EDITOR edytora innych projektów.
 
--   Stałe losowe VS awaria spowodowane przez naszych pasek stanu niestandardowych.
+-   Naprawiono losowe VS awarii spowodowanych naszych pasek stanu niestandardowych.
 
 ## <a name="1020"></a>1.0.2.0
- Wydanych 2012-08-30
+ Wydana 2012-08-30
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe konflikt z PythonTools debugera.
+-   Naprawiono konflikt z debugerem PythonTools.
 
--   Stałe odwołania do Mono.Cecil.
+-   Naprawiono odwołania do Mono.Cecil.
 
--   Usunięte usterki w zestawach jak skryptów zostały pobrane z Unity z b7 Unity 4.
+-   Usunięto usterkę występującą w zestawach, jak skrypty zostały pobrane z poziomu aparatu Unity za pomocą aparatu Unity 4 b7.
 
 ## <a name="1010"></a>1.0.1.0
- Wydanych 2012-08-28
+ Wydana 28-2012-08
 
 ### <a name="new-features"></a>Nowe funkcje
 
--   Obsługa podglądu Unity 4.0 Beta.
+-   Wsparcie dla aparatu Unity 4.0 Beta.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
--   Stałe kontroli właściwości zgłaszanie wyjątków.
+-   Naprawiono kontrolę właściwości zgłaszanie wyjątków.
 
--   Stałe malejącej do obiektów podstawowych, podczas sprawdzania obiektów.
+-   Naprawiono malejąco do obiektów podstawowych, podczas sprawdzania obiektów.
 
--   Listy rozwijanej puste stałego punktu wstawiania w Kreatorze MonoBehavior.
+-   Naprawiono puste rozwijanej liście dla punktu wstawiania w Kreatorze MonoBehavior.
 
--   Stałe uzupełnianie dla biblioteki dll znajdujące się w folderze zasobów UnityScript i coś.
+-   Naprawiono uzupełnianie dla biblioteki dll znajdujące się w folderze zasobów UnityScript i coś.
 
-## <a name="1000---initial-release"></a>1.0.0.0 - początkowego wydania
- Wydanych 2012-08-22
+## <a name="1000---initial-release"></a>1.0.0.0 - wersja początkowa
+ Wydana 22-2012-08

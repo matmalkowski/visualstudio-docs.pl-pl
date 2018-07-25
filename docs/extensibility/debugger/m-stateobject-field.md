@@ -1,5 +1,5 @@
 ---
-title: m_stateObject pola | Dokumentacja firmy Microsoft
+title: Pole m_stateObject | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79313460d380b2b505f6fa75f35351811ddaa470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097462"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231320"
 ---
-# <a name="mstateobject-field"></a>m_stateObject pola
+# <a name="mstateobject-field"></a>pole m_stateObject
 Obiekt, który reprezentuje dane, które będzie używane przez akcję.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,7 +36,7 @@ Obiekt, który reprezentuje dane, które będzie używane przez akcję.
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Jest to `state` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora. Istnieje również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.  
+ Jest to `state` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora. Warto również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

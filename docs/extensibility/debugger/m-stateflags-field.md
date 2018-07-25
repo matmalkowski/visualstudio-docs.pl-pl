@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags pola | Dokumentacja firmy Microsoft
+title: Pole m_stateFlags | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8842b4e7a3b6c0cb13b0c0d446e0e03b525ae903
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee0cdebe00acce67fc9032a4ba9e7e566ecd9786
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098124"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232081"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags pola
+# <a name="mstateflags-field"></a>pole m_stateFlags
 Przechowuje informacje o bieżącym stanie <xref:System.Threading.Tasks.Task> obiektu.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 .field assembly int32 modreq(System.Runtime.CompilerServices.IsVolatile) m_stateFlags  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj używają <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> dostęp do tej wartości dla właściwości.  
+ Zazwyczaj używa się <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> właściwości dostępu do tej wartości.  
   
- Ten element członkowski może być dowolną kombinację następujących wartości:  
+ Ten element członkowski może być dowolną kombinacją następujących wartości:  
   
 -   [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
   
@@ -50,5 +50,5 @@ Przechowuje informacje o bieżącym stanie <xref:System.Threading.Tasks.Task> ob
   
 -   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

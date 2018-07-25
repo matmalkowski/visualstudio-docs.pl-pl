@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065884"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230951"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang właściwości konsolidatora (Android C++)
 
@@ -47,15 +47,15 @@ Plik wyjściowy | Opcja przesłania domyślną nazwę i lokalizację programu tw
 Pokaż postęp | Drukuje wiadomości dotyczące postępu konsolidatora.
 Wersja | -Version — opcja nakazuje konsolidatorowi umieszczenie numeru wersji w nagłówku pliku wykonywalnego.
 Włącz pełne dane wyjściowe | Verbose — opcja nakazuje konsolidatorowi wysyłanie pełnych komunikatów na potrzeby debugowania.
-Włączenie konsolidowania przyrostowego | Ta opcja nakazuje konsolidatorowi włączenie konsolidowania przyrostowego.
-Ścieżka wyszukiwania biblioteki udostępnionej | Umożliwia użytkownikowi wypełnienie ścieżki wyszukiwania biblioteki udostępnionej.
-Katalogi bibliotek dodatkowe | Umożliwia użytkownikowi przesłanianie ścieżki środowiskowej biblioteki. (-L folder).
+Włącz konsolidację przyrostową | Ta opcja nakazuje konsolidatorowi włączenie konsolidowania przyrostowego.
+Ścieżka wyszukiwania biblioteki udostępnionej | Umożliwia użytkownikowi Wypełnianie ścieżki wyszukiwania biblioteki udostępnionej.
+Dodatkowe katalogi biblioteki | Umożliwia użytkownikowi przesłanianie ścieżki środowiskowej biblioteki. (-L folder).
 Raport nierozpoznanych odwołań do symboli | Włączenie tej opcji będzie zgłaszać nierozpoznanych odwołań do symboli.
-Optymalizuj pod kątem użycia pamięci | Optymalizuj pod kątem użycia pamięci przez ponowne odczytanie tabel symboli, jeśli to konieczne.
+Optymalizacja pod kątem użycia pamięci | Optymalizuj pod kątem użycia pamięci przez kątem tabel symboli, zgodnie z potrzebami.
 Ignoruj określone biblioteki domyślne | Określa jedną lub więcej nazw bibliotek domyślnych do zignorowania.
-Wymuś odwołania do symboli | Wymuś symbolu, które zostaną wprowadzone w pliku wyjściowym jako niezdefiniowanego symbolu.
-Informacje o symbolach debugera | Informacje o symbolach z pliku danych wyjściowych debugera. | **Uwzględnij wszystkie**<br>**Pomiń niepotrzebne symbole na potrzeby przetwarzania relokacji**<br>**Pomiń informacje o symbolach debugera tylko**<br>**Pomiń informacje o wszystkich symbolach**<br>
-Informacje o symbolach debugera pakietu | Usuwanie informacji o symbolach debugera przed opakowania.  Kopia oryginalnego pliku binarnego będzie służyć do debugowania.
+Wymuszaj odwołania do symboli | Symbol wymuszania do można wpisać w pliku wyjściowym jako niezdefiniowanego symbolu.
+Informacje o symbolach debugera | Informacje o symbolach w pliku danych wyjściowych debugera. | **Uwzględnij wszystkie**<br>**Pomiń niepotrzebne symbole na potrzeby przetwarzania relokacji**<br>**Pomiń informacje o symbolach debugera tylko**<br>**Pomiń wszystkie informacje o symbolach**<br>
+Informacje o symbolach debugera pakietu | Usuń informacje o symbolach debugera przed pakowania.  Kopię oryginalny plik binarny będzie służyć do debugowania.
 Nazwa pliku mapy | Opcja Map nakazuje konsolidatorowi utworzenie pliku mapy o nazwie określonej przez użytkownika.
 Oznacz zmienne tylko do odczytu po relokacji | Ta opcja oznacza zmienne jako tylko do odczytu po relokacji.
 Włącz natychmiastowe powiązanie funkcji | Ta opcja oznacza obiekt do natychmiastowego powiązania funkcji.
@@ -63,4 +63,4 @@ Wymagaj stosu wykonywalnego | Ta opcja oznacza dane wyjściowe jako niewymagają
 Całe archiwum | Całe archiwum używa całego kodu ze źródeł i zależności dodatkowych.
 Dodatkowe opcje | Dodatkowe opcje.
 {1&gt;Dodatkowe zależności&lt;1} | Określa dodatkowe elementy do dodania do wiersza polecenia konsolidacji.
-Zależności biblioteki | Ta opcja umożliwia określenie dodatkowych bibliotek, które mają zostać dodane do wiersza polecenia konsolidatora. Dodatkowe biblioteki zostaną dodane do końca uruchomienia wiersza polecenia konsolidatora z "lib" i kończyć się rozszerzeniem ".a" lub ".so".  (-lFILE)
+Zależności biblioteki | Ta opcja umożliwia określenie dodatkowych bibliotek, które mają zostać dodane do wiersza polecenia konsolidatora. Dodatkowe biblioteki zostaną dodane w celu uruchomienia wiersza polecenia konsolidatora z *lib* i kończyć się znakiem *.a* lub *SO* rozszerzenia.  (-lFILE)

@@ -24,32 +24,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d818c6ffbef8502634e80903f6cf1dc853e6ce
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: bc46e664bd117827be3534c7aa81978d7cc03d5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059340"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231304"
 ---
 # <a name="zipdirectory-task"></a>Zadanie ZipDirectory
-Tworzy `.zip` archiwum z zawartości katalogu.
+Tworzy *zip* archiwum z zawartości katalogu.
 
-**Uwaga:** `ZipDirectory` zadanie jest dostępne w MSBuild 15.8 i powyżej tylko.
+>[!NOTE]
+>`ZipDirectory` Zadanie jest dostępne w MSBuild 15.8 i nowszym tylko.
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `ZipDirectory` zadań.  
+ W poniższej tabeli opisano parametry `ZipDirectory` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`DestinationFile`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru<br /><br /> Pełna ścieżka do `.zip` pliku w celu utworzenia.|
-|`Overwrite`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, pomija plik docelowy zostanie zastąpiony, jeśli istnieje. Domyślnie `false`.|
-|`SourceDirectory`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa katalog, aby utworzyć `.zip` archiwum z.|
+|`DestinationFile`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru<br /><br /> Pełna ścieżka do *zip* pliku do utworzenia.|
+|`Overwrite`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija docelowego pliku zostaną zastąpione, jeśli taki istnieje. Wartość domyślna to `false`.|
+|`SourceDirectory`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa katalog, aby utworzyć *zip* archiwum z.|
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz wymienionych powyżej parametrów to zadanie dziedziczy parametrów z <xref:Microsoft.Build.Tasks.TaskExtension> dziedziczy klasa, która sama <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrach i ich opisy, zobacz [taskextension — klasa podstawowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład tworzy `.zip` archiwum z katalogu wyjściowego po utworzeniu projektu.
+ Poniższy przykład tworzy *zip* archiwum z katalogu wyjściowego Po skompilowaniu projektu.
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -68,6 +69,6 @@ Tworzy `.zip` archiwum z zawartości katalogu.
 </Project>
 ```
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

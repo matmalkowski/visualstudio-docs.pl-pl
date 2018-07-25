@@ -1,5 +1,5 @@
 ---
-title: m_parent pola | Dokumentacja firmy Microsoft
+title: Pole m_parent | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c50bb06a7aa87e06768e55849ca1e7c2bd4d1c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2246a846324710cee0cb49913c1debd3bad0436
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099197"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231132"
 ---
-# <a name="mparent-field"></a>m_parent pola
+# <a name="mparent-field"></a>pole m_parent
 Pole zapasowe dla <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` właściwości.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 .field private initonly class System.Threading.Tasks.Task m_parent  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

@@ -21,35 +21,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab82b3ddf2bc39d1253321a335e1fe838235819
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460d5f68242f232048fec294156f90f49331a21d
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572325"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231191"
 ---
 # <a name="xdcmake-task"></a>XDCMake — Zadanie
-Zawijania narzędzie dokumentacji XML (xdcmake.exe), które scala pliki dokumentacji XML (.xdc) w pliku XML.  
+Opakowuje narzędzie dokumentacji XML (*xdcmake.exe*), który scala komentarza dokumentu XML (*.xdc*) pliki do *.xml* pliku.  
   
- Plik .xdc jest tworzony, podając komentarze do dokumentacji w Visual C++ kod źródłowy i kompilacji za pomocą [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) — opcja kompilatora. Aby uzyskać więcej informacji, zobacz [xdcmake — odwołanie](/cpp/ide/xdcmake-reference), [strony właściwości narzędzia generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages)i opcji Pomoc wiersza polecenia (**/?**) dla xdcmake.exe.  
+ *.Xdc* tworzony jest plik po podaniu komentarzy do dokumentacji w kodzie źródłowym języka Visual C++ i kompilacji za pomocą [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) — opcja kompilatora. Aby uzyskać więcej informacji, zobacz [xdcmake — dokumentacja](/cpp/ide/xdcmake-reference), [strony właściwości narzędzie generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages)i opcji Pomoc w wierszu polecenia (**/?**) dla *xdcmake.exe* .  
   
 ## <a name="remarks"></a>Uwagi  
- Domyślnie narzędzie xdcmake.exe obsługuje kilka opcji wiersza polecenia. Dodatkowe opcje są obsługiwane w przypadku określenia **/starego** opcji wiersza polecenia.  
+ Domyślnie *xdcmake.exe* narzędzie obsługuje kilka opcji wiersza polecenia. Dodatkowe opcje są obsługiwane w przypadku określenia **/stare** opcji wiersza polecenia.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **xdcmake —** zadań.  
+ W poniższej tabeli opisano parametry **XDCMake** zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|Opcjonalne **String []** parametru.<br /><br /> Określa jeden lub więcej plików xdc dodatkowe do scalenia.<br /><br /> Aby uzyskać więcej informacji, zobacz **dodatkowe pliki dokumentów** opis w [strony właściwości narzędzia generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages). Zobacz też **/starego** i **/Fs** xdcmake.exe opcji wiersza polecenia.|  
-|**AdditionalOptions**|Opcjonalne **ciąg** parametru.<br /><br /> Lista opcje określone w wierszu polecenia. Na przykład "*/option1 /option2 /option#*". Ten parametr umożliwia określenie opcji, które nie są reprezentowane przez inne **xdcmake —** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz [xdcmake — odwołanie](/cpp/ide/xdcmake-reference), [strony właściwości narzędzia generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages)i pomoc wiersza polecenia (**/?**) dla xdcmake.exe.|  
-|**DocumentLibraryDependencies**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true` i bieżącego projektu zależności projektu w rozwiązaniu biblioteka statyczna (lib), plików xdc dla tego projektu biblioteki zostaną uwzględnione w danych wyjściowych pliku XML dla bieżącego projektu.<br /><br /> Aby uzyskać więcej informacji, zobacz **zależności biblioteki dokumentów** opis w [strony właściwości narzędzia generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages).|  
-|**OutputFile**|Opcjonalne **ciąg** parametru.<br /><br /> Przesłania domyślną nazwę pliku wyjściowego. Domyślna nazwa pochodzi od Nazwa pierwszego pliku .xdc, która została przetworzona.<br /><br /> Aby uzyskać więcej informacji, zobacz **/out:** `filename` opcji [xdcmake — odwołanie](/cpp/ide/xdcmake-reference). Zobacz też **/starego** i **/Fo** opcje wiersza polecenia dla xdcmake.exe.|  
-|**ProjectName**|Opcjonalne **ciąg** parametru.<br /><br /> Nazwa bieżącego projektu.|  
-|**SlashOld**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, włącza xdcmake.exe dodatkowe opcje.<br /><br /> Aby uzyskać więcej informacji, zobacz **/starego** opcji wiersza polecenia dla xdcmake.exe.|  
-|**Źródeł**|Wymagane `ITaskItem[]` parametru.<br /><br /> Określa tablicę elementów MSBuild pliku źródłowego, które mogą być używane i emitowane przez zadania.|  
-|**SuppressStartupBanner**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości copyright i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji [xdcmake — odwołanie](/cpp/ide/xdcmake-reference).|  
-|**Katalog TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
+|**AdditionalDocumentFile**|Opcjonalnie **String []** parametru.<br /><br /> Określa jedną lub więcej dodatkowych *.xdc* pliki do scalania.<br /><br /> Aby uzyskać więcej informacji, zobacz **dodatkowe pliki dokumentów** opis [strony właściwości narzędzie generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages). Zobacz też **/stare** i **/Fs** opcje wiersza polecenia dla *xdcmake.exe*.|  
+|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista opcji określonych w wierszu polecenia. Na przykład /\<opcja1 > /\<opcja2 > /\<opcja #>. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XDCMake** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz [xdcmake — dokumentacja](/cpp/ide/xdcmake-reference), [strony właściwości narzędzie generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages)i pomoc w wierszu polecenia (**/?**) dla *xdcmake.exe*.|  
+|**DocumentLibraryDependencies**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true` i bieżący projekt zależny od biblioteki statycznej (*.lib*) projektu w rozwiązaniu, *.xdc* pliki w projekcie biblioteki są zawarte w *.xml* pliku danych wyjściowych dla bieżącego projektu.<br /><br /> Aby uzyskać więcej informacji, zobacz **zależności biblioteki dokumentów** opis [strony właściwości narzędzie generowania dokumentów XML](/cpp/ide/xml-document-generator-tool-property-pages).|  
+|**OutputFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Przesłania domyślną nazwę pliku wyjściowego. Domyślną nazwą jest tworzony na podstawie nazwy pierwszego *.xdc* pliku, który jest przetwarzany.<br /><br /> Aby uzyskać więcej informacji, zobacz **/out:\<nazwa pliku >** opcji [xdcmake — dokumentacja](/cpp/ide/xdcmake-reference). Zobacz też **/stare** i **/Fo** opcje wiersza polecenia dla *xdcmake.exe*.|  
+|**ProjectName**|Opcjonalnie **ciąg** parametru.<br /><br /> Nazwa bieżącego projektu.|  
+|**SlashOld**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, umożliwia dodatkowe *xdcmake.exe* opcje.<br /><br /> Aby uzyskać więcej informacji, zobacz **/stare** opcji wiersza polecenia dla *xdcmake.exe*.|  
+|**Źródła**|Wymagane `ITaskItem[]` parametru.<br /><br /> Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.|  
+|**SuppressStartupBanner**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji [xdcmake — dokumentacja](/cpp/ide/xdcmake-reference).|  
+|**Katalog TrackerLogDirectory**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

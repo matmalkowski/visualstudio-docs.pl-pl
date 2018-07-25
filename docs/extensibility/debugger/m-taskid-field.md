@@ -1,5 +1,5 @@
 ---
-title: m_taskId pola | Dokumentacja firmy Microsoft
+title: Pole m_taskId | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51bf2b02079d7b187c50a789910bb0a4d0871b0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b68e1caa0add0c013740c6a0615995a1fa8bc1
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098326"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232367"
 ---
-# <a name="mtaskid-field"></a>m_taskId pola
+# <a name="mtaskid-field"></a>pole m_taskId
 Pole zapasowe dla <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> właściwości.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 .field private int32 m_taskId  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

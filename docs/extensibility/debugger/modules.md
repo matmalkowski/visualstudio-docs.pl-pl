@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f587e015263336436588d14edeeb5c6935872950
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8750c1f6676966be8564fbf4a175a66fa180a401
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098147"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233168"
 ---
 # <a name="modules"></a>Moduły
-Pod względem architektury debugera **modułu**:  
+Pod względem architektury debugera *modułu*:  
   
--   Jest kontenerem fizycznych kodu, na przykład plik wykonywalny lub biblioteka DLL.  
+-   Jest kontenerem fizycznych kodu, takie jak plik wykonywalny lub bibliotekę DLL.  
   
--   Można ponownie załadować jego symbole i opisania siebie. Opisy modułu są wyświetlane w oknie moduły IDE.  
+-   Można ponownie załadować jej symboli i opisania siebie. Moduł opisy są wyświetlane w oknie moduły środowiska IDE.  
   
--   Jest reprezentowana przez [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfejsu tworzony przez aparat debugowania, opisujący modułu.  
+-   Jest reprezentowany przez [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfejsu, utworzonych przez aparat debugowania w celu opisania modułu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

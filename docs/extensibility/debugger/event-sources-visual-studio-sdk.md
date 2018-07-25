@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099841"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232660"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
-Istnieją dwa źródła zdarzeń: aparat debugowania (DE), a sesja debugowania Menedżera (SDM). Zdarzenia wysyłane z URZ ma aparat inną niż NULL, podczas zdarzenia wysyłane z SDM aparat wartości NULL.  
+Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i sesja debugowania Manager (SDM). Zdarzenia wysyłane z URZ mają aparatem inną niż NULL, a zdarzeń wysłanych z SDM aparat o wartości NULL.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład przedstawia sposób wysłania **IDebugProgramCreateEvent2** z DE do SDM.  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  
@@ -75,5 +75,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md)

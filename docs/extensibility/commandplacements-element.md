@@ -1,5 +1,5 @@
 ---
-title: CommandPlacements Element | Dokumentacja firmy Microsoft
+title: CommandPlacements, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cedac197295daed278fb3dce99157b33e4eb8d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbbddf7716b34b8367ac014fa65d8ccfc4413e23
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097497"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230769"
 ---
-# <a name="commandplacements-element"></a>CommandPlacements Element
-CommandPlacements element grupuje elementy CommandPlacement i inne grupy CommandPlacements.  
+# <a name="commandplacements-element"></a>CommandPlacements, element
+CommandPlacements, element grupy elementów CommandPlacement i inne grupy CommandPlacements.  
   
- CommandPlacements element jest opcjonalne. Nie polecenia, grupy lub menu muszą być zawarte w lokalizacji dodatkowej, nie trzeba umieścić w tej sekcji w pliku vsct.  
+ CommandPlacements, element jest opcjonalne. Jeśli nie poleceń, grup lub menu muszą być zawarte w lokalizacji dodatkowej, nie masz do uwzględnienia w tej sekcji w swojej *vsct* pliku.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement>... </CommandPlacement>  
   <CommandPlacement>... </CommandPlacement>  
@@ -44,14 +44,14 @@ CommandPlacements element grupuje elementy CommandPlacement i inne grupy Command
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |CommandPlacements|Grupuje elementy CommandPlacement i inne grupy CommandPlacements.|  
-|[CommandPlacement, element](../extensibility/commandplacement-element.md)|Włącza przyciski, grup i menu do uwzględnienia w więcej niż jedną grupę lub menu.|  
+|[CommandPlacement, element](../extensibility/commandplacement-element.md)|Włącza przyciski, grup i menu, mają zostać uwzględnione w więcej niż jednej grupie lub menu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -61,7 +61,7 @@ CommandPlacements element grupuje elementy CommandPlacement i inne grupy Command
   
 ## <a name="example"></a>Przykład  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
     priority="0x0300">  
@@ -70,6 +70,6 @@ CommandPlacements element grupuje elementy CommandPlacement i inne grupy Command
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [CommandPlacement Element](../extensibility/commandplacement-element.md)   
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [CommandPlacement, element](../extensibility/commandplacement-element.md)   
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

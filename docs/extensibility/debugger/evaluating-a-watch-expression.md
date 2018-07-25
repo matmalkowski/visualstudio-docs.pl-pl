@@ -1,5 +1,5 @@
 ---
-title: Obliczenie wyrażenia czujki | Dokumentacja firmy Microsoft
+title: Ocenianie wyrażenia kontrolnego | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86b94a457934547037f2428e6284f20de1660d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7959dbb29b6248bb56caefef56d2d7786118fcf0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106997"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231369"
 ---
-# <a name="evaluating-a-watch-expression"></a>Obliczenie wyrażenia czujki
+# <a name="evaluate-a-watch-expression"></a>Ocena wyrażenia kontrolnego
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Gdy program Visual Studio jest gotowy do wyświetlenia wartości wyrażenia czujki, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) które z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Spowoduje to utworzenie [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera wartości i typ wyrażenia.  
+ Gdy program Visual Studio jest gotowy wyświetlić wartość wyrażenia czujki, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), który z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Ten proces generuje [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera wartość i typ wyrażenia.  
   
- W tej implementacji `IDebugParsedExpression::EvaluateSync`, wyrażenie jest analizowana i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:  
+ W tej implementacji `IDebugParsedExpression::EvaluateSync`, wyrażenie jest analizowany i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:  
   
-1.  Analizuje i ocenia wyrażenie, tak aby utworzyć obiekt ogólnego, który przechowuje wartości i jej typie. W języku C# jest reprezentowane jako `object` podczas w języku C++ jest reprezentowane jako `VARIANT`.  
+1.  Analizuje i oblicza wyrażenie w celu wygenerowania ogólnego obiekt, który przechowuje wartości i typ. W języku C#, jest reprezentowane jako `object` znajduje się w języku C++, jest reprezentowane jako `VARIANT`.  
   
-2.  Tworzy wystąpienie klasy (nazywane `CValueProperty` w tym przykładzie), który zawiera `IDebugProperty2` interfejsu i są przechowywane w klasie wartość zwracaną.  
+2.  Tworzy klasę (o nazwie `CValueProperty` w tym przykładzie), który zawiera `IDebugProperty2` interfejs i są przechowywane w klasie wartość zwracaną.  
   
-3.  Zwraca `IDebugProperty2` interfejsu z `CValueProperty` obiektu.  
+3.  Zwraca `IDebugProperty2` interfejs z `CValueProperty` obiektu.  
   
-## <a name="managed-code"></a>Zarządzany kod  
- Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda pomocnicza `Tokenize` analizuje wyrażenia na drzewo analizy. Funkcja Pomocnika `EvalToken` konwertuje wartość tokenu. Funkcja Pomocnika `FindTerm` rekursywnie jest przesyłany w drzewie analizy wywoływania `EvalToken` dla każdego węzła reprezentujący wartość i stosowania żadnych operacji (dodawania lub odejmowania) w wyrażeniu.  
+## <a name="managed-code"></a>Kod zarządzany  
+ Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda pomocnika `Tokenize` analizuje wyrażenia w drzewie analizy. Funkcja Pomocnika `EvalToken` konwertuje wartość tokenu. Funkcja Pomocnika `FindTerm` rekursywnie przechodzi w drzewie analizy wywoływania `EvalToken` dla każdego węzła reprezentujący wartość i stosując wszystkie operacje (dodawania lub odejmowania) w wyrażeniu.  
   
 ```csharp  
 namespace EEMC  
@@ -83,9 +83,9 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Niezarządzany kod  
- Jest to implementacja `IDebugParsedExpression::EvaluateSync` za pomocą kodu niezarządzanego. Funkcja Pomocnika `Evaluate` analizuje i ocenia wyrażenie zwracające `VARIANT` zawierający wynikowej wartości. Funkcja Pomocnika `VariantValueToProperty` pakiety `VARIANT` do `CValueProperty` obiektu.  
+ Jest to implementacja `IDebugParsedExpression::EvaluateSync` w niezarządzanym kodzie. Funkcja Pomocnika `Evaluate` analizuje i oblicza wyrażenie zwraca `VARIANT` zawierający wartość wynikową. Funkcja Pomocnika `VariantValueToProperty` pakiety `VARIANT` do `CValueProperty` obiektu.  
   
-```  
+```cpp  
 [C++]  
 STDMETHODIMP CParsedExpression::EvaluateSync(   
     in  DWORD                 evalFlags,  
@@ -175,6 +175,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Obliczenie wyrażenia okno czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Ocena wyrażenia okna wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Przykład implementacji oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

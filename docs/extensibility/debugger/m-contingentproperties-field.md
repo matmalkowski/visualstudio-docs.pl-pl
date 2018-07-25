@@ -1,5 +1,5 @@
 ---
-title: m_contingentProperties pola | Dokumentacja firmy Microsoft
+title: Pole m_contingentProperties | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c7635bab0e627a0f1b51000d37f60f861440934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50676f799367c8a2aece7daacb270d8bb31738e9
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097630"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232818"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties pola
+# <a name="mcontingentproperties-field"></a>pole m_contingentProperties
 Przechowuje dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 .field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

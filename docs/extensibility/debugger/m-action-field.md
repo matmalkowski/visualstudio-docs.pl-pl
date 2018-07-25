@@ -1,5 +1,5 @@
 ---
-title: m_action pola | Dokumentacja firmy Microsoft
+title: Pole m_action | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd045c19b08ec5b3ba5db71e72e6380e65093a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed825569809568269726e6ba592118f8b03c80b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109252"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232380"
 ---
-# <a name="maction-field"></a>m_action pola
+# <a name="maction-field"></a>pole m_action
 Delegat, który reprezentuje kod do wykonania w <xref:System.Threading.Tasks.Task> obiektu.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następującej składni podano języka wspólnego pośredniego (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 .field assembly object m_action  
 ```  
   
 ## <a name="remarks"></a>Uwagi  
  Jest to `action` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

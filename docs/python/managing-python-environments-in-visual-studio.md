@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie środowiskami Python i tłumaczy
 description: Użyj okna środowiska Python, aby zarządzać globalnym, wirtualnych i środowisk conda, instalowanie interpreterów języka Python i pakietów i przypisywanie środowisk do projektów programu Visual Studio.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37250959"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232221"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
 
@@ -118,7 +118,7 @@ Jeśli znasz interpreter języka Python jest zainstalowana na komputerze, ale Vi
 >
 > Jednak jeśli ręcznie przenieść tłumacza i lokalne środowisko przy użyciu systemu plików programu Visual Studio nie będzie wiadomo, nowej lokalizacji. Aby uzyskać więcej informacji, zobacz [przenoszenie tłumacza](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="fix-invalid-environments"></a>Napraw nieprawidłowy środowisk
+## <a name="fix-or-delete-invalid-environments"></a>Napraw lub Usuń nieprawidłowe środowisk
 
 Jeśli program Visual Studio znajdzie wpisy rejestru dla środowiska, ale ścieżka do interpretera jest nieprawidłowa, okno środowiska Python zawiera nazwę przy użyciu czcionki przekreślenie:
 

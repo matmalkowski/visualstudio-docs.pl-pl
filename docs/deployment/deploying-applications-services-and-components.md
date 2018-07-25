@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080267"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231229"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrażanie, w programie Visual Studio
 
@@ -57,9 +57,9 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md) i [publikowania w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
+    Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
     > Jeśli nie masz już konto platformy Azure, możesz to zrobić [Zarejestruj się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).

@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102733"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233103"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion — metoda
-Metoda symbolu zastępczego używany jako obiekt docelowy punkt przerwania przez debuger. Ta metoda nie może być wbudowane lub zoptymalizowane.  
+# <a name="notifydebuggerofwaitcompletion-method"></a>Metoda NotifyDebuggerOfWaitCompletion
+Metoda symbolu zastępczego używany jako obiekt docelowy punkt przerwania przez debuger. Ta metoda nie może być śródwierszowa lub zoptymalizowane.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,9 +34,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Wszystkich operacji łączenia z zadaniem powinny wywoływać tej metody, jeśli ustawiono bit powiadomienia ich debugera.  
+ Wszystkie operacje łączenia z zadaniem powinna wywołać tę metodę, jeśli ustawiono bit powiadomienia ich debugera.  
   
 ## <a name="requirements"></a>Wymagania  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

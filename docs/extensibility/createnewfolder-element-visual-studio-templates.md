@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0897a5fdd160abf42e28ba6f36755822172fa743
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77a67f69db12f5b651be45380e46e437ecc8bf3c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108365"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232683"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder — Element (szablony Visual Studio)
-Określa, czy należy sprawdzić, czy katalog docelowy, na którym ma być utworzony projekt nie istnieje. Jeśli katalog istnieje, można utworzyć nowego katalogu projektu. To ustawienie jest zazwyczaj zastępowany przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) czy wszystkie popularne typy projektu umożliwia określenie, czy należy utworzyć nowy projekt w nowym katalogu.  
+# <a name="createnewfolder-element-visual-studio-templates"></a>Createnewfolder — element (szablony Visual Studio)
+Określa, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utworzony projekt nie istnieje. Jeśli katalog istnieje, można utworzyć katalogu świeże dla projektu. To ustawienie jest zazwyczaj zastępowany przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), wszystkie popularne typy projektu umożliwia określenie, czy chcesz utworzyć nowy projekt w nowym katalogu.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -53,20 +53,20 @@ Określa, czy należy sprawdzić, czy katalog docelowy, na którym ma być utwor
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazujące, czy nowy folder kontenera powinien zostać utworzony podczas projektu jest tworzona na podstawie szablonu.  
+ Tekst musi być albo `true` lub `false`oznaczający Określa, czy nowy folder kontenera powinien zostać utworzony podczas tworzenia projektu z szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- `CreateNewFolder` to opcjonalny element. Wartość domyślna to `true`.  
+ `CreateNewFolder` element jest opcjonalny. Wartość domyślna to `true`.  
   
- Wartość określona w `CreateNewFolder` element jest tylko honorowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Jeśli projekt źródłowy system obsługuje tę funkcję.  
+ Wartość określona w `CreateNewFolder` element jest tylko uznawane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Jeśli podstawowy system projektu obsługuje tę funkcję.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu określa nie można utworzyć nowego folderu, gdy projekt jest tworzony na podstawie szablonu.  
+ Poniższy przykład kodu określa nie można utworzyć nowego folderu w przypadku, gdy projekt jest tworzony na podstawie tego szablonu.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -93,6 +93,6 @@ Określa, czy należy sprawdzić, czy katalog docelowy, na którym ma być utwor
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

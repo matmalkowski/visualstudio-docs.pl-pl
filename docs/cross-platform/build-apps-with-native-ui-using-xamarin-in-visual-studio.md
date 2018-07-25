@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Tworzenie aplikacji z natywnym interfejsem użytkownika przy użyciu platformy Xamarin w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/30/2018
 ms.technology: vs-ide-mobile
@@ -10,109 +10,109 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757256"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232393"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 
-Większość deweloperzy, którzy wybierz do pisania aplikacji dla urządzeń przenośnych i platform Xamarin i C# za pomocą platformy Xamarin.Forms. Platformy Xamarin.Forms definiuje interfejs użytkownika, który jest mapowany na kontrolki natywne w systemie iOS, Android i platformy uniwersalnej systemu Windows (UWP). Platformy Xamarin.Forms jest opisana w artykule [Dowiedz się podstawowe informacje dotyczące tworzenia aplikacji z platformy Xamarin.Forms w programie Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
+Większość programistów, którzy zdecydowali środowiska Xamarin i C# do tworzenia aplikacji mobilnych dla wielu platform przy użyciu formularzy Xamarin.Forms. Zestaw narzędzi Xamarin.Forms definiuje interfejs użytkownika, który jest mapowany do kontrolki natywne w systemie iOS, Android i uniwersalnej platformy Windows (UWP). Zestaw narzędzi Xamarin.Forms jest opisany w artykule [opanowaniu podstaw tworzenia aplikacji przy użyciu zestawu narzędzi Xamarin.Forms w programie Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
 
-W tym artykule opisano różne podejścia, która obejmuje dostęp do interfejsów API natywnego interfejsu użytkownika dla każdej z platform. Praca z macierzystych interfejsów API jest znacznie trudniejsze podejścia, niż platformy Xamarin.Forms, ponieważ wymaga ona doskonałej znajomości każdej platformy. Zaletą jest to, że podczas udostępniania nadal podstawowej logiki biznesowej, można dostosować interfejsu użytkownika do konkretnej mocnych i możliwości poszczególnych platform.
+W tym artykule opisano różne podejście, która obejmuje dostęp do interfejsów API natywnego interfejsu użytkownika dla każdej platformy. Praca z natywnych interfejsów API jest dużo trudniejsze podejścia, niż zestawu narzędzi Xamarin.Forms, ponieważ wymaga obszerną wiedzę na temat każdej z platform. Zaletą jest to, czy można dostosować interfejs użytkownika do szczególne zalety i możliwości każdej z tych platform nadal współużytkując podstawowej logiki biznesowej.
 
-Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) i [Sprawdź środowisku Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym przewodniku przedstawiono sposób tworzenia Podstawowa aplikacja Xamarin z macierzystego warstwy interfejsu użytkownika. Udostępniony kod znajduje się w bibliotece .NET Standard natywnego interfejsu użytkownika, i projekty poszczególnych platform zawierają definicje interfejsu użytkownika. W tym miejscu to aplikacja, która będzie kompilacji systemem (od lewej do prawej) z systemem iOS i telefony z systemem Android i Windows 10 desktop.
+Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-install.md) i [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym instruktażu dowiesz się, jak utworzyć podstawową aplikację Xamarin z natywnych warstwy interfejsu użytkownika. Z natywnym interfejsem użytkownika udostępnionego kodu znajduje się w bibliotece programu .NET Standard i projekty poszczególnych platform zawierają definicje interfejsu użytkownika. Poniżej przedstawiono aplikację, którą utworzysz systemem (od lewej do prawej) dla systemu iOS i telefony z systemem Android i Windows 10 desktop.
 
 ![Aplikacja Xamarin w systemach iOS, Android i Windows](../cross-platform/media/cross-plat-xamarin-build-1-Large.png#lightbox)
 
-Należy wykonać te czynności, aby go skompilować:
+Wykonasz te czynności na tworzenie:
 
-- [Konfigurowanie rozwiązania](#solution)
+- [Konfigurowanie rozwiązania programu](#solution)
 
-- [Pisanie kodu usługi udostępnionych danych](#dataservice)
+- [Pisanie kodu usług udostępnionych danych](#dataservice)
 
 - [Projektowanie interfejsu użytkownika dla systemu Android](#Android)
 
-- [Projektowanie interfejsu użytkownika dla systemu Windows](#Windows)
+- [Projektowanie interfejsu użytkownika dla Windows](#Windows)
 
 - [Następne kroki](#next), który obejmuje projektowanie interfejsu użytkownika dla systemu iOS
 
 > [!TIP]
-> Dla tego projektu w można znaleźć kodu źródłowego pełną [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Możesz znaleźć pełnego kodu źródłowego dla tego projektu w [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
-> Jeśli masz problemy lub wystąpiły błędy, Opublikuj pytania na [forums.xamarin.com](http://forums.xamarin.com). Wiele błędów można rozwiązać, aktualizując do SDK najnowsze wymagane przez program Xamarin, które są opisane w [informacje o wersji programu Xamarin](https://developer.xamarin.com/releases/) dla każdej platformy.
+> Jeśli masz trudności lub występują błędy, Opublikuj pytania na [forums.xamarin.com](http://forums.xamarin.com). Wiele błędów, które można rozwiązać, aktualizując do najnowsze zestawy SDK wymagane przez środowisko Xamarin, które są opisane w [informacje o wersji platformy Xamarin](https://developer.xamarin.com/releases/) dla każdej platformy.
 
 > [!NOTE]
-> Dokumentacja dla deweloperów w programie Xamarin oferuje kilka wskazówki szybkiego startu jak również nowości sekcje wymienione poniżej. Na tych stronach upewnij się, czy wybrano "Visual Studio", aby wyświetlić wskazówki specyficzne dla programu Visual Studio.
+> Dokumentacja dla deweloperów platformy Xamarin oferuje również kilka przewodników z sekcjami Szybki Start i szczegółowe informacje wymienione poniżej. Na tych stronach upewnij się, że wybrano "Visual Studio", aby wyświetlić wskazówki specyficzne dla programu Visual Studio.
 >
->  -   Xamarin aplikacji za pomocą natywnego interfejsu użytkownika:
->     -   [Witaj, Android](/xamarin/android/get-started/hello-android/) (prosta aplikacja z jednym ekranie)
->     -   [Witaj, Android Wieloekranowy](/xamarin/android/get-started/hello-android-multiscreen/) (aplikacja z nawigacją między ekranami)
->     -   [Android wskazówki fragmenty](/xamarin/android/platform/fragments/implementing-with-fragments/) (używanych do ekranów wzorzec/szczegół, między innymi)
+>  -   Aplikacje platformy Xamarin z natywnym interfejsem użytkownika:
+>     -   [Witaj, Android](/xamarin/android/get-started/hello-android/) (prosta aplikacja z jednym ekranem)
+>     -   [Witaj, Android (wiele ekranów)](/xamarin/android/get-started/hello-android-multiscreen/) (aplikacja z nawigacją między ekranami)
+>     -   [Dla systemu android przewodnik fragmenty](/xamarin/android/platform/fragments/implementing-with-fragments/) (używane dla rekordu głównego/szczegółów ekranów, między innymi)
 >     -   [Witaj, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Witaj, iOS Multiscreen (wiele ekranów)](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
->  -   Z platformy Xamarin.Forms (udostępnionego UI) przy użyciu aplikacji Xamarin
+>  -   Aplikacje Xamarin przy użyciu zestawu narzędzi Xamarin.Forms (współdzielony interfejs użytkownika)
 >     -   [Witaj, Xamarin.Forms](/xamarin/xamarin-forms/get-started/hello-xamarin-forms/quickstart/)
 >     -   [Witaj, Xamarin.Forms (wiele ekranów)](/xamarin/xamarin-forms/get-started/hello-xamarin-forms-multiscreen/)
 
 <a name="solution" />
 
-##  <a name="set-up-your-solution"></a>Konfigurowanie rozwiązania
+##  <a name="set-up-your-solution"></a>Konfigurowanie rozwiązania programu
 
-Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikacji interfejsu użytkownika platformy .NET Standard biblioteki udostępnionej. Jednak nie jest trudne do rozwiązania w poszczególnych projektach kompilacji. Te kroki tworzenia rozwiązania Xamarin z projektów dla każdego typu platforma aplikacji i .NET Standard biblioteki udostępnionej kodu.
+Program Visual Studio nie ma szablonu rozwiązania do tworzenia natywnych aplikacji interfejsu użytkownika, udostępnianie biblioteki .NET Standard. Jednak nie jest trudne do kompilowania rozwiązania z indywidualnymi projektami. Te kroki służą utworzeniu rozwiązania Xamarin z projektami dla każdego typu aplikacji platformy i biblioteki .NET Standard dla udostępnionego kodu.
 
-1.  W programie Visual Studio Utwórz nową **biblioteki klas (.NET Standard)** rozwiązania i nadaj mu nazwę **WeatherApp**. Tego szablonu można znaleźć najłatwiej wybierając **Visual C#** po lewej stronie, a następnie **.NET Standard**:
+1.  W programie Visual Studio Utwórz nowy **biblioteki klas (.NET Standard)** rozwiązania i nadaj mu nazwę **WeatherApp**. Można znaleźć ten szablon najłatwiej, wybierając **Visual C#** po lewej stronie i następnie **.NET Standard**:
 
-    ![Tworzenie rozwiązania .NET Standard](../cross-platform/media/cross-plat-xamarin-build-2.png)
+    ![Tworzenie rozwiązań .NET Standard](../cross-platform/media/cross-plat-xamarin-build-2.png)
 
-    Po kliknięciu przycisku OK, **WeatherApp** rozwiązania składa się z jednego projektu o nazwie **WeatherApp**.
+    Po kliknięciu przycisku OK, **WeatherApp** rozwiązanie składa się z pojedynczego projektu o nazwie **WeatherApp**.
 
-2.  Jeśli chcesz docelowy z systemem iOS, Dodaj projekt dla systemu iOS do rozwiązania. Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksploratora rozwiązań** i wybierz **Dodaj** i **nowy projekt**.  W **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#**, a następnie **iOS** i **uniwersalnych**. (Jeśli nie jest, może być konieczne Zainstaluj program Xamarin, lub włączyć funkcję Visual Studio 2017, zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md).) Na liście szablonów wybierz **pojedynczego widoku aplikacji (iOS)**. Nadaj mu nazwę **WeatherApp.iOS**.
+2.  Jeśli chcesz docelowy z systemem iOS, należy dodać projektu systemu iOS do rozwiązania. Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksploratora rozwiązań** i wybierz **Dodaj** i **nowy projekt**.  W **nowy projekt** okno dialogowe, w polu po lewej stronie wybierz **Visual C#**, a następnie **iOS** i **Universal**. (Jeśli tak nie jest dostępne, może być konieczne instalacji Xamarin lub włączyć funkcję Visual Studio 2017, zobacz [Instalator i instalacja](../cross-platform/setup-and-install.md).) Na liście szablonów wybierz **aplikacja pojedynczego widoku (iOS)**. Nadaj mu nazwę **WeatherApp.iOS**.
 
-3.  Jeśli chcesz przeanalizować systemu Android, Dodaj projekt systemu Android do rozwiązania. W **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#** i **Android**. Na liście szablonów wybierz **pusta aplikacja (Android)**. Nadaj mu nazwę **WeatherApp.Android**.
+3.  Jeśli ma pod kątem systemów Android, należy dodać projekt systemu Android w rozwiązaniu. W **nowy projekt** okno dialogowe, w polu po lewej stronie wybierz **Visual C#** i **Android**. Na liście szablonów wybierz **pusta aplikacja (Android)**. Nadaj mu nazwę **WeatherApp.Android**.
 
-4. Jeśli chcesz przeanalizować platformy uniwersalnej systemu Windows, w **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#** i **uniwersalnych systemu Windows**. Na liście szablonów wybierz **pusta aplikacja (uniwersalna systemu Windows)** i nadaj mu nazwę **WeatherApp.UWP**.
+4. Jeśli chcesz przeanalizować platformie Universal Windows w **nowy projekt** okno dialogowe, w polu po lewej stronie wybierz **Visual C#** i **Windows Universal**. Na liście szablonów wybierz **pusta aplikacja (Windows Universal)** i nadaj mu nazwę **WeatherApp.UWP**.
 
-5. Dla każdej aplikacji projektów (z systemem iOS, Android i platformy uniwersalnej systemu Windows), kliknij prawym przyciskiem myszy **odwołania** sekcji **Eksploratora rozwiązań** i wybierz **Dodaj odwołanie**. W **Menedżera odwołań** okna dialogowego, w oknie po lewej stronie wybierz **projektu** i **rozwiązania**. Zobaczysz listę wszystkich projektów w rozwiązaniu z wyjątkiem odwołania, których zarządzasz projektu:
+5. Dla każdej aplikacji projektów (iOS, Android i platformy uniwersalnej systemu Windows), kliknij prawym przyciskiem myszy **odwołania** sekcji **Eksploratora rozwiązań** i wybierz **Dodaj odwołanie**. W **Menadżer odwołań** okno dialogowe, w polu po lewej stronie wybierz **projektu** i **rozwiązania**. Zobaczysz listę wszystkich projektów w rozwiązaniu, z wyjątkiem projektu odwołania, którego zarządzasz:
 
-   ![Ustawianie odwołania do projektu .NET Standard](../cross-platform/media/cross-plat-xamarin-build-3.png)
+   ![Ustawianie odwołań do projektu .NET Standard](../cross-platform/media/cross-plat-xamarin-build-3.png)
 
    Zaznacz pole wyboru obok pozycji **WeatherApp**.
 
-   Po sprawdzeniu to pole dla poszczególnych projektów aplikacji, wszystkie projekty zawierają odwołania do biblioteki standardowej .NET i mogą udostępniać kodu w tej bibliotece.
+   Po sprawdzeniu tego pola dla każdego z projektów aplikacji, wszystkie projekty zawierają odwołania do biblioteki .NET Standard i mogą współużytkować kod w tej bibliotece.
 
-6. Dodaj **Newtonsoft.Json** pakiet NuGet do projektu .NET Standard, który zostanie użyty do przetwarzania informacji z usługi danych pogody:
+6. Dodaj **Newtonsoft.Json** pakiet NuGet do projektu .NET Standard, który zostanie użyty do przetwarzania informacji pobrane z usługi danych o pogodzie:
 
     -   Kliknij prawym przyciskiem myszy **WeatherApp** projektu w **Eksploratora rozwiązań** i wybierz **Zarządzaj pakietami NuGet...** .
 
-         W oknie NuGet wybierz **Przeglądaj** karcie i wyszukaj **Newtonsoft**.
+         W oknie NuGet wybierz **Przeglądaj** kartę i wyszukaj **Newtonsoft**.
 
     -   Wybierz **Newtonsoft.Json**.
 
-    -   Upewnij się, **wersji** pole jest ustawione na **najnowsze stabilny** wersji.
+    -   Upewnij się, **wersji** pole jest ustawione na **najnowszy stabilny** wersji.
 
     -   Kliknij przycisk **zainstalować**.
 
-7.  Powtórz kroki od 6 do znajdować i instalować **Microsoft.CSharp** pakiet w projekcie .NET Standard. Ta biblioteka jest koniecznych do używania języka C# `dynamic` typu danych przechowywanych w bibliotece .NET Standard.
+7.  Powtórz krok 6, aby znaleźć i zainstalować **Microsoft.CSharp** pakiet w projekcie .NET Standard. Ta biblioteka jest niezbędne do korzystania z języka C# `dynamic` danych wpisz biblioteki .NET Standard.
 
-8.  Skompiluj rozwiązanie i sprawdź, czy nie ma żadnych błędów kompilacji.
+8.  Skompiluj rozwiązanie i upewnij się, że żadne błędy kompilacji.
 
 <a name="dataservice" />
 
-## <a name="write-shared-data-service-code"></a>Pisanie kodu usługi udostępnionych danych
+## <a name="write-shared-data-service-code"></a>Pisanie kodu usług udostępnionych danych
 
- **WeatherApp** projekt jest biblioteką .NET Standard. Ten projekt jest, gdzie będzie pisania kodu, który jest udostępniany na wszystkich platformach. Ponieważ każdy projekt aplikacji ma odwołanie do biblioteki .NET Standard, biblioteka jest dołączony do systemu iOS, Android i platformy uniwersalnej systemu Windows pakietów aplikacji.
+ **WeatherApp** projekt jest biblioteki .NET Standard. Ten projekt jest, gdzie Ty napiszesz kod, który jest udostępniany na wszystkich platformach. Ponieważ każdy projekt aplikacji ma odwołanie do biblioteki .NET Standard, biblioteka jest dołączony do systemów iOS, Android i platformy uniwersalnej systemu Windows pakietów aplikacji.
 
- Poniższe kroki Dodaj kod do biblioteki .NET Standard dostęp do przechowywania danych pochodzących z tej usługi pogody:
+ Poniższe kroki Dodaj kod do biblioteki .NET Standard do przechowywania danych z tej usługi pogody i dostęp do:
 
-1.  Najpierw Załóż bezpłatne pogody klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid). Ten klucz interfejsu API umożliwi aplikacji do uzyskiwania pogody dla dowolnego kodu pocztowego Stanów Zjednoczonych. (Go nie działa w przypadku kodów pocztowych poza Stanami Zjednoczonymi.)
+1.  Najpierw Załóż bezpłatne pogody klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid). Ten klucz interfejsu API umożliwi aplikacji, aby uzyskać dane pogody dla dowolnego kodu pocztowego w Stanach Zjednoczonych. (Działa dla kodów pocztowych poza Stanami Zjednoczonymi.)
 
-2.  Kliknij prawym przyciskiem myszy **WeatherApp** projekt i wybierz **Dodaj > klasy...** . W **Dodaj nowy element** okna dialogowego, nazwa pliku **Weather.cs**. Ta klasa będzie używane do przechowywania danych z usługi data pogody.
+2.  Kliknij prawym przyciskiem myszy **WeatherApp** projektu, a następnie wybierz **Dodaj > klasa...** . W **Dodaj nowy element** okno dialogowe, nazwij plik *Weather.cs*. Ta klasa będzie używane do przechowywania danych z usługi danych o pogodzie.
 
-3.  Zastąp całą zawartość **Weather.cs** następującym kodem:
+3.  Zastąp całą zawartość *Weather.cs* następującym kodem:
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     }
     ```
 
-4.  Dodaj kolejną klasę do .NET Standard projektu o nazwie **DataService.cs**. Użyjesz tej klasy do przetwarzania danych JSON usługi pogody danych.
+4.  Dodaj klasę do projektu .NET Standard, o nazwie `DataService.cs`. Użyjesz tej klasy do przetwarzania danych JSON z usługi danych o pogodzie.
 
-5.  Zastąp całą zawartość **DataService.cs** następującym kodem:
+5.  Zastąp całą zawartość *DataService.cs* następującym kodem:
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     }
     ```
 
-6.  Dodaj klasę innych do biblioteki .NET Standard o nazwie **Core.cs**. Klasa będzie używana do tworzą ciąg zapytania z kodem pocztowym, wywołania tej usługi danych pogody i wypełniania wystąpienia **pogody** klasy.
+6.  Dodaj klasę innych do biblioteki .NET Standard, o nazwie *Core.cs*. Klasa będzie używana do formę ciągu zapytania za pomocą kod pocztowy, wywołania usługi danych o pogodzie i wypełniania wystąpienia **pogody** klasy.
 
-7.  Zastąp zawartość **Core.cs** następującym kodem:
+7.  Zastąp zawartość *Core.cs* następującym kodem:
 
     ```csharp
     using System;
@@ -215,52 +215,52 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     }
     ```
 
-8. Zamień na pierwsze wystąpienie *tutaj klucz interfejsu API YOUR* przy użyciu klucza interfejsu API uzyskane w kroku 1. Nadal wymaga cudzysłowów wokół niego!
+8. Zamień na pierwsze wystąpienie *tutaj klucz interfejsu API usługi* przy użyciu klucza interfejsu API, uzyskane w kroku 1. Nadal wymaga ją w cudzysłowie!
 
-9. Usuń **MyClass.cs** w bibliotece programu .NET Standard, ponieważ nie będzie używany.
+9. Usuń *MyClass.cs* biblioteki .NET Standard, ponieważ nie będą używane.
 
-10. Tworzenie **WeatherApp** projektu, aby się upewnić, że kod jest poprawny.
+10. Tworzenie **WeatherApp** projekt, aby upewnić się, czy kod jest poprawny.
 
 <a name="Android" />
 
 ## <a name="design-ui-for-android"></a>Projektowanie interfejsu użytkownika dla systemu Android
 
- Teraz można zaprojektować interfejsu użytkownika, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.
+ Teraz możesz projektować interfejs użytkownika, połącz go ze współużytkowanym kodem, a następnie uruchom aplikację.
 
-### <a name="design-the-look-and-feel-of-your-app"></a>Projekt wyglądu i działania aplikacji
+### <a name="design-the-look-and-feel-of-your-app"></a>Projektowanie wyglądu i działania aplikacji
 
-1.  W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid > Zasoby > układu** folderu i Otwórz **Main.axml**. To polecenie powoduje otwarcie pliku w Projektancie visual. (Jeśli zostanie wyświetlony błąd związany z języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
-
-    > [!TIP]
-    >  Istnieje wiele plików w projekcie. Eksploracja ich jest poza zakres tego artykułu, ale jeśli chcesz przejść do struktury projektu dla systemu Android nieco więcej, zobacz [część 2 nowości](/xamarin/android/get-started/hello-android/hello-android-deepdive/) Hello Android artykułu.
-
-2.  Otwórz przybornika **Widok > innych okien > przybornika**.
-
-3.  Z **przybornika**, przeciągnij **RelativeLayout** formantu do projektanta. Ten formant będzie używany jako kontenera nadrzędnego dla innych formantów.
+1.  W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid > Zasoby > układ** folder i Otwórz *Main.axml*. To polecenie otwiera plik w Projektancie visual. (Jeśli pojawi się błąd, który języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    >  Jeśli w dowolnym momencie układ nie powiodła się ją poprawnie wyświetlić, Zapisz plik i przełączanie między **projekt** i **źródła** karty, aby odświeżyć.
+    >  Istnieją inne pliki w projekcie. Eksplorowanie ich jest poza zakres tego artykułu, ale jeśli chcesz od razu do struktury projektu dla systemu Android nieco więcej, zobacz [szczegółowe dane w części 2](/xamarin/android/get-started/hello-android/hello-android-deepdive/) artykułu Hello systemu Android.
 
-4.  W **właściwości** ustaw **tła** właściwości (w grupie styl) `#545454`.  Upewnij się, że w pozycji w **właściwości** oknie, w którym jest instalowana w tle **RelativeLayout**.
+2.  Otwórz przybornika **Widok > inne Windows > przybornika**.
 
-5.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** formantu.
+3.  Z **przybornika**, przeciągnij **RelativeLayout** formant do projektanta. Użyjesz tego formantu jako kontenera nadrzędnego dla innych kontrolek.
 
-6.  W **właściwości** okna, ustaw te właściwości. (Ułatwia Aby posortować listę alfabetycznie za pomocą przycisku sortowania w pasku narzędzi okna właściwości.):
+    > [!TIP]
+    >  Jeśli w dowolnym momencie układ wydają się do poprawnego wyświetlania, Zapisz plik i przełączania się między **projektowania** i **źródła** kart, aby odświeżyć.
+
+4.  W **właściwości** oknie **tła** właściwości (w grupie Style) `#545454`.  Upewnij się, w pozycji w **właściwości** ustawiasz tło okna **RelativeLayout**.
+
+5.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli.
+
+6.  W **właściwości** okna ustawiania tych właściwości. (Może to pomóc Aby sortować listę alfabetycznie przy użyciu przycisku Sortuj na pasku narzędzi w oknie właściwości.):
 
     |Właściwość|Wartość|
     |--------------|-----------|
-    |**tekst**|**Wyszukiwanie według kod pocztowy**|
+    |**Tekst**|**Wyszukaj według kod pocztowy**|
     |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginStart**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  Należy zauważyć, że wiele właściwości nie mogą zawierać rozwijalna lista wartości, które można wybrać.  Może być trudne do odgadnięcia, jakie wartości ciągu do użycia dla dowolnego danej właściwości. Masz sugestie, spróbuj wyszukiwania dla nazwy właściwości w [R.attr](http://developer.android.com/reference/android/R.attr.html) klasy strony.
+    >  Należy zauważyć, że wiele właściwości nie zawierają listy rozwijanej wartości, które można wybrać.  Może być trudne do odgadnięcia, jaka wartość ciągu dla dowolnej podanej właściwości. Masz sugestie, spróbuj wyszukać nazwę właściwości w [ `R.attr` ](http://developer.android.com/reference/android/R.attr.html) klasy strony.
     >
-    >  Ponadto wyszukiwania w szybkiej sieci web często prowadzi do strony [ http://stackoverflow.com/ ](http://stackoverflow.com/) gdzie inne używane tej samej właściwości.
+    >  Ponadto wyszukiwania w sieci web szybkiego często prowadzi do strony [ http://stackoverflow.com/ ](http://stackoverflow.com/) inne osoby mają użycia tej samej właściwości.
 
-     Odwołania, po przejściu do **źródła** widoku, powinien zostać wyświetlony następujący kod dla tego elementu:
+     Odwołanie, jeśli zaczniesz **źródła** widoku, powinien zostać wyświetlony następujący kod dla tego elementu:
 
     ```xml
     <TextView
@@ -274,19 +274,19 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
 
     ```
 
-7.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść je poniżej ZipCodeSearchLabel formantu. Usuwanie nowego formantu w odpowiednich krawędzi istniejącego formantu. Pomaga powiększenie w Projektancie nieco położenie formantu.
+7.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść ją poniżej kontrolki ZipCodeSearchLabel. Upuść nowej kontrolki na odpowiednią krawędzią istniejącej kontrolki. Pomaga ono powiększenia w Projektancie nieco na położenie formantu.
 
-8. W **właściwości** okna, ustaw te właściwości:
+8. W **właściwości** okna ustawiania tych właściwości:
 
     |Właściwość|Wartość|
     |--------------|-----------|
-    |**tekst**|**Kod pocztowy**|
+    |**Tekst**|**Kod pocztowy**|
     |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginStart**|`10dp`|
     |**layout_marginTop**|`6dp`|
     |**textColor**|`@android:color/white`|
 
-    Oto, jak kod w **źródła** widok powinien wyglądać:
+    Oto jak kod w **źródła** widok powinien wyglądać:
 
     ```xml
     <TextView
@@ -310,7 +310,7 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     |**width**|`165dp`|
     |**textColor**|`@android:color/white`|
 
-    **Numer** formant jest wpisuje użytkownika w 5 cyfrowy kod pocztowy w Stanach Zjednoczonych. Oto kod znaczników, który odpowiada tej kontrolki:
+    **Numer** formant jest wpisuje użytkownika w 5 cyfrowy kod pocztowy w Stanach Zjednoczonych. Poniżej przedstawiono kod znaczników, który odnosi się do tej kontrolki:
 
     ```xml
     <EditText
@@ -325,12 +325,12 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
         android:textColor="@android:color/white" />
     ```
 
-10. Z **przybornika**, przeciągnij **przycisk** na **RelativeLayout** kontroli i umieść je z prawej strony zipCodeEntry formantu. Następnie ustaw te właściwości:
+10. Z **przybornika**, przeciągnij **przycisk** na **RelativeLayout** kontroli i umieść ją po prawej stronie formantu zipCodeEntry. Następnie ustaw następujące właściwości:
 
     |Właściwość|Wartość|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
-    |**tekst**|**Pobierz pogody**|
+    |**Tekst**|**Pobierz pogodę**|
     |**layout_marginStart**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -347,7 +347,7 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
         android:width="165dp" />
     ```
 
-11. Teraz wiesz, aby utworzyć podstawowy interfejs użytkownika przy użyciu projektanta dla systemu Android. Interfejs użytkownika można także utworzyć przez dodanie znaczników bezpośrednio do pliku Main.axml strony. Pozostała część interfejsu użytkownika, który, przejdź do widoku źródłowego w Projektancie kompilacji, a następnie wklej następujący kod znaczników *pod* `</RelativeLayout>` tagu końcowego. (Ponieważ są to następujące elementy muszą być poniżej tagu *nie* zawartych w `RelativeLayout`.)
+11. Teraz wiedzieć wystarczająco dużo, aby utworzyć podstawowy interfejs użytkownika przy użyciu narzędzia Android designer. Możesz również tworzyć interfejsu użytkownika, dodając bezpośrednio do znaczników *Main.axml* pliku strony. Tworzenie pozostałą część interfejsu użytkownika, który, przejdź do widoku źródła w projektancie, a następnie wklej następujący kod znaczników *pod* `</RelativeLayout>` tagu końcowego. (Muszą one być poniżej tagu, ponieważ te elementy są *nie* zawarte w `RelativeLayout`.)
 
     ```xml
     <TextView
@@ -451,13 +451,13 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
         android:layout_marginStart="20dp" />
     ```
 
-12. Zapisz plik i przejdź do **projekt** widoku. Twój interfejs użytkownika powinna wyglądać następująco:
+12. Zapisz plik i przejdź do **projektowania** widoku. Interfejs użytkownika powinien wyglądać w następujący sposób:
 
      ![Interfejs użytkownika dla aplikacji systemu Android](../cross-platform/media/xamarin_androidui.png)
 
-13. Otwórz **MainActivity.cs**. Oto, jak powinna wyglądać kodu:
+13. Otwórz **MainActivity.cs**. Oto jak powinien wyglądać kod:
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     }
     ```
 
-14. Tworzenie projektu dla systemu Android, aby sprawdzić swoją pracę. Proces kompilacji dodaje sterowanie identyfikatorów do **Resource.Designer.cs** plików, dzięki czemu mogą odwoływać się do formantów według nazwy w kodzie.
+14. Skompiluj projekt dla systemu Android, aby sprawdzić swoją pracę. Proces kompilacji dodaje formant identyfikatorów do *Resource.Designer.cs* plików mogą odwoływać się do formantów według nazwy w kodzie.
 
-### <a name="consume-your-shared-code"></a>Korzystać z udostępnionego kodu
+### <a name="consume-your-shared-code"></a>Korzystanie ze współużytkowanym kodem
 
-1.  Otwórz **MainActivity.cs** pliku **WeatherApp** projektu w edytorze kodu i zastąp jego zawartość przy użyciu poniższego kodu. Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionego. Następnie w Interfejsie użytkownika aplikacji, zawiera dane, które są pobierane z tej metody.
+1.  Otwórz *MainActivity.cs* pliku **WeatherApp** projektu w edytorze kodu, a następnie zastąp zawartość tego pliku poniższy kod. Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionych. Następnie w interfejsie użytkownika aplikacji zawiera dane, które są pobierane z tej metody.
 
     ```csharp
     using System;
@@ -517,35 +517,35 @@ Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikac
     }
     ```
 
-    Zwróć uwagę, że działanie została podana motyw światła tła.
+    Należy zauważyć, że działanie nadano motyw jasny tła.
 
-### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i sprawdzić, jak wygląda
+### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i zobaczyć, jak wygląda
 
-1.  W **Eksploratora rozwiązań**, upewnij się, że **WeatherApp.Droid** projekt został ustawiony jako projekt startowy.
+1.  W **Eksploratora rozwiązań**, upewnij się, że **WeatherApp.Droid** projekt jest ustawiony jako projekt startowy.
 
-2.  Wybierz odpowiednie urządzenia lub emulatora docelowego, a następnie uruchomić aplikację, naciskając klawisz F5.
+2.  Wybierz odpowiednie urządzenie lub emulator docelowego, a następnie uruchom aplikację, naciskając klawisz F5.
 
     > [!NOTE]
-    > Jeśli program Visual Studio wskazuje, że projekt systemu Android nie można odnaleźć pliku Newtonsoft.Json, dodać tego pakietu NuGet do projektu systemu Android.
+    > Jeśli program Visual Studio wskazuje, że projekt systemu Android nie można odnaleźć pliku Newtonsoft.Json, Dodaj pakiet NuGet do projektu dla systemu Android.
 
-3.  Na urządzeniu lub w emulatorze, wpisz prawidłowy kod pocztowy 5 cyfrowy Stanów Zjednoczonych w pole edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się w formantach.
+3.  Na urządzeniu lub w emulatorze wpisz poprawny kod pocztowy 5 cyfrowy Stanów Zjednoczonych, w polu edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się w kontrolkach.
 
     [![Aplikacja Xamarin w systemie Android](../cross-platform/media/cross-plat-xamarin-build-1-android.png)](../cross-platform/media/cross-plat-xamarin-build-1-android-Large.png#lightbox)
 
 > [!TIP]
->  Kod źródłowy pełną dla tego projektu jest [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+>  Trwa pełnego kodu źródłowego dla tego projektu [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 <a name="Windows" />
 
-## <a name="design-ui-for-windows"></a>Projektowanie interfejsu użytkownika dla systemu Windows
+## <a name="design-ui-for-windows"></a>Projektowanie interfejsu użytkownika dla Windows
 
-Następnym krokiem jest projektowanie interfejsu użytkownika dla systemu Windows, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.
+Następnym krokiem jest projektowanie interfejsu użytkownika dla Windows, połącz go ze współużytkowanym kodem, a następnie uruchom aplikację.
 
-### <a name="design-the-look-and-feel-of-your-app"></a>Projekt wyglądu i działania aplikacji
+### <a name="design-the-look-and-feel-of-your-app"></a>Projektowanie wyglądu i działania aplikacji
 
- Proces projektowania natywnego interfejsu użytkownika platformy uniwersalnej systemu Windows w aplikacji platformy Xamarin nie różni się od innych natywnych aplikacji platformy uniwersalnej systemu Windows. Z tego powodu Użyj projektanta nie omówione w tym miejscu. Aby uzyskać szczegółowe informacje, zapoznaj się [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+ Proces projektowania natywnego interfejsu użytkownika platformy uniwersalnej systemu Windows w aplikacji platformy Xamarin nie różni się od innych natywnej aplikacji platformy uniwersalnej systemu Windows. Z tego powodu użycia projektanta nie omówiono w tym miejscu. Szczegółowe omówienie dotyczą [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
- Zamiast tego otworzyć **MainPage.xaml** i Zastąp całą zawartość XAML następujący kod:
+ Zamiast tego Otwórz *MainPage.xaml* i Zastąp całą zawartość XAML następującym kodem:
 
 ```xaml
 <Page
@@ -632,9 +632,9 @@ Następnym krokiem jest projektowanie interfejsu użytkownika dla systemu Window
 </Page>
 ```
 
-### <a name="consume-your-shared-code"></a>Korzystać z udostępnionego kodu
+### <a name="consume-your-shared-code"></a>Korzystanie ze współużytkowanym kodem
 
-W **MainPage.xaml.cs** CodeBehind pliku, Dodaj następujący program obsługi zdarzeń dla przycisku:
+W *MainPage.xaml.cs* związanym z kodem plik i dodaj następującą obsługę zdarzeń dla przycisku:
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -655,39 +655,39 @@ private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionego. `GetWeather` jest to metoda tej samej nazwie w aplikacji systemu Android. Ten kod zawiera również dane pobrane z tej metody w formantach interfejsu użytkownika aplikacji.
+Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionych. `GetWeather` jest tej samej metody, która wywołana w aplikacji systemu Android. Ten kod zawiera również dane pobrane z tej metody w kontrolek interfejsu użytkownika aplikacji.
 
-### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i sprawdzić, jak wygląda
+### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i zobaczyć, jak wygląda
 
 1.  W **Eksploratora rozwiązań**ustaw **WeatherApp.UWP** projekt jako projekt startowy.
 
 2.  W **platformy rozwiązania** listy rozwijanej wybierz pozycję **x86** i wybierz **komputera lokalnego** do wdrożenia aplikacji na pulpicie systemu Windows 10.
 
-3.  Uruchom aplikację, naciskając klawisz F5.
+3.  Uruchom aplikację, naciskając klawisz **F5** klucza.
 
-4.  Wpisz prawidłowy Stanów Zjednoczonych 5 cyfrowy kod pocztowy w pole edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się na stronie.
+4.  Wpisz poprawny kod pocztowy Stanów Zjednoczonych 5 cyfrowy w polu edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się na stronie.
 
     [![Aplikacja Xamarin na platformy uniwersalnej systemu Windows](../cross-platform/media/cross-plat-xamarin-build-1-uwp.png)](../cross-platform/media/cross-plat-xamarin-build-1-uwp-Large.png#lightbox)
 
 > [!TIP]
->  Kod źródłowy pełną dla tego projektu jest [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+>  Trwa pełnego kodu źródłowego dla tego projektu [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 <a name="next" />
 
 ## <a name="next-steps"></a>Następne kroki
 
- **Dodawanie interfejsu użytkownika dla systemu iOS do rozwiązania**
+ **Dodawanie interfejsu użytkownika dla systemu iOS w rozwiązaniu**
 
- W tym przykładzie należy rozszerzyć przez dodanie natywnego interfejsu użytkownika dla systemu iOS. Do testowania kodu w systemie iOS, należy nawiązać Mac w sieci lokalnej, która ma Xcode i Xamarin zainstalowane. Po wykonaniu tej czynności, można użyć projektanta iOS bezpośrednio w programie Visual Studio. Zobacz [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) dla ukończonej aplikacji.
+ W tym przykładzie należy rozszerzyć przez dodanie natywnego interfejsu użytkownika dla systemu iOS. Aby przetestować kod w systemie iOS, musisz nawiązać połączenie z komputerem Mac w sieci lokalnej, która ma Xcode i Xamarin zainstalowane. Po wykonaniu tej czynności, można użyć narzędzia iOS designer bezpośrednio w programie Visual Studio. Zobacz [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) dla ukończonej aplikacji.
 
- Należy także zapoznać się [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?tabs=vswin) wskazówki.
+ Również dotyczyć [Witaj, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?tabs=vswin) wskazówki.
 
- **Dodaj kod specyficzne dla platformy w projekcie udostępnionym**
+ **Dodawanie kodu specyficznego dla platformy w projekcie udostępnionym**
 
- Udostępniony kod w bibliotece .NET Standard jest niezależny od platformy. Biblioteki są kompilowane raz i zawarte w każdy pakiet aplikacji dla poszczególnych platform. Jeśli chcesz zapisać udostępniony kod, który używa kompilacji warunkowej do izolowania kodu specyficzne dla platformy, możesz użyć *udostępnionego* projektu. Aby uzyskać więcej informacji, zobacz [opcje udostępniania kodu](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies).
+ Udostępniony kod w biblioteki .NET Standard jest niezależny od platformy. Biblioteki po kompilacji i zawarte w każdy pakiet specyficzne dla platformy aplikacji. Jeśli chcesz napisać kod udostępniony, który używa kompilacji warunkowej do izolowania kodu specyficznego dla platformy, możesz użyć *udostępnionego* projektu. Aby uzyskać więcej informacji, zobacz [opcje udostępniania kodu](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dokumentacja środowiska Xamarin](http://docs.microsoft.com/xamarin)
-- [Centrum deweloperów systemu Windows](https://dev.windows.com/en-us)
-- [Plakat krótkimi opisami SWIFT i C#](http://aka.ms/scposter)
+- [Dokumentacja platformy Xamarin](http://docs.microsoft.com/xamarin)
+- [Centrum deweloperów Windows](https://dev.windows.com/en-us)
+- [Plakat krótki SWIFT i C#](http://aka.ms/scposter)

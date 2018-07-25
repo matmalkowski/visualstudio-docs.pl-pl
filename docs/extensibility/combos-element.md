@@ -1,5 +1,5 @@
 ---
-title: Element kombinacje | Dokumentacja firmy Microsoft
+title: Combos, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 103ce59fe8303f7d044eb7b28ea135f0f449956a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097767"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231206"
 ---
-# <a name="combos-element"></a>Element kombinacje
-Grupy [kombi Element](../extensibility/combo-element.md) elementów.  
+# <a name="combos-element"></a>Combos, element
+Grupy [Combo, element](../extensibility/combo-element.md) elementów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,20 +40,20 @@ Grupy [kombi Element](../extensibility/combo-element.md) elementów.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[Combos, element](../extensibility/combos-element.md)|Grupuje elementy kombi.|  
-|[Combo, element](../extensibility/combo-element.md)|Definiuje polecenia, które są wyświetlane w polu kombi.|  
+|[Combo, element](../extensibility/combo-element.md)|Określa polecenia, które są wyświetlane w polu kombi.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -79,6 +79,6 @@ Grupy [kombi Element](../extensibility/combo-element.md) elementów.
 </Combos>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

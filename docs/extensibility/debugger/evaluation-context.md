@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266fe85bedeea2c7e3dae7726d113d66a4b2b1e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 523ef45d52a81a475eca0e3560243e0eb8357bbd
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101136"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232458"
 ---
 # <a name="evaluation-context"></a>Kontekst oceny
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób wdrażania ewaluatorów wyrażeń jest przestarzały. Aby uzyskać informacje dotyczące wdrożenia ewaluatorów wyrażeń CLR, zobacz [Ewaluatorów wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane próbki ewaluatora wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Gdy aparat debugowania (DE) wywołuje ewaluatora wyrażenia (EE), trzech argumentów przekazanych do [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ustalić kontekst Znajdowanie i ocena symbole, jak pokazano w poniższej tabeli.  
+ Kiedy aparat debugowania (DE) wywołuje Ewaluator wyrażeń (EE), trzech argumentów, są przekazywane do [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) określenia kontekstu do odnajdywania i oceny symbole, jak pokazano w poniższej tabeli.  
   
 ## <a name="arguments"></a>Argumenty  
   
 |Argument|Opis|  
 |--------------|-----------------|  
 |`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) interfejs, który określa obsługi symboli (SH) ma być używany do identyfikowania symbolu.|  
-|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfejsu, który określa bieżącego punktu wykonania. To można znaleźć metody, który zawiera kod wykonywany.|  
-|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interfejsu, który może służyć do znajdowania wartości i typ symbolu podanej nazwy.|  
+|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfejs, który określa bieżący punkt wykonania. Ten interfejs umożliwia znalezienie metodę, która zawiera kod wykonywany.|  
+|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interfejs, który znajduje się wartość i typ symbolu nadać jej nazwę.|  
   
- `IDebugParsedExpression::EvaluateSync` Zwraca [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejs reprezentujący wartość wynikową i jej typie.  
+ `IDebugParsedExpression::EvaluateSync` Zwraca [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejsu reprezentujących wartości wynikowej i jej typu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Wyrażenie klucza ewaluatora interfejsów](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Interfejsy ewaluatora wyrażeń klucza](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)   

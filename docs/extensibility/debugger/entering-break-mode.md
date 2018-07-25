@@ -1,5 +1,5 @@
 ---
-title: Trybu przerwania | Dokumentacja firmy Microsoft
+title: Przejście do trybu Break | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb601ca4cf00ca2cc811f75ec27ad12bc6be32db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098212"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231941"
 ---
-# <a name="entering-break-mode"></a>Wprowadzanie tryb przerwania
-Poniżej opisano proces, który występuje po napotkaniu punktu przerwania po Wkraczanie do funkcji, uruchamiania do wiersza kodu źródłowego, który ma kursor w nim lub do punktu przerwania.  
+# <a name="enter-break-mode"></a>Tryb przerwania
+Poniższe informacje zawierają opis procesu, który występuje w przypadku napotkania punktu przerwania po przechodzenie krok po kroku do funkcji, uruchamianie aż do wiersza kodu źródłowego, który ma kursor w nim lub uruchamianie aż do punktu przerwania.  
   
-## <a name="break-mode-process"></a>Proces tryb przerwania  
+## <a name="break-mode-process"></a>Proces trybu przerwania  
   
-1.  Aparat debugowania (DE) wysyła [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), lub inne zdarzenia zatrzymywania spowodować IDE tryb przerwania.  
+1.  Aparat debugowania (DE) wysyła [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), lub dowolne inne zdarzenie zatrzymywania, aby spowodować, że środowisko IDE, aby przejść do trybu przerwania.  
   
 2.  SDM są pobierane informacje stosu wywołań z wątku, w następujący sposób:  
   
@@ -44,5 +44,5 @@ Poniżej opisano proces, który występuje po napotkaniu punktu przerwania po Wk
   
     -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) można pobrać informacji o pamięci  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: Języki zawarte | Dokumentacja firmy Microsoft
+title: Zawiera języki | Dokumentacja firmy Microsoft
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -12,31 +12,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf2c63a66ba76b65d1caec2c5eed006d57fca0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9edaed1eef81d493bdd29311893caef93447e6f7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109769"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231747"
 ---
 # <a name="contained-languages"></a>Języki zawarte
 
-*Języki zawarte* języków, które są zawarte w innych językach. Na przykład HTML w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] strony mogą zawierać [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] skryptów. Architektura podwójnego języka jest wymagana do zapewnienia funkcji IntelliSense, kolorowania i inne funkcje edycji HTML i język skryptowy edytora plików aspx.
+*Zawiera języki* języków, które znajdują się w innych językach. Na przykład HTML w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] strony mogą zawierać [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] skryptów. Architektura podwójnego język jest wymagany dla *.aspx* redaktora pliku do zapewnienia funkcji IntelliSense, kolorowanie i przeprowadzić edycję funkcji dla kodu HTML i języka skryptów.
 
 ## <a name="implementation"></a>Implementacja
 
-Interfejs najważniejszych, należy wdrożyć zawartych w niej języków jest <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu. Ten interfejs jest wdrażany za pomocą dowolnego języka, która może znajdować się wewnątrz podstawowy język. Go zapewnia dostęp do usługi języka colorizer filtru widoku tekstu i identyfikator języka głównej usługi. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> Umożliwia tworzenie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu. Poniższe kroki pokazują, jak zaimplementować zawartych w niej języka:
+Najważniejsze interfejs, należy wdrożyć dla języków zawartych <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu. Ten interfejs jest implementowany za pomocą dowolnego języka, który może znajdować się wewnątrz podstawowy język. Jej daje dostęp do usługi języka colorizer filtr widoku tekstu i identyfikator podstawowy język usługi. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> Pozwala na tworzenie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu. Poniższe kroki pokazują, jak zaimplementować zawartej języka:
 
-1.  Użyj `QueryService()` uzyskać języka identyfikator usługi i identyfikator interfejsu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
+1.  Użyj `QueryService()` można pobrać języka, identyfikator usługi i identyfikator interfejsu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
 
-2.  Aby utworzyć <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> metody. Przekaż <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu, co najmniej jeden [elementu identyfikatorów](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfejsu.
+2.  Aby utworzyć <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> interfejsu, wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> metody. Przekaż <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu, co najmniej jeden [elementu identyfikatory](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> interfejsu.
 
-3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Interfejs, który jest obiektem koordynatora buforu tekstu, udostępnia podstawowe usługi, które są wymagane do mapowania lokalizacji w podstawowym pliku do buforu dodatkowej języka.
+3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Interfejs, który jest obiektem koordynatora buforu tekstu, oferuje podstawowe usługi, które są wymagane do mapowania lokalizacji w podstawowym pliku do buforu dodatkowej języka.
 
-     Na przykład w pliku .aspx pojedynczy plik podstawowy zawiera ASP, HTML i kod, który jest zawarty. Jednak dodatkowej buforu obejmuje tylko zawartych w niej kod wraz z żadnych definicji klas, aby dodatkowej buforu plik prawidłowy kod. Koordynator buforu obsługuje pracy koordynacji edycji z buforu do drugiego.
+     Na przykład w jednym *.aspx* zawiera plik podstawowy plik ASP, HTML i cały kod, który znajduje się. Jednak dodatkowej buforu obejmuje tylko kod wraz z żadnych definicji klas zapewnienie dodatkowej buforu pliku prawidłowy kod. Koordynator buforu obsługuje pracę koordynowanie zmian z buforu do drugiego.
 
-4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Metodę, która jest podstawowy język, informuje koordynatora buforu tekst w swoim buforze jest mapowany na odpowiedni tekst w buforze dodatkowej.
+4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Koordynator buforu informuje o metodę, która jest podstawowy język, jaki tekst w ramach jego buforu jest mapowany na odpowiedni tekst w buforze dodatkowej.
 
-     Język przekazywany w tablicy <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> struktury, która obecnie zawiera tylko podstawowym i pomocniczym zakres.
+     Język przekazuje tablicę <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> struktury, która obecnie zawiera tylko podstawowy i pomocniczy zakresu.
 
-5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> — Metoda i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> metody podać mapowanie podstawowej do dodatkowej buforu i na odwrót.
+5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Metody i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> metoda dostarcza mapowanie z podstawowej do dodatkowej buforu i na odwrót.

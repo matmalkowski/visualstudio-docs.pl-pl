@@ -10,118 +10,118 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237513"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232335"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 
-Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej niż tylko pisania kodu. Te działania określone jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i obejmują planowania i śledzenia elementów pracy, projektowania i wdrażania kodu, zarządzanie repozytorium kodu źródłowego, uruchomionych kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testów jednostkowych i interfejsu użytkownika), systemem różne rodzaje diagnostyki w środowiskach produkcyjnych i rozwoju i monitorowanie zachowania wydajności i użytkownika aplikacji w czasie rzeczywistym za pomocą telemetrii i analiza.
+Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więcej niż tylko pisania kodu. Działania te, określane jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i należy planowanie i śledzenie pracy, projektowanie i wdrażanie kodu, repozytorium kodu źródłowego, zarządzanie systemem kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testy jednostkowe i testy interfejsu użytkownika), uruchomione różne rodzaje diagnostykę w środowiskach środowisk deweloperskich i produkcyjnych i monitorowania aplikacji wydajności i zachowania użytkowników w czasie rzeczywistym za pośrednictwem danych telemetrycznych i analitycznych.
 
- Visual Studio oraz Team Foundation Server i Visual Studio Team Services zapewniają szeroką gamę możliwości DevOps, nazywana także zarządzanie cyklem życia aplikacji lub ALM. Wiele z tych mają zastosowanie do projektów i platform, łącznie z gier i bez ramek graficznego aplikacji utworzonych za pomocą platformy Unity — szczególnie w przypadku, gdy przy użyciu języka C# jako język skryptów. Jednak ponieważ Unity ma swoje własne Środowisko deweloperskie i aparatu wykonawczego, wiele funkcji ALM nie stosuj tak jak inne rodzaje projektów wbudowanych w programie Visual Studio.
+ Visual Studio wraz z Visual Studio Team Services i serwera Team Foundation Server zapewniają szeroką gamę możliwości środowiska DevOps, zwaną także zarządzanie cyklem życia aplikacji lub ALM. Wiele z nich mają zastosowanie do projektów dla wielu platform, w tym gier i wszechstronne graficznego aplikacji utworzonych za pomocą aparatu Unity — szczególnie w przypadku, gdy przy użyciu języka C# jako języka skryptowego. Jednak ponieważ Unity ma swoje własne środowisko projektowe i aparat środowiska uruchomieniowego, pewną liczbę funkcji ALM nie mają zastosowania tak, jak do innych rodzajów projektów utworzone w programie Visual Studio.
 
- W poniższych tabelach identyfikuje sposób funkcje programu Visual Studio ALM zastosowania lub nie stosuj podczas pracy z Unity. Zajrzyj do dokumentacji połączone, szczegółowe informacje na temat funkcji samodzielnie.
+ W poniższych tabelach umożliwia określenie, jak funkcje programu Visual Studio ALM zastosowania lub nie mają zastosowania podczas pracy z użyciem aparatu Unity. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.
 
-## <a name="agile-tools"></a>Elastyczne narzędzia
+## <a name="agile-tools"></a>Narzędzia agile
 
-Opis łącza: [o elastyczne narzędzia i Agile projektu zarządzania](/vsts/work/backlogs/overview?view=vsts) (przy użyciu programu Visual Studio Team Services lub TFS, w tym programu Team Explorer Everywhere)
+Opis łącza: [o Zwinne narzędzia i Agile zarządzanie projektem](/vsts/work/backlogs/overview?view=vsts) (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)
 
-Komentarz ogólny: wszystkie planowania i śledzenia funkcje są niezależne od języków programowania i typ projektu.
+Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Zarządzanie zaległości i przebiegów|Tak||
+|Zarządzanie zaległości i sprintów|Tak||
 |Śledzenie pracy|Tak||
 |Współpraca pokoju zespołu|Tak||
 |Tablice Kanban|Tak||
-|Raport i wizualizowanie postępu|Tak||
+|Tworzenie raportów i wizualizowanie postępu|Tak||
 
 ## <a name="modeling"></a>Modelowanie
 
-Opis łącza:  **[analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**
+Opis łącza:  **[analiza i architektura modelu](../modeling/analyze-and-model-your-architecture.md)**
 
-Komentarz ogólny: Mimo że te funkcje projektu są albo niezależnie od języka programowania i pracować z .NET w językach C#, działają na modelu tradycyjnych aplikacji, z hierarchie obiektów i relacji klas. Projektowanie grę w Unity obejmuje różne modelu, czyli relacje obiektów graficznych, dźwięki programów do cieniowania, skrypty i tak dalej. Z tego powodu Visual Studio modelowania diagram narzędzia nie są szczególnie istotne dla całego projektu platformy Unity. Ewentualnie można można użyć do zarządzania relacjami w języku C# skrypty, ale jest tylko jedna część całości.
+Komentarz ogólny: Mimo że te funkcje projektu są albo, niezależnie od języka programowania, lub pracować z języków .NET, takich jak C#, działają one na paradygmatu tradycyjnych aplikacji za pomocą hierarchii obiektów i relacji klas. Projektowanie gier w ramach aparatu Unity pociąga za sobą paradygmatu różne, a mianowicie relacje obiektów graficznych, dźwięki, programów do cieniowania, skrypty i tak dalej. Z tego powodu programu Visual Studio, diagram modelowania narzędzia nie są szczególnie istotne dla całego projektu środowiska Unity. Prawdopodobnie można ich użyć do zarządzanie relacjami w skrypty języka C#, ale to tylko jednej części całości.
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Sekwencje — diagramy|Nie||
+|Diagramy sekwencji|Nie||
 |Wykresy zależności|Nie||
 |Hierarchia wywołań|Nie||
 |Projektant klas|Nie||
-|Eksploratora architektury|Nie||
-|Diagramy UML (Użyj case, działania, klasy, składnika, sekwencji i DSL)|Nie||
-|Diagramy warstw|Nie||
-|Walidacja warstw|Nie||
+|Eksplorator architektury|Nie||
+|Diagramy UML (Użyj przypadek, działania, klasy, składnika, sekwencja i DSL)|Nie||
+|Diagramy warstwowe|Nie||
+|Sprawdzanie poprawności warstwy|Nie||
 
 ## <a name="code"></a>Kod
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Korzystanie z kontroli wersji Team Foundation](/vsts/tfvc/overview?view=vsts) lub Visual Studio Team Services|Tak|Projekty platformy Unity są po prostu kolekcji plików, które mogą być umieszczane w systemów kontroli wersji, jak inny projekt, ale istnieje kilka uwagi opisanych pod tą tabelą.|
-|[Rozpoczynanie pracy z usługą Git w usłudze Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
+|[Użyj kontroli wersji serwera Team Foundation](/vsts/tfvc/overview?view=vsts) lub Visual Studio Team Services|Tak|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|
+|[Wprowadzenie do usługi Git w usłudze Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
 |[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Tak||
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||
 
- Uwagi dotyczące kontroli wersji z Unity:
+ Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:
 
-1.  Unity śledzi metadane dotyczące gier zasoby w jednej, nieprzezroczyste biblioteki, która jest domyślnie ukryty. Aby zachować synchronizację plików i metadanych, jest niezbędne, aby wyświetlić metadane i zapisz go w innych partiach łatwych do. Aby uzyskać więcej informacji, zapoznaj się [przy użyciu systemów usługi kontroli wersji zewnętrznych z Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (dokumentacja Unity).
+1.  Unity śledzi metadane dotyczące zasobów gier w jednym, nieprzezroczyste biblioteki, która jest domyślnie ukryty. W celu synchronizowania plików i metadanych, jest to konieczne, aby uwidocznić metadanych i przechowywać je w innych partiach łatwych do zarządzania. Aby uzyskać szczegółowe informacje, zapoznaj się [przy użyciu wersji kontroli zewnętrznym przy użyciu aparatu Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (dokumentacja aparatu Unity).
 
-2.  Nie wszystkie pliki i foldery w projekcie platformy Unity są odpowiednie do kontroli źródła, jest również opisane w artykule łącze powyżej. Foldery zasobów i ProjectSettings powinny zostać dodane, ale folderów biblioteki i Temp nie powinien. Dodatkowa Lista wygenerowanych plików, które nie przejdzie do kontroli źródła, można znaleźć w omówieniu [sposobu użycia Git do kontroli źródła Unity3D?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) w witrynie StackOverflow. Wielu deweloperów muszą również blogged na ten temat niezależnie.
+2.  Nie wszystkie pliki i foldery w projekcie Unity są odpowiednie do kontroli źródła, jest również opisane w artykule link powyżej. Foldery zasobów i ProjectSettings powinny zostać dodane, ale folderów biblioteki i Temp nie powinien. Dodatkowa Lista wygenerowanych plików, które nie przejdzie do kontroli źródła, można znaleźć w omówieniu [jak za pomocą narzędzia Git do kontroli źródła Unity3D?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) na stronie StackOverflow. Wielu programistów muszą również zakładkach na ten temat niezależnie.
 
-3.  Binarny zasobów w projekcie platformy Unity — takie jak tekstury lub plików audio — może zająć dużo pamięci. Różnych systemów kontroli źródła, takich jak Git przechowywać unikatową kopię pliku dla każdej zmiany, które zostało utworzone, nawet jeśli zmiana dotyczy tylko niewielką część pliku. Może to spowodować repozytorium Git, aby stać się przeglądarek. Aby rozwiązać ten problem, deweloperzy Unity często zdecydować się na dodać zasoby tylko końcowego ich repozytorium i używać różnych oznacza pozostawienie historię pracy ich zasobów, takich jak OneDrive, DropBox lub załączniku git. Ta metoda działa, ponieważ takie zasoby zwykle nie trzeba być wersjonowany wraz z zmiany kodu źródłowego. Deweloperzy zwykle także Ustaw tryb serializacji zasobów Edytor projektu życie tekstu do przechowywania plików sceny tekstowym zamiast formatu binarnego, co umożliwia obsługę scalenia w kontroli źródła. Aby uzyskać więcej informacji, zobacz [ustawienia edytora](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentacja Unity).
+3.  Zasobów binarnych w projekcie Unity — przykład tekstury lub pliki audio — może zajmować dużo pamięci. Różnych systemów kontroli źródła, takich jak Git przechowywać unikatową kopię pliku dla każdej zmiany, które wykonano, nawet wtedy, gdy zmiana ta dotyczy tylko niewielką część pliku. Może to spowodować repozytorium Git, aby stać się przeglądarek. Aby rozwiązać ten problem, deweloperów Unity często zdecydować się na dodawanie tylko końcowej zasobów do swojego repozytorium i korzysta z różnych metod na przechowywanie historii pracy w ich zasobów, takich jak OneDrive, DropBox lub git załącznika. Ta metoda działa, ponieważ takie zasoby zwykle nie trzeba być poddany kontroli wersji, wraz ze zmianami kodu źródłowego. Deweloperzy zwykle także ustawić tryb serializacji zasobów w edytorze projektu na życie tekst, aby przechowywać pliki sceny w tekstu, a nie w formacie binarnym, który pozwala na scalenia w kontroli źródła. Aby uzyskać więcej informacji, zobacz [ustawienia edytora](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentacja aparatu Unity).
 
 ## <a name="build"></a>Kompilacja
- Opis łącza:  **[kompilacji i wydania](/vsts/build-release/index)**
+ Opis łącza:  **[kompilowania i wydawania](/vsts/build-release/index)**
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Lokalny serwer TFS|Możliwe|Projekty platformy Unity są tworzone za pomocą środowiska Unity i nie za pomocą programu Visual Studio kompilacji systemu (Tworzenie w programie Visual Studio Tools dla Unity będzie skompilować skrypty, ale nie tworzy plik wykonywalny). Istnieje możliwość [kompilacji projektów środowiska Unity w wierszu polecenia](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja Unity), więc możliwe jest Konfigurowanie procesu programu MSBuild na serwerze TFS można wykonać odpowiednie Unity poleceń, pod warunkiem, że Unity sam jest zainstalowany na tego komputera.<br /><br /> Oferuje również Unity [jednolitości chmury kompilacji](https://build.cloud.unity3d.com/landing/), który monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacji. Obecnie działa z kontroli wersji Team Foundation i Visual Studio Team Services.|
-|Lokalny serwer kompilacji połączone z Visual Studio Team Services|Możliwe|Podany samych warunków dodatkowo jest możliwe bezpośrednie kompilacje wyzwalane za pomocą programu Visual Studio Team Services, aby lokalnie na komputerze TFS.  Zobacz [kompilacji i wydania agentów](/vsts/build-release/concepts/agents/agents) instrukcje.|
-|Usługa kontrolera hostowanej programu Visual Studio Team Services|Nie|Kompilacje Unity nie są obecnie obsługiwane.|
-|Tworzenie definicji przed i po skryptów|Tak|Można również skonfigurować definicję kompilacji niestandardowej, która używa Unity wiersza polecenia do uruchomienia kompilacji dla skryptów przed i po kompilacji.|
-|W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań dla TFVC tylko wtedy, gdy działa Git modelu żądania ściągnięcia zamiast zaewidencjonowania.|
+|Lokalny serwer TFS|Możliwe|Projekty Unity są tworzone za pomocą środowiska Unity i nie przy użyciu programu Visual Studio kompilacji systemu (kompilowanie w ramach programu Visual Studio Tools dla Unity będą skrypty kompilacji, ale generuje plik wykonywalny). Istnieje możliwość [tworzenie projektów aparatu Unity z poziomu wiersza polecenia](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja aparatu Unity), dzięki czemu możliwe jest Konfigurowanie procesu programu MSBuild na serwerze TFS do wykonania odpowiednich Unity polecenia, pod warunkiem, że Unity, sama jest zainstalowany na Ten komputer.<br /><br /> Oferuje również Unity [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), który monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacje. Obecnie działa z Team Foundation Version Control lub Visual Studio Team Services.|
+|Serwer kompilacji w środowisku lokalnym, połączone z Visual Studio Team Services|Możliwe|Podany tych samych warunkach co powyżej dodatkowo istnieje możliwość bezpośrednie kompilacje wyzwalane za pomocą programu Visual Studio Team Services do użycia w środowisku lokalnym komputerze z programem TFS.  Zobacz [Build and release agents i](/vsts/build-release/concepts/agents/agents) instrukcje.|
+|Usługa hostowana kontrolera programu Visual Studio Team Services|Nie|Kompilacje Unity nie są obecnie obsługiwane.|
+|Tworzenie definicji przy użyciu wstępnego i skryptu używanego po utworzeniu|Tak|Definicję kompilacji niestandardowej, która używa aparatu Unity wiersza polecenia do uruchomienia kompilacji można skonfigurować w taki sposób, aby uzyskać skrypty przed i po kompilacji.|
+|W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań w przypadku repozytorium TFVC, tylko wtedy, gdy usługa Git działa w modelu żądania ściągnięcia, a nie do zaewidencjonowania.|
 
 ## <a name="testing"></a>Testowanie
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Planowanie testów, tworzenie przypadków testowych i organizowanie zestawów testów|Tak||
-|Testów ręcznych|Tak||
-|Test Manager (rekordu i odtwarzanie testów)|Urządzenia z systemem Windows i Android emulatorów tylko||
-|Pokrycie kodu|n/d|Nie dotyczy jako jednostka testowania to następuje w Unity i nie Visual Studio, zobacz poniżej.|
-|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|W ramach Unity, ale nie w programie Visual Studio|Udostępnia Unity własną jednostkę test framework jako część [narzędzia testowe Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity zasobów magazynu). Wyniki testów jednostkowych są zgłaszane w ramach platformy Unity i nie zostaną wyświetlone w programie Visual Studio.|
-|[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Nie|Kodowane testy interfejsu użytkownika zależą od formantów do odczytu w Interfejsie użytkownika aplikacji; Aplikacji Unity są graficznych i dlatego zawartość nie jest możliwy za pomocą narzędzi testu kodowanego interfejsu użytkownika.|
+|Planowanie testów, tworzenie przypadków testowych i porządkowanie zestawów testów|Tak||
+|Testowanie ręczne|Tak||
+|Test Manager (nagrywanie i odtwarzanie testów)|Urządzenia Windows i tylko w przypadku emulatorów systemu Android||
+|Pokrycie kodu|n/d|Nie dotyczy jako jednostki testowania nastąpi w ciągu Unity i nie Visual Studio, zobacz poniżej.|
+|[Kod testu jednostkowego](../test/unit-test-your-code.md)|W ramach aparatu Unity, ale nie w programie Visual Studio|Unity oferuje swój własny; środowisko testów jednostkowych w ramach [narzędzi do testowania Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity zasobów Store). Wyniki testów jednostek są zgłaszane w ramach aparatu Unity i nie zostaną wyświetlone w programie Visual Studio.|
+|[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Nie|Kodowane testy interfejsu użytkownika zależą od formantów do odczytu w Interfejsie użytkownika aplikacji; Aplikacje Unity są graficznych i dlatego zawartość nie jest do odczytu za pomocą narzędzi testu kodowanego interfejsu użytkownika.|
 
-## <a name="improve-code-quality"></a>Podnoszenie jakości kodu
+## <a name="improve-code-quality"></a>Poprawianie jakości kodu
 
-Opis łącza:  **[poprawy jakości kodu](../test/improve-code-quality.md)**
+Opis łącza:  **[poprawią jakość kodu](../test/improve-code-quality.md)**
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
-|[Znajdowanie zduplikowanego kodu za pomocą narzędzia do wykrywania klonu kodu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
-|[Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
-|[Analiza problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie mają punkty zaczepienia w ramach Mono (używano Unity) do profilowania. Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja Unity).|
+|[Analizowanie jakości kodu zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Znajdowanie kodu zduplikowanego przy użyciu wykrywania klonu kodu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
+|[Analizowanie problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w ramy Mono (jako używane przez środowisko Unity) do profilowania. Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
 
 ## <a name="release-management"></a>Release Management
 
-Opis łącza: [kompilacji i wydania — omówienie](/vsts/pipelines/overview?view=vsts)
+Opis łącza: [kompilowania i wydawania — omówienie](/vsts/pipelines/overview?view=vsts)
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Zarządzanie procesami zlecenia|Tak||
-|Wdrażanie serwerów w celu ładowania bezpośredniego za pomocą skryptów|Tak||
-|Przekaż do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne który można zautomatyzować ten proces niektóre sklepy z aplikacjami.  Zobacz [rozszerzeń dla programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Zarządzanie procesów tworzenia wersji|Tak||
+|Wdrażanie serwerów na potrzeby ładowania bezpośredniego za pośrednictwem skryptów|Tak||
+|Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami.  Zobacz [rozszerzenia programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
-## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą aplikacji HockeyApp
+## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą platformy HockeyApp
 
-Opis łącza:  **[monitora z HockeyApp](https://www.hockeyapp.net/features/)**
+Opis łącza:  **[monitorowanie za pomocą platformy HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|
+|Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Awarii dystrybucji analizy i telemetrię oraz w wersji beta|Tak|HockeyApp jest szczególnie przydatne w przypadku obsługi rozkład beta i uzyskiwanie raportów o awarii.<br /><br /> Dla danych telemetrycznych z skrypty języka C# prawdopodobnie pod warunkiem, że jest uruchamiany na wersji platformy .NET, który jest używany przez Unity za pomocą dowolnej architektury analytics. Jednak dzięki temu analytics tylko w obrębie gier skryptów, a nie głębsze wewnątrz aparat Unity. Obecnie nie jest brak wtyczki dla usługi Application Insights, ale wtyczek są dostępne dla innych rozwiązań analitycznych przykład [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) i [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi, takie jak Analytics Unity, które rozumieją rodzaj projektu Unity będzie, podaj bardziej zrozumiały analizy niż ogólny struktury.|
+|Awarii dystrybucji analizy i telemetrię oraz wersji beta|Tak|Platforma HockeyApp jest szczególnie przydatne w przypadku obsługi dystrybucja wersji beta i uzyskiwanie raportów o awarii.<br /><br /> Dane telemetryczne z skrypty języka C# należy można użyć dowolnej architektury analizy, pod warunkiem, że działa na wersję platformy .NET, który jest używany przez aparatu Unity. Jednak dzięki temu analizy tylko w ramach skryptów gier i nie głębiej w aparacie Unity. Obecnie nie jest brak wtyczki dla usługi Application Insights, ale takie jak wtyczki są dostępne dla innych rozwiązań do analizy [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) i [usługi Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi, takie jak Analytics Unity, które zrozumienie natury projektów aparatu Unity będzie, oczywiście zapewniają analizy znacznie bardziej opisowe niż ogólny struktur.|
