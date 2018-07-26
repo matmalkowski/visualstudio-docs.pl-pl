@@ -48,6 +48,7 @@
 #### [W przypadku licencjonowania zbiorowego](volume-license-admins.md)
 ##### [Często zadawane pytania dotyczące migracji administratorów centrum VLSC](vlsc-admin-faq.md)
 ##### Dołączanie organizacji
+###### [Dołączanie po migracji](post-migration-onboarding.md)
 ###### [Komunikacja e-mail dotycząca dołączania](volume-license-onboarding-email.md)
 ###### [Znajdowanie numeru PCN](find-pcn.md)
 ###### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)

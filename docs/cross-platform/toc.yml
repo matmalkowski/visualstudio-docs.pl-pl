@@ -24,9 +24,9 @@
   items:
     - name: Wprowadzenie do narzędzi Visual Studio Tools for Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
-    - name: Używanie rozszerzenia Visual Studio Tools for Unity
+    - name: Korzystanie z narzędzi Visual Studio Tools for Unity
       href: using-visual-studio-tools-for-unity.md
-    - name: Programowanie dla rozszerzenia Visual Studio Tools for Unity
+    - name: Programowanie za pomocą narzędzi Visual Studio Tools for Unity
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
@@ -78,10 +78,10 @@
           href: nmake-android-prop-page.md
 - name: Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
-- name: Emulator programu Visual Studio dla systemu Android
+- name: Visual Studio Emulator for Android
   href: visual-studio-emulator-for-android.md
   items:
-    - name: Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
+    - name: Wymagania systemowe dotyczące narzędzia Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
-    - name: Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android
+    - name: Rozwiązywanie problemów z narzędziem Visual Studio Emulator for Android
       href: troubleshooting-the-visual-studio-emulator-for-android.md
