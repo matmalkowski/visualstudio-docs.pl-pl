@@ -1,5 +1,5 @@
 ---
-title: Właściwości NMake (Android C++) | Dokumentacja firmy Microsoft
+title: Właściwości narzędzia NMake (Android C++) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
@@ -18,22 +18,22 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9f38994aa67722e96709f604164818f0bc15ebd6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cace2ed08c82c274649c7554bfe8127ef9c6d152
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060213"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252177"
 ---
-# <a name="nmake-properties-android-c"></a>Właściwości NMake (Android C++)
+# <a name="nmake-properties-android-c"></a>Właściwości narzędzia NMake (Android C++)
 
 Właściwość | Opis
 --- | ---
-Wiersz polecenia kompilacji | Określa wiersz polecenia, aby uruchomić polecenie "Kompiluj".
-Wiersz poleceń rekompilacji wszystkiego | Określa wiersz polecenia, aby uruchomić polecenie "Skompiluj ponownie wszystko".
-Wiersz poleceń oczyszczenia | Określa wiersz polecenia, aby uruchomić polecenie "Czyść".
+Wiersz polecenia kompilacji | Określa wiersz polecenia umożliwiający uruchomienie polecenia "Kompiluj".
+Wiersz poleceń rekompilacji wszystkiego | Określa wiersz polecenia umożliwiający uruchomienie polecenia "Kompiluj wszystko ponownie".
+Wiersz polecenia Wyczyść | Określa wiersz polecenia umożliwiający uruchomienie polecenia "Wyczyść".
 Dane wyjściowe | Określa plik wynikowy do wygenerowania.
 Definicje preprocesora | Określa definicje preprocesora używane przez pliki źródłowe.
-Ścieżki wyszukiwania załączania | Określa ścieżkę wyszukiwania include będą pliki załączone.
-Wymuszone obejmuje | Określa pliki, które będą uwzględnione.
-Dodatkowe opcje | Określa dodatkowe przełączniki kompilatora do użycia przez funkcję IntelliSense podczas analizowania plików C++
+Ścieżka wyszukiwania plików dołączanych | Określa ścieżkę wyszukiwania dołączenia, aby rozpoznać pliki dołączone.
+Wymuszone obejmuje | Określa pliki, których jest wymuszone dołączone.
+Dodatkowe opcje | Określa dodatkowe przełączniki kompilatora ma być używany przez funkcję IntelliSense, podczas analizowania plików C++

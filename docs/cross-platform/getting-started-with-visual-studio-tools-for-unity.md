@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154225"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252469"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Rozpoczynanie pracy z usługą Visual Studio Tools for Unity
 
 ## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
-### <a name="unity-bundled-installation"></a>Unity powiązane instalacji
+### <a name="unity-bundled-installation"></a>Instalacja aparatu Unity powiązane
 
 Począwszy od Unity 2018.1, Visual Studio jest domyślnego języka C# skrypt edytora dla aparatu Unity i znajduje się w Unity Pobierz Asystenta ustawień, a także narzędzie instalacji Centrum aparatu Unity.
 
@@ -77,7 +77,7 @@ Począwszy od Unity 2018.1, Visual Studio powinien być domyślnego edytora skry
 
 1. Po wybraniu w programie Visual Studio **Edytor skryptów zewnętrznych** listy, upewnij się, że **dołączanie edytora** pole wyboru jest zaznaczone.
 
-1. Zamknij okno dialogowe Preferencje, aby zakończyć proces konfiguracji.
+1. Zamknij **preferencje** okno dialogowe, aby zakończyć proces konfiguracji.
 
 ## <a name="support-for-older-versions"></a>Obsługa starszych wersji
 
@@ -93,4 +93,4 @@ Począwszy od Unity 2018.1, Visual Studio powinien być domyślnego edytora skry
 
 ## <a name="next-steps"></a>Następne kroki
 
- Aby dowiedzieć się, jak pracować z i debugowanie projektu środowiska Unity w programie Visual Studio, zobacz [przy użyciu programu Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Aby dowiedzieć się, jak pracować z i debugowanie projektu środowiska Unity w programie Visual Studio, zobacz [Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 936c5c1d6edd0a3f3ac7f645b1c94c5ffecd39f1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232322"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251845"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -358,5 +358,5 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 
 - Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takich jak Visual Studio Team Services (VSTS). Oprócz Praca z kontrolą źródła (w usłudze VSTS, GitHub lub gdzie indziej), może mieć VSTS automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed wdrożeniem Produkcja. Usługi VSTS, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
 
-  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą projektu DevOps platformy Azure](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts)
+  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Programowanie w języku Python na platformie Azure przy użyciu programu Visual Studio Team Services (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

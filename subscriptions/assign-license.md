@@ -9,18 +9,18 @@ description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178403"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251708"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisz licencje w portal administratora subskrypcji programu Visual Studio
 
 Jako administratora subskrypcji programu Visual Studio z portalu administratora służy do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
 
-Dla grup użytkowników, można przypisać subskrypcji do nich jedną w czasie, lub użyj **zbiorcze Dodawanie** funkcję, aby przekazać listę subskrybentów z informacjami o subskrypcji, szybkie i łatwe. 
+Dla grup użytkowników, można przypisać subskrypcji do nich jedną w czasie, lub użyj **zbiorcze Dodawanie** funkcja można szybko i łatwo przekazać listę subskrybentów i informacjami o subskrypcji.
 
 ## <a name="individual-assignments"></a>Poszczególne przypisania
 
@@ -32,7 +32,7 @@ Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual 
 
    ![Dodaj pojedynczego subskrybenta](media\add-single-subscriber.png)
 
-3. Wprowadź informacje w polach formularza dla nowych subskrybentów. Jeśli Twoja organizacja używa usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania można znaleźć osób w bieżącym katalogu, dzięki czemu można wybrać właściwy użytkownik z wyników wyszukiwania. Po wybraniu tej osobie, ich nazwy, zaloguj się poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie. 
+3. Wprowadź informacje w polach formularza dla nowych subskrybentów. Jeśli Twoja organizacja używa usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania można znaleźć osób w bieżącym katalogu, dzięki czemu można wybrać właściwy użytkownik z wyników wyszukiwania. Po wybraniu tej osobie, ich nazwy, zaloguj się poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie.
 
    ![Dodaj nowy adres e-mail powiadamiania](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual 
 
   ![Pobierz szablon programu Excel, aby przesłać wielu subskrybentów](media\download-template-upload-subscribers.png)
 
-  >! [UWAGA] Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
+   > ! [UWAGA] Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
 
 1. W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla użytkowników indywidualnych, które chcesz przypisać subskrypcje. (*Odwołania* pole jest opcjonalne.) Zapisz plik lokalnie w przypadku, gdy wszystko będzie gotowe.
 

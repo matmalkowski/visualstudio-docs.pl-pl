@@ -10,20 +10,20 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: df43b6aca056967910c234b55cee97d4d37b4549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86859abc73cfabe0994c7628de13e281b58e05ed
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31059381"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252404"
 ---
-# <a name="c-cross-platform-property-page-reference"></a>Odwołanie do strony właściwości platformy między C++
+# <a name="c-cross-platform-property-page-reference"></a>Dokumentacja strony właściwości dla wielu platform w języku C++
 
-Ta sekcja zawiera informacje na temat właściwości projektu w projektach C++ i platform.
+Ta sekcja zawiera informacje na temat właściwości projektu w projektach dla wielu platform w języku C++.
 
-- [Ogólne właściwości projektu (Android C++)](general-android-prop-page.md)
-- [Właściwości debugera systemu Android](android-debugger-prop-page.md)
-- [Właściwości projektu Clang (Android C++)](clang-android-prop-page.md)
-- [Ogólne właściwości projektu (Android C++ Makefile)](general-makefile-android-prop-page.md)
-- [Właściwości konsolidatora projektu Clang (Android C++)](clanglink-prop-page.md)
+- [Właściwości ogólnych projektu (Android C++)](general-android-prop-page.md)
+- [Właściwości debugera systemu android](android-debugger-prop-page.md)
+- [Właściwości projektu clang (Android C++)](clang-android-prop-page.md)
+- [Właściwości ogólnych projektu (Android C++ Makefile)](general-makefile-android-prop-page.md)
+- [Właściwości konsolidatora projektu clang (Android C++)](clanglink-prop-page.md)
 - [Właściwości narzędzia NMake (Android C++)](nmake-android-prop-page.md)

@@ -1,5 +1,5 @@
 ---
-title: Wysyłanie zdarzeń do uruchomienia po Launch | Dokumentacja firmy Microsoft
+title: Wysyłanie zdarzeń uruchamiania po uruchomieniu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6ffd1a47f4d1d82feecb35110151a8b32d7d245
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8439f4ff9e1195b558b44342a012ce319582eb69
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135757"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251169"
 ---
-# <a name="sending-startup-events-after-a-launch"></a>Wysyłanie zdarzeń do uruchomienia po Launch
-Gdy aparat debugowania (DE) jest dołączony do programu, szereg zdarzenia uruchamiania wysyłane z powrotem do sesji debugowania.  
+# <a name="send-startup-events-after-a-launch"></a>Wysyłanie zdarzeń uruchamiania po uruchomieniu
+Gdy aparat debugowania (Niemcy) jest dołączony do programu, wysyła szereg zdarzeń uruchamiania powrót do sesji debugowania.  
   
- Następujące zdarzenia uruchamiania wysyłane z powrotem do sesji debugowania:  
+ Zdarzenia uruchamiania wysyłanych z powrotem do sesji debugowania, obejmują:  
   
--   Aparat tworzenia zdarzenia.  
+-   Zdarzenie tworzenia aparatu.  
   
 -   Zdarzenie tworzenia programu.  
   
--   Wątek, tworzenie i zdarzeń ładowania modułu.  
+-   Wątek, tworzenia i zdarzeń ładowania modułu.  
   
--   Zdarzenie complete obciążenia, wysyłane, jeśli kod jest załadowany i gotowa do uruchomienia, ale przed wykonaniem żadnego kodu  
+-   Ładowanie ukończone zdarzenie wysyłane, gdy kod jest załadowany i gotowa do uruchomienia, ale przed wykonaniem jakiegokolwiek kodu. 
   
     > [!NOTE]
-    >  Gdy to zdarzenie jest kontynuowane, zmienne globalne są inicjowane i uruchamianie procedury uruchamiania.  
+    >  Gdy to zdarzenie jest kontynuowany, zmienne globalne są inicjowane i uruchamianie procedury uruchamiania.  
   
--   Możliwe innych wątków, tworzenie i zdarzeń ładowania modułu.  
+-   Możliwe innych wątków, tworzenia i zdarzeń ładowania modułu.  
   
--   Zdarzenie punktu wejścia, która sygnalizuje, że program została osiągnięta jego główny punkt wejścia, takich jak **Main** lub `WinMain`. To zdarzenie nie są zwykle wysyłane Jeśli DE dołącza do programu, który jest już uruchomiony.  
+-   Zdarzenie punktu wejścia sygnalizuje, że program został osiągnięty jego główny punkt wejścia, takich jak **Main** lub `WinMain`. To zdarzenie nie są zwykle wysyłane, jeśli DE dołącza do programu, który jest już uruchomiony.  
   
- Programowo, DE najpierw wysyła Menedżera debugowania sesji (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interfejsu reprezentuje aparatu tworzenia zdarzeń, a następnie [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , która reprezentuje zdarzenie tworzenia programu.  
+ Programowo, DE najpierw wysyła Menedżer debugowania sesji (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interfejs, który przedstawia zdarzenie tworzenia aparatu, a następnie [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , która reprezentuje zdarzenie tworzenia programu.  
   
- To jest zazwyczaj następuje co najmniej jeden [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) zdarzenia Tworzenie wątków i [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) zdarzeń ładowania modułu.  
+ Zdarzenia te są zwykle następuje co najmniej jeden [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) wątek zdarzenia tworzenia i [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) zdarzeń ładowania modułu.  
   
- Jeśli kod jest załadowany i gotowa do uruchomienia, ale przed wykonaniem dowolny kod DE wysyła SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) zdarzenie ukończenia ładowania. Na koniec, jeśli program nie jest już uruchomiony, wysyła DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzenie punktu wejścia, sygnalizowania, że program osiągnął swoją główny punkt wejścia i jest gotowy do debugowania.  
+ Gdy kod jest załadowany i gotowa do uruchomienia, ale przed wykonaniem jakiegokolwiek kodu DE wysyła SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) zdarzenie ukończenia obciążenia. Na koniec, jeśli program nie jest już uruchomiona, wysyła DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzenie punktu wejścia, sygnalizowania, że program osiągnęła jego główny punkt wejścia i jest gotowy do debugowania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

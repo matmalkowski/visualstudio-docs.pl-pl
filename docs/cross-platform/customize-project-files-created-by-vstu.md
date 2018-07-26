@@ -10,18 +10,18 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7393d023b8c581b95d3ac39b8501ca9dbb30228d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 274b23eef51bfa86e961a850de7d4c33c217995c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060272"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252339"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
-Visual Studio Tools for Unity zawiera wywołanie zwrotne stylu platformy Unity podczas generowania pliku projektu. Zarejestruj `VisualStudioIntegration.ProjectFileGeneration` zdarzeń do zmodyfikowania pliku projektu, gdy zostanie ponownie wygenerowany.
+Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Zarejestrowanie `VisualStudioIntegration.ProjectFileGeneration` zdarzenia w celu zmodyfikowania pliku projektu, zawsze wtedy, gdy zostanie ponownie wygenerowany.
 
 ## <a name="demonstrates"></a>Demonstracje
- Jak dostosowywać pliki projektu programu Visual Studio, generowane przez Visual Studio Tools for Unity.
+ Jak dostosowywanie plików projektu programu Visual Studio, które są generowane przez program Visual Studio Tools for Unity.
 
 ## <a name="example"></a>Przykład
 
@@ -67,5 +67,5 @@ public class ProjectFileHook
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Przykład: Wywołanie zwrotne dziennika](../cross-platform/share-the-unity-log-callback-with-vstu.md)

@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
-ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
+ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847755"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251143"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 
-[Django](https://www.djangoproject.com/) jest przeznaczony do tworzenia aplikacji internetowych szybki, bezpieczny i skalowalny struktura języka Python wysokiego poziomu. Obsługa języka Python w programie Visual Studio zawiera kilka szablonów projektów konfigurowania struktury aplikacji sieci web opartych na Django. Aby użyć szablonu w programie Visual Studio, wybierz **pliku** > **New** > **projektu**, wyszukaj "Django" i wybierz "pusty Django sieci Web "Projekt,"Projekt sieci Web Django"i"Projekt sieci Web Django sond"szablonów. Zobacz [samouczek uczenia Django](learn-django-in-visual-studio-step-01-project-and-solution.md) przewodnik wszystkich szablonów.
+[Django](https://www.djangoproject.com/) jest przeznaczony do tworzenia aplikacji internetowych szybki, bezpieczny i skalowalny struktura języka Python wysokiego poziomu. Obsługa języka Python w programie Visual Studio zawiera kilka szablonów projektów konfigurowania struktury aplikacji sieci web opartych na Django. Aby użyć szablonu w programie Visual Studio, wybierz **pliku** > **New** > **projektu**, wyszukaj "Django" i wybierz z  **Pusty projekt sieci Web Django**, **projektu sieci Web Django**, i **projektu sieci Web Django sond** szablonów. Zobacz [samouczek Dowiedz się, Django](learn-django-in-visual-studio-step-01-project-and-solution.md) przewodnik wszystkich szablonów.
 
 Program Visual Studio udostępnia pełną obsługą technologii IntelliSense dla projektów Django:
 
@@ -42,13 +42,13 @@ Visual Studio udostępnia również podpowiedzi pełnej [obsługi debugowania](d
 
 ![Punkty przerwania](media/template-django-debugging.png)
 
-Jest typowy dla projektów Django, które mają być zarządzane za pomocą ich `manage.py` pliku, który jest założenie, że program Visual Studio jest zgodna. Jeśli użytkownik zaprzestanie korzystania z tego pliku jako punkt wejścia, zasadniczo przerwania pliku projektu. W takim przypadku należy [ponownie utworzyć projekt z istniejących plików](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) bez oznaczania go jako projekt Django.
+Jest typowy dla projektów Django, które mają być zarządzane za pomocą ich *manage.py* pliku, który jest założenie, że program Visual Studio jest zgodna. Jeśli użytkownik zaprzestanie korzystania z tego pliku jako punkt wejścia, zasadniczo przerwania pliku projektu. W takim przypadku należy [ponownie utworzyć projekt z istniejących plików](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) bez oznaczania go jako projekt Django.
 
 ## <a name="django-management-console"></a>Konsoli zarządzania Django
 
-W konsoli zarządzania Django odbywa się za pośrednictwem różnych poleceń na **projektu** menu lub klikając prawym przyciskiem myszy projekt w Eksploratorze rozwiązań.
+W konsoli zarządzania Django odbywa się za pośrednictwem różnych poleceń na **projektu** menu lub klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**.
 
-- **Otwórz powłokę Django...** : otwiera powłokę w kontekście swojej aplikacji, która umożliwia Ci manipulowanie swoimi modelami "
+- **Otwórz powłokę Django**: otwiera powłokę w kontekście swojej aplikacji, która umożliwia Ci manipulowanie swoimi modelami:
 
     ![Konsola](media/template-django-console-shell.png)
 
@@ -56,15 +56,15 @@ W konsoli zarządzania Django odbywa się za pośrednictwem różnych poleceń n
 
     ![Konsola](media/template-django-console-sync-db.png)
 
-- **Zbieraj statyczne**: wykonuje `manage.py collectstatic --noinput` do skopiowania wszystkich plików statycznych w ścieżce określonej przez `STATIC_ROOT` w swojej `settings.py`. Gdy [publikowania w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), pliki statyczne są zbierane automatycznie jako część operacji publikowania.
+- **Zbieraj statyczne**: wykonuje `manage.py collectstatic --noinput` do skopiowania wszystkich plików statycznych w ścieżce określonej przez `STATIC_ROOT` w swojej *settings.py*. Gdy [publikowania w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), pliki statyczne są zbierane automatycznie jako część operacji publikowania.
 
     ![Konsola](media/template-django-console-collect-static.png)
 
-- **Sprawdź poprawność**: wykonuje `manage.py validate`, który zgłasza wszelkie błędy sprawdzania poprawności zainstalowanych modeli określonego przez `INSTALLED_APPS` w Twojej `settings.py`:
+- **Sprawdź poprawność**: wykonuje `manage.py validate`, który zgłasza wszelkie błędy sprawdzania poprawności zainstalowanych modeli określonego przez `INSTALLED_APPS` w Twojej *settings.py*:
 
     ![Konsola](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Samouczek dotyczący uczenia Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [Poznaj samouczek Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
 - [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

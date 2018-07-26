@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153907"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251578"
 ---
-# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
+# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity)
 
 W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak możesz pomóc ulepszyć program Visual Studio Tools for Unity raportowanie błędów.
 
@@ -54,7 +54,7 @@ To powinno rozwiązać problem. W przypadku, gdy nadal występuje ten problem, u
 
 Kilka wtyczek platformy Unity, takich jak analizy, FMOD, STUDZIENKĘ (uniwersalny odtwarzacz), ZFBrowser lub przeglądarki Embedded korzystają z wątków natywnych. Jest to problem, gdy wtyczki kończy się dołączanie natywnych wątku do środowiska uruchomieniowego, które następnie wykonuje operację blokowania wywołań do systemu operacyjnego. Oznacza to, Unity nie można przerwać wątek debugera (lub Załaduj ponownie domeny) i zawieszeniu.
 
-FMOD, istnieje obejście tego problemu, możesz przekazać inicjowania FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE [flagi](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) Wyłącz Przetwarzanie asynchroniczne i wykonywać całego procesu przetwarzania w wątku głównym.
+FMOD, istnieje obejście tego problemu, możesz przekazać `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicjowania [flagi](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) Wyłącz Przetwarzanie asynchroniczne i wykonywać całego procesu przetwarzania w wątku głównym.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Niezgodne projektu w programie Visual Studio
 
@@ -114,7 +114,7 @@ Spróbuj uaktualnić usługi Visual Studio 2015 z aktualizacją 3.
 
 - Przechodzenie krok po kroku do i z metody czasami zachowuje się nieprawidłowo, szczególnie w Iteratory lub wewnątrz instrukcji switch.
 
-## <a name="reporting-errors"></a>Raportowanie błędów
+## <a name="report-errors"></a>Raportowanie błędów
 
  Pomóż nam ulepszyć jakość programu Visual Studio Tools for Unity przez wysyłanie raportów o błędach, gdy wystąpią uległa awarii, zawiesza się lub inne błędy. Ułatwia to nam Badaj i rozwiązuj problemy w programie Visual Studio Tools for Unity. Dziękuję!
 

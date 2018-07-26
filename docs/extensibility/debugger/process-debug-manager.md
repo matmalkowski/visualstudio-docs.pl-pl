@@ -1,5 +1,5 @@
 ---
-title: Przetwarzanie Menedżera debugowania | Dokumentacja firmy Microsoft
+title: Menedżer debugowania przetwarzania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ce0979b02ac3b0e8bb01f038c9883f5dcfd766
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bea7736174c64cb82f2dc1b66609175cb8584555
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098098"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252164"
 ---
-# <a name="process-debug-manager"></a>Menedżer debugowania procesu
-Menedżer debugowania procesu (PDM) to składnik programu Visual Studio, która zarządza programy i procesy, udostępniając sesji debugowania manager i aparatami debugowania.  
+# <a name="process-debug-manager"></a>Menedżer debugowania procesów
+Menedżer debugowania procesów (menedżerów PDM) jest składnikiem programu Visual Studio, która zarządza programów i procesów, udostępniając sesji debugowania, Menedżer i aparaty debugowania.  
   
- PDM zarządza wszystkie procesy, które może być debugowany. Aby debugować, program musi być zarejestrowany PDM. Można to zrobić w momencie uruchomienia programu, przez port lub aparat debugowania.  
+ Program PDM zarządza wszystkie procesy, które mogą być debugowane. Do debugowania, program musi być zarejestrowany z menedżerów PDM. Rejestracja odbywa się w czasie, który program jest uruchamiany przez port lub aparatu debugowania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Procesy](../../extensibility/debugger/processes.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
  [Porty](../../extensibility/debugger/ports.md)   

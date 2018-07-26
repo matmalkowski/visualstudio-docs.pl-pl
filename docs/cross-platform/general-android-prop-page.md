@@ -22,12 +22,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 6e4f7da0c8d1727446c23ad25db2bf64228cbc9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31061854"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252241"
 ---
 # <a name="general-project-properties-android-c"></a>Ogólne właściwości projektu (Android C++)
 
@@ -36,11 +36,11 @@ Właściwość | Opis | Opcje
 Katalog wyjściowy | Określa ścieżkę względną do katalogu pliku wyjściowego; może zawierać zmienne środowiskowe.
 Katalog pośredni | Określa ścieżkę względną do pośredniego katalogu plików; może zawierać zmienne środowiskowe.
 Nazwa obiektu docelowego | Określa nazwę pliku, który zostanie wygenerowany przez projekt.
-Rozszerzenie docelowego | Określa rozszerzenie pliku, który zostanie wygenerowany przez projekt. (Przykład: .exe lub .dll)
-Rozszerzenia do usunięcia podczas oczyszczania | Rozdzielana średnikami Specyfikacja symboli wieloznacznych określająca jakie pliki w katalogu pośrednim mają zostać usunięte podczas oczyszczania lub Odbuduj.
-Tworzenie pliku dziennika | Określa plik dziennika kompilacji do zapisu, gdy rejestrowanie kompilacji jest włączona.
-Zestaw narzędzi platformy | Określa zestaw narzędzi używanych do kompilowania bieżącej konfiguracji. Jeśli nie jest używany zestaw, do domyślnego zestawu narzędzi
-Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Dynamicznymi (.so)** -dynamicznymi (.so)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (tj.)<br>**Narzędzie** — narzędzie<br>**Pliku reguł programu make** -pliku reguł programu make<br>
-Docelowy poziom interfejsu API | Celem tej konfiguracji systemu android poziom interfejsu API zestawu NDK.
-Użyj STL | Określa, która standardowa biblioteka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**Biblioteka statyczna środowiska uruchomieniowego języka C++ (gabi ++ _statyczny adres)**<br>**Biblioteka udostępniona środowiska uruchomieniowego języka C++ (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**LLVM libc ++ biblioteka statyczna (_statyczny adres c ++)**<br>**LLVM libc ++ biblioteki udostępnionej (_shared c ++)**<br>
-Tryb przycisku przewijania | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**wyłączone**<br>
+Rozszerzenie docelowe | Określa rozszerzenie pliku, który zostanie wygenerowany przez projekt. (Przykład: *.exe* lub *.dll*)
+Rozszerzenia do usunięcia podczas oczyszczania | Rozdzielana średnikami Specyfikacja symboli wieloznacznych, które pliki w katalogu pośrednim mają zostać usunięte podczas oczyszczania lub ponownie skompiluj.
+Plik dziennika kompilacji | Określa plik dziennika kompilacji do zapisu, gdy rejestrowanie kompilacji jest włączona.
+Zestaw narzędzi platformy | Określa zestaw narzędzi, używana do tworzenia bieżącej konfiguracji; Jeśli nie jest używany zestaw, domyślny zestaw narzędzi
+Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Biblioteka dynamiczna (SO)** — Biblioteka dynamiczna (*SO*)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (*.a*)<br>**Narzędzie** — narzędzie<br>**Plik reguł programu make** -pliku reguł programu make<br>
+Docelowy poziom interfejsu API | Android NDK docelowy poziom interfejsu API przez tę konfigurację.
+Użycie biblioteki STL | Określa, które standardowej biblioteki języka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**Biblioteka statyczna środowiska uruchomieniowego języka C++ (gabi ++ _static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego języka C++ (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**Biblioteka libc ++ LLVM statyczne (c ++ _static)**<br>**Biblioteka libc ++ LLVM udostępnionego (c ++ _shared)**<br>
+Tryb Thumb | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Wyłączone**<br>

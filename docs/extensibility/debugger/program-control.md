@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c227f38c926cb6d764ddf47541b8bd744eb6f7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a60b766763ca5f68f8c379fbab9372e41c319671
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102093"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251101"
 ---
-# <a name="program-control"></a>Formant programu
-W programie Visual Studio debugowanie wszystkich stepping następujących i kontynuowanie procedury są wykonywane na poziomie programu:  
+# <a name="program-control"></a>Kontrola programu
+W programie Visual Studio debugowanie wszystkich następujących przechodzenie krok po kroku i kontynuowanie procedury wykonywane na poziomie programu:  
   
--   Oznacza to, że ustawienie następnej instrukcji, ustawienie komputera na następną instrukcję, która ma być wykonywana w środowisku klatek  
+-   Oznacza to, że ustawienie następnej instrukcji, ustawienia komputera do następnej instrukcji do wykonania w środowisku określonego ramki  
   
--   Oznacza to, że kontynuowanie wykonywania, wyjść z trybu wykonywania krokowego  
+-   Wykonywanie, oznacza to, w dalszym ciągu wyjście z trybu przechodzenia krok po kroku  
   
 -   Przechodzenie do następnej instrukcji  
   
--   Kontynuowanie bieżący tryb wykonywania krokowego  
+-   Kontynuując bieżący tryb wykonywania krokowego  
   
--   Zawieszanie wątków zawartych w programie  
+-   Zawieszanie wątków zawarte przez program  
   
--   Wznawianie wątków zawartych w programie  
+-   Wznawianie wątków zawarte przez program  
   
 > [!NOTE]
->  Wyświetlanie stos wywołań jest wdrażana w poziomie wątku. Aby wyliczyć informacji ramki, podczas wyświetlania stos wywołań dla wątku, musisz zaimplementować wszystkich metod z [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejsu.  
+>  Wyświetlanie stosu wywołań jest wdrażany na poziomie wątku. Aby wyliczyć informacji o ramce, podczas wyświetlania stos wywołań dla wątku, należy zaimplementować wszystkie metody [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejsu.  
   
 ## <a name="methods-of-program-control"></a>Metody kontroli programu  
- W poniższej tabeli przedstawiono metody [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) musi zostać wdrożone dla aparatu debugowania minimalny funkcjonalności (DE) i kontrola wykonywania.  
+ W poniższej tabeli przedstawiono metody [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) musi zostać wdrożone dla aparatu debugowania minimalny zestaw funkcjonalności (DE) i kontrola wykonywania.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Nadal uruchomione wszystkie wątki zawarty w program w stanie zatrzymania. Wymagane do wykonywania kontroli.|  
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Nadal uruchomione wszystkie wątki zawarty w program w stanie zatrzymania. Wymagane do wykonywania kontroli.|  
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Wykonuje kroku dla danego wątku. Nadal uruchomione inne wątki zawartych w programie. Wymagane do wykonywania kontroli.|  
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Nadal uruchomione wszystkie wątki zawarte przez program w stanie zatrzymania. Wymagane do wykonywania kontroli.|  
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Nadal uruchomione wszystkie wątki zawarte przez program w stanie zatrzymania. Wymagane do wykonywania kontroli.|  
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Wykonuje krok dla danego wątku. Nadal uruchomione inne wątki zawartych w programie. Wymagane do wykonywania kontroli.|  
   
- W przypadku programów wielowątkowych musi także implementować [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) — metoda i wszystkie metody [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) interfejsu.  
+ W przypadku programów wielowątkowych, należy także zaimplementować [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) metody i wszystkie metody [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) interfejsu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Zobacz także  
+ [Wykonanie kontroli i stan oceny](../../extensibility/debugger/execution-control-and-state-evaluation.md)

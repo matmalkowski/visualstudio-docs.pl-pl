@@ -1,7 +1,7 @@
 ---
 title: Dia2dump — przykład | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/24/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -15,40 +15,67 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5559d1ac2a03eaeb1dca57531cd2f19831851d3b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457829"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252284"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump — Przykład
-Dia2dump — przykład jest zainstalowany program Visual Studio i zawiera plik źródłowy Dia2dump.cpp. Skompilowany plik wykonywalny uruchamiany z poziomu wiersza polecenia i wyświetla zawartość pliku bazy danych (.pdb) całego programu.  
-  
-### <a name="to-install-the-sample"></a>Aby zainstalować przykład  
-  
-1.  Sprawdź, że komputer spełnia wszystkie wymagania dotyczące konfiguracji opisanych w strony początkowej Instalatora programu Visual Studio.  
-  
-2.  Zainstaluj program Visual Studio i wykonaj wszystkie instrukcje instalacji i konfiguracji załączone przykłady.  
-  
-#### <a name="to-build-the-sample"></a>Aby samodzielnie tworzyć przykładowy  
-  
-1.  Otwórz plik Dia2dump.sln w programie Visual Studio. (Jeśli to konieczne, Visual Studio najpierw pomoże Ci uaktualniania projektu dia2dump —.)  
-  
-2.  Na stronach właściwości projektu w **C/C++** &#124; **ogólne** &#124; **dodatkowe katalogi dołączenia** właściwości, określ `..\DIA SDK\include` katalogu. Gwarantuje to, że kompilator można znaleźć pliku dia2.h.  
-  
-3.  Na **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.  
-  
-4.  Zamknij program Visual Studio.  
-  
-#### <a name="to-run-the-sample"></a>Aby uruchomić przykładowy  
-  
-1.  Otwórz wiersz polecenia i wpisz następujące polecenie:  
-  
-    ```  
-    dia2dump filename  
-    ```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Plik źródłowy Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Port, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+
+Dia2dump — przykład pokazuje, jak tworzenie zapytania pliku PDB, aby uzyskać informacje przy użyciu Microsoft debugowanie interfejsu dostępu Software Development Kit (DIA SDK).
+
+Dia2dump — przykład został zainstalowany przy użyciu programu Visual Studio i zawiera pliki rozwiązań i źródła. Skompilowany plik wykonywalny jest uruchamiany z wiersza polecenia. Umożliwia wyświetlanie zawartości pliku bazy danych (PDB) całego programu, lub po prostu sekcje interesuje Cię.
+
+## <a name="install-the-sample"></a>Zainstaluj próbki
+
+Próbka jest zainstalowany, po wybraniu **programowanie aplikacji klasycznych w języku C++** obciążenie w Instalatorze programu Visual Studio. Aby uzyskać informacje na temat sposobu instalowania programu Visual Studio i wybierz konkretnych obciążeń oraz poszczególnych składników, zobacz [Zainstaluj program Visual Studio](../../install/install-visual-studio.md).
+
+Po zainstalowaniu przykładu jest w katalogu instalacji programu Visual Studio, w podkatalogu o nazwie \DIA SDK\Samples\DIA2Dump.
+
+## <a name="build-the-sample"></a>Skompilować przykład
+
+Domyślnie katalog instalacyjny jest chronionym katalogu. Oznacza to, że należy użyć wiersz polecenia dla deweloperów lub wystąpienia programu Visual Studio do tworzenia i edytowania przykładowe rozwiązanie w tej lokalizacji. Aby uprościć kompilacji, zalecamy najpierw skopiuj pliki z katalogu próbki do innego katalogu, takie jak folder w folderze dokumenty, a następnie skompilować przykład.
+
+### <a name="to-build-the-dia2dump-sample-in-visual-studio"></a>Aby zbudować dia2dump — przykład w programie Visual Studio
+
+1. Otwórz plik DIA2Dump.sln w programie Visual Studio. Jeśli rozwiązanie nie został skopiowany do innego katalogu, monit może ponownie program Visual Studio z podniesionymi uprawnieniami.
+
+1. W **Eksploratora rozwiązań**, wybierz projekt dia2dump — (nie rozwiązanie).
+
+1. Otwórz projekt **stron właściwości** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Praca z właściwościami projektu](/cpp/ide/working-with-project-properties).
+
+1. Otwórz **właściwości konfiguracji** > **C/C++** > **ogólne** stronę właściwości.
+
+1. W **dodatkowe katalogi dołączenia** właściwości, wybierz formant listy rozwijanej, a następnie wybierz **Edytuj**.
+
+1. W **dodatkowe katalogi dołączenia** wprowadź okna dialogowego, w polu edycji `$(VSInstallDir)DIA SDK\include` katalogu. Dodaj ten katalog w celu zagwarantowania, że kompilator może odnaleźć pliku dia2.h. Wybierz **OK** Aby zapisać zmiany.
+
+1. Wybierz **OK** Aby zapisać zmiany we właściwościach projektu.
+
+1. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**. Domyślnie program Visual Studio tworzy wersję debugowania przykładu znajduje się w podkatalogu katalogu rozwiązania debugowania.
+
+1. Zamknij program Visual Studio.
+
+### <a name="to-build-the-dia2dump-sample-at-the-command-line"></a>Aby zbudować dia2dump — przykład w wierszu polecenia
+
+1. W oknie wiersza polecenia dla deweloperów przejdź do katalogu, gdzie kopiowane pliki przykładowe. Jeśli jeszcze nie został skopiowany plik do innego katalogu, należy użyć podwyższonym poziomem uprawnień (Uruchom jako administrator) okno wiersza polecenia dla deweloperów.
+
+1. Wprowadź polecenie `nmake makefile` do tworzenia konfiguracji debugowania domyślne dia2dump.exe.
+
+## <a name="run-the-dia2dump-sample"></a>Uruchom dia2dump — przykład
+
+Dia2Dump.exe opiera się na msdia*wersji*DLL modelu COM serwera zapewnienie usług. W programie Visual Studio 2015 i Visual Studio 2017 wersja jest biblioteki msdia140.dll. Jeśli msdia*wersji*nie można zainicjować serwera COM DLL, należy zarejestrować go dia2dump.exe może pracować. Katalog DIA SDK ma podkatalogu pojemnika, który zawiera x86 wersję biblioteki DLL. Wersja x64 architektury maszyn w bin\amd64, a wersja dla ARM jest bin\arm. Aby zarejestrować bibliotekę dll, otworzyć podwyższone okno Wiersz polecenia dla deweloperów, a następnie przejdź do katalogu zawierającego wersję dla architektury maszyny. Wprowadź polecenie `regsvr32 msdia140.dll` do zarejestrowania serwera COM.
+
+### <a name="to-run-the-sample"></a>Aby uruchomić przykład
+
+1. Otwórz wiersz polecenia i przejdź do katalogu, który zawiera dia2dump.exe zbudowanego działka.
+
+1. Wprowadź polecenie `dia2dump filename` gdzie *filename* to nazwa pliku PDB, aby sprawdzić. Jeśli plik PDB znajduje się w innym katalogu, należy użyć pełnej ścieżki do pliku jako *filename*. To polecenie wyświetla wszystkie dane w pliku PDB.
+
+1. Dia2dump — ma inne opcje, aby wyświetlić tylko wybrane informacje. Użyj `dia2dump -?` polecenie, aby wyświetlić listę wszystkich dostępnych opcji.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  

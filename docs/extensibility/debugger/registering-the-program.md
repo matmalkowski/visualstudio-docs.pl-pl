@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126306"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251156"
 ---
-# <a name="registering-the-program"></a>Rejestrowanie programu
-Po aparat debugowania uzyskała portu, reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania programu do debugowania jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu program jest dostępny do debugowania za pomocą jednej z następujących sposobów:  
+# <a name="register-the-program"></a>Rejestrowanie programu
+Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania debugowania programu jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu programu jest dostępna do debugowania za pomocą jednej z następujących sposobów:  
   
--   Proces dołączania, dzięki czemu debuger przejęcie kontroli debugowania uruchomionej aplikacji.  
+-   Proces dołączania, która pozwala debugerowi na przejęcie kontroli debugowania z działającej aplikacji.  
   
--   Just-in-time (JIT) debugowania, co umożliwia debugowanie po fakcie program, który działa niezależnie od debugera. Architektura środowiska wykonawczego przechwytuje usterki, Debuger jest powiadamiany o przed systemu operacyjnego lub środowisko uruchomieniowe zwalnia pamięć i zasoby źle działający program.  
+-   Just-in-time (JIT) debugowania, który pozwala na debugowanie po fakcie program, który działa niezależnie od debugera. Architektura środowiska wykonawczego przechwytuje usterki, Debuger jest powiadamiany przed systemu operacyjnego lub środowisko uruchomieniowe zwalnia pamięć i zasoby programu łagodne.  
   
 ## <a name="registering-procedure"></a>Rejestrowanie procedury  
   
-#### <a name="to-register-your-program"></a>Aby zarejestrować program  
+### <a name="to-register-your-program"></a>Aby zarejestrować program  
   
-1.  Wywołanie [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody implementowane przez port.  
+1.  Wywołaj [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody implementowane przez port.  
   
-     `IDebugPortNotify2::AddProgramNode` wskaźnik do wymaga [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.  
+     `IDebugPortNotify2::AddProgramNode` wymaga aby wskazywał [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.  
   
-     Zazwyczaj podczas ładowania programu systemu operacyjnego oraz środowisko wykonawcze tworzy węzeł programu. Jeśli aparat debugowania (DE) jest proszony o załadować program DE tworzy i rejestruje węzła programu.  
+     Zazwyczaj podczas ładowania programu systemie operacyjnym lub w środowisku uruchomieniowym tworzy węzeł program. Jeśli aparat debugowania (Niemcy) jest pytanie, aby załadować program, DE tworzącego i rejestrującego węzła programu.  
   
-     W poniższym przykładzie przedstawiono aparat debugowania, otwierając program i rejestrując ją z portem.  
+     Aparat debugowania, uruchamiając program i rejestrując ją za pomocą portu można znaleźć w poniższym przykładzie.  
   
     > [!NOTE]
-    >  To nie jest jedynym sposobem na uruchamianie i wznowić proces; to jest głównie przykład rejestrowania programu z portem.  
+    >  Ten przykładowy kod nie jest jedynym sposobem, aby uruchomić i wznowić procesu; Ten kod jest głównie przykładem rejestrowania programu z portem.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  
@@ -107,6 +107,6 @@ Po aparat debugowania uzyskała portu, reprezentowany przez [IDebugPort2](../../
   
     ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie do portu](../../extensibility/debugger/getting-a-port.md)   
- [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)   
+ [Włączanie programu do debugowania](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

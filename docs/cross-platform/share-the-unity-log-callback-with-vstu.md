@@ -10,18 +10,18 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 31fa20bd4fd5a28e705198f9112e309e627871cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 817bc7b53c9b8e9579e46158cfbc04b7cbcbdee1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060008"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252215"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Udostępnianie wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU
-Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika Unity, aby można było strumienia jego konsoli dla programu Visual Studio. Jeśli Edytor skryptów również zarejestrowane wywołanie zwrotne dziennika środowiska Unity, wywołania zwrotnego pomocą rozszerzenia VSTU może zakłócać wywołanie zwrotne. Aby zapobiec tej możliwości, użyj `VisualStudioIntegration.LogCallback` zdarzeń do współpracy za pomocą rozszerzenia VSTU.
+Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika przy użyciu aparatu Unity, aby móc przesyłać strumieniowo jego konsoli w programie Visual Studio. Edytor skryptów również zarejestrować wywołanie zwrotne dziennika przy użyciu aparatu Unity, wywołanie zwrotne w narzędziach VSTU może zakłócać wywołanie zwrotne. Aby zapobiec tej możliwości, użyj `VisualStudioIntegration.LogCallback` zdarzenie, aby współpracować za pomocą rozszerzenia VSTU.
 
 ## <a name="demonstrates"></a>Demonstracje
- Jak udostępnić wywołanie zwrotne dziennika Unity, które zostały utworzone przez Visual Studio Tools for Unity.
+ Jak udostępnić wywołania zwrotnego dziennika środowiska Unity, które zostały utworzone przez program Visual Studio Tools for Unity.
 
 ## <a name="example"></a>Przykład
 
@@ -46,5 +46,5 @@ public class LogCallbackHook
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
- [Przykład: Generowanie pliku projektu](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>Zobacz także
+ [Przykładzie: Generowanie pliku projektu](../cross-platform/customize-project-files-created-by-vstu.md)

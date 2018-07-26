@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji dla platformy uniwersalnej systemu Windows (UWP) | Dokumentacja firmy Microsoft
+title: Twórz aplikacje dla platformy Universal Windows (UWP) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 10/24/2017
 ms.technology:
@@ -11,47 +11,47 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d8de5ea7f4e42ba8a0e37bc982b38633b8bf53f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281602"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251543"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
-Za pomocą platformy uniwersalnej systemu Windows i naszego jednego rdzenia systemu Windows można uruchomić tej samej aplikacji na dowolnym urządzeniu z systemem Windows 10 z telefonów do komputerów stacjonarnych. Tworzenie tych aplikacji uniwersalnych systemu Windows z programu Visual Studio i narzędzia deweloperskie uniwersalnej aplikacji systemu Windows.
+Dzięki platformie Universal Windows i naszych jednego rdzenia Windows można uruchamiać tę samą aplikację na dowolnym urządzeniu systemu Windows 10, od telefonów do komputerów stacjonarnych. Tworzenie aplikacji Universal Windows za pomocą programu Visual Studio i narzędzia do programowania uniwersalnych aplikacji Windows.
 
- ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![Platforma Universal Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
 
- Uruchamianie aplikacji na telefon Windows 10, Windows 10 desktop lub Xbox. To tego samego pakietu aplikacji! Wprowadzenie core jednej, ujednoliconej systemu Windows 10 jeden pakiet aplikacji umożliwia uruchamianie na wszystkich platformach. Wiele platform mają rozszerzenie zestawów SDK, które można dodać do aplikacji w taki sposób, aby móc korzystać z zachowania specyficzne dla platformy. Na przykład rozszerzenia SDK dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołanie rozszerzenia SDK w projekcie, wystarczy dodać sprawdzanie czasu wykonania, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. To, jak może mieć tej samej pakiet aplikacji dla poszczególnych platform!
+ Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. To ten sam pakiet aplikacji! Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Różnych platform, mają rozszerzenie SDK, które można dodać do aplikacji, aby skorzystać z zachowań określonych platform. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz rozszerzenie SDK w projekcie, wystarczy dodać testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. To, jak może mieć ten sam pakiet aplikacji dla każdej platformy.
 
- **Co to jest Windows core?**
+ **Co to jest podstawowa Windows?**
 
- Po raz pierwszy systemu Windows ma został zrefaktoryzowany mają wspólne rdzeni na wszystkich platformach systemu Windows 10. Istnieje jeden wspólne źródło, co typowe jądra systemu Windows, jeden stos we/wy pliku i jednego modelu aplikacji. Dla interfejsu użytkownika istnieje tylko jeden framework XAML interfejsu użytkownika i jeden framework interfejsu użytkownika HTML. Można skoncentrować się na tworzenie wspaniałych aplikacji, ponieważ ułatwiliśmy ułatwia mieć aplikację, uruchom na różnych urządzeniach z systemem Windows 10.
+ Po raz pierwszy Windows ma zostały zaprojektowane od nowa w zapewnienie wspólnej podstawy na wszystkich platformach systemu Windows 10. Istnieje jeden wspólne źródło, jednej wspólnej jądra Windows, jeden stos operacji We/Wy plików i jednego modelu aplikacji. Dla interfejsu użytkownika istnieje tylko jeden struktury interfejsu użytkownika XAML i jednej struktury interfejsu użytkownika HTML. Możesz skoncentrować się na tworzeniu wspaniałych aplikacji, ponieważ wprowadziliśmy go łatwo aplikacji na różnych urządzeniach z systemem Windows 10.
 
- **Co to jest dokładnie platformy uniwersalnej systemu Windows?**
+ **Co to dokładnie jest platformy uniwersalnej Windows?**
 
-Platforma uniwersalna systemu Windows jest po prostu kolekcji kontrakty i wersje. Umożliwiają one należy do obiektu docelowego, których można uruchomić aplikacji. Nie jest już docelową będzie system operacyjny; teraz zostanie rozpoczęta dla przynajmniej jednej rodziny urządzeń. Dowiedz się więcej szczegółów, odczytując [wprowadzenie do platformy uniwersalnej systemu Windows](/windows/uwp/get-started/universal-application-platform-guide).
+Platformy uniwersalnej Windows jest po prostu kolekcją umów i wersji. Te pozwalają na docelowy, gdzie można uruchomić aplikacji. Nie jest już docelowy system operacyjny; Teraz możesz wskazać przynajmniej jednego urządzenia z rodzin. Dowiedz się więcej szczegółów, czytając [wprowadzenie do platformy uniwersalnej Windows](/windows/uwp/get-started/universal-application-platform-guide).
 
 ## <a name="requirements"></a>Wymagania
- Narzędzia deweloperskie uniwersalnej aplikacji systemu Windows są dostarczane z emulatory, których można zobaczyć, jak wygląda aplikacji na różnych urządzeniach. Jeśli chcesz użyć te emulatory, musisz zainstalować tego oprogramowania na komputerze fizycznym. Fizyczny komputer należy uruchomić Windows 8.1 (x64) Professional edition lub nowszy, i mieć procesor obsługujący funkcję Hyper-V klienta i translację adresów drugiego poziomu (SLAT). Nie można użyć emulatorów, po zainstalowaniu programu Visual Studio na maszynie wirtualnej.
+ Narzędzia do programowania uniwersalnych aplikacji Windows są dostarczane z emulatorów, które można użyć, aby zobaczyć, jak wygląda aplikacja na różnych urządzeniach. Aby użyć tych emulatorów, musisz zainstalować to oprogramowanie na komputerze fizycznym. Komputer fizyczny, należy uruchomić Windows 8.1 (x64) Professional edition lub nowszy, i mieć procesor obsługujący funkcję Hyper-V klienta i translację adresów drugiego poziomu (SLAT). Nie można użyć emulatorów, gdy program Visual Studio jest zainstalowany na maszynie wirtualnej.
 
  Poniżej przedstawiono listę oprogramowania, które są potrzebne:
 
--   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 obsługuje programowanie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [obsługiwane platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
+-   [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalne obciążenie rozwoju platformy uniwersalnej systemu Windows.
+-   [Program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
 
      ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
 
-Po zainstalowaniu tego oprogramowania, musisz włączyć urządzenia z systemem Windows 10 na potrzeby programowania. Zobacz [włączyć urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Nie są już potrzebne licencję dewelopera dla każdego urządzenia z systemem Windows 10.
+Po zainstalowaniu tego oprogramowania, należy włączyć urządzenia z systemem Windows 10 do tworzenia aplikacji. Zobacz [włączyć urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Nie potrzebujesz już licencję dewelopera dla każdego urządzenia z systemem Windows 10.
 
-## <a name="universal-windows-apps"></a>Aplikacje uniwersalne systemu Windows
-Wybierz język programowanie preferowanego języka C#, Visual Basic, C++ lub JavaScript umożliwiające utworzenie aplikacji platformy uniwersalnej systemu Windows dla urządzeń z systemem Windows 10. Odczyt [tworzenie pierwszej aplikacji](/windows/uwp/get-started/your-first-app) lub Obejrzyj [narzędzi dla systemu Windows 10 — omówienie](http://channel9.msdn.com/Series/ConnectOn-Demand/229) wideo.
+## <a name="universal-windows-apps"></a>Universal Windows apps
+Wybierz język preferowany programowania w języku C#, Visual Basic, C++ lub JavaScript do tworzenia aplikacji Universal Windows Platform dla urządzeń z systemem Windows 10. Odczyt [Utwórz swoją pierwszą aplikację](/windows/uwp/get-started/your-first-app) lub Obejrzyj [narzędzia dla systemu Windows 10 — omówienie](http://channel9.msdn.com/Series/ConnectOn-Demand/229) wideo.
 
-Jeśli masz istniejące aplikacje Sklepu Windows 8.1, aplikacje Windows Phone 8.1 lub aplikacji uniwersalnych systemu Windows, które zostały utworzone za pomocą programu Visual Studio 2015, konieczne będzie port tych aplikacji, aby użyć najnowszej platformy uniwersalnej systemu Windows. Zobacz [przenoszenia ze środowiska wykonawczego systemu Windows 8.x do platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
+Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal aplikacje, które zostały utworzone przy użyciu programu Visual Studio 2015, konieczne będzie portu tych aplikacji mają być użyj najnowszej wersji uniwersalnej platformy Windows. Zobacz [przenoszenie ze środowiska wykonawczego Windows 8.x do platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
 
-Po utworzeniu aplikacji uniwersalnych systemu Windows, należy spakować aplikację, aby ją zainstalować na urządzeniu z systemem Windows 10 lub przesłać je do Sklepu Windows. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
+Po utworzeniu aplikacji Universal Windows, należy spakować aplikację, aby go zainstalować na urządzeniu z systemem Windows 10 lub przesłać go do Windows Store. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Zobacz także
-[Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+[Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

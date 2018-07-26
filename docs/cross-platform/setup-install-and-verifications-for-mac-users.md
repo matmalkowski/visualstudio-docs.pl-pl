@@ -11,12 +11,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: f0c4193d68eabd5a5427629cb9a4c7a3be18db3c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924284"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251923"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 
@@ -30,7 +30,7 @@ Aby pracować za pomocą platformy Xamarin na komputerze Mac, będą potrzebne n
 
     -   **Do uruchamiania programu Xamarin Studio bezpośrednio na komputerze Mac:** Xamarin Studio to środowisko programistyczne dla platformy Xamarin, które obsługuje tworzenie aplikacji systemu Android, iOS i Windows przy użyciu języka C#.  Aby uzyskać szybki przegląd programu Xamarin Studio, zobacz [Omówienie programu Xamarin Studio](https://xamarin.com/studio) (strony xamarin.com).
 
-    -   **Jeśli masz już Parallels lub VMWare skonfigurowane na komputerze Mac:** uruchamianie Windows za pomocą programu Visual Studio 2017 i platformy Xamarin wewnątrz Parallels lub VMWare.  W przypadku tej konfiguracji platformy Xamarin to rozszerzenie, które jest instalowane z Visual Studio, który zapewnia możliwość używania programu Visual Studio jako środowiska programowania do tworzenia aplikacji systemu Android, iOS i Windows przy użyciu języka C#.  Należy zwrócić uwagę na to, czy można uzyskać bezpłatną subskrypcję równoleżników 3-miesięczna jako część programu Visual Studio Developer Essentials. Zobacz [Parallels dostępu i Microsoft Visual Studio Dev Essentials będzie zawierać Parallels Desktop Pro](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (blog oprogramowania Parallels).
+    -   **Jeśli masz już Parallels lub VMWare skonfigurowane na komputerze Mac:** uruchamianie Windows za pomocą programu Visual Studio 2017 i platformy Xamarin wewnątrz Parallels lub VMWare.  W przypadku tej konfiguracji platformy Xamarin to rozszerzenie, które jest instalowane z Visual Studio, który zapewnia możliwość używania programu Visual Studio jako środowiska programowania do tworzenia aplikacji systemu Android, iOS i Windows przy użyciu języka C#.  Należy zwrócić uwagę na to, czy można uzyskać bezpłatną subskrypcję równoleżników 3-miesięczna jako część programu Visual Studio Developer Essentials. Zobacz [programu Microsoft Visual Studio Dev Essentials będzie zawierać rozwiązanie Parallels Desktop Pro i dostęp do oprogramowania Parallels](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (blog oprogramowania Parallels).
 
 Ten temat zawiera instrukcje dotyczące tych wymagań.  Proces instalacji jest uruchomiona, można przejrzeć temat [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) do odczytywania i obejrzyj materiał niezbędne tła.
 
@@ -40,9 +40,9 @@ Ten temat zawiera instrukcje dotyczące tych wymagań.  Proces instalacji jest u
 
 2.  Pobierz i zainstaluj środowisko Xcode ze [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/).
 
-3.  Pobierz i zainstaluj platformę Xamarin, postępując zgodnie z instrukcjami wyświetlanymi [Instalowanie i konfigurowanie rozszerzenia Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (strony xamarin.com).
+3.  Pobierz i zainstaluj platformę Xamarin, postępując zgodnie z instrukcjami wyświetlanymi [zainstalować i skonfigurować rozszerzenia Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (strony xamarin.com).
 
-4.  Po zakończeniu instalacji Xamarin na komputerach Mac i Windows, postępuj zgodnie z instrukcjami [nawiązywania połączenia z komputerem Mac przy użyciu XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (strony xamarin.com), dzięki czemu można pracować z systemami iOS i Mac w programie Visual Studio na Windows komputer.
+4.  Po zakończeniu instalacji Xamarin na komputerach Mac i Windows, postępuj zgodnie z instrukcjami [nawiązywanie połączenia z komputerem Mac przy użyciu XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (strony xamarin.com), dzięki czemu można pracować z systemami iOS i Mac w programie Visual Studio na komputerze Windows.
 
 ##  <a name="windows"></a> Instalator Windows wewnątrz równoleżników (Visual Studio i Xamarin)
 
@@ -74,7 +74,7 @@ Po zakończeniu instalatory Poświęć kilka minut, sprawdź, czy wszystko jest 
 
 Najpierw upewnij się, że po przejściu do podanych łączy, że masz **Xamarin Studio** zaznaczona w prawym górnym rogu, aby wyświetlić poprawną wersję dokumentacji platformy Xamarin:
 
-![Wybieranie platformy Xamarin Studio znajdują się w dokumentacji poprawne na strony Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
+![Wybierz program Xamarin Studio znajdują się w dokumentacji poprawne na strony Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
 **Android**
 
@@ -106,7 +106,7 @@ Najpierw upewnij się, że po przejściu do podanych łączy, że masz **program
 
 **iOS**
 
-1.  Upewnij się, że komputer Mac jest dostępny w sieci oraz sparowany z programem Visual Studio, zgodnie z opisem w [nawiązywania połączenia z komputerem Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (strony xamarin.com).
+1.  Upewnij się, że komputer Mac jest dostępny w sieci oraz sparowany z programem Visual Studio, zgodnie z opisem w [nawiązywanie połączenia z komputerem Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac) (strony xamarin.com).
 
 2.  Sprawdź poprawność Tworzenie projektu dla systemu iOS zgodnie z instrukcjami [tworzenie systemu iOS](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (strony xamarin.com).
 
