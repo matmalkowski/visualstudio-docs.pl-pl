@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a005ee7d624604dd716042bd839b48b7a367dd48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127021"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276341"
 ---
-# <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion — metoda
-Ustawia lub czyści stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
+# <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion, metoda
+Ustawia lub czyści stan TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Zestaw:** mscorlib (w bibliotece mscorlib.dll)  
+ **Zestaw:** mscorlib (w *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,17 +33,17 @@ Ustawia lub czyści stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 internal void SetNotificationForWaitCompletion(bool enabled)  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  `enabled`  
   
- `true` Aby ustawić bit; `false` do nie ustawiono bitu.  
+ `true` Aby ustawić bitu; `false` do nie ustawiono bitu.  
   
 ## <a name="exceptions"></a>Wyjątki  
   
 ## <a name="remarks"></a>Uwagi  
- Debuger ustawia tego bit ułatwiające krok poza treści metody asynchronicznej. Jeśli `enabled` jest `true`, ta metoda musi zostać wywołana tylko dla zadania, które nie zostało jeszcze zakończone. Jeśli `enabled` jest `false`, ta metoda może być wywołana dla zadania ukończone. W obu przypadkach można stosować tylko dla zadania zapowiadanego.  
+ Debuger ustawia ten bit ułatwiające kroku poza treści metody asynchronicznej. Jeśli `enabled` jest `true`, ta metoda musi zostać wywołana tylko na zadanie, które nie zostało jeszcze zakończone. Gdy `enabled` jest `false`, ta metoda może być wywoływana na ukończone zadania. W obu przypadkach można stosować tylko dla zadań promise stylu.  
   
 ## <a name="requirements"></a>Wymagania  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

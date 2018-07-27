@@ -1,5 +1,5 @@
 ---
-title: Kończenie działania i odłączanie | Dokumentacja firmy Microsoft
+title: Kończenie i odłączanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,20 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5af218098f6d79cf6208c66b314c35d2471af15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 143b3a266bab8ad48f7f431234d1bf50c16c9de4
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127381"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276926"
 ---
-# <a name="termination-and-detaching"></a>Kończenie działania i odłączanie
-Poniżej opisano normalne zakończenia.  
+# <a name="termination-and-detaching"></a>Kończenie i odłączanie
+W poniższej sekcji opisano normalne zakończenie.  
   
-## <a name="discussion"></a>Omówienie  
- Po [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) lub [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) interfejsu będzie nadal występować, jeśli nie ma żadnych punktów przerwania, wyjątki, błędy środowiska wykonawczego ani w aplikacji można debugować nieskończone pętle program debugowany zostanie uruchomiony do zakończenia. Jest to normalne zakończenia.  
+## <a name="discussion"></a>Dyskusja  
+ Po [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) lub [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) interfejsu będzie nadal występować, jeśli nie ma żadnych punktów przerwania, wyjątki, błędy czasu wykonywania ani pętli nieskończonej w aplikacji przeznaczonej do debugowania, wykonywanie debugowanego aż do zakończenia. Ten proces jest normalne zakończenie.  
   
- Konieczne jest wysłanie [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) do zaimplementowania normalne zakończenia. Wymaga to wykonania [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) metody.  
+ Konieczne jest wysłanie [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) do zaimplementowania normalne zakończenie. Normalne zakończenie wymaga uruchamiania [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) metody.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)

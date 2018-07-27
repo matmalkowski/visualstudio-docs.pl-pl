@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 274b23eef51bfa86e961a850de7d4c33c217995c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252339"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310088"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
 Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Zarejestrowanie `VisualStudioIntegration.ProjectFileGeneration` zdarzenia w celu zmodyfikowania pliku projektu, zawsze wtedy, gdy zostanie ponownie wygenerowany.
@@ -26,6 +26,7 @@ Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w 
 ## <a name="example"></a>Przykład
 
 ```csharp
+#if ENABLE_VSTU
 using System;
 using System.IO;
 using System.Linq;
@@ -65,6 +66,7 @@ public class ProjectFileHook
         };
     }
 }
+#endif
 ```
 
 ## <a name="see-also"></a>Zobacz także

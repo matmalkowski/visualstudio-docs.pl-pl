@@ -1,5 +1,5 @@
 ---
-title: Gdy punkt przerwania wiąże lub staje się niezwiązanego | Dokumentacja firmy Microsoft
+title: Gdy punkt przerwania powiązanie lub cofnięcie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96cd1a069535e6b03f9f2cfa541a9f2899bb77fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5bcefe50752a605a0806dc09125f1cca042dfe88
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134411"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276403"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Gdy punkt przerwania wiąże lub staje się niepowiązanych
-Gdy punkt przerwania nie może być powiązane w czasie, połączenie jest nawiązywane w przypadku [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metoda, powiązania czas i czas punktu przerwania utworzenia są różne.  
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Gdy punkt przerwania powiązanie lub cofnięcie
+Gdy nie można powiązać punkt przerwania w czasie, połączenie jest nawiązywane w przypadku [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metody, powiązanie czas i utworzyć punkt przerwania są różne.  
   
 ## <a name="methods-called"></a>Metody o nazwie  
- Menedżer debugowania sesji (SDM) wymaga następujących metod:  
+ Menedżer debugowania sesji (SDM) wywołuje następujących metod:  
   
 1.  [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Zwraca DE [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).  
   
@@ -35,7 +35,7 @@ Gdy punkt przerwania nie może być powiązane w czasie, połączenie jest nawi�
   
 4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) metodę i zwraca wartość S_OK. Wysyła DE [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) lub [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).  
   
-5.  [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) i [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) metod, aby sprawdzić, a także aby uzyskać powiązane punkty przerwania.  
+5.  [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) i [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) metody, aby sprawdzić i aby uzyskać powiązane punkty przerwania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

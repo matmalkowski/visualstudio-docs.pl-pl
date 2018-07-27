@@ -1,5 +1,5 @@
 ---
-title: Symbol dostawcy | Dokumentacja firmy Microsoft
+title: Dostawca symboli | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98a5b80126bcb11109acedc2d24f226cde3714a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d54494a8fa23e0714769863ac0fa2e5ddc1f4c2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126176"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276978"
 ---
-# <a name="symbol-provider"></a>Dostawca — symbol
-Implementacja ewaluatora wyrażenia muszą uzyskać dostęp do informacji symboliczne debugowania generowanych przez kompilator języka Aby obliczyć zmiennych i wyrażeń. Robi to przez interfejsy dostawcę symbolu (SP1), nazywany również obsługi symboli.  
+# <a name="symbol-provider"></a>Dostawca symboli
+Implementacja ewaluatora wyrażeń musi uzyskać dostęp do symbolicznej informacji debugowania generowanych przez kompilator języka, aby można było Szacowanie zmiennych i wyrażeń. Robi to za korzystanie z interfejsów dostawca symboli (SP), nazywany również obsługi symboli.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza SPs dla kodu zarządzanego, a także kod natywny przy użyciu formatu pliku symboli bazy danych programu (PDB). Chyba że istnieje silne wymagają programu użyć symboli przechowywane w niestandardowym formacie, jest zalecane używanie SPs dostarczonych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza dodatki Service Pack dla kodu zarządzanego, a także kodu macierzystego przy użyciu formatu pliku symboli bazy danych programu (PDB). Chyba że istnieje silna niezbędne do programu za pomocą symboli, przechowywane w niestandardowym formacie, zaleca się używanie dodatki Service Pack, dostarczone przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="implementation-notes"></a>Uwagi dotyczące implementacji  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Aparatami debugowania oczekiwać Porozmawiaj z SPs przy użyciu interfejsów środowiska uruchomieniowego języka wspólnego (CLR). W związku z tym SP, który będzie praca z aparatami debugowania programu Visual Studio musi obsługiwać środowiska CLR. Pełna lista wszystkich debugowanie interfejsy CLR można znaleźć w debugref.doc, który jest częścią programu [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
+## <a name="implementation-notes"></a>Uwagi o implementacji  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Silniki debugowania chcą skontaktować się z dodatki Service Pack, przy użyciu interfejsów środowiska uruchomieniowego języka wspólnego (CLR). W rezultacie dodatkiem, który będzie pracował z aparatami debugowania programu Visual Studio musi obsługiwać środowiska CLR. Pełna lista wszystkich CLR profilowanie interfejsów znajduje się w debugref.doc, który jest częścią programu [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
   
- Jeśli programu SP pracować tylko z aparat debugowania niestandardowych, można zaimplementować PS zgodnie z własnymi potrzebami w zależności od potrzeb aparat debugowania.  
+ Jeśli Twoje SP będzie pracował tylko z Twojego niestandardowego aparatu debugowania, można zaimplementować PS zgodnie z potrzebami w zależności od potrzeb silnik debugowania.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)

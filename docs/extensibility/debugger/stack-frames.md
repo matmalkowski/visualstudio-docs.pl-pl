@@ -1,5 +1,5 @@
 ---
-title: Ramki stosu | Dokumentacja firmy Microsoft
+title: Ramek stosu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feb2bc9d87486b6f83cf4b19ecec24c8c03edee5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ef19e1eaf9e98da3e774f1d0038f03c131ec45
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128002"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276718"
 ---
 # <a name="stack-frames"></a>Ramki stosu
-Pod względem architektury debugera **ramki stosu**:  
+W architekturze debugera *ramki stosu*:  
   
--   To Abstrakcja stosu, który udostępnia Kontekst wykonywania wątku. Wątek jest zawsze wykonywana w obrębie funkcji. Ramka stosu przechowuje zmiennych lokalnych, funkcji i argumenty do niego. Aby debugować z programem Visual Studio, język i środowisko debugowanego musi obsługiwać ramki stosu.  
+-   Jest klasą abstrakcyjną stosu, które dostarcza kontekst wykonanie wątku. Wątek jest zawsze wykonywane w ramach funkcji. Ramka stosu zawiera zmienne lokalne, funkcji i argumenty do niego. Aby debugować za pomocą programu Visual Studio, języka lub środowiska debugowania musi obsługiwać ramki stosu.  
   
--   Można zarówno zidentyfikować opisania siebie i może zwrócić skojarzone wątku. Ramka stosu można także wrócić kontekst kodu, która reprezentuje bieżący wskaźnik instrukcji, oraz dokumentację skojarzone i konteksty Obliczanie wyrażenia.  
+-   Można zarówno zidentyfikować opisania siebie i może zwrócić skojarzonego wątku. Ramka stosu może również zwracać kontekst kodu, który reprezentuje bieżący wskaźnik instrukcji i skojarzone dokumentacji i konteksty oceny wyrażenia.  
   
--   Ma właściwości opisują nazwy, typu i wartości zmiennych lokalnych i argumentów, a które znajdują się w różnych oknach debugowania IDE.  
+-   Ma właściwości, które opisują nazwy, typu i wartości zmiennych lokalnych i argumenty, i które znajdują się w różnych oknach debugowania środowiska IDE.  
   
--   Jest reprezentowana przez [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfejsu, zazwyczaj tworzone przez aparat debugowania (DE) lub maszyny wirtualnej w wyniku wykonania wątku.  
+-   Jest reprezentowany przez [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfejsu, zazwyczaj tworzone przez aparat debugowania (DE) lub maszyny wirtualnej w wyniku wykonywania wątku.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
