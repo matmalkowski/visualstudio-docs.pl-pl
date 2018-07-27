@@ -399,36 +399,36 @@
                   href: collecting-application-statistics-for-stand-alone-applications.md
                   items:
                     - name: Uruchamianie aplikacji autonomicznej z profilerem i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
-                      href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
                     - name: Dołączanie profilera do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
                 - name: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
                   href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                   items:
                     - name: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
-                      href: how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
-                      href: how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-native-component-and-collect-timing-data.md
                 - name: Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
                   href: collecting-concurrency-data-for-stand-alone-applications.md
                   items:
                     - name: Uruchamianie aplikacji autonomicznej .NET Framework z profilera w celu zbierania danych współbieżności przy użyciu wiersza polecenia
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
                     - name: Uruchamianie natywnej aplikacji autonomicznej z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
-                      href: how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md
                     - name: Dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych współbieżności przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Dołączanie profilera do natywnej aplikacji autonomicznej i zbieranie danych współbieżności przy użyciu wiersza polecenia
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
                 - name: Zbieranie danych pamięci .NET Framework dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
                   href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                   items:
                     - name: Uruchamianie aplikacji autonomicznej .NET Framework z profilerem w celu zbierania danych pamięci przy użyciu wiersza polecenia
-                      href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
                     - name: Dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
-                      href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci za pomocą wiersza polecenia profilera
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'Przewodnik: profilowanie wiersza polecenia przy użyciu metody próbkowania'
@@ -461,7 +461,7 @@
                     - name: Dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
                     - name: Instrumentacja statycznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
-                      href: how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md
+                      href: how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md
                     - name: Instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
                       href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
                 - name: Modyfikowanie plików Web.Config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji internetowych ASP.NET
