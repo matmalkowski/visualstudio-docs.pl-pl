@@ -49,7 +49,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
      Istnieją trzy pliki:  
         - **Host.JSON** do opisywania konfigurację globalną opcje hosta  
         - **Local.Settings.JSON** do konfigurowania ustawień usługi.  
-        -Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.  
+        - Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.  
 
     Otwórz **local.settings.json**. Domyślnie po dwa połączenia pusty ciąg ustawienia.
 
