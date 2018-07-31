@@ -1,6 +1,6 @@
 ---
-title: Sposób definiowania polecenia niestandardowych menu dla projektów języka Python
-description: Pokazuje, jak edytować pliki projektów i elementów docelowych, aby dodać niestandardowych poleceń do menu kontekstowego projektu języka Python w programie Visual Studio. Polecenia można wywołać na programów wykonywalnych, skryptów, modułów, fragmentów kodu wbudowanego i pip.
+title: Jak Definiowanie niestandardowych poleceń menu dla projektów języka Python
+description: Pokazuje, jak edytować pliki projektu i obiektów docelowych, można dodać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio. Polecenia mogą być wywoływane na programów wykonywalnych, skryptów, moduły, fragmenty kodu i narzędzia pip.
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,47 +11,47 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d6113b9c102ff367d4b41bd4780c365c1928705
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117914"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341267"
 ---
-# <a name="defining-custom-commands-for-python-projects"></a>Definiowanie niestandardowego polecenia dla projektów języka Python
+# <a name="define-custom-commands-for-python-projects"></a>Definiowanie niestandardowych poleceń dla projektów języka Python
 
-W trakcie pracy z projektów języka Python, możesz znaleźć go samodzielnie przełączenie do okna polecenia do uruchomienia określonego skrypty lub moduły, Uruchom polecenia narzędzia pip, lub uruchom dowolnego narzędzia. Aby usprawnić przepływ pracy, można dodać niestandardowe polecenia do **Python** podmenu w menu kontekstowe projektów języka Python. Tych poleceń, można uruchomić w oknie konsoli lub w oknie danych wyjściowych programu Visual Studio. Jak analizować błędów i ostrzeżeń z danych wyjściowych polecenia nakazać programowi Visual Studio umożliwia także wyrażeń regularnych.
+W trakcie pracy z Twoich projektów języka Python, może się okazać samodzielnie przełączenie do okna polecenia do uruchamiania skryptów określonych lub moduły, Uruchom polecenia pip lub uruchamiania dowolnego narzędzia. Aby poprawić wydajność pracy, możesz dodać niestandardowe polecenia, aby **Python** podmenu w menu kontekstowego projektu języka Python. Tych poleceń można uruchomić w oknie konsoli lub w oknie danych wyjściowych programu Visual Studio. Wyrażenia regularne umożliwia również poinstruować Visual Studio, jak analizować błędy i ostrzeżenia z danych wyjściowych polecenia.
 
-Domyślnie tego menu zawiera tylko jednej **Uruchom Pylint** polecenia:
+Domyślnie menu zawiera tylko jednej **Uruchom PyLint** polecenia:
 
-![Wygląd domyślny podmenu Python w menu kontekstowym projektu](media/custom-commands-default-menu.png)
+![Domyślne wyglądu podmenu języka Python w menu kontekstowym projektu](media/custom-commands-default-menu.png)
 
-Polecenia niestandardowe są wyświetlane w tym samym menu kontekstowego. Polecenia niestandardowe są dodawane do pliku projektu bezpośrednio, której odnoszą się do poszczególnych projektu. Istnieje również możliwość definiowania niestandardowych poleceń w `.targets` pliku, który można łatwo importować w wielu plikach projektów.
+Polecenia niestandardowe są wyświetlane w tym samym menu kontekstowego. Polecenia niestandardowe są dodawane do pliku projektu bezpośrednio, gdzie mają one zastosowanie do tego pojedynczego projektu. Można również definiować niestandardowe polecenia w *.targets* pliku, który można łatwo zaimportować do wielu plikach projektów.
 
-Niektóre szablony projektów języka Python w programie Visual Studio już dodać niestandardowe polecenia ich używania ich `.targets` pliku. Na przykład szablony projektów sieci Web Bottle i projektu sieci Web platformy Flask Dodaj dwa polecenia **początkowego serwera** i **początkowego debugowania serwera**. Szablon projektu sieci Web Django dodaje te same polecenia oraz kilka innych:
+Niektóre szablony projektów języka Python w programie Visual Studio już dodać niestandardowe polecenia własne przy użyciu ich *.targets* pliku. Na przykład szablony projektu sieci Web Bottle i projektu sieci Web Flask dodać dwa polecenia **spustit server** i **początkowego serwera debugowania**. Szablon projektu sieci Web Django dodaje tych tych samych poleceń, a także kilka innych:
 
-![Wygląd podmenu Python w menu kontekstowym projektu Django](media/custom-commands-django-menu.png)
+![Wyglądu podmenu języka Python w menu kontekstowym projektu Django](media/custom-commands-django-menu.png)
 
-Każdego polecenia niestandardowych mogą odwoływać się do pliku Python, moduł Python, wbudowanego kodu języka Python, dowolnego pliku wykonywalnego lub polecenie pip. Można również określić, jak i gdzie polecenie jest uruchamiane.
+Każde polecenie niestandardowe mogą odwoływać się do pliku Python, moduł języka Python, wbudowany kod języka Python, dowolnego pliku wykonywalnego lub polecenia pip. Można również określić, jak i gdzie jest uruchamiane polecenie.
 
 > [!Tip]
-> Jeśli wprowadzisz zmiany w pliku projektu w edytorze tekstu, należy ponownie załadować projekt w programie Visual Studio, aby zastosować te zmiany. Na przykład należy ponownie załadować projekt po dodaniu definicji polecenia niestandardowych dla tych poleceń, są wyświetlane w menu kontekstowym projektu.
+> Po każdym wprowadzeniu zmian do pliku projektu w edytorze tekstu, należy ponownie załadować projekt w programie Visual Studio, aby zastosować te zmiany. Na przykład należy ponownie załadować projekt po dodaniu polecenie niestandardowe definicje dla tych poleceń, które ma być wyświetlana w menu kontekstowym projektu.
 >
-> Jak wiadomo, Visual Studio umożliwia edytowanie bezpośrednio pliku projektu. Najpierw kliknij prawym przyciskiem myszy plik projektu i wybierz opcję **Zwolnij projekt**, ponownie kliknij prawym przyciskiem myszy i wybierz **Edytuj (nazwa projektu)** otworzyć projektu w edytorze programu Visual Studio. Następnie należy i Zapisz zmiany, ponownie kliknij prawym przyciskiem myszy projekt i wybierz **Załaduj ponownie projekt**, który również wyświetli monit o potwierdzenie zamknięcia pliku projektu w edytorze.
+> Jak wiadomo, program Visual Studio udostępnia środki do bezpośredniego edytowania pliku projektu. Najpierw kliknij prawym przyciskiem myszy plik projektu i wybierz **Zwolnij projekt**, a następnie ponownie kliknij prawym przyciskiem myszy i wybierz **Edytuj \<Nazwa projektu >** otworzyć projektu w edytorze programu Visual Studio. Następnie utworzyć i zapisać zmiany, ponownie kliknij prawym przyciskiem myszy projekt i wybierz **Załaduj ponownie projekt**, który także wyświetli monit o potwierdzenie zamknięcia pliku projektu w edytorze.
 >
-> Podczas tworzenia polecenia niestandardowych, jednak te klika przycisk może stać się nużące. Większa wydajność przepływu pracy, załadować projektu programu Visual Studio i również otworzyć `'.pyproj` plik w edytorze oddzielne całkowicie (takie jak inne wystąpienie programu Visual Studio, Visual Studio Code, Notatnik itp.). Podczas zapisywania zmian w edytorze i przełączenia na program Visual Studio, Visual Studio wykrywa zmiany i zapyta, czy ponowne załadowanie projektu ("(nazwa) projektu został zmodyfikowany poza środowiskiem."). Wybierz **Załaduj ponownie** i zmiany są natychmiast stosowane tylko w jednym kroku.
+> Podczas tworzenia niestandardowych poleceń, jednak te klika przycisk może stać się uciążliwe. To bardziej wydajne przepływu pracy, załadowanie projektu w programie Visual Studio i również otworzyć *.pyproj* plik w edytorze oddzielne całkowicie (takich jak inne wystąpienie programu Visual Studio, Visual Studio Code, program Notatnik, itp.). Podczas zapisywania zmian w edytorze i przełącz się do programu Visual Studio, Visual Studio wykrywa zmiany i zapyta, czy ponownie załadować projektu (**projektu \<name > został zmodyfikowany poza środowiskiem.**). Wybierz **Załaduj ponownie** i zmiany są natychmiast stosowane w tylko jednym kroku.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Wskazówki: Dodawanie polecenia do pliku projektu
 
-Aby zapoznać się z niestandardowych poleceń, w tej sekcji przeprowadzi Cię przez prosty przykład wykonywana bezpośrednio za pomocą python.exe pliku uruchomienia projektu. (Takiego polecenia skutecznie jest taka sama jak przy użyciu **Debuguj > Uruchom bez debugowania**.)
+Zapoznać się z niestandardowych poleceń, w tej sekcji przedstawiono prosty przykład jest uruchamiany plik startowy projektu bezpośrednio przy użyciu *python.exe*. (Takie polecenie skutecznie jest taka sama jak za pomocą **debugowania** > **Uruchom bez debugowania**.)
 
-1. Tworzenie nowego projektu o nazwie "Python-CustomCommands" przy użyciu szablonu "Python aplikacji". (Zobacz [Szybki Start: Tworzenie projektu języka Python z szablonu](quickstart-02-python-in-visual-studio-project-from-template.md) instrukcje, jeśli nie znasz już z procesem.)
+1. Utwórz nowy projekt o nazwie "Python-CustomCommands" przy użyciu **aplikację w języku Python** szablonu. (Zobacz [Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu](quickstart-02-python-in-visual-studio-project-from-template.md) Aby uzyskać instrukcje, jeśli nie znasz już z procesem.)
 
-1. W `Python_CustomCommands.py`, Dodaj kod `print("Hello custom commands")`.
+1. W *Python_CustomCommands.py*, Dodaj kod `print("Hello custom commands")`.
 
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**, wybierz pozycję **Python**i zwróć uwagę, że jest tylko polecenie, które pojawia się podmenu **Uruchom PyLint**. Niestandardowych poleceń pojawiają się w tej samej podmenu.
+1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**, wybierz opcję **Python**i zwróć uwagę, że jest tylko polecenie, które pojawia się podmenu **Uruchom PyLint**. Niestandardowych poleceń pojawiają się w tej samej podmenu.
 
-1. Zgodnie z sugestią podaną w wprowadzenie, otwórz `Python-CustomCommands.pyproj` w osobnego edytora tekstu. Następnie dodaj następujące wiersze na końcu pliku wewnątrz zamknięcia `</Project>` i Zapisz plik.
+1. Zgodnie z sugestią we wstępie, otwórz *Python CustomCommands.pyproj* w edytorze tekstów oddzielne. Następnie dodaj następujące wiersze na końcu pliku znajdujący się wewnątrz zamykającym `</Project>` i Zapisz plik.
 
     ```xml
     <PropertyGroup>
@@ -61,9 +61,9 @@ Aby zapoznać się z niestandardowych poleceń, w tej sekcji przeprowadzi Cię p
     </PropertyGroup>
     ```
 
-1. Przełącza z powrotem do programu Visual Studio i wybierz **Załaduj ponownie** po monituje o zmianie pliku. Następnie sprawdź **Python** menu ponownie, aby zobaczyć, które **Uruchom PyLint** nadal jest jedynym elementem w nim wyświetlone ponieważ wiersze zostały dodane tylko replikować domyślnie `<PythonCommands>` właściwości grupy zawierające PyLint polecenie.
+1. Przejdź z powrotem do programu Visual Studio i wybierz **Załaduj ponownie** po wyświetleniu monitu o zmianie pliku. Następnie sprawdź **Python** menu ponownie, aby zobaczyć, że **Uruchom PyLint** nadal jest jedynym elementem w nim wyświetlone ponieważ wiersze dodawanych tylko replikacja domyślnie `<PythonCommands>` grupy właściwości zawierającej PyLint polecenie.
 
-1. Przełącz się do edytora z pliku projektu i dodaj następującą `<Target>` definicji po `<PropertyGroup>`. Zgodnie z objaśnieniem w dalszej części tego artykułu, to `Target` element definiuje niestandardowe polecenie do uruchomienia przy użyciu pliku (określone przez właściwość "StartupFile") uruchamiania `python.exe` w oknie konsoli. Atrybut `ExecuteIn="consolepause"` używa konsoli, która oczekuje na naciśnięcie klawisza przed zamknięciem.
+1. Przejdź do edytora z pliku projektu i dodaj następującą `<Target>` definicji po `<PropertyGroup>`. Zgodnie z opisem w dalszej części tego artykułu, to `Target` element definiuje niestandardowe polecenia uruchomienia pliku (określone przez właściwość "StartupFile") przy użyciu *python.exe* w oknie konsoli. Ten atrybut `ExecuteIn="consolepause"` używa konsoli, która oczekuje na naciśnij dowolny klawisz, przed zamknięciem.
 
     ```xml
     <Target Name="Example_RunStartupFile" Label="Run startup file" Returns="@(Commands)">
@@ -78,7 +78,7 @@ Aby zapoznać się z niestandardowych poleceń, w tej sekcji przeprowadzi Cię p
     </Target>
     ```
 
-1. Dodaj wartość element docelowy `Name` atrybutu `<PythonCommands>` właściwości grupy dodane wcześniej, dlatego, że element wygląda jak poniższy kod. Dodawanie do tej listy nazwę elementu docelowego jest co dodaje go do **Python** menu.
+1. Dodaj wartość elementu docelowego `Name` atrybutu `<PythonCommands>` grupy właściwości dodane wcześniej, więc, że element wygląda jak poniższy kod. Dodawanie nazwę docelowej do tej listy to, co dodaje go do **Python** menu.
 
     ```xml
       <PythonCommands>
@@ -87,28 +87,28 @@ Aby zapoznać się z niestandardowych poleceń, w tej sekcji przeprowadzi Cię p
       </PythonCommands>
     ```
 
-    Jeśli chcesz, aby polecenia wyświetlany przed nazwami zdefiniowanymi w `$(PythonCommands)`, umieść je przed tokenu.
+    Jeśli chcesz, aby Twoje polecenie, aby pojawić się przed tymi określonymi w `$(PythonCommands)`, umieść je przed tego tokenu.
 
-1. Zapisz plik projektu, przełącz się do programu Visual Studio i ponownie Załaduj projekt po wyświetleniu monitu. Następnie kliknij prawym przyciskiem myszy projekt "Python CustomCommands" i wybierz **Python**. Powinny pojawić się **Uruchom plik uruchamiania** elementu menu. Jeśli nie widzisz element menu, sprawdź dodania nazwa `<PythonCommands>` elementu. Zobacz też [Rozwiązywanie problemów](#troubleshooting) dalszej części tego artykułu.
+1. Zapisz plik projektu, przełącz się do programu Visual Studio i ponownie Załaduj projekt po wyświetleniu monitu. Kliknij prawym przyciskiem myszy **Python CustomCommands** projektu, a następnie wybierz **Python**. Powinien zostać wyświetlony **Uruchom plik startowy** elementu menu. Jeśli nie widzisz pozycji menu, sprawdź, dodano nazwę aby `<PythonCommands>` elementu. Zobacz też [Rozwiązywanie problemów](#troubleshooting) w dalszej części tego artykułu.
 
-    ![Polecenia niestandardowych znajdujących się w podmenu kontekstu Python](media/custom-commands-walkthrough-menu-item.png)
+    ![Polecenie niestandardowe, które pojawiają się w podmenu kontekst języka Python](media/custom-commands-walkthrough-menu-item.png)
 
-1. Wybierz **Uruchom plik uruchamiania** polecenia i powinna zostać wyświetlona okno polecenia pojawiają się od tekstu "Hello niestandardowych poleceń" następuje "naciśnij dowolny klawisz, aby kontynuować. . .".  Naciśnij dowolny klawisz, aby zamknąć okno.
+1. Wybierz **Uruchom plik startowy** polecenia i powinien zostać wyświetlony okno polecenia, są wyświetlane z tekstem **Hello niestandardowych poleceń** następuje **naciśnij dowolny klawisz, aby kontynuować**.  Naciśnij dowolny klawisz, aby zamknąć okno.
 
-    ![Dane wyjściowe polecenia niestandardowych w oknie konsoli](media/custom-commands-walkthrough-console.png)
+    ![Dane wyjściowe polecenia niestandardowe w oknie konsoli](media/custom-commands-walkthrough-console.png)
 
-1. Powrócić do edytora z pliku projektu i zmienić wartość `ExecuteIn` atrybutu `output`. Zapisz plik, przełącz się do programu Visual Studio ponownie Załaduj projekt i wywołaj polecenie ponownie. Teraz zostanie wyświetlony wyjściowy program są wyświetlane w programie Visual Studio **dane wyjściowe** okno:
+1. Powrócić do edytora przy użyciu pliku projektu i zmień wartość właściwości `ExecuteIn` atrybutu `output`. Zapisz plik, przełącz się do programu Visual Studio, Załaduj ponownie projekt i wywołać polecenie ponownie. Teraz widać, że program danych wyjściowych są wyświetlane w programie Visual Studio **dane wyjściowe** okna:
 
-    ![Dane wyjściowe polecenia niestandardowych w oknie danych wyjściowych](media/custom-commands-walkthrough-output-window.png)
+    ![Dane wyjściowe polecenia niestandardowe w oknie danych wyjściowych](media/custom-commands-walkthrough-output-window.png)
 
-1. Aby dodać więcej poleceń, zdefiniuj odpowiedniej `<Target>` elementu dla każdego polecenia Dodaj nazwę elementu docelowego do `<PythonCommands>` grupy właściwości i ponownie Załaduj projekt w programie Visual Studio.
+1. Aby dodać więcej poleceń, należy zdefiniować odpowiednią `<Target>` elementu dla każdego polecenia, Dodaj nazwę obiektu docelowego do `<PythonCommands>` grupy właściwości i ponownie Załaduj projekt w programie Visual Studio.
 
 >[!Tip]
-> Jeśli wywołanie polecenia, że używa właściwości projektu, takie jak `($StartupFile)`i polecenie kończy się niepowodzeniem, ponieważ token jest niezdefiniowana, Visual Studio wyłącza polecenie do momentu ponownego załadowania projektu. Wprowadzanie zmian do projektu, określające właściwość, jednak nie Odśwież stan tych poleceń, należy ponownie załadować projekt w takich przypadkach.
+> Jeśli wywołujesz polecenia, że używa właściwości projektu, taki jak `($StartupFile)`, a polecenie kończy się niepowodzeniem, ponieważ token jest niezdefiniowana, po ponownym załadowaniu projektu program Visual Studio wyłącza polecenie. Wprowadzanie zmian do projektu, który zdefiniuje właściwość, jednak nie powoduje odświeżenia stan tych poleceń, więc nadal należy ponownie załadować projekt w takich przypadkach.
 
-## <a name="command-target-structure"></a>Polecenie strukturze docelowej
+## <a name="command-target-structure"></a>Struktura docelowa polecenia
 
-Ogólny kształt `<Target>` element jest wyświetlany w poniższym pseudo kodzie:
+Ogólna postać `<Target>` element jest wyświetlany w poniższym pseudo kodzie:
 
 ```xml
 <Target Name="Name1" Label="Display Name" Returns="@(Commands)">
@@ -128,15 +128,15 @@ Ogólny kształt `<Target>` element jest wyświetlany w poniższym pseudo kodzie
   </Target>
 ```
 
-Aby odwołać się do właściwości projektu lub zmiennych środowiskowych zawartych w wartości atrybutu, użyj nazwy w `$()` token, takich jak `$(StartupFile)` i `$(MSBuildProjectDirectory)`. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Aby odwołać się do właściwości projektu lub zmiennych środowiskowych w wartości atrybutów, użyj nazwy w ramach `$()` tokenów, takich jak `$(StartupFile)` i `$(MSBuildProjectDirectory)`. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
-### <a name="target-attributes"></a>Atrybuty docelowego
+### <a name="target-attributes"></a>Atrybuty docelowe
 
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
-| Nazwa | Tak | Identyfikator polecenia w ramach projektu programu Visual Studio. Ta nazwa musi zostać dodany do `<PythonCommands>` właściwości grupy dla polecenia w podmenu Python. |
-| Etykieta | Tak | Nazwa wyświetlana interfejsu użytkownika zostanie wyświetlony w podmenu Python. |
-| Zwraca | Tak | Musi zawierać `@(Commands)`, który wskazuje element docelowy jako polecenia. |
+| Nazwa | Tak | Identyfikator polecenia w ramach projektu programu Visual Studio. Ta nazwa musi zostać dodany do `<PythonCommands>` grupy właściwości dla polecenia ma być wyświetlana w podmenu języka Python. |
+| Etykieta | Tak | Nazwa wyświetlana interfejsu użytkownika jest wyświetlana w podmenu języka Python. |
+| Zwraca | Tak | Musi zawierać `@(Commands)`, który identyfikuje element docelowy jako polecenie. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Atrybuty CreatePythonCommandItem
 
@@ -144,45 +144,45 @@ Wszystkie wartości atrybutów jest rozróżniana wielkość liter.
 
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
-| Element TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z argumentami atrybutu:<ul><li>**wykonywalny**: uruchomienia pliku wykonywalnego o nazwie w celu dołączania wartości argumentów, tak jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom `python.exe` z nazwą pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: Uruchom kodu wbudowanego zawarte w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**PIP**: Uruchom `pip` przy użyciu polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn ma ustawioną wartość "output", jednak zakłada pip `install` poleceń i używa docelowy jako nazwę pakietu.</li></ul> |
-| Docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub pip polecenia do użycia, w zależności od TargetType. |
-| Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje) ma zostać przypisany do obiektu docelowego. Należy pamiętać, że po TargetType `script`, argumenty są podane z programem Python nie `python.exe`. Ignorowane dla `code` TargetType. |
-| ExecuteIn | Tak | Określa środowisko, w którym uruchomienia polecenia:<ul><li>**Konsola**: (domyślnie) uruchamia docelowy i argumenty tak, jakby ich zostaną wprowadzone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, podczas gdy elementem docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: tej samej konsoli, ale oczekuje na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w oknie danych wyjściowych w programie Visual Studio. Jeśli element TargetType "pip", Visual Studio wykorzystuje docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [okna interaktywnego Python](python-interactive-repl-in-visual-studio.md); opcjonalna nazwa wyświetlana jest używany jako tytuł okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
-| WorkingDirectory | Optional | Folder, w którym można uruchomić polecenie. |
-| ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości Określ wyrażenie regularne, z którym program Visual Studio analizuje dane wyjściowe polecenia, aby wyświetlić błędy i ostrzeżenia w oknie Lista błędów. Jeśli nie zostanie określony, polecenie nie dotyczy w oknie Lista błędów. Aby uzyskać więcej informacji, w jaki Visual Studio oczekuje, zobacz [grup przechwytywania o nazwie](#named-capture-groups-for-regular-expressions). |
-| RequiredPackages | Optional | Listę wymagań dotyczących pakietu dla polecenia przy użyciu tego samego formatu co [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Uruchom PyLint** polecenia, na przykład Określa `pylint>=1.0.0`. Przed uruchomieniem polecenia, programu Visual Studio sprawdza, czy są zainstalowane wszystkie pakiety na liście. Aby zainstalować wszystkie brakujące pakiety programu Visual Studio korzysta pip. |
-| Środowisko | Optional | Ciąg zmiennych środowiskowych, aby zdefiniować przed uruchomieniem polecenia. Używa każdej zmiennej w postaci nazwa = wartość, gdy wiele zmiennych, oddzielając je średnikami. Zmienna z wieloma wartościami musi być zawarty w pojedynczym lub podwójnym cudzysłowie, podobnie jak w "Nazwa = wartość1; WARTOŚĆ2 ". |
+| TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z atrybutem argumenty:<ul><li>**wykonywalny**: Uruchom plik wykonywalny o nazwie w lokalizacji docelowej, dodając wartość w argumentach, tak, jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom *python.exe* przy użyciu nazwy pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: uruchamianie kodu wbudowanego znajdujących się w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**Narzędzie PIP**: Uruchom `pip` za pomocą polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn jest ustawiona na "wyjściowe", jednak zakłada pip `install` polecenia i używa docelowy jako nazwę pakietu.</li></ul> |
+| Docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub polecenia pip do użycia, w zależności od TargetType. |
+| Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje), oferowanie element docelowy. Należy pamiętać, że po TargetType `script`, podano argumentów do programu Python nie *python.exe*. Ignorowane dla `code` TargetType. |
+| ExecuteIn | Tak | Określa środowisko, w którym należy uruchomić polecenie:<ul><li>**Konsola**: (ustawienie domyślne) uruchamia obiektu docelowego i argumenty, tak jakby one są umieszczone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, a docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: takie Same jak konsoli, ale czeka na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w **dane wyjściowe** okna w programie Visual Studio. Jeśli TargetType "pip", Visual Studio używa docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [Python Interactive](python-interactive-repl-in-visual-studio.md) okno; opcjonalnie wyświetlana nazwa jest używana dla tytułu okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
+| WorkingDirectory | Optional | Folder, w którym należy uruchomić polecenie. |
+| ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości określić wyrażenie regularne, za pomocą których program Visual Studio analizuje dane wyjściowe, aby wyświetlić błędy i ostrzeżenia w polecenia jego **lista błędów** okna. Jeśli nie zostanie określony, polecenie nie ma wpływu na **lista błędów** okna. Aby uzyskać więcej informacji, w jaki program Visual Studio oczekuje, zobacz [nazwanych grup przechwytywania](#named-capture-groups-for-regular-expressions). |
+| RequiredPackages | Optional | Listę wymagań dotyczących pakietu dla polecenia, używając tego samego formatu co [ *requirements.txt* ](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Uruchom PyLint** polecenia, na przykład Określa `pylint>=1.0.0`. Przed uruchomieniem polecenia, programu Visual Studio sprawdza, czy są zainstalowane wszystkie pakiety na liście. Visual Studio używa pip, aby zainstalować wszystkie brakujące pakiety. |
+| Środowisko | Optional | Ciąg zmiennych środowiskowych w celu definiowania przed uruchomieniem polecenia. Każda zmienna używa formularza \<NAME > =\<wartość > wiele zmiennych, oddzielając je średnikami. Zmienna z wieloma wartościami muszą być zawarte w pojedynczym lub podwójnym cudzysłowie, jak w "Nazwa = wartość1; WARTOŚĆ2 ". |
 
-#### <a name="named-capture-groups-for-regular-expressions"></a>Grup przechwytywania o nazwie dla wyrażeń regularnych
+#### <a name="named-capture-groups-for-regular-expressions"></a>Funkcji przechwytywania o nazwie grupy dla wyrażeń regularnych
 
-Podczas analizowania błędów i ostrzeżeń z danych wyjściowych polecenia, programu Visual Studio oczekuje wyrażeń regularnych w `ErrorRegex` i `WarningRegex` wartości należy użyć następującego o nazwie grupy:
+Podczas analizowania błędów i ostrzeżeń z danych wyjściowych polecenia, programu Visual Studio oczekuje wyrażeń regularnych w `ErrorRegex` i `WarningRegex` wartości należy użyć następującego nazwanych grup:
 
 - `(?<message>...)`: Tekst błędu
 - `(?<code>...)`: Kod błędu
-- `(?<filename>...)`: Nazwa pliku, dla którego zgłaszany jest błąd
-- `(?<line>...)`: Numer wiersza lokalizacja pliku, dla którego zgłosił błąd.
-- `(?<column>...)`: Numer kolumny Lokalizacja pliku, dla którego zgłosił błąd.
+- `(?<filename>...)`: Nazwa pliku, dla której zgłaszany jest błąd
+- `(?<line>...)`: Numer wiersza lokalizacji w pliku, dla której zgłaszany jest błąd.
+- `(?<column>...)`: Numer kolumny w lokalizacji w pliku, dla której zgłaszany jest błąd.
 
-Na przykład PyLint tworzy ostrzeżenia mają następującą postać:
+Na przykład PyLint generuje ostrzeżenia o następującej postaci:
 
 ```output
 ************* Module hello
 C:  1, 0: Missing module docstring (missing-docstring)
 ```
 
-Aby umożliwić Visual Studio, aby wyodrębnić odpowiednie informacje z takich ostrzeżeń i wyświetlić je w **listy błędów** okna, `WarningRegex` wartość **Uruchom Pylint** polecenia jest następujący:
+Aby programowi Visual Studio wyodrębnić właściwe informacje z takich ostrzeżeń i wyświetlić je w **lista błędów** oknie `WarningRegex` wartość **Uruchom Pylint** polecenia jest następująca:
 
 ```regex
 ^(?<filename>.+?)\((?<line>\d+),(?<column>\d+)\): warning (?<msg_id>.+?): (?<message>.+?)$]]
 ```
 
-(Należy pamiętać, że `msg_id` wartości faktycznie powinna być `code`, zobacz [3680 problem](https://github.com/Microsoft/PTVS/issues/3680).)
+(Należy pamiętać, że `msg_id` wartość powinna być faktycznie `code`, zobacz [3680 problem](https://github.com/Microsoft/PTVS/issues/3680).)
 
-## <a name="creating-a-targets-file-with-custom-commands"></a>Tworzenie pliku .targets za pomocą polecenia niestandardowych
+## <a name="create-a-targets-file-with-custom-commands"></a>Utwórz plik .targets za pomocą polecenia niestandardowe
 
-Definiowanie niestandardowych poleceń w pliku projektu udostępnia ten plik projektu. Użycie poleceń w wielu plikach projektów, możesz zamiast tego Zdefiniuj `<PythonCommands>` właściwości grupy, a wszystkie Twoje `<Target>` elementów w `.targets` pliku. Można następnie zaimportować do pojedyncze pliki projektu.
+Definiowanie niestandardowych poleceń w pliku projektu udostępnia je do tego pliku projektu. Aby użyć poleceń w wielu plikach projektów, możesz zamiast tego Zdefiniuj `<PythonCommands>` właściwości grupy i wszystkie Twoje `<Target>` elementów w *.targets* pliku. Następnie można zaimportować ten plik do indywidualnych plików projektu.
 
-`.targets` Plik jest sformatowany w następujący sposób:
+*.Targets* plik jest sformatowany w następujący sposób:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -201,20 +201,20 @@ Definiowanie niestandardowych poleceń w pliku projektu udostępnia ten plik pro
 </Project>
 ```
 
-Aby załadować `.targets` plików do projektu, umieść `<Import Project="(path)">` elementu w obrębie `<Project>` elementu. Na przykład, jeśli istnieje plik o nazwie `CustomCommands.targets` w `targets` podfolderu w projekcie, użyj następującego kodu:
+Ładowanie *.targets* plik do projektu, umieść `<Import Project="(path)">` element w obrębie `<Project>` elementu. Na przykład, jeśli istnieje plik o nazwie *CustomCommands.targets* w *cele* podfolderu w projekcie, użyj następującego kodu:
 
 ```xml
 <Import Project="targets/CustomCommands.targets"/>
 ```
 
 > [!Note]
-> Przy każdej zmianie `.targets` pliku, należy ponownie załadować *rozwiązania* zawierający projekt, nie tylko projektu.
+> Zawsze, gdy zmienisz *.targets* pliku, należy ponownie załadować *rozwiązania* zawierający projekt, nie tylko projekt.
 
 ## <a name="example-commands"></a>Przykładowe polecenia
 
-### <a name="run-pylint-module-target"></a>Uruchom PyLint (moduł docelowy)
+### <a name="run-pylint-module-target"></a>Spustit PyLint (obiekt docelowy modułu)
 
-Poniższy kod zostanie wyświetlony w `Microsoft.PythonTools.targets` pliku:
+Poniższy kod, który pojawia się w *Microsoft.PythonTools.targets* pliku:
 
 ```xml
 <PropertyGroup>
@@ -239,9 +239,9 @@ Poniższy kod zostanie wyświetlony w `Microsoft.PythonTools.targets` pliku:
 </Target>
 ```
 
-### <a name="run-pip-install-with-a-specific-package-pip-target"></a>Uruchomienie instalacji narzędzia pip z określonego pakietu (pip docelowy)
+### <a name="run-pip-install-with-a-specific-package-pip-target"></a>Uruchom instalację narzędzia pip z określonego pakietu (obiekt docelowy adresu pip)
 
-Następujące polecenie uruchamia `pip install my-package` w oknie danych wyjściowych. Można użyć polecenia, takich jak podczas tworzenia pakietu i testowania instalacji. Należy pamiętać, że docelowy zawiera nazwę pakietu, a nie `install` polecenia, które przyjęto, że przy użyciu `ExecuteIn="output"`.
+Następujące polecenie uruchamia `pip install my-package` w **dane wyjściowe** okna. Można użyć polecenia programu podczas tworzenia pakietu i testowania jej instalacji. Należy pamiętać, że docelowy zawiera nazwę pakietu, a nie od `install` polecenia przyjęto, że podczas korzystania `ExecuteIn="output"`.
 
 ```xml
 <PropertyGroup>
@@ -256,7 +256,7 @@ Następujące polecenie uruchamia `pip install my-package` w oknie danych wyjśc
 </Target>
 ```
 
-### <a name="show-outdated-pip-packages-pip-target"></a>Pokaż przestarzałe pip pakiety (pip docelowy)
+### <a name="show-outdated-pip-packages-pip-target"></a>Pokaż przestarzałe pakiety pip (obiekt docelowy adresu pip)
 
 ```xml
 <PropertyGroup>
@@ -288,9 +288,9 @@ Następujące polecenie, po prostu działa `where` pokazanie Python pliki w fold
 </Target>
 ```
 
-### <a name="run-server-and-run-debug-server-commands"></a>Uruchom serwer i debugowania wykonywania polecenia serwera
+### <a name="run-server-and-run-debug-server-commands"></a>Uruchom serwer i debugowanie wykonywania polecenia serwera
 
-Aby zapoznać się z jak **początkowego serwera** i **początkowego debugowania serwera** poleceń dla projektów sieci web są zdefiniowane, sprawdź [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
+Aby poznać sposób, w jaki **początkowego serwera** i **początkowego serwera debugowania** poleceń dla projektów sieci web są zdefiniowane, sprawdź [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
 
 ### <a name="install-package-for-development"></a>Zainstaluj pakiet do tworzenia aplikacji
 
@@ -307,7 +307,7 @@ Aby zapoznać się z jak **początkowego serwera** i **początkowego debugowania
   </Target>
 ```
 
-*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używane z uprawnieniami.*
 
 ### <a name="generate-windows-installer"></a>Generowanie Instalatora Windows
 
@@ -326,7 +326,7 @@ Aby zapoznać się z jak **początkowego serwera** i **początkowego debugowania
   </Target>
 ```
 
-*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używane z uprawnieniami.*
 
 ### <a name="generate-wheel-package"></a>Generuj pakiet wheel
 
@@ -346,23 +346,23 @@ Aby zapoznać się z jak **początkowego serwera** i **początkowego debugowania
 </Target>
 ```
 
-*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używane z uprawnieniami.*
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-### <a name="message-the-project-file-could-not-be-loaded"></a>Komunikat o błędzie: "plik projektu nie można załadować"
+### <a name="message-the-project-file-could-not-be-loaded"></a>Komunikat o błędzie: "w pliku projektu nie można załadować"
 
-Wskazuje, czy masz błędów składni w pliku projektu. Komunikat zawiera konkretny błąd o numerze wiersza i znaku na pozycji.
+Oznacza, że błędy składni w pliku projektu. Komunikat zawiera konkretny błąd o numerze wiersza i położenie znaku.
 
-### <a name="console-window-closes-immediately-after-command-is-run"></a>Zamyka okno konsoli od razu po uruchomieniu polecenia
+### <a name="console-window-closes-immediately-after-command-is-run"></a>Zamyka okno konsoli, natychmiast, po uruchomieniu polecenia
 
 Użyj `ExecuteIn="consolepause"` zamiast `ExecuteIn="console"`.
 
-### <a name="command-does-not-appear-on-the-menu"></a>Polecenie nie jest wyświetlane w menu
+### <a name="command-does-not-appear-on-the-menu"></a>Nie ma polecenia menu
 
-Sprawdź, czy polecenie jest zawarte w `<PythonCommands>` grupy właściwości, oraz że nazwę na liście polecenia zgodny nazwa określona w `<Target>` elementu.
+Upewnij się, że polecenie znajduje się w `<PythonCommands>` grupy właściwości i czy nazwa na liście polecenia odpowiada nazwie określonej w `<Target>` elementu.
 
-Na przykład w następujących elementach z nazwą "Example" w grupie właściwości nie jest zgodna z nazwą "ExampleCommand" w elemencie docelowym. Programu Visual Studio nie znaleźć polecenia o nazwie "Example", więc zostanie wyświetlone żadne polecenie. Użyj "ExampleCommand" na liście polecenia lub zmień nazwę elementu docelowego "Example" tylko.
+Na przykład w następujących elementów, z nazwą "Przykład" w grupie właściwości nie jest zgodna z nazwą "ExampleCommand" w elemencie docelowym. Program Visual Studio nie odnajdzie polecenie o nazwie "Przykładowy", więc pojawia się żadne polecenie. Użyj "ExampleCommand" na liście polecenia albo tylko zmienić nazwę elementu docelowego "Przykład".
 
 ```xml
   <PropertyGroup>
@@ -373,22 +373,22 @@ Na przykład w następujących elementach z nazwą "Example" w grupie właściwo
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Komunikat o błędzie: Wystąpił błąd podczas uruchamiania (nazwa polecenia). Nie można pobrać polecenia (Nazwa docelowego) z projektu.
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Komunikat o błędzie: "Wystąpił błąd podczas uruchamiania \<nazwa polecenia >. Nie można pobrać polecenia \<target-name > z projektu. "
 
 Oznacza to, że zawartość `<Target>` lub `<CreatePythonCommandItem>` elementy są nieprawidłowe. Możliwe przyczyny:
 
 - Wymagane `Target` atrybut jest pusty.
-- Wymagane `TargetType` jest pusta lub zawiera nierozpoznaną wartość atrybutu.
-- Wymagane `ExecuteIn` jest pusta lub zawiera nierozpoznaną wartość atrybutu.
+- Wymagane `TargetType` atrybutu jest pusta lub zawiera obsahuje nerozpoznanou hodnotu.
+- Wymagane `ExecuteIn` atrybutu jest pusta lub zawiera obsahuje nerozpoznanou hodnotu.
 - `ErrorRegex` lub `WarningRegex` został określony bez ustawienia `ExecuteIn="output"`.
-- Nierozpoznany atrybuty istnieje w elemencie. Na przykład użyto `Argumnets` (zapisana) zamiast `Arguments`.
+- Nierozpoznany istnieją atrybuty w elemencie. Na przykład, być może użyto `Argumnets` (czytelną) zamiast `Arguments`.
 
-Wartości atrybutów może być pusta, odwołując się do właściwości, która nie jest zdefiniowany. Na przykład, jeśli używasz token `$(StartupFile)` , ale plik uruchomienia nie została zdefiniowana w projekcie, a następnie token jest rozpoznawany jako ciąg pusty. W takich przypadkach możesz określić wartość domyślną. Na przykład **uruchamiania serwera** i **serwer uruchamiania debugowania** poleceń zdefiniowanych w Bottle, Flask, i domyślnie szablony projektów Django `manage.py` , jeśli nie określono inaczej pliku uruchamiania serwera we właściwościach projektu.
+Wartości atrybutów może być pusta, jeśli odwołujesz się do właściwości, która nie jest zdefiniowana. Na przykład, jeśli przy użyciu tokenu `$(StartupFile)` , ale nie plik startowy został zdefiniowany w projekcie, a następnie token jest rozpoznawany jako ciąg pusty. W takich przypadkach można określić wartość domyślną. Na przykład **uruchom serwer** i **serwera debugowania Uruchom** polecenia zdefiniowane w Bottle, Flask, i domyślnie szablony projektów Django *manage.py* Jeśli jeszcze tego nie inny sposób określony plik startowy serwera we właściwościach projektu.
 
 ### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Program Visual Studio zawiesza się i ulega awarii podczas uruchamiania polecenia
 
-Prawdopodobnie w przypadku próby uruchomienia polecenia konsoli z `ExecuteIn="output"`, w którym to przypadku programu Visual Studio może ulec awarii próby przeprowadzenia analizy danych wyjściowych. Zamiast nich należy używać słów kluczowych `ExecuteIn="console"`. (Zobacz [wystawiać 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Prawdopodobnie próbuje uruchomić polecenie konsoli z `ExecuteIn="output"`, w którym to przypadku programu Visual Studio może ulec awarii próby przeprowadzenia analizy danych wyjściowych. Zamiast nich należy używać słów kluczowych `ExecuteIn="console"`. (Zobacz [wystawiać 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
-### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operate-program-or-batch-file"></a>Wykonywalny polecenia "nie jest rozpoznawana jako polecenie wewnętrzne lub zewnętrzne, działanie programu lub pliku wsadowego"
+### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>Polecenia pliku wykonywalnego "nie został rozpoznany jako polecenie wewnętrzne lub zewnętrzne, program wykonywalny lub plik wsadowy"
 
-Korzystając z `TargetType="executable"`, wartość w `Target` musi być *tylko* bez żadnych argumentów, takie jak "python" lub "python.exe" tylko nazwę programu. Przenieś wszystkie argumenty `Arguments` atrybutu.
+Korzystając z `TargetType="executable"`, wartość w `Target` musi być *tylko* nazwy bez argumentów, takich jak program *python* lub *python.exe* tylko. Przenieś wszystkie argumenty `Arguments` atrybutu.

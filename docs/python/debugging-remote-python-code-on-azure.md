@@ -1,6 +1,6 @@
 ---
-title: Debugowanie zdalne z Python platformy Azure
-description: Jak skonfigurować usługę aplikacji Azure używać programu Visual Studio zdalne debugowanie aplikacji Python.
+title: Zdalne debugowanie przy użyciu języka Python platformy Azure
+description: Jak skonfigurować usługi Azure App Service, aby użyć programu Visual Studio zdalne debugowanie aplikacji w języku Python.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,43 +11,45 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92fd9cf7c81b0b383a185a76eaaf5a3bfc8b93a5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057983"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341790"
 ---
-# <a name="remotely-debugging-python-code-on-azure"></a>Zdalne debugowanie kodu Python na platformie Azure
+# <a name="remotely-debug-python-code-on-azure"></a>Zdalne debugowanie kodu w języku Python na platformie Azure
 
-[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) umożliwia zdalne debugowanie kodu języka Python, który działa na usłudze Azure App Service. W odróżnieniu od prostego zdalnego debugowania, w tym scenariuszu komputer docelowy nie jest bezpośrednio dostępny za pośrednictwem protokołu TCP, więc program Visual Studio udostępnia serwer proxy, który opisuje protokół debugera za pośrednictwem protokołu HTTP. Projektów utworzonych za pomocą szablonu sieci Web automatycznie skonfigurować ten serwer proxy w wygenerowanym `web.debug.config` pliku. Zdalne debugowanie jest włączona podczas publikowania konfiguracji debugowania projektu, zgodnie z opisem w [publikowania w usłudze Azure App Service] (publishing-python-web-applications-do-azure-from-visual-studio.md.
+[Obsługa języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) umożliwia zdalne debugowanie kodu w języku Python, który działa w usłudze Azure App Service. W odróżnieniu od prostego zdalnego debugowania komputera docelowego, w tym scenariuszu nie jest bezpośrednio dostępny za pośrednictwem protokołu TCP, więc program Visual Studio udostępnia serwer proxy, który udostępnia protokół debuger za pośrednictwem protokołu HTTP. Projekty utworzone za pomocą szablonu sieci Web automatycznie skonfigurować ten serwer proxy w wygenerowanym *web.debug.config* pliku. Zdalne debugowanie jest włączona po opublikowaniu **debugowania** konfigurację projektu zgodnie z opisem na [Publikuj w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-Ponieważ Azure debugowania zdalnego używa gniazda sieci web, sockets musi być włączony dla aplikacji usługi za pośrednictwem [portalu Azure](https://portal.azure.com) , przechodząc do **Ustawienia > Ustawienia aplikacji** i włączając  **Ustawienia ogólne > sieci Web sockets** do **na**, wybierając **zapisać** do zastosowania zmiany. (Należy pamiętać, że **debugowanie** ustawienia nie są stosowane do debugowania języka Python.)
+Ponieważ zdalne debugowanie platformy Azure używa gniazda sieci web, gniazda musi być włączona dla usługi App Service za pośrednictwem [witryny Azure portal](https://portal.azure.com) , przechodząc do **ustawienia** > **ustawień aplikacji**  włączając **ustawienia ogólne** > **Web sockets** do **na**, a następnie wybierając pozycję **Zapisz**do zastosowania zmiany. (Należy pamiętać, że **debugowanie** ustawienia nie są stosowane do debugowania języka Python.)
 
-![Włączanie gniazda sieci web w portalu Azure](media/azure-remote-debugging-enable-web-sockets.png)
+![Włączanie gniazda sieci web w witrynie Azure portal](media/azure-remote-debugging-enable-web-sockets.png)
 
-Po projektu jest prawidłowo wdrożony i gniazda sieci web jest włączona, możesz dołączyć do usługi App Service z **Eksploratora serwera** w programie Visual Studio (**Widok > Eksploratora serwera**). Zlokalizuj witryny w obszarze **Azure > App Service** i grupy do odpowiednich zasobów, kliknij prawym przyciskiem myszy i wybierz **dołączanie debugera (Python)**. ( **Dołączyć debuger** command jest aplikacji .NET do uruchamiania usług IIS i przydaje się tylko wtedy, gdy .NET hostowane kod z aplikacji języka Python.)
+## <a name="attach-with-server-explorer"></a>Dołącz za pomocą Eksploratora serwera
 
-Visual Studio może przejść bezpośrednio do zestawu instrukcje dotyczące dołączania bezpośrednio, zgodnie z poniższym opisem w [Dołączanie bez Eksploratora serwera](#attaching-without-server-explorer). Jeśli nie widzisz **dołączanie debugera (Python)** polecenia lub programu Visual Studio nie może dołączyć do swojej witryny, zobacz [Rozwiązywanie problemów z Azure zdalne debugowanie](debugging-remote-python-code-on-azure-troubleshooting.md).
+Gdy projekt jest prawidłowo wdrożony i gniazda sieci web jest włączona, możesz dołączyć do usługi App Service z **Eksploratora serwera** w programie Visual Studio (**widoku** > **Eksploratora serwera**). Znajdź witryny w ramach **Azure** > **usługi App Service** i pasujące zasoby grupy, kliknij prawym przyciskiem myszy i wybierz **dołączanie debugera (Python)**. ( **Dołączyć debuger** polecenie dla aplikacji .NET działających w ramach usług IIS i przydaje się tylko wtedy, gdy .NET współprowadzącym kodu wraz z aplikacji w języku Python.)
 
-W przypadku pomyślnego nawiązania Podłączanie programu Visual Studio zmienia się na widok debugera. Pasek narzędzi wskazuje, takich jak debugowanym procesie `wss://` identyfikatora URI:
+Visual Studio może przejść bezpośrednio do zestawu instrukcje dotyczące dołączania bezpośrednio, zgodnie z poniższym opisem w [Dołącz bez Eksploratora serwera](#attach-without-server-explorer). Jeśli nie widzisz **dołączanie debugera (Python)** polecenia lub programu Visual Studio kończy się niepowodzeniem do dołączenia do swojej witryny, zobacz [zdalnego debugowania do rozwiązywania problemów z języka Python i platformą Azure](debugging-remote-python-code-on-azure-troubleshooting.md).
 
-![Profilowanie witryny sieci Web usługi aplikacji Azure](media/azure-remote-debugging-attached.png)
+Jeśli dołączanie zakończy się pomyślnie, Visual Studio przełącza widok debugera. Pasek narzędzi wskazuje, takich jak debugowanego procesu `wss://` identyfikatora URI:
 
-Po dołączeniu działanie debugowania jest przeważnie taka sama jak w przypadku regularnego zdalnego debugowania mogą ulec kilka ograniczeń. W szczególności serwer sieci web usług IIS obsługuje żądania przychodzącego, który deleguje je do kodu Python przez FastCGI ma limit czasu dla obsługi żądań, która domyślnie określa 90 sekund. Jeśli obsługa żądania trwa dłużej niż ten limit czasu (na przykład ze względu na proces wstrzymana w punkcie przerwania), usługi IIS kończy proces kończy sesję debugowania. 
+![Debugowanie witryny sieci Web w usłudze Azure App Service](media/azure-remote-debugging-attached.png)
 
-## <a name="attaching-without-server-explorer"></a>Dołączanie bez Eksploratora serwera
+Po dołączeniu środowisko debugowania jest przeważnie taka sama, jak w przypadku regularnego debugowania zdalnego podlegających kilku ograniczeniom. W szczególności serwer sieci web usług IIS, obsługujący żądania przychodzące i deleguje je do kodu w języku Python za pomocą interfejsu FastCGI ma limit czasu dla obsługi żądań, którego wartość domyślna to 90 sekund. Jeśli obsługa żądanie dłużej niż ten limit czasu (na przykład z powodu proces wstrzymane w punkcie przerwania), usługi IIS kończy proces zakończenia sesji debugowania. 
 
-Aby dołączyć debuger bezpośrednio w usłudze App Service, postępuj zgodnie z instrukcjami na stronie informacje o serwera proxy protokołu WebSocket wdrażającej do swojej witryny w Visual Studio `<site_url>/ptvsd` takich jak `ptvsdemo.azurewebsites.net/ptvsd`. Również odwiedzić tę stronę sprawdza, czy został poprawnie skonfigurowany:
+## <a name="attach-without-server-explorer"></a>Dołącz bez Eksploratora serwera
 
-![Azure strony informacji serwera proxy debugowania zdalnego](media/azure-remote-debugging-proxy-info-page.png)
+Aby dołączyć debuger bezpośrednio w usłudze App Service, postępuj zgodnie z instrukcjami na stronie informacje o serwera proxy protokołu WebSocket, który program Visual Studio wdroży do witryny w  *\<site_url > / ptvsd* takich jak  *ptvsdemo.azurewebsites.NET/ptvsd*. Również odwiedzić tę stronę sprawdza, czy serwer proxy jest skonfigurowany poprawnie:
 
-Zgodnie z instrukcją, należy utworzyć adres URL przy użyciu klucza tajnego z `web.debug.config`, jest generowany ponownie projekt zostanie opublikowana. Ten plik jest ukryty domyślnie w Eksploratorze rozwiązań i nie jest uwzględniony w projekcie, dlatego Pokaż wszystkie pliki lub otworzyć go w edytorze oddzielne. Po otwarciu pliku przyjrzeć się wartość appSetting o nazwie `WSGI_PTVSD_SECRET`:
+![Usługa Azure strona informacji o serwera proxy debugowania zdalnego](media/azure-remote-debugging-proxy-info-page.png)
 
-![Określanie punktu końcowego debugera w usłudze Azure App Service](media/azure-remote-debugging-secret.png)
+Zgodnie z instrukcjami, skonstruować adres URL przy użyciu klucza tajnego z *web.debug.config*, zostanie ponownie wygenerowany za każdym razem, gdy projekt zostanie opublikowany. Ten plik jest domyślne ukryty, w **Eksploratora rozwiązań** i dlatego nie jest uwzględniony w projekcie, Pokaż wszystkie pliki lub otworzyć go w edytorze oddzielne. Po otwarciu pliku Przyjrzyj się wartość appSetting o nazwie `WSGI_PTVSD_SECRET`:
 
-Adres URL, należy teraz ma postać `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` gdzie Zastąp &lt;klucz tajny&gt;i &lt;nazwa_witryny&gt; w ciągu o określonej wartości.
+![Określanie punktu końcowego usługi Azure App Service w debugerze](media/azure-remote-debugging-secret.png)
 
-Aby dołączyć debuger, wybierz **debugowania > dołączyć do procesu**, wybierz pozycję **zdalnego debugowania języka Python** w **transportu** listy rozwijanej, wprowadź adres URL do  **Pole tekstowe kwalifikator**, i naciśnij klawisz Enter. Jeśli program Visual Studio może nawiązywać połączeń z usługi aplikacji, zawiera jeden proces Python na liście. Wybierz go, a następnie **Attach** można rozpocząć debugowania:
+Adres URL, teraz należy znajduje się w formularzu `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` gdzie Zastąp &lt;klucz tajny&gt;i &lt;nazwa_witryny&gt; w ciągu przy użyciu określonych wartości.
 
-![Przy użyciu Dołącz do procesu okna dialogowego do dołączenia do usługi Azure witryny sieci web](media/azure-remote-debugging-manual-attach.png)
+Aby dołączyć debuger, wybierz pozycję **debugowania** > **dołączyć do procesu**, wybierz opcję **zdalnego debugowania w języku Python** w **transportu**listy rozwijanej, wprowadź adres URL do **textbox kwalifikator**i naciśnij klawisz **Enter**. Jeśli program Visual Studio można pomyślnie nawiązać usługi App Service, zawiera jeden proces języka Python na liście. Zaznacz go i następnie **Dołącz** można rozpocząć debugowania:
+
+![Za pomocą Dołącz do procesu okna dialogowego do dołączania do witryny sieci web systemu Azure](media/azure-remote-debugging-manual-attach.png)

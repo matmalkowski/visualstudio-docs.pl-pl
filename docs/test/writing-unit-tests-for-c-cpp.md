@@ -1,5 +1,5 @@
 ---
-title: Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
+title: Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,75 +9,75 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238355"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341375"
 ---
-# <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
+# <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
-Możesz wpisać i uruchom testy jednostkowe C++ za pomocą **Eksploratora testów** okna, podobnie jak w przypadku innych języków. Aby uzyskać więcej informacji o korzystaniu z **Eksploratora testów**, zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md).
+Można napisać i Uruchamianie testów jednostkowych C++ za pomocą **Eksplorator testów** okna, podobnie jak w przypadku innych języków. Aby uzyskać więcej informacji o korzystaniu z **Eksplorator testów**, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md).
 
 > [!NOTE]
-> Niektóre funkcje, takie jak Live testów jednostkowych, kodowanych testów interfejsu użytkownika i IntelliTest nie są obsługiwane dla języka C++.
+> Niektóre funkcje, takie jak Live Unit Testing, kodowanych testów interfejsu użytkownika i funkcji IntelliTest nie są obsługiwane dla języka C++.
 
-Visual Studio zawiera tych platform testów C++ z nie dodatkowe pliki do pobrania wymagane:
+Program Visual Studio zawiera następujące struktury testów języka C++ z żadnych dodatkowych plików do pobrania wymagane:
 
-- Microsoft testu jednostkowego Framework dla języka C++
+- Microsoft testowania jednostkowego dla języka C++
 - Google Test
 - Boost.Test
-- CTest
+- Narzędzia CTest
 
-Oprócz zainstalowanych struktur można napisać własny adapter testowy dla dowolnego framework chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych z **Eksploratora testów** okna. Kilka kart innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+Oprócz zainstalowanych platform można napisać własne rozszerzenia test adapter for niezależnie od framework, które chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych za pomocą **Eksploratora testów** okna. Kilka kart sieciowych innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 **Visual Studio 2017, wersja 15.5**
 
-- **Adapter testowy Google** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Wybrano szablon projektu, które można dodać do rozwiązania za pomocą **Dodawanie nowego projektu** menu kontekstowego w węźle rozwiązania w **Eksploratora rozwiązań**i można skonfigurować za pomocą opcji **narzędzia | Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj Google testu w programie Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test Adapter** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Ma ona szablon projektu, można dodać do rozwiązania za pośrednictwem **Dodaj nowy projekt** menu kontekstowe dla węzła rozwiązania w **Eksploratora rozwiązań**i opcje, które można skonfigurować za pomocą **narzędzia**  >  **Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj platformy Google Test w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jest zintegrowany z **Eksploratora testów** , ale obecnie nie ma szablonu projektu, dlatego należy go ręcznie skonfigurować. Aby uzyskać więcej informacji, zobacz [porady: Użyj Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Jest zintegrowana z usługą **Eksplorator testów** , ale obecnie nie ma szablonu projektu, w związku z tym musi być ręcznie skonfigurowany. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** pomocy technicznej jest dołączana do [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jednak CTest nie jest jeszcze pełni zintegrowana z **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [porady: Użyj CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
+- **Narzędzia CTest** pomoc techniczna jest uwzględniona w [narzędzia CMake dla programu Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) składnika, który jest częścią programu **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak narzędzia CTest nie jest jeszcze w pełni zintegrowana z **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [porady: Używanie narzędzia CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
 
-**Visual Studio 2015 i starsze wersje**
+**Visual Studio 2015 i starsze**
 
-Możesz pobrać adapter testowy Google i Boost.Test karty rozszerzeń dla programu Visual Studio Marketplace w [Adapter testowy dla Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) i [karty testu dla testu Google](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest).
+Możesz pobrać karty platformy Google Test i Boost.Test karty rozszerzeń w Visual Studio Marketplace na [rozszerzenia Test adapter for Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) i [rozszerzenia Test adapter for Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest).
 
 ## <a name="basic-test-workflow"></a>Podstawowy test przepływu pracy
 
-W poniższych sekcjach przedstawiono podstawowe czynności ułatwiających rozpoczęcie pracy z testy jednostkowe C++. Podstawowa konfiguracja jest bardzo podobny dla platform firmy Microsoft i testowania Google. Boost.Test wymaga ręcznie utworzyć projektu testowego.
+W poniższych sekcjach przedstawiono podstawowe kroki ułatwiające rozpoczęcie pracy z testowania jednostkowego w języku C++. Podstawowa konfiguracja jest bardzo podobne do struktury firmy Microsoft i platformy Google Test. Boost.Test wymaga ręcznie utworzyć projekt testów.
 
-### <a name="create-a-test-project"></a>Tworzenie projektu testu
+### <a name="create-a-test-project"></a>Utwórz projekt testu
 
-Definiowanie i uruchom testy wewnątrz projekty testowe, które znajdują się w tym samym rozwiązaniu jako kod, który ma zostać przetestowana. Aby dodać nowy projekt testowy do istniejącego rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj | Nowy projekt**. Następnie w okienku po lewej stronie wybierz **Visual C++ Test** i wybierz jeden z typów projektów w środkowym okienku. Na poniższej ilustracji przedstawiono projekty testowe, które są dostępne podczas obliczania **projektowania aplikacji w języku C++** obciążenie jest zainstalowany:
+Zdefiniować i uruchomić testy wewnątrz projekty testowe, które znajdują się w tym samym rozwiązaniu, jako kod, który ma zostać przetestowana. Aby dodać nowy projekt testowy do istniejącego rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Następnie w okienku po lewej stronie wybierz **Test programu Visual C++** i wybierz jeden z typów projektów w środkowym okienku. Na poniższej ilustracji przedstawiono projekty testowe, które są dostępne, kiedy **programowanie aplikacji klasycznych w języku C++** obciążenie jest zainstalowany:
 
-![Projekty testowe C++](media/cpp-new-test-project.png)
+![Projekty testowe w języku C++](media/cpp-new-test-project.png)
 
-### <a name="create-references-to-other-projects-in-the-solution"></a>Tworzenie odwołań do innych projektów w rozwiązaniu
+### <a name="create-references-to-other-projects-in-the-solution"></a>Tworzenie odwołania do innych projektów w rozwiązaniu
 
-Aby włączyć swój kod testu, aby uzyskać dostęp do funkcji w projekcie, który ma zostać przetestowana, Dodaj odwołanie do projektu w projekcie testowym. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj | Odwołanie**. Następnie w oknie dialogowym Wybierz projekty, które mają zostać przetestowane.
+Aby włączyć swój kod testu, aby uzyskać dostęp do funkcji w projekcie, który ma zostać przetestowana, należy dodać odwołanie do projektu w projekcie testu. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **odwołania**. Następnie w oknie dialogowym Wybierz projekty, które mają zostać przetestowane.
 
-![Dodaj odwołanie](media/cpp-add-ref-test-project.png)
+![Dodawanie odwołania](media/cpp-add-ref-test-project.png)
 
-### <a name="add-include-directives-for-header-files"></a>Dodaj #include dyrektywy pliki nagłówka
+### <a name="add-include-directives-for-header-files"></a>Dodaj #include dyrektywy dla plików nagłówkowych
 
-Następnie w pliku .cpp testu jednostki, Dodaj `#include` dyrektywy dla nagłówka pliki, które deklaruje typy i funkcje, która ma zostać przetestowana. Typ `#include "` i IntelliSense będzie aktywować ułatwiające wybór. Powtórz dla dowolnych dodatkowych nagłówków.
+Następnie w testu jednostkowego *.cpp* Dodaj `#include` dyrektywy dla wszelkich plików nagłówkowych, które deklarują typy i funkcje, którą chcesz przetestować. Typ `#include "` , a następnie IntelliSense będzie aktywować ułatwiające wybór. Powtórz dla dowolnych dodatkowych nagłówków.
 
-![Dodaj dyrektyw](media/cpp-add-includes-test-project.png)
+![Dodaj dyrektywy #include](media/cpp-add-includes-test-project.png)
 
-### <a name="write-test-methods"></a>Zapis metody testowe
+### <a name="write-test-methods"></a>Pisanie metod testowych
 
 > [!NOTE]
-> W tej sekcji przedstawiono składnię dla Framework testów jednostkowych firmy Microsoft do C/C++. Jest opisanych tutaj: [dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test dokumentację można znaleźć [Elementarz testu Google](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Aby uzyskać Boost.Test, zobacz [zwiększanie wyniku testu biblioteki: Frameworka testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> W tej sekcji przedstawiono składnię dla Frameworka testów jednostkowych firmy Microsoft dla języka C/C++. Jest opisane tutaj: [dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Aby uzyskać dokumentację platformy Google Test, zobacz [podstawy platformy Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Dla platformy Boost.Test, zobacz [biblioteki Boost Test: platformy testów jednostkowych](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
-Plik .cpp w projekcie testowym ma Klasa zastępcza i metody zdefiniowane dla użytkownika, na przykład dotyczących tworzenia, testowania kodu. Należy pamiętać, że podpisy makra TEST_CLASS i TEST_METHOD, które metody wykrywalny z okna narzędzia Eksplorator testów.
+*.Cpp* plik w projekcie testu ma klasy wycinka i metody zdefiniowane jako przykład sposobu pisania testować kod. Pamiętaj, że sygnatury użyć makra TEST_CLASS i TEST_METHOD, które metody stał się wykrywalny z **Eksplorator testów** okna.
 
-![Dodaj dyrektyw](media/cpp-write-test-methods.png)
+![Dodaj dyrektywy #include](media/cpp-write-test-methods.png)
 
-TEST_CLASS i TEST_METHOD są częścią [Microsoft natywnego struktury testowej](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testowanie Explorer** odnajduje metody testowe w innych obsługiwanych platform, w podobny sposób.
+TEST_CLASS i TEST_METHOD są częścią [natywne środowisko testów Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Eksplorator testów** wykrywa metody testowe w innych obsługiwanych platform w podobny sposób.
 
-TEST_METHOD zwraca typ void. Aby uzyskać wynik testu, użyj metody statyczne w `Assert` klasy do przetestowania rzeczywiste wyniki oczekiwano. W poniższym przykładzie założono `MyClass` zawiera konstruktora przyjmującego `std::string`. Można sprawdzić, czy Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
+TEST_METHOD zwraca wartość void. Do uzyskania wyniku testu, użyj metod statycznych w `Assert` klasy do przetestowania rzeczywiste wyniki niż oczekiwana. W poniższym przykładzie przyjęto założenie, `MyClass` zawiera konstruktora przyjmującego `std::string`. Można przetestować, Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
 
 ```cpp
         TEST_METHOD(TestClassInit)
@@ -87,31 +87,31 @@ TEST_METHOD zwraca typ void. Aby uzyskać wynik testu, użyj metody statyczne w 
             Assert::AreEqual(name, mc.GetName());
         }
 ```
-W poprzednim przykładzie, wynik `Assert::AreEqual` wywołania Określa, czy test przekazuje lub kończy się niepowodzeniem. Klasa Assert zawiera wiele innych metod do porównywania oczekiwano a rzeczywiste wyniki.
+W poprzednim przykładzie, wynik `Assert::AreEqual` wywołanie określa, czy test przekazuje lub nie powiedzie się. Klasa Asercja zawiera wiele innych metod do porównywania, oczekiwany, a rzeczywiste wyniki.
 
-Możesz dodać *cech* do testowania metod do określenia badanie właścicieli, priorytet i inne informacje. Te wartości można następnie użyć, sortować i grupować testów w **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md).
+Możesz dodać *cech* do testowania metod do określenia testów właścicieli, priorytetu i innych informacji. Następnie można te wartości sortowanie i grupowanie testów w **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md).
 
 ### <a name="run-the-tests"></a>Uruchom testy
 
-1. Na **testu** menu, wybierz **Windows** > **Eksploratora testów**. Na poniższej ilustracji przedstawiono projektu testowego, w których testów nie został jeszcze uruchomiony.
+1. Na **testu** menu, wybierz **Windows** > **Eksplorator testów**. Poniższa ilustracja przedstawia projekt testowy, w których testy nie zostały jeszcze uruchomione.
 
-   ![Przed uruchomieniem testów narzędzia Eksplorator testów](media/cpp-test-explorer.png)
+   ![Eksplorator testów przed uruchomieniem testów](media/cpp-test-explorer.png)
 
    > [!NOTE]
-   > Integracja CTest z **Eksploratora testów** nie jest jeszcze dostępna. Uruchom testy CTest z poziomu menu głównego CMake.
+   > Integracja narzędzia CTest z **Eksplorator testów** nie jest jeszcze dostępna. Uruchom testy narzędzia CTest z menu głównego narzędzia CMake.
 
-1. Jeśli wszystkie testy nie są widoczne w oknie, klikając prawym przyciskiem myszy jego węzła w kompilacji projektu testowego **Eksploratora rozwiązań** i wybierając polecenie **kompilacji** lub **odbudować**.
+1. Jeśli wszystkie testy nie są widoczne w oknie, tworzenia projektu badania, klikając prawym przyciskiem myszy jego węzła w **Eksploratora rozwiązań** i wybierając pozycję **kompilacji** lub **odbudować**.
 
-1. W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone. Po uruchomieniu wszystkich testów, okno zawiera testy, które przekazane i te, które nie powiodło się:
+1. W **Eksplorator testów**, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, które chcesz uruchomić. Kliknij prawym przyciskiem myszy na test dla innych opcji, w tym uruchamianie w trybie debugowania, z punktami przerwania jest włączony. Po uruchomieniu wszystkich testów, okno pokazuje, które testów zakończonych powodzeniem i te, które nie powiodła się:
 
-![Po uruchomieniu testów narzędzia Eksplorator testów](media/cpp-test-explorer-passed.png)
+![Eksplorator testów, po uruchomieniu testów](media/cpp-test-explorer-passed.png)
 
-Testy nie powiodły się komunikat oferuje szczegółowe informacje, które pomogą zdiagnozować przyczynę. Możesz kliknij prawym przyciskiem myszy na niepowodzenie testu i **Debuguj zaznaczone testy** do kroku przy użyciu funkcji, w którym wystąpił błąd.
+Dla testów zakończonych niepowodzeniem komunikat oferuje szczegółowe informacje, które pomagają przyczynę. Możesz kliknąć prawym przyciskiem myszy na test niepowodzeniem i wybrać **Debuguj wybrane testy** przechodzić przez funkcję, w którym wystąpił błąd.
 
-Aby uzyskać więcej informacji o korzystaniu z **Eksploratora testów**, zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md).
+Aby uzyskać więcej informacji o korzystaniu z **Eksplorator testów**, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md).
 
-Aby uzyskać najlepsze rozwiązania dotyczące przeprowadzania testów jednostkowych, zobacz [teście jednostkowym](unit-test-basics.md)
+Aby uzyskać najlepsze rozwiązania związane z testów jednostkowych, zobacz [podstawy testów jednostkowych](unit-test-basics.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Testowanie jednostek kodu](unit-test-your-code.md)
+[Kod testu jednostkowego](unit-test-your-code.md)
