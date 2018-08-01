@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180077"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380671"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Porady: tworzenie nowego testu usług sieci Web
+# <a name="how-to-create-a-web-service-test"></a>Porady: Tworzenie nowego testu usługi internetowej
 
 Test wydajności sieci web służy do testowania usług sieci web. Za pomocą **Wstaw żądanie** i **Wstaw żądanie usługi sieci Web** opcje, można dostosować poszczególne żądania w **edytora testów wydajności sieci Web** można zlokalizować w sieci web strony usługi. Zazwyczaj tych stron nie wyświetla w aplikacji sieci web. W związku z tym należy dostosować żądanie, aby uzyskać do nich dostęp.
 
-W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commerce Starter Kit. Możesz ją pobrać z [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commerce Starter Kit. Możesz ją pobrać z [ASP.NET commerce starter kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
  **Wymagania**
 
 -   Visual Studio Enterprise
 
-## <a name="to-test-a-web-service"></a>Aby przetestować usługę sieci Web
+## <a name="to-test-a-web-service"></a>Aby przetestować usługę sieci web
 
 1.  Utwórz nowy test wydajności sieci web. Zaraz po otwarciu przeglądarki, wybierz **zatrzymać**.
 
@@ -37,7 +37,7 @@ W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commer
 
 3.  W **adresu Url** właściwości nowego żądania wpisz nazwę usługi sieci web, takich jak **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Otwórz oddzielną sesję przeglądarki i wpisz adres URL strony .asmx w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
+4.  Otwórz oddzielną sesję przeglądarki i wpisz adres URL *.asmx* strony w **adres** paska narzędzi. Wybierz metodę, którą chcesz przetestować i uważnie przeczytaj komunikat protokołu SOAP. Zawiera on element `SOAPAction`.
 
 5.  W **edytora testów wydajności sieci Web**, kliknij prawym przyciskiem myszy żądanie i wybierz **Dodawanie nagłówka** Aby dodać nowy nagłówek. W **nazwa** właściwość, typ `SOAPAction`. W **wartość** właściwości, wpisz wartość, która zostanie wyświetlony w `SOAPAction`, takich jak `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ W poniższych procedurach użyto usługi sieci web, która jest zawarta w Commer
      </soap:Envelope>
      ```
 
-9. Wróć do **edytora testów wydajności sieci Web** , a następnie wybierz przycisk wielokropka (...) w **ciąg tekstowy** właściwości. Wklej zawartość schowka do właściwości.
+9. Wróć do **edytora testów wydajności sieci Web** , a następnie wybierz przycisk wielokropka **(...)**  w **ciąg tekstowy** właściwości. Wklej zawartość schowka do właściwości.
 
 10. Aby test kończył się pomyślnie, zamień wszystkie wartości wieloznaczne w kodzie XML prawidłowymi wartościami. W poprzednim przykładzie należy zamienić dwa wystąpienia wartości `string` i jedno wartości `int`. Ta operacja usługi sieci web zostanie wykonana tylko pod warunkiem istnieje zarejestrowany użytkownik, który złożył zamówienie.
 
