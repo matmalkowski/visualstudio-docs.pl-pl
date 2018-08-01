@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945487"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380453"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać platformy Boost.Test dla języka C++ w programie Visual Studio
 
@@ -42,7 +42,7 @@ Wymaga Boost.Test [Boost](http://www.boost.org/)! Jeśli nie masz zainstalowane 
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Dodaj szablon elementu (Visual Studio 2017 w wersji 15.6 i nowsze)
 
-1. Aby utworzyć plik .cpp dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**.
+1. Aby utworzyć *.cpp* pliku dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**.
 
    ![Szablon elementu Boost.Test](media/boost_test_item_template.png)
 
@@ -59,7 +59,8 @@ W programie Visual Studio 2017 w wersji 15.5 dostępnych żadnych szablonów pro
 1. W okienku po lewej stronie wybierz **Visual C++** > **pulpitu Windows**, a następnie wybierz **aplikacji konsoli Windows** szablonu.
 
 1. Nazwij projekt i wybierz **OK**.
-1. Usuń `main` funkcji w pliku .cpp.
+
+1. Usuń `main` działa w programach *.cpp* pliku.
 
 1. Jeśli używasz wersji pojedynczego nagłówka lub dynamicznej biblioteki Boost.Test, przejdź do strony [Dodaj dyrektywy #include](#add-include-directives). Jeśli używasz wersji biblioteki statycznej, musisz przeprowadzić kilka dodatkowych czynności konfiguracyjnych:
 
@@ -74,19 +75,19 @@ W programie Visual Studio 2017 w wersji 15.5 dostępnych żadnych szablonów pro
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. Zapisz i Zamknij \*plik .vcxproj, a następnie ponownie Załaduj projekt.
+   c. Zapisz i Zamknij  *\*.vcxproj* pliku, a następnie ponownie Załaduj projekt.
 
    d. Aby otworzyć **stron właściwości**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **właściwości**.
 
    d. Rozwiń **C/C++** > **generowania kodu**, a następnie wybierz pozycję **biblioteki środowiska uruchomieniowego**. Wybierz **/mtd** dla bibliotek statycznych środowiska uruchomieniowego debugowania lub **/MT** biblioteki statycznej środowiska uruchomieniowego wersji.
 
-   f. Rozwiń **konsolidatora > System**. Upewnij się, że **podsystemu** ustawiono **konsoli**.
+   f. Rozwiń **konsolidatora** > **systemu**. Upewnij się, że **podsystemu** ustawiono **konsoli**.
 
    g. Wybierz **OK** zamknąć na stronach właściwości.
 
 ## <a name="add-include-directives"></a>Dodaj dyrektywy #include
 
-1. W pliku testu cpp, należy dodać dowolne wymagane `#include` dyrektywy, aby uwidocznić typy i funkcje programu kod testu. Zazwyczaj program jest góry o jeden poziom w hierarchii folderów. Jeśli wpiszesz `#include "../"`, pojawi się okno technologii IntelliSense i umożliwia wybranie pełną ścieżkę do pliku nagłówka.
+1. W teście *.cpp* Dodaj dowolne wymagane `#include` dyrektywy, aby uwidocznić typy i funkcje programu kod testu. Zazwyczaj program jest góry o jeden poziom w hierarchii folderów. Jeśli wpiszesz `#include "../"`, pojawi się okno technologii IntelliSense i umożliwia wybranie pełną ścieżkę do pliku nagłówka.
 
    ![Dodaj # dyrektywy include](media/cpp-gtest-includes.png)
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Pisanie i Uruchamianie testów
-Teraz można przystąpić do pisania i uruchamiania testów Boost. Zobacz [dokumentację biblioteki testów Boost](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) uzyskać informacji na temat makra testu. Zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md) informacje odnajdywania i uruchamiania i grupowanie testów przy użyciu **Eksplorator testów**.
+
+Teraz możesz przystąpić do pisania i uruchamiania testów Boost. Zobacz [dokumentację biblioteki testów Boost](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) uzyskać informacji na temat makra testu. Zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md) informacje odnajdywania i uruchamiania i grupowanie testów przy użyciu **Eksplorator testów**.
 
 ## <a name="see-also"></a>Zobacz także
-[Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+
+- [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)

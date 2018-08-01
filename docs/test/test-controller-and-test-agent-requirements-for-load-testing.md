@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178494"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380808"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Wymagania dla kontrolera testów i agentów testowych niezbędnych do testów obciążenia
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testowanie wymagania agenta kontrolera i testu do testowania obciążenia
 
 Kilka typów, w tym jednostkowe, wydajności sieci web, obciążenia testu, a testy ręczne są zintegrowane z Visual Studio. Program Visual Studio umożliwia użytkownikom programu Visual Studio Application Lifecycle Management do uruchamiania testów na komputerach zdalnych przy użyciu kontrolera testów i jednego lub kilku agentów. Zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
@@ -39,7 +39,7 @@ W poniższej tabeli przedstawiono zalecane wymagania sprzętowe dotyczące wdra�
 |N x 30 komputerów w środowisku testowym. Obejmuje to agentów i serwerów w ramach testu.|Kontroler testów|N procesorów 2,6 GHz|||
 
 > [!NOTE]
-> Liczba użytkowników wirtualnych różnią się znacznie między poszczególnymi testami. Kluczowym powodem tego odchylenia jest odchylenie w *czasy reakcji*, lub opóźnienia użytkowników. Aby uzyskać więcej informacji, zobacz [edytowanie czasów reakcji do symulowania witryny sieci Web przez ludzi opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci web są zazwyczaj wydajniejsze i generują większe obciążenie niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla wykonywanie testów sieci web 3 – 5-sekundowych w aplikacji sieci web typowy.
+> Liczba użytkowników wirtualnych różnią się znacznie między poszczególnymi testami. Kluczowym powodem tego odchylenia jest odchylenie w *czasy reakcji*, lub opóźnienia użytkowników. Aby uzyskać więcej informacji, zobacz [reakcji edycji razy do symulacji witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md). W teście obciążenia testy sieci web są zazwyczaj wydajniejsze i generują większe obciążenie niż testy jednostkowe. Liczby w powyższej tabeli są prawidłowe dla wykonywanie testów sieci web 3 – 5-sekundowych w aplikacji sieci web typowy.
 
 Wskazówki przedstawione tutaj są dostarczane jako ogólne wskazówki dotyczące planowania sprzętowego. Wydajność testów różni się znacznie w zależności od ilości danych testowych i liczby agentów testowych. Dla agentów testowych szybkość procesora CPU i pamięci będzie ograniczają obciążenie badawcze. Kontrolery testowe potrzebują więcej zasobów, w zależności od liczby agentów testowych i ilość danych, które są zaangażowane w testy.
 
@@ -57,7 +57,7 @@ Aby uniknąć nieporozumień i uprościć operację, należy skonfigurować agen
 
 ## <a name="monitor-agent-resources"></a>Monitorowanie zasobów agenta
 
-Możesz monitorować maszyny agenta, aby określić ich zapotrzebowanie na zasoby, obserwując **QTAgent\*.exe** procesów, które wykonywania i skalowania podczas testów. Najbardziej typowym wąskim gardłem procesów QTAgent*.exe to wykorzystania procesora CPU. Jeśli wykorzystanie procesora CPU jest stale w wysokiej nineties to wskazanie, że agent jest ładowany dużym stopniu. Dalej typowym wąskim gardłem jest użycie pamięci. Dla wymagających testy, monitorowanie tych zasobów może pomóc ustalenia, czy należy zwiększyć zasoby maszyny lub inaczej dystrybuować testy.
+Możesz monitorować maszyny agenta, aby określić ich zapotrzebowanie na zasoby, obserwując *QTAgent\*.exe* procesów, które wykonywania i skalowania podczas testów. Najbardziej typowym wąskim gardłem w *QTAgent\*.exe* procesów jest użycie procesora CPU. Jeśli wykorzystanie procesora CPU jest stale w wysokiej nineties to wskazanie, że agent jest ładowany dużym stopniu. Dalej typowym wąskim gardłem jest użycie pamięci. Dla wymagających testy, monitorowanie tych zasobów może pomóc ustalenia, czy należy zwiększyć zasoby maszyny lub inaczej dystrybuować testy.
 
 ## <a name="see-also"></a>Zobacz także
 

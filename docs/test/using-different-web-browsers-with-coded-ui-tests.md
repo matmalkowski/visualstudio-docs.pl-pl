@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu różnych przeglądarek sieci Web z kodowanych testów interfejsu użytkownika w programie Visual Studio
+title: Za pomocą różnych przeglądarek, za pomocą kodowanych testów interfejsu użytkownika w programie Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,28 +9,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235066"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380720"
 ---
-# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek internetowych do przeprowadzania kodowanych testów interfejsu użytkownika
+# <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
-Najpierw zainstaluj [składników Selenium kodowanego interfejsu użytkownika dla wielu przeglądarki testowania](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+Najpierw zainstaluj [Selenium components for coded UI cross testowania przeglądarki](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-## <a name="whats-supported-across-all-web-browsers"></a>Co to jest obsługiwana przez wszystkie przeglądarki sieci web?
+## <a name="whats-supported-across-all-web-browsers"></a>Co jest obsługiwane we wszystkich przeglądarkach sieci web?
 
--   [Dodaj niestandardowy kod kontrolowanie funkcji](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) takich jak elementy właściwości wyszukiwania i odtwarzania.
+-   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
 
 -   Wyskakujące okienka i okna dialogowe
 
--   [Wykonywanie podstawowych JavaScript bez zwracanego typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
 
--   Wyszukiwanie odporności (przy użyciu inteligentne zgodne) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
 
@@ -38,29 +38,29 @@ Testując aplikację internetową za pomocą przeglądarek internetowych różne
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach internetowych przy użyciu obsługiwanych przeglądarek internetowych?
 
-**Rejestrowanie:** Aby zarejestrować testu aplikacji sieci web przy użyciu programu Internet Explorer, należy użyć konstruktora kodowanego interfejsu użytkownika testu. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md).
+**Nagrywanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [automatyzacji w użyciu interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.
 
- **Odtwarzanie z programem Internet Explorer:** gdy przeglądarka nie jest jawnie określony, domyślnie testy zostaną uruchomione w programie Internet Explorer. Można jawnie określać przeglądarki, które mają być używane przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testu. Dla programu Internet Explorer, ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.
+ **Odtwarzanie za pomocą programu Internet Explorer:** gdy przeglądarka nie jest jawnie określona, domyślnie testy zostaną uruchomione w Internet Explorer. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.
 
- **Odtwarzanie z przeglądarki sieci web z systemem innym niż Internet Explorer:** odtwarzać w przeglądarkach sieci web z systemem innym niż Internet Explorer, zmień właściwość BrowserWindow.CurrentBrowser kod testu w jednej **Firefox** lub **Chrome** .
+ **Odtwarzanie z przeglądarek sieci web innych niż Internet Explorer:** Aby odtwarzać w przeglądarkach sieci web innych niż Internet Explorer, należy zmienić właściwość BrowserWindow.CurrentBrowser w kodzie testowym na albo **Firefox** lub **dla programu Chrome** .
 
- Aby odtworzyć testy w przeglądarkach sieci web-IE, należy zainstalować **składników Selenium kodowanego interfejsu użytkownika dla wielu przeglądarki testowania**.
+ Aby odtwarzać testy w przeglądarkach sieci web-IE, należy zainstalować **Selenium components for Coded UI Cross Browser Testing**.
 
-### <a name="install-selenium-components"></a>Zainstaluj składniki Selenium
+### <a name="install-selenium-components"></a>Instalowanie składników Selenium
 
 1.  Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.
 
-2.  W oknie dialogowym rozszerzenia i aktualizacje, wyszukaj `Selenium components for Cross Browser Testing`.
+2.  W **rozszerzenia i aktualizacje** okno dialogowe, wyszukaj `Selenium components for Cross Browser Testing`.
 
-3.  Zaznacz rozszerzenie, a następnie wybierz pozycję **Pobierz**.
+3.  Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.
 
     > [!TIP]
-    > Możesz również pobrać składników Selenium kodowanego interfejsu użytkownika dla wielu przeglądarki testowania z [tutaj](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+    > Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika testy, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).
+Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika, testów, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).
 
 ### <a name="enable-debugging"></a>Włączanie debugowania
 
@@ -70,17 +70,17 @@ Aby włączyć debugowanie aplikacji internetowej, należy zastosować następuj
 
     1.  Na **narzędzia** menu, wybierz **opcje** , a następnie wybierz **debugowanie**.
 
-    2.  Wybierz **Włącz opcję tylko mój kod**.
+    2.  Wybierz **Włącz tylko mój kod**.
 
 2.  Wyłączyć wyjątki CLR:
 
     1.  Na **debugowania** menu, wybierz **wyjątki**.
 
-    2.  Dla **wspólnego języka środowiska uruchomieniowego wyjątki**, usuń zaznaczenie pola wyboru **nieobsługiwanych przez użytkownika**.
+    2.  Aby uzyskać **wyjątki środowiska uruchomieniowego języka wspólnego**, usuń zaznaczenie pola wyboru **User-unhandled**.
 
-Jeśli nie widzisz opcję, aby zmienić `BrowserWindow.CurrentBrowser` w kodowanego testu interfejsu użytkownika może korzystasz z wersji programu Visual Studio, która nie obsługuje kodowane testy interfejsu użytkownika przy użyciu różnych przeglądarek sieci web. Aby używać takich kodowane testy interfejsu użytkownika, należy użyć programu Visual Studio Enterprise edition.
+Jeśli nie jest widoczna opcja zmiany `BrowserWindow.CurrentBrowser` w kodowanym teście interfejsu użytkownika, być może używasz wersji programu Visual Studio, który nie obsługuje kodowanych testów interfejsu użytkownika za pomocą różnych przeglądarek sieci web. Aby używać takich kodowanych testów interfejsu użytkownika, należy użyć programu Visual Studio Enterprise edition.
 
-Poniżej przedstawiono niektóre elementy, których należy wiedzieć:
+Poniżej przedstawiono niektóre inne czynności, które należy znać:
 
 - Przeglądarka Safari firmy Apple nie jest obsługiwana.
 
@@ -102,24 +102,24 @@ Ustaw następujące wartości:
 
 - `<add name="EqtTraceLevel" value="4" />`
 
-   Ustawiając wartość 3 lub nowszej, zrzuty ekranu są pobierane dla każdego działania. Gdy wartość jest równa 1 lub 2, zrzuty ekranu są wykonywane tylko w przypadku błędów.
+   Ustawiając wartość 3 lub większą, zrzuty ekranu są pobierane dla każdej akcji. Gdy wartość jest równa 1 lub 2, zrzuty ekranu są wykonywane tylko w przypadku błędów.
 
-Aby uzyskać więcej informacji, zobacz [analizowanie kodowanych testów przy użyciu kodowanego interfejsu użytkownika dzienników testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+Aby uzyskać więcej informacji, zobacz [analizowanie kodowanych testów interfejsu użytkownika, za pomocą zakodowanych dziennikach testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="video-resources"></a>Zasoby wideo
 
- [Zarejestruj w przeglądarce IE i odtwarzania wszędzie](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+ [Nagrywanie w przeglądarce IE i odtwarzanie wszędzie](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Autor cross testy przeglądarki z konstruktora kodowanego testu interfejsu użytkownika](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+ [Autorskie testy krzyżowe przeglądarki za pomocą konstruktora kodowanego testu interfejsu użytkownika](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Autor cross testów przeglądarki, za pomocą kodowania zwykły ręcznie bez mapy interfejsu użytkownika](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+ [Autorskie testy krzyżowe przeglądarki za pomocą strony zwykłego kodowania bez mapy interfejsu użytkownika](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Krzyżowe przeglądarki testy są wykonywane sekwencyjnie w różnych przeglądarkach](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+ [Uruchamianie krzyżowych testów przeglądarki kolejno w różnych przeglądarkach](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Rozwiązywanie problemów z innej przeglądarki niepowodzenia testu](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+ [Rozwiązywanie problemów z wielu niepowodzeń testów przeglądarki](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników zakodowanych testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Analizowanie kodowanych testów interfejsu użytkownika za pomocą zakodowanych dziennikach testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

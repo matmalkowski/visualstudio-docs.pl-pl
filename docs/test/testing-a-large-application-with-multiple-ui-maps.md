@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180376"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379822"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
 
 W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkownika podczas testowania dużych aplikacji przy użyciu wielu map interfejsu użytkownika.
 
@@ -44,13 +44,13 @@ W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkow
 
 -   Kilka złożonych zestawów złożonych kontrolek interfejsu użytkownika, które wspólnie wykonują operacji logicznej, takich jak strony rejestracji w witrynie sieci Web lub strony zakupu koszyk sklepowy.
 
--   Niezależny zestaw formantów, które są dostępne w różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.
+-   Niezależny zestaw kontrolek, które jest dostępne z różnych punktach aplikacji, na przykład Kreator z kilku stron operacji. Jeśli każda strona kreatora jest szczególnie złożony, można utworzyć oddzielne map interfejsu użytkownika dla każdej strony.
 
-## <a name="adding-multiple-ui-maps"></a>Dodawanie wielu map UI
+## <a name="add-multiple-ui-maps"></a>Dodawanie wielu map UI
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Aby dodać mapę interfejsu użytkownika do projektu kodowanego testu interfejsu użytkownika
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Aby dodać mapę interfejsu użytkownika do projektu kodowanego testu interfejsu użytkownika
 
-1.  W **Eksploratora rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkich map interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż **Dodaj** , a następnie wybierz **nowy Folder**. Na przykład nazwać ją `UIMaps`.
+1.  W **Eksploratora rozwiązań**, aby utworzyć folder w projekcie kodowanego testu interfejsu użytkownika do przechowywania wszystkich map interfejsu użytkownika, kliknij prawym przyciskiem myszy plik projektu kodowanego testu interfejsu użytkownika, wskaż **Dodaj**, a następnie wybierz **nowy Folder**. Na przykład nazwać ją `UIMaps`.
 
      W obszarze projektu kodowanego testu interfejsu użytkownika zostanie wyświetlony nowy folder.
 
@@ -75,15 +75,15 @@ W tym temacie omówiono sposób używania kodowanych testów interfejsu użytkow
 
 7.  Kontynuuj tworzenie map interfejsu użytkownika. Rejestruj akcje i potwierdzenia, zgrupować je w metody dla każdego składnika, a następnie generowania kodu.
 
- W wielu przypadkach okien najwyższego poziomu aplikacji pozostaje na stałym dla kreatorów, formularze i stron. Mimo że każdy mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, wszystkie mapowania prawdopodobnie odwołują się do tego samego okno najwyższego poziomu w ramach której wszystkie składniki aplikacji Uruchom. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, zaczynając od okna najwyższego poziomu, dzięki czemu w przypadku złożonych aplikacji w oknie rzeczywistych najwyższego poziomu można zduplikowane w każdej mapie interfejsu użytkownika. W oknie rzeczywistych najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania między map interfejsu użytkownika.
+ W wielu przypadkach najwyższego poziomu okna aplikacji pozostaje na stałym dla kreatorów, formularze i stron. Mimo że każdy mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, na tym samym oknie najwyższego poziomu w ramach której wszystkie składniki aplikacji uruchom prawdopodobnie odnosi się wszystkie mapowania. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, zaczynając od okna najwyższego poziomu, dzięki czemu w przypadku złożonych aplikacji okno rzeczywiste najwyższego poziomu można zduplikowane w każdej mapie interfejsu użytkownika. Okno rzeczywiste najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje zmiany tego okna. Może to spowodować problemy z wydajnością podczas przełączania między map interfejsu użytkownika.
 
- Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu, w tym mapę interfejsu użytkownika jest taka sama jak w oknie głównym najwyższego poziomu.
+ Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu, w tym mapę interfejsu użytkownika jest taka sama jak główne okno najwyższego poziomu.
 
 ## <a name="example"></a>Przykład
 
 Poniższy przykład jest częścią klasy narzędzia, która zapewnia dostęp do poszczególnych składników oraz ich formantów podrzędnych, które są reprezentowane przez klasy generowane w różnych map interfejsu użytkownika.
 
-Na przykład aplikacja sieci web o nazwie `Contoso` ma stronę główną, stronę produktu i strony koszyka zakupów. Każda z tych stron współużytkują wspólne okno najwyższego poziomu czyli okna przeglądarki. Istnieje mapę interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:
+Na przykład aplikacja sieci web o nazwie `Contoso` ma stronę główną, stronę produktu i strony koszyka zakupów. Każda z tych stron udostępnia wspólne okno najwyższego poziomu, które jest okna przeglądarki. Istnieje mapę interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:
 
 ```csharp
 using ContosoProject.UIMaps;

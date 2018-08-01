@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176700"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380500"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Szybki start: tworzenie projektu testu obciążeniowego
 
@@ -27,9 +27,9 @@ W tym 10-minutowy Przewodnik Szybki Start dowiesz się, jak utworzyć i uruchomi
 
 Jeśli nie masz już wydajności sieci web ale zainstalowany składnik narzędzia do testowania obciążenia, należy go zainstalować za pomocą Instalatora programu Visual Studio.
 
-1. Otwórz Instalator programu Visual Studio z menu Start systemu Windows. Możesz również do niego dostęp w programie Visual Studio z **nowy projekt** okno dialogowe, lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje** z paska menu.
+1. Otwórz **Instalatora programu Visual Studio** z **Start** menu systemu Windows. Możesz również do niego dostęp w programie Visual Studio z **nowy projekt** okno dialogowe, lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje** z paska menu.
 
-1. W Instalatorze programu Visual Studio, wybierz **poszczególne składniki** , a następnie przewiń w dół do **debugowanie i testowanie** sekcji. Wybierz **wydajności sieci Web i narzędzia do testowania obciążenia**.
+1. W **Instalatora programu Visual Studio**, wybierz **poszczególne składniki** , a następnie przewiń w dół do **debugowanie i testowanie** sekcji. Wybierz **wydajności sieci Web i narzędzia do testowania obciążenia**.
 
    ![Składnik narzędzia do testowania obciążenia i wydajności sieci Web](media/web-perf-load-testing-tools-component.png)
 

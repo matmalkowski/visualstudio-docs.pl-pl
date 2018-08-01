@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180710"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382373"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 
@@ -40,9 +40,9 @@ Należy dodać serwery w ramach testu do listy komputerów, na których można z
 |Zadania|Skojarzone tematy|
 |-----------|-----------------------|
 |**Zarządzanie zbiorami liczników dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować zestaw liczników w edytorze testu obciążeniowego. Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, z których chcesz zbierać dane dotyczące wydajności i przypisywanie zbiór zestawów liczników, które mają być zbierane z każdego komputera. Zarządzasz licznikami w edytorze testu obciążenia.|-   [Porady: Zarządzanie zbiorami liczników](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**Dodawanie zestawów liczników do testu obciążeniowego:** po utworzeniu testu obciążenia za pomocą Kreatora nowego testu obciążeniowego jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników za pomocą edytora testu obciążenia.|-   [Porady: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Porady: Dodawanie zbiorów liczników niestandardowych](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**Dodawanie zestawów liczników do testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników za pomocą edytora testu obciążenia.|-   [Porady: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Porady: Dodawanie zbiorów liczników niestandardowych](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Określ reguły progu za pomocą liczników dla testu obciążeniowego:** reguły progu jest regułą, która jest ustawiona na licznik wydajności poszczególnych do monitorowania użycia zasobów systemowych podczas testu obciążeniowego. Definicje zestawu liczników zawiera wstępnie zdefiniowany próg reguły dla wielu kluczowych liczników wydajności. Reguły progów w testach obciążenia porównanie wartości licznika wydajności za pomocą wartości stałej lub inną wartość licznika wydajności.|-   [Porady: Dodawanie reguły progu](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Przypisać przyjazne nazwy komputerów, do których licznik zestawów są mapowane:** można dodać tagów, które umożliwiają łatwą do rozpoznania nazwę na komputerze. Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł dla drzewa w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają zainteresowanych stron, jaką rolę zidentyfikować komputer ma w teście obciążenia, na przykład, "Server1 sieci Web w lab2" lub "SQL Server2 w pakiecie office Phoenix".<br /><br /> Aby uzyskać więcej informacji, zobacz [raportowanie wyników testów obciążenia do potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).|-   [Porady: Dodawanie tagów do licznika mapowania zestawów](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Przypisać przyjazne nazwy komputerów, do których licznik zestawów są mapowane:** można dodać tagów, które umożliwiają łatwą do rozpoznania nazwę na komputerze. Znaczniki są wyświetlane w **mapowaniach zbioru liczników** węzeł dla drzewa w edytorze testu obciążenia. Co ważniejsze, znaczniki są wyświetlane w raportach programu Excel, które pomagają zainteresowanych stron, jaką rolę zidentyfikować komputer ma w teście obciążenia, na przykład, "Server1 sieci Web w lab2" lub "SQL Server2 w pakiecie office Phoenix".<br /><br /> Aby uzyskać więcej informacji, zobacz [testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md).|-   [Porady: Dodawanie tagów komputerów do mapowań zestawów liczników](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
 
 ## <a name="use-counter-sets"></a>Korzystanie z zestawów liczników
 
@@ -75,11 +75,11 @@ Poniżej przedstawiono niektóre wytyczne dotyczące częstotliwości próbkowan
 
 ## <a name="store-performance-data"></a>Dane dotyczące wydajności Store
 
-Podczas uruchomienia testu obciążenia, dane licznika wydajności są zbierane i przechowywane w *repozytorium wyników testów obciążenia*. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyników testów obciążenia w repozytorium wyników testów obciążeniowych](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Podczas uruchomienia testu obciążenia, dane licznika wydajności są zbierane i przechowywane w *repozytorium wyników testów obciążenia*. Aby uzyskać więcej informacji, zobacz [wyniki testu obciążeniowego Zarządzanie obciążenia test repozytorium wyników](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="about-threshold-rules"></a>Reguły progu — informacje
 
-A *regułę progową* jest regułą, która jest ustawiona na licznik wydajności poszczególnych do monitorowania użycia zasobów systemowych podczas testu obciążeniowego. Definicje zestawu liczników zawiera wstępnie zdefiniowany próg reguły dla wielu kluczowych liczników wydajności. Aby uzyskać więcej informacji, zobacz [przy użyciu zbiory liczników, aby ułatwić analizowanie danych licznika wydajności w testach obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+A *regułę progową* jest regułą, która jest ustawiona na licznik wydajności poszczególnych do monitorowania użycia zasobów systemowych podczas testu obciążeniowego. Definicje zestawu liczników zawiera wstępnie zdefiniowany próg reguły dla wielu kluczowych liczników wydajności. Aby uzyskać więcej informacji, zobacz [zestawów liczników użycia, aby pomóc w analizowaniu danych liczników wydajności w testach obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="threshold-rules-and-levels"></a>Reguły progów i poziomy
 
@@ -91,7 +91,7 @@ Porównanie liczników&mdash;porównanie wartości licznika wydajności na inną
 
 Podczas tworzenia reguły progów, można również ustawić poziomy dla tej reguły. Poziomy są progu ostrzeżenia i progu krytycznego. Podczas wyświetlania przebiegu testu obciążeniowego naruszenia progu poziomu ostrzeżenia są wskazywane przez żółty symboli i naruszenia progu krytycznego poziomu są wskazywane przez czerwony symbol.
 
-## <a name="the-alert-if-over-property"></a>Alert Jeśli powyżej właściwości
+## <a name="the-alert-if-over-property"></a>Właściwości alertu, gdy nastąpi przekroczenie
 
 Ustaw **alertu, gdy nastąpi przekroczenie** właściwości **True** do wskazania przekroczenia progu to problem. Na przykład, jeśli ustawiono regułę progową w **czas procesora (%)**, a użytkownik chce otrzymywać alerty, jeśli wartość jest większa niż 90, użyj **Porównaj stałą** typ reguły, ustaw **próg krytyczny Wartość** do 90, a następnie ustaw **alertu, gdy nastąpi przekroczenie** do **True**.
 

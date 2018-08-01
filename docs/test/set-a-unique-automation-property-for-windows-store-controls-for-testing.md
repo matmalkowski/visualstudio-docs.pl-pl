@@ -9,30 +9,30 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692359"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382830"
 ---
-# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy UWP przeznaczonych do testowania
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy uniwersalnej systemu Windows do testowania
 
-Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows opartych na języku XAML, każdego formantu musi być identyfikowany przez unikatowej właściwości automatyzacji. Można przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji.
+Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows oparte na XAML, każda kontrolka musi posiadać unikatowej właściwości automatyzacji. Możesz przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji.
 
 ## <a name="static-xaml-definition"></a>Statyczne definicji XAML
 
-Aby określić unikatowej właściwości automatyzacji dla formantu, który jest zdefiniowany w pliku XAML, można ustawić **AutomationProperties.AutomationId** lub **AutomationProperties.Name** jawnie lub niejawnie, jak przedstawiono w przykładach, które należy wykonać. Ustawienia jednej z tych wartości daje kontrolę unikatowej właściwości automatyzacji, który może służyć do identyfikowania formantu, gdy tworzenie kodowanego testu lub Akcja nagrywania interfejsu użytkownika.
+Aby określić unikatowej właściwości automatyzacji dla formantu, który jest zdefiniowany w pliku XAML, można ustawić **AutomationProperties.AutomationId** lub **AutomationProperties.Name** jawnie lub niejawnie, jak pokazano w przykładach. Jedną z tych wartości ustawienia zapewnia kontrolę unikatowej właściwości automatyzacji, który może służyć do identyfikowania formantu, tworząc kodowanego interfejsu użytkownika testowego, nagrywanie akcji.
 
 ### <a name="set-the-property-implicitly"></a>Ustaw właściwość niejawnie
 
-Ustaw **AutomationProperties.AutomationId** do **ButtonX** przy użyciu **nazwa** właściwości w języku XAML dla formantu.
+Ustaw **AutomationProperties.AutomationId** do **ButtonX** przy użyciu **nazwa** właściwości w XAML dla formantu.
 
 ```xaml
 <Button Name="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
-Ustaw **AutomationProperties.Name** do **ButtonY** przy użyciu **zawartości** właściwości w języku XAML dla formantu.
+Ustaw **AutomationProperties.Name** do **ButtonY** przy użyciu **zawartości** właściwości w XAML dla formantu.
 
 ```xaml
 <Button Content="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
@@ -40,31 +40,31 @@ Ustaw **AutomationProperties.Name** do **ButtonY** przy użyciu **zawartości** 
 
 ### <a name="set-the-property-explicitly"></a>Ustaw jawnie właściwość
 
-Ustaw **AutomationProperties.AutomationId** do **ButtonX** jawnie w kodzie XAML dla formantu.
+Ustaw **AutomationProperties.AutomationId** do **ButtonX** jawnie w XAML dla formantu.
 
 ```xaml
 <Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
-Ustaw **AutomationProperties.Name** do **ButtonY** jawnie w kodzie XAML dla formantu.
+Ustaw **AutomationProperties.Name** do **ButtonY** jawnie w XAML dla formantu.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
-## <a name="assign-unique-names"></a>Przypisywanie unikatowych nazw
+## <a name="assign-unique-names"></a>Przypisać unikatowe nazwy
 
-W programie Blend for Visual Studio możesz wybrać opcję, aby przypisać unikalną nazwę do interaktywnego elementów, takich jak przyciski, pola listy, pola kombi i pól tekstowych. Dzięki temu formanty unikatowe wartości **AutomationProperties.Name**.
+W programie Blend for Visual Studio, można wybrać opcję, aby przypisać unikalną nazwę do elementów interaktywnych, takich jak przyciski, pola listy, pola kombi i pól tekstowych, które zawiera unikatowe wartości kontrolki **AutomationProperties.Name**.
 
-Aby przypisać unikatowe nazwy istniejących formantów, zaznacz **narzędzia** > **elementy interakcyjne nazwa**.
+Aby przypisać unikatowe nazwy istniejących formantów, zaznacz **narzędzia** > **nadawać nazwy elementom interaktywnym**.
 
-![Nazwa interaktywne elementy w programie Blend for Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
+![Nazwij elementy interaktywne w programie Blend for Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Aby automatycznie nadaj unikatową nazwę nowych formantów, które można dodać, wybierz **narzędzia** > **opcje** otworzyć **opcje** okna dialogowego. Wybierz **projektanta XAML** , a następnie wybierz **automatycznie nazwij elementy interakcyjne przy tworzeniu**. Wybierz **OK** aby zamknąć okno dialogowe.
+Automatycznie oferowanie unikatowe nazwy nowych formantów, które można dodać, wybierz **narzędzia** > **opcje** otworzyć **opcje** okna dialogowego. Wybierz **projektanta XAML** , a następnie wybierz **automatycznie nazwij elementy interakcyjne przy tworzeniu**. Wybierz **OK** aby zamknąć okno dialogowe.
 
-## <a name="use-a-data-template"></a>Użyj szablonu danych
+## <a name="use-a-data-template"></a>Korzystanie z szablonu danych
 
-Można zdefiniować przy użyciu prostego szablonu **ItemTemplate** powiązać wartości w polu listy zmiennych:
+Można zdefiniować przy użyciu prostego szablonu **właściwości ItemTemplate** do powiązania wartości w polu listy zmiennych:
 
 ```xaml
 <ListBox Name="listBox1" ItemsSource="{Binding Source={StaticResource employees}}">
@@ -79,7 +79,7 @@ Można zdefiniować przy użyciu prostego szablonu **ItemTemplate** powiązać w
 </ListBox>
 ```
 
-Można również użyć szablonu z **ItemContainerStyle** można powiązać wartości do zmiennych:
+Można również użyć szablonu z **ItemContainerStyle** do powiązania wartości do zmiennych:
 
 ```xaml
 <ListBox Name="listBox1" ItemsSource="{Binding Source={StaticResource employees}}">
@@ -99,10 +99,10 @@ Można również użyć szablonu z **ItemContainerStyle** można powiązać wart
 </ListBox>
 ```
 
-Oba te przykłady, następnie należy zastąpić **ToString()** metody **ItemSource**, jak pokazano w następującym przykładzie kodu. Ten kod, sprawdza **AutomationProperties.Name** wartość jest ustawiona i jest unikatowa, ponieważ nie można ustawić unikatowej właściwości automatyzacji dla każdego elementu listy powiązane z danymi za pomocą powiązania. Ustawienie unikatową wartość **Properties.Name automatyzacji** w tym przypadku jest wystarczająca.
+Dla obu tych przykładów można następnie zastąpić **ToString()** metody **właściwości ItemSource**, jak pokazano w przykładzie kodu, który następuje po użyciu. Ten kod zapewniają, że **AutomationProperties.Name** wartość jest ustawiona i jest unikatowa, ponieważ nie można ustawić unikatowej właściwości automatyzacji dla każdego elementu listy powiązanych z danymi za pomocą powiązania. Ustawiając unikatową wartość dla **Properties.Name automatyzacji** w tym przypadku jest wystarczająca.
 
 > [!NOTE]
-> W ten sposób wewnętrzny zawartość elementu listy można również można ustawić na ciąg w klasie pracowników przez powiązanie. Jak pokazano w przykładzie, formantu przycisku wewnątrz każdego elementu listy jest przypisany identyfikator unikatowy automatyzacji, czyli identyfikatora pracownika.
+> W ten sposób zawartość wewnętrzny elementu listy, można również ustawić na ciąg w klasie pracowników za pośrednictwem powiązania. Jak pokazano w przykładzie, formant przycisku wewnątrz każdego elementu listy jest przypisany identyfikator unikatowy automatyzacji, czyli identyfikatora pracownika.
 
 ```csharp
 Employee[] employees = new Employee[]
@@ -121,9 +121,9 @@ public override string ToString()
 }
 ```
 
-## <a name="use-a-control-template"></a>Użyj szablonu formantu
+## <a name="use-a-control-template"></a>Korzystanie z szablonu kontrolki
 
-Za pomocą szablonu formantu, tak aby każde wystąpienie określonego typu uzyskuje unikatowej właściwości automatyzacji, gdy są zdefiniowane w kodzie. Tworzenie szablonu, aby **AutomationProperty** wiąże Unikatowy identyfikator w wystąpienia formantu. Następujące XAML przedstawiono jeden ze sposobów tworzenia tego powiązania z szablonem sterowania:
+Tak, aby każde wystąpienie określonego typu uzyskuje unikatowej właściwości automatyzacji, jeśli jest zdefiniowana w kodzie, można użyć szablonu kontrolki. Tworzenie szablonu, aby **AutomationProperty** wiąże Unikatowy identyfikator w wystąpienia formantu. Następujące XAML demonstruje jedno z podejść do utworzenia powiązania z szablonu kontrolki:
 
 ```xaml
 <Style x:Key="MyButton" TargetType="Button">
@@ -140,16 +140,16 @@ Za pomocą szablonu formantu, tak aby każde wystąpienie określonego typu uzys
 </Style>
 ```
 
-Podczas definiowania dwa wystąpienia przy użyciu tego szablonu formantu przycisku ustawiony identyfikator automatyzacji unikatowy ciąg zawartości formantów w szablonie, jak pokazano w poniższych XAML:
+Podczas definiowania dwa wystąpienia przy użyciu tego szablonu kontrolki przycisku identyfikator usługi automation jest równa unikatowy ciąg tekstowy zawartości dla formantów w szablonie, jak pokazano w poniższym XAML:
 
 ```xaml
 <Button Content="Button1" Style="{StaticResource MyButton}" Width="140"/>
 <Button Content="Button2" Style="{StaticResource MyButton}" Width="140"/>
 ```
 
-### <a name="dynamic-controls"></a>Formantów dynamicznych
+### <a name="dynamic-controls"></a>Kontrolek dynamicznych
 
-Jeśli masz formantów, które są tworzone dynamicznie w kodzie i nie utworzono statycznie lub za pomocą szablonów w plikach XAML, musisz ustawić **zawartości** lub **nazwa** właściwości formantu. Dzięki temu się, że każdy dynamicznej kontroli unikatowej właściwości automatyzacji. Na przykład jeśli pole wyboru, które można wyświetlić, wybierz element listy, można ustawić te właściwości, jak pokazano poniżej:
+Jeśli masz formantów, które są tworzone dynamicznie w kodzie i nieutworzonych statycznie lub za pomocą szablonów w plikach XAML, musisz ustawić **zawartości** lub **nazwa** właściwości formantu. Ta akcja gwarantuje, że każda kontrolka dynamiczna ma unikatowej właściwości automatyzacji. Na przykład jeśli pole wyboru, które można wyświetlić, wybierz element listy, można ustawić te właściwości, jak pokazano poniżej:
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)
@@ -165,4 +165,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Test aplikacji platformy uniwersalnej systemu Windows za pomocą kodowanych testów interfejsu użytkownika](../test/test-uwp-app-with-coded-ui-test.md)
+- [Testowanie aplikacji platformy uniwersalnej systemu Windows za pomocą kodowanych testów interfejsu użytkownika](../test/test-uwp-app-with-coded-ui-test.md)

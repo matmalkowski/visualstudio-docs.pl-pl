@@ -9,31 +9,31 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975549"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381595"
 ---
-# <a name="use-the-mstest-framework-in-unit-tests"></a>Za pomocą architektury MSTest w testy jednostkowe
+# <a name="use-the-mstest-framework-in-unit-tests"></a>Użyj struktury MSTest w testach jednostkowych
 
-[MSTest](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) framework obsługuje jednostki testowania w programie Visual Studio. Używać klas i członków <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzenią nazw, gdy są kodowania testów jednostkowych. Umożliwia także je podczas są korygowania testu jednostkowego, który został wygenerowany z kodu.
+[MSTest](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) framework obsługuje testowanie jednostek w programie Visual Studio. Użyć klas i składowych w <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzenią nazw, gdy kodują testów jednostkowych. Umożliwia także je uściślając test jednostkowy, który został wygenerowany z kodu.
 
-## <a name="framework-members"></a>Elementy członkowskie struktury
+## <a name="framework-members"></a>Elementy członkowskie Framework
 
-Aby zapewnić lepszy przegląd testowania framework jednostek, w tej części są uporządkowane członków <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzeni nazw w grupach funkcje.
+Aby zapewnić bardziej zrozumiały omówienie testowania jednostkowego, w tej sekcji służy do organizowania elementów członkowskich <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzeni nazw w grupach pokrewne funkcje.
 
 > [!NOTE]
-> Atrybut elementów, których nazwy kończyć się "Atrybutu", użyciem lub bez "Atrybutu" na końcu. Na przykład następujący przykładowy kod dwóch działać tak samo:
+> Atrybut elementów, których nazwy kończą się ciągiem "Attribute", można z lub bez "Atrybutu" na końcu. Na przykład poniższe dwa przykłady kodu działać tak samo:
 >
 > `[TestClass()]`
 >
 > `[TestClassAttribute()]`
 
-### <a name="members-used-for-data-driven-testing"></a>Elementy członkowskie używany do testów opartych na danych
+### <a name="members-used-for-data-driven-testing"></a>Elementy członkowskie do testowania opartego na danych
 
-Następujące elementy umożliwia konfigurowanie testów jednostkowych opartych na danych. Aby uzyskać więcej informacji, zobacz [utworzenia testu jednostkowego Data-driven](../test/how-to-create-a-data-driven-unit-test.md) i [Określ źródło danych przy użyciu pliku konfiguracji](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Konfigurowanie testów jednostkowych opartych na danych za pomocą następujących elementów. Aby uzyskać więcej informacji, zobacz [tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md) i [przy użyciu pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -43,13 +43,13 @@ Następujące elementy umożliwia konfigurowanie testów jednostkowych opartych 
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
-## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywoływania
+## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywołań
 
-Element kodu ozdobione jedną z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Element kodu dekorowane za pomocą jednej z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atrybuty dla zestawów
 
-AssemblyInitialize i AssemblyCleanup są nazywane prawo po załadowaniu używanemu zestawowi oraz prawo przed używanemu zestawowi zostanie zwolniona.
+AssemblyInitialize i AssemblyCleanup są nazywane prawo po załadowaniu zestawu i po prawej stronie przed zestawu jest zwalniana.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>
 
@@ -57,29 +57,29 @@ AssemblyInitialize i AssemblyCleanup są nazywane prawo po załadowaniu używane
 
 ### <a name="attributes-for-classes"></a>Atrybuty klasy
 
-ClassInitialize i ClassCleanup są nazywane prawo po załadowaniu klasy i w prawo przed klasy zostanie zwolniona.
+ClassInitialize i ClassCleanup są nazywane po prawej stronie po załadowaniu klasy i w prawo przed klasy jest zwalniana.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>
 
-### <a name="attributes-for-test-methods"></a>Atrybuty metody testowe
+### <a name="attributes-for-test-methods"></a>Atrybuty dla metod testowych
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty używane do identyfikowania testu klasy i metody
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty stosowane do identyfikowania, badania klasy i metody
 
-Każda klasa testu musi mieć `TestClass` musi mieć atrybut i każdej metody testowej `TestMethod` atrybutu. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Każda klasa testu musi mieć `TestClass` musi mieć atrybut i każdej metody testowej `TestMethod` atrybutu. Aby uzyskać więcej informacji, zobacz [anatomia test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 
-## <a name="assert-classes-and-related-exceptions"></a>Assert klasy i powiązanych wyjątków
+## <a name="assert-classes-and-related-exceptions"></a>Asercja klasy i powiązanych wyjątków
 
-Testy jednostkowe sprawdzić zachowanie aplikacji określonych przez ich użycie różnych rodzajów potwierdzeń, wyjątków i atrybuty. Aby uzyskać więcej informacji, zobacz [korzystanie z klas potwierdzeń](../test/using-the-assert-classes.md).
+Testy jednostkowe można sprawdzić zachowanie określonej aplikacji, ich użycie różnych rodzajów atrybutów, wyjątki i potwierdzenia. Aby uzyskać więcej informacji, zobacz [korzystanie z klas potwierdzeń](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
@@ -97,7 +97,7 @@ Testy jednostkowe sprawdzić zachowanie aplikacji określonych przez ich użycie
 
 ## <a name="the-testcontext-class"></a>Klasa TestContext
 
-Następujące atrybuty i wartości do nich przypisane są wyświetlane w oknie właściwości usługi Visual Studio dla określonej metody. Te atrybuty nie mają być dostępne za pośrednictwem kod testu jednostkowego. Zamiast tego wpływają one na sposoby testu jednostkowego jest używany lub uruchom przez użytkownika za pomocą środowiska IDE programu Visual Studio lub aparat testów programu Visual Studio. Na przykład niektóre z tych atrybutów są wyświetlane jako kolumny w **Test Manager** okna i **wyników testu** okna, które oznacza, że można używać ich do grupy i sortować testy i wyniki testu. Jeden taki atrybut jest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>, które umożliwia dodanie dowolnego metadanych do testów jednostkowych. Na przykład użytkownik może służyć do przechowywania nazwy przebiegu testowego, które obejmuje ten test, przez oznaczenie testu jednostkowego z `[TestProperty("TestPass", "Accessibility")]`. Lub może być używany do przechowywania wskaźnika typu testu jest z `[TestProperty("TestKind", "Localization")]`. Właściwości tworzenia za pomocą tego atrybutu, a wartość właściwości, należy przypisać zarówno wyświetlanych w programie Visual Studio **właściwości** okna pod nagłówkiem **konkretnego testu**.
+Następujące atrybuty i wartości przypisane do nich są wyświetlane w oknie właściwości usługi Visual Studio dla konkretnej metody testów. Te atrybuty nie mają być dostępne za pośrednictwem kodu testu jednostkowego. Zamiast tego wpływają na sposób test jednostkowy jest używany lub uruchamiania przez użytkownika za pośrednictwem środowiska IDE programu Visual Studio lub przez silnik testowy programu Visual Studio. Na przykład, niektóre z tych atrybutów są wyświetlane jako kolumny w **Test Manager** okna i **wyników testu** okno, które oznacza, że za ich pomocą grupowanie i sortowanie testów i wyników testów. Jest jeden taki atrybut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>, którego używasz, aby dodać dowolne metadanych do testów jednostkowych. Na przykład użytkownik może służyć do przechowywania nazwę przebiegu testu, który obejmuje ten test, przez oznaczenie testów jednostkowych za pomocą `[TestProperty("TestPass", "Accessibility")]`. Lub można go użyć do przechowywania wskazuje rodzaj testu w przypadku `[TestProperty("TestKind", "Localization")]`. Właściwości tworzenia przy użyciu tego atrybutu, a wartość właściwości, możesz przypisać zarówno wyświetlanych w programie Visual Studio **właściwości** okna pod pozycją **konkretnego testu**.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
@@ -113,7 +113,7 @@ Następujące atrybuty i wartości do nich przypisane są wyświetlane w oknie w
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.WorkItemAttribute>
 
-## <a name="test-configuration-classes"></a>Klasy konfiguracji testu
+## <a name="test-configuration-classes"></a>Klas konfiguracji testu
 
 - <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
 
@@ -121,15 +121,15 @@ Następujące atrybuty i wartości do nich przypisane są wyświetlane w oknie w
 
 ## <a name="attributes-used-to-generate-reports"></a>Atrybuty używane do generowania raportów
 
-Atrybuty w tej sekcji dotyczą metody testowej, która ich dekoracji dla jednostek w hierarchii projektu z projektu zespołowego Team Foundation Server.
+Atrybuty w tej sekcji odnoszą się metodę testową, która ich dekoracji do jednostek w hierarchii projektu dla projektu zespołowego Team Foundation Server.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssIterationAttribute>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
-## <a name="classes-used-with-private-accessors"></a>Klasy używane z prywatnych metod dostępu
+## <a name="classes-used-with-private-accessors"></a>Klasy stosowane przy użyciu prywatnych metod dostępu
 
-Możesz wygenerować testu jednostkowego dla metody prywatnej. Tej generacji tworzy klasę prywatnego akcesora, która tworzy wystąpienie obiektu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> klasy. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> Klasy to klasa otoki używającej odbicia w ramach procesu prywatnej metody dostępu. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType> Klasy jest podobny, ale jest używana do wywoływania prywatnych metod statycznych, zamiast wywoływania metod prywatnych wystąpienia.
+Można wygenerować testu jednostkowego dla metody prywatnej. Ta generacja tworzy klasie prywatnego akcesora, który tworzy wystąpienie obiektu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> klasy. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> Klasa jest klasą otoki, która używa odbicia w ramach procesu prywatnego akcesora. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType> Klasy jest podobna, ale jest używany do wywoływania prywatnej metody statyczne, zamiast wywoływania metod wystąpieniem prywatnym.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 
@@ -137,4 +137,4 @@ Możesz wygenerować testu jednostkowego dla metody prywatnej. Tej generacji two
 
 ## <a name="see-also"></a>Zobacz także
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> dokumentacji
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Dokumentacja referencyjna

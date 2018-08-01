@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977794"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382337"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -35,7 +35,7 @@ Podczas tworzenia projektu testowego, testy są wyświetlane w Eksploratorze tes
 
 Podczas przeprowadzania, zapisywania i ponownego przeprowadzania testów Test Explorer wyświetla wyniki w grupach domyślnych **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, **testy pominięte** i  **Esty nieuruchamiane**. Można zmienić sposobu Eksplorator testów grupuje testy.
 
-Można przeprowadzić wiele prac wyszukiwania, organizowanie i Uruchamianie testów na pasku narzędzi Eksploratora testów.
+Można przeprowadzić wiele prac wyszukiwania, organizowanie i Uruchamianie testów z **Eksplorator testów** paska narzędzi.
 
 ![Uruchom testy z paska narzędzi Eksploratora testów](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub z
 
 - Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
-Pasek Powodzenie/niepowodzenie u góry okna Eksploratora testów jest animowany podczas działania testu. Po zakończeniu przebiegu testowego pasek Powodzenie/niepowodzenie zmienia kolor na zielony, jeśli wszystkie testy przekazane lub na czerwony, jeśli dowolny test nie powiodła się.
+**Pasek Powodzenie/niepowodzenie** w górnej części **Eksplorator testów** okna jest animowany podczas uruchamiania testów. Po zakończeniu przebiegu testu **pasek Powodzenie/niepowodzenie** zmieni kolor na zielony, jeśli wszystkie testy Zakończono powodzeniem lub na czerwony, jeśli dowolny test nie powiodła się.
 
 ### <a name="run-tests-after-every-build"></a>Uruchamianie testów po każdej kompilacji
 
 |Przycisk|Opis|
 |-|-|
-|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **testu** w menu standardowym, a następnie wybierz **Uruchom testy po kompilacji** na pasku narzędzi Eksploratora testów.|
+|![Uruchom po kompilacji](../test/media/ute_runafterbuild_btn.png)|Aby uruchomić testy jednostkowe po każdej kompilacji lokalnej, wybierz **testu** w menu standardowym, a następnie wybierz **Uruchom testy po kompilacji** na **Eksplorator testów** paska narzędzi.|
 
 ## <a name="view-test-results"></a>Wyświetlanie wyników testu
 
@@ -127,7 +127,7 @@ Eksplorator testów umożliwia grupowanie testów we wstępnie zdefiniowanych ka
 
 Filtry Test Explorer służy do ograniczenia metod testowych w swoich projektach, które możesz wyświetlać i uruchamiać.
 
-Gdy wpisz ciąg w polu wyszukiwania Eksploratora testów i wybierz klawisz ENTER, lista testów jest filtrowany w celu wyświetlenia tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg znaków.
+Po wpisaniu ciągu w **Eksploratora testów** pole wyszukiwania i wybierz polecenie **Enter**, listy testów jest filtrowany w celu wyświetlenia tylko te testy, których w pełni kwalifikowane nazwy zawierają ciąg znaków.
 
 Aby filtrować według różnych kryteriów:
 
@@ -162,15 +162,15 @@ Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, 
 
 ## <a name="create-custom-playlists"></a>Utwórz niestandardowe listy odtwarzania
 
- Można utworzyć i zapisać listę testów, które chcesz przeprowadzić lub zobaczyć jako grupę. Po wybraniu listy odtwarzania, testy na liście są wyświetlane Eksploratora testów. Test można dodać do więcej niż jednej listy odtwarzania, a wszystkie testy w projekcie są dostępne po wybraniu opcji domyślnej **wszystkie testy** listy odtwarzania.
+ Można utworzyć i zapisać listę testów, które chcesz przeprowadzić lub zobaczyć jako grupę. Po wybraniu listy odtwarzania, testy na liście są wyświetlane w Eksploratorze testów. Test można dodać do więcej niż jednej listy odtwarzania, a wszystkie testy w projekcie są dostępne po wybraniu opcji domyślnej **wszystkie testy** listy odtwarzania.
 
  ![Wybierz listę odtwarzania](../test/media/ute_playlist.png)
 
- **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowym wybierz **Dodaj do listy odtwarzania**, **NewPlaylist**. Zapisz plik o nazwie i lokalizacji, którą określasz w **Tworzenie nowej listy odtwarzania** okno dialogowe.
+ **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowym wybierz **Dodaj do listy odtwarzania** > **NewPlaylist**. Zapisz plik o nazwie i lokalizacji, którą określasz w **Tworzenie nowej listy odtwarzania** okno dialogowe.
 
  **Aby dodać testy do listy odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. W menu kontekstowym wybierz **Dodaj do listy odtwarzania**, a następnie wybierz listę odtwarzania, który chcesz dodać testy.
 
- **Aby otworzyć listę odtwarzania**, wybierz opcję Testuj, lista odtwarzania z menu programu Visual Studio i wybierz opcję z listy niedawno używanych list odtwarzania lub wybierz polecenie Otwórz listę, aby określić nazwę i lokalizację listy odtwarzania.
+ **Aby otworzyć listę odtwarzania**, wybierz **testu** > **listy odtwarzania** z menu programu Visual Studio, a następnie wybierz z listy niedawno używanych list odtwarzania lub wybierz **Otwórz Lista odtwarzania** Aby określić nazwę i lokalizację listy odtwarzania.
 
  Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
@@ -191,7 +191,7 @@ Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Kroko
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnozowanie problemów z wydajnością metoda testu
 
- Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, należy wybrać metodę w Eksploratorze testów, a następnie wybierz profil z menu kontekstowego. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).
+ Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, wybierz metodę w Eksploratorze testów, a następnie wybierz **profilu** w menu kontekstowym. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizuj pokrycie kodu testu jednostkowego
 
@@ -207,9 +207,9 @@ Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:
 
     - **Wszystkie testy** uruchamia metody testowe w rozwiązaniu.
 
-Okno wyniki pokrycia kodu Wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
+**Wyniki pokrycia kodu** okno wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.
 
-Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu, aby określić, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Skróty testu
 
@@ -217,13 +217,13 @@ Testy mogą być uruchamiane z **Eksploratora testów**, klikając prawym przyci
 
 |Częste odzyskiwanie pamięci poleceń| Skróty klawiaturowe|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|Ctrl+R, Ctrl+T|
-|TestExplorer.RunAllTestsInContext|Ctrl+R, T|
+|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są tylko zdefiniowane w klasy abstrakcyjne i nie jest uruchomiony. Aby uruchomić testy z klasy abstrakcyjne, należy utworzyć klasę, która pochodzi z klasy abstrakcyjnej.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Uruchamianie testu jednostkowego jako procesu 64-bitowego](../test/run-a-unit-test-as-a-64-bit-process.md)

@@ -1,5 +1,5 @@
 ---
-title: Zawierają nagrania ekranu i głosu podczas testów przy użyciu ustawień testów w programie Visual Studio
+title: Obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testów w programie Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,60 +10,60 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750997"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381973"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: uwzględnianie podczas testów nagrań głosu i zawartości ekranu przy użyciu ustawień testów
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
-Z edytora konfiguracji w programie Visual Studio możesz skonfigurować adapter danych diagnostycznych, które rejestruje ekranu i głosu użytkownika, który jest uruchomiony test. Adapter danych diagnostycznych zapisuje nagrania ekranu i głosu sesji pulpitu podczas testu. Nagrania są zapisywane z wynikami testu lub można dołączyć do usterki. Za pomocą rejestrowania innych członków zespołu można wykrywać wady aplikacji, które są trudne do odtworzenia.
+Z edytora konfiguracji w programie Visual Studio można skonfigurować adapter danych diagnostycznych, który nagrywa ekran i głos użytkownika, który uruchamia test. Ten adapter danych diagnostycznych zapisuje nagrywanie ekranu i głosu z sesji pulpitu podczas testu. Nagranie jest zapisywane z wynikiem testu lub mogą być dołączane do błędów. Inni członkowie zespołu można użyć rejestrowania, aby wyizolować defekty aplikacji, które są trudne do odtworzenia.
 
 > [!WARNING]
-> Nagrywanie ekranu i głosu nie obsługują wiele konfiguracji monitora.
+> Nagrania ekranu i głosu nie obsługują wielu konfiguracji monitora.
 
-Rejestrator ekran i dźwięk można łączyć z testy ręczne lub automatyczne. Na przykład jeśli zdalne uruchamianie kodowanego testu interfejsu użytkownika można zarejestrować pulpitu, aby zobaczyć kodowanego testu interfejsu użytkownika podczas jego wykonywania. Aby uzyskać więcej informacji o sposobie przechwytywania ekranu i zdalnie rejestrowania dźwięku, zobacz [porady: Ustaw zapasowej Your agenta testowego do uruchamiania testów, które interakcji z pulpitem](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automatycznych. Na przykład zdalne uruchamianie kodowanego testu interfejsu użytkownika można nagrać pulpit, aby zobaczyć kodowany test interfejsu użytkownika podczas jego wykonywania. Aby uzyskać więcej informacji o sposobie przechwytywania nagrywania ekranu i głosu zdalnie, zobacz [porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
-## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Aby skonfigurować ekran i dźwięk rejestrowania dla ustawień testu
+## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Aby skonfigurować nagrywanie w ustawieniach testu ekranu i głosu
 
-1.  Otwórz ustawienia testu, które chcesz skonfigurować do rejestrowania ekranu i głosu. Aby uzyskać więcej informacji, zobacz [zbierania danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data) lub [zbieranie diagnostycznych informacji za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Otwórz ustawienia testu, które chcesz skonfigurować do nagrywania ekranu i głosu. Aby uzyskać więcej informacji, zobacz [zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data) lub [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-2.  W ustawieniach testu, wybierz **roli** służące do rejestrowania ekranu i głosu.
+2.  W ustawieniach testu wybierz **roli** służące do nagrywania ekranu i głosu.
 
     > [!NOTE]
-    > Testy ręczne i automatyczne testy będzie to komputer, który uruchamia testy.
+    > Dla ręcznych i automatycznych testów będzie to komputer który uruchamia testy.
 
 3.  Wybierz **nagrywanie ekranu i głosu** , a następnie wybierz **Konfiguruj**.
 
-     Konfigurowanie adaptera danych diagnostycznych — zostanie wyświetlone okno dialogowe nagrywanie ekranu i głosu.
+     **Konfigurowanie adaptera danych diagnostycznych — nagrywanie ekranu i głosu** zostanie wyświetlone okno dialogowe.
 
      ![Konfiguracja wideo](../test/media/testsettingvideoconfiggdr.png)
 
-4.  (Opcjonalnie) Wybierz **Włącz nagrywanie głosu** do przechwytywania nagranie audio zawartość.
+4.  (Opcjonalnie) Wybierz **Włącz nagrywanie głosu** Aby przechwytywać zawartość audio podczas rejestracji.
 
-5.  (Opcjonalnie) Zaznacz pole wyboru obok pozycji **Zapisz nagrywanie, jeżeli przypadek testowy jest zaliczony** zapisywania nagrania ekranu i głosu dla obu nie powiodło się i przekazany testy.
+5.  (Opcjonalnie) Zaznacz pole wyboru obok pozycji **Zapisz nagrywanie, jeżeli przypadek testowy jest zaliczony** Aby określić zapisywanie nagrania ekranu i głosu dla obu nie powiodło się i przeszedł testy.
 
     > [!WARNING]
-    > W przypadku wybrania **Zapisz nagrywanie, jeżeli przypadek testowy jest zaliczony**, nagrania są przechowywane z wynikami testu, który używa miejsca do magazynowania na serwerze. Można użyć narzędzia czyszczący załącznika testu, aby wyczyścić te załączniki.
+    > Jeśli wybierzesz **Zapisz nagrywanie, jeżeli przypadek testowy jest zaliczony**, nagranie jest przechowywane z wynikami testów, który używa miejsce do magazynowania na serwerze. Możesz użyć **Test Attachment Cleaner** narzędzie, aby wyczyścić załączniki.
 
-6.  W obszarze **jakości nagrywania ekranu**, skonfiguruj następujące opcje listy rozwijanej:
+6.  W obszarze **jakość nagrania ekranu**, skonfiguruj następujące opcje listy rozwijanej:
 
-    1.  **Szybkość klatek:** Określ, ile ramek na sekundę, które mają być używane w nagrywanie ekranu i głosu. Wartość domyślna to 4 klatek na sekundę. Można określić wartości od 2 do 20.
+    1.  **Szybkość klatek:** Określ liczbę klatek na sekundę, które mają być używane w nagrywaniu ekranu i głosu. Wartość domyślna to 4 klatki na sekundę. Można określić wartości z zakresu od 2 do 20.
 
-    2.  **Szybkość transmisji bitów:** Określ liczbę kilobajtów na sekundę do użycia w nagrywanie ekranu i głosu. Wartość domyślna to 512. Można określić wartości od 512 do 10 000.
+    2.  **Szybkość transmisji bitów:** Określ liczbę kilobitów na sekundę, której chcesz używać w nagrywaniu ekranu i głosu. Wartość domyślna to 512. Można określić wartości z zakresu od 512 do 10 000.
 
-    3.  **Quality(1-100):** można określić jakość ekranu i głosu rejestrowanie przez wybieranie zakresu od 1 do 100. Wartość domyślna to 50 (średniej).
+    3.  **Quality(1-100):** można określić jakość nagrywania ekranu i głosu, wybierając zakres od 1 do 100. Wartością domyślną jest 50 (zakres średni).
 
-7.  Wybierz **OK**. Ustawienia modułu zbierającego diagnostycznymi śledzenia są teraz skonfigurowane i zapisywane do użycia w ustawieniach testu.
+7.  Wybierz **OK**. Ustawienia modułu zbierającego śledzenia diagnostycznego są teraz skonfigurowane i zapisane w ustawieniach testu.
 
     > [!TIP]
-    > Można zresetować konfiguracji dla tego adaptera danych diagnostycznych, wybierz **przywrócić konfigurację domyślną** dla programu Visual Studio i **Przywróć ustawienia domyślne** dla programu Microsoft Test Manager.
+    > Aby zresetować konfigurację tego adaptera danych diagnostycznych, wybierz opcję **Przywróć domyślną konfigurację** dla programu Visual Studio i **Przywróć domyślne** dla programu Microsoft Test Manager.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zbierane dane diagnostyczne podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [Zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Zbierz informacje diagnostyczne przy użyciu ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Uruchom testy ręczne (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Uruchamianie testów ręcznych (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)

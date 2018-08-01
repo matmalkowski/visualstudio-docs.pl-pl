@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji internetowej platformy ASP.NET Core w języku C# przy użyciu programu Visual Studio
 description: Dowiedz się, jak utworzyć aplikację internetową platformy ASP.NET Core w programie Visual Studio w języku C#, krok po kroku.
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 07/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
 ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380619"
+ms.locfileid: "39382800"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -29,7 +29,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ projektu jest dostarczany z wszystkich plików szablonów do tworzenia aplikacji sieci web, przed nawet dodano niczego!
+Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Poniżej przedstawiono sposób.
 
 1. Otwórz program Visual Studio 2017.
 
@@ -37,7 +37,11 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 1. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**. Następnie nadaj plikowi nazwę `HelloWorld` i wybierz polecenie **OK**.
 
-   ![Utwórz nowy projekt aplikacji sieci Web programu ASP.NET Core dla języka C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
+1. W **Nowa aplikacja internetowa ASP.NET Core** okna dialogowego Sprawdź, czy **ASP.NET Core 2.0** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web** i wybierz polecenie **OK**.
+
+  ![Wyświetl plik animowany obraz GIF, który pokazuje, jak utworzyć projekt C# ASP.NET Core w programie Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+
+  Wkrótce potem Visual Studio otwiera plik projektu.
 
    > [!NOTE]
    > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie.
@@ -50,58 +54,30 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
    >
    > (Może być ma zamknięcie programu Visual Studio, zanim będzie można kontynuować instalowania nowego obciążenia).
 
-1. W **Nowa aplikacja internetowa ASP.NET Core** okna dialogowego Sprawdź, czy **ASP.NET Core 2.0** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web** i wybierz polecenie **OK**.
+## <a name="create-and-run-the-app"></a>Tworzenie i uruchamianie aplikacji
 
-   ![Okno dialogowe nowej aplikacji sieci Web programu ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
-
-Wkrótce potem Visual Studio otwiera plik projektu.
-
-## <a name="create-the-app"></a>Tworzenie aplikacji
+Następnie będzie tworzenie i uruchamianie aplikacji sieci web "Hello World". Poniżej przedstawiono sposób.
 
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **stron** folder, a następnie wybierz **About.cshtml**.
-
-   ![Wybierz plik About.cshtml z poziomu Eksploratora rozwiązań](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Ten plik odnosi się do strony, który nosi nazwę **o** w aplikacji sieci web.
 
    ![Na stronie informacje w aplikacji sieci web](../ide/media/csharp-aspnet-about-page.png)
 
-   W edytorze zostaną wyświetlone HTML kodu dla obszaru "informacje dodatkowe" **o** strony.
-
-   ![Kod HTML dla obszaru dodatkowe informacje w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
-
 1. Zmień tekst "informacje dodatkowe" do odczytu "**Hello World!**".
 
-   ![Zmień domyślny kod HTML dla obszaru dodatkowe informacje w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
-
-1. W **Eksploratora rozwiązań**, rozwiń węzeł **About.cshtml**, a następnie wybierz **About.cshtml.cs**. (Ten plik, ale także odpowiada **o** strony w aplikacji sieci web.)
-
-   ![Wybierz plik About.cshtml z poziomu Eksploratora rozwiązań](../ide/media/csharp-aspnet-about-page-code-file.png)
-
-   W edytorze zostaną wyświetlone C# kod, który zawiera tekst dla obszaru "application description" **o** strony.
-
-   ![Kod C# obszar opisu aplikacji w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+1. W **Eksploratora rozwiązań**, rozwiń węzeł **About.cshtml**, a następnie wybierz **About.cshtml.cs**.
 
 1. Zmień tekst komunikatu "description aplikacji" do odczytu "**co to jest wiadomość?**".
 
-   ![Zmień domyślny tekst komunikatu dla obszaru Opis aplikacji, w edytorze programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+1. Wybierz **usług IIS Express** lub naciśnij **Ctrl**+**F5** Uruchom aplikację i otworzyć go w przeglądarce sieci web.
 
-## <a name="run-the-app"></a>Uruchamianie aplikacji
-
-1. Naciśnij klawisz **Ctrl**+**F5** Uruchom aplikację i otworzyć go w przeglądarce sieci web.
+  ![Wyświetl animowany obraz GIF pliku, który pokazuje, jak utworzyć i uruchomić aplikację sieci web platformy ASP.NET Core C# w programie Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
 
-1. W górnej części strony sieci web wybierz **o**.
-
-   ![Wybierz informacje ze strony internetowej](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. Zaktualizowany tekst, który został dodany do wyświetlenia **o** strony.
-
-   ![Wyświetl zaktualizowane informacje o stronie, który zawiera tekst, który został dodany](../ide/media/csharp-aspnet-about-page-hello-world.png)
-
-1. Zamknij przeglądarkę sieci web.
+1. Upewnij się, że **o** strona zawiera zaktualizowane tekstu.
 
 Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco C#, ASP.NET Core i programu Visual Studio IDE (zintegrowanym środowiskiem programistycznym).
 

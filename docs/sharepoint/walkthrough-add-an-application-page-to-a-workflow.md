@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120311"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379793"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Wskazówki: Dodawanie strony aplikacji do przepływu pracy
-  W tym przewodniku przedstawiono sposób dodawania strony aplikacji, który wyświetla dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekcie opisane w temacie [wskazówki: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+  W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
- W tym przewodniku przedstawiono następujące zadania:  
+ W tym instruktażu pokazano następujące zagadnienia:  
   
--   Dodawanie strony ASPX aplikacji do projektu przepływu pracy programu SharePoint.  
+-   Dodawanie strony aplikacji ASPX do projektu przepływu pracy programu SharePoint.  
   
--   Uzyskiwanie danych z projektu przepływu pracy i operowanie nimi go.  
+-   Uzyskiwanie danych z projektu przepływu pracy i modyfikowania go.  
   
 -   Wyświetlanie danych w tabeli na stronie aplikacji.  
   
@@ -41,18 +41,18 @@ ms.locfileid: "37120311"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
--   Musisz także wypełnić projektu w temacie [wskazówki: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+-   Musisz też ukończenia projektu w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## <a name="ammend-the-workflow-code"></a>Ammend kodu przepływu pracy
- Najpierw dodaj wiersz kodu do przepływu pracy można ustawić wartości w kolumnie Wynik ilości raportu wydatków. Ta wartość jest używana później podczas obliczania podsumowania raportu wydatków.  
+## <a name="ammend-the-workflow-code"></a>Ammend kod przepływu pracy
+ Najpierw dodaj wiersz kodu do przepływu pracy, aby ustawić wartość kolumny wynik ilość raportu wydatków. Ta wartość jest używana w dalszej części Obliczanie podsumowania raportu wydatków.  
   
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Aby ustawić wartość kolumny wyników w przepływie pracy
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Aby ustawić wartość kolumny wynik w przepływie pracy
   
-1.  Załadowanie projektu zakończone z tematu [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Ładowanie ukończone projektu z tematu [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 2.  Otwórz kod *Workflow1.cs* lub *Workflow1.vb* (w zależności od języka programowania).  
   
@@ -69,15 +69,15 @@ ms.locfileid: "37120311"
     ```  
   
 ## <a name="create-an-application-page"></a>Tworzenie strony aplikacji
- Następnie dodaj ASPX formularza do projektu. Ten formularz spowoduje wyświetlenie danych uzyskanych z projektu przepływu pracy raportu wydatków. Aby to zrobić, zostaną dodane strony aplikacji. Strony aplikacji używa tej samej strony wzorcowej jako inne strony programu SharePoint, co oznacza, że będzie podobny innych stron w witrynie programu SharePoint.  
+ Następnie dodaj ASPX formularza do projektu. Ten formularz, będą wyświetlane dane uzyskane z projektu przepływu pracy raportu wydatków. Aby to zrobić, dodasz strony aplikacji. Na stronie aplikacji używa tej samej strony wzorcowej jako innych stron programu SharePoint, co oznacza, że będzie on podobny innych stron w witrynie programu SharePoint.  
   
 #### <a name="to-add-an-application-page-to-the-project"></a>Aby dodać strony aplikacji do projektu  
   
 1.  Wybierz projekt ExpenseReport, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-2.  W **szablony** okienku wybierz **strony aplikacji** szablon, użyj nazwy domyślnej dla elementu projektu (**ApplicaitonPage1.aspx**) i wybierz polecenie **Dodaj** przycisku.  
+2.  W **szablony** okienku wybierz **strony aplikacji** szablon, użyj domyślnej nazwy dla elementu projektu (**ApplicationPage1.aspx**) i wybierz polecenie **Dodaj** przycisku.  
   
-3.  W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] z ApplicationPage1.aspx, Zastąp `PlaceHolderMain` sekcji z następujących czynności:  
+3.  W [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, Zamień `PlaceHolderMain` sekcję poniższym kodem:  
   
     ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -89,9 +89,9 @@ ms.locfileid: "37120311"
     </asp:Content>  
     ```  
   
-     Ten kod dodaje tabelę do strony wraz z tytułu.  
+     Ten kod dodaje tabelę do strony razem z tytułu.  
   
-4.  Dodawanie tytułu do strony aplikacji przez zastąpienie `PlaceHolderPageTitleInTitleArea` sekcji z następujących czynności:  
+4.  Dodaj tytuł na stronie aplikacji, zastępując `PlaceHolderPageTitleInTitleArea` sekcję poniższym kodem:  
   
     ```aspx-csharp  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
@@ -99,14 +99,14 @@ ms.locfileid: "37120311"
     </asp:Content>  
     ```  
   
-## <a name="code-the-application-page"></a>Strona aplikacji kodu
- Następnie dodaj kod, aby strona podsumowania aplikacji raportu wydatków. Po otwarciu strony kod skanuje listy zadań w programie SharePoint wydatków przekraczające przydzielonego limitu wydatków. Raport zawiera listę poszczególnych elementów wraz z sumą kosztów.  
+## <a name="code-the-application-page"></a>Kodu strony aplikacji
+ Następnie dodaj kod, na stronie podsumowania aplikacji raportu wydatków. Po otwarciu strony, kod skanuje listy zadań w programie SharePoint wydatków, które przekroczyły przydzielony limit wydatków. Raport zawiera listę każdego elementu, wraz z sumą kosztów.  
   
 #### <a name="to-code-the-application-page"></a>Do kodu strony aplikacji  
   
-1.  Wybierz **ApplicationPage1.aspx** węzeł, a następnie na pasku menu wybierz **widoku** > **kod** do wyświetlenia w kodzie strony aplikacji.  
+1.  Wybierz **ApplicationPage1.aspx** węzła, a następnie na pasku menu wybierz **widoku** > **kodu** do wyświetlenia w kodzie strony aplikacji.  
   
-2.  Zastąp **przy użyciu** lub **importu** instrukcje (w zależności od języka programowania) u góry klasy następującym kodem:  
+2.  Zastąp **przy użyciu** lub **importu** instrukcji (w zależności od języka programowania) w górnej części klasy następującym kodem:  
   
     ```vb  
     Imports System  
@@ -298,61 +298,61 @@ ms.locfileid: "37120311"
     ```  
   
     > [!WARNING]  
-    >  Pamiętaj zastąpić "elementu TestServer" w kodzie nazwę prawidłowego serwera z programem SharePoint.  
+    >  Koniecznie Zastąp "element TestServer" w kodzie o nazwie prawidłowy serwer, na którym uruchomiony jest SharePoint.  
   
 ## <a name="test-the-application-page"></a>Testowanie strony aplikacji
- Następnie należy określić, czy strona aplikacji poprawne wyświetlanie danych wydatków.  
+ Następnie należy określić, czy strona aplikacji przedstawia dane wydatków poprawnie.  
   
 #### <a name="to-test-the-application-page"></a>Aby przetestować stronę aplikacji  
   
-1.  Wybierz **F5** klawisz, aby uruchomić i wdrażanie projektu w programie SharePoint.  
+1.  Wybierz **F5** klucza do uruchamiania i wdrażania projektu w programie SharePoint.  
   
-2.  Wybierz **Home** przycisk, a następnie wybierz pozycję **dokumenty udostępnione** łącze na pasek szybkiego uruchamiania, aby wyświetlić listę dokumenty udostępnione w witrynie programu SharePoint.  
+2.  Wybierz **Home** przycisk, a następnie wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania, aby wyświetlić listę dokumenty udostępnione w witrynie programu SharePoint.  
   
-3.  Do reprezentowania raporty wydatków w tym przykładzie, Przekaż kilka nowych dokumentów do listy dokumentów, wybierając **dokumenty** łącze **LibraryTools** kartę w górnej części strony, a następnie wybierając  **Przekaż dokument** na wstążce narzędzi.  
+3.  Do reprezentowania raporty wydatków w tym przykładzie, Przekaż niektóre nowe dokumenty do listy dokumentów, wybierając **dokumenty** link **LibraryTools** kartę w górnej części strony, a następnie wybierając  **Przekaż dokument** przycisk na wstążce narzędzi.  
   
-4.  Po przekazaniu niektórych dokumentów wystąpienia przepływu pracy, wybierając **biblioteki** łącze **LibraryTools** kartę w górnej części strony, a następnie wybierając **ustawienia biblioteki**na wstążce narzędzi.  
+4.  Po przekazaniu niektóre dokumenty wystąpienia przepływu pracy, wybierając **biblioteki** link **LibraryTools** kartę w górnej części strony, a następnie wybierając **ustawienia biblioteki**przycisk na wstążce narzędzi.  
   
-5.  W **ustawienia biblioteki dokumentów** wybierz pozycję **ustawienia przepływu pracy** łącze w **uprawnienia i zarządzanie** sekcji.  
+5.  W **ustawienia biblioteki dokumentów** wybierz **ustawienia przepływu pracy** łącze w **uprawnienia i zarządzanie** sekcji.  
   
-6.  W **ustawienia przepływu pracy** wybierz pozycję **Dodaj przepływ pracy** łącza.  
+6.  W **ustawienia przepływu pracy** wybierz **Dodaj przepływ pracy** łącza.  
   
-7.  W **Dodaj przepływ pracy** wybierz pozycję **ExpenseReport - Workflow1** przepływu pracy, wprowadź nazwę przepływu pracy, takich jak **ExpenseTest**, a następnie wybierz pozycję **Dalej** przycisku.  
+7.  W **Dodaj przepływ pracy** wybierz **ExpenseReport - Workflow1** przepływu pracy, wprowadź nazwę przepływu pracy, takich jak **ExpenseTest**, a następnie wybierz polecenie **Dalej** przycisku.  
   
-     Zostanie wyświetlony formularz skojarzenia przepływu pracy. Służy on do zgłaszania kwota limit wydatków.  
+     Zostanie wyświetlony formularz skojarzenia przepływu pracy. Dzięki niemu raportu kwotę limitu wydatków.  
   
-8.  W formularzu skojarzenia wprowadź **1000** do **automatycznego zatwierdzania Limit** polu, a następnie wybierz pozycję **skojarzenia przepływu pracy** przycisku.  
+8.  W formularzu skojarzenia wprowadź **1000** do **automatycznego zatwierdzenia limitu** , a następnie wybierz **skojarzenia przepływu pracy** przycisku.  
   
-9. Wybierz **macierzystego** przycisk, aby powrócić do strony głównej programu SharePoint.  
+9. Wybierz **macierzystego** przycisk, aby wrócić do strony głównej programu SharePoint.  
   
-10. Wybierz **dokumenty udostępnione** łącze na pasek szybkiego uruchamiania.  
+10. Wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania.  
   
-11. Wybierz jedną z przekazanego dokumentów, aby wyświetlić strzałkę listy rozwijanej, wybierz go, a następnie wybierz **przepływy pracy** elementu.  
+11. Wybierz jeden z przekazanych dokumentów, aby wyświetlić strzałkę listy rozwijanej, wybierz go, a następnie wybierz **przepływy pracy** elementu.  
   
 12. Wybierz obraz obok ExpenseTest do wyświetlania formularza inicjowania przepływu pracy.  
   
-13. W **całkowity koszt** polu tekstowym wprowadź wartość, która jest większa niż 1000, a następnie wybierz **Uruchom przepływ pracy** przycisku.  
+13. W **łączny koszt** polu tekstowym wprowadź wartość, która jest większa niż 1000, a następnie wybierz **Uruchom przepływ pracy** przycisku.  
   
-     Gdy zgłoszone wydatków przekracza ilość przydzielonego wydatków, zadanie zostanie dodany do listy zadań. Kolumna o nazwie **ExpenseTest** z wartością **Ukończono** jest także dodawane do elementu raportu wydatków na liście dokumentów udostępnionych.  
+     Gdy zgłaszane wydatków przekroczy kwota wydatków przydzielone, zadanie zostanie dodane do listy zadań. Kolumna o nazwie **ExpenseTest** wartością **Ukończono** jest także dodawane do elementu raportu wydatków na liście dokumentów udostępnionych.  
   
-14. Powtórz kroki od 11-13 z innych dokumentów na liście dokumentów udostępnionych. (Liczbą dokumentów nie jest ważne).  
+14. Powtórz kroki od 11 13 z innych dokumentów na liście dokumentów udostępnionych. (Dokładna liczba dokumentów nie jest ważna.)  
   
-15. Wyświetl stronę podsumowania aplikacji wydatków raportu, otwierając następujący adres URL w przeglądarce sieci Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. Wyświetlenia strony podsumowania aplikacja raport wydatków, otwierając następujący adres URL w przeglądarce sieci Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     Strona podsumowania raportu wydatków zawiera listę wszystkich raportów wydatków, które przekroczyło przydzielony ilość, jej przekraczają ilość i sumy dla wszystkich raportów.  
+     Na stronie podsumowania raportu wydatków zawiera listę wszystkich raportów wydatków, które przekroczyło przydzielony ilość, kwotę, które przekroczyły go i sumę dla wszystkich raportów.  
   
 ## <a name="next-steps"></a>Następne kroki
- Aby uzyskać więcej informacji na temat stron aplikacji programu SharePoint, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+ Aby uzyskać więcej informacji dotyczących stron aplikacji programu SharePoint, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Możesz można dowiedzieć się więcej na temat projektowania zawartości strony programu SharePoint przy użyciu projektanta wizualnego sieci Web w programie Visual Studio z tych tematów:  
+ Możesz dowiedzieć się więcej o projektowaniu zawartości strony SharePoint przy użyciu Visual Web Designer w programie Visual Studio w tych tematach:  
   
--   [Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
 -   [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Wskazówki: Tworzenie przepływu pracy z formularzami skojarzenia i inicjowania](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Porady: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)   
  [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

@@ -12,27 +12,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ad7f424f9c44623a2112680757598f8076358f36
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: af1af0f6b3493cedebd949bd9f1d36d795a64914
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979389"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380580"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
-Generowanie kodu służy do tworzenia kodu program, który jest silnie typizowane i jeszcze można łatwo zmienić po zmianie modelu źródłowego. Natomiast to alternatywny technice zapisywania całkowicie ogólny program, który akceptuje w pliku konfiguracji, który jest bardziej elastyczna, ale wyniki w kodzie, który nie jest tak łatwe do odczytu i zmienić, ani nie ma takich dobrą wydajność. W tym przewodniku przedstawiono takich korzyści.
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
+
+Generowanie kodu można wygenerować kodu programu, która jest jednoznacznie określone i jeszcze można łatwo zmienić po zmianie modelu źródłowego. Kontrastu to przy użyciu alternatywnych techniki pisania absolutnie ogólny program, który akceptuje w pliku konfiguracji, który jest bardziej elastyczna, ale wyniki w kodzie, który nie jest tak łatwe do odczytu i zmienić, ani nie ma takich dobrą wydajność. W tym instruktażu pokazano tej korzyści.
 
 ## <a name="typed-code-for-reading-xml"></a>Kod maszynowy odczytywania pliku XML
- Przestrzeń nazw zestawów System.Xml udostępnia zaawansowane narzędzia do ładowania dokumentu XML, a następnie przechodząc go za darmo w pamięci. Niestety wszystkie węzły mają ten sam typ, XmlNode. W związku z tym jest bardzo proste popełnione programowania, takich jak oczekiwano niewłaściwy typ węzła podrzędnego lub nieprawidłowe atrybuty.
 
- W tym projekcie przykładowy szablon odczytuje przykładowego pliku XML i generuje klasy, które odpowiadają każdego typu węzła. W kodzie odręcznego można użyć tych klas, można przejść do pliku XML. Można również uruchomić aplikację na inne pliki tego samego typu węzła. Celem przykładowy plik XML jest zapewnienie przykłady wszystkie typy węzłów, które mają aplikacji biznesowych w radzeniu sobie z.
+Przestrzeń nazw System.Xml zawiera wszechstronne narzędzia dla ładowania dokumentu XML oraz kierując się go swobodnie w pamięci. Niestety wszystkie węzły mają tego samego typu XmlNode. W związku z tym jest bardzo proste popełnione programowania, takich jak oczekiwano niewłaściwy typ węzła podrzędnego lub nieprawidłowe atrybuty.
+
+W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy, które odpowiadają każdy typ węzła. W kodzie odręcznej można użyć w ramach tych zajęć, przejdź do pliku XML. Aplikację można również uruchomić na innych plików, które korzystają z tych samych typów węzła. Celem przykładowy plik XML ma zawierają przykłady wszystkie typy węzłów, które mają do czynienia z aplikacji.
 
 > [!NOTE]
->  Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), która jest dostarczana z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wygenerować klas jednoznacznie z plików XML. Jako przykład znajduje się szablon, pokazano poniżej.
+> Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), który jest dołączony do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wygenerować silnie typizowanych klas z plików XML. Szablon pokazany w tym miejscu jest dostarczany jako przykład.
 
- Oto przykładowy plik:
+Poniżej przedstawiono przykładowy plik:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <catalog>
   <artist id ="Mike%20Nash" name="Mike Nash Quartet">
@@ -45,9 +47,9 @@ Generowanie kodu służy do tworzenia kodu program, który jest silnie typizowan
 </catalog>
 ```
 
- W projekcie tworzy tego przewodnika, można napisać kod, takie jak wymienione poniżej i IntelliSense wyświetla monit o poprawne nazwy atrybutu i podrzędnych podczas pisania:
+W projekcie, tworzy w tym instruktażu, można napisać następujący kod i IntelliSense monituje o poprawne nazwy atrybutu i podrzędnych podczas wpisywania:
 
-```
+```csharp
 Catalog catalog = new Catalog(xmlDocument);
 foreach (Artist artist in catalog.Artist)
 {
@@ -59,9 +61,9 @@ foreach (Artist artist in catalog.Artist)
 }
 ```
 
- Natomiast to kodem bez typu, który może zapisać bez szablonu:
+Natomiast to z kodem bez typu, który może zapisać bez szablonu:
 
-```
+```csharp
 XmlNode catalog = xmlDocument.SelectSingleNode("catalog");
 foreach (XmlNode artist in catalog.SelectNodes("artist"))
 {
@@ -73,42 +75,39 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
- W wersji jednoznacznie zmiany do schematu XML spowoduje zmian dla klasy. Kompilator wyróżnione części kodu aplikacji, która musi zostać zmienione. W wersji bez typu, która używa ogólnego kod XML nie ma takiej obsługi.
+Zmiany schematu XML powoduje w silnie typizowanej wersji zmiany do klas. Kompilator podświetla części kodu aplikacji, które należy zmienić. W wersji bez typu ogólnego kod XML jest używany Brak takiego obsługi.
 
- W tym projekcie jednego pliku szablonu służy do generowania klasy, które umożliwiają typizowaną wersję.
+W tym projekcie jednego pliku szablonu służy do generowania klasy, które umożliwiają typizowanej wersji.
 
-## <a name="setting-up-the-project"></a>Konfigurowanie projektu
+## <a name="set-up-the-project"></a>Konfigurowanie projektu
 
 ### <a name="create-or-open-a-c-project"></a>Utwórz lub Otwórz projekt C#
- Ta technika może dotyczyć żadnego kodu projektu. W tym przewodniku zastosowano projektu C# i do celów testowych możemy korzystać z aplikacji konsoli.
 
-##### <a name="to-create-the-project"></a>Aby utworzyć projekt
+Tej techniki można zastosować do dowolnego projektu kodu. W tym instruktażu wykorzystano projektu C# i na potrzeby testowania używamy aplikacji konsoli.
 
-1.  Na **pliku** kliknij menu **nowy** , a następnie kliknij przycisk **projektu**.
+1.  Na **pliku** kliknij menu **New** a następnie kliknij przycisk **projektu**.
 
-2.  Kliknij przycisk **Visual C#** węzeł, a następnie w **szablony** okienku, kliknij przycisk **aplikacji konsoli.**
+2.  Kliknij przycisk **Visual C#** węzła, a następnie w polu **szablony** okienku kliknij **aplikacji konsoli.**
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Dodaj plik XML prototypu do projektu
- Celem tego pliku jest zapewnienie przykłady typów węzła XML, które chcesz mieć możliwość odczytu. Może to być plik, który będzie używany na potrzeby testowania aplikacji. Szablon utworzy klasę C# dla każdego typu węzła, w tym pliku.
 
- Ten plik powinien być częścią projektu, aby szablon może go odczytać, ale nie będzie go można wbudować do skompilowanej aplikacji.
+Celem tego pliku jest zapewnienie przykłady typy węzłów XML, które aplikację, aby można było odczytać. Może to być plik, który będzie używany na potrzeby testowania aplikacji. Szablon generuje klasy C# dla każdego typu węzła, w tym pliku.
 
-##### <a name="to-add-an-xml-file"></a>Aby dodać plik XML
+Plik powinien być częścią projektu, tak aby można go odczytać szablonu, ale nie można zbudować w skompilowanej aplikacji.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** , a następnie kliknij przycisk **nowy element**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** a następnie kliknij przycisk **nowy element**.
 
 2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **pliku XML** z **szablony** okienka.
 
 3.  Dodaj zawartość próbki do pliku.
 
-4.  W ramach tego przewodnika, nadaj nazwę plikowi `exampleXml.xml`. Ustaw zawartość pliku jako pliku XML w poprzedniej sekcji.
-
- .
+4.  W ramach tego przewodnika nadaj plikowi nazwę `exampleXml.xml`. Ustaw zawartość pliku do pliku XML, pokazano w poprzedniej sekcji.
 
 ### <a name="add-a-test-code-file"></a>Dodaj plik kodu testu
- Dodawanie pliku C# do projektu i zapisać w nim próbki kodu, który chcesz mieć możliwość zapisywania. Na przykład:
 
-```
+Dodaj plik języka C# do projektu i zapisać w nim próbki kodu, który chcesz mieć możliwość zapisywania. Na przykład:
+
+```csharp
 using System;
 namespace MyProject
 {
@@ -126,48 +125,47 @@ namespace MyProject
 } } } } }
 ```
 
- Na tym etapie ten kod nie będzie można skompilować. Podczas pisania szablonu zostaną wygenerowane klasy, które zezwolenie na powiodło się.
+Na tym etapie ten kod zakończy się niepowodzeniem skompilować. Podczas pisania szablonu spowoduje wygenerowanie klas, które umożliwiają go zakończyło się sukcesem.
 
- Bardziej szczegółowe badanie można sprawdzić dane wyjściowe tej funkcji testu w znanych zawartości przykładowy plik XML. Jednak w tym przewodniku będzie spełniony kiedy kompiluje metody testowej.
+Bardziej szczegółowe badania można sprawdzić wynik działania tej funkcji badania w znanych zawartości przykładowy plik XML. Ale w ramach tego przewodnika firma Microsoft będzie spełniony gdy kompiluje metody testowej.
 
-### <a name="add-a-text-template-file"></a>Dodawanie pliku szablonu tekstowego
- Dodawanie pliku szablonu tekstowego, a następnie ustaw rozszerzenie wyjścia do "CS".
+### <a name="add-a-text-template-file"></a>Dodaj plik szablonu tekstu
 
-##### <a name="to-add-a-text-template-file-to-your-project"></a>Aby dodać do projektu pliku szablonu tekstowego
+Dodaj plik szablonu tekstu i Ustaw rozszerzenie danych wyjściowych *.cs*.
 
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-2.  W **Dodaj nowy element** wybierz okno dialogowe **szablonu tekstowego** z **szablony** okienka.
+2.  W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.
 
     > [!NOTE]
-    >  Upewnij się, możesz dodać szablonu tekstowego, a nie wstępnie przetworzony szablonu tekstowego.
+    > Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.
 
-3.  W pliku w dyrektywie template zmienić `hostspecific` atrybutu `true`.
+3.  W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.
 
      Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usług.
 
-4.  W dyrektywie danych wyjściowych należy zmienić atrybutu rozszerzenia na "CS", tak, aby szablon generuje plik C#. W projektach Visual Basic czy zmienić go do ".vb".
+4.  W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".
 
-5.  Zapisz plik. Na tym etapie plik szablonu tekst powinien zawierać następujące wiersze:
+5.  Zapisz plik. Na tym etapie pliku szablonu tekstu powinien zawierać następujące wiersze:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
     <#@ output extension=".cs" #>
     ```
 
- .
+Należy zauważyć, że pliku CS pojawia się w Eksploratorze rozwiązań jako podmiot zależny firmy pliku szablonu. Można go było wyświetlić, klikając przycisk [+] obok nazwy pliku szablonu. Ten plik jest generowany na podstawie pliku szablonu Zapisz lub zespół odbiegać od pliku szablonu. Wygenerowany plik zostanie skompilowany w ramach projektu.
 
- Należy zauważyć, że plik .cs jest widoczny w Eksploratorze rozwiązań zależny pliku szablonu. Można to sprawdzić, klikając [+] obok nazwy pliku szablonu. Ten plik został wygenerowany z pliku szablonu, Zapisz lub Przenieś fokus od pliku szablonu. Wygenerowany plik zostanie skompilowany w ramach projektu.
+Dla wygody, podczas tworzenia pliku szablonu, Rozmieść okna tak, plik szablonu i pliku wygenerowanego, dzięki czemu można je wyświetlić obok siebie. Dzięki temu można natychmiast zobaczyć dane wyjściowe szablonu. Zauważysz również, czy gdy szablon generuje nieprawidłowy kod C#, błędy pojawią się w oknie komunikat o błędzie.
 
- Dla wygody, podczas opracowywania pliku szablonu, Rozmieść okna pliku szablonu i wygenerowanego pliku, tak aby były widoczne obok siebie. Dzięki temu można natychmiast zobaczyć dane wyjściowe szablonu. Można również zauważyć, że gdy szablon generuje nieprawidłowy kod C#, błędy zostaną wyświetlone w oknie komunikat błędu.
+Wszelkie zmiany, które wykonać bezpośrednio w wygenerowanym pliku zostaną utracone przy każdym zapisaniu pliku szablonu. Użytkownik powinien w związku z tym należy unikać edytowania wygenerowany plik albo go edytować tylko w przypadku krótkich eksperymentów. Czasami warto spróbuj krótki fragment kodu w wygenerowanym pliku, w którym IntelliSense jest używany w operacji, a następnie skopiuj go do pliku szablonu.
 
- Wszelkich zmian, które należy wykonać bezpośrednio w wygenerowanym pliku zostaną utracone, jeśli zapiszesz plik szablonu. Użytkownik powinien w związku z tym należy unikać edytowania wygenerowanego pliku albo go edytować tylko w przypadku krótkich eksperymentów. Czasami jest to przydatne, i spróbuj krótki fragment kodu w wygenerowanym pliku, w którym IntelliSense jest używany w operacji, skopiuj go do pliku szablonu.
+## <a name="develop-the-text-template"></a>Tworzenie szablonu tekstowego
 
-## <a name="developing-the-text-template"></a>Tworzenie szablonu tekstowego
- Następujące najlepsze porady na elastyczne programowanie będzie opracowywania szablonu w krokach małych wyczyszczenie niektóre błędy na każdego kolejnego przyrostu wartości, dopóki kod testu kompiluje i działa poprawnie.
+Następujące najlepsze porad na programowanie metodą agile firma Microsoft opracuje szablonu w proces na niewielkie etapy, niektóre błędy na każdy przyrost czyszczenie, dopóki nie kompiluje kod testu i działa poprawnie.
 
-### <a name="prototype-the-code-to-be-generated"></a>Prototyp będzie generowany kod
- Kod testu wymaga klasy dla każdego węzła w pliku. W związku z tym niektóre błędy kompilacji zniknie Jeśli Dołącz te wiersze do szablonu, a następnie zapisz go:
+### <a name="prototype-the-code-to-be-generated"></a>Prototyp generowania kodu
+
+Kod testu wymaga klasy dla każdego węzła w pliku. W związku z tym niektóre błędy kompilacji znikną Jeśli Dołącz te wiersze do szablonu, a następnie zapisz go:
 
 ```
 class Catalog {}
@@ -175,10 +173,11 @@ class Artist {}
 class Song {}
 ```
 
- Dzięki temu można zobaczyć, co jest wymagane, ale powinny być generowane deklaracje typów węzła w przykładowym pliku XML. Usuń te wiersze eksperymentalne z szablonu.
+Dzięki temu można zobaczyć, co jest wymagane, ale deklaracje powinny być generowane z typy węzłów w przykładowym pliku XML. Usuń te eksperymentalne wiersze z szablonu.
 
-### <a name="generate-application-code-from-the-model-xml-file"></a>Generowanie kodu aplikacji z pliku XML modelu
- Do odczytania pliku XML i Generowanie deklaracji klasy, Zastąp zawartość następującym kodem szablonu szablonu:
+### <a name="generate-application-code-from-the-model-xml-file"></a>Generowanie kodu aplikacji na podstawie pliku XML modelu
+
+Do odczytywania pliku XML i wygenerować deklaracje klas, Zastąp zawartość następującym kodem szablonu szablonu:
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -198,20 +197,21 @@ class Song {}
 #>
 ```
 
- Zastąp ścieżkę pliku poprawną ścieżkę projektu.
+Zastąp ścieżkę pliku poprawną ścieżkę do projektu.
 
- Zwróć uwagę, ograniczniki blok kodu `<#...#>`. Te ograniczniki nawiasów fragment kodu program, który generuje tekst. Ograniczniki blok wyrażenia `<#=...#>` nawiasów wyrażenia, które może przyjąć na ciąg.
+Zwróć uwagę, ograniczniki blok kodu `<#...#>`. Te ograniczniki dopasowywanie fragmentu kodu programu, która generuje tekst. Ograniczniki blok wyrażenia `<#=...#>` dopasowywanie wyrażenie, które mogą być obliczane na ciąg.
 
- Podczas pisania szablon, który generuje kod źródłowy aplikacji są zajmujących dwa teksty inny program. Program wewnątrz ograniczników blok kodu ma być uruchamiany zawsze możesz zapisać szablon lub przejść do innego okna. Tekst, który generuje i pojawi się poza ograniczniki, jest kopiowany do wygenerowanego pliku i staje się częścią kodu aplikacji.
+Podczas pisania szablonu, który generuje kod źródłowy aplikacji, masz do czynienia z tymi dokumentami oddzielnego programu. Program wewnątrz ograniczniki blok kodu jest uruchamiany przy każdej Zapisz szablon, lub Przenieś fokus do innego okna. Tekst, który generuje i pojawia się poza ograniczników, jest kopiowany do wygenerowanego pliku i staje się częścią kodu aplikacji.
 
- `<#@assembly#>` Dyrektywy zachowuje się jak odwołanie, udostępniając zestawu kod szablonu. Listę zestawów, które zostały odebrane przez szablon jest oddzielony od listy odwołań w projekcie aplikacji.
+`<#@assembly#>` Dyrektywy zachowuje się jak odwołanie, udostępniając zestaw kod szablonu. Lista zestawów widzianych przez szablon jest niezależna od listy odwołań w projekcie aplikacji.
 
- `<#@import#>` Dyrektywy działa jak `using` instrukcji, co umożliwia używanie krótkiej nazwy klasy w importowanych przestrzeni nazw.
+`<#@import#>` Dyrektywy zachowuje się jak `using` instrukcji, co pozwala na wykorzystanie krótkich nazw klas importowanych przestrzeni nazw.
 
- Niestety, chociaż ten szablon generuje kod, generuje deklaracji klasy dla każdego węzła w przykładowy plik XML, dzięki czemu Jeśli istnieje kilka wystąpień `<song>` węzła, pojawi się kilka deklaracji utworu klasy.
+Niestety, mimo że ten szablon generuje kod, generuje deklarację klasy dla każdego węzła w przykładowy plik XML, aby w przypadku kilka wystąpień `<song>` węzła, pojawi się kilka deklaracji utworu klasy.
 
-### <a name="read-the-model-file-then-generate-the-code"></a>Odczytanie pliku modelu, a następnie generowania kodu
- Wiele szablonów tekstowych wykonaj wzorzec, w którym pierwsza część szablonu odczytuje plik źródłowy, a druga część generuje szablon. Należy odczytać wszystkich przykładowy plik Podsumowując typy węzłów, które zawiera, a następnie wygeneruj deklaracji klasy. Inny `<#@import#>` jest potrzebna, dzięki czemu możemy użyć `Dictionary<>:`
+### <a name="read-the-model-file-then-generate-the-code"></a>Odczytywanie pliku modelu, a następnie generowania kodu
+
+Wiele szablonów tekstowych postępuj zgodnie z wzorcem, w którym pierwsza część szablonu odczytuje plik źródłowy, a druga część generuje szablon. Należy odczytać całej przykładowy plik, aby podsumować typy węzłów, które zawiera, a następnie wygeneruj deklaracji klasy. Inny `<#@import#>` jest wymagana, dzięki czemu możemy użyć `Dictionary<>:`
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -239,10 +239,11 @@ class Song {}
 #>
 ```
 
-### <a name="add-an-auxiliary-method"></a>Dodaj metodę pomocniczą
- Formant bloku funkcji klasy jest blok można zdefiniować metody pomocnicze. Blok jest rozdzielone `<#+...#>` i musi ona występować jako ostatniego bloku w pliku.
+### <a name="add-an-auxiliary-method"></a>Dodawanie metody pomocnicze
 
- Jeśli wolisz nazw klas do zaczynać się wielką literę, można zastąpić ostatniej części szablonu następujący kod szablonu:
+Blok sterowania cechami klasy to blok w którym można zdefiniować metody pomocnicze. Blok sterujący jest ujęty w `<#+...#>` i musi ona występować jako ostatniego bloku w pliku.
+
+Jeśli wolisz nazwy klas zaczynać się wielką literą, można zastąpić ostatnią część szablonu poniższym kodem szablonu:
 
 ```
 // Generate the code
@@ -259,18 +260,19 @@ class Song {}
 #>
 ```
 
- Na tym etapie .cs wygenerowanego pliku zawiera następujące deklaracje:
+Na tym etapie wygenerowany *.cs* plik zawiera następujące deklaracje:
 
-```
+```csharp
 public partial class Catalog {}
 public partial class Artist {}
 public partial class Song {}
 ```
 
- Więcej informacji, takich jak właściwości węzły podrzędne, atrybuty i tekst wewnętrzny można dodać przy użyciu tej samej metody.
+Przy użyciu tej samej metody można dodać więcej szczegółów, takich jak właściwości dla węzłów podrzędnych, atrybuty i tekst wewnętrzny.
 
-### <a name="accessing-the-visual-studio-api"></a>Uzyskiwanie dostępu do interfejsu API programu Visual Studio
- Ustawienie `hostspecific` atrybutu `<#@template#>` dyrektywy umożliwia szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu API. Szablon można umożliwia to uzyskanie lokalizacji plików projektu, aby uniknąć używania bezwzględną ścieżkę do pliku w kodzie szablonu.
+### <a name="access-the-visual-studio-api"></a>Dostęp do interfejsu API programu Visual Studio
+
+Ustawienie `hostspecific` atrybutu `<#@template#>` dyrektywy umożliwia szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu API. Ten szablon umożliwia to uzyskanie dostępu lokalizację plików projektu, aby unikać bezwzględną ścieżkę do pliku w kodzie szablonu.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -284,8 +286,9 @@ XmlDocument doc = new XmlDocument();
 doc.Load(System.IO.Path.Combine(dte.ActiveDocument.Path, "exampleXml.xml"));
 ```
 
-## <a name="completing-the-text-template"></a>Korzystanie z szablonu tekstowego
- Następująca zawartość szablonu generuje kod, który umożliwia kod testu skompilować i uruchomić.
+## <a name="complete-the-text-template"></a>Wykonaj szablonu tekstowego
+
+Następująca zawartość szablon generuje kod, który umożliwia kodu testu skompilować i uruchomić.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -379,46 +382,55 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="running-the-test-program"></a>Uruchomienie programu testu
- W oknie głównym aplikacji konsoli następujące wiersze wykona metody testowej. Naciśnij klawisz F5, aby uruchomić program w trybie debugowania:
+### <a name="run-the-test-program"></a>Uruchom test program
 
-```
+W oknie głównym aplikacji konsoli następujące wiersze wykona metody testowej. Naciśnij klawisz F5, aby uruchomić program w trybie debugowania:
+
+```csharp
 using System;
 namespace MyProject
-{ class Program
-  { static void Main(string[] args)
-    { new CodeGeneratorTest().TestMethod();
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      new CodeGeneratorTest().TestMethod();
       // Allow user to see the output:
       Console.ReadLine();
-} } }
+    }
+  }
+}
 ```
 
-### <a name="writing-and-updating-the-application"></a>Zapisywanie i aktualizowanie aplikacji
- Teraz można pisać aplikacji w stylu jednoznacznie przy użyciu wygenerowane klasy zamiast ogólnego kod XML.
+### <a name="write-and-update-the-application"></a>Pisanie i zaktualizuj aplikację
 
- Po zmianie schematu XML, łatwo można wygenerować nowe klasy. Kompilator poinformuje dewelopera, gdy musi zostać zaktualizowany kod aplikacji.
+Teraz można pisać aplikacji w stylu silnie typizowane przy użyciu wygenerowane klasy zamiast ogólnych kod XML.
 
- Aby ponownie wygenerować klas, gdy przykładowy plik XML zostanie zmieniony, kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań.
+Po zmianie schematu XML, można łatwo generować nowe klasy. Kompilator informuje dewelopera, gdzie należy zaktualizować kod aplikacji.
+
+Aby ponownie wygenerować klas, gdy przykładowy plik XML zostanie zmieniony, kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
 ## <a name="conclusion"></a>Wniosek
- W tym przewodniku przedstawiono kilka technik i zalet generowania kodu:
 
--   *Generowanie kodu* utworzenie części kodu źródłowego aplikacji z *modelu*. Model zawiera informacje w formularzu nadaje się do domeny aplikacji i może ulec zmianie w okresie istnienia aplikacji.
+W tym instruktażu przedstawiono kilka technik i korzyści wynikające z generowania kodu:
 
--   Silne wpisywanie jest jedną z korzyści płynących generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia inne części aplikacji biznesowych w radzeniu sobie z informacjami o przy użyciu zestawu typów.
+-   *Generowanie kodu* jest tworzenie części kodu źródłowego aplikacji *modelu*. Model zawiera informacje w postaci nadaje się do domeny aplikacji i mogą ulec zmianie w okresie istnienia aplikacji.
 
--   Funkcja IntelliSense i kompilator ułatwiają tworzenie kodu, który jest zgodna ze schematem modelu zarówno podczas pisanie nowego kodu i podczas schemat jest aktualizowany.
+-   Silne wpisywanie jest jedną z zalet generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia innych części aplikacji, aby poradzić sobie z informacjami o przy użyciu zestawu typów.
 
--   Dodanie jednego prostotę pliku szablonu do projektu zapewniają następujące korzyści.
+-   Funkcja IntelliSense i kompilator pomocne podczas tworzenia kodu, który jest zgodna ze schematem modelu, i kiedy piszesz nowy kod po zaktualizowaniu schematu.
 
--   Szablonu tekstowego można opracowany i przetestowany szybko i przyrostowo.
+-   Dodanie jednego prostotę pliku szablonu projektu może zapewnić te korzyści.
 
- W tym przewodniku z wystąpienia modelu reprezentatywny przykład plików XML, których aplikacja będzie przetwarzać faktycznie zostaje wygenerowany kod programu. W bardziej formalnych podejście schemat XML będzie danych wejściowych w szablonie w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście może ułatwić szablonu, aby określić właściwości, takie jak liczebność relacji.
+-   Szablon tekstowy można opracowany i przetestowany szybko i przyrostowo.
 
-## <a name="troubleshooting-the-text-template"></a>Rozwiązywanie problemów z szablonu tekstowego
- Jeśli błędy kompilacji lub przekształcania szablonu w już wspomniano **listy błędów**, lub jeśli plik wyjściowy nie został poprawnie wygenerowany, można rozwiązywać problemy szablonu tekstowego z metod opisanych w [Generowanie Pliki za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+W tym instruktażu kodu programu faktycznie jest generowany z wystąpienia modelu reprezentatywna próbka pliki XML, które aplikacja może przetworzyć. W podejściu bardziej formalne schematu XML jest wprowadzanie do szablonu w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście może ułatwić szablonu określić właściwości, takie jak liczebność relacji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="troubleshoot-the-text-template"></a>Rozwiązywanie problemów z szablonu tekstowego
+
+Jeśli wiesz już błędy kompilacji lub przekształcania szablonu w **lista błędów**, lub jeśli plik wyjściowy nie został poprawnie wygenerowany, można rozwiązać szablon tekstowy, za pomocą metod opisanych w [wygenerowany Pliki za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)

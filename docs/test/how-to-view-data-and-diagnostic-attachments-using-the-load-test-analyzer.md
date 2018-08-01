@@ -1,5 +1,5 @@
 ---
-title: Przeglądanie danych i załączników diagnostycznych dla testów obciążenia w programie Visual Studio
+title: Wyświetl dane i załączniki danych diagnostycznych dla testów obciążenia w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 228f8306b803fcbd0e83e23e5b8e919dc2116c37
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751368"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382467"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Porady: przeglądanie danych i załączników diagnostycznych za pomocą analizatora testu obciążenia
 
-Przed uruchomieniem obciążenia test, możesz wybrać ustawienie testu, które określa kart dane diagnostyczne i dane, które chcesz użyć. Po zakończeniu testu obciążenia umożliwia analizatora testu obciążenia przeglądanie szczegółowych informacji o tych kartach dane diagnostyczne i dane podczas analizowania wyników. Aby wyświetlić danych i informacji diagnostycznych karty, wybierz **widoku danych i załączników diagnostycznych** przycisk na pasku narzędzi analizatora testu obciążenia. Na przykład w przypadku testu obciążenia były adapter informacji systemu skonfigurowane ustawienia testu, można wyświetlić informacje o systemie maszyny, która została użyta podczas uruchomienia testu obciążenia.
+Przed uruchomieniem Załaduj test, możesz wybrać ustawienia testu, który określa karty dane diagnostyczne i dane, które chcesz użyć. Po zakończeniu testu obciążeniowego, należy użyć **analizatora testu obciążenia** Aby wyświetlić szczegółowe informacje dotyczące karty te dane diagnostyczne i dane podczas analizowania wyników. Aby wyświetlić dane i szczegóły adaptera diagnostycznego, wybierz **Wyświetl dane i załączniki danych diagnostycznych** znajdujący się na **analizatora testu obciążenia** paska narzędzi. Na przykład jeśli test obciążeniowy karty informacje systemu, które są skonfigurowane w ustawieniach testu, możesz wyświetlić informacje o komputerze który został użyty podczas uruchomienia testu obciążenia w systemie.
 
-![Wybieranie okna dialogowego załącznika adaptera danych diagnostycznych](../test/media/load_adapterdialog.png)
+![Wybieranie okna dialogowego załącznik karty danych diagnostycznych](../test/media/load_adapterdialog.png)
 
-Innym przykładem jest test obciążenia, który zawiera kartę IntelliTrace w ustawieniach testu. IntelliTrace adapter umożliwia otwarcie strony Podsumowanie funkcji IntelliTrace.
+Innym przykładem jest test obciążenia, który zawiera karty IntelliTrace w ustawieniach testu. IntelliTrace adapter umożliwia otwieranie **krótki opis IntelliTrace** strony.
 
 ![Podsumowanie funkcji IntelliTrace](../test/media/load_intellitrace.png)
 
-Aby uzyskać więcej informacji, zobacz [zbieranie diagnostycznych informacji za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md) i [IntelliTrace zbieranie danych](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Aby uzyskać więcej informacji, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md) i [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
-## <a name="to-view-data-and-diagnostic-attachments-in-a-load-test-from-the-load-test-analyzer"></a>Aby wyświetlić dane i załączniki diagnostyczne w teście obciążenia z analizatora testu obciążenia
+## <a name="to-view-data-and-diagnostic-attachments-in-a-load-test-from-the-load-test-analyzer"></a>Aby wyświetlić dane i załączniki danych diagnostycznych podczas testów obciążenia w analizatorze testu obciążenia
 
-1.  Po zakończeniu testu obciążenia lub po otwarciu wyniku testu obciążenia, załadować Test analizatora na pasku narzędzi wybierz opcję **widoku danych i załączników diagnostycznych**.
+1.  Po zakończeniu testu obciążeniowego lub po otwarciu wyniku testu obciążeniowego w **analizatora testu obciążenia** narzędzi, wybierz **Wyświetl dane i załączniki danych diagnostycznych**.
 
      **Wybierz adaptera danych diagnostycznych** zostanie wyświetlone okno dialogowe.
 
-2.  Wybierz załącznik adaptera danych diagnostycznych, który chcesz przeanalizować, a następnie wybierz pozycję **OK**.
+2.  Wybierz załącznik adaptera danych diagnostycznych, który chcesz analizować, a następnie wybierz **OK**.
 
 ## <a name="see-also"></a>Zobacz także
 

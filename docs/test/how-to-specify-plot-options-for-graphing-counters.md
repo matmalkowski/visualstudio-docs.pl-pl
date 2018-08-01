@@ -10,47 +10,46 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750925"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382324"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Porady: określanie opcji wykresu dla liczników sporządzających wykresy
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Porady: Określ opcje dla liczników sporządzających wykresy wykresu
 
-**Wykreślenia opcje** okno dialogowe umożliwia zmianę koloru i wiersza styl kreślony licznik na wykresie. Można ustalić zakres na określoną wartość lub ustawić zakresu automatycznie dostosowana, na podstawie próbki danych.
+**Opcje wykresu** okno dialogowe umożliwia zmianę stylu linii wykreślona licznik na wykresie. Możesz również ustalić zakres na określonej wartości lub zakresu, które mają zostać automatycznie skorygowane, na podstawie próbki danych.
 
-![Okno dialogowe Opcje kreślenia](../test/media/ltest_plotoptions.png)
+![Okno dialogowe Opcje wykresu](../test/media/ltest_plotoptions.png)
 
-## <a name="to-specify-plotting-options-for-graphs"></a>Umożliwia określenie opcji kreślenia wykresów
+## <a name="to-specify-plotting-options-for-graphs"></a>Aby określić opcje wykreślania dla wykresów
 
-1.  Załadowanie testów analizatora, wybierz **wykresy** na pasku narzędzi testu obciążenia.
+1.  W **analizatora testu obciążenia**, wybierz **wykresów** na pasku narzędzi.
 
      Spowoduje to wyświetlenie wyników testów obciążenia w widoku wykresu.
 
-2.  W legendzie lub wykres, kliknij prawym przyciskiem myszy wiersz lub bieżącego wiersza kreślenia licznika wydajności, dla którego chcesz zmienić opcję kreślenia, a następnie wybierz **wykreślenia opcje**.
+2.  W legendzie, lub na wykresie, kliknij prawym przyciskiem myszy wiersza lub bieżący wiersz wykreślania licznika wydajności, dla którego chcesz zmienić opcję wykreślania, a następnie wybierz pozycję **Opcje wykresu**.
 
-     **Wykreślenia opcje** Wyświetla okno dialogowe.
+     **Opcje wykresu** Wyświetla okno dialogowe.
 
 3.  Użyj **kolor** listy rozwijanej i wybierz kolor, którego chcesz użyć do kreślenia licznika wydajności.
 
-4.  Użyj **styl** listy rozwijanej i wybierz styl, który ma być używany do kreślenia licznika wydajności.
+4.  Użyj **styl** listy rozwijanej i wybierz styl, który chcesz użyć do kreślenia licznika wydajności.
 
 5.  Wykonaj jedną z następujących czynności:
 
-     Wybierz **automatycznie Dostosuj zakres** (ustawienie domyślne)
+     Wybierz **automatycznie Dopasuj zakres** (ustawienie domyślne)
 
-     \- lub -
+     \- lub —
 
-     Wyczyść **automatycznie Dostosuj zakres** i użyj **zakres** listy rozwijanej, aby określić zakres, który ma być używany do kreślenia licznika wydajności.
+     Wyczyść **automatycznie Dopasuj zakres** i użyj **zakres** listy rozwijanej, aby określić zakres, który chcesz użyć do kreślenia licznika wydajności.
 
 6.  Wybierz **OK**.
 
-     Zmienić opcje dla licznika wydajności jest wyświetlane na wykresie ze zmianami, które określiłeś.
+     Zmienić opcje dla licznika wydajności jest wyświetlany na wykresie ze zmianami, które określiłeś.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Porady: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analizowanie wyników testów obciążenia w widoku wykresu](../test/analyze-load-test-results-in-the-graphs-view.md)

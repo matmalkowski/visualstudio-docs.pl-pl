@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177282"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382051"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus udostępnia metodę tworzenia łącza między modelami i z innych narzędzi modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Możesz utworzyć zintegrowany zestaw językami DSL.
@@ -127,10 +127,10 @@ ms.locfileid: "39177282"
 
 4.  Jeśli wybrano odwoływać się do elementu w modelu, można dodać listę typów, które użytkownik może wybrać, na przykład Company.FamilyTree.Person.
 
-5.  Kliknij przycisk **OK**, a następnie kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań.
+5.  Kliknij przycisk **OK**, a następnie kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
     > [!WARNING]
-    >  Jeśli nie wybrano prawidłowego modelu lub jednostki przycisku OK nie wpłyną, mimo że może pojawić się włączone.
+    > Jeśli nie wybrano prawidłowego modelu lub jednostki przycisku OK nie wpłyną, mimo że może pojawić się włączone.
 
 6.  Jeśli określono listę typów docelowych, takich jak Company.FamilyTree.Person, następnie należy dodać odwołanie do zestawu do projektu DSL odwołuje się do elementu docelowego DSL, na przykład Company.FamilyTree.Dsl.dll biblioteki DLL
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177282"
 3.  W projekcie debugowanie w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dodać pliki, które są wystąpieniami każdego DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
 
 4.  Utwórz niektóre elementy i łącza w wystąpieniu narażonych DSL i zapisz go.
 

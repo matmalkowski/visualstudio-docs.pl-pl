@@ -9,88 +9,88 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951375"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382265"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
-A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka specyficznego dla domeny (DSL). Możesz ustawić dekoratora występują a znikają w zależności od stanu właściwości w modelu. Na przykład na kształt reprezentujący osoby, może mieć inne ikony, które znajdują się w zależności od danej osoby, płci, liczbę elementów podrzędnych i tak dalej.
+A *dekoratora* jest ikona albo wiersz tekstu, który pojawia się na kształcie języka specyficznego dla domeny (DSL). Można wprowadzić dekoratora pojawiają się i znikają w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentująca osobę, może mieć różne ikony, które pojawiają się w zależności od danej osoby, płeć, liczba elementów podrzędnych i tak dalej.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub dekoratora
- W poniższej procedurze przyjęto, że został już zdefiniowany kształt i jego mapowania do klasy domeny. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
+ W poniższej procedurze przyjęto, że został już zdefiniowany kształt i ich mapowanie do klasy domeny. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).
 
-#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Aby ustawić widoczność dekoratora ikony lub tekstu
+#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Aby kontrolowanie widoczności ikony lub tekstu elementu decorator
 
-1.  Na diagramie definicji DSL Dodaj do klasy kształtu ikony lub elementów decorator tekstu, które mają być wyświetlane.
+1.  W definicji DSL diagramu Dodaj do klasy kształt ikony lub dekoratorów tekstu, które mają być wyświetlane.
 
-    1.  Kliknij prawym przyciskiem myszy klasę kształtu, wskaż pozycję **Dodaj**, a następnie kliknij przycisk wymagany typ dekoratora.
+    1.  Kliknij prawym przyciskiem myszy kształt klasy, wskaż opcję **Dodaj**, a następnie kliknij przycisk wymagany typ dekoratora.
 
-    2.  Ustaw dekoratora **pozycji** właściwości. Więcej niż jeden dekorator może mieć to samo położenie. Na przykład można mieć ikony męskiego oraz gniazdo udostępnianie tej samej pozycji.
+    2.  Ustaw dekoratora **pozycji** właściwości. Więcej niż jeden dekorator może mieć taką samą pozycję. Na przykład można mieć ikony dla mężczyzn, a udostępnianie tej samej pozycji kobiet.
 
-    3.  Ustaw **domyślna ikona** właściwości dekoratora ikony.
+    3.  Ustaw **domyślna ikona** właściwość dekoratora ikony.
 
-2.  Wybierz diagram element mapy, szara linia między kształtu Klasa i klasy domeny na diagramie definicji DSL.
+2.  Wybierz mapowanie elementu diagramu, który jest szara linia między klasą kształt i klasy domeny na diagramem definicji DSL.
 
-3.  W okienku szczegółów DSL w **mapy Dekoratora** , a następnie wybierz dekoratora. Na przykład MaleDecorator.
+3.  W oknie Szczegóły języka DSL w **mapy Dekoratora** , a następnie wybierz dekoratora. Na przykład MaleDecorator.
 
-4.  Sprawdź **filtru widoczność** pole.
+4.  Sprawdź **filtr widoczności** pole.
 
-5.  Jeśli właściwość domeny, którą należy ustawić widoczność znajduje się w klasie natychmiastowego domeny, należy pozostawić **ścieżka do właściwości filtru** puste.
+5.  Jeśli właściwość domeny, który należy kontrolować widoczność znajduje się w klasie natychmiastowego domeny, należy pozostawić **ścieżka do właściwości filtru** puste.
 
      W przeciwnym razie kliknij menu rozwijane i przejście do relacji lub klasy, w którym znajduje się właściwość.
 
-    -   Aby uniknąć raportu o błędach, należy nie przeglądania relacji oznaczonej jako "*" w narzędziu nawigacji.
+    -   Aby uniknąć raport o błędzie, należy nie rozejrzysz się po relacji oznaczone "*" w narzędziu nawigacji.
 
-6.  Ustaw **właściwości filtru** do właściwości domeny. Na przykład płeć.
+6.  Ustaw **właściwość filtra** z właściwością domeny. Na przykład płeć.
 
-7.  W **wpisy widoczność** liście, Dodaj wartości tej właściwości domeny, dla którego dekorator powinny być widoczne. Na przykład męskiego.
+7.  W **wpisy dotyczące widoczności** liście, Dodaj wartości tej właściwości domeny, dla którego powinny być widoczne dekoratora. Na przykład mężczyzn.
 
-8.  Powtórz kroki dla każdego ikony.
+8.  Powtórz kroki dla każdej ikony.
 
-9. **Przekształć wszystkie szablony**, tworzenia i uruchamiania i Otwórz diagram testu.
+9. **Transformuj wszystkie szablony**, tworzenie i uruchamianie i Otwórz diagram testu.
 
-10. Po zmianie wartości właściwości kontrolowanie elementów decorator powinien pojawiają się i znikają.
+10. Po zmianie wartości właściwości kontroli dekoratory powinien pojawiają się i znikają.
 
- Często mają widoczność kontrolowany przez formułę bardziej złożone niż prosty zestaw wartości. Na przykład na ma ikony są zależne od liczby łączy określonego typu, lub aby wprowadzić go zależy, czy liczba jest w określonym zakresie. W takim przypadku należy użyć następującej procedury.
+ Często mają widoczność kontrolowany przez formułę bardziej skomplikowane niż prosty zestaw wartości. Na przykład zawiera ikony są zależne od liczby łączy określonego typu lub ułatwiają są zależne od tego, i czy liczba jest w określonym zakresie. W takim przypadku należy użyć następującej procedury.
 
-#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Aby ustawić widoczność dekoratora, na podstawie wzoru
+#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Można kontrolować widoczność dekoratora na podstawie formuły
 
-1.  Dodaj właściwość domeny obliczeniowych do klasy domeny. W **właściwości** okna, ustaw następujące wartości:
+1.  Dodaj właściwość domeny obliczeniowej do klasy domeny. W **właściwości** okna, ustaw następujące wartości:
 
      **IsBrowsable =**`False`**— spowoduje to ukrycie właściwości użytkownika** 
 
-     **Rodzaj =**`Calculated`**-oznacza to, że zapewni kod, który oblicza swoją wartość** 
+     **Rodzaj =**`Calculated`**— oznacza to, że zapewni kod, który oblicza swoją wartość** 
 
      **Nazwa** na przykład **DecoratorControl**
 
      **Typ** = `Boolean`
 
-     Aby uzyskać więcej informacji, zobacz [obliczona i właściwości magazynu niestandardowe](../modeling/calculated-and-custom-storage-properties.md).
+     Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).
 
-2.  Należy ustawić widoczność dekoratora właściwości w nowym.
+2.  Wprowadź nową właściwość kontrolować widoczność dekoratora.
 
-    1.  Wybierz diagram element mapy, szara linia z klasy domeny dla kształtu. W **szczegóły DSL** okna, otwórz **DecoratorMap** kartę.
+    1.  Wybierz mapowanie elementu diagramu, czyli szara linia z klasy domeny, do kształtu. W **szczegóły języka DSL** otwarte okno **Mapa DecoratorMap** kartę.
 
-    2.  Sprawdź **filtru widoczność** pole.
+    2.  Sprawdź **filtr widoczności** pole.
 
-    3.  W **właściwości filtru**, wybierz właściwość formantu **DecoratorControl**.
+    3.  W **właściwość filtra**, wybierz właściwości kontrolki **DecoratorControl**.
 
-    4.  W obszarze **wpisy widoczność**, wprowadź `True`.
+    4.  W obszarze **wpisy dotyczące widoczności**, wprowadź `True`.
 
-3.  Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań.
+3.  Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
 4.  Kliknij przycisk **Kompiluj rozwiązanie** na **kompilacji** menu.
 
-5.  Kliknij dwukrotnie pozycję raportu o błędach, które pojawiły: "*YourClass* nie zawiera definicji dla GetDecoratorControlValue...".
+5.  Kliknij dwukrotnie raport o błędach, które pojawiły: "*YourClass* nie zawiera definicji GetDecoratorControlValue...".
 
-     Otwiera edytora tekstu na Dsl\GeneratedCode\DomainClasses.cs. Powyżej wyróżnione błędu jest komentarz, który wyświetlenie monitu o dodanie metody.
+     Zostanie otwarty Edytor tekstu Dsl\GeneratedCode\DomainClasses.cs. Powyższego błędu wyróżnionego jest komentarz, który użytkownik zostanie poproszony o dodanie metody.
 
-6.  Należy pamiętać, przestrzeń nazw, klasy i metody, które nie są spełnione.  For example, Company.FamilyTree.Person.GetDecoratorControlValue().
+6.  Należy pamiętać, przestrzeń nazw, klasy i metody, które są nieobecne.  For example, Company.FamilyTree.Person.GetDecoratorControlValue().
 
-7.  W osobnym pliku kodu należy zapisać definicji częściowej klasy, która zawiera brakującej metody. Na przykład:
+7.  W osobnym pliku kodu Napisz zawierającego metodę brakuje definicji klasy częściowej. Na przykład:
 
     ```
     namespace Company.FamilyTree
@@ -101,9 +101,9 @@ A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka
     } } }
     ```
 
-     Aby uzyskać więcej informacji na temat dostosowywania model kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Aby uzyskać więcej informacji na temat Dostosowywanie modelu za pomocą kodu programu zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-8.  Ponownie skompilować i uruchomić rozwiązanie.
+8.  Ponownie skompiluj i uruchom rozwiązanie.
 
 ## <a name="see-also"></a>Zobacz też
 

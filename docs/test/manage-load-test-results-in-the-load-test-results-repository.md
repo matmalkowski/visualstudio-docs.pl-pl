@@ -13,50 +13,50 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976744"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380361"
 ---
-# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Zarządzanie wyników testów obciążenia w repozytorium wyników testów obciążenia
+# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia
 
-Po uruchomieniu testów obciążenia, wszystkie informacje zebrane podczas uruchomienia testu obciążenia może być przechowywany w *repozytorium wyników testów obciążenia*, która jest bazą danych SQL. Repozytorium wyników testów obciążenia zawiera dane licznika wydajności i informacje o błędach zarejestrowane. Bazy danych repozytorium wyników utworzoną przez Instalatora dla kontrolerów lub tworzone automatycznie przy pierwszym uruchomieniu lokalnego testu obciążenia. Dla przebiegu lokalnego bazy danych zostaną utworzone automatycznie Jeśli schemat testu obciążenia nie istnieje.
+Kiedy uruchamiasz testy obciążenia, wszystkie informacje zebrane podczas uruchomienia testu obciążenia mogą być przechowywane w *repozytorium wyników testów obciążenia*, która jest bazą danych SQL. Repozytorium wyników testu obciążenia zawiera dane licznika wydajności i wszelkie informacje o błędach zarejestrowane. Baza danych repozytorium wyników jest tworzona przez konfigurację dla kontrolerów, lub tworzona automatycznie przy pierwszym lokalnym uruchomieniu testu obciążenia. Do uruchamiania lokalnego baza danych zostanie utworzony automatycznie Jeśli schemat testu obciążenia nie jest obecny.
 
- Jeśli zmodyfikujesz ciąg połączenia repozytorium wyników kontrolera do korzystania z innego serwera, nowy serwer musi mieć skryptu loadtestresultsrepository.sql Uruchom, aby utworzyć schemat.
+ Jeśli zmodyfikujesz parametry połączenia repozytorium wyników kontrolera do korzystania z innego serwera, nowy serwer musi mieć *loadtestresultsrepository.sql* skrypt uruchamiany w celu utworzenia schematu.
 
- Visual Studio Enterprise zapewnia licznik nazwane zestawy, które zbierać podstawowe liczniki wydajności oparte na technologii. Te zestawy są przydatne podczas analizowania serwera IIS, platformy ASP.NET server lub programu SQL server. Wszystkie dane zebrane z zestawów liczników są przechowywane w repozytorium wyników testów obciążenia.
+ Program Visual Studio Enterprise zapewnia nazwane zestawy liczników, które zbierają wspólne liczniki wydajności bazujące na technologii. Te zestawy są przydatne podczas analizowania serwera IIS, serwera ASP.NET lub programu SQL server. Wszystkie dane zebrane z zestawami licznika są przechowywane w repozytorium wyników testu obciążenia.
 
 > [!IMPORTANT]
-> Ma różnicy między zbiór liczników i dane licznika wydajności. Zbiór liczników jest metadanych. Definiuje grupę liczniki wydajności, które powinny być zbierane z komputera, który wykonuje określoną rolę, takich jak usługi IIS lub SQL Server. Zbiór liczników jest częścią definicji testu obciążenia. Dane liczników wydajności zbieranych na podstawie zbiorów liczników, mapowanie licznika ustawioną na określonym komputerze oraz częstotliwość próbkowania.
+> Istnieje różnica między zestawem liczników a danych licznika wydajności. Zestaw liczników to metadane. Definiuje grupę liczników wydajności, które powinny być zbierane z komputera, na którym wykonuje określoną rolę, takich jak usługi IIS lub programu SQL Server. Zestaw liczników jest częścią definicji testu obciążenia. Dane licznika wydajności są zbierane na podstawie zbiory liczników, mapowania licznika Ustaw na określonym komputerze oraz częstotliwość próbkowania.
 
 ## <a name="sql-server-versions"></a>Wersje programu SQL Server
 
- Aby użyć testów obciążenia, można użyć programu SQL Server Express LocalDB, który jest zainstalowany program Visual Studio. Jest to domyślny serwer bazy danych dla testów obciążenia (łącznie z integracji programu Microsoft Excel). SQL Server Express LocalDB jest tryb wykonywania programu SQL Server Express, która jest przeznaczona dla deweloperów programu. Instalacja programu SQL Server Express LocalDB kopiuje minimalny zbiór pliki niezbędne do uruchomienia aparatu bazy danych programu SQL Server.
+ Aby użyć testów obciążenia, można użyć programu SQL Server Express LocalDB, który jest instalowany z programem Visual Studio. Jest domyślny serwer bazy danych dla testów obciążenia (w tym integracji programu Microsoft Excel). SQL Server Express LocalDB to tryb wykonywania programu SQL Server Express, który jest przeznaczony dla twórców programu. Instalacja programu SQL Server Express LocalDB kopiuje minimalny zestaw plików niezbędnych do uruchomienia aparatu bazy danych programu SQL Server.
 
- Jeśli zespół oczekuje potrzeb duże bazy danych lub projektów pokonać programu SQL Server Express LocalDB, należy rozważyć uaktualnienie do programu SQL Express lub pełnego serwera SQL zapewnienie możliwości skalowania dalszych. Po uaktualnieniu programu SQL Server dla programu SQL Server Express LocalDB pliki MDF i LDF są przechowywane w folderze profilu użytkownika. Te pliki mogą służyć do importowania bazy danych testów obciążenia do programu SQL Server Express lub SQL Server.
+ Jeśli zespół oczekuje potrzeb duże bazy danych lub projekty wykraczają poza możliwości programu SQL Server Express LocalDB, należy rozważyć uaktualnienie do programu SQL Express lub pełnej wersji programu SQL Server w celu zapewnienia dalszego skalowania. W przypadku uaktualniania programu SQL Server pliki MDF i LDF dla programu SQL Server Express LocalDB są przechowywane w folderze profilu użytkownika. Te pliki mogą służyć do importowania bazy danych testów obciążeniowych do programu SQL Server Express lub SQL Server.
 
-## <a name="load-test-results-store-considerations"></a>Zagadnienia dotyczące magazynu wyników testów obciążenia
+## <a name="load-test-results-store-considerations"></a>Uwagi dotyczące przechowywania wyników testów obciążenia
 
- Po zainstalowaniu programu Visual Studio Enterprise magazynu wyników testów obciążenia został skonfigurowany do używania wystąpienia programu SQL Express, która jest zainstalowana na komputerze. Program SQL Express jest ograniczone do maksymalnie 4 GB miejsca na dysku. Jeśli program będzie uruchamiany wiele testów obciążenia przez dłuższy czas, należy rozważyć Konfigurowanie magazynie wyników testu obciążenia, aby użyć wystąpienia pełnej produktu SQL Server, jeśli jest dostępna.
+ Po zainstalowaniu programu Visual Studio Enterprise, Magazyn wyników testu obciążenia skonfigurowano do korzystania z wystąpienia programu SQL Express, który jest zainstalowany na komputerze. Program SQL Express jest ograniczony do wykorzystywania maksymalnie 4 GB miejsca na dysku. Po uruchomieniu wielu testów obciążenia w długim okresie czasu, należy rozważyć skonfigurowanie magazynu wyników testów obciążeń do użycia wystąpienia pełnego produktu SQL Server, jeśli jest dostępny.
 
 ## <a name="load-test-analyzer-tasks"></a>Zadania analizatora testu obciążenia
 
-|Zadania|Skojarzone — tematy|
+|Zadania|Skojarzone tematy|
 |-----------|-----------------------|
-|**Repozytorium wyników — Konfiguracja testu obciążenia:** można zdefiniować repozytorium wyników testów obciążenia w bazie danych SQL. **Uwaga:** podczas instalacji kontrolera testu można także utworzyć repozytorium testu obciążenia. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).||
-|**Wybierając i wyświetlając repozytorium wyników:** możesz wybrać repozytorium określonych wyników. Nie są ograniczone do magazynu lokalnego wyników. Często testów obciążenia są uruchamiane na zdalnym zestaw komputerów agenta. Mogą zostać zapisane wyniki testu z agentów programu lub komputera lokalnego do dowolnego serwera SQL, na którym utworzono magazynu wyników testów obciążenia. W obu przypadkach należy określić miejsce przechowywania wyników testu obciążenia za pomocą **administrować kontrolerami testów** okna.|-   [Porady: Wybieranie repozytorium wyników testów obciążenia](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Porady: dostęp do analizy wyników testu obciążenia](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Usuwanie wyniku testu obciążenia z repozytorium:** można usunąć wyniku testu obciążenia z **edytorze testu obciążenia** za pomocą **otwarte i zarządzanie wynikami testów obciążenia** okno dialogowe.|-   [Porady: usuwanie wyników testu obciążenia z repozytorium](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importowanie i eksportowanie wyników do repozytorium:** można importować i eksportować wyników testu obciążenia z **edytorze testu obciążenia**.|-   [Porady: importowanie wyników testu obciążenia do repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Porady: eksportowanie wyników testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Konfigurowanie testu obciążeniowego repozytorium wyników:** możesz skonfigurować repozytorium wyników testu obciążenia w bazie danych SQL. **Uwaga:** po zainstalowaniu kontrolera testów można również tworzyć repozytorium testu obciążenia. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).||
+|**Zaznaczanie i wyświetlanie repozytorium wyników:** możesz wybrać repozytorium określonych wyników. Nie jesteś ograniczony do magazynu wyników lokalnych. Często testy obciążenia są uruchamiane na zbiorze zdalnym komputerów agentów. Wyniki testów z agentów lub z komputera lokalnego można zapisać na dowolnym serwerze SQL, na którym utworzono Magazyn wyników testu obciążenia. W obu przypadkach należy wskazać, gdzie przechowywać wyniki testu obciążenia przy użyciu **Administrowanie kontrolerami testów** okna.|-   [Porady: Wybieranie repozytorium wyników testu obciążenia](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Usuwanie wyników testu obciążenia z repozytorium:** można usunąć wyniku testu obciążeniowego z **edytora testu obciążenia** przy użyciu **Otwórz i Zarządzaj wynikami testu obciążenia** okno dialogowe.|-   [Porady: z wynikami testów obciążeniowych usunięcia z repozytorium](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Import i eksport wyników do repozytorium:** można importować i eksportować wyniki testów obciążenia z **edytora testu obciążenia**.|-   [Porady: Importuj wyniki testu obciążenia z repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Porady: z wynikami testów obciążeniowych eksportu z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
  [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Aby wyświetlić wyniki działania testu obciążenia i zakończonego testu obciążenia, należy za pomocą analizatora testu obciążenia.
+ Można wyświetlić wyniki odbywającego się testu obciążenia i zakończonego testu obciążenia przy użyciu **analizatora testu obciążenia**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: dostęp do analizy wyników testu obciążenia](../test/how-to-access-load-test-results-for-analysis.md)
+- [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)

@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — działania Interop projektanta
+title: Projektant przepływu pracy — Interop, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,40 +12,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9eb5e8b2dbca57d28f9d350b769b5eaa90e2b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979077"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379341"
 ---
-# <a name="interop-activity-designer"></a>Projektant działania Interop
+# <a name="interop-activity-designer"></a>Interop, projektant działań
 
-**Międzyoperacyjności** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Interop> działania.
+**Międzyoperacyjności** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Interop> działania.
 
-## <a name="the-interop-activity"></a>Działania Interop
- <xref:System.Activities.Statements.Interop> Działanie zarządza wykonywania typów wyprowadzonych z <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> w przepływie pracy.
+## <a name="the-interop-activity"></a>Działań Interop
 
-### <a name="using-the-interop-activity-designer"></a>Przy użyciu narzędzia Projektant działania Interop
- **Międzyoperacyjności** Projektant działań można znaleźć w **migracji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**kartę (można także wybrać **przybornika** z **widoku** menu lub CTRL + ALT + X.)
+<xref:System.Activities.Statements.Interop> Działanie zarządza wykonaniem typów wyprowadzonych z <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> w przepływie pracy.
 
- [Migracji](../workflow-designer/migration-activity-designers.md) kategorię, która zawiera <xref:System.Activities.Statements.Interop> działania tylko zostaną wyświetlone w **przybornika** Jeśli Twój projekt jest docelowo pełne .NET Framework 4.
+### <a name="use-the-interop-activity-designer"></a>Użyj Interop, Projektant działań
 
- Dla projektów C#, można ponownie docelowych projektu do użycia pełnej .NET Framework 4, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając **właściwości**. Na **aplikacji** wybierz opcję **NET Framework 4** opcji **platformy docelowej**. Wybierz **tak** przycisk **docelowej Framework zmienić** okno dialogowe wyświetla z prośbą o potwierdzenie tej zmiany.
+**Międzyoperacyjności** projektanta działań można znaleźć w **migracji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**kartę. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
- Dla projektów języka VB, można ponownie docelowych projektu do postaci używanej przez kliknięcie prawym przyciskiem myszy projekt w pełnej .NET Framework 4 **Eksploratora rozwiązań** i wybierając **właściwości**. Na **skompilować** , kliknij pozycję **zaawansowane opcje kompilacji** przycisku. Wybierz **.Net Framework 4** z **listy docelowej framework** , a następnie kliknij przycisk **OK**. Kliknij przycisk **tak** przycisk **docelowej Framework zmienić** okno dialogowe wyświetla z prośbą o potwierdzenie tej zmiany.
+[Migracji](../workflow-designer/migration-activity-designers.md) kategorię, która zawiera <xref:System.Activities.Statements.Interop> działanie tylko zostaną wyświetlone w **przybornika** Jeśli projekt jest przeznaczony dla pełnego .NET Framework 4.
 
- **Międzyoperacyjności** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Interop> działania z domyślną **DisplayName** z Interop. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **międzyoperacyjności** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dla projektów C#, można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **aplikacji** zaznacz **.NET Framework 4** opcji **platformę docelową**. Wybierz **tak** aby potwierdzić tę zmianę.
 
- Kliknij przycisk **kliknij, aby przeglądać...**  tekst w **ActivityType** okno, albo na **międzyoperacyjności** działania projektanta lub w siatce właściwości, aby wyświetlić **Przeglądaj i wybierz .net typ** okno dialogowe. Tylko typy dla przepływu pracy 3.0 lub 3.5 przepływu pracy działania (to znaczy tylko typy pochodzące z <xref:System.Workflow.ComponentModel.Activity>). Aby uzyskać więcej informacji na temat przy użyciu tego pola, aby określić typ, zobacz [Wyszukaj i wybierz typ .NET dialogowe](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) tematu.
+Dla projektów VB można ponownie docelowej projektu, aby użyć pełnego .NET Framework 4, klikając prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**. Na **skompilować** kliknij pozycję **zaawansowane opcje kompilacji** przycisku. Wybierz **.Net Framework 4** z **Target framework listy**, a następnie kliknij przycisk **OK**. Wybierz **tak** aby potwierdzić tę zmianę.
 
-### <a name="the-interop-properties"></a>Właściwości międzyoperacyjne
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Interop> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy.
+**Międzyoperacyjności** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchnię projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Upuszczanie **międzyoperacyjności** tworzy projektanta działań <xref:System.Activities.Statements.Interop> działanie przy użyciu domyślnego **DisplayName** z międzyoperacyjności. Możesz edytować <xref:System.Activities.Activity.DisplayName%2A> w nagłówku **międzyoperacyjności** Projektant działań lub **DisplayName** pola siatki właściwości.
+
+Kliknij przycisk **kliknij, aby przeglądać** tekstu w **ActivityType** pole, albo na **międzyoperacyjności** działanie projektanta lub w siatce właściwości, aby otworzyć **Przeglądaj i Wybierz pozycję .net typu** okno dialogowe. Wyświetlane są tylko typy workflow 3.0 lub 3.5 w przepływie pracy działania. Oznacza to, że tylko typy pochodne <xref:System.Workflow.ComponentModel.Activity> są wyświetlane. Aby uzyskać więcej informacji na temat używania tego pola, aby określić typ zobacz [umożliwia przeglądanie i wybieranie typu .NET, okno dialogowe](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
+
+### <a name="the-interop-properties"></a>Właściwości międzyoperacyjności
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Interop> właściwości, a w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Interop> działania. Wartość domyślna to Interop. Wyświetlana nazwa nie jest ściśle wymagane, jest najlepszym rozwiązaniem, aby użyć nazwy wyświetlanej.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Określa typ działania zawarty w <xref:System.Activities.Statements.Interop> działania. Ten określony typ musi pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.Interop> działania. Wartość domyślna to **międzyoperacyjności**. Chociaż nazwa wyświetlana nie jest wymagane, zaleca się podać jedną.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Określa typ działania zawarte w <xref:System.Activities.Statements.Interop> działania. Ten typ określony muszą pochodzić od <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Zobacz także
 

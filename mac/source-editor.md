@@ -5,77 +5,77 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a8a545bafc0d25b6fc5a54affb9ff07d724fc492
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957001"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379416"
 ---
 # <a name="source-editor"></a>Edytor źródła
 
-Edytor wiarygodnego źródła jest konieczne do pisania kodu krótkiej formie i wydajne. Programu Visual Studio for Mac zawiera Edytor zaawansowane źródła, który znajduje się na środku interakcji z IDE. Edytor źródła zawiera funkcje, które mogą oczekiwać, należy wykonać swoją pracę z łatwością: od podstaw takie wyróżnianie składni, fragmentów kodu i składania kodu, do korzystania z integracji kompilatora Roslyn, takie jak IntelliSense funkcjonalnej kodu ukończenia.
+Edytor wiarygodnego źródła ma zasadnicze znaczenie dla pisania kodu, zwięzły i wydajne. Program Visual Studio dla komputerów Mac udostępnia edytora zaawansowanego źródła, który znajduje się w środku interakcje ze środowiskiem IDE programu. Edytor źródła zawiera funkcje, które mogą spodziewać się i potrzebują do wykonania swojej pracy z łatwością: od podstawowych takich wyróżniania składni, fragmenty kodu i składanie kodu, do korzyści z integracji kompilator Roslyn, takie jak IntelliSense w pełni funkcjonalne kodu ukończenie.
 
-Edytor źródła w programie Visual Studio for Mac umożliwia bezproblemowe ze wszystkimi funkcjami w środowisku IDE, takie jak debugowania, refaktoryzacji elementu i integracją kontroli wersji.
+Edytor źródła w programie Visual Studio dla komputerów Mac umożliwia bezproblemowe środowisko z wszystkimi funkcjami w środowisku IDE, takie jak debugowania, refaktoryzacji i integrację kontroli wersji.
 
-W tym artykule przedstawiono niektóre główne funkcje Edytor źródła i opisuje, jak można programu Visual Studio for Mac produktywność jak to możliwe.
+W tym artykule przedstawiono niektóre najważniejsze funkcje Edytor źródła i analizuje, jak można użyć programu Visual Studio dla komputerów Mac na taką samą produktywność jak to możliwe.
 
 ## <a name="the-source-editor-experience"></a>Środowisko Edytor źródła
 
-Wyświetlanie i przenoszenie wydajnie w całym kodzie jest integralną częścią przepływu pracy programowania. Dokładnie, jak użytkownik chce wyświetlać i obsługa, że kod jest osobiste decyzji, który różni się między deweloperzy - i często między projektami.
+Wyświetlanie i wydajnego przenoszenia w całym kodzie jest integralną częścią przepływu pracy tworzenia oprogramowania. Dokładnie decyzja dotycząca wyświetlanie i utrzymanie kodu jest osobiste decyzji, które różni się od deweloperów — i często między projektami.
 
-Program Visual Studio dla komputerów Mac oferuje wiele zaawansowanych funkcji, aby wiele platform jako dostępny i użyteczna, jak to możliwe. W poniższych sekcjach opisano niektóre najważniejsze funkcje.
+Program Visual Studio for Mac oferuje wiele zaawansowanych funkcji dzięki niej programowanie dla wielu platform oraz dostępne jako użyteczne, jak to możliwe. W następujących sekcjach opisano niektóre najważniejsze funkcje.
 
 ## <a name="code-folding"></a>Składanie kodu
 
-Kod składania ułatwia zarządzanie plików kodu źródłowego dużych przez deweloperów pokazać lub ukryć pełną części kodu, na przykład przy użyciu dyrektyw, schematyczny kod i komentarze i instrukcje #region. Składanie kodu jest domyślnie wyłączona w programie Visual Studio dla komputerów Mac
+Składanie kodu ułatwia zarządzanie plikami kodu źródłowego w dużych, umożliwiając deweloperom Pokaż lub Ukryj zakończenie sekcji kodu, takich jak przy użyciu dyrektyw, standardowy kod i komentarze i instrukcje #region. Składanie kodu jest domyślnie wyłączona w programie Visual Studio dla komputerów Mac
 
-Aby włączyć składania kodu, przejdź do **programu Visual Studio > Preferencje... > Edytor tekstu > Ogólne > Kod składania**:
+Aby włączyć zwijanie kodu, przejdź do **programu Visual Studio >... Preferencje > Edytor tekstu > Ogólne > składanie kodu**:
 
-![Kod składania opcje](media/source-editor-image1.png)
+![Opcje składanie kodu](media/source-editor-image1.png)
 
-To menu zawiera również opcję fold #regions i komentarze domyślnie wyświetlania o nazwie wskazówki, zamiast kodu.
+To menu umożliwia także opcji, aby złożyć #regions i komentarze domyślnie wyświetlania o nazwie wskazówki, zamiast kodu.
 
 Aby pokazać lub ukryć sekcje, należy użyć widget ujawniania obok numer wiersza:
 
- ![Pokazywanie lub ukrywanie sekcje w kodzie](media/source-editor-image2.png)
+ ![Pokazywanie lub ukrywanie sekcji w kodzie](media/source-editor-image2.png)
 
-Można również przełączać się między pokazywanie i ukrywanie złożeń przy użyciu **Widok > składanie > Fold przełącznika / Przełącz wszystkie złożeń** element menu:
+Możesz także przełączać się między pokazywaniu i ukrywaniu złożeń przy użyciu **Widok > Zwijanie > składania przełącznik / Przełącz wszystkie złożeń** element menu:
 
- ![Składanie elementu Menu](media/source-editor-image19.png)
+ ![Zwijanie elementu Menu.](media/source-editor-image19.png)
 
-Ten element menu można również włączyć lub wyłączyć składania kodu.
+Ten element menu można również włączyć lub wyłączyć składanie kodu.
 
 ## <a name="white-space"></a>Biały znak
 
-Może być konieczne do wyświetlenia niewidoczne znaki w kodzie źródłowym. Jest widoczny sposób, aby upewnić się, że w przypadku przestrzega standardy kodowania i nie niepotrzebnie marnować miejsca. Jest również przydatne w przypadku zapisywania F #, który jest zależny od dokładnie wcięta wierszy do obliczania kodu.
+Może być konieczne w celu wyświetlania niewidoczne znaki w kodzie źródłowym. Jest widoczny sposób, aby upewnić się, że one być przestrzega standardy kodowania i nie niepotrzebnie Marnowanie miejsca. Jest to również przydatne podczas pisania F #, która zależy od dokładnie wcięcia wierszy dla oceny kodu.
 
-Ustaw opcje mają odstępu, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > Znaczniki i linijki**. Ta opcja umożliwia ustawienie _podczas_ znaki widoczne będą wyświetlane: nigdy w zaznaczeniu lub zawsze:
+Ustawianie opcji, aby wyświetlić białe znaki, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > Znaczniki i linijki**. Wybranie tej opcji umożliwia ustawienie _podczas_ będą wyświetlane niewidoczne znaki: nigdy, w zaznaczeniu lub zawsze:
 
- ![Pokaż opcje niewidoczne znaków](media/source-editor-image3.png)
+ ![Pokaż opcje niewidoczne znaki](media/source-editor-image3.png)
 
-Opcję, aby wyświetlić karty, spacje i zakończenia wierszy jest również dostępna:
+Opcję, aby wyświetlać karty, spacje i końce wierszy jest również dostępna:
 
- ![Pokaż karty i spacji](media/source-editor-image4.png)
+ ![Pokaż znaki tabulacji i spacje](media/source-editor-image4.png)
 
- Niewidoczne znaki są wyświetlane jako szare kropkami, jak pokazano na poniższej ilustracji:
+ Niewidoczne znaki są wyświetlane jako szary kropki, jak pokazano na poniższej ilustracji:
 
- ![wyświetlane odstępu](media/source-editor-image22.png)
+ ![wyświetlane białe znaki](media/source-editor-image22.png)
 
 ## <a name="ruler"></a>Linijki
 
-Linijki kolumny jest przydatna do określania długości wiersza, szczególnie w przypadku, gdy praca w zespół, który zawiera wytyczne długość wiersza. Linijki kolumny może być włączony lub wyłączony przechodząc do **programu Visual Studio > Preferencje... > Edytor tekstu > Znaczniki i linijki** i zostanie wybrana (lub usunięcie zaznaczenia) **linijki Pokaż kolumnę**, jak pokazano w na poniższej ilustracji:
+Linijka kolumny jest przydatne do określania długości wiersza, szczególnie w przypadku, gdy pracuje zespół, który zawiera wytyczne dotyczące długość wiersza. Linijkę kolumn można włączyć lub wyłączyć, przechodząc do **programu Visual Studio >... Preferencje > Edytor tekstu > Znaczniki i linijki** i wybranie (lub usunięcie zaznaczenia tej opcji) **linijkę kolumn pokazują**, jak pokazano w poniższej ilustracji:
 
- ![Okno dialogowe Preferencje z "Pokaż kolumny linijki" wyróżnione](media/source-editor-image5.png)
+ ![Okno dialogowe preferencji przy użyciu "Pokaż linijkę kolumn" wyróżniony](media/source-editor-image5.png)
 
- Zostaną wyświetlone jako pionowy szara linia światła w edytorze źródła.
+ Spowoduje to wyświetlenie jako Jasny pionowy szara linia w edytorze źródła.
 
 ## <a name="highlight-identifier-references"></a>Wyróżnij odwołania do identyfikatorów
 
-"Wyróżnij odwołania do identyfikatorów" opcja jest włączona można wybrać dowolny symbol w kodzie źródłowym i Edytor źródła zapewni visual przewodnik dotyczący wszystkie odwołania w tym pliku. Aby włączyć tę opcję, przejdź do **programu Visual Studio > Preferencje... > Edytor tekstu > Znaczniki i linijki** i wybierz _Wyróżnij odwołania do identyfikatorów_, jak pokazano na poniższej ilustracji:
+Za pomocą "Wyróżnij odwołania do identyfikatorów" opcja jest włączona możesz wybrać dowolny symbol w kodzie źródłowym, a Edytor źródła zapewni przewodnik wizualny po wszystkie odwołania w tym pliku. Aby włączyć tę opcję, przejdź do **programu Visual Studio >... Preferencje > Edytor tekstu > Znaczniki i linijki** i wybierz _wyróżniać odwołania do identyfikatorów_, jak pokazano na poniższej ilustracji:
 
-![Okno dialogowe Preferencje z "Wyróżnij odwołania do identyfikatorów" wyróżnione](media/source-editor-image6.png)
+![Okno dialogowe preferencji przy użyciu "Wyróżnij odwołania do identyfikatorów" wyróżniony](media/source-editor-image6.png)
 
-Kolor wyróżnienia jest również przydatne w przypadku określające, że coś jest jest przypisany lub odwołuje się do. Jeśli coś jest przypisane, jest wyróżnione kolorem czerwonym; Jeśli jest do niego odwołania, jest zaznaczone na niebiesko:
+Kolor wyróżnienia jest również przydatne w przypadku określania to coś jest przypisywany lub odwołania. Jeśli coś, co jest przypisane, jest wyróżniony na czerwono; jest ona przywoływana jest wyróżniany kolorem niebieskim:
 
-![przykład przedstawiający kolor higlight](media/source-editor-image7.png)
+![przykład przedstawiający kolor wyróżnienia](media/source-editor-image7.png)

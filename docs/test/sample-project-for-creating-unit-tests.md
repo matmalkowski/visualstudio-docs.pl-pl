@@ -1,6 +1,6 @@
 ---
-title: Przykładowy kod służący do tworzenia testów jednostkowych
-description: W tym artykule przedstawiono przykładowy kod, który można przetestować przy użyciu testów jednostkowych programu Visual Studio.
+title: Przykładowy kod dotyczący tworzenia testów jednostkowych
+description: Ten artykuł zawiera przykładowy kod, który może być testowany z testów jednostkowych w programie Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,25 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704606"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379777"
 ---
 # <a name="sample-code-for-testing"></a>Przykładowy kod do testowania
 
-Ten przykładowy kod zawiera klasę, *prezentowanie ich*, z różnych metod, które można zbadać za pomocą testów jednostkowych.
+Ten przykładowy kod zawiera klasę *BankAccount*, za pomocą różnych metod, które mogą być testowane za pomocą testów jednostkowych.
 
-Kod jest używany w następujące wskazówki:
+Kod jest używany w poniższych instruktażach:
 
-- [Tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). W tym przewodniku poprowadzi Cię przez kroki tworzenia i dostosować testy jednostkowe, uruchom je i zbadanie wyników testu.
-- [Za pomocą narzędzia wiersza polecenia testowego](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym przewodniku używasz MSTest.exe narzędzia wiersza polecenia do uruchomienia testów i wyświetlenia wyników.
+- [Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Ten instruktaż poprowadzi Cię przez kroki, aby utworzyć i dostosować testy jednostkowe, uruchamiać je i sprawdź wyniki testu.
+- [Użyj narzędzia testowania wiersza polecenia](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym przewodniku używamy *MSTest.exe* narzędzie wiersza polecenia, aby uruchomić testy i wyświetlić wyniki.
 
 ## <a name="sample-code"></a>Przykładowy kod
 
-Tylko celowy błąd w tym przykładzie jest w metody debetowa "m_balance += kwota" powinien minus nie plus Zaloguj się przed znakiem równości.
+Tylko celowy błąd, w tym przykładzie jest w metody Debet "m_balance += amount" powinien minus nie znakiem plus, zaloguj się przed równości.
 
 ```csharp
 using System;
@@ -126,13 +126,13 @@ namespace BankAccountNS
 }
 ```
 
-/ * Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia opisywane w przykładach są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwa domeny, adres e-mail, logo, osoby, miejscami lub zdarzeniami ma i zdarzeniami. \*/
+/ * Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne. Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane. \*/
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-Aby pracować z tego kodu, najpierw Utwórz projekt dla niego w programie Visual Studio. Wykonaj kroki, aby utworzyć projekt w [wskazówki: tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
+Aby pracować przy użyciu tego kodu, najpierw Utwórz projekt dla niego w programie Visual Studio. Postępuj zgodnie z instrukcjami, aby utworzyć projekt w [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Wskazówki: Użyj narzędzia wiersza polecenia testu](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Przewodnik: Używanie narzędzia testowania wiersza polecenia](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

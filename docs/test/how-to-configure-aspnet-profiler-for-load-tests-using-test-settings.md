@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175555"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379809"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Porady: konfiguracja profilera ASP.NET do ładowania testów za pomocą opcji ustawień testów w Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawienia testu w programie Visual Studio
 
 Adapter danych diagnostycznych profilera ASP.NET służy do zbierania informacji z profilera środowiska ASP.NET. Ten adapter danych diagnostycznych zbiera dane wydajności dla aplikacji ASP.NET.
 
@@ -29,7 +29,7 @@ Adapter danych diagnostycznych profilera ASP.NET umożliwia zbieranie danych pro
 > [!NOTE]
 > Adapter danych diagnostycznych profilera ASP.NET profiluje proces Internet Information Services (IIS). W związku z tym nie będzie on działał dla serwera sieci web development. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym działa program IIS. Agent testowy nie będzie generował obciążenia, a jedynie pośredniczył w zbieraniu danych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-Aby uzyskać więcej informacji, zobacz [jak: utworzyć ustawienia testu dla testu obciążeniowego rozproszonych](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Aby uzyskać więcej informacji, zobacz [jak: utworzyć ustawienia testu dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 Poniższa procedura opisuje sposób konfigurowania adaptera danych diagnostycznych profilera platformy ASP.NET.
 
@@ -52,7 +52,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 
 4.  Aby włączyć profilowanie interakcji pomiędzy warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami**.
 
-     Liczba żądań, które są wysyłane do serwera sieci web dla każdego artefaktu (np. MyPage.aspx lub CompanyLogo.gif) profilowanie interakcji pomiędzy warstwami, a czas, jaki zajęła Obsługa każdego żądania. Ponadto są zbierane informacje o tym, które połączenia środowiska ADO.NET były używane w ramach żądania o stronę oraz jak wiele zapytań i wywołań procedur przechowywanych zostało wykonanych w ramach obsługi tego żądania.
+     Profilowanie interakcji pomiędzy warstwami zlicza liczbę żądań wysyłanych do serwera sieci web dla każdego artefaktu (na przykład *MyPage.aspx* lub *CompanyLogo.gif*) i czas, jaki zajęła Obsługa każdego żądania. Ponadto są zbierane informacje o tym, które połączenia środowiska ADO.NET były używane w ramach żądania o stronę oraz jak wiele zapytań i wywołań procedur przechowywanych zostało wykonanych w ramach obsługi tego żądania.
 
      Mechanizm zbiera dwa różne zestawy informacji o czasie:
 

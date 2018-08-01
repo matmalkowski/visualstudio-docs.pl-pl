@@ -1,52 +1,52 @@
 ---
-title: Uzyskiwanie dostępu do portalu i Administratorzy Zarządzanie — Licencjonowanie zbiorowe | Dokumentacja firmy Microsoft
+title: Uzyskiwanie dostępu do portalu i administratorów, zarządzanie licencjonowania zbiorowego | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
 ms.topic: Get-Started-Article
-description: Dowiedz się, jak Administratorzy subskrypcji można uzyskać dostępu do portalu administracyjnego i zarządzać nimi subskrypcje zakupione za pośrednictwem wolumin Licencjonowania
+description: Dowiedz się, jak uzyskać dostęp do portalu administrowania i zarządzania subskrypcjami nabyte za pośrednictwem woluminu Licencjonowania administratorów subskrypcji
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-mearchscope: VS Subscription
-ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+searchscope: VS Subscription
+ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326944"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379543"
 ---
-# <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Dostęp do portalu i zarządzanie administratorami - subskrypcje zakupione za pośrednictwem wolumin Licencjonowania
+# <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Dostęp do portalu i zarządzanie administratorami — w przypadku subskrypcji nabyte za pośrednictwem woluminu Licencjonowania
 
-**Wolumin licencji Service Center (VLSC)**
+**Volume License Service Center (VLSC)**
 
-Począwszy od 1 marca 2017 klientów, którzy nadal jest wykonywane za pośrednictwem portalu procesu migracji i dołączaniu rozwiązania należy zarządzać ich subskrypcje w wolumin licencjonowania Service Center (VLSC).
+Od 1 marca 2017 r. klienci, którzy nadal jest wykonywane za pośrednictwem portalu proces dołączania i migracji należy zarządzają subskrypcjami w wolumin licencjonowania Service Center (VLSC).
 
-Aby uzyskać więcej informacji o zarządzaniu subskrypcjami w centrum VLSC Zobacz wytycznymi: [opis programu Visual Studio subskrypcje VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
-[Zarządzanie Visual Studio subskrypcji dla VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Aby uzyskać więcej informacji o zarządzaniu subskrypcjami w witrynie VLSC Zobacz te przewodniki: [opis subskrypcji programu Visual Studio dla centrum VLSC:](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[zarządzania subskrypcjami programu Visual Studio dla centrum VLSC:](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
-**Portalu administracyjnego subskrypcji programu Visual Studio** organizacji zostały poddane migracji, ale użytkownik nie został ustawiony w nowego portalu jeszcze, sieci podstawowej lub powiadomienia kontaktu dla umowy licencjonowania zbiorowego organizacji należy podjąć kilka kroki do dołączenia organizacji i skonfigurować jako administrator.
+**Portal administratora subskrypcji programu Visual Studio** Jeśli Twoja organizacja została zmigrowana, ale użytkownik nie został ustawiony w nowym portalu jeszcze, sieci podstawowej lub osoba kontaktowa dla umowy licencjonowania zbiorowego organizacji należy podjąć kilka kroki, aby dołączyć, organizacji i konfigurowanie serwera jako administrator.
 
-Jeśli użytkownik ma już został skonfigurowany jako administrator, a następnie można przejść bezpośrednio do subskrypcji programu Visual Studio [portalu administratora](https://manage.visualstudio.com/).
+Jeśli możesz już skonfigurowano jako administrator, a następnie możesz przejść bezpośrednio do subskrypcji programu Visual Studio [Portal administratora](https://manage.visualstudio.com/).
 
-**Dołączania organizacji**
+**Dołączanie organizacji**
 
-Jeśli Twoja organizacja jest gotowy do można dołączać do portalu administracyjnego subskrypcji programu Visual Studio zostanie wysłana wiadomość e-mail do serwera podstawowego i kontakty powiadomienia, zwracając do ukończenia procesu dołączania. Poniżej szczegóły przedstawiono kroki, które należy podjąć w celu dołączyć do nowego portalu. Jeśli chcesz przeprowadzenie procesu, zapoznaj się z tym dołączania administratora wideo lub następnej części dokumentów.
+Jeśli Twoja organizacja jest gotowy do dodania do portalu administratora subskrypcji Visual Studio zostanie wysłana wiadomość e-mail główna osoba kontaktowa i kontaktowa zaproszeniem do ukończenia procesu dołączania. Poniższe szczegóły przedstawiono kroki, które należy podjąć w celu dołączenia do nowego portalu. Jeśli chcesz zaprezentowania procesu, zapoznaj się z tym wideo dołączania administratora lub następnych sekcjach w witrynie docs.
 
-1.  Lokalizowanie PCN Twojego i zaloguj się
+1.  Przy szukaniu numeru PCN i zaloguj się
 
-     a. W wiadomości e-mail serwer podstawowy i kontakty powiadomienia są dostarczane z łączem unikatowy i ostatnich trzech cyfr z ich publicznego klienta numer (PCN).  (Jeśli serwer podstawowy bądź powiadomienia kontaktów odbierają więcej niż jeden adres e-mail, oznacza to, że PCN więcej niż jeden. Należy ukończyć proces, korzystając z linku unikatowy dla PCN występujący w odwołaniu w każdej wiadomości e-mail.)
+     a. W wiadomości e-mail podstawowej i osoba kontaktowa są dostarczane za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN).  (Jeśli główna osoba kontaktowa lub kontaktowa odbierze więcej niż jeden adres e-mail, oznacza to, że mają więcej niż jeden numer PCN. Należy ukończyć proces, korzystając z unikatowego linku dla numeru PCN, do którego odwołuje się każdej wiadomości e-mail.)
 
-     b. Aby uzyskać cały PCN, głównej osoby kontaktowej należy zalogować się w centrum VLSC. [Instrukcje dotyczące lokalizacji NKP](find-pcn.md)
+     b. Aby uzyskać cały numer PCN, głównej osoby kontaktowej musisz zalogować się do centrum VLSC. [Instrukcje dotyczące lokalizacji dla numeru PCN](find-pcn.md)
 
-     c. Po uzyskaniu NKP, ich musisz wybierz ich unikatowy łącze, która wyświetli monit o ich do logowania. Będą oni mogli zalogowanie się przy użyciu konta Microsoft (MSA) albo konto robocze/służbowe (Jeśli Twoja organizacja jest w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD.
+     c. Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli logować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD.
 
-     d. Następnie muszą wprowadzić NKP.
+     d. Następnie należy wprowadź numer PCN.
 
-2.  Konfigurowanie Administratorzy w Twojej organizacji.  Po wprowadzeniu NKP, zostanie zarejestrowany jako superadministrator w nowym systemie i będzie można dodać inne super Administratorzy i Administratorzy (wcześniej znane jako menedżerów subskrypcji). Aby zapobiec utracie dostępu, to należy wykonać przed datą migracji w organizacji.
+2.  Konfigurowanie administratorów usługi.  Po wprowadzeniu numerów PCN, zostaną zarejestrowane jako superadministrator w nowym systemie i będzie można dodać inne superadministratorzy i Administratorzy (wcześniej znanej jako menedżerowie subskrypcji). Aby uniknąć utraty dostępu, to należy wykonać przed datą migracji Twojej organizacji.
 
-3.  Uzyskiwanie dostępu do portalu zarządzania subskrypcji. Po migracji organizacji wiadomości e-mail będą wysyłane do nowo dodanego super Administratorzy i Administratorzy, zwracając dostęp do nowego portalu i rozpocząć zarządzanie subskrypcjami.
+3.  Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami. Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do nowo dodanego superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.
 
-Jeśli nie masz pewności, kto jest kontakt podstawowy/powiadomienia mają zostać dodane do nowego programu Visual Studio subskrypcje portalu administracyjnego, te informacje po zalogowaniu się można znaleźć [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Spójrz na [Znajdź swój głównej osoby kontaktowej](find-primary-contact.md) tematu kroki, aby znaleźć kontakt podstawowy/powiadomienia w w centrum VLSC.
+Jeśli potrzebujesz mają zostać dodane do nowego portalu programu Visual Studio subskrypcje administracji i nie masz pewności, będącego kontakt podstawowy/uwagi, można znaleźć te informacje po zarejestrowaniu się [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Przyjrzyj się [znaleźć Twojej głównej osoby kontaktowej](find-primary-contact.md) temacie kroki, aby znaleźć podstawowy/uwagi dotyczące przejrzenia przez osobę kontaktową w witrynie VLSC.
 
-Jeśli możesz już skonfigurowano jako administrator, a następnie można przejść bezpośrednio do subskrypcji programu Visual Studio administracji Portal pod adresem: [ https://manage.visualstudio.com ](https://manage.visualstudio.com).
+Jeśli możesz już skonfigurowano jako administrator, a następnie możesz przejść bezpośrednio do subskrypcji programu Visual Studio portalu administratora w: [ https://manage.visualstudio.com ](https://manage.visualstudio.com).

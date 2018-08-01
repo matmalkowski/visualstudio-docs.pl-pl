@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178296"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379485"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony Web w czasie testu obciążenia za pomocą analizatora testów obciążenia
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony sieci web w teście obciążenia za pomocą analizatora testu obciążenia
 
 Czas potrzebny na każdej stronie sieci web załadować jest znany jako *czas odpowiedzi*. Podczas tworzenia testu wydajności sieci web, można ustawić docelowy czas odpowiedzi dla każdego żądania strony sieci web w teście wydajności sieci web.
 
@@ -29,17 +29,17 @@ Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście o
 
 -   Procent iteracji testowych, które spełniają docelowy czas odpowiedzi dla strony.
 
--   Czasy reakcji stron sieci web można analizować za pomocą widoku tabeli lub widoku wykresu w analizatorze testu obciążenia:
+-   Czasy reakcji stron sieci web można analizować za pomocą widoku tabeli lub widoku wykresu w **analizatora testu obciążenia**:
 
 -   Analizowanie czasy reakcji stron sieci web w widoku tabeli
 
 -   Analizowanie czasy reakcji stron sieci web w widoku wykresu
 
-## <a name="view-response-time-data-in-a-table"></a>Dane czasu odpowiedzi widok tabeli
+## <a name="view-response-time-data-in-a-table"></a>Wyświetl dane czasu odpowiedzi w tabeli
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Aby wyświetlić dane czasu odpowiedzi w tabeli
 
-1.  W analizatorze testu obciążenia wybierz **tabel** na pasku narzędzi, aby upewnić się, że wyświetlana jest siatka tabeli.
+1.  W **analizatora testu obciążenia**, wybierz **tabel** na pasku narzędzi, aby upewnić się, że wyświetlana jest siatka tabeli.
 
 2.  W **tabeli** listy rozwijanej wybierz pozycję **stron**.
 
@@ -66,13 +66,13 @@ Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście o
 
  Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-response-time-data-in-a-graph"></a>Dane czasu odpowiedzi widoku w postaci wykresu
+## <a name="view-response-time-data-in-a-graph"></a>Wyświetl dane czasu odpowiedzi w formie wykresu
 
-Można również wyświetlić dane czasu odpowiedzi na wykresie, aby zobaczyć, jak zmienia się wraz z upływem czasu podczas testu obciążenia. Jest to szczególnie przydatne, jeśli Twoja wzorca obciążenia zwiększa się po uruchomieniu testów (na przykład, jeśli używasz krokowego wzorca obciążenia). Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców obciążenia w celu modelu wirtualnego aktywności użytkownika](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Można również wyświetlić dane czasu odpowiedzi na wykresie, aby zobaczyć, jak zmienia się wraz z upływem czasu podczas testu obciążenia. Jest to szczególnie przydatne, jeśli Twoja wzorca obciążenia zwiększa się po uruchomieniu testów (na przykład, jeśli używasz krokowego wzorca obciążenia). Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Aby wyświetlić dane czasu odpowiedzi w formie wykresu
 
-1.  W analizatorze testu obciążenia wybierz **wykresów** na pasku narzędzi, aby upewnić się, czy są wyświetlane na wykresie.
+1.  W **analizatora testu obciążenia**, wybierz **wykresów** na pasku narzędzi, aby upewnić się, czy są wyświetlane na wykresie.
 
 2.  W **liczniki** okna, rozwiń węzeł scenariusz, w którym interesuje Cię (na przykład `Scenario1`).
 
@@ -86,15 +86,15 @@ Można również wyświetlić dane czasu odpowiedzi na wykresie, aby zobaczyć, 
 
      Dane są dodawane do grafu.
 
-7.  (Opcjonalnie) Powtórz poprzedni krok dla średni Czas strony, cel dotyczący czasu odpowiedzi strony, a łączna liczba stron.
+7.  (Opcjonalnie) Powtórz poprzedni krok dla **średni Czas strony**, **cel dotyczący czasu odpowiedzi strony**, i **łączna liczba stron**.
 
     > [!NOTE]
-    > Cel dotyczący czasu odpowiedzi strony jest stałe.
+    > **Cel dotyczący czasu odpowiedzi strony** jest stały.
 
- Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Porady: uzyskiwanie dostępu do wyników testu obciążenia dla analizy](../test/how-to-access-load-test-results-for-analysis.md)
+- [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -12,28 +12,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3960d0e511ab42de2bd81765fb395d2e013a493
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7755444781bb0205e7483e2365d80cac909c62c6
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948850"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380106"
 ---
-# <a name="customizing-t4-text-transformation"></a>Dopasowanie przekształcenia tekstu T4
+# <a name="customize-t4-text-transformation"></a>Dostosowywanie przekształcenia tekstu T4
 
-Szablony tekstowe są funkcją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umożliwiające generowanie kodu programu lub inne pliki tekstowe, proces przekształcenia. Przy użyciu [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], można rozszerzyć domyślny proces przekształcania szablonu dostosowując procesora dyrektywy szablonu tekstu lub hosta szablonu tekstowego.
+Szablony tekstowe są funkcją programu Visual Studio, dzięki czemu można generować kod programu lub innych plików tekstowych, proces przekształcenia. Za pomocą [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], można rozszerzyć proces przekształcania szablonu domyślnego, dostosowując procesora dyrektywy szablonu tekstu lub hosta szablonu tekstu.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md) opisano, jak działa transformacji tekstu i opisano rolę hosta szablonu i procesory dyrektywy.
 
- [Tworzenie niestandardowych T4 tekst szablonu dyrektywy procesorów](../modeling/creating-custom-t4-text-template-directive-processors.md) procesora dyrektywy dotyczy dyrektywy w szablonie, takich jak `<#@template#>.` jest uruchamiany podczas tworzenia szablonu, a można załadować zestawów i innych zasobów. Można także wstawić kod, który zostanie załadowany zasobów w czasie wykonywania. Definiując własne procesora dyrektywy, można zmniejszyć złożoność szablonów.
+ [Proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md) w tym artykule opisano, jak działa Transformacja tekstu i opisano rolę hosta szablonu i procesorów dyrektyw.
 
- [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md) podczas pisania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenie, np. menu polecenie lub procedury obsługi zdarzeń, rozszerzenie można użyć usługi tworzenia szablonów tekstowych do przekształcania dowolnego szablonu tekstu. Przekazywanie danych parametru do szablonu, za pomocą obiektu sesji i uzyskiwanie wartości z szablonu przy użyciu `<#@parameter#>` dyrektywy.
+ [Tworzenie procesorów dyrektywy szablonu tekstowego T4 niestandardowe](../modeling/creating-custom-t4-text-template-directive-processors.md) procesora dyrektywy zajmuje się dyrektywy w szablonie, takich jak `<#@template#>.` jest uruchamiany podczas kompilacji szablonu i mogą ładować zestawy i innych zasobów. Można także wstawić kod, który załaduje zasobów w czasie wykonywania. Definiując procesor dyrektywy, można zmniejszyć złożoność szablonów.
 
- [Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md) podczas kod szablonu tekstowego, host zapewnia dostęp do plików zewnętrznych i stan aplikacji. Na przykład host, który uruchamia transformacji tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zapewnić dostęp do Eksploratora rozwiązań. Wyświetla również błędy w oknie komunikat błędu. Jeśli chcesz uruchamiać transformacji tekstu w kontekście innej można zdefiniować własny hosta, który zapewnia dostęp do usług, które są dostępne w tym kontekście.
+ [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md) Jeśli piszesz rozszerzenie programu Visual Studio, takich jak menu polecenie lub procedura obsługi zdarzeń Twojego rozszerzenia, można użyć usługi szablonów tekstowych do przekształcania dowolnego szablonu tekstu. Można przekazać danych parametru do szablonu, za pomocą obiektu sesji i uzyskać wartości z w ramach szablonu za pomocą `<#@parameter#>` dyrektywy.
 
- Jeśli piszesz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenie, należy rozważyć użycie istniejącej usługi przekształcania tekstu zamiast zapisywania własnych hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+ [Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego](../modeling/processing-text-templates-by-using-a-custom-host.md) podczas wykonywania kodu szablonu tekstu, host zapewnia dostęp do plików zewnętrznych i stan aplikacji. Na przykład host, który uruchamia przekształcenia tekstu w programie Visual Studio można zapewnić dostęp do **Eksploratora rozwiązań**. Wyświetla również błędy w oknie komunikat o błędzie. Jeśli chcesz uruchomić przekształcenia tekstu w innym kontekście, można zdefiniować własnego hosta, który zapewnia dostęp do usług, które są dostępne w tym kontekście.
+
+ Jeśli piszesz rozszerzenie programu Visual Studio, należy wziąć pod uwagę przy użyciu istniejącej usługi przekształcenia tekstu zamiast pisania własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 ## <a name="reference"></a>Tematy pomocy
 
-- [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md) zawiera składnię dyrektywy szablonu tekstu i bloków sterowania.
+- [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md) zapewnia składnia dyrektyw szablonu tekstu i bloki sterujące.

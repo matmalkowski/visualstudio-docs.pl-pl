@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942744"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379429"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Porady: ustawianie wielu projektów startowych
 
-Program Visual Studio umożliwia określenie sposobu więcej niż jeden projekt jest uruchamiany, gdy uruchamiasz debuger.
+Program Visual Studio pozwala określić sposób więcej niż jeden projekt jest uruchamiany, gdy uruchamiasz debuger.
 
 ## <a name="to-set-multiple-startup-projects"></a>Aby ustawić wiele projektów startowych
 
 1.  W **Eksploratora rozwiązań**, wybierz rozwiązanie (najwyższy węzeł).
 
-2.  Wybierz menu kontekstowe (kliknij prawym przyciskiem myszy) węzłów rozwiązania, a następnie wybierz pozycję **właściwości**. **Strony właściwości rozwiązania** zostanie wyświetlone okno dialogowe.
+2.  Wybierz menu kontekstowe (kliknij prawym przyciskiem myszy) węzła rozwiązania, a następnie wybierz **właściwości**. **Strony właściwości rozwiązania** pojawi się okno dialogowe.
 
-3.  Rozwiń węzeł **wspólne właściwości** węzeł i wybierz polecenie **projekt startowy**.
+3.  Rozwiń **wspólne właściwości** węzeł i wybierz polecenie **projekt startowy**.
 
 4.  Wybierz **wiele projektów startowych** opcji i ustaw odpowiednie działania.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)
-- [Tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md)
+- [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
+- [Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)

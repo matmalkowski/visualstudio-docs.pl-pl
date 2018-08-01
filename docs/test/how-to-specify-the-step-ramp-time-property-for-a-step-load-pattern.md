@@ -1,5 +1,5 @@
 ---
-title: Czas do zwiększenia kroku dla wzorca obciążenia krokowego obciążenia testowania w programie Visual Studio
+title: Czas do zwiększenia kroku dla krokowego wzorca obciążenia dla testowania w programie Visual Studio obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,25 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20eb70b6c3c6308e41599e65a4b00a3e4043e8d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1596c96662870118b8fa721f89b8a9ef1c6b831f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973607"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381536"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Porady: określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego
 
-Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** Aby zmienić właściwości scenariuszy, aby spełnić potrzeby testowania i cele. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-**Czas do zwiększenia kroku** właściwość jest ustawiona w oknie właściwości. Edytowanie właściwości scenariusza testów obciążenia w edytorze testu obciążenia.
+**Czas do zwiększenia kroku** właściwość jest ustawiona **właściwości** okna. Edytuj właściwości scenariusza testów obciążenia w **edytora testu obciążenia**.
 
-**Czas do zwiększenia kroku** właściwość jest używana tylko z krokowego wzorca obciążenia. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców obciążenia w celu działania dotyczące modelu wirtualnego użytkownika](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+**Czas do zwiększenia kroku** właściwość jest używana tylko z krokowego wzorca obciążenia. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-Krokowego wzorca obciążenia jest używany do zwiększa obciążenie serwera lub serwerów uruchomień testów obciążenia, tak aby były widoczne, jak wydajność może być różna miarę wzrostu obciążenia użytkownika. Na przykład aby zobaczyć, jak serwer lub serwery Przeprowadź obciążenie użytkownikami, zwiększając 2000 użytkowników, możesz uruchomić test obciążenia 10 godzin przy użyciu wzorca obciążenia krokowego z następującymi właściwościami:
+Krokowego wzorca obciążenia umożliwia zwiększenie obciążenia na serwerze lub serwerach, przebiegów testów obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się wraz ze wzrostem obciążenia użytkownika. Na przykład aby zobaczyć, jak wykonać serwer lub serwery jako obciążenie użytkownikami, zwiększając do 2000 użytkowników, może uruchomić 10-godzinny test obciążenia przy użyciu krokowego wzorca obciążenia o następujących właściwościach:
 
 -   Początkowa liczba użytkowników: 100
 
@@ -36,41 +36,41 @@ Krokowego wzorca obciążenia jest używany do zwiększa obciążenie serwera lu
 
 -   Czas trwania kroku (w sekundach): 1800
 
--   Czas (w sekundach) do zwiększenia kroku: 20
+-   Czas narastania (w sekundach): 20
 
--   Liczba użytkowników krok: 100
+-   Liczba użytkowników zwiększana podczas kroku: 100
 
-Te ustawienia mają testu obciążenia uruchomione na 30 minut (1800 sekund) przy obciążeniach użytkownika 100, 200, 300 maksymalnie 2000 użytkowników.
+Te ustawienia mają testu obciążeniowego na 30 minut (1800 sekund) uruchomiany 100, 200, 300, do 2000 użytkowników.
 
 > [!NOTE]
-> **Czas do zwiększenia kroku** właściwość jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w Kreatorze nowego testu obciążenia.
+> **Czas do zwiększenia kroku** właściwość jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w **nowego kreatora testu obciążenia**.
 
-**Czas do zwiększenia kroku** właściwości umożliwia się stopniowego zamiast bezpośredniego wzrostu od jednego kroku do następnego (na przykład od 100 do 200 użytkowników). W tym przykładzie obciążenie użytkownikami zostanie zwiększona od 100 do 200 użytkowników w okresie sekundę 20 (wzrost 5 użytkowników co sekundę).
+**Czas do zwiększenia kroku** właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników) można stopniowo, a nie bezpośrednim. W przykładzie obciążenia użytkownikami zwiększyłoby się ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę).
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Aby edytować właściwości czasu narastania kroku dla wzorca obciążenia krokowego
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-     **Edytora testu obciążenia** pojawi się. Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **scenariusze** folder, otwórz węzeł scenariusza, aby określić narastania kroku czasu.
+2.  Obciążenia test drzew **scenariuszy** folder, otwórz węzłem scenariusza, aby określić narastania kroku czasu.
 
 3.  Wybierz **krokowego wzorca obciążenia** węzła.
 
     > [!NOTE]
-    > Wzorzec obciążenia dla scenariusza musi być krokowego wzorca obciążenia. Jeśli nie jest, wzorcu obciążenia jest wyświetlana typ wzorzec obciążenia, który jest aktualnie powiązany z tym scenariuszem. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców obciążenia w celu działania dotyczące modelu wirtualnego użytkownika](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+    > Wzorzec obciążenia dla scenariusza muszą być krokowego wzorca obciążenia. Jeśli nie jest dostępne, wzorzec obciążenia będą wyświetlane typ wzorca obciążenia, który jest aktualnie powiązany z tego scenariusza. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  Na **widoku** menu, wybierz opcję **okna właściwości**.
+4.  Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-     Kategorie i właściwości tego scenariusza są wyświetlane w oknie właściwości.
+     Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
-5.  Ustaw wartość **czas do zwiększenia kroku** właściwości wprowadzić liczbę dla sekund wykonywanej w każdym kroku w celu stopniowego dodawania użytkowników określonych przez **liczbę użytkowników** właściwości.
+5.  Ustaw wartość **czas do zwiększenia kroku** właściwość wprowadzić liczbę dla sekund wykonane w każdym kroku, aby stopniowo dodawania użytkowników określonych przez **liczba użytkowników zwiększana podczas kroku** właściwości.
 
-6.  Po zmianie właściwości, wybierz **zapisać** na **pliku** menu. Następnie możesz uruchomić test obciążenia przy użyciu nowego **czas do zwiększenia kroku** wartość.
+6.  Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **czas do zwiększenia kroku** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
-- [Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)

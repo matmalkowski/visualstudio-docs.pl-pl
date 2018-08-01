@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176216"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382068"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Porady: tworzenie wtyczki rejestratora
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia modyfikowanie nagranych internetowego testu wydajnościowego. Modyfikacja występuje po wybraniu **zatrzymać** wydajności sieci web testów Rejestrator narzędzi, ale przed testem zapisywanym i przedstawianym w edytorze testu wydajności sieci Web.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia modyfikowanie nagranych internetowego testu wydajnościowego. Modyfikacja występuje po wybraniu **zatrzymać** w **rejestratora testów wydajności sieci Web** narzędzi, ale przed testu zapisaniem i przedstawieniem w edytorze testu wydajności sieci Web.
 
-Wtyczka rejestratora umożliwia wykonywanie własnej niestandardowej korelacji na parametrach dynamicznych. Dzięki wbudowanym funkcjom korelacji testy wydajności sieci web wykrywają parametry dynamiczne w sieci web rejestracji po zakończeniu lub po użyciu **Przekształć dynamiczne parametry na parametry testu sieci Web** od wydajności sieci Web Pasek narzędzi edytora testu. Jednak wbudowanych w wykrywaniu funkcji nie zawsze znajdzie wszystkie parametry dynamiczne. Na przykład nie odnajdzie Identyfikatora sesji, który zwykle zmienia swoją wartość od 5 do 30 minut. W związku z tym należy ręcznie przeprowadzić proces korelacji.
+Wtyczka rejestratora umożliwia wykonywanie własnej niestandardowej korelacji na parametrach dynamicznych. Dzięki wbudowanym funkcjom korelacji testy wydajności sieci web wykrywają parametry dynamiczne w sieci web rejestracji po zakończeniu lub po użyciu **Przekształć dynamiczne parametry na parametry testu sieci Web** na **sieci Web Edytor testów wydajności** paska narzędzi. Jednak wbudowanych w wykrywaniu funkcji nie zawsze znajdzie wszystkie parametry dynamiczne. Na przykład nie odnajdzie Identyfikatora sesji, który zwykle zmienia swoją wartość od 5 do 30 minut. W związku z tym należy ręcznie przeprowadzić proces korelacji.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umożliwia pisanie kodu dla własnego niestandardowego dodatku typu plug-in. Ta wtyczka może wykonywać korelację lub modyfikować test wydajności sieci web na wiele sposobów przed jego zapisaniem i przedstawieniem w edytorze testu wydajności sieci Web. W związku z tym jeśli okaże się, że określona zmienna dynamiczna musi zostać skorelowana dla wielu nagrań, możesz zautomatyzować ten proces.
 
@@ -29,13 +29,13 @@ Inny sposób, że dodatek typu plug-in rejestratora mogą być używane dotyczy 
 
 W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejestratora wtyczki, wdrażania dodatek typu plug-in i wykonać dodatku typu plug-in. Przykładowy kod, zgodnie z procedurami pokazuje, jak używać języka Visual C# do tworzenia dodatku typu plug-in rejestratora korelacji parametrów dynamicznych niestandardowych.
 
-## <a name="creating-a-recorder-plug-in"></a>Tworzenie wtyczki rejestratora
+## <a name="create-a-recorder-plug-in"></a>Tworzenie wtyczki rejestratora
 
 ### <a name="to-create-a-recorder-plug-in"></a>Aby utworzyć wtyczkę rejestratora
 
 1.  Otwórz rozwiązanie, które zawiera projekt testu obciążenia i wydajności sieci web za pomocą testu wydajności sieci web, dla której chcesz utworzyć wtyczkę rejestratora.
 
-2.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj**, a następnie wybierz **nowy projekt**.
+2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj**, a następnie wybierz **nowy projekt**.
 
      **Dodaj nowy projekt** zostanie wyświetlone okno dialogowe.
 
@@ -45,9 +45,9 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 5.  W **nazwa** polu tekstowym wpisz nazwę dla dodatku plug-in.
 
-     Biblioteka klas jest dodawana do Eksploratora rozwiązań i Nowa klasa jest otwierana w edytorze kodu.
+     Biblioteka klas jest dodawana do **Eksploratora rozwiązań** i Nowa klasa jest otwierana w **Edytor kodu**.
 
-6.  W Eksploratorze rozwiązań w nowy folder projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+6.  W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
     > [!TIP]
     > Na przykład nowy folder projektu biblioteki klas **RecorderPlugins**.
@@ -58,7 +58,7 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 8.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** zostanie dodany do **odwołania** folder w Eksploratorze rozwiązań.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** zostanie dodany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
 9. Pisz kod dla dodatku rejestratora. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,7 +81,7 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 11. Dodaj więcej kodu według tego, co rejestratora wtyczki ma wykonać po rejestrowaniu w sieci web. Na przykład można dodać kod do obsługi niestandardowej korelacji, jak pokazano w poniższym przykładzie. Można również utworzyć wtyczki dla takich rejestratora, jak przetestować konwertowania komentarzy do transakcji lub dodawania reguł sprawdzania poprawności do wydajności sieci web.
 
-12. Na **kompilacji** menu, wybierz polecenie Kompiluj \<Nazwa projektu biblioteki klas >.
+12. Na **kompilacji** menu, wybierz **kompilacji \<Nazwa projektu biblioteki klas >**.
 
 13. Następnie należy wdrożyć zarejestrowany dodatek w celu użycia go zarejestrować za pomocą programu Visual Studio.
 
@@ -89,9 +89,9 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 Po skompilowaniu dodatku plug-in rejestratora, konieczne będzie umieścić wynikowy DLL w jednej z dwóch lokalizacji:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \< *wersji*> \WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* wersji *> \WebTestPlugins*
 
 > [!WARNING]
 > Po skopiowaniu dodatku plug-in rejestratora do jednej z dwóch lokalizacji, należy ponownie uruchomić program Visual Studio dla dodatku plug-in do zarejestrowania.
@@ -102,7 +102,7 @@ Po skompilowaniu dodatku plug-in rejestratora, konieczne będzie umieścić wyni
 
      **Włącz WebTestRecordPlugins** Wyświetla okno dialogowe.
 
-2.  Zaznacz pole wyboru dla dodatku plug-in rejestratora i wybierz przycisk OK.
+2.  Zaznacz pole wyboru dla dodatku plug-in rejestratora i wybierz polecenie **OK**.
 
      Po zakończeniu testu wydajności sieci web zostanie wykonany nowy dodatek plug-in rejestratora.
 

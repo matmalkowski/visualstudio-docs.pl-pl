@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Wybieranie repozytorium wyników testów obciążenia w programie Visual Studio'
+title: 'Porady: Wybieranie repozytorium wyników testów obciążeniowych w programie Visual Studio'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,45 +17,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752004"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379582"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Porady: wybieranie repozytorium wyników testu obciążenia
+# <a name="how-to-select-a-load-test-results-repository"></a>Porady: Wybieranie repozytorium wyników testu obciążenia
 
-Nie są ograniczone do magazynu lokalnego wyników. Często testów obciążenia są uruchamiane na zdalnym zestaw komputerów agenta. Agenci, razem z kontrolerem, można wygenerować więcej symulowanym obciążeniem niż dowolnego pojedynczego komputera. Aby uzyskać więcej informacji, zobacz [kontrolery testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md).
+Nie jesteś ograniczony do magazynu wyników lokalnych. Często testy obciążenia są uruchamiane na zbiorze zdalnym komputerów agentów. Agenci, wraz z kontrolerem, można wygenerować bardziej symulowane obciążenie niż dowolnego pojedynczego komputera. Aby uzyskać więcej informacji, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
-Mogą zostać zapisane wyniki testu z agentów programu lub komputera lokalnego do dowolnego serwera SQL, na którym utworzono magazynu wyników testów obciążenia. W obu przypadkach należy określić, które chcesz przechowywać wyniki testu obciążenia przy użyciu okna administrować kontrolerami testów.
+Wyniki testów z agentów lub z komputera lokalnego można zapisać na dowolnym serwerze SQL, na którym utworzono Magazyn wyników testu obciążenia. W obu przypadkach należy określić, której chcesz przechowywać wyniki testu obciążenia przy użyciu **Administrowanie kontrolerami testów** okna.
 
-Aby uzyskać więcej informacji na temat agentów, zobacz [kontrolery testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md).
+Aby uzyskać więcej informacji na temat agentów, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identyfikowanie magazynu wyników dla danych testu obciążenia
 
-1.  W **Eksploratora rozwiązań**, otwórz plik testu obciążenia.
+1.  W **Eksploratora rozwiązań**, otwórz plik testu obciążeniowego.
 
-2.  Z **testu obciążenia** narzędzi wybierz **Zarządzanie kontrolerami testów**. Zostanie wyświetlone okno dialogowe Zarządzanie aplikacją Test Controller. Jeśli używasz agenta zdalnego, musisz wybrać kontrolera.
+2.  Z **testu obciążeniowego** narzędzi, wybierz **Zarządzaj kontrolerami testów**. **Zarządzaj kontrolerem testów** zostanie wyświetlone okno dialogowe. Jeśli używasz agenta zdalnego, należy wybrać kontroler.
 
-     ![Właściwości połączenia magazynu wyników testów obciążenia](../test/media/loadtestconnectionproperties.png) właściwości połączenia magazynu wyników testów obciążenia
+     ![Właściwości połączenia przechowywania wyników testów obciążenia](../test/media/loadtestconnectionproperties.png) właściwości połączenia przechowywania wyników testów obciążenia
 
-3.  W **magazynu wyników testu obciążenia**, kliknij (...), aby wyświetlić **właściwości połączenia** okno dialogowe.
+3.  W **magazynu z wynikami testów obciążeniowych**, kliknij przycisk **(...)**  do wyświetlenia **właściwości połączenia** okno dialogowe.
 
 4.  W **nazwy serwera**, wpisz nazwę serwera, na którym uruchomiono `LoadTest` skryptów.
 
     > [!TIP]
-    > Jeśli używasz programu SQL Express na komputerze lokalnym do magazynu testów obciążenia, wprowadź \<NazwaKomputera > \sqlexpress (na przykład **MyComputer\sqlexpress**).
+    > Jeśli używasz programu SQL Express na komputerze lokalnym do magazynu testów obciążeniowych, wprowadź \<nazwa_komputera > \sqlexpress (na przykład **MyComputer\sqlexpress**).
 
-5.  W obszarze **Zaloguj się do serwera**, można wybrać **uwierzytelnianie systemu Windows**. Można określić nazwę użytkownika i hasło, ale jeśli to zrobisz, należy wybrać opcję **Zapisz moje hasło**.
+5.  W obszarze **Zaloguj się na serwerze**, możesz wybrać **uwierzytelnianie Windows**. Można określić nazwę użytkownika i hasło, ale jeśli to zrobisz, musisz wybrać opcję **Zapisz moje hasło**.
 
-6.  W obszarze **połączenie z bazą danych**, wybierz **wybierz lub wprowadź nazwę bazy danych**. Wybierz **LoadTest** w polu listy rozwijanej.
+6.  W obszarze **nawiązywanie połączenia z bazą danych**, wybierz **wybierz lub wprowadź nazwę bazy danych**. Wybierz **LoadTest** w polu listy rozwijanej.
 
-7.  Wybierz **OK**. Można przetestować połączenie, wybierając **Testuj połączenie**.
+7.  Wybierz **OK**. Możesz przetestować połączenie, wybierając **Testuj połączenie**.
 
-8.  Wybierz **Zamknij** w **Zarządzanie aplikacją Test Controller** okno dialogowe.
+8.  Wybierz **Zamknij** w **Zarządzaj kontrolerem testów** okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zarządzenie wynikami testów obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)

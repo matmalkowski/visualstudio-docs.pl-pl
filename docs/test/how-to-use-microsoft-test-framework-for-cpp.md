@@ -1,5 +1,5 @@
 ---
-title: Użyj jednostki Microsoft testowania Framework dla języka C++ w programie Visual Studio
+title: Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,63 +9,67 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845496"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379556"
 ---
-# <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj jednostki Microsoft testowania Framework dla języka C++ w programie Visual Studio
+# <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
-Framework testów jednostkowych Microsoft dla języka C++ jest domyślnie włączone w **projektowania aplikacji w języku C++** obciążenia.
+Framework testów jednostkowych Microsoft dla języka C++ jest domyślnie włączone w **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
-##  <a name="separate_project"></a> Aby napisać testy jednostkowe w oddzielny projekt
-Zazwyczaj uruchomieniu kodu testowego w własny projekt, w tym samym rozwiązaniu jako kod, który ma zostać przetestowana. Do instalowania i konfigurowania nowego projektu testowego, zobacz [dla C/C++ pozwala pisać testy jednostkowe](writing-unit-tests-for-c-cpp.md).
+##  <a name="separate_project"></a> Do pisania testów jednostkowych w osobnym projekcie
 
-##  <a name="same_project"></a> Można zapisać w tym samym projekcie testy jednostkowe
-W niektórych przypadkach, na przykład podczas testowania-eksportowane funkcje w bibliotece DLL może być konieczne do utworzenia testów w tym samym projekcie jako program, który podczas testowania. Pisania testów jednostkowych w tym samym projekcie:
+Zazwyczaj uruchamiasz swój kod testu we własnym projekcie, w tym samym rozwiązaniu, jako kod, który ma zostać przetestowana. Aby skonfigurować i skonfigurować nowy projekt testowy, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
 
-1.  Modyfikowanie właściwości projektu, aby uwzględnić nagłówki i pliki bibliotek, które są wymagane w celu przeprowadzania testów jednostkowych.
+##  <a name="same_project"></a> Pisanie testów jednostkowych w tym samym projekcie
 
-    1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu programu testowania, następnie wybierz pozycje **właściwości | Właściwości konfiguracji | Katalogi VC ++**.
+W niektórych przypadkach, na przykład podczas testowania — eksportowane funkcje w bibliotece DLL może być konieczne Utwórz testy w tym samym projekcie jako program, które testujesz. Pisanie testów jednostkowych w tym samym projekcie:
 
-    3.  Kliknij strzałkę w dół w kolejnych wierszach i wybierz polecenie **<Edit>** :
+1.  Zmodyfikuj właściwości projektu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
+
+    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu dla programu, które testujesz, a następnie wybierz **właściwości** > **właściwości konfiguracji**  >  **Katalogi VC ++**.
+
+    3.  Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie **<Edit>** :
 
         |Katalog|Właściwość|
         |-|-|
-        |**Dołącz katalogi**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+        |**Katalogi plików nagłówkowych**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Katalogi bibliotek**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2.  Dodaj plik testu jednostkowego języka C++:
 
-    -   Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj | Nowy element | Test jednostkowy C++**.
+    -   Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
 
 ## <a name="write-the-tests"></a>Pisanie testów
-Dowolny plik .cpp z klasami testu musi obejmować "CppUnitTest.h" i używa instrukcji dla `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Projekt testowy jest już skonfigurowana za użytkownika. Zawiera również definicję przestrzeni nazw, a TEST_CLASS z TEST_METHOD ułatwiające rozpoczęcie pracy. Możesz zmodyfikować nazwę przestrzeni nazw, jak również nazwy w nawiasach makra klasy i metody.
 
-Specjalne makra są definiowane dla inicjowania modułów testu, klasy i metody i oczyszczania resoures po zakończeniu testów. Te makra generować kod, który jest wykonywany przed klasa lub metoda jest najpierw, a po wykonaniu ostatniego testu. Aby uzyskać więcej informacji, zobacz [inicjowanie i oczyszczanie](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+Wszelkie *.cpp* plik z klas testowych musi obejmować "CppUnitTest.h" i mieć za pomocą instrukcji dla `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Projekt testowy jest już skonfigurowany dla Ciebie. Obejmuje również definicję przestrzeni nazw i TEST_CLASS z TEST_METHOD, aby ułatwić pracę. Możesz zmodyfikować nazwę przestrzeni nazw, a także nazwy w nawiasach w makrach klasy i metody.
 
-Użyj metod statycznych w [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) klasy w celu zdefiniowania warunków testu. Użyj [rejestratora](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) klasa umożliwiająca zapisanie wiadomości **okno danych wyjściowych**. Dodać atrybuty do metod testowych
+Specjalne makra są zdefiniowane dla inicjowanie testu modułów, klas i metod i oczyszczania resoures, po zakończeniu testów. Te makra wygenerować kod, który jest wykonywany przed klasy lub metody najpierw jest dostępny i po wykonaniu ostatniego testu. Aby uzyskać więcej informacji, zobacz [inicjowanie i oczyszczanie](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+
+Użyj metod statycznych w [Asercja](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) klasy w celu zdefiniowania warunków testu. Użyj [rejestratora](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) klasy, aby pisać wiadomości do **okno danych wyjściowych**. Dodawanie atrybutów z metodami testowymi
 
 ## <a name="run-the-tests"></a>Uruchom testy
 
-1.  Na **testu** menu, wybierz **Windows**, **Eksploratora testów**.
-2. Jeśli wszystkie testy nie są widoczne w oknie, klikając prawym przyciskiem myszy jego węzła w kompilacji projektu testowego **Eksploratora rozwiązań** i wybierając polecenie **kompilacji** lub **odbudować**.
+1.  Na **testu** menu, wybierz **Windows** > **Eksplorator testów**.
+2. Jeśli wszystkie testy nie są widoczne w oknie, tworzenia projektu badania, klikając prawym przyciskiem myszy jego węzła w **Eksploratora rozwiązań** i wybierając pozycję **kompilacji** lub **odbudować**.
 
-2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone.
-3. W **okno danych wyjściowych** wybierz **testy** na liście do widoku komunikaty zapisywane przez `Logger` klasy:
+2.  W **Eksplorator testów**, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, które chcesz uruchomić. Kliknij prawym przyciskiem myszy na test dla innych opcji, w tym uruchamianie w trybie debugowania, z punktami przerwania jest włączony.
+3. W **okno danych wyjściowych** wybierz **testy** w rozwijanego wyświetlanie komunikatów o napisanych przez `Logger` klasy:
 
-  ![Okno danych wyjściowych C++ przedstawiający wiadomości testowe](media/cpp-test-output-window.png)
+  ![Okno danych wyjściowych C++ wyświetlanie wiadomości testowe](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definiowanie cech, aby włączyć grupowanie
-Można zdefiniować metody testowe, które umożliwiają klasyfikowanie i grupowanie testów w cech **Eksploratora testów**. Aby zdefiniować cechy, należy użyć `TEST_METHOD_ATTRIBUTE` makra. Na przykład, aby zdefiniować cechy o nazwie `TEST_MY_TRAIT`:
+
+Można zdefiniować cech metod testowych, które pozwalają na klasyfikowanie i testy w grupie **Eksploratora testów**. Aby zdefiniować cechę, użyj `TEST_METHOD_ATTRIBUTE` makra. Na przykład aby zdefiniować cechę o nazwie `TEST_MY_TRAIT`:
 
 ```cpp
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
 ```
 
- Aby użyć cechy zdefiniowanych w testy jednostkowe:
+ Aby użyć określonej cechy w testach jednostki:
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
@@ -81,16 +85,17 @@ TEST_METHOD(Method1)
 }
 ```
 
-### <a name="c-trait-attribute-macros"></a>Makra atrybutu cechy języka C++
-  Znaleziono następujące cechy wstępnie zdefiniowane w `CppUnitTest.h`. Aby uzyskać więcej informacji, zobacz [Microsoft Framework testów jednostkowych for C++ — dokumentacja interfejsu API](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+### <a name="c-trait-attribute-macros"></a>Makra atrybutów cech C++
+
+Następujące cechy wstępnie zdefiniowane, znajdują się w `CppUnitTest.h`. Aby uzyskać więcej informacji, zobacz [Microsoft Framework testów jednostkowych dla odwołania do interfejsu API języka C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Opis|
 |-----------|-----------------|
-|`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Aby zdefiniować cechy użyć makra TEST_METHOD_ATTRIBUTE.|
-|`TEST_OWNER(ownerAlias)`|Użyj wstępnie zdefiniowanego cechy właściciela, aby określić właściciela metody testowej.|
-|`TEST_PRIORITY(priority)`|Wstępnie zdefiniowane cechy priorytet umożliwia przypisywanie priorytetów do metody testu.|
-
+|`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Użyj makra test_method_attribute, aby zdefiniować cechę.|
+|`TEST_OWNER(ownerAlias)`|Użyj wstępnie zdefiniowana cecha właściciela do określania właściciela metody badania.|
+|`TEST_PRIORITY(priority)`|Użyj wstępnie zdefiniowanego cecha priorytetu jest używana do przypisywania względnych priorytetów do metod badania.|
 
 ## <a name="see-also"></a>Zobacz także
-[Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+
+- [Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)
 

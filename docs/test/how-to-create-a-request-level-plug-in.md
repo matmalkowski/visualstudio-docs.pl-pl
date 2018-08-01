@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178377"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382038"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Porady: tworzenie wtyczki na poziomie żądania
 
@@ -30,7 +30,7 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
 
 ## <a name="to-create-a-request-level-plug-in"></a>Do tworzenie wtyczki na poziomie żądania
 
-1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie. Wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
      **Dodaj nowy projekt** zostanie wyświetlone okno dialogowe.
 
@@ -40,23 +40,23 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
 
 4.  W **nazwa** polu tekstowym wpisz nazwę dla klasy i wybierz **OK**.
 
-     Nowy projekt biblioteki klas zostanie dodany do Eksploratora rozwiązania, a nowa klasa pojawi się w Edytorze kodu.
+     Nowy projekt biblioteki klas zostanie dodany do **Eksploratora rozwiązań** i Nowa klasa pojawi się w **Edytor kodu**.
 
-5.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
+5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
 
      **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
 6.  Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
 
-     Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folder w Eksploratorze rozwiązań.
+     Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-7.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy najwyższy węzeł wydajności sieci web i obciążenia projektu testowego, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
+7.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
 
      **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
 
-8.  Wybierz **projektów** kartę, zaznacz projekt biblioteki klas, a następnie wybierz **OK** .
+8.  Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
 
-9. W edytorze kodu, napisz kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+9. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
 10. Implementowanie kod wewnątrz co najmniej jeden z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> procedury obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
@@ -91,7 +91,7 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
 
 ## <a name="example"></a>Przykład
 
-Poniższy kod służy do tworzenia dostosowanych wydajności wtyczkę testu sieci web wyświetlający dwóch okien dialogowych. W oknie dialogowym okno wyświetla adres URL, który jest skojarzony z tym żądaniem, do którego dołączyć dodatku żądania. Drugie okno dialogowe wyświetla nazwę komputera agenta.
+Poniższy kod służy do tworzenia dostosowanych wydajności wtyczkę testu sieci web wyświetlający dwóch okien dialogowych. Jeden okno dialogowe wyświetla adres URL, który jest skojarzony z tym żądaniem, do którego dołączyć dodatku żądania. Drugie okno dialogowe wyświetla nazwę komputera agenta.
 
 > [!NOTE]
 > Poniższy kod wymaga, aby dodać odwołanie do przestrzeni nazw System.Windows.Forms.
@@ -122,7 +122,7 @@ namespace RequestPluginNamespace
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Kodowanie niestandardowej reguły wyodrębniania dla testów wydajności sieci web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Kodowanie niestandardowej reguły walidacji dla testów wydajności sieci web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kod niestandardowej reguły walidacji dla testów wydajności sieci web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
 - [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)

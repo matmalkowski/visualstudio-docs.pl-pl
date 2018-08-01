@@ -1,5 +1,5 @@
 ---
-title: Właściwości magazynowania szczegółów chronometrażu dla ustawień uruchomienia testu obciążenia w programie Visual Studio
+title: Właściwości magazynowania szczegółów chronometrażu dla ustawień testu obciążenia w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,55 +11,55 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a41b9e7470fb9741a47f355e533c0451fe67fc3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50353bcda7d9071f9be55a414b7df42f52dd7a8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974060"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379328"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Porady: określanie właściwości magazynowania szczegółów chronometrażu dla ustawień uruchomienia testu obciążenia
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Porady: Określanie właściwości magazynowania szczegółów chronometrażu dla ustawień przebiegu testu obciążeniowego
 
-Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** Aby zmienić ustawienia, aby spełnić potrzeby testowania i cele.
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** Aby zmienić ustawienia w celu spełnienia potrzeb i celów testowania.
 
-Można edytować ustawienia wykonywania **magazynowania szczegółów chronometrażu** wartość właściwości w **właściwości** okna. **Magazynowania szczegółów chronometrażu** właściwość można ustawić dla każdego z następujących opcji:
+Możesz edytować ustawienia przebiegu **przechowywanie informacji** wartości właściwości w **właściwości** okna. **Przechowywanie informacji** właściwość można ustawić na dowolną z następujących opcji:
 
--   **Wszystkie szczegóły poszczególnych:** zbiera i przechowuje poszczególne dane chronometrażu dla każdego testu, transakcji i strony biorącej testu.
+-   **Wszystkie szczegółowe dane:** zbiera i przechowuje dane o poszczególnych chronometrażach dla każdego testu, transakcji i strony podczas testu.
 
     > [!NOTE]
-    > **Wszystkie szczegóły poszczególnych** musi być zaznaczona opcja informacji danych wirtualnego użytkownika w wynikach testów obciążenia. Aby uzyskać więcej informacji, zobacz [analizowanie wirtualnego działań użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+    > **Wszystkie szczegółowe dane** należy wybrać opcję, aby włączyć informacje o danych użytkownika wirtualnego w wyniki testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
--   **Brak:** nie zbiera żadnych szczegółów poszczególnych czas. Jednak wartości średnie są nadal dostępne.
+-   **Brak:** nie gromadzi żadnych indywidualnych szczegółów chronometrażu. Jednakże wartości średnie są nadal dostępne.
 
--   **Statystyka tylko:** przechowuje dane poszczególnych czas, ale tylko jako danych percentyl. Spowoduje to zapisanie zasobów miejsca.
+-   **Tylko statystyki:** przechowuje dane o poszczególnych chronometrażach, ale tylko jako danych percentyl. Oszczędza to zasoby miejsca.
 
  **Zagadnienia dotyczące właściwości magazynowania szczegółów chronometrażu**
 
- Jeśli **magazynowania szczegółów chronometrażu** właściwość jest włączona, a następnie czas wykonywania każdego poszczególnych testu, transakcji i strony podczas testu obciążenia będą przechowywane w repozytorium wyników testów obciążenia. Dzięki temu danych percentyl 90 i 95 ma być wyświetlany w analizatorze testów obciążenia w tabelach testy, transakcji i strony.
+ Jeśli **przechowywanie informacji** właściwość jest włączona, a następnie to czas na wykonanie każdego indywidualnego testu, transakcji i strony podczas testu obciążenia, które będą przechowywane w repozytorium wyników testu obciążenia. Umożliwia to 90 i 95. percentyl danych w **analizatora testu obciążenia** w **testy**, **transakcji**, i **stron** tabele.
 
- Jeśli **magazynowania szczegółów chronometrażu** właściwość jest włączona, ustawiając dla jej wartość albo **StatisticsOnly** lub **AllIndividualDetails**, wszystkie poszczególne testy, stron i Transakcje jest mierzony i danych percentyl jest obliczana na podstawie danych poszczególnych czas. Różnica jest to, że z **StatisticsOnly** opcji, po obliczeniu danych percentyl poszczególnych czas dane zostaną usunięte z repozytorium. Zmniejsza to ilość miejsca, która jest wymagana w repozytorium szczegółów chronometrażu są używane. Jednak warto przetwarzania danych szczegółów chronometrażu w inny sposób za pomocą narzędzi SQL, w którym to przypadku **AllIndividualDetails** opcja powinna być używana, dzięki czemu dane szczegółów chronometrażu są dostępne do przetworzenia. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, a następnie można analizowanie aktywności wirtualnego użytkownika za pomocą wykresu aktywności wirtualnego użytkownika w analizatorze testu obciążenia, po zakończeniu testu obciążenia uruchomione. Aby uzyskać więcej informacji, zobacz [analizowanie wirtualnego działań użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+ Jeśli **przechowywanie informacji** właściwość jest włączona, ustawiając jej wartość na wartość **StatisticsOnly** lub **AllIndividualDetails**, wszystkie poszczególne testy, strony, a transakcje są upłynął limit czasu i percentyli są obliczane na podstawie danych o poszczególnych chronometrażach. Różnica polega na tym, wraz z **StatisticsOnly** opcję po obliczono danych percentyl, o poszczególnych chronometrażach, dane są usuwane z repozytorium. Zmniejsza to ilość miejsca wymaganego w repozytorium, gdy są używane szczegółów chronometrażu. Jednakże może zaistnieć potrzeba przetwarzania danych szczegółów chronometrażu w inny sposób za pomocą narzędzia SQL, w którym to przypadku **AllIndividualDetails** tak, aby dane szczegółowe chronometrażu były dostępne dla tego przetwarzania, należy użyć opcji. Ponadto jeśli właściwość jest ustawiona **AllIndividualDetails**, następnie można analizować aktywności wirtualnego użytkownika za pomocą **wykres aktywności wirtualnych użytkowników** w **analizatora testu obciążenia** po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
- Ilość miejsca wymaganego w repozytorium wyników testów obciążenia do przechowywania danych szczegółów chronometrażu mogą być bardzo duże, szczególnie w przypadku testów obciążenia jest już uruchomiona. Ponadto czas przechowywania tych danych w teście obciążenia, które repozytorium wyników na końcu testu obciążenia jest dłuższy, ponieważ te dane są przechowywane w agentach testu obciążenia do momentu zakończenia testu obciążenia wykonywania, które dane są przechowywane w repozytorium. **Magazynowania szczegółów chronometrażu** właściwości jest domyślnie włączona. Jeśli jest to problem w środowisku do testowania, możesz ustawić **magazynowania szczegółów chronometrażu** do **Brak**.
+ Ilość miejsca wymaganego w repozytorium wyników testu obciążenia do przechowywania szczegółowych danych o chronometrażu mogą być bardzo duże, szczególnie w przypadku uruchamiania dłuższych testów obciążenia. Ponadto czas przechowywania tych danych w teście obciążenia, które repozytorium wyników na koniec testu obciążenia jest dłuższy, ponieważ te dane są przechowywane w agentach testowych obciążenia do momentu zakończenia testów obciążenia wykonywania, które dane są przechowywane w repozytorium. **Przechowywanie informacji** właściwość jest domyślnie włączona. Jeśli jest to problem dla środowiska testowego, warto ustawić **przechowywanie informacji** do **Brak**.
 
- Dane chronometrażu szczegółowe informacje są przechowywane w pliku LoadTestItemResults.dat podczas uruchamiania i są wysyłane do kontrolera, po zakończeniu testu obciążenia. Dla testu obciążenia uruchomione przez długi czas trwania rozmiar pliku jest duży. Jeśli na komputerze agenta nie jest wystarczająco dużo miejsca, będzie to problemu.
+ Szczegółowych informacji o czasie, dane są przechowywane w *loadtestitemresults.dat w czasie testu* zgłaszanych w trakcie sesji i są wysyłane do kontrolera, po zakończeniu testu obciążenia. Dla testu obciążenia uruchomione przez długi czas rozmiar pliku jest duży. Jeśli na maszynie agenta jest za mało miejsca na dysku, to będzie problem.
 
- Jeśli uaktualniasz projektu w poprzedniej wersji programu Visual Studio test obciążenia, poniżej procedurę można włączyć kolekcji szczegółach.
+ Jeśli uaktualniasz projekt z poprzedniej wersji programu Visual Studio test obciążenia, należy użyć poniższej procedury w celu umożliwienia zbierania pełnych szczegółów.
 
-## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Aby skonfigurować właściwości magazynowania szczegółów chronometrażu w teście obciążenia
+## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Aby skonfigurować właściwości magazynowania szczegółów chronometrażu w teście obciążeniowym
 
-1.  Otwórz testu obciążenia w edytorze testu obciążenia.
+1.  Otwórz test obciążenia w edytorze testu obciążenia.
 
-2.  Rozwiń węzeł **parametrów uruchomieniowych** węzła w teście obciążenia.
+2.  Rozwiń **parametrów uruchomieniowych** węzła w teście obciążeniowym.
 
-3.  Wybierz ustawienia wykonywania, które chcesz skonfigurować, na przykład **Settings1 Uruchom [Active]**.
+3.  Wybierz polecenie dotyczące wykonywania ustawień, które chcesz skonfigurować, na przykład **Uruchom ustawienia1 [aktywne]**.
 
-4.  Otwórz okno właściwości. Na **widoku** menu, wybierz opcję **okna właściwości**.
+4.  Otwórz **właściwości** okna. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-5.  W obszarze **wyniki** kategorii, wybierz **magazynowania szczegółów chronometrażu** właściwości i wybierz **wszystkie szczegóły poszczególnych**.
+5.  W obszarze **wyniki** kategorii, wybierz **przechowywanie informacji** właściwości i wybierz pozycję **wszystkie szczegółowe dane**.
 
-     Po skonfigurowaniu **wszystkie szczegóły poszczególnych** ustawienie **magazynowania szczegółów chronometrażu** właściwości, można uruchomić testu obciążenia i wyświetlić wirtualnego wykres aktywności użytkownika. Aby uzyskać więcej informacji, zobacz [porady: analizowanie co wirtualnych użytkowników są czynności podczas testu obciążenia](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Po skonfigurowaniu **wszystkie szczegółowe dane** ustawienie **przechowywanie informacji** właściwości, można uruchamiać obciążenia testowania i wyświetlania **wykres aktywności wirtualnych użytkowników**. Aby uzyskać więcej informacji, zobacz [porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążeniowego](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Wskazówki: Używanie wykres aktywności użytkownika wirtualnego do izolowania problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Przewodnik: Używanie wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

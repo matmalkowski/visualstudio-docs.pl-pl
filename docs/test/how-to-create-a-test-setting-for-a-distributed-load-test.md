@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180311"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381071"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: tworzenie ustawień testu dla rozproszonego testu obciążenia
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: Tworzenie ustawień testu dla testu obciążenia rozłożonego
 
 Konfigurowanie *ustawienia testu* dla testów obciążenia, dzięki czemu można rozprowadzić te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testu do użycia *adapterów danych diagnostycznych*, które określają rodzaje danych, które mają być zbierane lub określają wpływ na maszyny testowe podczas uruchamiania testów obciążenia w programie Visual Studio.
 
@@ -35,7 +35,7 @@ Po uruchomieniu testów, możesz wybrać ustawienia testu do użycia jako ustawi
 
 Gdy dodajesz projekt testu wydajności sieci web i obciążenia do rozwiązania, *Default.testsettings* zostanie utworzony plik. Plik jest automatycznie dodawany do rozwiązania w folderze **elementy rozwiązania** folderu. Ten plik uruchamia testy lokalnie bez żadnych adapterów danych diagnostycznych. Możesz dodać innego *.testsettings* plików lub edytować *.testsettings* plik, aby określić adaptery danych diagnostycznych i kontrolery testów.
 
-Kontroler testów będzie miał agentów, które mogą być używane dla każdej roli w ustawieniach testu. Aby uzyskać więcej informacji na temat kontrolerów testów i agentów testowych, zobacz [Zarządzanie kontrolerami testów i agenci testowi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Kontroler testów będzie miał agentów, które mogą być używane dla każdej roli w ustawieniach testu. Aby uzyskać więcej informacji na temat kontrolerów testów i agentów testowych, zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozwiązaniu dla testów obciążenia, które mają być uruchamiane w programie Visual Studio.
 
@@ -43,7 +43,7 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Aby dodać ustawienia testów dla rozłożonego testu obciążenia
 
-1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
 
      **Dodaj nowy element** pojawi się okno dialogowe.
 
@@ -53,10 +53,10 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
 4.  Wybierz **Dodaj**.
 
-     Nowy plik ustawień testowych pojawia się w Eksploratorze rozwiązań, w obszarze **elementy rozwiązania** folderu.
+     Nowy plik ustawień testowych pojawia się w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
 
     > [!NOTE]
-    > Lista ustawień testowych, które wyświetla Visual Studio Enterprise jest tworzony na podstawie listy plików ustawień testowych w **elementy rozwiązania** folderu. Na przykład pliki ustawień testu w folderze Elementy rozwiązania są wyświetlane, gdy używasz **zaznacz aktywne ustawienia testu** opcja **Test** menu. Oznacza to, że po przeniesieniu pliku ustawień testu do innej lokalizacji w hierarchii rozwiązania może już służyć jako ustawienie testu w programie Visual Studio zintegrowanego środowiska programistycznego.
+    > Lista ustawień testowych, które wyświetla Visual Studio Enterprise jest tworzony na podstawie listy plików ustawień testowych w **elementy rozwiązania** folderu. Na przykład, przetestuj pliki ustawień w **elementy rozwiązania** folderu są wyświetlane, gdy używasz **zaznacz aktywne ustawienia testu** opcja **Test** menu. Oznacza to, że po przeniesieniu pliku ustawień testu do innej lokalizacji w hierarchii rozwiązania może już służyć jako ustawienie testu w programie Visual Studio zintegrowanego środowiska programistycznego.
 
 5.  **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
 
@@ -97,13 +97,13 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
     > [!IMPORTANT]
     > Inne role, które umożliwiają tworzenie i definiowanie nie zostaną uruchomione testy, ale będą stosowane jedynie do zbierania danych i adapterów diagnostycznych określonych dla ról w **dane i Diagnostyka** strony.
 
-16. Aby ograniczyć liczbę agentów, których można użyć dla roli, wybierz rolę, a następnie wybierz **Dodaj** na pasku narzędzi w ramach **atrybuty agenta dla wybranej roli**e.
+16. Aby ograniczyć liczbę agentów, których można użyć dla roli, wybierz rolę, a następnie wybierz **Dodaj** na pasku narzędzi w ramach **atrybuty agenta dla wybranej roli**.
 
      **Reguła wyboru agenta** zostanie wyświetlone okno dialogowe.
 
      Wpisz nazwę w **nazwa atrybutu** i wartości w **wartość atrybutu**, a następnie wybierz **OK**. Dodawanie atrybutów zgodnie w potrzebą.
 
-     Na przykład można dodać atrybut o nazwie "RAM > 16GB" o wartości "True" lub "False", aby odfiltrować test agenta maszyn, które mają więcej niż 16GB pamięci. Aby zastosować ten sam atrybut do jednego lub więcej agentów testowych, należy użyć okna dialogowego Zarządzaj kontrolerem testów. Aby uzyskać więcej informacji, zobacz [Zarządzanie kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+     Na przykład można dodać atrybut o nazwie "RAM > 16GB" o wartości "True" lub "False", aby odfiltrować test agenta maszyn, które mają więcej niż 16GB pamięci. Aby zastosować ten sam atrybut do jednego lub więcej agentów testowych, należy użyć **Zarządzaj kontrolerem testów** okno dialogowe. Aby uzyskać więcej informacji, zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 17. Wybierz **dane i Diagnostyka**.
 
@@ -119,15 +119,15 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
      Aby uzyskać szczegółowe informacje o każdym adapterze danych diagnostycznych i sposobu ich konfigurowania można obejrzeć skojarzony temat w poniższej tabeli.
 
-     Aby uzyskać więcej informacji dotyczących adapterów danych diagnostycznych, zobacz [zbieranie diagnostycznych informacji za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md).
+     Aby uzyskać więcej informacji dotyczących adapterów danych diagnostycznych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
      **Adaptery danych diagnostycznych dla testów obciążenia**
 
     |Adapter danych diagnostycznych|Używanie w testach obciążeniowych|Skojarzonego tematu|
     |-----------------------------|-------------------------|----------------------|
     |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Uwaga:** nie zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
-    |**IntelliTrace:** można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie .tdlog. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**Profiler ASP.NET:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Porady: Konfigurowanie programu ASP.NET Profiler do przeprowadzania testów obciążenia za pomocą ustawień testów](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**IntelliTrace:** można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**Profiler ASP.NET:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Dziennik zdarzeń:** można skonfigurować ustawienie testu w taki by obejmowało gromadzenie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Porady: Konfigurowanie zbierania zdarzeń dziennika przy użyciu ustawień testu](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Emulacja sieci:** można określić, że chcesz umieścić sztuczne obciążenie sieciowe w badaniu, korzystając z ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. **Uwaga:** emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informacje o systemie:** można skonfigurować ustawienie testu do uwzględnienia informacji o systemie o maszynach, na których jest uruchamiany moduł zbierający dane diagnostyczne i informacje o systemie. Informacje o systemie jest określony w wynikach testu przy użyciu ustawień testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno agentów obciążenia, jak i badanego systemu.|Do zebrania tych informacji jest wymagana żadna konfiguracja.|
@@ -165,7 +165,7 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
         > [!NOTE]
         > **ASP.NET** w **typ hosta** nie jest obsługiwany w badaniach obciążenia.
 
-    2.  Użyj Uruchom test w procesie 32-bitową lub 64-bitowym listy rozwijanej do wybierz, czy testy wydajności i jednostki w sieci web w teście obciążenia, aby był uruchamiany jako procesy 32-bitową lub 64-bitowych.
+    2.  Użyj **Uruchom test w 32-bitową lub 64-bitowych** procesu listy rozwijanej do wybierz, czy testy wydajności i jednostki w sieci web w teście obciążenia, aby był uruchamiany jako procesy 32-bitową lub 64-bitowych.
 
         > [!NOTE]
         > Aby zapewnić maksymalną elastyczność, należy skompilować wydajności sieci web i obciążenia projektów testów przy użyciu **dowolny Procesor** konfiguracji. Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Kompilowanie wydajności sieci web i obciążenia projekty testowe przy użyciu **64-bitowych** konfiguracja zapewnia nie posiada zalet.
@@ -187,7 +187,7 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
 
 ### <a name="to-remove-a-test-settings-from-your-solution"></a>Aby usunąć ustawienia testowe z rozwiązania
 
-W folderze Elementy rozwiązania w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz **Usuń**.
+W obszarze **elementy rozwiązania** folderu w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz **Usuń**.
 
 Plik ustawień testowych jest usuwany z rozwiązania. Ta zmiana jest odzwierciedlana na liście wyborów dla **wybierz aktywne ustawienia testów** i **Edytuj ustawienia testu** opcji na **testu** menu.
 

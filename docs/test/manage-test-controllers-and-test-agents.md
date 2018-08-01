@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179739"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381123"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -45,7 +45,7 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
 
      Dostępne są dwie opcje jak przechodzi do agenta testowego do uruchomienia:
 
-     **Usługa** jest konieczne Uruchamianie testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania podczas wykonywania testu, w obszarze wideo **Uruchom agenta testowego jako**, wybierz opcję **usługi**. Agent testowy zostanie uruchomiony jako usługa. Wybierz **dalej**.
+     **Usługa**: Jeśli jest konieczne Uruchamianie testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania podczas wykonywania testu, w obszarze wideo **Uruchom agenta testowego jako**, wybierz opcję **usługi**. Agent testowy zostanie uruchomiony jako usługa. Wybierz **dalej**.
 
      Można teraz wprowadzić szczegóły na temat użytkownika, kiedy czynnik testowy startuje jako usługa.
 
@@ -60,7 +60,7 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
         |— Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.|
         |-Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub będzie mógł uruchamiać testów dla kontrolera.|
 
-     **Proces interaktywny** chcesz uruchomić testy automatyczne, które muszą współdziałać z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania wideo podczas wykonywania testu, wybierz **procesu interaktywnego**. Agent testowy zostanie uruchomiony jako proces interaktywny, a nie jako usługa.
+     **Proces interaktywny**: Jeśli chcesz uruchomić testy automatyczne, które muszą współdziałać z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania wideo podczas wykonywania testu, wybierz **procesu interaktywnego**. Agent testowy zostanie uruchomiony jako proces interaktywny, a nie jako usługa.
 
      Na następnej stronie wprowadź szczegółowe informacje o użytkowniku, gdy czynnik testowy startuje jako proces albo inne opcje.
 
@@ -90,7 +90,7 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
     > [!NOTE]
     > Domyślny numer portu to 6901.
 
-4. Aby zapisać zmiany, wybierz opcję **Zastosuj ustawienia**. Zamknij **Podsumowanie konfiguracji** okno dialogowe, a następnie zamknij narzędzie konfiguracji agenta testowego.
+4. Aby zapisać zmiany, wybierz opcję **Zastosuj ustawienia**. Zamknij **Podsumowanie konfiguracji** okno dialogowe, a następnie Zamknij **narzędzie konfiguracji agenta testowego**.
 
 > [!WARNING]
 > Jeśli agent jest obecnie skonfigurowany do uruchamiania na innym kontrolerze testów, należy usunąć agenta testowego z tego kontrolera.
@@ -160,7 +160,7 @@ Przetestuj agenta wagę test agent atrybutów i zmiany zaczną obowiązywać nat
 (Opcjonalnie) Aby zmienić stan agenta testowego, wybierz agenta na liście, a następnie wybierz akcję z listy dostępnych opcji na podstawie bieżącego stanu agenta.
 
 > [!NOTE]
-> Jeśli agenta testowego jest uruchomiona jako proces, można zarządzać stanem agenta testowego z to ikonę obszaru powiadomień uruchomione na komputerze, w którym zainstalowano agenta testowego. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz opcję **Start**, **wszystkie programy**, **programu Microsoft Visual Studio** , **Microsoft Test programu Visual Studio Agent**. Spowoduje to dodanie ikony obszaru powiadomień.
+> Jeśli agenta testowego jest uruchomiona jako proces, można zarządzać stanem agenta testowego z to ikonę obszaru powiadomień uruchomione na komputerze, w którym zainstalowano agenta testowego. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz opcję **Start** > **wszystkie programy** > **programu Microsoft Visual Studio**  >  **Programu Microsoft Visual Studio Test Agent**. Spowoduje to dodanie ikony obszaru powiadomień.
 
 ## <a name="configure-a-test-controller"></a>Skonfiguruj kontroler testu
 
@@ -217,15 +217,15 @@ Po dodaniu ról dla aplikacji do ustawień testu dla programu Visual Studio, mo�
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Ładowanie testów z zestawów podpisanych z opóźnieniem
 
-Agentów testowych i kontrolera testów można ładować tylko zestawy testów, które są zestawami podpisanymi, lub zestawami niepodpisanymi. Niektóre zestawy badawcze są podpisywane z opóźnieniem, ponieważ muszą mieć dostęp do zestawów produkcyjnych dla aplikacji. Jednak te zestawy nie mają silnego podpisu, ponieważ są tylko zestawami testowymi i nie są rozpowszechniane. Nie można załadować tych zestawów, ponieważ są podpisywane z opóźnieniem, więc musisz wyłączyć weryfikacją silnych nazw dla tych zestawów na wszystkich komputerach, na których zestawy będą załadowane, w tym na komputerze kontrolera testów. Aby wyłączyć weryfikację podpisu z opóźnieniem, użyj sn.exe. Token klucza publicznego zestawu podpisanego z opóźnieniem dla którego wymagana jest weryfikacja silnej nazwy, pominięte może również wymagać dołączenia.
+Agentów testowych i kontrolera testów można ładować tylko zestawy testów, które są zestawami podpisanymi, lub zestawami niepodpisanymi. Niektóre zestawy badawcze są podpisywane z opóźnieniem, ponieważ muszą mieć dostęp do zestawów produkcyjnych dla aplikacji. Jednak te zestawy nie mają silnego podpisu, ponieważ są tylko zestawami testowymi i nie są rozpowszechniane. Nie można załadować tych zestawów, ponieważ są podpisywane z opóźnieniem, więc musisz wyłączyć weryfikacją silnych nazw dla tych zestawów na wszystkich komputerach, na których zestawy będą załadowane, w tym na komputerze kontrolera testów. Aby wyłączyć weryfikację podpisu z opóźnieniem, użyj *sn.exe*. Token klucza publicznego zestawu podpisanego z opóźnieniem dla którego wymagana jest weryfikacja silnej nazwy, pominięte może również wymagać dołączenia.
 
-Użyj Sn.exe (narzędzie silnych nazw), aby wyłączyć weryfikację podpisu z opóźnieniem.
+Użyj *Sn.exe* (narzędzie silnych nazw), aby wyłączyć weryfikację podpisu z opóźnieniem.
 
 Powoduje to wyłączenie Weryfikacja silnej nazwy, dla określonego zestawu, na komputerze, na którym uruchomiono polecenie. Można to zrobić tylko wtedy, gdy masz wystarczające uprawnienia.
 
-Po zakończeniu przebiegu testu ponownie Włącz weryfikację opóźnionego podpisywania za pomocą polecenia SN.exe.
+Po zakończeniu przebiegu testu ponownie Włącz weryfikację opóźnionego podpisywania za pomocą *SN.exe* polecenia.
 
-Zalecanym sposobem wyłączenia i ponownego włączenia weryfikacji podpisu jest użycie polecenia SN.exe w skryptach. Można wyłączyć weryfikację w skrypcie instalacji i ponownie Włącz weryfikację w skrypcie oczyszczania.
+Zalecanym sposobem wyłączenia i ponownego włączenia weryfikacji podpisu jest użycie *SN.exe* polecenia w skryptach. Można wyłączyć weryfikację w skrypcie instalacji i ponownie Włącz weryfikację w skrypcie oczyszczania.
 
 ## <a name="see-also"></a>Zobacz także
 

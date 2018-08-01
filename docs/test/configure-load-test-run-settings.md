@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179037"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382425"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurowanie ustawień testu obciążenia
 
@@ -33,7 +33,7 @@ Początkowy parametr uruchomieniowy jest tworzony podczas tworzenia testu obcią
 |-----------|-----------------------|
 |**Dodanie kolejnych parametrów uruchomieniowych do testu obciążeniowego:** oprócz parametru uruchomieniowego tworzonego podczas uruchamiania **Kreatora nowego testu obciążeniowego**, można dodać kolejnych parametrów uruchomieniowych do testu obciążeniowego, aby uruchomić test w różnych warunki.|-   [Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Określenie aktywnego parametru uruchomieniowego do użycia w teście obciążeniowym:** można wybrać parametr uruchomieniowy, którą chcesz używać z testu obciążenia za pomocą edytora testu obciążenia. Aktywny parametr jest identyfikowany za pomocą przyrostka „[Aktywny]”.|-   [Porady: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Edytuj właściwości ustawienia przebiegu:** przebieg można edytować właściwości ustawienia dla takich operacji jak opcje logowania (zobacz poniżej), określająca długość testu, czas trwania rozgrzewania, maksymalną liczbę błędów podać szczegóły, częstotliwość próbkowania połączenia Model (tylko testy wydajności sieci web), typ przechowywania wyników, poziom sprawdzania poprawności i śledzenie SQL. Parametry uruchomieniowe powinny odzwierciedlać cele testu obciążeniowego.|-   [Właściwości ustawień przebiegu testu obciążeniowego](../test/load-test-run-settings-properties.md)<br />-   [Zmiana właściwości ustawienia przebiegu](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Edytuj właściwości ustawienia przebiegu:** przebieg można edytować właściwości ustawienia dla takich operacji jak opcje logowania (zobacz poniżej), określająca długość testu, czas trwania rozgrzewania, maksymalną liczbę błędów podać szczegóły, częstotliwość próbkowania połączenia Model (tylko testy wydajności sieci web), typ przechowywania wyników, poziom sprawdzania poprawności i śledzenie SQL. Parametry uruchomieniowe powinny odzwierciedlać cele testu obciążeniowego.|-   [Właściwości ustawień przebiegu testu obciążeniowego](../test/load-test-run-settings-properties.md)<br />-   [Zmiana właściwości ustawienia przebiegu](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Określanie liczby iteracji testowych w ustawieniach testu obciążenia:** można określić liczbę razy, aby uruchomić wszystkie sieci web wydajności i testy jednostkowe we wszystkich scenariuszach testu obciążeniowego przez skonfigurowanie **iteracje testu** Właściwość.|-   [Porady: Określanie liczby iteracji testowych w ustawieniach testu](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Określ częstotliwość próbkowania dla testu obciążeniowego uruchomieniowy:** można określić, jak często testy zbierać dane licznika wydajności, konfigurując obciążeniowe mają **częstotliwość próbkowania** właściwości.|-   [Porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Określ opcje przechowywania szczegółów czasu:** można określić, jak zapisywać Szczegóły testu obciążeniowego przez skonfigurowanie **przechowywanie informacji** właściwości.|-   [Porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|

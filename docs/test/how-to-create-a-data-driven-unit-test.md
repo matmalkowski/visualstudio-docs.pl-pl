@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Tworzenie testu jednostkowego opartego na danych w programie Visual Studio'
+title: 'Instrukcje: Tworzenie testu jednostkowego opartego na danych w programie Visual Studio'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,42 +16,42 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117601"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382584"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 
-Za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego, można skonfigurować metody testowej jednostki można pobrać wartości używanych w metodzie testowej ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, co ułatwia testowanie różnych danych wejściowych przy użyciu pojedynczej metody.
+Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, możesz skonfigurować metodę testu jednostkowego można pobrać wartości używanych w metodzie testowej, ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, dzięki czemu można łatwo przetestować różne dane wejściowe, korzystając z jednej metody.
 
-Tworzenie testów jednostkowych opartych na danych obejmuje następujące kroki:
+Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:
 
-1.  Utwórz źródło danych, która zawiera wartości, które używają w metodzie testowej. Źródła danych mogą być dowolnego typu, która jest zarejestrowana na komputerze z systemem testu.
+1.  Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.
 
 2.  Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.
 
-3.  Utwórz metody testowej jednostki i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> do niej atrybut.
+3.  Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.
 
-4.  Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwości indeksatora można pobrać wartości używanych w teście.
+4.  Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.
 
-##  <a name="BKMK_The_method_under_test"></a> Metoda w ramach testu
+##  <a name="BKMK_The_method_under_test"></a> Testowaną metodę
 
-Na przykład załóżmy, że czy masz:
+Na przykład załóżmy, że masz:
 
-1.  Rozwiązanie o nazwie `MyBank` akceptuje i przetwarzania transakcji dla różnych typów kont.
+1.  To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.
 
 2.  Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.
 
-3.  Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcji matematycznych w celu zapewnienia korzystne Bankowi każdej transakcji.
+3.  Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
 
-4.  Testu jednostkowego do projektu o nazwie `BankDbTests` do testowania zachowanie `BankDb` składnika.
+4.  To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.
 
-5.  Klasa o nazwie testu jednostkowego do `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
+5.  To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
 
-Firma Microsoft będzie testuje metody w `Maths` dodaje dwie liczb całkowitych za pomocą pętli:
+Testujemy metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -65,8 +65,8 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="BKMK_Creating_a_data_source"></a> Tworzenie źródła danych
- Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, które mają zostać zwrócone. W tym przykładzie utworzymy bazy danych Sql Compact `MathsData` i tabela o nazwie `AddIntegersData` zawiera następujące nazwy kolumn i wartości
+##  <a name="create-a-data-source"></a>Utwórz źródło danych
+ Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie utworzymy o nazwie bazy danych Sql Compact `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości
 
 |Pierwszaliczba|SecondNumber|Suma|
 |-----------------|------------------|---------|
@@ -74,8 +74,8 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Dodawanie TestContext do klasy testowej
- Framework testów jednostkowych tworzy `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwości utworzony.
+##  <a name="add-a-testcontext-to-the-test-class"></a>Dodaj TestContext do klasy testowej
+ Tworzy środowiska testów jednostkowych `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwość, którą tworzysz.
 
 ```csharp
 private TestContext testContextInstance;
@@ -86,10 +86,10 @@ public TestContext TestContext
 }
 ```
 
- W metodę testu, możesz uzyskać dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
+ W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
 
-##  <a name="BKMK_Writing_the_test_method"></a> Pisanie metody testowej
- Metoda testowa dla `AddIntegers` jest dość proste. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametrów i sprawdzić wartość zwrotną przed **suma** wartość kolumny:
+##  <a name="write-the-test-method"></a>Pisanie metody testowej
+ Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametry i sprawdź wartość zwracaną względem **suma** wartość kolumny:
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -109,32 +109,32 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie potwierdzona wartości `expected` i `actual`, znajdują się już w szczegółach testu nie powiodło się.
+`Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie wartość potwierdzone `expected` i `actual`, znajdują się już w szczegółach testów zakończonych niepowodzeniem.
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określanie DataSourceAttribute
- `DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Dokładne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych są używane. W tym przykładzie użyliśmy SqlServerCe bazy danych.
+###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określ DataSourceAttribute
+ `DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Konkretne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych, którego używasz. W tym przykładzie użyliśmy SqlServerCe bazy danych.
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
-Atrybut źródła danych ma trzy konstruktorów.
+Atrybut źródła danych ma trzy konstruktory.
 
 ```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
- Konstruktora z jednym parametrem używa informacji o połączeniu, który jest przechowywany w pliku app.config dla rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
+ Konstruktor z jednym parametrem używa informacji o połączeniu, która jest przechowywana w *app.config* pliku rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
 
- Przy użyciu pliku app.config umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian do samego testu jednostkowego. Aby uzyskać informacje o sposobie tworzenia i używania pliku app.config, zobacz [wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
- `DataSource` Konstruktora z dwoma parametrami określa parametry połączenia dla źródła danych oraz nazwę tabeli, która zawiera dane dla metody testowej.
+ `DataSource` Konstruktor z dwoma parametrami określa parametry połączenia dla źródła danych i nazwę tabeli, która zawiera dane dla metody testowej.
 
- Parametry połączenia są zależne od typu Typ źródła danych, ale musi on zawierać element dostawcy, który określa niezmienną nazwę dostawcy danych.
+ Parametry połączenia są zależne od rodzaju typu źródła danych, ale musi on zawierać element dostawcy, który określa nazwę niezmienną dostawcy danych.
 
 ```csharp
 [DataSource(
@@ -145,21 +145,21 @@ Atrybut źródła danych ma trzy konstruktorów.
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Aby uzyskać dostęp do danych za pomocą TestContext.DataRow
- Aby uzyskać dostęp do danych `AddIntegersData` tabeli, należy użyć `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektów, wartości w kolumnie, a więc Pobierz przez indeks lub kolumny nazw. Ponieważ wartości są zwracane jako obiekty, należy przekonwertować je na odpowiedni typ:
+###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Użyj TestContext.DataRow, aby uzyskać dostęp do danych
+ Aby uzyskać dostęp do danych `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektów, więc pobrać wartości w kolumnie według nazwy indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, należy przekonwertować je na odpowiedni typ:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Uruchamianie testu i wyświetlanie wyników
- Po zakończeniu zapisu metody testowej kompilacji projektu testowego. Metoda testowa jest wyświetlany w oknie Eksploratora testów w **nie Uruchom testy** grupy. Jak uruchamiać, zapisu i ponownie uruchomić testy narzędzia Eksplorator testów wyświetla wyniki w grupach **testy nie powiodło się**, **przekazany testy**, i **nie Uruchom testy**. Możesz wybrać **Uruchom wszystkie** do uruchomienia wszystkich testów, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
+##  <a name="run-the-test-and-view-results"></a>Uruchom test, aby wyświetlić wyniki
+ Po zakończeniu pisania metody testowej kompilacji projektu testowego. Metoda testowa jest wyświetlana w **Eksploratora testów** okna **testy nieuruchamiane** grupy. Jak uruchomić, zapisać i ponownie uruchomić testy, **Eksplorator testów** wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, i **testy nieuruchamiane**. Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
 
- Na pasku wyników testu w górnej części Eksploratora jest animowany podczas działania testu. Po zakończeniu uruchomienia testu pasek będzie zielonego, jeśli wszystkie testy zostały pomyślnie sprawdzone lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie uruchomienia testu zostanie wyświetlony w okienku szczegółów w dolnej części okna Eksploratora testów. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
+ Paski wyników testów w górnej części Eksploratora jest animowany podczas działania testu. Na końcu przebiegu testowego pasek będzie zielony, jeśli wszystkie testy zostały przekazane lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie przebiegu testu jest wyświetlana w okienku szczegółów u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
 
- W przypadku uruchomienia `AddIntegers_FromDataSourceTest` metody w naszym przykładzie czerwony pasek wyników i metody testowej jest przenoszony do **testy nie powiodło się** testu opartego na danych kończy się niepowodzeniem, jeśli źródło dowolnej z metod iterated z danych kończy się niepowodzeniem. W przypadku niepowodzenia testu opartego na danych w oknie Eksploratora testów, w okienku szczegółów są wyświetlane wyniki każdej iteracji, który jest identyfikowany przez indeks wiersza danych. W naszym przykładzie wynika, że `AddIntegers` algorytm poprawnie nie obsługuje wartości ujemnych.
+ Po przeprowadzeniu `AddIntegers_FromDataSourceTest` metody w naszym przykładzie paski wyników zmieni kolor na czerwony, i metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Test opartych na danych zakończy się niepowodzeniem, jeśli iterowany metod ze źródła danych nie powiedzie się. Po wybraniu nieudanego testu opartego na danych w **Eksploratora testów** okna, w okienku szczegółów są wyświetlane wyniki każdej iteracji, która jest identyfikowana przez indeks wiersza danych. W tym przykładzie wydaje się, że `AddIntegers` algorytm poprawnie nie obsługuje wartości ujemnych.
 
- Po testowana metoda jest usuwana testu, uruchom ponownie, na pasku wyniki włącza zielony i metody testowej jest przenoszony do **przekazany Test** grupy.
+ Po poprawieniu testowaną metodę test, uruchom ponownie, paski wyników zmieni kolor na zielony i metoda testowa jest przenoszona do **przekazywane Test** grupy.
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -167,6 +167,6 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
-- [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [Pisanie testów jednostkowych dla .NET Framework z środowisko testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

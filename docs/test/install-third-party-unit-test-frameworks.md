@@ -9,68 +9,68 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844698"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379641"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
 
-Visual Studio Test Explorer można uruchomić wszystkie jednostki struktury testowej, która opracowała karta Interfejs Eksploratora. Program instalacyjny platformy instalację plików binarnych i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem narzędzia Eksplorator testów jest zarejestrowany platformę. Rozwiązanie programu Visual Studio może zawierać projektów testów jednostkowych używający różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów uruchamia je wszystkie.
+Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury testowej, która opracowała interfejs adapter dla Eksploratora. Program instalacyjny Framework instaluje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów. Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów wykonuje na nich wszystkich.
 
-## <a name="acquire-third-party-frameworks"></a>Możliwość nabycia struktur innych firm
+## <a name="acquire-third-party-frameworks"></a>Uzyskiwanie struktur innych firm
 
-Można pobrać i zainstalować wiele platform testów jednostkowych innych firm, za pomocą Menedżera rozszerzenia programu Visual Studio lub Visual Studio Marketplace. Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web platformy.
+Można pobrać i zainstalować wiele platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub z witryny Marketplace programu Visual Studio. Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.
 
-### <a name="install-from-visual-studio"></a>Zainstaluj z programu Visual Studio
+### <a name="install-from-visual-studio"></a>Instalowanie za pomocą programu Visual Studio
 
-1. Wybierz **narzędzia** standardowe menu, a następnie wybierz pozycję **rozszerzenia i aktualizacje**.
+1. Wybierz **narzędzia** w menu standardowym, a następnie wybierz **rozszerzenia i aktualizacje**.
 
-2. Rozwiń węzeł **Online** > **programu Visual Studio Marketplace** > **narzędzia**. Wybierz **testowania**.
+2. Rozwiń **Online** > **programu Visual Studio Marketplace** > **narzędzia**. Wybierz **testowania**.
 
 3. Przeszukaj listę, aby znaleźć platformę.
 
-4. Wybierz platformę, a **Pobierz**.
+4. Wybierz platformę i wybierz pozycję **Pobierz**.
 
-Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+Aby uzyskać więcej informacji, zobacz [wyszukiwanie i korzystanie z rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
-### <a name="install-from-the-web"></a>Zainstaluj z sieci web
+### <a name="install-from-the-web"></a>Instalowanie z sieci web
 
-Jeśli znasz platformę myślisz:
+Jeśli znasz framework, który Cię interesuje:
 
-1. Otwórz [programu Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
+1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com/vs).
 
-2. Wpisz nazwę w ramach **znaleźć** pole.
+2. Wpisz nazwę platformy w **znaleźć** pole.
 
-3. Wybierz platformę na liście wyników, aby przejść do strony programu Visual Studio Marketplace narzędzia.
+3. Wybierz platformę, na liście wyników, aby przejść do **Visual Studio Marketplace** strony dla narzędzia.
 
 Aby przeglądać listę struktury oraz inne narzędzia do testowania:
 
-1. Otwórz [programu Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
+1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com/vs).
 
-2. W **Filtruj według kategorii / kolekcji**, wybierz **zobaczyć wszystkie**.
+2. W **Filtruj według kategorii / kolekcji**, wybierz **holograficznych**.
 
-3. W **kategorii** listy (oznaczone jako **przedstawiający**), rozwiń węzeł **narzędzia** węzeł, a następnie wybierz **testowanie**.
+3. W **kategorii** listy (oznaczone jako **przedstawiający**), rozwiń węzeł **narzędzia** węzeł, a następnie wybierz **testowania**.
 
-4. Wybieranie platformy na liście wyników, aby przejść do strony narzędzia Visual Studio Marketplace.
+4. Wybieranie platformy na liście wyników, aby przejść do **Visual Studio Marketplace** strony dla narzędzia.
 
-## <a name="update-to-the-latest-test-adapters"></a>Aktualizowanie do najnowszej adapterów testowych
+## <a name="update-to-the-latest-test-adapters"></a>Zaktualizuj do najnowszej adaptery testowe
 
-Aktualizację do najnowszej adapter testowy stabilna występować lepsze testowania odnajdywania i wykonywania. Aby uzyskać więcej informacji o aktualizacjach MSTest NUnit i xUnit adapterów testowych, zobacz [blogu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+Aktualizacja najnowszych adaptera testowego stabilny, aby lepiej testów odkrywania i wykonywania. Aby uzyskać więcej informacji o aktualizacjach MSTest i NUnit, xUnit adapterów testowych, zobacz [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
 
-### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aby zaktualizować test najnowsza stabilna wersja karty
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aby zaktualizować do wersji karty najnowszy stabilny testu
 
 1. Otwórz Menedżera pakietów Nuget dla rozwiązania, przechodząc do **narzędzia** > **Menedżera pakietów NuGet** > **Zarządzaj pakietami NuGet dla rozwiązania**.
 
-2. Polecenie **aktualizacje** kartę i wyszukać NUnit lub xUnit test kart, które są zainstalowane.
+2. Kliknij pozycję **aktualizacje** kartę i wyszukaj NUnit czy xUnit testu kart, które są zainstalowane.
 
-3. Wybierz kartę każdego testu, a następnie wybierz najnowsza stabilna wersja w menu rozwijanego.
+3. Wybierz kartę każdego testu, a następnie wybierz najnowszą stabilną wersję, w menu rozwijanym.
 
 4. Wybierz **zainstalować** przycisku.
 
-   ![Adapter testowy uaktualnienia](media/install-adapter-upgrade.png)
+   ![Uaktualnianie adaptera testowego](media/install-adapter-upgrade.png)
 
 ## <a name="see-also"></a>Zobacz także
 

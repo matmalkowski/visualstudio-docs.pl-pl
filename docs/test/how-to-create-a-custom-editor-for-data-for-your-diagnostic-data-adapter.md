@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowego edytora danych dla adaptera danych diagnostycznych w programie Visual Studio
+title: Utworzenie niestandardowego edytora danych dla adaptera danych diagnostycznych w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,42 +10,42 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6141defb2248cf79888b0ed94824a827bd36815f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976311"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380381"
 ---
-# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Porady: tworzenie edytora niestandardowego dla danych dla Twojego adaptera danych diagnostycznych
+# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych
 
-Podczas tworzenia adaptera danych diagnostycznych, można umożliwić użytkownikom końcowym Konfigurowanie określonych danych po wybraniu z niestandardowego adaptera danych diagnostycznych dla ustawień testu. Na przykład można wybrać dane konfiguracji, które określa, które klucze rejestru, aby wyodrębnić poziomu obciążenia sieci, aby symulować lub w katalogu, który można znaleźć plików tymczasowych lub pracy plików do dołączenia.
+Podczas tworzenia adaptera danych diagnostycznych, możesz chcieć umożliwić użytkownikowi konfigurowanie określonych danych po wybraniu użytkownika niestandardowego adaptera danych diagnostycznych dla ich ustawień testowych. Na przykład można wybrać dane konfiguracji, który określa, które klucze rejestru wyodrębnić, jaki poziom obciążenia sieciowego zasymulować lub, w którym katalogu znaleźć pliki tymczasowe lub pliki robocze do dołączenia.
 
-Przy użyciu pliku konfiguracji musi skonfigurować wartości początkowe dla Twojego adaptera danych diagnostycznych. Możesz podać niestandardowego edytora, aby umożliwić użytkownikom modyfikowanie danych konfiguracji.
+Do ustawiania wartości początkowych karty danych diagnostycznych, należy użyć pliku konfiguracji. Możesz zapewnić niestandardowy edytor, aby umożliwić użytkownikowi modyfikowanie danych konfiguracji.
 
-Aby utworzyć własną edytora, spowoduje utworzenie kontrolki użytkownika, który implementuje <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>.
+Aby utworzyć własny edytor, utworzysz formant użytkownika, który implementuje <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>.
 
-Można użyć Twojego adaptera danych diagnostycznych <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> w celu określenia klasy edytora do użycia na potrzeby edytowania danych diagnostycznych ustawienia konfiguracji.
+Można użyć adaptera danych diagnostycznych <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do określenia klasy edytora do edycji ustawień konfiguracji danych diagnostycznych.
 
-Należy także określić domyślnych danych konfiguracji, który ma być używany.  Zobacz [przykładowy projekt do tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md) dla Przykładowa konfiguracja domyślna.
+Określasz również domyślne dane konfiguracji, który chcesz użyć.  Zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md) dla przykładowej konfiguracji domyślnej.
 
-Poniższa procedura umożliwia utworzenie niestandardowego edytora, aby zaktualizować dane z ustawień testu stosowania Twojego adaptera diagnostyki danych niestandardowych.
+Poniższa procedura umożliwia utworzenie niestandardowego edytora do aktualizowania danych ustawień testu, gdy jest używany z niestandardowego adaptera danych diagnostycznych.
 
 > [!NOTE]
-> Aby utworzyć niestandardowy edytor, należy najpierw utworzyć Twojego adaptera danych diagnostycznych, które ma <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> stosowanym do klasy. Można użyć opcjonalnego <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute.HelpUri*> właściwości tego atrybutu, aby określić źródło zawartości pomocy dla edytora. Aby uzyskać więcej informacji na temat tworzenia Twojego adaptera danych diagnostycznych, zobacz [porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md).
+> Aby utworzyć niestandardowy edytor, należy najpierw utworzyć adaptera danych diagnostycznych, który ma <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> stosowane do klasy. Możesz użyć opcjonalnego <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute.HelpUri*> właściwości w tym atrybucie, aby określić źródło zawartości pomocy dla edytora. Aby uzyskać więcej informacji na temat tworzenia adaptera danych diagnostycznych, zobacz [porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md).
 
-Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edytora konfiguracji niestandardowej, zobacz [przykładowy projekt do tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Aby uzyskać pełny przykład projektu adaptera danych diagnostycznych, w tym z edytorem konfiguracji niestandardowych, zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
-## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>Do tworzenia edytora niestandardowego dla Twojego adaptera danych diagnostycznych
+## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>Aby utworzyć niestandardowy edytor dla adaptera danych diagnostycznych
 
-1.  Tworzenie formantu użytkownika do projektu dla Twojego adaptera danych diagnostycznych:
+1.  Tworzenie kontrolki użytkownika w projekcie adaptera danych diagnostycznych:
 
-    1.  Kliknij prawym przyciskiem myszy projekt kodu, który zawiera klasy adaptera danych diagnostycznych, wskaż pozycję **Dodaj** , a następnie wskaż polecenie **kontrolki użytkownika**.
+    1.  Kliknij prawym przyciskiem myszy projekt kodu, który zawiera klasy adaptera danych diagnostycznych, wskaż opcję **Dodaj** i wskaż **kontrolki użytkownika**.
 
-    2.  Na przykład Dodaj etykietę do formularza z następującym tekstem: **nazwa pliku danych:** i pole tekstowe o nazwie **FileTextBox** umożliwi użytkownik musi wprowadzić potrzebne dane.
+    2.  W tym przykładzie należy dodać etykietę do formularza z tym tekstem: **nazwa pliku danych:** i pole tekstowe o nazwie **FileTextBox** co umożliwi użytkownikowi wprowadzanie niezbędnych danych.
 
     > [!NOTE]
-    > Obecnie obsługiwane są tylko formanty użytkownika formularzy systemu Windows.
+    > Obecnie obsługiwane są tylko formanty użytkownika Windows Forms.
 
 2.  Dodaj następujące wiersze do sekcji deklaracji:
 
@@ -55,11 +55,11 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
     using Microsoft.VisualStudio.TestTools.Execution;
     ```
 
-3.  Ten formant użytkownika należy przekształcić Edytor niestandardowy.
+3.  Przekształć ten formant użytkownika w niestandardowy Edytor.
 
-    1.  Kliknij prawym przyciskiem myszy kontrolki użytkownika w projekcie kodu, a następnie wskaż **wyświetlić kod**.
+    1.  Kliknij prawym przyciskiem myszy formant użytkownika w projekcie kodu, a następnie wskaż **wyświetlić kod**.
 
-    2.  Ustaw klasy do zaimplementowania interfejsu edytora <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> w następujący sposób:
+    2.  Ustaw klasę, aby zaimplementować interfejs edytora <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> w następujący sposób:
 
     ```csharp
     public partial class MyDataConfigEditor :
@@ -68,21 +68,21 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
 
     1.  Kliknij prawym przyciskiem myszy <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> w kodzie i wybierz **implementuj interfejs** polecenia. Metody, które należy zaimplementować dla tego interfejsu są dodawane do klasy.
 
-    2.  Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do formantu użytkownika dla edytora zidentyfikować go jako edytora adapter danych diagnostycznych, zastępując **firmy**, **produktu**, i **wersji** z odpowiednie informacje dla Twojego adaptera danych diagnostycznych:
+    2.  Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do kontrolowania użytkowników tego edytora, aby zidentyfikować to jako edytora adaptera danych diagnostycznych, zastępując **firmy**, **produktu**, i **wersji** z odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
         ```csharp
         [DataCollectorConfigurationEditorTypeUri(
             "configurationeditor://MyCompany/MyConfigEditor/1.0")]
         ```
 
-4.  Dodaj dwie zmienne prywatnych w następujący sposób:
+4.  Dodaj dwie zmienne prywatne w następujący sposób:
 
     ```csharp
     private DataCollectorSettings collectorSettings;
     private IServiceProvider ServiceProvider { get; set; }
     ```
 
-5.  Dodaj kod, aby zainicjować edytora dla Twojego adaptera danych diagnostycznych. Wartości domyślne można dodać do pól formantu użytkownika przy użyciu danych, który znajduje się w zmiennej ustawień. To są dane, który znajduje się w `<DefaultConfiguration>` elementu w pliku XML konfiguracji karty.
+5.  Dodaj kod, aby zainicjować edytora dla adaptera danych diagnostycznych. Można dodać wartości domyślne do pól w kontrolce użytkownika przy użyciu danych, który znajduje się w zmiennej ustawienia. Są to dane, który znajduje się w `<DefaultConfiguration>` elementu w pliku konfiguracyjnym XML dla karty.
 
     ```csharp
     public void Initialize(
@@ -99,7 +99,7 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
     }
     ```
 
-6.  Dodaj kod, aby zapisać dane z formantów w edytorze do formatu XML wymagany przez adapter danych diagnostycznych interfejsu API w następujący sposób:
+6.  Dodaj kod, aby zapisać dane z formantów w edytorze powrót do formatu XML, wymaganej przez adapter danych diagnostycznych interfejsu API w następujący sposób:
 
     ```csharp
     public DataCollectorSettings SaveData()
@@ -115,7 +115,7 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
     }
     ```
 
-7.  Jeśli jest to istotne dla Ciebie, Dodaj kod, aby zweryfikować dane są poprawne w `VerifyData` metody lub użytkownik może mieć metody zwrócić `true`.
+7.  Jeśli jest dla Ciebie ważne, Dodaj kod, aby sprawdzić, dane są poprawne w `VerifyData` metody lub użytkownik może mieć metoda może zwracać `true`.
 
     ```csharp
     public bool VerifyData()
@@ -125,7 +125,7 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
     }
     ```
 
-8.  (Opcjonalnie) Można dodać kod, aby przywrócić dane początkowe ustawienia, które znajdują się w pliku konfiguracji XML w `ResetToAgentDefaults()` metodę, która używa prywatnego `getText()` metody.
+8.  (Opcjonalnie) Możesz dodać kod, aby przywrócić dane do ustawień początkowych, które znajdują się w pliku konfiguracyjnym XML w `ResetToAgentDefaults()` metody, która używa prywatnej `getText()` metody.
 
     ```csharp
     // Reset to default value from XML configuration
@@ -161,36 +161,36 @@ Dla projektu adaptera danych diagnostycznych pełny przykład, włączając edyt
     }
     ```
 
-9. Skompiluj rozwiązanie. Skopiuj zestaw adaptera diagnostyki danych i pliku konfiguracji XML (`<diagnostic data adapter name>.dll.config`) w następującej lokalizacji na podstawie w katalogu instalacji: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ PrivateAssemblies\DataCollectors*.
+9. Skompiluj rozwiązanie. Kopiuj zestaw adaptera danych diagnostycznych i plik konfiguracyjny XML (`<diagnostic data adapter name>.dll.config`) w następującej lokalizacji, w oparciu o katalogu instalacji: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ PrivateAssemblies\DataCollectors*.
 
     > [!NOTE]
-    > Mimo że edytor konfiguracji mogą być w projekcie i zestawu, który różni się od adaptera danych diagnostycznych, można je również w tym samym zestawie.
+    > Chociaż Edytor konfiguracji może być w projekcie i zestawu, który różni się od adaptera danych diagnostycznych, mogą również być tego samego zestawu.
 
-10. Aby użyć Twojego adaptera danych diagnostycznych podczas testowania, musi wybrać z listy istniejących ustawień testu lub Utwórz nową z Microsoft Test Manager lub programu Visual Studio a następnie wybierz Twojego adaptera danych diagnostycznych.
+10. Aby użyć karty danych diagnostycznych podczas testowania, należy wybrać z listy istniejących ustawień testu lub Utwórz nową z Microsoft Test Manager lub programu Visual Studio a następnie wybierz adaptera danych diagnostycznych.
 
-     Karta jest wyświetlana na **danych i informacji diagnostycznych** kartę Ustawienia testu z przyjazna nazwa przypisana do klasy.
+     Adapter jest wyświetlany na **dane i Diagnostyka** kartę ustawień testu z przyjazną nazwą, która została przypisana do tej klasy.
 
-11. Aby skonfigurować Twojego adaptera danych diagnostycznych dla ustawień testu, wybierz **Konfiguruj** obok nazwy karty.
+11. Aby skonfigurować adapter danych diagnostycznych dla ustawień testu, wybierz **Konfiguruj** obok nazwy karty.
 
-     Edytor niestandardowy jest teraz wyświetlone.
+     Niestandardowego edytora jest teraz wyświetlany.
 
-12. Edytuj pola w edytora niestandardowego zgodnie z wymaganiami, a następnie wybierz **zapisać**.
+12. Edytuj pola w edytorze niestandardowym zgodnie z wymaganiami, a następnie wybierz **Zapisz**.
 
-13. Jeśli korzystasz z testów z Microsoft Test Manager, można przypisać te ustawienia do planu testu testu, przed uruchomieniem testów, lub użyj **Uruchom z opcjami** polecenie, aby przypisać ustawień testu i zastąpić ustawienia testu. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbieranie diagnostycznych informacji za pomocą testu ustawień](../test/collect-diagnostic-information-using-test-settings.md).
+13. Jeśli używasz testów z Microsoft Test Manager, można przypisać te ustawienia testów do planu testów przed uruchomieniem testów lub użyć **Uruchom z opcjami** polecenia w celu przypisywania ustawień testów i zastępowania ustawień testu. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-14. Zanim użyjesz nowego edytora konfiguracji adaptera danych diagnostycznych, należy najpierw zastosować <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do każdej klasy adaptera danych diagnostycznych, którego chcesz użyć edytora i ponownie skompilować i zainstaluj je ponownie na komputerze klienckim. Aby uzyskać więcej informacji o sposobie instalowania adapterów danych diagnostycznych i edytory konfiguracji, zobacz [porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+14. Przed użyciem nowej konfiguracji edytora za pomocą adaptera danych diagnostycznych, należy najpierw zastosować <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do każdej klasy adaptera danych diagnostycznych, który chcesz użyć edytora, ponownie skompilować i ponownie je zainstalować na komputerze klienckim. Aby uzyskać więcej informacji na temat sposobu instalowania adapterów danych diagnostycznych i edytorów konfiguracji, zobacz [porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-15. Uruchom testy przy użyciu ustawień testów z Twojego adaptera danych diagnostycznych wybrane.
+15. Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
-     Plik danych, który określono w edytorze jest dołączony do wyników testu.
+     Plik danych, który określiłeś w edytorze jest dołączany do wyników testu.
 
- Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testu do korzystania ze środowiska, po uruchomieniu testów, zobacz [zbierania danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data) lub [zbierania danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+ Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data) lub [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
-- [Tworzenie adaptera danych diagnostycznych zbieranie danych niestandardowych lub mają wpływ na maszynę testową](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Zbierz informacje diagnostyczne przy użyciu ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Przykładowy projekt do tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
+- [Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)

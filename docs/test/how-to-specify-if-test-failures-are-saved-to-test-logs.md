@@ -1,5 +1,5 @@
 ---
-title: Zapisz dziennik testu obciążenia dla niepowodzenia testu w programie Visual Studio
+title: Zapisz dziennik testu obciążenia w przypadku niepowodzenia testów w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,43 +11,42 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184fbab591698404bde4593f4ad7b61fa1815ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969683"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381456"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Porady: określanie, czy niepowodzenia testu są zapisywane w dziennikach testów za pomocą edytora testu obciążenia
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników za pomocą edytora testu obciążenia
 
-Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** można zmienić właściwości testu obciążenia, aby spełnić potrzeby testowania i cele. Zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md). Można określić, jeśli chcesz, aby dziennik testu, jeśli test zakończy się niepowodzeniem w teście obciążenia, zmieniając zapisywane **Zapisz dziennik podczas niepowodzenia testu** właściwości.
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości testu obciążenia w celu spełnienia potrzeb i celów testowania. Zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md). Można określić, jeśli chcesz mieć Dziennik testu zapisany, jeśli test zakończy się niepowodzeniem w teście obciążeniowym, zmieniając **Zapisz dziennik w przypadku niepowodzenia testu** właściwości.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości parametry uruchomieniowe i ich opisy, zobacz [właściwości ustawień uruchamiania testu obciążenia](../test/load-test-run-settings-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
 
-## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Aby określić, czy Dziennik testu jest zapisywana, gdy test zakończy się niepowodzeniem w przypadku scenariusza
+## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Aby określić, jeśli dziennik testu jest zapisywany, gdy test zakończy się niepowodzeniem w przypadku scenariusza
 
-1.  Otwórz testu obciążenia.
+1.  Otwórz test obciążenia.
 
-     Zostanie wyświetlone edytora testu obciążenia. Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **parametrów uruchomieniowych** folderu, wybierz węzeł uruchomieniowych, który chcesz określić maksymalną liczbę iteracji testowych dla.
+2.  Obciążenia test drzew **parametrów uruchomieniowych** folderu, wybierz węzeł parametrów uruchomieniowych, który chcesz określić maksymalną liczbę iteracji testu dla.
 
-3.  Na **widoku** menu, wybierz opcję **okna właściwości**.
+3.  Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-     Parametry uruchomieniowe kategorii i właściwości są wyświetlane w oknie właściwości.
+     Kategorie ustawień i właściwości są wyświetlane w **właściwości** okna.
 
-4.  W **Zapisz dziennik podczas niepowodzenia testu** właściwości, wybierz albo wartość True lub False, aby określić, czy chcesz zapisać testu dziennika w przypadku niepowodzenia testu, w tym scenariuszu.
+4.  W **Zapisz dziennik w przypadku niepowodzenia testu** właściwości, wybierz opcję **True** lub **False** do określenia, czy chcesz zapisać dziennik testu w przypadku niepowodzenia testu w scenariuszu.
 
-     Po zmianie właściwości, wybierz **zapisać** na **pliku** menu.
+     Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu.
 
-     Dane, które są zapisywane w dzienniku można wyświetlić przy użyciu widoku tabeli analizatora testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabeli](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     Dane, które są zapisywane w dzienniku można wyświetlać przy użyciu widoku tabeli analizatora testu obciążenia. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
-- [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności użytkownika wirtualnego](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [Porady: Określ, jak często zapisywane są dzienniki testów](../test/how-to-specify-how-frequently-test-logs-are-saved.md)
+- [Porady: Konfigurowanie zbierania szczegółowych, aby włączyć wykres aktywności wirtualnych użytkowników](../test/how-to-configure-load-tests-to-collect-full-details.md)
+- [Porady: Określanie, jak często zapisywane są dzienniki testów](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

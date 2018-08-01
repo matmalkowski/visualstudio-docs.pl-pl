@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117657"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380746"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
-Przy użyciu szablonów tekstowych środowiska wykonawczego Visual Studio można wygenerować ciągów tekstowych w aplikacji w czasie wykonywania. Komputer, gdzie aplikacja wykonuje nie muszą mieć programu Visual Studio. Środowisko uruchomieniowe szablony czasami są nazywane "wstępnie przetworzony szablonów tekstowych", ponieważ w czasie kompilacji szablon generuje kod, który jest wykonywany w czasie wykonywania.
+Ciągi tekstowe można wygenerować w aplikacji w czasie wykonywania przy użyciu szablonów tekstowych środowiska uruchomieniowego programu Visual Studio. Komputer, na którym aplikacja wykonuje ma program Visual Studio. Środowisko uruchomieniowe szablony są czasami nazywane "wstępnie przetworzonych szablonów tekstowych" ponieważ w czasie kompilacji, szablon generuje kod, który jest wykonywany w czasie wykonywania.
 
-Każdy szablon jest mieszaniną tekstu, jak będzie wyglądać w wygenerowanym ciągu i fragmentów kodu programu. Fragmenty program Podaj wartości dla zmiennej części ciągu i również sterować części warunkowe i powtórzony.
+Każdy szablon jest kombinację tekstu, która będzie wyświetlana w wygenerowanym ciągu i fragmenty kodu programu. Fragmenty program Podaj wartości dla zmiennej części ciągu, a także kontrolować sposób Warunkowość oraz części.
 
-Następujący szablon można na przykład w aplikacji, która tworzy raport HTML.
+Na przykład następujący szablon może służyć w aplikacji, która tworzy raport HTML.
 
 ```html
 <#@ template language="C#" #>
@@ -47,26 +47,26 @@ This report is Company Confidential.
 </body></html>
 ```
 
-Zwróć uwagę, że szablon jest strona HTML, w którym zostały zastąpione zmiennej części kodu programu. Można rozpocząć projektu strony sieci pisząc statycznych prototypu strony HTML. Następnie można zastąpić tabeli i innymi częściami zmiennej z kodem program, który generuje zawartość, która różni się od jednokrotnie do następnego.
+Należy zauważyć, że szablon jest stroną HTML, w którym zostały zastąpione zmiennej części kodu programu. Można rozpocząć projektu strony sieci, pisząc prototyp statycznej strony HTML. W tabeli i innymi częściami zmiennej można następnie zastąpić za pomocą kodu programu, który generuje zawartości, która różni się z rozwiązaniem do następnego.
 
-W usłudze ułatwia aplikacji przy użyciu szablonu jest widoczność końcowego formularza danych wyjściowych nie może w, na przykład długich serię instrukcji zapisu. Zmiany wprowadzone w formie danych wyjściowych jest łatwiejsze i bardziej niezawodny.
+Przy użyciu szablonu w Twojej aplikacji sprawia, że łatwiej jest zobaczyć ostatecznej postaci w danych wyjściowych, nie można wykonać następujące akcje w, na przykład długiego szeregu instrukcje zapisu. Zmiany wprowadzone w formie danych wyjściowych jest łatwiejsze i bardziej niezawodne.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Tworzenie szablonu tekstowego Run-Time w dowolnej aplikacji
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Tworzenie szablonu tekstu czasu wykonywania w dowolnej aplikacji
 
-### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstu czasu wykonywania
+### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstowy czasu wykonywania
 
-1. W Eksploratorze rozwiązań, w menu skrótów projektu, wybierz **Dodaj** > **nowy element**.
+1. W Eksploratorze rozwiązań w menu skrótów projektu wybierz **Dodaj** > **nowy element**.
 
-2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **szablonu tekstowego środowiska uruchomieniowego**. (W języku Visual Basic, sprawdź w obszarze **wspólne elementy** > **ogólne**.)
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **szablonie tekstowym czasu wykonywania**. (W języku Visual Basic, sprawdź w obszarze **wspólne elementy** > **ogólne**.)
 
-3. Wpisz nazwę pliku szablonu.
+3. Wpisz nazwę dla pliku szablonu.
 
     > [!NOTE]
-    > Nazwa pliku szablonu będzie służyć jako nazwy klasy w wygenerowanym kodzie. W związku z tym nie ma on spacji ani znaków interpunkcyjnych.
+    > Nazwa pliku szablonu będzie służyć jako nazwy klasy w wygenerowanym kodzie. W związku z tym nie powinna ona mieć spacji i znaków przestankowych.
 
-4. Wybierz **dodać**.
+4. Wybierz **Dodaj**.
 
-    Utworzony nowy plik ma rozszerzenie **.TT —**. Jego **narzędzie niestandardowe** właściwość jest ustawiona na **texttemplatingfilepreprocessor —**. Ten przewodnik zawiera następujące wiersze:
+    Tworzony jest nowy plik, który ma rozszerzenie **.tt**. Jego **narzędzie niestandardowe** właściwość jest ustawiona na **TextTemplatingFilePreprocessor**. Zawiera następujące wiersze:
 
     ```
     <#@ template language="C#" #>
@@ -76,40 +76,40 @@ W usłudze ułatwia aplikacji przy użyciu szablonu jest widoczność końcowego
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Konwertowanie istniejącego pliku do szablonu środowiska wykonawczego
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Konwertowanie istniejącego pliku na szablon czasu wykonywania
 
-Sposób tworzenia szablonu jest przekonwertować istniejące przykład danych wyjściowych. Na przykład jeśli aplikacja generuje pliki HTML, można uruchomić, tworząc zwykły plik HTML. Upewnij się, że działa prawidłowo i czy jej wygląd jest poprawna. Następnie dołącz ją do projektu programu Visual Studio i przekonwertować go do szablonu.
+Dobrym sposobem, aby utworzyć szablon jest do konwersji istniejących przykładowe dane wyjściowe. Na przykład jeśli aplikacja generuje pliki HTML, można uruchomić, tworząc zwykły plik HTML. Upewnij się, że działa prawidłowo i czy jego wygląd jest poprawna. Następnie Uwzględnij ją w projekcie programu Visual Studio i przekonwertować go do szablonu.
 
-### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Aby przekonwertować istniejącego pliku tekstowego do szablonu środowiska wykonawczego
+### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Aby przekonwertować istniejącego pliku tekstowego szablon czasu wykonywania
 
-1. Dołączyć plik do projektu programu Visual Studio. W Eksploratorze rozwiązań, w menu skrótów projektu, wybierz **Dodaj** > **istniejący element**.
+1. Dołącz plik do projektu programu Visual Studio. W Eksploratorze rozwiązań w menu skrótów projektu, wybierz **Dodaj** > **istniejący element**.
 
-2. Pliku zestawu **narzędzia niestandardowe** właściwości **texttemplatingfilepreprocessor —**. W Eksploratorze rozwiązań, pliku, w menu skrótów wybierz **właściwości**.
+2. Ustaw plik **narzędzia niestandardowe** właściwości **TextTemplatingFilePreprocessor**. W Eksploratorze rozwiązań w menu skrótów pliku, wybierz **właściwości**.
 
     > [!NOTE]
-    > Jeśli właściwość została już ustawiona, upewnij się, że jest **texttemplatingfilepreprocessor —** i nie **texttemplatingfilegenerator —**. Może się to zdarzyć, jeśli zawiera plik, który ma już rozszerzenie **.TT —**.
+    > Jeśli właściwość została już ustawiona, upewnij się, że jest **TextTemplatingFilePreprocessor** i nie **TextTemplatingFileGenerator**. Może się to zdarzyć, jeśli dołączyć plik, który ma już rozszerzenie **.tt**.
 
-3. Zmień rozszerzenie nazwy pliku na **.TT —**. Mimo że ten krok jest opcjonalny, pomaga uniknąć otworzyć plik w edytorze niepoprawne.
+3. Zmień rozszerzenie nazwy pliku **.tt**. Mimo że ten krok jest opcjonalny, pomaga uniknąć, otwierając plik w edytorze niepoprawne.
 
-4. Usuń wszystkie spacje lub znaki interpunkcyjne z głównej części nazwy pliku. Na przykład "Mój Page.tt sieci Web" jest nieprawidłowa, ale "MyWebPage.tt" jest poprawna. Nazwa pliku będzie służyć jako nazwy klasy w wygenerowanym kodzie.
+4. Usuń wszelkie spacje lub znaki interpunkcyjne z głównej części nazwy pliku. Na przykład "Moje Page.tt sieci Web" jest nieprawidłowa, ale "MyWebPage.tt" jest prawidłowa. Nazwa pliku będzie służyć jako nazwy klasy w wygenerowanym kodzie.
 
-5. Wstaw następujący wiersz na początku pliku. Jeśli pracujesz w projektach Visual Basic, zastąp "C#" z "VB".
+5. Wstaw następujący wiersz na początku pliku. Jeśli pracujesz w projekcie Visual Basic, zastąp "C#" z "VB".
 
     `<#@ template language="C#" #>`
 
 ## <a name="the-content-of-the-run-time-template"></a>Zawartość szablonu środowiska wykonawczego
 
-### <a name="template-directive"></a>Dyrektywy szablonu
+### <a name="template-directive"></a>— Dyrektywa szablonu
 
-Zachowaj pierwszy wiersz szablonu, jak w momencie tworzenia pliku:
+Pierwszy wiersz szablonu należy pamiętać, jak podczas tworzenia pliku:
 
 `<#@ template language="C#" #>`
 
-Parametr język będzie zależeć od język projektu.
+Parametr języka będzie zależeć od języka projektu.
 
 ### <a name="plain-content"></a>Zwykły zawartości
 
-Edytuj **.TT —** plik zawierający tekst, który ma być aplikację do wygenerowania. Na przykład:
+Edytuj **.tt** plik zawiera tekst, który ma aplikację w celu wygenerowania. Na przykład:
 
 ```html
 <html><body>
@@ -146,19 +146,19 @@ Możesz wstawić kod programu między `<#` i `#>`. Na przykład:
 </table>
 ```
 
-Należy zauważyć, że instrukcje są wstawiane `<# ... #>` i wyrażenia są wstawiane `<#= ... #>`. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+Należy zauważyć, że instrukcje zostały wstawione między `<# ... #>` i wyrażenia są wstawiane `<#= ... #>`. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template"></a>Przy użyciu szablonu
 
-### <a name="the-code-built-from-the-template"></a>Kod zbudowane na podstawie szablonu
+### <a name="the-code-built-from-the-template"></a>Kod utworzony na podstawie szablonu
 
-Po zapisaniu **.TT —** pliku zależnej **.cs** lub **.vb** plik został wygenerowany. Aby wyświetlić ten plik w Eksploratorze rozwiązań, rozwiń węzeł **.TT —** węzła plików. W projektach Visual Basic, należy najpierw wybrać **Pokaż wszystkie pliki** na pasku narzędzi Eksplorator rozwiązań.
+Podczas zapisywania **.tt** pliku, podmiot zależny firmy **.cs** lub **.vb** generowany jest plik. Aby wyświetlić ten plik w **Eksploratora rozwiązań**, rozwiń węzeł **.tt** węzła pliku. W projekcie języka Visual Basic, należy najpierw wybrać **Pokaż wszystkie pliki** w **Eksploratora rozwiązań** paska narzędzi.
 
-Powiadomienie, że pomocniczy plik zawiera częściowej klasy, która zawiera metodę o nazwie `TransformText()`. Ta metoda jest wywoływana z poziomu aplikacji.
+Zwróć uwagę, że pomocniczy plik zawiera częściową klasą, która zawiera metodę o nazwie `TransformText()`. Tę metodę można wywołać z aplikacji.
 
 ### <a name="generating-text-at-run-time"></a>Generowanie tekstu w czasie wykonywania
 
-W kodzie aplikacji można wygenerować zawartość szablonu przy użyciu wywołania następująco:
+W kodzie aplikacji, można wygenerować zawartość szablonu przy użyciu wywołania w następujący sposób:
 
 ```csharp
 MyWebPage page = new MyWebPage();
@@ -172,19 +172,19 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-Aby umieścić wygenerowanej klasy w określonej przestrzeni nazw, należy ustawić **Namespace narzędzie niestandardowe** właściwości pliku szablonu tekstowego.
+Aby umieścić wygenerowanej klasy w określonej przestrzeni nazw, należy ustawić **niestandardowe narzędzie Namespace** właściwości pliku szablonu tekstu.
 
-### <a name="debugging-runtime-text-templates"></a>Szablony tekstowe środowiska uruchomieniowego debugowania
+### <a name="debugging-runtime-text-templates"></a>Debugowanie szablony tekstowe czasu wykonywania
 
-Debugowania i testowania szablonów tekstowych środowiska uruchomieniowego w taki sam sposób jak zwykłe kodu.
+Debugowanie i testowanie szablony tekstowe czasu wykonywania w taki sam sposób jak zwykłym kodem.
 
-Można ustawić punktu przerwania w szablonu tekstowego. Po uruchomieniu aplikacji w trybie debugowania w programie Visual Studio można wykonywać krokowo kodu i ocenić Czujka wyrażeń w zwykły sposób.
+Możesz ustawić punkt przerwania w szablonie tekstu. Jeśli aplikacja jest uruchomiona w trybie debugowania w programie Visual Studio, można przejść przez kod i ocenić Czujka wyrażeń w zwykły sposób.
 
 ### <a name="passing-parameters-in-the-constructor"></a>Przekazywanie parametrów w Konstruktorze
 
-Zazwyczaj szablonu należy zaimportować niektóre dane z innych części aplikacji. Aby ułatwić to, kod utworzony przez szablon jest klasy częściowej. Można utworzyć inną część tej samej klasy w innym pliku w projekcie. Ten plik może zawierać konstruktora z parametrami, właściwości i funkcje, które mogą być dostępne zarówno kod, który jest osadzony w szablonie i w pozostałej części aplikacji.
+Zazwyczaj szablonu należy zaimportować dane z innych części aplikacji. Aby to proste, kodu utworzonego przez szablon jest klasy częściowej. Możesz utworzyć inną częścią tej samej klasie w innym pliku w projekcie. Ten plik może zawierać konstruktora z parametrami, właściwości i funkcje, które są dostępne zarówno przez kod, który jest osadzony w szablonie, a przez pozostałe części aplikacji.
 
-Na przykład można utworzyć oddzielny plik **MyWebPageCode.cs**:
+Na przykład można utworzyć osobny plik **MyWebPageCode.cs**:
 
 ```csharp
 partial class MyWebPage
@@ -193,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-W pliku szablonu **MyWebPage.tt**, można zapisać:
+W pliku szablonu **MyWebPage.tt**, można napisać:
 
 ```html
 <h2>Sales figures</h2>
@@ -219,7 +219,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent);
 
 #### <a name="constructor-parameters-in-visual-basic"></a>Parametry Konstruktora w języku Visual Basic
 
-W języku Visual Basic, oddzielny plik **MyWebPageCode.vb** zawiera:
+W języku Visual Basic, oddzielnym pliku **MyWebPageCode.vb** zawiera:
 
 ```vb
 Namespace My.Templates
@@ -252,7 +252,7 @@ This report is Company Confidential.
 </body></html>
 ```
 
-Szablon może być wywoływany przez przekazanie parametru w Konstruktorze:
+Szablon może być wywoływany przez przekazanie parametr w Konstruktorze:
 
 ```vb
 Dim data = New My.Templates.MyData
@@ -264,55 +264,55 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>Przekazywanie danych we właściwościach szablonu
 
-Alternatywna metoda przekazywanie danych do szablonu jest pozwala dodać właściwości publicznej klasy szablonu w definicji klasy częściowej. Aplikację można ustawić właściwości przed wywołaniem `TransformText()`.
+Alternatywny sposób przekazywanie danych do szablonu jest można dodać właściwości publiczne klasy szablonu w definicji klasy częściowej. Aplikację można ustawić właściwości przed wywołaniem `TransformText()`.
 
-Można również dodać pola do klasy szablonu w definicji częściowej. Umożliwia przekazywanie danych pomiędzy kolejnymi wykonaniami szablonu.
+Można również dodać pola do klasy szablonu w definicji częściowej. Dzięki temu można przekazać dane między kolejnymi wykonaniami szablonu.
 
-### <a name="use-partial-classes-for-code"></a>Klasy częściowe używany dla kodu
+### <a name="use-partial-classes-for-code"></a>Używaj częściowe klasy dla kodu
 
-Wielu deweloperów wolą unikać pisania dużych jednostek kodu w szablonach. Zamiast tego można zdefiniować metody w klasie częściowej, który ma taką samą nazwę jak plik szablonu. Wywołania tych metod z szablonu. W ten sposób więcej pokazuje szablonu wyraźnie jakie ciąg wyjście docelowego będzie wyglądać. Dyskusjach na temat wygląd wynik mogą być oddzielone od logiki tworzenia danych, który jest wyświetlany.
+Wielu programistów chce unikać pisania treści dużych kodu w szablonach. Zamiast tego można zdefiniować metody w klasie częściowej, który ma taką samą nazwę jak plik szablonu. Wywoływanie tych metod z szablonu. W ten sposób pokazuje szablonu więcej wyraźnie jakie docelowego ciągu danych wyjściowych będzie wyglądać. Dyskusje na temat wyglądu wyniki mogą być oddzielone od logiki, tworzenia danych, który jest wyświetlany.
 
-### <a name="assemblies-and-references"></a>Zestawy i odwołań
+### <a name="assemblies-and-references"></a>Zespoły i odwołania
 
-Jeśli chcesz, aby kod szablonu do odwołania .NET lub inne zestaw takich jak **System.Xml.dll**, dodaj go do projektu **odwołania** w zwykły sposób.
+Jeśli chcesz, aby kod szablonu do odwołania .NET lub innych zestawów, takich jak **System.Xml.dll**, dodaj go do swojego projektu **odwołania** w zwykły sposób.
 
-Jeśli chcesz zaimportować przestrzeni nazw w taki sam sposób jak `using` instrukcji, można to zrobić z `import` dyrektywy:
+Jeśli chcesz zaimportować przestrzeni nazw w taki sam sposób jak `using` instrukcji, można to zrobić za pomocą `import` dyrektywy:
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-Dyrektywy te muszą znajdować się na początku pliku, natychmiast po `<#@template` dyrektywy.
+Te dyrektywy muszą być umieszczone na początku pliku, natychmiast po `<#@template` dyrektywy.
 
 ### <a name="shared-content"></a>Zawartość udostępniona
 
-Jeśli masz tekst, który jest współużytkowany kilku szablonów, można umieścić w osobnym pliku i dołączyć go w każdym pliku, w którym powinna zostać wyświetlona:
+Jeśli masz tekst, który jest udostępniany między kilka szablonów, można umieścić w oddzielnym pliku i dołączyć go w każdym pliku, w którym powinna zostać wyświetlona:
 
 ```
 <#@include file="CommonHeader.txt" #>
 ```
 
-Dołączonej zawartości może zawierać kombinację kodu programu i zwykły tekst i może zawierać inne obejmują dyrektywy i innych dyrektyw.
+Dołączona zawartość może zawierać kombinację kodu programu i zwykły tekst i może zawierać inne dołącza dyrektywę i inne dyrektywy.
 
-Dyrektywa include może służyć dowolne miejsce w tekście pliku szablonu lub dołączanego pliku.
+Dyrektywa include można używanych w dowolnym miejscu w tekście pliku szablonu lub pliku dołączanym.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Dziedziczenie między szablonami tekstu czasu wykonywania
+### <a name="inheritance-between-run-time-text-templates"></a>Dziedziczenia między szablonami tekstu czasu wykonywania
 
-Można udostępniać zawartość między szablonami środowiska wykonawczego, tworząc szablon klasy podstawowej, które mogą być abstrakcyjne. Użyj `inherits` parametr `<@#template#>` dyrektywy do odwołania innej klasy szablonu środowiska wykonawczego.
+Możesz udostępnić zawartości między szablonów czasu wykonywania, pisząc szablonu klasy bazowej, które mogą być abstrakcyjne. Użyj `inherits` parametru `<@#template#>` dyrektywy, aby odwoływać się do innej klasy szablonu środowiska uruchomieniowego.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: fragmentów w podstawowej metody
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: fragmenty w metodach Base
 
-We wzorcu używane w następującym przykładzie zwróć uwagę następujące kwestie:
+We wzorcu używanych w przykładzie poniżej Zwróć uwagę następujące kwestie:
 
-- Klasa podstawowa `SharedFragments` definiuje metody w blokach funkcji klasy `<#+ ... #>`.
+- Klasa bazowa `SharedFragments` definiuje metody w ramach bloki cech klas `<#+ ... #>`.
 
-- Klasa podstawowa nie zawiera wolnych tekstu. Zamiast tego wszystkie jego bloki wystąpić wewnątrz metody funkcji klasy.
+- Klasa bazowa nie zawiera bezpłatny tekstu. Zamiast tego wszystkie jego bloki tekstu występować wewnątrz metody funkcji klasy.
 
 - Klasy pochodnej wywołuje metody zdefiniowane w `SharedFragments`.
 
-- Wywołania aplikacji `TextTransform()` metody klasy pochodnej, ale nie przekształca klasy podstawowej `SharedFragments`.
+- Wywołania aplikacji `TextTransform()` metody klasy pochodnej, ale nie przekształca klasy bazowej `SharedFragments`.
 
-- Szablony tekstowe środowiska uruchomieniowego; są klas podstawowych i pochodnych oznacza to **narzędzie niestandardowe** właściwość jest ustawiona na **texttemplatingfilepreprocessor —**.
+- Klasy podstawowe i pochodne są szablony tekstowe czasu wykonywania; oznacza to, że **narzędzie niestandardowe** właściwość jest ustawiona na **TextTemplatingFilePreprocessor**.
 
 **SharedFragments.tt:**
 
@@ -355,9 +355,9 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst w podstawowej treści
+#### <a name="inheritance-pattern-text-in-base-body"></a>Wzorzec dziedziczenia: Tekst w treści podstawowy
 
-W tym o innym podejściu do przy użyciu szablonu dziedziczenia zbiorczego tekst jest zdefiniowany w szablonie podstawowej. Pochodne Szablony zapewniają danych i fragmenty tekstu, który mieści się w podstawowej zawartości.
+W tym o innym podejściu do przy użyciu szablonu dziedziczenia duża część tekstu jest zdefiniowana w szablonie podstawowym. Pochodne szablony zawierają dane i fragmentów tekstu, który mieści się w podstawowej zawartości.
 
 **AbstractBaseTemplate1.tt:**
 
@@ -431,9 +431,9 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-Podczas projektowania szablonów: Jeśli chcesz użyć szablonu, aby wygenerować kod który staje się częścią aplikacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Szablonów czasu projektowania: Jeśli chcesz użyć szablonu, aby wygenerować kod stanie się częścią Twojej aplikacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-Szablony środowiska wykonawczego mogą być używane w dowolnej aplikacji, w którym szablonów i jego zawartość są określane w czasie kompilacji. Ale jeśli chcesz zapisać rozszerzenia programu Visual Studio, które generuje tekst na podstawie szablonów, które zmieniają się w czasie wykonywania, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+Szablony czasu wykonywania mogą być używane w dowolnej aplikacji, w których szablonach a ich zawartość są określane w czasie kompilacji. Ale jeśli chcesz zapisać rozszerzenia programu Visual Studio, która generuje tekst za pomocą szablonów, które zmieniają się w czasie wykonywania, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978252"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381719"
 ---
-# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom
+# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
 Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu.
 
@@ -51,7 +51,7 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 > - Jeśli pracujesz z kodem niezarządzanym (natywna), należy użyć kompilacji debugowania
 > - Upewnij się, że są generuje pliki .pdb (symbol) dla każdego zestawu.
 
-Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md). . Należy pamiętać uruchomić pokrycie kodu ponownie po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
+Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [pokrycie kodu](../test/troubleshooting-code-coverage.md). Należy pamiętać uruchomić pokrycie kodu ponownie po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
 
 ## <a name="report-in-blocks-or-lines"></a>Raport w blokach i wierszach
 
@@ -63,7 +63,7 @@ Niektórzy użytkownicy preferują liczbę wierszy, ponieważ wartości procento
 
 ## <a name="manage-code-coverage-results"></a>Zarządzanie wynikami pokrycia kodu
 
-Okno Wyniki pokrycia kodu zwykle przedstawia najnowszy wynik uruchomionych testów. Wyniki będą się różnić, jeśli zmienisz ich dane lub za każdym razem uruchomisz tylko niektóre z testów.
+**Wyniki pokrycia kodu** okna zazwyczaj zawiera wynik ostatniego uruchomienia. Wyniki będą się różnić, jeśli zmienisz ich dane lub za każdym razem uruchomisz tylko niektóre z testów.
 
 Okno pokrycia kodu może służyć również do wyświetlania poprzednich wyników lub wyników uzyskanych na innych komputerach.
 
@@ -71,13 +71,13 @@ Można scalać wyniki kilku uruchomień, na przykład tych, które używają ró
 
 -   **Aby wyświetlić poprzedni zestaw wyników**, wybierz go z menu rozwijanego. W menu pojawia się tymczasowa lista, która jest czyszczona po otwarciu nowego rozwiązania.
 
--   **Aby wyświetlić wyniki z poprzedniej sesji**, wybierz **Importuj wyniki pokrycia kodu**, przejdź do folderu TestResults w swoim rozwiązaniu i zaimportuj plik .coverage.
+-   **Aby wyświetlić wyniki z poprzedniej sesji**, wybierz **Importuj wyniki pokrycia kodu**, przejdź do **TestResults** folder w rozwiązaniu i zaimportuj *.coverage* pliku.
 
-    Kolorowanie pokrycia może być niepoprawne, jeśli kod źródłowy zmienił się od czasu wygenerowania pliku .coverage.
+    Kolorowanie pokrycia może być nieprawidłowy, jeśli kod źródłowy zmienił się od *.coverage* został wygenerowany plik.
 
--   **Aby wyniki były czytelne jak tekst**, wybierz **Eksportuj wyniki pokrycia kodu**. Spowoduje to wygenerowanie pliku .coveragexml, który można odczytać. Można go też przetwarzać z innymi narzędziami lub łatwo wysłać pocztą.
+-   **Aby wyniki były czytelne jak tekst**, wybierz **Eksportuj wyniki pokrycia kodu**. Spowoduje to wygenerowanie czytelny *.coveragexml* pliku, który może przetwarzać z innymi narzędziami lub łatwo wysłać pocztą.
 
--   **Aby wysłać wyniki do kogoś innego**, Wyślij plik .coverage lub wyeksportowany plik .coveragexml. Następnie można zaimportować plik. Jeśli mają one tę samą wersję kodu źródłowego, mogą odczytać kolorowanie pokrycia.
+-   **Aby wysłać wyniki do kogoś innego**, albo wysłać *.coverage* pliku lub wyeksportowany *.coveragexml* pliku. Następnie można zaimportować plik. Jeśli mają one tę samą wersję kodu źródłowego, mogą odczytać kolorowanie pokrycia.
 
 ## <a name="merge-results-from-different-runs"></a>Scalanie wyników z różnych tras
 
@@ -245,15 +245,15 @@ Użyj następujących makr:
 
 ### <a name="include-or-exclude-additional-elements"></a>Dołącz lub Wyklucz dodatkowe elementy
 
-Analizy pokrycia kodu są wykonywane tylko na zestawach, które są ładowane i dla których plik .pdb jest dostępny w tym samym katalogu co plik .exe lub .dll. Dlatego w pewnych okolicznościach można rozszerzyć zbiór zestawów, włączony przez uzyskanie kopii odpowiednich plików .pdb.
+Analiza pokrycia kodu odbywa się tylko na zestawach, które są ładowane i dla których *.pdb* plik jest dostępny w tym samym katalogu co *.dll* lub *.exe* pliku. Dlatego w pewnych okolicznościach można rozszerzyć zbiór zestawów, włączony przez uzyskanie kopii odpowiednich *.pdb* plików.
 
-Można zwiększyć kontrolę nad tym, które zespoły i elementy są zaznaczone dla analizy pokrycia kodu przez napisanie pliku .runsettings. Można np. wykluczyć zestawy określonego typu bez konieczności dodawania atrybutów do ich klas. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
+Możesz skorzystać z większą kontrolę nad tym, którzy zespoły i elementy są zaznaczone dla analizy pokrycia kodu przez napisanie *.runsettings* pliku. Można np. wykluczyć zestawy określonego typu bez konieczności dodawania atrybutów do ich klas. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analiza pokrycia kodu w usłudze kompilacji
 
 Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem z innymi testami pozostałych członków zespołu. (Jeśli jeszcze nie skonfigurowano już to, zobacz [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Jest przydatne do analizy pokrycia kodu w usłudze kompilacji, ponieważ zapewnia najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia na komputerach deweloperskich.
 
-1. W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.
+1. W **Team Explorer**, otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.
 
 2. Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Ustaw **typu pliku parametrów uruchomieniowych** do **włączonym pokryciem kodu**.
 
@@ -287,5 +287,5 @@ Jeśli nie widać wyników pokrycia kodu, [Rozwiązywanie problemów z pokryciem
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Pokrycie kodu — wyszukiwanie błędów](../test/troubleshooting-code-coverage.md)
-- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+- [Pokrycie kodu](../test/troubleshooting-code-coverage.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)

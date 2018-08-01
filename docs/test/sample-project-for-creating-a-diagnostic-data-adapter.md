@@ -1,5 +1,5 @@
 ---
-title: Przykładowy projekt do tworzenia adaptera danych diagnostycznych w programie Visual Studio
+title: Przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: sample
 helpviewer_keywords:
@@ -12,32 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977118"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380773"
 ---
-# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Przykładowy projekt do tworzenia adaptera danych diagnostycznych
+# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych
 
-"MyDiagnosticDataAdapter" jest adaptera danych diagnostycznych proste, który można dołączyć plik dziennika do wyników testu, po uruchomieniu testów.
+"MyDiagnosticDataAdapter" to prosty adapter danych diagnostycznych, który można dołączyć pliku dziennika do wyników testów, po uruchomieniu testów.
 
- Konieczne będzie uprawnienia administratora na dowolnym komputerze gdzie zbierania danych diagnostycznych lub Konfiguracja edytora jest zainstalowany.
+ Będą potrzebne uprawnienia administracyjne na dowolnym komputerze, gdzie modułu zbierającego dane diagnostyczne lub konfiguracji edytora jest zainstalowany.
 
 ## <a name="example-data-adapter"></a>Przykład adaptera danych
 
 W tym przykładzie przedstawiono sposób wykonywania następujących zadań:
 
--   Stosowanie atrybutów, aby stał się klasę wykrywalny Microsoft Test Manager jako adaptera danych diagnostycznych.
+-   Zastosuj atrybuty, aby stał się klasę wykrywalny Microsoft Test Manager jako adapter danych diagnostycznych.
 
--   Stosowanie atrybutów, aby stał się klasy formantu użytkownika wykrywalny Microsoft Test Manager jako edytora do użycia w celu zmiany konfiguracji dla adaptera danych diagnostycznych.
+-   Zastosuj atrybuty, aby stał się klasy formantu użytkownika wykrywalny do programu Microsoft Test Manager jako edytor, którego można użyć do zmiany konfiguracji dla adaptera danych diagnostycznych.
 
 -   Dostęp do danych konfiguracji domyślnej.
 
--   Rejestr dla określonych zdarzeń diagnostycznych zbieranie danych.
+-   Zarejestruj się w określonych zdarzeniach zbierania danych diagnostycznych.
 
--   Dołącz plik dziennika przez wysłanie ich do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
+-   Załącz plik dziennika przez wysłanie go do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
 
 ```csharp
 // My Data Collector Class
@@ -181,9 +181,9 @@ namespace MyCompany.MyDiagnosticDataAdapters
 }
 ```
 
-## <a name="example-configuration-editor"></a>Przykład edytor konfiguracji
+## <a name="example-configuration-editor"></a>Przykład edytora konfiguracji
 
-To jest przykładowy Edytor konfiguracji dla Twojego adaptera danych diagnostycznych. Dodaj kontrolkę użytkownika do projektu i utworzyć bardzo proste formularz, który ma etykiety ("Nazwa pliku dziennika:") i pole tekstowe o nazwie "FileTextBox".
+Jest to edytor konfiguracji próbek dla adaptera danych diagnostycznych. Dodaj kontrolkę użytkownika do projektu i Utwórz bardzo prosty formularz z etykietą ("Nazwa pliku dziennika:") i pole tekstowe o nazwie "FileTextBox".
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.Common;
@@ -297,7 +297,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ## <a name="example-configuration-file"></a>Przykładowy plik konfiguracji
 
-Oto przykładowy plik konfiguracyjny dla Edytora konfiguracji modułów zbierających dane diagnostyczne.
+Oto przykładowy plik konfiguracji dla Edytora konfiguracji modułów zbierających dane diagnostyczne.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -324,23 +324,23 @@ Oto przykładowy plik konfiguracyjny dla Edytora konfiguracji modułów zbieraj�
 
 ```
 
-## <a name="compiling-the-code"></a>Kompilowanie kodu
+## <a name="compile-the-code"></a>Skompilować kod
 
-### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Aby utworzyć projekt kodu dla tej karty diagnostycznych
+### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Aby utworzyć projekt kodu dla tej karty diagnostycznej
 
-1.  Tworzenie nowego projektu biblioteki klasy o nazwie "MyDataCollector".
+1.  Utwórz nowy projekt biblioteki klas o nazwie "MyDataCollector".
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz **właściwości**. Aby wybrać folder do dodania, wybierz **ścieżek odwołania** , a następnie wybierz wielokropek (**...** ).
+2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**. Aby wybrać folder do dodania, wybierz **ścieżki odwołania** , a następnie wybierz przycisk wielokropka (**...** ).
 
      **Wybierz ścieżkę odwołania** zostanie wyświetlone okno dialogowe.
 
-3.  Wybierz następującej ścieżki katalogu instalacji w oparciu: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*. Wybierz **OK**.
+3.  Wybierz następującą ścieżkę, w oparciu o katalogu instalacji: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*. Wybierz **OK**.
 
-4.  Aby dodać folder na ścieżce odwołania, wybierz **Dodaj Folder**.
+4.  Aby dodać folder do ścieżki odniesienia, wybierz **Dodaj Folder**.
 
-     Wyświetlana jest zawartość folderu w liście ścieżek odwołania.
+     Folder jest wyświetlany na liście ścieżek odniesienia.
 
-5.  Wybierz **Zapisz wszystko** ikonę, aby zapisać ścieżek odwołania.
+5.  Wybierz **Zapisz wszystko** ikonę, aby zapisać ścieżki odwołania.
 
 6.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
@@ -348,50 +348,50 @@ Oto przykładowy plik konfiguracyjny dla Edytora konfiguracji modułów zbieraj�
 
     2.  Wybierz **Przeglądaj** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-         Ten zestaw będzie znajdować się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+         Ten zestaw zostanie znaleziony w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
     3.  Wybierz **OK**.
 
 7.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie**.
+    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie**.
 
     2.  Wybierz **Przeglądaj** i Znajdź **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-         Ten zestaw będzie znajdować się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+         Ten zestaw zostanie znaleziony w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
     3.  Wybierz **OK**.
 
-8.  Klasa karty danych diagnostycznych, który został wymieniony we wcześniejszej części tego dokumentu, skopiuj do klasy biblioteki klas. Zapisz tę klasę.
+8.  Kopiuj klasę adaptera danych diagnostycznych, która została wymieniona we wcześniejszej części tego dokumentu do klasy dla biblioteki klas. Zapisz tę klasę.
 
-9. Aby dodać kontrolkę użytkownika do projektu, kliknij prawym przyciskiem myszy projekt MyDataCollector w Eksploratorze rozwiązań, wskaż **Dodaj**, a następnie wybierz pozycję **kontrolki użytkownika**. Wybierz **dodać**.
+9. Aby dodać kontrolkę użytkownika do projektu, kliknij prawym przyciskiem myszy **MyDataCollector** projektu w **Eksploratora rozwiązań**, wskaż **Dodaj**, a następnie wybierz **kontrolki użytkownika** . Wybierz **Dodaj**.
 
-10. Przy użyciu przybornika, Dodaj etykietę do kontrolki użytkownika i zmień właściwość Text do **nazwa pliku:**.
+10. Za pomocą przybornika można dodawać etykiety do formantu użytkownika i zmienić właściwość tekst na **nazwa pliku:**.
 
-11. Przy użyciu przybornika, Dodaj pole tekstowe do kontrolki użytkownika i Zmień nazwę, aby **textBoxFileName**.
+11. Za pomocą przybornika można dodać pole tekstowe do formantu użytkownika i Zmień nazwę na **textBoxFileName**.
 
-12. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy kontrolki użytkownika, a następnie wybierz pozycję **widoku kodu.** Ta klasa formantu użytkownika należy zastąpić klasy formantu użytkownika, który był wcześniej w tym dokumencie. Zapisz tę klasę.
+12. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy formant użytkownika, a następnie wybierz **widoku kodu.** Zastąp tę klasę formantu użytkownika klasy formantu użytkownika wymienioną we wcześniejszej części tego dokumentu. Zapisz tę klasę.
 
     > [!NOTE]
-    > Domyślnie przez kontrolki użytkownika jest nazywany UserControl1. Upewnij się, że kod klasy formantu użytkownika używa nazwy formantu użytkownika.
+    > Domyślnie formant użytkownika nazywa się UserControl1. Upewnij się, że kod klasy formantu użytkownika używa nazwy Twojego formantu użytkownika.
 
-13. Można utworzyć pliku konfiguracji w **Eksploratora rozwiązań** kliknij rozwiązanie prawym przyciskiem myszy, wskaż pozycję **Dodaj**, a następnie wybierz pozycję **nowy element**. Wybierz wybrać **pliku konfiguracji aplikacji**, a następnie wybierz pozycję **Dodaj**. Spowoduje to dodanie pliku o nazwie **App.config** do rozwiązania.
+13. Do tworzenia pliku konfiguracji w **Eksploratora rozwiązań** kliknij rozwiązanie prawym przyciskiem myszy, wskaż opcję **Dodaj**, a następnie wybierz **nowy element**. Wybierz **pliku konfiguracji aplikacji**, a następnie wybierz **Dodaj**. Spowoduje to dodanie pliku o nazwie *App.config* do rozwiązania.
 
-14. Skopiuj plik XML z próbki wcześniej dostarczony do pliku XML. Zapisz plik.
+14. Skopiuj plik XML z próbki, która została dostarczona wcześniej do pliku XML. Zapisz plik.
 
-15. Skompiluj rozwiązanie, a następnie skopiuj skompilowany zestaw i `App.config` pliku do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* katalogu.
+15. Skompiluj rozwiązanie, a następnie skopiuj wbudowany zestaw i *App.config* mezzanine do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*katalogu.
 
-16. Tworzenie ustawień testów, które korzystanie z tego adaptera diagnostyki danych niestandardowych. Skonfiguruj ustawienia testu do zbierania plików, który istnieje.
+16. Utwórz ustawienia testu, które używają tego niestandardowego adaptera danych diagnostycznych. Konfigurowanie ustawień testu do zbierania pliku, który istnieje.
 
-     Jeśli korzystasz z testów z Microsoft Test Manager, można przypisać te ustawienia testu ustawień testów do planu testu, aby uruchomić testy lub za pomocą opcji Uruchom polecenie Opcje przypisywania ustawień testu i zastępowania. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbieranie diagnostycznych informacji za pomocą testu ustawień](../test/collect-diagnostic-information-using-test-settings.md).
+     Jeśli używasz testów z Microsoft Test Manager, można przypisać te ustawienia testów do planu testów przed uruchomieniem testów lub za pomocą opcji Uruchom polecenie Opcje celu przypisywania ustawień testów i zastępowania ustawień testu. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-17. Uruchom testy przy użyciu ustawień testu z Twojego adaptera danych diagnostycznych wybrane.
+17. Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
-     Określony plik danych zostanie dołączona do wyników testu podczas wykonywania testu.
+     Określony plik danych jest dołączana do wyników testu, gdy test jest wykonywany.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Porady: tworzenie edytora niestandardowego dla danych dla Twojego adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Tworzenie adaptera danych diagnostycznych zbieranie danych niestandardowych lub mają wpływ na maszynę testową](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

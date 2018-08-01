@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978164"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380866"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
 Ten artykuł przeprowadzi Cię przez tworzenie, uruchamianie, i dostosowywać serie jednostek testów za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego i programu Visual Studio **Eksploratora testów**. Rozpocznij z projektu języka C#, który jest w fazie projektowania, tworzy testy, które wykonują kod, uruchom testy i bada wyniki. Następnie można zmienić kodu projektu i ponownie uruchom testy.
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Na **pliku** menu, wybierz opcję **Dodaj** > **nowy projekt**.
 
-2. W oknie dialogowym Nowy projekt rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.
+2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.
 
 3. Z listy szablonów wybierz **projektu testu jednostkowego**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. W **BankTests** projektu, Dodaj odwołanie do **Bank** projektu.
 
-   W Eksploratorze rozwiązań wybierz **odwołania** w **BankTests** projektu, a następnie wybierz **Dodaj odwołanie** z menu kontekstowego.
+   W **Eksploratora rozwiązań**, wybierz opcję **odwołania** w **BankTests** projektu, a następnie wybierz **Dodaj odwołanie** z menu kontekstowego.
 
-6. W oknie dialogowym Reference Manager, rozwiń **rozwiązania** , a następnie sprawdź **Bank** elementu.
+6. W **Menadżer odwołań** okna dialogowego rozwiń **rozwiązania** , a następnie sprawdź **Bank** elementu.
 
 ## <a name="create-the-test-class"></a>Utwórz klasę testową
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Uruchom ponownie test
 
-W Eksploratorze testów wybierz **Uruchom wszystkie** do ponownego uruchomienia testu. Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończył się powodzeniem, a test przenoszony jest do **testy zakończone powodzeniem** grupy.
+W **Eksploratora testów**, wybierz **Uruchom wszystkie** do ponownego uruchomienia testu. Czerwony/zielony pasek zmieni kolor na zielony, aby wskazać, że test zakończył się powodzeniem, a test przenoszony jest do **testy zakończone powodzeniem** grupy.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Użyj testów jednostkowych, aby poprawić kod
 

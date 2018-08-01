@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176983"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380895"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Porady: tworzenie adaptera danych diagnostycznych
 
@@ -23,7 +23,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
  Można utworzyć adaptera danych diagnostycznych, który wpływa na maszynie, na której przeprowadzane są testy lub komputerze, który jest częścią środowiska, którego używasz do uruchamiania aplikacji poddawanych testom. Na przykład zbieranie plików na maszynie testowej, gdy testy są wykonywania lub zbieranie plików na komputerze pełniącym rolę serwera sieci web dla aplikacji.
 
- Adapter danych diagnostycznych można nadać przyjaznej nazwy, która jest wyświetlana podczas tworzenia ustawień testu za pomocą Microsoft Test Manager lub programu Visual Studio. Ustawienia testu umożliwiają definiowanie, która Rola komputera uruchomi określone karty danych diagnostycznych w środowisku, po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład może utworzyć adapter danych diagnostycznych, który zbiera niestandardowe dzienniki z serwera sieci web. Podczas tworzenia ustawień testu, możesz wybrać do uruchomienia tego adaptera danych diagnostycznych na maszynie lub maszynach, które wykonują to rola serwera sieci web i możesz zmodyfikować konfigurację dla ustawień testu do zbierania tylko ostatnich trzech dzienników, które zostały utworzone. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie Diagnostic Information Using Test Settings](../test/collect-diagnostic-information-using-test-settings.md).
+ Adapter danych diagnostycznych można nadać przyjaznej nazwy, która jest wyświetlana podczas tworzenia ustawień testu za pomocą Microsoft Test Manager lub programu Visual Studio. Ustawienia testu umożliwiają definiowanie, która Rola komputera uruchomi określone karty danych diagnostycznych w środowisku, po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład może utworzyć adapter danych diagnostycznych, który zbiera niestandardowe dzienniki z serwera sieci web. Podczas tworzenia ustawień testu, możesz wybrać do uruchomienia tego adaptera danych diagnostycznych na maszynie lub maszynach, które wykonują to rola serwera sieci web i możesz zmodyfikować konfigurację dla ustawień testu do zbierania tylko ostatnich trzech dzienników, które zostały utworzone. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
  Zdarzenia są wywoływane po uruchomieniu testów, tak aby adaptera danych diagnostycznych mogą wykonywać zadania w tym punkcie w teście.
 
@@ -48,9 +48,9 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
  Aby uzyskać pełny przykład projektu adaptera danych diagnostycznych, w tym z edytorem konfiguracji niestandardowych, zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
-##  <a name="CreateAdapter"></a> Tworzenie i instalowanie adaptera danych diagnostycznych
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i instalowanie adaptera danych diagnostycznych
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Aby utworzyć i zainstalować adapter danych diagnostycznych
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Aby utworzyć i zainstalować adapter danych diagnostycznych
 
 1.  Utwórz nową bibliotekę klas.
 
@@ -66,7 +66,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 2.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** polecenia.
+    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** polecenia.
 
     2.  Wybierz **.NET** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -74,7 +74,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 3.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie** polecenia.
+    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie** polecenia.
 
     2.  Choose **/.NET**, locate **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -222,9 +222,9 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
      Te pliki są dołączone do wyników testu. Jeśli tworzysz usterkę z tych wyników testów lub jeśli używasz [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], pliki są również dołączone do usterki.
 
-     Jeśli chcesz użyć własnego edytora do zbierania danych użycia w ustawieniach testu, zobacz [porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych Your](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Jeśli chcesz użyć własnego edytora do zbierania danych użycia w ustawieniach testu, zobacz [porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-11. Aby zebrać plik dziennika, gdy test zakończy prace w oparciu o to, jak użytkownik skonfigurował ustawienia testu, musisz utworzyć `App.config` plik i dodać go do rozwiązania. Ten plik ma następujący format i musi zawierać identyfikator URI dla adaptera danych diagnostycznych je zidentyfikować. Podstaw rzeczywiste wartości "firma/nazwa produktu/wersja".
+11. Aby zebrać plik dziennika, gdy test zakończy prace w oparciu o to, jak użytkownik skonfigurował ustawienia testu, musisz utworzyć *App.config* plik i dodać go do rozwiązania. Ten plik ma następujący format i musi zawierać identyfikator URI dla adaptera danych diagnostycznych je zidentyfikować. Podstaw rzeczywiste wartości "firma/nazwa produktu/wersja".
 
     > [!NOTE]
     > Jeśli nie ma potrzeby konfigurowania żadnych informacji dla adaptera danych diagnostycznych, nie trzeba utworzyć pliku konfiguracji.
@@ -255,7 +255,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
     > [!NOTE]
     > Element konfiguracji domyślnej może zawierać dowolne dane, która jest wymagana. Jeśli użytkownik nie skonfiguruje adaptera danych diagnostycznych w ustawieniach testu, a następnie domyślne dane zostaną przekazane do adaptera danych diagnostycznych, gdy jest wykonywany. Ponieważ kod XML, możesz dodać do `<DefaultConfigurations>` sekcji nie może być częścią zadeklarowanego schematu, można zignorować wszelkie błędy XML, generuje ona.
     >
-    > Inne przykłady plików konfiguracji w następującej ścieżce bazującej na katalogu instalacji: **10.0\Common7\IDE\PrivateAssemblies\DataCollectors Program Files\Microsoft Visual Studio**.
+    > Inne przykłady plików konfiguracji w następującej ścieżce bazującej na katalogu instalacji: *10.0\Common7\IDE\PrivateAssemblies\DataCollectors Program Files\Microsoft Visual Studio*.
 
      Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
@@ -269,7 +269,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 15. Aby zaznaczyć kartę danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowy z Microsoft Test Manager lub programu Visual Studio. Adapter jest wyświetlany na **dane i Diagnostyka** kartę ustawień testu z przyjazną nazwą, która została przypisana do tej klasy.
 
-16. Ustaw te ustawienia testów, aby być aktywne. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie Diagnostic Information Using Test Settings](../test/collect-diagnostic-information-using-test-settings.md).
+16. Ustaw te ustawienia testów, aby być aktywne. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
@@ -287,4 +287,4 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
 - [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Porady: tworzenie edytora niestandardowego dla danych dla Twojego adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

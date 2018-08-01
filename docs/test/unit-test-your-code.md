@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179219"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380368"
 ---
 # <a name="unit-test-your-code"></a>Kod testu jednostkowego
 
@@ -46,10 +46,9 @@ Należy skorzystać z następujących tematów, aby lepiej zrozumieć i z łatwo
 |-----------|-----------------------|
 |**Przewodniki Szybki Start i przewodniki:** Użyj poniższych tematów, aby dowiedzieć się, testowanie jednostek w programie Visual Studio z przykładów kodu.|-   [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Szybki Start: Test-driven development za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
 |**Testowanie jednostek za pomocą narzędzia Eksplorator testów:** Dowiedz się, jak Eksplorator testów może pomóc w tworzeniu bardziej wydajnych i efektywnych testów jednostkowych.|-   [O teście jednostkowym](../test/unit-test-basics.md)<br />-   [Tworzenie projektu testu jednostkowego](../test/create-a-unit-test-project.md)<br />-   [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)|
-|**Testy jednostkowe kodu zarządzanego:**|-   [Pisanie testów jednostkowych dla .NET Framework za pomocą Frameworka testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
 |**Testy jednostkowe kodu C++**|-   [Pisanie testów jednostkowych dla języka C/C++ za pomocą Frameworka testów jednostkowych firmy Microsoft dla języka C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
-|**Izolowanie testów jednostkowych**|-   [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Użycie pokrycia kodu do identyfikacji, jaka część kodu projektu jest testowana:** więcej informacji na temat funkcjonalności pokrycia kodu w programie Visual Studio, narzędzia do testowania.|-   [Korzystanie z pokrycia kodu, aby określić, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Izolowanie testów jednostkowych**|-   [Izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Użycie pokrycia kodu do identyfikacji, jaka część kodu projektu jest testowana:** więcej informacji na temat funkcjonalności pokrycia kodu w programie Visual Studio, narzędzia do testowania.|-   [Użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Wykonywanie analizy wytrzymałościowej i wydajnościowej przez użycie testów obciążeniowych:** można utworzyć test obciążenia i dodać testy jednostkowe do niej, aby pomóc wyizolować problemy wytrzymałościowe i wydajnościowe w aplikacji.|-   [Ładowanie testów (usługi VSTS i TFS)](/vsts/load-test/)|
 |**Ustaw bramki jakości:** można tworzyć bramy jakości, aby wymusić Uruchamianie testów przed zaewidencjonowaniem kodu, aby zapewnić jakość kodu.|-   [Zasady ewidencjonowania (VSTS)](/vsts/tfvc/add-check-policies)|
 |**Ustawianie opcji testowania:** na przykład określić, gdzie są przechowywane wyniki testu.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|

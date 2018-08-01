@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175307"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381097"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -140,7 +140,7 @@ Poniżej przedstawiono listę funkcji edytora i produktywności, aby wprowadzić
 
 | Funkcja | Szczegóły | Jak włączyć |
 |-|-|-|
-| Zlokalizuj plik w Eksploratorze rozwiązań | Wyróżnia aktywnego pliku w Eksploratorze rozwiązań | **Narzędzia** > **opcje** > **projekty i rozwiązania** > **Śledź aktywny element w Eksploratorze rozwiązań** |
+| Zlokalizuj plik w Eksploratorze rozwiązań | Wyróżnia aktywnego pliku w **Eksploratora rozwiązań** | **Narzędzia** > **opcje** > **projekty i rozwiązania** > **Śledź aktywny element w Eksploratorze rozwiązań** |
 | Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet | Pokazuje ikona żarówki z poprawki kodu, aby zainstalować pakiet NuGet dla typu bez odwołań | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Sugeruj dyrektywy Using dla typów w zestawach referencyjnych** i **Sugeruj dyrektywy Using dla typów w pakietach NuGet** |
 | Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **lista błędów** | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włączanie pełnej analizy rozwiązania** |
 | Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |

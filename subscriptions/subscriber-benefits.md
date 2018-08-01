@@ -1,48 +1,48 @@
 ---
-title: Subskrypcji programu Visual Studio — korzyści dla subskrybentów
+title: Subskrypcje programu Visual Studio — korzyści dla subskrybenta
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
 ms.topic: Get-Started-Article
-description: Więcej informacji na temat korzyści zawarte w ramach subskrypcji programu Visual Studio
+description: Dowiedz się więcej o korzyściach zawarte w Twojej subskrypcji programu Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283266"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381549"
 ---
-# <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w ramach subskrypcji programu Visual Studio
+# <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w Twojej subskrypcji programu Visual Studio
 
-Subskrypcje w Visual Studio oferują najbardziej kompleksowy zestaw zasoby umożliwiające tworzenie, wdrażanie i zarządzanie niezawodnych aplikacji na platformach preferowanych i urządzeń, takich jak Windows, iOS, Android i Linux.  Szczególne korzyści różnią się zależnie od typu subskrypcji, do których masz.  Zapewnienie maksymalna wartość dla subskrybentów, korzyści zapewniane zmieniać okresowo jak dostosować możemy skupić się na najnowszej i najbardziej przydatne technologii, materiałów szkoleniowych i korzyści partnerskich.
+Subskrypcje programu Visual Studio oferują najbardziej wszechstronny zestaw zasobów, które umożliwiają tworzenie, wdrażanie i zarządzanie nimi wspaniałych aplikacji na Twoje ulubione platformy i urządzenia, w tym Windows, iOS, Android i Linux.  Określone korzyści będą się różnić w zależności od rodzaju posiadanej subskrypcji.  Aby zapewnić maksymalną wartość dla subskrybentów, korzyści zapewniane są okresowo zmieniane miarę wprowadzania dostosowań skoncentrować się na technologiach najnowsze i najbardziej przydatne, materiałów szkoleniowych i korzyści dostępnych dla partnerów.
 
 Korzyści są podzielone na trzy kategorie:
 
 ## <a name="tools"></a>Narzędzia
-Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym najważniejszych korzyści, takich jak [programu Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), i [Azure](vs-azure.md) .  W zależności od poziomu subskrypcji systemu Windows i Office 365 Developer kont, Centrum aplikacji programu Visual Studio i korzyści z partnerami, takie jak WhiteSource Bolt i ModernRequirements będzie Zobacz też.
+Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym sztandarowe korzyści, takich jak [środowiska IDE programu Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), i [Azure](vs-azure.md) .  W zależności od poziomu subskrypcji również zobaczysz Windows i konta dewelopera Office 365, Visual Studio App Center i korzyści oferowanych przez partnerów, takich jak WhiteSource Bolt i ModernRequirements.
 
 ## <a name="professional-development"></a>Profesjonalne programowanie
-Aby pomóc w przypadku ciągłe ulepszyć Twoje skillset i nadąża z najnowszych technologii, firma Microsoft zapewnić dostęp do niektórych najlepiej dostępne szkolenia online z liderów branży. Przykłady dużą dostępnej zawartości:
-- Wgląd w aplikację platformy Azure i rozwiązania Cosmos Azure DB przez Opsgility
-- Obsługujący wiele platform przenośnych Developer przez Xamarin University
-- Microsoft Azure dla deweloperów platformy .net i inne doskonałe zawartości z Pluralsight
-- Dane analizy dla deweloperów z DataCamp
-- Projektowanie rozwiązania bazy danych programu SQL Server z wirtualna Akademia firmy Microsoft
-- LinkedIn Learning Przełącz dostęp osoby, informacje na temat technologii i umiejętności, które należy do programu excel.
+Ułatwiają ciągłe zwiększyć swoje umiejętności wykorzystać i na bieżąco najnowszych technologii, oferujemy dostęp do niektórych najbardziej dostępnego szkolenia online od liderów branży. Przykłady doskonałe dostępnej zawartości:
+- Usługa Azure App Insights i Azure Cosmos DB za pomocą Opsgility
+- Dla deweloperów aplikacji mobilnych dla wielu platform w witrynie Xamarin University
+- Platforma Microsoft Azure dla deweloperów platformy .net i innych wspaniałych treści organizowanego przez firmę Pluralsight
+- Analiza danych dla deweloperów od DataCamp
+- Projektowanie rozwiązań z zakresu bazy danych programu SQL Server w witrynie Microsoft Virtual Academy
+- LinkedIn Learning przeniesienie dostęp do osób, szczegółowych informacji i umiejętności, których potrzebujesz do programu excel.
 
 ## <a name="support"></a>Obsługa
-Jako subskrybent Visual Studio masz również dostęp do różnych rodzajów pomocy technicznej w przypadku, gdy masz pytania lub potrzebujesz pomocy technicznej.
-- Płatnych subskrypcji obejmować dostęp do pomocy technicznej professional zdarzeń, aby rozwiązać problemy z narzędzia i aplikacje działające w środowiskach: tworzenie i testowanie.
-- Potrzebujesz informacji technicznych dokumentacji lub produktu?  Uzyskaj pomoc natychmiastowego usługi rozmów Conceirge.
-- Uzyskaj pomoc od społeczności na forach priorytetów.  Jeśli członkami społeczności nie odpowie na pytanie, ekspertów firmy Microsoft zapewni odpowiedzi.
-- Masz pytania dotyczące usługi Azure?  Zapoznaj się z usług Azure społeczności i Advisory rozmowę Azure.
+Jako subskrybent programu Visual Studio również masz dostęp do różnych rodzajów pomocy technicznej w przypadku, gdy masz pytania lub potrzebujesz pomocy technicznej.
+- Płatne subskrypcje oferują dostęp do zdarzeń profesjonalnej pomocy technicznej, aby rozwiązać problemy z narzędziami i aplikacji działających w środowisku deweloperskim/testowym.
+- Potrzebujesz informacji technicznych dokumentacji bądź w produktach?  Uzyskaj pomoc natychmiastowego usługi Concierge Chat.
+- Uzyskaj pomoc od członków społeczności na priorytetowe wsparcie na forach.  Jeśli członkowie społeczności nie może udzielić odpowiedzi na pytanie, ekspertów firmy Microsoft zapewni odpowiedzi.
+- Masz pytania dotyczące platformy Azure?  Zapoznaj się z usługami społeczności platformy Azure i porozmawiaj doradztwa technicznego dotyczącego usługi Azure.
 
 > [!NOTE]
-> Subskrypcja może również pochodzić z dostępem do plików do pobrania oprogramowania.  Aby uzyskać więcej informacji o pobrań, które pliki do pobrania są uwzględniane w ramach subskrypcji, odwiedź stronę [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+> Twoja subskrypcja może również pochodzić z dostępem do plików do pobrania oprogramowania.  Aby uzyskać więcej informacji o plikach do pobrania, w tym, jakie pliki do pobrania są uwzględniane w ramach subskrypcji, odwiedź stronę [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
-Aby uzyskać więcej informacji o zaletach uwzględnione w ramach subskrypcji, zapoznaj się z [programu Visual Studio, na stronie dotyczącej cen](https://visualstudio.microsoft.com/vs/pricing/).  Informacje o określonych korzyści, łącznie z ich funkcji, subskrypcje, które są dostępne w **przy użyciu korzyści dla subskrybentów** temat poniżej.
+Aby uzyskać więcej informacji na temat korzyści zawarte w Twojej subskrypcji, zapoznaj się [programu Visual Studio stronę z cennikiem](https://visualstudio.microsoft.com/vs/pricing/).  Informacje o określone korzyści, w tym subskrypcje, które są wyposażone w nich są dostępne w **za pomocą korzyści dla subskrybenta** temat poniżej.
 

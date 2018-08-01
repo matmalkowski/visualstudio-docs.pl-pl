@@ -9,80 +9,80 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845759"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382093"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów
 
-Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działanie wielu przyrostowe kroki tworzenia kodu. Istnieje kilka struktur, co umożliwia pisanie testów jednostkowych, w tym również opracowane przez strony trzecie. Niektóre platform testów są przeznaczone do testowania w różnych językach lub platform. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w żadnym z tych platform. Karty są dostępne dla struktur najbardziej często używane, a może zapisywać karty dla innych platform.
+Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.
 
- Eksplorator testów zastępuje windows testu jednostki w starszej wersji programu Visual Studio. Korzyści obejmują:
+ Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji programu Visual Studio. Jego zalety obejmują:
 
--   Uruchom .NET niezarządzanych, bazy danych i inne rodzaje testów za pomocą jednego interfejsu.
+-   Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.
 
--   Użyj jednostki test framework wybranych przez użytkownika, takie jak NUnit lub MSTest struktury.
+-   Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.
 
--   Zobacz w jednym oknie wszystkie informacje, które są potrzebne.
+-   Zobacz w jednym oknie użytkownikowi potrzebnych informacji.
 
-## <a name="using-test-explorer"></a>Za pomocą narzędzia Eksplorator testów
+## <a name="use-test-explorer"></a>Korzystanie z Eksploratora testów
  ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta-.png)
 
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Do uruchomienia testów jednostkowych za pomocą narzędzia Eksplorator testów
+### <a name="to-run-unit-tests-by-using-test-explorer"></a>Aby uruchomić testy jednostkowe za pomocą Eksploratora testów
 
-1.  Tworzenie testów jednostkowych, korzystających z platform testów wybranych przez użytkownika.
+1.  Tworzenie testów jednostkowych, które używają wybranych środowisk testowych.
 
-     Na przykład aby utworzyć testu używający MSTest Framework:
+     Na przykład aby utworzyć test który używa środowiska Mstest:
 
-    1.  Tworzenie projektu testu.
+    1.  Utwórz projekt testu.
 
-         W **nowy projekt** okna dialogowego rozwiń **Visual Basic**, **Visual C#**, lub **Visual C++**, a następnie wybierz pozycję **testu**.
+         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** > **Visual C#** lub **Visual C++**, a następnie wybierz polecenie **Testu**.
 
-         Wybierz **jednostkowy projekt testowy**.
+         Wybierz **projektu testu jednostkowego**.
 
-    2.  Zapis każdego testu jednostkowego jako metody. Prefiks każdej metody z `[TestMethod]` atrybutu.
+    2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.
 
-2.  Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+2.  Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
-3.  Na pasku menu wybierz **testu**, **Uruchom testy jednostkowe**, **wszystkie testy**.
+3.  Na pasku menu wybierz **testu** > **uruchomić testy jednostkowe** > **wszystkie testy**.
 
-     Buduje rozwiązanie, a następnie uruchom testy.
+     Rozwiązanie zostanie skompilowane i uruchomić testy.
 
      Eksplorator testów otwiera i wyświetla podsumowanie wyników.
 
- **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w każdej kategorii.
+ **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.
 
- **Aby wyświetlić szczegóły wyniku testu:** wybierz testu w Eksploratorze testów, aby wyświetlić szczegółowe informacje, takie jak komunikaty wyjątku w okienku szczegółów.
+ **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.
 
- **Przejdź do kodu testu:** kliknij dwukrotnie testu w Eksploratorze testów, lub wybierz **Otwórz Test** menu skrótów.
+ **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.
 
- **Aby debugować testu:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz pozycję **Debuguj zaznaczone testy**.
+ **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.
 
 > [!IMPORTANT]
-> Wyniki, które są wyświetlane są dla ostatniego uruchomienia. Na pasku kolorowe wyniki wyświetlany tylko wyniki uruchomionych testów. Na przykład uruchomić wiele testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom tylko testy pomyślne, następnie na pasku wyników wyświetli wszystkie zielony.
+> Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.
 
 
 > [!NOTE]
-> Jeśli pojawi się żaden test, upewnij się, który zainstalowany adapter w celu nawiązania Eksploratora testów struktury testowej, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+> Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough"></a> Wskazówki: Korzystanie z metody tworzenia testów jednostkowych
- W tym przewodniku pokazano, jak opracowanie metodę przetestowany w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Można łatwo dostosować go dla innych języków i korzystania z innych platform testu, takie jak NUnit łącze. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Przewodnik: Używanie testów jednostkowych do opracowania metody
+ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
-#### <a name="creating-the-test-and-method"></a>Tworzenie testu i — metoda
+### <a name="create-the-test-and-method"></a>Tworzenie testu i metody
 
-1.  Utwórz projekt Visual biblioteki klas C#. Ten projekt będzie zawierać kod, który chcesz dostarczyć. W tym przykładzie o nazwie `MyMath`.
+1.  Utwórz projekt Visual biblioteki klas C#. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.
 
-2.  Tworzenie projektu testu.
+2.  Utwórz projekt testu.
 
-    -   W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **jednostkowy projekt testowy**.
+    -   W **nowy projekt** okno dialogowe, wybierz **Visual C#** > **testu** , a następnie wybierz **projektu testu jednostkowego**.
 
-         ![Nowe projekty kodu oraz testów](../test/media/unittestexplorerwalk1.png)
+         ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png)
 
-3.  Napisanie metody podstawowy test. Sprawdź wynik uzyskać określone dane wejściowe:
+3.  Napisz podstawową metodę testową. Sprawdź wynik uzyskany dla określonych danych wejściowych:
 
     ```csharp
 
@@ -102,37 +102,37 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
     }
     ```
 
-4.  Generuj metoda testu.
+4.  Wygeneruj metodę z testu.
 
-    1.  Umieść kursor na `Rooter`, a następnie w menu skrótów wybierz **Generuj**, **nowy typ**.
+    1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj** > **nowy typ**.
 
-    2.  W **wygenerować nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
+    2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
 
-    3.  Umieść kursor na `SquareRoot`, a następnie w menu skrótów wybierz **Generuj**, **szkieletu metody**.
+    3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj** > **szkieletu metody**.
 
-5.  Uruchamianie testu jednostkowego.
+5.  Uruchom test jednostkowy.
 
-    1.  Na **testu** menu, wybierz **Uruchom testy jednostkowe**, **wszystkie testy**.
+    1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe** > **wszystkie testy**.
 
-         Rozwiązanie kompiluje i uruchamia.
+         Rozwiązanie zostanie skompilowane i działa.
 
          Eksplorator testów otwiera i wyświetla wyniki.
 
-         Uruchomienie testu jest wyświetlany w obszarze **testy nie powiodło się**.
+         Test pojawi się w obszarze **testy zakończone niepomyślnie**.
 
 6.  Wybierz nazwę testu.
 
-     Szczegóły testu są wyświetlane w dolnej części Eksploratora testów.
+     Szczegóły testu zostaną wyświetlone w dolnej części Eksploratora testów.
 
-7.  Wybierz elementy podrzędne **ślad stosu** aby zobaczyć, których nie powiodło się uruchomienie testu.
+7.  Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.
 
- ![Przetestuj Eksploratora testów jednostek przedstawiający nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png)
+ ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png)
 
- W tym momencie utworzono test i szkieletu, który należy zmodyfikować tak, aby test zakończył się pomyślnie.
+ Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.
 
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie wprowadź wszystkie testy przekazywania
+#### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie należy wprowadzić wszystkie testy.
 
-1.  W `MyMath\Rooter.cs`, poprawić kod `SquareRoot`:
+1.  W *MyMath\Rooter.cs*, Popraw kod metody `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -141,22 +141,22 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
      }
     ```
 
-2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
-     Kod kompiluje i uruchamia testu.
+     Kod zostanie skompilowany, a test uruchomiony.
 
-     Test zakończył się pomyślnie.
+     Test zakończy się pomyślnie.
 
-     ![Jednostka Test Explorer przedstawiający testu przekazywanie.](../test/media/unittestexplorerwalkthrough3.png)
+     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym.](../test/media/unittestexplorerwalkthrough3.png)
 
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodawanie testów, aby rozszerzyć zakres danych wejściowych
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych
 
-1.  Aby ulepszyć Twoje pewność, że w kodzie działa we wszystkich przypadkach, Dodaj testy, które spróbuj większej liczby argumentów.
+1.  Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.
 
     > [!TIP]
-    > Uniknąć, zmieniając istniejące testy, które przekazują. Zamiast tego należy dodać nowe testy. Zmień istniejące testy, tylko w przypadku zmiany wymagań użytkownika. Te zasady ułatwiają upewnij się, że nie utracić istniejące funkcje podczas pracy w celu rozszerzenia kodu.
+    > Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Te zasady ułatwiają upewnij się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.
 
-     W klasie testu Dodaj następujący test, który próbuje zakres wartości wejściowych:
+     W klasie testów Dodaj następujący test, który sprawdzi zakres wartości wejściowych:
 
     ```csharp
     [TestMethod]
@@ -182,13 +182,13 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
     }
     ```
 
-2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
-     Nowy test zakończy się niepowodzeniem, mimo że nadal przekazuje pierwszego testu.
+     Nowy test kończy się niepowodzeniem, chociaż nadal przechodzi pierwszy test.
 
-     Aby znaleźć punktu awarii, wybierz testu niepowodzenie, a następnie w dolnej części Eksploratora testów, wybierz pierwszy element z **ślad stosu**.
+     Aby znaleźć punkt awarii, zaznacz test niepowodzeniem, a następnie w dolnej części Eksploratora testów wybierz górny element w sekcji **ślad stosu**.
 
-3.  Sprawdź, czy metoda w ramach testu, aby zobaczyć, co może być nieprawidłowy. W `MyMath.Rooter` klasy, ponownego pisania kodu:
+3.  Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:
 
     ```csharp
     public double SquareRoot(double input)
@@ -204,13 +204,13 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
     }
     ```
 
-4.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
+4.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
-     Teraz Przekaż zarówno testy.
+     Teraz kod przechodzi oba testy.
 
-#### <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów dla wyjątku
+#### <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów wyjątkowych przypadków
 
-1.  Dodaj test ujemna dane wejściowe:
+1.  Dodaj test ujemnych danych wejściowych:
 
     ```csharp
     [TestMethod]
@@ -229,15 +229,15 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
      }
     ```
 
-2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
-     Metoda w pętli do testu i należy anulować ręcznie.
+     Testowana metoda zapętla i musi zostać anulowana ręcznie.
 
 3.  Wybierz **anulować**.
 
      Test zatrzyma się po 10 sekundach.
 
-4.  Usuń kod metody:
+4.  Napraw kod metody:
 
     ```csharp
 
@@ -250,18 +250,18 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
     ...
     ```
 
-5.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
+5.  W Eksploratorze testów wybierz **Uruchom wszystkie**.
 
-     Wszystkie testy zostały zaliczone pomyślnie.
+     Kod przechodzi wszystkie testy.
 
-#### <a name="refactor-without-changing-tests"></a>Refaktoryzuj bez zmiany testów
+#### <a name="refactor-without-changing-tests"></a>Refaktoryzacja bez zmieniania testów
 
-1.  Uprościć kod, ale nie należy zmieniać testy.
+1.  Uprość kod, ale nie zmieniaj testów.
 
     > [!TIP]
-    > A *refaktoryzacji* zmiana jest przeznaczona na powoduje, że kod lepiej lub aby wprowadzić kod łatwiejsze do zrozumienia. Nie jest on przeznaczony do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.
+    > A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.
     >
-    > Firma Microsoft zaleca, wykonaj kroki refaktoryzacji oddzielnie z kroków, które rozszerzają funkcje. Utrzymywanie testy bez zmian daje pewność, że użytkownik nie przypadkowo wprowadziły usterki podczas refaktoryzacji.
+    > Firma Microsoft zaleca, aby wykonać kroki refaktoryzacji oddzielnie od kroków, które rozszerzają funkcjonalność. Utrzymywanie testów w niezmienionej postaci daje pewność, że możesz mieć nie zostaną przypadkowo wprowadzone usterki podczas refaktoryzacji.
 
     ```csharp
     public class Rooter
@@ -287,6 +287,6 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
 
 2.  Wybierz **uruchomić wszystkie**.
 
-     Nadal przejść pomyślnie wszystkie testy.
+     Kod nadal przechodzi wszystkie testy.
 
-     ![Eksplorator testów jednostek pokazujący 3 testy przekazany.](../test/media/unittestexplorerwalkthrough4.png)
+     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie.](../test/media/unittestexplorerwalkthrough4.png)

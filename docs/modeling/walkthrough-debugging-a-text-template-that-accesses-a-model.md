@@ -9,54 +9,54 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 560849eaeefc8efd8337cbc98ad3de91e4d15fd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968123"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382542"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Wskazówki: debugowanie szablonu tekstowego uzyskującego dostęp do modelu
-Podczas modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka specyficznego dla domeny mogą wystąpić błędy, gdy aparat przekształca szablonu do kodu źródłowego lub kompiluje wygenerowanego kodu. Poniższe wskazówki przedstawiono niektóre czynności, które można wykonywać debugowanie szablonu tekstowego.
+W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka dotyczącego określonej domeny mogą wystąpić błędy, gdy aparat przekształcenia szablonu do kodu źródłowego lub kompiluje wygenerowanego kodu. Następujące Instruktaż pokazuje niektóre rzeczy, które można zrobić, aby debugowanie szablonu tekstowego.
 
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji o debugowaniu szablonów tekstowych, patrz [wskazówki: debugowanie szablonu tekstowego](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+>  Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, patrz [wskazówki: debugowanie szablonu tekstowego](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka specyficznego dla domeny
- Ta procedura służy do tworzenia rozwiązania języka specyficznego dla domeny, które ma następującą charakterystykę:
+## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka dotyczącego określonej domeny
+ Ta procedura służy do tworzenia rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:
 
 -   Nazwa: DebuggingTestLanguage
 
--   Szablon rozwiązania: minimalnego języka
+-   Szablon rozwiązania: minimalne języka
 
 -   Rozszerzenie pliku: .ddd
 
 -   Nazwa firmy: Fabrikam
 
- Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka specyficznego dla domeny, zobacz [porady: tworzenie rozwiązania języka specyficznego dla domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-## <a name="creating-a-text-template"></a>Tworzenie szablonu tekstowego
- Dodawanie szablonu tekstowego do rozwiązania.
+## <a name="creating-a-text-template"></a>Tworzenie szablonów tekstowych
+ Dodaj szablon tekstowy do rozwiązania.
 
-#### <a name="to-create-a-text-template"></a>Aby utworzyć szablonu tekstowego
+#### <a name="to-create-a-text-template"></a>Aby utworzyć szablon tekstowy
 
-1.  Skompiluj rozwiązanie i uruchamianie jej w debugerze. (Na **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**, a następnie na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.) Nowe wystąpienie programu Visual Studio otworzy debugowania projektu.
+1.  Skompiluj rozwiązanie, a następnie uruchom go w debugerze. (Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**, a następnie na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.) Nowe wystąpienie programu Visual Studio otwiera projekt debugowania.
 
 2.  Dodaj plik tekstowy o nazwie `DebugTest.tt` do debugowania projektu.
 
-3.  Upewnij się, że **narzędzie niestandardowe** ma ustawioną właściwość DebugTest.tt `TextTemplatingFileGenerator`.
+3.  Upewnij się, że **narzędzie niestandardowe** właściwości DebugTest.tt ustawiono `TextTemplatingFileGenerator`.
 
-## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugowanie dyrektywy, które uzyskują dostęp do modelu z szablonu tekstowego
- Przed uzyskaniem dostępu modelu z instrukcji i wyrażenia w szablonu tekstowego, najpierw musisz wywołać wygenerowanego procesora dyrektywy. Wywoływanie wygenerowanego procesora dyrektywy udostępnia klasy modelu tekstu kod szablonu jako właściwości. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do modeli z szablonów tekstowych](../modeling/accessing-models-from-text-templates.md).
+## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugowanie dyrektywy uzyskujących dostęp do modelu z szablonu tekstowego
+ Aby korzystać z modelu, z instrukcji i wyrażeń w szablonie tekstu, najpierw musisz wywołać generowanym procesorem dyrektywy. Wywoływanie generowanym procesorem dyrektywy udostępnia klasy modelu kodu szablonu tekstu jako właściwości. Aby uzyskać więcej informacji, zobacz [uzyskiwania dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md).
 
- W poniższych procedurach będzie debugowania nieprawidłową nazwę dyrektywy i nazwy nieprawidłowe właściwości.
+ W poniższych procedurach będziesz debugował nieprawidłową nazwą dyrektywy i nazwy nieprawidłowe właściwości.
 
-#### <a name="to-debug-an-incorrect-directive-name"></a>Aby debugować nieprawidłową nazwę dyrektywy
+#### <a name="to-debug-an-incorrect-directive-name"></a>Aby debugować z nieprawidłową nazwą dyrektywy
 
 1.  Zastąp kod w DebugTest.tt następującym kodem:
 
     > [!NOTE]
-    >  Ten kod zawiera błąd. Błąd udostępniono Aby debugować go.
+    >  Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -91,15 +91,15 @@ Podczas modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka sp
 
 2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy DebugTest.tt, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.
 
-     **Listy błędów** okno wyświetla ten błąd:
+     **Lista błędów** okno wyświetla ten błąd:
 
      **Procesor o nazwie "DebuggingTestLanguageDirectiveProcessor" nie obsługuje dyrektywy o nazwie "modelRoot". Transformacja nie zostanie uruchomiona.**
 
-     W takim przypadku wywołania dyrektywy zawiera nieprawidłową nazwę dyrektywy. Określono `modelRoot` jako nazwy dyrektywy, ale podano poprawną nazwę dyrektywy `DebuggingTestLanguage`.
+     W takim przypadku wywołania dyrektywy zawiera nieprawidłową nazwę dyrektywy. Określono `modelRoot` jako nazwa dyrektywy, ale poprawna nazwa dyrektywy `DebuggingTestLanguage`.
 
-3.  Kliknij dwukrotnie ten błąd w **listy błędów** okna, aby przejść do kodu.
+3.  Kliknij dwukrotnie błąd w **lista błędów** okna, aby przejść do kodu.
 
-4.  Aby poprawić kod, należy zmienić nazwę dyrektywy do `DebuggingTestLanguage`.
+4.  Aby poprawić ten kod, Zmień nazwę dyrektywy do `DebuggingTestLanguage`.
 
      Zmiana zostanie wyróżniona.
 
@@ -113,14 +113,14 @@ Podczas modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka sp
 
 5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy DebugTest.tt, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.
 
-     Teraz system transformacji szablonu tekstowego i generuje odpowiedniego pliku wyjściowego. Wszelkie błędy nie będą widoczne **listy błędów** okna.
+     Teraz system przekształcenia szablonu tekstu i generuje odpowiadający plik danych wyjściowych. Nie zobaczysz żadnych błędów w **lista błędów** okna.
 
-#### <a name="to-debug-an-incorrect-property-name"></a>Nazwa właściwości niepoprawne debugowania
+#### <a name="to-debug-an-incorrect-property-name"></a>Aby debugować niepoprawna właściwość nazwy
 
 1.  Zastąp kod w DebugTest.tt następującym kodem:
 
     > [!NOTE]
-    >  Ten kod zawiera błąd. Błąd udostępniono Aby debugować go.
+    >  Ten kod zawiera błąd. Błąd są wprowadza w celu jej debugowania.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -155,27 +155,27 @@ Podczas modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka sp
 
 2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy DebugTest.tt, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.
 
-     **Listy błędów** okno zostanie wyświetlony i jeden z tych błędów:
+     **Lista błędów** oknie zostanie wyświetlony i jeden z następujących błędów:
 
      (C#)
 
-     **Kompilowanie przekształcenia: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**
+     **Kompilowanie transformacji: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**
 
      (Visual Basic)
 
-     **Kompilowanie przekształcenia: "ExampleModel" nie jest elementem członkowskim "Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation ".**
+     **Kompilowanie transformacji: "ExampleModel" nie jest członkiem "Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation ".**
 
-     W takim przypadku kod szablonu tekst zawiera nazwę nieprawidłowe właściwości. Określono `ExampleModel` jako nazwa właściwości, ale właściwość poprawna nazwa jest `LibraryModel`. Można znaleźć nazwy właściwości poprawne w zawiera parametr, jak pokazano w poniższym kodzie:
+     W takim wypadku kod szablonu tekstu zawiera nazwę nieprawidłowe właściwości. Określono `ExampleModel` jako nazwa właściwości, ale odpowiedniej właściwości name jest `LibraryModel`. Możesz znaleźć nazwę odpowiedniej właściwości w zawiera parametr, jak pokazano w poniższym kodzie:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
     ```
 
-3.  Kliknij dwukrotnie ten błąd w oknie Lista błędów, aby przejść do kodu.
+3.  Klikaj dwukrotnie poszczególne błędy w oknie Lista błędów, aby przejść do kodu.
 
-4.  Aby poprawić kod, Zmień nazwę właściwości, aby `LibraryModel` w kodzie szablonu tekstu.
+4.  Aby poprawić ten kod, Zmień nazwę właściwości, aby `LibraryModel` kodu szablonu tekstu.
 
-     Zmiany zostały wyróżnione.
+     Zmiany są wyróżnione.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -210,4 +210,4 @@ Podczas modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka sp
 
 5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy DebugTest.tt, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.
 
-     Teraz system transformacji szablonu tekstowego i generuje odpowiedniego pliku wyjściowego. Wszelkie błędy nie będą widoczne **listy błędów** okna.
+     Teraz system przekształcenia szablonu tekstu i generuje odpowiadający plik danych wyjściowych. Nie zobaczysz żadnych błędów w **lista błędów** okna.

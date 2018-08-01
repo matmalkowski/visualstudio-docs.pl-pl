@@ -10,58 +10,58 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968539"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379292"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Porady: instalowanie niestandardowego adaptera danych diagnostycznych
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Porady: Instalowanie niestandardowego adaptera danych diagnostycznych
 
-Jeśli utworzono adaptera danych diagnostycznych lub otrzymany z niestandardowego adaptera danych diagnostycznych do użycia, należy zainstalować z zestaw adaptera danych diagnostycznych przez skopiowanie pliku zestawu dla niego w poprawnym katalogu na komputerze lokalnym.
+Jeśli utworzono niestandardowego adaptera danych diagnostycznych lub dostarczono z niestandardowego adaptera danych diagnostycznych do użycia, można zainstalować zestaw adaptera danych diagnostycznych przez skopiowanie pliku zestawu dla niego do poprawnego katalogu na komputerze lokalnym.
 
- Jeśli chcesz użyć Twojego adaptera danych diagnostycznych dla roli w środowisku, należy zainstalować na wszystkich komputerach z systemem agentów testowych, które mogą być używane dla tej roli Twojego adaptera danych diagnostycznych.
+ Jeśli chcesz użyć Twojego niestandardowego adaptera danych diagnostycznych dla roli w środowisku, należy zainstalować adapter danych diagnostycznych na wszystkich komputerach, na których działają agenci testowi, których można użyć dla tej roli.
 
- Poniższa procedura należy zainstalować karta diagnostyki niestandardowej w odpowiednich lokalizacjach. Konieczne będzie uprawnienia administratora na dowolnym komputerze, na którym jest instalowany adaptera danych diagnostycznych.
+ Użyj poniższej procedury do instalowania niestandardowej karty diagnostycznej w odpowiednich miejscach. Będą potrzebne uprawnienia administracyjne na dowolnym komputerze, na którym instalujesz adapter danych diagnostycznych.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Instalowanie niestandardowego adaptera danych diagnostycznych
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Instalowanie niestandardowego adaptera danych diagnostycznych
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Aby zainstalować adapter danych diagnostycznych
 
-1.  Aby używać adapter danych diagnostycznych, po uruchomieniu testów na komputerze klienckim lub na maszynie agenta, skopiuj wszystkie pliki z katalogu kompilacji do następującego katalogu na komputerze docelowym, na podstawie ścieżki instalacji:
+1.  Aby użyć karty danych diagnostycznych, po uruchomieniu testów na komputerze klienckim lub na maszynie agenta, należy skopiować wszystkie pliki z katalogu kompilacji do następującego katalogu na komputerze docelowym, na podstawie ścieżki instalacji:
 
      *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*
 
-     Aby skopiować pliki są:
+     Pliki do skopiowania są:
 
-    -   Adapter danych diagnostycznych zestawu (.dll) (wymagana).
+    -   Zestaw adaptera danych diagnostycznych (*.dll*) (wymagane).
 
-    -   Dane pliku debugowania (.pdb) dla karty (opcjonalnie).
+    -   Plik danych debugowania (*.pdb*) dla karty (opcjonalnie).
 
-    -   Plik konfiguracji dla Twojego adaptera (`<diagnostic data adapter name>.dll.config`), jeśli masz domyślne ustawienia konfiguracji (opcjonalnie).
+    -   Plik konfiguracji dla karty (`<diagnostic data adapter name>.dll.config`), jeżeli istnieją domyślne ustawienia konfiguracji (opcjonalnie).
 
-    -   Zestaw edytora konfiguracji, jeśli został utworzony Aby edytować ustawienia konfiguracji dla karty (opcjonalnie). Jest to tylko dla komputerów klienckich. Agent maszyny nie należy używać edytora.
+    -   Zestaw edytora konfiguracji, jeśli utworzono go, aby edytować ustawienia konfiguracji dla karty (opcjonalnie). Te informacje dotyczą tylko komputerów klienckich. Maszyny agentowe nie korzystają z edytora.
 
     > [!NOTE]
-    > Mimo że można tworzyć w tym samym projekcie i wbudowane w tym samym zestawie Twojego adaptera danych diagnostycznych i edytora konfiguracji, można używać oddzielnego projektów i utworzyć oddzielne zestawy dla ich, jeśli wolisz.
+    > Chociaż adapter danych diagnostycznych i Edytor konfiguracji można tworzyć w tym samym projekcie i wbudowane w tym samym zestawie, można użyć osobnych projektów i utworzyć dla nich, oddzielne zestawy, jeśli użytkownik sobie tego życzy.
 
-     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testu do korzystania ze środowiska, po uruchomieniu testów, zobacz [zbierania danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-2.  Aby wybrać Twojego adaptera danych diagnostycznych dla testu, należy najpierw wybrać istniejące ustawienia testu lub Utwórz nową z Microsoft Test Manager lub programu Visual Studio a następnie wybierz Twojego adaptera danych diagnostycznych na **danych i informacji diagnostycznych** Karta ustawienia wybranego testu.
+2.  Aby wybrać karty danych diagnostycznych dla testu, musisz najpierw wybrać istniejące ustawienia testu lub Utwórz nową z Microsoft Test Manager lub programu Visual Studio a następnie wybierz adaptera danych diagnostycznych na **dane i Diagnostyka** Karta wybrane ustawienia testu.
 
-3.  Jeśli zostały utworzone i zainstalowane diagnostycznych edytora konfiguracji adaptera danych, aby skonfigurować Twojego adaptera danych diagnostycznych dla ustawień testu wybierz **Konfiguruj** obok swoją kartę i sprawdź wszystkie dokonane zmiany. Następnie wybierz pozycję **zapisać**. Aby uzyskać więcej informacji o sposobie tworzenia konfiguracji edytor dla Twojego zbierania danych diagnostycznych, zobacz [porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych Your](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+3.  Jeśli utworzono i zainstalowano edytora adaptera danych diagnostycznych konfiguracji, aby skonfigurować adapter danych diagnostycznych dla ustawień testu, wybierz opcję **Konfiguruj** obok swojego adaptera i wprowadź zmiany. Następnie wybierz **Zapisz**. Aby uzyskać więcej informacji o tym, jak utworzyć konfigurację edytor dla usługi modułu zbierającego dane diagnostyczne, zobacz [porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-4.  Jeśli korzystasz z testów z Microsoft Test Manager, można przypisać te ustawienia do planu testu testu, aby uruchomić testy lub użyj **Uruchom z opcjami** polecenie, aby przypisać ustawień testu i zastąpić ustawienia testu. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbieranie diagnostycznych informacji za pomocą testu ustawień](../test/collect-diagnostic-information-using-test-settings.md).
+4.  Jeśli używasz testów z Microsoft Test Manager, można przypisać te ustawienia testów do planu testów przed uruchomieniem testów lub użyć **Uruchom z opcjami** polecenia w celu przypisywania ustawień testów i zastępowania ustawień testu. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-     Jeśli korzystasz z testów w programie Visual Studio, należy ustawić te ustawienia jako aktywne testu. Aby uzyskać więcej informacji dotyczących ustawień testu, zobacz [zbieranie diagnostycznych informacji za pomocą testu ustawień](../test/collect-diagnostic-information-using-test-settings.md).
+     Jeśli używasz testów z programu Visual Studio, musisz ustawić te ustawienia testów, aby być aktywne. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-5.  Uruchom testy przy użyciu ustawień testów adaptera danych diagnostycznych wybrane.
+5.  Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)
-- [Porady: tworzenie edytora niestandardowego dla danych dla Twojego adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
-- [Przykładowy projekt do tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Tworzenie adaptera danych diagnostycznych zbieranie danych niestandardowych lub mają wpływ na maszynę testową](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Zbierz informacje diagnostyczne przy użyciu ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
+- [Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)

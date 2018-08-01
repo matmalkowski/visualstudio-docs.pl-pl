@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1c9122ec3f6eaed156c48f6fd31b4cbbed32292b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179651"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379499"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Porady: określanie liczby iteracji testowych w ustawieniach testu obciążenia
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Porady: Określanie liczby iteracji testowych w teście obciążeniowym, ustawienia uruchamiania
 
 Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
-Za pomocą **edytora testu obciążenia**, można edytować **iteracji testu** właściwości wartości parametrów uruchomieniowych w oknie dialogowym właściwości. **Iteracje testu** właściwość określa liczbę iteracji do uruchamiania na wszystkich sieci web wydajności i testy jednostkowe we wszystkich scenariuszach testów obciążenia przy użyciu **edytora testu obciążenia**.
+Za pomocą **edytora testu obciążenia**, można edytować **iteracji testu** właściwości wartości parametrów uruchomieniowych w **właściwości** okna. **Iteracje testu** właściwość określa liczbę iteracji do uruchamiania na wszystkich sieci web wydajności i testy jednostkowe we wszystkich scenariuszach testów obciążenia przy użyciu **edytora testu obciążenia**.
 
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
