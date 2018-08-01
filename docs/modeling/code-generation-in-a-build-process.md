@@ -1,5 +1,5 @@
 ---
-title: Generowanie kodu w procesie kompilacji w programie Visual Studio
+title: Generowanie kodu w procesie kompilacji
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9803ad4ddcd1b0e534beae3a0e9601fd8934e216
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382386"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409807"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 
-[Transformacja tekstu](../modeling/code-generation-and-t4-text-templates.md) mogą być wywoływane jako część [proces kompilacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).
+[Transformacja tekstu](../modeling/code-generation-and-t4-text-templates.md) mogą być wywoływane jako część [proces kompilacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) rozwiązania Visual Studio. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).
 
 Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompilacji, wszystko zależy od użytego aparatu kompilacji. Podczas kompilowania rozwiązania w programie Visual Studio szablon tekstowy może uzyskać dostęp do API Visual Studio (EnvDTE), gdy [hostspecific = "true"](../modeling/t4-template-directive.md) ma ustawioną wartość atrybutu. Ale nie jest to prawdą podczas kompilowania rozwiązania z wiersza polecenia lub po zainicjowaniu kompilacji serwerowej za pomocą programu Visual Studio. W tych przypadkach kompilację wykonuje MSBuild i użyty zostaje inny host T4.
 
@@ -33,27 +33,27 @@ Aby włączyć zadania kompilacji na komputerze deweloperskim, należy zainstalo
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Jeśli [serwer kompilacji](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) działa na komputerze, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest nie jest zainstalowany, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
+Jeśli [serwer kompilacji](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Gt;Microsoft.VisualStudio.texttemplating.Interfaces.*.0.dll (kilka plików)
+    - Gt;Microsoft.VisualStudio.texttemplating.Interfaces.*.0.dll (kilka plików)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles) \Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Aby edytować plik projektu
 
@@ -92,7 +92,7 @@ Po tym wierszu wstaw import szablonu tekstu:
 
 Istnieje kilka właściwości, które można wstawić do pliku projektu, aby móc kontrolować zadanie przekształcenia:
 
--   Należy uruchomić zadanie przekształceń na początku każdej kompilacji:
+- Należy uruchomić zadanie przekształceń na początku każdej kompilacji:
 
     ```xml
     <PropertyGroup>
@@ -100,7 +100,7 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
     </PropertyGroup>
     ```
 
--   Zastąp pliki, które są tylko do odczytu, ponieważ np. nie zostały wyewidencjonowane:
+- Zastąp pliki, które są tylko do odczytu, ponieważ np. nie zostały wyewidencjonowane:
 
     ```xml
     <PropertyGroup>
@@ -108,7 +108,7 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
     </PropertyGroup>
     ```
 
--   Za każdym razem przekształcaj każdy szablon:
+- Za każdym razem przekształcaj każdy szablon:
 
     ```xml
     <PropertyGroup>
@@ -118,27 +118,27 @@ Istnieje kilka właściwości, które można wstawić do pliku projektu, aby mó
 
      Domyślnie, zadanie programu MSBuild T4 odtwarza plik wyjściowy, jeżeli jest starszy niż jego plik szablonu, a także wszystkie pliki, które są dołączone, lub wszystkie pliki, które zostały wcześniej odczytane przez szablon lub przez procesor dyrektywy, którego używa szablon. Zwróć uwagę, że jest to o wiele bardziej rozbudowany test zależności, niż test używany przez polecenie Transform All Templates w programie Visual Studio, który jedynie porównuje daty szablonu i pliku wyjściowego.
 
- Aby wykonać tylko przekształcenia tekstu w projekcie, należy wywołać zadanie TransformAll:
+Aby wykonać tylko przekształcenia tekstu w projekcie, należy wywołać zadanie TransformAll:
 
- `msbuild myProject.csproj /t:TransformAll`
+`msbuild myProject.csproj /t:TransformAll`
 
- Aby przekształcić określony szablon tekstowy:
+Aby przekształcić określony szablon tekstowy:
 
- `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
+`msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
- Można używać symboli wieloznacznych w TransformFile:
+Można używać symboli wieloznacznych w TransformFile:
 
- `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
+`msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
 ## <a name="source-control"></a>Kontrola źródła
 
 Nie ma żadnych szczególnych wbudowanych funkcji integracji z systemem kontroli źródła. Można jednak dodać własne rozszerzenia, na przykład aby wyewidencjonować i zaewidencjonować wygenerowany plik. Domyślnie zadanie przekształcenia tekstu pozwala uniknąć zastąpienia pliku, który jest oznaczony jako tylko do odczytu, i po napotkaniu takiego pliku zostanie zarejestrowany błąd na liście błędów Visual Studio, a zadanie się nie powiedzie.
 
- Aby określić, że pliki tylko do odczytu powinny być zastąpione, wstaw tę właściwość:
+Aby określić, że pliki tylko do odczytu powinny być zastąpione, wstaw tę właściwość:
 
- `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
 
- O ile nie dostosujesz kroku przetwarzania końcowego, zastąpienie pliku spowoduje, że na liście błędów zostanie zarejestrowane ostrzeżenie.
+O ile nie dostosujesz kroku przetwarzania końcowego, zastąpienie pliku spowoduje, że na liście błędów zostanie zarejestrowane ostrzeżenie.
 
 ## <a name="customize-the-build-process"></a>Dostosowywanie procesu kompilacji
 
@@ -159,9 +159,9 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
 
 W `AfterTransform`, możesz odwoływać się do listy plików:
 
--   GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
+- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
 
--   NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
+- NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
 
 Na przykład, można zdefiniować zadanie do wyewidencjonowania GeneratedFiles.
 
@@ -179,9 +179,9 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
- Jest użytecznym folderem do przekierowania `$(IntermediateOutputPath).`
+Jest użytecznym folderem do przekierowania `$(IntermediateOutputPath).`
 
- Jeśli zostanie określona nazwa pliku wyjściowego, będzie ona miała wyższy priorytet nad rozszerzeniem określonym w dyrektywie wyjścia w szablonach.
+Jeśli zostanie określona nazwa pliku wyjściowego, będzie ona miała wyższy priorytet nad rozszerzeniem określonym w dyrektywie wyjścia w szablonach.
 
 ```xml
 <ItemGroup>
@@ -193,7 +193,7 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
- Określenie OutputFileName lub OutputFilePath nie jest zalecane, jeśli przekształcany również szablon wewnątrz VS przy użyciu Transform All lub uruchomione jest generator pojedynczego pliku. Ostatecznie uzyskasz różne ścieżki do plików, w zależności od tego, jak uruchamiane jest przekształcenie. Może to być bardzo mylące.
+Określenie OutputFileName lub OutputFilePath nie jest zalecane, jeśli przekształcany również szablon wewnątrz VS przy użyciu Transform All lub uruchomione jest generator pojedynczego pliku. Ostatecznie uzyskasz różne ścieżki do plików, w zależności od tego, jak uruchamiane jest przekształcenie. Może to być bardzo mylące.
 
 ## <a name="add-reference-and-include-paths"></a>Dodawanie odwołania i ścieżek dołączania
 
@@ -228,7 +228,7 @@ Można ustawić wartości parametrów w pliku projektu. Na przykład, można prz
 </ItemGroup>
 ```
 
- W szablonie tekstu, ustaw `hostspecific` w dyrektywie szablonu. Użyj [parametru](../modeling/t4-parameter-directive.md) dyrektywy do uzyskania wartości:
+W szablonie tekstu, ustaw `hostspecific` w dyrektywie szablonu. Użyj [parametru](../modeling/t4-parameter-directive.md) dyrektywy do uzyskania wartości:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -251,9 +251,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ##  <a name="msbuild"></a> Użyj właściwości projektu w zestawie i dyrektyw include
 
-Makra Visual Studio, takich jak $ (solutiondir) nie działają w MSBuild. Zamiast tego można użyć właściwości projektu.
+Makra programu Visual Studio, takich jak **$(SolutionDir)** nie działają w MSBuild. Zamiast tego można użyć właściwości projektu.
 
-Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder`:
+Edytuj swoje *.csproj* lub *.vbproj* plik, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie **myLibFolder**:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -276,27 +276,25 @@ Teraz możesz korzystać ze swojej właściwości projektu w dyrektywach zestawu
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>
 ```
 
- Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild, jak i Visual Studio.
+Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild, jak i Visual Studio.
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
- **Dlaczego chcesz przekształcić szablony w serwerze kompilacji? Właśnie przekształciłem szablony w programie Visual Studio przed sprawdzeniem kodu.**
+**Dlaczego chcesz przekształcić szablony w serwerze kompilacji? Właśnie przekształciłem szablony w programie Visual Studio przed sprawdzeniem kodu.**
 
- Jeśli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon programu Visual Studio nie przekształci pliku automatycznie. Przekształcanie szablonów w ramach kompilacji zapewnia, że wszystko jest aktualne.
+Jeśli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon programu Visual Studio nie przekształci pliku automatycznie. Przekształcanie szablonów w ramach kompilacji zapewnia, że wszystko jest aktualne.
 
- **Co to są inne opcje przekształceń szablonu tekstu?**
+**Co to są inne opcje przekształceń szablonu tekstu?**
 
--   [Narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) można używać w skryptach poleceń. W większości przypadków jest łatwiejszy w obsłudze programu MSBuild.
+- [Narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) można używać w skryptach poleceń. W większości przypadków jest łatwiejszy w obsłudze programu MSBuild.
 
--   [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Szablony tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) są przekształcane przez program Visual Studio.
+- [Szablony tekstu czasu projektowania](../modeling/design-time-code-generation-by-using-t4-text-templates.md) są przekształcane przez program Visual Studio.
 
--   [Szablony tekstowe czasu wykonania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
+- [Szablony tekstowe czasu wykonania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- Dobrą wskazówkę znajdziesz w szablonie T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
+- W szablonie T4 MSbuild na jest dobrą wskazówkę *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
-- [OLEG Sych: Opis integracji T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
-- [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
