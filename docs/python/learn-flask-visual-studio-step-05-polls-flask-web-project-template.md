@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 936c5c1d6edd0a3f3ac7f645b1c94c5ffecd39f1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251845"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388296"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -32,19 +32,19 @@ W tym kroku dowiesz się, jak:
 > - Tworzenie kopii zapasowych magazynów danych i (krok 5-3)
 > - Omówienie widoków szczegółów i wyniki sondowania (krok 5-4)
 
-Program Visual Studio również projektów szablonu "Projekt sieci Web Flask/Jade sond", która wytwarza identyczną aplikację, ale używa aparatu tworzenia szablonów Jinja Jade rozszerzenia. Aby uzyskać więcej informacji, zobacz [krok 4 — szablon projektu sieci Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
+Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond", która wytwarza identyczną aplikację, ale używa aparatu tworzenia szablonów Jinja Jade rozszerzenia. Aby uzyskać więcej informacji, zobacz [krok 4 — szablon projektu sieci Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
 ## <a name="step-5-1-create-the-project"></a>Krok 1 z 5: Tworzenie projektu
 
-1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie "LearningFlask" utworzone we wcześniejszej części tego samouczka i wybierz **Dodaj** > **nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
+1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningFlask** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
-1. W oknie dialogowym Nowy projekt Wyszukaj i wybierz szablon "Projekt sieci Web Flask sond" wywołać projektu "FlaskPolls" i wybierz **OK**.
+1. W oknie dialogowym Nowy projekt wyszukiwanie i wybieranie **projektu sieci Web Flask sond** szablonu, wywołaj projektu "FlaskPolls", a następnie wybierz pozycję **OK**.
 
-1. Podobnie jak inne szablony projektów w programie Visual Studio zawiera szablon "Projekt sieci Web Flask sond" `requirements.txt` pliku monitów w programie Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne. (Ten szablon wymaga Flask, a także pakietów usługi azure storage i pymongo; pyjade wymaga również "Sond Flask/Jade projektu sieci Web").
+1. Podobnie jak inne szablony projektów w programie Visual Studio zawiera szablon "Projekt sieci Web Flask sond" *requirements.txt* pliku monitów w programie Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne. (Ten szablon wymaga Flask, a także pakietów usługi azure storage i pymongo; pyjade wymaga również "Sond Flask/Jade projektu sieci Web").
 
-1. Ustaw projekt "FlaskPolls" jako domyślne dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i wybierając polecenie **Ustaw jako projekt startowy**. Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
+1. Ustaw **FlaskPolls** projektu jako domyślny dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i wybierając polecenie **Ustaw jako projekt startowy**. Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
 
-1. Wybierz **Debuguj > Rozpocznij debugowanie** (F5) lub użyj **serwera sieci Web** przycisk na pasku narzędzi, aby uruchomić serwer:
+1. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi, aby uruchomić serwer:
 
     ![Uruchamianie serwera sieci web przycisku paska narzędzi w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Program Visual Studio również projektów szablonu "Projekt sieci Web Flask/Jad
 
     ![Pełen przegląd aplikacja projektu sieci Web Flask sond](media/flask/step06-full-app-view.png)
 
-1. Na stronie głównej **tworzenie przykładowej ankiety** przycisk inicjuje magazynu danych aplikacji przy użyciu trzech różnych sond, które są opisane w `models/samples.json` strony. Domyślnie aplikacja używa w pamięci bazy danych (jak pokazano na stronie informacje), który jest resetowany każdorazowo, gdy aplikacja zostanie ponownie uruchomiony. Aplikacja również zawiera kod, aby pracować z usługi Azure Storage i bazą danych Mongo, zgodnie z opisem w dalszej części tego artykułu.
+1. Na stronie głównej **tworzenie przykładowej ankiety** przycisk inicjuje magazynu danych aplikacji przy użyciu trzech różnych sond, które są opisane w *models/samples.json* strony. Domyślnie aplikacja używa w pamięci bazy danych (jak pokazano na stronie informacje), który jest resetowany każdorazowo, gdy aplikacja zostanie ponownie uruchomiony. Aplikacja również zawiera kod, aby pracować z usługi Azure Storage i bazą danych Mongo, zgodnie z opisem w dalszej części tego artykułu.
 
 1. Po został zainicjowany magazyn danych, możesz głosować w różnych sond pokazany na stronie głównej (paska nawigacji i stopki są pomijane dla zwięzłości):
 
@@ -68,7 +68,7 @@ Program Visual Studio również projektów szablonu "Projekt sieci Web Flask/Jad
 
 1. Możesz pozostawić aplikacja uruchomiona w kolejnych sekcjach.
 
-    Jeśli chcesz zatrzymać aplikację i [Zatwierdź zmiany do kontroli źródła](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), najpierw otwórz **zmiany** strony w **Team Explorer**, kliknij prawym przyciskiem myszy folder (środowiska wirtualnego prawdopodobnie `env`) i wybierz **ignorować te elementy lokalne**.
+    Jeśli chcesz zatrzymać aplikację i [Zatwierdź zmiany do kontroli źródła](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), najpierw otwórz **zmiany** strony w **Team Explorer**, kliknij prawym przyciskiem myszy folder (środowiska wirtualnego prawdopodobnie **env**) i wybierz **ignorować te elementy lokalne**.
 
 ### <a name="examine-the-project-contents"></a>Sprawdź zawartość projektu
 
@@ -76,7 +76,7 @@ Wspomniane wcześniej. Większość co to jest projekt utworzony z szablonu "Pro
 
 ## <a name="step-5-2-understand-the-data-models"></a>Krok 5 — 2: omówienie modeli danych
 
-Modele danych dla aplikacji są klasy języka Python o nazwie sondowania i wyboru, które są zdefiniowane w `models/__init__.py`. Sondowaniu reprezentuje zapytania, dla którego kolekcję wystąpień wyboru reprezentują dostępne odpowiedzi. Sondowaniu przechowuje także całkowita liczba głosów (dla dowolnej), a metoda, aby obliczyć statystyki, które są używane do generowania widoków:
+Modele danych dla aplikacji są klasy języka Python o nazwie sondowania i wyboru, które są zdefiniowane w *modeli /\_\_init\_\_.py*. Sondowaniu reprezentuje zapytania, dla którego kolekcję wystąpień wyboru reprezentują dostępne odpowiedzi. Sondowaniu przechowuje także całkowita liczba głosów (dla dowolnej), a metoda, aby obliczyć statystyki, które są używane do generowania widoków:
 
 ```python
 class Poll(object):
@@ -116,14 +116,14 @@ Aplikacja utworzona przez szablon "Projekt sieci Web Flask sond" można uruchomi
 
 Mechanizm magazynu danych działa w następujący sposób:
 
-1. Typ repozytorium jest określony za pomocą `REPOSITORY_NAME` zmiennej środowiskowej, która może być równa "pamięć", "azuretablestore" lub "bazy danych mongodb". Ilość kodu w `settings.py` pobiera nazwę, za pomocą "pamięć" jako domyślny. Aby zmienić magazyn zapasowy, musisz ustawić zmienną środowiskową i uruchom ponownie aplikację.
+1. Typ repozytorium jest określony za pomocą `REPOSITORY_NAME` zmiennej środowiskowej, która może być równa "pamięć", "azuretablestore" lub "bazy danych mongodb". Ilość kodu w *settings.py* pobiera nazwę, za pomocą "pamięć" jako domyślny. Aby zmienić magazyn zapasowy, musisz ustawić zmienną środowiskową i uruchom ponownie aplikację.
 
     ```python
     from os import environ
     REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
     ```
 
-1. `settings.py` Kodzie następnie inicjuje `REPOSITORY_SETTINGS` obiektu. Jeśli chcesz używać magazynu tabel platformy Azure lub Mondo bazy danych, należy najpierw zainicjować te magazyny danych w innym miejscu, a następnie ustaw zmienne środowiskowe wymagane, określające aplikacji, jak połączyć się z magazynem:
+1. *Settings.py* kodzie następnie inicjuje `REPOSITORY_SETTINGS` obiektu. Jeśli chcesz używać magazynu tabel platformy Azure lub Mondo bazy danych, należy najpierw zainicjować te magazyny danych w innym miejscu, a następnie ustaw zmienne środowiskowe wymagane, określające aplikacji, jak połączyć się z magazynem:
 
     ```python
     if REPOSITORY_NAME == 'azuretablestorage':
@@ -145,7 +145,7 @@ Mechanizm magazynu danych działa w następujący sposób:
         raise ValueError('Unknown repository.')
     ```
 
-1. W `views.py`, aplikacja wywołuje metodę fabryki, aby zainicjować `Repository` przy użyciu nazwy i ustawienia magazynu danych:
+1. W *views.py*, aplikacja wywołuje metodę fabryki, aby zainicjować `Repository` przy użyciu nazwy i ustawienia magazynu danych:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ Mechanizm magazynu danych działa w następujący sposób:
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. `factory.create_repository` Metoda znajduje się w `models\factory.py`, który po prostu importuje moduł odpowiedniego repozytorium, a następnie tworzy `Repository` wystąpienie:
+1. `factory.create_repository` Metoda znajduje się w *models\factory.py*, który po prostu importuje moduł odpowiedniego repozytorium, a następnie tworzy `Repository` wystąpienie:
 
     ```python
     def create_repository(name, settings):
@@ -174,20 +174,20 @@ Mechanizm magazynu danych działa w następujący sposób:
         return Repository(settings)
     ```
 
-1. Implementacje `Repository` klasy, które są specyficzne dla każdego magazynu danych można znaleźć w `models\azuretablestorage.py`, `models\mongodb.py`, i `models\memory.py`. Wdrożenia usługi Azure storage korzysta z pakietu usługi azure storage; Implementacja Mongo DB używa pakietu pymongo. Jak wspomniano w kroku 5-1, oba pakiety znajdują się w szablonie projektu `requirements.txt` pliku. Eksplorowanie szczegóły pozostanie w charakterze ćwiczenia dla czytnika.
+1. Implementacje `Repository` klasy, które są specyficzne dla każdego magazynu danych można znaleźć w *models\azuretablestorage.py*, *models\mongodb.py*, i *models\memory.py* . Wdrożenia usługi Azure storage korzysta z pakietu usługi azure storage; Implementacja Mongo DB używa pakietu pymongo. Jak wspomniano w kroku 5-1, oba pakiety znajdują się w szablonie projektu *requirements.txt* pliku. Eksplorowanie szczegóły pozostanie w charakterze ćwiczenia dla czytnika.
 
 Krótko mówiąc `Repository` klasa przenosi szczegółowe informacje na temat magazynu danych, a aplikacja używa zmiennych środowiskowych w czasie wykonywania można wybrać i skonfigurować, do których trzy implementacji w celu użycia.
 
 Poniższe kroki obsługę magazynu danych innego niż trzy dostarczone przez szablon projektu, jeśli zaistnieje taka potrzeba:
 
-1. Kopiuj `memory.py` do nowego pliku, aby mieć podstawowy interfejs dla `Repository` klasy.
+1. Kopiuj *memory.py* do nowego pliku, aby mieć podstawowy interfejs dla `Repository` klasy.
 1. Zmodyfikuj implementacji klasy jako pasujące do magazynu danych, z którego korzystasz.
-1. Modyfikowanie `factory.py` Aby dodać kolejny `elif` przypadek, który rozpoznaje nazwę magazynowi danych dodane, a następnie importuje odpowiedniego modułu.
-1. Modyfikowanie `settings.py` rozpoznawanie inną nazwę w `REPOSITORY_NAME` zmiennej środowiskowej i zainicjować `REPOSITORY_SETTINGS` odpowiednio.
+1. Modyfikowanie *factory.py* Aby dodać kolejny `elif` przypadek, który rozpoznaje nazwę magazynowi danych dodane, a następnie importuje odpowiedniego modułu.
+1. Modyfikowanie *settings.py* rozpoznawanie inną nazwę w `REPOSITORY_NAME` zmiennej środowiskowej i zainicjować `REPOSITORY_SETTINGS` odpowiednio.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Magazyn danych z samples.json umieszczenia
 
-Początkowo dowolnego magazynu danych w wybranym zawiera nie ankiety, więc strony głównej aplikacji przedstawia komunikat "Nie sond dostępne" wraz z **tworzenie przykładowej ankiety** przycisku. Po wybraniu przycisku, natomiast widok zmiany do wyświetlenia dostępnych sond. Ten przełącznik odbywają się za pośrednictwem warunkowego tagów w `templates\index.html` (niektóre puste wiersze dla zwięzłości pominięto):
+Początkowo dowolnego magazynu danych w wybranym zawiera nie ankiety, więc strony głównej aplikacji przedstawia komunikat **nie dostępnych sond** wraz z **tworzenie przykładowej ankiety** przycisku. Po wybraniu przycisku, natomiast widok zmiany do wyświetlenia dostępnych sond. Ten przełącznik odbywają się za pośrednictwem warunkowego tagów w *templates\index.html* (niektóre puste wiersze dla zwięzłości pominięto):
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ Początkowo dowolnego magazynu danych w wybranym zawiera nie ankiety, więc stro
 
 `polls` Zmiennej w szablonie pochodzi z wywołania `repository.get_polls`, która nie zwraca żadnego dopóki magazyn danych jest inicjowany.
 
-Wybieranie **tworzenie przykładowej ankiety** przycisku powoduje przejście do adresu URL /seed. Program obsługi dla tej trasy jest zdefiniowany w `views.py`:
+Wybieranie **tworzenie przykładowej ankiety** przycisku powoduje przejście do adresu URL /seed. Program obsługi dla tej trasy jest zdefiniowany w *views.py*:
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `Repository` implementacje dla magazynu danych wybrany. Każda implementacja wywołuje `_load_samples_json` znaleźć metodę w `models\__init__.py` załadować `models\samples.json` plików do pamięci, a następnie wykonuje iterację przez te dane, aby utworzyć niezbędne `Poll` i `Choice` obiektów w magazynie danych.
+Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `Repository` implementacje dla magazynu danych wybrany. Każda implementacja wywołuje `_load_samples_json` znaleźć metodę w *modeli\__init__.py* załadować *models\samples.json* plików do pamięci, a następnie wykonuje iterację przez te dane, aby utworzyć niezbędne `Poll` i `Choice` obiektów w magazynie danych.
 
-Po zakończeniu tego procesu, `redirect('/')` instrukcji w `seed` metoda wraca do strony głównej. Ponieważ `repository.get_polls` teraz zwraca obiekt danych warunkowego znaczniki `templates\index.html` teraz renderuje tabelę zawierającą ankiety.
+Po zakończeniu tego procesu, `redirect('/')` instrukcji w `seed` metoda wraca do strony głównej. Ponieważ `repository.get_polls` teraz zwraca obiekt danych warunkowego znaczniki *templates\index.html* teraz renderuje tabelę zawierającą ankiety.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pytanie: Jak jeden dodaje nowe sonduje usługę do aplikacji?
 
-Odpowiedź: Aplikacji, zgodnie z postanowieniami przy użyciu szablonu projektu nie zawiera funkcji do dodawania lub edytowania ankiety. Możesz zmodyfikować `models\samples.json` Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
+Odpowiedź: Aplikacji, zgodnie z postanowieniami przy użyciu szablonu projektu nie zawiera funkcji do dodawania lub edytowania ankiety. Możesz zmodyfikować *models\samples.json* Aby utworzyć nowe dane inicjowania, ale oznacza to resetowanie magazynu danych. Aby zaimplementować funkcje edycji, musisz rozszerzyć `Repository` interfejsu klasy za pomocą metod, aby utworzyć niezbędne `Choice` i `Poll` wystąpień, implementować interfejs użytkownika w dodatkowych stron, które korzystają z tych metod.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 — 4: Omówienie widoków szczegółów i wyniki sondowania
 
@@ -242,7 +242,7 @@ Większość widoków generowane przez Szablony "Projekt sieci Web Flask sond" i
 
 Co jeszcze pozostało w tym miejscu jest zbadanie głosowania (szczegóły) oraz widok wyników poszczególnych sondowania.
 
-Po wybraniu sondowania ze strony głównej aplikacja przejdzie do /poll/ adresu URL\<klucz\> gdzie *klucza* jest unikatowy identyfikator dla sondowania. W `views.py` widzimy, że `details` funkcji jest przypisany do obsługi tego adresu URL routingu żądań i GET. Możesz też sprawdzić używające `<key>` w adresie URL trasy mapuje wszystkie trasy tworzące do tej samej funkcji i generuje argument funkcji o takiej samej nazwie:
+Po wybraniu sondowania ze strony głównej aplikacja przejdzie do /poll/ adresu URL\<klucz\> gdzie *klucza* jest unikatowy identyfikator dla sondowania. W *views.py* widzimy, że `details` funkcji jest przypisany do obsługi tego adresu URL routingu żądań i GET. Możesz też sprawdzić, że używanie `<key>` w adresie URL trasy mapuje wszystkie trasy tworzące do tej samej funkcji i generuje argument funkcji o takiej samej nazwie:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-Aby wyświetlić sondowania (żądania GET), ta funkcja po prostu wywołuje widok na `templates\details.html`, który iteruje po sondowania `choices` tablicy, tworzenie przycisku radiowego dla każdej.
+Aby wyświetlić sondowania (żądania GET), ta funkcja po prostu wywołuje widok na *templates\details.html*, który iteruje po sondowania `choices` tablicy, tworzenie przycisku radiowego dla każdej.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ Aby wyświetlić sondowania (żądania GET), ta funkcja po prostu wywołuje wido
 
 Ponieważ **głos** przycisk ma `type="submit"`, zaznaczając go generuje żądanie POST do tego samego adresu URL, który jest kierowany do `details` funkcji jeszcze raz. Tym razem jednak wyodrębnia wybór z danych formularza i przekierowuje do /results/\<wybór\>.
 
-/Results/\<klucz\> adres URL jest następnie przekierowywane do `results` działa w programach `views.py`, który następnie wywołuje sondowania `calculate_stats` metody i wymaga `templates\results.html` do renderowania:
+/Results/\<klucz\> adres URL jest następnie przekierowywane do `results` działa w programach *views.py*, który następnie wywołuje sondowania `calculate_stats` metody i wymaga *templates\results.html* do renderowania:
 
 ```python
 @app.route('/results/<key>')
@@ -314,7 +314,7 @@ def results(key):
     )
 ```
 
-`results.html` Szablonu ze swojej strony, po prostu wykonuje iterację przez opcji sondowania i generuje pasek postępu dla każdego:
+*Results.html* szablonu ze swojej strony, po prostu wykonuje iterację przez opcji sondowania i generuje pasek postępu dla każdego:
 
 ```html
 {% extends "layout.html" %}

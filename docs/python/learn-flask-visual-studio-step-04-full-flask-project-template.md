@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232299"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388153"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Użyj pełnego szablonu projektu sieci Web Flask
 
@@ -35,17 +35,17 @@ Ten artykuł dotyczy również szablon "Projekt sieci Web Flask/Jade", który tw
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4: Tworzenie projektu z szablonu
 
-1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie "LearningFlask" utworzone we wcześniejszej części tego samouczka i wybierz **Dodaj** > **nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
+1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningFlask** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
 
-1. W oknie dialogowym Nowy projekt Wyszukaj i wybierz szablon "Projekt sieci Web Flask" wywołać projektu "FlaskWeb" i wybierz **OK**.
+1. W oknie dialogowym Nowy projekt wyszukiwanie i wybieranie **projektu sieci Web Flask** szablonu, wywołaj projektu "FlaskWeb", a następnie wybierz pozycję **OK**.
 
-1. Ponieważ szablon ponownie zawiera `requirements.txt` plików, programu Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne.
+1. Ponieważ szablon ponownie zawiera *requirements.txt* plików, programu Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne.
 
-1. Gdy program Visual Studio zakończy się skonfigurowanie środowiska wirtualnego, Ustaw projekt "FlaskWeb" jako domyślne dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i wybierając polecenie **ustawiony jako Projekt startowy**. Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
+1. Gdy program Visual Studio zakończy się skonfigurowanie środowiska wirtualnego, ustaw **FlaskWeb** projektu jako domyślny dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i Wybieranie **Ustaw jako projekt startowy**. Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
 
     ![Eksploratora rozwiązań przedstawiający FlaskWeb projekt jako projekt startowy](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Wybierz **debugowania** > **Rozpocznij debugowanie** (F5) lub użyj **serwera sieci Web** przycisk na pasku narzędzi, aby uruchomić serwer:
+1. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi, aby uruchomić serwer:
 
     ![Uruchamianie serwera sieci web przycisku paska narzędzi w programie Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
@@ -59,20 +59,20 @@ Ten artykuł dotyczy również szablon "Projekt sieci Web Flask/Jade", który tw
 
 1. Możesz pozostawić aplikacja uruchomiona w kolejnych sekcjach.
 
-    Jeśli chcesz zatrzymać aplikację i [Zatwierdź zmiany do kontroli źródła](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), najpierw otwórz **zmiany** strony w **Team Explorer**, kliknij prawym przyciskiem myszy folder (środowiska wirtualnego prawdopodobnie `env`) i wybierz **ignorować te elementy lokalne**.
+    Jeśli chcesz zatrzymać aplikację i [Zatwierdź zmiany do kontroli źródła](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), najpierw otwórz **zmiany** strony w **Team Explorer**, kliknij prawym przyciskiem myszy folder (środowiska wirtualnego prawdopodobnie **env**) i wybierz **ignorować te elementy lokalne**.
 
 ### <a name="examine-what-the-template-creates"></a>Sprawdź ten szablon tworzy
 
-Szablon "Projekt sieci Web Flask" tworzy strukturę poniżej. Zawartość jest bardzo podobne do utworzonego w poprzednich krokach. Różnica polega na to, że szablon "Projekt sieci Web Flask" zawiera więcej strukturze `static` folderu, ponieważ zawiera jQuery i Bootstrap uzyskać elastyczne środowisko. Szablon dodaje również strony kontaktu. Ogólne po wykonaniu poprzednich kroków w ramach tego samouczka, wszystko — od szablonu powinna być znane.
+Szablon "Projekt sieci Web Flask" tworzy strukturę poniżej. Zawartość jest bardzo podobne do utworzonego w poprzednich krokach. Różnica polega na to, że szablon "Projekt sieci Web Flask" zawiera więcej strukturze *statyczne* folderu, ponieważ zawiera jQuery i Bootstrap uzyskać elastyczne środowisko. Szablon dodaje również strony kontaktu. Ogólne po wykonaniu poprzednich kroków w ramach tego samouczka, wszystko — od szablonu powinna być znane.
 
 - Pliki w katalogu głównym projektu:
-  - `runserver.py`, skrypt do uruchomienia aplikacji na serwerze rozwoju.
-  - `requirements.txt` zawierający zależności Flask postaci 0.x.
-- `FlaskWeb` Folder zawiera wszystkie pliki aplikacji:
-  - `__init.py__` oznacza kod aplikacji jako moduł języka Python, tworzy obiekt Flask i importuje widoków aplikacji.
-  - `views.py` zawiera kod w celu renderowania stron.
-  - `static` Folder zawiera podfoldery o nazwach odpowiadających `content` (pliki CSS), `fonts` (pliki czcionki), a `scripts` (plików JavaScript).
-  - `templates` Folder zawiera `layout.html` szablon podstawowy wraz z `about.html`, `contact.html`, i `index.html` dla określonych stron każdy rozszerzyć `layout.html`.
+  - *runserver.PY*, skrypt do uruchomienia aplikacji na serwerze rozwoju.
+  - *Plik Requirements.txt* zawierający zależności Flask postaci 0.x.
+- *FlaskWeb* folder zawiera wszystkie pliki aplikacji:
+  - *\_\_init.PY\_ \_*  oznacza kod aplikacji jako moduł języka Python, tworzy obiekt Flask i importuje widoków aplikacji.
+  - *Views.PY* zawiera kod w celu renderowania stron.
+  - *Statyczne* folder zawiera podfoldery o nazwach odpowiadających *zawartości* (pliki CSS), *czcionki* (pliki czcionek) i *skrypty* (plików JavaScript).
+  - *Szablony* folder zawiera *layout.html* szablon podstawowy wraz z *about.html*, *contact.html*, i  *index.HTML* dla określonych stron każdy rozszerzyć *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: Czy jest możliwe udostępnianie środowisku wirtualnym między projektami Visual Studio?
 
@@ -86,7 +86,7 @@ Niemniej jednak aby użyć istniejącego środowiska wirtualnego, należy wykona
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4: Omówienie widoków i stron szablony utworzone przez szablon projektu
 
-Jak można zaobserwować, kiedy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Home około i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w `FlaskWeb/views.py`. Każda funkcja widoku po prostu wywołuje widok `flask.render_template` na ścieżkę do szablonu oraz listy zmiennych argumentów dla wartości, aby zapewnić do szablonu. Na przykład na stronie informacje jest obsługiwany przez `about` — funkcja (których dekoratora zapewnia routing adresów URL):
+Jak można zaobserwować, kiedy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Home około i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *FlaskWeb/views.py*. Każda funkcja widoku po prostu wywołuje widok `flask.render_template` na ścieżkę do szablonu oraz listy zmiennych argumentów dla wartości, aby zapewnić do szablonu. Na przykład na stronie informacje jest obsługiwany przez `about` — funkcja (których dekoratora zapewnia routing adresów URL):
 
 ```python
 @app.route('/about')
@@ -102,7 +102,7 @@ def about():
 
 `home` i `contact` funkcji są niemal identyczne, z podobnych dekoratory i nieco inne argumenty.
 
-Szablony znajdują się w aplikacji `templates` folderu. Szablon podstawowy `layout.html`, jest najbardziej rozbudowanych. On odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje bloku o nazwie "treści" innych stron zastąpienie i udostępnia innego bloku o nazwie "skrypty". Następujące fragmenty z z adnotacjami `layout.html` te określone obszary:
+Szablony znajdują się w aplikacji *szablony* folderu. Szablon podstawowy *layout.html*, jest najbardziej rozbudowanych. On odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje bloku o nazwie "treści" innych stron zastąpienie i udostępnia innego bloku o nazwie "skrypty". Następujące fragmenty z z adnotacjami *layout.html* te określone obszary:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ Szablony znajdują się w aplikacji `templates` folderu. Szablon podstawowy `lay
 </html>
 ```
 
-Szablony pojedynczej strony `about.html`, `contact.html`, i `index.html`, Rozszerz każdy szablon podstawowy `layout.html`. `about.html` to najprostszy i pokazuje `{% extends %}` i `{% block content %}` tagi:
+Szablony pojedynczej strony *about.html*, *contact.html*, i *index.html*, Rozszerz każdy szablon podstawowy *layout.html*. *About.HTML* to najprostszy i pokazuje `{% extends %}` i `{% block content %}` tagi:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,22 +156,22 @@ Szablony pojedynczej strony `about.html`, `contact.html`, i `index.html`, Rozsze
 {% endblock %}
 ```
 
-`index.html` i `contact.html` Użyj tej samej struktury i podaj dłuższy zawartości w bloku "treści".
+*index.HTML* i *contact.html* Użyj tej samej struktury i podaj dłuższy zawartości w bloku "treści".
 
 ## <a name="the-flaskjade-web-project-template"></a>Szablon projektu sieci Web Flask/Jade
 
 Jak wspomniano na początku tego artykułu, programu Visual Studio udostępniają szablon "Projekt sieci Web Flask/Jade", która tworzy aplikację, która jest wizualnie taka sama, jak co to jest generowany przez "Projekt sieci Web Flask". Podstawowa różnica polega na tym, że używa on aparat Jade szablonów, który jest rozszerzeniem Jinja, która implementuje te same pojęcia z bardziej zwięzłą języka. W szczególności Jade używa słowa kluczowe zamiast tagi ujęty w znaki {filtr ograniczników, na przykład i umożliwia dotyczą stylów CSS oraz elementów HTML za pomocą słów kluczowych.
 
-Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w `requirements.txt`. 
+Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *requirements.txt*. 
 
-Aplikacja `__init__.py` pliku zawiera wiersz do
+Aplikacja  *\_ \_init\_\_PY* pliku zawiera wiersz do
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
-W `templates` folderów, zobacz `.jade` plików zamiast `.html` szablonów i widoków w `views.py` odnoszą się do tych plików w ich wywołania `flask.render_template`. W przeciwnym razie kod widoków jest taki sam.
+W *szablony* folderów, zobacz *jade* plików zamiast *.html* szablonów i widoków w *views.py* odnoszą się do tych plików w ich wywołania `flask.render_template`. W przeciwnym razie kod widoków jest taki sam.
 
-Otwarcie jednej z `.jade` pliki, możesz zobaczyć bardziej zwięzłą wyrażenie szablonu. Na przykład poniżej przedstawiono zawartość `templates/layout.jade` utworzona przez szablon "Projekt sieci Web Flask/Jade":
+Otwarcie jednej z *jade* pliki, możesz zobaczyć bardziej zwięzłą wyrażenie szablonu. Na przykład poniżej przedstawiono zawartość *templates/layout.jade* utworzona przez szablon "Projekt sieci Web Flask/Jade":
 
 ```jade
 doctype html
@@ -213,7 +213,7 @@ html
     block scripts
 ```
 
-A Oto zawartość `templates/about.jade`, przedstawiający zastosowanie `#{ <name>}` dla symboli zastępczych:
+A Oto zawartość *templates/about.jade*, przedstawiający zastosowanie `#{ <name>}` dla symboli zastępczych:
 
 ```jade
 extends layout

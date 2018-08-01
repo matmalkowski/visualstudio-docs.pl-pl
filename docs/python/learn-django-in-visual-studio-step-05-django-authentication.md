@@ -1,6 +1,6 @@
 ---
-title: Samouczek — Dowiedz się Django w programie Visual Studio, krok 5
-description: Wskazówki dotyczące podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcje uwierzytelniania określonych przez Szablony projektów sieci Web Django.
+title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 5
+description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcje uwierzytelniania określone szablony projektów internetowych Django.
 ms.date: 04/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,37 +11,37 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946978"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388374"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Uwierzytelnianie użytkowników w Django
 
-**Poprzedni krok: [użyj pełnego szablonu projektu sieci Web Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Poprzedni krok: [użyj pełnego szablonów projektów internetowych Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Ponieważ uwierzytelnianie jest potrzeba wspólne dla aplikacji sieci web, szablon "Projektu sieci Web Django" obejmuje przepływ uwierzytelniania podstawowego. (Szablon "Projektu sieci Web Django sond" omówione w kroku 6 ten samouczek zawiera również takim samym przepływie.) W przypadku stosowania Django szablony projektu Visual Studio obejmuje wszystkie moduły niezbędne do uwierzytelniania w projekcie Django `settings.py`.
+Ponieważ uwierzytelnianie jest typowe potrzeby aplikacji sieci web, szablon "Projekt sieci Web Django" obejmuje przepływ uwierzytelniania podstawowego. (Szablon "Projekt sieci Web Django sond" omówiono w kroku 6 procedury w tym samouczku także sam przepływ.) W przypadku stosowania Django szablony projektu Visual Studio zawiera wszystkie moduły niezbędne do uwierzytelniania w projekcie Django *settings.py*.
 
 W tym kroku dowiesz się:
 
 > [!div class="checklist"]
-> - Jak używać przebieg uwierzytelniania w szablony programu Visual Studio (krok 5 - 1)
+> - Jak korzystać z tego przepływu uwierzytelniania podany w szablonach programu Visual Studio (krok 5 - 1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Krok 5-1: Użyj przepływ uwierzytelniania
+## <a name="step-5-1-use-the-authentication-flow"></a>Krok 5-1: przepływ uwierzytelniania
 
-Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu, które są związane z:
+Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu, które są zaangażowane:
 
-1. Jeśli nie jest jeszcze wykonaniu instrukcji w `readme.html` pliku w katalogu głównym projektu, aby utworzyć konta administratora (administrator), zrób to teraz.
+1. Jeśli jeszcze nie wykonano instrukcje *readme.html* plik w folderze głównym projektu, aby utworzyć konta administratora (administrator), zrób to teraz.
 
-1. Uruchamianie aplikacji z programu Visual Studio za pomocą **debugowania** > **Rozpocznij debugowanie** (F5). Gdy aplikacja zostanie wyświetlona w przeglądarce, która obserwować **Zaloguj** zostanie wyświetlona w prawym górnym rogu paska nawigacyjnego.
+1. Uruchamianie aplikacji z programu Visual Studio przy użyciu **debugowania** > **Rozpocznij debugowanie** (**F5**). Gdy aplikacja zostanie wyświetlona w przeglądarce, Zauważ, że **Zaloguj** pojawia się w prawym górnym rogu paska nawigacyjnego.
 
-    ![Na stronie aplikacji Django Web Project formantu logowania](media/django/step05-login-control.png)
+    ![Kontrolka Login na stronie aplikacji projektu sieci Web Django](media/django/step05-login-control.png)
 
-1. Otwórz `templates/app/layout.html` i że `<div class="navbar ...>` element zawiera tag `{% include app/loginpartial.html %}`. `{% include %}` Tag nakazuje systemowi tworzenia szablonów w Django ściągnąć zawartość pliku uwzględnione w tym momencie zawierającego szablonu.
+1. Otwórz *templates/app/layout.html* i Zauważ, że `<div class="navbar ...>` element zawiera tag `{% include app/loginpartial.html %}`. `{% include %}` Tag powoduje, że firmy Django szablonów systemu, aby ściągnąć zawartość pliku uwzględnione w tym momencie w szablonie zawierającego.
 
-1. Otwórz `templates/app/loginpartial.html` i sprawdź, jak używa tagu warunkowego `{% if user.is_authenticated %}` wraz z programem `{% else %}` tag do renderowania różne elementy interfejsu użytkownika, w zależności od tego, czy użytkownik został uwierzytelniony:
+1. Otwórz *templates/app/loginpartial.html* i obserwuj, jak używa tagu warunkowego `{% if user.is_authenticated %}` wraz z `{% else %}` tag do różnych elementów interfejsu użytkownika, w zależności od tego, czy użytkownik został uwierzytelniony renderowania:
 
     ```html
     {% if user.is_authenticated %}
@@ -62,7 +62,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     {% endif %}
     ```
 
-1. Ponieważ żaden użytkownik nie jest uwierzytelniony przy pierwszym uruchomieniu aplikacji, ten kod szablonu renderuje tylko "Zaloguj" łącze do ścieżki względnej "login". Jak określono w `urls.py` (jak pokazano w poprzedniej sekcji), tej trasy jest mapowany na `django.contrib.auth.views.login` widoku. Ten widok otrzymuje następujące dane:
+1. Ponieważ żaden użytkownik nie jest uwierzytelniony, przy pierwszym uruchomieniu aplikacji, ten kod szablonu powoduje wyświetlenie tylko "Zaloguj" linku do ścieżki względnej "Logowanie". Jak określono w *urls.py* (jak pokazano w poprzedniej sekcji), tej trasy jest mapowany na `django.contrib.auth.views.login` widoku. Ten widok otrzymuje następujące dane:
 
     ```python
     {
@@ -76,7 +76,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     }
     ```
 
-    W tym miejscu `template_name` identyfikuje szablon na stronie logowania, w tym przypadku `templates/app/login.html`. `extra_context` Właściwość została dodana do dane kontekstu domyślnego na szablon. Na koniec `authentication_form` Określa klasę formularza, aby za pomocą nazwy logowania "w szablonie jest widoczny jako `form` obiektu. Wartość domyślna to `AuthenticationForm` (z `django.contrib.auth.views`); szablon projektu Visual Studio używa zamiast tego formularza, określonych w aplikacji `forms.py` pliku:
+    W tym miejscu `template_name` identyfikuje szablon do strony logowania, w tym przypadku *templates/app/login.html*. `extra_context` Właściwość została dodana do domyślny kontekst danych, do szablonu. Na koniec `authentication_form` Określa klasę formularza za pomocą identyfikatora logowania; w szablonie będzie ono wyświetlane jako `form` obiektu. Wartość domyślna to `AuthenticationForm` (z `django.contrib.auth.views`); szablon projektu Visual Studio zamiast tego używa formularz zdefiniowany w aplikacji *forms.py* pliku:
 
     ```python
     from django import forms
@@ -95,9 +95,9 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
                                        'placeholder':'Password'}))
     ```
 
-    Jak widać, ta klasa formularza jest pochodną `AuthenticationForm` i zastąpi pola nazwy użytkownika i hasła, aby dodać tekst zastępczy. Szablon programu Visual Studio zawiera ten kod jawne przy założeniu, że prawdopodobnie chcesz dostosować formularz, takie jak dodawanie walidacji siły hasła.
+    Jak widać, pochodzi ta klasa formularza `AuthenticationForm` i zastąpi pól nazwy użytkownika i hasła w celu dodania tekst symbolu zastępczego. Szablon programu Visual Studio zawiera ten kod jawne przy założeniu, że prawdopodobnie zechcesz dostosować formularz, takie jak dodawanie sprawdzania siły haseł.
 
-1. Po przejściu do strony logowania, następnie renderuje aplikacji `login.html` szablonu. Zmienne `{{ form.username }}` i `{{ form.password }}` renderowania `CharField` formularzy z `BootstrapAuthenticationForm`. Istnieje również wbudowane sekcję, aby wyświetlić błędy sprawdzania poprawności, a element gotowych do logowania społecznościowych, jeśli użytkownik chce dodać tych usług.
+1. Po przejściu do strony logowania, następnie renderuje aplikacji *login.html* szablonu. Zmienne `{{ form.username }}` i `{{ form.password }}` renderowania `CharField` formularzy z `BootstrapAuthenticationForm`. Istnieje również wbudowane sekcję, aby wyświetlić błędy sprawdzania poprawności, a element gotowych do użycia dla społecznościowych nazw logowania, jeśli zdecydujesz się dodać tych usług.
 
     ```html
     {% extends "app/layout.html" %}
@@ -144,15 +144,15 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     {% endblock %}
     ```
 
-1. Po przesłaniu formularza Django podejmuje próbę uwierzytelnienia poświadczeń użytkownika (na przykład poświadczenia użytkownika nadrzędnego). W przypadku niepowodzenia uwierzytelniania, użytkownik pozostanie na bieżącej stronie, ale `form.errors` ustawioną na true. Jeśli uwierzytelnianie zakończy się pomyślnie, Django przechodzi do względny adres URL w polu "dalej" `<input type="hidden" name="next" value="/" />`, czyli w tym przypadku strony głównej (`/`).
+1. Gdy prześlesz formularz, Django próbuje uwierzytelnienia poświadczeń użytkownika (na przykład poświadczenia użytkownika administratora). W przypadku niepowodzenia uwierzytelniania, możesz pozostać na bieżącej stronie, ale `form.errors` ma wartość true. Jeśli uwierzytelnianie się powiedzie, Django, przechodzi do względnym adresem URL w polu "dalej" `<input type="hidden" name="next" value="/" />`, czyli w tym przypadku na stronie głównej (`/`).
 
-1. Teraz, gdy strona główna jest renderowany ponownie, `user.is_authenticated` właściwość ma wartość true, gdy `loginpartial.html` renderowania szablonu. W związku z tym zostanie wyświetlony komunikat "Hello (nazwa_użytkownika)" i "Wyloguj". Można użyć `user.is_authenticated` w innych częściach aplikacji, aby sprawdzić uwierzytelniania.
+1. Teraz, gdy strona główna jest renderowany ponownie `user.is_authenticated` właściwość ma wartość true, gdy *loginpartial.html* szablonu jest renderowany. W rezultacie, zobacz **Hello (nazwa użytkownika)** wiadomości i **wylogować**. Możesz użyć `user.is_authenticated` w innych częściach aplikacji przeprowadzenie sprawdzenia uwierzytelniania.
 
-    ![Witaj wiadomości i wylogowywania kontrolki na stronie aplikacji projektu sieci Web Django](media/django/step05-logoff-control.png)
+    ![Witaj wiadomości i wylogowywania formantu na stronie aplikacja projektu sieci Web Django](media/django/step05-logoff-control.png)
 
-1. Aby sprawdzić, czy uwierzytelniony użytkownik jest autoryzowany do dostępu do określonych zasobów, musisz pobrać uprawnienia specyficzne dla użytkownika z bazy danych. Aby uzyskać więcej informacji, zobacz [przy użyciu uwierzytelniania systemu Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django dokumentów).
+1. Aby sprawdzić, czy uwierzytelniony użytkownik jest autoryzowany do dostępu do określonych zasobów, musisz pobrać uprawnienia specyficzne dla użytkowników ze swojej bazy danych. Aby uzyskać więcej informacji, zobacz [przy użyciu uwierzytelniania systemu Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django docs).
 
-1. Administratora lub administratora, w szczególności jest autoryzowany do dostępu wbudowanych interfejsy administratora Django, użyj względnych adresów URL "/admin/" i "/ admin/doc /". Aby włączyć te interfejsy, otwórz projekt Django `urls.py` i Usuń komentarze z poniższych:
+1. Administrator lub administrator, w szczególności jest autoryzowany do dostępu do wbudowanych interfejsów administratora Django przy użyciu względnych adresów URL "/admin/" i "/ admin/docs /". Aby włączyć te interfejsy, otwórz projekt Django *urls.py* i Usuń komentarze z następujących pozycji:
 
     ```python
     from django.conf.urls import include
@@ -167,11 +167,11 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     ]
     ```
 
-    Po ponownym uruchomieniu aplikacji, można przejść do "/admin/" i "/ admin/doc /" i wykonywać zadania, takie jak utworzenie dodatkowych kont użytkowników.
+    Po ponownym uruchomieniu aplikacji, możesz przejść do "/admin/" i "/ admin/docs /" i wykonywać zadania takie jak utworzenie dodatkowych kont użytkowników.
 
-    ![Interfejs administratora Django](media/django/step05-administrator-interface.png)
+    ![Django Administratorze](media/django/step05-administrator-interface.png)
 
-1. Ostatnia sekcja przepływ uwierzytelniania jest wylogowanie. Jak widać w `loginpartial.html`, **wylogować** łącze jest po prostu POST względny adres URL "/ logowania", który jest obsługiwany przez wbudowane widoku `django.contrib.auth.views.logout`. Ten widok nie powoduje wyświetlenia elementów interfejsu użytkownika i tylko przechodzi do strony głównej (jak pokazano w `urls.py` dla "^ wylogowania$" wzorzec). Jeśli chcesz wyświetlić stronę wylogowania, najpierw zmień wzorca adresu URL w następujący sposób, aby dodać właściwość "template_name" i Usuń właściwość "next_page":
+1. Wylogowanie końcowe część z przepływem uwierzytelniania. Jak widać w *loginpartial.html*, **wylogować** łącze jest po prostu WPIS względny adres URL "/ logowania", który jest obsługiwany przez wbudowany view `django.contrib.auth.views.logout`. Ten widok nie wyświetla żadnych interfejsów użytkownika i po prostu powoduje przejście do strony głównej (jak pokazano na *urls.py* dla "^ wylogowania$" wzorca). Jeśli chcesz wyświetlić stronę wylogowywania, należy najpierw zmienić wzorzec adresu URL w następujący sposób, aby dodać właściwość "template_name" i Usuń właściwość "next_page":
 
     ```python
     url(r'^logout$',
@@ -183,7 +183,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
         name='logout')
     ```
 
-    Następnie utwórz `templates/app/loggedoff.html` z następującą zawartość (minimalny):
+    Następnie utwórz *templates/app/loggedoff.html* z następującą zawartością (minimalny):
 
     ```html
     {% extends "app/layout.html" %}
@@ -192,22 +192,22 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
     {% endblock %}
     ```
 
-    Wynik wygląda następująco:
+    Wynik jest wyświetlany w następujący sposób:
 
-    ![Dodaje wylogowany strony](media/django/step05-logged-off-page.png)
+    ![Dodano wylogowany strony](media/django/step05-logged-off-page.png)
 
-1. Gdy wszystko gotowe, Zatrzymaj serwer i ponownie przekazać zmiany do kontroli źródła.
+1. Gdy wszystko będzie gotowe, zatrzymać serwer ponownie zmianami i zatwierdzanie ich do kontroli źródła.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: co to jest celem {% crsf_token %} tagów, które pojawia się w \<formularza\> elementy?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% crsf_token %} tagów, które pojawia się w \<formularza\> elementy?
 
-Odpowiedź: `{% crsf_token %}` znacznik zawiera wbudowane w Django [międzylokacyjnej ochrony sfałszowaniem (crsf) żądania](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django dokumentów). Zazwyczaj ten tag są dodawane do elementów, które obejmuje metody żądania POST, PUT i DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia potrzeby ochrony.
+Odpowiedź: `{% crsf_token %}` znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (crsf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Należy użyć szablonu projektu sieci Web Django sond](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+> [Użyj szablonu projektu sieci Web Django sond](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="go-deeper"></a>Przejść głębiej
+## <a name="go-deeper"></a>Przejdź dalej
 
 - [Uwierzytelnianie użytkownika w Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — django](https://github.com/Microsoft/python-sample-vs-learning-django)
