@@ -21,6 +21,7 @@
 ## [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)
 ### [Przewodnik: Dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
 ## [Zarządzanie zasobami aplikacji](managing-app-resources.md)
+## [Instrukcje: otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
 
 # [Edytor źródeł](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
