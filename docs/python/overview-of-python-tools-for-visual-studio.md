@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175369"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468780"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
 Język Python jest popularnych języków programowania, które jest niezawodne, elastyczne, można łatwo dowiedzieć się, bezpłatnie do użycia we wszystkich systemach operacyjnych i obsługiwane przez społeczność deweloperów silne i wielu bezpłatnych bibliotek. Python obsługuje wszystkich sposobów rozwoju, w tym aplikacje sieci web, usług sieci web, aplikacje klasyczne, skryptów i obliczeń naukowych i jest używany przez wiele uniwersytety, analitykom, zwykłych deweloperów i podobne profesjonalnych deweloperów. Temat można znaleźć więcej informacji na temat języka na [python.org](https://www.python.org) i [języka Python dla początkujących](https://www.python.org/about/gettingstarted/).
 
-Visual Studio to zaawansowane środowisko IDE języka Python na Windows. Program Visual Studio udostępnia [typu open-source](https://github.com/Microsoft/ptvs) obsługę języka Python za pomocą obciążenia programowania w języku Python i analizy danych (Visual Studio 2017) i bezpłatnych narzędzi Python Tools for Visual Studio rozszerzenia (Visual Studio 2015 i wcześniej).
+Visual Studio to zaawansowane środowisko IDE języka Python na Windows. Program Visual Studio udostępnia [typu open-source](https://github.com/Microsoft/ptvs) obsługę języka Python za pomocą **programowania w języku Python** i **do nauki o danych** obciążeń (Visual Studio 2017) i bezpłatna Narzędzia Python Tools for Visual Studio rozszerzenia (Visual Studio 2015 i starsze).
 
 Python nie jest obecnie obsługiwana w programie Visual Studio dla komputerów Mac, ale jest dostępna na komputerach Mac i Linux za pomocą programu Visual Studio Code (zobacz [pytań i odpowiedzi](#questions-and-answers)).
 
@@ -31,7 +31,7 @@ Aby rozpocząć pracę:
 - Postępuj zgodnie z [instrukcje dotyczące instalacji](installing-python-support-in-visual-studio.md) skonfigurować obciążenie języka Python.
 - Zapoznaj się z możliwościami Python programu Visual Studio za pomocą sekcji w niniejszym artykule. Możesz również [Obejrzyj serię wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) wprowadzenie do języka Python w programie Visual Studio (łączna liczba minut 22).
 - Przechodzą przez co najmniej jeden z przewodników Szybki Start, aby utworzyć projekt. Jeśli wiesz, skorzystaj z [tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
-- Postępuj zgodnie z [pracy za pomocą języka Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) samouczek dotyczący środowiska pełnej end-to-end.
+- Postępuj zgodnie z [działał z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) samouczek dotyczący środowiska pełnej end-to-end.
 
 ## <a name="support-for-multiple-interpreters"></a>Obsługa wielu interpretery
 
@@ -41,19 +41,19 @@ Visual Studio **środowiska Python** okna (w widoku szerokie, rozwinięty pokaza
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 35s): [Zarządzanie środowiskami Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Wideo (2 mln 35s): [środowiska Python Zarządzanie](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Dokumentacja: [środowiska Python Zarządzanie](managing-python-environments-in-visual-studio.md)
 - Dokumentacja: [dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
 
-Program Visual Studio zapewnia najwyższej klasy Edytor języka Python obejmujący kolorowanie składni, automatyczne uzupełnianie kodu i bibliotek, formatowanie pomocy dotyczącej sygnatur, refaktoryzacji, Zaznaczanie błędów i wskazówek dotyczących typów kodu. Visual Studio udostępnia również unikatowych funkcji, takich jak Widok klas, przejdź do definicji i Znajdź wszystkie odwołania, fragmenty kodu. Bezpośrednia Integracja z [okna interaktywnego](#interactive-window) ułatwia szybkie tworzenie kodu w języku Python, który już został zapisany w pliku.
+Program Visual Studio zapewnia najwyższej klasy Edytor języka Python obejmujący kolorowanie składni, automatyczne uzupełnianie kodu i bibliotek, formatowanie pomocy dotyczącej sygnatur, refaktoryzacji, Zaznaczanie błędów i wskazówek dotyczących typów kodu. Visual Studio udostępnia również unikatowych funkcji, takich jak Widok klas **przejdź do definicji**, **Znajdź wszystkie odwołania**i fragmenty kodu. Bezpośrednia Integracja z [okna interaktywnego](#interactive-window) ułatwia szybkie tworzenie kodu w języku Python, który już został zapisany w pliku.
 
 ![Uzupełnianie kodu dla kodu w języku Python w programie Visual Studio](media/code-editing-completions-simple.png)
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 30 sekund): [kodu do edycji języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Wideo (2 mln 30 sekund): [kod edycji języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Dokumentacja: [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)
 - Dokumentacja: [formatowania kodu](formatting-python-code.md)
 - Dokumentacja: [Refaktoryzacja kodu](refactoring-python-code.md)
@@ -66,13 +66,13 @@ Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łat
 
 ![Oknie interakcyjnym środowiska Python w programie Visual Studio](media/interactive-window.png)
 
-Visual Studio udostępnia również na ścisłą integrację z edytora kodu języka Python i oknie interaktywnym. **Ctrl + Enter** skrót klawiaturowy wygodnie bieżący wiersz kodu (lub blok kodu) w edytorze do okna interaktywnego, a następnie przechodzi do następnego wiersza (lub blok). **Naciśnij klawisze Ctrl + Enter** pozwala łatwo Przechodź przez kod bez konieczności uruchamiania debugera. Możesz również wysłać zaznaczony kod do okna interaktywnego przy użyciu tego samego naciśnięcia klawisza i łatwo wkleić kod z okna interaktywnego do edytora. Razem te funkcje umożliwiają pozwolimy na opracowanie szczegóły dotyczące segmentów kodu w oknie interaktywnym i łatwo zapisać wyniki w pliku w edytorze.
+Visual Studio udostępnia również ścisłą integrację między Edytorem kodu języka Python i **Interactive** okna. **Ctrl**+**Enter** skrót klawiaturowy wygodnie wysyła bieżący wiersz kodu (lub blok kodu) w edytorze **Interactive** spowoduje przesunięcie okna do następnego wiersza (lub blok). **CTRL**+**Enter** pozwala łatwo Przechodź przez kod bez konieczności uruchamiania debugera. Możesz również wysłać zaznaczony kod do **Interactive** okna o takiej samej klawiszy i łatwo wkleić kod z **Interactive** okna do edytora. Razem te funkcje umożliwiają pracę bardziej szczegółowe informacje dla segmentu kodu w **Interactive** okna i łatwo zapisać wyniki w pliku w edytorze.
 
-Program Visual Studio obsługuje również IPython/Jupytr w rozwiązaniu REPL, m.in. wbudowane powierzchnie, .NET i Windows Presentation Foundation (WPF).
+Program Visual Studio obsługuje również IPython/Jupyter w rozwiązaniu REPL, m.in. wbudowane powierzchnie, .NET i Windows Presentation Foundation (WPF).
 
 Informacje dodatkowe:
 
-- Wideo (2 mln 22s: [oknie interakcyjnym środowiska Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Wideo (2 mln 22s: [okno interaktywne języka Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
 - Dokumentacja: [okno interaktywne](python-interactive-repl-in-visual-studio.md)
 - Dokumentacja: [IPython w programie Visual Studio](interactive-repl-ipython.md)
 
@@ -91,13 +91,13 @@ Informacje dodatkowe:
 - Dokumentacja: [projektów języka Python Zarządzanie](managing-python-projects-in-visual-studio.md)
 - Dokumentacja: [dotyczące szablonów elementu](python-item-templates.md)
 - Dokumentacja: [szablony projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Dokumentacja: [Praca z C++ i Python](working-with-c-cpp-python-in-visual-studio.md)
+- Dokumentacja: [pracować z C++ i Python](working-with-c-cpp-python-in-visual-studio.md)
 - Dokumentacja funkcji ogólne Visual Studio: [szablonów projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)
 - Dokumentacja funkcji ogólne Visual Studio: [rozwiązań i projektów w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Oferujący debugowania
 
-Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla języka Python w szczególności program Visual Studio zawiera języków Python/C++ debugowanie w trybie mieszanym, zdalne debugowanie w systemie Linux, zdalne debugowanie na platformie Azure, debugowanie w oknie interaktywnym i debugowanie testów jednostkowych dla kodu Python.
+Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla języka Python w szczególności program Visual Studio zawiera debugowanie trybu mieszanego języków Python/C++, zdalne debugowanie w systemie Linux, zdalne debugowanie na platformie Azure, profilowanie w ciągu **Interactive** okna i debugowanie testów jednostkowych dla kodu Python.
 
 ![Debuger programu Visual Studio dla języka Python, przedstawiający okno podręczne wyjątku](media/debugging-exception-popup.png)
 
@@ -108,7 +108,7 @@ Informacje dodatkowe:
 - Dokumentacja: [debugowanie trybu mieszanego języków Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Dokumentacja: [zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
 - Dokumentacja: [zdalnego debugowania na platformie Azure](debugging-remote-python-code-on-azure.md)
-- Dokumentacja funkcji ogólne Visual Studio: [Przewodnik po funkcjach debugera Visual Studio](../debugger/debugger-feature-tour.md)
+- Dokumentacja funkcji ogólne Visual Studio: [funkcji samouczek debuger programu Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Narzędzia profilowania przy użyciu kompleksowe raportowanie
 
@@ -124,7 +124,7 @@ Informacje dodatkowe:
 
 ## <a name="unit-testing-tools"></a>Narzędzia do testowania jednostkowego
 
-Odkryj, uruchamianie, zarządzanie testami w Visual Studio Test Explorer i łatwe debugowanie testów jednostkowych.
+Odkryj, uruchamianie i zarządzanie testami w Visual Studio **Eksplorator testów**i łatwo Debuguj testy jednostkowe.
 
 ![Profilowanie testu jednostkowego języka Python w programie Visual Studio](media/unit-test-debugging.png)
 
@@ -134,22 +134,22 @@ Informacje dodatkowe:
 - Dokumentacja: [testów jednostkowych narzędzia dla języka Python](unit-testing-python-in-visual-studio.md)
 - Dokumentacja funkcji ogólne Visual Studio: [kodu testu jednostkowego](../test/unit-test-your-code.md).
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Publikowanie na platformie Azure oraz Azure SDK dla języka Python
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Publikowanie na platformie Azure oraz Azure SDK dla języka Python
 
-Program Visual Studio obsługuje zintegrowane publikowanie aplikacji sieci web i usług w chmurze na platformie Azure. Program Visual Studio zawiera podstawowe `web.config` szablony statycznych i dynamicznych zawartości elementu. Obciążenie języka Python zawiera także zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z Windows, Mac OS X i Linux, aplikacji.
+Program Visual Studio obsługuje zintegrowane publikowanie aplikacji sieci web i usług w chmurze na platformie Azure. Program Visual Studio zawiera podstawowe *web.config* szablony statycznych i dynamicznych zawartości elementu. Obciążenie języka Python zawiera także zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z Windows, Mac OS X i Linux, aplikacji.
 
 ![Publikowanie aplikacji w języku Python na platformie Azure w programie Visual Studio](media/azure-publish-dialog.png)
 
 Informacje dodatkowe:
 
-- Dokumentacja: [publikowania na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Dokumentacja: [publikowanie na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Dokumentacja: [zestaw Azure SDK dla języka Python](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python Szkolenie Microsoft Virtual Academy
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | <ul><li>[Wprowadzenie do programowania w języku Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Języka Python dla początkujących: Ciągi i funkcje](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Podstawy języka Python: Listy i pętle](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python najważniejsze pytania](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | <ul><li>[Wprowadzenie do programowania w języku Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Początkujący Python: ciągi i funkcje](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Podstawy języka Python: listy i pętle](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Najczęściej zadawane pytania w języku Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 
@@ -163,7 +163,7 @@ A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for
 
 **PYTANIA I ODPOWIEDZI. Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
 
-A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python do tworzenia plików wykonywalnych, zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [możliwego do osadzenia pliku Zip przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python do tworzenia plików wykonywalnych, zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Tabela funkcji
 
@@ -291,9 +291,9 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 1. Edytor szablonów Django w programie Visual Studio 2013 zawiera niektóre znane problemy, które są rozpoznawane przez instalowania aktualizacji Update 2.
 
-1. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma dialogowym Dołącz do procesu, ale zdalne debugowanie witryny sieci Web platformy Azure jest nadal możliwe, za pomocą polecenia dołączanie debugera (Python) w oknie Eksploratora serwera. Zdalne debugowanie wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
+1. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma **dołączyć do procesu** okna dialogowego, ale witryny sieci Web platformy Azure, zdalne debugowanie jest nadal możliwe przy użyciu **dołączanie debugera (Python)** polecenia w pliku **serwera Eksplorator**. Zdalne debugowanie wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
 
-1. Wymaga systemu Windows 8 lub nowszy. Dołącz debuger (Python) polecenie w oknie Eksploratora serwera wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
+1. Wymaga systemu Windows 8 lub nowszy. **Dołącz debuger (Python)** polecenia w pliku **Eksploratora serwera** wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
 
 1. Wymaga systemu Windows 8 lub nowszy.
 
@@ -301,4 +301,4 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 - [WFastCGI Most między usługami IIS a Python](https://pypi.org/p/wfastcgi) (pypi.org)
 - [Bezpłatne kursy języka Python w Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Python najważniejsze pytania w Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
+- [Najważniejsze pytania języka Python w Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

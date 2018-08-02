@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177870"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469070"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -109,9 +109,9 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 
 ## <a name="use-a-different-unit-test-framework"></a>Używać różnych testów jednostkowych
 
-Można uruchomić testy jednostkowe w programie Visual Studio, za pomocą platform testowych innych firm, takich jak zwiększenie wydajności, Google i nUnit. Użyj wtyczki dla struktury modułu uruchamiającego testy w tym Visual Studio może więc pracować z tą strukturą.
+Można uruchomić testy jednostkowe w programie Visual Studio, za pomocą platform testowych innych firm, takich jak zwiększenie wydajności, Google i NUnit. Użyj wtyczki dla struktury modułu uruchamiającego testy w tym Visual Studio może więc pracować z tą strukturą.
 
-Poniżej przedstawiono kroki, aby włączyć platform testowych innych części:
+Poniżej przedstawiono kroki, aby włączyć platform testowych innych firm:
 
 1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje** z paska menu.
 

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177308"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468793"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Wskazówki: Debugowanie aplikacji równoległych w programie Visual Studio
 Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
@@ -65,9 +65,9 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
 1.  W programie Visual Studio na **pliku** menu wskaż **New** a następnie kliknij przycisk **projektu**.  
   
-2.  W **zainstalowane szablony** okienku wybierz opcję Visual C#, Visual Basic lub Visual C++. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest wyświetlana w polu framework.  
+2.  Wybierz opcję **Visual C#**, **języka Visual Basic**, lub **Visual C++**. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest wyświetlana w polu framework.  
   
-3.  Wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.  
+3.  W obszarze **pulpitu Windows**, wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.  
   
 4.  Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.  
   

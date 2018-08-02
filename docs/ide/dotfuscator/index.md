@@ -5,7 +5,7 @@ ms.devlang: dotnet
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązań cenią sobie wcześniejsze ochrony, ochronie, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r.
+keywords: Narzędzia Dotfuscator, zaciemniacza kodu Dotfuscator CE, narzędzia PreEmptive firmy PreEmptive Solutions PreEmptive ochrony, ochrona, wersja community edition, zasłanianie, .NET, bezpłatną, Visual Studio 2017
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -13,76 +13,74 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: Dowiedz się, jak możesz chronić aplikacje .NET z bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r.
+description: Dowiedz się, jak może chronić aplikacje platformy .NET, bezpłatny system Dotfuscator Community Edition zawarte w programie Visual Studio 2017.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704399"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468199"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
-*Ochrona cenią sobie wcześniejsze — Dotfuscator* zapewnia kompleksową ochronę aplikacji .NET łatwo mieści się w cyklu programistycznym z bezpiecznego oprogramowania.
-Użycie ograniczenia funkcjonalności, ochronę i Oczyść pulpitu, mobile serwera i aplikacji embedded ułatwia bezpiecznego tajemnice handlowe i inne prawa własności intelektualnej (IP), ograniczyć piractwo i fałszowania oraz ochronę przed naruszeniem i nieautoryzowanym debugowania.
-Dotfuscator działa na skompilowane zestawy bez konieczności dodatkowego programowania lub nawet dostępu do kodu źródłowego.
+*Ochrona preEmptive — Dotfuscator* zapewnia kompleksową ochronę aplikacji .NET, łatwo mieści się w cyklu życia tworzenia bezpiecznego oprogramowania.
+Użycie go do wzmacniania zabezpieczeń, ochrony i Oczyść pulpitu, telefon komórkowy, serwera i aplikacje osadzone ułatwia bezpieczne tajemnic handlowych i innych praw własności intelektualnej (IP), zmniejszyć piractwa i fałszowania oraz ochronę przed naruszeniem i nieautoryzowanego debugowania.
+System Dotfuscator działa w skompilowanych zestawów bez konieczności dodatkowego programowania lub nawet dostępu do kodu źródłowego.
 
-![Ochrona cenią sobie wcześniejsze — Dotfuscator](media/header.svg)
+![Ochrona preEmptive — Dotfuscator](media/header.svg)
 
-## <a name="why-protection-matters"></a>Dlaczego ma znaczenie ochrony
+## <a name="why-protection-matters"></a>Dlaczego jest ważna ochrony
 
-Ważne jest, aby **ochrony własności intelektualnej** (IP).
-Kod aplikacji zawiera szczegóły projekt i implementację, które mogą być uważane za IP.
-Jednak aplikacje utworzone w programie .NET Framework [obejmują znaczących metadanych i wysokiego poziomu pośredniego kod][assemblies], udostępnia je łatwo odtworzyć, używając jednego z wielu wolny, automatycznego narzędzia.
-Zakłócania i zatrzymywanie odtwarzania możesz można zapobiec nieuprawnionym ujawnieniem adresu IP, a także pokazują, że kod zawiera tajemnice handlowe.
-Można Dotfuscator [zasłaniają] [ obfuscation] Twojego zestawów platformy .NET utrudnić odtwarzania, przy zachowaniu oryginalnej zachowanie aplikacji.
+Ważne jest, aby **chronią własność intelektualną** (IP).
+W kodzie aplikacji szczegółów projektu i implementacji, które mogą być uważane za adresów IP.
+Jednak aplikacje tworzone w środowisku .NET Framework [zawierają istotne metadane i wysokiego poziomu kodu pośredniego][assemblies], dzięki czemu można łatwo odtworzyć, po prostu wykonując jedną z wielu bezpłatnych, automatyczne narzędzia.
+Zakłócania i zatrzymywania odtwarzania możesz można zapobiec nieuprawnionym ujawnieniem adresu IP, a także pokazują, że Twój kod zawiera tajemnic handlowych.
+Można Dotfuscator [zaciemniania] [ obfuscation] zestawów .NET utrudnić odtwarzania, przy zachowaniu zachować oryginalne zachowanie aplikacji.
 
-Ważna jest również **ochronę integralności aplikacji**.
-Oprócz odtwarzania nieupoważnione osoby mogą próbować pirate aplikacji, zmiany zachowania aplikacji w czasie wykonywania lub manipulować danymi.
-Dotfuscator można wstrzyknąć aplikacji przy użyciu możliwości [wykrywanie, raport i odpowiadać na nieautoryzowany używa][checks], w tym naruszeniu, debugowanie innych firm i odblokowanym dostępem.
+Warto również **chronią integralność aplikacji**.
+Oprócz odtwarzania nieupoważnione osoby mogą próbować pirate aplikacji, zmienić zachowanie aplikacji w czasie wykonywania lub wykonywać operacje na danych.
+System Dotfuscator może wprowadzać aplikacji dzięki możliwości [wykrywanie oraz reagowanie na nieautoryzowany używa][checks], w tym naruszeniu, debugowania innych firm i urządzenia z odblokowanym dostępem.
 
-Aby uzyskać więcej informacji na jak Dotfuscator dopasowuje się do cyklu programistycznym bezpiecznego oprogramowania, zobacz cenią sobie wcześniejsze rozwiązania [strona ochrony aplikacji SDL][sdl-protection].
+Aby uzyskać więcej informacji na temat jak Dotfuscator dopasowuje się do cykl programowania aplikacji bezpiecznego oprogramowania, zobacz firmy PreEmptive Solutions [strony SDL App Protection][sdl-protection].
 
-## <a name="about-dotfuscator-ce"></a>O Dotfuscator CE
+## <a name="about-dotfuscator-ce"></a>O programu Dotfuscator CE
 
-Twoja kopia programu Microsoft Visual Studio 2017 zawiera kopię  ***cenią sobie wcześniejsze ochrony - Dotfuscator* Community Edition**, znanej również jako CE Dotfuscator bezpłatnie do użytku osobistego.
-Aby uzyskać instrukcje na temat instalowania wersji uwzględnionych w programie Visual Studio 2017 CE Dotfuscator, zobacz [strona instalacji][install].
+Twoja kopia programu Microsoft Visual Studio 2017 zawiera kopię  ***PreEmptive ochrona — Dotfuscator* Community Edition**, znanego również jako zaciemniacza kodu Dotfuscator CE bezpłatne do użytku osobistego.
+Aby uzyskać instrukcje dotyczące sposobu instalowania wersji programu Dotfuscator CE dołączone do programu Visual Studio 2017, zobacz [strona instalacji][install].
 
-Dotfuscator CE oferuje szeroką gamę [ochrony oprogramowania i ograniczania funkcjonalności] [ software-protection] usług dla deweloperów, architektów i testerów.
-Przykłady [zaciemnienie .NET] [ obfuscation] i innych [ochrona aplikacji] [ app-protection] funkcje zawarte w Dotfuscator CE są:
+System Dotfuscator CE oferuje szeroką gamę [oprogramowania ochrony i Ograniczanie funkcjonalności] [ software-protection] usług dla testerów, architektów i deweloperów.
+Przykłady [zasłanianie .NET] [ obfuscation] i innych [ochrona aplikacji] [ app-protection] funkcji dostępnych w systemie Dotfuscator CE są:
 
-* *[Zmiana nazwy] [ renaming]*  identyfikatorów utrudnić odtwarzania skompilowane zestawy.
-* *[Wykrycie przed] [ tamper]*  do wykrywania wykonywania aplikacji zmodyfikowany, przesłać alerty incydentu, a następnie Zakończ zmodyfikowany sesji.
-* *[Układ debugowania] [ debug]*  do wykrywania dołączanie debugera do uruchomienia aplikacji, przesłać alerty incydentu, a następnie Zakończ debugowanym sesji.
-* *[Anty-odblokowanym] [ root]*  do wykrywania, czy aplikacja działa na odblokowanym Android i kończenie sesji na tych urządzeniach.
-* *[Zachowania wygaśnięcia aplikacji] [ shelflife]*  który kodowania daty "z wycofanych", wysyłać alerty, kiedy są wykonywane po ich Data wygaśnięcia aplikacji, a następnie Zakończ aplikacji wygasłych sesji.
-* *[Śledzenie wyjątków] [ exceptions]*  do monitorowania nieobsługiwanych wyjątków występujących w aplikacji.
-* *[Sesja] [ sessions] i [funkcji] [ features] śledzenie użycia* do określenia, jakie aplikacje były wykonywane, jakie wersje tych aplikacje i jakie funkcje są używane w tych aplikacjach.
+* *[Zmiana nazwy] [ renaming]*  identyfikatorów utrudniają odtwarzania skompilowanych zestawów.
+* *[Zapobieganie odporne] [ tamper]*  do wykrywania wykonywania aplikacji zmodyfikowany i zakończyć lub odpowiadać na nie przez nikogo sesji.
+* *[Zapobieganie debugowania] [ debug]*  wykrycia dołączanie debugera do uruchomionej aplikacji i zakończyć lub odpowiadać na debugowania sesji.
+* *[Zapobiegających odblokowanym dostępem] [ root]*  wykryć, czy aplikacja działa na urządzenie z odblokowanym dostępem dla systemu Android i zakończyć lub odpowiadać na sesjach na tych urządzeniach.
+* *[Zachowania wygaśnięcia aplikacji] [ shelflife]*  , kodowanie daty "zakończenia eksploatacji" i zakończenie sesji aplikacji wygasły.
 
-Szczegółowe informacje o tych funkcjach, w tym sposób dopasowania do strategii ochrony aplikacji można znaleźć [strony możliwości][capabilities].
+Aby uzyskać szczegółowe informacje o tych funkcjach, w tym sposób dopasowania do strategii ochrony aplikacji, zobacz [strona możliwości][capabilities].
 
-Dotfuscator CE udostępnia podstawowe ochrony out-of--box.
-Jeszcze więcej środków ochronnych aplikacji dostępnych w zarejestrowani użytkownicy Dotfuscator CE i użytkowników *cenią sobie wcześniejsze ochrony - Dotfuscator* Professional Edition początkowe na świecie [faktem .NET] [net-obfuscator].
-Aby dowiedzieć się, jak udoskonalanie Dotfuscator, zobacz [strony uaktualnienia][upgrades].
+System Dotfuscator CE zapewnia podstawową ochronę out-of--box.
+Jeszcze więcej środków ochrony aplikacji są dostępne, zarejestrowanych użytkowników programu Dotfuscator CE i użytkowników *PreEmptive ochrona — Dotfuscator* Professional Edition wiodącego świata [.NET Obfuscator] [net-obfuscator].
+Aby uzyskać informacji na temat zwiększenia Dotfuscator, zobacz [stronie uaktualnienia][upgrades].
 
 ## <a name="getting-started"></a>Wprowadzenie
 
-Aby rozpocząć korzystanie z CE Dotfuscator z programu Visual Studio, wpisz `dotfuscator` do **Szybkie uruchamianie** pasek wyszukiwania (Ctrl + Q).
+Aby rozpocząć korzystanie z programu Dotfuscator CE w programie Visual Studio, należy wpisać `dotfuscator` do **Szybkie uruchamianie** paska wyszukiwania (Ctrl + Q).
 
-* Jeśli zainstalowano Dotfuscator CE **Szybkie uruchamianie** wywołuje *Menu* opcję, aby uruchomić interfejs użytkownika Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
-* Jeśli nie zainstalowano jeszcze Dotfuscator CE, **Szybkie uruchamianie** wyświetlenie odpowiedniego *zainstalować* opcji. Zobacz [strona instalacji] [ install] szczegółowe informacje.
+* Jeśli zainstalowano narzędzia Dotfuscator CE **Szybkie uruchamianie** wyświetlenie *Menu* opcję, aby uruchomić interfejs użytkownika programu Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [stronie wprowadzenie pełnego przewodnika użytkownika programu Dotfuscator CE][get-started].
+* Jeśli nie zainstalowano jeszcze programu Dotfuscator CE, **Szybkie uruchamianie** wyświetlenie odpowiedniego *zainstalować* opcji. Zobacz [strona instalacji] [ install] Aby uzyskać szczegółowe informacje.
 
-Można także uzyskać **najnowszej wersji** CE Dotfuscator z [strony Dotfuscator pliki do pobrania na preemptive.com][download].
+Możesz też pobrać **najnowszej wersji** Dotfuscator CE z [strony pobierania narzędzia Dotfuscator na preemptive.com][download].
 
 ## <a name="full-documentation"></a>Pełną dokumentację
 
-Tę stronę i jego podstrony stanowią ogólne omówienie funkcji Dotfuscator CE, jak również [instrukcje dotyczące instalowania narzędzia][install].
+Na tej stronie i jego podstrony stanowią ogólne omówienie funkcji programu Dotfuscator CE, a także [instrukcje dotyczące instalowania narzędzia][install].
 
-Zobacz [pełny przewodnik użytkownika CE Dotfuscator w preemptive.com] [ full] szczegółowe instrukcje dotyczące obsługi, w tym [sposobu uruchamiania przy użyciu interfejsu użytkownika Dotfuscator CE] [ get-started].
+Zobacz [pełnego przewodnika użytkownika CE Dotfuscator na preemptive.com] [ full] szczegółowe instrukcje dotyczące, w tym [jak rozpocząć korzystanie z interfejsu użytkownika programu Dotfuscator CE] [ get-started].
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
@@ -107,9 +105,5 @@ Zobacz [pełny przewodnik użytkownika CE Dotfuscator w preemptive.com] [ full] 
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

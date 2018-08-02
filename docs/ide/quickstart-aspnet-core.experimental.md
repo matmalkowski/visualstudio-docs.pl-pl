@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1c137cbb8e739eaef5646e0d2ebbbe73ee85e4e9
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409771"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469142"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -79,17 +79,16 @@ Następnie będzie tworzenie i uruchamianie aplikacji sieci web "Hello World". P
 
 1. Upewnij się, że **o** strona zawiera zaktualizowane tekstu.
 
+1. Zamknij przeglądarkę sieci web.
+
 Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco C#, ASP.NET Core i programu Visual Studio IDE (zintegrowanym środowiskiem programistycznym).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej, przejdź z następujących samouczków:
+Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 > [!div class="nextstepaction"]
 > [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Wprowadzenie do ASP.NET Core MVC i programu Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Zobacz także
 

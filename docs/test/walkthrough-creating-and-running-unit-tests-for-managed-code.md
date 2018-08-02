@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380866"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469116"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -210,7 +210,7 @@ Metoda testowa musi spełniać następujące wymagania:
 
 ### <a name="analyze-the-test-results"></a>Analizuj wyniki testu
 
-Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEquals` metody komunikat wyświetla co oczekiwano ( **oczekiwana\<*wartość* >**  parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*wartość* >** parametru). Oczekiwano saldo, aby zmniejszyć, ale zamiast tego jego faktycznego wzrosła o Kwota wybrana z konta.
+Wynik testu zawiera komunikat, który opisuje błąd. Dla `AreEqual` metody komunikat wyświetla co oczekiwano ( **oczekiwana\<*wartość* >**  parametr) i co zostało rzeczywiście przesłane ( **Rzeczywiste\<*wartość* >** parametru). Oczekiwano saldo, aby zmniejszyć, ale zamiast tego wzrosła o kwotę wycofania.
 
 Test jednostkowy ma niewykrytych usterek: ilość wycofanie *dodano* do salda konta, a powinien znajdować *odejmować*.
 

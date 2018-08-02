@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Debugowanie formularzy systemu Windows | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Debugowanie formularza Windows | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056805"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468533"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.  
@@ -45,33 +45,31 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Aby utworzyć formularz systemu Windows dla tego przewodnika  
   
-1.  Na **pliku** menu, wybierz **nowy** i kliknij przycisk **projektu**.  
+1.  Na **pliku** menu, wybierz **New** i kliknij przycisk **projektu**.  
   
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.  
+     **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  Otwórz w okienku typów projektów **Visual Basic**, **Visual C#**, lub **Visual C++** węzeł, a następnie  
+2.  W okienku typów projektów, otwórz **języka Visual Basic**, **Visual C#**, lub **Visual C++** węzła, a następnie  
   
-    1.  Dla języka Visual Basic lub Visual C#, wybierz **Windows** węzła, następnie wybierz **aplikacji formularzy systemu Windows** w **szablony** okienka.  
+    1.  W języku Visual Basic lub Visual C#, wybierz **pulpitu Windows** > **aplikacja formularza Windows**.  
   
-    2.  W języku Visual C++, wybierz **CLR** węzła, następnie wybierz **aplikacji formularzy systemu Windows** w **szablony** okienka.  
+    2.  W języku Visual C++, wybierz **aplikację pulpitu Windows**.  
   
-3.  W **szablony** okienku wybierz **aplikacji systemu Windows**.  
+3.  W **nazwa** pole, należy nadać projektowi unikatową nazwę (na przykład Walkthrough_SimpleDebug).  
   
-4.  W **nazwa** należy nadać unikatową nazwę (na przykład Walkthrough_SimpleDebug) projektu.  
+4.  Kliknij przycisk **OK**.  
   
-5.  Kliknij przycisk **OK**.  
+     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-     Visual Studio tworzy nowy projekt i wyświetla nowy formularz w Projektancie Windows Forms. Aby uzyskać więcej informacji, zobacz [Projektant formularzy systemu Windows](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
-  
-6.  Na **widoku** menu, wybierz opcję **przybornika**.  
+5.  Na **widoku** menu, wybierz opcję **przybornika**.  
   
      Przybornik zostaje otwarty. Aby uzyskać więcej informacji, zobacz [przybornika](../ide/reference/toolbox.md).  
   
-7.  W przyborniku kliknij **przycisk** kontroli i przeciągnij formant do warstwy projektowania formularza. Upuść przycisk na formularzu.  
+6.  W przyborniku kliknij **przycisk** kontroli i przeciągnij go na powierzchnię projektową formularza. Upuść przycisk na formularzu.  
   
-8.  W przyborniku kliknij **pole tekstowe** kontroli i przeciągnij formant do warstwy projektowania formularza. Upuść **pole tekstowe** w formularzu.  
+7.  W przyborniku kliknij **TextBox** kontroli i przeciągnij go na powierzchnię projektową formularza. Upuść **TextBox** w formularzu.  
   
-9. Na powierzchni projektowej formularza, dwukrotnie kliknij przycisk.  
+8. Na powierzchni projektowej formularza, dwukrotnie kliknij przycisk.  
   
      Spowoduje to przejście do strony kodowej. Kursor powinien być w `button1_Click`.  
   
@@ -115,7 +113,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
      Pojawi się czerwona kropka i tekst w wierszu zostanie wyróżniony czerwonym kolorem. Czerwona kropka reprezentuje punkt przerwania. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Po uruchomieniu aplikacji w trybie debugowania, debuger zlokalizuje miejsce trafienia kodu i przerwie tam wykonywanie. Można wówczas wyświetlić stan aplikacji i zdebugować ją.  
   
     > [!NOTE]
-    >  Również kliknięciu prawym przyciskiem myszy dowolny wiersz kodu, wskaż pozycję **punktu przerwania**, a następnie kliknij przycisk **wstawić punktu przerwania** Aby dodać punkt przerwania w tym wierszu.  
+    >  Również kliknięciu prawym przyciskiem myszy dowolny wiersz kodu, wskaż polecenie **punktu przerwania**, a następnie kliknij przycisk **Wstaw punkt przerwania** można dodać punkt przerwania w danym wierszu.  
   
 2.  ON **debugowania** menu, wybierz **Start**.  
   
@@ -125,21 +123,21 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
   
      W programie Visual Studio powoduje to przejście do wiersza, w którym został ustawiony punkt przerwania na stronie kodowej. Ten wiersz powinien być wyróżniony żółtym kolorem. Można teraz wyświetlić zmienne w aplikacji i kontrolować jej wykonanie. Aplikacja zatrzymała teraz wykonywanie, czekając na akcję ze strony użytkownika.  
   
-4.  Na **debugowania** menu, wybierz **Windows**, następnie **czujki**i kliknij przycisk **Watch1**.  
+4.  Na **debugowania** menu, wybierz **Windows**, następnie **Obejrzyj**i kliknij przycisk **Watch1**.  
   
-5.  W **Watch1** kliknij na pusty wiersz. W **nazwa** wpisz `textBox1.Text` (Jeśli używasz programu Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz C++), naciśnij klawisz ENTER.  
+5.  W **Watch1** oknie i kliknij pusty wiersz. W **nazwa** wpisz `textBox1.Text` (Jeśli używasz języka Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz języka C++), naciśnij klawisz ENTER.  
   
-     **Watch1** okno zawiera wartość tej zmiennej w cudzysłów jako:  
+     **Watch1** okno pokazuje wartość tej zmiennej w cudzysłowie jako:  
   
     `""`  
  
 6.  Na **debugowania** menu, wybierz **Step Into**.  
   
-     Wartość zmian textBox1.Text **Watch1** okno, aby:  
+     Wartość textBox1.Text zmienia się w **Watch1** okna, aby:  
   
     `Button was clicked!`  
   
-7.  Na **debugowania** menu, wybierz **Kontynuuj** wznowienie debugowania programu.  
+7.  Na **debugowania** menu, wybierz **Kontynuuj** Aby wznowić debugowanie programu.  
   
 8.  W formularzu systemu Windows, należy ponownie kliknąć przycisk.  
   

@@ -2,7 +2,7 @@
 title: Dowiedz się, jak debugowanie aplikacji wielowątkowych
 description: Debugowanie za pomocą okna stosów równoległych i równoległego wyrażenia kontrolnego w programie Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204222"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468686"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Rozpoczynanie debugowania aplikacji wielowątkowych w programie Visual Studio
 Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytkownika w celu ułatwienia debugowania aplikacji wielowątkowych. W tym samouczku pokazano, jak i używaj znaczników wątków **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okien, warunkowe punkty przerwania i filtr punktów przerwania. Ten samouczek zawiera tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z funkcjami debugowania aplikacji wielowątkowych.
@@ -47,9 +47,9 @@ Do wykonywania kroków opisanych w tym samouczku, potrzebny jest projektu aplika
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  W **typu projektu**s kliknij wybranego przez siebie języka: **Visual C#**, **Visual C++**, lub **języka Visual Basic**.  
+2.  Kliknij wybranego przez siebie języka: **Visual C#**, **Visual C++**, lub **języka Visual Basic**.  
   
-3.  W **szablony** wybierz **aplikacja Konsolowa**.  
+3.  W obszarze **pulpitu Windows**, wybierz **aplikacja Konsolowa**.  
   
 4.  W **nazwa** wpisz nazwę MyThreadWalkthroughApp.  
   

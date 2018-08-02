@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4f9f95b2e4aa6eda9b87c8f7b8d999d84b72c9a5
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978375"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468315"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -40,7 +40,7 @@ Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia p
 
 ## <a name="the-mybank-solution-example"></a>Przykład rozwiązania MyBank
 
-W tym temacie, użyjemy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawione przy użyciu Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego, jednakże pojęcia można łatwo przenosić do innych języków i struktur.
+W tym temacie, użyjemy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
 
  ![Rozwiązanie MyBank](../test/media/ute_mybanksolution.png)
 
@@ -58,7 +58,7 @@ W tym temacie, użyjemy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przyk
 
 -   *IAccount.cs* zdefiniowano standard `IAccount` interfejs dla konta, takie jak metody złożenia i wycofać zasoby z konta usługi i pobrać salda konta.
 
--   *CheckingAccount.cs* zawiera `CheckingAccount` klasę, która implementuje `IAccounts` interfejsu dla konta rozliczeniowego.
+-   *CheckingAccount.cs* zawiera `CheckingAccount` klasę, która implementuje `IAccount` interfejsu dla konta rozliczeniowego.
 
 Zdajemy sobie sprawę doświadczenia, że tego jednego rzeczą, jaką należy wykonać wycofania z konta rozliczeniowego, upewnij się, że wybierana kwota jest mniejsza niż saldo konta. Dlatego firma Microsoft Zastąp `IAccount.Withdraw` method in Class metoda `CheckingAccount` z metodą, która sprawdza, czy dla tego warunku. Metoda może wyglądać następująco:
 
@@ -311,7 +311,7 @@ Metoda opartego na atrybutach jest uruchamiane jeden raz dla każdego wiersza w 
 
  Dowiedz się więcej o [pokrycia kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
- **P: jak testowania metod w Mój kod, który ma zależności zewnętrznych**
+ **P: czy mogę metod testowych w Mój kod, który ma zależności zewnętrznych?**
 
  **Odp.:** tak. Jeśli masz program Visual Studio Enterprise, Microsoft Fakes może służyć za pomocą metody testowe, które należy zapisać przy użyciu struktur testów jednostek dla kodu zarządzanego.
 

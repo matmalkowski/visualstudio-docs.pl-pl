@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie wymagań dotyczących pakietu za pomocą pliku requirements.txt
-description: Plik requirements.txt służy do zarządzania zależności projektu. Jeśli pojawi się projekt, który zawiera plik requirements.txt, można łatwo zainstalować tych zależności w jednym kroku.
+title: Zarządzanie wymagań dotyczących pakietu przy użyciu pliku requirements.txt
+description: Zarządzanie zależnościami projektu, można użyć pliku requirements.txt. Jeśli zostanie wyświetlony projektu, który zawiera plik requirements.txt, możesz łatwo zainstalować te zależności w jednym kroku.
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,34 +11,34 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a97a274053f95aac3cc676c17e50e23906fea377
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117004"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468248"
 ---
-# <a name="managing-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety z pliku requirements.txt
+# <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety przy użyciu pliku requirements.txt
 
-Współużytkuje projektem, przy użyciu systemu kompilacji, czy jest planowane [opublikowania go w usłudze Microsoft Azure](python-azure-cloud-service-project-template.md), należy określić pakiety zewnętrzne, które wymaga projektu. Zalecanym rozwiązaniem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
+W przypadku udostępniania projektu z innymi osobami, za pomocą systemu kompilacji, czy planujesz [opublikowania go w usłudze Microsoft Azure](python-azure-cloud-service-project-template.md), należy określić zewnętrznych pakietów, których wymaga projekt. Zalecanym podejściem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
 
-Z technicznego punktu widzenia nazwy pliku może służyć do śledzenia wymagania (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługę określonych `requirements.txt`:
+Technicznie rzecz biorąc, nazwy pliku może służyć do śledzenia wymagań (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługi *requirements.txt*:
 
-- Jeśli został załadowany projekt, który zawiera `requirements.txt` i chcesz, aby zainstalować te pakiety wymienione w tym pliku, rozwiń węzeł **środowiska Python** w węźle **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy a następnie wybierz węzeł środowiska **Zainstaluj z pliku requirements.txt**:
+- Jeśli został załadowany projekt, który zawiera *requirements.txt* i chcesz, aby zainstalować te pakiety wymienione w tym pliku, rozwiń węzeł **środowiska Python** w węźle **Eksploratora rozwiązań**, a następnie kliknij prawym przyciskiem myszy węzeł środowiska i wybierz **Zainstaluj z pliku requirements.txt**:
 
     ![Zainstaluj z pliku requirements.txt](media/environments-requirements-txt-install.png)
 
-- Jeśli masz już wszystkie niezbędne pakiety zainstalowane w środowisku, należy kliknąć prawym przyciskiem myszy tego środowiska w Eksploratorze rozwiązań i wybrać **Generuj plik requirements.txt** można utworzyć niezbędnego pliku. Jeśli plik już istnieje, zostanie wyświetlony monit o jak go zaktualizować:
+- Jeśli masz już niezbędne pakiety zainstalowane w środowisku, należy kliknąć prawym przyciskiem myszy tego środowiska w **Eksploratora rozwiązań** i wybierz **Generovat requirements.txt** do utworzenia niezbędnych plik. Jeśli plik już istnieje, zostanie wyświetlony monit dotyczące konieczność jej zaktualizowania:
 
     ![Opcje pliku requirements.txt aktualizacji](media/environments-requirements-txt-replace.png)
 
   - **Zastąp cały plik** usuwa wszystkie elementy, komentarze i opcje, które istnieją.
-  - **Odśwież istniejących** wykrywa wymagań dotyczących pakietu i aktualizuje specyfikatory wersji, aby dopasować aktualnie zainstalowaną wersję.
-  - **Aktualizowanie i dodawanie wpisów** odświeża wszelkie wymagania, które zostały znalezione i dodaje wszystkie inne pakiety na końcu pliku.
+  - **Odśwież istniejące wpisy** wykrywa wymagań dotyczących pakietu i aktualizuje specyfikatory wersji, aby dopasować obecnie zainstalowaną wersję.
+  - **Aktualizowanie i dodawanie wpisów** odświeża wszelkie wymagania, które znajdują się i dodaje wszystkie inne pakiety na końcu pliku.
 
-Ponieważ `requirements.txt` pliki mają zawiesza wymagania środowiska, wszystkie zainstalowane pakiety są zapisywane z użyciem wersji dokładne. Użycie wersji dokładne gwarantuje, że można łatwo odtworzyć środowiska na innym komputerze. Pakiety są dołączane, nawet jeśli zostały one zainstalowane z zakresem wersji, jako zależność inny pakiet, lub z Instalatorem niż pip.
+Ponieważ *requirements.txt* pliki mają na celu Zablokuj wymagania środowiska, wszystkie zainstalowane pakiety są zapisywane z użyciem wersje dokładny. Użycie wersje dokładny gwarantuje, że łatwo można odtworzyć środowiska na innym komputerze. Pakiety są dołączane, nawet jeśli były zainstalowane z zakresem wersji, jako zależność z innym pakietem lub z Instalatorem niż pip.
 
-Jeśli nie można zainstalować pakietu przez narzędzie pip, ale pojawia się `requirements.txt` niepowodzenia instalacji całego pliku. W takim przypadku ręcznie edytować plik, aby wykluczyć ten pakiet lub użyć [opcje przez narzędzie pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) do odwoływania się do zainstalowania wersji pakietu. Na przykład użytkownik może chcieć użyć [ `pip wheel` ](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) skompilować zależności, a następnie dodaj `--find-links <path>` opcji do Twojej `requirements.txt`:
+Jeśli nie można zainstalować pakietu przez narzędzie pip i wyświetlone w *requirements.txt* pliku całej instalacji zakończy się niepowodzeniem. W takim przypadku ręcznie edytować plik, aby wykluczyć ten pakiet lub użyć [opcje firmy pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) do odwoływania się do instalowalną wersję pakietu. Na przykład użytkownik może chcieć użyć [ `pip wheel` ](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) skompilować zależności i dodać `--find-links <path>` opcję swoje *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -65,9 +65,9 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz także
 
-- [Zarządzanie środowiska Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Ścieżki wyszukiwania](search-paths.md)
-- [Odwołanie do okna środowiska Python](python-environments-window-tab-reference.md)
+- [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

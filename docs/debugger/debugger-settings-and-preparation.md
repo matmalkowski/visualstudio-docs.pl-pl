@@ -1,7 +1,7 @@
 ---
 title: Debuger, ustawienia i przygotowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151577"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468302"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugera i przygotowanie
 W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotowania potrzebne debugowaniem programu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Jeśli tworzysz swój program w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu szablonów projektu, te ustawienia są ustawione prawidłowo dla Ciebie w konfiguracji debugowania.  
@@ -50,9 +50,6 @@ W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotow
   
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)  
  W tym artykule opisano sposób debugowania aplikacji 64-bitowych.  
-  
- [Debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md)  
- W tym artykule opisano różne aspekty procesu hostingu.  
   
  [Porady: określanie wersji programu .NET Framework do debugowania](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  W tym artykule opisano, jak ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.  
