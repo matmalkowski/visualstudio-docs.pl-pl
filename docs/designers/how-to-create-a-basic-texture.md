@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924463"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512632"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
 W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytora obrazu.
@@ -49,18 +49,18 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
 
 3.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia. **Właściwości** oknie zostaną wyświetlone właściwości **wypełnienia** narzędzie wraz z właściwości obrazu.
 
-4.  Ustaw kolor pierwszego planu, aby całkowicie przezroczysty czarny. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok selektor kolorów do `0`.
+4.  Aby całkowicie przezroczysty czarny, należy ustawić kolor pierwszego planu. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok selektor kolorów do `0`.
 
 5.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj **Shift** klucza i wybrać dowolny punkt na obrazie. Za pomocą **Shift** klucza powoduje, że wartość alfa odpowiadającą koloru wypełnienia, aby zastąpić kolor w obrazie; w przeciwnym razie wartość alfa odpowiadającą służy do programu blend kolor wypełnienia wraz z kolorów na obrazie.
 
     > [!IMPORTANT]
-    >  Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.
+    > Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.
 
 6.  Na pasku narzędzi edytora obrazów, wybierz **elipsy** narzędzia.
 
-7.  Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwość `255`.
+7.  Ustaw kolor pierwszego planu, aby całkowicie nieprzezroczysty czarny. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwość `255`.
 
-8.  Na biały całkowicie nieprzezroczysty, ustaw kolor tła. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.
+8.  Ustaw kolor tła na całkowicie nieprzezroczyste biały. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.
 
 9. Ustaw szerokość konturu elipsy. W **właściwości** okna w **wygląd** grupy właściwość, ustaw wartość **szerokość** właściwość `8`.
 
@@ -69,13 +69,13 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
 11. Za pomocą **elipsy** narzędzie, narysuj okręg z współrzędnych pikseli `(3, 3)` do współrzędnej pikseli `(508, 508)`. Aby narysować łatwiej koła, naciśnij i przytrzymaj **Shift** klucza podczas rysowania.
 
     > [!NOTE]
-    >  Współrzędne bieżącej lokalizacji wskaźnika w pikselach są wyświetlane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasek stanu.
+    > Współrzędne bieżącej lokalizacji wskaźnika w pikselach są wyświetlane na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasek stanu.
 
 12. Umożliwia zmianę koloru tła. Ustaw **R** do `44`, **G** do `165`, **B** do `211`, i **A** do `255`.
 
 13. Rysowanie okrąg inny od współrzędnych pikseli `(64, 64)` do współrzędnej pikseli `(448, 448)`.
 
-14. Zmienić kolor tła na całkowicie nieprzezroczysty biały. Ustaw **R**, **G**, **B**, i **A** do `255`.
+14. Zmienić kolor tła na całkowicie nieprzezroczyste biały. Ustaw **R**, **G**, **B**, i **A** do `255`.
 
 15. Rysowanie okrąg inny od współrzędnych pikseli `(128, 128)` do współrzędnej pikseli `(384, 384)`.
 

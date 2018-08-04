@@ -1,5 +1,5 @@
 ---
-title: Polecenie routingu w VSPackages | Dokumentacja firmy Microsoft
+title: Polecenie routingu w pakietach VSPackage | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58be191a3b7a2256d0883e313f77b264f6be4d69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a5f884873e714c12708780a0e52f5f5574727fb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135806"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512938"
 ---
-# <a name="command-routing-in-vspackages"></a>Routing poleceń w VSPackages
-Polecenie jest skierowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na podstawie kontekstu, w którym jest wykonywana. W kontekście początkowej na zewnątrz jest kierowany do globalnego kontekstu.  
+# <a name="command-routing-in-vspackages"></a>Routing poleceń w pakietach VSPackage
+Polecenie odbywa się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na podstawie kontekstu, w którym jest wykonywany. Z kontekstu początkową na zewnątrz jest kierowany do kontekstu globalnego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Algorytm routingu](../../extensibility/internals/command-routing-algorithm.md)  
- Opisuje kolejność rozpoznawania routingu poleceń.  
+ [Algorytm routingu poleceń](../../extensibility/internals/command-routing-algorithm.md)  
+ W tym artykule opisano kolejność rozpoznawania routingu poleceń.  
   
- [Dostępność](../../extensibility/internals/command-availability.md)  
- W tym artykule omówiono routing poleceń.  
+ [Dostępność poleceń](../../extensibility/internals/command-availability.md)  
+ W tym artykule omówiono, routing poleceń.  
   
- [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- W tym artykule omówiono zagadnienia dotyczące polecenia routingu między kodu zarządzanego i modelu COM.  
+ [Polecenia i menu, które używają zestawów międzyoperacyjnych](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ W tym artykule omówiono zagadnienia dotyczące polecenia routingu między kodem zarządzanym i modelu COM.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)  
- W tym artykule omówiono modelu dla jak ustalić użytkownika wyboru kontekstu fokus w oknie.  
+ W tym artykule omówiono model jaki sposób można określić użytkownika wybór kontekstu fokus w oknie.  
   
  [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Wyjaśnia sposób tworzenia interfejsu użytkownika, który zawiera menu, paski narzędzi i polecenia pola kombi.
+ Wyjaśnia, jak utworzyć interfejs użytkownika, który zawiera menu, paski narzędzi i pola kombi polecenia.

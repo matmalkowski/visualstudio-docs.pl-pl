@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef330d96306a6490cf59cde859817cdd4a46f8c4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468349"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513403"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -41,7 +41,7 @@ Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować
 
 ### <a name="code-snippets-in-completion-lists"></a>Fragmenty kodu w listach uzupełniania
 
-W języku C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [tekst skrótu](../ide/code-snippets-schema-reference.md#shortcut). Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w języku C#, zobacz [fragmenty kodu w języku C#](../ide/visual-csharp-code-snippets.md).
+W języku C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [tekst skrótu](../ide/code-snippets-schema-reference.md#shortcut-element). Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w języku C#, zobacz [fragmenty kodu w języku C#](../ide/visual-csharp-code-snippets.md).
 
 ### <a name="language-keywords-in-completion-lists"></a>Słowa kluczowe języka w listach uzupełniania
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433171"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510152"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowych.  
@@ -28,11 +28,11 @@ Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowyc
  Ten wariant przedstawiono istotne są bardziej wydajne, wskazuje, że używasz tekstury bez włączania mapy mip, a tym samym nie uzyskuje się maksymalnie dużo z pamięci podręcznej tekstury.  
   
 ## <a name="remarks"></a>Uwagi  
- Każde wywołanie jest wymuszana generacji mipmapy `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności generacji mipmapy jest wymuszone, gdy D3D11_TEXTUR2D_DESC obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
+ Każde wywołanie jest wymuszana generacji mipmapy `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności generacji mipmapy jest wymuszone, gdy D3D11_TEXTURE2D_DESC obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
   
 -   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
   
--   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFUALT lub D3D11_USAGE_IMMUTABLE.  
+-   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
   
 -   Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
   

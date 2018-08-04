@@ -13,64 +13,64 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 266b3c4154c10f537cdc9dec78b0f0a036d94503
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132923"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512595"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Porady: tworzenie. Plik Vsct  
+# <a name="how-to-create-a-vsct-file"></a>Porady: Tworzenie pliku vsct  
   
-Istnieje kilka sposobów, aby utworzyć plik konfiguracji (vsct) oparte na języku XML programu Visual Studio polecenia tabeli.  
+Istnieje kilka sposobów, aby utworzyć konfigurację tabeli polecenia opartych na języku XML programu Visual Studio (*vsct*) pliku.  
   
--   Możesz utworzyć nowy pakiet VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pakietu szablonu.  
+-   Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pakietu szablonu.  
   
--   Można użyć kompilatora konfiguracji tabeli polecenia opartych na języku XML, Vsct.exe, aby wygenerować plik z istniejącego pliku .ctc.  
+-   Można użyć kompilatora konfiguracji tabeli polecenia opartego na języku XML, *Vsct.exe*, aby wygenerować plik z istniejącego *.ctc* pliku.  
   
--   Vsct.exe służy do generowania pliku vsct z istniejącego pliku .cto.  
+-   Możesz użyć *Vsct.exe* do generowania *vsct* plików z istniejącej *.cto* pliku.  
   
--   Można ręcznie utworzyć nowego pliku vsct.  
+-   Można ręcznie utworzyć nowy *vsct* pliku.  
   
- W tym temacie wyjaśniono, jak ręcznie utworzyć nowego pliku vsct.  
+ W tym artykule wyjaśniono, jak ręcznie utworzyć nową *vsct* pliku.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Aby ręcznie utworzyć nowego pliku vsct  
   
-1.  Uruchom [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+1.  Rozpocznij [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-2.  Na **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **pliku**.  
+2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.  
   
-3.  W **szablony** okienku, kliknij przycisk **pliku XML** , a następnie kliknij przycisk **Otwórz**.  
+3.  W **szablony** okienku kliknij **pliku XML** a następnie kliknij przycisk **Otwórz**.  
   
-4.  Na **widoku** menu, kliknij przycisk **okna właściwości** Aby wyświetlić właściwości pliku XML.  
+4.  Na **widoku** menu, kliknij przycisk **właściwości** Aby wyświetlić jej właściwości w pliku XML.  
   
-5.  W **właściwości** okna, kliknij przycisk Przeglądaj (...) we właściwości schematów.  
+5.  W **właściwości** okna, kliknij przycisk **Przeglądaj** znajdujący się na **schematów** właściwości.  
   
-6.  Na liście schematów XSD wybierz schemat vsct.xsd. Jeśli nie jest na liście, kliknij przycisk **Dodaj** , a następnie znajdź plik na dysku lokalnym. Kliknij przycisk **OK** po zakończeniu.  
+6.  Na liście schematy XSD, wybierz *vsct.xsd* schematu. Jeśli nie jest na liście, kliknij przycisk **Dodaj** a następnie znajdź plik na dysku lokalnym. Kliknij przycisk **OK** po zakończeniu.  
   
-7.  W pliku XML, wpisz `<CommandTable` , a następnie naciśnij klawisz TAB. Tag zamykający wpisując `>`.  
+7.  W pliku XML, wpisz *< CommandTable* , a następnie naciśnij klawisz **kartę**. Tag zamykający, wpisując *>*.  
   
-     Spowoduje to utworzenie pliku vsct podstawowe.  
+     Ta akcja powoduje utworzenie prostej *vsct* pliku.  
   
-8.  Wypełnij elementy pliku XML, który chcesz dodać, zgodnie z [schematu VSCT](../../extensibility/vsct-xml-schema-reference.md). Aby uzyskać więcej informacji, zobacz [tworzenie. Pliki Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8.  Wypełnij elementów pliku XML, który chcesz dodać, zgodnie z [odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md). Aby uzyskać więcej informacji, zobacz [tworzenie plików vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Porady: tworzenie. Plik Vsct z istniejącego. Plik CTC  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Porady: Tworzenie pliku vsct z istniejącego pliku .ctc  
   
-Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku źródłowego .ctc tabeli polecenia. Dzięki temu można korzystać z nowej opartych na języku XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] format kompilatora tabeli (VSCT) polecenia.  
+Można tworzyć oparte na języku XML *vsct* plików z istniejącej tabeli polecenia *.ctc* pliku źródłowego. Dzięki temu możesz korzystać z zalet nowego opartego na języku XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] format kompilatora tabeli (VSCT) polecenia.  
   
-### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Aby utworzyć plik vsct z pliku .ctc  
+### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Do utworzenia pliku vsct z pliku .ctc  
   
-1.  Uzyskaj kopię języka Perl.  
+1.  Uzyskaj kopię programu języka Perl.  
   
-2.  Uzyskaj kopię programu skryptów języka Perl ConvertCTCToVSCT.pl, zazwyczaj znajduje się w  *\<ścieżki instalacji programu Visual Studio SDK >* \VisualStudioIntegration\Tools\bin folderu.  
+2.  Uzyskaj kopię skryptu Perl *ConvertCTCToVSCT.pl*, która zwykle znajduje się w  *\<ścieżka instalacji programu Visual Studio SDK > \VisualStudioIntegration\Tools\bin* folderu.  
   
-3.  Uzyskaj kopię .ctc plik źródłowy, który ma zostać przekonwertowany.  
+3.  Uzyskaj kopię programu *.ctc* pliku źródłowego, który ma zostać przekonwertowany.  
   
-4.  Umieścić pliki w tym samym katalogu.  
+4.  Umieść pliki w tym samym katalogu.  
   
-5.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia oknie monitu, przejdź do katalogu.  
+5.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia monitu okna, przejdź do katalogu.  
   
 6.  Typ  
   
@@ -78,41 +78,45 @@ Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku źród
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
     ```  
   
-     gdzie PkgCmd.ctc jest nazwa pliku .ctc i PkgCmd.vsct jest nazwą pliku vsct, który chcesz utworzyć.  
+     gdzie *PkgCmd.ctc* nazywa się *.ctc* pliku i *PkgCmd.vsct* nazywa się *vsct* pliku, który chcesz utworzyć.  
   
-     Spowoduje to utworzenie nowego vsct polecenia tabeli źródłowej pliku XML. Plik można kompilować przy użyciu Vsct.exe, kompilator VSCT, jak w przypadku każdego innego pliku vsct.  
+     Ta akcja powoduje utworzenie nowego *vsct* plik źródłowy tabeli poleceń XML. Plik można skompilować przy użyciu *Vsct.exe*, kompilatora VSCT, jak będą inne *vsct* pliku.  
   
     > [!NOTE]
-    >  Aby poprawić czytelność pliku vsct, należy ponowne formatowanie komentarze XML.  
+    >  Można zwiększyć czytelność *vsct* pliku przez ponowne formatowanie komentarze XML.  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Porady: tworzenie. Plik Vsct z istniejącego. Pliku Cto  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Porady: Tworzenie pliku vsct z istniejącego pliku .cto  
   
-Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku binarnego .cto. W ten sposób pozwala korzystać z nowego formatu kompilatora tabeli polecenia. Ten proces działa nawet wtedy, gdy plik .cto został skompilowany z pliku .ctc. Możesz edytować i skompilować pliku vsct w innym pliku .cto.  
+Można tworzyć oparte na języku XML *vsct* plik z istniejących danych binarnych *.cto* pliku. W ten sposób pozwala na korzystanie z zalet nowego formatu kompilatora tabeli poleceń. Ten proces działa nawet wtedy, gdy *.cto* plik został skompilowany z *.ctc* pliku. Możesz edytować i skompilować *vsct* pliku do innego pliku .cto.  
   
-### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Aby utworzyć plik vsct z pliku .cto  
+### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Do utworzenia pliku vsct z pliku .cto  
   
-1.  Uzyskaj kopię pliku .cto i plik .ctsym.  
+1.  Uzyskaj kopię *.cto* plików i odpowiadającymi mu dostawcami *.ctsym* pliku.  
   
-2.  Umieścić pliki w tym samym katalogu co vsct.exe kompilatora.  
+2.  Umieść pliki w tym samym katalogu co *vsct.exe* kompilatora.  
   
-3.  W programie Visual Studio wierszu polecenia przejdź do katalogu, który zawiera pliki .cto i .ctsym.  
+3.  W wierszu polecenia programu Visual Studio, przejdź do katalogu, który zawiera *.cto* i *.ctsym* plików.  
   
-4.  Typ **vsct.exe** *ctofilename *** .cto** * vsctfilename***vsct -S***symfilename ***.ctsym**.  
+4.  Typ  
+
+    ```
+    vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
+    ```
+
+     gdzie \<ctofilename\> nazywa się *.cto* pliku \<vsctfilename\> nazywa się *vsct* pliku, dla którego chcesz utworzyć, a \<symfilename\> nazywa się *.ctsym* pliku.  
   
-     `ctofilename` to nazwa pliku .cto `vsctfilename` to nazwa pliku vsct, który chcesz utworzyć, a `symfilename` to nazwa pliku .ctsym.  
+     Ten proces tworzy nowy *vsct* pliku kompilatora tabeli poleceń XML. Możesz edytować i skompiluj plik za pomocą *vsct.exe*, kompilatora vsct, jak będą inne *vsct* pliku.  
   
-     Ten proces tworzy nowy vsct polecenia tabeli kompilatora plik XML. Możesz edytować i skompiluj plik z vsct.exe, kompilator vsct, jak w przypadku każdego innego pliku vsct.  
+## <a name="compile-the-code"></a>Skompilować kod  
+ Wystarczy dodać *vsct* plik do projektu nie spowoduje jej do kompilowania. Musi ona zawierać w procesie kompilacji.  
   
-## <a name="compiling-the-code"></a>Kompilowanie kodu  
- Dodawanie pliku vsct w projekcie nie powoduje go skompilować. Musi ona zawierać w procesie kompilacji.  
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Aby dodać pliku vsct do kompilacji projektu  
   
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Aby dodać plik vsct do kompilacji projektu  
+1.  Otwórz plik projektu w edytorze. Jeśli projekt jest ładowany, należy go najpierw zwolnienia.  
   
-1.  Otwórz plik projektu w edytorze. Jeśli projekt został załadowany, należy go najpierw zwolnienia.  
-  
-2.  Dodaj [ItemGroup — element](../../msbuild/itemgroup-element-msbuild.md) zawierający VSCTCompile element, jak pokazano w poniższym przykładzie.  
+2.  Dodaj [itemgroup — element](../../msbuild/itemgroup-element-msbuild.md) zawierający `VSCTCompile` elementu, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <ItemGroup>  
@@ -123,9 +127,9 @@ Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku binarn
   
     ```  
   
-     ResourceName element powinien zawsze mieć ustawioną `Menus.ctmenu`.  
+     `ResourceName` Element powinien być zawsze ustawiony na `Menus.ctmenu`.  
   
-3.  Jeśli projekt zawiera plik .resx, Dodaj element EmbeddedResource, który zawiera MergeWithCTO element, jak pokazano w poniższym przykładzie.  
+3.  Jeśli projekt zawiera *resx* Dodaj `EmbeddedResource` element, który zawiera `MergeWithCTO` elementu, jak pokazano w poniższym przykładzie:  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -135,19 +139,19 @@ Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku binarn
   
     ```  
   
-     Ten kod znaczników powinien znajdować się wewnątrz elementu ItemGroup, który zawiera zasoby osadzone.  
+     Ten kod znaczników powinien przeprowadzić wewnątrz `ItemGroup` zawierający zasoby osadzone.  
   
-4.  Otwórz plik pakietu, zwykle o nazwie *ProjectName*Package.cs lub *ProjectName*Package.vb w edytorze.  
+4.  Otwórz plik pakietu, zwykle o nazwie  *\<ProjectName\>Package.cs* lub  *\<ProjectName\>Package.vb*, w edytorze.  
   
-5.  Dodaj atrybut ProvideMenuResource do klasy pakietu, jak pokazano w poniższym przykładzie.  
+5.  Dodaj `ProvideMenuResource` atrybutów do klasy pakietu, jak pokazano w poniższym przykładzie.  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     ```  
   
-     Pierwsza wartość parametru musi odpowiadać wartości atrybutu ResourceName zdefiniowanych w pliku projektu.  
+     Pierwsza wartość parametru musi być zgodna wartość `ResourceName` atrybut zdefiniowany w pliku projektu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie. Pliki Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Zobacz także  
+ [Tworzenie plików vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)

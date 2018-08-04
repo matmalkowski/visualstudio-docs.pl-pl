@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079083"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512047"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog
 Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi obrazu w usłudze Visual Studio i katalog obrazów wprowadzone w programie Visual Studio 2015.  
@@ -165,8 +165,9 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br />— Odwołanie do zasobu składnik bezwzględne<br />— Ścieżka do pliku zawierającego zasobu natywnego|  
+|Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) za pomocą aplikacji: / / / urzędu<br />— Odwołanie do zasobu składnik bezwzględne<br />— Ścieżka do pliku zawierającego zasobu natywnego|  
 |Tło|[Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> *Światła:* źródło może być używany na tle światła.<br /><br /> *Ciemny:* źródło może być używany na ciemnym tle.<br /><br /> *HighContrast:* źródła można używać na dowolnym tła w trybie dużego kontrastu.<br /><br /> *HighContrastLight:* źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> *HighContrastDark:* źródło może być używany na ciemnym tle w trybie dużego kontrastu.<br /><br /> W przypadku pominięcia atrybut tła źródła może służyć w dowolnym tła.<br /><br /> Jeśli tło jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, kolory źródła nigdy nie jest odwrócona. Jeśli w tle jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu.|  
+
 |||  
   
  A \<źródło > element może mieć dokładnie jeden następujące opcjonalne elementy podrzędne:  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Zaktualizuj kod w celu żądania monikerów za pośrednictwem zaktualizowane mapowania przy użyciu usługi obrazu. (Może to oznaczać, aktualizacja do **CrispImages** dla zarządzanego kodu, lub żądanie HBITMAPs lub HICONs od usługi obrazów i przekazywania ich wokół dla kodu natywnego.)  
   
 ## <a name="testing-your-images"></a>Testowanie obrazów  
- Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](http://aka.ms/VSImageThemeTools).  
+ Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](visual-studio-sdk.md). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Dodatkowe zasoby  
   

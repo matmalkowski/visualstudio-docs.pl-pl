@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341886"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511655"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Dane wejściowe generatation przy użyciu dynamiczne symboliczne wykonywanie
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych, za pomocą dynamiczne symboliczne wykonywanie
 
 Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie. Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu. Analiza jest procesem przyrostowe. Udoskonalanie predykat **pytanie: czy mogę -> {true lub false}** za pośrednictwem formalnych testu parametry wejściowe **I**. **q** reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest. Początkowo **q: = false**, ponieważ nic nie został jeszcze zaobserwowany.
 
@@ -59,7 +59,7 @@ Używa funkcji IntelliTest [Z3](https://github.com/Z3Prover/z3/wiki) moduł rozw
 Jako efekt uboczny środowiska uruchomieniowego, monitorowanie program IntelliTest zbiera dane pokrycia kodu dynamicznych. Jest to nazywane *dynamiczne* ponieważ IntelliTest tylko zna kod, który został wykonany, w związku z tym go nie można nadać wartości bezwzględne dla pokrycia w taki sam sposób jak inne narzędzie pokrycia zwykle. 
 
 Na przykład, gdy program IntelliTest zgłasza pokrycie dynamiczne jako 5/10 podstawowe bloki, oznacza to, że pięć bloków z 10 zostały pokryte, gdzie całkowita liczba bloków w wszystkie metody, które zostały osiągnięte do tej pory w analizie (w przeciwieństwie do wszystkich metod, które istnieją w zestawu w ramach testu) wynosi dziesięć.
-W dalszej części analizy, ponieważ więcej metod dostępne są odnajdywane licznika (5, w tym eaxmple) i może zwiększyć mianownik (10).
+W dalszej części analizy, ponieważ więcej metod dostępne są odnajdywane licznika (5, w tym przykładzie) i może zwiększyć mianownik (10).
 
 <a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Liczby całkowite i wartości zmiennoprzecinkowe

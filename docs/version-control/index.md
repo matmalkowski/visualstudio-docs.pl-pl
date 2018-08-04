@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: Kontrola wersji programu Visual Studio | VSTS & TFS
-description: Przewodnik Wprowadzenie do korzystania z kontroli wersji w Viual Studio
-keywords: Kontrola wersji programu VSTS, TFS,
+title: Kontrola wersji w programie Visual Studio | Usługa VSTS i TFS
+description: Przewodnik Wprowadzenie do kontroli wersji w programie Viual Studio
+keywords: Kontrola wersji usługi VSTS, TFS,
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279919"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510825"
 ---
-# <a name="version-control-in-visual-studio"></a>Kontrola wersji programu Visual Studio
+# <a name="version-control-in-visual-studio"></a>Kontrola wersji w programie Visual Studio
 
-Systemów kontroli wersji pomocne w śledzeniu zmian kodu w czasie. Po wprowadzeniu dowolnych zmian system kontroli wersji wykonuje migawkę plików. System kontroli wersji trwale zapisuje tej migawki, więc można odwołanie go później, jeśli zajdzie taka potrzeba. Program Visual Studio udostępnia [Git](/vsts/git/index) i [kontroli wersji typu Team Foundation (TFVC)](/vsts/tfvc/index). Aby zdecydować, między tymi dwoma systemami, zobacz [Wybór właściwej wersji formantu w projekcie](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
+Systemy kontroli wersji pomogły Ci śledzić zmiany w kodzie wraz z upływem czasu. Po wprowadzeniu dowolnych zmian, system kontroli wersji wykonuje migawkę plików. System kontroli wersji trwale zapisuje tej migawki, dzięki czemu użytkownik może ją później przywrócić Jeśli jest potrzebna. Program Visual Studio udostępnia [Git](/vsts/git/index) i [Team Foundation Version Control (TFVC)](/vsts/tfvc/index). Aby wybrać między dwoma systemami, zobacz [Wybieranie właściwej kontroli wersji dla projektu](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
-Git to system kontroli wersji najczęściej używanych dzisiaj i szybko staje się standard kontroli wersji. Git to system kontroli wersji rozproszonej, co oznacza, że kopii lokalnej kodu jest repozytorium kontroli pełną wersję. Te pełni funkcjonalne repozytoriów lokalnych przeprowadzić łatwo pracować w trybie offline lub zdalnie. Przekaż lokalnie swoją pracę, a następnie zsynchronizować kopię repozytorium z kopią na serwerze. Ten model różni się od kontroli wersji scentralizowane, gdzie klienci muszą synchronizować kodu z serwerem przed utworzeniem nowej wersji kodu.
+Git to obecnie najczęściej używany system kontroli wersji i szybko staje się standardem kontroli wersji. Git to Rozproszony system kontroli wersji, co oznacza, że Twoja lokalna kopia kodu jest kompletną wersją repozytorium kontroli. Upewnij te w pełni funkcjonalne repozytoria lokalne ułatwiają pracę w trybie offline lub zdalnie. Pracę zatwierdzasz lokalnie, a następnie synchronizujesz swoją kopię repozytorium z kopią na serwerze. Taki wzorzec pracy różni się od scentralizowanej kontroli wersji której klient musi synchronizować kod z serwerem przed utworzeniem nowych wersji kodu.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -56,7 +56,7 @@ Git to system kontroli wersji najczęściej używanych dzisiaj i szybko staje si
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozpoczynanie pracy z usługą Git z programem Visual Studio</h3>
+                        <h3>Wprowadzenie do usługi Git przy użyciu programu Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ Git to system kontroli wersji najczęściej używanych dzisiaj i szybko staje si
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Klonowanie istniejące repozytorium Git</h3>
+                        <h3>Klonowanie istniejącego repozytorium Git</h3>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się TFVC</h3>
+                        <h3>Dowiedz się, TFVC</h3>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wprowadzenie do programu TFVC w programie Visual Studio</h3>
+                        <h3>Rozpoczynanie pracy z użyciem systemu TFVC w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -147,6 +147,6 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
 
 ## <a name="resources"></a>Resources
 
-- [Pro książki Git](https://git-scm.com/book/en/v2)
-- [Zaplanuj migrację Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
-- [Migracja z programu TFVC do Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Podręcznik usługi Git Pro](https://git-scm.com/book/en/v2)
+- [Planowanie migracji do usługi Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [Migrowanie z TFVC do usługi Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)

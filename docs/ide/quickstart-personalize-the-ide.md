@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078228"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512564"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem
 
@@ -97,11 +97,19 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Najpi
 
 Rozważyliśmy dostosowywanie kolorów w programie Visual Studio na kilka sposobów. Mamy nadzieję, że dowiesz się o innych opcji dostosowywania w **opcje** okno dialogowe, aby naprawdę dostosować Visual Studio do własnych potrzeb.
 
+## <a name="next-steps"></a>Następne kroki
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Szybki Start: Generowanie kodu z edytora](../ide/quickstart-editor.md)
-- [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Dopasowywanie edytora](../ide/customizing-the-editor.md)
 - [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

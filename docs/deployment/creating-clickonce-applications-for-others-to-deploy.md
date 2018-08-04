@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081429"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512151"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez innych
 Nie wszyscy deweloperzy, którzy tworzą wdrożeń technologii ClickOnce firma zamierza same aplikacje. Wiele z nich po prostu spakuj swoje aplikacji przy użyciu technologii ClickOnce, a następnie przekazać pliki do klienta, takich jak dużych przedsiębiorstw. Klient staje się odpowiedzialne za hostowanie aplikacji w jego sieci. W tym temacie omówiono niektóre problemy związane z takich wdrożeń w wersjach programu .NET Framework wcześniejszych niż wersja 3.5. Zawiera opis następnie nowe rozwiązanie zawartym w .NET Framework 3.5 przy użyciu nowej funkcji "przy użyciu manifest dla zaufania". Na koniec zawiera z zalecanych strategii tworzenia wdrożeń technologii ClickOnce dla klientów, którzy nadal używają starszej wersji programu .NET Framework.  
@@ -54,7 +54,7 @@ Nie wszyscy deweloperzy, którzy tworzą wdrożeń technologii ClickOnce firma z
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Tworzenie wdrożenia klienta przy użyciu manifest aplikacji dla relacji zaufania  
  ClickOnce w .NET Framework 3.5 zawiera nową funkcję, która umożliwia deweloperom i klientom nowego rozwiązania do scenariusza, jak powinny być podpisane manifesty. Manifest aplikacji ClickOnce obsługuje nowy element o nazwie `<useManifestForTrust>` , który umożliwia deweloperom oznaczają, że jest podpis cyfrowy manifestu aplikacji, co powinno być używane do podejmowania decyzji dotyczących zaufania. Programistka używa narzędzi pakowania ClickOnce — takich jak *Mage.exe*, *MageUI.exe*i Visual Studio — umieść ten element w manifeście aplikacji, a także osadzić nazwy wydawcy i Nazwa aplikacji w manifeście.  
   
- Korzystając z `<useManifestForTrust>`, manifest wdrożenia nie musi być podpisany za pomocą certyfikatu Authenticode wystawiony przez urząd certyfikacji. Zamiast tego może być podpisana za pomocą co to jest znany jako certyfikat z podpisem własnym. Certyfikat z podpisem własnym wygenerowany przez klienta lub dewelopera przy użyciu standardowych narzędzi zestawu SDK programu .NET Framework, a następnie stosowane do manifestu wdrażania przy użyciu standardowych narzędzi wdrażania ClickOnce. Aby uzyskać więcej informacji, zobacz [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Korzystając z `<useManifestForTrust>`, manifest wdrożenia nie musi być podpisany za pomocą certyfikatu Authenticode wystawiony przez urząd certyfikacji. Zamiast tego może być podpisana za pomocą co to jest znany jako certyfikat z podpisem własnym. Certyfikat z podpisem własnym wygenerowany przez klienta lub dewelopera przy użyciu standardowych narzędzi zestawu SDK programu .NET Framework, a następnie stosowane do manifestu wdrażania przy użyciu standardowych narzędzi wdrażania ClickOnce. Aby uzyskać więcej informacji, zobacz [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Przy użyciu certyfikatu z podpisem własnym do manifestu wdrażania przedstawia kilka zalet. Dzięki wyeliminowaniu konieczności dla klienta uzyskać lub utworzyć własne certyfikatu Authenticode `<useManifestForTrust>` upraszcza wdrażanie klienta, zapewniając dla deweloperów do obsługi własnej marki tożsamości w aplikacji. Wynik jest zestaw podpisem wdrożeń, które są bardziej bezpieczne i korzystają z tożsamości aplikacji unikatowy. Pozwala to wyeliminować potencjalnych konfliktów, które mogą wystąpić z wdrażanie tej samej aplikacji dla wielu klientów.  
   

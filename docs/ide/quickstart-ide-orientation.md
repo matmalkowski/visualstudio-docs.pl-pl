@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388192"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513276"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
@@ -104,12 +104,16 @@ Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub je
 
 Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem użytkownika. Aby dokładniej:
 
-- Więcej informacji na temat prezentację programu Visual Studio, a nawet dabble podczas debugowania, w [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Szybki Start: Personalizowanie środowiska IDE](../ide/quickstart-personalize-the-ide.md)
 
-- Przeglądaj **elementy interfejsu użytkownika ogólne** sekcji dokumentacji programu VS, które przechodzi do bardziej szczegółowe informacje o korzystaniu z okien, takie jak [lista błędów](../ide/reference/error-list-window.md), [okno danych wyjściowych](../ide/reference/output-window.md), [ Okno właściwości](../ide/reference/properties-window.md), i [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
-- [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+- [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+- [Funkcje programu Visual Studio 2017](../ide/advanced-feature-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,102 +10,102 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cff502344db59586709c350ad282871db9f587c8
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481268"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511843"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Wskazówki: używanie diagnostyki grafiki do debugowania cieniowania obliczenia
-W tym przewodniku przedstawiono sposób użycia narzędzia diagnostyki grafiki w programie Visual Studio do sprawdzania, czy cieniowania obliczenia, które generuje niepoprawnych wyników.  
+W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio diagnostyki grafiki do zbadania cieniowania obliczenia, które generuje nieprawidłowe wyniki.  
   
- W tym przewodniku przedstawiono te zadania:  
+ Ten instruktaż ilustruje następujące zadania:  
   
--   Przy użyciu **listy zdarzeń grafiki** zlokalizować potencjalne źródła problemu.  
+-   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
   
--   Przy użyciu **stosu wywołań zdarzeń grafiki** ustalenie, który obliczeniowe programu do cieniowania jest wykonywana przez DirectCompute `Dispatch` zdarzeń.  
+-   Za pomocą **stos wywołań zdarzenia grafiki** do określenia, które cieniowanie obliczenia jest wykonywane przez DirectCompute `Dispatch` zdarzeń.  
   
--   Przy użyciu **etapy potoku grafiki** HLSL i okna debugera do sprawdzenia cieniowania obliczenia, który jest źródłem problemu.  
+-   Za pomocą **etapy potoku grafiki** okna i debugera HLSL można badać cieniowanie obliczenia będące źródłem problemu.  
   
 ## <a name="scenario"></a>Scenariusz  
- W tym scenariuszu zostały zapisane symulację dynamics płynu używane DirectCompute do wykonywania najbardziej obliczeń intensywnie części aktualizacji symulacji. Gdy aplikacja jest uruchamiana, poprawna renderowania interfejsu użytkownika i zestaw danych, ale symulacji działają zgodnie z oczekiwaniami. Tak, aby umożliwić debugowanie aplikacji przy użyciu diagnostyki grafiki, można przechwytywać problem do dziennika grafiki. Problem wygląda następująco w aplikacji:  
+ W tym scenariuszu zaprojektowałeś symulację dynamiki płynów, której używa DirectCompute do wykonywania najintensywniejszej obliczeniowo części aktualizacji symulacji. Po uruchomieniu aplikacji renderowanie zestawu danych i interfejs użytkownika jest poprawna, ale Symulacja nie zachowuje się zgodnie z oczekiwaniami. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda to w aplikacji:  
   
- ![Symulowane płynu działa nieprawidłowo. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
+ ![Symulowane dynamiki zachowuje się nieprawidłowo. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- Aby uzyskać informacje o sposobie przechwytywania grafiki problemy w dzienniku grafiki, zobacz [przechwytywanie informacji graficznych](capturing-graphics-information.md).  
+ Aby uzyskać informacje o sposobie przechwytywania problemów z grafiką w dzienniku grafiki, zobacz [Capturing Graphics Information](capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Badanie  
- Narzędzia diagnostyki grafiki do załadowania pliku dziennika grafiki, aby sprawdzić przechwycone ramki.  
+ Narzędzia Graphics Diagnostics do załadowania pliku dziennika grafiki, aby skontrolować przechwycone ramki.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby sprawdzić ramkę w dzienniku grafiki  
   
-1.  W programie Visual Studio Załaduj dziennika grafiki, który zawiera ramkę, która wykazuje symulacji niepoprawne wyniki. W programie Visual Studio pojawi się na nowej karcie diagnostyki grafiki. W górnej części na tej karcie jest renderowanie danych wyjściowych zaznaczonej ramki. W dolnej części jest **listy ramek**, które powoduje wyświetlenie miniatur każdego przechwyconej ramki.  
+1.  W programie Visual Studio Załaduj dziennik grafiki zawierający ramkę, która wykazuje niewłaściwe wyniki symulacji. Nowa karta Diagnostyka grafiki pojawia się w programie Visual Studio. W górnej części na tej karcie jest dane wyjściowe docelowy renderowania zaznaczonej klatki. W dolnej części jest **lista ramek**, która Wyświetla miniaturę każdej uchwyconej klatki.  
   
-2.  W **listy ramek**, wybierz ramkę pokazano zachowanie niepoprawne symulacji. Nawet jeśli ten błąd pojawia się w symulacji kodu i nie kod renderowania, nadal jest konieczne wybieranie ramki, ponieważ DirectCompute zdarzenia są przechwytywane na podstawie przez klatka wraz z zdarzenia Direct3D. W tym scenariuszu grafiki dziennika kartę wygląda następująco:  
+2.  W **lista ramek**, zaznacz klatkę, która pokazuje zachowanie nieprawidłowe. Mimo że ten błąd pojawia się w kodzie symulacji, a nie kod renderowania, nadal trzeba wybrać ramkę, ponieważ zdarzenia DirectCompute są przechwytywane na zasadzie klatka po klatce, wraz z zdarzeniami interfejsu Direct3D. W tym scenariuszu dziennika grafiki w karcie wygląda następująco:  
   
-     ![Grafika Rejestruj dokument w programie Visual Studio. ] (media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
+     ![Dokument dziennika w grafiki w programie Visual Studio. ] (media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
- Po zaznaczeniu ramki demonstrujący problem, można użyć **listy zdarzeń grafiki** do diagnozowania go. **Listy zdarzeń grafiki** zawiera zdarzenia dla każdego wywołania DirectCompute i wywołania interfejsu API Direct3D, który został utworzony podczas aktywnej ramki — na przykład wywołania interfejsu API, aby uruchomić obliczenia na procesorze GPU lub do renderowania dataset lub interfejsu użytkownika. W takim przypadku Dbamy o `Dispatch` zdarzenia, które reprezentują części symulacji uruchamianych na procesorze GPU.  
+ Po zaznaczeniu klatki, która demonstruje problem, można użyć **Lista zdarzeń graficznych** do zdiagnozowania go. **Lista zdarzeń graficznych** zawiera zdarzenia dla każdego directcompute i wywołania interfejsu API Direct3D, która została wprowadzona podczas aktywnej ramki — na przykład wywołania interfejsu API w celu uruchomienia obliczeń w procesorze GPU albo wyrenderowania zestawu danych lub interfejsu użytkownika. W tym przypadku jesteśmy zainteresowani `Dispatch` zdarzenia, które reprezentuje części symulacji, korzystających z procesora GPU.  
   
-#### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Aby znaleźć zdarzenia wysyłania aktualizacji symulacji  
+#### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Aby znaleźć zdarzenia wysyłki dla aktualizacji symulacji  
   
-1.  Na **diagnostyki grafiki** narzędzi wybierz **listy zdarzeń** otworzyć **listy zdarzeń grafiki** okna.  
+1.  Na **Graphics Diagnostics** narzędzi, wybierz **listy zdarzeń** otworzyć **Lista zdarzeń graficznych** okna.  
   
-2.  Sprawdź **listy zdarzeń grafiki** zdarzenia rysowania, który renderuje zestawu danych. Aby ułatwić, wprowadź `Draw` w **wyszukiwania** polu w prawym górnym rogu **listy zdarzeń grafiki** okna. Filtruje listę, tak aby zawierała tylko zdarzenia, które mają "Rysuj" w ich tytułów. W tym scenariuszu użytkownik stwierdzi, że rysowania te zdarzenia wystąpił:  
+2.  Sprawdzanie **Lista zdarzeń graficznych** dla zdarzenia remis, które renderuje zestaw danych. Aby to ułatwić, wprowadź `Draw` w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawiera tylko zdarzenia, które mają "Draw" w tytułach. W tym scenariuszu użytkownik stwierdzi, że te zdarzenia remisu wystąpił:  
   
-     ![Na liście zdarzeń &#40;EL&#41; pokazuje rysowania zdarzenia. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![Lista zdarzeń &#40;EL&#41; przedstawia zdarzenia remisu. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
-3.  Obejrzyj obiektu docelowego renderowania w karcie dokument dziennika grafiki przenieść za pomocą każdego zdarzenia rysowania.  
+3.  Przenieś przez każde zdarzenie remisu podczas oglądania obiektu docelowego renderowania w karcie graficznej dziennika dokumentu.  
   
-4.  Przerwij po obiektu docelowego renderowania najpierw Wyświetla renderowanych zestawu danych. W tym scenariuszu zestawu danych jest renderowany w pierwszym przypadku rysowania. Błąd w symulacji wyświetlany:  
+4.  Zatrzymaj, gdy obiekt docelowy renderowania po raz pierwszy wyświetli wyrenderowany zestaw danych. W tym scenariuszu zestaw danych jest renderowany w pierwszym zdarzeniu remisu. Jest wyświetlany błąd w symulacji:  
   
-     ![Rysuj to zdarzenie renderuje symulacji zestawu danych. ] (media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
+     ![Rysuj to zdarzenie renderuje zestaw danych symulacji. ] (media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5.  Teraz sprawdzić **listy zdarzeń grafiki** dla `Dispatch` zdarzeń, która aktualizuje symulacji. Ponieważ istnieje prawdopodobieństwo, że symulacji został zaktualizowany, zanim zostanie wyświetlony, użytkownik może skupić się najpierw na `Dispatch` zdarzenia występujące przed zdarzeniem rysowania, który renderuje wyniki. Aby ułatwić, zmodyfikuj **wyszukiwania** pole, aby odczytać `Draw;Dispatch;CSSetShader(`. Filtruje listę, tak aby zawiera także `Dispatch` i `CSSetShader` zdarzeń oprócz zdarzeń rysowania. W tym scenariuszu użytkownik stwierdza, że kilka `Dispatch` zdarzenia wystąpiły przed zdarzeniem rysowania:  
+5.  Teraz zbadaj **Lista zdarzeń graficznych** dla `Dispatch` zdarzenia, które aktualizuje symulację. Ponieważ istnieje duże prawdopodobieństwo, że Symulacja zostanie zaktualizowana, zanim zostanie renderowana, użytkownik może skupić się najpierw na `Dispatch` wydarzenia, występujących przed zdarzeniem rysowania, które renderuje wyniki. Aby to ułatwić, zmodyfikuj **wyszukiwania** pole, aby odczytać `Draw;Dispatch;CSSetShader(`. Filtruje listę, tak aby zawierała także `Dispatch` i `CSSetShader` zdarzeń oprócz zdarzeń rysowania. W tym scenariuszu użytkownik stwierdza, że kilka `Dispatch` zdarzeń wystąpiło przed zdarzeniem remisu:  
   
-     ![Pokazuje EL rysowania zdarzenia wysyłki i CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
+     ![Pokazuje EL rysowania, wysyłania i CSSetShader zdarzenia](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
- Teraz, gdy wiesz, jakiego kilku potencjalnie wielu `Dispatch` zdarzeń może odpowiadać problem, można sprawdzić bardziej szczegółowo.  
+ Teraz, gdy wiesz, które kilka z potencjalnie wielu `Dispatch` zdarzeń może odnieść się do problemu, można zbadać je bardziej szczegółowo.  
   
-#### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Aby określić, które obliczeniowe programu do cieniowania wywołań wysyłania wykonuje  
+#### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Aby określić, które wywołanie wysyłki cieniowanie obliczenia wykonuje  
   
-1.  Na **diagnostyki grafiki** narzędzi wybierz **stosu wywołań zdarzeń** otworzyć **stosu wywołań zdarzeń grafiki** okna.  
+1.  Na **Graphics Diagnostics** narzędzi, wybierz **stos wywołań zdarzenia** otworzyć **stos wywołań zdarzenia grafiki** okna.  
   
-2.  Począwszy od zdarzenie rysowania, który renderuje wyniki symulacji, ruch do tyłu za pośrednictwem każdej poprzedniej `CSSetShader` zdarzeń. Następnie w **stosu wywołań zdarzeń grafiki** okna, wybierz funkcję najwyższy można przejść do wywołania. W witrynie wywołanie służy pierwszy parametr [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) wywołania funkcji do określenia, które obliczeniowe programu do cieniowania jest wykonywana przez następne `Dispatch` zdarzeń.  
+2.  Począwszy od zdarzenia rysowania, które renderuje wyniki symulacji, przesunąć się do tyłu przez każde poprzednie `CSSetShader` zdarzeń. Następnie w **stos wywołań zdarzenia grafiki** oknie Wybierz pierwszą funkcję, aby przejść do witryny wywołania. W witrynie wywołania można użyć pierwszy parametr [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) wywołania funkcji do określenia, które cieniowanie obliczenia jest wykonywane przez następne `Dispatch` zdarzeń.  
   
- W tym scenariuszu istnieją trzy pary `CSSetShader` i `Dispatch` zdarzenia w każdej ramce. Praca Wstecz, trzeci reprezentuje parę integrację krok (gdzie płynne cząstki są w rzeczywistości przenoszone), Druga para reprezentuje krok życie obliczeń (w którym są obliczane wymusza, które mają wpływ na wszystkie składniki) i reprezentuje pierwszy pary Krok obliczania gęstości.  
+ W tym scenariuszu istnieją trzy pary `CSSetShader` i `Dispatch` zdarzenia w każdej ramce. Licząc od tyłu, trzeci reprezentuje parę integracji krok (gdzie cząstek płynu faktycznie się poruszyły), Druga para reprezentuje kroku obliczenia siły (gdzie siły, które wpływają na wszystkie cząstki są obliczane), a pierwsza Krok obliczania gęstości.  
   
-#### <a name="to-debug-the-compute-shader"></a>Do debugowania cieniowania obliczenia  
+#### <a name="to-debug-the-compute-shader"></a>Aby debugować cieniowanie obliczenia  
   
-1.  Na **diagnostyki grafiki** narzędzi wybierz **etapy potoku** otworzyć **etapy potoku grafiki** okna.  
+1.  Na **Graphics Diagnostics** narzędzi, wybierz **etapy potoku** otworzyć **etapy potoku grafiki** okna.  
   
-2.  Wybierz trzecie `Dispatch` zdarzenia (poprzedzający natychmiast zdarzenie rysowania), a następnie w **etapy potoku grafiki** okna, w obszarze **obliczeniowy program do cieniowania** etap, wybierz  **Rozpocznij debugowanie**.  
+2.  Wybierz trzecie `Dispatch` zdarzeń (jedna bezpośrednio poprzedzające zdarzenie draw) a następnie w **etapy potoku grafiki** okna, w obszarze **obliczeniowy program do cieniowania** przejściowe, wybierz  **Rozpocznij debugowanie**.  
   
-     ![Wybranie trzeci zdarzenia wysyłania w EL.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
+     ![Wybierając trzecie Zdarzenie wysyłania EL.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
-     Debuger HLSL rozpoczyna się moduł, który wykonuje kroku integracji.  
+     Debuger HLSL zostanie uruchomiony dla programu do cieniowania, który wykonuje krok integracji.  
   
-3.  Zbadanie kodu źródłowego cieniowania obliczenia kroku integracji znaleźć przyczynę błędu. Użycie diagnostyki grafiki do debugowania HLSL cieniowania obliczenia kodu, można wykonywać krokowo kodu i użyć innych znanych narzędzi debugowania, np. okien wyrażeń kontrolnych. W tym scenariuszu należy określić, że prawdopodobnie w wyniku błędu w cieniowania obliczenia, który wykonuje kroku integracji.  
+3.  Sprawdź kodzie źródłowym cieniowania obliczenia kroku integracji do wyszukania źródła błędu. Korzystając z programu Graphics Diagnostics do debugowania kodu cieniowania obliczenia HLSL, można przejść przez kod i użyć innych znanych narzędzi debugowania, takich jak okna czujki. W tym scenariuszu należy określić, że prawdopodobnie w wyniku błędu w cieniowania obliczenia, które wykonuje krok integracji.  
   
-     ![Debugowania cieniowania obliczenia IntegrateCS. ] (media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
+     ![Debugowanie cieniowania obliczenia IntegrateCS. ] (media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4.  Aby zatrzymać debugowania cieniowania obliczenia na **debugowania** narzędzi wybierz **Zatrzymaj debugowanie** (klawiatury: Shift + F5).  
+4.  Aby zatrzymać debugowanie cieniowania obliczenia na **debugowania** narzędzi, wybierz **Zatrzymaj debugowanie** (klawiatura: Shift + F5).  
   
-5.  Następnie wybierz pozycję drugiego `Dispatch` zdarzeń i rozpocząć debugowania cieniowania obliczenia, podobnie jak w poprzednim kroku.  
+5.  Następnie wybierz drugą `Dispatch` zdarzeń i rozpoczęcia debugowania cieniowania obliczenia, podobnie jak w poprzednim kroku.  
   
-     ![Wybranie drugiego zdarzenia wysyłania w EL.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
+     ![Wybierając drugie zdarzenie wysyłania EL.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   
-     Debuger HLSL rozpoczyna się programu do cieniowania, który oblicza wymusza, które mają wpływ na wszystkie składniki płynne.  
+     Debuger HLSL zostanie uruchomiony dla programu do cieniowania, który oblicza siły działające na wszystkie cząstki płynu.  
   
-6.  Zbadanie kodu źródłowego programu do cieniowania obliczeniowe dla kroku życie obliczeń. W tym scenariuszu należy określić, czy źródło błędu jest tutaj.  
+6.  Poszukaj kroku obliczenia siły w kodzie źródłowym cieniowania obliczeń. W tym scenariuszu należy określić, czy źródło błędu jest tutaj.  
   
-     ![Debugowanie ForceCS&#95;prosty obliczeniowe programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Debugowanie ForceCS&#95;prosty obliczeniowy program do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
- Po określeniu lokalizacji błędu, można zatrzymać debugowanie i zmodyfikować kod źródłowy cieniowania obliczenia, aby poprawnie obliczyć odległość między cząstki wchodzącymi w interakcje. W tym scenariuszu należy zmienić wiersza `float2 diff = N_position + P_position;` do `float2 diff = N_position - P_position;`:  
+ Po określeniu lokalizacji błędu, można zatrzymać debugowanie i zmodyfikować kod źródłowy cieniowania obliczenia, aby poprawnie obliczyć odległość między wchodzącymi w interakcje cząstkami. W tym scenariuszu po prostu Zmień wiersz `float2 diff = N_position + P_position;` do `float2 diff = N_position - P_position;`:  
   
  ![Poprawiony obliczeń&#45;kodu programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
- W tym scenariuszu ponieważ programów do cieniowania obliczeniowe są kompilowane w czasie wykonywania, można tylko ponownym uruchomieniu aplikacji po wprowadzeniu zmian, aby sprawdzić ich wpływ na symulacyjnych. Nie masz odbudować aplikacji. Po uruchomieniu aplikacji, można wykryć poprawne działanie teraz symulacji.  
+ W tym scenariuszu ponieważ cieniowania obliczenia są kompilowane w czasie wykonywania można tylko ponownie uruchomić aplikację po wprowadzeniu zmian, aby obejrzeć ich wpływ na symulację. Nie trzeba ponownie kompilować aplikacji. Po uruchomieniu aplikacji, można wykryć, że teraz Symulacja zachowuje się poprawnie.  
   
- ![Symulowane płynu działa poprawnie. ] (media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
+ ![Symulowane dynamiki zachowuje się poprawnie. ] (media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")

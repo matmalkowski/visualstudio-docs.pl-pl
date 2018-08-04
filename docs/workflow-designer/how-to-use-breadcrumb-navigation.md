@@ -1,5 +1,5 @@
 ---
-title: 'Projektant przepływu pracy — porady: Użyj nadrzędnych'
+title: 'Projektant przepływu pracy — porady: Korzystanie z nawigacji z linków do stron nadrzędnych'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,46 +10,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757622"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512281"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Porady: Użyj nadrzędnych
+# <a name="how-to-use-breadcrumb-navigation"></a>Porady: Korzystanie z nawigacji z linków do stron nadrzędnych
 
-Istnieją trzy sposoby zestawu działań, które są wyświetlane w Projektancie przepływów pracy zmian:
+Istnieją trzy podstawowe sposoby zmianę zestawu działań, które są wyświetlane w Projektancie przepływu pracy:
 
-1.  Kliknij dwukrotnie, aby przejść do szczegółów celu działania podrzędnego.
+1.  Kliknij dwukrotnie, aby przejść do działania podrzędnego.
 
-2.  Kliknij przycisk paska stron nadrzędnych można przejść do działanie nadrzędne.
+2.  Kliknij przycisk na pasku nawigacji, aby przejść do działania w elemencie nadrzędnym.
 
 3.  Rozwiń lub Zwiń działań w miejscu.
 
-## <a name="using-breadcrumb-navigation"></a>Za pomocą stron nadrzędnych
+## <a name="using-breadcrumb-navigation"></a>Przy użyciu nadrzędnych
 
-1.  Kliknij dwukrotnie działanie projektanta przepływów pracy, aby zmienić działanie główne klikniętej działania. Działanie klikniętej jest następnie pełni rozwinięty w katalogu głównym i jego obiektów nadrzędnych są wyświetlane na pasku stron nadrzędnych. Jest to czasem nazywane przechodzenia na wyższy poziom do lub z działania.
+1.  Kliknij dwukrotnie działanie projektanta przepływów pracy, aby zmienić działania głównego kliknięto działania. Kliknięto działania następnie jest w pełni rozwinięta w katalogu głównym i jego elementów nadrzędnych są wyświetlane na pasku nawigacji. Jest to czasem nazywane przechodzenia do szczegółów w lub poza nią działania.
 
-2.  Aby przejść do elementu nadrzędnego bieżącego działania głównego, kliknij działanie na pasku stron nadrzędnych.
+2.  Aby przejść do elementu nadrzędnego bieżącego działania głównego, kliknij działanie na pasku nawigacji.
 
 ## <a name="expanding-or-collapsing-an-activity-in-place"></a>Rozwijanie lub zwijanie działania w miejscu
 
 1.  Kliknij cudzysłów ostrokątny w działaniu rozwija lub zwija działania w miejscu.
 
-2.  Po zmianie stanu rozszerzenia stanu po kliknięciu przycisku Nowy stan rozszerzenia jest zapisany w języku XAML.
+2.  Po zmianie stanu stanu rozszerzenia, klikając przycisk Nowy stan rozszerzenia jest zapisywany w XAML.
 
     > [!WARNING]
-    > Nie wszystkie działania można rozszerzać w miejscu. Istnieją dwa przypadki, gdy działanie nie może być rozwinięty w miejscu: albo element nadrzędny działania nie zezwala na jego elementów podrzędnych do wyodrębnienia w miejscu, (na przykład działania w elemencie Schemat blokowy nie może być rozwinięty w miejscu), lub nie zezwala na siebie Projektant działań można rozwinąć w miejscu. Mimo że żaden z projektantami działań uwzględnione w Projektancie przepływów pracy nie ma ostatnie zachowanie, niektóre działania niestandardowe mogą działać to zachowanie.
+    > Nie wszystkie działania można rozszerzać w miejscu. Istnieją dwa przypadki, gdy działanie nie może być rozwinięty w miejscu: albo nadrzędnym działania nie zezwala na jego elementów podrzędnych do wyodrębnienia w miejscu, (na przykład działania w elemencie Schemat blokowy nie może być rozwinięty w miejscu), lub nie zezwala na się Projektant działań można rozwinąć w miejscu. Mimo że żaden z Projektanci działań uwzględnione w Projektancie przepływu pracy jego zachowanie, niektóre działania niestandardowe mogą przedstawia tego zachowania.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Wszystkie rozwijanie lub zwijanie wszystkich działań
 
-1.  Użyj **Rozwiń wszystkie** i **Zwiń wszystkie** przycisków w interfejsie użytkownika, aby rozwinąć lub zwinąć wszystkie działania w katalogu głównym bieżącej stron nadrzędnych. Należy pamiętać, że wszystkie rozwijanie i zwijanie, wszystkie są globalne stanów. Oznacza to, że podczas działania głównego przy użyciu nadrzędnych, rozwiń wszystkie zmiany lub Zwiń wszystkie stan będzie się powtarzał dopiero po kliknięciu przycisku **przywrócić**.
+1.  Użyj **Rozwiń wszystko** i **Zwiń wszystkie** przycisków w interfejsie użytkownika, aby rozwinąć lub zwinąć wszystkie działania w bieżącym katalogu głównym łączy do stron nadrzędnych. Należy zauważyć, że Rozwiń wszystko i Zwiń wszystko są globalne stanów. Oznacza to, że podczas zmiany działania głównego przy użyciu nadrzędnych, Rozwiń wszystko lub Zwiń wszystkie stany będzie się powtarzał dopóki nie klikniesz **przywrócić**.
 
-2.  Po zostały zastosowane wszystkie rozwiń lub Zwiń wszystkie stanu, możesz kliknąć **przywrócić** przycisku, który pojawia się, aby powrócić do przeglądania stanu wcześniej zastosowane do każdego działania.
-
-    > [!WARNING]
-    > Jeśli działanie, takich jak <xref:System.Activities.Statements.Flowchart>, zrezygnowała z rozwiń w miejscu, funkcje związane z **Rozwiń wszystko** i **Zwiń wszystkie** przycisków jest wyłączona na **schematu blokowego**  projektanta. Aby uzyskać więcej informacji na temat **schemat blokowy** projektanta, zobacz [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) tematu.
+2.  Po zastosowaniu wszystkich rozwiń lub Zwiń wszystkie stany, możesz kliknąć **przywrócić** przycisk, który pojawia się, aby wrócić do wyszukiwania w stanie uprzednio zastosowane do każdego działania.
 
     > [!WARNING]
-    > Rozwiń wszystko również ma wpływ specjalne **przełącznika** i **TryCatch** projektantów działań. Po kliknięciu **Rozwiń wszystkie**, są wyświetlane wszystkie przypadki przełącznika i wszystkie bloki try/catch/finally. Kliknięcie przycisku **przywrócić** lub **Zwiń wszystkie** zwraca te projektantów ich stan domyślny, w którym można kliknąć poszczególne przypadku/zablokowanych, aby wyświetlić jego zawartość.
+    > Jeśli działania, takie jak <xref:System.Activities.Statements.Flowchart>, wybrał poza rozwiń w miejscu, funkcje skojarzone z **Rozwiń wszystko** i **Zwiń wszystko** przycisków jest wyłączona na **schematu blokowego**  projektanta. Aby uzyskać więcej informacji na temat **schemat blokowy** projektanta, zobacz [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) tematu.
+
+    > [!WARNING]
+    > Rozwiń wszystkie efekty specjalne zawiera również w **przełącznika** i **TryCatch** Projektanci działań. Po kliknięciu **Rozwiń wszystko**, zostaną wyświetlone wszystkie przypadki przełącznika i wszystkie bloki try/catch/finally. Klikając **przywrócić** lub **Zwiń wszystko** zwraca te projektantów do stanu domyślnego, z którego możesz kliknąć poszczególne przypadek/bloku, aby wyświetlić jego zawartość.

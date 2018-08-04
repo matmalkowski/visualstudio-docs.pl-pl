@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180275"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512307"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
@@ -178,11 +178,17 @@ Jeśli chcesz sprawdzić, czy działa testu jednostkowego, wybierz opcję **Test
 
 Gratulujemy ukończenie tego przewodnika Szybki Start! Następnie możesz chcieć poznać inne Przewodniki Szybki Start dla programu Visual Studio, lub Dowiedz się więcej na temat [tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Personalizowanie programu Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Szybki Start: Generowanie kodu z edytora](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem](../ide/quickstart-personalize-the-ide.md)
-- [Szybki Start: Generowanie kodu z edytora](../ide/quickstart-editor.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

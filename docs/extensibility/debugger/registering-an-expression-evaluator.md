@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251208"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510493"
 ---
 # <a name="register-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  Biblioteka DLL EE implementuje `DllRegisterServer` funkcję, aby zarejestrować się za pomocą modelu COM środowiska, a także programu Visual Studio.  
   
 > [!NOTE]
->  Yoou można znaleźć MyCEE kod przykładowy rejestru kod w pliku *dllentry.cpp*, który znajduje się w obszarze EnVSDK\MyCPkgs\MyCEE instalacji VSIP.  
+>  Kod rejestru MyCEE kod przykładowy można znaleźć w pliku *dllentry.cpp*, który znajduje się w obszarze EnVSDK\MyCPkgs\MyCEE instalacji VSIP.  
   
 ### <a name="dll-server-process"></a>Proces serwera biblioteki DLL  
  Podczas rejestrowania EE, serwer biblioteki DLL:  

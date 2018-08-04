@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d1f018b9cc48d059761a26721c808024f60bb3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0774c4a7ad9686b02501bed80a060519f5a500f3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129925"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510413"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie w programie Visual Studio
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) Wyświetla projektu jako *hierarchii*. W środowisku IDE programu hierarchii jest drzewo węzłów, gdzie każdy węzeł ma zestaw właściwości. A *projektu hierarchii* jest kontenerem, który zawiera elementy projektu, relacje elementów członkowskich i elementów powiązanych właściwości i poleceń.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) Wyświetla projektu jako *hierarchii*. W środowisku IDE programu hierarchii jest drzewo węzłów, w którym każdy węzeł ma zbiór skojarzonych z nimi właściwości. A *projektu hierarchii* to kontener, który zawiera elementy projektu, relacje elementów i skojarzonych z nimi właściwości elementów i polecenia.  
   
- W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], projektu hierarchii można zarządzać za pomocą interfejsu hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Interfejsu przekierowuje wywołania z elementów projektu do okna odpowiedniej hierarchii zamiast standardowego polecenia program obsługi poleceń.  
+ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zarządzanie hierarchiami projektu przy użyciu interfejsu hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Interfejsu przekierowuje wywołania z elementów projektu do okna odpowiedniej hierarchii zamiast programu obsługi poleceń standardowych poleceń.  
   
 ## <a name="project-hierarchies"></a>Projekt hierarchii  
- Każda hierarchia projektu zawiera elementy, które można wyświetlać i edytować. Te elementy różnią się w zależności od typu projektu. Na przykład projekt bazy danych może zawierać procedur składowanych, widoków bazy danych i tabel bazy danych. Projekt język programowania, z drugiej strony, prawdopodobnie zawiera pliki źródłowe i pliki zasobów dla mapy bitowe i okna dialogowe pól. Hierarchie mogą być zagnieżdżane, które zapewnia elastycznością dodane podczas tworzenia hierarchii projektu.  
+ Każda hierarchia projektu zawiera elementy, które mogą wyświetlać i edytować. Te elementy różnią się w zależności od typu projektu. Na przykład projekt bazy danych może zawierać procedury składowane, widoki bazy danych i tabel bazy danych. Projekt język programowania, z drugiej strony, będzie prawdopodobnie zawierać pliki źródłowe i pliki zasobów dla mapy bitowe i w oknach dialogowych. Hierarchie mogą być zagnieżdżane, które zapewnia pewne dodatkową elastyczność podczas tworzenia hierarchii projektu.  
   
- Podczas tworzenia nowego typu projektu typ projektu określa pełny zestaw elementów, które mogą być edytowane w nim. Jednak projekty mogą zawierać elementy, dla których nie mają edycji pomocy technicznej. Na przykład projektów Visual C++ może zawierać pliki HTML, mimo że Visual C++ nie zapewnia dowolnego edytora dostosowane dla danego typu pliku HTML.  
+ Gdy tworzysz nowy typ projektu, typ projektu określa kompletny zestaw elementów, które mogą być edytowane w nim. Jednak projekty mogą zawierać elementy, dla których nie mają edycję. Na przykład projektów Visual C++ może zawierać pliki HTML, mimo że Visual C++ nie zapewnia żadnych niestandardowy edytor dla typu pliku HTML.  
   
- Hierarchie Zarządzanie trwałości elementów, które zawierają. Implementacja w hierarchii musi kontrolować specjalnych właściwości, które mają wpływ na trwałości elementów w hierarchii. Na przykład jeśli elementy reprezentują obiektów w repozytorium zamiast plików, implementacja hierarchii musi kontrolować trwałości tych obiektów. IDE sam kieruje hierarchii do zapisania elementów zgodnie z danych wejściowych użytkownika, ale IDE nie kontroluje żadnych akcji, aby zapisać te elementy. Zamiast tego projektu jest w formancie.  
+ Hierarchie Zarządzanie trwałości elementy, które zawierają. Implementacja w hierarchii musi kontrolować specjalne właściwości, które wpływają na stan trwały elementów w hierarchii. Na przykład jeśli elementy reprezentują obiektów w repozytorium, a nie plików, wdrożenia hierarchii musi kontrolować trwałości tych obiektów. Bezpośrednio ze środowiska IDE kieruje hierarchii, aby zapisać elementy zgodne z danych wejściowych użytkownika, ale IDE nie jest kontrolowane przez dowolne operacje wymagane do zapisania tych elementów. Zamiast tego projektu jest w formancie.  
   
- Po otwarciu elementu w edytorze, hierarchii, która kontroluje ten element jest zaznaczony, a staje się aktywnej hierarchii. Wybrana hierarchia określa zestaw poleceń do działania w elemencie. Fokus w ten sposób śledzenia umożliwia hierarchii w celu odzwierciedlenia bieżącego kontekstu użytkownika.  
+ Gdy użytkownik otwiera element w edytorze, hierarchii, która kontroluje tego elementu jest zaznaczone i staje się aktywnej hierarchii. Wybrana hierarchia określa zestaw poleceń dostępnych do działania w elemencie. Śledzenie fokus w ten sposób umożliwia hierarchii, aby odzwierciedlić bieżący kontekst użytkownika.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Typy projektów](../../extensibility/internals/project-types.md)   
- [Wybór i waluty w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
+ [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Przykłady VSSDK](http://aka.ms/vs2015sdksamples)

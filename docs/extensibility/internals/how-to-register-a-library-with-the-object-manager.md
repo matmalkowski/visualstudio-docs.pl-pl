@@ -1,5 +1,5 @@
 ---
-title: 'Porady: rejestrowanie biblioteki z Menedżera obiektów | Dokumentacja firmy Microsoft'
+title: 'Porady: rejestrowanie biblioteki przy użyciu Menedżera obiektów | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bf2775c358b107fe299f0d60bc00a2030465e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132998"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513325"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Porady: rejestrowanie biblioteki z Menedżera obiektów
-Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki Znajdź Symbol**, umożliwiają wyświetlanie symbole w projekcie lub składników zewnętrznych. Symbole obejmują obszary nazw, klasy, interfejsy, metody i inne elementy języka. Biblioteki śledzenie tych symboli i ujawniać je, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów, które wypełnia narzędzia z danymi.  
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Porady: rejestrowanie biblioteki przy użyciu Menedżera obiektów
+Symbole, przeglądania narzędzia, takie jak **Widok klas**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli**, można wyświetlać symbole w projekcie lub w składnikach zewnętrznych. Symbole obejmują przestrzenie nazw, klasy, interfejsy, metod i inne elementy języka. Biblioteki śledzenie tych symboli i udostępnić je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów, która wypełnia narzędzia z danymi.  
   
- Menedżer obiektów przechowuje informacje o wszystkich dostępnych bibliotek. Każdej biblioteki należy zarejestrować się Menedżera obiektów przed zapewnienie symbole dla narzędzia przeglądanie symbolu.  
+ Menedżer obiektów przechowuje informacje o wszystkich dostępnych bibliotek. Każdej biblioteki należy zarejestrować przy użyciu Menedżera obiektów przed symbole dla narzędzi do przeglądania symboli.  
   
- Zazwyczaj biblioteki należy zarejestrować po załadowaniu pakiet VSPackage. Jednak mogą to robić w późniejszym terminie zgodnie z potrzebami. Można wyrejestrować biblioteki podczas VSPackage zamykania.  
+ Zazwyczaj należy zarejestrować bibliotekę, podczas ładowania pakietu VSPackage. Jednak go może odbywać się w innym czasie zgodnie z potrzebami. Podczas wyłączania pakietu VSPackage wyrejestrowano biblioteki.  
   
- Aby zarejestrować bibliotekę, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> metody. W przypadku biblioteki kod zarządzany, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.  
+ Aby zarejestrować bibliotekę, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> metody. Biblioteki kodu zarządzanego, można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.  
   
  Aby wyrejestrować bibliotekę, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.  
   
- Aby uzyskać odwołania do Menedżera obiektów <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, przekazać <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> usługi identyfikator `GetService` — metoda.  
+ Aby uzyskać odwołanie do Menedżera obiektów <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, przekazać <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identyfikator do usługi `GetService` metody.  
   
-## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Rejestrowanie i Wyrejestrowywanie biblioteki z Menedżera obiektów  
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Rejestrowanie i wyrejestrowywanie bibliotekę z Menedżera obiektów  
   
-#### <a name="to-register-a-library-with-the-object-manager"></a>Aby zarejestrować bibliotekę z Menedżera obiektów  
+### <a name="to-register-a-library-with-the-object-manager"></a>Aby zarejestrować bibliotekę z Menedżera obiektów  
   
 1.  Utwórz bibliotekę.  
   
@@ -58,7 +58,7 @@ Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki ob
   
     ```  
   
-2.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.  
+2.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metody.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -112,9 +112,9 @@ Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki ob
   
     ```  
   
-#### <a name="to-unregister-a-library-with-the-object-manager"></a>Wyrejestrowania biblioteki z Menedżera obiektów  
+### <a name="to-unregister-a-library-with-the-object-manager"></a>Aby wyrejestrować bibliotekę z Menedżera obiektów  
   
-1.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.  
+1.  Uzyskaj odwołanie do obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> wpisz i wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metody.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -167,7 +167,7 @@ Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki ob
   
     ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Rozszerzalność usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-extensibility.md)   
- [Obsługa narzędzia do przeglądania Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Instrukcje: uwidacznianie listy symboli udostępnianych przez bibliotekę dla menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>Zobacz także  
+ [Rozszerzalność usługi starszego języka](../../extensibility/internals/legacy-language-service-extensibility.md)   
+ [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Instrukcje: Uwidacznianie listy symboli udostępnianych przez bibliotekę dla Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

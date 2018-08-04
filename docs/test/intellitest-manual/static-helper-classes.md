@@ -1,5 +1,5 @@
 ---
-title: Klasy statyczne pomocy | Narzędzie Test Microsoft IntelliTest Developer
+title: Statyczne klasy pomocy | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,36 +11,36 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815902"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511070"
 ---
 # <a name="static-helper-classes"></a>Statyczne klasy pomocy
 
-IntelliTest zapewnia zbiór statyczną klasę pomocy używaną podczas tworzenia [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing):
+IntelliTest udostępnia zestaw klasy pomocnika statyczne, które mogą być używane podczas tworzenia [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing):
 
-* [PexAssume](#pexassume): umożliwia zdefiniowanie założeń na dane wejściowe i przydaje się do filtrowania niepożądanych danych wejściowych
-* [PexAssert](#pexassert): klasy proste potwierdzenia do użycia, jeśli Twoje struktury testowej nie zawiera
-* [PexChoose](#pexchoose): strumienia danych wejściowych dodatkowy test, zarządzanych przez program IntelliTest
-* [PexObserve](#pexobserve): rejestruje konkretnych wartości i optionaly, weryfikuje je w wygenerowanym kodzie
+* [PexAssume](#pexassume): służy do definiowania założenia na dane wejściowe i jest przydatne w przypadku filtrowania niepożądanych danych wejściowych
+* [PexAssert](#pexassert): klasa potwierdzenie prosty do użycia, jeśli swojej struktury testów nie zapewnia
+* [PexChoose](#pexchoose): strumień danych wejściowych dodatkowe badanie, które zarządza program IntelliTest
+* [PexObserve](#pexobserve): rejestruje konkretnych wartości i, opcjonalnie, sprawdza poprawność ich w wygenerowanym kodzie
 
-Niektóre klasy umożliwiają interakcję z aparatem rozsądkiem IntelliTest w niskiego poziomu:
+Niektóre klasy umożliwiają interakcję z silnikiem logikę IntelliTest niskiego poziomu:
 
-* [PexSymbolicValue](#pexsymbolicvalue): narzędzia Inspekcja lub modyfikowanie symboliczne ograniczenia dotyczące zmiennych
+* [PexSymbolicValue](#pexsymbolicvalue): narzędzia, aby inspekcja lub modyfikowanie symboliczne ograniczenia dotyczące zmiennych
 
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-Klasa statyczna stosowany w celu założenia, takich jak [warunki wstępne](test-generation.md#precondition)w [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing). Metody tej klasy można odfiltrować dane wejściowe testu niepożądane.
+Klasa statyczna stosowany w celu założenia, takich jak [warunki wstępne](test-generation.md#precondition)w [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing). Metody tej klasy można odfiltrować dane wejściowe testu niepożądane.
 
-Jeśli nie ma warunku zakładanego niektórych testów danych wejściowych, **PexAssumeFailedException** jest generowany. To spowoduje, że test, aby dyskretnie zignorowane.
+Jeśli nie ma warunku zakładanego niektórych testów do wprowadzania, **PexAssumeFailedException** zgłaszany. To spowoduje, że test jest dyskretnie ignorowana.
 
 **Przykład**
 
-Nie będzie uwzględniać następujące test sparametryzowany **j = 0**:
+Następujący test sparametryzowany, nie uwzględni **"j" = 0**:
 
 ```csharp
 public void TestSomething(int i, int j) {
@@ -52,27 +52,27 @@ public void TestSomething(int i, int j) {
 
 **Uwagi**
 
-Powyższy kod jest niemal odpowiednikiem:
+Powyższy kod jest prawie równoważne:
 
 ```csharp
      if (j==0)
           return;
 ```
 
-z wyjątkiem przerwane **PexAssume** powoduje żadnych przypadków testowych. W przypadku liczby **Jeśli** instrukcji IntelliTest generuje oddzielny przypadek testowy, aby pokrywał **następnie** gałęzi **Jeśli** instrukcji.
+z tą różnicą, że niepowodzenie **PexAssume** powoduje brak przypadków testowych. W przypadku właściwości **Jeśli** instrukcji, program IntelliTest generuje oddzielny przypadek testowy do pokrycia **następnie** gałęzi **Jeśli** instrukcji.
 
-**PexAssume** zawiera również klasy specialzed zagnieżdżone dla założenia na ciąg, tablic i kolekcji.
+**PexAssume** zawiera również specjalistyczne klas zagnieżdżonych do założenia na ciąg, tablice i kolekcje.
 
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
-Klasa statyczna stosowany w celu potwierdzenia, takich jak [postconditions](test-generation.md#postcondition)w [sparametryzowanych testów jednostkowych](test-generation.md#parameterized-unit-testing).
+Klasa statyczna stosowany w celu potwierdzenia, takich jak [warunków końcowych](test-generation.md#postcondition)w [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing).
 
-Jeśli warunek potwierdzona nie dysponuje dla niektórych testów danych wejściowych, **PexAssertFailedException** jest zgłaszany, co powoduje, że test, aby zakończyć się niepowodzeniem.
+Jeśli warunek potwierdzone nie przechowuje dla niektórych testów do wprowadzania, **PexAssertFailedException** jest zgłaszany, co powoduje, że test zakończył się niepowodzeniem.
 
 **Przykład**
 
-Następujące potwierdza, że ma dodatnią wartość bezwzględna liczby całkowitej:
+Następujące potwierdza, że wartość bezwzględną liczby całkowitej jest dodatni:
 
 ```csharp
 public void TestSomething(int i) {
@@ -85,21 +85,21 @@ public void TestSomething(int i) {
 <a name="pexchoose"></a>
 ## <a name="pexchoose"></a>PexChoose
 
-Statyczne klasy, która dostarcza pomocnicze wartości wejściowych do testu, który może służyć do zaimplementowania [sparametryzowana Mocks](input-generation.md#parameterized-mocks).
+Klasa statyczna, dostarczającego pomocnicze w ramach wprowadzania wartości do testu, który może służyć do implementowania [sparametryzowane Mocks](input-generation.md#parameterized-mocks).
 
-**PexChoose** klasy nie jest pomocne w określeniu, czy test przekazuje lub dla określonej wartości wejściowe. **PexChoose** po prostu zawiera wartości wejściowej, które są również nazywane *opcji*. Jest nadal użytkownika do ograniczania wartości wejściowych oraz do zapisywania potwierdzenia określające podczas testu przekazuje lub kończy się niepowodzeniem.
+**PexChoose** klasy nie jest pomocne w określeniu, czy test się pomyślnie lub niepowodzeniem dla określonej wartości wejściowych. **PexChoose** po prostu zawiera wartości wejściowych, które są również nazywane *opcje*. Jest nadal użytkownika do ograniczania wartości wejściowych oraz do zapisywania potwierdzenia, które definiują, gdy test kończy się pomyślnie lub nie powiedzie się.
 
-**Tryby pracy**
+**Tryby operacyjne**
 
-**PexChoose** klasy mogą pracować w dwóch trybach:
+**PexChoose** klasy mogą działać w dwóch trybach:
 
-* Gdy IntelliTest wykonuje symboliczne analizy testu i przetestowanej kod podczas [wejściowych generowania](input-generation.md), wybór zwraca dowolne wartości i IntelliTest śledzi używania każdej wartości w teście i przetestowany kodu. IntelliTest wygeneruje odpowiednie wartości, aby wyzwolić wykonywanie różnych ścieżek w teście i przetestowany kodu.
+* Podczas testów funkcji IntelliTest wykonuje symboliczne analizy testu i przetestowane kodu podczas [wejściowych generowania](input-generation.md), okno wyboru zwraca wartości dowolnego i funkcji IntelliTest śledzi, jak każda wartość jest używana w testu i przetestowane kodu. IntelliTest wygeneruje odpowiednie wartości, aby wyzwolić wykonywanie różnych ścieżek w testu i przetestowane kodu.
 
-* Wygenerowany kod dla konkretnego przypadków testowych konfiguruje dostawcy wybór w określony sposób, aby ponowne wykonanie przypadkiem testowym będzie podejmować decyzje określonych wyzwalanie wykonywania określonej ścieżki.
+* Kod generowany dla poszczególnych przypadków testowych konfiguruje dostawcy wybór w określony sposób, aby ponowne wykonanie przypadek testowy spowoduje, że określone opcje, aby wyzwolić ścieżkę wykonania określonego.
 
-**Użycie**
+**Sposób użycia**
 
-* Proste wywołania **PexChoose.Value** aby wygenerować nową wartość:
+* Proste wywołanie **PexChoose.Value** aby wygenerować nową wartość:
 
 ```csharp
 public int Foo() {
@@ -112,7 +112,7 @@ public int Foo() {
 
 Klasa statyczna logowania nazwanych wartości.
 
-Gdy program IntelliTest Eksploruje kodu, **PexObserve** jest używana do rejestrowania obliczonych wartości przy użyciu ich oświadczenia sformatowanego ciągu. Wartości są skojarzone z unikatowe nazwy.
+Gdy program IntelliTest analizuje kod, **PexObserve** służy do rejestrowania wartości obliczanej przy użyciu ich oświadczenia sformatowany ciąg. Wartości są skojarzone z unikatowych nazw.
 
 ```csharp
 PexObserve.Value<string>("result", result);
@@ -142,15 +142,15 @@ public partial class MathExTests {
 <a name="pexsymbolicvalue"></a>
 ## <a name="pexsymbolicvalue"></a>PexSymbolicValue
 
-Klasa statyczna używane do ignorowania ograniczenia dotyczące parametrów i drukowanie symboliczne informacji związanych z wartościami.
+Klasa statyczna używane do ignorowania ograniczenia dotyczące parametrów i Drukuj symboliczne informacje związane z wartości.
 
-**Użycie**
+**Sposób użycia**
 
-Zwykle IntelliTest próbuje obejmują wszystkie ścieżki wykonywania kodu podczas wykonywania. Jednak szczególnie w przypadku przetwarzania założeń i potwierdzenia warunki, nie należy go Eksploruj wszystkich możliwych przypadków.
+Normalnie próbuje obejmują wszystkie ścieżki wykonywania kodu podczas wykonywania testów funkcji IntelliTest. Jednak szczególnie w przypadku, gdy obliczenia warunków założeń i potwierdzenie, jego powinna nie zapoznaj się z wszystkich przypadków możliwe.
 
 **Przykład**
 
-Ten przykład przedstawia implementację **PexAssume.Arrays.ElementsAreNotNull** metody. W metodzie możesz zignorować ograniczenia długości tablicy wartości w celu uniknięcia IntelliTest próby generowania różne rozmiary tablicy. Ograniczenia są ignorowane, tylko w tym miejscu. Jeśli testowany kod zachowuje się inaczej dla długości tablicy różnych IntelliTest nie można wygenerować różnych tablic o rozmiarze z ograniczenia testowany kod.
+W tym przykładzie przedstawiono implementację **PexAssume.Arrays.ElementsAreNotNull** metody. W metodzie możesz zignorować ograniczenia długości wartości tablicy, aby uniknąć IntelliTest próby wygenerowania różne rozmiary tablicy. Ograniczenia są ignorowane, tylko w tym miejscu. Jeśli przetestowane kod zachowuje się inaczej dla innej tablicy długości IntelliTest nie można wygenerować różnych tablic o rozmiarze od ograniczenia przetestowane kodu.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)
@@ -172,6 +172,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Opublikuj swoje pomysły i funkcji żądania na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

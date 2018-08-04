@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wdrożeniu projektów zagnieżdżonych | Dokumentacja firmy Microsoft'
+title: 'Porady: Implementowanie zagnieżdżonych projektów | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,83 +14,83 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864465"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512903"
 ---
-# <a name="how-to-implement-nested-projects"></a>Porady: wdrożeniu zagnieżdżonych projektów
+# <a name="how-to-implement-nested-projects"></a>Porady: Implementowanie zagnieżdżonych projektów
 
-Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z obowiązków tego samego, które rozwiązanie ma jego projektów zagnieżdżonych (podrzędny). Projekt nadrzędny jest kontenerem projektów podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zgłoszone przez rozwiązanie i projekty nadrzędnego do kompilacji hierarchia zagnieżdżonych projektów. Te zdarzenia są opisane w następujących proces tworzenia zagnieżdżonych projektów.
+Po utworzeniu typu projektu zagnieżdżonego, istnieje kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z tych samych obowiązków, które rozwiązanie ma jego projektów zagnieżdżonych (elementów podrzędnych). Projekt nadrzędny jest kontenerem projektów, które są podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zostać wywołane przez rozwiązania i projekty nadrzędnego do tworzenia hierarchii zagnieżdżonych projektów. Zdarzenia te są opisane w ramach następującego procesu tworzenia zagnieżdżonych projektów.
 
-## <a name="create-nested-projects"></a>Tworzenie projektów zagnieżdżonych
+## <a name="create-nested-projects"></a>Tworzenie zagnieżdżonych projektów
 
-1.  Zintegrowane środowisko programistyczne (IDE) ładuje informacje pliku i uruchamianie projektu projektu nadrzędnego wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu. Projekt nadrzędny jest tworzony i dodawany do rozwiązania.
-
-    > [!NOTE]
-    > W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do tworzenia projektu zagnieżdżonego, ponieważ można utworzyć projektu nadrzędnego, aby można było utworzyć projektów podrzędnych. Po tej sekwencji projektu nadrzędnego można stosować ustawienia do projektów podrzędnych i projekty podrzędne można uzyskać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest wymagana na przez klientów, takie jak kontroli kodu źródłowego (SCC) i w Eksploratorze rozwiązań.
-
-     Projekt nadrzędny musi czekać, aż <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metody do wywołania przez IDE przed przygotowaniem zagnieżdżonych (podrzędnej) projektu lub projektów.
-
-2.  Wywołania IDE `QueryInterface` projektu nadrzędnego dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Jeśli to wywołanie zakończy się powodzeniem, wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metody element nadrzędny, aby otworzyć wszystkie zagnieżdżone projektów dla projektu nadrzędnego.
-
-3.  Wywołania projektu nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metody o zagnieżdżone projekty mają zostać utworzone. SCC, na przykład nasłuchuje tych zdarzeń, aby dowiedzieć się, jeśli kroki w procesie tworzenia rozwiązań i projektów są wykonywane w kolejności. Jeśli zostaną wykonane kroki poza kolejnością, rozwiązanie może nie być z kontroli kodu źródłowego poprawnie zarejestrowany.
-
-4.  Wywołania projektu nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metody dla każdego z jego projektów podrzędnych.
-
-     Możesz przekazać <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> do `AddVirtualProject` metody, aby wskazać, że wirtualne projektu (zagnieżdżonego) należy dodać do okna projektu wyłączone z kompilacji, dodane do kontroli kodu źródłowego i tak dalej. `VSADDVPFLAGS` Umożliwia sterowanie widoczność projektu zagnieżdżonego i wskazywać, jakie funkcje są z nią skojarzona.
-
-     Jeśli ponownie załadować istniejących projektu podrzędnego projektu przechowywane w pliku projektu projektu nadrzędnym, wywołania projektu nadrzędnego identyfikatora GUID `AddVirtualProjectEx`. Jedyną różnicą między `AddVirtualProject` i `AddVirtualProjectEX` jest to, że `AddVirtualProjectEX` ma parametr, aby włączyć projektu nadrzędnego określić dla każdego wystąpienia `guidProjectID` dla projektu podrzędnego włączyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funkcji poprawnie.
-
-     Jeżeli nie jest dostępny, nie identyfikatora GUID, takie jak podczas dodawania nowego projektu zagnieżdżonego rozwiązania tworzy po jednej dla projektu w czasie, dodane do elementu nadrzędnego. Jest odpowiedzialny za projektu nadrzędnego, aby utrwalić projektu identyfikatora GUID w pliku projektu. Po usunięciu projektu zagnieżdżonego identyfikatora GUID dla tego projektu mogą być również usuwane.
-
-5.  Wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metody dla każdego projektu podrzędnego projektu nadrzędnego.
-
-     Projekt nadrzędny musi implementować `IVsParentProject` Aby zagnieździć projektów. Ale nadrzędnego projektu nigdy nie wywołuje `QueryInterface` dla `IVsParentProject` nawet wtedy, gdy posiada projektów nadrzędnego podrzędne. Rozwiązanie obsługuje wywołanie `IVsParentProject` i, jeśli jest stosowana, wywołuje metodę `OpenChildren` do tworzenia projektów zagnieżdżonych. `AddVirtualProjectEX` zawsze jest wywoływana z `OpenChildren`. Nigdy nie powinna być wywoływana przez projektu nadrzędnego, aby zachować hierarchię zdarzeń tworzenia w kolejności.
-
-6.  Wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metody projektu podrzędnego.
-
-7.  Wywołania projektu nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metody do powiadamiania słuchaczy utworzono projektów podrzędnych dla obiektu nadrzędnego.
-
-8.  Wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metody dla projektu nadrzędnego po otwarciu wszystkich projektów podrzędnych.
-
-     Jeśli go jeszcze nie istnieje, projektu nadrzędnego tworzy identyfikator GUID dla każdego projektu zagnieżdżonego przez wywołanie metody `CoCreateGuid`.
+1.  Zintegrowanego środowiska programistycznego (IDE) ładuje informacje plików i uruchamiania projektów projektu nadrzędnego, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu. Projekt nadrzędny zostanie utworzony i dodany do rozwiązania.
 
     > [!NOTE]
-    > `CoCreateGuid` Interfejs API modelu COM jest wywoływane, gdy jest identyfikator GUID ma zostać utworzony. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
+    > W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do utworzenia projektu zagnieżdżonego, ponieważ projekt nadrzędny musi zostać utworzony przed utworzeniem projektów podrzędnych. Po tej sekwencji projekt nadrzędny można stosować ustawienia dla projektów podrzędnych, i projektów podrzędnych można pobrać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest ona potrzebna w przez klientów, takich jak kontroli kodu źródłowego (SCC) i **Eksploratora rozwiązań**.
 
-     Projekt nadrzędny przechowuje ten identyfikator GUID w pliku projektu mają zostać pobrane przy następnym otwarciu w IDE. Zobacz krok 4, aby uzyskać więcej informacji dotyczących telefonicznej z `AddVirtualProjectEX` można pobrać `guidProjectID` dla projektu podrzędnego.
+     Projekt nadrzędny musi czekać <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda wywoływana przez środowisko IDE, zanim można utworzyć jego zagnieżdżonych (podrzędny) w projekcie lub w projektach.
 
-9. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Następnie wywoływana jest metoda identyfikator elementu nadrzędnego Konwencja delegowanie w celu projektu zagnieżdżonego. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Pobiera właściwości węzła, który zagnieżdżony projektu, który chcesz delegować w wywołanego w nadrzędnej.
+2.  Wywołania środowiska IDE `QueryInterface` projekt nadrzędny dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Jeśli to wywołanie zakończy się powodzeniem, wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda elementu nadrzędnego, aby otworzyć wszystkie zagnieżdżonych projektów dla projektu nadrzędnego.
 
-     Ponieważ projekty nadrzędne i podrzędne są tworzone programowo, można ustawić właściwości dla projektów zagnieżdżonych w tym momencie.
+3.  Wywoływanych w projekcie nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metoda o zagnieżdżonych projektów mają zostać utworzone. SCC, na przykład nasłuchuje tych zdarzeń, aby dowiedzieć się, jeśli czynności w procesie tworzenia rozwiązania i projektu są wykonywane w kolejności. Jeśli kroki pojawiają się poza kolejnością, rozwiązanie może nie być kontroli kodu źródłowego poprawnie zarejestrowany.
+
+4.  Wywoływanych w projekcie nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metody na każdym z jego projektów podrzędnych.
+
+     Możesz przekazać <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> do `AddVirtualProject` metodę w celu wskazania, czy wirtualny projekt (zagnieżdżona) powinien zostać dodany do okno projektu wyłączone z kompilacji, dodać do kontroli kodu źródłowego i tak dalej. `VSADDVPFLAGS` Umożliwia kontrolowanie widoczności elementu projektu zagnieżdżonego i wskazują, jakie funkcje są skojarzone z nim.
+
+     Jeśli załadujesz uprzednio istniejącego projektu podrzędnego, który ma projektu przechowywany w pliku projektu projektu nadrzędnego, wywoływanych w projekcie nadrzędny identyfikator GUID `AddVirtualProjectEx`. Jedyną różnicą między `AddVirtualProject` i `AddVirtualProjectEX` jest fakt, że `AddVirtualProjectEX` ma parametr, aby włączyć projekt nadrzędny określić dla każdego wystąpienia `guidProjectID` dla projektu podrzędnego, aby włączyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funkcji poprawnie.
+
+     Jeżeli nie jest dostępny, żaden identyfikator GUID, takie jak podczas dodawania nowego projektu zagnieżdżonego rozwiązanie spowoduje utworzenie go dla projektu w czasie, który zostanie dodany do elementu nadrzędnego. Jest odpowiedzialny za projekt nadrzędny można utrwalić projektu identyfikator GUID w pliku projektu. Jeśli usuniesz projektu zagnieżdżonego, identyfikator GUID dla tego projektu mogą być również usuwane.
+
+5.  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metody dla każdego projektu podrzędnego projektu nadrzędnego.
+
+     Projekt nadrzędny musi implementować element `IVsParentProject` Aby zagnieździć projektów. Ale nadrzędnego projektu nigdy nie wywołuje `QueryInterface` dla `IVsParentProject` nawet wtedy, gdy ma ona projektów nadrzędne, podrzędne. Rozwiązanie obsługuje wywołanie `IVsParentProject` i, jeśli jest stosowana, wywołuje metodę `OpenChildren` do tworzenia projektów zagnieżdżonych. `AddVirtualProjectEX` zawsze jest wywoływany z `OpenChildren`. Nigdy nie powinna być wywoływana przez projekt nadrzędnej, aby zachować hierarchię tworzenia zdarzeń w kolejności.
+
+6.  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metody na projekt podrzędny.
+
+7.  Wywoływanych w projekcie nadrzędnego <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metoda o utworzeniu projektów podrzędnych dla obiektu nadrzędnego.
+
+8.  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metody w projekcie nadrzędnym, po otwarciu wszystkich projektów podrzędnych.
+
+     Jeśli go jeszcze nie istnieje, projekt nadrzędny tworzy identyfikator GUID dla każdego projektu zagnieżdżonego, wywołując `CoCreateGuid`.
 
     > [!NOTE]
-    > Nie tylko czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale możesz również poprosić, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób można dodać dodatkowe atrybuty dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
+    > `CoCreateGuid` Interfejs API modelu COM jest wywoływana, gdy ma zostać utworzony identyfikator GUID. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
 
-10. Hierarchia zaprojektowano pod kątem wyświetlania w Eksploratorze rozwiązań w wyniku wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.
+     Ten identyfikator GUID są zapisane w projekcie nadrzędnej w pliku projektu mają być pobrane przy następnym, który jest otwierany w środowisku IDE. Zobacz krok 4, aby uzyskać więcej informacji dotyczących wywołania `AddVirtualProjectEX` można pobrać `guidProjectID` dla projektu podrzędnego.
 
-     Przekaż hierarchii do środowiska za pośrednictwem `GetNestedHierarchy` do tworzenia hierarchii do wyświetlenia w Eksploratorze rozwiązań. W ten sposób rozwiązania wie, że projekt istnieje i mogą być zarządzane dla tworzenia przez Menedżera kompilacji lub umożliwiają pliki w projekcie, które należy umieścić pod kontrolą kodu źródłowego.
+9. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Następnie wywoływana jest metoda identyfikator elementu nadrzędnego zgodnie z Konwencją delegowanie w do projektu zagnieżdżonego. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Pobiera właściwości węzła, który zagnieżdżony projekt, który ma działać delegowanie w wywołanego w nadrzędnej.
 
-11. Po utworzeniu wszystkich zagnieżdżonych projektach Project1 kontroli jest przekazywane z powrotem do rozwiązania, a proces jest powtarzany w przypadku projekcie 2.
+     Ponieważ nadrzędne i podrzędne projekty są tworzone programowo, można ustawić właściwości dla zagnieżdżonych projektów w tym momencie.
 
-     Ten sam proces tworzenia projektów zagnieżdżony występuje dla projektu podrzędnego, który ma element podrzędny. W takim przypadku BuildProject1, który jest elementem podrzędnym Project1, gdyby projektów podrzędnych one zostałyby utworzone po BuildProject1 i przed projekcie 2. Proces jest rekursywny i hierarchia składa się z góry w dół.
+    > [!NOTE]
+    > Nie tylko, czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale można również zadawać, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu, sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób możesz dodać atrybuty bardzo dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
 
-     Gdy projektu zagnieżdżonego jest zamknięty, ponieważ użytkownik zamknął rozwiązania lub konkretnym projektu, inne metody na `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, nosi nazwę. Projekt nadrzędny opakowuje wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> metody o do rozwiązania zdarzeń są zamykane zagnieżdżonych projektów.
+10. Hierarchia zaprojektowano pod kątem wyświetlania w **Eksploratora rozwiązań** wywołaniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.
 
-Poniższe tematy dotyczy kilka pojęć wziąć pod uwagę podczas implementowania zagnieżdżonych projektów:
+     Przekazać hierarchii do środowiska za pomocą `GetNestedHierarchy` do tworzenia hierarchii do wyświetlenia w oknie Eksploratora rozwiązań. W ten sposób rozwiązania wie, że projekt istnieje i mogą być zarządzane do tworzenia przez Menedżera kompilacji lub można zezwolić na pliki w projekcie, które należy umieścić pod kontrolą kodu źródłowego.
+
+11. Po utworzeniu wszystkich zagnieżdżonych projektów dla projektu Project1 sterowanie jest przekazywane do rozwiązania, a proces jest powtarzany podczas o nazwie Project2.
+
+     Występuje ten sam proces tworzenia zagnieżdżonych projektów dla projektu podrzędnego, który ma element podrzędny. W tym przypadku BuildProject1, który jest elementem podrzędnym projektu Project1, gdyby projekty podrzędne zostaną utworzone po BuildProject1 i przed o nazwie Project2. Ten proces jest cykliczna, a hierarchia została stworzona od góry w dół.
+
+     Po zamknięciu projektu zagnieżdżonego, ponieważ użytkownik zamknął rozwiązania lub określonego projektu, inna metoda na `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, jest wywoływana. Projekt nadrzędny opakowuje wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> metody o rozwiązaniu zdarzenia są zamykane zagnieżdżonych projektów.
+
+Poniższe tematy dotyczy kilka innych koncepcji, które należy wziąć pod uwagę podczas implementowania zagnieżdżonych projektów:
 
 - [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-- [Filtrowanie okna dialogowego Dodawanie elementu dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Filtrowanie okna dialogowego AddItem dla zagnieżdżonych projektów](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dodawanie elementów do okien dialogowych Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Dodawanie elementów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Parametry kontekstu](../../extensibility/internals/context-parameters.md)
-- [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Plik kreatora (vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

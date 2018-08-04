@@ -1,5 +1,5 @@
 ---
-title: Użyj i skonfiguruj analizatorów Roslyn w programie Visual Studio
+title: Użyj i skonfiguruj analizatorów Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204157"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512174"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurowanie i używanie zasady działania analizatora Roslyn
 
@@ -141,6 +141,31 @@ Można pominąć Diagnostyka jednej lub wielu z **lista błędów** , wybierają
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Użycie wiersza polecenia
+
+Podczas tworzenia projektu w wierszu polecenia, naruszenia reguły są wyświetlane w danych wyjściowych kompilacji, jeśli są spełnione następujące warunki:
+
+- Analizatory są instalowane jako pakiet Nuget, a nie jako rozszerzenia VSIX.
+
+- Co najmniej jedną regułę naruszenia kodu projektu.
+
+- [Ważność](#rule-severity) naruszono reguły jest ustawiona jako **ostrzeżenie**, w którym to przypadku naruszeń nie powodują kompilacji, która ma zakończyć się niepowodzeniem, lub **błąd**, w którym to przypadku naruszeń spowodować błąd kompilacji.
+
+Nie wpływa na poziom szczegółowości danych wyjściowych kompilacji, czy naruszenia reguły są wyświetlane. Nawet w przypadku **cichy** poziom szczegółowości, naruszenia reguły są wyświetlane w danych wyjściowych kompilacji.
+
+> [!TIP]
+> Użytkownicy przyzwyczajeni do uruchomionego statycznej analizy kodu w wierszu polecenia, za pomocą *FxCopCmd.exe* lub przez program msbuild z **RunCodeAnalysis** Flaga, Oto jak to zrobić za pomocą analizatorów Roslyn.
+
+Aby wyświetlić naruszeń analizator, w wierszu polecenia podczas kompilowania projektu przy użyciu programu msbuild, uruchom polecenie następująco:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polecenia, od tworzenia projektu, który zawiera naruszenie reguły analizatora:
+
+![Naruszenie reguły danych wyjściowych programu MSBuild](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Zobacz także
 

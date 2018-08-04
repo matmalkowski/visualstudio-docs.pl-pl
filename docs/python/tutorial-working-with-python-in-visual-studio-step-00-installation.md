@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f2fefe4a85d75573d96c7f7584913310bb5d267e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409748"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513523"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalowanie obsługi języka Python w programie Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "39409748"
 
     ![Obciążenie programowania języka Python w Instalatorze programu Visual Studio](media/installation-python-workload.png)
 
-1. Aby szybko przetestować, obsługa w języku Python, uruchom program Visual Studio, naciśnij klawisz Alt + I-Otwórz okno interaktywne języka Python i wprowadź `2+2`. Jeśli nie widzisz dane wyjściowe `4`, sprawdź ponownie etapami.
+1. Aby szybko przetestować, obsługa w języku Python, uruchom program Visual Studio, naciśnij klawisz **Alt**+**I** można otworzyć **Python Interactive** okna, a następnie wprowadź `2+2`. Jeśli nie widzisz dane wyjściowe **4**, sprawdź ponownie etapami.
 
     ![Testowanie języka Python za pomocą okna interaktywnego](media/installation-interactive-test.png)
 
@@ -46,6 +46,6 @@ ms.locfileid: "39409748"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych](installing-python-support-in-visual-studio.md).
-- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).
+- [Ręcznie Zidentyfikuj istniejące interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md)
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)

@@ -13,57 +13,57 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1a34edfbc6cede24f3238068549412d630827cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131665"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512112"
 ---
-# <a name="extending-properties"></a>Rozszerzanie właściwości
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Właściwości** okna jest przeglądarką uniwersalnych właściwości dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` wpisz informacje i metadanych modelu COM +, aby wyświetlić właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowane środowisko programistyczne (IDE).  
+# <a name="extend-properties"></a>Rozszerzanie właściwości
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Właściwości** okna jest przeglądarkę właściwości uniwersalnych dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` typu informacji i metadanych modelu COM +, aby wyświetlić listę właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowanego środowiska programistycznego (IDE).  
   
- **Właściwości** okna, które mogą być otwierane przez naciśnięcie przycisku F4 na klawiaturze lub wybierając **okna właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania właściwości i zdarzenia wybranych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązań i projektów, są wyświetlane na [strony właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
+ **Właściwości** okno, które można otworzyć, naciskając klawisz **F4** na klawiaturze lub wybierając **okno właściwości** na **widoku** menu Służy do wyświetlania i edytowania właściwości niezależne od konfiguracji, w czasie projektowania oraz zdarzeń zaznaczonych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stron właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji [Zarządzaj opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
   
- ![Przegląd okna właściwości](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
+ ![Omówienie okna właściwości](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Okno właściwości  
   
- Ta sekcja zawiera szczegółowe informacje, które odnoszą się do poszczególnych obszarach **właściwości** okna i interfejsów, które należy zaimplementować i wywołania do wypełnienia okna.  
+ Ta sekcja zawiera szczegółowe informacje, które odnoszą się do poszczególnych obszarów **właściwości** okna i interfejsy, które należy zaimplementować i wywołania do wypełnienia okna.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Omówienie okna właściwości](../../extensibility/internals/properties-window-overview.md)  
- Objaśnienie jego przeznaczenia **właściwości** okna względem okna narzędzia i okna dokumentu.  
+ Zawiera wyjaśnienie przeznaczenia **właściwości** okna względem okna narzędzi i okna dokumentu.  
   
  [Szablon zasad i okno właściwości](../../extensibility/internals/template-policy-and-the-properties-window.md)  
- Omówiono sposób projektu znajduje się w szablonie projektu w przedsiębiorstwie oraz jak szablonu projektu przedsiębiorstwa mogą wymusić zasady.  
+ W tym artykule omówiono, jak projekt jest zawarta w szablonie projektu w przedsiębiorstwie i jak ten szablon projektu przedsiębiorstwa mogą wymusić zasady.  
   
- [Pola i interfejsy okna właściwości](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
- Wyjaśniono podstawę do wyboru, która określa, jakie informacje są wyświetlane w **właściwości** okna.  
+ [Właściwości pola i interfejsy okna](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
+ Wyjaśnia podstawę do wyboru, która określa, jakie informacje są wyświetlane w **właściwości** okna.  
   
  [Lista obiektów okna właściwości](../../extensibility/internals/properties-window-object-list.md)  
- Opisuje cel **właściwości** okno Lista obiektów, opisujące, jak to zrobić, podczas różne obiekty z tej listy wyzwala wywołanie, środowisko zostanie poinformowany, czy został on wybrany nowy obiekt.  
+ Opisuje przeznaczenie **właściwości** lista obiektów okna, opisujące, jak to zrobić, gdy inny obiekt z tej listy wyzwala wywołanie, środowisko jest informowany wybrano nowego obiektu.  
   
  [Przyciski okna właściwości](../../extensibility/internals/properties-window-buttons.md)  
- Objaśnienie jego przeznaczenia cztery domyślne przyciski wyświetlane na **właściwości** pasek narzędzi okna.  
+ Zawiera wyjaśnienie przeznaczenia cztery domyślne przyciski wyświetlane na **właściwości** pasek narzędzi okna.  
   
  [Siatka wyświetlania właściwości](../../extensibility/internals/properties-display-grid.md)  
- Wyjaśnia, gdzie znaleziono nazw właściwości i pola wartości właściwości w siatce.  
+ W tym artykule wyjaśniono, w którym nazw właściwości i pola wartości właściwości znajdują się w siatce.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Typy projektów](../../extensibility/internals/project-types.md)  
- W tym artykule omówiono projektów jako bloków konstrukcyjnych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+ W tym artykule omówiono projektów jako bloki konstrukcyjne [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
- W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] platformy stale testowanie i debugowanie aplikacji podczas ich tworzenia.  
+ [Kompilowanie i tworzenie kompilacji](../../ide/compiling-and-building-in-visual-studio.md)  
+ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] platformy ciągłe testowanie i debugowanie aplikacji podczas ich tworzenia.  
   
- [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  
- W tym artykule opisano `IDispatch` interfejs, który najpierw została zaprojektowana do obsługi automatyzacji, podając mechanizm późnym wiązaniem dostępu i pobieranie informacji na temat metody i właściwości obiektu.  
+ [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)  
+ W tym artykule opisano `IDispatch` interfejs, który pierwotnie opracowano do obsługi automatyzacji, zapewnienie mechanizmu przekazującego z późnym wiązaniem dostępu i pobieranie informacji na temat metod i właściwości obiektu.  
   
  [Zarządzanie ustawieniami aplikacji (.NET)](../../ide/managing-application-settings-dotnet.md)  
- Omówienie ustawień aplikacji, które pozwalają skonfigurować aplikację tak, aby wartości właściwości są przechowywane w pliku konfiguracyjnym zewnętrznych zamiast skompilowanego kodu aplikacji.  
+ Zawiera omówienie ustawienia aplikacji, które pozwalają skonfigurować aplikację tak, aby wartości właściwości są przechowywane w pliku konfiguracji zewnętrznego zamiast skompilowany kod aplikacji.  
   
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)  
- Wyjaśniono, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wydajnie zarządza elementy, takie jak odwołania, połączeń danych, folderów i plików, które są wymagane przez użytkownika nakład pracy za pośrednictwem rozwiązania i projekty.  
+ Wyjaśnia, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] efektywnie zarządza elementy, takie jak odwołania, połączenia danych, folderów i plików, które są wymagane przez nakładów pracy programowania za pomocą rozwiązań i projektów.  
   
  [Rozszerzanie innych części programu Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Wyjaśniono, jak używać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usługi w celu utworzenia elementów interfejsu użytkownika, zgodne z resztą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Opis sposobu użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usługi, aby tworzyć elementy interfejsu użytkownika, które pasują reszty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

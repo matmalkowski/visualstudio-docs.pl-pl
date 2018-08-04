@@ -14,30 +14,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917969"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512138"
 ---
-# <a name="code-snippet-functions"></a>Funkcje wstawek kodu
+# <a name="code-snippet-functions"></a>Funkcje fragmentów kodu
 
-Istnieją trzy funkcje dostępne w programie wstawki kodu C#. Funkcje są określone w [funkcja](../ide/code-snippets-schema-reference.md#function) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia wstawki kodu, zobacz [wstawki kodu](../ide/code-snippets.md).
+Istnieją trzy funkcje dostępne do użycia za pomocą wstawek kodu C#. Funkcje są określone w [funkcja](../ide/code-snippets-schema-reference.md#function-element) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia fragmenty kodu, zobacz [fragmenty kodu](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funkcje
 
-W poniższej tabeli opisano funkcje dostępne w `Function` element wstawki kodu.
+W poniższej tabeli opisano funkcje dostępne w połączeniu z `Function` element fragmentów kodu.
 
 |Funkcja|Opis|Język|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcji switch i zestaw instrukcji case w elementach członkowskich wyliczenie określony przez `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musi być odwołaniem do literału wyliczenia lub typu wyliczeniowego.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|Zwraca nazwę klasy, która zawiera wstawiony fragment kodu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|Zmniejsza *TypeName* parametr do swojej najprostszej formie, w tym kontekście, w którym wywołano fragment kodu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcję switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określony przez `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musi być odwołaniem do wyliczenia literału lub typ wyliczenia.|C#|
+|`ClassName()`|Zwraca nazwę klasy, która zawiera wstawiono fragment kodu.|C#|
+|`SimpleTypeName(` `TypeName` `)`|Zmniejsza *TypeName* parametr najprostszej postaci w kontekście, w której wywołano fragmentu kodu.|C#|
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia użycie `GenerateSwitchCases` funkcji. Gdy ta Wstawka kodu zostanie wstawiony i wyliczenia jest wprowadzany do `$switch_on$` literału, `$cases$` generuje literał `case` instrukcji dla każdej wartości w wyliczeniu.
+Poniższy przykład pokazuje, jak używać `GenerateSwitchCases` funkcji. Po wstawieniu ten fragment kodu i wyliczenia jest zawierana `$switch_on$` literału, `$cases$` generuje literał `case` poufności informacji dla każdej wartości w wyliczeniu.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -79,7 +79,7 @@ Poniższy przykład przedstawia użycie `GenerateSwitchCases` funkcji. Gdy ta Ws
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia użycie `ClassName` funkcji. Po wstawieniu ta Wstawka kodu `$classname$` literał jest zastępowany nazwę otaczającej klasy w tej lokalizacji w pliku kodu.
+Poniższy przykład pokazuje, jak używać `ClassName` funkcji. Podczas wstawiania tego fragmentu kodu `$classname$` literał jest zastępowana nazwą otaczającej klasy w tej lokalizacji w pliku kodu.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -126,7 +126,7 @@ Poniższy przykład przedstawia użycie `ClassName` funkcji. Po wstawieniu ta Ws
 
 ## <a name="example"></a>Przykład
 
-Ten przykład przedstawia sposób użycia `SimpleTypeName` funkcji. Gdy ta Wstawka kodu zostaną wstawione do pliku kodu `$SystemConsole$` literał zostanie zastąpiony najprostsza forma <xref:System.Console> typu w tym kontekście, w którym wywołano fragment kodu.
+W tym przykładzie pokazano, jak używać `SimpleTypeName` funkcji. Gdy ten fragment kodu jest wstawiany do pliku z kodem `$SystemConsole$` literał zostanie zastąpiony najprostsza forma <xref:System.Console> typu w kontekście, w której wywołano fragment kodu.
 
 ```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -159,5 +159,5 @@ Ten przykład przedstawia sposób użycia `SimpleTypeName` funkcji. Gdy ta Wstaw
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Element — funkcja](../ide/code-snippets-schema-reference.md#function)
-- [Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)
+- [Function — element](../ide/code-snippets-schema-reference.md#function-element)
+- [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

@@ -1,6 +1,6 @@
 ---
-title: Praca z samouczka Python, krok 3, interaktywny REPL
-description: Krok 3 przewodnika podstawowe możliwości języka Python w programie Visual Studio, obejmujące okno Python interaktywny REPL.
+title: Praca z samouczek języka Python, krok 3, interaktywny REPL
+description: Krok 3 przewodnika podstawowe funkcje języka Python w programie Visual Studio, obejmujących okna interaktywnego REPL języka Python.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,39 +11,39 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057239"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511759"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Okno interaktywny REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Korzystanie z okna interaktywnego REPL
 
-**Poprzedni krok: [kodu napisanego i uruchomione](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Poprzedni krok: [pisania i uruchamiania kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
-Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sformatowanego odczytu oceny drukowania pętli (REPL), który znacznie skraca comiesięcznych edytowania, kompilowania i debugowania. Okno interaktywne zawiera wszystkie funkcje środowisko REPL wiersza polecenia języka Python. On również ułatwia bardzo wymiany kodu z plików źródłowych w programie Visual Studio edytora, które w przeciwnym razie jest skomplikowane przy użyciu wiersza polecenia.
+Visual Studio **Interactive** okna dla języka Python zapewnia rozbudowane odczytu — ocena print-loop (REPL) który znacznie skraca zwykle cyklu Edycja--kompilacja--debugowanie. **Interactive** okna oferuje wszystkie funkcje środowiska REPL wiersza polecenia języka Python. Zapewnia także ją łatwo wymienić kod przy użyciu plików źródłowych w programie Visual Studio edytora, które w przeciwnym razie jest kłopotliwe przy użyciu wiersza polecenia.
 
-1. Otwórz okno interaktywne, klikając prawym przyciskiem myszy projekt środowiska Python w Eksploratorze rozwiązań (na przykład "Python 3,6 (32-bitowy)" pokazano na rysunku wcześniej) i wybierając **Otwórz okno interaktywne**. Możesz również wybrać **Widok > inne okna > Windows interakcyjne Python** z poziomu menu głównego programu Visual Studio.
+1. Otwórz **Interactive** okna, klikając prawym przyciskiem myszy projekt środowiska Python w **Eksploratora rozwiązań** (takie jak **środowiska Python 3.6 (32-bitowy)** pokazano na rysunku wcześniej) i Wybieranie **Otwórz okno interaktywne**. Możesz też wybrać **widoku** > **Windows inne** > **Windows Interactive Python** z głównego menu programu Visual Studio.
 
-1. Otwiera okno interaktywne poniżej edytora ze standardem `>>>` wiersza REPL dla języka Python. **Środowiska** listy rozwijanej można wybrać określonego interpreter do pracy z. Często również mają być okno interaktywne większe, co można zrobić, przeciągając separatora między dwoma systemu windows:
+1. **Interactive** poniżej edytora ze standardem zostanie otwarte okno **>>>** REPL języka Python w wierszu polecenia. **Środowiska** listy rozwijanej można wybrać określonych interpreter chcesz pracować. Często też mają być **Interactive** okna większe, co można zrobić, przeciągając separator między dwoma oknami:
 
-    ![Okno interaktywne Python i przeciągając zmiany rozmiaru](media/vs-getting-started-python-11-interactive1b.png)
+    ![Oknie interakcyjnym środowiska Python i przeciągając do zmiany rozmiaru](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Możesz zmienić rozmiar wszystkich okien w programie Visual Studio przez przeciągnięcie granicznych separatorów. Można również przeciągnij windows niezależnie od ramki Visual Studio i rozmieszczenia w dowolny sposób w ramce. Aby uzyskać szczegółowe informacje, zobacz [dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
+    > Możesz zmienić rozmiar wszystkich okien w programie Visual Studio, przeciągając granicznych separatorów. Można również przeciągnij windows niezależnie od ramek programu Visual Studio i ich rozmieszczenia, jednak wewnątrz ramki, takich jak. Aby uzyskać szczegółowe informacje, zobacz [dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
 
-1. Wprowadź kilka instrukcje, takie jak `print("Hello, Visual Studio")` i wyrażenia, takich jak `123/456` natychmiastowego wyników:
+1. Wprowadź kilka instrukcji takich jak `print("Hello, Visual Studio")` i wyrażeń, takich jak `123/456` aby zobaczyć wyniki wprowadzenia:
 
-    ![Python okna interaktywnego bezpośrednich wyników](media/vs-getting-started-python-12-interactive2.png)
+    ![Wyniki wprowadzenia okno interaktywne języka Python](media/vs-getting-started-python-12-interactive2.png)
 
-1. Po rozpoczęciu zapisywania wielowierszowy instrukcji, takie jak definicja funkcji, okno interaktywne pokazuje języka Python `...` Monituj o kontynuowanie wierszy, które, w przeciwieństwie do wiersza polecenia REPL, umożliwia automatyczne wcięcia:
+1. Po rozpoczęciu pisania wielowierszowy instrukcji, takie jak definicja funkcji **Interactive** okno pokazuje języka Python **...**  wybór opcji Monituj o kontynuowanie wiersze, której w przeciwieństwie do wiersza polecenia REPL, oferuje automatyczne wcięcie:
 
-    ![Okno interaktywne Python z kontynuacji — instrukcja](media/vs-getting-started-python-13-interactive3.png)
+    ![Okno interaktywne języka Python za pomocą instrukcji kontynuacji](media/vs-getting-started-python-13-interactive3.png)
 
-1. Okno interaktywne zapewnia pełną historię wszystko, co wprowadzono i poprawia wiersza polecenia REPL z elementów historii wielowierszowy. Na przykład można łatwo Odwołaj całą definicję `f` działać jako pojedyncza jednostka i łatwo zmienić nazwę `make_double`, zamiast ponownego tworzenia funkcja wiersz po wierszu.
+1. **Interactive** okna zapewnia pełną historię wszystkich wprowadzono i poprawia REPL wiersza polecenia, za pomocą elementów historii wielowierszowe. Na przykład łatwe Wycofaj całą definicję `f` działać jako pojedynczą jednostkę, a następnie łatwo zmienić nazwę aby `make_double`, zamiast ponownego utworzenia funkcji wiersz po wierszu.
 
-1. Visual Studio można wysłać wiele wierszy kodu w oknie edytora do okna interaktywnego. Ta funkcja umożliwia Obsługa kodu w pliku źródłowym i łatwe wysyłanie Wybieranie części do okna interaktywnego. Następnie można pracować z tych fragmentów kodu w szybkie środowisko REPL zamiast konieczności uruchamiania całego programu. Aby wyświetlić tę funkcję, Zastąp najpierw `for` pętli w `PythonApplication1.py` pliku następującym kodem:
+1. Program Visual Studio może wysyłać wielu wierszy kodu z okna edytora, aby **Interactive** okna. Ta funkcja umożliwia utrzymanie kodu w pliku źródłowym i umożliwia łatwe przesyłanie Wybieranie części go do **Interactive** okna. Następnie można pracować przy użyciu tych fragmentów kodu w szybkiej środowisko REPL zamiast konieczności uruchamiania całego programu. Aby wyświetlić tę funkcję, należy najpierw Zastąp `for` pętli w *PythonApplication1.py* pliku następującym kodem:
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
@@ -51,14 +51,14 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Wybierz tylko `import` i `from` instrukcje w `.py` pliku, kliknij prawym przyciskiem myszy i wybierz **przesyłają Interactive** (lub nacisnąć klawisze Ctrl + Enter). Fragment kodu jest natychmiast wklejane okno interaktywne i uruchom. Teraz wybierz `make_dot_string` funkcji i powtórz tego samego polecenia, które uruchamia ponownie ten fragment kodu. Ponieważ kod definiuje funkcję, można szybko sprawdzić tej funkcji, wywołując kilka razy:
+1. Wybierz tylko `import` i `from` instrukcji w *.py* pliku, kliknij prawym przyciskiem myszy i wybierz **Wyślij do środowiska interaktywnego** (lub naciśnij **Ctrl** + **Wprowadź**). Fragment kodu natychmiast jest wklejany do **Interactive** okna i uruchom. Teraz wybierz `make_dot_string` działać, a następnie powtórz tego samego polecenia, które ponownie uruchomi ten fragment kodu. Ponieważ kod definiuje funkcję, możesz szybko przetestować tę funkcję, wywołując kilka razy:
 
     ![Wysyłanie kodu do okna interaktywnego i testowanie go](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > Przy użyciu klawiszy Ctrl + Enter w edytorze *bez* zaznaczenia uruchamia bieżącego wiersza kodu w oknie interaktywnym i automatycznie umieszcza karetki w następnym wierszu. Przy użyciu tej funkcji naciskając klawisze Ctrl + Enter wielokrotnie oferują wygodny sposób do wykonania kroków opisanych swój kod, który nie jest możliwe przy użyciu wiersza polecenia języka Python. Umożliwia również wykonywać krokowo kodu bez uruchamiania debugera i niekoniecznie uruchamiania programu od początku.
+    > Za pomocą **Ctrl**+**Enter** w edytorze *bez* wyboru uruchamia bieżącego wiersza kodu w **Interactive** okno i automatycznie przełącza karetkę w następnym wierszu. Dzięki tej funkcji naciskając klawisz **Ctrl**+**Enter** wielokrotnie oferuje wygodny sposób, aby przejść przez swój kod, który nie jest możliwe przy użyciu wiersza polecenia języka Python. Dzięki temu można także przejść przez kod, bez konieczności uruchamiania debugera i niekoniecznie uruchamiania programu od samego początku.
 
-1. Można również skopiować i wkleić wiele wierszy kodu do interaktywnego okna z dowolnego źródła, takich jak poniżej, fragment, który jest trudne do wykonania replikacja wiersza polecenia języka Python Po wklejeniu, okno interaktywne działa ten kod tak, jakby wpisał w:
+1. Można również skopiować i wkleić wiele wierszy kodu w **Interactive** okno z dowolnego źródła, takich jak poniższy, fragment kodu, które jest trudno jest wykonać za pomocą replikacja wiersza polecenia języka Python Po wklejeniu **Interactive** okno uruchamia kod tak, jakby wpisał go:
 
     ```python
     for i in range(360):
@@ -66,19 +66,19 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
         print(s)
     ```
 
-    ![Wklejanie wielu wierszy kodu za pomocą wysyłania interakcyjne](media/vs-getting-started-python-15-interactive5.png)
+    ![Wklejanie wielu wierszy kodu za pomocą wysyłania interaktywne](media/vs-getting-started-python-15-interactive5.png)
 
-1. Jak widać, ten kod działa prawidłowo, ale jego dane wyjściowe nie jest bardzo inspiring. Krok różne wartości w `for` pętli czy Pokaż więcej cosinus wave. Na szczęście ponieważ cały `for` pętla jest w historii REPL jako pojedyncza jednostka, łatwo wrócić do poprzedniej strony i wprowadzanie niezależnie od zmian możesz chcieć, a następnie testować funkcji ponownie. Naciśnij klawisz strzałki w górę do pierwszego wycofywania `for` pętli. Następnie naciśnij klawisz strzałki lewo lub w prawo, aby rozpocząć nawigowanie w kodzie (dopiero po tym pracy i strzałki w dół w dalszym ciągu przechodzenie między historii). Przejdź do i zmienić `range` specyfikacja `range(0, 360, 12)`. Naciśnij klawisze Ctrl + Enter (w dowolnym miejscu kodu) aby uruchomić ponownie całej instrukcji:
+1. Jak widać, ten kod działa poprawnie, ale jego dane wyjściowe nie jest bardzo inspirujących. Krok różne wartości w `for` pokazywałaby więcej wave cosinus pętli. Na szczęście ponieważ cały `for` pętli znajduje się w historii REPL jako pojedyncza jednostka, można łatwo Przejdź wstecz i wprowadzanie niezależnie od zmian możesz chcieć i następnie w celu przetestowania funkcji ponownie. Naciśnij strzałkę w górę do pierwszego wycofywania `for` pętli. Następnie naciśnij klawisz strzałki lewej lub prawej, aby rozpocząć nawigowanie w kodzie (do czasu w tym celu w górę i strzałki w dół w dalszym ciągu przechodzić między historii). Przejdź do, a następnie zmień `range` specyfikacja `range(0, 360, 12)`. Następnie naciśnij klawisz **Ctrl**+**Enter** (w dowolnym miejscu kodu) aby uruchomić ponownie całą instrukcję:
 
     ![Edytowanie poprzednich instrukcji w oknie interaktywnym](media/vs-getting-started-python-16-interactive6.png)
 
-1. Powtórz ten proces eksperymentować krok różne ustawienia, do momentu znalezienia wartość, która najlepiej. Można również ustawić wave powtarzania wydłużyć zakresu, na przykład `range(0, 1800, 12)`.
+1. Powtórz te czynności, aby eksperymentować z kroku różne ustawienia, do momentu znalezienia wartości, które najlepiej. Można również ustawić etapy powtórzeń wydłużyć zakresu, na przykład `range(0, 1800, 12)`.
  
-1. Po zakończeniu z kodem są zapisywane w oknie interaktywnym, zaznacz go, kliknij prawym przyciskiem myszy i wybierz **Kopiuj kod** (Ctrl + Shift + C), a następnie wkleić do edytora. Zwróć uwagę, jak to specjalne funkcji programu Visual Studio automatycznie pomija żadnych danych wyjściowych, jak również `>>>` i `...` monity. Na przykład na poniższym obrazie pokazano przy użyciu **Kopiuj kod** na zaznaczenie zawiera monity i dane wyjściowe:
+1. Po zakończeniu kodu są napisane w **Interactive** okna, wybierz go, kliknij prawym przyciskiem myszy i wybierz **Kopiuj kod** (**Ctrl** + **Shift**+**C**), a następnie wklej w edytorze. Zwróć uwagę, jak to specjalnej funkcji programu Visual Studio automatycznie pomija żadnych danych wyjściowych, jak również `>>>` i `...` monity. Na przykład na poniższej ilustracji przedstawiono przy użyciu **Kopiuj kod** na wybór zawiera monity i dane wyjściowe polecenia:
 
-    ![Polecenia kodu kopiowania okna interaktywnego wyboru z monitami i danych wyjściowych](media/vs-getting-started-python-17-interactive7.png)
+    ![Okno interaktywne kopiowania kodu polecenie wyboru z monitami i danych wyjściowych](media/vs-getting-started-python-17-interactive7.png)
 
-    Możesz wkleić do edytora otrzymujesz jest tylko kod:
+    Podczas wklejania do edytora spowoduje wyświetlenie tylko kod:
 
     ```python
     for i in range(0, 1800, 12):
@@ -86,16 +86,16 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
         print(s)
     ```
 
-    Jeśli chcesz skopiować Pełna zawartość okna interaktywnego, w tym monity i dane wyjściowe, wystarczy użyć standardowego **kopiowania** polecenia.
+    Jeśli chcesz skopiować zawartość dokładnie **Interactive** okna, w tym monity i danych wyjściowych, wystarczy użyć standardowego **kopiowania** polecenia.
 
-1. Co to po prostu wykonaniu jest umożliwia szybkie środowiska REPL okno interaktywne wyglądają szczegóły dla małych fragment kodu, a następnie wygodnie dodany kod do pliku źródłowym projektu. Jeśli teraz wykonywania kodu ponownie z Ctrl + F5 (lub **debugowania > Uruchom bez debugowania**), zobacz dokładne wyniki potrzebujesz.
+1. Co właśnie wykonano jest środowisko REPL szybkie **Interactive** okna pozwolimy na opracowanie szczegóły niewielkim fragmentem kodu, wygodnie dodawana kod do pliku źródłowego projektu. Gdy teraz uruchomić kod ponownie, używając **Ctrl**+**F5** (lub **debugowania** > **Uruchom bez debugowania**), możesz Zobacz dokładne wyniki, których potrzebujesz.
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-## <a name="go-deeper"></a>Przejść głębiej
+## <a name="go-deeper"></a>Przejdź dalej
 
-- [Przy użyciu okna interaktywnego](python-interactive-repl-in-visual-studio.md)
-- [Użycie IPython REPL](interactive-repl-ipython.md)
+- [Za pomocą okna interakcyjnego](python-interactive-repl-in-visual-studio.md)
+- [Użyj środowiska IPython REPL](interactive-repl-ipython.md)

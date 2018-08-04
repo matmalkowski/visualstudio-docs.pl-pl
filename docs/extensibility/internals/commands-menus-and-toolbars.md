@@ -1,5 +1,5 @@
 ---
-title: Polecenia, menu i pasków narzędzi | Dokumentacja firmy Microsoft
+title: Polecenia, menu i paski narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f27bfc7d679d972482e6b910f40a0ecf74d9d6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 686e3a5df183d7296aba8eacffbf061d4d5f958f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131979"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510809"
 ---
-# <a name="commands-menus-and-toolbars"></a>Polecenia, menu i pasków narzędzi
-Menu i pasków narzędzi są przez użytkowników dostępu do polecenia w pakiecie VSPackage. Polecenia są funkcje, których wykonywanie zadań, takich jak drukowanie dokumentu, odświeżenie widoku lub utworzenie nowego pliku. Menu i pasków narzędzi są graficznego wygodnie prezentować poleceniach użytkownikom. Zazwyczaj pokrewnych poleceń są zgrupowane razem z menu lub pasek narzędzi.  
+# <a name="commands-menus-and-toolbars"></a>Polecenia, menu i paski narzędzi
+Menu i paski narzędzi są użytkownicy sposób uzyskiwać dostęp do poleceń Twoje pakietu VSPackage. Polecenia są funkcje, które wykonywania zadań, takich jak drukowanie dokumentu, odświeżyć widok lub tworzenia nowego pliku. Menu i pasków zadań to wygodny graficzny sposoby przedstawiania poleceń dla użytkowników. Zazwyczaj powiązane polecenia są zgrupowane razem na tym samym menu lub paska narzędzi.  
   
--   Menu zwykle są wyświetlane jako ciągi jednowyrazowym klastrowane w wierszu w górnej części zintegrowane środowisko programistyczne (IDE) lub okna narzędzia. Menu również mogą być wyświetlane jako wynik zdarzenia, kliknij prawym przyciskiem myszy i są określane jako menu skrótów, w tym kontekście. Po kliknięciu menu Rozwiń do wyświetlenia co najmniej jedno polecenie. Polecenia, po kliknięciu, można wykonywać zadania lub uruchom podmenu, które zawierają dodatkowe polecenia. Niektóre nazwy menu dobrze znanego to plik, Edytuj widok i okna. Aby uzyskać więcej informacji, zobacz [rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).  
+-   Menu zwykle są wyświetlane jako ciągi jednowyrazową klastrowane w wierszu w górnej części zintegrowanego środowiska programistycznego (IDE) lub okna narzędzi. Menu również mogą być wyświetlane jako wynik zdarzenia, kliknij prawym przyciskiem myszy i są określane jako menu skrótów w tym kontekście. Po kliknięciu menu rozwinąć w celu wyświetlenia co najmniej jedno polecenie. Polecenia, po kliknięciu, można wykonywać zadania lub uruchom podmenu zawierające dodatkowe polecenia. Niektóre nazwy menu dobrze znane są **pliku**, **Edytuj**, **widoku**, i **okna**. Aby uzyskać więcej informacji, zobacz [rozszerzenia menu i poleceń](../../extensibility/extending-menus-and-commands.md).  
   
--   Paski narzędzi są zwykle wierszy przycisków i innych kontrolek, takich jak pola kombi, pola listy, pola tekstowe i kontrolerów menu. Wszystkie formanty paska narzędzi są skojarzone z poleceń. Po kliknięciu przycisku paska narzędzi jego skojarzone polecenie jest aktywowane. Przyciski paska narzędzi zwykle mają ikony, które sugeruje podstawowych poleceń, takich jak drukarki dla polecenia drukowania. W formancie listy rozwijanej każdego elementu na liście jest skojarzona z inną polecenia. Kontroler menu jest hybrydowego, w którym jednej stronie formantu jest przycisku paska narzędzi i drugiej stronie jest strzałkę w dół, który wyświetla dodatkowe polecenia po kliknięciu. Aby uzyskać więcej informacji, zobacz [dodawania kontrolera Menu do paska narzędzi](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
+-   Paski narzędzi są zazwyczaj wiersze przyciski i inne formanty, takie jak pola kombi, pola listy, pola tekstowe i kontrolery menu. Wszystkie kontrolki paska narzędzi są skojarzone z poleceniami. Po kliknięciu przycisku paska narzędzi, polecenia skojarzone jest aktywowane. Przyciski paska narzędzi zwykle mają ikon, które sugerują podstawowych poleceń, takich jak drukarki dla polecenia drukowania. W kontrolce listy rozwijanej każdego elementu na liście jest skojarzony z innego polecenia. Kontroler menu jest hybrydowego, w którym obok kontrolki jest przycisku paska narzędzi, a druga strona jest strzałkę w dół, wyświetlający dodatkowe polecenia, po kliknięciu. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolera menu do paska narzędzi](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
   
--   Podczas tworzenia polecenia należy także utworzyć program obsługi zdarzeń dla niego. Program obsługi zdarzeń określa, kiedy polecenie jest widoczny czy włączone, można zmodyfikować jego tekstu i zapewnia, że polecenie odpowiednio reaguje ("tras") po uaktywnieniu. W większości przypadków środowiska IDE programu obsługi poleceń przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Polecenia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] trasy hierarchicznie, począwszy od kontekstu polecenia najbardziej wewnętrznego, na podstawie zaznaczenia lokalne i nastąpi przejście najbardziej zewnętrznego kontekst, w oparciu o wybór globalne. Polecenia dodane do menu głównego są natychmiast dostępne dla skryptów. Aby uzyskać więcej informacji, zobacz [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) i [wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md).  
+-   Podczas tworzenia polecenia należy również utworzyć program obsługi zdarzeń dla niego. Program obsługi zdarzeń określa, gdy polecenie jest widoczny czy włączone, można zmodyfikować jego tekstu i gwarantuje, że polecenie odpowiednio reaguje ("trasy") po aktywacji. W większości przypadków środowiska IDE programu obsługi poleceń przy użyciu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Polecenia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] trasy hierarchicznie, począwszy od najbardziej polecenia w kontekście, na podstawie wybranych lokalnych i kontynuowanie prowadzące kontekstu, w oparciu o wybór globalnego. Polecenia dodane do menu głównego są natychmiast dostępne dla skryptów. Aby uzyskać więcej informacji, zobacz [MenuCommands programu vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) i [wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md).  
   
- Aby zdefiniować nowe menu i pasków narzędzi, musi opisywać je w pliku tabeli poleceń w usłudze Visual Studio (vsct). Szablon pakietu Visual Studio tworzy ten plik, oraz elementy niezbędne do obsługi niezależnie od polecenia, paski narzędzi i edytory wybranego szablonu. Alternatywnie można napisać własny plik vsct za pomocą schematu xml opisane tutaj: [odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Aby zdefiniować nowe menu i paski narzędzi, należy je opisać w tabeli poleceń programu Visual Studio (*vsct*) pliku. Szablon pakietu Visual Studio tworzy tego pliku, wraz z elementów wymaganych do obsługi niezależnie od poleceń, paskach narzędzi i edytory, które wybrano w szablonie. Alternatywnie, można napisać własne *vsct* plików, przy użyciu schematu XML, opisane w tym miejscu: [odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).  
   
- Aby uzyskać więcej informacji na temat pracy z plikami vsct, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Aby uzyskać więcej informacji na temat pracy z usługą *vsct* plików, zobacz [pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Tematy w tej sekcji opisano, jak działają polecenia, menu i pasków narzędzi w VSPackages.  
+ Tematy w tej sekcji wyjaśniono, jak działają polecenia, menu i paski narzędzi w pakietach VSPackage.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Szczegółowy opis specyfikacji formatu tabeli polecenia.  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ Szczegółowy opis specyfikacji formatu tabeli poleceń.  
   
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
- Zawiera opis składni opartych na języku XML i kompilatora dla polecenia tabel.  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ Opis składni opartej na języku XML i kompilatora dla tabel polecenia.  
   
- [Domyślne położenie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
- W tym artykule opisano wstępnie zdefiniowanych poleceń, grupy menu i pasków narzędzi.  
+ [Domyślne położenie poleceń, grup i narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ W tym artykule opisano poleceń wstępnie zdefiniowanych, grup, menu i paski narzędzi.  
   
- [Polecenia, menu i grupy definiowane w środowisku IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
- Określa wstępnie zdefiniowanych menu, poleceń i dostępny do użytku przez grupy polecenia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+ [Polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
+ Określa wstępnie zdefiniowanych menu, poleceń i dostępne do użycia przez grup poleceń [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
  [Projektowanie poleceń](../../extensibility/internals/command-design.md)  
- Wyjaśniono, jak zaprojektować poleceń.  
+ Wyjaśnia, jak projektować poleceń.  
   
  [Optymalizacja poleceń menu i paska narzędzi](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
- Zawiera wskazówki dotyczące poleceń.  
+ Zawiera wskazówki dla polecenia.  
   
  [Udostępnianie poleceń](../../extensibility/internals/making-commands-available.md)  
- Wyjaśniono, jak udostępnić polecenia dla programu Visual Studio.  
+ Wyjaśnia, jak udostępnić poleceń programu Visual Studio.  
   
- [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Opisuje sposób nadawania poleceń, które używają zestawów międzyoperacyjnych.  
+ [Polecenia i menu, które używają zestawów międzyoperacyjnych](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ Wyjaśnia sposób implementacji poleceń, które używają zestawów międzyoperacyjnych.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Routing poleceń w pakietach VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
- W tym artykule wyjaśniono, routing poleceń w VSPackages.
+ W tym artykule wyjaśniono, routing poleceń w pakietach VSPackage.

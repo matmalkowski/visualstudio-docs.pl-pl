@@ -1,5 +1,5 @@
 ---
-title: Składnik Zarządzanie | Dokumentacja firmy Microsoft
+title: Zarządzanie składnikami | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,42 +14,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2798d820249f0a1c4310569d22d8510710ca13ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00a6ea41d631c171700db75361b7aa0beed81cc2
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129539"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510871"
 ---
-# <a name="component-management"></a>Składnik zarządzania
-Jednostki zadań w Instalatorze systemu Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każda usługa WIC to podstawowa jednostka instalacji i zliczanie dla ustawień używające Instalatora Windows.  
+# <a name="component-management"></a>Zarządzanie składnikami
+Jednostki zadań w Instalatorze Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla ustawień, które przy użyciu Instalatora Windows.  
   
- Mimo korzystania z kilku produktów, aby utworzyć Instalatora pakiet VSPackage, przyjęto korzystania z plików Instalatora Windows (msi). Podczas tworzenia Instalatorem, należy poprawnie zarządzać wdrożenia plików dzięki temu liczenie odwołań poprawne odbywa się przez cały czas. W związku z tym różne wersje produktu nie zakłóca lub przerwanie siebie w różnych instalacji i odinstalować scenariuszy.  
+ Chociaż kilka produktów można użyć, aby utworzyć Instalatora pakietu VSPackage, przyjęto korzystanie z Instalatora Windows (*.msi*) plików. Podczas tworzenia Instalatora, musi poprawnie Zarządzanie wdrażaniem pliku, tak, aby zliczanie odwołań poprawnych odbywa się na cały czas. W związku z tym różne wersje produktu nie zakłócają lub włamanie wzajemnie się kombinacji instalacji i odinstalować scenariuszy.  
   
- W Instalatorze Windows liczenie odwołań występuje na poziomie składnika. Należy dokładnie organizowania zasobów — pliki, wpisy rejestru i tak dalej — na składniki. Brak innych poziomach organizacji — takie jak moduły, funkcji i produktów — które mogą pomóc w różnych scenariuszach. Aby uzyskać więcej informacji, zobacz [podstawy Instalatora systemu Windows](../../extensibility/internals/windows-installer-basics.md).  
+ W Instalatorze Windows zliczanie odwołań występuje na poziomie składnika. Należy uważnie organizowanie zasobów — pliki, wpisy rejestru i tak dalej — na składniki. Istnieją inne poziomy organizacji — takich jak moduły, funkcje i produkty — które mogą pomóc w różnych scenariuszach. Aby uzyskać więcej informacji, zobacz [podstawowe informacje dotyczące Instalatora Windows](../../extensibility/internals/windows-installer-basics.md).  
   
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Wskazówki dotyczące tworzenia Instalatora w celu instalacji Side-by-side  
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Wytyczne dotyczące tworzenia Instalatora w celu instalacji side-by-side  
   
--   Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje do ich własnych składników.  
+-   Tworzenie plików i kluczy rejestru, które są współużytkowane przez wersje na ich własnych składniki.  
   
-     Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład bibliotek typów, które są zarejestrowane globalnie, pliku rozszerzenia i inne elementy zarejestrowane wpisów z HKEY_CLASSES_ROOT i tak dalej.  
+     Dzięki temu można łatwo korzystać z nich w następnej wersji. Na przykład bibliotek typów, które są zarejestrowane na całym świecie, rozszerzenia plików, inne elementy, zarejestrowane w **HKEY_CLASSES_ROOT**i tak dalej.  
   
--   Grupy składników współużytkowanych do modułów scalania oddzielne.  
+-   Grupy składników udostępnionych do modułów scalania oddzielne.  
   
-     Ułatwia to tworzenie poprawnie dla następnych side-by-side.  
+     Ta strategia umożliwia tworzenie poprawnie na potrzeby instalacji side-by-side przenoszenie do przodu.  
   
--   Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tego samego składników Instalatora Windows w wersjach.  
+-   Zainstaluj udostępnione pliki i klucze rejestru przy użyciu tych samych składników Instalatora Windows w wersjach.  
   
-     Jeśli używasz różnych składników, pliki i wpisy rejestru są odinstalowywane podczas jednego kontrolą wersji pakiet VSPackage zostanie odinstalowana, ale nadal jest zainstalowany inny pakiet VSPackage.  
+     Jeśli używasz innego składnika, pliki i wpisy rejestru są odinstalowywane po odinstalowaniu jednej określonej wersji pakietu VSPackage, ale innego pakietu VSPackage nadal jest zainstalowany.  
   
--   Nie można mieszać wersji i udostępnionych elementów w tym samym składnikiem.  
+-   Nie należy mieszać wersjonowana i udostępnionych elementów w jednym składniku.  
   
-     Dzięki temu uniemożliwia instalacji elementów udostępnionych w globalnej lokalizacji i numerów wersji elementów do lokalizacje izolowanego.  
+     To sprawia, że niemożliwe do instalacji udostępnione elementy globalnej lokalizacji i wersjonowanych elementów do lokalizacje izolowanych.  
   
--   Nie masz kluczy rejestru udostępnionego, które wskazują wersji plików.  
+-   Nie ma kluczy rejestru udostępnionego, które wskazują wersji plików.  
   
-     Jeśli to zrobisz, kluczy współużytkowanych zostaną zastąpione po zainstalowaniu inny pakiet VSPackage numerów wersji. Po usunięciu druga wersja pliku, do którego wskazuje klucz został usunięty.  
+     Jeśli to zrobisz, klucze współużytkowane zostaną zastąpione po zainstalowaniu innej wersji pakietu VSPackage. Po usunięciu druga wersja pliku, do którego wskazuje klucz został usunięty.  
   
-## <a name="see-also"></a>Zobacz też  
- [Wybór między VSPackages udostępnionego i wersji](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Scenariusze instalacji pakietu VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

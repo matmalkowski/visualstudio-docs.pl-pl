@@ -1,5 +1,5 @@
 ---
-title: Najlepsze rozwiązania dotyczące zabezpieczeń w VSPackages | Dokumentacja firmy Microsoft
+title: Najlepsze rozwiązania dotyczące zabezpieczeń pakietów VSPackage | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689c85e090e44612a87474e8c77dc0e146706e84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127305"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513351"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>Najlepsze rozwiązania dotyczące zabezpieczeń w VSPackages
-Aby zainstalować [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] na komputerze, musi być uruchomione w kontekście przy użyciu poświadczeń administracyjnych. Podstawowa jednostka zabezpieczeń i wdrażania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikacja jest [VSPackages](../../extensibility/internals/vspackages.md). Pakiet VSPackage musi być zarejestrowana przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], które również wymaga poświadczeń administracyjnych.  
+# <a name="best-practices-for-security-in-vspackages"></a>Najlepsze rozwiązania dotyczące zabezpieczeń pakietów VSPackage
+Aby zainstalować [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] na komputerze, użytkownik musi być uruchomiona w kontekście przy użyciu poświadczeń administracyjnych. Podstawowa jednostka zabezpieczeń i wdrażania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikacja jest [pakietu VSPackage](../../extensibility/internals/vspackages.md). Pakietu VSPackage muszą być zarejestrowane przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], które również wymaga poświadczeń administracyjnych.  
   
- Administratorzy mają pełne uprawnienia do zapisu do rejestru i systemu plików, a także do uruchomienia dowolnego kodu. Musi mieć te uprawnienia, wdrażanie, lub zainstaluj pakiet VSPackage.  
+ Administratorzy mają pełne uprawnienia do zapisu do rejestru i systemu plików, a także wykonywać żadnego kodu. Musi mieć tych uprawnień do tworzenia, wdrażania lub zainstalować pakietu VSPackage.  
   
- Zaraz po jego zainstalowaniu, pakiet VSPackage jest w pełni zaufany. Z powodu wysokiego poziomu uprawnień skojarzonych z pakiet VSPackage jest możliwe zainstalowanie przypadkowo pakiet VSPackage, który ma złośliwymi działaniami.  
+ Jak najszybciej po jego zainstalowaniu pakietu VSPackage jest w pełni zaufany. Ze względu na wysokim poziomie uprawnień skojarzonych z pakietu VSPackage jest możliwość przypadkowo zainstalowania pakietu VSPackage, który ma złośliwymi działaniami.  
   
- Użytkownicy powinien zapewnić ich instalację VSPackages tylko z zaufanych źródeł. Firmom tworzenie VSPackages należy zdecydowanie nazwy i podpisywał je, aby upewnić się, że użytkownik naruszeniu tego nie będzie mógł. Tworzenie VSPackages firm sprawdzić ich zależności zewnętrzne, takie jak usługi sieci web i instalacji zdalnej, aby ocenić i rozwiąż wszelkie problemy z zabezpieczeniami.  
+ Użytkownikom należy upewnić się, ich instalację pakietów VSPackage tylko z zaufanych źródeł. Firmom tworzenie pakietów VSPackage należy zdecydowanie nazwy i je podpisać, zapewnienie użytkownika, w tym naruszeniu nie będzie mógł. Firmom tworzenie pakietów VSPackage należy sprawdzić ich zależności zewnętrznych, takich jak usługi sieci web i instalacji zdalnej, aby ocenić i rozwiązać wszelkie problemy z zabezpieczeniami.  
   
- Aby uzyskać więcej informacji, zobacz Secure wskazówki dotyczące pisania kodu platformy .NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ Aby uzyskać więcej informacji, zobacz [bezpieczny, wytyczne dotyczące programowania dla platformy .NET Framework](http://msdn.microsoft.com/library/d55zzx87.aspx).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Dodatek zabezpieczeń](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
  [DDEX zabezpieczeń](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)

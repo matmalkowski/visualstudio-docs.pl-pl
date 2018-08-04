@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3082ca9f03ddd56f000fcaea18525c0f61903512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f97de4818e6be66b4ee23d97d8995dfa30533985
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920802"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510507"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Nie używaj słabych algorytmów kryptograficznych
 |||
@@ -29,27 +29,27 @@ ms.locfileid: "31920802"
 >  To ostrzeżenie Data ostatniej aktualizacji listopada 2015 r.
 
 ## <a name="cause"></a>Przyczyna
- Algorytmy szyfrowania, takich jak <xref:System.Security.Cryptography.TripleDES> i tworzenia skrótów algorytmów, takich jak <xref:System.Security.Cryptography.SHA1> i <xref:System.Security.Cryptography.RIPEMD160> są uważane za słabe.
+ Algorytmy szyfrowania, takich jak <xref:System.Security.Cryptography.TripleDES> i algorytmy wyznaczania wartości skrótu takich jak <xref:System.Security.Cryptography.SHA1> i <xref:System.Security.Cryptography.RIPEMD160> są uważane za słabe.
 
- Te algorytmy kryptograficzne nie udostępniają tyle gwarancje bezpieczeństwa, jak nowoczesną odpowiedniki. Tworzenie skrótów algorytmów kryptograficznych <xref:System.Security.Cryptography.SHA1> i <xref:System.Security.Cryptography.RIPEMD160> zapewniają odporność mniej kolizji niż nowoczesną algorytmami wyznaczania wartości skrótu. Algorytm szyfrowania <xref:System.Security.Cryptography.TripleDES> zawiera mniej bity zabezpieczeń niż nowoczesną algorytmów szyfrowania.
+ Te algorytmy kryptograficzne nie oferuje tylu Gwarancja bezpieczeństwa jako odpowiednikami nowocześniejszego. Kryptograficznych, algorytmy wyznaczania wartości skrótu <xref:System.Security.Cryptography.SHA1> i <xref:System.Security.Cryptography.RIPEMD160> zapewniają odporność kolizji, mniej niż bardziej nowoczesne algorytmy wyznaczania wartości skrótu. Algorytm szyfrowania <xref:System.Security.Cryptography.TripleDES> zapewnia mniejszą liczbę bitów zabezpieczeń niż bardziej nowoczesne algorytmy szyfrowania.
 
 ## <a name="rule-description"></a>Opis reguły
- Słabe algorytmy i funkcje skrótu są obecnie używane do istnieje wiele możliwych przyczyn, ale nie powinny być używane, aby zagwarantować poufność danych, które chroni.
+ Słabe szyfrowanie, algorytmy i funkcje wyznaczania wartości skrótu są używane obecnie do szeregu przyczyn, ale nie powinny one być używane dla zagwarantowania poufności danych, które chronią.
 
- Reguła jest wyzwalane po znalezieniu 3DES, SHA1 lub RIPEMD160 algorytmy kod i zgłasza ostrzeżenia dla użytkownika.
+ Reguła wyzwalania, gdy znajdzie 3DES, SHA1 lub RIPEMD160 algorytmów w kodzie i zgłoszenie ostrzeżenia dla użytkownika.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Użyj kryptograficznie silniejszych opcji:
 
--   Do szyfrowania TripleDES, użyj <xref:System.Security.Cryptography.Aes> szyfrowania.
+-   W przypadku szyfrowania TripleDES, użyj <xref:System.Security.Cryptography.Aes> szyfrowania.
 
--   Dla funkcji skrótu SHA1 lub RIPEMD160, użyj tych w [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) rodziny (np. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+-   Dla funkcji skrótu SHA1 lub RIPEMD160, użyj tych w [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) rodziny (np. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej reguły, jeśli poziom zabezpieczeń dla danych nie wymaga gwarancji bezpieczeństwa.
+ Pomijaj ostrzeżeń dla tej reguły, jeśli poziom ochrony danych przez nie wymaga gwarancji bezpieczeństwa.
 
 ## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
- Począwszy od chwili pisania tego dokumentu poniższy przykład pseudo-kodu ilustruje wzorzec wykryte przez tę regułę.
+ Począwszy od chwili pisania tego dokumentu Poniższy przykładowy pseudo-kod przedstawiono wzorzec wykryte przez tę regułę.
 
 ### <a name="sha-1-hashing-violation"></a>Naruszenie wyznaczania wartości skrótu SHA-1
 
@@ -87,7 +87,7 @@ var hashAlg = SHA256.Create();
 
 ```
 
-### <a name="tripledes-encryption-violation"></a>TripleDES naruszenie szyfrowania
+### <a name="tripledes-encryption-violation"></a>TripleDES szyfrowania naruszenia
 
 ```
 using System.Security.Cryptography;

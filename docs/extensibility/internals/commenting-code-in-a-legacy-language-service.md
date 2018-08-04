@@ -1,5 +1,5 @@
 ---
-title: Kod komentowania w starsza wersja usługi języka | Dokumentacja firmy Microsoft
+title: Komentowanie kodu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b573b464c26c3864cece697191cf03545ada779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128723"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510465"
 ---
-# <a name="commenting-code-in-a-legacy-language-service"></a>Kod komentowania w starsza wersja usługi języka
-Języki programowania zwykle pozwalają na dodawanie adnotacji lub komentarzy kodu. Fragment tekstu, który udostępnia dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji jest komentarz.  
+# <a name="comment-code-in-a-legacy-language-service"></a>Komentarz kodu w starszej wersji usługi językowej
+Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze kodu. Komentarz to sekcja tekst, który zawiera dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji.  
   
- Klasy framework (MPF) zarządzanego pakietu zapewniają obsługę komentowania i Trwa usuwanie komentarza zaznaczonego tekstu.  
+ Pakiet zarządzanych klas framework (MPF) zapewniają obsługę komentowania i Trwa usuwanie komentarza do zaznaczonego tekstu.  
   
-## <a name="comment-styles"></a>Style komentarza  
- Istnieją dwa ogólne style komentarza:  
+## <a name="comment-styles"></a>Style komentarz  
+Istnieją dwa ogólne style komentarza:  
+   
+1.  Komentarze wiersza, gdzie jest komentarz w jednym wierszu.  
   
-1.  Wiersz komentarze, gdzie jest komentarz w jednym wierszu.  
+2.  Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.  
   
-2.  Komentarze bloku, w którym komentarz może obejmować wiele wierszy.  
+
+Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od `//`, i zaczyna się komentarza blokowego `/*` i kończy `*/`.  
   
- Wiersz komentarze zwykle mają początkowy znak (lub znaki), podczas komentarze bloku mieć początek i koniec znaków. Na przykład w języku C# komentarz wiersz rozpoczyna się od / /, i rozpoczyna się od blok komentarza / * i kończy \*/.  
+Gdy użytkownik wybierze polecenie **Dodaj komentarz do zaznaczenia** z **Edytuj** > **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **Usuń komentarz zaznaczenia**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.  
   
- Gdy użytkownik wybierze polecenie **Zaznaczanie komentarzy** z **Edytuj** -> **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metoda <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **wybór usuń znaczniki komentarza**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.  
+## <a name="support-code-comments"></a>Komentarze w kodzie obsługi  
+ Możesz mieć swoje komentarze kodu języka usługi pomocy technicznej przez `EnableCommenting` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Aby uzyskać więcej informacji o ustawianiu funkcje usługi w języka, zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
-## <a name="supporting-code-comments"></a>Obsługa komentarze w kodzie  
- Komentarze języka usługi pomocy technicznej kodu za pomocą klasy mogą mieć `EnableCommenting` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Aby uzyskać więcej informacji na temat ustawiania języka servicce funkcji, zobacz [zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
-  
- Konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metodę, aby zwrócić <xref:Microsoft.VisualStudio.Package.CommentInfo> struktury znakami komentarza dla danego języka. C# — styl linii komentarz znaki są domyślnie.  
+ Konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metodę, aby zwrócić <xref:Microsoft.VisualStudio.Package.CommentInfo> strukturę znaki komentarza dla danego języka. C# — znaków komentarza wierszu stylu są domyślne.  
   
 ### <a name="example"></a>Przykład  
- W tym miejscu jest przykładem implementacji <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metody.  
+ Poniżej przedstawiono przykład implementacji <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metody.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -64,6 +65,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)

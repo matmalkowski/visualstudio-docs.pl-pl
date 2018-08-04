@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174844"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513123"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Pisanie i uruchamianie kodu
 
 **Poprzedni krok: [Utwórz nowy projekt języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Mimo że Eksploratora rozwiązań, w których zarządzasz pliki projektu *edytora* okna zazwyczaj jest miejscem służącym do pracy z *zawartość* plików, takich jak kod źródłowy. Edytor jest kontekstowych typu pliku edycji, w tym języku (na podstawie rozszerzenia pliku) i oferuje funkcje odpowiednie dla danego języka, takich jak kolorowanie składni i automatycznego uzupełniania za pomocą funkcji IntelliSense.
+Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna zazwyczaj jest miejscem służącym do pracy z *zawartość* plików, takich jak kod źródłowy. Edytor jest kontekstowych typu pliku edycji, w tym języku (na podstawie rozszerzenia pliku) i oferuje funkcje odpowiednie dla danego języka, takich jak kolorowanie składni i automatycznego uzupełniania za pomocą funkcji IntelliSense.
 
-1. Po utworzeniu nowego projektu "Aplikacja języka Python" domyślny pusty plik o nazwie `PythonApplication1.py` jest otwarty w edytorze programu Visual Studio.
+1. Po utworzeniu nowego projektu "Aplikacja języka Python" domyślny pusty plik o nazwie *PythonApplication1.py* jest otwarty w edytorze programu Visual Studio.
 
-1. W edytorze, zacznij pisać `print("Hello, Visual Studio")` i zwróć uwagę, jak Visual Studio technologia IntelliSense wyświetla opcje automatycznego uzupełniania po drodze. Schemat opcję na liście rozwijanej jest uzupełniania domyślny, który jest używany po naciśnięciu klawisza Tab. Uzupełnianie są najbardziej przydatne w przypadku dłużej instrukcji lub identyfikatorów.
+1. W edytorze, zacznij pisać `print("Hello, Visual Studio")` i zwróć uwagę, jak Visual Studio technologia IntelliSense wyświetla opcje automatycznego uzupełniania po drodze. Schemat opcję na liście rozwijanej jest ukończenie domyślne, używany, gdy użytkownik naciśnie klawisz **kartę** klucza. Uzupełnianie są najbardziej przydatne w przypadku dłużej instrukcji lub identyfikatorów.
 
     ![Okno podręczne z automatycznego uzupełniania IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Mimo że Eksploratora rozwiązań, w których zarządzasz pliki projektu *edytor
     ![Kolorowanie składni IntelliSense i funkcji wyróżniania błędów](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Ponieważ w jednym środowisku programistycznym jest bardzo osobistych kwestią, Visual Studio zapewnia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **Narzędzia > Opcje** menu poleceń i zapoznaj się z ustawieniami w obszarze **środowiska** i **edytora tekstów** karty. Domyślnie zostanie wyświetlony tylko ograniczoną liczbę opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego. 
+    > Ponieważ w jednym środowisku programistycznym jest bardzo osobistych kwestią, Visual Studio zapewnia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **narzędzia** > **opcje** menu poleceń i zapoznaj się z ustawieniami w obszarze **środowiska** i **edytora tekstów** karty. Domyślnie zostanie wyświetlony tylko ograniczoną liczbę opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego. 
 
-1. Uruchom kod został napisany z tym punktem, naciskając klawisze Ctrl + F5 lub wybierając **Debuguj > Uruchom bez debugowania** elementu menu. Program Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
+1. Uruchamianie kodu napisanych do tego punktu, naciskając klawisz **Ctrl**+**F5** lub wybierając **debugowania** > **Uruchom bez debugowania**  elementu menu. Program Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
 
-1. Po uruchomieniu programu, zostanie wyświetlone okno konsoli, za pomocą wyświetlania wyników, tak, jakby należy uruchomić następujące polecenie interpreter języka Python za pomocą `PythonApplication1.py` z wiersza polecenia. Naciśnij dowolny klawisz, aby zamknąć okno i powrócić do edytora programu Visual Studio.
+1. Po uruchomieniu programu, zostanie wyświetlone okno konsoli, za pomocą wyświetlania wyników, tak, jakby należy uruchomić następujące polecenie interpreter języka Python za pomocą *PythonApplication1.py* z wiersza polecenia. Naciśnij dowolny klawisz, aby zamknąć okno i powrócić do edytora programu Visual Studio.
 
     ![Dane wyjściowe dla pierwszego uruchomienia programu](media/vs-getting-started-python-07-output.png)
 
@@ -75,7 +75,7 @@ Mimo że Eksploratora rozwiązań, w których zarządzasz pliki projektu *edytor
     ```
 
     > [!Tip]
-    > Uzupełnianie pracować podciągów pisania, dopasowanie części wyrazów, litery na początku słowa, a nawet pominięte znaków. Zobacz [edytowanie kodu - uzupełnienia](editing-python-code-in-visual-studio.md#completions) Aby uzyskać szczegółowe informacje.
+    > Uzupełnianie pracować podciągów pisania, dopasowanie części wyrazów, litery na początku słowa, a nawet pominięte znaków. Zobacz [edytowania kodu - uzupełnienia](editing-python-code-in-visual-studio.md#completions) Aby uzyskać szczegółowe informacje.
 
 1. Dodaj nieco więcej kodu, aby wydrukować wartości funkcji cosinus dla 360 stopni:
 
@@ -84,7 +84,7 @@ Mimo że Eksploratora rozwiązań, w których zarządzasz pliki projektu *edytor
         print(cos(radians(i)))
     ```
 
-1. Ponownie uruchom program za pomocą klawiszy Ctrl + F5 lub **Debuguj > Uruchom bez debugowania**. Zamknij okno danych wyjściowych, gdy wszystko będzie gotowe.
+1. Uruchom program ponownie, używając **Ctrl**+**F5** lub **debugowania** > **Uruchom bez debugowania**. Zamknij okno danych wyjściowych, gdy wszystko będzie gotowe.
 
 ## <a name="next-step"></a>Następny krok
 

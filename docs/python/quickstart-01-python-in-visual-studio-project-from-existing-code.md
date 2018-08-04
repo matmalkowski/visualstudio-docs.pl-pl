@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781620"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511604"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Szybki Start: Tworzenie projektu języka Python z istniejącego kodu
 
@@ -27,7 +27,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Jeśli to konieczne, uruchom program, naciskając klawisze Ctrl + F5 lub wybierając **Debuguj > Uruchom bez debugowania**.
+Jeśli to konieczne, uruchom program, naciskając klawisz **Ctrl**+**F5** lub wybierając **debugowania** > **Uruchom bez debugowania**.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -36,6 +36,6 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych](installing-python-support-in-visual-studio.md).
-- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).
+- [Ręcznie Zidentyfikuj istniejące interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md)
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)

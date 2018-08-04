@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704619"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512008"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 Wyświetla bieżący stos wywołań.
@@ -36,16 +36,16 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `index` Opcjonalne. Określa bieżącą ramkę stosu i wyświetla żadnych danych wyjściowych.
+ `index` Opcjonalnie. Ustawia bieżącej ramki stosu i nie wyświetla danych wyjściowych.
 
 ## <a name="switches"></a>Przełączniki
- Każdy przełącznik może być wywoływany przy użyciu jego ukończenia formularza lub krótkich fragmentów.
+ Każdy przełącznik może być wywoływany przy użyciu jego wypełniony formularz lub krótka.
 
- / Liczba:`number` [i] / / c:`number`
+ / Liczba:`number` [i] / c:`number`
 
  Opcjonalna. Maksymalna liczba stosy wywołań do wyświetlenia. Wartością domyślną jest nieograniczona.
 
- / ShowTypes:`yes` &#124; `no` [i] / t:`yes`&#124;`no`
+ / ShowTypes:`yes` &#124; `no` [i] t:`yes`&#124;`no`
 
  Opcjonalna. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.
 
@@ -59,17 +59,17 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  / ShowModule:`yes` &#124; `no` [i] / m:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane nazwy modułu. Wartość domyślna to `yes`.
+ Opcjonalna. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.
 
- / ShowLineOffset:`yes` &#124; `no` [i] /#:`yes`&#124;`no`
+ / ShowLineOffset:`yes` &#124; `no` [i] powrotu:`yes`&#124;`no`
 
  Opcjonalna. Określa, czy mają być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.
 
  / ShowByteOffset:`yes` &#124; `no` [i] / b:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane przesunięcia bajtów. Wartość domyślna to `no`.
+ Opcjonalna. Określa, czy należy wyświetlać przesunięcie bajtu. Wartość domyślna to `no`.
 
- / Pokażjęzyk:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`
+ / ShowLanguage:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`
 
  Opcjonalna. Określa, czy mają być wyświetlane w języku. Wartość domyślna to `no`.
 
@@ -79,28 +79,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  / ShowExternalCode:`yes`&#124;`no`
 
- Opcjonalna. Określa, czy mają być wyświetlane tylko mój kod dla stosu wywołań. Gdy tylko mój kod jest wyłączone, jest wyświetlany cały kod niezwiązany z użytkownikiem. Po włączeniu tylko mój kod kodu innych użytkowników jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.
+ Opcjonalna. Określa, czy mają być wyświetlane tylko mój kod dla stosu wywołań. Gdy tylko mój kod jest wyłączona, wyświetlany jest cały kod niezwiązany z użytkownikiem. Po włączeniu tylko mój kod niebędący kodem użytkownika jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.
 
  Wątek:`n`
 
- Opcjonalna. Wyświetla stos wywołań dla wątku `n`. Jeśli wątek nie zostanie określony, wyświetla stos wywołań bieżącego wątku.
+ Opcjonalna. Przedstawia stos wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, wyświetla stos wywołań dla bieżącego wątku.
 
 ## <a name="remarks"></a>Uwagi
- Zmiany wprowadzone do argumentów lub przełączników dotyczą przyszłe wywołania tego polecenia. Jeśli wydawane Debug.ListCallStackby sam Wyświetla cały stos wywołań. Jeśli na przykład określić indeksu
+ Zmiany wprowadzone do argumentów lub przełączników dotyczą przyszłych wywołań tego polecenia. Jeśli wydawane Debug.ListCallStackby sam Wyświetla cały stos wywołań. Jeśli na przykład określić indeks
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- następnie bieżącej ramki stosu ustawiono ramki (w tym przypadku drugiej ramki).
+ Bieżąca ramka stosu przybiera wartość do tej ramki (w tym przypadku drugiej ramki).
 
- To polecenie za pomocą wstępnie zdefiniowanych aliasem, można również napisać kb. Na przykład można wprowadzić
+ Możesz również zapisywać dane tego polecenia, używając jego wstępnie zdefiniowanych aliasów kb. Na przykład można wprowadzić
 
 ```cmd
 kb 2
 ```
 
- Aby ustawić bieżącej ramki stosu drugiej ramki.
+ można ustawić bieżącej ramki stosu do drugiego ramki.
 
 ## <a name="example"></a>Przykład
 
@@ -114,5 +114,5 @@ kb 2
 - [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Znajdź/Command — pole](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

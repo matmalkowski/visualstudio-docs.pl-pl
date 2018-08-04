@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923952"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513100"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
+
 W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przykład: prostokąt, okrąg lub elipsy. A *ścieżki* jest nieco bardziej elastyczne kształtu. Można wykonać czynności, jak zmienić kształt je lub połączyć je ze sobą nowe kształty formularza.
 
- Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalować do ekranów o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to są grafiki wektorowej](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
-
- **W tym temacie:**
-
--   [Rysowanie kształtu](#Shape)
-
--   [Rysowanie ścieżki](#Path)
-
--   [Konwertowanie kształtu do ścieżki](#Convert)
-
--   [Połącz ścieżki](#Combine)
-
--   [Utwórz ścieżkę złożoną](#Compound)
-
--   [Tworzenie ścieżki przycinania](#Clipping)
+Kształtów i ścieżek należy używać grafiki wektorowej, więc ich przeskalować do ekranów o wysokiej rozdzielczości. Jeśli chcesz dowiedzieć się więcej na temat grafiki wektorowej, zobacz [co to są grafiki wektorowej](https://www.youtube.com/watch?v=MoCSwF0n-io) lub [grafika wektorowa](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
 ##  <a name="Shape"></a> Rysowanie kształtu
  Możesz znaleźć kształty w **zasoby** panelu.

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231504"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512256"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -97,7 +97,8 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
   * **HKLM\Software\Microsoft\VisualStudio\{wersji}**: kluczy rejestru utworzonych przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
   * **HKCU\Software\Microsoft\VisualStudio\{wersji}**: kluczy rejestru utworzonych przez Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
   * **HKCU\Software\Microsoft\VisualStudio\{wersji} _Config**: kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
-* Aby zmniejszyć wpływ na rejestrze, używa teraz program Visual Studio [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) funkcję, aby przechowywać klucze rejestru w prywatnej pliku binarnego w obszarze *[VSAPPDATA]\privateregistry.bin*. Bardzo niewielkiej liczby Visual Studio kluczy pozostają w rejestrze systemowym.
+* Aby zmniejszyć wpływ na rejestrze, używa teraz program Visual Studio [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkcję, aby przechowywać klucze rejestru w prywatnej pliku binarnego w obszarze *[VSAPPDATA]\privateregistry.bin*. Bardzo niewielkiej liczby Visual Studio kluczy pozostają w rejestrze systemowym.
+
 * Nie ma wpływu na istniejącym kodzie działającym wewnątrz procesu programu Visual Studio. Program Visual Studio będzie przekierowywać wszystkie operacje rejestru w kluczu HKCU Visual Studio specyficzne dla do prywatnego rejestru. Odczytywanie i zapisywanie do innych lokalizacji rejestru będzie nadal korzystać z rejestru systemowego.
 * Kod zewnętrzny należy załadować i odczytać z pliku do wpisów rejestru programu Visual Studio.
 

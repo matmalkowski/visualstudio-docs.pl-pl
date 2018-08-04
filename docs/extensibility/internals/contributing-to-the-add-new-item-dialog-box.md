@@ -1,5 +1,5 @@
 ---
-title: Współtworzenie Dodaj nowy element — okno dialogowe | Dokumentacja firmy Microsoft
+title: Współtworzenie dialogowego Dodawanie nowego elementu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d8b35537828f99fe3683e03feac3960d6ca4adc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41947e3078eb3cd344774afe533a4fa0a9d8324a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129225"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511947"
 ---
-# <a name="contributing-to-the-add-new-item-dialog-box"></a>Współtworzenie Dodaj nowy element — okno dialogowe
-Podtyp projektu zapewniają pełną nowy katalog elementów dla **Dodaj nowy element** okno dialogowe rejestrując **Dodaj element** szablonów w obszarze `Projects` podklucza rejestru.  
+# <a name="contribute-to-the-add-new-item-dialog-box"></a>Współtworzenie w oknie dialogowym Dodaj nowy element
+Podtypu projektu może zapewnić pełną nowy katalog elementów dla **Dodaj nowy element** okno dialogowe, rejestrując **elementu Dodawanie** szablonów w ramach **projektów** podklucza rejestru.  
   
-## <a name="registering-add-new-item-templates"></a>Rejestrowanie szablonów Dodaj nowy element  
- W tej sekcji znajduje się w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** w rejestrze. Załóżmy z poniższych wpisów rejestru [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu agregowane przez podtypu projektu hipotetycznych. Wpisy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu są wymienione poniżej.  
+## <a name="register-add-new-item-templates"></a>Rejestrowanie szablonów Dodaj nowy element  
+ W tej sekcji znajduje się w folderze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** w rejestrze. Wpisy rejestru poniżej założono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu agregowane przez podtypu projektu hipotetycznych. Wpisy dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu są wymienione poniżej.  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]  
@@ -38,12 +38,12 @@ Podtyp projektu zapewniają pełną nowy katalog elementów dla **Dodaj nowy ele
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"  
 ```  
   
- `AddItemTemplates\TemplateDirs` Podklucz zawiera wpisy rejestru ze ścieżką do katalogu, w którym elementy udostępniona w **Dodaj nowy element** znajdują się okno dialogowe.  
+ **AddItemTemplates\TemplateDirs** podklucz zawiera wpisy rejestru ścieżką do katalogu, gdzie elementy udostępnione w **Dodaj nowy element** znajdują się okno dialogowe.  
   
- Środowisko automatycznie ładuje wszystkie `AddItemTemplates` dane w ramach `Projects` podklucza rejestru. Mogą to być dane dla implementacji podstawowej projektu, a także danych dla określonego projektu podtyp typów. Każdy podtyp projektu jest identyfikowany przez typ projektu `GUID`. Podtyp projektu można określić, że zestaw alternatywny `Add Item` szablony powinny być używane do wystąpienia określonego projektu przeznaczonego dzięki obsłudze `VSHPROPID_ AddItemTemplatesGuid` wyliczenie z <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> wykonania zwraca identyfikator GUID wartość podtypu projektu. Jeśli `VSHPROPID_AddItemTemplatesGuid` nie określono właściwości projektu podstawowy identyfikator GUID jest używany.  
+ Środowisko automatycznie ładuje wszystkie **AddItemTemplates** danych w ramach **projektów** podklucza rejestru. Te dane mogą obejmować dane dla implementacji projektu podstawowego, a także dane dla określonego projektu podtyp typów. Każdy podtypu projektu jest identyfikowany przez typ projektu **GUID**. Podtypu projektu można określić, czy alternatywnego zestaw **elementu Dodawanie** sposób użycia szablonów dla wystąpienia określonego projektu przeznaczonego dzięki obsłudze `VSHPROPID_ AddItemTemplatesGuid` wyliczenie z <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementacja zwraca wartość identyfikatora GUID podtypu projektu. Jeśli `VSHPROPID_AddItemTemplatesGuid` właściwość nie jest określona, jest używany identyfikator GUID projektu podstawowego.  
   
- Można filtrować elementy **Dodaj nowy element** okno dialogowe zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfejsu w obiekcie agregatora podtypu projektu. Na przykład podtyp projektu implementujący projekt bazy danych przez agregowanie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekt, można filtrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] określonych elementów z **Dodaj nowy element** okno dialogowe zaimplementowanie filtrowania, a w wyłączyć, dodać elementy określonego projektu bazy danych dzięki obsłudze `VSHPROPID_ AddItemTemplatesGuid` w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Aby uzyskać więcej informacji o filtrowaniu i dodawanie elementów do **Dodaj nowy element** okno dialogowe, zobacz [Dodawanie elementów do dodawania nowego elementu okien dialogowych](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
+ Możesz filtrować elementy w **Dodaj nowy element** okno dialogowe, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interfejsu na obiekt agregatora podtypu projektu. Na przykład podtypem projektu, który implementuje projekt bazy danych przez agregowanie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu, można filtrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] określonych elementów z **Dodaj nowy element** Włącz okno dialogowe, implementując, filtrowanie i w, można dodać bazy danych elementów specyficznych dla projektu dzięki obsłudze `VSHPROPID_ AddItemTemplatesGuid` w <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Aby uzyskać więcej informacji na temat filtrowania i dodawanie elementów do **Dodaj nowy element** okno dialogowe, zobacz [Dodawanie elementów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [Identyfikatorów CatID obiektów, które zwykle służą do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

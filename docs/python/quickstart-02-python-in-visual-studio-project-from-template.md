@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 45e6f25f485503da31f763df33481d5b61029d6f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37057027"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510887"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu w programie Visual Studio
 
@@ -24,20 +24,20 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Uruchom program Visual Studio 2017.
 
-1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt...** , a następnie w obszarze **nowy projekt** okno dialogowe Wyszukiwanie "puste flask" Wybierz "Pusty projekt sieci Web Flask" szablonu w środkową listę, nazwij projekt i wybierz **OK**:
+1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**, a następnie w obszarze **nowy projekt** wyszukiwania okna dialogowego "flask puste", można wybrać **pusty projekt sieci Web Flask** szablonu na liście środkowej nazwij projekt, a następnie wybierz pozycję **OK**:
 
     ![Tworzenie nowego projektu za pomocą szablonu pusty projekt sieci Web Flask](media/quickstart-python-06-blank-flask-template.png)
 
-1. Visual Studio wyświetli okno dialogowe, które jest wyświetlany komunikat "ten projekt wymaga pakiety zewnętrzne". To okno dialogowe pojawia się, ponieważ szablon zawiera `requirements.txt` pliku, określając zależność Flask. Visual Studio może automatycznie zainstalować pakiety i daje możliwość ich zainstalowania *środowiska wirtualnego*. Za pomocą środowiska wirtualnego zamiast zaleca się instalowania w środowisku globalnym, dlatego wybierz **zainstalować w środowisku wirtualnym** aby kontynuować.
+1. Visual Studio wyświetli okno dialogowe, które mówi **ten projekt wymaga zewnętrznych pakietów.** To okno dialogowe pojawia się, ponieważ szablon zawiera *requirements.txt* pliku, określając zależność Flask. Visual Studio może automatycznie zainstalować pakiety i daje możliwość ich do zainstalowania *środowiska wirtualnego*. Za pomocą środowiska wirtualnego zamiast zaleca się instalowania w środowisku globalnym, dlatego wybierz **zainstalować w środowisku wirtualnym** aby kontynuować.
 
     ![Instalowanie Flask w środowisku wirtualnym](media/quickstart-python-07-install-into-virtual-environment.png)
 
 1. Visual Studio Wyświetla **Dodawanie środowiska wirtualnego** okna dialogowego. Zaakceptuj wartości domyślne, a następnie wybierz pozycję **Utwórz**, następnie Wyraź zgodę na wszystkie żądania podniesienia uprawnień.
 
     > [!Tip]
-    > Po rozpoczęciu projektu zdecydowanie zaleca się już teraz Utwórz środowisko wirtualne jak zapraszać większość szablonów programu Visual Studio, należy wykonać. Środowiska wirtualne Obsługa dokładnych wymaganiach projektu wraz z upływem czasu, jak dodać i usunąć biblioteki. Następnie można łatwo generować `requirements.txt` pliku, którego używasz, aby ponownie zainstalować te zależności na innych komputerach rozwoju (jako po przy użyciu kontroli źródła) i podczas wdrażania projektu na serwerze produkcyjnym. Aby uzyskać więcej informacji na temat środowisk wirtualnych i korzyści, zobacz [przy użyciu środowisk wirtualnych](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) i [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
+    > Po rozpoczęciu projektu zdecydowanie zaleca się już teraz Utwórz środowisko wirtualne jak zapraszać większość szablonów programu Visual Studio, należy wykonać. Środowiska wirtualne Obsługa dokładnych wymaganiach projektu wraz z upływem czasu, jak dodać i usunąć biblioteki. Następnie można łatwo generować *requirements.txt* pliku, którego używasz, aby ponownie zainstalować te zależności na innych komputerach rozwoju (jako po przy użyciu kontroli źródła) i podczas wdrażania projektu na serwerze produkcyjnym. Aby uzyskać więcej informacji na temat środowisk wirtualnych i korzyści, zobacz [korzystanie ze środowisk wirtualnych](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) i [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Gdy program Visual Studio utworzy tego środowiska, Szukaj w **Eksploratora rozwiązań** aby zobaczyć, że masz `app.py` plików wraz z `requirements.txt`. Otwórz `app.py` aby zobaczyć, że szablon udostępnił kodu, tak jak w [Szybki Start — tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md), kilka dodano sekcje. Cały kod poniżej jest tworzony przez szablon, więc nie trzeba wkleić dowolny do `app.py` samodzielnie.
+1. Gdy program Visual Studio utworzy tego środowiska, Szukaj w **Eksploratora rozwiązań** aby zobaczyć, że masz *app.py* plików wraz z *requirements.txt*. Otwórz *app.py* aby zobaczyć, że szablon udostępnił kodu, tak jak w [Szybki Start — tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md), kilka dodano sekcje. Cały kod poniżej jest tworzony przez szablon, więc nie trzeba wkleić dowolny do *app.py* samodzielnie.
 
     Odpowiednie Importy zaczyna się kod:
 
@@ -74,13 +74,13 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
         app.run(HOST, PORT)
     ```
 
-1. Wybierz **Debuguj > Uruchom bez debugowania** do uruchamiania aplikacji i Otwórz w przeglądarce `localhost:5555`.
+1. Wybierz **debugowania** > **Uruchom bez debugowania** do uruchamiania aplikacji i Otwórz w przeglądarce `localhost:5555`.
 
 **Pytanie: Jakie inne szablony Python programu Visual Studio oferuje?**
 
-**Odpowiedź**: Z zainstalowanym obciążeniem Python programu Visual Studio oferuje różne szablony projektów, między innymi [struktury sieci web Flask, Bottle i Django](../python/python-web-application-project-templates.md), usługi Azure cloud services, różne usługi machine learning scenariusze, a nawet szablon, aby utworzyć projekt z istniejącą strukturę folderu zawierającego aplikację języka Python. Możesz przejść do nich za pośrednictwem **Plik > Nowy > Projekt...**  okno dialogowe, wybierając **Python** język węzła i jego węzłami podrzędnymi.
+**Odpowiedź**: Z zainstalowanym obciążeniem Python programu Visual Studio oferuje różne szablony projektów, między innymi [struktury sieci web Flask, Bottle i Django](../python/python-web-application-project-templates.md), usługi Azure cloud services, różne usługi machine learning scenariusze, a nawet szablon, aby utworzyć projekt z istniejącą strukturę folderu zawierającego aplikację języka Python. Możesz przejść do nich za pośrednictwem **pliku** > **New** > **projektu** okno dialogowe, wybierając **Python** język węzła i jego węzłami podrzędnymi.
 
-Visual Studio udostępnia również różnych plików lub *elementu szablony* szybko utworzyć klasę języka Python, pakiet języka Python, test jednotky Pythonu `web.config` pliki i inne. W przypadku otwarcia projektu języka Python, możesz uzyskać dostęp do szablonów elementu za pomocą **Projekt > Dodaj nowy element** polecenia menu. Zobacz [elementu szablony](python-item-templates.md) odwołania.
+Visual Studio udostępnia również różnych plików lub *elementu szablony* szybko utworzyć klasę języka Python, pakiet języka Python, test jednotky Pythonu *web.config* pliki i inne. W przypadku otwarcia projektu języka Python, możesz uzyskać dostęp do szablonów elementu za pomocą **projektu** > **Dodaj nowy element** polecenia menu. Zobacz [elementu szablony](python-item-templates.md) odwołania.
 
 Za pomocą szablonów można skrócić znaczące czas podczas uruchamiania projektu lub tworzenia pliku i są również świetnym sposobem Dowiedz się więcej o różnych typów aplikacji i kodu struktury. Warto potrwać kilka minut, aby utworzyć przy użyciu różnych szablonów projektów i elementów do zapoznania się z ich oferty.
 
@@ -95,6 +95,6 @@ Za pomocą szablonów można skrócić znaczące czas podczas uruchamiania proje
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych](installing-python-support-in-visual-studio.md).
-- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).
+- [Ręcznie Zidentyfikuj istniejące interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md)
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)
