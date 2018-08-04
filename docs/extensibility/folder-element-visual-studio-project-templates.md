@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234926"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497178"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Folder — Element (szablony projektów Visual Studio)
+# <a name="folder-element-visual-studio-project-templates"></a>Folder — element (szablony projektu Visual Studio)
 Określa folder, który zostanie dodany do projektu.  
   
  \<VSTemplate>  
@@ -47,27 +47,27 @@ Określa folder, który zostanie dodany do projektu.
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Name`|Atrybut wymagany.<br /><br /> Nazwa folderu projektu.|  
-|`TargetFolderName`|Atrybut opcjonalny.<br /><br /> Określa nazwę folderu zwracanie projektu jest tworzona na podstawie szablonu. Ten atrybut jest przydatny do utworzenia nazwy folderu przy użyciu wymiany parametru lub folder z ciągiem międzynarodowe nazwy nie można użyć bezpośrednio w pliku zip.|  
+|`TargetFolderName`|Atrybut opcjonalny.<br /><br /> Określa nazwę do nadania folderu, gdy projekt jest tworzony na podstawie tego szablonu. Ten atrybut jest przydatne w przypadku za pomocą wymiany parametru można utworzyć nazwy folderu lub folder z ciągiem międzynarodowych nazewnictwa, który nie można użyć bezpośrednio w *zip* pliku.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|`Folder`|Określa folder do dodania do projektu. `Folder` elementy mogą zawierać elementu podrzędnego `Folder` elementów.|  
+|`Folder`|Określa folder do dodania do projektu. `Folder` elementy może zawierać podrzędnych `Folder` elementów.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Określa plik, aby dodać do projektu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Element podrzędny opcjonalne [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Opcjonalny element podrzędny elementu [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Uwagi  
- `Folder` jest opcjonalne podrzędnym `Project`.  
+ `Folder` jest podrzędnym opcjonalne `Project`.  
   
- Do organizowania elementów projektu do folderów w szablonie, można użyć dowolnej z następujących metod:  
+ Do organizowania elementów projektu w foldery w szablonie, można użyć dowolnej z następujących metod:  
   
--   Będą one wyświetlane w pliku .zip szablon i dodaj je do projektu w pliku .vstemplate, określając ścieżkę do pliku w `ProjectItem` elementów, których nie `Folder` elementów. Jest to zalecana metoda. Na przykład:  
+-   Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* pliku, określając ścieżkę do pliku w `ProjectItem` elementów, na których nie `Folder` elementów. Jest to zalecana metoda. Na przykład:  
   
      `...`  
   
@@ -77,7 +77,7 @@ Określa folder, który zostanie dodany do projektu.
   
      `...`  
   
--   Będą one wyświetlane w pliku .zip szablon i dodaj je do projektu w pliku .vstemplate `Folder` elementów. Na przykład:  
+-   Dołącz foldery w szablonie *zip* plik i dodać je do projektu w *.vstemplate* plik z `Folder` elementów. Na przykład:  
   
      `...`  
   
@@ -91,7 +91,7 @@ Określa folder, który zostanie dodany do projektu.
   
      `...`  
   
--   Nie dołączaj folderów w pliku zip szablonu, ale. Dodaj foldery przy użyciu `TargetFileName` atrybutu `ProjectItem` elementu. Na przykład:  
+-   Nie dołączaj folderów w szablonie *zip* plików, ale Dodaj folderów za pomocą `TargetFileName` atrybutu `ProjectItem` elementu. Na przykład:  
   
      `...`  
   
@@ -102,7 +102,7 @@ Określa folder, który zostanie dodany do projektu.
      `...`  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadane szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.  
+ W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -130,7 +130,7 @@ Określa folder, który zostanie dodany do projektu.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
+ [Projectitem — element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -15,39 +15,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4933e73df93c1f8a3bcf62e03b6883c0096f1d8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b26895a5b25982dbc616b0df3a5618bcdcbb4d6b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135562"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497568"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
-Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnić podstawowej struktury: modelu projektu dla danego typu projektu. W modelu projektu jest pakiet VSPackage, tworzysz, tworzenia obiektów, które spełniają swoje decyzje dotyczące projektu i współdziała z globalnej funkcji udostępnianych przez usługę IDE. Mimo że można kontrolować, jak element projektu jest trwały, na przykład nie kontrolujesz powiadomienia musi zostać utrwalony pliku. Gdy użytkownik umieszcza fokus w elemencie Otwórz projekt i wybiera **zapisać** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu paska, kodzie typ projektu musi przechwycić polecenie z IDE, utrwalić pliku, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.  
+Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnianie podstawowa struktura: model projektu dla danego typu projektu. Model projektu, czyli pakietu VSPackage, tworzysz służy do tworzenia obiektów, które są zgodne z decyzji projektowych i współdziałały globalne funkcje udostępniane przez środowisko IDE. Chociaż możesz kontrolować, jak element projektu jest trwały, na przykład, możesz nie mają kontroli nad powiadomienia, plik musi zostać utrwalone. Gdy użytkownik Przełącza fokus na elemencie Otwórz projekt, a **Zapisz** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu pasku kod typu projektu musi przechwytywać polecenie z poziomu środowiska IDE, utrwalanie plików, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.  
   
- VSPackage współdziała z IDE za pośrednictwem usług, które zapewniają dostęp do interfejsów IDE. Na przykład za pomocą określonej usługi, należy monitorować i trasy poleceń i podaj informacje o kontekście dla wybranych w projekcie. Wszystkie globalne IDE funkcje wymagane dla VSPackage są udostępniane przez usługi. Aby uzyskać więcej informacji na temat usług, zobacz [porady: uzyskiwanie usługi](../../extensibility/how-to-get-a-service.md).  
+ Usługi pakietu VSPackage współdziała z IDE za pośrednictwem usług, które zapewniają dostęp do interfejsów IDE. Na przykład za pośrednictwem usług konkretnego monitora i trasy poleceń i podaj informacje o kontekście dla wybranych ustawień w projekcie. Wszystkie globalne IDE funkcje potrzebne do Twojego pakietu VSPackage są udostępniane przez usługi. Aby uzyskać więcej informacji na temat usług, zobacz [porady: pobieranie usługi](../../extensibility/how-to-get-a-service.md).  
   
  Inne uwagi dotyczące implementacji:  
   
--   Model pojedynczego projektu może zawierać więcej niż jeden typ projektu.  
+-   Modelu tego pojedynczego projektu może zawierać więcej niż jeden typ projektu.  
   
--   Typy projektów i fabryk towarzyszącej projektu są zarejestrowane niezależnie z identyfikatorami GUID.  
+-   Typy projektów i fabryk projektów towarzyszącej zostały zarejestrowane niezależnie przy użyciu identyfikatorów GUID.  
   
--   Każdy projekt musi mieć plik szablonu lub kreatora w celu zainicjowania nowego pliku projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] szablony zainicjować co przestać .vcproj — pliki.  
+-   Każdy projekt musi mieć w pliku szablonu lub kreatora w celu inicjowania nowego pliku projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] szablony zainicjować co przestać .VCPROJ — pliki.  
   
- Na poniższej ilustracji przedstawiono podstawowy interfejsów, usług i obiekty tworzące wykonania typowych projektu. Pomocnik aplikacji, HierUtil7, można użyć do tworzenia obiektów i inne elementy programowania standardowe. Aby uzyskać więcej informacji na temat HierUtil7 pomocnika aplikacji, zobacz [nie znajduje się w kompilacji: przy użyciu HierUtil7 projektu klasy do zaimplementowania typ projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ Na poniższej ilustracji przedstawiono głównych interfejsów, usług i obiektów, które tworzą implementację typowym projekcie. Można użyć pomocnika aplikacji `HierUtil7`, aby utworzyć obiekty źródłowe i innych standardowy programowania. Aby uzyskać więcej informacji na temat `HierUtil7` pomocnika aplikacji, zobacz [HierUtil7 Użyj projektu klasy do zaimplementowania typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Grafika przedstawiająca Visual Studio modelu projektu](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Grafiki modelu projektu programu Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 model projektu  
   
- Aby uzyskać więcej informacji na temat interfejsów i usługami wymienionymi w poprzedni diagram i inne opcjonalne interfejsy nie są uwzględnione w diagramie, zobacz [projektu modelu podstawowe składniki](../../extensibility/internals/project-model-core-components.md).  
+ Aby uzyskać więcej informacji dotyczących interfejsów i usług wymienionych na poprzednim rysunku, a inne opcjonalne interfejsy, które nie są uwzględnione w diagramie, zobacz [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).  
   
- Projekty może obsługiwać poleceń i dlatego musi implementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu do udziału w routing poleceń za pomocą polecenia kontekstu identyfikatorów GUID.  
+ Projekty mogą obsługiwać poleceń i w związku z tym należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs do wzięcia udziału w routingu poleceń za pomocą polecenia kontekstu identyfikatorów GUID.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Nie w kompilacji: Używanie klas projektu HierUtil7 do zaimplementowania typ projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
- [Projekt modelu podstawowe składniki](../../extensibility/internals/project-model-core-components.md)   
- [Tworzenie wystąpień projektu za pomocą fabryk projektu](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+ [Użycie klasy projektu HierUtil7 w celu zaimplementowania typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)   
+ [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Porady: uzyskiwanie usługi](../../extensibility/how-to-get-a-service.md)   
  [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)

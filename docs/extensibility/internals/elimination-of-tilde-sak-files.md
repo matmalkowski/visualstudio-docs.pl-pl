@@ -1,5 +1,5 @@
 ---
-title: Eliminacja ~ pliki SAK | Dokumentacja firmy Microsoft
+title: Eliminacja ~ SAK plików | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129644"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497953"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminacja ~ SAK plików
-W 1.2 interfejsu API dodatku typu Plug-in kontroli źródła ~ SAK pliki zostały zastąpione przez flagi możliwości i nowe funkcje, które wykrywa, czy wtyczka do kontroli źródła obsługuje MSSCCPRJ plików i udostępnionych wyewidencjonowania.  
+W 1.2 interfejsu API wtyczki kontroli źródła *~ SAK* pliki zostały zastąpione przez flagi funkcji i nowych funkcji, które wykryć, czy źródło kontrolować obsługuje wtyczki *MSSCCPRJ* plików i współdzielonymi wyewidencjonowaniami.  
   
-## <a name="sak-files"></a>~ SAK plików  
- Program Visual Studio .NET 2003 utworzone pliki tymczasowe prefiksem ~ SAK. Te pliki służą do określenia, czy obsługuje wtyczka do kontroli źródła:  
+## <a name="sak-files"></a>~ Plików SAK  
+Visual Studio .NET 2003 utworzone pliki tymczasowe z prefiksem *~ SAK*. Te pliki są używane do określenia, czy obsługuje wtyczki kontroli źródła:  
   
--   MSSCCPRJ. Plik SCC.  
+- *MSSCCPRJ.SCC* pliku.  
   
--   Wiele wyewidencjonowania (udostępnionego).  
+- Wiele operacji wyewidencjonowania (współużytkowane).  
+    
+Wtyczek, które obsługują zaawansowane funkcje udostępniane w 1.2 interfejsu API wtyczki kontroli źródła IDE może wykryć tych funkcji bez tworzenia plików tymczasowych za pomocą nowych możliwości, flag i funkcje, szczegółowo opisane w poniższych sekcjach.  
   
- Dla wtyczki, które obsługuje zaawansowane funkcje oferowane w 1.2 interfejsu API dodatku typu Plug-in kontroli źródła IDE wykrywa te możliwości bez tworzenia plików tymczasowych przy użyciu nowych funkcji, flag i funkcje szczegółowo opisane w poniższych sekcjach.  
-  
-## <a name="new-capability-flags"></a>Nowe możliwości flagi  
+## <a name="new-capability-flags"></a>Nowe flagi możliwości  
  `SCC_CAP_SCCFILE`  
   
  `SCC_CAP_MULTICHECKOUT`  
@@ -44,14 +44,14 @@ W 1.2 interfejsu API dodatku typu Plug-in kontroli źródła ~ SAK pliki został
   
  [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
- Jeśli wtyczka do kontroli źródła obsługuje wiele wyewidencjonowania (udostępnione), a następnie deklaruje `SCC_CAP_MULTICHECKOUT` możliwości i implementuje `SccIsMultiCheckOutEnabled` funkcji. Ta funkcja jest wywoływana, gdy operacja wyewidencjonowania występuje na żadnym z projektów pod kontrolą źródła.  
+ Jeśli wtyczka do kontroli źródła, obsługuje wielu wyewidencjonowania (współużytkowane), a następnie deklaruje `SCC_CAP_MULTICHECKOUT` możliwości i implementuje `SccIsMultiCheckOutEnabled` funkcji. Ta funkcja jest wywoływana zawsze wtedy, gdy operacja wyewidencjonowania odbywa się na żaden z projektów pod kontrolą źródła.  
   
- Jeśli wtyczka do kontroli źródła obsługuje tworzenie i używanie MSSCCPRJ. Deklaruje SCC plik, a następnie go `SCC_CAP_SCCFILE` możliwości i implementuje [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Ta funkcja jest wywoływana z listą plików. Funkcja zwraca `TRUE/FALSE` dla każdego pliku wskazać, czy program Visual Studio należy używać MSSCCPRJ. Plik SCC dla niego. Jeśli wtyczka do kontroli źródła nie obsługują te nowe możliwości i funkcji, można użyć do wyłączenia tworzenia tych plików następujący klucz rejestru:  
+ Jeśli wtyczka do kontroli źródła obsługuje stworzeniem i używaniem *MSSCCPRJ.SCC* pliku, a następnie deklaruje `SCC_CAP_SCCFILE` możliwości i implementuje [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Ta funkcja jest wywoływana z listą plików. Funkcja zwraca `TRUE' or 'FALSE` dla każdego pliku wskazać, czy należy używać programu Visual Studio *MSSCCPRJ.SCC* go w pliku. Jeśli wtyczka do kontroli źródła nie zdecyduje się na obsługuje te nowe możliwości i funkcje, on używać następujący klucz rejestru, aby wyłączyć tworzenie tych plików:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateTemporaryFilesInSourceControl" = dword: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*  
   
 > [!NOTE]
->  Jeśli ten klucz rejestru jest ustawiona na DWORD: 00000000, jest odpowiednikiem klucza jest nieistniejącą i Visual Studio nadal podejmuje próbę utworzenia plików tymczasowych. Jednak jeśli klucz rejestru DWORD: 00000001 Visual Studio nie próbował utworzyć plików tymczasowych. Zamiast tego przyjęto założenie, że wtyczka do kontroli źródła nie obsługuje MSSCCPRJ. Plik SCC i nie obsługuje współdzielonymi wyewidencjonowaniami.  
+>  Jeśli ten klucz rejestru jest ustawiony na *DWORD: 00000000*odpowiada kluczowi trwa nieistniejącej i programu Visual Studio nadal podejmuje próbę utworzenia plików tymczasowych. Jednakże jeśli klucz rejestru jest ustawiony na *DWORD: 00000001*, Visual Studio nie jest podejmowana próba tworzenia tymczasowych plików. Zamiast tego przyjęto założenie, że wtyczka do kontroli źródła nie obsługuje *MSSCCPRJ.SCC* pliku, a nie obsługuje współdzielonymi wyewidencjonowaniami.  
   
-## <a name="see-also"></a>Zobacz też  
- [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Zobacz także  
+ [What's new in źródła kontrolki wtyczki API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

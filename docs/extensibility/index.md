@@ -5,19 +5,19 @@ ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
 title: Dokumentacja rozszerzalności programu Visual Studio | Dokumentacja firmy Microsoft
-description: Więcej informacji na temat rozszerzeń programu Visual Studio.
+description: Dowiedz się więcej o możliwościach rozszerzania programu Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
-ms.locfileid: "27246550"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500300"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentacja rozszerzalności programu Visual Studio
 
-Visual Studio zapewnia wiele opcji rozszerzalności. Istnieje możliwość rozszerzenia programu Visual Studio, Dodaj analizatorów kodu źródłowego dla kompilatora "Roslyn", lub nawet utworzyć własny zestaw SDK.
+Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć Visual Studio, dodać analizatory kodu źródłowego dla kompilatora "Roslyn", lub nawet tworzyć własne zestawy SDK.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,7 +49,7 @@ Visual Studio zapewnia wiele opcji rozszerzalności. Istnieje możliwość rozsz
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozszerzenia architektury .NET kompilatora platformy ("Roslyn")</h3>
+                        <h3>Rozszerzalność platformy kompilatora .NET („Roslyn”)</h3>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ Visual Studio zapewnia wiele opcji rozszerzalności. Istnieje możliwość rozsz
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie zestawu Software Development Kit</h3>
+                        <h3>Tworzenie zestawu SDK</h3>
                     </div>
                 </div>
             </div>

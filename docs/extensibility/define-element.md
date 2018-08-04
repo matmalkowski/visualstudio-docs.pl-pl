@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126965"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497164"
 ---
-# <a name="define-element"></a>Zdefiniuj Element
-Określa symbol pary nazw i wartości. Ten symbol oceną atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz też [symbole elementu](../extensibility/symbols-element.md).  
+# <a name="define-element"></a>Define, element
+Definiuje symbol pary nazw i wartości. Ten symbol może zostać oceniony przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz też [Symbols, element](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,9 +37,9 @@ Określa symbol pary nazw i wartości. Ten symbol oceną atrybuty warunkowe. Aby
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|nazwa|Wymagany. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
-|value|Wymagany. Wartość symbolu:<br /><br /> wartość = "Standard"|  
-|Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|nazwa|Wymagane. Nazwa symbolu:<br /><br /> Nazwa = "Tryb"|  
+|value|Wymagane. Wartość symbolu:<br /><br /> wartość = "Standardowy"|  
+|Warunek|Opcjonalna. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -48,7 +48,7 @@ Określa symbol pary nazw i wartości. Ten symbol oceną atrybuty warunkowe. Aby
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkich elementów, które reprezentują poleceń, które zawiera pakiet VSPackage zintegrowane środowisko programistyczne (IDE). Na przykład elementów menu, menu Paski narzędzi i pola kombi.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -57,5 +57,5 @@ Określa symbol pary nazw i wartości. Ten symbol oceną atrybuty warunkowe. Aby
 <Define name="MODE" value="Standard"/>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

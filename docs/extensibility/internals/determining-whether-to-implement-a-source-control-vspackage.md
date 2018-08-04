@@ -1,5 +1,5 @@
 ---
-title: Określanie, czy wdrożyć pakiet VSPackage kontroli źródła | Dokumentacja firmy Microsoft
+title: Określanie, czy wdrożyć pakiet VSPackage kontroli kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 203144e5b262c093204fe9eafa3a2a5db85eccb3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3bef6030b6a21eeda708a5258c47c9dfdcfc0a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128880"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497316"
 ---
-# <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Określanie, czy wdrożyć pakiet VSPackage kontroli źródła
-W tej sekcji rosnącego wyborów plug-in kontroli źródła i kontroli źródła VSPackages do rozszerzania rozwiązania oraz zapewnia ogólnych wytycznych o wybieraniu ścieżki odpowiedniej integracji kontroli źródła.  
+# <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Określić, czy wdrożyć pakiet VSPackage kontroli źródła
+W tej sekcji rosnącego wyboru wtyczek kontroli kodu źródłowego, kontrolę źródła pakietów VSPackage rozszerzania rozwiązania i zapewnia ogólnych wytycznych o wybieraniu ścieżki odpowiednie integracji kontroli źródła.  
   
-## <a name="small-source-control-solution-with-limited-resources"></a>Rozwiązanie kontroli źródła małych o ograniczonych zasobów  
- Jeśli ma ograniczone zasoby, a nie może być obciążać koszty zapisywania pakiet kontroli źródła, można utworzyć na podstawie interfejsu API dodatku typu Plug-in kontroli źródła wtyczek. Dzięki temu można działać równolegle z pakietów kontroli źródła, a można przełączać się między plug-in kontroli źródła i pakietów na żądanie. Aby uzyskać więcej informacji, zobacz [rejestracji i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+## <a name="small-source-control-solution-with-limited-resources"></a>Rozwiązania kontroli źródła małych z ograniczonymi zasobami  
+ Jeśli masz ograniczone zasoby i nie można obciążać obciążenie zapisywania pakietu kontroli źródła, można utworzyć wtyczki oparte na interfejsie API wtyczki kontroli źródła. Dzięki temu można działały równolegle z pakietów kontroli kodu źródłowego i można przełączać się między wtyczek kontroli kodu źródłowego i pakietów na żądanie. Aby uzyskać więcej informacji, zobacz [Rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Rozwiązanie kontroli źródła dużych z zestawem funkcji sformatowanego  
- Jeśli chcesz wdrożyć rozwiązanie kontroli źródła, które udostępnia model kontroli źródła sformatowanego, który nie jest odpowiednio przechwycone przy użyciu interfejsu API dodatku typu Plug-in kontroli źródła, można rozważyć jako ścieżka integracji pakiet kontroli źródła. Dotyczy to zwłaszcza, jeśli pakiet karty kontroli źródła, (która komunikuje się z Plug-in kontroli źródła oraz udostępnia podstawowe źródła formantu interfejsu użytkownika) zamiast spowodowałoby zastąpienie własnymi, dzięki czemu można obsługiwać zdarzenia kontroli źródła w niestandardowy sposób. Jeśli masz już zadowalające źródła kontroli interfejsu użytkownika i chcesz zachować środowiska w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], opcja pakietu kontroli źródła pozwala spełniają właśnie tę funkcję. Pakiet kontroli źródła nie jest rodzajowa i jest przeznaczona wyłącznie do użytku z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Rozwiązania kontroli źródła dużych z rozbudowanym zestawie funkcji  
+ Jeśli chcesz zaimplementować rozwiązanie do kontroli źródła, które oferuje model kontroli źródła sformatowanego odpowiednio nie są przechwytywane za pomocą interfejsu API wtyczki kontroli źródła, można rozważyć pakietu kontroli źródła jako ścieżka integracji. Dotyczy to zwłaszcza, jeśli wolisz spowodowałoby zastąpienie pakietu karty kontroli źródła, (która komunikuje się z wtyczek kontroli kodu źródłowego i udostępnia kontrolkę interfejsu użytkownika podstawowego źródła) za pomocą własnych, dzięki czemu można obsługiwać zdarzenia kontroli źródła w sposób niestandardowy. Jeśli masz już źródłem zadowalający kontroli interfejsu użytkownika i chcesz zachować środowiska w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], opcji pakietu kontroli źródła umożliwia spełniają właśnie tę funkcję. Pakiet kontroli źródła nie jest ogólna i jest przeznaczona wyłącznie do użytku z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Jeśli chcesz wdrożyć rozwiązanie do kontroli źródła, które zapewnia elastyczność i bardziej zaawansowane funkcje kontroli nad logikę kontroli źródła i interfejsu użytkownika, możesz trasy integracji pakietu kontroli źródła. Można:  
+ Jeśli chcesz zaimplementować rozwiązanie do kontroli źródła, które zapewnia elastyczność i bardziej rozbudowane kontroli za pośrednictwem interfejsu użytkownika i logikę kontroli źródła, możesz trasy integracji pakietu kontroli źródła. Można:  
   
-1.  Zarejestruj swoje własne pakiet VSPackage kontroli źródła (zobacz [rejestracji i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1.  Rejestrowanie własnych kontroli źródła pakietu VSPackage (zobacz [Rejestracja i wybór](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Zamień kontroli źródła domyślnego interfejsu użytkownika niestandardowego interfejsu użytkownika (zobacz [niestandardowy interfejs użytkownika](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
+2.  Zamień kontroli źródła domyślny interfejs użytkownika niestandardowego interfejsu użytkownika (zobacz [niestandardowy interfejs użytkownika](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Określ symbole, można użyć do obsługi zdarzeń symbolu w Eksploratorze rozwiązań (zobacz [kontrolki symbolu](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3.  Określ symbole, można użyć do obsługi zdarzeń symbol w Eksploratorze rozwiązań (zobacz [kontrola symboli](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Obsługa zdarzeń zapytania, edytować i zapisywać zapytania (zobacz [zapytania Edytuj Zapisz zapytanie](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4.  Obsługa zdarzeń zapytania, edytowanie i zapisywanie zapytań (zobacz [zapytania Edytuj zapytanie Zapisz](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="see-also"></a>Zobacz także  
+ [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)

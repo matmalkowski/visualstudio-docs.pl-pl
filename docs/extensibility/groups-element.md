@@ -1,5 +1,5 @@
 ---
-title: Grupuje elementu | Dokumentacja firmy Microsoft
+title: Grupuje Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f10983961f5449d75d63555b593350199921fbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126926"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497350"
 ---
 # <a name="groups-element"></a>Element grupy
-Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.  
+Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <Groups>  
   <Group>... </Group>  
   <Group>... </Group>  
@@ -40,24 +40,24 @@ Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Group, element](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|  
-|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.|  
+|[Element grupy](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|  
+|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
-```  
+```xml  
 <Groups>  
   <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
@@ -65,6 +65,6 @@ Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.
 </Groups>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

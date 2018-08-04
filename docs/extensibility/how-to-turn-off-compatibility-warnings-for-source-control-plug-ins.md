@@ -1,5 +1,5 @@
 ---
-title: Wyłącz ostrzeżenia dotyczące zgodności dla plug-in kontroli źródła | Dokumentacja firmy Microsoft
+title: Wyłączanie ostrzeżenia dotyczącego zgodności dla wtyczek kontroli kodu źródłowego | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,35 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3cffbd6a8b6c21aa6e958495b88eb51a5724a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e096b52bdf6e3e0065eefbba708d7bda18ab189
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129553"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498051"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Porady: wyłączanie ostrzeżenia dotyczące zgodności dla plug-in kontroli źródła
-Użytkownik może zobaczyć kilka ostrzeżenia dotyczące zgodności przy kontroli źródła w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ostrzeżenia przedstawione zależą od możliwości wtyczkę kontroli źródła i być wyłączona, ponieważ szczegółowe tutaj.  
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Porady: wyłączanie ostrzeżenia dotyczącego zgodności dla wtyczek kontroli kodu źródłowego
+Użytkownik może zostać wyświetlony kilka ostrzeżenia dotyczącego zgodności przy kontroli źródła w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ostrzeżenia prezentowane zależą od możliwości wtyczka do kontroli źródła i może być wyłączone jako szczegółowe tutaj.  
   
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Aby wyłączyć ostrzeżenia: "Aby zapewnić optymalną integracją kontroli źródła z programem Visual Studio..."  
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Aby wyłączyć ostrzeżenia: "Aby zapewnić optymalną integracją kontroli źródła przy użyciu programu Visual Studio"  
   
--   Ustaw następujący wpis rejestru (Dodawanie wartość, jeśli to konieczne):  
+-   Ustaw następujący wpis rejestru (dodanie wartości, jeśli to konieczne):  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001  
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**  
   
-     To ostrzeżenie jest wyświetlane dla wszystkich innych niż -[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] dodatków plug-in.  
+     To ostrzeżenie jest wyświetlane dla wszystkich non -[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] wtyczek.  
   
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Aby wyłączyć ostrzeżenia: "zainstalowany dostawca kontroli źródła nie wspiera wszystkich możliwości..."  
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Aby wyłączyć ostrzeżenia: "zainstalowany dostawca kontroli źródła nie obsługuje wszystkie funkcje"  
   
--   Ustaw następujące wartości rejestru dwa (Dodawanie wartości, jeśli to konieczne):  
+-   Ustaw następujące wartości rejestru dwóch (dodanie wartości, jeśli to konieczne):  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000  
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001  
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**  
   
-     To ostrzeżenie jest wyświetlane, jeśli wtyczka do kontroli źródła nie jawnie obsługuje ponowne wejście dla wielu projektów (jeśli można sprawdzić w tylko jednym pliku, a projekt w czasie).  
+     To ostrzeżenie jest wyświetlane, gdy wtyczka do kontroli źródła nie jawnego zapewnienia obsługi współużytkowania wątkowości dla wielu projektów (to znaczy, jeśli można sprawdzić w tylko jednym pliku, a projekt naraz).  
   
-     Najlepiej obsługuje ponowne wejście (`SCC_CAP_REENTRANT` możliwości); spowoduje to usunięcie tego ostrzeżenia. Jednak jeśli ta obsługa nie jest możliwe, można ustawić te wpisy rejestru.  
+     Zaleca się do obsługi współużytkowania wątkowości (`SCC_CAP_REENTRANT` możliwości); będzie więc usunąć to ostrzeżenie. Jednak jeśli ta funkcja nie jest możliwe, można ustawić te wpisy rejestru.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Flagi możliwości](../extensibility/capability-flags.md)

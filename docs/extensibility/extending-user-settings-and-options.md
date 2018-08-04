@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie opcje i ustawienia użytkownika | Dokumentacja firmy Microsoft
+title: Rozszerzenie Opcje i ustawienia użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,27 +16,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d71328c84f69b2a6adbd682be3a2b326d9f542e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135543"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498636"
 ---
-# <a name="extending-user-settings-and-options"></a>Opcje i rozszerzanie ustawień użytkownika
-W programie Visual Studio istnieją dwa sposoby obsługę preferencji użytkownika. **Narzędzia / Opcje** strony użytkownicy mogą ustawić własne wartości dla wielu różnych rodzajów ustawienia ogólne i specyficzne dla języka. Ustawienia użytkownika umożliwia użytkownikom określanie ogólne właściwości konfiguracji programu Visual Studio. Aby uzyskać więcej informacji na temat strony opcji, zobacz [opcje i opcje strony](../extensibility/internals/options-and-options-pages.md). Aby uzyskać więcej informacji na temat ustawień użytkownika, zobacz [Obsługa ustawień użytkowników](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extend-user-settings-and-options"></a>Rozszerzenie Opcje i ustawienia użytkownika
+W programie Visual Studio istnieją dwa główne sposoby celu obsługę preferencji użytkownika. **Narzędzia** > **opcje** stron zezwolić użytkownikom na ustawianie własnych wartości dla wielu różnych rodzajów ustawień ogólnych i specyficznych dla języka. Ustawienia użytkownika Zezwalaj użytkownikom na określanie ogólne właściwości konfiguracji programu Visual Studio. Aby uzyskać więcej informacji na temat stron opcji, zobacz [opcje i strony opcji](../extensibility/internals/options-and-options-pages.md). Aby uzyskać więcej informacji na temat ustawień użytkownika, zobacz [Obsługa ustawień użytkowników](../extensibility/internals/support-for-user-settings.md).  
   
  [Tworzenie strony opcji](../extensibility/creating-an-options-page.md)  
- Wyjaśniono, jak utworzyć stronę opcji.  
+ Wyjaśnia, jak utworzyć stronę opcji.  
   
  [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md)  
  Wyjaśnia sposób tworzenia kategorii ustawień.  
   
- [Korzystanie z magazynu ustawień](../extensibility/using-the-settings-store.md)  
- Wyjaśniono, jak korzystać z magazynu ustawienia.  
+ [Użyj magazynu ustawień](../extensibility/using-the-settings-store.md)  
+ Wyjaśnia, jak używać magazynu ustawień.  
   
- [Pobieranie informacji o usłudze z magazynu ustawień](../extensibility/getting-service-information-from-the-settings-store.md)  
- Opis sposobu uzyskania usług dostępnych w sklepie ustawienia.  
+ [Uzyskaj informacje o usłudze z magazynu ustawień](../extensibility/getting-service-information-from-the-settings-store.md)  
+ Wyjaśnia, jak można pobrać dostępnych usług z magazynu ustawień.  
   
- [Zapisywanie w magazynie ustawień użytkownika](../extensibility/writing-to-the-user-settings-store.md)  
- Wyjaśniono, jak można zapisać w magazynie ustawień użytkownika.
+ [Zapisu w magazynie ustawień użytkownika](../extensibility/writing-to-the-user-settings-store.md)  
+ Wyjaśnia, jak do zapisu w magazynie ustawień użytkownika.

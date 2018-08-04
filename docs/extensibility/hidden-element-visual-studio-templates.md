@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127310"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498265"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden — Element (szablony Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Hidden — element (szablony Visual Studio)
 Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
@@ -48,20 +48,20 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazujące, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.  
+ Tekst musi być albo `true` lub `false`oznaczający Określa, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.  
   
 ## <a name="remarks"></a>Uwagi  
- `Hidden` to opcjonalny element.  
+ `Hidden` element jest opcjonalny.  
   
- Jeśli określone, nie inne elementy podrzędne `TemplateData` elementu są wymagane.  
+ Jeśli zostanie określony, nie inne elementy podrzędne `TemplateData` elementu są wymagane.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.  
+ W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

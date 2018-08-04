@@ -1,5 +1,5 @@
 ---
-title: 'Porady: za pomocą przystawki Zarządzanie połączonego cofania | Dokumentacja firmy Microsoft'
+title: 'Porady: Użyj przystawki Zarządzanie połączonego cofania | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d65873ae68fe7446ddd265a3af17e694bd475465
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127640"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500423"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Porady: za pomocą przystawki Zarządzanie połączonego cofania
-Połączonego cofania umożliwia użytkownikowi cofnąć równocześnie w tej samej zmiany w wielu plikach. Na przykład jednoczesnych tekst zostanie zmieniony na wiele plików programów, takich jak plik nagłówka i plik Visual C++ jest transakcją połączonego cofania. Możliwość połączonego cofania jest wbudowana w implementacji środowiska menedżera cofania i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umożliwia manipulowanie tej możliwości. Połączonego cofania jest implementowany przez modułu cofnięcia nadrzędnego, który można połączyć stosy oddzielne cofania razem powinien być traktowany jako jednostki cofania pojedynczego. Procedury dotyczące korzystania z połączonego cofania została szczegółowo opisana w następnej sekcji.  
+# <a name="how-to-use-linked-undo-management"></a>Porady: użycie połączonego cofania zarządzania
+Połączonego cofania umożliwia użytkownikowi Cofnij równocześnie w tej samej zmiany w wielu plikach. Na przykład zmiany w tekście jednoczesnych na wiele plików programów, takich jak plik nagłówkowy i plik Visual C++ jest transakcji połączonego cofania. Funkcja połączonego cofania jest wbudowana w implementacji środowiska menedżera cofania i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umożliwia manipulowanie tej możliwości. Połączonego cofania jest implementowany przez nadrzędnej jednostki cofania, który można połączyć cofania osobnych stosów ze sobą, aby być traktowane jako jednostka pojedynczą czynność cofnięcia. W poniższej sekcji opisano szczegółowo procedurę za pomocą połączonego cofania.  
   
-### <a name="to-use-linked-undo"></a>Aby użyć połączonego cofania  
+## <a name="to-use-linked-undo"></a>Aby użyć połączonego cofania  
   
-1.  Wywołanie `QueryService` na `SVsLinkedUndoManager` otrzymywać wskaźnik do `IVsLinkedUndoTransactionManager`.  
+1.  Wywołaj `QueryService` na `SVsLinkedUndoManager` uzyskać wskaźnik do `IVsLinkedUndoTransactionManager`.  
   
-2.  Tworzenie początkowej nadrzędnej jednostki połączonego cofania przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Pojedynczy punkt początkowy dla zestawu stosów cofania mają być grupowane w stosy połączonego cofania. W `OpenLinkedUndo` metody należy również określić, czy połączonego cofania ograniczeniami lub z systemem innym niż strict. Zachowanie non-strict połączonego cofania oznacza, że można zamknąć niektórych dokumentów z połączonego cofania elementów równorzędnych i nadal pozostaw innych połączone cofanie elementów równorzędnych na ich stosy. Zachowanie Strict połączonego cofania Określa, że można cofnąć razem lub w ogóle nie wszystkie stosy element równorzędny połączonego cofania. Dodaj kolejne połączone cofanie stosy przez wywołanie metody [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) metody.  
+2.  Tworzenie początkowej nadrzędnej jednostki połączonego cofania, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Spowoduje to punkt początkowy dla zestawu cofnięcie stosów mają być grupowane w stosy połączonego cofania. W `OpenLinkedUndo` metody należy również określić, czy połączonego cofania strict lub nieścisłym. Zachowanie non-strict połączonego cofania oznacza, że zamknąć niektóre dokumenty z połączonego cofania elementów równorzędnych i nadal pozostanie innych połączone cofanie elementów równorzędnych na ich stosów. Zachowanie Strict połączonego cofania Określa, że można cofnąć, razem lub w ogóle nie wszystkie stosy element równorzędny połączonego cofania. Dodaj kolejne połączone cofnięcie stosów, wywołując [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) metody.  
   
-3.  Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> wycofanie wszystkich jednostek połączonego cofania jako jeden.  
+3.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> konieczne przywrócenie początkowej kopii wszystkich jednostek połączonego cofania jako jeden.  
   
     > [!NOTE]
-    >  Aby zaimplementować Zarządzanie połączonego cofania w edytorze, Dodaj zarządzania cofania. Aby uzyskać więcej informacji na implementacji zarządzania połączonego cofania, zobacz [jak: Implementowanie zarządzania cofnąć](../extensibility/how-to-implement-undo-management.md).  
+    >  Aby zaimplementować Zarządzanie połączonego cofania w edytorze, Dodaj zarządzania cofania. Aby uzyskać więcej informacji dotyczących implementowania połączonego cofania zarządzania, zobacz [porady: Implementowanie cofania zarządzania](../extensibility/how-to-implement-undo-management.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   
- [Porady: Implementowanie zarządzania cofania](../extensibility/how-to-implement-undo-management.md)
+ [Porady: Implementowanie cofania zarządzania](../extensibility/how-to-implement-undo-management.md)

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie Opcje strony | Dokumentacja firmy Microsoft
+title: Tworzenie stronach opcji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,77 +14,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e05c5f2660adfe8d7a35c816e5f94706631c8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131291"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499481"
 ---
-# <a name="creating-options-pages"></a>Tworzenie stron opcje
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] framework zarządzanego pakietu pochodną klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, dodając **opcje** stron w obszarze **narzędzia** menu.  
+# <a name="create-options-pages"></a>Tworzenie stron opcji
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska pakietu zarządzanego klasy pochodne klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, dodając **opcje** strony w obszarze **narzędzia** menu.  
   
- Implementacja obiektu danego **opcji narzędzia** strona jest skojarzona z określonym VSPackages przez <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> obiektu.  
+ Implementowanie obiektu danego **opcji narzędzia** strona jest skojarzona z określonych pakietów VSPackage przy <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> obiektu.  
   
- Ponieważ środowisko tworzy obiekt zawierający implementację określonego **opcje narzędzia** strony po wyświetleniu IDE danej strony:  
+ Ponieważ środowisko tworzy obiekt implementujący określonego **opcje narzędzi** strony po wyświetleniu danej strony IDE:  
   
--   A **opcji narzędzia** strony powinny być implementowane we własnym obiekcie, a nie dla obiekt implementujący pakiet VSPackage.  
+-   A **opcji narzędzia** strony powinny zostać wdrożone na jego własnej obiektu, a nie na obiekt implementujący pakietu VSPackage.  
   
--   Obiekt nie implementuje wiele **opcje narzędzia** stron.  
+-   Obiekt nie może implementować wiele **opcje narzędzi** stron.  
   
-## <a name="registering-as-a-tools-options-page-provider"></a>Rejestrowanie dostawcy strony opcji narzędzi  
- Pakiet VSPackage obsługi konfiguracji użytkownika za pośrednictwem **opcje narzędzia** stron wskazuje obiekty, podając te **opcje narzędzia** stron, stosując wystąpienia <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> stosowane do <xref:Microsoft.VisualStudio.Shell.Package>implementacji.  
+## <a name="register-as-a-tools-options-page-provider"></a>Zarejestruj się jako dostawca strony opcji narzędzi  
+ Pakietu VSPackage pomocniczych konfiguracji użytkownika za pośrednictwem **opcje narzędzi** stron wskazuje obiektów zapewnia **opcje narzędzi** stron, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> dotyczą <xref:Microsoft.VisualStudio.Shell.Package>implementacji.  
   
- Musi być jedno wystąpienie <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> dla każdego <xref:Microsoft.VisualStudio.Shell.DialogPage>-pochodzi z typu, który implementuje **opcje narzędzia** strony.  
+ Musi mieć jedno wystąpienie <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> dla każdego <xref:Microsoft.VisualStudio.Shell.DialogPage>-pochodnych typu, który implementuje **opcje narzędzi** strony.  
   
- Każde wystąpienie <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> używa typu, który implementuje **opcje narzędzia** strony ciągi zawierające kategorii i podkategorii używany do identyfikowania **opcje narzędzia** strony i zasobów informacje, aby zarejestrować typ jako zapewniające **opcje narzędzia** strony.  
+ Każde wystąpienie <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> używa typ, który implementuje **opcje narzędzi** stronie ciągów, które zawierają kategorii i podkategorii używany do identyfikowania **opcje narzędzi** strony i zasobów informacje, aby zarejestrować typ jako zapewniające **opcje narzędzi** strony.  
   
-## <a name="persisting-tools-options-page-state"></a>Utrwalanie stanu strony opcji narzędzi  
- Jeśli **opcje narzędzia** implementacja strony jest zarejestrowany z włączoną obsługą automatyzacji, IDE utrwala stan strony wraz ze wszystkich innych **opcje narzędzia** stron.  
+## <a name="persist-tools-options-page-state"></a>Utrwalanie stanu strony opcji narzędzi  
+ Jeśli **opcje narzędzi** implementacja strony jest zarejestrowane w usłudze włączona obsługa automatyzacji, IDE utrzymuje stanu strony oraz wszystkich innych **opcje narzędzi** stron.  
   
- Pakiet VSPackage można zarządzać własną trwałości za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>. Można użyć tylko jednego lub innej metody trwałości.  
+ Pakietu VSPackage można zarządzać własną trwałości za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>. Należy używać tylko jednego lub inna metoda trwałości.  
   
-## <a name="implementing-dialogpage-class"></a>Implementacja elementu DialogPage — klasa  
- Obiekt dostarczający implementacja pakiet VSPackage <xref:Microsoft.VisualStudio.Shell.DialogPage>— Typ pochodny można korzystać z następujących funkcji dziedziczonych:  
+## <a name="implement-dialogpage-class"></a>Implementowanie klasy elementu DialogPage  
+ Obiekt dostarczający wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.DialogPage>-typu pochodnego korzystać z zalet dziedziczone następujące funkcje:  
   
 -   Domyślne okno interfejsu użytkownika.  
   
--   A domyślna mechanizmu stanu trwałego dostępne albo jeśli <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> jest stosowany do klasy, lub jeśli <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> właściwość jest ustawiona na `true` dla <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy zastosowano.  
+-   Element domyślny dostępnego mechanizmu stanu trwałego albo jeśli <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> jest stosowany do klasy, lub jeśli <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> właściwość jest ustawiona na `true` dla <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> mający zastosowanie do klasy.  
   
 -   Obsługa automatyzacji.  
   
- Minimalne wymagania dla obiekt implementacja **opcje narzędzia** strony <xref:Microsoft.VisualStudio.Shell.DialogPage> jest dodanie właściwości publiczne.  
+ Minimalne wymagania dotyczące implementowania obiektu **opcje narzędzi** strony <xref:Microsoft.VisualStudio.Shell.DialogPage> jest dodanie właściwości publiczne.  
   
- Jeśli klasa jest poprawnie zarejestrowany jako **opcje narzędzia** strony dostawcy, a następnie jego właściwości publiczne są dostępne na **opcje** sekcji **narzędzia** menu w formie siatki właściwości.  
+ Jeśli klasa jest prawidłowo zarejestrowana jako **opcje narzędzi** strony dostawcy, a następnie jego właściwości publiczne są dostępne na **opcje** części **narzędzia** menu w formie siatki właściwości.  
   
- Wszystkie te funkcje domyślne można przesłonić. Na przykład tworzenie bardziej zaawansowanych użytkownika interfejsu wymaga tylko zastępowanie domyślną implementację elementu <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+ Wszystkie te funkcje domyślne można przesłonić. Na przykład można utworzyć bardziej zaawansowane użytkownika interfejsu wymaga tylko zastępowanie domyślna Implementacja klasy <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Przykład  
- Poniżej jest proste implementacją "hello world" Opcje strony. Dodawanie następujący kod do projektu domyślnego utworzone przez szablon pakietu Visual Studio, z **polecenie** wybrana opcja zostanie odpowiednio pokazu funkcjonalności strony opcji.  
+ Poniżej jest implementacją proste "Hello world" na stronie opcji. Dodając następujący kod do projektu domyślne utworzone przez szablon pakietu Visual Studio za pomocą **polecenia Menu** wybrana opcja odpowiednio zademonstruje funkcji strony opcji.  
   
 ### <a name="description"></a>Opis  
- Następujące klasy definiuje minimalna strona Opcje "hello world". Po otwarciu, użytkownik może ustawić publicznego `HelloWorld` właściwość w siatce właściwości.  
+ Następujące klasy definiuje Strona opcji minimalnej "Hello world". Po otwarciu, użytkownik może ustawić publicznie `HelloWorld` właściwości w siatce właściwości.  
   
 ### <a name="code"></a>Kod  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
 ### <a name="description"></a>Opis  
- Stosowanie następującego atrybutu do klasy pakietu udostępnia opcje strony podczas ładowania pakietu. Liczby są dowolne identyfikatorów zasobów dla kategorii i strony, a wartość logiczną na końcu Określa, czy strona obsługuje automatyzacji.  
+ Stosowanie następujących atrybutów do klasy pakietu udostępnia opcje strony podczas ładowania pakietu. Liczby są dowolne identyfikatory zasobów dla kategorii i strony, a wartość logiczną na końcu Określa, czy strona obsługuje usługi automation.  
   
 ### <a name="code"></a>Kod  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
 ### <a name="description"></a>Opis  
- Następujące procedury obsługi zdarzeń wyświetla wynik w zależności od wartości właściwości wartości na stronie opcji. Używa <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> metody z wynikiem jawne Rzutowanie na typ strony opcja niestandardowa uzyskać dostęp do właściwości udostępnianych przez strony.  
+ Następujący program obsługi zdarzeń wyświetla wynik w zależności od wartości właściwości strony opcje. Używa ona <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> metody z wynikiem jawnie rzutowane na typ strony opcja niestandardowa uzyskiwania dostępu do właściwości udostępniane przez stronę.  
   
- W przypadku projektu generowane przez szablon pakietu, wywołanie tej funkcji z `MenuItemCallback` funkcji, aby dołączyć do polecenia domyślne dodane do **narzędzia** menu.  
+ W przypadku projektu generowane przez szablon pakietu, należy wywołać tę funkcję z `MenuItemCallback` funkcję, aby dołączyć go do domyślnego polecenia dodane do **narzędzia** menu.  
   
 ### <a name="code"></a>Kod  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
-## <a name="see-also"></a>Zobacz też  
- [Opcje i rozszerzanie ustawień użytkownika](../../extensibility/extending-user-settings-and-options.md)   
- [Obsługa automatyzacji dla stron opcji](../../extensibility/internals/automation-support-for-options-pages.md)
+## <a name="see-also"></a>Zobacz także  
+ [Rozszerzenie Opcje i ustawienia użytkownika](../../extensibility/extending-user-settings-and-options.md)   
+ [Automatyzacja obsługi dla stron opcji](../../extensibility/internals/automation-support-for-options-pages.md)

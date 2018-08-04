@@ -1,5 +1,5 @@
 ---
-title: Pobieranie czcionek i kolorów informacje dotyczące tekstu kolorowania | Dokumentacja firmy Microsoft
+title: Wprowadzenie czcionkę i kolor informacje dotyczące kolorowania tekstu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,40 +14,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c86e37d6d7da9da0a6b0978770bf7d7564fa19c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129699"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499702"
 ---
-# <a name="getting-font-and-color-information-for-text-colorization"></a>Pobieranie czcionek i kolorów informacje dotyczące tekstu kolorowania
-Proces, który renderuje lub wyświetla tekst kolorowane w elementy interfejsu użytkownika zależy od typu projektu, jego technologii i deweloperów preferencji. **Czcionki i kolory** ustawienia są przechowywane strony właściwości.
+# <a name="get-font-and-color-information-for-text-colorization"></a>Uzyskaj informacje czcionek i kolorów tekstu kolorowania
+Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach interfejsu użytkownika zależy od typu projektu, jego technologii i dla deweloperów preferencji. **Czcionki i kolory** strona właściwości są przechowywane ustawienia.
 
- Większości wdrożeń, zawierające tekst pokolorowane muszą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> i skojarzone interfejsy, dla ustawienia wyświetlania prezentacji, pobieranie i przechowywanie tekstu.
+ Większość implementacji, które są wyświetlane wyróżnione kolorem tekstu muszą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> i skojarzone interfejsy, dla ustawienia wyświetlania prezentacji, pobieranie i przechowywanie tekstu.
 
 > [!NOTE]
->  W przypadku dostosowywania edytora core (który obsługuje **EditorCategory tekst**), zaleca się używać technologii kolorowanie usługi języka. Aby uzyskać więcej informacji, zobacz [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md).
+>  Podczas dostosowywania podstawowy edytor (który obsługuje **EditorCategory tekstu**), zaleca się używać technologii kolorowanie usługi języka. Aby uzyskać więcej informacji, zobacz [Przegląd czcionek i kolorów](../extensibility/font-and-color-overview.md).
 
-## <a name="getting-default-font-and-color-information"></a>Pobieranie domyślnej czcionki i informacji o kolorze
- Wszystkie **czcionki i kolory** powinny być określone ustawienia okna Wyświetlanie tekstu w **wyświetlania elementów** jednego **kategorii**. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, opcje — Okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+## <a name="get-default-font-and-color-information"></a>Uzyskaj informacje czcionkę i kolor domyślny
+ Wszystkie **czcionki i kolory** należy określić ustawienia okna wyświetlania tekstu w **Wyświetle elementy** jednego **kategorii**. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
-Aby kolorowanie, pakiet VSPackage musi uzyskać bieżące **czcionki i kolory** ustawienia. Pakiet VSPackage mogą uzyskać bieżące ustawienia w następujący sposób, w zależności od jego potrzeb:
+Kolorować, pakietu VSPackage musi uzyskać bieżące **czcionki i kolory** ustawienia. Pakietu VSPackage mogą uzyskać bieżące ustawienia w następujący sposób, w zależności od jego potrzeb:
 
--   Użyj mechanizmu stanu trwałego czcionek i kolorów można pobrać przechowywane lub bieżącego stanu. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do przechowywanych czcionkę i ustawienia koloru](../extensibility/accessing-stored-font-and-color-settings.md).
+-   Użyj mechanizmu stanu trwałego czcionek i kolorów do pobrania przechowywanych lub bieżącego stanu. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu usługi, która zawiera dane czcionek i kolorów w celu uzyskania wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, jeśli pakiet VSPackage nie jest również dostawcy czcionek i kolorów.
+-   Użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu usługi, która udostępnia dane czcionek i kolorów, aby pobrać wystąpienie obiektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, jeśli pakietu VSPackage nie jest również dostawcy czcionek i kolorów.
 
 -   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
 
-Aby upewnić się, że wyniki uzyskane za pomocą sondowania znajdują się w górę do chwili, może być przydatne do użycia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do określenia, czy aktualizacja jest wymagana przed wywołaniem metody pobierania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
+Aby upewnić się, że wyniki uzyskane za pomocą sondowania znajdują się w górę do daty, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do określenia, czy aktualizacja jest wymagana przed wywołaniem metody pobierania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
 
-Po uzyskaniu informacji czcionek i kolorów, tekst, który ma być wyświetlane, aby zidentyfikować elementy, które wymagają kolorowania przeanalizować. Wyświetl tekst w oknie przy użyciu odpowiednich czcionek i kolorów.
+Po użytkownik uzyskał informacje czcionek i kolorów, tekst, który ma być wyświetlany w celu oznaczenia elementów, które wymagają kolorowanie przeanalizować. Wyświetlanie tekstu w oknie przy użyciu odpowiednich czcionek i kolorów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
-- [Używanie czcionek i tekstu](/dotnet/framework/winforms/advanced/using-fonts-and-text)
-- [Praca z kolorem](/cpp/windows/working-with-color-image-editor-for-icons)
+- [Użyj czcionek i tekstu](/dotnet/framework/winforms/advanced/using-fonts-and-text)
+- [Praca z kolorami](/cpp/windows/working-with-color-image-editor-for-icons)
 - [GDI (graficzny interfejs urządzenia)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

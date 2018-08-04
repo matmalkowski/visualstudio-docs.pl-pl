@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia | Dokumentacja firmy Microsoft
+title: Wyświetlanie plików za pomocą polecenia Otwórz za pomocą polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c708bb5a510748b08cac5b46b6829b908e74e0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6983e9ee7b7cc88efb4870ab0836b856621aeeee
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128623"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497531"
 ---
-# <a name="displaying-files-by-using-the-open-with-command"></a>Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia
-Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialogowe. To żądanie monituje użytkownika o otwarcie pliku, który ma wybór standardowe edytory. W poniższych krokach opisano tego procesu.  
+# <a name="display-files-by-using-the-open-with-command"></a>Wyświetlanie plików za pomocą polecenia Otwórz za pomocą
+Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialogowe. To żądanie monituje użytkownika o otwarcie pliku, który zawiera szereg standardowych edytorów. W poniższych krokach opisano tego procesu:  
   
-1.  Wywołania projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, określając wartość OSE_UseOpenWithDialog dla `OSEOpenDocEditor` parametru.  
+1.  Wywoływanych w projekcie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, określając wartość `OSE_UseOpenWithDialog` dla `OSEOpenDocEditor` parametru.  
   
-2.  Oparte na rozszerzenie nazwy pliku dokumentu, określa, które edytory wymienionych w rejestrze można otworzyć określonego dokumentu IDE i wyświetla te informacje w **Otwórz za pomocą** okno dialogowe.  
+2.  Oparte na rozszerzenie nazwy pliku dokumentu, IDE określa edytory, które się na liście mogą rejestru Otwórz określony dokument i wyświetla te informacje w **Otwórz za pomocą** okno dialogowe.  
   
     > [!NOTE]
-    >  Projekty, które edytora wewnętrzne, które muszą być zawarte w **Otwórz za pomocą** okno dialogowe Zarejestruj fabrykę edytora dla każdej z takich edytora. Edytory wewnętrzne tylko funkcji wraz z określonego typu projektu, który jest wymuszany w implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. IDE ma fabryki edytora wbudowanego edytora tekstów rdzeni i Edytor plików binarnych. IDE również tworzy wystąpienie fabryki edytora imieniu każdego zarejestrowanego skojarzenia plików systemu Windows. Przykładem takiego pliku jest program Microsoft Word.  
+    >  Projekty, które mają wewnętrzne edytor, który musi być uwzględniona w **Otwórz za pomocą** okno dialogowe, należy zarejestrować fabryki edytora dla każdego takiego edytora. Edytory wewnętrzne tylko funkcji wraz z określonego typu projektu, który jest wymuszany w implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. IDE ma fabrykę wbudowanego edytora podstawowy edytor tekstu i edytorze binarnym. IDE również tworzy wystąpienie fabryki edytora imieniu każdego zarejestrowane skojarzenie pliku Windows. Przykładem takiego pliku jest program Microsoft Word.  
   
-3.  Jak użytkownik wybiera element **Otwórz za pomocą** dokumentu zostanie otwarte okno dialogowe, następnie IDE przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody. Aby uzyskać więcej informacji, zobacz [porady: otwieranie standardowe edytory](../../extensibility/how-to-open-standard-editors.md).  
+3.  Zaraz po użytkownik wybierze element **Otwórz za pomocą** dokument zostanie otwarte okno dialogowe, następnie IDE, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody. Aby uzyskać więcej informacji, zobacz [porady: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)
+ [Porady: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)

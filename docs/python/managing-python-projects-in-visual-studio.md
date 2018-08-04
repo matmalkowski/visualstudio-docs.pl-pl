@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251757"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499022"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -44,7 +44,7 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 
 Podczas opracowywania aplikacji, zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików jest wykonywane przez kliknięcie prawym przyciskiem myszy projekt i wybierając polecenie **Dodaj** > **istniejący element** za pomocą którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj**  >  **Nowy element**, co spowoduje uruchomienie okna dialogowego za pomocą różnych szablonów elementów. Zgodnie z opisem na [elementu szablony](python-item-templates.md) odwołania, opcje obejmują pustych plików języka Python, klasa języka Python, testu jednostki i różne pliki powiązane z aplikacji sieci web. Możesz eksplorować tych opcji z projektem testowym, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
 
-Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu w trybie interaktywnym okno (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby je zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik startowy**.
+Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu **Interactive** okna (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby je zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik startowy**.
 
 > [!Tip]
 > Jeśli usuniesz plik startowy wybranego z projektu, a nie wybieraj nową, Visual Studio nie będzie wiedzieć, co Python pliku zaczynać podczas próby uruchomienia projektu. W takim przypadku Visual Studio 2017 w wersji 15.6 i nowszych wskazuje błąd; wcześniejszych wersjach albo otworzyć okno danych wyjściowych z interpreter języka Python, uruchamiania lub zobacz okno dane wyjściowe są wyświetlane, ale zniknąć niemal natychmiast. Jeśli wystąpi dowolne z tych zachowań, sprawdź, czy plik startowy przypisane.

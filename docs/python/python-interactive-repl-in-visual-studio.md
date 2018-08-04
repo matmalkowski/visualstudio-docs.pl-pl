@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db564dfb019525d929b21d74cf521f7b82046445
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468806"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499071"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 
@@ -103,7 +103,6 @@ Wprowadzanie `dir()` w zakresie Wyświetla prawidłowych identyfikatorów, w tym
 
 ![Okno interaktywne w zakresie importlib](media/interactive-importlib-scope.png)
 
-<a name="send-code-to-interactive-command"></a>
 ## <a name="send-to-interactive-command"></a>Wysyłać polecenie interaktywne
 
 Oprócz pracy w ramach **Interactive** okna bezpośrednio, można wybrać kod w edytorze, kliknij prawym przyciskiem myszy i wybierz polecenie **Wyślij do środowiska interaktywnego** lub naciśnij **Ctrl** + **Wprowadź**.

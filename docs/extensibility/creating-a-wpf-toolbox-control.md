@@ -1,5 +1,5 @@
 ---
-title: Tworzenie formantu przybornika WPF | Dokumentacja firmy Microsoft
+title: Tworzenie kontrolki przybornika WPF | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,37 +15,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b8bfbde2459998f13b8b19b17cfecba172538aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107806"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500335"
 ---
-# <a name="creating-a-wpf-toolbox-control"></a>Tworzenie formantu przybornika WPF
-Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak użyć szablonu, aby utworzyć **przybornika** kontroli, którą można dystrybuować do innych użytkowników.  
+# <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
+Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom.  
   
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-wpf-toolbox-control"></a>Tworzenie formantu przybornika WPF  
+## <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF  
   
-#### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Tworzenie rozszerzenia za pomocą formantu przybornika WPF  
+### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Tworzenie rozszerzenia za pomocą kontrolki przybornika WPF  
   
-1.  Tworzenie projektu VSIX o nazwie `MyToolboxControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1.  Utwórz projekt VSIX, o nazwie `MyToolboxControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
   
-2.  Po otwarciu projektu dodać **kontroli przybornika WPF** szablon elementu o nazwie `MyToolboxControl`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **kontroli przybornika WPF**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby `MyToolboxControl.cs`.  
+2.  Po otwarciu projektu, Dodaj **kontrolki przybornika WPF** szablon elementu o nazwie `MyToolboxControl`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **kontrolki przybornika WPF**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *MyToolboxControl.cs*.  
   
-     Rozwiązanie zawiera teraz kontrolkę użytkownika `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> dodaje formant **przybornika**, a **Microsoft.VisualStudio.ToolboxControl** pozycji zasobu w manifeście VSIX  wdrożenia.  
+     Rozwiązanie zawiera teraz kontrolkę użytkownika `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> , dodaje formant aby **przybornika**i **Microsoft.VisualStudio.ToolboxControl** wpis zawartości w manifestu VSIX  wdrożenie.  
   
-#### <a name="to-create-the-control-ui"></a>Można utworzyć formantu interfejsu użytkownika  
+#### <a name="to-create-the-control-ui"></a>Aby utworzyć formant interfejsu użytkownika  
   
-1.  Otwórz MyToolboxControl.xaml w projektancie.  
+1.  Otwórz *MyToolboxControl.xaml* w projektancie.  
   
-     Pokazuje projektanta <xref:System.Windows.Controls.Grid> formant, który zawiera <xref:System.Windows.Controls.Button> formantu.  
+     Projektant wyświetli <xref:System.Windows.Controls.Grid> kontrolkę zawierającą <xref:System.Windows.Controls.Button> kontroli.  
   
-2.  Rozmieść układ siatki. Po wybraniu <xref:System.Windows.Controls.Grid> kontrolować paski sterowania niebieski są wyświetlane na górnej i lewej krawędzi siatki. Poprzez kliknięcie można dodać do siatki wierszy i kolumn.  
+2.  Rozmieść elementy w układzie siatki. Po wybraniu <xref:System.Windows.Controls.Grid> kontrolować, paskami sterowania niebieski pojawiają się na górnej i lewej krawędzi siatki. Klikając słupki, można dodać wiersze i kolumny do siatki.  
   
-3.  Dodaj formanty podrzędne do siatki. Formant podrzędny można umieścić, przeciągając je z **przybornika** do sekcji siatki, albo ustawiając jego `Grid.Row` i `Grid.Column` atrybutów w kodzie XAML. W poniższym przykładzie dodano dwie etykiety w górnym wierszu siatki i element button w drugim wierszu.  
+3.  Dodaj formanty podrzędne do siatki. Można umieścić kontrolki podrzędnej, przeciągając go z **przybornika** do sekcji siatki lub przez ustawienie jego `Grid.Row` i `Grid.Column` atrybutów w XAML. Poniższy przykład dodaje dwie etykiety w górnym wierszu siatki i przycisk w drugim wierszu.  
   
     ```xaml  
     <Grid>  
@@ -55,16 +55,16 @@ Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia two
     </Grid>  
     ```  
   
-## <a name="renaming-the-control"></a>Zmiana nazwy formantu  
- Domyślnie formantu pojawią się w **przybornika** jako **MyToolboxControl** w grupę o nazwie **MyToolboxControl.MyToolboxControl**. Można zmienić ich nazwy w pliku MyToolboxControl.xaml.cs.  
+## <a name="renaming-the-control"></a>Zmiana nazwy kontrolki  
+ Domyślnie formant pojawi się w **przybornika** jako **MyToolboxControl** w grupie o nazwie **MyToolboxControl.MyToolboxControl**. Możesz zmienić te nazwy w *MyToolboxControl.xaml.cs* pliku.  
   
-1.  Otwórz MyToolboxControl.xaml.cs w widoku kodu.  
+1.  Otwórz *MyToolboxControl.xaml.cs* w widoku kodu.  
   
-2.  Znajdź klasy MyToolboxControl i zmień jego nazwę na TestControl. (Jest to najszybszy sposób, w tym celu można zmienić nazwy klasy, następnie wybierz **zmienić** z menu kontekstowego i wykonaj kroki. (Aby uzyskać więcej informacji na temat **zmienić** polecenia, zobacz [zmienić Refaktoryzacja (C#)](../ide/reference/rename.md).)
+2.  Znajdź `MyToolboxControl` klasy i zmień jego nazwę na TestControl. (Jest to najszybszy sposób, aby to zrobić, można zmienić nazwy klasy, następnie wybierz pozycję **Zmień nazwę** z menu kontekstowego i dokończyć procedurę. (Aby uzyskać więcej informacji na temat **Zmień nazwę** polecenia, zobacz [zmienić refaktoryzacji (C#)](../ide/reference/rename.md).)
   
-3.  Przejdź do `ProvideToolboxControl` atrybutu i zmień wartość pierwszy parametr **testu**. Jest to nazwa grupy, która będzie zawierać formant w **przybornika**.  
+3.  Przejdź do `ProvideToolboxControl` atrybutu, a następnie zmień wartość pierwszy parametr **testu**. Jest to nazwa grupy, która będzie zawierać formantu w **przybornika**.  
   
-     Wynikowy kod powinien wyglądać następująco:  
+     Po modyfikacji kod powinien wyglądać następująco:  
   
     ```csharp  
     [ProvideToolboxControl("Test", true)]  
@@ -77,27 +77,27 @@ Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia two
     }  
     ```  
   
-## <a name="building-testing-and-deployment"></a>Tworzenie, testowanie i wdrażanie  
- Podczas debugowania projektu, należy odnaleźć formantu zainstalowane w **przybornika** z eksperymentalne wystąpienie programu Visual Studio.  
+## <a name="build-test-and-deployment"></a>Kompilacja, testowanie i wdrażanie  
+ Podczas debugowania projektu, należy wyszukać kontroli zainstalowane w **przybornika** eksperymentalne wystąpienia programu Visual Studio.  
   
-#### <a name="to-build-and-test-the-control"></a>Tworzenie i testowanie formantu  
+### <a name="to-build-and-test-the-control"></a>Aby skompilować i przetestować formant  
   
-1.  Ponownie skompilować projekt i Rozpocznij debugowanie.  
+1.  Skompiluj ponownie projekt, a następnie rozpocząć debugowanie.  
   
-2.  W tym nowym wystąpieniu programu Visual Studio Utwórz projekt aplikacji WPF. Upewnij się, że projektant XAML jest otwarty.  
+2.  W wystąpieniu programu Visual Studio Utwórz projekt aplikacji WPF. Upewnij się, że projektant XAML jest otwarty.  
   
-3.  Znajdź formantu w **przybornika** i przeciągnij go na powierzchnię projektu.  
+3.  Znajdź formant w **przybornika** i przeciągnij go do powierzchni projektowej.  
   
-4.  Uruchom profilowanie aplikacji WPF.  
+4.  Rozpocznij debugowanie aplikacji WPF.  
   
-5.  Sprawdź, czy formant jest widoczny.  
+5.  Sprawdź, czy jest wyświetlany formantu.  
   
-#### <a name="to-deploy-the-control"></a>Aby wdrożyć formantu  
+### <a name="to-deploy-the-control"></a>Aby wdrożyć kontrolki  
   
-1.  Po utworzeniu projektu przetestowany plik .vsix można znaleźć w folderze \bin\debug\ projektu.  
+1.  Po skompilowaniu projektu przetestowane, można znaleźć *.vsix* w pliku * \bin\debug\* folderu projektu.  
   
-2.  Można zainstalować go na komputerze lokalnym przez dwukrotne kliknięcie pliku .vsix i wykonując procedurę instalacji. Aby odinstalować formantu, przejdź do **narzędzia / rozszerzenia i aktualizacje** i wyszukaj rozszerzenie sterowania, a następnie kliknij przycisk **Odinstaluj**.  
+2.  Można zainstalować na komputerze lokalnym przez dwukrotne kliknięcie *.vsix* plików i procedury instalacji. Aby odinstalować kontrolki, przejdź do **narzędzia** > **rozszerzenia i aktualizacje** i poszukaj rozszerzeń kontroli, a następnie kliknij przycisk **Odinstaluj**.  
   
-3.  Przekaż plik .vsix z siecią lub do witryny sieci Web.  
+3.  Przekaż *.vsix* plików do sieci lub do witryny sieci Web.  
   
-     Jeśli można przekazać pliku do [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć innych użytkowników **narzędzia / rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu w trybie online i zainstalować go.
+     Jeśli załadujesz plik [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć w innym użytkownikom **narzędzia** > **rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu online i zainstaluj go.

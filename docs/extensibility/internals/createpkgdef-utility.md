@@ -1,5 +1,5 @@
 ---
-title: Narzędzie elementu CreatePkgDef | Dokumentacja firmy Microsoft
+title: Narzędzie CreatePkgDef | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,45 +16,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135794"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500699"
 ---
-# <a name="createpkgdef-utility"></a>Narzędzie elementu CreatePkgDef
-Plik DLL rozszerzenia programu Visual Studio jako parametr przyjmuje i tworzy plik .pkgdef towarzyszące biblioteki dll. Plik .pkgdef zawiera wszystkie informacje, które w przeciwnym razie będzie zapisany w rejestrze systemu, gdy rozszerzenie jest zainstalowane.  
+# <a name="createpkgdef-utility"></a>Narzędzie CreatePkgDef
+Pobiera plik .dll dla rozszerzenia programu Visual Studio, jako parametr i tworzy *.pkgdef* pliku, który towarzyszy *.dll* pliku. *.Pkgdef* plik zawiera wszystkie informacje, które w przeciwnym razie powinny być zapisane w rejestrze systemu, gdy rozszerzenie jest zainstalowane.  
   
 > [!NOTE]
->  Większość szablonów projektu, które znajdują się w programie Visual Studio SDK automatycznie Utwórz pliki .pkgdef jako część procesu kompilacji. Ten dokument jest przeznaczony dla osób chcących tworzyć pakiety ręcznie lub przekonwertować istniejące pakiety przy użyciu .pkgdef wdrażania.  
+>  Większość szablonów projektu, które są objęte zestawu SDK programu Visual Studio automatycznie utworzyć *.pkgdef* pliki jako część procesu kompilacji. Ten dokument jest przeznaczony dla osób, które chcesz ręcznie tworzyć pakiety lub konwertowania istniejących pakietów do użycia *.pkgdef* wdrożenia.  
   
 ## <a name="syntax"></a>Składnia  
   
 ```  
-CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
+CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>  
 ```  
   
 ## <a name="arguments"></a>Argumenty  
- / out =`FileName`  
- Wymagany. Ustawia nazwę pliku wyjściowego .pkgdef do`FileName`.  
+ **/ out =&lt;nazwy pliku&gt;**  
+ Wymagane. Ustawia nazwę *.pkgdef* plik wyjściowy będzie &lt;FileName&gt;.  
   
- /codebase  
- Opcjonalny. Wymusza rejestracja za pomocą narzędzia CodeBase.  
+ **/ codebase**  
+ Opcjonalna. Wymusza rejestrację przy użyciu **CodeBase** narzędzia.  
   
- / Assembly  
- Wymusza rejestrację przy użyciu narzędzia do zestawu.  
+ **/ Assembly**  
+ Wymusza rejestrację przy użyciu **zestawu** narzędzia.  
   
- `AssemblyPath`  
- Ścieżka pliku dll, z którego chcesz wygenerować .pkgdef.  
+ **&lt;Ścieżkazestawu&gt;**  
+ Ścieżka *.dll* pliku, z którego chcesz wygenerować *.pkgdef*.  
   
 ## <a name="remarks"></a>Uwagi  
- Rozszerzenie wdrożenia przy użyciu plików .pkgdef zamienia wymagania rejestru wcześniejszych wersji programu Visual Studio.  
+ Rozwój rozszerzeń przy użyciu *.pkgdef* plików zastępuje wymagania rejestru wcześniejszych wersji programu Visual Studio.  
   
- Pliki .pkgdef muszą być zainstalowane w jednym z następujących lokalizacji: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ lub %vsinstalldir%\Common7\IDE\Extensions\\. Jeśli folder instalacji to %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, rozszerzenie zostanie rozpoznany przez program Visual Studio, ale będzie domyślnie wyłączone. Użytkownika można włączyć rozszerzenia przy użyciu **rozszerzenia i aktualizacje**. Jeśli folder instalacji to %vsinstalldir%\Common7\IDE\Extensions\\, rozszerzenie jest domyślnie włączona.  
+ *.Pkgdef* pliki muszą być zainstalowane w jednym z następujących lokalizacji: 
+
+ - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+ 
+ - *%vsinstalldir%\Common7\IDE\Extensions\\*
+    
+ Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, rozszerzenie zostanie rozpoznane przez program Visual Studio, ale zostanie domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **rozszerzenia i aktualizacje**. 
+   
+ Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerzenie jest domyślnie włączona.  
   
 > [!NOTE]
->  **Rozszerzenia i aktualizacje** narzędzia nie można uzyskać dostępu do rozszerzenia, chyba że jest zainstalowana jako część pakietu VSIX.  
+>  **Rozszerzenia i aktualizacje** narzędzie nie może służyć do dostępu do rozszerzenia, chyba, że jest zainstalowany jako część pakietu VSIX.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

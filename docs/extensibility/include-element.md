@@ -1,5 +1,5 @@
 ---
-title: Include Element | Dokumentacja firmy Microsoft
+title: Umieść Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189bac6ed410177a615c85abb5be02302030d19b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133309"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498931"
 ---
-# <a name="include-element"></a>Umieść Element
-Include element Określa plik, który może znajdować się na podane obejmują ścieżki w celu wstawienia go do bieżącego pliku.  Wszystkie symbole i typy zdefiniowane staną się częścią skompilowanych wyniku.  
+# <a name="include-element"></a>Umieść element
+Include element Określa plik, który może znajdować się w podanym ścieżkę załączania dla wstawiania do bieżącego pliku.  Wszystkie symbole i typy zdefiniowane staną się częścią wynik.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,8 +39,8 @@ Include element Określa plik, który może znajdować się na podane obejmują 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|href|Wymagany. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|href|Wymagane. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
@@ -52,7 +52,7 @@ Include element Określa plik, który może znajdować się na podane obejmują 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Wszystkie elementy, które reprezentują polecenia definiuje — to znaczy elementy menu, menu Paski narzędzi i pola kombi — udostępniająca pakiet VSPackage IDE.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń — czyli elementy menu, menu, paski narzędzi i pola kombi — zapewniającej pakietu VSPackage IDE.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -60,5 +60,5 @@ Include element Określa plik, który może znajdować się na podane obejmują 
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

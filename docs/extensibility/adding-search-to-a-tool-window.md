@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152529"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498567"
 ---
 # <a name="add-search-to-a-tool-window"></a>Dodawanie wyszukiwania do okna narzędzi
 Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz dodać te same funkcje wyszukiwania, który pojawia się gdzie indziej w programie Visual Studio. Ta funkcja obejmuje następujące funkcje:  
@@ -33,7 +33,7 @@ Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz doda
   
 -   Możliwość filtrowania wyszukiwania według określonych pól lub aspektów celów wyszukiwania.  
   
- Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:  
+Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:  
   
 1.  Tworzenie projektu pakietu VSPackage.  
   

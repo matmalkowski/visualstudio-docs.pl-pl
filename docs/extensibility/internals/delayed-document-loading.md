@@ -11,58 +11,59 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134447"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500371"
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
-Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojarzone dokumenty nie są ładowane bezpośrednio. Ramki okna dokumentu jest tworzony w stanie oczekiwania inicjowania i dokument symbolu zastępczego (o nazwie ramki stub) znajduje się w tabeli systemem dokumentu (Normalizacją).  
+Po użytkownik ponownie otwiera rozwiązanie programu Visual Studio, większość skojarzone dokumenty nie będą ładowane bezpośrednio. Ramka okna dokumentu jest tworzony w stanie oczekiwania na zainicjowanie, a dokument symbolu zastępczego (o nazwie ramki wycinka) znajduje się w tabeli systemem dokumentu (Normalizacją).  
   
- Rozszerzenie może spowodować dokumentów projektu mają być niepotrzebnie załadowane przed załadowaniem, badając elementy w dokumentach. Może to zwiększyć ogólną zużycie pamięci dla programu Visual Studio.  
+Rozszerzenie może spowodować dokumenty projektu mają być załadowane niepotrzebnie, badając elementy w dokumentach, zanim zostały wczytane, co może zwiększyć ogólną zużycie pamięci dla programu Visual Studio.  
   
 ## <a name="document-loading"></a>Ładowanie dokumentu  
- Stub ramki i zarządzania dokumentami są w pełni zainicjowany gdy użytkownik uzyskuje dostęp do dokumentu, na przykład po wybraniu karty ramki okna. Dokument również mogą być inicjowane przez rozszerzenie żądań dane dokumentu, uzyskiwanie dostępu do Normalizacją bezpośrednio uzyskać dane dokumentu lub uzyskiwanie dostępu do Normalizacją pośrednio, wykonując jedną z następujących wywołania:  
+W dokumencie i ramki wycinka są w pełni zainicjowany po użytkownik uzyskuje dostęp do dokumentu, na przykład, wybierając kartę ramki okna. Dokument, również mogą być inicjowane przez rozszerzenie, który żąda danych dokumentu, uzyskiwanie dostępu do Normalizacją bezpośrednio w celu uzyskania danych dokumentu lub uzyskiwanie dostępu do Normalizacją pośrednio poprzez określenie jednego z następujących połączeń:  
   
--   Ramki okna Pokaż metody: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>.  
+- Ramka okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metody.  
   
--   Metoda GetProperty ramki okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> na dowolnym z następujących właściwości:  
+- Ramka okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodę na dowolne z następujących właściwości:  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
- Jeśli rozszerzenie korzysta z kodu zarządzanego, należy nie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> chyba że masz pewność, że dokument nie jest w stanie oczekiwania na zainicjowanie lub dokument, który ma być w pełni zainicjowany. Jest to, ponieważ ta metoda zawsze zwraca dokumentów obiektu danych, w razie potrzeby go utworzyć. Zamiast tego należy wywołać jednej z metod interfejsu IVsRunningDocumentTable4.  
+- Jeśli rozszerzenie używa kodu zarządzanego, nie należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> chyba że masz pewność, że dokument nie jest w stanie oczekiwania inicjowania lub dokument, który ma zostać w pełni zainicjowany. Ponieważ metoda ta zwraca zawsze dokumentów obiektu danych, tworzenie jej, jeśli jest to konieczne. Zamiast tego należy wywołać jedną z metod na `IVsRunningDocumentTable4` interfejsu.  
   
- Jeśli rozszerzenie używa języka C++, można przekazać `null` nie ma parametrów.  
+- Jeśli rozszerzenie używa języka C++, można przekazać `null` parametrów nie chcesz.  
   
- Ładowanie dokumentu niepotrzebnych można uniknąć, wywołując jedną z następujących metod, aby uzyskać odpowiednie właściwości: Aby uzyskać inne właściwości.  
+- Możesz uniknąć niepotrzebnych dokumentu załadowanie, wywołując jedną z następujących metod przed skontaktowaniem się odpowiednie właściwości przed skontaktowaniem się inne właściwości:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiekt, który zawiera wartość dla <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
+   - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiektu, który zawiera wartość <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
   
- Można dowiedzieć się, gdy dokument został załadowany przez subskrybowanie zdarzeń Normalizacją, które jest wywoływane, gdy dokument jest w pełni zainicjowany. Dostępne są dwie możliwości:  
+Użytkownik może ustalić, kiedy dokument został załadowany przez subskrypcję zdarzenia Normalizacją, które jest wywoływane, gdy dokument jest w pełni zainicjowany. Istnieją dwie możliwości:  
   
--   Jeśli obiekt sink zdarzenia implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>, będzie możliwe subskrybowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>,  
+- Jeśli obiekt sink zdarzenia implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>, możesz zasubskrybować <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>,  
   
--   W przeciwnym razie można subskrybować <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
+- W przeciwnym razie możesz zasubskrybować <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
   
- Poniżej przedstawiono scenariusz dostępu hipotetyczny dokumentu. Visual Studio rozszerzenia mają być wyświetlane informacje o otwarte dokumenty, na przykład Edycja blokada liczby i coś o danych dokumentu. Wylicza go dokumentów za pomocą Normalizacją <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> dla każdego dokumentu w celu pobrania danych dokumentu i liczba blokady edycji. Jeśli dokument jest w stanie oczekiwania na zainicjowanie, żąda danych dokumentu powoduje, że na można zainicjować niepotrzebnie.  
+
+ Poniższy przykład przedstawia scenariusz dostęp do dokumentu hipotetyczny: rozszerzenie programu Visual Studio chce, aby wyświetlał niektóre informacje na temat otwartych dokumentów, na przykład Edycja blokady liczbę i coś o danych dokumentu. Wylicza dokumentów za pomocą Normalizacją <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, następnie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> dla każdego dokumentu w celu pobrania danych i liczba dokumentów blokady edycji. Jeśli dokument jest w stanie oczekiwania na zainicjowanie, żąda danych dokumentu powoduje, że na inicjację niepotrzebnie.  
   
- Bardziej wydajny sposób zrobić, to jest użycie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> Pobierz liczbę blokad edycji, a następnie użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> ustalenie, czy dokument został zainicjowany. Jeśli nie ma flagi <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, dokument został już zainicjowany i żąda danych dokumentu z <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> nie powoduje, że wszystkie zbędne inicjowania. Jeśli dołączysz flagi <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, rozszerzenia należy unikać żąda danych dokumentu, dopóki dokument został zainicjowany. Można to wykryć OnAfterAttributeChange(Ex) programu obsługi zdarzeń.  
+ Bardziej efektywne sposobem uzyskiwania dostępu do dokumentu jest użycie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> Pobierz liczbę blokad edycji, a następnie użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> do określenia, czy dokument został zainicjowany. Jeśli nie ma flagi <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, dokument został już zainicjowany oraz za dane dokumentu z <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> nie powoduje, że wszelkie niepotrzebne inicjowania. Jeśli zawiera flagi <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, rozszerzenia należy unikać wnioskujące o udostępnienie danych dokumentów, dopóki nie zainicjowano dokumentu. Ten proces inicjowania może zostać wykryte w `OnAfterAttributeChange(Ex)` programu obsługi zdarzeń.  
   
-## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Testowanie rozszerzeń, aby zobaczyć wymusić inicjowania  
- Nie ma żadnych widocznych oznak aktywacji wskazująca, czy dokument został zainicjowany, dlatego może być trudne dowiedzieć się, jeśli rozszerzenie jest wymuszenie inicjowania. Można ustawić klucz rejestru, który ułatwia weryfikacji, ponieważ powoduje ona tytuł każdego dokumentu, który nie jest w pełni zainicjowany tekstu `[Stub]` w tytule.  
+## <a name="test-extensions-to-see-if-they-force-initialization"></a>Testowanie rozszerzeń, aby zobaczyć, wymusić inicjowania  
+ Nie ma żadnych widoczne sygnalizacji, aby wskazać, czy dokument został zainicjowany, dzięki czemu może być trudne dowiedzieć się, jeśli rozszerzenie jest wymuszenie inicjowania. Można ustawić klucz rejestru, który ułatwia weryfikacji, ponieważ sprawia, że tytuł każdego dokumentu, który nie jest w pełni zainicjowany do nazwy zawierają tekst *[Stub]* w tytule.  
   
- W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ustaw **StubTabTitleFormatString** do **{0} [Stub]**.
+ W **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**ustaw **StubTabTitleFormatString** do  *{0} [Stub]*.

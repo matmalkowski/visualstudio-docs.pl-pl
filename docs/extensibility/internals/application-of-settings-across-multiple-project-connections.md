@@ -1,5 +1,5 @@
 ---
-title: Stosowanie ustawień przez wiele połączeń projektu | Dokumentacja firmy Microsoft
+title: Stosowanie ustawień do wielu połączeń projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129209"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500046"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień przez wiele połączeń projektu
-Wtyczka do kontroli źródła utworzony za pomocą 1.2 interfejsu API dodatku typu Plug-in kontroli źródła, można użyć do wykonania tej samej operacji kontroli źródła dla wielu projektów lub wielu kontekstów połączenia operacji zbiorczej. Partie można wyeliminować nadmiarowego, okien dialogowych z doświadczenia użytkownika projektu.  
+# <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień do wielu połączeń projektu
+Wtyczka do kontroli źródła utworzone przy użyciu źródła kontrolki wtyczki interfejsu API w wersji 1.2, można użyć operacji zbiorczej do wykonania tych samych operacji kontroli źródła, między wieloma projektami lub wielu kontekstach połączenia. Partie można wyeliminować nadmiarowy, okna dialogowe od środowiska użytkownika projektu.  
   
- Jeśli użytkownik wybierze wiele elementów, które należą do więcej niż jedno połączenie dodatku plug-in kontroli źródła utworzony za pomocą 1.1 interfejsu API dodatku typu Plug-in kontroli źródła o (na przykład dwa projekty sieci Web na maszynach inny udział plików) i sprawdza je, użytkownik zobaczy tego samego okno dialogowe wielokrotnie. Dzieje się tak nawet wtedy, gdy użytkownik kliknie **Zastosuj do wszystkich** Sprawdź pola w oknie dialogowym, ponieważ IDE resetuje stanu dla każdego połączenia kontekstu.  
+ Jeśli użytkownik umożliwia zaznaczenie wielu elementów, które należą do więcej niż jedno połączenie wtyczki kontroli źródła i utworzone przy użyciu źródła kontrolki wtyczki API wersji 1.1 (na przykład dwa projekty sieci web na maszynach inny udział plików) i sprawdza, czy je automatycznie, użytkownik zobaczy takie same okno dialogowe wielokrotnie. W tym scenariuszu występuje nawet wtedy, gdy użytkownik kliknie **Zastosuj do wszystkich** w oknie oknie dialogowym, ponieważ IDE resetuje stanu dla każdego kontekstu połączenia.  
   
-## <a name="new-capability-flag"></a>Nowe możliwości flagi  
- `SccBeginBatch` Zestawy funkcji `SCC_CAP_BATCH` Flaga do wskazywania wsadową operację w toku  
+## <a name="new-capability-flag"></a>Nową flagę funkcji  
+ `SccBeginBatch` Funkcji zestawy `SCC_CAP_BATCH` flagi, aby wskazać, że trwa wykonywanie operacji przetwarzania wsadowego.  
   
 ## <a name="new-functions"></a>Nowe funkcje  
- Następujące nowe funkcje obsługi operacji zbiorczej:  
+Następujące nowe funkcje obsługi operacji zbiorczej:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+
   
- `SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch` Zamyka grupy. Grupy nie mogą być zagnieżdżone.  
+`SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch` Funkcja zamyka grupy. Grupy nie mogą być zagnieżdżone.  
   
-## <a name="see-also"></a>Zobacz też  
- [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Zobacz także  
+ [What's new in źródła kontrolki wtyczki API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

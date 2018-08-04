@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a096e79a64168f74150103a5f3ba3a8683fe184e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 582dc76bfd8b76ffa4d3664ab3e28f95fe2cef50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126760"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500017"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-Określa flagi hosta IntelliSense.  
+Określa flagi hosta funkcji IntelliSense.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,18 +39,18 @@ enum IntellisenseHostFlags
 };  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
   
 |Elementy członkowskie|Opis|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|Kontekst bufor jest tylko do odczytu.|  
-|`IHF_NOSEPARATESUBJECT`|Brak tekstu podmiotu. Buforu kontekstu zawiera IntelliSense docelowego (oznacza `!IHF_READONLYCONTEXT`).|  
-|`IHF_SINGLELINESUBJECT`|Tekst tematu nie jest kilku-wiersza funkcją.|  
+|`IHF_READONLYCONTEXT`|Buforu kontekstu jest tylko do odczytu.|  
+|`IHF_NOSEPARATESUBJECT`|Nie tekstu tematu. Bufor kontekst zawiera docelowy IntelliSense (implikuje `!IHF_READONLYCONTEXT`).|  
+|`IHF_SINGLELINESUBJECT`|Tekst tematu nie jest wielu-wiersza obsługą.|  
 |`IHF_FORCECOMMITTOCONTEXT`|Taki sam jak `CanCommitIntoReadOnlyBuffer`.|  
-|`IHF_OVERTYPE`|Edytowanie (w temacie lub w kontekście) powinno być wykonywane w trybie zastępowania.|  
+|`IHF_OVERTYPE`|Edytowanie (podmiotu lub w kontekście) ma się odbywać w trybie zastępowania.|  
   
 ## <a name="requirements"></a>Wymagania  
  SingleFileeditor.idl  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

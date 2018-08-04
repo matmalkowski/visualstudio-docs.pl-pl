@@ -1,5 +1,5 @@
 ---
-title: Fullclassname — Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
+title: FullClassName, Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc76c12570191e8b7b4635b8963f16aa4d21c13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127676"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498370"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName Element (Visual Studio Template Wizard Extension)
-Pełna nazwa klasy, która implementuje `IWizard` interfejsu.  
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, element (rozszerzenie Kreatora szablonów programu Visual Studio)
+W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.  
   
  \<VSTemplate>  
  \<Wizardextension — >  
  ...  
- \<Fullclassname — >  
+ \<FullClassName >  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
@@ -54,13 +54,13 @@ Pełna nazwa klasy, która implementuje `IWizard` interfejsu.
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Ten tekst Określa klasę, która implementuje `IWizard` interfejsu. Określona klasa musi istnieć w zestawie określony przez [zestawu](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elementu.  
+ Ten tekst Określa klasę, która implementuje `IWizard` interfejsu. Określona klasa muszą znajdować się w zestawie określonym przez [zestawu](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elementu.  
   
 ## <a name="remarks"></a>Uwagi  
- `FullClassName` jest elementem podrzędnym wymagane `WizardExtension`.  
+ `FullClassName` jest wymaganym elementem podrzędnym elementu `WizardExtension`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadane szablonu projektu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.  
+ W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -90,7 +90,7 @@ Pełna nazwa klasy, która implementuje `IWizard` interfejsu.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
+ [Porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

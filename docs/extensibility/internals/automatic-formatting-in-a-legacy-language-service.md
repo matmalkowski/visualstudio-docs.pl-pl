@@ -1,5 +1,5 @@
 ---
-title: Automatyczne formatowanie starsza wersja usługi języka | Dokumentacja firmy Microsoft
+title: Automatyczne formatowanie w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e052c62afcf9551cc54373da15071fb3903fe950
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56910a984fabb3ac4825fd438be17745126692a6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126703"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500673"
 ---
-# <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatyczne formatowanie starsza wersja usługi języka
-Z automatycznego formatowania usługi języka automatycznie wstawia fragment kodu, gdy użytkownik rozpoczyna wpisz konstrukcję kodu znane.  
+# <a name="automatic-formatting-in-a-legacy-language-service"></a>Formatowanie automatyczne w starszej wersji usługi językowej
+Automatyczne formatowanie usługi językowej automatycznie wstawia fragment kodu po użytkownik rozpoczyna wpisz konstrukcję kodu znane.  
   
 ## <a name="automatic-formatting-behavior"></a>Zachowanie automatyczne formatowanie  
- Na przykład po wpisaniu `if`, usługa języka automatycznie wstawia pasujących nawiasów klamrowych lub po naciśnięciu klawisza ENTER usługi języka wymusza punkt wstawiania w nowym wierszu poziomu wcięcia odpowiednie, w zależności od tego, czy poprzednie wiersz otwiera nowy zakres.  
+ Na przykład podczas wpisywania *Jeśli*, usługa językowa automatycznie wstawi pasujące nawiasy klamrowe, lub jeśli naciśniesz klawisz ENTER, usługa językowa wymusza punkt wstawiania w nowym wierszu poziomu właściwe wcięcia, w zależności od czy poprzedni wiersz otwiera nowy zakres.  
   
- Filtr polecenia używane w pozostałej części usługi języka można również automatycznego formatowania. Można też wyróżnić pasujących nawiasów klamrowych, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.  
+ Filtr polecenia używana w pozostałej części usługi językowej można również automatycznego formatowania. Można również wyróżnić pasujące nawiasy klamrowe, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)

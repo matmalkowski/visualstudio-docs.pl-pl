@@ -1,5 +1,5 @@
 ---
-title: Tworzenie usługi języka starszych | Dokumentacja firmy Microsoft
+title: Tworzenie starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,52 +19,52 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cf384a22429c6314bf5e2fcbb66db7974d42c87
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129855"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497833"
 ---
-# <a name="developing-a-legacy-language-service"></a>Tworzenie usługi języka starsza wersja
-Ta sekcja łącza do tematów, które ułatwiają tworzenie usługi starszej wersji języka.  
+# <a name="develop-a-legacy-language-service"></a>Tworzenie starszej wersji usługi językowej
+Sekcja Łącze do tematów, które ułatwiają tworzenie starszej wersji usługi językowej.  
   
- Usługi w starszej wersji języka są zaimplementowane jako część pakiet VSPackage, ale jest nowsza sposób implementowania funkcji usługi języka Aby korzystać z rozszerzeń MEF. Aby dowiedzieć się więcej o nowy sposób wdrożenia usługi języka, zobacz [edytora i rozszerzenia usługi języka](../../extensibility/editor-and-language-service-extensions.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [Edytor i język rozszerzenia usługi](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Zaleca się zacząć Edytor nowy interfejs API tak szybko, jak to możliwe. Spowoduje to poprawić wydajność usługi języka i pozwala korzystać z nowych funkcji edytora.  
+>  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Model starszej wersji usługi językowej](../../extensibility/internals/model-of-a-legacy-language-service.md)  
- Udostępnia model usługi minimalnego języka dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] core edytora. Ten model jako przewodnik służy do tworzenia usługi języka.  
+ Udostępnia model usługi minimalny języka na potrzeby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Ten model jako przewodnik służy do tworzenia usługi języka.  
   
- [Interfejsy starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-interfaces.md)  
- W tym artykule omówiono obiekty wymagane do wdrożenia usługi języka i zawiera listę dodatkowych obiektów, które służy do zapewnienia wyróżnianie składni, Metoda danych i inne funkcje.  
+ [Interfejsy usługi starszego języka](../../extensibility/internals/legacy-language-service-interfaces.md)  
+ Omówiono obiekty wymagane do wykonania usługi językowej i listę dodatkowe obiekty, które służy do wyróżniania składni, Metoda danych i innych funkcji.  
   
- [Przechwytywanie poleceń starszej wersji usługi językowej](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
- Opisuje sposób wstawiania filtr polecenia do usługi języka do przechwycenia poleceń, które w przeciwnym razie będzie obsługiwać widoku tekstu.  
+ [Przechwytywanie poleceń usługi starszego języka](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
+ Opisuje sposób wstawić filtr polecenia do usługi języka do poleceń intercept, które widoku tekstu w przeciwnym razie będzie obsługiwać.  
   
- [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service2.md)  
- Zawiera informacje o tym, jak zarejestrować usługi języka przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md)  
+ Zawiera informacje o tym, jak zarejestrować usługi w języka przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)  
- W tym artykule opisano, jak usługa języka zapewniają funkcje do obsługi debugera.  
+ W tym artykule opisano, jak usługa języka może zapewnić funkcji obsługi debugera.  
   
- [Lista kontrolna: tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
- Instrukcje krok po kroku dotyczące tworzenia i Integrowanie usługi języka edytora core.  
+ [Lista kontrolna: Tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ Instrukcje krok po kroku dotyczące tworzenia i integrowania usługi języka dla podstawowy edytor.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- W tym artykule omówiono implementowania wyróżnianie składni w usłudze języka.  
+ W tym artykule omówiono sposób implementacji, wyróżnianie składni w usłudze języka.  
   
  [Uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- W tym artykule omówiono uzupełniania instrukcji, proces, za pomocą którego usługa języka umożliwia użytkownikom Zakończ element, który zostały uruchomione, wpisując lub słowo kluczowe języka.  
+ W tym artykule omówiono uzupełniania instrukcji, proces, za pomocą którego usługa języka ułatwiają zakończyć słowem kluczowym języka lub element, który zostały uruchomione, wpisując.  
   
- [Informacje o parametrach w starsza wersja usługi języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- Opisuje sposób zapewnienia porady metody przeciążonej funkcji i metod.  
+ [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
+ W tym artykule opisano, jak zapewnić porady metodę dla przeciążonej funkcji i metod.  
   
- [Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- Objaśnienie jego przeznaczenia obszaru tekstu ukrytego i zawiera instrukcje dotyczące sposobu wdrażania region tekstu ukrytego.  
+ [Porady: Podaj tekst ukryty obsługi w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ Zawiera wyjaśnienie przeznaczenia obszaru tekstu ukrytego i zawiera instrukcje dotyczące sposobu implementacji region tekstu ukrytego.  
   
  [Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Opisano dwie opcje rozszerzających zwijania obsługę języka poza obsługi *Zwiń definicji* polecenia.
+ Opisano dwie opcje, które rozszerzają obsługi zwijania dla danego języka, poza obsługi *Zwiń do definicji* polecenia.

@@ -1,5 +1,5 @@
 ---
-title: Witaj świecie | Dokumentacja firmy Microsoft
+title: Witaj, świecie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,73 +9,73 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c531d8acddfebcd2656d6dca05b95244f54ec01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134811"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499568"
 ---
-# <a name="creating-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Witaj świecie
+# <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Hello World
 
-W tym przykładzie Hello World przeprowadzi Cię przez proces tworzenia pierwszej rozszerzenia dla programu Visual Studio. Ten samouczek przedstawia sposób dodawania nowego polecenia dla programu Visual Studio.
+W tym przykładzie Hello World przeprowadzi Cię przez tworzenie pierwszego rozszerzenia dla programu Visual Studio. Ten samouczek przedstawia sposób dodawania nowego polecenia do programu Visual Studio.
 
 W procesie, dowiesz się jak:
 
-* **[Utwórz projekt rozszerzalności](#create-an-extensibility-project)**
-* **[Dodawanie polecenia niestandardowego](#add-a-custom-command)**
+* **[Utwórz projekt rozszerzenia](#create-an-extensibility-project)**
+* **[Dodaj polecenie niestandardowe](#add-a-custom-command)**
 * **[Modyfikowanie kodu źródłowego](#modify-the-source-code)**
 * **[Uruchom go](#run-it)**
 
-Na przykład użyjesz Visual C# do dodania przycisku menu niestandardowe o nazwie "Powiedzieć Hello World!" która wygląda następująco:
+W tym przykładzie użyjemy Visual C# można dodać niestandardowe menu przycisku o nazwie "Powiedz Hello World!" który wygląda następująco:
 
 ![Witaj świecie polecenia](media/hello-world-say-hello-world.png)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed rozpoczęciem, upewnij się, że zainstalowana **tworzenia rozszerzenia programu Visual Studio** obciążenia, w tym szablonie VSIX będzie konieczne i przykładowy kod.
+Przed rozpoczęciem upewnij się, że zainstalowano **programowanie rozszerzeń programu Visual Studio** obciążenia, który zawiera szablon VSIX, będzie konieczne i przykładowy kod.
 
-Uwaga: Możesz użyć dowolnej wersji programu Visual Studio (Community, Professional lub Enterprise), aby utworzyć projekt Visual Studio Extensibility.
+Uwaga: Możesz użyć dowolnej wersji programu Visual Studio (Community, Professional lub Enterprise), aby utworzyć projekt rozszerzeń programu Visual Studio.
 
-## <a name="create-an-extensibility-project"></a>Utwórz projekt rozszerzalności
+## <a name="create-an-extensibility-project"></a>Utwórz projekt rozszerzenia
 
 Krok 1. Z **pliku** menu, kliknij przycisk **nowy projekt**. W dolnej części ekranu można wprowadzić nazwę projektu.
 
-Krok 2. Z **szablony** menu, kliknij przycisk **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projektu VSIX**.
+Krok 2. Z **szablony** menu, kliknij przycisk **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projekt VSIX**.
 
 ![Nowy projekt](media/hello-world-new-project.png)
 
-Powinien zostać wyświetlony na stronie wprowadzenie i kilka przykładowych zasobów.
+Powinna zostać wyświetlona na stronie wprowadzenie i kilka przykładowych zasobów.
 
-Jeśli chcesz pozostawić w tym samouczku, a następnie powrót do niego nowego projektu HelloWorld można znaleźć w **— strona początkowa** w **ostatnie** sekcji.
+Jeśli potrzebujesz opuścić ten samouczek i wrócić do niego, można znaleźć nowego projektu HelloWorld na **strona startowa** w **ostatnie** sekcji.
 
-## <a name="add-a-custom-command"></a>Dodawanie polecenia niestandardowego
+## <a name="add-a-custom-command"></a>Dodaj polecenie niestandardowe
 
-Krok 1. W przypadku wybrania manifest widać, jakie są opcje modyfikowalne wystąpienia, metadane, opis i wersji.
+Krok 1. Jeśli wybierzesz manifestu, zostanie wyświetlony, jakie są opcje mogły być zmieniane dla wystąpienia, metadane, opis i wersji.
 
 Krok 2. Kliknij prawym przyciskiem myszy projekt (nie rozwiązanie). W menu kontekstowym kliknij **Dodaj**, a następnie kliknij przycisk **kontrolki użytkownika**.
 
-Krok 3. Wróć do **rozszerzalności** sekcji, a następnie kliknij przycisk **polecenia niestandardowych**.
+Krok 3. Wróć do **rozszerzalności** sekcji, a następnie kliknij przycisk **polecenia niestandardowego**.
 
-Krok 4. W **nazwa** u dołu ekranu, nadaj mu nazwę, na przykład Command.cs.
+Krok 4. W **nazwa** u dołu ekranu, nadaj jej nazwę, na przykład *Command.cs*.
 
-![polecenia niestandardowych](media/hello-world-custom-command.png)
+![polecenie niestandardowe](media/hello-world-custom-command.png)
 
-Nowe polecenie będzie wyświetlane w **Eksploratora rozwiązań** w obszarze **zasobów** gałęzi. Jest to również, gdzie można znaleźć innych plików związanych z polecenia, takich jak pliki PNG i ICO, jeśli chcesz zmodyfikować obraz.
+Nowe polecenie, które zostaną wyświetlone w **Eksploratora rozwiązań** w obszarze **zasobów** gałęzi. Jest to również, gdzie znajdziesz innych plików związanych z polecenia, takich jak pliki PNG i ICO, jeśli chcesz zmodyfikować obraz.
 
 ## <a name="modify-the-source-code"></a>Modyfikowanie kodu źródłowego
 
-W tym momencie przycisk dodawany jest dość ogólny. Musisz zmodyfikować pliku VSCT i CS plik, jeśli chcesz wprowadzić zmiany.
+W tym momencie przycisk dodawania jest dość ogólny. Należy zmodyfikować pliku VSCT i pliku CS, jeśli chcesz wprowadzić zmiany.
 
-* Plik VSCT jest, gdzie możesz można zmienić nazwy poleceń, a także zdefiniować, gdy przejdą w systemie polecenia programu Visual Studio. Ci poznać platformę pliku VSCT, można zauważyć wiele komentarze kodu, który objaśnia, w jaki każdej sekcji Formanty kodu.
+* Plik VSCT jest, gdzie możesz można zmienić nazwy poleceń, a także określić, gdzie go w systemie polecenia programu Visual Studio. Gdy eksplorujesz pliku VSCT można zauważyć wiele skomentowanej kod, który wyjaśnia, jakie każdej sekcji Formanty kodu.
 
-* Plik CS jest, gdzie można definiować akcji, takich jak obsługi kliknięcia.
+* Plik CS jest, gdzie można zdefiniować akcji, takich jak program obsługi kliknięcie.
 
-Krok 1. W **Eksploratora rozwiązań**, znaleźć pliku VSCT nowe polecenie. W takim przypadku zostanie wywołany CommandPackage.vsct.
+Krok 1. W **Eksploratora rozwiązań**, znaleźć pliku VSCT nowe polecenie. W takich przypadkach zostanie wywołany *CommandPackage.vsct*.
 
 ![polecenie pakietu vsct](media/hello-world-command-package-vsct.png)
 
-Krok 2. Zmień `ButtonText` parametru "Oznacza Hello World!"
+Krok 2. Zmiana `ButtonText` parametr `Say Hello World!`.
 
 ```xml
   ...
@@ -89,7 +89,7 @@ Krok 2. Zmień `ButtonText` parametru "Oznacza Hello World!"
   ...
 ```
 
-Krok 3. Wróć do **Eksploratora rozwiązań** i Znajdź plik Command.cs. Zmień ciąg `message` polecenia `string.Format(..)` na "Hello World!"
+Krok 3. Wróć do **Eksploratora rozwiązań** i Znajdź *Command.cs* pliku. Zmień ciąg `message` polecenia `string.Format(..)` do `Hello World!`.
 
 ```csharp
   ...
@@ -110,28 +110,28 @@ Krok 3. Wróć do **Eksploratora rozwiązań** i Znajdź plik Command.cs. Zmień
   ...
 ```
 
-Upewnij się zapisać zmiany w każdym pliku.
+Upewnij się zapisać zmiany do każdego pliku.
 
 ## <a name="run-it"></a>Uruchom go
 
-Teraz możesz uruchomić kod źródłowy w Visual Studio eksperymentalne wystąpienie programu.
+Teraz możesz uruchomić kod źródłowy w wystąpienie eksperymentalne programu Visual Studio.
 
-Krok 1. Kliknij przycisk **Start** na pasku narzędzi. To spowoduje skompilowanie projektu i uruchomienia debugera, uruchamianie nowego wystąpienia programu Visual Studio o nazwie **eksperymentalne wystąpienie**.
+Krok 1. Kliknij przycisk **Start** na pasku narzędzi. Spowoduje to skompilować projekt i uruchomić debuger, uruchamianie nowego wystąpienia programu Visual Studio o nazwie **wystąpienie doświadczalne**.
 
-Zobaczysz wyrazy "Eksperymentalne wystąpienie" na pasku tytułu programu Visual Studio.
+Zostanie wyświetlone zostaną słowa **wystąpienie doświadczalne** na pasku tytułu programu Visual Studio.
 
-![pasek tytułu eksperymentalne wystąpienie](media/hello-world-exp-instance.png)
+![pasek tytułu w doświadczalnym wystąpieniu](media/hello-world-exp-instance.png)
 
-Krok 2. Na **narzędzia** menu **eksperymentalne wystąpienie**, kliknij przycisk **powiedzieć Hello World!**.
+Krok 2. Na **narzędzia** menu **wystąpienie doświadczalne**, kliknij przycisk **Say Hello World!**.
 
 ![wynik końcowy](media/hello-world-final-result.png)
 
-Powinny pojawić się dane wyjściowe z nowego polecenia niestandardowych, w tym przypadku okna dialogowego w Centrum ekranu, który zapewnia "Witaj świecie!" Komunikat.
+Należy wyświetlić dane wyjściowe z nowe polecenie niestandardowe, w tym przypadku okno na środku ekranu, która zapewnia **Witaj, świecie!** Komunikat.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy znasz już podstawy pracy z programu Visual Studio Extensibility, Oto, gdzie możesz dowiedzieć się więcej:
+Skoro znasz już podstawy pracy z Visual Studio Extensibility, poniżej przedstawiono, gdzie można dowiedzieć się więcej:
 
-* [Rozpoczyna tworzenie rozszerzenia dla programu Visual Studio](starting-to-develop-visual-studio-extensions.md) — przykłady i samouczki. i publikowania rozszerzenia.
-* [What's New in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) — nowe funkcje rozszerzalności programu Visual Studio 2017 r
-* [W programie Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) — szczegóły dotyczące programu Visual Studio Extensibility
+* [Do tworzenia rozszerzenia programu Visual Studio](starting-to-develop-visual-studio-extensions.md) — przykłady i samouczki. i publikowania rozszerzenia.
+* [What's new in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) — nowe funkcje rozszerzalności programu Visual Studio 2017
+* [Wewnątrz zestawu Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) — Dowiedz się, szczegółowe informacje o możliwościach rozszerzania programu Visual Studio
