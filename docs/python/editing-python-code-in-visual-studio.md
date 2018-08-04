@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341836"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500124"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
 Deweloperzy poświęcają wiele czasu w edytorze kodu, więc [obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) udostępnia funkcje ułatwiające mu bardziej wydajnej pracy. Funkcje obejmują IntelliSense wyróżniania składni, automatyczne uzupełnianie, pomocy dotyczącej sygnatur, zastąpienia metody, wyszukiwania i nawigacji.
 
-Edytor jest także zintegrowana z **Interactive** okna w programie Visual Studio, ułatwiając wymiany kodu między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [użycie okna interaktywnego — Wyślij polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) Aby uzyskać szczegółowe informacje.
+Edytor jest także zintegrowana z **Interactive** okna w programie Visual Studio, ułatwiając wymiany kodu między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [użycie okna interaktywnego — Wyślij polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Aby uzyskać szczegółowe informacje.
 
 |   |   |
 |---|---|

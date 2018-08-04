@@ -1,5 +1,5 @@
 ---
-title: Dodawanie elementów do Dodaj nowy element okien dialogowych | Dokumentacja firmy Microsoft
+title: Dodawanie elementów do Dodaj nowy element okna dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,75 +13,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1287bfe04a16c1e610aa9044399fa7b936d383
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135069"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499867"
 ---
-# <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do Dodaj nowy element okien dialogowych
-Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna się od kluczy rejestru. Jak przedstawiono w następujących wpisach rejestru, w sekcji AddItemTemplates zawiera ścieżkę i nazwę katalogu, w które elementy udostępniona w **Dodaj nowy element** są umieszczane okno dialogowe.  
+# <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodaj nowy element
+Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna się od kluczy rejestru. Jak pokazano w następujących wpisach rejestru **AddItemTemplates** sekcja zawiera ścieżkę i nazwę katalogu, w które elementy udostępnione w **Dodaj nowy element** są umieszczane okno dialogowe.  
   
 > [!NOTE]
->  Tabela natychmiast po segment kodu zawiera dodatkowe informacje na temat wpis rejestru.  
+>  Tabela natychmiast po segment kodu zawiera dodatkowe informacje na temat wpisu rejestru.  
   
- W tej sekcji znajduje się w obszarze [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
+ W tej sekcji znajduje się w folderze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
   
- Pierwszy identyfikator GUID jest CLSID dla projektów tego typu; drugi GUID wskazuje typ projektu zarejestrowanych dla szablonów Dodaj elementy.  
+ Pierwszy identyfikator GUID jest identyfikator CLSID dla projektów tego typu; drugi identyfikator GUID wskazuje typ projektu zarejestrowanego dla szablonów Dodaj elementy:  
+ 
+ **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
   
- \\\1 \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} {C061DB26-5833-11D2-96F5-000000000000}  
+ **@** = #6 
   
- @="#6"  
+ **TemplatesDir** = \\&lt;ścieżka instalacji programu Visual Studio SDK&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\ &lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
   
- "TemplatesDir"="\<ścieżki instalacji programu Visual Studio SDK\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ **SortPriority** = dword:00000064
   
- "SortPriority" = dword:00000064  
-  
-|Nazwa|Typ|Dane (z pliku .rgs)|Opis|  
+|Nazwa|Typ|Dane (z *.rgs* pliku)|Opis|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Ustawienie domyślne)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Identyfikator zasobu dla **Dodaj element** szablonów.|  
-|Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Ścieżka projektu elementy wyświetlane w oknie dialogowym dla **Dodaj nowy element** kreatora.|  
-|Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|Określa porządek sortowania, w węźle drzewa plików wyświetlanych w **Dodaj nowy element** okno dialogowe.|  
+|@ (Ustawienie domyślne)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Identyfikator zasobu dla **elementu Dodawanie** szablonów.|  
+|Val TemplatesDir|REG_SZ|TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;|Ścieżka wyświetlanych w oknie dialogowym dla elementów projektu **Dodaj nowy element** kreatora.|  
+|Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|Określa porządek sortowania w węźle drzewa pliki wyświetlane w **Dodaj nowy element** okno dialogowe.|  
   
 > [!NOTE]
->  Identyfikatory GUID dla typów projektów Visual C# i Visual Basic są następujące:[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Identyfikatory GUID dla języka Visual C# i typów projektów języka Visual Basic są następujące: 
+- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
- Katalog wymienionych w węźle po lewej stronie jest TemplateDirs, czyli % TEMPLATE_PATH%\SomeProjectItems **Dodaj nowy element** drzewa — okno dialogowe. Dodatkowe elementy w drzewie są oparte na podkatalogu w tym katalogu głównego. Pliki można dodać do projektu są elementy w prawym okienku **Dodaj nowy element** okno dialogowe.  
+ Katalog dla **TemplatesDir**, czyli *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, jest węzłem w lewej części **Dodaj Nowy element** drzewa okno dialogowe. Dodatkowe elementy w drzewie są oparte na podkatalogu w tym katalogu głównego. Pliki można dodać do projektu są elementy w prawym okienku **Dodaj nowy element** okno dialogowe.  
   
- Zazwyczaj ten folder będzie zawierać pliki szablonów w projekcie, takie jak szablon HTML lub pliku .cpp, a wszystkie pliki .vsz uruchamiania kreatorów. Aby kontrolować sposób wyświetlania elementów, mogą również obejmować pliki .vsdir lokalizowanie nazwy katalogów i ikon. Zlokalizowany ciąg jest tekstem, który jest wyświetlany w oknie dialogowym, reprezentujący ten węzeł w drzewie w oknie dialogowym Dodaj nowy element.  
+ Zazwyczaj ten folder będzie zawierać pliki szablonu projektu, taki jak kod HTML szablonu lub *.cpp* pliku i wszystkie *.vsz* pliki do uruchamiania kreatorów. Aby kontrolować sposób wyświetlania elementów, możesz również uwzględnić *.vsdir* pliki do lokalizowania nazwy katalogów i ikony. Zlokalizowany ciąg jest podpis, który pojawia się w oknie dialogowym, który reprezentuje ten węzeł w **Dodaj nowy element** drzewa okno dialogowe.  
   
- Jednak nie trzeba już wszystko w jednym pliku .vsdir. Może mieć jeden plik .vsdir dla każdego elementu w katalogu. Aby uzyskać więcej informacji, zobacz [kreatora (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) i [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Jednakże, nie trzeba mieć wszystko w jednym *.vsdir* pliku. Może mieć jeden *.vsdir* pliku dla każdego elementu w katalogu. Aby uzyskać więcej informacji, zobacz [pliku kreatora (.vsz —)](../../extensibility/internals/wizard-dot-vsz-file.md) i [pliki (vsdir) opis katalogu szablonu](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  Pliki .vsdir w katalogach szablonu są opcjonalne. Jeśli chcesz tylko umieścić element projektu w katalogu i wyświetl ją w **Dodaj nowy element** okno dialogowe, można umieścić tego pliku w katalogu szablonów określona w instrukcji TemplatesDir. Następnie plik zostanie wyświetlona w prawym okienku **Dodaj nowy element** okno dialogowe dla tego projektu. Jednak jeśli chcesz wyświetlić zlokalizowanych podpis dla pliku lub ikony, musi zawierać co najmniej jeden plik .vsdir w katalogu szablonów.  
+>  *.Vsdir* plików w katalogach szablonu są opcjonalne. Jeśli chcesz tylko umieścić element projektu w katalogu i wyświetl ją w **Dodaj nowy element** okno dialogowe, mogą umieścić ten plik w katalogu szablonów, określonym w **TemplatesDir** instrukcji. Plik zostanie wyświetlony w okienku po prawej stronie od **Dodaj nowy element** okno dialogowe dla tego projektu. Jednak jeśli chcesz wyświetlić podpis zlokalizowane dla pliku lub ikona, musisz dołączyć co najmniej jeden *.vsdir* pliku w katalogu szablonów.  
   
-## <a name="grouping-project-items"></a>Grupowanie elementów projektu  
- Jeśli chcesz zawierają grupy szablonu w folderach w **Dodaj nowy element** drzewa okno dialogowe, musi mieć podkatalogów w katalogu głównym szablonu z elementami w nich. Gdy **Dodaj nowy element** okno dialogowe będzie wyświetlana użytkownikom, zostanie również obejrzeć podfoldery i mieć możliwość wyboru elementów projektu z nich.  
+## <a name="group-project-items"></a>Grupowanie elementów projektu  
+ Jeśli ma zawierać szablon grup w folderach w **Dodaj nowy element** drzewa okno dialogowe, konieczne jest posiadanie podkatalogów w katalogu głównym szablonu z elementami w nich. Gdy **Dodaj nowy element** użytkownikom zostanie wyświetlone okno dialogowe, będzie również obejrzeć podfoldery i mieć możliwość wyboru elementów projektu z nich.  
   
- Priorytet sortowania w segment kodu Określa, gdzie to katalog szablonu zostanie utworzony w drzewie w odniesieniu do innych elementów węzła drzewa. Aby uzyskać **Dodaj nowy element** okno dialogowe priorytet sortowania jest wszystkie punkty, które należy uwzględnić, tak aby elementy będą wyświetlane w poprawnej lokalizacji w oknie dialogowym.  
+ Priorytet sortowania w segmencie kodu określa tworzona ten katalog szablonu w drzewie względem innych elementów w węźle drzewa. Aby uzyskać **Dodaj nowy element** okno dialogowe priorytet sortowania są wszystkie opcje, które należy uwzględnić, tak aby elementów, które będą wyświetlane w poprawnej lokalizacji, w oknie dialogowym.  
   
- Można też wdrożyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interfejs do filtrowania wyświetlanych w **Dodaj nowy element** okno dialogowe. Zaimplementowanie interfejsu można skonfigurować jeden szablon katalogu na dysku, który zawiera, na przykład 50 plików kreatora i szablonu. W ten sposób mogą mieć różnych typach projektów z 20 plików, które należą do jednego projektu typu, 30 plików, które należą do innego typu projektu i wszystkich plików w ogólne typu projektu. W ten sposób, w zależności od tego, który projekt został utworzony szablon, można wyświetlić inny zestaw plików szablonów.  
+ Możesz również wdrożyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interfejsu do filtrowania, co jest wyświetlane w **Dodaj nowy element** okno dialogowe. Implementując ten interfejs, możesz skonfigurować jeden szablon katalogu na dysku, który zawiera na przykład 50 plików szablonu i kreatora. W ten sposób może mieć różnych typach projektów z 20 plików, które należą do jednego projektu typu, 30 plików, które należą do innego typu projektu i wszystkie pliki należące do ogólnego typu projektu. W ten sposób, w zależności od tego, który projekt zostanie utworzony szablon, możesz wyświetlić inny zbiór plików szablonów.  
   
- Na przykład w projektach Visual Basic, może być projekty sieci Web i projektów klienckich. Formularze sieci Web nie są przydatne elementy do dodania do projektu klienta i formularze systemu windows nie są przydatne elementy do dodania do projektu serwera sieci Web. W związku z tym można utworzyć jeden katalog szablonu, który zawiera wszystkie pliki dla obu typów projektów. Następnie zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, można ukryć elementy, które nie powinny być wyświetlane na podstawie typu projektu lub ustawienia projektu w projekcie.  
+ Na przykład w projekcie języka Visual Basic, Niewykluczone, że projekty sieci Web i projektów klienckich. Formularze sieci Web nie są przydatne elementy do dodania do projektu klienta i formularze systemu windows nie są przydatne elementy do dodania do projektu serwera sieci Web. W związku z tym można utworzyć jeden katalog szablonu, który zawiera wszystkie pliki dla obu typów projektu. Następnie, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, można ukrywać elementy, które nie powinny być widoczne na podstawie typu projektu lub w ustawieniach projektu w projekcie.  
   
-## <a name="filtering-project-items"></a>Filtrowanie elementów projektu  
- `IVsFilterAddProjectItemDlg2` udostępnia filtrowania elementów drzewa (lewe okienko) i pliki projektu (po prawej) w następujący sposób:  
+## <a name="filter-project-items"></a>Filtruj elementy projektu  
+ `IVsFilterAddProjectItemDlg2` udostępnia filtrowania elementów drzewa (lewe okienko) i pliki projektu (w okienku po prawej stronie) w następujący sposób:  
   
--   Na podstawie zlokalizowanych nazw (podpisy wyświetlane w oknie dialogowym, który jest zawarty w pliku .vsdir) udzielane przez `IVsFilterAddProjectItemDlg`.  
+-   Przy użyciu zlokalizowanych nazw (podpisy wyświetlane w oknie dialogowym, który jest zawarty w *.vsdir* pliku) dostarczonych przez `IVsFilterAddProjectItemDlg`.  
   
--   Rzeczywiste nazwy plików i folderów na dysku (niezlokalizowana — plik nie .vsdir) udostępniane przez `IVsFilterAddProjectItemDlg`.  
+-   Według rzeczywistych nazw plików i folderów na dysku (niezlokalizowana — nie *.vsdir* pliku) dostarczonych przez `IVsFilterAddProjectItemDlg`.  
   
 -   Według kategorii, dostarczone przez `IVsFilterAddProjectItemDlg2`.  
   
- Aby filtrować według kategorii, podaj kategorii do elementu w pliku .vsdir, takie jak "Formularza sieci Web" lub "Item klienta" w języku Visual Basic. Kod okno dialogowe następnie pobiera klasyfikację kategorii z pliku .vsdir i przekazuje je do Ciebie. Te informacje można następnie przekazać do implementacji `IVsFilterAddProjectItemDlg2` do filtrowania **Dodaj nowy element** okno dialogowe według kategorii. Można również filtrować elementy dla stron sieci Web lub jako przypadków aplikacji Win32 klienta. Ponadto można zidentyfikować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] oznakowane elementów jako Microsoft Foundation Classes (MFC) lub aktywnego szablonu elementów library (ATL). Po zidentyfikowaniu tych elementów, system projektu można zdefiniować własne klasyfikacje, tak aby systemu można filtrować na podstawie kategorii i klasyfikacji.  
+ Aby filtrować według kategorii, podaj ciąg kategorii do elementu w *.vsdir* plików, takich jak *formularza sieci Web* lub *elementu klienta* w języku Visual Basic. Kodu pola dialogowego następnie pobiera Kategoria klasyfikacji z *.vsdir* plik i przekazuje je do Ciebie. Możesz następnie przekazać te informacje do implementacji `IVsFilterAddProjectItemDlg2` do filtrowania **Dodaj nowy element** okno dialogowe według kategorii. Można również filtrować elementy dla stron sieci Web lub jako przypadków aplikacji Win32 klienta. Ponadto możesz zidentyfikować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] oznaczone elementy jako Microsoft Foundation Classes (MFC) lub aktywnego szablonu library (ATL) elementów. Po zidentyfikowaniu tych elementów, system projektu, można zdefiniować własne klasyfikacje, aby system można filtrować na podstawie kategorii i klasyfikacji.  
   
- Musisz zaimplementować tę funkcję filtru, nie trzeba mapować tabelę każdy element, który powinien być ukryty. Można po prostu klasyfikowanie elementów w typy i umieść klasyfikacje w .vsdir plik lub pliki. Następnie można ukryć, każdy z elementów, których dotyczy określonej klasyfikacji zaimplementowanie interfejsu. W ten sposób można tworzyć elementy **Dodaj nowy element** dynamiczne okno dialogowe na podstawie stanu w projekcie.  
+ W przypadku zaimplementowania tej funkcji filtru ma mapowania tabeli każdego elementu, który ma być ukryty. Możesz po prostu klasyfikowania elementów do typów i umieścić klasyfikacje *.vsdir* pliku lub plików. Następnie można ukryć elementy, które mają określoną klasyfikację, implementując interfejs. W ten sposób można zapewnić elementów w **Dodaj nowy element** dynamiczne okno dialogowe na podstawie stanu w projekcie.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [Rejestrowanie szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
- [CATIDs dla obiektów, które są zazwyczaj używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
- [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
- [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Identyfikatorów CatID obiektów, które zwykle służą do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
+ [Dodaj projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Pliki (vsdir) opis katalogu szablonu](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
+ [Plik kreatora (vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

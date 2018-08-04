@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95821baec7f2f46a65e2ab0f0b0b78b0e397f2ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128775"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497966"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Porady: pomijanie powiadomienia o zmianie pliku
-Po zmianie pliku fizycznego reprezentująca bufor tekstowy, zostanie wyświetlone okno dialogowe z komunikatem **czy chcesz zapisać zmiany w następujących elementach?** Jest to nazywane powiadomienia o zmianie pliku. Jeśli wiele zmian mają być do pliku, jednak to okno dialogowe Wyświetlanie wielokrotnie może szybko stać się irytujące.  
+Po zmianie pliku fizycznego reprezentujący buforu tekstowego, okno dialogowe wyświetla komunikat o **czy chcesz zapisać zmiany w następujących elementach?** Jest to nazywane powiadomienie o zmianie pliku. Jeśli wiele zmian mają zostać do pliku, jednak to okno dialogowe wyświetlania wielokrotnie może szybko stać się irytujące.  
   
- To okno dialogowe przy użyciu poniższej procedury można pominąć programowo. Dzięki temu możesz ponownie załadować plik natychmiast bez konieczności Monituj użytkownika, aby zapisać zmiany w każdym.  
+ Programowe można pominąć to okno dialogowe, korzystając z następującej procedury. Przez pominięcie okna dialogowego, możesz ponownie załadować plik bezpośrednio bez konieczności monit o zapisanie zmian każdorazowo.  
   
-### <a name="to-suppress-file-change-notification"></a>Aby wyłączyć powiadomienia o zmianie pliku  
+## <a name="to-suppress-file-change-notification"></a>Aby wyłączyć powiadomienia o zmianie pliku  
   
-1.  Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metodę, aby określić obiekt buforu tekstu, który jest skojarzony z Otwórz plik.  
+1.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metodę pozwala ustalić obiektu buforu tekstu, który jest skojarzony z otwartego pliku.  
   
-2.  Bezpośrednie <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiekt, który jest w pamięci, aby zignorować monitorowania zmian w pliku, uzyskując <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interfejsu z <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu (dane dokumentu), a następnie wykonania <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metody z `fIgnore` parametru Ustaw `true`.  
+2.  Bezpośrednie <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiekt, który jest w pamięci, aby zignorować monitorowanie zmian w plikach, uzyskując <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu (dane dokumentu), a następnie wdrażanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metody z `fIgnore` parametru Ustaw `true`.  
   
-3.  Wywołanie metody na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsów można zaktualizować w pamięci <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu o zmiany pliku (na przykład po dodaniu pola do składnika).  
+3.  Wywoływanie metody na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsów można zaktualizować w pamięci <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu ze zmianami plików (na przykład po dodaniu pola do składnika).  
   
-4.  Zaktualizuj plik na dysku ze zmianami, bez uwzględniania wszelkie oczekujące zmiany, które użytkownik może być w toku.  
+4.  Zaktualizuj plik na dysku wprowadzając zmiany, bez uwzględniania wszelkie oczekujące zmiany, które użytkownik może być w toku.  
   
-     W ten sposób można kierować <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> powiadomienia o zmianie obiektu można wznowić monitorowania dla plików, zmiany, które są generowane, a także wszystkie oczekujące edycje odzwierciedla buforu tekstu w pamięci. Plik na dysku odzwierciedla najnowszej kod wygenerowany przez Ciebie i wszelkie wcześniej zapisano zmiany przez użytkownika w kodzie edytować użytkownika.  
+     W ten sposób możesz przekazać <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> powiadomienia o zmianie obiektu w celu wznowienia monitorowania dla pliku, bufor tekstowy w pamięci odzwierciedla wprowadzone został wygenerowany. Bufor tekstowy w pamięci również odzwierciedla wszystkie zmiany oczekujące. Plik na dysku odzwierciedla najnowszy kod wygenerowany przez użytkownika, a wszystkie zapisane wcześniej zmiany przez użytkownika w kodzie edytować użytkownika.  
   
-5.  Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodę, aby powiadomić <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu można wznowić monitorowania pliku powiadomienia o zmianach, ustawiając `fIgnore` parametr `false`.  
+5.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodę, aby powiadomić <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu w celu wznowienia monitorowania pliku powiadomienia o zmianach, ustawiając `fIgnore` parametr `false`.  
   
-6.  Jeśli zamierzasz wprowadzić kilka zmian pliku, tak jak w przypadku kontroli kodu źródłowego (SCC), należy wskazać usługi o zmianie pliku globalnego tymczasowo zawiesić powiadomienia o zmianie pliku.  
+6.  Jeśli planujesz wprowadzić wiele zmian do pliku, tak jak w przypadku kontroli kodu źródłowego (SCC), musisz poinformować usługę zmiany plików globalnej tymczasowo wstrzymać powiadomienia o zmianie pliku.  
   
-     Na przykład w przypadku ponownego zapisywania pliku i następnie zmiany sygnatury czasowej, musi wstrzymaniu powiadomienia o zmianie pliku jako operacji ponownego zapisywania i timestample, każdy traktowane jako zdarzenie zmiany oddzielny plik. Aby włączyć powiadomienia o zmianie pliku globalnego należy zamiast tego wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> metody.  
+     Na przykład jeśli ponownego zapisywania pliku, a następnie Zmień sygnaturę czasową, musi zawieszenie powiadomienia o zmianie pliku, ponieważ operacje każdego ponownego zapisywania i sygnaturę czasową liczone jako zdarzenia zmiany w oddzielnym pliku. Aby włączyć powiadomienia o zmianie pliku globalnego, należy zamiast tego wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> metody.  
   
 ## <a name="example"></a>Przykład  
- Poniżej pokazano, jak wyłączyć powiadomienia o zmianie pliku.  
+ Poniższy przykład kodu pokazuje, jak wyłączyć powiadomienia o zmianie pliku.  
   
 ```cpp  
 //Misc. helper classes  
@@ -115,5 +115,5 @@ void CSuspendFileChanges::Resume()
 // Misc. helper classes  
 ```  
   
-## <a name="robust-programming"></a>Niezawodne programowanie  
- Jeśli tej sprawy obejmuje wiele zmian do pliku, tak jak w przypadku SCC, następnie należy wznowić powiadomienia o zmianie pliku globalnego przed wysłaniem alertu dane dokumentu można wznowić monitorowania dla zmian plików.
+## <a name="robust-programming"></a>Skuteczne programowanie  
+ Jeżeli obudowę pociąga za sobą wiele zmian do pliku, tak jak w przypadku SCC, następnie jest ważne, aby wznowić powiadomienia o zmianie pliku globalnego przed zgłoszeniem dane dokumentu, aby wznowić monitorowanie zmian w plikach.

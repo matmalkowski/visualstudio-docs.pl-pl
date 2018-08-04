@@ -1,5 +1,5 @@
 ---
-title: Określanie stanu polecenia za pomocą zestawów międzyoperacyjnych | Dokumentacja firmy Microsoft
+title: Określanie stanu polecenia przy użyciu zestawów międzyoperacyjnych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4989910fdec968a4a05e2459e6625ee2c15fd9a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005779b71e6c4fe748cadda787d5acef41d4e173
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128178"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498132"
 ---
-# <a name="determining-command-status-by-using-interop-assemblies"></a>Określanie stanu polecenia przy użyciu zestawy międzyoperacyjne
-Pakiet VSPackage musi zachować informacje o stanie poleceń, które może obsługiwać. Środowisko nie może określić, kiedy polecenie przetwarzanych w ramach VSPackage staje się włączone lub wyłączone. Jest odpowiedzialny za VSPackage do informowania o stanach polecenia środowiska, na przykład stan ogólne polecenia takie jak **Wytnij**, **kopiowania**, i **Wklej**.  
+# <a name="determine-command-status-by-using-interop-assemblies"></a>Określenia stanu polecenia przy użyciu zestawów międzyoperacyjnych
+Pakietu VSPackage musi zachować informacje o stanie poleceń, które może obsłużyć. Środowisko nie może określić, kiedy polecenie przetwarzanych w ramach Twojego pakietu VSPackage staje się włączone lub wyłączone. Jest odpowiedzialny za Twojego pakietu VSPackage poinformować środowiska o stanach polecenia, na przykład stanu Generalny polecenia, takie jak **Wytnij**, **kopiowania**, i **Wklej**.  
   
 ## <a name="status-notification-sources"></a>Stan powiadomienia źródeł  
- Środowisko otrzymuje informacji o poleceniach za pośrednictwem VSPackages <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę, która jest częścią implementacji pakiet VSPackage z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Wywołania środowiska <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody pakiet VSPackage w obszarze dwa warunki:  
+ Środowisko otrzymuje informacji na temat poleceń w pakietach VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody, która jest częścią pakietu VSPackage implementacji programu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Wywołania środowiska <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda pakietu VSPackage w dwóch okolicznościach:  
   
--   Gdy użytkownik otwiera menu głównego lub menu kontekstowego (na przykład przez kliknięcie prawym przyciskiem myszy), wykonuje środowiska <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody na wszystkie polecenia tego menu, aby określić ich stan.  
+-   Gdy użytkownik otwiera menu głównego lub menu kontekstowego (na przykład przez kliknięcie prawym przyciskiem myszy), wykonuje środowiska <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody na wszystkich poleceń tym menu, aby określić ich stanu.  
   
--   Gdy pakiet VSPackage żąda, że środowisko zaktualizować bieżącego interfejsu użytkownika (UI). Dzieje się tak jak polecenia, które są widoczne dla użytkownika, takich jak **Wytnij**, **kopiowania**, i **Wklej** grupowanie na standardowym pasku narzędzi, stają się włączone i wyłączone w odpowiedź z akcjami tworzenia i kontekstu użytkownika.  
+-   Gdy pakietu VSPackage żąda, że środowisko aktualizacji bieżący interfejsu użytkownika (UI). Ta aktualizacja jest wykonywane jako polecenia, które są obecnie widoczne dla użytkownika, takich jak **Wytnij**, **kopiowania**, i **Wklej** grupowania na standardowym pasku narzędzi, stają się włączone i wyłączone w odpowiedzi na działania kontekstu i użytkownika.  
   
- Ponieważ powłoki obsługuje wiele VSPackages, wydajność powłoki zbyt czy zmniejsza, jeśli wymaga ona sondowanie każdy pakiet VSPackage do określenia stanu polecenia. Zamiast tego VSPackage aktywnie powiadomić środowiska po zmianie jego interfejsie użytkownika w momencie zmiany. Aby uzyskać więcej informacji o powiadomienie o aktualizacji, zobacz [Aktualizowanie interfejsu użytkownika](../../extensibility/updating-the-user-interface.md).  
+ Ponieważ powłoki hostuje wiele pakietów VSPackage, wydajności powłoki programu nieakceptowalnie może obniżyć razie zostały sondować każdego pakietu VSPackage, aby określić stan polecenia. Zamiast tego Twojego pakietu VSPackage powinny aktywnie powiadomić środowiska, zmianie jego interfejsu użytkownika w momencie zmiany. Aby uzyskać więcej informacji na temat powiadomienie o aktualizacji, zobacz [zaktualizować interfejs użytkownika](../../extensibility/updating-the-user-interface.md).  
   
-## <a name="status-notification-failure"></a>Niepowodzenie powiadomień stanu  
- Błąd VSPackage do powiadamiania o zmianie stanu polecenia środowiska można umieścić interfejsu użytkownika w stanie niespójnym. Należy pamiętać, że wszelkie polecenia menu menu lub kontekstu można umieścić na pasku narzędzi przez użytkownika. W związku z tym Aktualizowanie interfejsu użytkownika tylko wtedy, gdy zostanie otwarte menu menu lub kontekstu nie jest wystarczająca.  
+## <a name="status-notification-failure"></a>Stan: niepowodzenie powiadomień  
+ Błąd usługi pakietu VSPackage powiadomić środowiska zmiany stanu polecenia można umieścić interfejsu użytkownika w stanie niespójnym. Należy pamiętać, że dowolne polecenia menu menu lub kontekst można umieścić na pasku narzędzi przez użytkownika. W związku z tym aktualizowania interfejsu użytkownika, tylko wtedy, gdy zostanie otwarte menu menu lub kontekst nie jest wystarczająca.  
   
-## <a name="see-also"></a>Zobacz też  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Implementacja](../../extensibility/internals/command-implementation.md)

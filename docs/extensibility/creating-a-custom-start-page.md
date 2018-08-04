@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100687"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497641"
 ---
-# <a name="creating-a-custom-start-page"></a>Tworzenie strony początkowej niestandardowych
-Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej strony początkowej.  
+# <a name="creating-a-custom-start-page"></a>Tworzenie niestandardowej strony początkowej
+Można utworzyć niestandardowej strony początkowej, wykonując kroki opisane w tym dokumencie.  
   
-## <a name="creating-a-blank-start-page"></a>Tworzenie strony początkowej puste  
- Najpierw upewnij puste strony początkowej, tworząc plik .xaml struktury znaczników, rozpoznawany przez Visual Studio. Następnie należy dodać kodu znaczników i kodu powiązanego do utworzenia wygląd i funkcjonalność, który ma.  
+## <a name="create-a-blank-start-page"></a>Utwórz pustą stronę początkową  
+ Po pierwsze należy pustą stronę początkową, tworząc *.xaml* pliku, który ma strukturę tag, która będzie także rozpoznawał programu Visual Studio. Następnie dodaj znaczniki i kodem, aby wygenerować wygląd i funkcje, które mają.  
   
-#### <a name="to-create-a-blank-start-page"></a>Aby utworzyć pustą stronę startową  
+### <a name="to-create-a-blank-start-page"></a>Aby utworzyć pustą stronę początkową  
   
-1.  Utwórz nowy projekt typu **aplikacji WPF** (**Visual C# / Windows Desktop**.  
+1.  Utwórz nowy projekt typu **aplikacji WPF** (**Visual C#** > **pulpitu Windows**).  
   
 2.  Dodaj odwołanie do `Microsoft.VisualStudio.Shell.14.0`.  
   
-3.  Otwórz plik XAML w edytorze XML i zmień najwyższego poziomu \<okna > elementu \<UserControl > elementu bez usuwania deklaracji przestrzeni nazw.  
+3.  Otwórz plik XAML w edytorze XML i zmień najwyższego poziomu \<okna > elementu \<UserControl > element bez usuwania deklaracje przestrzeni nazw.  
   
-4.  Usuń `x:Class` deklaracji z elementu najwyższego poziomu. Dzięki temu zawartość XAML są zgodne z okna narzędzia Visual Studio, która hostuje strony początkowej.  
+4.  Usuń `x:Class` deklaracji z elementem najwyższego poziomu. To sprawia, że zawartość XAML zgodny z okna narzędzi programu Visual Studio, który jest hostem strony początkowej.  
   
-5.  Dodaj następujące deklaracje przestrzeni nazw na najwyższym poziomie \<UserControl > elementu.  
+5.  Dodaj następujące deklaracje przestrzeni nazw najwyższego poziomu \<UserControl > element.  
   
-    ```  
+    ```vb  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
     ```  
   
-     Te obszary nazw umożliwiają uzyskanie dostępu do poleceń programu Visual Studio, kontrolek i ustawienia interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Dodawanie Visual Studio — polecenia do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+     Te przestrzenie nazw umożliwiają dostęp do poleceń programu Visual Studio, formantów i ustawienia interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [polecenia programu Visual Studio Dodaj do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-     Poniższy przykład przedstawia kod znaczników w pliku .xaml dla puste strony początkowej. Zawartość niestandardowych powinien znajdować się w wewnętrznej <xref:System.Windows.Controls.Grid> elementu.  
+     W poniższym przykładzie pokazano kod znaczników w *.xaml* pliku pustą stronę początkową. Żadnej zawartości niestandardowego należy go w programie wewnętrzny <xref:System.Windows.Controls.Grid> elementu.  
   
     ```vb  
     <UserControl  
@@ -63,32 +63,32 @@ Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej stron
     </UserControl>  
     ```  
   
-6.  Dodawanie formantów do pustych \<UserControl > elementu, aby wypełnić niestandardowej strony początkowej. Aby uzyskać informacje o sposobie dodawania funkcji, które są specyficzne dla programu Visual Studio, zobacz [Dodawanie Visual Studio — polecenia do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+6.  Dodawanie formantów do pustych \<UserControl > element, aby wypełnić niestandardowej strony początkowej. Aby uzyskać informacje dotyczące sposobu dodawania funkcji, które są specyficzne dla programu Visual Studio, zobacz [polecenia programu Visual Studio Dodaj do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-## <a name="testing-and-applying-the-custom-start-page"></a>Testowanie i stosowanie niestandardowej strony początkowej  
- Nie ustawiaj głównej wystąpienie programu Visual Studio, aby uruchomić niestandardowej strony początkowej bez sprawdzenia, czy nie awarię programu Visual Studio. Zamiast tego należy przetestować w eksperymentalnym wystąpieniu.  
+## <a name="test-and-apply-the-custom-start-page"></a>Testowanie i zastosować niestandardowej strony początkowej  
+ Nie należy ustawiać podstawowe wystąpienie programu Visual Studio, aby uruchomić niestandardowej strony początkowej do momentu upewnieniu się, że nie powoduje awarii programu Visual Studio. Zamiast tego należy przetestować w doświadczalnym wystąpieniu.  
   
-#### <a name="to-test-a-manually-created-custom-start-page"></a>Aby przetestować utworzonych ręcznie niestandardowej strony początkowej  
+### <a name="to-test-a-manually-created-custom-start-page"></a>Aby przetestować utworzone ręcznie niestandardowej strony początkowej  
   
-1.  Kopiowanie pliku XAML oraz wszelkich obsługi plików tekstowych i znaczników pliki do **%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\**  folderu.  
+1.  Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do *%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\*  folderu.  
   
-2.  Jeśli stronę początkową odwołuje się do formantów ani typów w zestawach, które nie są instalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w * folder instalacji programu Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w *\Common7\IDE\PrivateAssemblies {folder instalacji programu Visual Studio}\\* .  
   
-3.  Wpisz w wierszu polecenia programu Visual Studio **devenv/rootsuffix Exp** otworzyć eksperymentalne wystąpienie programu Visual Studio.  
+3.  Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.  
   
-4.  W eksperymentalnym wystąpieniu, przejdź do **narzędzia / Opcje / środowiska / uruchamiania** strony i wybierz plik XAML z **dostosowanie strony początkowej** listy rozwijanej.  
+4.  W doświadczalnym wystąpieniu, przejdź do **narzędzia** > **opcje** > **środowiska** > **uruchamiania** strony i wybierz plik XAML z **Dostosuj stronę początkową** listy rozwijanej.  
   
-5.  Na **widoku** menu, kliknij przycisk **— strona początkowa**.  
+5.  Na **widoku** menu, kliknij przycisk **strona startowa**.  
   
-     Powinien zostać wyświetlony stronę początkową niestandardowych. Jeśli chcesz zmienić wszystkie pliki, możesz musi zamknąć eksperymentalne wystąpienie programu, zmiany, skopiuj i Wklej zmienionych plików, a następnie ponownie otwórz eksperymentalne wystąpienie, aby zobaczyć zmiany.  
+     Powinien być wyświetlany z niestandardową stronę początkową. Jeśli chcesz zmienić wszystkie pliki, możesz musi Zamknij wystąpienie doświadczalne, wprowadzić zmiany, skopiuj Wklej zmienionych plików i następnie ponownie otwórz wystąpienie doświadczalne, aby wyświetlić zmiany.  
   
-#### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Aby zastosować niestandardowej strony początkowej w głównej wystąpienie programu Visual Studio  
+### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Aby zastosować niestandardowy strona startowa podstawowego wystąpienia programu Visual Studio  
   
--   Po przetestowane stronę początkową i znaleźć się stabilne użyj **dostosowanie strony początkowej** opcji **opcje** okno dialogowe, aby go wybrać jako strony początkowej w głównej wystąpienie programu Visual Studio  
+-   Po po przetestowaniu stronę początkową i on stabilny, użyj **Dostosuj stronę początkową** opcji **opcje** okno dialogowe, aby ją zaznaczyć jako stronę startową w podstawowego wystąpienia programu Visual Studio  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wskazówki: Dodawanie niestandardowych XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
- [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)   
+ [Dodaj kontrolkę użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)   
  [Dodawanie poleceń programu Visual Studio do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Wskazówki: Zapisywanie ustawień użytkownika na stronę początkową](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
- [Wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md)
+ [Przewodnik: Zapisywanie ustawień użytkownika na stronie sieci uruchomić](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md)

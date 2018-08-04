@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fb61109a05b84eeb83b887ba0fc1a9f9fef299f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 101076eb863294fe84ffed26d308f67110b90a33
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134350"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499455"
 ---
 # <a name="custom-parameters"></a>Parametry niestandardowe
-Parametry niestandardowe kontroli działania kreatora, po uruchomieniu kreatora. Plik .vsz powiązane zawiera tablicę parametrów zdefiniowanych przez użytkownika, które opakowane przez zintegrowane środowisko programistyczne (IDE) i przekazać do kreatora jako tablica ciągów, po uruchomieniu kreatora. Następnie Kreator analizuje tablicy ciągów i używa tych informacji do sterowania działaniem rzeczywiste kreatora. W ten sposób kreatora można dostosować funkcjonalność w zależności od zawartości pliku .vsz.  
+Parametry niestandardowe kontroli działania kreatora, po uruchomieniu kreatora. Powiązane *.vsz* plik zawiera tablicę parametrów zdefiniowanych przez użytkownika, które są opakowane przez zintegrowanego środowiska programistycznego (IDE) i przekazywana do kreatora jako tablicę ciągów, po uruchomieniu kreatora. Kreator następnie analizuje tablicę ciągów i używa tych informacji do kontroli rzeczywiste działania kreatora. W ten sposób kreatora można dostosować funkcjonalność w zależności od zawartości *.vsz* pliku.  
   
- Parametry kontekstu z drugiej strony, zdefiniuj stan projektu po uruchomieniu kreatora. Aby uzyskać więcej informacji, zobacz [parametrów kontekstu](../../extensibility/internals/context-parameters.md).  
+ Parametry kontekstu, z drugiej strony, Definiowanie stanu projektu, po uruchomieniu kreatora. Aby uzyskać więcej informacji, zobacz [parametrów kontekstu](../../extensibility/internals/context-parameters.md).  
   
- Poniżej znajduje się przykład pliku .vsz, który ma parametry niestandardowe:  
+ Poniżej przedstawiono przykład *.vsz* pliku, który ma parametry niestandardowe:  
   
 ```  
 VSWIZARD 8.0  
@@ -38,14 +38,14 @@ Param="PREPROCESS_FUNCTION = CanAddATLSupport"
 Param="PROJECT_TYPE = CSPROJ"  
 ```  
   
- Autor pliku .vsz dodaje wartości parametrów. Gdy użytkownik wybierze **nowy projekt** lub **Dodaj nowy element** menu Plik lub klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**, IDE zbiera te wartości w tablicy ciągi. IDE wywołuje projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> Flaga zestawu i wywołania projektu <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> metodę, która jest odpowiedzialna za uruchamianie kreatora i zwrócenia wyniku.  
+ Autor *.vsz* plik dodaje wartości parametrów. Gdy użytkownik wybierze **nowy projekt** lub **Dodaj nowy element** na **pliku** menu lub klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**, IDE zbiera te wartości w tablicy ciągów. IDE następnie wywołuje projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> Flaga zestawu i wywoływanych w projekcie <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> metodę, która odpowiada za uruchamianie kreatora i zwrócenia wyniku.  
   
- Kreator jest odpowiedzialny za analizowanie tablicy ciągów i odpowiednio działają na ciągi. W ten sposób dzięki implementacji niestandardowych parametrów można utworzyć jednego kreatora, który wykonuje różne funkcje. Innymi słowy jednego kreatora może mieć trzy .vsz różne pliki. Każdy plik przekazuje różnych zestawów niestandardowych parametrów do sterowania zachowaniem kreatora w różnych sytuacjach.  
+ Kreator jest odpowiedzialny za analizowanie tablicę ciągów i odpowiednio działają na ciągi. W ten sposób przez zaimplementowanie parametry niestandardowe można utworzyć jednego kreatora, który wykonuje różne funkcje. Innymi słowy, jednego kreatora może mieć trzy różne *.vsz* plików. Każdy plik przekazuje różnych zestawów niestandardowych parametrów do sterowania zachowaniem kreatora w różnych sytuacjach.  
   
- Aby uzyskać więcej informacji, zobacz [kreatora (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md).  
+ Aby uzyskać więcej informacji, zobacz [pliku kreatora (.vsz —)](../../extensibility/internals/wizard-dot-vsz-file.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
  [Kreatorzy](../../extensibility/internals/wizards.md)   
- [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Plik kreatora (vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

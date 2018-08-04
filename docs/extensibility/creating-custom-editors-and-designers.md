@@ -14,92 +14,92 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0dbc0db9d5116e372d96b43059a393ac8f4b5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105294"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497615"
 ---
-# <a name="creating-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
-Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje edytora:  
+# <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
+Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje Edytor:  
   
--   Edytor podstawowych programu Visual Studio  
+-   Podstawowy edytor programu Visual Studio  
   
--   Edytory niestandardowych  
+-   Edytorach niestandardowych  
   
 -   Edytory zewnętrzne  
   
 -   Projektanci  
   
- Następujące informacje pomogą wybierz typ edytora, które są potrzebne.  
+ Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.  
   
 ## <a name="types-of-editor"></a>Typy edytora  
- Informacje o Edytorze podstawowych programu Visual Studio, zobacz [rozszerzanie edytora i usług języka](../extensibility/extending-the-editor-and-language-services.md).  
+ Aby uzyskać informacji na temat podstawowy edytor programu Visual Studio, zobacz [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md).  
   
-##### <a name="custom-editors"></a>Edytory niestandardowych  
- Niestandardowy Edytor to taki, który jest przeznaczony do pracy w specjalne okoliczności. Na przykład utworzyć edytor, którego zadaniem jest do odczytu i zapisu danych do określonego repozytorium, takich jak Microsoft Exchange server. Wybierz niestandardowego edytora, jeśli edytor, który współpracuje z danego typu projektu lub jeśli chcesz edytorze, który ma kilka określonych poleceń. Należy jednak pamiętać, że użytkownicy nie będą mogli używać niestandardowego edytora do edycji standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektów.  
+### <a name="custom-editors"></a>Edytorach niestandardowych  
+ Niestandardowego edytora jest taki, który jest przeznaczony do pracy w specjalne okoliczności. Na przykład może utworzyć edytor, którego funkcja jest do odczytu i zapisu danych do określonego repozytorium, takich jak Microsoft Exchange server. Wybierz niestandardowy edytor, jeśli chcesz, aby Edytor który współdziała z danego typu projektu, lub jeśli chcesz, aby edytor, który ma kilka konkretnych poleceń. Należy jednak pamiętać, że użytkownicy nie będą mogli używać niestandardowego edytora do edycji standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektów.  
   
- Edytor niestandardowy można użyć fabryki edytora i dodać informacje o edytorze w rejestrze. Jednak typ projektu skojarzony z edytora niestandardowego można utworzyć wystąpienia niestandardowego edytora w inny sposób.  
+ Niestandardowy Edytor użyć fabryki edytora i Dodaj informacje o Edytorze do rejestru. Jednakże typ projektu, skojarzony z edytora niestandardowego można utworzyć wystąpienie edytora niestandardowego w inny sposób.  
   
- Edytor niestandardowy umożliwia Aktywacja w miejscu lub uproszczone osadzanie zaimplementować widoku.  
+ Niestandardowy edytor, można użyć aktywacji w miejscu lub uproszczone osadzanie do zaimplementowania widoku.  
   
-##### <a name="external-editors"></a>Edytory zewnętrzne  
- Edytory zewnętrzne są edytory, które nie są zintegrowane w programie Visual Studio, na przykład Microsoft Word, Notatnika lub programu Microsoft FrontPage. Takie edytora może wywołać, jeśli, na przykład tekst do niego z VSPackage. Edytory zewnętrzne rejestrować i może służyć poza programem Visual Studio. Po wywołań zewnętrznego edytora i można ją osadzić w oknie hosta, następnie wyświetlany w oknie w środowisku IDE. Jeśli nie, następnie IDE tworzy osobne okno dla niego.  
+### <a name="external-editors"></a>Edytory zewnętrzne  
+ Edytory zewnętrzne są edytory, które nie są zintegrowane z Visual Studio, takich jak Microsoft Word, program Notatnik lub program Microsoft FrontPage. Jeśli, na przykład, przekazujesz tekstu do niego z Twojego pakietu VSPackage, może wywołać takich edytora. Edytory zewnętrzne rejestrują się i mogą być używane poza programem Visual Studio. Gdy wywołujesz edytor zewnętrzny i mogą być osadzone w oknie hosta, następnie pojawi się on okna w IDE. Jeśli nie, następnie tworzy osobne okno środowiska IDE dla niego.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Metoda ustawia priorytet dokumentu za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wyliczenia. Jeśli `DP_External` jest określona, plik może otworzyć zewnętrznego edytora.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Metody Ustawia priorytet dokumentu przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wyliczenia. Jeśli `DP_External` jest określona, plik może otworzyć zewnętrznego edytora.  
   
-## <a name="editor-design-decisions"></a>Decyzje dotyczące projektu edytora  
- Następujące pytania dotyczące projektu pomoże Ci wybrać typ edytora najlepiej nadaje się do aplikacji:  
+## <a name="editor-design-decisions"></a>Decyzje dotyczące projektu w edytorze  
+ Na następujące pytania projekt ułatwią wybierz typ edytora najlepiej nadaje się do aplikacji:  
   
--   Aplikacja zapisze dane w plikach lub nie? Jeśli jego danych zostanie zapisany w plikach, zostaną one w formacie niestandardowych lub standard?  
+-   Aplikacja zapisze dane w plikach czy nie? Jeśli będzie zapisywał dane w plikach, będą one w formacie niestandardowych lub standardowych?  
   
-     Jeśli używasz standardowy format pliku innych typów projektów oprócz projektu będzie mogła otwierać i odczytu/zapisu danych do nich. Jeśli używasz formatu niestandardowego pliku, jednak tylko typ projektu będzie mogła otwierać i odczytu/zapisu danych do nich.  
+     Jeśli używasz formatu standardowego pliku, innych typów projektów, oprócz projektu będzie można otworzyć i odczytu/zapisu danych do nich. Jeśli używasz formatu niestandardowego pliku, jednak tylko typ projektu będzie do otwierania i odczytu/zapisu danych do nich.  
   
-     Jeśli projekt używa plików, należy dostosować standardowego edytora. Jeśli projekt nie korzystają z plików, ale raczej używa elementów w bazie danych lub inne repozytorium, należy utworzyć niestandardowego edytora.  
+     Jeśli projekt używa plików, należy dostosować standardowy edytor. Jeśli projekt nie korzysta z plików, ale raczej używa elementów w bazie danych lub w innym repozytorium, należy utworzyć niestandardowy Edytor.  
   
 -   Czy edytor potrzebuje do hostowania kontrolki ActiveX?  
   
-     Edytor obsługuje formantów ActiveX, następnie należy wdrożyć Edytor aktywacji w miejscu, w sposób opisany w [Aktywacja w miejscu](../extensibility/in-place-activation.md). Jeśli nie obsługuje formantów ActiveX, następnie za pomocą uproszczonego edytora osadzania albo dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślny edytor.  
+     Jeśli Edytor obsługuje formanty ActiveX, implementować edytora aktywacji w miejscu, co zostało opisane w [Aktywacja w miejscu](../extensibility/in-place-activation.md). Jeśli nie obsługuje kontrolki ActiveX, następnie użyj uproszczony Edytor osadzania lub dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnego edytora.  
   
--   Edytor będzie obsługiwać wiele widoków? Musi obsługiwać wiele widoków, jeśli chcesz, aby widoki edytora, aby były widoczne w tym samym czasie jako domyślny edytor.  
+-   Edytor obejmie wiele widoków? Musi obsługiwać wiele widoków, jeśli chcesz, aby widoki tego edytora, aby być widoczne w tym samym czasie jako domyślny edytor.  
   
-     Jeśli Edytor musi obsługiwać wiele widoków, dane dokumentu i obiekty widoku dokumentu edytora musi być oddzielnych obiektów. Aby uzyskać więcej informacji, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
+     Jeśli Edytor musi obsługiwać wiele widoków, dane dokumentu i dokumentu obiektów widoku edytora musi być oddzielnych obiektach. Aby uzyskać więcej informacji, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
   
-     Jeśli Edytor obsługuje wiele widoków, czy zamierzasz używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowego edytora tekstowego buforu implementacji (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu) dla obiekt danych dokumentu? Oznacza to, czy mają być obsługiwane z edytora widoku po stronie by-side z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor core? W tym celu jest podstawę Projektant formularzy.  
+     Jeśli Edytor obsługuje wiele widoków, czy zamierzasz używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowe implementację buforu tekstu edytora (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektów) dla obiektu danych dokumentu? Oznacza to, że chcesz obsługiwać usługi Edytor widoku side-by-side przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji? W tym celu jest podstawą projektanta formularzy...  
   
--   Jeśli potrzebujesz hosta zewnętrznego edytora, Edytor można osadzić wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+-   Jeśli musisz hostować edytor zewnętrzny edytor można osadzić wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Jeśli można ją osadzić, należy utworzyć okno hosta dla zewnętrznego edytora, a następnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> — metoda i zestaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartości wyliczenia `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
+     Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przewodnik: tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
- Wyjaśnia sposób tworzenia niestandardowego edytora.  
+ [Przewodnik: Tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ Wyjaśnia, jak utworzyć niestandardowy Edytor.  
   
- [Przewodnik: dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
- Opisano sposób dodawania funkcji do edytora niestandardowego.  
+ [Wskazówki: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ Opis sposobu dodawania funkcji do edytora niestandardowego.  
   
- [Inicjowanie projektanta i konfiguracja metadanych](../extensibility/designer-initialization-and-metadata-configuration.md)  
- Wyjaśniono, jak zainicjować projektanta.  
+ [Projektanta konfiguracji inicjowania i metadane](../extensibility/designer-initialization-and-metadata-configuration.md)  
+ Wyjaśnia, jak zainicjować projektanta.  
   
- [Dostarczanie obsługi polecenia Cofnij do projektantów](../extensibility/supplying-undo-support-to-designers.md)  
- Wyjaśniono, jak zapewnić obsługę cofania dla projektantów.  
+ [Podaj Obsługa polecenia Cofnij do projektantów](../extensibility/supplying-undo-support-to-designers.md)  
+ Wyjaśnia sposób zapewnienia Obsługa polecenia Cofnij do projektantów.  
   
- [Kolorowania składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
- Objaśniono różnicę między kolorowania w edytorze rdzeni i edytory niestandardowych.  
+ [Kolorowanie składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
+ Wyjaśnia różnicę pomiędzy kolorowania w edytorze podstawowych i w edytorach niestandardowych.  
   
- [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md)  
- Opisuje sposób nadawania danych dokumentów i widoków dokumentu w edytorach niestandardowych.  
+ [Dane dokumentu i Widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md)  
+ Wyjaśnia, jak wdrażać danych dokumentów i widoków dokumentu w edytorach niestandardowych.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)  
- Wyjaśniono, jak uzyskać dostępu do edytora core za pomocą starszej wersji interfejsu API.  
+ Wyjaśnia, jak uzyskać dostęp podstawowy edytor za pomocą starszej wersji interfejsu API.  
   
  [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)  
- Opisuje sposób nadawania usługi języka.  
+ Wyjaśnia, jak zaimplementować usługę języka.  
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Wyjaśniono, jak utworzyć elementy interfejsu użytkownika, zgodne z resztą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Wyjaśnia, jak utworzyć elementy interfejsu użytkownika, zgodne z pozostałą część [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

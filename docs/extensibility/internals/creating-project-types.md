@@ -14,50 +14,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa58b0195c0fbcf50cce0ac5300ab142c4de93d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a453e8ed6c59f242e8a3aadbf056f956aedcaca
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129961"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499919"
 ---
-# <a name="creating-project-types"></a>Tworzenie typów projektów
-Można rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez utworzenie nowego typu projektu. Aby utworzyć nowy typ projektu, należy poznać kilka koncepcji i wykonać kilka kroków. Poniższe tematy zawierają omówienie sposobu tworzenia typów projektów.  
+# <a name="create-project-types"></a>Tworzenie typów projektów
+Możesz rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , tworząc nowy typ projektu. Aby utworzyć nowy typ projektu, należy zrozumieć kilka koncepcji i wykonać kilka czynności. Omówienie sposobu tworzenia typów projektów można znaleźć w następujących tematach.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Decyzje projektowe dotyczące typów projektów](../../extensibility/internals/project-type-design-decisions.md)  
- W tym artykule omówiono elementu trwałości pliku projektu, a projekt mechanika decyzje, które należy podjąć przed utworzeniem nowego typu projektu.  
+ [Decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md)  
+ W tym artykule omówiono elementów, trwałość pliku projektu i decyzje projektowe mechanika zobowiązania, które należy podjąć przed utworzeniem nowego typu projektu.  
   
- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)  
- Zawiera omówienie kroków, które należy wykonać, aby utworzyć nowy typ projektu, który obsługuje zadań programistycznych jako edytowanie kodu i kompilowanie, kompilowanie, debugowanie i wdrażanie aplikacji w projekcie.  
+ [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ Omówienie kroków, które należy wykonać, aby utworzyć nowy typ projektu, który obsługuje zadania programowania, takie jak edytowanie kodu i kompilowanie, tworzenie, debugowanie i wdrażanie aplikacji w projekcie.  
   
  [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
- Zawiera informacje o tym, jak do udostępniania i umożliwia tworzenie wystąpień nowy projekt fabrykę projektów.  
+ Zawiera informacje dotyczące sposobu i fabrykę projekt do tworzenia wystąpień tego nowego projektu.  
   
  [Rejestrowanie typu projektu](../../extensibility/internals/registering-a-project-type.md)  
- Zawiera przykłady kodu instrukcji z rejestru zapewniające domyślnych ścieżek i danych i tabeli zawierające wpisy z rejestru skryptu dla każdej instrukcji.  
+ Zawiera przykłady kodu instrukcji z rejestru, które zapewniają domyślnych ścieżek i danych i tabeli, które zawierają wpisy z rejestru skryptu dla każdej instrukcji.  
   
  [Trwałość projektu](../../extensibility/internals/project-persistence.md)  
- W tym artykule omówiono używanie `IPersistFileFormat` utrwalić zarówno w plikach, jak i obiektów na podstawie pliku projektu.  
+ Omawia stosowanie `IPersistFileFormat` można utrwalić zarówno w plikach, jak i obiekty nie opartych na pliku projektu.  
   
- [Korzystanie z programu MSBuild](../../extensibility/internals/using-msbuild.md)  
- W tym artykule opisano, jak używać danego typu projektu [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] kompilacji aparatu, aby umożliwić użytkownikom kompilacji z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i w wierszu polecenia.  
+ [Użyj programu MSBuild](../../extensibility/internals/using-msbuild.md)  
+ W tym artykule opisano, jak przy użyciu typu projektu [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] aparatu, aby umożliwić użytkownikom opracowano na podstawie kompilacji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i w wierszu polecenia.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Opisano architekturę kodu, takie jak wyświetlanie narzędzia **przeglądarki obiektów** i **widoku klasy** okna. Opisuje interfejsy i metody służące do zaimplementowania przeglądania obiektów w pakiecie VSPackage.  
+ Wyjaśnia architektury kodu, takich jak wyświetlanie narzędzia **przeglądarki obiektów** i **Widok klas** okna. W tym artykule opisano interfejsy i metody, które są używane do implementowania przeglądania obiektów w VSPackage.  
   
- [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)  
- W tym artykule omówiono znaczenie, które projekty odtwarzać przy określaniu, edytor, którego jest używany podczas otwierania elementu projektu i jak można manipulować zasoby projektu.  
+ [Dodaj projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)  
+ W tym artykule omówiono znaczenia pełniące projektów w określaniu, który Edytor służy po otwarciu elementu projektu i jak mogą być zmieniane zasobów projektu.  
   
  [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)  
- Pokazuje sposób zapewniają VSPackage własną unikatową tożsamość i zawijanie z biblioteki DLL pakiet VSPackage i inne informacje w pakiet Instalatora Windows (. Plik MSI) w przypadku wdrożeń na klientach.  
+ Pokazuje udzielanie Twojego pakietu VSPackage własną unikatową tożsamość i jak opakowywać Twojego pakietu VSPackage bibliotek DLL i inne informacje w pakiet Instalatora Windows (*. MSI* plików) do wdrożenia klientów.  
   
  [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Opisuje sposób [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchie widoków i adresów.  
+ W tym artykule opisano sposób [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchie widoków i adresów.  
   
  [Pakiety VSPackage](../../extensibility/internals/vspackages.md)  
- Zawiera omówienie pakiet VSPackage, instalowalnych obiektu COM, rozszerzający [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska i opisano, jak wdrożyć własny pakiet VSPackage.  
+ Omówienie pakietu VSPackage, możliwe do zainstalowania obiektu COM, który rozszerza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska i w tym artykule omówiono sposób implementacji własnych pakietu VSPackage.  
   
  [Typy projektów](../../extensibility/internals/project-types.md)  
- Omówiono sposoby używania projektów do modyfikowania kodu, skompiluj i kompilacji kodu, uruchomić i debugowania kodu i linki do szczegółowych tematów dotyczących sposobu tworzenia typów projektów.
+ W tym artykule omówiono sposób używania projektów można zmodyfikować kod, Kompiluj i kompilowanie kodu i uruchamiać oraz debugować kod i zawiera łącza do szczegółowych tematów dotyczących sposobu tworzenia typów projektów.

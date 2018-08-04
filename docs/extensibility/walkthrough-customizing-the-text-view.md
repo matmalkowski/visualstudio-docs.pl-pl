@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb4762a422102b91c44d755d387168ab0572f2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142085"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498409"
 ---
-# <a name="walkthrough-customizing-the-text-view"></a>Wskazówki: Dostosowywanie widoku tekstu
-Można dostosować widoku tekstu, zmieniając dowolne z następujących właściwości w jego format edytora mapy:  
+# <a name="walkthrough-customize-the-text-view"></a>Wskazówki: Dostosowywanie widoku tekstu
+Widok tekstu można dostosować, zmieniając dowolne z następujących właściwości w mapie jego format edytora:  
   
 -   Margines wskaźnika  
   
@@ -31,33 +31,33 @@ Można dostosować widoku tekstu, zmieniając dowolne z następujących właści
   
 -   Zaznaczony tekst  
   
--   Nieaktywnego zaznaczonego tekstu (to znaczy zaznaczonego tekstu, który utraciła fokus)  
+-   Nieaktywny zaznaczony tekst (czyli zaznaczonego tekstu, który utraciła fokus)  
   
--   Widoczne odstępu  
+-   Widoczne odstępy  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Tworzenie projektu MEF  
+## <a name="create-a-mef-project"></a>Utwórz projekt MEF  
   
-1.  Tworzenie projektu C# VSIX. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projektu VSIX**.) Nazwa rozwiązania `ViewPropertyTest`.  
+1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `ViewPropertyTest`.  
   
-2.  Dodaj szablon elementu klasyfikatora edytora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Dodaj szablon elementu edytora klasyfikatora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Usuń pliki istniejące klasy.  
+3.  Usuń istniejące pliki klasy.  
   
-## <a name="defining-the-content-type"></a>Definiowanie typu zawartości  
+## <a name="define-the-content-type"></a>Zdefiniowanie typu zawartości  
   
 1.  Dodaj plik klasy i nadaj mu nazwę `ViewPropertyModifier`.  
   
-2.  Dodaj następujące `using` dyrektywy:  
+2.  Dodaj następujący kod `using` dyrektywy:  
   
      [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
      [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  Deklarowanie klasy o nazwie `TestViewCreationListener` dziedziczący po <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Wyeksportuj tej klasy, z następującymi atrybutami:  
+3.  Zadeklaruj klasę o nazwie `TestViewCreationListener` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Eksportuj tej klasy, z następującymi atrybutami:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Określanie typu zawartości, którego dotyczy ten odbiornika.  
+    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Aby określić typ zawartości, do której stosują się tego odbiornika.  
   
     -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Aby określić roli tego odbiornika.  
   
@@ -69,30 +69,30 @@ Można dostosować widoku tekstu, zmieniając dowolne z następujących właści
      [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
      [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
-## <a name="changing-the-view-properties"></a>Zmiana właściwości widoku  
+## <a name="change-the-view-properties"></a>Zmień właściwości widoku  
   
-1.  Implementowanie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metody, aby właściwości widoku są zmieniane po otwarciu widoku. Aby wprowadzić zmiany, Znajdź najpierw <xref:System.Windows.ResourceDictionary> odpowiadający aspekt widoku, który ma zostać znaleziony. Zmień odpowiednie właściwości w słowniku zasobów, a następnie ustaw właściwości. Partii wywołań <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> metody wywołując <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> metoda przed ustawieniem właściwości, a następnie <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> po ustawieniu właściwości.  
+1.  Konfigurowanie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metody, aby właściwości widoku zostaną zmienione po otwarciu widoku. Aby wprowadzić zmianę, najpierw Znajdź <xref:System.Windows.ResourceDictionary> , który odpowiada aspekt widoku, którą chcesz znaleźć. Następnie należy zmienić odpowiednie właściwości w słowniku zasobów i ustaw właściwości. Batch wywołania <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> metoda przez wywołanie metody <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> metoda przed ustawieniem właściwości i następnie <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> po ustawieniu właściwości.  
   
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
+## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu  
   
 1.  Skompiluj rozwiązanie.  
   
-     Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio zostanie uruchomiony.  
+     Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio został uruchomiony.  
   
-2.  Utwórz plik tekstowy i wpisz tekst.  
+2.  Utwórz plik tekstowy i wpisz jakiś tekst.  
   
-    -   Daszek Zastąp należy turkusowy i karetki wstawiania powinna być amarantowy.  
+    -   Daszek wstawiania powinny być amarantowy i karetki zastępowania powinna być turkusowy.  
   
-    -   Margines wskaźnika (do lewej strony widoku tekstu) powinna być jasny zielony.  
+    -   Margines wskaźnika (po lewej stronie widoku tekstu) powinna być światła zielony.  
   
-3.  Zaznacz tekst, który został wpisany. Kolor tekstu zaznaczonego powinien być jasny różowy.  
+3.  Wybierz wpisany tekst. Kolor tekstu zaznaczonego powinny być światła różowy.  
   
-4.  Gdy tekst jest zaznaczony, kliknij w dowolnym miejscu poza oknem tekstu. Kolor tekstu zaznaczonego powinna być ciemnoróżowy.  
+4.  Gdy tekst jest zaznaczony, kliknij w dowolnym miejscu poza okna tekstowego. Kolor tekstu zaznaczonego powinna być ciemny róż.  
   
-5.  Włącz widoczne odstępu. (Na **Edytuj** menu wskaż **zaawansowane** , a następnie kliknij przycisk **widoku biały znak**). Wpisz tekst niektóre karty. Czerwone strzałki, które reprezentują kartach powinien być wyświetlany.  
+5.  Włącz widoczne białe znaki. (Na **Edytuj** menu wskaż **zaawansowane** a następnie kliknij przycisk **Wyświetl białe znaki**). Niektóre karty można wpisać tekst. Czerwone strzałki, które reprezentują kart powinna być wyświetlana.  
   
-## <a name="see-also"></a>Zobacz też  
- [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Zobacz także  
+ [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)

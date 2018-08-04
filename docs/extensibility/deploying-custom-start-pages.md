@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie niestandardowych Start stron | Dokumentacja firmy Microsoft
+title: Wdrażanie niestandardowych stron początkowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,90 +14,90 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdbd301d48b0133268a40614178040271fcfc34
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237643"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497930"
 ---
 # <a name="deploy-custom-start-pages"></a>Wdrażanie niestandardowych stron Start
 
-Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopiowania plików do poprawnych lokalizacji na komputerze docelowym.
+Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopiowania plików na poprawne lokalizacje na komputerze docelowym.
 
-## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>VSIX wdrożenia za pomocą szablonu projektu strony Start
+## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Wdrożenie VSIX przy użyciu szablonu projektu strona startowa
 
-Podczas tworzenia strony początkowej za pomocą szablonu projektu strony początkowej, a następnie Skompiluj projekt programu Visual Studio tworzy plik .vsix, którą można dystrybuować. Pakowanie strony początkowej w pliku .vsix zapewnia następujące opcje wdrażania, w zależności od zamierzonego odbiorców:
+Podczas tworzenia strony początkowej przy użyciu szablonu projektu strony początkowej, a następnie skompilowanie projektu, Visual Studio tworzy *.vsix* pliku, którą można dystrybuować. Pakowanie strony początkowej w *.vsix* plików udostępnia następujące opcje wdrażania, w zależności od Twojego odbiorców:
 
--   Możesz umieścić plik .vsix w udziale sieciowym lub w publicznej witrynie sieci Web. Strona początkowa jest instalowany automatycznie podczas otwierania tego pliku.
+-   Możesz umieścić *.vsix* plik w udziale sieciowym lub w publicznej witrynie sieci Web. Gdy plik zostanie otwarty, strona startowa jest instalowana automatycznie.
 
--   Możesz przekazać plik .vsix [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryna sieci Web, dzięki czemu użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzenia**.
+-   Możesz przekazać *.vsix* plik [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, tak aby użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzeń**.
 
-Szablon projektu strony początkowej tworzy kopię domyślne Visual Studio — strona początkowa, dzięki czemu można modyfikować kopii i zachować oryginalne.
+Szablon projektu strona początkowa tworzy kopię domyślnego programu Visual Studio strony początkowej, można modyfikować, kopiować i zachować oryginalne.
 
-Szablon projektu strony początkowej można uzyskać za pomocą **Menedżera rozszerzenia** lub pobrać z witryny sieci Web.
+Szablon projektu strona startowa można uzyskać za pomocą **Menedżera rozszerzeń** lub pobrać z witryny sieci Web.
 
-## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Wdrożenie VSIX bez użycia szablonu projektu strony Start
- Pomyślne wdrożenie VSIX wymaga można zainstalować w folderach, które są rozpoznawane przez proces rejestracji VSIX i przez rozszerzenie **Menedżera rozszerzenia**. Ponieważ szablon projektu strony początkowej określa już prawidłowe foldery, zalecane jest użycie go w każdym przypadku, gdy chcesz rozszerzenie VSIX wdrożenia pakietu. Jednak jeśli przypadek, w którym nie można użyć szablonu, można utworzyć wdrożenia VSIX bez korzystania z niego.
+## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Wdrożenie VSIX bez przy użyciu szablonu projektu strona startowa
+ Pomyślne wdrożenie VSIX wymaga rozszerzenia do zainstalowania w folderach, które są rozpoznawane przez proces rejestracji VSIX i przez **Menedżera rozszerzeń**. Ponieważ szablon projektu strona startowa już określa prawidłowe foldery, zaleca się używać go zawsze wtedy, gdy chcesz pakietu rozszerzenia VSIX wdrożenia. Jednak jeśli przypadek, w której nie można użyć tego szablonu, można utworzyć wdrożenia VSIX bez korzystania z niego.
 
- Aby utworzyć wdrożenie VSIX bez użycia szablonu projektu strony początkowej, należy najpierw utworzyć plik .vsix dla strony początkowej w jeden z tych dwóch sposobów:
+ Aby utworzyć wdrożenie VSIX bez przy użyciu szablonu projektu strony początkowej, należy najpierw utworzyć *.vsix* pliku strony początkowej w jeden z następujących dwóch sposobów:
 
--   Dodając niestandardowe pliki strony początkowej do pustego projektu VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
+-   Dodając niestandardowe pliki strony początkowej do pusty projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
 
--   Tworząc ręcznie .vsix plik. Aby ręcznie utworzyć plik .vsix:
+-   Za pomocą ręcznego tworzenia *.vsix* pliku. Aby utworzyć *.vsix* pliku ręcznie:
 
-    1.  Utwórz plik extension.vsixmanifest i pliku XML [Content_Types] w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+    1.  Tworzenie *extension.vsixmanifest* pliku i *[Content_Types] .xml* plik w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  W Eksploratorze Windows kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowane. Zmień nazwę wynikowy plik zip na Filename.vsix, gdzie nazwa pliku jest nazwą pliku do dystrybucji, który instaluje pakiet.
+    2.  W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk **Wyślij do**, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy *zip* plik *Filename.vsix*, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
 
- Dla programu Visual Studio do rozpoznawania stronę startową `Content Element` VSIX Manifest musi zawierać `CustomExtension Element` mający `Type` ustawić atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX jest wyświetlana w **dostosowanie strony początkowej** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenia]** *Nazwa rozszerzenia*.
+ Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.
 
- Jeśli strona początkowa pakiet zawiera zestawy, należy dodać powiązanie ścieżkę rejestracji, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera plik .pkgdef zawiera następujące informacje.
+ Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie ścieżka rejestracji tak, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera *.pkgdef* pliku, który zawiera następujące informacje.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
 "$PackageFolder$"=""
 ```
 
-### <a name="vsix-deployment-for-all-users"></a>VSIX wdrożenia dla wszystkich użytkowników
- Domyślnie rozszerzenia wdrożone w pakietach VSIX instalować tylko dla bieżącego użytkownika. Istnieje możliwość instalacji strony początkowej dla wszystkich użytkowników komputera docelowego przez utworzenie wdrożenia u wszystkich użytkowników.
+### <a name="vsix-deployment-for-all-users"></a>Wdrożenie VSIX dla wszystkich użytkowników
+ Domyślnie rozszerzenia wdrożone w pakietów VSIX instalować tylko dla bieżącego użytkownika. Istnieje możliwość instalacji strona startowa dla wszystkich użytkowników komputera docelowego, tworząc wdrożenia wszystkich użytkowników.
 
-#### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie u wszystkich użytkowników
+### <a name="to-create-an-all-users-deployment"></a>Aby utworzyć wdrożenie wszystkich użytkowników
 
-1.  Otwórz plik extension.vsixmanifest w widoku kodu.
+1.  Otwórz *extension.vsixmanifest* plików w widoku kodu.
 
-2.  W `Identifier` Dodaj element manifestu vsix `AllUsers` element, który ma wartość `true`.
+2.  W `Identifier` element manifestu vsix dodawania `AllUsers` element, który ma wartość `true`.
 
     ```
     <AllUsers>true</AllUsers>
     ```
 
-     Powoduje to Instalatora vsix, aby monitować o podanie uprawnień administratora, a następnie zainstaluj pliki \Common7\IDE\Extensions.
+     Powoduje to, że Instalator vsix monit o podanie uprawnień administratora, a następnie zainstalować pliki do *\Common7\IDE\Extensions*.
 
-3.  Otwórz plik .pkgdef.
+3.  Otwórz *.pkgdef* pliku.
 
-4.  Modyfikowanie .pkgdef można ustawić domyślną strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* to nazwa pliku .xaml, która zawiera stronę początkową.
+4.  Modyfikowanie *.pkgdef* do ustawiania domyślnej strony początkowej w obszarze HKLM, dodając następujące polecenie, gdzie *MyStartPage.xaml* nazywa się *.xaml* pliku, który zawiera uruchamiania Strona.
 
      [$RootKey$ \StartPage\Default]
 
      "Identyfikator Uri"="$PackageFolder$\\*MyStartPage.xaml*"
 
-     Ta wartość informuje Visual miały do wyszukiwania w nowej lokalizacji strony początkowej.
+     Oznacza to, Visual Studio do wyszukania w nowej lokalizacji strony początkowej.
 
-## <a name="file-copy-deployment"></a>Wdrożenia kopiowania plików
- Nie trzeba utworzyć plik .vsix wdrażania niestandardowej strony początkowej. Zamiast tego możesz skopiować znaczniki i pliki pomocnicze bezpośrednio w folderze \StartPages\ użytkownika. **Dostosowanie strony początkowej** listy na **uruchamiania** opcje strona zawiera listę wszystkich plików .xaml w tym folderze, podając ścieżkę — na przykład %USERPROFILE%\My Documents\Visual Studio  *Wersja*\StartPages\\*nazwę pliku*.xaml. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy skopiować je i wklej je w folderze \PrivateAssemblies\.
+## <a name="file-copy-deployment"></a>Wdrażanie kopii plików
+ Nie trzeba tworzyć *.vsix* plik, aby wdrożyć niestandardowej strony początkowej. Zamiast tego można kopiować znaczników i plików pomocniczych, bezpośrednio do użytkownika * \StartPages\* folderu. **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony wyświetla każdy *.xaml* plików w tym folderze, podając ścieżkę — na przykład *% \StartPages Documents\Visual Studio {version} USERPROFILE%\My\\{nazwa pliku} .xaml*. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy skopiować je i wklej je w * \PrivateAssemblies\* folderu.
 
- Do dystrybucji strony początkowej, utworzony bez tworzenia pakietów w pliku .vsix zalecamy Użyj strategii kopię podstawowego pliku na przykład skrypt wsadowy lub innych technologii wdrażania, które umożliwia umieszczenie plików w katalogach wymagane.
+ Aby dystrybuować strony początkowej, który został utworzony bez pakowanie w *.vsix* pliku, zaleca się użyć strategii kopiowania podstawowy plik, na przykład skryptu wsadowego, lub innej technologii wdrożenia, który pozwala umieścić pliki w wymagane katalogi.
 
 ### <a name="to-manually-install-a-custom-start-page"></a>Aby ręcznie zainstalować niestandardowej strony początkowej
 
-1.  Plik .xaml, który zawiera kod znaczników strony początkowej oraz wszelkie pliki pomocnicze innego niż zestawy, skopiuj i wklej je w folderze \StartPages\ użytkownika.
+1.  Kopiuj *.xaml* pliku, który zawiera znaczniki strony początkowej, oraz wszelkie pliki pomocnicze, inne niż zestawy i wklej je w użytkownika * \StartPages\* folderu.
 
-2.  Jeśli strona początkowa wymaga zestawy, skopiuj je i wklej je w... \\ *Folder instalacji programu visual Studio*\Common7\IDE\PrivateAssemblies\\.
+2.  Jeśli strona startowa wymaga zestawów, skopiuj je i wklej je w *... \\\Common7\IDE\PrivateAssemblies {folder instalacji programu visual Studio}\\*.
 
-3.  W **dostosowanie strony początkowej** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md).
+3.  W **Dostosuj stronę początkową** listy na **uruchamiania** opcji wybierz Nowa strona początkowa. Aby uzyskać więcej informacji, zobacz [Dostosuj stronę początkową](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)
-- [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)
+- [Dodaj kontrolkę użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)

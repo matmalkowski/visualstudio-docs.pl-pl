@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251936"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498970"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -155,9 +155,7 @@ Domyślnie debuger zaczyna się od program standardowy uruchamianie języka Pyth
 | **Cesta k Interpretu** | Zastępuje ścieżkę skojarzoną z bieżącego środowiska. Wartość może być przydatne w przypadku uruchamiania skryptu za pomocą niestandardowych interpretera. |
 | **Zmienne środowiskowe** | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci \<NAME > =\<wartość >. Ponieważ to ustawienie zostanie zastosowane ostatnie, u góry, wszelkie istniejące zmienne środowiskowe globalnego i po `PYTHONPATH` jest ustawiona zgodnie z ustawieniem ścieżki wyszukiwania może służyć do ręcznie przezwyciężyć żadnego z tych innych zmiennych. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Natychmiastowe i interaktywne systemu windows
+## <a name="immediate-and-interactive-windows"></a>Bezpośrednie i interakcyjne systemu windows
 
 Istnieją dwa okna interaktywnego, można użyć podczas sesji debugowania: standardowy programu Visual Studio **bezpośrednie** oknie i **Python debugowanie interakcyjne** okna.
 

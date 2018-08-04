@@ -1,5 +1,5 @@
 ---
-title: Formant symbolu (VSPackage kontroli źródła) | Dokumentacja firmy Microsoft
+title: Kontrola symboli (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3787b0afad7f89743950a922d5b19c2d204bdd9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c791647e9718686c5a6c7cf250ca84c74aabbfcc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130719"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499253"
 ---
-# <a name="glyph-control-source-control-vspackage"></a>Formant symbolu (VSPackage kontroli źródła)
-Część głęboką integrację dostępne do VSPackages kontroli źródła jest możliwość wyświetlania własnych obiektów glyphs informującą o stanie elementów pod kontrolą źródła.  
+# <a name="glyph-control-source-control-vspackage"></a>Kontrola symboli (kontroli źródła pakietu VSPackage)
+Głęboka integracja dostępne dla pakietów VSPackage kontroli źródła jest możliwość wyświetlania własne symbole w celu wskazania stanu elementów pod kontrolą źródła.  
   
-## <a name="levels-of-glyph-control"></a>Poziomy kontroli symbolu  
- Stan symbolu jest ikonę, która wskazuje bieżący stan elementu podczas wyświetlania, na przykład w **Eksploratora rozwiązań** lub **widoku klasy**. Kontroli źródła pakiet VSPackage można wykonywać dwa poziomy kontroli symbolu. Można ograniczyć wybór symboli do wstępnie zdefiniowane symbole udostępnione przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE lub ją zdefiniować niestandardowy zestaw symboli do wyświetlenia.  
+## <a name="levels-of-glyph-control"></a>Poziomy kontrola symboli  
+ Symbol stanu znajduje się ikona, który wskazuje bieżący stan elementem, gdy jest wyświetlana, na przykład w **Eksploratora rozwiązań** lub **Widok klas**. Pakietu VSPackage kontroli źródła można wykonywać dwa poziomy kontrola symboli. Można ograniczyć, wybór symbole do zestawu wstępnie zdefiniowane symbole dostarczone przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska IDE lub można zdefiniować niestandardowy zestaw symbole, które mają być wyświetlane.  
   
-### <a name="default-set-of-glyphs"></a>Domyślny zestaw symboli  
- Aby ustalić symboli stanu, które są skojarzone z elementem w **Eksploratora rozwiązań**, projektu żądań symbolu stanu z używania kontroli źródła <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>. Kontroli źródła pakiet VSPackage może zdecydować zachować wybór symboli ograniczone do wstępnie zdefiniowane symbole udostępnione przez IDE. W takim przypadku pakiet VSPackage odsyła tablicy wartości reprezentujących wyliczenia symbolu, które są zdefiniowane w vsshell.idl. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon> . Jest to wstępnie zdefiniowane symbole ustawić IDE, takich jak kłódka dla symbolu "Zaewidencjonowania" i znacznik wyboru jako symbolu "Wyewidencjonowany".  
+### <a name="default-set-of-glyphs"></a>Domyślny zestaw glifów  
+ Aby określić stan symbole, które są skojarzone z elementem w **Eksploratora rozwiązań**, projekt żąda symbol stanu z kontroli źródła przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>. Kontroli źródła pakietu VSPackage może zadecydować, aby zachować wybór symbole ograniczone do wstępnie zdefiniowane symbole dostarczane przez środowisko IDE. W tym przypadku pakietu VSPackage odsyła tablicę wartości reprezentujący Symbol wyliczenia, które są zdefiniowane w *vsshell.idl*. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>. Jest to zestaw wstępnie zdefiniowanych symbole ustawione przez środowisko IDE, takie jak kłódka glifu zaewidencjonowania i znacznik wyboru glifu wyewidencjonowany.  
   
-### <a name="custom-set-of-glyphs"></a>Niestandardowy zestaw symboli  
- Kontroli źródła pakiet VSPackage można używać własnej symboli unikatowy "wygląd i działanie" po jej zainstalowaniu. Gdy nowy pakiet VSPackage kontroli źródła jest aktywny, powinno być możliwe jej uruchomienie, przy użyciu własnego symboli, nawet jeśli pakiet VSPackage kontroli źródła poprzedniego jest nadal załadowany, ale nieaktywne. W tym trybie kontroli źródła pakiet VSPackage nadal można użyć istniejącego ikony aby zapewnić spójne z wyszukiwania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Jeśli wybiera.  
+### <a name="custom-set-of-glyphs"></a>Niestandardowy zestaw glifów  
+ Pakietu VSPackage kontroli źródła może na użytek własny symbole unikatowy wygląd i działanie po jej zainstalowaniu. W przypadku nowego pakietu VSPackage kontroli źródła jest aktywna, powinno być możliwe jej uruchomienie, przy użyciu własnej symbole, nawet jeśli pakietu VSPackage kontroli poprzedniego źródła nadal jest załadowany, ale nieaktywne. W tym trybie kontroli źródła pakietu VSPackage nadal można użyć istniejącej ikony utrzymane, gdy się spójne z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Jeśli zdecyduje się je.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> Usługi obsługuje interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>, który opcjonalnie można wdrożyć pakiet VSPackage i który będzie wymagane podanie IDE. Gdy żądanie, sprawia, że IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z kolei spróbuje uzyskać ten interfejs z kontroli źródła obecnie zarejestrowaną pakiet VSPackage. Jeśli istnieje interfejs w zarejestrowany pakiet VSPackage, żądania IDE dla niestandardowych symboli zakończy się pomyślnie; w przeciwnym razie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE używa swojego domyślnego zestawu symboli.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> Usługi obsługuje interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>, który pakietu VSPackage może opcjonalnie zaimplementować i który będzie wymagane podanie IDE. Gdy środowisko IDE zgłasza żądanie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] z kolei będą próbować pobierać ten interfejs z kontroli źródła obecnie zarejestrowaną pakietu VSPackage. Interfejs znajduje się w zarejestrowanej pakietu VSPackage, żądanie środowiska IDE dla niestandardowych symbole zakończy się pomyślnie; w przeciwnym razie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE używa domyślny zbiór symbole.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A> Metoda jest używana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stwierdza, aby uzyskać listę obrazów pokazywanie różnych kontroli źródła. Kontroli źródła pakiet VSPackage zwraca IDE dojścia do listy obrazów do jego niestandardowe symboli. IDE tworzy kopię listy obrazów w tym momencie i używa go później wybierz symboli do wyświetlenia. Jeśli nowy interfejs nie jest obsługiwana lub `IVsSccGlyphs::GetCustomGlyphList` metoda zwraca E_NOTIMPL, a następnie IDE pobiera jego symboli z listy domyślny symboli dostarczonych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A> Metoda jest używana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stwierdza, aby uzyskać listę obrazy przedstawiające różne kontroli źródła. Kontrola źródła pakietu VSPackage zwraca środowiska IDE dojścia do listy obrazów do swojej niestandardowej symbole. IDE tworzy kopię listy obrazów w tym momencie i używa go później wybrać symbole do wyświetlenia. Jeśli nie jest obsługiwana przez nowy interfejs lub `IVsSccGlyphs::GetCustomGlyphList` metoda zwraca `E_NOTIMPL`, a następnie IDE pobiera jego symbole z domyślną listę symbole dostarczonych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

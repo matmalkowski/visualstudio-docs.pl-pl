@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cffbdee3d1fc275e4bde54efda0cca5ac008155e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409725"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499906"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -92,7 +92,7 @@ Jeśli napotkasz problemy, instalowanie i uruchamianie języka Python w programi
 
 1. W oknie Instalatora wybierz **Modyfikuj**.
 
-1. Wybierz **języki programowania > narzędzi Python Tools for Visual Studio** i następnie **dalej**:
+1. Wybierz **języki programowania** > **narzędzi Python Tools for Visual Studio** i następnie **dalej**:
 
     ![Opcja PTVS w Instalatorze programu Visual Studio 2015](media/installation-vs2015.png)
 

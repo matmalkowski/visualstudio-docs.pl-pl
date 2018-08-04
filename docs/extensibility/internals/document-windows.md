@@ -1,5 +1,5 @@
 ---
-title: Dokument z systemem Windows | Dokumentacja firmy Microsoft
+title: Dokumentowanie Windows | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd5b77bfc853da1c6098c00110e75b9d9acb75
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf892b6d80358885f0da8e20a97bd9453c50f27
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129055"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499344"
 ---
 # <a name="document-windows"></a>Okna dokumentów
-W programie Visual Studio *okno dokumentu* jest skojarzony z oknem interfejsu wielu dokumentów (MDI) okna podrzędnego ramce. Okna dokumentów są zwykle używane do wyświetlanie i modyfikowanie kodu źródłowego lub tekstu, ale może to również obsługiwać inne typy funkcjonalności. Okna dokumentów:  
+W programie Visual Studio *okno dokumentu* jest oknem podrzędnym ramce, który jest skojarzony z okna interfejsu wielu dokumentów (MDI). Okna dokumentów są zwykle używane do wyświetlania i modyfikacji kodu źródłowego lub tekstu, ale może to również obsługiwać inne typy funkcjonalności. Okna dokumentów:  
   
--   Można organizować w grupach osobnej karcie pozioma lub pionowa w obiekcie nadrzędnym MDI tak, aby wiele pliki mogą być wyświetlane w tym samym czasie.  
+-   Można organizować w osobnej karcie poziomej lub pionowej grupach w obiekcie nadrzędnym MDI tak, aby wiele plików mogą być wyświetlane w tym samym czasie.  
   
--   Może być zadokowany w dowolnej kolejności w obiekcie nadrzędnym MDI.  
+-   Może być zadokowane w dowolnej kolejności w elemencie nadrzędnym MDI.  
   
--   Może być za darmo przestawione.  
+-   Mogą być swobodnie przestawione.  
   
--   Są połączone w kolejności tabulacji inne okna MDI.  
+-   Są połączone w kolejności tabulacji na inne okna MDI.  
   
- Polecenia do grupowania zadokowane i przestawne można znaleźć w menu skrótów kartę okno dokumentu.  
+ Polecenia grupowania zadokowane i przestawne znajdują się w menu skrótów dla karty okna dokumentu.  
   
- Aby uzyskać więcej informacji dotyczących zachowania okna w programie Visual Studio, zobacz [dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).  
+ Aby uzyskać więcej informacji na temat zachowanie okna w programie Visual Studio, zobacz [dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).  
   
-## <a name="document-window-implementation"></a>Implementacji okna dokumentu  
- Okna dokumentów są tworzone z zastosowaniem edytora. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Interfejsu tworzy okna dokumentów w ramach tworzenia wystąpienia edytora. Aby uzyskać więcej informacji, zobacz [starszych interfejsów w edytorze](../../extensibility/legacy-interfaces-in-the-editor.md).  
+## <a name="document-window-implementation"></a>Implementacja okna dokumentów  
+ Okna dokumentów są tworzone przez zaimplementowanie edytora. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Interfejs tworzył okien dokumentu jako część tworzenia wystąpienia edytora. Aby uzyskać więcej informacji, zobacz [interfejsy starszej wersji, w edytorze](../../extensibility/legacy-interfaces-in-the-editor.md).  
   
 > [!NOTE]
->  Aby zapewnić Wstecz i do przodu punkty nawigacji w oknie, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfejsu. Edytor tekstu używa znacznikach tekstu, aby zidentyfikować punkty nawigacji w dokumencie.  
+>  Aby zapewnić Wstecz i przekazywać je punktów nawigacji w oknie, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfejsu. Edytor tekstu używa znaczników tekstu, aby zidentyfikować punkty nawigacji w dokumencie.  
   
-## <a name="the-running-document-table"></a>Uruchamianie tabeli dokumentu  
- IDE używa uruchomionej tabeli dokumentów (Normalizacją) do śledzenia stanu okna dokumentu. Normalizacją to mechanizm, przez który dokument systemu windows są powiadamiani o zdarzeń, takich jak zamknięcia rozwiązania lub plik został zmodyfikowany. Aby uzyskać więcej informacji, zobacz [systemem tabeli dokumentu](../../extensibility/internals/running-document-table.md).  
+## <a name="the-running-document-table"></a>Uruchamianie tabeli dokumentów  
+ IDE używa uruchamianie tabeli dokumentów (Normalizacją) umożliwia śledzenie stanu okna dokumentu. Normalizacją to mechanizm, przez który dokument systemu windows są powiadamiani o zdarzenia, takie jak po zamknięciu rozwiązania lub plik został zmodyfikowany. Aby uzyskać więcej informacji, zobacz [uruchamianie tabeli dokumentu](../../extensibility/internals/running-document-table.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Opóźnione ładowanie dokumentu](../../extensibility/internals/delayed-document-loading.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081686"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499393"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia protokołu Language Server Protocol
 
@@ -111,26 +111,6 @@ Aby utworzyć rozszerzenie usługi języka używany jest serwer oparty na LSP j�
 Następnie utwórz nowe, puste VSIXProject, przechodząc do **pliku** > **nowy projekt** > **Visual C#**  >   **Rozszerzalność** > **projekt VSIX**:
 
 ![Utwórz projekt vsix](media/lsp-vsix-project.png)
-
-W wersji zapoznawczej, a obsługa LSP będzie się w formularzu VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Deweloperzy rozszerzenia, którzy chcą Tworzenie rozszerzenia za pomocą serwerów języka LSP musi podjąć zależności, w tym pliku VSIX. W związku z tym, klienci chcą zainstalować rozszerzenie serwera języka **, należy najpierw zainstalować VSIX w wersji zapoznawczej klienta protokołu serwera języka.**
-
-Do zdefiniowania zależności VSIX, otwórz projektanta manifestu VSIX dla VSIX użytkownika (przez dwukrotne kliknięcie *source.extension.vsixmanifest* plik w projekcie) i przejdź do **zależności**:
-
-![Dodaj odwołanie do klienta protokołu serwera języka](media/lsp-reference-lsp-dependency.png)
-
-Tworzenie nowych zależności, jak pokazano poniżej:
-
-![Definiowanie language server protocol klienta zależności](media/lsp-define-lsp-dependency.png)
-
-* **Źródło**: definiowane ręcznie
-* **Nazwa**: Language Server Protocol klienta w wersji zapoznawczej
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Zakres wersji**: [1.0,2.0)
-* **Czym się rozpoznać zależności**: instalowane przez użytkownika
-* **Adres URL pobierania**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **Adres URL pobierania** musi być wypełnione, aby użytkownicy, instalowanie rozszerzenia wiedzieli, jak zainstalować wymagane zależności.
 
 ### <a name="language-server-and-runtime-installation"></a>Instalacja serwera i środowiska uruchomieniowego języka
 

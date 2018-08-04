@@ -1,5 +1,5 @@
 ---
-title: Implementowanie niestandardowych kategorii i Wyświetl elementy | Dokumentacja firmy Microsoft
+title: Implementowanie niestandardowych kategorii i wyświetlenie elementów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,118 +14,118 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9593a7addcd9a3f100f45f69e7e692c396e33bfe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dbb6744b925dac1bfa91a73024ef14ef9ad29ac
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134886"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499328"
 ---
-# <a name="implementing-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
-Pakiet VSPackage zapewnia kontrolę nad czcionki i kolory jego tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) za pomocą niestandardowych kategorii i wyświetlania elementów.
+# <a name="implement-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlania elementów
+Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) za pomocą niestandardowych kategorii i wyświetlenie elementów.
 
- Niestandardowe kategorie i Wyświetl elementy znajdują się na **czcionki i kolory** strony właściwości. Aby otworzyć **czcionki i kolory** na stronie właściwości **narzędzia** menu, kliknij przycisk **opcje**. Rozwiń węzeł **środowiska** , a następnie kliknij przycisk **czcionki i kolory**.
+ Niestandardowe kategorie i wyświetle elementy znajdują się na **czcionki i kolory** stronę właściwości. Aby otworzyć **czcionki i kolory** na stronie właściwości **narzędzia** menu, kliknij przycisk **opcje**. Rozwiń **środowiska** a następnie kliknij przycisk **czcionki i kolory**.
 
- Korzystając z tego mechanizmu, musi implementować VSPackages <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu i skojarzone interfejsy.
+ Korzystając z tego mechanizmu, należy zaimplementować pakietów VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfejsu i jego skojarzone interfejsy.
 
- W zasadzie mechanizm ten może służyć do modyfikowania wszystkich istniejących **wyświetlania elementów** i **kategorii** zawierające je. Jednak nie można stosować do modyfikowania **EditorCategory tekst** lub jego **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md).
+ W zasadzie mechanizm ten może służyć do modyfikowania wszystkich istniejących **wyświetlania elementów** i **kategorie** zawierające je. Jednak nie można stosować do modyfikowania **EditorCategory tekstu** lub jego **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [Przegląd czcionek i kolorów](../extensibility/font-and-color-overview.md).
 
- Aby wdrożyć niestandardowy **kategorii** lub **wyświetlania elementów**, pakiet VSPackage musi:
+ Aby zaimplementować niestandardowy **kategorie** lub **wyświetlania elementów**, pakietu VSPackage musi:
 
--   Tworzenie lub identyfikowanie kategorii w rejestrze.
+-   Tworzenie lub identyfikowanie kategorie w rejestrze.
 
-     Implementacja programu IDE **czcionki i kolory** strony właściwości używa tych informacji do poprawnie kwerendy usługi obsługujące danej kategorii.
+     Implementacja interfejsu środowiska IDE **czcionki i kolory** strona właściwości używa tych informacji do poprawnie zapytań dla usługi obsługi danej kategorii.
 
--   Tworzenie lub identyfikowanie grupy (opcjonalnie) w rejestrze.
+-   Tworzenie lub identyfikowanie grup (opcjonalnie) w rejestrze.
 
-     Może to być przydatne do zdefiniowania grupy, która reprezentuje sumę dwóch lub więcej kategorii. Jeśli zdefiniowano grupy, IDE automatycznie scala podkategorie i dystrybuuje wyświetlania elementów w obrębie grupy.
+     Może być przydatne do definiowania grupy, która reprezentuje sumę dwóch lub więcej kategorii. Grupa jest zdefiniowany, IDE automatycznie scala podkategorii i dystrybuuje wyświetlania elementów w obrębie grupy.
 
--   Implementuje Obsługa środowiska IDE.
+-   Implementowanie Obsługa środowiska IDE.
 
--   Obsługa zmiany czcionek i kolorów.
+-   Obsługa zmian czcionek i kolorów.
 
- Aby uzyskać informacje, zobacz [podczas uzyskiwania dostępu do przechowywanych czcionkę i ustawienia koloru](../extensibility/accessing-stored-font-and-color-settings.md).
+ Aby uzyskać informacje, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 
 ## <a name="to-create-or-identify-categories"></a>Aby utworzyć lub wskazać kategorii
 
--   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\`<Category>`]
+-   Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\ `<Category>`]*
 
-     *\<Kategoria >* niezlokalizowana nazwa kategorii.
+     *\<Kategoria >* to niezlokalizowana nazwa kategorii.
 
--   Wypełnij rejestru z dwóch wartości:
+-   Należy wypełnić rejestru za pomocą dwóch wartości:
 
     |Nazwa|Typ|Dane|Opis|
     |----------|----------|----------|-----------------|
-    |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID utworzone w celu identyfikacji kategorii.|
-    |Package|REG_SZ|Identyfikator GUID|Identyfikator GUID usługi pakiet VSPackage, która obsługuje kategorii.|
+    |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID, utworzony w celu identyfikowania tej kategorii.|
+    |Package|REG_SZ|Identyfikator GUID|Identyfikator GUID usługi pakietu VSPackage, która obsługuje kategorii.|
 
- Usługi określonego w rejestrze musi zapewniać implementację elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> odpowiedniej kategorii.
+ Usługa określone w rejestrze należy podać implementacja <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> odpowiedniej kategorii.
 
 ## <a name="to-create-or-identify-groups"></a>Aby utworzyć lub wskazać grupy
 
--   Utworzyć specjalny typ wpisu rejestru kategorii [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >* \FontAndColors\\  *\<grupy >*]
+-   Konstruowania specjalny typ wpisu rejestru kategorii *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<wersji programu Visual Studio >*\FontAndColors\\*  \<grupy >*]*
 
-     *\<grupy >* niezlokalizowana Nazwa grupy.
+     *\<grupy >* to niezlokalizowana Nazwa grupy.
 
--   Wypełnij rejestru z dwóch wartości:
+-   Należy wypełnić rejestru za pomocą dwóch wartości:
 
     |Nazwa|Typ|Dane|Opis|
     |----------|----------|----------|-----------------|
     |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID utworzone, aby zidentyfikować grupę.|
     |Package|REG_SZ|Identyfikator GUID|Identyfikator GUID usługi, która obsługuje kategorii.|
 
- Usługi określonego w rejestrze musi zapewniać implementację elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> dla odpowiedniej grupy.
+ Usługa określone w rejestrze należy podać implementacja <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> dla odpowiedniej grupy.
 
 ## <a name="to-implement-ide-support"></a>Obsługa środowiska IDE
 
--   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, który zwraca <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfejsu lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu IDE dla każdego **kategorii** lub grupy z podanym identyfikatorem GUID.
+-   Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, która zwraca <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfejsu lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu środowiska IDE dla każdego **kategorii** lub grupy z podanym identyfikatorem GUID.
 
--   Dla każdego **kategorii** obsługuje, pakiet VSPackage implementuje oddzielnego wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfejsu.
+-   Dla każdego **kategorii** ją obsługuje, pakietu VSPackage implementuje osobne wystąpienie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfejsu.
 
--   Metody implementowane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> podać IDE z:
+-   Metody implementowane za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> należy podać środowisko IDE z:
 
-    -   Wykaz **wyświetlania elementów** w **kategorii.**
+    -   Wykazy **wyświetlania elementów** w **kategorii.**
 
-    -   Nazwy Lokalizowalny **wyświetlania elementów**.
+    -   Lokalizowalne nazwy **wyświetlania elementów**.
 
-    -   Wyświetl informacje o każdym członku **kategorii**.
+    -   Wyświetlanie informacji dla każdego elementu członkowskiego **kategorii**.
 
     > [!NOTE]
     >  Każdy **kategorii** musi zawierać co najmniej jeden **wyświetlanego elementu**.
 
--   Używa IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu, aby zdefiniować związku kilka kategorii.
+-   IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejs zdefiniowanie sumę kilka kategorii.
 
-     Jego wdrożenie zapewnia IDE z:
+     Jego implementacja zapewnia środowisko IDE z:
 
-    -   Lista **kategorii** wchodzące w skład danej grupie.
+    -   Lista **kategorie** wchodzące w skład danej grupy.
 
-    -   Dostęp do wystąpień <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> obsługi każdego **kategorii** w obrębie grupy.
+    -   Dostęp do wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> obsługi każdego **kategorii** w obrębie grupy.
 
-    -   Nazwy grup lokalizowalny.
+    -   Nazwy grup możliwych do zlokalizowania.
 
--   Aktualizowanie IDE:
+-   Aktualizowanie środowiska IDE:
 
-     IDE przechowuje informacje o **czcionek i kolorów** ustawienia. W związku z tym po wszelkich zmianach IDE **czcionek i kolorów** konfiguracji, zaleca się upewnić, że pamięć podręczna jest aktualna.
+     IDE przechowuje informacje o **czcionek i kolorów** ustawienia. Dlatego po każdej modyfikacji IDE **czcionek i kolorów** konfiguracji, zaleca się upewnić, że pamięć podręczna jest nieaktualna.
 
- Aktualizacja pamięci podręcznej odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejsu i mogą być wykonywane globalnie lub tylko na wybranych elementów.
+ Aktualizowanie pamięci podręcznej odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs i mogą być wykonywane globalnie lub tylko na wybranych elementów.
 
-## <a name="to-handle-font-and-color-changes"></a>Aby obsługiwać czcionek i kolorów zmian
- Aby poprawnie obsługiwać kolorowania tekstu, który zawiera pakiet VSPackage, usługa kolorowania obsługujący pakiet VSPackage musi odpowiadać na zainicjowane przez użytkownika zmiany wprowadzane za pośrednictwem **czcionki i kolory** stronę właściwości. Pakiet VSPackage następującym cechom:
+## <a name="to-handle-font-and-color-changes"></a>Do obsługi zmian czcionek i kolorów
+ Aby prawidłowo obsługiwać kolorowanie tekst, który wyświetla pakietu VSPackage, usługa kolorowanie obsługi pakietu VSPackage musi odpowiedzieć na zainicjowanego przez użytkownika zmian za pomocą **czcionki i kolory** stronę właściwości. Pakietu VSPackage to realizowane przez:
 
--   Obsługa zdarzeń generowanych przez IDE zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
+-   Obsługa zdarzenia generowane przez środowisko IDE poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfejsu.
 
-     IDE wywołuje odpowiednią metodę po modyfikacji użytkownika **czcionki i kolory** strony. Na przykład wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metodę, jeśli wybrano nowej czcionki.
+     IDE, wywołuje odpowiednią metodę następujące modyfikacje użytkownika **czcionki i kolory** strony. Na przykład wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metody, jeśli wybrano opcję nowego czcionki.
 
      —lub—
 
--   Sondowanie w IDE dla zmian.
+-   Sondowanie środowisko IDE przeznaczone do zmiany.
 
-     Można to zrobić za pomocą systemu zaimplementowana <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu. Mimo że przede wszystkim dotyczące obsługi trwałości, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> — metoda pozwala uzyskać informacje dotyczące czcionek i kolorów **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do przechowywanych czcionkę i ustawienia koloru](../extensibility/accessing-stored-font-and-color-settings.md).
+     Można to zrobić za pomocą systemu zaimplementowane <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu. Mimo że przede wszystkim do obsługi trwałości, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metoda może służyć do uzyskiwania informacji czcionek i kolorów dla **wyświetlania elementów**. Aby uzyskać więcej informacji, zobacz [dostępu przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md).
 
     > [!NOTE]
-    >  Aby upewnić się, że wyniki uzyskane za pomocą sondowania są poprawne, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do ustalenia, czy czyszczenie pamięci podręcznej i aktualizacji są potrzebne przed wywołaniem metody pobierania <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
+    >  Aby upewnić się, że wyniki uzyskane za pomocą sondowania są poprawne, warto użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejs do ustalenia, czy potrzebne przed wywołaniem metody pobierania czyszczenie pamięci podręcznej i zaktualizuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
@@ -133,7 +133,7 @@ Pakiet VSPackage zapewnia kontrolę nad czcionki i kolory jego tekstu do [!INCLU
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
-- [Pobieranie czcionek i kolorów informacje dotyczące tekstu kolorowania](../extensibility/getting-font-and-color-information-for-text-colorization.md)
-- [Dostęp do przechowywanej czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md)
+- [Uzyskaj informacje czcionek i kolorów tekstu kolorowania](../extensibility/getting-font-and-color-information-for-text-colorization.md)
+- [Dostęp przechowywane ustawienia czcionek i kolorów](../extensibility/accessing-stored-font-and-color-settings.md)
 - [Porady: dostęp do wbudowanych czcionek i schemat kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
-- [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md)
+- [Omówienie czcionek i kolorów](../extensibility/font-and-color-overview.md)

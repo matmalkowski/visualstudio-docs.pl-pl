@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128177"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498171"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
-`SccStatus` Modułu wyliczającego zawiera nazwanych wartości stałej, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używany przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcja wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) szczegółowe informacje).  
+`SccStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcji wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) Aby uzyskać szczegółowe informacje).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -68,7 +68,7 @@ enum SccStatus {
  Plik jest wyewidencjonowany przez innego użytkownika.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Plik wyłącznie jest wyewidencjonowany.  
+ Plik jest wyewidencjonowany.  
   
  SCC_STATUS_OUTMULTIPLE  
  Plik jest wyewidencjonowany przez więcej niż jednego użytkownika.  
@@ -80,16 +80,16 @@ enum SccStatus {
  Plik został usunięty z projektu.  
   
  SCC_STATUS_LOCKED  
- Plik jest zablokowany; Brak wersji więcej dozwolone.  
+ Plik jest zablokowany; nie dozwolone więcej wersji.  
   
  SCC_STATUS_MERGED  
- Plik zostały scalone, ale nie jest jeszcze ustalony/zweryfikowane.  
+ Plik został połączony, ale nie zostały jeszcze rozwiązane/weryfikacji.  
   
  SCC_STATUS_SHARED  
  Plik jest udostępniony między projektami.  
   
  SCC_STATUS_PINNED  
- Plik jest udostępniony jawne wersji.  
+ Plik jest udostępniony do jawnego wersji.  
   
  SCC_STATUS_MODIFIED  
  Plik został zmodyfikowany/uszkodzony/naruszone.  
@@ -98,15 +98,15 @@ enum SccStatus {
  Plik jest wyewidencjonowany przez bieżącego użytkownika.  
   
  SCC_STATUS_NOMERGE  
- Plik nigdy nie można scalić z i nie musi zostać zapisany przed GET.  
+ Plik nigdy nie mogą zostać scalone z i nie muszą zostać zapisane przed GET.  
   
  SCC_STATUS_RESERVED_1  
- Zarezerwowany do użytku wewnętrznego.  
+ Zarezerwowane do użytku wewnętrznego.  
   
  SCC_STATUS_RESERVED_2  
- Zarezerwowany do użytku wewnętrznego.  
+ Zarezerwowane do użytku wewnętrznego.  
   
-## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

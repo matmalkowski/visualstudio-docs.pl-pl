@@ -1,5 +1,5 @@
 ---
-title: Niestandardowe elementy Colorable | Dokumentacja firmy Microsoft
+title: Niestandardowe elementy z możliwością kolorowania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,62 +14,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b23ff39abcb9a1354ea28becab3b7df867378ddf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6025a7f0eb472444ba92346cecf2bc4686bf2eef
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133375"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499851"
 ---
-# <a name="custom-colorable-items"></a>Niestandardowe elementy Colorable
-Lista typów można zastąpić oznaczanie kolorami, na przykład słowa kluczowe i komentarze, implementując niestandardowe elementy colorable jako część usługi języka.  
+# <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
+Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i komentarze, implementując niestandardowe elementy z możliwością kolorowania jako część usługi języka.  
   
-## <a name="user-settings-of-colorable-items"></a>Ustawienia użytkownika Colorable elementów  
- Można wyświetlić **czcionki i kolory** okno dialogowe, wybierając **opcje** na **narzędzia** menu, a następnie wybierając **czcionki i kolory** w obszarze **środowiska**. Po wybraniu wyświetlania, takich jak **Edytor tekstu** lub **okno polecenia**, **wyświetlania elementów** pole listy zawiera wszystkie elementy colorable dla tego ekranu. Możesz wyświetlić i zmienić czcionkę, rozmiar, kolor pierwszego planu i kolor tła dla każdego elementu colorable. Wybrane opcje są przechowywane w pamięci podręcznej w rejestrze i nazwa elementu colorable z niego.  
+## <a name="user-settings-of-colorable-items"></a>Ustawienia użytkownika elementów z możliwością kolorowania  
+ Możesz wyświetlić **czcionki i kolory** okno dialogowe, wybierając **opcje** na **narzędzia** menu, a następnie wybierając **czcionki i kolory** w obszarze **środowiska**. Po wybraniu ekranu, takich jak **edytora tekstów** lub **okna polecenia**, **wyświetlania elementów** pole listy przedstawia wszystkie elementy z możliwością kolorowania, obok którego wyświetlona. Można wyświetlić i zmienić czcionkę, rozmiar, kolor pierwszego planu i kolor tła dla każdego elementu z możliwością kolorowania. Wybrane opcje są przechowywane w pamięci podręcznej w rejestrze i dostępne według nazwy elementu z możliwością kolorowania.  
   
-## <a name="presentation-of-colorable-items"></a>Prezentacja Colorable elementów  
- Ponieważ IDE obsługuje zastąpienia użytkownika colorable elementów **czcionki i kolory** okno dialogowe, należy tylko podać każdego niestandardowego elementu colorable z nazwą. Ta nazwa jest wyświetlana w **wyświetlania elementów** listy. Colorable elementy wyświetlane w kolejności alfabetycznej. Grupować elementy colorable niestandardowe usługi języka, możesz rozpocząć każdej nazwie nazwę języka, na przykład **NewLanguage — komentarz** i **NewLanguage — słowo kluczowe**.  
+## <a name="presentation-of-colorable-items"></a>Prezentacja elementów z możliwością kolorowania  
+ Ponieważ IDE obsługuje napisanie użytkownika elementów z możliwością kolorowania **czcionki i kolory** okno dialogowe, należy tylko podać każdego elementu z możliwością kolorowania niestandardowego o nazwie. Ta nazwa jest wyświetlana w **wyświetlania elementów** listy. Elementy z możliwością kolorowania są wyświetlane w kolejności alfabetycznej. Aby zgrupować niestandardowe elementy z możliwością kolorowania usługi języka, możesz rozpocząć nazwy z Twoją nazwą języka na przykład **NewLanguage — komentarz** i **NewLanguage — słowo kluczowe**.  
   
 > [!CAUTION]
->  Nazwa języka należy uwzględnić w nazwie elementu colorable w celu uniknięcia konfliktów z już istniejącymi nazwami colorable elementu. Jeśli zmienisz nazwę jednego z elementów colorable podczas tworzenia, należy zresetować pamięci podręcznej, który został utworzony przy pierwszym uruchomieniu korzystał colorable elementów. Możesz przywrócić eksperymentalne pamięci podręcznej za pomocą narzędzia CreateExpInstance, który jest instalowany z programu Visual Studio SDK, zwykle w katalogu  
+>  Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej przy użyciu **CreateExpInstance** narzędzia, które jest instalowany z programem Visual Studio SDK, zwykle znajduje się w katalogu:  
 >   
->  **C:\Program pliki (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  *C:\Program pliki (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
->  Aby zresetować pamięć podręczną, należy wywołać `CreateExpInstance /Reset`. Aby uzyskać więcej informacji o CreateExpInstance, zobacz [CreateExpInstance narzędzie](../../extensibility/internals/createexpinstance-utility.md).  
+>  Aby zresetować pamięć podręczną, należy wprowadzić **/reset CreateExpInstance**. Aby uzyskać więcej informacji na temat **CreateExpInstance**, zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
- Pierwszy element na liście elementów colorable nigdy nie jest wywoływany. Pierwszy element odpowiada indeks elementu colorable 0, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawsze dostarcza domyślne kolory tekstu i atrybuty dla tego elementu. Najprostszym sposobem zajmowanie się ten element, której nie istniały odwołania jest przydzielenie elementu colorable symbolu zastępczego na liście jako pierwszy element.  
+ Nigdy nie odwołuje się do pierwszego elementu na liście elementów z możliwością kolorowania. Pierwszy element odnosi się do elementu z możliwością kolorowania indeksu 0, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawsze dostarcza domyślne kolory tekstu i atrybuty dla tego elementu. Najprostszy sposób radzenia sobie z tym elementem nieużywanej jest umożliwiają określanie wartości elementu z możliwością kolorowania symbolu zastępczego na liście jako pierwszy element.  
   
-## <a name="implementing-custom-colorable-items"></a>Implementowanie niestandardowych elementów Colorable  
+## <a name="implement-custom-colorable-items"></a>Implementowanie niestandardowych elementów z możliwością kolorowania  
   
-1.  Definiowanie, co kolorowane w określonym języku, na przykład słów kluczowych, Operator i identyfikator.  
+1.  Zdefiniuj, co musi być w trybie kolorowym w swoim języku, na przykład — słowo kluczowe, Operator i identyfikator.  
   
-2.  Utwórz wyliczenie te elementy colorable.  
+2.  Utwórz wyliczenie z tych elementów z możliwością kolorowania.  
   
-3.  Skojarz typy tokenów zwrócony z analizatora lub skanera z wartości wyliczenia.  
+3.  Skojarz typy tokenów zwrócone przez analizator i skaner z wartości wyliczenia.  
   
-     Na przykład wartości reprezentujących typy tokenów, może być takie same wartości w wyliczeniu niestandardowe elementy colorable.  
+     Na przykład wartości reprezentujących typy tokenów, może być takie same wartości w wyliczeniu niestandardowe elementy z możliwością kolorowania.  
   
-4.  W implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody w Twojej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> obiektów, wypełnienie listy atrybuty wartości z wyliczenia niestandardowe elementy colorable odpowiadający typy tokenów zwrócony z analizatora lub skanera.  
+4.  W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> method in Class metoda swoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> obiektu, należy wypełnić listę atrybutów przy użyciu wartości z wyliczenia swoje niestandardowe elementy z możliwością kolorowania, odpowiadające typy tokenów zwrócone przez analizator i skaner.  
   
-5.  W tej samej klasy, która implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu i dwie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5.  W tej samej klasy, która implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu i jego dwóch metod <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
 6.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> interfejsu.  
   
-7.  Do obsługi wartości 24-bitowego lub wysoki kolorów, również należy wdrożyć <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsu.  
+7.  Jeśli chcesz obsługiwać kolor 24-bitowego lub o wysokiej wartości, również zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsu.  
   
-8.  W obiekt usługi języka, należy utworzyć listę zawierającą Twojej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> obiektów, dla każdego elementu colorable zidentyfikuje skanera lub analizatora.  
+8.  W obiekt usługi języka, Utwórz listę zawierającą Twoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> obiektów, po jednym dla każdego elementu z możliwością kolorowania zidentyfikuje skanera lub analizatora.  
   
-     Przy użyciu odpowiedniej wartości z wyliczenia niestandardowe elementy colorable można uzyskać dostępu do każdego elementu na liście. Użyj wartości wyliczenia jako indeks w liście. Pierwszy element na liście nigdy nie jest dostępne, ponieważ odpowiadający mu tekst domyślny styl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawsze obsługuje samej siebie. Można zniwelować to przez wstawienie elementu colorable symbolu zastępczego na początku listy.  
+     Przy użyciu odpowiedniej wartości z wyliczenia niestandardowe elementy z możliwością kolorowania można uzyskać dostęp do każdego elementu na liście. Użyj wartości wyliczenia jako indeks do listy. Pierwszy element na liście nigdy nie jest dostępne, ponieważ odnosi się do tekstu domyślnego stylu, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawsze obsługuje sam. Można zniwelować to przez wstawienie elementu z możliwością kolorowania symbolu zastępczego na początku listy.  
   
-9. W implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metoda zwraca liczbę elementów na liście elementów colorable niestandardowych.  
+9. W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metody zwracają liczbę elementów na liście niestandardowych elementów z możliwością kolorowania.  
   
-10. W implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metody zwrócić colorable żądany element z listy.  
+10. W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metody zwracają żądanego elementu z możliwością kolorowania z listy.  
   
- Przykład sposobu wdrażania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsów, temacie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+ Przykładowy sposób implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsy, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
-## <a name="see-also"></a>Zobacz też  
- [Model usługi języka starsza wersja](../../extensibility/internals/model-of-a-legacy-language-service.md)   
- [Kolorowania w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   
- [Kolorowania w starsza wersja usługi języka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Model starszej wersji usługi językowej](../../extensibility/internals/model-of-a-legacy-language-service.md)   
+ [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementowanie kolorowanie składni](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Porady: używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

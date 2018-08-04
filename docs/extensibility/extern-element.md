@@ -1,5 +1,5 @@
 ---
-title: Zewnętrzny Element | Dokumentacja firmy Microsoft
+title: Extern, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea14d985265d02c3e60ee12c8b46deafba2bcd72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127695"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497709"
 ---
-# <a name="extern-element"></a>Extern — Element
-Zewnętrzny element odwołuje się do żadnych plików zewnętrznych nagłówków (.h) do scalenia pliku vsct w czasie kompilacji. Pliki do scalenia muszą znajdować się na ścieżce dołączanych podane do kompilatora VSCT lub odwołuje się [obejmują elementu](../extensibility/include-element.md). Pliki mogą być inne vsct lub pliki nagłówkowe C++.  
+# <a name="extern-element"></a>Extern, element
+Extern, element odwołuje się do dowolnego nagłówka zewnętrznego (*.h*) pliki do scalania z *vsct* plik w czasie kompilacji. Pliki do scalenia muszą znajdować się w ścieżce Include podane do kompilatora VSCT lub jest przywoływany przez [Include element](../extensibility/include-element.md). Pliki mogą być inne *vsct* pliki lub pliki nagłówkowe C++.  
   
- Definicje w plikach nagłówka musi mieć postać "# [Symbol] [wartość] define" wartość może być inny symbol, jeśli został wcześniej zdefiniowany. Definicje mogą być używane w instrukcji warunkowych elementów polecenia. Każdy symbol nie faktycznie używana zostaną odrzucone.  
+ Definicje w plikach nagłówkowych musi mieć postać "#define [Symbol] [wartość]" wartość może być inny symbol, jeśli został wcześniej zdefiniowany. Definicje mogą być używane w instrukcjach warunkowych elementów polecenia. Dowolny symbol nie rzeczywistej zostaną odrzucone.  
   
- CommandTable Element  
-Extern — Element  
+ CommandTable, element  
+Extern, element  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <Extern href="stdidcmd.h" />  
 ```  
   
@@ -44,9 +44,9 @@ Extern — Element
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|href|Wymagany. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|język|Opcjonalny. Domyślny język wszystkich [ \<ciągów >](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> język = "en-us"|  
+|href|Wymagane. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|język|Opcjonalna. Domyślny język wszystkich [ \<ciągi >](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "en-us"|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
@@ -58,11 +58,11 @@ Extern — Element
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Wszystkie elementy, które reprezentują polecenia definiuje — to znaczy elementy menu, menu Paski narzędzi i pola kombi — udostępniająca pakiet VSPackage IDE.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń — czyli elementy menu, menu, paski narzędzi i pola kombi — zapewniającej pakietu VSPackage IDE.|  
   
 ## <a name="example"></a>Przykład  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-  
   18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
@@ -72,7 +72,7 @@ Extern — Element
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

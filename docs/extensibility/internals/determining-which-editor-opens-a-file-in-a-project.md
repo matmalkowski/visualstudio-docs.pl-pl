@@ -1,5 +1,5 @@
 ---
-title: Określanie, które Edytor otwiera plik w projekcie | Dokumentacja firmy Microsoft
+title: Określanie, które edytora otwiera plik w projekcie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,33 +16,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8fe054fa8e630b2f6c54cb78ef75b6c10ff74d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 655a5a28e3e16a1b07c52c37ef00d89d145a17a1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130012"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498545"
 ---
-# <a name="determining-which-editor-opens-a-file-in-a-project"></a>Określanie otwieranym edytora plików w projekcie
-Po otwarciu pliku w projekcie, środowisko przechodzi przez proces sondowania, po pewnym czasie otwierania odpowiedniego edytora lub projektanta dla tego pliku. Procedury początkowej przez środowisko jest taki sam dla edytory standardowe i niestandardowe. Środowisko używają różnych kryteriów, podczas sondowania Edytor Otwórz plik i pakiet VSPackage musi koordynować ze środowiskiem w trakcie tego procesu.  
+# <a name="determine-which-editor-opens-a-file-in-a-project"></a>Określić, które edytora otwiera plik w projekcie
+Gdy użytkownik otwiera plik w projekcie, środowiska przechodzi przez proces sondowania, po pewnym czasie otwarcie odpowiedniego edytora lub projektanta dla tego pliku. Procedury początkowej zatrudnionych przez środowisko jest taki sam dla standardowych i niestandardowych edytorów. Środowisko używa różnych kryteriów, podczas sondowania edytory, które służy do otwierania pliku i pakietu VSPackage skoordynować ze środowiskiem w trakcie tego procesu.  
   
- Na przykład, gdy użytkownik wybierze **Otwórz** polecenie **pliku** menu, a następnie wybiera `filename`.rtf (lub inne pliki z rozszerzeniem .rtf) wywołań środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Implementacja dla każdego projektu, po pewnym czasie okrągło wszystkich wystąpień projektu w rozwiązaniu. Projekty zwraca zestaw flag, które identyfikują oświadczeń w dokumencie według priorytetu. Korzystając z najwyższym priorytetem, środowisko wywołuje odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metody. Aby uzyskać więcej informacji na temat procesu sondowania [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Na przykład, gdy użytkownik wybierze **Otwórz** polecenia **pliku** menu, a następnie *filename.rtf* (lub dowolnego innego pliku za pomocą *.rtf*rozszerzenia), wywołuje środowisko <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> wdrożenia dla każdego projektu, po pewnym czasie okrągło wszystkich wystąpień projektu w rozwiązaniu. Projekty zwracają zestaw flag, które identyfikują oświadczeń w dokumencie według priorytetu. Korzystając z najwyższym priorytetem, środowisko wywołuje odpowiednią <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metody. Aby uzyskać więcej informacji na temat procesu sondowania, zobacz [Dodaj projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
- Projekt różne pliki oświadczeń wszystkie pliki, które nie zostały przejęte przez innych projektów. W ten sposób edytory niestandardowe mogą otwierać dokumenty, zanim standardowe edytory je otworzyć. Jeśli w projekcie plików pozostałych oświadczeń pliku, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody do otwierania pliku przy użyciu standardowego edytora. Środowisko sprawdza listy wewnętrznej edytory zarejestrowanych na taki, który obsługuje .rtf — pliki. Ta lista znajduje się w następującym kluczu rejestru:  
+ Projekt różne pliki oświadczeń wszystkie pliki, które nie są żądane przez inne projekty. W ten sposób niestandardowych edytorów otwierać dokumenty przed standardowych edytorów je otworzyć. Jeśli projekt różne pliki oświadczeń pliku, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodę, aby otworzyć go za pomocą edytora standardowego. Środowiska sprawdza jego wewnętrzną listę zarejestrowanych edytory dla jednego, który obsługuje *.rtf* plików. Ta lista znajduje się w rejestrze pod następujący klucz:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\\<wersji > \Editors\\\<identyfikator guid fabryki edytora > \Extensions**
   
- Środowisko sprawdza również identyfikatorów klasy w kluczu HKEY_CLASSES_ROOT\CLSID dla obiektów, które mają podklucza DocObject. Jeśli znajduje się rozszerzenie pliku, wbudowana wersja aplikacji, na przykład Microsoft Word, zostanie utworzony w miejscu w programie Visual Studio. Te obiekty dokumentu musi być złożone pliki, które implementują <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> musi implementować interfejs lub obiekt <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejsu.  
+ Środowiska sprawdza również, identyfikatory klasy **HKEY_CLASSES_ROOT\CLSID** klucza dla obiektów, które mają podklucz **DocObject**. Jeśli rozszerzenie pliku znajduje się tam, wbudowana wersja aplikacji, takiego jak Microsoft Word, zostanie utworzony w miejscu, w programie Visual Studio. Te obiekty dokumentu musi być złożone plików, które implementują <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> musi implementować interfejs lub obiekt <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfejsu.  
   
- Jeśli nie istnieje żadna fabryki edytora plików RTF w rejestrze, a następnie środowiska jest wyszukiwany w HKEY_CLASSES_ROOT \\klucz .rtf i otwiera edytor istnieje określony. Jeśli rozszerzenie pliku nie zostanie znaleziony w wpisów z HKEY_CLASSES_ROOT, następnie środowiska używa Edytor tekstu Visual Studio core można otworzyć pliku, jeśli jest to plik tekstowy.  
+ Jeśli brak fabryki edytora dla *.rtf* pliki w rejestrze, a następnie przeszukuje środowiska **HKEY_CLASSES_ROOT\\.rtf** klucza i zostanie otwarty Edytor określone. Jeśli rozszerzenie pliku nie zostanie znaleziony w **HKEY_CLASSES_ROOT**, następnie środowiska używa Edytor tekstu Visual Studio core można otworzyć pliku, jeśli jest plikiem tekstowym.  
   
- Jeśli Edytor tekstu core nie powiedzie się, co ma miejsce, jeśli plik nie jest plikiem tekstowym, następnie środowiska używa jej Edytor plików binarnych dla pliku.  
+ W przypadku niepowodzenia podstawowy edytor tekstu, która pojawia się Jeśli plik nie jest plikiem tekstowym, następnie środowiska korzysta z jego edytora binarnego pliku.  
   
- Jeśli środowisko znaleźć edytora dla rozszerzenia .rtf w jego rejestru, ładuje pakiet VSPackage, który implementuje ten fabryki edytora. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metody na nowy pakiet VSPackage. Wywołania pakiet VSPackage `QueryService` dla `SID_SVsRegistorEditor`za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> metodę, aby zarejestrować fabryki edytora ze środowiskiem.  
+ Jeśli środowisko znaleźć edytora *.rtf* rozszerzenia w jego rejestrze, ładuje pakietu VSPackage, który implementuje Ta fabryka edytora. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metody nowego pakietu VSPackage. Wywołania pakietu VSPackage `QueryService` dla `SID_SVsRegistorEditor`przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> metodę, aby zarejestrować fabryki edytora ze środowiskiem.  
   
- Środowisko ponownie sprawdza listy wewnętrznej zarejestrowanych edytory można znaleźć fabryki edytora nowo zarejestrowanych dla plików RTF. Środowisko wywołuje implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody, przekazując typ nazwy i widoku pliku do utworzenia.  
+ Środowiska sprawdza teraz ponownie jego wewnętrzną listę zarejestrowanych edytory można odnaleźć fabryki edytora nowo zarejestrowanego dla *.rtf* plików. Środowisko wywołuje implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody, przekazując typ nazwy i widok pliku do utworzenia.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>   
  <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   

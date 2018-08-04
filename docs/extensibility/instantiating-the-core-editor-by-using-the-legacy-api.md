@@ -1,5 +1,5 @@
 ---
-title: Tworzenie wystąpień Edytor Core przy użyciu interfejsu API starszych | Dokumentacja firmy Microsoft
+title: Utworzenie wystąpienia podstawowy edytor za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,61 +13,61 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a720126324faf1ab9a9a4e07086bc4ec711508f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 602adf27a0a165a8919d4be928a330dc3a212cf3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132341"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500478"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Tworzenie wystąpień Edytor Core przy użyciu interfejsu API starsza wersja
-Edytor jest odpowiedzialny za funkcji, takich jak wstawianie, usuwanie, kopiowanie i wklejanie edycji tekstu. Te funkcje łączy z udostępnianych przez usługi języka, takie jak tekstu kolorowania, wcięcia i uzupełniania IntelliSense.  
+# <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API
+Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, kopiowanie i wklejanie tekstu. Łączy te funkcje przy użyciu funkcji udostępnianego przez usługi języka, takich jak tekst, kolorowanie, wcięcia i instrukcji IntelliSense.  
   
- Można utworzyć wystąpienia edytora rdzeni w jednym z trzech sposobów:  
+ Możliwe jest utworzenie wystąpienia podstawowy edytor w jeden z trzech sposobów:  
   
--   Jawnie utworzyć wystąpienia podstawowego edytora w oknie.  
+-   Jawnie utworzyć wystąpienie podstawowe edytora w oknie.  
   
--   Podaj fabryki edytora, która zwraca wystąpienie klasy podstawowej edytora  
+-   Podaj fabryka edytora, która zwraca wystąpienie podstawowy edytor  
   
--   Otwórz plik z projektu hierarchii.  
+-   Otwórz plik z hierarchii projektu.  
   
- W poniższych sekcjach omówiono sposób używania starszej wersji interfejsu API można utworzyć wystąpienia edytora.  
+ W poniższych sekcjach omówiono, jak utworzyć wystąpienia edytora za pomocą starszej wersji interfejsu API.  
   
-## <a name="explicitly-opening-a-core-editor-instance"></a>Jawnie otwierania wystąpienia Core edytora  
- Podczas uzyskiwania jawnie wystąpienie edytora rdzeni:  
+## <a name="explicitly-open-a-core-editor-instance"></a>Jawnie Otwórz wystąpienie edytora podstawowych  
+ Podczas uzyskiwania jawnie wystąpienie podstawowy edytor:  
   
--   Uzyskaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do przechowywania edytowanego obiektu danych dokumentu.  
+-   Uzyskaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do przechowywania obiektu danych dokumentu edytowany.  
   
--   Utwórz reprezentację wiersza zorientowane na obiekt danych dokumentu przez utworzenie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfejsu z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsu.  
+-   Utwórz reprezentację wiersza zorientowanej na obiekt danych dokumentów, tworząc <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsu.  
   
--   Ustaw <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> jako obiekt danych dokumentu dla wystąpienia Domyślna implementacja <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfejs, za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> metody.  
+-   Ustaw <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> jako obiekt danych dokumentu w przypadku wystąpienia domyślna Implementacja klasy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfejs, za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> metody.  
   
-     Host <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wystąpienia w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejsu za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> metody.  
+     Host <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wystąpienia w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> metody.  
   
- W tym momencie wyświetlanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs zawiera okno zawierające wystąpienie edytora core.  
+ W tym momencie wyświetlanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs zapewnia okna, który zawiera wystąpienie podstawowy edytor.  
   
- Jednak to nie jest wystąpieniem bardzo przydatne, ponieważ nie mają klawiszy skrótu lub dostęp do zaawansowanych funkcji. Aby uzyskać dostęp do klawiszy skrótów i zaawansowane funkcje:  
+ Jednak to nie jest wystąpieniem bardzo przydatne, ponieważ nie ma klawiszy skrótów, lub uzyskać dostęp do zaawansowanych funkcji. Aby uzyskać dostępu do skróty i zaawansowane funkcje:  
   
--   Użyj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metoda powiązania usługi języka oraz obiekt danych dokumentu, który korzysta z edytora.  
+-   Użyj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> do kojarzenia usługi językowej i obiekt danych dokumentu, który korzysta z edytora.  
   
--   Tworzenie własnych skrótów klawiaturowych, albo użyj domyślnego systemu przez ustawienie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekty będą wyświetlane właściwości. Aby to zrobić, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> właściwości.  
+-   Tworzenie własnych skrótów klawiaturowych albo użyj domyślnego systemu przez ustawienie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekty będą wyświetlane właściwości. Aby to zrobić, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> właściwości.  
   
-     Aby uzyskiwał i wykorzystywał klawiszy skrótów niestandardowych, generowanie je za pomocą pliku vsct. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+     Do uzyskania i używania niestandardowych skrótów, generowania ich za pomocą *vsct* pliku. Aby uzyskać więcej informacji, zobacz [pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Jak używać fabryki edytora uzyskanie Edytor Core  
- Podczas implementowania edytorze core z fabryki edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody, wykonaj wszystkie kroki opisane w poprzedniej sekcji, aby jawnie obsługiwać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> przy użyciu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu danych dokumentu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiektu.  
+## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Jak uzyskać podstawowy edytor za pomocą fabryki edytora  
+ Podczas implementowania podstawowy edytor z fabryki edytora przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody, wykonaj wszystkie kroki opisane w poprzedniej sekcji, aby jawnie obsługiwać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> przy użyciu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu danych dokumentu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiektu.  
   
- Do wyświetlania tekstu, należy uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> obiekt i wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
+ Aby wyświetlić tekst, Uzyskaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
   
- Aby zapewnić usługi języka dla edytora, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metody w <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
+ Aby zapewnić obsługę języka edytora, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> metodę w ramach <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
   
- Można uzyskać domyślnego klawiszy skrótów, w przeciwieństwie do poprzedniej sekcji, użyj kontekst polecenia zwrócony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody podczas uzyskiwania edytora core z <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
+ Można uzyskać domyślnego klawiszy skrótów, inaczej niż w poprzedniej sekcji, używasz kontekstu polecenia zwrócony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody podczas uzyskiwania podstawowy edytor z <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody.  
   
- Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metoda zwraca tego samego polecenia identyfikatora GUID jako edytora tekstu, wystąpienie edytora core automatycznie uzyskuje wartość domyślna klawiszy skrótów.  
+ Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metoda zwraca to samo polecenie identyfikator GUID edytora tekstu, wystąpienie podstawowy edytor automatycznie uzyskuje wartość domyślna klawiszy skrótów.  
   
- Aby uzyskać ogólne informacje, zobacz [wskazówki: tworzenie edytora rdzeni i rejestrowania edytora plików typu](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Aby uzyskać ogólne informacje, zobacz [wskazówki: Tworzenie podstawowej edytora i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [W edytorze Core](../extensibility/inside-the-core-editor.md)   
+## <a name="see-also"></a>Zobacz także  
+ [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Wskazówki: Tworzenie edytora rdzeni i rejestrowania edytora typu pliku](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Przewodnik: Tworzenie edytora podstawowych i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

@@ -1,5 +1,5 @@
 ---
-title: W edytorze Core | Dokumentacja firmy Microsoft
+title: W edytorze podstawowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,70 +13,70 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95745cbef015e9f6ceddb9b84d75b52ec9805dea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130440"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500452"
 ---
-# <a name="inside-the-core-editor"></a>W edytorze Core
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor core to zestaw kilka składników, które umożliwiają modyfikowanie i zapytania informacji tekstowych. Jeśli dostosowano Edytor core za pomocą starszej wersji interfejsu API, mogą nadal używać tych dostosowania, które zostaną przesłane za pośrednictwem karty edytora. Jest to zalecane, jednak dostosować własne dostosowania do edytora nowego interfejsu API.  
+# <a name="inside-the-core-editor"></a>W edytorze podstawowych
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytorze podstawowych funkcji to zbiór kilka składników, które pozwalają na modyfikowanie i wykonywania zapytań względem informacji tekstowych. Jeśli dostosowano podstawowy edytor przy użyciu starszej wersji interfejsu API, można nadal używać tych dostosowania, które będą kierowane za pośrednictwem karty edytora. Jest to zalecane, jednak dostosować własne dostosowania do edytora nowego interfejsu API.  
   
- Niektóre ważne kwestie związane z edytora podstawowe kwestie:  
+ Niektórych ważnych aspektów podstawowy edytor kwestie:  
   
 -   Bufor tekstowy  
   
--   Wyświetlanie tekstu  
+-   Widok tekstu  
   
 -   W oknie kodu  
   
--   Znacznikach tekstu  
+-   Znaczniki tekstu  
   
--   Menedżera tekstu  
+-   Menedżer tekstu  
   
 -   Integracja z usługami języka  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Tworzenie wystąpień Edytor Core przy użyciu interfejsu API starsza wersja](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- Zawiera instrukcje krok po kroku dotyczące sposobu używania <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> można utworzyć wystąpienia podstawowego edytora.  
+ [Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
+ Instrukcje krok po kroku dotyczące sposobu korzystania <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do utworzenia wystąpienia podstawowego edytora.  
   
- [Dostęp do buforu tekstu przy użyciu interfejsu API starsza wersja](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
- W tym artykule omówiono rolę buforu tekstu w edytorze core, wyjaśnia skojarzone systemów, które umożliwiają dostęp do buforu i zawiera listę interfejsy implementowane przez obiekt buforu tekstu, <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+ [Dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
+ W tym artykule omówiono rolę buforu tekstu w edytorze podstawowych, wyjaśnia skojarzone systemów, które umożliwiają dostęp do buforu i zawiera listę interfejsów implementowanych przez obiekt buforu tekstu, <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- [Zdarzenia buforu tekstu w interfejsie API starsza wersja](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- Lista interfejsów, które są używane dla powiadomień o zdarzeniach buforu tekstu.  
+ [Zdarzenia buforu tekstu w starszej wersji interfejsu API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
+ Zawiera listę interfejsów, które są używane dla powiadomień o zdarzeniach buforu tekstu.  
   
- [Porady: rejestrowanie zdarzeń buforu tekstu przy użyciu interfejsu API starsza wersja](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Porady: rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Opisuje sposób poinformowania zdarzenia buforu tekstu.  
   
- [Za pomocą Menedżera tekstu do monitorowania ustawień globalnych](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Omówiono sposób Menedżera tekstu jest używany do udostępniania informacji preferencji globalnych podstawowe składniki edytora i jak otrzymywać powiadomienia o zdarzeniach Menedżera tekstu.  
+ [Ustawienia globalne monitorowanie za pomocą Menedżera tekstu](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ W tym artykule omówiono sposób Menedżer tekstu jest używany do udostępniania informacji preferencji globalnych podstawowe składniki edytora i jak otrzymywać powiadomienia o zdarzeniach Menedżer tekstu.  
   
- [Uzyskiwanie dostępu do theText widoku przy użyciu interfejsu API starsza wersja](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- Zawiera opis roli widoku tekstu w edytorze rdzeni i wyświetla interfejsy implementowane przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> obiektu.  
+ [Wyświetl theText dostępu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
+ W tym artykule opisano rolę widoku tekstu w edytorze podstawowych i wyświetla interfejsy implementowane przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> obiektu.  
   
- [Dostosowywanie kodu systemu Windows przy użyciu interfejsu API starsza wersja](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- Zawiera informacje o jak okno kodu zostanie użyty do umieszczenia widoku tekstu, w tym artykule omówiono, jak kod Menedżera okien służy do zapewnienia dekoracje do okna Kod i zapewnia powiadomienia o nowych widoków.  
+ [Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
+ Zawiera informacje dotyczące sposobu okna kodu jest używane, aby ująć widoku tekstu, w tym artykule omówiono, jak Menedżer okien kod służy do zapewnienia dekoracje do okna kodu i zapewnia powiadomienia o nowych widoków.  
   
- [Zmiana ustawień widoku przy użyciu interfejsu API starsza wersja](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Instrukcje krok po kroku dotyczące wymusić ustawienia widoku i Usuń ustawienia wymuszone.  
+ [Zmienianie ustawień widoku przy użyciu starszej wersji interfejsu API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ Instrukcje krok po kroku dotyczące wymusić ustawienia wyświetlania i usuwania ustawień wymuszone.  
   
- [Usługi językowe i Edytor Core](../extensibility/language-services-and-the-core-editor.md)  
- W tym artykule opisano tworzenie wystąpienia usługi języka aby dekoracje kod sterowania.  
+ [Usługi języka oraz podstawowy edytor](../extensibility/language-services-and-the-core-editor.md)  
+ W tym artykule opisano tworzenie wystąpienia usługi języka w celu kontroli kodu dekoracje.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Wskazówki: Tworzenie edytora rdzeni i rejestrowania edytora typu pliku](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
- Instrukcje krok po kroku dotyczące uruchamiania edytora core z kodu zarządzanego.  
+ [Przewodnik: Tworzenie edytora podstawowych i rejestrując typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ Instrukcje krok po kroku dotyczące uruchamiania podstawowy edytor z kodu zarządzanego.  
   
- [Rozwijany pasek](../extensibility/drop-down-bar.md)  
- Omówiono sposób pasek listy rozwijanej jest używana w oknie kodu i opisuje interfejsy, które są używane podczas implementowania pasek listy rozwijanej.  
+ [Listę rozwijaną paska](../extensibility/drop-down-bar.md)  
+ W tym artykule omówiono sposób pasek listy rozwijanej jest używana w oknie kodu i opisano interfejsy, które są używane podczas implementowania pasek listy rozwijanej.  
   
- [Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja](../extensibility/using-text-markers-with-the-legacy-api.md)  
- Wyjaśnia pojęcie znacznikach tekstu i sposób ich użycia w edytorze core, a lista interfejsów, które są używane do dostępu i zarządzanie znacznikach tekstu.  
+ [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)  
+ Wyjaśnia pojęcie znaczników tekstu i jak są one używane w edytorze podstawowych i wyświetla listę interfejsów, które są używane do dostępu i zarządzania znaczników tekstu.  
   
- [Porady: Dodawanie znaczników tekstu standardowego](../extensibility/how-to-add-standard-text-markers.md)  
- Instrukcje krok po kroku dotyczące tworzenia znacznika tekstu i Dodawanie polecenia niestandardowego do menu skrótów.  
+ [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)  
+ Instrukcje krok po kroku dotyczące tworzenia znacznika tekstu i Dodaj polecenie niestandardowe do menu skrótów.  
   
  [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)  
- Instrukcje krok po kroku dotyczące tworzenia znacznik niestandardowy tekst i udostępniają typ znacznika jako usługa.
+ Instrukcje krok po kroku dotyczące tworzenia znacznika niestandardowego tekstu i podać typ znacznika jako usługa.
