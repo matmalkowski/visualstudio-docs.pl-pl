@@ -9,22 +9,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a55cbf2bf8d741594bae273389086e50dcc981
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953134"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566898"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
-Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowany przez TextField. Przykłady inicjowania TextFields i innych ShapeFields Sprawdź, czy Dsl\GeneratedCode\Shapes.cs w rozwiązaniu DSL.
+Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowana przez element TextField. Przykłady inicjalizacji TextFields i innych ShapeFields należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu języka DSL.
 
- TextField jest obiekt, który zarządza obszar wewnątrz kształtu, takie jak miejsce przypisane do etykiety. Jedno wystąpienie elementu TextField jest udostępniana między wiele kształtów w tej samej klasy. Wystąpienie elementu TextField nie przechowuje tekst etykiety osobno dla każdego wystąpienia: zamiast tego `GetDisplayText(ShapeElement)` metoda pobiera kształtu jako parametr i można wyszukiwać tekst zależny od bieżącego stanu kształt i jego elementu modelu.
+ Element TextField jest obiektem, który zarządza obszar wewnątrz kształtu, takie jak miejsca, przypisać etykietę. Jedno wystąpienie TextField jest współużytkowana przez wiele kształtów w tej samej klasy. Wystąpienie TextField nie przechowuje tekst etykiety osobno dla poszczególnych wystąpień: zamiast tego `GetDisplayText(ShapeElement)` metoda przyjmuje kształt jako parametr i wyszukiwać zależy od bieżącego stanu kształt i element modelu tekstu.
 
-## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Jak jest określany wygląd pola tekstowego
- `DoPaint()` Wywoływana jest metoda Wyświetla pole na ekranie. Albo można zastąpić domyślną `DoPaint(),` lub niektórych metod, które wywołuje można zastąpić. Następujące uproszczonej wersji metody domyślnej może pomóc zrozumieć sposób zastępują domyślne zachowanie:
+## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Sposób ustalania wygląd pole tekstowe
+ `DoPaint()` Wywoływana jest metoda wyświetla pola na ekranie. Można albo zastąpić domyślną `DoPaint(),` lub możesz zastąpić niektóre metody, które wywołuje. Uproszczoną wersję domyślnych metod może pomóc Ci zrozumieć, jak można zastąpić domyślne zachowanie:
 
-```
+```csharp
 // Simplified version:
 public override void DoPaint(DiagramPaintEventArgs e, ShapeElement parentShape)
 {
@@ -83,19 +83,19 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
 ```
 
- Istnieje kilka innych pary `Get` metod i `Default` właściwości, takie jak `DefaultMultipleLine/GetMultipleLine()`. Można przypisać wartości do właściwości domyślne można zmienić wartości dla wszystkich wystąpień pole kształtu. Aby wprowadzić wartość się różnić od wystąpienia jeden kształt do innego lub zależny od stanu kształtu lub jego element modelu, należy zastąpić `Get` metody.
+ Istnieje kilka innych pary `Get` metod i `Default` właściwości, takie jak `DefaultMultipleLine/GetMultipleLine()`. Można przypisać wartości do właściwości domyślne, aby zmienić wartość dla wszystkich wystąpień pole kształtu. Aby wprowadzić wartości różnią się od wystąpienia jeden kształt do innego lub zależny od stanu kształtu lub jego element modelu, należy zastąpić `Get` metody.
 
-## <a name="static-customizations"></a>Dostosowywanie statyczne
- Jeśli chcesz zmienić każde wystąpienie to pole kształtu, najpierw sprawdzić, czy można ustawić właściwości w definicji DSL. Na przykład w oknie właściwości można ustawić styl i rozmiar czcionki.
+## <a name="static-customizations"></a>Dostosowania statyczne
+ Jeśli chcesz zmienić każde wystąpienie to pole kształtu, najpierw sprawdzić, czy można ustawić właściwości w definicji DSL. Na przykład można ustawić styl i rozmiar czcionki w oknie dialogowym właściwości.
 
- Jeśli nie, następnie zastąpienia `InitializeShapeFields` metody klasy kształt i przypisywanie wartości do odpowiedniego `Default...` właściwości pola tekstowego.
+ Jeśli nie, następnie zastąpić `InitializeShapeFields` metodę klasy kształt i przypisywanie wartości do odpowiedniego `Default...` właściwości pola tekstowego.
 
 > [!WARNING]
->  Aby zastąpić `InitializeShapeFields()`, należy ustawić **generuje podwójne pochodnych** właściwości klasy kształt, aby `true` w definicji DSL.
+>  Aby zastąpić `InitializeShapeFields()`, należy ustawić **Generates Double Derived** właściwość klasy kształtu do `true` w definicji DSL.
 
- W tym przykładzie kształt ma pola tekstowego, który będzie używany dla komentarzy do użytkownika. Chcemy Użyj czcionki standardowe komentarza. Standardowe czcionki z zestawu stylu, dlatego firma Microsoft Ustaw domyślny identyfikator czcionki:
+ W tym przykładzie kształt ma pola tekstowego, który będzie używany dla komentarzy do użytkownika. Chcemy używana czcionka standardowa komentarz. Ponieważ istnieje standardowa czcionkę z zestaw stylów, możemy ustawić domyślny identyfikator czcionki:
 
-```
+```csharp
 
  partial class ExampleShape
 {   protected override void InitializeShapeFields(IList<ShapeField> shapeFields)
@@ -109,16 +109,16 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
 ```
 
-## <a name="dynamic-customizations"></a>Dostosowywanie na dynamiczny
- Aby wygląd różnią się zależny od stanu kształtu lub jego element modelu, pochodzi własnych podklas `TextField` i Zastąp jeden lub więcej `Get...` metody. Należy również przesłonić metodę InitializeShapeFields Twojego kształtu i Zamień wystąpienia TextField wystąpienia własne klasy.
+## <a name="dynamic-customizations"></a>Dynamicznego dostosowania
+ Aby wygląd różnią się zależy od stanu kształtu lub jego element modelu, pochodzi z własną podklasę klasy `TextField` i zastąpić co najmniej jeden `Get...` metody. Musi również zastąpić metodę InitializeShapeFields swoje kształt i Zastąp wystąpienia TextField wystąpienia własne klasy.
 
- Poniższy przykład sprawia, że czcionka polem tekstowym jest zależny od stanu właściwość domeny Boolean elementu modelu kształtu.
+ Poniższy przykład sprawia, że czcionka pole tekstowe jest zależny od stanu właściwość logiczna domeny kształtu elementu modelu.
 
- Aby uruchomić ten przykład kodu, należy utworzyć nowe rozwiązanie DSL przy użyciu minimalnego języka szablonu. Dodaj właściwość domeny logiczna `AlternateState` do klasy ExampleElement domeny. Dodaj do klasy ExampleShape dekoratora ikonę i ustaw jego obrazu w pliku mapy bitowej. Kliknij przycisk **Przekształć wszystkie szablony**. Dodaj nowy plik kodu w projekcie DSL i Wstaw następujący kod.
+ Aby uruchomić ten przykładowy kod, Utwórz nowe rozwiązanie języka DSL za pomocą szablonu minimalnego języka. Dodaj właściwość logiczna domeny `AlternateState` ExampleElement klasy domeny. Dodaj ikonę dekoratora klasy ExampleShape i ustaw jego obraz w pliku mapy bitowej. Kliknij przycisk **Transformuj wszystkie szablony**. Dodaj nowy plik kodu w projekcie języka DSL i Wstaw następujący kod.
 
- Aby przetestować kod, naciśnij klawisz F5 i w rozwiązaniu debugowania, Otwórz przykładowy diagram. Stan domyślny ikony powinny być wyświetlane. Wybierz kształt, a następnie w oknie Właściwości zmień wartość **AlternateState** właściwości. Należy zmienić czcionkę nazwy elementu.
+ Aby przetestować kod, naciśnij klawisz F5, a następnie w przypadku debugowania rozwiązania Otwórz diagram przykładowej. Domyślny stan ikona powinna zostać wyświetlona. Wybierz kształt, a następnie w oknie Właściwości zmień wartość **AlternateState** właściwości. Należy zmienić czcionkę nazwy elementu.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ...
@@ -173,38 +173,38 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="style-sets"></a>Ustawia styl
- W poprzednim przykładzie pokazano, jak można zmienić pola tekstowego do każdej czcionki, która jest dostępna. Jednakże jednak preferowaną metodą jest Zmień ją na jeden zestaw stylów skojarzonej z kształtem lub z aplikacją. Aby to zrobić, należy zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> lub GetTextBrushId().
+ Powyższy przykład pokazuje, jak zmienić pole tekstowe do każdej czcionki, który jest dostępny. Jednak preferowaną metodą jest Zmień go na jeden zestaw stylów skojarzonej z kształtem lub z aplikacją. Aby to zrobić, możesz zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> lub GetTextBrushId().
 
- Alternatywnie, należy rozważyć zmianę stylu zbiór kształt przez zastąpienie <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Ma to wpływu zmiana czcionek i pędzle dla wszystkich pól kształtu.
+ Można również rozważyć zmianę stylu zbiór kształt przez zastąpienie <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Ma to wpływ zmiana czcionek i pędzle dla wszystkich pól kształtów.
 
 ## <a name="customizing-image-fields"></a>Dostosowywanie pól obrazu
- Po zdefiniowaniu dekoratora obrazu w kształcie, a podczas definiowania kształtu obrazu, obszar, w którym jest wyświetlany kształt jest zarządzana przez element ImageField. Przykłady inicjowania ImageFields i innych ShapeFields Sprawdź, czy Dsl\GeneratedCode\Shapes.cs w rozwiązaniu DSL.
+ Podczas definiowania dekoratora obrazu w kształcie, a podczas definiowania kształt obrazu, obszar, w którym jest wyświetlany kształt zarządza ImageField. Przykłady inicjalizacji ImageFields i innych ShapeFields należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu języka DSL.
 
- Element ImageField jest obiekt, który zarządza obszar wewnątrz kształtu, takie jak miejsce przypisane do dekoratora. Jedno wystąpienie elementu ImageField jest udostępniana między wiele kształtów w tej samej klasy kształtu. Wystąpienie elementu ImageField nie przechowuje osobny obraz każdego kształtu: zamiast tego `GetDisplayImage(ShapeElement)` metoda pobiera kształtu jako parametr i można wyszukiwać obrazu zależny od bieżącego stanu kształt i jego elementu modelu.
+ ImageField jest obiektem, który zarządza obszar wewnątrz kształtu, takie jak miejsce przypisane do dekoratora. Jedno wystąpienie ImageField jest współużytkowana przez wiele kształtów w tej samej klasy kształtu. Wystąpienie ImageField nie przechowuje osobny obraz każdego z kształtów: zamiast tego `GetDisplayImage(ShapeElement)` metoda przyjmuje kształt jako parametr i wyszukiwać obraz, który zależy od bieżącego stanu kształtu oraz jego elementu modelu.
 
- Specjalnego zachowania przykład zmiennej obraz, można utworzyć własne klasy pochodnej z elementu ImageField.
+ Jeśli mają specjalne zachowanie, takich jak obraz zmiennej, można utworzyć własne klasy pochodne ImageField.
 
-#### <a name="to-create-a-subclass-of-imagefield"></a>Aby utworzyć podklasy elementu ImageField
+#### <a name="to-create-a-subclass-of-imagefield"></a>Aby utworzyć podklasę ImageField
 
-1.  Ustaw **generuje podwójne pochodnych** właściwość klasy kształtu nadrzędnego w definicji DSL.
+1.  Ustaw **Generates Double Derived** właściwości z klasy nadrzędnej kształtu w definicji DSL.
 
-2.  Zastąpienie `InitializeShapeFields` metody klasy kształtu.
+2.  Zastąp `InitializeShapeFields` metody klasy kształtu.
 
-    -   Utwórz nowy plik kodu w projekcie DSL i zapisać definicji klasy częściowej klasy kształtu. Zastąpienie istnieje definicja metody.
+    -   Utwórz nowy plik kodu w projekcie języka DSL i zapisać definicję klasy częściowej klasy kształtu. Zastąp definicję metody istnieje.
 
 3.  Sprawdź kod `InitializeShapeFields` w DSL\GeneratedCode\Shapes.cs.
 
-     W metodę zastąpienie Wywołaj metodę podstawową, a następnie utwórz wystąpienie klasy pola własnego obrazu. Umożliwia to Zastąp pole regularne obrazu w `shapeFields` listy.
+     W metodzie zastąpienie wywołanie metody podstawowej, a następnie utwórz wystąpienie klasy pola własnego obrazu. Umożliwia to Zastąp pole zwykłego obrazu w `shapeFields` listy.
 
 ## <a name="dynamic-icons"></a>Dynamiczne ikony
- W tym przykładzie powoduje, że ikona zmienić zależny od stanu elementu modelu kształtu.
+ W tym przykładzie sprawia, że ikona zmiany jest zależny od stanu elementu modelu kształtu.
 
 > [!WARNING]
->  W tym przykładzie pokazano, jak utworzyć dekoratora dynamiczny obraz. Ale jeśli chcesz przełączać się między jeden lub dwa obrazy w zależności od stanu zmiennej modelu, jest łatwiejsze utworzyć kilka elementów decorator obrazu, zlokalizuj je w tej samej pozycji kształtu, a następnie ustaw filtr widoczność są zależne od określonych wartości modelu Zmienna. Aby ustawić filtr, wybierz mapy kształtu w definicji DSL, Otwórz okno Szczegóły DSL, a następnie kliknij kartę elementów Decorator.
+>  W tym przykładzie pokazano, jak wprowadzić dekoratora dynamiczny obraz. Jednak jeżeli chcesz przełączać się między co najmniej dwa obrazy w zależności od stanu zmiennej modelu, jest łatwiejsze tworzenie kilku dekoratory obrazu, zlokalizuj je w tym samym położeniu na kształcie, a następnie ustaw filtr widoczności, aby była zależna od określonej wartości modelu Zmienna. Ustawienie tego filtru, wybierz mapowanie kształtów w definicji DSL, Otwórz okno Szczegóły języka DSL, i kliknij kartę Dekoratory.
 
- Aby uruchomić ten przykład kodu, należy utworzyć nowe rozwiązanie DSL przy użyciu minimalnego języka szablonu. Dodaj właściwość domeny logiczna `AlternateState` do klasy ExampleElement domeny. Dodaj do klasy ExampleShape dekoratora ikonę i ustaw jego obrazu w pliku mapy bitowej. Kliknij przycisk **Przekształć wszystkie szablony**. Dodaj nowy plik kodu w projekcie DSL i Wstaw następujący kod.
+ Aby uruchomić ten przykładowy kod, Utwórz nowe rozwiązanie języka DSL za pomocą szablonu minimalnego języka. Dodaj właściwość logiczna domeny `AlternateState` ExampleElement klasy domeny. Dodaj ikonę dekoratora klasy ExampleShape i ustaw jego obraz w pliku mapy bitowej. Kliknij przycisk **Transformuj wszystkie szablony**. Dodaj nowy plik kodu w projekcie języka DSL i Wstaw następujący kod.
 
- Aby przetestować kod, naciśnij klawisz F5 i w rozwiązaniu debugowania, Otwórz przykładowy diagram. Stan domyślny ikony powinny być wyświetlane. Wybierz kształt, a następnie w oknie Właściwości zmień wartość **AlternateState** właściwości. Ikona są wyświetlane obrócony do 90 stopni tego kształtu.
+ Aby przetestować kod, naciśnij klawisz F5, a następnie w przypadku debugowania rozwiązania Otwórz diagram przykładowej. Domyślny stan ikona powinna zostać wyświetlona. Wybierz kształt, a następnie w oknie Właściwości zmień wartość **AlternateState** właściwości. Ikony są wyświetlane obrócony do 90 stopni tego kształtu.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

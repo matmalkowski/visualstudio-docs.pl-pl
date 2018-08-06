@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Używanie klawisza skrótu z rozszerzeniem edytora | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704028"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566567"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Wskazówki: Używanie klawisza skrótu z rozszerzeniem edytora
-Klawisze skrótu można odpowiedzieć w rozszerzenia edytora. Poniższe wskazówki przedstawiono sposób dodawania ozdób widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie Edytor ozdób okienka ekranu, i umożliwia dodawanie ozdób przy użyciu + znak.  
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora
+Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie instaluj programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Tworzenie projektu Framework (MEF) zarządzanych rozszerzeń  
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Utwórz projekt Framework (MEF) zarządzanych rozszerzeń  
   
-1.  Tworzenie projektu C# VSIX. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projektu VSIX**.) Nazwa rozwiązania `KeyBindingTest`.  
+1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `KeyBindingTest`.  
   
-2.  Dodaj szablon elementu Edytor tekstu ozdób do projektu i nadaj mu nazwę `KeyBindingTest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Szablon elementu zakończeń tekstu Edytor umożliwia dodanie do projektu i nadaj mu nazwę `KeyBindingTest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3.  Dodaj następujące odwołania i ustaw **CopyLocal** do `false`:  
   
@@ -42,13 +42,13 @@ Klawisze skrótu można odpowiedzieć w rozszerzenia edytora. Poniższe wskazów
   
      Microsoft.VisualStudio.TextManager.Interop  
   
- Plik klasy KeyBindingTest należy zmienić nazwę klasy do PurpleCornerBox. Umożliwia żarówki, która jest wyświetlana na lewym marginesie wprowadzić odpowiednie zmiany. Wewnątrz konstruktora, Zmień nazwę warstwy ozdób z **KeyBindingTest** do **PurpleCornerBox**:  
+ W pliku klasy KeyBindingTest należy zmienić nazwę klasy do PurpleCornerBox. Umożliwia żarówki, która pojawia się na lewym marginesie wprowadzić odpowiednie zmiany. W konstruktorze, Zmień nazwę warstwy zakończeń z **KeyBindingTest** do **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
 
-Plik klasy KeyBindingTestTextViewCreationListener.cs, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**:
+W pliku klasy KeyBindingTestTextViewCreationListener.cs, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**:
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -57,12 +57,12 @@ Plik klasy KeyBindingTestTextViewCreationListener.cs, Zmień nazwę AdornmentLay
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
 
-## <a name="handling-typechar-command"></a>Polecenie TYPECHAR obsługi
-Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edytorze rozszerzenie zostało implementacja <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> na podstawie filtru polecenia. Visual Studio 2017 wersji 15,6 wprowadzono nowoczesnych metoda uproszczona oparte na programy obsługi poleceń edytora. W dwóch następnych sekcjach pokazano sposób obsługi polecenia przy użyciu zarówno podejście starszych i nowoczesny.
+## <a name="handle-typechar-command"></a>Polecenie TYPECHAR uchwytu
+Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w rozszerzenia edytora została Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> na podstawie filtru polecenia. Visual Studio 2017 w wersji 15.6 wprowadzono nowoczesnej uproszczone podejście oparte na programy obsługi poleceń edytora. W dwóch następnych sekcjach pokazują sposób obsługi polecenia przy użyciu zarówno starsze i nowoczesne podejście.
 
-## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definiowanie filtru polecenia (przed Visual Studio 2017 wersji 15,6)
+## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Zdefiniuj filtr polecenia (przed Visual Studio 2017 w wersji 15.6)
 
- Polecenie filtru jest implementacją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, który obsługuje polecenie przez utworzenie wystąpienia ozdób.  
+ Filtr polecenia jest implementacją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, która obsługuje polecenie przez utworzenie wystąpienia zakończeń.  
   
 1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.  
   
@@ -83,7 +83,7 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Dodać pól prywatnych dla widoku tekstu, następne polecenie w łańcuchu polecenia i flagę określającą, czy polecenie Filtr został już dodany.  
+4.  Dodaj pola prywatne dla widoku tekstu, następnego polecenia w łańcuchu polecenia i flagi do reprezentowania, czy filtr polecenia został już dodany.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -92,7 +92,7 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
     internal bool m_adorned;  
     ```  
   
-5.  Dodaj Konstruktor, który ustawia widoku tekstu.  
+5.  Dodaj Konstruktor, który ustawia widok tekstu.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -111,7 +111,7 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
     }  
     ```  
   
-7.  Implementowanie `Exec()` metodę, tak że dodaje purpurowa pole do widoku, jeśli + wpisany jest znak.  
+7.  Implementowanie `Exec()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -135,8 +135,8 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
   
     ```  
   
-## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Dodawanie filtru polecenia (przed Visual Studio 2017 wersji 15,6)
- Dostawca ozdób należy dodać polecenie Filtr do widoku tekstu. W tym przykładzie implementuje dostawcę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> do nasłuchiwania zdarzeń tworzenia widoku tekstu. Ten dostawca ozdób Eksportuje również warstwy ozdób, która określa porządek osi z ozdób.  
+## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Dodaj filtr polecenia (przed Visual Studio 2017 w wersji 15.6)
+ Dostawca zakończeń należy dodać polecenie Filtr do widoku tekstu. W tym przykładzie implementuje dostawcę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> do nasłuchiwania zdarzeń tworzenia widoku tekstu. Ten dostawca zakończeń Eksportuje również warstwy zakończeń, definiujący porządek zakończeń.  
   
 1.  W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:  
   
@@ -161,7 +161,7 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
   
     ```  
   
-3.  Zmień <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
+3.  Zmiana <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -170,7 +170,7 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
     }  
     ```  
   
-4.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu, a następnie dodaje filtr polecenia.  
+4.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu i dodaje filtr polecenia.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -194,15 +194,15 @@ Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edyto
     }  
     ```  
 
-## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Wdrożenie programu obsługi poleceń (począwszy od programu Visual Studio 2017 wersji 15,6)
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Implementowanie program obsługi poleceń (począwszy od programu Visual Studio 2017 w wersji 15.6)
 
-Najpierw należy zaktualizować odwołań Nuget projektu do odwołania najnowsze Edytor interfejsu API:
+Najpierw zaktualizuj odwołań Nuget projektu do odwołania najnowsze Edytor interfejsu API:
 
-1. Kliknij prawym przyciskiem myszy na projekt i wybierz **Zarządzaj pakietami Nuget**.
+1. Kliknij prawym przyciskiem myszy projekt i wybierz pozycję **Zarządzaj pakietami Nuget**.
 
-2. W **Menedżera pakietów Nuget**, wybierz pozycję **aktualizacje** wybierz opcję **wybrać wszystkie pakiety** pole wyboru, a następnie wybierz **aktualizacji**.
+2. W **Menedżera pakietów Nuget**, wybierz opcję **aktualizacje** wybierz kartę **wybrać wszystkie pakiety** pole wyboru, a następnie wybierz pozycję **aktualizacji**.
 
-Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, który obsługuje polecenie przez utworzenie wystąpienia ozdób.  
+Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, która obsługuje polecenie przez utworzenie wystąpienia zakończeń.  
   
 1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandHandler`.  
   
@@ -216,7 +216,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
     using System.ComponentModel.Composition;   
     ```  
   
-3.  Klasa o nazwie KeyBindingCommandHandler powinien dziedziczyć `ICommandHandler<TypeCharCommandArgs>`i wyeksportować ją jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3.  Klasa o nazwie KeyBindingCommandHandler powinien dziedziczyć `ICommandHandler<TypeCharCommandArgs>`i wyeksportuj go jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
     ```csharp  
     [Export(typeof(ICommandHandler))]
@@ -225,13 +225,13 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
     internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
     ```  
   
-4.  Dodaj nazwę wyświetlaną obsługi polecenia:  
+4.  Dodaj nazwę wyświetlaną program obsługi poleceń:  
   
     ```csharp  
     public string DisplayName => "KeyBindingTest";
     ```  
     
-5.  Implementowanie `GetCommandState()` metody w następujący sposób. Ponieważ ten program obsługi poleceń obsługuje polecenie TYPECHAR Edytor core, można delegować, włączanie polecenia do edytora core.
+5.  Implementowanie `GetCommandState()` metody w następujący sposób. Ponieważ ten program obsługi poleceń obsługuje polecenie TYPECHAR Edytor rdzeni, można delegować, umożliwiając polecenie, aby podstawowy edytor.
   
     ```csharp  
     public CommandState GetCommandState(TypeCharCommandArgs args)
@@ -240,7 +240,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
     } 
     ```  
   
-6.  Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowa pole do widoku, jeśli + wpisany jest znak. 
+6.  Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak. 
   
     ```csharp  
     public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -259,7 +259,7 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
         return false;
     }
     ```  
- 7. Skopiuj ozdób warstwy definicję z pliku KeyBindingTestTextViewCreationListener.cs do KeyBindingCommandHandler.cs, a następnie usuń plik KeyBindingTestTextViewCreationListener.cs:
+ 7. Skopiuj definicję warstwy zakończeń z *KeyBindingTestTextViewCreationListener.cs* plik *KeyBindingCommandHandler.cs* , a następnie usuń  *KeyBindingTestTextViewCreationListener.cs* pliku:
  
     ```csharp  
     /// <summary>
@@ -272,11 +272,11 @@ Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Comma
     private AdornmentLayerDefinition editorAdornmentLayer;    
     ```  
 
-## <a name="making-the-adornment-appear-on-every-line"></a>Tworzenie ozdób są wyświetlane w każdym wierszu  
+## <a name="make-the-adornment-appear-on-every-line"></a>Wprowadź zakończeń są wyświetlane w każdym wierszu  
 
-Oryginalny ozdób znajdowały się na każdym znakiem "" w pliku tekstowym. Teraz, gdy zmieniono kodu w celu dodania ozdób w odpowiedzi na znak "+" dodaje ozdób tylko w wierszu gdzie '+' został wpisany. Możemy zmienić kod ozdób tak, aby ponownie ozdób pojawia się na każdym "".  
+Oryginalny zakończeń pojawiły się na każdy znak "" w pliku tekstowym. Teraz, że dokonaliśmy zmiany kodu w celu dodania zakończeń w odpowiedzi na **+** znak dodaje zakończeń tylko w wierszu gdzie **+** wpisany znak. Możemy zmienić kod zakończeń, czemu zakończeń, jeszcze raz pojawia się w każdym "".  
   
-W pliku KeyBindingTest.cs Zmień metodę CreateVisuals() do iterowania po wszystkich wierszy w widoku do dekoracji znak "".  
+W *KeyBindingTest.cs* pliku, zmień `CreateVisuals()` metody iteracyjne przeglądanie wszystkich wierszy w widoku do dekorowania znak "".  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  
@@ -320,10 +320,10 @@ private void CreateVisuals(ITextViewLine line)
 }  
 ```  
   
-## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
+## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu  
   
-1.  Skompiluj rozwiązanie KeyBindingTest i uruchom go w eksperymentalnym wystąpieniu.  
+1.  Skompiluj rozwiązanie KeyBindingTest i uruchom go w doświadczalnym wystąpieniu.  
   
-2.  Utwórz lub Otwórz plik tekstowy. Wpisz część wyrazów zawierających znak "", a następnie wpisz + w dowolnym miejscu widoku tekstu.  
+2.  Utwórz lub Otwórz plik tekstowy. Wpisz wyrazy, niektóre zawierającą znak "", a następnie wpisz **+** w widoku tekstu w dowolnym miejscu.  
   
-     Purpurowa kwadratowe powinny pojawiać się na każdej "" znak w pliku.
+     Purpurowa kwadrat powinny pojawić się na każdym "" znak w pliku.

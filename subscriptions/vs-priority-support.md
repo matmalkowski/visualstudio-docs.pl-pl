@@ -1,232 +1,248 @@
 ---
-title: Priorytet świadczenia pomocy technicznej w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+title: Priorytet korzyści pomocy technicznej w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 05/07/2018
 ms.topic: Get-Started-Article
-description: Więcej informacji na temat korzyści priorytetów zawarte w subskrypcji programu Visual Studio.
+description: Więcej informacji na temat korzyści priorytetowej pomocy technicznej uwzględnione w subskrypcjach programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 776438935a2fdbc2e7f360d605cc2135ac02b9a0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280406"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567158"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Obsługa priorytetu w ramach subskrypcji programu Visual Studio
+# <a name="priority-support-in-visual-studio-subscriptions"></a>Priorytetowa pomoc techniczna w ramach subskrypcji programu Visual Studio
 
-Priorytet obsługuje korzyści zapewnia dostęp do różnych Obsługa fora, gdzie można wyszukiwać istniejące wiadomości lub zapyta nowe pytania.  Społeczność nie odpowie na swoje pytanie, w ciągu dwóch dni, zespół pomocy technicznej firmy Microsoft zawierają odpowiedzi.
+Korzyści z priorytetowej pomocy technicznej umożliwia dostęp do różnych forów społeczności pomocy technicznej, gdzie możesz wyszukiwać wpisy istniejące lub prosi nowe pytania.  Jeśli społeczność nie odpowie na Twoje pytanie w ciągu dwóch dni, zespół pomocy technicznej firmy Microsoft zapewni odpowiedzi.
 
-Subskrybenci z wybranych subskrypcji programu Visual Studio mogą otrzymywać techniczną priorytet przez dużą liczbę fora obejmujące wiele tematów.
+Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się do otrzymania priorytetowej pomocy technicznej za pośrednictwem dużą liczbę forów obejmujących różne tematy.
 
-## <a name="included-forums"></a>Fora dołączone
+## <a name="included-forums"></a>Uwzględnione forów
 
 ### <a name="net-framework"></a>.NET Framework
-   - Instalator programu .NET framework i obsługi
+   - [Instalator programu .NET framework i obsługa](http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads)
 
-   - Typowe ustawienia wewnętrzne środowiska uruchomieniowego języka i architektura
+   - [Wspólne elementy wewnętrzne środowiska uruchomieniowego języka i architektura](http://social.msdn.microsoft.com/Forums/en-US/clr/threads)
 
-   - Biblioteki klas programu .NET framework
+   - [Biblioteki klas programu .NET framework](http://social.msdn.microsoft.com/Forums/en-US/netfxbcl/threads)
 
-   - Windows Presentation Foundation (WPF)
+   - [Windows Presentation Foundation (WPF)](http://social.msdn.microsoft.com/Forums/en-US/wpf/threads)
 
-   - Windows Communication Foundation, serializacji i sieci
+   - [Windows Communication Foundation, serializacja i sieć](http://social.msdn.microsoft.com/Forums/en-US/wcf/threads)
 
-### <a name="windows-forms-development"></a>Formularze systemu Windows dla deweloperów
-   - Danych formularzy systemu Windows kontrolek i wiązania danych
+### <a name="microsoft-azure"></a>Microsoft Azure
+   - [Usługi w chmurze (role sieci Web i proces roboczy)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
+   
+   - [Usługa Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
-   - Ogólne formularzy systemu Windows
+   - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
 
-   - & Projekty wdrażania ClickOnce i ustawienia
+   - [Usługa Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
 
-   - Projektant Windows Forms
+   - [Usługa Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazureactiveauthentication)
 
-   - Przykładowe aplikacje Windows Forms
+   - [Portal zarządzania systemu Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)
+
+   - [Usługa Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Networking (DNS, usługi Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Active Directory](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)
+
+   - [Usługa Azure API Management](https://social.msdn.microsoft.com/Forums/en-US/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)
+
+   - [Usługi Machine Learning](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=MachineLearning)
+
+   - [Visual Studio Online](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)
+
+   - [Usługa RemoteApp systemu Azure](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureRemoteApp)
+
+   - [Usługa Azure Websites](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)
+
+   - [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing)
 
 
-### <a name="windows-universal-apps"></a>Uniwersalnych aplikacji systemu Windows
-   - Tworzenie aplikacji uniwersalnych systemu Windows
+### <a name="windows-forms-development"></a>Windows Forms Development
+   - [Windows Forms Data kontrolek i wiązania danych](http://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads)
+
+   - [Windows Forms ogólne](http://social.msdn.microsoft.com/Forums/en-US/winforms/threads)
+
+   - [& Projekty wdrażania ClickOnce i Instalator](http://social.msdn.microsoft.com/Forums/en-US/winformssetup/threads)
+
+   - [Windows Forms Designer](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
+
+   - [Windows Forms przykładowe aplikacje](http://social.msdn.microsoft.com/Forums/en-US/winformsapplications/threads)
+
+
+### <a name="windows-universal-apps"></a>Windows Universal Apps
+   - [Tworzenie uniwersalnych aplikacji dla Windows](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/home?forum=wpdevelop)
 
 ### <a name="internet-of-things-iot"></a>Internet rzeczy (IoT)
-   - Windows 10 IoT
+   - [System Windows 10 IoT](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WindowsIoT&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="office-development"></a>Programowanie Office
-   - Microsoft Office dla deweloperów
+   - [Microsoft Office dla deweloperów](http://social.msdn.microsoft.com/Forums/en-US/category/officedev)
 
-   - Excel dla deweloperów
+   - [Microsoft Excel dla deweloperów](http://social.msdn.microsoft.com/Forums/en-US/exceldev)
 
-   - Word dla deweloperów
+   - [Word dla deweloperów](http://social.msdn.microsoft.com/Forums/en-US/worddev)
 
-   - Outlook dla deweloperów
+   - [Program Outlook dla deweloperów](http://social.msdn.microsoft.com/Forums/en-US/outlookdev)
 
-   - Dostęp dla deweloperów
+   - [Dostęp dla deweloperów](http://social.msdn.microsoft.com/Forums/en-US/accessdev)
 
-   - Visual Studio Tools dla pakietu Office
+   - [Visual Studio Tools dla pakietu Office](http://social.msdn.microsoft.com/Forums/en-US/vsto/threads)
 
-   - Otwórz Format XML zestawu SDK
+   - [Open XML Format SDK](http://social.msdn.microsoft.com/Forums/en-US/oxmlsdk/threads)
 
-   - Visual Basic for Applications
+   - [Visual Basic for Applications](http://social.msdn.microsoft.com/Forums/en-US/isvvba/threads)
 
-   - Programowanie Office ogólne
+   - [General Office Development](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=officegeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Tworzenie aplikacji pakietu Office 2013
+   - [Tworzenie aplikacji dla pakietu Office 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforoffice&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="sql-server"></a>SQL Server
-   - Wprowadzenie do programu SQL Server
+   - [Wprowadzenie do programu SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlgetstarted/threads)
 
-   - Dostęp do danych programu SQL Server
+   - [Dostęp do danych programu SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads)
 
-   - Aparat bazy danych programu SQL Server
+   - [Aparat bazy danych programu SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqldatabaseengine/threads)
 
-   - Magazynowania danych programu SQL Server
+   - [Magazynowanie danych programu SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqldatawarehousing/threads)
 
-   - SQL Server Integration Services
+   - [SQL Server Integration Services](http://social.msdn.microsoft.com/Forums/en-US/sqlintegrationservices/threads)
 
-   - Usługi SQL Server Analysis Services
+   - [SQL Server Analysis Services](http://social.msdn.microsoft.com/Forums/en-US/sqlanalysisservices/threads)
 
-   - Usługi powiadomień programu SQL Server
+   - [SQL Server Notification Services](http://social.msdn.microsoft.com/Forums/en-US/sqlnotificationservices/threads)
 
-   - SQL Server Reporting Services
+   - [SQL Server Reporting Services](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
 
-   - Transact-SQL
+   - [Języka Transact-SQL](http://social.msdn.microsoft.com/Forums/en-US/transactsql/threads)
 
-   - Replikacja programu SQL Server
+   - [Replikacji programu SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlreplication/threads)
 
-   - Zabezpieczenia serwera SQL
+   - [Zabezpieczenia serwera SQL](http://social.msdn.microsoft.com/Forums/en-US/sqlsecurity/threads)
 
-   - Instalator programu SQL Server i uaktualnienia
+   - [Instalator programu SQL Server i uaktualnienia](http://social.msdn.microsoft.com/Forums/en-US/sqlsetupandupgrade/threads)
 
-   - Ogólne narzędzi programu SQL Server
+   - [Program SQL Server Tools General](http://social.msdn.microsoft.com/Forums/en-US/sqltools/threads)
 
-   - SQL Service Broker
+   - [Usługi SQL Service Broker](http://social.msdn.microsoft.com/Forums/en-US/sqlservicebroker/threads)
 
-   - SQL Server Compact
+   - [SQL Server Compact](http://social.msdn.microsoft.com/Forums/en-US/sqlce/threads)
 
-   - SQL Server Express
+   - [Program SQL Server Express](http://social.msdn.microsoft.com/Forums/en-US/sqlexpress/threads)
 
-   - Wyszukiwanie danych
+   - [Wyszukiwanie danych](http://social.msdn.microsoft.com/Forums/en-US/sqldatamining/threads)
 
-   - .NET framework w programie SQL Server
+   - [.NET framework w programie SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlnetfx/threads)
 
 ### <a name="sharepoint"></a>Program SharePoint
-   - SharePoint 2013 — ogólne dyskusji i pytania
+   - [Program SharePoint 2013 – dyskusjami ogólnymi oraz pytania](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Tworzenie aplikacji dla programu SharePoint 2013
+   - [Tworzenie aplikacji dla programu SharePoint 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforsharepoint&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 — programowanie i programowanie
+   - [Program SharePoint 2013 – projektowania i programowania](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopment&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 — instalacji, uaktualniania, Administracja i operacje
+   - [Program SharePoint 2013 – instalacji, uaktualniania, Administracja i operacje](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadmin&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 — przy użyciu programu SharePoint Designer, InfoPath i inne dostosowania
+   - [Program SharePoint 2013 — przy użyciu programu SharePoint Designer, InfoPath i innych dostosowań](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomization&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 — wyszukiwanie
+   - [SharePoint 2013 — wyszukiwanie](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearch&filter=alltypes&sort=lastpostdesc)
 
-   - Program SharePoint 2010 — programowanie i programowanie
+   - [SharePoint 2010 — projektowania i programowania](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopmentprevious&filter=alltypes&sort=lastpostdesc)
 
-   - Program SharePoint 2010 — ogólne dyskusji i pytania
+   - [SharePoint 2010 — dyskusjami ogólnymi oraz pytania](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneralprevious&filter=alltypes&sort=lastpostdesc)
 
-   - Program SharePoint 2010 — instalacji, uaktualniania, Administracja i operacje
+   - [SharePoint 2010 — konfiguracja, uaktualnienie, Administracja i operacje](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadminprevious&filter=alltypes&sort=lastpostdesc)
 
-   - Program SharePoint 2010 — przy użyciu programu SharePoint Designer, InfoPath i inne dostosowania
+   - [SharePoint 2010 — przy użyciu programu SharePoint Designer, InfoPath i innych dostosowań](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomizationprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 — wyszukiwanie
+   - [SharePoint 2010 — wyszukiwanie](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearchprevious&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Pytania dotyczące programu Visual Studio ogólne
+   - [Visual Studio ogólne pytania](http://social.msdn.microsoft.com/Forums/en-US/visualstudiogeneral/threads)
 
-   - Instalacja i Konfiguracja programu Visual Studio
+   - [Instalacja i Konfiguracja programu Visual Studio](http://social.msdn.microsoft.com/Forums/en-US/vssetup/threads)
 
-   - Narzędzia do testowania w programie Visual Studio 2010 i 2012
+   - [Narzędzia do testowania w programie Visual Studio 2010 i 2012](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vstest&filter=alltypes&sort=lastpostdesc)
 
-   - Testowanie przy użyciu programu Visual Studio Test Manager (MTM)
+   - [Testowanie przy użyciu programu Visual Studio Test Manager (MTM)](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsmantest&filter=alltypes&sort=lastpostdesc)
 
-   - Testy jednostkowe programu Visual Studio
+   - [Visual Studio Unit Testing](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsunittest&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - TFS — instalacji i administrowania
+   - [TFS – instalacji i administrowania](http://social.msdn.microsoft.com/Forums/en-US/tfsadmin/threads)
 
-   - TFS — ogólne
+   - [TFS — ogólne](http://social.msdn.microsoft.com/Forums/en-US/tfsgeneral/threads)
 
-   - TFS — źródło i kontrola wersji
+   - [TFS – źródła i kontrola wersji](http://social.msdn.microsoft.com/Forums/en-US/tfsversioncontrol/threads)
 
-   - TFS — kompilacji i zarządzania zleceniami
+   - [TFS – zarządzania kompilacjami i wydaniami](http://social.msdn.microsoft.com/Forums/en-US/tfsbuild/threads)
 
-   - TFS — raportowania i Magazyn
+   - [TFS — raportowanie i Magazyn](http://social.msdn.microsoft.com/Forums/en-US/tfsreporting/threads)
 
-   - TFS — Zarządzanie projektami & elementu roboczego
+   - [TFS — Zarządzanie projektami i element roboczy](http://social.msdn.microsoft.com/Forums/en-US/tfsworkitemtracking/threads)
 
-   - TFS — szablony procesów
+   - [TFS — szablony procesów](http://social.msdn.microsoft.com/Forums/en-US/tfsprocess/threads)
 
-   - TFS — migracji i integracja
+   - [TFS — migracja i integracja](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsintegration&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio Online
+   - [Visual Studio Online](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-languages"></a>Języki Visual Studio
-   - Visual Basic
+   - [Visual Basic](http://social.msdn.microsoft.com/Forums/en-US/vbgeneral/threads)
 
-   - Visual C#
+   - [Visual C#](http://social.msdn.microsoft.com/Forums/en-US/csharpgeneral/threads)
 
-   - Visual C++
+   - [Visual C++](http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/threads)
 
-   - Standardów języka Visual C++, rozszerzenia i międzyoperacyjne
+   - [Visual C++ Standards, rozszerzenia oraz międzyoperacyjności](http://social.msdn.microsoft.com/Forums/en-US/vclanguage/threads)
 
 
 ### <a name="biztalk"></a>BizTalk
-   - BizTalk Server General
+   - [BizTalk Server General](http://social.msdn.microsoft.com/Forums/en-US/biztalkgeneral/threads)
 
-   - BizTalk Server EDI i AS2
+   - [Oprogramowanie BizTalk Server EDI i AS2](http://social.msdn.microsoft.com/Forums/en-US/biztalkediandas2/threads)
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - ADO<span>dostawcy danych .NET
+   - [ADO<span>dostawcy danych .NET](http://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads)
 
-   - ADO<span>.NET zestawu danych
+   - [ADO<span>zestaw danych .NET](http://social.msdn.microsoft.com/Forums/en/adodotnetdataset/threads)
 
-   - LINQ do SQL
+   - [LINQ to SQL](http://social.msdn.microsoft.com/Forums/en/linqtosql/threads)
 
-   - ADO<span>programu Entity Framework .NET i LINQ do jednostek
+   - [ADO<span>.NET Entity Framework i LINQ to Entities](http://social.msdn.microsoft.com/Forums/en/adodotnetentityframework/threads)
 
-   - Usługi WCF (ADO<span>.NET) usługi danych
+   - [Usługi WCF (ADO<span>.NET) usługi danych](http://social.msdn.microsoft.com/Forums/en/adodotnetdataservices/threads)
 
 ### <a name="xml"></a>XML
-   - XML i .NET Framework
+   - [XML i programu .NET Framework](http://social.msdn.microsoft.com/Forums/en-US/xmlandnetfx/threads)
 
-   - Program SQL Server XML
+   - [Program SQL Server XML](http://social.msdn.microsoft.com/Forums/en-US/sqlxml/threads)
 
 
-## <a name="activation-steps"></a>Kroki aktywacji
-Uzyskiwanie dostępu do pomocy technicznej przed jest bardzo prosty.
-1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. Znajdź Kafelek priorytetów w sekcji pomocy technicznej.  Polecenie **Pomoc**.
-
-    ![Priorytet obsługi kafelka](_img/vs-priority-support/vs-priority-support-tile.png)
-
-3. Przeglądaj listę forum, a następnie wybierz z żądaną forum.
-
-    ![Forum pomocy technicznej o priorytecie](_img/vs-priority-support/vs-priority-support-forums.png)
-
-4. Można odczytać ostatnie odpowiedzi, wyszukiwanie poprzednie wpisy lub przesłać nowe pytanie.
-
-    ![Przykład pomocy technicznej o priorytecie](_img/vs-priority-support/vs-priority-support-example.png)
-
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+## <a name="eligibility"></a>Uprawnienie
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | Włączone       |  Tak          |
-| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | Włączone                                                            |Tak |
-| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Włączone                                                            |Tak |
-| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Włączone                                                            |Tak |
-| Visual Studio Dev Essentials | NA  | Włączone                                                            |Tak |
-| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak          |
+| Program Visual Studio Professional (standardowy, roczna w chmurze) | VL, Azure, Retail                                       | Uwzględnione                                                            |Tak |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Uwzględnione                                                            |Tak |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Uwzględnione                                                            |Tak |
+| Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
+| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie do sprzedaży (niego) Wyobraź sobie ekwiwalentu pełnego wymiaru czasu programu Visual Studio Industry Partner (VSIP).  Wyklucza: Sieci Microsoft Partner Network (MPN), MCT oprogramowania i usług, MCT oprogramowania i deweloperów usług, BizSpark, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD).*
+<sup>1</sup>*obejmuje: nie do odsprzedaży, Imagine ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP).    Nie obejmuje: Sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego).*
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
+Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
--  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

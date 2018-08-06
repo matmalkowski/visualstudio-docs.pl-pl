@@ -13,118 +13,118 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8360daf5ff1e7d94d995bdbefee6228a47e47db8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143901"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566935"
 ---
-# <a name="walkthrough-outlining"></a>Wskazówki: Tworzenie konspektu
-Można zaimplementować opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwiń lub Zwiń. Regiony można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i dotyczą definicji region tylko tego typu lub definicje regionie można zastosować do istniejącego typu zawartości (na przykład "tekst"). W tym przewodniku pokazano, jak zdefiniować i wyświetlanie konspektu regionów.  
+# <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
+Konfigurowanie opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwinąć lub zwinąć. Można zdefiniować regionów w kontekście usługi języka lub zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i stosowanie definicji region tylko do tego typu lub zastosować definicje region do istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak zdefiniować i wyświetlanie konspektu regionów.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie instaluj programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Tworzenie projektu Framework (MEF) zarządzanych rozszerzeń  
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Utwórz projekt Managed Extensibility Framework (MEF)  
   
-#### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF  
+### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF  
   
-1.  Tworzenie projektu VSIX. Nazwa rozwiązania `OutlineRegionTest`.  
+1.  Utwórz projekt VSIX. Nazwij rozwiązanie `OutlineRegionTest`.  
   
-2.  Dodaj szablon elementu klasyfikatora edytora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Dodaj szablon elementu edytora klasyfikatora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Usuń pliki istniejące klasy.  
+3.  Usuń istniejące pliki klasy.  
   
-## <a name="implementing-an-outlining-tagger"></a>Implementowanie zwijania modułu znakowania  
- Regiony zwijania są oznaczane rodzaj tagu (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Ten tag zawiera standardowe zwijania zachowanie. Region obramowane można rozwinięte lub zwinięte. Obramowane region jest oznaczony jako znak PLUS, jeśli jest zwinięte lub znakiem minus, jeśli rozwiniętą i rozszerzonej region został oddzielony przez pionowym wierszem.  
+## <a name="implement-an-outlining-tagger"></a>Implementowanie konspektu moduł tagujący  
+ Konspektu regiony są oznaczone według rodzaju tagu (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Ten tag udostępnia standardowy konspekt zachowanie. Schemat regionu można można rozwijać i zwijać. Schemat region jest oznaczona przez znak Plus (**+**), jeśli jest zwinięte lub znak Minus (**-**) Jeśli jest on rozwinięty i rozwinięty region jest zaznaczonymi przez pionowym wierszem.  
   
- W poniższej procedurze pokazano sposób definiowania modułu znakowania, tworzącą zwijania regiony dla wszystkich regionów, które są rozdzielane znakami "[" i "]".  
+ Poniższe kroki pokazują jak zdefiniować moduł tagujący, tworzącą konspektu regiony dla wszystkich regionów, które są rozdzielane znakami nawiasy (**[**,**]**).  
   
-#### <a name="to-implement-an-outlining-tagger"></a>Aby zaimplementować zwijania modułu znakowania  
+### <a name="to-implement-an-outlining-tagger"></a>Aby zaimplementować konspektu moduł tagujący  
   
 1.  Dodaj plik klasy i nadaj mu nazwę `OutliningTagger`.  
   
-2.  Importuj następujących przestrzeni nazw.  
+2.  Zaimportuj następujące przestrzenie nazw.  
   
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]  
   
-3.  Utwórz klasę o nazwie `OutliningTagger`, a go zaimplementować <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3.  Utwórz klasę o nazwie `OutliningTagger`, potem z łatwością wdrożyć <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]  
   
-4.  Dodaj pola do śledzenia buforu tekstu i migawki i gromadzone zestawów wierszy, które powinny oznakowane jako zwijania regionów. Ten kod zawiera listę obiektów Region (w celu zdefiniowania później) reprezentujące zwijania regionów.  
+4.  Dodaj pola do śledzenia bufora tekstowego i migawki i są gromadzone zestawów wierszy, które powinny zostać oznaczony jako zwijanie regionów. Ten kod zawiera listę obiektów Region (do ustalenia później), które reprezentują konspektu regionów.  
   
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]  
   
-5.  Dodaj Konstruktor modułu znakowania, które inicjuje pola, analizuje buforu i dodaje obsługi zdarzeń do <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzeń.  
+5.  Dodaj Konstruktor moduł tagujący, która inicjuje pól, analizowania buforu, i dodaje procedurę obsługi zdarzeń do <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzeń.  
   
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]  
   
-6.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> obejmuje metodę, która tworzy wystąpienie tagu. W tym przykładzie założono, że zakresy w <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> przekazany do metody są ciągłe, mimo że to nie zawsze jest wielkość liter. Ta metoda tworzy nowy zakres tagu dla każdego z możliwością zwijania regionów.  
+6.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> obejmuje metodę, która tworzy wystąpienie tagu. W tym przykładzie założono, że zakresy w <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> przekazanego do metody są ciągłe, chociaż nie zawsze wymagane. Ta metoda tworzy nowy zakres tagów dla poszczególnych regionów konspektu.  
   
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]  
   
-7.  Deklarowanie `TagsChanged` obsługi zdarzeń.  
+7.  Zadeklaruj `TagsChanged` programu obsługi zdarzeń.  
   
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]  
   
-8.  Dodaj `BufferChanged` obsługi zdarzeń, które odpowiada <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzenia według podczas analizowania buforu tekstu.  
+8.  Dodaj `BufferChanged` programu obsługi zdarzeń, które odpowiada <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzenia według podczas analizowania buforu tekstowego.  
   
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]  
   
-9. Dodaj metodę analizowania buforu. Przykładzie podanym w tym miejscu jest tylko do celów ilustracyjnych. Analizuje synchronicznie buforu w zagnieżdżonych zwijania regionów.  
+9. Dodaj metodę, która analizuje buforu. Przykład podany w tym miejscu jest wyłącznie do celów informacyjnych. Analizuje synchronicznie buforu w zagnieżdżonych konspektu regionów.  
   
      [!code-csharp[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]
      [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]  
   
-10. Następująca metoda pomocnika pobiera liczba całkowita, która reprezentuje poziom zwijania, tak, aby 1 pary nawiasów klamrowych po lewej stronie.  
+10. Następującą metodę pomocnika pobiera liczba całkowita, która reprezentuje stopień konspektu, w taki sposób, że 1 jest parę nawiasów skrajnie po lewej stronie.  
   
      [!code-csharp[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]
      [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]  
   
-11. Następująca metoda pomocnika tłumaczy Region (zdefiniowaną w dalszej części tego tematu) na element SnapshotSpan.  
+11. Następującą metodę pomocnika tłumaczy Region (zdefiniowane w dalszej części tego artykułu) na element SnapshotSpan.  
   
      [!code-csharp[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]
      [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]  
   
-12. Następujący kod jest tylko do celów ilustracyjnych. Definiuje klasę PartialRegion, zawierającą numer wiersza i Przesunięcie początku zwijania regionu i odwołanie do regionu nadrzędnego (jeśli istnieje). Dzięki temu analizatora składni skonfigurować zagnieżdżone zwijania regionów. Klasa pochodna Region zawiera odwołanie do numeru wiersza końcowego zwijania regionu.  
+12. Poniższy kod jest wyłącznie do celów informacyjnych. Definiuje klasę PartialRegion, który zawiera numer wiersza i przesunięcia początkowego konspektu region i odwołanie do regionu nadrzędnego (jeśli istnieje). Ten kod umożliwia analizatora składni skonfigurować zagnieżdżone zwijanie regionów. Klasa pochodna Region zawiera odwołanie do numeru wiersza końcowego konspektu regionu.  
   
      [!code-csharp[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]
      [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]  
   
-## <a name="implementing-a-tagger-provider"></a>Implementowanie dostawcy modułu znakowania  
- Należy wyeksportować dostawcy modułu znakowania dla Twojego modułu znakowania. Tworzy dostawcę modułu znakowania `OutliningTagger` buforu typ zawartości "text" lub innego zwraca `OutliningTagger` Jeśli bufor już ją zawiera.  
+## <a name="implement-a-tagger-provider"></a>Implementowanie dostawcy moduł tagujący  
+ Wyeksportuj moduł tagujący dostawcę dla Twojego moduł tagujący. Tworzy dostawcę moduł tagujący `OutliningTagger` dla buforu "text" typ zawartości lub inne zwraca `OutliningTagger` Jeśli bufor zawiera już jeden.  
   
-#### <a name="to-implement-a-tagger-provider"></a>Aby zaimplementować dostawcę modułu znakowania  
+### <a name="to-implement-a-tagger-provider"></a>Aby zaimplementować dostawcę moduł tagujący  
   
-1.  Utwórz klasę o nazwie `OutliningTaggerProvider` implementującej <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>i wyeksportować go przy użyciu atrybutów ContentType i typu tag.  
+1.  Utwórz klasę o nazwie `OutliningTaggerProvider` implementującej <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>i wyeksportuj go za pomocą atrybutów ContentType i typu tag.  
   
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]  
   
-2.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metody przez dodanie `OutliningTagger` właściwości buforu.  
+2.  Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metody, dodając `OutliningTagger` właściwości buforu.  
   
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
- Do przetestowania tego kodu, Skompiluj rozwiązanie OutlineRegionTest i uruchom go w eksperymentalnym wystąpieniu.  
+## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu  
+ Aby przetestować ten kod, Kompiluj rozwiązanie OutlineRegionTest, a następnie uruchomić go w doświadczalnym wystąpieniu.  
   
-#### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Tworzenie i testowanie rozwiązania OutlineRegionTest  
+### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Aby skompilować i przetestować rozwiązanie OutlineRegionTest  
   
 1.  Skompiluj rozwiązanie.  
   
-2.  Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio zostanie uruchomiony.  
+2.  Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio został uruchomiony.  
   
-3.  Utwórz plik tekstowy. Wpisz dowolny tekst, który obejmuje zarówno otwierający nawias klamrowy, jak i zamykający nawias klamrowy.  
+3.  Utwórz plik tekstowy. Wpisz jakiś tekst, który zawiera zarówno otwierające nawiasy i zamykających nawiasów kwadratowych.  
   
     ```  
     [  
@@ -132,7 +132,7 @@ Można zaimplementować opartych na języku funkcje, takie jak tworzenie konspek
     ]  
     ```  
   
-4.  Powinien być zwijania region, który zawiera zarówno nawiasów klamrowych. Należy kliknąć znak MINUS z lewej strony otwierający nawias klamrowy, aby zwinąć zwijania regionu. Gdy region jest zwinięte, symbol wielokropka (...) powinna zostać wyświetlona z lewej strony obszaru zwiniętego i wyskakujące okienko zawierające tekst **Aktywuj tekst** powinien zostać wyświetlony, gdy wskaźnik myszy znajduje się nad wielokropka.  
+4.  Powinna istnieć konspektu region, który zawiera oba nawiasy kwadratowe. Można kliknąć przycisk z lewej strony otwierającego nawiasu znak Minus, aby zwinąć konspektu regionu. Gdy region jest zwinięte, symbol wielokropka (*...* ) powinien pojawić się po lewej stronie Zwinięty region, a okno podręczne zawierające tekst **umieść tekst** powinien zostać wyświetlony po umieszczeniu wskaźnika na wielokropek.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Zobacz także  
+ [Wskazówki: Łączenie typu zawartości na rozszerzenie nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

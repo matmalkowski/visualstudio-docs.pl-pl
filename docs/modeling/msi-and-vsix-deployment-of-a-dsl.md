@@ -9,130 +9,130 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ccd26814b8a6f06f896c661f2ca9eddb0de8a90d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954587"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566541"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
-Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi być zainstalowany na komputerze docelowym.
+Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muszą być zainstalowane na komputerze docelowym.
 
-##  <a name="which"></a> Wybór między VSIX i wdrożenia MSI
+##  <a name="which"></a> Wybieranie między wdrażanie pliku MSI i VSIX
  Istnieją dwie metody wdrażania języka specyficznego dla domeny:
 
 |Metoda|Zalety|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia)|Bardzo łatwa do wdrożenia: kopiowania, a następnie wykonaj **.vsix** plik z projektu DslPackage.<br /><br /> Aby uzyskać więcej informacji, zobacz [instalowania i odinstalowywania DSL przy użyciu VSX](#Installing).|
-|MSI (plik Instalatora)|— Umożliwia użytkownikowi otwieranie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] klikając dwukrotnie plik DSL.<br />-Kojarzy ikony typu pliku DSL w komputerze docelowym.<br />-Kojarzy XSD (schemat XML) z typem pliku DSL. Dzięki temu można uniknąć ostrzeżeń podczas ładowania pliku do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Instalacja projektu należy dodać do rozwiązania, aby utworzyć instalatora MSI.<br /><br /> Aby uzyskać więcej informacji, zobacz [wdrażanie DSL przy użyciu pliku MSI](#msi).|
+|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia)|Bardzo łatwa do wdrożenia: kopiowania, a następnie wykonaj **.vsix** pliku z projektem DslPackage.<br /><br /> Aby uzyskać więcej informacji, zobacz [instalowania i odinstalowywania DSL za pomocą VSX](#Installing).|
+|MSI (plik Instalatora)|— Umożliwia użytkownikowi otwieranie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , klikając dwukrotnie plik DSL.<br />-Kojarzy ikony z typem pliku DSL na komputerze docelowym.<br />-Kojarzy XSD (schematu XML) z typem pliku DSL. Umożliwia to uniknięcie ostrzeżenia, gdy plik jest ładowany do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Projektu Instalatora należy dodać do rozwiązania, aby utworzyć instalatora MSI.<br /><br /> Aby uzyskać więcej informacji, zobacz [wdrażania DSL za pomocą pliku MSI](#msi).|
 
-##  <a name="Installing"></a> Instalowanie i odinstalowywanie DSL przy użyciu VSX
- Po zainstalowaniu programu DSL przez tę metodę użytkownika DSL plik można otworzyć z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale nie można otworzyć pliku z Eksploratora Windows.
+##  <a name="Installing"></a> Instalowanie i odinstalowywanie DSL za pomocą VSX
+ Gdy DSL jest instalowany przez tę metodę, użytkownik może otwierać plik DSL z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale nie można otworzyć pliku w Eksploratorze Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Aby zainstalować DSL za pomocą VSX
 
-1.  W komputerze, należy znaleźć **.vsix** pliku, który został utworzony w projekcie DSL pakietu.
+1.  Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany przez projekt pakietu języka DSL.
 
     1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DslPackage** projektu, a następnie kliknij przycisk **Otwórz Folder w Eksploratorze Windows**.
 
     2.  Zlokalizuj plik **bin\\\*\\***YourProject***. DslPackage.vsix**
 
-2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować DSL. Może to być własnym komputerze lub inny.
+2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować język DSL. Może to być Twój własny komputer lub innej.
 
-    -   Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] obsługującej DSLs w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [obsługiwane wersje Visual Studio wizualizacji i modelowania SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
+    -   Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] obsługujący języków DSL w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [obsługiwane wersje programu Visual Studio dla zestawu Visualization & Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] określony w **DslPackage\source.extensions.manifest**.
+    -   Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] określonych w **DslPackage\source.extensions.manifest**.
 
 3.  Na komputerze docelowym, kliknij dwukrotnie **.vsix** pliku.
 
-     **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenie.
+     **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.
 
 4.  Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-5.  Aby przetestować DSL, użyj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Aby utworzyć nowy plik o rozszerzeniu zdefiniowana dla sieci DSL.
+5.  Aby przetestować język DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do utworzenia nowego pliku, który ma rozszerzenie które są zdefiniowane dla DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Aby odinstalować DSL, który został zainstalowany przy użyciu VSX
 
-1.  Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzenia**.
+1.  Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
-2.  Rozwiń węzeł **zainstalowanych rozszerzeń**.
+2.  Rozwiń **zainstalowanych rozszerzeń**.
 
-3.  Wybierz rozszerzenia, w którym jest zdefiniowany DSL, a następnie kliknij przycisk **Odinstaluj**.
+3.  Wybierz rozszerzenie, w którym zdefiniowano język DSL, a następnie kliknij **Odinstaluj**.
 
- Rzadko uszkodzony rozszerzenia nie udało się załadować i tworzy raport w oknie błąd, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku należy usunąć rozszerzenia przez usunięcie pliku:
+ Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku należy usunąć rozszerzenie przez usunięcie pliku:
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Wdrażanie DSL w pliku MSI
- Definiując plik MSI (Instalator Windows) dla sieci DSL, mogą umożliwiać użytkownikom otwieranie plików DSL z Eksploratora Windows. Można również skojarzyć ikonę i krótki opis z rozszerzeniem nazwy. Ponadto MSI można zainstalować XSD, który może służyć do sprawdzania poprawności DSL plików. Inne składniki można dodać do pliku MSI, który zostanie zainstalowany w tym samym czasie.
+##  <a name="msi"></a> Wdrażanie DSL w Instalatora MSI
+ Definiując plik MSI (Instalator Windows) dla DSL, możesz zezwolić użytkownicy będą mogli otwierać pliki DSL z programu Windows Explorer. Można również skojarzyć ikonę i krótki opis z rozszerzeniem nazwy pliku. Ponadto plik MSI można zainstalować pliku XSD, który może służyć do sprawdzania poprawności plików DSL. Jeśli chcesz, możesz dodać inne składniki, do pliku MSI, który zostanie zainstalowany w tym samym czasie.
 
- Aby uzyskać więcej informacji na temat plików MSI i innych opcji wdrażania, zobacz [wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).
+ Aby uzyskać więcej informacji na temat plików MSI i inne opcje wdrażania, zobacz [wdrażania aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).
 
- Aby utworzyć instalatora MSI, Dodaj projekt Instalatora do Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Najprostszą tworzenia projektu Instalatora jest użycie szablonu CreateMsiSetupProject.tt, który można pobrać z [lokacji VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Aby utworzyć instalatora MSI, należy dodać projektu Instalatora, aby Twoje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Najprostsza metoda tworzenia projektu konfiguracji jest użycie szablonu CreateMsiSetupProject.tt, który można pobrać z [witryny VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>Aby wdrożyć DSL w pliku MSI
+#### <a name="to-deploy-a-dsl-in-an-msi"></a>Aby wdrożyć DSL w Instalatora MSI
 
-1.  Ustaw `InstalledByMsi` w manifeście rozszerzenia. Zapobiega to VSX jest instalowana i odinstalowywana z wyjątkiem przez MSI. Jest to ważne, Jeśli dołączysz innych składników w MSI.
+1.  Ustaw `InstalledByMsi` w manifeście rozszerzenia. Zapobiega to VSX jest instalowana i odinstalowywana z wyjątkiem za pomocą pakietu MSI. Jest to ważne, jeśli będzie obejmować inne składniki w pliku MSI.
 
     1.  Open DslPackage\source.extension.tt
 
     2.  Wstaw następujący wiersz przed `<SupportedProducts>`:
 
-        ```
+        ```xml
         <InstalledByMsi>true</InstalledByMsi>
         ```
 
-2.  Utwórz lub Edytuj ikonę, która reprezentuje użytkownika DSL w Eksploratorze Windows. Na przykład edytować **DslPackage\Resources\File.ico**
+2.  Utwórz lub Edytuj ikonę która będzie reprezentować DSL w Eksploratorze Windows. Na przykład edytować **DslPackage\Resources\File.ico**
 
-3.  Upewnij się, że następujące atrybuty DSL użytkownika są prawidłowe:
+3.  Upewnij się, że następujące atrybuty DSL są prawidłowe:
 
-    -   W Eksploratorze DSL kliknij węzeł główny, a następnie w oknie właściwości, przejrzyj:
+    -   W Eksplorator DSL kliknij węzeł główny i przejrzyj w oknie właściwości:
 
         -   Opis
 
         -   Wersja
 
-    -   Kliknij przycisk **edytor** węzeł i kliknij w oknie właściwości **ikona**. Ustaw wartość, aby odwołać plik ikony w **DslPackage\Resources**, takich jak **File.ico**
+    -   Kliknij przycisk **edytora** węzła i w oknie dialogowym właściwości kliknij **ikonę**. Ustaw wartość na odwoływać się do pliku ikony w **DslPackage\Resources**, takich jak **File.ico**
 
-    -   Na **kompilacji** menu, otwórz **programu Configuration Manager**i wybierz konfigurację, którą chcesz utworzyć, takie jak **wersji** lub **debugowania** .
+    -   Na **kompilacji** menu Otwórz **programu Configuration Manager**i wybierz konfigurację, który chcesz utworzyć, takie jak **wersji** lub **debugowania** .
 
-4.  Przejdź do [strony głównej wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)i z **pobiera** karcie, Pobierz **CreateMsiSetupProject.tt**.
+4.  Przejdź do [wizualizacji i modelowania SDK strony głównej](http://go.microsoft.com/fwlink/?LinkID=186128)i z **pliki do pobrania** pozycję Pobierz **CreateMsiSetupProject.tt**.
 
 5.  Dodaj **CreateMsiSetupProject.tt** do projektu Dsl.
 
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Spowoduje to utworzenie pliku o nazwie **CreateMsiSetupProject.vdproj**.
 
-6.  W Eksploratorze Windows, skopiuj Dsl\\Instalatora o nazwie *.vdproj do nowego folderu.
+6.  W Eksploratorze Windows skopiuj Dsl\\*.vdproj w nowym folderze o nazwie Instalatora.
 
-     (Jeśli chcesz, można teraz wykluczyć CreateMsiSetupProject.tt z projektu Dsl.)
+     (Jeśli chcesz, możesz teraz wykluczyć CreateMsiSetupProject.tt z projektu języka Dsl.)
 
-7.  W **Eksploratora rozwiązań**, Dodaj **Instalator\\\*vdproj** jako istniejącego projektu.
+7.  W **Eksploratora rozwiązań**, Dodaj **instalacji\\\*vdproj** jako istniejący projekt.
 
 8.  Na **projektu** menu, kliknij przycisk **zależności projektu**.
 
-     W **zależności projektu** oknie dialogowym Wybierz projektu Instalatora.
+     W **zależności projektu** okna dialogowego Wybierz projekt Instalatora.
 
-     Zaznacz pole obok **DslPackage**.
+     Zaznacz pole obok pozycji **DslPackage**.
 
 9. Ponownie skompiluj rozwiązanie.
 
-10. W Eksploratorze Windows zlokalizuj plik MSI wbudowanych w projekcie Instalatora.
+10. W Eksploratorze Windows znajdź utworzone pliku MSI w swojej instalacji projektu.
 
-     Skopiuj plik MSI na komputerze, na którym chcesz zainstalować z DSL. Kliknij dwukrotnie plik MSI. Instalator jest uruchamiany.
+     Skopiuj plik MSI na komputerze, na którym chcesz zainstalować DSL. Kliknij dwukrotnie plik MSI. Jest uruchamiany Instalator.
 
-11. W komputerze docelowym Utwórz nowy plik rozszerzeniem sieci DSL. Sprawdź, czy:
+11. Na komputerze docelowym Utwórz nowy plik, który ma rozszerzenie pliku DSL. Upewnij się, że:
 
-    -   W widoku listy Eksploratora Windows plik pojawi się ikona i zdefiniowanym przez użytkownika.
+    -   W widoku listy Eksploratora Windows plik zostanie wyświetlony ikonę i opis, który został zdefiniowany.
 
-    -   Dwukrotne kliknięcie pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamia i otwiera plik DSL w edytorze DSL.
+    -   Po dwukrotnym kliknięciu pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpoczyna się i otwiera plik DSL w edytorze języka DSL.
 
- Jeśli wolisz, możesz utworzyć projektu Instalatora ręcznie, zamiast używać szablonu tekstowego. Aby uzyskać wskazówki, który zawiera tę procedurę zobacz rozdział 5 [wizualizacji i modelowania laboratorium SDK](http://go.microsoft.com/fwlink/?LinkId=208878).
+ Jeśli wolisz, projektu Instalatora można utworzyć ręcznie, zamiast używać szablonu tekstu. Aby uzyskać wskazówki, która zawiera tę procedurę, zobacz rozdział 5 [wizualizacji i modelowania SDK laboratorium](http://go.microsoft.com/fwlink/?LinkId=208878).
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Aby odinstalować DSL, który został zainstalowany z Instalatora MSI
+#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Aby odinstalować DSL, który został zainstalowany z pliku MSI
 
-1.  W systemie Windows, należy otworzyć **programy i funkcje** Panelu sterowania.
+1.  Windows, otwórz **programy i funkcje** Panelu sterowania.
 
-2.  Odinstaluj DSL.
+2.  Odinstaluj język DSL.
 
 3.  Uruchom ponownie program Visual Studio.

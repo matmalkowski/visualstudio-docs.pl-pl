@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Zapisywanie ustawień użytkownika na stronie Start | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Zapisywanie ustawień użytkownika na stronie początkowej | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,36 +11,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea4d4a07ed9f61f20ca2b3f79b99d3a2ebfa0b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146094"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566720"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Wskazówki: Zapisywanie ustawień użytkownika na stronę początkową
-Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wykonując tego przewodnika, można utworzyć formantu, który zapisuje ustawienie rejestru, gdy użytkownik kliknie przycisk, a następnie pobiera ustawienie zawsze ładuje strony początkowej. Ponieważ strona początkowa szablon projektu zawiera kontrolki użytkownika można dostosować, a domyślne strony początkowej XAML wymaga tego formantu, nie trzeba się zmodyfikować strony początkowej.  
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Przewodnik: Zapisywanie ustawień użytkownika na stronie sieci uruchomić
+Jednak można utrwalić ustawienia użytkownika dla stronę początkową. Dzięki temu przewodnikowi, można utworzyć formant, który zapisuje ustawienie w rejestrze, gdy użytkownik kliknie przycisk, a następnie pobiera ustawienie za każdym razem, gdy ładowania strony początkowej. Ponieważ szablon projektu strona początkowa zawiera kontrolki użytkownika można dostosowywać, a domyślny Start strony XAML wywołuje tę kontrolkę, nie trzeba modyfikować strony początkowej, sam.  
   
- Magazyn ustawień, który zostanie uruchomiony w ramach tego przewodnika jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejsu, która odczytuje i zapisuje w następującej lokalizacji rejestru, gdy jest wywoływana: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ Ustawienia magazynu, który zostanie uruchomiony w ramach tego przewodnika jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejs, który odczytuje i zapisuje je w następującej lokalizacji rejestru, gdy jest wywoływana: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<Nazwa_kolekcji >**  
   
- Gdy jest on uruchamiany w eksperymentalne wystąpienie programu Visual Studio, Magazyn ustawień odczytuje i zapisuje HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
+ Gdy uruchomiona jest w doświadczalnym wystąpieniu programu Visual Studio, z magazynu ustawień wykonującej Odczyt i zapis **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<nazwa_kolekcji >.**  
   
- Aby uzyskać więcej informacji na temat w celu utrzymania ustawień, zobacz [opcje i ustawienia użytkownika rozszerzanie](../extensibility/extending-user-settings-and-options.md).  
+ Aby uzyskać więcej informacji o tym, jak w celu utrzymania ustawień, zobacz [rozszerzanie ustawień użytkownika ani opcji](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
 > [!NOTE]
->  Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+>  Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
 >   
->  Szablon projektu strony początkowej można pobrać za pomocą **Menedżera rozszerzenia**.  
+>  Szablon projektu strona startowa można pobrać przy użyciu **Menedżera rozszerzeń**.  
   
 ## <a name="setting-up-the-project"></a>Konfigurowanie projektu  
   
-#### <a name="to-configure-the-project-for-this-walkthrough"></a>Aby skonfigurować projekt dla tego przewodnika  
+### <a name="to-configure-the-project-for-this-walkthrough"></a>Aby skonfigurować projekt w ramach tego przewodnika  
   
-1.  Utwórz projekt strony początkowej, zgodnie z opisem w [Tworzenie niestandardowej strony początkowej](creating-a-custom-start-page.md). Nazwij projekt **SaveMySettings**.  
+1.  Utwórz projekt strony początkowej, zgodnie z opisem w [Tworzenie niestandardowej strony początkowej](creating-a-custom-start-page.md). Nadaj projektowi nazwę **SaveMySettings**.  
   
-2.  W **Eksploratora rozwiązań**, Dodaj następujące odwołania do zestawu do projektu StartPageControl:  
+2.  W **Eksploratora rozwiązań**, Dodaj następujące odwołania do zestawów do projektu StartPageControl:  
   
     -   EnvDTE  
   
@@ -50,23 +50,23 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  Otwórz MyControl.xaml.  
+3.  Otwórz *MyControl.xaml*.  
   
-4.  W okienku XAML w najwyższego poziomu <xref:System.Windows.Controls.UserControl> definicji elementu, Dodaj następujące deklaracja zdarzenia po deklaracjach przestrzeni nazw.  
+4.  Z poziomu okienka XAML w najwyższego poziomu <xref:System.Windows.Controls.UserControl> definicja elementu, dodaj następującą deklarację zdarzeń po deklaracjach przestrzeni nazw.  
   
-    ```  
+    ```xml 
     Loaded="OnLoaded"  
     ```  
   
-5.  W okienku projektowania kliknij obszaru głównego formantu, a następnie naciśnij klawisz DELETE.  
+5.  W okienku projektowania kliknij główny obszar formantu, a następnie naciśnij klawisz **Usuń**.  
   
-     Spowoduje to usunięcie <xref:System.Windows.Controls.Border> element i wszystkie elementy, a tylko najwyższego poziomu pozostawia <xref:System.Windows.Controls.Grid> elementu.  
+     Ten krok usuwa <xref:System.Windows.Controls.Border> elementu, a cała zawartość i pozostawienie tylko najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
   
 6.  Z **przybornika**, przeciągnij <xref:System.Windows.Controls.StackPanel> formant do siatki.  
   
-7.  Teraz przeciągnij <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>oraz przycisk służący do <xref:System.Windows.Controls.StackPanel>.  
+7.  Teraz przeciągnij <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>oraz przycisk umożliwiający wymianę <xref:System.Windows.Controls.StackPanel>.  
   
-8.  Dodaj **x: Name** atrybutu dla <xref:System.Windows.Controls.TextBox>, a `Click` zdarzenia dla <xref:System.Windows.Controls.Button>, jak pokazano w poniższym przykładzie.  
+8.  Dodaj **x: Name** atrybutu dla <xref:System.Windows.Controls.TextBox>, a `Click` zdarzenia <xref:System.Windows.Controls.Button>, jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -76,15 +76,15 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
     </StackPanel>  
     ```  
   
-## <a name="implementing-the-user-control"></a>Implementowanie kontrolki użytkownika  
+## <a name="implement-the-user-control"></a>Implementowanie formantu użytkownika  
   
-#### <a name="to-implement-the-user-control"></a>Aby wdrażanie kontroli użytkownika  
+### <a name="to-implement-the-user-control"></a>Aby zaimplementować formant użytkownika  
   
-1.  W okienku XAML, kliknij prawym przyciskiem myszy `Click` atrybutu <xref:System.Windows.Controls.Button> elementu, a następnie kliknij przycisk **przechodzą do obsługi zdarzeń**.  
+1.  W okienku XAML, kliknij prawym przyciskiem myszy `Click` atrybutu <xref:System.Windows.Controls.Button> elementu, a następnie kliknij przycisk **przejdź do procedury obsługi zdarzeń**.  
   
-     To otwiera MyControl.xaml.cs i tworzy obsługi stub `Button_Click` zdarzeń.  
+     Ten krok otwiera *MyControl.xaml.cs*i tworzy obsługi wycinka `Button_Click` zdarzeń.  
   
-2.  Dodaj następujące `using` instrukcje na początku pliku.  
+2.  Dodaj następujący kod `using` instrukcji na górze pliku.  
   
      [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]  
   
@@ -120,7 +120,7 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
     }  
     ```  
   
-     Ta właściwość najpierw pobiera odwołanie do <xref:EnvDTE80.DTE2> interfejsu, zawierającą modelu obiektu automatyzacji z <xref:System.Windows.FrameworkElement.DataContext%2A> kontrolki użytkownika, a następnie używa DTE można pobrać wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interfejsu. Następnie używa tego wystąpienia, aby przywrócić bieżące ustawienia użytkownika.  
+     Ta właściwość najpierw pobiera odwołanie do <xref:EnvDTE80.DTE2> interfejs, który zawiera model obiektowy automatyzacji z <xref:System.Windows.FrameworkElement.DataContext%2A> kontrolki użytkownika, a następnie używa DTE wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interfejsu. Następnie używa tego wystąpienia, aby przywrócić bieżące ustawienia użytkownika.  
   
 4.  Wypełnij `Button_Click` zdarzeń w następujący sposób.  
   
@@ -137,9 +137,9 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
     }  
     ```  
   
-     To zapisuje zawartość pola tekstowego do pola "MySetting" w kolekcji "MySettings" w rejestrze. Jeśli kolekcja nie istnieje, jest tworzony.  
+     To zapisuje zawartość pola tekstowego do pola "MySetting" w kolekcji "MySettings" w rejestrze. Jeśli kolekcja nie istnieje, zostanie utworzony.  
   
-5.  Dodaj następujące obsługę `OnLoaded` zdarzeń kontrolki użytkownika.  
+5.  Dodaj następujący program obsługi dla `OnLoaded` zdarzeń kontrolki użytkownika.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -151,33 +151,33 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
     }  
     ```  
   
-     Bieżąca wartość "MySetting" to ustawia tekst pola tekstowego.  
+     Ten kod ustawia tekst pola tekstowego do bieżącej wartości "MySetting".  
   
-6.  Tworzenie formantu użytkownika.  
+6.  Tworzenie kontrolki użytkownika.  
   
-7.  W **Eksploratora rozwiązań**, otwórz source.extension.vsixmanifest.  
+7.  W **Eksploratora rozwiązań**, otwórz *source.extension.vsixmanifest*.  
   
 8.  W edytorze manifestu zestawu **nazwa produktu** do **Zapisz moje ustawienia strony początkowej**.  
   
-     Ustawia nazwę strony początkowej, ponieważ ma ono wyświetlane w **dostosowanie strony początkowej** na liście **opcje** okno dialogowe.  
+     Ta funkcja ustawia nazwę strony początkowej, jak pojawiają się w **Dostosuj stronę początkową** listy w **opcje** okno dialogowe.  
   
-9. Tworzenie StartPage.xaml.  
+9. Tworzenie *StartPage.xaml*.  
   
-## <a name="testing-the-control"></a>Testowanie formantu  
+## <a name="test-the-control"></a>Przetestować formant  
   
-#### <a name="to-test-the-user-control"></a>Aby przetestować kontrolki użytkownika  
+### <a name="to-test-the-user-control"></a>Aby przetestować formant użytkownika  
   
-1.  Naciśnij F5.  
+1.  Naciśnij klawisz **F5**.  
   
-     Otwiera eksperymentalne wystąpienie programu Visual Studio.  
+     Otwiera doświadczalne wystąpienie programu Visual Studio.  
   
-2.  W eksperymentalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **opcje**.  
+2.  W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-3.  W **środowiska** węzła, kliknij przycisk **uruchamiania**, a następnie w **dostosowanie strony początkowej** listy, wybierz **[zainstalowane rozszerzenia] Zapisz moje ustawienia strony początkowej** .  
+3.  W **środowiska** węzła, kliknij przycisk **uruchamiania**, a następnie w **Dostosuj stronę początkową** listy wybierz **[zainstalowane rozszerzenie] Zapisz moje ustawienia stronę początkową** .  
   
      Kliknij przycisk **OK**.  
   
-4.  Zamknij stronę początkową, jeśli jest on otwarty, a następnie na **widoku** menu, kliknij przycisk **— strona początkowa**.  
+4.  Zamknij stronę początkową, jeśli jest otwarty, a następnie na **widoku** menu, kliknij przycisk **strona startowa**.  
   
 5.  Na stronie początkowej kliknij **MójFormant** kartę.  
   
@@ -185,23 +185,23 @@ Można ją utrwalić ustawienia użytkownika dla strony początkowej sieci. Wyko
   
 7.  Zamknij stronę początkową, a następnie otwórz go ponownie.  
   
-     Wyraz "Kot" powinna być wyświetlana w polu tekstowym.  
+     Słowo "Cat" powinna być wyświetlana w polu tekstowym.  
   
-8.  Zamień wyraz "Kot" wyraz "Dog". Nie należy klikać przycisku.  
+8.  Zastąp słowo "Cat" słowa "Dog". Nie klikaj przycisku.  
   
 9. Zamknij stronę początkową, a następnie otwórz go ponownie.  
   
-     Wyraz "Kot" powinna być wyświetlana w polu tekstowym, mimo, że ustawienie nie został zapisany. Zdarza się to Visual Studio zachowuje okna narzędzi w pamięci, nawet jeśli ich są zamknięte, do czasu zamknięcia programu Visual Studio, sama.  
+     Słowo "Dog" powinna być wyświetlana w polu tekstowym, mimo że nawet jeśli ich zostaną zamknięte, aż do zamknięcia programu Visual Studio nie został zapisany ustawienie ponieważ Visual Studio przechowuje okien narzędzi w pamięci.  
   
-10. Zamknij eksperymentalne wystąpienie programu Visual Studio.  
+10. Zamknij wystąpienie doświadczalne programu Visual Studio.  
   
-11. Naciśnij klawisz F5, aby ponownie otworzyć eksperymentalne wystąpienie.  
+11. Naciśnij klawisz **F5** ponownie otworzyć wystąpienie eksperymentalne.  
   
-12. Wyraz "Kot" powinna być wyświetlana w polu tekstowym.  
+12. Słowo "Cat" powinna być wyświetlana w polu tekstowym.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Możesz zmodyfikować ten formant użytkownika, aby zapisać i pobierać dowolną liczbę niestandardowych ustawień przy użyciu różnych wartości z obsługi zdarzeń do pobierania i ustawiania `SettingsStore` właściwości. Tak długo, jak można użyć innego `propertyName` parametr dla każdego wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>, wartości nie zastąpi siebie w rejestrze.  
+ Można zmodyfikować ten formant użytkownika, aby zapisać i pobrać dowolną liczbę niestandardowych ustawień przy użyciu różnych wartości z procedury obsługi zdarzeń do pobierania i ustawiania `SettingsStore` właściwości. Tak długo, jak możesz użyć innego `propertyName` parametrów dla każdego wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>, wartości nie zastępowały siebie nawzajem w rejestrze.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
  [Dodawanie poleceń programu Visual Studio do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

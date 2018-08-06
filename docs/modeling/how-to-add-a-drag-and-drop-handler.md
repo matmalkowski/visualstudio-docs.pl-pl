@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513510"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566632"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 
@@ -50,14 +50,13 @@ W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram 
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, gdy wskaźnik myszy znajduje się nad tym kształt lub diagram, jeśli `OnDragOver(DiagramDragEventArgs e)` ustawione wcześniej `e.Effect` wartość inną niż `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram 
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik kliknie dwukrotnie kształt lub diagram.
@@ -76,7 +74,7 @@ W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram 
 
 Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Definiowanie procedury obsługi gestu za pomocą MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definiowanie procedury obsługi gestu za pomocą MEF
 
 Użyj tej metody, jeśli chcesz, aby deweloperów innych firm, aby można było zdefiniować własne programy obsługi DSL. Użytkowników można zainstalować rozszerzenia innych firm, po nich zainstalować DSL.
 
@@ -148,7 +146,6 @@ Aby odnaleźć formaty, w których jest dostępne informacje o źródle przecią
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Aby zaakceptować kształtów UML, należy określić identyfikator GUID w faktycznej klasy UML kształtu, eksperymentu. Pamiętaj, że zwykle ma więcej niż jeden typ elementu na dowolny diagram. Należy pamiętać, że obiekt przeciągnięte z diagram DSL lub UML jest kształtu, a nie do elementu modelu.
@@ -163,7 +160,7 @@ Jeśli przeciąganego elementu jest elementem DSL, możesz otworzyć model źró
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Aby przygotować projektu DSL Model Bus
 
-1.  Udostępnienie przez źródło DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus:
+1.  Udostępnić źródła DSL przez magistralę modelu w usłudze Visual Studio:
 
     1.  Pobierz i zainstaluj rozszerzenie programu Visual Studio Model Bus, jeśli nie jest już zainstalowany. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 

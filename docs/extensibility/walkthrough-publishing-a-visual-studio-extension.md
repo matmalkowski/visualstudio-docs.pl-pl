@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Publikowanie rozszerzenie programu Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,151 +14,151 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f823334f3686bdba3406daac69b2a98d203780a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147069"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566807"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Wskazówki: Publikowanie rozszerzenie programu Visual Studio
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 
-Ten przewodnik przedstawia sposób publikowania rozszerzenia programu Visual Studio do programu Visual Studio Marketplace. Podczas dodawania rozszerzenia do witryny Marketplace, deweloperzy mogą używać **rozszerzenia i aktualizacje** do przeglądania istnieje dla nowych i zaktualizowanych rozszerzeń.
+W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual Studio do witryny Marketplace programu Visual Studio. Po dodaniu rozszerzenia w portalu Marketplace, deweloperzy mogą używać **rozszerzenia i aktualizacje** Aby przeglądać w poszukiwaniu nowych i zaktualizowanych rozszerzenia.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-visual-studio-extension"></a>Tworzenie rozszerzenia programu Visual Studio
 
-W takim przypadku będą używane domyślne rozszerzenie pakiet VSPackage, ale te same kroki są prawidłowe dla wszystkich rodzajów rozszerzenia.
+W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są prawidłowe dla każdego rodzaju rozszerzenia.
 
-1. Utwórz pakiet VSPackage w języku C# o nazwie "TestPublish", który ma polecenia menu. Aby uzyskać więcej informacji, zobacz [tworzenie pierwszej rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
+1. Tworzenie pakietu VSPackage w języku C# o nazwie `TestPublish` zawierający polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Pakiet rozszerzenia
 
-1. Zaktualizuj vsixmanifest rozszerzenia przy użyciu prawidłowych informacji o nazwę produktu, autora i wersję.
+1. Zaktualizuj rozszerzenie *.vsixmanifest* poprawne informacje na temat nazwy produktu, autora i wersji.
 
-  ![Zaktualizuj vsixmanifest rozszerzenia](media/update-extension-vsixmanifest.png)
+  ![Aktualizacja rozszerzenia vsixmanifest](media/update-extension-vsixmanifest.png)
 
-2. Tworzenie rozszerzenia **wersji** tryb. Teraz rozszerzenia zostaną dodane do pakietu jako VSIX w folderze \bin\Release.
+2. Tworzenie rozszerzenia w **wersji** trybu. Teraz rozszerzenie jest ona dostępna jako pakiet VSIX w folderze \bin\Release.
 
-3. Możesz dwukrotnie kliknąć VSIX, aby zweryfikować instalację.
+3. Możesz kliknąć dwukrotnie VSIX, aby zweryfikować instalację.
 
-## <a name="test-the-extension"></a>Rozszerzenie testu
+## <a name="test-the-extension"></a>Testowanie rozszerzenia
 
- Przed rozpoczęciem dystrybucji rozszerzenia, budowania i testowania, aby upewnić się, że jest poprawnie zainstalowana w eksperymentalne wystąpienie programu Visual Studio.
+ Przed rozpoczęciem dystrybucji rozszerzenia, twórz i go przetestować, aby upewnić się, że jest poprawnie zainstalowane w doświadczalnym wystąpieniu programu Visual Studio.
 
-1. W programie Visual Studio Rozpocznij debugowanie. Aby otworzyć eksperymentalne wystąpienie programu Visual Studio.
+1. W programie Visual Studio rozpocząć debugowanie, aby otworzyć doświadczalne wystąpienie programu Visual Studio.
 
-2. W eksperymentalnym wystąpieniu, przejdź do **narzędzia** menu i kliknij przycisk **rozszerzenia i aktualizacje...** . Można włączyć rozszerzenia TestPublish, powinny być wyświetlane w środkowym okienku.
+2. W doświadczalnym wystąpieniu, przejdź do **narzędzia** menu i kliknij przycisk **rozszerzenia i aktualizacje**. Rozszerzenie TestPublish powinna zostać wyświetlona w środkowym okienku i włączone.
 
-3. Na **narzędzia** menu, upewnij się, zobacz polecenia testowego.
+3. Na **narzędzia** menu, upewnij się, zobacz polecenia testowania.
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Publikowanie rozszerzenia portalu Marketplace programu Visual Studio
+## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Publikowanie rozszerzenia do witryny Marketplace programu Visual Studio
 
-1. Upewnij się, utworzone wersji rozszerzenia i że jest aktualny.
+1. Upewnij się, czy został wcześniej utworzony wersji rozszerzenia i że jest on aktualny.
 
 2. Otwórz w przeglądarce sieci web [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) witryny sieci Web.
 
 3. W prawym górnym rogu kliknij **Zaloguj**.
 
-4. Użyj konta Microsoft do logowania. Jeśli nie masz konta Microsoft, należy go utworzyć w tym momencie.
+4. Użyj konta Microsoft do logowania. Jeśli nie masz konta Microsoft, możesz go utworzyć w tym momencie.
 
-5. Kliknij przycisk **publikowania rozszerzenia**.  Spowoduje to przejście do strony Zarządzanie dla wszystkich rozszerzeń.  Jeśli nie masz konta wydawcy, pojawi się monit o jego utworzenie w tym momencie.
+5. Kliknij przycisk **publikowania rozszerzenia**.  Ta opcja powoduje przejście do strony zarządzania dla wszystkich rozszerzeń. Jeśli nie masz konta wydawcy są zostanie wyświetlony monit, aby je utworzyć w tej chwili.
 
   ![Przekaż do witryny Marketplace](media/upload-to-marketplace.png)
 
-6. Wybierz wydawcę, którego chcesz użyć w celu przekazania Twoje rozszerzenie.  Można zmienić wydawcy, klikając na liście po lewej stronie nazwy wydawców.  Polecenie **nowe rozszerzenie** i wybierz **programu Visual Studio**.
+6. Wybierz wydawcę, którego chcesz użyć, aby przekazać Twoje rozszerzenie. Możesz zmienić wydawcy, klikając na liście po lewej stronie nazwy wydawcy. Kliknij pozycję **nowe rozszerzenie** i wybierz **programu Visual Studio**.
 
-7. W **1: Przekaż rozszerzenia**, możesz przekazać plik VSIX bezpośrednio do programu Visual Studio Marketplace lub po prostu Dodaj łącze własne witryny sieci Web. W takim przypadku będzie przekazać naszych rozszerzenia TestPublish.vsix.  Przeciągnij i upuść rozszerzenie lub użyj **kliknij** łącze, aby wyszukać plik.  Rozszerzenie można znaleźć w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
+7. W **1: Przekaż rozszerzenia**, możesz przekazać plik VSIX bezpośrednio do programu Visual Studio Marketplace lub po prostu Dodaj link do własnej witryny sieci Web. W tym przykładzie rozszerzenie *TestPublish.vsix* zostanie przekazany. Przeciągnij i upuść Twojego rozszerzenia lub użyj **kliknij** link, aby przejść do pliku. Znajdź rozszerzenia w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
 
-8. W **2: Podaj szczegóły rozszerzenia**, niektóre pola są wypełniane automatycznie z pliku source.extension.vsixmanifest z rozszerzenia.  Więcej informacji o poszczególnych znajduje się poniżej:
+8. W **2: Podaj szczegóły rozszerzenia**, niektóre pola są wypełniane automatycznie z *source.extension.vsixmanifest* plik z Twojego rozszerzenia. Znajdź więcej szczegółów dotyczących poszczególnych poniżej:
 
-    * **Wewnętrzna nazwa** będą używane w adresie URL strony szczegółów rozszerzenia. Na przykład publikowania rozszerzenia w obszarze Nazwa wydawcy "mójużytkownik" i określając wewnętrzna nazwa ma zostać "myextension" spowoduje adresu URL "marketplace.visualstudio\.com/items?itemName=myname.myextension" dla rozszerzenia Strona szczegółów.
+    * **Nazwa wewnętrzna** jest używana w adresie URL strony szczegółów rozszerzenia. Na przykład publikowania rozszerzenia w obszarze nazwy wydawcy "MojaNazwa" i określanie nazw wewnętrznych do "Moje rozszerzenie" wyniki w adresie URL "marketplace.visualstudio\.com/items?itemName=myname.myextension" Szczegóły Twojego rozszerzenia Strona.
     
-    * **Nazwa wyświetlana** Twojego rozszerzenia.  To jest wypełniana automatycznie z pliku source.extension.vsixmanifest.
+    * **Nazwa wyświetlana** Twojego rozszerzenia. Ta nazwa jest automatycznie wypełnione z *source.extension.vsixmanifest* pliku.
    
-    * **Wersja** numer rozszerzenia przekazywania.  To jest wypełniana automatycznie z pliku source.extension.vsixmanifest.
+    * **Wersja** liczba rozszerzenia przekazywania. Ta wersja jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
     
-    * **Identyfikator VSIX** jest unikatowy identyfikator, który używa programu Visual Studio dla rozszerzenia.  Jest to wymagane, jeśli chcesz mieć rozszerzenie aktualizowane automatycznie.  To jest wypełniana automatycznie z pliku source.extension.vsixmanifest.
+    * **Identyfikator VSIX** jest unikatowy identyfikator, który korzysta z programu Visual Studio dla rozszerzenia. Ten identyfikator jest wymagany, jeśli chcesz mieć rozszerzenie automatycznie aktualizowane. Ten identyfikator jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
     
-   * **Logo** który będzie używany dla rozszerzenia.  To jest wypełniana automatycznie od pliku source.extension.vsixmanifest, jeśli zostanie podana.
+   * **Logo** używany dla rozszerzenia. Jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku Jeśli podano.
     
-    * **Krótki opis** z czego Twoje rozszerzenie.  To jest wypełniana automatycznie od pliku source.extension.vsixmanifest.
+    * **Krótki opis** funkcji co Twoje rozszerzenie. Ten opis jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
     
-    * **Omówienie** jest dobrym miejscem do dołączyć zrzuty ekranu i szczegółowe informacje na temat działania Twoje rozszerzenie.
+    * **Omówienie** jest dobrym miejscem do uwzględnienia zrzutów ekranu i szczegółowe informacje na temat działania Twojego rozszerzenia.
     
-    * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenia będą działać na.  Rozszerzenie zostanie ona zainstalowana tylko w tych wersjach.
+    * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenie będzie działać na. Rozszerzenie jest ona instalowana tylko do tych wersji.
     
-    * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenia będą działać na.  Rozszerzenie zostanie ona zainstalowana tylko do tych wersji.
+    * ** Obsługiwane edition pozwala na wybór jakie wersje programu Visual Studio rozszerzenie będzie działać na z programu Visual Studio. Rozszerzenie jest ona instalowana tylko do tych wersji.
     
-    * **Typ**.  Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
+    * **Typ**. Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
     
-    * **Kategorie**.  Wybierz maksymalnie trzech, które są najbardziej odpowiednie dla rozszerzenia.
+    * **Kategorie**. Wybierz maksymalnie trzy, które są najlepszym rozwiązaniem dla rozszerzenia.
     
-    * **Tagi** są słowa kluczowe, które pomagają użytkownikom znaleźć rozszerzenia. Tagi może pomóc zwiększyć przydatność wyszukiwania rozszerzeń w witrynie Marketplace.
+    * **Tagi** są słowa kluczowe, które ułatwiają użytkownikom znajdowanie Twojego rozszerzenia. Tagi mogą pomóc w zwiększeniu trafności wyszukiwania rozszerzeń w portalu Marketplace.
     
-    * **Cennik kategorii** jest koszt Twoje rozszerzenie.
+    * **Cennik kategorii** jest koszt Twojego rozszerzenia.
     
-    * **Repozytorium kodu źródłowego** umożliwia udostępnianie łącze do kodu źródłowego ze społecznością.
+    * **Repozytorium kodu źródłowego** umożliwia udostępnianie linku do kodu źródłowego ze społecznością.
     
-    * **Zezwalaj na pytań i odpowiedzi na Twoje rozszerzenie** pozwoli użytkownikom na pozostaw pytań na stronie wpis rozszerzenia.
+    * **Zezwalaj na pytania i odpowiedzi dla rozszerzenia** pozwala użytkownikom na stronie wpis rozszerzenia należy pozostawić pytania.
 
-9. Kliknij przycisk **Zapisz & Przekaż**. Zostanie otwarta strona Zarządzanie Wstecz, aby Twoje wydawcy.  Rozszerzenie nie został opublikowany.  Aby opublikować rozszerzenie, kliknij prawym przyciskiem myszy na Twoje rozszerzenie i wybierz **Upublicznij**.  Możesz wyświetlić sposób rozszerzenia będzie wyglądać w witrynie Marketplace, wybierając **rozszerzenie widoku**.  W przypadku nabycia numerów kliknij **raporty**.  Aby wprowadzić zmiany do rozszerzenia, polecenie **Edytuj*.
+9. Kliknij przycisk **Zapisz prze & kazywanie**. Strona Zarządzanie tym wymaga opcji, możesz z powrotem do wydawcy. Rozszerzenia nie został jeszcze opublikowany. Aby opublikować Twojego rozszerzenia, kliknij prawym przyciskiem myszy na Twoje rozszerzenie i wybierz **Upublicznij**. Można wyświetlić, jak rozszerzenie będzie wyglądało w portalu Marketplace, wybierając **rozszerzenie widoku**. W przypadku nabycia liczb, kliknij pozycję **raporty**. Aby wprowadzić zmiany do rozszerzenia, wybierz polecenie **Edytuj**.
 
-  ![Rozszerzenie wpisu Menu](media/extension-entry-menu.png)
+  ![Rozszerzenie wpis Menu](media/extension-entry-menu.png)
 
-10. Po kliknięciu przycisku **Upublicznij**, rozszerzenie teraz jest publiczny.  Wyszukaj w Visual Studio Marketplace na Twoje rozszerzenie.
+10. Po kliknięciu przycisku **Upublicznij**, rozszerzenia jest obecnie dostępna publicznie. Wyszukaj Visual Studio Marketplace dla rozszerzenia.
 
-## <a name="add-additional-users-to-manage-your-publisher-account"></a>Dodać użytkowników do zarządzania kontem wydawcy
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Aby dodać kolejnych użytkowników, Zarządzanie kontem wydawcy
 
-Marketplace obsługuje przyznawanie uprawnień dodatkowym użytkownikom dostęp do zarządzania kontem wydawcy.
+Portal Marketplace obsługuje udzielanie użytkownikom dodatkowe uprawnienia do dostępu i zarządzania konta wydawcy.
 
-1. Przejdź do konta wydawcy, który chcesz dodać użytkowników do.
+1. Przejdź do konta wydawcy, który chcesz dodać dodatkowym użytkownikom.
 
-2. Wybierz **członków** i wybierz polecenie **Dodaj**
+2. Wybierz **członków** i kliknij pozycję **Dodaj**.
 
-  ![Dodaj dodatkowe użytkownika](media/add-users.png)
+  ![Dodawanie dodatkowych użytkowników](media/add-users.png)
 
-3. Następnie możesz określić adres e-mail użytkownika, o których chcesz dodać, a następnie przyznać odpowiedni poziom dostępu w ramach **wybierz rolę**.  Możesz wybrać następujące opcje:
+3. Następnie możesz określić adres e-mail użytkownika, o których chcesz dodać, a następnie przyznać odpowiedni poziom dostępu w ramach **wybierz rolę**.  Można wybrać następujące opcje:
 
-  * **Twórcy**: użytkownika można publikowania rozszerzenia, ale nie można wyświetlić lub zarządzania rozszerzeniami opublikowane przez innych użytkowników.
+  * **Twórca**: użytkownik może publikowania rozszerzenia, ale nie wyświetlić ani nimi zarządzać rozszerzenia publikowane przez innych użytkowników.
   
-  * **Czytnik**: użytkownika można wyświetlić rozszerzenia, ale nie można opublikować lub zarządzania rozszerzeniami.
+  * **Czytnik**: użytkownika można wyświetlanie tych rozszerzeń, ale nie można opublikować lub Zarządzaj rozszerzeniami.
   
-  * **Współautor**: użytkownik można opublikować i Zarządzaj rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
+  * **Współautor**: użytkownika można publikować i zarządzania rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
   
-  * **Właściciel**: użytkownik może publikować i zarządzać rozszerzeniami, Edytuj ustawienia wydawcy i zarządzanie dostępem.
+  * **Właściciel**: użytkownik może opublikować i zarządzać rozszerzeniami, edytować ustawienia wydawcy i zarządzanie dostępem.
   
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Zainstaluj rozszerzenia z witryny Marketplace programu Visual Studio
+## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Należy zainstalować rozszerzenie z witryny Marketplace programu Visual Studio
 
-Teraz, gdy rozszerzenie zostanie opublikowana, zainstaluj go w programie Visual Studio i przetestować go brak.
+Teraz, gdy rozszerzenie zostanie opublikowany, zainstaluj go w programie Visual Studio i przetestować.
 
-1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje...** .
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
-2. Kliknij przycisk **Online** , a następnie wyszukaj TestPublish.
+2. Kliknij przycisk **Online** a następnie wyszukaj **TestPublish**.
 
-3. Kliknij przycisk **Pobierz**. Rozszerzenia są planowane do zainstalowania.
+3. Kliknij przycisk **Pobierz**. Rozszerzenie następnie jest zaplanowane do instalacji.
 
 4. Aby ukończyć instalację, zamknij wszystkie wystąpienia programu Visual Studio.
 
 ## <a name="remove-the-extension"></a>Usuń rozszerzenie
 
-Można usunąć rozszerzenia z witryny Marketplace programu Visual Studio i z tego komputera.
+Można usunąć rozszerzenie z witryny Marketplace programu Visual Studio i z tego komputera.
 
-### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Aby usunąć rozszerzenia z Visual Studio Marketplace
+### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Aby usunąć rozszerzenie z witryny Marketplace programu Visual Studio
 
 1. Otwórz [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) witryny sieci Web.
 
-2. W prawym górnym rogu kliknij **publikowania** rozszerzenia.  Wybierz wydawcy, który był używany podczas publikowania TestPublish.  Zostanie wyświetlony na liście TestPublish.
+2. W prawym górnym rogu kliknij **Publikuj** rozszerzenia. Wybierz wydawcy, który umożliwia publikowanie **TestPublish**. Listę **TestPublish** pojawia się.
 
-3. Kliknij prawym przyciskiem myszy wpis rozszerzenia, a następnie kliknij przycisk **Usuń** użytkownik jest proszony o potwierdzenie, czy chcesz usunąć rozszerzenie.  Kliknij przycisk **OK**.
+3. Kliknij prawym przyciskiem myszy wpis rozszerzenia, a następnie kliknij przycisk **Usuń**. Zostanie wyświetlony monit o potwierdzenie, jeśli chcesz usunąć rozszerzenie. Kliknij przycisk **OK**.
 
-### <a name="to-remove-the-extension-from-your-computer"></a>Aby usunąć rozszerzenia z komputera
+### <a name="to-remove-the-extension-from-your-computer"></a>Aby usunąć rozszerzenie z komputera
 
-1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje...** .
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
-2. Wybierz TestPublish, a następnie kliknij przycisk **Odinstaluj**. Rozszerzenia są planowane do odinstalowania.
+2. Wybierz **TestPublish** a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie następnie jest zaplanowane do odinstalowania.
 
 3. Aby ukończyć dezinstalację, zamknij wszystkie wystąpienia programu Visual Studio.

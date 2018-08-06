@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950546"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567272"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
-DSL diagram można osadzić w formancie systemu Windows, który jest wyświetlany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna.
+# <a name="embed-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 
-## <a name="embedding-a-diagram"></a>Osadzanie diagramu
+DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w oknie programu Visual Studio.
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Aby osadzić DSL diagram w formancie systemu Windows
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Osadzanie diagramu DSL w kontrolce Windows
 
-1.  Dodaj nową **kontrolki użytkownika** plik do projektu DslPackage.
+1.  Dodaj nową **kontrolki użytkownika** pliku do projektu DslPackage.
 
-2.  Dodawanie formantu panelu do formantu użytkownika. Panel ten będzie zawierać DSL Diagram.
+2.  Dodaj kontrolkę panelu do kontrolki użytkownika. Ten panel będzie zawierać DSL Diagram.
 
-     Dodać inne formanty, które są potrzebne.
+     Dodaj inne kontrolki, których potrzebujesz.
 
      Ustaw właściwości zakotwiczenia formantów.
 
-3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij przycisk **kod widoku**. Dodaj ten konstruktor i zmiennych w kodzie:
+3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy plik kontrolki użytkownika, a następnie kliknij przycisk **Wyświetl kod**. Dodaj ten konstruktor i zmiennej w kodzie:
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ DSL diagram można osadzić w formancie systemu Windows, który jest wyświetlan
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
-4.  Dodaj nowy plik do projektu DslPackage o następującej treści:
+4.  Dodaj nowy plik do projektu DslPackage, o następującej zawartości:
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ DSL diagram można osadzić w formancie systemu Windows, który jest wyświetlan
             }
             return container;
     } } } }
-
     ```
 
-5.  Aby przetestować DSL, naciśnij klawisz F5 i Otwórz plik przykładowy model. Wyświetlany w formancie. Przybornika i inne funkcje działają normalnie.
+5.  Aby przetestować język DSL, naciśnij klawisz **F5** , a następnie otwórz przykładowy plik modelu. Diagram pojawia się wewnątrz formantu. Przybornik i inne funkcje działają normalnie.
 
-#### <a name="updating-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu magazynu
+## <a name="update-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu magazynu zdarzeń
 
-1.  W projektancie formularzy dodać **ListBox** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Zostaną zachowane w synchronism przy użyciu modelu *przechowywania zdarzeń*. Aby uzyskać więcej informacji, zobacz [obsługi Propaguj zmiany poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1.  W Projektancie formularza należy dodać **ListBox** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest zsynchronizowany z modelu przy użyciu *przechowywania zdarzeń*. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  W pliku kodu niestandardowego Zastąp dodatkowe metody do klasy widok dokumentu:
+2.  W pliku kodu niestandardowego zastąpić dalsze metody do klasy DocView:
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ DSL diagram można osadzić w formancie systemu Windows, który jest wyświetlan
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  W kodzie kontrolki użytkownika Wstaw metod do nasłuchiwania elementy dodawane i usuwane:
+3.  W kodzie kontrolki użytkownika należy wstawić metody do nasłuchiwania pod kątem elementów dodawane lub usuwane:
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,14 +137,13 @@ DSL diagram można osadzić w formancie systemu Windows, który jest wyświetlan
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  Aby przetestować DSL, naciśnij klawisz F5 w eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz plik przykładowy model.
+4.  Aby przetestować język DSL, naciśnij klawisz **F5** i jest w doświadczalnym wystąpieniu programu Visual Studio, Otwórz przykładowy plik modelu.
 
-     Należy zauważyć, że pole listy zawiera listę elementów w modelu i czy jest poprawna po albo i po Cofnij i ponów.
+     Należy zauważyć, że pole listy to lista elementów w modelu, i że jest on poprawny po albo i po Cofnij i ponów.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

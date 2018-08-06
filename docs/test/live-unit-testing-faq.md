@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 76cef03a8ceac47e06fb0ca13c667002895c6ac4
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382607"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567054"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -77,13 +77,13 @@ Tak. Live Unit Testing działa przy użyciu platformy .NET Core i .NET Framework
 
 - Co najmniej jednego projektu w rozwiązaniu powinien mieć odwołania NuGet lub bezpośrednie odwołanie do xUnit, NUnit, lub struktury testów MSTest. Ten projekt również powinny odwoływać się do odpowiedniego pakietu NuGet adapterów testowych programu Visual Studio. Adapter testowy programu Visual Studio również mogą być przywoływane przez *.runsettings* pliku. *.Runsettings* plik musi istnieć wpis jak w poniższym przykładzie:
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Dlaczego Live Unit Testing uwzględnia pokrycia nieprawidłowe po uaktualnieniu adaptera testowego, do którego odwołuje się Twoja projektów programu Visual Studio do obsługiwanej wersji?
 

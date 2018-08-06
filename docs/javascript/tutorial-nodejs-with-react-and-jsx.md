@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132009"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567145"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -26,7 +26,7 @@ Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i
 
 W tym samouczku dowiesz się, jak:
 > [!div class="checklist"]
-> * Tworzenie projektu środowiska Node.js
+> * Tworzenie projektu platformy Node.js
 > * Dodaj pakiety npm
 > * Dodaj kod platformy React z aplikacją
 > * Transpiluj JSX
@@ -95,7 +95,7 @@ Ta aplikacja wymaga numeru moduły npm, by działała poprawnie.
 
     Projekt *package.json* plik został zaktualizowany o nowe informacje o pakiecie, łącznie z wersją pakietu.
 
-1. Zamiast używania interfejsu użytkownika, aby wyszukać i dodać pozostałe pakiety pojedynczo, wklej następujący kod do pliku package.json. Zastąp `dependencies` sekcji przy użyciu tego kodu:
+1. Zamiast używania interfejsu użytkownika, aby wyszukać i dodać pozostałe pakiety pojedynczo, wklej następujący kod do pliku package.json. Aby to zrobić, Zastąp `dependencies` sekcji przy użyciu tego kodu:
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Ta aplikacja wymaga numeru moduły npm, by działała poprawnie.
     }
     ```
 
+    Jeśli ma nie `dependencies` sekcji w wersji pustego szablonu, należy go dodać zamiast Zastąp istniejącą sekcję.
+
 1. Kliknij prawym przyciskiem myszy **npm** węzeł projektu i wybierz polecenie **zaktualizuj pakiety npm**.
 
-    Wybierz **dane wyjściowe** okno, aby wyświetlić postęp na temat instalowania pakietów. Instalacja może zająć kilka minut i może nie od razu Zobacz wyniki.
+    W dolnym okienku zaznacz **dane wyjściowe** okno, aby wyświetlić postęp na temat instalowania pakietów. Instalacja może zająć kilka minut i może nie od razu Zobacz wyniki. Zbyt wyświetlone dane wyjściowe, upewnij się, że wybrano **Npm** w **Pokaż dane wyjściowe z** pole **dane wyjściowe** okna.
 
     Poniżej przedstawiono moduły npm, w jakiej występują w Eksploratorze rozwiązań po ich zainstalowaniu.
 
@@ -144,7 +146,7 @@ Dla tej prostej aplikacji możesz dodawać nowe pliki projektu, w katalogu głó
 
 ## <a name="add-app-code"></a>Dodawanie kodu aplikacji
 
-1. Otwórz *server.js* i Zastąp kod następującym kodem:
+1. Otwórz *server.js* i Zastąp istniejący kod następującym kodem:
 
     ```javascript
     'use strict';

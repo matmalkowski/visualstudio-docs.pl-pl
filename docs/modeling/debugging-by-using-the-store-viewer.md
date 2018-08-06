@@ -12,25 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748413"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567067"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debugowanie za pomocą przeglądarki sklepu
-Z podglądem przechowywania możesz zbadać stan *przechowywania* używane przez [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Podgląd przechowywania Wyświetla listę wszystkich elementów modelu domeny znajdujących się w określonym magazynie, wraz z właściwości elementu i łącza między elementami.
+Z podglądem Store można sprawdzić stan *przechowywania* posługują się [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Podgląd Store Wyświetla listę wszystkich elementów modelu domeny, które znajdują się w określonym magazynie, wraz z właściwości elementu i łączy między elementami.
 
-## <a name="opening-store-viewer"></a>Otwieranie magazynu podglądu
- Jeśli jesteś w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eksperymentalne kompilacji, Zatrzymaj kodu w punkcie przerwania, w którym wystąpienia magazynu zawiera informacje o modelu. Następnie otwórz Podgląd magazynu, wpisując następujące polecenie w **Immediate** okno:
+## <a name="opening-store-viewer"></a>Otwieranie Store podglądu
+ Podczas pracy w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eksperymentalne kompilacji, Zatrzymaj kodu w punkcie przerwania, w których wystąpienie magazynu zawiera informacje o modelu. Następnie otwórz Podgląd Store, wpisując następujące polecenie w **bezpośrednie** okna:
 
-```
+```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```
 
 > [!NOTE]
->  Należy zastąpić `mystore` o nazwie wystąpienia magazynu. Ponadto przestrzeni nazw można dodać do kodu, należy wpisać polecenia do wyświetlania podglądu magazynu bez w pełni kwalifikowaną przestrzeni nazw:
+>  Należy zastąpić `mystore` nazwą wystąpienia usługi magazynu. Ponadto jeśli dodasz przestrzeni nazw w kodzie, należy wpisać polecenia do wyświetlania podglądu Store bez w pełni kwalifikowaną przestrzeń nazw:
 >
 >  `using Microsoft.VisualStudio.Modeling.Diagnostics;`
 >
@@ -38,16 +38,16 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 >
 >  `StoreViewer.Show(mystore);`
 
- `Show` Metoda ma kilka przeciążeń. Wystąpienie sklepu lub partycję można określić jako parametr.
+ `Show` Metoda ma kilka przeciążeń. Wystąpienie magazynie lub partycji można określić jako parametr.
 
- Alternatywnie, można umieścić wiersza kodu, który wyświetla podgląd magazynu dowolne miejsce w kodzie gdzie parametr, który jest przekazywany do `Show` metoda znajduje się w zakresie. Ta akcja wyświetla przechowywania podglądu podczas wiersz kodu jako migawka zawartość magazynu.
+ Alternatywnie, można umieścić wiersza kodu, który wyświetla podgląd Store w dowolnym miejscu w kodzie gdzie parametr, który jest przekazywany do `Show` metoda znajduje się w zakresie. Ta akcja wyświetla podgląd Store podczas wykonywania wiersza kodu, jak o migawce zawartości magazynu.
 
-### <a name="using-store-viewer"></a>Przy użyciu przeglądarki plików magazynu
- Po otwarciu podglądu magazynu niemodalne okno dialogowe formularzy systemu Windows pojawi się, jak przedstawiono na poniższej ilustracji.
+### <a name="using-store-viewer"></a>Za pomocą przeglądarki Store
+ Po otwarciu przeglądarki Store jest niemodalne okno dialogowe formularzy Windows pojawi się, jak pokazano na następującym rysunku.
 
- ![](../modeling/media/storeviewer2.png) Podgląd magazynu
+ ![](../modeling/media/storeviewer2.png) Podgląd Store
 
- Podgląd magazynu ma trzy okienka: okienka po lewej stronie, prawym górnym rogu i prawym dolnym rogu. W lewym okienku będzie typów w widoku drzewa `DomainDataDirectory` elementu członkowskiego magazynu. Rozwiń węzeł partycję, kliknij element elementu właściwości są wyświetlane w prawym górnym rogu okienka. Jeśli element jest połączony z innymi elementami, dodatkowe elementy są widoczne w okienku prawym dolnym rogu. Jeśli zostanie dwukrotnie kliknięty element w prawym dolnym rogu okienka, element zostanie wyróżniona w okienku po lewej stronie.
+ Podgląd Store ma trzy okienka: okienka po lewej stronie, prawym górnym rogu i prawym dolnym rogu. W okienku po lewej stronie jest typów w widoku drzewa `DomainDataDirectory` elementu członkowskiego magazynu. Rozwiń węzeł partycji, należy kliknąć pozycję elementu właściwości są wyświetlane w okienku w prawym górnym rogu. Jeśli element jest połączony z innymi elementami, dodatkowe elementy są wyświetlane w okienku prawego dolnego rogu. Dwukrotne kliknięcie elementu w okienku prawego dolnego rogu elementu jest wyróżniona w okienku po lewej stronie.
 
 ## <a name="see-also"></a>Zobacz też
 

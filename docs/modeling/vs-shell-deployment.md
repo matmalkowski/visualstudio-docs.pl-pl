@@ -9,25 +9,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e7df1991832e954def71a6cee5bd5516dfd4e961
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61cf6e716f082abf28043d56d1a8803853d894aa
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946991"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566676"
 ---
 # <a name="vs-shell-deployment"></a>Wdrażanie powłoki VS Shell
 
-Powłoka w trybie izolowanym pozwala określić, którego program Visual Studio funkcje muszą wchodzić w interakcje z języka specyficznego dla domeny i sposób wyświetlania tego rozwiązania. Aby uzyskać więcej informacji na temat powłoki programu Visual Studio samodzielnie, zobacz [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md).
+Powłoka w trybie izolowanym pozwala określić, które program Visual Studio funkcji należy korzystać z języka specyficznego dla domeny i wygląd tego rozwiązania. Aby uzyskać więcej informacji na temat powłoki programu Visual Studio, izolowany zobacz [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md).
 
-## <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Aby ustawić jako cel wdrożenia programu Visual Studio Shell
+## <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Aby ustawić Visual Studio Shell jako cel wdrożenia
 
-1.  W **DslPackage** otwarciu projektu **source.extension.tt**.
+1.  W **DslPackage** otwarty projekt **source.extension.tt**.
 
 2.  W obszarze `<SupportedProducts>` Wstaw:
 
-    ```
+    ```xml
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
     ```
 
-     Zastąp *MyIsolatedShell* z nazwą pakietu programu isolated shell.
+     Zastąp *MyIsolatedShell* o nazwie pakietu shell w trybie izolowanym.
