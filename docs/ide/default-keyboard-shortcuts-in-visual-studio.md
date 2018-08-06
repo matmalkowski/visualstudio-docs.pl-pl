@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927350"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513177"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
-Aby uzyskać więcej informacji o ułatwieniach dostępu klawiatury, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md) i [porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Aby uzyskać więcej informacji na temat klawiatura — ułatwienia dostępu, zobacz [i porady dotyczące ułatwień dostępu](../ide/reference/accessibility-tips-and-tricks.md) i [porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Można uzyskać dostępu do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skrót. Ten temat zawiera listę skrótów domyślnych profilu programowanie ogólne, które być może wybrano podczas instalowania programu Visual Studio. Niezależnie od tego, który wybrano profil, otwierając można zidentyfikować skrótów polecenie **opcje** okno dialogowe, rozszerzanie **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
+Można uzyskać dostęp do różnych poleceń i okien w programie Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ten temat zawiera listę domyślnych skrótów dla profilu ogólnego projektowania, które być może wybrano podczas instalacji programu Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
 Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności, zobacz [domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klawiatury porady](../ide/tips-and-tricks-for-visual-studio.md), i [ Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).
 
@@ -35,11 +35,11 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |||||
 |-|-|-|-|
 |[Analyze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Projekt i rozwiązanie menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Zrefaktoryzuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Narzędzia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Menu kontekstowe widoku klasy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Debugowania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test obciążenia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu kontekstowe programu Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
+|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu kontekstowe rozwiązania i projektu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktoryzacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Narzędzia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
+|[Menu kontekstowe widoku klas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
+|[Debugowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test obciążeniowy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu kontekstowe Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
 ##  <a name="bkmk_global"></a> Globalne
@@ -55,9 +55,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
-|Architecture.NewDiagram|**CTRL +\\, klawisze Ctrl + N**|
+|Architecture.NewDiagram|**CTRL +\\, Ctrl + N**|
 
-###  <a name="bkmk_build"></a> Kompilacji
+###  <a name="bkmk_build"></a> Kompilacja
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -66,17 +66,17 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Build.Compile|**CTRL + F7**|
 |Build.RunCodeAnalysisonSolution|**ALT + F11**|
 
-###  <a name="bkmk_classview"></a> Menu kontekstowe widoku klasy
+###  <a name="bkmk_classview"></a> Menu kontekstowe widoku klas
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT + wprowadź**|
 
-###  <a name="bkmk_debug"></a> Debugowania
+###  <a name="bkmk_debug"></a> Debugowanie
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
-|Debug.ApplyCodeChanges|**ALT + F10.**|
+|Debug.ApplyCodeChanges|**ALT + F10**|
 |Debug.Autos|**Ctrl + Alt + V, A**|
 |Debug.BreakAll|**Ctrl + Alt + Break**|
 |Debug.BreakatFunction|**CTRL + B**|
@@ -85,7 +85,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9**|
 |Debug.DiagnosticsHub.Launch|**ALT + F2**|
 |Debug.Disassembly|**Ctrl + Alt + D**|
-|Debug.DOMExplorer|**Ctrl + Alt + V D**|
+|Debug.DOMExplorer|**Ctrl + Alt + V, D**|
 |Debug.EnableBreakpoint|**CTRL + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
@@ -93,30 +93,30 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Debug.Immediate|**Ctrl + Alt + I**|
 |Debug.IntelliTraceCalls|**Ctrl + Alt + T, T**|
 |Debug.IntelliTraceEvents|**Ctrl + Alt + T, F**|
-|Debug.JavaScriptConsole|**Ctrl + Alt + V C**|
-|Debug.Locals|**Ctrl + Alt + V L**|
+|Debug.JavaScriptConsole|**Ctrl + Alt + V, C**|
+|Debug.Locals|**Ctrl + Alt + V, L**|
 |Debug.LocationToolbar.ProcessCombo|**CTRL + 5**|
 |Debug.LocationToolbar.StackFrameCombo|**CTRL + 7**|
 |Debug.LocationToolbar.ThreadCombo|**CTRL + 6**|
 |Debug.LocationToolbar.ToggleCurrentThreadFlaggedState|**CTRL + 8**|
 |Debug.LocationToolbar.ToggleFlaggedThreads|**CTRL + 9**|
-|Debug.Memory1|**Ctrl + Alt + M 1**|
-|Debug.Memory2|**Ctrl + Alt + M 2**|
+|Debug.Memory1|**Ctrl + Alt + M, 1**|
+|Debug.Memory2|**Ctrl + Alt + M, 2**|
 |Debug.Memory3|**Ctrl + Alt + M, 3**|
 |Debug.Memory4|**Ctrl + Alt + M, 4**|
 |Debug.Modules|**Ctrl + Alt + U**|
-|Debug.ParallelStacks|**Ctrl + Shift + D S**|
-|Debug.ParallelWatch1|**Ctrl + Shift + D 1**|
+|Debug.ParallelStacks|**Ctrl + Shift + D, S**|
+|Debug.ParallelWatch1|**Ctrl + Shift + D, 1**|
 |Debug.ParallelWatch2|**Ctrl + Shift + D 2**|
-|Debug.ParallelWatch3|**Ctrl + Shift + D 3**|
-|Debug.ParallelWatch4|**Ctrl + Shift + D 4**|
+|Debug.ParallelWatch3|**Ctrl + Shift + D, 3**|
+|Debug.ParallelWatch4|**Ctrl + Shift + D, 4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
 |Debug.QuickWatch|**SHIFT + F9**<br /><br /> lub<br /><br /> **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
-|Debug.RunToCursor|**CTRL + F10.**|
-|Debug.SetNextStatement|**Ctrl + Shift + F10.**|
+|Debug.RunToCursor|**CTRL + F10**|
+|Debug.SetNextStatement|**Ctrl + Shift + F10**|
 |Debug.ShowCallStackonCodeMap|**Ctrl + Shift + "**|
 |Debug.ShowNextStatement|**ALT + Num** *|
 |Debug.Start|**F5**|
@@ -128,17 +128,17 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl + Shift + Alt + F11**|
 |Debug.StepOver|**F10**|
-|Debug.StepOverCurrentProcess|**Ctrl + Alt + F10.**|
+|Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**SHIFT + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
 |Debug.Tasks|**Ctrl + Shift + D, K**|
 |Debug.Threads|**Ctrl + Alt + H**|
 |Debug.ToggleBreakpoint|**F9**|
 |Debug.ToggleDisassembly|**CTRL + F11**|
-|Debug.Watch1|**Ctrl + Alt + W 1**|
-|Debug.Watch2|**Ctrl + Alt + W 2**|
-|Debug.Watch3|**Ctrl + Alt + W 3**|
-|Debug.Watch4|**Ctrl + Alt + W 4**|
+|Debug.Watch1|**Ctrl + Alt + W, 1**|
+|Debug.Watch2|**Ctrl + Alt + W, 2**|
+|Debug.Watch3|**Ctrl + Alt + W, 3**|
+|Debug.Watch4|**Ctrl + Alt + W, 4**|
 
 ###  <a name="bkmk_debugger"></a> Menu kontekstowe debugera
 
@@ -146,7 +146,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |--------------|------------------------|
 |DebuggerContextMenus.BreakpointsWindow.Delete|**ALT + F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT + F9, A**|
-|DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT + F9 S**|
+|DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT + F9, S**|
 
 ###  <a name="bkmk_diagnostics"></a> Centrum diagnostyki
 
@@ -158,9 +158,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|-|
-|Edit.Copy|**CTRL + C**<br /><br /> lub<br /><br /> **CTRL + Ins**|
+|Edit.Copy|**CTRL + C**<br /><br /> lub<br /><br /> **CTRL + dodatki**|
 |Edit.Cut|**CTRL + X**<br /><br /> lub<br /><br /> **Shift + Delete**|
-|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> lub<br /><br /> **Ctrl + Shift + Ins**|
+|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> lub<br /><br /> **Ctrl + Shift + dodatki**|
 |Edit.Delete|**Usuwanie**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
@@ -189,7 +189,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G**|
-|Edit.Paste|**CTRL + V**<br /><br /> lub<br /><br /> **SHIFT + Ins**|
+|Edit.Paste|**CTRL + V**<br /><br /> lub<br /><br /> **SHIFT + dodatki**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift + Alt + F12**|
@@ -201,13 +201,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.SelectNextControl|**Karta**|
 |Edit.SelectPreviousControl|**Shift + Tab**|
 |Edit.ShowTileGrid|**Wprowadź**|
-|Edit.SizeControlDown|**Ctrl + Shift + Strzałka w dół, strzałki**|
+|Edit.SizeControlDown|**Strzałka Ctrl + Shift + Strzałka w dół**|
 |Edit.SizeControlDownGrid|**Shift + Strzałka w dół**|
 |Edit.SizeControlLeft|**Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Edit.SizeControlLeftGrid|**Shift + Strzałka w lewo**|
 |Edit.SizeControlRight|**Strzałka Ctrl + Shift + Strzałka w prawo**|
 |Edit.SizeControlRightGrid|**Shift + Strzałka w prawo**|
-|Edit.SizeControlUp|**Ctrl + Shift + Strzałka w górę, strzałki**|
+|Edit.SizeControlUp|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Edit.SizeControlUpGrid|**Shift + Strzałka w górę**|
 |Edit.StopSearch|**ALT + F3, S**|
 |Edit.SurroundWith|**CTRL + K, Ctrl + S**|
@@ -218,9 +218,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT + F9, L**|
-|EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL + "**|
+|EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL +'**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
-|EditorContextMenus.CodeWindow.GoToView|**CTRL + M, klawiszy Ctrl + G**|
+|EditorContextMenus.CodeWindow.GoToView|**CTRL + M, Ctrl + G**|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O**|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> lub<br /><br /> **CTRL + K, T**|
 
@@ -235,7 +235,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |File.OpenFile|**CTRL + O**|
 |File.OpenProject|**Ctrl + Shift + O**|
 |File.OpenWebSite|**Shift + Alt + O**|
-|File.Print|**CTRL + P**|
+|File.Print|**Naciśnij klawisze CTRL + P**|
 |File.SaveAll|**Ctrl + Shift + S**|
 |File.SaveSelectedItems|**CTRL + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
@@ -249,11 +249,11 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Help.ViewHelp|**CTRL + F1**|
 |Help.WindowHelp|**SHIFT + F1**|
 
-###  <a name="bkmk_loadtest"></a> Test obciążenia
+###  <a name="bkmk_loadtest"></a> Test obciążeniowy
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
-|LoadTest.JumpToCounterPane|**CTRL + R, Q**|
+|LoadTest.JumpToCounterPane|**CTRL + R, pytania i odpowiedzi**|
 
 ###  <a name="bkmk_otherContext"></a> Inne menu kontekstowe
 
@@ -268,19 +268,19 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Project.AddExistingItem|**Shift + Alt + A**|
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
-|Project.Override|**Ctrl + Alt + Ins**|
+|Project.Override|**Ctrl + Alt + dodatki**|
 |Project.Previewchanges|**Alt +; Alt + C**|
 |Project.Publishselectedfiles|**Alt +; Alt + P**|
 |Project.Replaceselectedfilesfromserver|**Alt +; Alt + R**|
 
-###  <a name="bkmk_projectContext"></a> Menu kontekstowe projektów i rozwiązań
+###  <a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt + Strzałka w dół**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt + Strzałka w górę**|
 
-###  <a name="bkmk_refactor"></a> Zrefaktoryzuj
+###  <a name="bkmk_refactor"></a> Refaktoryzacja
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -296,31 +296,31 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |SolutionExplorer.OpenFilesFilter|**CTRL + [, O**<br /><br /> lub<br /><br /> **CTRL + [, Ctrl + O**|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [, P**<br /><br /> lub<br /><br /> **CTRL + [, Ctrl + P**|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [, P**<br /><br /> lub<br /><br /> **CTRL + [, naciśnij klawisze Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL + [, S**<br /><br /> lub<br /><br /> **CTRL + [, Ctrl + S**|
 
-###  <a name="bkmk_team"></a> Zespołu
+###  <a name="bkmk_team"></a> Zespół
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
-|Team.Git.GoToGitBranches|**CTRL + 0, klawisze Ctrl + N**<br /><br /> lub<br /><br /> **CTRL + 0, N**|
-|Team.Git.GoToGitChanges|**CTRL + 0, klawiszy Ctrl + G**<br /><br /> lub<br /><br /> **CTRL + 0, G**|
+|Team.Git.GoToGitBranches|**CTRL + 0, Ctrl + N**<br /><br /> lub<br /><br /> **CTRL + 0, N**|
+|Team.Git.GoToGitChanges|**CTRL + 0, Ctrl + G**<br /><br /> lub<br /><br /> **CTRL + 0, G**|
 |Team.Git.GoToGitCommits|**CTRL + 0, Ctrl + O**<br /><br /> lub<br /><br /> **CTRL + 0, O**|
-|Team.TeamExplorerSearch|**CTRL + "**|
+|Team.TeamExplorerSearch|**CTRL +'**|
 
-###  <a name="bkmk_TFcontext"></a> Menu kontekstowe programu Team Foundation
+###  <a name="bkmk_TFcontext"></a> Menu kontekstowe Team Foundation
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL + 0, Ctrl + B**<br /><br /> lub<br /><br /> **CTRL + 0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0, Ctrl + C**<br /><br /> lub<br /><br /> **CTRL + 0-C**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0, Ctrl + C**<br /><br /> lub<br /><br /> **CTRL + 0, C**|
 |TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL + 0, Ctrl + D**<br /><br /> lub<br /><br /> **CTRL + 0, D**|
 |TeamFoundationContextMenus.Commands.GoToHome|**CTRL + 0, Ctrl + H**<br /><br /> lub<br /><br /> **CTRL + 0, H**|
 |TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL + 0, Ctrl + M**<br /><br /> lub<br /><br /> **CTRL + 0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0, Ctrl + P**<br /><br /> lub<br /><br /> **CTRL + 0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> lub<br /><br /> **CTRL + 0-R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> lub<br /><br /> **CTRL + 0-S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, klawisze Ctrl + A**<br /><br /> lub<br /><br /> **CTRL + 0, A**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0, naciśnij klawisze Ctrl + P**<br /><br /> lub<br /><br /> **CTRL + 0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> lub<br /><br /> **CTRL + 0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> lub<br /><br /> **CTRL + 0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> lub<br /><br /> **CTRL + 0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> lub<br /><br /> **CTRL + 0, W**|
 
 ###  <a name="bkmk_test"></a> Test
@@ -328,15 +328,15 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Test.UseCodedUITestBuilder|**CTRL +\\, Ctrl + C**|
-|Test.UseExistingActionRecording|**CTRL +\\, klawisze Ctrl + A**|
+|Test.UseExistingActionRecording|**CTRL +\\, Ctrl + A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Eksplorator testów
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
-|TestExplorer.DebugAllTests|**CTRL + R, klawisze Ctrl + A**|
+|TestExplorer.DebugAllTests|**CTRL + R, Ctrl + A**|
 |TestExplorer.DebugAllTestsInContext|**CTRL + R, Ctrl + T**|
-|TestExplorer.RepeatLastRun|**CTRL + R, L**|
+|TestExplorer.RepeatLastRun|**CTRL + R, G**|
 |TestExplorer.RunAllTests|**CTRL + R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL + R, T**|
 
@@ -376,7 +376,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.NavigateBackward|**CTRL +-**|
 |View.NavigateForward|**Ctrl + Shift +-**|
 |View.NextError|**Ctrl + Shift + F12**|
-|View.Notifications|**CTRL + W N**<br /><br /> lub<br /><br /> **CTRL + W klawisze Ctrl + N**|
+|View.Notifications|**CTRL + W, N**<br /><br /> lub<br /><br /> **CTRL + W, Ctrl + N**|
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O**|
@@ -385,7 +385,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.PropertyPages|**SHIFT + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|
 |View.ServerExplorer|**Ctrl + Alt + S**|
-|View.ShowSmartTag|**Shift + Alt + F10.**<br /><br /> lub<br /><br /> **Ctrl+.**|
+|View.ShowSmartTag|**Shift + Alt + F10**<br /><br /> lub<br /><br /> **Ctrl+.**|
 |View.SolutionExplorer|**Ctrl + Alt + L**|
 |View.SQLServerObjectExplorer|**CTRL +\\, Ctrl + S**|
 |View.TaskList|**CTRL +\\, T**<br /><br /> lub<br /><br /> **CTRL +\\, Ctrl + T**|
@@ -398,14 +398,14 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |View.ZoomIn|**Ctrl + Shift +.**|
 |View.ZoomOut|**Ctrl + Shift +,**|
 
-###  <a name="bkmk_window"></a> okno
+###  <a name="bkmk_window"></a> Okno
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Window.ActivateDocumentWindow|**ESC**|
 |Window.AddTabtoSelection|**Ctrl + Shift + Alt + spacja**|
 |Window.CloseDocumentWindow|**CTRL + F4**|
-|Window.CloseToolWindow|**Shift + Esc.**|
+|Window.CloseToolWindow|**Shift + Esc**|
 |Window.KeepTabOpen|**Ctrl + Alt + Home**|
 |Window.MovetoNavigationBar|**CTRL + F2**|
 |Window.NextDocumentWindow|**CTRL + F6**|
@@ -425,7 +425,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Window.QuickLaunch|**Ctrl+Q**|
 |Window.QuickLaunchPreviousCategory|**Ctrl+Shift+Q**|
 |Window.ShowDockMenu|**ALT +-**|
-|Window.ShowEzMDIFileList|**Ctrl + Alt + Strzałka w dół, strzałki**|
+|Window.ShowEzMDIFileList|**Strzałka Ctrl + Alt + Strzałka w dół**|
 |Window.SolutionExplorerSearch|**CTRL +;**|
 |Window.WindowSearch|**ALT + "**|
 
@@ -523,7 +523,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Diagnostyki grafiki
+##  <a name="graphics-diagnostics"></a>Diagnostyka grafiki
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -531,17 +531,17 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Graphics.MovePixelSelectionDown|**Strzałka Shift + Alt + Strzałka w dół**|
 |Graphics.MovePixelSelectionLeft|**Strzałka Shift + Alt + Strzałka w lewo**|
 |Graphics.MovePixelSelectionRight|**Strzałka Shift + Alt + Strzałka w prawo**|
-|Graphics.MovePixelSelectionUp|**+ Alt + Strzałka w górę**|
+|Graphics.MovePixelSelectionUp|**Strzałka Shift + Alt + Strzałka w górę**|
 |Graphics.ZoomToActualSize|**Shift + Alt + 0**|
 |Graphics.ZoomToFitInWindow|**Shift + Alt + 9**|
-|Graphics.ZoomIn|**Shift + Alt + =**|
+|Graphics.ZoomIn|**Shift + Alt +=**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
 
 ##  <a name="html-editor"></a>Edytor HTML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
-|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, klawiszy Ctrl + G**|
+|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 
 ##  <a name="html-editor-design-view"></a>Widok projektu edytora HTML
 
@@ -557,12 +557,12 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Project.AddContentPage|**CTRL + M, Ctrl + C**|
 |Table.ColumntotheLeft|**Strzałka Ctrl + Alt + Strzałka w lewo**|
 |Table.ColumntotheRight|**Strzałka Ctrl + Alt + Strzałka w prawo**|
-|Table.RowAbove|**Ctrl + Alt + Strzałka w górę, strzałki**|
-|Table.RowBelow|**Ctrl + Alt + Strzałka w dół, strzałki**|
+|Table.RowAbove|**Strzałka Ctrl + Alt + Strzałka w górę**|
+|Table.RowBelow|**Strzałka Ctrl + Alt + Strzałka w dół**|
 |View.ASP.NETNonvisualControls|**Ctrl + Shift + N**|
 |View.EditMaster|**CTRL + M, Ctrl + M**|
 |View.NextView|**Ctrl + PgDn**|
-|View.ShowSmartTag|**Shift + Alt + F10.**|
+|View.ShowSmartTag|**Shift + Alt + F10**|
 |View.ViewMarkup|**SHIFT + F7**|
 |Window.PreviousTab|**Ctrl + PgUp**|
 
@@ -570,7 +570,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
-|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, klawiszy Ctrl + G**|
+|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 |View.NextView|**Ctrl + PgDn**|
 |View.SynchronizeViews|**Ctrl + Shift + Y**|
 |View.ViewDesigner|**SHIFT + F7**|
@@ -589,7 +589,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Usuwanie**|
 |Edit.RemoveRow|**CTRL + Delete**|
-|Edit.SelectionCancel|**Specjalna**|
+|Edit.SelectionCancel|**Znak ucieczki**|
 |Resources.Audio|**CTRL + 4**|
 |Resources.Files|**CTRL + 5**|
 |Resources.Icons|**CTRL + 3**|
@@ -597,7 +597,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Resources.Other|**CTRL + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-##  <a name="merge-editor-window"></a>Scal okna edytora
+##  <a name="merge-editor-window"></a>Okno edytora scalania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
@@ -622,7 +622,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |--------------|------------------------|
 |CommitAllEdits|**Shift + Alt + U**|
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + E**|
-|SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + Q**|
+|SQL.FullyqualifyNames|**CTRL + R, pytania i odpowiedzi**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + M**|
 |SQL.Rename|**F2**<br /><br /> lub<br /><br /> **CTRL + R, R**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PgDn**|
@@ -634,15 +634,15 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |CommitAllEdits|**Shift + Alt + U**|
 |SQL.ExecuteWithDebugger|**ALT + F5**|
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + E**|
-|SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + Q**|
+|SQL.FullyqualifyNames|**CTRL + R, pytania i odpowiedzi**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + M**|
 |SQL.Rename|**F2**<br /><br /> lub<br /><br /> **CTRL + R, R**<br /><br /> lub<br /><br /> **CTRL + R, Ctrl + R**|
 |SQL.TSqlEditorCancelQuery|**Alt + Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL + D, F**|
-|SQL.TSqlEditorResultsAsGrid|**CTRL + D, G**|
+|SQL.TSqlEditorResultsAsGrid|**CTRL + D, K**|
 |SQL.TSqlEditorResultsAsText|**CTRL + D, T**|
-|SQL.TSqlEditorShowEstimatedPlan|**CTRL + D E**|
+|SQL.TSqlEditorShowEstimatedPlan|**CTRL + D, E**|
 |SQL.TSqlEditorToggleExecutionPlan|**CTRL + D, A**|
 |SQL.TSqlEditorToggleResultsPane|**CTRL + D, R**|
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
@@ -655,9 +655,9 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |SQL.TSqlEditorCancelQuery|**Alt + Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL + D, F**|
-|SQL.TSqlEditorResultsAsGrid|**CTRL + D, G**|
+|SQL.TSqlEditorResultsAsGrid|**CTRL + D, K**|
 |SQL.TSqlEditorResultsAsText|**CTRL + D, T**|
-|SQL.TSqlEditorShowEstimatedPlan|**CTRL + D E**|
+|SQL.TSqlEditorShowEstimatedPlan|**CTRL + D, E**|
 |SQL.TSqlEditorToggleExecutionPlan|**CTRL + D, A**|
 |SQL.TSqlEditorToggleResultsPane|**CTRL + D, R**|
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
@@ -709,10 +709,10 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.MoveControlRight|**CTRL + Strzałka w prawo**|
 |Edit.MoveControlUp|**CTRL + Strzałka w górę**|
 |Edit.SelectionCancel|**ESC**|
-|Edit.SizeControlDown|**Ctrl + Shift + Strzałka w dół, strzałki**|
+|Edit.SizeControlDown|**Strzałka Ctrl + Shift + Strzałka w dół**|
 |Edit.SizeControlLeft|**Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Edit.SizeControlRight|**Strzałka Ctrl + Shift + Strzałka w prawo**|
-|Edit.SizeControlUp|**Ctrl + Shift + Strzałka w górę, strzałki**|
+|Edit.SizeControlUp|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Edit.TabLeft|**Shift + Tab**|
 |View.ReportData|**Ctrl + Alt + D**|
 
@@ -788,10 +788,10 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.CharRightExtendColumn|**Strzałka Shift + Alt + Strzałka w prawo**|
 |Edit.CharTranspose|**Ctrl+T**|
 |Edit.ClearBookmarks|**CTRL + K, Ctrl + L**|
-|Edit.CollapseAllOutlining|**CTRL + M, klawisze Ctrl + A**|
+|Edit.CollapseAllOutlining|**CTRL + M, Ctrl + A**|
 |Edit.CollapseCurrentRegion|**CTRL + M, Ctrl + S**|
 |Edit.CollapseTag|**CTRL + M, Ctrl + T**|
-|Edit.CollapsetoDefinitions|**CTRL + M, Ctrl + O**|
+|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O**|
 |Edit.CommentSelection|**CTRL + K, Ctrl + C**|
 |Edit.CompleteWord|**CTRL + SPACJA**<br /><br /> lub<br /><br /> **Alt + Strzałka w prawo**|
 |Edit.CopyParameterTip|**Ctrl + Shift + Alt + C**|
@@ -828,13 +828,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.LineTranspose|**Shift + Alt + T**|
 |Edit.LineUp|**Strzałka w górę**|
 |Edit.LineUpExtend|**Shift + Strzałka w górę**|
-|Edit.LineUpExtendColumn|**+ Alt + Strzałka w górę**|
+|Edit.LineUpExtendColumn|**Strzałka Shift + Alt + Strzałka w górę**|
 |Edit.ListMembers|**CTRL + J**|
 |Edit.MakeLowercase|**CTRL + U**|
 |Edit.MakeUppercase|**Ctrl + Shift + U**|
 |Edit.MoveSelectedLinesDown|**Alt + Strzałka w dół**|
 |Edit.MoveSelectedLinesUp|**Alt + Strzałka w górę**|
-|Edit.NextHighlightedReference|**Ctrl + Shift + Strzałka w dół, strzałki**|
+|Edit.NextHighlightedReference|**Strzałka Ctrl + Shift + Strzałka w dół**|
 |Edit.OvertypeMode|**Wstaw**|
 |Edit.PageDown|**PgDn**|
 |Edit.PageDownExtend|**SHIFT + PgDn**|
@@ -844,15 +844,15 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.PasteParameterTip|**Ctrl + Shift + Alt + P**|
 |Edit.PeekBackward|**Ctrl + Alt +-**|
 |Edit.PeekDefinition|**Alt+F12**|
-|Edit.PeekForward|**Ctrl + Alt + =**|
-|Edit.PreviousHighlightedReference|**Ctrl + Shift + Strzałka w górę, strzałki**|
+|Edit.PeekForward|**Ctrl + Alt +=**|
+|Edit.PreviousHighlightedReference|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Edit.QuickInfo|**CTRL + K, Ctrl + I**|
 |Edit.ReverseIncrementalSearch|**Ctrl + Shift + I**|
 |Edit.ScrollLineDown|**CTRL + Strzałka w dół**|
 |Edit.ScrollLineUp|**CTRL + Strzałka w górę**|
 |Edit.SelectCurrentWord|**CTRL + W**|
-|Edit.SelectionCancel|**Specjalna**|
-|Edit.SelectToLastGoBack|**CTRL + =**|
+|Edit.SelectionCancel|**Znak ucieczki**|
+|Edit.SelectToLastGoBack|**CTRL +=**|
 |Edit.ShowCodeLensMenu|**ALT + "**|
 |Edit.StopHidingCurrent|**CTRL + M, Ctrl + U**|
 |Edit.StopOutlining|**CTRL + M, Ctrl + P**|
@@ -885,7 +885,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**ALT + PgDn**|
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT + PgUp**|
 
-##  <a name="uml-activity-diagram"></a>Diagram działania UML
+##  <a name="uml-activity-diagram"></a>Diagram aktywności UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
@@ -897,13 +897,13 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |-------------|-----------------------|
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-component-diagram"></a>Diagram składnika UML
+##  <a name="uml-component-diagram"></a>Diagram składników UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-use-case-diagram"></a>Diagram przypadku użycia UML
+##  <a name="uml-use-case-diagram"></a>Diagram przypadków użycia UML
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
@@ -932,12 +932,12 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.SizeControlLeft|**Shift + Strzałka w lewo**|
 |Edit.SizeControlRight|**Shift + Strzałka w prawo**|
 |Edit.SizeControlUp|**Shift + Strzałka w górę**|
-|Format.AlignBottoms|**Ctrl + Shift + Strzałka w dół, strzałki**|
+|Format.AlignBottoms|**Strzałka Ctrl + Shift + Strzałka w dół**|
 |Format.AlignCenters|**SHIFT + F9**|
 |Format.AlignLefts|**Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Format.AlignMiddles|**F9**|
 |Format.AlignRights|**Strzałka Ctrl + Shift + Strzałka w prawo**|
-|Format.AlignTops|**Ctrl + Shift + Strzałka w górę, strzałki**|
+|Format.AlignTops|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Format.ButtonBottom|**CTRL + B**|
 |Format.ButtonRight|**CTRL + R**|
 |Format.CenterHorizontal|**Ctrl + Shift + F9**|
@@ -966,7 +966,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Image.FillTool|**CTRL + F**|
 |Image.FlipHorizontal|**CTRL + H**|
 |Image.FlipVertical|**Shift + Alt + H**|
-|Image.LargerBrush|**CTRL + =**|
+|Image.LargerBrush|**CTRL +=**|
 |Image.LineTool|**CTRL + L**|
 |Image.MagnificationTool|**CTRL + M**|
 |Image.Magnify|**Ctrl+Shift+M**|
@@ -978,7 +978,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
 |Image.PencilTool|**CTRL + I**|
 |Image.PreviousColor|**Ctrl+[**<br /><br /> lub<br /><br /> **CTRL + Strzałka w lewo**|
-|Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> lub<br /><br /> **Strzałka Ctrl + Shift + Strzałka w lewo**|
+|Image.PreviousRightColor|**Ctrl + Shift +**<br /><br /> lub<br /><br /> **Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Image.RectangleSelectionTool|**Shift + Alt + S**|
 |Image.RectangleTool|**ALT + R**|
 |Image.Rotate90Degrees|**Ctrl + Shift + H**|
@@ -1039,11 +1039,11 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.MoveControlLeft|**CTRL + Strzałka w lewo**|
 |Edit.MoveControlRight|**CTRL + Strzałka w prawo**|
 |Edit.MoveControlUp|**CTRL + Strzałka w górę**|
-|Edit.SelectionCancel|**Specjalna**|
-|Edit.SizeControlDown|**Ctrl + Shift + Strzałka w dół, strzałki**|
+|Edit.SelectionCancel|**Znak ucieczki**|
+|Edit.SizeControlDown|**Strzałka Ctrl + Shift + Strzałka w dół**|
 |Edit.SizeControlLeft|**Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Edit.SizeControlRight|**Strzałka Ctrl + Shift + Strzałka w prawo**|
-|Edit.SizeControlUp|**Ctrl + Shift + Strzałka w górę, strzałki**|
+|Edit.SizeControlUp|**Strzałka Ctrl + Shift + Strzałka w górę**|
 |Edit.TabLeft|**Shift + Tab**|
 
 ##  <a name="work-item-editor"></a>Edytor elementu roboczego
@@ -1087,11 +1087,11 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.IncreaseFilterLevel|**ALT +.**|
 |Edit.ListMembers|**CTRL + K, L**<br /><br /> lub<br /><br /> **CTRL + K, Ctrl + L**<br /><br /> lub<br /><br /> **CTRL + J**|
 |Edit.ParameterInfo|**CTRL + K, P**<br /><br /> lub<br /><br /> **CTRL + K, Ctrl + P**<br /><br /> lub<br /><br /> **Ctrl + Shift + spacja**|
-|Edit.QuickInfo|**CTRL + K I**<br /><br /> lub<br /><br /> **CTRL + K, Ctrl + I**|
+|Edit.QuickInfo|**CTRL + K, I**<br /><br /> lub<br /><br /> **CTRL + K, Ctrl + I**|
 |WorkflowDesigner.Collapse|**CTRL + E, Ctrl + C**<br /><br /> lub<br /><br /> **CTRL + E, C**|
 |WorkflowDesigner.CollapseAll|lub|
 |WorkflowDesigner.ConnectNodes|**CTRL + E, Ctrl + F**<br /><br /> lub<br /><br /> **CTRL + E, F**|
-|WorkflowDesigner.CreateVariable|**CTRL + E, Ctrl + N**<br /><br /> lub<br /><br /> **CTRL + E,**|
+|WorkflowDesigner.CreateVariable|**CTRL + E, Ctrl + N**<br /><br /> lub<br /><br /> **CTRL + E, N**|
 |WorkflowDesigner.ExpandAll|**CTRL + E, Ctrl + X**<br /><br /> lub<br /><br /> **CTRL + E, X**|
 |WorkflowDesigner.ExpandInPlace|**CTRL + E, Ctrl + E**<br /><br /> lub<br /><br /> **CTRL + E, E**|
 |WorkflowDesigner.GoToParent|**CTRL + E, Ctrl + P**<br /><br /> lub<br /><br /> **CTRL + E, P**|
@@ -1112,16 +1112,16 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |--------------|------------------------|
 |Design.FitAll|**CTRL + 0**|
 |Design.ShowHandles|**F9**|
-|Design.ZoomIn|**Ctrl + Alt + =**|
+|Design.ZoomIn|**Ctrl + Alt +=**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
 |Opcje projektanta|**Ctrl + Shift +;**|
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Shift + R**|
 |Uruchamianie kodu projektu|**CTRL + F9**|
-|Timeline.Hide (tylko w programie Blend)|**CTRL + H**|
-|Timeline.Lock (tylko w programie Blend)|**CTRL + L**|
-|Timeline.Show (tylko w programie Blend)|**Ctrl + Shift + H**|
-|Timeline.Unlock (tylko w programie Blend)|**Ctrl + Shift + L**|
+|Timeline.Hide (tylko program Blend)|**CTRL + H**|
+|Timeline.Lock (tylko program Blend)|**CTRL + L**|
+|Timeline.Show (tylko program Blend)|**Ctrl + Shift + H**|
+|Timeline.Unlock (tylko program Blend)|**Ctrl + Shift + L**|
 |View.EdgeLeftMoveLeft|**Ctrl + Shift +,**|
 |View.EdgeLeftMoveRight|**Ctrl + Shift +.**|
 |View.EdgeRightMoveLeft|**Ctrl + Shift + Alt +,**|
