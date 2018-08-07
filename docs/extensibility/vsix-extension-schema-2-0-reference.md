@@ -14,90 +14,90 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089373"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586355"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
-Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest otwarty. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie zrozumieć.  
+Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 może ładować pliki VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.  
+>  Program Visual Studio 2015 można ładować plików VSIX w formatach programu Visual Studio 2010, Visual Studio 2012 lub Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Schematu manifestu pakietu  
- Element główny pliku manifestu XML jest `<PackageManifest>`, atrybutem pojedynczego `Version`, czyli wersję formatu manifestu. W przypadku istotnych zmian na format, format wersji zostanie zmieniony. W tym temacie opisano format manifestu w wersji 2.0, które jest określone w manifeście przez ustawienie `Version` atrybut na wartość wersji = "2.0".  
+ Element główny pliku manifestu XML jest `<PackageManifest>`. Ma jeden atrybut `Version`, która jest wersją format manifestu. W przypadku istotnych zmian do formatu, format wersji zostanie zmieniony. W tym artykule opisano format manifestu w wersji 2.0, określany w manifeście, ustawiając `Version` atrybutu wartość wersji = "w wersji 2.0".  
   
-### <a name="packagemanifest-element"></a>PackageManifest Element  
+### <a name="packagemanifest-element"></a>PackageManifest element  
  W ramach `<PackageManifest>` elementu głównego można użyć następujących elementów:  
   
--   `<Metadata>` -Metadanych i reklam informacji na temat samego pakietu. Tylko jeden `Metadata` element jest dozwolony w manifeście.  
+-   `<Metadata>` -Metadanych i reklamy informacji na temat pakietu. Tylko jeden `Metadata` element jest dozwolony w manifeście.  
   
--   `<Installation>` -Ta sekcja definiuje sposób, który można zainstalować ten pakiet rozszerzenia, jednostki SKU aplikacji, które można zainstalować w tym. Tylko jeden `Installation` element jest dozwolony w manifeście. Manifest musi mieć `Installation` elementu lub tego pakietu nie można zainstalować w dowolnej jednostki SKU.  
+-   `<Installation>` — W tej sekcji definiuje sposób, który można zainstalować ten pakiet rozszerzenia, jednostki SKU w aplikacji, które można zainstalować w tym. Tylko jeden `Installation` element jest dozwolony w manifeście. Manifest musi mieć `Installation` elementu lub ten pakiet nie można zainstalować w dowolnej jednostce SKU.  
   
 -   `<Dependencies>` -Opcjonalną listę zależności dla tego pakietu są zdefiniowane w tym miejscu.  
   
--   `<Assets>` -Ta sekcja zawiera wszystkie zasoby zawarte w tym pakiecie. Bez tej sekcji tego pakietu nie powierzchni żadnej zawartości.  
+-   `<Assets>` — Ta sekcja zawiera wszystkie zasoby zawarte w tym pakiecie. Bez tej sekcji ten pakiet nie Prezentuj zawartości.  
   
--   `<AnyElement>*` -Schematu manifestu jest wystarczająco elastyczny, aby umożliwić inne elementy. Wszystkie elementy podrzędne nie rozpoznał manifestu modułu ładującego są widoczne w interfejsie API Menedżera rozszerzenia jako dodatkowe obiekty XmlElement. Za pomocą tych elementów podrzędnych, rozszerzenia VSIX, można zdefiniować dodatkowe dane w pliku manifestu, dostępnej w czasie wykonywania kodu uruchomionego w programie Visual Studio. Zobacz <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> i <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
+-   `<AnyElement>*` Schematu manifestu jest na tyle elastyczna, aby zezwolić na inne elementy. Wszystkie elementy podrzędne, które nie są rozpoznawane przez moduł ładujący manifestu są widoczne w interfejsie API Menedżera rozszerzeń jako dodatkowe obiekty atrybutu XmlElement. Korzystając z tych elementów podrzędnych, rozszerzenia VSIX, można zdefiniować dodatkowe dane w pliku manifestu, który kod uruchomiony w programie Visual Studio mogą uzyskać dostęp w czasie wykonywania. Zobacz <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> i <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
   
 ### <a name="metadata-element"></a>Element metadanych  
- Ta sekcja ma metadane dotyczące pakietu, jego tożsamość i reklam informacji. `<Metadata>` zawiera następujące elementy:  
+ Ta sekcja dotyczy metadane dotyczące pakietu, jego tożsamość i reklam informacji. `<Metadata>` zawiera następujące elementy:  
   
--   `<Identity>` — Definiuje informacje identyfikacyjne tego pakietu i zawiera następujące atrybuty:  
+-   `<Identity>` -Definiuje informacje identyfikacyjne tego pakietu i zawiera następujące atrybuty:  
   
-    -   `Id` -Tego atrybutu musi być unikatowy identyfikator dla pakietu, wybierany przez jego autora. Powinny być kwalifikowane nazwy typów CLR są należących do przestrzeni nazw tak samo: Company.Product.Feature.Name. `Id` Atrybut jest ograniczona do 100 znaków.  
+    -   `Id` — Ten atrybut musi być unikatowy identyfikator pakietu wybranego przez jego autora. Powinny być kwalifikowane nazwy typów CLR są namespaced tak samo: Company.Product.Feature.Name. `Id` Atrybut jest ograniczona do 100 znaków.  
   
-    -   `Version` -Definiuje wersję tego pakietu i jego zawartość. Ten atrybut zgodne z formatem przechowywania wersji zestawu CLR: główna.pomocnicza.kompilacja.poprawka (1.2.40308.00). Pakiet o wyższym numerze wersji jest uznawany za aktualizacji do pakietu i można zainstalować na istniejące zainstalowanej wersji.  
+    -   `Version` -Określa wersję tego pakietu i jego zawartość. Ten atrybut jest zgodna format wersji zestawów CLR: główna.pomocnicza.kompilacja.poprawka (1.2.40308.00). Pakiet o wyższy numer wersji jest uznawany za aktualizacje pakietu i można zainstalować za pośrednictwem istniejących zainstalowanej wersji.  
   
-    -   `Language` -Tego atrybutu jest to domyślny język dla pakietu i odpowiada danych tekstowych w tym manifeście. Ten atrybut następuje Konwencji kod ustawień regionalnych CLR dla zestawów zasobu, na przykład: en-us, en, fr-fr. Można określić `neutral` Aby zadeklarować rozszerzenia niezależny od języka, który będzie uruchamiany w dowolnej wersji programu Visual Studio. Wartość domyślna to `neutral`.  
+    -   `Language` — Ten atrybut jest to domyślny język dla pakietu i odnosi się do danych tekstowych, w tym manifeście. Ten atrybut następuje po Konwencji kod ustawień regionalnych środowiska CLR dla zestawów zasobów, na przykład: en-us, en, fr-fr. Można określić `neutral` do deklarowania rozszerzenia niezależny od języka, który będzie uruchamiany w dowolnej wersji programu Visual Studio. Wartość domyślna to `neutral`.  
   
-    -   `Publisher` — Ten atrybut identyfikuje wydawcę tego pakietu, firma lub nazwy użytkownika. `Publisher` Atrybut jest ograniczona do 100 znaków.  
+    -   `Publisher` — Ten atrybut określa wydawcy tego pakietu, firma lub nazwy użytkownika. `Publisher` Atrybut jest ograniczona do 100 znaków.  
   
--   `<DisplayName>` — Ten element określa nazwa pakietu przyjazną dla użytkownika, która jest wyświetlana w Interfejsie użytkownika Menedżera rozszerzenia. `DisplayName` Zawartości jest ograniczona do 50 znaków.  
+-   `<DisplayName>` — Ten element Określa nazwę pakietu przyjazny dla użytkownika, która jest wyświetlana w Interfejsie użytkownika Menedżera rozszerzenia. `DisplayName` Zawartości jest ograniczona do 50 znaków.  
   
--   `<Description>` — To opcjonalny element jest krótki opis pakietu oraz jego zawartość jest wyświetlana w interfejsie użytkownika Menedżera rozszerzenia. `Description` Zawartości mogą zawierać dowolny tekst, który ma, ale ma ograniczone do 1000 znaków.  
+-   `<Description>` — W tym opcjonalny element jest krótki opis pakietu i jego zawartość, która jest wyświetlana w interfejsie użytkownika Menedżera rozszerzeń. `Description` Zawartości może zawierać dowolny tekst, który ma, ale ma ograniczone do 1000 znaków.  
   
--   `<MoreInfo>` — To opcjonalny element jest adres URL do trybu online strony, która zawiera pełen opis tego pakietu. Protokół muszą być określone jako http.  
+-   `<MoreInfo>` — W tym opcjonalny element to adres URL strony online, która zawiera pełen opis tego pakietu. Protokół muszą być określone jako protokołu http.  
   
--   `<License>` — To opcjonalny element jest ścieżką względną do pliku licencji (txt, .rtf) zawartych w pakiecie.  
+-   `<License>` — W tym opcjonalny element jest ścieżką względną do pliku licencji (.txt, RTF) zawartych w pakiecie.  
   
--   `<ReleaseNotes>` — To opcjonalny element jest względna ścieżka do pliku informacje o wersji zawartych w pakiecie (txt, .rtf) w przeciwnym razie adres URL do witryny sieci Web, który wyświetla informacje o wersji.  
+-   `<ReleaseNotes>` — W tym opcjonalny element jest względna ścieżka do zawartych w pakiecie (.txt, RTF) lub — w przeciwnym razie adres URL witryny sieci Web, która wyświetla informacje o wersji pliku informacje o wersji.  
   
--   `<Icon>` — To opcjonalny element jest ścieżką względną do pliku obrazu (png, bmp, jpeg, ico) zawartych w pakiecie. Obraz ikony powinny być 32 x 32 piksele (lub zostanie zmniejszony do tego rozmiaru) i jest wyświetlany w elemencie listview interfejsu użytkownika. Jeśli nie `Icon` element jest określony, domyślnie korzysta z interfejsu użytkownika.  
+-   `<Icon>` — W tym opcjonalny element jest ścieżką względną do pliku obrazu (png, bmp, jpeg, ico) zawartych w pakiecie. Obraz ikony powinny być 32 x 32 piksele (lub zostanie zmniejszony do tego rozmiaru) oraz jest wyświetlany w widoku listy interfejsu użytkownika. Jeśli nie `Icon` element jest określony, domyślnie korzysta z interfejsu użytkownika.  
   
--   `<PreviewImage>` — To opcjonalny element jest ścieżką względną do pliku obrazu (png, bmp, jpeg) zawartych w pakiecie. Obraz podglądu powinien być 200 x 200 pikseli i wyświetlane w szczegółach interfejsu użytkownika. Jeśli nie `PreviewImage` element jest określony, domyślnie korzysta z interfejsu użytkownika.  
+-   `<PreviewImage>` — W tym opcjonalny element jest ścieżką względną do pliku obrazu (png, bmp, jpeg) zawartych w pakiecie. Obraz podglądu powinien być 200 x 200 pikseli i wyświetlane w szczegółach interfejsu użytkownika. Jeśli nie `PreviewImage` element jest określony, domyślnie korzysta z interfejsu użytkownika.  
   
--   `<Tags>` — To opcjonalny element zawiera dodatkowy tekst rozdzielone średnikami tagi, które są używane do wskazówki dotyczące wyszukiwania. `Tags` Element jest ograniczona do 100 znaków.  
+-   `<Tags>` — W tym opcjonalny element zawiera listę tagów dodatkowy tekst rozdzielaną średnikami, które są używane na potrzeby wskazówki dotyczące wyszukiwania. `Tags` Element jest ograniczona do 100 znaków.  
   
--   `<GettingStartedGuide>` — To opcjonalny element jest ścieżką względną do pliku HTML lub adres URL do witryny sieci Web, który zawiera informacje o sposobie używania rozszerzenia lub zawartości w ramach tego pakietu. Ten przewodnik jest uruchamiane w ramach instalacji.  
+-   `<GettingStartedGuide>` — W tym opcjonalny element jest ścieżką względną do pliku HTML lub adres URL witryny sieci Web, który zawiera informacje o sposobie używania rozszerzenia lub zawartości w ramach tego pakietu. Ten przewodnik jest uruchamiany jako część instalacji.  
   
--   `<AnyElement>*` -Schematu manifestu jest wystarczająco elastyczny, aby umożliwić inne elementy. Wszystkie elementy podrzędne, które nie są rozpoznawane przez moduł ładujący manifestu są widoczne w postaci listy obiektów XmlElement. Za pomocą tych elementów podrzędnych, rozszerzenia VSIX można zdefiniować dodatkowe dane w pliku manifestu i wyliczenia w czasie wykonywania.  
+-   `<AnyElement>*` Schematu manifestu jest na tyle elastyczna, aby zezwolić na inne elementy. Wszystkie elementy podrzędne, które nie są rozpoznawane przez moduł ładujący manifestu są widoczne jako listę obiektów, XmlElement. Korzystając z tych elementów podrzędnych, rozszerzenia VSIX można zdefiniować dodatkowe dane w pliku manifestu i wyliczenia w czasie wykonywania.  
   
 ### <a name="installation-element"></a>Element instalacji  
- Ta sekcja definiuje sposób instalowania tego pakietu i jednostki SKU aplikacji, które można zainstalować w. Ta sekcja zawiera następujące atrybuty:  
+ Ta sekcja definiuje sposób instalowania tego pakietu i jednostki SKU w aplikacji, które można zainstalować w. Ta sekcja zawiera następujące atrybuty:  
   
--   `Experimental` — Wartość tego atrybutu na wartość true, jeśli masz rozszerzenia, które jest obecnie zainstalowany dla wszystkich użytkowników, ale tworzysz zaktualizowanej wersji na tym samym komputerze. Na przykład jeśli zainstalowano MyExtension 1.0 dla wszystkich użytkowników, ale chcesz debugować MyExtension 2.0 na tym samym komputerze, ustaw eksperymentalne = "true". Ten atrybut jest dostępne w programie Visual Studio 2015 Update 1 lub nowszy.  
+-   `Experimental` — Ustaw ten atrybut na wartość true, jeśli mają rozszerzenie, które jest obecnie zainstalowane dla wszystkich użytkowników, ale tworzysz zaktualizowaną wersję na tym samym komputerze. Na przykład jeśli zainstalowano MyExtension 1.0 dla wszystkich użytkowników, ale chcesz debugować MyExtension 2.0 na tym samym komputerze, należy ustawić eksperymentalne = "true". Ten atrybut jest dostępne w programie Visual Studio 2015 Update 1 lub nowszy.  
   
--   `Scope` -Tego atrybutu może zająć wartość "Global" lub "ProductExtension":  
+-   `Scope` — Ten atrybut można wykonać wartości "Global" lub "ProductExtension":  
   
-    -   "Globalne" Określa, że instalacja jest poza zakresem określonym jednostki SKU. Na przykład ta wartość jest używana podczas instalowania zestawu SDK rozszerzenia.  
+    -   "Global" Określa, że instalacja jest poza zakresem do określonej jednostki SKU. Na przykład ta wartość jest używana, gdy jest zainstalowany zestaw SDK rozszerzeń.  
   
-    -   "ProductExtension" Określa, że tradycyjnych rozszerzenia VSIX (w wersji 1.0) ograniczone do poszczególnych SKU Visual Studio jest zainstalowany. Jest to wartość domyślna.  
+    -   "ProductExtension" Określa zainstalowanie tradycyjnych rozszerzenia VSIX (w wersji 1.0) obejmuje poszczególne jednostki SKU z programu Visual Studio. Jest to wartość domyślna.  
   
--   `AllUsers` -Ta opcjonalny atrybut określa, czy ten pakiet zostanie zainstalowany dla wszystkich użytkowników. Domyślnie ten atrybut ma wartość false, określa, czy pakiet jest dla każdego użytkownika. (Jeśli ta wartość jest ustawiona na wartość true, instalowania użytkownika musi podniesienia uprawnień do poziomu uprawnień administracyjnych do zainstalowania wynikowego pliku VSIX.  
+-   `AllUsers` — W tym opcjonalny atrybut określa, czy ten pakiet zostanie zainstalowany dla wszystkich użytkowników. Domyślnie ten atrybut ma wartość FAŁSZ, określa, że pakiet jest dla użytkownika. (Jeśli ta wartość jest ustawiona na wartość true, użytkownik musi podnieść poziom do poziomu uprawnień administracyjnych, aby zainstalować VSIX wynikowe.  
   
--   `InstalledByMsi` -Ta opcjonalny atrybut określa, czy ten pakiet jest zainstalowane przez Instalatora MSI. Pakiety zainstalowane przez Instalatora MSI nie zostaną zainstalowane i zarządzane przez MSI (programy i funkcje), a nie przez Visual Studio Menedżera rozszerzeń.  Domyślnie ten atrybut ma wartość false, który określa, że pakiet nie jest instalowany przez Instalatora MSI.  
+-   `InstalledByMsi` — W tym opcjonalny atrybut określa, czy ten pakiet jest zainstalowany za pomocą pakietu MSI. Zainstalowane pakiety za pomocą pakietu MSI są zainstalowane i zarządzane za pomocą pakietu MSI (programy i funkcje), a nie przez Visual Studio Extension Manager.  Domyślnie ten atrybut ma wartość FAŁSZ, która określa, że pakiet nie jest instalowany przez Instalatora MSI.  
   
--   `SystemComponent` -Ta opcjonalny atrybut określa, czy ten pakiet należy traktować jako składnik systemu. Składniki systemowe nie pokazuj w Interfejsie użytkownika Menedżera rozszerzenia i nie można zaktualizować. Domyślnie ten atrybut ma wartość false, który określa, że pakiet nie jest składnikiem systemu.  
+-   `SystemComponent` — W tym opcjonalny atrybut określa, czy ten pakiet należy uwzględnić składnikiem systemu. Składniki systemowe nie pokazuj w Interfejsie użytkownika Menedżera rozszerzeń i nie można zaktualizować. Domyślnie ten atrybut ma wartość FAŁSZ, która określa, że pakiet jest składnikiem systemu.  
   
--   `AnyAttribute*` - `Installation` Element akceptuje otwarty zestaw atrybutów, które mają być widoczne w czasie wykonywania w formie słownika pary nazwa wartość.  
+-   `AnyAttribute*` `Installation` Akceptuje nieograniczony zbiór atrybutów, które będą dostępne w czasie wykonywania w formie słownika pary nazwa wartość.  
   
--   `<InstallationTarget>` — Ten element określa lokalizację, w której Instalator VSIX instaluje pakiet. Jeśli wartość `Scope` atrybutu jest "ProductExtension" pakietu musi wskazywać SKU, na którym jest zainstalowana pliku manifestu w ramach jego zawartość do anonsowania jego dostępność na rozszerzenia. `<InstallationTarget>` Element ma następujące atrybuty, kiedy `Scope` atrybut ma jawnych lub wartość domyślną "ProductExtension":  
+-   `<InstallationTarget>` — Ten element określa lokalizację, w której Instalator VSIX instaluje pakiet. Jeśli wartość `Scope` atrybut jest "ProductExtension" pakiet musi być przeznaczony dla jednostki SKU, który ma zainstalowany plik manifestu w ramach jego zawartość, aby anonsować jej dostępność rozszerzenia. `<InstallationTarget>` Element ma następujące atrybuty kiedy `Scope` atrybut ma jawnie lub wartość domyślną "ProductExtension":  
   
-    -   `Id` — Ten atrybut identyfikuje pakiet.  Atrybut jest zgodna z Konwencją przestrzeni nazw: Company.Product.Feature.Name. `Id` Atrybut może zawierać tylko znaki alfanumeryczne i nie może przekraczać 100 znaków. Oczekiwano wartości:  
+    -   `Id` — Ten atrybut identyfikuje pakiet.  Ten atrybut następuje po Konwencji przestrzeni nazw: Company.Product.Feature.Name. `Id` Atrybut może zawierać tylko znaki alfanumeryczne i jest ograniczona do 100 znaków. Oczekiwane wartości:  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -117,54 +117,54 @@ Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest 
   
         -   My.Shell.App  
   
-    -   `Version` — Ten atrybut określa zakres wersji z minimalną i maksymalną obsługiwane wersje to jednostki SKU. Pakiet można szczegółowo wersji jednostki SKU, które obsługuje. Wersja zakres jest [10.0 11.0], gdzie  
+    -   `Version` — Ten atrybut określa zakres wersji za pomocą minimalnej i maksymalnej obsługiwanej wersji tej jednostki SKU. Pakiet można szczegółowo wersji jednostki SKU, które obsługuje. Wersja zakresu jest [10.0 11.0], gdzie  
   
-        -   [-minimalna wersja włącznie.  
+        -   [-minimalnej wersji (włącznie).  
   
-        -   ]-maksymalna wersja włącznie.  
+        -   ]-maksymalna wersja (włącznie).  
   
-        -   (-minimalna wersja wyłącznego.  
+        -   (— minimalna wersja wyłączności.  
   
-        -   ) — maksymalna wersja wyłącznego.  
+        -   ) — maksymalna wersja wyłączności.  
   
         -   Jednej wersji # - określonej wersji.  
   
         > [!IMPORTANT]
-        >  Wersja 2.0 schematu VSIX została wprowadzona w programie Visual Studio 2012. Aby użyć tego schematu musi mieć programu Visual Studio 2012 lub później zainstalowane na tym komputerze i używać VSIXInstaller.exe będącej częścią tego produktu. Możesz zastosować wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym VSIXInstaller, ale tylko przy użyciu nowszej wersji Instalatora.  
+        >  Wersja 2.0 schematu VSIX został wprowadzony w programie Visual Studio 2012. Aby użyć tego schematu jest posiadanie programu Visual Studio 2012 lub później zainstalowane na komputerze i używać VSIXInstaller.exe należącego do tego produktu. Można wskazać wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym Instalator VSIX, ale tylko przy użyciu nowszej wersji Instalatora.  
   
-    -   `AnyAttribute*` - `<InstallationTarget>` Element umożliwia otwarty zestaw atrybutów, które będą udostępniane w czasie wykonywania w formie słownika pary nazwa wartość.  
+    -   `AnyAttribute*` `<InstallationTarget>` Elementu umożliwia nieograniczony zestaw atrybutów, która jest widoczna w czasie wykonywania w formie słownika pary nazwa wartość.  
   
 ### <a name="dependencies-element"></a>Element zależności  
- Ten element zawiera listę zależności, które deklaruje tego pakietu. Jeśli wszystkie zależności są określone, tych pakietów (identyfikowana na podstawie ich `Id`) musi być zainstalowane przed.  
+ Ten element zawiera listę zależności, które deklaruje tego pakietu. Jeśli nie określono żadnych zależności, te pakiety (identyfikowane przez ich `Id`) musi zostać zainstalowany przed.  
   
 -   `<Dependency>` Element — ten element podrzędny ma następujące atrybuty:  
   
-    -   `Id` -Tego atrybutu musi być unikatowy identyfikator pakietu zależnego. Ta wartość tożsamości musi odpowiadać `<Metadata><Identity>Id` atrybut pakietu, który jest zależny od tego pakietu. `Id` Atrybut jest zgodna z Konwencją przestrzeni nazw: Company.Product.Feature.Name. Atrybut może zawierać tylko znaki alfanumeryczne i nie może przekraczać 100 znaków.  
+    -   `Id` — Ten atrybut musi być unikatowy identyfikator dla pakietu zależnego. Ta wartość tożsamości musi odpowiadać `<Metadata><Identity>Id` atrybut, który ten pakiet jest zależny od pakietu. `Id` Atrybut następuje po Konwencji przestrzeni nazw: Company.Product.Feature.Name. Ten atrybut może zawierać tylko znaki alfanumeryczne i jest ograniczona do 100 znaków.  
   
-    -   `Version` — Ten atrybut określa zakres wersji z minimalną i maksymalną obsługiwane wersje to jednostki SKU. Pakiet można szczegółowo wersji jednostki SKU, które obsługuje. Wersja zakres jest [12,0, 13,0], gdzie:  
+    -   `Version` — Ten atrybut określa zakres wersji za pomocą minimalnej i maksymalnej obsługiwanej wersji tej jednostki SKU. Pakiet można szczegółowo wersji jednostki SKU, które obsługuje. Wersja zakresu jest [12.0, 13,0], gdzie:  
   
-        -   [-minimalna wersja włącznie.  
+        -   [-minimalnej wersji (włącznie).  
   
-        -   ]-maksymalna wersja włącznie.  
+        -   ]-maksymalna wersja (włącznie).  
   
-        -   (-minimalna wersja wyłącznego.  
+        -   (— minimalna wersja wyłączności.  
   
-        -   ) — maksymalna wersja wyłącznego.  
+        -   ) — maksymalna wersja wyłączności.  
   
         -   Jednej wersji # - określonej wersji.  
   
-    -   `DisplayName` — Ten atrybut to nazwa wyświetlana zależnego pakietu, który jest używany w elementów interfejsu użytkownika, takich jak okien dialogowych i komunikaty o błędach. Ten atrybut jest opcjonalne, chyba że zależny pakiet jest instalowany przez Instalatora MSI.  
+    -   `DisplayName` — Ten atrybut jest nazwa wyświetlana pakietu zależnego, który jest używany w elementy interfejsu użytkownika, takie jak okna dialogowe i komunikaty o błędach. Ten atrybut jest opcjonalny, jeśli nie zainstalowano zależnego pakietu za pomocą pakietu MSI.  
   
-    -   `Location` — Ten opcjonalny atrybut określa ścieżkę względną w tym pliku VSIX do zagnieżdżonych pakietu VSIX albo adres URL do lokalizacji pobierania dla zależności. Ten atrybut służy pomóc użytkownikowi zlokalizuj pakiet wymagań wstępnych.  
+    -   `Location` — W tym opcjonalny atrybut określa ścieżkę względną w tym pliku VSIX do zagnieżdżonych pakietu VSIX albo adres URL do lokalizacji pobierania dla zależności. Ten atrybut służy do pomocy użytkownika Znajdź pakietu wstępnie wymaganych składników.  
   
-    -   `AnyAttribute*` - `Dependency` Element akceptuje otwarty zestaw atrybutów, które mają być widoczne w czasie wykonywania w formie słownika pary nazwa wartość.  
+    -   `AnyAttribute*` `Dependency` Akceptuje nieograniczony zbiór atrybutów, które będą dostępne w czasie wykonywania w formie słownika pary nazwa wartość.  
   
-### <a name="assets-element"></a>Element zasobów  
- Ten element zawiera listę `<Asset>` znaczniki dla każdego rozszerzenia lub zawartości elementu udostępniane przez ten pakiet.  
+### <a name="assets-element"></a>Zasoby — element  
+ Element ten zawiera listę `<Asset>` tagi dla każdego elementu rozszerzenia lub zawartości udostępniane przez ten pakiet.  
   
 -   `<Asset>` — Ten element zawiera następujące atrybuty i elementy:  
   
-    -   `Type` — Jest to typ rozszerzenia lub reprezentowanego przez ten element zawartości. Każdy `<Asset>` element musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinny być reprezentowane jako nazwę FQDN, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
+    -   `Type` -Typ rozszerzenia lub reprezentowany przez ten element zawartości. Każdy `<Asset>` elementu musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinna być reprezentowana jako w pełni kwalifikowana nazwa, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -180,15 +180,15 @@ Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest 
   
         7.  Microsoft.VisualStudio.Assembly  
   
-         Tworzenie własnych typów i nadaj im unikatowe nazwy. W czasie wykonywania w programie Visual Studio kodu można wyliczyć i dostęp do tych typów niestandardowych za pomocą interfejsu API Menedżera rozszerzenia.  
+         Możesz utworzyć własne typy i nadaj im nazwy unikatowe. W czasie wykonywania w programie Visual Studio Twój kod można wyliczyć i dostęp do tych typów niestandardowych przy użyciu interfejsu API Menedżera rozszerzeń.  
   
-    -   `Path` — Ścieżka względna do pliku lub folderu w pakiecie, który zawiera element zawartości.  
+    -   `Path` -ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
     
-    -   `TargetVersion` -zakres wersji, w którym dotyczy danego zasobu. Używane do wysyłania wielu wersji zasobów dla różnych wersji programu Visual Studio. Wymaga programu Visual Studio 2017.3 lub nowszej obowiązują.
+    -   `TargetVersion` -zakres wersji, którego dotyczy dany zasób. Używany do wysyłania wielu wersji elementów zawartości do różnych wersji programu Visual Studio. Wymaga programu Visual Studio 2017.3 lub nowszej efekty.
   
-    -   `AnyAttribute*` -Otwarty zestaw atrybutów, które będą udostępniane w czasie wykonywania w formie słownika pary nazwa wartość.  
+    -   `AnyAttribute*` -Nieograniczony zbiór atrybutów uwidocznionego w czasie wykonywania jako słownik par nazwa wartość.  
   
-         `<AnyElement>*` -Wszelkie uporządkowana zawartość jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne w postaci listy obiektów XmlElement. Rozszerzenia VSIX można zdefiniować strukturalnych metadanych określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
+         `<AnyElement>*` -Żadnej zawartości ze strukturą jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne jako listę obiektów, XmlElement. Rozszerzenia VSIX można zdefiniować ze strukturą metadanych dla określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
   
 ### <a name="sample-manifest"></a>Manifest próbki  
   
@@ -218,5 +218,5 @@ Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest 
 </PackageManifest>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+## <a name="see-also"></a>Zobacz także  
+ [Rozszerzenia programu Visual Studio wysyłki](../extensibility/shipping-visual-studio-extensions.md)

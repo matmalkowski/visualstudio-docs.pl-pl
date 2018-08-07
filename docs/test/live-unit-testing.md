@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382015"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586483"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing w programie Visual Studio 2017
 
@@ -102,7 +102,7 @@ W dowolnym momencie możesz czasowo wstrzymać lub całkowite zatrzymanie Live U
 
 - **Opcje**, co spowoduje otwarcie **opcje** okna dialogowego opisanego w [skonfigurować Live Unit Testing](#configure-live-unit-testing) sekcji.
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Wyświetlanie wizualizacji pokrycia w edytorze podczas pisania
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Wyświetlanie wizualizacji pokrycia w edytorze podczas pisania
 
 Gdy włączone Live Unit Testing aktualizacji, które każdego wiersza kodu w edytorze programu Visual Studio, aby pokazać, czy kod piszesz jest objęte testy jednostkowe i tego, czy testy, które obejmują go kończy się sukcesem.  Na poniższej ilustracji przedstawiono wierszy kodu za pomocą zarówno się powodzeniem i niepowodzeniem testy, a także wierszy kodu, które nie są obejmowane przez testy. Wiersze ozdobione zielony "✓" są objęte przekazując testy, wiersze ozdobione czerwony symbol "x", są objęte zakończone niepowodzeniem testy i wiersze dekorowane przez niebieski "➖" nie są obejmowane przez dowolny test.
 
@@ -186,8 +186,8 @@ Aby wyłączyć poszczególne metody z Live Unit Testing umożliwia także nast�
 
 ## <a name="see-also"></a>Zobacz także
 
-[Narzędzia do testowania kodu](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Live Unit Testing blog](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)
-[wideo Channel 9: Live Unit Testing w Program Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Narzędzia do testowania kodu](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Live Unit Testing blog](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)
+- [Wideo Channel 9: Live Unit Testing w programie Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 

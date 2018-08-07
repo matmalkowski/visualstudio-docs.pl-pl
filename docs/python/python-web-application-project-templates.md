@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251818"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586550"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -70,7 +70,7 @@ Wszystkie  **\<Framework > Projekt sieci Web** szablony utworzyć początkową a
 
 ## <a name="install-project-requirements"></a>Zainstaluj wymagania projektu
 
-Podczas tworzenia projektu z szablonu określonej platformy, aby zainstalować wymagane pakiety przy użyciu narzędzia pip pojawi się okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](selecting-a-python-environment-for-a-project.md#using-virtual-environments) dla projektów sieci web, tak aby prawidłowymi zależnościami są uwzględniane podczas publikowania witryny sieci web:
+Podczas tworzenia projektu z szablonu określonej platformy, aby zainstalować wymagane pakiety przy użyciu narzędzia pip pojawi się okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](selecting-a-python-environment-for-a-project.md#use-virtual-environments) dla projektów sieci web, tak aby prawidłowymi zależnościami są uwzględniane podczas publikowania witryny sieci web:
 
 ![Okno dialogowe, które instaluje wymagane pakiety dla szablonu projektu](media/template-web-requirements-txt-wizard.png)
 

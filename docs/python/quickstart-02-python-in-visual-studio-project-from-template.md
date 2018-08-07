@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45e6f25f485503da31f763df33481d5b61029d6f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510887"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586503"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu w programie Visual Studio
 
@@ -35,7 +35,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 1. Visual Studio Wyświetla **Dodawanie środowiska wirtualnego** okna dialogowego. Zaakceptuj wartości domyślne, a następnie wybierz pozycję **Utwórz**, następnie Wyraź zgodę na wszystkie żądania podniesienia uprawnień.
 
     > [!Tip]
-    > Po rozpoczęciu projektu zdecydowanie zaleca się już teraz Utwórz środowisko wirtualne jak zapraszać większość szablonów programu Visual Studio, należy wykonać. Środowiska wirtualne Obsługa dokładnych wymaganiach projektu wraz z upływem czasu, jak dodać i usunąć biblioteki. Następnie można łatwo generować *requirements.txt* pliku, którego używasz, aby ponownie zainstalować te zależności na innych komputerach rozwoju (jako po przy użyciu kontroli źródła) i podczas wdrażania projektu na serwerze produkcyjnym. Aby uzyskać więcej informacji na temat środowisk wirtualnych i korzyści, zobacz [korzystanie ze środowisk wirtualnych](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) i [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
+    > Po rozpoczęciu projektu zdecydowanie zaleca się już teraz Utwórz środowisko wirtualne jak zapraszać większość szablonów programu Visual Studio, należy wykonać. Środowiska wirtualne Obsługa dokładnych wymaganiach projektu wraz z upływem czasu, jak dodać i usunąć biblioteki. Następnie można łatwo generować *requirements.txt* pliku, którego używasz, aby ponownie zainstalować te zależności na innych komputerach rozwoju (jako po przy użyciu kontroli źródła) i podczas wdrażania projektu na serwerze produkcyjnym. Aby uzyskać więcej informacji na temat środowisk wirtualnych i korzyści, zobacz [korzystanie ze środowisk wirtualnych](../python/selecting-a-python-environment-for-a-project.md#use-virtual-environments) i [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
 
 1. Gdy program Visual Studio utworzy tego środowiska, Szukaj w **Eksploratora rozwiązań** aby zobaczyć, że masz *app.py* plików wraz z *requirements.txt*. Otwórz *app.py* aby zobaczyć, że szablon udostępnił kodu, tak jak w [Szybki Start — tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md), kilka dodano sekcje. Cały kod poniżej jest tworzony przez szablon, więc nie trzeba wkleić dowolny do *app.py* samodzielnie.
 

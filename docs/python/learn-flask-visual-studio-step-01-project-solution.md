@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dd6208c690190db3d50f35d661d6e2b53157aeee
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388270"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586407"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio
 
@@ -142,7 +142,7 @@ Teraz, gdy skonfigurowano kontroli źródła dla projektu, można utworzyć śro
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pytanie: Dlaczego czy chcesz utworzyć środowisko wirtualne?
 
-Odpowiedź: Środowisko wirtualne jest doskonałym sposobem na izolowanie dokładnie zależności aplikacji. Tej izolacji pozwala uniknąć konfliktów w środowisku Python globalnym i ułatwia testowanie i współpracy. Wraz z upływem czasu podczas opracowywania aplikacji, niezmiennie wprowadzanych wiele pomocnych pakiety języka Python. Przechowując pakietów w środowisku wirtualnym specyficzne dla projektu, można łatwo zaktualizować projektu *requirements.txt* pliku, który opisuje środowisku, w którym znajduje się w kontroli źródła. Gdy projekt jest kopiowana do innych komputerów, serwerów kompilacji, wdrażania serwerów i innych komputerach rozwoju, w tym jest łatwo odtworzyć środowiskiem za pomocą tylko *requirements.txt* (co jest dlaczego środowiska nie musi znajdować się w kontroli źródła). Aby uzyskać więcej informacji, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Odpowiedź: Środowisko wirtualne jest doskonałym sposobem na izolowanie dokładnie zależności aplikacji. Tej izolacji pozwala uniknąć konfliktów w środowisku Python globalnym i ułatwia testowanie i współpracy. Wraz z upływem czasu podczas opracowywania aplikacji, niezmiennie wprowadzanych wiele pomocnych pakiety języka Python. Przechowując pakietów w środowisku wirtualnym specyficzne dla projektu, można łatwo zaktualizować projektu *requirements.txt* pliku, który opisuje środowisku, w którym znajduje się w kontroli źródła. Gdy projekt jest kopiowana do innych komputerów, serwerów kompilacji, wdrażania serwerów i innych komputerach rozwoju, w tym jest łatwo odtworzyć środowiskiem za pomocą tylko *requirements.txt* (co jest dlaczego środowiska nie musi znajdować się w kontroli źródła). Aby uzyskać więcej informacji, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pytanie: Jak usunąć środowisko wirtualne jest została już przydzielona do kontroli źródła?
 

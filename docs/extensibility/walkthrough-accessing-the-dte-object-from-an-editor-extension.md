@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b888136f51e7893c6ad44ab888d8079ee92d8edf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139643"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586251"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Wskazówki: Uzyskiwanie dostępu do obiektu DTE z rozszerzenia Edytora
-W VSPackages, można uzyskać obiektu DTE przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metody z typem obiektu DTE. Rozszerzenia Managed Extensibility Framework (MEF), umożliwia importowanie <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , a następnie wywołać <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metody z typem <xref:EnvDTE.DTE>.  
+Obiekt DTE w pakietach VSPackage, można uzyskać przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metody z typem obiektu DTE. W rozszerzeniach Managed Extensibility Framework (MEF), można zaimportować <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , a następnie wywołać <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metody z typem <xref:EnvDTE.DTE>.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="getting-the-dte-object"></a>Pobieranie obiektu DTE  
   
-#### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Aby uzyskać obiektu DTE z element ServiceProvider  
+### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Aby uzyskać obiekt DTE z element ServiceProvider  
   
-1.  Tworzenie projektu VSIX C# o nazwie `DTETest`. Dodaj szablon elementu klasyfikatora edytora i nadaj mu nazwę `DTETest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1.  Utwórz projekt VSIX języka C# o nazwie `DTETest`. Dodaj szablon elementu klasyfikatora edytora i nadaj mu nazwę `DTETest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 2.  Dodaj następujące odwołania do zestawów do projektu:  
   
@@ -40,7 +40,7 @@ W VSPackages, można uzyskać obiektu DTE przez wywołanie metody <xref:Microsof
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  Przejdź do pliku DTETest.cs i dodaj następującą `using` dyrektywy:  
+3.  Przejdź do *DTETest.cs* pliku i Dodaj następujący kod `using` dyrektywy:  
   
     ```csharp  
     using EnvDTE;  
@@ -49,7 +49,7 @@ W VSPackages, można uzyskać obiektu DTE przez wywołanie metody <xref:Microsof
   
     ```  
   
-4.  W `GetDTEProvider` klasy, zaimportuj <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
+4.  W `GetDTEProvider` klasy, import <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
     ```csharp  
     [Import]  
@@ -64,7 +64,7 @@ W VSPackages, można uzyskać obiektu DTE przez wywołanie metody <xref:Microsof
   
     ```  
   
-6.  Jeśli użytkownik musi używać <xref:EnvDTE80.DTE2> interfejsu, można rzutować obiektu DTE do niego.  
+6.  Jeśli trzeba użyć <xref:EnvDTE80.DTE2> interfejsu, można rzutować obiektu DTE do niego.  
   
-## <a name="see-also"></a>Zobacz też  
- [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Zobacz także  
+ [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)

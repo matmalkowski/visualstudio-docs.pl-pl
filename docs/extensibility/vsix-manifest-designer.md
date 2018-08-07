@@ -17,41 +17,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef3d32460ba6408eab8a25364f159baecdae6d9d
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148122"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586329"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
-Modyfikuje VSIX pliku manifestu pakietu, który określa zachowanie instalacji określone dla rozszerzenia Visual Studio.  
+Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas instalacji rozszerzenia programu Visual Studio.  
   
- **Projektanta manifestu VSIX** mapy źródłowej schematu VSIX. Każdy element w schemacie można ustawić przy użyciu odpowiedniego formantu w projektancie. Aby uzyskać więcej informacji o schemacie, zobacz [odwołania 2.0 schematu rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+ **Projektant manifestu VSIX** mapuje schemat źródłowy VSIX. Każdy element w schemacie można ustawić za pomocą odpowiedniego formantu w projektancie. Aby uzyskać więcej informacji na temat schematu, zobacz [VSIX rozszerzenia schematu 2.0 Reference](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
- Aby otworzyć **projektanta manifestu VSIX**, zlokalizuj plik Source.Extension.vsixmanifest,a w **Eksploratora rozwiązań**i otworzyć plik. Jeśli plik nie zawiera prawidłowy kod XML, Projektant manifestu nie zostanie otwarty.  
+ Aby otworzyć **Projektant manifestu VSIX**, zlokalizuj *source.extension.vsixmanifest* w pliku **Eksploratora rozwiązań**i Otwórz plik. Jeśli plik nie zawiera prawidłowy kod XML, nie będzie można otworzyć projektanta manifestu.  
   
 > [!NOTE]
->  Source.Extension.vsixmanifest przekazywane są do extension.vsixmanifest podczas tworzenia pakietu.  
+>  *Source.extension.vsixmanifest* plików znajdują się dane wyjściowe do *extension.vsixmanifest* podczas kompilowania pakietu.  
   
-## <a name="uielement-list"></a>Lista elementów UI  
- **Projektanta manifestu VSIX** zawiera cztery sekcje, które odnoszą się do tych elementów najwyższego poziomu schematu:  
+## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika  
+ **Projektant manifestu VSIX** zawiera cztery sekcje, które odnoszą się do tych elementów najwyższego poziomu schematu:  
   
 -   Metadane  
   
--   Instalacji elementów docelowych  
+-   Elementy docelowe instalacji  
   
 -   Zasoby  
   
 -   Zależności  
   
- Obszar nagłówek zawiera następujące formanty.  
+ W obszarze nagłówka zawiera następujące elementy sterujące.  
   
  **Nazwa produktu**  
  W tym artykule opisano Nazwa rozszerzenia.  
   
  **Identyfikator produktu**  
- Określa informacje Unikatowy identyfikator dla tego pakietu.  
+ Określa unikatową identyfikację tego pakietu.  
   
  **Autor**  
  Określa nazwę autora rozszerzenia.  
@@ -59,68 +59,68 @@ Modyfikuje VSIX pliku manifestu pakietu, który określa zachowanie instalacji o
  **Wersja**  
  Określa numer wersji rozszerzenia.  
   
- **Metadanych** karta zawiera następujące formanty.  
+ **Metadanych** karta zawiera następujące elementy sterujące.  
   
  **Opis**  
- Zawiera opis tekstowy rozszerzenia, który będzie wyświetlany w **Menedżera rozszerzenia**.  
+ Zawiera opis tekstowy rozszerzenia mają być wyświetlane w **Menedżera rozszerzeń**.  
   
  **Język**  
- Określa domyślny język dla pakietu, który odpowiada danych tekstowych w manifeście. `Language` Atrybut następuje wspólnej Konwencji kod ustawień regionalnych języka środowiska uruchomieniowego (języka wspólnego CLR) dla zestawów zasobu, na przykład en-us, en, fr-fr. Wartość domyślna to neutralnej; oznacza to, że pakiet zostanie uruchomiony w dowolnej wersji językowej programu Visual Studio.  
+ Określa domyślny język dla pakietu, który odnosi się do danych tekstowych w manifeście. `Language` Atrybut następuje typową Konwencją kod ustawień regionalnych języka wspólnego (CLR) dla zestawów zasobów, na przykład en-us, en, fr-fr. Domyślnie wartość jest neutralny, co oznacza, że pakiet zostanie uruchomiony w dowolnej wersji językowej programu Visual Studio.  
   
- **Licencji**  
- Określa plik tekstowy, który zawiera licencji użytkownika, jeśli występuje.  
+ **Licencja**  
+ Określa plik tekstowy, który zawiera licencji użytkownika, jeśli jest obecna.  
   
  **Ikona**  
- Określa plik grafiki (.png, bmp, JPEG, .ico), który zawiera ikonę, która ma być wyświetlany w **Menedżera rozszerzenia**, jeśli występuje ikona. Obraz ikony musi być 32 x 32 piksele lub będzie zmieniany na te wymiary. Jeśli brak określonych ikon, **Menedżera rozszerzenia** używa domyślnej ikony.  
+ Określa plik grafiki (*.png*, *.bmp*, *JPEG*, *.ico*) zawierający ikonę do wyświetlenia w  **Menedżer rozszerzeń**, jeśli występuje ikona. Obraz ikony musi być 32 x 32 piksele lub zmiany rozmiaru do tych wymiarów. Jeśli określono żadnej ikony, **Menedżera rozszerzeń** używa ikona domyślna.  
   
  **Obraz podglądu**  
- Określa plik grafiki (.png, bmp, JPEG, .ico), który zawiera obraz podglądu, które mają być wyświetlane w **Menedżera rozszerzenia**, jeśli obraz podglądu jest obecny. Obraz podglądu musi być 200 x 200 pikseli. Jeśli nie obraz podglądu jest określony, **Menedżera rozszerzenia** korzysta z domyślnego obrazu.  
+ Określa plik grafiki (*.png*, *.bmp*, *JPEG*, *.ico*) zawierający obraz podglądu, które mają być wyświetlane w **Menedżera rozszerzeń**, jeśli obraz podglądu jest obecny. Obraz podglądu musi być 200 x 200 pikseli. Jeśli brak obrazu (wersja zapoznawcza) jest określony, **Menedżera rozszerzeń** korzysta z domyślnego obrazu.  
   
  **Tagi**  
  Dodaje znaczniki tekst służący do wskazówki dotyczące wyszukiwania.  
   
  **Uwagi do wersji**  
- Określa plik (txt, .rtf), który zawiera informacje o wersji. Ma również adres URL witryny sieci Web, który wyświetla informacje o wersji.  
+ Określa plik (*.txt*, *.rtf*) zawierający informacje o wersji. Pobiera również adres URL witryny sieci Web, która wyświetla informacje o wersji.  
   
  **Wprowadzenie — przewodnik**  
- Określa plik (txt, RTF), który zawiera informacje o sposobie używania rozszerzenie lub zawartości w pakiecie VSIX. Ten przewodnik jest wyświetlany, gdy instalacja rozszerzenia została ukończona. Ma również adres URL witryny sieci Web wyświetlający przewodnika.  
+ Określa plik (*.txt*, *.rtf*) zawierający informacje o sposobie używania rozszerzenia lub zawartości w pakiecie VSIX. Ten przewodnik jest wyświetlany, gdy instalacja rozszerzenia została ukończona. Pobiera również adres URL witryny sieci Web, która wyświetla przewodnika.  
   
- **Więcej informacji o adresu URL.**  
- Określa adres URL witryny sieci Web, który zawiera dodatkowe informacje o produkcie.  
+ **Więcej informacji o adres URL.**  
+ Określa adres URL witryny sieci Web, która zawiera dodatkowe informacje o produkcie.  
   
- **Zainstalować obiekty docelowe** karta zawiera następujące formanty.  
+ **Instaluj obiekty docelowe** karta zawiera następujące elementy sterujące.  
   
  **Typ instalacji**  
- Wyświetla listę **rozszerzenie programu Visual Studio** i **zestawu SDK rozszerzenia** jako docelowy typów instalacji. Opcje różnią się zależnie od typu wybranego przez użytkownika.  
+ Wyświetla listę **rozszerzenie programu Visual Studio** i **zestaw SDK rozszerzeń** docelowy jako typy instalacji. Opcje różnią się w zależności od wybranego typu.  
   
  **Rozszerzenie programu Visual Studio**  
- Wyświetla listę **InstallationTarget** elementy, które opisują sposób można zainstalować pakietu, i na które produkty Visual Studio można zainstalować tego rozszerzenia. Każdy produkt został zidentyfikowany osobno według nazwy i wersji lub wersji zakresu.  Produkty można dodany do listy, modyfikować i usunięte. Nazwa i wersja produktu odpowiadają **identyfikator** i **wersji** atrybuty skojarzonego **InstallationTarget** elementu.  
+ Wyświetla listę **InstallationTarget** elementy, które opisują, jak można zainstalować pakietu i do produktów Visual Studio, które można zainstalować tego rozszerzenia. Każdy produkt został zidentyfikowany osobno według nazwy i wersji lub zakresu. Produkty mogą dodany do listy, modyfikacji i usunięte. Nazwa i wersja produktu odpowiadają **identyfikator** i **wersji** atrybuty skojarzonego **InstallationTarget** elementu.  
   
- **Zakres wersji** jest [12,0, 14,0] i używa notacji następujące:  
+ **Zakres wersji** jest [12.0, 14,0] i używa następujący zapis:  
   
--   [-minimalna wersja włącznie  
+-   [-minimalnej wersji (włącznie)  
   
--   ]-maksymalna wersja włącznie  
+-   ]-maksymalna wersja (włącznie)  
   
--   (-minimalna wersja wyłączności  
+-   (— minimalna wersja wyłączne  
   
--   ) — maksymalna wersja wyłączności  
+-   ) — maksymalna wersja wyłączne  
   
 -   Jednej wersji # - tylko określona wersja  
   
- **Rozszerzenia zestawu SDK**  
- Określa instalacji globalnej, który nie jest ograniczone do określonych produktów i wersji. **Docelowy identyfikator platformy** to platforma, takie jak "Windows", który docelowych. **Docelowa wersja platformy** wersji, takie jak 8.0 z docelową platformą. **Nazwa zestawu SDK** i **zestawu SDK w wersji** są nazwa i numer wersji zestawu SDK, odpowiednio.  
+ **Zestaw SDK rozszerzenia**  
+ Określa globalny instalacja, która nie jest ograniczone do określonego produktu i wersji. **Identyfikator platformy docelowej** to platforma, takie jak "Windows", gdy elementem docelowym. **Wersja platformy docelowej** jest wersji, takich jak 8.0 z docelowej platformy. **Nazwa zestawu SDK** i **wersja zestawu SDK** są nazwa i numer wersji zestawu SDK, odpowiednio.  
   
- **Ten plik VSIX jest instalowany dla wszystkich użytkowników (wymaga podniesienia uprawnień dotyczących instalacji)** pole wyboru  
- Jeśli to pole wyboru jest zaznaczone, to rozszerzenie jest zainstalowane dla wszystkich użytkowników. w przeciwnym razie jest ona zainstalowana tylko dla bieżącego użytkownika.  
+ **Plik VSIX są zainstalowane dla wszystkich użytkowników (wymaga podniesienia uprawnień związane z instalacją)**  
+ Jeśli wybierzesz to pole wyboru, to rozszerzenie jest zainstalowane dla wszystkich użytkowników. w przeciwnym razie jest zainstalowany tylko dla bieżącego użytkownika.  
   
- **Ten plik VSIX jest instalowany przez Instalatora Windows** pole wyboru  
- Jeśli to pole wyboru jest zaznaczone, to rozszerzenie jest zainstalowane przez Instalatora Windows (plik .msi); w przeciwnym razie jest instalowana jako typowy pakiet VSIX (plik .vsix).  
+ **Plik VSIX jest instalowany przez Instalatora Windows**  
+ Jeśli wybierzesz to pole wyboru, to rozszerzenie jest zainstalowane przez Instalatora Windows (*.msi* pliku); w przeciwnym razie jest zainstalowany jako typowych pakietów VSIX (*.vsix* pliku).  
   
- **Zasoby** karta zawiera następujące formanty.  
+ **Zasoby** karta zawiera następujące elementy sterujące.  
   
  **Lista zasobów**  
- Wyświetla listę elementów zasobów, które opisano elementy rozszerzenia lub zawartość tego pakietu powierzchni. Każdego rozszerzenia lub zawartości elementu jest wyświetlany osobno według źródła, typu i ścieżkę. Elementy rozszerzeń i zawartości można dodany do listy, modyfikować i usunięte. Typ i ścieżka elementu rozszerzenia lub zawartość odpowiada `Type` i `Path` atrybuty skojarzonego `Asset` elementu. Znane są następujące:  
+ Wyświetla elementy zawartości, które opisują rozszerzenia lub zawartości elementów że pakietu powierzchnie. Każdego rozszerzenia lub zawartości elementu jest wyświetlany osobno według źródła, typu i ścieżki. Rozszerzenia i zawartości elementy można dodany do listy, modyfikować i usunięte. Typ i ścieżki rozszerzenia lub zawartości elementu odpowiada `Type` i `Path` atrybuty skojarzonego `Asset` elementu. Znane są następujące typy:  
   
 -   Microsoft.VisualStudio.Package  
   
@@ -138,19 +138,19 @@ Modyfikuje VSIX pliku manifestu pakietu, który określa zachowanie instalacji o
   
 -   Microsoft.ExtensionSDK  
   
- Umożliwiają dodawanie lub edytowanie elementu zawartości, należy określić typ zasobu, czy zasób jest projekt w bieżącym rozwiązaniu lub pliku w systemie plików, a nazwa projektu. Można również określić nazwę folderu, w którym ma zostać osadzony.  
+ Można dodawać lub edytować element zawartości, należy określić typ zawartości, czy zasób jest projekt w bieżącym rozwiązaniu lub pliku w systemie plików, a nazwa projektu. Można również określić nazwę folderu, w którym ma zostać osadzony.  
   
- Można także tworzenie własnych typów i nadaj im unikatowe nazwy.  
+ Można również utworzyć własne typy i nadaj im nazwy unikatowe.  
   
- **Zależności** karta zawiera następujące formanty.  
+ **Zależności** karta zawiera następujące elementy sterujące.  
   
- **Nazwa źródła i zakres wersji**  
- Wyświetla listę elementów zależności tego pakietu, które są inne pakiety, których zależy ten pakiet. Jeśli określono pakietu zależności, musi być zainstalowany przed zainstalowaniem tego pakietu; w przeciwnym razie tego pakietu należy go zainstalować.  
+ **Nazwa źródła i zakresu wersji.**  
+ Wyświetla listę elementów zależności tego pakietu, które są inne pakiety, od których zależy ten pakiet. Jeśli zostanie określona zależność pakietu, należy zainstalować przed zainstalowaniem tego pakietu; w przeciwnym razie tego pakietu należy go zainstalować.  
   
- Zależności pakietów są określane przez identyfikator, nazwę zakres wersji, źródła i jak ma można rozpoznać zależności. Każdy pakiet zależności jest wyświetlany osobno według nazwy, wersji i źródła. Zależności pakietów można dodany do listy, modyfikować i usunięty.  
+ Zależności pakietów są określone przez identyfikator, nazwę, zakres wersji, źródła i jak zależność ma zostać rozwiązany. Każdy pakiet zależności jest wyświetlany osobno według nazwy, wersji i źródła. Pakiety zależności mogą być dodawane do listy, zmodyfikowane lub usunięte.  
   
- Identyfikator musi być zgodna `ID` atrybutu metadane pakietów zależności. Źródło może też być projekt w bieżącym rozwiązaniu, obecnie zainstalowanego rozszerzenia lub pliku. **Jak jest zależności** ustawienie może być ścieżką względną zagnieżdżonych pakietu lub adres URL lokalizacji pobierania dla zależności. Identyfikator wersji i rozpoznawania zależności pakietu odpowiadają `Id`, `Version`, i `Location` atrybuty skojarzonego `Dependency` elementu.  
+ Identyfikator musi być zgodna `ID` atrybut metadane pakietów zależności. Źródło może być projektu w bieżącym rozwiązaniu, obecnie zainstalowanego rozszerzenia lub pliku. **Jest jak rozpoznać zależności** ustawienie może być ścieżki względnej w zagnieżdżonych pakietu lub adres URL lokalizacji pobierania dla zależności. Identyfikator wersji i rozwiązania pakietu zależności odpowiadają `Id`, `Version`, i `Location` atrybuty skojarzonego `Dependency` elementu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)

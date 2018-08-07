@@ -15,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141405"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586755"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate — Element (szablony projektów Visual Studio)
-Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub startowy.  
+# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate — element (szablony Visual Studio)
+Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub starter kit.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```csharp  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
     <TemplateData>    </TemplateData>  
     <TemplateContent>    </TemplateContent>  
@@ -42,14 +42,14 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Type`|Określa szablon jako szablon projektu lub szablonu elementu. Ten atrybut może mieć wartość `Project` lub `Item`.|  
-|`Version`|Określa numer wersji dla szablonu. Szablony w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ma `Version` wartość atrybutu `3.0.0`.|  
+|`Type`|Określa szablon jako szablon projektu lub szablon elementu. Ten atrybut może mieć wartość `Project` lub `Item`.|  
+|`Version`|Określa numer wersji dla szablonu. Szablony w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mają `Version` wartość atrybutu `3.0.0`.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, który kategoryzuje szablonu i definiuje sposób wyświetlania w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, która klasyfikuje szablon i definiuje sposób wyświetlania w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa zawartość szablonu.|  
 |[Wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md)|Element opcjonalny.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Element opcjonalny.|  
@@ -58,12 +58,12 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
  Brak.  
   
 ## <a name="remarks"></a>Uwagi  
- `VSTemplate` Element jest elementem głównym plików .vstemplate.  
+ `VSTemplate` Element jest elementem głównym *.vstemplate* plików.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono metadane szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.  
+ W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,6 +87,6 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -13,127 +13,127 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9feb6af87246a27ee9b54a206b1d03a470a19619
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148902"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586394"
 ---
-# <a name="visual-studio-sdk-glossary"></a>Słownik zestawu SDK programu Visual Studio
-Ten słownik zawiera definicje terminów, które są używane w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentacji.  
+# <a name="visual-studio-sdk-glossary"></a>Słownik usługi Visual Studio SDK
+W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentacji.  
   
 ## <a name="terms"></a>Warunki  
  Dodatek  
- Aplikacja narzędzia, sterowników lub innego oprogramowania dodanych do aplikacji głównej. W programie Visual Studio zintegrowane środowisko programistyczne (IDE) dodatek jest aplikacji na podstawie automatyzacji, która rozszerza możliwości środowiska IDE.  
+ Aplikacja narzędziowa, sterownika lub innego oprogramowania dodanych do głównej aplikacji. W programie Visual Studio zintegrowane środowisko programistyczne (IDE) dodatek jest aplikacji na podstawie Automation, która rozszerza możliwości środowiska IDE.  
   
  model automatyzacji  
- Model automatyzacji, znane w poprzednich wersjach programu Visual Studio jako modelu rozszerzalności jest interfejs programowania, który zapewnia dostęp do podstawowych procedury dysk IDE. Dodatki, kreatorów i makra użyć obiektów w modelu automatyzacji do kontroli lub rozszerzyć funkcjonalność programu IDE.  
+ Model automatyzacji, znane w poprzednich wersjach programu Visual Studio jako modelu rozszerzalności jest interfejs programowania, który zapewnia dostęp do podstawowych procedury tego dysku IDE. Dodatki, kreatory i makra używać obiektów w modelu automatyzacji, aby formant lub rozszerzanie funkcji środowiska IDE.  
   
- kontekst poleceń interfejsu użytkownika  
- Skojarzenie identyfikatora GUID z widoczność polecenia interfejsu użytkownika lub elementu, np. paska narzędzi. W odróżnieniu od kontekst zaznaczenia jest kontekst interfejsu użytkownika poleceń, że nie jest dołączony do okna.  
+ polecenie kontekstu interfejsu użytkownika  
+ Skojarzenie identyfikatora GUID z widoczności poleceń interfejsu użytkownika lub element, takie jak pasek narzędzi. Polecenie kontekstu interfejsu użytkownika różni się od kontekst zaznaczenia w tym, że nie jest dołączona do okna.  
   
- Kontekst interfejsu użytkownika poleceń może służyć do:  
+ Polecenie kontekstu interfejsu użytkownika mogą służyć do:  
   
--   Przypisz identyfikatora GUID do paska narzędzi, który jest wyświetlany, gdy aktywowano poszczególnego okna.  
+-   Identyfikator GUID należy przypisać do paska narzędzi, który pojawia się po aktywowaniu określonego okna.  
   
--   Przypisz identyfikator GUID dostępności polecenia bez konieczności obciążenia, lub uruchom pakiet VSPackage.  
+-   Przypisz identyfikator GUID do sprawdzania dostępności polecenia bez konieczności ładowania lub uruchamiania pakietu VSPackage.  
   
--   Przypisz GUID wpływa na aktywne powiązania klucza.  
+-   Przypisz GUID wpływa na aktywne powiązanie klucza.  
   
--   Przypisz identyfikator GUID, aby włączyć funkcję rejestrowania makr.  
+-   Przypisz identyfikator GUID, aby włączyć rejestrowanie makra.  
   
--   Przypisz identyfikatora GUID, aby aktywować tryb debugowania lub aby przełączyć między projektowania i w trybie uruchamiania w edytorze.  
+-   Przypisz identyfikator GUID, aby uaktywnić tryb debugowania lub można przełączać się między projektowania a tryb wykonywania w edytorze.  
   
  składnik  
- Fragment oprogramowania, które można wprowadzić część funkcji aplikacji bez tej aplikacji o wszelkie istniejące informacje o implementacji oprogramowania. Komunikacja między składnikiem i aplikacji jest wyłącznie za pośrednictwem interfejsów styl OLE.  
+ Fragment oprogramowania, które mogą być wykonane część funkcji aplikacji bez tej aplikacji, mających wszelkie istniejące informacje na temat wdrażania oprogramowania. Komunikacja między składnikiem i aplikacji odbywa się wyłącznie za pośrednictwem interfejsów styl OLE.  
   
  Menedżer składników  
- Usługa `SOleComponentManager`, który udostępnia interfejs użytkownika z systemem innym niż koordynacji usługi składników najwyższego poziomu. `SOleComponentManager` Usługa implementuje `IOleComponentManager` interfejsu.  
+ Usługa `SOleComponentManager`, który zapewnia interfejs niezwiązanych z użytkownikiem koordynacji składników usług dla najwyższego poziomu. `SOleComponentManager` Usługi implementuje `IOleComponentManager` interfejsu.  
   
- Menedżer składników interfejsu użytkownika  
- Usługa `SOleComponentUIManager`, który udostępnia usługi koordynacji interfejsu użytkownika. `SOleComponentUIManager` Usługa implementuje `IOleComponentUIManager` i `IOleInPlaceComponentUIManager` interfejsów.  
+ Składnik interfejsu użytkownika Menedżera  
+ Usługa `SOleComponentUIManager`, zapewniającą usług koordynacji interfejsu użytkownika. `SOleComponentUIManager` Usługi implementuje `IOleComponentUIManager` i `IOleInPlaceComponentUIManager` interfejsów.  
   
- kontekst zbioru  
- `IVsUserContext` Object (obiekt COM) dołączona do składnika środowiska. Ten obiekt zawiera słowa kluczowe wyszukiwania, słów kluczowych F1 i atrybuty, które odnoszą się do składnika. Torebki kontekstu wskaż Ponadto wszelkie torebki kontekst podrzędny powiązanych z nimi.  
+ zbiór kontekstu  
+ `IVsUserContext` Obiektu (obiekt COM) dołączone do składnika środowiska. Ten obiekt zawiera wyszukiwania słów kluczowych, **F1** słów kluczowych i atrybuty, które odnoszą się do składnika. Zbiory kontekstu wskaż również wszelkie zbiory kontekst podrzędny, które są powiązane z nimi.  
   
- Dostawca kontekstu  
- Składnik IDE, który ma zbiór kontekst skojarzony z nim. Takie składniki obejmują okna narzędzia, Edytor lub projekt hierarchii.  
+ dostwcy kontekstu  
+ Składnik w IDE, do którego ma zbiór kontekstu skojarzone z nią. Takie składniki obejmują okna narzędzi, Edytor lub projekt hierarchii.  
   
  projektant  
- Interfejs programowania, który umożliwia użytkownikom modyfikowania elementów interfejsu użytkownika (formularze, przycisków i innych kontrolek).  
+ Interfejs programowania, który umożliwia użytkownikom zarządzanie elementów interfejsu użytkownika (formularze, przyciski i inne formanty).  
   
- Danych dokumentu  
- Obiekt COM, hermetyzując danych dokumentu w świecie przypadku separacji dokument/widok (na przykład w przypadku edytora tekstu, to buforu tekstu podstawowego we wszystkich widokach Edytor tekstu). Jeśli element EditorFactory nie dostarcza tego obiektu, IDE będzie produkcji, co w jej imieniu. Odpowiedzialność tego obiektu jest, aby zarządzać trwałości danych i semantykę udostępniania wielu widoków przez to samo `DocData`. Jeśli `DocData` obiekt obsługuje `IOleCommandTarget` interfejsu, zostanie uwzględniona w routing poleceń UIShell.  
+ DocData  
+ Obiekt COM, zawieranie danych bazowych dokumentu w świecie, w których separacji dokument/widok (na przykład w przypadku edytora tekstu, to będzie bufor tekstowy podstawowych wszystkich widoków edytora tekstu). Jeśli ten obiekt nie podany element EditorFactory, są produkowane IDE, jeden w jej imieniu. Odpowiedzialność za ten obiekt jest zarządzanie funkcji trwałości danych i udostępniania semantyki dla wielu widoków to samo `DocData`. Jeśli `DocData` obiekt obsługuje `IOleCommandTarget` interfejsu, jest on zawarty w routingu poleceń UIShell.  
   
  DocObject  
- Technologia używana do obsługi interfejsu użytkownika w ramce dostarczone przez hosta. W szczególności, określenie to odnosi się do żadnych osadzania, który obsługuje `IOleDocument` i interfejsy powiązane. Ta technologia ma wiele potencjalnych aplikacji, takich jak szczegóły implementacji COM dokumentów, okien narzędzi języka Visual Basic w wersji 5.0, projektantów ActiveX w Visual Basic 6.0 i tak dalej.  
+ Technologia używana do obsługi interfejsu użytkownika w ramce udostępniane przez hosta. Dokładniej mówiąc, określenie to odnosi się do dowolnej osadzania, który obsługuje `IOleDocument` i powiązanych interfejsów. Ta technologia ma wiele potencjalnych aplikacji, takich jak szczegółowo opisuje implementacja modelu COM, dokumentów, okien narzędzi w języku Visual Basic 5.0, ActiveX projektantów w Visual Basic 6.0 i tak dalej.  
   
  dokument  
- Ogólnie odnoszących się do całego dokumentu — zarówno `DocData` i `DocView`. Na przykład zawiera DocumentFrame `DocView`, zachowując jednak również odwołanie do `DocData` do obsługi trwałości.  
+ Umożliwia odwoływanie się ogólną do dokumentu jako całości — zarówno `DocData` i `DocView`. Na przykład zawiera DocumentFrame `DocView`, ale zachowuje także odwołania do `DocData` do obsługi trwałości.  
   
- Widok dokumentu  
- DocObject/Embedding/WindowPane, z którą użytkownik wchodzi w interakcję na wyświetlanie i manipulowanie odpowiadającego `DocData`. Należy pamiętać, że użytkownicy nie wykorzystują separacji dokument/widok, który jest częścią `DocObject` interfejsu projektu. Użytkownicy używać całego DocObject do działania jako widok zamiast bardziej abstrakcyjny (i mniej formalny) pojęcie danych, nazywane `DocData`. `DocView` obiekty zawsze są osadzone w obiekty ramki dokumentów (okien podrzędnych MDI) IDE.  
+ DocView  
+ DocObject/Embedding/nagład, z którą użytkownik wchodzi w interakcję na wyświetlanie i manipulowanie bazowego `DocData`. Użytkownicy nie korzystają z separacji dokument/widok, który jest częścią `DocObject` projekt interfejsu. Użytkownicy używać całej DocObject do działania jako widok zamiast używania notacji bardziej abstrakcyjnego (i mniej formalny) w danych bazowych, nazywany `DocData`. `DocView` obiekty zawsze są osadzane z obiektami ramki dokumentu (oknami podrzędnymi MDI) środowiska IDE.  
   
  DTE  
- `DTE` Obiektu (rozszerzalność narzędzi rozwoju) jest punktem dostępu najwyższy w modelu automatyzacji programu Visual Studio, dzięki czemu można programowo zautomatyzować i rozszerzania środowiska IDE.  
+ `DTE` Obiekt (rozszerzalność narzędzi rozwoju) jest punktem dostępu najważniejsze w modelu automatyzacji programu Visual Studio, dzięki czemu można programowo zautomatyzować i rozszerzyć środowisko IDE.  
   
  Dynamiczne okna Pomoc  
- Okna narzędzia, która jest zaimplementowana IDE i wyświetla listę tematów pomocy F1 lub słowo kluczowe wyszukiwania.  
+ Okna narzędzi, który jest implementowany przez środowisko IDE i wyświetla listę wyszukiwania słów kluczowych lub **F1** tematy Pomocy.  
   
  edytor  
- Kod (klasa CLSID), który implementuje `DocView`. Implementuje również `DocData` Jeśli separację widoku/danych jest obsługiwana.  
+ Kod (CLSID klasy), który implementuje `DocView`. Implementuje także `DocData` Jeśli rozdzielenie widoku i danych jest obsługiwana.  
   
  rozszerzenie  
- Funkcja, która modyfikuje dostosowuje i dodaje do środowiska IDE. Możesz utworzyć rozszerzeń przy użyciu modelu automatyzacji lub VSPackages.  
+ Funkcja, która modyfikuje, dostosowuje i dodaje do środowiska IDE. Możesz utworzyć rozszerzeń przy użyciu modelu automatyzacji lub pakietów VSPackage.  
   
  edytor zewnętrzny  
- Edytor, który nie jest specyficzne dla IDE, takich jak Microsoft Word. Został zarejestrowany za pomocą własnych mechanizmów, a można użyć poza IDE. Jeśli można ją osadzić tego edytora, pojawi się w obrębie okna w środowisku IDE. Jeśli nie można osadzić, tworzona jest osobnym oknie najwyższego poziomu.  
+ Edytor, który nie jest specyficzne dla środowiska IDE, takiego jak Microsoft Word. Ona został zarejestrowany za pomocą swoje własne mechanizmy i może służyć poza IDE. Jeśli ten edytor może być osadzony, pojawia się w obrębie okna w IDE. Jeśli nie można osadzić, tworzona jest osobnym oknie najwyższego poziomu.  
   
  hierarchia  
- Drzewo węzłów, każdy węzeł skojarzonej z zestawem właściwości.  
+ Drzewo węzłów, każdy węzeł skojarzone z zestawem właściwości.  
   
- niezależnie od składnika najwyższego poziomu  
- Składnik, który korzysta z niemodalnego okna najwyższego poziomu może efektywnie działać jako okno aplikacji autonomicznej, ale jest zaimplementowany jako obiekt w procesie. W związku z tym niezależne składnik najwyższego poziomu musi koordynować modalność i usługi Pętla wiadomości z IDE. Obiekty w procesie nie mają własnych pętli komunikatów.  
+ niezależnie od najwyższego poziomu składnika  
+ Składnik, który używa jest niemodalne okno dialogowe najwyższego poziomu może efektywnie działać jako okno aplikacji autonomicznej, ale jest implementowany jako obiekt w procesie. W związku z tym niezależne składnik najwyższego poziomu skoordynować modalności i usługi pętli komunikatów w środowisku IDE. W trakcie obiekty nie mają własne pętli komunikatów.  
   
- Dostawca informacji o  
- Dostawca informacji jest moduł, który można wyszukać słowa kluczowe i zwraca listę tematów, w formie `IVsUserContextItem` obiektów. Aby zapewnić elementy słów kluczowych F1 i wyszukiwania dla dostawcy informacji, należy zarejestrować skompilowanego pliku pomocy (. HxS) w systemie. Tematy pomocy w tych plikach są używane do zawierają listę tematów wyświetlane w oknie Pomoc dynamiczna i wyświetlany, czy użytkownik naciśnie klawisz F1.  
+ informacje o dostawcy  
+ Dostawca informacji jest moduł, który można wyszukiwać słowa kluczowe i zwrócić listę tematów, w postaci `IVsUserContextItem` obiektów. Aby zapewnić **F1** i wyszukiwania słów kluczowych elementów dla dostawcy informacji, zarejestruj skompilowanego pliku pomocy (*. HxS*) w systemie. Tematy pomocy, w tych plikach zawierają listę tematów, wyświetlana w oknie Pomoc dynamiczna a czy użytkownik naciśnie **F1**.  
   
  składnik w miejscu  
- Obiekt pakiet VSPackage, który implementuje `IOleInPlaceComponent` interfejsu do zarządzania okno będzie zawarty w okno dokumentu własnością IDE. Składniki w miejscu nie uczestniczą w standardowe OLE-scalania menu; Zamiast tego one zintegrować ich elementy interfejsu użytkownika IDE.  
+ Obiekt pakietu VSPackage, który implementuje `IOleInPlaceComponent` interfejsu do zarządzania oknem, które wizualnie znajduje się w oknie dokumentu należące do środowiska IDE. Składniki w miejscu nie są używane w standardowych OLE-scalanie menu; Zamiast tego mogą zintegrować ich elementy interfejsu użytkownika IDE.  
   
  Istnieją dwa typy składników w miejscu: hardwired w miejscu składników i formantów składników.  
   
- Składniki w miejscu Hardwired mają menu, pasków narzędzi i poleceń, które są ściśle zintegrowane interfejs użytkownika IDE stanowiący, jeśli zostały one wbudowana bezpośrednio w IDE.  
+ Składniki w miejscu Hardwired ma menu, paski narzędzi i poleceń, które są ściśle zintegrowane interfejsu użytkownika IDE, stanowiący, jeśli zostały utworzone bezpośrednio w środowisku IDE.  
   
- Formanty składników nie ma żadnych własne elementy interfejsu użytkownika, zintegrowane środowisko IDE; Zamiast tego użyć ich menu, poleceń i paski narzędzi programu IDE. Na przykład polecenie Bold może posłużyć do pogrubienie zaznaczonego wyrazu w formancie tekstu sformatowanego osadzone w formularzu. Jednak formantów składników mogą żądać, że dynamicznie zainstalowanych składników interfejsu użytkownika elementy mają być wyświetlane.  
+ Formanty składników nie ma swoje własne elementy interfejsu użytkownika, zintegrowane środowisko IDE; Zamiast tego użyć ich menu, poleceń i paski narzędzi IDE. Na przykład pogrubienie polecenie może służyć do pogrubienie zaznaczonego wyrazu w ramach kontrolki tekstu sformatowanego osadzone w formularzu. Jednak składnik kontrolki mogą poprosić o wyświetlane dynamicznie zainstalowanych elementów interfejsu użytkownika specyficznych dla składnika.  
   
- Usługa języka  
- Zestaw obiektów, który umożliwia deweloperom pakiet VSPackage implementowania funkcji edytora kodu języka komputera, takiego jak tekst oznaczenie i oznaczanie kolorami.  
+ Usługa językowa  
+ Zestaw obiektów, które umożliwia deweloperom pakietu VSPackage we wdrażaniu funkcji komputera edytory kodu języka, takich jak tekst znakowania i kolorowanie.  
   
  Projekt różne pliki  
- Projekt używany do domu otwartych plików, które nie są w żadnym projekcie. Na liście elementów w tym projekcie nie jest trwały.  
+ Projekt używany do domu otwartych plików, które nie znajdują się w każdym projekcie. Nie była utrzymywana, na liście elementów w tym projekcie.  
   
  projekt  
- Projekty składają się obiekty w hierarchii, lub obiektów COM, które implementują `IVsHierarchy` interfejsu.  
+ Projekty są tworzone przez obiekty w hierarchii, lub obiektów COM, które implementują `IVsHierarchy` interfejsu.  
   
  specyficzne dla projektu projektancie lub edytorze  
- Projektant, której nie można użyć niezależnie od typu projektu. Wszystkie projektantów specyficznego dla projektu należy wprowadzić swoje informacje fabryki edytora w rejestrze. IDE następnie można utworzyć wystąpienia projektanta przy każdym otwarciu określonego typu plików w danym projekcie.  
+ Projektant, którego nie można użyć niezależnie od typu projektu. Wszystkich projektantów specyficzne dla projektu, należy wprowadzić swoje informacje fabryka edytora w rejestrze. IDE następnie można utworzyć wystąpienie projektanta przy każdym otwarciu określonego typu pliku w określonym projekcie.  
   
  Okno typu projektu  
- Okno stale śledzi hierarchii aktualnie aktywnego projektu i elementu z kontekst zaznaczenia globalnych. Użyj typu projektu windows `SVsTrackSelectionEx` Usługa alertów IDE zmian oraz wyświetlanie opinii dla użytkownika. Eksplorator rozwiązań jest to przykład okna typu projektu.  
+ Okno, które stale śledzi hierarchii aktualnie aktywnego projektu i elementu z kontekstu globalnego zaznaczenia. Użyj typu projektu windows `SVsTrackSelectionEx` usługę do wyzwalania alertu, zmian środowiska IDE i wyświetlić opinie do użytkownika. Eksplorator rozwiązań znajduje się przykład okna typu projektu.  
   
  Okno właściwości  
- Wcześniej przeglądarce właściwości.  
+ Wcześniej przeglądarkę właściwości.  
   
  Projekty oparte na odwołanie  
- Projekt, który nie wymaga plików dla projektu w tym samym katalogu. Zamiast tego odwołania do plików z innych katalogów niepowiązanych są przechowywane i obsługiwane przez sam projekt.  
+ Projekt, który nie wymaga, aby pliki w projekcie, w tym samym katalogu. Zamiast tego odwołania do plików z innych katalogów niepowiązanych są przechowywane i obsługiwane przez samym projekcie.  
   
- uruchomionej tabeli dokumentu  
- Struktury wewnętrznej, za pomocą którego IDE przechowuje listę wszystkich aktualnie otwarte dokumenty. Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy dokumenty są obecnie edytowany. Dokument jest dowolnego elementu, który jest zapisywana, w tym procedur składowanych otwarty w edytorze, pliki w projekcie lub głównego pliku projektu (na przykład plik *.vcproj).  
+ Uruchamianie tabeli dokumentu  
+ Struktury wewnętrznej za pomocą którego IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty. Lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy dokumenty są obecnie edytowane. Dokument jest dowolny element, który jest zapisywana, w tym procedury składowane otwartych w edytorze, pliki w projekcie lub w pliku projektu głównego (na przykład plik *.vcproj).  
   
  Kontekst zaznaczenia  
- Dane, które jest częścią szczegóły każdego okna w środowisku IDE i służy do śledzenia aktywnych zaznaczeń. Kontekst zaznaczenia obejmuje:  
+ Dane, które jest częścią szczegóły każdego okna w IDE i jest używane do śledzenia aktywnego zaznaczenia. Kontekst zaznaczenia składa się z:  
   
 -   Wskaźnik do `IVsHierarchy` interfejsu hierarchii projektu  
   
@@ -144,46 +144,46 @@ Ten słownik zawiera definicje terminów, które są używane w [!INCLUDE[vsipsd
 -   Tablica wartości elementu.  
   
  usługa  
- Kontrakt dla zestawu interfejsów modelu COM, które znajdują się w jednym obiekcie COM. Podczas tworzenia usługi, który jest identyfikowany przez identyfikator GUID, możesz zdefiniować zestaw interfejsów modelu COM, wykonujące usługi. Obiekty COM za pomocą usług do komunikowania się ze sobą.  
+ Kontrakt zestaw interfejsów COM, który znajduje się w jednym obiekcie COM. Podczas tworzenia usługi, który jest identyfikowany przez identyfikator GUID, należy zdefiniować zestaw interfejsów COM, który zajmuje się usługi. Obiekty COM za pomocą usług do komunikowania się ze sobą.  
   
- Rozwiązania  
- Grupa powiązane projekty, z których użytkownik pracuje.  
+ Rozwiązanie  
+ Grupa powiązanych projektów, z którymi użytkownik pracuje.  
   
  Standardowa projektanta  
- Projektanta, który można niezależnie od typu projektu. Wszystkie standardowe projektantów wprowadzić informacje o fabryki edytora w rejestrze. IDE następnie można utworzyć wystąpienia projektanta przy każdym otwarciu plików z określonym rozszerzeniem. Dane muszą zostać zachowane w pliku.  
+ Projektant, który może służyć jako niezależne od typu projektu. Wszystkie standardowe projektantów należy wprowadzić swoje informacje fabryka edytora w rejestrze. IDE następnie można utworzyć wystąpienie projektanta przy każdym otwarciu plików z określonym rozszerzeniem. Dane muszą zostać zachowane w pliku.  
   
- standardowego edytora  
- Edytor, który może służyć jako niezależne od dowolnego typu określonego projektu. Takie edytory ma EditorFactories zarejestrowany w rejestrze. Dzięki temu IDE do lokalizowania i wywołać edytora.  
+ Edytor standardowy  
+ Edytor, który może służyć jako niezależne od dowolnego określonego typu projektu. Takie edytorów EditorFactories zarejestrowany w rejestrze. Dzięki temu środowisko IDE do lokalizowania i wywoływanie edytora.  
   
- Standardowy Edytor systemu operacyjnego  
- Osadzanie nie jest Visual Studio określone. Jest on zarejestrowany za pomocą dobrze znanych klucze Win32 (na przykład Eksploratora Win32 potrafi do wywołania). Jeśli można ją osadzić takie edytora, Edytor nadal będą uwzględniane w jego miejsce w IDE. W przeciwnym razie dla takich edytory tworzony jest osobnym oknie najwyższego poziomu.  
+ Edytor standardowy system operacyjny  
+ Osadzanie nie dotyczące programu Visual Studio. Jest ona zarejestrowana przy użyciu dobrze znanych kluczy systemu Win32 (na przykład Eksploratora Win32 wie, jak wywołać). Jeśli takie edytora mogą być osadzone, Edytor wciąż pokazuje w jego miejsce w środowisku IDE. W przeciwnym razie oddzielne okno najwyższego poziomu jest tworzony dla takich edytorów.  
   
- kontekst podrzędny w zbiorze  
- `IVsUserContext` Obiekt połączony zbiór kontekstu. Ten obiekt zawiera słowa kluczowe wyszukiwania, słów kluczowych F1 i atrybuty do wyboru w składniku IDE. Kontekst podrzędny przykładami polecenie w oknie narzędzi lub słów kluczowych w edytorze.  
+ kontekst podrzędny zbioru  
+ `IVsUserContext` Obiekt powiązany pakiet z kontekstu. Obiekt przechowuje wyszukiwania słów kluczowych, **F1** słów kluczowych i atrybuty do wyboru w składniku IDE. Kontekst podrzędny przykładami polecenia w oknie narzędzia lub słowa kluczowego w edytorze.  
   
  Lista zadań  
- Okna narzędzia, która jest zaimplementowana IDE i wyświetla listę aktywnych zadań.  
+ Okna narzędzi, który jest implementowany przez środowisko IDE i wyświetla listę aktywnych zadań.  
   
  Bufor tekstowy  
- Nazwa pospolita dla obiekt `VSTextBuffer`.  
+ Nazwa pospolita obiektu `VSTextBuffer`.  
   
- Wyświetlanie tekstu  
- Nazwa pospolita dla obiekt `VSTextView`.  
+ Widok tekstu  
+ Nazwa pospolita obiektu `VSTextView`.  
   
- Narzędzie składnik najwyższego poziomu  
- Składnik, który działa jako okna podręcznego niemodalne, ściśle koordynowanie przy użyciu interfejsu użytkownika IDE. Podobnie jak niezależne składniki najwyższego poziomu składników najwyższego poziomu narzędzia muszą również koordynować modalność i usługi Pętla wiadomości z IDE.  
+ Narzędzie najwyższego poziomu składnika  
+ Składnik, który działa jako okno podręczne niemodalne, ściśle koordynowanie przy użyciu interfejsu użytkownika IDE. Podobnie jak niezależnych składniki najwyższego poziomu składników najwyższego poziomu narzędzia również skoordynować modalności i usługi pętli komunikatów w środowisku IDE.  
   
  składnik najwyższego poziomu  
- Obiekt pakiet VSPackage, który zarządza niemodalne okno najwyższego poziomu zamiast obszaru klienckiego okna IDE. Składniki najwyższego poziomu wdrożenia `IOleComponent` interfejsu, aby móc korzystać z usługi Pętla wiadomości, takich jak dostęp do czasu bezczynności.  
+ Obiekt pakietu VSPackage, który zarządza niemodalne okno zamiast obszaru klienckiego okna środowiska IDE. Najwyższego poziomu składniki implementują `IOleComponent` interfejsu, aby móc korzystać z usługi pętli komunikatów, takich jak dostęp do czasu bezczynności.  
   
  Aktywne interfejsu użytkownika  
- Obiekt pakiet VSPackage, który jest widoczny i aktualnie ma fokus.  
+ Obiekt pakietu VSPackage, który jest widoczny i aktualnie jest ustawiony fokus.  
   
- Hierarchia interfejsu użytkownika  
- Obiekt COM, który implementuje `IVsUIHierarchy` interfejsu, aby umożliwić wyświetlanie hierarchii. Implementuje oknie hierarchii interfejsu użytkownika `ISelectionContainer` interfejsu zaktualizować okna właściwości; innych okien typu projektu można użyć tej implementacji, w razie potrzeby.  
+ Hierarchii interfejsu użytkownika  
+ Obiekt COM, który implementuje `IVsUIHierarchy` interfejs umożliwia wyświetlanie hierarchii. Implementuje okno hierarchii interfejsu użytkownika `ISelectionContainer` współpracować w celu aktualizacji w oknie właściwości; innych typów projektów systemu windows można użyć tej implementacji, w razie potrzeby.  
   
  VSCT  
- Tabela polecenia programu Visual Studio. Plik vsct zawiera informacje o zachowania elementów menu, pasków narzędzi i poleceń w formacie XML i umieszczania.  
+ Tabela poleceń programu Visual Studio. Pliku vsct zawiera informacje na temat umieszczania i zachowań, menu, paski narzędzi i poleceń w formacie XML.  
   
- Pakiet VSPackage  
- Instalowalnych część oprogramowania, rozszerzający środowiska IDE programu Visual Studio, podając przynajmniej jednej z następujących czynności: interfejs użytkownika, usług, typów projektów lub Edytor/projektanta. Pakiet VSPackage składa się z obiektu COM, który implementuje `IVsPackage` interfejsu i co najmniej jeden innych obiektów COM, które implementuje inne interfejsy do obsługi wybór i innych funkcji. Ponadto pakiet VSPackage ma wymagania dotyczące określonej rejestracji.
+ Pakietu VSPackage  
+ Do zainstalowania część oprogramowania, które rozszerza środowiska IDE programu Visual Studio, przyczyniając się co najmniej jeden z następujących elementów: interfejs użytkownika, usługi, typy projektów lub Projektant/Edytor. Pakietu VSPackage składa się z obiektu COM, który implementuje `IVsPackage` interfejsu i jeden lub więcej innych obiektów COM, które implementują inne interfejsy do obsługi zaznaczenia i inne funkcje. Ponadto pakietu VSPackage ma wymagania dotyczące określonej rejestracji.

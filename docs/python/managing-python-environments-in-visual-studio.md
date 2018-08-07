@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341872"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586583"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
 
@@ -46,7 +46,7 @@ Globalne środowiska są dostępne dla wszystkich projektów na tym komputerze. 
 
 Pakiety zainstalowane w środowisku globalnym nie są dostępne dla wszystkich projektów, które używają tego środowiska, gdy dwa projekty wymagają niezgodne pakiety lub różne wersje tego samego pakietu mogą wystąpić konflikty. Środowiska wirtualne uniknąć takich konfliktów przy użyciu interpretera i biblioteki standardowej w środowisku globalnym, ale utrzymywanie własne magazynów pakietu w folderach izolowanym.
 
-W programie Visual Studio można utworzyć środowisko wirtualne dla określonego projektu, który jest przechowywany w podfolderze w projekcie. Program Visual Studio zawiera polecenie, aby wygenerować *requirements.txt* pliku ze środowiska wirtualnego, dzięki czemu można łatwo odtworzyć środowiska na innych komputerach. Aby uzyskać więcej informacji, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+W programie Visual Studio można utworzyć środowisko wirtualne dla określonego projektu, który jest przechowywany w podfolderze w projekcie. Program Visual Studio zawiera polecenie, aby wygenerować *requirements.txt* pliku ze środowiska wirtualnego, dzięki czemu można łatwo odtworzyć środowiska na innych komputerach. Aby uzyskać więcej informacji, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Środowisk Conda
 

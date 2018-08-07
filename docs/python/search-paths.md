@@ -1,6 +1,6 @@
 ---
-title: Sposób stosowania ścieżki wyszukiwania Python
-description: Przegląd używaniu Python ścieżki wyszukiwania w środowiskach i projektów programu Visual Studio.
+title: Sposób stosowania ścieżki wyszukiwania języka Python
+description: Omówienie, jak program Visual Studio używa języka Python ścieżki wyszukiwania, zarówno w środowiskach, jak i w projektach.
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,34 +11,34 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118242"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586420"
 ---
-# <a name="how-visual-studio-uses-python-search-paths"></a>Jak Visual Studio używa języka Python, ścieżki wyszukiwania
+# <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżki wyszukiwania języka Python
 
-Typowy Usage Python `PYTHONPATH` zmiennej środowiskowej (lub `IRONPYTHONPATH`, itd.) zapewnia domyślnej ścieżki wyszukiwania plików modułu. Oznacza to, że jeśli używasz `from <name> import...` lub `import <name>` instrukcji, Python wyszukuje następujące lokalizacje w kolejności zgodnej nazwie:
+Za pomocą języka Python do typowy `PYTHONPATH` zmienna środowiskowa (lub `IRONPYTHONPATH`, itp.) zapewnia domyślna ścieżka wyszukiwania plików modułu. Oznacza to, kiedy używasz `from <name> import...` lub `import <name>` instrukcji, Python przeszukuje następujące lokalizacje o takiej samej nazwie:
 
 1. Wbudowane moduły języka Python.
-1. Folder zawierający kod języka Python, który jest uruchomiony.
-1. "Moduł ścieżki wyszukiwania" jako zdefiniowanej przez zmienną środowiskową zastosowania. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmiennych środowiskowych](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
+1. Folder zawierający kod języka Python działa.
+1. "Moduł ścieżki wyszukiwania" jako zdefiniowanej przez zmienną środowiskową dotyczy. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmienne środowiskowe](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
 
-Visual Studio ignoruje zmiennej środowiskowej ścieżki wyszukiwania, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* ustawiono dla całego systemu i w związku z tym zgłasza niektóre kwestie, które nie mogą być odbierane automatycznie: moduły do którego istnieje odwołanie, przeznaczone dla języka Python 2.7 lub 3,6 Python? Są one będą zastąpienie modułów standardowa biblioteka? Zna dewelopera tego zachowania, czy jest próba złośliwego przejęcie kontroli?
+Program Visual Studio ignoruje wyszukiwania zmiennej środowiskowej path, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* jest ustawiona dla całego systemu i zgłasza w związku z tym niektóre kwestie, które nie odpowiedziano automatycznie: to moduły odwołania, przeznaczone dla środowiska Python 2.7 lub Python 3.6? Są one będą zastąpienia modułów biblioteki standardowej? Deweloper zdaje sobie sprawę z tego zachowania, czy jest próba złośliwego przejmującego?
 
-Program Visual Studio udostępnia w związku z tym określenie ścieżki wyszukiwania bezpośrednio w środowiskach i projektów. Kod, który uruchamiania lub debugowania w programie Visual Studio odbiera ścieżki wyszukiwania w wartości `PYTHONPATH` (i inne zmienne równoważne). Dodanie ścieżki wyszukiwania, Visual Studio bada bibliotek w tych lokalizacjach i kompilacji IntelliSense baz danych w ramach je w razie potrzeby (Visual Studio 2017 wersji 15.5 i starszych; konstruowanie bazy danych może potrwać pewien czas w zależności od liczby bibliotek).
+Program Visual Studio udostępnia związku z tym oznacza, że do określania ścieżek wyszukiwania bezpośrednio w środowiskach i projektów. Kod, który uruchamiania lub debugowania w programie Visual Studio odbiera ścieżki wyszukiwania w wartości `PYTHONPATH` (i inne zmienne równoważne). Dodanie ścieżki wyszukiwania, Visual Studio sprawdza biblioteki w tych lokalizacjach i tworzy bazy danych IntelliSense dla ich w razie (Visual Studio 2017 w wersji 15.5 i starszych; tworzenia bazy danych może zająć trochę czasu w zależności od liczby bibliotek).
 
-Aby dodać ścieżkę wyszukiwania, kliknij prawym przyciskiem myszy **ścieżki wyszukiwania** elementu w Eksploratorze rozwiązań wybierz **Dodaj Folder do ścieżki wyszukiwania...** i wybierz folder do dołączenia. Ta ścieżka jest używana w każdym środowisku skojarzony z projektem. (Mogą zostać wyświetlone błędy Jeśli środowisko jest oparta na Python 3 i użytkownik podejmie próbę dodania ścieżki wyszukiwania w modułach Python 2.7.)
+Aby dodać ścieżkę wyszukiwania, kliknij prawym przyciskiem myszy **ścieżki wyszukiwania** pozycja **Eksploratora rozwiązań**, wybierz opcję **Dodaj Folder do ścieżki wyszukiwania**i wybierz folder, aby uwzględnić. Ta ścieżka jest używana dla dowolnego środowiska skojarzony z projektem. (Może Zobacz błędy, jeśli środowisko jest oparty na środowisku Python 3, a następnie spróbujesz dodać ścieżkę wyszukiwania do modułów języka Python 2.7.)
 
-Pliki z `.zip` lub `.egg` rozszerzenia również mogą być dodawane jako ścieżki wyszukiwania, wybierając **dodać archiwum Zip do ścieżki wyszukiwania...** . Podobnie jak w przypadku folderów, zawartość te pliki są skanowane i udostępnione IntelliSense.
+Pliki z *zip* lub *.egg* rozszerzenia mogą być również dodawane jako ścieżki wyszukiwania, wybierając **Dodaj archiwum Zip do ścieżki wyszukiwania**. Podobnie jak w przypadku folderów, zawartość tych plików są skanowane i udostępniane funkcji IntelliSense.
 
-Jeśli zawartość nie należy zmieniać często są regularnie przy użyciu tej samej ścieżki wyszukiwania, może być bardziej wydajne, aby zainstalować go do folderu pakietów lokacji. Ścieżki wyszukiwania następnie są analizowane i przechowywane w bazie danych IntelliSense, jest zawsze być skojarzony z danego środowiska i nie wymaga ścieżkę wyszukiwania do dodania do każdego projektu.
+Jeśli zawartość nie zmienia się często regularnie używasz tej samej ścieżki wyszukiwania, może być bardziej efektywne i zainstaluj go w folderze pakietów lokacji. Ścieżka wyszukiwania są następnie analizowane i przechowywane w bazie danych technologii IntelliSense, zawsze jest skojarzony ze środowiskiem zamierzone i nie wymaga ścieżki wyszukiwania, który ma zostać dodany do każdego projektu.
 
-## <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz także
 
-- [Zarządzanie środowiska Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
-- [Używanie pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
-- [Odwołanie do okna środowiska Python](python-environments-window-tab-reference.md)
+- [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
+- [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

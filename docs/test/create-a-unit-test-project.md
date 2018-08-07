@@ -1,5 +1,5 @@
 ---
-title: Tworzenie projektu testu jednostki w programie Visual Studio
+title: Tworzenie projektu testu jednostkowego w programie Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,49 +9,50 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235053"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586863"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
-Testy jednostkowe często duplikatów struktury kodu w ramach testu. Na przykład jednostkowy projekt testowy zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu jako kodzie produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek testowanie projektów w rozwiązaniu.
+Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład projekt testu jednostkowego zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu, jak kod w środowisku produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek projekty testowe w rozwiązaniu.
 
 > [!NOTE]
-> Lokalizacja jednostki testów dla kodu natywnego i struktury projektu testowego może być inna niż struktury, które jest opisane w tym temacie. Aby uzyskać więcej informacji, zobacz [dla C/C++ pozwala pisać testy jednostkowe](writing-unit-tests-for-c-cpp.md).
+> Lokalizacja jednostek testów dla kodu natywnego i struktura projektu testowego może być inna niż strukturę, która jest opisane w tym temacie. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-create-a-unit-test-project"></a>Aby utworzyć jednostkowy projekt testowy:
+## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych:
 
-1.  Na **pliku** menu, wybierz **nowy** , a następnie wybierz **projektu** (klawiatury **Ctrl**+**Shift** + **N**).
+1.  Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura **Ctrl**+**Shift** + **N**).
 
-2.  W **nowy projekt** okna dialogowego rozwiń **zainstalowana** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
+2.  W **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
 
-3.  Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz **projektu testu jednostki** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki struktury testowej, która ma być używany. Aby przetestować projekt kont w naszym przykładzie, czy nazwa projektu **AccountsTests**.
+3.  Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować projekt kont w naszym przykładzie, czy nazwa projektu **AccountsTests**.
 
-4.  W jednostkowy projekt testowy Dodaj odwołanie do kodu w ramach testu.  Poniżej przedstawiono sposób utworzyć odwołanie do projektu kodu, w tym samym rozwiązaniu:
+4.  W projekcie testu jednostki Dodaj odwołanie do testowanego kodu.  Oto jak utworzyć odwołanie do projektu kodu w tym samym rozwiązaniu:
 
-    1.  Wybierz projekt **Eksploratora rozwiązań**.
+    1.  Wybierz projekt w **Eksploratora rozwiązań**.
 
     2.  Na **projektu** menu, wybierz **Dodaj odwołanie**.
 
-    3.  W **Menedżera odwołań** po otwarciu okna dialogowego **rozwiązania** węzeł i wybierz polecenie **projekty**. Sprawdź nazwę projektu kodu i zamknąć okno dialogowe.
+    3.  W **Menadżer odwołań** po otwarciu okna dialogowego **rozwiązania** węzeł i wybierz polecenie **projektów**. Sprawdź nazwę projektu kodu, a następnie zamknij okno dialogowe.
 
-5.  Jeśli kod, który ma zostać przetestowana, jest w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) informacje na temat dodawania odwołania.
+5.  Jeśli kod, który ma zostać przetestowana, jest w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) informacje dotyczące dodawania odwołania.
 
 ## <a name="next-steps"></a>Następne kroki
- **Pisanie testów jednostkowych**
 
- Zobacz jedną z następujących sekcji:
+ Zobacz jeden z następujących sekcji:
 
--   [Kod testu jednostkowego](../test/unit-test-your-code.md)
+**Pisanie testów jednostkowych**
 
--   [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)
 
--   [Za pomocą architektury MSTest w testy jednostkowe](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Uruchamianie testów jednostkowych**
+- [Użyj struktury MSTest w testach jednostkowych](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Uruchamianie testów jednostkowych**
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
