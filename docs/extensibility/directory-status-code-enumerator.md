@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126087"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638469"
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
-`SccDirStatus` Modułu wyliczającego zawiera nazwanych wartości stałej, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używany przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API dodatku typu Plug-in kontroli źródła.  
+`SccDirStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używane przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API wtyczki kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,6 +48,6 @@ enum SccDirStatus {
  SCC_DIRSTATUS_EMPTYPROJ  
  Projekt odpowiadający ten katalog jest pusty.  
   
-## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

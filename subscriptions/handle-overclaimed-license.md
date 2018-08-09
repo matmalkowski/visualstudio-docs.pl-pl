@@ -9,12 +9,12 @@ description: Dowiedz się, jak Administratorzy mogą rozwiązać nadmiernej licz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae5ed6a4d459f3131250aed89ba0aef88da1ef7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 308ef6d310d87340c18b4f2da1e118c6859ec89e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36325294"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636730"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Obsługa "nadmiernej liczby zgłoszonych" subskrypcji
 
@@ -22,7 +22,9 @@ Czasami zamówienia są zmieniane po subskrybentów zostały dodane, które mog�
 
 > [!NOTE] 
 > Overclaimed scenariusze nie są dozwolone w programach licencjonowania Open.  Ponadto inne programy mogą wyświetlać te informacje w portalu inaczej. 
-![Powiadomienie o nadmiernej liczby zgłoszonych subskrypcji](_img\over-claimed\over-claimed-alert.png)
+
+> [!div class="mx-imgBorder"]
+> ![Powiadomienie o nadmiernej liczby zgłoszonych subskrypcji](_img\over-claimed\over-claimed-alert.png)
 
 
 1.  Aby rozwiązać nadmiernej liczby zgłoszonych licencji, kliknij przycisk tekst alertu. Spowoduje to wyświetlenie listy filtrowanej subskrybentów, które są przypisane do poziomu subskrypcji i datę ważności, która jest nadmiernej liczby zgłoszonych. 

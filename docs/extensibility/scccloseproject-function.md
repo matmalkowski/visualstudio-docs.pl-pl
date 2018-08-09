@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f977c1241408f5e33d31a63262abb5ee24670e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145119"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636028"
 ---
 # <a name="scccloseproject-function"></a>Funkcja SccCloseProject
-Ta funkcja powoduje zamknięcie projektu, oznaczenie koniec określonej sesji.  
+Ta funkcja powoduje zamknięcie projektu oznaczenia końca określonej sesji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,24 +33,24 @@ SCCRTN SccCloseProject (
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pvContext  
- Struktura kontekstu wtyczkę kontroli źródła.  
+ Struktura kontekście wtyczki kontroli źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Projekt został zamknięty pomyślnie.|  
-|SCC_E_PROJNOTOPEN|Żaden projekt nie jest obecnie otwarty.|  
+|SCC_OK|Projekt został pomyślnie zamknięty.|  
+|SCC_E_PROJNOTOPEN|Projekt nie jest obecnie otwarty.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|  
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- [SccOpenProject](../extensibility/sccopenproject-function.md) zawsze jest wywoływana przed tej funkcji. Wywołanie tej funkcji następuje następnie wywołania `SccOpenProject` funkcji lub [SccUninitialize](../extensibility/sccuninitialize-function.md), która całkowicie kończy połączenie z systemu kontroli źródła.  
+ [SccOpenProject](../extensibility/sccopenproject-function.md) zawsze jest wywoływany przed tej funkcji. Wywołanie tej funkcji po niej wywołania `SccOpenProject` funkcji lub [SccUninitialize](../extensibility/sccuninitialize-function.md), która całkowicie zakończy połączenie do systemu kontroli źródła.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Implementowanie znaczników błąd | Dokumentacja firmy Microsoft'
+title: 'Porady: Implementowanie znaczniki błędów | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,51 +13,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1360f88dba797f96af766f65c9ee41abd6fc808
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 75c6d92ae1cb5b71535d7f9aa4c9f2731f81e6ce
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127859"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640007"
 ---
-# <a name="how-to-implement-error-markers"></a>Porady: Implementowanie znaczników błąd
-Znaczniki błędów (lub czerwone faliste podkreślenie) są najbardziej trudne do zaimplementowania dostosowań edytora tekstu. Jednak korzyści, które umożliwiają użytkownikom VSPackage może znacznie ważniejsze niż koszt, aby zapewnić użytkownikom. Znaczniki błędów pisowni zaznaczenia tekstu, który z analizatora języka uzna niepoprawne o dowolnym kształcie lub faliste wiersz czerwony. Ten wskaźnik pomaga programistów, wyświetlając wizualnie niepoprawny kod.  
+# <a name="how-to-implement-error-markers"></a>Porady: Implementowanie znaczniki błędów
+Znaczniki błędów (lub czerwone faliste podkreślenia) są najtrudniejsze dostosowania edytora tekstu do zaimplementowania. Jednak korzyści, które zapewniają użytkownikom usługi pakietu VSPackage może znacznie przeważają nad koszt zapewnić im. Znaczniki błędów kliknięcia zaznacz tekst, który Twoja analizatora języka jeśli uzna, że nieprawidłowe z czerwona linia falista lub faliste. Ten wskaźnik pomaga programistom wizualnie, wyświetlając nieprawidłowy kod.  
   
- Użycie znaczników tekstu do zaimplementowania czerwone faliste podkreślenie. Zgodnie z zasadą usługi języka Dodaj czerwone faliste podkreślenie do buforu tekstu jako przebiegu tła, w czasie bezczynności lub w wątku w tle.  
+ Korzystanie ze znaczników tekstu do zaimplementowania czerwone faliste podkreślenia. Zgodnie z zasadą usług językowych Dodaj czerwone faliste podkreślenia w buforze tekstu jako tło — dostęp próbny na czas bezczynności, po lub w wątku w tle.  
   
-### <a name="to-implement-the-red-wavy-underline-feature"></a>Aby zaimplementować funkcję gramatyczne  
+## <a name="to-implement-the-red-wavy-underline-feature"></a>Aby zaimplementować funkcję czerwoną, falistą linią  
   
-1.  Zaznacz tekst, w którym mają być gramatyczne.  
+1.  Zaznacz tekst, w którym chcesz umieścić czerwoną, falistą linią.  
   
-2.  Utwórz znacznik typu `MARKER_CODESENSE_ERROR`. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md).  
+2.  Utworzyć znacznik o typie `MARKER_CODESENSE_ERROR`. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Następnie należy przekazać w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> wskaźnika interfejsu.  
+3.  Następnie należy przekazać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> wskaźnika interfejsu.  
   
- Ten proces umożliwia również tworzenie tekst porady lub menu kontekstowego specjalne za pośrednictwem danej znacznika. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md).  
+ Ten proces umożliwia również tworzenie tekst porady lub menu kontekstowego specjalne za pośrednictwem danego znacznika. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md).  
   
- Następujące obiekty są wymagane, przed wyświetleniem błędu znaczników.  
+ Następujące obiekty są wymagane, przed wyświetleniem znaczniki błędów.  
   
 -   Analizator.  
   
--   Dostawcy zadań (to znaczy, że implementacja interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) który przechowuje rekord zmian w wierszu informacji w celu identyfikowania wiersze, które mają być ponownie przeanalizowane.  
+-   Dostawca zadań (oznacza to, że implementacja interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) który przechowuje rekord zmiany w informacjach o wiersz w celu identyfikowania wiersze, które mają być ponownie przeanalizowany.  
   
--   Filtr widoku tekstu, który przechwytuje karetkę zdarzenia zmian z widoku przy użyciu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) metody.  
+-   Filtr widoku tekstu, który przechwytuje karetki zdarzenia zmian z widoku przy użyciu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) metody.  
   
- Analizator, dostawcy zadań i filtr Podaj dokonanie możliwe znaczników błąd infrastruktury. W poniższych krokach przedstawiono proces wyświetlania błędów znaczników.  
+ Analizator, dostawca zadań i filtr zapewniają infrastrukturę niezbędną do umożliwienia znaczniki błędów. W poniższych krokach przedstawiono proces wyświetlania znaczniki błędów.  
   
-1.  Widok jest filtrowany filtr uzyskuje wskaźnik do zadania skojarzonego z tym widoku danych.  
+1.  W widoku, który jest filtrowana filtr uzyskuje wskaźnik do zadania skojarzonego z danymi tego widoku.  
   
     > [!NOTE]
-    >  Można użyć tego samego filtru polecenia, dla porady — metoda, uzupełniania instrukcji, znaczniki błędów i tak dalej.  
+    >  Można użyć tego samego filtru polecenia dla metody porady, uzupełnianie składni, znaczniki błędów i tak dalej.  
   
-2.  Gdy filtr odbierze zdarzenie wskazujące, że zostały przeniesione do nowego wiersza, aby sprawdzić błędy utworzeniu zadania.  
+2.  Gdy filtr odbierze zdarzenie wskazujące, że zostały przeniesione do innego wiersza, aby sprawdzić błędy tworzone jest zadanie.  
   
-3.  Zadanie obsługi sprawdza, czy wiersz został zmieniony. Jeśli tak, analizuje linii błędy.  
+3.  Program obsługi zadań sprawdza, czy wiersz został zmieniony. Jeśli tak, analizuje wiersza dla błędów.  
   
-4.  W przypadku znalezienia błędów dostawcy zadań tworzy wystąpienie elementu zadania. To wystąpienie tworzy znacznika tekstu używanego środowiska jako znacznik błędów w widoku tekstu.  
+4.  Jeśli wystąpią błędy, dostawca zadań tworzy wystąpienia elementu zadania. To wystąpienie tworzy znacznika tekstu, który środowiska używa jako znacznik błędów w widoku tekstu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników tekstu standardowego](../extensibility/how-to-add-standard-text-markers.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
  [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Porady: Użyj znacznikach tekstu](../extensibility/how-to-use-text-markers.md)
+ [Porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

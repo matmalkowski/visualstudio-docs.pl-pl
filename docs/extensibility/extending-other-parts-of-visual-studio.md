@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c9da7eac05a489e027de30736e1baf449927d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133665"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639529"
 ---
-# <a name="extending-other-parts-of-visual-studio"></a>Rozszerzanie innych części programu Visual Studio
-Istnieje wiele więcej elementów interfejsu użytkownika programu Visual Studio, które mogą rozszerzyć. W tym miejscu możemy przedstawiają kilka.  
+# <a name="extend-other-parts-of-visual-studio"></a>Rozszerzanie innych części programu Visual Studio
+Istnieje wiele więcej elementów w interfejsie użytkownika Visual Studio, które mogą rozszerzyć. W tym miejscu pokazujemy kilka.  
   
-## <a name="creating-a-vspackage"></a>Tworzenie pakiet VSPackage  
- Podstawowe bloki konstrukcyjne Visual Studio Extensibility są VSPackages.  Dowiedz się, jak dodać pakiet VSPackage: [Tworzenie rozszerzenia z pakiet VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+## <a name="create-a-vspackage"></a>Tworzenie pakietu VSPackage  
+ Podstawowe bloki konstrukcyjne programu Visual Studio Extensibility są pakietów VSPackage.  Dowiedz się, jak dodać pakietu VSPackage: [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
-## <a name="extending-the-toolbox"></a>Rozszerzanie przybornika  
- Dowiedz się, jak dodać nowe sterowniki i inne elementy do przybornika i sposobu użycia funkcji przybornika:  
+## <a name="extend-the-toolbox"></a>Rozszerzanie przybornika  
+ Dowiedz się, jak dodać nowych kontrolek i inne elementy do przybornika i jak korzystać z funkcji przybornika:  
   
 -   [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
   
 -   [Tworzenie kontrolki przybornika Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
-## <a name="extending-the-status-bar"></a>Rozszerzanie paska stanu  
- Informacje do odczytu i zapisu do paska stanu i pasek postępu oraz zapewnienie animacji i innych interfejsu użytkownika: [rozszerzanie pasek stanu](../extensibility/extending-the-status-bar.md).  
+## <a name="extend-the-status-bar"></a>Rozszerzanie paska stanu  
+ Dowiedz się, jak odczytywać i zapisywać na pasku stanu i pasek postępu i jak zapewnić animacje i inne interfejsu użytkownika: [rozszerzanie paska stanu](../extensibility/extending-the-status-bar.md).  
   
-## <a name="creating-custom-start-pages"></a>Tworzenie niestandardowego rozpoczęcia stron  
- Dowiedz się, jak utworzyć własne strony początkowej, od początku lub przykładowe strony do pobrania start: [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).  
+## <a name="create-custom-start-pages"></a>Tworzenie niestandardowych stron Start  
+ Dowiedz się, jak utworzyć własną stronę początkową od podstaw lub przykładu strona uruchamiania do pobrania: [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).  
   
-## <a name="write-to-the-activity-log"></a>Zapisywanie w dzienniku aktywności  
- Dowiedz się, jak można zapisać do dziennika aktywności: [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).
+## <a name="write-to-the-activity-log"></a>Zapisz w dzienniku aktywności  
+ Dowiedz się, jak zapisywać w dzienniku aktywności: [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).

@@ -1,5 +1,5 @@
 ---
-title: Obsługa ngen w wersji 3 VSIX | Dokumentacja firmy Microsoft
+title: Obsługa ngen w rozszerzeniu VSIX v3 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/09/2016
 ms.technology:
@@ -11,43 +11,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 146df23bff14bd93558c645521f99f6099a49bde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139763"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639493"
 ---
-# <a name="ngen-support-in-vsix-v3"></a>Obsługa ngen w pliku VSIX w wersji 3
+# <a name="ngen-support-in-vsix-v3"></a>Obsługa Ngen w rozszerzeniu VSIX v3
 
-Z programu Visual Studio 2017 i nowych v3 VSIX rozszerzenia (wersja 3) manifestu format rozszerzenia deweloperzy mogą teraz "ngen" ich zestawów w czasie instalacji.
+Za pomocą programu Visual Studio 2017 i nowe rozszerzeniu VSIX v3 (wersja 3) rozszerzenia manifestu format rozszerzenia deweloperzy mogą teraz "ngen" ich zestawów w czasie instalacji.
 
-Poniżej znajduje się fragment MSDN, który objaśnia, w jaki "ngen" jest:
+Poniżej przedstawiono fragment MSDN, który objaśnia, jakie "ngen" jest:
 
->Generator obrazów natywnych (Ngen.exe) jest narzędziem, które poprawia wydajność zarządzanych aplikacji. Program Ngen.exe tworzy obrazy natywne, które są plikami zawierającymi skompilowany kod maszynowy specyficzny dla procesora, i instaluje je w pamięci podręcznej obrazów natywnych na komputerze lokalnym. Środowisko uruchomieniowe może używać obrazów natywnych z tej pamięci podręcznej, zamiast używać kompilatora JIT (Just-In-Time) w celu skompilowania oryginalnego zestawu.
+>Generator obrazu natywnego (*Ngen.exe*) jest narzędziem, które poprawia wydajność zarządzanych aplikacji. *Ngen.exe* tworzy obrazy natywne, które są plikami zawierającymi skompilowany kod maszynowy dla danego procesora i instaluje je w pamięci podręcznej obrazów natywnych na komputerze lokalnym. Środowisko uruchomieniowe może używać obrazów natywnych z tej pamięci podręcznej, zamiast używać kompilatora JIT (Just-In-Time) w celu skompilowania oryginalnego zestawu.
 >
 >z [Ngen.exe (Generator obrazu natywnego)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
 
-Z kolei "ngen" jako zestawu pliku VSIX musi być zainstalowana "poszczególnych wystąpień dla maszyny". Można je włączyć, zaznaczając pole wyboru "wszystkich użytkowników" w Projektancie extension.vsixmanifest:
+Z kolei "ngen" na zestawie VSIX muszą być zainstalowane "dla wystąpienia na komputerze". Tę można włączyć, zaznaczając pole wyboru "wszystkich użytkowników" `extension.vsixmanifest` projektanta:
 
-![Sprawdź wszyscy użytkownicy](media/check-all-users.png)
+![Zaznacz wszystkich użytkowników](media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Jak włączyć Ngen
 
-Aby włączyć narzędzia ngen dla zestawów, można użyć **właściwości** okna w programie Visual Studio.
+Aby włączyć ngen w zestawie, można użyć **właściwości** okna w programie Visual Studio.
 
 Istnieją 4 właściwości, które można ustawić:
 
-1. **Narzędzie ngen** (wartość logiczna) — jeśli PRAWDA, Instalator programu Visual Studio będzie "ngen" zestawu.
-2. **Aplikacja ngen** (ciąg) Ngen zapewnia możliwość korzystania z pliku app.config aplikacji w celu rozpoznania zależności zestawu. Ta wartość powinna być równa aplikacji app.config, którego chcesz użyć (względem katalogu instalacyjnego programu Visual Studio).
-3. **Architektura ngen** (enum) — architektura natywnie skompilować używanego zestawu. Dostępne są następujące opcje:. B Płeć nieznana. X86 c. X64 d. Wszystkie
-4. **Priorytet ngen** (liczba całkowita od 1 do 3) - Ngen priorytet jest udokumentowany na [poziomy priorytetu Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+1. **Ngen** (wartość logiczna) — w przypadku opcji true Instalatora programu Visual Studio będzie "ngen" zestawu.
+2. **Aplikacja ngen** (ciąg) — Ngen daje szansę na korzystanie z aplikacji *app.config* pliku, aby można było rozpoznać zależności zestawu. Ta wartość powinna być równa aplikacji którego *app.config* chcesz użyć (względem katalogu instalacyjnego programu Visual Studio).
+3. **Architektura ngen** (enum) — architektura natywnie skompilować zestawu. Opcje to:. B wartości NotSpecified. X86 c. X64 d. Wszystkie
+4. **Priorytet ngen** (całkowitą z zakresu od 1 do 3) — poziom priorytetu programu Ngen jest udokumentowany na [poziomy priorytetów Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
-Poniżej przedstawiono informacje o **właściwości** okna w akcji:
+W tym miejscu przedstawiono **właściwości** okna w akcji:
 
-![Narzędzie ngen we właściwościach](media/ngen-in-properties.png)
+![ngen we właściwościach](media/ngen-in-properties.png)
 
-Spowoduje to dodanie metadanych odwołania projektu do wewnątrz pliku .csproj projektu VSIX:
+Spowoduje to dodanie metadanych do odwołania projektu w projekcie VSIX *.csproj* pliku:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -60,8 +60,8 @@ Spowoduje to dodanie metadanych odwołania projektu do wewnątrz pliku .csproj p
 </ProjectReference>
  ```
 
- >**Uwaga:** edycji pliku .csproj bezpośrednio, jeśli wolisz.
+ >**Uwaga:** edytować plik .csproj bezpośrednio, jeśli użytkownik sobie tego życzy.
 
 ## <a name="extra-information"></a>Dodatkowe informacje
 
-Zmiany projektanta właściwości są stosowane do więcej niż tylko odwołania do projektu; można ustawić metadane Ngen dla elementów wewnątrz projektu również (przy użyciu tych samych metod opisanych powyżej) tak długo, jak elementy będą zestawy .NET.
+Zmiany projektanta właściwości są stosowane do więcej niż tylko odwołania do projektu; można ustawić metadanych Ngen dla elementów wewnątrz projektu również (przy użyciu tych samych metod opisanych powyżej) tak długo, jak elementy znajdują się zestawy .NET.

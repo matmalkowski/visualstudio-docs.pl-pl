@@ -13,47 +13,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676918b6366837b6ee77cf27bd5fba9fbf608729
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128251"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638062"
 ---
 # <a name="editor-factories"></a>Fabryki edytora
-Fabryka edytora tworzy Edytor obiektów i umieszczane w ramkę okna, znany jako widoku fizycznego. Tworzy dane dokumentu i obiekty widoku dokumentów, które są niezbędne do utworzenia edytory i projektantów. Fabryka edytora jest wymagane do utworzenia edytorze podstawowych programu Visual Studio i dowolnego edytora standardowego. Opcjonalnie można utworzyć niestandardowego edytora z fabryką edytora.  
+Fabryka edytora tworzy obiekty edytora i umieszcza je w ramkę okna, znane jako fizyczny widok. Tworzy dane dokumentu i obiekty widoku dokumentu, które są niezbędne do utworzenia w edytorach i projektantach. Fabryka edytora jest wymagana do utworzenia podstawowy edytor programu Visual Studio i dowolnego edytora standardowego. Niestandardowy Edytor również opcjonalnie mogą być tworzone za pomocą fabryki edytora.  
   
- Utwórz fabrykę edytora zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu. Poniższy przykład ilustruje sposób implementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> można utworzyć fabryki edytora:  
+ Tworzenie fabryki edytora implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu. Poniższy przykład ilustruje sposób implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> do utworzenia fabryki edytora:  
   
  [!code-vb[VSSDKEditorFactories#1](../extensibility/codesnippet/VisualBasic/editor-factories_1.vb)]
  [!code-csharp[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
   
- Edytor jest ładowany podczas pierwszego otwierania typu plików obsługiwane przez tego edytora. Można otworzyć edytora określonego lub domyślnego edytora. W przypadku wybrania domyślny edytor zintegrowane środowisko programistyczne (IDE) określa poprawne edytora, aby otworzyć i otwarcie go. Aby uzyskać więcej informacji, zobacz [określania edytor, którego otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Edytor jest ładowany podczas pierwszego otwierania określonego typu plików obsługiwane przez tego edytora. Można otworzyć określonego edytora lub domyślnego edytora. Jeśli wybierzesz domyślnego edytora, zintegrowanego środowiska programistycznego (IDE) określa poprawne edytora, aby otworzyć i następnie go otwiera. Aby uzyskać więcej informacji, zobacz [ustalić, które edytora otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="registering-editor-factories"></a>Zarejestrowanie fabryki edytora  
- Przed użyciem edytor, który został utworzony, najpierw należy zarejestrować informacje, łącznie z rozszerzeń plików, który może obsługiwać.  
+## <a name="register-editor-factories"></a>Fabryki Edytora rejestru  
+ Zanim użyjesz Edytor który został utworzony, najpierw należy zarejestrować informacje o tym, włącznie z rozszerzeniami, które mogą obsługiwać.  
   
- VSPackage są zapisywane w kodzie zarządzanym, należy użyć metody zarządzane pakietu Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> można zarejestrować fabryki edytora po załadowaniu VSPackage. Jeśli VSPackage są zapisywane w kodzie niezarządzane, a następnie fabryką edytora musi zarejestrować za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> usługi.  
+ Jeśli Twojego pakietu VSPackage są zapisywane w kodzie zarządzanym, możesz użyć metody zarządzane pakietu Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> można zarejestrować fabryki edytora po załadowaniu Twojego pakietu VSPackage. Jeśli Twojego pakietu VSPackage są zapisywane w niezarządzanym kodzie, a następnie fabryką edytora należy zarejestrować przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> usługi.  
   
-### <a name="registering-an-editor-factory-by-using-managed-code"></a>Rejestrowanie przy użyciu fabryki edytora kodu zarządzanego  
- Należy zarejestrować fabryką edytora w pakiecie VSPackage firmy `Initialize` metody. Pierwsze wywołanie `base.Initialize`, a następnie wywołać <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> dla każdej fabryki edytora  
+### <a name="register-an-editor-factory-by-using-managed-code"></a>Zarejestruj fabryki edytora przy użyciu kodu zarządzanego  
+ Należy zarejestrować fabryką edytora w swojej pakietu VSPackage `Initialize` metody. Pierwsze wywołanie `base.Initialize`, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> każdej fabryki edytora  
   
- W kodzie zarządzanym jest niepotrzebna wyrejestrować fabryki edytora, ponieważ pakiet VSPackage to obsłuży. Ponadto jeśli implementuje fabryką edytora <xref:System.IDisposable>, zostanie automatycznie usunięty, gdy jest on zarejestrowany.  
+ W kodzie zarządzanym nie ma potrzeby wyrejestrować fabryki edytora ponieważ pakietu VSPackage będzie obsługiwać to dla Ciebie. Ponadto jeśli implementuje fabryką edytora <xref:System.IDisposable>, zostanie automatycznie usunięty, w momencie wyrejestrowania.  
   
-### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>Rejestrowanie przy użyciu kodu niezarządzanego fabrykę edytora  
- W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> wdrożenia pakietu edytora, użyj `QueryService` metodę do wywołania `SVsRegisterEditors`. W ten sposób zwraca wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> metody przez przekazanie implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu. Należy najpierw mplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> w osobnej klasy.  
+### <a name="register-an-editor-factory-by-using-unmanaged-code"></a>Zarejestrować fabryki edytora za pomocą kodu niezarządzanego  
+ W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> wdrożenia dla pakietu edytora, użyj `QueryService` metodę do wywołania `SVsRegisterEditors`. W ten sposób zwraca wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> metody przez przekazanie implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejsu. Należy najpierw mplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> w osobnej klasy.  
   
 ## <a name="the-editor-factory-registration-process"></a>Proces rejestracji fabryki edytora  
- Gdy Visual Studio ładuje edytora przy użyciu fabryką edytora odbywa się następujący proces:  
+ Następujący proces występuje, gdy program Visual Studio ładuje edytora przy użyciu usługi fabryka edytora:  
   
 1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektu wywołań systemowych <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Ta metoda zwraca fabrykę edytora. Visual Studio opóźnienia ładowania pakietu edytora, jednak, aż system projektu rzeczywista wymagana edytora.  
+2.  Ta metoda zwraca fabryka edytora. Visual Studio opóźnia ładowanie pakiet edytora, dopóki system projektu jest faktycznie potrzebny edytora.  
   
-3.  Gdy system projektu wymaga edytora, Visual Studio wymaga <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, specjalne metodę, która zwraca zarówno widok dokumentu, jak i w dokumencie obiektów danych.  
+3.  Jeśli system projektu musi edytora, Visual Studio wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, wyspecjalizowanych metodę zwracającą widok dokumentu i dokumentu obiektów danych.  
   
-4.  Jeśli wywołuje przez program Visual Studio do używania fabryki edytora <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> zwrócić zarówno obiekt danych dokumentu i obiekt widoku dokumentu, Visual Studio następnie tworzy okno dokumentu, umieszcza w nim obiektu widoku dokumentu i sprawia, że wpis do uruchomionej dokumentu Tabela (Normalizacją) dla obiekt danych dokumentu.  
+4.  Jeśli wywołuje przez program Visual Studio z fabryki edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> zwracają obiekt danych dokumentu i obiekt widoku dokumentu, Visual Studio następnie tworzy okno dokumentu, umieszcza obiekt widoku dokumentu w nim i sprawia, że wpis do uruchomionego dokumentu Tabela (Normalizacją) dla obiektu danych dokumentu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [Uruchamianie tabeli dokumentu](../extensibility/internals/running-document-table.md)

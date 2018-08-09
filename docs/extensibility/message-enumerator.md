@@ -1,5 +1,5 @@
 ---
-title: Moduł wyliczający komunikatu | Dokumentacja firmy Microsoft
+title: Moduł wyliczający komunikat | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc945908ac61a0eaa4df49c76725b2291686eac3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8757ef2ebb2ac7b444379abd71102bfc1d39eee9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140265"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636537"
 ---
-# <a name="message-enumerator"></a>Moduł wyliczający wiadomości
-Następujące flagi są używane do `TEXTOUTPROC` funkcji, która jest funkcja wywołania zwrotnego, która zapewnia IDE, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) szczegółowe informacje dotyczące wywołania zwrotnego Funkcja).  
+# <a name="message-enumerator"></a>Moduł wyliczający komunikat
+Następujące flagi są używane do `TEXTOUTPROC` funkcji, która jest funkcją wywołania zwrotnego, która zapewnia środowisko IDE, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) szczegółowe informacje na temat wywołania zwrotnego Funkcja).  
   
- Jeśli IDE jest pytanie, aby anulować proces, jego może otrzymywać wiadomości Anuluj. W takim przypadku źródło kontrolować wtyczki używa `SCC_MSG_STARTCANCEL` poprosić IDE, aby wyświetlić **anulować** przycisku. Po to mogą być wysyłane dowolny zbiór zwykłych wiadomości. Jeśli dowolny z tych zwraca `SCC_MSG_RTN_CANCEL`, a następnie wtyczki kończy działanie i zwraca. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby określić, czy użytkownik anulował operację. Gdy wszystkie operacje są wykonywane, lub jeśli została anulowana przez użytkownika, wysyła wtyczki `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, oraz typy SCC_MSG_ERROR są używane do wiadomości, które są wyświetlane na liście przewijania wiadomości. `SCC_MSG_STATUS` to specjalny typ, który wskazuje, że tekst powinny być widoczne w pasku stanu lub obszar tymczasowy wyświetlania. Nie ona trwale na liście.  
+ Jeśli środowisko IDE jest pytanie, aby anulować proces, jego może zostać komunikatów Anuluj. W tym przypadku źródło sterowania wtyczka używa `SCC_MSG_STARTCANCEL` poprosić IDE, aby wyświetlić **anulować** przycisku. Po tym dowolny zbiór normalne komunikaty mogą być wysyłane. Jeśli dowolny z tych zwraca `SCC_MSG_RTN_CANCEL`, a następnie kończy działanie operacji i zwraca dodatku typu plug-in. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby określić, jeśli użytkownik anulował operację. Gdy wszystkie operacje są wykonywane lub jeśli użytkownik anulował, wysyła wtyczki `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, oraz typy SCC_MSG_ERROR są używane do wiadomości, które Pobierz wyświetlane na liście przewijania wiadomości. `SCC_MSG_STATUS` to specjalny typ, który wskazuje, że tekst powinny być widoczne w pasku stanu lub obszaru tymczasowego wyświetlania. Nie ona trwale na liście.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -56,20 +56,20 @@ enum {
  Komunikat jest ostrzeżenie.  
   
  SCC_MSG_ERROR  
- Komunikat jest błąd.  
+ Komunikat błędu.  
   
  SCC_MSG_STATUS  
- Komunikat jest przeznaczona dla paska stanu.  
+ Wiadomość jest przeznaczona dla paska stanu.  
   
  SCC_MSG_DOCANCEL  
  Brak tekstu; Zwraca IDE `SCC_MSG_RTN_OK` lub `SCC_MSG_RTN_CANCEL`.  
   
  SCC_MSG_STARTCANCEL  
- Uruchamia pętli Anuluj.  
+ Uruchamia pętli anulowania.  
   
  SCC_MSG_STOPCANCEL  
- Zatrzymuje pętli Anuluj.  
+ Zatrzymuje pętli anulowania.  
   
-## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

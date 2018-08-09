@@ -2,7 +2,7 @@
 title: Debugowanie C++
 description: Debugowanie kodu natywnego za pomocą debugera programu Visual Studio
 ms.custom: mvc
-ms.date: 03/18/2018
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1027e5f737bf3fc75b33c47578ae0cc107a1fb7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926327"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639779"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki Start: Debugowanie z C++ za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki Start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
-Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zawiera szybko dowiedzieć się, niektóre podstawowe funkcje.
+Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
-2. W obszarze **Visual C++**, wybierz **Windows Desktop**, a następnie w środkowym okienku wybierz **aplikacji konsoli systemu Windows**.
+2. W obszarze **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **aplikacji konsoli Windows**.
 
-    Jeśli nie widzisz **aplikacji konsoli systemu Windows** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji w języku C++** obciążenia, a następnie wybierz **Modyfikuj**.
+    Jeśli nie widzisz **aplikacji konsoli Windows** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
 3. Wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
 
     Program Visual Studio tworzy projekt.
 
-4. W MyDbgApp.cpp Zastąp następujący kod
+4. W MyDbgApp.cpp Zastąp poniższy kod
 
     ```c++
     int main()
@@ -45,7 +45,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
     }
     ```
 
-    z tego kodu (nie usuwaj `#include "stdafx.h"`):
+    przy użyciu tego kodu (nie należy usuwać `#include "stdafx.h"`):
 
     ```c++
     #include <list>  
@@ -76,64 +76,64 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 
 ## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania
 
-A *punktu przerwania* jest znacznika, która wskazuje, gdzie programu Visual Studio należy wstrzymać Twojej pracy kodu, aby móc przeglądać wartości zmiennych ani zachowanie pamięci lub czy nie jest pierwsze uruchom gałąź kodu. Jest najbardziej podstawowa funkcja debugowania.
+A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studio należy wstrzymać działającego kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy nie jest wprowadzenie uruchamiane gałęzi kodu. Jest najbardziej podstawowa funkcja podczas debugowania.
 
-1. Aby ustawić punkt przerwania, kliknij odstępu na lewo od `doWork` wywołania funkcji (lub zaznacz wiersz kodu i naciśnij klawisz **F9**).
+1. Aby ustawić punkt przerwania, kliknij na marginesie po lewej stronie `doWork` wywołania funkcji (lub wybierz linii kodu i naciśnij klawisz **F9**).
 
     ![Ustaw punkt przerwania](../debugger/media/dbg-qs-set-breakpoint.png "Ustaw punkt przerwania")
 
 2. Teraz naciśnij **F5** (lub wybierz **Debuguj > Rozpocznij debugowanie**).
 
-    ![Trafiony punkt przerwania](../debugger/media/dbg-qs-hit-breakpoint.png "trafiony punkt przerwania")
+    ![Trafiony punkt przerwania](../debugger/media/dbg-qs-hit-breakpoint.png "trafia w punkt przerwania")
 
-    Wstrzymuje działanie debugera, którym można ustawić punktu przerwania. Żółta strzałka wskazuje instrukcji, których wykonanie debugera i aplikacji jest wstrzymana. Wiersz z `doWork` wywołanie funkcji nie ma jeszcze wykonane.
+    Wstrzymuje działanie debugera, gdzie ustawić punkt przerwania. Żółta strzałka wskazuje instrukcji, w której zostało wstrzymane wykonanie debugera i aplikacji. Wiersz z `doWork` wywołanie funkcji nie zostało jeszcze wykonane.
 
     > [!TIP]
-    > Jeśli masz punkt przerwania w pętli lub rekursji lub jeśli masz wiele punktów przerwania, które często kroków opisanych w, użyj [warunkowych punktów przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Warunkowych punktów przerwania zaoszczędzić czas, a także ułatwia debugowanie problemów, które są trudne do odtworzenia.
+    > Jeśli punkt przerwania w pętli lub rekursji, lub jeśli masz wiele punktów przerwania, które często krokach, użyj [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że Twój kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Warunkowego punktu przerwania pozwala zaoszczędzić czas i może również ułatwić debugowanie problemów, które są trudne do odtworzenia.
 
-    Podczas próby debugowania błędy związane z pamięcią w języku C++, umożliwia także punktów przerwania do zbadania wartości adresów (poszukaj NULL) i referencyjne liczby. 
+    Podczas próby debugowania błędy związane z pamięcią w języku C++, umożliwia także punktów przerwania można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i odwoływać się do liczby. 
 
-## <a name="navigate-code"></a>Przejdź do kodu
+## <a name="navigate-code"></a>Przechodzenie do kodu
 
-Istnieją różne polecenia nakazać debugera, aby kontynuować. Polecenie nawigacji przydatne kodu, które jest nowa w programie Visual Studio 2017 zostanie przedstawiony.
+Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, co nowego w programie Visual Studio 2017.
 
-Podczas wstrzymana na punkt przerwania, umieść kursor nad instrukcji `c1.push_back(20)` do zielonego **Uruchom, aby kliknij** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom, aby kliknij** przycisku.
+Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.push_back(20)` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisku.
 
-![Uruchom, aby kliknij](../debugger/media/dbg-qs-run-to-click.png "Uruchom, aby kliknij")
+![Uruchom do kliknięcia](../debugger/media/dbg-qs-run-to-click.png "Uruchom do kliknięcia")
 
-Aplikacja kontynuuje wykonywanie, wywoływania `doWork`i zatrzymuje się na wiersz kodu, gdy kliknięto przycisk.
+Aplikacja kontynuuje wykonywanie, wywołanie `doWork`i zatrzymuje się w wierszu kodu, gdy kliknięto przycisk.
 
-Typowe polecenia klawiatury używany do kroków kodu obejmują **F10** i **F11**. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Sprawdź zmienne w etykietki danych
+## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
 
-1. W bieżącym wierszu kodu (oznaczony przez wskaźnik wykonywania żółty), umieść kursor nad `c1` obiektu za pomocą myszy do Pokaż etykietki danych.
+1. W bieżącym wierszu kodu (oznaczonych przez wskaźnik wykonania żółty), umieść kursor nad `c1` obiektu myszą, aby pokazać poradzie dotyczącej danych.
 
-    ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip.png "wyświetlenia etykietki danych")
+    ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip.png "wyświetlanie etykietki danych")
 
-    Etykietek danych pokazuje bieżącą wartość `c1` zmiennej i pozwala sprawdzić jego właściwości. Podczas debugowania, jeśli wartość, która nie jest widoczny, prawdopodobnie usterki w poprzednim lub wywoływania wierszach kodu. 
+    Datatip pokazuje bieżącą wartość `c1` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu. 
 
-2. Rozwiń węzeł etykietek danych, aby zobaczyć bieżące wartości właściwości `c1` obiektu.
+2. Rozwiń etykietka danych, aby wyświetlić bieżące wartości właściwości `c1` obiektu.
 
-3. Jeśli chcesz przypiąć etykietek danych, dzięki czemu możesz zobaczyć wartość `c1` podczas wykonywania kodu, kliknij ikonę pinezki mała. (W dogodnej lokalizacji można przenieść przypiętych etykietek danych).
+3. Jeśli chcesz przypiąć datatip, dzięki czemu możesz zobaczyć wartość `c1` podczas wykonywania kodu, kliknij ikonę pinezki małe. (W dogodnym miejscu może przechodzić przypiętych etykietki danych).
 
-## <a name="edit-code-and-continue-debugging"></a>Edytuj kod i Kontynuuj debugowanie
+## <a name="edit-code-and-continue-debugging"></a>Edytowanie kodu i kontynuowanie debugowania
 
-Po zidentyfikowaniu zmiany, która ma zostać przetestowana w kodzie, gdy w trakcie sesji debugowania, możesz to zrobić, za.
+Po zidentyfikowaniu zmianę, która ma zostać przetestowana w kodzie, gdy w trakcie sesji debugowania, możesz to zrobić, zbyt.
 
-1. Kliknij pozycję drugiego wystąpienia `c2.front()` i zmienić `c2.front()` do `c2.back()`.
+1. Kliknij pozycję drugiego wystąpienia `c2.front()` i zmień `c2.front()` do `c2.back()`.
 
-2. Naciśnij klawisz **F10** (lub **Debuguj > Step Over**) kilka razy, aby poprawić debugera i wykonanie kodu edytowany.
+2. Naciśnij klawisz **F10** (lub **Debuguj > Step Over**) kilka razy, aby poszerzyć debugera i wykonywanie edycji kodu.
 
     ![Edytuj i Kontynuuj](../debugger/media/dbg-qs-edit-and-continue.gif "Edytuj i Kontynuuj")
 
-    **F10** przesuwa instrukcja debugera jednym na raz, ale kroki za pośrednictwem funkcji zamiast Wkraczanie do nich (nadal wykonuje kod, który możesz pominąć).
+    **F10** prowadzi instrukcja debugger jeden w danym momencie, ale kroki za pośrednictwem funkcji zamiast przechodzenie krok po kroku do nich (nadal wykonuje kod, który zostanie pominięta).
 
-Aby uzyskać więcej informacji na temat używania edit-and-continue i ograniczenia dotyczące funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+Aby uzyskać więcej informacji na temat korzystania z edit-and-continue i ograniczenia dotyczące funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku kiedy znasz już sposobu uruchamiania debugera, kroki do kodu i sprawdzić zmiennych. Możesz pobrać wysokiego poziomu przyjrzeć się debuger funkcji oraz łącza do dodatkowych informacji.
+W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
 > [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

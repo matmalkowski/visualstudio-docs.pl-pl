@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b190e43be87f5436741106eb1df8884f37322a00
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152604"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637659"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — zadanie
 Określa wszystkie zestawy, które są zależne od określonych zestawów, łącznie z drugiego i `n`th kolejności zależności.  
@@ -63,7 +63,7 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów, łąc
 |`LatestTargetFrameworkDirectories`|Opcjonalnie `String[]` parametru.<br /><br /> Określa listę katalogów, które zawierają listy redist, aby uzyskać najbardziej aktualną framework, która może być kierowany na maszynie. Jeśli nie jest ustawiona, najwyższy ramach zainstalowanych na komputerze dla identyfikatora struktury docelowej jest używany.|  
 |`ProfileName`|Opcjonalnie `String` parametru.<br /><br /> — Nazwa profilu framework, który ma zostać użyty. Na przykład klienta, sieci Web lub sieci.|  
 |`RelatedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zawiera powiązanych plików, takich jak XML i *.pdb* plików, które mają taką samą nazwę jako odwołanie.<br /><br /> Pliki wymienione w tym parametrze opcjonalnie może zawierać następujące metadane elementu:<br /><br /> -   `Primary`: `Boolean` wartość. Jeśli `true`, a następnie element plik został przekazany do tablicy, za pomocą `Assemblies` parametru. Wartość domyślna to `false`.<br />-   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego.|  
-|`ResolvedDependencyFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zawiera *n*th ścieżki kolejności zależności. Ten parametr nie zawiera pierwszy kolejności głównej odwołań, które są zawarte w `ResolvedFiles` parametru.<br /><br /> Elementy w tym parametrze opcjonalnie zawiera następujące metadane elementu:<br /><br /> -   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego.<br />-   `FusionName`: `String` wartość. Określa nazwę tej zależności.<br />-   `ResolvedFrom`: `String` wartość. Ścieżka wyszukiwania literału, który ten plik został usunięty z SpecAssemblyFoldersBaseifies.|  
+|`ResolvedDependencyFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zawiera *n*th ścieżki kolejności zależności. Ten parametr nie zawiera pierwszy kolejności głównej odwołań, które są zawarte w `ResolvedFiles` parametru.<br /><br /> Elementy w tym parametrze opcjonalnie zawiera następujące metadane elementu:<br /><br /> -   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego.<br />-   `FusionName`: `String` wartość. Określa nazwę tej zależności.<br />-   `ResolvedFrom`: `String` wartość. Określa ścieżkę wyszukiwania literału, który tego pliku została rozwiązana z.|  
 |`ResolvedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zawiera listę wszystkie podstawowego odwołania rozwiązane pełne ścieżki.<br /><br /> Elementy w tym parametrze opcjonalnie zawiera następujące metadane elementu:<br /><br /> -   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego.<br />-   `FusionName`: `String` wartość. Określa nazwę tej zależności.<br />-   `ResolvedFrom`: `String` wartość. Określa ścieżkę wyszukiwania literału, który tego pliku została rozwiązana z.|  
 |`SatelliteFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Określa wszystkie pliki satelitarnej znaleziono. Będą one CopyLocal = true, jeśli odwołanie lub zależności, który spowodował ten element, aby istnieje CopyLocal = true.<br /><br /> Elementy w tym parametrze opcjonalnie zawiera następujące metadane elementu:<br /><br /> -   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego. Ta wartość jest `true` czy odwołanie lub zależności, który spowodował ten element, aby istnieje ma `CopyLocal` wartość `true`.<br />-   `DestinationSubDirectory`: `String` wartość. Określa katalog docelowy względnej, aby skopiować ten element, aby.|  
 |`ScatterFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego tylko do odczytu.<br /><br /> Zawiera pliki punktowy związaną z jednym podane zestawy.<br /><br /> Elementy w tym parametrze opcjonalnie zawiera następujące metadane elementu:<br /><br /> -   `CopyLocal`: `Boolean` wartość. Wskazuje, czy danego odwołania powinny zostać skopiowane do katalogu wyjściowego.|  

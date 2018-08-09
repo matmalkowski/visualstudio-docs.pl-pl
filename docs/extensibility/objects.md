@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9225b83cb42e39ec4f220c5993c4695ba75b8998
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b7448ec69af35b1fac864ef0151d37f91d15bd7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137180"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639952"
 ---
 # <a name="objects"></a>Obiekty
-Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpienia core edytora tekstu.  
+Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpienia podstawowy edytor tekstu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Obiekt VSCodeWindow](../extensibility/vscodewindow-object.md)  
- W tym artykule opisano kod obiektu okna, okno Dokument specjalistycznych, który może zawierać co najmniej jeden widok tekstu.  
+ Opisuje obiekt okna kodu, okno dokumentu specjalistyczne, może być częścią widokach tekstu.  
   
  [Obiekt VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md)  
- Opisuje obiekt menedżera okna Kod, który jest implementowany przez usługi języka i jest odpowiedzialny za zarządzanie skojarzenia.  
+ Opisuje obiekt menedżera okna kodu, jest implementowany przez usługę języka, który jest odpowiedzialny za zarządzanie zakończeń.  
   
  [Obiekt VSTextBuffer](../extensibility/vstextbuffer-object.md)  
- Opis obiektu buforu tekst, który reprezentuje strumień tekst Unicode, dane dla pliku.  
+ Opisuje obiekt buforu tekstu, który reprezentuje strumień tekst w formacie Unicode, dane dla pliku.  
   
  [Obiekt VSTextView](../extensibility/vstextview-object.md)  
- Zawiera opis widoku tekstu, okno, który pozwala użytkownikom wyświetlać i edytować tekst Unicode buforu tekstowego.  
+ Opisuje widok tekstu, okno które pozwala użytkownikom wyświetlać i edytować tekst w formacie Unicode buforu tekstowego.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Dokumentacja zestawu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
- Wyświetla listę tematów odwołania.
+ [Odwołanie w Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
+ Wyświetla listę tematów odwołań.

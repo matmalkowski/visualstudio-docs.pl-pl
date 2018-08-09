@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388257"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637565"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoków i szablonów stron
 
@@ -129,7 +129,7 @@ Aby eksperymentować z różnych wyrażeń regularnych, spróbuj online narzędz
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Krok 2-3: renderowania widoku przy użyciu języka HTML
 
-`index` Funkcja, która należy do tej pory w *views.py* nie więcej niż odpowiedzi HTTP zwykłego tekstu dla strony. Większość rzeczywistych stron sieci web, oczywiście, odpowiedź z rozbudowanych strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest więc zawartości mogą być generowane dynamicznie.
+`index` Funkcja, która należy do tej pory w *views.py* nie więcej niż odpowiedzi HTTP zwykłego tekstu dla strony. Większość rzeczywistych stron sieci web, oczywiście, odpowiedź z rozbudowanych strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest więc można dynamicznie wygenerować tę zawartość.
 
 Ponieważ argument `HttpResponse` jest po prostu określonym ciągiem utworzenia wewnątrz ciągu, takich jak kod HTML. Prosty przykład zastąpić `index` funkcji następującym kodem (utrzymywanie istniejących `from` instrukcji), która generuje odpowiedzi HTML przy użyciu zawartości dynamicznej, która jest aktualizowana przy każdym odświeżeniu strony:
 
@@ -149,7 +149,7 @@ def index(request):
 Uruchom projekt ponownie, aby wyświetlić komunikat podobny do "**Django Hello!** w każdy poniedziałek, 16 kwietnia 2018 r. o 16:28:10 ". Odśwież stronę Aby zaktualizować czasu i upewnij się, że zawartość jest generowany z każdym żądaniem. Gdy skończysz, Zatrzymaj serwer.
 
 > [!Tip]
-> Skrót do zatrzymywania i ponownego uruchamiania projektu jest użycie **debugowania** > **ponowne uruchomienie** polecenia menu (**Ctrl**+**Shift**  + **F5**) lub przycisk Uruchom ponownie na pasku narzędzi debugowania:
+> Skrót do zatrzymywania i ponownego uruchamiania projektu jest użycie **debugowania** > **ponowne uruchomienie** polecenia menu (**Ctrl**+**Shift**  + **F5**) lub **ponowne uruchomienie** przycisk na pasku narzędzi debugowania:
 >
 > ![Uruchom ponownie przycisk na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -209,7 +209,7 @@ Poniższe kroki pokazują użycie szablonów stron:
 
     Pierwszy argument `render`, jak widać, to obiekt żądania, następuje względną ścieżkę do pliku szablonu w ramach aplikacji *szablony* folderu. Plik szablonu nosi nazwę dla widoku, który ją obsługuje, jeśli to stosowne. Trzeci argument `render` jest następnie słownika zmiennych, które szablon, który odwołuje się do. Mogą znajdować się obiekty w słowniku, w którym to przypadku zmienna w szablonie mogą odwoływać się do `{{ object.property }}`.
 
-1. Uruchom projekt i sprawdzanie danych wyjściowych. Wyświetlony komunikat podobny do tego kroku widziany 2-2, który wskazuje, że szablon działa.
+1. Uruchom projekt i sprawdzanie danych wyjściowych. Wyświetlony podobny komunikat, jak pokazano w kroku 2-2, wskazujący, że szablon działa.
 
     Sprawdź, że kod HTML, możesz użyć w `content` właściwości powoduje wyświetlenie tylko jako zwykły tekst, ponieważ `render` funkcja automatycznie specjalne tego HTML. Automatyczne anulowania zapewnianego element zapobiec przypadkowemu luk w zabezpieczeniach na ataki przez iniekcję kodu: deweloperzy często zbierania danych wejściowych z jednej strony i użyć jej jako wartości w drugiej za pomocą symbolu zastępczego szablonu. Anulowanie służy również jako przypomnienie, że ponownie jest najlepiej trzymać HTML w szablonie strony i z kodu. Na szczęście go polega po prostu utworzyć dodatkowe zmienne w razie potrzeby. Na przykład zmienić *templates/index.html* aby dopasować następujący kod, który dodaje tytuł strony i przechowuje wszystkie formatowania w szablonie strony:
 

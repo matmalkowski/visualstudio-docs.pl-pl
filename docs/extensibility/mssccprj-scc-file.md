@@ -14,67 +14,67 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc754437433124e033b0f0fb0feac79487664b51
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139354"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636074"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Plik SCC
-Gdy Visual Studio rozwiązania lub projektu znajduje się pod kontrolą źródła przy użyciu środowiska IDE, IDE otrzymuje dwa kluczowych informacji z kontroli źródła wtyczek w postaci ciągów. Te ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury", są nieprzezroczysta dla IDE, ale są one używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zwykle uzyskuje te ciągi po raz pierwszy przez wywołanie metody [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu dla przyszłych połączeń w celu [SccOpenProject](../extensibility/sccopenproject-function.md). Osadzone w pliki rozwiązań i projektów ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury" nie są automatycznie aktualizowane podczas użytkownika gałęzi rozwidlenia, albo kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być wyczyść jak powinny być zaktualizowane.  
+Po umieszczeniu rozwiązania Visual Studio lub projektu objętego kontrolą źródła przy użyciu IDE, IDE otrzymuje dwa ważnych informacji. Informacje pochodzą z wtyczka do kontroli źródła w postaci ciągów. Te ciągi "AuxPath" i "ProjName" są nieprzezroczyste IDE, ale są używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zazwyczaj pobiera te ciągi po raz pierwszy, wywołując [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu w przyszłych wywołaniach do [SccOpenProject](../extensibility/sccopenproject-function.md). Po osadzeniu w plikach rozwiązania i projektu, ciągi "AuxPath" i "ProjName" nie są automatycznie aktualizowane po użytkownik gałęzi, rozwidleń, lub kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być jasne jak powinny być aktualizowane.  
   
- Wtyczka do kontroli źródła można uniknąć tego problemu przez przechowywanie ciągów "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury" w specjalny plik o nazwie MSSCCPRJ. Plik SCC. Jest to plik lokalnego, po stronie klienta jest własnością i obsługiwanego przez wtyczkę. Ten plik nigdy nie jest umieszczone pod kontrolą źródła, ale jest generowany przez wtyczkę dla każdego katalogu, który zawiera pliki pod kontrolą źródła. Aby ustalić, które pliki są pliki rozwiązań i projektów programu Visual Studio, wtyczka do kontroli źródła można porównać rozszerzenia pliku z listą standard lub dostarczone przez użytkownika. Po IDE wykrywa, że wtyczka obsługuje MSSCCPRJ. Plik SCC przestaje osadzić "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury" ciągów do rozwiązania i pliki projektu i odczytuje te ciągi z MSSCCPRJ. SCC plików zamiast tego.  
+ Wtyczka do kontroli źródła można uniknąć tego problemu, przechowując ciągi "AuxPath" i "ProjName" w specjalnym pliku o nazwie *MSSCCPRJ.SCC* pliku. Jest to plik lokalnego, po stronie klienta jest własnością i utrzymywane przez wtyczkę. Ten plik nigdy nie jest umieszczony pod kontrolą źródła, ale jest generowany przez wtyczki dla każdego katalogu, który zawiera pliki pod kontrolą źródła. Aby określić, które pliki są pliki rozwiązań i projektów programu Visual Studio, wtyczka do kontroli źródła można porównać rozszerzeń plików z listą standardowy lub podanego przez użytkownika. Gdy IDE wykrywa, że wtyczka obsługuje *MSSCCPRJ.SCC* pliku przestaje osadzanie ciągów "AuxPath" i "ProjName" na rozwiązanie i pliki projektu i odczytuje te ciągi z *MSSCCPRJ.SCC*zamiast tego pliku.  
   
- Wtyczka do kontroli źródła obsługującego MSSCCPRJ. Plik SCC musi być zgodne z następującymi zasadami:  
+ Wtyczka do kontroli źródła obsługującego *MSSCCPRJ.SCC* pliku muszą być zgodne z następującymi zasadami:  
   
--   Może istnieć tylko jeden MSSCCPRJ. SCC plików dla katalogu.  
+-   Może istnieć tylko jeden *MSSCCPRJ.SCC* plików dla katalogu.  
   
--   MSSCCPRJ. Plik SCC może zawierać "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury", w przypadku wielu plików, które są pod kontrolą źródła w podanym katalogu.  
+-   *MSSCCPRJ.SCC* plik może zawierać "AuxPath" i "ProjName" dla wielu plików, które są pod kontrolą źródła w danym katalogu.  
   
--   Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niej. Może mieć stawiać cudzysłów wokół go jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazać ciągiem pustym). IDE usuwa wszystkie oferty z ciągu "AuxPath" przeczytaniu z MSSCCPRJ. Plik SCC.  
+-   Ciąg "AuxPath" nie może mieć cudzysłowy wewnątrz niego. Może on być ma ją w cudzysłowie jako ograniczników (na przykład para podwójnych cudzysłowów służy do wskazania ciągiem pustym). Środowisko IDE będzie paska wszystkich ofert z ciągu "AuxPath", gdy są odczytywane z *MSSCCPRJ.SCC* pliku.  
   
--   Ciąg "Nazwa_projektu.nazwa_modułu.nazwa_procedury" w MSSCCPRJ. Plik SCC musi odpowiadać dokładnie ciąg zwrócony `SccGetProjPath` funkcji. Jeśli długość ciągu zwróconego przez funkcję ma cudzysłowów wokół niego ciąg w MSSCCPRJ. Plik SCC musi mieć cudzysłowów wokół niego i na odwrót.  
+-   "ProjName" ciągu w *MSSCCPRJ. Plik SCC* musi być zgodna dokładnie ciąg zwracany z `SccGetProjPath` funkcji. Jeśli ciąg zwracany przez funkcję ma ją ciąg w cudzysłowie *MSSCCPRJ.SCC* plik musi mieć cudzysłowów wokół niej i na odwrót.  
   
--   MSSCCPRJ. SCC pliku jest tworzony lub aktualizowany w każdym przypadku, gdy plik jest umieszczone pod kontrolą źródła.  
+-   *MSSCCPRJ.SCC* pliku jest tworzony lub aktualizowany zawsze wtedy, gdy plik zostanie umieszczony pod kontrolą źródła.  
   
--   Jeśli moduł MSSCCPRJ. Plik SCC zostaje usunięta, dostawcy należy ponownie wygenerować go następnym wykonuje operację na kontroli źródła dotyczące tego katalogu.  
+-   Jeśli *MSSCCPRJ.SCC* plik zostaje usunięte, dostawcy należy ponownie wygenerować go następnym razem wykonuje operacja kontroli źródła, dotyczących tego katalogu.  
   
--   MSSCCPRJ. Plik SCC ściśle musi mieć format zdefiniowany.  
+-   *MSSCCPRJ.SCC* pliku musi ścisłe zdefiniowanym formacie.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ilustracja MSSCCPRJ. Format pliku SCC  
- Poniżej przedstawiono przykładowe MSSCCPRJ. Format pliku SCC (numery wierszy są udostępniane tylko jako wskazówki i nie powinny znajdować się w treści pliku):  
+ Poniżej przedstawiono przykładowe *MSSCCPRJ.SCC* format pliku (numery wierszy są podane tylko jako wskazówki i nie powinny znajdować się w treści pliku):  
   
- [Wiersza 1] `SCC = This is a Source Code Control file`  
+ [Wiersz 1] `SCC = This is a Source Code Control file`  
   
  [Wiersz 2]  
   
  [Wiersz 3] `[TestApp.sln]`  
   
- [Wiersz: 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Wiersz 4] `SCC_Aux_Path = "\\server\vss\"`  
   
  [Wiersz 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Wiersz: 6]  
+ [Wiersz 6]  
   
  [Wiersz 7] `[TestApp.csproj]`  
   
- [Wiersz: 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Wiersz 8] `SCC_Aux_Path = "\\server\vss\"`  
   
  [Wiersz 9] `SCC_Project_Name = "$/TestApp"`  
   
- Pierwszy wiersz stany zastosowanie pliku i służy jako podpis dla wszystkich plików tego typu. Ten wiersz powinien pojawić się dokładnie tak jak poniżej w MSSCCPRJ wszystkie. Pliki SCC:  
+ Pierwszy wiersz stany zastosowanie pliku i służy jako podpis dla wszystkich plików tego typu. Ten wiersz powinien pojawić się tak samo jak to we wszystkich *MSSCCPRJ.SCC* plików:  
   
  `SCC = This is a Source Code Control file`  
   
- Występuje po sekcji ustawień dla każdego pliku, który jest oznaczony jako nazwę pliku w nawiasach kwadratowych. W tej sekcji jest powtarzane dla każdego pliku śledzenia. Ten wiersz jest przykładowe nazwy pliku, a mianowicie, `[TestApp.csproj]`. IDE oczekuje następujące dwa wiersze. Nie, jednak definiuje styl wartości zdefiniowane. Zmienne są `SCC_Aux_Path` i `SCC_Project_Name`.  
+ W poniższej sekcji przedstawiono ustawienia dla każdego pliku, który jest oznaczony według nazwy pliku w nawiasach kwadratowych. W tej sekcji jest powtarzane dla każdego pliku, które są śledzone. Ten wiersz jest przykładem nazwy pliku, to znaczy, `[TestApp.csproj]`. IDE oczekuje, że następujące dwa wiersze. Nie, jednak definiuje styl wartości zdefiniowane. Zmienne są `SCC_Aux_Path` i `SCC_Project_Name`.  
   
  `SCC_Aux_Path = "\\server\vss\"`  
   
  `SCC_Project_Name = "$/TestApp"`  
   
- Nie ma ustawionego ogranicznika zakończenia w tej sekcji. Nazwa pliku, a także wszystkie literały, które pojawiają się w pliku są zdefiniowane w pliku nagłówka scc.h. Aby uzyskać więcej informacji, zobacz [ciągi używane jako klucze do znajdowania Plug-in kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).  
+ Nie ma żadnych ogranicznika końcowego do tej sekcji. Nazwa pliku, a także wszystkie literały, które pojawiają się w pliku są definiowane w pliku nagłówkowym scc.h. Aby uzyskać więcej informacji, zobacz [ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
  [Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

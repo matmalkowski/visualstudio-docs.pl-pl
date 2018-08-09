@@ -13,40 +13,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c44a507cc291b203fc9ba330b248a854f61b81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132276"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636350"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Porady: Tworzenie niestandardowego tekstu znaczników
-Jeśli chcesz utworzyć znacznik niestandardowy tekst, aby wyróżnić lub organizowanie kodu, należy wykonać następujące czynności:  
+Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:  
   
--   Zarejestrować nowego znacznika tekstu, tak aby inne narzędzia do niego dostęp  
+-   Zarejestruj nowy znacznik tekst tak, aby inne narzędzia do niego dostęp.  
   
--   Domyślna implementacja i konfiguracji znacznika tekstu  
+-   Podaj domyślną implementację i konfiguracji znacznika tekstu.  
   
--   Utwórz usługę, która jest używana przez inne procesy, aby użyć znacznika tekstu  
+-   Tworzenie usługi, która może służyć przez inne procesy, aby użyć znacznika tekstu.  
   
- Aby uzyskać więcej informacji na temat sposobu zastosowania znacznika tekstu w regionie kod, zobacz [porady: Użyj znacznikach tekstu](../extensibility/how-to-use-text-markers.md).  
+ Szczegółowe informacje na temat sposobu stosowania znacznika tekstu do regionu kodu, [porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md).  
   
-### <a name="to-register-a-custom-marker"></a>Aby zarejestrować znacznika niestandardowego  
+## <a name="to-register-a-custom-marker"></a>Aby zarejestrować znacznika niestandardowego  
   
 1.  Utwórz wpis rejestru w następujący sposób:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* znaczniki \Text Editor\External\\*\<MarkerGUID >*  
+     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji > Znaczniki \Text Editor\External\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* jest `GUID` używany do identyfikowania znaczników dodaniu  
+     *\<MarkerGUID >* jest `GUID` używany do identyfikowania znacznika dodawany  
   
-     *\<Wersja >* jest wersja [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], na przykład 8.0  
+     `<Version>` jest wersją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], na przykład 8.0  
   
-     *\<PackageGUID >* jest identyfikatorem GUID VSPackage implementacja obiektu automatyzacji.  
+     `<PackageGUID>` Identyfikator GUID pakietu VSPackage implementuje obiektu automatyzacji.  
   
     > [!NOTE]
-    >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez alternatywny głównego po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
+    >  Ścieżka katalogu głównego **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji >** może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* \Text Editor\External znaczniki\\*\<MarkerGUID >*  
+2.  Utwórz cztery wartości w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji > \Text Editor\External znaczniki\\\<MarkerGUID >**  
   
     -   (Domyślnie)  
   
@@ -56,42 +56,42 @@ Jeśli chcesz utworzyć znacznik niestandardowy tekst, aby wyróżnić lub organ
   
     -   Package  
   
-    -   `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający niektóre przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".  
+    -   `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający pewne przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".  
   
-    -   `Service` jest wpisu typu REG_SZ zawierające ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowy tekst przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format to {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Service` jest wpis typu REG_SZ zawierający ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowego tekstu przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` to wpisu typu REG_SZ zawierający identyfikator zasobu Nazwa znacznika tekstu niestandardowego. Format jest #YYYY.  
+    -   `DisplayName` to wpis typu REG_SZ zawierający identyfikator zasobu o nazwie znacznika niestandardowego tekstu. Format jest #YYYY.  
   
-    -   `Package` wpis typu REG_SZ zawierających `GUID` pakiet VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format to {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Package` wpis typu REG_SZ zawierającego `GUID` pakietu VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-### <a name="to-create-a-custom-text-marker"></a>Aby utworzyć znacznik niestandardowy tekst  
+## <a name="to-create-a-custom-text-marker"></a>Aby utworzyć znacznika niestandardowego tekstu  
   
 1.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfejsu.  
   
-     Implementacji ten interfejs definiuje zachowania i wyglądu tego typu znacznika niestandardowego.  
+     Implementacja ten interfejs definiuje zachowania i wyglądu tego typu znacznika niestandardowego.  
   
-     Ten interfejs jest wywoływane, gdy  
+     Ten interfejs jest wywoływana, gdy  
   
     1.  Użytkownik uruchamia IDE po raz pierwszy.  
   
-    2.  Inny użytkownik wybierze **Resetuj** przycisku w obszarze **czcionki i kolory** stronę właściwości w **środowiska** folderu, znajdującego się w lewym okienku  **Opcje** okno dialogowe uzyskane z **narzędzia** menu IDE.  
+    2.  Użytkownik wybierze **Resetuj** przycisku w obszarze **czcionki i kolory** — strona właściwości w **środowiska** folder, znajdujący się w lewym okienku  **Opcje** okno dialogowe uzyskany z **narzędzia** menu środowiska IDE.  
   
-2.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metody, która wskazujące `IVsPackageDefinedTextMarkerType` implementacji powinny być zwróconych na podstawie typ znacznika GUID określonych w wywołaniu metody.  
+2.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metody, wskazujące, której `IVsPackageDefinedTextMarkerType` implementacji powinny być zwracane na podstawie typu znacznika GUID określony w wywołaniu metody.  
   
-     Środowisko wywołuje metody pierwszy teraz danego typu znacznik niestandardowy jest tworzony i określa identyfikator GUID typu znacznika niestandardowego.  
+     Środowisko wywołuje w tej chwili Metoda pierwszego typu znacznika niestandardowego jest tworzony i określa identyfikator GUID typu znacznika niestandardowego.  
   
-### <a name="to-proffer-your-marker-type-as-a-service"></a>Aby proffer danego typu znacznika jako usługa  
+## <a name="to-proffer-your-marker-type-as-a-service"></a>Aby udąło typu znacznika jako usługa  
   
-1.  Wywołanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodę <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
+1.  Wywołaj <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodę <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
   
-     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> jest zwracany.  
+     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> jest zwracana.  
   
-2.  Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metody, określając identyfikator GUID identyfikowanie znacznika niestandardowego typu usługi i zapewnianie wskaźnik do implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu. Twoje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementacji powinien zwraca wskaźnik do implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfejsu.  
+2.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metody, określając identyfikator GUID identyfikujący usługi typu znacznika niestandardowego i podając wskaźnik do implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejsu. Twoje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementacji powinna zwrócić wskaźnik do implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfejsu.  
   
-     Plik cookie unikatowy identyfikujący, zwracany jest usługą. Ten plik cookie mógł później użyć, aby odwołać usługą znacznika niestandardowego typu przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejsu określenie tej wartości pliku cookie.  
+     Plik cookie unikatowe identyfikowanie, że usługa jest zwracana. Ten plik cookie mógł później użyć, aby można było odwołać usługi typu znacznika niestandardowego przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejsu określenie tej wartości pliku cookie.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników tekstu standardowego](../extensibility/how-to-add-standard-text-markers.md)   
- [Porady: Implementowanie znaczników błąd](../extensibility/how-to-implement-error-markers.md)   
- [Porady: Użyj znacznikach tekstu](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>Zobacz także  
+ [Korzystanie ze znaczników tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
+ [Porady: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
+ [Porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

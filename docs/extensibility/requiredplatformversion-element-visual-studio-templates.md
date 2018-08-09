@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136175"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635956"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion, element (szablony Visual Studio)
-Określa minimalną wersję systemu operacyjnego, który szablon projektu wymaga, aby działać poprawnie. Ten element służy do szablonów projektu, które utworzyć [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.  
+Określa minimalną wersję systemu operacyjnego, który szablon projektu wymaga, aby działać poprawnie. Ten element jest używany do szablonów projektu, tworzonych [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.  
   
- `RequiredPlatformVersion` Wartość jest porównywana bezpośrednio z wersją systemu operacyjnego. Jeśli `RequiredPlatformVersion` jest wyższa niż wersja systemu operacyjnego nie ma szablonu **nowy projekt** okno dialogowe. Aby określić szablon dla [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej, ustaw `RequiredPlatformVersion` do 6.2.0. Aby określić szablon dla [!INCLUDE[win81](../debugger/includes/win81_md.md)] lub nowszej, ustaw RequiredPlatformVersion do 6.3.0.  
+ `RequiredPlatformVersion` Wartość jest porównywana bezpośrednio z wersją systemu operacyjnego. Jeśli `RequiredPlatformVersion` jest wyższa niż wersja systemu operacyjnego nie ma szablonu **nowy projekt** okno dialogowe. Aby określić szablon dla [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej, który jest ustawiony `RequiredPlatformVersion` do 6.2.0. Aby określić szablon dla [!INCLUDE[win81](../debugger/includes/win81_md.md)] lub nowszej, który jest ustawiony `RequiredPlatformVersion` do wersji 6.3.0.  
   
- Szablony, które określają `RequiredPlatformVersion`= 8 są zgodne z poprzedniego odbiorcy [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] szablonów.  
+ Szablony, które określają `RequiredPlatformVersion`= 8 są zgodne z poprzedniego klienta [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] szablonów.  
   
  VSTemplate  
 TemplateData  
@@ -49,16 +49,16 @@ RequiredPlatformVersion
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Określa platformę, które obiekty docelowe szablonu projektu.|  
+|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Określa platformę, że projekt jest ukierunkowany szablonu.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
 ## <a name="remarks"></a>Uwagi  
- Ten tekst Określa minimalnej wersji systemu operacyjnego wymagane przez szablon.  
+ Ten tekst Określa wersję minimalną wersję systemu operacyjnego wymagane przez szablon.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie określa, że elementy docelowe projektu szablonu [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszym.  
+ W tym przykładzie określa, że projekt jest ukierunkowany szablonu [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej.  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
@@ -73,7 +73,7 @@ RequiredPlatformVersion
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [TargetPlatformName, Element (szablony Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Zobacz także  
+ [TargetPlatformName, element (szablony Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c8d23a89e55b272657dde0c2374c78e63bfaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc60657eae830fa02d87f52225de780d8a688c11
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138857"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636717"
 ---
 # <a name="scccheckin-function"></a>Funkcja SccCheckin
-Ta funkcja sprawdza w uprzednio pobranych plików do systemu kontroli źródła, przechowywania zmiany i utworzenia nowej wersji. Ta funkcja jest wywoływana z liczbą i tablicę nazw plików do wyewidencjonowania.  
+Ta funkcja sprawdza, czy wcześniej pobranych plików do systemu kontroli źródła, przechowywania zmian i tworzenie nowej wersji. Ta funkcja jest wywoływana z liczbą i tablicę nazw plików do wyewidencjonowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,50 +39,50 @@ SCCRTN SccCheckin (
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka SCC można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które SCC wtyczki mogą służyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
- To  
+ Niepowodzeń  
  [in] Liczba plików wybranych do wyewidencjonowania.  
   
  lpFileNames  
- [in] Tablica nazw plików pełni kwalifikowaną ścieżką lokalną.  
+ [in] Tablica nazw w pełni kwalifikowaną ścieżką lokalną plików do wyewidencjonowania.  
   
  lpComment  
- [in] Komentarz ma zostać zastosowany do każdego z wybranych plików, które zostały zaewidencjonowane. Jest to `NULL` Jeśli wtyczka do kontroli źródła należy Monituj o komentarz.  
+ [in] Komentarz, które mają być stosowane do każdego z wybranych plików, które zostały zaewidencjonowane. Ten parametr jest `NULL` Jeśli wtyczka do kontroli źródła, powinien zostać wyświetlony monit o komentarz.  
   
  fOptions  
- [in] Polecenie flagi, albo 0 lub `SCC_KEEP_CHECKEDOUT`.  
+ [in] Command flag, albo 0 lub `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
  [in] SCC plug-określonych opcji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Pliki został pomyślnie zaewidencjonowany.|  
+|SCC_OK|Plik został pomyślnie zaewidencjonowany.|  
 |SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą kodu źródłowego.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji. Ponowna próba jest zalecane.|  
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd. Plik nie został zaewidencjonowany.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd. Plik nie została zaewidencjonowana.|  
 |SCC_E_NOTCHECKEDOUT|Użytkownik nie został wyewidencjonowany pliku, więc nie można sprawdzić.|  
-|SCC_E_CHECKINCONFLICT|Nie można wykonać zaewidencjonowania, ponieważ:<br /><br /> -Innego użytkownika zaewidencjonował wyprzedzeniem i `bAutoReconcile` była wartość false.<br /><br /> —lub—<br /><br /> Nie można wykonać automatyczne scalanie, (na przykład, jeśli pliki są binarne).|  
-|SCC_E_VERIFYMERGE|Plik został scalony automatycznie, ale nie została sprawdzona w oczekujących Weryfikacja użytkownika.|  
-|SCC_E_FIXMERGE|Plik został scalony automatycznie, ale nie została sprawdzona w z powodu konfliktu scalania, który należy ręcznie rozwiązać.|  
+|SCC_E_CHECKINCONFLICT|Nie można wykonać zaewidencjonowania, ponieważ:<br /><br /> -Inny użytkownik zaewidencjonował wyprzedzeniem i `bAutoReconcile` była wartość false.<br /><br /> —lub—<br /><br /> Nie można wykonać automatyczne scalanie, (na przykład w przypadku plików binarnych).|  
+|SCC_E_VERIFYMERGE|Plik został scalony automatycznie, ale nie został zaewidencjonowany oczekiwania na weryfikację użytkownika.|  
+|SCC_E_FIXMERGE|Plik został scalony automatycznie, ale nie został zaewidencjonowany ze względu na konflikt scalania, które należy ręcznie rozwiązać.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|  
-|SCC_I_RELOADFILE|Plik lub projekt musi zostać ponownie załadowana.|  
+|SCC_I_RELOADFILE|Pliku lub projektu wymaga ponownego załadowania.|  
 |SCC_E_FILENOTEXIST|Nie można odnaleźć pliku lokalnego.|  
   
 ## <a name="remarks"></a>Uwagi  
- Komentarz ma zastosowanie do wszystkich plików, które zostały zaewidencjonowane. Argument komentarz może być `null` ciąg znaków, w którym to przypadku wtyczkę kontroli źródła może monitować użytkownika o ciąg komentarza dla każdego pliku.  
+ Komentarza ma zastosowanie do wszystkich plików, które zostały zaewidencjonowane. Argument komentarz może być `null` ciągu, w którym to przypadku wtyczka do kontroli źródła może monitować użytkownika o ciąg komentarza dla każdego pliku.  
   
- `fOptions` Argument można podać wartości `SCC_KEEP_CHECKEDOUT` flagę wskazującą zamiarem użytkownika zaewidencjonować plik i ponownie wyewidencjonować.  
+ `fOptions` Wartość może być podany argument `SCC_KEEP_CHECKEDOUT` flagę wskazującą intencji użytkownika Zaewidencjonuj go i ponownie Sprawdź wprowadzone zmiany.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

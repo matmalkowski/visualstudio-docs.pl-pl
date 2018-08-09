@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388140"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637646"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
@@ -27,7 +27,7 @@ W poprzednich krokach w tym samouczku wyjaśniono sposób tworzenia minimalną a
 W tym kroku dowiesz się, jak:
 
 > [!div class="checklist"]
-> - Użyj szablony elementów Visual Studio, aby szybko nowe pliki o różnych typach wygodne schematyczny kod (krok 3 - 1)
+> - Użyj szablony elementów Visual Studio, aby szybko dodać nowe pliki o różnych typach wygodne schematyczny kod (krok 3 - 1)
 > - Obsługa plików statycznych z kodu (krok 3-2, opcjonalnie)
 > - Dodawanie dodatkowych stron do aplikacji (krok 3 z 3)
 > - Użyj szablonu dziedziczenia, aby utworzyć pasek nagłówka, jak i nawigacji, który jest używany na stronach (krok 3 – 4)
@@ -89,7 +89,7 @@ W obu przypadkach można organizować pliki objęte *statyczne* dowolny sposób.
 
 ### <a name="serve-a-static-file-from-code"></a>Obsługi plików statycznych z kodu
 
-Flask udostępnia funkcję o nazwie `serve_static_file` , którą można wywołać z kodu do odwoływania się do każdego pliku w projekcie *statyczne* folderu. Następujący proces tworzy prosty punkt końcowy interfejsu API, który zwraca plik danych statycznych).
+Flask udostępnia funkcję o nazwie `serve_static_file` , którą można wywołać z kodu do odwoływania się do każdego pliku w projekcie *statyczne* folderu. Poniższa procedura tworzy prosty punkt końcowy interfejsu API, który zwraca plik danych statycznych.
 
 1. Jeśli użytkownik jeszcze tego nie zrobiono, Utwórz *statyczne* folder: w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **HelloFlask** folderu w projekcie programu Visual Studio, wybierz opcję **Dodaj** > **nowy folder**i nadaj folderowi `static`.
 
@@ -188,7 +188,7 @@ System szablonów firmy Flask (Jinja domyślnie) zapewnia dwa oznacza, że ponow
 
 W obu przypadkach `<template_path>` względem aplikacji *szablony* folder (`../` lub `./` są również dozwolone).
 
-Szablon podstawowy wyznacza *bloki* przy użyciu `{% block <block_name> %}` i `{% endblock %}` tagów. Jeśli szablon odwołujący się następnie używa tagi o takiej samej nazwie bloku, jego zawartość bloku przesłonięcia podstawowego szablonu.
+Szablon podstawowy wyznacza *bloki* przy użyciu `{% block <block_name> %}` i `{% endblock %}` tagów. Jeśli szablon odwołujący się następnie używa tagi o takiej samej nazwie bloku, jego zawartość bloku zastępuje z szablonu podstawowego.
 
 Poniższe kroki prezentują dziedziczenia:
 

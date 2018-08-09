@@ -1,5 +1,5 @@
 ---
-title: 'Porady: diagnozowanie rozszerzenia wydajności | Dokumentacja firmy Microsoft'
+title: 'Porady: diagnozowanie wydajności rozszerzenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/08/2016
 ms.technology:
@@ -11,93 +11,93 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 60a7d1c3178d0fd74983d3f1096d01e578a49a00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133277"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637578"
 ---
-# <a name="measuring-extension-impact-in-startup"></a>Pomiaru wpływu rozszerzenia przy uruchamianiu
+# <a name="measuring-extension-impact-in-startup"></a>Mierzenie wpływu rozszerzenie przy uruchamianiu
 
-## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Skupić się na wydajności rozszerzenia w Visual Studio 2017 r.
+## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Skup się na wydajności rozszerzenia programu Visual Studio 2017
 
-Na podstawie opinii klientów, została jedną obszarach zainteresowań dla wersji programu Visual Studio 2017 uruchamiania i rozwiązanie wydajność obciążenia. Podczas zespole platformy Visual Studio, możemy odbywała się wcześniej Praca poprawia wydajność obciążenia uruchamiania i rozwiązanie ogólnie rzecz biorąc, nasze dane telemetryczne sugeruje zainstalowanych rozszerzeń również może mieć znaczący wpływ na temat tych scenariuszy.
+Na podstawie opinii klientów, jeden obszarach zainteresowań dla wersji programu Visual Studio 2017 został wydajność ładowania uruchamiania i rozwiązania. Zespół platformy Visual Studio Dokładamy wszelkich starań dotyczące poprawy wydajności obciążenia uruchamiania i rozwiązania. Ogólnie rzecz biorąc nasze pomiarów sugerują, zainstalowanych rozszerzeń również może mieć znaczący wpływ na tych scenariuszy.
 
-Aby ułatwić użytkownikom poznania zakresu przedstawionego wypływu, dodaliśmy nową funkcją w programie Visual Studio, aby powiadomić użytkowników powolne rozszerzeń. Visual Studio wykrycie nowe rozszerzenie spowolnieniem uruchamiania lub ładowania rozwiązania, użytkownicy będą widzieć powiadomień w IDE wskazaniem nowego okna dialogowego "Zarządzanie wydajnością programu Visual Studio". To okno dialogowe uzyskiwał zawsze menu Pomoc do przeglądania wykrytych wcześniej rozszerzenia.
+Aby ułatwić użytkownikom poznania zakresu przedstawionego wypływu, dodaliśmy nową funkcję w programie Visual Studio w celu powiadomienia użytkowników o powolne rozszerzenia. Czasami program Visual Studio wykryje nowe rozszerzenie, które spowalnia ładowanie rozwiązania lub uruchamiania. Po wykryciu spowalniają działanie, użytkownicy będą widzieć powiadomień w środowisku IDE, wskazując je do nowego okna dialogowego "Zarządzanie wydajnością programu Visual Studio". Menu Pomoc, aby przejść do wcześniej wykrytych rozszerzenia również są zawsze możliwy to okno dialogowe.
 
-![Zarządzanie działanie programu Visual Studio](media/manage-performance.png)
+![Zarządzanie wydajnością programu Visual Studio](media/manage-performance.png)
 
-Ten dokument ma na celu pomóc deweloperom rozszerzenia przez opisujący sposób obliczania wpływ rozszerzenia i jak można ją analizować lokalnie Aby sprawdzić, czy rozszerzenie mogą być wyświetlane jako wydajności wpływające na rozszerzenia.
+Ten dokument ma na celu pomoc deweloperom rozszerzenie poprzez opisanie, jak jest obliczana wpływ rozszerzenia. W tym dokumencie opisano również, jak wpływ rozszerzenia można analizować lokalnie. Lokalnie analizowanie wpływu rozszerzenia określi, jeśli rozszerzenie może być wyświetlany jako wydajności, wpływ na rozszerzenia.
 
 > [!NOTE]
-> Ten dokument koncentruje się na wpływ rozszerzeń dla obciążenia uruchamiania i rozwiązania. Rozszerzenia również wpływać na wydajność programu Visual Studio po spowodują one interfejsu użytkownika przestać odpowiadać. Aby uzyskać więcej informacji na ten temat, zobacz [porady: diagnozowanie interfejsu użytkownika opóźnienia powodowane przez rozszerzenia](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Ten dokument koncentruje się na temat wpływu rozszerzeń na rozwiązanie i uruchamiania obciążenia. Rozszerzenia również wpływ na wydajność programu Visual Studio podczas spowodują interfejsu użytkownika przestanie odpowiadać. Aby uzyskać więcej informacji na ten temat, zobacz [porady: diagnozowanie opóźnień interfejsu użytkownika powodowanych przez rozszerzenia](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Wpływ uruchamiania rozszerzenia
 
-Najbardziej typowe sposoby dla rozszerzenia, które mają wpływ na wydajność uruchamiania jest wybrać opcję automatycznego obciążenia w jednej uruchamiania znanych kontekstów interfejsu użytkownika takich jak NoSolutionExists lub ShellInitialized. Te konteksty interfejsu użytkownika uzyskać aktywowana podczas uruchamiania i wszelkie pakiety, które obejmują atrybut "ProvideAutoLoad" w ich definicji z tych kontekstach zostanie załadowana i zainicjowane w tej chwili.
+Jednym z najbardziej typowych sposobów do rozszerzenia, które mają wpływ na wydajność uruchamiania jest wybierając ładowane automatycznie w poszczególnych kontekstach interfejsu użytkownika znanych uruchamiania, takich jak NoSolutionExists lub ShellInitialized. Tych kontekstach interfejsu użytkownika, aktywować podczas uruchamiania. Wszystkie pakiety, które obejmują `ProvideAutoLoad` atrybutu w ich definicji z tych kontekstach zostanie załadowany i zainicjowany w danym momencie.
 
-Gdy firma Microsoft mierzymy jego wpływ na rozszerzenia, możemy głównie skupić się na czasu poświęcanego przez te rozszerzenia, które wybrać opcję automatycznego obciążenia w kontekstach powyżej. Mierzy czas będzie zawierać, ale nie jest ograniczona do:
+Gdy firma Microsoft szacować wpływ tych rozszerzeń, przede wszystkim skupimy się na czas spędzony przez te rozszerzenia, które chce automatycznie obciążenia w kontekstach powyżej. Mierzony czas będzie obejmują, ale nie ogranicza się do:
 
-* Podczas ładowania zestawów rozszerzenia synchroniczne pakietów
-* Czas spędzony w konstruktorze klasy pakietu dla pakietów synchroniczne
-* Czas spędzony w metodzie inicjowania (lub SetSite) pakietu synchroniczne pakietów
-* Asynchroniczne pakietów wyżej czynności uruchomienie wątku w tle i w związku z tym są wykluczone z monitorowania
-* Czas działania zaplanowane podczas inicjowania pakietu w głównym wątku asynchronicznego pracę
-* Czas działania obsługi zdarzeń, w szczególności powłoki zainicjować kontekstu aktywacji lub zmiana stanu zombie powłoki
-* Począwszy od programu Visual Studio 2017 Update 3, zostanie również rozpocznie się monitorowanie czas wykonywania na bezczynności połączenia przed zainicjowaniem powłoki. Dużo operacji w obsłudze bezczynności także spowodować odpowiadać IDE i przyczyniają się do czasu uruchomienia postrzegana przez użytkownika.
+* Ładowanie zestawów rozszerzeń dla pakietów synchroniczne
+* Czas w konstruktorze klasy pakietu dla pakietów synchroniczne
+* Czas w metodzie zainicjowanie (lub setsite —) pakietu pakietów synchroniczne
+* Asynchroniczne pakietów powyżej operacje są uruchamiane w wątku w tle.  Jako takie operacje są wykluczone z monitorowania.
+* Czas potrzebny do dowolnego zadanie asynchroniczne planowane podczas inicjowania pakiet do uruchomienia w głównym wątku
+* Czas spędzony w procedurze obsługi zdarzeń, specjalnie powłoki zainicjować kontekstu aktywacji lub zmiana stanu zombie powłoki
+* Począwszy od programu Visual Studio 2017 Update 3, firma Microsoft będzie również uruchomić monitorowania czas poświęcony w bezczynności połączenia przed powłoki jest zainicjowany. Długie operacji w obsłudze bezczynności również powodować IDE nie odpowiada i przyczynić się do czasu uruchamiania postrzegany przez użytkownika.
 
-Dodano wiele funkcji, począwszy od programu Visual Studio 2015 w celu usunięcie potrzebę pakietów do automatycznego obciążenia, Odłóż ich obciążenia do bardziej szczegółowych przypadków, w których użytkownicy będą bardziej niektórych rozszerzenie lub zmniejszyć wpływ rozszerzenia podczas ładowania automatycznie.
+Dodaliśmy wiele funkcji, począwszy od programu Visual Studio 2015. Te funkcje ułatwiają z konieczności pakietów ładowane automatycznie. Funkcje Odłóż również potrzebę pakietów do załadowania do bardziej szczegółowych przypadków. Te przypadki obejmują przykłady, których użytkownicy będą bardziej określone za pomocą rozszerzenia lub ograniczenia wpływu rozszerzeń, podczas ładowania automatycznie.
 
 Więcej informacji o tych funkcjach można znaleźć w następujących dokumentach:
 
-[Konteksty interfejsu użytkownika na podstawie reguł](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bogatsze aparat oparty na regułach opracowane w kontekstach interfejsu użytkownika pozwalają tworzyć niestandardowe kontekstów na podstawie typów projektów, odmian i możliwości. Te niestandardowe kontekstów można załadować pakietu podczas bardziej konkretnych scenariuszy, takich jak obecności projektu z konkretną funkcją zamiast uruchamiania; lub zezwolić [polecenia widoczność ograniczeni do niestandardowych kontekstu](visibilityconstraints-element.md) na podstawie możliwości projektu lub inne dostępne postanowienia, eliminując konieczność załadowania pakietu można zarejestrować obsługi zapytania stan polecenia.
+[Konteksty interfejsu użytkownika opartego na regułach](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bardziej rozbudowane oparty na regułach aparat zbudowane wokół kontekstów interfejsu użytkownika pozwala na tworzenie kontekstów niestandardowego na podstawie typów projektów, odmian i atrybuty. Konteksty niestandardowego może służyć do ładowania pakietu podczas bardziej specyficznych scenariuszy. Określone scenariusze obejmują obecności projekt z konkretną funkcją, zamiast uruchamiania. Konteksty niestandardowych również zezwolić [polecenia widoczność ograniczeni do kontekstowego](visibilityconstraints-element.md) na podstawie składników projektów lub innych dostępnych warunków. Ta funkcja eliminuje potrzebę załadowanie pakietu, aby zarejestrować procedurę obsługi poleceń stan zapytania.
 
-[Obsługa asynchroniczne pakietu](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Nowa klasa podstawowa AsyncPackage w programie Visual Studio 2015 umożliwia pakietów programu Visual Studio do załadowania w tle asynchronicznie Jeśli pakiet obciążenia żądał atrybut obciążenia auto lub zapytania asynchronicznego usługi . Podczas ładowania tego tła umożliwia IDE pozostać odpowiadać podczas rozszerzenia został zainicjowany w tle i scenariuszy o kluczowym znaczeniu jak obciążenia uruchamiania i rozwiązanie nie będzie w pełni funkcjonalne.
+[Obsługa asynchronicznego pakietu](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): nowe klasy bazowej AsyncPackage w programie Visual Studio 2015 umożliwia pakietów programu Visual Studio do załadowania w tle asynchroniczne ładowanie pakiet został żądanie atrybutu obciążenia automatycznie lub zapytania usługi asynchroniczne . To ładowanie tła umożliwia IDE na bieżąco dynamiczny. Środowisko IDE jest elastyczny, nawet wtedy, gdy rozszerzenie zostanie zainicjowana w tle i nie ma wpływu na scenariuszy o kluczowym znaczeniu, takie jak uruchamianie i rozwiązanie obciążenia.
 
-[Asynchroniczne usług](how-to-provide-an-asynchronous-visual-studio-service.md): Z obsługą asynchroniczne pakietu dodaliśmy również obsługę asynchronicznie kwerenda usług i możliwość zarejestrowania asynchronicznych usług. Ważniejsze pracujemy nad konwertowanie podstawowe usługi Visual Studio obsługuje zapytania asynchronicznego, dzięki czemu większość pracy w zapytaniu async występuje w wątki w tle. SComponentModel (Visual Studio MEF host) jest jednym z głównych usług, które obsługuje teraz zapytania asynchronicznego, aby zezwalać na rozszerzenia obsługi asynchroniczne ładowanie całkowicie.
+[Asynchronicznych usług](how-to-provide-an-asynchronous-visual-studio-service.md): Z obsługą pakietów asynchronicznego dodaliśmy również obsługę zapytań usług asynchronicznie i możliwość rejestrowania asynchronicznych usług. Co ważniejsze pracujemy nad konwertowanie podstawowych usług Visual Studio do obsługi asynchronicznej kwerendy, tak aby większość pracy w zapytaniu async odbywa się w wątków w tle. SComponentModel (Visual Studio MEF host) jest jednym z głównych usług, które obsługuje teraz zapytania asynchronicznego umożliwia rozszerzeń do obsługi asynchroniczne ładowanie całkowicie.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Zmniejszenie wpływu automatycznie załadować rozszerzeń
 
-Jeśli pakiet nadal musi być automatycznie załadowany podczas uruchamiania, należy zminimalizować pracy podczas inicjowania pakietu, aby ograniczyć możliwość rozszerzenia wpływające na uruchamiania.
+Jeśli pakiet jest nadal wymagana automatycznie ładowane podczas uruchamiania, jest ważne, aby zminimalizować prace wykonane podczas inicjowania pakietu. Minimalizacja pracy inicjowania pakietu zmniejsza ryzyko wystąpienia rozszerzenia wpływ na uruchamianie.
 
-Przykłady powodujących inicjowania pakietu są kosztowne to:
+Kilka przykładów, które może spowodować, że pakiet inicjowania są kosztowne są:
 
-### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Użyj pakietu synchroniczne obciążenia zamiast obciążenia asynchroniczne pakietu
+### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Użyj pakietu synchroniczne obciążenia zamiast obciążenia asynchronicznego pakietu
 
-Ponieważ synchroniczne pakiety są ładowane w głównym wątku domyślnie, firma Microsoft zachęca rozszerzenia właścicieli, których ładowane automatycznie pakietów, użyj zamiast tego, jak wspomniano wcześniej klasy podstawowej asynchroniczne pakietu. Zmiana pakiet załadowany automatycznie w celu obsługi asynchroniczne ładowanie będzie również ułatwić rozwiązać poniższe problemy.
+Ponieważ synchroniczne pakiety są ładowane w wątku głównym, domyślnie, firma Microsoft zachęca właścicieli rozszerzenia, których ma automatycznie załadować pakietów do użycia zamiast tego, jak wspomniano wcześniej klasy bazowej asynchronicznego pakietu. Zmiana automatycznie załadować pakiet programu obsługuje asynchroniczne ładowanie również ułatwi rozwiązać poniższe problemy.
 
-### <a name="synchronous-filenetwork-io-requests"></a>Żądania We/Wy pliku synchroniczne i sieci
+### <a name="synchronous-filenetwork-io-requests"></a>Żądania We/Wy pliku synchroniczne/sieć
 
-W idealnym przypadku żadnych synchroniczne żądania We/Wy pliku lub sieci należy unikać w głównym wątku ich wpływ będzie zależeć od stanu komputera i zablokować przez dłuższy czas, w niektórych przypadkach.
+W idealnym każdego synchroniczne żądania We/Wy pliku lub sieci należy unikać w wątku głównym. Ich wpływ będzie zależeć od stan komputera i może zablokować przez długi czas, w niektórych przypadkach.
 
-Przy użyciu pakietu asynchroniczne ładowanie i asynchroniczne We/Wy interfejsów API powinien zapewnić inicjowania pakietu nie blokuje wątku głównego w takich przypadkach i użytkownicy nadal mogą współdziałać z programem Visual Studio podczas żądań We/Wy występować w tle.
+Za pomocą pakietu asynchroniczne ładowanie i asynchronicznych operacji We/Wy interfejsów API upewnij się, że Inicjalizacja tego pakietu nie blokuje wątek główny w takich przypadkach. Użytkownicy mogą również nadal wchodzić w interakcje z programem Visual Studio, podczas gdy żądań We/Wy odbywa się w tle.
 
-### <a name="early-initialization-of-services-components"></a>Inicjowanie wcześniejszego usług i składników
+### <a name="early-initialization-of-services-components"></a>Wczesne inicjowania usług i składników
 
-Jednym z typowych wzorców podczas inicjowania pakietu jest zainicjować usług używanych przez lub udostępniane przez ten pakiet w metodzie konstruktora lub zainicjować pakietu. Gdy gwarantuje to, że usługi są gotowe do użycia, można również dodać niepotrzebnych kosztów do pakietu podczas ładowania, jeśli te usługi nie są używane natychmiast. Zamiast tego takie usługi muszą zostać zainicjowane na żądanie, aby zminimalizować pracy podczas inicjowania pakietu.
+Jednym z typowych wzorców podczas inicjowania pakietu jest zainicjować usług używanych przez lub udostępniane przez ten pakiet w pakiecie `constructor` lub `initialize` metody. Dzięki temu usługi są gotowe do użycia, jego można również dodać niepotrzebnych kosztów pakietów ładowania tych usług nie są używane bezpośrednio. Zamiast tego tych usług powinna zostać zainicjowana na żądanie, aby zminimalizować prace wykonane w pakiet inicjowania.
 
-Dostarczona przez pakiet usług globalnych można użyć metody AddService, które przyjmuje funkcja opóźnieniem zainicjować usługi tylko wtedy, gdy jest on wymagany przez składnik. W przypadku usług używanych w pakiecie, możesz użyć Lazy<T> lub AsyncLazy<T> do zapewnienia usług zainicjować/zbadać przy pierwszym użyciu.
+W przypadku usług globalnych dostarczonej przez pakiet, można użyć `AddService` metod, dla których funkcja opóźnieniem zainicjować usługi tylko wtedy, gdy jest on wymagany przez składnik. Obejmujący usługi używane w pakiecie, można użyć leniwy<T> lub AsyncLazy<T> aby upewnić się, że usługi są inicjowane/badane przy pierwszym użyciu.
 
-## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Pomiaru wpływu automatycznie załadować rozszerzeń przy użyciu dziennika aktywności
+## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Mierzenie wpływu automatycznie załadować rozszerzeń przy użyciu dziennika aktywności
 
-Począwszy od programu Visual Studio 2017 Update 3 Dziennik aktywności programu Visual Studio będzie teraz zawierać wpisy dla pakietów wpływ na wydajność podczas uruchamiania i rozwiązanie obciążenia. Aby zobaczyć pomiarów, masz do uruchamiania programu Visual Studio z przełącznikiem/log i Otwórz plik ActivityLog.xml.
+Począwszy od programu Visual Studio 2017 Update 3, dziennika aktywności w programie Visual Studio będzie zawierają teraz wpisy dla pakietów wpływ na wydajność podczas uruchamiania i rozwiązanie ładowania. Aby można było wyświetlić te pomiary, musisz uruchomić program Visual Studio z przełącznikiem/log, a następnie otwórz *plik ActivityLog.xml* pliku.
 
-W dzienniku aktywności wpisy znajdują się w źródłowym "Zarządzanie wydajnością programu Visual Studio" i będą wyglądać jak poniżej:
+W dzienniku aktywności wpisy będzie wymieniony w obszarze "Zarządzanie wydajnością programu Visual Studio" źródła i będzie wyglądać następująco:
 
 ```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
 
-Oznacza to tego pakietu z GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" poświęconego 2008 ms przy uruchamianiu programu Visual Studio. Należy pamiętać, że Visual Studio uwzględnia najwyższego poziomu koszt jako podstawowy numer, podczas obliczania wpływ pakietu jako wyniesie użytkownika savigs Zobacz podczas ich wyłączyć rozszerzenie dla tego pakietu.
+Ten przykład pokazuje, że pakiet o identyfikatorze GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" poświęcony 2008 ms w przypadku uruchamiania programu Visual Studio. Należy pamiętać, że Visual Studio uwzględnia koszt najwyższego poziomu jako podstawowy numer, podczas obliczania wpływ pakietu, ponieważ byłoby się, że użytkownicy oszczędności widzą podczas ich wyłączyć rozszerzenie dla tego pakietu.
 
-## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Pomiaru wpływu automatycznie załadować rozszerzeń przy użyciu narzędzia PerfView
+## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Mierzenie wpływu automatycznie załadować rozszerzeń przy użyciu narzędzia PerfView
 
-Podczas analizy kodu może ułatwić identyfikację ścieżki kodu, które może to spowolnić inicjowania pakietu, może również korzystać śledzenia przy użyciu aplikacji, takich jak narzędzia PerfView zrozumienie wpływu obciążenia pakietu przy uruchamianiu programu Visual Studio.
+Podczas analizy kodu może być pomocny w zidentyfikowaniu ścieżki kodu, które może spowolnić inicjowania pakiet, możesz użyć śledzenia przy użyciu aplikacji, takich jak narzędzia PerfView, aby zrozumieć wpływ obciążenia pakietu w uruchamiania programu Visual Studio.
 
-Narzędzia PerfView jest narzędziem do śledzenia szeroki system, który pomoże poznać gorących ścieżek w aplikacji, albo z powodu użycia procesora CPU lub blokuje wywołań systemowych. Poniżej przedstawiono prosty przykład na analizowanie Przykładowe rozszerzenie przy użyciu narzędzia PerfView dostępne pod adresem [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567).
+Narzędzia PerfView jest narzędziem do śledzenia całego systemu. To narzędzie pomoże zrozumienia działania ścieżek krytycznych w aplikacji z powodu użycia procesora CPU lub blokuje wywołania systemowe. Poniżej przedstawiono prosty przykład na analizowaniu Przykładowe rozszerzenie za pomocą narzędzia PerfView dostępne pod adresem [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567).
 
-**Przykład kodu:**
+**Przykładowy kod:**
 
-Ten przykład jest oparty na przykład niektóre typowe przyczyny opóźnienia przypadek poniższego kodu, który jest przeznaczony do wyświetlenia:
+Ten przykład jest oparty na przykład niektóre typowe przyczyny opóźnienie zamierzone, Zapisz poniżej kodu, który został zaprojektowany do wyświetlenia:
 
 ```csharp
 protected override void Initialize()
@@ -138,47 +138,47 @@ private void DoMoreWork()
 }
 ```
 
-**Rejestrowanie śledzenia z narzędzia PerfView:**
+**Rejestrowanie śledzenia za pomocą narzędzia PerfView:**
 
-Po skonfigurowaniu środowiska Visual Studio z rozszerzeniem zainstalowany można rejestrować śledzenia uruchamiania, należy otworzyć narzędzia PerfView i otwarcie okna dialogowego zbieranie z menu "Zbieranie".
+Po skonfigurowaniu środowiska programu Visual Studio za pomocą rozszerzenia zainstalowane można zarejestrować śledzenia uruchamiania, otwierając narzędzia PerfView i otwierania **zbieranie** okna dialogowego **zbieranie** menu.
 
 ![zbieranie menu Narzędzia perfview](media/perfview-collect-menu.png)
 
-Domyślne opcje zapewni stosy wywołań wykorzystania Procesora, ale ponieważ interesuje NAS również czas blokowania, należy również włączyć stosów "Czas wątku". Po zatwierdzeniu gotowe ustawienia można polecenie "Rozpocznij zbieranie" i uruchom program Visual Studio po uruchomieniu rejestrowania.
+Domyślne opcje zapewni stosy wywołań do użycia procesora CPU, ale ponieważ jesteśmy zainteresowani także czasu blokowania, należy również włączyć **czasu wątku** stosów. Gdy gotowe ustawienia możesz kliknąć **Rozpocznij zbieranie** i uruchom program Visual Studio po uruchomieniu rejestrowania.
 
-Przed zatrzymaniem zbierania chcesz upewnij się, że Visual Studio jest w pełni zainicjowany, okno główne jest całkowicie widoczna i jeśli rozszerzenie zawiera wszystkie elementy interfejsu użytkownika, które są automatycznie wyświetlane, również są widoczne. Po Visual Studio jest całkowicie załadowany i rozszerzenie został zainicjowany, można zatrzymać rejestrowanie do analizowania śledzenia.
+Przed zatrzymaniem zbierania należy upewnić się, program Visual Studio jest w pełni zainicjowany, okno główne jest całkowicie widoczna i jeśli rozszerzenie zawiera wszystkie elementy interfejsu użytkownika, które automatycznie pokazują, również są widoczne. Po całkowitym załadowaniu programu Visual Studio i rozszerzenia jest inicjowany, można zatrzymać rejestrowania można analizować śledzenia.
 
-**Analizowanie danych śledzenia z narzędzia PerfView:**
+**Analizowanie danych śledzenia przy użyciu narzędzia PerfView:**
 
-Po zakończeniu rejestrowania narzędzia PerfView automatycznie otworzyć śledzenia i opcje.
+Po zakończeniu nagrywania narzędzia PerfView automatycznie otworzyć śledzenia i opcje $expand.
 
-Na potrzeby tego przykładu Dbamy głównie w widoku "Wątku czasu stosy", która znajduje się w grupie"Advanced". Ten widok wyświetli całkowity czas spędzony na wątek przy użyciu metody, w tym zarówno czas procesora CPU i czas blokowania, takich jak We/Wy dysku lub Oczekiwanie na dojściach.
+Na potrzeby tego przykładu, jesteśmy szczególnie zainteresowani **wątku stosów czasu** widoku, który można znaleźć w obszarze **grupę zaawansowane**. Widok ten wyświetli łączny czas spędzony na wątku za pomocą metody, w tym czas procesora CPU i czas blokowania, takich jak We/Wy dysku lub Oczekiwanie na uchwyty.
 
- ![stosy wątków czasu](media/perfview-thread-time-stacks.png)
+ ![stosy czasu wątków](media/perfview-thread-time-stacks.png)
 
- Podczas otwierania "Wątku czasu stosy" widok, należy wybrać proces "devenv" można rozpocząć analizy.
+ Podczas otwierania **wątku stosów czasu** wyświetlić, należy wybrać **devenv** procesu można rozpocząć analizy.
 
-Narzędzia PerfView przedstawiono szczegółowe instrukcje dotyczące odczytu wątku stosy czasu w obszarze własną menu Pomoc, aby uzyskać bardziej szczegółowe analizy. Do celów tego przykładu chcemy filtrowania tego widoku dalsze tylko włączając stosy z wątkiem naszych pakietów w module nazwy i uruchamiania.
+Narzędzia PerfView zawiera szczegółowe wskazówki dotyczące sposobu odczytywania wątku stosów czasu w ramach własnej menu Pomoc, aby uzyskać bardziej szczegółową analizę. Do celów tego przykładu chcemy filtrować dalsze ten widok, tylko tym stosów z wątkiem naszych pakietów w module nazwy i uruchamiania.
 
-1. Wartość "GroupPats" pusty tekst, aby usunąć wszelkie grupowania domyślnie dodawane.
-2. Zestaw "IncPats", aby uwzględnić część nazwy zestawu i uruchomienia wątku oprócz istniejący filtr procesu. W takim przypadku należy go "devenv; Uruchamianie wątku; MakeVsSlowExtension".
+1. Ustaw **GroupPats** na pusty tekst, aby usunąć wszelkie grupowanie dodawany domyślnie.
+2. Ustaw **IncPats** obejmujący część nazwy zestawu i uruchamiania wątku oprócz istniejącego filtru procesu. W tym przypadku powinien być **devenv; Uruchamianie wątku; MakeVsSlowExtension**.
 
-Obecnie tylko pokazywanych jest koszt związany z zestawami związane z rozszerzenia. W tym widoku kiedykolwiek wymienione w kolumnie "Inc" (całkowity koszt) uruchomienia wątku jest powiązany z naszych filtrowane rozszerzenia i będzie mieć wpływ na uruchamiania.
+Teraz w widoku będzie wyświetlana tylko koszt, który jest skojarzony z zestawów powiązanych do rozszerzenia. W tym widoku, ilekroć się na liście **Inc (całkowity koszt)** kolumny uruchamiania wątku jest powiązany z naszego rozszerzenia filtrowane i będzie mieć wpływ na uruchamianie.
 
-Na przykład powyżej niektóre ciekawe wywołanie będzie stosy:
+W przykładzie powyżej niektóre ciekawe wywołania będą stosów:
 
-1. We/Wy przy użyciu klasy System.IO: całkowity koszt tych ramek nie może być bardzo kosztowna w śledzeniu, są potencjalną przyczyną problemu, ponieważ plik szybkości operacji We/Wy zależy od komputera.
+1. We/Wy przy użyciu `System.IO` klasy: całkowity koszt te klatki nie może być zbyt drogie w śledzeniu, są potencjalną przyczyną problemu, ponieważ szybkość operacji We/Wy pliku będą się różnić od maszyny.
 
   ![system We/Wy ramki](media/perfview-system-io-frames.png)
 
-2. Blokowanie oczekiwanie na inne zadanie asynchroniczne wywołania: W tym przypadku całkowity czas będzie odpowiadają za czas wątku głównego jest zablokowany, po zakończeniu pracy asynchronicznego.
+2. Blokuje wywołania oczekiwanie na inne zadanie asynchroniczne: W tym przypadku całkowity czas reprezentuje czas główny wątek jest zablokowany na ukończenie zadań asynchronicznych.
 
-  ![Blokowanie ramki wywołania](media/perfview-blocking-call-frames.png)
+  ![blokowanie ramek wywołania](media/perfview-blocking-call-frames.png)
 
-Jeden z innymi widokami w śledzeniu, które mogą być przydatne do określenia wpływu będzie "Stosy obciążenia obrazu". Można zastosować filtry tej samej, jak stosować do widoku "Wątku czasu stosy" i sprawdzić wszystkie zestawy ładowane z powodu kod wykonywany przez pakiet załadowany automatycznie.
+Jedną z innymi widokami w śledzenia, które mogą być przydatne do określenia wpływu będzie **stosy ładowania obrazów**. Można zastosować tych samych filtrów, jakie mają zastosowanie do **wątku stosów czasu** służy do wyświetlania i Dowiedz się, wszystkie zestawy, ładowane z powodu kod wykonywany przez pakiet załadowane automatycznie.
 
-Jest ważne zminimalizować liczbę zestawów załadowanych wewnątrz procedura inicjowania pakietu, ponieważ każdy dodatkowego zestawu będzie obejmować We/Wy dysku dodatkowe, które może to spowolnić uruchamiania znacznie wolniejsze maszynach.
+Jest ważne, aby zminimalizować liczbę załadowanych zestawów wewnątrz procedury inicjowania pakietu, zgodnie z każdego dodatkowego zestawu pociąga za sobą we/wy dodatkowy dysk, który może spowolnić uruchamiania znacznie na maszynach wolniej.
 
 ## <a name="summary"></a>Podsumowanie
 
-Uruchamiania programu Visual Studio został jeden z obszarów, które firma Microsoft stale przesyłania opinii dotyczących. Naszym celem zgodnie z wcześniej jest dla wszystkich użytkowników do uruchomienia spójne środowisko niezależnie od tego, czy składniki i rozszerzenia, które są zainstalowane i chcemy pracować z rozszerzenia właścicieli, aby ułatwić im pomóc nam osiągnięcie tego celu. Wskazówki dotyczące powyżej powinny być pomocne w zrozumienie wpływu rozszerzenia podczas uruchamiania i albo uniknięcie automatycznie obciążenia lub załadować asynchronicznie, aby zminimalizować wpływ na wydajność pracy użytkownika.
+Uruchamianie programu Visual Studio został jednego z obszarów, które firma Microsoft stale uzyskiwanie opinii na temat. Naszym celem, jak wspomniano wcześniej, jest dla wszystkich użytkowników do uruchomienia spójne środowisko niezależnie od tego, czy składniki i rozszerzeń, które na nich zainstalować. Prosimy o poświęcenie do pracy z właścicielami rozszerzenia, aby pomóc im pomóc nam osiągnąć ten cel. Wskazówki dotyczące powyższych powinny być pomocne w zrozumienie wpływu rozszerzeń na uruchamianie i albo uniknięcie konieczności auto obciążenia lub załadować je asynchronicznie, aby zminimalizować wpływ na wydajność pracy użytkownika.

@@ -1,7 +1,7 @@
 ---
-title: Zmienianie dziennika (Visual Studio Tools for Unity, Mac) | Dokumentacja firmy Microsoft
+title: Zmienianie dziennika (Visual Studio Tools for Unity, komputery Mac) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 04/05/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,73 +10,117 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d43542dc78c8bc0eaeb05e1a620edff7a88efa37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31086027"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639737"
 ---
-# <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (Visual Studio Tools for Unity, Mac)
-Visual Studio Tools for Unity dziennika zmian.
+# <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
+Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="1602"></a>1.6.0.2
+ Wydana 24 lipca 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+     -   Obejście wycofywania na wydajność aparatu Unity usterek (jak Unity rozwiązano ten problem).
+     
+## <a name="1601"></a>1.6.0.1
+ Wydana 10 lipca 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+     -   Obsługuje stały barwy kodu programu do cieniowania.
+     
+## <a name="1600"></a>1.6.0.0
+ Wydana 26 czerwca 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Kreatorów:**
+
+    -   Naprawiono błąd pisowni OnApplicationFocus komunikat.
+
+-   **Generowanie projektu:**
+
+     -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
+     
+     -   Nie można konwertować przenośnego pliku pdb mdb już korzystając z nowego środowiska uruchomieniowego platformy Unity.
+     
+## <a name="1502"></a>1.5.0.2
+ Wydana 18 kwietnia 2018 r.
+ 
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Dodano obsługę podstawowych uzupełnianie kodu programu do cieniowania.
+    
+    -   Dodano obsługę przełączanie komentarze w plikach programu do cieniowania.
 
 ## <a name="1501"></a>1.5.0.1
- Wydanych 2018-03-28
+ Wydana 28 marca 2018 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
 
-    -   Dodano obsługę dodatkowe szablony w obszarze Eksplorator projektów Unity.
+    -   Dodano obsługę dodatkowych szablonów w Eksploratorze projektów aparatu Unity.
 
 ## <a name="1500"></a>1.5.0.0
- Wydanych 2018-03-21
+ Wydana 21 marca 2018 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
 
-    -   Dodano obsługę wykrywania i dołączanie do połączone za pośrednictwem portu USB odtwarzacze systemu Android.
+    -   Dodano obsługę wykrywania i dołączanie do graczy systemu Android połączone za pośrednictwem portu USB.
 
 ## <a name="1403"></a>1.4.0.3
- Wydanych 2018-03-05
+ Wydanie 5 marca 2018 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
 
-    -   Dodano obsługę dla generatora nowego projektu w Unity 2018.1.
+    -   Dodano obsługę nowych generator projektu w 2018.1 aparatu Unity.
 
 -   **Integracja:**
 
-    -   Dodano panelu dla ustawień dedykowanego.
+    -   Dodano opcję panel ustawień dedykowanego.
 
 ## <a name="1402"></a>1.4.0.2
- Wydanych 2018-01-24
+ Wydana 24 stycznia 2018 r.
  
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
 
-    -   Wykrywanie wersji Mono stałej.
+    -   Wykrywanie poprawionej wersji platformy Mono.
 
 -   **Integracja:**
 
-    -   Stałe problemy dotyczące synchronizacji z 2018.1 i wtyczki aktywacji.
+    -   Rozwiązano problemy dotyczące synchronizacji z 2018.1 i aktywacją wtyczka.
 
-    -   Stałe powiadomienia, gdy wykrywanie nowych player.
+    -   Naprawiono powiadomienia, gdy nowy gracz wykrywanie.
 
 ## <a name="1401"></a>1.4.0.1
- Wydanych 2018-01-23
+ Wydana 23 stycznia 2018 r.
  
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Kliknij dwukrotnie stałym folderów Rozwiń/Zwiń na
+    -   Kliknij dwukrotnie stały folderów Rozwiń/Zwiń na
 
 ## <a name="1400"></a>1.4.0.0
- Wydanych 2017-12-13
+ Wydana 13 grudnia 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -88,34 +132,34 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Integracja:**
 
-    -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
+    -   Stałym pdb automatyczne do konwersji symboli debugowania mdb.
 
 ## <a name="1301"></a>1.3.0.1
- Wydanych 2017-12-12
+ Wydana 12 grudnia 2017 r.
  
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Wywołanie pośrednie stałym EditorPrefs.GetBool wpływające na Inspektor podczas próby zmiany rozmiaru tablicy.
+    -   Naprawiono wywołanie pośrednie EditorPrefs.GetBool wpływające na panelu Inspektor podczas próby zmiany rozmiaru tablicy.
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Odśwież kontekst roslyn przed wstawieniem metody.
+    -   Odśwież kontekstu roslyn przed wstawieniem metody.
 
 ## <a name="1300"></a>1.3.0.0
- Wydanych 2017-11-20
+ Wydana 20 listopada 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
--   **Kreatorzy:**
+-   **Kreatorów:**
 
-    -   Dodano Kreator "Unity wdrożenie komunikat".
+    -   Dodano Kreator "Unity zaimplementuj komunikat".
 
-    -   Dodano obsługę nowych zakończenia interfejsu API w wersji programu VS dla komputerów Mac 7.4.
+    -   Dodano obsługę nowych zakończenia interfejsu API w programie VS dla komputerów Mac w wersji 7.4.
 
 ## <a name="1200"></a>1.2.0.0
- Wydanych 2017-10-23
+ Wydana 23 października 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -127,12 +171,12 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Generowanie projektu:**
 
-    -   Stałe rozszerzenie .dll dodatkowe błędnie dodane do nazwy pliku zestawu.
+    -   Naprawiono rozszerzenie .dll dodatkowe błędnie dodane do nazwy pliku zestawu.
 
-    -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz 'true'.
+    -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz "true".
 
 ## <a name="1103"></a>1.1.0.3
- Wydanych 2017-10-23
+ Wydana 23 października 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -141,20 +185,20 @@ Visual Studio Tools for Unity dziennika zmian.
     -   Dodano obsługę profilu .NET 4.6.
 
 ## <a name="1102"></a>1.1.0.2
- Wydanych 2017-08-08
+ Wydana 8 sierpnia 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debuger:**
 
-    -   Rozpocząć dołączanie do procesu okna dialogowego, jeśli nie masz pewności, który Unity, aby dołączyć do.
+    -   Rozpocznij dialogowym Dołącz do procesu, jeśli nie masz pewności która Unity można dołączyć do.
 
 -   **Generowanie projektu:**
 
-    -   Zawsze włączaj przełącznika niebezpieczny kompilacji stosowania Unity 5.6.
+    -   Zawsze należy włączyć niebezpieczne kompilacji przełącznika, gdy jest używane środowisko Unity 5.6.
 
 ## <a name="1101"></a>1.1.0.1
- Wydanych 2017-07-20
+ Wydana 20 lipca 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -163,36 +207,36 @@ Visual Studio Tools for Unity dziennika zmian.
     -   Dodano obsługę zlokalizowanych zasobów.
 
 ## <a name="1100"></a>1.1.0.0
- Wydanych 2017-07-12
+ Wydana 12 lipca 2017 r.
  
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
 
-    -   Dodano obsługę dołączania do odtwarzaczy i edytory za pośrednictwem Podłączanie do okna procesu.
+    -   Dodano obsługę dołączania do graczy i edytory za pośrednictwem Dołącz do procesu okna.
 
 -   **Generowanie projektu:**
 
-    -   Stałych Nazwa odwołania do zestawu za pomocą mcs.rsp plików.
+    -   Naprawiono zestawu odwołania do nazwy mcs.rsp plików.
 
-    -   Dodano obsługę assembly.json jednostki kompilacji.    
+    -   Dodano obsługę jednostki kompilacji assembly.json.    
 
-    -   Stałe zdefiniowane z poziomu interfejsu API.    
+    -   Naprawiono definiuje ze poziomy interfejsu API.    
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Cieniowania stałych komunikat o błędzie w przypadku kompilowania kodu.
+    -   Komunikat o błędzie cieniowania stałych podczas kompilowania kodu.
 
 ## <a name="1001"></a>1.0.0.1
- Wydanych 2017-05-04
+ Wydana 4 maja 2017 r.
  
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
 
-    -   Stały aktywne śledzenie dokumentów oraz regularne projektów i hybrydowych.
+    -   Naprawiono aktywne śledzenie dokumentów oraz hybrydowych i standardowych projektów.
 
 ## <a name="1000"></a>1.0.0.0
- Wydanych 2017-05-03
+ Wydana 3 maja 2017 r.

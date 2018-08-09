@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b01b7b8edf5ebe4b8c3e5277e87f9797860b552f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd77ce3cbb0b262e3ab56fef4f3456fecd3cab28
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130759"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636402"
 ---
-# <a name="how-to-implement-undo-management"></a>Porady: Implementowanie zarządzania cofania
-Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, wdrożenie jednostek cofania oddzielne (to znaczy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, które zawierają wiele poszczególne kroki.  
+# <a name="how-to-implement-undo-management"></a>Porady: Implementowanie cofania zarządzania
+Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, który jest implementowany przez środowisko. Do obsługi zarządzania cofania, implementować jednostek cofania oddzielne (oznacza to, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, która może zawierać wiele poszczególne kroki.  
   
- Sposobu implementacji zarządzania cofania może być różna w zależności od tego, czy edytor obsługuje wiele widoków, czy nie. Procedury dla każdego wdrożenia są szczegółowo opisane w poniższych sekcjach.  
+ Sposób implementacji zarządzania cofania różni się zależnie od tego, czy edytor obsługuje wiele widoków, czy nie. Procedury dla każdego wdrożenia są szczegółowo opisane w poniższych sekcjach.  
   
-## <a name="cases-where-an-editor-supports-a-single-view"></a>Przypadków, gdy Edytor obsługuje jeden widok  
- W tym scenariuszu edytor nie obsługuje wielu widoków. Istnieje tylko jeden z nich i jeden dokument, i obsługują cofania. Poniższa procedura umożliwia Implementowanie zarządzania cofania.  
+## <a name="cases-where-an-editor-supports-a-single-view"></a>Przypadków, gdy Edytor obsługuje pojedynczy widok  
+ W tym scenariuszu edytor nie obsługuje wielu widoków. Istnieje tylko jeden z nich i jeden dokument, a ich obsługuje operacji cofania. Poniższa procedura umożliwia Implementowanie zarządzania cofania.  
   
-#### <a name="to-support-undo-management-for-a-single-view-editor"></a>Do obsługi zarządzania cofania edytora pojedynczego widoku  
+### <a name="to-support-undo-management-for-a-single-view-editor"></a>Do obsługi zarządzania cofania dla edytora pojedynczego widoku  
   
-1.  Wywołanie `QueryInterface` na `IServiceProvider` interfejsu na ramki okna dla `IOleUndoManager`, z obiektu widoku dokumentu, aby otworzyć menedżera cofania (`IID_IOLEUndoManager`).  
+1.  Wywołaj `QueryInterface` na `IServiceProvider` interfejsu na ramki okna dla `IOleUndoManager`, z obiektu widoku dokumentu do dostępu do menedżera cofania (`IID_IOLEUndoManager`).  
   
-2.  Widok jest ulokowany do ramki okna, pobiera wskaźnik lokacji, której można użyć do wywołania `QueryInterface` dla `IServiceProvider`.  
+2.  Gdy widok jest ulokowany do ramki okna, otrzymuje wskaźnik witryny, której można użyć do wywołania `QueryInterface` dla `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Przypadków, gdy Edytor obsługuje wiele widoków  
- Jeśli masz separacji dokument i widoku, oznacza to, że menedżera cofania zazwyczaj co skojarzony z dokumentem. Wszystkie jednostki cofania są umieszczane na menedżera cofania co skojarzony z obiektem danych dokumentu.  
+ Jeśli masz separacji dokument i widok, występuje menedżera cofania zwykle co skojarzone z dokumentem. Wszystkie jednostki cofania są umieszczane w menedżera cofania co skojarzony z obiektem danych dokumentu.  
   
- Zamiast widoku wykonywania zapytania dotyczącego menedżera cofania, w których jest on dostępny dla każdego widoku, dane dokumentu obiekt wywołania <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> można utworzyć wystąpienia menedżera cofania, określając identyfikator klasy CLSID_OLEUndoManager. Identyfikator klasy jest zdefiniowana w pliku OCUNDOID.h.  
+ Zamiast wyświetlanie, wykonywanie zapytań dotyczących menedżera cofania, w których jest on dostępny dla każdego widoku, dane dokumentu obiekt wywołania <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> do utworzenia wystąpienia menedżera cofania, określając identyfikator klasy CLSID_OLEUndoManager. Identyfikator klasy jest zdefiniowany w *OCUNDOID.h* pliku.  
   
- Korzystając z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> Aby utworzyć własnego wystąpienia menedżera cofania, użyj poniższej procedury na połączeniu menedżera cofania do środowiska.  
+ Korzystając z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> do utworzenia własnego wystąpienia menedżera cofania, należy użyć poniższej procedury można dołączyć Menedżera cofania do środowiska.  
   
-#### <a name="to-hook-your-undo-manager-into-the-environment"></a>Aby przyłączyć menedżera cofania do środowiska  
+### <a name="to-hook-your-undo-manager-into-the-environment"></a>Można dołączyć Menedżera cofania do środowiska  
   
-1.  Wywołanie `QueryInterface` zwrócony z obiektu <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> dla `IID_IOleUndoManager`. Wskaźnik do przechowywania <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1.  Wywołaj `QueryInterface` na obiekt zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> dla `IID_IOleUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Wywołanie `QueryInterface` na `IOleUndoManager` dla `IID_IOleCommandTarget`. Wskaźnik do przechowywania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IOleCommandTarget`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Przekaźnik Twojej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> wywołuje przechowywanych `IOleCommandTarget` interfejs dla poniższych poleceń StandardCommandSet97:  
+3.  Przekaźnik usługi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> wywołania do przechowywanej `IOleCommandTarget` interfejsu dla następujących poleceń StandardCommandSet97:  
   
     -   cmdidUndo  
   
@@ -61,26 +61,26 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
   
     -   cmdidMultiLevelRedoList  
   
-4.  Wywołanie `QueryInterface` na `IOleUndoManager` dla `IID_IVsChangeTrackingUndoManager`. Wskaźnik do przechowywania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsChangeTrackingUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
      Za pomocą wskaźnika do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metody.  
   
-5.  Wywołanie `QueryInterface` na `IOleUndoManager` dla `IID_IVsLinkCapableUndoManager`.  
+5.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsLinkCapableUndoManager`.  
   
-6.  Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> z dokumentu, które powinny również implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfejsu. Gdy dokument jest zamykany, wywołaj `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
+6.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> z dokumentu, które powinny również implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfejsu. Po zamknięciu dokumentu wywołania `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
   
-7.  Gdy dokument jest zamykany, wywołaj `QueryInterface` na menedżera cofania dla `IID_IVsLifetimeControlledObject`.  
+7.  Po zamknięciu dokumentu wywołać `QueryInterface` na Twojego menedżera cofania `IID_IVsLifetimeControlledObject`.  
   
-8.  Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
+8.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
   
-9. Podczas wprowadzania zmian do dokumentu, należy wywołać <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> w Menedżerze z `OleUndoUnit` klasy. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> — Metoda przechowuje odwołanie do obiektu, dlatego zazwyczaj należy zwolnić po prawej <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
+9. Gdy zmiany zostaną wprowadzone do dokumentu, należy wywołać <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> w Menedżerze z `OleUndoUnit` klasy. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> Metoda przechowuje odwołania do obiektu, więc zazwyczaj, zwolnij go zaraz po <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- `OleUndoManager` Klasa reprezentuje wystąpienie stosu cofania pojedynczego. W związku z tym jest jeden obiekt menedżera cofania na jednostkę danych śledzone cofania lub ponownego wykonywania.  
+ `OleUndoManager` Klasa reprezentuje wystąpienie stosu pojedynczą czynność cofnięcia. W efekcie jest jeden obiekt menedżera cofania na jednostkę danych są śledzone dla cofania i ponawiania.  
   
 > [!NOTE]
->  Gdy obiekt menedżera cofania jest często używany przez Edytor tekstu, jest ogólne składnika, który nie obsługuje określonego edytora tekstu. Jeśli chcesz obsługuje wielopoziomowe cofania lub ponownego wykonywania tego obiektu można używać, aby to zrobić.  
+>  Gdy obiekt menedżera cofania jest często używany przez Edytor tekstu, jest ogólnego składnika, który nie obsługuje określonego edytora tekstu. Chcąc obsługuje wielopoziomowe cofnięcie ani ponownego wykonywania, można użyć tego obiektu, aby to zrobić.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [Porady: wyczyścić stosu cofania](../extensibility/how-to-clear-the-undo-stack.md)

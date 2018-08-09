@@ -1,5 +1,5 @@
 ---
-title: Managed Extensibility Framework w edytorze | Dokumentacja firmy Microsoft
+title: Managed Extensibility Framework, w edytorze | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,46 +13,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91b507893cf2d17b9885944a766c9c9a8c084a7a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141652"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638609"
 ---
-# <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework w edytorze
-Edytor jest utworzony przy użyciu składników Managed Extensibility Framework (MEF). Można tworzyć własne składników MEF do rozszerzania edytora, a kod może wykorzystać również składników edytora.  
+# <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework, w edytorze
+Edytor została stworzona przy użyciu składników Managed Extensibility Framework (MEF). Możesz tworzyć własne składniki MEF do rozszerzenia edytora, a Twój kod może zużywać także składniki edytora.  
   
-## <a name="overview-of-the-managed-extensibility-framework"></a>Omówienie Managed Extensibility Framework  
- MEF jest biblioteki .NET, która umożliwia dodawanie i modyfikowanie funkcji aplikacji lub składnika, który wykonuje MEF modelu programowania. Edytor programu Visual Studio zarówno może udostępniać i korzystać z części MEF.  
+## <a name="overview-of-the-managed-extensibility-framework"></a>Managed Extensibility Framework — omówienie  
+ MEF jest bibliotekę .NET, która umożliwia dodawanie i modyfikowanie funkcji aplikacji lub składnika, który jest zgodna z modelu programowania MEF. Edytor programu Visual Studio można, zarówno zapewniają i wykorzystują części MEF.  
   
- MEF znajduje się w zestawie System.ComponentModel.Composition.dll programu .NET Framework w wersji 4.  
+ MEF jest zawarty w .NET Framework w wersji 4 *System.ComponentModel.Composition.dll* zestawu.  
   
  Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-### <a name="component-parts-and-composition-containers"></a>Składniki i kompozycji kontenerów  
- Składnik jest klasą lub elementem członkowskim klasy, które można wykonać jedną (lub obie) z następujących czynności:  
+### <a name="component-parts-and-composition-containers"></a>Składniki i tworzenia kontenerów  
+ Część jest klasa lub członek klasy, które można wykonać jedną (lub obie) z następujących czynności:  
   
--   Korzystać z innego składnika  
+-   Używanie innego składnika  
   
--   Używane przez inny składnik  
+-   Być wykorzystane przez inny składnik  
   
- Rozważmy na przykład zakupów aplikacja, która ma składnik wpis kolejności, który jest zależna od produktu dostępności danych przez składnik spisu magazynu. W warunkach MEF części spisu można *wyeksportować* produktu dostępność danych i umożliwia części wpisu kolejności *zaimportować* danych. Wpis kolejności i spisu część nie trzeba wiedzieć o innych; *kontenera kompozycji* (udostępniany przez aplikację hosta) jest odpowiedzialny za utrzymanie zbiór eksporty i rozpoznawanie eksportów i importuje.  
+ Na przykład należy wziąć pod uwagę zakupów aplikacja, która ma składnik wpisu zamówienia, który jest zależny od danych dostępności produktu, dostarczone przez składnik spisu magazynu. W warunkach MEF, część spisu można *wyeksportować* dane dostępności produktów i będzie można część wpisu zamówienia *zaimportować* danych. Wpis kolejności i część magazynu nie trzeba wiedzieć o *pojemnik składu* (udostępniany przez aplikację hosta) jest odpowiedzialny za utrzymanie zbiór eksporty i rozpoznawanie polecenie eksportuje, a następnie importuje.  
   
- Kontener kompozycji <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, zazwyczaj należy przez hosta. Kontener kompozycji przechowuje *katalogu* wyeksportowanego składniki.  
+ Kontener kompozycji <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, zwykle jest własnością hosta. Kontener kompozycji przechowuje *katalogu* wyeksportowanego składniki.  
   
-### <a name="exporting-and-importing-component-parts"></a>Eksportowanie i Importowanie części  
- Możesz wyeksportować wszystkie funkcje tak długo, jak są one zaimplementowane jako klasa publiczna lub publicznego elementu członkowskiego klasy (właściwości lub metody). Nie masz pochodzić z część z <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Zamiast tego należy dodać <xref:System.ComponentModel.Composition.ExportAttribute> atrybutu w klasie lub element członkowski klasy, która ma zostać wykonane eksportowanie. Ten atrybut określa *umowy* przez które inny składnik części można importować z funkcji.  
+### <a name="export-and-import-component-parts"></a>Eksportowanie i Importowanie części składowe  
+ Możesz wyeksportować żadnej funkcji, tak długo, jak są one zaimplementowane jako klasę publiczną lub publicznego elementu członkowskiego klasy (właściwość lub metoda). Nie masz do wyprowadzenia użytkownika część z <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Zamiast tego należy dodać <xref:System.ComponentModel.Composition.ExportAttribute> atrybutów do klasy lub składowej klasy, który chcesz wyeksportować. Ten atrybut określa *kontraktu* , który składnik innej części można zaimportować własne funkcje.  
   
 ### <a name="the-export-contract"></a>Kontrakt eksportu  
- <xref:System.ComponentModel.Composition.ExportAttribute> Definiuje jednostki (klasą, interfejsem lub struktury), która jest eksportowany. Zwykle atrybut eksportu przyjmuje parametr, który określa typ eksportu.  
+ <xref:System.ComponentModel.Composition.ExportAttribute> Definiuje jednostki (klasy, interfejsu lub struktury), która jest eksportowany. Zazwyczaj atrybut eksportu przyjmuje parametr, który określa typ operacji eksportu.  
   
 ```  
 [Export(typeof(ContentTypeDefinition))]  
 class TestContentTypeDefinition : ContentTypeDefinition {   }  
 ```  
   
- Domyślnie <xref:System.ComponentModel.Composition.ExportAttribute> atrybut definiuje kontrakt, który jest typem klasy eksportowanie.  
+ Domyślnie <xref:System.ComponentModel.Composition.ExportAttribute> atrybut definiuje kontrakt, który jest typem klasy eksportowania.  
   
 ```  
 [Export]  
@@ -61,9 +61,9 @@ class TestContentTypeDefinition : ContentTypeDefinition {   }
 class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }  
 ```  
   
- W tym przykładzie wartość domyślna `[Export]` jest odpowiednikiem atrybutu `[Export(typeof(TestAdornmentLayerDefinition))]`.  
+ W tym przykładzie domyślne `[Export]` atrybut jest odpowiednikiem `[Export(typeof(TestAdornmentLayerDefinition))]`.  
   
- Możesz też wyeksportować właściwości lub metody, jak pokazano w poniższym przykładzie.  
+ Jak pokazano w poniższym przykładzie, można wyeksportować właściwości lub metody.  
   
 ```  
 [Export]  
@@ -72,20 +72,20 @@ class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 public AdornmentLayerDefinition scarletLayerDefinition;  
 ```  
   
-### <a name="importing-a-mef-export"></a>Importowanie eksportu MEF  
- Jeśli chcesz korzystać z eksportu MEF, musisz znać kontraktu (zwykle typ) za pomocą którego on został wyeksportowany, a następnie dodaj <xref:System.ComponentModel.Composition.ImportAttribute> atrybut, który ma tę wartość. Domyślnie atrybut importu przyjmuje jeden parametr, który jest typem klasy modyfikowanego przezeń. Następujące wiersze kodu importu <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> typu.  
+### <a name="import-a-mef-export"></a>Importowanie/eksportowanie MEF  
+ Umożliwia używanie Eksport MEF, musisz znać kontraktu (zazwyczaj typu), za pomocą którego on został wyeksportowany, a następnie dodaj <xref:System.ComponentModel.Composition.ImportAttribute> atrybut, który ma tę wartość. Domyślnie atrybut importu przyjmuje jeden parametr, który jest typem klasy, która modyfikuje. Następujące wiersze kodu importu <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> typu.  
   
 ```  
 [Import]  
 internal IClassificationTypeRegistryService ClassificationRegistry;  
 ```  
   
-## <a name="getting-editor-functionality-from-a-mef-component-part"></a>Pobieranie funkcji edytora z części składników MEF  
- Jeśli istniejący kod jest częścią składników MEF, umożliwia metadanych MEF używać części edytora.  
+## <a name="get-editor-functionality-from-a-mef-component-part"></a>Uzyskiwanie edytora część MEF  
+ Jeśli istniejący kod jest część MEF, można użyć metadanych MEF z części składnika edytora.  
   
-#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Aby korzystać z funkcji edytora z części składników MEF  
+#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Korzystanie z funkcji edytora część MEF  
   
-1.  Dodaj odwołania do System.Composition.ComponentModel.dll, który znajduje się w globalnej pamięci podręcznej zestawów (GAC), i zestawy edytora.  
+1.  Dodaj odwołania do *System.Composition.ComponentModel.dll*, który jest w globalnej pamięci podręcznej zestawów (GAC), a także do zestawów w edytorze.  
   
 2.  Dodaj odpowiednie instrukcje using.  
   
@@ -101,9 +101,9 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Po uzyskaniu usługi może wykorzystać jeden z jego składników.  
+4.  Po uzyskaniu usługi mogą wykorzystywać jeden z jego składników.  
   
-5.  Kiedy została wykonana z zestawu, umieść ją w... \Common7\IDE\Components\ folder instalacji programu Visual Studio.  
+5.  Kiedy została wykonana zestawu, w jakich go umieszczono *... \Common7\IDE\Components\* folder instalacji programu Visual Studio.  
   
-## <a name="see-also"></a>Zobacz też  
- [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Zobacz także  
+ [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)

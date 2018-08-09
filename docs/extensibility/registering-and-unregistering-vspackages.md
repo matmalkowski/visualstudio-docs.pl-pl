@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie i wyrejestrowywanie VSPackages | Dokumentacja firmy Microsoft
+title: Rejestrowanie i wyrejestrowywanie pakietów VSPackage | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,20 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73dccc4aef061aaac5f5c33e098a591a7c51fcbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139055"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638176"
 ---
-# <a name="registering-and-unregistering-vspackages"></a>VSPackages rejestrowania i wyrejestrowywania
-Atrybuty służy do rejestrowania pakiet VSPackage, ale  
+# <a name="register-and-unregister-vspackages"></a>Rejestrowanie i wyrejestrowywanie pakietów VSPackage
+Używanie atrybutów do zarejestrowania pakietu VSPackage, ale  
   
-## <a name="registering-a-vspackage"></a>Rejestrowanie pakiet VSPackage  
- Atrybuty można użyć do kontrolowania rejestracji zarządzanych VSPackages. Wszystkie informacje rejestracyjne znajduje się w pliku .pkgdef. Aby uzyskać więcej informacji dotyczących rejestracji opartych na plikach, zobacz [elementu CreatePkgDef narzędzie](../extensibility/internals/createpkgdef-utility.md).  
+## <a name="register-a-vspackage"></a>Rejestrowanie pakietu VSPackage  
+ Atrybuty można użyć do kontrolowania rejestracji zarządzanego pakietów VSPackage. Wszystkie informacje o rejestracji znajduje się w *.pkgdef* pliku. Aby uzyskać więcej informacji na temat rejestracji opartych na plikach, zobacz [narzędzie CreatePkgDef](../extensibility/internals/createpkgdef-utility.md).  
   
- Poniższy kod przedstawia sposób użycia atrybutów rejestracji standardowej zarejestrować VSPackage.  
+ Poniższy kod przedstawia sposób używania atrybutów standardowa rejestracji można zarejestrować usługi pakietu VSPackage.  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -36,18 +36,18 @@ public sealed class BasicPackage : Package
 {. . .}  
 ```  
   
-## <a name="unregistering-an-extension"></a>Wyrejestrowywanie rozszerzenia  
- Jeśli były zmieniane wiele różnych VSPackages i chcesz je usunąć z eksperymentalne wystąpienie, można uruchomić tylko **zresetować** polecenia. Wyszukaj **Zresetuj Visual Studio eksperymentalne wystąpienie programu** na stronie początkowej komputera, lub uruchomić to polecenie w wierszu polecenia:  
+## <a name="unregister-an-extension"></a>Wyrejestruj rozszerzenia  
+ Jeśli zostały eksperymentowanie z dużą liczbą różnych pakietów VSPackage i chcesz je usunąć z doświadczalne wystąpienie, można po prostu uruchomisz **resetowania** polecenia. Wyszukaj **Zresetuj wystąpienie eksperymentalne programu Visual Studio** na stronie początkowej na komputerze lub uruchom następujące polecenie w wierszu polecenia:  
   
-```vb  
+```cmd  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp  
 ```  
   
- Jeśli chcesz odinstalować rozszerzenia, które zainstalowano na programowanie wystąpienia programu Visual Studio, przejdź do **narzędzia / rozszerzenia i aktualizacje**znaleźć rozszerzenia i kliknij przycisk **Odinstaluj**.  
+ Jeśli chcesz odinstalować rozszerzenie, które zainstalowano na rozwój wystąpienia programu Visual Studio, przejdź do strony **narzędzia** > **rozszerzenia i aktualizacje**, znaleźć rozszerzenia, a kliknij  **Odinstaluj**.  
   
- Jeśli zaistnieje powiedzie się żadna z tych metod w odinstalowywania rozszerzenia, można wyrejestrować zestawu pakiet VSPackage z wiersza polecenia w następujący sposób:  
+ Jeśli jakiegoś powodu żadna z tych metod nie powiedzie się i wyznaczy odinstalować rozszerzenie, można wyrejestrować pakietu VSPackage zestawu z wiersza polecenia w następujący sposób:  
   
-```  
+```cmd  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>  
 ```  
   
@@ -55,9 +55,9 @@ public sealed class BasicPackage : Package
   
 ## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Użyj atrybutu niestandardowego rejestracji, aby zarejestrować rozszerzenie  
   
-W niektórych przypadkach może być konieczne utworzyć nowy atrybut rejestracji dla rozszerzenia. Atrybuty rejestracji służy do dodawania nowych kluczy rejestru lub aby dodać nowe wartości do istniejących kluczy. Nowy atrybut musi pochodzić od <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, i musi ono przesłonić <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> i <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metody.  
+W niektórych przypadkach może być konieczne utworzenie nowego atrybutu rejestracji dla rozszerzenia. Można użyć atrybutów rejestracji, aby dodać nowe klucze rejestru lub dodać nowe wartości do istniejących kluczy. Nowy atrybut musi pochodzić od klasy <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, i musi ono przesłonić <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> i <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metody.  
   
-### <a name="creating-a-custom-attribute"></a>Tworzenie atrybutów niestandardowych  
+### <a name="create-a-custom-attribute"></a>Tworzenie atrybutów niestandardowych  
   
 Poniższy kod przedstawia sposób tworzenia nowego atrybutu rejestracji.  
   
@@ -68,11 +68,11 @@ Poniższy kod przedstawia sposób tworzenia nowego atrybutu rejestracji.
     }  
 ```  
   
- <xref:System.AttributeUsageAttribute> Na klas atrybutów służy do określenia elementu programu (klasy, metody, itp.), którego dotyczy ten atrybut określa, czy można więcej niż jeden raz i czy mogą być dziedziczone.  
+ <xref:System.AttributeUsageAttribute> Na klasy atrybutów służy do określenia elementu programu, (klasy, metody itp.), do którego odnoszą się atrybut, czy może służyć więcej niż jeden raz i czy mogą być dziedziczone.  
   
-### <a name="creating-a-registry-key"></a>Tworzenie klucza rejestru  
+### <a name="create-a-registry-key"></a>Utwórz klucz rejestru  
   
-Poniższy kod tworzy atrybutu niestandardowego **niestandardowych** podkluczy klucza dla pakiet VSPackage, który jest rejestrowany.  
+Poniższy kod powoduje utworzenie niestandardowego atrybutu **niestandardowe** podkluczy klucza dla pakietu VSPackage, który jest rejestrowany.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -96,9 +96,9 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-### <a name="creating-a-new-value-under-an-existing-registry-key"></a>Tworzenie nowej wartości istniejącego klucza rejestru  
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>Utwórz nową wartość istniejącego klucza rejestru  
   
-Wartości niestandardowe można dodać do istniejącego klucza. Poniższy kod przedstawia sposób dodawania nową wartość do klucza rejestracji pakiet VSPackage.  
+Wartości niestandardowe można dodać do istniejącego klucza. Poniższy kod przedstawia sposób dodawania nowej wartości z kluczem rejestracji pakietu VSPackage.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -122,5 +122,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

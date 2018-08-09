@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512819"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636827"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: Sklonuj repozytorium kodu w języku Python w programie Visual Studio
 
@@ -37,7 +37,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 1. W obszarze **lokalne repozytoria Git**, wybierz opcję **klonowania** polecenia, a następnie wprowadź `https://github.com/gregmalcolm/python_koans` w polu adres URL wprowadź folderu na sklonowane pliki, a następnie wybierz pozycję **klonowania** przycisk.
 
     > [!Tip]
-    > Folder, który określisz w programie Team Explorer jest dokładnie folder do odbierania sklonowane pliki. W odróżnieniu od `git clone` polecenia Tworzenie własnego klonu w programie Team Explorer nie tworzy automatycznie podfolder o nazwie repozytorium.
+    > Folder w **Team Explorer** jest dokładnie folder do odbierania sklonowane pliki. W odróżnieniu od `git clone` polecenia, tworzenie własnego klonu w **Team Explorer** nie tworzy automatycznie podfolder o nazwie repozytorium.
 
 1. Po ukończeniu klonowania Nazwa repozytorium jest wyświetlana w **lokalne repozytoria Git** listy. Kliknij dwukrotnie tej nazwy, aby przejść do pulpitu nawigacyjnego repozytorium w **Team Explorer**.
 

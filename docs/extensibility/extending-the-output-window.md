@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie w oknie danych wyjściowych | Dokumentacja firmy Microsoft
+title: Rozszerzanie okna danych wyjściowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,37 +13,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9a8b260c1a3cab126d19f0cedc0c1e5362cf81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131039"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635872"
 ---
-# <a name="extending-the-output-window"></a>Rozszerzanie w oknie danych wyjściowych
-**Dane wyjściowe** okna jest zestawem okienek tekstu odczytu/zapisu. Visual Studio ma te wbudowane okienka: **kompilacji**, w poszczególnych projektach przekazywania wiadomości o kompilacjach i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty o IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metod interfejsu i Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienka można utworzyć i zarządzać własnego niestandardowego okienka.  
+# <a name="extend-the-output-window"></a>Rozszerzanie okna danych wyjściowych
+**Dane wyjściowe** okno to zbiór okienek tekstu odczytu/zapisu. Program Visual Studio zawiera te wbudowane okienka: **kompilacji**, w projektach, które komunikują się komunikaty dotyczące kompilacji i **ogólne**, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje się komunikaty dotyczące środowiska IDE. Projekty odwołać się do **kompilacji** automatycznie za pomocą okienka <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody interfejsu i programu Visual Studio zapewnia bezpośredni dostęp do **ogólne** okienko za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Usługa. Oprócz wbudowanych okienek można tworzyć i zarządzać własnych niestandardowych okienek.  
   
- Można kontrolować **dane wyjściowe** okna bezpośrednio za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Interfejs, który jest oferowany przez <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> usługi, definiuje metody tworzenia, pobierania i niszczenie **dane wyjściowe** okienka. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Interfejs definiuje metody przedstawiający okienka, ukrywanie okienka i manipulowanie tekstu. Alternatywny sposób kontrolowania **dane wyjściowe** okno jest za pośrednictwem <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiektów w modelu obiektów programu Visual Studio automatyzacji. Te obiekty Hermetyzowanie prawie wszystkie funkcje <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. Ponadto <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiektów dodać niektóre funkcje wyższego poziomu, aby ułatwić wyliczyć **dane wyjściowe** okienka i pobrać tekst z okienka.  
+ Możesz kontrolować **dane wyjściowe** bezpośrednio za pomocą okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Interfejs, który jest oferowany przez <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> usługi, definiuje metody do tworzenia, pobierania i niszczenie **dane wyjściowe** okienka. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Interfejs definiuje metody wyświetlanie okienek, ukrywanie okienka i manipulowania ich tekst. Alternatywny sposób kontrolowania **dane wyjściowe** okno jest za pośrednictwem <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiekty w modelu obiektów automatyzacji usługi Visual Studio. Te obiekty hermetyzują prawie wszystkie funkcje <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfejsów. Ponadto <xref:EnvDTE.OutputWindow> i <xref:EnvDTE.OutputWindowPane> obiektów dodać niektóre funkcje wyższego poziomu, aby ułatwić wyliczyć **dane wyjściowe** okienka i pobrać tekst z okienka.  
   
-## <a name="creating-an-extension-that-uses-the-output-pane"></a>Tworzenie rozszerzenia, która używa w okienku danych wyjściowych  
- Istnieje możliwość rozszerzenia, które wykonuje różne aspekty w okienku danych wyjściowych.  
+## <a name="create-an-extension-that-uses-the-output-pane"></a>Tworzenie rozszerzenia, które używa okienko danych wyjściowych  
+ Istnieje możliwość rozszerzenia, które wykonuje różne aspekty okienko danych wyjściowych.  
   
-1.  Tworzenie projektu VSIX o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Utwórz projekt VSIX, o nazwie `TestOutput` za pomocą polecenia menu o nazwie **TestOutput**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Dodaj następujące informacje:  
+2.  Dodaj następujące odwołania:  
   
     1.  EnvDTE  
   
     2.  EnvDTE80  
   
-3.  W TestOutput.cs, dodaj następującą instrukcję using:  
+3.  W *TestOutput.cs*, dodaj następującą instrukcję using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  W TestOutput.cs Usuń metody ShowMessageBox. Dodaj następujące szkieletu metody:  
+4.  W *TestOutput.cs*, Usuń `ShowMessageBox` metody. Dodaj następujące szkieletu metody:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -51,7 +51,7 @@ ms.locfileid: "31131039"
     }  
     ```  
   
-5.  W Konstruktorze TestOutput zmienić OutputCommandHandler program obsługi poleceń. Poniżej przedstawiono część, które umożliwia dodanie polecenia:  
+5.  W Konstruktorze TestOutput zmienić program obsługi poleceń do OutputCommandHandler. Oto części, które umożliwia dodanie polecenia:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -64,7 +64,7 @@ ms.locfileid: "31131039"
     }  
     ```  
   
-6.  W poniższych rozdziałach mają różne metody, które przedstawiono różne sposoby postępowania z okienku danych wyjściowych. Możesz wywołać treści metody OutputCommandHandler() tych metod. Na przykład następujący kod dodaje metody CreatePane() podanej w następnej sekcji.  
+6.  Poniższe sekcje mają różne metody, które pokazują różne sposoby radzenia sobie z okienkiem danych wyjściowych. Może wywoływać te metody, aby treść `OutputCommandHandler()` metody. Na przykład, poniższy kod dodaje `CreatePane()` metody podanej w następnej sekcji.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -73,8 +73,8 @@ ms.locfileid: "31131039"
     }  
     ```  
   
-## <a name="creating-an-output-window-with-ivsoutputwindow"></a>Tworzenie okna dane wyjściowe z IVsOutputWindow  
- W tym przykładzie pokazano, jak utworzyć nową **dane wyjściowe** okienka przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfejsu.  
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>Utwórz okno danych wyjściowych z IVsOutputWindow  
+ Ten przykład pokazuje, jak utworzyć nową **dane wyjściowe** okienko przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfejsu.  
   
 ```csharp  
 void CreatePane(Guid paneGuid, string title,   
@@ -98,10 +98,10 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- Po dodaniu tej metody do rozszerzenia podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony **dane wyjściowe** okna z informacją nagłówka **wyświetlane dane wyjściowe z: CreatedPane** i wyrazy **to okienko utworzony** w okienku samej siebie.  
+ Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony **dane wyjściowe** okna z nagłówkiem, który jest wyświetlany komunikat **Pokaż dane wyjściowe od: CreatedPane** i wyrazy **to okienko utworzone** w okienku sam.  
   
-## <a name="creating-an-output-window-with-outputwindow"></a>Tworzenie okna dane wyjściowe z OutputWindow  
- W tym przykładzie przedstawiono sposób tworzenia **dane wyjściowe** okienka przy użyciu <xref:EnvDTE.OutputWindow> obiektu.  
+## <a name="create-an-output-window-with-outputwindow"></a>Utwórz okno danych wyjściowych z outputwindow —  
+ W tym przykładzie przedstawiono sposób tworzenia **dane wyjściowe** okienko przy użyciu <xref:EnvDTE.OutputWindow> obiektu.  
   
 ```csharp  
 void CreatePane(string title)  
@@ -123,12 +123,12 @@ void CreatePane(string title)
 }  
 ```  
   
- Mimo że <xref:EnvDTE.OutputWindowPanes> kolekcji umożliwia pobieranie **dane wyjściowe** okienka przez jego tytuł, tytułów okienku są nie musi być unikatowy. W przypadku wątpliwości unikatowości tytuł, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> metoda pobierania okienku poprawne przez jego identyfikator GUID.  
+ Mimo że <xref:EnvDTE.OutputWindowPanes> kolekcji umożliwia pobranie **dane wyjściowe** okienko przez jego tytuł, okienko tytuły są nie musi być unikatowy. Jeśli unikatowości tytuł jest wątpliwości, użyj <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> metodę, aby pobrać poprawną okienko przez jego identyfikator GUID.  
   
- Jeśli dodasz tej metody do rozszerzenia podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z informacją nagłówka **Pokaż dane wyjściowe z: DTEPane** i wyrazy **dodane okienku DTE** w okienku samej siebie.  
+ Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z nagłówkiem, który jest wyświetlany komunikat **Pokaż dane wyjściowe: DTEPane** i wyrazy **dodano okienko DTE** w okienku sam.  
   
-## <a name="deleting-an-output-window"></a>Usuwanie okno danych wyjściowych  
- W tym przykładzie pokazano, jak usunąć **dane wyjściowe** okienka.  
+## <a name="delete-an-output-window"></a>Usuń okno danych wyjściowych  
+ W tym przykładzie przedstawiono sposób usuwania **dane wyjściowe** okienko.  
   
 ```csharp  
 void DeletePane(Guid paneGuid)  
@@ -150,10 +150,10 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- Jeśli dodasz tej metody do rozszerzenia podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z informacją nagłówka **Pokaż dane wyjściowe z: nowe okienko** i wyrazy **dodane okienku utworzony** w okienku samej siebie. Jeśli klikniesz przycisk **wywołania TestOutput** ponownie polecenie okienku zostanie usunięta.  
+ Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony w oknie danych wyjściowych z nagłówkiem, który jest wyświetlany komunikat **Pokaż dane wyjściowe: nowe okienko** i wyrazy **dodano okienko utworzone** w okienku sam. Jeśli klikniesz **wywołania TestOutput** polecenie ponownie, okienko zostanie usunięty.  
   
-## <a name="getting-the-general-pane-of-the-output-window"></a>Pobieranie w okienku ogólne okno danych wyjściowych  
- W tym przykładzie pokazano, jak pobrać wbudowane **ogólne** okienku **dane wyjściowe** okna.  
+## <a name="get-the-general-pane-of-the-output-window"></a>Pobierz ogólne okienka w oknie danych wyjściowych  
+ W tym przykładzie pokazano, jak uzyskać wbudowane **ogólne** okienku **dane wyjściowe** okna.  
   
 ```csharp  
 void GetGeneralPane()  
@@ -163,10 +163,10 @@ void GetGeneralPane()
 }  
 ```  
   
- Jeśli dodasz tej metody do rozszerzenia podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony który **dane wyjściowe** okno zawiera wyrazy **znaleźć ogólne Okienko** w okienku.  
+ Jeśli dodasz tę metodę rozszerzenia, podany w poprzedniej sekcji, po kliknięciu **wywołania TestOutput** polecenia powinien zostać wyświetlony, który **dane wyjściowe** okno zawiera wyrazy **znaleźć ogólne w okienku** w okienku.  
   
-## <a name="getting-the-build-pane-of-the-output-window"></a>Pobieranie w okienku w oknie danych wyjściowych kompilacji  
- W tym przykładzie pokazano, jak można znaleźć w okienku kompilacji i zapisywać do niego. Ponieważ w okienku kompilacji nie została aktywowana domyślnie, zostaje uaktywniony on również.  
+## <a name="get-the-build-pane-of-the-output-window"></a>Pobierz okienka kompilacji w oknie danych wyjściowych  
+ W tym przykładzie pokazano, jak znaleźć **kompilacji** okienka i zapis do niego. Ponieważ **kompilacji** okienko nie jest aktywowana domyślnie, zostaje uaktywniony również.  
   
 ```csharp  
 void OutputTaskItemStringExExample(string buildMessage)  

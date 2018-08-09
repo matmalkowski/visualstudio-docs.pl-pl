@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84102435092096b7154a46100e9d857a31537482
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e555ca317dea79d1fe3b856a7c449d01f0b792af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127241"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636229"
 ---
 # <a name="enumerators"></a>Modułów wyliczających
-Ta sekcja zawiera modułu wyliczającego typów danych w interfejsie API dodatku typu Plug-in kontroli źródła znajomość wtyczkę kontroli źródła.  
+W tej sekcji przedstawiono typy danych modułu wyliczającego w interfejsie API wtyczki kontroli źródła wtyczka do kontroli źródła należy wiedzieć o.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Polecenie kodu](../extensibility/command-code-enumerator.md)  
+ [Kod polecenia](../extensibility/command-code-enumerator.md)  
  Wylicza opcje [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md) funkcji.  
   
  [Komunikat](../extensibility/message-enumerator.md)  
- Wylicza flagi używane do wydruku wywołania zwrotnego, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ Wylicza flagi używane do drukowania wywołanie zwrotne, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
  [Kod stanu pliku](../extensibility/file-status-code-enumerator.md)  
- Zawiera nazwanych wartości stałej, określające stan pliku pod kontrolą źródła.  
+ Zawiera nazwanych stałych, określające stan pliku objętego kontrolą źródła.  
   
  [Kod stanu katalogu](../extensibility/directory-status-code-enumerator.md)  
- Zawiera nazwanych wartości stałej, określające stan katalogu pod kontrolą źródła.  
+ Zawiera nazwanych stałych, określające stan katalogu pod kontrolą źródła.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie wtyczki kontroli kodu źródłowego](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Definiuje zestaw SDK dodatku typu Plug-in kontroli źródła i opisano dołączone zasoby.  
+ [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Definiuje zestaw SDK wtyczki kontroli źródła i opisuje dołączone zasoby.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
  Monituje użytkownika o zaawansowane opcje dla danego polecenia.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Sprawdza, czy lista plików dla ich bieżącego stanu. Ponadto używa `pfnPopulate` funkcji, aby powiadomić wywołującego, jeśli plik nie pasuje do kryteriów dla `nCommand`.  
+ Sprawdza, czy lista plików dla ich bieżący stan. Ponadto używa `pfnPopulate` funkcję, aby powiadomić obiekt wywołujący, gdy plik jest niezgodny z kryteriami, które dla `nCommand`.  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Zawiera opis funkcji wywołania zwrotnego, która jest używana przez [SccOpenProject](../extensibility/sccopenproject-function.md) wyświetlać komunikaty z kontroli źródła wtyczek za pomocą środowiska IDE.  
+ Zawiera opis funkcji wywołania zwrotnego, który jest używany przez [SccOpenProject](../extensibility/sccopenproject-function.md) umożliwiające wyświetlanie komunikatów z kontroli źródła wtyczek za pośrednictwem środowiska IDE.  
   
- [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)  
- Zawiera pełną listę wszystkich elementów w interfejsie API dodatku typu Plug-in kontroli źródła.
+ [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)  
+ Zawiera pełną listę wszystkich elementów w interfejsie API wtyczki kontroli źródła.

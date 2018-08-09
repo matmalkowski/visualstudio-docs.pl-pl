@@ -1,5 +1,5 @@
 ---
-title: Element powiązania klawiszy | Dokumentacja firmy Microsoft
+title: KeyBindings, Element | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141418"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636814"
 ---
-# <a name="keybindings-element"></a>Element powiązania klawiszy
-Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań kluczy.  
+# <a name="keybindings-element"></a>KeyBindings, element
+KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiązań klawiszy.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -42,14 +42,14 @@ Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
-|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Elementy KeyBinding grup i innych grup powiązań kluczy.|  
+|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -59,7 +59,7 @@ Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań
   
 ## <a name="example"></a>Przykład  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -68,6 +68,6 @@ Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [KeyBinding Element](../extensibility/keybinding-element.md)   
- [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz także  
+ [KeyBinding, element](../extensibility/keybinding-element.md)   
+ [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

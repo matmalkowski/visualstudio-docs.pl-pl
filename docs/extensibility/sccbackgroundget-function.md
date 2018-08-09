@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e70720c9a26710c6d659ebac5b842bef3757eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136760"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639090"
 ---
 # <a name="sccbackgroundget-function"></a>Funkcja SccBackgroundGet
 Ta funkcja pobiera z kontroli źródła każdego określonych plików bez interakcji użytkownika.  
@@ -37,39 +37,39 @@ SCCRTN SccBackgroundGet(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pContext  
- [in] Wskaźnik kontekstu wtyczkę kontroli źródła.  
+ [in] Wskaźnik kontekście wtyczki kontroli źródła.  
   
- To  
+ Niepowodzeń  
  [in] Liczba plików określonych w `lpFileNames` tablicy.  
   
  lpFileNames  
- [w, out] Tablica nazw plików, które mają zostać pobrane.  
+ [out w] Tablica nazwy plików do pobrania.  
   
 > [!NOTE]
->  Nazwy musi być w pełni kwalifikowanej nazwy plików lokalnych.  
+>  Nazwy muszą być w pełni kwalifikowanej nazwy lokalnego.  
   
- wartość elementu dwFlags  
+ Flagidw  
  [in] Polecenie flagi (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  dwBackgroundOperationID  
- [in] Unikatowa wartość skojarzone z tą operacją.  
+ [in] Unikatowa wartość skojarzonego z tą operacją.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Operacja została ukończona pomyślnie.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Pobieranie tła jest już w toku (wtyczkę kontroli źródła powinna zwracać to tylko wtedy, gdy nie obsługuje operacji wsadowych jednoczesnych).|  
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed kończone.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|Pobieranie w tle jest już w toku (wtyczka do kontroli źródła powinna zwrócić to tylko wtedy, gdy nie obsługuje operacji wsadowych jednocześnie).|  
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończenie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja jest wywoływana zawsze na wątku innego niż ten, który załadowano wtyczkę kontroli źródła. Ta funkcja nie powinien zwrócić, dopóki zakończy działania; jednak może ona zostać wywołana wiele razy przy użyciu wielu list plików, wszystkie w tym samym czasie.  
+ Ta funkcja zawsze jest wywoływana w wątku, inny niż ten, który załadowany wtyczka do kontroli źródła. Ta funkcja nie powinien zwrócić, dopóki zakończy działania; jednak może ona zostać wywołana wiele razy przy użyciu wielu list plików, wszystko w tym samym czasie.  
   
  Korzystanie z `dwFlags` argument jest taka sama jak [SccGet](../extensibility/sccget-function.md).  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137463"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639516"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (szablony Visual Studio)
-Określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt** okno dialogowe.  
+Określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -51,18 +51,18 @@ Określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt*
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- `integer` Wymagana jest wartość.  
+ `integer` Wartość jest wymagana.  
   
- Ta wartość określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt** okno dialogowe.  
+ Ta wartość określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `NumberOfParentCategoriesToRollUp` to opcjonalny element.  
+ `NumberOfParentCategoriesToRollUp` element jest opcjonalny.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono metadanych dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows. Jeśli szablon z metadanych jest umieszczane dwa poziomy folderu poniżej najwyższego poziomu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu węzła, będą wyświetlane w węźle najwyższego poziomu w **nowy projekt** okno dialogowe. Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon jest wyświetlany tylko w węźle w którym znajduje się fizycznie.  
+ Ten przykład ilustruje metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows. Jeśli szablon z te metadane jest umieszczany dwa poziomy folderu poniżej najwyższego poziomu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] węzła, szablon pojawi się na węzeł najwyższego poziomu w **nowy projekt** okno dialogowe. Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon jest wyświetlany tylko w węźle w którym się znajduje się fizycznie.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +89,6 @@ Określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt*
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

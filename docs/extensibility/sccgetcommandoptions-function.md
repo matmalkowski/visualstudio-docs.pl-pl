@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60245b7fab3c2a0b313ccbe1d7393b0783962a37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5cf0385224cbbe50f7c0e1162f5f88c17729bcd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141200"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637090"
 ---
 # <a name="sccgetcommandoptions-function"></a>Funkcja SccGetCommandOptions
-Ta funkcja monituje użytkownika o zaawansowane opcje dla danego polecenia.  
+Ta funkcja monituje użytkownika o zaawansowane opcje dla podanego polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,48 +36,48 @@ SCCRTN SccGetCommandOptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
- iCommand  
- [in] Polecenia, dla których wymagane są zaawansowane opcje (zobacz [kod polecenia](../extensibility/command-code-enumerator.md) możliwe wartości).  
+ Interfejs iCommand  
+ [in] Polecenie, dla których wymagane są opcje zaawansowane (zobacz [polecenia kodu](../extensibility/command-code-enumerator.md) uzyskać odpowiednie wartości).  
   
  ppvOptions  
- [in] Struktura opcji (można też `NULL`).  
+ [in] Struktura opcji (może być również `NULL`).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Powodzenie.|  
-|SCC_I_ADV_SUPPORT|Wtyczka do kontroli źródła obsługuje zaawansowane opcje dla polecenia.|  
-|SCC_I_OPERATIONCANCELED|Użytkownik anulował źródła formantu plug w **opcje** okno dialogowe.|  
+|SCC_I_ADV_SUPPORT|Wtyczka do kontroli źródła obsługuje zaawansowane opcje polecenia.|  
+|SCC_I_OPERATIONCANCELED|Użytkownik anulował źródła kontrolki wtyczki do firmy **opcje** okno dialogowe.|  
 |SCC_E_OPTNOTSUPPORTED|Wtyczka do kontroli źródła nie obsługuje tej operacji.|  
-|SCC_E_ISCHECKEDOUT|Nie można wykonać tej operacji na pliku, który jest obecnie wyewidencjonowywany.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji. Ponowna próba jest zalecane.|  
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|  
+|SCC_E_ISCHECKEDOUT|Nie można wykonać tej operacji na pliku, który jest obecnie wyewidencjonowany.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- IDE wywołania tej funkcji po raz pierwszy z `ppvOptions` = `NULL` do określenia, czy wtyczkę kontroli źródła obsługuje funkcję Zaawansowane opcje dla tego polecenia. Jeśli wtyczka obsługuje funkcji dla tego polecenia, IDE wywołania tej funkcji ponownie, gdy użytkownik zażąda zaawansowane opcje (zwykle implementowany jako **zaawansowane** przycisk w oknie dialogowym) i dostarcza wskaźnik inną niż NULL dla `ppvOptions` wskazującego `NULL` wskaźnika. Wtyczka przechowuje opcje zaawansowane określone przez użytkownika w strukturze prywatnych i zwraca wskaźnik do tej struktury w `ppvOptions`. Ta struktura są następnie przekazywane do wszystkich funkcji API dodatku typu Plug-in kontroli źródła, w które należy się dowiedzieć, łącznie z kolejnych wywołań `SccGetCommandOptions` funkcji.  
+ IDE wywołuje tę funkcję, po raz pierwszy przy użyciu `ppvOptions` = `NULL` do określenia, czy wtyczka do kontroli źródła obsługuje funkcję opcji zaawansowanych dla określonego polecenia. Jeśli wtyczka obsługuje tę funkcję dla tego polecenia, IDE wywołuje tę funkcję ponownie gdy użytkownik zażąda opcje zaawansowane (zwykle implementowane jako **zaawansowane** przycisku w oknie dialogowym) i dostarcza wskaźnik ZEROWY dla `ppvOptions` wskazującej `NULL` wskaźnika. Wtyczka przechowuje opcje zaawansowane określone przez użytkownika w strukturze prywatne i zwraca wskaźnik do tej struktury w `ppvOptions`. Ta struktura jest następnie przekazywany do wszystkich innych funkcji interfejsu API wtyczki kontroli źródła, które musisz wiedzieć o tym, w tym kolejnych wywołań `SccGetCommandOptions` funkcji.  
   
- Przykładem mogą pomóc wyjaśnienia tej sytuacji.  
+ Przykładem może pomóc wyjaśnić tę sytuację.  
   
- Użytkownik wybierze **uzyskać** Wyświetla polecenia i IDE **uzyskać** okno dialogowe. Wywołania IDE `SccGetCommandOptions` działać z `iCommand` ustawioną `SCC_COMMAND_GET` i `ppvOptions` ustawioną `NULL`. To jest interpretowany przez wtyczka do kontroli źródła jako pytanie, "Masz opcje zaawansowane dla tego polecenia?" Jeśli wtyczka zwraca `SCC_I_ADV_SUPPORT`, wyświetla IDE **zaawansowane** przycisku na jego **uzyskać** okno dialogowe.  
+ Użytkownik wybierze **uzyskać** polecenia i środowisko IDE Wyświetla **uzyskać** okno dialogowe. Wywołania środowiska IDE `SccGetCommandOptions` funkcją `iCommand` równa `SCC_COMMAND_GET` i `ppvOptions` równa `NULL`. To jest interpretowane przez wtyczka do kontroli źródła jako pytanie, "Masz wszystkie zaawansowane opcje dla tego polecenia?" Jeśli wtyczka zwraca `SCC_I_ADV_SUPPORT`, środowisko IDE Wyświetla **zaawansowane** znajdujący się w jego **uzyskać** okno dialogowe.  
   
- Po raz pierwszy użytkownik klika polecenie **zaawansowane** przycisku IDE ponownie wywołuje `SccGetCommandOptions` działanie, tym razem z innej`NULL``ppvOptions` wskazującego `NULL` wskaźnika. Wyświetla wtyczki własną **opcji Pobierz** okno dialogowe monituje użytkownika o informacje, umieszcza w własną strukturę i zwraca wskaźnik do tej struktury w `ppvOptions`.  
+ Użytkownik klika polecenie po raz pierwszy **zaawansowane** przycisk, IDE ponownie wywołuje `SccGetCommandOptions` funkcji, tym razem z systemem innym niż`NULL``ppvOptions` wskazującego na `NULL` wskaźnika. Wtyczka wyświetla własną **uzyskać opcje** okno dialogowe monituje użytkownika o informacje, umieszcza w własną strukturę i zwraca wskaźnik do tej struktury w `ppvOptions`.  
   
- Gdy użytkownik kliknie **zaawansowane** ponownie w tym samym oknie dialogowym IDE wywołuje `SccGetCommandOptions` funkcja ponownie bez zmieniania `ppvOptions`, dzięki czemu struktury jest przekazywana do wtyczki. Dzięki temu dodatek plug-in ponownie zainicjować jej okno dialogowe na wartości, które użytkownik ma ustawione wcześniej. Wtyczka modyfikuje struktury w miejscu przed zwróceniem.  
+ Jeśli użytkownik kliknie **zaawansowane** ponownie w tym samym oknie dialogowym IDE wywołuje `SccGetCommandOptions` funkcja ponownie bez konieczności zmieniania `ppvOptions`, dzięki czemu struktury jest przekazywana do wtyczki. Dzięki temu dodatek plug-in ponownie zainicjować okno dialogowe jego wartości, które użytkownik ma ustawione wcześniej. Wtyczka modyfikuje struktury w miejscu przed zwróceniem.  
   
- Ponadto, kiedy użytkownik kliknie **OK** w IDE **uzyskać** okno dialogowe, wywołania IDE [SccGet](../extensibility/sccget-function.md), przekazanie struktury zwracane w `ppvOptions` zawierający Opcje zaawansowane.  
+ Ponadto, kiedy użytkownik kliknie **OK** w środowisku IDE **uzyskać** okno dialogowe, wywołania IDE [SccGet](../extensibility/sccget-function.md), przekazywanie struktury zwracane w `ppvOptions` zawierający Opcje zaawansowane.  
   
 > [!NOTE]
->  Polecenie `SCC_COMMAND_OPTIONS` jest używany podczas wyświetlania IDE **opcje** okno dialogowe, w którym użytkownik może ustawić preferencje, które kontrolują sposób działania integracji. Jeśli wtyczka do kontroli źródła chce dostarczyć własny okno dialogowe preferencji, będzie możliwe wyświetlenie jej **zaawansowane** przycisk w oknie dialogowym Preferencje programu IDE. Wtyczka jest ponosi uzyskanie i przechowywanie tych informacji; IDE nie używać jej lub zmodyfikuj go.  
+>  Polecenie `SCC_COMMAND_OPTIONS` jest używany, gdy środowisko IDE Wyświetla **opcje** okno dialogowe, w którym użytkownik może ustawić preferencje, które kontrolują, jak działa integracja. Jeśli wtyczka do kontroli źródła chce, aby podać własne okno dialogowe Preferencje, może on zawierać go z **zaawansowane** przycisku w okno dialogowe preferencji środowiska IDE. Wtyczka jest wyłączną odpowiedzialność za uzyskanie i przechowywanie te informacje; IDE nie używać go lub go zmodyfikować.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [Polecenie kodu](../extensibility/command-code-enumerator.md)
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+ [Kod polecenia](../extensibility/command-code-enumerator.md)

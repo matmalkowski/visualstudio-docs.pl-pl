@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: RequiredFrameworkVersion, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc1a138c50c0fe13962f6601449eb3498d90398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137839"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635925"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion — Element (szablony Visual Studio)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion, element (szablony Visual Studio)
 
-Określa minimalną wersję platformy .NET, który jest wymagany przez szablon. Powoduje on **wersja docelowego Frameworka** listy rozwijanej, który będzie wyświetlany w **nowy projekt** okna dialogowego. `RequiredFrameworkVersion` Element określa również wartością najniższą dostępne w menu rozwijanym.
+Określa minimalną wersję systemu .NET Framework, która jest wymagana przez szablon. Powoduje ono **wersji platformy docelowej** listy rozwijanej do wyświetlania w **nowy projekt** okna dialogowego. `RequiredFrameworkVersion` Element określa również najniższej wartości dostępne na liście rozwijanej.
 
 > [!IMPORTANT]
-> W programie Visual Studio 2017 wersji 15,6, **wersja docelowego Frameworka** listy rozwijanej nie jest już filtru dla szablonów wyświetlanych w **szablony** sekcji **nowy projekt** okna dialogowego. Zamiast tego elementu dropdown działa jako selektor framework, dla wybranego szablonu.
+> Począwszy od programu Visual Studio 2017 w wersji 15.6, **wersji platformy docelowej** listy rozwijanej nie jest już filtr dla szablonów wyświetlanych w **szablony** części **nowy projekt** okna dialogowego. Zamiast tego listy rozwijanej działa jako selektora framework, dla wybranego szablonu.
 
  \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
 
@@ -49,20 +49,20 @@ Określa minimalną wersję platformy .NET, który jest wymagany przez szablon. 
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być minimalna liczba wersji programu .NET Framework, która jest wymagana dla szablonu.
+ Tekst musi być minimalny numer wersji systemu .NET Framework, która jest wymagana dla szablonu.
 
 ## <a name="remarks"></a>Uwagi
 
-`RequiredFrameworkVersion` to opcjonalny element. Użyj tego elementu tylko wtedy, gdy szablon obsługuje minimalnej określonej wersji (i nowszych wersjach, jeśli istnieją) programu .NET Framework. Jeśli określisz `RequiredFrameworkVersion` elementu i szablonu nie obsługuje określonego minimalna wersja programu .NET Framework, **wersja docelowego Frameworka** listy rozwijanej wyświetlany, gdy nie ma zastosowania.
+`RequiredFrameworkVersion` element jest opcjonalny. Użyj tego elementu tylko wtedy, gdy szablon obsługuje określoną wersję minimalną (i nowszych wersjach, jeśli istnieje) programu .NET Framework. Jeśli określisz `RequiredFrameworkVersion` elementu i szablonu nie obsługuje określonej minimalnej wersji systemu .NET Framework **wersji platformy docelowej** Wyświetla listę rozwijaną, gdy nie ma zastosowania.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia metadanych dla standardowej [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu klasy.
+W poniższym przykładzie pokazano metadanych dla standardowego [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu klasy.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,10 +82,10 @@ Poniższy przykład przedstawia metadanych dla standardowej [!INCLUDE[csprcs](..
 </VSTemplate>
 ```
 
-W tym przykładzie minimalna wersja programu .NET Framework, która jest wymagana przez szablon, reprezentowany przez `RequiredFrameworkVersion`, to 3.0. Projekt utworzone za pomocą tego szablonu można kierować wersje programu .NET Framework, zaczynając od 3.0.
+W tym przykładzie minimalnej wersji systemu .NET Framework, która jest wymagana przez szablon, reprezentowane przez `RequiredFrameworkVersion`, to 3.0. Projekt, który został utworzony za pomocą tego szablonu można wskazać wersje programu .NET Framework, począwszy od 3.0.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+- [Odwoływać się do określonej wersji środowiska .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

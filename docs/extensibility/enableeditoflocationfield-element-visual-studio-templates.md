@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: EnableEditOfLocationField, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aee6e8b763cbc46af1cf426971e68e2e22ea1e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a38f023da9f4603bee9c87cb119bd41ec7e6d98
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129795"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638020"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField — Element (szablony Visual Studio)
-Określa, czy użytkownik może edytować pole lokalizacji.  
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField, element (szablony Visual Studio)
+Określa, jeśli użytkownik może edytować pole lokalizacji.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -46,20 +46,20 @@ Określa, czy użytkownik może edytować pole lokalizacji.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazujące, czy użytkownik może edytować **lokalizacji** pola tekstowego na **nowy projekt** okno dialogowe.  
+ Tekst musi być albo `true` lub `false`oznaczający Określa, czy użytkownik może edytować **lokalizacji** pola tekstowego **nowy projekt** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `EnableEditOfLocationField` to opcjonalny element. Wartość domyślna to `true`, która umożliwia użytkownikom edytowanie wartości w **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe.  
+ `EnableEditOfLocationField` element jest opcjonalny. Wartość domyślna to `true`, co pozwala użytkownikowi edytować wartość w **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe.  
   
- W **nowy projekt** okno dialogowe **lokalizacji** pola tekstowego określa katalog, w której jest zapisywany nowy projekt.  
+ W **nowy projekt** okno dialogowe **lokalizacji** pola tekstowego określa katalog, w której zostanie zapisany nowy projekt.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadanych dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.  
+ W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ Określa, czy użytkownik może edytować pole lokalizacji.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

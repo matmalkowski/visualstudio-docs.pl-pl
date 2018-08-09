@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454379"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636015"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName — Element (szablony Visual Studio)
-Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu system będzie generował domyślną nazwę szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
+# <a name="providedefaultname-element-visual-studio-templates"></a>Providedefaultname — element (szablony Visual Studio)
+Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] system projektu spowoduje wygenerowanie domyślna nazwa szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -31,7 +31,7 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <ProvideDefaultName> true/false </ProvideDefaultName>  
 ```  
   
@@ -48,22 +48,22 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazującą, czy chcesz wygenerować domyślną nazwę szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
+ Tekst musi być albo `true` lub `false`, wskazującą, czy mają być Generowanie domyślna nazwa szablonu w **Dodaj nowy element** lub **nowy projekt** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `ProvideDefaultName` to opcjonalny element. Wartość domyślna to `true`.  
+ `ProvideDefaultName` element jest opcjonalny. Wartość domyślna to `true`.  
   
- Jeśli `ProvideDefaultName` jest element `false`, **nazwa** pola **Dodaj nowy element** i **nowy projekt** okien dialogowych zawierają wartość `<Enter_name>`.  
+ Jeśli `ProvideDefaultName` element jest `false`, **nazwa** pola **Dodaj nowy element** i **nowy projekt** okna dialogowe zawierają wartość `<Enter_name>`.  
   
- Użyj [defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) element, aby określić domyślną nazwę projektu lub elementu **Dodaj nowy element** i **nowy projekt** okien dialogowych. Gdy wartość `ProvideDefaultName` element jest `true`, pominięcie `DefaultName` elementu dla projektów wypełnia okna dialogowego z nazwy szablonu, czyli wartość z [nazwa](../extensibility/name-element-visual-studio-templates.md) elementu.
+ Użyj [defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) element, aby określić domyślną nazwę projektu lub elementu w **Dodaj nowy element** i **nowy projekt** okien dialogowych. Gdy wartość `ProvideDefaultName` element jest `true`, pominięcie `DefaultName` elementu dla projektów wypełni okno dialogowe z nazwą tego szablonu, oznacza to, że wartość z [nazwa](../extensibility/name-element-visual-studio-templates.md) elementu.
   
 ## <a name="example"></a>Przykład  
- Poniższy kod przykładzie `ProvideDefaultName` elementu `false`.  
+ Poniższy kod ustawia przykład `ProvideDefaultName` elementu `false`.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -81,6 +81,6 @@ Określa, czy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

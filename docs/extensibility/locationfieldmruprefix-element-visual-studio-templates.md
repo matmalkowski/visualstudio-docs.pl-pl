@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cef7e1e09d81c4ff0fb28198ff9a4d68f1e9c501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 050d9b060fe9976dc9262b2878f570abbdc9bb42
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136342"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636905"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix — Element (szablony Visual Studio)
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Locationfieldmruprefix — element (szablony Visual Studio)
 Określa ścieżki ostatnio używanych (MRU) w **nowy projekt** i **Dodaj nowy element** okno dialogowe.  
   
 ## <a name="syntax"></a>Składnia  
   
-```  
+```xml  
 <LocationFieldMRUPrefix> ... </LocationFieldMRUPrefix>  
 ```  
   
@@ -45,11 +45,11 @@ Określa ścieżki ostatnio używanych (MRU) w **nowy projekt** i **Dodaj nowy e
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten element należy używać tylko szablony utworzone za pośrednictwem [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  
+ Ten element należy używać tylko dla szablonów, produkowanych przez [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5350484294d02356301839e38b97bea1d40ec27c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9593496f36fba4a56334a206cf39e9a6ad96ad2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138239"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639792"
 ---
 # <a name="sccbeginbatch-function"></a>Funkcja SccBeginBatch
-Ta funkcja zostanie uruchomiony sekwencji operacji kontroli źródła. [SccEndBatch](../extensibility/sccendbatch-function.md) zostanie wywołana w celu zakończenia wykonywania zadania wsadowego. Partie te nie mogą być zagnieżdżone.  
+Ta funkcja zostanie uruchomiony sekwencji operacji kontroli źródła. [SccEndBatch](../extensibility/sccendbatch-function.md) zostanie wywołana w celu zakończenia zadania wsadowego. Partie te nie mogą być zagnieżdżone.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,22 +31,22 @@ Ta funkcja zostanie uruchomiony sekwencji operacji kontroli źródła. [SccEndBa
 SCCRTN SccBeginBatch(void);  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  Brak.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Wsadowe operacji zostało uruchomione pomyślnie.|  
-|SCC_E_UNKNOWNERROR|Nieokreślony błąd.|  
+|SCC_OK|Batch operacji rozpoczęło się pomyślnie.|  
+|SCC_E_UNKNOWNERROR|Wystąpił nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Partie kontroli źródła są używane do wykonywania operacji w wielu projektów lub wielu kontekstów. Partie można wyeliminować projektu nadmiarowe okien dialogowych z środowisko użytkownika podczas operacji wsadowej. `SccBeginBatch` Funkcji i [SccEndBatch](../extensibility/sccendbatch-function.md) są używane jako para funkcja wskazująca początek i koniec operacji. Nie można zagnieżdżać ich. `SccBeginBatch` Ustawia flagę wskazującą, czy operacja partii jest w toku.  
+ Partie kontroli źródła są używane do wykonania tych samych operacji między wieloma projektami lub wieloma kontekstów. Partie można wyeliminować okna dialogowe projektu nadmiarowe od środowiska użytkownika podczas operacji wsadowej. `SccBeginBatch` Funkcji i [SccEndBatch](../extensibility/sccendbatch-function.md) są używane jako pary funkcji do wskazania rozpoczęcie i zakończenie operacji. Nie można zagnieżdżać ich. `SccBeginBatch` Ustawia flagę wskazującą, że trwa wykonywanie operacji przetwarzania wsadowego.  
   
- Podczas operacji zbiorczej jest włączone, wtyczkę kontroli źródła należy co najwyżej jedno okno dialogowe dla pytań użytkownik widzi i stosować odpowiedzi z tego okna dialogowego na wszystkie kolejne operacje.  
+ Podczas operacji zbiorczej jest włączone, wtyczka do kontroli źródła należy co najwyżej jedno okno dialogowe dla pytań użytkownik widzi i zastosować odpowiedzi z tego okna dialogowego na wszystkie kolejne operacje.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

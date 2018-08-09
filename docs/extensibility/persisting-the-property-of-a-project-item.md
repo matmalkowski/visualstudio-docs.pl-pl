@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b0bc529e01d8ef34b6959b98d773857000ec1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138057"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639353"
 ---
-# <a name="persisting-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
-Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, takie jak autor pliku źródłowego. Można to zrobić, przechowując właściwość w pliku projektu.
+# <a name="persist-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
+Można utrwalić właściwości dodawane do elementu projektu, takich jak tworzenie pliku źródłowego. Można to zrobić, umieszczając właściwość w pliku projektu.
 
- Pierwszy krok w celu utrwalenia właściwość w pliku projektu jest uzyskanie hierarchii projektu jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu. Ten interfejs można uzyskać przy użyciu automatyzacji lub za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Po uzyskaniu interfejsu można go określić zaznaczonego elementu projektu. Po utworzeniu identyfikator elementu projektu, można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> można dodać właściwości.
+ Pierwszym krokiem do utrwalenia właściwości w pliku projektu jest uzyskanie hierarchii projektu jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu. Możesz uzyskać ten interfejs, za pomocą automatyzacji lub za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Po uzyskaniu interfejsu, służy do określenia, który element projektu jest aktualnie wybrany. Gdy masz identyfikator elementu projektu, możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> można dodać właściwości.
 
- W poniższych procedur można utrwalić właściwości VsPkg.cs `Author` z wartością `Tom` w pliku projektu.
+ W poniższych procedurach utrwalić *VsPkg.cs* właściwość `Author` wartością `Tom` w pliku projektu.
 
-### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Aby uzyskać hierarchii projektu za pomocą obiektu DTE
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Aby uzyskać hierarchii projektu obiektu DTE
 
-1.  Dodaj następujący kod do VSPackage:
+1.  Dodaj następujący kod do Twojego pakietu VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,9 +41,9 @@ Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, ta
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Aby zachować właściwości elementu projektu o obiekt DTE
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Aby zachować właściwości elementu projektu obiektu DTE
 
-1.  Dodaj następujący kod do kodu podanego w tej metodzie w poprzedniej procedurze:
+1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,9 +58,9 @@ Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, ta
     }
     ```
 
-### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Aby uzyskać hierarchii projektu przy użyciu IVsMonitorSelection
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Aby uzyskać hierarchii projektu przy użyciu IVsMonitorSelection
 
-1.  Dodaj następujący kod do VSPackage:
+1.  Dodaj następujący kod do Twojego pakietu VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,11 +102,9 @@ Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, ta
     }
     ```
 
-2.
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Można utrwalić właściwość elementu wybranego projektu, biorąc pod uwagę hierarchii projektu
 
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Aby zachować właściwości elementu wybranego projektu, podane hierarchii projektu
-
-1.  Dodaj następujący kod do kodu podanego w tej metodzie w poprzedniej procedurze:
+1.  Dodaj następujący kod do kodu podanego w metodzie w poprzedniej procedurze:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -117,18 +115,18 @@ Może zajść potrzeba utrwalenia właściwości dodane do elementu projektu, ta
     }
     ```
 
-### <a name="to-verify-that-the-property-is-persisted"></a>Aby sprawdzić, czy właściwość jest trwały.
+## <a name="to-verify-that-the-property-is-persisted"></a>Aby sprawdzić, czy właściwość jest trwały.
 
-1.  Uruchom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i otworzyć lub utworzyć rozwiązanie.
+1.  Rozpocznij [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i otworzyć lub utworzyć rozwiązanie.
 
 2.  Wybierz projekt elementu VsPkg.cs w **Eksploratora rozwiązań**.
 
-3.  Użyj punkt przerwania lub w przeciwnym razie określenia załadowaniu VSPackage i czy SetItemAttribute jest uruchomiony.
+3.  Użyj punktu przerwania lub w przeciwnym razie określenia załadowaniu Twojego pakietu VSPackage i że SetItemAttribute działa.
 
     > [!NOTE]
-    > Można automatycznie załadować pakiet VSPackage w kontekście interfejsu użytkownika <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Aby uzyskać więcej informacji, zobacz [ładowania VSPackages](../extensibility/loading-vspackages.md).
+    > Można automatycznie załadować pakietu VSPackage w kontekście interfejsu użytkownika <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).
 
-4.  Zamknij [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , a następnie otwórz plik projektu w Notatniku. Powinny pojawić się \<autora > tagu o wartości Tomasz, w następujący sposób:
+4.  Zamknij [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a następnie otwórz plik projektu w programie Notatnik. Powinien zostać wyświetlony \<autor > tag z wartością Tomasz, w następujący sposób:
 
     ```xml
     <Compile Include="VsPkg.cs">

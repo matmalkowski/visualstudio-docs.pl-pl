@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388348"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639698"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
@@ -27,7 +27,7 @@ W poprzednich krokach w tym samouczku wyjaśniono sposób tworzenia minimalną a
 W tym kroku dowiesz się, jak:
 
 > [!div class="checklist"]
-> - Użyj szablony elementów Visual Studio, aby szybko nowe pliki o różnych typach wygodne schematyczny kod (krok 3 - 1)
+> - Użyj szablony elementów Visual Studio, aby szybko dodać nowe pliki o różnych typach wygodne schematyczny kod (krok 3 - 1)
 > - Konfigurowanie projektu Django do obsługi plików statycznych (krok 2 z 3)
 > - Dodawanie dodatkowych stron do aplikacji (krok 3 z 3)
 > - Użyj szablonu dziedziczenia, aby utworzyć pasek nagłówka, jak i nawigacji, który jest używany na stronach (krok 3 – 4)
@@ -186,7 +186,7 @@ Szablon podstawowy wyznacza blokach, używając `{% block <block_name> %}` i `{%
 
 Poniższe kroki prezentują dziedziczenia:
 
-1. W aplikacji *szablony/HelloDjangoApp* folderu, Utwórz nowy plik HTML (przy użyciu **Dodaj** > **nowy element** menu kontekstowego lub **Dodaj**  >  **Strony HTML**) o nazwie `layout.html`i zastąp jego zawartość ze znacznikami poniżej. Aby zobaczyć, że ten szablon zawiera bloku o nazwie "zawartość", to wszystko to Zastąp odwołujący się potrzeba strony:
+1. W aplikacji *szablony/HelloDjangoApp* folderu, Utwórz nowy plik HTML (przy użyciu **Dodaj** > **nowy element** menu kontekstowego lub **Dodaj**  >  **Strony HTML**) o nazwie *layout.html*i zastąp jego zawartość ze znacznikami poniżej. Aby zobaczyć, że ten szablon zawiera bloku o nazwie "zawartość", to wszystko to Zastąp odwołujący się potrzeba strony:
 
     ```html
     <!DOCTYPE html>

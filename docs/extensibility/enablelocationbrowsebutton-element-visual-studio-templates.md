@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: EnableLocationBrowseButton, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126849"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639542"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton — Element (szablony Visual Studio)
-Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okna dialogowego, dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w której jest zapisywany nowy projekt.  
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, element (szablony Visual Studio)
+Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okno dialogowe, dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w której zostanie zapisany nowy projekt.  
   
  \<VSTemplate>  
  \<TemplateData >  
@@ -48,20 +48,20 @@ Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okna di
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być równa albo `true` lub `false`, wskazującą, czy należy wyświetlić **Przeglądaj** znajdującego się na **nowy projekt** okno dialogowe.  
+ Tekst musi być albo `true` lub `false`, wskazującą, czy mają być wyświetlane **Przeglądaj** znajdujący się na **nowy projekt** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `EnableLocationBrowseButton` to opcjonalny element. Wartość domyślna to `true`, która wyświetla **Przeglądaj** przycisk **nowy projekt** okno dialogowe.  
+ `EnableLocationBrowseButton` element jest opcjonalny. Wartość domyślna to `true`, który wyświetla **Przeglądaj** znajdujący się w **nowy projekt** okno dialogowe.  
   
- W **nowy projekt** okno dialogowe **lokalizacji** pola tekstowego określa katalog, w której jest zapisywany nowy projekt. **Przeglądaj** przycisk pomaga zmodyfikować tego katalogu, wyświetlając **lokalizacji projektu** okno dialogowe, które umożliwia łatwe przejście do innego katalogu, który jest dostępny z komputera, a następnie wybierz go jako katalog, w której jest zapisywany nowy projekt.  
+ W **nowy projekt** okno dialogowe **lokalizacji** pola tekstowego określa katalog, w której zostanie zapisany nowy projekt. **Przeglądaj** przycisk pomoże Ci modyfikować tego katalogu, wyświetlając **lokalizacji projektu** okno dialogowe, które umożliwia łatwe przejście do innego katalogu, który jest dostępny z komputera, a następnie wybierz ją, jako katalog, w którym jest zapisywany nowy projekt.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia metadanych dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.  
+ W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okna di
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

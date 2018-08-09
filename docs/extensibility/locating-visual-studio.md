@@ -12,36 +12,36 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed6125c69b9068ebfb3d776ccbefaf88043f83a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45eab0ff3dc1c5a0799e3db35b612a3ee3741db7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138616"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637591"
 ---
-# <a name="locating-visual-studio"></a>Lokalizowanie programu Visual Studio
+# <a name="locate-visual-studio"></a>Znajdź program Visual Studio
 
-Począwszy od programu Visual Studio 2017 r, można zainstalować wiele wystąpień tej samej wersji lub nawet edition. Jest to przydatne, jeśli chcesz wyświetlić podgląd nowych funkcji na komputerze deweloperskim głównej przy zachowaniu poprzedniej instalacji. Ze względu na te zmiany nie istnieje jednym środowisku zmiennej lub rejestru wartość używanych w celu zlokalizowania wystąpienia. Zamiast tego można użyć [COM zapytania interfejsu API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) znaleźć wystąpień na podstawie kryteriów odpowiednie do rozszerzenia.
+Począwszy od programu Visual Studio 2017 można zainstalować wiele wystąpień tej samej wersji lub nawet edition. Jest to przydatne, gdy chcesz wyświetlić podgląd nowych funkcji na komputerze deweloperskim głównej, przy jednoczesnym zachowaniu poprzedniej instalacji. Z powodu tych zmian nie ma jednego środowiska zmiennej i z rejestru wartości używane w celu zlokalizowania wystąpienia. Zamiast tego można użyć [kwerendy COM API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) można znaleźć wystąpień na podstawie kryteriów, które dotyczą Twojego rozszerzenia.
 
-Jest to interfejs API szybkie, tylko do odczytu z pakietami NuGet, które są dostępne dla kodu natywnego i zarządzanego.
+Jest to szybkie, tylko do odczytu interfejsu API z pakietami NuGet, które są dostępne dla kodu natywnego i zarządzanego.
 
 | Kod | Package |
 | ---- | --- |
 | Natywne | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | Zarządzane | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-Zlokalizuj pojedynczego wystąpienia daną ścieżkę lub bieżącego procesu lub wyliczyć wszystkie wystąpienia. Zobacz [nasze przykłady](https://github.com/Microsoft/vs-setup-samples) pełną przykłady można znaleźć programu Visual Studio.
+Znajdź pojedyncze wystąpienie daną ścieżkę lub bieżący proces lub wyliczyć wszystkich wystąpień. Zobacz [nasze przykłady](https://github.com/Microsoft/vs-setup-samples) kompletne przykłady sposobu lokalizowania programu Visual Studio.
 
 ## <a name="tools"></a>Narzędzia
 
-Aby znaleźć Visual Studio i innych narzędzi w środowiska kompilacji, skrypty programu PowerShell, pliki instalacyjne i scenariuszy, mamy kilka narzędzi typu open source, można użyć bezpośrednio lub ponownej dystrybucji wraz z własnych skryptów.
+Aby znaleźć programu Visual Studio i innych narzędzi w środowiska kompilacji, skrypty programu PowerShell, instalatorów i scenariuszy, istnieje szereg narzędzi typu open source, można użyć bezpośrednio lub Ponowna dystrybucja wraz z własnych skryptów.
 
 | Projekt | Opis |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | Natywny jednego pliku wykonywalnego można znaleźć wystąpień spełniających kryteria, takich jak wersji lub wersji wstępnej, jakie produkt jest zainstalowany i obciążeń, które są zainstalowane. Obsługuje również wyszukiwanie programu Visual Studio 2010 i nowszych, ale mniej informacje są zwracane, które dla programu Visual Studio 2017 i nowszych. Zobacz [wiki](https://github.com/Microsoft/vswhere/wiki) przykłady. |
-| [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Obsługiwane polecenia cmdlet programu PowerShell 2.0 lub nowszej, które zwracają informacje sformatowanego jako obiekty można znaleźć wystąpień, w oparciu o te same kryteria jak _vswhere_ i aby dowiedzieć się więcej właściwości o wystąpieniach. Zobacz [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) przykłady. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatycznie lokalizuje _VSIXInstaller_ i przekazuje za pomocą wiersza polecenia do zainstalowania _*.vsix_ pliku. Może to być przydatne w pliki instalacyjne, które nie mają bezpośredniego Obsługa zapytań interfejsów API. Zobacz [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) przykłady. |
+| [vswhere](https://github.com/Microsoft/vswhere) | Natywne pojedynczego pliku lub pliku wykonywalnego, aby zlokalizować wystąpienia, spełniające kryteria, takie jak wersja w wersji wstępnej, jakie produkty są zainstalowane i obciążeń, które są zainstalowane. Obsługuje także wyszukiwanie programu Visual Studio 2010 lub nowszej, jednak mniej informacji jest zwracany, który dla programu Visual Studio 2017 i nowszych. Zobacz [wiki](https://github.com/Microsoft/vswhere/wiki) przykłady. |
+| [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Obsługiwane polecenia cmdlet programu PowerShell 2.0 lub nowszym, które zwracają rozbudowane informacje jako obiekty, można użyć, aby znaleźć wystąpień, w oparciu o takich samych kryteriów jako _vswhere_ i aby odnaleźć właściwości jeszcze więcej o wystąpieniach. Zobacz [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) przykłady. |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatycznie lokalizuje _Instalator VSIX_ i przekazuje od wiersza polecenia do zainstalowania **.vsix* pliku. Ta funkcja może być przydatne w pliki instalacyjne, które nie mają bezpośrednią obsługę interfejsami API zapytań. Zobacz [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) przykłady. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-* [Zmiany Instalatora 2017 programu Visual Studio](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)
+* [Zmiany w instalacji programu Visual Studio 2017](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)

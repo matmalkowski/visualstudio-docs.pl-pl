@@ -13,50 +13,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef51b3cb0f84a470f104ff688c1149e607d16f71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef69ac45a090aa4395aa15d1395cff1665255b51
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136329"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639116"
 ---
-# <a name="preparing-extensions-for-windows-installer-deployment"></a>Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows
-Za pomocą pakietu Instalatora Windows (MSI) nie można wdrożyć pakietu VSIX. Można jednak Wyodrębnij zawartość pakietu VSIX dla wdrożenia MSI. Ten dokument przedstawia sposób przygotowania projektu, której wyjście domyślny jest pakietem VSIX do dołączenia do projektu Instalatora.  
+# <a name="prepare-extensions-for-windows-installer-deployment"></a>Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows
+Za pomocą pakietu Instalatora Windows (MSI) nie można wdrożyć pakiet VSIX. Jednak można wyodrębnić zawartości pakietu VSIX do wdrożenia MSI. W tym dokumencie pokazano, jak przygotować projektu, którego domyślne dane wyjściowe to pakiet VSIX do włączenia do projektu Instalatora.  
   
-## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>Przygotowywanie wdrożenia Instalatora Windows projekt rozszerzenia  
- Wykonaj następujące kroki na nowe projekty rozszerzenia przed dodaniem go do projektu Instalatora.  
+## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Przygotowanie projektu rozszerzenia dla wdrożenia Instalatora Windows  
+ Te kroki można wykonać na nowe projekty rozszerzenie, przed dodaniem do projektu Instalatora.  
   
-#### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Aby przygotować projekt rozszerzenia dla wdrożenia Instalatora Windows  
+### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Aby przygotować projekt rozszerzenia dla wdrożenia Instalatora Windows  
   
-1.  Utwórz pakiet VSPackage, składników MEF, ozdób Edytor lub inny typ projektu rozszerzalności, zawierającą manifestu VSIX.  
+1.  Tworzenie pakietu VSPackage, składnik MEF, zakończeń edytora lub innych typów projektów rozszerzalności, która zawiera manifestu VSIX.  
   
-2.  Otwórz plik manifestu VSIX w edytorze kodu.  
+2.  Otwórz manifestu VSIX w edytorze kodu.  
   
-3.  Element InstalledByMsi manifestu VSIX, aby ustawić `true`. Aby uzyskać więcej informacji na temat manifestu VSIX, zobacz [odwołania 2.0 schematu rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+3.  Ustaw `InstalledByMsi` elementu manifestu VSIX do `true`. Aby uzyskać więcej informacji na temat manifestu VSIX, zobacz [— dokumentacja schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
-     Zapobiega to próbie instalacji składnika Instalatora VSIX.  
+     Zapobiega to próby instalacji składnika Instalator VSIX.  
   
 4.  Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i kliknij przycisk **właściwości**.  
   
 5.  Wybierz **VSIX** kartę.  
   
-6.  Sprawdź pola o nazwie **VSIX kopiowania zawartości do następującej lokalizacji** i wpisz ścieżkę, do której projektu Instalator pobierze pliki.  
+6.  Sprawdź pole o nazwie **VSIX kopiowania zawartości do następującej lokalizacji** i wpisz ścieżkę, do której pliki przejmą projektu Instalatora.  
   
-## <a name="extracting-files-from-an-existing-vsix-package"></a>Wyodrębnianie plików z istniejącego pakietu VSIX  
- Wykonaj następujące kroki, aby dodać zawartość istniejącego pakietu VSIX do projektu Instalatora, gdy nie ma plików źródłowych.  
+## <a name="extract-files-from-an-existing-vsix-package"></a>Wyodrębnij pliki z istniejącego pakietu VSIX  
+ Wykonaj następujące kroki, aby dodać zawartość istniejącego pakietu VSIX do projektu Instalatora, gdy nie masz pliki źródłowe.  
   
-#### <a name="to-extract-files-from-an-existing-vsix-package"></a>Aby wyodrębnić pliki z istniejącego pakietu VSIX  
+### <a name="to-extract-files-from-an-existing-vsix-package"></a>Aby wyodrębnić pliki z istniejącego pakietu VSIX  
   
-1.  Zmień nazwę. Plik VSIX zawierający rozszerzenie z *filename*.vsix do *filename*zip.  
+1.  Zmień nazwę *. VSIX* plik zawierający rozszerzenie z *filename.vsix* do *filename.zip*.  
   
-2.  Skopiuj zawartość pliku zip do katalogu.  
+2.  Skopiuj zawartość *zip* plik do katalogu.  
   
-3.  Usuń plik XML [Content_types] z katalogu.  
+3.  Usuń *[Content_types] .xml* plików z katalogu.  
   
-4.  Edytuj VSIX manifest, jak pokazano w poprzedniej procedurze.  
+4.  Edytowanie manifestu VSIX, jak pokazano w poprzedniej procedurze.  
   
-5.  Dodaj pozostałe pliki do projektu Instalatora.  
+5.  Dodaj pozostałych plików do projektu Instalatora.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wdrożenie Instalatora programu Visual Studio](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [Wskazówki: Tworzenie niestandardowej akcji](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Przewodnik: Tworzenie niestandardowej akcji](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)

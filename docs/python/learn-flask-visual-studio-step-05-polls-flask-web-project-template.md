@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388296"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637620"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -29,7 +29,7 @@ W tym kroku dowiesz się, jak:
 > [!div class="checklist"]
 > - Tworzenie projektu z szablonu i zainicjować bazy danych (krok 5 - 1)
 > - Zrozumienie modeli danych (krok 5-2)
-> - Tworzenie kopii zapasowych magazynów danych i (krok 5-3)
+> - Zrozumienie tworzenie kopii zapasowych magazynów danych (krok 5-3)
 > - Omówienie widoków szczegółów i wyniki sondowania (krok 5-4)
 
 Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond", która wytwarza identyczną aplikację, ale używa aparatu tworzenia szablonów Jinja Jade rozszerzenia. Aby uzyskać więcej informacji, zobacz [krok 4 — szablon projektu sieci Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,7 +40,7 @@ Visual Studio udostępnia również szablon "Projekt sieci Web Flask/Jade sond",
 
 1. W oknie dialogowym Nowy projekt wyszukiwanie i wybieranie **projektu sieci Web Flask sond** szablonu, wywołaj projektu "FlaskPolls", a następnie wybierz pozycję **OK**.
 
-1. Podobnie jak inne szablony projektów w programie Visual Studio zawiera szablon "Projekt sieci Web Flask sond" *requirements.txt* pliku monitów w programie Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne. (Ten szablon wymaga Flask, a także pakietów usługi azure storage i pymongo; pyjade wymaga również "Sond Flask/Jade projektu sieci Web").
+1. Podobnie jak inne szablony projektów w programie Visual Studio zawiera szablon "Projekt sieci Web Flask sond" *requirements.txt* plików, programu Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne. (Ten szablon wymaga Flask, a także pakietów usługi azure storage i pymongo; pyjade wymaga również "Sond Flask/Jade projektu sieci Web").
 
 1. Ustaw **FlaskPolls** projektu jako domyślny dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i wybierając polecenie **Ustaw jako projekt startowy**. Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
 

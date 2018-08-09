@@ -1,5 +1,5 @@
 ---
-title: Previewimage — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: PreviewImage, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136809"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638980"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage — Element (szablony Visual Studio)
-Określa obrazek podglądu, jako nazwę pliku dla obrazu podglądu, która będzie wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage, element (szablony Visual Studio)
+Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, która będzie wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
  \<TemplateData >  
- \<Previewimage — >  
+ \<PreviewImage >  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ Określa obrazek podglądu, jako nazwę pliku dla obrazu podglądu, która będz
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablonu i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
@@ -55,8 +55,8 @@ Określa obrazek podglądu, jako nazwę pliku dla obrazu podglądu, która będz
  Tekst musi być ciągiem, który reprezentuje nazwę pliku.  
   
 ## <a name="remarks"></a>Uwagi  
- `PreviewImage` to opcjonalny element.  
+ `PreviewImage` element jest opcjonalny.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

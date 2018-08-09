@@ -1,38 +1,40 @@
 ---
-title: Jak znaleźć mój "publiczny numer klienta" (PCN) lub numer autoryzacji? | Microsoft Docs
+title: Jak znaleźć Moje "Publiczny numer klienta" (PCN) lub Numer autoryzacyjny? | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/29/2017
 ms.topic: Get-Started-Article
-description: Dowiedz się, jak znaleźć numer autoryzacji lub publiczny numer klienta (PCN), na których
+description: Dowiedz się, jak znaleźć Twoje publicznego numeru klienta (PCN) lub Numer autoryzacyjny
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325443"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637022"
 ---
-# <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć mój "publiczny numer klienta" (PCN) lub numer autoryzacji?
+# <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak znaleźć Moje "Publiczny numer klienta" (PCN) lub Numer autoryzacyjny?
 
-Aby ukończyć procesu dołączania w Twojej organizacji do portalu administracyjnego subskrypcji, konieczne będzie z publiczny numer klienta (PCN) lub numer autoryzacji. Ten artykuł zawiera kroki, aby znaleźć te numery dla Twojej organizacji.  
+Aby można było ukończyć procesu dołączania w Twojej organizacji do portalu administratora subskrypcji, konieczne będzie z publicznego numeru klienta (PCN) lub Numer autoryzacyjny. Ten artykuł zawiera kroki, aby znaleźć tych dwóch liczb w Twojej organizacji.  
 
-## <a name="to-locate-your-pcn-or-authorization-number"></a>Aby zlokalizować z PCN lub numer autoryzacji
+## <a name="to-locate-your-pcn-or-authorization-number"></a>Aby znaleźć numer PCN lub Numer autoryzacyjny
 
-1.  Zaloguj się do Centrum usługi licencjonowania zbiorowego: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
+1.  Zaloguj się do woluminu licencjonowania Service Center: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
 
-2. Na karcie subskrypcji, wybierz **programu Visual Studio subskrypcje**.
-    ![Wybierz subskrypcje w centrum VLSC](_img/vlsc/vlsc-subscriptions.png)
+2. Na karcie subskrypcje wybierz **subskrypcji programu Visual Studio**.
+    > [!div class="mx-imgBorder"]
+    > ![Wybierz subskrypcje w witrynie VLSC](_img/vlsc/vlsc-subscriptions.png)
 
-3. PCN lub publiczny numer klienta znajduje się połowie stronę w dół.
-    ![Zlokalizuj PCN w centrum VLSC](_img/vlsc/vlsc-pcn.png)
+3. Numer PCN lub publiczny numer klienta jest widoczny w połowie strony.
+    > [!div class="mx-imgBorder"]
+    > ![Znajdź numer PCN w witrynie VLSC](_img/vlsc/vlsc-pcn.png)
 
     
-Jeśli nie widzisz powyżej strony i nastąpi przekierowanie do strony logowania programu Visual Studio, skopiuj i wklej poniższe łącze w pasku adresu przeglądarki: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+Jeśli nie widzisz strony i nastąpi przekierowanie do strony logowania programu Visual Studio, skopiuj i wklej poniższe łącze do swojej przeglądarki: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
 
-## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Mając więcej niż jeden PCN, które z nich należy użyć?
+## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Jeśli mam więcej niż jeden numer PCN, którego należy użyć?
 
-Jeśli masz więcej niż jeden numer klienta publiczny (PCN), otrzymają jeden adres e-mail z adresem URL dołączania unikatowy dla każdego PCN. Każdy unikatowy adres URL działa tylko z odpowiedniego PCN, ostatnich trzech cyfr, z których znajdują się również w tym samym wiadomości e-mail. Należy ukończyć proces dołączania za pośrednictwem łącza w każdej wiadomości e-mail w unikatowy dla każdego PCN. 
+Jeśli masz więcej niż jeden publicznego numeru klienta (PCN), otrzymasz jedną wiadomość e-mail na adres URL dołączania unikatowy dla każdego numeru PCN. Każdy unikatowy adres URL działa tylko z odpowiednim numerem PCN, trzy ostatnie cyfry są również dostępne w tej samej wiadomości e-mail. Musisz ukończyć proces dołączania za pomocą unikatowego linku w każdej wiadomości e-mail dla każdego numeru PCN. 

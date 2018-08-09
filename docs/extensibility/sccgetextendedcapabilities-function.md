@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46ae3e051028e8239be5949500ebb710d67eee17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7fd4a42b9c94cb2470f6e7dc7b4904aa890e8a6
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137219"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637789"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Funkcja SccGetExtendedCapabilities
-Ta funkcja zwraca dodatkowe funkcje obsługiwane przez wtyczkę kontroli źródła.  
+Ta funkcja zwraca dodatkowe funkcje obsługiwane przez wtyczka do kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pContext  
- [in] Wskaźnik kontekstu wtyczkę kontroli źródła.  
+ [in] Wskaźnik kontekście wtyczki kontroli źródła.  
   
  lSccExCaps  
- [in] Flagi Określanie rozszerzone możliwości, do których chcesz przetestować (znajdują się w tabeli rozszerzonego kodu możliwości [flagi możliwości](../extensibility/capability-flags.md) flag możliwe).  
+ [in] Flaga określająca, rozszerzone możliwości, do których chcesz przetestować (znajdują się w tabeli rozszerzonego kodu możliwości [flagi możliwości](../extensibility/capability-flags.md) dla flag możliwe).  
   
  pbSupported  
- [out] Zwraca wartość inną niż zero (`TRUE`), jeśli określona funkcja jest obsługiwana; w przeciwnym wypadku zwraca wartość zero (`FALSE`).  
+ [out] Zwraca wartość różna od zera (`TRUE`), jeśli określona funkcja jest obsługiwana; w przeciwnym razie zwraca wartość zero (`FALSE`).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Pomyślnie ukończono operację możliwości get.|  
+|SCC_OK|Operacja możliwości pobrania została ukończona pomyślnie.|  
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Wystąpił nieznany lub nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana na żądanie; oznacza to, gdy możliwości należy zbadać, ta metoda jest wywoływana w celu określenia, czy obsługiwaną możliwości. Określono tylko jedną flagę naraz.  
+ Ta metoda jest wywoływana na żądanie; oznacza to, gdy możliwości musi zostać przetestowana, ta metoda jest wywoływana w celu określenia, czy, funkcja jest obsługiwana. Określono tylko jedną flagę w danym momencie.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [Kody błędów](../extensibility/error-codes.md)   
  [Flagi możliwości](../extensibility/capability-flags.md)

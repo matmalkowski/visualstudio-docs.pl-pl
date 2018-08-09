@@ -9,12 +9,12 @@ description: Dowiedz się, jak maksymalnie wykorzystać możliwości subskrypcji
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380684"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637348"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -59,14 +59,14 @@ Portalu subskrypcji programu Visual Studio łączy wszystkie subskrypcje program
 
 ### <a name="which-subscription-am-i-using"></a>Subskrypcję, która używam?
 Na stronie korzyści używanej subskrypcji będzie zawsze wyświetlany w niebieski baner.  Jest ona również wyświetlana w prawym górnym rogu strony.
-
-   ![Aktywna subskrypcja](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Aktywna subskrypcja](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Aby przełączyć się między subskrypcjami, możesz wykonywać następujące czynności:
 - Kliknij pozycję z listy rozwijanej w prawym górnym rogu i wybierz subskrypcję z listy
 - Kliknij kartę subskrypcji, a następnie kliknij odpowiednią subskrypcję.
-
-   ![Przełączanie subskrypcji](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Przełączanie subskrypcji](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczna...
 - Może być wygasł.  Tylko aktywne subskrypcje są wyświetlane w portalu dla subskrybentów.
@@ -102,7 +102,8 @@ Informacje kontaktowe i preferencji można łatwo zmienić w Twoim profilu.
 3.  Na **o** karty, możesz zmienić nazwę, adres e-mail, kraj/region, preferencji obrazu i skontaktuj się z profilu.  Na **preferencje** karcie, można wybrać preferowany język, daty i czasu wzorców, strefę czasową i motyw interfejsu użytkownika.  
 4.  Po zakończeniu zmiany, kliknij przycisk **Zapisz**. 
 5.  Kliknij w przeglądarce **ponownie** przycisk, aby wrócić do strony korzyści. 
-    ![Edytowanie informacji o profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Edytowanie informacji o profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Łączenie z moją subskrypcję do istniejącej usługi VSTS lub subskrypcji platformy Azure
@@ -115,7 +116,8 @@ Aby dodać alternatywne konto:
 2. Kliknij pozycję **subskrypcje** kartę.
 3. W obszarze **linki powiązane**, wybierz **Dodaj alternatywne konto**.
 4. Wprowadź swój adres e-mail konta służbowe, a następnie kliknij przycisk **Dodaj**. 
-    ![Alternatywne konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Alternatywne konto](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po dodaniu alternatywnego konta, możesz zaktualizować lub usunąć w dowolnym momencie, klikając **subskrypcje** kartę i wybierając odpowiednią opcję w **linki powiązane** sekcji.  
 

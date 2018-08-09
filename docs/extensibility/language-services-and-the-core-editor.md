@@ -1,5 +1,5 @@
 ---
-title: Usługi językowe i Edytor Core | Dokumentacja firmy Microsoft
+title: Usługi języka oraz podstawowy edytor | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd9e0cdbcb10ac670ac1a0947fb9a43c16c7fccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7f439cf1564e14857b3a609191cc0bea05e0e04
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138483"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636242"
 ---
-# <a name="language-services-and-the-core-editor"></a>Usługi językowe i Edytor Core
-Edytory w programie Visual Studio są często powiązane z usługi języka. Między innymi usługi języka zapewnia kolorowanie składni, uzupełniania IntelliSense i formatowania tekstu.  
+# <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor
+Edytory w programie Visual Studio są często skojarzone z usługą language. Między innymi usługi językowej zapewnia kolorowanie składni, uzupełniania instrukcji, funkcja IntelliSense i formatowania tekstu.  
   
 ## <a name="core-editors-and-document-data-objects"></a>Edytory podstawowe i obiekty danych dokumentu  
- Po otwarciu edytora core, nie należy tworzyć dane dokumentu i obiekty widoku dokumentu. IDE tworzy i kontroluje te dwa obiekty i wprowadzając odpowiednie wywołania w edytorze wdrożenie fabryki można uzyskać dojścia do nich.  
+ Gdy uzyskujesz dostęp do edytora podstawowych, nie należy tworzyć dane dokumentu i obiektów widoku dokumentu. IDE tworzy i kontroluje te dwa obiekty i można uzyskać dojścia do nich, wprowadzając odpowiednie wywołania w edytorze fabryki implementacji.  
   
- Aby uzyskać więcej informacji, zobacz [określania edytor, którego otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Aby uzyskać więcej informacji, zobacz [ustalić, które edytora otwiera plik w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Usługi językowe i Edytor Core  
- Implementacja usługi języka, można kontrolować sposób wyświetlania danych w widoku dokumentu. Usługa języka zawiera informacje i zachowanie, które są specyficzne dla danego języka, takich jak Visual C++. Podczas tworzenia buforu tekstu i określić rozszerzenie nazwy pliku dla dokumentów, które otwierasz, buforu tekstowego określa skojarzony z tym rozszerzeniem nazwy pliku z klucza rejestru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors usługi języka \\\Extensions {YourLanguageService GUID}. Standardowy pakiet VSPackage ładowania procedury następnie ładuje VSPackage i jest tworzone wystąpienie usługi języka.  
+## <a name="language-services-and-the-core-editor"></a>Usługi języka oraz podstawowy edytor  
+ Przez zaimplementowanie usługi językowej, można kontrolować sposób wyświetlania danych w widoku dokumentu. Usługa języka zawiera informacje i zachowanie, które są specyficzne dla danego języka, takich jak Visual C++. Podczas utworzyć buforu tekstu i określić rozszerzenie nazwy pliku dla dokumentu jest otwierana, buforu tekstowego określa skojarzony z tym rozszerzeniem nazwy pliku z klucza rejestru, usługa językowa **HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\Editors\\\Extensions {identyfikator GUID YourLanguageService}**. Standardowa pakietu VSPackage, następnie ładowania procedury ładowania usługi pakietu VSPackage i tworzone jest wystąpienie usługi języka.  
   
- Na poniższej ilustracji przedstawiono usługi podstawowy język.  
+ Usługa podstawowy język jest wyświetlany na poniższej ilustracji.  
   
  ![Grafika przedstawiająca usługi Model języka](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Obiekty usługi Core edytora i język  
+Obiekty usługi podstawowej Edytor i język  
   
- Obiekt danych dokumentu edytora core jest nazywana buforu tekstu i jest reprezentowany przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu. Obiekt widoku dokumentu nosi nazwę widoku tekstu i jest reprezentowany przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> obiektu. Te dwa obiekty współdziałają ze sobą za pośrednictwem usługi języka aby zapewnić spójny obraz edytora core. Informacje z buforu tekstu i wyświetla widok tekstu w oknie dokumentu o nazwie okna kodu. Kod okno dokumentu jest zarządzana przez Menedżera okien kodu.  
+ Obiekt danych dokumentu na podstawowy edytor nosi nazwę bufor tekstowy i jest reprezentowana przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu. Obiekt widoku dokumentu nosi nazwę widoku tekstu i jest reprezentowana przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> obiektu. Te dwa obiekty współpracują ze sobą za pośrednictwem usługi języka, aby zapewnić spójny widok podstawowy edytor. Informacje z buforu tekstowego i wyświetla widok tekstu w oknie dokumentu o nazwie okna kodu. Dokument okna Kod jest zarządzany przez Menedżera okien kodu.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- [Udostępnia kontekst usługi języka przy użyciu interfejsu API starsza wersja](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
- [IntelliSense Hosting](../extensibility/intellisense-hosting.md)   
+ [Zapewnianie kontekstu usługi języka przy użyciu starszej wersji interfejsu API](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
+ [Funkcja IntelliSense hostingu](../extensibility/intellisense-hosting.md)   
  [Języki zawarte](../extensibility/contained-languages.md)   
  [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)

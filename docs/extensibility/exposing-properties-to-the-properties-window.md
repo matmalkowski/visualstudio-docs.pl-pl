@@ -1,5 +1,5 @@
 ---
-title: Udostępnianie właściwości do okna właściwości | Dokumentacja firmy Microsoft
+title: Uwidacznianie właściwości w oknie dialogowym właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,31 +15,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12dcb30374250ca7aa917cf19b3a01ba57862c6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134265"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637766"
 ---
-# <a name="exposing-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości
-Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** okna. Te właściwości są uwzględniane w **właściwości** okna.  
+# <a name="expose-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości
+Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości** okna. Zmiany te właściwości są odzwierciedlane w **właściwości** okna.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, użytkownik nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest uwzględniona jako opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="exposing-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości  
- W tej sekcji, utworzyć okna narzędzia niestandardowego i wyświetlić właściwości publiczne obiektu okienku okna skojarzony w **właściwości** okna.  
+## <a name="expose-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości  
+ W tej sekcji utworzysz niestandardowego okna narzędzi i wyświetlić publiczne właściwości obiektu w okienku skojarzonych okien w **właściwości** okna.  
   
-#### <a name="to-expose-properties-to-the-properties-window"></a>Do udostępnienia właściwości w oknie właściwości  
+### <a name="to-expose-properties-to-the-properties-window"></a>Aby udostępnić właściwości w oknie właściwości  
   
-1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od VSIX Projekt wdrożenia, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projektu o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
   
-2.  Dodaj okna narzędzia przez dodanie szablon elementu okna narzędzia niestandardowa o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **okno dialogowe Dodaj nowy element**, przejdź do **elementów Visual C# / rozszerzalności** i wybierz **okna narzędzia niestandardowe**. W **nazwa** u dołu okna dialogowego, Zmień nazwę pliku, aby `MyToolWindow.cs`. Aby uzyskać więcej informacji o sposobie tworzenia okna narzędzi niestandardowych, zobacz [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2.  Dodawanie okna narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby *MyToolWindow.cs*. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Otwórz MyToolWindow.cs i dodaj następującą instrukcję using:  
+3.  Otwórz *MyToolWindow.cs* i dodaj następującą instrukcję using:  
   
-    ```  
+    ```csharp  
     using System.Collections;  
     using System.ComponentModel;  
     using Microsoft.VisualStudio.Shell.Interop;  
@@ -53,7 +53,7 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
   
     ```  
   
-5.  Dodaj następujący kod do klasy MyToolWindow.  
+5.  Dodaj następujący kod do `MyToolWindow` klasy.  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -90,26 +90,26 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-     `TrackSelection` Używa właściwości `GetService` uzyskanie `STrackSelection` usługi, która zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. `OnToolWindowCreated` Obsługi zdarzeń i `SelectList` — metoda razem utworzyć listę wybranych obiektów, która zawiera tylko narzędzia okna okienko samego obiektu. `UpdateSelection` Informuje metody **właściwości** okno, aby wyświetlić właściwości publiczne okienka okna narzędzi.  
+     `TrackSelection` Używa właściwości `GetService` uzyskać `STrackSelection` usługa, która zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. `OnToolWindowCreated` Programu obsługi zdarzeń i `SelectList` metoda razem utworzyć listę wybranych obiektów, która zawiera tylko narzędzie okno okienka samego obiektu. `UpdateSelection` Informuje metoda **właściwości** okno, aby wyświetlić właściwości publiczne okienka okna narzędzi.  
   
-6.  Skompiluj projekt i Rozpocznij debugowanie. Powinna zostać wyświetlona eksperymentalne wystąpienie programu Visual Studio.  
+6.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
   
-7.  Jeśli **właściwości** okno nie jest wyświetlane, otwórz go, naciskając klawisz F4.  
+7.  Jeśli **właściwości** okno nie jest widoczna, otwórz ją, naciskając klawisz **F4**.  
   
-8.  Otwórz **MyToolWindow** okna. Można znaleźć w **widoku / inne okna**.  
+8.  Otwórz **MyToolWindow** okna. Znaleźć go w **widoku** > **inne Windows**.  
   
-     Zostanie otwarte okno i właściwości publiczne okienka są wyświetlane w **właściwości** okna.  
+     Zostanie otwarte okno i publicznymi właściwościami okienku okna pojawiają się w **właściwości** okna.  
   
-9. Zmień **podpis** właściwości w **właściwości** okna **Moje właściwości obiektu**.  
+9. Zmiana **podpis** właściwość **właściwości** okna **Moje właściwości obiektu**.  
   
      Tytuł okna MyToolWindow zmienia się odpowiednio.  
   
-## <a name="exposing-tool-window-properties"></a>Udostępnianie właściwości okna narzędzi  
- W tej sekcji możesz dodać okna narzędzia i uzyskać jego właściwości. Zmiany właściwości są uwzględniane w **właściwości** okna.  
+## <a name="expose-tool-window-properties"></a>Udostępnianie właściwości okna narzędzi  
+ W tej sekcji można dodać okna narzędzi i udostępnianie jej właściwości. Zmiany wprowadzone do właściwości są odzwierciedlane w **właściwości** okna.  
   
-#### <a name="to-expose-tool-window-properties"></a>Aby udostępnić narzędzia Właściwości okna  
+### <a name="to-expose-tool-window-properties"></a>Aby udostępnić narzędzia Właściwości okna  
   
-1.  Otwórz MyToolWindow.cs i Dodaj publiczny właściwość typu boolean IsChecked do klasy MyToolWindow.  
+1.  Otwórz *MyToolWindow.cs*, i Dodaj właściwość typu boolean publicznych IsChecked do `MyToolWindow` klasy.  
   
     ```csharp  
     [Category("My Properties")]  
@@ -126,9 +126,9 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-     Ta właściwość pobiera stanu z wyboru WPF, utworzone zostanie później.  
+     Tej właściwości pobiera jego stan z pola wyboru WPF, która zostanie utworzona później.  
   
-2.  Otwórz MyToolWindowControl.xaml.cs i Zamień Konstruktor MyToolWindowControl poniższy kod.  
+2.  Otwórz *MyToolWindowControl.xaml.cs* i Zamień Konstruktor MyToolWindowControl następujący kod.  
   
     ```vb  
     private MyToolWindow pane;  
@@ -142,7 +142,7 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
   
      Dzięki temu `MyToolWindowControl` dostęp do `MyToolWindow` okienka.  
   
-3.  W MyToolWindow.cs, zmień `MyToolWindow` konstruktora w następujący sposób:  
+3.  W *MyToolWindow.cs*, zmień `MyToolWindow` konstruktora w następujący sposób:  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
@@ -150,9 +150,9 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
   
 4.  Zmień na widok projektu MyToolWindowControl.  
   
-5.  Przycisk Usuń, a następnie dodaj pola wyboru z **przybornika** na lewym górnym rogu.  
+5.  Usuń przycisk i pole wyboru z **przybornika** na lewym górnym rogu.  
   
-6.  Dodaj zaznaczone i niezaznaczone zdarzeń. Zaznacz pole wyboru w widoku Projekt. W **właściwości** okna, kliknij przycisk programów obsługi zdarzeń (u góry po prawej **właściwości** okno). Znajdź **zaznaczono** i typ **checkbox_Checked** w polu tekstowym, następnie znajdź **niezaznaczone** i typ **checkbox_Unchecked** w polu tekstowym.  
+6.  Dodaj zdarzenia zaznaczone i niezaznaczone. Zaznacz pole wyboru w widoku Projekt. W **właściwości** okna, kliknij przycisk programów obsługi zdarzeń (u góry po prawej stronie **właściwości** okno). Znajdź **zaznaczone** i typ **checkbox_Checked** w polu tekstowym, następnie znajdź **niezaznaczone** i typ **checkbox_Unchecked** w polu tekstowym.  
   
 7.  Dodawanie obsługi zdarzeń pola wyboru:  
   
@@ -169,23 +169,23 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-8.  Skompiluj projekt i Rozpocznij debugowanie.  
+8.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
-9. Otwórz w eksperymentalnym wystąpieniu **MyToolWindow** okna.  
+9. W doświadczalnym wystąpieniu Otwórz **MyToolWindow** okna.  
   
-     Wyszukaj w oknie właściwości w **właściwości** okna. **IsChecked** pojawi się w dolnej części okna, w obszarze **właściwości mojego** kategorii.  
+     Wyszukaj w oknie właściwości w **właściwości** okna. **IsChecked** właściwość pojawia się w dolnej części okna, w obszarze **właściwości mojego** kategorii.  
   
-10. Zaznacz pole wyboru **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **True**. Wyczyść pole wyboru w **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **False**. Zmień wartość **IsChecked** w **właściwości** okna. Pole wyboru w **MyToolWindow** okno zmiany, aby pasowała do nowej wartości.  
+10. Zaznacz to pole wyboru **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **True**. Usuń zaznaczenie pola wyboru w **MyToolWindow** okna. **IsChecked** w **właściwości** okno zmienia się na **False**. Zmień wartość właściwości **IsChecked** w **właściwości** okna. Pole wyboru w **MyToolWindow** okno zmiany, aby pasowała do nowej wartości.  
   
     > [!NOTE]
-    >  Jeśli użytkownik musi dysponować obiektu, który jest wyświetlany w **właściwości** okna, wywołaj `OnSelectChange` z `null` kontener wyboru pierwszy. Po disposing właściwość lub obiekt, można zmienić kontener wyboru, które zostały zaktualizowane <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> i <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listy.  
+    >  Jeśli użytkownik musi dysponować obiektu, który jest wyświetlany w **właściwości** okna, wywołanie `OnSelectChange` z `null` kontener wyboru pierwszego. Po disposing właściwość lub obiekt, można zmienić na kontenerze zaznaczenia, który został zaktualizowany <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> i <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listy.  
   
-## <a name="changing-selection-lists"></a>Zmiana listy wyboru  
- W tej sekcji można dodać listy wyboru dla klasy podstawowej właściwości i wybierz z listy wyboru, które można wyświetlić za pomocą interfejsu okna narzędzia.  
+## <a name="change-selection-lists"></a>Zmień listy wyboru  
+ W tej sekcji możesz dodać listę wyboru dla klasy podstawowe właściwości i wybierz które listy wyboru, aby wyświetlić za pomocą interfejsu okna narzędzia.  
   
-#### <a name="to-change-selection-lists"></a>Aby zmienić wybór listy  
+### <a name="to-change-selection-lists"></a>Aby zmienić wybór dotyczący listy  
   
-1.  Otwórz MyToolWindow.cs i Dodaj Klasa publiczna o nazwie `Simple`.  
+1.  Otwórz *MyToolWindow.cs* i dodać publiczny klasę o nazwie `Simple`.  
   
     ```csharp  
     public class Simple  
@@ -210,7 +210,7 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-2.  Dodaj właściwość SimpleObject do klasy MyToolWindow, a także dwie metody, aby przełączyć **właściwości** okno wyboru między okienka i `Simple` obiektu.  
+2.  Dodaj `SimpleObject` właściwości `MyToolWindow` klasy, a także dwie metody, aby przełączyć **właściwości** okno wyboru między okienka w oknie i `Simple` obiektu.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -238,7 +238,7 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-3.  W MyToolWindowControl.cs Zastąp programy obsługi pól wyboru tych wierszy kodu:  
+3.  W *MyToolWindowControl.cs*, programy obsługi pól wyboru należy zastąpić następujące wiersze kodu:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -255,19 +255,19 @@ Ten przewodnik opisuje publicznego właściwości obiektu do **właściwości** 
     }  
     ```  
   
-4.  Skompiluj projekt i Rozpocznij debugowanie.  
+4.  Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
-5.  Otwórz w eksperymentalnym wystąpieniu **MyToolWindow** okna.  
+5.  W doświadczalnym wystąpieniu Otwórz **MyToolWindow** okna.  
   
-6.  Zaznacz pole wyboru w **MyToolWindow** okna. **Właściwości** Wyświetla okna `Simple` właściwości, obiektu **SomeText** i **tylko do odczytu**. Usuń zaznaczenie pola wyboru. Właściwości publiczne okna są wyświetlane w **właściwości** okna.  
+6.  Zaznacz pole wyboru w **MyToolWindow** okna. **Właściwości** jest wyświetlana w oknie `Simple` obiektu właściwości **SomeText** i **tylko do odczytu**. Usuń zaznaczenie pola wyboru. Właściwości publiczne okna pojawiają się w **właściwości** okna.  
   
     > [!NOTE]
     >  Nazwa wyświetlana **SomeText** jest **Mój tekst**.  
   
-## <a name="best-practice"></a>Najlepsze praktyki  
- W tym przewodniku <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowany kolekcji wybieranych obiektów i kolekcji wybranego obiektu są tej samej kolekcji. Wybrany obiekt pojawia się na liście właściwości przeglądarki. Bardziej szczegółowy wykonania interfejs ISelectionContainer Zobacz Reference.ToolWindow próbek.  
+## <a name="best-practice"></a>Najlepszym rozwiązaniem jest  
+ W tym przewodniku <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowany kolekcji obiektów można wybierać i kolekcji wybranego obiektu są tej samej kolekcji. Wybranego obiektu pojawia się na liście przeglądarkę właściwości. Bardziej kompletny wykonania ISelectionContainer Zobacz przykłady Reference.ToolWindow.  
   
- Visual Studio narzędzia windows zachowywane między sesjami programu Visual Studio. Aby uzyskać więcej informacji na przechowywanie stanu okna narzędzia, zobacz <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+ Okna narzędzi w usłudze Visual Studio są zachowywane między sesjami programu Visual Studio. Aby uzyskać więcej informacji na temat utrwalanie stanu okna narzędzi, zobacz <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md)

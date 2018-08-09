@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e59c509bee1e9d9e84b4499bf3419bc129aadfa
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142189"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636918"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Jest to funkcja wywołania zwrotnego do [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funkcji, aby zaktualizować kolekcję katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które są pod kontrolą źródła.  
+Jest to funkcja wywołania zwrotnego do [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funkcję, aby zaktualizować kolekcję katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które są pod kontrolą źródła.  
   
- `POPDIRLISTFUNC` Wywołania zwrotnego powinna być wywoływana tylko dla tych katalogów i nazwy pliku (na liście nadawane `SccPopulateDirList` funkcji) faktycznie będących pod kontrolą źródła.  
+ `POPDIRLISTFUNC` Wywołania zwrotnego powinna być wywoływana tylko w przypadku katalogów i nazwy plików (na liście umożliwiającej `SccPopulateDirList` funkcji) rzeczywistości będące pod kontrolą źródła.  
   
 ## <a name="signature"></a>Podpis  
   
@@ -39,27 +39,27 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>Parametry  
  pvCallerData  
- [in] Wartość użytkownika [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ [in] Wartość użytkownika do [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
  polecenie bOpcje folderów  
- [in] `TRUE` Jeśli nazwa w `lpDirectoryOrFileName` jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.  
+ [in] `TRUE` Jeśli nazwy w `lpDirectoryOrFileName` jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.  
   
  lpDirectoryOrFileName  
- [in] Pełną ścieżkę lokalną do pliku lub katalogu nazwę, która jest pod kontrolą kodu źródłowego.  
+ [in] Pełną ścieżkę lokalną do nazwa katalogu lub pliku, który jest pod kontrolą kodu źródłowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- IDE zwraca kod błędu odpowiednie:  
+ IDE zwraca kod odpowiedni komunikat o błędzie:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Kontynuować przetwarzania.|  
+|SCC_OK|Kontynuować przetwarzanie.|  
 |SCC_I_OPERATIONCANCELED|Zatrzymaj przetwarzanie.|  
-|SCC_E_xxx|Błąd sterowania wszystkie odpowiedniego źródła powinna zostać przerwana przetwarzania.|  
+|SCC_E_xxx|Wszelkie błędy kontroli odpowiedniego źródła należy zatrzymać przetwarzanie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `fOptions` parametr `SccPopulateDirList` funkcja zawiera `SCC_PDL_INCLUDEFILES` Flaga, a następnie lista prawdopodobnie będzie zawierać nazw plików, a także nazw katalogów.  
+ Jeśli `fOptions` parametru `SccPopulateDirList` funkcja zawiera `SCC_PDL_INCLUDEFILES` Flaga, a następnie zawierać będzie lista prawdopodobnie nazw plików, a także nazwy katalogów.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje wywołania zwrotnego zaimplementowana IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje wywołania zwrotnego implementowane przez środowisko IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [Kody błędów](../extensibility/error-codes.md)

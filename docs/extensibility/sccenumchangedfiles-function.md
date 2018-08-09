@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762bda21f8480224347bd0c8c202c282298e07cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b8fb9c83d8948ca3edc0650e85af6ea8c011abc
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137134"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639831"
 ---
 # <a name="sccenumchangedfiles-function"></a>Funkcja SccEnumChangedFiles
-Podana lista lokalnych plików, ta funkcja określa pliki, które różnią się od odpowiedniej wersji w bazie danych kontroli kodu źródłowego.  
+Podana lista plików lokalnych, ta funkcja sprawdza pliki, które różnią się od odpowiedniej wersji w bazie danych kontroli kodu źródłowego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,29 +37,29 @@ SCCRTN SccEnumChangedFiles(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pContext  
- [in] Wskaźnik kontekstu wtyczkę kontroli źródła.  
+ [in] Wskaźnik kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
  cFiles  
- [in] Liczba nazw plików określonych w `lpFileNames` tablicy. Określa rozmiar `plIsFileDifferent` tablicy.  
+ [in] Liczby nazw plików określonych w `lpFileNames` tablicy. Również określa rozmiar `plIsFileDifferent` tablicy.  
   
  lpFileNames  
- [in] Tablica nazw plików lokalnych do sprawdzenia.  
+ [in] Tablica nazw plik lokalny do sprawdzenia.  
   
  plIsFileDifferent  
- [w, out] Tablica wartości wskazujący stan różnica każdego pliku (Tablica musi mieć co najmniej `cFiles` wpisy). Różną od zera oznacza, że plik jest inny.  
+ [out w] Tablica wartości wskazujący stan różnica każdego pliku (Tablica musi mieć co najmniej `cFiles` wpisy). Wartość różną od zera oznacza, że plik jest inny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Operacja została ukończona pomyślnie.|  
-|SCC_UNSPECIFIEDERROR|Błąd rodzajowy.|  
+|SCC_UNSPECIFIEDERROR|Błąd ogólny.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz także  
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

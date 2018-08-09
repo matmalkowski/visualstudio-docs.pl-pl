@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512086"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639435"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
 
@@ -36,7 +36,7 @@ Visual Studio zapewnia najwyższej jakości obsługę języka Python. Ten samouc
 
 ## <a name="step-1-create-a-new-python-project"></a>Krok 1: Utwórz nowy projekt języka Python
 
-A *projektu* jest jak Visual Studio zarządza wszystkie pliki, które łączą się do tworzenia pojedynczej aplikacji, łącznie z kodu źródłowego, zasobów, konfiguracji i tak dalej. Projekt rozmieszczony i obsługuje relacje między projektu wszystkie pliki, a także zasobów zewnętrznych, które są współużytkowane przez wiele projektów. W efekcie projekt umożliwiają aplikacji bez wysiłku rozwoju, i poszerzenia znacznie łatwiejsze niż po prostu zarządzanie relacjami projektu w folderach ad-hoc, skrypty, pliki tekstowe i nawet własne zdania.
+A *projektu* jest jak Visual Studio zarządza wszystkie pliki, które łączą się do tworzenia pojedynczej aplikacji, łącznie z kodu źródłowego, zasobów, konfiguracji i tak dalej. Projekt rozmieszczony i obsługuje relacje między projektu wszystkie pliki, a także zasobów zewnętrznych, które są współużytkowane przez wiele projektów. W efekcie projektów umożliwia aplikacji bez wysiłku rozwoju, i poszerzenia znacznie łatwiejsze niż po prostu zarządzanie relacjami projektu w folderach ad-hoc, skrypty, pliki tekstowe i nawet własne zdania.
 
 W tym samouczku zaczynać prosty projekt zawierający pojedynczy pusty plik kodu.
 

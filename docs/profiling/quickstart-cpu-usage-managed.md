@@ -2,7 +2,7 @@
 title: Analizowanie danych użycia procesora CPU (kod zarządzany)
 description: Mierzyć wydajność aplikacji w języku C# i Visual Basic, za pomocą narzędzia do diagnostyki użycia procesora CPU
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 88b9557c3713997e4c04aaa74078408437c03c43
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204562"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638941"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Szybki Start: Analizowanie danych użycia procesora CPU w programie Visual Studio (kod zarządzany)
 
@@ -31,6 +31,8 @@ Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania se
 1. W programie Visual Studio, wybierz **pliku** > **nowy projekt**.
 
 2. W obszarze **Visual C#** lub **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+
+    Jeśli nie widzisz **aplikacja Konsolowa** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych .NET** obciążenia, wybierz **Modyfikuj**.
 
 3. Wpisz nazwę, takich jak **MyProfilerApp** i kliknij przycisk **OK**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586550"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638716"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -88,7 +88,7 @@ Po rozpoczęciu debugowania projektu sieci web programu Visual Studio uruchamia 
 
 W **debugowania** grupy:
 
-- **Ścieżki wyszukiwania**, **argumenty skryptu**, **argumenty Interpreter**, i **cesta k Interpretu**: te opcje są takie same jak w przypadku [normalnego debugowanie](debugging-python-in-visual-studio.md)
+- **Ścieżki wyszukiwania**, **argumenty skryptu**, **argumenty Interpreter**, i **cesta k Interpretu**: te opcje są takie same jak w przypadku [normalnego debugowanie](debugging-python-in-visual-studio.md).
 - **Adres URL do uruchomienia**: Określa adres URL, który jest otwierany w przeglądarce. Jego wartość domyślna to `localhost`.
 - **Numer portu**: port do użycia, jeśli nie jest określona w adresie URL (Visual Studio: wybiera jeden automatycznie domyślnie). To ustawienie pozwala zastąpić wartość domyślną `SERVER_PORT` zmiennej środowiskowej, która jest używana przez Szablony do skonfigurowania portu nasłuchuje serwer debugowania lokalnego.
 

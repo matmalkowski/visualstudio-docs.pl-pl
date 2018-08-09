@@ -9,23 +9,23 @@ description: Dowiedz się, jak Administratorzy mogą zlokalizować poszczególny
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 963d1d5f44e19c4800bc1ffece207d93cafe712f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37089727"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638684"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukaj i Filtruj subskrybentów w subskrypcji programu Visual Studio
 
 Portal administratora subskrypcji Visual Studio można znaleźć określony podzbiór subskrybentów na podstawie różnych kryteriów. Można filtrować listę subskrybentów przez nazwę, adres e-mail, poziom subskrypcji i innych informacji.
 
 1. Aby wyszukać określoną grupę subskrybentów, wybierz **filtru**.
-
-   ![Wybierz filtr, aby przeszukiwać listę subskrybentów](media\filter-list.png)
+    > [!div class="mx-imgBorder"]
+    > ![Wybierz filtr, aby przeszukiwać listę subskrybentów](media\filter-list.png)
 
 2. Wprowadź kryteria, o których chcesz użyć jako podstawy kryteria wyszukiwania, a następnie wybierz **filtru** ponownie.
-
-   ![Użyj dostępne pola do filtrowania danych subskrybenta](media\filter-subscribers.png)
+    > [!div class="mx-imgBorder"]
+    > ![Użyj dostępne pola do filtrowania danych subskrybenta](media\filter-subscribers.png)
 
    Listy subskrybentów następnie dopasowuje wybrane kryteria.

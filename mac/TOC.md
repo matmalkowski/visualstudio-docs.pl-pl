@@ -62,6 +62,7 @@
 ## [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
+### [Dziennik Zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Ułatwienia dostępu](accessibility.md)
 

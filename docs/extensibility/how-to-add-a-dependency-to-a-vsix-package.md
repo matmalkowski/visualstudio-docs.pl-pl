@@ -16,30 +16,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0704a72ba70e2a00baab99d327702ec6c08f1775
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54b4bf86df74a60dbeabef5c6f375354c5a945aa
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133225"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636691"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Porady: Dodawanie zależności do pakietu VSIX
 
-Można skonfigurować wdrożenie pakietu VSIX, która instaluje wszystkie zależności, które nie są już istnieje na komputerze docelowym. W tym celu należy uwzględnić zależności pliku VSIX do pliku source.extension.vsixmanifest.
+Można skonfigurować wdrożenie pakietu VSIX, które instaluje wszystkie zależności, które nie są już obecne na komputerze docelowym. Aby to osiągnąć, należy uwzględnić zależności VSIX *source.extension.vsixmanifest* pliku.
 
-## <a name="to-add-a-dependency"></a>Aby dodać zależność
+## <a name="to-add-a-dependency"></a>Aby dodać zależności
 
-1. Otwórz plik Source.Extension.vsixmanifest,a w **projekt** widoku. Przejdź do **zależności** i kliknij polecenie **nowy**.
+1. Otwórz *source.extension.vsixmanifest* w pliku **projektowania** widoku. Przejdź do **zależności** kartę, a następnie kliknij przycisk **New**.
 
-2. Aby dodać zainstalowanego rozszerzenia: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **zainstalowane rozszerzenie** , a następnie w **nazwa**, zaznacz rozszerzenie na liście.
+2. Aby dodać zainstalowane rozszerzenie: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **zainstalowane rozszerzenie** a następnie w **nazwa**, zaznacz rozszerzenie, na liście.
 
-3. Aby dodać inny VSIX, który nie jest zainstalowany:: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **pliku w systemie plików** , a następnie użyj **Przeglądaj** przycisk, aby wybrać pliku VSIX.
+3. Aby dodać inny VSIX, który nie jest zainstalowany: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **plików w systemie plików** , a następnie użyj **Przeglądaj** przycisk, aby wybrać VSIX.
 
-## <a name="require-a-specific-visual-studio-release"></a>Wymaga określonej wersji programu Visual Studio
+## <a name="require-a-specific-visual-studio-release"></a>Wymagaj określonej wersji programu Visual Studio
 
-Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład zależy od funkcji wydane w ramach 15 ustęp 3, można określić numer kompilacji w Twojej VSIX **InstallationTarget**. Na przykład wersji 15 ustęp 3 ma numer kompilacji programu "15.0.26730.3". Widać mapowania wydań numery kompilacji [tutaj](../install/visual-studio-build-numbers-and-release-dates.md). Należy pamiętać, że za pomocą numeru wersji 15 ustęp "3" może nie działać poprawnie.
+Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład, zależy od funkcją udostępnioną w 15.3, można określić numer kompilacji w VSIX użytkownika **InstallationTarget**. Na przykład wersja 15.3 ma numer kompilacji "15.0.26730.3". Możesz zobaczyć mapowanie wersji numery kompilacji [tutaj](../install/visual-studio-build-numbers-and-release-dates.md). Należy pamiętać, że za pomocą numeru wersji "15.3" nie będą działać poprawnie.
 
-Jeśli rozszerzenie wymaga 15 ustęp 3 lub nowszym, czy zadeklarować **wersji InstallationTarget** jako [15.0.26730.3, 16.0):
+Jeśli Twojego rozszerzenia wymaga 15.3 lub nowszej, może zadeklarować **wersji InstallationTarget** jako [15.0.26730.3, 16.0):
 
 ```xml
 <Installation>
@@ -47,9 +47,11 @@ Jeśli rozszerzenie wymaga 15 ustęp 3 lub nowszym, czy zadeklarować **wersji I
 </Installation>
 ```
 
-VSIXInstaller wykryje wcześniejszych wersji programu Visual Studio i poinformować użytkownika, że późniejszą aktualizację jest wymagana.
+Instalator VSIX wykryje wcześniejszych wersji programu Visual Studio i informować użytkownika, że nowsza aktualizacja jest wymagana.
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md) [przygotowywania rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
+ [Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
