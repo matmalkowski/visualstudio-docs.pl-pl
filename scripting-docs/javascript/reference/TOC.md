@@ -1,5 +1,0 @@
-# [JavaScript — dokumentacja](javascript-reference.md)
-## [Informacje o wersji](javascript-version-information.md)
-## [Błędy JavaScript](javascript-errors.md)
-### [Błędy czasu wykonania JavaScript](javascript-run-time-errors.md)
-### [Błędy składniowe JavaScript](javascript-syntax-errors.md)

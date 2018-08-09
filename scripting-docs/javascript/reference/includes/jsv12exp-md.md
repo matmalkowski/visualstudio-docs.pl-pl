@@ -1,3 +1,0 @@
-Obsługiwane w programie Microsoft Edge (przeglądarce Edge) z włączoną eksperymentalną funkcją JavaScript (about:flags). Zobacz [Informacje o wersji](../../../javascript/reference/javascript-version-information.md).  
-  
- Nieobsługiwane w następujących trybach dokumentu: Osobliwości, Standardy programu Internet Explorer 6, Standardy programu Internet Explorer 7, Standardy programu Internet Explorer 8, Standardy programu Internet Explorer 9, Standardy programu Internet Explorer 10 i Standardy programu Internet Explorer 11. Nieobsługiwane w systemie Windows 8.1.

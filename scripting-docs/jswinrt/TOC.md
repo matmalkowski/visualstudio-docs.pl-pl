@@ -1,8 +1,0 @@
-# [Używanie środowiska wykonawczego systemu Windows w języku JavaScript](using-the-windows-runtime-in-javascript.md)
-# [Uwagi dotyczące korzystania z interfejsu API środowiska wykonawczego systemu Windows](considerations-when-using-the-windows-runtime-api.md)
-# [Używanie metod asynchronicznych środowiska wykonawczego systemu Windows](using-windows-runtime-asynchronous-methods.md)
-## [Specjalne właściwości błędu asynchronicznych metod środowiska wykonawczego systemu Windows](special-error-properties-from-asynchronous-windows-runtime-methods.md)
-# [Obsługa zdarzeń środowiska wykonawczego systemu Windows w języku JavaScript](handling-windows-runtime-events-in-javascript.md)
-# [Reprezentacja typów środowiska wykonawczego systemu Windows w języku JavaScript](javascript-representation-of-windows-runtime-types.md)
-# [Reprezentacje DateTime i TimeSpan środowiska wykonawczego systemu Windows](windows-runtime-datetime-and-timespan-representations.md)
-# [Kody błędu dla aplikacji środowiska wykonawczego systemu Windows przy użyciu języka JavaScript](error-codes-for-windows-runtime-apps-using-javascript.md)

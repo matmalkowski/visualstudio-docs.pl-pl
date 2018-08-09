@@ -1,1 +1,0 @@
-Tryb standardów programu Internet Explorer 8, Tryb standardów programu Internet Explorer 9, Tryb standardów programu Internet Explorer 10, Tryb standardów programu Internet Explorer 11 i aplikacje win8_appname_long

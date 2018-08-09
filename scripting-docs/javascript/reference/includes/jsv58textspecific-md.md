@@ -1,1 +1,0 @@
-Tryb standardów programu Internet Explorer 8
