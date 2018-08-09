@@ -11,16 +11,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586519"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008424"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z usługą Live Unit Testing w programie Visual Studio
 
-Po włączeniu opcji Live Unit Testing w rozwiązaniu Visual Studio Live Unit Testing wizualnie przedstawia zakres testu i stan swoich testów. Wykonuje również dynamiczne testy, przy każdej modyfikacji kodu. Zapewnia natychmiastowego wysłania powiadomienia podczas zmiany przerwane kodu i wskazuje obszary, dla których wymagane są dodatkowe testy.
+Po włączeniu opcji Live Unit Testing w rozwiązaniu Visual Studio Live Unit Testing wizualnie przedstawia zakres testu i stan swoich testów. On również dynamicznie testy są wykonywane przy każdej modyfikacji kodu i natychmiast powiadamia użytkownika, gdy zmiany spowodują testy, aby zakończyć się niepowodzeniem.
 
 Live Unit Testing może służyć do testowania rozwiązania przeznaczone dla .NET Framework lub .NET Core. W tym samouczku dowiesz się, jak używać funkcji Live Unit Testing, tworząc bibliotekę klas proste przeznaczonego .NET Standard, a następnie utworzysz Projekt narzędzia MSTest przeznaczonego platformy .NET Core, aby ją przetestować.
 
@@ -152,7 +152,7 @@ Następnym krokiem jest utworzenie projektu testu jednostkowego do testowania `S
 
    ![Wybieranie kodowania UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Kompiluj projekt testów jednostkowych przez **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
+1. Kompiluj projekt testów jednostkowych, wybierając **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
@@ -200,7 +200,7 @@ Utworzono bibliotekę klas, a także niektórych testów jednostkowych dla niego
 
 Jeśli, mimo że napisanych testów dla `StringLibrary` biblioteki klas, które jeszcze nie zostało wykonane je. Live Unit Testing wykonuje je automatycznie po jego włączeniu. Aby to zrobić, wykonaj następujące czynności:
 
-1. Opcjonalnie wybierz w oknie kodu, który zawiera kod `StringLibrary`. Jest to *class1.cs* projekt C# lub *Class1.vb* dla projektów języka Visual Basic. (Ten krok pozwala wizualnie badać wyników testów i zakresu pokrycia kodu, po włączeniu Live Unit Testing.)
+1. Opcjonalnie wybierz w oknie kodu, który zawiera kod `StringLibrary`. Jest to *Class1.cs* projekt C# lub *Class1.vb* dla projektów języka Visual Basic. (Ten krok pozwala wizualnie badać wyników testów i zakresu pokrycia kodu, po włączeniu Live Unit Testing.)
 
 1. Wybierz **testu** > **Live Unit Testing** > **Start** menu najwyższego poziomu programu Visual Studio.
 
@@ -284,7 +284,7 @@ Aby rozszerzyć pokrycia kodu do `StartsWithLower` metody, wykonaj następujące
 
 W niektórych przypadkach testy zakończone powodzeniem w **Eksplorator testów** może być nieaktywny. Wskazuje, czy test jest w trakcie wykonywania, lub czy test nie został uruchomiony ponownie, ponieważ została zmian nie kodu, które mogło mieć wpływ na test od czasu ostatniego został wykonany.
 
-Do tej pory wszystkie nasze testy zostały pomyślnie. W następnej sekcji zajmiemy się, jak można obsługiwać niepowodzenia testu.
+Do tej pory wszystkie nasze testy zakończyły się powodzeniem. W następnej sekcji zajmiemy się, jak można obsługiwać niepowodzenia testu.
 
 ## <a name="handle-a-test-failure"></a>Uchwyt niepowodzenia testu
 
@@ -295,7 +295,9 @@ W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania,
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Podczas wykonywania testu, Live Unit Testing wskazuje, że `TestHasEmbeddedSpaces` metody nie powiodło się, jak przedstawiono na poniższym rysunku: ![Test Explorer, raportowanie testów zakończonych niepowodzeniem.](media/lut-start/test-failure.png)
+1. Podczas wykonywania testu, Live Unit Testing wskazuje, że `TestHasEmbeddedSpaces` metody nie powiodło się, jak przedstawiono na poniższym rysunku:
+
+   ![Eksplorator testów raportowania testów zakończonych niepowodzeniem.](media/lut-start/test-failure.png)
 
 1. Wybierz okno, które wyświetla kod biblioteki. Należy pamiętać, że Live Unit Testing została rozszerzona pokrycia kodu do `HasEmbeddedSpaces` metody. Również raporty niepowodzenia testu, dodając czerwony znak "🞩" do wierszy objętych testy zakończone niepowodzeniem.
 
@@ -336,7 +338,7 @@ W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania,
 
    ![Live Unit Testing informacje na temat testów zakończonych niepowodzeniem.](media/lut-start/test-failure-info-vb.png)
 
-1. Wybierz nieudane **TestHasEmbeddedSpaces** testu. Pamiętaj, że Live Unit Testing zapewnia kilka opcji, takich jak uruchamianie wszystkich testów, wybierz testów, debugowanie wszystkich testów i debugowanie testów, jako wybrana Poniższa ilustracja przedstawia:
+1. Wybierz nieudane **TestHasEmbeddedSpaces** testu. Pamiętaj, że Live Unit Testing zapewnia wiele opcji, takich jak uruchamianie wszystkich testów, uruchamiania wybranych testów, debugowanie wszystkich testów i debugowanie testów, jako wybrana Poniższa ilustracja przedstawia:
 
    ![Live Unit Testing opcje dla testów zakończonych niepowodzeniem.](media/lut-start/test-failure-options.png)
 
@@ -356,7 +358,7 @@ W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania,
 
 ---
 
-Zapewnia to za mało informacji dla badań wstępnych usterki. Albo `TestHasEmbeddedSpaces`, procedury testu wprowadzone nieprawidłowe założenie, lub `HasEmbeddedSpaces` niepoprawnie rozpoznać wszystkich osadzonych spacje. Aby zdiagnozować i rozwiązać ten problem, zacznij od `StringLibrary.HasEmbeddedSpaces` metody:
+Zapewnia to za mało informacji dla badań wstępnych usterki. Albo `TestHasEmbeddedSpaces` (procedury testu) wprowadzone niepoprawne założeń lub `HasEmbeddedSpaces` niepoprawnie rozpoznać wszystkich osadzonych spacje. Aby zdiagnozować i rozwiązać ten problem, zacznij od `StringLibrary.HasEmbeddedSpaces` metody:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. Przyjrzyj się porównanie w `HasEmbeddedSpaces` metody. Traktuje nim osadzona spacja to U + 0020. Jednak standardu Unicode obejmuje szereg innych znaków spacji. Sugeruje to, że kod biblioteki niepoprawnie jest sprawdzane pod kątem znak odstępu.

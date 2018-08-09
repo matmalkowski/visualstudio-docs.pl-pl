@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978352"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008463"
 ---
-# <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
+# <a name="wpf-overview"></a>WPF — Przegląd
 
 Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows klient stacjonarny wizualnie olśniewających graficznie środowisk użytkownika.
 
- ![Przykładowy interfejs użytkownika z branży opieki zdrowotnej firmy Contoso](../designers/media/wpfintrofigure24.png)
+![Przykładowy interfejs użytkownika z branży opieki zdrowotnej firmy Contoso](../designers/media/wpfintrofigure24.png)
 
- Podstawowe WPF jest aparat renderowania niezależne od rozdzielczości i wektorowej, który został opracowany pod kątem zalet sprzęt graficzny modern. WPF rozszerza core przy użyciu kompleksowych funkcji tworzenia aplikacji, które obejmują Extensible Application Markup Language (XAML), kontrolek, powiązanie danych, układ, grafiki 2D i 3D, animacji, stylów, szablony, dokumentów, nośnika, tekstu, a Typografia. WPF znajduje się na platformie .NET Framework, dzięki czemu możesz tworzyć aplikacje, które zawierają inne elementy w bibliotece klas programu .NET Framework.
+Podstawowe WPF jest aparat renderowania niezależne od rozdzielczości i wektorowej, który został opracowany pod kątem zalet sprzęt graficzny modern. WPF rozszerza core przy użyciu kompleksowych funkcji tworzenia aplikacji, które obejmują Extensible Application Markup Language (XAML), kontrolek, powiązanie danych, układ, grafiki 2D i 3D, animacji, stylów, szablony, dokumentów, nośnika, tekstu, a Typografia. WPF znajduje się na platformie .NET Framework, dzięki czemu możesz tworzyć aplikacje, które zawierają inne elementy w bibliotece klas programu .NET Framework.
 
- W tym omówieniu jest przeznaczony dla nowych osób i opisano kluczowe funkcje i pojęcia dotyczące środowiska WPF.
+W tym omówieniu jest przeznaczony dla nowych osób i opisano kluczowe funkcje i pojęcia dotyczące środowiska WPF.
 
 ## <a name="program-with-wpf"></a>Program przy użyciu platformy WPF
 
@@ -50,7 +50,7 @@ WPF umożliwia tworzenie aplikacji przy użyciu zarówno *znaczników* i *związ
 
 XAML jest językiem znaczników oparty na formacie XML, który implementuje wygląd aplikacji deklaratywnie. Zazwyczaj służy do tworzenia systemu windows, okna dialogowe, strony i kontrolki użytkownika i wypełnianie formantów, kształty i grafiki.
 
- W poniższym przykładzie użyto XAML, aby zaimplementować wygląd okna, który zawiera jeden przycisk.
+W poniższym przykładzie użyto XAML, aby zaimplementować wygląd okna, który zawiera jeden przycisk.
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML jest językiem znaczników oparty na formacie XML, który implementuje wygl
 </Window>
 ```
 
- W szczególności ten XAML definiuje okno i przycisk za pomocą `Window` i `Button` elementów, odpowiednio. Każdy element jest skonfigurowany z atrybutami, takich jak `Window` elementu `Title` atrybutu, aby określić tekst paska tytułu okna. W czasie wykonywania WPF konwertuje elementy i atrybuty, które są zdefiniowane w znaczników do wystąpień klas WPF. Na przykład `Window` element jest konwertowany na wystąpienie <xref:System.Windows.Window> klasy, których <xref:System.Windows.Window.Title%2A> właściwość ma wartość `Title` atrybutu.
+W szczególności ten XAML definiuje okno i przycisk za pomocą `Window` i `Button` elementów, odpowiednio. Każdy element jest skonfigurowany z atrybutami, takich jak `Window` elementu `Title` atrybutu, aby określić tekst paska tytułu okna. W czasie wykonywania WPF konwertuje elementy i atrybuty, które są zdefiniowane w znaczników do wystąpień klas WPF. Na przykład `Window` element jest konwertowany na wystąpienie <xref:System.Windows.Window> klasy, których <xref:System.Windows.Window.Title%2A> właściwość ma wartość `Title` atrybutu.
 
- Na poniższej ilustracji przedstawiono interfejs użytkownika (UI), który jest definiowany przez XAML w poprzednim przykładzie.
+Na poniższej ilustracji przedstawiono interfejs użytkownika (UI), który jest definiowany przez XAML w poprzednim przykładzie.
 
- ![Okno które zawiera przycisk](../designers/media/wpfintrofigure10.png)
+![Okno które zawiera przycisk](../designers/media/wpfintrofigure10.png)
 
- Ponieważ XAML jest oparty na formacie XML, interfejs użytkownika, który tworzą z nią jest składany w hierarchii zagnieżdżonej elementów nazywanych [drzewo elementów](/dotnet/framework/wpf/advanced/trees-in-wpf). Drzewo elementów zawiera logiczne i intuicyjny sposób tworzenia i zarządzania nimi interfejsów użytkownika.
+Ponieważ XAML jest oparty na formacie XML, interfejs użytkownika, który tworzą z nią jest składany w hierarchii zagnieżdżonej elementów nazywanych [drzewo elementów](/dotnet/framework/wpf/advanced/trees-in-wpf). Drzewo elementów zawiera logiczne i intuicyjny sposób tworzenia i zarządzania nimi interfejsów użytkownika.
 
 ### <a name="code-behind"></a>Związane z kodem
 
@@ -639,18 +639,18 @@ W tym momencie, możesz korzystać z zalet jeden z trzech modele WPF, aby utworz
 
 Poniższy przykład pokazuje niestandardowy liczbowe w górę/dół formant, który pochodzi od klasy <xref:System.Windows.Controls.UserControl>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- Następny przykład ilustruje XAML, potrzebnego do dołączyć kontrolki użytkownika do <xref:System.Windows.Window>.
+Następny przykład ilustruje XAML, potrzebnego do dołączyć kontrolki użytkownika do <xref:System.Windows.Window>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- Poniższy rysunek przedstawia `NumericUpDown` sterowania hostowaną w <xref:System.Windows.Window>.
+Poniższy rysunek przedstawia `NumericUpDown` sterowania hostowaną w <xref:System.Windows.Window>.
 
- ![Niestandardowe UserControl](../designers/media/wpfintrofigure3.png)
+![Niestandardowe UserControl](../designers/media/wpfintrofigure3.png)
 
 Aby uzyskać więcej informacji na temat kontrolek niestandardowych, zobacz [kontroli Przegląd autorstwa](/dotnet/framework/wpf/controls/control-authoring-overview).
 

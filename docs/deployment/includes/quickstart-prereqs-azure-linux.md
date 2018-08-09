@@ -1,9 +1,9 @@
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 * [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zainstalowane odpowiednie obciążeń:
-  * Platforma ASP.NET Core: **ASP.NET i tworzenie aplikacji internetowych** i **programowanie dla wielu platform .NET Core**
+  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
 
-* Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
+* Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
 
 * Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze, postępuj zgodnie z [Szybki Start: Użyj programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core](../../ide/quickstart-aspnet-core.md), lub użyj **pliku** > **nowy projekt**, wybierz opcję **Visual C#** > **platformy .NET Core**, a następnie wybierz **aplikacji sieci Web programu ASP.NET Core**. Po wyświetleniu monitu wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu, upewnij się, że **bez uwierzytelniania** jest wybrany, a następnie wybierz **OK**.
 

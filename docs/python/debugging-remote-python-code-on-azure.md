@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341790"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008622"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Zdalne debugowanie kodu w języku Python na platformie Azure
 
@@ -48,7 +48,7 @@ Zgodnie z instrukcjami, skonstruować adres URL przy użyciu klucza tajnego z *w
 
 ![Określanie punktu końcowego usługi Azure App Service w debugerze](media/azure-remote-debugging-secret.png)
 
-Adres URL, teraz należy znajduje się w formularzu `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` gdzie Zastąp &lt;klucz tajny&gt;i &lt;nazwa_witryny&gt; w ciągu przy użyciu określonych wartości.
+Adres URL, teraz należy znajduje się w formularzu `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` gdzie Zastąp &lt;klucz tajny&gt; i &lt;nazwa_witryny&gt; w ciągu przy użyciu określonych wartości.
 
 Aby dołączyć debuger, wybierz pozycję **debugowania** > **dołączyć do procesu**, wybierz opcję **zdalnego debugowania w języku Python** w **transportu**listy rozwijanej, wprowadź adres URL do **textbox kwalifikator**i naciśnij klawisz **Enter**. Jeśli program Visual Studio można pomyślnie nawiązać usługi App Service, zawiera jeden proces języka Python na liście. Zaznacz go i następnie **Dołącz** można rozpocząć debugowania:
 

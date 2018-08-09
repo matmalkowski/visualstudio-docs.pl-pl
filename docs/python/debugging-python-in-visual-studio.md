@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498970"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008284"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -80,7 +80,7 @@ Po zatrzymaniu w punkcie przerwania, możesz mieć różne sposoby, aby przejś�
 | **Wyjdź** | **SHIFT**+**F11** | Uruchamia kod aż do zakończenia bieżącej funkcji, a następnie kroki do instrukcji wywołujące.  To polecenie jest przydatne, gdy nie jest konieczne do debugowania w pozostałej części bieżącej funkcji. |
 | **Uruchom do kursora** | **CTRL**+**F10** | Uruchamia kod do lokalizacji karetki w edytorze. To polecenie umożliwia łatwe pominąć segment kodu, który nie jest potrzebny do debugowania. |
 | **Ustaw następną instrukcję** | **CTRL**+**Shift**+**F10** | Zmienia bieżący przebieg punktów w kodzie do lokalizacji karetki. To polecenie umożliwia pominięcie segmentu kodu są uruchamiane, takie jak, gdy wiesz kod jest uszkodzony lub tworzy niechciane efekt uboczny. |
-| **Pokaż następną instrukcję** | **ALT**+**Num**+**&#42;**| Powrót do następnej instrukcji do uruchomienia. To polecenie jest przydatne, jeśli został wyszukiwanie w kodzie, a nie pamiętasz, gdzie debuger został zatrzymany. |
+| **Pokaż następną instrukcję** | **ALT**+**Num****&#42;**| Powrót do następnej instrukcji do uruchomienia. To polecenie jest przydatne, jeśli został wyszukiwanie w kodzie, a nie pamiętasz, gdzie debuger został zatrzymany. |
 
 ### <a name="inspect-and-modify-values"></a>Sprawdzanie i modyfikowanie wartości
 
@@ -149,11 +149,11 @@ Domyślnie debuger zaczyna się od program standardowy uruchamianie języka Pyth
 
 | Opcja | Opis |
 | --- | --- |
-| **Ścieżki wyszukiwania** | Te wartości zgodne, co to jest wyświetlana w węźle ścieżek wyszukiwania projektu w **Eksploratora rozwiązań**. Można zmodyfikować tę wartość w tym miejscu, ale jest łatwiej można użyć **Eksploratora rozwiązań** który pozwala na przeglądanie folderów i automatycznie konwertuje ścieżki względnej formularza. |
+| **Ścieżki wyszukiwania** | Te wartości zgodne, co jest wyświetlany w projekcie **ścieżki wyszukiwania** w węźle **Eksploratora rozwiązań**. Można zmodyfikować tę wartość w tym miejscu, ale jest łatwiej można użyć **Eksploratora rozwiązań** który pozwala na przeglądanie folderów i automatycznie konwertuje ścieżki względnej formularza. |
 | **Argumenty skryptu** | Te argumenty zostaną dodane do polecenia używane do uruchomienia skryptu, pojawiające się po nazwę pliku skryptu. Pierwszy element w tym miejscu jest dostępne do skryptu jako `sys.argv[1]`, drugi jako `sys.argv[2]`i tak dalej. |
 | **Interpreter argumentów** | Te argumenty zostaną dodane do wiersza polecenia uruchamiania przed nazwą skryptu. Są często używanych argumentów tutaj `-W ...` z ostrzeżeniami kontroli, `-O` nieco zoptymalizować program, i `-u` używać Niebuforowane we/wy. Użytkownicy języka IronPython prawdopodobnie to pole służy do przekazywania `-X` opcji, taką jak `-X:Frames` lub `-X:MTA`. |
 | **Cesta k Interpretu** | Zastępuje ścieżkę skojarzoną z bieżącego środowiska. Wartość może być przydatne w przypadku uruchamiania skryptu za pomocą niestandardowych interpretera. |
-| **Zmienne środowiskowe** | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci \<NAME > =\<wartość >. Ponieważ to ustawienie zostanie zastosowane ostatnie, u góry, wszelkie istniejące zmienne środowiskowe globalnego i po `PYTHONPATH` jest ustawiona zgodnie z ustawieniem ścieżki wyszukiwania może służyć do ręcznie przezwyciężyć żadnego z tych innych zmiennych. |
+| **Zmienne środowiskowe** | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci \<NAME > =\<wartość >. Ponieważ to ustawienie zostanie zastosowane ostatnie, u góry, wszelkie istniejące zmienne środowiskowe globalnego i po `PYTHONPATH` jest ustawiona zgodnie z **ścieżki wyszukiwania** ustawienie, może służyć do ręcznie przezwyciężyć żadnego z tych innych zmiennych. |
 
 ## <a name="immediate-and-interactive-windows"></a>Bezpośrednie i interakcyjne systemu windows
 

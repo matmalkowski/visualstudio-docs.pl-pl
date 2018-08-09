@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341600"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008671"
 ---
 # <a name="format-python-code"></a>Formatowanie kodu w języku Python
 
@@ -45,41 +45,41 @@ Przykłady dla różnych opcji znajdują się w poniższych tabelach:
 
 | Opcja definicji klasy | Zaznaczone | Wyczyszczone |
 | --- | --- | --- | 
-| Wstaw spację między nazwę deklarację klasy i lista baz | `class X (object): pass` | `class X(object): pass` | 
-| Wstaw spację wewnątrz nawiasów listy zasad | `class X( object ): pass` | `class X(object): pass` |
-| Wstaw spację wewnątrz nawiasów listy podstaw pusty | `class X( ): pass` | `class X(): pass` |
+| **Wstaw spację między nazwę deklarację klasy i lista baz** | `class X (object): pass` | `class X(object): pass` | 
+| **Wstaw spację wewnątrz nawiasów listy zasad** | `class X( object ): pass` | `class X(object): pass` |
+| **Wstaw spację wewnątrz nawiasów listy podstaw pusty** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | Definicje funkcji-opcja | Zaznaczone | Wyczyszczone |
 | --- | --- | --- |
-| Wstaw spację między nazwę deklarację funkcji i listy parametrów | `def X (): pass` | `def X(): pass` | 
-| Wstaw spację wewnątrz nawiasów listy parametrów | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Wstaw spację wewnątrz nawiasów listy parametrów empty | `def X( ): pass` | `def X(): pass` |
-| Wstawiaj odstępy dookoła "=" w wartości domyślne parametrów | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Wstaw spację przed i po operatorach adnotacji zwracanego | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Wstaw spację między nazwę deklarację funkcji i listy parametrów** | `def X (): pass` | `def X(): pass` | 
+| **Wstaw spację wewnątrz nawiasów listy parametrów** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Wstaw spację wewnątrz nawiasów listy parametrów empty** | `def X( ): pass` | `def X(): pass` |
+| **Wstawiaj odstępy dookoła "=" w wartości domyślne parametrów** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Wstaw spację przed i po operatorach adnotacji zwracanego** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Opcja operatorów | Zaznaczone | Wyczyszczone |
 | --- | --- | --- |
-| Wstawiaj odstępy dookoła operatorów dwuargumentowych | `a + b` | `a+b` |
-| Wstawiaj odstępy dookoła przypisania | `a = b` | `a=b` |
+| **Wstawiaj odstępy dookoła operatorów dwuargumentowych** | `a + b` | `a+b` |
+| **Wstawiaj odstępy dookoła przypisania** | `a = b` | `a=b` |
 
 <br/>
 
 | Opcję odstępy dla wyrażeń | Zaznaczone | Wyczyszczone |
 | --- | --- | --- |
-| Wstaw spację między nazwę wywołania funkcji i listą argumentów | `X ()` | `X()` |
-| Wstaw spację wewnątrz nawiasów listy pusty argument | `X( )` | `X()` |
-| Wstaw spację wewnątrz nawiasów listy argumentów | `X( a, b )` | `X(a, b)` |
-| Wstaw spację wewnątrz nawiasów wyrażeń | `( a )` | `(a)` |
-| Wstaw spację wewnątrz nawiasów puste krotki | `( )` | `()` |
-| Wstaw spację wewnątrz nawiasów krotki | `( a, b )` | `(a, b)` |
-| Wstaw spację wewnątrz pustymi nawiasami kwadratowymi | `[ ]` | `[]` |
-| Wstaw spacje wewnątrz nawiasów kwadratowych list | `[ a, b ]` | `[a, b]` |
-| Wstaw odstęp przed nawiasem kwadratowym | `x [i]` | `x[i]` |
-| Wstaw spację wewnątrz nawiasów kwadratowych | `x[ i ]` | `x[i]` |
+| **Wstaw spację między nazwę wywołania funkcji i listą argumentów** | `X ()` | `X()` |
+| **Wstaw spację wewnątrz nawiasów listy pusty argument** | `X( )` | `X()` |
+| **Wstaw spację wewnątrz nawiasów listy argumentów** | `X( a, b )` | `X(a, b)` |
+| **Wstaw spację wewnątrz nawiasów wyrażeń** | `( a )` | `(a)` |
+| **Wstaw spację wewnątrz nawiasów puste krotki** | `( )` | `()` |
+| **Wstaw spację wewnątrz nawiasów krotki** | `( a, b )` | `(a, b)` |
+| **Wstaw spację wewnątrz pustymi nawiasami kwadratowymi** | `[ ]` | `[]` |
+| **Wstaw spacje wewnątrz nawiasów kwadratowych list** | `[ a, b ]` | `[a, b]` |
+| **Wstaw odstęp przed nawiasem kwadratowym** | `x [i]` | `x[i]` |
+| **Wstaw spację wewnątrz nawiasów kwadratowych** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Przykłady dla różnych opcji znajdują się w poniższych tabelach:
 
 | Opcja | Przed formatowaniem | Po sformatowaniu |
 | --- | --- | --- |
-| Umieść zaimportowanych modułów w nowym wierszu | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Usuń niepotrzebne średnikami | `x = 42;` | `x = 42` |
-| Umieść użycie wielu instrukcji w nowych wierszach | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Umieść zaimportowanych modułów w nowym wierszu** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Usuń niepotrzebne średnikami** | `x = 42;` | `x = 42` |
+| **Umieść użycie wielu instrukcji w nowych wierszach** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Zawijanie
 

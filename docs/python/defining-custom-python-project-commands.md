@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341267"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008326"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie niestandardowych poleceń dla projektów języka Python
 
-W trakcie pracy z Twoich projektów języka Python, może się okazać samodzielnie przełączenie do okna polecenia do uruchamiania skryptów określonych lub moduły, Uruchom polecenia pip lub uruchamiania dowolnego narzędzia. Aby poprawić wydajność pracy, możesz dodać niestandardowe polecenia, aby **Python** podmenu w menu kontekstowego projektu języka Python. Tych poleceń można uruchomić w oknie konsoli lub w oknie danych wyjściowych programu Visual Studio. Wyrażenia regularne umożliwia również poinstruować Visual Studio, jak analizować błędy i ostrzeżenia z danych wyjściowych polecenia.
+W trakcie pracy z Twoich projektów języka Python, może się okazać samodzielnie przełączenie do okna polecenia do uruchamiania skryptów określonych lub moduły, Uruchom polecenia pip lub uruchamiania dowolnego narzędzia. Aby poprawić wydajność pracy, możesz dodać niestandardowe polecenia, aby **Python** podmenu w menu kontekstowego projektu języka Python. Te polecenia mogą być uruchamiane w oknie konsoli lub w programie Visual Studio **dane wyjściowe** okna. Wyrażenia regularne umożliwia również poinstruować Visual Studio, jak analizować błędy i ostrzeżenia z danych wyjściowych polecenia.
 
 Domyślnie menu zawiera tylko jednej **Uruchom PyLint** polecenia:
 

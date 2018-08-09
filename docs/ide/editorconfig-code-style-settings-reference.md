@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 046706cf5e36b9e32d6b102e167a55070fcc4a31
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993944"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008476"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -1287,7 +1287,7 @@ Ta zasada dotyczy czy otwierający nawias klamrowy `{` należy umieścić w tym 
 
 | Wartość | Opis
 | ------------- |:-------------|
-| metody dostępu, anonymous_methods, anonymous_types, control_blocks, zdarzenia, indeksatory, wyrażenia lambda, local_functions, metody, object_collection, właściwości, typy.<br>(Dla wielu typów, należy oddzielić ','). | Wymagane nawiasy klamrowe w nowym wierszu dla elementów określony kod (znany także jako "Allman" stylu) |
+| metody dostępu, anonymous_methods, anonymous_types, control_blocks, zdarzenia, indeksatory, wyrażenia lambda, local_functions, metody, object_collection_array_initializers, właściwości, typy.<br>(Dla wielu typów, należy oddzielić ','). | Wymagane nawiasy klamrowe w nowym wierszu dla elementów określony kod (znany także jako "Allman" stylu) |
 | wszystkie | Wymagane nawiasy klamrowe w nowym wierszu dla wszystkich wyrażeń ("Allman" stylu) |
 | brak | Wymagane nawiasy klamrowe, aby być w tym samym wierszu, aby uzyskać wszystkie wyrażenia ("K & R") |
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277020"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008271"
 ---
 # <a name="outlook-object-model-overview"></a>Model obiektu Outlook ― omówienie
   Tworzenie dodatków narzędzi VSTO dla programu Microsoft Office Outlook, możesz korzystać z obiektami, które są dostarczane przez model obiektów programu Outlook. Model obiektu Outlook zawiera klasy i interfejsy, które reprezentują elementy interfejsu użytkownika. Na przykład <xref:Microsoft.Office.Interop.Outlook.Application> obiekt reprezentuje całej aplikacji, <xref:Microsoft.Office.Interop.Outlook.Folder> obiekt reprezentuje folder, który zawiera wiadomości e-mail lub innych elementów i <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekt reprezentuje wiadomości e-mail.  
@@ -59,7 +59,7 @@ ms.locfileid: "39277020"
 ### <a name="application-object"></a>Obiekt aplikacji  
  <xref:Microsoft.Office.Interop.Outlook.Application> Obiekt reprezentuje aplikacji Outlook i jest obiektem najwyższego poziomu w modelu obiektów programu Outlook. Najważniejsze elementy członkowskie tego obiektu należą:  
   
--   [Createitem —](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) metodę, która służy do tworzenia nowych elementów takich jak wiadomości e-mail, zadania lub terminu.  
+-   [Createitem —](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodę, która służy do tworzenia nowych elementów takich jak wiadomości e-mail, zadania lub terminu.  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Właściwość, która umożliwia dostęp do systemu windows, które wyświetlają zawartość folderu w interfejsie użytkownika (UI) programu Outlook.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39277020"
 ### <a name="taskitem-object"></a>Obiekt TaskItem  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> Obiekt reprezentuje zadanie do wykonania w określonym przedziale czasu. <xref:Microsoft.Office.Interop.Outlook.TaskItem> obiekty znajdują się w **zadania** folderu.  
   
- Aby utworzyć zadanie, należy użyć [createitem —](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) metody <xref:Microsoft.Office.Interop.Outlook.Application> obiektu i przekaż wartość <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> dla parametru.  
+ Aby utworzyć zadanie, należy użyć [createitem —](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metody <xref:Microsoft.Office.Interop.Outlook.Application> obiektu i przekaż wartość <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> dla parametru.  
   
 ### <a name="contactitem-object"></a>Obiekt ContactItem  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Obiekt reprezentuje kontakt w **kontakty** folderu. <xref:Microsoft.Office.Interop.Outlook.ContactItem> obiekty zawierają różne informacje kontaktowe dla osób, które przedstawiają, takie jak adresy, adresy e-mail i numery telefonów.  

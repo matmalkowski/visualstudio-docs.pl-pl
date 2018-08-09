@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341510"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008219"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użycie IPython w oknie interaktywnym
 
@@ -81,7 +81,7 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) zainstalowa
 
 Program IPython ma wielu innych przydatnych funkcji, takich jak anulowanie w powłoce systemu podstawienie zmiennej przechwytywanie danych wyjściowych, itp. Zapoznaj się [dokumentacji IPython](http://ipython.org/documentation.html) Aby uzyskać więcej informacji.
 
-## <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz także
 
 - Aby łatwo i bez konieczności instalacji, należy użyć programu Jupyter, wypróbuj bezpłatnie [usługi hostowanej notesów usługi Azure](https://notebooks.azure.com/) umożliwiający przechowywać i udostępniać innym użytkownikom notesów programu.
 
