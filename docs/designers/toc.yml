@@ -49,10 +49,10 @@
                   href: direct-selection-tool-modifier-keys-in-blend.md
             - name: Produkty i usługi związane z ułatwieniami dostępu dla narzędzia Blend
               href: accessibility-products-and-services-blend.md
-    - name: Rozpoczynanie pracy z aparatem WPF
+    - name: Windows Presentation Foundation (WPF)
       href: getting-started-with-wpf.md
       items:
-        - name: Wprowadzenie do WPF
+        - name: Omówienie podsystemu WPF
           href: introduction-to-wpf.md
         - name: Powiązanie danych WPF za pomocą LINQ to XML
           href: wpf-data-binding-with-linq-to-xml-overview.md
@@ -80,18 +80,18 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (właściwość dynamiczna XElement)
                       href: xml-xelement-dynamic-property.md
-            - name: Przykład
-              href: wpf-data-binding-using-linq-to-xml-example.md
-              items:
-                - name: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
-                  href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                - name: 'Przewodnik: powiązanie danych LINQ to XML'
-                  href: walkthrough-linqtoxmldatabinding-example.md
+                - name: Przykład
+                  href: wpf-data-binding-using-linq-to-xml-example.md
                   items:
-                    - name: Kod źródłowy L2DBForm.xaml
-                      href: l2dbform-xaml-source-code.md
-                    - name: Kod źródłowy L2DBForm.xaml.cs
-                      href: l2dbform-xaml-cs-source-code.md
+                    - name: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
+                      href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                    - name: 'Przewodnik: powiązanie danych LINQ to XML'
+                      href: walkthrough-linqtoxmldatabinding-example.md
+                      items:
+                        - name: Kod źródłowy L2DBForm.xaml
+                          href: l2dbform-xaml-source-code.md
+                        - name: Kod źródłowy L2DBForm.xaml.cs
+                          href: l2dbform-xaml-cs-source-code.md
     - name: Praca z zasobami 3D dla gier i aplikacji
       href: working-with-3-d-assets-for-games-and-apps.md
       items:
