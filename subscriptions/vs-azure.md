@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w T
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379739"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624211"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -53,21 +53,22 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Znajdź Kafelek Azure w sekcji narzędzia dotyczące zalet strony, a następnie kliknij przycisk **Aktywuj** link w dolnej części kafelka korzyści.
-
-    ![Azure Tile](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kafelek Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Wprowadź informacje wymagane do utworzenia subskrypcji usługi Azure, kliknij pole wyboru, aby zaakceptować warunki i postanowienia, a następnie kliknij przycisk **Zarejestruj**:
-
-    ![Utwórz konto platformy Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Utwórz konto platformy Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Jeśli Twoje konto jest gotowe, będziesz mieć opcję, aby wybrać plan pomocy technicznej platformy Azure (sprzedawany oddzielnie) lub zacznij pracę ze swoją subskrypcją platformy Azure.
-
-    ![Trwa przygotowywanie platformy Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Trwa przygotowywanie platformy Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Zostanie załadowany pulpit nawigacyjny platformy Azure i przy pierwszym użyciu będziesz mieć możliwość skorzystaj z przewodnika.  Przewodnik składa się z szeregu etykietki ekranowe, wskazujących się, jak można wykonywać różnorodne zadania i znajdować odpowiednie informacje.  Kończenie lub zamyka samouczka wyświetli pulpit nawigacyjny platformy Azure.
 
 6.  Zakładki [witryny Azure Portal](https://portal.azure.com) łatwy dostęp w przyszłości.
-![Pulpit nawigacyjny platformy Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pulpit nawigacyjny platformy Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 

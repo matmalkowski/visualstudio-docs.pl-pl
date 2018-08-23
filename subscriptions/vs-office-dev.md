@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 dla deweloperów, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 28ee6813e17979256ea892dead26222865fed317
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637672"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624371"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -29,28 +29,28 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
 3. Po zakończeniu procesu logowania powinna zostać wyświetlona strona korzyści z subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, możesz przełączać się między subskrypcjami, klikając strzałkę listy rozwijanej w prawym górnym rogu pod wstążką czarny.  Subskrypcja dewelopera usługi Office 365 kafelka korzyści znajduje się w kategorii narzędzi.  Użyj strzałkę po prawej stronie wiersza kafelków, aby przewiń do kafelka Office jest widoczna.
 
 4. Znajdź Kafelek subskrypcja dewelopera usługi Office 365 w sekcji narzędzia.  Kliknij pozycję **uzyskać kod** link w dolnej części kafelka korzyści.   Po pobraniu kodu kliknij **Aktywuj**.
-
-    ![Kafelek korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kafelek korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  Następnym krokiem jest, aby utworzyć konto.  Podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**.
-
-    ![Konta deweloperów korzyści z usługi Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Konta deweloperów korzyści z usługi Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
 6.  Podaj wymagane informacje, o którym można się przy użyciu subskrypcji i kliknij przycisk **dalej**.  Informacje są używane w celu określenia dostępności subskrypcji i odpowiednie kwoty podatków.
-
-    ![Informacje kontaktowe korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Informacje kontaktowe korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
 7.  Utwórz nazwę użytkownika i hasło dla konta usługi.
-
-    ![Nazwa użytkownika korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Nazwa użytkownika korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
 8.  Podaj numer telefonu, a następnie określ, czy chcesz otrzymać kod potwierdzenia, za pośrednictwem telefonu lub tekstu.  Ułatwia to nam upewnić się, że konto jest tworzone przez prawdziwa osoba. Wprowadź kod wyświetlany i kliknij przycisk **dalej**.
 
 9.  Może być konieczne podanie do logowania się na tym etapie.  Jeśli masz więcej niż jedno konto wyświetlany na stronie logowania usługi Office 365, wybierz konto, które są skojarzone z tą subskrypcją.
 
 10. Następnej strony potwierdzi, że Twoja subskrypcja jest dostępne bezpłatnie.  Kliknij przycisk **Dalej** , aby kontynuować.
-
-    ![Korzyści z deweloperów usługi Office 365, jak działa ten widok](_img\vs-office-dev\vs-office-dev-price.png)
+    > [!div class="mx-imgBorder"]
+    > ![Korzyści z deweloperów usługi Office 365, jak działa ten widok](_img\vs-office-dev\vs-office-dev-price.png)
 
 11. W finalizowanie "Krok 3", użytkownik jest proszony o wybranie "Formy płatności".  Dostępne są dwie opcje płatności.  Pierwszym z nich będzie można dodać **karty kredytowej** (jak wyświetlonych poniżej), a drugą opcją jest **faktury**.  W obu przypadkach, kolejność 0,00 USD jest przesyłany przez kliknięcie przycisku **złóż zamówienie**.
 
@@ -58,8 +58,8 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
     > Dla subskrybentów, którzy nie chcą podasz dane karty kredytowej, wybierz **faktury** formy płatności.  Możesz również wybrać **płacić za rok** ograniczyć otrzymania faktur do raz w roku.
 
 12. W tym momencie pomyślnie wprowadzono Twój pakiet korzyści dotyczący subskrypcja dewelopera usługi Office 365.  Zostanie wyświetlona strona potwierdzenia zamówienia.  Strona zapewnia łącza do [strony logowania](https://portal.office.com "strony logowania usługi Office 365").  Firma Microsoft zaleca tworzenie zakładek dla strony w celu późniejszego użycia.  Należy również zarejestrować identyfikator użytkownika wyświetlany na stronie.  (Możesz również otrzyma powitalną wiadomość e-mail na adres e-mail podany podczas konfigurowania konta.)  Kliknij przycisk **uruchomić Instalatora** aby kontynuować.
-
-    ![Potwierdzenia zamówienia korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > [!div class="mx-imgBorder"]
+    > ![Potwierdzenia zamówienia korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>Uprawnienie
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
@@ -71,7 +71,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.    Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
@@ -86,8 +86,8 @@ Odp.: Definiowanie korzyści z subskrypcji Office 365 dla deweloperów
     > Aby zarejestrować się w https://portal.office.com, będą musieli używać nowy Office 365 dla deweloperów subskrypcji identyfikator użytkownika, który został utworzony w kroku 7 powyżej.
 
 2. Po kliknięciu przycisku **uruchamianie Instalatora**, "Krok 1" zostanie wyświetlone pytanie, łączenie do istniejącej domeny już posiadasz lub kontynuować korzystanie z ustawień dzierżawy podczas procesu realizacji.  W poniższym przykładzie firma Microsoft została wybrana została opcja nadal korzystać z naszych appsbyjane2017.onmicrosoft.com"w domenie.
-
-    ![Centrum administracyjne usługi Office 365 Dev korzyści](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centrum administracyjne usługi Office 365 Dev korzyści](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
 3.  Krok 2 umożliwia administratorom dodać użytkowników do konta usługi Office 365.  Dodaj żądaną użytkowników, a następnie kliknij przycisk **dalej**.
@@ -104,11 +104,11 @@ Odp.: Definiowanie korzyści z subskrypcji Office 365 dla deweloperów
     - OneDrive dla firm
 
 5.  Wybierz preferowany język, a następnie kliknij przycisk **zainstalować**.
+    > [!div class="mx-imgBorder"]
+    > ![Aplikacje instalacji korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-    ![Aplikacje instalacji korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-
-6. Kliknij przycisk **Uruchom** natychmiast rozpocząć instalację, lub kliknij przycisk **Zapisz** Zapisz pakiet instalacyjny do Twojego komputera i zainstalować je później.
+6.  Kliknij przycisk **Uruchom** natychmiast rozpocząć instalację, lub kliknij przycisk **Zapisz** Zapisz pakiet instalacyjny do Twojego komputera i zainstalować je później.
 
 7.  Gdy pojawi się okno dialogowe kontroli konta użytkownika, kliknij przycisk **tak** umożliwia pakietu Office do zainstalowania na komputerze.
 

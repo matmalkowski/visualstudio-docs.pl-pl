@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 3
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639698"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624141"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
@@ -78,7 +78,7 @@ Można organizować pliki przy użyciu dowolnej struktury folderów w ramach *st
     }
     ```
 
-1. Zastąp zawartość aplikacji *templates/HelloDjangoApp/index.html* pliku następującym kodem, który zastępuje `<strong>` element używany w kroku 2 z `<span>` odwołujący się `message` stylu klasy. Za pomocą klasy stylu w ten sposób zapewnia większą elastyczność w style elementu. (Jeśli jeszcze nie został przeniesiony *index.html* do podfolderu w *szablony*, można znaleźć [namespacing szablonu](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) w kroku 2.)
+1. Zastąp zawartość aplikacji *templates/HelloDjangoApp/index.html* pliku następującym kodem, który zastępuje `<strong>` element używany w kroku 2 z `<span>` odwołujący się `message` stylu klasy. Za pomocą klasy stylu w ten sposób zapewnia większą elastyczność w style elementu. (Jeśli jeszcze nie został przeniesiony *index.html* do podfolderu w *szablony* podczas korzystania z programu VS 2017 w wersji 15.7 wcześniej, można znaleźć [namespacing szablonu](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) w kroku 2 – 4.)
 
     ```html
     <html>

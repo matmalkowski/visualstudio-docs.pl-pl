@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468731"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624283"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie za pomocą programu Visual Studio
 
@@ -31,7 +31,7 @@ W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodni
 |---------|---------|
 |  ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) debugowania, w którym pokazano podobne kroki. |
 
-Mimo że aplikacja demonstracyjna C# i C++, funkcje mają zastosowanie do Visual Basic, JavaScript i innymi językami obsługiwanymi przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#.
+Mimo że aplikacja demonstracyjna C# i C++, funkcje mają zastosowanie do Visual Basic, JavaScript i innymi językami obsługiwanymi przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#. Aby przełączyć się między C# i kod przykładowy w języku C++, użyj filtru język w prawym górnym rogu strony.
 
 W tym samouczku wykonasz następujące czynności:
 
@@ -324,7 +324,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
 ## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
 
-5. W edytorze kodu, przewiń w dół, umieść kursor nad `Console.WriteLine` — metoda (`std::cout` w języku C++) w `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") pojawia się po lewej stronie.
+5. W edytorze kodu, przewiń w dół, umieść kursor nad `Console.WriteLine` — metoda (`std::cout` w języku C++) w `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png " RunToClick") pojawia się po lewej stronie.
 
      ![Użyj Uruchom do kliknięcia funkcji](../debugger/media/get-started-run-to-click.png "uruchamianie do kliknięcia")
 

@@ -1,39 +1,39 @@
 ---
 title: Program poprawy jakości obsługi klienta programu Visual Studio
 description: Dowiedz się, jak do zarządzania ustawieniami ochrony prywatności w programie Visual Studio dla komputerów Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: b09dfc87d5fc672002b922efec7b1213dcaf87cd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34469203"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624335"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
-Visual Studio klienta środowisko poprawy programu (VSCEIP) to program, który pomóc firmie Microsoft w ulepszaniu programu Visual Studio dla komputerów Mac w czasie. Ten program zbiera informacje o sprzęcie komputera i sposobie używania programu Visual Studio przez osoby dla komputerów Mac, bez zakłócania pracy użytkowników w swoich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może zidentyfikować funkcje wymagające poprawy. Tym dokumencie opisano sposób uczestnictwa w lub poza VSCEIP.
+Visual Studio klienta środowiska Improvement Program (VSCEIP) to program zaprojektowany, aby pomóc firmie Microsoft w ulepszaniu programu Visual Studio dla komputerów Mac, wraz z upływem czasu. Ten program zbiera informacje o sprzęcie komputera i jak użytkownicy korzystają programu Visual Studio dla komputerów Mac, bez zakłócania pracy użytkowników w ich zadań na komputerze. Informacje zbierane pomaga firma Microsoft może identyfikować, które funkcje, aby poprawić. W tym dokumencie opisano sposób korzystania z opcji w lub poza nią VSCEIP.
 
-Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przesyłanych przez VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).  
+Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych lub przekazywanych w ramach VSCEIP, zobacz [zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).  
 
-## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Wybór i kontrola nad programu poprawy jakości obsługi klienta w usłudze Visual Studio
+## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Opcje wyboru i kontrola nad programu poprawy jakości obsługi klienta w usłudze Visual Studio
 
-VSCEIP jest domyślnie włączona. Można ją wyłączyć, lub z powrotem na, postępując zgodnie z instrukcjami poniżej.
+VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowanie, postępując zgodnie z poniższymi instrukcjami.
 
-1. Otwieranie programu Visual Studio dla komputerów Mac.
+1. Otwórz w programie Visual Studio dla komputerów Mac.
 
-1. Na pasku menu wybierz **programu Visual Studio > Preferencje > Inne > opinie**.
+1. Na pasku menu wybierz **programu Visual Studio > Preferencje > Inne > opinii**.
 
-1. Wybierz preferencje dotyczące udziału:
+1. Wybierz preferencje udziału:
 
-    ![Zaznacz przycisk radiowy, zgodnie ze swoimi preferencjami udziału](media/visual-studio-experience-improvement-program-image1.png)
+    ![Wybierz przycisk radiowy, zgodnie ze swoimi preferencjami uczestnictwa](media/visual-studio-experience-improvement-program-image1.png)
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Jak zgłosić problem z programem Visual Studio dla komputerów Mac](report-a-problem.md)
-* [Visual Studio for Mac społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html)
-* [Zasady zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)
+* [Program Visual Studio for Mac społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)

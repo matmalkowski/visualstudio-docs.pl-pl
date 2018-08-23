@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586565"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624326"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -48,7 +48,7 @@ Aby uzyskać więcej informacji, zobacz [Instalowanie obsługi języka Python dl
 
 1. Utwórz nowy projekt języka Python w programie Visual Studio, wybierając **pliku** > **New** > **projektu**. Wyszukaj "Python", wybierz **aplikację w języku Python** szablonu, nadaj mu odpowiednią nazwę i lokalizację, a następnie wybierz pozycję **OK**.
 
-1. Praca z C++ wymaga, że używasz 32-bitowy interpreter języka Python (Python 3.6 zalecane). W **Eksploratora rozwiązań** okna programu Visual Studio, rozwiń węzeł projektu, a następnie rozwiń węzeł **środowiska Python** węzła. Jeśli nie widzisz 32-bitowego środowiska jako domyślny (pogrubienie lub oznaczone za pomocą **domyślnie globalne**), następnie postępuj zgodnie z instrukcjami [wybierz środowisko Python w projekcie](selecting-a-python-environment-for-a-project.md). Jeśli nie masz interpreter 32-bitowych, zainstalowane, zobacz [Python Zainstaluj interpretery](installing-python-interpreters.md).
+1. Pracy przy użyciu języka C++ wymaga używania 32-bitowy interpreter języka Python (Python 3.6 lub nowszej jest zalecane). W **Eksploratora rozwiązań** okna programu Visual Studio, rozwiń węzeł projektu, a następnie rozwiń węzeł **środowiska Python** węzła. Jeśli nie widzisz 32-bitowego środowiska jako domyślny (pogrubienie lub oznaczone za pomocą **domyślnie globalne**), następnie postępuj zgodnie z instrukcjami [wybierz środowisko Python w projekcie](selecting-a-python-environment-for-a-project.md). Jeśli nie masz interpreter 32-bitowych, zainstalowane, zobacz [Python Zainstaluj interpretery](installing-python-interpreters.md).
 
 1. W projekcie *PY* plików, wklej następujący kod, który wzorców obliczeń tangens hiperboliczny (zaimplementowano bez użycia biblioteka funkcji matematycznych ułatwia porównanie). Możesz wprowadzić kod ręcznie zapoznać się z niektórymi z [Python funkcje edytowania](editing-python-code-in-visual-studio.md).
 

@@ -1,38 +1,38 @@
 ---
 title: Edytor źródła typowe skróty klawiaturowe
-description: W tym artykule opisano niektóre typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac w edytorze źródła
-author: asb3993
-ms.author: amburns
+description: W tym artykule opisano niektóre typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac Edytor źródła
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 39cbe0eb3ba8d99c81119256773cc76f4699b7bd
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453819"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624278"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac
 
 ## <a name="show-code-generation-window"></a>Pokaż okno generowania kodu
 
-To polecenie kontekstowej generuje kod:
+To polecenie spowoduje wygenerowanie kontekstowe kodu:
 
  `⌘ + 1`
 
-![Pojawia się okno z opcjami generowania kodu powiązany z wybranego symbolu](media/keyboard-shortcuts-image8.png)
+![Opcje generowania kodu powiązany z wybrany symbol zostanie wyświetlony panel](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Wyszukaj pliki, symbole i polecenia
 
 `control + .` 
 
-## <a name="autocomplete"></a>Funkcji AutoComplete 
+## <a name="autocomplete"></a>Autouzupełnianie 
 
 `control + /` 
 
-## <a name="quick-fixes-and-actions"></a>Szybkie rozwiązania i akcji
+## <a name="quick-fixes-and-actions"></a>Szybkich poprawek i akcje
 
-Wyświetla [refaktoryzacji](refactoring.md) kontekstu akcji:
+Wyświetla [refaktoryzacji](refactoring.md) akcje kontekstowe:
 
 `option + enter`
 
@@ -48,26 +48,26 @@ Pozwala na szybkie przełączanie się między plikami:
 
 `control + tab`
 
-## <a name="move-lines-around-in-editor"></a>Poruszanie wierszy w edytorze
+## <a name="move-lines-around-in-editor"></a>Przenoszenie wierszy w edytorze
 
 `alt + up/down` 
 
-Użyj **alt + maksymalnie** polecenia Przenieś w górę bieżącego wybranych wierszy lub bieżącego wiersza, a następnie użyć **alt + dół** polecenie, aby przenieść wiersze w dół. Dodatek języka obsługuje tę funkcję, wiersze zostaną ponownie wcięty do dopasowania kontekstu, gdy są one przenoszone do i z zakresu.
+Użyj **alt + nawet** polecenie Przenieś w górę bieżącego wiersza lub bieżącego wybranych wierszy w celu użycia **alt + dół** polecenie, aby przenieść wiersze w dół. Dodatek języka obsługuje tę funkcję, wiersze zostaną ponownie wcięte do dopasowania kontekstu, gdy ich przenosić i zakresu.
 
 ## <a name="word-navigation"></a>Word nawigacji
 
-Przenosi karetkę do następnej lub poprzedniej word:
+Przenosi karetkę do następnej lub poprzedniej programu word:
 
 `option + left/right`
 
 ## <a name="line-navigation"></a>Wiersz nawigacji
 
-Przenosi karetkę do początku lub końca wiersza:
+Przenosi karetkę do początku lub na końcu wiersza:
 
 `⌘ + left/right`
 
-## <a name="expands-the-selection"></a>Rozwija zaznaczenia
+## <a name="expands-the-selection"></a>Rozwija zaznaczenie
 
-Rozwija word, Podwyrażenie instrukcji i wyboru elementu członkowskiego wiersza logicznego:
+Rozwija word, wyrażeń podrzędnych, poufności i wybór elementów członkowskich wiersza w sposób logiczny:
 
 `alt + shift + up` Aby wybrać `alt + shift + down` do Usuń zaznaczenie pola wyboru

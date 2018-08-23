@@ -1,32 +1,32 @@
 ---
 title: Kontrola wersji
-description: Przy użyciu usługi Git i Podwersją w programie Visual Studio dla komputerów Mac.
-author: asb3993
-ms.author: amburns
+description: Przy użyciu narzędzia Git i Subversion w programie Visual Studio dla komputerów Mac.
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: b09e776b1cf6726cd13ca8810ed528be12dd969a
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: be5bbdcaa218c2e059ca710dd04574a43519ec69
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454206"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624263"
 ---
 # <a name="version-control"></a>Kontrola wersji
 
-Kontroli wersji to system zarządzania plikami w wielu różnych wersji i — w oprogramowaniu development — jest zazwyczaj przyczyniły się do powstania przez wielu deweloperów. Głównym celem systemu kontroli wersji (_VC_) jest znalezienie rozwiązanie, które umożliwia wszystkim użytkownikom w tym samym czasie pracować bazowej kodu.
+Kontroli wersji jest systemem zarządzania plikami na wiele różnych wersji i — w oprogramowaniu opracowywanie zawartości — jest zazwyczaj przyczyniły się do przez wielu deweloperów. Głównym celem dowolnego systemu kontroli wersji (_VC_) ma na celu znalezienie rozwiązań, która umożliwia wszystkim użytkownikom na pracować nad bazy kodu w tym samym czasie.
 
-Stanowiącej podstawę żadnych kontroli wersji systemu jest _repozytorium_, który działa jako dane centralnego przechowywania dla wszystkich różnych plików — podobnie jak na serwerze plików. W przeciwieństwie do serwera plików, repozytorium zawiera całą historię projekt i wszystkie poprawki, które zostały wprowadzone.
+W samym sercu żadnych kontroli wersji jest system _repozytorium_, który działa jako centralny dane magazynu dla wszystkich różnych plików — podobnie jak na serwerze plików. W przeciwieństwie do serwera plików, repozytorium zawiera całą historię projektu i wszystkie poprawki, które zostały wprowadzone.
 
-Jeśli repozytorium magazynu danych centralnej, jest dla każdego użytkownika lokalnego magazynu danych, dzięki czemu mogą pracować nad nim. Ta metoda jest wywoływana _kopii roboczej_. W programie Visual Studio for Mac kopii roboczej pojawi się podobnie jak inne katalogu lokalnego na komputerze umożliwiając odczytywać i zapisywać do tych plików. Jednak ponieważ integracji systemu kontroli wersji programu Visual Studio for Mac, używając Podwersją i Git bez opuszczania IDE.
+Jeśli repozytorium jest magazyn danych w centralnym, jest dla każdego użytkownika lokalnego magazynu danych, umożliwiając im pracować nad nim. Jest to nazywane _kopia robocza_. W programie Visual Studio dla komputerów Mac Twoja kopia robocza pojawi się podobnie jak inne katalogu lokalnym na komputerze co umożliwia odczytywanie i zapisywanie do plików. Jednak program Visual Studio for Mac jest integracja systemu kontroli wersji, dlatego służy Subversion i Git bez opuszczania środowiska IDE.
 
-Podwersją jest system kontroli wersji scentralizowane, co oznacza, że istnieje pojedynczego serwera, który zawiera wszystkie pliki i wersje, z których użytkownicy można wyewidencjonować dowolna wersja dowolnego pliku. Gdy pliki są wyewidencjonowane ze zdalnego repozytorium Podwersją, użytkownik pobiera migawkę repozytorium w danym momencie.
+Subversion to scentralizowany system kontroli wersji, co oznacza, że jest pojedynczego serwera, który zawiera wszystkie pliki i wersje, z których użytkownicy mogą zapoznaj się z dowolną wersję każdego pliku. Gdy pliki są wyewidencjonowane ze zdalnego repozytorium systemu Subversion, użytkownik pobiera migawkę repozytorium w danym momencie.
 
-Git to system kontroli wersji rozproszonej, który umożliwia zespołom jednocześnie pracować na tym samym dokumentów. Za pomocą narzędzia Git może być pojedynczego serwera, który zawiera wszystkie pliki, ale cały repozytorium został sklonowany lokalnie na komputerze w każdym przypadku, gdy repozytorium jest wyewidencjonowany z tego źródła centralnej.
+Git to Rozproszony system kontroli wersji umożliwiający zespoły mogą pracować na tym samym dokumentach jednocześnie. Za pomocą narzędzia Git może być jednym serwerze, który zawiera wszystkie pliki, ale całego repozytorium został sklonowany lokalnie na komputerze w każdym przypadku, gdy repozytorium jest wyewidencjonowany z tego źródła centralnej.
 
 ## <a name="basic-concepts"></a>Koncepcje podstawowe 
 
-Visual Studio for Mac zapewnia obsługę zarówno usługi Git i Podwersją systemów kontroli wersji. Następujące artykuły Poznaj konfigurowania repozytoria Git i Podwersją przy użyciu programu Visual Studio for Mac, a także proste funkcje, takie jak przeglądanie, zatwierdzanie i wypychanie zmiany.
+Program Visual Studio for Mac zapewnia obsługę systemów kontroli wersji Git i Subversion. Konfigurowanie repozytoriów Git i Subversion, za pomocą programu Visual Studio dla komputerów Mac, a także proste funkcje, takie jak przeglądanie, zatwierdzanie i wypychaniu zmian można znaleźć, zapoznaj się następujące artykuły.
 
 * [Konfigurowanie repozytorium Git](set-up-git-repository.md) 
 * [Praca z usługą Git](working-with-git.md)

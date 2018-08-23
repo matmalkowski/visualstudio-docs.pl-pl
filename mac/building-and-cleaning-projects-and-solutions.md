@@ -1,48 +1,48 @@
 ---
 title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio dla komputerów Mac
-description: W tym artykule opisano sposób tworzenia projektu programu Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+description: W tym artykule opisano sposób tworzenia projektu w programie Visual Studio dla komputerów Mac
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876933"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624088"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań
 
-Wykonaj kroki opisane w tym artykule, aby uzyskać informacje o kompilacji, skompiluj ponownie i wyczyść rozwiązanie i projektu.
+Wykonaj kroki opisane w tym artykule, aby dowiedzieć się, jak tworzyć, ponownie utworzyć i oczyścić swoje rozwiązania i projektu.
 
-## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby utworzyć, odbudować, lub wyczyścić całego rozwiązania
+## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
 
-Do kompilacji, skompiluj ponownie lub wyczyść całego rozwiązania:
+Aby skompilować, odbudować lub Wyczyść całe rozwiązanie:
 
 1. Wybierz węzeł rozwiązania w konsoli rozwiązania:
 
     ![Wybranie węzła rozwiązania](media/compiling-and-building-image1.png)
 
-2. Wybierz Menu kompilacji na pasku Menu, a następnie wybierz jedną z następujących opcji:
+2. W pasku Menu wybierz Menu kompilacji, a następnie wybierz jedno z następujących opcji:
 
-    ![Wybieranie kompilacji wszystkich elementów menu](media/compiling-and-building-image2.png)
+    ![wybierając wszystkie elementy menu kompilacji](media/compiling-and-building-image2.png)
 
-    * **Tworzenie wszystkich** -próbuje kompilacji wszystkich plików w ramach projektu, które zostały zmienione w projekcie od czasu ostatniej kompilacji.
-    * **Odbudowanie wszystkiego** — czyści rozwiązania, a następnie kompiluje go.
+    * **Kompiluj wszystko** -próbuje kompilacji wszystkie pliki w obrębie projektu, które zostały zmienione w projekcie od najnowszych kompilacji.
+    * **Kompiluj wszystko ponownie** — czyści rozwiązania, a następnie kompiluje go.
     * **Wyczyść wszystko** — usuwa wszystkie produkty kompilacji z rozwiązania.
 
 
 
-## <a name="to-build-or-rebuild-a-single-project"></a>Aby utworzyć lub odbudować pojedynczego projektu
+## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
 
-1. W konsoli rozwiązanie wybierz projekt.
+1. W konsoli rozwiązania wybierz projekt.
 
-2. Na pasku menu wybierz kompilacji, a następnie wybierz albo kompilacji [ProjectName], odbudować [ProjectName] lub wyczyścić [ProjectName].
+2. Na pasku menu wybierz polecenie Kompiluj, a następnie wybierz albo kompilacji [nazwa_projektu], [nazwa_projektu] odbudować lub wyczyścić [nazwa_projektu].
 
 
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
-Aby zatrzymać kompilację, naciśnij klawisz czerwonego kwadratu w obszarze stanu:
+Aby zatrzymać kompilację, naciśnij czerwony kwadrat w obszarze stanu:
 
  ![Naciśnij klawisz czerwonego kwadratu można zatrzymać kompilacji](media/compiling-and-building-image3.png)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fda6449e3302f6d77a04bb2985597b2781f1c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637474"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624361"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
@@ -105,15 +105,13 @@ Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub je
 Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem użytkownika. Aby dokładniej:
 
 > [!div class="nextstepaction"]
-> [Szybki Start: Personalizowanie środowiska IDE](../ide/quickstart-personalize-the-ide.md)
+> [Dowiedz się więcej o Edytorze kodu](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+> [Dowiedz się więcej o projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
-- [Funkcje programu Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Więcej funkcji programu Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Zmienianie motywu i kolory czcionek](../ide/quickstart-personalize-the-ide.md)

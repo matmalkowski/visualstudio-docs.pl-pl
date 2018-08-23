@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381058"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42624054"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.
 
+## <a name="3804"></a>3.8.0.4
+ Wydana 14 sierpnia 2018 r.
+ 
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Ocena:**
+
+    -   Dodano obsługę wartości wskaźnika.
+    
+    -   Dodano obsługę dla metod ogólnych.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Inteligentne ponowne załadowanie z wieloma projektami zmienione.
+
+## <a name="3803"></a>3.8.0.3
+ Wydana 24 lipca 2018 r.
+ 
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
+
+## <a name="3802"></a>3.8.0.2
+ Wydana 7 lipca 2018 r.
+ 
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
+    
+## <a name="3801"></a>3.8.0.1
+ Wydana 26 czerwca 2018 r.
+ 
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Debugowanie:**
+
+    -   Dodano obsługę poleceń UserLog i UserBreak.
+    
+    -   Obsługa dodano załadować z opóźnieniem typu (optymalizowanie opóźnienie odpowiedzi obciążenia i debuger sieci).
+       
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Ocena:**
+
+    -   Udoskonalone Obliczanie wyrażenia operator binarny i metoda wyszukiwania.
+
+## <a name="3800"></a>3.8.0.0
+ Wydanie: 30 maja 2018 r.
+ 
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Debugowanie:**
+
+    -   Dodano obsługę wyświetlanie zmiennych w konstrukcji asynchronicznej.
+    
+    -   Dodano obsługę przetwarzania zagnieżdżonych typów podczas ustawiania punktów przerwania, aby zapobiec ostrzeżenia za pomocą kompilatora konstrukcji.
+    
+-   **Integracja:**
+
+    -   Dodano obsługę dla gramatyk textmate programów do cieniowania (obciążeniu C++ nie jest potrzebna dla barwy kodu programu do cieniowania).
+    
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Nie można konwertować przenośnego pliku pdb mdb już korzystając z nowego środowiska uruchomieniowego platformy Unity.
+
 ## <a name="3701"></a>3.7.0.1
- Wydana 2018-05-07
+ Wydana 7 maja 2018 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -30,7 +103,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono zależności problem, korzystając z doświadczalnych kompilacji.
 
 ## <a name="3700"></a>3.7.0.0
- Wydana 2018-05-07
+ Wydana 7 maja 2018 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -59,7 +132,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Wyklucz jednostki kompilacji Menedżera pakietów z generacji.
 
 ## <a name="3605"></a>3.6.0.5
- Wydana 13-2018-03
+ Wydana 13 marca 2018 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -78,7 +151,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Stała, ustawienie następnej instrukcji.
 
 ## <a name="3604"></a>3.6.0.4
- Wydana 2018-03-05
+ Wydanie 5 marca 2018 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -91,7 +164,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Rozwiązano problemy dotyczące synchronizacji z 2018.1 i aktywacją wtyczka.
 
 ## <a name="3603"></a>3.6.0.3
- Wydana 23-2018-02
+ Wydana 23 lutego 2018 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -110,7 +183,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono podziału na wyjątki, które są wyrzucane poza usercode.
 
 ## <a name="3602"></a>3.6.0.2
- Wydana 07-2018-02
+ Wydana 7 lutego 2018 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -125,7 +198,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Ponownie ładować tylko projekty na zewnętrzne zmiany (po zastosowaniu ograniczania).
 
 ## <a name="3601"></a>3.6.0.1
- Wydana w 24-2018-01
+ Wydana 24 stycznia 2018 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -136,7 +209,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono wywołanie pośrednie EditorPrefs.GetBool wpływające na panelu Inspektor podczas próby zmiany rozmiaru tablicy.
 
 ## <a name="3600"></a>3.6.0.0
- Wydana 10-2018-01
+ Wydana 10 stycznia 2018 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -171,7 +244,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Odśwież kontekstu roslyn przed wstawieniem metody.
 
 ## <a name="3503"></a>3.5.0.3
- Wydana 2018-01-09
+ Wydana 9 stycznia 2018 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -180,7 +253,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Stałym pdb automatyczne do konwersji symboli debugowania mdb.
 
 ## <a name="3502"></a>3.5.0.2
- Wydana 04-2017-12
+ Wydana 4 grudnia 2017 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -213,7 +286,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz "true".
 
 ## <a name="3402"></a>3.4.0.2
- Wydana 19-2017-09
+ Wydana 19 września 2017 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -244,7 +317,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono odwołania do Microsoft.CSharp 4.6 poziom interfejsu API.
 
 ## <a name="3302"></a>3.3.0.2
- Wydana 2017-08-15
+ Wydanie: 15 sierpnia 2017 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -253,7 +326,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Stała generowania rozwiązania programu Visual Studio na Unity 5.5 i poprzednich wersjach.
 
 ## <a name="3300"></a>3.3.0.0
- Wydana 14-2017-08
+ Wydana 14 sierpnia 2017 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -282,7 +355,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono definiuje ze poziomy interfejsu API.
 
 ## <a name="3200"></a>3.2.0.0
- Wydana 10-2017-05
+ Wydana 10 maja 2017 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -299,7 +372,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono migotanie przy użyciu komunikatów aparatu Unity.
 
 ## <a name="3100"></a>3.1.0.0
- Wydana 2017-04-07
+ Wydana 7 kwietnia 2017 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -328,12 +401,12 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Przetwarzanie końcowe wersji zestawu usunięte.
 
 ## <a name="3001"></a>3.0.0.1
- Wydana 2017-03-07
+ Wydana 7 marca 2017 r.
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Ta wersja zawiera wszystkie nowe funkcje i poprawki wprowadzone w programie 2.8.x serii.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 w wersji zapoznawczej 3
- Wydana 2017-01-25
+ Wydanie: 25 stycznia 2017 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -342,7 +415,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono regresji, gdzie projektów wtyczek w przypadku, gdy dwa razy, do których odwołuje się najpierw jako binarne DLL następnie jako projekt odwołania.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 w wersji zapoznawczej 2
- Wydana 2017-01-23
+ Wydana 23 stycznia 2017 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -369,7 +442,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Przełączono na https pod kątem zdalnego dokumentacja aparatu Unity.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 (wersja zapoznawcza)
- Wydana 2016-11-17
+ Wydanie 17 listopada 2016 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -436,7 +509,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Usunięto usterkę uniemożliwiającą kompilacji podczas kompilacji skryptu z internetowym kodowany w formacie nazwy pliku.
 
 ## <a name="2300"></a>2.3.0.0
- Wydana 2016-07-14
+ Wydana 14 lipca 2016 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -471,7 +544,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Rozwiązano wyrażenie kilka problemów oceny.
 
 ## <a name="2200"></a>2.2.0.0
- Wydana 2016-02-04
+ Wydana 4 lutego 2016 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -518,7 +591,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Rozwiązane problemy dezinstalacji VSTU po zainstalowaniu tej samej wersji w narzędziach VSTU dla wielu różnych wersji programu Visual Studio. Na przykład, gdy w narzędziach VSTU **2015** 2.1.0.0 i w narzędziach VSTU **2013** 2.1.0.0 zostały zainstalowane.
 
 ## <a name="2100"></a>2.1.0.0
- Wydana 2015-09-08
+ Wydana 8 września 2015 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -539,7 +612,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Stałej liczby trafień punkty przerwania w programie Visual Studio 2015.
 
 ## <a name="2000"></a>2.0.0.0
- Wydana 2015-07-20
+ Wydane 20 lipca 2015 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -574,7 +647,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
     -   Naprawiono sprawdzania pusty tablic.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 w wersji zapoznawczej 2
- Wydana 2015-04-02
+ Wydana 2 kwietnia 2015 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -663,7 +736,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Interfejs użytkownika:** motywy pomocy technicznej programu Visual Studio dla ikony i menu kontekstowego.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (wersja zapoznawcza)
- Wydana 2014-11-12
+ Wydana 12 listopada 2014 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -702,7 +775,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Nie rejestruj wywołanie zwrotne dziennika, jeśli nie mamy.
 
 ## <a name="1920"></a>1.9.2.0
- Wydana 2014-10-09
+ Wydana 9 października 2014 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -725,7 +798,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono błąd, w którym wszystkie zasoby zostały uwzględnione w plikach projektu, jeśli filtr rozszerzeń był pusty.
 
 ## <a name="1910"></a>1.9.1.0
- Wydana 22-2014-09
+ Wydana 22 września 2014 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -770,7 +843,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Poprawka otwieranie skryptów za pomocą rozszerzenia VSTU w 64-bitowej wersji aparatu Unity.
 
 ## <a name="1900"></a>1.9.0.0
- Wydana 2014-07-29
+ Wydana 29 lipca 2014 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -818,7 +891,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 >  C# jest dominujący języka należący do ekosystemu platformy Unity — nowe zasoby próbki są w języku C#, będą domyślnie dokumentacja aparatu Unity C# — usunęliśmy naszych podstawowa pomoc techniczna dla UnityScript i coś lepiej skoncentrować się na środowisko C#. W wyniku VSTU rozwiązania są teraz C# tylko i szybciej, aby załadować.
 
 ## <a name="1820"></a>1.8.2.0
- Wydana 2014 01-07-
+ Wydana 7 stycznia 2014 roku.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -845,7 +918,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Zapobiegania awarii na platformie Unity po określonej wersji wygenerowanego zestawu, jeśli są one zsynchronizowane.
 
 ## <a name="1810"></a>1.8.1.0
- Wydana 2013-11-21
+ Wydana 21 listopada 2013 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -878,7 +951,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono otwieranie skryptów środowiska Unity w celu nie należy mylić kolejności ALT + TAB dla aparatu Unity 4.2 lub nowszej.
 
 ## <a name="1800"></a>1.8.0.0
- Wydana 2013-09-24
+ Wydana 24 września 2013 r.
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -919,7 +992,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Zmienianie wartościami stałymi obliczające w widoku lokalny.
 
 ## <a name="1220"></a>1.2.2.0
- Wydana 2013-07-09
+ Wydana 9 lipca 2013 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -942,7 +1015,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono obsługi zestawów 4.2 Unity w wersji Beta.
 
 ## <a name="1210"></a>1.2.1.0
- Wydana 2013-04-09
+ Wydana 9 kwietnia 2013
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -955,7 +1028,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Stałym powiązaniem punkty przerwania w pewnych zewnętrznej biblioteki dll.
 
 ## <a name="1200"></a>1.2.0.0
- Wydana 2013-03-25
+ Wydana 25 marca 2013
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1022,10 +1095,10 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Usunięto usterkę występującą UV-11: zmiennych lokalnych w koprocedury.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 — wydanie beta
- Wydana 2014-10-09
+ Ogólnie, 9 marca 2013
 
 ## <a name="10130"></a>1.0.13.0
- Wydana 2013-01-21
+ Wydana stycznia 21 lutego 2013
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1048,7 +1121,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono obsługi długich komunikatów wysyłanych z aparatu Unity do UnityVS. Wcześniej wiadomości długie mogło powodować awarię naszych komunikatów część UnityVS. W konsekwencji czasami UnityVS w takich sytuacjach przydałaby Otwórz plik z poziomu aparatu Unity.
 
 ## <a name="10120"></a>1.0.12.0
- Wydana 2013-01-03
+ Wydana 3 stycznia 2013 r.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1067,7 +1140,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono błąd interfejsu API, gdy kod użytkownika nie może uczestniczyć w obsługi wywołania zwrotnego dziennika.
 
 ## <a name="10110"></a>1.0.11.0
- Wydana 28-2012-11
+ Wydana 28 listopada 2012
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1098,7 +1171,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono awarii, jeśli firma Microsoft nie można wstrzyknąć naszych ikonę na pasku stanu programu Visual Studio.
 
 ## <a name="10100"></a>1.0.10.0
- Wydana 2012-10-09
+ Wydana 9 października 2012
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1111,7 +1184,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Ustala, jak zestawy są pobierane z aparatu Unity, unikaj blokowania plików i mylić procesu kompilacji aparatu Unity.
 
 ## <a name="1090"></a>1.0.9.0
- Wydana 2012-10-03
+ Wydana 3 październik 2012
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1130,7 +1203,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Usunięto usterkę występującą UV 21: nieprawidłowy wskaźnik podczas obliczania wywołanie metody do interfejsu API aparatu Unity matematyczne.
 
 ## <a name="1080"></a>1.0.8.0
- Wydana 26-2012-09
+ Wydana 26 września 2012
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1141,7 +1214,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Ustala, jak UnityVS jest zarejestrowany w programie Visual Studio 2010.
 
 ## <a name="1070"></a>1.0.7.0
- Wydana 14-2012-09
+ Wydana 14 wrzesień 2012
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1157,10 +1230,10 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 >  Ze względu na obsługę programu Visual Studio 2012 mieliśmy kilka plików i innych poruszać. Pakiet UnityVS do zaimportowania Unity ma teraz nazwę UnityVS 2010 lub UnityVS 2012 odpowiednio programu Visual Studio 2010 i Visual Studio 2012. Ta wersja wymaga również, że UnityVS pliki projektu są generowane.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 — wewnętrzne kompilacji
- Wydana 2012-09-12
+ Wydana 12 września 2012
 
 ## <a name="1050"></a>1.0.5.0
- Wydana 10-2012-09
+ Wydana 10 września 2012
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1169,7 +1242,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono wykrywania wystąpień platformy Unity podczas Unity został połączony z serwerem zawartości. To wyzwalane błędów, aby otworzyć pliki z firm Unity i automatyczne połączenie debugera programu Visual Studio.
 
 ## <a name="1040"></a>1.0.4.0
- Wydana 05-2012-09
+ Wydana 5 wrzesień 2012
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1182,7 +1255,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono UnityVS awarii podczas debugowania spowodowane wyjątki wyrzucane przez metody lub właściwości wewnątrz aparatu Unity.
 
 ## <a name="1030"></a>1.0.3.0
- Wydana 2012-09-04
+ Wydana 4 wrzesień 2012
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1197,7 +1270,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono losowe VS awarii spowodowanych naszych pasek stanu niestandardowych.
 
 ## <a name="1020"></a>1.0.2.0
- Wydana 2012-08-30
+ Wydana 30 sierpnia 2012
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -1208,7 +1281,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Usunięto usterkę występującą w zestawach, jak skrypty zostały pobrane z poziomu aparatu Unity za pomocą aparatu Unity 4 b7.
 
 ## <a name="1010"></a>1.0.1.0
- Wydana 28-2012-08
+ Wydana 28 sierpnia 2012
 
 ### <a name="new-features"></a>Nowe funkcje
 
@@ -1225,4 +1298,4 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   Naprawiono uzupełnianie dla biblioteki dll znajdujące się w folderze zasobów UnityScript i coś.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - wersja początkowa
- Wydana 22-2012-08
+ Wydana 22 sierpnia 2012

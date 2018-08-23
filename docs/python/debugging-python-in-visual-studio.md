@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python
 description: Przewodnik po funkcji debugowania w programie Visual Studio dla kodu Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008284"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624078"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -192,48 +192,44 @@ Należy pamiętać, że standard debugera, takie jak **procesy**, **wątków**, 
 
 ![Okno interaktywne opcje debugowania](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Używaj debugera eksperymentalnego
+<a name="use-the-experimental-debugger"></a>
 
-Począwszy od programu Visual Studio 2017 (wersja zapoznawcza) 4.0, możesz zdecydować się na użyciu "debugera eksperymentalnego", który jest oparty na wersji ptvsd 4.1 lub nowszym. Aby włączyć, wybierz pozycję **narzędzia** > **opcje** menu polecenia, a następnie przejdź do **Python** > **eksperymentalne**w okno dialogowe Opcje i wybierz pozycję **używaj debugera eksperymentalnego**.
+## <a name="use-the-legacy-debugger"></a>Za pomocą starszej wersji debugera
 
-Debugera eksperymentalnego jest zgodny z tylko ograniczony środowiska Python, zgodnie z opisem w poniższej tabeli:
+Visual Studio 2017 w wersji należy zachować 15,8 lub nowszej użyć debugera na podstawie wersji ptvsd 4.1 lub nowszym. Tej wersji ptvsd jest zgodny z języka Python 2.7 i Python 3.5 +. Czy używasz 2.6 języka Python, 3.1 do 3.4, IronPython, Visual Studio pokazuje błąd, **debuger nie obsługuje tego środowiska Python**:
 
-| Wersja języka Python | Zgodne z debugera eksperymentalnego |
-| --- | --- |
-| 2.6 | Nie |
-| 2.7 | Tak |
-| 3.1 lub 3.4 | Nie |
-| 3.5 i nowsze | Tak |
-| IronPython | Nie |
+![Debuger nie obsługuje ten błąd środowiska Python w przypadku używania debugera](media/debugging-experimental-incompatible-error.png)
 
-Jeśli spróbujesz używaj debugera eksperymentalnego niezgodne środowisko Visual Studio pokazuje błąd, **debugera jest niezgodna z tym środowiskiem**:
+W takiej sytuacji należy użyć starszy debuger (co jest ustawieniem domyślnym w programie Visual Studio 2017 w wersji 15.7 i starszych). Wybierz **narzędzia** > **opcje** menu poleceń, przejdź do **Python** > **debugowanie**i wybierz pozycję **za pomocą starszej wersji debugera** opcji.
 
-![Debuger jest niezgodne z powodu następującego błędu środowiska, korzystając z debugera eksperymentalnego](media/debugging-experimental-incompatible-error.png)
+Jeśli po zainstalowaniu starszej wersji ptvsd w bieżącym środowisku (na przykład z wcześniejszej wersji 4.0.x lub wersji 3.x, wymagane do zdalnego debugowania), program Visual Studio mogą być wyświetlane w błąd lub ostrzeżenie.
 
-Wybierz **wyłączyć debugera eksperymentalnego** polecenia, które czyści **używaj debugera eksperymentalnego** opcji.
+Błąd, **nie można załadować pakietu debugera**, jest wyświetlany, gdy masz zainstalowaną ptvsd 3.x:
 
-> [!Note]
-> To ostrzeżenie nie jest obecnie wyświetlany dla języka Python 3.3 i 3.4.
+![Pakietu debugera nie można załadować błąd w przypadku używania debugera](media/debugging-experimental-version-error.png)
 
-Jeśli po zainstalowaniu starszej wersji ptvsd w bieżącym środowisku (na przykład starszej wersji 4.0.x wersji 3.x wymagane do zdalnego debugowania), Visual Studio wyświetla błąd albo **nie można załadować pakietu debugera**, lub Ostrzeżenie, **pakietu debugera jest nieaktualna**:
+W takim przypadku wybierz **za pomocą starszej wersji debugera** można ustawić **za pomocą starszej wersji debugera** opcji, a następnie ponownie uruchom debuger.
 
-![Pakiet debugera nie można załadować błąd przy użyciu debugera eksperymentalnego](media/debugging-experimental-version-error.png)
+Ostrzeżenie, **pakietu debugera jest nieaktualna**, jest wyświetlany po zainstalowaniu wcześniejszej wersji 4.x ptvsd:
 
-![Pakiet debugera jest nieaktualna, ikona ostrzeżenia, gdy za pomocą debugera eksperymentalnego](media/debugging-experimental-version-warning.png)
-
-Aby zarządzać ptvsd instalację, należy użyć **pakietów** karcie **środowiska Python** okna lub użyj następujących poleceń w wierszu polecenia:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Pakiet debugera jest nieaktualna, ikona ostrzeżenia, gdy za pomocą debugera](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Mimo że można zignorować to ostrzeżenie dla niektórych wersji ptvsd, Visual Studio mogą nie działać poprawnie.
+
+Aby zarządzać ptvsd instalacji:
+
+1. Przejdź do **pakietów** karcie **środowiska Python** okna.
+
+1. W polu wyszukiwania wprowadź "ptvsd" i sprawdź zainstalowaną wersję ptvsd:
+
+    ![Sprawdzanie wersji ptvsd w oknie środowiska Python](media/debugging-experimental-check-ptvsd.png)
+
+1. Jeśli wersja jest niższa niż 4.1.1a9 (wersja powiązane z programem Visual Studio), wybierz opcję **X** po prawej stronie pakietu można odinstalować starszej wersji. Visual Studio używa następnie jego wersji. (Można także odinstalować z przy użyciu programu PowerShell `pip uninstall ptvsd`.)
+
+1. Alternatywnie można zaktualizować pakiet ptvsd do jego najnowszej wersji. Wprowadź `ptvsd --upgrade -pre` w polu wyszukiwania, a następnie zaznacz **Uruchom polecenie: polecenia pip install ptvsd — uaktualnienia - pre**. (Możesz również użyć tego samego polecenia, za pomocą programu PowerShell).
+
+    ![Zapewniając uaktualnienia polecenie w oknie środowiska Python](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,6 +1,6 @@
 ---
-title: Znajdź i Zamień tekst
-ms.date: 05/07/2018
+title: Znajdź i Zamień tekst i wybieranie wielu karetki
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,71 +27,106 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106755"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624324"
 ---
-# <a name="find-and-replace-text"></a>Znajdź i Zamień tekst
+# <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
-Można znaleźć i zastępowanie tekstu w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files).
-
-> [!TIP]
-> Jeśli zmieniasz kod symbole, na przykład zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentnego i rozumie zakresu, Znajdź i Zamień ślepo zastępuje wszystkie wystąpienia.
-
-Funkcje Znajdź i zamień są dostępne w edytorze, w niektórych tekstowych windows takich jak **znaleźć wyników** systemu windows w projektanta systemu windows, takich jak projektanta XAML i Projektant formularzy systemu Windows i okien narzędzi.
-
-Można określić zakres wyszukiwania do bieżącego dokumentu, bieżące rozwiązanie lub niestandardowy zestaw folderów. Można również określić zestaw rozszerzeń nazw plików do wyszukiwania wielu plików. Dostosowywanie składni wyszukiwania przy użyciu programu .NET [wyrażeń regularnych](../ide/using-regular-expressions-in-visual-studio.md).
+Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-replace-in-files). Nowość w programie Visual Studio 2017 w wersji 15.8 można znaleźć i zamienić *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
 
 > [!TIP]
-> [Find/Command](../ide/find-command-box.md) pole jest dostępna jako formantu paska narzędzi, ale nie jest wyświetlany domyślnie. Aby wyświetlić **Find/Command** wybierz opcję **Dodaj lub usuń przyciski** na **standardowe** narzędzi, a następnie wybierz **znaleźć**.
+> Jeśli zmieniasz kodu symbole, takie jak zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentne i określa zakres, Znajdź i Zamień bezrefleksyjne zastępuje wszystkie wystąpienia.
 
-## <a name="find-and-replace-control"></a>Znajdź i Zamień formantu
+Funkcja Znajdź i zamień jest dostępna w edytorze, a w niektórych oparte na tekście windows takich jak **Find Results** systemu windows, w oknach projektantów, takich jak projektant XAML i Projektant formularzy Windows i w oknach narzędzi.
 
-**Znajdź i Zamień** formant jest widoczny w prawym górnym rogu okna edytora kodu. **Znajdź i Zamień** kontroli natychmiast prezentuje wszystkie wystąpienia podanego ciągu w bieżącym dokumencie. Można przechodzić z jednego wystąpienia na inny, wybierając **Znajdź następny** przycisk lub **Znajdź poprzednie** przycisku kontrolki wyszukiwania.
+Możesz ograniczyć wyszukiwanie do bieżącego dokumentu, bieżącego rozwiązania lub niestandardowego zestawu folderów. Można również określić zestaw rozszerzeń nazw plików dla wyszukiwania wieloplikowego. Dostosować składnię wyszukiwania przy użyciu platformy .NET [wyrażeń regularnych](../ide/using-regular-expressions-in-visual-studio.md).
 
-![Znajdź i Zamień formantu](media/find-and-replace-box.png)
+> [!TIP]
+> [Find/Command](../ide/find-command-box.md) pole jest dostępne jako formant paska narzędzi, ale nie jest wyświetlany domyślnie. Do wyświetlenia **Find/Command** wybierz opcję **apletu Dodaj lub usuń przyciski** na **standardowa** narzędzi, a następnie wybierz pozycję **znaleźć**.
 
-Dostępne opcje zastępowania wybierając przycisk Dalej, aby **znaleźć** pola tekstowego. Aby jedno zastąpienie w czasie, wybierz polecenie **Zastąp dalej** znajdujący się obok **Zastąp** pola tekstowego. Aby zastąpić wszystkie dopasowania, wybierz **Zamień wszystkie** przycisku.
+## <a name="find-and-replace-control"></a>Formant Znajdź i Zamień
 
-Aby zmienić kolor wyróżnienia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz pozycję **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy, wybierz **Edytor tekstu**, a następnie w **wyświetlania elementów** listy, wybierz **znaleźć Wyróżnij (rozszerzenie)**.
+**Znajdź i Zamień** formant jest widoczny w prawym górnym rogu okna edytora kodu. **Znajdź i Zamień** kontroli natychmiast wyróżnia każde wystąpienie wyszukiwanego ciągu w bieżącym dokumencie. Możesz przejść z jednego wystąpienia do innego, wybierając **Znajdź następny** przycisk lub **Find Previous** przycisku na kontrolce wyszukiwania.
 
-### <a name="search-tool-windows"></a>Okna narzędzi wyszukiwania
+![Znajdź i Zamień w programie Visual Studio](media/find-and-replace-box.png)
 
-Można użyć **znaleźć** kontroli kodu lub tekstu systemu Windows, takich jak **dane wyjściowe** systemu windows i **znaleźć wyników** systemu windows, wybierając **Edytuj**  >  **Znajdź i Zamień** lub naciskając klawisz **Ctrl + F**.
+Dostęp do opcji zastępowania, wybierając przycisk obok **znaleźć** pola tekstowego. Aby wykonywać jedną zamianę naraz, wybierz opcję **Zamień następny** znajdujący się obok **Zastąp** pola tekstowego. Aby zamienić wszystkie dopasowania, wybierz opcję **Zamień wszystkie** przycisku.
 
-Wersja **znaleźć** kontroli jest również dostępna w niektórych okien narzędzi. Na przykład można filtrować na liście kontrolek w **przybornika** okna, wpisując tekst w polu wyszukiwania. Inne okna narzędzi, które umożliwiają wyszukiwanie ich zawartość obejmują **Eksploratora rozwiązań**, **właściwości** okno i **Team Explorer**.
+Aby zmienić kolor podświetlenia dopasowań, wybierz **narzędzia** menu, wybierz opcję **opcje**, a następnie wybierz **środowiska**i wybierz **czcionki i kolory** . W **Pokaż ustawienia dla** listy wybierz **edytora tekstów**, a następnie w polu **wyświetlania elementów** listy wybierz **Znajdź zaznaczone (rozszerzenie)**.
+
+### <a name="search-tool-windows"></a>Wyszukiwanie okien
+
+Możesz użyć **znaleźć** kontrolować w oknach kodu lub tekstu, takie jak **dane wyjściowe** systemu windows i **Find Results** systemu windows, wybierając **Edytuj**  >  **Znajdź i Zamień** lub naciskając **Ctrl + F**.
+
+Wersja **znaleźć** kontroli jest również dostępna w niektórych oknach narzędzi. Na przykład można filtrować listę formantów w **przybornika** okna, wprowadzając tekst w polu wyszukiwania. Innymi oknami narzędzi, które umożliwiają wyszukiwanie ich zawartość zawierają **Eksploratora rozwiązań**, **właściwości** oknie i **Team Explorer**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Znajdź w plikach i Zamień w plikach
 
-**Znajdź/Zamień w plikach** działa, takich jak **Znajdź i Zamień** kontrolować, z wyjątkiem tego, że można zdefiniować zakres wyszukiwania. Nie można wyszukać bieżący plik otwarty w edytorze, tylko również otwarte dokumenty, całe rozwiązanie, bieżącego projektu i wybrać folder zestawów. Można także przeszukać przez rozszerzenie nazwy pliku. Aby uzyskać dostęp do **Znajdź/Zamień w plikach** okno dialogowe, wybierz opcję **Znajdź i Zamień** na **Edytuj** menu lub naciśnij klawisz **Ctrl + Shift + F**.
+**Znajdź/Zamień w plikach** działa jak **Znajdź i Zamień** kontrolować, z tą różnicą, że można zdefiniować zakres wyszukiwania. Nie tylko można przeszukiwać bieżący plik otwarty w edytorze, ale również wszystkie otwierać dokumenty, całe rozwiązanie, bieżący projekt i wybrane foldery zestawów. Możesz również wyszukiwać według rozszerzenia nazwy pliku. Aby uzyskać dostęp do **Znajdź/Zamień w plikach** okno dialogowe, wybierz opcję **Znajdź i Zamień** na **Edytuj** menu lub naciśnij klawisz **Ctrl + Shift + F**.
 
-![Znajdź w plikach — Okno dialogowe](media/find-in-files-box.png)
+![Znajdź w plikach w programie Visual Studio](media/find-in-files-box.png)
 
-### <a name="find-results"></a>Wyniki Znajdź
+### <a name="find-results"></a>Znajdź wyniki
 
-Po wybraniu **Znajdź wszystkie**, **znaleźć wyników** okno otwiera i lista pasujących do wyszukiwania. Wybieranie wynik na liście Wyświetla plik skojarzony i zaznacza dopasowania. Jeśli plik nie jest już otwarty do edycji, jest otwierany na karcie podglądu po prawej stronie karty oraz. Można użyć **znaleźć** formantu do przeszukiwania **znaleźć wyników** listy.
+Po wybraniu **Znajdź wszystkie**, **Find Results** okna otwiera i wyświetla listę wyników wyszukiwania. Wybranie wyniku na liście Wyświetla skojarzony plik i wyróżnienie dopasowania. Jeśli plik nie jest już otwarty do edycji, jest otwierany w karcie podglądu po prawej stronie na karcie dobrze. Możesz użyć **znaleźć** formantu, aby przeszukiwać **Find Results** listy.
 
-### <a name="create-custom-search-folder-sets"></a>Utwórz zestawy folder wyszukiwania niestandardowego
+### <a name="create-custom-search-folder-sets"></a>Tworzenie zestawów folderu wyszukiwania niestandardowego
 
-Można zdefiniować zakres wyszukiwania, wybierając **wybierz foldery wyszukiwania** przycisk (prawdopodobnie **...** ) obok pozycji **Szukaj w** pole. W **wybierz foldery wyszukiwania** okno dialogowe, można określić zestaw folderów wyszukiwania i można zapisać specyfikację, dzięki czemu można używać go później.
+Można zdefiniować zakres wyszukiwania, wybierając **Choose Search Folders** przycisku (wygląda jak **...** ) obok pozycji **przeszukania** pole. W **Choose Search Folders** okno dialogowe, można określić zbiór folderów wyszukiwania i zapisać specyfikację dzięki czemu użytkownik może użyć go ponownie później.
 
 > [!TIP]
-> Jeśli zamapowany dysk na maszynie zdalnej na komputerze lokalnym, można określić folderów do wyszukiwania na komputerze zdalnym.
+> Jeśli komputer zdalny dysk zamapowany na komputer lokalny, możesz określić folderów do wyszukiwania na komputerze zdalnym.
 
-### <a name="create-custom-component-sets"></a>Tworzenie zestawów niestandardowych składników
+### <a name="create-custom-component-sets"></a>Tworzenie zestawów składników niestandardowych
 
-Ustawia składnika można zdefiniować jako zakres wyszukiwania, wybierając **edytowanie zestawu składnika niestandardowe** znajdujący się obok **Szukaj w** pole. Można określić zainstalowanych .NET lub COM składników, projektów programu Visual Studio, które znajdują się w rozwiązaniu lub żadnej biblioteki zestawu lub typu (*.dll*, *.tlb*, *.olb*, *.exe*, lub *.ocx*). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.
+Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając **Edit Custom Component Set** znajdujący się obok **przeszukania** pole. Można określić zainstalowane składniki .NET lub COM, projekty programu Visual Studio, które znajdują się w rozwiązaniu lub wszystkie zestawy lub typy biblioteki (*.dll*, *.tlb*, *.olb*, *.exe*, lub *.ocx*). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.
+
+## <a name="multi-caret-selection"></a>Wybieranie wielu karetki
+
+**Nowość w programie Visual Studio 2017 w wersji 15.8**
+
+Użyj *zaznaczenie wielu karetki* się tego samego edycji w dwóch lub więcej miejsc, w tym samym czasie. Na przykład można wstawić ten sam tekst lub zmodyfikować istniejący tekst w wielu lokalizacjach, w tym samym czasie.
+
+Poniższy zrzut ekranu `-0000` wybrane w trzech miejscach; gdy użytkownik naciśnie **Usuń**, zostaną usunięte wszystkie trzy opcje:
+
+![Zaznaczenie wielu daszek w pliku XML w programie Visual Studio](media/multi-caret-selection.png)
+
+Aby wybrać wiele daszka, kliknij przycisk lub utworzyć pierwszy wybór tekstu w zwykły sposób, a następnie naciśnij **Alt** podczas kliknij lub wybierz tekst w każdej lokalizacji dodatkowej. Można również automatycznie dodać pasujący tekst jako dodatkowe opcje lub zaznacz pole tekstowe do edycji identycznie w każdym wierszu.
+
+> [!TIP]
+> Jeśli wybrano **Alt** jako klucz modyfikujący kliknięcie myszą, przejdź do definicji w **narzędzia** > **opcje**, wybierz wielu daszka jest wyłączona.
+
+### <a name="commands"></a>Polecenia
+
+Dla zachowania wyboru wielu karetki, należy użyć następujących kluczy i akcji:
+
+|Skrót|Akcja|
+|-|-|
+|**CTRL**+**Alt** + kliknięcie|Dodawanie dodatkowej karetki|
+|**CTRL**+**Alt** i kliknij dwukrotnie ikonę|Dodaj wybrane elementy dodatkowej programu word|
+|**CTRL**+**Alt** kliknij i przeciągnij|Dodaj pomocniczy zaznaczenie|
+|**SHIFT**+**Alt**+**.**|Dodaj następny szukanego tekstu jako zaznaczenia|
+|**CTRL**+**Shift**+**Alt**+**,**|Dodaj wszystkie dopasowania tekstu jako zaznaczenia|
+|**SHIFT**+**Alt**+**,**|Usuń ostatni zaznaczone wystąpienie|
+|**CTRL**+**Shift**+**Alt**+**.**|Pomiń kolejne wystąpienie dopasowania|
+|**ALT** + kliknięcie|Dodaj pole wyboru|
+|**ESC** lub kliknij przycisk|Wyczyść wszystkie zaznaczenia|
+
+Niektóre polecenia są również dostępne na **Edytuj** menu, w obszarze **wielu daszka**:
+
+![Wiele menu wysuwanego daszka w programie Visual Studio](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-- [Zrefaktoryzuj kod w programie Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Refaktoryzacja kodu w programie Visual Studio](../ide/refactoring-in-visual-studio.md)

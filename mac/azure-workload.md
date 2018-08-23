@@ -1,21 +1,21 @@
 ---
 title: Azure
-description: Dodawanie magazynu danych Azure, uwierzytelniania i powiadomień wypychanych do aplikacji mobilnych z poziomu programu Visual Studio dla komputerów Mac
+description: Dodaj magazyn danych na platformie Azure, uwierzytelnianie i powiadomienia wypychane do aplikacji mobilnych z poziomu programu Visual Studio dla komputerów Mac
 ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
-ms.openlocfilehash: 58562fdcb01bf82da49c05a06af1028200c5822e
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a274af35ba8711d783f5bcb2b2aef9c67120e91a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453845"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624014"
 ---
 # <a name="azure"></a>Azure
 
-Visual Studio for Mac umożliwia połączenia z platformą Azure różne sposoby:
+Program Visual Studio for Mac umożliwia łączenie z platformą Azure na różne sposoby:
 
-- [Środowisko Azure Functions](azure-functions.md)
+- [Azure Functions](azure-functions.md)
 - [Publikowanie na platformie Azure](https://blog.xamarin.com/publish-azure-visual-studio-mac/)
 - [Usługi aplikacji mobilnej](connected-services.md)

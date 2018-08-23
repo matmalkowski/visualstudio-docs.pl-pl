@@ -5,71 +5,71 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
-description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji programu Visual Studio dla programu VSTS i na platformie Azure
+description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji programu Visual Studio na potrzeby usługi VSTS i na platformie Azure
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 30aa1e918e289a6cfe8f11329d5df7682cd90239
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326309"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624112"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 
-Podczas aktywowania subskrypcji programu Visual Studio, możemy link tożsamości (lub logowania) używanego podczas aktywacji za pomocą subskrypcji programu Visual Studio. Dzięki temu firma Microsoft może Cię rozpoznać na [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs)w Visual Studio Team Services (VSTS) i na platformie Azure.
+Podczas aktywowania subskrypcji programu Visual Studio, można przejść tożsamości (lub logowania) używanej podczas aktywacji przy użyciu subskrypcji programu Visual Studio. Dzięki temu firma Microsoft może rozpoznawać należy na [portal dla subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs)w Visual Studio Team Services (VSTS) i na platformie Azure.
 
-W VSTS możemy Sprawdź stan subskrypcji programu Visual Studio możesz zalogować się w każdym i poproś o udzielenie funkcji automatycznie w ramach każdego konta, w którym użytkownik jest członkiem.
-Ponieważ te funkcje są dołączone jako korzyści subskrybenta, jest także dodać jako element członkowski dowolnego konta usługi VSTS przy użyciu tożsamości, który jest połączony z subskrypcją programu Visual Studio.
+W usłudze VSTS możemy Sprawdź stan swojej subskrypcji programu Visual Studio, każdym razem, gdy możesz zalogować się i udzielają Ci funkcje automatycznie w ramach każdego konta, w którym użytkownik jest członkiem.
+Ponieważ te funkcje są dołączone jako korzyści dla subskrybentów, jest bezpłatne dodał Cię jako element członkowski w dowolnym koncie usługi VSTS przy użyciu tożsamości, która jest połączona z subskrypcją programu Visual Studio.
 
-Na platformie Azure możemy Sprawdź stan subskrypcji programu Visual Studio podczas aktywowania Twojego [miesięczne środki Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) czyli korzyści subskrybenta.
+Na platformie Azure, możemy sprawdzić stan swojej subskrypcji programu Visual Studio, aktywując swoje [miesięcznych środków platformy Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) oznacza to korzyści dla subskrybentów.
 
-W ramach [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), można dodać **alternatywny tożsamości** — oprócz tożsamości używanej podczas aktywacji. Obecnie możemy umożliwiają dodać tożsamość alternatywnego, jeśli używasz konta Microsoft, aby aktywować subskrypcję. Ten sposób można także dodać służbowego lub konto służbowe (który jest używany podczas logowania do programu Visual Studio, usługi Office 365 lub sieci firmowej firmy lub szkoły), co umożliwia dostęp do programu VSTS, używając konta osobistego i konta firmowego lub szkolnego.
+W ramach [portal dla subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), można dodać **alternatywnej tożsamości** — oprócz tożsamość używana podczas aktywacji. Obecnie firma Microsoft zezwala na dodawanie alternatywnej tożsamości w przypadku korzystania z konta Microsoft do aktywowania subskrypcji. Ten sposób można również dodać pracy konta firmowego lub szkolnego (który jest używany podczas logowania się do programu Visual Studio, usługi Office 365 lub siecią firmową lub szkolnego), umożliwiając dostęp do usługi VSTS przy użyciu konta osobistego i swojego konta firmowego lub szkolnego.
 
-## <a name="add-an-alternate-account-to-your-visual-studio-subscription"></a>Dodawanie alternatywnego konta do subskrypcji programu Visual Studio
+## <a name="add-an-alternate-account-to-your-visual-studio-subscription"></a>Dodaj alternatywne konto do subskrypcji programu Visual Studio
 
-Dodawanie alternatywnego konta do subskrypcji programu Visual Studio pozwala korzystać z zalet subskrypcji, takich jak Visual Studio Team Services (VSTS) i Azure, z inną tożsamość niż ta, która subskrypcja jest przypisana do. W przeszłości ta funkcja była dostępna, tylko wtedy, gdy subskrypcji Visual Studio (VS) została przypisana do konta Microsoft (MSA). Firma Microsoft rozszerzony tę funkcję dla kont służbowych w usłudze Azure Active Directory (Azure AD).
+Dodawanie alternatywnego konta z subskrypcją programu Visual Studio umożliwia dostęp do korzyści z subskrypcji, takich jak Visual Studio Team Services (VSTS) i platformą Azure przy użyciu innej tożsamości niż ta, która jest przypisana subskrypcja. W przeszłości ta funkcja była dostępna, tylko wtedy, gdy Twoja subskrypcja programu Visual Studio (VS) została przypisana do konta Microsoft (MSA). Uzupełniliśmy tę funkcję dla kont służbowych w usłudze Azure Active Directory (Azure AD).
 
-To nie zapewnia kopii subskrypcji na inne konto; tylko zapewnia możliwość dostępu dwie korzyści z konta alternatywne.
+To nie zapewnia kopii subskrypcji na inne konto; zapewnia tylko dwie korzyści z kontem alternatywnych dostęp do usługi.
 
-Dla wszystkich subskrypcji można dodać "konto służbowe", dzięki czemu można użyć tego konta z swoje korzyści, które wymagają logowania (IDE w VS VSTS i Azure).
-
-
-### <a name="add-the-alternate-account"></a>Dodawanie alternatywnego konta
+W przypadku wszystkich subskrypcji można dodać "konto służbowe", aby można było używać tego konta z korzyści, które wymagają logowania (VS IDE, VSTS i platformy Azure).
 
 
-1. Zaloguj się do portalu subskrybent Visual Studio przy użyciu konta Microsoft (https://my.visualstudio.com).
+### <a name="add-the-alternate-account"></a>Dodaj alternatywne konto
+
+
+1. Zaloguj się do portalu subskrybenta programu Visual Studio z Twoim kontem Microsoft (https://my.visualstudio.com).
 
 2. Przejdź do **subskrypcje**.
 
+    > [!div class="mx-imgBorder"]
+    > ![Dodaj alternatywne konto — przejdź do subskrypcji w programie VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
-   ![Dodawanie alternatywnego konta — Przejdź do subskrypcji w wersji programu VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+3. Wybierz **Dodaj alternatywne konto**.
+    > [!div class="mx-imgBorder"]
+    > ![Wybierz opcję Dodaj alternatywne konto ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
-3. Wybierz **Dodawanie alternatywnego konta**.
+4. Dodaj swoje konto służbowe.
+    > [!div class="mx-imgBorder"]
+    > ![Dodaj konto służbowe](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-   ![Wybierz pozycję Dodaj konto alternatywnej ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+5. Użyj swojego konta firmowego lub szkolnego do logowania do programu Visual Studio Team Services (https://{youraccount}.visualstudio.com).
+    > [!div class="mx-imgBorder"]
+    > ![Użyj swojego konta firmowego lub szkolnego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-4. Dodaj konto służbowe.
-
-   ![Dodaj konto służbowe](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
-
-5. Logować się do programu Visual Studio Team Services (https://{youraccount}.visualstudio.com), należy użyć konta firmowego lub szkolnego.
-
-   ![Użyj konta służbowego](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
-
-Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości mogą korzystać z zalet subskrypcji wymagające Zaloguj się przy użyciu alternatywnego konta (IDE programu VSTS i Azure).
+Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dzięki czemu zarówno tożsamości korzystanie z zalet subskrypcji, które wymagają Zaloguj się przy użyciu alternatywnego konta (IDE, VSTS i platformy Azure).
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
-### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>Pytanie: Dlaczego nie VSTS rozpoznaje mnie jako subskrybent Visual Studio?
+### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>P: Dlaczego nie VSTS rozpoznaje mnie jako subskrybent programu Visual Studio?
 
-A: VSTS powinien automatycznie rozpoznać subskrypcji podczas logowania przy użyciu tożsamości głównego lub alternatywnego. Jeśli nie, możesz spróbować kilka rzeczy:
+Odp.: Usługa VSTS powinien rozpoznaje automatycznie subskrypcji Zaloguj się przy użyciu Twojej tożsamości podstawowej lub alternatywnej. W przeciwnym razie możesz wypróbować kilka rzeczy:
 
-* Sprawdź, czy masz aktywnych subskrypcji programu Visual Studio który [obejmuje VSTS jako świadczenie](vs-vsts.md).
+* Sprawdź, czy aktywną subskrypcję programu Visual Studio, [obejmuje usługę VSTS jako korzyść](vs-vsts.md).
 
-* Upewnij się, że używasz logowania/tożsamości, która jest albo tożsamości głównego lub alternatywnego dla Twojej subskrypcji programu Visual Studio.
+* Upewnij się, że używasz logowania/tożsamość, która może być podstawowy lub alternatywnej tożsamości dla Twojej subskrypcji programu Visual Studio.
 
-* Odwiedź stronę [portal subskrybenta programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) co najmniej raz przed logowania do usługi VSTS.
+* Odwiedź stronę [portal dla subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) co najmniej raz przed logujesz się do usługi VSTS.
 
-Jeśli nadal VSTS nie rozpoznaje subskrypcji, [się z pomocą techniczną](https://visualstudio.microsoft.com/team-services/support/)
+Jeśli nadal usługi VSTS nie rozpoznaje subskrypcji [się z pomocą techniczną](https://visualstudio.microsoft.com/team-services/support/)

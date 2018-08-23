@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512564"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624388"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem
 
-W tym przewodniku Szybki Start 5 – 10 minut możemy dostosować motyw kolorów programu Visual Studio i dwóch kolorów tekstu w edytorze tekstów.
+W tym przewodniku Szybki Start 5 – 10 minut firma Microsoft będzie dostosować motyw kolorów programu Visual Studio, wybierając ciemnego motywu. Firma Microsoft będzie również dostosować kolory dla dwóch różnych typów tekstu w edytorze tekstów.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -97,19 +97,7 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Najpi
 
 Rozważyliśmy dostosowywanie kolorów w programie Visual Studio na kilka sposobów. Mamy nadzieję, że dowiesz się o innych opcji dostosowywania w **opcje** okno dialogowe, aby naprawdę dostosować Visual Studio do własnych potrzeb.
 
-## <a name="next-steps"></a>Następne kroki
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Zobacz także
 
-- [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Dopasowywanie edytora](../ide/customizing-the-editor.md)
 - [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

@@ -1,48 +1,48 @@
 ---
-title: Korzyści między Azure
+title: Korzyści z platformy Azure PAYG
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: Dowiedz się, jak skonfigurować konto Azure płatność za rzeczywiste użycie.
+description: Dowiedz się, jak skonfigurować konto usługi Azure rozliczana według bieżącego użycia.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14e9e13a57ffd5e67eba00f34b661e48410c517a
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31195325"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624307"
 ---
-# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Trwa konfigurowanie subskrypcji platformy Azure i testowania płatność za rzeczywiste użycie
-Współpraca z zespołem w chmurze.  Utwórz subskrypcje wielu deweloperów i płatność za rzeczywiste użycie testu Umożliwianie współpracy z innymi subskrybentami jednocześnie zapewnia izolację między zespołami i środowiskach.  Otrzymasz wyłącznego rabaty co godzinę do programowania i testowania i w chmurze prawa do używania oprogramowania subskrypcji na platformie Azure.
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Konfigurowanie subskrypcji usługi Azure Dev/Test płatność za rzeczywiste użycie
+Współpracuj ze swoim zespołem w chmurze.  Utwórz wiele dewelopersko-testowego płatność za rzeczywiste użycie subskrypcje, umożliwiając współpracę z innymi subskrybentami, a jednocześnie zapewniając izolację między zespołami i środowiskami.  Odbieranie wyłączne stawki godzinowe z rabatem na programowanie/testowanie i prawa do używania w chmurze dla subskrypcją oprogramowanie na platformie Azure.
 
-1.  Aby użyć korzyści subskrypcji Azure płatność za rzeczywiste użycie, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i wybierz polecenie **Aktywuj** łącze w dolnej części fragmentu korzyści.   
+1.  Aby użyć korzyści z subskrypcji Azure rozliczana według bieżącego użycia, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.   
+    > [!div class="mx-imgBorder"]
+    > ![Kafelek PAYG platformy Azure](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 
-    ![Kafelek między Azure](_img\vs-azure-payg\vs-azure-payg-tile.png) 
+2.  Jeśli już aktywowano konta platformy Azure w ramach korzyści z subskrypcji (na przykład, jeśli masz subskrypcję przedsiębiorstwa i aktywować 150 USD miesięczne środki platformy Azure), przejdź do kroku 5.
 
-2.  Jeśli już aktywowano konta platformy Azure jako część korzyści z subskrypcji (na przykład, jeśli masz subskrypcję korporacyjną i aktywowana Twój miesięczny kredyt Azure 150 USD), przejdź do kroku 5.
+3.  Na stronie rejestracji Azure firmy Microsoft o stronę w górę będziesz mieć możliwość konfigurowania ofertę płatność za rzeczywiste użycie, tworzenie i testowanie (PAYG) albo uaktualnienie do oferty programu Visual Studio Enterprise.  Kliknij przycisk **kontynuować bieżącą ofertę (płatność za rzeczywiste użycie, tworzenie i testowanie)** Jeśli nie chcesz go uaktualnić. 
+    > [!div class="mx-imgBorder"]
+    > ![Rejestracja PAYG platformy Azure](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
 
-3.  W Microsoft Azure stronę tworzenia konta będziesz mieć możliwość konfigurowania oferta płatność za rzeczywiste użycie: tworzenie i testowanie (między) albo uaktualnienie do oferty Visual Studio Enterprise.  Kliknij przycisk **kontynuować bieżącą ofertę (płatność za rzeczywiste użycie tworzenie/testowanie oprogramowania)** Jeśli nie chcesz, aby uaktualnić. 
-
-    ![Tworzenie konta Azure między](_img\vs-azure-payg\vs-azure-payg-signup-cropped.png) 
-
-4.  Aby zweryfikować swoją tożsamość, wprowadź numer telefonu i wybierz polecenie "Wyślij wiadomość SMS" lub "Zadzwoń do mnie".  Wprowadź otrzymany kod.  Kliknij przycisk **Sprawdź kod**. 
-
-    ![Tworzenie konta Azure między](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
+4.  Aby zweryfikować swoją tożsamość, wprowadź numer telefonu, a następnie wybierz polecenie "Wyślij wiadomość SMS" lub "Zadzwoń do mnie".  Wprowadź otrzymany kod.  Kliknij przycisk **zweryfikować kodu**. 
+    > [!div class="mx-imgBorder"]
+    > ![Rejestracja PAYG platformy Azure](_img\vs-azure-payg\vs-azure-payg-identity-cropped.png) 
 
 
-5.  Następnie podaj informacji dotyczących rozliczeń dla swojego konta i kliknij przycisk **dalej**.  (Są to karty kredytowej, które są naliczane opłaty za swoje zakupy platformy Azure.)  
-
-    ![Azure między płatności](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
+5.  Następnie podaj informacje rozliczeniowe dla swojego konta i kliknij przycisk **dalej**.  (Są to karty kredytowej, która jest rozliczana za wszystkie swoje zakupy w portalu Azure.)  
+    > [!div class="mx-imgBorder"]
+    > ![Płatność PAYG platformy Azure](_img\vs-azure-payg\vs-azure-payg-payment-cropped.png) 
         
 
 6.  W sekcji umowę, kliknij pole wyboru, aby zaakceptować umowę subskrypcji, zapewniają szczegółowe informacje i zasady zachowania poufności informacji, a następnie kliknij **zakupu**. 
 
-7.  Na **Microsoft Azure — Zapraszamy** strony będziesz mieć możliwość kupić plan pomocy technicznej lub rozpocząć korzystanie z subskrypcji.   
+7.  Na **Microsoft Azure — Zapraszamy** strony, będziesz mieć opcję, aby kupić plan pomocy technicznej lub rozpocząć pracę, przy użyciu posiadanej subskrypcji.   
 
-8.  Jeśli chcesz rozpocząć korzystanie z subskrypcji, zobaczysz [portalu Microsoft Azure](https://portal.azure.com) i, jeśli jest Twoja pierwsza wizyta, użytkownik będzie oferowane szybki przegląd funkcji.  Po zostały ukończone lub zrezygnował samouczek, zostanie wyświetlony pulpit nawigacyjny.  Możesz rozpocząć korzystanie z platformy Azure!
-  
-    ![Pulpit nawigacyjny między Azure](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 
+8.  Jeśli chcesz rozpocząć korzystanie z subskrypcji, zostaną wyświetlone [portalu Microsoft Azure](https://portal.azure.com) i, jeśli jest to Twoja pierwsza wizyta, użytkownik będzie oferowana szybki przegląd niektórych funkcji.  Po zostało ukończone lub wybrana opcja rezygnacji z samouczka, zostanie wyświetlony pulpit nawigacyjny.  Możesz już rozpocząć korzystanie z platformy Azure!
+    > [!div class="mx-imgBorder"]  
+    > ![Pulpit nawigacyjny PAYG platformy Azure](_img\vs-azure-payg\vs-azure-payg-dashboard-cropped.png) 

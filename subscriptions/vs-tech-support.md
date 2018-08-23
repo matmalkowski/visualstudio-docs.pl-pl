@@ -1,102 +1,106 @@
 ---
-title: Świadczenia pomocy technicznej
+title: Korzyści z pomocy technicznej
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: Dowiedz się, jak aktywować korzyści technicznej uwzględnionych w subskrypcji programu Visual Studio.
+description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326957"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624098"
 ---
-# <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj świadczenia pomocy technicznej w ramach subskrypcji programu Visual Studio
+# <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
-Rozwiąż problemy naprawa w razie awarii w środowiskach nieprodukcyjnych. (Musi być aktywowany korzyści, aby móc przesłać żądanie obsługi.) Visual Studio Enterprise chmury standardowe i roczne subskrypcje otrzymają cztery zdarzenia w czasie subskrypcje w chmurze standard i roczne Visual Studio Professional odbierania dwa zdarzenia.
+Rozwiązywanie problemów wymagających usunięcia awarii w środowiskach nieprodukcyjnych. (Korzyści należy aktywować przed przesłaniem żądania pomocy technicznej.) Subskrypcje standardowe i roczne chmury programu Visual Studio Enterprise otrzymają cztery zdarzenia w czasie subskrypcje standardowe i roczne chmury programu Visual Studio Professional otrzymają dwóch zdarzeń.
 
    > [!NOTE]
-   > Nie wszystkie subskrypcje na danym poziomie mogą otrzymywać zdarzeń pomocy technicznej. Subskrypcje zakupione w ramach ekwiwalentu pełnego wymiaru czasu, niego, MPN, MCT i innych programów obsługi zdarzeń nie jest wyświetlany. Jeśli Twoja subskrypcja nie jest przysługiwać zdarzenia pomocy technicznej, na kafelku pomoc techniczna nie będą widoczne w swoje korzyści dostępne.
+   > Nie wszystkie subskrypcje na danym poziomie kwalifikujesz się do otrzymania żądania pomocy technicznej. Subskrypcje, które zakupione w ramach ekwiwalentu pełnego wymiaru czasu, NFR, MPN, MCT i inne programy nie odbierają zdarzenia pomocy technicznej. Jeśli Twoja subskrypcja nie jest prawo do otrzymania pomocy technicznej, Kafelek pomocy technicznej nie pojawi się w Twoich korzyściach dostępnych.
 
-   ![Kafelek świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-tile.png)
+> [!div class="mx-imgBorder"]
+> ![Kafelek korzyści z pomocy technicznej](_img\vs-tech-support\vs-tech-support-tile.png)
 
 
-1.  Aby rozpocząć korzystanie z świadczenia pomocy technicznej, kliknij **rozmowy, aby aktywować** na kafelku pomocy technicznej. 
-2.  Spowoduje to Zainicjowanie sesji rozmów z przedstawicielem, który można utworzyć swoją nazwę kontraktu i identyfikator dostępu i tych, które należy podać. 
-3.  Aby ukończyć proces, należy podać przedstawiciela z:
-    - Adres e-mail używanego do logowania się do subskrypcji
-    - Identyfikator subskrypcji, który znajduje się na [subskrypcje](https://my.visualstudio.com/subscriptions) kartę.
-
-    ![Identyfikator subskrypcji znaleźć świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+1.  Aby rozpocząć korzystanie z korzyści z pomocy technicznej, kliknij **rozmowy, aby aktywować** na kafelku pomocy technicznej. 
+2.  Spowoduje to Zainicjowanie sesji rozmowy z przedstawicielem, który można utworzyć swój identyfikator umowy i identyfikator dostępu i tych, które należy podać. 
+3.  Aby ukończyć proces, należy zapewnić przedstawiciel za pomocą:
+    - Adres e-mail, którego używasz do logowania się do subskrypcji
+    - Identyfikator subskrypcji, w której znajduje się na [subskrypcje](https://my.visualstudio.com/subscriptions) kartę.
+    > [!div class="mx-imgBorder"]
+    > ![Identyfikator subskrypcji znajduje się korzyści z pomocy technicznej](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
     > [!NOTE]
-    > Aby aktywować konto pomocy technicznej w innym języku niż angielski, wybierz swój kraj z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
+    > Aby aktywować swoje konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj, z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
-## <a name="how-to-submit-an-incident"></a>Jak przesłać zdarzenia
+## <a name="how-to-submit-an-incident"></a>Jak przesłać żądanie
 
-Po ma identyfikator umowy oraz skonfigurować identyfikator dostępu, gdy będziesz potrzebować pomocy technicznej numer pomocy technicznej dla kraju, przesłać zdarzenia pomocy technicznej [online](http://support.microsoft.com/oas/), lub przesłać zdarzenia za pośrednictwem portalu Azure. Jeśli chcesz użyć uzyskać pomoc przez telefon, nadal można przesłać zdarzenia w trybie online i specjalistą pomocy technicznej firmy Microsoft spowoduje wywołanie zwrotne.
+Po użytkownik ma identyfikator umowy i identyfikator dostępu, konfigurowanie, gdy będziesz potrzebować pomocy technicznej numer pomocy technicznej dla Twojego kraju, Prześlij żądanie pomocy technicznej [online](http://support.microsoft.com/oas/), lub przesłać żądanie w witrynie Azure portal. Jeśli chcesz użyć do otrzymania pomocy technicznej przez telefon, nadal możesz przesłać zdarzenie w trybie online i pracownikiem pomocy technicznej firmy Microsoft będzie wywołanie zwrotne.
 
-### <a name="submit-an-incident-online"></a>Zgłaszać problemy
+### <a name="submit-an-incident-online"></a>Prześlij zdarzenie online
 
-1.  Aby [zgłaszać problemy](http://support.microsoft.com/oas/), określ potrzebujesz pomocy związanej z produktu. Możesz wybrać z listy różnych lub Wyszukaj według nazwy. Aby przesłać zdarzenia dla programu Visual Studio Enterprise 2017, na przykład polecenie **programu Visual Studio** w **Developer Tools** grupy.
-    ![Zdarzenia produktu wybierz pozycję świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-select-product.png)
+1.  Aby [przesłać online](http://support.microsoft.com/oas/), określ produkt, mamy Ci pomóc. Możesz wybierać poszczególne listy lub Wyszukaj według nazwy. Aby przesłać żądanie dla Visual Studio Enterprise 2017, na przykład kliknąć **programu Visual Studio** w **narzędzi deweloperskich** grupy.
+    > [!div class="mx-imgBorder"]    
+    > ![Korzyści z pomocy technicznej wybierz produkt zdarzenia](_img\vs-tech-support\vs-tech-support-select-product.png)
 
-2.  Wybierz produkt, dla których potrzebujesz pomocy technicznej. (Na przykład kliknięcie **programu Visual Studio Enterprise 2017** na liście produktów Visual Studio.)
-3.  Na **utworzenia zdarzenia** wybierz z listy rozwijanej Typ dotyczy problem. W naszym przykładzie wybrano **zintegrowane środowisko rozwoju (IDE)**.
-    ![Korzyści technicznej Tworzenie zdarzenia](_img\vs-tech-support\vs-tech-support-create-incident.png)
+2.  Wybierz produkt, dla których potrzebujesz pomocy technicznej. (Na przykład kliknąć **Visual Studio Enterprise 2017** na liście produktów Visual Studio.)
+3.  Na **utworzenia zdarzenia** wybierz typ problemu dotyczy z listy rozwijanej. W tym przykładzie Wybraliśmy **rozwoju środowiska IDE (Integrated)**.
+    > [!div class="mx-imgBorder"]    
+    > ![Korzyści z pomocy technicznej Utwórz zdarzenie](_img\vs-tech-support\vs-tech-support-create-incident.png)
 
-4.  Następnie wybierz pozycję **kategorii** najlepiej pytanie/problem. W naszym przykładzie wybrano **narzędzi projektowania.**
+4.  Następnie wybierz **kategorii** który najlepiej spełnia Twoje pytanie/problem. W tym przykładzie Wybraliśmy **architektury narzędzia.**
 5.  Kliknij przycisk **żądanie uruchomienia**.
 6.  Na następnej stronie zostanie wyświetlony monit o wybranie opcji płatności.
-    - Wybierz **Użyj mojej subskrypcji programu Visual Studio**.
-    - Kliknij przycisk **Użyj innej umowy**
-    - Wprowadź identyfikator i identyfikator umowy dostęp
+    - Wybierz **użyć subskrypcji programu Visual Studio**.
+    - Kliknij przycisk **użyć innej umowy**
+    - Wprowadź identyfikator i identyfikator umowy dostępu
     - Kliknij przycisk **Dodaj**
-7.  Po dodaniu umowy pomocy technicznej, pojawi się na liście kontraktów obsługuje Professional. Wybierz go, a następnie kliknij przycisk **Kontynuuj**.
-     ![Płatności świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-payment.png)
+7.  Po dodaniu umowę na pomoc techniczną, pojawi się na liście umowy pomocy technicznej Professional. Wybierz go, a następnie kliknij przycisk **Kontynuuj**.
+    > [!div class="mx-imgBorder"]     
+    > ![Płatność korzyści z pomocy technicznej](_img\vs-tech-support\vs-tech-support-payment.png)
 
-8.  Podaj informacje kontaktowe, a preferowaną metodę kontaktu, a następnie kliknij przycisk **Kontynuuj**.
-9.  Podaj tytuł zdarzenie pomocy technicznej, a następnie opisz swój problem.
-10. Odpowiedz na krótki serię pytań ustalenie ważność problemu.
-11. Kliknij pole wyboru, aby zaakceptować warunki użytkowania.
-12. Kliknij przycisk **przesyłania** przesłać problemu.
-13. Pojawi się potwierdzenie, że zdarzenie zostało pomyślnie przesłane. Agent zostanie przypisana do zdarzenie i będzie dotrzeć do Ciebie go rozwiązać przy użyciu metody kontaktu wybranej. Czas odpowiedzi dla problemów niekrytycznych wynosi 8 godzin. Podaj numer żądania usługi i będzie działać z Tobą w celu rozwiązania problemu.
+8.  Podaj informacje kontaktowe i preferowaną metodę kontaktu, a następnie kliknij przycisk **Kontynuuj**.
+9.  Podaj tytuł zdarzenia pomocy technicznej, a następnie opisz swój problem.
+10. Odpowiedz na krótki serię pytań, aby określić ważność problemu.
+11. Kliknij pole wyboru, aby zaakceptować warunki użytkowania usługi.
+12. Kliknij przycisk **przesyłania** przesłać swój problem.
+13. Zostaną wyświetlone potwierdzenie, że zdarzenie zostało pomyślnie przesłane. Agent zostanie przypisany do zdarzenia i skontaktuje się z Tobą w celu rozwiązania za pomocą metody kontaktu wybranej. Czas odpowiedzi dla problemów niekrytycznych wynosi 8 godzin. Podaj numer żądania usługi i będzie działać z Tobą w celu rozwiązania problemu.
 
-### <a name="submit-an-incident-by-phone"></a>Przedstawia zdarzenia przez telefon
+### <a name="submit-an-incident-by-phone"></a>Przesłania żądania przez telefon
 
-Jeśli chcesz utworzyć zdarzenie pomocy technicznej przez telefon, zlokalizuj [obsługi klienta](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) numer telefonu dla danego kraju.
+Jeśli chcesz utworzyć zdarzenie pomocy technicznej przez telefon, zlokalizuj [działem obsługi klienta](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) numer telefonu dla Twojego kraju.
 
-Należy upewnić się, że Twój identyfikator umowy i identyfikator dostępu dostępne po wywołaniu.
+Upewnij się, że masz swój identyfikator umowy i identyfikator dostępu jest dostępna po wywołaniu.
 
-### <a name="submit-an-incident-within-the-azure-portal"></a>Przedstawia zdarzenia w portalu Azure
+### <a name="submit-an-incident-within-the-azure-portal"></a>Przesłać żądanie w witrynie Azure portal
 
-Aby użyć programu Visual Studio korzyści z subskrypcji pomocy technicznej dla problemów odnoszących się do platformy Azure, należy połączyć identyfikator umowy z identyfikator dostępu do subskrypcji platformy Azure.
+Aby użyć swojej korzyści z pomocy technicznej subskrypcji programu Visual Studio zagadnienia odnoszące się do platformy Azure, należy połączyć swój identyfikator umowy i identyfikator dostępu do subskrypcji platformy Azure.
 
 1.  Odwiedź stronę https://portal.azure.com i zaloguj się
-2.  W obszarze nawigacji po lewej stronie kliknij "Pomoc + Obsługa"
-3.  W obszarze "Obsługa" kliknij przycisk "Łącza pomocy technicznej kontraktu"
-4.  Wprowadź Podaj "Identyfikator dostępu" i "Identyfikator zamówienia" podany w #1 powyżej.
+2.  Z okienka nawigacji po lewej stronie kliknij przycisk "Pomoc + obsługa techniczna"
+3.  W obszarze "Support" kliknij przycisk "Połącz umowę pomocy technicznej"
+4.  Wprowadź Podaj "Identyfikator dostępu" i "Identyfikator umowy" podany w #1 powyżej.
 
-Po wykonaniu tych czynności będzie można wybrać planu pomocy technicznej skojarzone z korzyści z subskrypcji dla programu Visual Studio.  (Nazwa planu może zawierać "MSDN").
+Po wykonaniu tych czynności będzie można wybrać plan pomocy technicznej, skojarzone z korzyści z subskrypcji programu Visual Studio.  (Nazwa planu może zawierać "MSDN").
 
-## <a name="eligibility"></a>Kwalifikujących się usług
+## <a name="eligibility"></a>Uprawnienie
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | 4 zdarzeń       |  Tak|
-| Program Visual Studio Professional (standardowy, roczne w chmurze) | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
-| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | zdarzenia 2                                             |  Tak         |
-| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | zdarzenia 2                                               | Tak         |
-| Visual Studio Dev Essentials | NA | Niedostępne |NA|
-| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | 4 zdarzenia       |  Tak|
+| Program Visual Studio Professional (standardowy, roczna w chmurze) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>2</sup>                                        | zdarzenia 2                                                          |Tak         |
+| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                             |  Tak         |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | zdarzenia 2                                               | Tak         |
+| Visual Studio Dev Essentials | NAZWA | Niedostępne |NAZWA|
+| Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup> *obejmuje: Wyobraź sobie Premium. Wyklucza: Nie do sprzedaży (niego), programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy Standard, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), MCT oprogramowania i usług.*
+<sup>1</sup> *obejmuje: Imagine Premium. Nie obejmuje: Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine Standard, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
 
-<sup>2</sup> *obejmuje: Wyobraź sobie Standard.*
+<sup>2</sup> *obejmuje: Imagine Standard.*

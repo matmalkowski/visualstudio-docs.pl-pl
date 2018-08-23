@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Debugowanie aplikacji programu SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,32 +19,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120591"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624451"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Wskazówki: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace
 
-Przy użyciu funkcji IntelliTrace, można łatwiej debugowanie rozwiązań SharePoint. Tradycyjny debugery umożliwiają tylko migawki rozwiązania w danym momencie. Jednak można użyć funkcji IntelliTrace do przeglądania zdarzeń przeszłych, które wystąpiły w rozwiązaniu i kontekst, w którym wystąpił i przejdź do kodu.
+Za pomocą funkcji IntelliTrace, można łatwiej debugować rozwiązania programu SharePoint. Tradycyjne debugery zapewniają tylko migawki rozwiązania w danym momencie. Jednak można użyć IntelliTrace Aby przejrzeć przeszłych zdarzeń, które wystąpiły w swoim rozwiązaniu i kontekst, w którym wystąpił i przejść do kodu.
 
- W tym przewodniku pokazano, jak debugowania programu SharePoint 2010 lub SharePoint 2013 projektu programu Visual Studio przy użyciu programu Microsoft Monitoring Agent zbierania danych funkcji IntelliTrace z wdrożone aplikacje. Aby analizować te dane, należy użyć programu Visual Studio Enterprise. Ten projekt zawiera Odbiorca funkcji, które po aktywowaniu funkcji dodaje zadania do listy zadań i powiadomienia na liście anonsów. Gdy funkcja jest dezaktywowana, zadanie zostanie oznaczone jako wykonane, a drugi anonsu zostanie dodany do listy anonsów. Jednak procedura zawiera logiczny błąd, który uniemożliwia uruchomiony prawidłowo projektu. Przy użyciu funkcji IntelliTrace, należy znaleźć i popraw błąd.
+ W tym przewodniku pokazano, jak debugowanie projektu programu SharePoint 2010 lub SharePoint 2013 w programie Visual Studio przy użyciu programu Microsoft Monitoring Agent do gromadzenia danych IntelliTrace z wdrożonych aplikacji. Aby analizować te dane, należy użyć programu Visual Studio Enterprise. Ten projekt zawiera odbiorcę funkcji, gdy funkcja jest aktywowana, dodaje zadanie do listy zadań i powiadomienia na liście anonsów. Gdy ta funkcja jest aktywna, zadanie jest oznaczone jako ukończone, a drugi ogłoszenie zostanie dodany do listy anonsów. Jednak procedura zawiera logiczny błąd, który uniemożliwia poprawne działanie projektu. Za pomocą funkcji IntelliTrace, możesz znaleźć i popraw błąd.
 
- **Dotyczy:** informacje przedstawione w tym temacie dotyczą rozwiązań programu SharePoint 2010 oraz SharePoint 2013, które zostały utworzone w programie Visual Studio.
+ **Dotyczy:** informacje przedstawione w tym temacie mają zastosowanie do rozwiązania programu SharePoint 2010 i SharePoint 2013, które zostały utworzone w programie Visual Studio.
 
  W instruktażu przedstawiono następujące zagadnienia:
 
-- [Tworzenie odbiornika funkcji](#BKMK_CreateReceiver)
+- [Utwórz odbiorcę funkcji](#BKMK_CreateReceiver)
 
-- [Dodaj kod, aby odbiorca funkcji](#BKMK_AddCode)
+- [Dodaj kod do odbiorcy funkcji](#BKMK_AddCode)
 
 - [Projekt testowy](#BKMK_Test1)
 
-- [Gromadzenie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Zbieranie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
 
-- [Debugowanie i Usuń rozwiązania SharePoint](#BKMK_DebugSolution)
+- [Debugowanie i naprawa rozwiązania SharePoint](#BKMK_DebugSolution)
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -52,33 +52,33 @@ Przy użyciu funkcji IntelliTrace, można łatwiej debugowanie rozwiązań Share
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane wersje systemu Windows i programu SharePoint. Zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Windows i programu SharePoint.
 
 - Visual Studio Enterprise.
 
-## <a name="create-a-feature-receiver"></a>Tworzenie odbiornika funkcji
+## <a name="create-a-feature-receiver"></a>Utwórz odbiorcę funkcji
 
-Najpierw należy utworzyć pusty projekt SharePoint ma odbiorca funkcji.
+Najpierw należy utworzyć pusty projekt programu SharePoint, która ma odbiorcy funkcji.
 
 1. Utwórz projekt rozwiązania programu SharePoint 2010 lub SharePoint 2013 i nadaj mu nazwę **IntelliTraceTest**.
 
-     **Kreator dostosowania programu SharePoint** pojawia się, w którym można określić witrynę programu SharePoint dla projektu i poziom zaufania rozwiązania.
+     **Kreator ustawień niestandardowych SharePoint** pojawi się, w którym można określić witrynę programu SharePoint dla projektu i poziomu zaufania rozwiązania.
 
-2. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisku.
+2. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisku.
 
-     IntelliTrace działa tylko z rozwiązaniami farmy.
+     IntelliTrace działa tylko w rozwiązaniach farmy.
 
-3. W **Eksploratora rozwiązań**, otwórz menu skrótów **funkcji** węzła, a następnie wybierz pozycję **funkcji Dodaj**.
+3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji** węzła, a następnie wybierz **Dodaj funkcję**.
 
-     *Feature1.Feature* pojawi się.
+     *Feature1.Feature* pojawia się.
 
-4. Otwórz menu skrótów dla Feature1.feature, a następnie wybierz pozycję **dodać odbiorcy zdarzeń** można dodać modułu kodu funkcji.
+4. Otwórz menu skrótów dla Feature1.feature, a następnie wybierz **Dodaj odbiorcę zdarzeń** można dodać modułu kodu funkcji.
 
-## <a name="add-code-to-the-feature-receiver"></a>Dodaj kod, aby odbiorca funkcji
+## <a name="add-code-to-the-feature-receiver"></a>Dodaj kod do odbiorcy funkcji
 
-Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `FeatureDeactivating`. Te metody wyzwolenia zawsze, gdy funkcja jest aktywowany lub dezaktywowany w programie SharePoint, odpowiednio.
+Następnie dodaj kod, aby dwie metody w odbiorcy funkcji: `FeatureActivated` i `FeatureDeactivating`. Te metody wyzwalanie zawsze wtedy, gdy funkcja jest aktywowane lub dezaktywowane w programie SharePoint, odpowiednio.
 
-1. W górnej części `Feature1EventReceiver` klasy, Dodaj następujący kod, który deklaruje zmienne, które Określ witrynę programu SharePoint i podwitryny:
+1. W górnej części `Feature1EventReceiver` klasy, Dodaj następujący kod, który deklaruje zmienne, które określają podwitryny i witryny programu SharePoint:
 
     ```vb
     ' SharePoint site and subsite.
@@ -92,7 +92,7 @@ Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `
     private string webUrl = "/";
     ```
 
-2. Zastąp `FeatureActivated` metodę z następującym kodem:
+2. Zastąp `FeatureActivated` metoda następującym kodem:
 
     ```vb
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
@@ -158,7 +158,7 @@ Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `
     }
     ```
 
-3. Zastąp `FeatureDeactivating` metodę z następującym kodem:
+3. Zastąp `FeatureDeactivating` metoda następującym kodem:
 
     ```vb
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)
@@ -250,22 +250,22 @@ Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `
 
 ## <a name="test-the-project"></a>Projekt testowy
 
-Kod zostanie dodany do Odbiorca funkcji i modułów zbierających dane jest uruchomiona, wdrażanie i uruchamianie rozwiązania programu SharePoint, aby sprawdzić, czy działa on prawidłowo.
+Teraz, gdy kod jest dodawany do odbiorcy funkcji i modułów zbierających dane jest uruchomiona, wdrażanie i uruchamianie rozwiązania programu SharePoint, aby sprawdzić, czy działa on prawidłowo.
 
 > [!IMPORTANT]
-> Na przykład w obsłudze zdarzeń FeatureDeactivating, jest zgłaszany błąd. W dalszej części tego przewodnika możesz znaleźć tego błędu przy użyciu pliku .iTrace, który utworzył modułów zbierających dane.
+> W tym przykładzie FeatureDeactivating programu obsługi zdarzeń, jest zgłaszany błąd. W dalszej części tego przewodnika możesz znaleźć tego błędu przy użyciu pliku .iTrace, który utworzył modułów zbierających dane.
 
 1. Wdrażanie rozwiązania do programu SharePoint, a następnie otwórz witrynę programu SharePoint w przeglądarce.
 
-     Funkcja automatycznie aktywuje, powoduje jej odbiorca funkcji dodać powiadomienia i zadania.
+     Ta funkcja automatycznie aktywuje, co powoduje jego odbiorcy funkcji dodać zawiadomienia i zadania.
 
 2. Wyświetl zawartość list anonsów i zadania.
 
-     Lista anonsów powinny mieć nowy anons o nazwie **funkcji aktywnego: IntelliTraceTest_Feature1**, oraz listy zadań powinno mieć nowe zadanie o nazwie **funkcji Dezaktywuj: IntelliTraceTest_ Feature1**. Jeśli brakuje jednej z tych elementów, sprawdź, czy funkcja jest aktywna. Jeśli go nie została aktywowana, Aktywuj ją.
+     Lista anonsów powinny mieć nowy anons, który nosi nazwę **funkcji aktywowano: IntelliTraceTest_Feature1**, i na liście zadania powinny mieć nowe zadanie, który nosi nazwę **funkcji Dezaktywuj: IntelliTraceTest_ Feature1**. Jeśli brakuje jednej z tych elementów, sprawdź, czy funkcja jest aktywowana. Jeśli go nie została aktywowana, aktywuj go.
 
 3. Dezaktywuj tę funkcję, wykonując następujące czynności:
 
-    1. Na **Akcje witryny** menu w programie SharePoint, wybierz **ustawienia lokacji**.
+    1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
 
     2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
 
@@ -275,18 +275,18 @@ Kod zostanie dodany do Odbiorca funkcji i modułów zbierających dane jest uruc
 
      Program obsługi zdarzeń FeatureDeactivating() zgłasza błąd.
 
-## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Gromadzenie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent
+## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Zbieranie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent
 
-Po zainstalowaniu programu Microsoft Monitoring Agent na komputerze z programem SharePoint, rozwiązań programu SharePoint można debugować przy użyciu danych, które jest bardziej szczegółowy niż ogólne informacje, które zwraca IntelliTrace. Agent działa poza Visual Studio przy użyciu poleceń cmdlet programu PowerShell do przechwycenia informacji o debugowaniu podczas sekwencji rozwiązania programu SharePoint.
+Jeśli zainstalujesz program Microsoft Monitoring Agent w systemie, na którym uruchomiony jest SharePoint można debugować rozwiązania programu SharePoint przy użyciu danych, które są bardziej szczegółowe niż ogólne informacje, które zwraca IntelliTrace. Agent działa poza programem Visual Studio przy użyciu poleceń cmdlet programu PowerShell do przechwytywania informacji debugowania podczas przebiegów rozwiązania programu SharePoint.
 
 > [!NOTE]
 > Informacje o konfiguracji w tej sekcji są specyficzne dla tego przykładu. Aby uzyskać więcej informacji na temat innych opcji konfiguracji, zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
 
-1. Na komputerze z programem SharePoint [skonfigurować programu Microsoft Monitoring Agent i rozpocząć monitorowanie rozwiązania](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. Na komputerze, na którym działa program SharePoint [skonfigurować program Microsoft Monitoring Agent i rozpocząć monitorowanie rozwiązania](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
 
 2. Dezaktywowanie funkcji:
 
-    1. Na **Akcje witryny** menu w programie SharePoint, wybierz **ustawienia lokacji**.
+    1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
 
     2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
 
@@ -294,33 +294,33 @@ Po zainstalowaniu programu Microsoft Monitoring Agent na komputerze z programem 
 
     4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
 
-     (W tym przypadku z powodu błędu zgłoszony w obsłudze zdarzeń FeatureDeactivating()), wystąpi błąd.
+     (W tym przypadku ze względu na zgłoszony błąd w obsłudze zdarzeń FeatureDeactivating()), wystąpi błąd.
 
-3. W oknie programu PowerShell, uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć plik .iTrace, zatrzymać monitorowanie i uruchom ponownie rozwiązanie programu SharePoint.
+3. W oknie programu PowerShell, uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć plik .iTrace, Zatrzymaj monitorowanie i ponownie uruchom swoje rozwiązanie programu SharePoint.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
-## <a name="debug-and-fix-the-sharepoint-solution"></a>Debugowanie i Usuń rozwiązania SharePoint
+## <a name="debug-and-fix-the-sharepoint-solution"></a>Debugowanie i naprawa rozwiązania SharePoint
 
-Teraz można wyświetlić plik dziennika funkcji IntelliTrace w programie Visual Studio można znaleźć i napraw błąd w rozwiązaniu programu SharePoint.
+Teraz możesz wyświetlać plikiem dziennika funkcji IntelliTrace w programie Visual Studio, aby znaleźć i naprawić ten błąd w rozwiązaniu programu SharePoint.
 
-1. W folderze \IntelliTraceLogs Otwórz plik .iTrace w programie Visual Studio.
+1. W folderze \IntelliTraceLogs Otwórz plik .iTrace w Visual Studio.
 
-     **Podsumowanie funkcji IntelliTrace** zostanie wyświetlona strona. Ponieważ błąd nie został obsłużony, identyfikator korelacji programu SharePoint (GUID) jest wyświetlany w obszarze nieobsługiwany wyjątek **analizy** sekcji. Wybierz **stos wywołań** przycisk, aby wyświetlić stos wywołań, w którym wystąpił błąd.
+     **Krótki opis IntelliTrace** zostanie wyświetlona strona. Ponieważ błąd nie został obsłużony, identyfikator korelacji programu SharePoint (GUID) jest wyświetlana w obszarze nieobsługiwany wyjątek **analizy** sekcji. Wybierz **stos wywołań** przycisk, jeśli chcesz wyświetlić stos wywołań, w którym wystąpił błąd.
 
-2. Wybierz **debugowania wyjątek** przycisku.
+2. Wybierz **wyjątek debugowania** przycisku.
 
-     Jeśli zostanie wyświetlony monit, załadować plików symboli. W **IntelliTrace** okna, wyjątek zostanie wyróżniona jako "wyrzuconych: Wystąpił poważny błąd!".
+     Jeśli zostanie wyświetlony monit, ładować pliki symboli. W **IntelliTrace** okna, wyjątek jest wyróżniony jako "zgłoszenia: Wystąpił poważny błąd!".
 
-     W oknie funkcji IntelliTrace wybierz wyjątku, aby wyświetlić kod, który nie powiodło się.
+     W oknie IntelliTrace wybierz wyjątek, aby wyświetlić kod, który uległ awarii.
 
-3. Usuń błąd przez otwarcie rozwiązania programu SharePoint, a następnie komentowania lub usuwanie **throw** instrukcji w górnej części procedury FeatureDeactivating().
+3. Napraw błąd, otwieranie rozwiązania programu SharePoint, a następnie zakomentowując lub usuwanie **throw** instrukcji w górnej części procedura FeatureDeactivating().
 
-4. Ponownie skompiluj rozwiązanie w programie Visual Studio, a następnie ponownie wdrożyć do programu SharePoint.
+4. Ponownie skompiluj rozwiązanie w programie Visual Studio, a następnie wdrożysz go ponownie w programie SharePoint.
 
 5. Dezaktywuj tę funkcję, wykonując następujące czynności:
 
-    1. Na **Akcje witryny** menu w programie SharePoint, wybierz **ustawienia lokacji**.
+    1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
 
     2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
 
@@ -328,12 +328,12 @@ Teraz można wyświetlić plik dziennika funkcji IntelliTrace w programie Visual
 
     4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
 
-6. Otwórz listę zadań i sprawdź, czy **stan** wartość Dezaktywuj zadania jest "ukończone" i jego **Ukończono** wartość wynosi 100%.
+6. Otwórz listę zadań i sprawdź, czy **stan** wartość zadania Dezaktywuj jest "ukończone" i jego **% Complete** wartość 100%.
 
      Kod teraz działa prawidłowo.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Sprawdź i debugowanie kodu aplikacji programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
+[Sprawdź i możliwe jest debugowanie kodu programu SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Wskazówki: Sprawdź kod programu SharePoint przy użyciu testów jednostkowych](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[Wskazówki: Sprawdź, czy kod programu SharePoint, za pomocą testów jednostkowych](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)

@@ -9,12 +9,12 @@ description: Więcej informacji na temat konta dewelopera Windows, które są do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382454"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624285"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -29,12 +29,12 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek Windows konto dewelopera w sekcji narzędzia i kliknąć **uzyskać kod** link w dolnej części kafelka korzyści.  Skopiuj kod do Schowka, a następnie kliknij przycisk **Aktywuj**.
-
-    ![Kafelek korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Kafelek korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokacji można rozpocząć proces rejestracji.  Kliknij przycisk **Zarejestruj** aby kontynuować.
-
-    ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. Zaloguj się do Twojej subskrypcji.  Jeśli masz wiele kont, wybierz ten, który został skojarzony z subskrypcją przedsiębiorstwa.
 4. Na następnej stronie Wybierz kraj lub region, gdzie mieszkasz lub w przypadku, gdy znajduje się Twojej firmy, a następnie kliknij przycisk **dalej**.
@@ -43,8 +43,8 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 7. Podaj swoje informacje kontaktowe i język preferowanego adresu e-mail, a następnie kliknij przycisk **dalej**.
 8. Może być konieczne Sprawdź swoje hasło.  Wprowadź go, a następnie kliknij przycisk **Zaloguj**.
 9. Przy rejestracji — strona płatności, Wklej kod, który wcześniej zostały skopiowane do pola Kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *nie wymagane jest*.  Kliknij przycisk **Dalej**.
-
-    ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. Przejrzyj informacje o Twoim koncie, zapoznaj się z umową dla deweloperów aplikacji, a następnie kliknij pole wyboru, aby wskazać akceptacji warunków i postanowień.  Następnie kliknij przycisk **Zakończ**.
 11. Kliknij przycisk **przejdź do pulpitu nawigacyjnego** aby rozpocząć korzystanie z konta dewelopera Windows!
@@ -59,7 +59,7 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne                                            |  NAZWA|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów.   Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów. Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

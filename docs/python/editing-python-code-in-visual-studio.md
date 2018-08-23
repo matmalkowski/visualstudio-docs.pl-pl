@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500124"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624068"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -34,7 +34,7 @@ Można również używać programu Visual Studio **przeglądarki obiektów** (**
 
 ## <a name="intellisense"></a>IntelliSense
 
-Technologia IntelliSense zawiera [uzupełnienia](#completions), [pomocy dotyczącej sygnatur](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie kodu](#code-coloring). Visual Studio 2017 w wersji 15.7 lub nowszej obsługuje również [wskazówek dotyczących typów](#type-hints).
+Technologia IntelliSense zawiera [uzupełnienia](#completions), [pomocy dotyczącej sygnatur](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie kodu](#code-coloring). Visual Studio 2017 w wersji 15.7 lub nowszej obsługują także [wskazówek dotyczących typów](#type-hints).
 
 Aby zwiększyć wydajność, funkcja IntelliSense w **programu Visual Studio 2017 w wersji 15.5** i wcześniej zależy od bazy danych uzupełniania, który jest generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie, jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okna (element równorzędny **Eksploratora rozwiązań**) na **IntelliSense** kartę (zobacz [okna środowiska Dokumentacja](python-environments-window-tab-reference.md#intellisense-tab)).
 

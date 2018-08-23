@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468276"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624034"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -46,12 +46,12 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 | **Ctrl**+**.** (również **Alt**+**wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacji lub innych szybkie akcje są dostępne na wybór pozycji lub kod kursora |
 | **Ctrl**+**D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 w wersji 15.6** i nowsze) |
 | **Shift**+**Alt**+**+**/**-** | Rozwijania/zwijania zaznaczenia | Zwiększa lub zmniejsza bieżące zaznaczenie w edytorze (dostępne w **programu Visual Studio 2017 w wersji 15.5** i nowsze) |
-| **SHIFT** + **Alt** + **dodatki** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
+| **CTRL** + **Alt** + **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 | **CTRL**+**funkcji pytania i odpowiedzi** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **CTRL**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
-| **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | Formatuj dokument | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
-| **CTRL**+**\\**,**E** (profil domyślny) lub **Ctrl**+**W**, **E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
+| **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | [Formatuj dokument](code-styles-and-quick-actions.md#format-document-command) | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
+| **CTRL**+**\\**,**Ctrl**+**E** (profil domyślny) lub **Ctrl** + **W**,**E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
 | **ALT** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/dalej błąd, ostrzeżenie, sugestii w dokumencie (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 
 > [!NOTE]

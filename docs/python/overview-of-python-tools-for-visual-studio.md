@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468780"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624118"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -84,7 +84,7 @@ Program Visual Studio pomaga uprościć projekt wzrostem wraz z upływem czasu. 
 
 Szablony projektów i elementów zautomatyzować proces konfigurowania różnych typów projektów i plików, co cenny czas i zwalniania możesz zarządzać szczegóły skomplikowanych i obarczone ryzykiem błędów. Program Visual Studio udostępnia szablony dla sieci web, Azure, do nauki o danych, konsolę i innych rodzajów projektów, w tym szablony dla plików, takie jak klasy, testy jednostkowe, konfiguracji sieci web platformy Azure, HTML i nawet aplikacji Django języka Python.
 
-[![Szablony projektów i elementów języka Python w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Szablony projektów i elementów języka Python w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Informacje dodatkowe:
 
@@ -114,7 +114,7 @@ Informacje dodatkowe:
 
 Profilowanie przedstawiono, jak jest zużywany czas w aplikacji. Visual Studio obsługuje profilowanie przy użyciu opartych na CPython interpreterów i z możliwością porównania wydajności między różnych tras profilowania.
 
-[![Visual Studio wyniki profiler dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png)
+[![Visual Studio wyniki profiler dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Informacje dodatkowe:
 

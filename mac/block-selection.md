@@ -1,21 +1,21 @@
 ---
-title: Blokowanie wybór
-description: W tym artykule opisano sposób użycia funkcji wyboru bloku w programie Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+title: Zablokuj zaznaczenie
+description: W tym artykule wyjaśniono, jak korzystać z funkcji wyboru bloku w programie Visual Studio dla komputerów Mac
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: e2c879c10d5c090d8dee6b11dd65fa82316e303a
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: c1c5783134b39feac0ae89d6a1b2680b0668f815
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33872825"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624418"
 ---
-# <a name="block-selection"></a>Blokowanie wybór
+# <a name="block-selection"></a>Zablokuj zaznaczenie
 
-Visual Studio for Mac sprawia, że proste wybrać, wycinanie, kopiowanie i wklejanie fragmentów kodu. Prostokątne bloki kodu może być wyróżniony i wybrany za pomocą **Option + przeciągnij** polecenia w bloku kodu. Formatowanie w ramach tego zaznaczenia bloku jest zachowywana podczas wklejania bloku.
+Program Visual Studio for Mac sprawia, że prosta wybrać, wycinanie, kopiowanie i wklejanie sekcji kodu. Prostokątne bloki kodu może być wyróżniony i wybrany za pomocą **Option + przeciągnięcie** polecenia w bloku kodu. Formatowanie w ramach tego zaznaczenia bloku są przechowywane przy wklejaniu bloku.
 
-Blokowanie wybór można edytować w taki sposób, aby zmodyfikować tekst w wielu wierszach na raz. Zaznaczeniem blokowym zerowej szerokości można umieścić karetkę przed liczbę wierszy jednocześnie i umożliwia wpisywanie tekstu identyczne w wielu wierszach:
+Blokuj wybrane opcje można edytować w taki sposób, aby zmodyfikować tekst w wielu wierszach na raz. Zaznaczeniem blokowym zerowej szerokości może służyć do umieszczenia karetki przed liczbę wierszy jednocześnie, a także umożliwia wpisywanie tekstu identyczne w wielu wierszach:
 
- ![Blokowanie wybór i dodawanie tekstu](media/source-editor-image16.png)
+ ![Zaznaczenie blokowe i dodawanie tekstu](media/source-editor-image16.png)

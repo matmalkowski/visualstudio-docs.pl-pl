@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 2
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637565"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624194"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoków i szablonów stron
 
@@ -52,7 +52,7 @@ Przy użyciu jednej z metod, tworzenie aplikacji o nazwie "HelloDjangoApp". Wyni
 | --- | --- |
 | **\_\_init\_\_.py** | Plik, który identyfikuje aplikację jako pakiet. |
 | **Migracje** | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby wyrównać ze zmianami do modeli. Narzędzia migracji w Django następnie zastosować wymagane zmiany do poprzednich wersji bazy danych, aby był zgodny z bieżącym modeli. Za pomocą migracji, nadal możesz skoncentrować się na swoje modele i pozwól Django obsługi podstawowy schemat bazy danych. Migracje zostały omówione w kroku 6. teraz, po prostu zawiera folder  *\_ \_init\_\_PY* pliku (co oznacza, że folder definiuje swój własny pakiet języka Python). |
-| **Szablony** | Folder zawierający pojedynczy plik szablony stron Django *index.html*. Szablony są bloki kodu HTML, do którego widoki mogą dodawać informacje, aby powodować dynamiczne renderowanie strony. Takie jak strona "zmienne szablonu," `{{ content }}` w *index.html*, jest symboli zastępczych dla wartości dynamicznych, zgodnie z opisem w dalszej części tego artykułu (krok 2). Zazwyczaj aplikacje Django utworzenia przestrzeni nazw swoje szablony, umieszczając je w podfolderze, która jest zgodna z nazwą aplikacji. |
+| **Szablony** | Folder zawierający pojedynczy plik szablony stron Django *index.html* w folderze pasujące do nazwy aplikacji. (W programie Visual Studio 2017 w wersji 15.7 i starszych plik znajduje się bezpośrednio pod *szablony* kroku 2 – 4 obydwa te elementy do tworzenia tego podfolderu.) Szablony są bloki kodu HTML, do którego widoki mogą dodawać informacje, aby powodować dynamiczne renderowanie strony. Takie jak strona "zmienne szablonu," `{{ content }}` w *index.html*, jest symboli zastępczych dla wartości dynamicznych, zgodnie z opisem w dalszej części tego artykułu (krok 2). Zazwyczaj aplikacje Django utworzenia przestrzeni nazw swoje szablony, umieszczając je w podfolderze, która jest zgodna z nazwą aplikacji. |
 | **Admin.PY** | Plik języka Python, w którym możesz rozszerzyć aplikację użytkownika administracyjnego interfejsu (patrz krok 6), który służy do wyświetlania i edytowania danych w bazie danych. Początkowo ten plik zawiera tylko instrukcja `from django.contrib import admin`. Domyślnie Django zawiera standardowy interfejs administracyjny za pośrednictwem wpisów w projekcie Django *settings.py* pliku, który można włączyć, trwa usuwanie komentarza do istniejących wpisów *urls.py*. |
 | **Apps.PY** | Plik języka Python, który definiuje klasę konfiguracji dla aplikacji (zobacz poniżej pod tą tabelą). |
 | **models.PY** | Modele są obiekty danych, identyfikowany przez funkcje, za pomocą których widoki interakcji z podstawowej bazy danych aplikacji (zobacz krok 6). Django zapewnia warstwę połączenia bazy danych, dzięki czemu nie trzeba zajmować się te szczegóły aplikacji. *Models.py* plików jest miejscem domyślna, w której chcesz utworzyć swoje modele i początkowo zawiera tylko instrukcja `from django.db import models`. |
@@ -176,7 +176,7 @@ Poniższe kroki pokazują użycie szablonów stron:
     'APP_DIRS': True,
     ```
 
-1. W *HelloDjangoApp* folder, otwórz *templates/index.html* pliku szablonu strony, aby obserwować, że zawiera on jedną zmienną `{{ content }}`:
+1. W *HelloDjangoApp* folder, otwórz *templates/HelloDjangoApp/index.html* plik szablonu strony (lub *templates/index.html* w wersji 15.7 programu VS 2017 i starszych), Sprawdź, czy zawiera on jedną zmienną `{{ content }}`:
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Poniższe kroki pokazują użycie szablonów stron:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -211,7 +212,7 @@ Poniższe kroki pokazują użycie szablonów stron:
 
 1. Uruchom projekt i sprawdzanie danych wyjściowych. Wyświetlony podobny komunikat, jak pokazano w kroku 2-2, wskazujący, że szablon działa.
 
-    Sprawdź, że kod HTML, możesz użyć w `content` właściwości powoduje wyświetlenie tylko jako zwykły tekst, ponieważ `render` funkcja automatycznie specjalne tego HTML. Automatyczne anulowania zapewnianego element zapobiec przypadkowemu luk w zabezpieczeniach na ataki przez iniekcję kodu: deweloperzy często zbierania danych wejściowych z jednej strony i użyć jej jako wartości w drugiej za pomocą symbolu zastępczego szablonu. Anulowanie służy również jako przypomnienie, że ponownie jest najlepiej trzymać HTML w szablonie strony i z kodu. Na szczęście go polega po prostu utworzyć dodatkowe zmienne w razie potrzeby. Na przykład zmienić *templates/index.html* aby dopasować następujący kod, który dodaje tytuł strony i przechowuje wszystkie formatowania w szablonie strony:
+    Sprawdź, że kod HTML, możesz użyć w `content` właściwości powoduje wyświetlenie tylko jako zwykły tekst, ponieważ `render` funkcja automatycznie specjalne tego HTML. Automatyczne anulowania zapewnianego element zapobiec przypadkowemu luk w zabezpieczeniach na ataki przez iniekcję kodu: deweloperzy często zbierania danych wejściowych z jednej strony i użyć jej jako wartości w drugiej za pomocą symbolu zastępczego szablonu. Anulowanie służy również jako przypomnienie, że ponownie jest najlepiej trzymać HTML w szablonie strony i z kodu. Na szczęście go polega po prostu utworzyć dodatkowe zmienne w razie potrzeby. Na przykład zmienić *index.html* z *szablony* aby dopasować następujący kod, który dodaje tytuł strony i przechowuje wszystkie formatowania w szablonie strony:
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Poniższe kroki pokazują użycie szablonów stron:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Poniższe kroki pokazują użycie szablonów stron:
 
     ![Uruchamianie aplikacji przy użyciu szablonu](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>W ostatnim kroku należy przenieść szablonów do podfolderu o nazwie taka sama jak aplikację, która tworzy przestrzeń nazw i pozwala uniknąć potencjalnych konfliktów z innymi aplikacjami, które można dodać do projektu. Oznacza to, utwórz podfolder w *szablony* o nazwie *HelloDjangoApp*, Przenieś *index.html* do tego podfolderu i modyfikować `index` funkcji do odwoływania się do wyświetlenia Nowa ścieżka tego szablonu, *HelloDjangoApp/index.html*. Uruchom projekt, Sprawdź poprawnie renderuje stronę i zatrzymać serwer.
+1. <a name="template-namespacing"></a>Visual Studio 2017 w wersji 15.7 i wcześniejszych: W ostatnim kroku, należy przenieść szablonów do podfolderu o nazwie taka sama jak aplikację, która tworzy przestrzeń nazw i pozwala uniknąć potencjalnych konfliktów z innymi aplikacjami, które można dodać do projektu. (Szablony w programie VS 2017 15.8 + zrobić to dla Ciebie automatycznie.) Oznacza to, utwórz podfolder w *szablony* o nazwie *HelloDjangoApp*, Przenieś *index.html* do tego podfolderu i modyfikować `index` funkcji do odwoływania się do wyświetlenia Nowa ścieżka tego szablonu, *HelloDjangoApp/index.html*. Uruchom projekt, Sprawdź poprawnie renderuje stronę i zatrzymać serwer.
 
 1. Zatwierdź zmiany do kontroli źródła i zaktualizować repozytorium zdalnego, jeśli to konieczne, zgodnie z opisem w [krok 2 z 2](#commit-to-source-control).
 

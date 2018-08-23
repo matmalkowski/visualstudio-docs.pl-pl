@@ -11,34 +11,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5030fef12683282ca41088790b6bbf47febb91e1
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280948"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42624149"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
-Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników oraz z architektury Twojego systemu.
+Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowników oraz przy użyciu architektury Twojego systemu.
 
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdą z tych funkcji, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdą z tych funkcji, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="key-tasks"></a>Kluczowe zadania
- Aby sprawdzić oprogramowanie, wykonaj poniższe zadania.
+ Aby zweryfikować swoje oprogramowanie, należy wykonać poniższe zadania.
 
-|**Zadania**|**Skojarzone — tematy**|
+|**Zadania**|**Skojarzone tematy**|
 |---------------|---------------------------|
-|**Upewnij się, że oprogramowanie spełnia wymagania użytkowników**:<br /><br /> Aby ułatwić organizowanie testów systemu i jej elementów można użyć wymagań i architektury modeli. Takie rozwiązanie pomaga, sprawdź, czy test wymagań, które są ważne dla użytkowników oraz innych zainteresowanych osób i ułatwia szybkie aktualizowanie testów zmiany wymagań.|-   [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)|
-|**Upewnij się, czy oprogramowanie jest zgodny z zamierzonym projektu systemu:**<br /><br /> Diagramy zależności opisano zamierzone zależności między składnikami aplikacji. Podczas tworzenia można zweryfikować zgodność z projektowi rzeczywistych zależności w kodzie.|-   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
+|**Upewnij się, oprogramowaniu spełnia wymagania użytkowników**:<br /><br /> Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania.|-   [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)|
+|**Upewnij się, że oprogramowanie pozostanie spójna z zamierzonego projektu systemu:**<br /><br /> Diagramy zależności opisywanie zakładanych zależności między składnikami aplikacji. Podczas tworzenia aplikacji można sprawdzić, że rzeczywiste zależności w kodzie są zgodne z zamierzonego projektu.|-   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Łącza**|
 |------------------|---------------|
-|**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif) [Channel 9: Dougowi siedem: opis kodu i System projektu programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif) [Channel 9: projektowania aplikacji przy użyciu diagramu zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif) [MSDN jak seria: jak sprawdzanie poprawności kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|-   [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Doug siedem: rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif) [serii MSDN jak mogę: jak sprawdzanie poprawności kodu za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogi**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Zobacz także
 

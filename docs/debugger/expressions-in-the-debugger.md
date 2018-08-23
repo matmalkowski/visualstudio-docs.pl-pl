@@ -21,53 +21,53 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056651"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626035"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
-Debuger programu Visual Studio zawiera ewaluatorów wyrażeń, działające po wprowadzeniu wyrażenia w **QuickWatch** okno dialogowe **czujki** okna, lub **Immediate** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okno i wielu innych miejscach w debugerze.
+Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
   
- Poniższe sekcje zapewniają szczegółowe informacje o wyrażeniach w różnych językach.  
+ Poniższe sekcje zawierają szczegółowe informacje o wyrażeniach w różnych językach.  
   
-## <a name="f-expressions-are-not-supported"></a>F # wyrażenia nie są obsługiwane.  
- F # wyrażenia nie są rozpoznawane. Debugowania kodzie języka F #, musisz przetłumaczyć wyrażenia na składni C# przed wprowadzeniem wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia wyrażenia z F # na język C#, należy pamiętać, że C# używa `==` operatora, aby sprawdzić pod kątem równości, gdy F # używa jednego `=`.  
+## <a name="f-expressions-are-not-supported"></a>Wyrażeń języka F # nie są obsługiwane.  
+ Wyrażeń języka F # nie są rozpoznawane. Jeśli debugujesz kod F # należy do translacji wyrażenia w języku C# składni przed rozpoczęciem wprowadzania wyrażeń w debugerze okno lub okno dialogowe. Podczas tłumaczenia jest wyrażenia z języka F # do języka C#, należy pamiętać, że C# używa `==` operatora do testowania pod kątem równości, podczas gdy F # używa pojedynczego `=`.  
   
-## <a name="c-expressions"></a>Wyrażenia języka C++  
- Aby dowiedzieć się, jak przy użyciu operatorów kontekstu za pomocą wyrażeń języka C++, zobacz [kontekstu — Operator (C++)](../debugger/context-operator-cpp.md).  
+## <a name="c-expressions"></a>Wyrażeń języka C++  
+ Aby dowiedzieć się, jak przy użyciu operatorów kontekstu przy użyciu wyrażenia w języku C++, zobacz [kontekstu — Operator (C++)](../debugger/context-operator-cpp.md).  
   
 ### <a name="unsupported-expressions-in-c"></a>Nieobsługiwane wyrażenia w języku C++  
   
-#### <a name="constructors-destructors-and-conversions"></a>Konwersje konstruktory i destruktory  
- Konstruktor ani destruktor nie można wywołać dla obiekt jawnie lub niejawnie. Na przykład poniższe wyrażenie jawnie wywołuje konstruktor i powoduje komunikat o błędzie:  
+#### <a name="constructors-destructors-and-conversions"></a>Konstruktory, destruktory i konwersje  
+ Konstruktor lub destruktor nie można wywołać obiektu, jawnie lub niejawnie. Na przykład poniższe wyrażenie jawnie wywołuje konstruktora i wyników w komunikacie o błędzie:  
   
 ```C++  
 my_date( 2, 3, 1985 )  
 ```  
   
- Nie można wywołać funkcji konwersji, jeśli docelowy konwersji jest klasą. Takie konwersji obejmuje konstrukcji obiektu. Na przykład jeśli `myFraction` jest wystąpieniem `CFraction`, który definiuje operator funkcji konwersji `FixedPoint`, poniższe wyrażenie powoduje wystąpienie błędu:  
+ Nie można wywołać funkcję konwersji, jeśli docelowy w konwersji jest klasą. Taka konwersja obejmuje konstrukcji obiektu. Na przykład jeśli `myFraction` jest wystąpieniem `CFraction`, który definiuje operator funkcji konwersji `FixedPoint`, poniższe wyrażenie powoduje błąd:  
   
 ```C++  
 (FixedPoint)myFraction  
 ```  
   
- Nie można wywołać nowy lub delete — operatory. Na przykład poniższe wyrażenie nie jest obsługiwana:  
+ Nie można wywołać nową lub delete — operatory. Na przykład poniższe wyrażenie nie jest obsługiwana:  
   
 ```C++  
 new Date(2,3,1985)  
 ```  
   
 #### <a name="preprocessor-macros"></a>Makra preprocesora  
- Makra preprocesora nie są obsługiwane w debugerze. Na przykład jeśli stałą `VALUE` jest zadeklarowany jako: `#define VALUE 3`, nie można użyć `VALUE` w **czujki** okna. Aby uniknąć tego ograniczenia, należy zastąpić `#define`obiektu z wyliczenia i funkcje, jeśli to możliwe.  
+ Makra preprocesora nie są obsługiwane w debugerze. Na przykład jeśli stałą `VALUE` jest zadeklarowany jako: `#define VALUE 3`, nie można użyć `VALUE` w **Obejrzyj** okna. Aby uniknąć tego ograniczenia, należy zastąpić `#define`użytkownika przy użyciu wyliczeń i funkcji, jeśli to możliwe.  
   
-### <a name="using-namespace-declarations"></a>za pomocą deklaracji przestrzeni nazw  
- Nie można użyć `using namespace` deklaracji.  Aby uzyskać dostęp do nazwy typu lub zmiennej poza bieżącej przestrzeni nazw, musi być w pełni kwalifikowaną nazwę.  
+### <a name="using-namespace-declarations"></a>za pomocą deklaracje przestrzeni nazw  
+ Nie można użyć `using namespace` deklaracji.  Aby uzyskać dostęp do nazwy typu lub zmiennej poza bieżącej przestrzeni nazw, należy użyć w pełni kwalifikowana nazwa.  
   
 ### <a name="anonymous-namespaces"></a>Anonimowe przestrzenie nazw  
- Przestrzenie nazw anonimowe nie są obsługiwane. Jeśli masz następujący kod, nie można dodać `test` do okna czujki:  
+ Przestrzenie nazw anonimowe nie są obsługiwane. Jeśli masz następujący kod, nie można dodać `test` w oknie czujki:  
   
 ```C++  
 namespace mars   
@@ -86,56 +86,56 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Przy użyciu funkcji wewnętrznych debugera do zarządzania stanem  
- Funkcje wewnętrzne debugera zapewniają sposób wywołania pewne funkcje C/C++ w wyrażeniach bez zmiany stanu aplikacji.  
+###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Za pomocą funkcje wewnętrzne debugera do zarządzania stanem  
+ Funkcje wewnętrzne debugera zapewniają sposób wywołać pewne funkcje języka C/C++ w wyrażeniach bez zmiany stanu aplikacji.  
   
  Funkcje wewnętrzne debugera:  
   
--   Zapewniona jest bezpieczne: wykonywanie funkcji wewnętrznej debugera nie spowoduje uszkodzenie jest debugowany proces.  
+-   Zapewniona jest bezpieczne: wykonanie funkcji wewnętrzne debugera nie spowoduje uszkodzenie procesu, który jest debugowany.  
   
--   Są dozwolone w wszystkie wyrażenia, nawet w scenariuszach, w którym efekty uboczne i obliczanie funkcji nie są dozwolone.  
+-   Są dozwolone w wszystkie wyrażenia, nawet w scenariuszach, gdzie efekty uboczne i obliczanie funkcji nie są dozwolone.  
   
--   Praca w scenariuszach, w których wywołania funkcji regularne nie są możliwe, takich jak debugowania minizrzutu.  
+-   Praca w scenariuszach, w których wywołania funkcji regularnych nie są dostępne, takich jak debugowania minizrzutu.  
   
- Funkcje wewnętrzne debuger można również ustawić wyrażenia oszacowania wygodniejsze. Na przykład `strncmp(str, "asd")` jest znacznie łatwiejsze do zapisu w warunku punktu przerwania niż `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+ Funkcje wewnętrzne debugera można również ustawić oceny wyrażenia bardziej wygodne. Na przykład `strncmp(str, "asd")` jest znacznie łatwiejsze do zapisu w warunku punktu przerwania niż `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Obszar|Funkcje wewnętrzne|  
 |----------|-------------------------|  
 |**Długość ciągu**|strlen —, wcslen —, strnlen — wcsnlen —|  
 |**Porównanie ciągów**|strcmp — wcscmp —, stricmp —, _stricmp —, _strcmpi —, wcsicmp —, _wcscmpi, _wcsnicmp —, strncmp —, wcsncmp —, strnicmp —, wcsnicmp —|  
 |**Ciąg wyszukiwania**|strchr —, wcschr —, strstr — wcsstr —|  
-|**Win32**|Funkcja GetLastError(), TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Funkcje te wymagają proces, który jest debugowany działa w systemie Windows 8. Debugowania plików zrzutu generowane z urządzenia z systemem Windows 8 również wymaga programu Visual Studio komputera systemu Windows 8. Jednak przypadku zdalnego debugowania urządzenia z systemem Windows 8, komputerze Visual Studio może być uruchomiony system Windows 7.|  
-|**Różne**|__log2<br /><br /> Zwraca dziennik podstawie 2 określona liczba całkowita, zaokrąglona do najbliższej liczby całkowitej niższa.|  
+|**Win32**|Polecenia GetLastError(), TlsGetValue()|  
+|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Te funkcje wymagają procesu, który jest debugowany należy uruchomić w systemie Windows 8. Debugowanie plików zrzutu generowane z urządzenia z systemem Windows 8 również wymaga, aby komputer z programem Visual Studio systemem operacyjnym Windows 8. Jednak jeśli przeprowadzasz debugowanie zdalne urządzenie Windows 8, komputer z programem Visual Studio może być uruchomiony Windows 7.|  
+|**Różne**|__log2<br /><br /> Zwraca dziennik podstawie 2 określona liczba całkowita zaokrąglona do najbliższej liczby całkowitej. niższe.|  
   
-## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - nieobsługiwane wyrażenia  
+## <a name="ccli---unsupported-expressions"></a>C + +/ interfejsu wiersza polecenia — nieobsługiwane wyrażenia  
   
--   Rzutowania obejmujących wskaźniki lub zdefiniowanej przez użytkownika rzutowania nie są obsługiwane.  
+-   Wzory, które obejmują wskaźniki lub zdefiniowanych przez użytkownika rzutowania, nie są obsługiwane.  
   
--   Porównanie obiektów i przypisanie nie są obsługiwane.  
+-   Porównanie obiektów i przypisania nie są obsługiwane.  
   
--   Operatory przeciążone i przeciążonej funkcji nie są obsługiwane.  
+-   Przeciążone operatory i funkcje przeciążone są nieobsługiwane.  
   
--   Opakowywanie i rozpakowywanie nie są obsługiwane.  
+-   Pakowanie i rozpakowywanie są nieobsługiwane.  
   
 -   `Sizeof` operator nie jest obsługiwany.  
   
 ## <a name="c---unsupported-expressions"></a>C# — nieobsługiwane wyrażenia  
   
 ### <a name="dynamic-objects"></a>Obiekty dynamiczne  
- W wyrażeniach debugera, wypełnianych statycznie jako dynamiczny, można używać zmiennych. Jeśli obiekty, które implementują <xref:System.Dynamic.IDynamicMetaObjectProvider> są oceniane w oknie wyrażeń kontrolnych widoku dynamicznego węzeł zostanie dodany. Węzeł widoku dynamicznego pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości składników.  
+ Można używać zmiennych w wyrażeniach debugera, które są statycznie wpisane jako dynamiczne. Gdy obiekty, które implementują <xref:System.Dynamic.IDynamicMetaObjectProvider> są oceniane w oknie czujki widoku dynamicznego, węzeł zostanie dodany. Węzeł dynamiczny widok pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości elementów członkowskich.  
   
- Następujące funkcje obiekty dynamiczne nie są obsługiwane:  
+ Następujące funkcje obiektów dynamicznych nie są obsługiwane:  
   
 -   Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
   
--   Wiele prezentacji, w tym rzutowania liczbowych i argument typu rzutowania  
+-   Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
   
--   Wywołania metody z więcej niż dwa argumenty  
+-   Wywołań metod z więcej niż dwóch argumentów  
   
--   Metody pobierające właściwości z więcej niż dwa argumenty  
+-   Metody pobierające właściwości z więcej niż dwóch argumentów  
   
--   Metody ustawiające właściwości z argumentami  
+-   Metod ustawiających właściwości z argumentami  
   
 -   Przypisywanie do indeksatora  
   
@@ -147,34 +147,34 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - nieobsługiwane wyrażenia  
   
 ### <a name="dynamic-objects"></a>Obiekty dynamiczne  
- W wyrażeniach debugera, wypełnianych statycznie jako dynamiczny, można używać zmiennych. Jeśli obiekty, które implementują [interfejsu interfejs IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) są oceniane w oknie wyrażeń kontrolnych widoku dynamicznego węzeł zostanie dodany. Węzeł widoku dynamicznego pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości składników.  
+ Można używać zmiennych w wyrażeniach debugera, które są statycznie wpisane jako dynamiczne. Gdy obiekty, które implementują <xref:System.Dynamic.IDynamicMetaObjectProvider> są oceniane w oknie czujki widoku dynamicznego, węzeł zostanie dodany. Węzeł dynamiczny widok pokazuje elementach członkowskich obiektu, ale nie zezwala na edytowanie wartości elementów członkowskich.  
   
- Następujące funkcje obiekty dynamiczne nie są obsługiwane:  
+ Następujące funkcje obiektów dynamicznych nie są obsługiwane:  
   
 -   Złożone operatory `+=`, `-=`, `%=`, `/=`, i `*=`  
   
--   Wiele prezentacji, w tym rzutowania liczbowych i argument typu rzutowania  
+-   Wiele rzutowania, w tym rzutowania liczbowych i argument typu rzutowania  
   
--   Wywołania metody z więcej niż dwa argumenty  
+-   Wywołań metod z więcej niż dwóch argumentów  
   
--   Metody pobierające właściwości z więcej niż dwa argumenty  
+-   Metody pobierające właściwości z więcej niż dwóch argumentów  
   
--   Metody ustawiające właściwości z argumentami  
+-   Metod ustawiających właściwości z argumentami  
   
 -   Przypisywanie do indeksatora  
   
 -   Operatory logiczne `&&` i `||`  
   
-### <a name="local-constants"></a>Stałe lokalnego  
- Stałe lokalnych nie są obsługiwane.  
+### <a name="local-constants"></a>Stałe lokalne  
+ Lokalne nie są obsługiwane.  
   
 ### <a name="import-aliases"></a>Importowanie aliasów  
  Importowanie aliasów nie są obsługiwane.  
   
-### <a name="variable-declarations"></a>Deklaracje zmiennej  
- Nie można zadeklarować jawne nowe zmienne w debugerze systemu windows. Jednak można przypisać nowe zmienne niejawne wewnątrz **Immediate** okna. Te zmienne niejawne ograniczone do sesji debugowania i nie są dostępne poza debugerem. Na przykład instrukcja `o = 5` niejawnie tworzy nową zmienną `o` i przypisz jej wartość 5. Takie niejawne zmienne są typu **obiektu** o ile nie można wywnioskować typu przez debuger.  
+### <a name="variable-declarations"></a>Deklaracje zmiennych  
+ Nie można zadeklarować jawne nowych zmiennych w debugerze systemu windows. Jednak można przypisać nowe zmienne niejawne wewnątrz **bezpośrednie** okna. Niejawne zmienne są ograniczone do sesji debugowania i nie są dostępne poza debugerem. Na przykład instrukcja `o = 5` niejawnie tworzy nową zmienną `o` i przypisać jej wartość 5. Takie niejawne zmienne są typu **obiektu** o ile nie można wywnioskować typu przez debuger.  
   
-### <a name="unsupported-keywords"></a>Nieobsługiwane słowa kluczowe  
+### <a name="unsupported-keywords"></a>Nieobsługiwana słów kluczowych  
   
 -   `AddressOf`  
   
@@ -204,10 +204,10 @@ int main()
   
 -   `With`  
   
--   Namespace lub modułu poziomu słów kluczowych, takich jak `End Sub` lub `Module`.  
+-   Namespace lub modułu na poziomie słów kluczowych, takich jak `End Sub` lub `Module`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Specyfikatory formatu w C++](../debugger/format-specifiers-in-cpp.md)   
- [Kontekst — Operator (C++)](../debugger/context-operator-cpp.md)   
- [Specyfikatory formatu w C#](../debugger/format-specifiers-in-csharp.md)   
+ [Operator kontekstu (C++)](../debugger/context-operator-cpp.md)   
+ [Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudozmienne](../debugger/pseudovariables.md)

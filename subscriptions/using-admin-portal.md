@@ -9,12 +9,12 @@ description: Dowiedz się, jak zarządzać subskrypcjami programu Visual Studio 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380821"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624177"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
 
@@ -68,9 +68,11 @@ Po przypisaniu subskrypcji, na karcie subskrybentów zawiera szczegółowe infor
 - Pole opcjonalne dla inny adres e-mail używany do komunikacji logowania. 
 
 Na lewym rogu tej strony znajdują się dodatkowe informacje o liczbie licencji subskrypcji zakupionych przypisane i nadal dostępne w Twojej organizacji, dla każdej umowy.
-    ![Strona subskrybentów portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Strona subskrybentów portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Informacje o stronie szczegółów
 Aby uzyskać więcej informacji o umowie, że jest wyświetlana wybierz kartę szczegółów. Wskazuje ono na stan umowy, Zakup konto, szczegóły organizacji, głównymi osobami kontaktowymi (firmy Microsoft VLSC), superadministratorzy (jeśli jest dostępny) i inne istotne informacje.
-    ![Strona szczegółów w portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Strona szczegółów w portalu administratora subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499906"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624178"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -26,7 +26,7 @@ Aby zainstalować obsługę języka Python dla programu Visual Studio (znany tak
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 lub starszej](#visual-studio-2013-and-earlier)
 
-Visual Studio 2015 i starszych wersjach trzeba będzie również oddzielnie [interpreter języka Python](installing-python-interpreters.md) wybranych przez użytkownika (język Python 3.5 i starszych; 3.6 nie jest obsługiwana i generuje komunikat **nieobsługiwanego języka Python w wersji 3.6**). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017.
+Visual Studio 2015 i starszych wersjach trzeba będzie również oddzielnie [interpreter języka Python](installing-python-interpreters.md) wybranych przez użytkownika (język Python 3.5 i starszych; 3.6 + nie jest obsługiwana i generuje komunikat podobny do **nieobsługiwanego języka Python w wersji 3.6**). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017.
 
 Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instalacji, należy otworzyć **Python Interactive** okna, naciskając klawisz **Alt**+**I** i wprowadzając `2+2`. Jeśli nie widzisz dane wyjściowe `4`, sprawdź ponownie etapami.
 

@@ -1,24 +1,24 @@
 ---
 title: Zarządzanie zasobami aplikacji
-description: Ten artykuł zawiera łącza do różnych prowadnic, umożliwiających zarządzanie zasobami aplikacji dla wielu platform w programie Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+description: Ten artykuł zawiera łącza do różnych przewodniki, których opisano sposób zarządzania zasobami aplikacji dla wielu platform w programie Visual Studio dla komputerów Mac
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: 3b6cc795b992a0f4a7d4112772ecc6f5f5d592f2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: a2ae5dead3dac49938b49f7a7ee7a85679492732
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33866005"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624304"
 ---
 # <a name="managing-app-resources"></a>Zarządzanie zasobami aplikacji
 
-Pliki zasobów aplikacji, takich jak obrazy, pliki tekstowe i pliki dźwiękowe są niezbędne do aplikacji, ale nie są kompilowane przy użyciu aplikacji. Każdej z platform obsługiwanych przez program Visual Studio for Mac obsługi tych zasobów w różny sposób, zgodnie z objaśnieniem w następujących przewodnikach:
+Pliki zasobów aplikacji, takich jak obrazy, pliki tekstowe i pliki audio są niezbędne do aplikacji, ale nie są kompilowane razem z aplikacją. Każdej z platform obsługiwanych przez program Visual Studio dla komputerów Mac obsługuje te zasoby na różne sposoby, zgodnie z opisem w następujących przewodnikach:
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-Kod platformy Xamarin.Forms działa na wielu platformach — każdy z nich ma własny system plików i każdy system plików mówią, jak na odczytywanie i zapisywanie do plików. W platformy Xamarin.Forms zasoby aplikacji można zarządzać przy użyciu macierzystych interfejsów API plików na każdej platformie lub dodając pliki jako zasoby osadzone.
+Kod zestawu narzędzi Xamarin.Forms działa na wielu platformach — z których każdy ma własny system plików i mówią każdego systemu plików, jak odczytywać i zapisywać pliki. W interfejsie Xamarin.Forms można było zarządzać zasobami aplikacji za pomocą natywnego plikowych interfejsów API na każdej platformie lub przez dodanie plików jako zasoby osadzone.
 
 * [Praca z obrazami](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Praca z plikami]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
@@ -26,7 +26,7 @@ Kod platformy Xamarin.Forms działa na wielu platformach — każdy z nich ma w�
 
 ## <a name="xamarinios"></a>Xamarin.iOS
 
-* [Praca z zasobów](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
+* [Praca z zasobami](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
 * [Praca z obrazami](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [Praca w systemie plików](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
 

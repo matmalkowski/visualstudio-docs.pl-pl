@@ -1,6 +1,6 @@
 ---
-title: Obciążenie nauki dane i aplikacje analitycznych
-description: 'Obciążenia programu Visual Studio Thsi łączy Python, R, F # i ich dystrybucje odpowiednich środowiska uruchomieniowego tym Anaconda.'
+title: Obciążenie aplikacji analitycznych i naukowych opracowań danych
+description: 'Obciążenie Thsi programu Visual Studio umożliwia połączenie ze sobą, Python, R, F # i ich dystrybucji odpowiedniego środowiska uruchomieniowego, w tym Anaconda.'
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -11,81 +11,82 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624047"
 ---
-# <a name="install-data-science-support-in-visual-studio"></a>Zainstaluj obsługę nauki danych w programie Visual Studio
+# <a name="install-data-science-support-in-visual-studio"></a>Nainstalovat podporu do nauki o danych w programie Visual Studio
 
-Obciążenie nauki dane i aplikacje analitycznych, wybierz i zainstaluj przez Instalator programu Visual Studio, połączono trzech językach i dystrybucji ich odpowiednich środowiska uruchomieniowego:
+Obciążenie aplikacji analitycznych i naukowych opracowań danych, który zaznaczyć i zainstalować za pomocą Instalatora programu Visual Studio, umożliwia połączenie ze sobą w trzech językach i ich dystrybucji odpowiedniego środowiska uruchomieniowego:
 
-- [R i klienta Microsoft R](../rtvs/index.md)
+- [R i Microsoft R Client](../rtvs/index.md)
 - [Python i Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [F # w środowisku .NET Framework](/dotnet/fsharp/)
+- [F # za pomocą programu .NET framework](/dotnet/fsharp/)
 
-![Obciążenie nauki danych i analizy aplikacji w Instalatorze programu Visual Studio](media/data-science-workload.png)
+![Obciążenie aplikacji analitycznych i naukowych opracowań danych, w Instalatorze programu Visual Studio](media/data-science-workload.png)
 
-R i Python są dwa podstawowe języków skryptowych używany do analizy danych. Zarówno języki są łatwe dowiedzieć się więcej i są obsługiwane przez rozbudowany ekosystem pakietów. Te pakiety adresów szeroką gamę scenariuszy, takich jak uzyskiwanie danych, czyszczenie uczenia modelu, wdrożenia i kreślenia. F # jest również zaawansowane języka .NET funkcjonalny, który jest odpowiedni dla różnych zadań przetwarzania danych.
+Języki R i Python są dwa podstawowe języków skryptów używane do analizy danych. Oba języki są do nauczenia i są obsługiwane przez bogatego ekosystemu pakietów. Te pakiety adresów szerokiej gamy scenariuszy, takich jak pozyskiwanie danych, czyszczenie, szkolenie modelu, wdrożenie i wykreślania. Język F # jest zaawansowanym językiem .NET skoncentrowane na funkcjonalności, które jest odpowiednie dla różnych zadań przetwarzania danych.
 
 <!--Note link on the image because this one is large -->
-[![Zrzuty ekranu programu Visual Studio z R, Python i F #](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Zrzuty ekranu programu Visual Studio przy użyciu języka R, Python i F #](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Opcje obciążenia
 
-Domyślnie obciążenie instalowane są następujące opcje, które można modyfikować w sekcji podsumowania dla obciążeń w Instalatorze programu Visual Studio:
+Domyślnie obciążenie instalowane są następujące opcje, które można modyfikować w sekcji podsumowania dla obciążenia w Instalatorze programu Visual Studio:
 
 - Obsługa języka F #
 - Python:
   - Obsługa języka Python
-  - [Anaconda3 64-bitowych](https://www.continuum.io) (A Python distro biblioteki nauki dużą ilością danych i interpreter języka Python)
-  - Obsługa sieci web języka Python
+  - [Anaconda3, wersja 64-bitowych](https://www.continuum.io) (dystrybucja języka Python, obejmującą bibliotek do nauki o danych rozbudowane i interpreter języka Python)
+  - Obsługa sieci web w języku Python
   - Obsługa szablonów Cookiecutter
 - R:
-  - Obsługa języków R
-  - Obsługa środowiska uruchomieniowego dla narzędzi programistycznych R
-  - [Klient Microsoft R](/machine-learning-server/r-client/what-is-microsoft-r-client) (firmy Microsoft w pełni zgodne, obsługiwane społeczności R interpreter z bibliotekami ScaleR do szybsze obliczeń na pojedynczych węzłów lub klastry. Można również użyć dowolnego języka R z [sieci CRAN](https://cran.r-project.org/).)
+  - Obsługa języka R
+  - Obsługa środowiska uruchomieniowego dla narzędzi programistycznych języka R
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (firmy Microsoft w pełni zgodne, obsługiwane przez społeczności R interpreter z bibliotekami programu ScaleR szybciej obliczeń na pojedyncze węzły lub w klastrach. Możesz również użyć dowolnego języka R od [CRAN](https://cran.r-project.org/).)
 
-Chociaż F # jest uwzględniona w wielu innych obciążeń i Python ma własną obciążenie, nauki dane i aplikacje analitycznych jest tylko obciążenia w chwili obecnej, która obejmuje R. Jednakże można także zainstalować R niezależnie od obciążenia. Na **pojedynczych składników** w Instalatorze, a następnie wybierz następujące opcje R:
+Mimo że język F # jest dołączone do wielu innych obciążeń i Python ma swój własny obciążenie, aplikacji analitycznych i naukowych opracowań danych jest tylko obciążenia w chwili obecnej, która obejmuje języka R. Jednakże można także zainstalować niezależnie od obciążenia języka R. Na **poszczególne składniki** w Instalatorze, a następnie wybierz następujące opcje R:
 
-- **Programowanie działań > Obsługa języka R**
-- **Programowanie działań > Microsoft R klienta**
-- **Kompilatory, kompilacji narzędzia i środowisk uruchomieniowych > Obsługa środowiska uruchomieniowego dla narzędzi programistycznych R**
+- **Działań programistycznych** > **obsługę języka R**
+- **Działań programistycznych** > **Microsoft R Client**
+- **Kompilatory, narzędzia do kompilacji i środowiska uruchomieniowe** > **obsługę środowiska uruchomieniowego dla narzędzi programistycznych języka R**
 
 ## <a name="sql-server-integration"></a>Integracja programu SQL Server
 
-Obsługa programu SQL Server przy użyciu zarówno R i Python przeprowadzić zaawansowane metody analizy bezpośrednio w programie SQL Server. Obsługa języka R jest dołączana do programu SQL Server 2016 lub nowszy; Obsługa języka Python jest dostępne w programie SQL Server 2017 CTP 2.0 lub nowszy.
+Obsługa programu SQL Server za pomocą języków R i Python do zaawansowanej analizy bezpośrednio w programie SQL Server. Obsługa języka R jest dołączony do programu SQL Server 2016 lub nowszy; Obsługa w języku Python jest dostępne w programie SQL Server 2017 CTP 2.0 i nowszych wersjach.
 
-Uruchamiając kodu, w którym mieszka już danych użytkownik korzysta z ma następujące zalety:
+Uruchamianie kodu, w których już są przechowywane dane zapewnia następujące korzyści:
 
-- **Eliminacja przenoszenia danych**: zamiast przenoszenia danych z bazy danych do aplikacji lub modelu, można tworzyć aplikacje R i Python w bazie danych. Ta funkcja eliminuje bariery zabezpieczeń, zgodności ładu, integralności i hostem podobne zagadnienia związane z przenoszenia dużych ilości danych wokół. Można również korzystać z zestawów danych, który nie mieści się w pamięci komputera klienta.
+- **Eliminacja przenoszenia danych**: zamiast przenoszenia danych z bazy danych do aplikacji lub modelu, możesz tworzyć aplikacje języków R i Python w bazie danych. Ta funkcja pozwala wyeliminować bariery zabezpieczeń, zgodności, ładu, integralności i hostem podobne problemy związane z przenoszenie ogromnych ilości danych w całym. Można również korzystać zestawów danych, który nie mieści się w pamięci komputera klienta.
 
-- **Łatwe wdrażanie**: gdy masz R lub Python modelu gotowe, jego wdrożeniem w środowisku produkcyjnym polega na osadzenia go w skrypcie T-SQL. Dowolnej aplikacji klienta SQL, w dowolnym języku mogą następnie korzystać z modelami i analizy poprzez wywołanie procedury składowanej. Nie określonego integracji R lub Python są niezbędne.
+- **Łatwe wdrażanie**: masz języka R lub Python modelu gotowy, jego wdrożeniem w środowisku produkcyjnym po polegać na osadzenie jej w skrypcie języka T-SQL. Każda aplikacja kliencka SQL napisane w dowolnym języku mogą następnie korzystać z modeli i analizy za pośrednictwem wywołania procedury składowanej. Nie określonego integracji języka R lub Python są niezbędne.
 
-- **Korporacyjnej wydajności i skalowania**: jak w pamięci tabel i kolumn przechowywania indeksów z interfejsami API skalowalnej wysokowydajnej w pakietach RevoScaleR i RevoScalePy, można użyć zaawansowanych możliwości programu SQL Server. Eliminacja przenoszenia danych również oznacza, że należy unikać ograniczenia pamięci klienta wraz z rozwojem danych lub chcesz zwiększyć wydajność aplikacji.
+- **Przeznaczonych dla przedsiębiorstw, wydajności i skali**: można użyć zaawansowanych możliwości programu SQL Server, tak jak w pamięci, tabel i kolumn przechowywania indeksów, skalowalnych interfejsów API o wysokiej wydajności w pakietach kolekcję funkcji RevoScaleR i biblioteki. Eliminacja przenoszenie danych oznacza także uniknąć ograniczenia pamięci klienta, zgodnie z rosnącą ilością danych lub chcesz zwiększyć wydajność aplikacji.
 
-- **Rozszerzalność sformatowanego**: można zainstalować i uruchomić dowolne z najnowszą typu open source R lub Python pakietów w programie SQL Server Tworzenie bezpośrednich uczenie i aplikacje AI na dużych ilości danych w programie SQL Server. Instalowanie pakietu w programie SQL Server jest tak proste, jak instalowanie pakietu na komputerze lokalnym.
+- **Bogate opcje rozszerzalności**: można zainstalować i uruchomić dowolne z najnowszą "open source" pakietów języka R lub Python w programie SQL Server do tworzenia uczenia głębokiego i sztucznej Inteligencji aplikacje na bardzo duże ilości danych w programie SQL Server. Instalowanie pakietu w programie SQL Server jest proste i polega na zainstalowaniu pakietu na komputerze lokalnym.
 
-- **Międzynarodowe dostępność bez ponoszenia dodatkowych kosztów**: R i Python integracji są dostępne we wszystkich wersjach programu SQL Server 2017 i później, w tym wersja Express. (Obsługa języka R jest dostępne w programie SQL Server 2016 lub nowszy).
+- **Powszechną dostępność bez ponoszenia dodatkowych kosztów**: integracji języka R i Python są dostępne we wszystkich wersjach programu SQL Server 2017 i nowszym, w tym wersja Express. (Obsługa języka R jest dostępne w programie SQL Server 2016 i nowszych wersjach).
 
-Aby w pełni korzystać z integracji programu SQL Server, użyj Instalatora programu Visual Studio do zainstalowania **magazynu danych i przetwarzania** obciążenie z **SQL Server Data Tools** opcji. Tę druga opcję umożliwia SQL IntelliSense, wyróżnianie składni i wdrożenia.
+Aby w pełni korzystać z integracji z programem SQL Server, użyj Instalatora programu Visual Studio do zainstalowania **przechowywanie i przetwarzanie danych** obciążenia za pomocą **SQL Server Data Tools** opcji. Tę druga opcję umożliwia SQL IntelliSense, wyróżnianie składni i wdrażania.
 
 ![Obciążenie przechowywania i przetwarzania danych](media/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Magazyn danych i opcje obciążenie przetwarzania](media/data-storage-workload-options.png)
 
 Informacje dodatkowe:
 
-- [Praca z programu SQL Server i R](../rtvs/sql-server.md)
-- [W bazie danych Advanced Analytics z języka R w programie SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
-- [Python w 2017 serwera SQL: enhanced uczenia maszynowego w bazie danych (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
+- [Praca z programu SQL Server i R](integrating-sql-server-with-r.md)
+- [W bazie danych Advanced Analytics przy użyciu języka R w programie SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [Język Python w programie SQL Server 2017: rozszerzonego uczenia maszynowego w bazie danych (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
 ## <a name="additional-services-and-sdks"></a>Dodatkowe usługi i zestawy SDK
 
-Oprócz co to jest pracą nauki danych i analizy aplikacji bezpośrednio usługa Azure, komputery przenośne i zestawu Azure SDK dla języka Python także są przydatne do analizy danych.
+Oprócz nowości w obciążeniu analizy danych i aplikacji do analizy bezpośrednio usługi platformy Azure, notesy i zestawu Azure SDK dla języka Python są również przydatne do analizy danych.
 
-Zestaw Azure SDK for Python ułatwia zużywają i zarządzania usługami Microsoft Azure z aplikacji działających w systemie Windows, Mac i Linux. Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](../python/azure-sdk-for-python.md)
+Zestaw Azure SDK dla języka Python ułatwia wykorzystanie i zarządzanie usługami Microsoft Azure z poziomu aplikacji w systemie Windows, Mac i Linux. Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](../python/azure-sdk-for-python.md)
 
-Azure notesów (obecnie w wersji zapoznawczej) umożliwia wolnego online dostęp do notesów Jupyter działającą w chmurze Microsoft Azure. Usługa obejmuje notesów próbki w języku Python, R i F # ułatwiających rozpoczęcie pracy. Visit[notebooks.azure.com](https://notebooks.azure.com/).
+Notesy platformy Azure (obecnie w wersji zapoznawczej) zawiera bezpłatny dostęp online do notesów programu Jupyter, działające w chmurze w systemie Microsoft Azure. Usługa obejmuje notesów przykładowy w języku Python, R i F # ułatwią Ci rozpoczęcie pracy. Visit[notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Zrzuty ekranu Azure notesów wraz z wprowadzeniem do R próbki](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![Zrzuty ekranu notesy platformy Azure wraz z wprowadzeniem do przykładu R](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

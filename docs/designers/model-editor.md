@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978427"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624096"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
@@ -48,14 +48,14 @@ Ta sekcja zawiera opis sposobu dodawania modelu 3D do projektu programu Visual S
 
    ![Dodaj nowy element w oknie dialogowym z wybrane sceny 3D](media/add-new-3d-scene.png)
 
-3. Wprowadź **nazwa** z plikiem modelu, a następnie wybierz **Dodaj**.
+   > [!NOTE]
+   > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okno dialogowe, użytkownik może być konieczne zainstalowanie **obrazów i modeli 3W edytory** składnika. Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu, aby otworzyć **Instalatora programu Visual Studio**. Wybierz **poszczególne składniki** , a następnie wybierz pozycję **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii. Wybierz **zmodyfikować**.
+   >
+   > ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
+   >
+   > Jeśli masz **obrazów i modeli 3W edytory** składników, zainstalowanych i nadal nie widzisz **grafiki** kategorii szablonu, należy pamiętać, że ta kategoria jest wyświetlany tylko w przypadku niektórych typów projektów, na przykład konsoli. aplikacje.
 
-> [!NOTE]
-> Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okno dialogowe, użytkownik może być konieczne zainstalowanie **obrazów i modeli 3W edytory** składnika. Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu, aby otworzyć **Instalatora programu Visual Studio**. Wybierz **poszczególne składniki** , a następnie wybierz pozycję **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii. Wybierz **zmodyfikować**.
->
-> ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
->
-> Jeśli masz **obrazów i modeli 3W edytory** składników, zainstalowanych i nadal nie widzisz **grafiki** kategorii szablonu, należy pamiętać, że ta kategoria jest wyświetlany tylko w przypadku niektórych typów projektów, na przykład konsoli. aplikacje.
+3. Wprowadź **nazwa** z plikiem modelu, a następnie wybierz **Dodaj**.
 
 ### <a name="axis-orientation"></a>Orientacja osi
 
@@ -93,7 +93,7 @@ W tej tabeli opisano elementy na **tryb edytora modelu** narzędzi, które są w
 |**Zablokuj oś Y**|Ogranicza możliwość manipulacji obiektem tylko do osi y. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Zablokuj oś Z**|Ogranicza możliwość manipulacji obiektem tylko do osi z. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Obiekt w ramce**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
-|**Widok**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **Frontonu**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **Po lewej stronie**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **Po prawej stronie**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **dolny**<br /> Umieszcza widok pod sceną. **Uwaga:** jest to jedyny sposób zmiany kierunku widoku po **prostopadły** jest włączone rzutowanie.|
+|**Widok**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **Frontonu**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **po lewej stronie**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **po prawej stronie**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **dolny**<br /> Umieszcza widok pod sceną. **Uwaga:** jest to jedyny sposób zmiany kierunku widoku po **prostopadły** jest włączone rzutowanie.|
 |**Projekcja**|Określa rodzaj rzutowania, który służy do rysowania sceny. Oto dostępne rzuty:<br /><br /> **Perspektywa**<br /> W rzutowaniu perspektywicznym obiekty, które są oddalone od punktu obserwacji, wyglądają na mniejsze, i ostatecznie zbiegają się do jednego punktu w odległości.<br /><br /> **Ortogonalnym**<br /> W rzutowaniu prostopadłym obiekty wydają się mieć taki sam rozmiar, niezależnie od ich odległości od punktu obserwacji. Nie są wyświetlane żadne zbieżności. Gdy **prostopadły** włączono projekcję, nie można użyć **Orbita** trybu do ustawienia widoku.|
 |**Styl rysowania**|Określa sposób renderowania obiektów w scenie. Oto dostępne style:<br /><br /> **Szkielet**<br /> Po włączeniu obiekty są renderowane jako szkieletowe.<br /><br /> **Overdraw**<br /> Po włączeniu obiekty są renderowane przy użyciu mieszania sumującego. Umożliwia to wizualizację ilości overdrawingu pojawiającego się w scenie.<br /><br /> **Płaskie cieniowanie**<br /> Po włączeniu obiekty są renderowane przy użyciu podstawowego, płaskiego zacieniowanego modelu oświetlenia. Umożliwia to łatwiejsze obejrzenie powierzchni obiektu.<br /><br /> Jeśli żadna z tych opcji nie jest włączona, każdy obiekt jest renderowany przy użyciu materiału, który jest do niego stosowany.|
 |**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym programu Visual Studio odrysowuje powierzchnię projektu, nawet wtedy, gdy jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|

@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do edycji w programie Visual Studio
+title: Wprowadzenie do edycji
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511238"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624016"
 ---
-# <a name="quickstart-use-the-code-editor"></a>Szybki Start: Korzystanie z edytora kodu
+# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
-Ten przewodnik Szybki Start założono, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../ide/tutorial-csharp-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../ide/tutorial-csharp-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 
@@ -157,16 +157,8 @@ Nikt nie pobiera kod bezpośrednio po raz pierwszy, a jedną z rzeczy, które tr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Ten przewodnik Szybki Start została ukończona, edytora programu Visual Studio. Następnie może wypróbować niektóre inne Przewodniki Szybki Start dla środowiska programistycznego Visual Studio.
-
 > [!div class="nextstepaction"]
-> [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Personalizowanie programu Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+> [Dowiedz się więcej o projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 

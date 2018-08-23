@@ -1,0 +1,1 @@
+Narzędzia języka specyficznego dla domeny

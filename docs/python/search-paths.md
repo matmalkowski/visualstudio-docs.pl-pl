@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586420"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624369"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżki wyszukiwania języka Python
 
@@ -26,7 +26,7 @@ Za pomocą języka Python do typowy `PYTHONPATH` zmienna środowiskowa (lub `IRO
 1. Folder zawierający kod języka Python działa.
 1. "Moduł ścieżki wyszukiwania" jako zdefiniowanej przez zmienną środowiskową dotyczy. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmienne środowiskowe](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
 
-Program Visual Studio ignoruje wyszukiwania zmiennej środowiskowej path, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* jest ustawiona dla całego systemu i zgłasza w związku z tym niektóre kwestie, które nie odpowiedziano automatycznie: to moduły odwołania, przeznaczone dla środowiska Python 2.7 lub Python 3.6? Są one będą zastąpienia modułów biblioteki standardowej? Deweloper zdaje sobie sprawę z tego zachowania, czy jest próba złośliwego przejmującego?
+Program Visual Studio ignoruje wyszukiwania zmiennej środowiskowej path, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* jest ustawiona dla całego systemu i zgłasza w związku z tym niektóre kwestie, które nie odpowiedziano automatycznie: to moduły odwołania, przeznaczona dla środowiska Python 2.7 lub Python 3.6 +? Są one będą zastąpienia modułów biblioteki standardowej? Deweloper zdaje sobie sprawę z tego zachowania, czy jest próba złośliwego przejmującego?
 
 Program Visual Studio udostępnia związku z tym oznacza, że do określania ścieżek wyszukiwania bezpośrednio w środowiskach i projektów. Kod, który uruchamiania lub debugowania w programie Visual Studio odbiera ścieżki wyszukiwania w wartości `PYTHONPATH` (i inne zmienne równoważne). Dodanie ścieżki wyszukiwania, Visual Studio sprawdza biblioteki w tych lokalizacjach i tworzy bazy danych IntelliSense dla ich w razie (Visual Studio 2017 w wersji 15.5 i starszych; tworzenia bazy danych może zająć trochę czasu w zależności od liczby bibliotek).
 

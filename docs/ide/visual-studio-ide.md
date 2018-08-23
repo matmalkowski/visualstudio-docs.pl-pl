@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381175"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624239"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio — omówienie
+# <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
 Program Visual Studio jest dostępna dla Windows i Mac. [Program Visual Studio for Mac](/visualstudio/mac/) zawiera wiele same funkcje co program Visual Studio 2017 i jest zoptymalizowany pod kątem tworzenia aplikacji dla wielu platform i na urządzeniach przenośnych.
 
-Ten artykuł dotyczy programu Visual Studio 2017 for Windows. Jego przedstawiono podstawowe funkcje środowiska IDE. Omówimy kilka rzeczy można zrobić z programem Visual Studio, takich jak tworzenie prostego projektu, przy użyciu [IntelliSense](using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość zmiennej podczas wykonywania programu. Firma Microsoft będzie także zapoznaj się z różnych narzędzi systemu windows.
+Ten artykuł koncentruje się na programie Visual Studio 2017 for Windows. Jego przedstawiono podstawowe funkcje środowiska IDE. Omówimy kilka rzeczy można zrobić z programem Visual Studio, takich jak tworzenie prostego projektu, przy użyciu [IntelliSense](using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość zmiennej podczas wykonywania programu. Firma Microsoft będzie także zapoznaj się z różnych narzędzi systemu windows.
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
@@ -64,7 +64,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 - [Funkcja IntelliSense](../ide/using-intellisense.md)
 
-   Funkcja IntelliSense jest okres zestaw funkcji wyświetlania informacji o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w innym miejscu. Funkcje IntelliSense, zależy od języka. Aby uzyskać więcej informacji, zobacz [IntelliSense w języku C#](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), i [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono, jak technologia IntelliSense wyświetla listę elementu członkowskiego dla typu:
+   Funkcja IntelliSense jest okres zestaw funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w innym miejscu. Funkcje IntelliSense, zależy od języka. Aby uzyskać więcej informacji, zobacz [IntelliSense w języku C#](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), i [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono, jak technologia IntelliSense wyświetla listę elementu członkowskiego dla typu:
 
    ![Lista elementów członkowskich programu Visual Studio](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Możesz dostosować interfejsu użytkownika programu Visual Studio, w tym zmiany
 
    Motyw kolorów dla całej IDE zmieni się na **ciemny**.
 
-   ![VS motywu ciemny](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio z motywu ciemny](media/quickstart-personalize-dark-theme.png)
 
 Aby dowiedzieć się więcej o innych metodach, które można spersonalizować środowisko IDE, zobacz [Personalizowanie programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Dowiedz się więcej
+## <a name="next-steps"></a>Następne kroki
 
-Czy chcesz utworzyć aplikację na telefonie z systemem Android lub iOS? Temat gier 3D lub aplikacji z obsługą chmury? Aby dowiedzieć się więcej na temat tych i innych funkcji programu Visual Studio, zobacz [funkcje programu Visual Studio 2017](../ide/advanced-feature-overview.md).
+Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsze artykuły wprowadzające zawierają:
 
-Jeśli chcesz rozpocząć pracę, kodowania, wybierz jedną z tematów w przewodniku Szybki Start w spisie treści, takich jak [Utwórz swoją pierwszą aplikację sieci web platformy ASP.NET Core](quickstart-aspnet-core.md).
+- Poznaj za pomocą edytora kodu w [Dowiedz się, jak za pomocą edytora kodu](quickstart-editor.md)
 
-Możesz również zapoznać się bezpłatnym kursom programu Visual Studio, dostępne na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+- Dowiedz się, jak Visual Studio umożliwia organizowanie kodu w [więcej informacji na temat projektów i rozwiązań](quickstart-projects-solutions.md)
+
+Jeśli chcesz zacząć korzystać do kodowania więcej jedną z następujących przewodników Szybki Start specyficzny dla języka jest dobre następnego kroku:
+
+- [Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](quickstart-python.md)
+
+- [Tworzenie pierwszej aplikacji sieci web języka C# przy użyciu programu Visual Studio](quickstart-aspnet-core.md)
+
+- [Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio](quickstart-nodejs.md)
+
+- [Wprowadzenie do języka C++ w programie Visual Studio](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
-* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Pobieranie programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
+- Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Odczyt [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Zapoznaj się z bezpłatnym kursom programu Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
+- Pobierz program Visual Studio na [pliki do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
