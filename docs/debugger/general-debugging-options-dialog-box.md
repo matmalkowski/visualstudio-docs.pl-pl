@@ -1,5 +1,5 @@
 ---
-title: Ogólne, debugowanie, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft
+title: Ogólne, debugowanie, okno dialogowe Opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 05/23/2017
 ms.technology: vs-ide-debug
@@ -23,142 +23,142 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7af8c68764b3a9ed85bf6a52a3a6c4a0568203
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572053"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626117"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
-**Narzędzia > Opcje > debugowanie > Ogólne** strony pozwala ustawić opcje opisane w tym artykule.
+**Narzędzia > Opcje > debugowanie > Ogólne** stronie pozwala ustawić opcje opisane w tym artykule.
 
-Jeśli trzeba przywrócić ustawienia domyślne, możesz to zrobić przy użyciu tego **narzędzia** > **Import i eksport ustawień** > **zresetować wszystkie ustawienia**. Jeśli chcesz zresetować podzbiór ustawień, Zapisz ustawienia w **Kreator importowania i eksportowania ustawień** przed wprowadzeniem zmian, które mają zostać przetestowane, następnie zaimportować zapisane ustawienia później.
+Jeśli chcesz przywrócić ustawienia domyślne, możesz to zrobić, przy użyciu **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**. Jeśli chcesz zresetować podzbioru ustawień, Zapisz ustawienia w **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które mają zostać przetestowane, następnie zaimportuj zapisane ustawienia później.
   
 **Pytaj przed usunięciem wszystkich punktów przerwania** wymaga potwierdzenia przed ukończeniem **Usuń wszystkie punkty przerwania** polecenia.  
   
-**Przerwij wszystkie procesy w przypadku przerwania jednego procesu** jednocześnie dzieli wszystkie procesy, do których jest dołączony debuger, gdy występuje podział.  
+**Przerwij wszystkie procesy, gdy jeden proces ulegnie przerwaniu** jednocześnie przerywa wszystkie procesy, do których jest dołączony debuger, gdy występuje przerwa.  
   
-**Przerwij, gdy wyjątki przekraczają AppDomain lub granic zarządzane lub natywne** w debugowania zarządzanego lub mieszanym, środowisko uruchomieniowe języka wspólnego można przechwytywać wyjątki, które granice domeny aplikacji lub granice zarządzane lub natywne podczas następujące warunki są spełnione:  
+**Przerwij, gdy wyjątki przekroczą granice AppDomain lub granice zarządzane/macierzyste** podczas debugowania zarządzanego lub mieszanym, środowisko uruchomieniowe języka wspólnego może przechwytywać wyjątki, które przecinają granice domen aplikacji lub granice zarządzane/macierzyste podczas następujące warunki są spełnione:  
   
-1\) po kodu natywnego wywołuje zarządzanego kodu za pomocą międzyoperacyjności z modelem COM i kod zarządzany zgłasza wyjątek. Zobacz [wprowadzenie do COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop).  
+1\) kiedy kod macierzysty wywołuje kod zarządzany za pomocą COM Interop, i zgłasza wyjątek, kod zarządzany. Zobacz [wprowadzenie do COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop).  
   
-2\) po kodu zarządzanego działającego w domenie aplikacji 1 wywołania kodu zarządzanego w domenie aplikacji 2 i kodu w domenie aplikacji 2 zgłasza wyjątek. Zobacz [programowania z domenami aplikacji](/dotnet/articles/framework/app-domains/index).  
+2\) gdy kodu zarządzanego uruchomionego w domenie aplikacji 1 wywołuje kod zarządzany w domenie aplikacji, 2, a kodw aplikacji Domena 2 zgłasza wyjątek. Zobacz [programowanie z domenami aplikacji](/dotnet/articles/framework/app-domains/index).  
 
-3\) gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zwraca wyjątek. Zobacz [odbicia](/dotnet/framework/reflection-and-codedom/reflection).  
+3\) gdy kod wywołuje funkcję przy użyciu odbicia, a funkcja zgłasza wyjątek. Zobacz [odbicia](/dotnet/framework/reflection-and-codedom/reflection).  
   
-W warunku, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `mscorlib` zamiast środowisko uruchomieniowe języka wspólnego. Ta opcja nie dotyczy dzielenia na wyjątki przechwycony przez `mscorlib`.  
+W warunku, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `mscorlib` zamiast środowiska uruchomieniowego języka wspólnego. Ta opcja nie wpływa na przerwanie w wyjątkach przechwyconych przez `mscorlib`.  
   
-**Włącz debugowanie poziomie adresu** umożliwia zaawansowane funkcje do debugowania na poziomie adresu ( **dezasemblacji** okna, **rejestruje** okna, a punkty przerwania adresu).  
+**Włącz debugowanie na poziomie adresów** włącza zaawansowane funkcje debugowania na poziomie adresów ( **dezasemblacji** oknie **rejestruje** okna, a punkty przerwania adresów).  
   
-- **Pokaż dezasemblację, jeśli źródło jest niedostępne** automatycznie wyświetlany **dezasemblacji** okno podczas debugowania kodu, dla których źródła jest niedostępna.  
+- **Pokaż dezasemblację, jeśli źródło jest niedostępne** jest automatycznie wyświetlana **dezasemblacji** okna podczas próby debugowania kodu, dla którego źródło jest niedostępne.  
   
-**Włącz punktu przerwania filtry** pozwala ustawić filtry na punktów przerwania, aby wpływają one na określone procesy, wątki lub komputery.  
+**Włącz filtry punktów przerwania** umożliwia ustawiania filtrów punktów przerwania, tak że wpływają one tylko określone procesy, wątki lub komputery.  
  
-**Użyj nowego pomocnika wyjątków** umożliwia pomocnika wyjątków (Visual Studio 2017), który zastępuje Asystenta wyjątków.
+**Użyj nowego pomocnika wyjątków** umożliwia pomocnika wyjątków (Visual Studio 2017), która zastępuje Asystenta wyjątków.
   
 > [!NOTE]
-> Dla kodu zarządzanego, ta opcja była wcześniej określana **Włącz Asystenta wyjątków** . 
+> Dla kodu zarządzanego, ta opcja był wcześniej nazywany programem **Włącz Asystenta wyjątków** . 
   
-**Włącz opcję tylko mój kod** debuger wyświetla i kroki do kodu użytkownika ("Mój kod"), ignorowanie kod systemu i innego kodu, która została zoptymalizowana lub, która nie ma symboli debugowania.
+**Włącz opcję tylko mój kod** debuger wyświetla i kroki kod użytkownika ("Mój kod"), ignorując kod systemowy i inny kod, który zoptymalizowano lub w którym nie ma symboli debugowania.
 
-- **Ostrzegaj w przypadku braku kodu użytkownika przy uruchomieniu (tylko kod zarządzany)** gdy debugowanie się rozpocznie z tylko mój kod włączone, ta opcja wyświetli ostrzeżenie, jeśli nie jest wykonywany kod użytkownika ("Mój kod"). 
+- **Ostrzegaj w przypadku braku kodu użytkownika przy uruchomieniu (tylko kod zarządzany)** gdy debugowanie się rozpocznie dzięki włączeniu tylko mój kod, opcja ta ostrzega, jeśli nie jest wykonywany kod użytkownika ("Mój kod"). 
 
-**Włączyć program .NET Framework krokowe wykonywanie źródła** umożliwia debugera wkraczać do źródła .NET Framework. Włączenie tej opcji powoduje automatyczne wyłączenie tylko mój kod .NET Framework symbole zostaną pobrane do lokalizacji pamięci podręcznej. Możesz zmienić lokalizację pamięci podręcznej w **opcje** okno dialogowe **debugowanie** kategorii, **symbole** strony.  
+**Włączyć program .NET Framework krokowe wykonywanie źródła** pozwala debugerowi na wkroczenie do źródła .NET Framework. Włączenie tej opcji spowoduje automatyczne wyłączenie tylko mój kod .NET Framework symbole będą pobierane do lokalizacji pamięci podręcznej. Możesz zmienić lokalizację pamięci podręcznej w **opcje** okno dialogowe **debugowanie** kategorii **symbole** strony.  
   
-**Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** zapobiega Wkraczanie do właściwości i operatory w kodzie zarządzanym przez debuger.  
+**Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** sprawia, że debuger wchodzi we właściwości i operatory w kodzie zarządzanym.  
   
-**Włącz obliczanie właściwości i inne niejawne wywołania funkcji** włącza funkcję automatycznej oceny właściwości i niejawna funkcja wywołuje w oknach zmiennych i **QuickWatch** okno dialogowe.  
+**Włącz obliczanie właściwości i inne niejawne wywołania funkcji** włącza funkcję automatycznej oceny właściwości i niejawne funkcja wywołuje w oknach zmiennych i **QuickWatch** okno dialogowe.  
   
-- **Wywołania funkcji konwersji ciągów na obiektach w oknach zmiennych (C# i JavaScript tylko)** wykonuje wywołanie ciąg niejawna konwersja podczas obliczania obiektów w oknach zmiennych. Wynik jest wyświetlany w postaci ciągu zamiast nazwy typu. Ma zastosowanie tylko podczas debugowania w kodzie języka C#. To ustawienie może być zastąpiona przez atrybutu DebuggerDisplay (zobacz [za pomocą atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
+- **Wywołaj funkcję konwersji ciągu na obiektach w oknach zmiennych (C# i JavaScript tylko)** wykonuje wywołanie niejawnej konwersji ciągu podczas szacowania wartości obiektów w oknach zmiennych. Wynik jest wyświetlany jako ciąg, nie nazwę typu. Dotyczy to tylko podczas debugowania kodu C#. To ustawienie może być zastąpiona przez atrybut DebuggerDisplay (zobacz [korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Włącz obsługę serwera źródłowego** informuje debuger programu Visual Studio można pobrać plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i debugowania narzędzi dla systemu Windows są dwa serwery źródła, które implementują protokół. Aby uzyskać więcej informacji na temat konfigurowania SrcSrv, zobacz [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Włącz obsługę serwera źródłowego** nakazuje debugerowi programu Visual Studio pobranie plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i Debugging Tools for Windows to dwa serwery źródłowe implementujące ten protokół. Aby uzyskać więcej informacji o konfiguracji SrcSrv, zobacz [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Ponieważ odczytywania .pdb, pliki można wykonania dowolnego kodu w plikach, upewnij się, czy zaufania serwerowi.  
+> Ponieważ czytania *.pdb* plików może wykonywać dowolny kod w plikach, upewnij się, że masz zaufanie do serwera.  
   
-- **Drukuj komunikaty diagnostyczne serwera źródłowego w oknie danych wyjściowych** po włączeniu obsługę serwera źródłowego, to ustawienie włącza wyświetlanie diagnostycznych.  
+- **Drukowanie komunikatów diagnostycznych serwera źródłowego w oknie danych wyjściowych** po włączeniu obsługi serwera źródłowego, to ustawienie powoduje włączenie ekranu diagnostycznego.  
   
-- **Zezwalaj serwerowi źródłowemu na częściowo zaufane zestawy (tylko kod zarządzany)** po włączeniu obsługę serwera źródłowego, to ustawienie przesłania domyślne zachowanie na częściowo zaufane zestawy nie będą pobierane źródła.  
+- **Zezwalaj serwerowi źródłowemu na częściowo zaufane zestawy (tylko kod zarządzany)** po włączeniu obsługi serwera źródłowego, ustawienie to zastępuje domyślne zachowanie niepobierania źródeł dla zestawów częściowej relacji zaufania.  
 
-**Włącz obsługę łącze źródło** informuje debuger programu Visual Studio w celu pobrania plików źródłowych dla .pdb, pliki zawierające informacje o łączu źródła. Aby uzyskać więcej informacji na temat Link źródła, zobacz [Specyfikacja łącze źródła](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
+**Włącz obsługę Source Link** informuje debuger programu Visual Studio, aby pobrać pliki źródłowe pliki .pdb, które zawierają informacje o Linku źródłowego. Aby uzyskać więcej informacji dotyczących Linku źródłowego, zobacz [określenie Linku źródłowego](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
     >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
-**Podświetl cały wiersz dla punktów przerwania i bieżącej instrukcji (tylko C++)** gdy debuger wyróżnia punktu przerwania i bieżącej instrukcji, zawiera opis cały wiersz.  
+**Zaznaczanie całego wiersza dla punktów przerwania i bieżącej instrukcji (tylko C++)** gdy debuger wyróżnia punkt przerwania lub bieżącą instrukcję, wyróżnia jej cały wiersz.  
   
-**Wymagaj źródła dokładnej zgodności plików oryginalnej wersji** informuje debugera, aby sprawdzić, czy plik źródłowy zgodna z wersją używany do tworzenia pliku wykonywalnego debugowania kodu źródłowego. Jeśli wersja nie jest zgodny, zostanie wyświetlony monit można znaleźć zgodnego źródła. Jeśli nie znaleziono zgodnego źródła, nie można wyświetlić kodu źródłowego podczas debugowania. 
+**Wymagaj plików źródłowych Aby dokładnie dopasować oryginalną wersję** nakazuje debugerowi sprawdzenie, czy plik źródłowy jest zgodny z wersją kodu źródłowego użytego do utworzenia pliku wykonywalnego debugowania. Jeśli wersja nie jest zgodny, będzie się monit o znalezienie pasującego źródła. Jeśli zgodne źródło nie zostanie znaleziony, nie można wyświetlić kodu źródłowego podczas debugowania. 
   
-**Przekieruj cały tekst okna danych wyjściowych do okna bezpośredniego** wysyła debugera wszystkie komunikaty pojawiały się zwykle w **dane wyjściowe** okna **Immediate** okna zamiast tego.  
+**Przekieruj wszystkie dane wyjściowe okna tekstowego do okna bezpośredniego** wysyła wszystkie komunikaty debugera, które normalnie pojawiają się w **dane wyjściowe** okna **bezpośrednie** okna zamiast tego.  
   
-**Pokaż nieprzetworzoną strukturę obiektów w oknach zmiennych** wyłącza wszystkie dostosowania widoku struktury obiektu. Aby uzyskać więcej informacji na temat dostosowywania widoku, zobacz [Tworzenie niestandardowych widoków obiektów .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
+**Pokaż nieprzetworzoną strukturę obiektów w oknach zmiennych** wyłącza wszystkie dostosowania widoku struktury obiektu. Aby uzyskać więcej informacji na temat dostosowania widoków, zobacz [Tworzenie niestandardowych widoków obiektów .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
-**Pomiń optymalizację JIT podczas ładowania modułu (tylko kod zarządzany)** wyłącza optymalizację JIT kodu zarządzanego gdy ładowany jest moduł i JIT jest kompilowana, gdy debuger jest dołączony. Wyłączenie optymalizacji może ułatwić debugowania niektórych problemów, ale kosztem wydajności. Jeśli używane są tylko mój kod, pomijanie JIT optymalizacji może spowodować kodu innych użytkowników, które były wyświetlane jako użytkownika (kod "Moje"). Aby uzyskać więcej informacji, zobacz [optymalizację JIT i debugowanie](../debugger/jit-optimization-and-debugging.md).
+**Pomijanie optymalizacji JIT przy ładowaniu modułu (tylko kod zarządzany)** wyłącza optymalizację JIT kodu zarządzanego, gdy moduł jest załadowany a JIT kompilowana w czasie, gdy jest dołączony debuger. Wyłączenie optymalizacji może ułatwić debugowanie pewnych problemów, ale kosztem wydajności. Jeśli używasz tylko mój kod, pomijanie JIT optymalizacji może spowodować niebędący kodem użytkownika do wyświetlania jako kod użytkownika ("Mój kod"). Aby uzyskać więcej informacji, zobacz [optymalizację JIT i debugowanie](../debugger/jit-optimization-and-debugging.md).
 
-**Włącz debugowanie JavaScript dla platformy ASP.NET (Chrome oraz programu IE)** umożliwia debugera skryptów dla aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome konieczne może być Zaloguj się do przeglądarki przy pierwszym użyciu włączyć rozszerzenia Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić działanie starszej wersji.    
+**Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome i programu Internet Explorer)** umożliwia debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki przy pierwszym użyciu, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.    
 
-**Załaduj elementy eksportu bibliotek dll** ładuje tabele eksportu biblioteki dll. Informacje dotyczące symboli z tabel eksportu biblioteki dll może być przydatne, jeśli pracujesz z komunikatów systemu Windows, Windows procedury (WindowProcs), obiekty COM lub przekazywanie lub każdej biblioteki dll, dla którego nie ma symboli. Informacje o eksporcie odczytu biblioteki dll obejmuje pewne nadmiarowe obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.  
+**Ładuj eksporty dll** ładuje tabele eksportu bibliotek dll. Informacje o symbolach tabel eksportu biblioteki dll może być przydatne, jeśli pracujesz z Windows wiadomości, procedur Windows (WindowProcs), obiektami COM, lub organizowanie lub dowolną biblioteką dll, dla której nie masz symboli. Odczytywanie pliku dll informacji o eksportowaniu pewne nadmiarowe obciążenie. Dlatego ta funkcja jest domyślnie wyłączona.  
   
-Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla każdej biblioteki dll systemu 32-bitowego. Przeczytaj `dumpbin /exports` danych wyjściowych widać nazwy funkcji dokładne, w tym znaków innych niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji z tabel eksportu biblioteki dll może wyglądać obcięty w innym miejscu w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin /exports](/cpp/build/reference/dash-exports).  
+Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla każdej biblioteki dll systemu 32-bitowego. Czytając `dumpbin /exports` danych wyjściowych, możesz zobaczyć dokładną nazwę funkcji, w tym znaki inne niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki dll, może pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin/EXPORTS](/cpp/build/reference/dash-exports).  
   
-**Pokaż równoległych stosów od dołu do góry diagram** steruje kierunkiem wyświetlone stosy w **stosów równoległych** okna.
+**Pokaż równoległych stosów od dołu do góry diagram** kontroluje kierunek, w którym stosy są wyświetlane w **stosów równoległych** okna.
   
-**Ignoruj wyjątki dostępu do pamięci procesora GPU, jeśli zapisane dane nie zmieniły wartości** ignoruje wyścigu, które zostały wykryte podczas debugowania, jeśli dane nie zmieniły. Aby uzyskać więcej informacji, zobacz [debugowanie kodu GPU](../debugger/debugging-gpu-code.md).  
+**Ignoruj wyjątki dostępu do pamięci procesora GPU, jeśli zapisane dane nie zmieniły wartości** ignoruje Sytuacje wyścigu, które zostały wykryte podczas debugowania, jeśli dane nie zmieniły. Aby uzyskać więcej informacji, zobacz [debugowania kodu GPU](../debugger/debugging-gpu-code.md).  
   
-**Użyj zarządzanego trybu zgodności** zastępuje domyślną debugowania aparatu przy użyciu starszych wersji, aby włączyć takie scenariusze:  
+**Użyj zarządzanego trybu zgodności** zastępuje domyślny aparat starszą wersją, aby włączyć te scenariusze debugowania:  
   
-- Używasz języka .NET Framework innego niż C#, VB lub F # udostępniający własną ewaluatora wyrażenia (dotyczy to również C + +/ CLI).  
+- W przypadku korzystania z języka .NET Framework innego niż C#, VB lub F # zapewniający własny Ewaluator wyrażeń (to obejmuje C + +/ CLI).  
   
 - Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.  
   
 > [!NOTE]
-> Wybieranie zarządzanego zgodności tryb wyłącza niektóre funkcje, które są wdrażane tylko w domyślnym aparat debugowania. 
+> Trybu, wybierając zgodności zarządzanej wyłącza niektóre funkcje, które są zaimplementowane tylko w domyślnym aparacie debugowania. 
 
-**Użyj starszych ewaluatorów wyrażeń C# i VB** debuger użyje ewaluatorów wyrażeń Visual Studio 2013 C# / VB. zamiast oceniających wyrażenia w Visual Studio 2015 Roslyn.    
+**Użyj starszych ewaluatory wyrażeń języka C# i VB** debuger użyje ewaluatory wyrażeń Visual Studio 2013 w języku C# /VB zamiast ewaluatory wyrażeń opartych na programie Visual Studio 2015 Roslyn.    
   
-**Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)** Visual Studio ostrzega użytkownika, gdy używasz wizualizatora niestandardowego debugera uruchomionym kodu w procesie debugowanego obiektu, ponieważ mogą być wykonywane unsafe Kod.  
+**Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)** programu Visual Studio ostrzeże Cię, gdy używasz wizualizatora niestandardowego debugera działającego kodu w procesie debugowanego obiektu, ponieważ może być uruchomiony unsafe Kod.  
   
-**Włącz alokatora sterty debugowania systemu Windows (tylko kod natywny)** umożliwia sterty debugowania systemu windows poprawić diagnostyki sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.  
+**Włącz alokatora sterty debugowania Windows (tylko natywne)** pozwala na stercie systemu windows, lepszą diagnostykę sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.  
   
-**Włącz narzędzia debugowania interfejsu użytkownika dla XAML** dynamicznym drzewie wizualnym i windows Live Eksploruj właściwości pojawią się po rozpoczęciu debugowania (F5) typu obsługiwanych projektu. Aby uzyskać więcej informacji, zobacz [właściwości sprawdzić XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md).  
+**Włącz narzędzia debugowania interfejsu użytkownika dla XAML** dynamiczne drzewo wizualne i windows Live Eksplorowanie właściwość pojawi się po rozpoczęciu debugowania (F5) typu obsługiwanych projektu. Aby uzyskać więcej informacji, zobacz [właściwości sprawdzić XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md).  
   
-- **Wyświetl podgląd wybranych elementów w dynamicznym drzewie wizualnym** również wybrano element XAML, którego kontekst jest zaznaczona w **dynamicznym drzewie wizualnym** okna.  
+- **Wyświetl podgląd wybranych elementów w dynamicznym drzewie wizualnym** XAML elementu, którego kontekst jest zaznaczona, jest również wybrany w **dynamiczne drzewo wizualne** okna.  
   
-- **Pokaż narzędzia środowiska uruchomieniowego w aplikacji** pokazuje **dynamicznym drzewie wizualnym** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w programie Visual Studio 2015 Update 2. 
+- **Pokaż narzędzia środowiska uruchomieniowego w aplikacji** pokazuje **dynamiczne drzewo wizualne** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w Visual Studio 2015 Update 2. 
 
-- **Włącz XAML Edytuj i Kontynuuj** pozwala na korzystanie z opcji Edytuj i Kontynuuj funkcji dla kodu XAML. 
+- **Włącz Edytuj XAML i Kontynuuj** pozwala na używanie funkcji Edytuj i Kontynuuj funkcji dla kodu XAML. 
   
-**Włącz narzędzia diagnostyczne podczas debugowania** **narzędzia diagnostyczne** okno podczas debugowania.
+**Włącz narzędzia diagnostyczne podczas debugowania** **narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania.
   
-**Pokaż element PerfTip czas, który upłynął podczas debugowania** okna kod przedstawia czas, który upłynął wywołania metody danego podczas debugowania.  
+**Podczas debugowania Pokaż element perftip dla czasu upłynęło** okna kodu wyświetla czas wywołania danej metody podczas debugowania.  
   
-**Włącz Edytuj i Kontynuuj** można użyć edycji i kontynuować funkcji podczas debugowania.  
+**Włącz Edytuj i Kontynuuj** można użyć edycji i kontynuowania funkcji podczas debugowania.  
   
-- **Włącz natywnego Edytuj i Kontynuuj** można użyć edycji i kontynuować funkcji podczas debugowania kodu natywnego języka C++. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+- **Włączanie natywnego Edytuj i Kontynuuj** można użyć edycji i kontynuowania funkcji podczas debugowania kodu natywnego języka C++. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-- **Zastosuj zmiany przy kontynuowaniu (tylko kod natywny)** Visual Studio kompiluje i automatycznie stosuje zmiany oczekujące kodu zostały wykonane po kontynuowanie procesu w stanie przerwania. Nie wybrano można zastosować zmian przy użyciu elementu "Zastosowanie zmian kodu" w menu debugowania.  
+- **Zastosuj zmiany przy kontynuowaniu (tylko natywne)** programu Visual Studio kompiluje i automatycznie stosuje żadnych zmian w kodzie oczekujących wprowadzone podczas kontynuując proces w stanie przerwania. Jeśli nie jest zaznaczone, można zastosować zmian przy użyciu elementu "Zastosowanie zmian kodu" w menu Debugowanie.  
   
-- **Ostrzegaj o nieodświeżonym kodzie (tylko kod natywny)** uzyskać ostrzeżenia o kodzie nieodświeżonym.    
+- **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)** Pobierz ostrzeżenia o nieodświeżonym kodzie.    
 
-**Pokaż wykonywania kliknięcie przycisku w edytorze podczas debugowania** gdy ta opcja jest zaznaczona, [Uruchom kliknięcie](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) przycisk będzie wyświetlany podczas debugowania.
+**Pokaż Uruchom do kliknięcia przycisku w edytorze podczas debugowania** po wybraniu tej opcji [uruchamianie do kliknięcia](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) przycisk będzie wyświetlany podczas debugowania.
 
-## <a name="options-supported-in-older-versions-of-visual-studio"></a>Opcje obsługiwane we wcześniejszych wersjach programu Visual Studio
+## <a name="options-supported-in-older-versions-of-visual-studio"></a>Opcje obsługiwane w starszych wersjach programu Visual Studio
 
-Jeśli używasz starszej wersji programu Visual Studio, mogą występować pewne dodatkowe opcje.
+Jeśli używasz starszej wersji programu Visual Studio może istnieć pewne dodatkowe opcje.
 
-**Włącz Asystenta wyjątków** dla kodu zarządzanego włączone Asystenta wyjątków. W programie Visual Studio 2017 r. pomocnika wyjątków zastąpione Asystenta wyjątków.
+**Włącz Asystenta wyjątków** dla kodu zarządzanego, włączone Asystenta wyjątków. W programie Visual Studio 2017 pomocnika wyjątków zastąpione Asystenta wyjątków.
 
-**Odwiń stos wywołań w przypadku nieobsługiwanych wyjątków** powoduje, że **stos wywołań** okno, aby wycofać stosu wywołań do punktu przed Wystąpił nieobsługiwany wyjątek. 
+**Operacja unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** powoduje, że **stos wywołań** okna, aby wycofać stos wywołań do punktu przed wystąpieniem nieobsługiwanego wyjątku. 
 
-**Ostrzegaj w przypadku żadnych symboli przy uruchomieniu (tylko kod natywny)** Wyświetla okno dialogowe ostrzeżenia podczas debugowania programu, dla którego debugera nie ma symbolu informacji. 
+**Ostrzegaj, jeśli brak symboli podczas uruchamiania (tylko natywne)** Wyświetla okno dialogowe ostrzeżenia podczas próby debugowania programu, dla którego debuger nie ma żadnych informacji o symbolach. 
 
-**Ostrzegaj, jeśli debugowanie skryptów jest wyłączone przy uruchomieniu** Wyświetla okno dialogowe ostrzeżenia, gdy debuger jest uruchamiana z debugowanie skryptu wyłączone.
+**Ostrzegaj, jeśli debugowanie skryptów jest wyłączone w momencie uruchomienia** Wyświetla okno dialogowe ostrzeżenia, gdy debuger jest uruchamiany z wyłączonym debugowaniem skryptów.
 
-**Użyj natywnego trybu zgodności** gdy ta opcja jest zaznaczona, debuger używa debuger natywny programu Visual Studio 2010 zamiast nowego debuger natywny.  
+**Użyj trybu zgodności natywnych** po wybraniu tej opcji debuger używa macierzystym debugerze programu Visual Studio 2010, zamiast nowej macierzystym debugerze.  
   
-Tej opcji należy używać podczas debugowania kodu .NET C++, ponieważ nowy aparat debugowania nie obsługuje wyrażeń .NET C++ oszacowania. Jednak włączenie natywnego trybu zgodności wyłączenie wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszego aparatu brakuje wiele wizualizatorów dla wbudowanych typów, takich jak `std::string` w projektach Visual Studio 2015.   Użyj projektów programu Visual Studio 2013 celu zapewnienia optymalnego działania debugowania w tych przypadkach.
+Należy używać tej opcji podczas debugowania kodu w języku C++ platformy .NET, ponieważ nowy aparat debugowania nie obsługuje oceny wyrażeń języka C++ platformy .NET. Włączanie natywnego trybu zgodności wyłącza jednak wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszego aparatu nie posiada wiele wizualizatorów, dla wbudowanych typów, takich jak `std::string` w projektach programu Visual Studio 2015.   Projekty programu Visual Studio 2013 na użytek optymalne środowisko debugowania w tych przypadkach.
   
 ## <a name="see-also"></a>Zobacz także  
  [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

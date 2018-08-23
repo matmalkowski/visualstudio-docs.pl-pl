@@ -1,0 +1,70 @@
+---
+title: Właściwości elementów w diagramach aktywności UML | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-tfs-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.teamarch.activitydiagram.shapes.properties
+helpviewer_keywords:
+- UML, element properties
+- activity diagrams, properties
+ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
+caps.latest.revision: 19
+author: alexhomer1
+ms.author: gewarren
+manager: douge
+ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42630948"
+---
+# <a name="properties-of-elements-on-uml-activity-diagrams"></a>Właściwości elementów w diagramach aktywności UML
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Najnowszą wersję tego tematu znajduje się w temacie [właściwości elementów w diagramach aktywności UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams).  
+  
+Na diagramie aktywności UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
+  
+> [!NOTE]
+>  Ten temat dotyczy właściwości elementów w diagramach aktywności UML. Aby uzyskać informacje o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+  
+## <a name="properties-of-elements"></a>Właściwości elementów  
+  
+|Właściwość|Domyślny|Element|Opis|  
+|--------------|-------------|-------------|-----------------|  
+|**Nazwa**|Domyślna nazwa|Wszystkie|Identyfikuje element.|  
+|**Kwalifikowana nazwa**|Pakiet:: nazwy|Wszystkie|Jednoznacznie identyfikuje element. Prefiks kwalifikowaną nazwę pakietu, który go zawiera.|  
+|**Elementy robocze**|skojarzone 0|Wszystkie|Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).|  
+|**Opis**|(Brak)|Wszystkie|Można wprowadzić ogólne uwagi na temat elementu, w tym miejscu.|  
+|**Kolor**|(wartość domyślna dla typu)|Wszystkie|Kolor kształtu.|  
+|**Body**|(Brak)|Akcja|Określa akcję szczegółowo.|  
+|**Język**|(Brak)|Akcja|Język wyrażeń w treści.|  
+|**Lokalne warunków końcowych**|(Brak)|Akcja, wysyłania, Zaakceptuj wywołanie zachowanie wywołania operacji|Ograniczenia, które muszą zostać spełnione, po zakończeniu wykonywania. Celem osiągnięte przez akcję.|  
+|**Warunki wstępne lokalne**|(Brak)|Akcja, wysyłania, Zaakceptuj wywołanie zachowanie wywołania operacji|Ograniczenia, które muszą zostać spełnione przed rozpoczęciem wykonywania.|  
+|**Jest synchroniczne**|True|Wywołanie zachowanie, wywołaj operację|— W przypadku opcji true akcji czeka, aż do zakończenia działania.|  
+|**Behavior**|(Brak)|Zachowanie wywołania|— Działania wywoływane.|  
+|**Operacja**|(Brak)|Operacja wywołania|— Operacja wywołana.|  
+|**Jest wycofać**|False|Zaakceptuj zdarzeń|— W przypadku opcji true może istnieć kilka PinY wyjściowe wpisane, a dane są wycofana na nich. Jeśli wartość to false, wszystkie dane są wyświetlane na jeden kod pin.|  
+|**Górna granica**|**\***|Obiekt węzła parametru działania|**0** wskazuje, że danych musi pomyślnie przejść bezpośrednio strumieniu.<br /><br /> **\*** Wskazuje, że dane mogą być przechowywane w przepływie.|  
+|**Wybór**|(Brak)|Obiekt węzła, parametru działania, wprowadź numer Pin, dane wyjściowe numeru Pin, przepływ obiektu|Wywołuje procesu, który filtruje dane. Ten proces można zdefiniować na innym diagramie.|  
+|**Szeregowanie**|(Brak)|Obiekt węzła, parametru działania wprowadzania numer Pin numeru Pin w danych wyjściowych|— W jaki sposób wiele tokenów są przechowywane.|  
+|**Jest kontrola**|False|Wejściowy kod Pin, dane wyjściowe numeru Pin|— W przypadku opcji true, przepływ na ten numer pin jest przepływu sterowania. W przypadku wartości FAŁSZ jest przepływ obiektu.|  
+|**Typ**|(Brak)|Wejściowy kod Pin, dane wyjściowe numeru Pin, węzeł obiektu, parametru działania|-Typ obiektów przesyłanych.<br />-Typ może być typem pierwotnym, takie jak liczba całkowita lub klasyfikatora zdefiniowanej w innym miejscu w modelu. Jeśli wprowadzasz nazwę typu, który nie jest zdefiniowany, pojawi się na **nieokreślonym** części Eksploratora modelu UML.|  
+|**Liczebność**|1|Wejściowy kod Pin, dane wyjściowe numeru Pin|— Może być pojedynczą wartością lub zakres `[n..m]`.<br />-Dolna granica `n` -akcji nie może uruchomić (w przypadku wprowadzania numeru pin) lub zatrzymać (dla danych wyjściowych pin), aż nie wystąpią `n` obiekty oczekujące na numer pin.<br />-Górna granica `m` — akcja nie tworzą lub wykorzystują ponad `m` obiekty w jeden wykonywania. * oznacza, że nie ma żadnego limitu.|  
+|**Przekształcenia**|(Brak)|Obiekt przepływu|-Wywołuje procesu, który przekształca dane. Ten proces można zdefiniować na innym diagramie.|  
+|**Jest multiemisji**|False|Obiekt przepływu|— Wskazuje, że może być kilka obiektów adresatów lub składniki.|  
+|**Jest MultiReceive**|False|Obiekt przepływu|— Wskazuje, że może być kilka obiektów adresatów lub składniki.|  
+|**Jest pojedyncze wykonanie**|False|Diagram aktywności|-Jeśli ustawić, jest co najwyżej jednego wykonania tego diagramu w danym momencie.|  
+  
+## <a name="see-also"></a>Zobacz też  
+ [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)
+
+
+
