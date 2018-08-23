@@ -1,0 +1,1 @@
+[Pobierz program Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=524433) lub [porównaj wersje programu Visual Studio](https://www.visualstudio.com/vs-2015-product-editions)

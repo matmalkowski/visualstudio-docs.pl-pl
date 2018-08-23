@@ -1,0 +1,1 @@
+Nową stronę główną dla dokumentacji programu Visual Studio jest [dokumentacja programu Visual Studio 2017](http://docs.microsoft.com/visualstudio) w witrynie docs.microsoft.com.

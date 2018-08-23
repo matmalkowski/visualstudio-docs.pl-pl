@@ -24,46 +24,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120313"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635544"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Wskazówki: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych
 
-Usługa łączności danych biznesowych (BDC) umożliwia wyświetlanie danych biznesowych z wewnętrznego serwera aplikacji, usług sieci Web i baz danych programu SharePoint.
+Usługa łączności danych biznesowych (BDC) umożliwia wyświetlanie danych biznesowych z serwerów zaplecza aplikacji, usług sieci Web i baz danych programu SharePoint.
 
-W tym przewodniku przedstawiono sposób tworzenia modelu usługi BDC, który zwraca informacje o kontaktach w przykładowej bazie danych. Spowoduje to utworzenie listy zewnętrznej w SharePoint za pomocą tego modelu.
+W tym instruktażu przedstawiono sposób tworzenia modelu usługi BDC, który zwraca informacje o kontaktach w przykładowej bazie danych. Spowoduje to utworzenie listy zewnętrznej w SharePoint za pomocą tego modelu.
 
 W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie nowego projektu.
+- Tworzenie projektu.
 - Dodawanie jednostki do modelu.
 - Dodawanie metody wyszukiwania.
-- Dodawanie metody wyszukiwania.
+- Dodawanie określonej metody wyszukiwania.
 - Testowanie projektu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane wersje systemu Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Windows i programu SharePoint.
 
-- Dostęp do przykładowej bazy danych AdventureWorks. Aby uzyskać więcej informacji o sposobie instalowania bazy danych AdventureWorks, zobacz [baz danych programu SQL Server próbki](http://go.microsoft.com/fwlink/?LinkID=117483).
+- Dostęp do przykładowej bazy danych AdventureWorks. Aby uzyskać więcej informacji o sposobie instalowania bazy danych AdventureWorks, zobacz [baz danych programu SQL Server przykładowe](http://go.microsoft.com/fwlink/?LinkID=117483).
 
-## <a name="create-a-project-that-contains-a-bdc-model"></a>Utwórz projekt, który zawiera modelu BDC
+## <a name="create-a-project-that-contains-a-bdc-model"></a>Utwórz projekt, który zawiera model usługi łączności danych biznesowych
 
-1. Na pasku menu programu Visual Studio wybierz **pliku** > **nowy** > **projektu**.
+1. Na pasku menu w programie Visual Studio, wybierz **pliku** > **New** > **projektu**.
 
      **Nowy projekt** zostanie otwarte okno dialogowe.
 
-2. Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** elementu.
+2. W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** elementu.
 
-3. W **szablony** okienku wybierz **projektu programu SharePoint 2010**, nazwij projekt **AdventureWorksTest**, a następnie wybierz pozycję **OK** przycisku .
+3. W **szablony** okienku wybierz **projekt programu SharePoint 2010**, nadaj projektowi nazwę **AdventureWorksTest**, a następnie wybierz **OK** przycisku .
 
-     **Kreator dostosowania programu SharePoint** pojawi się. W tym kreatorze można określić lokacji, który ma być używany do debugowania projektu i ustawić poziom zaufania rozwiązania.
+     **Kreator ustawień niestandardowych SharePoint** pojawia się. W tym kreatorze można określić witryny, które będzie używane do debugowania projektu, a także Ustaw poziom zaufania rozwiązania.
 
 4. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, aby ustawić poziom zaufania.
 
@@ -75,17 +75,17 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
      **Dodaj nowy element** zostanie otwarte okno dialogowe.
 
-8. W **szablony** okienku wybierz **modelu łączności danych biznesowych (farmy rozwiązania tylko)**, nazwij projekt **AdventureWorksContacts**, a następnie wybierz pozycję **Dodaj** przycisku.
+8. W **szablony** okienku wybierz **modelu łączności danych biznesowych (tylko rozwiązanie farmy)**, nadaj projektowi nazwę **AdventureWorksContacts**, a następnie wybierz polecenie **Dodaj** przycisku.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Dodawanie klas dostępu do danych do projektu
 
 1. Na pasku menu wybierz **narzędzia** > **Połącz z bazą danych**.
 
-     **Dodawanie połączenia** zostanie otwarte okno dialogowe.
+     **Dodaj połączenie** zostanie otwarte okno dialogowe.
 
-2. Dodaj połączenie do przykładowej bazy danych AdventureWorks serwera SQL.
+2. Dodawanie połączenia z przykładową bazą danych programu SQL Server AdventureWorks.
 
-     Aby uzyskać więcej informacji, zobacz [Dodawanie i modyfikowanie połączenia (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Aby uzyskać więcej informacji, zobacz [Dodaj/Modyfikuj połączenie (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. W **Eksploratora rozwiązań**, wybierz węzeł projektu.
 
@@ -95,97 +95,97 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 6. W **szablony** okienku wybierz **klasy LINQ do SQL**.
 
-7. W **nazwa** określ **AdventureWorks**, a następnie wybierz pozycję **Dodaj** przycisku.
+7. W **nazwa** określ **AdventureWorks**, a następnie wybierz **Dodaj** przycisku.
 
-     Plik .dbml zostanie dodany do projektu, a następnie otwiera Projektant obiektów relacyjnych (Projektanta obiektów relacyjnych).
+     Plik dbml zostanie dodany do projektu, i otwiera Object Relational Designer (O/R Designer).
 
 8. Na pasku menu wybierz **widoku** > **Eksploratora serwera**.
 
-9. W **Eksploratora serwera**, rozwiń węzeł, który reprezentuje przykładową bazę danych AdventureWorks, a następnie rozwiń węzeł **tabel** węzła.
+9. W **Eksploratora serwera**, rozwiń węzeł, który reprezentuje przykładowej bazy danych AdventureWorks, a następnie rozwiń węzeł **tabel** węzła.
 
-10. Dodaj **kontaktu (osoba)** tabeli do Projektanta obiektów relacyjnych.
+10. Dodaj **kontaktu (osoba)** tabeli w Projektancie obiektów relacyjnych.
 
-     Klasa jednostki jest tworzony i wyświetlany na powierzchni projektu. Klasa jednostki ma właściwości, które mapują kolumny w tabeli Kontakt (osoba).
+     Klasa jednostki zostanie utworzony i wyświetlony na powierzchni projektowej. Klasa jednostki ma właściwości, które mapują do kolumn w tabeli Kontakt (osoba).
 
-## <a name="remove-the-default-entity-from-the-bdc-model"></a>Usuń jednostki domyślnej z modelu BDC
+## <a name="remove-the-default-entity-from-the-bdc-model"></a>Usuwanie jednostki domyślnej z modelu usługi BDC
 
-**Modelu łączności danych biznesowych** projektu dodaje do jednostki domyślne o nazwie Entity1 do modelu. Usunięcie tej jednostki. Później należy dodać nową jednostkę. Począwszy od pusty model zmniejsza liczbę czynności wymagane do ukończenia przewodnika.
+**Model usługi łączności danych biznesowych** projekt doda jednostki domyślnej, do modelu o nazwie jednostki Entity1. Usuń tę jednostkę. Później dodasz nowy obiekt. Począwszy od pustego modelu pozwala zmniejszyć liczbę kroków wymaganych do ukończeni instruktażu.
 
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **BdcModel1** węzeł, a następnie otwórz *BdcModel1.bdcm* pliku.
 
-2. Otwiera plik modelu usługi łączności danych biznesowych w Projektancie usługi łączności danych biznesowych.
+2. Plik modelu usługi łączności danych biznesowych zostanie otwarty w Projektancie usługi łączności danych biznesowych.
 
-3. W projektancie, otwórz menu skrótów **Entity1**, a następnie wybierz pozycję **usunąć**.
+3. W projektancie, otwórz menu skrótów dla **jednostki Entity1**, a następnie wybierz **Usuń**.
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów *Entity1.vb* (w języku Visual Basic) lub *Entity1.cs* (w języku C#), a następnie wybierz pozycję **usunąć** .
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla *Entity1.vb* (w języku Visual Basic) lub *Entity1.cs* (w języku C#), a następnie wybierz **Usuń** .
 
-5. Otwórz menu skrótów *Entity1Service.vb* (w języku Visual Basic) lub *Entity1Service.cs* (w języku C#), a następnie wybierz pozycję **usunąć**.
+5. Otwórz menu skrótów dla *Entity1Service.vb* (w języku Visual Basic) lub *Entity1Service.cs* (w języku C#), a następnie wybierz **Usuń**.
 
 ## <a name="add-an-entity-to-the-model"></a>Dodawanie jednostki do modelu
 
-Dodawanie jednostki do modelu. Można dodać jednostki z programu Visual Studio **przybornika** do projektanta usługi łączności danych biznesowych.
+Dodawanie jednostki do modelu. Można dodać jednostki w programie Visual Studio **przybornika** w Projektancie usługi łączności danych biznesowych.
 
 1. Na pasku menu wybierz **widoku** > **przybornika**.
 
-2. Na **BusinessDataConnectivity** karcie **przybornika**, Dodaj **jednostki** do projektanta usługi łączności danych biznesowych.
+2. Na **BusinessDataConnectivity** karcie **przybornika**, Dodaj **jednostki** w Projektancie usługi łączności danych biznesowych.
 
-     Nowa jednostka będzie wyświetlany w projektancie. Visual Studio dodaje plik o nazwie *EntityService.vb* (w języku Visual Basic) lub *EntityService.cs* (w języku C#) do projektu.
+     Nowa jednostka zostanie wyświetlony w projektancie. Program Visual Studio dodaje plik o nazwie *EntityService.vb* (w języku Visual Basic) lub *EntityService.cs* (w języku C#) do projektu.
 
 3. Na pasku menu wybierz **widoku** > **właściwości** > **okna**.
 
-4. W **właściwości** ustaw **nazwa** wartości właściwości do **skontaktuj się z**.
+4. W **właściwości** oknie **nazwa** wartość właściwości **skontaktuj się z pomocą**.
 
-5. W projektancie, otwórz menu skrótów dla jednostki, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **identyfikator**.
+5. W projektancie, otwórz menu skrótów dla jednostki, wybierz polecenie **Dodaj**, a następnie wybierz **identyfikator**.
 
-     Nowy identyfikator pojawia się na jednostce.
+     Nowy identyfikator pojawia się w jednostce.
 
-6. W **właściwości** okna, Zmień nazwę identyfikatora do **wartość ContactID**.
+6. W **właściwości** okna, Zmień nazwę identyfikator ma **wartość ContactID**.
 
 7. W **nazwy typu** wybierz **System.Int32**.
 
-## <a name="add-a-specific-finder-method"></a>Dodawanie metody wyszukiwania
+## <a name="add-a-specific-finder-method"></a>Dodawanie określonej metody wyszukiwania
 
-Aby włączyć usługi BDC do wyświetlania określonego kontaktu, należy dodać metody wyszukiwania. Usługa BDC wywołuje metodę określonej metody wyszukiwania, gdy użytkownik wybierze element na liście, a następnie wybiera **elementu widoku** na Wstążce.
+Aby włączyć usługi łączności danych biznesowych do wyświetlania określonego kontaktu, należy dodać określonej metody wyszukiwania. Usługa łączności danych biznesowych wywołuje metodę określonej metody wyszukiwania, gdy użytkownik wybierze element na liście, a następnie **elementu widoku** przycisk na Wstążce.
 
-Dodaj metody wyszukiwania do jednostki kontaktu przy użyciu **szczegóły metody usługi łączności danych biznesowych** okna. Aby powrócić do określonej jednostki, należy dodać kod do metody.
+Dodawanie określonej metody wyszukiwania do jednostki Contact przy użyciu **szczegóły metody BDC** okna. Aby przywrócić określonej jednostki, Dodaj kod do metody.
 
-1. W Projektancie BDC wybierz **skontaktuj się z** jednostki.
+1. W Projektancie usługi łączności danych biznesowych, wybierz **skontaktuj się z pomocą** jednostki.
 
-2. Na pasku menu wybierz **widoku** > **inne okna** > **szczegóły metody usługi łączności danych biznesowych**.
+2. Na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC**.
 
-     Zostanie otwarte okno Szczegóły metody usługi łączności danych biznesowych.
+     Zostanie otwarte okno Szczegóły metody BDC.
 
-3. W **Dodaj metodę** wybierz **utworzyć określonej metody wyszukiwania**.
+3. W **Dodaj metodę** wybierz **Tworzenie określonej metody wyszukiwania**.
 
-     Visual Studio dodaje następujące elementy do modelu. Te elementy są wyświetlane w **szczegóły metody usługi łączności danych biznesowych** okna.
+     Visual Studio dodaje następujące elementy w modelu. Te elementy są wyświetlane w **szczegóły metody BDC** okna.
 
     - Metodę o nazwie ReadItem.
 
-    - Parametr wejściowy dla metody.
+    - Parametr wejściowy metody.
 
-    - Parametr zwrotnego dla metody.
+    - Parametr zwracany przez metodę.
 
     - Deskryptor typu dla każdego parametru.
 
     - Wystąpienia metody dla metody.
 
-4. W **szczegóły metody usługi łączności danych biznesowych** okna, Otwórz listę, które pojawiają się **skontaktuj się z** deskryptor typu, a następnie wybierz pozycję **Edytuj**.
+4. W **szczegóły metody BDC** okna, Otwórz listę, która pojawia się dla **skontaktuj się z pomocą** deskryptor typu, a następnie wybierz **Edytuj**.
 
-     **Eksplorator modelu BDC** otwiera i udostępnia hierarchiczny widok modelu.
+     **Eksplorator BDC** otwiera i udostępnia hierarchiczny widok modelu.
 
-5. W **właściwości** oknie dalej, aby otworzyć listę **TypeName** właściwości, wybierz **bieżącego projektu** karcie, a następnie wybierz pozycję **skontaktuj się z**właściwości.
+5. W **właściwości** okna, Otwórz listę obok **TypeName** właściwości, wybierz **bieżący projekt** kartę, a następnie wybierz **skontaktuj się z pomocą**właściwości.
 
-6. W **Eksplorator modelu BDC**, otwórz menu skrótów **skontaktuj się z**, a następnie wybierz pozycję **dodać deskryptor typu**.
+6. W **Eksplorator BDC**, otwórz menu skrótów dla **skontaktuj się z pomocą**, a następnie wybierz **Dodaj deskryptor typu**.
 
-     Nowy deskryptor typu o nazwie **TypeDescriptor1** pojawia się w **Eksplorator modelu BDC**.
+     Nowy deskryptor typu, który nosi nazwę **TypeDescriptor1** pojawia się w **Eksplorator BDC**.
 
-7. W **właściwości** ustaw **nazwa** wartości właściwości do **wartość ContactID**.
+7. W **właściwości** oknie **nazwa** wartość właściwości **wartość ContactID**.
 
-8. Dalej, aby otworzyć listę **TypeName** właściwości, a następnie wybierz pozycję **Int32**.
+8. Otwórz listę obok **TypeName** właściwości, a następnie wybierz **Int32**.
 
-9. Dalej, aby otworzyć listę **identyfikator** właściwości, a następnie wybierz pozycję **wartość ContactID**.
+9. Otwórz listę obok **identyfikator** właściwości, a następnie wybierz **wartość ContactID**.
 
-10. Powtórz krok 6, aby utworzyć deskryptor typu dla każdego z poniższych pól.
+10. Powtórz krok 6, aby utworzyć deskryptora typu dla każdego z poniższych pól.
 
     |Nazwa|Nazwa typu|
     |----------|---------------|
@@ -198,82 +198,82 @@ Dodaj metody wyszukiwania do jednostki kontaktu przy użyciu **szczegóły metod
     |PasswordHash|System.String|
     |PasswordSalt|System.String|
 
-11. W Projektancie BDC na **skontaktuj się z** jednostki, otwórz **ReadItem** metody.
+11. W Projektancie usługi łączności danych biznesowych na **skontaktuj się z pomocą** jednostki, otwórz **ReadItem** metody.
 
      Skontaktuj się z pliku kodu usługi zostanie otwarty w edytorze kodu.
 
-12. W `ContactService` klasy, Zastąp `ReadItem` metodę z następującym kodem. Kod będzie wykonywał następujące zadania:
+12. W `ContactService` klasy, Zastąp `ReadItem` metoda następującym kodem. Kod będzie wykonywał następujące zadania:
 
-    - Pobiera rekord z tabeli skontaktuj się z bazy danych AdventureWorks.
+    - Pobiera rekord z tabeli Kontakt bazy danych AdventureWorks.
 
-    - Zwraca obiektu Kontakt z usługą BDC.
+    - Zwraca jednostki Contact do usługi łączności danych biznesowych.
 
     > [!NOTE]
-    > Zastąp wartość `ServerName` nazwę serwera.
+    > Zastąp wartość `ServerName` pole z nazwą serwera.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
 ## <a name="add-a-finder-method"></a>Dodawanie metody wyszukiwania
 
-Aby włączyć usługę BDC do wyświetlenia na liście kontaktów, należy dodać metody wyszukiwania. Dodawanie metody wyszukiwania do obiektu kontakt przy użyciu **szczegóły metody usługi łączności danych biznesowych** okna. Aby przywrócić kolekcji jednostek usługi BDC, Dodaj kod do metody.
+Aby włączyć usługi BDC wyświetlić kontakty na liście, należy dodać metodę wyszukiwania. Dodawanie metody wyszukiwania do jednostki Contact przy użyciu **szczegóły metody BDC** okna. Aby przywrócić kolekcję jednostek usługi łączności danych biznesowych, należy dodać kod do metody.
 
-1. W Projektancie BDC wybierz **skontaktuj się z** jednostki.
+1. W Projektancie usługi łączności danych biznesowych wybierz **skontaktuj się z pomocą** jednostki.
 
-2. W **szczegóły metody usługi łączności danych biznesowych** okna, należy Zwiń **ReadItem** węzła.
+2. W **szczegóły metody BDC** oknie Zwiń **ReadItem** węzła.
 
-3. W **Dodaj metodę** w obszarze **ReadList** metody, wybierz **Utwórz metody wyszukiwania**.
+3. W **Dodaj metodę** w obszarze **ReadList** metody wybierz **Utwórz metodę wyszukującą**.
 
-     Visual Studio dodaje metody, parametr zwrotnego i deskryptor typu.
+     Visual Studio dodaje metodę, parametr zwracany i deskryptor typu.
 
-4. W Projektancie BDC na **skontaktuj się z** jednostki, otwórz **ReadList** metody.
+4. W Projektancie usługi łączności danych biznesowych na **skontaktuj się z pomocą** jednostki, otwórz **ReadList** metody.
 
      Pliku kodu usługi kontaktów zostanie otwarty w edytorze kodu.
 
-5. W `ContactService` klasy, Zastąp `ReadList` metodę z następującym kodem. Kod będzie wykonywał następujące zadania:
+5. W `ContactService` klasy, Zastąp `ReadList` metoda następującym kodem. Kod będzie wykonywał następujące zadania:
 
-    - Pobiera dane z bazy danych AdventureWorks tabeli kontaktów.
+    - Pobiera dane z tabeli kontaktów bazy danych AdventureWorks.
 
-    - Zwraca listę jednostek skontaktuj się z usługą BDC.
+    - Zwraca listę jednostkami kontaktowymi do usługi łączności danych biznesowych.
 
     > [!NOTE]
-    > Zastąp wartość `ServerName` nazwę serwera.
+    > Zastąp wartość `ServerName` pole z nazwą serwera.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
 ## <a name="test-the-project"></a>Projekt testowy
 
-Po uruchomieniu projektu otwiera witrynę programu SharePoint i Visual Studio dodaje modelu usługi łączności danych biznesowych. Tworzenie listy zewnętrznej w SharePoint, która odwołuje się do obiektu Kontakt. Dane dotyczące kontaktów w bazie danych AdventureWorks znajdują się na liście.
+Kiedy uruchamiasz projekt, otwiera się witryna SharePoint i Visual Studio dodaje modelu usługi łączności danych biznesowych. Tworzenie listy zewnętrznej w SharePoint, który odwołuje się do jednostki Contact. Dane o kontakty w usłudze bazy danych AdventureWorks są wyświetlane na liście.
 
 > [!NOTE]
-> Może być konieczne przed debugowaniem rozwiązania zmodyfikować ustawienia zabezpieczeń w programie SharePoint. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+> Trzeba będzie zmodyfikować ustawienia zabezpieczeń w programie SharePoint, zanim można było debugować swoje rozwiązanie. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 1. Wybierz **F5** klucza.
 
-     Otwieranie witryny programu SharePoint.
+     Otwiera się witryna SharePoint.
 
 2. Na **Akcje witryny** menu, wybierz **więcej opcji** polecenia.
 
-3. Na **Utwórz** wybierz pozycję **listy zewnętrznej** szablonu, a następnie wybierz pozycję **Utwórz** przycisku.
+3. Na **Utwórz** wybierz **listy zewnętrznej** szablonu, a następnie wybierz **Utwórz** przycisku.
 
-4. Lista niestandardowych nazw **kontaktów**.
+4. Nadaj nazwę listy niestandardowej **kontakty**.
 
-5. Kliknij przycisk Przeglądaj obok **typu zawartości zewnętrznej** pola.
+5. Wybierz przycisk przeglądania **typu zawartości zewnętrznej** pola.
 
-6. W **zewnętrznych selektor typu zawartości** okno dialogowe Wybierz **AdventureWorksContacts.BdcModel1.Contact** elementu, a następnie wybierz pozycję **Utwórz** przycisku.
+6. W **zewnętrznych selektor typu zawartości** okna dialogowego wybierz **AdventureWorksContacts.BdcModel1.Contact** elementu, a następnie wybierz **Utwórz** przycisku.
 
-     SharePoint tworzy listy zewnętrznej, która zawiera kontakty z przykładową bazę danych AdventureWorks.
+     Program SharePoint tworzy listę zewnętrzną, która zawiera kontakty z przykładowej bazy danych AdventureWorks.
 
-7. Aby przetestować metody wyszukiwania, wybierz z listy kontakt.
+7. Aby przetestować konkretną metodę wyszukiwania, wybierz kontakt na liście.
 
-8. Na Wstążce wybierz **elementów** karcie, a następnie wybierz pozycję **elementu widoku** polecenia.
+8. Na Wstążce, wybierz **elementów** kartę, a następnie wybierz **elementu widoku** polecenia.
 
-     Szczegóły kontaktu, która została wybrana opcja są wyświetlane w formularzu.
+     Szczegóły kontaktu, która została wybrana są wyświetlane w formularzu.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Można poznać więcej informacji na temat sposobu projektowania modele usługi BDC w programie SharePoint z tych tematów:
+Możesz dowiedzieć się więcej o projektowaniu modeli usługi łączności danych biznesowych w programie SharePoint w tych tematach:
 
 - [Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md).
 - [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md).

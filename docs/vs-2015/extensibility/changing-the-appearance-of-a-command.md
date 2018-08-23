@@ -1,0 +1,101 @@
+---
+title: Zmiana wyglądu polecenia | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- commands, changing appearance
+- menu commands, changing appearance
+- menus, changing command appearance
+ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
+caps.latest.revision: 24
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d707451b71efdd41a470c2e1e54353e2fdfe4f01
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42691671"
+---
+# <a name="changing-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Najnowszą wersję tego tematu znajduje się w temacie [zmiana wyglądu polecenia](https://docs.microsoft.com/visualstudio/extensibility/changing-the-appearance-of-a-command).  
+  
+Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład możesz polecenie będzie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, ukryć lub pokazać je, lub sprawdź lub usuń ich zaznaczenie w menu.  
+  
+ Zmiana wyglądu polecenia, wykonaj jedną z następujących czynności:  
+  
+-   Określ odpowiednie flagi w definicji polecenia w pliku poleceń w tabeli.  
+  
+-   Użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usługi.  
+  
+-   Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu i modyfikowania obiektów pierwotnych polecenia.  
+  
+ Poniższe kroki pokazują jak znaleźć i zaktualizować wyglądu polecenia przy użyciu Framework pakietu zarządzanego (MPF).  
+  
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Zmiana wyglądu polecenia menu  
+  
+1.  Postępuj zgodnie z instrukcjami w [zmiana tekstu polecenia Menu](../extensibility/changing-the-text-of-a-menu-command.md) utworzyć element menu o nazwie `New Text`.  
+  
+2.  W pliku ChangeMenuText.cs, dodaj następującą instrukcję using:  
+  
+    ```csharp  
+    using System.Security.Permissions;  
+    ```  
+  
+3.  W pliku ChangeMenuTextPackageGuids.cs Dodaj następujący wiersz:  
+  
+    ```csharp  
+    public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
+    ```  
+  
+4.  W pliku ChangeMenuText.cs Zastąp kod w metodzie ShowMessageBox następujących czynności:  
+  
+    ```csharp  
+    private void ShowMessageBox(object sender, EventArgs e)  
+    {  
+        var command = sender as OleMenuCommand;  
+        if (command.Text == "New Text")  
+            ChangeMyCommand(command.CommandID.ID, false);}  
+    }  
+    ```  
+  
+5.  Uzyskaj polecenie, które chcesz zaktualizować z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> obiektu, a następnie ustaw odpowiednie właściwości w obiekcie command. Na przykład poniższa metoda sprawia, że określone polecenie z poziomu polecenia pakietu VSPackage dostępne lub niedostępne. Poniższy kod sprawia, że element menu o nazwie `New Text` niedostępna po jego kliknięciu.  
+  
+    ```csharp  
+    public bool ChangeMyCommand(int cmdID, bool enableCmd)  
+    {  
+        bool cmdUpdated = false;  
+        var mcs = this.ServiceProvider.GetService(typeof(IMenuCommandService))  
+            as OleMenuCommandService;  
+        var newCmdID = new CommandID(new Guid(ChangeMenuTextPackageGuids.guidChangeMenuTextPackageCmdSet), cmdID);  
+        MenuCommand mc = mcs.FindCommand(newCmdID);  
+        if (mc != null)  
+        {  
+            mc.Enabled = enableCmd;  
+            cmdUpdated = true;  
+        }  
+        return cmdUpdated;    }  
+    }  
+    ```  
+  
+6.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
+  
+7.  Na **narzędzia** menu, kliknij przycisk **wywołania ChangeMenuText** polecenia. W tym momencie nazwa polecenia jest **wywołania ChangeMenuText**, dlatego program obsługi poleceń nie wywołuje ChangeMyCommand().  
+  
+8.  Na **narzędzia** menu powinien zostać wyświetlony **nowy tekst**. Kliknij przycisk **nowy tekst**. Polecenie powinno teraz wyszarzone.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+
