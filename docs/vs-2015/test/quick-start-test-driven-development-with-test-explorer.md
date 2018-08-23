@@ -1,0 +1,300 @@
+---
+title: 'Szybki Start: Testowanie programowanie sterowane za pomocą narzędzia Eksplorator testów | Dokumentacja firmy Microsoft'
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
+caps.latest.revision: 17
+ms.author: gewarren
+manager: douge
+ms.openlocfilehash: c2d55dde85bd5a1b18d4424515ef58e7c4c3273f
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42683862"
+---
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Najnowszą wersję tego tematu znajduje się w temacie [— Szybki Start: tworzenie opartych na testów w Eksploratorze testów](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer).  
+  
+Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.  
+  
+ Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji programu Visual Studio. Jego zalety obejmują:  
+  
+-   Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.  
+  
+-   Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.  
+  
+-   Zobacz w jednym oknie użytkownikowi potrzebnych informacji.  
+  
+## <a name="using-test-explorer"></a>Za pomocą narzędzia Eksplorator testów  
+ ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
+  
+#### <a name="to-run-unit-tests-by-using-test-explorer"></a>Aby uruchomić testy jednostkowe za pomocą Eksploratora testów  
+  
+1.  Tworzenie testów jednostkowych, które używają wybranych środowisk testowych.  
+  
+     Na przykład aby utworzyć test który używa środowiska Mstest:  
+  
+    1.  Utwórz projekt testu.  
+  
+         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic**, **Visual C#**, lub **Visual C++**, a następnie wybierz **testu**.  
+  
+         Wybierz **projektu testu jednostkowego**.  
+  
+    2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.  
+  
+2.  Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małych](../test/media/ute-parallelicon-small.png "małych UTE_parallelicon") Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.  
+  
+3.  Na pasku menu wybierz **testu**, **uruchomić testy jednostkowe**, **wszystkie testy**.  
+  
+     Rozwiązanie zostanie skompilowane i uruchomić testy.  
+  
+     Eksplorator testów otwiera i wyświetla podsumowanie wyników.  
+  
+ **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.  
+  
+ **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.  
+  
+ **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.  
+  
+ **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.  
+  
+> [!IMPORTANT]
+>  Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.  
+  
+> [!NOTE]
+>  Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [używanie różnych środowisk testowych w Eksploratorze testów](#frameworks).  
+  
+##  <a name="walkthrough"></a> Przewodnik: Używanie testów jednostkowych do opracowania metody  
+ W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [używanie różnych środowisk testowych](#frameworks).  
+  
+#### <a name="creating-the-test-and-method"></a>Tworzenie testu i metody  
+  
+1.  Utwórz projekt Visual biblioteki klas C#. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.  
+  
+2.  Utwórz projekt testu.  
+  
+    -   W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **projektu testu jednostkowego**.  
+  
+         ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+  
+3.  Napisz podstawową metodę testową. Sprawdź wynik uzyskany dla określonych danych wejściowych:  
+  
+    ```csharp  
+  
+    [TestMethod]  
+    public void BasicRooterTest()  
+    {  
+      // Create an instance to test:  
+      Rooter rooter = new Rooter();  
+      // Define a test input and output value:  
+      double expectedResult = 2.0;  
+      double input = expectedResult * expectedResult;  
+      // Run the method under test:  
+      double actualResult = rooter.SquareRoot(input);  
+      // Verify the result:  
+      Assert.AreEqual(expectedResult, actualResult,  
+          delta: expectedResult / 100);  
+    }  
+    ```  
+  
+4.  Wygeneruj metodę z testu.  
+  
+    1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.  
+  
+    2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.  
+  
+    3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj**, **szkieletu metody**.  
+  
+5.  Uruchom test jednostkowy.  
+  
+    1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe**, **wszystkie testy**.  
+  
+         Rozwiązanie zostanie skompilowane i działa.  
+  
+         Eksplorator testów otwiera i wyświetla wyniki.  
+  
+         Test pojawi się w obszarze **testy zakończone niepomyślnie**.  
+  
+6.  Wybierz nazwę testu.  
+  
+     Szczegóły testu zostaną wyświetlone w dolnej części Eksploratora testów.  
+  
+7.  Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.  
+  
+ ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+  
+ Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.  
+  
+#### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie należy wprowadzić wszystkie testy.  
+  
+1.  W `MyMath\Rooter.cs`, Popraw kod metody `SquareRoot`:  
+  
+    ```csharp  
+    public double SquareRoot(double input)  
+     {  
+       return input / 2;  
+     }  
+    ```  
+  
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+  
+     Kod zostanie skompilowany, a test uruchomiony.  
+  
+     Test zakończy się pomyślnie.  
+  
+     ![Jednostka Test Explorer z wyświetlonym testu wynikiem pozytywnym. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych  
+  
+1.  Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.  
+  
+    > [!TIP]
+    >  Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Zasada ta pomaga upewnić się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.  
+  
+     W klasie testów Dodaj następujący test, który sprawdzi zakres wartości wejściowych:  
+  
+    ```csharp  
+    [TestMethod]  
+    public void RooterValueRange()  
+    {  
+      // Create an instance to test:  
+      Rooter rooter = new Rooter();  
+      // Try a range of values:  
+      for (double expectedResult = 1e-8;  
+          expectedResult < 1e+8;  
+          expectedResult = expectedResult * 3.2)  
+      {  
+        RooterOneValue(rooter, expectedResult);  
+      }  
+    }  
+  
+    private void RooterOneValue(Rooter rooter, double expectedResult)  
+    {  
+      double input = expectedResult * expectedResult;  
+      double actualResult = rooter.SquareRoot(input);  
+      Assert.AreEqual(expectedResult, actualResult,  
+          delta: expectedResult / 1000);  
+    }  
+    ```  
+  
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+  
+     Nowy test kończy się niepowodzeniem, chociaż nadal przechodzi pierwszy test.  
+  
+     Aby znaleźć punkt awarii, zaznacz test niepowodzeniem, a następnie w dolnej części Eksploratora testów wybierz górny element w sekcji **ślad stosu**.  
+  
+3.  Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:  
+  
+    ```  
+    public double SquareRoot(double input)  
+    {  
+      double result = input;  
+      double previousResult = -input;  
+      while (Math.Abs(previousResult - result) > result / 1000)  
+      {  
+        previousResult = result;  
+        result = result - (result * result - input) / (2 * result);  
+      }  
+      return result;  
+    }  
+    ```  
+  
+4.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+  
+     Teraz kod przechodzi oba testy.  
+  
+#### <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów wyjątkowych przypadków  
+  
+1.  Dodaj test ujemnych danych wejściowych:  
+  
+    ```csharp  
+    [TestMethod]  
+     public void RooterTestNegativeInputx()  
+     {  
+         Rooter rooter = new Rooter();  
+         try  
+         {  
+             rooter.SquareRoot(-10);  
+         }  
+         catch (ArgumentOutOfRangeException e)  
+         {  
+             return;  
+         }  
+         Assert.Fail();  
+     }  
+    ```  
+  
+2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+  
+     Testowana metoda zapętla i musi zostać anulowana ręcznie.  
+  
+3.  Wybierz **anulować**.  
+  
+     Test zatrzyma się po 10 sekundach.  
+  
+4.  Napraw kod metody:  
+  
+    ```csharp  
+  
+    public double SquareRoot(double input)  
+    {  
+      if (input <= 0.0)   
+      {  
+        throw new ArgumentOutOfRangeException();  
+      }   
+    ...  
+    ```  
+  
+5.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+  
+     Kod przechodzi wszystkie testy.  
+  
+#### <a name="refactor-without-changing-tests"></a>Refaktoryzacja bez zmieniania testów  
+  
+1.  Uprość kod, ale nie zmieniaj testów.  
+  
+    > [!TIP]
+    >  A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.  
+    >   
+    >  Firma Microsoft zaleca, aby wykonać kroki refaktoryzacji oddzielnie od kroków, które rozszerzają funkcjonalność. Utrzymywanie testów w niezmienionej postaci daje pewność, że możesz mieć nie zostaną przypadkowo wprowadzone usterki podczas refaktoryzacji.  
+  
+    ```csharp  
+    public class Rooter  
+    {  
+      public double SquareRoot(double input)  
+      {  
+        if (input <= 0.0)   
+        {  
+          throw new ArgumentOutOfRangeException();  
+        }  
+        double result = input;  
+        double previousResult = -input;  
+        while (Math.Abs(previousResult - result) > result / 1000)  
+        {  
+          previousResult = result;  
+          result = (result + input / result) / 2;  
+          //was: result = result - (result * result - input) / (2*result);  
+        }  
+        return result;  
+      }  
+    }  
+    ```  
+  
+2.  Wybierz **uruchomić wszystkie**.  
+  
+     Kod nadal przechodzi wszystkie testy.  
+  
+     ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+
+
+
