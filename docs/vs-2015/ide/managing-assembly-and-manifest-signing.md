@@ -1,0 +1,82 @@
+---
+title: Zarządzanie podpisywaniem zestawu i manifestu | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- manifests [Visual Studio]
+- signing manifests [Visual Studio]
+- application manifests [Visual Studio]
+- assemblies [Visual Studio], signing
+ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
+caps.latest.revision: 18
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42680066"
+---
+# <a name="managing-assembly-and-manifest-signing"></a>Zarządzanie zestawem i podpisywanie manifestu
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie zestawu i manifestu podpisywania](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing).  
+  
+Podpisywania silnymi zawiera składnik oprogramowania globalnie unikatową tożsamość. Silne nazwy są używane w celu zagwarantowania, że zestaw nie sfałszowane przez kogoś innego i upewnij się, że składnika, zależności i instrukcji konfiguracji mapowania na poprawne składnik, a wersja składnika.  
+  
+ Silna nazwa składa się z tożsamości zestawu (nazwa prosty tekst, numeru wersji i informacji o kulturze) oraz token klucza publicznego i podpisu cyfrowego.  
+  
+ Aby uzyskać informacje na temat podpisywania zestawów w projektach Visual Basic i C#, zobacz [tworzenie i zestawy Using Strong-Named](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  
+ Aby uzyskać informacji na temat podpisywania zestawów w projektach języka Visual C++, zobacz [zestawy o silnej nazwach (podpisywanie zestawów) (C + +/ interfejsu wiersza polecenia)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
+  
+## <a name="asset-types-and-signing"></a>Typy zasobów i podpisywania  
+ Można podpisać manifesty aplikacji i zestawy .NET. Należą do nich między innymi:  
+  
+-   pliki wykonywalne (.exe)  
+  
+-   Manifesty aplikacji (. exe.manifest)  
+  
+-   manifesty wdrożenia (.application)  
+  
+-   współużytkowany składnik zestawy (.dll)  
+  
+ Musisz zalogować się następujące typy zasobów:  
+  
+1.  Zestawy, jeśli chcesz wdrożyć je w globalnej pamięci podręcznej zestawów (GAC).  
+  
+2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifesty aplikacji i wdrożenia. Program Visual Studio umożliwia podpisywania domyślnie w przypadku tych aplikacji.  
+  
+3.  Podstawowe zestawy międzyoperacyjne, które są używane do współdziałania COM. Narzędzia TLBIMP wymusza silne nazwy podczas tworzenia podstawowego zestawu międzyoperacyjnego z biblioteki typów COM.  
+  
+ Ogólnie rzecz biorąc nie powinien utworzyć pliki wykonywalne. Składnik silnej nazwy nie mogą odwoływać się bez — nazwie składnik wdrożoną wraz z aplikacją. Visual Studio nie podpisuje plików wykonywalnych aplikacji, ale zamiast tego podpisuje manifest aplikacji, które wskazuje do pliku wykonywalnego o nazwie weak. Ogólnie należy unikać podpisywania składników, które są prywatne do aplikacji, ponieważ podpisywanie może utrudnić zarządzanie zależnościami.  
+  
+## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak zarejestrować zestaw w programie Visual Studio  
+ Podpisywania aplikacji lub składnika przy użyciu **podpisywanie** karty w oknie właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typu **właściwości projektu** w **Szybkie uruchamianie** okna, naciśnij klawisze ALT + ENTER w **Eksploratora rozwiązań** okna). Wybierz **podpisywanie** kartę, a następnie wybierz **Podpisz zestaw** pole wyboru.  
+  
+ Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, należy pamiętać, że zawsze zostaną utworzone nowe pliki klucza w formacie pfx. Należy nazwę i hasło dla nowego pliku.  
+  
+> [!WARNING]
+>  Zawsze należy chronić Twojego pliku klucza o hasło, aby uniemożliwić korzystanie z jej przez kogoś innego. Możesz również klucze można zabezpieczyć przy użyciu dostawców lub magazynów certyfikatów.  
+  
+ Możesz też wskazać w kluczu już utworzony. Aby uzyskać więcej informacji na temat tworzenia kluczy, zobacz [jak: utworzyć parę klucz publiczny i prywatny](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+  
+ Jeśli masz dostęp tylko klucz publiczny, można użyć opóźnione podpisywanie mają być odroczone przypisywanie klucza. Włączanie opóźnione podpisywanie, wybierając **opóźnienie logowania tylko** pole wyboru. Projekt podpisywane z opóźnieniem nie będzie działać i nie można go debugować. Jednakże, możesz pominąć weryfikacji podczas programowania przy użyciu [Sn.exe (narzędzie silnych nazw)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) z `-Vr` opcji.  
+  
+ Aby uzyskać informacje dotyczące podpisywania manifestów, zobacz [porady: podpisywanie aplikacji i manifestów wdrożenia](../ide/how-to-sign-application-and-deployment-manifests.md).  
+  
+## <a name="see-also"></a>Zobacz też  
+ [Zestawy o silnych nazwach](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Zestawy o silnych nazwach (podpisywanie zestawów) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+
+
+

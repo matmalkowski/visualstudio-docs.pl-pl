@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie witryny niestandardowego działania przepływu pracy | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie niestandardowego przepływu pracy działania witryny | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,113 +21,113 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120317"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627360"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Wskazówki: Tworzenie witryny niestandardowego działania przepływu pracy
-  Ten przewodnik przedstawia sposób tworzenia działań niestandardowych do przepływu pracy z poziomu witryny przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Przepływy pracy poziomie witryny dotyczą całej lokacji, a nie tylko listy w witrynie). Działania niestandardowego tworzy kopię zapasową listy anonsów, a następnie kopiuje zawartość listy anonsów do niego.  
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Tworzenie niestandardowego przepływu pracy działania witryny
+  W tym instruktażu pokazano, jak utworzyć niestandardowe działanie na poziomie witryny przepływu pracy przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Przepływy pracy poziomie witryny dotyczą całej lokacji, a nie tylko listy w witrynie). Niestandardowe działanie tworzy kopię zapasową listy anonsów i następnie kopiuje zawartość listy ogłoszeń tę sytuację.  
   
- W tym przewodniku przedstawiono następujące zadania:  
+ W tym instruktażu pokazano następujące zagadnienia:  
   
--   Tworzenie przepływu pracy z poziomu witryny.  
+-   Tworzenie na poziomie witryny przepływu pracy.  
   
--   Tworzenie działania niestandardowego przepływu pracy.  
+-   Tworzenie działań niestandardowych przepływów pracy.  
   
 -   Tworzenie i usuwanie listy programu SharePoint.  
   
--   Kopiowanie elementów z listy jeden do innego.  
+-   Kopiuje elementy z jednej listy do innego.  
   
--   Wyświetlanie listy na pasek szybkiego uruchamiania.  
+-   Wyświetlanie listy na pasku szybkiego uruchamiania.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
   
 -   Program Visual Studio.  
   
-## <a name="create-a-site-workflow-custom-activity-project"></a>Tworzenie projektu lokacji niestandardowego działania przepływu pracy
- Najpierw utwórz projekt do przechowywania i przetestować działania niestandardowego przepływu pracy.  
+## <a name="create-a-site-workflow-custom-activity-project"></a>Tworzenie projektu niestandardowego działania przepływu pracy witryny
+ Najpierw utwórz projekt do przechowywania i przetestować działanie niestandardowego przepływu pracy.  
   
 #### <a name="to-create-a-site-workflow-custom-activity-project"></a>Aby utworzyć projekt niestandardowego działania przepływu pracy witryny  
   
-1.  Na pasku menu wybierz **pliku** > **nowy** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1.  Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
-2.  Rozwiń węzeł **SharePoint** węźle albo **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **2010** węzła.  
+2.  Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.  
   
-3.  W **szablony** okienku wybierz **projektu programu SharePoint 2010** szablonu.  
+3.  W **szablony** okienku wybierz **projekt programu SharePoint 2010** szablonu.  
   
-4.  W **nazwa** wprowadź **AnnouncementBackup**, a następnie wybierz pozycję **OK** przycisku.  
+4.  W **nazwa** wprowadź **AnnouncementBackup**, a następnie wybierz **OK** przycisku.  
   
-     **Kreator dostosowania programu SharePoint** pojawi się.  
+     **Kreator ustawień niestandardowych SharePoint** pojawia się.  
   
-5.  Na **określić poziom lokacji i zabezpieczeń dla debugowania** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisk, aby zaakceptować poziom i domyślne witryny zaufania.  
+5.  Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisk, aby zaakceptować Witryna poziom i domyślne zaufanie.  
   
-     Ten krok określa poziom zaufania dla rozwiązania jako rozwiązanie farmy, jedyną dostępną opcją dla projektów przepływu pracy.  
+     W tym kroku ustawia poziom zaufania dla rozwiązania jako rozwiązanie farmy, jedyną dostępną opcją w przypadku projektów przepływu pracy.  
   
 6.  W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-7.  Pod **Visual C#** lub **Visual Basic**, rozwiń węzeł **SharePoint** węzeł, a następnie wybierz pozycję **2010** węzła.  
+7.  W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.  
   
-8.  W **szablony** okienku wybierz **sekwencyjnego przepływu pracy (tylko rozwiązanie farmy)** szablonu, a następnie wybierz pozycję **Dodaj** przycisku.  
+8.  W **szablony** okienku wybierz **sekwencyjnego przepływu pracy (tylko rozwiązanie farmy)** szablonu, a następnie wybierz **Dodaj** przycisku.  
   
-     **Kreator dostosowania programu SharePoint** pojawi się.  
+     **Kreator ustawień niestandardowych SharePoint** pojawia się.  
   
-9. Na **Określ nazwę przepływu pracy do debugowania** pozycję Zaakceptuj nazwę domyślną (AnnouncementBackup - Workflow1). Zmień typ szablonu przepływu pracy do **przepływu pracy lokacji**, a następnie wybierz pozycję **dalej** przycisku.  
+9. Na **Określ nazwę przepływu pracy debugowania** strona, zaakceptuj nazwę domyślną (AnnouncementBackup - Workflow1). Zmień typ szablonu przepływu pracy na **przepływ pracy witryny**, a następnie wybierz **dalej** przycisku.  
   
-10. Wybierz **Zakończ** przycisk, aby zaakceptować pozostałe ustawienia domyślne.  
+10. Wybierz **Zakończ** przycisk, aby zaakceptować ustawienia domyślne w pozostałych.  
   
-## <a name="add-a-custom-workflow-activity-class"></a>Dodaj klasę działania niestandardowego przepływu pracy
- Następnie Dodaj klasę do projektu, aby zawierają kod dla działania niestandardowego przepływu pracy.  
+## <a name="add-a-custom-workflow-activity-class"></a>Dodaj klasę działanie niestandardowego przepływu pracy
+ Następnie należy dodać klasę do projektu, który zawiera kod działanie niestandardowego przepływu pracy.  
   
-#### <a name="to-add-a-custom-workflow-activity-class"></a>Aby dodać klasę działania niestandardowego przepływu pracy  
+#### <a name="to-add-a-custom-workflow-activity-class"></a>Aby dodać klasę działanie niestandardowego przepływu pracy  
   
 1.  Na pasku menu wybierz **projektu** > **Dodaj nowy element** do wyświetlenia **Dodaj nowy element** okno dialogowe.  
   
-2.  W **zainstalowane szablony** widok drzewa, wybierz **kod** węzeł, a następnie wybierz pozycję **klasy** szablonu na liście szablony elementów projektu. Użyj nazwy domyślnej Class1. Wybierz **Dodaj** przycisku.  
+2.  W **zainstalowane szablony** widoku drzewa, wybierz polecenie **kodu** węzła, a następnie wybierz **klasy** szablonu na liście szablonów elementów projektów. Użyj domyślnej nazwy Class1. Wybierz **Dodaj** przycisku.  
   
-3.  Zastąp cały kod w Class1 następujące czynności:  
+3.  Zastąp cały kod w Class1 następujących czynności:  
   
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
   
 4.  Zapisz projekt, a następnie na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.  
   
-     Class1 pojawia się jako akcja niestandardowa w **przybornika** na **składniki AnnouncementBackup** kartę.  
+     Moduł Class1 jest wyświetlany jako akcję niestandardową w **przybornika** na **składniki AnnouncementBackup** kartę.  
   
 ## <a name="add-the-custom-activity-to-the-site-workflow"></a>Dodawanie działań niestandardowych do przepływu pracy witryny
  Następnie Dodaj działanie w przepływie pracy zawiera kod niestandardowy.  
   
 #### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Do dodawania działań niestandardowych do przepływu pracy witryny
   
-1.  Otwórz Workflow1 w Projektancie przepływów pracy w widoku Projekt.  
+1.  Otwórz Workflow1 w Projektancie przepływu pracy w widoku Projekt.  
   
-2.  Przeciągnij Class1 z **przybornika** , aby był wyświetlany w obszarze `onWorkflowActivated1` działania lub Otwórz menu skrótów dla Class1, wybierz **kopiowania**, otwórz menu skrótów wiersza w obszarze `onWorkflowActivated1` działanie, a następnie wybierz pozycję **Wklej**.  
+2.  Przeciągnij Moduł Class1 z **przybornika** tak, aby pojawiło się pod `onWorkflowActivated1` działania lub Otwórz menu skrótów dla klasa1, wybierz **kopiowania**, otwórz menu skrótów dla linii poniżej `onWorkflowActivated1` działanie, a następnie wybierz **Wklej**.  
   
 3.  Zapisz projekt.  
   
 ## <a name="test-the-site-workflow-custom-activity"></a>Testowanie niestandardowego działania przepływu pracy witryny
- Następnie uruchom projekt i uruchomić przepływ pracy witryny. Działań niestandardowych powoduje utworzenie kopii zapasowej listy anonsów i kopiuje zawartość z bieżącej listy anonsów do niego. Kod sprawdza również, czy przed utworzeniem jedną istnieje już listy kopii zapasowych. Jeśli istnieje już listy kopii zapasowych, ich usunięcia. Kod dodaje również link do nowej listy na pasek szybkiego uruchamiania witryny programu SharePoint.  
+ Następnie uruchom projekt i uruchomić przepływ pracy witryny. Niestandardowe działanie powoduje utworzenie kopii zapasowej listy anonsów i kopiuje zawartość z bieżącej listy ogłoszeń do niego. Kod sprawdza również, czy istnieje już listy kopii zapasowych przed utworzeniem jeden. Jeśli istnieje już lista kopii zapasowych, został usunięty. Ten kod dodaje także link do nowej listy na pasku Szybkie uruchamianie witryny programu SharePoint.  
   
 #### <a name="to-test-the-site-workflow-custom-activity"></a>Aby przetestować niestandardowego działania przepływu pracy witryny  
   
-1.  Wybierz **F5** klawisz, aby uruchomić projekt, a następnie wdrożyć go w programie SharePoint.  
+1.  Wybierz **F5** klawisz, aby uruchomić projekt i wdrożyć ją w programie SharePoint.  
   
-2.  Na pasek szybkiego uruchamiania wybierz **wymieniono** łącze, aby wyświetlić wszystkie listy, które są dostępne w witrynie programu SharePoint. Zwróć uwagę, istnieje tylko jedna lista dla anonsów o nazwie **anonsów**.  
+2.  Na pasku szybkiego uruchamiania wybierz **Wyświetla** łącze, aby wyświetlić wszystkie listy, które są dostępne w witrynie programu SharePoint. Zwróć uwagę, istnieje tylko jedna lista pojawiać ogłoszenia o nazwie **anonsów**.  
   
-3.  W górnej części strony sieci Web programu SharePoint, wybierz **przepływy pracy witryn** łącza.  
+3.  W górnej części strony sieci Web programu SharePoint wybierz **przepływy pracy witryn** łącza.  
   
-4.  W obszarze początku sekcji nowego przepływu pracy, wybierz **AnnouncementBackup - Workflow1** łącza. To uruchamiania przepływów pracy witryny i uruchamia kod w akcji niestandardowej.  
+4.  W obszarze Start sekcji nowego przepływu pracy, wybierz opcję **AnnouncementBackup - Workflow1** łącza. Spowoduje to uruchomienie przepływu pracy witryny i uruchamia kod w akcji niestandardowej.  
   
-5.  Na pasek szybkiego uruchamiania wybierz **kopii zapasowej anonsów** łącza. Zwróć uwagę, że wszystkie anonsy, które są zawarte w **anonsów** listy zostały skopiowane do tej nowej listy.  
+5.  Na pasku szybkiego uruchamiania wybierz **kopii zapasowej anonsów** łącza. Należy zauważyć, że wszystkie anonsy, które są zawarte w **anonsów** listy zostały skopiowane do tej nowej listy.  
   
 ## <a name="see-also"></a>Zobacz także
  [Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)   
- [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

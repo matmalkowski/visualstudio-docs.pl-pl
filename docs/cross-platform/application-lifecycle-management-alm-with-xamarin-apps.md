@@ -1,7 +1,6 @@
 ---
 title: Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin | Dokumentacja firmy Microsoft
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231859"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634944"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
+# <a name="devops-with-xamarin-apps"></a>DevOps przy użyciu aplikacji Xamarin
 
 Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla systemów Android, iOS i Windows przy użyciu języka C# .NET i Visual Studio. Dużą część kodu można współużytkować na różnych platformach, tylko na niewielkim odsetku przynależności do określonych platform dzięki środowisku Xamarin. Aby uzyskać więcej informacji na środowisku Xamarin, sama zobacz [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
 Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więcej niż tylko pisania kodu. Działania te, określane jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i należy planowanie i śledzenie pracy, projektowanie i wdrażanie kodu, repozytorium kodu źródłowego, zarządzanie systemem kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testy jednostkowe i testy interfejsu użytkownika), uruchomione różne rodzaje diagnostykę w środowiskach środowisk deweloperskich i produkcyjnych i monitorowania aplikacji wydajności i zachowania użytkowników w czasie rzeczywistym za pośrednictwem danych telemetrycznych i analitycznych.
 
-Visual Studio wraz z Visual Studio Team Services i serwera Team Foundation Server zapewniają szeroką gamę możliwości środowiska DevOps, zwaną także zarządzanie cyklem życia aplikacji lub ALM. Wiele z nich są całkowicie mające zastosowanie do projektów dla wielu platform.
+Wraz z Visual Studio Team Services i serwera Team Foundation Server w programie Visual Studio udostępnia szereg możliwości środowiska DevOps. Wiele z nich są całkowicie mające zastosowanie do projektów dla wielu platform. Jest to szczególnie istotne, przy użyciu aplikacji Xamarin, ponieważ są one skompilowanych przy użyciu języka C# i .NET, wokół którego niektóre DevOps są wbudowane narzędzia. Inne narzędzia wymaga ścisłej integracji ze środowiskami kompilacji i czasu wykonywania. Ponieważ aplikacje platformy Xamarin działać na platformach innych niż Windows i użyć narzędzia Mono implementacji .NET, środowisko Xamarin zapewnia specjalistycznych narzędzi określonych potrzeb.
 
-Jest to szczególnie istotne, przy użyciu aplikacji Xamarin, ponieważ są one tworzone za pomocą języka C# i .NET, wokół którego niektóre ALM są wbudowane narzędzia. Inne narzędzia wymaga ścisłej integracji ze środowiskami kompilacji i czasu wykonywania. Ponieważ aplikacje platformy Xamarin działać na platformach innych niż Windows i użyć narzędzia Mono implementacji .NET, środowisko Xamarin zapewnia specjalistycznych narzędzi określonych potrzeb.
-
-W poniższych tabelach identyfikuje funkcji programu Visual Studio ALM, które można oczekiwać, że do sprawnej współpracy z projektu Xamarin i te, które mają ograniczenia. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.
+Poniższe tabele zidentyfikować, które funkcje DevOps w programie Visual Studio można oczekiwać, że do sprawnej współpracy z projektu Xamarin i te, które mają ograniczenia. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.
 
 ## <a name="agile-tools"></a>Narzędzia agile
 
