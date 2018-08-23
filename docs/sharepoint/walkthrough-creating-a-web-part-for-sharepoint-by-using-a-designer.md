@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie składnika Web Part dla SharePoint za pomocą projektanta | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie składnika Web Part programu SharePoint przy użyciu projektanta | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,162 +19,162 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120306"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635235"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Wskazówki: Tworzenie składnika web part dla SharePoint za pomocą projektanta
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Przewodnik: Tworzenie składnika web part programu SharePoint przy użyciu narzędzia Projektant
 
-Jeśli tworzysz części sieci web dla witryny programu SharePoint, użytkownicy bezpośrednio można zmodyfikować zawartość, wyglądu i zachowania stron w tej lokacji za pomocą przeglądarki. W tym przewodniku przedstawiono sposób wizualnie Tworzenie składnika web part za pomocą programu SharePoint **wizualnego składnika Web Part** szablonu projektu w programie Visual Studio.
+Jeśli tworzysz składniki web Part witryny programu SharePoint, użytkownicy bezpośrednio można modyfikować zawartość, wygląd i zachowanie stron w tej witrynie za pomocą przeglądarki. W tym instruktażu pokazano, jak utworzyć składnik web part wizualnie za pomocą programu SharePoint **wizualny składnik Web Part** szablonu projektu w programie Visual Studio.
 
-Składnik web part, które zostaną utworzone Wyświetla widok kalendarza miesięcznego i pola wyboru dla każdej listy kalendarza w witrynie. Użytkownicy mogą określić, który kalendarz wymieniono do uwzględnienia w widok kalendarza miesięcznego przez zaznaczenie pola wyboru.
+Składnik web part, którą utworzysz Wyświetla miesięczny widok kalendarza i pola wyboru dla każdej listy kalendarza w witrynie. Użytkownicy mogą określić, które listy kalendarza do uwzględnienia w miesięcznym widoku kalendarza, wybierając pole wyboru.
 
 W instruktażu przedstawiono następujące zagadnienia:
 
-- Tworzenie składnika web part za pomocą **wizualnego składnika Web Part** szablonu projektu.
-- Projektowanie składnika web part za pomocą projektanta programu Visual Web Developer w programie Visual Studio.
+- Tworzenie składnika web part za pomocą **wizualny składnik Web Part** szablonu projektu.
+- Projektowanie składnika web part za pomocą projektanta Visual Web Developer w programie Visual Studio.
 - Dodawanie kodu do obsługi zdarzeń formantów w części sieci web.
 - Testowanie części sieci web w programie SharePoint.
 
     > [!NOTE]
-    > W poniższych instrukcjach komputera mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika dla programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+    > Komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych elementów interfejsu użytkownika dla programu Visual Studio, w poniższych instrukcjach. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane wersje systemu Windows i programu SharePoint. Zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Windows i programu SharePoint.
 
 ## <a name="create-a-web-part-project"></a>Tworzenie projektu części sieci web
 
-Najpierw utwórz projekt części sieci web za pomocą **wizualnego składnika Web Part** szablonu projektu.
+Najpierw utwórz projekt składnika WebPart za pomocą **wizualny składnik Web Part** szablonu projektu.
 
-1. Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] za pomocą **Uruchom jako Administrator** opcji.
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu **Uruchom jako Administrator** opcji.
 
-2. Na pasku menu wybierz **pliku** > **nowy** > **projektu**.
+2. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.
+     **Nowy projekt** pojawi się okno dialogowe.
 
-3. W **nowy projekt** okno dialogowe, w obszarze albo **Visual C#** lub **Visual Basic**, rozwiń węzeł **Office i SharePoint**, a następnie wybierz pozycję  **Rozwiązania programu SharePoint** kategorii.
+3. W **nowy projekt** okno dialogowe, w obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **Office/SharePoint**, a następnie wybierz polecenie  **Rozwiązania programu SharePoint** kategorii.
 
-4. Na liście szablonów wybierz **SharePoint 2013 — wizualnego składnika Web Part** szablonu, a następnie wybierz pozycję **OK** przycisk.
+4. Z listy szablonów wybierz **SharePoint 2013 — wizualny składnik Web Part** szablonu, a następnie wybierz **OK** przycisku.
 
-     **Kreator dostosowania programu SharePoint** pojawi się. Za pomocą tego kreatora, można określić lokacji, który ma być używany do debugowania projektu i poziom zaufania rozwiązania.
+     **Kreator ustawień niestandardowych SharePoint** pojawia się. Za pomocą tego kreatora, można określić witryny, które będzie używane do debugowania projektu i poziomu zaufania rozwiązania.
 
-5. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji.
+5. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.
 
 6. Wybierz **Zakończ** przycisk, aby zaakceptować domyślne lokalnej witryny programu SharePoint.
 
 ## <a name="designing-the-web-part"></a>Projektowanie składnika web part
 
-Projektowanie części sieci web, dodając formantów z **przybornika** na powierzchnię projektanta Visual Web Developer.
+Projektowanie składnika web part przez dodanie formantów z **przybornika** do powierzchni projektanta Visual Web Developer.
 
-1. W Projektancie Visual Web Developer, wybierz polecenie **projekt** tab, aby przełączyć do widoku projektu.
+1. W Projektancie Visual Web Developer wybierz **projektowania** kartę, aby przełączyć do widoku projektu.
 
 2. Na pasku menu wybierz **widoku** > **przybornika**.
 
-3. W **standardowe** węzła **przybornika**, wybierz **CheckBoxList** kontroli, a następnie wykonaj jedną z następujących czynności:
+3. W **standardowa** węźle **przybornika**, wybierz **CheckBoxList** sterowania, a następnie wykonaj jedną z następujących czynności:
 
-    - Otwórz menu skrótów **CheckBoxList** sterowania, wybierz **kopiowania**, otwórz menu skrótów dla pierwszego wiersza w projektancie, a następnie wybierz pozycję **Wklej**.
+    - Otwórz menu skrótów dla **CheckBoxList** sterowania, wybierz **kopiowania**, otwórz menu skrótów dla pierwszego wiersza w projektancie, a następnie wybierz **Wklej**.
 
-    - Przeciągnij **CheckBoxList** kontrolować z **przybornika**i połącz formantu do pierwszego wiersza w projektancie.
+    - Przeciągnij **CheckBoxList** z kontrolować **przybornika**i Połącz formant do pierwszego wiersza w projektancie.
 
-4. Powtórz poprzedni krok, ale Przenoszenie przycisku do następnego wiersza projektanta.
+4. Powtórz poprzedni krok, ale przenieść przycisk do następnego wiersza projektanta.
 
 5. W projektancie, wybierz **Button1** przycisku.
 
-6. Na pasku menu wybierz **widoku** > **okna właściwości**.
+6. Na pasku menu wybierz **widoku** > **okno właściwości**.
 
      **Właściwości** zostanie otwarte okno.
 
-7. W **tekst** właściwości przycisku, wprowadź **aktualizacji**.
+7. W **tekstu** właściwości przycisku, wprowadź **aktualizacji**.
 
 ## <a name="handling-the-events-of-controls-on-the-web-part"></a>Obsługa zdarzeń formantów w części sieci web
 
-Dodaj kod, który umożliwia użytkownikowi dodanie kalendarzy widoku głównego kalendarza.
+Dodaj kod, który umożliwia użytkownikowi dodanie kalendarze w widoku kalendarza głównego.
 
 1. Wykonaj jeden z następujących zestawów czynności:
 
     - W projektancie, kliknij dwukrotnie **aktualizacji** przycisku.
 
-    - W **właściwości** w oknie **aktualizacji** przycisku, wybierz **zdarzenia** przycisku. W **kliknij** właściwości, wprowadź **Button1_Click**, a następnie wybierz klawisz Enter.
+    - W **właściwości** okno **aktualizacji** przycisku, wybierz polecenie **zdarzenia** przycisku. W **kliknij** właściwości wprowadź **Button1_Click**, a następnie naciśnij klawisz Enter.
 
-     Plik kodu formantu użytkownika zostanie otwarty w edytorze kodu i `Button1_Click` pojawi się program obsługi zdarzeń. Później zostanie dodany kod, aby ten program obsługi zdarzeń.
+     Pliku kodu formanu użytkownika zostanie otwarty w edytorze kodu i `Button1_Click` pojawia się program obsługi zdarzeń. Później dodasz kod do tego programu obsługi zdarzeń.
 
-2. Dodaj następujące instrukcje na początku pliku kodu kontrolki użytkownika.
+2. Dodaj następujące instrukcje na górze pliku kodu formanu użytkownika.
 
      [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
 
-3. Dodaj następujący wiersz kodu w celu `VisualWebPart1` klasy. Ten kod deklaruje formantu view kalendarza miesięcznego.
+3. Dodaj następujący wiersz kodu w celu `VisualWebPart1` klasy. Ten kod deklaruje kontrolę widoku kalendarza miesięcznego.
 
      [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
      [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]
 
-4. Zastąp `Page_Load` metody `VisualWebPart1` klasy następującym kodem. Kod będzie wykonywał następujące zadania:
+4. Zastąp `Page_Load` metody `VisualWebPart1` klasy z następującym kodem. Kod będzie wykonywał następujące zadania:
 
     - Dodaje widok kalendarza miesięcznego do kontrolki użytkownika.
 
     - Dodaje pole wyboru dla każdej listy kalendarza w witrynie.
 
-    - Określa szablon dla każdego typu elementu, który jest wyświetlany w widoku Kalendarz.
+    - Określa szablon dla każdego typu elementu, który pojawia się w widoku kalendarza.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]
 
-5. Zastąp `Button1_Click` metody `VisualWebPart1` klasy następującym kodem. Ten kod dodaje elementy z każdego wybranego kalendarza do widoku głównego kalendarza.
+5. Zastąp `Button1_Click` metody `VisualWebPart1` klasy z następującym kodem. Ten kod dodaje elementy z każdego wybranego kalendarza do nadrzędnego widoku kalendarza.
 
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="test-the-web-part"></a>Testowanie składnika web part
+## <a name="test-the-web-part"></a>Testowanie części sieci web
 
-Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik web part jest automatycznie dodawany do galerii składników Web Part w programie SharePoint. Aby przetestować ten projekt, będziesz wykonywać następujące zadania:
+Kiedy uruchamiasz projekt, otwiera się witryna SharePoint. Składnik web part jest automatycznie dodawane do galerii Web Part w programie SharePoint. Aby przetestować ten projekt, wykonasz następujące zadania:
 
-- Dodawanie zdarzenia do każdego z dwóch oddzielnych kalendarza list.
-- Dodaj składnik web part do strony sieci web.
-- Określ listy, aby uwzględnić w widoku kalendarza miesięcznego.
+- Dodaj zdarzenie do każdego z dwóch osobnych list kalendarza.
+- Dodaj składnik web part do strony składników web part.
+- Określ listy do dołączenia w widoku kalendarza miesięcznego.
 
-### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Aby dodać zdarzenia do listy kalendarza w lokacji
+### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Aby dodać zdarzenia do list kalendarza na stronie
 
 1. W programie Visual Studio, wybierz **F5** klucza.
 
-     Otwieranie witryny programu SharePoint oraz [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] pasek Szybkie uruchamianie jest wyświetlany na stronie.
+     Otwiera się witryna SharePoint i [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] na stronie zostanie wyświetlony pasek szybkiego uruchamiania.
 
-2. Na pasku Szybkie uruchamianie w obszarze **wymieniono**, wybierz **kalendarza** łącza.
+2. Na pasku Szybkie uruchamianie w ramach **Wyświetla**, wybierz **kalendarza** łącza.
 
      **Kalendarza** zostanie wyświetlona strona.
 
-     Jeśli użytkownik nie łącz kalendarza zostanie wyświetlony na pasek Szybkie uruchamianie, wybrać **zawartość witryny** łącza. Jeśli nie wyświetla stronę zawartość witryny **kalendarza** element, utwórz je.
+     Jeśli użytkownik nie pojawi się łącze kalendarza na pasku szybkiego uruchamiania, wybierz opcję **zawartość witryny** łącza. Jeśli strona zawartości strony nie pokazuje **kalendarza** , należy go utworzyć.
 
-3. Na stronie kalendarza wybierz dzień, a następnie wybierz **Dodaj** łącze wybranego dnia, aby dodać zdarzenie.
+3. Na stronie kalendarza wybierz dzień, a następnie wybierz **Dodaj** łącze w wybranym dniu, aby dodać wydarzenie.
 
-4. W **tytuł** wprowadź **zdarzeń w kalendarzu domyślne**, a następnie wybierz pozycję **zapisać** przycisku.
+4. W **tytuł** wprowadź **zdarzenia kalendarza domyślnego**, a następnie wybierz **Zapisz** przycisku.
 
-5. Wybierz **zawartość witryny** łącza, a następnie wybierz pozycję **Dodaj aplikację** kafelka.
+5. Wybierz **zawartość witryny** łącze, a następnie wybierz **Dodaj aplikację** kafelka.
 
-6. Na **Utwórz** wybierz pozycję **kalendarza** typ, nazwa kalendarza, a następnie wybierz **Utwórz** przycisku.
+6. Na **Utwórz** wybierz **kalendarza** wpisz, nadaj nazwę kalendarzowi, a następnie wybierz **Utwórz** przycisku.
 
-7. Dodawanie zdarzeń do kalendarza nowe, Nazwa zdarzenia **zdarzenia w niestandardowego kalendarza**, a następnie wybierz **zapisać** przycisku.
+7. Dodaj zdarzenie do nowego kalendarza, określ nazwę zdarzenia **wydarzenia niestandardowego kalendarza**, a następnie wybierz **Zapisz** przycisku.
 
-### <a name="to-add-the-web-part-to-a-web-part-page"></a>Aby dodać składnik web part do strony sieci web
+### <a name="to-add-the-web-part-to-a-web-part-page"></a>Aby dodać składnik web part do strony składników web part
 
-1. Na **zawartość witryny** Otwórz **stron w witrynie** folderu.
+1. Na **zawartość witryny** otwartą stronę **stron witryny** folderu.
 
-2. Na Wstążce, wybierz **pliki** kartę, otwórz **nowy dokument** menu, a następnie wybierz pozycję **strony składników Web Part** polecenia.
+2. Na Wstążce, wybierz **pliki** otwartą kartą **nowy dokument** menu, a następnie wybierz **strona składników Web Part** polecenia.
 
-3. Na **Nowa strona części sieci Web** strony, nazwy strony **SampleWebPartPage.aspx**, a następnie wybierz pozycję **Utwórz** przycisku.
+3. Na **nowej strony składników Web Part** strony, nazwij stronę **SampleWebPartPage.aspx**, a następnie wybierz **Utwórz** przycisku.
 
-     Zostanie wyświetlona strona części sieci web.
+     Zostanie wyświetlona strona składników web part.
 
-4. W strefie górnej części strony sieci web, wybierz **Wstaw** karcie, a następnie wybierz pozycję **składnika Web Part** przycisku.
+4. W strefie górnej strony składników web part, wybierz **Wstaw** kartę, a następnie wybierz **składnika Web Part** przycisku.
 
-5. Wybierz **niestandardowy** folderu, wybierz **VisualWebPart1** składnik web part, a następnie wybierz pozycję **Dodaj** przycisku.
+5. Wybierz **niestandardowe** folderu, wybierz **VisualWebPart1** składnika web part, a następnie wybierz **Dodaj** przycisku.
 
-     Składnik web part jest wyświetlany na stronie. W części sieci web są wyświetlane następujące sterowniki:
+     Składnik web part jest wyświetlany na stronie. W części sieci web wyświetlane są następujące formanty:
 
     - Widok kalendarza miesięcznego.
 
@@ -182,16 +182,16 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik web par
 
     - A **kalendarza** pole wyboru.
 
-    - A **niestandardowego kalendarza** pole wyboru.
+    - A **kalendarz niestandardowy** pole wyboru.
 
-### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>Aby określić listę do uwzględnienia w widok kalendarza miesięcznego
+### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>Aby określić listy zawarte w miesięcznym widoku kalendarza
 
-W części sieci web, określ kalendarzy, które chcesz uwzględnić w widoku miesięczny kalendarz, a następnie wybierz **aktualizacji** przycisku.
+W składniku web part, określ kalendarze, które chcesz uwzględnić w widoku kalendarza miesięcznego, a następnie wybierz **aktualizacji** przycisku.
 
-Zdarzenia ze wszystkich kalendarzy, określone przez użytkownika są wyświetlane w widoku kalendarza miesięcznego.
+Zdarzenia ze wszystkich kalendarzy określonych przez użytkownika są wyświetlane w widoku kalendarza miesięcznego.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
 [Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Wskazówki: Tworzenie składnika web part dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Przewodnik: Tworzenie składnika web part programu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

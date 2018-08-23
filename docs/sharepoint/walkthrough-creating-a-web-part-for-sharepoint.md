@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie składnika Web Part dla SharePoint | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie składnika Web Part programu SharePoint | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,28 +19,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120315"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635411"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Wskazówki: Tworzenie składnika web part dla SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Przewodnik: Tworzenie składnika web part programu SharePoint
 
-Części sieci Web umożliwiają użytkownikom bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki. W tym przewodniku przedstawiono sposób tworzenia składnika Web Part za pomocą **składnika Web Part** szablon elementu w Visual Studio 2010.
+Części sieci Web umożliwiają użytkownikom bezpośrednio modyfikować zawartość, wygląd i zachowanie stron w witrynie programu SharePoint za pomocą przeglądarki. W tym instruktażu pokazano, jak utworzyć składnik Web Part za pomocą **składnika Web Part** szablonu elementu w programie Visual Studio 2010.
 
-Składnik Web Part wyświetla pracowników w siatce danych. Użytkownik określa lokalizację pliku, który zawiera dane pracowników. Użytkownika można również filtrować siatki danych, dzięki czemu pracownicy, którzy są menedżerów znajdują się na liście tylko.
+Składnik Web Part wyświetla pracowników w siatce danych. Użytkownik określa lokalizację pliku, który zawiera dane pracowników. Użytkownika można również filtrować siatki danych, tak aby pracownicy, którzy są menedżerowie są wyświetlane na liście tylko.
 
 W instruktażu przedstawiono następujące zagadnienia:
 
 - Tworzenie składnika Web Part za pomocą programu Visual Studio **składnika Web Part** szablon elementu.
 
-- Tworzenie właściwości, które można ustawić przez użytkownika części sieci Web. Ta właściwość określa lokalizację pliku danych pracownika.
+- Tworzenie właściwości, które można ustawić przez użytkownika składnika Web Part. Ta właściwość określa lokalizację pliku danych pracownika.
 
-- Renderowanie zawartości w elemencie Web Part przez dodawanie formantów do składnika Web Part formanty kolekcji.
+- Renderowanie zawartości składnika Web Part, dodając formanty do składnika Web Part steruje kolekcji.
 
-- Tworzenie nowego elementu menu, określany jako *zlecenie,* wyświetlany w menu zleceń renderowanych części sieci Web. Zleceń zezwolić użytkownikowi na modyfikowanie danych wyświetlanych w części sieci Web.
+- Tworzenie nowego elementu menu, nazywane *zlecenie,* wyświetlany w menu zleceń renderowanych składnika Web Part. Czasowniki umożliwić użytkownikowi modyfikowanie danych, który pojawia się w składniku Web Part.
 
 - Testowanie części sieci Web w programie SharePoint.
 
@@ -49,92 +49,92 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz [wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
-- Visual Studio 2017 lub wersji programu Visual Studio cyklu życia zarządzania aplikacji (ALM).
+- Visual Studio 2017 lub wersji programu Visual Studio Application Lifecycle Management (ALM).
 
 ## <a name="create-an-empty-sharepoint-project"></a>Utwórz pusty projekt programu SharePoint
 
-Najpierw utwórz projekt SharePoint puste. Później, spowoduje dodanie składnika Web Part do projektu przy użyciu **składnika Web Part** szablon elementu.
+Najpierw utwórz projekt programu SharePoint puste. Później dodasz składnika Web Part do projektu przy użyciu **składnika Web Part** szablon elementu.
 
-1. Uruchom [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] za pomocą **Uruchom jako Administrator** opcji.
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu **Uruchom jako Administrator** opcji.
 
-2. Na pasku mężczyzn wybierz **pliku** > **nowy** > **projektu**.
+2. Na pasku mężczyzn wybierz **pliku** > **New** > **projektu**.
 
-3. W **nowy projekt** okna dialogowego rozwiń **SharePoint** węźle język, który chcesz użyć, a następnie wybierz pozycję **2010** węzła.
+3. W **nowy projekt** okna dialogowego rozwiń **SharePoint** węzła dla języka, który chcesz użyć, a następnie wybierz **2010** węzła.
 
-4. W **szablony** okienku wybierz **projektu programu SharePoint 2010**, a następnie wybierz pozycję **OK** przycisku.
+4. W **szablony** okienku wybierz **projekt programu SharePoint 2010**, a następnie wybierz **OK** przycisku.
 
-     **Kreator dostosowania programu SharePoint** pojawi się. Ten kreator umożliwia wybór lokacji, który będzie używany do debugowania projektu i poziom zaufania rozwiązania.
+     **Kreator ustawień niestandardowych SharePoint** pojawia się. Ten kreator umożliwia wybór lokacji, który będzie używany do debugowania projektu i poziomu zaufania rozwiązania.
 
-5. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz pozycję **Zakończ** przycisk, aby zaakceptować domyślne lokalnej witryny programu SharePoint.
+5. Wybierz **Wdróż jako rozwiązanie farmy** przycisk opcji, a następnie wybierz **Zakończ** przycisk, aby zaakceptować domyślne lokalnej witryny programu SharePoint.
 
-## <a name="add-a-web-part-to-the-project"></a>Dodaj składnik web part do projektu
+## <a name="add-a-web-part-to-the-project"></a>Dodawanie składnika web part do projektu
 
-Dodaj **składnika Web Part** elementu do projektu. **Składnika Web Part** elementu dodaje plik kodu składnika Web Part. Później dodasz kod do pliku kodu składnika Web Part do renderowania zawartości części sieci Web.
+Dodaj **składnika Web Part** do projektu. **Składnika Web Part** elementu dodaje plik kodu składnika Web Part. Później dodasz kod do pliku kodu składnika Web Part do renderowania zawartości składnika Web Part.
 
 1. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
-2. W **Dodaj nowy element** okna dialogowego, **zainstalowane szablony** okienku rozwiń **SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.
+2. W **Dodaj nowy element** okno dialogowe, **zainstalowane szablony** okienku rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.
 
-3. Na liście szablonów programu SharePoint, wybierz **składnika Web Part** szablonu, a następnie wybierz pozycję **Dodaj** przycisku.
+3. Na liście szablonów programu SharePoint, wybierz opcję **składnika Web Part** szablonu, a następnie wybierz **Dodaj** przycisku.
 
      **Składnika Web Part** element będzie wyświetlany w **Eksploratora rozwiązań**.
 
 ## <a name="rendering-content-in-the-web-part"></a>Renderowanie zawartości w składniku web part
 
-Można określić, które kontrolki ma być wyświetlany w części sieci Web przez dodanie ich do kolekcji controls klasy części sieci Web.
+Można określić, które kontrolki mają być wyświetlane w składniku Web Part, dodając je do kolekcji controls klasy składnika Web Part.
 
 1. W **Eksploratora rozwiązań**, otwórz *WebPart1.vb* (w języku Visual Basic) lub *WebPart1.cs* (w języku C#).
 
-     Składnik Web Part pliku kodu zostanie otwarty w edytorze kodu.
+     Plik kodu części sieci Web zostanie otwarty w edytorze kodu.
 
-2. Dodaj następujące instrukcje na początku pliku kodu składnika Web Part.
+2. Dodaj następujące instrukcje na górze pliku kodu składnika Web Part.
 
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
 3. Dodaj następujący kod do `WebPart1` klasy. Ten kod deklaruje następujące pola:
 
-    - Siatki danych do wyświetlenia pracowników w części sieci Web.
+    - Siatka danych do wyświetlenia pracowników w składniku Web Part.
 
-    - Tekst wyświetlany na formant, który służy do filtrowania danych siatki.
+    - Tekst wyświetlany w kontrolce, która jest używana do filtrowania siatki danych.
 
-    - Etykietę, która zawiera błąd, jeśli nie można wyświetlić danych siatki danych.
+    - Etykiety, która wyświetla komunikat o błędzie, jeśli siatki danych nie jest w stanie wyświetlić dane.
 
-    - Ciąg zawierający ścieżkę pliku danych pracownika.
+    - Ciąg, który zawiera ścieżkę do pliku danych pracownika.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Dodaj następujący kod do `WebPart1` klasy. Ten kod dodaje właściwość niestandardowa o nazwie `DataFilePath` do składnika Web Part. Właściwość niestandardowa jest właściwość, która może być ustawiona w programie SharePoint przez użytkownika. Ta właściwość pobiera i Ustawia lokalizację pliku danych XML, który jest używany do wypełniania siatki danych.
+4. Dodaj następujący kod do `WebPart1` klasy. Ten kod dodaje właściwość niestandardową o nazwie `DataFilePath` do składnika Web Part. Właściwość niestandardowa jest właściwością, która może być ustawiona przez użytkownika w programie SharePoint. Tej właściwości pobiera i Ustawia lokalizację pliku danych XML, która jest używana do zapełniania siatki danych.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Zastąp `CreateChildControls` metodę z następującym kodem. Kod będzie wykonywał następujące zadania:
+5. Zastąp `CreateChildControls` metoda następującym kodem. Kod będzie wykonywał następujące zadania:
 
-    - Dodaje Siatka danych i etykietę, którą można zadeklarować w poprzednim kroku.
+    - Dodaje siatki danych i etykiety, która została zadeklarowana w poprzednim kroku.
 
-    - Wiąże Siatka danych do pliku XML zawierającego dane pracownika.
+    - Wiąże siatki danych do pliku XML, który zawiera dane pracowników.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Dodaj następującą metodę do `WebPart1` klasy. Kod będzie wykonywał następujące zadania:
 
-    - Tworzy zlecenie, która jest wyświetlana w menu zleceń części sieci Web renderowanych części sieci Web.
+    - Tworzy zlecenia, który pojawia się w menu zleceń składnika Web Part renderowanych składnika Web Part.
 
-    - Obsługuje zdarzenie, które jest wywoływane, gdy użytkownik wybierze zlecenie w menu zleceń. Ten kod filtruje listę pracowników, która jest wyświetlana w siatce danych.
+    - Obsługuje zdarzenie, które jest wywoływane, gdy użytkownik wybierze czasownika w menu zleceń. Ten kod filtry listę pracowników, który pojawia się w siatce danych.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
 
-## <a name="test-the-web-part"></a>Testowanie składnika web part
+## <a name="test-the-web-part"></a>Testowanie części sieci web
 
-Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik Web Part jest automatycznie dodawany do galerii składników Web Part w programie SharePoint. Składnik Web Part można dodać do dowolnej strony składnika Web Part.
+Kiedy uruchamiasz projekt, otwiera się witryna SharePoint. Składnik Web Part jest automatycznie dodawane do galerii Web Part w programie SharePoint. Składnik Web Part można dodać do dowolnej strony składnika Web Part.
 
-1. Wklej następujący kod XML w pliku Notatnika. Ten plik XML zawiera przykładowe dane, która będzie wyświetlana w składniku Web Part.
+1. Wklej następujący kod XML do pliku Notatnika. Ten plik XML zawiera przykładowe dane, która będzie wyświetlana w składniku Web Part.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -169,59 +169,59 @@ Po uruchomieniu projektu otwiera witrynę programu SharePoint. Składnik Web Par
 
 2. W programie Notatnik, na pasku menu wybierz **pliku** > **Zapisz jako**.
 
-3. W **Zapisz jako** okna dialogowego, **Zapisz jako typ** wybierz **wszystkie pliki**.
+3. W **Zapisz jako** dialogowym **Zapisz jako typ** wybierz **wszystkie pliki**.
 
-4. W **nazwę pliku** wprowadź **data.xml**.
+4. W **nazwy pliku** wprowadź **data.xml**.
 
-5. Wybierz za pomocą dowolnego folderu **Przeglądaj foldery** przycisk, a następnie wybierz pozycję **zapisać** przycisku.
+5. Wybierz dowolny folder przy użyciu **Przeglądaj foldery** przycisk, a następnie wybierz **Zapisz** przycisku.
 
 6. W programie Visual Studio, wybierz **F5** klucza.
 
-     Otwieranie witryny programu SharePoint.
+     Otwiera się witryna SharePoint.
 
 7. Na **Akcje witryny** menu, wybierz **więcej opcji**.
 
-8. W **Utwórz** wybierz pozycję **strony składników Web Part** typu, a następnie wybierz **Utwórz** przycisku.
+8. W **Utwórz** wybierz **strona składników Web Part** typu, a następnie wybierz **Utwórz** przycisku.
 
-9. W **nowej strony składników Web Part** strony, nazwy strony **SampleWebPartPage.aspx**, a następnie wybierz pozycję **Utwórz** przycisku.
+9. W **nowej strony składników Web Part** strony, nazwij stronę **SampleWebPartPage.aspx**, a następnie wybierz **Utwórz** przycisku.
 
-     Zostanie wyświetlona strona części sieci Web.
+     Zostanie wyświetlona strona składników Web Part.
 
-10. Wybierz wszystkie strefy na stronie składnika Web Part.
+10. Wybierz wszystkie strefy na stronę składników Web Part.
 
-11. W górnej części strony, wybierz **Wstaw** karcie, a następnie wybierz pozycję **składnika Web Part** przycisku.
+11. W górnej części strony wybierz **Wstaw** kartę, a następnie wybierz **składnika Web Part** przycisku.
 
-12. W **kategorii** okienku wybierz **niestandardowy** folderu, wybierz **WebPart1** składnika Web Part, a następnie wybierz **Dodaj** przycisku.
+12. W **kategorie** okienku wybierz **niestandardowe** folderu, wybierz **WebPart1** składnika Web Part, a następnie wybierz **Dodaj** przycisku.
 
      Składnik Web Part jest wyświetlany na stronie.
 
 ## <a name="test-the-custom-property"></a>Testowanie właściwości niestandardowej
 
-Zapełnić siatkę danych, która pojawia się w części sieci Web, określ ścieżkę pliku XML, który zawiera dane dotyczące każdego pracownika.
+Do zapełniania siatki danych, który pojawia się w składniku Web Part, określ ścieżkę pliku XML, który zawiera dane dotyczące każdego pracownika.
 
-1. Wybierz strzałkę, która pojawia się po prawej stronie składnika Web Part, a następnie wybierz **Edytuj składnik Web Part** w menu.
+1. Wybierz strzałkę, która pojawia się po prawej stronie składnika Web Part, a następnie wybierz **Edytuj składnik Web Part** z wyświetlonego menu.
 
-     W prawej części strony zostanie wyświetlone okienko, który zawiera właściwości części sieci Web.
+     W prawej części strony pojawi się okienko, który zawiera właściwości składnika Web Part.
 
-2. W okienku rozwiń **różne** węzła, wprowadź ścieżkę pliku XML, który został utworzony wcześniej, wybierz **Zastosuj** przycisk, a następnie wybierz pozycję **OK** przycisku.
+2. W okienku rozwiń **różne** węzła, wprowadź ścieżkę do pliku XML, który został utworzony wcześniej, wybierz polecenie **Zastosuj** przycisk, a następnie wybierz **OK** przycisku.
 
-     Sprawdź, czy w części sieci Web zostanie wyświetlona lista pracowników.
+     Sprawdź, czy lista pracowników znajduje się w składniku Web Part.
 
 ## <a name="test-the-web-part-verb"></a>Testowanie zlecenia części sieci web
 
-Pokazywanie i ukrywanie pracownicy, którzy nie są menedżerów klikając elementu, który jest wyświetlany w menu zleceń składnika Web Part.
+Pokazywanie i ukrywanie pracownicy, którzy nie są menedżerów, klikając pozycję elementu, który jest wyświetlany w menu zleceń składnika Web Part.
 
-1. Wybierz strzałkę, która pojawia się po prawej stronie składnika Web Part, a następnie wybierz **Pokaż tylko menedżerów** w menu.
+1. Wybierz strzałkę, która pojawia się po prawej stronie składnika Web Part, a następnie wybierz **Pokaż tylko menedżerowie** z wyświetlonego menu.
 
-     Tylko pracownicy, którzy są menedżerów pojawiają się w części sieci Web.
+     Tylko pracownicy, którzy są menedżerowie pojawiają się w składniku Web Part.
 
-2. Wybierz strzałkę ponownie, a następnie wybierz **Pokaż wszyscy pracownicy** w menu.
+2. Wybierz strzałkę ponownie, a następnie wybierz **Pokaż wszyscy pracownicy** z wyświetlonego menu.
 
-     Wszyscy pracownicy pojawiają się w części sieci Web.
+     Wszyscy pracownicy są wyświetlane w składniku Web Part.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
 [Porady: Tworzenie składnika web part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Porady: Tworzenie składnika web part programu SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Wskazówki: Tworzenie składnika web part dla SharePoint za pomocą projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Porady: tworzenie części sieciowej SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Przewodnik: Tworzenie składnika web part programu SharePoint przy użyciu narzędzia Projektant](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

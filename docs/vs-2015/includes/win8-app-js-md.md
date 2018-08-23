@@ -1,0 +1,1 @@
+Aplikacja ze Sklepu Windows dla systemu Windows z obsługą języka JavaScript

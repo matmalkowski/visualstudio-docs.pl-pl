@@ -1,0 +1,140 @@
+---
+title: Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgdef | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio shell, isolated mode%2C .pkgdef file
+ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
+caps.latest.revision: 28
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42679670"
+---
+# <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgdef
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Najnowszą wersję tego tematu znajduje się w temacie [modyfikowanie izolowane powłoki za pomocą. Pliku Pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
+  
+Plik .pkgdef obsługuje ustawienia, które umożliwia dostosowywanie aplikacji isolated shell. Określa wartości, które są tworzone, gdy aplikacja jest zainstalowana na komputerze, na które są przywoływane przez powłokę programu Visual Studio po uruchomieniu aplikacji. Ustawienia są zorganizowane w pliku na podstawie kluczy rejestru dotyczy.  
+  
+> [!WARNING]
+>  Należy pamiętać, że .pkgdef pliki, które nie są zadeklarowane w pliku .vsixmanifest pakietu VSPackage, nie są wykrywane po uruchomieniu programu Visual Studio.  
+  
+ Plik .pkgdef zawiera sekcje, które są identyfikowanych za pomocą klucza albo `[$RootKey$]` lub `[$RootKey$\` *podklucz*`]`, gdzie $RootKey$ to klucz główny dla aplikacji.  
+  
+ Każda sekcja zawiera nazwę/pary wartości, które mają następujący format: `"` *ValueName*`"=`*wartość*.  
+  
+ Wartości to ciąg, który jest ujęty w cudzysłów lub 32-bitowa liczba całkowita, która jest reprezentowana jako wartość typu dword. Wartości mają następujące ograniczenia:  
+  
+-   Wszystkie wartości dword są w formacie szesnastkowym, na przykład `dword:00000001`.  
+  
+     Wartości logiczne 1 oznacza wartość PRAWDA i FAŁSZ reprezentuje 0.  
+  
+-   Wszystkie ciągi GUID są w formacie rejestru, na przykład `"{00000000-0000-0000-0000-000000000000}"`.  
+  
+-   Wszystkie identyfikatory zasobów w lokalizowalnych mają następującą formę "@*resourceID*" lub "#*resourceID*", gdzie *resourceID* jest identyfikatorem zasobu w pakiecie aplikacji interfejsu użytkownika na przykład `"@102"`. Pakiet aplikacji interfejsu użytkownika jest pakiet, który odwołuje się do ustawienia AppLocalizationPackage.  
+  
+ Na przykład  
+  
+```  
+"HideSolutionConcept"=dword:00000001  
+"DefaultDebugEngine"="{00000000-0000-0000-0000-000000000000}"  
+```  
+  
+ Można dodać komentarze do pliku .pkgdef. Komentarz jednowierszowy zawiera dwa ukośniki jako dwa pierwsze znaki.  
+  
+ Aby uzyskać listę ciągów podstawienia, zobacz [podstawienia ciągi używane w. Pkgdef i. Pliki Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+  
+ W poniższych sekcjach opisano konkretne wartości rejestru, które mają wpływ na zachowanie powłoki programu Visual Studio w trybie izolowanym. Można również zdefiniować dodatkowe rejestru wartości dla aplikacji, w tym pliku.  
+  
+> [!NOTE]
+>  Jeśli to ustawienie nie zostanie podany w pliku .pkgdef, nie odpowiadający mu wpis zostanie przeprowadzona w rejestrze.  
+  
+## <a name="settings"></a>Ustawienia  
+ W poniższej tabeli opisano wartości zdefiniowane w obszarze [$RootKey$].  
+  
+|Nazwa|Typ|Wartość|  
+|----------|----------|-----------|  
+|AddinsAllowed|typu DWORD.|Wartość true, jeśli dodatki mogą zostać załadowane; w przeciwnym razie wartość false.<br /><br /> Wartość domyślna to true.|  
+|AllowsDroppedFilesOnMainWindow|typu DWORD.|Wartość true, jeśli okno główne może akceptować porzuconych plików; w przeciwnym razie wartość false. Pliki, usunąć głównego okna są otwarte przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> metody. To jest równoznaczne z otwarciem dokumentu przy użyciu **Otwórz** polecenie **pliku** menu w aplikacji.<br /><br /> Wartość domyślna to true.|  
+|AppIcon|string|Pełna ścieżka ikona programu. Ikona ta pojawia się na pasku tytułu z lewej strony nazwy aplikacji.<br /><br /> Wartością domyślną jest "$RootFolder$\\*solutionName*.ico", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|AppLocalizationPackage|string|Identyfikator GUID pakietu VSPackage, który zawiera zestawu satelickiego interfejsu użytkownika dla aplikacji. Tego pakietu VSPackage obejmuje skompilowanych wersji pliku vsct i może zawierać innych zlokalizowane ciągi. Zestawy funkcji i grup poleceń menu można włączać lub wyłączać, zmieniając ustawienia w pliku vsct projektu interfejsu użytkownika.<br /><br /> Wartość domyślna to "{*vsUiPackageGuid*}", gdzie *vsUiPackageGuid* jest identyfikator GUID jest przypisany do interfejsu użytkownika pakietu aplikacji.|  
+|AppName|string|Nazwa aplikacji. Nazwa pojawia się na pasku tytułu okna aplikacji.<br /><br /> Wartość domyślna to nazwa pliku rozwiązania aplikacji.|  
+|CommandLineLogo|string|Tekst transparentu, gdy aplikacja jest uruchomiona w oknie konsoli. To ustawienie dotyczy tylko aplikacje obsługujące operacje kompilacji wiersza polecenia.<br /><br /> Wartość domyślna to "*companyName ** solutionName* w wersji 1.0.", gdzie *companyName* to nazwa firmy podany przy wywołaniu metody Windows została zainstalowana, i *solutionName*to nazwa pliku rozwiązania aplikacji.|  
+|DefaultDebugEngine|string|Identyfikator GUID domyślnie debugowanie aparatu do użycia dla aplikacji.<br /><br /> Uwaga: Pusty identyfikator GUID (same zera) wskazuje, że aplikacja nie określa domyślny aparat debugowania. Dzięki temu debugera do wybrania aparat debugowania do użycia.<br /><br /> Wartość domyślna to " {00000000-0000-0000-0000-000000000000} ".|  
+|DefaultHomePage|string|Adres URL strony głównej domyślnego dla wewnętrznego okna przeglądarki.<br /><br /> Jeśli **strony głównej** opcja jest dostępna w aplikacji, a następnie to ustawienie wpływa na domyślny stan opcji. Aby uzyskać więcej informacji, zobacz [okno dialogowe przeglądarki sieci Web, środowisko, opcje](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Wartość domyślna to adres URL firmy podany przy wywołaniu metody Windows została zainstalowana.|  
+|DefaultProjectsLocation|string|Pełna ścieżka domyślny folder projektów. Na przykład<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Jeśli **projekty programu Visual Studio w lokalizacji** opcja jest dostępna w aplikacji, a następnie to ustawienie wpływa na domyślny stan opcji. Aby uzyskać więcej informacji, zobacz [NIB: Ogólne, projekty i rozwiązania, okno dialogowe Opcje](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> Wartością domyślną jest "$MyDocuments$\\*solutionName*", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|DefaultSearchPage|string|Domyślny adres URL strony wyszukiwania dla wewnętrznego okna przeglądarki.<br /><br /> Jeśli **strony wyszukiwania** opcja jest dostępna w aplikacji, a następnie to ustawienie wpływa na domyślny stan opcji. Aby uzyskać więcej informacji, zobacz [okno dialogowe przeglądarki sieci Web, środowisko, opcje](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Wartość domyślna to " http://search.live.com ".|  
+|DefaultUserFilesFolderRoot|string|Nazwa folderu użytkownika, względem bieżącego użytkownika przez folder Moje dokumenty.<br /><br /> Wartość domyślna to nazwa pliku rozwiązania aplikacji.|  
+|DisableOutputWindow|typu DWORD.|Wskazuje, czy programu isolated shell powinien traktować w oknie danych wyjściowych jako wyłączone.<br /><br /> Jeśli ta wartość jest równa true, Visual Studio nie wyświetla dane wyjściowe Menedżera kompilacji rozwiązania w **dane wyjściowe** okna i ukrywa **okno Pokaż dane wyjściowe, gdy rozpoczyna się kompilacja** pole wyboru w  **Projekty i rozwiązania** kategorii **opcje** okno dialogowe.<br /><br /> Wartość domyślna to false.|  
+|HideMiscellaneousFilesByDefault|typu DWORD.|Wartość TRUE powoduje ukrycie **różne pliki** folderu domyślnie **Eksploratora rozwiązań**; w przeciwnym razie wartość false.<br /><br /> Jeśli **Pokaż różne pliki w Eksploratorze rozwiązań** opcja jest dostępna w aplikacji, a następnie to ustawienie wpływa na domyślny stan opcji. Aby uzyskać więcej informacji, zobacz [dokumenty, środowisko, opcje, okno dialogowe](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> Wartość domyślna to false.|  
+|HideSolutionConcept|typu DWORD.|Wartość true, aby utworzyć wszystkie projekty projektów jako autonomiczne i ukryć rozwiązania i rozwiązania związane z poleceń dla projektów autonomicznej domyślnie; w przeciwnym razie wartość false.<br /><br /> Jeśli **zawsze pokazuj rozwiązanie** opcja jest dostępna w aplikacji, a następnie to ustawienie wpływa na domyślny stan opcji. Aby uzyskać więcej informacji, zobacz [NIB: Ogólne, projekty i rozwiązania, okno dialogowe Opcje](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> Wartość domyślna to false.|  
+|NewProjDlgInstalledTemplatesHdr|string|Nazwa nagłówka szablony programu Visual Studio utworzenie w **szablony** listy w **nowy projekt** okno dialogowe. Jest to ciąg lub identyfikator zasobu możliwych do zlokalizowania, który jest ładowany z pakietem aplikacji interfejsu użytkownika.<br /><br /> Wartość domyślna to "*solutionName* zainstalowane szablony", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|NewProjDlgSlnTreeNodeTitle|string|Nazwa **Visual Studio Solutions** w węźle **typów projektów** drzewa w **nowy projekt** okno dialogowe. Jest to ciąg lub identyfikator zasobu możliwych do zlokalizowania, który jest ładowany z pakietem aplikacji interfejsu użytkownika.<br /><br /> Wartość domyślna to "*solutionName* zainstalowane szablony", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|SolutionFileCreatorIdentifier|string|Identyfikator aplikacji jest wyświetlany jako drugi wiersz w plikach rozwiązania, które są generowane przez aplikację. Ten wiersz oznacza aplikację, która utworzyła plik. Zgodnie z Konwencją ta wartość obejmuje nazwę aplikacji oraz numer wersji aplikacji. Na przykład<br /><br /> `"SolutionFileCreatorIdentifier"="MyVSShellStub Solution File, Format Version 10.00"`<br /><br /> Program VSLauncher.exe, czyli domyślnego programu do otwierania pliku rozwiązania programu Visual Studio używa tego drugiego wiersza do określenia wersji programu Visual Studio, w którym można otworzyć pliku rozwiązania. Aplikacja wymaga własnej uruchamiania obsługi plików jego skojarzonego rozwiązania. Uruchom okno użyć również ten drugi wiersz w pliku rozwiązania, aby określić, w jakiej wersji aplikacji, aby otworzyć rozwiązanie.<br /><br /> Uwaga: Program Visual Studio VSLauncher.exe nie obsługuje plików SLN, które zostały utworzone przez aplikacji isolated shell.<br /><br /> Wartość domyślna to "*solutionName* plik rozwiązania, wersja formatu 10,00", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|SolutionFileExt|string|Rozszerzenie nazwy pliku rozwiązania dla aplikacji. Firma Microsoft zaleca wybranie rozszerzeniem unikatową nazwę pliku (not.sln).<br /><br /> Wartość domyślna to "*solutionName*_sln", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|SplashScreenBitmap|string|Pełna ścieżka pliku mapy bitowej dla ekranu powitalnego aplikacji.<br /><br /> Wartość domyślna to "$RootFolder$\Splash.bmp".|  
+|ThisVersionDTECLSID|string|Identyfikator klasy (CLSID) obiekt automatyzacji dla aplikacji.<br /><br /> Obiekt automatyzacji aplikacji jest obiektem najwyższego poziomu dla aplikacji w modelu automatyzacji powłoki programu Visual Studio i implementuje <xref:EnvDTE._DTE?displayProperty=fullName> interfejsu.<br /><br /> Jeśli obiekt automatyzacji aplikacji jest poprawnie zarejestrowany w kluczu rejestru HKEY_CLASSES_ROOT\CLSID, a następnie można użyć [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6) funkcję, aby bezpośrednio utworzyć wystąpienie aplikacji.<br /><br /> Powłoka programu Visual Studio używa tego identyfikatora CLSID zarejestrować obiektu automatyzacji aplikacji w tabeli uruchamiania obiektu (ROT) przy użyciu flagi ACTIVEOBJECT_WEAK. Dzięki temu można używać [getactiveobject —](http://msdn.microsoft.com/en-us/a276e30c-6a7f-4cde-9639-21a9f5170b62)funkcję, aby pobrać wskaźnik do uruchomionego wystąpienia aplikacji. Ponadto, jeśli zdefiniujesz ProgID dla obiektu automatyzacji aplikacji, następnie powłoki programu Visual Studio również rejestruje każde wystąpienie aplikacji rot za pomocą formularza moniker elementu *progID*:*processID* , gdzie *progID* jest identyfikator ProgID obiektu automatyzacji aplikacji i *processID* to identyfikator procesu dla danego wystąpienia aplikacji. Na przykład, jeśli tworzysz krótka w następujący sposób:<br /><br /> `CreateItemMoniker(L"!",`  *instanceString* `, &instanceMoniker)`<br /><br /> gdzie `instanceString` jest *progID*:*processID* ciągu. następnie można użyć `instanceMoniker` za pomocą funkcji ROT GetObject, aby pobrać wystąpienie.<br /><br /> Jeśli ustawienie ThisVersionDTECLSID zostanie pominięty, następnie aplikacja nie jest uwidaczniana, za pośrednictwem Component Object Model (COM). W tym przypadku nie można utworzyć wystąpienie aplikacji, wywołując [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6) działać i nie można zarejestrować rot.<br /><br /> Każda wersja pakietu VSPackage musi mieć inny identyfikator CLSID.<br /><br /> Wartość domyślna to identyfikator GUID, wygenerowanego przez Visual Studio dla obiektu automatyzacji w aplikacji.|  
+|ThisVersionSolutionCLSID|string|Identyfikator CLSID obiektem rozwiązanie dla aplikacji.<br /><br /> Obiekt automatyzacji rozwiązanie zawiera informacje o bieżącym otwartego rozwiązania w wystąpieniu aplikacji i implementuje <xref:EnvDTE._Solution?displayProperty=fullName> interfejsu.<br /><br /> Jeśli obiekt automatyzacji rozwiązania jest poprawnie zarejestrowany w kluczu rejestru HKEY_CLASSES_ROOT\CLSID, a następnie można użyć [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6) funkcję, aby bezpośrednio utworzyć obiekt rozwiązanie dla aplikacji.<br /><br /> Powłoka programu Visual Studio używa tego identyfikatora CLSID zarejestrować obiektu automatyzacji rozwiązania rot przy użyciu flagi ACTIVEOBJECT_WEAK.<br /><br /> Jeśli to ustawienie zostanie pominięty, to klasa rozwiązanie nie jest zarejestrowana przy użyciu Component Object Model (COM) i nie można utworzyć obiektu rozwiązania przez wywołanie metody [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6) funkcji i nie może być zarejestrowane w ROT.<br /><br /> Wartość domyślna to identyfikator GUID, wygenerowanego przez Visual Studio dla obiektu rozwiązania aplikacji.|  
+|UserFilesSubFolderName|string|Nazwa podfolderu w folderze Moje dokumenty użytkownika, w którym aplikacja tworzy pliki użytkownika i jego podfolderach.<br /><br /> Wartość domyślna to nazwa pliku rozwiązania aplikacji.|  
+|UserOptsFileExt|string|Rozszerzenie dla plików opcje użytkownika rozwiązania dla aplikacji.<br /><br /> Wartość domyślna to nazwa pliku rozwiązania aplikacji.|  
+  
+## <a name="binding-path-settings"></a>Ustawienia ścieżki wiązania  
+ [$RootKey$ \BindingPaths\\{00000000-0000-0000-0000-000000000000}] klucz zawiera listę katalogów, które powłoki sprawdza, czy zestawy. Te katalogi są dodawane do listy katalogów, które powłoki sondy zestawy prywatne dla aplikacji.  
+  
+ Domyślnie żadnych wpisów ścieżka powiązania są dodawane do pliku .pkgdef. Jednak poniższe podkatalogi katalogu instalacyjnego programu Visual Studio są automatycznie dodawane do listy Ścieżka powiązania aplikacji w rejestrze.  
+  
+-   Common7\IDE\  
+  
+-   Common7\IDE\\\PrivateAssemblies  
+  
+-   Common7\IDE\\\PublicAssemblies  
+  
+ Aby dodać katalog do ścieżki powiązania, Dodaj wpis w postaci "*directoryName*"="", gdzie *directoryName* jest ścieżką bezwzględną. Na przykład  
+  
+```  
+[$RootKey$\BindingPaths\{00000000-0000-0000-0000-000000000000}]  
+"$RootFolder$\directory1"=""  
+"%CommonProgramFiles%\directory2"=""  
+```  
+  
+## <a name="profile-settings"></a>Ustawienia profilu  
+ W poniższej tabeli opisano wartości, które są zdefiniowane dla każdego skojarzonego pakietu, w obszarze [$RootKey$ \Profile].  
+  
+|Nazwa|Typ|Wartość|  
+|----------|----------|-----------|  
+|AutoSaveFile|string|Katalog, w którym aplikacja przechowuje pliki automatycznego zapisywania.<br /><br /> Wartość domyślna to "$RootFolder$\Profiles\CurrentSettings.vssettings".|  
+  
+## <a name="package-satellite-dll-settings"></a>Ustawienia biblioteki DLL satelity pakietu  
+ W poniższej tabeli opisano wartości, które zostały zdefiniowane w obszarze [$RootKey$ \Packages\\{*vsPackageGuid*} \SatelliteDll] satelitarnej biblioteki DLL każdego skojarzonego pakietu gdzie *vsPackageGuid* jest identyfikator GUID skojarzonego pakietu.  
+  
+|Nazwa|Typ|Wartość|  
+|----------|----------|-----------|  
+|Parametr DllName|string|Nazwa pliku biblioteki DLL.<br /><br /> Wartość domyślna to "*solutionName*ui.dll", gdzie *solutionName* to nazwa pliku rozwiązania aplikacji.|  
+|Ścieżka|string|Katalog, który zawiera satelitarną bibliotekę DLL.<br /><br /> Wartość domyślna to "$PackageFolder$".|  
+  
+## <a name="package-menu-item-settings"></a>Ustawienia elementu Menu pakietu  
+ Klucz rejestru [$RootKey$ \Menus] Określa pliki zasobów interfejsu użytkownika dla aplikacji.  
+  
+ Wartości elementów menu mieć postać "{*vsUiPackageGuid*}"=" *resourceId*, *Numerwersji*", gdzie *vsUiPackageGuid* jest identyfikatorem GUID pakiet interfejsu użytkownika aplikacji *resourceId* jest identyfikatorem zasobu zasób CTMENU, który zawiera elementy interfejsu użytkownika i *Numerwersji* dotyczy numeru wersji wirtualnej CTMENU zasób. Aby uzyskać więcej informacji, zobacz [międzyoperacyjności zestawu poleceń programy obsługi rejestrowania](../extensibility/internals/registering-interop-assembly-command-handlers.md).  
+  
+ Domyślnie wpis element menu jest tworzony w pliku .pkgdef pakietu interfejsu użytkownika aplikacji.  
+  
+ Dla każdego pakietu, który zawiera elementy menu i który jest rozpowszechniany jako część aplikacji należy dodać wpis element menu dla pakietu.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md)   
+ [. Pliki Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+
