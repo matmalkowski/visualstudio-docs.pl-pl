@@ -1,30 +1,30 @@
 ---
-title: Tworzenie działania
-description: W tym artykule opisano różne akcje kompilacji, które mogą być używane dla projektów C#
-author: asb3993
-ms.author: amburns
+title: Akcja kompilacji
+description: W tym artykule opisano różne akcje kompilacji, których można użyć dla projektów C#
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 6ef2cc3347480fceab23df12e53be65dd5432183
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865009"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623937"
 ---
-# <a name="build-actions"></a>Tworzenie działania
+# <a name="build-actions"></a>Akcja kompilacji
 
-Wszystkie pliki w programie Visual Studio dla projektu Mac mają Akcja kompilacji, która kontroluje, co się dzieje z pliku podczas kompilacji. Te opcje można ustawić przez kliknięcie prawym przyciskiem myszy dowolny plik i przechodząc do **Akcja kompilacji**, jak pokazano poniżej:
+Wszystkie pliki w programie Visual Studio dla komputerów Mac projektu mają akcji kompilacji, który kontroluje, co się dzieje z pliku podczas kompilacji. Te opcje można ustawić przez kliknięcie prawym przyciskiem myszy dowolny plik i przechodząc do **Build Action**, jak pokazano poniżej:
 
-![Wybieranie Eksploratora rozwiązań fom akcji kompilacji kompilacji](media/projects-and-solutions-image1.png)
+![Wybieranie Eksploratora rozwiązań produkcyjny akcji kompilacji kompilacji](media/projects-and-solutions-image1.png)
 
-Akcje niektóre typowe kompilacji dla projektów C#:
+Akcje niektóre typowe kompilacji dla projektów języka C#:
 
-* **Brak** — plik nie jest częścią kompilacji w żaden sposób — wystarczy znajduje się w projekcie, by mieć łatwy dostęp z IDE.
-* **Kompiluj** — plik zostanie przekazany do kompilatora C# jako plik źródłowy.
+* **Brak** — plik nie jest częścią kompilacji w jakikolwiek sposób — po prostu znajduje się w projekcie, aby mieć łatwy dostęp z poziomu środowiska IDE.
+* **Skompilować** — plik zostanie przekazany do kompilatora C# jako plik źródłowy.
 * **EmbeddedResource** — plik zostanie przekazany do kompilatora C# jako zasób do osadzenia w zestawie. `System.Reflection` Przestrzeni nazw można odczytać pliku z zestawu.
-* **Zawartości** — projekty dla platformy ASP.NET, te pliki będą dołączane jako część lokacji po jej wdrożeniu. Dla platformy Xamarin.iOS i Xamarin.Mac projektów będą one zawarte w pakiecie aplikacji.
+* **Zawartość** — dla projektów platformy ASP.NET, te pliki będą dołączane jako część lokacji podczas jej wdrażania. W przypadku projektów Xamarin.iOS i Xamarin.Mac będzie znajdować się w zbiorze aplikacji.
 
-Istnieje możliwość wybrać więcej niż jeden plik w Eksploratorze rozwiązań, dzięki czemu można ustawić akcji kompilacji do wielu plików jednocześnie.
+Użytkownik może wybrać więcej niż jeden plik w Eksploratorze rozwiązań, co pozwala ustawić akcji kompilacji do wielu plików jednocześnie.
 
-Istnieją ponadto akcji kompilacji dla określonych projektów. Na przykład mieć projektów platformy Xamarin.iOS **BundleResource** kompilacji akcji, który zostanie dodany plik jako część pakietu aplikacji. Informacje o akcji określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.
+Ponadto istnieją akcje kompilacji dla konkretnych projektów. Na przykład mieć projekty Xamarin.iOS **BundleResource** tworzenie akcji, która doda go jako część pakietu aplikacji. Informacje o akcjach określonej kompilacji platformy Xamarin.Android znajdują się w [proces kompilacji](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) przewodnik.

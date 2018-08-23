@@ -1,11 +1,11 @@
 ---
-title: Visual Studio Team Explorer 2017 obciążenia i składnik identyfikatorów
-description: Umożliwia podanie zintegrowane narzędzia do testowania generalist testerów identyfikatorów obciążenia i składników programu Visual Studio
+title: Visual Studio Team Explorer 2017 obciążeń i składników identyfikatorów
+description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,44 +17,44 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: b14de9778518f9edb7180d2128c269df39b87510
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7112d078824a5eae3f8fe7d1013ccf3da90e100c
+ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282710"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623995"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 składników katalogu
 
-Tabele na tej stronie listy identyfikatorów, w której można zainstalować program Visual Studio przy użyciu wiersza polecenia lub można określić jako zależności w manifeście VSIX. Należy pamiętać, że będą dodawane dodatkowe składniki jako wydania aktualizacji dla programu Visual Studio.
+Tabele na tej stronie listy identyfikatorów, w której można zainstalować program Visual Studio przy użyciu wiersza polecenia lub można określić jako zależności w manifestu VSIX. Należy pamiętać, że dodamy dodatkowe składniki, jak wydaniu aktualizacji do programu Visual Studio.
 
-Należy również zauważyć następujące informacje o stronie:
+Ponadto należy pamiętać, że informacje o stronie:
 
-* Każde obciążenie ma osobny rozdział następuje identyfikator obciążenia i spisu składników, które są dostępne dla obciążeń.
-* Domyślnie **wymagane** składników zostanie zainstalowany po zainstalowaniu obciążenie.
-* Jeśli zostanie wybrana, można także zainstalować **zalecane** i **opcjonalnie** składników.
-* Dodaliśmy również sekcja, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnym obciążeniu.
+* Każde obciążenie ma osobny rozdział, następuje identyfikator obciążenia i tabeli składników, które są dostępne dla obciążenia.
+* Domyślnie **wymagane** składniki zostaną zainstalowane po zainstalowaniu obciążenia.
+* Jeśli chcesz, możesz także zainstalować **zalecane** i **opcjonalnie** składników.
+* Dodaliśmy również sekcję, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnych obciążeń.
 
-Po ustawieniu zależności w manifeście VSIX, należy określić tylko identyfikatory składników. Użyj tabel na tej stronie, aby określić naszych zależności minimalna składnika. W niektórych scenariuszach może to oznaczać, że możesz określić tylko jeden składnik od obciążenia. W innych sytuacjach może oznaczać, możesz określić wiele składników z pojedyncze obciążenie lub wielu składników z wiele obciążeń. Aby uzyskać więcej informacji, zobacz [porady: Migracja projektów rozszerzalności programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
 
-Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [użyć parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. Oraz listę obciążenia i identyfikatory składników dla innych produktów, zobacz [obciążenia 2017 r w usłudze Visual Studio i identyfikatory składników](workload-and-component-ids.md) strony.
+Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [Użyj parametry wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [Visual Studio 2017 obciążenia i identyfikatory składnika](workload-and-component-ids.md) strony.
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio core edytora (dołączony do programu Visual Studio Team Explorer 2017)
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Edytor Visual Studio core (dołączone do programu Visual Studio Team Explorer 2017)
 
 **Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Opis:** środowisko powłoki core Visual Studio, w tym kod obsługujący składni edycji, kontroli kodu źródłowego i elementu roboczego zarządzania.
+**Opis:** środowisko powłoki programu Visual Studio core, edytowania kodu uwzględniającej składnię, w tym kontrolą kodu źródłowego i zarządzanie elementami roboczymi.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Edytor podstawowe usługi Visual Studio | 15.6.27309.0 | Wymagane
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Strona Użytkownicy C++ początkowa programu Visual Studio | 15.0.27128.1 | Optional
+Microsoft.VisualStudio.Component.CoreEditor | Edytor rdzeni programu Visual Studio | 15.8.27729.1 | Wymagane
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Program Visual Studio uruchomić stronę dla użytkowników języka C++ | 15.0.27128.1 | Optional
 
-## <a name="unaffiliated-components"></a>Odłączony składników
+## <a name="unaffiliated-components"></a>Składniki nie podlega
 
-Są to składniki, które nie są dołączone każde obciążenie, ale można wybrać jako poszczególnych składników.
+Są to składniki, które nie są uwzględniane przy użyciu dowolnego obciążenia, ale można wybrać jako poszczególnych składników.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
@@ -62,19 +62,19 @@ n/d | n/d | n/d
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+Czasami mogą wystąpić problemy. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroków rozwiązywania problemów pomoże, możesz skontaktować nam się przez czat na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [stronę pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Możesz zgłosić problemy z produktu z nami za pośrednictwem [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
+* Możesz udostępnić sugestię dotyczącą produktu z nami w [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Możesz śledzić problemy z produktu i Szukaj odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
+* Można także nawiązać kontakt z nami i innych deweloperów programu Visual Studio za pośrednictwem [konwersacji programu Visual Studio community dotyczącym oprogramowania Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
 * [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)

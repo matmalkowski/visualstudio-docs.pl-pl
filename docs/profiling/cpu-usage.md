@@ -10,19 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd0652732e125f80affd9a94c5f29b286ab8bcb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204144"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623939"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, sposobem użycia procesora CPU. **Użycie procesora CPU** narzędzie pokazuje, gdzie Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic oraz kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, możesz zobaczyć podział użycia procesora CPU dla poszczególnych funkcji bez opuszczania debugera. Włącz profilowanie procesora CPU włączać i wyłączać podczas debugowania i wyświetlania wyników, gdy wykonanie zostanie zatrzymana, na przykład w punkcie przerwania.  
   
-Masz kilka opcji uruchamiania i zarządzania nimi sesję diagnostyczną. Na przykład, można uruchomić **użycie procesora CPU** narzędzia na maszynach lokalnych lub zdalnych lub na w symulatorze lub w emulatorze. Można analizować wydajność Otwórz projekt w programie Visual Studio dołączony do uruchomionej aplikacji, lub uruchomić aplikację, która jest instalowana z Microsoft Store. Aby uzyskać więcej informacji, zobacz [uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Masz kilka opcji uruchamiania i zarządzania nimi sesję diagnostyczną. Na przykład, można uruchomić **użycie procesora CPU** narzędzia na maszynach lokalnych lub zdalnych lub na w symulatorze lub w emulatorze. Można analizować wydajność Otwórz projekt w programie Visual Studio dołączony do uruchomionej aplikacji, lub uruchomić aplikację, która jest instalowana z Microsoft Store. Aby uzyskać więcej informacji, zobacz [uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
-W tym miejscu pokazujemy, jak zbierać i analizować użycie procesora CPU z kompilacjami wydania. Aby Analizowanie użycia procesora CPU podczas debugowania, zobacz [profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md). 
+W tym miejscu pokazujemy, jak zbierać i analizować użycie procesora CPU z kompilacjami wydania. Aby Analizowanie użycia procesora CPU podczas debugowania, zobacz [profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md).
+
+Windows 7 lub nowszy jest wymagany do korzystania z narzędzia profilowania, przedstawione w tym artykule, czyli [Profiler wydajności](../profiling/profiling-feature-tour.md).
   
 ##  <a name="collect-cpu-usage-data"></a>Zbieranie danych użycia procesora CPU  
   

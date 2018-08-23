@@ -15,18 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 599ca672e0f11c5fa33564140b450d156ed9c390
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640069"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623910"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki Start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 
 Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w analizie problemów z wydajnością w aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędzie, aby określić wąskie gardła wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
 Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Jeśli **użycie procesora CPU** narzędzia opisane w tym miejscu nie umożliwiają danych, których potrzebują, [innych narzędzi do profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. W wielu przypadkach wąskich gardeł wydajności aplikacji może być spowodowane przez coś innego niż Procesora, takich jak pamięć, renderowania interfejsu użytkownika lub czas żądania sieciowego. Centrum diagnostyki oferuje wiele innych opcji rejestracji i analizowaniu tego rodzaju danych.
+
+Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debugerem (**narzędzia diagnostyczne** okno). Windows 7 lub nowszy, można użyć narzędzia do późniejszej analizy [Profiler wydajności](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 

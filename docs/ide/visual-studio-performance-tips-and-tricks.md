@@ -1,21 +1,20 @@
 ---
-title: Porady dotyczące wydajności programu Visual Studio i wskazówki
-ms.date: 08/31/2017
+title: Porady dotyczące poprawy wydajności
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433538"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623913"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
 
@@ -40,7 +39,13 @@ Visual Studio powiadamia kolorem żółtym paskiem podczas przywracania automaty
 
 1. Na **projekty i rozwiązania** > **ogólne** strony, usuń zaznaczenie **ponownie otworzyć dokumentów przy ładowaniu rozwiązania**.
 
-Jeśli wyłączysz plik automatycznego przywracania, Szybkie nawigowanie do plików, który chcesz otworzyć polega na użyciu [przejdź do](../ide/go-to.md). Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**, lub naciśnij **Ctrl**+**T** .
+Jeśli wyłączysz plik automatycznego przywracania, Szybkie nawigowanie do plików, który chcesz otworzyć jest przy użyciu jednej z [przejdź do](../ide/go-to.md) poleceń:
+
+- Do ogólnych **przejdź do** funkcji, wybierz opcję **Edytuj** > **przejdź do** > **przejdź do wszystkich**, lub naciśnij  **CTRL**+**T**.
+
+- W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych możesz przejść do ostatniej edycji lokalizacji w rozwiązaniu za pomocą **Edytuj** > **przejdź do** > **przejdź do ostatniego edytowanie lokalizacji**, lub naciskając **Ctrl**+**Shift**+**Backspace**.
+
+- W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych **przejdź do pliku ostatnie** umożliwia wyświetlenie listy ostatnio odwiedzonych plików w rozwiązaniu. Wybierz **Edytuj** > **przejdź do** > **przejdź do pliku ostatnie**, lub naciśnij **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Skonfiguruj opcje debugowania
 

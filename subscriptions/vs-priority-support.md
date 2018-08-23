@@ -9,18 +9,18 @@ description: Więcej informacji na temat korzyści priorytetowej pomocy technicz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567158"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623951"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priorytetowa pomoc techniczna w ramach subskrypcji programu Visual Studio
 
 Korzyści z priorytetowej pomocy technicznej umożliwia dostęp do różnych forów społeczności pomocy technicznej, gdzie możesz wyszukiwać wpisy istniejące lub prosi nowe pytania.  Jeśli społeczność nie odpowie na Twoje pytanie w ciągu dwóch dni, zespół pomocy technicznej firmy Microsoft zapewni odpowiedzi.
 
-Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się do otrzymania priorytetowej pomocy technicznej za pośrednictwem dużą liczbę forów obejmujących różne tematy.
+Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się do otrzymania priorytetowej pomocy technicznej za pośrednictwem dużą liczbę forów obejmujących różne tematy.  Kliknij dowolny z linków poniżej, aby przejść bezpośrednio do wybranego forum.  
 
 ## <a name="included-forums"></a>Uwzględnione forów
 
@@ -238,7 +238,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się d
 | Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie do odsprzedaży, Imagine ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP).    Nie obejmuje: Sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje: nie do odsprzedaży, Imagine ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP).  Nie obejmuje: Sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

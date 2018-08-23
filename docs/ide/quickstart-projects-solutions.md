@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do projektów i rozwiązań w programie Visual Studio
+title: Wprowadzenie do projektów i rozwiązań
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512307"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623991"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
+# <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
-W tym przewodniku Szybki Start 10-minutowe przedstawimy zagadnienia związane z tym, co oznacza tworzenie *rozwiązania* i *projektu* w programie Visual Studio. To rozwiązanie jest kontenerem, który służy do organizowania co najmniej jeden projekt powiązany kod, na przykład biblioteki klas i odpowiadający mu projekt testu. Omówimy właściwości projektu i niektórych plików, który może zawierać. Również utworzymy odwołanie z jednego projektu do drugiego.
+W tym artykule wprowadzające przedstawimy wyjaśniono tworzenie *rozwiązania* i *projektu* w programie Visual Studio. To rozwiązanie jest kontenerem, który służy do organizowania co najmniej jeden projekt powiązany kod, na przykład biblioteki klas i odpowiadający mu projekt testu. Omówimy właściwości projektu i niektórych plików, który może zawierać. Również utworzymy odwołanie z jednego projektu do drugiego.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -176,19 +176,9 @@ Wiersz w pliku kodu C#, która zawiera <xref:System.Runtime.CompilerServices.Int
 
 Jeśli chcesz sprawdzić, czy działa testu jednostkowego, wybierz opcję **Test** > **Uruchom** > **wszystkie testy** z paska menu. Wywołuje okno **Eksploratora testów** zostanie otwarta, a powinna być wyświetlana **TestGetCurrentDate** przebiegów testów.
 
-Gratulujemy ukończenie tego przewodnika Szybki Start! Następnie możesz chcieć poznać inne Przewodniki Szybki Start dla programu Visual Studio, lub Dowiedz się więcej na temat [tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Personalizowanie programu Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Szybki Start: Generowanie kodu z edytora](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Zobacz także
 
+- [Tworzenie projektów i rozwiązań](../ide/creating-solutions-and-projects.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

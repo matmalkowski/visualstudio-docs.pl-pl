@@ -1,6 +1,6 @@
 ---
 title: 'Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic'
-description: Dowiedz się, jak utworzyć aplikację konsoli simple w programie Visual Studio za pomocą Visual Basic, krok po kroku.
+description: Dowiedz się, jak utworzyć prostą aplikację konsoli Hello World w programie Visual Studio za pomocą Visual Basic, który krok po kroku.
 ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
@@ -14,54 +14,54 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282349"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623965"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic
 
-W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która działa w konsoli programu.
+W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą aplikację języka Visual Basic, która działa na konsoli.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystkie pliki szablonu, które będą potrzebne, zanim nawet dodano niczego!
+Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest dostarczany z wszystkie pliki szablonu, które będą potrzebne, zanim dodaniu jeszcze nic!
 
-1. Otwórz program Visual Studio 2017 r.
+1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
+2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Następnie nazwą projektu *HelloWorld*.
+3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **języka Visual Basic**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Nadaj projektowi nazwę *HelloWorld*.
 
-   ![Konsoli szablonu projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
+   ![Szablon projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE konsoli](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
-     Jeśli nie widzisz **aplikacji konsoli (.NET Core)** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.
+     Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
 
-   ![Kliknij łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)
+   ![Kliknij link Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
-     Uruchamia Instalator programu Visual Studio. Wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
+     Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
-     ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-Po wybraniu szablonu projektu języka Visual Basic oraz nazwę projektu, Visual Studio tworzy prostą aplikację "Hello World". Wywołuje <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.
+Po wybraniu szablonu projektu języka Visual Basic i nazwij swój projekt, Visual Studio tworzy prostą aplikację "Hello World". Wywołuje <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.
 
-![Wyświetl domyślny kod Hello World z szablonu](../ide/media/vb-console-helloworld-template.png)
+![Wyświetlanie kodu Hello World domyślne z szablonu](../ide/media/vb-console-helloworld-template.png)
 
-Jeśli klikniesz przycisk **HelloWorld** przycisk w IDE, możesz uruchomić program w trybie debugowania.
+Jeśli klikniesz **HelloWorld** przycisku w IDE, możesz uruchomić program w trybie debugowania.
 
-  ![Kliknij przycisk Hello World, aby uruchomić program w trybie debugowania](../ide/media/vb-console-hello-world-button.png)
+  ![Kliknij przycisk Witaj, świecie, aby uruchomić program w trybie debugowania](../ide/media/vb-console-hello-world-button.png)
 
-Można to zrobić, w oknie konsoli jest widoczna na tylko chwilę przed jego zamknięciem. Zdarza się to `Main` metoda kończy się po wykonaniu jej jednej instrukcji, w związku z czym kończenia aplikacji.
+Gdy to zrobisz, okno konsoli jest widoczna na tylko chwilę przed jej zamknięciem. Wynika to z faktu `Main` metoda kończy się po wykonaniu jej pojedynczej instrukcji, więc kończy się w aplikacji.
 
 ### <a name="add-some-code"></a>Dodawanie kodu
 
-Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poprosić dla danych wejściowych użytkownika.
+Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poproś na dane wejściowe użytkownika.
 
 1. Dodaj następujący kod bezpośrednio po wywołaniu <xref:System.Console.WriteLine%2A> metody:
 
@@ -70,25 +70,25 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poprosić dla dany
    Console.ReadKey(true)
    ```
 
-    Zatrzymuje program, dopóki naciśnięciu klawisza.
+    Wstrzymuje program, dopóki naciśnięciu przypisanego klawisza.
 
 2. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
-   Program to kompiluje się na język pośredni (IL), który jest konwertowany na kod binarny za pomocą kompilatora just-in-time (JIT).
+   Program to kompilowany na język pośredni (IL), który jest konwertowany na kod binarny przez kompilator just-in-time (JIT).
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 1. Kliknij przycisk **HelloWorld** przycisk na pasku narzędzi.
 
-   ![Kliknij przycisk Hello World do uruchomienia programu z paska narzędzi](../ide/media/vb-console-hello-world-button.png)
+   ![Kliknij przycisk Witaj, świecie, aby uruchomić program z paska narzędzi](../ide/media/vb-console-hello-world-button.png)
 
 2. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
-   ![Wyświetlana Hello World w oknie konsoli i naciśnij dowolny klawisz, aby kontynuować](../ide/media/vb-console-hello-world-press-any-key.png)
+   ![Wyświetlanie Hello World w oknie konsoli, a następnie naciśnij dowolny klawisz, aby kontynuować](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Aby dowiedzieć się więcej, kontynuuj następujące samouczka.
+Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco Visual Basic i Visual Studio IDE. Aby dowiedzieć się więcej, przejdź do następującego samouczka.
 
 > [!div class="nextstepaction"]
 > [Wprowadzenie do języka Visual Basic w programie Visual Studio](tutorial-visual-basic-console.md)

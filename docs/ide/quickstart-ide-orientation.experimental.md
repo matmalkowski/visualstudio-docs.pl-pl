@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388127"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623966"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowisku IDE programu Visual Studio
 
@@ -104,12 +104,13 @@ Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub je
 
 Opisaliśmy kilka funkcji programu Visual Studio, aby korzystały z interfejsem użytkownika. Aby dokładniej:
 
-- Więcej informacji na temat prezentację programu Visual Studio, a nawet dabble podczas debugowania, w [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Dowiedz się więcej o Edytorze kodu](../ide/quickstart-editor.md)
 
-- Przeglądaj **elementy interfejsu użytkownika ogólne** sekcji dokumentacji programu VS, które przechodzi do bardziej szczegółowe informacje o korzystaniu z okien, takie jak [lista błędów](../ide/reference/error-list-window.md), [okno danych wyjściowych](../ide/reference/output-window.md), [ Okno właściwości](../ide/reference/properties-window.md), i [okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Dowiedz się więcej o projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Szybki Start: Pisanie kodu w edytorze](../ide/quickstart-editor.md)
-- [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+- [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+- [Zmienianie motywu i kolory czcionek](../ide/quickstart-personalize-the-ide.md)

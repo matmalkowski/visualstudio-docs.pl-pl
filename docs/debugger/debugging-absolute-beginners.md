@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131872"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623900"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -25,7 +25,7 @@ Bez błędów kod, który napiszemy deweloperów oprogramowania zawsze nie co oc
 
 Debuger Niestety, nie jest coś, co magiczny sposób może ujawnić wszystkie problemy lub "błędy" w naszym kodzie. *Debugowanie* oznacza, że aby uruchomić kod krok po kroku, narzędzia debugowania, takich jak Visual Studio, aby znaleźć dokładny moment, w których w przypadku popełnienia programowania. Następnie rozumiesz, jakie poprawki, należy wprowadzić w kodzie i narzędzia do debugowania umożliwiają często tymczasowo zmienić tak, aby kontynuować program.
 
-Skutecznego korzystania z debugera jest również umiejętności, która zajmuje czas i rozwiązaniem, aby dowiedzieć się, ale ostatecznie to klient jest podstawowych zadań dla każdego dewelopera oprogramowania. W tym artykule następnie możemy wprowadzić podstawowe zasady debugowania i zapewniają wskazówki ułatwiające rozpoczęcie pracy.
+Skutecznego korzystania z debugera jest również umiejętności, która zajmuje czas i rozwiązaniem, aby dowiedzieć się więcej, ale ostatecznie to klient jest podstawowych zadań dla każdego dewelopera oprogramowania. W tym artykule następnie możemy wprowadzić podstawowe zasady debugowania i zapewniają wskazówki ułatwiające rozpoczęcie pracy.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Wyjaśnienie tego problemu, zadając sobie prawo
 
@@ -35,7 +35,7 @@ Ułatwia ustalenie problemu, który rozwiąże przed spróbować go naprawić. O
 
 * Co się stało zamiast?
 
-    Po przeprowadzeniu Napotkano błąd (wyjątku) podczas uruchamiania aplikacji, które może być dobrym znakiem! Wyjątek jest nieoczekiwane zdarzenie napotkała podczas uruchamiania kodu, zazwyczaj błąd pewnego rodzaju. Narzędzie do debugowania może potrwać do dokładnie miejscu w kodzie, na którym wystąpił wyjątek, a następnie pomoże Ci zbadać możliwe poprawki.
+    Po przeprowadzeniu Napotkano błąd (wyjątku) podczas uruchamiania aplikacji, które może być dobrym znakiem! Wyjątek jest nieoczekiwane zdarzenie napotkała podczas uruchamiania kodu, zazwyczaj błąd pewnego rodzaju. Narzędzie do debugowania może potrwać do dokładnie miejscu w kodzie, na którym wystąpił wyjątek i pomoże Ci zbadać możliwe poprawki.
 
     Jeśli zdarzyło się coś innego, jaki jest objaw programu? Czy już podejrzewasz, której wystąpienia tego problemu w kodzie? Na przykład jeśli kod zawiera jakiś tekst, ale tekst jest niepoprawny, wiesz, że Twoje dane są uszkodzone lub kod, który Ustawianie tekstu wyświetlanego ma pewnego rodzaju błędów. Poprzez krokowe wykonywanie kodu w debugerze, można sprawdzić wszystkie zmiany do zmiennych, aby dowiedzieć się, kiedy i w jaki sposób są przypisane nieprawidłowe wartości.
 
@@ -228,7 +228,7 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
 1. Kliknij przycisk **ponowne uruchomienie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku na pasku narzędzi debugowania (**Ctrl** + **Shift**   +  **F5**).
 
-    Wstrzymuje aplikacji w punkcie przerwania, który został ustawiony. Żółty hightlighting wskazuje, gdzie wstrzymana jest debugera (żółta linia kodu nie jeszcze wykonane).
+    Wstrzymuje aplikacji w punkcie przerwania, który został ustawiony. Żółte wyróżnienie wskazuje, gdzie wstrzymana jest debugera (żółta linia kodu nie jeszcze wykonane).
 
 1. Umieść kursor nad `GalaxyType` rozwinąć zmiennej po prawej stronie, a następnie po lewej stronie ikona klucza `theGalaxy.GalaxyType`. Zobaczysz, że `GalaxyType` zawiera właściwość `MyGType`, a wartość właściwości jest równa `Spiral`.
 
@@ -303,7 +303,7 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
     Patrząc na kod, zostanie wyświetlony błąd pisowni w `case 'l'` instrukcji. Należy go `case 'I'`.
 
-1. Kliknij w kodzie dla `case 'l'`i zastąp go wartością "case"I".
+1. Kliknij w kodzie dla `case 'l'` i zastąp go wartością `case 'I'`.
 
 1. Usuń punkt przerwania, a następnie kliknij przycisk **ponowne uruchomienie** przycisk, aby ponownie uruchomić aplikację.
 

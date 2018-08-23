@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 04d8cd6f27f90d398d22b90f9c9bd432466fb3cd
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008476"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42623926"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -57,7 +57,8 @@ W poniższej tabeli wymieniono wartości ważności możliwe i ich skutki:
 
 Ważność | Efekt
 :------- | ------
-`none` lub `silent` | Nie pokazuj żadnych do użytkownika, gdy zasada ta jest naruszona. Funkcje generowanie kodu spowoduje wygenerowanie kodu jednak w przypadku tego stylu. Reguły z `none` ważność nigdy nie pojawiają się w *szybkie akcje i Refaktoryzacje* menu. W większości przypadków to jest uznawany za "wyłączone" lub "ignorowane".
+`none` | Nie pokazuj żadnych do użytkownika, gdy zasada ta jest naruszona. Funkcje generowania kodu Generuj kod jednak w przypadku tego stylu. Reguły z `none` ważność nigdy nie pojawiają się w **szybkie akcje i Refaktoryzacje** menu. W większości przypadków to jest uznawany za "wyłączone" lub "ignorowane".
+`silent` (również `refactoring` w programie Visual Studio 2017 wersja 15.8) | Nie pokazuj żadnych do użytkownika, gdy zasada ta jest naruszona. Funkcje generowania kodu Generuj kod jednak w przypadku tego stylu. Reguły z `silent` ważność uczestniczyć w oczyszczania, a także są wyświetlane w **szybkie akcje i Refaktoryzacje** menu.
 `suggestion` | W przypadku naruszenia tej reguły stylu wyświetlane użytkownikowi jako sugestię. Sugestie są traktowane jako trzy kropki szarym obszarze pierwsze dwa znaki.
 `warning` | W przypadku naruszenia tej reguły stylu Pokaż ostrzeżenia kompilatora.
 `error` | W przypadku naruszenia tej reguły stylów, Pokaż błąd kompilatora.
@@ -78,6 +79,11 @@ Na poniższej liście przedstawiono dopuszczalne języka zasadami Konwencji:
         - CSharp\_preferowanych\_modifier_order
         - wizualne\_podstawowe\_preferowanych\_modifier_order
         - polecenia DotNet\_styl\_tylko do odczytu\_pola
+    - [Preferencje nawiasów](#parentheses)
+        - polecenia DotNet\_styl\_nawiasów\_w\_arytmetyczne\_binarne\_operatorów
+        - polecenia DotNet\_styl\_nawiasów\_w\_innych\_binarne\_operatorów
+        - polecenia DotNet\_styl\_nawiasów\_w\_innych\_operatorów
+        - polecenia DotNet\_styl\_nawiasów\_w\_relacyjnych\_binarne\_operatorów
     - [Preferencje wyrażeń poziom](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -310,7 +316,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, dotyczy j
 
 | Nazwa zasady | Identyfikator reguły | Właściwe języki | Visual Studio domyślną | Visual Studio 2017 w wersji |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | zewnętrzne z publicznych, prywatnych, chronionych, wewnętrzny, statyczne, zastąpienie nowego, wirtualnego, abstract, sealed, tylko do odczytu, niebezpieczne, nietrwałe, async: Brak | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Częściowe, domyślny, Private, chronione publiczne, Friend, NotOverridable, możliwym do zastąpienia, MustOverride, przeciążenia, przesłonięć, MustInherit NotInheritable, statyczna, udostępniony, cieni, tylko do odczytu, WriteOnly, wymiar, Const, WithEvents, rozszerzanie i zwężanie niestandardowego, Async: Brak | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# i Visual Basic | wartość true: sugestii | wersji 15.7 |
@@ -410,6 +416,122 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
+#### <a name="parentheses"></a>Preferencje nawiasów
+
+Reguły stylów w tej sekcji dotyczą preferencje nawiasy, łącznie z użyciem nawiasów dla operacji arytmetycznych relacyjna, i inne operatory dwuargumentowe.
+
+W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, dotyczy języków programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+
+| Nazwa zasady | Identyfikator reguły | Właściwe języki | Visual Studio domyślną | Visual Studio 2017 w wersji |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# i Visual Basic | always_for_clarity: Brak | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# i Visual Basic | always_for_clarity: Brak | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# i Visual Basic | always_for_clarity: Brak | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# i Visual Basic | never_if_unnecessary: Brak | 15.8 |
+
+**polecenia DotNet\_styl\_nawiasów\_w\_arytmetyczne\_binary_operators**
+
+- Gdy ta reguła jest ustawiona na **always_for_clarity**, Preferuj nawiasów, aby wyjaśnić, operator arytmetyczny (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) pierwszeństwo.
+- Gdy ta reguła jest ustawiona na **never_if_unnecessary**, wolą ma nawiasy, gdy arytmetyczne — operator (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) jest oczywiste, pierwszeństwo.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+var v = a + (b * c);
+
+// dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+var v = a + b * c;
+```
+
+```vb
+' dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+Dim v = a + (b * c)
+
+' dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+Dim v = a + b * c
+```
+
+**polecenia DotNet\_styl\_nawiasów\_w\_relacyjnych\_binary_operators**
+
+- Gdy ta reguła jest ustawiona na **always_for_clarity**, Preferuj nawiasów, aby wyjaśnić, operator relacyjny (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) pierwszeństwo.
+- Gdy ta reguła jest ustawiona na **never_if_unnecessary**, wolą ma nawiasy, gdy relacyjnych — operator (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) jest oczywiste, pierwszeństwo.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+var v = (a < b) == (c > d);
+
+// dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+var v = a < b == c > d;
+```
+
+```vb
+' dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+Dim v = (a < b) = (c > d)
+
+' dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+Dim v = a < b = c > d
+```
+
+**polecenia DotNet\_styl\_nawiasów\_w\_innych\_binary_operators**
+
+- Gdy ta reguła jest ustawiona na **always_for_clarity**, Preferuj nawiasy w celu wyjaśnienia innych operatora binarnego (`&&`, `||`, `??`) pierwszeństwo.
+- Gdy ta reguła jest ustawiona na **never_if_unnecessary**, wolą bez nawiasów po innych operatora binarnego (`&&`, `||`, `??`) jest oczywiste, pierwszeństwo.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+var v = a || (b && c);
+
+// dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+var v = a || b && c;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+Dim v = a OrElse (b AndAlso c)
+
+' dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+Dim v = a OrElse b AndAlso c
+```
+
+**polecenia DotNet\_styl\_nawiasów\_w\_other_operators**
+
+- Gdy ta reguła jest ustawiona na **always_for_clarity**, Preferuj nawiasów, aby wyjaśnić kolejność wykonywania działań.
+- Gdy ta reguła jest ustawiona na **never_if_unnecessary**, łatwiej jest nie mieć nawiasy, gdy pierwszeństwo operatorów jest oczywiste.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_parentheses_in_other_operators = always_for_clarity
+var v = (a.b).Length;
+
+// dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+var v = a.b.Length;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_operators = always_for_clarity
+Dim v = (a.b).Length
+
+' dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+Dim v = a.b.Length
+```
+
+Te reguły może się pojawić w *.editorconfig* pliku w następujący sposób:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+```
+
 #### <a name="expression_level"></a>Preferencje wyrażeń poziom
 
 Styl reguł w tej sekcji dotyczą wyrażenie poziomu preferencjach, łącznie z użyciem inicjatorów obiektów, inicjatory kolekcji, nazwy krotki jawne lub wywnioskowane uprawnienie i wywnioskować typów anonimowych.
@@ -425,6 +547,8 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, dotyczy j
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# i Visual Basic | wartość true: sugestii | wersji 15.6 |
 | dotnet_style_prefer_auto_properties | IDE0032 | C# i Visual Basic | wartość true: Brak | wersji 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# i Visual Basic | wartość true: sugestii | wersji 15.7 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# i Visual Basic | wartość true: Brak | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# i Visual Basic | wartość true: Brak | 15.8 |
 
 **dotnet\_style\_object_initializer**
 
@@ -621,6 +745,78 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
+
+
+**polecenia DotNet\_styl\_Preferuj\_warunkowego\_wyrażenie\_over_assignment**
+
+- Gdy ta reguła jest ustawiona na **true**, preferowanie przypisania w usłudze trójargumentowy warunkowe za pośrednictwem instrukcji if else.
+- Gdy ta reguła jest ustawiona na **false**, preferowanie przydziałów za pomocą instrukcji if-else za pośrednictwem trójargumentowy warunkowe.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_assignment = true
+string s = expr ? "hello" : "world";
+
+// dotnet_style_prefer_conditional_expression_over_assignment = false
+string s;
+if (expr)
+{
+    s = "hello";
+}
+else
+{
+    s = "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_assignment = true
+Dim s As String = If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_assignment = false
+Dim s As String
+If expr Then
+    s = "hello"
+Else
+    s = "world"
+End If
+```
+
+**polecenia DotNet\_styl\_Preferuj\_warunkowego\_wyrażenie\_over_return**
+
+- Gdy ta reguła jest ustawiona na **true**, Preferuj instrukcjach return używać trójargumentowy warunkowe za pośrednictwem if-else, instrukcja.
+- Gdy ta reguła jest ustawiona na **false**, Preferuj instrukcjach return użyć instrukcji if-else za pośrednictwem trójargumentowy warunkowe.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_return = true
+return expr ? "hello" : "world"
+
+// dotnet_style_prefer_conditional_expression_over_return = false
+if (expr)
+{
+    return "hello";
+}
+else
+{
+    return "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_return = true
+Return If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_return = false
+If expr Then
+    Return "hello"
+Else
+    Return "world"
+End If
+```
+
 Te reguły może się pojawić w *.editorconfig* pliku w następujący sposób:
 
 ```EditorConfig
@@ -632,6 +828,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
 
 #### <a name="null_checking"></a>Preferencje sprawdzania wartości null
@@ -1967,12 +2165,14 @@ csharp_preserve_single_line_blocks = true
 ```
 
 ## <a name="example-editorconfig-file"></a>Przykładowy plik wtyczki EditorConfig
+
 Aby ułatwić Ci rozpoczęcie pracy, w tym miejscu znajduje się przykład *.editorconfig* pliku z opcjami domyślnymi:
 
 ```EditorConfig
 ###############################
 # Core EditorConfig Options   #
 ###############################
+
 root = true
 
 # All files
@@ -1988,6 +2188,7 @@ charset = utf-8-bom
 ###############################
 # .NET Coding Conventions     #
 ###############################
+
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
@@ -2002,6 +2203,12 @@ dotnet_style_qualification_for_event = false:none
 dotnet_style_predefined_type_for_locals_parameters_members = true:none
 dotnet_style_predefined_type_for_member_access = true:none
 
+# Parentheses preferences
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+
 # Modifier preferences
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
 dotnet_style_readonly_field = true:suggestion
@@ -2012,10 +2219,12 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 ###############################
 # Naming Conventions          #
@@ -2035,6 +2244,7 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 ###############################
 # C# Coding Conventions       #
 ###############################
+
 [*.cs]
 # var preferences
 csharp_style_var_for_built_in_types = true:none
@@ -2070,6 +2280,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ###############################
 # C# Formatting Rules         #
 ###############################
+
 # New line preferences
 csharp_new_line_before_open_brace = all
 csharp_new_line_before_else = true
@@ -2104,12 +2315,11 @@ csharp_preserve_single_line_blocks = true
 ###############################
 # VB Coding Conventions       #
 ###############################
+
 [*.vb]
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
-
 ```
-
 
 ## <a name="see-also"></a>Zobacz także
 
