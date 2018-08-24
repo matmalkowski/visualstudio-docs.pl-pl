@@ -2,14 +2,14 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
+description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 647220b0b2caa2efa99fb86cbca91cd78c59ab2d
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449068"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42756239"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -26,7 +26,7 @@ ms.locfileid: "34449068"
                                 </div>
                                 <div class="cardText">
                                     <h3>Instalator &amp; instalacji</h3>
-                                    <p>Informacje o sposobie instalowania i konfigurowania programu Visual Studio.</p>
+                                    <p>Dowiedz się, jak instalowanie i konfigurowanie programu Visual Studio.</p>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ ms.locfileid: "34449068"
                                 </div>
                                 <div class="cardText">
                                     <h3>Rozpoczynanie pracy z programem Visual Studio</h3>
-                                    <p>Opracowywanie dowolną aplikację na dowolnej platformie.</p>
+                                    <p>Tworzenie dowolnych aplikacji przeznaczonych dla dowolnej platformy.</p>
                                 </div>
                             </div>
                         </div>
@@ -76,6 +76,158 @@ ms.locfileid: "34449068"
         <h1>Dokumentacja programu Visual Studio</h1>
         <ul class="pivots">
             <li>
+                <li>
+                <a href="#get-started">Wprowadzenie</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Dowiedz się, jak używać programu Visual Studio</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />Uruchom samouczek</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />Pisanie i edytowanie kodu</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />Kompilowanie kodu</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="" />Debugowanie kodu</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />Testowanie kodu</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="" />Dostęp do danych, lokalnie lub w chmurze</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Wprowadzenie do samouczka</h3>
+                                                <h4>Wybierz język programowania</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">                                                    <li>
+                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Spróbuj 5-minutowy Przewodnik Szybki Start</h3>
+                                                <h4>Twórz "Hello, World" w wybranym języku.</h4>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Lub wybierz, co chcesz tworzyć</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Windows Universal app</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Aplikacja klasyczna Windows</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="">
+Aplikacja mobilna</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="">
+Gra na platformie Unity</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt="">
+Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li>
                 <a href="#features">Zadania</a>
                 <ul id="features">
                     <li>
@@ -93,7 +245,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Programowanie</h3>
-                                                    <p>Zapisz i zarządzać kodem za pomocą edytora kodu.</p>
+                                                    <p>Pisanie kodu i zarządzanie za pomocą edytora kodu.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +264,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Kompilacja</h3>
-                                                    <p>Skompiluj i kompilacji kodu źródłowego.</p>
+                                                    <p>Kompiluj i kompilowanie kodu źródłowego.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +283,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Debugowanie</h3>
-                                                    <p>Badanie i rozwiązywanie problemów w kodzie.</p>
+                                                    <p>Badanie i rozwiązywanie problemów z kodem.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,7 +302,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Test</h3>
-                                                    <p>Organizowanie testowania procesów.</p>
+                                                    <p>Organizuj procesy testowania.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +321,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deploy</h3>
-                                                    <p>Udostępnianie aplikacji za pomocą narzędzia Web Deploy, InstallShield i ciągłej integracji i inne.</p>
+                                                    <p>Udostępnianie aplikacji za pomocą narzędzia Web Deploy, InstallShield i ciągłej integracji i nie tylko.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +340,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Kontrola wersji</h3>
-                                                    <p>Udostępnianie kodu za pomocą technologii kontroli wersji, takich jak usługi Git i TFVC.</p>
+                                                    <p>Udostępnianie kodu za pomocą technologii kontroli wersji, takich jak Git i TFVC.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,7 +359,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Stale kompilacji wersji aplikacji w chmurze i implementować Agile rozwiązania z usługi VSTS.</p>
+                                                    <p>Ciągle kompilowanie i Wydawaj aplikacje w chmurze i zaimplementować Agile rozwiązania za pomocą usługi VSTS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -226,7 +378,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Poprawianie wydajności</h3>
-                                                    <p>Zidentyfikowania wąskich gardeł i zoptymalizować wydajność kodu za pomocą narzędzi diagnostycznych.
+                                                    <p>Zidentyfikuj wąskie gardła i zoptymalizować wydajność kodu za pomocą narzędzi diagnostycznych.
                                                     </p>
                                                 </div>
                                             </div>
@@ -246,7 +398,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Rozszerzanie</h3>
-                                                    <p>Dodaj własnej funkcji do programu Visual Studio IDE, aby udoskonalać jej działanie programowanie.</p>
+                                                    <p>Dodaj swoje własne funkcje do programu Visual Studio IDE, aby poprawić komfort programowania.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,7 +417,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Dane</h3>
-                                                    <p>Tworzenie aplikacji danych, które łączyć się z dowolną bazą danych lub usługi i dowolnego miejsca&#8212;lokalnej lub w chmurze. </p>
+                                                    <p>Twórz aplikacje danych, łączące się z dowolną bazą danych lub usługi i dowolnym miejscu&#8212;lokalnych lub w chmurze. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -284,7 +436,26 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Współpraca</h3>
-                                                    <p>Udostępnić, edytowanie i debugowanie kodu w środowisku współpracy, w czasie rzeczywistym. </p>
+                                                    <p>Udostępnianie, edytowanie i debugowanie kodu w środowisku współpracy, w czasie rzeczywistym. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Programowanie za pomocą kontenerów</h3>
+                                                    <p>Korzystaj z kontenerów, aby wyizolować modułowej składników i poprawienia skalowalności.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,7 +484,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833062">
                                                     <h3>C#</h3>
-                                                    <p>Nowoczesny zorientowany obiektowo język programowania z funkcjonalności możliwości programowania do tworzenia aplikacji na platformie .NET.</p>
+                                                    <p>Nowoczesne obiektowy język programowania funkcjonalności oraz możliwości programowania do tworzenia aplikacji na platformie .NET.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -332,7 +503,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833060">
                                                     <h3>Visual Basic</h3>
-                                                    <p>Nowoczesny, łatwe dowiedzieć się, zorientowany obiektowo język programowania dla platformy .NET koncentruje się na łatwe tworzenie aplikacji systemu Windows.</p>
+                                                    <p>Nowoczesny, łatwy dowiedzieć się, obiektowy język programowania przeznaczony dla platformy .NET koncentruje się na łatwe tworzenie aplikacji Windows.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -351,7 +522,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833063">
                                                     <h3>C++</h3>
-                                                    <p>Wydajny i elastyczny języka i rozwoju środowisku programowania do tworzenia aplikacji dla systemu Windows, Linux, iOS i Android.</p>
+                                                    <p>Wydajny i elastyczny programowania języka i środowisko programistyczne do tworzenia aplikacji dla Windows, Linux, iOS i Android.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -370,7 +541,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833067">
                                                     <h3>F#</h3>
-                                                    <p>Nowoczesne funkcjonalności język programowania o zorientowane obiektowo możliwości platformy .NET koncentruje się na ułatwiając funkcjonalności programowania dla każdego zadania.</p>
+                                                    <p>Nowoczesne funkcjonalny język programowania oraz możliwości zorientowane obiektowo dla platformy .NET, koncentrując się na funkcjonalności programowania łatwiej dowolne zadanie.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -389,7 +560,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833064">
                                                     <h3>JavaScript</h3>
-                                                    <p>Lekkie między platformami skryptów języka często używane do sprawić, że większej liczby interaktywnych stron sieci web.</p>
+                                                    <p>Lekkie Międzyplatformowe, często używane, aby sprawić, że stron sieci web bardziej interaktywny język skryptów.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -408,7 +579,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833066">
                                                     <h3>TypeScript</h3>
-                                                    <p>Podzbiorem JavaScript, który kompiluje się do zwykłego JavaScript i umożliwia utworzenie kodu większą skalowalność.</p>
+                                                    <p>Nadzbiorem języka JavaScript, który kompiluje do zwykłego kodu JavaScript i pozwala na tworzenie bardziej skalowalna kodu.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -427,7 +598,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
                                                     <h3>Python</h3>
-                                                    <p>Dynamiczne wysokiego poziomu, zorientowany obiektowo język programowania często używane do szybkiego opracowywania aplikacji.</p>
+                                                    <p>Dynamiczne zorientowane obiektowo, wysokiego poziomu język programowania często używane do szybkiego opracowywania aplikacji.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -446,7 +617,7 @@ ms.locfileid: "34449068"
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833070">
                                                     <h3>R</h3>
-                                                    <p>Rozszerzalny język programowania, zwykle używane do statystycznego przetwarzania danych i grafiki.</p>
+                                                    <p>Rozszerzalny język programowania, zwykle używane do przeprowadzania obliczeń statystycznych i grafiki.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -458,14 +629,14 @@ ms.locfileid: "34449068"
                 </ul>
             </li>
             <li>
-                <a href="#workloads">Obciążeń</a>
+                <a href="#workloads">Obciążenia</a>
                 <ul id="workloads">
                     <li>
                         <a href="#web">Web &amp; chmury</a>
                         <ul id="web" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Tworzenie aplikacji nowoczesnych witryn sieci web przy użyciu programu Visual Studio i zaawansowane narzędzia otwarte.
+                                    <p>Projektuj nowoczesne aplikacje internetowe przy użyciu programu Visual Studio i zaawansowanych otwartych narzędzi.
                                     </p>
                                 </div>
                             </li>
@@ -480,8 +651,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Projektowanie witryn sieci Web</h3>
-                                                    <p>Tworzenie aplikacji sieci web za pomocą programu ASP.NET i opartych na standardach technologii, takich jak HTML, JavaScript i CSS.</p>
+                                                    <h3>Tworzenie aplikacji sieci Web</h3>
+                                                    <p>Tworzenie aplikacji sieci web za pomocą programu ASP.NET oraz opartych na standardach technologii, takich jak HTML, JavaScript i CSS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -499,8 +670,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure projektowania i zarządzania nimi</h3>
-                                                    <p>Łatwe tworzenie, testowanie, wdrażania i zarządzania skalowalne aplikacje i usługi w chmurze firmy Microsoft.</p>
+                                                    <h3>Programowanie na platformie Azure i zarządzanie</h3>
+                                                    <p>Łatwe tworzenie, testowanie, wdrażania i zarządzania skalowalnych aplikacji oraz usług w chmurze firmy Microsoft.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,7 +690,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Python</h3>
-                                                    <p>Interakcyjne programowanie dla aplikacji Python, przy użyciu znanych platform, na przykład Django i Flask.</p>
+                                                    <p>Opracowywanie interakcyjne dla aplikacji w języku Python za pomocą znanych platform, w tym Django i Flask.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -538,7 +709,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Tworzenie aplikacji skalowalnych sieci przy użyciu środowiska Node.js, środowiska wykonawczego języka JavaScript asynchroniczne, sterowane zdarzeniami.</p>
+                                                    <p>Tworzenie skalowalnych aplikacji sieciowych przy użyciu środowiska Node.js, środowisko uruchomieniowe JavaScript asynchronicznego, oparte na zdarzeniach.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -557,7 +728,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Magazynowanie i przetwarzanie danych</h3>
-                                                    <p>Narzędzia i struktur umożliwiające opracowanie i przetestowanie rozwiązania danych przy użyciu programu SQL Server, usługi Azure Data Lake lub Hadoop.</p>
+                                                    <p>Narzędzia i struktury na opracowywanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -576,7 +747,7 @@ ms.locfileid: "34449068"
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplikacje do analizy i przetwarzania danych</h3>
-                                            <p>Języki i narzędzia do tworzenia aplikacji analizy danych, w tym Python, R i F #.</p>
+                                            <p>Języki i narzędzia do tworzenia aplikacji do nauki o danych, w tym języka Python, R i F #.</p>
                                         </div>
                                       </div>
                                     </div>
@@ -594,8 +765,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Programowanie Office i SharePoint</h3>
-                                                    <p>Tworzenie pakietu Office i programu SharePoint dodatków i rozwiązania przy użyciu języka C#, Visual Basic i JavaScript.</p>
+                                                    <h3>Programowanie Office/SharePoint</h3>
+                                                    <p>Twórz dodatki pakietu Office i programu SharePoint i rozwiązań przy użyciu języka C#, Visual Basic i JavaScript.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +780,7 @@ ms.locfileid: "34449068"
                         <ul id="windows" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Tworzenie aplikacji oraz gier do wszystkich urządzeń z systemem Windows przy użyciu programu Visual Studio.</p>
+                                    <p>Twórz aplikacje i gry za pomocą programu Visual Studio, aby dotrzeć do każdego urządzenia z systemem Windows.</p>
                                 </div>
                             </li>
                             <li>
@@ -623,8 +794,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie uniwersalnych platformy systemu Windows</h3>
-                                                    <p>Tworzenie aplikacji dla systemu Windows 10 z platformy uniwersalnej systemu Windows i C#, VB lub C++.</p>
+                                                    <h3>Opracowywanie zawartości dla platformy Windows Universal</h3>
+                                                    <p>Twórz aplikacje dla systemu Windows 10 przy użyciu platformy Universal Windows i języka C#, VB lub C++.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -642,8 +813,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Projektowania aplikacji .NET</h3>
-                                                    <p>Tworzenie WPF, formularze systemu Windows i aplikacje konsoli przy użyciu programu .NET Framework.</p>
+                                                    <h3>Programowanie aplikacji klasycznych .NET</h3>
+                                                    <p>Twórz, WPF, Windows Forms i aplikacji konsolowych przy użyciu programu .NET Framework.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -661,8 +832,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Systemu Windows dla deweloperów z C++</h3>
-                                                    <p>Tworzenie klasycznej aplikacji systemu Windows przy użyciu MFC, ATL i zestawu narzędzi firmy Microsoft C++.</p>
+                                                    <h3>Programowanie aplikacji Windows w języku C++</h3>
+                                                    <p>Tworzenie klasycznych aplikacji opartych na Windows za pomocą zaawansowanego MFC, ATL i zestawu narzędzi Microsoft C++.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -676,7 +847,7 @@ ms.locfileid: "34449068"
                         <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Utwórz natywny lub hybrydowych aplikacji mobilnych, przeznaczonych dla systemu Android, iOS i Windows.</p>
+                                    <p>Twórz natywne lub hybrydowe aplikacje mobilne, przeznaczonych dla systemów Android, iOS i Windows.</p>
                                 </div>
                             </li>
                             <li>
@@ -690,8 +861,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Programowanie przenośnych z platformą .NET</h3>
-                                                    <p>Tworzenie wieloplatformowych aplikacji dla systemu iOS, Android lub systemu Windows za pomocą platformy Xamarin.</p>
+                                                    <h3>Tworzenie aplikacji mobilnych przy użyciu platformy .NET</h3>
+                                                    <p>Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu platformy Xamarin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -709,8 +880,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie gier z Unity</h3>
-                                                    <p>Tworzenie gier 2W i 3W z unity, wydajne i platform środowisko projektowe.</p>
+                                                    <h3>Programowanie gier za pomocą aparatu Unity</h3>
+                                                    <p>Twórz gry 2D i 3D za pomocą aparatu unity, zaawansowane Międzyplatformowe środowisko programistyczne.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -728,8 +899,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie przenośnych za pomocą języka JavaScript</h3>
-                                                    <p>Tworzenie wieloplatformowych aplikacji dla systemu iOS, Android lub Windows przy użyciu platformy Apache Cordova.</p>
+                                                    <h3>Tworzenie aplikacji mobilnych za pomocą języka JavaScript</h3>
+                                                    <p>Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu platformy Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -747,8 +918,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie przenośnych za pomocą języka C++</h3>
-                                                    <p>Tworzenie wieloplatformowych aplikacji dla systemu iOS, Android lub systemu Windows za pomocą języka C++.</p>
+                                                    <h3>Tworzenie aplikacji mobilnych w języku C++</h3>
+                                                    <p>Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu języka C++.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -766,8 +937,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie gier z C++</h3>
-                                                    <p>Umożliwia tworzenie profesjonalnych gry obsługiwane przez usługę programu DirectX, niezr lub Cocos2D pełną moc C++.</p>
+                                                    <h3>Programowanie gier w języku C++</h3>
+                                                    <p>Użyj pełnych możliwości języka C++, aby tworzyć profesjonalne gry obsługiwane przez program DirectX, Unreal i Cocos2D.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -777,7 +948,7 @@ ms.locfileid: "34449068"
                         </ul>
                     </li>
                     <li>
-                        <a href="#other">Innymi procesami.</a>
+                        <a href="#other">Inne zestawy narzędzi</a>
                         <ul id="other" class="cardsC">
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=834750">
@@ -791,7 +962,7 @@ ms.locfileid: "34449068"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Programowanie rozszerzeń programu Visual Studio</h3>
-                                                    <p>Tworzenie dodatków rozszerzających Visual Studio, takich jak polecenia, analizatorów kodu i okien narzędzi.</p>
+                                                    <p>Tworzenie dodatków rozszerzających Visual Studio, takich jak polecenia, analizatory kodu i okna narzędzi.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -809,8 +980,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie Linux za pomocą języka C++</h3>
-                                                    <p>Tworzenie i debugowanie aplikacji uruchomionych w środowisku systemu Linux.</p>
+                                                    <h3>Programowanie dla systemu Linux przy użyciu języka C++</h3>
+                                                    <p>Twórz i Debuguj aplikacje działające w środowisku systemu Linux.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -828,8 +999,8 @@ ms.locfileid: "34449068"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Programowanie wieloplatformowych .NET core</h3>
-                                                    <p>Tworzenie aplikacji wieloplatformowych przy użyciu platformy .NET Core, platformy ASP.NET Core, HTML, JavaScript i narzędzia deweloperskie kontenera.</p>
+                                                    <h3>Programowanie dla wielu platform .NET core</h3>
+                                                    <p>Twórz aplikacje dla wielu platform przy użyciu platformy .NET Core, ASP.NET Core, HTML, JavaScript i narzędzia programistyczne kontenera.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -843,7 +1014,7 @@ ms.locfileid: "34449068"
         </ul>
     </div>
     <div class="container centered pageFooter">
-        <h2>Utrzymuj nam</h2>
+        <h2>Utrzymuj kontakt z nami</h2>
         <ul class="links">
            <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Blog </a>
@@ -858,7 +1029,7 @@ ms.locfileid: "34449068"
                 <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Zgłaszanie problemów </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Głos użytkownika </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> User Voice </a>
             </li>
         </ul>
     </div>
