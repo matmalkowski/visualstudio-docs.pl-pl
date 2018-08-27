@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639129"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902822"
 ---
 # <a name="extend-projects"></a>Rozszerzanie projektów
 Projekty i rozwiązania są sposoby programu Visual Studio organizuje plików kodu i zasobów w jednostki kompilacji i wdrożenia. Można znaleźć więcej informacji na temat projektów w [projektów (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Można utworzyć własne typy projektów za pomocą programu Visual Studio SDK i środowiska pakietu zarządzanego dla projektów, które można pobrać w [zarządzanego środowiska pakietu dla projektów](http://mpfproj12.codeplex.com/). Aby zrozumieć, są implementowane projektach niestandardowych, zobacz [Generowanie nowego projektu: za kulisami, część jednego](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) i [Generowanie nowego projektu: za kulisami, część dwóch](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Można utworzyć własne typy projektów za pomocą programu Visual Studio SDK i środowiska pakietu zarządzanego dla projektów, które można pobrać w [zarządzanego środowiska pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Aby zrozumieć, są implementowane projektach niestandardowych, zobacz [Generowanie nowego projektu: za kulisami, część jednego](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) i [Generowanie nowego projektu: za kulisami, część dwóch](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Tematy w tej sekcji opisano sposób tworzenia projektów niestandardowych i jak zarządzać różnego rodzaju rozwiązania Visual Studio.  
   

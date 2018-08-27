@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu programu MSBuild | Dokumentacja firmy Microsoft
+title: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,33 +15,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4115d6f1b368734631acf3ee4395d71dbe418c07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f27d3c5c7465314a7e9005972dec1349c1b9d89f
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141454"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902234"
 ---
-# <a name="using-msbuild"></a>Przy użyciu programu MSBuild
-MSBuild dostarcza dobrze zdefiniowany, rozszerzony format XML do tworzenia plików projektu, w pełni opisujące elementy projektu można utworzyć zadania kompilacji i konfiguracje kompilacji.  
+# <a name="using-msbuild"></a>Korzystanie z programu MSBuild
+Program MSBuild, dostarcza dobrze zdefiniowanych, rozszerzalne formatu XML do tworzenia plików projektów, które w pełni opisuje elementy projektu do zbudowania zadania kompilacji i konfiguracje kompilacji.  
   
 ## <a name="general-msbuild-considerations"></a>Zagadnienia ogólne MSBuild  
- Pliki projektu programu MSBuild, na przykład [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] pliki vbproj zawierają dane, które jest używane w czasie kompilacji, ale także zawierać dane, które jest używane w czasie projektowania. Dane dotyczące czasu kompilacji jest przechowywany przy użyciu programu MSBuild w nim elementów podstawowych, w tym [Item — Element (MSBuild)](../../msbuild/item-element-msbuild.md) i [Property — Element (MSBuild)](../../msbuild/property-element-msbuild.md). Danych czasu projektowania, czyli danych specyficznych dla typu projektu i żadnych podtypów powiązany projekt jest przechowywany w dowolnych XML zarezerwowano dla niej.  
+ Pliki projektów programu MSBuild, na przykład [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] .vbproj pliki zawierają dane, które są używane w czasie kompilacji, ale może również zawierać dane, które są używane w czasie projektowania. Dane w czasie kompilacji jest przechowywany przy użyciu programu MSBuild w nim elementów podstawowych, w tym [Item — Element (MSBuild)](../../msbuild/item-element-msbuild.md) i [Property — Element (MSBuild)](../../msbuild/property-element-msbuild.md). Dane czasu projektowania, które są specyficzne dla typów projektów i wszelkie podtypy projektów powiązane dane, są przechowywane w dowolnej postaci XML zarezerwowano dla niej.  
   
- MSBuild nie jest obsługiwany dla obiekt konfiguracji, ale zawiera atrybuty warunkowe dla określenia dane specyficzne dla konfiguracji. Na przykład:  
+ Program MSBuild nie zapewniają natywnej obsługi dla obiektów konfiguracji, ale zapewnia atrybuty warunkowe do określania danych specyficznych dla konfiguracji. Na przykład:  
   
 ```xml  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- Aby uzyskać więcej informacji na atrybuty warunkowe, zobacz [konstrukcje warunkowe](../../msbuild/msbuild-conditional-constructs.md).  
+ Aby uzyskać więcej informacji na temat atrybuty warunkowe, zobacz [konstrukcje warunkowe](../../msbuild/msbuild-conditional-constructs.md).  
   
-### <a name="extending-msbuild-for-your-project-type"></a>Rozszerzanie MSBuild dla danego typu projektu  
- Interfejsów API i interfejsów MSBuild mogą ulec zmianie w przyszłych wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W związku z tym rozsądne jest używać klas framework (MPF) zarządzanego pakietu, ponieważ udostępniają one osłony ze zmian.  
+### <a name="extending-msbuild-for-your-project-type"></a>Rozszerzanie programu MSBuild dla danego typu projektu  
+ MSBuild interfejsów i interfejsy API mogą ulec zmianie w przyszłych wersjach programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W związku z tym rozsądne jest używać klas framework (MPF) zarządzanego pakietu, ponieważ zapewniają one osłony przed zmianami.  
   
- Framework pakietu zarządzania dla projektów (MPFProj) udostępnia klasy pomocy dotyczące tworzenia i zarządzania nowy system projektu. Instrukcje można znaleźć źródła kodu i kompilacji w [MPF projektów — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ Środowiska pakietu zarządzanego dla projektów (MPFProj) udostępnia klasy pomocy do tworzenia i zarządzania nowy system projektów. Instrukcje można znaleźć źródła kodu i kompilacji w [MPF projektów — Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).  
   
- Klasy specyficzne dla projektu MPF są następujące:  
+ Klasy MPF specyficzne dla projektu są następujące:  
   
 |Class|Implementacja|  
 |-----------|--------------------|  
@@ -51,12 +51,12 @@ MSBuild dostarcza dobrze zdefiniowany, rozszerzony format XML do tworzenia plik�
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|  
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|  
   
- `Microsoft.VisualStudio.Package.ProjectElement` Klasa jest otoki dla elementów MSBuild.  
+ `Microsoft.VisualStudio.Package.ProjectElement` Klasa jest otoką elementy programu MSBuild.  
   
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>Vs generatory pojedynczego pliku. Zadania programu MSBuild  
- Pojedynczy plik generatory są dostępne tylko w czasie projektowania, ale zadania programu MSBuild, może być używany w czasie projektowania i czas kompilacji. Maksymalna elastyczność w związku z tym umożliwia zadania programu MSBuild transformacji i generowania kodu. Aby uzyskać więcej informacji, zobacz [niestandardowego narzędzia](../../extensibility/internals/custom-tools.md).  
+ Pojedynczy plik generatory są dostępne — tylko w czasie projektowania, ale zadania programu MSBuild może być używany w czasie projektowania i w czasie kompilacji. Aby zapewnić maksymalną elastyczność dlatego należy użyć zadania programu MSBuild do przekształcania i generowanie kodu. Aby uzyskać więcej informacji, zobacz [narzędzia niestandardowe](../../extensibility/internals/custom-tools.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do MSBuild](../../msbuild/msbuild-reference.md)   
- [MSBuild](../../msbuild/msbuild.md)   
+ [Odwołanie do narzędzia MSBuild](../../msbuild/msbuild-reference.md)   
+ [Program MSBuild](../../msbuild/msbuild.md)   
  [Narzędzia niestandardowe](../../extensibility/internals/custom-tools.md)

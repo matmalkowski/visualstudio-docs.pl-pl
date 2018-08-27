@@ -20,51 +20,53 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 930af2cf8407329ce8b82bb46b5b2a54cbcf2391
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d807fc581b6c4f0c06b2b2de1c86a148c30c4ff7
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680245"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900894"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadużywania parametrów na typach generycznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [CA1005: Unikaj nadużywania parametrów w typach ogólnych](https://docs.microsoft.com/visualstudio/code-quality/ca1005-avoid-excessive-parameters-on-generic-types).  
-  
-Element TypeName | AvoidExcessiveParametersOnGenericTypes |  
-| CheckId | CA1005 |  
-| Kategoria | Microsoft.Design|  
-| Zmiana powodująca niezgodność | Przerwanie |  
-  
-## <a name="cause"></a>Przyczyna  
- Typ widoczny na zewnątrz ogólnego ma więcej niż dwa parametry typu.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Zwykle jest to za pomocą jednego parametru typu, jak `List<T>`, a w niektórych przypadkach, z dwoma parametrami typu, jak `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w języku C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej zasady, zmiany w projekcie ma używać nie więcej niż dwóch parametrów typu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły, chyba że projekt wymaga absolutnie więcej niż dwa parametry typu. Typy ogólne w składni, który jest łatwy do zrozumienia i użycia, zapewniając skraca czas, jest wymagana, aby dowiedzieć się, która zwiększa szybkość przyjęcia nowe biblioteki.  
-  
-## <a name="related-rules"></a>Powiązane reguły  
- [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
-  
- [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
-  
- [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)  
-  
- [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
-  
- [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
-  
- [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)  
-  
- [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)  
-  
-## <a name="see-also"></a>Zobacz też  
+Najnowszą wersję tego tematu znajduje się w temacie [CA1005: Unikaj nadużywania parametrów w typach ogólnych](https://docs.microsoft.com/visualstudio/code-quality/ca1005-avoid-excessive-parameters-on-generic-types).
+
+|||
+|-|-|
+|TypeName|AvoidExcessiveParametersOnGenericTypes|
+|CheckId|CA1005|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Typ widoczny na zewnątrz ogólnego ma więcej niż dwa parametry typu.
+
+## <a name="rule-description"></a>Opis reguły
+ Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Zwykle jest to za pomocą jednego parametru typu, jak `List<T>`, a w niektórych przypadkach, z dwoma parametrami typu, jak `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w języku C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej zasady, zmiany w projekcie ma używać nie więcej niż dwóch parametrów typu.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły, chyba że projekt wymaga absolutnie więcej niż dwa parametry typu. Typy ogólne w składni, który jest łatwy do zrozumienia i użycia, zapewniając skraca czas, jest wymagana, aby dowiedzieć się, która zwiększa szybkość przyjęcia nowe biblioteki.
+
+## <a name="related-rules"></a>Powiązane reguły
+ [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+
+ [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+
+ [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
+
+ [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+
+ [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+
+ [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
+
+ [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
+
+## <a name="see-also"></a>Zobacz też
  [Typy ogólne](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
 
 

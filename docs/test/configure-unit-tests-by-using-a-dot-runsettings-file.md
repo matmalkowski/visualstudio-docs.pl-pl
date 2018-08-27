@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978414"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901488"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
@@ -219,6 +219,7 @@ Parametry przebiegu testu umożliwiają definiowanie zmiennych i wartości, któ
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 Aby użyć parametrów przebiegu testu, Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> właściwości do klasy testowej.
@@ -234,7 +235,7 @@ Aby użyć parametrów przebiegu testu, Dodaj prywatnej <xref:Microsoft.VisualSt
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody testowe, które mają <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybutu.

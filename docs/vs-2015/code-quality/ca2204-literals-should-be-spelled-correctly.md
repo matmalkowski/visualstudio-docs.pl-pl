@@ -20,48 +20,50 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 575b10770f629a9ca97030f09e48622654307ee8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39d841fbfa9be3e3ee5764e986a9688ca4113caf
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673347"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902381"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literały powinny być napisane poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [CA2204: literały powinny być zapisane poprawnie](https://docs.microsoft.com/visualstudio/code-quality/ca2204-literals-should-be-spelled-correctly).  
-  
-Element TypeName | LiteralsShouldBeSpelledCorrectly |  
-| CheckId | CA2204 |  
-| Kategoria | Microsoft.Usage|  
-| Zmiana powodująca niezgodność | Inne niż powodująca niezgodność |  
-  
-## <a name="cause"></a>Przyczyna  
- Przebiegi metody, ciągiem literału, do którego jest używany w parametr lub właściwość, która wymaga zlokalizowany ciąg z ciągiem literału zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Ta reguła sprawdza, czy ciąg literału, który jest przekazywany jako wartość parametru lub właściwości, gdy dla jednego lub więcej z następujących przypadków ma wartość true:  
-  
--   <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na wartość true.  
-  
--   Nazwa parametru lub właściwości zawiera "Text", "Message" lub "Podpis".  
-  
--   Nazwa parametru ciągu, który jest przekazywany do metody Console.Write — lub elementu Console.WriteLine jest "value" lub "format".  
-  
- Ta reguła umożliwia przekształcanie ciągów literałów w wyrazy, tokenizowanie wyrazy złożone i sprawdza pisownię każdego wyrazu/tokenu. Aby uzyskać informacji na temat analizy algorytmu, zobacz [CA1704: identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
-  
- Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego. Aby uzyskać informacje o sposobie używania słowników niestandardowych, zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły. Poprawnie właściwej słów zmniejszyć nauki wymagany dla nowe biblioteki oprogramowania.  
-  
-## <a name="related-rules"></a>Powiązane reguły  
- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
-  
+Najnowszą wersję tego tematu znajduje się w temacie [CA2204: literały powinny być zapisane poprawnie](https://docs.microsoft.com/visualstudio/code-quality/ca2204-literals-should-be-spelled-correctly).
+
+|||
+|-|-|
+|TypeName|LiteralsShouldBeSpelledCorrectly|
+|CheckId|CA2204|
+|Kategoria|Microsoft.Usage|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Przebiegi metody, ciągiem literału, do którego jest używany w parametr lub właściwość, która wymaga zlokalizowany ciąg z ciągiem literału zawiera jeden lub więcej wyrazów, które nie są rozpoznawane przez bibliotekę sprawdzania pisowni Microsoft.
+
+## <a name="rule-description"></a>Opis reguły
+ Ta reguła sprawdza, czy ciąg literału, który jest przekazywany jako wartość parametru lub właściwości, gdy dla jednego lub więcej z następujących przypadków ma wartość true:
+
+-   <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na wartość true.
+
+-   Nazwa parametru lub właściwości zawiera "Text", "Message" lub "Podpis".
+
+-   Nazwa parametru ciągu, który jest przekazywany do metody Console.Write — lub elementu Console.WriteLine jest "value" lub "format".
+
+ Ta reguła umożliwia przekształcanie ciągów literałów w wyrazy, tokenizowanie wyrazy złożone i sprawdza pisownię każdego wyrazu/tokenu. Aby uzyskać informacji na temat analizy algorytmu, zobacz [CA1704: identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+
+ Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego. Aby uzyskać informacje o sposobie używania słowników niestandardowych, zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły. Poprawnie właściwej słów zmniejszyć nauki wymagany dla nowe biblioteki oprogramowania.
+
+## <a name="related-rules"></a>Powiązane reguły
+ [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+
  [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
 

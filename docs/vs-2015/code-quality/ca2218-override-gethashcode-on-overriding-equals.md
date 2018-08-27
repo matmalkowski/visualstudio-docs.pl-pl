@@ -20,19 +20,24 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cf8fb22f5cfd6b5a9752077f11c47076b504b46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b952252b5b035242e69806e81b95884e05f862c5
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679875"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900731"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Zastąp GetHashCode przy przesłanianiu Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Najnowszą wersję tego tematu znajduje się w temacie [CA2218: Zastąp GetHashCode przy przesłanianiu Equals](https://docs.microsoft.com/visualstudio/code-quality/ca2218-override-gethashcode-on-overriding-equals).
 
-Element TypeName | OverrideGetHashCodeOnOverridingEquals | | CheckId | CA2218 | | Kategoria | Microsoft.Usage| | Zmiana powodująca niezgodność | Inne niż powodująca niezgodność |
+|||
+|-|-|
+|TypeName|OverrideGetHashCodeOnOverridingEquals|
+|CheckId|CA2218|
+|Kategoria|Microsoft.Usage|
+|Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
  Typ publiczny zastępuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale nie przesłania <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.

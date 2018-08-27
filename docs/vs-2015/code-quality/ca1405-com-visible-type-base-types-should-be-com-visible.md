@@ -20,45 +20,45 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6de0176f10d180792ea5df943bc52d7fe3a19557
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d912466c4823357f8614f22083ab2e1d93109fe
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688759"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900503"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typu widocznego dla modelu COM powinny być widoczne dla modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [CA1405: typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM](https://docs.microsoft.com/visualstudio/code-quality/ca1405-com-visible-type-base-types-should-be-com-visible).  
-  
-Element TypeName | ComVisibleTypeBaseTypesShouldBeComVisible |  
-| CheckId | CA1405 |  
-| Kategoria | Microsoft.Interoperability|  
-| Zmiana powodująca niezgodność | DependsOnFix |  
-  
-## <a name="cause"></a>Przyczyna  
- Typ widoczny Component Object Model (COM) pochodzi z typu, który nie jest widoczne dla modelu COM.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Gdy typem widoczne dla modelu COM, elementy członkowskie są dodawane w nowej wersji, należy przestrzegać ścisłe wytyczne w celu uniknięcia przerwanie klientów COM powiązanych do bieżącej wersji. Typ, który jest niewidoczna dla modelu COM przyjęto założenie, że nie trzeba należy wykonać następujące czynności COM wersji powoduje dodanie nowych elementów członkowskich. Jeśli jednak widoczne dla modelu COM typ pochodzi od typu niewidoczne COM i udostępnia interfejs klasy <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ClassInterfaceType> (ustawienie domyślne), wszystkie publiczne elementy członkowskie tego typu podstawowego (o ile są wyraźnie oznaczone jako COM niewidoczne, który zbyteczna) są widoczne dla modelu COM. Jeśli typ podstawowy dodaje nowych elementów członkowskich w kolejnej wersji, mogą przestać działać żadnych klientów COM, który należy powiązać interfejsu klasy typu pochodnego. Typy widoczne dla modelu COM powinny pochodzić tylko w typach widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwanie klientów modelu COM.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej zasady, ukrywanie typów podstawowych widoczne dla modelu COM lub typu pochodnego COM.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje typ, który narusza regułę.  
-  
+Najnowszą wersję tego tematu znajduje się w temacie [CA1405: typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM](https://docs.microsoft.com/visualstudio/code-quality/ca1405-com-visible-type-base-types-should-be-com-visible).
+
+|||
+|-|-|
+|TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
+|CheckId|CA1405|
+|Kategoria|Microsoft.Interoperability|
+|Zmiana kluczowa|DependsOnFix|
+
+## <a name="cause"></a>Przyczyna
+ Typ widoczny Component Object Model (COM) pochodzi z typu, który nie jest widoczne dla modelu COM.
+
+## <a name="rule-description"></a>Opis reguły
+ Gdy typem widoczne dla modelu COM, elementy członkowskie są dodawane w nowej wersji, należy przestrzegać ścisłe wytyczne w celu uniknięcia przerwanie klientów COM powiązanych do bieżącej wersji. Typ, który jest niewidoczna dla modelu COM przyjęto założenie, że nie trzeba należy wykonać następujące czynności COM wersji powoduje dodanie nowych elementów członkowskich. Jeśli jednak widoczne dla modelu COM typ pochodzi od typu niewidoczne COM i udostępnia interfejs klasy <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ClassInterfaceType> (ustawienie domyślne), wszystkie publiczne elementy członkowskie tego typu podstawowego (o ile są wyraźnie oznaczone jako COM niewidoczne, który zbyteczna) są widoczne dla modelu COM. Jeśli typ podstawowy dodaje nowych elementów członkowskich w kolejnej wersji, mogą przestać działać żadnych klientów COM, który należy powiązać interfejsu klasy typu pochodnego. Typy widoczne dla modelu COM powinny pochodzić tylko w typach widocznych dla modelu COM, aby zmniejszyć prawdopodobieństwo przerwanie klientów modelu COM.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej zasady, ukrywanie typów podstawowych widoczne dla modelu COM lub typu pochodnego COM.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="example"></a>Przykład
+ Poniższy przykład pokazuje typ, który narusza regułę.
+
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/cs/FxCop.Interoperability.ComBaseTypes.cs#1)]
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>   
- [Wprowadzenie interfejsu klasy](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [Współdziałanie z kodem niezarządzanym](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
+
+## <a name="see-also"></a>Zobacz też
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Wprowadzenie interfejsu klasy](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) [współdziałanie z niezarządzanego kodu](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
 
 
 

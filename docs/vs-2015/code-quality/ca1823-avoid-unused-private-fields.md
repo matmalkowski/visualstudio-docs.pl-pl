@@ -20,42 +20,44 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 306c587daa63089114d2bceefda42b064f8cc6fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfe51ab6c163c82d413c5c7cc74edc0b980abd85
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677080"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900325"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Unikaj nieużywanych pól prywatnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [CA1823: Unikaj nieużywanych pól prywatnych](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).  
-  
-Element TypeName | AvoidUnusedPrivateFields |  
-| CheckId | CA1823 |  
-| Kategoria | Microsoft.Performance|  
-| Zmiana powodująca niezgodność | Bez podziału |  
-  
-## <a name="cause"></a>Przyczyna  
- Ta reguła jest zgłaszany, gdy istnieje pole private w kodzie, ale nie jest używany przez wszystkie ścieżce kodu.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej zasady, usuń pole, lub Dodaj kod, który korzysta z niego.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Jest bezpieczne pominąć ostrzeżenie od tej reguły.  
-  
-## <a name="related-rules"></a>Powiązane reguły  
- [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)  
-  
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)  
-  
+Najnowszą wersję tego tematu znajduje się w temacie [CA1823: Unikaj nieużywanych pól prywatnych](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).
+
+|||
+|-|-|
+|TypeName|AvoidUnusedPrivateFields|
+|CheckId|CA1823|
+|Kategoria|Microsoft.Performance|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Ta reguła jest zgłaszany, gdy istnieje pole private w kodzie, ale nie jest używany przez wszystkie ścieżce kodu.
+
+## <a name="rule-description"></a>Opis reguły
+ Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej zasady, usuń pole, lub Dodaj kod, który korzysta z niego.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły.
+
+## <a name="related-rules"></a>Powiązane reguły
+ [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
+ [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+
+ [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+
  [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
 

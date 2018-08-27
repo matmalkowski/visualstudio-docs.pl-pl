@@ -21,54 +21,56 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a70bda4a25b21b1bd54a2661e4071b2d0e1121d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29681e6b43b3c8e71f10393cbaec715c33a89a93
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680405"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901761"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Jawne metody nie mogą używać potwierdzeń zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [CA2147: metody przezroczyste nie mogą używać zabezpieczeń potwierdza](https://docs.microsoft.com/visualstudio/code-quality/ca2147-transparent-methods-may-not-use-security-asserts).  
-  
-Element TypeName | SecurityTransparentCodeShouldNotAssert |  
-| CheckId | CA2147 |  
-| Kategoria | Microsoft.Security|  
-| Zmiana powodująca niezgodność | Przerwanie |  
-  
-## <a name="cause"></a>Przyczyna  
- Kod, który jest oznaczony jako <xref:System.Security.SecurityTransparentAttribute> nie udzielono uprawnień wystarczających do potwierdzenia.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Ta reguła analizuje wszystkie metody i typy w zestawie, który jest albo 100% przezroczysty lub mieszany przezroczysto krytyczny i zaznacza deklaratywne lub imperatywne użycie elementu <xref:System.Security.CodeAccessPermission.Assert%2A>.  
-  
- W czasie wszelkie wywołania do wykonywania <xref:System.Security.CodeAccessPermission.Assert%2A> z przezroczystego kodu spowoduje, że <xref:System.InvalidOperationException> zostanie wygenerowany. Taka sytuacja może wystąpić, oba zestawy przezroczyste 100%, a także na pulpicie zestawów mieszanych przezroczysto krytyczny, w którym jest zadeklarowana jako przezroczysty metody lub typu, ale zawiera Assert zaznacza deklaratywne lub imperatywne.  
-  
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 wprowadzono funkcję o nazwie *przezroczystości*. Poszczególne metody, pola, interfejsy, klas i typów może być przezroczysty lub krytyczny.  
-  
- Przezroczysty kod nie jest dozwolony do podniesienia uprawnień zabezpieczeń. W związku z tym wszelkie uprawnienia udzielone lub żądać go automatycznie są przekazywane za pośrednictwem kodu domeny aplikacji obiektu wywołującego lub hosta. Wybierającym przykłady potwierdzenia, LinkDemands, SuppressUnmanagedCode, i `unsafe` kodu.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby rozwiązać ten problem, albo oznaczyć kod, który wywołuje Assert, za pomocą <xref:System.Security.SecurityCriticalAttribute>, lub usuń Assert.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj wiadomości od tej reguły.  
-  
-## <a name="example"></a>Przykład  
- Ten kod zakończy się niepowodzeniem, jeśli `SecurityTestClass` są przezroczyste, kiedy `Assert` metoda zgłasza wyjątek <xref:System.InvalidOperationException>.  
-  
- [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]  
-  
-## <a name="example"></a>Przykład  
- Jedną z opcji jest na Przegląd kodu metody SecurityTransparentMethod w poniższym przykładzie, a jeśli metoda jest uważane za bezpieczne o podniesienie uprawnień, należy oznaczyć SecurityTransparentMethod z bezpieczny krytyczny takie rozwiązanie wymaga zabezpieczeń szczegółowe, kompletne i błędów Inspekcja odbywa się na metodzie, wraz z dowolnym wezwaniem występujących w ramach metody Assert:  
-  
- [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]  
-  
- Innym rozwiązaniem jest usunięcie Asercja z kodu i pozwól dowolnego pliku kolejnych operacji We/Wy przepływu żądania uprawnień poza SecurityTransparentMethod do obiektu wywołującego. Umożliwia to sprawdzanie zabezpieczeń. W tym przypadku nie inspekcji zabezpieczeń zwykle wdrożenia, ponieważ żądania uprawnień będą przepływać do obiektu wywołującego i/lub w domenie aplikacji. Żądania uprawnień ściśle są kontrolowane przez zasady zabezpieczeń, hostowania środowiska i przyznaje uprawnienia kodu źródłowego.  
-  
-## <a name="see-also"></a>Zobacz też  
+Najnowszą wersję tego tematu znajduje się w temacie [CA2147: metody przezroczyste nie mogą używać zabezpieczeń potwierdza](https://docs.microsoft.com/visualstudio/code-quality/ca2147-transparent-methods-may-not-use-security-asserts).
+
+|||
+|-|-|
+|TypeName|SecurityTransparentCodeShouldNotAssert|
+|CheckId|CA2147|
+|Kategoria|Microsoft.Security|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Kod, który jest oznaczony jako <xref:System.Security.SecurityTransparentAttribute> nie udzielono uprawnień wystarczających do potwierdzenia.
+
+## <a name="rule-description"></a>Opis reguły
+ Ta reguła analizuje wszystkie metody i typy w zestawie, który jest albo 100% przezroczysty lub mieszany przezroczysto krytyczny i zaznacza deklaratywne lub imperatywne użycie elementu <xref:System.Security.CodeAccessPermission.Assert%2A>.
+
+ W czasie wszelkie wywołania do wykonywania <xref:System.Security.CodeAccessPermission.Assert%2A> z przezroczystego kodu spowoduje, że <xref:System.InvalidOperationException> zostanie wygenerowany. Taka sytuacja może wystąpić, oba zestawy przezroczyste 100%, a także na pulpicie zestawów mieszanych przezroczysto krytyczny, w którym jest zadeklarowana jako przezroczysty metody lub typu, ale zawiera Assert zaznacza deklaratywne lub imperatywne.
+
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 wprowadzono funkcję o nazwie *przezroczystości*. Poszczególne metody, pola, interfejsy, klas i typów może być przezroczysty lub krytyczny.
+
+ Przezroczysty kod nie jest dozwolony do podniesienia uprawnień zabezpieczeń. W związku z tym wszelkie uprawnienia udzielone lub żądać go automatycznie są przekazywane za pośrednictwem kodu domeny aplikacji obiektu wywołującego lub hosta. Wybierającym przykłady potwierdzenia, LinkDemands, SuppressUnmanagedCode, i `unsafe` kodu.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby rozwiązać ten problem, albo oznaczyć kod, który wywołuje Assert, za pomocą <xref:System.Security.SecurityCriticalAttribute>, lub usuń Assert.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj wiadomości od tej reguły.
+
+## <a name="example"></a>Przykład
+ Ten kod zakończy się niepowodzeniem, jeśli `SecurityTestClass` są przezroczyste, kiedy `Assert` metoda zgłasza wyjątek <xref:System.InvalidOperationException>.
+
+ [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]
+
+## <a name="example"></a>Przykład
+ Jedną z opcji jest na Przegląd kodu metody SecurityTransparentMethod w poniższym przykładzie, a jeśli metoda jest uważane za bezpieczne o podniesienie uprawnień, należy oznaczyć SecurityTransparentMethod z bezpieczny krytyczny takie rozwiązanie wymaga zabezpieczeń szczegółowe, kompletne i błędów Inspekcja odbywa się na metodzie, wraz z dowolnym wezwaniem występujących w ramach metody Assert:
+
+ [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]
+
+ Innym rozwiązaniem jest usunięcie Asercja z kodu i pozwól dowolnego pliku kolejnych operacji We/Wy przepływu żądania uprawnień poza SecurityTransparentMethod do obiektu wywołującego. Umożliwia to sprawdzanie zabezpieczeń. W tym przypadku nie inspekcji zabezpieczeń zwykle wdrożenia, ponieważ żądania uprawnień będą przepływać do obiektu wywołującego i/lub w domenie aplikacji. Żądania uprawnień ściśle są kontrolowane przez zasady zabezpieczeń, hostowania środowiska i przyznaje uprawnienia kodu źródłowego.
+
+## <a name="see-also"></a>Zobacz też
  [Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)
 
 
