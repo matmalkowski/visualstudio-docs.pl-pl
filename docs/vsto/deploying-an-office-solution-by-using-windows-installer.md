@@ -141,7 +141,7 @@ Możesz skonfigurować **OfficeAddInSetup** projekt, aby zawierał wyniki Twojeg
   
 3. W dolnej części **Asystenta projektu** wybierz **pliki aplikacji** przycisk, który przedstawiono na poniższej ilustracji.  
   
-   ![Przycisk pliki aplikacji. ] (../vsto/media/installshield-applicationfiles.png "Przycisk pliki aplikacji.")  
+   ![Przycisk pliki aplikacji. ](../vsto/media/installshield-applicationfiles.png "Przycisk pliki aplikacji.")  
   
 4. W **pliki aplikacji** wybierz **Dodaj dane wyjściowe projektu** przycisku.  
   
@@ -161,7 +161,7 @@ Możesz skonfigurować **OfficeAddInSetup** projekt, aby zawierał wyniki Twojeg
   
    **Pliki aplikacji** strona zawiera teraz plik wyjściowy projektu, manifest wdrożenia i manifest aplikacji, jak pokazano na następującym rysunku.  
   
-   ![Pliki wyjściowe projektu Instalatora. ] (../vsto/media/installshield-outputfiles.png "Plików wyjściowych projektu Instalatora.")  
+   ![Pliki wyjściowe projektu Instalatora. ](../vsto/media/installshield-outputfiles.png "Plików wyjściowych projektu Instalatora.")  
   
   
 ## <a name="Configure"></a>Konfigurowanie składników zależnych jako warunki wstępne  
@@ -252,7 +252,7 @@ W program instalacyjny musi zawierać nie tylko następujące składniki, ale ta
   
 11. W **Redistributable** strony projektu InstallShield, wybierz **Odśwież** przycisk, aby odświeżyć listę składników do dystrybucji, jak pokazano na następującym rysunku.  
   
-   ![Przycisk Odśwież. ] (../vsto/media/installshield-refreshbutton.png "Przycisku odświeżania.")  
+   ![Przycisk Odśwież. ](../vsto/media/installshield-refreshbutton.png "Przycisku odświeżania.")  
   
 12. Na liście składników pakietu redystrybucyjnego, wybierz **Visual Studio 2010 Tools for Office Runtime** pole wyboru.  
   
@@ -309,7 +309,7 @@ Instalacje na użytkownika wymagają tylko jednego Instalatora niezależnie od w
   
 2. W dolnej części **Asystenta projektu** wybierz **rejest aplikacji** przycisk, który przedstawiono na poniższej ilustracji.  
   
-   ![Przycisk rejest aplikacji. ] (../vsto/media/installshield-applicationregistry.gif "Przycisk rejest aplikacji.")  
+   ![Przycisk rejest aplikacji. ](../vsto/media/installshield-applicationregistry.gif "Przycisk rejest aplikacji.")  
   
    **Rejest aplikacji** zostanie wyświetlona strona.  
   
@@ -447,7 +447,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 3. W dolnej części **Asystenta projektu** wybierz **pliki aplikacji** przycisk, który przedstawiono na poniższej ilustracji.  
   
-   ![Przycisk pliki aplikacji. ] (../vsto/media/installshield-applicationfiles.png "Przycisk pliki aplikacji.")  
+   ![Przycisk pliki aplikacji. ](../vsto/media/installshield-applicationfiles.png "Przycisk pliki aplikacji.")  
   
 4. W **pliki aplikacji** wybierz **Dodaj dane wyjściowe projektu** przycisku.  
   
