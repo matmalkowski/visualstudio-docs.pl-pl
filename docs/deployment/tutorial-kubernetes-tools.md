@@ -1,5 +1,5 @@
 ---
-title: Samouczek narzędzia Kubernetes | Dokumentacja firmy Microsoft
+title: Samouczka dotyczącego narzędzia Kubernetes | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 06/08/2018
 ms.technology: vs-ide-deployment
@@ -9,113 +9,113 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280880"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054575"
 ---
-# <a name="get-started-with-visual-studio-kubernetes-tools"></a>Wprowadzenie do programu Visual Studio Tools Kubernetes
+# <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
-Visual Studio Kubernetes Tools usprawnić tworzenie konteneryzowanych aplikacji przeznaczonych dla Kubernetes. Visual Studio może automatycznie tworzyć wymagane do obsługi wdrożenia Kubernetes, takich jak wykresy Dockerfiles i Helm pliki konfiguracji jako kod. Ponadto można publikować bezpośrednio do klastra usługi Kubernetes Azure (AKS) programu Visual Studio.
+Visual Studio Kubernetes Tools usprawnić tworzenie konteneryzowanych aplikacji przeznaczonych dla platformy Kubernetes. Program Visual Studio może automatycznie tworzyć pliki konfiguracji jako kodu, potrzebne do obsługi platformy Kubernetes, takiego jak wdrożenie plików Dockerfile i Helm wykresów. Ponadto można publikować bezpośrednio z klastrem usługi Azure Kubernetes Service (AKS) programu Visual Studio.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby korzystać z tej nowej funkcji, musisz:
+Aby korzystać z tej nowej funkcji, należy:
 
-- W najnowszej wersji zapoznawczej [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) z obciążeniem rozwoju platformy Azure.
+- Najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/download) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
 
-- [Kubernetes narzędzi dla programu Visual Studio](https://aka.ms/get-vsk8stools), dostępne jako osobny plik do pobrania.
+- [Narzędzi usługi Kubernetes dla programu Visual Studio](https://aka.ms/get-vsk8stools), która jest dostępna do pobrania osobno.
 
-- [Docker dla systemu Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) zainstalowane na deweloperskiej stacji roboczej (oznacza to, gdzie należy uruchomić program Visual Studio)
+- [Docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) zainstalowane na deweloperskiej stacji roboczej (oznacza to, gdzie możesz uruchomić program Visual Studio)
 
-- Jeśli chcesz opublikować AKS z programu Visual Studio:
+- Jeśli chcesz opublikować w usłudze AKS za pomocą programu Visual Studio:
 
-    1.  [AKS narzędzia publikowania](https://aka.ms/get-vsk8spublish), dostępne jako osobny plik do pobrania.
+    1.  [AKS narzędzia publikowania](https://aka.ms/get-vsk8spublish), która jest dostępna do pobrania osobno.
 
-    1.  Kubernetes klastra usługi platformy Azure. Aby uzyskać więcej informacji, zobacz [tworzenia klastra AKS](/azure/aks/kubernetes-walkthrough-portal#create-aks-cluster). Upewnij się, [Połącz się z klastrem](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z deweloperskiej stacji roboczej.
+    1.  Klaster Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [tworzenia klastra usługi AKS](/azure/aks/kubernetes-walkthrough-portal#create-aks-cluster). Pamiętaj, aby [łączenia z klastrem](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z deweloperskiej stacji roboczej.
 
-    1.  Helm CLI zainstalowane na deweloperskiej stacji roboczej. Aby uzyskać więcej informacji, zobacz [instalowanie Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1.  Polecenie Helm interfejsu wiersza polecenia, zainstalowane na deweloperskiej stacji roboczej. Aby uzyskać więcej informacji, zobacz [instalowanie narzędzia Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm skonfigurowana przed AKS klastra. Aby uzyskać więcej informacji, jak to zrobić, zobacz [Konfigurowanie Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Polecenie Helm skonfigurowane dla klastra usługi AKS. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [sposobu konfigurowania Helm](/azure/aks/kubernetes-helm#configure-helm).
 
-## <a name="create-a-new-kubernetes-project"></a>Utwórz nowy projekt Kubernetes
+## <a name="create-a-new-kubernetes-project"></a>Utwórz nowy projekt rozwiązania Kubernetes
 
-Po utworzeniu odpowiednich narzędzi, które są zainstalowane, uruchom program Visual Studio i utworzyć nowy projekt. W obszarze **chmury**, wybierz **aplikacji kontenera dla Kubernetes** typu projektu. Wybierz ten typ projektu i wybierz polecenie **OK**.
+Po utworzeniu odpowiednich narzędzi, które są zainstalowane, uruchom program Visual Studio i Utwórz nowy projekt. W obszarze **chmury**, wybierz **aplikacji kontenera dla rozwiązania Kubernetes** typ projektu. Wybierz ten typ projektu, a następnie wybierz **OK**.
 
-![Zrzut ekranu przedstawiający tworzenie nowego projektu aplikacji Kubernetes](media/k8s-tools-new-k8s-app.png)
+![Zrzut ekranu przedstawiający tworzenie nowego projektu aplikacji platformy Kubernetes](media/k8s-tools-new-k8s-app.png)
 
-Następnie możesz typu platformy ASP.NET Core aplikacji sieci web do utworzenia. Wybierz **aplikacji sieci Web** i wybierz polecenie **OK**. Zwykle **Włącz obsługę Docker** opcja nie jest widoczna w tym oknie dialogowym.  Obsługa docker jest domyślnie włączona dla aplikacji kontenera dla Kubernetes.
+Można następnie jakiego typu platforma ASP.NET Core w aplikacji sieci web do utworzenia. Wybierz **aplikacji sieci Web** i wybierz polecenie **OK**. Zwykle **włączyć obsługę platformy Docker** opcja nie jest wyświetlana w tym oknie dialogowym.  Obsługę platformy docker jest domyślnie włączone dla aplikacji kontenera dla rozwiązania Kubernetes.
 
 ![Zrzut ekranu przedstawiający wybór aplikacji sieci web](media/k8s-tools-web-app-selection-screen.png)
 
-## <a name="add-kubernetes-support-to-an-existing-project"></a>Dodaj obsługę Kubernetes do istniejącego projektu
+## <a name="add-kubernetes-support-to-an-existing-project"></a>Dodawanie Obsługa klastra Kubernetes do istniejącego projektu
 
-Alternatywnie można dodać obsługę Kubernetes do istniejącego projektu aplikacji sieci web platformy ASP.NET Core. Aby to zrobić, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj** > **Obsługa Orchestrator kontenerów**.
+Alternatywnie można dodać Obsługa klastra Kubernetes do istniejącego projektu aplikacji sieci web platformy ASP.NET Core. Aby to zrobić, kliknij prawym przyciskiem myszy nad projektem i wybierz polecenie **Dodaj** > **obsługi Orkiestratora kontenerów**.
 
-![Zrzut ekranu z dodać kontener Orchestrator elementu menu](media/k8s-tools-add-container-orchestrator.png)
+![Zrzut ekranu z Dodaj koordynatorem kontenera elementu menu.](media/k8s-tools-add-container-orchestrator.png)
 
-W oknie dialogowym zaznacz "Kubernetes/Helm" i wybierz polecenie **OK**.
+W oknie dialogowym wybierz opcję "Kubernetes/Helm", a następnie wybierz **OK**.
 
-![Zrzut ekranu z dodać kontener Orchestrator — okno dialogowe](media/k8s-tools-add-container-orchestrator-dialog-box.PNG)
+![Zrzut ekranu z Dodaj Orkiestrator kontenerów, okno dialogowe](media/k8s-tools-add-container-orchestrator-dialog-box.PNG)
 
-## <a name="what-visual-studio-creates-for-you"></a>Program Visual Studio tworzy dla Ciebie
+## <a name="what-visual-studio-creates-for-you"></a>Program Visual Studio utworzy dla Ciebie
 
-Po utworzeniu nowego **aplikacji kontenera dla Kubernetes** projektu lub dodanie obsługi orchestrator kontenera Kubernetes do istniejącego projektu, zobacz niektóre dodatkowe pliki w projekcie, które ułatwiają wdrażanie Kubernetes.
+Po utworzeniu nowego **aplikacji kontenera dla rozwiązania Kubernetes** projektu lub dodawania obsługi orkiestratora kontenera Kubernetes do istniejącego projektu, zobaczysz niektóre dodatkowe pliki w projekcie, które ułatwiają wdrażanie platformy Kubernetes.
 
-![Zrzut ekranu Eksploratora rozwiązań po dodaniu obsługi kontenera programu Orchestrator](media/k8s-tools-solution-explorer.png)
+![Zrzut ekranu Eksploratora rozwiązań po dodaniu obsługi Orkiestratora kontenerów](media/k8s-tools-solution-explorer.png)
 
 Dodano pliki są:
 
-- Plik Dockerfile, dzięki czemu można wygenerować Docker obrazu kontenera hostującej tę aplikację sieci web. Jak można zauważyć, narzędzia programu Visual Studio wykorzystuje ten plik Dockerfile podczas debugowania i wdrażania Kubernetes. Jeśli wolisz pracować bezpośrednio z obrazu Docker można kliknij prawym przyciskiem myszy plik Dockerfile i wybrać **kompilacji obrazu Docker**.
+- Plik Dockerfile, który umożliwia generowanie Docker obrazów kontenera hostowania tej aplikacji sieci web. Jak można zauważyć, narzędzia programu Visual Studio korzysta z tego pliku Dockerfile podczas debugowania i wdrażania w usłudze Kubernetes. Jeśli wolisz pracować bezpośrednio z obrazu platformy Docker, możesz kliknąć prawym przyciskiem myszy w pliku Dockerfile i wybrać **tworzenia obrazu platformy Docker**.
 
-   ![Zrzut ekranu z kompilacji Docker opcja obraz](media/k8s-tools-build-docker-image.png)
+   ![Zrzut ekranu z tworzenia obrazu platformy Docker — opcja](media/k8s-tools-build-docker-image.png)
 
-- Wykres Helm i *wykresów* folderu. Te pliki yaml programu składają się na wykresie Helm dla aplikacji, w którym można wdrożyć w Kubernetes. Aby uzyskać więcej informacji o Helm, zobacz [ https://www.helm.sh ](https://www.helm.sh).
+- Wykres Helm i *wykresy* folderu. Te pliki yaml tworzą wykresu Helm w aplikacji, w którym można wdrożyć w usłudze Kubernetes. Aby uzyskać więcej informacji na temat narzędzia Helm, zobacz [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Zawiera ustawienia Azure deweloperów spacji, nową usługę, która zapewnia szybkie, iteracji debugowania w usłudze Azure Kubernetes Service. Ten plik jest aktualnie używana, ale jest zarezerwowany do użytku w przyszłości spacjami deweloperów platformy Azure.
+- *azds.yaml*. Zawiera ustawienia dla usługi Azure Dev miejsca do magazynowania, Nowa usługa, która umożliwia szybkie, iteracyjne środowiska debugowania w usłudze Azure Kubernetes Service. Ten plik jest aktualnie używana, ale jest zarezerwowany do użytku w przyszłości przez deweloperów Azure miejsca do magazynowania.
 
-## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikowanie do usługi Azure Kubernetes (AKS)
+## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikowanie w usłudze Azure Kubernetes Service (AKS)
 
-Wszystkie te pliki w miejscu służy środowiska IDE programu Visual Studio do zapisu i debugowanie kodu aplikacji, tak samo, jak zawsze mieć.
+Wszystkie te pliki w miejscu można użyć środowiska IDE programu Visual Studio umożliwia pisanie i debugowanie kodu aplikacji, tak samo, jak zawsze mieć.
 
-Po utworzeniu kodu z oczekiwaniami, można opublikować bezpośrednio z programu Visual Studio AKS klastra.
+Po utworzeniu działanie kodu tak jak chcesz, możesz opublikować bezpośrednio z programu Visual Studio klastra usługi AKS.
 
-Aby to zrobić, należy najpierw skonfigurować profil publikowania, który publikuje obrazu kontenera do rejestru kontenera platformy Azure (ACR). Następnie AKS można ściąganie kontener obrazu z ACR i wdrożyć go do klastra.
+Aby to zrobić, należy najpierw skonfigurować profil publikowania, który publikuje obraz kontenera do usługi Azure Container Registry (ACR). Następnie AKS można ściągnąć obraz kontenera z rejestru Azure container Registry i wdrożenia go w klastrze.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy użytkownika *projektu* i wybierz polecenie **publikowania**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy użytkownika *projektu* i wybierz polecenie **Publikuj**.
 
    ![Zrzut ekranu opublikować element menu](media/k8s-tools-publish-project.png)
 
-1. W **publikowania** ekranu, wybierz **rejestru kontenera** jako publikowanie docelowego i postępuj zgodnie z monitami, aby wybrać rejestru kontenera. Jeśli nie masz jeszcze rejestru kontenera, wybierz **tworzenie nowych rejestru kontenera Azure** go utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [publikowania z kontenera do rejestru kontenera Azure](#publish-your-container-to-azure-container-registry).
+1. W **Publikuj** ekranu, wybierz **Container Registry** jako publikowania docelowy, a następnie postępuj zgodnie z monitami, aby wybrać usługi container registry. Jeśli nie masz jeszcze rejestru kontenerów, wybierz opcję **Tworzenie nowej usługi Azure Container Registry** ją utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [opublikowany kontener w usłudze Azure Container Registry](#publish-your-container-to-azure-container-registry).
 
-   ![Zrzut ekranu przedstawiający pobrania ekranu docelowej publikowania](media/k8s-tools-publish-to-acr.png)
+   ![Zrzut ekranu przedstawiający wybierz ekran docelowy publikowania](media/k8s-tools-publish-to-acr.png)
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy użytkownika *rozwiązania* i kliknij przycisk **publikowanie Azure AKS**.
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy użytkownika *rozwiązania* i kliknij przycisk **publikowanie w usłudze Azure AKS**.
 
-   ![Zrzut ekranu z opublikować element menu Azure AKS](media/k8s-tools-publish-solution.png)
+   ![Zrzut ekranu z opublikować element menu platformy Azure w usłudze AKS](media/k8s-tools-publish-solution.png)
 
-1. Wybierz subskrypcję, a klaster AKS, wraz z ACR publikowanie profil, który został właśnie utworzony. Następnie kliknij przycisk **OK**.
+1. Wybierz subskrypcję i klastra usługi AKS, wraz z rekordu ACR opublikować profil, który został utworzony. Następnie kliknij przycisk **OK**.
 
-   ![Zrzut ekranu z publikowania AKS ekranu](media/k8s-tools-publish-to-aks.png)
+   ![Zrzut ekranu z publikowania do ekranu usługi AKS](media/k8s-tools-publish-to-aks.png)
 
-   Powoduje to przejście do **publikowanie Azure AKS** ekranu.
+   Spowoduje to przejście do **publikowanie w usłudze Azure AKS** ekranu.
 
-1.  Wybierz **skonfigurować Helm** łącze, aby zaktualizować wiersza polecenia używane do instalowania wykresy Helm na serwerze.
+1.  Wybierz **skonfigurować Helm** łącze, aby zaktualizować wiersza polecenia używane do instalowania wykresów rozwiązania Helm na serwerze.
 
-   ![Zrzut ekranu skonfigurować Helm łącza](media/k8s-tools-configure-helm.png)
+   ![Zrzut ekranu z skonfigurować narzędzia Helm łącza](media/k8s-tools-configure-helm.png)
 
-   Aktualizacja wiersza polecenia jest przydatna, jeśli istnieją argumenty wiersza polecenia niestandardowych, które chcesz określić, takich jak inną nazwę kontekstu lub wykres Kubernetes.
+   Aktualizowanie wiersza polecenia jest przydatne, jeśli argumenty niestandardowe wiersza polecenia, które chcesz określić, takich jak Kubernetes kontekstu lub wykresu innej.
 
-   ![Screenshoot Helm skonfigurować ekranu](media/k8s-tools-helm-configure-screen.png)
+   ![Zrzut ekranu narzędzia Helm, skonfigurować ekran](media/k8s-tools-helm-configure-screen.png)
 
-1. Gdy wszystko będzie gotowe do wdrożenia, kliknij przycisk **publikowania** przycisk, aby opublikować aplikację do AKS.
+1. Gdy wszystko jest gotowe do wdrożenia, kliknij przycisk **Publikuj** przycisk, aby opublikować aplikację w usłudze AKS.
 
-   ![Zrzut ekranu przedstawiający publikowanie do ekranu Azure AKS](media/k8s-tools-publish-screen.png)
+   ![Zrzut ekranu przedstawiający publikowanie do usługi Azure AKS ekranu](media/k8s-tools-publish-screen.png)
 
-Gratulacje! Można teraz używać pełnych możliwości programu Visual Studio dla wszystkich tworzenia aplikacji Kubernetes.
+Gratulacje! Można teraz używać pełnych możliwości programu Visual Studio wszystkie tworzenia aplikacji platformy Kubernetes.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się więcej o programowanie Kubernetes na platformie Azure, odczytując [dokumentacji AKS](/azure/aks).
+Więcej informacji na temat programowania w usłudze Kubernetes na platformie Azure, czytając [dokumentację dotyczącą usługi AKS](/azure/aks).

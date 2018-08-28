@@ -13,14 +13,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52e231484b48bf2741281644c746b448fd6f657b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 08/27/2018
 ms.locfileid: "24796363"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>Struktura PROFILER_HEAP_OBJECT_OPTIONAL_INFO
-Reprezentuje opcjonalne informacje o obiektach stosu.  
+Reprezentuje opcjonalne informacje o obiektach sterty.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,14 +32,14 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 |Element członkowski|Typ|Opis|  
 |------------|----------|-----------------|  
-|typu informacji|[Wyliczenie PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Typ danych opcjonalne.|  
-|Prototyp|[Typ PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu heap prototypu obiektu.|  
-|functionName|LPCWSTR|Nazwa funkcji obiektu heap.|  
-|elementAttributesSize|UINT|Rozmiar obiektu heap atrybuty elementu.|  
-|elementTextChildrenSize|UINT|Rozmiar sterty obiektu podrzędnego tekstu.|  
-|Lista_zakresów|[Struktura PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista zakres obiektu heap.|  
-|internalProperty|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Właściwość wewnętrzna obiektu heap.|  
-|namePropertyList|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista właściwości name obiektu heap.|  
-|indexPropertyList|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista właściwości indeksu obiektu heap.|  
-|relationshipList|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista relacje między obiektami stosu.|  
-|eventList|[Struktura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista zdarzeń obiektu heap.|
+|typu informacji|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE, wyliczenie](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Typ informacje opcjonalne.|  
+|Prototyp|[PROFILER_HEAP_OBJECT_ID, typ](../../winscript/reference/profiler-heap-object-id-type.md)|Identyfikator obiektu sterty prototypu obiektu.|  
+|functionName|LPCWSTR|Nazwa funkcji obiekt sterty.|  
+|elementAttributesSize|UINT|Rozmiar obiektu sterty atrybutów elementów.|  
+|elementTextChildrenSize|UINT|Rozmiar obiektów podrzędnych tekstu obiektu sterty.|  
+|Lista_zakresów|[PROFILER_HEAP_OBJECT_SCOPE_LIST, struktura](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista zakresów obiekt sterty.|  
+|internalProperty|[PROFILER_HEAP_OBJECT_RELATIONSHIP, struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Właściwość wewnętrzna obiekt sterty.|  
+|namePropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST, struktura](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista właściwości name obiektu sterty.|  
+|indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST, struktura](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista właściwości indeksu obiekt sterty.|  
+|relationshipList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST, struktura](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista relacje między obiektami sterty.|  
+|eventList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST, struktura](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Lista zdarzeń obiekt sterty.|

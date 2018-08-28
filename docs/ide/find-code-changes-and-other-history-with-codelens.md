@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e709c6c2c995fc8065cc5aaec28b7c13229b623
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755704"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054481"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -206,7 +206,7 @@ Możesz odkryć testy jednostkowe, które istnieją w kodzie języka C# lub Visu
 
 1. Przejdź do kodu aplikacji, która jest skojarzona [kod testu jednostkowego](../test/unit-test-your-code.md).
 
-2. Jeśli jeszcze tego nie zrobiono, należy skompilować aplikację można załadować testu wskaźniki CodeLens. Upewnij się, że [odnajdywane przez program skompilowany zestaw](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) jest włączona.
+2. Jeśli jeszcze tego nie zrobiono, należy skompilować aplikację można załadować testu wskaźniki CodeLens. Upewnij się, że [odnajdywane przez program skompilowany zestaw](../test/test-explorer-faq.md#assembly-based-discovery) jest włączona.
 
 3. Przejrzyj testów dla kodu, naciskając klawisz **Alt**+**3**.
 
@@ -327,7 +327,8 @@ Aby użyć klawiatury:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Pytanie: Moja CodeLens nie pojawiają się wskaźniki testów w pliku po raz pierwszy jest otwarty Moje rozwiązanie. Jak załadować je?
 
-**Odp.:** ponownie skompiluj projekt, aby uzyskać wskaźniki testu CodeLens do załadowania w pliku. Upewnij się, że [odnajdywane przez program skompilowany zestaw](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) jest włączona. W celu poprawy wydajności programu Visual Studio nie jest już pobieranie informacji o źródle wskaźniki testu w przypadku pliki kodu są ładowane. Wskaźniki testu są ładowane po kompilacji lub po przejściu do testu, klikając go dwukrotnie **Eksploratora testów**.
+**Odp.:** ponownie skompiluj projekt, aby uzyskać wskaźniki testu CodeLens do załadowania w pliku. Upewnij się, że [odnajdywane przez program skompilowany zestaw](../test/test-explorer-faq.md#assembly-based-discovery
+) jest włączona. W celu poprawy wydajności programu Visual Studio nie jest już pobieranie informacji o źródle wskaźniki testu w przypadku pliki kodu są ładowane. Wskaźniki testu są ładowane po kompilacji lub po przejściu do testu, klikając go dwukrotnie **Eksploratora testów**.
 
 ## <a name="see-also"></a>Zobacz także
 
