@@ -1,5 +1,5 @@
 ---
-title: Przykład zaawansowane kontenerów
+title: Zaawansowany przykład dotyczący kontenerów
 description: ''
 ms.custom: ''
 ms.date: 04/18/2018
@@ -12,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f708ca73efa4f166f701b4d488ccc609f86e7a4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9b8d779dec88bf912f04dca6d8b736fb5f3e53dd
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283409"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139304"
 ---
-# <a name="advanced-example-for-containers"></a>Przykład zaawansowane kontenerów
+# <a name="advanced-example-for-containers"></a>Zaawansowany przykład dotyczący kontenerów
 
-Przykładowy plik Dockerfile w [Instalowanie narzędzi kompilacji do kontenera](build-tools-container.md) zawsze używa [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) obrazu na podstawie najnowszych obrazu microsoft/windowsservercore i najnowszych Visual Instalator 2017 narzędzia kompilacji Studio. W przypadku publikowania tego obrazu, aby [rejestru Docker](https://azure.microsoft.com/services/container-registry) innym osobom do ściągnięcia, ten obraz może być edytowane przez wiele scenariuszy. Jednak w praktyce jest najczęściej na konkretnym jakie base obrazu, należy użyć, jakie pliki binarne, możesz pobrać i które narzędzie instalacji wersji.
+Przykładowy plik Dockerfile w [Zainstaluj narzędzia kompilacji w kontenerze](build-tools-container.md) zawsze używa [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) obrazu na podstawie najnowszego obrazu microsoft/windowsservercore i wizualizacja Instalator programu Studio 2017 narzędzia kompilacji. W przypadku publikowania tego obrazu na [rejestru platformy Docker](https://azure.microsoft.com/services/container-registry) innymi ściągania, ten obraz może być akceptowalne dla wielu scenariuszy. Jednak w praktyce jest to bardziej powszechne na konkretnym jakie podstawowy obrazu, należy użyć, z których plików binarnych, należy pobrać, i który narzędzi wersje, należy zainstalować.
 
-W poniższym przykładzie plik Dockerfile użyto tag obrazu microsoft dotnet ramowych określonej wersji. Przy użyciu określonego tagu na podstawowy obraz jest powszechne i umożliwia łatwą do zapamiętania ten budynek lub ponownie skompilować obrazy zawsze ma tej samej podstawie.
+Poniższy przykład pliku Dockerfile taga konkretną wersję obrazu microsoft/dotnet platformy. Używanie konkretny tag podstawowy obraz nie jest powszechne i umożliwia łatwe do zapamiętania ten budynek lub odbudowywania obrazów zawsze ma tej samej zasadzie.
 
 > [!NOTE]
-> Nie można zainstalować programu Visual Studio do microsoft/windowsservercore:10.0.14393.1593 lub żadnego obrazu na jego podstawie ma znane problemy uruchamiania Instalatora w kontenerze. Aby uzyskać więcej informacji, zobacz [znane problemy](build-tools-container-issues.md).
+> Nie można zainstalować programu Visual Studio do microsoft/windowsservercore:10.0.14393.1593 lub dowolny obraz oparty na ich temat, istnieją znane problemy z uruchomieniem Instalatora w kontenerze. Aby uzyskać więcej informacji, zobacz [znane problemy dotyczące](build-tools-container-issues.md).
 
-W poniższym przykładzie pliki do pobrania najnowszej wersji 2017 narzędzia kompilacji. Jeśli chcesz użyć starszej wersji narzędzi Build Tools można zainstalować w kontenerze później, należy najpierw [utworzyć](create-an-offline-installation-of-visual-studio.md) i [Obsługa](update-a-network-installation-of-visual-studio.md) układ.
+Poniższy przykład pobiera najnowszą wersję kompilacji narzędzia 2017. Jeśli chcesz używać starszej wersji narzędzi Build Tools można zainstalować w kontenerze później, należy najpierw [tworzenie](create-an-offline-installation-of-visual-studio.md) i [Obsługa](update-a-network-installation-of-visual-studio.md) układu.
 
 ## <a name="install-script"></a>Skrypt instalacji
 
-Aby zbierać dzienniki po wystąpieniu błędu instalacji, w katalogu roboczym utworzyć skrypt wsadowy o nazwie "Install.cmd" o następującej treści:
+Aby dzienniki były zbierane, gdy wystąpi błąd instalacji, w katalogu roboczym, należy utworzyć skrypt wsadowy o nazwie "Install.cmd", o następującej zawartości:
 
 ```shell
 @if not defined _echo echo off
@@ -53,7 +53,7 @@ if "%ERRORLEVEL%"=="3010" (
 
 ## <a name="dockerfile"></a>Plik Dockerfile
 
-W katalogu roboczym należy utworzyć plik "Dockerfile" o następującej treści:
+W katalogu roboczym należy utworzyć "Dockerfile" o następującej zawartości:
 
 ```dockerfile
 # escape=`
@@ -98,11 +98,11 @@ Uruchom następujące polecenie, aby utworzyć obraz w bieżącym katalogu roboc
 docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 ```
 
-Przekazać opcjonalnie jednego lub obu tych `FROM_IMAGE` lub `CHANNEL_URL` przy użyciu argumentów `--build-arg` przełącznik wiersza polecenia, aby określić inny obraz podstawowy lub lokalizacja układu wewnętrzny, aby zachować stały obraz.
+Opcjonalnie przekazać jednego lub obu tych `FROM_IMAGE` lub `CHANNEL_URL` argumentów za pomocą `--build-arg` przełącznik wiersza polecenia, aby określić inny obraz podstawowy lub lokalizacji wewnętrznych układu w celu zachowania stałego obrazu.
 
 ## <a name="diagnosing-install-failures"></a>Diagnozowanie błędów instalacji
 
-W tym przykładzie pliki do pobrania określonego narzędzia i weryfikuje, czy skróty są zgodne. On również pobiera najnowsze Visual Studio i narzędzie kolekcji dziennika .NET tak, że jeśli wystąpi błąd instalacji, możesz skopiować dzienniki do komputera-hosta do analizowania awarii.
+W tym przykładzie pobiera określone narzędzia i weryfikuje, czy skróty są zgodne. Również pobraniu najnowszy program Visual Studio i narzędzia kolekcji dziennika platformy .NET tak, aby w przypadku niepowodzenia instalacji, możesz skopiować dzienniki na komputer hosta do analizowania awarii.
 
 ```shell
 > docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
@@ -115,21 +115,12 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
 
-Po zakończeniu wykonywania ostatniego wiersza otworzyć na komputerze "% TEMP%\vslogs.zip", lub Prześlij problemu na [społeczność deweloperów](https://developercommunity.visualstudio.com) witryny sieci web.
+Po ukończeniu wykonywania ostatni wiersz Otwórz "% TEMP%\vslogs.zip" na komputerze lub Prześlij problem na [społeczności deweloperów](https://developercommunity.visualstudio.com) witryny sieci web.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. Jeśli niepowodzenie instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)
-* [Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)

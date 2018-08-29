@@ -1,6 +1,6 @@
 ---
 title: Aktualizowanie instalacji sieciowej programu Visual Studio
-description: Informacje o sposobie aktualizowania instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
+description: Dowiedz się, jak zaktualizować instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -14,52 +14,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282564"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138831"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
-Go ma można zaktualizować sieci układ instalacji programu Visual Studio z najnowszymi aktualizacjami produktu, tak aby można go jednocześnie jako punkt instalacji używane w przypadku najnowszej aktualizacji programu Visual Studio, a także do obsługi urządzeń, które są już wdrożone do klienta stacje robocze.
+Jego jest to możliwe, aby zaktualizować układu instalacji sieciowej programu Visual Studio przy użyciu najnowszych aktualizacji produktów, tak, aby można go jako punkt instalacji wykorzystywana do najnowszej aktualizacji programu Visual Studio, a także do obsługi instalacji, które są już wdrożone do klienta stacje robocze.
 
 ## <a name="how-to-update-a-network-layout"></a>Jak zaktualizować układ sieci
 
-Aby odświeżyć na udział sieciowy instalacji co zawierają one najnowsze aktualizacje, uruchom polecenie układu przyrostowo pobrania zaktualizowanych pakietów.
+Aby odświeżyć instalacji udziale sieciowym, aby obejmowała najnowsze aktualizacje, uruchom polecenie — Układ, stopniowo pobrać zaktualizowane pakiety.
 
-W przypadku wybrania częściowe układ podczas pierwszego utworzenia układu sieci, te ustawienia są zapisywane.  Wszystkie polecenia przyszłych układu wprowadzić poprzednie opcje i nowe opcje, które określisz.  (To jest nowa w programie 15 ustęp 3).  Jeśli używasz układu starszej wersji, należy użyć takie same parametry wiersza polecenia używane podczas pierwszego utworzenia układu (innymi słowy, tym samym obciążeń i języków) instalacji sieci można zaktualizować jej zawartości.
+Jeśli wybrano opcję częściowej układu podczas pierwszego utworzenia układu sieci, te ustawienia są zapisywane.  Dowolne polecenia przyszłych układu użyć poprzednie opcje, a także nowe opcje, które określisz.  (To jest nowe w programie 15.3).  Jeśli używasz układu starszej wersji, należy użyć tego samego parametry wiersza polecenia, które były używane podczas pierwszego utworzenia instalacji układ sieci (innymi słowy, tego samego obciążenia i języków) aby zaktualizować swoją zawartość.
 
-Jeśli host układu w udziale plików, należy aktualizować prywatną kopię układu (na przykład c:\vs2017offline) i następnie, po pobraniu wszystkich zaktualizowanej zawartości, skopiuj go do udziału plików (na przykład \\server\products\VS2017). Jeśli nie zrobisz, istnieje duże prawdopodobieństwo, że wszyscy użytkownicy, którzy uruchom Instalatora podczas aktualizowania układu nie może być można uzyskać całej zawartości z układu, ponieważ to nie jest jeszcze całkowicie aktualizowany.
+Jeśli hostujesz układu w udziale plików, należy zaktualizować prywatną kopię układu (na przykład c:\vs2017offline) i następnie, po pobraniu wszystkich zaktualizowanej zawartości, skopiuj go do udziału plików (na przykład \\server\products\VS2017). Jeśli nie możesz tego zrobić, istnieje duże prawdopodobieństwo, że użytkownicy, którzy uruchom Instalatora, podczas gdy aktualizujesz układ może nie można pobrać całą zawartość z układu, ponieważ to nie jest jeszcze całkowicie aktualizowany.
 
-Przejdźmy sposobu tworzenia, a następnie zaktualizuj układ:
+Przejdźmy teraz przez sposób tworzenia, a następnie zaktualizuj układu:
 
-* Po pierwsze poniżej przedstawiono przykład sposobu tworzenia układu z jednego obciążenia dla języka angielskiego tylko:
+* Po pierwsze poniżej przedstawiono przykład sposobu tworzenia układu z obciążeniem jeden dla angielskiego tylko:
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Poniżej przedstawiono sposób zaktualizować do nowszej wersji tego samego układu. Nie trzeba określać żadnych dodatkowych parametrów wiersza polecenia. Poprzednie ustawienia zostały zapisane i będą używane przez wszystkie polecenia kolejnych układu, w tym folderze układu.
+* Oto jak można zaktualizować tego samego układu do nowszej wersji. Nie trzeba określać żadnych dodatkowych parametrów wiersza polecenia. Poprzednie ustawienia zostały zapisane i będą używane przez dowolne polecenia kolejnych układu, w tym folderze układu.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
-* Poniżej przedstawiono sposób zaktualizować do nowszej wersji układu w trybie nienadzorowanym. Operacja układu uruchamia proces instalacji w nowym oknie konsoli. Okno pozostanie otwarty, użytkownicy mogą zobaczyć wynik końcowy oraz podsumowanie wszelkie błędy, które mogły wystąpić. Jeśli przeprowadzasz operację układu w trybie nienadzorowanym (na przykład masz skryptów, regularnie uruchamiany w celu aktualizacji do najnowszej wersji układu), następnie użyć `--passive` parametru i proces zostanie automatycznie zamknięte okno.
+* Poniżej przedstawiono sposób zaktualizować do nowszej wersji układu w trybie nienadzorowanym. Operacji układu uruchamia proces instalacji w nowym oknie konsoli. Okno jest pozostawione otwarte, dzięki czemu użytkownicy mogą zobaczyć wynik końcowy oraz podsumowania błędów, które mogły wystąpić. Jeśli przeprowadzasz operację układu w trybie nienadzorowanym (na przykład masz skrypt uruchamiany regularnie w celu aktualizacji układu do najnowszej wersji), następnie za pomocą `--passive` parametru i proces zostanie automatycznie zamknięte okna.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --passive
   ```
 
-* Poniżej przedstawiono sposób dodać dodatkowe obciążenie i języku lokalnym.  (To polecenie dodaje obciążenia Azure).  Teraz zarządzane komputerowych i Azure znajdują się w tym układzie.  Zasoby języka w języku angielskim i niemieckim uwzględniono również dla tych zadań.  I układ zostało zaktualizowane do najnowszej dostępnej wersji.
+* Poniżej przedstawiono sposób dodać dodatkowe obciążenie i język zlokalizowanego.  (To polecenie dodaje obciążenie platformy Azure).  Teraz zarządzane pulpitu i platformy Azure znajdują się w tym układzie.  Zasoby języka na język angielski i niemiecki dostępne są również dla tych obciążeń.  I układ zostanie zaktualizowany do najnowszej dostępnej wersji.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* A na koniec poniżej przedstawiono sposób dodania dodatkowego obciążenia i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenia sieci Web & ASP.NET).  Teraz obciążeń zarządzanego pulpitu, Azure oraz ASP.NET i sieci Web znajdują się w tym układzie.  Zasoby język angielski, niemiecki i francuski uwzględniono również dla tych zadań.  Jednak układ nie została zaktualizowana do najnowszej dostępnej wersji, podczas uruchamiania tego polecenia.  Pozostaje w istniejącą wersję.
+* A na koniec, Oto jak dodać dodatkowe obciążenie i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenia ASP.NET i sieci Web).  Teraz obciążeń zarządzanego pulpitu, Azure, platformy ASP.NET i sieci Web znajdują się w tym układzie.  Zasoby języka na język angielski, niemiecki i francuski dostępne są również dla tych obciążeń.  Układ nie został jednak zaktualizowany do najnowszej dostępnej wersji podczas uruchomienia tego polecenia.  Pozostaje w istniejącą wersję.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -67,56 +67,56 @@ Przejdźmy sposobu tworzenia, a następnie zaktualizuj układ:
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>Jak wdrożyć aktualizację na komputerach klienckich
 
-W zależności od konfiguracji środowiska sieciowego aktualizacji może być wdrożone przez administratora przedsiębiorstwa albo inicjowane z komputera klienta.
+W zależności od konfiguracji środowiska sieciowego aktualizacja może być wdrażane przez administratora przedsiębiorstwa lub inicjowane z komputera klienckiego.
 
-* Użytkownicy mogą aktualizować wystąpienia programu Visual Studio, który został zainstalowany z folderu instalacji w trybie offline:
+* Użytkownicy mogą zaktualizować wystąpienia programu Visual Studio, która została zainstalowana z folderu instalacji w trybie offline:
   * Uruchom Instalatora programu Visual Studio.
   * Następnie kliknij przycisk **aktualizacji**.
 
-* Administratorzy mogą aktualizacji wdrożenia klientów programu Visual Studio bez interakcji użytkownika z dwa osobne polecenia:
-  * Najpierw należy zaktualizować Instalator programu Visual Studio: <br>```vs_enterprise.exe --quiet --update```
-  * Następnie zaktualizuj samej aplikacji Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+* Administratorzy mogą zaktualizować wdrożeń klientów programu Visual Studio bez żadnej interakcji użytkownika z dwóch oddzielnych poleceń:
+  * Po pierwsze Aktualizacja Instalatora programu Visual Studio: <br>```vs_enterprise.exe --quiet --update```
+  * Następnie zaktualizuj samej aplikacji programu Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
 
 > [!NOTE]
 > Użyj [polecenia vswhere.exe](tools-for-managing-visual-studio-instances.md) do identyfikowania ścieżki instalacji istniejącego wystąpienia programu Visual Studio na komputerze klienckim.
 >
 > [!TIP]
-> Aby uzyskać więcej informacji na temat kontrolowania, kiedy powiadomienia o aktualizacji są prezentowane użytkownikom, zobacz [kontrolowanie aktualizacji do wdrożenia programu Visual Studio oparte na sieci](controlling-updates-to-visual-studio-deployments.md).
+> Aby uzyskać szczegółowe informacje o sposobie kontroli, gdy aktualizacja powiadomienia są prezentowane dla użytkowników, zobacz [kontrolowania aktualizacji z wdrożeniami programu Visual Studio sieciowymi programami wykorzystującymi](controlling-updates-to-visual-studio-deployments.md).
 
-## <a name="how-to-verify-a-layout"></a>Jak sprawdzić, układ
+## <a name="how-to-verify-a-layout"></a>Jak zweryfikować układu
 
-Użyj `--verify` do przeprowadzenia weryfikacji w pamięci podręcznej offline dostarczony. Sprawdza, czy pliki pakiety są brakujący lub nieprawidłowy. Po zakończeniu weryfikacji Wyświetla listę brakujących plików i plików nieprawidłowy.
+Użyj `--verify` do przeprowadzenia weryfikacji w pamięci podręcznej offline dostarczony. Sprawdza, czy pliki pakietów brakujący lub nieprawidłowy. Po zakończeniu weryfikacji zostanie wydrukowany lista brakujących plików i plików nieprawidłowy.
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
-Vs_enterprise.exe może być wywoływana wewnątrz layoutDir.
+Vs_enterprise.exe może być wywołana wewnątrz layoutDir.
 
 > [!NOTE]
-> Niektóre pliki ważne metadane, które są wymagane przez `--verify` opcja musi być w pamięci podręcznej w trybie offline układu. Jeśli brakuje tych plików metadanych, "--Sprawdź" nie można uruchomić i Instalator zwraca błąd. Jeśli wystąpi błąd, ponownie utwórz nowy układ w trybie offline do innego folderu (lub do tego samego folderu pamięci podręcznej w trybie offline. Aby to zrobić, uruchom tego samego polecenia układu, który został użyty do utworzenia początkowego układu w trybie offline. Na przykład `Vs_enterprise.exe --layout <layoutDir>`.
+> Niektóre pliki ważne metadane, które są wymagane przez `--verify` opcja musi być w pamięci podręcznej offline układu. Jeśli brakuje te pliki metadanych "--Sprawdź" nie można uruchomić i konfiguracji zawiera błąd. Jeśli wystąpi ten błąd, ponownie utwórz nowy układ w trybie offline, inny folder (lub do tego samego folderu pamięci podręcznej offline. Aby to zrobić, uruchomić to samo polecenie Układ, który został użyty do utworzenia początkowego układu w trybie offline. Na przykład `Vs_enterprise.exe --layout <layoutDir>`.
 
-Microsoft dostarczany aktualizacji dla programu Visual Studio okresowo, więc nowy układ utworzonego może być tej samej wersji co początkowego układu.
+Microsoft jest dostarczany aktualizacje programu Visual Studio okresowo, aby nowy układ, które tworzysz może nie być tej samej wersji, co wstępny układ.
 
-## <a name="how-to-fix-a-layout"></a>Jak rozwiązać układu
+## <a name="how-to-fix-a-layout"></a>Jak naprawić układu
 
-Użyj `--fix` do przeprowadzenia tej samej weryfikacji jako `--verify` i spróbuj rozwiązać problemy zidentyfikowane. `--fix` Proces wymaga połączenia internetowego, dlatego upewnij się, że komputer jest połączony z Internetem, przed wywołuje `--fix`.
+Użyj `--fix` do wykonania tych samych weryfikacji jako `--verify` i również spróbować naprawić zidentyfikowanych problemów. `--fix` Proces wymaga połączenia internetowego, dlatego upewnij się, że maszyna jest połączona z Internetem, zanim wywołujesz `--fix`.
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
-Vs_enterprise.exe może być wywoływana wewnątrz layoutDir.
+Vs_enterprise.exe może być wywołana wewnątrz layoutDir.
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>Jak do usunięcia starszych wersji z układu
+## <a name="how-to-remove-older-versions-from-a-layout"></a>Jak usunąć starsze wersje z układu
 
-Po wykonaniu aktualizacji układu do pamięci podręcznej offline układu folder pamięci podręcznej może być niektórych przestarzałych pakiety, które nie są już potrzebne przez najnowsze instalację programu Visual Studio. Można użyć `--clean` opcję, aby usunąć przestarzałe pakiety z folderu pamięci podręcznej w trybie offline.
+Po wykonaniu aktualizacji układ pamięci podręcznej trybu offline, układ folder pamięci podręcznej może mieć niektórych przestarzałych pakietów, które nie są już potrzebne najnowsze instalacją programu Visual Studio. Możesz użyć `--clean` opcji usuwania przestarzałych pakietów z folderu pamięci podręcznej offline.
 
-Aby to zrobić, musisz ścieżki pliku do manifest(s) katalogu, zawierające te pakiety przestarzałe. Znajdziesz się, że katalog manifesty w folderze "Archiwum" w pamięci podręcznej w trybie offline układu. Są zapisywane istnieje podczas aktualizacji układu. W folderze "Archiwum" ma co najmniej jeden "GUID" o nazwie folderów, z których każdy zawiera manifest przestarzałe katalogu. Liczba folderów "GUID" powinna być taka sama jak liczba aktualizacji do pamięci podręcznej w trybie offline.
+Aby to zrobić, należy ścieżki pliku do katalogu manifest(s), zawierające te przestarzałych pakietów. Można znaleźć katalogu manifesty w folderze "Archiwalna" w pamięci podręcznej układu w trybie offline. Są zapisywane istnieje po zaktualizowaniu układu. W folderze "Archiwalna" ma co najmniej jeden "GUID" o nazwie folderów, z których każdy zawiera manifest przestarzałe katalogu. Liczba folderów "GUID" należy taka sama jak liczba aktualizacje wprowadzone w pamięci podręcznej w trybie offline.
 
-Kilka plików są zapisywane w folderze każdego "GUID". Dwa pliki najbardziej przydatnych są oraz plik "catalog.json" "version.txt". Plik "catalog.json" jest manifest przestarzałe katalogu należy przekazać do `--clean` opcji. Plik version.txt zawiera wersję tego manifestu przestarzałe katalogu. Oparte na numer wersji, można zdecydować, czy chcesz usunąć przestarzałe pakiety z manifestu tego katalogu. Możesz to zrobić takie same jak przechodzić przez innych folderach "GUID". Po podjęciu decyzji o katalogi, które chcesz wyczyścić, uruchom `--clean` polecenia, podając pliki ścieżki do tych katalogów.
+Kilka pliki są zapisywane wewnątrz każdego folderu "GUID". Dwa pliki najbardziej przydatnych są oraz plik "catalog.json" "version.txt". Plik "catalog.json" jest manifest przestarzałe katalogu, należy przekazać do `--clean` opcji. Plik version.txt zawiera wersję tego manifestu przestarzałe katalogu. Oparte na numer wersji, możesz zdecydować, czy chcesz usunąć przestarzałych pakietów z manifestu tego katalogu. Można tak samo, jak przejść do innych folderów "GUID". Po podjęciu decyzji o katalogi, które chcesz wyczyścić, uruchom `--clean` polecenie, podając ścieżki plików do tych katalogów.
 
-Oto kilka przykładów sposobu użycia czystą opcji:
+Poniżej przedstawiono kilka przykładów sposobu użycia — wyczyść opcję:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -126,29 +126,20 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-pat
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
-Można także wywoływać vs_enterprise.exe wewnątrz &lt;layoutDir&gt;. Oto przykład:
+Można również wywołać vs_enterprise.exe wewnątrz &lt;layoutDir&gt;. Oto przykład:
 
 ```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
-Podczas wykonywania tego polecenia, Instalator analizuje folder pamięci podręcznej w trybie offline, aby znaleźć listę plików, które zostanie usunięta. Użytkownik będzie miał możliwość Przejrzyj pliki, które mają być usunięte i potwierdzenie operacji usuwania.
+Po wykonaniu tego polecenia, Instalator analizuje folder pamięci podręcznej w trybie offline, aby uzyskać listę plików, które zostanie usunięta. Użytkownik będzie miał szansę, aby przejrzeć pliki, które są przesyłane do usunięcia, a potwierdzenie operacji usuwania.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
-* [Formant aktualizacje do wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)

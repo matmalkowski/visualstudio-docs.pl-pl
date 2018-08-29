@@ -1,6 +1,6 @@
 ---
-title: Wyłącz lub Przenieś pamięć podręczną pakietów | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak wyłączanie, włączanie lub Przenieś pamięć podręczną pakietów dla wdrożeń programu Visual Studio.
+title: Wyłączanie lub przenoszenie pamięci podręcznej pakietu | Dokumentacja firmy Microsoft
+description: Dowiedz się, jak wyłączyć, włączyć lub Przenieś pamięć podręczną pakietów dla wdrożeń programu Visual Studio.
 ms.date: 04/14/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,55 +17,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8d5ddfdc521e2c383f5f67a31f42f70f528161
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 1461e4d854b7e2e257fe81fa76d39aa140426b86
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282684"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138521"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Wyłączanie lub przenoszenie pamięci podręcznej pakietów
 
-Pamięć podręczną pakietów zawiera źródło pakietów zainstalowanych w razie potrzeby napraw program Visual Studio lub innych pokrewnych produktów w przypadkach, gdy mają Brak połączenia internetowego. Niektóre dyski lub system ustawienie ups, jednak nie można zachować tych pakietów wokół.
-Instalator pobierze je w razie potrzeby, więc jeśli chcesz zapisać lub odzyskać miejsce na dysku można wyłączyć, lub Przenieś pamięć podręczną pakietów.
+Pamięć podręczną pakietów zapewnia źródło pakietów zainstalowanych, w przypadku, gdy zajdzie potrzeba naprawy programu Visual Studio lub inne powiązane produkty w przypadkach, gdy mają Brak połączenia internetowego. W przypadku niektórych dysków lub system ustawiać ups, jednak może nie chcesz zachować te pakiety wokół.
+Instalator pobierze je w razie potrzeby, dlatego jeśli chcesz zapisać lub odzyskać miejsce na dysku zostanie wyłączone lub przenoszenie pamięci podręcznej pakietu.
 
 ## <a name="disable-the-package-cache"></a>Wyłącz pamięć podręczną pakietów
 
-Aby zainstalować, zmodyfikować lub napraw program Visual Studio lub innych produktów z nowym Instalatorem, możesz uruchomić Instalatora z `--nocache` przełącznika Instalatora.
+Przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio lub innych produktów z nowym Instalatorem można uruchomić Instalatora z `--nocache` przełączyć się do Instalatora.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
-Żadnej operacji wykonywanych na jakimkolwiek produktem usunie wszystkie istniejące pakiety dla tego produktu i uniknąć zapisywania wszystkie pakiety po ich zainstalowaniu. Jeśli zmodyfikować lub napraw program Visual Studio i pakiety są wymagane, będzie można automatycznie pobierane i usunąć po ich zainstalowaniu.
+Wszelkich operacji wykonywanych na dowolny produkt usunie wszystkie istniejące pakiety dla tego produktu i zapobiegnie zapisywania wszelkich pakietów, które po ich zainstalowaniu. Jeśli zmodyfikujesz lub naprawy programu Visual Studio i pakiety są wymagane, ich zostanie pobrana automatycznie i usunięte po ich zainstalowaniu.
 
-Jeśli chcesz ponownie włączyć pamięć podręczną, Przekaż `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety należy naprawić Visual Studio przed odłączyć od sieci.
+Jeśli chcesz ponownie włączyć pamięć podręczną, należy przekazać `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety należy naprawić program Visual Studio przed odłączeniem z sieci.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-Można również ustawić `KeepDownloadedPayloads` [zasad rejestru](set-defaults-for-enterprise-deployments.md) wyłączenie pamięci podręcznej, aby zainstalować, zmodyfikować lub napraw program Visual Studio.
+Można również ustawić `KeepDownloadedPayloads` [zasad rejestru](set-defaults-for-enterprise-deployments.md) wyłączenie pamięci podręcznej, zanim instalowania, modyfikowania lub naprawy programu Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Przenieś pamięć podręczną pakietów
 
-Typowa konfiguracja systemu jest mieć systemu Windows zainstalowaną na dysk SSD na większy dysk twardy (lub więcej) dla rozwoju musi, takich jak kodu źródłowego, pliki binarne programu i inne. Aby pracować w trybie offline można zamiast tego Przenieś pamięć podręczną pakietów.
+Typowa konfiguracja systemu jest zapewnienie Windows zainstalowana na dysk SSD o większych dysku twardego (lub więcej) do tworzenia aplikacji musi, takie jak kod źródłowy, pliki binarne programu i nie tylko. Jeśli chcesz pracować w trybie offline zamiast tego można przenieść pamięci podręcznej pakietu.
 
-Obecnie można tylko w tym przypadku ustawienia `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalować, zmodyfikować lub napraw program Visual Studio.
+Obecnie można to zrobić tylko po ustawieniu `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Ustawianie wartości domyślnych do wdrożeń w przedsiębiorstwie](set-defaults-for-enterprise-deployments.md)
+* [Ustawianie wartości domyślnych w przypadku wdrożeń w przedsiębiorstwach](set-defaults-for-enterprise-deployments.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
-title: Tworzenie w trybie Offline instalację programu Visual Studio
-description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline.
+title: Tworzenie instalacji Offline programu Visual Studio
+description: Dowiedz się, jak zainstalować program Visual Studio w tryb offline.
 ms.custom: ''
 ms.date: 01/17/2018
 ms.technology: vs-acquisition
@@ -16,39 +16,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef917b4e8aa5cde8d95c036523bb525799cc19e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d19eabe10234ca2a1670ae04f99a45a85a6cac14
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279966"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138880"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie w trybie offline instalację programu Visual Studio 2017 r.
+# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie instalacji offline programu Visual Studio 2017
 
-Firma Microsoft zaprojektowane Instalator Visual Studio 2017 działają poprawnie w różnych warunków, sieci i komputera.
+Został zaprojektowany Instalator programu Visual Studio 2017 w taki sposób, aby działać równie dobrze na cały szereg warunków sieciowych i maszyny.
 
-- Nowy model oparte na obciążeniu oznacza, że należy pobrać daleko mniejszej niż w poprzednich wersjach programu Visual Studio: małego 300 MB do najmniejszego instalacji;
-- W porównaniu do ogólnego "ISO" lub plik zip, możemy pobrać tylko pakiety, które są potrzebne dla maszyny. Na przykład firma Microsoft nie pobieraj plików 64-bitowych, jeśli nie są potrzebne;
-- W procesie instalacji spróbujemy trzy technologie różnych pobierania (WebClient, Usługa BITS i WinInet) aby zminimalizować zakłócenia oprogramowania antywirusowego i serwera proxy;
-- Pliki, musisz zainstalować program Visual Studio są dystrybuowane w sieci dostarczania globalnych, dlatego firma Microsoft może udostępnić je użytkownikom z lokalnego serwera.
+- Nowy model oparty na obciążeniu oznacza, że musisz pobrać daleko mniejsze niż w poprzednich wersjach programu Visual Studio: zaledwie 300 MB do najmniejszej instalacji;
+- W porównaniu do ogólnego "ISO" lub plik zip, możemy pobrać pakiety potrzebne dla maszyny. Na przykład firma Microsoft nie pobieraj 64-bitowych plików Jeśli nie trzeba ich;
+- W procesie instalacji spróbujemy trzy technologie pobierania różnych (WebClient, BITY i WinInet) aby zminimalizować zakłócenia przy użyciu oprogramowania antywirusowego i serwera proxy;
+- Pliki, musisz zainstalować program Visual Studio są dystrybuowane w sieci globalne dostarczanie, dzięki czemu firma Microsoft może udostępnić je użytkownikom z lokalnym serwerem.
 
-Zalecamy wypróbowanie [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;naszym zdaniem znajdziesz ją dobrej obsługi.
+Zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;uważamy, że znajdziesz ją dobre środowisko.
 
  > [!div class="button"]
  > [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
-Jeśli chcesz zainstalować w trybie offline, ponieważ połączenie z Internetem jest niedostępne lub zawodnych, patrz [zainstalować program Visual Studio 2017 o niskiej przepustowości lub zawodnych w środowiskach sieci](../install/install-vs-inconsistent-quality-network.md). Polecenie umożliwia utworzenie lokalnej pamięci podręcznej plików trzeba wykonać instalację w trybie offline. Ten proces zastępuje pliki ISO dostępne w poprzednich wersjach.
+Jeśli chcesz zainstalować w trybie offline, ponieważ połączenie z Internetem jest niedostępne lub niestabilne, zobacz [instalacji programu Visual Studio 2017 w powolnych lub zawodnych środowiskach sieciowych](../install/install-vs-inconsistent-quality-network.md). W wierszu polecenia można użyć do utworzenia lokalnej pamięci podręcznej pliki potrzebne do ukończenia instalacji w trybie offline. Ten proces zastępuje pliki ISO dostępne dla wcześniejszych wersji.
 
 > [!NOTE]
-> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio 2017 klienckich stacjach roboczych, które są zaporą z siecią Internet, zobacz nasze [Tworzenie instalacji sieciowej programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) i [Zainstalować certyfikaty wymagane do instalacji w trybie offline program Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stron.
+> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio 2017 do sieci z stacje robocze klienta, które są zaporą z Internetu, zobacz nasze [Tworzenie instalacji sieciowej programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) i [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stron.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]

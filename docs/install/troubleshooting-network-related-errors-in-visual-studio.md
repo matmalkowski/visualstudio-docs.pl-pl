@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978075"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138394"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 
@@ -112,16 +112,7 @@ Włącz połączenia dla następujących adresów URL:
  > [!NOTE]
  > Prywatnego, że adresy URL serwerów NuGet mogą nie zostać zawarte na tej liście. Możesz sprawdzić, czy dla serwerów NuGet, które korzystasz z % APPData%\Nuget\NuGet.Config.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z instalacji, kroki rozwiązywania problemów pomoże, możesz skontaktować nam się przez czat na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [stronę pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Możesz zgłosić problemy z produktu z nami za pośrednictwem [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Możesz udostępnić sugestię dotyczącą produktu z nami w [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Możesz śledzić problemy z produktu i Szukaj odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
-* Można także nawiązać kontakt z nami i innych deweloperów programu Visual Studio za pośrednictwem [konwersacji programu Visual Studio community dotyczącym oprogramowania Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
