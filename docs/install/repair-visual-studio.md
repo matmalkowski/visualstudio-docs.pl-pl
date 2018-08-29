@@ -1,6 +1,6 @@
 ---
 title: Napraw program Visual Studio 2017 | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak napraw instalację programu Visual Studio 2017 r.
+description: Dowiedz się, jak naprawić instalację programu Visual Studio 2017.
 keywords: ''
 author: PoulChapman
 ms.author: tglee
@@ -11,40 +11,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffdfc73ef97e9e6bbe02eeba95a810c03e18a6d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 825131bff8d6ed3466a6418bb1aac98787a2daea
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280428"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139058"
 ---
-# <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017 r.
+# <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017
 
-Czasami instalację programu Visual Studio jest uszkodzony lub uszkodzony. Naprawa może rozwiązać ten problem.
+Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony. Naprawa może rozwiązać ten problem.
 
-1. Instalator programu Visual Studio odnaleźć na tym komputerze.
+1. Znajdowanie Instalatora programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Anniversary Update, wybierz pozycję **Start**, a następnie przewiń do literę **V**, w którym znajduje się w **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 rozliczenia aktualizacji, wybierz pozycję **Start**, a następnie przewiń do list **V**, w którym znajduje się w **Instalatora programu Visual Studio**.
 
      >[!NOTE]
-     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     Na niektórych komputerach Instalatora programu Visual Studio może zostać wyświetlony w obszarze list **"M"** jako **Instalator programu Microsoft Visual Studio**.<br/><br/> Alternatywnie można znaleźć Instalatora programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz **więcej**, a następnie wybierz **naprawy**.
+2. Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz **więcej**, a następnie wybierz pozycję **naprawy**.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
+* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
 * [Update Visual Studio 2017](update-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
-* [Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017 r.](troubleshooting-installation-issues.md)
+* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
+* [Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017](troubleshooting-installation-issues.md)
